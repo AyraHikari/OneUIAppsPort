@@ -16,6 +16,16 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/sqlite/SQLiteOpenHelper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "databaseHelper"
+        }
+    .end annotation
 
     .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,6 +43,16 @@
 # virtual methods
 .method public getBoolean(Landroid/database/Cursor;Ljava/lang/String;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cursor",
+            "columnName"
+        }
+    .end annotation
 
     .line 20
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -58,6 +78,16 @@
 
 .method public getInt(Landroid/database/Cursor;Ljava/lang/String;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cursor",
+            "columnName"
+        }
+    .end annotation
 
     .line 23
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -73,6 +103,16 @@
 
 .method public getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cursor",
+            "columnName"
+        }
+    .end annotation
 
     .line 27
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -88,6 +128,16 @@
 
 .method public join([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "delimiter"
+        }
+    .end annotation
 
     .line 31
     new-instance v0, Ljava/lang/StringBuilder;

@@ -133,13 +133,17 @@
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p3
+
     invoke-interface {p2}, Lorg/spongycastle/crypto/Digest;->getAlgorithmName()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -751,11 +755,11 @@
     iput-object v2, p0, Lorg/spongycastle/crypto/signers/ISO9796d2PSSSigner;->recoveredMessage:[B
 
     .line 455
-    iget-object v2, p0, Lorg/spongycastle/crypto/signers/ISO9796d2PSSSigner;->mBuf:[B
+    iget-object v4, p0, Lorg/spongycastle/crypto/signers/ISO9796d2PSSSigner;->mBuf:[B
 
-    array-length v2, v2
+    array-length v5, v4
 
-    if-gt v1, v2, :cond_4
+    if-gt v1, v5, :cond_4
 
     goto :goto_4
 
@@ -766,13 +770,9 @@
     iput-boolean v7, p0, Lorg/spongycastle/crypto/signers/ISO9796d2PSSSigner;->fullMessage:Z
 
     .line 456
-    iget-object v1, p0, Lorg/spongycastle/crypto/signers/ISO9796d2PSSSigner;->mBuf:[B
+    array-length v1, v2
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/signers/ISO9796d2PSSSigner;->recoveredMessage:[B
-
-    array-length v4, v2
-
-    invoke-static {v1, v3, v2, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v4, v3, v2, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 458
     iget-object v1, p0, Lorg/spongycastle/crypto/signers/ISO9796d2PSSSigner;->mBuf:[B
@@ -1392,11 +1392,15 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "signer initialised with wrong digest for trailer "
+    const-string/jumbo v2, "signer initialised with wrong digest for trailer "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1410,7 +1414,7 @@
     :cond_8
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unrecognised hash in signature"
+    const-string/jumbo v0, "unrecognised hash in signature"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1648,7 +1652,7 @@
     :cond_8
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    const-string v0, "updateWithRecoveredMessage called on different signature"
+    const-string/jumbo v0, "updateWithRecoveredMessage called on different signature"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

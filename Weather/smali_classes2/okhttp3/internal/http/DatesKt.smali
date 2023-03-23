@@ -51,10 +51,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 16
 
-    .line 32
+    .line 1
     new-instance v0, Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;
 
     invoke-direct {v0}, Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;-><init>()V
@@ -91,15 +91,15 @@
 
     const-string v15, "EEE MMM d yyyy HH:mm:ss z"
 
-    .line 62
+    .line 2
     filled-new-array/range {v1 .. v15}, [Ljava/lang/String;
 
     move-result-object v0
 
-    .line 43
+    .line 3
     sput-object v0, Lokhttp3/internal/http/DatesKt;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
 
-    .line 66
+    .line 4
     array-length v0, v0
 
     new-array v0, v0, [Ljava/text/DateFormat;
@@ -114,14 +114,10 @@
 
     const-string v0, "$this$toHttpDateOrNull"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 70
-    move-object v0, p0
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+    .line 1
+    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
@@ -143,16 +139,16 @@
 
     return-object v2
 
-    .line 72
+    .line 2
     :cond_1
     new-instance v0, Ljava/text/ParsePosition;
 
     invoke-direct {v0, v1}, Ljava/text/ParsePosition;-><init>(I)V
 
-    .line 73
+    .line 3
     sget-object v3, Lokhttp3/internal/http/DatesKt;->STANDARD_DATE_FORMAT:Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;
 
-    invoke-virtual {v3}, Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;->get()Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -162,7 +158,7 @@
 
     move-result-object v3
 
-    .line 74
+    .line 4
     invoke-virtual {v0}, Ljava/text/ParsePosition;->getIndex()I
 
     move-result v4
@@ -175,13 +171,13 @@
 
     return-object v3
 
-    .line 79
+    .line 5
     :cond_2
     sget-object v3, Lokhttp3/internal/http/DatesKt;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
 
     monitor-enter v3
 
-    .line 80
+    .line 6
     :try_start_0
     array-length v4, v3
 
@@ -190,14 +186,14 @@
     :goto_1
     if-ge v5, v4, :cond_5
 
-    .line 81
+    .line 7
     sget-object v6, Lokhttp3/internal/http/DatesKt;->BROWSER_COMPATIBLE_DATE_FORMATS:[Ljava/text/DateFormat;
 
     aget-object v7, v6, v5
 
     if-nez v7, :cond_3
 
-    .line 83
+    .line 8
     new-instance v7, Ljava/text/SimpleDateFormat;
 
     sget-object v8, Lokhttp3/internal/http/DatesKt;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
@@ -208,27 +204,24 @@
 
     invoke-direct {v7, v8, v9}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 86
+    .line 9
     sget-object v8, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
 
     invoke-virtual {v7, v8}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
-    .line 83
-    check-cast v7, Ljava/text/DateFormat;
-
-    .line 88
+    .line 10
     aput-object v7, v6, v5
 
-    .line 90
+    .line 11
     :cond_3
     invoke-virtual {v0, v1}, Ljava/text/ParsePosition;->setIndex(I)V
 
-    .line 91
+    .line 12
     invoke-virtual {v7, p0, v0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
 
     move-result-object v6
 
-    .line 92
+    .line 13
     invoke-virtual {v0}, Ljava/text/ParsePosition;->getIndex()I
 
     move-result v7
@@ -237,7 +230,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 98
+    .line 14
     monitor-exit v3
 
     return-object v6
@@ -247,14 +240,14 @@
 
     goto :goto_1
 
-    .line 101
+    .line 15
     :cond_5
     :try_start_1
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    sget-object p0, Lbi/x;->a:Lbi/x;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 79
+    .line 16
     monitor-exit v3
 
     return-object v2
@@ -272,12 +265,11 @@
 
     const-string v0, "$this$toHttpDateString"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 106
     sget-object v0, Lokhttp3/internal/http/DatesKt;->STANDARD_DATE_FORMAT:Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;
 
-    invoke-virtual {v0}, Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -289,7 +281,7 @@
 
     const-string v0, "STANDARD_DATE_FORMAT.get().format(this)"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

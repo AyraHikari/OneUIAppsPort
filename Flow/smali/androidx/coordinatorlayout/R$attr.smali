@@ -14,47 +14,57 @@
 
 
 # static fields
-.field public static final alpha:I = 0x7f03002d
+.field public static final alpha:I = 0x7f040034
 
-.field public static final coordinatorLayoutStyle:I = 0x7f0300cc
+.field public static final coordinatorLayoutStyle:I = 0x7f04012d
 
-.field public static final font:I = 0x7f03012f
+.field public static final font:I = 0x7f0401e8
 
-.field public static final fontProviderAuthority:I = 0x7f030131
+.field public static final fontProviderAuthority:I = 0x7f0401ea
 
-.field public static final fontProviderCerts:I = 0x7f030132
+.field public static final fontProviderCerts:I = 0x7f0401eb
 
-.field public static final fontProviderFetchStrategy:I = 0x7f030133
+.field public static final fontProviderFetchStrategy:I = 0x7f0401ec
 
-.field public static final fontProviderFetchTimeout:I = 0x7f030134
+.field public static final fontProviderFetchTimeout:I = 0x7f0401ed
 
-.field public static final fontProviderPackage:I = 0x7f030135
+.field public static final fontProviderPackage:I = 0x7f0401ee
 
-.field public static final fontProviderQuery:I = 0x7f030136
+.field public static final fontProviderQuery:I = 0x7f0401ef
 
-.field public static final fontStyle:I = 0x7f030137
+.field public static final fontProviderSystemFontFamily:I = 0x7f0401f0
 
-.field public static final fontVariationSettings:I = 0x7f030138
+.field public static final fontStyle:I = 0x7f0401f1
 
-.field public static final fontWeight:I = 0x7f030139
+.field public static final fontVariationSettings:I = 0x7f0401f2
 
-.field public static final keylines:I = 0x7f030176
+.field public static final fontWeight:I = 0x7f0401f3
 
-.field public static final layout_anchor:I = 0x7f03017b
+.field public static final keylines:I = 0x7f04025a
 
-.field public static final layout_anchorGravity:I = 0x7f03017c
+.field public static final lStar:I = 0x7f04025b
 
-.field public static final layout_behavior:I = 0x7f03017d
+.field public static final layout_anchor:I = 0x7f040264
 
-.field public static final layout_dodgeInsetEdges:I = 0x7f0301a9
+.field public static final layout_anchorGravity:I = 0x7f040265
 
-.field public static final layout_insetEdge:I = 0x7f0301b2
+.field public static final layout_behavior:I = 0x7f040266
 
-.field public static final layout_keyline:I = 0x7f0301b4
+.field public static final layout_dodgeInsetEdges:I = 0x7f040297
 
-.field public static final statusBarBackground:I = 0x7f030275
+.field public static final layout_insetEdge:I = 0x7f0402a1
 
-.field public static final ttcIndex:I = 0x7f0302e8
+.field public static final layout_keyline:I = 0x7f0402a2
+
+.field public static final nestedScrollViewStyle:I = 0x7f040335
+
+.field public static final queryPatterns:I = 0x7f040391
+
+.field public static final shortcutMatchRequired:I = 0x7f0403ea
+
+.field public static final statusBarBackground:I = 0x7f040424
+
+.field public static final ttcIndex:I = 0x7f0404ee
 
 
 # direct methods

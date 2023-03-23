@@ -4,12 +4,19 @@
     <androidx.preference.PreferenceCategory android:title="Mock Features" android:key="MockFeatures" />
     <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/forecast_providers" android:title="Forecast Provider" android:key="ForecastProviders" android:entryValues="@array/forecast_provider_values" />
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Samsung Device" android:key="SamsungDevice" />
-    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Store Server" android:key="StoreServer" />
+    <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/weather_store_server_type_names" android:title="Store Server" android:key="StoreServer" android:entryValues="@array/weather_store_server_type_values" />
+    <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/app_update_result_names" android:title="Mock App Update Result" android:key="MockAppUpdateResult" android:entryValues="@array/app_update_result_values" />
+    <androidx.preference.Preference android:persistent="false" android:title="Mock App Update Version" android:key="MockAppUpdateVersion" />
     <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/weather_codes_names" android:title="Mock Weather Codes" android:key="MockWeatherCodes" android:entryValues="@array/weather_codes_values" />
-    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Mock Location" android:key="MockLocation" />
-    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Mock Sales Code" android:key="MockSalesCode" />
-    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Mock Mcc and Mnc" android:key="MockMccMnc" />
+    <androidx.preference.Preference android:persistent="false" android:title="Mock Location" android:key="MockLocation" />
+    <androidx.preference.Preference android:persistent="false" android:title="Mock Sales Code" android:key="MockSalesCode" />
+    <androidx.preference.Preference android:persistent="false" android:title="Mock Mcc and Mnc" android:key="MockMccMnc" />
+    <androidx.preference.Preference android:persistent="false" android:title="Mock Model Name" android:key="MockModel" />
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Retail Mode" android:key="RetailMode" />
+    <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/activity_transition_type_names" android:title="Mock Activity Transition Type" android:key="MockActivityTransitionType" android:entryValues="@array/activity_transition_type_values" />
+    <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/most_probable_activity_names" android:title="Mock Activity Type" android:key="MockActivityType" android:entryValues="@array/most_probable_activity_values" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Support News On All Model" android:key="SupportNewsOnAllModel" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Turn on On Screen Refresh" android:key="MockAutoRefreshType" />
     <androidx.preference.PreferenceCategory android:title="Csc Features" android:key="CscFeatures" />
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="US Verizon" android:key="USVerizon" />
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="US vendor" android:key="USVendor" />
@@ -22,7 +29,9 @@
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Flip Device" android:key="FlipDevice" />
     <androidx.preference.PreferenceCategory android:title="Monitoring" android:key="Monitoring" />
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Performance Log" android:key="PerformanceLogging" />
-    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Refresh Period Hours -> Minutes" android:key="RefreshPeriod" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Refresh Short Period" android:key="RefreshPeriod" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Show Activity Tracking" android:key="ActivityTracking" />
+    <androidx.preference.Preference android:persistent="false" android:title="On The Go Monitor" android:key="OnTheGoMonitor" />
     <androidx.preference.PreferenceCategory android:title="Wear Manger Options" android:key="WearManager" />
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Remote Mode" android:key="Remote" />
     <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="Legacy Device" android:key="LegacyDevice" />

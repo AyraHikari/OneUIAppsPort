@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 36
+    .line 38
     new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/util/FingerPrintHelper;
 
     invoke-direct {v0}, Lcom/samsung/android/galaxycontinuity/auth/util/FingerPrintHelper;-><init>()V
@@ -35,10 +35,10 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 38
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 39
+    .line 41
     new-instance v0, Ljava/lang/IllegalAccessError;
 
     const-string v1, "InstanceHolder cannot be instantiated"
@@ -51,7 +51,7 @@
 .method static synthetic access$000()Lcom/samsung/android/galaxycontinuity/auth/util/FingerPrintHelper;
     .locals 1
 
-    .line 34
+    .line 36
     sget-object v0, Lcom/samsung/android/galaxycontinuity/auth/util/FingerPrintHelper$InstanceHolder;->INSTANCE:Lcom/samsung/android/galaxycontinuity/auth/util/FingerPrintHelper;
 
     return-object v0

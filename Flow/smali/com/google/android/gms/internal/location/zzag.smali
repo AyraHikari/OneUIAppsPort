@@ -1,43 +1,47 @@
-.class final Lcom/google/android/gms/internal/location/zzag;
-.super Lcom/google/android/gms/internal/location/zzai;
+.class public final Lcom/google/android/gms/internal/location/zzag;
+.super Lcom/google/android/gms/internal/location/zza;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
-
-# instance fields
-.field private final synthetic zzbz:Landroid/app/PendingIntent;
-
-.field private final synthetic zzcs:Lcom/google/android/gms/location/GeofencingRequest;
+# interfaces
+.implements Lcom/google/android/gms/internal/location/zzai;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/internal/location/zzaf;Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/GeofencingRequest;Landroid/app/PendingIntent;)V
-    .locals 0
+.method constructor <init>(Landroid/os/IBinder;)V
+    .locals 1
 
-    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzag;->zzcs:Lcom/google/android/gms/location/GeofencingRequest;
+    const-string v0, "com.google.android.gms.location.internal.IFusedLocationProviderCallback"
 
-    iput-object p4, p0, Lcom/google/android/gms/internal/location/zzag;->zzbz:Landroid/app/PendingIntent;
-
-    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzai;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    .line 1
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/location/zza;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
-    .locals 2
+.method public final zzb(Lcom/google/android/gms/internal/location/zzaa;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    check-cast p1, Lcom/google/android/gms/internal/location/zzaz;
+    const/4 p1, 0x0
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzag;->zzcs:Lcom/google/android/gms/location/GeofencingRequest;
+    throw p1
+.end method
 
-    iget-object v1, p0, Lcom/google/android/gms/internal/location/zzag;->zzbz:Landroid/app/PendingIntent;
+.method public final zzc()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    invoke-virtual {p1, v0, v1, p0}, Lcom/google/android/gms/internal/location/zzaz;->zza(Lcom/google/android/gms/location/GeofencingRequest;Landroid/app/PendingIntent;Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
+    const/4 v0, 0x0
 
-    return-void
+    throw v0
 .end method

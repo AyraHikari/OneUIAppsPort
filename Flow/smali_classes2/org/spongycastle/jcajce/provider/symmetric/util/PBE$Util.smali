@@ -112,7 +112,7 @@
     .line 130
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "unknown digest scheme for PBE encryption."
+    const-string/jumbo p1, "unknown digest scheme for PBE encryption."
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
@@ -217,7 +217,7 @@
     .line 101
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "unknown digest scheme for PBE PKCS5S2 encryption."
+    const-string/jumbo p1, "unknown digest scheme for PBE PKCS5S2 encryption."
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

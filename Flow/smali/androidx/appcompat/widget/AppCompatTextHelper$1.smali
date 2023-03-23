@@ -27,8 +27,22 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/widget/AppCompatTextHelper;IILjava/lang/ref/WeakReference;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$fontWeight",
+            "val$style",
+            "val$textViewWeak"
+        }
+    .end annotation
 
-    .line 339
+    .line 362
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextHelper$1;->this$0:Landroidx/appcompat/widget/AppCompatTextHelper;
 
     iput p2, p0, Landroidx/appcompat/widget/AppCompatTextHelper$1;->val$fontWeight:I
@@ -46,28 +60,44 @@
 # virtual methods
 .method public onFontRetrievalFailed(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onFontRetrieved(Landroid/graphics/Typeface;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "typeface"
+        }
+    .end annotation
 
-    .line 342
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 365
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_1
 
-    .line 343
+    .line 366
     iget v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper$1;->val$fontWeight:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_1
 
-    .line 344
+    .line 367
     iget v1, p0, Landroidx/appcompat/widget/AppCompatTextHelper$1;->val$style:I
 
     and-int/lit8 v1, v1, 0x2
@@ -86,7 +116,7 @@
 
     move-result-object p1
 
-    .line 348
+    .line 371
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper$1;->this$0:Landroidx/appcompat/widget/AppCompatTextHelper;
 

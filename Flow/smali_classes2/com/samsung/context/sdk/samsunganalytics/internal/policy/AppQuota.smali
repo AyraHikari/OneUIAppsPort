@@ -74,6 +74,14 @@
 
 .method public setDataQuota(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataQuota"
+        }
+    .end annotation
 
     .line 22
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/AppQuota;->dataQuota:I
@@ -83,6 +91,14 @@
 
 .method public setDataUsed(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataUsed"
+        }
+    .end annotation
 
     .line 38
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/AppQuota;->dataUsed:I
@@ -92,6 +108,14 @@
 
 .method public setLoadedSize(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "loadedSize"
+        }
+    .end annotation
 
     .line 54
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/AppQuota;->loadedSize:I
@@ -101,6 +125,14 @@
 
 .method public setWifiQuota(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "wifiQuota"
+        }
+    .end annotation
 
     .line 30
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/AppQuota;->wifiQuota:I
@@ -110,6 +142,14 @@
 
 .method public setWifiUsed(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "wifiUsed"
+        }
+    .end annotation
 
     .line 46
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/AppQuota;->wifiUsed:I

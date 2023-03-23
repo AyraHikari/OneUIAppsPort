@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/preference/PreferenceGroupAdapter;)V
     .locals 0
 
-    .line 92
+    .line 85
     iput-object p1, p0, Landroidx/preference/PreferenceGroupAdapter$1;->this$0:Landroidx/preference/PreferenceGroupAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +38,10 @@
 .method public run()V
     .locals 1
 
-    .line 95
+    .line 88
     iget-object v0, p0, Landroidx/preference/PreferenceGroupAdapter$1;->this$0:Landroidx/preference/PreferenceGroupAdapter;
 
-    invoke-virtual {v0}, Landroidx/preference/PreferenceGroupAdapter;->syncMyPreferences()V
+    invoke-virtual {v0}, Landroidx/preference/PreferenceGroupAdapter;->updatePreferences()V
 
     return-void
 .end method

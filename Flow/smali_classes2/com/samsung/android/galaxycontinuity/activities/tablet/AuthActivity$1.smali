@@ -3,12 +3,12 @@
 .source "AuthActivity.java"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->initView()V
+    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,17 +20,21 @@
 # instance fields
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
-.field final synthetic val$mainLayout:Landroid/widget/RelativeLayout;
-
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;Landroid/widget/RelativeLayout;)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 120
+    .line 204
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
-
-    iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$1;->val$mainLayout:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,28 +43,42 @@
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 0
+.method public run()V
+    .locals 2
 
-    if-ne p2, p6, :cond_0
+    .line 208
+    :try_start_0
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
-    if-ne p3, p7, :cond_0
+    move-result-object v0
 
-    if-ne p4, p8, :cond_0
+    const-class v1, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
 
-    if-ne p5, p9, :cond_0
+    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getService(Ljava/lang/Class;)Landroid/app/Service;
 
-    return-void
+    move-result-object v0
 
-    .line 127
+    .line 210
+    instance-of v1, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
+
+    if-eqz v1, :cond_0
+
+    .line 211
+    check-cast v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
+
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;->startAllSubServices()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    .line 215
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+
     :cond_0
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$1;->val$mainLayout:Landroid/widget/RelativeLayout;
-
-    new-instance p2, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$1$1;
-
-    invoke-direct {p2, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$1$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$1;)V
-
-    invoke-virtual {p1, p2}, Landroid/widget/RelativeLayout;->post(Ljava/lang/Runnable;)Z
-
+    :goto_0
     return-void
 .end method

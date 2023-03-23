@@ -10,7 +10,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 15
+    .line 16
     invoke-direct {p0}, Lkotlin/jvm/internal/MutablePropertyReference;-><init>()V
 
     return-void
@@ -19,8 +19,17 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
-    .line 20
+    .line 21
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/MutablePropertyReference;-><init>(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    .locals 0
+
+    .line 26
+    invoke-direct/range {p0 .. p5}, Lkotlin/jvm/internal/MutablePropertyReference;-><init>(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
 .end method
@@ -30,7 +39,7 @@
 .method protected computeReflected()Lkotlin/reflect/KCallable;
     .locals 1
 
-    .line 25
+    .line 31
     invoke-static {p0}, Lkotlin/jvm/internal/Reflection;->mutableProperty1(Lkotlin/jvm/internal/MutablePropertyReference1;)Lkotlin/reflect/KMutableProperty1;
 
     move-result-object v0
@@ -41,7 +50,7 @@
 .method public getDelegate(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 46
+    .line 52
     invoke-virtual {p0}, Lkotlin/jvm/internal/MutablePropertyReference1;->getReflected()Lkotlin/reflect/KProperty;
 
     move-result-object v0
@@ -69,7 +78,7 @@
 .method public getGetter()Lkotlin/reflect/KProperty1$Getter;
     .locals 1
 
-    .line 35
+    .line 41
     invoke-virtual {p0}, Lkotlin/jvm/internal/MutablePropertyReference1;->getReflected()Lkotlin/reflect/KProperty;
 
     move-result-object v0
@@ -97,7 +106,7 @@
 .method public getSetter()Lkotlin/reflect/KMutableProperty1$Setter;
     .locals 1
 
-    .line 40
+    .line 46
     invoke-virtual {p0}, Lkotlin/jvm/internal/MutablePropertyReference1;->getReflected()Lkotlin/reflect/KProperty;
 
     move-result-object v0
@@ -114,7 +123,7 @@
 .method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 30
+    .line 36
     invoke-virtual {p0, p1}, Lkotlin/jvm/internal/MutablePropertyReference1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

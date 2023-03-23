@@ -18,7 +18,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 19
+    .line 18
     const-class v0, Landroid/text/TextUtils;
 
     sput-object v0, Landroidx/reflect/text/SeslTextUtilsReflector;->mClass:Ljava/lang/Class;
@@ -29,7 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 17
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,11 +37,23 @@
 
 .method public static semGetPrefixCharForSpan(Landroid/text/TextPaint;Ljava/lang/CharSequence;[C)[C
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "paint",
+            "text",
+            "prefix"
+        }
+    .end annotation
 
-    .line 31
+    .line 30
     const-class v0, [C
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v2, 0x2
 
@@ -55,7 +67,7 @@
 
     if-lt v1, v6, :cond_0
 
-    .line 32
+    .line 31
     sget-object v1, Landroidx/reflect/text/SeslTextUtilsReflector;->mClass:Ljava/lang/Class;
 
     new-array v6, v4, [Ljava/lang/Class;
@@ -78,15 +90,15 @@
 
     goto :goto_0
 
-    .line 34
+    .line 33
     :cond_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v6, 0x18
 
     if-lt v1, v6, :cond_1
 
-    .line 35
+    .line 34
     sget-object v1, Landroidx/reflect/text/SeslTextUtilsReflector;->mClass:Ljava/lang/Class;
 
     new-array v6, v4, [Ljava/lang/Class;
@@ -109,7 +121,7 @@
 
     goto :goto_0
 
-    .line 38
+    .line 37
     :cond_1
     sget-object v1, Landroidx/reflect/text/SeslTextUtilsReflector;->mClass:Ljava/lang/Class;
 
@@ -132,36 +144,37 @@
     move-result-object v0
 
     :goto_0
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    const/4 v1, 0x0
+    new-array v1, v4, [Ljava/lang/Object;
 
-    new-array v4, v4, [Ljava/lang/Object;
+    aput-object p0, v1, v5
 
-    aput-object p0, v4, v5
+    aput-object p1, v1, v3
 
-    aput-object p1, v4, v3
+    aput-object p2, v1, v2
 
-    aput-object p2, v4, v2
+    const/4 p0, 0x0
+
+    .line 42
+    invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
 
     .line 43
-    invoke-static {v1, v0, v4}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+    instance-of p2, p1, [C
 
-    move-result-object p0
+    if-eqz p2, :cond_2
 
     .line 44
-    instance-of p1, p0, [C
+    check-cast p1, [C
 
-    if-eqz p1, :cond_2
-
-    .line 45
-    check-cast p0, [C
-
-    check-cast p0, [C
-
-    return-object p0
+    return-object p1
 
     :cond_2
+    return-object p0
+
+    :cond_3
     new-array p0, v5, [C
 
     return-object p0

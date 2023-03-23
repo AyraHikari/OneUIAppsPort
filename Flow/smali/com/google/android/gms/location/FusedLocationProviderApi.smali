@@ -1,5 +1,6 @@
 .class public interface abstract Lcom/google/android/gms/location/FusedLocationProviderApi;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # annotations
@@ -14,6 +15,9 @@
 .end field
 
 .field public static final KEY_MOCK_LOCATION:Ljava/lang/String; = "mockLocation"
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 
 # virtual methods

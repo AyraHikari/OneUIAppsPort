@@ -27,7 +27,7 @@
     .locals 5
 
     .line 25
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -52,18 +52,19 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 28
+    .line 29
     invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 31
+    .line 32
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 33
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -76,6 +77,7 @@
     :cond_1
     const-string v2, "HOVERING_SPENICON_DEFAULT"
 
+    .line 32
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -83,19 +85,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 34
+    .line 36
     invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 38
+    .line 40
     :cond_2
     :goto_1
     instance-of v0, v1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_3
 
-    .line 39
+    .line 41
     check-cast v1, Ljava/lang/Integer;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
@@ -113,8 +115,8 @@
 .method public static getField_SEM_TYPE_STYLUS_MORE()I
     .locals 5
 
-    .line 177
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 189
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -122,7 +124,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 178
+    .line 190
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -139,18 +141,19 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 180
+    .line 193
     invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 183
+    .line 196
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 197
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -163,6 +166,7 @@
     :cond_1
     const-string v2, "HOVERING_SPENICON_MORE"
 
+    .line 196
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -170,19 +174,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 186
+    .line 200
     invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 190
+    .line 204
     :cond_2
     :goto_1
     instance-of v0, v1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_3
 
-    .line 191
+    .line 205
     check-cast v1, Ljava/lang/Integer;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
@@ -200,8 +204,8 @@
 .method public static getField_SEM_TYPE_STYLUS_PEN_SELECT()I
     .locals 5
 
-    .line 151
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 161
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -209,7 +213,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 152
+    .line 162
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -226,18 +230,19 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 154
+    .line 165
     invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 157
+    .line 168
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 169
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -250,6 +255,7 @@
     :cond_1
     const-string v2, "HOVERING_PENSELECT_POINTER_01"
 
+    .line 168
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -257,19 +263,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 160
+    .line 172
     invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 164
+    .line 176
     :cond_2
     :goto_1
     instance-of v0, v1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_3
 
-    .line 165
+    .line 177
     check-cast v1, Ljava/lang/Integer;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
@@ -287,8 +293,8 @@
 .method public static getField_SEM_TYPE_STYLUS_SCROLL_DOWN()I
     .locals 5
 
-    .line 75
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 79
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -296,7 +302,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 76
+    .line 80
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -313,18 +319,19 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 78
+    .line 83
     invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 81
+    .line 86
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 87
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -337,6 +344,7 @@
     :cond_1
     const-string v2, "HOVERING_SCROLLICON_POINTER_05"
 
+    .line 86
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -344,19 +352,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 84
+    .line 90
     invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 88
+    .line 94
     :cond_2
     :goto_1
     instance-of v0, v1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_3
 
-    .line 89
+    .line 95
     check-cast v1, Ljava/lang/Integer;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
@@ -374,8 +382,8 @@
 .method public static getField_SEM_TYPE_STYLUS_SCROLL_LEFT()I
     .locals 5
 
-    .line 100
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 106
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -383,7 +391,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 101
+    .line 107
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -400,18 +408,19 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 103
+    .line 110
     invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 106
+    .line 113
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 114
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -424,6 +433,7 @@
     :cond_1
     const-string v2, "HOVERING_SCROLLICON_POINTER_07"
 
+    .line 113
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -431,19 +441,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 109
+    .line 117
     invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 113
+    .line 121
     :cond_2
     :goto_1
     instance-of v0, v1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_3
 
-    .line 114
+    .line 122
     check-cast v1, Ljava/lang/Integer;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
@@ -461,8 +471,8 @@
 .method public static getField_SEM_TYPE_STYLUS_SCROLL_RIGHT()I
     .locals 5
 
-    .line 125
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 133
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -470,7 +480,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 126
+    .line 134
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -487,18 +497,19 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 128
+    .line 137
     invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 131
+    .line 140
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 141
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -511,6 +522,7 @@
     :cond_1
     const-string v2, "HOVERING_SCROLLICON_POINTER_03"
 
+    .line 140
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -518,19 +530,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 134
+    .line 144
     invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 138
+    .line 148
     :cond_2
     :goto_1
     instance-of v0, v1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_3
 
-    .line 139
+    .line 149
     check-cast v1, Ljava/lang/Integer;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
@@ -548,8 +560,8 @@
 .method public static getField_SEM_TYPE_STYLUS_SCROLL_UP()I
     .locals 5
 
-    .line 50
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 52
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -557,7 +569,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 51
+    .line 53
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -574,18 +586,19 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 53
+    .line 56
     invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 56
+    .line 59
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslPointerIconReflector;->mClassName:Ljava/lang/String;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 60
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -598,6 +611,7 @@
     :cond_1
     const-string v2, "HOVERING_SCROLLICON_POINTER_01"
 
+    .line 59
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -605,19 +619,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 59
+    .line 63
     invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 63
+    .line 67
     :cond_2
     :goto_1
     instance-of v0, v1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_3
 
-    .line 64
+    .line 68
     check-cast v1, Ljava/lang/Integer;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I

@@ -6,6 +6,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Landroidx/appcompat/R$anim;,
+        Landroidx/appcompat/R$animator;,
         Landroidx/appcompat/R$attr;,
         Landroidx/appcompat/R$bool;,
         Landroidx/appcompat/R$color;,

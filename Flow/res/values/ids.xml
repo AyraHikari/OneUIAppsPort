@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item type="id" name="SettingsMainLayout" />
+    <item type="id" name="ShortcutListLayout" />
     <item type="id" name="about_latest_version_title" />
     <item type="id" name="about_open_source_licenses" />
     <item type="id" name="about_permissions_button" />
@@ -64,17 +66,18 @@
     <item type="id" name="alarm_button" />
     <item type="id" name="alertTitle" />
     <item type="id" name="all_select_checkbox" />
-    <item type="id" name="animation_view" />
+    <item type="id" name="androidx_window_activity_scope" />
     <item type="id" name="appIcon" />
     <item type="id" name="appName" />
+    <item type="id" name="appTitle" />
     <item type="id" name="app_bar" />
     <item type="id" name="attachSheet" />
     <item type="id" name="attachedFilesLayout" />
     <item type="id" name="attachedImage" />
+    <item type="id" name="available_desc" />
     <item type="id" name="back_button" />
-    <item type="id" name="background" />
     <item type="id" name="badge" />
-    <item type="id" name="banner_icon" />
+    <item type="id" name="badge_frame" />
     <item type="id" name="biometric_auth_panel" />
     <item type="id" name="biometric_guide" />
     <item type="id" name="biometric_image" />
@@ -87,12 +90,15 @@
     <item type="id" name="bluetoothIcon" />
     <item type="id" name="body" />
     <item type="id" name="bottomBars" />
+    <item type="id" name="bottomMenu" />
     <item type="id" name="bottomMenuBar" />
+    <item type="id" name="bottom_bar_overlay" />
     <item type="id" name="bottom_margin_view" />
+    <item type="id" name="bottom_menus" />
+    <item type="id" name="bottom_overflow" />
+    <item type="id" name="bottom_view" />
     <item type="id" name="btnView" />
-    <item type="id" name="button1" />
-    <item type="id" name="button2" />
-    <item type="id" name="button3" />
+    <item type="id" name="buttonBarLayout" />
     <item type="id" name="buttonPanel" />
     <item type="id" name="button_agree" />
     <item type="id" name="button_cancel" />
@@ -103,6 +109,7 @@
     <item type="id" name="button_permissions_cancel" />
     <item type="id" name="button_permissions_continue" />
     <item type="id" name="button_previous" />
+    <item type="id" name="buttons" />
     <item type="id" name="callLogTitle" />
     <item type="id" name="callerIDImagePanel" />
     <item type="id" name="callerImage" />
@@ -111,6 +118,8 @@
     <item type="id" name="cancel" />
     <item type="id" name="cancel_button" />
     <item type="id" name="cannot_search_text" />
+    <item type="id" name="capture_button" />
+    <item type="id" name="center_anchor" />
     <item type="id" name="chatLayout" />
     <item type="id" name="chatMsg" />
     <item type="id" name="chatPanel" />
@@ -125,30 +134,43 @@
     <item type="id" name="checkbox_layout" />
     <item type="id" name="checked" />
     <item type="id" name="chip" />
+    <item type="id" name="chip1" />
+    <item type="id" name="chip2" />
+    <item type="id" name="chip3" />
     <item type="id" name="chip_group" />
     <item type="id" name="chronometer" />
+    <item type="id" name="circleIndicator" />
+    <item type="id" name="circleIndicatorForTablet" />
     <item type="id" name="circleProgress" />
+    <item type="id" name="circleProgressForTablet" />
+    <item type="id" name="circle_center" />
     <item type="id" name="collapsing_app_bar" />
-    <item type="id" name="collpasing_app_bar_extended_sub_title" />
-    <item type="id" name="collpasing_app_bar_extended_title" />
-    <item type="id" name="collpasing_app_bar_title_layout" />
-    <item type="id" name="collpasing_app_bar_title_layout_parent" />
-    <item type="id" name="connection_progress" />
+    <item type="id" name="collapsing_appbar_extended_subtitle" />
+    <item type="id" name="collapsing_appbar_extended_title" />
+    <item type="id" name="collapsing_appbar_title_layout" />
+    <item type="id" name="collapsing_appbar_title_layout_parent" />
+    <item type="id" name="complete_title" />
+    <item type="id" name="confirm_button" />
+    <item type="id" name="confirm_passkey_scroll" />
+    <item type="id" name="confirm_title" />
+    <item type="id" name="connection_title" />
+    <item type="id" name="constraint_main_panel" />
     <item type="id" name="contactTitle" />
     <item type="id" name="container" />
     <item type="id" name="content" />
     <item type="id" name="contentPanel" />
     <item type="id" name="coordinator" />
-    <item type="id" name="custom" />
     <item type="id" name="customPanel" />
     <item type="id" name="dataBinding" />
     <item type="id" name="dateLayout" />
     <item type="id" name="date_line" />
+    <item type="id" name="date_picker_actions" />
     <item type="id" name="decor_content_parent" />
     <item type="id" name="defaultCallerImage" />
     <item type="id" name="defaultPhoneIconLayout" />
     <item type="id" name="default_activity_button" />
     <item type="id" name="delete" />
+    <item type="id" name="descImg" />
     <item type="id" name="descPanel" />
     <item type="id" name="desc_text_panel" />
     <item type="id" name="description" />
@@ -158,13 +180,20 @@
     <item type="id" name="design_menu_item_action_area_stub" />
     <item type="id" name="design_menu_item_text" />
     <item type="id" name="design_navigation_view" />
+    <item type="id" name="detailDeviceConnectionStatus" />
+    <item type="id" name="detailDeviceImage" />
+    <item type="id" name="detailDeviceImage_bg" />
+    <item type="id" name="detailDeviceInfo" />
+    <item type="id" name="detailDeviceTitle" />
     <item type="id" name="detail_desc" />
-    <item type="id" name="detail_image" />
+    <item type="id" name="detail_menu" />
+    <item type="id" name="detail_title" />
     <item type="id" name="deviceIcon" />
     <item type="id" name="deviceName" />
     <item type="id" name="deviceNameLayout" />
     <item type="id" name="deviceNameParent" />
     <item type="id" name="deviceNameStatus" />
+    <item type="id" name="device_management_layout" />
     <item type="id" name="dialog_button" />
     <item type="id" name="dialog_description" />
     <item type="id" name="dialog_icon" />
@@ -174,38 +203,52 @@
     <item type="id" name="dialog_verify_success_text" />
     <item type="id" name="disconnectMessage" />
     <item type="id" name="disconnectMessageLayout" />
+    <item type="id" name="do_not_disturb_button" />
+    <item type="id" name="donot_img" />
     <item type="id" name="edit_query" />
     <item type="id" name="edittext_container" />
+    <item type="id" name="enrolledDevice" />
     <item type="id" name="expand_activities_button" />
     <item type="id" name="expanded_menu" />
     <item type="id" name="failIcon" />
     <item type="id" name="failLayout" />
     <item type="id" name="favoritePickerRoot" />
     <item type="id" name="favoriteView" />
+    <item type="id" name="favorite_button" />
+    <item type="id" name="fill_space_view" />
     <item type="id" name="filterItem" />
     <item type="id" name="filterListView" />
     <item type="id" name="filterSwitch" />
-    <item type="id" name="filter_chip" />
     <item type="id" name="finger_auth_guide_panel" />
     <item type="id" name="finger_auth_panel" />
     <item type="id" name="finger_cancel_button" />
+    <item type="id" name="fingerprint_description" />
+    <item type="id" name="fingerprint_error" />
     <item type="id" name="fingerprint_guide" />
     <item type="id" name="fingerprint_icon" />
+    <item type="id" name="fingerprint_subtitle" />
     <item type="id" name="firstLineText" />
-    <item type="id" name="flipper_expanded_icon" />
-    <item type="id" name="flipper_folded_icon" />
     <item type="id" name="floatableCheckbox" />
-    <item type="id" name="flow_history" />
-    <item type="id" name="flow_history_textview" />
     <item type="id" name="flow_icon" />
+    <item type="id" name="fragment_container_view_tag" />
+    <item type="id" name="full_img" />
+    <item type="id" name="fullscreen_button" />
+    <item type="id" name="ghost_view" />
+    <item type="id" name="ghost_view_holder" />
     <item type="id" name="group_divider" />
+    <item type="id" name="guide_image" />
     <item type="id" name="guide_text_panel" />
+    <item type="id" name="guideline" />
+    <item type="id" name="header_title" />
+    <item type="id" name="help_anim" />
     <item type="id" name="help_image" />
     <item type="id" name="home" />
     <item type="id" name="home_button" />
+    <item type="id" name="ic_favorite" />
     <item type="id" name="icon" />
     <item type="id" name="iconImage" />
     <item type="id" name="iconView" />
+    <item type="id" name="icon_bg" />
     <item type="id" name="icon_divider" />
     <item type="id" name="icon_frame" />
     <item type="id" name="icon_group" />
@@ -217,14 +260,16 @@
     <item type="id" name="info" />
     <item type="id" name="inputLayout" />
     <item type="id" name="inputText" />
+    <item type="id" name="inputTextLayout" />
     <item type="id" name="iris_guide_text" />
     <item type="id" name="itemPanel" />
     <item type="id" name="item_count" />
     <item type="id" name="item_touch_helper_previous_elevation" />
     <item type="id" name="label" />
-    <item type="id" name="largeLabel" />
+    <item type="id" name="landMode" />
+    <item type="id" name="land_guide_image" />
+    <item type="id" name="land_text_pin" />
     <item type="id" name="layout_buttons" />
-    <item type="id" name="leftDateline" />
     <item type="id" name="leftTime" />
     <item type="id" name="leftTimeLayout" />
     <item type="id" name="license_bottom_space" />
@@ -236,6 +281,7 @@
     <item type="id" name="list_bt_search" />
     <item type="id" name="list_dummy" />
     <item type="id" name="list_item" />
+    <item type="id" name="list_item_check_icon" />
     <item type="id" name="list_item_desc" />
     <item type="id" name="list_item_device_image" />
     <item type="id" name="list_item_end_button" />
@@ -253,13 +299,33 @@
     <item type="id" name="mainIcon" />
     <item type="id" name="mainIconBackground" />
     <item type="id" name="mainPanel" />
-    <item type="id" name="mainSwitchPanel" />
     <item type="id" name="main_panel" />
     <item type="id" name="main_tab_touch_background" />
+    <item type="id" name="management_deregister" />
+    <item type="id" name="management_rename" />
     <item type="id" name="masked" />
-    <item type="id" name="menu_about" />
+    <item type="id" name="material_clock_display" />
+    <item type="id" name="material_clock_face" />
+    <item type="id" name="material_clock_hand" />
+    <item type="id" name="material_clock_period_am_button" />
+    <item type="id" name="material_clock_period_pm_button" />
+    <item type="id" name="material_clock_period_toggle" />
+    <item type="id" name="material_hour_text_input" />
+    <item type="id" name="material_hour_tv" />
+    <item type="id" name="material_label" />
+    <item type="id" name="material_minute_text_input" />
+    <item type="id" name="material_minute_tv" />
+    <item type="id" name="material_textinput_timepicker" />
+    <item type="id" name="material_timepicker_cancel_button" />
+    <item type="id" name="material_timepicker_container" />
+    <item type="id" name="material_timepicker_edit_text" />
+    <item type="id" name="material_timepicker_mode_button" />
+    <item type="id" name="material_timepicker_ok_button" />
+    <item type="id" name="material_timepicker_view" />
+    <item type="id" name="material_value_index" />
     <item type="id" name="menu_add_app_from_phone" />
     <item type="id" name="menu_app_info" />
+    <item type="id" name="menu_badge" />
     <item type="id" name="menu_blackscreen" />
     <item type="id" name="menu_button" />
     <item type="id" name="menu_cancel" />
@@ -275,30 +341,82 @@
     <item type="id" name="menu_enableHotspot" />
     <item type="id" name="menu_favorite" />
     <item type="id" name="menu_fullscreen" />
-    <item type="id" name="menu_help" />
     <item type="id" name="menu_managedevice" />
     <item type="id" name="menu_notices" />
+    <item type="id" name="menu_notifications" />
     <item type="id" name="menu_rotate" />
     <item type="id" name="menu_settings" />
     <item type="id" name="menu_share" />
     <item type="id" name="menu_smart_view" />
+    <item type="id" name="menus_group" />
     <item type="id" name="message" />
-    <item type="id" name="methodSwitch" />
+    <item type="id" name="messageIcon" />
+    <item type="id" name="methodSpinner" />
     <item type="id" name="microphoneTitle" />
+    <item type="id" name="middle_view" />
+    <item type="id" name="mini_desc1" />
+    <item type="id" name="mini_desc2" />
+    <item type="id" name="mini_desc3" />
+    <item type="id" name="mini_title1" />
+    <item type="id" name="mini_title2" />
+    <item type="id" name="mini_title3" />
     <item type="id" name="mirroring_noti_panel" />
     <item type="id" name="mirroring_noti_text" />
+    <item type="id" name="month_grid" />
+    <item type="id" name="month_navigation_bar" />
+    <item type="id" name="month_navigation_fragment_toggle" />
+    <item type="id" name="month_navigation_next" />
+    <item type="id" name="month_navigation_previous" />
+    <item type="id" name="month_title" />
+    <item type="id" name="more_button" />
+    <item type="id" name="more_menus_bar" />
+    <item type="id" name="motion_base" />
+    <item type="id" name="mtrl_anchor_parent" />
+    <item type="id" name="mtrl_calendar_day_selector_frame" />
+    <item type="id" name="mtrl_calendar_days_of_week" />
+    <item type="id" name="mtrl_calendar_frame" />
+    <item type="id" name="mtrl_calendar_main_pane" />
+    <item type="id" name="mtrl_calendar_months" />
+    <item type="id" name="mtrl_calendar_selection_frame" />
+    <item type="id" name="mtrl_calendar_text_input_frame" />
+    <item type="id" name="mtrl_calendar_year_selector_frame" />
+    <item type="id" name="mtrl_card_checked_layer_id" />
     <item type="id" name="mtrl_child_content_container" />
     <item type="id" name="mtrl_internal_children_alpha_tag" />
+    <item type="id" name="mtrl_motion_snapshot_view" />
+    <item type="id" name="mtrl_picker_fullscreen" />
+    <item type="id" name="mtrl_picker_header" />
+    <item type="id" name="mtrl_picker_header_selection_text" />
+    <item type="id" name="mtrl_picker_header_title_and_selection" />
+    <item type="id" name="mtrl_picker_header_toggle" />
+    <item type="id" name="mtrl_picker_text_input_date" />
+    <item type="id" name="mtrl_picker_text_input_range_end" />
+    <item type="id" name="mtrl_picker_text_input_range_start" />
+    <item type="id" name="mtrl_picker_title_text" />
+    <item type="id" name="mtrl_view_tag_bottom_padding" />
+    <item type="id" name="navigation_bar_item_active_indicator_view" />
+    <item type="id" name="navigation_bar_item_icon_container" />
+    <item type="id" name="navigation_bar_item_icon_view" />
+    <item type="id" name="navigation_bar_item_labels_group" />
+    <item type="id" name="navigation_bar_item_large_label_view" />
+    <item type="id" name="navigation_bar_item_small_label_view" />
     <item type="id" name="navigation_header_container" />
+    <item type="id" name="nearbyDevicesTitle" />
+    <item type="id" name="neededSpace" />
     <item type="id" name="negative" />
+    <item type="id" name="new_badge" />
     <item type="id" name="nextPanel" />
     <item type="id" name="no_items_text" />
     <item type="id" name="notiCnt" />
+    <item type="id" name="notiCntLayout" />
     <item type="id" name="notiSpinner" />
     <item type="id" name="notification_background" />
+    <item type="id" name="notification_filter_layout" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
     <item type="id" name="notifications2" />
+    <item type="id" name="notifications_badge" />
+    <item type="id" name="notifications_badge_container" />
     <item type="id" name="off" />
     <item type="id" name="on" />
     <item type="id" name="onAttachStateChangeListener" />
@@ -306,66 +424,61 @@
     <item type="id" name="option" />
     <item type="id" name="optionLayout" />
     <item type="id" name="parentPanel" />
+    <item type="id" name="parent_matrix" />
     <item type="id" name="parent_view" />
+    <item type="id" name="permissionAllFilesAccess" />
+    <item type="id" name="permissionAppearOnTop" />
     <item type="id" name="permissionCallLogIcon" />
     <item type="id" name="permissionContactIcon" />
     <item type="id" name="permissionLocationIcon" />
     <item type="id" name="permissionMicrophoneIcon" />
+    <item type="id" name="permissionNearbyDevices" />
+    <item type="id" name="permissionNearbyDevicesIcon" />
     <item type="id" name="permissionPanel" />
     <item type="id" name="permissionPhoneIcon" />
     <item type="id" name="permissionSMSIcon" />
+    <item type="id" name="permissionStorage" />
     <item type="id" name="permissionStorageIcon" />
     <item type="id" name="permissionSwitch" />
     <item type="id" name="permissionTitle" />
     <item type="id" name="permission_buttons" />
     <item type="id" name="permissions" />
+    <item type="id" name="permissions_main_title" />
     <item type="id" name="phoneTitle" />
     <item type="id" name="phoneToTab" />
+    <item type="id" name="phone_screen_button" />
+    <item type="id" name="phone_welcome_constraint" />
+    <item type="id" name="phone_welcome_root" />
+    <item type="id" name="phonescreen_img" />
     <item type="id" name="pickerIcon" />
     <item type="id" name="playIcon" />
-    <item type="id" name="pop_wrapper" />
+    <item type="id" name="playIconForTablet" />
     <item type="id" name="popup_view" />
+    <item type="id" name="portraitMode" />
     <item type="id" name="positive" />
     <item type="id" name="postTime" />
-    <item type="id" name="ppmt_pop_body_message" />
-    <item type="id" name="ppmt_pop_body_message_for_rtl" />
-    <item type="id" name="ppmt_pop_bottom1" />
-    <item type="id" name="ppmt_pop_bottom2" />
-    <item type="id" name="ppmt_pop_button1" />
-    <item type="id" name="ppmt_pop_button1_text" />
-    <item type="id" name="ppmt_pop_button2" />
-    <item type="id" name="ppmt_pop_button2_text" />
-    <item type="id" name="ppmt_pop_button_layout" />
-    <item type="id" name="ppmt_pop_button_margin1" />
-    <item type="id" name="ppmt_pop_button_margin2" />
-    <item type="id" name="ppmt_pop_button_margin3" />
-    <item type="id" name="ppmt_pop_close_btn" />
-    <item type="id" name="ppmt_pop_layout" />
-    <item type="id" name="ppmt_pop_layout_margin_bottom" />
-    <item type="id" name="ppmt_pop_layout_margin_top" />
-    <item type="id" name="ppmt_pop_line" />
-    <item type="id" name="ppmt_pop_line_for_centeralign" />
-    <item type="id" name="ppmt_pop_main_image" />
-    <item type="id" name="ppmt_pop_webview" />
+    <item type="id" name="preferences_detail" />
+    <item type="id" name="preferences_header" />
+    <item type="id" name="preferences_sliding_pane_layout" />
+    <item type="id" name="prepare_image" />
+    <item type="id" name="prepare_title" />
     <item type="id" name="preparing" />
+    <item type="id" name="preparing_detail" />
     <item type="id" name="pressed" />
     <item type="id" name="progress" />
-    <item type="id" name="progressBar" />
-    <item type="id" name="progressText" />
     <item type="id" name="progress_circular" />
     <item type="id" name="progress_horizontal" />
     <item type="id" name="progress_number" />
     <item type="id" name="progress_percent" />
-    <item type="id" name="progress_update_check" />
     <item type="id" name="radio" />
     <item type="id" name="radio_panel" />
-    <item type="id" name="rcvr_tl_tabs" />
     <item type="id" name="rcvr_vp_pager" />
     <item type="id" name="recyclerView" />
     <item type="id" name="recycler_view" />
     <item type="id" name="remove" />
     <item type="id" name="retry_button" />
     <item type="id" name="retry_panel" />
+    <item type="id" name="rightFailIcon" />
     <item type="id" name="rightTime" />
     <item type="id" name="right_icon" />
     <item type="id" name="right_side" />
@@ -374,10 +487,16 @@
     <item type="id" name="root_view" />
     <item type="id" name="rotation_ani_panel" />
     <item type="id" name="rotation_blick_block_layout" />
+    <item type="id" name="rotation_button" />
+    <item type="id" name="row_index_key" />
     <item type="id" name="samsung_pass_icon" />
+    <item type="id" name="save_non_transition_alpha" />
+    <item type="id" name="save_overlay_view" />
     <item type="id" name="scrollIndicatorDown" />
     <item type="id" name="scrollIndicatorUp" />
     <item type="id" name="scrollView" />
+    <item type="id" name="scroll_main_panel" />
+    <item type="id" name="scroll_main_phone" />
     <item type="id" name="search_back_btn" />
     <item type="id" name="search_badge" />
     <item type="id" name="search_bar" />
@@ -391,18 +510,22 @@
     <item type="id" name="search_src_text" />
     <item type="id" name="search_voice_btn" />
     <item type="id" name="searching_desc" />
-    <item type="id" name="secondaryProgress" />
+    <item type="id" name="second_view" />
     <item type="id" name="seekbar" />
     <item type="id" name="seekbar_value" />
     <item type="id" name="select" />
+    <item type="id" name="select_device_layout" />
     <item type="id" name="select_dialog_listview" />
     <item type="id" name="selectedFavoriteListView" />
     <item type="id" name="selection_mode_title" />
+    <item type="id" name="selection_type" />
     <item type="id" name="sem_divider1" />
     <item type="id" name="sem_divider2" />
     <item type="id" name="sendButton" />
+    <item type="id" name="sesl_action_bar_overflow_button" />
     <item type="id" name="sesl_badge_dot" />
     <item type="id" name="sesl_badge_n" />
+    <item type="id" name="sesl_switch_thumb_on" />
     <item type="id" name="sesl_switch_track_on" />
     <item type="id" name="sesl_switchbar_container" />
     <item type="id" name="sesl_switchbar_progress" />
@@ -410,6 +533,8 @@
     <item type="id" name="sesl_switchbar_text" />
     <item type="id" name="settting_button_panel" />
     <item type="id" name="setupPanel" />
+    <item type="id" name="setup_enroll_linear" />
+    <item type="id" name="setup_enroll_root" />
     <item type="id" name="shareBubbleLayout" />
     <item type="id" name="shareFrameLayout" />
     <item type="id" name="shareItemInnerLayout" />
@@ -422,32 +547,44 @@
     <item type="id" name="shortcut" />
     <item type="id" name="shortcutListView" />
     <item type="id" name="single_left_icons" />
-    <item type="id" name="smallLabel" />
+    <item type="id" name="smart_view_main_menus" />
     <item type="id" name="smsTitle" />
     <item type="id" name="snackbar_action" />
+    <item type="id" name="snackbar_content_layout" />
     <item type="id" name="snackbar_text" />
+    <item type="id" name="sound_output_button" />
     <item type="id" name="spacer" />
+    <item type="id" name="special_effects_controller_view_tag" />
     <item type="id" name="spinner" />
+    <item type="id" name="spinnerFilter" />
     <item type="id" name="spinnerLayout" />
     <item type="id" name="split_action_bar" />
     <item type="id" name="storageTitle" />
     <item type="id" name="sub_menu_title" />
+    <item type="id" name="sub_title" />
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
     <item type="id" name="swipe_guide_text_container" />
-    <item type="id" name="switchTitle" />
-    <item type="id" name="switchWidget" />
+    <item type="id" name="switch_divider_large" />
+    <item type="id" name="switch_divider_normal" />
     <item type="id" name="switch_panel" />
-    <item type="id" name="tabLayout" />
+    <item type="id" name="switch_widget" />
+    <item type="id" name="switchid" />
     <item type="id" name="tabToPc" />
     <item type="id" name="tag_accessibility_actions" />
     <item type="id" name="tag_accessibility_clickable_spans" />
     <item type="id" name="tag_accessibility_heading" />
     <item type="id" name="tag_accessibility_pane_title" />
+    <item type="id" name="tag_on_apply_window_listener" />
+    <item type="id" name="tag_on_receive_content_listener" />
+    <item type="id" name="tag_on_receive_content_mime_types" />
     <item type="id" name="tag_screen_reader_focusable" />
+    <item type="id" name="tag_state_description" />
     <item type="id" name="tag_transition_group" />
     <item type="id" name="tag_unhandled_key_event_manager" />
     <item type="id" name="tag_unhandled_key_listeners" />
+    <item type="id" name="tag_window_insets_animation_callback" />
+    <item type="id" name="temp_view" />
     <item type="id" name="terms_agree_check" />
     <item type="id" name="terms_buttons" />
     <item type="id" name="terms_desc" />
@@ -456,12 +593,19 @@
     <item type="id" name="terms_prev_button" />
     <item type="id" name="terms_web" />
     <item type="id" name="terms_web_progress" />
+    <item type="id" name="test_checkbox_android_button_tint" />
+    <item type="id" name="test_checkbox_app_button_tint" />
+    <item type="id" name="test_radiobutton_android_button_tint" />
+    <item type="id" name="test_radiobutton_app_button_tint" />
     <item type="id" name="text" />
+    <item type="id" name="textSpace" />
     <item type="id" name="textSpacerNoButtons" />
     <item type="id" name="textSpacerNoTitle" />
     <item type="id" name="textWatcher" />
     <item type="id" name="text_confirm_description" />
-    <item type="id" name="text_input_password_toggle" />
+    <item type="id" name="text_input_end_icon" />
+    <item type="id" name="text_input_error_icon" />
+    <item type="id" name="text_input_start_icon" />
     <item type="id" name="text_pin" />
     <item type="id" name="text_time" />
     <item type="id" name="text_time_date" />
@@ -469,25 +613,38 @@
     <item type="id" name="textinput_counter" />
     <item type="id" name="textinput_error" />
     <item type="id" name="textinput_helper_text" />
+    <item type="id" name="textinput_placeholder" />
+    <item type="id" name="textinput_prefix_text" />
+    <item type="id" name="textinput_suffix_text" />
     <item type="id" name="texture_view" />
     <item type="id" name="thumbIcon" />
+    <item type="id" name="thumbIconForTablet" />
     <item type="id" name="thumbLayout" />
+    <item type="id" name="thumbLayoutForTablet" />
     <item type="id" name="thumbnail" />
     <item type="id" name="thumbnail_last" />
     <item type="id" name="thumbnail_second" />
     <item type="id" name="time" />
     <item type="id" name="title" />
     <item type="id" name="titleDividerNoCustom" />
-    <item type="id" name="titleLayout" />
     <item type="id" name="titleView" />
+    <item type="id" name="title_frame" />
+    <item type="id" name="title_parent" />
     <item type="id" name="title_template" />
     <item type="id" name="title_text" />
     <item type="id" name="tncpanel" />
     <item type="id" name="toast_layout_root" />
     <item type="id" name="toolbar" />
     <item type="id" name="topPanel" />
+    <item type="id" name="top_view" />
     <item type="id" name="touch_area" />
     <item type="id" name="touch_outside" />
+    <item type="id" name="transition_current_scene" />
+    <item type="id" name="transition_layout_save" />
+    <item type="id" name="transition_position" />
+    <item type="id" name="transition_scene_layoutid_cache" />
+    <item type="id" name="transition_status" />
+    <item type="id" name="transition_transform" />
     <item type="id" name="tvNoNotifications" />
     <item type="id" name="tvPhoneNumber" />
     <item type="id" name="tvSender" />
@@ -519,14 +676,19 @@
     <item type="id" name="videoPlayButton" />
     <item type="id" name="view1" />
     <item type="id" name="view_offset_helper" />
-    <item type="id" name="viewflipper" />
-    <item type="id" name="viewflipper_anim1" />
-    <item type="id" name="viewflipper_anim2" />
-    <item type="id" name="viewflipper_anim3" />
+    <item type="id" name="view_resolution_button" />
+    <item type="id" name="view_transition" />
+    <item type="id" name="view_tree_lifecycle_owner" />
+    <item type="id" name="view_tree_on_back_pressed_dispatcher_owner" />
+    <item type="id" name="view_tree_saved_state_registry_owner" />
+    <item type="id" name="view_tree_view_model_store_owner" />
     <item type="id" name="virtual_hw_button_layout" />
-    <item type="id" name="visible" />
+    <item type="id" name="visible_removing_fragment_view_tag" />
     <item type="id" name="webPreview" />
+    <item type="id" name="welcome_constraint" />
     <item type="id" name="welcome_title" />
+    <item type="id" name="widget_frame" />
     <item type="id" name="wifiButton" />
     <item type="id" name="wifiIcon" />
+    <item type="id" name="zero_corner_chip" />
 </resources>

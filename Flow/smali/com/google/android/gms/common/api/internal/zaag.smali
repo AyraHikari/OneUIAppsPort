@@ -1,53 +1,54 @@
 .class public Lcom/google/android/gms/common/api/internal/zaag;
 .super Lcom/google/android/gms/common/api/GoogleApiClient;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # instance fields
-.field private final zafs:Ljava/lang/String;
+.field private final zaa:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/api/GoogleApiClient;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    const-string p1, "Method is not supported by connectionless client. APIs supporting connectionless client must not call this method."
+
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public blockingConnect()Lcom/google/android/gms/common/ConnectionResult;
+.method public final blockingConnect()Lcom/google/android/gms/common/ConnectionResult;
     .locals 2
 
-    .line 7
+    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public blockingConnect(JLjava/util/concurrent/TimeUnit;)Lcom/google/android/gms/common/ConnectionResult;
+.method public final blockingConnect(JLjava/util/concurrent/TimeUnit;)Lcom/google/android/gms/common/ConnectionResult;
     .locals 0
 
-    .line 8
+    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object p2, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public clearDefaultAccountAndReconnect()Lcom/google/android/gms/common/api/PendingResult;
+.method public final clearDefaultAccountAndReconnect()Lcom/google/android/gms/common/api/PendingResult;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -58,56 +59,56 @@
         }
     .end annotation
 
-    .line 11
+    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public connect()V
+.method public final connect()V
     .locals 2
 
-    .line 6
+    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public disconnect()V
+.method public final disconnect()V
     .locals 2
 
-    .line 9
+    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+.method public final dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 0
 
-    .line 21
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object p2, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public getConnectionResult(Lcom/google/android/gms/common/api/Api;)Lcom/google/android/gms/common/ConnectionResult;
+.method public final getConnectionResult(Lcom/google/android/gms/common/api/Api;)Lcom/google/android/gms/common/ConnectionResult;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -118,17 +119,17 @@
         }
     .end annotation
 
-    .line 5
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public hasConnectedApi(Lcom/google/android/gms/common/api/Api;)Z
+.method public final hasConnectedApi(Lcom/google/android/gms/common/api/Api;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -138,140 +139,140 @@
         }
     .end annotation
 
-    .line 4
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public isConnected()Z
+.method public final isConnected()Z
     .locals 2
 
-    .line 13
+    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public isConnecting()Z
+.method public final isConnecting()Z
     .locals 2
 
-    .line 14
+    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public isConnectionCallbacksRegistered(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)Z
+.method public final isConnectionCallbacksRegistered(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)Z
     .locals 1
 
-    .line 16
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public isConnectionFailedListenerRegistered(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Z
+.method public final isConnectionFailedListenerRegistered(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Z
     .locals 1
 
-    .line 19
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public reconnect()V
+.method public final reconnect()V
     .locals 2
 
-    .line 10
+    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public registerConnectionCallbacks(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)V
+.method public final registerConnectionCallbacks(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)V
     .locals 1
 
-    .line 15
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public registerConnectionFailedListener(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
+.method public final registerConnectionFailedListener(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
     .locals 1
 
-    .line 18
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public stopAutoManage(Landroidx/fragment/app/FragmentActivity;)V
+.method public final stopAutoManage(Landroidx/fragment/app/FragmentActivity;)V
     .locals 1
 
-    .line 12
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public unregisterConnectionCallbacks(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)V
+.method public final unregisterConnectionCallbacks(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)V
     .locals 1
 
-    .line 17
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public unregisterConnectionFailedListener(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
+.method public final unregisterConnectionFailedListener(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
     .locals 1
 
-    .line 20
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zafs:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaag;->zaa:Ljava/lang/String;
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 

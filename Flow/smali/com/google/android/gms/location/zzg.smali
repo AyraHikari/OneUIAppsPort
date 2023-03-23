@@ -1,87 +1,63 @@
-.class public final Lcom/google/android/gms/location/zzg;
+.class public final synthetic Lcom/google/android/gms/location/zzg;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/location/ActivityTransitionResult;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic zza:Lcom/google/android/gms/location/ActivityRecognitionClient;
+
+.field public final synthetic zzb:Landroid/app/PendingIntent;
+
+.field public final synthetic zzc:Lcom/google/android/gms/location/SleepSegmentRequest;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>(Lcom/google/android/gms/location/ActivityRecognitionClient;Landroid/app/PendingIntent;Lcom/google/android/gms/location/SleepSegmentRequest;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/location/zzg;->zza:Lcom/google/android/gms/location/ActivityRecognitionClient;
+
+    iput-object p2, p0, Lcom/google/android/gms/location/zzg;->zzb:Landroid/app/PendingIntent;
+
+    iput-object p3, p0, Lcom/google/android/gms/location/zzg;->zzc:Lcom/google/android/gms/location/SleepSegmentRequest;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 5
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 4
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+    iget-object v0, p0, Lcom/google/android/gms/location/zzg;->zza:Lcom/google/android/gms/location/ActivityRecognitionClient;
 
-    move-result v0
+    iget-object v1, p0, Lcom/google/android/gms/location/zzg;->zzb:Landroid/app/PendingIntent;
 
-    const/4 v1, 0x0
+    iget-object v2, p0, Lcom/google/android/gms/location/zzg;->zzc:Lcom/google/android/gms/location/SleepSegmentRequest;
 
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    move-result v2
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    if-ge v2, v0, :cond_1
+    .line 1
+    new-instance v3, Lcom/google/android/gms/location/zzi;
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
+    invoke-direct {v3, v0, p2}, Lcom/google/android/gms/location/zzi;-><init>(Lcom/google/android/gms/location/ActivityRecognitionClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    move-result v2
+    .line 2
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/location/zzbe;->getService()Landroid/os/IInterface;
 
-    invoke-static {v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
+    move-result-object p1
 
-    move-result v3
+    check-cast p1, Lcom/google/android/gms/internal/location/zzam;
 
-    const/4 v4, 0x1
+    .line 3
+    invoke-interface {p1, v1, v2, v3}, Lcom/google/android/gms/internal/location/zzam;->zzt(Landroid/app/PendingIntent;Lcom/google/android/gms/location/SleepSegmentRequest;Lcom/google/android/gms/common/api/internal/IStatusCallback;)V
 
-    if-eq v3, v4, :cond_0
-
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    :cond_0
-    sget-object v1, Lcom/google/android/gms/location/ActivityTransitionEvent;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createTypedList(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
-
-    new-instance p1, Lcom/google/android/gms/location/ActivityTransitionResult;
-
-    invoke-direct {p1, v1}, Lcom/google/android/gms/location/ActivityTransitionResult;-><init>(Ljava/util/List;)V
-
-    return-object p1
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    new-array p1, p1, [Lcom/google/android/gms/location/ActivityTransitionResult;
-
-    return-object p1
+    return-void
 .end method

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="@integer/no_item_weight_sum"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/no_item_sub_text_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/select_category" android:layout_weight="@integer/no_item_text_weight" android:textAlignment="center" />
+</LinearLayout>

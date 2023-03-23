@@ -29,6 +29,22 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FileInfoData;Lcom/samsung/android/galaxycontinuity/data/TextInfoData;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_contentType",
+            "_shareId",
+            "_fileInfoData",
+            "_textInfoData",
+            "_isSyncContents"
+        }
+    .end annotation
 
     .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

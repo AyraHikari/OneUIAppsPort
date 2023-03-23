@@ -23,6 +23,20 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "host",
+            "port",
+            "timeout"
+        }
+    .end annotation
 
     .line 53
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer$AcceptThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
@@ -87,9 +101,13 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -116,8 +134,6 @@
     if-eqz v0, :cond_0
 
     .line 99
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer$AcceptThread;->mServerSocket:Ljava/net/ServerSocket;
-
     invoke-virtual {v0}, Ljava/net/ServerSocket;->close()V
 
     const/4 v0, 0x0
@@ -170,14 +186,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 72
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer$AcceptThread;->mServerSocket:Ljava/net/ServerSocket;
-
     const/4 v1, 0x1
 
+    .line 72
     invoke-virtual {v0, v1}, Ljava/net/ServerSocket;->setReuseAddress(Z)V
 
-    const-string v0, "socket is ready to accept!"
+    const-string/jumbo v0, "socket is ready to accept!"
 
     .line 73
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -189,7 +203,7 @@
 
     move-result-object v0
 
-    const-string v1, "socket accpted and linger set!"
+    const-string/jumbo v1, "socket accpted and linger set!"
 
     .line 76
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -227,7 +241,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

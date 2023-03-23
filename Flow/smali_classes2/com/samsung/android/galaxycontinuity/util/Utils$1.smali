@@ -1,4 +1,4 @@
-.class final Lcom/samsung/android/galaxycontinuity/util/Utils$1;
+.class Lcom/samsung/android/galaxycontinuity/util/Utils$1;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$msg",
+            "val$toastLength"
+        }
+    .end annotation
 
-    .line 298
+    .line 330
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/Utils$1;->val$msg:Ljava/lang/String;
 
     iput p2, p0, Lcom/samsung/android/galaxycontinuity/util/Utils$1;->val$toastLength:I
@@ -42,7 +52,7 @@
 .method public run()V
     .locals 3
 
-    .line 325
+    .line 357
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -55,7 +65,7 @@
 
     move-result-object v0
 
-    .line 326
+    .line 358
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     return-void

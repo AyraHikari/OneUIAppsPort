@@ -1,12 +1,12 @@
 .class public Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -17,7 +17,7 @@
 
     const/16 v0, 0x4f45
 
-    .line 17
+    .line 1
     invoke-static {p0, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p0
@@ -28,7 +28,7 @@
 .method public static finishObjectHeader(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 18
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -43,19 +43,19 @@
 
     const/4 p2, 0x0
 
-    .line 89
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 91
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 92
+    .line 3
     invoke-virtual {p2}, Ljava/math/BigDecimal;->unscaledValue()Ljava/math/BigInteger;
 
     move-result-object p3
@@ -66,14 +66,14 @@
 
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeByteArray([B)V
 
-    .line 93
+    .line 4
     invoke-virtual {p2}, Ljava/math/BigDecimal;->scale()I
 
     move-result p2
 
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 94
+    .line 5
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -88,28 +88,27 @@
 
     if-eqz p3, :cond_0
 
-    .line 210
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 212
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 213
     array-length p3, p2
 
-    .line 214
+    .line 3
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 216
+    .line 4
     aget-object v1, p2, v0
 
     invoke-virtual {v1}, Ljava/math/BigDecimal;->unscaledValue()Ljava/math/BigInteger;
@@ -122,7 +121,7 @@
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeByteArray([B)V
 
-    .line 217
+    .line 5
     aget-object v1, p2, v0
 
     invoke-virtual {v1}, Ljava/math/BigDecimal;->scale()I
@@ -135,7 +134,7 @@
 
     goto :goto_0
 
-    .line 219
+    .line 6
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -151,26 +150,26 @@
 
     const/4 p2, 0x0
 
-    .line 61
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 63
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 64
+    .line 3
     invoke-virtual {p2}, Ljava/math/BigInteger;->toByteArray()[B
 
     move-result-object p2
 
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeByteArray([B)V
 
-    .line 65
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -185,28 +184,27 @@
 
     if-eqz p3, :cond_0
 
-    .line 182
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 184
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 185
     array-length p3, p2
 
-    .line 186
+    .line 3
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 188
+    .line 4
     aget-object v1, p2, v0
 
     invoke-virtual {v1}, Ljava/math/BigInteger;->toByteArray()[B
@@ -219,7 +217,7 @@
 
     goto :goto_0
 
-    .line 190
+    .line 5
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -231,10 +229,10 @@
 
     const/4 v0, 0x4
 
-    .line 20
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 21
+    .line 2
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
@@ -249,22 +247,22 @@
 
     const/4 p2, 0x0
 
-    .line 150
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 152
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 153
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeBooleanArray([Z)V
 
-    .line 154
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -289,30 +287,30 @@
 
     if-eqz p3, :cond_0
 
-    .line 239
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 241
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 242
+    .line 3
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 243
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 245
+    .line 5
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -329,7 +327,7 @@
 
     goto :goto_0
 
-    .line 247
+    .line 6
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -345,8 +343,8 @@
 
     const/4 p2, 0x0
 
-    .line 25
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
@@ -354,10 +352,10 @@
     :cond_1
     const/4 p3, 0x4
 
-    .line 27
-    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 2
+    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 28
+    .line 3
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -376,22 +374,22 @@
 
     const/4 p2, 0x0
 
-    .line 122
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 124
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 125
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
 
-    .line 126
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -402,10 +400,10 @@
 
     const/4 v0, 0x4
 
-    .line 30
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 31
+    .line 2
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
@@ -420,22 +418,22 @@
 
     const/4 p2, 0x0
 
-    .line 130
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 132
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 133
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeByteArray([B)V
 
-    .line 134
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -450,28 +448,27 @@
 
     if-eqz p3, :cond_0
 
-    .line 138
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 140
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 141
     array-length p3, p2
 
-    .line 142
+    .line 3
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 144
+    .line 4
     aget-object v1, p2, v0
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeByteArray([B)V
@@ -480,7 +477,7 @@
 
     goto :goto_0
 
-    .line 146
+    .line 5
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -505,37 +502,37 @@
 
     if-eqz p3, :cond_0
 
-    .line 521
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 523
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 524
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p3
 
-    .line 525
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 527
+    .line 5
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 528
+    .line 6
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -548,7 +545,7 @@
 
     goto :goto_0
 
-    .line 530
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -560,10 +557,10 @@
 
     const/4 v0, 0x4
 
-    .line 33
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 34
+    .line 2
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
@@ -578,22 +575,22 @@
 
     const/4 p2, 0x0
 
-    .line 158
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 160
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 161
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeCharArray([C)V
 
-    .line 162
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -604,10 +601,10 @@
 
     const/16 v0, 0x8
 
-    .line 77
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 78
+    .line 2
     invoke-virtual {p0, p2, p3}, Landroid/os/Parcel;->writeDouble(D)V
 
     return-void
@@ -622,22 +619,22 @@
 
     const/4 p2, 0x0
 
-    .line 202
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 204
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 205
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeDoubleArray([D)V
 
-    .line 206
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -662,30 +659,30 @@
 
     if-eqz p3, :cond_0
 
-    .line 287
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 289
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 290
+    .line 3
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 291
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 293
+    .line 5
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -702,7 +699,7 @@
 
     goto :goto_0
 
-    .line 295
+    .line 6
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -718,8 +715,8 @@
 
     const/4 p2, 0x0
 
-    .line 82
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
@@ -727,10 +724,10 @@
     :cond_1
     const/16 p3, 0x8
 
-    .line 84
-    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 2
+    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 85
+    .line 3
     invoke-virtual {p2}, Ljava/lang/Double;->doubleValue()D
 
     move-result-wide p1
@@ -759,37 +756,37 @@
 
     if-eqz p3, :cond_0
 
-    .line 410
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 412
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 413
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p3
 
-    .line 414
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 416
+    .line 5
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 417
+    .line 6
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -806,7 +803,7 @@
 
     goto :goto_0
 
-    .line 419
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -818,10 +815,10 @@
 
     const/4 v0, 0x4
 
-    .line 67
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 68
+    .line 2
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
     return-void
@@ -836,22 +833,22 @@
 
     const/4 p2, 0x0
 
-    .line 194
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 196
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 197
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeFloatArray([F)V
 
-    .line 198
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -876,30 +873,30 @@
 
     if-eqz p3, :cond_0
 
-    .line 275
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 277
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 278
+    .line 3
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 279
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 281
+    .line 5
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -916,7 +913,7 @@
 
     goto :goto_0
 
-    .line 283
+    .line 6
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -932,8 +929,8 @@
 
     const/4 p2, 0x0
 
-    .line 72
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
@@ -941,10 +938,10 @@
     :cond_1
     const/4 p3, 0x4
 
-    .line 74
-    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 2
+    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 75
+    .line 3
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
     move-result p1
@@ -973,37 +970,37 @@
 
     if-eqz p3, :cond_0
 
-    .line 423
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 425
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 426
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p3
 
-    .line 427
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 429
+    .line 5
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 430
+    .line 6
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1020,7 +1017,7 @@
 
     goto :goto_0
 
-    .line 432
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1036,22 +1033,22 @@
 
     const/4 p2, 0x0
 
-    .line 106
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 108
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 109
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 110
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1066,22 +1063,22 @@
 
     const/4 p2, 0x0
 
-    .line 231
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 233
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 234
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeBinderArray([Landroid/os/IBinder;)V
 
-    .line 235
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1106,22 +1103,22 @@
 
     const/4 p2, 0x0
 
-    .line 307
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 309
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 310
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeBinderList(Ljava/util/List;)V
 
-    .line 311
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1146,37 +1143,37 @@
 
     if-eqz p3, :cond_0
 
-    .line 508
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 510
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 511
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p3
 
-    .line 512
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 514
+    .line 5
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 515
+    .line 6
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1189,7 +1186,7 @@
 
     goto :goto_0
 
-    .line 517
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1201,10 +1198,10 @@
 
     const/4 v0, 0x4
 
-    .line 39
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 40
+    .line 2
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
@@ -1219,22 +1216,22 @@
 
     const/4 p2, 0x0
 
-    .line 166
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 168
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 169
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeIntArray([I)V
 
-    .line 170
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1259,30 +1256,30 @@
 
     if-eqz p3, :cond_0
 
-    .line 251
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 253
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 254
+    .line 3
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 255
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 257
+    .line 5
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1299,7 +1296,7 @@
 
     goto :goto_0
 
-    .line 259
+    .line 6
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1315,8 +1312,8 @@
 
     const/4 p2, 0x0
 
-    .line 44
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
@@ -1324,10 +1321,10 @@
     :cond_1
     const/4 p3, 0x4
 
-    .line 46
-    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 2
+    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 47
+    .line 3
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
@@ -1346,22 +1343,22 @@
 
     const/4 p2, 0x0
 
-    .line 394
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 396
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 397
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeList(Ljava/util/List;)V
 
-    .line 398
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1372,10 +1369,10 @@
 
     const/16 v0, 0x8
 
-    .line 49
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 50
+    .line 2
     invoke-virtual {p0, p2, p3}, Landroid/os/Parcel;->writeLong(J)V
 
     return-void
@@ -1390,22 +1387,22 @@
 
     const/4 p2, 0x0
 
-    .line 174
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 176
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 177
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeLongArray([J)V
 
-    .line 178
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1430,30 +1427,30 @@
 
     if-eqz p3, :cond_0
 
-    .line 263
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 265
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 266
+    .line 3
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 267
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 269
+    .line 5
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1470,7 +1467,7 @@
 
     goto :goto_0
 
-    .line 271
+    .line 6
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1486,8 +1483,8 @@
 
     const/4 p2, 0x0
 
-    .line 54
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
@@ -1495,10 +1492,10 @@
     :cond_1
     const/16 p3, 0x8
 
-    .line 56
-    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 2
+    invoke-static {p0, p1, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 57
+    .line 3
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide p1
@@ -1517,26 +1514,26 @@
 
     if-eqz p3, :cond_0
 
-    .line 354
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 356
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 357
+    .line 3
     invoke-virtual {p2}, Landroid/os/Parcel;->dataSize()I
 
     move-result p3
 
     invoke-virtual {p0, p2, v0, p3}, Landroid/os/Parcel;->appendFrom(Landroid/os/Parcel;II)V
 
-    .line 358
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1551,22 +1548,21 @@
 
     if-eqz p3, :cond_0
 
-    .line 362
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 364
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 365
     array-length p3, p2
 
-    .line 366
+    .line 3
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     move v1, v0
@@ -1574,19 +1570,19 @@
     :goto_0
     if-ge v1, p3, :cond_3
 
-    .line 368
+    .line 4
     aget-object v2, p2, v1
 
     if-eqz v2, :cond_2
 
-    .line 370
+    .line 5
     invoke-virtual {v2}, Landroid/os/Parcel;->dataSize()I
 
     move-result v3
 
     invoke-virtual {p0, v3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 371
+    .line 6
     invoke-virtual {v2}, Landroid/os/Parcel;->dataSize()I
 
     move-result v3
@@ -1595,7 +1591,7 @@
 
     goto :goto_1
 
-    .line 372
+    .line 7
     :cond_2
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -1604,7 +1600,7 @@
 
     goto :goto_0
 
-    .line 374
+    .line 8
     :cond_3
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1630,24 +1626,24 @@
 
     if-eqz p3, :cond_0
 
-    .line 378
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 380
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 381
+    .line 3
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 382
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     move v1, v0
@@ -1655,7 +1651,7 @@
     :goto_0
     if-ge v1, p3, :cond_3
 
-    .line 384
+    .line 5
     invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -1664,14 +1660,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 386
+    .line 6
     invoke-virtual {v2}, Landroid/os/Parcel;->dataSize()I
 
     move-result v3
 
     invoke-virtual {p0, v3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 387
+    .line 7
     invoke-virtual {v2}, Landroid/os/Parcel;->dataSize()I
 
     move-result v3
@@ -1680,7 +1676,7 @@
 
     goto :goto_1
 
-    .line 388
+    .line 8
     :cond_2
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -1689,7 +1685,7 @@
 
     goto :goto_0
 
-    .line 390
+    .line 9
     :cond_3
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1715,24 +1711,24 @@
 
     if-eqz p3, :cond_0
 
-    .line 475
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 477
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 478
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p3
 
-    .line 479
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     move v1, v0
@@ -1740,14 +1736,14 @@
     :goto_0
     if-ge v1, p3, :cond_3
 
-    .line 481
+    .line 5
     invoke-virtual {p2, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v2
 
     invoke-virtual {p0, v2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 482
+    .line 6
     invoke-virtual {p2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -1756,14 +1752,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 484
+    .line 7
     invoke-virtual {v2}, Landroid/os/Parcel;->dataSize()I
 
     move-result v3
 
     invoke-virtual {p0, v3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 485
+    .line 8
     invoke-virtual {v2}, Landroid/os/Parcel;->dataSize()I
 
     move-result v3
@@ -1772,7 +1768,7 @@
 
     goto :goto_1
 
-    .line 486
+    .line 9
     :cond_2
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -1781,7 +1777,7 @@
 
     goto :goto_0
 
-    .line 488
+    .line 10
     :cond_3
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1797,22 +1793,52 @@
 
     const/4 p2, 0x0
 
-    .line 114
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 116
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 117
+    .line 3
     invoke-interface {p2, p0, p3}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 118
+    .line 4
+    invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static writePendingIntent(Landroid/os/Parcel;ILandroid/app/PendingIntent;Z)V
+    .locals 0
+
+    if-nez p2, :cond_1
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
+
+    :cond_0
+    return-void
+
+    .line 2
+    :cond_1
+    invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 3
+    invoke-static {p2, p0}, Landroid/app/PendingIntent;->writePendingIntentOrNullToParcel(Landroid/app/PendingIntent;Landroid/os/Parcel;)V
+
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1823,10 +1849,10 @@
 
     const/4 v0, 0x4
 
-    .line 36
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
-    .line 37
+    .line 2
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
@@ -1841,22 +1867,22 @@
 
     const/4 p2, 0x0
 
-    .line 402
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 404
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 405
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeSparseBooleanArray(Landroid/util/SparseBooleanArray;)V
 
-    .line 406
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -1871,37 +1897,37 @@
 
     if-eqz p3, :cond_0
 
-    .line 436
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 438
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 439
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseIntArray;->size()I
 
     move-result p3
 
-    .line 440
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 442
+    .line 5
     invoke-virtual {p2, v0}, Landroid/util/SparseIntArray;->keyAt(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 443
+    .line 6
     invoke-virtual {p2, v0}, Landroid/util/SparseIntArray;->valueAt(I)I
 
     move-result v1
@@ -1912,7 +1938,7 @@
 
     goto :goto_0
 
-    .line 445
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1928,37 +1954,37 @@
 
     if-eqz p3, :cond_0
 
-    .line 449
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 451
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 452
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseLongArray;->size()I
 
     move-result p3
 
-    .line 453
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 455
+    .line 5
     invoke-virtual {p2, v0}, Landroid/util/SparseLongArray;->keyAt(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 456
+    .line 6
     invoke-virtual {p2, v0}, Landroid/util/SparseLongArray;->valueAt(I)J
 
     move-result-wide v1
@@ -1969,7 +1995,7 @@
 
     goto :goto_0
 
-    .line 458
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -1985,22 +2011,22 @@
 
     const/4 p2, 0x0
 
-    .line 98
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 100
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 101
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 102
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -2015,22 +2041,22 @@
 
     const/4 p2, 0x0
 
-    .line 223
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 225
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 226
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeStringArray([Ljava/lang/String;)V
 
-    .line 227
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -2055,22 +2081,22 @@
 
     const/4 p2, 0x0
 
-    .line 299
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 301
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 302
+    .line 3
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
-    .line 303
+    .line 4
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
     return-void
@@ -2095,37 +2121,37 @@
 
     if-eqz p3, :cond_0
 
-    .line 462
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 464
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 465
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p3
 
-    .line 466
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 468
+    .line 5
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 469
+    .line 6
     invoke-virtual {p2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -2138,7 +2164,7 @@
 
     goto :goto_0
 
-    .line 471
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -2163,22 +2189,21 @@
 
     if-eqz p4, :cond_0
 
-    .line 315
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 317
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 318
     array-length p4, p2
 
-    .line 319
+    .line 3
     invoke-virtual {p0, p4}, Landroid/os/Parcel;->writeInt(I)V
 
     move v1, v0
@@ -2186,26 +2211,26 @@
     :goto_0
     if-ge v1, p4, :cond_3
 
-    .line 321
+    .line 4
     aget-object v2, p2, v1
 
     if-nez v2, :cond_2
 
-    .line 323
+    .line 5
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_1
 
-    .line 324
+    .line 6
     :cond_2
-    invoke-static {p0, v2, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+    invoke-static {p0, v2, p3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzd(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
 
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 326
+    .line 7
     :cond_3
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -2232,24 +2257,24 @@
 
     if-eqz p3, :cond_0
 
-    .line 330
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 332
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 333
+    .line 3
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 334
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     move v1, v0
@@ -2257,7 +2282,7 @@
     :goto_0
     if-ge v1, p3, :cond_3
 
-    .line 336
+    .line 5
     invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -2266,21 +2291,21 @@
 
     if-nez v2, :cond_2
 
-    .line 338
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_1
 
-    .line 339
+    .line 7
     :cond_2
-    invoke-static {p0, v2, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+    invoke-static {p0, v2, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzd(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
 
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 341
+    .line 8
     :cond_3
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -2307,24 +2332,24 @@
 
     if-eqz p3, :cond_0
 
-    .line 492
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzc(Landroid/os/Parcel;II)V
 
     :cond_0
     return-void
 
-    .line 494
+    .line 2
     :cond_1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 495
+    .line 3
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p3
 
-    .line 496
+    .line 4
     invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
     move v1, v0
@@ -2332,14 +2357,14 @@
     :goto_0
     if-ge v1, p3, :cond_3
 
-    .line 498
+    .line 5
     invoke-virtual {p2, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v2
 
     invoke-virtual {p0, v2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 499
+    .line 6
     invoke-virtual {p2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -2348,21 +2373,21 @@
 
     if-nez v2, :cond_2
 
-    .line 501
+    .line 7
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_1
 
-    .line 502
+    .line 8
     :cond_2
-    invoke-static {p0, v2, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zza(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+    invoke-static {p0, v2, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzd(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
 
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 504
+    .line 9
     :cond_3
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->zzb(Landroid/os/Parcel;I)V
 
@@ -2376,15 +2401,15 @@
 
     or-int/2addr p1, v0
 
-    .line 8
+    .line 1
     invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
     const/4 p1, 0x0
 
-    .line 9
+    .line 2
     invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 10
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result p0
@@ -2392,7 +2417,44 @@
     return p0
 .end method
 
-.method private static zza(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+.method private static zzb(Landroid/os/Parcel;I)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v0
+
+    add-int/lit8 v1, p1, -0x4
+
+    .line 2
+    invoke-virtual {p0, v1}, Landroid/os/Parcel;->setDataPosition(I)V
+
+    sub-int p1, v0, p1
+
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 4
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
+
+    return-void
+.end method
+
+.method private static zzc(Landroid/os/Parcel;II)V
+    .locals 0
+
+    shl-int/lit8 p2, p2, 0x10
+
+    or-int/2addr p1, p2
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+.end method
+
+.method private static zzd(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2404,93 +2466,39 @@
         }
     .end annotation
 
-    .line 343
+    .line 1
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
 
     const/4 v1, 0x1
 
-    .line 344
+    .line 2
     invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 345
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v1
 
-    .line 346
+    .line 4
     invoke-interface {p1, p0, p2}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 347
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result p1
 
-    .line 348
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     sub-int p2, p1, v1
 
-    .line 349
+    .line 7
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 350
+    .line 8
     invoke-virtual {p0, p1}, Landroid/os/Parcel;->setDataPosition(I)V
-
-    return-void
-.end method
-
-.method private static zzb(Landroid/os/Parcel;I)V
-    .locals 2
-
-    .line 11
-    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v0
-
-    sub-int v1, v0, p1
-
-    add-int/lit8 p1, p1, -0x4
-
-    .line 13
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->setDataPosition(I)V
-
-    .line 14
-    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 15
-    invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
-
-    return-void
-.end method
-
-.method private static zzb(Landroid/os/Parcel;II)V
-    .locals 1
-
-    const v0, 0xffff
-
-    if-lt p2, v0, :cond_0
-
-    const/high16 v0, -0x10000
-
-    or-int/2addr p1, v0
-
-    .line 4
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 5
-    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    return-void
-
-    :cond_0
-    shl-int/lit8 p2, p2, 0x10
-
-    or-int/2addr p1, p2
-
-    .line 6
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
 .end method

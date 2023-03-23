@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">%d-ზე მეტი რამის არჩევა შეუძლებელია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ზე მეტი რამის არჩევა შეუძლებელია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d ფაილი ვერ გადავა ურნაში</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი ვერ გადავა ურნაში</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d საქაღალდე ვერ გადავა ურნაში</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდე ვერ გადავა ურნაში</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d რამ ვერ გადავა ურნაში</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ ვერ გადავა ურნაში</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">შერჩეული ფაილებიდან %d წაიშლება, რადგან ისინი ონლაინ-საცავში ან USB მეხსიერებაშია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შერჩეული ფაილებიდან %d წაიშლება, რადგან ის ონლაინ-საცავში ან USB მეხსიერებაშია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">შერჩეული საქაღალდეებიდან %d წაიშლება, რადგან ისინი ონლაინ-საცავში ან USB მეხსიერებაშია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შერჩეული საქაღალდეებიდან %d წაიშლება, რადგან ის ონლაინ-საცავში ან USB მეხსიერებაშია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">შერჩეული ელემენტებიდან %d წაიშლება, რადგან ისინი ონლაინ-საცავში ან USB მეხსიერებაშია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შერჩეული ელემენტებიდან %d წაიშლება, რადგან ის ონლაინ-საცავში ან USB მეხსიერებაშია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">იკუმშება %d ფაილი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">იკუმშება %d ფაილი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">იკუმშება %d ფაილი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">იკუმშება %d ფაილი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">იკუმშება %d საქაღალდე…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">იკუმშება %d საქაღალდე…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">იკუმშება %d საქაღალდე…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">იკუმშება %d საქაღალდე…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">იკუმშება %d ელემენტი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">იკუმშება %d ელემენტი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">იკუმშება %d ელემენტი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">იკუმშება %d ელემენტი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">კოპირდება %d ფაილი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">კოპირდება %d ფაილი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">კოპირდება %d ფაილი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">კოპირდება %d ფაილი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">კოპირდება %d საქაღალდე…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">კოპირდება %d საქაღალდე…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">კოპირდება %d საქაღალდე…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">კოპირდება %d საქაღალდე…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">კოპირდება %d ელემენტი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">კოპირდება %d ელემენტი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">კოპირდება %d ელემენტი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">კოპირდება %d ელემენტი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">წაიშალოს %d ფაილი ტელეფონში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">წაიშალოს %d ფაილი ტელეფონში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">წაიშალოს %d ფაილი პლანშეტში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">წაიშალოს %d ფაილი პლანშეტში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">წაიშალოს %d საქაღალდე ტელეფონში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">წაიშალოს %d საქაღალდე ტელეფონში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">წაიშალოს %d საქაღალდე პლანშეტში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">წაიშალოს %d საქაღალდე პლანშეტში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">წაიშალოს %d რამ ტელეფონში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">წაიშალოს %d რამ ტელეფონში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">წაიშალოს %d ელემენტი პლანშეტში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">წაიშალოს %d ელემენტი პლანშეტში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">მიმდინარეობს %d ფაილის წაშლა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">მიმდინარეობს %d ფაილის წაშლა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">სრულდება %d საქაღალდის წაშლა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სრულდება %d საქაღალდის წაშლა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d ელემენტის წაშლა ურნაში…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ელემენტის წაშლა ურნაში…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">სრულდება %d ელემენტის წაშლა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სრულდება %d ელემენტის წაშლა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">სრულდება %d ფაილის ამოღება…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სრულდება %d ფაილის ამოღება…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d საქაღალდის ამოღება…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდის ამოღება…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d ელემენტის ამოღება…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ელემენტის ამოღება…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d ფაილიც ასევე გადავა ურნაში %2$s-ში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ფაილიც ასევე გადავა ურნაში %2$s-ში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">სრულდება %d ფაილის აღდგენა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სრულდება %d ფაილის აღდგენა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d საქაღალდეც ასევე გადავა ურნაში %2$s-ში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d საქაღალდეც ასევე გადავა ურნაში %2$s-ში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d საქაღალდის აღდგენა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდის აღდგენა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">შიდა მეხსიერება გაივსო. სამუდამოდ წაიშალოს %d ფალი?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შიდა მეხსიერება გაივსო. სამუდამოდ წაიშალოს %d ფაილი?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">შიდა მეხსიერება გაივსო. სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შიდა მეხსიერება გაივსო. სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">შიდა მეხსიერება გაივსო. სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შიდა მეხსიერება გაივსო. სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">შიდა მეხსიერება და SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d ფალი?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შიდა მეხსიერება და SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d ფაილი?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">შიდა მეხსიერება და SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შიდა მეხსიერება და SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">შიდა მეხსიერება და SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შიდა მეხსიერება და SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d ელემენტის აღდგენა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ელემენტის აღდგენა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d ელემენტიც ასევე გადავა ურნაში %2$s-ში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ელემენტიც ასევე გადავა ურნაში %2$s-ში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">%d-ზე მეტი აპლიკაციის ფანჯრის გახსნა შეუძლებელია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ზე მეტი აპლიკაციის ფანჯრის გახსნა შეუძლებელია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d ფაილი გადავიდეს ურნაში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი გადავიდეს ურნაში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d ფაილი გადავიდეს ურნაში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი გადავიდეს ურნაში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d საქაღალდე გადავიდეს ურნაში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდე გადავიდეს ურნაში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d საქაღალდე გადავიდეს ურნაში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდე გადავიდეს ურნაში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d რამ გადავიდეს ურნაში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ გადავიდეს ურნაში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d რამ გადავიდეს ურნაში?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ გადავიდეს ურნაში?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d ფაილი გადადის ურნაში…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი გადადის ურნაში…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d საქაღალდე გადადის ურნაში…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდე გადადის ურნაში…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d რამ გადადის ურნაში…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ გადადის ურნაში…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">გადადის %d ფაილი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">გადადის %d ფაილი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">სრულდება %d ფაილის გადატანა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სრულდება %d ფაილის გადატანა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">გადადის %d საქაღალდე…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">გადადის %d საქაღალდე…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">გადადის %d საქაღალდე…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">გადადის %d საქაღალდე…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">გადადის %d რამ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">გადადის %d რამ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">გადადის %d ელემენტი…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">გადადის %d ელემენტი…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">შეკუმშულია %d რამ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შეკუმშულია %d რამ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d რამ დაკოპირდა ადგილზე: %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d რამ დაკოპირდა ადგილზე: %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">წაიშალოს საქაღალდე და მაში ჩადებული %d ფაილი?</item>
+        <item quantity="one">წაიშალოს საქაღალდე და მაში ჩადებული ფაილი?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">წაიშალოს %1$d საქაღალდე და მაში ჩადებული %2$d ფაილი?</item>
+        <item quantity="one">წაიშალოს საქაღალდე და მაში ჩადებული ფაილი?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d რამ წაიშალა</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ წაიშალა</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d ფაილის ჩამოტვირთვა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილის ჩამოტვირთვა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d საქაღალდის ჩამოტვირთვა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდის ჩამოტვირთვა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d ელემენტის ჩამოტვირთვა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ელემენტის ჩამოტვირთვა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">საქაღალდეების გაზიარება შეუძლებელია. საქაღალდეები ცარიელია.</item>
+        <item quantity="one">საქაღალდის გაზიარება შეუძლებელია. საქაღალდე ცარიელია.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d ფაილი სამუდამოდ წაიშლება.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი სამუდამოდ წაიშლება.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d საქაღალდე სამუდამოდ წაიშლება.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდე სამუდამოდ წაიშლება.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">ამოღებულია %d რამ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ამოღებულია %d რამ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d ფაილი დაემატა რჩეულებში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი დაემატა რჩეულებში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d ფაილი წაიშალა რჩეულებში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი წაიშალა რჩეულებში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d საქაღალდე დაემატა რჩეულებში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდე დაემატა რჩეულებში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d საქაღალდე წაიშალა რჩეულებში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d საქაღალდე წაიშალა რჩეულებში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d ელემენტი დაემატა რჩეულებში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ელემენტი დაემატა რჩეულებში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d რამ წაიშალა რჩეულებში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ წაიშალა რჩეულებში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d ელემენტი</item>
+        <item quantity="one">1 ელემენტი</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d ელემენტი</item>
+        <item quantity="one">%d ელემენტი</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d რამ დაკოპირდა ბუფერში</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ დაკოპირდა ბუფერში</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d რამ გადავიდა ბუფერში</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ გადავიდა ბუფერში</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">არჩეულია %d ელემენტი</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">არჩეულია %d ელემენტი</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d რამ გადავიდა ადგილზე: %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d რამ გადავიდა ადგილზე: %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d რამ გადავიდა ურნაში</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d რამ გადავიდა ურნაში</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">არჩეულია %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">არჩეულია %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d ფალი?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d ფაილი?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD ბარათი გაივსო. სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">ეს ფაილი წაიშლება %d დღეში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ეს ფაილი წაიშლება %d დღეში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">ეს საქაღალდე წაიშლება %d დღეში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ეს საქაღალდე წაიშლება %d დღეში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">სამუდამოდ წაიშალოს %d ფალი?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სამუდამოდ წაიშალოს %d ფაილი?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">მიმდინარეობს %d ფაილის წაშლა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">მიმდინარეობს %d ფაილის წაშლა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">მიმდინარეობს %d ფაილის აღდგენა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">მიმდინარეობს %d ფაილის აღდგენა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სამუდამოდ წაიშალოს %d საქაღალდე?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">მიმდინარეობს %d საქაღალდის წაშლა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">მიმდინარეობს %d საქაღალდის წაშლა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">მიმდინარეობს %d საქაღალდის აღდგენა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">მიმდინარეობს %d საქაღალდის აღდგენა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სამუდამოდ წაიშალოს %d რამ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">მიმდინარეობს %d ელემენტის წაშლა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">სრულდება %d ელემენტის წაშლა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">მიმდინარეობს %d ელემენტის აღდგენა…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">მიმდინარეობს %d ელემენტის აღდგენა…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">წაიშლება %d დღეში</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">წაიშლება %d დღეში</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">გაუქმდეს %d აპლიკაციის ინსტალაცია?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">გაუქმდეს %d აპლიკაციის ინსტალაცია?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Niy idzie ôbrać wiyncyj co %d dingsu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy idzie ôbrać wiyncyj co %d dingsu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie ôbrać wiyncyj co %d dingsōw.</item>
+        <item quantity="many">Niy idzie ôbrać wiyncyj co %d dingsōw.</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Niy idzie przeciepnōńć %d plikōw do Hasiŏka</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy idzie przeciepnōńć %d pliku do Hasiŏka</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie przeciepnōńć %d plikōw do Hasiŏka</item>
+        <item quantity="many">Niy idzie przeciepnōńć %d plikōw do Hasiŏka</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Niy idzie przeciepnōńć %d katalogōw do Hasiŏka.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy idzie przeciepnōńć %d katalogu do Hasiŏka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie przeciepnōńć %d katalogōw do Hasiŏka.</item>
+        <item quantity="many">Niy idzie przeciepnōńć %d katalogōw do Hasiŏka.</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Niy idzie przeciepnōńć %d elymyntōw do Hasiŏka.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy idzie przeciepnōńć %d elymyntu do Hasiŏka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie przeciepnōńć %d elymyntōw do Hasiŏka.</item>
+        <item quantity="many">Niy idzie przeciepnōńć %d elymyntōw do Hasiŏka.</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d ôbranych plikōw ôstanie wyciepniyntych skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ôbrany plik ôstanie wyciepniynty skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ôbrane pliki ôstanōm wyciepniynte skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="many">%d ôbranych plikōw ôstanie wyciepniyntych skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d ôbranych katalogōw ôstanie wyciepniyntych skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ôbrany katalog ôstanie wyciepniynty skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ôbrane katalogi ôstanōm wyciepniynte, skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="many">%d ôbranych katalogōw ôstanie wyciepniyntych skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d ôbranych elymyntōw ôstanie wyciepniyntych skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ôbrany elymynt ôstanie wyciepniynty skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ôbrane elymynta ôstanōm wyciepniynte skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+        <item quantity="many">%d ôbranych elymyntōw ôstanie wyciepniyntych skuli tego co sōm w chmōrze abo na maszinie pamiyńci USB.</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Kōmpresowanie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kōmpresowanie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kōmpresowanie %d plikōw…</item>
+        <item quantity="many">Kōmpresowanie %d plikōw…</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Kōmpresyjŏ %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kōmpresyjŏ %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kōmpresyjŏ %d plikōw…</item>
+        <item quantity="many">Kōmpresyjŏ %d plikōw…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Kōmpresowanie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kōmpresowanie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kōmpresowanie %d katalogōw…</item>
+        <item quantity="many">Kōmpresowanie %d katalogōw…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Kōmpresyjŏ %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kōmpresyjŏ %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kōmpresyjŏ %d katalogōw…</item>
+        <item quantity="many">Kōmpresyjŏ %d katalogōw…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Kōmpresowanie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kōmpresowanie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kōmpresowanie %d elymyntōw…</item>
+        <item quantity="many">Kōmpresowanie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Kōmpresyjŏ %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kōmpresyjŏ %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kōmpresyjŏ %d elymyntōw…</item>
+        <item quantity="many">Kōmpresyjŏ %d elymyntōw…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Kopiyrowanie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiyrowanie %d zbioru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiyrowanie %d plikōw…</item>
+        <item quantity="many">Kopiyrowanie %d plikōw…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Kopiyrowanie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiyrowanie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiyrowanie %d plikōw…</item>
+        <item quantity="many">Kopiyrowanie %d plikōw…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Kopiyrowanie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiyrowanie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiyrowanie %d katalogōw…</item>
+        <item quantity="many">Kopiyrowanie %d katalogōw…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Kopiyrowanie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiyrowanie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopyrowanie %d katalogōw…</item>
+        <item quantity="many">Kopiyrowanie %d katalogōw…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Kopiyrowanie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiyrowanie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiyrowanie %d elymyntōw…</item>
+        <item quantity="many">Kopiyrowanie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Kopiyrowanie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiyrowanie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiyrowanie %d elymyntōw…</item>
+        <item quantity="many">Kopiyrowanie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Wyciepnōńć %d plikōw z telefōnu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d plik z telefōnu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d pliki z telefōnu?</item>
+        <item quantity="many">Wyciepnōńć %d plikōw z telefōnu?</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Wyciepnōńć %d zbiorōw z tabletu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d zbiōr z tabletu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d zbiory z tabletu?</item>
+        <item quantity="many">Wyciepnōńć %d plikōw z tabletu?</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Wyciepnōńć %d katalogōw z telefōnu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d katalog z telefōnu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d katalogi z telefōnu?</item>
+        <item quantity="many">Wyciepnōńć %d katalogōw z telefōnu?</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Wyciepnōńć %d katalogōw z tabletu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d katalog z tabletu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d katalogi z tabletu?</item>
+        <item quantity="many">Wyciepnōńć %d katalogōw z tabletu?</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Wyciepnōńć %d elymyntōw z telefōnu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d elymynt z telefōnu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d elymynta z telefōnu?</item>
+        <item quantity="many">Wyciepnōńć %d elymyntōw z telefōnu?</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Wyciepnōńć %d elymyntōw z tabletu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d elymynt z tabletu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d elymynta z tabletu?</item>
+        <item quantity="many">Wychrōnić %d elymyntōw z tabletu?</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Wyciepowanie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepowanie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepowanie %d plikōw…</item>
+        <item quantity="many">Wyciepowanie %d plikōw…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Wyciepowanie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepowanie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepowanie %d katalogōw…</item>
+        <item quantity="many">Wyciepowanie %d katalogōw…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Wyciep.%d elymyntōw z Hasiŏka…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepow.%d elymyntu z Hasiŏka…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciep.%d elymyntōw z Hasiŏka…</item>
+        <item quantity="many">Wyciep.%d elymyntōw z Hasiŏka…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Wyciepowanie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepowanie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepowanie %d elymyntōw…</item>
+        <item quantity="many">Wyciepowanie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Wyôdrymbnianie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyôdrymbnianie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyôdrymbnianie %d plikōw…</item>
+        <item quantity="many">Wyôdrymbnianie %d plikōw…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Wyôdrymbnianie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyôdrymbnianie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyôdrymbnianie %d katalogōw…</item>
+        <item quantity="many">Wyôdrymbnianie %d katalogōw…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Wyôdrymbnianie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyôdrymbnianie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyôdrymbnianie %d elymyntōw…</item>
+        <item quantity="many">Wyôdrymbnianie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d plikōw tyż ôstanie przeciepniyntych do Hasiŏka za %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d plik tyż ôstanie przeciepniynty do Hasiŏka za %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d pliki tyż ôstanōm przeciepniynte do Hasiŏka za %2$s.</item>
+        <item quantity="many">%1$d plikōw tyż ôstanie przeciepniyntych do Hasiŏka za %2$s.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Wrŏcanie nazŏd %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wrŏcanie nazŏd %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wrŏcanie nazŏd %d plikōw…</item>
+        <item quantity="many">Wrŏcanie nazŏd %d plikōw…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d katalogōw tyż ôstanie przeciepniyntych do Hasiŏka w %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d katalog tyż ôstanie przeciepniynty do Hasiŏka w %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d katalogi tyż ôstanōm przeciepniynte do Hasiŏka w %2$s.</item>
+        <item quantity="many">%1$d katalogōw tyż ôstanie przeciepniyntych do Hasiŏka w %2$s.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Wrŏcanie nazŏd %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wrŏcanie nazŏd %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wrŏcanie nazŏd %d katalogōw…</item>
+        <item quantity="many">Wrŏcanie nazŏd %d katalogōw…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Pamiyńć driny je fol. Blank wyciepnōńńć %d plikōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pamiyńć driny je fol. Blank wyciepnōńć %d plik?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pamiyńć driny je fol. Blank wyciepnōńć %d pliki?</item>
+        <item quantity="many">Pamiyńć driny je fol. Blank wyciepnōńć %d plikōw?</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Pamiyńć driny je fol. Blank wyciepnōńńć %d katalogōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pamiyńć driny je fol. Blank wyciepnōńć %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pamiyńć driny je fol. Blank wyciepnōńć %d katalogi?</item>
+        <item quantity="many">Pamiyńć driny je fol. Blank wyciepnōńć %d katalogōw?</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Pamiyńć driny je fol. Blank wyciepnōńńć %d elymyntōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pamiyńć driny je fol. Blank wyciepnōńć %d elymynt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pamiyńć driny je fol. Blank wyciepnōńć %d elymyntai?</item>
+        <item quantity="many">Pamiyńć driny je fol. Blank wyciepnōńć %d elymyntōw?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d plikōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d plik?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d pliki?</item>
+        <item quantity="many">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d plikōw?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d folderōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d foldery?</item>
+        <item quantity="many">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d folderōw?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d elymyntōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d elymynt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d elymynta?</item>
+        <item quantity="many">Pamiyńć driny i karta pamiyńci sōm fol. Blank wyciepnōńć %d elymyntōw?</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Wrŏcanie nazŏd %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wrŏcanie nazŏd %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wrŏcanie nazŏd %d elymyntōw…</item>
+        <item quantity="many">Wrŏcanie nazŏd %d elymyntōw…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d elymyntōw tyż ôstanie przeciepniyntych do Hasiŏka za %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elymynt tyż ôstanie przeciepniynty do Hasiŏka za %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d elymynta tyż ôstanōm przeciepniynte do Hasiŏka za %2$s.</item>
+        <item quantity="many">%1$d elymyntōw tyż ôstanie przeciepniyntych do Hasiŏka za %2$s.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Niy idzie ôdewrzić wiyncyj jak %d ôkyn aplikacyji.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy idzie ôdewrzić wiyncyj jak %d ôkna aplikacyji.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie ôdewrzić wiyncyj jak %d ôkyn aplikacyji.</item>
+        <item quantity="many">Niy idzie ôdewrzić wiyncyj jak %d ôkyn aplikacyji.</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Przeciepnōńć %d plikōw do Hasiŏka?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepnōńć %d plik do Hasiŏka?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepnōńć %d pliki do Hasiŏka?</item>
+        <item quantity="many">Przeciepnōńć %d folderōw do Hasiŏka?</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Przeciepnōńć %d plikōw do Hasiŏka?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepnōńć %d plik do Hasiŏka?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepnōńć %d pliki do Hasiŏka?</item>
+        <item quantity="many">Przeciepnōńć %d plikōw do Hasiŏka?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Przeciepnōńć %d folderōw do Hasiŏka?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepnōńć %d folder do Hasiŏka?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepnōńć %d foldery do Hasiŏka?</item>
+        <item quantity="many">Przeciepnōńć %d folderōw do Hasiŏka?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Przeciepnōńć %d katalogōw do Hasiŏka?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepnōńć %d katalog do Hasiŏka?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepnōńć %d katalogi do Hasiŏka?</item>
+        <item quantity="many">Przeciepnōńć %d katalogōw do Hasiŏka?</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Przelyź %d dingsōw do Hasioka?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przelyź %d dings do Hasioka?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Przeciepnōńć %d elymyntōw do Hasiŏka?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepnōńć %d elymynt do Hasiŏka?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepnōńć %d elymynta do Hasiŏka?</item>
+        <item quantity="many">Przeciepnōńć %d elymyntōw do Hasiŏka?</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Przeciepowanie %d plikōw do Hasiŏka…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d pliku do Hasiŏka…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d plikōw do Hasiŏka…</item>
+        <item quantity="many">Przeciepowanie %d plikōw do Hasiŏka…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Przeciepowanie %d katalogōw do Hasiŏka…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d katalogu do Hasiŏka…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d katalogōw do Hasiŏka…</item>
+        <item quantity="many">Przeciepowanie %d katalogōw do Hasiŏka…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Przeciepowanie %d elymyntōw do Hasiŏka…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d elymyntu do Hasiŏka…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d elymyntōw do Hasiŏka…</item>
+        <item quantity="many">Przeciepowanie %d elymyntōw do Hasiŏka…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Przeciepowanie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d plikōw…</item>
+        <item quantity="many">Przeciepowanie %d plikōw…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Przeciepowanie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d plikōw…</item>
+        <item quantity="many">Przeciepowanie %d plikōw…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Przeciepowanie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d katalogōw…</item>
+        <item quantity="many">Przeciepowanie %d katalogōw…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Przeciepowanie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d katalogōw…</item>
+        <item quantity="many">Przeciepowanie %d katalogōw…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Przeciepowanie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d elymyntōw…</item>
+        <item quantity="many">Przeciepowanie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Przeciepowanie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepowanie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepowanie %d elymyntōw…</item>
+        <item quantity="many">Przeciepowanie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">Skōmpresowanych ôstało %d elymyntōw</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Skōmpresowany ôstōł %d elymyn</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Skōmpresowane ôstały %d elymynta</item>
+        <item quantity="many">Skōmpresowanych ôstało %d elymyntōw</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">Skopiyrowanych ôstało %1$d elymyntōw do %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Skopiyrowany ôstōł %1$d elymynt do %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Skopiyrowane ôstały %1$d elymynta do %2$s</item>
+        <item quantity="many">Skopiyrowanych ôstało %1$d elymyntōw do %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Wyciepnōńć katalog i plików, kere w nim sōm: %d?</item>
+        <item quantity="one">Wyciepnōńć katalog i plik, kery w nim je?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Wyciepnōńć katalogōw: %1$d i plikōw, kere w nich sōm: %2$d?</item>
+        <item quantity="one">Wyciepnōńć katalog i plik, kery w nim je?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">Wyciepniyntych ôstało %d elymyntōw</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepniynty ôstōł %d elymyn</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepniynte ôstały %d elymynta</item>
+        <item quantity="many">Wyciepniyntych ôstało %d elymyntōw</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Zebieranie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zebieranie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Zebieranie %d plikōw…</item>
+        <item quantity="many">Zebiyranie %d plikōw…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Zebiyranie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zebieranie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Zebieranie %d katalogōw…</item>
+        <item quantity="many">Zebiyranie %d katalogōw…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Zebiyranie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zebieranie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Zebiyranie %d elymyntōw…</item>
+        <item quantity="many">Zebiyranie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Niy idzie udostympnić katalogōw. Katalogi sōm prōzne.</item>
+        <item quantity="one">Niy idzie udostypnić katalogu. Katalog je prōzny.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d plikōw bydzie na zicher wyciepanych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d plik bydzie na zicher wyciepany.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d pliki bydōm na zicher wyciepane.</item>
+        <item quantity="many">%d plikōw bydzie na zicher wyciepanych.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d katalogōw ôstanie blank wyciepniyntych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d katalog ôstanie blank wyciepniynty.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d katalogi ôstanōm blank wyciepniynte.</item>
+        <item quantity="many">%d katalogōw ôstanie blank wyciepniyntych.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">Wyôdrymbniōnych ôstało %d elymyntōw</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyôdrymbniōny ôstōł %d elymyn</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyôdrymbniōne ôstały %d elymynta</item>
+        <item quantity="many">Wyôdrymbniōnych ôstało %d elymyntōw</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">Dodanych ôstało %d plikōw do Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d plik ôstōł dodany do Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Dodane ôstały %d pliki do Nojrŏdszych.</item>
+        <item quantity="many">Dodanych ôstało %d plikōw do Nojrŏdszych.</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">Z nojrŏdszych wyciepniyntych ôstało %d plikōw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Z nojrŏdszych wyciepniynty ôstōł %d plik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Z nojrŏdszych wyciepniynte ôstały %d pliki.</item>
+        <item quantity="many">Z nojrŏdszych wyciepniyntych ôstało %d plikōw.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">Dodanych ôstało %d katalogōw do Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodany ôstōł %d katalog do Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Dodane ôstały %d katalogi do Nojrŏdszych.</item>
+        <item quantity="many">Dodanych ôstało %d katalogōw do Nojrŏdszych.</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">Z nojrŏdszych wyciepniyntych ôstało %d katalogōw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Z nojrŏdszych wyciepniynty ôstōł %d katalog.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Z nojrŏdszych wyciepniynte ôstały %d katalogi.</item>
+        <item quantity="many">Z nojrŏdszych wyciepniyntych ôstało %d katalogōw.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">Dodanych ôstało %d elymyntōw do Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodany ôstōł %d elymynt do Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Dodane ôstały %d elymynta do Nojrŏdszych.</item>
+        <item quantity="many">Dodanych ôstało %d elymyntōw do Nojrŏdszych.</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">Z nojrŏdszych wyciepniyntych ôstało %d elymyntōw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Z nojrŏdszych wyciepniynty ôstōł %d elymynt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Z nojrŏdszych wyciepniynte ôstały %d elymynta.</item>
+        <item quantity="many">Z nojrŏdszych wyciepniyntych ôstało %d elymyntōw.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">Elemyntōw: %d</item>
+        <item quantity="one">Elym.: 2</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">Elemyntōw: %d</item>
+        <item quantity="one">Elemyntōw: %d</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d elymyntōw ôstało skopiyrowanych do skrytki</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elymynt ôstoł skopiyrowany do skrytki</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elymynta ôstały skopiyrowane do skrytki</item>
+        <item quantity="many">%d elymyntōw ôstało skopiyrowanych do skrytki</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d elymyntōw ôstało przeciepniyntych do skrytki</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elymynt ôstōł przeciepniynty do skrytki</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elymynta ôstały przeciepniynte do skrytki</item>
+        <item quantity="many">%d elymyntōw ôstało przeciepniyntych do skrytki</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d ôbranych elymyntōw</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ôbrany elymynt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ôbrane elymynty</item>
+        <item quantity="many">%d ôbranych elymyntōw</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">Przeciepniyntych ôstało %1$d elymyntōw do %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przeciepniynty ôstōł %1$d elymynt do %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przeciepniynte ôstały %1$d elymynta do %2$s</item>
+        <item quantity="many">Przeciepniyntych ôstało %1$d elymyntōw do %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d elymyntōw ôstało przeciepniyntych do Hasiŏka</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elymynt ôstōł przeciepniynty do Hasiŏka</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elymynta ôstały przeciepniynte do Hasiŏka</item>
+        <item quantity="many">%d elymyntōw ôstało przeciepniyntych do Hasiŏka</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d ôbranych</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ôbrane</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ôbrane</item>
+        <item quantity="many">%d ôbranych</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Karta pamiyńci je fol. Blank wyciepnōńć %d plikōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karta pamiyńci je fol. Blank wyciepnōńć %d plik?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Karta pamiyńci je fol. Blank wyciepnōńć %d pliki?</item>
+        <item quantity="many">Karta pamiyńci je fol. Blank wyciepnōńć %d plikōw?</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Karta pamiyńci je fol. Blank wyciepnōńć %d folderōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karta pamiyńci je fol. Blank wyciepnōńć %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Szkarta spamiyńci je połnŏ. Wychrōnić chodnie %d katalogi?</item>
+        <item quantity="many">Karta pamiyńci je fol. Blank wyciepnōńć %d katalogōw?</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Karta pamiyńci je fol. Blank wyciepnōńć %d elymyntōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karta pamiyńci je fol. Blank wyciepnōńć %d elymynt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Karta pamiyńci je fol. Blank wyciepnōńć %d pliki?</item>
+        <item quantity="many">Karta pamiyńci je fol. Blank wyciepnōńć %d elymyntōw?</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Tyn plik ôstanie wyciepniynty za %d dni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tyn plik ôstanie wyciepniynty za %d dziyń.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Tyn plik ôstanie wyciepniynty za %d dni.</item>
+        <item quantity="many">Tyn plik ôstanie wyciepniynty za %d dni.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Tyn folder ôstanie wyciepniynty za %d dni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tyn folder ôstanie wyciepniynty za %d dziyń.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Tyn folder ôstanie wyciepniynty za %d dni.</item>
+        <item quantity="many">Tyn folder ôstanie wyciepniynty za %d dni.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Blank wyciepnōńć %d plików?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Blank wyciepnōńć %d plik?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Blank wyciepnōńć %d pliki?</item>
+        <item quantity="many">Blank wyciepnōńć %d plików?</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Wyciepowanie %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepowanie %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepowanie %d plikōw…</item>
+        <item quantity="many">Wyciepowanie %d plikōw…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Wrŏcanie nazŏd %d plikōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wrŏcanie nazŏd %d pliku…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wrŏcanie nazŏd %d plikōw…</item>
+        <item quantity="many">Wrŏcanie nazŏd %d plikōw…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Blank wyciepnōńć %d katalogōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Blank wyciepnōńć %d katalog?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Blank wyciepnōńć %d katalogi?</item>
+        <item quantity="many">Blank wyciepnōńć %d katalogōw?</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Wyciepowanie %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepowanie %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepowanie %d katalogōw…</item>
+        <item quantity="many">Wyciepowanie %d katalogōw…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Wrŏcanie nazŏd %d katalogōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wrŏcanie nazŏd %d katalogu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wrŏcanie nazŏd %d katalogōw…</item>
+        <item quantity="many">Wrŏcanie nazŏd %d katalogōw…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Blank wyciepnōńć %d elymyntōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Blank wyciepnōńć %d elymynt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Blank wyciepnōńć %d elymynta?</item>
+        <item quantity="many">Blank wyciepnōńć %d elymyntōw?</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Wyciepowanie %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepowanie %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepowanie %d elymyntōw…</item>
+        <item quantity="many">Wyciepowanie %d elymyntōw…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Wrŏcanie nazŏd %d elymyntōw…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wrŏcanie nazŏd %d elymyntu…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wrŏcanie nazŏd %d elymyntōw…</item>
+        <item quantity="many">Wrŏcanie nazŏd %d elymyntōw…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Wyciepniyńcie za %d dni</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepniyńcie za %d dziyń</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepniyńcie za %d dni</item>
+        <item quantity="many">Wyciepniyńcie za %d dni</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Ôdinsztalować %d aplikacyjōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ôdinsztalować %d aplikacyjŏ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ôdinsztalować %d aplikacyje?</item>
+        <item quantity="many">Ôdinsztalować %d aplikacyjōw?</item>
+    </plurals>
+</resources>

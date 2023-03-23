@@ -28,11 +28,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
@@ -48,9 +43,10 @@
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -80,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 112
+    .line 182
     check-cast p1, Lkotlin/Unit;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext$Element;
@@ -97,26 +93,28 @@
 
     const-string v0, "<anonymous parameter 0>"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "element"
 
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 182
     iget-object p1, p0, Lkotlin/coroutines/CombinedContext$writeReplace$1;->$elements:[Lkotlin/coroutines/CoroutineContext;
 
     iget-object v0, p0, Lkotlin/coroutines/CombinedContext$writeReplace$1;->$index:Lkotlin/jvm/internal/Ref$IntRef;
 
-    iget v1, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
+    iget v0, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    add-int/lit8 v2, v1, 0x1
+    iget-object v1, p0, Lkotlin/coroutines/CombinedContext$writeReplace$1;->$index:Lkotlin/jvm/internal/Ref$IntRef;
 
-    iput v2, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
+    add-int/lit8 v2, v0, 0x1
+
+    iput v2, v1, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext;
 
-    aput-object p2, p1, v1
+    aput-object p2, p1, v0
 
     return-void
 .end method

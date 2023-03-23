@@ -27,11 +27,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n\u00a2\u0006\u0002\u0008\u0004"
     }
@@ -45,19 +40,36 @@
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
 .field final synthetic $result:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
 .method constructor <init>(Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
     iput-object p1, p0, Lkotlin/io/FilesKt__FileReadWriteKt$readLines$1;->$result:Ljava/util/ArrayList;
 
@@ -73,6 +85,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
+    .line 219
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lkotlin/io/FilesKt__FileReadWriteKt$readLines$1;->invoke(Ljava/lang/String;)V
@@ -87,7 +100,7 @@
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 219
     iget-object v0, p0, Lkotlin/io/FilesKt__FileReadWriteKt$readLines$1;->$result:Ljava/util/ArrayList;

@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/internal/executor/SingleThreadExecutor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 14
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/executor/SingleThreadExecutor$1;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/executor/SingleThreadExecutor;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "r"
+        }
+    .end annotation
 
     .line 17
     new-instance v0, Ljava/lang/Thread;

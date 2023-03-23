@@ -100,6 +100,16 @@
 
 .method public static getMaskedMetaState(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "motion",
+            "keyCode"
+        }
+    .end annotation
 
     .line 74
     invoke-static {p0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->makeMetaArray(II)V
@@ -136,6 +146,14 @@
 
 .method private static isMetaKey(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     const/16 v0, 0x71
 
@@ -170,6 +188,14 @@
 
 .method private static isToggleMetaKey(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     const/16 v0, 0x73
 
@@ -199,6 +225,16 @@
 
 .method private static makeMetaArray(II)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "motion",
+            "keyCode"
+        }
+    .end annotation
 
     .line 159
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->keyOnDownMetaKey:Ljava/util/ArrayList;
@@ -282,19 +318,17 @@
 
     invoke-virtual {p0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v1
 
-    check-cast p0, Ljava/lang/Integer;
+    check-cast v1, Ljava/lang/Integer;
 
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
-    move-result p0
+    move-result v1
 
-    if-ne p0, p1, :cond_3
+    if-ne v1, p1, :cond_3
 
     .line 180
-    sget-object p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->keyOnDownMetaKey:Ljava/util/ArrayList;
-
     invoke-virtual {p0, v2}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     goto :goto_3
@@ -310,7 +344,17 @@
 .end method
 
 .method private static makeToggleMetaArray(II)V
-    .locals 2
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "motion",
+            "keyCode"
+        }
+    .end annotation
 
     .line 140
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->keyOnDownMetaKey:Ljava/util/ArrayList;
@@ -338,20 +382,18 @@
 
     invoke-virtual {v1, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Ljava/lang/Integer;
+    check-cast v2, Ljava/lang/Integer;
 
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
-    move-result v1
+    move-result v2
 
-    if-ne v1, p1, :cond_0
+    if-ne v2, p1, :cond_0
 
     .line 147
-    sget-object p1, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->keyOnDownMetaKey:Ljava/util/ArrayList;
-
-    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+    invoke-virtual {v1, p0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     return-void
 
@@ -586,9 +628,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     sget v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->mMetaState:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -617,6 +663,14 @@
 
 .method public static setKeyDownTime(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 
     .line 58
     sput-wide p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->keyDownTime:J
@@ -626,6 +680,14 @@
 
 .method public static setMouseDownTime(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 
     .line 31
     sput-wide p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->mouseDownTime:J
@@ -635,6 +697,14 @@
 
 .method public static setMouseStatus(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mouseType"
+        }
+    .end annotation
 
     .line 45
     sput p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->mouseStatus:I
@@ -644,6 +714,16 @@
 
 .method public static setRepeatNum(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "motion",
+            "keyCode"
+        }
+    .end annotation
 
     .line 224
     sget v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->beforeMotion:I
@@ -670,15 +750,23 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ", repeat = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     sget v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyStatusManager;->repeat:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

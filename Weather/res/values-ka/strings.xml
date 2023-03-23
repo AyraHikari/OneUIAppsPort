@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">შესვლა</string>
     <string name="common_signin_button_text_long">Google-ით შესვლა</string>
     <string name="copy">კოპირება</string>
-    <string name="copy_toast_msg">გაცვლის ბუფერში კოპირებული ბმული</string>
     <string name="error_icon_content_description">შეცდომა</string>
     <string name="expand_button_title">დამატებით</string>
     <string name="exposed_dropdown_menu_content_description">ჩამოსაშლელი მენიუს ჩვენება</string>
-    <string name="fallback_menu_item_copy_link">ბმულის კოპირება</string>
-    <string name="fallback_menu_item_open_in_browser">ბრაუზერში გახსნა</string>
-    <string name="fallback_menu_item_share_link">ბმულის გაზიარება</string>
     <string name="icon_content_description">დიალოგის ხატულა</string>
     <string name="item_view_role_description">ჩანართი</string>
     <string name="material_clock_toggle_content_description">აირჩიეთ AM ან PM</string>

@@ -81,7 +81,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/internal/ws/WebSocketExtensions$Companion;
@@ -124,7 +124,7 @@
 .method public constructor <init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)V
     .locals 0
 
-    .line 59
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->perMessageDeflate:Z
@@ -165,62 +165,60 @@
 
     if-eqz p1, :cond_1
 
-    .line 64
-    move-object p2, v1
+    move-object v2, v1
 
-    check-cast p2, Ljava/lang/Integer;
+    goto :goto_1
 
     :cond_1
     move-object v2, p2
 
+    :goto_1
     and-int/lit8 p1, p7, 0x4
 
     if-eqz p1, :cond_2
 
     move v3, v0
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_2
     move v3, p3
 
-    :goto_1
+    :goto_2
     and-int/lit8 p1, p7, 0x8
 
     if-eqz p1, :cond_3
 
-    .line 70
-    move-object p4, v1
-
-    check-cast p4, Ljava/lang/Integer;
+    goto :goto_3
 
     :cond_3
     move-object v1, p4
 
+    :goto_3
     and-int/lit8 p1, p7, 0x10
 
     if-eqz p1, :cond_4
 
     move v4, v0
 
-    goto :goto_2
+    goto :goto_4
 
     :cond_4
     move v4, p5
 
-    :goto_2
+    :goto_4
     and-int/lit8 p1, p7, 0x20
 
     if-eqz p1, :cond_5
 
     move p7, v0
 
-    goto :goto_3
+    goto :goto_5
 
     :cond_5
     move p7, p6
 
-    :goto_3
+    :goto_5
     move-object p1, p0
 
     move p2, p8
@@ -233,7 +231,7 @@
 
     move p6, v4
 
-    .line 79
+    .line 2
     invoke-direct/range {p1 .. p7}, Lokhttp3/internal/ws/WebSocketExtensions;-><init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)V
 
     return-void
@@ -410,7 +408,7 @@
 
     iget-object v1, p1, Lokhttp3/internal/ws/WebSocketExtensions;->clientMaxWindowBits:Ljava/lang/Integer;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -426,7 +424,7 @@
 
     iget-object v1, p1, Lokhttp3/internal/ws/WebSocketExtensions;->serverMaxWindowBits:Ljava/lang/Integer;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -547,12 +545,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 84
+    .line 1
     iget-boolean p1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientNoContextTakeover:Z
 
     goto :goto_0
 
-    .line 86
+    .line 2
     :cond_0
     iget-boolean p1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverNoContextTakeover:Z
 
@@ -571,79 +569,53 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget-boolean v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->perMessageDeflate:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     const-string v1, ", clientMaxWindowBits="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget-object v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientMaxWindowBits:Ljava/lang/Integer;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     const-string v1, ", clientNoContextTakeover="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget-boolean v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientNoContextTakeover:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     const-string v1, ", serverMaxWindowBits="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget-object v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverMaxWindowBits:Ljava/lang/Integer;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     const-string v1, ", serverNoContextTakeover="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget-boolean v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverNoContextTakeover:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     const-string v1, ", unknownValues="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget-boolean v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     const-string v1, ")"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

@@ -23,6 +23,16 @@
 # direct methods
 .method constructor <init>(II)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "startColor",
+            "endColor"
+        }
+    .end annotation
 
     .line 227
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -60,6 +70,18 @@
 
 .method constructor <init>(III)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startColor",
+            "centerColor",
+            "endColor"
+        }
+    .end annotation
 
     .line 232
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -104,6 +126,17 @@
 
 .method constructor <init>(Ljava/util/List;Ljava/util/List;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "colorsList",
+            "offsetsList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

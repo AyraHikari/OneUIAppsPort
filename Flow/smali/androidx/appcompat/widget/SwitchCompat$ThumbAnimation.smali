@@ -27,21 +27,33 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/widget/SwitchCompat;FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "startPosition",
+            "endPosition"
+        }
+    .end annotation
 
-    .line 1544
+    .line 1830
     iput-object p1, p0, Landroidx/appcompat/widget/SwitchCompat$ThumbAnimation;->this$0:Landroidx/appcompat/widget/SwitchCompat;
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
-    .line 1545
+    .line 1831
     iput p2, p0, Landroidx/appcompat/widget/SwitchCompat$ThumbAnimation;->mStartPosition:F
 
-    .line 1546
+    .line 1832
     iput p3, p0, Landroidx/appcompat/widget/SwitchCompat$ThumbAnimation;->mEndPosition:F
 
     sub-float/2addr p3, p2
 
-    .line 1547
+    .line 1833
     iput p3, p0, Landroidx/appcompat/widget/SwitchCompat$ThumbAnimation;->mDiff:F
 
     return-void
@@ -51,8 +63,18 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "interpolatedTime",
+            "t"
+        }
+    .end annotation
 
-    .line 1552
+    .line 1838
     iget-object p2, p0, Landroidx/appcompat/widget/SwitchCompat$ThumbAnimation;->this$0:Landroidx/appcompat/widget/SwitchCompat;
 
     iget v0, p0, Landroidx/appcompat/widget/SwitchCompat$ThumbAnimation;->mStartPosition:F

@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 78
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
@@ -40,7 +48,7 @@
 
     move-object/from16 v1, p0
 
-    const-string v0, "start audio decoding"
+    const-string/jumbo v0, "start audio decoding"
 
     .line 81
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -139,7 +147,11 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -183,11 +195,17 @@
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v4, " bytes"
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -498,6 +516,8 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$400(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
@@ -507,6 +527,8 @@
     iget-wide v11, v4, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;->mModeratedAudioStartTimeMs:J
 
     invoke-virtual {v3, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

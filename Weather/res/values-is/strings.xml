@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Skrá inn</string>
     <string name="common_signin_button_text_long">Skrá inn með Google</string>
     <string name="copy">Afrita</string>
-    <string name="copy_toast_msg">Tengill afritaður á klippiborð</string>
     <string name="error_icon_content_description">Villa</string>
     <string name="expand_button_title">Ítarlegt</string>
     <string name="exposed_dropdown_menu_content_description">Sýna fellivalmynd</string>
-    <string name="fallback_menu_item_copy_link">Afrita tengil</string>
-    <string name="fallback_menu_item_open_in_browser">Opna í vafra</string>
-    <string name="fallback_menu_item_share_link">Deila tengli</string>
     <string name="icon_content_description">Gluggatákn</string>
     <string name="item_view_role_description">Flipi</string>
     <string name="material_clock_toggle_content_description">Velja f.h. eða e.h.</string>

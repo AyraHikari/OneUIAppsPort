@@ -23,6 +23,16 @@
 # direct methods
 .method public constructor <init>(IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "errorCode",
+            "isEnrollRequest"
+        }
+    .end annotation
 
     .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,6 +48,22 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dkHMAC",
+            "skHMAC",
+            "isEnrollRequest",
+            "sessionKey",
+            "notiWiFiPortNum"
+        }
+    .end annotation
 
     .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

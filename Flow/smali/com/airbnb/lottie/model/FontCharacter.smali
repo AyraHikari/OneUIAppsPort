@@ -3,14 +3,6 @@
 .source "FontCharacter.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/airbnb/lottie/model/FontCharacter$Factory;
-    }
-.end annotation
-
-
 # instance fields
 .field private final character:C
 
@@ -26,7 +18,7 @@
     .end annotation
 .end field
 
-.field private final size:I
+.field private final size:D
 
 .field private final style:Ljava/lang/String;
 
@@ -34,40 +26,40 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/util/List;CIDLjava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/util/List;CDDLjava/lang/String;Ljava/lang/String;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
             "Lcom/airbnb/lottie/model/content/ShapeGroup;",
-            ">;CID",
+            ">;CDD",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")V"
         }
     .end annotation
 
-    .line 31
+    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 32
+    .line 31
     iput-object p1, p0, Lcom/airbnb/lottie/model/FontCharacter;->shapes:Ljava/util/List;
 
-    .line 33
+    .line 32
     iput-char p2, p0, Lcom/airbnb/lottie/model/FontCharacter;->character:C
 
+    .line 33
+    iput-wide p3, p0, Lcom/airbnb/lottie/model/FontCharacter;->size:D
+
     .line 34
-    iput p3, p0, Lcom/airbnb/lottie/model/FontCharacter;->size:I
+    iput-wide p5, p0, Lcom/airbnb/lottie/model/FontCharacter;->width:D
 
     .line 35
-    iput-wide p4, p0, Lcom/airbnb/lottie/model/FontCharacter;->width:D
+    iput-object p7, p0, Lcom/airbnb/lottie/model/FontCharacter;->style:Ljava/lang/String;
 
     .line 36
-    iput-object p6, p0, Lcom/airbnb/lottie/model/FontCharacter;->style:Ljava/lang/String;
-
-    .line 37
-    iput-object p7, p0, Lcom/airbnb/lottie/model/FontCharacter;->fontFamily:Ljava/lang/String;
+    iput-object p8, p0, Lcom/airbnb/lottie/model/FontCharacter;->fontFamily:Ljava/lang/String;
 
     return-void
 .end method
@@ -81,7 +73,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 18
+    .line 17
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
     move-result p0
@@ -90,7 +82,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 19
+    .line 18
     invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
 
     move-result p0
@@ -113,25 +105,25 @@
         }
     .end annotation
 
-    .line 41
+    .line 40
     iget-object v0, p0, Lcom/airbnb/lottie/model/FontCharacter;->shapes:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method getSize()I
-    .locals 1
+.method getSize()D
+    .locals 2
 
-    .line 45
-    iget v0, p0, Lcom/airbnb/lottie/model/FontCharacter;->size:I
+    .line 44
+    iget-wide v0, p0, Lcom/airbnb/lottie/model/FontCharacter;->size:D
 
-    return v0
+    return-wide v0
 .end method
 
 .method getStyle()Ljava/lang/String;
     .locals 1
 
-    .line 53
+    .line 52
     iget-object v0, p0, Lcom/airbnb/lottie/model/FontCharacter;->style:Ljava/lang/String;
 
     return-object v0
@@ -140,7 +132,7 @@
 .method public getWidth()D
     .locals 2
 
-    .line 49
+    .line 48
     iget-wide v0, p0, Lcom/airbnb/lottie/model/FontCharacter;->width:D
 
     return-wide v0
@@ -149,7 +141,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 83
+    .line 56
     iget-char v0, p0, Lcom/airbnb/lottie/model/FontCharacter;->character:C
 
     iget-object v1, p0, Lcom/airbnb/lottie/model/FontCharacter;->fontFamily:Ljava/lang/String;

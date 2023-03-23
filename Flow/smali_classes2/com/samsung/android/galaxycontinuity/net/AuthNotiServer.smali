@@ -53,6 +53,16 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "serviceName",
+            "friendlyName"
+        }
+    .end annotation
 
     .line 22
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;-><init>()V
@@ -120,6 +130,14 @@
 
 .method private addClientInfoToList(Lcom/samsung/android/galaxycontinuity/net/bluetooth/ClientInfo;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clientInfo"
+        }
+    .end annotation
 
     .line 308
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->syncObject:Ljava/lang/Object;
@@ -173,7 +191,11 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -196,7 +218,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -288,6 +314,14 @@
 
 .method public getConnectedClientInfo(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/net/bluetooth/ClientInfo;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     .line 189
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->syncObject:Ljava/lang/Object;
@@ -361,6 +395,14 @@
 
 .method public getSocketFor(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     .line 261
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->syncObject:Ljava/lang/Object;
@@ -487,6 +529,14 @@
 
 .method public isConnectedTo(Ljava/lang/String;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "MACAddress"
+        }
+    .end annotation
 
     .line 242
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->syncObject:Ljava/lang/Object;
@@ -525,15 +575,23 @@
 
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     const-string v6, " : mConnectedClientInfo : "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     const-string v6, " mState : "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     iget-object v6, v4, Lcom/samsung/android/galaxycontinuity/net/bluetooth/ClientInfo;->mState:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
@@ -542,6 +600,8 @@
     move-result-object v6
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -624,11 +684,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " isTrunedOn : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -650,9 +716,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " mAcceptThread isAlive : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->mAcceptThread:Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;
 
@@ -661,6 +731,8 @@
     move-result v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -677,15 +749,21 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " mAcceptThread isCanceled : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->mAcceptThread:Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;
 
     iget-boolean v3, v3, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;->isCanceled:Z
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -705,9 +783,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " mAcceptThread is null"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -722,8 +804,6 @@
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->mAcceptThread:Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;
 
     if-eqz v1, :cond_1
-
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->mAcceptThread:Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;
 
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;->isAlive()Z
 
@@ -788,9 +868,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, " : mAcceptThread is not null and it is listening"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -826,8 +910,6 @@
     if-eqz v1, :cond_2
 
     .line 46
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->mAcceptThread:Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;
-
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer$AcceptThread;->cancel()V
 
     const/4 v1, 0x0
@@ -847,9 +929,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " Accept"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -886,6 +972,14 @@
 
 .method public runConnectionClosedThread(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 201
     invoke-super {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;->runConnectionClosedThread(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
@@ -957,6 +1051,14 @@
 
 .method public runConnectionFailedThread(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 214
     invoke-super {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;->runConnectionFailedThread(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
@@ -1034,6 +1136,16 @@
 
 .method public sendMessage(Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectedThread;[B)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "thread",
+            "bytes"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -1109,9 +1221,13 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     const-string p2, " : mConnectedThread is null"
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1125,6 +1241,16 @@
 
 .method public sendResponse(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[B)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "array"
+        }
+    .end annotation
 
     const-string v0, "BTAuthenticationServer sendResponse"
 
@@ -1199,6 +1325,14 @@
 
 .method public socketConnected(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 116
     new-instance v0, Ljava/lang/Thread;
@@ -1222,6 +1356,14 @@
 
 .method protected startCommunication(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 122
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->syncObject:Ljava/lang/Object;
@@ -1238,15 +1380,19 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, " : startCommunication()"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     .line 124
     new-instance v1, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectedThread;
@@ -1259,9 +1405,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " Connected"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1356,6 +1506,14 @@
 
 .method public stopCommunication(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 154
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->syncObject:Ljava/lang/Object;
@@ -1391,7 +1549,7 @@
 
     if-nez v4, :cond_0
 
-    goto :goto_2
+    goto/16 :goto_2
 
     .line 162
     :cond_0
@@ -1425,9 +1583,13 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     const-string v5, " : stopCommunication()"
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1483,13 +1645,19 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     const-string v6, " : stopCommunication() failed : "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1506,9 +1674,13 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1556,6 +1728,14 @@
 
 .method public stopCommunication(Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     .line 142
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->syncObject:Ljava/lang/Object;

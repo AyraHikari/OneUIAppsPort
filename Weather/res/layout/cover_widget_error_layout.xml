@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/widget_error_layout" android:paddingBottom="@dimen/widget_cover_layout_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:id="@id/widget_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/cover_widget_title_layout" />
     <TextView android:id="@id/cover_widget_description" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/error_location_message" android:layout_marginHorizontal="@dimen/widget_cover_layout_padding" style="@style/CoverWidget.TextAppearance" />
 </LinearLayout>

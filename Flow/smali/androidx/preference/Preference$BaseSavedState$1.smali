@@ -1,4 +1,4 @@
-.class final Landroidx/preference/Preference$BaseSavedState$1;
+.class Landroidx/preference/Preference$BaseSavedState$1;
 .super Ljava/lang/Object;
 .source "Preference.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2336
+    .line 2421
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Landroidx/preference/Preference$BaseSavedState;
     .locals 1
 
-    .line 2339
+    .line 2424
     new-instance v0, Landroidx/preference/Preference$BaseSavedState;
 
     invoke-direct {v0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
@@ -52,7 +52,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 2336
+    .line 2421
     invoke-virtual {p0, p1}, Landroidx/preference/Preference$BaseSavedState$1;->createFromParcel(Landroid/os/Parcel;)Landroidx/preference/Preference$BaseSavedState;
 
     move-result-object p1
@@ -63,7 +63,7 @@
 .method public newArray(I)[Landroidx/preference/Preference$BaseSavedState;
     .locals 0
 
-    .line 2344
+    .line 2429
     new-array p1, p1, [Landroidx/preference/Preference$BaseSavedState;
 
     return-object p1
@@ -72,7 +72,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 2336
+    .line 2421
     invoke-virtual {p0, p1}, Landroidx/preference/Preference$BaseSavedState$1;->newArray(I)[Landroidx/preference/Preference$BaseSavedState;
 
     move-result-object p1

@@ -3,4 +3,6 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/forecast_providers" android:title="Forecast provider" android:key="ForecastProviders" android:entryValues="@array/forecast_provider_values" />
     <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/weather_codes_names" android:title="Mock Weather Codes" android:key="MockWeatherCodes" android:entryValues="@array/weather_codes_values" />
+    <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/most_probable_activity_names" android:title="Mock Most Probable Activity" android:key="MockMostProbableActivity" android:entryValues="@array/most_probable_activity_values" />
+    <androidx.preference.Preference android:persistent="false" android:title="On The Go Monitor" android:key="OnTheGoMonitor" />
 </androidx.preference.PreferenceScreen>

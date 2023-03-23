@@ -38,7 +38,7 @@
     <string name="common_google_play_services_install_text">%1$s Google Play ਸੇਵਾਵਾਂ ਤੋਂ ਬਿਨਾਂ ਨਹੀਂ ਚੱਲੇਗੀ, ਜੋ ਤੁਹਾਡੇ ਡੀਵਾਈਸ ਤੋਂ ਗੁੰਮ ਹਨ।</string>
     <string name="common_google_play_services_install_title">Google Play ਸੇਵਾਵਾਂ ਪ੍ਰਾਪਤ ਕਰੋ</string>
     <string name="common_google_play_services_notification_channel_name">Google Play ਸੇਵਾਵਾਂ ਦੀ ਉਪਲਬਧਤਾ</string>
-    <string name="common_google_play_services_notification_ticker">Google Play ਸੇਵਾਵਾਂ ਅਸ਼ੁੱਧੀ</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ਸੇਵਾਵਾਂ ਅਸ਼ੁੱਧੀ</string>
     <string name="common_google_play_services_unknown_issue">%1$s ਨੂੰ Google Play ਸੇਵਾਵਾਂ ਨਾਲ ਸਮੱਸਿਆ ਆ ਰਹੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="common_google_play_services_unsupported_text">"%1$s Google Play ਸੇਵਾਵਾਂ ਤੋਂ ਬਿਨਾਂ ਨਹੀਂ ਚੱਲ ਸਕੇਗੀ, ਜੋ ਤੁਹਾਡੇ ਡੀਵਾਈਸ 'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹਨ।"</string>
     <string name="common_google_play_services_update_button">ਅੱਪਡੇਟ ਕਰੋ</string>
@@ -46,17 +46,13 @@
     <string name="common_google_play_services_update_title">Google Play ਸੇਵਾਵਾਂ ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ</string>
     <string name="common_google_play_services_updating_text">%1$s Google Play ਸੇਵਾਵਾਂ ਤੋਂ ਬਿਨਾਂ ਨਹੀਂ ਚੱਲੇਗਾ, ਜੋ ਵਰਤਮਾਨ ਵਿੱਚ ਅੱਪਡੇਟ ਹੋ ਰਹੀਆਂ ਹਨ।</string>
     <string name="common_google_play_services_wear_update_text">"Google Play ਸੇਵਾਵਾਂ ਦੇ ਨਵਾਂ ਸੰਸਕਰਨ ਦੀ ਲੋੜ ਹੈ। ਇਹ ਛੇਤੀ ਹੀ ਸਵੈਚਲਿਤ ਤੌਰ 'ਤੇ ਅੱਪਡੇਟ ਕਰੇਗਾ।"</string>
-    <string name="common_open_on_phone">"ਫ਼ੋਨ 'ਤੇ ਖੋਲ੍ਹੋ"</string>
+    <string name="common_open_on_phone">"ਫ਼ੋਨ 'ਤੇ ਖੋਲ੍ਹੋ"</string>
     <string name="common_signin_button_text">ਸਾਈਨ-ਇਨ ਕਰੋ</string>
     <string name="common_signin_button_text_long">Google ਨਾਲ ਸਾਈਨ-ਇਨ ਕਰੋ</string>
     <string name="copy">ਕਾਪੀ ਕਰੋ</string>
-    <string name="copy_toast_msg">"ਲਿੰਕ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਹੋ ਗਿਆ"</string>
     <string name="error_icon_content_description">ਗੜਬੜ</string>
-    <string name="expand_button_title">ਉੱਨਤ</string>
+    <string name="expand_button_title">ਅਡਵਾਂਸ</string>
     <string name="exposed_dropdown_menu_content_description">ਡ੍ਰੌਪ-ਡਾਊਨ ਮੀਨੂ ਦਿਖਾਓ</string>
-    <string name="fallback_menu_item_copy_link">ਲਿੰਕ ਕਾਪੀ ਕਰੋ</string>
-    <string name="fallback_menu_item_open_in_browser">ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਖੋਲ੍ਹੋ</string>
-    <string name="fallback_menu_item_share_link">ਲਿੰਕ ਸਾਂਝਾ ਕਰੋ</string>
     <string name="icon_content_description">ਵਿੰਡੋ ਦਾ ਪ੍ਰਤੀਕ</string>
     <string name="item_view_role_description">ਟੈਬ</string>
     <string name="material_clock_toggle_content_description">AM ਜਾਂ PM ਚੁਣੋ</string>
@@ -106,7 +102,7 @@
     <string name="mtrl_picker_toggle_to_year_selection">"ਸਾਲ ਦੀ ਚੋਣ 'ਤੇ ਜਾਣ ਲਈ ਟੈਪ ਕਰੋ"</string>
     <string name="nav_app_bar_navigate_up_description">ਉੱਪਰ ਵੱਲ ਨੈਵੀਗੇਟ ਕਰੋ</string>
     <string name="nav_app_bar_open_drawer_description">ਨੈਵੀਗੇਸ਼ਨ ਡ੍ਰਾਅਰ ਖੋਲ੍ਹੋ</string>
-    <string name="not_set">ਸੈੱਟ ਨਹੀਂ</string>
+    <string name="not_set">ਸੈੱਟ ਨਹੀਂ ਹੈ</string>
     <string name="password_toggle_content_description">ਪਾਸਵਰਡ ਦਿਖਾਓ</string>
     <string name="preference_copied">"\"%1$s\" ਨੂੰ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕੀਤਾ ਗਿਆ।"</string>
     <string name="search_menu_title">ਖੋਜ</string>

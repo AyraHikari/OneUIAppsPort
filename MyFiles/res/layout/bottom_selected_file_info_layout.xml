@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:tag="layout/bottom_selected_file_info_layout_0" android:paddingBottom="@dimen/bottom_selected_file_info_padding_vertical_tablet" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/bottom_selected_file_info_padding_horizontal_tablet" android:paddingEnd="@dimen/bottom_selected_file_info_padding_horizontal_tablet"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/thumbnail_container" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/bottom_selected_file_info_thumbnail_layout" />
+    <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/bottom_selected_file_info_text_size_tablet" android:textColor="@color/bottom_selection_item_count_size_text_color_tablet" android:ellipsize="end" android:id="@id/item_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/RobotoMedium" />
+    <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/bottom_selected_file_info_sub_text_size_tablet" android:textColor="@color/bottom_selection_item_count_size_text_color_tablet" android:ellipsize="end" android:id="@id/item_size" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

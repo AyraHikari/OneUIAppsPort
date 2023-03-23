@@ -36,10 +36,18 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 52
+    .line 54
     invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/AbsActionBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -47,10 +55,20 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 56
+    .line 58
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/AbsActionBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -58,23 +76,35 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyle"
+        }
+    .end annotation
 
-    .line 60
+    .line 62
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 37
+    .line 39
     new-instance p2, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
     invoke-direct {p2, p0}, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;-><init>(Landroidx/appcompat/widget/AbsActionBarView;)V
 
     iput-object p2, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisAnimListener:Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
-    .line 62
+    .line 64
     new-instance p2, Landroid/util/TypedValue;
 
     invoke-direct {p2}, Landroid/util/TypedValue;-><init>()V
 
-    .line 63
+    .line 65
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p3
@@ -93,7 +123,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 65
+    .line 67
     new-instance p3, Landroid/view/ContextThemeWrapper;
 
     iget p2, p2, Landroid/util/TypedValue;->resourceId:I
@@ -104,7 +134,7 @@
 
     goto :goto_0
 
-    .line 67
+    .line 69
     :cond_0
     iput-object p1, p0, Landroidx/appcompat/widget/AbsActionBarView;->mPopupContext:Landroid/content/Context;
 
@@ -115,7 +145,7 @@
 .method static synthetic access$001(Landroidx/appcompat/widget/AbsActionBarView;I)V
     .locals 0
 
-    .line 34
+    .line 36
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     return-void
@@ -124,7 +154,7 @@
 .method static synthetic access$101(Landroidx/appcompat/widget/AbsActionBarView;I)V
     .locals 0
 
-    .line 34
+    .line 36
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     return-void
@@ -132,6 +162,18 @@
 
 .method protected static next(IIZ)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "val",
+            "isRtl"
+        }
+    .end annotation
 
     if-eqz p2, :cond_0
 
@@ -150,15 +192,23 @@
 # virtual methods
 .method public animateToVisibility(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 
     const-wide/16 v0, 0xc8
 
-    .line 179
+    .line 181
     invoke-virtual {p0, p1, v0, v1}, Landroidx/appcompat/widget/AbsActionBarView;->setupAnimatorToVisibility(IJ)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
     move-result-object p1
 
-    .line 180
+    .line 182
     invoke-virtual {p1}, Landroidx/core/view/ViewPropertyAnimatorCompat;->start()V
 
     return-void
@@ -167,7 +217,7 @@
 .method public canShowOverflowMenu()Z
     .locals 1
 
-    .line 235
+    .line 237
     invoke-virtual {p0}, Landroidx/appcompat/widget/AbsActionBarView;->isOverflowReserved()Z
 
     move-result v0
@@ -194,12 +244,12 @@
 .method public dismissPopupMenus()V
     .locals 1
 
-    .line 239
+    .line 241
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 240
+    .line 242
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->dismissPopupMenus()Z
 
     :cond_0
@@ -209,19 +259,19 @@
 .method public getAnimatedVisibility()I
     .locals 1
 
-    .line 151
+    .line 153
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/ViewPropertyAnimatorCompat;
 
     if-eqz v0, :cond_0
 
-    .line 152
+    .line 154
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisAnimListener:Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
     iget v0, v0, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->mFinalVisibility:I
 
     return v0
 
-    .line 154
+    .line 156
     :cond_0
     invoke-virtual {p0}, Landroidx/appcompat/widget/AbsActionBarView;->getVisibility()I
 
@@ -233,7 +283,7 @@
 .method public getContentHeight()I
     .locals 1
 
-    .line 144
+    .line 146
     iget v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mContentHeight:I
 
     return v0
@@ -242,12 +292,12 @@
 .method public hideOverflowMenu()Z
     .locals 1
 
-    .line 210
+    .line 212
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 211
+    .line 213
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->hideOverflowMenu()Z
 
     move-result v0
@@ -263,12 +313,12 @@
 .method public isOverflowMenuShowPending()Z
     .locals 1
 
-    .line 224
+    .line 226
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 225
+    .line 227
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->isOverflowMenuShowPending()Z
 
     move-result v0
@@ -284,12 +334,12 @@
 .method public isOverflowMenuShowing()Z
     .locals 1
 
-    .line 217
+    .line 219
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 218
+    .line 220
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->isOverflowMenuShowing()Z
 
     move-result v0
@@ -305,7 +355,7 @@
 .method public isOverflowReserved()Z
     .locals 1
 
-    .line 231
+    .line 233
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
@@ -329,17 +379,31 @@
 
 .method protected measureChildView(Landroid/view/View;III)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "child",
+            "availableWidth",
+            "childSpecHeight",
+            "spacing"
+        }
+    .end annotation
 
     const/high16 v0, -0x80000000
 
-    .line 246
+    .line 248
     invoke-static {p2, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
     invoke-virtual {p1, v0, p3}, Landroid/view/View;->measure(II)V
 
-    .line 249
+    .line 251
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p1
@@ -350,7 +414,7 @@
 
     const/4 p1, 0x0
 
-    .line 252
+    .line 254
     invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
 
     move-result p1
@@ -360,11 +424,19 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newConfig"
+        }
+    .end annotation
 
-    .line 73
+    .line 75
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 77
+    .line 79
     invoke-virtual {p0}, Landroidx/appcompat/widget/AbsActionBarView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -381,7 +453,7 @@
 
     move-result-object v0
 
-    .line 79
+    .line 81
     sget v1, Landroidx/appcompat/R$styleable;->ActionBar_height:I
 
     invoke-virtual {v0, v1, v4}, Landroid/content/res/TypedArray;->getLayoutDimension(II)I
@@ -390,15 +462,15 @@
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/widget/AbsActionBarView;->setContentHeight(I)V
 
-    .line 80
+    .line 82
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 82
+    .line 84
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 83
+    .line 85
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     :cond_0
@@ -407,8 +479,16 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ev"
+        }
+    .end annotation
 
-    .line 118
+    .line 120
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -419,10 +499,10 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 120
+    .line 122
     iput-boolean v1, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingHover:Z
 
-    .line 123
+    .line 125
     :cond_0
     iget-boolean v3, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingHover:Z
 
@@ -430,7 +510,7 @@
 
     if-nez v3, :cond_1
 
-    .line 124
+    .line 126
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -439,7 +519,7 @@
 
     if-nez p1, :cond_1
 
-    .line 126
+    .line 128
     iput-boolean v4, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingHover:Z
 
     :cond_1
@@ -451,7 +531,7 @@
 
     if-ne v0, p1, :cond_3
 
-    .line 132
+    .line 134
     :cond_2
     iput-boolean v1, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingHover:Z
 
@@ -461,8 +541,16 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ev"
+        }
+    .end annotation
 
-    .line 94
+    .line 96
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -471,10 +559,10 @@
 
     if-nez v0, :cond_0
 
-    .line 96
+    .line 98
     iput-boolean v1, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingTouch:Z
 
-    .line 99
+    .line 101
     :cond_0
     iget-boolean v2, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingTouch:Z
 
@@ -482,7 +570,7 @@
 
     if-nez v2, :cond_1
 
-    .line 100
+    .line 102
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -491,7 +579,7 @@
 
     if-nez p1, :cond_1
 
-    .line 102
+    .line 104
     iput-boolean v3, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingTouch:Z
 
     :cond_1
@@ -501,7 +589,7 @@
 
     if-ne v0, p1, :cond_3
 
-    .line 107
+    .line 109
     :cond_2
     iput-boolean v1, p0, Landroidx/appcompat/widget/AbsActionBarView;->mEatingTouch:Z
 
@@ -511,20 +599,36 @@
 
 .method protected positionChild(Landroid/view/View;IIIZ)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "child",
+            "x",
+            "y",
+            "contentHeight",
+            "reverse"
+        }
+    .end annotation
 
-    .line 260
+    .line 262
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
 
-    .line 261
+    .line 263
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v1
 
     sub-int/2addr p4, v1
 
-    .line 262
+    .line 264
     div-int/lit8 p4, p4, 0x2
 
     add-int/2addr p3, p4
@@ -535,7 +639,7 @@
 
     add-int/2addr v1, p3
 
-    .line 265
+    .line 267
     invoke-virtual {p1, p4, p3, p2, v1}, Landroid/view/View;->layout(IIII)V
 
     goto :goto_0
@@ -545,7 +649,7 @@
 
     add-int/2addr v1, p3
 
-    .line 267
+    .line 269
     invoke-virtual {p1, p2, p3, p4, v1}, Landroid/view/View;->layout(IIII)V
 
     :goto_0
@@ -560,7 +664,7 @@
 .method public postShowOverflowMenu()V
     .locals 1
 
-    .line 201
+    .line 203
     new-instance v0, Landroidx/appcompat/widget/AbsActionBarView$1;
 
     invoke-direct {v0, p0}, Landroidx/appcompat/widget/AbsActionBarView$1;-><init>(Landroidx/appcompat/widget/AbsActionBarView;)V
@@ -572,11 +676,19 @@
 
 .method public setContentHeight(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "height"
+        }
+    .end annotation
 
-    .line 139
+    .line 141
     iput p1, p0, Landroidx/appcompat/widget/AbsActionBarView;->mContentHeight:I
 
-    .line 140
+    .line 142
     invoke-virtual {p0}, Landroidx/appcompat/widget/AbsActionBarView;->requestLayout()V
 
     return-void
@@ -584,23 +696,31 @@
 
 .method public setVisibility(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 
-    .line 185
+    .line 187
     invoke-virtual {p0}, Landroidx/appcompat/widget/AbsActionBarView;->getVisibility()I
 
     move-result v0
 
     if-eq p1, v0, :cond_1
 
-    .line 186
+    .line 188
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/ViewPropertyAnimatorCompat;
 
     if-eqz v0, :cond_0
 
-    .line 187
+    .line 189
     invoke-virtual {v0}, Landroidx/core/view/ViewPropertyAnimatorCompat;->cancel()V
 
-    .line 189
+    .line 191
     :cond_0
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
@@ -610,13 +730,23 @@
 
 .method public setupAnimatorToVisibility(IJ)Landroidx/core/view/ViewPropertyAnimatorCompat;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "visibility",
+            "duration"
+        }
+    .end annotation
 
-    .line 158
+    .line 160
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/ViewPropertyAnimatorCompat;
 
     if-eqz v0, :cond_0
 
-    .line 159
+    .line 161
     invoke-virtual {v0}, Landroidx/core/view/ViewPropertyAnimatorCompat;->cancel()V
 
     :cond_0
@@ -624,17 +754,17 @@
 
     if-nez p1, :cond_2
 
-    .line 163
+    .line 165
     invoke-virtual {p0}, Landroidx/appcompat/widget/AbsActionBarView;->getVisibility()I
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 164
+    .line 166
     invoke-virtual {p0, v0}, Landroidx/appcompat/widget/AbsActionBarView;->setAlpha(F)V
 
-    .line 166
+    .line 168
     :cond_1
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->animate(Landroid/view/View;)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
@@ -646,10 +776,10 @@
 
     move-result-object v0
 
-    .line 167
+    .line 169
     invoke-virtual {v0, p2, p3}, Landroidx/core/view/ViewPropertyAnimatorCompat;->setDuration(J)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
-    .line 168
+    .line 170
     iget-object p2, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisAnimListener:Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
     invoke-virtual {p2, v0, p1}, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->withFinalVisibility(Landroidx/core/view/ViewPropertyAnimatorCompat;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
@@ -660,7 +790,7 @@
 
     return-object v0
 
-    .line 171
+    .line 173
     :cond_2
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->animate(Landroid/view/View;)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
@@ -670,10 +800,10 @@
 
     move-result-object v0
 
-    .line 172
+    .line 174
     invoke-virtual {v0, p2, p3}, Landroidx/core/view/ViewPropertyAnimatorCompat;->setDuration(J)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
-    .line 173
+    .line 175
     iget-object p2, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisAnimListener:Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
     invoke-virtual {p2, v0, p1}, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->withFinalVisibility(Landroidx/core/view/ViewPropertyAnimatorCompat;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
@@ -688,12 +818,12 @@
 .method public showOverflowMenu()Z
     .locals 1
 
-    .line 194
+    .line 196
     iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 195
+    .line 197
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->showOverflowMenu()Z
 
     move-result v0

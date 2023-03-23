@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sesl_list_go_to_top_arrow_bottom_light">#ff404040</color>
+    <color name="sesl_list_go_to_top_arrow_top_light">#ff888888</color>
+    <color name="sesl_list_go_to_top_inner_round_dark">#ff3d3d3d</color>
+    <color name="sesl_list_go_to_top_inner_round_light">#fffcfcfc</color>
+</resources>

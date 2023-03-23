@@ -32,76 +32,81 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
-        "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002*\u0008\u0012\u0004\u0012\u0002H\u00020\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
+        "\u0000\u000c\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002*\u0008\u0012\u0004\u0012\u0002H\u00020\u0003H\u008a@"
     }
     d2 = {
         "<anonymous>",
         "",
         "T",
-        "Lkotlin/sequences/SequenceScope;",
-        "invoke",
-        "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        "Lkotlin/sequences/SequenceScope;"
     }
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 .annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
     c = "kotlin.sequences.SequencesKt__SequencesKt$ifEmpty$1"
     f = "Sequences.kt"
-    i = {
-        0x0,
-        0x0,
-        0x1,
-        0x1
-    }
+    i = {}
     l = {
-        0x43,
-        0x45
+        0x45,
+        0x47
     }
     m = "invokeSuspend"
-    n = {
-        "$this$sequence",
-        "iterator",
-        "$this$sequence",
-        "iterator"
-    }
-    s = {
-        "L$0",
-        "L$1",
-        "L$0",
-        "L$1"
-    }
+    n = {}
+    s = {}
 .end annotation
 
 
 # instance fields
 .field final synthetic $defaultValue:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/sequences/Sequence<",
+            "TT;>;>;"
+        }
+    .end annotation
+.end field
 
 .field final synthetic $this_ifEmpty:Lkotlin/sequences/Sequence;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/sequences/Sequence<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
 
-.field L$0:Ljava/lang/Object;
-
-.field L$1:Ljava/lang/Object;
+.field private synthetic L$0:Ljava/lang/Object;
 
 .field label:I
-
-.field private p$:Lkotlin/sequences/SequenceScope;
 
 
 # direct methods
 .method constructor <init>(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/sequences/Sequence<",
+            "+TT;>;",
+            "Lkotlin/jvm/functions/Function0<",
+            "+",
+            "Lkotlin/sequences/Sequence<",
+            "+TT;>;>;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;",
+            ">;)V"
+        }
+    .end annotation
 
     iput-object p1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->$this_ifEmpty:Lkotlin/sequences/Sequence;
 
@@ -130,10 +135,6 @@
         }
     .end annotation
 
-    const-string v0, "completion"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance v0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;
 
     iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->$this_ifEmpty:Lkotlin/sequences/Sequence;
@@ -142,17 +143,41 @@
 
     invoke-direct {v0, v1, v2, p2}, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;-><init>(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)V
 
-    check-cast p1, Lkotlin/sequences/SequenceScope;
+    iput-object p1, v0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$0:Ljava/lang/Object;
 
-    iput-object p1, v0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->p$:Lkotlin/sequences/SequenceScope;
+    check-cast v0, Lkotlin/coroutines/Continuation;
 
     return-object v0
 .end method
 
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
+    check-cast p1, Lkotlin/sequences/SequenceScope;
+
     check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->invoke(Lkotlin/sequences/SequenceScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlin/sequences/SequenceScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/sequences/SequenceScope<",
+            "-TT;>;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
 
     invoke-virtual {p0, p1, p2}, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
@@ -176,7 +201,7 @@
 
     move-result-object v0
 
-    .line 64
+    .line 66
     iget v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->label:I
 
     const/4 v2, 0x2
@@ -191,7 +216,7 @@
 
     goto :goto_0
 
-    .line 71
+    .line 73
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -201,17 +226,9 @@
 
     throw p1
 
-    .line 64
+    .line 66
     :cond_1
     :goto_0
-    iget-object v0, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$1:Ljava/lang/Object;
-
-    check-cast v0, Ljava/util/Iterator;
-
-    iget-object v0, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$0:Ljava/lang/Object;
-
-    check-cast v0, Lkotlin/sequences/SequenceScope;
-
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
     goto :goto_1
@@ -219,54 +236,32 @@
     :cond_2
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    iget-object p1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->p$:Lkotlin/sequences/SequenceScope;
+    iget-object p1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$0:Ljava/lang/Object;
 
-    .line 65
+    check-cast p1, Lkotlin/sequences/SequenceScope;
+
+    .line 67
     iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->$this_ifEmpty:Lkotlin/sequences/Sequence;
 
     invoke-interface {v1}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 66
+    .line 68
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
-    .line 67
-    iput-object p1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$0:Ljava/lang/Object;
+    .line 69
+    move-object v2, p0
 
-    iput-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$1:Ljava/lang/Object;
+    check-cast v2, Lkotlin/coroutines/Continuation;
 
     iput v3, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->label:I
 
-    invoke-virtual {p1, v1, p0}, Lkotlin/sequences/SequenceScope;->yieldAll(Ljava/util/Iterator;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    if-ne p1, v0, :cond_4
-
-    return-object v0
-
-    .line 69
-    :cond_3
-    iget-object v3, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->$defaultValue:Lkotlin/jvm/functions/Function0;
-
-    invoke-interface {v3}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lkotlin/sequences/Sequence;
-
-    iput-object p1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$0:Ljava/lang/Object;
-
-    iput-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->L$1:Ljava/lang/Object;
-
-    iput v2, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->label:I
-
-    invoke-virtual {p1, v3, p0}, Lkotlin/sequences/SequenceScope;->yieldAll(Lkotlin/sequences/Sequence;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Lkotlin/sequences/SequenceScope;->yieldAll(Ljava/util/Iterator;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -275,6 +270,30 @@
     return-object v0
 
     .line 71
+    :cond_3
+    iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->$defaultValue:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lkotlin/sequences/Sequence;
+
+    move-object v3, p0
+
+    check-cast v3, Lkotlin/coroutines/Continuation;
+
+    iput v2, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->label:I
+
+    invoke-virtual {p1, v1, v3}, Lkotlin/sequences/SequenceScope;->yieldAll(Lkotlin/sequences/Sequence;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_4
+
+    return-object v0
+
+    .line 73
     :cond_4
     :goto_1
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

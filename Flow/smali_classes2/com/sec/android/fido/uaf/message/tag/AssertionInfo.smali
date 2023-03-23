@@ -36,7 +36,7 @@
 .end method
 
 .method public constructor <init>([BLjava/lang/String;)V
-    .locals 4
+    .locals 2
 
     .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -72,59 +72,26 @@
     :try_end_0
     .catch Ljava/nio/BufferUnderflowException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v0, -0x1
-
     .line 52
     invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
 
-    move-result v1
+    const-string v0, "Reg"
 
-    const v2, 0x14074
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/4 v3, 0x1
+    move-result v0
 
-    if-eq v1, v2, :cond_1
+    if-nez v0, :cond_0
 
-    const v2, 0x1f51c8
+    const-string p1, "Auth"
 
-    if-eq v1, v2, :cond_0
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    goto :goto_0
+    move-result p1
 
-    :cond_0
-    const-string v1, "Auth"
-
-    invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    move v0, v3
-
-    goto :goto_0
-
-    :cond_1
-    const-string v1, "Reg"
-
-    invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    const/4 v0, 0x0
-
-    :cond_2
-    :goto_0
-    if-eqz v0, :cond_4
-
-    if-ne v0, v3, :cond_3
-
-    goto :goto_1
+    if-nez p1, :cond_1
 
     .line 59
-    :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -135,13 +102,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p2, ")"
+    move-result-object v0
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    const-string v0, ")"
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -150,7 +123,7 @@
     throw p1
 
     .line 54
-    :cond_4
+    :cond_0
     invoke-virtual {p1}, Lcom/sec/android/fido/uaf/message/util/TlvDecoder;->getUint16()S
 
     move-result p1
@@ -158,7 +131,7 @@
     iput-short p1, p0, Lcom/sec/android/fido/uaf/message/tag/AssertionInfo;->publicKeyAlgAndEncoding:S
 
     .line 62
-    :goto_1
+    :cond_1
     iput-object p2, p0, Lcom/sec/android/fido/uaf/message/tag/AssertionInfo;->operation:Ljava/lang/String;
 
     return-void
@@ -175,6 +148,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p1}, Lcom/sec/android/fido/uaf/message/util/TlvDecoder;->getValue()[B
 
     move-result-object p1
@@ -185,7 +160,9 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -197,63 +174,64 @@
 
 # virtual methods
 .method public encode()[B
-    .locals 4
+    .locals 3
 
     .line 109
     iget-object v0, p0, Lcom/sec/android/fido/uaf/message/tag/AssertionInfo;->operation:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
+    const-string v1, "Reg"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     move-result v1
 
-    const v2, 0x14074
+    if-nez v1, :cond_1
 
-    const/4 v3, 0x1
-
-    if-eq v1, v2, :cond_1
-
-    const v2, 0x1f51c8
-
-    if-eq v1, v2, :cond_0
-
-    goto :goto_0
-
-    :cond_0
     const-string v1, "Auth"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-nez v0, :cond_0
 
-    move v0, v3
+    .line 124
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    goto :goto_1
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    :cond_1
-    const-string v1, "Reg"
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const-string v2, "Unsupported operation("
 
-    move-result v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-eqz v0, :cond_2
+    move-result-object v1
 
-    const/4 v0, 0x0
+    iget-object v2, p0, Lcom/sec/android/fido/uaf/message/tag/AssertionInfo;->operation:Ljava/lang/String;
 
-    goto :goto_1
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :cond_2
-    :goto_0
-    const/4 v0, -0x1
+    move-result-object v1
 
-    :goto_1
-    if-eqz v0, :cond_4
+    const-string v2, ")"
 
-    if-ne v0, v3, :cond_3
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 
     .line 118
+    :cond_0
     sget-short v0, Lcom/sec/android/fido/uaf/message/tag/AssertionInfo;->tag:S
 
     invoke-static {v0}, Lcom/sec/android/fido/uaf/message/util/TlvEncoder;->newEncoder(S)Lcom/sec/android/fido/uaf/message/util/TlvEncoder;
@@ -284,36 +262,8 @@
 
     return-object v0
 
-    .line 124
-    :cond_3
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Unsupported operation("
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/sec/android/fido/uaf/message/tag/AssertionInfo;->operation:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, ")"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
     .line 111
-    :cond_4
+    :cond_1
     sget-short v0, Lcom/sec/android/fido/uaf/message/tag/AssertionInfo;->tag:S
 
     invoke-static {v0}, Lcom/sec/android/fido/uaf/message/util/TlvEncoder;->newEncoder(S)Lcom/sec/android/fido/uaf/message/util/TlvEncoder;

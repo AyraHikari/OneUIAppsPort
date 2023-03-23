@@ -37,6 +37,14 @@
 
 .method public static getField_mSelectedPosition(Landroid/widget/AdapterView;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "adapterView"
+        }
+    .end annotation
 
     .line 53
     sget-object v0, Landroidx/reflect/widget/SeslAdapterViewReflector;->mClass:Ljava/lang/Class;
@@ -76,9 +84,19 @@
 
 .method public static semSetBottomColor(Landroid/widget/AdapterView;I)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "adapterView",
+            "color"
+        }
+    .end annotation
 
     .line 32
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1d
 
@@ -90,7 +108,7 @@
 
     .line 34
     :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 

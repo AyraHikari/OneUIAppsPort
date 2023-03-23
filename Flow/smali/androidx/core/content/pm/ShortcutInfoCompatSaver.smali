@@ -1,13 +1,30 @@
-.class public Landroidx/core/content/pm/ShortcutInfoCompatSaver;
+.class public abstract Landroidx/core/content/pm/ShortcutInfoCompatSaver;
 .super Ljava/lang/Object;
 .source "ShortcutInfoCompatSaver.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/content/pm/ShortcutInfoCompatSaver$NoopImpl;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 38
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,31 +32,24 @@
 
 
 # virtual methods
-.method public addShortcuts(Ljava/util/List;)Lcom/google/common/util/concurrent/ListenableFuture;
-    .locals 1
+.method public abstract addShortcuts(Ljava/util/List;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "shortcuts"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
             "Landroidx/core/content/pm/ShortcutInfoCompat;",
-            ">;)",
-            "Lcom/google/common/util/concurrent/ListenableFuture<",
-            "Ljava/lang/Void;",
-            ">;"
+            ">;)TT;"
         }
     .end annotation
-
-    .line 41
-    invoke-static {}, Landroidx/concurrent/futures/ResolvableFuture;->create()Landroidx/concurrent/futures/ResolvableFuture;
-
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    .line 42
-    invoke-virtual {p1, v0}, Landroidx/concurrent/futures/ResolvableFuture;->set(Ljava/lang/Object;)Z
-
-    return-object p1
 .end method
 
 .method public getShortcuts()Ljava/util/List;
@@ -59,7 +69,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 48
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -67,53 +77,30 @@
     return-object v0
 .end method
 
-.method public removeAllShortcuts()Lcom/google/common/util/concurrent/ListenableFuture;
-    .locals 2
+.method public abstract removeAllShortcuts()Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Lcom/google/common/util/concurrent/ListenableFuture<",
-            "Ljava/lang/Void;",
-            ">;"
+            "()TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract removeShortcuts(Ljava/util/List;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "shortcutIds"
         }
     .end annotation
 
-    .line 55
-    invoke-static {}, Landroidx/concurrent/futures/ResolvableFuture;->create()Landroidx/concurrent/futures/ResolvableFuture;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    .line 56
-    invoke-virtual {v0, v1}, Landroidx/concurrent/futures/ResolvableFuture;->set(Ljava/lang/Object;)Z
-
-    return-object v0
-.end method
-
-.method public removeShortcuts(Ljava/util/List;)Lcom/google/common/util/concurrent/ListenableFuture;
-    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
             "Ljava/lang/String;",
-            ">;)",
-            "Lcom/google/common/util/concurrent/ListenableFuture<",
-            "Ljava/lang/Void;",
-            ">;"
+            ">;)TT;"
         }
     .end annotation
-
-    .line 48
-    invoke-static {}, Landroidx/concurrent/futures/ResolvableFuture;->create()Landroidx/concurrent/futures/ResolvableFuture;
-
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    .line 49
-    invoke-virtual {p1, v0}, Landroidx/concurrent/futures/ResolvableFuture;->set(Ljava/lang/Object;)Z
-
-    return-object p1
 .end method

@@ -37,6 +37,14 @@
 
 .method public static getHCTStrokeWidth(Landroid/graphics/Paint;)F
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "paint"
+        }
+    .end annotation
 
     .line 26
     sget-object v0, Landroidx/reflect/graphics/SeslPaintReflector;->mClass:Ljava/lang/Class;

@@ -339,8 +339,6 @@
     .line 430
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/google/api/client/auth/oauth2/Credential;->expirationTimeMilliseconds:Ljava/lang/Long;
-
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0

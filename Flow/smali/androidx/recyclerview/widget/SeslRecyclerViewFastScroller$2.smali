@@ -22,7 +22,7 @@
 .method constructor <init>(Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;)V
     .locals 0
 
-    .line 272
+    .line 284
     iput-object p1, p0, Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$2;->this$0:Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,7 +35,7 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 275
+    .line 287
     iget-object p1, p0, Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$2;->this$0:Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;
 
     invoke-static {p1}, Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;->access$100(Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;)Z

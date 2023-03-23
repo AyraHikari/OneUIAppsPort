@@ -41,7 +41,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 13
 
     .line 40
     new-instance v0, Lcom/google/common/base/CaseFormat$1;
@@ -63,99 +63,91 @@
     sput-object v0, Lcom/google/common/base/CaseFormat;->LOWER_HYPHEN:Lcom/google/common/base/CaseFormat;
 
     .line 58
-    new-instance v0, Lcom/google/common/base/CaseFormat$2;
+    new-instance v1, Lcom/google/common/base/CaseFormat$2;
 
-    const/16 v1, 0x5f
+    const/16 v2, 0x5f
 
-    invoke-static {v1}, Lcom/google/common/base/CharMatcher;->is(C)Lcom/google/common/base/CharMatcher;
+    invoke-static {v2}, Lcom/google/common/base/CharMatcher;->is(C)Lcom/google/common/base/CharMatcher;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string v4, "LOWER_UNDERSCORE"
+    const-string v5, "LOWER_UNDERSCORE"
 
-    const/4 v5, 0x1
+    const/4 v6, 0x1
 
-    const-string v6, "_"
+    const-string v7, "_"
 
-    invoke-direct {v0, v4, v5, v2, v6}, Lcom/google/common/base/CaseFormat$2;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
+    invoke-direct {v1, v5, v6, v4, v7}, Lcom/google/common/base/CaseFormat$2;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/common/base/CaseFormat;->LOWER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
+    sput-object v1, Lcom/google/common/base/CaseFormat;->LOWER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
 
     .line 76
-    new-instance v0, Lcom/google/common/base/CaseFormat$3;
+    new-instance v4, Lcom/google/common/base/CaseFormat$3;
 
-    const/16 v2, 0x41
+    const/16 v5, 0x41
 
-    const/16 v4, 0x5a
+    const/16 v8, 0x5a
 
-    invoke-static {v2, v4}, Lcom/google/common/base/CharMatcher;->inRange(CC)Lcom/google/common/base/CharMatcher;
+    invoke-static {v5, v8}, Lcom/google/common/base/CharMatcher;->inRange(CC)Lcom/google/common/base/CharMatcher;
 
-    move-result-object v7
+    move-result-object v9
 
-    const-string v8, "LOWER_CAMEL"
+    const-string v10, "LOWER_CAMEL"
 
-    const/4 v9, 0x2
+    const/4 v11, 0x2
 
-    const-string v10, ""
+    const-string v12, ""
 
-    invoke-direct {v0, v8, v9, v7, v10}, Lcom/google/common/base/CaseFormat$3;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
+    invoke-direct {v4, v10, v11, v9, v12}, Lcom/google/common/base/CaseFormat$3;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/common/base/CaseFormat;->LOWER_CAMEL:Lcom/google/common/base/CaseFormat;
+    sput-object v4, Lcom/google/common/base/CaseFormat;->LOWER_CAMEL:Lcom/google/common/base/CaseFormat;
 
     .line 85
-    new-instance v0, Lcom/google/common/base/CaseFormat$4;
+    new-instance v9, Lcom/google/common/base/CaseFormat$4;
 
-    invoke-static {v2, v4}, Lcom/google/common/base/CharMatcher;->inRange(CC)Lcom/google/common/base/CharMatcher;
+    invoke-static {v5, v8}, Lcom/google/common/base/CharMatcher;->inRange(CC)Lcom/google/common/base/CharMatcher;
+
+    move-result-object v5
+
+    const-string v8, "UPPER_CAMEL"
+
+    const/4 v10, 0x3
+
+    invoke-direct {v9, v8, v10, v5, v12}, Lcom/google/common/base/CaseFormat$4;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
+
+    sput-object v9, Lcom/google/common/base/CaseFormat;->UPPER_CAMEL:Lcom/google/common/base/CaseFormat;
+
+    .line 94
+    new-instance v5, Lcom/google/common/base/CaseFormat$5;
+
+    invoke-static {v2}, Lcom/google/common/base/CharMatcher;->is(C)Lcom/google/common/base/CharMatcher;
 
     move-result-object v2
 
-    const-string v4, "UPPER_CAMEL"
+    const-string v8, "UPPER_UNDERSCORE"
 
-    const/4 v7, 0x3
+    const/4 v12, 0x4
 
-    invoke-direct {v0, v4, v7, v2, v10}, Lcom/google/common/base/CaseFormat$4;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
+    invoke-direct {v5, v8, v12, v2, v7}, Lcom/google/common/base/CaseFormat$5;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/common/base/CaseFormat;->UPPER_CAMEL:Lcom/google/common/base/CaseFormat;
+    sput-object v5, Lcom/google/common/base/CaseFormat;->UPPER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
 
-    .line 94
-    new-instance v0, Lcom/google/common/base/CaseFormat$5;
+    const/4 v2, 0x5
 
-    invoke-static {v1}, Lcom/google/common/base/CharMatcher;->is(C)Lcom/google/common/base/CharMatcher;
+    new-array v2, v2, [Lcom/google/common/base/CaseFormat;
 
-    move-result-object v1
+    aput-object v0, v2, v3
 
-    const-string v2, "UPPER_UNDERSCORE"
+    aput-object v1, v2, v6
 
-    const/4 v4, 0x4
+    aput-object v4, v2, v11
 
-    invoke-direct {v0, v2, v4, v1, v6}, Lcom/google/common/base/CaseFormat$5;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
+    aput-object v9, v2, v10
 
-    sput-object v0, Lcom/google/common/base/CaseFormat;->UPPER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
-
-    const/4 v1, 0x5
-
-    new-array v1, v1, [Lcom/google/common/base/CaseFormat;
+    aput-object v5, v2, v12
 
     .line 35
-    sget-object v2, Lcom/google/common/base/CaseFormat;->LOWER_HYPHEN:Lcom/google/common/base/CaseFormat;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/common/base/CaseFormat;->LOWER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/google/common/base/CaseFormat;->LOWER_CAMEL:Lcom/google/common/base/CaseFormat;
-
-    aput-object v2, v1, v9
-
-    sget-object v2, Lcom/google/common/base/CaseFormat;->UPPER_CAMEL:Lcom/google/common/base/CaseFormat;
-
-    aput-object v2, v1, v7
-
-    aput-object v0, v1, v4
-
-    sput-object v1, Lcom/google/common/base/CaseFormat;->$VALUES:[Lcom/google/common/base/CaseFormat;
+    sput-object v2, Lcom/google/common/base/CaseFormat;->$VALUES:[Lcom/google/common/base/CaseFormat;
 
     return-void
 .end method
@@ -236,6 +228,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
@@ -248,7 +242,9 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -418,7 +414,9 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 

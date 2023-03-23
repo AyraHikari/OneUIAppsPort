@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 142
+    .line 146
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onWidiConnected(Landroid/net/wifi/p2p/WifiP2pInfo;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "wifiP2pInfo"
+        }
+    .end annotation
 
-    .line 159
+    .line 163
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p1
@@ -57,7 +73,7 @@
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
-    .line 160
+    .line 164
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->access$000(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Landroid/net/wifi/p2p/WifiP2pGroup;
 
     move-result-object v2
@@ -70,7 +86,7 @@
 
     aput-object v2, v1, v3
 
-    .line 159
+    .line 163
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->execute(Ljava/lang/Class;[Ljava/lang/Object;)V
 
     return-void
@@ -79,7 +95,7 @@
 .method public onWidiConnectionClosed()V
     .locals 5
 
-    .line 173
+    .line 177
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v0
@@ -103,8 +119,16 @@
 
 .method public onWidiConnectionFailed(Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceAddress"
+        }
+    .end annotation
 
-    .line 166
+    .line 170
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p1
@@ -128,8 +152,16 @@
 
 .method public onWidiDiscoveryStarted(Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceAddress"
+        }
+    .end annotation
 
-    .line 145
+    .line 149
     new-instance p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
@@ -140,7 +172,7 @@
 
     invoke-direct {p1, v1, v0}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
 
-    .line 147
+    .line 151
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object v0
@@ -151,14 +183,14 @@
 
     iput-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->RESULT:Ljava/lang/String;
 
-    .line 150
+    .line 154
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->sendMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
 
-    .line 152
+    .line 156
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p1

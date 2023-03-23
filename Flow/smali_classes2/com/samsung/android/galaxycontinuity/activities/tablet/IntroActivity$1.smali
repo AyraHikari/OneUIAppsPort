@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 76
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     .line 79
     new-instance p1, Landroid/content/Intent;

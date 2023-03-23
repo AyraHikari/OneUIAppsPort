@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract checkRtl(Ljava/lang/CharSequence;II)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cs",
+            "start",
+            "count"
+        }
+    .end annotation
 .end method

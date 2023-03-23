@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">Телефоннан қолданба қосу</string>
     <string name="add_your_bio_first_dialog_desc">Samsung Flow жүйесіне кіруге планшеттің биометриялық деректерін пайдалану үшін саусақ іздері мен көз қабықтарын планшетте тіркеп, әрекетті қайталаңыз.</string>
     <string name="add_your_bio_first_dialog_title">Алдымен биометриялық деректерді қосу</string>
+    <string name="advanced_features">Қосымша мүмкіндіктер</string>
     <string name="alarm">Дабыл</string>
     <string name="all_apps">Барлық қолданбалар</string>
     <string name="allow_appear_on_top">Жоғарыда көрсетуге рұқсат беру</string>
     <string name="allow_appear_on_top_desc">Компьютеріңізде немесе планшетіңізде пайдаланып жүрген басқа қолданбалардың жоғарғы жағында қалқымалы терезелер немесе хабарландырулар сияқты заттарды көрсету үшін, Параметрлерде Жоғарыда көрсетуге рұқсат беруіңіз керек.</string>
+    <string name="allow_location_settings">Құрылғылардағы Орын параметрлеріне қатынасуға рұқсат беру</string>
     <string name="and_more">%1$s және тағы %2$d</string>
+    <string name="app_info">Қолданба ақпараты</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">Тіркеу</string>
     <string name="attach_image">Сурет</string>
     <string name="attach_my_files">Менің файлдарым</string>
     <string name="attach_sound">Аудио</string>
@@ -38,20 +43,29 @@
 қолданбасындағы
 Smart View"</string>
     <string name="bluetooth_connection_failed_text">Телефоныңызда Samsung Flow қолданбасы қосулы екеніне көз жеткізіңіз.</string>
+    <string name="bt_or_nfc_turned_on">Samsung Flow қызметін пайдалану үшін, %s қосылады.</string>
+    <string name="btn_desc_cancel">Бас тарту</string>
+    <string name="btn_desc_failed">Сәтсіз</string>
+    <string name="can_not_use">%s картасын пайдалану мүмкін емес</string>
+    <string name="can_not_use_at_same_time">%1$s және %2$s бір уақытта қосу мүмкін емес. %3$s өшіріледі.</string>
     <string name="cancel_all">Барлығын тоқтату</string>
     <string name="cant_share_files">Файлдарды бөлісу мүмкін емес</string>
     <string name="cant_use_mobile_hotspot_case_1">Желімен бірдеңе дұрыс болмады. Ұялы жедел нүктені телефоныңызда тексеріп, әрекетті қайталаңыз.</string>
     <string name="cant_use_mobile_hotspot_case_2">Желімен бірдеңе дұрыс болмады. Жоспарыңыз Ұялы жедел нүктеге қолдау көрсететінін көру үшін, қызмет жеткізушісіне хабарласыңыз.</string>
     <string name="cant_use_mobile_hotspot_title">Ұялы жедел нүктені пайдалану мүмкін емес</string>
-    <string name="cant_use_this_function_in_multi_window">Көп терезе көрінісінде бұл функцияны пайдалану мүмкін емес.</string>
-    <string name="chan_mkt">Маркетинг</string>
-    <string name="chan_ntc">Ескерту</string>
+    <string name="cant_use_this_function_in_multi_window">Бірнеше терезе көрінісінде бұл функцияны пайдалану мүмкін емес.</string>
+    <string name="change_location_settings">Геодер.параметр-н өзгерту</string>
+    <string name="character_counter_content_description">%2$d ішінен %1$d таңба енгізілді</string>
     <string name="checkbox_all">Барлығы</string>
+    <string name="china_network_permission_popup_body">%s қолданбасына желі қосылымдарын пайдалануына рұқсат беру керек пе?</string>
+    <string name="china_network_permission_popup_title">Желі қосылымдарын пайдалану</string>
+    <string name="clipboard">Буфер</string>
     <string name="clipboard_off">Қосылған құрылғылар арасында буфер мазмұнын бөлісуді тоқтату</string>
     <string name="clipboard_on">Қосылған құрылғылар арасында буфер мазмұнын бөлісу</string>
     <string name="close_app">Қолданбаны жабу</string>
     <string name="confirm_pass_key_connecting_to_deivce">%s құрылғысына қосылуда…</string>
-    <string name="connect_help_desc0">Samsung Flow қолданбасын телефоныңызда не сағатыңызда қосыңыз.</string>
+    <string name="confirm_your_phone">Телефонда растау</string>
+    <string name="connect_help_desc0">Телефонда Samsung Flow қосу.</string>
     <string name="connect_help_desc1">Bluetooth немесе Wi-Fi бірдей құрылғыларда қосылғандығына көз жеткізіңіз.</string>
     <string name="connect_help_desc2">Егер Wi-Fi немесе LAN қосылымдарын пайдалансыз, құрылғылардың бірдей желіге қосылғандығына көз жеткізіңіз.</string>
     <string name="connect_help_desc4">Планшетті компьютеріңізге қосуға әрекет жасалып жатпағанына көз жеткізіңіз. Бұған Samsung Flow қызметі қолдау көрсетпейді.</string>
@@ -69,16 +83,18 @@ Smart View"</string>
     <string name="connection_error_register_fail">Тіркелмеді. Қайталап көріңіз.</string>
     <string name="connection_failed">Қосылу мүмкін болмады.</string>
     <string name="connection_goto_permission_setting">%s функциясын пайдалану үшін “Параметрлер” түймесін түртіп, Қолданба ақпараты > Рұқсаттар бөліміне өтіңіз, сосын келесі рұқсаттарды беріңіз:</string>
+    <string name="connection_method_biometrics">Биометрия деректері</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">Samsung Flow қолданбасында биометриялық деректерді пайдалану үшін биометриялық деректеріңізді Параметрлерде тіркеуіңіз керек.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">Биометрияны тіркеу</string>
+    <string name="connection_method_biometrics_required_title">%s қолданбасында биометриялық деректерді пайдалану үшін растау қажет.</string>
+    <string name="connection_method_manual">Қолмен</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">%s құрылғысына биометриялық деректеріңізбен Samsung Pass арқылы автоматты түрде қайта қосылыңыз.</string>
-    <string name="connection_method_simple_connection">Қарапайым қосылу</string>
-    <string name="connection_method_simple_connection_desc">Телефоныңызда %s құрылғысына растаусыз автоматты түрде қайта қосылыңыз.</string>
-    <string name="connection_method_simple_connection_desc_tab">Планшетіңізде %s құрылғысына растаусыз автоматты түрде қайта қосылыңыз.</string>
+    <string name="connection_method_simple_connection">Авто байланыс</string>
     <string name="connection_method_tablet_bio">Планшет биометриялық деректері</string>
-    <string name="connection_method_tablet_bio_desc">Планшетіңізде %s құрылғысына биометриялық деректеріңізбен автоматты түрде қайта қосылыңыз.</string>
     <string name="connection_request_noti_accept">Қабылдау</string>
     <string name="connection_request_noti_desc">%s құрылғысына телефоныңызға қосылуына рұқсат ету керек пе?</string>
     <string name="content_shared_via">Мазмұн %s арқылы бөлісілді</string>
+    <string name="continue_apps_on_other_device">Қолданба-ы басқа құрыл-а жалғ-у</string>
     <string name="copied_to_clipboard">Буферге көшірілді.</string>
     <string name="copy_text">Мәтінді көшіру</string>
     <string name="delete_lower">Жою</string>
@@ -90,8 +106,11 @@ Smart View"</string>
     <string name="device_not_secured_desc_for_bio">Биометриялық деректерді планшетте пайдалану үшін, экран құлпын телефонда орнатуыңыз керек.</string>
     <string name="device_not_secured_desc_for_watch">Биометриялық деректерді сағатта пайдалану үшін, экран құлпын телефонда орнатуыңыз керек.</string>
     <string name="device_status_connected">Қосылды</string>
+    <string name="device_status_connected_with">%s құрылғысымен қосылған.</string>
+    <string name="device_status_disconnected">Ажыратылды.</string>
     <string name="device_status_registered">Тіркелді</string>
     <string name="device_storage">Құрылғы жады</string>
+    <string name="dialog_allow">Рұқсат ету</string>
     <string name="dialog_close">Жабу</string>
     <string name="dialog_deny">Бас тарту</string>
     <string name="dialog_desc_turn_off_mirroring">Smart View функциясын өшіру керек пе?</string>
@@ -99,6 +118,7 @@ Smart View"</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_retry">Қайталау</string>
     <string name="dismiss">Қабылдамау</string>
+    <string name="dragndroplist_drag_move">Қазір %d орнында</string>
     <string name="dragndroplist_drag_release">Элемент %d күйіне сүйреп апарылды.</string>
     <string name="dragndroplist_drag_start">%d күйіндегі элементті сүйреу басталды.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d күйіндегі элементті сүйреу мүмкін емес.</string>
@@ -118,41 +138,8 @@ Smart View"</string>
     <string name="flow_main_device_not_secure_dialog_desc">Windows экранының құлпын ашу мүмкіндігін пайдалану үшін, телефоныңызда экранның құлпын орнатуыңыз қажет.</string>
     <string name="flow_main_device_not_secure_dialog_title">Қауіпсіз экран құлпын орнату</string>
     <string name="go_to_settings">Параметрге өту</string>
-    <string name="help_clipboard_desc">"Қосылған планшеттің немесе компьютердің көмегімен буферде мәтінді, веб-мекенжайларды және суреттерді бөлісуіңізге болады.
-
-Бұл функция батарея қуатын тұтынуды арттыруы мүмкін."</string>
-    <string name="help_clipboard_title">Буферді пайдалану</string>
-    <string name="help_connecting_devices_desc_1">Компьютерді немесе планшетті телефоныңызға (%s) Samsung Flow арқылы қосыңыз.</string>
-    <string name="help_connecting_devices_desc_2">Құрылғылардың екеуінде де Bluetooth опциясының қосулы екеніне немесе Wi-Fi не LAN желілері бір желіге қосылғанына көз жеткізіңіз.</string>
-    <string name="help_connecting_devices_desc_2_1">Егер USB кабелін пайдаланып жатсаңыз, оның екі құрылғыға да қосылғанын және қосылған құрылғыда Android 10 немесе одан жоғары нұсқасы орнатылғанына көз жеткізіңіз.</string>
-    <string name="help_connecting_devices_desc_3">Екі құрылғыда да Samsung Flow қолданбасын ашып, компьютерде орнату шеберін орындаңыз.</string>
-    <string name="help_connecting_devices_desc_4">Қосымша ақпарат алу үшін www.samsung.com/samsungflow сайтына өтіңіз.</string>
-    <string name="help_connecting_devices_desc_5">Ең төменгі талаптар</string>
-    <string name="help_connecting_devices_desc_6">Windows компьютері немесе планшеті: Windows 10 Creators Update (v1703) және маусымдық түзету құрастырылымы (15063.413), Bluetooth (Bluetooth LE міндетті емес) және Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Android планшеті: Android Marshmallow немесе одан кейінгі нұсқалар. Қосымша мәліметтер алу үшін “Жиі қойылатын сұрақтар” бөлімін қараңыз.</string>
-    <string name="help_connecting_devices_title">Компьютерлер/планшеттерге қосу</string>
     <string name="help_contact_us">Бізге хабарласыңыз</string>
     <string name="help_install_samsung_flow_title">Құрылғыны Samsung Flow-мен қосу</string>
-    <string name="help_mobile_hotspot_desc">Телефоныңызда Ұялы жедел нүкте қосу немесе өшіру үшін, %s түймесін түртіңіз. Бұл Android 11 немесе одан жоғары нұсқасы бар телефондарда жұмыс істемейді.</string>
-    <string name="help_mobile_hotspot_title">Ұялы жедел нүктені пайдалану</string>
-    <string name="help_noti_sync_desc">"Samsung Flow қолданбасын пайдалану арқылы компьютерді немесе планшетті қосқан кезіңізде телефоныңыздан компьютеріңізде немесе плашетіңізде хабарламаларды көріңіз. Жаңа хабарландырулар қабылданған кезде басқа қолданбалардың хабарларына лезде жауап бере аласыз.
-
-Бұл функция кейбір хабар алмасу қолданбалары үшін қолжетімді болмауы мүмкін.
-
-Қосымша опциялар > Параметрлер > Хабарландыруларды басқару бөліміне өту арқылы Samsung Flow қолданбасында хабарландыруларды басқаруыңызға болады."</string>
-    <string name="help_noti_sync_title">Хабарландыруларды синхрондау</string>
-    <string name="help_sharing_contents_desc_1">Мазмұнды қосылған құрылғылардың арасында оңай бөлісе аласыз.</string>
-    <string name="help_sharing_contents_desc_2">Телефоннан компьютерге не планшетке</string>
-    <string name="help_sharing_contents_desc_3">Браузер сияқты қолданбада бөлісу опциясын тауып алып, Samsung Flow қолданбасын таңдаңыз.</string>
-    <string name="help_sharing_contents_desc_4">Сонымен қатар, файлдарды таңдап, оларды бөлісу үшін Flow журналы қойындысында %s түймесін де түртуге болады.</string>
-    <string name="help_sharing_contents_desc_5">Компьютерден не планшеттен телефонға</string>
-    <string name="help_sharing_contents_desc_6">Браузер сияқты қолданбада бөлісу опциясын тауып алып, Samsung Flow қолданбасын таңдаңыз.</string>
-    <string name="help_sharing_contents_desc_7">Сонымен қатар, файлдарды таңдап, оларды бөлісу үшін Flow журналы қойындысында %s түймесін де түртуге болады немесе файлдарды Samsung Flow қолданбасына сүйреп апарыңыз.</string>
-    <string name="help_sharing_contents_title">Мазмұнды бөлісу</string>
-    <string name="help_smart_view_desc">Телефоныңыздың экранын планшетіңізде немесе компьютеріңізде қайталап көрсету үшін, Smart View белгішесін түртіңіз.</string>
-    <string name="help_smart_view_desc_2">Smart View қызметін пайдалану кезінде жылдам қатынасуға таңдаулы қолданбаларды қосу үшін, жұлдызша белгішесін түртуге болады.</string>
-    <string name="help_smart_view_title">Smart View пайдалану</string>
-    <string name="help_using_multi_device_title">Көп компьютер/планшетті қолдану</string>
     <string name="hotspot_description">Samsung Flow іске қосылған кезде Ұялы жедел нүктесін пайдалану арқылы қосылған құрылғыны Интернетке қосылу нүктесі ретінде қолданыңыз.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">Ұялы жедел нүктені пайдалану үшін Wi-Fi желісін өшіру қажет.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">Wi-Fi желісін өшіру керек пе?</string>
@@ -170,7 +157,7 @@ Smart View"</string>
     <string name="launch_failed_dialog_title">Бұл жедел пернені пайдалану мүмкін емес</string>
     <string name="make_or_get_a_call">Тек телефоныңыздан қоңырау шалып немесе жауап бере аласыз.</string>
     <string name="managde_device_item_deregister_title">Тіркеуден шығу</string>
-    <string name="managde_device_item_gear_auth_desc">Samsung Flow қызметіне сағатыңыз арқылы кіріңіз.</string>
+    <string name="managde_device_item_gear_auth_desc">Samsung Flow қолданбасына сағатыңызбен кіріңіз.</string>
     <string name="managde_device_item_gear_auth_title">Gear</string>
     <string name="managde_device_item_rename_title">Атауын өзгерту</string>
     <string name="manage_device_item_tablet_auth_desc2">Samsung Flow қолданбасына телефонды пайдаланбай-ақ планшетіңіздегі биометриялық деректер арқылы кіріңіз.</string>
@@ -185,7 +172,11 @@ Smart View"</string>
     <string name="menu_do_not_disturb">Мазаламау</string>
     <string name="menu_enable_hotspot">Ұялы жедел нүктеге қосылу</string>
     <string name="menu_favorites">Таңдаулылар</string>
+    <string name="menu_favorites_add">Қосу</string>
+    <string name="menu_favorites_remove">Жою</string>
     <string name="menu_full_screen">Толық көрініс</string>
+    <string name="menu_more">Қосымша</string>
+    <string name="menu_phone_screen">Телефон экраны</string>
     <string name="menu_resolution">Ажыратымдылық</string>
     <string name="menu_resolution_option_high">Жоғары</string>
     <string name="menu_resolution_option_low">Төмен</string>
@@ -231,6 +222,10 @@ Smart View"</string>
     <string name="noti_desc_screenshot_saved">Скриншоттарды көру үшін осы жерді түріңіз.</string>
     <string name="noti_title_screenshot_saved">Скриншот сақталды</string>
     <string name="notices">Ескертулер</string>
+    <string name="notices_last_for_android6_desc">"Бұл – Android 6.0 (Marshmallow) үшін соңғы жаңарту. Операциялық жүйе шектеулеріне байланысты Samsung Flow енді Android 6.0 нұсқасына қолдау көрсетпейді.
+
+Android 6.0 пайдаланушылары әлі де Samsung Flow қолданбасын жаңартусыз пайдалана алады."</string>
+    <string name="notices_last_for_android6_title">Android 6.0 (Marshmallow) үшін қолдау көрсетудің аяқталуы</string>
     <string name="notices_notice">Ескертпе</string>
     <string name="notices_update">Жаңарту</string>
     <string name="notices_update_include">Бағдарламалық жасақтаманы жаңарту мыналарды қамтуы мүмкін:</string>
@@ -255,6 +250,8 @@ Smart View"</string>
     <string name="option_connection_type_wifi">Wi-Fi немесе LAN</string>
     <string name="pc">Компьютер</string>
     <string name="permissions">Шешімдер</string>
+    <string name="permissions_all_files_access">Барлық файлдар қатынасады</string>
+    <string name="permissions_all_files_access_desc">Суреттерді, медианы және файлдарды тасымалдау үшін пайдаланылды.</string>
     <string name="permissions_appear_on_top_desc">Хабарландыруларды басқа қолданбалардың жоғарғы жағында көрсету үшін қолданылады</string>
     <string name="permissions_appear_on_top_title">Хабарландыруларды басқа қолданбалардың үстінде көрсету үшін Samsung Flow қолданбасының Жоғарыда көрсету опциясына қатынасуына рұқсат беру керек пе?</string>
     <string name="permissions_call_log">Қоңырау журналдары</string>
@@ -266,6 +263,8 @@ Smart View"</string>
     <string name="permissions_location_desc">Bluetooth арқылы жақын жердегі Galaxy құрылғыларын іздеу үшін пайдаланылады.</string>
     <string name="permissions_microphone">Микрофон</string>
     <string name="permissions_microphone_desc">Жоғары жиілікті аудионы қабылдау арқылы Galaxy құрылғыларын қосу үшін пайдаланылды.</string>
+    <string name="permissions_nearby_devices">Жақын жердегі құрылғылар</string>
+    <string name="permissions_nearby_devices_desc">Жақын жердегі құрылғыларды табу және тіркелген құрылғыларды бақылау үшін қолданылады</string>
     <string name="permissions_notification_access_desc">Қосылған құрылғыға хабарландырулар жіберу үшін қолданылады</string>
     <string name="permissions_phone">Телефон</string>
     <string name="permissions_phone_desc">Телефон нөміріңізді растау үшін пайдаланылады.</string>
@@ -273,11 +272,11 @@ Smart View"</string>
     <string name="permissions_sms_desc">Мәтіндік хабарларды тасымалдау үшін пайдаланылды.</string>
     <string name="permissions_storage">Жады</string>
     <string name="permissions_storage_desc">Суреттерді, медианы және файлдарды тасымалдау үшін пайдаланылды.</string>
-    <string name="permissions_title">%s қолданбасына рұқсаттар</string>
+    <string name="permissions_title">Samsung Flow осы рұқсаттарды пайдаланады</string>
     <string name="phone">Телефон</string>
     <string name="press_enter_key_to_send">Енгізу перн-н хаба-р жіберіңіз</string>
     <string name="processing">Өңделуде…</string>
-    <string name="receiving_failed">Алынбай қалды.</string>
+    <string name="receiving_failed">Осы хабарды алу кезінде бірдеңе дұрыс болмады.</string>
     <string name="register_failed">Әрекетті кейінірек қайталаңыз.</string>
     <string name="resend">Қайта жіберу</string>
     <string name="rooted_device">Құрылғыңызға қолдау көрсетілді. Қауіпсіздікті сақтау мақсатында %s қолданбасын орнықты құрылғыларда пайдалану мүмкін емес.</string>
@@ -295,11 +294,19 @@ Smart View"</string>
     <string name="select_apps_for_shortcuts">Жедел пернелер үшін қолданбаларды таңдау</string>
     <string name="select_items">Элемент таңдау</string>
     <string name="send">Жіб-у</string>
-    <string name="sending_failed">Жіберу сәтсіз аяқталды.</string>
-    <string name="sesl_action_bar_up_description">Жоғарыға қарай шарлау</string>
+    <string name="sending_failed">Осы хабарды жіберу кезінде бірдеңе дұрыс болмады.</string>
+    <string name="sesl_action_bar_up_description">Жоғары шарлау</string>
     <string name="sesl_action_menu_overflow_badge_description">Жаңа мазмұн қолжетімді</string>
     <string name="sesl_action_menu_overflow_badge_text_n">Ж</string>
     <string name="sesl_action_menu_overflow_description">Қосымша опциялар</string>
+    <string name="sesl_index_assistant_text">Айналдыру үшін екі саусағыңызбен жоғарыға немесе төменге жүргізіп өтіңіз.</string>
+    <string name="sesl_index_scrollbar">Жылжыту тақтасы</string>
+    <string name="sesl_index_section">Бөлім индексі</string>
+    <string name="sesl_index_selected">Таңдалған</string>
+    <string name="sesl_material_badge_description">Жаңа мазмұн қолжетімді</string>
+    <string name="sesl_material_overflow_badge_text_n">Ж</string>
+    <string name="sesl_more_item_label">Басқалар</string>
+    <string name="sesl_preferecne_badge_description">Жаңа хабарландыру</string>
     <string name="sesl_preferencecategory_added_title">Тақырып</string>
     <string name="sesl_search_hint">Іздеу</string>
     <string name="sesl_searchview_description_clear">Іздеу өрісін тазалау</string>
@@ -309,6 +316,10 @@ Smart View"</string>
     <string name="sesl_searchview_description_voice">Дауыспен іздеу</string>
     <string name="sesl_switch_off">Өшірулі</string>
     <string name="sesl_switch_on">Қосулы</string>
+    <string name="sesl_switchbar_off_text">Өшіру</string>
+    <string name="sesl_switchbar_on_text">Қосу</string>
+    <string name="sesl_toolbar_collapse_description">Қайыру</string>
+    <string name="set_screen_lock_title">Экран құлпын орнату</string>
     <string name="settings">Параметрлер</string>
     <string name="settings_auto_hotspot_desc">Қосылған құрылғы Интернетке қосыла алмаған кезде телефоныңызды Интернетке қатынасу нүктесі ретінде пайдаланыңыз.</string>
     <string name="settings_deregister_confirm_dialog_desc">Осы құрылғыға келешекте қосылу үшін оны қайта тіркеуіңіз қажет болады.</string>
@@ -319,12 +330,16 @@ Smart View"</string>
     <string name="settings_gear_unlock_confirm_dialog_title">Gear аутентификациясын қосу керек пе?</string>
     <string name="settings_manage_notifications_desc">Қосылған құрылғыларыңызға хабарландырулар жібере алатын қолданбаларды таңдаңыз.</string>
     <string name="settings_manage_notifications_title">Таңдалған қолданба хабарланд-ы</string>
+    <string name="settings_send_message_desc">Пернетақтадағы “Енгізу” пернесімен хабарлар жіберіңіз.</string>
     <string name="settings_title_auto_bt_on">Автоматты Bluetooth</string>
     <string name="setup_complete_done">Дайын</string>
     <string name="setup_completed">%s құрылғысын орнату аяқталды.</string>
+    <string name="setup_completed_phone">Телефоныңыз енді %s құрылғысына қосылды.</string>
+    <string name="setup_completed_tablet">Планшетіңіз енді %s құрылғысына қосылды.</string>
     <string name="setup_confirm_pin">%2$s құрылғысына қосылу үшін, келесі %1$d секундтың ішінде кілтсөздің дұрыс екенін растаңыз.</string>
     <string name="setup_enter_pin_on_pc">%s құрылғысында PIN кодты енгізіңіз.</string>
     <string name="setup_preparing">Samsung Flow орнатуын компьютерде не планшетте іске қосыңыз.</string>
+    <string name="setup_preparing_detail">Егер сізде Samsung Flow орнатылмаған болса, оны компьютердегі Microsoft Store дүкенінен және планшетіңіздегі Galaxy Store немесе Google Play дүкенінен жүктеп алыңыз.</string>
     <string name="setup_preparing_tab">Samsung Flow орнатуын компьютерде іске қосыңыз</string>
     <string name="setup_tab_complete_title">Орнату процесі аяқталды</string>
     <string name="setup_tab_confirm_passkey_title">Құрылғыларыңызды қосу</string>
@@ -343,6 +358,8 @@ Smart View"</string>
     <string name="setupwizard_welcome_body">Қолданбаның қызметі үшін келесі рұқсаттар қажет. Міндетті емес рұқсаттар үшін қызметтің әдепкі функциясы қосылған, бірақ рұқсат берілмеген.</string>
     <string name="setupwizard_welcome_title">Қолданба рұқсаттары</string>
     <string name="share">Бөлісу</string>
+    <string name="share_item_device_status_connected">Құрылғы қосылды</string>
+    <string name="share_item_device_status_disconnected">Құрылғы ажыратылған</string>
     <string name="shortcut_list_desc">Планшетіңізге қосылу үшін, телефоныңыздан қолданбаны таңдаңыз. Бастапқы экраныңызға осы қолданбаның жедел пернесі қосылады.</string>
     <string name="snooze">Қалғыту</string>
     <string name="special_sensitive_optional_permissions">Арнайы сезімтал міндетті емес рұқсаттар</string>
@@ -352,6 +369,8 @@ Smart View"</string>
     <string name="tablet_bio_auth_confirm_title">Аутентиф. үшін планшет биометриясын қолд.?</string>
     <string name="tap_icon_to_try_iris_auth">Көздің қабығын тануды қайта пайдалану үшін белгішені түртіңіз</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">Smart View қызметі Samsung Flow үшін қосулы кезде “Автоматты бұру” функциясын пайдалану мүмкін емес.</string>
+    <string name="toast_msg_connected">Samsung Flow және %s арасындағы қосылым басталды.</string>
+    <string name="toast_msg_disconnected">Samsung Flow қызметінің %s құрылғысына қосылымы аяқталды.</string>
     <string name="try_again">Әрекетті қайталау</string>
     <string name="turn_on">Қосу</string>
     <string name="turn_on_auto_run">“Автоматты іске қосу” функциясын қосу</string>
@@ -362,15 +381,20 @@ Smart View"</string>
     <string name="unsupported_file">Қолдаусыз файл.</string>
     <string name="update">Жаңарту</string>
     <string name="update_samsung_flow">%s құрылғысына қосылу мүмкін болмады. Samsung Flow қолданбасын ең соңғы нұсқасына жаңартып, әрекетті қайталаңыз.</string>
-    <string name="welcome_button_start">Іске қосу</string>
+    <string name="verification_method">Тексеру әдісі</string>
     <string name="welcome_phone_button_agree">Келісемін</string>
-    <string name="welcome_phone_desc">Компьютерді немесе планшетті телефоныңызға Samsung Flow арқылы қосыңыз.</string>
-    <string name="welcome_phone_desc_terms">Жалғастыру үшін, %s мәлімдемесін оқып шығыңыз және келісіңіз.</string>
-    <string name="welcome_phone_title">%s құрылғысына қош келдіңіз</string>
+    <string name="welcome_phone_desc1">Телефон мен ол қосылған компьютер немесе планшет арасында құжаттарды, суреттерді, бейнелерді және т.б. бөлісіңіз.</string>
+    <string name="welcome_phone_desc2">Компьютерде немесе планшетте телефонның хабарлары мен хабарландыруларын тексеріп, оларға жауап беріңіз.</string>
+    <string name="welcome_phone_desc3">Телефон экранын компьютерде немесе планшетте көріңіз және басқарыңыз.</string>
+    <string name="welcome_phone_desc_terms">Жалғастыру арқылы сіз %s мәлімдемесіне келісесіз.</string>
+    <string name="welcome_phone_title1">Телефонды басқа құрылғыға қосыңыз</string>
+    <string name="welcome_phone_title2">Хабарландыруларды синхрондаңыз</string>
+    <string name="welcome_phone_title3">Телефон экранын бөлісу</string>
     <string name="welcome_tab_desc2">Телефоныңызды Samsung Flow қызметін орнату үшін дайындаңыз.</string>
     <string name="welcome_tab_desc3">Планшетіңізді телефоныңызға Samsung Flow арқылы қосыңыз.</string>
     <string name="wifi_connection_failed_text">Телефоныңызда Samsung Flow қолданбасы қосулы екеніне және бірдей желіге қосылғандығына көз жеткізіңіз.</string>
-    <string name="wifi_enable_warning_msg">Ұялы жедел нүкте қосылған кезде Wi-Fi өшіріледі. Wi-Fi опциясын қосу үшін “Ұялы жедел нүктені” өшіріңіз.</string>
-    <string name="wifi_enable_warning_title">Ұялы жедел нүктені өшіру керек пе?</string>
+    <string name="wifi_enable_warning_msg">Wi-Fi Direct функциясын пайдалану үшін, Ұялы жедел нүктесін өшіру керек.</string>
+    <string name="wifi_enable_warning_title">Ұялы жедел нүктені өшіру</string>
+    <string name="you_can_turn_off">Бұл функцияны %s ішінде өшіруге болады.</string>
     <string name="you_can_turn_off_this_permission">Бұл рұқсатты Параметрлер > Қолданбалар > Қосымша мәзір > Арнайы қатынас бөлімінде өшіруге болады.</string>
 </resources>

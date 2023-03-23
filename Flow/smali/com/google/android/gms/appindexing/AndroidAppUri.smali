@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/appindexing/AndroidAppUri;
 .super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # annotations
@@ -8,33 +9,33 @@
 
 
 # instance fields
-.field private final uri:Landroid/net/Uri;
+.field private final zza:Landroid/net/Uri;
 
 
 # direct methods
 .method private constructor <init>(Landroid/net/Uri;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
     return-void
 .end method
 
 .method public static newAndroidAppUri(Landroid/net/Uri;)Lcom/google/android/gms/appindexing/AndroidAppUri;
     .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 4
     new-instance v0, Lcom/google/android/gms/appindexing/AndroidAppUri;
 
+    .line 1
     invoke-direct {v0, p0}, Lcom/google/android/gms/appindexing/AndroidAppUri;-><init>(Landroid/net/Uri;)V
 
-    .line 6
-    iget-object p0, v0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object p0, v0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 2
     invoke-virtual {p0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object p0
@@ -47,7 +48,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 8
+    .line 4
     invoke-virtual {v0}, Lcom/google/android/gms/appindexing/AndroidAppUri;->getPackageName()Ljava/lang/String;
 
     move-result-object p0
@@ -58,7 +59,7 @@
 
     if-nez p0, :cond_1
 
-    .line 10
+    .line 6
     invoke-virtual {v0}, Lcom/google/android/gms/appindexing/AndroidAppUri;->getPackageName()Ljava/lang/String;
 
     move-result-object p0
@@ -75,9 +76,9 @@
 
     move-result-object p0
 
-    .line 11
-    iget-object v1, v0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v1, v0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 7
     invoke-virtual {v1, p0}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -86,32 +87,34 @@
 
     return-object v0
 
-    .line 12
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "URI is not canonical."
 
+    .line 8
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
 
-    .line 9
+    .line 4
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "Package name is empty."
 
+    .line 5
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
 
-    .line 7
+    .line 2
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "android-app scheme is required."
 
+    .line 3
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
@@ -119,14 +122,20 @@
 
 .method public static newAndroidAppUri(Ljava/lang/String;Landroid/net/Uri;)Lcom/google/android/gms/appindexing/AndroidAppUri;
     .locals 2
+    .param p0    # Ljava/lang/String;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
     .param p1    # Landroid/net/Uri;
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 15
     new-instance v0, Landroid/net/Uri$Builder;
 
+    .line 9
     invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
 
     const-string v1, "android-app"
@@ -139,31 +148,31 @@
 
     move-result-object p0
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_3
 
-    .line 17
+    .line 10
     invoke-virtual {p1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 18
-    invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 19
+    .line 11
+    invoke-virtual {p0, v0}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    .line 12
+    :cond_0
     invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object v0
 
+    if-eqz v0, :cond_1
+
+    .line 13
     invoke-virtual {p0, v0}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 20
-    :cond_0
+    .line 14
+    :cond_1
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -177,7 +186,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -185,13 +194,13 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 21
+    .line 15
     invoke-virtual {p0, v1}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     goto :goto_0
 
-    .line 24
-    :cond_1
+    .line 16
+    :cond_2
     invoke-virtual {p1}, Landroid/net/Uri;->getEncodedQuery()Ljava/lang/String;
 
     move-result-object v0
@@ -200,17 +209,17 @@
 
     move-result-object v0
 
-    .line 25
+    .line 17
     invoke-virtual {p1}, Landroid/net/Uri;->getEncodedFragment()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Landroid/net/Uri$Builder;->encodedFragment(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 26
-    :cond_2
+    :cond_3
     new-instance p1, Lcom/google/android/gms/appindexing/AndroidAppUri;
 
+    .line 18
     invoke-virtual {p0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
     move-result-object p0
@@ -222,20 +231,24 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 44
+    .line 1
     instance-of v0, p1, Lcom/google/android/gms/appindexing/AndroidAppUri;
 
     if-eqz v0, :cond_0
 
-    .line 45
-    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 2
     check-cast p1, Lcom/google/android/gms/appindexing/AndroidAppUri;
 
-    iget-object p1, p1, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object p1, p1, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
     invoke-virtual {v0, p1}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -249,17 +262,17 @@
     return p1
 .end method
 
-.method public final getDeepLinkUri()Landroid/net/Uri;
+.method public getDeepLinkUri()Landroid/net/Uri;
     .locals 4
 
-    .line 29
-    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 1
     invoke-virtual {v0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
 
-    .line 30
+    .line 2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -268,22 +281,22 @@
 
     const/4 v1, 0x0
 
-    .line 31
+    .line 3
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
-    .line 32
     new-instance v2, Landroid/net/Uri$Builder;
 
+    .line 4
     invoke-direct {v2}, Landroid/net/Uri$Builder;-><init>()V
 
-    .line 33
+    .line 5
     invoke-virtual {v2, v1}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 34
+    .line 6
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -292,7 +305,7 @@
 
     if-le v1, v3, :cond_0
 
-    .line 35
+    .line 7
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -303,7 +316,7 @@
 
     const/4 v1, 0x2
 
-    .line 36
+    .line 8
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -311,7 +324,7 @@
 
     if-ge v1, v3, :cond_0
 
-    .line 37
+    .line 9
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -324,26 +337,26 @@
 
     goto :goto_0
 
-    .line 39
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 10
     invoke-virtual {v0}, Landroid/net/Uri;->getEncodedQuery()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Landroid/net/Uri$Builder;->encodedQuery(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 40
-    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 11
     invoke-virtual {v0}, Landroid/net/Uri;->getEncodedFragment()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Landroid/net/Uri$Builder;->encodedFragment(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 41
+    .line 12
     invoke-virtual {v2}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
     move-result-object v0
@@ -356,12 +369,12 @@
     return-object v0
 .end method
 
-.method public final getPackageName()Ljava/lang/String;
+.method public getPackageName()Ljava/lang/String;
     .locals 1
 
-    .line 28
-    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 1
     invoke-virtual {v0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object v0
@@ -369,20 +382,20 @@
     return-object v0
 .end method
 
-.method public final hashCode()I
+.method public hashCode()I
     .locals 3
 
     const/4 v0, 0x1
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 47
-    iget-object v1, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
+    .line 1
     invoke-static {v0}, Lcom/google/android/gms/common/internal/Objects;->hashCode([Ljava/lang/Object;)I
 
     move-result v0
@@ -390,12 +403,12 @@
     return v0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 43
-    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
+    .line 1
     invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -403,11 +416,10 @@
     return-object v0
 .end method
 
-.method public final toUri()Landroid/net/Uri;
+.method public toUri()Landroid/net/Uri;
     .locals 1
 
-    .line 27
-    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->uri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/appindexing/AndroidAppUri;->zza:Landroid/net/Uri;
 
     return-object v0
 .end method

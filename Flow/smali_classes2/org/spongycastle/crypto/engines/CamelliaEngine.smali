@@ -1212,7 +1212,7 @@
 .end method
 
 .method private camelliaF2([I[II)V
-    .locals 10
+    .locals 12
 
     const/4 v0, 0x0
 
@@ -1279,132 +1279,124 @@
     and-int/lit16 v8, v7, 0xff
 
     .line 316
-    aget v6, v6, v8
+    aget v8, v6, v8
 
-    ushr-int/lit8 v8, v7, 0x8
+    ushr-int/lit8 v9, v7, 0x8
 
-    and-int/lit16 v8, v8, 0xff
+    and-int/lit16 v9, v9, 0xff
 
     .line 317
-    aget v2, v2, v8
+    aget v9, v2, v9
 
-    xor-int/2addr v2, v6
+    xor-int/2addr v8, v9
 
-    ushr-int/lit8 v6, v7, 0x10
+    ushr-int/lit8 v9, v7, 0x10
 
-    and-int/lit16 v6, v6, 0xff
+    and-int/lit16 v9, v9, 0xff
 
     .line 318
-    aget v4, v4, v6
+    aget v9, v4, v9
 
-    xor-int/2addr v2, v4
+    xor-int/2addr v8, v9
 
-    ushr-int/lit8 v4, v7, 0x18
+    ushr-int/lit8 v7, v7, 0x18
 
-    and-int/lit16 v4, v4, 0xff
+    and-int/lit16 v7, v7, 0xff
 
     .line 319
-    aget v4, v5, v4
+    aget v7, v5, v7
 
-    xor-int/2addr v2, v4
+    xor-int/2addr v7, v8
 
-    const/4 v4, 0x2
+    const/4 v8, 0x2
 
     .line 321
-    aget v5, p1, v4
+    aget v9, p1, v8
 
-    xor-int/2addr v2, v1
+    xor-int/2addr v7, v1
 
-    xor-int/2addr v5, v2
+    xor-int/2addr v9, v7
 
-    aput v5, p1, v4
+    aput v9, p1, v8
 
-    const/4 v5, 0x3
+    const/4 v9, 0x3
 
     .line 322
-    aget v6, p1, v5
+    aget v10, p1, v9
 
-    const/16 v7, 0x8
+    const/16 v11, 0x8
 
-    invoke-static {v1, v7}, Lorg/spongycastle/crypto/engines/CamelliaEngine;->rightRotate(II)I
+    invoke-static {v1, v11}, Lorg/spongycastle/crypto/engines/CamelliaEngine;->rightRotate(II)I
 
     move-result v1
 
-    xor-int/2addr v1, v2
+    xor-int/2addr v1, v7
 
-    xor-int/2addr v1, v6
+    xor-int/2addr v1, v10
 
-    aput v1, p1, v5
+    aput v1, p1, v9
 
     .line 324
-    aget v1, p1, v4
+    aget v1, p1, v8
 
-    add-int/lit8 v2, p3, 0x2
+    add-int/lit8 v7, p3, 0x2
 
-    aget v2, p2, v2
+    aget v7, p2, v7
 
-    xor-int/2addr v1, v2
+    xor-int/2addr v1, v7
+
+    and-int/lit16 v7, v1, 0xff
 
     .line 325
-    sget-object v2, Lorg/spongycastle/crypto/engines/CamelliaEngine;->SBOX4_4404:[I
-
-    and-int/lit16 v4, v1, 0xff
-
-    aget v4, v2, v4
-
-    .line 326
-    sget-object v6, Lorg/spongycastle/crypto/engines/CamelliaEngine;->SBOX3_3033:[I
+    aget v7, v2, v7
 
     ushr-int/lit8 v8, v1, 0x8
 
     and-int/lit16 v8, v8, 0xff
 
-    aget v8, v6, v8
+    .line 326
+    aget v8, v4, v8
 
-    xor-int/2addr v4, v8
+    xor-int/2addr v7, v8
+
+    ushr-int/lit8 v8, v1, 0x10
+
+    and-int/lit16 v8, v8, 0xff
 
     .line 327
-    sget-object v8, Lorg/spongycastle/crypto/engines/CamelliaEngine;->SBOX2_0222:[I
+    aget v8, v5, v8
 
-    ushr-int/lit8 v9, v1, 0x10
-
-    and-int/lit16 v9, v9, 0xff
-
-    aget v9, v8, v9
-
-    xor-int/2addr v4, v9
-
-    .line 328
-    sget-object v9, Lorg/spongycastle/crypto/engines/CamelliaEngine;->SBOX1_1110:[I
+    xor-int/2addr v7, v8
 
     ushr-int/lit8 v1, v1, 0x18
 
     and-int/lit16 v1, v1, 0xff
 
-    aget v1, v9, v1
+    .line 328
+    aget v1, v6, v1
 
-    xor-int/2addr v1, v4
+    xor-int/2addr v1, v7
 
     .line 329
-    aget v4, p1, v5
+    aget v7, p1, v9
 
-    add-int/2addr p3, v5
+    add-int/2addr p3, v9
 
     aget p2, p2, p3
 
-    xor-int/2addr p2, v4
+    xor-int/2addr p2, v7
 
     and-int/lit16 p3, p2, 0xff
 
     .line 330
-    aget p3, v9, p3
+    aget p3, v6, p3
 
-    ushr-int/lit8 v4, p2, 0x8
+    ushr-int/lit8 v6, p2, 0x8
 
-    and-int/lit16 v4, v4, 0xff
+    and-int/lit16 v6, v6, 0xff
 
     .line 331
-    aget v2, v2, v4
+    aget v2, v2, v6
 
     xor-int/2addr p3, v2
 
@@ -1413,7 +1405,7 @@
     and-int/lit16 v2, v2, 0xff
 
     .line 332
-    aget v2, v6, v2
+    aget v2, v4, v2
 
     xor-int/2addr p3, v2
 
@@ -1422,7 +1414,7 @@
     and-int/lit16 p2, p2, 0xff
 
     .line 333
-    aget p2, v8, p2
+    aget p2, v5, p2
 
     xor-int/2addr p2, p3
 
@@ -1438,7 +1430,7 @@
     .line 336
     aget p3, p1, v3
 
-    invoke-static {v1, v7}, Lorg/spongycastle/crypto/engines/CamelliaEngine;->rightRotate(II)I
+    invoke-static {v1, v11}, Lorg/spongycastle/crypto/engines/CamelliaEngine;->rightRotate(II)I
 
     move-result v0
 

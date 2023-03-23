@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/status_bar_bg_color_white" android:padding="@dimen/manage_home_list_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/manage_home_list_margin" android:foreground="@drawable/rounded_corner"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <include android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/list_item_thumbnail_margin_start" layout="@layout/list_item_checkbox" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/home_list_item_text1" android:id="@id/group_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/list_item_thumbnail_margin_start" />
+        <ImageView android:id="@id/reorder" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_tw_list_icon_reorder" />
+    </LinearLayout>
+    <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/group_member" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="character_counter_content_description">DREAM_IDLE_TBOPT_P1SD_OUT_OF_P2SD_CHARACTERS</string>
+    <string name="dragndroplist_drag_release">IDS_COM_POP_ITEM_DROPPED_INTO_POSITION_PD_TTS</string>
+    <string name="dragndroplist_drag_start">IDS_COM_POP_STARTED_DRAGGING_ITEM_AT_POSITION_PD_TTS</string>
+    <string name="dragndroplist_item_cannot_be_dragged">IDS_COM_POP_ITEM_AT_POSITION_PD_CANNOT_BE_DRAGGED_TTS</string>
+    <string name="sesl_action_bar_up_description">IDS_EMAIL_BODY_NAVIGATE_UP_T_TTS</string>
+    <string name="sesl_action_menu_overflow_badge_description">IDS_BR_TBOPT_NEW_CONTENT_AVAILABLE</string>
+    <string name="sesl_action_menu_overflow_badge_text_n">DREAM_IDLE_OPT_N_M_NEW_ABB</string>
+    <string name="sesl_action_menu_overflow_description">IDS_MF_OPT_MORE_OPTIONS</string>
+    <string name="sesl_material_badge_description">IDS_BR_TBOPT_NEW_CONTENT_AVAILABLE</string>
+    <string name="sesl_material_overflow_badge_text_n">DREAM_IDLE_OPT_N_M_NEW_ABB</string>
+    <string name="sesl_more_item_label">IDS_TTS_BODY_MORE</string>
+    <string name="sesl_preferencecategory_added_title">MIDS_IS_OPT_HEADER_T_TTS</string>
+    <string name="sesl_search_hint">IDS_MSG_OPT_SEARCH</string>
+    <string name="sesl_searchview_description_clear">DREAM_IDLE_OPT_CLEAR_SEARCH_FIELD</string>
+    <string name="sesl_searchview_description_query">IDS_COM_BODY_SEARCH_QUERY</string>
+    <string name="sesl_searchview_description_search">IDS_MSG_OPT_SEARCH</string>
+    <string name="sesl_searchview_description_submit">IDS_COM_BODY_SUBMIT_QUERY</string>
+    <string name="sesl_searchview_description_voice">IDS_HEALTH_HEADER_VOICE_SEARCH</string>
+    <string name="sesl_switch_off">DREAM_ACCS_TBOPT_OFF_M_STATUS</string>
+    <string name="sesl_switch_on">DREAM_ACCS_TBOPT_ON_M_STATUS</string>
+    <string name="sesl_switchbar_off_text">IDS_ST_BUTTON_OFF_ABB_M_DISABLED</string>
+    <string name="sesl_switchbar_on_text">IDS_ST_BUTTON_ON_ABB_M_ENABLED</string>
+    <string name="sesl_toolbar_collapse_description">DREAM_HEALTH_OPT_COLLAPSE_M_DISPLAY</string>
+</resources>

@@ -3,8 +3,8 @@
 .source "OnBackPressedDispatcher.java"
 
 # interfaces
-.implements Landroidx/lifecycle/LifecycleEventObserver;
-.implements Landroidx/activity/Cancellable;
+.implements Landroidx/lifecycle/t;
+.implements Landroidx/activity/a;
 
 
 # annotations
@@ -13,38 +13,38 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x1
     name = "LifecycleOnBackPressedCancellable"
 .end annotation
 
 
 # instance fields
-.field private mCurrentCancellable:Landroidx/activity/Cancellable;
+.field public final h:Landroidx/lifecycle/o;
 
-.field private final mLifecycle:Landroidx/lifecycle/Lifecycle;
+.field public final i:Landroidx/activity/e;
 
-.field private final mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
+.field public j:Landroidx/activity/a;
 
-.field final synthetic this$0:Landroidx/activity/OnBackPressedDispatcher;
+.field public final synthetic k:Landroidx/activity/OnBackPressedDispatcher;
 
 
 # direct methods
-.method constructor <init>(Landroidx/activity/OnBackPressedDispatcher;Landroidx/lifecycle/Lifecycle;Landroidx/activity/OnBackPressedCallback;)V
+.method public constructor <init>(Landroidx/activity/OnBackPressedDispatcher;Landroidx/lifecycle/o;Landroidx/activity/e;)V
     .locals 0
 
-    .line 223
-    iput-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->this$0:Landroidx/activity/OnBackPressedDispatcher;
+    .line 1
+    iput-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->k:Landroidx/activity/OnBackPressedDispatcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 224
-    iput-object p2, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mLifecycle:Landroidx/lifecycle/Lifecycle;
+    .line 2
+    iput-object p2, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->h:Landroidx/lifecycle/o;
 
-    .line 225
-    iput-object p3, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
+    .line 3
+    iput-object p3, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->i:Landroidx/activity/e;
 
-    .line 226
-    invoke-virtual {p2, p0}, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
+    .line 4
+    invoke-virtual {p2, p0}, Landroidx/lifecycle/o;->a(Landroidx/lifecycle/v;)V
 
     return-void
 .end method
@@ -54,77 +54,77 @@
 .method public cancel()V
     .locals 1
 
-    .line 246
-    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mLifecycle:Landroidx/lifecycle/Lifecycle;
+    .line 1
+    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->h:Landroidx/lifecycle/o;
 
-    invoke-virtual {v0, p0}, Landroidx/lifecycle/Lifecycle;->removeObserver(Landroidx/lifecycle/LifecycleObserver;)V
+    invoke-virtual {v0, p0}, Landroidx/lifecycle/o;->c(Landroidx/lifecycle/v;)V
 
-    .line 247
-    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
+    .line 2
+    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->i:Landroidx/activity/e;
 
-    invoke-virtual {v0, p0}, Landroidx/activity/OnBackPressedCallback;->removeCancellable(Landroidx/activity/Cancellable;)V
+    invoke-virtual {v0, p0}, Landroidx/activity/e;->e(Landroidx/activity/a;)V
 
-    .line 248
-    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mCurrentCancellable:Landroidx/activity/Cancellable;
+    .line 3
+    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->j:Landroidx/activity/a;
 
     if-eqz v0, :cond_0
 
-    .line 249
-    invoke-interface {v0}, Landroidx/activity/Cancellable;->cancel()V
+    .line 4
+    invoke-interface {v0}, Landroidx/activity/a;->cancel()V
 
     const/4 v0, 0x0
 
-    .line 250
-    iput-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mCurrentCancellable:Landroidx/activity/Cancellable;
+    .line 5
+    iput-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->j:Landroidx/activity/a;
 
     :cond_0
     return-void
 .end method
 
-.method public onStateChanged(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+.method public g(Landroidx/lifecycle/w;Landroidx/lifecycle/o$b;)V
     .locals 0
 
-    .line 232
-    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
+    .line 1
+    sget-object p1, Landroidx/lifecycle/o$b;->ON_START:Landroidx/lifecycle/o$b;
 
     if-ne p2, p1, :cond_0
 
-    .line 233
-    iget-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->this$0:Landroidx/activity/OnBackPressedDispatcher;
+    .line 2
+    iget-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->k:Landroidx/activity/OnBackPressedDispatcher;
 
-    iget-object p2, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
+    iget-object p2, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->i:Landroidx/activity/e;
 
-    invoke-virtual {p1, p2}, Landroidx/activity/OnBackPressedDispatcher;->addCancellableCallback(Landroidx/activity/OnBackPressedCallback;)Landroidx/activity/Cancellable;
+    invoke-virtual {p1, p2}, Landroidx/activity/OnBackPressedDispatcher;->d(Landroidx/activity/e;)Landroidx/activity/a;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mCurrentCancellable:Landroidx/activity/Cancellable;
+    iput-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->j:Landroidx/activity/a;
 
     goto :goto_0
 
-    .line 234
+    .line 3
     :cond_0
-    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
+    sget-object p1, Landroidx/lifecycle/o$b;->ON_STOP:Landroidx/lifecycle/o$b;
 
     if-ne p2, p1, :cond_1
 
-    .line 236
-    iget-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->mCurrentCancellable:Landroidx/activity/Cancellable;
+    .line 4
+    iget-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->j:Landroidx/activity/a;
 
     if-eqz p1, :cond_2
 
-    .line 237
-    invoke-interface {p1}, Landroidx/activity/Cancellable;->cancel()V
+    .line 5
+    invoke-interface {p1}, Landroidx/activity/a;->cancel()V
 
     goto :goto_0
 
-    .line 239
+    .line 6
     :cond_1
-    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
+    sget-object p1, Landroidx/lifecycle/o$b;->ON_DESTROY:Landroidx/lifecycle/o$b;
 
     if-ne p2, p1, :cond_2
 
-    .line 240
+    .line 7
     invoke-virtual {p0}, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->cancel()V
 
     :cond_2

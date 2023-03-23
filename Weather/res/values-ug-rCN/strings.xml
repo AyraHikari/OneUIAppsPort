@@ -33,6 +33,7 @@
     <string name="air_quality">ھاۋا سۈپىتى</string>
     <string name="air_quality_next_tts">كېيىنكى كۈندىلىك ھاۋا سۈپىتى مەلۇماتى</string>
     <string name="air_quality_previous_tts">بالدۇرقى كۈندىلىك ھاۋا سۈپىتى مەلۇماتى</string>
+    <string name="alert_title">恶劣天气预警</string>
     <string name="all_added_cities">قوشۇلغان بارلىق شەھەر</string>
     <string name="allow">允许</string>
     <string name="allow_permission_in_settings">بۇ ئىقتىدارنى ئىشلىتىش ئۈچۈن تەڭشەكتىن ئىجازەت بېرىشىڭىز كېرەك.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">مەشغۇلاتنى قوللىمايدۇ.</string>
     <string name="apply_daylight_saving_time">يازلىق ۋاقىت قوللىنامسىز؟</string>
     <string name="as_possible_after_verification">دوكلات يوللاندى. شەھەر نامى دەلىللەنگەن ھامان ئۆزگەرتىلىدۇ.</string>
+    <string name="auto_refresh_on_screen_description">每小时自动刷新一次天气信息。启用此选项后，您将无法手动刷新。</string>
+    <string name="auto_refresh_on_the_go">随时随地自动刷新</string>
+    <string name="auto_refresh_on_the_go_advanced">高级</string>
+    <string name="auto_refresh_on_the_go_description">在开车、骑自行车、跑步或步行时，获取更频繁的天气更新。开启此设置后，您无法手动刷新。</string>
+    <string name="auto_refresh_on_the_go_simple_description">在开车、骑自行车、跑步或步行时，获取更频繁的天气更新。</string>
     <string name="btn_report">دوكلات</string>
     <string name="button_finish">تۈگىتىش</string>
     <string name="button_tts">كۇنۇپكا</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">قوش بېسىپ، تەپسىلاتىنى كۆرۈڭ.</string>
     <string name="china">جۇڭگو</string>
     <string name="cities_button">شەھەر</string>
+    <string name="city_added">城市已添加</string>
     <string name="city_list_text">شەھەر</string>
     <string name="clear">تازىلاش</string>
     <string name="clear_then_cloudy">ئوچۇن ئاندىن بۇلۇتلۇق</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">بۇيۇم %d ئورۇنغا تاشلاندى.</string>
     <string name="dragndroplist_drag_start">%d ئورۇندىكى بۇيۇمنى سۆرەشكە باشلىدى.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d ئورۇندىكى بۇيۇمنى سۆرىگىلى بولمايدۇ.</string>
+    <string name="drawer_tips">%s ساۋاتلىرى</string>
     <string name="drawer_tips_message">بۇ يەرنى چېكىپ ئورۇن قوشۇش، ئۆچۈرۈش ۋە رەتلەشكە بولىدۇ. يەنە باش ئېكراننىڭ ئوخشىمىغان ئورنىغا ئەپچە قوشالايسىز.</string>
     <string name="drawer_tips_message_1">بۇ تىزىملىكنىڭ ئاستىدىكى ئورۇن باشقۇرۇش دېگەننى چېكىپ ئورۇن قوشۇش، ئۆچۈرۈش ۋە رەتلەشكە بولىدۇ.</string>
     <string name="drawer_tips_message_2">باش ئېكرانغا بىردىن كۆپ ئەپچە قوشۇپ بىرلا ۋاقىتتا كۆپ ئورۇن كۆرسىتەلەيسىز.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">ئالدىن مەلۇمات ۋىدېيوسى</string>
     <string name="format_km_per_hour">%skm/h</string>
     <string name="format_m_per_hour">%s英里/小时</string>
+    <string name="fri">جۈم</string>
     <string name="general">ئادەتتىكى</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">تېلېفون ئىشلىتىش ئادىتى بويىچە خاس مەزمۇن ئېلىڭ.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">تاختا كومپيۇتېر ئىشلىتىش ئادىتى بويىچە خاس مەزمۇن ئېلىڭ.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">从天气获取天气信息，包括您当前的位置</string>
     <string name="go_to_website">تورپونكىتىغا بېرىش</string>
     <string name="goto_apps">يېڭىلانما بار. ھازىر قاچىلامسىز؟</string>
     <string name="goto_apps_later">كېيىنرەك</string>
     <string name="goto_apps_now">ھازىر</string>
     <string name="goto_apps_update_title">يېڭى مەزمۇن ئەسكەرتمىسى</string>
     <string name="header_tts">بەت بېشى</string>
+    <string name="heavy">大雨</string>
     <string name="heavy_rain">قارا يامغۇر</string>
     <string name="heavy_rain_followed_by_intense_heat">قاتتىق ئىسسىق ۋە قاتتىق يامغۇر</string>
     <string name="heavy_rain_followed_by_light_rain">قاتتىق ئىسسىق ۋە قاتتىق يامغۇر</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">كۆرۈشچانلىق</string>
     <string name="life_index_wind">شامال</string>
     <string name="life_index_wind_force">شامال تېزلىكى</string>
+    <string name="light">小雨</string>
     <string name="light_rain_followed_by_heavy_rain">يېنىك يامغۇردىن كېيىن قاتتىق يامغۇر</string>
     <string name="light_rain_with_some_heavy_rain">بەزىدە قاتتىق كۆپىنچە يېنىك يامغۇر</string>
     <string name="link_tts">ئۇلانما</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">نەتىجە تېپىلمىدى.</string>
     <string name="message_service_not_available">مۇلازىمەت ھازىرچە ئىشلىمىدى.</string>
     <string name="minus_tts">مىنۇس</string>
+    <string name="mon">دۈش</string>
     <string name="more">باشقا</string>
     <string name="more_cuntact_us">بىز بىلەن ئالاقىلىشىڭ</string>
     <string name="more_information">باشقىلار</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">بۇ يەرنى چېكىپ سۈكۈتتىكى ھاۋارايى ئورنىنى ئۆزگەرتىڭ ۋە بارلىق ئورۇننى باشقۇرۇڭ.</string>
     <string name="new_version_available">%s نىڭ يېڭى نەشرى چىقتى.</string>
     <string name="new_version_is_available">يېڭى نەشرى چىقتى.</string>
+    <string name="news_menu_show_news">显示新闻</string>
+    <string name="news_opt_in_banner_title_text">通过在天气小组件上显示新闻，了解最新事件。</string>
+    <string name="news_opt_in_popup_desc_text">通过在天气小组件上显示%s的最新头条新闻，了解世界最新信息。</string>
+    <string name="news_opt_in_popup_title_text">在小组件中查看新闻和天气</string>
+    <string name="news_request_agree_text">点击即可从 %s 获取新闻</string>
+    <string name="news_widget_bubble_text">获取有关天气的新闻。</string>
+    <string name="news_widget_dummy_title">今天的头条新闻</string>
+    <string name="news_widget_new_dummy_title">今天早上的 5 件新闻简要</string>
+    <string name="news_widget_oobe_text">点击此处可添加新闻。</string>
     <string name="next">كېيىنكى شەھەر</string>
+    <string name="next_btn">كېيىنكى</string>
     <string name="next_city">قوش بېسىپ، كېيىنكى شەھەرنىڭ ھاۋارايى ئۇچۇرىنى كۆرۈڭ.</string>
     <string name="night_tts">كېچە</string>
     <string name="no_application_available">ئەپ يوق.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">没有天气信息</string>
     <string name="not_in_use">ئىشلەتمىگەن</string>
     <string name="not_now">ھازىر ئەمەس</string>
+    <string name="not_now_btn">ھازىر ئەمەس</string>
     <string name="not_selected">تاللانغان ئەمەس</string>
     <string name="nothing_selected">ھېچنەرسە تاللانمىدى.</string>
     <string name="noti">ئىزاھ</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">ئورۇننى ئەڭ تېز ھەم ئەڭ توغرا بەلگىلەش ئۈچۈن تەڭشەكنى چېكىڭ، ئاندىن ئورۇن بەلگىلەش ئۇسۇلىنى GPS، Wi-Fi ۋە كۆچمە تورغا تەڭشەڭ.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">ئورۇننى ئەڭ تېز ھەم ئەڭ توغرا بەلگىلەش ئۈچۈن تەڭشەكنى چېكىڭ، ئاندىن ئورۇن بەلگىلەش ئۇسۇلىنى GPS ۋە Wi-Fi غا تەڭشەڭ.</string>
     <string name="notice_gps_trun_off_message_verizon">يەرلىك ھاۋارايى ئۇچۇرىنى كۆرۈش ئۈچۈن ئورۇن تەڭشەكلىرىنى ئېچىپ، ھالىتىنى يۇقىرى توغرىلىققا تەڭشەڭ.</string>
+    <string name="notification_alert_channel_name">恶劣天气预警</string>
     <string name="notification_apps_update_channel_name">يېڭىلانما ئۇقتۇرۇشى</string>
     <string name="notification_auto_refresh_channel_name">ھاۋارايىنى ئۆزلۈكىدىن يېڭىلاش</string>
     <string name="notification_dex_channel_name">‏Samsung DeX دىكى ھاۋارايى</string>
@@ -438,6 +463,7 @@
     <string name="open_app">打开应用程序</string>
     <string name="open_source_licences">مەنبەسىنى ئېچىش ئىجازەتنامىسى</string>
     <string name="other_locations">باشقا ئورۇن</string>
+    <string name="partly_sunny">بەزىدە ئاپتاپ</string>
     <string name="paused">تورمۇزلاش</string>
     <string name="pd_km">%.1fkm</string>
     <string name="pd_km_h">%d 公里/小时</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">يېغىن مىقدارى: %d mm</string>
     <string name="preview">‏%s ئالدىنكۆرۈمى</string>
     <string name="previous">ئالدىنقى شەھەر</string>
+    <string name="previous_btn">ئالدىنقى</string>
     <string name="previous_city">ئالدىنقى شەھەرنىڭ ھاۋارايى ئۇچۇرىنى كۆرۈش ئۈچۈن قوش چېكىڭ.</string>
     <string name="privacy_policy">مەخپىيەتلىك تۈزۈمى</string>
     <string name="probability_of_rain_text">ئېھتىمال يامغۇر</string>
     <string name="protect_your_content">مەزمۇنىڭىزنى قوغداڭ</string>
+    <string name="ps_in">%sin</string>
+    <string name="ps_mm">%s 毫米</string>
     <string name="radar">رادار ۋە خەرىتە</string>
     <string name="rain">يامغۇر</string>
     <string name="rain_followed_by_intense_heat">يامغۇردىن كېيىن ئىسسىق</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">ھاۋارايى ئۇچۇرىنى يېڭىلاش ئۈچۈن تەڭشەكنى بېسىپ، ئەپ ئۇچۇرى > ئىجازەت دېگەن ئورۇنغا كىرىپ، تۆۋەندىكى ئىجازەتلەرنى بېرىپ، قايتا سىناڭ:</string>
     <string name="runtime_location_permission_title">ئىجازەتلەرگە رۇخسەت قىلىش</string>
     <string name="runtime_oem_grant_permission_desc">بۇ %s ئەپى تۆۋەندىكى ئىجازەتلەرنى ئىشلىتىدۇ:</string>
+    <string name="sat">شەن</string>
     <string name="save_button">ساقلاش</string>
     <string name="search_most_searched_for">ئەڭ كۆپ ئىزدەش</string>
     <string name="search_tab_cities">شەھەر</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">يېڭى مەزمۇن مەۋجۇت</string>
     <string name="sesl_material_overflow_badge_text_n">ي</string>
     <string name="sesl_more_item_label">تېخىمۇ كۆپ</string>
+    <string name="sesl_preferecne_badge_description">يېڭى ئۇقتۇرۇش</string>
     <string name="sesl_preferencecategory_added_title">بەت قېشى</string>
     <string name="sesl_search_hint">ئىزدەش</string>
     <string name="sesl_searchview_description_clear">ئىزدەش رامكىسىنى تازىلاش</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">تور ئۇلىنىشىنى تەكشۈرۈپ، قايتا سىناڭ.</string>
     <string name="st_offline">离线</string>
     <string name="st_view_less">ئازراق كۆرۈش</string>
+    <string name="status_off">ئېتىك</string>
+    <string name="status_on">ئوچۇق</string>
+    <string name="sun">يەك</string>
     <string name="sunny">ئاپتاپ</string>
     <string name="sunny_with_some_clouds">ئاز بۇلۇتلۇق ئاپتاپ</string>
     <string name="sunny_with_some_heavy_rain">ئاز قاتتىق يامغۇرلۇق ئاپتاپ</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">بۇ يەرنى چېكىپ كونا ئۈسكۈنىدىكى ھاۋارايى ئۇچۇرىنى ئەسلىگە كەلتۈرۈڭ.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">ئورنىڭىزنى قايتا تېپىشنى سىناش ئۈچۈن ”قايتا سىناش“ نى چېكىڭ.</string>
     <string name="tap_setting_message_edge_panel">ئورۇننى ئېچىپ، يەرلىك ھاۋارايى ئۇچۇرى ئېلىڭ.</string>
+    <string name="tap_the_settings_icon">请点击设置图标。</string>
     <string name="tap_to_get_the_weather">چېكىپ ھاۋارايىنى كۆرۈڭ</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">شەرت ۋە كېلىشىم</string>
     <string name="the_latest_version">ئەڭ يېڭى نەشرى قاچىلاندى.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">بۇ ئۇقتۇرۇش ۋە كالېندارغىمۇ قوللىنىلىدۇ.</string>
+    <string name="thu">پەي</string>
     <string name="tick_box_tts">تاللاش رامكىسى</string>
     <string name="ticked_tts">بەلگىلەندى</string>
     <string name="time_am">چ ب</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">سائەتلىك</string>
     <string name="title_select_locations">ئورۇن تاللاش</string>
     <string name="title_theme">ئۇسلۇب</string>
+    <string name="to_continue_agree_to_updated">若要继续，请同意我们更新的%s。</string>
     <string name="to_get_local_weather_chn">"为了获取您所在地区的天气状况，系统会将您的当前位置发送给天气预报服务提供商。（请参阅提供商的%1$s条款和条件%2$s与%3$s隐私政策%4$s。）
 设备上的其他应用程序和服务可能会访问检索到的天气数据，从而在这些应用程序中显示天气信息。
 为了向您持续提供天气信息，即使您不使用天气应用，天气也会访问您所在的位置。"</string>
     <string name="today">بۈگۈن</string>
+    <string name="try_it_out_btn">试一试</string>
+    <string name="tue">سەي</string>
+    <string name="turn_on_to_use_precise_location">若要使用此功能，您需要始终允许 %s 访问您的位置，并开启【使用精确位置】。点击【设置】，然后进入【权限】>【位置信息】。</string>
     <string name="tw_title_weather_broadcast">ئالدىن مەلۇمات</string>
-    <string name="unable_to_check_for_updates">تورغا ئۇلانمىدى.يېڭىلانمىنى تەكشۈرەلمىدى.</string>
+    <string name="unable_to_check_for_updates">يېڭىلانما تەكشۈرۈلمىدى. كېيىنرەك قايتا سىناڭ.</string>
     <string name="unable_to_receive_info_msg">ئۇچۇر ئېلىنمىدى</string>
     <string name="unticked_tts">تاللاش بىكار قىلىندى</string>
     <string name="unused">ئىشلىتىلمىگەن</string>
     <string name="update">يېڭىلاش</string>
     <string name="update_abb8">يېڭىلاش</string>
     <string name="update_app">ئەپ يېڭىلاش</string>
+    <string name="updated_tile_chn">يېڭىلانغان: %s</string>
     <string name="updated_tts">‏%s يېڭىلاندى‏</string>
+    <string name="use_current_location">نۆۋەتتىكى ئورۇننى ئىشلىتىش</string>
     <string name="use_current_location_agree_popup">"为了获取您所在地区的天气状况，系统会将您的当前位置发送给天气预报服务提供商。(请参阅提供商的 %1$s隐私政策%2$s。)
 设备上的其他应用程序和服务可能会访问检索到的天气数据，以便在这些应用程序中提供天气信息。"</string>
     <string name="use_current_location_and_background_agree_popup">"为了获取您所在地区的天气状况，系统会将您的当前位置发送给天气预报服务提供商。（请参阅提供商的%1$s隐私政策%2$s。）
@@ -635,9 +677,16 @@
 您可以到天气应用程序的设置里关闭您的位置信息。"</string>
     <string name="use_current_location_body_msg_chn">"在使用“天气”前，请仔细阅读以下内容：
 如果您想要知道您当前位置的天气，您需要允许第三方运营商能一直访问您设备的权限（甚至您不在使用该设备亦然）并且还可以取得以下的特定数据。在授予上述权限时，请仔细阅读第三方运营商的%1$s条款与条件%2$s和%3$s隐私政策%4$s。您可以在设置菜单中关闭“位置”设定来收回您授予的权限。设备上的其他应用程序和服务可能会访问检索到的天气数据，从而在这些应用程序中提供天气信息。"</string>
-    <string name="use_current_location_body_purpose">用途</string>
+    <string name="use_current_location_body_msg_kor">"系统将收集您的当前位置，并将其用于提供一些天气应用程序功能，例如获取您当地的天气。
+
+为了提供连续的天气信息，即使您不使用该应用程序，此应用程序也会定期处理您的位置。继续即表示您同意出于上述目的收集和处理您的位置。
+
+您可以在天气应用程序设置中停止此位置收集和使用。"</string>
+    <string name="use_current_location_body_purpose">目的</string>
     <string name="use_current_location_body_purpose_content">为您当前的位置提供天气信息</string>
     <string name="use_current_location_body_search_provider">服务提供商</string>
+    <string name="use_current_location_continue">داۋاملاشتۇرۇش</string>
+    <string name="use_current_location_not_now">ھازىر ئەمەس</string>
     <string name="use_current_location_off_alert_popup">نۆۋەتتىكى ئورۇن ئۇچۇرى چىقىرىۋېتىلىدۇ.</string>
     <string name="useful_informations">ھاياتلىق كۆرسەتمىسى ۋە باشقا دوكلات</string>
     <string name="using_as">%s سۈپىتىدە ئىشلەۋاتىدۇ</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">ھاۋارايى كۆرسەتمىسى</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">چار</string>
     <string name="weekly_forecast">كۈندىلىك</string>
     <string name="widget_background">ئەپچە تەگلىكى</string>
     <string name="widget_empty_text">چېكىپ ھاۋارايى ئۇچۇرىنى كۆرۈڭ</string>
+    <string name="widget_location">شەھەر نامى</string>
     <string name="widget_name_4x1">ھاۋارايى ۋە سائەت</string>
     <string name="widget_setting">تەڭشەكلەر</string>
     <string name="widget_setting_background_color">تەگلىك رەڭگى</string>

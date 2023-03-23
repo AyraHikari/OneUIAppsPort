@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/app/AlertController$2;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 538
+    .line 542
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$2$1;->this$1:Landroidx/appcompat/app/AlertController$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 541
+    .line 545
     iget-object v0, p0, Landroidx/appcompat/app/AlertController$2$1;->this$1:Landroidx/appcompat/app/AlertController$2;
 
     iget-object v0, v0, Landroidx/appcompat/app/AlertController$2;->this$0:Landroidx/appcompat/app/AlertController;
@@ -61,25 +69,27 @@
 
     iget-object v1, v1, Landroidx/appcompat/app/AlertController$2;->this$0:Landroidx/appcompat/app/AlertController;
 
-    iget v1, v1, Landroidx/appcompat/app/AlertController;->mLastOrientation:I
+    invoke-static {v1}, Landroidx/appcompat/app/AlertController;->access$100(Landroidx/appcompat/app/AlertController;)I
+
+    move-result v1
 
     if-eq v0, v1, :cond_0
 
-    .line 543
+    .line 546
     iget-object v0, p0, Landroidx/appcompat/app/AlertController$2$1;->this$1:Landroidx/appcompat/app/AlertController$2;
 
     iget-object v0, v0, Landroidx/appcompat/app/AlertController$2;->this$0:Landroidx/appcompat/app/AlertController;
 
-    invoke-static {v0}, Landroidx/appcompat/app/AlertController;->access$100(Landroidx/appcompat/app/AlertController;)V
+    invoke-static {v0}, Landroidx/appcompat/app/AlertController;->access$200(Landroidx/appcompat/app/AlertController;)V
 
-    .line 544
+    .line 547
     iget-object v0, p0, Landroidx/appcompat/app/AlertController$2$1;->this$1:Landroidx/appcompat/app/AlertController$2;
 
     iget-object v0, v0, Landroidx/appcompat/app/AlertController$2;->val$parentPanel:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 
-    .line 546
+    .line 549
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/app/AlertController$2$1;->this$1:Landroidx/appcompat/app/AlertController$2;
 
@@ -103,7 +113,7 @@
 
     iget v1, v1, Landroid/content/res/Configuration;->orientation:I
 
-    iput v1, v0, Landroidx/appcompat/app/AlertController;->mLastOrientation:I
+    invoke-static {v0, v1}, Landroidx/appcompat/app/AlertController;->access$102(Landroidx/appcompat/app/AlertController;I)I
 
     return-void
 .end method

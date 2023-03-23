@@ -25,7 +25,25 @@
 .end method
 
 .method public abstract setActionBarDescription(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "contentDescRes"
+        }
+    .end annotation
 .end method
 
 .method public abstract setActionBarUpIndicator(Landroid/graphics/drawable/Drawable;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "upDrawable",
+            "contentDescRes"
+        }
+    .end annotation
 .end method

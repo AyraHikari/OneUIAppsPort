@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;)V
     .locals 0
 
-    .line 89
+    .line 99
     iput-object p1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$1;->this$0:Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 1
 
-    .line 100
+    .line 110
     iget-object p1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$1;->this$0:Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;
 
     const/4 v0, 0x0

@@ -8,24 +8,4 @@
         <item quantity="few">%d files added to file transfer list.</item>
         <item quantity="many">%d files added to file transfer list.</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Register and manage up to %d computers or tablets in Samsung Flow.
-
-Only one computer or tablet can be connected to your phone at once. You'll have to choose one when both registered computers or tablets try to connect to your phone."</item>
-        <item quantity="zero">"Register and manage up to %d computers or tablets in Samsung Flow.
-
-Only one computer or tablet can be connected to your phone at once. You'll have to choose one when both registered computers or tablets try to connect to your phone."</item>
-        <item quantity="one">"Register and manage up to %d computer or tablet in Samsung Flow.
-
-Only one computer or tablet can be connected to your phone at once. You'll have to choose one when both registered computers or tablets try to connect to your phone."</item>
-        <item quantity="two">"Register and manage up to %d computers or tablets in Samsung Flow.
-
-Only one computer or tablet can be connected to your phone at once. You'll have to choose one when both registered computers or tablets try to connect to your phone."</item>
-        <item quantity="few">"Register and manage up to %d computers or tablets in Samsung Flow.
-
-Only one computer or tablet can be connected to your phone at once. You'll have to choose one when both registered computers or tablets try to connect to your phone."</item>
-        <item quantity="many">"Register and manage up to %d computers or tablets in Samsung Flow.
-
-Only one computer or tablet can be connected to your phone at once. You'll have to choose one when both registered computers or tablets try to connect to your phone."</item>
-    </plurals>
 </resources>

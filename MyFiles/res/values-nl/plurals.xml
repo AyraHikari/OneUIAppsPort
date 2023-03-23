@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Kan niet meer dan %d items selecteren.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d item selecteren.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Kan %d bestanden niet naar Prullenbak verplaatsen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan %d bestand niet naar Prullenbak verplaatsen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Kan %d mappen niet naar Prullenbak verplaatsen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan %d map niet naar Prullenbak verplaatsen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Kan %d items niet naar Prullenbak verplaatsen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan %d item niet naar Prullenbak verplaatsen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d van de geselecteerde bestanden worden verwijderd omdat ze zich in de cloud of op een USB-opslagapparaat bevinden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d van de geselecteerde bestanden wordt verwijderd omdat het zich in de cloud of op een USB-opslagapparaat bevindt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d van de geselecteerde mappen worden verwijderd omdat ze zich in de cloud of op een USB-opslagapparaat bevinden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d van de geselecteerde mappen wordt verwijderd omdat deze zich in de cloud of op een USB-opslagapparaat bevindt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d van de geselecteerde items worden verwijderd omdat ze zich in de cloud of op een USB-opslagapparaat bevinden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d van de geselecteerde items wordt verwijderd omdat het zich in de cloud of op een USB-opslagapparaat bevindt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d bestanden comprimeren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand comprimeren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d bestanden comprimeren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand comprimeren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d mappen comprimeren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map comprimeren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d mappen comprimeren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map comprimeren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d items comprimeren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item comprimeren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d items comprimeren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item comprimeren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d bestanden kopiëren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand kopiëren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d bestanden kopiëren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand kopiëren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d mappen kopiëren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map kopiëren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d mappen kopiëren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map kopiëren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d items kopiëren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item kopiëren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d items kopiëren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item kopiëren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">%d bestanden van uw telefoon verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand van uw telefoon verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">%d bestanden van uw tablet verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand van uw tablet verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">%d mappen van uw telefoon verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map van uw telefoon verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">%d mappen van uw tablet verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map van uw tablet verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">%d items van uw telefoon verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item van uw telefoon verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">%d items van uw tablet verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item van uw tablet verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d bestanden verwijderen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verwijderen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d mappen verwijderen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map verwijderen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d items wissen uit Prullenbak…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item wissen uit Prullenbak…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d items verwijderen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verwijderen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d bestanden uitpakken…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand uitpakken…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d mappen extraheren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map extraheren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d items extraheren…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item extraheren…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d bestanden worden ook verplaatst naar de prullenbak in %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d bestand wordt ook verplaatst naar de prullenbak in %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d bestanden herstellen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand herstellen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d mappen worden ook verplaatst naar de prullenbak in %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d map wordt ook verplaatst naar de prullenbak in %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d mappen herstellen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map herstellen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Uw interne opslag is vol. %d bestanden permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw interne opslag is vol. %d bestand permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Uw interne opslag is vol. %d mappen permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw interne opslag is vol. %d map permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Uw interne opslag is vol. %d items permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw interne opslag is vol. %d item permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Uw interne opslag en SD-kaart zijn vol. %d bestanden permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw interne opslag en SD-kaart zijn vol. %d bestand permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Uw interne opslag en SD-kaart zijn vol. %d mappen permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw interne opslag en SD-kaart zijn vol. %d map permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Uw interne opslag en SD-kaart zijn vol. %d items permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw interne opslag en SD-kaart zijn vol. %d item permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d items herstellen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item herstellen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d items worden ook verplaatst naar de prullenbak in %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d item wordt ook verplaatst naar de prullenbak in %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Kan niet meer dan %d app-vensters openen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d app-venster openen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d bestanden verplaatsen naar Prullenbak?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verplaatsen naar Prullenbak?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d bestanden verplaatsen naar Prullenbak?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verplaatsen naar Prullenbak?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d mappen verplaatsen naar Prullenbak?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map verplaatsen naar Prullenbak?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d mappen verplaatsen naar Prullenbak?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map verplaatsen naar Prullenbak?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d items verplaatsen naar Prullenbak?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verplaatsen naar Prullenbak?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d items verplaatsen naar Prullenbak?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verplaatsen naar Prullenbak?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d bestanden verplaatsen naar Prullenbak…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verplaatsen naar Prullenbak…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d mappen verplaatsen naar Prullenbak…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map verplaatsen naar Prullenbak…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d items verplaatsen naar Prullenbak…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verplaatsen naar Prullenbak…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d bestanden verplaatsen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verplaatsen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d bestanden verplaatsen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verplaatsen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d mappen verplaatsen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map verplaatsen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d mappen verplaatsen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map verplaatsen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d items verplaatsen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verplaatsen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d items verplaatsen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verplaatsen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d items gecomprimeerd</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item gecomprimeerd</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d items gekopieerd naar %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d item gekopieerd naar %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Map en %d bestanden erin verwijderen?</item>
+        <item quantity="one">Map en het bestand erin verwijderen?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d mappen en %2$d bestanden erin verwijderen?</item>
+        <item quantity="one">Map en het bestand erin verwijderen?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d items verwijderd</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verwijderd</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d bestanden downloaden…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand downloaden…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d mappen downloaden…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map downloaden…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d items downloaden…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item downloaden…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Kan mappen niet delen. Mappen leeg.</item>
+        <item quantity="one">Kan map niet delen. Map leeg.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d bestanden worden permanent verwijderd.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand wordt permanent verwijderd.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d mappen worden permanent verwijderd.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map wordt permanent verwijderd.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d items geëxtraheerd</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item geëxtraheerd</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d bestanden toegevoegd aan Favorieten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand toegevoegd aan Favorieten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d bestanden verwijderd uit Favorieten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verwijderd uit Favorieten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d mappen toegevoegd aan Favorieten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map toegevoegd aan Favorieten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d mappen verwijderd uit Favorieten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map verwijderd uit Favorieten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d items toegevoegd aan Favorieten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item toegevoegd aan Favorieten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d items verwijderd uit Favorieten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verwijderd uit Favorieten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d items</item>
+        <item quantity="one">1 item</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d items</item>
+        <item quantity="one">%d item</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d items gekopieerd naar klembord</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item gekopieerd naar klembord</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d items verplaatst naar klembord</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verplaatst naar klembord</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d items geselecteerd</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item geselecteerd</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d items verplaatst naar %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d item verplaatst naar %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d items verplaatst naar Prullenbak</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verplaatst naar Prullenbak</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d geselecteerd</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d geselecteerd</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Uw SD-kaart is vol. %d bestanden permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw SD-kaart is vol. %d bestand permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Uw SD-kaart is vol. %d mappen permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw SD-kaart is vol. %d map permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Uw SD-kaart is vol. %d items permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uw SD-kaart is vol. %d item permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Dit bestand wordt over %d dagen verwijderd.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dit bestand wordt over %d dag verwijderd.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Deze map wordt over %d dagen verwijderd.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Deze map wordt over %d dag verwijderd.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d bestanden permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d bestanden verwijderen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand verwijderen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d bestanden herstellen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bestand herstellen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d mappen permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d mappen verwijderen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappen verwijderen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d mappen herstellen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d map herstellen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d items permanent verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item permanent verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d items verwijderen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item verwijderen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d items herstellen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d item herstellen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Over %d dagen verwijderen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Over %d dag verwijderen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d apps verwijderen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d app verwijderen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

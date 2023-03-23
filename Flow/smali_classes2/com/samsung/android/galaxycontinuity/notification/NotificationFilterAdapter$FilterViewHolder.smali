@@ -23,6 +23,16 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "view"
+        }
+    .end annotation
 
     .line 148
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;

@@ -22,11 +22,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u0017\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0005*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001J\u0011\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0008\u001a\u00020\u0004H\u0096\u0002R\u0014\u0010\u0003\u001a\u00020\u00048VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\t"
     }
@@ -45,9 +40,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -58,15 +54,10 @@
 # direct methods
 .method constructor <init>(Lkotlin/text/MatcherMatchResult;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
-    .line 297
     iput-object p1, p0, Lkotlin/text/MatcherMatchResult$groupValues$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
+    .line 381
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     return-void
@@ -77,11 +68,16 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 297
+    .line 381
     instance-of v0, p1, Ljava/lang/String;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lkotlin/text/MatcherMatchResult$groupValues$1;->contains(Ljava/lang/String;)Z
@@ -89,17 +85,12 @@
     move-result p1
 
     return p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
 .end method
 
 .method public bridge contains(Ljava/lang/String;)Z
     .locals 0
 
-    .line 297
+    .line 381
     invoke-super {p0, p1}, Lkotlin/collections/AbstractList;->contains(Ljava/lang/Object;)Z
 
     move-result p1
@@ -110,7 +101,7 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
 
-    .line 297
+    .line 381
     invoke-virtual {p0, p1}, Lkotlin/text/MatcherMatchResult$groupValues$1;->get(I)Ljava/lang/String;
 
     move-result-object p1
@@ -121,10 +112,10 @@
 .method public get(I)Ljava/lang/String;
     .locals 1
 
-    .line 299
+    .line 383
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult$groupValues$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
-    invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult$p(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
+    invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
 
     move-result-object v0
 
@@ -132,24 +123,21 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
-    goto :goto_0
-
-    :cond_0
     const-string p1, ""
 
-    :goto_0
+    :cond_0
     return-object p1
 .end method
 
 .method public getSize()I
     .locals 1
 
-    .line 298
+    .line 382
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult$groupValues$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
-    invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult$p(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
+    invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
 
     move-result-object v0
 
@@ -165,11 +153,16 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 297
+    .line 381
     instance-of v0, p1, Ljava/lang/String;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
+    const/4 p1, -0x1
+
+    return p1
+
+    :cond_0
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lkotlin/text/MatcherMatchResult$groupValues$1;->indexOf(Ljava/lang/String;)I
@@ -177,17 +170,12 @@
     move-result p1
 
     return p1
-
-    :cond_0
-    const/4 p1, -0x1
-
-    return p1
 .end method
 
 .method public bridge indexOf(Ljava/lang/String;)I
     .locals 0
 
-    .line 297
+    .line 381
     invoke-super {p0, p1}, Lkotlin/collections/AbstractList;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
@@ -198,11 +186,16 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 297
+    .line 381
     instance-of v0, p1, Ljava/lang/String;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
+    const/4 p1, -0x1
+
+    return p1
+
+    :cond_0
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lkotlin/text/MatcherMatchResult$groupValues$1;->lastIndexOf(Ljava/lang/String;)I
@@ -210,17 +203,12 @@
     move-result p1
 
     return p1
-
-    :cond_0
-    const/4 p1, -0x1
-
-    return p1
 .end method
 
 .method public bridge lastIndexOf(Ljava/lang/String;)I
     .locals 0
 
-    .line 297
+    .line 381
     invoke-super {p0, p1}, Lkotlin/collections/AbstractList;->lastIndexOf(Ljava/lang/Object;)I
 
     move-result p1

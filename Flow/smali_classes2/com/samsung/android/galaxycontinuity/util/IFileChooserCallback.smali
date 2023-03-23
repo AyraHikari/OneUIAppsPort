@@ -5,6 +5,15 @@
 
 # virtual methods
 .method public abstract onFileSelected(Ljava/util/ArrayList;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

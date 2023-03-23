@@ -171,19 +171,27 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-boolean v2, p2, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, " sample="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget p2, p2, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -217,7 +225,7 @@
 
     const/16 v0, 0x13
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     if-gt v0, v1, :cond_1
 
@@ -284,7 +292,7 @@
 
     if-eq p1, v2, :cond_5
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x10
 
@@ -364,9 +372,13 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -462,9 +474,7 @@
 
     .line 356
     :try_start_1
-    sget-object v2, Lcom/bumptech/glide/load/resource/bitmap/Downsampler;->OPTIONS_QUEUE:Ljava/util/Queue;
-
-    invoke-interface {v2}, Ljava/util/Queue;->poll()Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -581,7 +591,7 @@
 .end method
 
 .method private static releaseOptions(Landroid/graphics/BitmapFactory$Options;)V
-    .locals 2
+    .locals 1
 
     .line 367
     invoke-static {p0}, Lcom/bumptech/glide/load/resource/bitmap/Downsampler;->resetOptions(Landroid/graphics/BitmapFactory$Options;)V
@@ -593,9 +603,7 @@
 
     .line 369
     :try_start_0
-    sget-object v1, Lcom/bumptech/glide/load/resource/bitmap/Downsampler;->OPTIONS_QUEUE:Ljava/util/Queue;
-
-    invoke-interface {v1, p0}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
+    invoke-interface {v0, p0}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
     .line 370
     monitor-exit v0
@@ -649,7 +657,7 @@
     iput-object v0, p0, Landroid/graphics/BitmapFactory$Options;->outMimeType:Ljava/lang/String;
 
     .line 385
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0xb
 
@@ -669,7 +677,7 @@
     .locals 2
 
     .line 347
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
 
@@ -690,7 +698,7 @@
     const-string v1, "Downsampler"
 
     .line 225
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x13
 

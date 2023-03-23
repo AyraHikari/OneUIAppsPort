@@ -53,8 +53,6 @@
     .line 28
     new-instance p1, Lcom/bumptech/glide/load/resource/file/FileToStreamDecoder;
 
-    iget-object v0, p0, Lcom/bumptech/glide/load/resource/gif/GifDrawableLoadProvider;->decoder:Lcom/bumptech/glide/load/resource/gif/GifResourceDecoder;
-
     invoke-direct {p1, v0}, Lcom/bumptech/glide/load/resource/file/FileToStreamDecoder;-><init>(Lcom/bumptech/glide/load/ResourceDecoder;)V
 
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/gif/GifDrawableLoadProvider;->cacheDecoder:Lcom/bumptech/glide/load/resource/file/FileToStreamDecoder;

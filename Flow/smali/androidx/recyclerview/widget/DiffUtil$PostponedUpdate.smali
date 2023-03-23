@@ -23,19 +23,19 @@
 
 
 # direct methods
-.method public constructor <init>(IIZ)V
+.method constructor <init>(IIZ)V
     .locals 0
 
-    .line 973
+    .line 1021
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 974
+    .line 1022
     iput p1, p0, Landroidx/recyclerview/widget/DiffUtil$PostponedUpdate;->posInOwnerList:I
 
-    .line 975
+    .line 1023
     iput p2, p0, Landroidx/recyclerview/widget/DiffUtil$PostponedUpdate;->currentPos:I
 
-    .line 976
+    .line 1024
     iput-boolean p3, p0, Landroidx/recyclerview/widget/DiffUtil$PostponedUpdate;->removal:Z
 
     return-void

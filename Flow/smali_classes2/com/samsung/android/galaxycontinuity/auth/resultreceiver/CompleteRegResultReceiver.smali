@@ -23,6 +23,16 @@
 # virtual methods
 .method public notifyResult(IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "isUseSamsungPass"
+        }
+    .end annotation
 
     return-void
 .end method

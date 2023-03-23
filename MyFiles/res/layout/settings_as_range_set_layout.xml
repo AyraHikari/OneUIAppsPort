@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/settings_description_text_size" android:textColor="@color/storage_analysis_graph_info_text" android:id="@id/description" android:background="@color/status_bar_bg_color_gray" android:paddingBottom="@dimen/settings_description_margin_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/settings_description_text_line_spacing" android:paddingStart="@dimen/settings_description_margin_horizontal" android:paddingEnd="@dimen/settings_description_margin_horizontal" />
+        <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:theme="@style/CheckBoxTint" android:id="@id/range_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner" android:overScrollMode="never" app:layoutManager="LinearLayoutManager" />
+        <View android:minHeight="@dimen/basic_round_page_bottom_blank_height" style="@style/BackgroundMarginView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

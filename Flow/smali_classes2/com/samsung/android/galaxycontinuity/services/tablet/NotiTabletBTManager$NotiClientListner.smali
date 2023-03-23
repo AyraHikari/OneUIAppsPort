@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 407
+    .line 411
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +44,7 @@
 .method synthetic constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$1;)V
     .locals 0
 
-    .line 407
+    .line 411
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;-><init>(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
 
     return-void
@@ -44,8 +52,16 @@
 
 .method private updateOngoingNoti(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
-    .line 429
+    .line 433
     new-instance p1, Landroid/content/Intent;
 
     const-string v0, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_UPDATE_ONGOING_NOTI"
@@ -56,10 +72,10 @@
 
     const/4 v1, 0x3
 
-    .line 431
+    .line 435
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 432
+    .line 436
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -72,7 +88,7 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 433
+    .line 437
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -88,25 +104,33 @@
 # virtual methods
 .method public onConnectionClosed(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     const-string p1, "onConnectionClosed"
 
-    .line 531
+    .line 535
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 533
+    .line 537
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$200(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
 
-    .line 535
+    .line 539
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     const/4 v0, 0x0
 
     invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$302(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;Z)Z
 
-    .line 537
+    .line 541
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->isPhoneConnected()Z
@@ -115,12 +139,12 @@
 
     if-nez p1, :cond_0
 
-    .line 538
+    .line 542
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$400(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
 
-    .line 542
+    .line 546
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
@@ -132,14 +156,14 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setNotificationDisconnectionTimeLong(J)V
 
-    .line 544
+    .line 548
     new-instance p1, Landroid/content/Intent;
 
     const-string v0, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_NOTI_DISCONNECTED"
 
     invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 545
+    .line 549
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -148,7 +172,7 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 547
+    .line 551
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;
 
     move-result-object p1
@@ -159,21 +183,21 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->deInit()V
 
-    .line 548
+    .line 552
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;
 
     move-result-object p1
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->deInit()V
 
-    .line 549
+    .line 553
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     move-result-object p1
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->closeShare()V
 
-    .line 550
+    .line 554
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->getInstance()Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
     move-result-object p1
@@ -185,18 +209,26 @@
 
 .method public onConnectionFailed(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     const-string v0, "onConnectionFailed"
 
-    .line 438
+    .line 442
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 439
+    .line 443
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$200(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
 
-    .line 441
+    .line 445
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -207,21 +239,21 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setNotificationDisconnectionTimeLong(J)V
 
-    .line 443
+    .line 447
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->discardAll()V
 
-    .line 445
+    .line 449
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$302(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;Z)Z
 
-    .line 447
+    .line 451
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->isPhoneConnected()Z
@@ -230,17 +262,17 @@
 
     if-nez v0, :cond_0
 
-    .line 448
+    .line 452
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->updateOngoingNoti(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
 
-    .line 451
+    .line 455
     new-instance p1, Landroid/content/Intent;
 
     const-string v0, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_NOTI_DISCONNECTED"
 
     invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 452
+    .line 456
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -249,12 +281,12 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 455
+    .line 459
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$400(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
 
-    .line 458
+    .line 462
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$500(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)Lcom/samsung/android/galaxycontinuity/session/SessionExpiredChecker;
@@ -263,7 +295,7 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/session/SessionExpiredChecker;->setSessionExpiredTimer()V
 
-    .line 461
+    .line 465
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
@@ -271,7 +303,7 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->closeShare()V
 
-    .line 463
+    .line 467
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$600(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)Z
@@ -280,7 +312,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 465
+    .line 469
     :try_start_0
     new-instance p1, Ljava/util/concurrent/CountDownLatch;
 
@@ -290,7 +322,7 @@
 
     const-wide/16 v0, 0x5
 
-    .line 466
+    .line 470
     sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {p1, v0, v1, v2}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
@@ -299,9 +331,9 @@
 
     if-nez p1, :cond_1
 
-    const-string p1, "timeout!!"
+    const-string/jumbo p1, "timeout!!"
 
-    .line 467
+    .line 471
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
@@ -311,10 +343,10 @@
     :catch_0
     move-exception p1
 
-    .line 470
+    .line 474
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 473
+    .line 477
     :cond_1
     :goto_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
@@ -325,7 +357,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 474
+    .line 478
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$700(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$ISessionChangedListener;
@@ -334,7 +366,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 475
+    .line 479
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$700(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$ISessionChangedListener;
@@ -343,7 +375,7 @@
 
     invoke-interface {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$ISessionChangedListener;->onConnectionFailed()V
 
-    .line 480
+    .line 484
     :cond_2
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;
 
@@ -355,14 +387,14 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->deInit()V
 
-    .line 481
+    .line 485
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;
 
     move-result-object p1
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->deInit()V
 
-    .line 482
+    .line 486
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->getInstance()Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
     move-result-object p1
@@ -374,10 +406,24 @@
 
 .method public declared-synchronized onDataReceived(Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[BI)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "manager",
+            "socket",
+            "msg",
+            "bufferLen"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 487
+    .line 491
     :try_start_0
     invoke-virtual {p2}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;
 
@@ -399,12 +445,12 @@
 
     if-nez p4, :cond_0
 
-    .line 488
+    .line 492
     monitor-exit p0
 
     return-void
 
-    .line 490
+    .line 494
     :cond_0
     :try_start_1
     iget-object p4, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
@@ -415,7 +461,7 @@
 
     invoke-virtual {p4}, Lcom/samsung/android/galaxycontinuity/session/SessionExpiredChecker;->cancelSessionExpiredTimer()V
 
-    .line 492
+    .line 496
     iget-object p4, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p4}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$300(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)Z
@@ -426,21 +472,21 @@
 
     if-eqz p1, :cond_1
 
-    .line 493
+    .line 497
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;->isConnected()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 494
+    .line 498
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     const/4 p4, 0x1
 
     invoke-static {p1, p4}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$302(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;Z)Z
 
-    .line 497
+    .line 501
     :cond_1
     invoke-virtual {p2}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->isWiFiSocket()Z
 
@@ -448,12 +494,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 498
+    .line 502
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$800(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
 
-    .line 502
+    .line 506
     :cond_2
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
@@ -463,10 +509,10 @@
 
     const-string p1, "BT Nofication Client socket connected"
 
-    .line 504
+    .line 508
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 506
+    .line 510
     invoke-virtual {p2}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;
 
     move-result-object p1
@@ -485,14 +531,14 @@
 
     if-eqz p1, :cond_3
 
-    .line 507
+    .line 511
     new-instance p1, Landroid/content/Intent;
 
     const-string p4, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_NOTI_CONNECTED"
 
     invoke-direct {p1, p4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 508
+    .line 512
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p4
@@ -501,25 +547,25 @@
 
     invoke-virtual {p4, p1, v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 511
+    .line 515
     :cond_3
     invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->updateOngoingNoti(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
 
-    .line 513
+    .line 517
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     move-result-object p1
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->closeShare()V
 
-    .line 514
+    .line 518
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;
 
     move-result-object p1
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->init()V
 
-    .line 518
+    .line 522
     :cond_4
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
@@ -535,20 +581,20 @@
 
     if-eqz p1, :cond_5
 
-    .line 521
+    .line 525
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->toJson()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 522
+    .line 526
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->sanitizePrivacyLog(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 524
+    .line 528
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 525
+    .line 529
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p2
@@ -557,7 +603,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 527
+    .line 531
     :cond_5
     monitor-exit p0
 
@@ -573,13 +619,21 @@
 
 .method public onSocketConnected(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
-    .line 410
+    .line 414
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$NotiClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->access$200(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;)V
 
-    .line 412
+    .line 416
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;
 
     move-result-object v0
@@ -598,7 +652,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 416
+    .line 420
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object v0
@@ -609,7 +663,7 @@
 
     if-nez v0, :cond_0
 
-    .line 417
+    .line 421
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object v0
@@ -628,7 +682,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->setSessionKey([B)V
 
-    .line 420
+    .line 424
     :cond_0
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->isDeviceTypePhone()Z
 
@@ -636,7 +690,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 421
+    .line 425
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p1
@@ -651,7 +705,7 @@
 
     goto :goto_0
 
-    .line 423
+    .line 427
     :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 

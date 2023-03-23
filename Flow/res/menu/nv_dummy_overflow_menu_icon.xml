@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/sesl_ic_menu_overflow_dark" android:id="@id/bottom_overflow" android:title="@string/sesl_more_item_label" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/home_list_item_divider_height" android:layout_marginStart="@dimen/search_history_item_divider_margin_side" android:layout_marginEnd="@dimen/search_history_item_divider_margin_side" style="@style/ListDivider" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_history_item_clear_history_height">
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/clear_recent_history_size" android:textColor="@color/clear_recent_history_text_color" android:layout_gravity="center" android:id="@id/clear_recent_search_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_history_clear_history" style="@style/RobotoMedium" />
+    </FrameLayout>
+</LinearLayout>

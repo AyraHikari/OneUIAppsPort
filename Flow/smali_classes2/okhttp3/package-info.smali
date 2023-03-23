@@ -4,5 +4,5 @@
 
 
 # annotations
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
+.annotation runtime Lokhttp3/internal/annotations/EverythingIsNonNull;
 .end annotation

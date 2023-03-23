@@ -35,7 +35,7 @@
 
     const-string v1, "SC"
 
-    const-string v2, "threadLocalEcImplicitlyCa"
+    const-string/jumbo v2, "threadLocalEcImplicitlyCa"
 
     invoke-direct {v0, v1, v2}, Lorg/spongycastle/jcajce/provider/config/ProviderConfigurationPermission;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -53,7 +53,7 @@
     .line 20
     new-instance v0, Lorg/spongycastle/jcajce/provider/config/ProviderConfigurationPermission;
 
-    const-string v2, "threadLocalDhDefaultParams"
+    const-string/jumbo v2, "threadLocalDhDefaultParams"
 
     invoke-direct {v0, v1, v2}, Lorg/spongycastle/jcajce/provider/config/ProviderConfigurationPermission;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -212,7 +212,7 @@
 
     move-result-object v0
 
-    const-string v1, "threadLocalEcImplicitlyCa"
+    const-string/jumbo v1, "threadLocalEcImplicitlyCa"
 
     .line 35
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -324,7 +324,7 @@
     goto :goto_5
 
     :cond_8
-    const-string v1, "threadLocalDhDefaultParams"
+    const-string/jumbo v1, "threadLocalDhDefaultParams"
 
     .line 78
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

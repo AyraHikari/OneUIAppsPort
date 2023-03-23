@@ -851,7 +851,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "salt length must be exactly 16 bytes"
+    const-string/jumbo p2, "salt length must be exactly 16 bytes"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1231,13 +1231,13 @@
 
     aget-wide v4, v1, v0
 
-    aget-object p2, p2, p1
+    aget-object v0, p2, p1
 
-    const/4 v0, 0x1
+    const/4 v3, 0x1
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v0, v3
 
-    aget-wide v6, v1, p2
+    aget-wide v6, v1, v0
 
     const/4 v8, 0x0
 
@@ -1252,8 +1252,6 @@
     invoke-direct/range {v3 .. v11}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->G(JJIIII)V
 
     .line 453
-    sget-object p2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_sigma:[[B
-
     aget-object v0, p2, p1
 
     const/4 v3, 0x2
@@ -1262,13 +1260,13 @@
 
     aget-wide v4, v1, v0
 
-    aget-object p2, p2, p1
+    aget-object v0, p2, p1
 
-    const/4 v0, 0x3
+    const/4 v3, 0x3
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v0, v3
 
-    aget-wide v6, v1, p2
+    aget-wide v6, v1, v0
 
     const/4 v8, 0x1
 
@@ -1283,8 +1281,6 @@
     invoke-direct/range {v3 .. v11}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->G(JJIIII)V
 
     .line 455
-    sget-object p2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_sigma:[[B
-
     aget-object v0, p2, p1
 
     const/4 v3, 0x4
@@ -1293,13 +1289,13 @@
 
     aget-wide v4, v1, v0
 
-    aget-object p2, p2, p1
+    aget-object v0, p2, p1
 
-    const/4 v0, 0x5
+    const/4 v3, 0x5
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v0, v3
 
-    aget-wide v6, v1, p2
+    aget-wide v6, v1, v0
 
     const/4 v8, 0x2
 
@@ -1314,8 +1310,6 @@
     invoke-direct/range {v3 .. v11}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->G(JJIIII)V
 
     .line 457
-    sget-object p2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_sigma:[[B
-
     aget-object v0, p2, p1
 
     const/4 v3, 0x6
@@ -1324,13 +1318,13 @@
 
     aget-wide v4, v1, v0
 
-    aget-object p2, p2, p1
+    aget-object v0, p2, p1
 
-    const/4 v0, 0x7
+    const/4 v3, 0x7
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v0, v3
 
-    aget-wide v6, v1, p2
+    aget-wide v6, v1, v0
 
     const/4 v8, 0x3
 
@@ -1345,8 +1339,6 @@
     invoke-direct/range {v3 .. v11}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->G(JJIIII)V
 
     .line 460
-    sget-object p2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_sigma:[[B
-
     aget-object v0, p2, p1
 
     const/16 v3, 0x8
@@ -1355,13 +1347,13 @@
 
     aget-wide v4, v1, v0
 
-    aget-object p2, p2, p1
+    aget-object v0, p2, p1
 
-    const/16 v0, 0x9
+    const/16 v3, 0x9
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v0, v3
 
-    aget-wide v6, v1, p2
+    aget-wide v6, v1, v0
 
     const/4 v8, 0x0
 
@@ -1374,8 +1366,6 @@
     invoke-direct/range {v3 .. v11}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->G(JJIIII)V
 
     .line 462
-    sget-object p2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_sigma:[[B
-
     aget-object v0, p2, p1
 
     const/16 v3, 0xa
@@ -1384,13 +1374,13 @@
 
     aget-wide v4, v1, v0
 
-    aget-object p2, p2, p1
+    aget-object v0, p2, p1
 
-    const/16 v0, 0xb
+    const/16 v3, 0xb
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v0, v3
 
-    aget-wide v6, v1, p2
+    aget-wide v6, v1, v0
 
     const/4 v8, 0x1
 
@@ -1405,8 +1395,6 @@
     invoke-direct/range {v3 .. v11}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->G(JJIIII)V
 
     .line 464
-    sget-object p2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_sigma:[[B
-
     aget-object v0, p2, p1
 
     const/16 v3, 0xc
@@ -1415,13 +1403,13 @@
 
     aget-wide v4, v1, v0
 
-    aget-object p2, p2, p1
+    aget-object v0, p2, p1
 
-    const/16 v0, 0xd
+    const/16 v3, 0xd
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v0, v3
 
-    aget-wide v6, v1, p2
+    aget-wide v6, v1, v0
 
     const/4 v8, 0x2
 
@@ -1436,8 +1424,6 @@
     invoke-direct/range {v3 .. v11}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->G(JJIIII)V
 
     .line 466
-    sget-object p2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_sigma:[[B
-
     aget-object v0, p2, p1
 
     const/16 v3, 0xe
@@ -1505,7 +1491,7 @@
 .end method
 
 .method private init()V
-    .locals 10
+    .locals 11
 
     .line 236
     iget-object v0, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->chainValue:[J
@@ -1580,18 +1566,18 @@
     aput-wide v6, v1, v5
 
     .line 254
-    iget-object v2, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->salt:[B
+    iget-object v6, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->salt:[B
 
-    if-eqz v2, :cond_0
+    if-eqz v6, :cond_0
 
     .line 256
-    aget-wide v6, v1, v4
+    aget-wide v7, v1, v4
 
-    invoke-direct {p0, v2, v3}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->bytes2long([BI)J
+    invoke-direct {p0, v6, v3}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->bytes2long([BI)J
 
-    move-result-wide v8
+    move-result-wide v9
 
-    xor-long/2addr v6, v8
+    xor-long v6, v7, v9
 
     aput-wide v6, v1, v4
 
@@ -1600,9 +1586,9 @@
 
     aget-wide v6, v1, v5
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->salt:[B
+    iget-object v4, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->salt:[B
 
-    invoke-direct {p0, v2, v0}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->bytes2long([BI)J
+    invoke-direct {p0, v4, v0}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->bytes2long([BI)J
 
     move-result-wide v8
 
@@ -1613,8 +1599,6 @@
     .line 260
     :cond_0
     iget-object v1, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->chainValue:[J
-
-    sget-object v2, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_IV:[J
 
     const/4 v4, 0x6
 
@@ -1692,54 +1676,52 @@
     invoke-static {v0, v3, v1, v2, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 275
-    iget-object v0, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->internalState:[J
+    iget-object v1, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->internalState:[J
 
-    iget-wide v1, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->t0:J
+    iget-wide v2, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->t0:J
 
-    sget-object v3, Lorg/spongycastle/crypto/digests/Blake2bDigest;->blake2b_IV:[J
+    aget-wide v4, v0, v4
 
-    aget-wide v4, v3, v4
-
-    xor-long/2addr v1, v4
+    xor-long/2addr v2, v4
 
     const/16 v4, 0xc
 
-    aput-wide v1, v0, v4
+    aput-wide v2, v1, v4
 
     .line 276
-    iget-wide v1, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->t1:J
+    iget-wide v2, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->t1:J
 
     const/4 v4, 0x5
 
-    aget-wide v4, v3, v4
+    aget-wide v4, v0, v4
 
-    xor-long/2addr v1, v4
+    xor-long/2addr v2, v4
 
     const/16 v4, 0xd
 
-    aput-wide v1, v0, v4
+    aput-wide v2, v1, v4
 
     .line 277
-    iget-wide v1, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->f0:J
+    iget-wide v2, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->f0:J
 
     const/4 v4, 0x6
 
-    aget-wide v4, v3, v4
+    aget-wide v4, v0, v4
 
-    xor-long/2addr v1, v4
+    xor-long/2addr v2, v4
 
     const/16 v4, 0xe
 
-    aput-wide v1, v0, v4
+    aput-wide v2, v1, v4
 
-    const/4 v1, 0x7
+    const/4 v2, 0x7
 
     .line 278
-    aget-wide v1, v3, v1
+    aget-wide v2, v0, v2
 
-    const/16 v3, 0xf
+    const/16 v0, 0xf
 
-    aput-wide v1, v0, v3
+    aput-wide v2, v1, v0
 
     return-void
 .end method
@@ -2013,9 +1995,7 @@
 
     .line 408
     :cond_2
-    iget-object p1, p0, Lorg/spongycastle/crypto/digests/Blake2bDigest;->chainValue:[J
-
-    invoke-static {p1, v3, v4}, Lorg/spongycastle/util/Arrays;->fill([JJ)V
+    invoke-static {v2, v3, v4}, Lorg/spongycastle/util/Arrays;->fill([JJ)V
 
     .line 410
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/Blake2bDigest;->reset()V

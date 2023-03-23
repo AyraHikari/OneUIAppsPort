@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -30,48 +30,46 @@
 
 
 # instance fields
-.field badgeSavedStates:Lcom/google/android/material/internal/ParcelableSparseArray;
+.field public h:I
 
-.field selectedItemId:I
+.field public i:Lcom/google/android/material/internal/ParcelableSparseArray;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 250
-    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState$1;
+    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState$a;
 
-    invoke-direct {v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState$1;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState$a;-><init>()V
 
     sput-object v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 232
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 234
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 235
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->selectedItemId:I
+    iput v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->h:I
 
-    .line 236
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -86,7 +84,7 @@
 
     check-cast p1, Lcom/google/android/material/internal/ParcelableSparseArray;
 
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->badgeSavedStates:Lcom/google/android/material/internal/ParcelableSparseArray;
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->i:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     return-void
 .end method
@@ -104,13 +102,13 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 246
-    iget p2, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->selectedItemId:I
+    .line 1
+    iget p2, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->h:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 247
-    iget-object p2, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->badgeSavedStates:Lcom/google/android/material/internal/ParcelableSparseArray;
+    .line 2
+    iget-object p2, p0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->i:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     const/4 v0, 0x0
 

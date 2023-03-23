@@ -297,15 +297,13 @@
     if-eqz v0, :cond_1
 
     .line 100
-    iget v0, p0, Lorg/spongycastle/jce/provider/X509CRLParser;->sDataObjectCount:I
+    iget v2, p0, Lorg/spongycastle/jce/provider/X509CRLParser;->sDataObjectCount:I
 
-    iget-object v2, p0, Lorg/spongycastle/jce/provider/X509CRLParser;->sData:Lorg/spongycastle/asn1/ASN1Set;
+    invoke-virtual {v0}, Lorg/spongycastle/asn1/ASN1Set;->size()I
 
-    invoke-virtual {v2}, Lorg/spongycastle/asn1/ASN1Set;->size()I
+    move-result v0
 
-    move-result v2
-
-    if-eq v0, v2, :cond_0
+    if-eq v2, v0, :cond_0
 
     .line 102
     invoke-direct {p0}, Lorg/spongycastle/jce/provider/X509CRLParser;->getCRL()Ljava/security/cert/CRL;

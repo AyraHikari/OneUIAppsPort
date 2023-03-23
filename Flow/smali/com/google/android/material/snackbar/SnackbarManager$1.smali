@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/snackbar/SnackbarManager;)V
     .locals 0
 
-    .line 52
+    .line 54
     iput-object p1, p0, Lcom/google/android/material/snackbar/SnackbarManager$1;->this$0:Lcom/google/android/material/snackbar/SnackbarManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 1
 
-    .line 55
+    .line 57
     iget v0, p1, Landroid/os/Message;->what:I
 
     if-eqz v0, :cond_0
@@ -47,7 +47,7 @@
 
     return p1
 
-    .line 57
+    .line 59
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarManager$1;->this$0:Lcom/google/android/material/snackbar/SnackbarManager;
 

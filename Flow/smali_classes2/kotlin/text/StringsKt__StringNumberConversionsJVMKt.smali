@@ -5,17 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nStringNumberConversionsJVM.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StringNumberConversionsJVM.kt\nkotlin/text/StringsKt__StringNumberConversionsJVMKt\n*L\n1#1,271:1\n262#1,7:272\n262#1,7:279\n262#1,7:286\n262#1,7:293\n*E\n*S KotlinDebug\n*F\n+ 1 StringNumberConversionsJVM.kt\nkotlin/text/StringsKt__StringNumberConversionsJVMKt\n*L\n139#1,7:272\n146#1,7:279\n226#1,7:286\n237#1,7:293\n*E\n"
+    value = "SMAP\nStringNumberConversionsJVM.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StringNumberConversionsJVM.kt\nkotlin/text/StringsKt__StringNumberConversionsJVMKt\n*L\n1#1,283:1\n274#1,7:284\n274#1,7:291\n274#1,7:298\n274#1,7:305\n*S KotlinDebug\n*F\n+ 1 StringNumberConversionsJVM.kt\nkotlin/text/StringsKt__StringNumberConversionsJVMKt\n*L\n151#1:284,7\n158#1:291,7\n238#1:298,7\n249#1:305,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
-        "\u0000X\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0005\n\u0000\n\u0002\u0010\u0006\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0010\n\n\u0002\u0008\u0002\u001a4\u0010\u0000\u001a\u0004\u0018\u0001H\u0001\"\u0004\u0008\u0000\u0010\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u0002H\u00010\u0005H\u0082\u0008\u00a2\u0006\u0004\u0008\u0006\u0010\u0007\u001a\r\u0010\u0008\u001a\u00020\t*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\u0008\u001a\u00020\t*\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0087\u0008\u001a\u000e\u0010\u000c\u001a\u0004\u0018\u00010\t*\u00020\u0003H\u0007\u001a\u0016\u0010\u000c\u001a\u0004\u0018\u00010\t*\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0007\u001a\r\u0010\r\u001a\u00020\u000e*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\r\u001a\u00020\u000e*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u000e\u0010\u0011\u001a\u0004\u0018\u00010\u000e*\u00020\u0003H\u0007\u001a\u0016\u0010\u0011\u001a\u0004\u0018\u00010\u000e*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0007\u001a\r\u0010\u0012\u001a\u00020\u0013*\u00020\u0003H\u0087\u0008\u001a\r\u0010\u0014\u001a\u00020\u0015*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\u0014\u001a\u00020\u0015*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\r\u0010\u0016\u001a\u00020\u0017*\u00020\u0003H\u0087\u0008\u001a\u0013\u0010\u0018\u001a\u0004\u0018\u00010\u0017*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u0019\u001a\r\u0010\u001a\u001a\u00020\u001b*\u00020\u0003H\u0087\u0008\u001a\u0013\u0010\u001c\u001a\u0004\u0018\u00010\u001b*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u001d\u001a\r\u0010\u001e\u001a\u00020\u0010*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\u001e\u001a\u00020\u0010*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\r\u0010\u001f\u001a\u00020 *\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\u001f\u001a\u00020 *\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\r\u0010!\u001a\u00020\"*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010!\u001a\u00020\"*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010#\u001a\u00020\u0003*\u00020\u00152\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010#\u001a\u00020\u0003*\u00020\u00102\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010#\u001a\u00020\u0003*\u00020 2\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010#\u001a\u00020\u0003*\u00020\"2\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u00a8\u0006$"
+        "\u0000Z\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0005\n\u0000\n\u0002\u0010\u0006\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0010\n\n\u0002\u0008\u0002\u001a4\u0010\u0000\u001a\u0004\u0018\u0001H\u0001\"\u0004\u0008\u0000\u0010\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u0002H\u00010\u0005H\u0082\u0008\u00a2\u0006\u0004\u0008\u0006\u0010\u0007\u001a\r\u0010\u0008\u001a\u00020\t*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\u0008\u001a\u00020\t*\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0087\u0008\u001a\u000e\u0010\u000c\u001a\u0004\u0018\u00010\t*\u00020\u0003H\u0007\u001a\u0016\u0010\u000c\u001a\u0004\u0018\u00010\t*\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0007\u001a\r\u0010\r\u001a\u00020\u000e*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\r\u001a\u00020\u000e*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u000e\u0010\u0011\u001a\u0004\u0018\u00010\u000e*\u00020\u0003H\u0007\u001a\u0016\u0010\u0011\u001a\u0004\u0018\u00010\u000e*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0007\u001a\r\u0010\u0012\u001a\u00020\u0013*\u00020\u0003H\u0087\u0008\u001a\u0014\u0010\u0012\u001a\u00020\u0013*\u0004\u0018\u00010\u0003H\u0087\u0008\u00a2\u0006\u0002\u0008\u0014\u001a\r\u0010\u0015\u001a\u00020\u0016*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\u0015\u001a\u00020\u0016*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\r\u0010\u0017\u001a\u00020\u0018*\u00020\u0003H\u0087\u0008\u001a\u0013\u0010\u0019\u001a\u0004\u0018\u00010\u0018*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u001a\u001a\r\u0010\u001b\u001a\u00020\u001c*\u00020\u0003H\u0087\u0008\u001a\u0013\u0010\u001d\u001a\u0004\u0018\u00010\u001c*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u001e\u001a\r\u0010\u001f\u001a\u00020\u0010*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\u001f\u001a\u00020\u0010*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\r\u0010 \u001a\u00020!*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010 \u001a\u00020!*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\r\u0010\"\u001a\u00020#*\u00020\u0003H\u0087\u0008\u001a\u0015\u0010\"\u001a\u00020#*\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010$\u001a\u00020\u0003*\u00020\u00162\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010$\u001a\u00020\u0003*\u00020\u00102\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010$\u001a\u00020\u0003*\u00020!2\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u001a\u0015\u0010$\u001a\u00020\u0003*\u00020#2\u0006\u0010\u000f\u001a\u00020\u0010H\u0087\u0008\u00a8\u0006%"
     }
     d2 = {
         "screenFloatValue",
@@ -38,6 +33,7 @@
         "toBigIntegerOrNull",
         "toBoolean",
         "",
+        "toBooleanNullable",
         "toByte",
         "",
         "toDouble",
@@ -59,10 +55,10 @@
     k = 0x5
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
-    xi = 0x1
+    xi = 0x31
     xs = "kotlin/text/StringsKt"
 .end annotation
 
@@ -93,7 +89,7 @@
 
     const/4 v0, 0x0
 
-    .line 263
+    .line 275
     :try_start_0
     sget-object v1, Lkotlin/text/ScreenFloatValueRegEx;->value:Lkotlin/text/Regex;
 
@@ -107,7 +103,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 264
+    .line 276
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -124,7 +120,11 @@
 .method private static final toBigDecimal(Ljava/lang/String;)Ljava/math/BigDecimal;
     .locals 1
 
-    .line 206
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 218
     new-instance v0, Ljava/math/BigDecimal;
 
     invoke-direct {v0, p0}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;)V
@@ -135,7 +135,15 @@
 .method private static final toBigDecimal(Ljava/lang/String;Ljava/math/MathContext;)Ljava/math/BigDecimal;
     .locals 1
 
-    .line 218
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "mathContext"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 230
     new-instance v0, Ljava/math/BigDecimal;
 
     invoke-direct {v0, p0, p1}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;Ljava/math/MathContext;)V
@@ -146,13 +154,13 @@
 .method public static final toBigDecimalOrNull(Ljava/lang/String;)Ljava/math/BigDecimal;
     .locals 3
 
-    const-string v0, "$this$toBigDecimalOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 287
+    .line 299
     :try_start_0
     sget-object v1, Lkotlin/text/ScreenFloatValueRegEx;->value:Lkotlin/text/Regex;
 
@@ -166,9 +174,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 226
+    .line 300
     new-instance v1, Ljava/math/BigDecimal;
 
+    .line 238
     invoke-direct {v1, p0}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -183,17 +192,17 @@
 .method public static final toBigDecimalOrNull(Ljava/lang/String;Ljava/math/MathContext;)Ljava/math/BigDecimal;
     .locals 3
 
-    const-string v0, "$this$toBigDecimalOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "mathContext"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 294
+    .line 306
     :try_start_0
     sget-object v1, Lkotlin/text/ScreenFloatValueRegEx;->value:Lkotlin/text/Regex;
 
@@ -207,9 +216,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 237
+    .line 307
     new-instance v1, Ljava/math/BigDecimal;
 
+    .line 249
     invoke-direct {v1, p0, p1}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;Ljava/math/MathContext;)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -224,7 +234,11 @@
 .method private static final toBigInteger(Ljava/lang/String;)Ljava/math/BigInteger;
     .locals 1
 
-    .line 155
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 167
     new-instance v0, Ljava/math/BigInteger;
 
     invoke-direct {v0, p0}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;)V
@@ -235,7 +249,11 @@
 .method private static final toBigInteger(Ljava/lang/String;I)Ljava/math/BigInteger;
     .locals 1
 
-    .line 165
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 177
     new-instance v0, Ljava/math/BigInteger;
 
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
@@ -250,13 +268,13 @@
 .method public static final toBigIntegerOrNull(Ljava/lang/String;)Ljava/math/BigInteger;
     .locals 1
 
-    const-string v0, "$this$toBigIntegerOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0xa
 
-    .line 172
+    .line 184
     invoke-static {p0, v0}, Lkotlin/text/StringsKt;->toBigIntegerOrNull(Ljava/lang/String;I)Ljava/math/BigInteger;
 
     move-result-object p0
@@ -267,14 +285,14 @@
 .method public static final toBigIntegerOrNull(Ljava/lang/String;I)Ljava/math/BigInteger;
     .locals 6
 
-    const-string v0, "$this$toBigIntegerOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 182
+    .line 194
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
-    .line 183
+    .line 195
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -289,7 +307,7 @@
 
     if-eq v0, v3, :cond_2
 
-    .line 188
+    .line 200
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -304,7 +322,7 @@
     :goto_0
     if-ge v2, v0, :cond_3
 
-    .line 190
+    .line 202
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -322,7 +340,7 @@
 
     goto :goto_0
 
-    .line 186
+    .line 198
     :cond_2
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
@@ -336,10 +354,11 @@
 
     return-object v1
 
-    .line 195
+    .line 201
     :cond_3
     new-instance v0, Ljava/math/BigInteger;
 
+    .line 207
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
     move-result p1
@@ -352,10 +371,32 @@
     return-object v1
 .end method
 
-.method private static final toBoolean(Ljava/lang/String;)Z
+.method private static final synthetic toBoolean(Ljava/lang/String;)Z
+    .locals 1
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Use Kotlin compiler 1.4 to avoid deprecation warning."
+    .end annotation
+
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        hiddenSince = "1.4"
+    .end annotation
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 54
+    invoke-static {p0}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static final toBooleanNullable(Ljava/lang/String;)Z
     .locals 0
 
-    .line 52
+    .line 64
     invoke-static {p0}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
     move-result p0
@@ -364,9 +405,13 @@
 .end method
 
 .method private static final toByte(Ljava/lang/String;)B
-    .locals 0
+    .locals 1
 
-    .line 59
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 71
     invoke-static {p0}, Ljava/lang/Byte;->parseByte(Ljava/lang/String;)B
 
     move-result p0
@@ -375,9 +420,13 @@
 .end method
 
 .method private static final toByte(Ljava/lang/String;I)B
-    .locals 0
+    .locals 1
 
-    .line 68
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 80
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
     move-result p1
@@ -392,7 +441,11 @@
 .method private static final toDouble(Ljava/lang/String;)D
     .locals 2
 
-    .line 131
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 143
     invoke-static {p0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     move-result-wide v0
@@ -403,13 +456,13 @@
 .method public static final toDoubleOrNull(Ljava/lang/String;)Ljava/lang/Double;
     .locals 3
 
-    const-string v0, "$this$toDoubleOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 280
+    .line 292
     :try_start_0
     sget-object v1, Lkotlin/text/ScreenFloatValueRegEx;->value:Lkotlin/text/Regex;
 
@@ -423,7 +476,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 146
+    .line 158
     invoke-static {p0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     move-result-wide v1
@@ -442,9 +495,13 @@
 .end method
 
 .method private static final toFloat(Ljava/lang/String;)F
-    .locals 0
+    .locals 1
 
-    .line 124
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 136
     invoke-static {p0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
     move-result p0
@@ -455,13 +512,13 @@
 .method public static final toFloatOrNull(Ljava/lang/String;)Ljava/lang/Float;
     .locals 3
 
-    const-string v0, "$this$toFloatOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 273
+    .line 285
     :try_start_0
     sget-object v1, Lkotlin/text/ScreenFloatValueRegEx;->value:Lkotlin/text/Regex;
 
@@ -475,7 +532,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 139
+    .line 151
     invoke-static {p0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
     move-result p0
@@ -494,9 +551,13 @@
 .end method
 
 .method private static final toInt(Ljava/lang/String;)I
-    .locals 0
+    .locals 1
 
-    .line 92
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 104
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result p0
@@ -505,9 +566,13 @@
 .end method
 
 .method private static final toInt(Ljava/lang/String;I)I
-    .locals 0
+    .locals 1
 
-    .line 101
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 113
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
     move-result p1
@@ -522,7 +587,11 @@
 .method private static final toLong(Ljava/lang/String;)J
     .locals 2
 
-    .line 108
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 120
     invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v0
@@ -531,9 +600,13 @@
 .end method
 
 .method private static final toLong(Ljava/lang/String;I)J
-    .locals 0
+    .locals 1
 
-    .line 117
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 129
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
     move-result p1
@@ -546,9 +619,13 @@
 .end method
 
 .method private static final toShort(Ljava/lang/String;)S
-    .locals 0
+    .locals 1
 
-    .line 76
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 88
     invoke-static {p0}, Ljava/lang/Short;->parseShort(Ljava/lang/String;)S
 
     move-result p0
@@ -557,9 +634,13 @@
 .end method
 
 .method private static final toShort(Ljava/lang/String;I)S
-    .locals 0
+    .locals 1
 
-    .line 85
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 97
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
     move-result p1
@@ -587,9 +668,9 @@
 
     move-result-object p0
 
-    const-string p1, "java.lang.Integer.toStri\u2026(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(this, checkRadix(radix))"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -606,9 +687,9 @@
 
     move-result-object p0
 
-    const-string p1, "java.lang.Integer.toStri\u2026(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(this, checkRadix(radix))"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -625,9 +706,9 @@
 
     move-result-object p0
 
-    const-string p1, "java.lang.Long.toString(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(this, checkRadix(radix))"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -648,9 +729,9 @@
 
     move-result-object p0
 
-    const-string p1, "java.lang.Integer.toStri\u2026(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(this, checkRadix(radix))"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

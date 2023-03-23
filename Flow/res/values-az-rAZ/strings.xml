@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">Telefondan proqram əlavə edin</string>
     <string name="add_your_bio_first_dialog_desc">Samsung Flow-ya daxil olmaq üçün tablet bioölçülərindən istifadə etmək üçün barmaq izi və göz qüzehlərini tabletdə qeydiyyatdan keçirin və yenidən cəhd edin.</string>
     <string name="add_your_bio_first_dialog_title">Əvvəl bioölçü əlavə edin</string>
+    <string name="advanced_features">Qabaqcıl funksiyalar</string>
     <string name="alarm">Xəbərdarlıq siqnalı</string>
     <string name="all_apps">Bütün proqramlar</string>
     <string name="allow_appear_on_top">Digər pəncər. üzərində göstər</string>
     <string name="allow_appear_on_top_desc">Ani pəncərələr və bildirişlər kimi elementlərin kompüterdə və ya tabletdə istifadə etdiyiniz digər proqramların üzərində göstərilməsi üçün Parametrlərdə Digər pəncərələrin üzərində göstər icazəsini verin.</string>
+    <string name="allow_location_settings">Cihazlarda Məkan parametrlərinə giriş icazəsi ver</string>
     <string name="and_more">%1$s və daha %2$d</string>
+    <string name="app_info">Proqram məlumatları</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">Qoş</string>
     <string name="attach_image">Şəkil</string>
     <string name="attach_my_files">Mənim fayllarım</string>
     <string name="attach_sound">Audio</string>
@@ -38,20 +43,29 @@
 -da
 Samsung Flow"</string>
     <string name="bluetooth_connection_failed_text">Telefonda Samsung Flow yanılı olduğundan əmin olun.</string>
+    <string name="bt_or_nfc_turned_on">Samsung Flow-dan istifadə etmək üçün %s yandırılmalıdır.</string>
+    <string name="btn_desc_cancel">Ləğv et</string>
+    <string name="btn_desc_failed">Alınmadı</string>
+    <string name="can_not_use">%s istifadə etmək olmur</string>
+    <string name="can_not_use_at_same_time">%1$s və %2$s eyni anda aktivləşdirilə bilməz. %3$s qeyri-aktiv ediləcəkdir.</string>
     <string name="cancel_all">Hamısını ləğv et</string>
     <string name="cant_share_files">Faylları paylaşmaq mümkün deyil</string>
     <string name="cant_use_mobile_hotspot_case_1">Şəbəkə ilə bağlı xəta baş verdi. Telefonunuzda Mobil Giriş nöqtəsini yoxlayın və yenidən cəhd edin.</string>
     <string name="cant_use_mobile_hotspot_case_2">Şəbəkə ilə bağlı xəta baş verdi. Planınızın Mobil Giriş nöqtəsini dəstəkləyib-dəstəkləmədiyini öyrənmək üçün xidmət təchizatçınız ilə əlaqə saxlayın.</string>
     <string name="cant_use_mobile_hotspot_title">Mobil Giriş nöqtəsi istifadəsi alınmadı.</string>
     <string name="cant_use_this_function_in_multi_window">Bu funksiyadan Çoxsaylı pəncərə görünüşündə istifadə etmək olmur.</string>
-    <string name="chan_mkt">Marketinq</string>
-    <string name="chan_ntc">Qeyd</string>
-    <string name="checkbox_all">Hamısını</string>
+    <string name="change_location_settings">Məkan param dəyiş</string>
+    <string name="character_counter_content_description">%1$d / %2$d simvol</string>
+    <string name="checkbox_all">Hamısı</string>
+    <string name="china_network_permission_popup_body">%s şəbəkə bağlantılarından istifadə icazəsi verilsin?</string>
+    <string name="china_network_permission_popup_title">Şəbəkə bağlantılarından istifadə et</string>
+    <string name="clipboard">Mübd bufer</string>
     <string name="clipboard_off">Mübadilə buferindəki məzmunu qoşulmuş cihazlar ilə paylaşmağı dayandır</string>
     <string name="clipboard_on">Mübadilə buferindəki məzmunu qoşulmuş cihazlar ilə paylaş</string>
     <string name="close_app">Proqramı bağla</string>
     <string name="confirm_pass_key_connecting_to_deivce">%s qoşulur…</string>
-    <string name="connect_help_desc0">Telefon və ya saatınızda Samsung Flow-nu yandırın.</string>
+    <string name="confirm_your_phone">Telefonda təsdiq edin</string>
+    <string name="connect_help_desc0">Telefonda Samsung Flow yandır.</string>
     <string name="connect_help_desc1">Hər iki cihazda Bluetooth və ya Wi-Fi-ın qoşulu olduğundan əmin olun.</string>
     <string name="connect_help_desc2">Wi-Fi və ya LAN bağlantılarından istifadə edirsinizsə, hər iki cihazın eyni şəbəkəyə qoşulmuş olmasından əmin olun.</string>
     <string name="connect_help_desc4">Tableti kompüterə qoşmağa çalışmadığınızdan əmin olun. Bu, Samsung Flow ilə dəstəklənmir.</string>
@@ -69,16 +83,18 @@ Samsung Flow"</string>
     <string name="connection_error_register_fail">Qeydiyyat uğursuz oldu. Yenidən cəhd edin.</string>
     <string name="connection_failed">Qoşulmaq olmadı.</string>
     <string name="connection_goto_permission_setting">%s-dən istifadə etmək üçün Parametrlər vurun və Proqram məlumatı > İcazələr seçin və aşağıdakı icazələri verin:</string>
+    <string name="connection_method_biometrics">Biometrik məlumatlar</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">Samsung Flow-da biometrik məlumatlardan istifadə etmək üçün Parametrlərdə biometrik məlumatları qeydiyyatdan keçirməlisiniz.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">Bioölçüləri qeydiyyatdan keçirin</string>
+    <string name="connection_method_biometrics_required_title">Biometrik məlumatlardan %s proqramında istifadə etmək üçün təsdiqləmə lazımdır.</string>
+    <string name="connection_method_manual">Əl ilə</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">Samsung Pass-dan istifadə etməklə biometrik məlumatlar ilə %s cihazına avtomatik olaraq yenidən qoşulun.</string>
-    <string name="connection_method_simple_connection">Sadə qoşulma</string>
-    <string name="connection_method_simple_connection_desc">Telefonunuzda təsdiqləmədən %s cihazına avtomatik olaraq yenidən qoşulun.</string>
-    <string name="connection_method_simple_connection_desc_tab">Tabletinizdə təsdiqləmədən %s cihazına avtomatik olaraq yenidən qoşulun.</string>
+    <string name="connection_method_simple_connection">Avtomatik qoşulma</string>
     <string name="connection_method_tablet_bio">Tablet bioölçüləri</string>
-    <string name="connection_method_tablet_bio_desc">Tabletinizdəki biometrik məlumatlar ilə %s cihazına avtomatik olaraq yenidən qoşulun.</string>
     <string name="connection_request_noti_accept">Qəbul et</string>
     <string name="connection_request_noti_desc">%s telefona qoşulmaq icazəsi verilsin?</string>
     <string name="content_shared_via">Məzmun %s ilə paylaşıldı</string>
+    <string name="continue_apps_on_other_device">Proq. başqa cihaz. davam etdir</string>
     <string name="copied_to_clipboard">Mübadilə buferinə kopyalandı.</string>
     <string name="copy_text">Mətnin surətini çıxar</string>
     <string name="delete_lower">Sil</string>
@@ -90,8 +106,11 @@ Samsung Flow"</string>
     <string name="device_not_secured_desc_for_bio">Tabletdə bioölçülərdən istifadə etmək üçün telefonda ekran kilidini qurmalısınız.</string>
     <string name="device_not_secured_desc_for_watch">Saatdan istifadə etmək üçün telefonda ekran kilidini qurmalısınız.</string>
     <string name="device_status_connected">Qoşuldu</string>
+    <string name="device_status_connected_with">%s ilə əlaqə yaradıldı.</string>
+    <string name="device_status_disconnected">əlaqəsi pozuldu.</string>
     <string name="device_status_registered">Qeydiyyatdan keçdi</string>
     <string name="device_storage">Cihazın yaddaşı</string>
+    <string name="dialog_allow">İcazə ver</string>
     <string name="dialog_close">Bağla</string>
     <string name="dialog_deny">Rədd et</string>
     <string name="dialog_desc_turn_off_mirroring">Smart View söndürülsün?</string>
@@ -99,6 +118,7 @@ Samsung Flow"</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_retry">Təkrarla</string>
     <string name="dismiss">Ləğv et</string>
+    <string name="dragndroplist_drag_move">İndi %d mövqeyindədir</string>
     <string name="dragndroplist_drag_release">Element %d mövqeyinə gətirilmişdir.</string>
     <string name="dragndroplist_drag_start">%d mövqeyindəki elementi dartmağa başlayır.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d mövqedəki element dartıla bilməz.</string>
@@ -118,41 +138,8 @@ Samsung Flow"</string>
     <string name="flow_main_device_not_secure_dialog_desc">Windows ekran kilidindən istifadə etmək üçün telefonda ekran kilidini qurmalısınız.</string>
     <string name="flow_main_device_not_secure_dialog_title">Təhlükəsizlik ekran kilidini qur</string>
     <string name="go_to_settings">Parametrə keç</string>
-    <string name="help_clipboard_desc">"Əlaqələndirilmiş tablet və ya kompüter ilə mübadilə buferində olan təsvirləri, mətn və veb-ünvanları paylaşa bilərsiniz.
-
-Bu funksiya batareya istifadəsini artıra bilər."</string>
-    <string name="help_clipboard_title">Mübadilə buferindən istifadə</string>
-    <string name="help_connecting_devices_desc_1">Kompüter və ya tableti Samsung Flow ilə telefona qoşun (%s).</string>
-    <string name="help_connecting_devices_desc_2">Hər iki cihazda Bluetooth yanılı olduğundan və eyni şəbəkəyə Wi-Fi və ya LAN bağlantısı olduğundan əmin olun.</string>
-    <string name="help_connecting_devices_desc_2_1">USB naqildən istifadə edirsinizsə, onun hər iki cihaza qoşulduğundan və qoşulmuş cihazda Android 10 və ya daha sonrakı versiyanın quraşdırıldığından əmin olun.</string>
-    <string name="help_connecting_devices_desc_3">Hər iki cihazda Samsung Flow açın və kompüterdə qurulma ustasını izləyin.</string>
-    <string name="help_connecting_devices_desc_4">Ətraflı məlumat almaq üçün www.samsung.com/samsungflow səhifəsinə daxil olun.</string>
-    <string name="help_connecting_devices_desc_5">Minimum tələblər</string>
-    <string name="help_connecting_devices_desc_6">Windows kompüter və ya tableti: Windows 10 Creators Update (v1703) və June patch build (15063.413), Bluetooth (Bluetooth LE əlavədir) və Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Android tablet: Android Marshmallow və ya sonrakı versiya. Ətraflı məlumat almaq üçün MVS-a baxın.</string>
-    <string name="help_connecting_devices_title">Kompüterlər/tabletlərə qoşulur</string>
     <string name="help_contact_us">Bizimlə əlaqə</string>
     <string name="help_install_samsung_flow_title">Cihazları Samsung Flow ilə qoş</string>
-    <string name="help_mobile_hotspot_desc">Telefonunuzda Mobil Giriş nöqtəsini yandırmaq üçün %s seçiminə vurun. Bu, Android 11 və ya daha sonrakı versiyalar ilə işləyən telefonlarda işləmir.</string>
-    <string name="help_mobile_hotspot_title">Mobil giriş nöqtəs istifadə</string>
-    <string name="help_noti_sync_desc">"Samsung Flow-dan istifadə edərək kompüter və ya tableti qoşduqda kompüter və ya tabletinizdə telefonunuzdan gələn bildirişlərə baxın. Yeni bildirişlər qəbul edildikdə digər proqramlardan olan mesajlara anında cavab verə bilərsiniz.
-
-Bu funksiya bəzi mesaj proqramları üçün əlçatan olmaya bilər.
-
-Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçərək Samsung Flow-da bildirişləri idarə edə bilərsiniz."</string>
-    <string name="help_noti_sync_title">Bildirişlərin sinxronlaşd</string>
-    <string name="help_sharing_contents_desc_1">Məzmunu asanlıqla qoşulmuş cihazlar arasında paylaşa bilərsiniz.</string>
-    <string name="help_sharing_contents_desc_2">Telefondan kompüter və ya tabletə</string>
-    <string name="help_sharing_contents_desc_3">Proqramda brauzer kimi paylaşım seçimi tapın və Samsung Flow seçin.</string>
-    <string name="help_sharing_contents_desc_4">Eyni zamanda Flow tarixçəsi panelində %s vuraraq fayllar seçə və onları paylaşa bilərsiniz.</string>
-    <string name="help_sharing_contents_desc_5">Kompüter və ya tabletdən telefona</string>
-    <string name="help_sharing_contents_desc_6">Proqramda brauzer kimi paylaşım seçimi tapın və Samsung Flow seçin.</string>
-    <string name="help_sharing_contents_desc_7">Eyni zamanda Flow tarixçəsi panelində %s vuraraq fayllar seçə və onları paylaşa bilər və ya faylları dartıb Samsung Flow-ya gətirə bilərsiniz.</string>
-    <string name="help_sharing_contents_title">Məzmun paylaşımı</string>
-    <string name="help_smart_view_desc">Telefonun ekranını tablet və ya kompüterdə əks etdirmək üçün Smart View işarəsinin üzərinə vurun.</string>
-    <string name="help_smart_view_desc_2">Smart View funksiyasından istifadə zamanı daha cəld giriş imkanı əldə etmək məqsədilə sevimli proqramları əlavə etmək üçün ulduz işarəsinin üzərinə vurun.</string>
-    <string name="help_smart_view_title">Smart View-dan istifadə</string>
-    <string name="help_using_multi_device_title">Çoxsaylı Kompüter/tablet istif</string>
     <string name="hotspot_description">Samsung Flow işləyən zaman Mobil Giriş nöqtəsi ilə internetə çıxış kimi qoşulmuş cihazdan istifadə edin.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">Mobil Giriş nöqtəsindən istifadə etmək üçün Wi-Fi sönməlidir.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">Wi-Fi sönsün?</string>
@@ -185,7 +172,11 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="menu_do_not_disturb">Narahat etmə</string>
     <string name="menu_enable_hotspot">Mobil Giriş nöqtəs qoşul</string>
     <string name="menu_favorites">Sevimlilər</string>
+    <string name="menu_favorites_add">Əlavə et</string>
+    <string name="menu_favorites_remove">Sil</string>
     <string name="menu_full_screen">Tam görünüş</string>
+    <string name="menu_more">Daha çox</string>
+    <string name="menu_phone_screen">Telefon ekranı</string>
     <string name="menu_resolution">Əksetmə qabiliyyəti</string>
     <string name="menu_resolution_option_high">Yüksək</string>
     <string name="menu_resolution_option_low">Aşağı</string>
@@ -231,6 +222,10 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="noti_desc_screenshot_saved">Ekran çəkiminə baxmaq üçün bura vurun.</string>
     <string name="noti_title_screenshot_saved">Qısayol saxlandı</string>
     <string name="notices">Bildirişlər</string>
+    <string name="notices_last_for_android6_desc">"Bu, Android 6.0 (Marshmallow) üçün son yeniləmədir. ƏS məhdudiyyətlərinə görə Samsung Flow artıq Android 6.0 versiyasını dəstəkləmir.
+
+Android 6.0 istifadəçiləri Samsung Flow xidmətini yeniləmədən istifadə edə bilərlər."</string>
+    <string name="notices_last_for_android6_title">Android 6.0 (Marshmallow) versiyasının dəstəklənməsi dayandırılır</string>
     <string name="notices_notice">Bildiriş</string>
     <string name="notices_update">Yenilə</string>
     <string name="notices_update_include">Proqram təminatı yeniləmələrinə daxil ola bilər:</string>
@@ -255,6 +250,8 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="option_connection_type_wifi">Wi-Fi və ya LAN</string>
     <string name="pc">Kompüter</string>
     <string name="permissions">İcazələr</string>
+    <string name="permissions_all_files_access">Bütün fayllara giriş imkanı</string>
+    <string name="permissions_all_files_access_desc">Şəkillər, media və faylları köçürmək üçün istifadə edilib.</string>
     <string name="permissions_appear_on_top_desc">Bildirişləri digər proqramların üzərində göstərmək üçün istifadə olunur</string>
     <string name="permissions_appear_on_top_title">Bildirişlərin digər proqramların üzərində görünməsi üçün Samsung Flow xidmətinə Digər pəncərələrin üzərində göstərilmə icazəsi verilsin?</string>
     <string name="permissions_call_log">Zəng jurnalı</string>
@@ -266,6 +263,8 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="permissions_location_desc">Bluetooth ilə yaxın Galaxy cihazlarını axtarmaq üçün istifadə edilir.</string>
     <string name="permissions_microphone">Mikrofon</string>
     <string name="permissions_microphone_desc">Yüksək tezlikli audio alaraq Galaxy cihazlarını qoşmaq üçün istifadə edilib.</string>
+    <string name="permissions_nearby_devices">Yaxınlıqdakı cihazlar</string>
+    <string name="permissions_nearby_devices_desc">Yaxınlıqdakı cihazları tapmaq və qeydiyyatdan keçmiş cihazları izləmək üçün istifadə edilir</string>
     <string name="permissions_notification_access_desc">Bildirişləri qoşulmuş cihaza göndərmək üçün istifadə olunur</string>
     <string name="permissions_phone">Telefon</string>
     <string name="permissions_phone_desc">Telefon nömrənizi təsdiq etmək üçün istifadə edilib.</string>
@@ -273,11 +272,11 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="permissions_sms_desc">Mətn mesajlarını köçürmək üçün istifadə edilib.</string>
     <string name="permissions_storage">Yaddaş yeri</string>
     <string name="permissions_storage_desc">Şəkillər, media və faylları köçürmək üçün istifadə edilib.</string>
-    <string name="permissions_title">%s üzrə icazələr</string>
+    <string name="permissions_title">Samsung Flow bu icazələrdən istifadə edir</string>
     <string name="phone">Telefon</string>
     <string name="press_enter_key_to_send">Enter düyməsilə mesajlar göndər</string>
     <string name="processing">Emal edilir…</string>
-    <string name="receiving_failed">Qəbul etmək mümkün olmadı.</string>
+    <string name="receiving_failed">Bu mesajı qəbul edərkən xəta baş verdi.</string>
     <string name="register_failed">Daha sonra yenidən cəhd et.</string>
     <string name="resend">Yenidən göndər</string>
     <string name="rooted_device">Cihazınız kökləndi. Təhlükəsizlik səbəbindən köklənən cihazda %s istifadə edilə bilməz.</string>
@@ -295,11 +294,19 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="select_apps_for_shortcuts">Qısayollar üçün proqramlar seçin</string>
     <string name="select_items">Elementləri seç</string>
     <string name="send">Göndər</string>
-    <string name="sending_failed">Göndərmək olmadı.</string>
-    <string name="sesl_action_bar_up_description">Yuxarı naviqasiya</string>
+    <string name="sending_failed">Bu mesajı göndərərkən xəta baş verdi.</string>
+    <string name="sesl_action_bar_up_description">Yuxarı keç</string>
     <string name="sesl_action_menu_overflow_badge_description">Yeni məzmun mövcuddur</string>
     <string name="sesl_action_menu_overflow_badge_text_n">Yn</string>
     <string name="sesl_action_menu_overflow_description">Daha çox seçim</string>
+    <string name="sesl_index_assistant_text">Sürüşdürmək üçün iki barmağınızla yuxarı və ya aşağı sürüşdürün.</string>
+    <string name="sesl_index_scrollbar">Sürüşdürmə paneli</string>
+    <string name="sesl_index_section">Bölmə indeksi</string>
+    <string name="sesl_index_selected">Seçilmiş</string>
+    <string name="sesl_material_badge_description">Yeni məzmun mövcuddur</string>
+    <string name="sesl_material_overflow_badge_text_n">Yn</string>
+    <string name="sesl_more_item_label">Daha çox</string>
+    <string name="sesl_preferecne_badge_description">Yeni bildiriş</string>
     <string name="sesl_preferencecategory_added_title">Başlıq</string>
     <string name="sesl_search_hint">Axtar</string>
     <string name="sesl_searchview_description_clear">Axtarış sahəsini sil</string>
@@ -309,6 +316,10 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="sesl_searchview_description_voice">Səs axtarışı</string>
     <string name="sesl_switch_off">Sönülü</string>
     <string name="sesl_switch_on">Yanılı</string>
+    <string name="sesl_switchbar_off_text">Söndür</string>
+    <string name="sesl_switchbar_on_text">Qoş</string>
+    <string name="sesl_toolbar_collapse_description">Yığ</string>
+    <string name="set_screen_lock_title">Ekran kilidini qur</string>
     <string name="settings">Parametrlər</string>
     <string name="settings_auto_hotspot_desc">Qoşulan cihaz internetə qoşulmadıqda telefondan internet çıxış nöqtəsi kimi istifadə edin.</string>
     <string name="settings_deregister_confirm_dialog_desc">Gələcəkdə cihaza qoşulmaq üçün onu yenidən qeydiyyatdan keçirməlisiniz.</string>
@@ -319,12 +330,16 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="settings_gear_unlock_confirm_dialog_title">Gear təsdiqləri yansın?</string>
     <string name="settings_manage_notifications_desc">Əlaqələndirilmiş cihazınıza bildirişlər göndərə biləcək proqramları seçin.</string>
     <string name="settings_manage_notifications_title">Seçilmiş proqram bildirişləri</string>
+    <string name="settings_send_message_desc">Klaviaturada daxil et düyməsindən istifadə edərək mesajlar göndərin.</string>
     <string name="settings_title_auto_bt_on">Avto Bluetooth</string>
     <string name="setup_complete_done">Hazırdır</string>
     <string name="setup_completed">%s qurulması tamamlandı.</string>
+    <string name="setup_completed_phone">Telefonunuz hazırda %s cihazına qoşuludur.</string>
+    <string name="setup_completed_tablet">Tabletiniz hazırda %s cihazına qoşuludur.</string>
     <string name="setup_confirm_pin">Keçid sözün düzgün olduğunu növbəti %1$d saniyə ərzində təsdiq edin və %2$s qoşulun.</string>
     <string name="setup_enter_pin_on_pc">%s-də PIN daxil edin.</string>
     <string name="setup_preparing">Kompüter və ya tabletdə Samsung Flow qurulmasına başla.</string>
+    <string name="setup_preparing_detail">Əgər Samsung Flow-nu quraşdırmamısınızsa, kompüterinizdə Microsoft Store-dan, tabletinizdə isə Galaxy Store və ya Google Play-dən onu yükləyə bilərsiniz.</string>
     <string name="setup_preparing_tab">Kompüterinizdə Samsung Flow-nu qurmağa başlayın</string>
     <string name="setup_tab_complete_title">Qurulma bitdi</string>
     <string name="setup_tab_confirm_passkey_title">Cihazları qoşun</string>
@@ -343,6 +358,8 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="setupwizard_welcome_body">Proqramın xidməti üçün aşağıdakı icazələr tələb edilir. Əlavə icazələr üçün xidmətin defolt funksionallığı yandırıldı, lakin icazə verilmədi.</string>
     <string name="setupwizard_welcome_title">Proqram icazələri</string>
     <string name="share">Paylaş</string>
+    <string name="share_item_device_status_connected">Cihaz qoşuldu</string>
+    <string name="share_item_device_status_disconnected">Cihazla əlaqə kəsildi</string>
     <string name="shortcut_list_desc">Tabletiniz ilə əlaqələndirmək üçün telefonda proqram seçin. Bu proqramın qısayolu Əsas ekrana əlavə ediləcək.</string>
     <string name="snooze">Ertələ</string>
     <string name="special_sensitive_optional_permissions">Xüsusi həssas əlavə icazələr</string>
@@ -352,6 +369,8 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="tablet_bio_auth_confirm_title">Təsdiq üçün Tablet bioölçüləri istif ed?</string>
     <string name="tap_icon_to_try_iris_auth">Göz qüzehi tanınmasını bir daha sınamaq üçün nişana vurun</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">Smart View Samsung Flow üçün yanılı olduqda Avtomatik fırlanmadan istifadə etmək olmur.</string>
+    <string name="toast_msg_connected">Samsung Flow %s bağlantısı başlandı.</string>
+    <string name="toast_msg_disconnected">Samsung Flow ilə %s bağlantısı bitdi.</string>
     <string name="try_again">Yenidən cəhd et</string>
     <string name="turn_on">Yandır</string>
     <string name="turn_on_auto_run">Avtomatik işə düşmə seçimini yandır</string>
@@ -362,15 +381,20 @@ Daha çox seçim > Parametrlər > Bildirişləri idarə edin bölməsinə keçə
     <string name="unsupported_file">Dəstəklənməyən fayl.</string>
     <string name="update">Yenilə</string>
     <string name="update_samsung_flow">%s qoşulmaq olmadı. Samsung Flow-nu ən spn versiyaya yenilə və yenidən cəhd et.</string>
-    <string name="welcome_button_start">Başla</string>
+    <string name="verification_method">Təsdiqləmə metodu</string>
     <string name="welcome_phone_button_agree">Razıyam</string>
-    <string name="welcome_phone_desc">Kompüter və ya tableti Samsung Flow ilə telefona qoşun.</string>
-    <string name="welcome_phone_desc_terms">Davam etmək üçün %s oxuyun və razılaşın.</string>
-    <string name="welcome_phone_title">%s-a xoş gəldiniz</string>
+    <string name="welcome_phone_desc1">Telefonunuz və onun qoşulduğu kompüter və ya tablet arasında sənədlər, şəkillər, videolar və s. paylaşın.</string>
+    <string name="welcome_phone_desc2">Telefonunuzun mesaj və bildirişlərinə kompüter, yaxud tabletinizdə nəzər salıb, cavab verin.</string>
+    <string name="welcome_phone_desc3">Telefonunuzun ekranına kompüter və ya tabletinizdə baxıb, nəzarət edin.</string>
+    <string name="welcome_phone_desc_terms">Davam etməklə siz %s ilə razılaşırsınız.</string>
+    <string name="welcome_phone_title1">Telefonunuzu başqa cihaza qoşun</string>
+    <string name="welcome_phone_title2">Bildirişlərinizi sinxronlaşdırın</string>
+    <string name="welcome_phone_title3">Telefonunuzun ekranını paylaşın</string>
     <string name="welcome_tab_desc2">Telefonu Samsung Flow qurmağa hazırlayın.</string>
     <string name="welcome_tab_desc3">Tabletinizi Samsung Flow-dan istifadə edən telefon və ya kompüterə qoşun.</string>
     <string name="wifi_connection_failed_text">Telefonda Samsung Flow yanılı olduğundan və şəbəkəyə qoşulduğundan əmin olun.</string>
-    <string name="wifi_enable_warning_msg">Mobil Giriş Nöqtəsi aktiv olanda Wi-Fi söndürülür. Wi-Fi-ı yandırmaq üçün Mobil Giriş Nöqtəsini söndürün.</string>
-    <string name="wifi_enable_warning_title">Mobil Giriş nöqtəsi söndürülsün?</string>
+    <string name="wifi_enable_warning_msg">Wi-Fi Direct-dən istifadə etmək üçün Mobil Giriş nöqtəsi söndürülməlidir.</string>
+    <string name="wifi_enable_warning_title">Mobil Giriş nöqtəsini söndür</string>
+    <string name="you_can_turn_off">Bu funksiyanı %s bölməsində söndürə bilərsiniz.</string>
     <string name="you_can_turn_off_this_permission">Bu icazəni Parametrlər > Proqramlar > Daha çox menyusu > Xüsusi giriş bölməsində söndürə edə bilərsiniz.</string>
 </resources>

@@ -31,16 +31,12 @@
     .line 16
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 17
-    sget-object v0, Lorg/spongycastle/jcajce/provider/asymmetric/util/DESUtil;->des:Ljava/util/Set;
-
     const-string v1, "DESEDE"
 
+    .line 17
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 18
-    sget-object v0, Lorg/spongycastle/jcajce/provider/asymmetric/util/DESUtil;->des:Ljava/util/Set;
-
     sget-object v1, Lorg/spongycastle/asn1/oiw/OIWObjectIdentifiers;->desCBC:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     invoke-virtual {v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->getId()Ljava/lang/String;
@@ -50,8 +46,6 @@
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 19
-    sget-object v0, Lorg/spongycastle/jcajce/provider/asymmetric/util/DESUtil;->des:Ljava/util/Set;
-
     sget-object v1, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->des_EDE3_CBC:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     invoke-virtual {v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->getId()Ljava/lang/String;
@@ -61,8 +55,6 @@
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 20
-    sget-object v0, Lorg/spongycastle/jcajce/provider/asymmetric/util/DESUtil;->des:Ljava/util/Set;
-
     sget-object v1, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->des_EDE3_CBC:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     invoke-virtual {v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->getId()Ljava/lang/String;
@@ -72,8 +64,6 @@
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 21
-    sget-object v0, Lorg/spongycastle/jcajce/provider/asymmetric/util/DESUtil;->des:Ljava/util/Set;
-
     sget-object v1, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->id_alg_CMS3DESwrap:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     invoke-virtual {v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->getId()Ljava/lang/String;

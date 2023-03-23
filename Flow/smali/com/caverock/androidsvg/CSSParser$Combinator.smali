@@ -34,7 +34,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 7
 
     .line 67
     new-instance v0, Lcom/caverock/androidsvg/CSSParser$Combinator;
@@ -48,43 +48,39 @@
     sput-object v0, Lcom/caverock/androidsvg/CSSParser$Combinator;->DESCENDANT:Lcom/caverock/androidsvg/CSSParser$Combinator;
 
     .line 68
-    new-instance v0, Lcom/caverock/androidsvg/CSSParser$Combinator;
+    new-instance v1, Lcom/caverock/androidsvg/CSSParser$Combinator;
 
-    const-string v1, "CHILD"
+    const-string v3, "CHILD"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/caverock/androidsvg/CSSParser$Combinator;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/caverock/androidsvg/CSSParser$Combinator;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/CSSParser$Combinator;->CHILD:Lcom/caverock/androidsvg/CSSParser$Combinator;
+    sput-object v1, Lcom/caverock/androidsvg/CSSParser$Combinator;->CHILD:Lcom/caverock/androidsvg/CSSParser$Combinator;
 
     .line 69
-    new-instance v0, Lcom/caverock/androidsvg/CSSParser$Combinator;
+    new-instance v3, Lcom/caverock/androidsvg/CSSParser$Combinator;
 
-    const-string v1, "FOLLOWS"
+    const-string v5, "FOLLOWS"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/caverock/androidsvg/CSSParser$Combinator;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/caverock/androidsvg/CSSParser$Combinator;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/CSSParser$Combinator;->FOLLOWS:Lcom/caverock/androidsvg/CSSParser$Combinator;
+    sput-object v3, Lcom/caverock/androidsvg/CSSParser$Combinator;->FOLLOWS:Lcom/caverock/androidsvg/CSSParser$Combinator;
 
-    const/4 v1, 0x3
+    const/4 v5, 0x3
 
-    new-array v1, v1, [Lcom/caverock/androidsvg/CSSParser$Combinator;
+    new-array v5, v5, [Lcom/caverock/androidsvg/CSSParser$Combinator;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 65
-    sget-object v5, Lcom/caverock/androidsvg/CSSParser$Combinator;->DESCENDANT:Lcom/caverock/androidsvg/CSSParser$Combinator;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/caverock/androidsvg/CSSParser$Combinator;->CHILD:Lcom/caverock/androidsvg/CSSParser$Combinator;
-
-    aput-object v2, v1, v3
-
-    aput-object v0, v1, v4
-
-    sput-object v1, Lcom/caverock/androidsvg/CSSParser$Combinator;->ENUM$VALUES:[Lcom/caverock/androidsvg/CSSParser$Combinator;
+    sput-object v5, Lcom/caverock/androidsvg/CSSParser$Combinator;->ENUM$VALUES:[Lcom/caverock/androidsvg/CSSParser$Combinator;
 
     return-void
 .end method

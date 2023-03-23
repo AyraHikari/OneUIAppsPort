@@ -15,9 +15,17 @@
 
 .method public static isLowRamDevice(Landroid/app/ActivityManager;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activityManager"
+        }
+    .end annotation
 
     .line 40
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 

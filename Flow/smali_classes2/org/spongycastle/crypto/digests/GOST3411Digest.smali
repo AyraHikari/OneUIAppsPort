@@ -208,17 +208,19 @@
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->sBox:[B
 
     .line 37
-    iget-object v1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->cipher:Lorg/spongycastle/crypto/BlockCipher;
+    iget-object v0, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    new-instance v2, Lorg/spongycastle/crypto/params/ParametersWithSBox;
+    new-instance v1, Lorg/spongycastle/crypto/params/ParametersWithSBox;
+
+    iget-object v2, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->sBox:[B
 
     const/4 v3, 0x0
 
-    invoke-direct {v2, v3, v0}, Lorg/spongycastle/crypto/params/ParametersWithSBox;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
+    invoke-direct {v1, v3, v2}, Lorg/spongycastle/crypto/params/ParametersWithSBox;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
 
-    const/4 v0, 0x1
+    const/4 v2, 0x1
 
-    invoke-interface {v1, v0, v2}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
+    invoke-interface {v0, v2, v1}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
     .line 39
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/GOST3411Digest;->reset()V
@@ -442,17 +444,19 @@
     iput-object p1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->sBox:[B
 
     .line 49
-    iget-object v0, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->cipher:Lorg/spongycastle/crypto/BlockCipher;
+    iget-object p1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    new-instance v1, Lorg/spongycastle/crypto/params/ParametersWithSBox;
+    new-instance v0, Lorg/spongycastle/crypto/params/ParametersWithSBox;
+
+    iget-object v1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->sBox:[B
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v2, p1}, Lorg/spongycastle/crypto/params/ParametersWithSBox;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
+    invoke-direct {v0, v2, v1}, Lorg/spongycastle/crypto/params/ParametersWithSBox;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
 
-    const/4 p1, 0x1
+    const/4 v1, 0x1
 
-    invoke-interface {v0, p1, v1}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
+    invoke-interface {p1, v1, v0}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
     .line 51
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/GOST3411Digest;->reset()V
@@ -1338,73 +1342,75 @@
     iput-object v0, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->sBox:[B
 
     .line 344
-    iget-object v1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->cipher:Lorg/spongycastle/crypto/BlockCipher;
+    iget-object v0, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    new-instance v2, Lorg/spongycastle/crypto/params/ParametersWithSBox;
+    new-instance v1, Lorg/spongycastle/crypto/params/ParametersWithSBox;
+
+    iget-object v2, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->sBox:[B
 
     const/4 v3, 0x0
 
-    invoke-direct {v2, v3, v0}, Lorg/spongycastle/crypto/params/ParametersWithSBox;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
+    invoke-direct {v1, v3, v2}, Lorg/spongycastle/crypto/params/ParametersWithSBox;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
 
-    const/4 v0, 0x1
+    const/4 v2, 0x1
 
-    invoke-interface {v1, v0, v2}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
+    invoke-interface {v0, v2, v1}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
     .line 346
     invoke-virtual {p0}, Lorg/spongycastle/crypto/digests/GOST3411Digest;->reset()V
 
     .line 348
-    iget-object v1, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->H:[B
+    iget-object v0, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->H:[B
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->H:[B
+    iget-object v1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->H:[B
 
-    array-length v3, v1
+    array-length v3, v0
 
     const/4 v4, 0x0
 
-    invoke-static {v1, v4, v2, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v4, v1, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 349
-    iget-object v1, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->L:[B
+    iget-object v0, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->L:[B
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->L:[B
+    iget-object v1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->L:[B
 
-    array-length v3, v1
+    array-length v3, v0
 
-    invoke-static {v1, v4, v2, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v4, v1, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 350
-    iget-object v1, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->M:[B
+    iget-object v0, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->M:[B
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->M:[B
+    iget-object v1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->M:[B
 
-    array-length v3, v1
+    array-length v3, v0
 
-    invoke-static {v1, v4, v2, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v4, v1, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 351
-    iget-object v1, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->Sum:[B
+    iget-object v0, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->Sum:[B
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->Sum:[B
+    iget-object v1, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->Sum:[B
 
-    array-length v3, v1
+    array-length v3, v0
 
-    invoke-static {v1, v4, v2, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v4, v1, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 352
-    iget-object v1, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->C:[[B
+    iget-object v0, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->C:[[B
 
-    aget-object v2, v1, v0
+    aget-object v1, v0, v2
 
     iget-object v3, p0, Lorg/spongycastle/crypto/digests/GOST3411Digest;->C:[[B
 
-    aget-object v3, v3, v0
+    aget-object v3, v3, v2
 
-    aget-object v0, v1, v0
+    aget-object v0, v0, v2
 
     array-length v0, v0
 
-    invoke-static {v2, v4, v3, v4, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v1, v4, v3, v4, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 353
     iget-object v0, p1, Lorg/spongycastle/crypto/digests/GOST3411Digest;->C:[[B

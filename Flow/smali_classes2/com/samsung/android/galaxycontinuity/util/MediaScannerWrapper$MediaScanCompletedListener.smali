@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onCompleted(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;Ljava/lang/String;Landroid/net/Uri;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedContentsItem",
+            "path",
+            "uri"
+        }
+    .end annotation
 .end method

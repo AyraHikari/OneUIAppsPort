@@ -17,9 +17,9 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 37
+    .line 35
     :try_start_0
-    const-class v0, Landroid/os/Build$VERSION;
+    const-class v0, Layra/os/Build$VERSION;
 
     const-string v1, "SEM_INT"
 
@@ -27,8 +27,8 @@
 
     move-result-object v0
 
-    .line 38
-    const-class v1, Landroid/os/Build$VERSION;
+    .line 36
+    const-class v1, Layra/os/Build$VERSION;
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
 
@@ -50,7 +50,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 31
+    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,14 +59,14 @@
 .method private static checkRootMethod1()Z
     .locals 2
 
-    .line 83
+    .line 81
     sget-object v0, Landroid/os/Build;->TAGS:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    const-string v1, "test-keys"
+    const-string/jumbo v1, "test-keys"
 
-    .line 84
+    .line 82
     invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -113,7 +113,7 @@
 
     const-string v12, "/system/xbin/mu"
 
-    .line 88
+    .line 86
     filled-new-array/range {v0 .. v12}, [Ljava/lang/String;
 
     move-result-object v0
@@ -142,7 +142,7 @@
 
     const-string v12, "/dev"
 
-    .line 95
+    .line 93
     filled-new-array/range {v1 .. v12}, [Ljava/lang/String;
 
     move-result-object v1
@@ -158,10 +158,10 @@
 
     if-ge v3, v5, :cond_2
 
-    .line 100
+    .line 98
     aget-object v5, v0, v3
 
-    .line 101
+    .line 99
     invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v6
@@ -170,29 +170,33 @@
 
     goto :goto_1
 
-    .line 104
+    .line 102
     :cond_0
     new-instance v6, Ljava/io/File;
 
     invoke-direct {v6, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 105
+    .line 103
     invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
     move-result v6
 
     if-eqz v6, :cond_1
 
-    .line 106
+    .line 104
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "rooting:su located at :"
+    const-string/jumbo v1, "rooting:su located at :"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -216,10 +220,10 @@
 
     if-ge v0, v3, :cond_5
 
-    .line 111
+    .line 109
     aget-object v3, v1, v0
 
-    .line 112
+    .line 110
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -228,29 +232,33 @@
 
     goto :goto_3
 
-    .line 115
+    .line 113
     :cond_3
     new-instance v5, Ljava/io/File;
 
     invoke-direct {v5, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 116
+    .line 114
     invoke-virtual {v5}, Ljava/io/File;->canWrite()Z
 
     move-result v5
 
     if-eqz v5, :cond_4
 
-    .line 117
+    .line 115
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "rooting:read only changed as writable : "
+    const-string/jumbo v1, "rooting:read only changed as writable : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -277,7 +285,7 @@
 
     const/4 v1, 0x0
 
-    .line 128
+    .line 126
     :try_start_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -285,7 +293,7 @@
 
     const-string v3, "/system/xbin/which"
 
-    const-string v4, "su"
+    const-string/jumbo v4, "su"
 
     filled-new-array {v3, v4}, [Ljava/lang/String;
 
@@ -295,7 +303,7 @@
 
     move-result-object v1
 
-    .line 129
+    .line 127
     new-instance v2, Ljava/io/BufferedReader;
 
     new-instance v3, Ljava/io/InputStreamReader;
@@ -310,7 +318,7 @@
 
     invoke-direct {v2, v3}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
 
-    .line 131
+    .line 129
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     move-result-object v2
@@ -319,7 +327,7 @@
 
     const-string v2, "checkRootMethod3 returns true"
 
-    .line 133
+    .line 131
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -328,7 +336,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 140
+    .line 138
     invoke-virtual {v1}, Ljava/lang/Process;->destroy()V
 
     :cond_0
@@ -354,19 +362,19 @@
 .method private static checkRootMethod4()Z
     .locals 2
 
-    .line 146
+    .line 144
     :try_start_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
 
-    const-string v1, "su"
+    const-string/jumbo v1, "su"
 
     invoke-virtual {v0, v1}, Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
 
     const-string v0, "checkRootMethod4 returns true"
 
-    .line 147
+    .line 145
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -383,8 +391,16 @@
 
 .method public static getSignatureHash([B)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "certArray"
+        }
+    .end annotation
 
-    .line 182
+    .line 180
     :try_start_0
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
@@ -392,12 +408,12 @@
 
     const-string p0, "X509"
 
-    .line 183
+    .line 181
     invoke-static {p0}, Ljava/security/cert/CertificateFactory;->getInstance(Ljava/lang/String;)Ljava/security/cert/CertificateFactory;
 
     move-result-object p0
 
-    .line 184
+    .line 182
     invoke-virtual {p0, v0}, Ljava/security/cert/CertificateFactory;->generateCertificate(Ljava/io/InputStream;)Ljava/security/cert/Certificate;
 
     move-result-object p0
@@ -406,12 +422,12 @@
 
     const-string v0, "SHA256"
 
-    .line 185
+    .line 183
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v0
 
-    .line 186
+    .line 184
     invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getEncoded()[B
 
     move-result-object p0
@@ -422,12 +438,12 @@
 
     const/4 v0, 0x2
 
-    .line 187
+    .line 185
     invoke-static {p0, v0}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 189
+    .line 187
     invoke-static {p0}, Lcom/google/common/base/Strings;->isNullOrEmpty(Ljava/lang/String;)Z
 
     move-result v0
@@ -452,7 +468,7 @@
 
     const/4 v0, 0x0
 
-    .line 193
+    .line 191
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -471,7 +487,7 @@
     :catch_0
     move-exception p0
 
-    .line 198
+    .line 196
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -480,9 +496,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -497,6 +517,14 @@
 
 .method private static isEmpty(Ljava/lang/CharSequence;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -504,7 +532,7 @@
 
     return v0
 
-    .line 159
+    .line 157
     :cond_0
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -523,10 +551,18 @@
 
 .method public static isEngineerBinary(Landroid/content/Context;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 166
+    .line 164
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -540,7 +576,7 @@
 
     move-result-object p0
 
-    .line 168
+    .line 166
     iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
     aget-object p0, p0, v0
@@ -553,9 +589,9 @@
 
     move-result-object p0
 
-    const-string v1, "yKLpvM9ZfC+23Ga+4pP8E/L8R+x3vGsrDVLBH1EZKrg"
+    const-string/jumbo v1, "yKLpvM9ZfC+23Ga+4pP8E/L8R+x3vGsrDVLBH1EZKrg"
 
-    .line 170
+    .line 168
     invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -571,95 +607,36 @@
     :catch_0
     move-exception p0
 
-    .line 174
+    .line 172
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_0
     return v0
 .end method
 
-.method public static isRootedDevice(Landroid/content/Context;)Z
-    .locals 1
-
-    .line 68
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->isEngineerBinary(Landroid/content/Context;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x0
-
-    return p0
-
-    .line 72
-    :cond_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;
-
-    move-result-object p0
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->isRootedDevice(Landroid/content/Context;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public static isRootedDeviceWithNoSamsungPass(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 76
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->isEngineerBinary(Landroid/content/Context;)Z
+    .line 74
+    invoke-static {}, Layra/project/AyraFeatures;->ayraDeviceNonRoot()Z
 
-    move-result p0
+    move-result v0
 
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_0
-
-    return v0
-
-    .line 79
-    :cond_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->checkRootMethod1()Z
-
-    move-result p0
-
-    if-nez p0, :cond_1
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->checkRootMethod2()Z
-
-    move-result p0
-
-    if-nez p0, :cond_1
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->checkRootMethod3()Z
-
-    move-result p0
-
-    if-nez p0, :cond_1
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->checkRootMethod4()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
-
-    :cond_1
-    const/4 v0, 0x1
-
-    :cond_2
     return v0
 .end method
 
 .method public static final isSemDevice()Z
     .locals 1
 
-    .line 44
+    .line 42
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->SEM_INT:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -677,17 +654,25 @@
 
 .method public static setNavigationBarAndStatusBarColor(Landroid/app/Activity;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
-    const v0, 0x7f050015
+    const v0, 0x7f06001a
 
-    .line 50
+    .line 48
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getColor(I)I
 
     move-result v1
 
     invoke-static {p0, v1}, Lcom/samsung/android/galaxycontinuity/util/FrameworkUtils;->setNavigationBarAndStatusBarColor(Landroid/app/Activity;I)V
 
-    .line 52
+    .line 50
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getColor(I)I
 
     move-result v0
@@ -699,8 +684,18 @@
 
 .method public static setNavigationBarAndStatusBarColor(Landroid/app/Activity;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "color"
+        }
+    .end annotation
 
-    .line 60
+    .line 58
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object p0
@@ -712,8 +707,16 @@
 
 .method public static setNavigationBarColorToTransparent(Landroid/app/Activity;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
-    .line 56
+    .line 54
     invoke-virtual {p0}, Landroid/app/Activity;->getBaseContext()Landroid/content/Context;
 
     move-result-object v0
@@ -722,7 +725,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0500a9
+    const v1, 0x7f06024c
 
     const/4 v2, 0x0
 
@@ -737,8 +740,18 @@
 
 .method public static setStatusBarColor(Landroid/app/Activity;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "color"
+        }
+    .end annotation
 
-    .line 64
+    .line 62
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object p0

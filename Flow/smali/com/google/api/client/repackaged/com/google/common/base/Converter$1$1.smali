@@ -48,8 +48,6 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 183
-    iget-object p1, p0, Lcom/google/api/client/repackaged/com/google/common/base/Converter$1$1;->this$1:Lcom/google/api/client/repackaged/com/google/common/base/Converter$1;
-
     iget-object p1, p1, Lcom/google/api/client/repackaged/com/google/common/base/Converter$1;->val$fromIterable:Ljava/lang/Iterable;
 
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;

@@ -21,6 +21,22 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_name",
+            "_time",
+            "_status",
+            "_bSzActive",
+            "_sAlertTime"
+        }
+    .end annotation
 
     .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

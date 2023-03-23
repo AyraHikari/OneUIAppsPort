@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 216
+    .line 217
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,6 +45,14 @@
 # virtual methods
 .method public canDismiss(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 
@@ -45,8 +61,18 @@
 
 .method public onDismiss(Landroidx/recyclerview/widget/RecyclerView;[I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listView",
+            "reverseSortedPositions"
+        }
+    .end annotation
 
-    .line 224
+    .line 225
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;
@@ -55,7 +81,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 225
+    .line 226
     array-length p1, p2
 
     const/4 v0, 0x0
@@ -65,7 +91,7 @@
 
     aget v1, p2, v0
 
-    .line 226
+    .line 227
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;
@@ -78,7 +104,7 @@
 
     if-le v2, v1, :cond_0
 
-    .line 227
+    .line 228
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;
@@ -89,7 +115,7 @@
 
     move-result-object v1
 
-    .line 228
+    .line 229
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;
@@ -98,7 +124,7 @@
 
     invoke-virtual {v2, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->remove(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
-    .line 230
+    .line 231
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
     move-result-object v2
@@ -112,7 +138,7 @@
 
     goto :goto_0
 
-    .line 233
+    .line 234
     :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 

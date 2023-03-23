@@ -30,19 +30,33 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;Ljava/lang/String;Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "id",
+            "inputStream",
+            "outputStream"
+        }
+    .end annotation
 
-    .line 342
+    .line 346
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->this$0:Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 343
+    .line 347
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->id:Ljava/lang/String;
 
-    .line 344
+    .line 348
     iput-object p3, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->inputStream:Ljava/io/InputStream;
 
-    .line 345
+    .line 349
     iput-object p4, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->outputStream:Ljava/io/OutputStream;
 
     return-void
@@ -57,7 +71,7 @@
 
     new-array v0, v0, [B
 
-    .line 354
+    .line 358
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->inputStream:Ljava/io/InputStream;
 
@@ -69,7 +83,7 @@
 
     goto :goto_1
 
-    .line 357
+    .line 361
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->inputStream:Ljava/io/InputStream;
@@ -80,7 +94,7 @@
 
     if-lez v1, :cond_1
 
-    .line 358
+    .line 362
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->outputStream:Ljava/io/OutputStream;
 
     const/4 v3, 0x0
@@ -89,23 +103,23 @@
 
     goto :goto_0
 
-    .line 361
+    .line 365
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->inputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    .line 362
+    .line 366
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->outputStream:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
-    .line 363
+    .line 367
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->outputStream:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
-    .line 365
+    .line 369
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->this$0:Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->access$000(Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;)Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
@@ -122,7 +136,7 @@
 
     move-result-object v0
 
-    .line 366
+    .line 370
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;->this$0:Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->access$000(Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;)Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
@@ -142,7 +156,7 @@
     :catch_0
     move-exception v0
 
-    .line 368
+    .line 372
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_2

@@ -14,77 +14,77 @@
 
 
 # static fields
-.field public static final action_container:I = 0x7f09003b
+.field public static final action_container:I = 0x7f0a004b
 
-.field public static final action_divider:I = 0x7f09003d
+.field public static final action_divider:I = 0x7f0a004d
 
-.field public static final action_image:I = 0x7f09003e
+.field public static final action_image:I = 0x7f0a004e
 
-.field public static final action_text:I = 0x7f090044
+.field public static final action_text:I = 0x7f0a0054
 
-.field public static final actions:I = 0x7f090045
+.field public static final actions:I = 0x7f0a0055
 
-.field public static final async:I = 0x7f090056
+.field public static final async:I = 0x7f0a006f
 
-.field public static final blocking:I = 0x7f09006a
+.field public static final blocking:I = 0x7f0a008a
 
-.field public static final bottom:I = 0x7f09006e
+.field public static final bottom:I = 0x7f0a008e
 
-.field public static final chronometer:I = 0x7f09009b
+.field public static final chronometer:I = 0x7f0a00cd
 
-.field public static final dataBinding:I = 0x7f0900b0
+.field public static final dataBinding:I = 0x7f0a00f5
 
-.field public static final end:I = 0x7f0900da
+.field public static final end:I = 0x7f0a0140
 
-.field public static final forever:I = 0x7f0900fb
+.field public static final forever:I = 0x7f0a0167
 
-.field public static final icon:I = 0x7f090105
+.field public static final icon:I = 0x7f0a0183
 
-.field public static final icon_group:I = 0x7f09010a
+.field public static final icon_group:I = 0x7f0a0189
 
-.field public static final info:I = 0x7f090114
+.field public static final info:I = 0x7f0a0197
 
-.field public static final italic:I = 0x7f090120
+.field public static final italic:I = 0x7f0a01a5
 
-.field public static final left:I = 0x7f090129
+.field public static final left:I = 0x7f0a01b4
 
-.field public static final line1:I = 0x7f09012f
+.field public static final line1:I = 0x7f0a01bb
 
-.field public static final line3:I = 0x7f090130
+.field public static final line3:I = 0x7f0a01bc
 
-.field public static final none:I = 0x7f090179
+.field public static final none:I = 0x7f0a0253
 
-.field public static final normal:I = 0x7f09017a
+.field public static final normal:I = 0x7f0a0254
 
-.field public static final notification_background:I = 0x7f09017d
+.field public static final notification_background:I = 0x7f0a0259
 
-.field public static final notification_main_column:I = 0x7f09017e
+.field public static final notification_main_column:I = 0x7f0a025b
 
-.field public static final notification_main_column_container:I = 0x7f09017f
+.field public static final notification_main_column_container:I = 0x7f0a025c
 
-.field public static final right:I = 0x7f0901ce
+.field public static final right:I = 0x7f0a02b6
 
-.field public static final right_icon:I = 0x7f0901d0
+.field public static final right_icon:I = 0x7f0a02ba
 
-.field public static final right_side:I = 0x7f0901d1
+.field public static final right_side:I = 0x7f0a02bb
 
-.field public static final start:I = 0x7f090222
+.field public static final start:I = 0x7f0a0328
 
-.field public static final tag_transition_group:I = 0x7f090235
+.field public static final tag_transition_group:I = 0x7f0a0347
 
-.field public static final tag_unhandled_key_event_manager:I = 0x7f090236
+.field public static final tag_unhandled_key_event_manager:I = 0x7f0a0348
 
-.field public static final tag_unhandled_key_listeners:I = 0x7f090237
+.field public static final tag_unhandled_key_listeners:I = 0x7f0a0349
 
-.field public static final text:I = 0x7f090240
+.field public static final text:I = 0x7f0a0358
 
-.field public static final text2:I = 0x7f090242
+.field public static final text2:I = 0x7f0a035a
 
-.field public static final time:I = 0x7f090257
+.field public static final time:I = 0x7f0a0379
 
-.field public static final title:I = 0x7f090258
+.field public static final title:I = 0x7f0a037a
 
-.field public static final top:I = 0x7f090261
+.field public static final top:I = 0x7f0a0385
 
 
 # direct methods

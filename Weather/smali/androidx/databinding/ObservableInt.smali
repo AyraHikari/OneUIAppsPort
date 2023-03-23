@@ -1,5 +1,5 @@
 .class public Landroidx/databinding/ObservableInt;
-.super Landroidx/databinding/BaseObservableField;
+.super Landroidx/databinding/b;
 .source "ObservableInt.java"
 
 # interfaces
@@ -18,21 +18,18 @@
     .end annotation
 .end field
 
-.field static final serialVersionUID:J = 0x1L
-
 
 # instance fields
-.field private mValue:I
+.field public i:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 103
-    new-instance v0, Landroidx/databinding/ObservableInt$1;
+    new-instance v0, Landroidx/databinding/ObservableInt$a;
 
-    invoke-direct {v0}, Landroidx/databinding/ObservableInt$1;-><init>()V
+    invoke-direct {v0}, Landroidx/databinding/ObservableInt$a;-><init>()V
 
     sput-object v0, Landroidx/databinding/ObservableInt;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -42,8 +39,8 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 60
-    invoke-direct {p0}, Landroidx/databinding/BaseObservableField;-><init>()V
+    .line 3
+    invoke-direct {p0}, Landroidx/databinding/b;-><init>()V
 
     return-void
 .end method
@@ -51,20 +48,11 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 53
-    invoke-direct {p0}, Landroidx/databinding/BaseObservableField;-><init>()V
+    .line 1
+    invoke-direct {p0}, Landroidx/databinding/b;-><init>()V
 
-    .line 54
-    iput p1, p0, Landroidx/databinding/ObservableInt;->mValue:I
-
-    return-void
-.end method
-
-.method public varargs constructor <init>([Landroidx/databinding/Observable;)V
-    .locals 0
-
-    .line 71
-    invoke-direct {p0, p1}, Landroidx/databinding/BaseObservableField;-><init>([Landroidx/databinding/Observable;)V
+    .line 2
+    iput p1, p0, Landroidx/databinding/ObservableInt;->i:I
 
     return-void
 .end method
@@ -79,28 +67,27 @@
     return v0
 .end method
 
-.method public get()I
+.method public o()I
     .locals 1
 
-    .line 78
-    iget v0, p0, Landroidx/databinding/ObservableInt;->mValue:I
+    iget v0, p0, Landroidx/databinding/ObservableInt;->i:I
 
     return v0
 .end method
 
-.method public set(I)V
+.method public r(I)V
     .locals 1
 
-    .line 87
-    iget v0, p0, Landroidx/databinding/ObservableInt;->mValue:I
+    .line 1
+    iget v0, p0, Landroidx/databinding/ObservableInt;->i:I
 
     if-eq p1, v0, :cond_0
 
-    .line 88
-    iput p1, p0, Landroidx/databinding/ObservableInt;->mValue:I
+    .line 2
+    iput p1, p0, Landroidx/databinding/ObservableInt;->i:I
 
-    .line 89
-    invoke-virtual {p0}, Landroidx/databinding/ObservableInt;->notifyChange()V
+    .line 3
+    invoke-virtual {p0}, Landroidx/databinding/a;->m()V
 
     :cond_0
     return-void
@@ -109,8 +96,7 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 100
-    iget p2, p0, Landroidx/databinding/ObservableInt;->mValue:I
+    iget p2, p0, Landroidx/databinding/ObservableInt;->i:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

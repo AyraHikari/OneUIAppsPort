@@ -27,12 +27,12 @@
 .method constructor <init>(Lokio/Pipe;)V
     .locals 0
 
-    .line 104
+    .line 192
     iput-object p1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 105
+    .line 193
     new-instance p1, Lokio/Timeout;
 
     invoke-direct {p1}, Lokio/Timeout;-><init>()V
@@ -52,14 +52,14 @@
         }
     .end annotation
 
-    .line 123
+    .line 211
     iget-object v0, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
     iget-object v0, v0, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     monitor-enter v0
 
-    .line 124
+    .line 212
     :try_start_0
     iget-object v1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
@@ -67,14 +67,14 @@
 
     iput-boolean v2, v1, Lokio/Pipe;->sourceClosed:Z
 
-    .line 125
+    .line 213
     iget-object v1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
     iget-object v1, v1, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 126
+    .line 214
     monitor-exit v0
 
     return-void
@@ -97,14 +97,14 @@
         }
     .end annotation
 
-    .line 108
+    .line 196
     iget-object v0, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
     iget-object v0, v0, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     monitor-enter v0
 
-    .line 109
+    .line 197
     :try_start_0
     iget-object v1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
@@ -112,7 +112,7 @@
 
     if-nez v1, :cond_2
 
-    .line 111
+    .line 199
     :goto_0
     iget-object v1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
@@ -128,7 +128,7 @@
 
     if-nez v1, :cond_1
 
-    .line 112
+    .line 200
     iget-object v1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
     iget-boolean v1, v1, Lokio/Pipe;->sinkClosed:Z
@@ -141,7 +141,7 @@
 
     return-wide p1
 
-    .line 113
+    .line 201
     :cond_0
     iget-object v1, p0, Lokio/Pipe$PipeSource;->timeout:Lokio/Timeout;
 
@@ -153,7 +153,7 @@
 
     goto :goto_0
 
-    .line 116
+    .line 204
     :cond_1
     iget-object v1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
@@ -163,19 +163,19 @@
 
     move-result-wide p1
 
-    .line 117
+    .line 205
     iget-object p3, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
 
     iget-object p3, p3, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     invoke-virtual {p3}, Ljava/lang/Object;->notifyAll()V
 
-    .line 118
+    .line 206
     monitor-exit v0
 
     return-wide p1
 
-    .line 109
+    .line 197
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -188,7 +188,7 @@
     :catchall_0
     move-exception p1
 
-    .line 119
+    .line 207
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -199,7 +199,7 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 130
+    .line 218
     iget-object v0, p0, Lokio/Pipe$PipeSource;->timeout:Lokio/Timeout;
 
     return-object v0

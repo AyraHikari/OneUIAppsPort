@@ -52,6 +52,14 @@
 
 .method public static asInterface(Landroid/os/IBinder;)Lcom/android/internal/telephony/ITelephony;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -91,7 +99,7 @@
 .method public static getDefaultImpl()Lcom/android/internal/telephony/ITelephony;
     .locals 1
 
-    .line 208
+    .line 214
     sget-object v0, Lcom/android/internal/telephony/ITelephony$Stub$Proxy;->sDefaultImpl:Lcom/android/internal/telephony/ITelephony;
 
     return-object v0
@@ -99,15 +107,23 @@
 
 .method public static setDefaultImpl(Lcom/android/internal/telephony/ITelephony;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "impl"
+        }
+    .end annotation
 
-    .line 201
+    .line 204
     sget-object v0, Lcom/android/internal/telephony/ITelephony$Stub$Proxy;->sDefaultImpl:Lcom/android/internal/telephony/ITelephony;
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
     if-eqz p0, :cond_0
 
-    .line 202
+    .line 208
     sput-object p0, Lcom/android/internal/telephony/ITelephony$Stub$Proxy;->sDefaultImpl:Lcom/android/internal/telephony/ITelephony;
 
     const/4 p0, 0x1
@@ -118,6 +134,16 @@
     const/4 p0, 0x0
 
     return p0
+
+    .line 205
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string v0, "setDefaultImpl() called twice"
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 
@@ -130,6 +156,21 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "code",
+            "data",
+            "reply",
+            "flags"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

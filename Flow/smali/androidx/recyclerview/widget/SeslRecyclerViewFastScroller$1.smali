@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;)V
     .locals 0
 
-    .line 262
+    .line 274
     iput-object p1, p0, Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$1;->this$0:Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 265
+    .line 277
     iget-object v0, p0, Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$1;->this$0:Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller;
 
     const/4 v1, 0x0

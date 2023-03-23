@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
@@ -42,11 +42,11 @@
 
 
 # instance fields
-.field final synthetic $this_asFactory:Lokhttp3/EventListener;
+.field public final synthetic $this_asFactory:Lokhttp3/EventListener;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/EventListener;)V
+.method public constructor <init>(Lokhttp3/EventListener;)V
     .locals 0
 
     iput-object p1, p0, Lokhttp3/internal/Util$asFactory$1;->$this_asFactory:Lokhttp3/EventListener;
@@ -63,9 +63,8 @@
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 302
     iget-object p1, p0, Lokhttp3/internal/Util$asFactory$1;->$this_asFactory:Lokhttp3/EventListener;
 
     return-object p1

@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newConfig"
+        }
+    .end annotation
 .end method

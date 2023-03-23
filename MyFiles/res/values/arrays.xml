@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="description">
+        <item>系统文件</item>
+        <item>相册</item>
+        <item>相机</item>
+        <item>动态萌拍</item>
+        <item>截屏</item>
+        <item>录屏</item>
+        <item>下载文件</item>
+        <item>视频</item>
+        <item>音乐</item>
+        <item>图片</item>
+        <item>播放列表</item>
+        <item>播客</item>
+        <item>三星多媒体文件</item>
+        <item>音乐</item>
+        <item>录音</item>
+        <item>黄页</item>
+        <item>360 浏览器</item>
+        <item>360 下载文件</item>
+        <item>360 下载文件</item>
+        <item>360 极速浏览器</item>
+        <item>360 下载文件</item>
+        <item>360 影视大全</item>
+        <item>支付宝</item>
+        <item>支付宝</item>
+        <item>高德地图</item>
+        <item>高德地图</item>
+        <item>高德地图</item>
+        <item>高德地图数据包</item>
+        <item>高德地图数据包</item>
+        <item>高德地图数据包</item>
+        <item>百度</item>
+        <item>百度外卖</item>
+        <item>百度输入法</item>
+        <item>百度地图数据包</item>
+        <item>百度地图数据包</item>
+        <item>百度网盘</item>
+        <item>暴风影音</item>
+        <item>携程旅行</item>
+        <item>携程旅行</item>
+        <item>应用数据文件</item>
+        <item>嘀嗒拼车</item>
+        <item>滴滴出行</item>
+        <item>滴滴出行</item>
+        <item>滴滴出行</item>
+        <item>滴滴出行</item>
+        <item>iReader 阅读器</item>
+        <item>京东商城</item>
+        <item>京东商城</item>
+        <item>唱吧</item>
+        <item>酷狗音乐</item>
+        <item>酷狗音乐</item>
+        <item>酷狗音乐</item>
+        <item>酷我音乐</item>
+        <item>应用动态库文件</item>
+        <item>墨迹天气</item>
+        <item>陌陌</item>
+        <item>陌陌</item>
+        <item>美图秀秀</item>
+        <item>美图秀秀</item>
+        <item>网易</item>
+        <item>网易</item>
+        <item>金山词霸</item>
+        <item>拼多多</item>
+        <item>爱奇艺泡泡</item>
+        <item>爱奇艺</item>
+        <item>爱奇艺</item>
+        <item>爱奇艺</item>
+        <item>QQ 浏览器</item>
+        <item>QQ 音乐</item>
+        <item>社会化分享组件</item>
+        <item>新浪</item>
+        <item>新浪微博</item>
+        <item>搜狗输入法</item>
+        <item>搜狗浏览器</item>
+        <item>搜狐</item>
+        <item>应用存储文件</item>
+        <item>系统数据文件</item>
+        <item>淘宝</item>
+        <item>应用临时文件</item>
+        <item>腾讯</item>
+        <item>微信</item>
+        <item>腾讯</item>
+        <item>微信</item>
+        <item>天天动听</item>
+        <item>天天动听</item>
+        <item>UC 浏览器下载文件</item>
+        <item>豌豆荚</item>
+        <item>迅雷</item>
+        <item>虾米音乐</item>
+        <item>有道词典</item>
+        <item>优酷</item>
+        <item>优酷</item>
+    </string-array>
+    <string-array name="path">
+        <item>Android</item>
+        <item>DCIM</item>
+        <item>DCIM/Camera</item>
+        <item>DCIM/My Emoji</item>
+        <item>DCIM/Screenshots</item>
+        <item>DCIM/Video screenshots</item>
+        <item>Download</item>
+        <item>Movies</item>
+        <item>Music</item>
+        <item>Pictures</item>
+        <item>Playlists</item>
+        <item>Podcasts</item>
+        <item>Samsung</item>
+        <item>Samsung/Music</item>
+        <item>Voice Recorder</item>
+        <item>yellowpage</item>
+        <item>360Browser</item>
+        <item>360Download</item>
+        <item>360Browser/download</item>
+        <item>360ExpressBrowser</item>
+        <item>360ExpressBrowser/download</item>
+        <item>360Video</item>
+        <item>alipay</item>
+        <item>com.eg.android.AlipayGphone</item>
+        <item>Amap</item>
+        <item>autonavi</item>
+        <item>com.autonavi.minimap</item>
+        <item>autonavidata50</item>
+        <item>autonavidata60</item>
+        <item>autonavidata70</item>
+        <item>baidu</item>
+        <item>BaiduWM</item>
+        <item>baidu/ime</item>
+        <item>BaiduMap</item>
+        <item>BaiduMapSdk</item>
+        <item>BaiduNetdisk</item>
+        <item>baofeng</item>
+        <item>Ctrip</item>
+        <item>CtripPushSDK</item>
+        <item>data</item>
+        <item>dida</item>
+        <item>didi</item>
+        <item>didiImg</item>
+        <item>tencentmapsdk</item>
+        <item>didi_gcsdk</item>
+        <item>iReader</item>
+        <item>jingdong</item>
+        <item>com.jingdong.app.mall</item>
+        <item>ktv</item>
+        <item>kugou</item>
+        <item>kgmusic</item>
+        <item>aliUnion_apk</item>
+        <item>KuwoMusic</item>
+        <item>libs</item>
+        <item>moji</item>
+        <item>immomo</item>
+        <item>cvmomo</item>
+        <item>SXH</item>
+        <item>com.mt.mtxx.mtxx</item>
+        <item>netease</item>
+        <item>netease_pushservice</item>
+        <item>powerword</item>
+        <item>Pindd</item>
+        <item>PaoPao</item>
+        <item>iqiyi</item>
+        <item>QiYiVideo_Local</item>
+        <item>QIYIVideo</item>
+        <item>QQBrowser</item>
+        <item>qqmusic</item>
+        <item>ShareSDK</item>
+        <item>sina</item>
+        <item>sina/weibo</item>
+        <item>sogou</item>
+        <item>SogouExplorer</item>
+        <item>sohu</item>
+        <item>storage</item>
+        <item>sysdata</item>
+        <item>taobao</item>
+        <item>temp</item>
+        <item>Tencent</item>
+        <item>Tencent/MicroMsg</item>
+        <item>tencent</item>
+        <item>tencent/MicroMsg</item>
+        <item>ttpod</item>
+        <item>TTPOD_LOG</item>
+        <item>UCDownloads</item>
+        <item>wandoujia</item>
+        <item>xunlei</item>
+        <item>xiami</item>
+        <item>Youdao</item>
+        <item>youku</item>
+        <item>com.youku.phone</item>
+    </string-array>
+    <string-array name="rarely_used_app_skip_list">
+        <item>com.samsung.android.sm</item>
+        <item>com.samsung.android.lool</item>
+        <item>com.samsung.android.sm.provider</item>
+        <item>com.samsung.android.sm.policy</item>
+        <item>com.cleanmaster.sdk</item>
+        <item>com.sec.android.security.LogGuard</item>
+        <item>com.sec.android.security.NetworkGuard</item>
+    </string-array>
+</resources>

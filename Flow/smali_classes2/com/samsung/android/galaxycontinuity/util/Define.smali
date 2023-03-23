@@ -86,6 +86,8 @@
 
 .field public static final CMD_NOTIFY_STARTED_ALARM:Ljava/lang/String; = "NOTIFY_STARTED_ALARM"
 
+.field public static final CONNECTION_METHOD_CHANGED:Ljava/lang/String; = "CONNECTION_METHOD_CHANGED"
+
 .field public static final EVENT_DRAG_DROP_MYFILES:[Ljava/lang/String;
 
 .field public static final EXTRA_NSD_SERVICEINFO:Ljava/lang/String; = "NSD_SERVICE_INFO"
@@ -164,6 +166,10 @@
 
 .field public static final SMARTVIEW_DND_PLAYED:Ljava/lang/String; = "smartview_dnd_played"
 
+.field public static final STATUS_TYPE_CONNECTION:Ljava/lang/String; = "STATUS_CONNECTED"
+
+.field public static final STATUS_TYPE_DISCONNECTION:Ljava/lang/String; = "STATUS_DISCONNECTED"
+
 .field public static final THUMB_FAIL:Ljava/lang/String; = "LOAD_FAIL"
 
 .field public static final TYPE_CLIPBOARD:Ljava/lang/String; = "CLIPBOARD"
@@ -193,9 +199,9 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    const-string v0, "startSamsungFlowDrag"
+    const-string/jumbo v0, "startSamsungFlowDrag"
 
-    const-string v1, "startSideSyncDrag"
+    const-string/jumbo v1, "startSideSyncDrag"
 
     .line 119
     filled-new-array {v0, v1}, [Ljava/lang/String;

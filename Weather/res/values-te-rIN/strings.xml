@@ -33,6 +33,7 @@
     <string name="air_quality">గాలి నాణ్యత</string>
     <string name="air_quality_next_tts">తదుపరి రోజువారీ గాలి నాణ్యత అంచనాలు</string>
     <string name="air_quality_previous_tts">మునుపటి రోజువారీ గాలి నాణ్యత అంచనాలు</string>
+    <string name="alert_title">తీవ్రమైన వాతావరణ హెచ్చరిక</string>
     <string name="all_added_cities">అన్ని జోడించిన నగరాలు</string>
     <string name="allow">అనుమతించు</string>
     <string name="allow_permission_in_settings">ఈ ఫీచర్‌ని ఉపయోగించడానికి, మీరు సెట్టింగ్‌లలో అనుమతిని అనుమతించాల్సి ఉంటుంది.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">చర్యకు మద్దతు అవసరం లేదు.</string>
     <string name="apply_daylight_saving_time">పగటివెలుగు ఆదా సమయాన్ని వర్తింప చేయాలా?</string>
     <string name="as_possible_after_verification">నివేదిక పంపబడింది. ధృవీకరణ తర్వాత నగరం పేరు వీలైనంత త్వరగా మార్చబడుతుంది.</string>
+    <string name="auto_refresh_on_screen_description">ప్రతి గంటలకు స్వయంచాలకంగా రీఫ్రెష్ చేసిన వాతావరణ సమాచారాన్ని పొందండి. ఇది ఆన్ చేయబడినప్పుడు, మీరు మాన్యువల్‌గా రీఫ్రెష్ చేయలేరు.</string>
+    <string name="auto_refresh_on_the_go">ప్రయాణంలో స్వీయ రిఫ్రెష్</string>
+    <string name="auto_refresh_on_the_go_advanced">అధునాతనం</string>
+    <string name="auto_refresh_on_the_go_description">మీరు డ్రైవింగ్ చేస్తున్నప్పుడు, బైకింగ్ చేస్తున్నప్పుడు, పరిగెత్తుతున్నప్పుడు లేదా నడుస్తున్నప్పుడు మరింత తరచుగా వాతావరణ అప్‌డేట్‌లను పొందండి. ఇది ఆన్ చేయబడినప్పుడు, మీరు మాన్యువల్‌గా రీఫ్రెష్ చేయలేరు.</string>
+    <string name="auto_refresh_on_the_go_simple_description">మీరు డ్రైవింగ్ చేస్తున్నప్పుడు, బైకింగ్ చేస్తున్నప్పుడు, పరిగెత్తుతున్నప్పుడు లేదా నడుస్తున్నప్పుడు మరింత తరచుగా వాతావరణ అప్‌డేట్‌లను పొందండి.</string>
     <string name="btn_report">నివేదించు</string>
     <string name="button_finish">ముగిసింది</string>
     <string name="button_tts">బటన్</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">మరింత సమాచారం కోసం రెండు సార్లు ట్యాప్ చేయండి.</string>
     <string name="china">చైనా</string>
     <string name="cities_button">నగరాలు</string>
+    <string name="city_added">నగరం జోడించబడింది.</string>
     <string name="city_list_text">నగరాలు</string>
     <string name="clear">క్లియర్</string>
     <string name="clear_then_cloudy">మబ్బుల కంటే స్వచ్ఛమైన</string>
@@ -126,7 +133,7 @@
     <string name="dialog_title_charging">ఛార్జీల యొక్క నోటిఫికే.</string>
     <string name="dialog_title_gps_info">ప్రస్తుత ప్రదేశం</string>
     <string name="dimmed_tts">మసకగా చేయబడింది</string>
-    <string name="disagree_txt">తిరస్కారం</string>
+    <string name="disagree_txt">నిరాకరించు</string>
     <string name="discard_button">విస్మరించు</string>
     <string name="display_scaling_mode_condensed">చిన్నది</string>
     <string name="display_scaling_mode_standard">పెద్దది</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">అంశం %d స్థానంలో పడిపోయింది.</string>
     <string name="dragndroplist_drag_start">%d స్థానంలోని ఐటెమ్ లాగడం ప్రారంభించారు.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d స్థానంలోని అంశాన్ని లాగలేరు.</string>
+    <string name="drawer_tips">%s చిట్కాలు</string>
     <string name="drawer_tips_message">స్థానాలను జోడించడానికి, తొలగించడానికి మరియు వరుస క్రమాన్ని సవరించడానికి ఇక్కడ నొక్కండి. మీరు హోమ్ స్క్రీన్‌పై వివిధ రకాల స్థానాలను చూపించడానికి పలు రకాల విజెట్‌లను జోడించగలరు.</string>
     <string name="drawer_tips_message_1">స్థానాలను జోడించడానికి, తొలగించడానికి మరియు క్రమాన్ని మార్చడానికి ఈ మెను దిగువన ఉన్న “స్థానాలను నిర్వహించు” నొక్కండి.</string>
     <string name="drawer_tips_message_2">ఒకే సమయంలో వేర్వేరు స్థానాలను చూపడానికి మీరు ఒకటి కంటే ఎక్కువ విడ్జెట్‌లను హోమ్ స్క్రీన్‌కు జోడించవచ్చు.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">సూచన వీడియో</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">శుక్ర</string>
     <string name="general">సాధారణం</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">మీరు మీ ఫోన్‌ని ఉపయోగించే దాని ఆధారంగా వ్యక్తిగతీకరించిన కంటెంట్‌ని పొందండి.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">మీరు మీ టాబ్లెట్‌ని ఉపయోగించే దాని ఆధారంగా వ్యక్తిగతీకరించిన కంటెంట్‌ని పొందండి.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">వాతావరణం నుండి మీ ప్రస్తుత స్థానంతో సహా వాతావారణ సమాచారాన్ని పొందండి</string>
     <string name="go_to_website">వెబ్‌సైట్‌కు వెళ్లు</string>
     <string name="goto_apps">కొత్త నవీకరణ అందుబాటులో ఉంది. ఇప్పుడే వ్యవస్థాపించాలా?</string>
     <string name="goto_apps_later">తర్వాత</string>
     <string name="goto_apps_now">ఇప్పుడు</string>
     <string name="goto_apps_update_title">కొత్త కంటెంట్ హెచ్చరికలు</string>
     <string name="header_tts">శీర్షిక</string>
+    <string name="heavy">భారీ</string>
     <string name="heavy_rain">భారీ వర్షం</string>
     <string name="heavy_rain_followed_by_intense_heat">తీవ్ర వేడి తర్వాత భారీ వర్షం</string>
     <string name="heavy_rain_followed_by_light_rain">తీవ్ర వేడి తర్వాత భారీ వర్షం</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">దృశ్యమానత</string>
     <string name="life_index_wind">గాలి</string>
     <string name="life_index_wind_force">పవన వేగం</string>
+    <string name="light">తేలిక</string>
     <string name="light_rain_followed_by_heavy_rain">భారీ వర్షం తర్వాత కొద్దిపాటి వర్షం</string>
     <string name="light_rain_with_some_heavy_rain">కొంత భారీ వర్షంతో కొద్దిపాటి వర్షం</string>
     <string name="link_tts">లింక్</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">ఫలితాలు కనుగొనబడలేదు.</string>
     <string name="message_service_not_available">సేవ ఇప్పుడు లభ్యంలో లేదు.</string>
     <string name="minus_tts">మినహా</string>
+    <string name="mon">సోమ</string>
     <string name="more">మరింత</string>
     <string name="more_cuntact_us">మమ్మల్ని సంప్రదించండి</string>
     <string name="more_information">మరిన్ని</string>
@@ -401,8 +414,18 @@
     <string name="navigation_drawer">నావిగేషన్ మెనుని చూపు</string>
     <string name="navigation_drawer_tips_message">డిఫాల్ట్ వాతావరణ స్థానాన్ని మార్చడానికి మరియు మీ అన్ని స్థానాలను నిర్వహించడానికి ఇక్కడ నొక్కండి.</string>
     <string name="new_version_available">%s కొత్త వెర్షన్ అందుబాటులో ఉంది.</string>
-    <string name="new_version_is_available">కొత్త సంస్కరణ అందుబాటులో ఉంది.</string>
+    <string name="new_version_is_available">కొత్త వెర్షన్ అందుబాటులో ఉంది.</string>
+    <string name="news_menu_show_news">వార్తలు చూపు</string>
+    <string name="news_opt_in_banner_title_text">వాతావరణ విడ్జెట్‌లో వార్తలను చూపడం ద్వారా ప్రస్తుత ఈవెంట్‌లలో తాజాగా ఉండండి.</string>
+    <string name="news_opt_in_popup_desc_text">వాతావరణ విడ్జెట్‌లో %s నుండి తాజా ముఖ్యాంశాలను చూపడం ద్వారా ప్రపంచంతో తాజాగా ఉండండి.</string>
+    <string name="news_opt_in_popup_title_text">ఒక విడ్జెట్‌లో వార్తలు మరియు వాతావరణాన్ని చూడండి</string>
+    <string name="news_request_agree_text">%s నుండి వార్తలను పొందడానికి నొక్కండి</string>
+    <string name="news_widget_bubble_text">వాతావరణంతో వార్తలను పొందండి.</string>
+    <string name="news_widget_dummy_title">నేటి అగ్ర కథనం</string>
+    <string name="news_widget_new_dummy_title">ఈ రోజు ఉదయం మీరు చేయాల్సిన 5 విషయాలు</string>
+    <string name="news_widget_oobe_text">వార్తలను జోడించడానికి ఇక్కడ నొక్కండి.</string>
     <string name="next">తదుపరి నగరం</string>
+    <string name="next_btn">తదుపరి</string>
     <string name="next_city">తదుపరి నగరం కోసం వాతావరణ సమాచారాన్ని వీక్షించడానికి రెండుసార్లు ట్యాప్ చేయండి.</string>
     <string name="night_tts">రాత్రి</string>
     <string name="no_application_available">ఏ అప్లికేషన్‌లు లభ్యంలో లేవు.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">వాతావరణ సమాచారం లేదు</string>
     <string name="not_in_use">ఉపయోగంలో లేదు</string>
     <string name="not_now">ఇప్పుడు కాదు</string>
+    <string name="not_now_btn">ఇప్పుడు కాదు</string>
     <string name="not_selected">ఎంచుకోలేదు</string>
     <string name="nothing_selected">ఏదీ ఎంపిక కాలేదు.</string>
     <string name="noti">ప్రకటన</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">వేగవంతమైన మరియు అత్యంత ఖచ్చితమైన స్థాన గుర్తింపు కోసం, “సెట్టింగ్‌లు”ను ట్యాప్ చేసి, స్థాన గుర్తింపు విధానాన్ని “GPS, Wi-Fi మరియు మొబైల్ నెట్‌వర్క్‌లు”కు సెట్ చేయండి.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">వేగవంతమైన మరియు అత్యంత ఖచ్చితమైన స్థాన గుర్తింపు కోసం, “సెట్టింగ్‌లు”ను ట్యాప్ చేసి, స్థాన గుర్తింపు విధానాన్ని “GPS మరియు Wi-Fi”కి సెట్ చేయండి.</string>
     <string name="notice_gps_trun_off_message_verizon">మీ స్థానిక వాతావరణ సమాచారాన్ని వీక్షించడానికి, స్థాన సెట్టింగ్‌లను ఆన్ చేయండి మరియు మోడ్‌ని అధిక ఖచ్చితత్వానికి సెట్ చేసినట్లు నిర్ధారించుకోండి.</string>
+    <string name="notification_alert_channel_name">తీవ్రమైన వాతావరణ హెచ్చరిక</string>
     <string name="notification_apps_update_channel_name">నోటిఫికేషన్‌లను అప్‌డేట్ చేయండి</string>
     <string name="notification_auto_refresh_channel_name">వాతావరణం స్వీయ రీఫ్రెష్</string>
     <string name="notification_dex_channel_name">Samsung DeXలో వాతావరణం</string>
@@ -438,6 +463,7 @@
     <string name="open_app">అప్లి. తెరువు</string>
     <string name="open_source_licences">ఓపెన్ సోర్స్ లైసెన్స్‌లు</string>
     <string name="other_locations">ఇతర స్థానాలు</string>
+    <string name="partly_sunny">కొంత భాగం ఎండగా</string>
     <string name="paused">పాజ్ చేయబడింది</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d కి.మీ/గం</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">అవపాతం: %d mm</string>
     <string name="preview">%s పరిదృశ్యం</string>
     <string name="previous">మునుపటి నగరం</string>
+    <string name="previous_btn">మునుపటి</string>
     <string name="previous_city">మునుపటి నగరం కోసం వాతావరణ సమాచారాన్ని వీక్షించడానికి రెండుసార్లు ట్యాప్ చేయండి.</string>
     <string name="privacy_policy">గోప్యతా విధానం</string>
     <string name="probability_of_rain_text">వర్షం వచ్చే అవకాశం</string>
     <string name="protect_your_content">మీ కంటెంట్‌ని రక్షించండి</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">రాడార్ మరియు మ్యాప్‌లు</string>
     <string name="rain">వర్షం</string>
     <string name="rain_followed_by_intense_heat">తీవ్ర వేడి తర్వాత వర్షం</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">వాతావరణ సమాచారాన్ని అప్‌డేట్ చేయడానికి, “సెట్టింగ్‌లు” నొక్కి, అప్లికేషన్ సమాచారం > అనుమతులకు వెళ్లి, తర్వాత కింది అనుమతులను అనుమతించి, మళ్లీ ప్రయత్నించండి:</string>
     <string name="runtime_location_permission_title">అనుమతులను అనుమతించు</string>
     <string name="runtime_oem_grant_permission_desc">%s అప్లికేషన్ కింది వాటిని ప్రాప్యత చేయడానికి అనుమతించింది:</string>
+    <string name="sat">శని</string>
     <string name="save_button">సేవ్ చేయి</string>
     <string name="search_most_searched_for">ఎక్కువ మంది శోధించారు</string>
     <string name="search_tab_cities">నగరాలు</string>
@@ -510,7 +540,7 @@
     <string name="selected">ఎంచుకోబడ్డాయి</string>
     <string name="sending">పంపుతోంది…</string>
     <string name="service_is_not_available_temporarily">తాత్కాలికంగా సేవ అందుబాటులో లేదు.</string>
-    <string name="sesl_action_bar_up_description">పైకి నావిగేట్ చేయి</string>
+    <string name="sesl_action_bar_up_description">ఎగువకు నావిగేట్ చేయి</string>
     <string name="sesl_action_menu_overflow_badge_description">కొత్త కంటెంట్ అందుబాటులో ఉంది</string>
     <string name="sesl_action_menu_overflow_badge_text_n">N</string>
     <string name="sesl_action_menu_overflow_description">మరిన్ని ఎంపికలు</string>
@@ -521,15 +551,16 @@
     <string name="sesl_material_badge_description">కొత్త కంటెంట్ అందుబాటులో ఉంది</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">మరిన్ని</string>
+    <string name="sesl_preferecne_badge_description">కొత్త నోటిఫికేషన్</string>
     <string name="sesl_preferencecategory_added_title">శీర్షిక</string>
-    <string name="sesl_search_hint">శోధన</string>
+    <string name="sesl_search_hint">శోధించు</string>
     <string name="sesl_searchview_description_clear">శోధన ఫీల్డ్‌ని క్లియర్ చేయి</string>
     <string name="sesl_searchview_description_query">ప్రశ్నను శోధించు</string>
-    <string name="sesl_searchview_description_search">శోధన</string>
+    <string name="sesl_searchview_description_search">శోధించు</string>
     <string name="sesl_searchview_description_submit">ప్రశ్నను విన్నవించండి</string>
     <string name="sesl_searchview_description_voice">వాయిస్ శోధన</string>
-    <string name="sesl_switch_off">ఉపయోగంలో లేదు</string>
-    <string name="sesl_switch_on">ఉపయోగంలో ఉంది</string>
+    <string name="sesl_switch_off">ఆఫ్</string>
+    <string name="sesl_switch_on">ఆన్</string>
     <string name="sesl_switchbar_off_text">ఆఫ్</string>
     <string name="sesl_switchbar_on_text">ఆన్</string>
     <string name="sesl_toolbar_collapse_description">కుదించు</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">మీ నెట్‌వర్క్ కనెక్షన్‌ని తనిఖీ చేసి, మళ్లీ ప్రయత్నించండి.</string>
     <string name="st_offline">ఆఫ్‌లైన్</string>
     <string name="st_view_less">తక్కువ వీక్షించండి</string>
+    <string name="status_off">ఆఫ్</string>
+    <string name="status_on">ఆన్</string>
+    <string name="sun">ఆది</string>
     <string name="sunny">ఎండగా ఉంటుంది</string>
     <string name="sunny_with_some_clouds">కొన్ని మబ్బులతో సూర్యుడు</string>
     <string name="sunny_with_some_heavy_rain">కొద్దిపాటి అధిక వర్షంతో సూర్యరశ్మి</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">మీ పాత పరికరం నుండి వాతావరణ డేటాని పునరుద్ధరించడానికి ఇక్కడ నొక్కండి.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">మళ్లీ మీ స్థానాన్ని కనుగొనడానికి “పునఃప్రయత్నించు” నొక్కండి.</string>
     <string name="tap_setting_message_edge_panel">స్థానిక వాతావరణాన్ని పొందడానికి స్థానాన్ని ఆన్ చేయండి.</string>
+    <string name="tap_the_settings_icon">సెట్టింగ్‌లు చిహ్నాన్ని ట్యాప్ చేయండి.</string>
     <string name="tap_to_get_the_weather">వాతావరణాన్ని పొందడానికి నొక్కండి</string>
     <string name="temp_f_c">%d°ఫారన్హీట్</string>
     <string name="temp_f_m">%d°సెల్సియస్</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">నిబంధనలు మరియు షరతులు</string>
     <string name="the_latest_version">తాజా వెర్షన్ ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">ఇది నోటిఫికేషన్‌లు మరియు క్యాలెండర్‌లకు కూడా వర్తింప చేయబడుతుంది.</string>
+    <string name="thu">గురు</string>
     <string name="tick_box_tts">ఎంపిక పెట్టె</string>
     <string name="ticked_tts">ఎంచుకోబడ్డాయి</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">గంటకోసారి</string>
     <string name="title_select_locations">స్థానాలను ఎంచుకోండి</string>
     <string name="title_theme">థీమ్‌లు</string>
+    <string name="to_continue_agree_to_updated">కొనసాగించడానికి, మా అప్‌డేట్ చేసిన %sకు అంగీకరించండి.</string>
     <string name="to_get_local_weather_chn">"స్థానిక వాతావరణాన్ని పొందడానికి, మీ ప్రస్తుత స్థానం వాతావరణ సేవల ప్రదాతకు పంపబడుతుంది. (దయచేసి ప్రొవైడర్ %1$sనిబంధనలు మరియు షరతులు%2$s మరియు %3$sగోప్యతా విధానం%4$s చూడండి).
 మీ పరికరంలోని ఇతర అనువర్తనాలు మరియు సేవలు ఆ అనువర్తనాల్లో వాతావరణాన్ని చూపించడానికి తిరిగి పొందిన వాతావరణ డేటాను యాక్సెస్ చేయవచ్చు.
 నిరంతర వాతావరణ సమాచారాన్ని మీకు అందించడానికి గానూ, మీరు అనువర్తనాన్ని ఉపయోగించనప్పుడు కూడా వాతావరణం మీ ప్రాంతానికి యాక్సెస్ కలిగి ఉంటుంది."</string>
     <string name="today">ఈరోజు</string>
+    <string name="try_it_out_btn">దీన్ని ప్రయత్నించండి</string>
+    <string name="tue">మంగళ</string>
+    <string name="turn_on_to_use_precise_location">ఈ ఫీచర్‌ని ఉపయోగించడానికి, సెట్టింగ్‌లలో అన్ని సమయాలలో మీ స్థానాన్ని ప్రాప్యత చేయడానికి %sని అనుమతించాలి మరియు ఖచ్చితమైన స్థానాన్ని ఉపయోగించడాన్ని ఆన్ చేయాలి. “సెట్టింగ్‌లు” నొక్కి, ఆపై అనుమతులు > స్థానానికి వెళ్లండి.</string>
     <string name="tw_title_weather_broadcast">ప్రసారం</string>
-    <string name="unable_to_check_for_updates">అప్‌డేట్‌ల కోసం తనిఖీ చేయడం సాధ్యం కాదు. నెట్‌వర్క్ కనెక్షన్ లేదు.</string>
+    <string name="unable_to_check_for_updates">అప్‌డేట్‌ల కోసం తనిఖీ చేయడం సాధ్యం కాదు. తర్వాత మళ్లీ ప్రయత్నించండి.</string>
     <string name="unable_to_receive_info_msg">సమాచారాన్ని స్వీకరించడం సాధ్యం కాదు</string>
     <string name="unticked_tts">ఎంచుకోలేదు</string>
     <string name="unused">ఉపయోగించనివి</string>
     <string name="update">అప్‌డేట్</string>
     <string name="update_abb8">అప్‌డేట్ చేయి</string>
     <string name="update_app">అప్లికేషన్‌ని అప్‌డేట్ చేయండి</string>
+    <string name="updated_tile_chn">అప్డేట్ చేయబడింది: %s</string>
     <string name="updated_tts">%s అప్‌డేట్ చేయబడింది</string>
+    <string name="use_current_location">ప్రస్తుత స్థానాన్ని ఉపయోగించు</string>
     <string name="use_current_location_agree_popup">"స్థానిక వాతావరణాన్ని పొందడం కోసం, వాతావరణ సేవలకు ప్రదాతకు మీ ప్రస్తుత స్థానం పంపబడుతుంది. (దయచేసి ప్రదాత యొక్క %1$sగోప్యత పాలసీ%2$sని చూడండి.)
 తిరిగి పొందిన వాతావరణ డేటాని మీ పరికరంలోని ఇతర అప్లికేషన్‌లు మరియు సేవలు యాక్సెస్ చేసి తమ అప్లికేషన్‌లలో వాతావరణాన్ని చూపవచ్చు."</string>
     <string name="use_current_location_and_background_agree_popup">"స్థానిక వాతావరణాన్ని పొందడానికి, మీ ప్రస్తుత స్థానం వాతావరణ సేవల ప్రదాతకు పంపబడుతుంది. (దయచేసి ప్రదాత %1$sగోప్యత విధానం%2$s చూడండి).
@@ -635,9 +677,16 @@
 వాతావరణ అప్లికేషన్‌ సెట్టింగ్‌లకు వెళ్లడం ద్వారా మీరు మీ స్థానాన్ని ఉపయోగించడం ఆపివేయవచ్చు."</string>
     <string name="use_current_location_body_msg_chn">"“వాతావరణాన్ని” ఉపయోగించడానికి ముందు దయచేసి జాగ్రత్తగా చదవండి :
 ఒకవేళ మీరు మీ ప్రస్తుత ప్రాంతంలోని వాతావరణాన్ని తెలుసుకోవాలనుకుంటే, థర్డ్ పార్టీ సర్వీస్ ప్రొవైడర్ మీ పరికరానికి నిరంతరాయంగా (మీరు సేవను ఉపయోగించకపోయినా) ప్రాప్యతను కలిగి ఉండటానికి మరియు క్రింద పేర్కొన్న విధంగా నిర్దిష్టమైన డేటాను పొందటానికి మీరు అనుమతించాలి. అలాంటి అనుమతిని ఇచ్చే ముందు దయచేసి జాగ్రత్తగా చదవండి మరియు థర్డ్ పార్టీ సర్వీస్ ప్రొవైడర్ యొక్క %1$sనిబంధనలు మరియు షరతులను%2$s మరియు %3$sగోప్యతా విధానాన్ని%4$s అర్థం చేసుకోండి. సెట్టింగ్స్ మెనూ లో “ ప్రాంతం” ను ఆఫ్ చేయడం ద్వారా మీరు మీ అనుమతిని విత్­డ్రా చేసుకోవచ్చు. తిరిగి పొందిన వాతావరణ డేటాని మీ పరికరంలోని ఇతర అప్లికేషన్‌లు మరియు సేవలు తమ అప్లికేషన్‌లలో వాతావరణాన్ని చూపడానికి యాక్సెస్ చేయవచ్చు."</string>
+    <string name="use_current_location_body_msg_kor">"మీ ప్రస్తుత స్థానం సేకరించబడుతుంది మరియు మీ స్థానం వాతావరణాన్ని పొందడం వంటి కొన్ని వాతావరణ అప్లికేషన్ ఫీచర్‌లను అందించడానికి ఉపయోగించబడుతుంది.
+
+క్రమంగా వాతావరణ సమాచారాన్ని అందించడానికి, మీరు అప్లికేషన్‌ని ఉపయోగించనప్పటికీ మీ స్థానాన్ని ఈ అప్లికేషన్ క్రమంగా ప్రాసెస్ చేస్తుంది. కొనసాగించడం ద్వారా, మీరు ఎగువ ప్రయోజనాల కోసం మీ స్థానాన్ని సేకరించి, ప్రాసెస్ చేయడానికి అంగీకరిస్తున్నారు.
+
+మీరు వాతావరణం అప్లికేషన్ సెట్టింగ్‌లలో ఈ స్థానం సేకరణని మరియు వినియోగాన్ని ఆపివేయవచ్చు."</string>
     <string name="use_current_location_body_purpose">ఉద్దేశ్యం</string>
     <string name="use_current_location_body_purpose_content">మీ ప్రస్తుత ప్రాంతం కోసం వాతావరణ సమాచారాన్ని అందించడానికి</string>
     <string name="use_current_location_body_search_provider">సేవా ప్రదాత.</string>
+    <string name="use_current_location_continue">కొనసాగించు</string>
+    <string name="use_current_location_not_now">ఇప్పుడు కాదు</string>
     <string name="use_current_location_off_alert_popup">ప్రస్తుత స్థాన సమాచారం తీసివేయబడుతుంది.</string>
     <string name="useful_informations">జీవిత చిట్కాలు మరియు ఇతర నివేదికలు</string>
     <string name="using_as">%sని ఉపయోగించడం</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">వాతావరణ చిట్కాలు</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">బుధ</string>
     <string name="weekly_forecast">ప్రతి రోజూ</string>
     <string name="widget_background">విడ్జెట్ నేపథ్యం</string>
     <string name="widget_empty_text">వాతావరణ సమాచారం కోసం నొక్కండి</string>
+    <string name="widget_location">నగరం పేరు</string>
     <string name="widget_name_4x1">వాతావరణం మరియు గడియారం</string>
     <string name="widget_setting">సెట్టింగ్‌లు</string>
     <string name="widget_setting_background_color">నేపథ్య రంగు</string>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_operation_layout" android:background="@color/bottom_selection_layout_background" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_layout_height" android:baselineAligned="false" android:paddingStart="@dimen/bottom_selection_layout_padding_start" android:paddingEnd="@dimen/bottom_selection_layout_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="true" android:layout_width="@dimen/bottom_selection_file_selected_container_width" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:defaultFocusHighlightEnabled="false">
+        <include android:id="@id/thumbnail_container" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/bottom_selected_file_info_thumbnail_layout" />
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/bottom_selected_file_info_text_size" android:textColor="@color/bottom_selection_item_count_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/item_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bottom_selection_item_count_margin_top" android:maxLines="1" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/operation_cancel_container" style="@style/BottomOpTextButtonContainer">
+            <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:id="@id/operation_cancel" android:text="@string/button_cancel" style="@style/BottomOpTextButton" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/operation_done_container" style="@style/BottomOpTextButtonContainer">
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:id="@id/operation_done" android:text="@string/button_done" style="@style/BottomOpTextButton" />
+    </FrameLayout>
+</LinearLayout>

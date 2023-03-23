@@ -37,39 +37,56 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 72
+    .line 73
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     sput-object v0, Landroidx/core/text/PrecomputedTextCompat;->sLock:Ljava/lang/Object;
 
-    const/4 v0, 0x0
-
-    .line 73
-    sput-object v0, Landroidx/core/text/PrecomputedTextCompat;->sExecutor:Ljava/util/concurrent/Executor;
-
     return-void
 .end method
 
 .method private constructor <init>(Landroid/text/PrecomputedText;Landroidx/core/text/PrecomputedTextCompat$Params;)V
-    .locals 0
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "precomputed",
+            "params"
+        }
+    .end annotation
 
-    .line 487
+    .line 497
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 488
+    .line 498
     iput-object p1, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
-    .line 489
+    .line 499
     iput-object p2, p0, Landroidx/core/text/PrecomputedTextCompat;->mParams:Landroidx/core/text/PrecomputedTextCompat$Params;
 
-    const/4 p1, 0x0
+    const/4 p2, 0x0
 
-    .line 490
-    iput-object p1, p0, Landroidx/core/text/PrecomputedTextCompat;->mParagraphEnds:[I
+    .line 500
+    iput-object p2, p0, Landroidx/core/text/PrecomputedTextCompat;->mParagraphEnds:[I
 
-    .line 491
+    .line 501
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move-object p1, p2
+
+    :goto_0
     iput-object p1, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
 
     return-void
@@ -77,26 +94,38 @@
 
 .method private constructor <init>(Ljava/lang/CharSequence;Landroidx/core/text/PrecomputedTextCompat$Params;[I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "text",
+            "params",
+            "paraEnds"
+        }
+    .end annotation
 
-    .line 479
+    .line 489
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 480
+    .line 490
     new-instance v0, Landroid/text/SpannableString;
 
     invoke-direct {v0, p1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
     iput-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
-    .line 481
+    .line 491
     iput-object p2, p0, Landroidx/core/text/PrecomputedTextCompat;->mParams:Landroidx/core/text/PrecomputedTextCompat$Params;
 
-    .line 482
+    .line 492
     iput-object p3, p0, Landroidx/core/text/PrecomputedTextCompat;->mParagraphEnds:[I
 
     const/4 p1, 0x0
 
-    .line 483
+    .line 493
     iput-object p1, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
 
     return-void
@@ -104,25 +133,67 @@
 
 .method public static create(Ljava/lang/CharSequence;Landroidx/core/text/PrecomputedTextCompat$Params;)Landroidx/core/text/PrecomputedTextCompat;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "text",
+            "params"
+        }
+    .end annotation
 
-    .line 426
+    .line 431
     invoke-static {p0}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 427
+    .line 432
     invoke-static {p1}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     :try_start_0
     const-string v0, "PrecomputedText"
 
-    .line 430
+    .line 435
     invoke-static {v0}, Landroidx/core/os/TraceCompat;->beginSection(Ljava/lang/String;)V
 
-    .line 432
+    .line 437
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    iget-object v0, p1, Landroidx/core/text/PrecomputedTextCompat$Params;->mWrapped:Landroid/text/PrecomputedText$Params;
+
+    if-eqz v0, :cond_0
+
+    .line 438
+    new-instance v0, Landroidx/core/text/PrecomputedTextCompat;
+
+    iget-object v1, p1, Landroidx/core/text/PrecomputedTextCompat$Params;->mWrapped:Landroid/text/PrecomputedText$Params;
+
+    .line 439
+    invoke-static {p0, v1}, Landroid/text/PrecomputedText;->create(Ljava/lang/CharSequence;Landroid/text/PrecomputedText$Params;)Landroid/text/PrecomputedText;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0, p1}, Landroidx/core/text/PrecomputedTextCompat;-><init>(Landroid/text/PrecomputedText;Landroidx/core/text/PrecomputedTextCompat$Params;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 483
+    invoke-static {}, Landroidx/core/os/TraceCompat;->endSection()V
+
+    return-object v0
+
+    .line 442
+    :cond_0
+    :try_start_1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 435
+    .line 445
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
@@ -132,25 +203,25 @@
     move v3, v2
 
     :goto_0
-    if-ge v3, v1, :cond_1
+    if-ge v3, v1, :cond_2
 
     const/16 v4, 0xa
 
-    .line 437
+    .line 447
     invoke-static {p0, v4, v3, v1}, Landroid/text/TextUtils;->indexOf(Ljava/lang/CharSequence;CII)I
 
     move-result v3
 
-    if-gez v3, :cond_0
+    if-gez v3, :cond_1
 
     move v3, v1
 
     goto :goto_1
 
-    :cond_0
+    :cond_1
     add-int/lit8 v3, v3, 0x1
 
-    .line 446
+    .line 456
     :goto_1
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -160,8 +231,8 @@
 
     goto :goto_0
 
-    .line 448
-    :cond_1
+    .line 458
+    :cond_2
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
@@ -170,15 +241,15 @@
 
     move v3, v2
 
-    .line 449
+    .line 459
     :goto_2
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
-    if-ge v3, v4, :cond_2
+    if-ge v3, v4, :cond_3
 
-    .line 450
+    .line 460
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -195,15 +266,15 @@
 
     goto :goto_2
 
-    .line 456
-    :cond_2
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 466
+    :cond_3
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x17
 
-    if-lt v0, v3, :cond_3
+    if-lt v0, v3, :cond_4
 
-    .line 457
+    .line 467
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -218,7 +289,7 @@
 
     move-result-object v0
 
-    .line 459
+    .line 469
     invoke-virtual {p1}, Landroidx/core/text/PrecomputedTextCompat$Params;->getBreakStrategy()I
 
     move-result v2
@@ -227,7 +298,7 @@
 
     move-result-object v0
 
-    .line 460
+    .line 470
     invoke-virtual {p1}, Landroidx/core/text/PrecomputedTextCompat$Params;->getHyphenationFrequency()I
 
     move-result v2
@@ -236,7 +307,7 @@
 
     move-result-object v0
 
-    .line 461
+    .line 471
     invoke-virtual {p1}, Landroidx/core/text/PrecomputedTextCompat$Params;->getTextDirection()Landroid/text/TextDirectionHeuristic;
 
     move-result-object v2
@@ -245,20 +316,20 @@
 
     move-result-object v0
 
-    .line 462
+    .line 472
     invoke-virtual {v0}, Landroid/text/StaticLayout$Builder;->build()Landroid/text/StaticLayout;
 
     goto :goto_3
 
-    .line 463
-    :cond_3
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 473
+    :cond_4
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x15
 
-    if-lt v0, v2, :cond_4
+    if-lt v0, v2, :cond_5
 
-    .line 464
+    .line 474
     new-instance v3, Landroid/text/StaticLayout;
 
     invoke-virtual {p1}, Landroidx/core/text/PrecomputedTextCompat$Params;->getTextPaint()Landroid/text/TextPaint;
@@ -279,16 +350,16 @@
 
     invoke-direct/range {v3 .. v10}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
 
-    .line 471
-    :cond_4
+    .line 481
+    :cond_5
     :goto_3
     new-instance v0, Landroidx/core/text/PrecomputedTextCompat;
 
     invoke-direct {v0, p0, p1, v1}, Landroidx/core/text/PrecomputedTextCompat;-><init>(Ljava/lang/CharSequence;Landroidx/core/text/PrecomputedTextCompat$Params;[I)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 473
+    .line 483
     invoke-static {}, Landroidx/core/os/TraceCompat;->endSection()V
 
     return-object v0
@@ -298,11 +369,25 @@
 
     invoke-static {}, Landroidx/core/os/TraceCompat;->endSection()V
 
+    .line 484
     throw p0
 .end method
 
 .method public static getTextFuture(Ljava/lang/CharSequence;Landroidx/core/text/PrecomputedTextCompat$Params;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/Future;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "charSequence",
+            "params",
+            "executor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -316,19 +401,19 @@
         }
     .end annotation
 
-    .line 627
+    .line 649
     new-instance v0, Landroidx/core/text/PrecomputedTextCompat$PrecomputedTextFutureTask;
 
     invoke-direct {v0, p1, p0}, Landroidx/core/text/PrecomputedTextCompat$PrecomputedTextFutureTask;-><init>(Landroidx/core/text/PrecomputedTextCompat$Params;Ljava/lang/CharSequence;)V
 
     if-nez p2, :cond_1
 
-    .line 629
+    .line 651
     sget-object p0, Landroidx/core/text/PrecomputedTextCompat;->sLock:Ljava/lang/Object;
 
     monitor-enter p0
 
-    .line 630
+    .line 652
     :try_start_0
     sget-object p1, Landroidx/core/text/PrecomputedTextCompat;->sExecutor:Ljava/util/concurrent/Executor;
 
@@ -336,18 +421,18 @@
 
     const/4 p1, 0x1
 
-    .line 631
+    .line 653
     invoke-static {p1}, Ljava/util/concurrent/Executors;->newFixedThreadPool(I)Ljava/util/concurrent/ExecutorService;
 
     move-result-object p1
 
     sput-object p1, Landroidx/core/text/PrecomputedTextCompat;->sExecutor:Ljava/util/concurrent/Executor;
 
-    .line 633
+    .line 655
     :cond_0
     sget-object p2, Landroidx/core/text/PrecomputedTextCompat;->sExecutor:Ljava/util/concurrent/Executor;
 
-    .line 634
+    .line 656
     monitor-exit p0
 
     goto :goto_0
@@ -361,7 +446,7 @@
 
     throw p1
 
-    .line 636
+    .line 658
     :cond_1
     :goto_0
     invoke-interface {p2, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
@@ -373,8 +458,16 @@
 # virtual methods
 .method public charAt(I)C
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 712
+    .line 747
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1}, Landroid/text/Spannable;->charAt(I)C
@@ -385,9 +478,26 @@
 .end method
 
 .method public getParagraphCount()I
-    .locals 1
+    .locals 2
 
-    .line 519
+    .line 529
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    .line 530
+    iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
+
+    invoke-virtual {v0}, Landroid/text/PrecomputedText;->getParagraphCount()I
+
+    move-result v0
+
+    return v0
+
+    .line 532
+    :cond_0
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mParagraphEnds:[I
 
     array-length v0, v0
@@ -397,8 +507,16 @@
 
 .method public getParagraphEnd(I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "paraIndex"
+        }
+    .end annotation
 
-    .line 534
+    .line 552
     invoke-virtual {p0}, Landroidx/core/text/PrecomputedTextCompat;->getParagraphCount()I
 
     move-result v0
@@ -409,7 +527,24 @@
 
     invoke-static {p1, v1, v0, v2}, Landroidx/core/util/Preconditions;->checkArgumentInRange(IIILjava/lang/String;)I
 
-    .line 535
+    .line 553
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    .line 554
+    iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
+
+    invoke-virtual {v0, p1}, Landroid/text/PrecomputedText;->getParagraphEnd(I)I
+
+    move-result p1
+
+    return p1
+
+    .line 556
+    :cond_0
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mParagraphEnds:[I
 
     aget p1, v0, p1
@@ -419,8 +554,16 @@
 
 .method public getParagraphStart(I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "paraIndex"
+        }
+    .end annotation
 
-    .line 526
+    .line 540
     invoke-virtual {p0}, Landroidx/core/text/PrecomputedTextCompat;->getParagraphCount()I
 
     move-result v0
@@ -431,12 +574,29 @@
 
     invoke-static {p1, v1, v0, v2}, Landroidx/core/util/Preconditions;->checkArgumentInRange(IIILjava/lang/String;)I
 
-    if-nez p1, :cond_0
+    .line 541
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1d
+
+    if-lt v0, v2, :cond_0
+
+    .line 542
+    iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
+
+    invoke-virtual {v0, p1}, Landroid/text/PrecomputedText;->getParagraphStart(I)I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    if-nez p1, :cond_1
 
     goto :goto_0
 
-    .line 527
-    :cond_0
+    .line 544
+    :cond_1
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mParagraphEnds:[I
 
     add-int/lit8 p1, p1, -0x1
@@ -450,7 +610,7 @@
 .method public getParams()Landroidx/core/text/PrecomputedTextCompat$Params;
     .locals 1
 
-    .line 512
+    .line 522
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mParams:Landroidx/core/text/PrecomputedTextCompat$Params;
 
     return-object v0
@@ -459,14 +619,14 @@
 .method public getPrecomputedText()Landroid/text/PrecomputedText;
     .locals 2
 
-    .line 501
+    .line 511
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     instance-of v1, v0, Landroid/text/PrecomputedText;
 
     if-eqz v1, :cond_0
 
-    .line 502
+    .line 512
     check-cast v0, Landroid/text/PrecomputedText;
 
     return-object v0
@@ -479,8 +639,16 @@
 
 .method public getSpanEnd(Ljava/lang/Object;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
 
-    .line 687
+    .line 722
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1}, Landroid/text/Spannable;->getSpanEnd(Ljava/lang/Object;)I
@@ -492,8 +660,16 @@
 
 .method public getSpanFlags(Ljava/lang/Object;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
 
-    .line 692
+    .line 727
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1}, Landroid/text/Spannable;->getSpanFlags(Ljava/lang/Object;)I
@@ -505,8 +681,16 @@
 
 .method public getSpanStart(Ljava/lang/Object;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
 
-    .line 682
+    .line 717
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
@@ -517,7 +701,20 @@
 .end method
 
 .method public getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end",
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -528,7 +725,24 @@
         }
     .end annotation
 
-    .line 677
+    .line 707
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    .line 708
+    iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
+
+    invoke-virtual {v0, p1, p2, p3}, Landroid/text/PrecomputedText;->getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 710
+    :cond_0
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/text/Spannable;->getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
@@ -541,7 +755,7 @@
 .method public length()I
     .locals 1
 
-    .line 707
+    .line 742
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0}, Landroid/text/Spannable;->length()I
@@ -553,8 +767,20 @@
 
 .method public nextSpanTransition(IILjava/lang/Class;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "limit",
+            "type"
+        }
+    .end annotation
 
-    .line 697
+    .line 732
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/text/Spannable;->nextSpanTransition(IILjava/lang/Class;)I
@@ -565,22 +791,46 @@
 .end method
 
 .method public removeSpan(Ljava/lang/Object;)V
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "what"
+        }
+    .end annotation
 
-    .line 663
+    .line 689
     instance-of v0, p1, Landroid/text/style/MetricAffectingSpan;
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
-    .line 667
+    .line 693
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    .line 694
+    iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
+
+    invoke-virtual {v0, p1}, Landroid/text/PrecomputedText;->removeSpan(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 696
+    :cond_0
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1}, Landroid/text/Spannable;->removeSpan(Ljava/lang/Object;)V
 
+    :goto_0
     return-void
 
-    .line 664
-    :cond_0
+    .line 690
+    :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "MetricAffectingSpan can not be removed from PrecomputedText."
@@ -591,22 +841,52 @@
 .end method
 
 .method public setSpan(Ljava/lang/Object;III)V
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "what",
+            "start",
+            "end",
+            "flags"
+        }
+    .end annotation
 
-    .line 651
+    .line 673
     instance-of v0, p1, Landroid/text/style/MetricAffectingSpan;
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
-    .line 655
+    .line 677
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    .line 678
+    iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mWrapped:Landroid/text/PrecomputedText;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/text/PrecomputedText;->setSpan(Ljava/lang/Object;III)V
+
+    goto :goto_0
+
+    .line 680
+    :cond_0
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1, p2, p3, p4}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
+    :goto_0
     return-void
 
-    .line 652
-    :cond_0
+    .line 674
+    :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     const-string p2, "MetricAffectingSpan can not be set to PrecomputedText."
@@ -618,8 +898,18 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 717
+    .line 752
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-interface {v0, p1, p2}, Landroid/text/Spannable;->subSequence(II)Ljava/lang/CharSequence;
@@ -632,7 +922,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 722
+    .line 758
     iget-object v0, p0, Landroidx/core/text/PrecomputedTextCompat;->mText:Landroid/text/Spannable;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

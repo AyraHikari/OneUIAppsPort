@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/-$$Lambda$AnalyzeStorageSubList$jedUzvkSAYJWppwMUUQcKqMOx5U;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/AnalyzeStorageSubList;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/AnalyzeStorageSubList;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/-$$Lambda$AnalyzeStorageSubList$jedUzvkSAYJWppwMUUQcKqMOx5U;->f$0:Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/AnalyzeStorageSubList;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/-$$Lambda$AnalyzeStorageSubList$jedUzvkSAYJWppwMUUQcKqMOx5U;->f$0:Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/AnalyzeStorageSubList;
+
+    check-cast p1, Landroidx/core/widget/NestedScrollView;
+
+    invoke-virtual {p0, p1}, Lcom/sec/android/app/myfiles/external/ui/pages/analyzestorage/AnalyzeStorageSubList;->lambda$onDestroyView$2$AnalyzeStorageSubList(Landroidx/core/widget/NestedScrollView;)V
+
+    return-void
+.end method

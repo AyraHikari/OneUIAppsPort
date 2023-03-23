@@ -6,6 +6,16 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/content/Context;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "args"
+        }
+    .end annotation
 
     .line 12
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/command/CommandBase;-><init>(Landroid/content/Context;[Ljava/lang/Object;)V

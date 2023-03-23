@@ -351,7 +351,7 @@
     :cond_4
     new-instance p1, Lorg/spongycastle/crypto/InvalidCipherTextException;
 
-    const-string p2, "unwrap data must be a multiple of 8 bytes"
+    const-string/jumbo p2, "unwrap data must be a multiple of 8 bytes"
 
     invoke-direct {p1, p2}, Lorg/spongycastle/crypto/InvalidCipherTextException;-><init>(Ljava/lang/String;)V
 
@@ -514,7 +514,7 @@
     :cond_3
     new-instance p1, Lorg/spongycastle/crypto/DataLengthException;
 
-    const-string p2, "wrap data must be a multiple of 8 bytes"
+    const-string/jumbo p2, "wrap data must be a multiple of 8 bytes"
 
     invoke-direct {p1, p2}, Lorg/spongycastle/crypto/DataLengthException;-><init>(Ljava/lang/String;)V
 

@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 100
+    .line 98
     invoke-direct {p0}, Landroidx/core/view/accessibility/AccessibilityViewCommand$CommandArguments;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 .method public getHTMLElement()Ljava/lang/String;
     .locals 2
 
-    .line 106
+    .line 105
     iget-object v0, p0, Landroidx/core/view/accessibility/AccessibilityViewCommand$MoveHtmlArguments;->mBundle:Landroid/os/Bundle;
 
     const-string v1, "ACTION_ARGUMENT_HTML_ELEMENT_STRING"

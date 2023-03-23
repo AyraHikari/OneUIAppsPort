@@ -20,6 +20,9 @@
 .field private closed:Z
 
 .field private delegate:Ljava/io/Reader;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final source:Lokio/BufferedSource;
 
@@ -28,13 +31,13 @@
 .method constructor <init>(Lokio/BufferedSource;Ljava/nio/charset/Charset;)V
     .locals 0
 
-    .line 239
+    .line 250
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
 
-    .line 240
+    .line 251
     iput-object p1, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
 
-    .line 241
+    .line 252
     iput-object p2, p0, Lokhttp3/ResponseBody$BomAwareReader;->charset:Ljava/nio/charset/Charset;
 
     return-void
@@ -52,20 +55,20 @@
 
     const/4 v0, 0x1
 
-    .line 256
+    .line 267
     iput-boolean v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->closed:Z
 
-    .line 257
+    .line 268
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->delegate:Ljava/io/Reader;
 
     if-eqz v0, :cond_0
 
-    .line 258
+    .line 269
     invoke-virtual {v0}, Ljava/io/Reader;->close()V
 
     goto :goto_0
 
-    .line 260
+    .line 271
     :cond_0
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
 
@@ -83,17 +86,17 @@
         }
     .end annotation
 
-    .line 245
+    .line 256
     iget-boolean v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->closed:Z
 
     if-nez v0, :cond_1
 
-    .line 247
+    .line 258
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->delegate:Ljava/io/Reader;
 
     if-nez v0, :cond_0
 
-    .line 249
+    .line 260
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
 
     iget-object v1, p0, Lokhttp3/ResponseBody$BomAwareReader;->charset:Ljava/nio/charset/Charset;
@@ -102,7 +105,7 @@
 
     move-result-object v0
 
-    .line 250
+    .line 261
     new-instance v1, Ljava/io/InputStreamReader;
 
     iget-object v2, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
@@ -117,7 +120,7 @@
 
     move-object v0, v1
 
-    .line 252
+    .line 263
     :cond_0
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/Reader;->read([CII)I
 
@@ -125,7 +128,7 @@
 
     return p1
 
-    .line 245
+    .line 256
     :cond_1
     new-instance p1, Ljava/io/IOException;
 

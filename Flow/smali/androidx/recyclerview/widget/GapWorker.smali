@@ -559,6 +559,7 @@
 
     invoke-static {}, Landroidx/core/os/TraceCompat;->endSection()V
 
+    .line 339
     throw p1
 
     :cond_3
@@ -635,6 +636,7 @@
 
     invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView;->onExitLayoutOrScroll(Z)V
 
+    .line 306
     throw p2
 .end method
 
@@ -830,5 +832,6 @@
     .line 404
     invoke-static {}, Landroidx/core/os/TraceCompat;->endSection()V
 
+    .line 405
     throw v2
 .end method

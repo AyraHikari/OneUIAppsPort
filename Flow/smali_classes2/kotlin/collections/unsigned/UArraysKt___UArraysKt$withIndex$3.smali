@@ -20,31 +20,30 @@
     value = {
         "Lkotlin/jvm/internal/Lambda;",
         "Lkotlin/jvm/functions/Function0<",
-        "Lkotlin/collections/UByteIterator;",
-        ">;"
+        "Ljava/util/Iterator<",
+        "+",
+        "Lkotlin/UByte;",
+        ">;>;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
-        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+        "\u0000\u000c\n\u0000\n\u0002\u0010(\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0003"
     }
     d2 = {
         "<anonymous>",
-        "Lkotlin/collections/UByteIterator;",
+        "",
+        "Lkotlin/UByte;",
         "invoke"
     }
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -70,20 +69,29 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0}, Lkotlin/collections/unsigned/UArraysKt___UArraysKt$withIndex$3;->invoke()Lkotlin/collections/UByteIterator;
+    .line 5328
+    invoke-virtual {p0}, Lkotlin/collections/unsigned/UArraysKt___UArraysKt$withIndex$3;->invoke()Ljava/util/Iterator;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Lkotlin/collections/UByteIterator;
+.method public final invoke()Ljava/util/Iterator;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "Lkotlin/UByte;",
+            ">;"
+        }
+    .end annotation
 
-    .line 4496
+    .line 5328
     iget-object v0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysKt$withIndex$3;->$this_withIndex:[B
 
-    invoke-static {v0}, Lkotlin/UByteArray;->iterator-impl([B)Lkotlin/collections/UByteIterator;
+    invoke-static {v0}, Lkotlin/UByteArray;->iterator-impl([B)Ljava/util/Iterator;
 
     move-result-object v0
 

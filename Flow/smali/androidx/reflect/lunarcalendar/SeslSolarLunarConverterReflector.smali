@@ -19,6 +19,24 @@
 
 .method public static convertLunarToSolar(Ldalvik/system/PathClassLoader;Ljava/lang/Object;IIIZ)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter",
+            "y",
+            "m",
+            "d",
+            "isLeapMonth"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -92,8 +110,97 @@
     return-void
 .end method
 
+.method public static convertSolarToLunar(Ldalvik/system/PathClassLoader;Ljava/lang/Object;III)V
+    .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter",
+            "y",
+            "m",
+            "d"
+        }
+    .end annotation
+
+    const/4 v0, 0x3
+
+    new-array v1, v0, [Ljava/lang/Class;
+
+    .line 51
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v4, 0x1
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v5, 0x2
+
+    aput-object v2, v1, v5
+
+    const-string v2, "com.samsung.android.calendar.secfeature.lunarcalendar.SolarLunarConverter"
+
+    const-string v6, "convertSolarToLunar"
+
+    invoke-static {p0, v2, v6, v1}, Landroidx/reflect/SeslPathClassReflector;->getMethod(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 54
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    aput-object p2, v0, v3
+
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    aput-object p2, v0, v4
+
+    invoke-static {p4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    aput-object p2, v0, v5
+
+    invoke-static {p1, p0, v0}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_0
+    return-void
+.end method
+
 .method public static getDay(Ldalvik/system/PathClassLoader;Ljava/lang/Object;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -103,7 +210,7 @@
 
     const-string v3, "getDay"
 
-    .line 124
+    .line 142
     invoke-static {p0, v2, v3, v1}, Landroidx/reflect/SeslPathClassReflector;->getMethod(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p0
@@ -112,17 +219,17 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 126
+    .line 144
     invoke-static {p1, p0, v0}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 127
+    .line 145
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 128
+    .line 146
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -139,12 +246,28 @@
 
 .method public static getDayLengthOf(Ldalvik/system/PathClassLoader;Ljava/lang/Object;IIZ)I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter",
+            "year",
+            "month",
+            "isLeapMonth"
+        }
+    .end annotation
 
     const/4 v0, 0x3
 
     new-array v1, v0, [Ljava/lang/Class;
 
-    .line 69
+    .line 87
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const/4 v3, 0x0
@@ -175,7 +298,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 72
+    .line 90
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -198,12 +321,12 @@
 
     move-result-object p0
 
-    .line 73
+    .line 91
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 74
+    .line 92
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -220,6 +343,16 @@
 
 .method public static getMonth(Ldalvik/system/PathClassLoader;Ljava/lang/Object;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -229,7 +362,7 @@
 
     const-string v3, "getMonth"
 
-    .line 106
+    .line 124
     invoke-static {p0, v2, v3, v1}, Landroidx/reflect/SeslPathClassReflector;->getMethod(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p0
@@ -238,17 +371,17 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 108
+    .line 126
     invoke-static {p1, p0, v0}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 109
+    .line 127
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 110
+    .line 128
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -265,12 +398,28 @@
 
 .method public static getWeekday(Ldalvik/system/PathClassLoader;Ljava/lang/Object;III)I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter",
+            "year",
+            "month",
+            "day"
+        }
+    .end annotation
 
     const/4 v0, 0x3
 
     new-array v1, v0, [Ljava/lang/Class;
 
-    .line 49
+    .line 67
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const/4 v3, 0x0
@@ -301,7 +450,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 52
+    .line 70
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -324,12 +473,12 @@
 
     move-result-object p0
 
-    .line 53
+    .line 71
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 54
+    .line 72
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -344,6 +493,16 @@
 
 .method public static getYear(Ldalvik/system/PathClassLoader;Ljava/lang/Object;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -353,7 +512,7 @@
 
     const-string v3, "getYear"
 
-    .line 88
+    .line 106
     invoke-static {p0, v2, v3, v1}, Landroidx/reflect/SeslPathClassReflector;->getMethod(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p0
@@ -362,17 +521,17 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 90
+    .line 108
     invoke-static {p1, p0, v0}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 91
+    .line 109
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 92
+    .line 110
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -385,4 +544,57 @@
     const/16 p0, 0x7e3
 
     return p0
+.end method
+
+.method public static isLeapMonth(Ldalvik/system/PathClassLoader;Ljava/lang/Object;)Z
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarConverter"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-array v1, v0, [Ljava/lang/Class;
+
+    const-string v2, "com.samsung.android.calendar.secfeature.lunarcalendar.SolarLunarConverter"
+
+    const-string v3, "isLeapMonth"
+
+    .line 160
+    invoke-static {p0, v2, v3, v1}, Landroidx/reflect/SeslPathClassReflector;->getMethod(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    new-array v1, v0, [Ljava/lang/Object;
+
+    .line 162
+    invoke-static {p1, p0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    .line 163
+    instance-of p1, p0, Ljava/lang/Boolean;
+
+    if-eqz p1, :cond_0
+
+    .line 164
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    return v0
 .end method

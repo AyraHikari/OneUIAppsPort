@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/-$$Lambda$1fItRLjCUymglcKhkxvNGD0_M7g;->INSTANCE:Lcom/samsung/android/sdk/scs/ai/text/entity/-$$Lambda$1fItRLjCUymglcKhkxvNGD0_M7g;
+    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/-$$Lambda$BasicEntityExtractor$-tyXSJp6yIHZkhd2CSpn4WX993I;->INSTANCE:Lcom/samsung/android/sdk/scs/ai/text/entity/-$$Lambda$BasicEntityExtractor$-tyXSJp6yIHZkhd2CSpn4WX993I;
 
     invoke-static {v1, v2}, Ljava/util/stream/Collectors;->collectingAndThen(Ljava/util/stream/Collector;Ljava/util/function/Function;)Ljava/util/stream/Collector;
 
@@ -121,6 +121,16 @@
     return-void
 .end method
 
+.method public static synthetic lambda$-tyXSJp6yIHZkhd2CSpn4WX993I(Ljava/util/Set;)Ljava/util/Set;
+    .locals 0
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method private requestExtract(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;J)Landroid/os/Bundle;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
@@ -136,12 +146,12 @@
         }
     .end annotation
 
-    .line 253
+    .line 255
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 254
+    .line 256
     invoke-interface {p4}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object p4
@@ -159,7 +169,7 @@
 
     check-cast v1, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 255
+    .line 257
     sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->DATE_TIME_NUMERAL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
     if-ne v1, v2, :cond_0
@@ -176,7 +186,7 @@
 
     goto :goto_0
 
-    .line 256
+    .line 258
     :cond_0
     sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->PHONE_NUMBER:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
@@ -194,7 +204,7 @@
 
     goto :goto_0
 
-    .line 257
+    .line 259
     :cond_1
     sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->MAP_ADDRESS_POI:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
@@ -212,7 +222,7 @@
 
     goto :goto_0
 
-    .line 258
+    .line 260
     :cond_2
     sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->BANK_ACCOUNT:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
@@ -230,7 +240,7 @@
 
     goto :goto_0
 
-    .line 259
+    .line 261
     :cond_3
     invoke-virtual {v1}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->name()Ljava/lang/String;
 
@@ -240,7 +250,7 @@
 
     goto :goto_0
 
-    .line 261
+    .line 263
     :cond_4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -254,7 +264,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 264
+    .line 266
     invoke-static {p4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p4
@@ -281,7 +291,7 @@
 
     const-string p4, "BasicEntity input length(%d) exceed MAX_VAL(%d), so cut to %d"
 
-    .line 263
+    .line 265
     invoke-static {p4, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p4
@@ -290,12 +300,12 @@
 
     invoke-static {v2, p4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 265
+    .line 267
     invoke-virtual {p1, v3, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 268
+    .line 270
     :cond_5
     iget-object p4, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor;->mServiceExecutor:Lcom/samsung/android/sdk/scs/ai/text/TextServiceExecutor;
 
@@ -303,39 +313,39 @@
 
     move-result-object p4
 
-    .line 270
+    .line 272
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     const-string v2, "language"
 
-    .line 271
+    .line 273
     invoke-virtual {v1, v2, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p2, "country"
 
-    .line 272
+    .line 274
     invoke-virtual {v1, p2, p3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p2, "entityTypeList"
 
-    .line 273
+    .line 275
     invoke-virtual {v1, p2, v0}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     const-string p2, "baseTime"
 
-    .line 274
+    .line 276
     invoke-virtual {v1, p2, p5, p6}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    const-string p2, "string"
+    const-string/jumbo p2, "string"
 
-    .line 275
+    .line 277
     invoke-virtual {v1, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "content://com.samsung.android.scs.ai.text"
 
-    .line 278
+    .line 280
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
@@ -344,7 +354,7 @@
 
     const-string p3, "getBasicEntity"
 
-    .line 279
+    .line 281
     invoke-virtual {p4, p1, p3, p2, v1}, Landroid/content/ContentResolver;->call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object p1
@@ -394,7 +404,7 @@
 .end method
 
 .method public extract(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;J)Ljava/util/List;
-    .locals 17
+    .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -419,17 +429,25 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v1, p2
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", country:"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v2, p3
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -461,7 +479,7 @@
     return-object v2
 
     :cond_0
-    const-string v4, "resultCode"
+    const-string/jumbo v4, "resultCode"
 
     .line 181
     invoke-virtual {v1, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -477,11 +495,15 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "unexpected resultCode!!! resultCode: "
+    const-string/jumbo v1, "unexpected resultCode!!! resultCode: "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -499,7 +521,7 @@
 
     move-result-object v4
 
-    const-string v5, "startIndexList"
+    const-string/jumbo v5, "startIndexList"
 
     .line 188
     invoke-virtual {v1, v5}, Landroid/os/Bundle;->getIntegerArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
@@ -513,14 +535,14 @@
 
     move-result-object v6
 
-    const-string v7, "textList"
+    const-string/jumbo v7, "textList"
 
     .line 190
     invoke-virtual {v1, v7}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v7
 
-    const-string v8, "startDateList"
+    const-string/jumbo v8, "startDateList"
 
     .line 191
     invoke-virtual {v1, v8}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -538,7 +560,7 @@
 
     check-cast v9, Ljava/util/ArrayList;
 
-    const-string v10, "unresolvedStartDateTimeUnitList"
+    const-string/jumbo v10, "unresolvedStartDateTimeUnitList"
 
     .line 194
     invoke-virtual {v1, v10}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -547,7 +569,7 @@
 
     check-cast v10, Ljava/util/ArrayList;
 
-    const-string v11, "unresolvedEndDateTimeUnitList"
+    const-string/jumbo v11, "unresolvedEndDateTimeUnitList"
 
     .line 196
     invoke-virtual {v1, v11}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -582,47 +604,64 @@
     .line 200
     invoke-virtual {v1, v15}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
+    move-result-object v15
+
+    const-string v2, "poiMappableArray"
+
+    .line 201
+    invoke-virtual {v1, v2}, Landroid/os/Bundle;->getBooleanArray(Ljava/lang/String;)[Z
+
     move-result-object v1
 
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_12
 
     if-nez v7, :cond_2
 
     goto/16 :goto_5
 
-    .line 206
+    .line 207
     :cond_2
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
-    move-result v15
-
-    .line 207
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
     move-result v2
 
-    if-eq v15, v2, :cond_3
+    move-object/from16 v16, v0
 
     .line 208
+    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    if-eq v2, v0, :cond_3
+
+    .line 209
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "unexpected size!!! : "
+    const-string/jumbo v1, "unexpected size!!! : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, " vs "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -636,152 +675,150 @@
     return-object v0
 
     :cond_3
-    const/4 v2, 0x0
+    const/4 v0, 0x0
 
     :goto_1
-    if-ge v2, v15, :cond_10
+    if-ge v0, v2, :cond_11
 
-    .line 213
+    .line 214
     new-instance v3, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;
 
     invoke-direct {v3}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;-><init>()V
 
-    .line 214
-    invoke-virtual {v4, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v16
-
-    check-cast v16, Ljava/lang/String;
-
-    move/from16 p1, v15
-
-    invoke-static/range {v16 .. v16}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->valueOf(Ljava/lang/String;)Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
-
-    move-result-object v15
-
-    invoke-virtual {v3, v15}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setType(Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;)V
-
     .line 215
-    invoke-virtual {v7, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v15
+    move-result-object v17
 
-    check-cast v15, Ljava/lang/String;
+    check-cast v17, Ljava/lang/String;
 
-    invoke-virtual {v3, v15}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setString(Ljava/lang/String;)V
+    move/from16 p1, v2
+
+    invoke-static/range {v17 .. v17}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->valueOf(Ljava/lang/String;)Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setType(Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;)V
+
+    .line 216
+    invoke-virtual {v7, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setString(Ljava/lang/String;)V
 
     if-eqz v5, :cond_4
 
-    .line 216
-    invoke-virtual {v5, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 217
+    invoke-virtual {v5, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v15
+    move-result-object v2
 
-    check-cast v15, Ljava/lang/Integer;
+    check-cast v2, Ljava/lang/Integer;
 
-    invoke-virtual {v15}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
-    move-result v15
+    move-result v2
 
-    invoke-virtual {v3, v15}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setStartIndex(I)V
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setStartIndex(I)V
 
     :cond_4
     if-eqz v6, :cond_5
 
-    .line 217
-    invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 218
+    invoke-virtual {v6, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v15
+    move-result-object v2
 
-    check-cast v15, Ljava/lang/Integer;
+    check-cast v2, Ljava/lang/Integer;
 
-    invoke-virtual {v15}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
-    move-result v15
+    move-result v2
 
-    invoke-virtual {v3, v15}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setEndIndex(I)V
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setEndIndex(I)V
 
     :cond_5
     if-eqz v8, :cond_6
 
-    .line 218
-    invoke-virtual {v8, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 219
+    invoke-virtual {v8, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v15
+    move-result-object v2
 
-    check-cast v15, Ljava/util/Date;
+    check-cast v2, Ljava/util/Date;
 
-    invoke-virtual {v3, v15}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setStartDateTime(Ljava/util/Date;)V
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setStartDateTime(Ljava/util/Date;)V
 
     :cond_6
     if-eqz v9, :cond_7
 
-    .line 219
-    invoke-virtual {v9, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 220
+    invoke-virtual {v9, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v15
+    move-result-object v2
 
-    check-cast v15, Ljava/util/Date;
+    check-cast v2, Ljava/util/Date;
 
-    invoke-virtual {v3, v15}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setEndDateTime(Ljava/util/Date;)V
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setEndDateTime(Ljava/util/Date;)V
 
     :cond_7
     if-eqz v10, :cond_9
 
-    .line 221
-    invoke-virtual {v10, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 222
+    invoke-virtual {v10, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v15
+    move-result-object v2
 
-    check-cast v15, Ljava/util/Set;
+    check-cast v2, Ljava/util/Set;
 
-    if-eqz v15, :cond_9
+    if-eqz v2, :cond_9
 
-    .line 223
-    const-class v16, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
+    .line 224
+    const-class v17, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
 
     move-object/from16 p2, v5
 
-    .line 224
-    invoke-static/range {v16 .. v16}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
+    .line 225
+    invoke-static/range {v17 .. v17}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
 
     move-result-object v5
 
-    .line 225
-    invoke-interface {v15}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    .line 226
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-result-object v15
+    move-result-object v2
 
     :goto_2
-    invoke-interface {v15}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v16
+    move-result v17
 
-    if-eqz v16, :cond_8
+    if-eqz v17, :cond_8
 
-    invoke-interface {v15}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v16
+    move-result-object v17
 
-    check-cast v16, Ljava/lang/String;
+    check-cast v17, Ljava/lang/String;
 
-    move-object/from16 p3, v6
+    move-object/from16 p3, v2
 
-    .line 226
-    invoke-static/range {v16 .. v16}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;->valueOf(Ljava/lang/String;)Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
+    .line 227
+    invoke-static/range {v17 .. v17}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;->valueOf(Ljava/lang/String;)Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
 
-    move-result-object v6
+    move-result-object v2
 
-    invoke-virtual {v5, v6}, Ljava/util/EnumSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v2}, Ljava/util/EnumSet;->add(Ljava/lang/Object;)Z
 
-    move-object/from16 v6, p3
+    move-object/from16 v2, p3
 
     goto :goto_2
 
+    .line 229
     :cond_8
-    move-object/from16 p3, v6
-
-    .line 228
     invoke-virtual {v3, v5}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setUnresolvedStartDateTimeUnit(Ljava/util/EnumSet;)V
 
     goto :goto_3
@@ -789,126 +826,140 @@
     :cond_9
     move-object/from16 p2, v5
 
-    move-object/from16 p3, v6
-
     :goto_3
     if-eqz v11, :cond_b
 
-    .line 232
-    invoke-virtual {v11, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 233
+    invoke-virtual {v11, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v2
 
-    check-cast v5, Ljava/util/Set;
+    check-cast v2, Ljava/util/Set;
 
-    if-eqz v5, :cond_b
-
-    .line 234
-    const-class v6, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
+    if-eqz v2, :cond_b
 
     .line 235
-    invoke-static {v6}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
-
-    move-result-object v6
+    const-class v5, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
 
     .line 236
-    invoke-interface {v5}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-static {v5}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
 
     move-result-object v5
 
-    :goto_4
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v15
-
-    if-eqz v15, :cond_a
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v15
-
-    check-cast v15, Ljava/lang/String;
-
     .line 237
-    invoke-static {v15}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;->valueOf(Ljava/lang/String;)Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-result-object v15
+    move-result-object v2
 
-    invoke-virtual {v6, v15}, Ljava/util/EnumSet;->add(Ljava/lang/Object;)Z
+    :goto_4
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v17
+
+    if-eqz v17, :cond_a
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v17
+
+    check-cast v17, Ljava/lang/String;
+
+    move-object/from16 p3, v2
+
+    .line 238
+    invoke-static/range {v17 .. v17}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;->valueOf(Ljava/lang/String;)Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$DateTimeUnit;
+
+    move-result-object v2
+
+    invoke-virtual {v5, v2}, Ljava/util/EnumSet;->add(Ljava/lang/Object;)Z
+
+    move-object/from16 v2, p3
 
     goto :goto_4
 
-    .line 239
+    .line 240
     :cond_a
-    invoke-virtual {v3, v6}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setUnresolvedEndDateTimeUnit(Ljava/util/EnumSet;)V
+    invoke-virtual {v3, v5}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setUnresolvedEndDateTimeUnit(Ljava/util/EnumSet;)V
 
     :cond_b
     if-eqz v12, :cond_c
 
-    .line 242
-    invoke-virtual {v12, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 243
+    invoke-virtual {v12, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v2
 
-    check-cast v5, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
-    invoke-virtual {v3, v5}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setRepeatInfo(Ljava/lang/String;)V
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setRepeatInfo(Ljava/lang/String;)V
 
     :cond_c
     if-eqz v13, :cond_d
 
-    .line 243
-    invoke-virtual {v13, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 244
+    invoke-virtual {v13, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v2
 
-    check-cast v5, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
-    invoke-virtual {v3, v5}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setBankName(Ljava/lang/String;)V
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setBankName(Ljava/lang/String;)V
 
     :cond_d
     if-eqz v14, :cond_e
 
-    .line 244
-    invoke-virtual {v14, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 245
+    invoke-virtual {v14, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v2
 
-    check-cast v5, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
-    invoke-virtual {v3, v5}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setBankAccountNumber(Ljava/lang/String;)V
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setBankAccountNumber(Ljava/lang/String;)V
 
     :cond_e
-    if-eqz v1, :cond_f
-
-    .line 245
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/String;
-
-    invoke-virtual {v3, v5}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setBankAmount(Ljava/lang/String;)V
+    if-eqz v15, :cond_f
 
     .line 246
+    invoke-virtual {v15, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setBankAmount(Ljava/lang/String;)V
+
     :cond_f
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    if-eqz v1, :cond_10
 
-    add-int/lit8 v2, v2, 0x1
+    .line 247
+    aget-boolean v2, v1, v0
 
-    move/from16 v15, p1
+    invoke-virtual {v3, v2}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->setMappable(Z)V
+
+    :cond_10
+    move-object/from16 v2, v16
+
+    .line 248
+    invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v0, v0, 0x1
 
     move-object/from16 v5, p2
 
-    move-object/from16 v6, p3
+    move-object/from16 v16, v2
+
+    move/from16 v2, p1
 
     goto/16 :goto_1
 
-    :cond_10
-    return-object v0
-
-    .line 203
     :cond_11
+    move-object/from16 v2, v16
+
+    return-object v2
+
+    .line 204
+    :cond_12
     :goto_5
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -918,13 +969,21 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ", textList: "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -940,153 +999,7 @@
 
     const/4 v0, 0x2
 
-    new-array v0, v0, [Ljava/lang/Object;
-
     const/4 v1, 0x0
 
-    aput-object p1, v0, v1
-
-    const/4 v2, 0x1
-
-    aput-object p2, v0, v2
-
-    const-string v3, "BasicEntityExtractor isSupported - language : %s, country : %s"
-
-    .line 62
-    invoke-static {v3, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v3, "ScsApi@BasicEntityExtractor"
-
-    invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 66
-    :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor;->mServiceExecutor:Lcom/samsung/android/sdk/scs/ai/text/TextServiceExecutor;
-
-    invoke-virtual {v0}, Lcom/samsung/android/sdk/scs/ai/text/TextServiceExecutor;->getTextContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    .line 69
-    new-instance v4, Landroid/os/Bundle;
-
-    invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
-
-    const-string v5, "language"
-
-    .line 70
-    invoke-virtual {v4, v5, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v5, "country"
-
-    .line 71
-    invoke-virtual {v4, v5, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string p2, "content://com.samsung.android.scs.ai.text"
-
-    .line 74
-    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object p2
-
-    const-string v5, "getEntitySupported"
-
-    const/4 v6, 0x0
-
-    .line 75
-    invoke-virtual {v0, p2, v5, v6, v4}, Landroid/content/ContentResolver;->call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
-
-    move-result-object p2
-
-    if-nez p2, :cond_0
-
-    const-string p1, "BasicEntityExtractor.isSupported(). ContentResolver result is null!!"
-
-    .line 79
-    invoke-static {v3, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
-
-    .line 81
-    :cond_0
-    invoke-virtual {p2}, Landroid/os/Bundle;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const-string p2, "BasicEntityExtractor.isSupported(). result is empty!! App version is lower than Sdk so just check in static Array"
-
-    .line 82
-    invoke-static {v3, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 84
-    sget-object p2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor;->SUPPORTED_LANGUAGE:Ljava/util/Set;
-
-    invoke-virtual {p1}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-interface {p2, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    goto :goto_0
-
-    :cond_1
-    const-string p1, "resultCode"
-
-    .line 86
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
-
-    move-result p1
-
-    if-ne p1, v2, :cond_2
-
-    const-string p1, "textSupportedBoolean"
-
-    .line 88
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
-
-    move-result p1
-
-    :goto_0
-    move v1, p1
-
-    goto :goto_1
-
-    .line 90
-    :cond_2
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "unexpected resultCode!!! resultCode: "
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v3, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception p1
-
-    const-string p2, "Exception :: isSupported"
-
-    .line 95
-    invoke-static {v3, p2, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :goto_1
     return v1
 .end method

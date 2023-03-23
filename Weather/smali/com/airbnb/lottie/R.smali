@@ -1,29 +1,15 @@
-.class public final Lcom/airbnb/lottie/R;
-.super Ljava/lang/Object;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/airbnb/lottie/R$attr;,
-        Lcom/airbnb/lottie/R$color;,
-        Lcom/airbnb/lottie/R$dimen;,
-        Lcom/airbnb/lottie/R$drawable;,
-        Lcom/airbnb/lottie/R$id;,
-        Lcom/airbnb/lottie/R$integer;,
-        Lcom/airbnb/lottie/R$layout;,
-        Lcom/airbnb/lottie/R$string;,
-        Lcom/airbnb/lottie/R$style;,
-        Lcom/airbnb/lottie/R$styleable;
-    }
-.end annotation
+.class public Lcom/airbnb/lottie/r;
+.super Landroid/graphics/PorterDuffColorFilter;
+.source "SimpleColorFilter.java"
 
 
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method public constructor <init>(I)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Landroid/graphics/PorterDuff$Mode;->SRC_ATOP:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-direct {p0, p1, v0}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
 
     return-void
 .end method

@@ -13,10 +13,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$schedule$2\n+ 2 RealWebSocket.kt\nokhttp3/internal/ws/RealWebSocket\n*L\n1#1,218:1\n270#2,2:219\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -44,17 +40,17 @@
 
 
 # instance fields
-.field final synthetic $extensions$inlined:Lokhttp3/internal/ws/WebSocketExtensions;
+.field public final synthetic $extensions$inlined:Lokhttp3/internal/ws/WebSocketExtensions;
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $name$inlined:Ljava/lang/String;
+.field public final synthetic $name$inlined:Ljava/lang/String;
 
-.field final synthetic $pingIntervalNanos$inlined:J
+.field public final synthetic $pingIntervalNanos$inlined:J
 
-.field final synthetic $streams$inlined:Lokhttp3/internal/ws/RealWebSocket$Streams;
+.field public final synthetic $streams$inlined:Lokhttp3/internal/ws/RealWebSocket$Streams;
 
-.field final synthetic this$0:Lokhttp3/internal/ws/RealWebSocket;
+.field public final synthetic this$0:Lokhttp3/internal/ws/RealWebSocket;
 
 
 # direct methods
@@ -79,7 +75,6 @@
 
     const/4 p4, 0x0
 
-    .line 84
     invoke-direct {p0, p2, p1, p3, p4}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -90,12 +85,12 @@
 .method public runOnce()J
     .locals 2
 
-    .line 219
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$initReaderAndWriter$$inlined$synchronized$lambda$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     invoke-virtual {v0}, Lokhttp3/internal/ws/RealWebSocket;->writePingFrame$okhttp()V
 
-    .line 220
+    .line 2
     iget-wide v0, p0, Lokhttp3/internal/ws/RealWebSocket$initReaderAndWriter$$inlined$synchronized$lambda$1;->$pingIntervalNanos$inlined:J
 
     return-wide v0

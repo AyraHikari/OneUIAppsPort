@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Ingia katika akaunti</string>
     <string name="common_signin_button_text_long">Ingia katika akaunti ukitumia Google</string>
     <string name="copy">Nakili</string>
-    <string name="copy_toast_msg">Imenakili kiungo kwenye ubao wa kunakili</string>
     <string name="error_icon_content_description">Hitilafu</string>
     <string name="expand_button_title">Mipangilio ya Kina</string>
     <string name="exposed_dropdown_menu_content_description">Onyesha menyu kunjuzi</string>
-    <string name="fallback_menu_item_copy_link">Nakili kiungo</string>
-    <string name="fallback_menu_item_open_in_browser">Fungua katika kivinjari</string>
-    <string name="fallback_menu_item_share_link">Shiriki kiungo</string>
     <string name="icon_content_description">Aikoni ya Kidirisha</string>
     <string name="item_view_role_description">Kichupo</string>
     <string name="material_clock_toggle_content_description">Chagua AM au PM</string>

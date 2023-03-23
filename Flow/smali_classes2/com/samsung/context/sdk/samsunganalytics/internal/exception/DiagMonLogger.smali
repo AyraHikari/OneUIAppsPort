@@ -27,22 +27,40 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;Ljava/lang/Thread$UncaughtExceptionHandler;Ljava/lang/String;ZZ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "application",
+            "configuration",
+            "uncaughtExceptionHandler",
+            "serviceID",
+            "useDiagnostic",
+            "wifiOnly"
+        }
+    .end annotation
 
-    .line 34
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 31
+    .line 32
     iput-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->useDiagnostic:Z
 
-    .line 32
+    .line 33
     iput-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->wifiOnly:Z
 
-    .line 35
+    .line 36
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->application:Landroid/app/Application;
 
-    .line 36
+    .line 37
     invoke-virtual {p1}, Landroid/app/Application;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object p1
@@ -51,19 +69,19 @@
 
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->DIRECTORY:Ljava/lang/String;
 
-    .line 37
+    .line 38
     iput-object p3, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->defaultUncaughtExceptionHandler:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    .line 38
+    .line 39
     iput-object p2, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->configuration:Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
-    .line 39
+    .line 40
     iput-boolean p5, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->useDiagnostic:Z
 
-    .line 40
+    .line 41
     iput-boolean p6, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->wifiOnly:Z
 
-    .line 42
+    .line 43
     invoke-direct {p0, p4}, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->setConfiguration(Ljava/lang/String;)V
 
     return-void
@@ -74,10 +92,10 @@
 
     const-string v0, "issue report"
 
-    .line 67
+    .line 81
     invoke-static {v0}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Debug;->LogENG(Ljava/lang/String;)V
 
-    .line 68
+    .line 82
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->application:Landroid/app/Application;
 
     invoke-virtual {v0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
@@ -90,7 +108,7 @@
 
     const-string v2, "fatal exception"
 
-    .line 69
+    .line 83
     invoke-virtual {v1, v2}, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->setResultCode(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
 
     move-result-object v1
@@ -107,7 +125,7 @@
 
     move-result-object v1
 
-    .line 68
+    .line 82
     invoke-static {v0, v1}, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK$DiagMonHelper;->issueReport(Landroid/content/Context;Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;)V
 
     return-void
@@ -115,20 +133,28 @@
 
 .method private makeDir(Ljava/lang/String;)Ljava/io/File;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dirPath"
+        }
+    .end annotation
 
-    .line 93
+    .line 107
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 94
+    .line 108
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 95
+    .line 109
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     :cond_0
@@ -137,20 +163,30 @@
 
 .method private makeFile(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dirPath",
+            "fileName"
+        }
+    .end annotation
 
-    .line 101
+    .line 115
     invoke-direct {p0, p1}, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->makeDir(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
-    .line 103
+    .line 117
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 104
+    .line 118
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -159,19 +195,25 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, "/"
+    move-result-object p1
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "/"
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 106
+    .line 120
     :try_start_0
     invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
     :try_end_0
@@ -182,7 +224,7 @@
     :catch_0
     move-exception p1
 
-    .line 108
+    .line 122
     invoke-virtual {p1}, Ljava/io/IOException;->getLocalizedMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -199,14 +241,22 @@
 .end method
 
 .method private setConfiguration(Ljava/lang/String;)V
-    .locals 3
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "serviceID"
+        }
+    .end annotation
 
-    .line 46
+    .line 47
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 47
+    .line 48
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -215,13 +265,19 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, "/"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, "diagmon.log"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -229,35 +285,77 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 48
+    .line 50
+    iget-object v1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->application:Landroid/app/Application;
+
+    invoke-virtual {v1}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Utils;->isDiagnosticAgree(Landroid/content/Context;)Z
+
+    move-result v1
+
+    .line 51
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "DiagnosticAgree : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Debug;->LogI(Ljava/lang/String;)V
+
+    if-nez v1, :cond_0
+
+    const-string p1, "DiagnosticAgreement should be agreed"
+
+    .line 54
+    invoke-static {p1}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Debug;->LogI(Ljava/lang/String;)V
+
+    .line 55
+    invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->disableUncaughtExceptionLogging()V
+
+    return-void
+
+    .line 59
+    :cond_0
     new-instance v1, Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;
 
     iget-object v2, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->application:Landroid/app/Application;
 
     invoke-direct {v1, v2}, Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;-><init>(Landroid/content/Context;)V
 
+    .line 60
     invoke-virtual {v1, p1}, Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;->setServiceId(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;
 
     move-result-object p1
 
-    iget-boolean v1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->useDiagnostic:Z
-
-    if-eqz v1, :cond_0
-
     const-string v1, "D"
 
-    goto :goto_0
-
-    :cond_0
-    const-string v1, "Y"
-
-    :goto_0
+    .line 61
     invoke-virtual {p1, v1}, Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;->setAgree(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;
 
     move-result-object p1
 
     iget-object v1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->configuration:Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
+    .line 62
     invoke-virtual {v1}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->getTrackingId()Ljava/lang/String;
 
     move-result-object v1
@@ -270,6 +368,7 @@
 
     move-result-object p1
 
+    .line 59
     invoke-static {p1}, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->setConfiguration(Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;)Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;
 
     return-void
@@ -277,10 +376,20 @@
 
 .method private write(Ljava/io/File;Ljava/lang/Throwable;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "file",
+            "e"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 74
+    .line 88
     :try_start_0
     new-instance v1, Ljava/io/FileOutputStream;
 
@@ -291,19 +400,19 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 75
+    .line 89
     :try_start_1
     new-instance p1, Ljava/io/PrintStream;
 
     invoke-direct {p1, v1}, Ljava/io/PrintStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 76
+    .line 90
     invoke-virtual {p2, p1}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintStream;)V
     :try_end_1
     .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 83
+    .line 97
     :try_start_2
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
@@ -333,14 +442,14 @@
     :try_start_3
     const-string p1, "Failed to write."
 
-    .line 79
+    .line 93
     invoke-static {p1}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Debug;->LogENG(Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     if-eqz v0, :cond_0
 
-    .line 83
+    .line 97
     :try_start_4
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_4
@@ -359,7 +468,7 @@
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
 
-    .line 85
+    .line 101
     :catch_3
     :cond_1
     throw p1
@@ -369,8 +478,18 @@
 # virtual methods
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "t",
+            "e"
+        }
+    .end annotation
 
-    .line 53
+    .line 67
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->configuration:Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
     invoke-virtual {v0}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->getUserAgreement()Lcom/samsung/context/sdk/samsunganalytics/UserAgreement;
@@ -383,7 +502,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 54
+    .line 68
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->DIRECTORY:Ljava/lang/String;
 
     const-string v1, "diagmon.log"
@@ -394,16 +513,16 @@
 
     invoke-direct {p0, v0, p2}, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->write(Ljava/io/File;Ljava/lang/Throwable;)V
 
-    .line 55
+    .line 69
     invoke-direct {p0}, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->issueReport()V
 
-    .line 58
+    .line 72
     :cond_0
     monitor-enter p0
 
     const-wide/16 v0, 0x3e8
 
-    .line 60
+    .line 74
     :try_start_0
     invoke-virtual {p0, v0, v1}, Ljava/lang/Object;->wait(J)V
     :try_end_0
@@ -417,7 +536,7 @@
 
     goto :goto_1
 
-    .line 62
+    .line 76
     :catch_0
     :goto_0
     :try_start_1
@@ -425,14 +544,14 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 63
+    .line 77
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/DiagMonLogger;->defaultUncaughtExceptionHandler:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     return-void
 
-    .line 62
+    .line 76
     :goto_1
     :try_start_2
     monitor-exit p0

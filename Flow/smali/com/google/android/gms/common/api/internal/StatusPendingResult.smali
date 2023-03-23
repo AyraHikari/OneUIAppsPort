@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/api/internal/StatusPendingResult;
 .super Lcom/google/android/gms/common/api/internal/BasePendingResult;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -18,7 +19,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 3
+    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -27,7 +28,7 @@
 .method public constructor <init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
     .locals 0
 
-    .line 1
+    .line 2
     invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
     return-void
@@ -35,7 +36,7 @@
 
 
 # virtual methods
-.method protected synthetic createFailedResult(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/Result;
+.method protected final bridge synthetic createFailedResult(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/Result;
     .locals 0
 
     return-object p1

@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/common/internal/Objects$ToStringHelper;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # annotations
@@ -14,7 +15,7 @@
 
 
 # instance fields
-.field private final zzer:Ljava/util/List;
+.field private final zza:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -24,61 +25,45 @@
     .end annotation
 .end field
 
-.field private final zzes:Ljava/lang/Object;
+.field private final zzb:Ljava/lang/Object;
 
 
 # direct methods
-.method private constructor <init>(Ljava/lang/Object;)V
+.method synthetic constructor <init>(Ljava/lang/Object;Lcom/google/android/gms/common/internal/zzah;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzb:Ljava/lang/Object;
 
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzes:Ljava/lang/Object;
-
-    .line 3
     new-instance p1, Ljava/util/ArrayList;
 
+    .line 2
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzer:Ljava/util/List;
-
-    return-void
-.end method
-
-.method synthetic constructor <init>(Ljava/lang/Object;Lcom/google/android/gms/common/internal/zzq;)V
-    .locals 0
-
-    .line 16
-    invoke-direct {p0, p1}, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;-><init>(Ljava/lang/Object;)V
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zza:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final add(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/common/internal/Objects$ToStringHelper;
-    .locals 3
+.method public add(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/common/internal/Objects$ToStringHelper;
+    .locals 4
 
-    .line 5
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzer:Ljava/util/List;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zza:Ljava/util/List;
 
     invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
 
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -86,21 +71,17 @@
 
     move-result v1
 
-    add-int/lit8 v1, v1, 0x1
-
-    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
     new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    add-int/2addr v3, v1
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -119,23 +100,23 @@
     return-object p0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 7
+    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x64
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzes:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzb:Ljava/lang/Object;
 
-    .line 8
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
+    .line 2
     invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v1
@@ -146,9 +127,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 9
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzer:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zza:Ljava/util/List;
 
+    .line 3
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
@@ -158,9 +139,9 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 11
-    iget-object v3, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zzer:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/android/gms/common/internal/Objects$ToStringHelper;->zza:Ljava/util/List;
 
+    .line 4
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -175,7 +156,7 @@
 
     const-string v3, ", "
 
-    .line 13
+    .line 5
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_0
@@ -186,7 +167,7 @@
     :cond_1
     const/16 v1, 0x7d
 
-    .line 15
+    .line 6
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;

@@ -134,6 +134,14 @@
 
 .method public setEnable(Z)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enable"
+        }
+    .end annotation
 
     .line 36
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTManager;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
@@ -208,6 +216,14 @@
 
 .method public setmIsEnabledByAPI(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 26
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTManager;->mIsEnabledByAPI:Z

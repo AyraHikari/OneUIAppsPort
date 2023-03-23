@@ -3,7 +3,7 @@
 .source "ClipboardSyncManager.java"
 
 # interfaces
-.implements Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
+.implements Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
 
 # annotations
@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 918
+    .line 931
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,133 +43,164 @@
 
 
 # virtual methods
-.method public onWidiConnected(Landroid/net/wifi/p2p/WifiP2pInfo;)V
+.method public onConnected(Ljava/net/Socket;)V
     .locals 1
-
-    .line 926
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
-
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isSyncing()Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    .line 929
-    :cond_0
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
-
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->WIDI_CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
-
-    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$000(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onWidiConnectionClosed()V
-    .locals 2
-
-    .line 946
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
-
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;->CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
-
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$200(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
-
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;->SYNCING:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
-
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$200(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "already closed"
-
-    .line 947
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_0
-    const-string v0, "Wifi direct closed"
-
-    .line 951
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
-
-    .line 952
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
-
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stopSync()V
-
-    return-void
-.end method
-
-.method public onWidiConnectionFailed(Ljava/lang/String;)V
-    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 934
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$1700(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$1700(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
-    move-result-object p1
+    move-result-object v0
 
-    monitor-enter p1
+    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->start(Ljava/net/Socket;)Z
 
     .line 935
-    :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isSyncing()Z
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
-    move-result v0
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$100(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)V
 
-    if-nez v0, :cond_0
+    const-string p1, "Socket connected"
 
     .line 936
-    monitor-exit p1
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-void
-
-    :cond_0
-    const-string v0, "Wifi direct connection failed"
-
-    .line 938
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
-
-    .line 940
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
-
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->WIDI_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
-
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$000(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)V
-
-    .line 941
-    monitor-exit p1
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
 .end method
 
-.method public onWidiDiscoveryStarted(Ljava/lang/String;)V
+.method public onConnectionFailed(Ljava/lang/Exception;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ex"
+        }
+    .end annotation
+
+    .line 946
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
+
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
+
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$100(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)V
+
+    const-string p1, "Socket failed"
+
+    .line 947
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onDataReceived(Ljava/net/Socket;J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "dataLength"
+        }
+    .end annotation
+
+    const-string p1, "data received"
+
+    .line 956
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onDataReceiving(JJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedLength",
+            "totalReceivedLength"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public onDataSending(JJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sentLength",
+            "totalSentLength"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public onDataSent(Ljava/net/Socket;J)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "dataLength"
+        }
+    .end annotation
+
+    const-string p1, "data Sent"
+
+    .line 965
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onDataTransferFailed()V
+    .locals 2
+
+    .line 970
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;->this$0:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
+
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
+
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->access$100(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public onDisconnected(Ljava/net/Socket;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     return-void
 .end method

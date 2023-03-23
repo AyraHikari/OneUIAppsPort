@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$36;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 2319
+    .line 2456
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$36$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$36;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +46,12 @@
 .method public run()V
     .locals 1
 
-    .line 2322
+    .line 2459
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$36$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$36;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$36;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$3700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/RelativeLayout;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$4100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/RelativeLayout;
 
     move-result-object v0
 

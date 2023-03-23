@@ -44,10 +44,8 @@
 
     move-result-object p2
 
-    :goto_0
-    if-eq p2, p1, :cond_2
-
     .line 62
+    :goto_0
     iget-object v1, p0, Lorg/jsoup/select/StructuralEvaluator$Parent;->evaluator:Lorg/jsoup/select/Evaluator;
 
     invoke-virtual {v1, p1, p2}, Lorg/jsoup/select/Evaluator;->matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
@@ -60,16 +58,18 @@
 
     return p1
 
-    .line 64
     :cond_1
+    if-ne p2, p1, :cond_2
+
+    return v0
+
+    .line 66
+    :cond_2
     invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->parent()Lorg/jsoup/nodes/Element;
 
     move-result-object p2
 
     goto :goto_0
-
-    :cond_2
-    return v0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -79,7 +79,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 71
+    .line 73
     iget-object v1, p0, Lorg/jsoup/select/StructuralEvaluator$Parent;->evaluator:Lorg/jsoup/select/Evaluator;
 
     const/4 v2, 0x0

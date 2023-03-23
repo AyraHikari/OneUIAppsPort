@@ -2,7 +2,7 @@
 <resources>
     <string name="Detail_Info">ข้อมูล​ราย​ละเอียด</string>
     <string name="Report_wrong_city_name_text">รายงานชื่อเมืองผิด</string>
-    <string name="a_new_version_is_available">มี​เวอร์​ชั่น​ใหม่​พร้อม​ใช้ อัพ​เด​ท​ตอน​นี้?</string>
+    <string name="a_new_version_is_available">มี​เวอร์​ชั่น​ใหม่​พร้อม​ใช้ อัป​เด​ต​ตอน​นี้?</string>
     <string name="abbrev_wday_day_month_no_year">E, d ​MMMM</string>
     <string name="abbrev_wday_month_day_no_year">E, MMMM d</string>
     <string name="abc_action_bar_home_description">นำทางไปหน้าแรก</string>
@@ -45,11 +45,11 @@
     <string name="add_location">เพิ่มตำแหน่ง</string>
     <string name="add_something">เพิ่ม %s</string>
     <string name="add_to_home_screen">เพิ่ม %s ไปยังหน้าจอหลัก</string>
-    <string name="add_to_your_home_and_apps_screen">เพิ่ม %s ไปยังหน้าจอหลักและหน้าจอแอพ</string>
+    <string name="add_to_your_home_and_apps_screen">เพิ่ม %s ไปยังหน้าจอหลักและหน้าจอแอป</string>
     <string name="add_to_your_home_screen">เพิ่ม %s ไปยังหน้าจอหลักแล้ว</string>
-    <string name="add_weather_to_the_apps_screen">เพิ่ม %s ไปยังหน้าจอแอพ</string>
+    <string name="add_weather_to_the_apps_screen">เพิ่ม %s ไปยังหน้าจอแอป</string>
     <string name="add_weather_to_the_home_screen">เพิ่ม %s ไปยังหน้าจอหลัก</string>
-    <string name="added_to_app_screen">เพิ่ม %s ไปยังหน้าจอแอพแล้ว</string>
+    <string name="added_to_app_screen">เพิ่ม %s ไปยังหน้าจอแอปแล้ว</string>
     <string name="added_to_home_screen">เพิ่ม %s ไปยังหน้าจอหลักแล้ว</string>
     <string name="ads_settings_ads">โฆษณา</string>
     <string name="ads_settings_privacy_notice">ประกาศเกี่ยวกับความเป็นส่วนตัวของโฆษณา</string>
@@ -60,6 +60,7 @@
     <string name="air_quality">คุณภาพอากาศ</string>
     <string name="air_quality_next_tts">พยากรณ์คุณภาพอากาศรายวันช่วงบ่ายถัดไป</string>
     <string name="air_quality_previous_tts">พยากรณ์คุณภาพอากาศรายวันช่วงเช้าก่อนหน้า</string>
+    <string name="alert_title">การเตือนสภาพอากาศรุนแรง</string>
     <string name="all_added_cities">เมืองที่เพิ่มทั้งหมด</string>
     <string name="allow">อนุญาต</string>
     <string name="allow_permission_in_settings">หากต้องการใช้คุณสมบัตินี้ คุณต้องให้การอนุญาตในการตั้งค่า</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">ไม่รองรับการดำเนินการ</string>
     <string name="apply_daylight_saving_time">ใช้​เวลา​ชด​เชย​เวลา​กลาง​วัน?</string>
     <string name="as_possible_after_verification">ส่งรายงานแล้ว ชื่อเมืองจะได้รับการเปลี่ยนทันทีหลังจากการตรวจสอบ</string>
+    <string name="auto_refresh_on_screen_description">รับข้อมูลสภาพอากาศใหม่ทุกชั่วโมงโดยอัตโนมัติ เมื่อเปิดการดำเนินการนี้ คุณจะไม่สามารถรีเฟรชด้วยตนเอง</string>
+    <string name="auto_refresh_on_the_go">รีเฟรชอัตโนมัติได้ทุกที่</string>
+    <string name="auto_refresh_on_the_go_advanced">ขั้นสูง</string>
+    <string name="auto_refresh_on_the_go_description">รับการอัปเดตสภาพอากาศบ่อยขึ้นเมื่อคุณขับรถ, ขี่จักรยาน, วิ่ง หรือเดิน เมื่อเปิดการดำเนินการนี้ คุณจะไม่สามารถรีเฟรชด้วยตนเอง</string>
+    <string name="auto_refresh_on_the_go_simple_description">รับการอัปเดตสภาพอากาศบ่อยขึ้นเมื่อคุณขับรถ, ขี่จักรยาน, วิ่ง หรือเดิน</string>
     <string name="bottomsheet_action_expand_halfway">ขยายรายการครึ่งหนึ่ง</string>
     <string name="btn_report">รายงาน</string>
     <string name="button_finish">เสร็จ</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">แตะสองครั้งเพื่อดูข้อมูลเพิ่มเติม</string>
     <string name="china">จีน</string>
     <string name="cities_button">เมือง</string>
+    <string name="city_added">เพิ่มเมืองแล้ว</string>
     <string name="city_list_text">เมือง</string>
     <string name="clear">ไม่มีเมฆ</string>
     <string name="clear_text_end_icon_content_description">ล้างข้อความ</string>
@@ -131,12 +138,11 @@
     <string name="content_provider_mgs_legalphrase">ข้อมูลตำแหน่งอุปกรณ์ของคุณจะถูกส่งไปยังผู้ให้บริการเนื้อหาเพื่อให้คุณสามารถได้รับข้อมูลสภาพอากาศท้องถิ่น</string>
     <string name="contents_error_msg">ไม่สามารถใช้บริการนี้ได้ชั่วคราว โปรดลองใหม่ภายหลัง</string>
     <string name="copy">คัดลอก</string>
-    <string name="copy_toast_msg">คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว</string>
     <string name="correct_city_name">แก้ไขชื่อเมือง</string>
     <string name="couldnt_find_location">ไม่พบตำแหน่ง</string>
     <string name="cover_screen_top_sync_dialog_text">ตั้งค่าตำแหน่งเดียวกันบนหน้าจอหลักหรือไม่</string>
     <string name="critical_update_new_version_is_available">เวอร์ชั่นใหม่ของ %s พร้อมใช้งานแล้ว</string>
-    <string name="critical_update_title">อัพเดท %s หรือไม่</string>
+    <string name="critical_update_title">อัปเดต %s หรือไม่</string>
     <string name="current_city_name_ps">ชื่อเมืองปัจจุบัน: %s</string>
     <string name="current_location_only">ตำแหน่งปัจจุบันเท่านั้น</string>
     <string name="current_tmep_tts">อุณหภูมิปัจจุบัน</string>
@@ -144,7 +150,7 @@
     <string name="customise_your_device">กำหนดค่าอุปกรณ์ของคุณ</string>
     <string name="customization_service">บริการที่กำหนดเอง</string>
     <string name="customization_service_description">รับการแจ้งเตือนสภาพอากาศล่าสุดสำหรับตำแหน่งของคุณ โดยอิงจากรูปแบบการใช้งานรายวัน</string>
-    <string name="customization_service_improve_your_experience">บริการที่กำหนดเองปรับปรุงประสบการณ์ของคุณโดยการปรับแต่งคอนเทนท์ของคุณในแอพและบริการที่รองรับ</string>
+    <string name="customization_service_improve_your_experience">บริการที่กำหนดเองปรับปรุงประสบการณ์ของคุณโดยการปรับแต่งคอนเทนท์ของคุณในแอปและบริการที่รองรับ</string>
     <string name="daily_next_tts">พยากรณ์อากาศรายวันถัดไป</string>
     <string name="daily_previous_tts">พยากรณ์อากาศรายวันก่อนหน้า</string>
     <string name="data_unified_dialog_1">อนุญาตให้ %s ใช้การเชื่อมต่อเครือข่าย และเข้าถึงข้อมูลต่อไปนี้:</string>
@@ -157,11 +163,11 @@
     <string name="degree_tts">1 องศา</string>
     <string name="delete_cities_txt">ลบเมือง</string>
     <string name="delete_city_txt">ลบเมือง</string>
-    <string name="deleting_weather_apps_tpop_chn">ไม่สามารถใช้วิดเจ็ด สภาพอากาศหลังลบแอพสภาพอากาศ</string>
+    <string name="deleting_weather_apps_tpop_chn">ไม่สามารถใช้วิดเจ็ด สภาพอากาศหลังลบแอปสภาพอากาศ</string>
     <string name="deny">ไม่</string>
     <string name="detail">รายละเอียด</string>
     <string name="dialog_Entire_cities_deleted">เมืองทั้งหมดจะถูกลบและจะไม่แสดงข้อมูลสภาพอากาศในวิดเจ็ด</string>
-    <string name="dialog_apps_icon_message">ไอคอนวิดเจ็ดสภาพอากาศ จะถูกเพิ่มในรายการแอพพลิเคชั่น</string>
+    <string name="dialog_apps_icon_message">ไอคอนวิดเจ็ดสภาพอากาศ จะถูกเพิ่มในรายการแอปพลิเคชัน</string>
     <string name="dialog_cancel_button">ยกเลิก</string>
     <string name="dialog_cities_deleted">%d เมืองจะถูกลบ</string>
     <string name="dialog_connect_button">เชื่อมต่อ</string>
@@ -191,14 +197,15 @@
     <string name="dragndroplist_drag_release">วางรายการลงในตำแหน่ง %d แล้ว</string>
     <string name="dragndroplist_drag_start">เริ่มลากรายการที่ตำแหน่ง %d</string>
     <string name="dragndroplist_item_cannot_be_dragged">ไม่สามารถลากรายการที่ตำแหน่ง %d ได้</string>
+    <string name="drawer_tips">เคล็ดลับ %s</string>
     <string name="drawer_tips_message">แตะที่นี่เพื่อเพิ่ม, ลบ และเรียงลำดับตำแหน่งใหม่ คุณยังสามารถเพิ่มหลายวิดเจ็ดเพื่อแสดงตำแหน่งต่างๆ บนหน้าจอหลักได้เช่นกัน</string>
     <string name="drawer_tips_message_1">แตะ “จัดการตำแหน่ง” ที่ด้านล่างของเมนูนี้เพื่อเพิ่ม, ลบ และจัดเรียงลำดับตำแหน่ง</string>
     <string name="drawer_tips_message_2">คุณสามารถเพิ่มมากกว่าหนึ่งวิดเจ็ดไปยังหน้าจอหลักเพื่อแสดงตำแหน่งที่แตกต่างกันพร้อมกันได้</string>
     <string name="dynamic_widget">สภาพอากาศแบบไดนามิก</string>
     <string name="easymode_subscribe">ในโหมดใช้ง่าย เฉพาะเมืองปัจจุบันของคุณเท่านั้นที่จะถูกแสดง</string>
     <string name="empty_correct_city_name">ไม่สามารถส่งรายงานได้ โปรดใส่ชื่อเมือง</string>
-    <string name="enable_apps_icon">เพิ่มไอคอน %s ไปยังหน้าจอแอพ</string>
-    <string name="enable_apps_icon_tablet">เพิ่มไอคอน %s ไปยังหน้าจอแอพ</string>
+    <string name="enable_apps_icon">เพิ่มไอคอน %s ไปยังหน้าจอแอป</string>
+    <string name="enable_apps_icon_tablet">เพิ่มไอคอน %s ไปยังหน้าจอแอป</string>
     <string name="enable_current_location_message">เปิด​ใช้​งาน​ตำแหน่ง​ปัจจุบัน</string>
     <string name="enable_location_services">เปิดใช้งาน ตำแหน่ง</string>
     <string name="enter_city_name">ใส่ชื่อเมือง</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">ขั้นสูง</string>
     <string name="exposed_dropdown_menu_content_description">แสดงเมนูแบบเลื่อนลง</string>
     <string name="failed_to_send_report">การส่งรายงานล้มเหลว</string>
-    <string name="fallback_menu_item_copy_link">คัดลอกลิงก์</string>
-    <string name="fallback_menu_item_open_in_browser">เปิดในเบราว์เซอร์</string>
-    <string name="fallback_menu_item_share_link">แชร์ลิงก์</string>
     <string name="farenheit">°​F</string>
     <string name="favorite_location">ตำแหน่งโปรด</string>
     <string name="feel_like_pd_minus_temp">อุณหภูมิที่รู้สึก %d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">วิดีโอพยากรณ์</string>
     <string name="format_km_per_hour">%s กม./ชม.</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">ศ.</string>
     <string name="general">ทั่วไป</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">รับคอนเทนท์ส่วนตัวที่อิงจากการใช้โทรศัพท์ของคุณ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">รับคอนเทนท์ส่วนตัวที่อิงจากการใช้แท็บเล็ตของคุณ</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">รับข้อมูลสภาพอากาศ รวมถึงตำแหน่งปัจจุบันของคุณ จาก Weather</string>
     <string name="go_to_website">ไปที่เว็บไซต์</string>
     <string name="goto_apps">มีอัพเดทใหม่ที่ใช้งานได้ ติดตั้งตอนนี้?</string>
     <string name="goto_apps_later">ภาย​หลัง</string>
     <string name="goto_apps_now">เดี๋ยว​นี้</string>
     <string name="goto_apps_update_title">การ​เตือน​คอน​เทนท์​ใหม่</string>
     <string name="header_tts">ส่วนหัว</string>
+    <string name="heavy">หนัก</string>
     <string name="heavy_rain">ฝนหนัก</string>
     <string name="heavy_rain_followed_by_intense_heat">มีฝนหนักตามด้วยอากาศร้อนจัด</string>
     <string name="heavy_rain_followed_by_light_rain">มีฝนหนักตามด้วยอากาศร้อนจัด</string>
@@ -344,8 +351,8 @@
     <string name="item_view_role_description">แท็บ</string>
     <string name="japan">ญี่ปุ่น</string>
     <string name="korea">เกาหลี</string>
-    <string name="last_updated_text">อัพ​เด​ท</string>
-    <string name="last_updated_tts">อัพเดทครั้งสุดท้าย</string>
+    <string name="last_updated_text">อัป​เด​ต</string>
+    <string name="last_updated_tts">อัปเดตครั้งสุดท้าย</string>
     <string name="lifeIndex_forecast">ดัชนีชีวิต</string>
     <string name="life_contents">เรื่องราววันนี้</string>
     <string name="life_index_air_dust">ฝุ่นละออง</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">การมองเห็น</string>
     <string name="life_index_wind">ลม</string>
     <string name="life_index_wind_force">ความเร็วลม</string>
+    <string name="light">เบา</string>
     <string name="light_rain_followed_by_heavy_rain">มีฝนเล็กน้อยตามด้วยฝนหนัก</string>
     <string name="light_rain_with_some_heavy_rain">มีฝนเล็กน้อยและฝนหนักเป็นบางแห่ง</string>
     <string name="link_tts">ลิงก์</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">ไม่พบผลลัพธ์</string>
     <string name="message_service_not_available">ขณะ​นี้ บริการ​ยัง​ไม่​พร้อม​ใช้​งาน</string>
     <string name="minus_tts">การลบ</string>
+    <string name="mon">จ.</string>
     <string name="more">เพิ่มเติม</string>
     <string name="more_cuntact_us">ติดต่อเรา</string>
     <string name="more_information">อื่นๆ</string>
@@ -507,15 +516,26 @@
     <string name="navigation_drawer_tips_message">แตะที่นี่เพื่อเปลี่ยนตำแหน่งสภาพอากาศพื้นฐาน และจัดการตำแหน่งทั้งหมดของคุณ</string>
     <string name="new_version_available">เวอร์ชั่นใหม่ของ %s พร้อมใช้งานแล้ว</string>
     <string name="new_version_is_available">เวอร์ชั่นใหม่พร้อมใช้งาน</string>
+    <string name="news_menu_show_news">แสดงข่าวสาร</string>
+    <string name="news_opt_in_banner_title_text">ทันเหตุการณ์ปัจจุบันด้วยการแสดงข่าวบน Widget สภาพอากาศ</string>
+    <string name="news_opt_in_popup_desc_text">ทันเหตุการณ์โลกด้วยการแสดงหัวข้อข่าวล่าสุดจาก %s บน Widget สภาพอากาศ</string>
+    <string name="news_opt_in_popup_title_text">ดูข่าวและสภาพอากาศใน Widget เดียว</string>
+    <string name="news_request_agree_text">แตะเพื่อรับข่าวจาก %s</string>
+    <string name="news_widget_bubble_text">รับข่าวสารสภาพอากาศ</string>
+    <string name="news_widget_dummy_title">เรื่องราวยอดนิยมประจำวัน</string>
+    <string name="news_widget_new_dummy_title">5 สิ่งที่คุณต้องรู้เช้านี้</string>
+    <string name="news_widget_oobe_text">แตะที่นี่เพื่อเพิ่มข่าวสาร</string>
     <string name="next">เมืองถัดไป</string>
+    <string name="next_btn">ถัดไป</string>
     <string name="next_city">แตะสองครั้งเพื่อดูข้อมูลสภาพอากาศของเมืองถัดไป</string>
     <string name="night_tts">กลางคืน</string>
     <string name="no_application_available">ไม่​มี​แอ​พพลิ​เค​ชั่น​ที่​ใช้​งาน​ได้</string>
     <string name="no_network_connection">ไม่​ได้​เชื่อม​ต่อ​เครือ​ข่าย</string>
-    <string name="no_new_software_updates_available">ไม่มีอัพเดทที่ใช้ได้</string>
+    <string name="no_new_software_updates_available">ไม่มีอัปเดตที่ใช้ได้</string>
     <string name="no_weather_information">ไม่มีข้อมูลสภาพอากาศ</string>
     <string name="not_in_use">ไม่ได้ใช้งาน</string>
     <string name="not_now">ไม่ใช่ตอนนี้</string>
+    <string name="not_now_btn">ไม่ใช่ตอนนี้</string>
     <string name="not_selected">ไม่ได้เลือก</string>
     <string name="not_set">ไม่ได้ตั้งค่า</string>
     <string name="nothing_selected">ยังไม่ได้เลือก</string>
@@ -524,15 +544,16 @@
     <string name="notice_accurate_location_detection_msg_no_path">เพื่อการตรวจจับตำแหน่งที่รวดเร็วและแม่นยำที่สุด แตะที่ “การตั้งค่า” จากนั้นตั้งค่า วิธีการระบุตำแหน่ง เป็น GPS, Wi-Fi และเครือข่ายมือถือ</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">เพื่อการตรวจจับตำแหน่งที่รวดเร็วและแม่นยำที่สุด แตะที่ “การตั้งค่า” จากนั้นตั้งค่า วิธีการระบุตำแหน่ง เป็น GPS และ Wi-Fi</string>
     <string name="notice_gps_trun_off_message_verizon">หากต้องการดูข้อมูลพยากรณ์อากาศ ให้เปิด ตำแหน่ง แล้วตรวจสอบว่าได้ตั้งค่าโหมดไว้ที่ ความถูกต้องสูง</string>
-    <string name="notification_apps_update_channel_name">การแจ้งเตือนอัพเดท</string>
+    <string name="notification_alert_channel_name">การเตือนสภาพอากาศรุนแรง</string>
+    <string name="notification_apps_update_channel_name">การแจ้งเตือนอัปเดต</string>
     <string name="notification_auto_refresh_channel_name">รีเฟรชสภาพอากาศอัตโนมัติ</string>
     <string name="notification_dex_channel_name">สภาพอากาศใน Samsung DeX</string>
     <string name="notification_normal_channel_name">ข้อมูลสภาพอากาศและการเตือน</string>
     <string name="notification_panel_channel_name">การแจ้งเตือนที่ดำเนินอยู่</string>
     <string name="notification_panel_location_off">เปิด ตำแหน่ง เพื่อดูพยากรณ์อากาศท้องถิ่น</string>
     <string name="notification_refresh_channel_name">รีเฟรชสภาพอากาศ</string>
-    <string name="notification_touch_widget_popup_content">ข้อมูลอุณหภูมิจะอัพเดทอัตโนมัติทุก %d ชั่วโมง ซึ่งอาจมีค่าใช้จ่ายเพิ่มเติม คุณสามารถเปลี่ยนช่วงเวลารีเฟรชในการตั้งค่าวิดเจ็ด สภาพอากาศได้</string>
-    <string name="notification_touch_widget_popup_content_for_one_hour_interval">ข้อมูลสภาพอากาศจะอัพเดทโดยอัตโนมัติทุกชั่วโมง ซึ่งอาจมีค่าใช้จ่ายเพิ่มเติม คุณสามารถเปลี่ยนช่วงเวลารีเฟรชได้ ในการตั้งค่าวิดเจ็ด สภาพอากาศ</string>
+    <string name="notification_touch_widget_popup_content">ข้อมูลอุณหภูมิจะอัปเดตอัตโนมัติทุก %d ชั่วโมง ซึ่งอาจมีค่าใช้จ่ายเพิ่มเติม คุณสามารถเปลี่ยนช่วงเวลารีเฟรชในการตั้งค่าวิดเจ็ด สภาพอากาศได้</string>
+    <string name="notification_touch_widget_popup_content_for_one_hour_interval">ข้อมูลสภาพอากาศจะอัปเดตโดยอัตโนมัติทุกชั่วโมง ซึ่งอาจมีค่าใช้จ่ายเพิ่มเติม คุณสามารถเปลี่ยนช่วงเวลารีเฟรชได้ ในการตั้งค่าวิดเจ็ด สภาพอากาศ</string>
     <string name="notification_updating">กำลังอัพเดท…</string>
     <string name="notifications">การแจ้งเตือน</string>
     <string name="off_text">ปิด</string>
@@ -544,6 +565,7 @@
     <string name="open_app">เปิดแอพ</string>
     <string name="open_source_licences">ใบอนุญาตของโอเพ่นซอร์ส</string>
     <string name="other_locations">ตำแหน่งอื่นๆ</string>
+    <string name="partly_sunny">มีแดดเป็นบางส่วน​</string>
     <string name="password_toggle_content_description">แสดงรหัสผ่าน</string>
     <string name="paused">พักแล้ว</string>
     <string name="pd_km">%.1f กม. ที่มองเห็นได้</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">คัดลอก \"%1$s\" ไปยังคลิปบอร์ดแล้ว</string>
     <string name="preview">ตัวอย่าง %s</string>
     <string name="previous">เมืองก่อนหน้า</string>
+    <string name="previous_btn">ก่อนหน้า</string>
     <string name="previous_city">แตะสองครั้งเพื่อดูข้อมูลสภาพอากาศของเมืองก่อนหน้า</string>
     <string name="privacy_policy">นโยบายความส่วนตัว</string>
     <string name="probability_of_rain_text">โอกาสในการเกิดฝน</string>
     <string name="protect_your_content">ป้องกันคอนเทนท์ของคุณ</string>
+    <string name="ps_in">%s นิ้ว</string>
+    <string name="ps_mm">%s มม.</string>
     <string name="radar">เรดาร์และแผนที่</string>
     <string name="rain">สาย​ฝน</string>
     <string name="rain_followed_by_intense_heat">มีฝนตามด้วยอากาศร้อนจัด</string>
@@ -577,7 +602,7 @@
     <string name="rain_with_sunny_intervals">มีฝนและแดดจ้าเป็นช่วงๆ</string>
     <string name="rainy_then_clearing">มีฝนแล้วฟ้าโปร่ง</string>
     <string name="realfeel_tts">รู้สึกจริง</string>
-    <string name="refresh_button">อัพเดทสภาพอากาศ</string>
+    <string name="refresh_button">อัปเดตสภาพอากาศ</string>
     <string name="refresh_time_12h">ทุก 12 ​ชั่วโมง</string>
     <string name="refresh_time_24h">ทุก 24 ​ชั่วโมง</string>
     <string name="refresh_time_3h">ทุก 3 ชั่วโมง</string>
@@ -585,7 +610,7 @@
     <string name="refresh_time_hour">ทุกชั่วโมง</string>
     <string name="refresh_time_none">ไม่ต้อง</string>
     <string name="refresh_when_app_opens">รีเฟรชเมื่อแอพเปิด</string>
-    <string name="removed_to_app_screen">ลบ %s ออกจากหน้าจอแอพแล้ว</string>
+    <string name="removed_to_app_screen">ลบ %s ออกจากหน้าจอแอปแล้ว</string>
     <string name="removed_to_home_screen">ลบ %s ออกจากหน้าจอหลักแล้ว</string>
     <string name="reorder_tts">เรียง​ลำดับ​ใหม่</string>
     <string name="report_incorrect_name">รายงานชื่อตำแหน่งผิด</string>
@@ -600,16 +625,17 @@
     <string name="restrict_background_data_enabled">เปิดใช้งานการจำกัดข้อมูลพื้นหลัง</string>
     <string name="retail_function_not_supported">ไม่รองรับคุณสมบัติในโหมดสาธิต</string>
     <string name="retry">ลอง​ใหม่</string>
-    <string name="runtime_location_permission_desc">หากต้องการอัพเดทข้อมูลสภาพอากาศ ให้แตะ “การตั้งค่า” แล้วไปที่ ข้อมูลแอพ > การอนุญาต จากนั้นให้การอนุญาตดังนี้แล้วลองใหม่อีกครั้ง:</string>
+    <string name="runtime_location_permission_desc">หากต้องการอัปเดตข้อมูลสภาพอากาศ ให้แตะ “การตั้งค่า” แล้วไปที่ ข้อมูลแอพ > การอนุญาต จากนั้นให้การอนุญาตดังนี้แล้วลองใหม่อีกครั้ง:</string>
     <string name="runtime_location_permission_title">ให้อนุญาต</string>
     <string name="runtime_oem_grant_permission_desc">แอพ %s ได้รับอนุญาตให้เข้าถึงข้อมูลต่อไปนี้:</string>
+    <string name="sat">ส.</string>
     <string name="save_button">บันทึก</string>
     <string name="search_menu_title">ค้นหา</string>
     <string name="search_most_searched_for">ค้นหามากที่สุด</string>
     <string name="search_tab_cities">เมือง</string>
     <string name="search_tab_themes">ธีม</string>
     <string name="searching_ing">กำลังค้นหา…</string>
-    <string name="secure_folder_description">ป้องกันข้อมูลและแอพส่วนตัวของคุณจากฟิชชิ่งและการโจมตีอื่นๆ โดยการจัดเก็บไว้ในโฟลเดอร์ที่ปลอดภัย</string>
+    <string name="secure_folder_description">ป้องกันข้อมูลและแอปส่วนตัวของคุณจากฟิชชิ่งและการโจมตีอื่นๆ โดยการจัดเก็บไว้ในโฟลเดอร์ที่ปลอดภัย</string>
     <string name="select_city">เลือก​เมือง</string>
     <string name="select_content_size">เลือกขนาดของคอนเทนท์</string>
     <string name="select_dpi_description">เลือกขนาดไอคอน ตัวอักษร และการควบคุม</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">มีคอนเทนท์ใหม่ที่พร้อมใช้งาน</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">เพิ่ม​เติม</string>
+    <string name="sesl_preferecne_badge_description">การแจ้งเตือนใหม่</string>
     <string name="sesl_preferencecategory_added_title">ส่วนหัว</string>
     <string name="sesl_search_hint">ค้นหา</string>
     <string name="sesl_searchview_description_clear">ล้างฟิลด์ค้นหา</string>
@@ -665,7 +692,7 @@
     <string name="setup_wizard_location_confirm">ฉันยอมเปลี่ยนวิธีการระบุตำแหน่งเป็น %s เพื่อดูการพยากรณ์อากาศสำหรับตำแหน่งปัจจุบันของฉัน</string>
     <string name="show_alert_description">รับการเตือนและเครื่องหมายสภาพอากาศบนวิดเจ็ด สภาพอากาศ และในแอพ</string>
     <string name="show_alert_description_edge">รับการเตือนและเครื่องหมายสภาพอากาศบนวิดเจ็ด สภาพอากาศ, ในแอพและบนหน้าจอขอบ</string>
-    <string name="show_on_apps_screen">แสดง %s บนหน้าจอแอพ</string>
+    <string name="show_on_apps_screen">แสดง %s บนหน้าจอแอป</string>
     <string name="show_weather_alert">การแจ้งเตือนสภาพอากาศ</string>
     <string name="signed_in_as">เข้าสู่ระบบด้วย %s แล้ว</string>
     <string name="sleet">มี​ลูก​เห็บ</string>
@@ -680,7 +707,7 @@
     <string name="snow_with_some_heavy_rain">มีหิมะและฝนหนักเป็นบางส่วน</string>
     <string name="snow_with_some_rain">หิมะและมีฝนเป็นบางส่วน</string>
     <string name="snow_with_sunny_intervals">มีหิมะและแดดจ้าเป็นช่วงๆ</string>
-    <string name="software_update_nitice">เราขอแนะนำให้คุณอัพเดทผ่าน Wi-Fi การใช้เครือข่ายมือถืออาจมีค่าใช้จ่ายเพิ่มเติม</string>
+    <string name="software_update_nitice">เราขอแนะนำให้คุณอัปเดตผ่าน Wi-Fi การใช้เครือข่ายมือถืออาจมีค่าใช้จ่ายเพิ่มเติม</string>
     <string name="some_selected_text">เลือก %d รายการ</string>
     <string name="source_weathernews_inc">แหล่งที่มา: Weathernews Inc.</string>
     <string name="st_app_name">SmartThings</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">ออฟไลน์</string>
     <string name="st_view_less">ดูน้อยลง</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">ปิด</string>
+    <string name="status_on">เปิด</string>
     <string name="summary_collapsed_preference_list">%1$s %2$s</string>
+    <string name="sun">อา.</string>
     <string name="sunny">มีแดดจัด</string>
     <string name="sunny_with_some_clouds">มีแดดจ้ามีเมฆเป็นบางแห่ง</string>
     <string name="sunny_with_some_heavy_rain">มีแดดจ้าและฝนหนักเป็นบางแห่ง</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">แตะที่นี่เพื่อกู้คืนข้อมูลสภาพอากาศจากอุปกรณ์เครื่องเก่าของคุณ</string>
     <string name="tap_retry_to_try_to_find_your_location_again">แตะ “ลองใหม่” เพื่อลองค้นหาตำแหน่งของคุณอีกครั้ง</string>
     <string name="tap_setting_message_edge_panel">เปิด ตำแหน่ง เพื่อรับข้อมูลสภาพอากาศท้องถิ่น</string>
+    <string name="tap_the_settings_icon">แตะไอคอนการตั้งค่า</string>
     <string name="tap_to_get_the_weather">แตะเพื่อรับสภาพอากาศ</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">ข้อตกลงและเงื่อนไขการใช้งาน</string>
     <string name="the_latest_version">ติดตั้งเวอร์ชั่นล่าสุดอยู่แล้ว</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">การดำเนินการนี้จะนำไปใช้กับการแจ้งเตือนและปฏิทินด้วย</string>
+    <string name="thu">พฤ.</string>
     <string name="tick_box_tts">กล่องทำเครื่องหมาย</string>
     <string name="ticked_tts">ที่ทำเครื่องหมาย</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">ทุกชั่วโมง</string>
     <string name="title_select_locations">เลือกตำแหน่ง</string>
     <string name="title_theme">ธีม</string>
+    <string name="to_continue_agree_to_updated">หากต้องการดำเนินการต่อ โปรดยอมรับ %s ที่อัปเดตแล้วของเรา</string>
     <string name="to_get_local_weather_chn">"หากต้องการทราบสภาพอากาศท้องถิ่น จะมีการส่งตำแหน่งปัจจุบันของคุณไปยังผู้ให้บริการด้านสภาพอากาศ (โปรดดูนโยบาย %1$sข้อตกลงและเงื่อนไข%2$s และ %3$sนโยบายความเป็นส่วนตัว%4$s ของผู้ให้บริการ)
 แอปและบริการอื่น ๆ บนอุปกรณ์ของคุณอาจเข้าถึงข้อมูลสภาพอากาศที่ดึงข้อมูลมาเพื่อแสดงสภาพอากาศในแอปดังกล่าว
 เพื่อให้ข้อมูลสภาพอากาศแก่คุณอย่างต่อเนื่อง แอปสภาพอากาศจะเข้าถึงข้อมูลตำแหน่งของคุณ แม้ว่าคุณไม่ได้ใช้แอปอยู่ก็ตาม"</string>
     <string name="today">วันนี้</string>
+    <string name="try_it_out_btn">ลองใช้</string>
+    <string name="tue">อ.</string>
+    <string name="turn_on_to_use_precise_location">หากต้องการใช้คุณสมบัตินี้ คุณจะต้องอนุญาตให้ %s เข้าถึงตำแหน่งของคุณตลอดเวลาและเปิด ใช้ตำแหน่งที่แม่นยำ แตะ “การตั้งค่า” จากนั้นไปที่ การอนุญาต > ตำแหน่ง</string>
     <string name="tw_title_weather_broadcast">ออกอากาศ</string>
-    <string name="unable_to_check_for_updates">ไม่สามารถตรวจสอบอัพเดทใหม่ๆ ไม่มีการเชื่อมต่อเครือข่าย</string>
+    <string name="unable_to_check_for_updates">ไม่สามารถตรวจหาอัปเดตได้ โปรดลองอีกครั้งภายหลัง</string>
     <string name="unable_to_receive_info_msg">ไม่สามารถรับข้อมูลได้</string>
     <string name="unticked_tts">ไม่ทำเครื่องหมาย</string>
     <string name="unused">ไม่ได้ใช้</string>
-    <string name="update">อัพ​เด​ท</string>
-    <string name="update_abb8">อัพ​เด​ท</string>
-    <string name="update_app">อัพเดทแอพ</string>
-    <string name="updated_tts">อัพเดท %s แล้ว</string>
+    <string name="update">อัป​เด​ต</string>
+    <string name="update_abb8">อัป​เด​ต</string>
+    <string name="update_app">อัปเดตแอพ</string>
+    <string name="updated_tile_chn">อัป​เด​ต​แล้ว: ​%s</string>
+    <string name="updated_tts">อัปเดต %s แล้ว</string>
+    <string name="use_current_location">ใช้ตำแหน่งปัจจุบัน</string>
     <string name="use_current_location_agree_popup">"หากต้องการทราบสภาพอากาศท้องถิ่น ตำแหน่งปัจจุบันของคุณก็จะมีการส่งไปยังผู้ให้บริการด้านสภาพอากาศ (โปรดดู %1$sนโยบายความเป็นส่วนตัว%2$s ของผู้ให้บริการ)
 แอพและบริการอื่นๆ บนอุปกรณ์ของคุณอาจมีการเข้าถึงข้อมูลสภาพอากาศที่ดึงข้อมูลมาเพื่อแสดงสภาพอากาศในแอพดังกล่าว"</string>
     <string name="use_current_location_and_background_agree_popup">"หากต้องการทราบสภาพอากาศท้องถิ่น จะมีการส่งตำแหน่งปัจจุบันของคุณไปยังผู้ให้บริการด้านสภาพอากาศ (โปรดดูนโยบาย%1$sความเป็นส่วนตัวของผู้ให้บริการ%2$s)
@@ -746,9 +784,16 @@
 คุณสามารถปิดการใช้ข้อมูลตำแหน่งของคุณได้โดยไปที่การตั้งค่าแอพสภาพ​อากาศ"</string>
     <string name="use_current_location_body_msg_chn">"โปรดอ่านข้อมูลอย่างละเอียดก่อนใช้ “สภาพ​อากาศ” :
 หากคุณต้องการทราบสภาพ​อากาศของตำแหน่งปัจจุบันของคุณ คุณจะต้องอนุญาตให้ผู้ให้บริการบุคคลที่สามเข้าถึงอุปกรณ์ของคุณได้อย่างต่อเนื่อง (แม้ว่าคุณจะไม่ได้ใช้บริการ) และรับข้อมูลบางอย่างตามรายการที่ระบุด้านล่าง โปรดอ่านและทำความเข้าใจ%1$sข้อตกลงและเงื่อนไข%2$sและ%3$sนโยบายความเป็นส่วนตัว%4$sของผู้ให้บริการบุคคลที่สามอย่างละเอียดก่อนให้การอนุญาตดังกล่าว คุณอาจถอนการอนุญาตได้โดยการปิด “ตำแหน่งที่ตั้ง” ในเมนูการตั้งค่า แอพและบริการอื่น ๆ บนอุปกรณ์ของคุณอาจมีการเข้าถึงข้อมูลสภาพอากาศที่ดึงข้อมูลมาเพื่อแสดงสภาพอากาศในแอพและบริการดังกล่าว"</string>
+    <string name="use_current_location_body_msg_kor">"ตำแหน่งปัจจุบันของคุณจะถูกรวบรวมและใช้เพื่อให้บริการคุณสมบัติของแอพสภาพอากาศบางอย่าง เช่น การรับสภาพอากาศท้องถิ่นของคุณ
+
+ในการแสดงข้อมูลสภาพอากาศอย่างต่อเนื่อง แอพนี้จะประมวลผลตำแหน่งของคุณเป็นประจำ แม้ในขณะที่คุณไม่ได้ใช้แอพ การดำเนินการต่อหมายความว่าคุณยอมรับการรวบรวมและการประมวลผลตำแหน่งของคุณเพื่อวัตถุประสงค์ข้างต้น
+
+คุณสามารถหยุดการรวบรวมและการใช้งานตำแหน่งนี้ได้ในการตั้งค่าแอพสภาพอากาศ"</string>
     <string name="use_current_location_body_purpose">วัตถุประสงค์</string>
     <string name="use_current_location_body_purpose_content">เพื่อให้บริการข้อมูลสภาพ​อากาศสำหรับตำแหน่งปัจจุบัน</string>
     <string name="use_current_location_body_search_provider">ผู้ให้บริการ</string>
+    <string name="use_current_location_continue">ดำเนินการ</string>
+    <string name="use_current_location_not_now">ไม่ใช่ตอนนี้</string>
     <string name="use_current_location_off_alert_popup">ข้อมูลตำแหน่งปัจจุบันจะถูกลบออก</string>
     <string name="useful_informations">เคล็ดลับชีวิตและรายงานอื่นๆ</string>
     <string name="using_as">ใช้เป็น %s</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">เคล็ดลับสภาพอากาศ</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">พ.</string>
     <string name="weekly_forecast">รายวัน</string>
     <string name="widget_background">พื้นหลังวิดเจ็ด</string>
     <string name="widget_empty_text">แตะเพื่อดูข้อมูลสภาพอากาศ</string>
+    <string name="widget_location">ชื่อเมือง</string>
     <string name="widget_name_4x1">สภาพอากาศและนาฬิกา</string>
     <string name="widget_setting">การตั้งค่า</string>
     <string name="widget_setting_background_color">สีพื้นหลัง</string>

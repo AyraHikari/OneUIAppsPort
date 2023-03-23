@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flowରେ %dଟି ପର୍ଯ୍ୟନ୍ତ କମ୍ପ୍ୟୁଟର୍ କିମ୍ୱା ଟ୍ୟାବଲେଟ୍ ପଞ୍ଜିକରଣ କରି ପରିଚାଳନା କରନ୍ତୁ।
-
-ଏକା ସମୟରେ ଆପଣଙ୍କ ଫୋନକୁ କେବଳ ଗୋଟିଏ କମ୍ପ୍ୟୁଟର୍ କିମ୍ୱା ଟ୍ୟାବଲେଟ୍ ସଂଯୋଜିତ ହୋଇପାରିବ। ଉଭୟ ପଞ୍ଜିକରଣ ହୋଇଥିବା କମ୍ପ୍ୟୁଟର୍ କିମ୍ବା ଟ୍ୟାବଲେଟ୍ ଆପଣଙ୍କ ଫୋନ୍ ସହ ସଂଯୋଗ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତି ଆପଣଙ୍କୁ ଗୋଟିଏ ବାଛିବାକୁ ପଡିବ।"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flowରେ %dଟି ପର୍ଯ୍ୟନ୍ତ କମ୍ପ୍ୟୁଟର୍ କିମ୍ୱା ଟ୍ୟାବଲେଟ୍ ପଞ୍ଜିକରଣ କରି ପରିଚାଳନା କରନ୍ତୁ।
-
-ଏକା ସମୟରେ ଆପଣଙ୍କ ଫୋନକୁ କେବଳ ଗୋଟିଏ କମ୍ପ୍ୟୁଟର୍ କିମ୍ୱା ଟ୍ୟାବଲେଟ୍ ସଂଯୋଜିତ ହୋଇପାରିବ। ଉଭୟ ପଞ୍ଜିକରଣ ହୋଇଥିବା କମ୍ପ୍ୟୁଟର୍ କିମ୍ବା ଟ୍ୟାବଲେଟ୍ ଆପଣଙ୍କ ଫୋନ୍ ସହ ସଂଯୋଗ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତି ଆପଣଙ୍କୁ ଗୋଟିଏ ବାଛିବାକୁ ପଡିବ।"</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
     </plurals>
 </resources>

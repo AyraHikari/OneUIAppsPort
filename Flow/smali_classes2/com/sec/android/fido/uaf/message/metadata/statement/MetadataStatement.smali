@@ -701,43 +701,65 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->aaid:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/16 v1, 0x27
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", attestationRootCertificates="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->attestationRootCertificates:Ljava/util/List;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", description=\'"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->description:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", userVerificationDetails="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->userVerificationDetails:Ljava/util/List;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", attachmentHint="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->attachmentHint:Ljava/lang/Integer;
 
@@ -747,9 +769,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", keyProtection="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->keyProtection:Ljava/lang/Short;
 
@@ -759,9 +785,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", matcherProtection="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->matcherProtection:Ljava/lang/Short;
 
@@ -771,9 +801,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", tcDisplay="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->tcDisplay:Ljava/lang/Short;
 
@@ -783,55 +817,85 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", tcDisplayContentType=\'"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->tcDisplayContentType:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", tcDisplayPNGCharacteristics="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->tcDisplayPNGCharacteristics:Ljava/util/List;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", isSecondFactorOnly="
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->isSecondFactorOnly:Ljava/lang/Boolean;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", icon=\'"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->icon:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", assertionScheme=\'"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->assertionScheme:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ", authenticationAlgorithm="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->authenticationAlgorithm:Ljava/lang/Short;
 
@@ -841,33 +905,49 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", publicKeyAlgAndEncoding="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->publicKeyAlgAndEncoding:Ljava/lang/Short;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", attestationTypes="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->attestationTypes:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", upv="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/metadata/statement/MetadataStatement;->upv:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const/16 v1, 0x7d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1005,7 +1085,7 @@
     move v0, v1
 
     :goto_3
-    const-string v3, "upv is NULL"
+    const-string/jumbo v3, "upv is NULL"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1018,7 +1098,7 @@
 
     xor-int/2addr v0, v2
 
-    const-string v3, "upv is EMPTY"
+    const-string/jumbo v3, "upv is EMPTY"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1052,7 +1132,7 @@
     move v4, v1
 
     :goto_5
-    const-string v5, "upv has NULL"
+    const-string/jumbo v5, "upv has NULL"
 
     .line 226
     invoke-static {v4, v5}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
@@ -1300,7 +1380,7 @@
     move v0, v1
 
     :goto_c
-    const-string v3, "userVerificationDetails is NULL"
+    const-string/jumbo v3, "userVerificationDetails is NULL"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1334,7 +1414,7 @@
     move v4, v1
 
     :goto_d
-    const-string v5, "userVerificationDetails has NULL"
+    const-string/jumbo v5, "userVerificationDetails has NULL"
 
     .line 285
     invoke-static {v4, v5}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
@@ -1346,7 +1426,7 @@
 
     xor-int/2addr v4, v2
 
-    const-string v5, "userVerificationDetails has EMPTY"
+    const-string/jumbo v5, "userVerificationDetails has EMPTY"
 
     invoke-static {v4, v5}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1568,7 +1648,7 @@
     move v0, v1
 
     :goto_14
-    const-string v3, "tcDisplay is NULL"
+    const-string/jumbo v3, "tcDisplay is NULL"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1589,7 +1669,7 @@
 
     aput-object v4, v3, v1
 
-    const-string v4, "tcDisplay is invalid value(cur:%d)"
+    const-string/jumbo v4, "tcDisplay is invalid value(cur:%d)"
 
     invoke-static {v0, v4, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
 
@@ -1652,7 +1732,7 @@
     move v0, v1
 
     :goto_17
-    const-string v3, "tcDisplayContentType is NULL"
+    const-string/jumbo v3, "tcDisplayContentType is NULL"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1669,7 +1749,7 @@
 
     xor-int/2addr v0, v2
 
-    const-string v3, "tcDisplayContentType is EMPTY"
+    const-string/jumbo v3, "tcDisplayContentType is EMPTY"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1706,7 +1786,7 @@
     move v0, v1
 
     :goto_18
-    const-string v3, "tcDisplayPNGCharacteristics is NULL"
+    const-string/jumbo v3, "tcDisplayPNGCharacteristics is NULL"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1719,7 +1799,7 @@
 
     xor-int/2addr v0, v2
 
-    const-string v3, "tcDisplayPNGCharacteristics is EMPTY"
+    const-string/jumbo v3, "tcDisplayPNGCharacteristics is EMPTY"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -1753,7 +1833,7 @@
     move v4, v1
 
     :goto_1a
-    const-string v5, "tcDisplayPNGCharacteristics has NULL"
+    const-string/jumbo v5, "tcDisplayPNGCharacteristics has NULL"
 
     .line 369
     invoke-static {v4, v5}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V

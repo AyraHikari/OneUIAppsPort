@@ -60,6 +60,7 @@
     <string name="air_quality">Levegőminőség</string>
     <string name="air_quality_next_tts">Későbbi napi levegőminőségi előrejelzések</string>
     <string name="air_quality_previous_tts">Korábbi napi levegőminőségi előrejelzések</string>
+    <string name="alert_title">Figyelmeztetés szélsőséges időjárásra</string>
     <string name="all_added_cities">Összes hozzáadott város</string>
     <string name="allow">Engedélyezés</string>
     <string name="allow_permission_in_settings">A funkció használatához engedélyt kell adnia a Beállításokban.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Nem támogatott művelet.</string>
     <string name="apply_daylight_saving_time">Beálítja a nyári időszámítást?</string>
     <string name="as_possible_after_verification">Elküldte a bejelentést. Mihamarabb megvizsgáljuk azt, és módosítjuk a város nevét.</string>
+    <string name="auto_refresh_on_screen_description">Frissített időjárási adatokat kaphat óránként automatikusan. Ha ez a beállítás be van kapcsolva, nem lehet manuálisan frissíteni.</string>
+    <string name="auto_refresh_on_the_go">Automatikus frissítés menet közben</string>
+    <string name="auto_refresh_on_the_go_advanced">Speciális</string>
+    <string name="auto_refresh_on_the_go_description">Vezetés, kerékpározás, futás vagy séta közben gyakrabban kaphat friss időjárási adatokat. Ha ez a beállítás be van kapcsolva, nem lehet manuálisan frissíteni.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Vezetés, kerékpározás, futás vagy séta közben gyakrabban kaphat friss időjárási adatokat.</string>
     <string name="bottomsheet_action_expand_halfway">Kibontás félig</string>
     <string name="btn_report">Jelent</string>
     <string name="button_finish">Befejezés</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">További információkért érintse meg kétszer.</string>
     <string name="china">Kína</string>
     <string name="cities_button">Városok</string>
+    <string name="city_added">Felvette a várost.</string>
     <string name="city_list_text">Városok</string>
     <string name="clear">Derült</string>
     <string name="clear_text_end_icon_content_description">Szöveg törlése</string>
@@ -109,7 +116,7 @@
     <string name="comma">,</string>
     <string name="comments">Megjegyzés</string>
     <string name="common_google_play_services_enable_button">Engedélyezés</string>
-    <string name="common_google_play_services_enable_text">"A(z) %1$s alkalmazás csak akkor működik, ha  engedélyezi a Google Play-szolgáltatásokat."</string>
+    <string name="common_google_play_services_enable_text">A(z) %1$s alkalmazás csak akkor működik, ha engedélyezi a Google Play-szolgáltatásokat.</string>
     <string name="common_google_play_services_enable_title">Google Play-szolgáltatások engedélyezése</string>
     <string name="common_google_play_services_install_button">Telepítés</string>
     <string name="common_google_play_services_install_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek hiányoznak az eszközről.</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">A tartalomszolgáltató a helyi időjárási adatok biztosítása érdekében megkapja az eszköz helyadatait.</string>
     <string name="contents_error_msg">Ez a szolgáltatás jelenleg nem áll rendelkezésre. Próbálja meg később.</string>
     <string name="copy">Másolás</string>
-    <string name="copy_toast_msg">Link vágólapra másolva</string>
     <string name="correct_city_name">A város neve helyesen</string>
     <string name="couldnt_find_location">Nem sikerült meghatározni a helyet</string>
     <string name="cover_screen_top_sync_dialog_text">Ugyanazt a helyet állítja be a főképernyőn is?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Tétel a %d. helyre húzva.</string>
     <string name="dragndroplist_drag_start">%d. helyen található tétel húzása megkezdve.</string>
     <string name="dragndroplist_item_cannot_be_dragged">A %d. helyen található tétel nem húzható át.</string>
+    <string name="drawer_tips">Tippek a %s használatához</string>
     <string name="drawer_tips_message">Koppintson ide a helyek hozzáadásához, törléséhez és átrendezéséhez. Több widgetet is felvehet a különböző helyek zárolt képernyőn való megjelenítéséhez.</string>
     <string name="drawer_tips_message_1">A helyek hozzáadásához, törléséhez és átrendezéséhez érintse meg a Helyek kezelése lehetőséget ennek a menünek az alján.</string>
     <string name="drawer_tips_message_2">Ha egyszerre több helyet is meg szeretne jeleníteni, felvehet több widgetet is a kezdőképernyőre.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Speciális</string>
     <string name="exposed_dropdown_menu_content_description">Legördülő menü megjelenítése</string>
     <string name="failed_to_send_report">Nem sikerült elküldeni a jelentést</string>
-    <string name="fallback_menu_item_copy_link">Link másolása</string>
-    <string name="fallback_menu_item_open_in_browser">Megnyitás böngészőben</string>
-    <string name="fallback_menu_item_share_link">Link megosztása</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Kedvenc hely</string>
     <string name="feel_like_pd_minus_temp">Érzékelt hőmérséklet: -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Előrejelzés-videó</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mf/h</string>
+    <string name="fri">Pén</string>
     <string name="general">Általános</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Személyre szabott tartalmakat láthat az alapján, hogyan használja telefonját.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Személyre szabott tartalmakat láthat az alapján, hogyan használja táblagépét.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">időjárási adatok, többek között a jelenlegi tartózkodási hely lekérése az Időjárás alkalmazásból</string>
     <string name="go_to_website">Webhely megnyitása</string>
     <string name="goto_apps">Új frissítés érhető el. Telepíti most?</string>
     <string name="goto_apps_later">Később</string>
     <string name="goto_apps_now">Most</string>
     <string name="goto_apps_update_title">Új tartalom jelzése</string>
     <string name="header_tts">Fejléc</string>
+    <string name="heavy">Heves</string>
     <string name="heavy_rain">Erős esőzés</string>
     <string name="heavy_rain_followed_by_intense_heat">Erős eső, majd kánikula</string>
     <string name="heavy_rain_followed_by_light_rain">Erős eső, majd kánikula</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Látótávolság</string>
     <string name="life_index_wind">Szél</string>
     <string name="life_index_wind_force">Szélsebesség</string>
+    <string name="light">Enyhe</string>
     <string name="light_rain_followed_by_heavy_rain">Gyenge eső, majd erős eső</string>
     <string name="light_rain_with_some_heavy_rain">Gyenge eső időnkénti erősödéssel</string>
     <string name="link_tts">Hivatkozás</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Nincs találat.</string>
     <string name="message_service_not_available">A szolgáltatás jelenleg nem elérhető.</string>
     <string name="minus_tts">Mínusz</string>
+    <string name="mon">Hét</string>
     <string name="more">Több</string>
     <string name="more_cuntact_us">Kapcsolat</string>
     <string name="more_information">Több</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Érintse meg itt az időjárás-jelentés alapértelmezett helyének módosításához, valamint az összes hely kezeléséhez.</string>
     <string name="new_version_available">Rendelkezésre áll a(z) %s új verziója.</string>
     <string name="new_version_is_available">Új verzió érhető el.</string>
+    <string name="news_menu_show_news">Hírek megjelenítése</string>
+    <string name="news_opt_in_banner_title_text">Mindig képben lehet az aktuális eseményekkel, ha híreket jelenít meg az Időjárás widgetben.</string>
+    <string name="news_opt_in_popup_desc_text">Mindig képben lehet a világ eseményeivel, ha megjeleníti a(z) %s legfrissebb főcímeit az Időjárás widgetben.</string>
+    <string name="news_opt_in_popup_title_text">Hírek és időjárás megjelenítése egyetlen widgetben</string>
+    <string name="news_request_agree_text">Koppintson a %s híreinek letöltéséhez</string>
+    <string name="news_widget_bubble_text">Időjárási híreket kaphat.</string>
+    <string name="news_widget_dummy_title">Mai vezető történet</string>
+    <string name="news_widget_new_dummy_title">5 dolog, amit ma reggel tudnia kell</string>
+    <string name="news_widget_oobe_text">Érintse meg hírek hozzáadásához.</string>
     <string name="next">Következő város</string>
+    <string name="next_btn">Következő</string>
     <string name="next_city">Érintse meg a következő város időjárási adatainak megjelenítéséhez.</string>
     <string name="night_tts">Éjszaka</string>
     <string name="no_application_available">Nincs elérhető alkalmazás.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Nincsenek időjárási adatok</string>
     <string name="not_in_use">Nincs használatban</string>
     <string name="not_now">Most nem</string>
+    <string name="not_now_btn">Most nem</string>
     <string name="not_selected">Nincs kijelölve</string>
     <string name="not_set">Nincs beállítva</string>
     <string name="nothing_selected">Semmi nincs kiválasztva.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">A lehető leggyorsabb és legpontosabb helymeghatározáshoz érintse meg a BEÁLLÍTÁSOK pontot, majd állítsa be Helymeghatározási módszerként a GPS, Wi-Fi és mobilhálózat lehetőséget.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">A lehető leggyorsabb és legpontosabb helymeghatározáshoz érintse meg a BEÁLLÍTÁSOK pontot, majd állítsa be Helymeghatározási módszerként a GPS és Wi-Fi lehetőséget.</string>
     <string name="notice_gps_trun_off_message_verizon">A helyi időjárási adatok megjelenítéséhez kapcsolja be a Helybeállításokat, és állítsa be a Nagy pontosság módot.</string>
+    <string name="notification_alert_channel_name">Figyelmeztetés szélsőséges időjárásra</string>
     <string name="notification_apps_update_channel_name">Frissítési értesítések</string>
     <string name="notification_auto_refresh_channel_name">Időjárás automatikus frissítése</string>
     <string name="notification_dex_channel_name">Időjárás a Samsung DeX-ben</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Alkalm. megny.</string>
     <string name="open_source_licences">Nyílt forráskód licencei</string>
     <string name="other_locations">Egyéb helyek</string>
+    <string name="partly_sunny">Időnként napos</string>
     <string name="password_toggle_content_description">Jelszó megjelenítése</string>
     <string name="paused">Szünetel</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">„%1$s” a vágólapra lett másolva.</string>
     <string name="preview">%s – előnézet</string>
     <string name="previous">Előző város</string>
+    <string name="previous_btn">Előző</string>
     <string name="previous_city">Érintse meg az előző város időjárási adatainak megjelenítéséhez.</string>
     <string name="privacy_policy">Adatvédelmi nyilatkozat</string>
     <string name="probability_of_rain_text">Eső valószínűsége</string>
     <string name="protect_your_content">A tartalmak védelme</string>
+    <string name="ps_in">%s hüvelyk</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar és térképek</string>
     <string name="rain">Eső</string>
     <string name="rain_followed_by_intense_heat">Eső, majd kánikula</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Az időjárási adatok frissítéséhez érintse meg a BEÁLLÍTÁSOK lehetőséget, lépjen be az Alkalmazásinfó > Engedélyek menüpontba, adja meg a következő engedélyeket, majd próbálja újra:</string>
     <string name="runtime_location_permission_title">Engedélyek megadása</string>
     <string name="runtime_oem_grant_permission_desc">A(z) %s alkalmazásnak engedélye van a hozzáférésre a következőkhöz:</string>
+    <string name="sat">Szo</string>
     <string name="save_button">Ment</string>
     <string name="search_menu_title">Keresés</string>
     <string name="search_most_searched_for">Leggyakrabban keresettek</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Új tartalom áll rendelkezésre</string>
     <string name="sesl_material_overflow_badge_text_n">Új</string>
     <string name="sesl_more_item_label">Egyebek</string>
+    <string name="sesl_preferecne_badge_description">Új értesítés</string>
     <string name="sesl_preferencecategory_added_title">Fejléc</string>
     <string name="sesl_search_hint">Keresés</string>
     <string name="sesl_searchview_description_clear">Keresőmező törlése</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Kevesebb</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Ki</string>
+    <string name="status_on">Be</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Vas</string>
     <string name="sunny">Napsütés</string>
     <string name="sunny_with_some_clouds">Napos idő kevés felhővel</string>
     <string name="sunny_with_some_heavy_rain">Napos idő némi erős esővel</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Érintse meg itt az előző eszközről származó időjárási adatok visszaállításához.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">A hely újbóli meghatározásához érintse meg az ÚJRA gombot.</string>
     <string name="tap_setting_message_edge_panel">A helyi időjárás mutatásához kapcsolja be a helymeghatározást.</string>
+    <string name="tap_the_settings_icon">Érintse meg a Beállítások ikont.</string>
     <string name="tap_to_get_the_weather">Érintse meg az időjárás megtekintéséhez</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Használati feltételek</string>
     <string name="the_latest_version">Már telepítve van a legfrissebb verzió.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Ezt az értesítésekre és a Naptárra is alkalmazza a rendszer.</string>
+    <string name="thu">Csü</string>
     <string name="tick_box_tts">Jelölőnégyzet</string>
     <string name="ticked_tts">Bejelölve</string>
     <string name="time_am">de.</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Óránkénti</string>
     <string name="title_select_locations">Helyek kiválasztása</string>
     <string name="title_theme">Témák</string>
+    <string name="to_continue_agree_to_updated">A folytatáshoz fogadja el a frissített %s tartalmát.</string>
     <string name="to_get_local_weather_chn">"A helyi időjárási adatokhoz a rendszer elküldi az Ön aktuális helyadatait az időjárási szolgáltatónak. (Kérjük, tekintse meg a szolgáltató %1$sHasználati feltételeit%2$s és %3$sAdatvédelmi szabályzatát%4$s).
 Az eszközén található egyéb alkalmazások és szolgáltatások hozzáférhetnek a lekért időjárási adatokhoz, hogy megmutassák az időjárást ezekben az alkalmazásokban.
 Annak érdekében, hogy folyamatos időjárási információkat tudjunk nyújtani Önnek, az időjárás alkalmazás hozzáférhet az Ön helyadataihoz, még akkor is, amikor Ön nem használja azt."</string>
     <string name="today">Ma</string>
+    <string name="try_it_out_btn">Kipróbálom</string>
+    <string name="tue">Ke</string>
+    <string name="turn_on_to_use_precise_location">A funkció használatához engedélyeznie kell a(z) %s számára, hogy mindig hozzáférjen az Ön tartózkodási helyéhez, és be kell kapcsolni a Pontos hely használata beállítást. Koppintson a Beállítások lehetőségre, majd nyissa meg az Engedélyek > Hely menüpontot.</string>
     <string name="tw_title_weather_broadcast">Adás</string>
-    <string name="unable_to_check_for_updates">Nem lehet frissítéseket keresni. Nincs hálózati kapcsolat.</string>
+    <string name="unable_to_check_for_updates">Nem sikerült frissítéseket keresni. Próbálja meg később.</string>
     <string name="unable_to_receive_info_msg">Nem fogadhatók adatok</string>
     <string name="unticked_tts">Nincs bejelölve</string>
     <string name="unused">Nincs használatban</string>
     <string name="update">Frissítés</string>
     <string name="update_abb8">Frissítés</string>
     <string name="update_app">Alkalmazás frissítése</string>
+    <string name="updated_tile_chn">Frissítve: %s</string>
     <string name="updated_tts">Módosult a(z) %s</string>
+    <string name="use_current_location">Aktuális hely használata</string>
     <string name="use_current_location_agree_popup">"A helyi időjárási adatok lekéréséhez a rendszer elküldi helyadatait az időjárási szolgáltatónak. (Ismerkedjen meg a szolgáltató %1$sadatvédelmi irányelveivel%2$s.)
 A letöltött időjárási adatokhoz az eszköz egyéb alkalmazásai és szolgáltatásai is hozzáférhetnek, hogy időjárási információkat jelenítsenek meg."</string>
     <string name="use_current_location_and_background_agree_popup">"A helyi időjárási adatokhoz a rendszer elküldi az Ön aktuális helyadatait az időjárási szolgáltatónak. (Kérjük, tekintse meg a szolgáltató %1$sAdatvédelmi Nyilatkozatukat%2$s.)
@@ -746,9 +784,16 @@ Annak érdekében, hogy folyamatos időjárási információkat tudjunk nyújtan
 Kikapcsolhatja a tartózkodási helyének használatát az Időjárás alkalmazás beállításai között."</string>
     <string name="use_current_location_body_msg_chn">"Kérjük, olvassa el figyelmesen az „Időjárás” használata előtt:
 Ha szeretné megtudni, milyen az időjárás az aktuális tartózkodási helyén, engedélyeznie kell a harmadik fél szolgáltatónak, hogy folyamatosan (még akkor is, amikor Ön nem használja a szolgáltatást) hozzáférjen az eszközéhez és megkapjon bizonyos adatokat, az alábbi felsorolás szerint. Kérjük, olvassa el figyelmesen és értse meg a harmadik fél szolgáltató %1$sHasználati feltételeit%2$s és %3$sAdatvédelmi szabályzatát%4$s, mielőtt ezt az engedélyt megadná. Visszavonhatja az engedélyét a „Helymeghatározás” kikapcsolásával a Beállítások menüben. A letöltött időjárási adatokhoz az eszköze egyéb alkalmazásai és szolgáltatásai is hozzáférhetnek, hogy ezekben az alkalmazásokban és szolgáltatásokban időjárási információkat jelenítsenek meg."</string>
+    <string name="use_current_location_body_msg_kor">"Jelenlegi tartózkodási helyét gyűjteni fogjuk és felhasználjuk az Időjárás alkalmazás bizonyos funkcióinak, például a helyi időjárás-jelentésnek a biztosításához.
+
+Ahhoz, hogy folyamatos időjárási adatokat tudjunk biztosítani, az alkalmazás rendszeresen feldolgozza a tartózkodási helyét, még akkor is, amikor nem használja az alkalmazást. A folytatással elfogadja a tartózkodási helyére vonatkozó adatok gyűjtését és feldolgozását a fenti célokra.
+
+A tartózkodási helye gyűjtését és felhasználását az Időjárás alkalmazás beállításaiban állíthatja le."</string>
     <string name="use_current_location_body_purpose">Cél</string>
     <string name="use_current_location_body_purpose_content">Időjárási információk biztosítása az aktuális tartózkodási helyén</string>
     <string name="use_current_location_body_search_provider">Szolgáltató</string>
+    <string name="use_current_location_continue">Folytatás</string>
+    <string name="use_current_location_not_now">Most nem</string>
     <string name="use_current_location_off_alert_popup">A rendszer eltávolítja az aktuális hely adatait.</string>
     <string name="useful_informations">Életmódtippek és egyéb jelentések</string>
     <string name="using_as">Használat mint %s</string>
@@ -856,9 +901,11 @@ Ha szeretné megtudni, milyen az időjárás az aktuális tartózkodási helyén
     <string name="weather_tip">Időjárási tippek</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Sze</string>
     <string name="weekly_forecast">Napi</string>
     <string name="widget_background">Widget háttere</string>
     <string name="widget_empty_text">Időjárásért érintse meg</string>
+    <string name="widget_location">Város neve</string>
     <string name="widget_name_4x1">Időjárás és óra</string>
     <string name="widget_setting">Beállítások</string>
     <string name="widget_setting_background_color">Háttérszín</string>

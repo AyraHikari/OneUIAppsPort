@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 51
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$1;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     return-void
 .end method

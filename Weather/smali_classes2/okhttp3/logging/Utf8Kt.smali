@@ -34,24 +34,24 @@
 
     const-string v0, "$this$isProbablyUtf8"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 28
+    .line 1
     :try_start_0
     new-instance v7, Lokio/Buffer;
 
     invoke-direct {v7}, Lokio/Buffer;-><init>()V
 
-    .line 29
+    .line 2
     invoke-virtual {p0}, Lokio/Buffer;->size()J
 
     move-result-wide v1
 
     const-wide/16 v3, 0x40
 
-    invoke-static {v1, v2, v3, v4}, Lkotlin/ranges/RangesKt;->coerceAtMost(JJ)J
+    invoke-static {v1, v2, v3, v4}, Lui/h;->e(JJ)J
 
     move-result-wide v5
 
@@ -61,7 +61,7 @@
 
     move-object v2, v7
 
-    .line 30
+    .line 3
     invoke-virtual/range {v1 .. v6}, Lokio/Buffer;->copyTo(Lokio/Buffer;JJ)Lokio/Buffer;
 
     const/16 p0, 0x10
@@ -71,7 +71,7 @@
     :goto_0
     if-ge v1, p0, :cond_2
 
-    .line 32
+    .line 4
     invoke-virtual {v7}, Lokio/Buffer;->exhausted()Z
 
     move-result v2
@@ -80,13 +80,13 @@
 
     goto :goto_1
 
-    .line 35
+    .line 5
     :cond_0
     invoke-virtual {v7}, Lokio/Buffer;->readUtf8CodePoint()I
 
     move-result v2
 
-    .line 36
+    .line 6
     invoke-static {v2}, Ljava/lang/Character;->isISOControl(I)Z
 
     move-result v3

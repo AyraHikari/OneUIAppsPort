@@ -150,11 +150,13 @@
 
 .field public static final enum TagOpen:Lorg/jsoup/parser/TokeniserState;
 
-.field private static final attributeDoubleValueCharsSorted:[C
+.field static final attributeDoubleValueCharsSorted:[C
 
-.field private static final attributeNameCharsSorted:[C
+.field static final attributeNameCharsSorted:[C
 
-.field private static final attributeSingleValueCharsSorted:[C
+.field static final attributeSingleValueCharsSorted:[C
+
+.field static final attributeValueUnquoted:[C
 
 .field private static final eof:C = '\uffff'
 
@@ -191,7 +193,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CharacterReferenceInData:Lorg/jsoup/parser/TokeniserState;
 
-    .line 44
+    .line 39
     new-instance v0, Lorg/jsoup/parser/TokeniserState$3;
 
     const-string v1, "Rcdata"
@@ -202,7 +204,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->Rcdata:Lorg/jsoup/parser/TokeniserState;
 
-    .line 69
+    .line 64
     new-instance v0, Lorg/jsoup/parser/TokeniserState$4;
 
     const-string v1, "CharacterReferenceInRcdata"
@@ -213,7 +215,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CharacterReferenceInRcdata:Lorg/jsoup/parser/TokeniserState;
 
-    .line 79
+    .line 69
     new-instance v0, Lorg/jsoup/parser/TokeniserState$5;
 
     const-string v1, "Rawtext"
@@ -224,7 +226,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->Rawtext:Lorg/jsoup/parser/TokeniserState;
 
-    .line 100
+    .line 74
     new-instance v0, Lorg/jsoup/parser/TokeniserState$6;
 
     const-string v1, "ScriptData"
@@ -235,7 +237,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptData:Lorg/jsoup/parser/TokeniserState;
 
-    .line 121
+    .line 79
     new-instance v0, Lorg/jsoup/parser/TokeniserState$7;
 
     const-string v1, "PLAINTEXT"
@@ -246,7 +248,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->PLAINTEXT:Lorg/jsoup/parser/TokeniserState;
 
-    .line 139
+    .line 97
     new-instance v0, Lorg/jsoup/parser/TokeniserState$8;
 
     const-string v1, "TagOpen"
@@ -257,7 +259,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->TagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    .line 165
+    .line 124
     new-instance v0, Lorg/jsoup/parser/TokeniserState$9;
 
     const-string v1, "EndTagOpen"
@@ -268,7 +270,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->EndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    .line 183
+    .line 143
     new-instance v0, Lorg/jsoup/parser/TokeniserState$10;
 
     const-string v1, "TagName"
@@ -279,7 +281,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->TagName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 216
+    .line 183
     new-instance v0, Lorg/jsoup/parser/TokeniserState$11;
 
     const-string v1, "RcdataLessthanSign"
@@ -290,7 +292,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->RcdataLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    .line 235
+    .line 202
     new-instance v0, Lorg/jsoup/parser/TokeniserState$12;
 
     const-string v1, "RCDATAEndTagOpen"
@@ -301,7 +303,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->RCDATAEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    .line 248
+    .line 215
     new-instance v0, Lorg/jsoup/parser/TokeniserState$13;
 
     const-string v1, "RCDATAEndTagName"
@@ -312,7 +314,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->RCDATAEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 294
+    .line 261
     new-instance v0, Lorg/jsoup/parser/TokeniserState$14;
 
     const-string v1, "RawtextLessthanSign"
@@ -323,7 +325,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->RawtextLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    .line 305
+    .line 272
     new-instance v0, Lorg/jsoup/parser/TokeniserState$15;
 
     const-string v1, "RawtextEndTagOpen"
@@ -334,7 +336,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->RawtextEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    .line 316
+    .line 277
     new-instance v0, Lorg/jsoup/parser/TokeniserState$16;
 
     const-string v1, "RawtextEndTagName"
@@ -345,7 +347,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->RawtextEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 321
+    .line 282
     new-instance v0, Lorg/jsoup/parser/TokeniserState$17;
 
     const-string v1, "ScriptDataLessthanSign"
@@ -356,7 +358,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    .line 339
+    .line 305
     new-instance v0, Lorg/jsoup/parser/TokeniserState$18;
 
     const-string v1, "ScriptDataEndTagOpen"
@@ -367,7 +369,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    .line 351
+    .line 310
     new-instance v0, Lorg/jsoup/parser/TokeniserState$19;
 
     const-string v1, "ScriptDataEndTagName"
@@ -378,7 +380,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 356
+    .line 315
     new-instance v0, Lorg/jsoup/parser/TokeniserState$20;
 
     const-string v1, "ScriptDataEscapeStart"
@@ -389,7 +391,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapeStart:Lorg/jsoup/parser/TokeniserState;
 
-    .line 366
+    .line 325
     new-instance v0, Lorg/jsoup/parser/TokeniserState$21;
 
     const-string v1, "ScriptDataEscapeStartDash"
@@ -400,7 +402,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapeStartDash:Lorg/jsoup/parser/TokeniserState;
 
-    .line 376
+    .line 335
     new-instance v0, Lorg/jsoup/parser/TokeniserState$22;
 
     const-string v1, "ScriptDataEscaped"
@@ -411,7 +413,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscaped:Lorg/jsoup/parser/TokeniserState;
 
-    .line 403
+    .line 362
     new-instance v0, Lorg/jsoup/parser/TokeniserState$23;
 
     const-string v1, "ScriptDataEscapedDash"
@@ -422,7 +424,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedDash:Lorg/jsoup/parser/TokeniserState;
 
-    .line 431
+    .line 390
     new-instance v0, Lorg/jsoup/parser/TokeniserState$24;
 
     const-string v1, "ScriptDataEscapedDashDash"
@@ -433,7 +435,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedDashDash:Lorg/jsoup/parser/TokeniserState;
 
-    .line 462
+    .line 421
     new-instance v0, Lorg/jsoup/parser/TokeniserState$25;
 
     const-string v1, "ScriptDataEscapedLessthanSign"
@@ -444,7 +446,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    .line 478
+    .line 437
     new-instance v0, Lorg/jsoup/parser/TokeniserState$26;
 
     const-string v1, "ScriptDataEscapedEndTagOpen"
@@ -455,7 +457,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    .line 491
+    .line 450
     new-instance v0, Lorg/jsoup/parser/TokeniserState$27;
 
     const-string v1, "ScriptDataEscapedEndTagName"
@@ -466,7 +468,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 496
+    .line 455
     new-instance v0, Lorg/jsoup/parser/TokeniserState$28;
 
     const-string v1, "ScriptDataDoubleEscapeStart"
@@ -477,7 +479,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapeStart:Lorg/jsoup/parser/TokeniserState;
 
-    .line 501
+    .line 460
     new-instance v0, Lorg/jsoup/parser/TokeniserState$29;
 
     const-string v1, "ScriptDataDoubleEscaped"
@@ -488,7 +490,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscaped:Lorg/jsoup/parser/TokeniserState;
 
-    .line 528
+    .line 487
     new-instance v0, Lorg/jsoup/parser/TokeniserState$30;
 
     const-string v1, "ScriptDataDoubleEscapedDash"
@@ -499,7 +501,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedDash:Lorg/jsoup/parser/TokeniserState;
 
-    .line 555
+    .line 514
     new-instance v0, Lorg/jsoup/parser/TokeniserState$31;
 
     const-string v1, "ScriptDataDoubleEscapedDashDash"
@@ -510,7 +512,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedDashDash:Lorg/jsoup/parser/TokeniserState;
 
-    .line 585
+    .line 544
     new-instance v0, Lorg/jsoup/parser/TokeniserState$32;
 
     const-string v1, "ScriptDataDoubleEscapedLessthanSign"
@@ -521,7 +523,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    .line 596
+    .line 555
     new-instance v0, Lorg/jsoup/parser/TokeniserState$33;
 
     const-string v1, "ScriptDataDoubleEscapeEnd"
@@ -532,7 +534,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapeEnd:Lorg/jsoup/parser/TokeniserState;
 
-    .line 601
+    .line 560
     new-instance v0, Lorg/jsoup/parser/TokeniserState$34;
 
     const-string v1, "BeforeAttributeName"
@@ -543,7 +545,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BeforeAttributeName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 645
+    .line 607
     new-instance v0, Lorg/jsoup/parser/TokeniserState$35;
 
     const-string v1, "AttributeName"
@@ -554,7 +556,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AttributeName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 687
+    .line 651
     new-instance v0, Lorg/jsoup/parser/TokeniserState$36;
 
     const-string v1, "AfterAttributeName"
@@ -565,7 +567,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AfterAttributeName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 732
+    .line 696
     new-instance v0, Lorg/jsoup/parser/TokeniserState$37;
 
     const-string v1, "BeforeAttributeValue"
@@ -576,7 +578,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BeforeAttributeValue:Lorg/jsoup/parser/TokeniserState;
 
-    .line 781
+    .line 745
     new-instance v0, Lorg/jsoup/parser/TokeniserState$38;
 
     const-string v1, "AttributeValue_doubleQuoted"
@@ -587,7 +589,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AttributeValue_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 813
+    .line 778
     new-instance v0, Lorg/jsoup/parser/TokeniserState$39;
 
     const-string v1, "AttributeValue_singleQuoted"
@@ -598,7 +600,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AttributeValue_singleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 845
+    .line 811
     new-instance v0, Lorg/jsoup/parser/TokeniserState$40;
 
     const-string v1, "AttributeValue_unquoted"
@@ -609,7 +611,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AttributeValue_unquoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 893
+    .line 860
     new-instance v0, Lorg/jsoup/parser/TokeniserState$41;
 
     const-string v1, "AfterAttributeValue_quoted"
@@ -620,7 +622,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AfterAttributeValue_quoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 923
+    .line 890
     new-instance v0, Lorg/jsoup/parser/TokeniserState$42;
 
     const-string v1, "SelfClosingStartTag"
@@ -631,7 +633,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->SelfClosingStartTag:Lorg/jsoup/parser/TokeniserState;
 
-    .line 942
+    .line 910
     new-instance v0, Lorg/jsoup/parser/TokeniserState$43;
 
     const-string v1, "BogusComment"
@@ -642,7 +644,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BogusComment:Lorg/jsoup/parser/TokeniserState;
 
-    .line 955
+    .line 924
     new-instance v0, Lorg/jsoup/parser/TokeniserState$44;
 
     const-string v1, "MarkupDeclarationOpen"
@@ -653,7 +655,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->MarkupDeclarationOpen:Lorg/jsoup/parser/TokeniserState;
 
-    .line 973
+    .line 944
     new-instance v0, Lorg/jsoup/parser/TokeniserState$45;
 
     const-string v1, "CommentStart"
@@ -664,7 +666,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CommentStart:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1001
+    .line 972
     new-instance v0, Lorg/jsoup/parser/TokeniserState$46;
 
     const-string v1, "CommentStartDash"
@@ -675,7 +677,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CommentStartDash:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1029
+    .line 1000
     new-instance v0, Lorg/jsoup/parser/TokeniserState$47;
 
     const-string v1, "Comment"
@@ -686,7 +688,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->Comment:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1051
+    .line 1022
     new-instance v0, Lorg/jsoup/parser/TokeniserState$48;
 
     const-string v1, "CommentEndDash"
@@ -697,7 +699,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CommentEndDash:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1074
+    .line 1045
     new-instance v0, Lorg/jsoup/parser/TokeniserState$49;
 
     const-string v1, "CommentEnd"
@@ -708,7 +710,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CommentEnd:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1107
+    .line 1078
     new-instance v0, Lorg/jsoup/parser/TokeniserState$50;
 
     const-string v1, "CommentEndBang"
@@ -719,7 +721,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CommentEndBang:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1135
+    .line 1106
     new-instance v0, Lorg/jsoup/parser/TokeniserState$51;
 
     const-string v1, "Doctype"
@@ -730,7 +732,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->Doctype:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1162
+    .line 1133
     new-instance v0, Lorg/jsoup/parser/TokeniserState$52;
 
     const-string v1, "BeforeDoctypeName"
@@ -741,7 +743,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypeName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1197
+    .line 1168
     new-instance v0, Lorg/jsoup/parser/TokeniserState$53;
 
     const-string v1, "DoctypeName"
@@ -752,7 +754,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->DoctypeName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1232
+    .line 1203
     new-instance v0, Lorg/jsoup/parser/TokeniserState$54;
 
     const-string v1, "AfterDoctypeName"
@@ -763,7 +765,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeName:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1258
+    .line 1231
     new-instance v0, Lorg/jsoup/parser/TokeniserState$55;
 
     const-string v1, "AfterDoctypePublicKeyword"
@@ -774,7 +776,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AfterDoctypePublicKeyword:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1298
+    .line 1271
     new-instance v0, Lorg/jsoup/parser/TokeniserState$56;
 
     const-string v1, "BeforeDoctypePublicIdentifier"
@@ -785,7 +787,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypePublicIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1335
+    .line 1308
     new-instance v0, Lorg/jsoup/parser/TokeniserState$57;
 
     const-string v1, "DoctypePublicIdentifier_doubleQuoted"
@@ -796,7 +798,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->DoctypePublicIdentifier_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1363
+    .line 1336
     new-instance v0, Lorg/jsoup/parser/TokeniserState$58;
 
     const-string v1, "DoctypePublicIdentifier_singleQuoted"
@@ -807,7 +809,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->DoctypePublicIdentifier_singleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1391
+    .line 1364
     new-instance v0, Lorg/jsoup/parser/TokeniserState$59;
 
     const-string v1, "AfterDoctypePublicIdentifier"
@@ -818,7 +820,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AfterDoctypePublicIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1429
+    .line 1402
     new-instance v0, Lorg/jsoup/parser/TokeniserState$60;
 
     const-string v1, "BetweenDoctypePublicAndSystemIdentifiers"
@@ -829,7 +831,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BetweenDoctypePublicAndSystemIdentifiers:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1466
+    .line 1439
     new-instance v0, Lorg/jsoup/parser/TokeniserState$61;
 
     const-string v1, "AfterDoctypeSystemKeyword"
@@ -840,7 +842,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeSystemKeyword:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1506
+    .line 1479
     new-instance v0, Lorg/jsoup/parser/TokeniserState$62;
 
     const-string v1, "BeforeDoctypeSystemIdentifier"
@@ -851,7 +853,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypeSystemIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1543
+    .line 1516
     new-instance v0, Lorg/jsoup/parser/TokeniserState$63;
 
     const-string v1, "DoctypeSystemIdentifier_doubleQuoted"
@@ -862,7 +864,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->DoctypeSystemIdentifier_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1571
+    .line 1544
     new-instance v0, Lorg/jsoup/parser/TokeniserState$64;
 
     const-string v1, "DoctypeSystemIdentifier_singleQuoted"
@@ -873,7 +875,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->DoctypeSystemIdentifier_singleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1599
+    .line 1572
     new-instance v0, Lorg/jsoup/parser/TokeniserState$65;
 
     const-string v1, "AfterDoctypeSystemIdentifier"
@@ -884,7 +886,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeSystemIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1626
+    .line 1599
     new-instance v0, Lorg/jsoup/parser/TokeniserState$66;
 
     const-string v1, "BogusDoctype"
@@ -895,7 +897,7 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->BogusDoctype:Lorg/jsoup/parser/TokeniserState;
 
-    .line 1644
+    .line 1617
     new-instance v0, Lorg/jsoup/parser/TokeniserState$67;
 
     const-string v1, "CdataSection"
@@ -906,431 +908,427 @@
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->CdataSection:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v1, 0x43
+    const/16 v0, 0x43
 
-    new-array v1, v1, [Lorg/jsoup/parser/TokeniserState;
+    new-array v0, v0, [Lorg/jsoup/parser/TokeniserState;
 
     .line 8
-    sget-object v15, Lorg/jsoup/parser/TokeniserState;->Data:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->Data:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v15, v1, v2
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->CharacterReferenceInData:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CharacterReferenceInData:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v3
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->Rcdata:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->Rcdata:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v4
+    aput-object v1, v0, v4
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->CharacterReferenceInRcdata:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CharacterReferenceInRcdata:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v5
+    aput-object v1, v0, v5
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->Rawtext:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->Rawtext:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v6
+    aput-object v1, v0, v6
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptData:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptData:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v7
+    aput-object v1, v0, v7
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->PLAINTEXT:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->PLAINTEXT:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v8
+    aput-object v1, v0, v8
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->TagOpen:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->TagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v9
+    aput-object v1, v0, v9
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->EndTagOpen:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->EndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v10
+    aput-object v1, v0, v10
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->TagName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->TagName:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v11
+    aput-object v1, v0, v11
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->RcdataLessthanSign:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->RcdataLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v12
+    aput-object v1, v0, v12
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->RCDATAEndTagOpen:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->RCDATAEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v13
+    aput-object v1, v0, v13
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->RCDATAEndTagName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->RCDATAEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    aput-object v2, v1, v14
+    aput-object v1, v0, v14
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->RawtextLessthanSign:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->RawtextLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0xd
+    const/16 v2, 0xd
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->RawtextEndTagOpen:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->RawtextEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0xe
+    const/16 v2, 0xe
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->RawtextEndTagName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->RawtextEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0xf
+    const/16 v2, 0xf
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataLessthanSign:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x10
+    const/16 v2, 0x10
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEndTagOpen:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x11
+    const/16 v2, 0x11
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEndTagName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x12
+    const/16 v2, 0x12
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapeStart:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapeStart:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x13
+    const/16 v2, 0x13
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapeStartDash:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapeStartDash:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x14
+    const/16 v2, 0x14
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscaped:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscaped:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x15
+    const/16 v2, 0x15
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedDash:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedDash:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x16
+    const/16 v2, 0x16
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedDashDash:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedDashDash:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x17
+    const/16 v2, 0x17
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedLessthanSign:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x18
+    const/16 v2, 0x18
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedEndTagOpen:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x19
+    const/16 v2, 0x19
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedEndTagName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataEscapedEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x1a
+    const/16 v2, 0x1a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapeStart:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapeStart:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x1b
+    const/16 v2, 0x1b
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscaped:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscaped:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x1c
+    const/16 v2, 0x1c
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedDash:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedDash:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x1d
+    const/16 v2, 0x1d
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedDashDash:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedDashDash:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x1e
+    const/16 v2, 0x1e
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedLessthanSign:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapedLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x1f
+    const/16 v2, 0x1f
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapeEnd:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->ScriptDataDoubleEscapeEnd:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x20
+    const/16 v2, 0x20
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BeforeAttributeName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BeforeAttributeName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x21
+    const/16 v2, 0x21
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AttributeName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AttributeName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x22
+    const/16 v2, 0x22
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AfterAttributeName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AfterAttributeName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x23
+    const/16 v2, 0x23
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BeforeAttributeValue:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BeforeAttributeValue:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x24
+    const/16 v2, 0x24
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AttributeValue_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AttributeValue_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x25
+    const/16 v2, 0x25
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AttributeValue_singleQuoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AttributeValue_singleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x26
+    const/16 v2, 0x26
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AttributeValue_unquoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AttributeValue_unquoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x27
+    const/16 v2, 0x27
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AfterAttributeValue_quoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AfterAttributeValue_quoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x28
+    const/16 v2, 0x28
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->SelfClosingStartTag:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->SelfClosingStartTag:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x29
+    const/16 v2, 0x29
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BogusComment:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BogusComment:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x2a
+    const/16 v2, 0x2a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->MarkupDeclarationOpen:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->MarkupDeclarationOpen:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x2b
+    const/16 v2, 0x2b
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->CommentStart:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CommentStart:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x2c
+    const/16 v2, 0x2c
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->CommentStartDash:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CommentStartDash:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x2d
+    const/16 v2, 0x2d
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->Comment:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->Comment:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x2e
+    const/16 v2, 0x2e
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->CommentEndDash:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CommentEndDash:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x2f
+    const/16 v2, 0x2f
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->CommentEnd:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CommentEnd:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x30
+    const/16 v2, 0x30
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->CommentEndBang:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CommentEndBang:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x31
+    const/16 v2, 0x31
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->Doctype:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->Doctype:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x32
+    const/16 v2, 0x32
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypeName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypeName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x33
+    const/16 v2, 0x33
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->DoctypeName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->DoctypeName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x34
+    const/16 v2, 0x34
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeName:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeName:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x35
+    const/16 v2, 0x35
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AfterDoctypePublicKeyword:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AfterDoctypePublicKeyword:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x36
+    const/16 v2, 0x36
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypePublicIdentifier:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypePublicIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x37
+    const/16 v2, 0x37
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->DoctypePublicIdentifier_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->DoctypePublicIdentifier_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x38
+    const/16 v2, 0x38
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->DoctypePublicIdentifier_singleQuoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->DoctypePublicIdentifier_singleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x39
+    const/16 v2, 0x39
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AfterDoctypePublicIdentifier:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AfterDoctypePublicIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x3a
+    const/16 v2, 0x3a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BetweenDoctypePublicAndSystemIdentifiers:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BetweenDoctypePublicAndSystemIdentifiers:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x3b
+    const/16 v2, 0x3b
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeSystemKeyword:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeSystemKeyword:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x3c
+    const/16 v2, 0x3c
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypeSystemIdentifier:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BeforeDoctypeSystemIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x3d
+    const/16 v2, 0x3d
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->DoctypeSystemIdentifier_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->DoctypeSystemIdentifier_doubleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x3e
+    const/16 v2, 0x3e
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->DoctypeSystemIdentifier_singleQuoted:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->DoctypeSystemIdentifier_singleQuoted:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x3f
+    const/16 v2, 0x3f
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeSystemIdentifier:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->AfterDoctypeSystemIdentifier:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x40
+    const/16 v2, 0x40
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lorg/jsoup/parser/TokeniserState;->BogusDoctype:Lorg/jsoup/parser/TokeniserState;
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->BogusDoctype:Lorg/jsoup/parser/TokeniserState;
 
-    const/16 v3, 0x41
+    const/16 v2, 0x41
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
+
+    sget-object v1, Lorg/jsoup/parser/TokeniserState;->CdataSection:Lorg/jsoup/parser/TokeniserState;
 
     const/16 v2, 0x42
 
-    aput-object v0, v1, v2
+    aput-object v1, v0, v2
 
-    sput-object v1, Lorg/jsoup/parser/TokeniserState;->$VALUES:[Lorg/jsoup/parser/TokeniserState;
+    sput-object v0, Lorg/jsoup/parser/TokeniserState;->$VALUES:[Lorg/jsoup/parser/TokeniserState;
 
     new-array v0, v5, [C
 
-    .line 1657
+    .line 1633
     fill-array-data v0, :array_0
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->attributeSingleValueCharsSorted:[C
 
     new-array v0, v5, [C
 
-    .line 1658
+    .line 1634
     fill-array-data v0, :array_1
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->attributeDoubleValueCharsSorted:[C
 
     new-array v0, v14, [C
 
-    .line 1659
+    .line 1635
     fill-array-data v0, :array_2
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->attributeNameCharsSorted:[C
 
+    const/16 v0, 0xd
+
+    new-array v0, v0, [C
+
+    .line 1636
+    fill-array-data v0, :array_3
+
+    sput-object v0, Lorg/jsoup/parser/TokeniserState;->attributeValueUnquoted:[C
+
     const v0, 0xfffd
 
-    .line 1662
+    .line 1639
     invoke-static {v0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lorg/jsoup/parser/TokeniserState;->replacementStr:Ljava/lang/String;
-
-    .line 1666
-    sget-object v0, Lorg/jsoup/parser/TokeniserState;->attributeSingleValueCharsSorted:[C
-
-    invoke-static {v0}, Ljava/util/Arrays;->sort([C)V
-
-    .line 1667
-    sget-object v0, Lorg/jsoup/parser/TokeniserState;->attributeDoubleValueCharsSorted:[C
-
-    invoke-static {v0}, Ljava/util/Arrays;->sort([C)V
-
-    .line 1668
-    sget-object v0, Lorg/jsoup/parser/TokeniserState;->attributeNameCharsSorted:[C
-
-    invoke-static {v0}, Ljava/util/Arrays;->sort([C)V
 
     return-void
 
@@ -1338,36 +1336,53 @@
 
     :array_0
     .array-data 2
-        0x27s
-        0x26s
         0x0s
+        0x26s
+        0x27s
     .end array-data
 
     nop
 
     :array_1
     .array-data 2
+        0x0s
         0x22s
         0x26s
-        0x0s
     .end array-data
 
     nop
 
     :array_2
     .array-data 2
+        0x0s
         0x9s
         0xas
-        0xds
         0xcs
+        0xds
         0x20s
-        0x2fs
-        0x3ds
-        0x3es
-        0x0s
         0x22s
         0x27s
+        0x2fs
         0x3cs
+        0x3ds
+        0x3es
+    .end array-data
+
+    :array_3
+    .array-data 2
+        0x0s
+        0x9s
+        0xas
+        0xcs
+        0xds
+        0x20s
+        0x22s
+        0x26s
+        0x27s
+        0x3cs
+        0x3ds
+        0x3es
+        0x60s
     .end array-data
 .end method
 
@@ -1394,7 +1409,25 @@
     return-void
 .end method
 
-.method static synthetic access$100()Ljava/lang/String;
+.method static synthetic access$100(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/TokeniserState;)V
+    .locals 0
+
+    .line 8
+    invoke-static {p0, p1}, Lorg/jsoup/parser/TokeniserState;->readCharRef(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/TokeniserState;)V
+
+    return-void
+.end method
+
+.method static synthetic access$200(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
+    .locals 0
+
+    .line 8
+    invoke-static {p0, p1, p2, p3}, Lorg/jsoup/parser/TokeniserState;->readRawData(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
+
+    return-void
+.end method
+
+.method static synthetic access$300()Ljava/lang/String;
     .locals 1
 
     .line 8
@@ -1403,7 +1436,16 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;)V
+.method static synthetic access$400(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
+    .locals 0
+
+    .line 8
+    invoke-static {p0, p1, p2, p3}, Lorg/jsoup/parser/TokeniserState;->readEndTag(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
+
+    return-void
+.end method
+
+.method static synthetic access$500(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;)V
     .locals 0
 
     .line 8
@@ -1412,7 +1454,7 @@
     return-void
 .end method
 
-.method static synthetic access$300(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
+.method static synthetic access$600(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
     .locals 0
 
     .line 8
@@ -1421,63 +1463,32 @@
     return-void
 .end method
 
-.method static synthetic access$400()[C
-    .locals 1
-
-    .line 8
-    sget-object v0, Lorg/jsoup/parser/TokeniserState;->attributeNameCharsSorted:[C
-
-    return-object v0
-.end method
-
-.method static synthetic access$500()[C
-    .locals 1
-
-    .line 8
-    sget-object v0, Lorg/jsoup/parser/TokeniserState;->attributeDoubleValueCharsSorted:[C
-
-    return-object v0
-.end method
-
-.method static synthetic access$600()[C
-    .locals 1
-
-    .line 8
-    sget-object v0, Lorg/jsoup/parser/TokeniserState;->attributeSingleValueCharsSorted:[C
-
-    return-object v0
-.end method
-
 .method private static handleDataDoubleEscapeTag(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
     .locals 2
 
-    .line 1716
+    .line 1726
     invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->matchesLetter()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1717
+    .line 1727
     invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->consumeLetterSequence()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1718
+    .line 1728
     iget-object p2, p0, Lorg/jsoup/parser/Tokeniser;->dataBuffer:Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p3
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 1719
+    .line 1729
     invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
 
     return-void
 
-    .line 1723
+    .line 1733
     :cond_0
     invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->consume()C
 
@@ -1511,15 +1522,15 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 1739
+    .line 1749
     invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->unconsume()V
 
-    .line 1740
+    .line 1750
     invoke-virtual {p0, p3}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_1
 
-    .line 1732
+    .line 1742
     :cond_1
     iget-object p1, p0, Lorg/jsoup/parser/Tokeniser;->dataBuffer:Ljava/lang/StringBuilder;
 
@@ -1527,7 +1538,7 @@
 
     move-result-object p1
 
-    const-string v1, "script"
+    const-string/jumbo v1, "script"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1535,16 +1546,16 @@
 
     if-eqz p1, :cond_2
 
-    .line 1733
+    .line 1743
     invoke-virtual {p0, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_0
 
-    .line 1735
+    .line 1745
     :cond_2
     invoke-virtual {p0, p3}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 1736
+    .line 1746
     :goto_0
     invoke-virtual {p0, v0}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
@@ -1555,28 +1566,24 @@
 .method private static handleDataEndTag(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;)V
     .locals 3
 
-    .line 1676
+    .line 1647
     invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->matchesLetter()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1677
+    .line 1648
     invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->consumeLetterSequence()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1678
+    .line 1649
     iget-object p2, p0, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
 
-    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    invoke-virtual {p2, p1}, Lorg/jsoup/parser/Token$Tag;->appendTagName(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Lorg/jsoup/parser/Token$Tag;->appendTagName(Ljava/lang/String;)V
-
-    .line 1679
+    .line 1650
     iget-object p0, p0, Lorg/jsoup/parser/Tokeniser;->dataBuffer:Ljava/lang/StringBuilder;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1586,7 +1593,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 1684
+    .line 1655
     invoke-virtual {p0}, Lorg/jsoup/parser/Tokeniser;->isAppropriateEndTagToken()Z
 
     move-result v1
@@ -1601,7 +1608,7 @@
 
     if-nez v1, :cond_4
 
-    .line 1685
+    .line 1656
     invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->consume()C
 
     move-result p1
@@ -1634,7 +1641,7 @@
 
     if-eq p1, v1, :cond_1
 
-    .line 1702
+    .line 1673
     iget-object v0, p0, Lorg/jsoup/parser/Tokeniser;->dataBuffer:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -1643,18 +1650,18 @@
 
     goto :goto_0
 
-    .line 1698
+    .line 1669
     :cond_1
     invoke-virtual {p0}, Lorg/jsoup/parser/Tokeniser;->emitTagPending()V
 
-    .line 1699
+    .line 1670
     sget-object p1, Lorg/jsoup/parser/TokeniserState;->Data:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_0
 
-    .line 1695
+    .line 1666
     :cond_2
     sget-object p1, Lorg/jsoup/parser/TokeniserState;->SelfClosingStartTag:Lorg/jsoup/parser/TokeniserState;
 
@@ -1662,7 +1669,7 @@
 
     goto :goto_0
 
-    .line 1692
+    .line 1663
     :cond_3
     sget-object p1, Lorg/jsoup/parser/TokeniserState;->BeforeAttributeName:Lorg/jsoup/parser/TokeniserState;
 
@@ -1674,7 +1681,7 @@
     :cond_4
     if-eqz v2, :cond_5
 
-    .line 1710
+    .line 1681
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1682,6 +1689,8 @@
     const-string v0, "</"
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     iget-object v0, p0, Lorg/jsoup/parser/Tokeniser;->dataBuffer:Ljava/lang/StringBuilder;
 
@@ -1691,16 +1700,143 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
 
-    .line 1711
+    .line 1682
     invoke-virtual {p0, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     :cond_5
+    return-void
+.end method
+
+.method private static readCharRef(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/TokeniserState;)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 1707
+    invoke-virtual {p0, v0, v1}, Lorg/jsoup/parser/Tokeniser;->consumeCharacterReference(Ljava/lang/Character;Z)[I
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/16 v0, 0x26
+
+    .line 1709
+    invoke-virtual {p0, v0}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
+
+    goto :goto_0
+
+    .line 1711
+    :cond_0
+    invoke-virtual {p0, v0}, Lorg/jsoup/parser/Tokeniser;->emit([I)V
+
+    .line 1712
+    :goto_0
+    invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
+
+    return-void
+.end method
+
+.method private static readEndTag(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
+    .locals 0
+
+    .line 1716
+    invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->matchesLetter()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 1717
+    invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->createTagPending(Z)Lorg/jsoup/parser/Token$Tag;
+
+    .line 1718
+    invoke-virtual {p0, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "</"
+
+    .line 1720
+    invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
+
+    .line 1721
+    invoke-virtual {p0, p3}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method private static readRawData(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
+    .locals 1
+
+    .line 1687
+    invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->current()C
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/16 p2, 0x3c
+
+    if-eq v0, p2, :cond_1
+
+    const p2, 0xffff
+
+    if-eq v0, p2, :cond_0
+
+    .line 1700
+    invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->consumeRawData()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 1701
+    invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 1697
+    :cond_0
+    new-instance p1, Lorg/jsoup/parser/Token$EOF;
+
+    invoke-direct {p1}, Lorg/jsoup/parser/Token$EOF;-><init>()V
+
+    invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->emit(Lorg/jsoup/parser/Token;)V
+
+    goto :goto_0
+
+    .line 1689
+    :cond_1
+    invoke-virtual {p0, p3}, Lorg/jsoup/parser/Tokeniser;->advanceTransition(Lorg/jsoup/parser/TokeniserState;)V
+
+    goto :goto_0
+
+    .line 1692
+    :cond_2
+    invoke-virtual {p0, p2}, Lorg/jsoup/parser/Tokeniser;->error(Lorg/jsoup/parser/TokeniserState;)V
+
+    .line 1693
+    invoke-virtual {p1}, Lorg/jsoup/parser/CharacterReader;->advance()V
+
+    const p1, 0xfffd
+
+    .line 1694
+    invoke-virtual {p0, p1}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
+
+    :goto_0
     return-void
 .end method
 

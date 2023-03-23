@@ -42,10 +42,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 7531
+    .line 6976
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7554
+    .line 7000
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
@@ -54,7 +54,7 @@
 
     const/4 v0, 0x0
 
-    .line 7556
+    .line 7002
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mAttachCount:I
 
     return-void
@@ -63,7 +63,7 @@
 .method private getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
     .locals 2
 
-    .line 7725
+    .line 7171
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -74,12 +74,12 @@
 
     if-nez v0, :cond_0
 
-    .line 7727
+    .line 7173
     new-instance v0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     invoke-direct {v0}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;-><init>()V
 
-    .line 7728
+    .line 7174
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
@@ -93,7 +93,7 @@
 .method attach()V
     .locals 1
 
-    .line 7692
+    .line 7138
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mAttachCount:I
 
     add-int/lit8 v0, v0, 0x1
@@ -108,7 +108,7 @@
 
     const/4 v0, 0x0
 
-    .line 7562
+    .line 7008
     :goto_0
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
@@ -118,7 +118,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 7563
+    .line 7009
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
     invoke-virtual {v1, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -129,7 +129,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 7566
+    .line 7011
     iget-object v1, v1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mScrapHeap:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
@@ -141,7 +141,7 @@
 
     const-string v2, "clear() wasn\'t executed because RecycledViewPool.mScrap was invalid"
 
-    .line 7568
+    .line 7014
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_1
@@ -156,7 +156,7 @@
 .method detach()V
     .locals 1
 
-    .line 7696
+    .line 7142
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mAttachCount:I
 
     add-int/lit8 v0, v0, -0x1
@@ -169,12 +169,12 @@
 .method factorInBindTime(IJ)V
     .locals 2
 
-    .line 7676
+    .line 7122
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     move-result-object p1
 
-    .line 7677
+    .line 7123
     iget-wide v0, p1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mBindRunningAverageNs:J
 
     invoke-virtual {p0, v0, v1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->runningAverage(JJ)J
@@ -189,12 +189,12 @@
 .method factorInCreateTime(IJ)V
     .locals 2
 
-    .line 7670
+    .line 7116
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     move-result-object p1
 
-    .line 7671
+    .line 7117
     iget-wide v0, p1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mCreateRunningAverageNs:J
 
     invoke-virtual {p0, v0, v1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->runningAverage(JJ)J
@@ -209,7 +209,7 @@
 .method public getRecycledView(I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 4
 
-    .line 7606
+    .line 7052
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -220,7 +220,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 7607
+    .line 7053
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mScrapHeap:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -229,10 +229,10 @@
 
     if-nez v0, :cond_2
 
-    .line 7608
+    .line 7054
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mScrapHeap:Ljava/util/ArrayList;
 
-    .line 7609
+    .line 7055
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
@@ -242,14 +242,14 @@
     :goto_0
     if-ltz v1, :cond_2
 
-    .line 7611
+    .line 7056
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    .line 7612
+    .line 7057
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -262,7 +262,7 @@
 
     if-nez v2, :cond_1
 
-    .line 7613
+    .line 7058
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -271,7 +271,7 @@
 
     return-object p1
 
-    .line 7616
+    .line 7062
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -281,43 +281,63 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     const-string v3, " size="
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7617
+    move-result-object v2
+
+    .line 7063
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " max= "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     iget v3, p1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mMaxScrap:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " holder= "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7618
+    move-result-object v2
+
+    .line 7064
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->size()I
 
     move-result v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, " scrapHeap= "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -325,7 +345,7 @@
 
     const-string v3, "SeslRecyclerView"
 
-    .line 7616
+    .line 7062
     invoke-static {v3, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
@@ -342,7 +362,7 @@
 .method public getRecycledViewCount(I)I
     .locals 0
 
-    .line 7593
+    .line 7039
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     move-result-object p1
@@ -361,24 +381,24 @@
 
     if-eqz p1, :cond_0
 
-    .line 7714
+    .line 7160
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->detach()V
 
     :cond_0
     if-nez p3, :cond_1
 
-    .line 7716
+    .line 7162
     iget p1, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mAttachCount:I
 
     if-nez p1, :cond_1
 
-    .line 7717
+    .line 7163
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->clear()V
 
     :cond_1
     if-eqz p2, :cond_2
 
-    .line 7720
+    .line 7166
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->attach()V
 
     :cond_2
@@ -388,19 +408,19 @@
 .method public putRecycledView(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 3
 
-    .line 7650
+    .line 7096
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->getItemViewType()I
 
     move-result v0
 
-    .line 7651
+    .line 7097
     invoke-direct {p0, v0}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     move-result-object v1
 
     iget-object v1, v1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mScrapHeap:Ljava/util/ArrayList;
 
-    .line 7652
+    .line 7098
     iget-object v2, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -419,11 +439,11 @@
 
     return-void
 
-    .line 7658
+    .line 7104
     :cond_0
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->resetInternal()V
 
-    .line 7659
+    .line 7105
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
@@ -443,7 +463,7 @@
     :cond_0
     const-wide/16 v0, 0x4
 
-    .line 7666
+    .line 7112
     div-long/2addr p1, v0
 
     const-wide/16 v2, 0x3
@@ -460,18 +480,18 @@
 .method public setMaxRecycledViews(II)V
     .locals 1
 
-    .line 7581
+    .line 7027
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     move-result-object p1
 
-    .line 7582
+    .line 7028
     iput p2, p1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mMaxScrap:I
 
-    .line 7583
+    .line 7029
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;->mScrapHeap:Ljava/util/ArrayList;
 
-    .line 7584
+    .line 7030
     :goto_0
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -479,7 +499,7 @@
 
     if-le v0, p2, :cond_0
 
-    .line 7585
+    .line 7031
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -501,7 +521,7 @@
 
     move v1, v0
 
-    .line 7633
+    .line 7079
     :goto_0
     iget-object v2, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
@@ -511,7 +531,7 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 7634
+    .line 7080
     iget-object v2, p0, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->mScrap:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -524,7 +544,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 7636
+    .line 7082
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -543,7 +563,7 @@
 .method willBindInTime(IJJ)Z
     .locals 4
 
-    .line 7687
+    .line 7133
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     move-result-object p1
@@ -580,7 +600,7 @@
 .method willCreateInTime(IJJ)Z
     .locals 4
 
-    .line 7682
+    .line 7128
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;->getScrapDataForType(I)Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool$ScrapData;
 
     move-result-object p1

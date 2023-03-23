@@ -1,4 +1,4 @@
-.class final Lokhttp3/CookieJar$1;
+.class Lokhttp3/CookieJar$1;
 .super Ljava/lang/Object;
 .source "CookieJar.java"
 

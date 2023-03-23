@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 309
+    .line 313
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 1
 
-    .line 312
+    .line 316
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;->access$000(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;)V

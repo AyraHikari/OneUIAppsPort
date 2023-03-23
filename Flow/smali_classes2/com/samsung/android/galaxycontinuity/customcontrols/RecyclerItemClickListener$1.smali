@@ -23,6 +23,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/customcontrols/RecyclerItemClickListener;Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$recyclerView"
+        }
+    .end annotation
 
     .line 22
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/RecyclerItemClickListener$1;->this$0:Lcom/samsung/android/galaxycontinuity/customcontrols/RecyclerItemClickListener;
@@ -38,6 +48,14 @@
 # virtual methods
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     .line 30
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/RecyclerItemClickListener$1;->val$recyclerView:Landroidx/recyclerview/widget/RecyclerView;
@@ -86,6 +104,14 @@
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 

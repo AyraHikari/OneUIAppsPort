@@ -1,55 +1,22 @@
-.class public final synthetic Lcom/google/android/gms/internal/icing/zzbf;
+.class final synthetic Lcom/google/android/gms/internal/icing/zzbf;
 .super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/icing/zzbm;
+
+
+# instance fields
+.field private final zza:Landroid/content/Context;
 
 
 # direct methods
-.method public static zza(Lcom/google/android/gms/internal/icing/zzbi;)Ljava/lang/Object;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<V:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lcom/google/android/gms/internal/icing/zzbi<",
-            "TV;>;)TV;"
-        }
-    .end annotation
+.method constructor <init>(Landroid/content/Context;)V
+    .locals 0
 
-    .line 1
-    :try_start_0
-    invoke-interface {p0}, Lcom/google/android/gms/internal/icing/zzbi;->zzl()Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzbf;->zza:Landroid/content/Context;
 
-    goto :goto_0
-
-    .line 4
-    :catch_0
-    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
-
-    move-result-wide v0
-
-    .line 5
-    :try_start_1
-    invoke-interface {p0}, Lcom/google/android/gms/internal/icing/zzbi;->zzl()Ljava/lang/Object;
-
-    move-result-object p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 6
-    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
-
-    :goto_0
-    return-object p0
-
-    :catchall_0
-    move-exception p0
-
-    .line 8
-    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
-
-    throw p0
+    return-void
 .end method

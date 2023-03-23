@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x1
     name = "SegmentList"
 .end annotation
 
@@ -39,29 +39,29 @@
 
 .field private size:I
 
-.field final synthetic this$0:Lorg/simpleframework/xml/util/WeakCache;
+.field public final synthetic this$0:Lorg/simpleframework/xml/util/WeakCache;
 
 
 # direct methods
 .method public constructor <init>(Lorg/simpleframework/xml/util/WeakCache;I)V
     .locals 0
 
-    .line 167
+    .line 1
     iput-object p1, p0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->this$0:Lorg/simpleframework/xml/util/WeakCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 168
+    .line 2
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->list:Ljava/util/List;
 
-    .line 169
+    .line 3
     iput p2, p0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->size:I
 
-    .line 170
+    .line 4
     invoke-direct {p0, p2}, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->create(I)V
 
     return-void
@@ -75,7 +75,6 @@
 
     if-lez p1, :cond_0
 
-    .line 207
     iget-object p1, p0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->list:Ljava/util/List;
 
     new-instance v1, Lorg/simpleframework/xml/util/WeakCache$Segment;
@@ -99,7 +98,6 @@
 .method private segment(Ljava/lang/Object;)I
     .locals 1
 
-    .line 221
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result p1
@@ -129,17 +127,17 @@
         }
     .end annotation
 
-    .line 188
+    .line 1
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->segment(Ljava/lang/Object;)I
 
     move-result p1
 
-    .line 190
+    .line 2
     iget v0, p0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->size:I
 
     if-ge p1, v0, :cond_0
 
-    .line 191
+    .line 3
     iget-object v0, p0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->list:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -167,7 +165,6 @@
         }
     .end annotation
 
-    .line 174
     iget-object v0, p0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->list:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;

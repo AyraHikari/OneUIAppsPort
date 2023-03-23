@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="activity_transition_type_names">
+        <item>ENTER</item>
+        <item>EXIT</item>
+    </string-array>
+    <string-array name="activity_transition_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="amx_csc_list">
+        <item>CDR</item>
+        <item>CHL</item>
+        <item>CHH</item>
+        <item>COM</item>
+        <item>CPA</item>
+        <item>ZTA</item>
+        <item>CRC</item>
+        <item>CTI</item>
+        <item>CTP</item>
+        <item>CTU</item>
+        <item>ECO</item>
+        <item>TCE</item>
+        <item>HME</item>
+        <item>PCT</item>
+        <item>PET</item>
+        <item>PER</item>
+        <item>PGU</item>
+        <item>NEN</item>
+    </string-array>
     <string-array name="android_value">
         <item>22</item>
         <item>23</item>
@@ -20,6 +48,24 @@
         <item>P</item>
         <item>Q</item>
     </string-array>
+    <string-array name="app_update_result_names">
+        <item>NONE</item>
+        <item>NOT SUPPORT</item>
+        <item>UPDATE UNAVAILABLE</item>
+        <item>UPDATE AVAILABLE</item>
+        <item>FORCED UPDATE</item>
+        <item>SERVER ERROR</item>
+        <item>NETWORK ERROR</item>
+    </string-array>
+    <string-array name="app_update_result_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
     <string-array name="auto_refresh_period_entries">
         <item>@string/refresh_time_none</item>
         <item>@string/refresh_time_hour</item>
@@ -35,10 +81,6 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
-    </string-array>
-    <string-array name="forced_restricted_csc_list">
-        <item>XXV</item>
-        <item>XEV</item>
     </string-array>
     <string-array name="forecast_provider_values">
         <item></item>
@@ -99,6 +141,28 @@
         <item>0</item>
         <item>1</item>
     </string-array>
+    <string-array name="most_probable_activity_names">
+        <item>NONE</item>
+        <item>WAKEUP</item>
+        <item>TO HOME</item>
+        <item>TO WORK</item>
+        <item>STILL</item>
+        <item>WALKING</item>
+        <item>RUNNING</item>
+        <item>ON BICYCLE</item>
+        <item>IN VEHICLE</item>
+    </string-array>
+    <string-array name="most_probable_activity_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
     <string-array name="remote_config">
         <item>None</item>
         <item>Dev</item>
@@ -111,26 +175,6 @@
     </string-array>
     <string-array name="resolutionInfo">
         <item>2016 PHONE PORT</item>
-    </string-array>
-    <string-array name="restricted_csc_list">
-        <item>CDR</item>
-        <item>CHL</item>
-        <item>CHH</item>
-        <item>COM</item>
-        <item>CPA</item>
-        <item>ZTA</item>
-        <item>CRC</item>
-        <item>CTI</item>
-        <item>CTP</item>
-        <item>CTU</item>
-        <item>ECO</item>
-        <item>TCE</item>
-        <item>HME</item>
-        <item>PCT</item>
-        <item>PET</item>
-        <item>PER</item>
-        <item>PGU</item>
-        <item>NEN</item>
     </string-array>
     <string-array name="sep_value">
         <item>2402</item>
@@ -220,6 +264,10 @@
     <string-array name="temp_unit_entry_values">
         <item>0</item>
         <item>1</item>
+    </string-array>
+    <string-array name="vietnam_csc_list">
+        <item>XXV</item>
+        <item>XEV</item>
     </string-array>
     <array name="wcn_recommend">
         <item>@array/wcn_recommend_01</item>
@@ -384,6 +432,14 @@
         <item>21</item>
         <item>22</item>
         <item>23</item>
+    </string-array>
+    <string-array name="weather_store_server_type_names">
+        <item>Production</item>
+        <item>Stage</item>
+    </string-array>
+    <string-array name="weather_store_server_type_values">
+        <item>0</item>
+        <item>1</item>
     </string-array>
     <array name="wjp_recommend">
         <item>@array/wjp_recommend_01</item>

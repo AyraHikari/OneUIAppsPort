@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/common/GooglePlayServicesUtil;
 .super Lcom/google/android/gms/common/GooglePlayServicesUtilLight;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # static fields
@@ -22,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 45
     sget v0, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
 
     sput v0, Lcom/google/android/gms/common/GooglePlayServicesUtil;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
@@ -46,7 +46,7 @@
 
     const/4 v0, 0x0
 
-    .line 3
+    .line 1
     invoke-static {p0, p1, p2, v0}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->getErrorDialog(ILandroid/app/Activity;ILandroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
 
     move-result-object p0
@@ -55,26 +55,28 @@
 .end method
 
 .method public static getErrorDialog(ILandroid/app/Activity;ILandroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
-    .locals 1
+    .locals 2
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 5
+    .line 2
     invoke-static {p1, p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->isPlayServicesPossiblyUpdating(Landroid/content/Context;I)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    const/4 v1, 0x1
+
+    if-ne v1, v0, :cond_0
 
     const/16 p0, 0x12
 
-    .line 8
+    .line 3
     :cond_0
     invoke-static {}, Lcom/google/android/gms/common/GoogleApiAvailability;->getInstance()Lcom/google/android/gms/common/GoogleApiAvailability;
 
     move-result-object v0
 
-    .line 9
+    .line 4
     invoke-virtual {v0, p1, p0, p2, p3}, Lcom/google/android/gms/common/GoogleApiAvailability;->getErrorDialog(Landroid/app/Activity;IILandroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
 
     move-result-object p0
@@ -87,7 +89,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 41
+    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->getErrorPendingIntent(ILandroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object p0
@@ -100,7 +102,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 38
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->getErrorString(I)Ljava/lang/String;
 
     move-result-object p0
@@ -111,7 +113,7 @@
 .method public static getRemoteContext(Landroid/content/Context;)Landroid/content/Context;
     .locals 0
 
-    .line 44
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->getRemoteContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p0
@@ -122,7 +124,7 @@
 .method public static getRemoteResource(Landroid/content/Context;)Landroid/content/res/Resources;
     .locals 0
 
-    .line 43
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->getRemoteResource(Landroid/content/Context;)Landroid/content/res/Resources;
 
     move-result-object p0
@@ -135,7 +137,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 39
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->isGooglePlayServicesAvailable(Landroid/content/Context;)I
 
     move-result p0
@@ -148,7 +150,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 40
+    .line 2
     invoke-static {p0, p1}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->isGooglePlayServicesAvailable(Landroid/content/Context;I)I
 
     move-result p0
@@ -161,7 +163,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 42
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->isUserRecoverableError(I)Z
 
     move-result p0
@@ -176,7 +178,7 @@
 
     const/4 v0, 0x0
 
-    .line 37
+    .line 1
     invoke-static {p0, p1, p2, v0}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->showErrorDialogFragment(ILandroid/app/Activity;ILandroid/content/DialogInterface$OnCancelListener;)Z
 
     move-result p0
@@ -191,7 +193,7 @@
 
     const/4 v0, 0x0
 
-    .line 11
+    .line 2
     invoke-static {p0, p1, v0, p2, p3}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->showErrorDialogFragment(ILandroid/app/Activity;Landroidx/fragment/app/Fragment;ILandroid/content/DialogInterface$OnCancelListener;)Z
 
     move-result p0
@@ -200,18 +202,20 @@
 .end method
 
 .method public static showErrorDialogFragment(ILandroid/app/Activity;Landroidx/fragment/app/Fragment;ILandroid/content/DialogInterface$OnCancelListener;)Z
-    .locals 2
+    .locals 4
 
-    .line 13
+    .line 3
     invoke-static {p1, p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->isPlayServicesPossiblyUpdating(Landroid/content/Context;I)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    const/4 v1, 0x1
+
+    if-ne v1, v0, :cond_0
 
     const/16 p0, 0x12
 
-    .line 16
+    .line 4
     :cond_0
     invoke-static {}, Lcom/google/android/gms/common/GoogleApiAvailability;->getInstance()Lcom/google/android/gms/common/GoogleApiAvailability;
 
@@ -219,33 +223,31 @@
 
     if-nez p2, :cond_1
 
-    .line 18
+    .line 5
     invoke-virtual {v0, p1, p0, p3, p4}, Lcom/google/android/gms/common/GoogleApiAvailability;->showErrorDialogFragment(Landroid/app/Activity;IILandroid/content/DialogInterface$OnCancelListener;)Z
 
     move-result p0
 
     return p0
 
-    .line 19
     :cond_1
     invoke-static {}, Lcom/google/android/gms/common/GoogleApiAvailability;->getInstance()Lcom/google/android/gms/common/GoogleApiAvailability;
 
-    move-result-object v0
+    move-result-object v2
 
-    const-string v1, "d"
+    const-string v3, "d"
 
-    .line 20
-    invoke-virtual {v0, p1, p0, v1}, Lcom/google/android/gms/common/GoogleApiAvailability;->getErrorResolutionIntent(Landroid/content/Context;ILjava/lang/String;)Landroid/content/Intent;
+    .line 6
+    invoke-virtual {v2, p1, p0, v3}, Lcom/google/android/gms/common/GoogleApiAvailability;->getErrorResolutionIntent(Landroid/content/Context;ILjava/lang/String;)Landroid/content/Intent;
 
-    move-result-object v0
+    move-result-object v2
 
-    .line 22
-    invoke-static {p2, v0, p3}, Lcom/google/android/gms/common/internal/DialogRedirect;->getInstance(Landroidx/fragment/app/Fragment;Landroid/content/Intent;I)Lcom/google/android/gms/common/internal/DialogRedirect;
+    invoke-static {p2, v2, p3}, Lcom/google/android/gms/common/internal/zag;->zac(Landroidx/fragment/app/Fragment;Landroid/content/Intent;I)Lcom/google/android/gms/common/internal/zag;
 
     move-result-object p2
 
-    .line 23
-    invoke-static {p1, p0, p2, p4}, Lcom/google/android/gms/common/GoogleApiAvailability;->zaa(Landroid/content/Context;ILcom/google/android/gms/common/internal/DialogRedirect;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
+    .line 7
+    invoke-virtual {v0, p1, p0, p2, p4}, Lcom/google/android/gms/common/GoogleApiAvailability;->zaa(Landroid/content/Context;ILcom/google/android/gms/common/internal/zag;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
 
     move-result-object p0
 
@@ -258,12 +260,10 @@
     :cond_2
     const-string p2, "GooglePlayServicesErrorDialog"
 
-    .line 26
-    invoke-static {p1, p0, p2, p4}, Lcom/google/android/gms/common/GoogleApiAvailability;->zaa(Landroid/app/Activity;Landroid/app/Dialog;Ljava/lang/String;Landroid/content/DialogInterface$OnCancelListener;)V
+    .line 8
+    invoke-virtual {v0, p1, p0, p2, p4}, Lcom/google/android/gms/common/GoogleApiAvailability;->zad(Landroid/app/Activity;Landroid/app/Dialog;Ljava/lang/String;Landroid/content/DialogInterface$OnCancelListener;)V
 
-    const/4 p0, 0x1
-
-    return p0
+    return v1
 .end method
 
 .method public static showErrorNotification(ILandroid/content/Context;)V
@@ -271,19 +271,19 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 28
+    .line 1
     invoke-static {}, Lcom/google/android/gms/common/GoogleApiAvailability;->getInstance()Lcom/google/android/gms/common/GoogleApiAvailability;
 
     move-result-object v0
 
-    .line 30
+    .line 2
     invoke-static {p1, p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->isPlayServicesPossiblyUpdating(Landroid/content/Context;I)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 32
+    .line 3
     invoke-static {p1, p0}, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->isPlayStorePossiblyUpdating(Landroid/content/Context;I)Z
 
     move-result v1
@@ -292,16 +292,16 @@
 
     goto :goto_0
 
-    .line 35
+    .line 5
     :cond_0
     invoke-virtual {v0, p1, p0}, Lcom/google/android/gms/common/GoogleApiAvailability;->showErrorNotification(Landroid/content/Context;I)V
 
     return-void
 
-    .line 34
+    .line 4
     :cond_1
     :goto_0
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/GoogleApiAvailability;->zaa(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/GoogleApiAvailability;->zaf(Landroid/content/Context;)V
 
     return-void
 .end method

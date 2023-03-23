@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Nelze vybrat více než %d položek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze vybrat více než %d položku.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze vybrat více než %d položky.</item>
+        <item quantity="many">Nelze vybrat více než %d položek.</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d souborů nelze přesunout do Koše</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d soubor nelze přesunout do Koše</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d soubory nelze přesunout do Koše</item>
+        <item quantity="many">%d souborů nelze přesunout do Koše</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d složek nelze přesunout do Koše</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d složku nelze přesunout do Koše</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d složky nelze přesunout do Koše</item>
+        <item quantity="many">%d složek nelze přesunout do Koše</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d položek nelze přesunout do Koše</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položku nelze přesunout do Koše</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky nelze přesunout do Koše</item>
+        <item quantity="many">%d položek nelze přesunout do Koše</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d z vybraných souborů bude odstraněno, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d z vybraných souborů bude odstraněn, protože je v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d z vybraných souborů budou odstraněny, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="many">%d z vybraných souborů bude odstraněno, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d z vybraných složek bude odstraněno, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d z vybraných složek bude odstraněna, protože je v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d z vybraných složek budou odstraněny, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="many">%d z vybraných složek bude odstraněno, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d z vybraných položek bude odstraněno, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d z vybraných položek bude odstraněna, protože je v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d z vybraných položek budou odstraněny, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+        <item quantity="many">%d z vybraných položek bude odstraněno, protože jsou v cloudu nebo na paměťovém zařízení USB.</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Komprimování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimování %d souborů…</item>
+        <item quantity="many">Komprimování %d souborů…</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Komprimování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimování %d souborů…</item>
+        <item quantity="many">Komprimování %d souborů…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Komprimování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimování %d složek…</item>
+        <item quantity="many">Komprimování %d složek…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Probíhá komprese %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Probíhá komprese %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Probíhá komprese %d složek…</item>
+        <item quantity="many">Probíhá komprese %d složek…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Komprimování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimování %d položek…</item>
+        <item quantity="many">Komprimování %d položek…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Probíhá komprese %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Probíhá komprese %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Probíhá komprese %d položek…</item>
+        <item quantity="many">Probíhá komprese %d položek…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Kopírování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopírování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopírování %d souborů…</item>
+        <item quantity="many">Kopírování %d souborů…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Kopírování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopírování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopírování %d souborů…</item>
+        <item quantity="many">Kopírování %d souborů…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Kopírování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopírování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopírování %d složek…</item>
+        <item quantity="many">Kopírování %d složek…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Kopírování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopírování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopírování %d složek…</item>
+        <item quantity="many">Kopírování %d složek…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Kopírování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopírování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopírování %d položek…</item>
+        <item quantity="many">Kopírování %d položek…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Kopírování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopírování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopírování %d položek…</item>
+        <item quantity="many">Kopírování %d položek…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Odstranit %d souborů z telefonu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit %d soubor z telefonu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit %d soubory z telefonu?</item>
+        <item quantity="many">Odstranit %d souborů z telefonu?</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Odstranit %d souborů z tabletu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit %d soubor z tabletu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit %d soubory z tabletu?</item>
+        <item quantity="many">Odstranit %d souborů z tabletu?</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Odstranit %d složek z telefonu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit %d složku z telefonu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit %d složky z telefonu?</item>
+        <item quantity="many">Odstranit %d složek z telefonu?</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Odstranit %d složek z tabletu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit %d složku z tabletu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit %d složky z tabletu?</item>
+        <item quantity="many">Odstranit %d složek z tabletu?</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Odstranit %d položek z telefonu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit %d položku z telefonu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit %d položky z telefonu?</item>
+        <item quantity="many">Odstranit %d položek z telefonu?</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Odstranit %d položek z tabletu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit %d položku z tabletu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit %d položky z tabletu?</item>
+        <item quantity="many">Odstranit %d položek z tabletu?</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Odstraňování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstraňování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstraňování %d souborů…</item>
+        <item quantity="many">Odstraňování %d souborů…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Odstraňování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstraňování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstraňování %d složek…</item>
+        <item quantity="many">Odstraňování %d složek…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Odstr. %d položek z Koše…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstr. %d položky z Koše…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstr. %d položek z Koše…</item>
+        <item quantity="many">Odstr. %d položek z Koše…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Odstraňování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstraňování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstraňování %d položek…</item>
+        <item quantity="many">Odstraňování %d položek…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Extrahování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Extrahování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Extrahování %d souborů…</item>
+        <item quantity="many">Extrahování %d souborů…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Extrahování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Extrahování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Extrahování %d složek…</item>
+        <item quantity="many">Extrahování %d složek…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Extrahování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Extrahování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Extrahování %d položek…</item>
+        <item quantity="many">Extrahování %d položek…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d souborů bude rovněž přesunuto do Koše v %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d soubor bude rovněž přesunut do Koše v %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d soubory budou rovněž přesunuty do Koše v %2$s.</item>
+        <item quantity="many">%1$d souborů bude rovněž přesunuto do Koše v %2$s.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Obnovování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Obnovování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Obnovování %d souborů…</item>
+        <item quantity="many">Obnovování %d souborů…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d složek bude rovněž přesunuto do Koše v %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d složka bude rovněž přesunuta do Koše v %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d složky budou rovněž přesunuty do Koše v %2$s.</item>
+        <item quantity="many">%1$d složek bude rovněž přesunuto do Koše v %2$s.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Obnovování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Obnovování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Obnovování %d složek…</item>
+        <item quantity="many">Obnovování %d složek…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Interní paměť je plná. Chcete trvale odstranit %d souborů?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interní paměť je plná. Chcete trvale odstranit %d soubor?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interní paměť je plná. Chcete trvale odstranit %d soubory?</item>
+        <item quantity="many">Interní paměť je plná. Chcete trvale odstranit %d souborů?</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Interní paměť je plná. Chcete trvale odstranit %d složek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interní paměť je plná. Chcete trvale odstranit %d složku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interní paměť je plná. Chcete trvale odstranit %d složky?</item>
+        <item quantity="many">Interní paměť je plná. Chcete trvale odstranit %d složek?</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Interní paměť je plná. Chcete trvale odstranit %d položek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interní paměť je plná. Chcete trvale odstranit %d položku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interní paměť je plná. Chcete trvale odstranit %d položky?</item>
+        <item quantity="many">Interní paměť je plná. Chcete trvale odstranit %d položek?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d souborů?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d soubor?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d soubory?</item>
+        <item quantity="many">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d souborů?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d složek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d složku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d složky?</item>
+        <item quantity="many">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d složek?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d položek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d položku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d položky?</item>
+        <item quantity="many">Interní paměť i SD karta jsou plné. Chcete trvale odstranit %d položek?</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Obnovování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Obnovování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Obnovování %d položek…</item>
+        <item quantity="many">Obnovování %d položek…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d položek bude rovněž přesunuto do Koše v %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d položka bude rovněž přesunuta do Koše v %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d položky budou rovněž přesunuty do Koše v %2$s.</item>
+        <item quantity="many">%1$d položek bude rovněž přesunuto do Koše v %2$s.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Nelze otevřít více než %d oken aplikace.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze otevřít více než %d okno aplikace.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze otevřít více než %d okna aplikace.</item>
+        <item quantity="many">Nelze otevřít více než %d oken aplikace.</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Přesunout %d souborů do Koše?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesunout %d soubor do Koše?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesunout %d soubory do Koše?</item>
+        <item quantity="many">Přesunout %d souborů do Koše?</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Přesunout %d souborů do Koše?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesunout %d soubor do Koše?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesunout %d soubory do Koše?</item>
+        <item quantity="many">Přesunout %d souborů do Koše?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Přesunout %d složek do Koše?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesunout %d složku do Koše?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesunout %d složky do Koše?</item>
+        <item quantity="many">Přesunout %d složek do Koše?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Přesunout %d složek do Koše?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesunout %d složku do Koše?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesunout %d složky do Koše?</item>
+        <item quantity="many">Přesunout %d složek do Koše?</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Přesunout %d položek do Koše?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesunout %d položku do Koše?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesunout %d položky do Koše?</item>
+        <item quantity="many">Přesunout %d položek do Koše?</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Přesunout %d položek do Koše?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesunout %d položku do Koše?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesunout %d položky do Koše?</item>
+        <item quantity="many">Přesunout %d položek do Koše?</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Přesouvání %d souborů do Koše…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d souboru do Koše…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d souborů do Koše…</item>
+        <item quantity="many">Přesouvání %d souborů do Koše…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Přesouvání %d složek do Koše…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d složky do Koše…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d složek do Koše…</item>
+        <item quantity="many">Přesouvání %d složek do Koše…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Přesouvání %d položek do Koše…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d položky do Koše…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d položek do Koše…</item>
+        <item quantity="many">Přesouvání %d položek do Koše…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Přesouvání %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d souborů…</item>
+        <item quantity="many">Přesouvání %d souborů…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Přesouvání %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d souborů…</item>
+        <item quantity="many">Přesouvání %d souborů…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Přesouvání %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d složek…</item>
+        <item quantity="many">Přesouvání %d složek…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Přesouvání %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d složek…</item>
+        <item quantity="many">Přesouvání %d složek…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Přesouvání %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d položek…</item>
+        <item quantity="many">Přesouvání %d položek…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Přesouvání %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Přesouvání %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Přesouvání %d položek…</item>
+        <item quantity="many">Přesouvání %d položek…</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d položek bylo zkomprimováno</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položka byla zkomprimována</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky byly zkomprimovány</item>
+        <item quantity="many">%d položek bylo zkomprimováno</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d položek bylo zkopírováno do %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d položka byla zkopírována do %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d položky byly zkopírovány do %2$s</item>
+        <item quantity="many">%1$d položek bylo zkopírováno do %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Odstranit složku a %d souborů v ní?</item>
+        <item quantity="one">Odstranit složku a soubor v ní?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Odstranit %1$d složek a %2$d souborů v nich?</item>
+        <item quantity="one">Odstranit složku a soubor v ní?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d položek bylo odstraněno</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položka byla odstraněna</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky byly odstraněny</item>
+        <item quantity="many">%d položek bylo odstraněno</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Stahování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Stahování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Stahování %d souborů…</item>
+        <item quantity="many">Stahování %d souborů…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Stahování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Stahování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Stahování %d složek…</item>
+        <item quantity="many">Stahování %d složek…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Stahování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Stahování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Stahování %d položek…</item>
+        <item quantity="many">Stahování %d položek…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Složky nelze sdílet. Složky jsou prázdné.</item>
+        <item quantity="one">Složku nelze sdílet. Složka je prázdná.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d souborů bude trvale odstraněno.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d soubor bude trvale odstraněn.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d soubory budou trvale odstraněny.</item>
+        <item quantity="many">%d souborů bude trvale odstraněno.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d složek bude trvale odstraněno.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d složka bude trvale odstraněna.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d složky budou trvale odstraněny.</item>
+        <item quantity="many">%d složek bude trvale odstraněno.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d položek bylo extrahováno</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položka byla extrahována</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky byly extrahovány</item>
+        <item quantity="many">%d položek bylo extrahováno</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">Do Oblíbených bylo přidáno %d souborů.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Do Oblíbených byl přidán %d soubor.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Do Oblíbených byly přidány %d soubory.</item>
+        <item quantity="many">Do Oblíbených bylo přidáno %d souborů.</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d souborů bylo odebráno z Oblíbených.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d soubor byl odebrán z Oblíbených.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d soubory byly odebrány z Oblíbených.</item>
+        <item quantity="many">%d souborů bylo odebráno z Oblíbených.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">Do Oblíbených bylo přidáno %d složek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Do Oblíbených byla přidána %d složka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Do Oblíbených byly přidány %d složky.</item>
+        <item quantity="many">Do Oblíbených bylo přidáno %d složek.</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d složek bylo odebráno z Oblíbených.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d složka byla odebrána z Oblíbených.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d složky byly odebrány z Oblíbených.</item>
+        <item quantity="many">%d složek bylo odebráno z Oblíbených.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">Do Oblíbených bylo přidáno %d položek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Do Oblíbených byla přidána %d položka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Do Oblíbených byly přidány %d položky.</item>
+        <item quantity="many">Do Oblíbených bylo přidáno %d položek.</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d položek bylo odebráno z Oblíbených.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položka byla odebrána z Oblíbených.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky byly odebrány z Oblíbených.</item>
+        <item quantity="many">%d položek bylo odebráno z Oblíbených.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">Počet položek: %d</item>
+        <item quantity="one">1 položka</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">Počet položek: %d</item>
+        <item quantity="one">%d položka</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d položek bylo zkopírováno do schránky</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položka byla zkopírována do schránky</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky byly zkopírovány do schránky</item>
+        <item quantity="many">%d položek bylo zkopírováno do schránky</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d položek bylo přesunuto do schránky</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položka byla přesunuta do schránky</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky byly přesunuty do schránky</item>
+        <item quantity="many">%d položek bylo přesunuto do schránky</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">Vybráno %d položek</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vybrána %d položka</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vybrány %d položky</item>
+        <item quantity="many">Vybráno %d položek</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d položek bylo přesunuto do %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d položka byla přesunuta do %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d položky byly přesunuty do %2$s</item>
+        <item quantity="many">%1$d položek bylo přesunuto do %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d položek bylo přesunuto do Koše</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d položka byla přesunuta do Koše</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d položky byly přesunuty do Koše</item>
+        <item quantity="many">%d položek bylo přesunuto do Koše</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">Vybráno: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vybráno: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vybráno: %d</item>
+        <item quantity="many">Vybráno: %d</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD karta je plná. Chcete trvale odstranit %d souborů?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD karta je plná. Chcete trvale odstranit %d soubor?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD karta je plná. Chcete trvale odstranit %d soubory?</item>
+        <item quantity="many">SD karta je plná. Chcete trvale odstranit %d souborů?</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD karta je plná. Chcete trvale odstranit %d složek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD karta je plná. Chcete trvale odstranit %d složku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD karta je plná. Chcete trvale odstranit %d složky?</item>
+        <item quantity="many">SD karta je plná. Chcete trvale odstranit %d složek?</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD karta je plná. Chcete trvale odstranit %d položek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD karta je plná. Chcete trvale odstranit %d položku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD karta je plná. Chcete trvale odstranit %d položky?</item>
+        <item quantity="many">SD karta je plná. Chcete trvale odstranit %d položek?</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Soubor bude odstraněn za %d dnů.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Soubor bude odstraněn za %d den.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Soubor bude odstraněn za %d dny.</item>
+        <item quantity="many">Soubor bude odstraněn za %d dnů.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Složka bude odstraněna za %d dnů.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Složka bude odstraněna za %d den.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Složka bude odstraněna za %d dny.</item>
+        <item quantity="many">Složka bude odstraněna za %d dnů.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Odstranit trvale %d souborů?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit trvale %d soubor?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit trvale %d soubory?</item>
+        <item quantity="many">Odstranit trvale %d souborů?</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Odstraňování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstraňování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstraňování %d souborů…</item>
+        <item quantity="many">Odstraňování %d souborů…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Obnovování %d souborů…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Obnovování %d souboru…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Obnovování %d souborů…</item>
+        <item quantity="many">Obnovování %d souborů…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Odstranit trvale %d složek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit trvale %d složku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit trvale %d složky?</item>
+        <item quantity="many">Odstranit trvale %d složek?</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Odstraňování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstraňování %d složek…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstraňování %d složek…</item>
+        <item quantity="many">Odstraňování %d složek…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Obnovování %d složek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Obnovování %d složky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Obnovování %d složek…</item>
+        <item quantity="many">Obnovování %d složek…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Odstranit trvale %d položek?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit trvale %d položku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit trvale %d položky?</item>
+        <item quantity="many">Odstranit trvale %d položek?</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Odstraňování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstraňování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstraňování %d položek…</item>
+        <item quantity="many">Odstraňování %d položek…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Obnovování %d položek…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Obnovování %d položky…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Obnovování %d položek…</item>
+        <item quantity="many">Obnovování %d položek…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Odstranění za %d dnů</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranění za %d den</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranění za %d dny</item>
+        <item quantity="many">Odstranění za %d dnů</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Odinstalovat %d aplikací?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odinstalovat %d aplikaci?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odinstalovat %d aplikace?</item>
+        <item quantity="many">Odinstalovat %d aplikací?</item>
+    </plurals>
+</resources>

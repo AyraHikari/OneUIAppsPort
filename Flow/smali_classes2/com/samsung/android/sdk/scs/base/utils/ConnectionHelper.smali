@@ -19,7 +19,7 @@
     .line 42
     new-instance v0, Landroid/content/Intent;
 
-    const-string v1, "scs.ai.intent.action.BIND_TEXT_SERVICE"
+    const-string/jumbo v1, "scs.ai.intent.action.BIND_TEXT_SERVICE"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -37,7 +37,7 @@
     .line 51
     new-instance v0, Landroid/content/Intent;
 
-    const-string v1, "scs.ai.intent.action.BIND_SUGGESTION_SERVICE"
+    const-string/jumbo v1, "scs.ai.intent.action.BIND_SUGGESTION_SERVICE"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -55,7 +55,7 @@
     .line 33
     new-instance v0, Landroid/content/Intent;
 
-    const-string v1, "scs.ai.intent.action.BIND_IMAGE_SERVICE"
+    const-string/jumbo v1, "scs.ai.intent.action.BIND_IMAGE_SERVICE"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 

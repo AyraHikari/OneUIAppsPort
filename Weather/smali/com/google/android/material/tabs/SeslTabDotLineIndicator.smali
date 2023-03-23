@@ -1,48 +1,29 @@
 .class public Lcom/google/android/material/tabs/SeslTabDotLineIndicator;
-.super Lcom/google/android/material/tabs/SeslAbsIndicatorView;
+.super Lf6/b;
 .source "SeslTabDotLineIndicator.java"
 
 
-# static fields
-.field private static final CIRCLE_INTERVAL:F = 2.5f
-
-.field private static final DIAMETER_SIZE:F = 2.5f
-
-.field private static final SCALE_DIFF:I = 0x5
-
-
 # instance fields
-.field private final mDiameter:I
+.field public final h:I
 
-.field private final mInterval:I
+.field public final i:I
 
-.field private mPaint:Landroid/graphics/Paint;
+.field public j:Landroid/graphics/Paint;
 
-.field private mScaleFrom:F
+.field public k:F
 
-.field private final mScaleFromDiff:F
+.field public final l:F
 
-.field private mWidth:I
+.field public m:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 33
-    invoke-direct {p0, p1, v0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 37
+    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -53,7 +34,7 @@
 
     const/4 v0, 0x0
 
-    .line 41
+    .line 2
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
@@ -62,10 +43,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 0
 
-    .line 46
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    .line 3
+    invoke-direct {p0, p1, p2, p3, p4}, Lf6/b;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 47
+    .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -78,84 +59,170 @@
 
     const/high16 p3, 0x40200000    # 2.5f
 
-    .line 48
+    .line 5
     invoke-static {p2, p3, p1}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
 
     move-result p4
 
     float-to-int p4, p4
 
-    iput p4, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mDiameter:I
+    iput p4, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->i:I
 
-    .line 49
+    .line 6
     invoke-static {p2, p3, p1}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
 
     move-result p3
 
     float-to-int p3, p3
 
-    iput p3, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mInterval:I
+    iput p3, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->h:I
 
     const/high16 p3, 0x40a00000    # 5.0f
 
-    .line 50
+    .line 7
     invoke-static {p2, p3, p1}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mScaleFromDiff:F
+    iput p1, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->l:F
 
-    .line 52
+    .line 8
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mPaint:Landroid/graphics/Paint;
+    iput-object p1, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->j:Landroid/graphics/Paint;
 
-    .line 53
+    .line 9
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setFlags(I)V
 
     return-void
 .end method
 
-.method private updateDotLineScaleFrom()V
+
+# virtual methods
+.method public a()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Landroid/view/View;->setAlpha(F)V
+
+    return-void
+.end method
+
+.method public b(I)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->j:Landroid/graphics/Paint;
+
+    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
+
+    return-void
+.end method
+
+.method public c()V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->i()V
+
+    return-void
+.end method
+
+.method public bridge synthetic d()V
+    .locals 0
+
+    invoke-super {p0}, Lf6/b;->d()V
+
+    return-void
+.end method
+
+.method public bridge synthetic e()V
+    .locals 0
+
+    invoke-super {p0}, Lf6/b;->e()V
+
+    return-void
+.end method
+
+.method public bridge synthetic f()V
+    .locals 0
+
+    invoke-super {p0}, Lf6/b;->f()V
+
+    return-void
+.end method
+
+.method public bridge synthetic g()V
+    .locals 0
+
+    invoke-super {p0}, Lf6/b;->g()V
+
+    return-void
+.end method
+
+.method public h()V
+    .locals 1
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    .line 1
+    invoke-virtual {p0, v0}, Landroid/view/View;->setAlpha(F)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
+
+    return-void
+.end method
+
+.method public i()V
+    .locals 1
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    invoke-virtual {p0, v0}, Landroid/view/View;->setAlpha(F)V
+
+    return-void
+.end method
+
+.method public final j()V
     .locals 3
 
-    .line 88
-    iget v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mWidth:I
+    .line 1
+    iget v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->m:I
 
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v1
 
     if-ne v0, v1, :cond_0
 
-    iget v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mWidth:I
+    iget v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->m:I
 
     if-nez v0, :cond_2
 
-    .line 89
+    .line 2
     :cond_0
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mWidth:I
+    iput v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->m:I
 
     if-gtz v0, :cond_1
 
     const v0, 0x3f666666    # 0.9f
 
-    .line 91
-    iput v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mScaleFrom:F
+    .line 3
+    iput v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->k:F
 
     goto :goto_0
 
     :cond_1
     int-to-float v1, v0
 
-    .line 93
-    iget v2, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mScaleFromDiff:F
+    .line 4
+    iget v2, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->l:F
 
     sub-float/2addr v1, v2
 
@@ -163,39 +230,37 @@
 
     div-float/2addr v1, v0
 
-    iput v1, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mScaleFrom:F
+    iput v1, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->k:F
 
     :cond_2
     :goto_0
     return-void
 .end method
 
-
-# virtual methods
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 13
 
-    .line 105
-    invoke-super {p0, p1}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->onDraw(Landroid/graphics/Canvas;)V
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 106
-    invoke-direct {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->updateDotLineScaleFrom()V
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->j()V
 
-    .line 108
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->isPressed()Z
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->isPressed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->isSelected()Z
+    invoke-virtual {p0}, Landroid/view/View;->isSelected()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     :cond_0
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -203,25 +268,25 @@
 
     if-eqz v0, :cond_1
 
-    .line 109
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->getWidth()I
+    .line 4
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->getPaddingStart()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingStart()I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->getPaddingEnd()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingEnd()I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    .line 110
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->getHeight()I
+    .line 5
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
@@ -231,8 +296,8 @@
 
     div-float/2addr v1, v2
 
-    .line 112
-    iget v3, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mDiameter:I
+    .line 6
+    iget v3, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->i:I
 
     int-to-float v4, v3
 
@@ -250,8 +315,8 @@
 
     int-to-float v11, v3
 
-    .line 114
-    iget-object v12, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mPaint:Landroid/graphics/Paint;
+    .line 7
+    iget-object v12, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->j:Landroid/graphics/Paint;
 
     move-object v5, p1
 
@@ -261,103 +326,10 @@
     return-void
 .end method
 
-.method onHide()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 61
-    invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->setAlpha(F)V
-
-    return-void
-.end method
-
-.method onSetSelectedIndicatorColor(I)V
-    .locals 1
-
-    .line 100
-    iget-object v0, p0, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->mPaint:Landroid/graphics/Paint;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
-
-    return-void
-.end method
-
-.method onShow()V
-    .locals 0
-
-    .line 66
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->startReleaseEffect()V
-
-    return-void
-.end method
-
-.method public bridge synthetic setHide()V
-    .locals 0
-
-    .line 16
-    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setHide()V
-
-    return-void
-.end method
-
-.method public bridge synthetic setPressed()V
-    .locals 0
-
-    .line 16
-    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setPressed()V
-
-    return-void
-.end method
-
-.method public bridge synthetic setReleased()V
-    .locals 0
-
-    .line 16
-    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setReleased()V
-
-    return-void
-.end method
-
 .method public bridge synthetic setSelectedIndicatorColor(I)V
     .locals 0
 
-    .line 16
-    invoke-super {p0, p1}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setSelectedIndicatorColor(I)V
-
-    return-void
-.end method
-
-.method public bridge synthetic setShow()V
-    .locals 0
-
-    .line 16
-    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setShow()V
-
-    return-void
-.end method
-
-.method startPressEffect()V
-    .locals 1
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 75
-    invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->setAlpha(F)V
-
-    .line 76
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->invalidate()V
-
-    return-void
-.end method
-
-.method startReleaseEffect()V
-    .locals 1
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 84
-    invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabDotLineIndicator;->setAlpha(F)V
+    invoke-super {p0, p1}, Lf6/b;->setSelectedIndicatorColor(I)V
 
     return-void
 .end method

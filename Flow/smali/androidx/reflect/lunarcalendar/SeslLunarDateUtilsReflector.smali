@@ -19,6 +19,18 @@
 
 .method public static buildLunarDateString(Ldalvik/system/PathClassLoader;Ljava/util/Calendar;Landroid/content/Context;)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "calendar",
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 

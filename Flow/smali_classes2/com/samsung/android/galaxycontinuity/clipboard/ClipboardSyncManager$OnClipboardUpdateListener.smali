@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onClipboardUpdate(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clipboardSyncData"
+        }
+    .end annotation
 .end method

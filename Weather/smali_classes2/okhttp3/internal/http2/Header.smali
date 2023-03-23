@@ -86,7 +86,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/internal/http2/Header$Companion;
@@ -97,66 +97,56 @@
 
     sput-object v0, Lokhttp3/internal/http2/Header;->Companion:Lokhttp3/internal/http2/Header$Companion;
 
-    .line 39
+    .line 1
     sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     const-string v1, ":"
 
     invoke-virtual {v0, v1}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Lokhttp3/internal/http2/Header;->PSEUDO_PREFIX:Lokio/ByteString;
-
-    .line 47
-    sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
+    sput-object v1, Lokhttp3/internal/http2/Header;->PSEUDO_PREFIX:Lokio/ByteString;
 
     const-string v1, ":status"
 
+    .line 2
     invoke-virtual {v0, v1}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
-
-    .line 48
-    sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
+    sput-object v1, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
 
     const-string v1, ":method"
 
+    .line 3
     invoke-virtual {v0, v1}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_METHOD:Lokio/ByteString;
-
-    .line 49
-    sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
+    sput-object v1, Lokhttp3/internal/http2/Header;->TARGET_METHOD:Lokio/ByteString;
 
     const-string v1, ":path"
 
+    .line 4
     invoke-virtual {v0, v1}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_PATH:Lokio/ByteString;
-
-    .line 50
-    sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
+    sput-object v1, Lokhttp3/internal/http2/Header;->TARGET_PATH:Lokio/ByteString;
 
     const-string v1, ":scheme"
 
+    .line 5
     invoke-virtual {v0, v1}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_SCHEME:Lokio/ByteString;
-
-    .line 51
-    sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
+    sput-object v1, Lokhttp3/internal/http2/Header;->TARGET_SCHEME:Lokio/ByteString;
 
     const-string v1, ":authority"
 
+    .line 6
     invoke-virtual {v0, v1}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -171,20 +161,18 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 31
+    .line 3
     sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     invoke-virtual {v0, p1}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object p1
-
-    sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     invoke-virtual {v0, p2}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
@@ -200,13 +188,13 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 33
+    .line 4
     sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     invoke-virtual {v0, p2}, Lokio/ByteString$Companion;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
@@ -223,20 +211,20 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 22
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
     iput-object p2, p0, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
-    .line 28
+    .line 2
     invoke-virtual {p1}, Lokio/ByteString;->size()I
 
     move-result p1
@@ -301,11 +289,11 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lokhttp3/internal/http2/Header;
 
@@ -329,7 +317,7 @@
 
     iget-object v1, p1, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -339,7 +327,7 @@
 
     iget-object p1, p1, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
-    invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -397,7 +385,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 35
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -410,13 +397,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     const-string v1, ": "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     iget-object v1, p0, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
@@ -425,8 +408,6 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

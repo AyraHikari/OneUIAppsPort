@@ -25,6 +25,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$pref",
+            "val$deviceId"
+        }
+    .end annotation
 
     .line 521
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker$8;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;
@@ -42,12 +54,40 @@
 # virtual methods
 .method public onFail(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "code",
+            "param",
+            "param2",
+            "param3"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onSuccess(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "code",
+            "param",
+            "param2",
+            "param3"
+        }
+    .end annotation
 
     .line 524
     iget-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker$8;->val$pref:Landroid/content/SharedPreferences;

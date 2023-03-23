@@ -1,729 +1,551 @@
 .class public Landroidx/navigation/fragment/NavHostFragment;
 .super Landroidx/fragment/app/Fragment;
-.source "NavHostFragment.java"
+.source "NavHostFragment.kt"
 
-# interfaces
-.implements Landroidx/navigation/NavHost;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/navigation/fragment/NavHostFragment$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0008\n\u0002\u0008\u000e\u0008\u0016\u0018\u0000 62\u00020\u00012\u00020\u0002:\u00017B\u0007\u00a2\u0006\u0004\u00084\u00105J\u0010\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0003H\u0017J\u0012\u0010\t\u001a\u00020\u00052\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0007H\u0017J\u0010\u0010\u000c\u001a\u00020\u00052\u0006\u0010\u000b\u001a\u00020\nH\u0015J\u0010\u0010\u000f\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00020\rH\u0015J\u0010\u0010\u0012\u001a\u00020\u00052\u0006\u0010\u0011\u001a\u00020\u0010H\u0017J\u0010\u0010\u0015\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00140\u0013H\u0015J&\u0010\u001b\u001a\u0004\u0018\u00010\u001a2\u0006\u0010\u0017\u001a\u00020\u00162\u0008\u0010\u0019\u001a\u0004\u0018\u00010\u00182\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0007H\u0016J\u001a\u0010\u001d\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001a2\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0007H\u0016J\"\u0010 \u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u001f\u001a\u00020\u001e2\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0007H\u0017J\u0010\u0010\"\u001a\u00020\u00052\u0006\u0010!\u001a\u00020\u0007H\u0017J\u0008\u0010#\u001a\u00020\u0005H\u0016R\u0018\u0010&\u001a\u0004\u0018\u00010\u00108\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008$\u0010%R\u0018\u0010)\u001a\u0004\u0018\u00010\u001a8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\'\u0010(R\u0016\u0010-\u001a\u00020*8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008+\u0010,R\u0016\u00100\u001a\u00020\u00108\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008.\u0010/R\u0014\u00103\u001a\u00020*8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00081\u00102\u00a8\u00068"
+    }
+    d2 = {
+        "Landroidx/navigation/fragment/NavHostFragment;",
+        "Landroidx/fragment/app/Fragment;",
+        "",
+        "Landroid/content/Context;",
+        "context",
+        "Lbi/x;",
+        "A0",
+        "Landroid/os/Bundle;",
+        "savedInstanceState",
+        "D0",
+        "Lh1/v;",
+        "navHostController",
+        "g2",
+        "Lh1/m;",
+        "navController",
+        "f2",
+        "",
+        "isPrimaryNavigationFragment",
+        "W0",
+        "Lh1/d0;",
+        "Lj1/e$b;",
+        "d2",
+        "Landroid/view/LayoutInflater;",
+        "inflater",
+        "Landroid/view/ViewGroup;",
+        "container",
+        "Landroid/view/View;",
+        "H0",
+        "view",
+        "c1",
+        "Landroid/util/AttributeSet;",
+        "attrs",
+        "P0",
+        "outState",
+        "Z0",
+        "K0",
+        "j0",
+        "Ljava/lang/Boolean;",
+        "isPrimaryBeforeOnCreate",
+        "k0",
+        "Landroid/view/View;",
+        "viewParent",
+        "",
+        "l0",
+        "I",
+        "graphId",
+        "m0",
+        "Z",
+        "defaultNavHost",
+        "e2",
+        "()I",
+        "containerId",
+        "<init>",
+        "()V",
+        "n0",
+        "a",
+        "navigation-fragment_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
 
 
 # static fields
-.field private static final KEY_DEFAULT_NAV_HOST:Ljava/lang/String; = "android-support-nav:fragment:defaultHost"
-
-.field private static final KEY_GRAPH_ID:Ljava/lang/String; = "android-support-nav:fragment:graphId"
-
-.field private static final KEY_NAV_CONTROLLER_STATE:Ljava/lang/String; = "android-support-nav:fragment:navControllerState"
-
-.field private static final KEY_START_DESTINATION_ARGS:Ljava/lang/String; = "android-support-nav:fragment:startDestinationArgs"
+.field public static final n0:Landroidx/navigation/fragment/NavHostFragment$a;
 
 
 # instance fields
-.field private mDefaultNavHost:Z
+.field public i0:Lh1/v;
 
-.field private mGraphId:I
+.field public j0:Ljava/lang/Boolean;
 
-.field private mIsPrimaryBeforeOnCreate:Ljava/lang/Boolean;
+.field public k0:Landroid/view/View;
 
-.field private mNavController:Landroidx/navigation/NavHostController;
+.field public l0:I
 
-.field private mViewParent:Landroid/view/View;
+.field public m0:Z
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
 
-    .line 80
-    invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
+    new-instance v0, Landroidx/navigation/fragment/NavHostFragment$a;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    .line 136
-    iput-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mIsPrimaryBeforeOnCreate:Ljava/lang/Boolean;
+    invoke-direct {v0, v1}, Landroidx/navigation/fragment/NavHostFragment$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Landroidx/navigation/fragment/NavHostFragment;->n0:Landroidx/navigation/fragment/NavHostFragment$a;
 
     return-void
 .end method
 
-.method public static create(I)Landroidx/navigation/fragment/NavHostFragment;
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
-    const/4 v0, 0x0
+    invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
 
-    .line 151
-    invoke-static {p0, v0}, Landroidx/navigation/fragment/NavHostFragment;->create(ILandroid/os/Bundle;)Landroidx/navigation/fragment/NavHostFragment;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method
 
-.method public static create(ILandroid/os/Bundle;)Landroidx/navigation/fragment/NavHostFragment;
-    .locals 2
+.method public static final synthetic c2(Landroidx/navigation/fragment/NavHostFragment;)Lh1/v;
+    .locals 0
 
-    if-eqz p0, :cond_0
-
-    .line 166
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    const-string v1, "android-support-nav:fragment:graphId"
-
-    .line 167
-    invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz p1, :cond_2
-
-    if-nez v0, :cond_1
-
-    .line 171
-    new-instance p0, Landroid/os/Bundle;
-
-    invoke-direct {p0}, Landroid/os/Bundle;-><init>()V
-
-    move-object v0, p0
-
-    :cond_1
-    const-string p0, "android-support-nav:fragment:startDestinationArgs"
-
-    .line 173
-    invoke-virtual {v0, p0, p1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
-
-    .line 176
-    :cond_2
-    new-instance p0, Landroidx/navigation/fragment/NavHostFragment;
-
-    invoke-direct {p0}, Landroidx/navigation/fragment/NavHostFragment;-><init>()V
-
-    if-eqz v0, :cond_3
-
-    .line 178
-    invoke-virtual {p0, v0}, Landroidx/navigation/fragment/NavHostFragment;->setArguments(Landroid/os/Bundle;)V
-
-    :cond_3
-    return-object p0
-.end method
-
-.method public static findNavController(Landroidx/fragment/app/Fragment;)Landroidx/navigation/NavController;
-    .locals 3
-
-    move-object v0, p0
-
-    :goto_0
-    if-eqz v0, :cond_2
-
-    .line 106
-    instance-of v1, v0, Landroidx/navigation/fragment/NavHostFragment;
-
-    if-eqz v1, :cond_0
-
-    .line 107
-    check-cast v0, Landroidx/navigation/fragment/NavHostFragment;
-
-    invoke-virtual {v0}, Landroidx/navigation/fragment/NavHostFragment;->getNavController()Landroidx/navigation/NavController;
-
-    move-result-object p0
+    iget-object p0, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
     return-object p0
-
-    .line 109
-    :cond_0
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getParentFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v1
-
-    .line 110
-    invoke-virtual {v1}, Landroidx/fragment/app/FragmentManager;->getPrimaryNavigationFragment()Landroidx/fragment/app/Fragment;
-
-    move-result-object v1
-
-    .line 111
-    instance-of v2, v1, Landroidx/navigation/fragment/NavHostFragment;
-
-    if-eqz v2, :cond_1
-
-    .line 112
-    check-cast v1, Landroidx/navigation/fragment/NavHostFragment;
-
-    invoke-virtual {v1}, Landroidx/navigation/fragment/NavHostFragment;->getNavController()Landroidx/navigation/NavController;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 114
-    :cond_1
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getParentFragment()Landroidx/fragment/app/Fragment;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 118
-    :cond_2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_3
-
-    .line 120
-    invoke-static {v0}, Landroidx/navigation/Navigation;->findNavController(Landroid/view/View;)Landroidx/navigation/NavController;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 124
-    :cond_3
-    instance-of v0, p0, Landroidx/fragment/app/DialogFragment;
-
-    if-eqz v0, :cond_4
-
-    .line 125
-    move-object v0, p0
-
-    check-cast v0, Landroidx/fragment/app/DialogFragment;
-
-    invoke-virtual {v0}, Landroidx/fragment/app/DialogFragment;->getDialog()Landroid/app/Dialog;
-
-    move-result-object v0
-
-    goto :goto_1
-
-    :cond_4
-    const/4 v0, 0x0
-
-    :goto_1
-    if-eqz v0, :cond_5
-
-    .line 127
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_5
-
-    .line 128
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object p0
-
-    invoke-static {p0}, Landroidx/navigation/Navigation;->findNavController(Landroid/view/View;)Landroidx/navigation/NavController;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 131
-    :cond_5
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Fragment "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    const-string v1, " does not have a NavController set"
-
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method private getContainerId()I
-    .locals 2
-
-    .line 345
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getId()I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_0
-
-    return v0
-
-    .line 351
-    :cond_0
-    sget v0, Landroidx/navigation/fragment/R$id;->nav_host_fragment_container:I
-
-    return v0
 .end method
 
 
 # virtual methods
-.method protected createFragmentNavigator()Landroidx/navigation/Navigator;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/navigation/Navigator<",
-            "+",
-            "Landroidx/navigation/fragment/FragmentNavigator$Destination;",
-            ">;"
-        }
-    .end annotation
+.method public A0(Landroid/content/Context;)V
+    .locals 1
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    const-string v0, "context"
 
-    .line 320
-    new-instance v0, Landroidx/navigation/fragment/FragmentNavigator;
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->requireContext()Landroid/content/Context;
+    .line 1
+    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->A0(Landroid/content/Context;)V
 
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v2
-
-    .line 321
-    invoke-direct {p0}, Landroidx/navigation/fragment/NavHostFragment;->getContainerId()I
-
-    move-result v3
-
-    invoke-direct {v0, v1, v2, v3}, Landroidx/navigation/fragment/FragmentNavigator;-><init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;I)V
-
-    return-object v0
-.end method
-
-.method public final getNavController()Landroidx/navigation/NavController;
-    .locals 2
-
-    .line 194
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    .line 195
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "NavController is not available before onCreate()"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public onAttach(Landroid/content/Context;)V
-    .locals 0
-
-    .line 203
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onAttach(Landroid/content/Context;)V
-
-    .line 207
-    iget-boolean p1, p0, Landroidx/navigation/fragment/NavHostFragment;->mDefaultNavHost:Z
+    .line 2
+    iget-boolean p1, p0, Landroidx/navigation/fragment/NavHostFragment;->m0:Z
 
     if-eqz p1, :cond_0
 
-    .line 208
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getParentFragmentManager()Landroidx/fragment/app/FragmentManager;
+    .line 3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->T()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
+    invoke-virtual {p1}, Landroidx/fragment/app/FragmentManager;->l()Landroidx/fragment/app/u;
 
     move-result-object p1
 
-    .line 209
-    invoke-virtual {p1, p0}, Landroidx/fragment/app/FragmentTransaction;->setPrimaryNavigationFragment(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    .line 4
+    invoke-virtual {p1, p0}, Landroidx/fragment/app/u;->t(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/u;
 
     move-result-object p1
 
-    .line 210
-    invoke-virtual {p1}, Landroidx/fragment/app/FragmentTransaction;->commit()I
+    .line 5
+    invoke-virtual {p1}, Landroidx/fragment/app/u;->h()I
 
     :cond_0
     return-void
 .end method
 
-.method public onAttachFragment(Landroidx/fragment/app/Fragment;)V
-    .locals 2
-
-    .line 291
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onAttachFragment(Landroidx/fragment/app/Fragment;)V
-
-    .line 292
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
-
-    .line 293
-    invoke-virtual {v0}, Landroidx/navigation/NavHostController;->getNavigatorProvider()Landroidx/navigation/NavigatorProvider;
-
-    move-result-object v0
-
-    const-class v1, Landroidx/navigation/fragment/DialogFragmentNavigator;
-
-    invoke-virtual {v0, v1}, Landroidx/navigation/NavigatorProvider;->getNavigator(Ljava/lang/Class;)Landroidx/navigation/Navigator;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/navigation/fragment/DialogFragmentNavigator;
-
-    .line 294
-    invoke-virtual {v0, p1}, Landroidx/navigation/fragment/DialogFragmentNavigator;->onAttachFragment(Landroidx/fragment/app/Fragment;)V
-
-    return-void
-.end method
-
-.method public onCreate(Landroid/os/Bundle;)V
+.method public D0(Landroid/os/Bundle;)V
     .locals 6
 
-    .line 217
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->requireContext()Landroid/content/Context;
+    .line 1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->H1()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 219
-    new-instance v1, Landroidx/navigation/NavHostController;
+    const-string v1, "requireContext()"
 
-    invoke-direct {v1, v0}, Landroidx/navigation/NavHostController;-><init>(Landroid/content/Context;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    .line 2
+    new-instance v1, Lh1/v;
 
-    .line 220
-    invoke-virtual {v1, p0}, Landroidx/navigation/NavHostController;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+    invoke-direct {v1, v0}, Lh1/v;-><init>(Landroid/content/Context;)V
 
-    .line 221
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    iput-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
+    .line 3
+    invoke-static {v1}, Loi/k;->d(Ljava/lang/Object;)V
 
-    move-result-object v1
+    invoke-virtual {v1, p0}, Lh1/v;->j0(Landroidx/lifecycle/w;)V
 
-    invoke-virtual {v1}, Landroidx/fragment/app/FragmentActivity;->getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;
+    .line 4
+    :goto_0
+    instance-of v1, v0, Landroid/content/ContextWrapper;
 
-    move-result-object v1
+    if-eqz v1, :cond_1
 
-    invoke-virtual {v0, v1}, Landroidx/navigation/NavHostController;->setOnBackPressedDispatcher(Landroidx/activity/OnBackPressedDispatcher;)V
+    .line 5
+    instance-of v1, v0, Landroidx/activity/j;
 
-    .line 224
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    if-eqz v1, :cond_0
 
-    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->mIsPrimaryBeforeOnCreate:Ljava/lang/Boolean;
+    .line 6
+    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
+
+    invoke-static {v1}, Loi/k;->d(Ljava/lang/Object;)V
+
+    .line 7
+    check-cast v0, Landroidx/activity/j;
+
+    invoke-interface {v0}, Landroidx/activity/j;->c()Landroidx/activity/OnBackPressedDispatcher;
+
+    move-result-object v0
+
+    const-string v2, "context as OnBackPressed\u2026).onBackPressedDispatcher"
+
+    invoke-static {v0, v2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {v1, v0}, Lh1/v;->k0(Landroidx/activity/OnBackPressedDispatcher;)V
+
+    goto :goto_1
+
+    .line 9
+    :cond_0
+    check-cast v0, Landroid/content/ContextWrapper;
+
+    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "context.baseContext"
+
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 10
+    :cond_1
+    :goto_1
+    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
+
+    invoke-static {v0}, Loi/k;->d(Ljava/lang/Object;)V
+
+    .line 11
+    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->j0:Ljava/lang/Boolean;
 
     const/4 v2, 0x1
 
     const/4 v3, 0x0
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_2
 
-    .line 225
+    const-string v4, "null cannot be cast to non-null type kotlin.Boolean"
+
+    invoke-static {v1, v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_2
 
     move v1, v2
 
-    goto :goto_0
+    goto :goto_2
 
-    :cond_0
+    :cond_2
     move v1, v3
 
-    .line 224
-    :goto_0
-    invoke-virtual {v0, v1}, Landroidx/navigation/NavHostController;->enableOnBackPressed(Z)V
+    .line 12
+    :goto_2
+    invoke-virtual {v0, v1}, Lh1/v;->s(Z)V
 
     const/4 v0, 0x0
 
-    .line 226
-    iput-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mIsPrimaryBeforeOnCreate:Ljava/lang/Boolean;
+    .line 13
+    iput-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->j0:Ljava/lang/Boolean;
 
-    .line 227
-    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    .line 14
+    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getViewModelStore()Landroidx/lifecycle/ViewModelStore;
+    invoke-static {v1}, Loi/k;->d(Ljava/lang/Object;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->j()Landroidx/lifecycle/z0;
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Landroidx/navigation/NavHostController;->setViewModelStore(Landroidx/lifecycle/ViewModelStore;)V
+    const-string v5, "viewModelStore"
 
-    .line 228
-    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    invoke-static {v4, v5}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1}, Landroidx/navigation/fragment/NavHostFragment;->onCreateNavController(Landroidx/navigation/NavController;)V
+    invoke-virtual {v1, v4}, Lh1/v;->l0(Landroidx/lifecycle/z0;)V
+
+    .line 15
+    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
+
+    invoke-static {v1}, Loi/k;->d(Ljava/lang/Object;)V
+
+    invoke-virtual {p0, v1}, Landroidx/navigation/fragment/NavHostFragment;->g2(Lh1/v;)V
 
     const-string v1, "android-support-nav:fragment:graphId"
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_4
 
     const-string v4, "android-support-nav:fragment:navControllerState"
 
-    .line 232
+    .line 16
     invoke-virtual {p1, v4}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v4
 
     const-string v5, "android-support-nav:fragment:defaultHost"
 
-    .line 233
+    .line 17
     invoke-virtual {p1, v5, v3}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v5
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_3
 
-    .line 234
-    iput-boolean v2, p0, Landroidx/navigation/fragment/NavHostFragment;->mDefaultNavHost:Z
+    .line 18
+    iput-boolean v2, p0, Landroidx/navigation/fragment/NavHostFragment;->m0:Z
 
-    .line 235
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getParentFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
+    .line 19
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->T()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v2
 
-    .line 236
-    invoke-virtual {v2, p0}, Landroidx/fragment/app/FragmentTransaction;->setPrimaryNavigationFragment(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    invoke-virtual {v2}, Landroidx/fragment/app/FragmentManager;->l()Landroidx/fragment/app/u;
 
     move-result-object v2
 
-    .line 237
-    invoke-virtual {v2}, Landroidx/fragment/app/FragmentTransaction;->commit()I
+    .line 20
+    invoke-virtual {v2, p0}, Landroidx/fragment/app/u;->t(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/u;
 
-    .line 239
-    :cond_1
+    move-result-object v2
+
+    .line 21
+    invoke-virtual {v2}, Landroidx/fragment/app/u;->h()I
+
+    .line 22
+    :cond_3
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result v2
 
-    iput v2, p0, Landroidx/navigation/fragment/NavHostFragment;->mGraphId:I
+    iput v2, p0, Landroidx/navigation/fragment/NavHostFragment;->l0:I
 
-    goto :goto_1
+    goto :goto_3
 
-    :cond_2
+    :cond_4
     move-object v4, v0
 
-    :goto_1
-    if-eqz v4, :cond_3
+    :goto_3
+    if-eqz v4, :cond_5
 
-    .line 244
-    iget-object v2, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    .line 23
+    iget-object v2, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
-    invoke-virtual {v2, v4}, Landroidx/navigation/NavHostController;->restoreState(Landroid/os/Bundle;)V
+    invoke-static {v2}, Loi/k;->d(Ljava/lang/Object;)V
 
-    .line 246
-    :cond_3
-    iget v2, p0, Landroidx/navigation/fragment/NavHostFragment;->mGraphId:I
+    invoke-virtual {v2, v4}, Lh1/m;->d0(Landroid/os/Bundle;)V
 
-    if-eqz v2, :cond_4
+    .line 24
+    :cond_5
+    iget v2, p0, Landroidx/navigation/fragment/NavHostFragment;->l0:I
 
-    .line 248
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    if-eqz v2, :cond_6
 
-    invoke-virtual {v0, v2}, Landroidx/navigation/NavHostController;->setGraph(I)V
+    .line 25
+    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
-    goto :goto_2
+    invoke-static {v0}, Loi/k;->d(Ljava/lang/Object;)V
 
-    .line 251
-    :cond_4
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getArguments()Landroid/os/Bundle;
+    iget v1, p0, Landroidx/navigation/fragment/NavHostFragment;->l0:I
+
+    invoke-virtual {v0, v1}, Lh1/m;->g0(I)V
+
+    goto :goto_4
+
+    .line 26
+    :cond_6
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->A()Landroid/os/Bundle;
 
     move-result-object v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_7
 
-    .line 252
+    .line 27
     invoke-virtual {v2, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result v3
 
-    :cond_5
-    if-eqz v2, :cond_6
+    :cond_7
+    if-eqz v2, :cond_8
 
     const-string v0, "android-support-nav:fragment:startDestinationArgs"
 
-    .line 254
+    .line 28
     invoke-virtual {v2, v0}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0
 
-    :cond_6
-    if-eqz v3, :cond_7
+    :cond_8
+    if-eqz v3, :cond_9
 
-    .line 257
-    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    .line 29
+    iget-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
-    invoke-virtual {v1, v3, v0}, Landroidx/navigation/NavHostController;->setGraph(ILandroid/os/Bundle;)V
+    invoke-static {v1}, Loi/k;->d(Ljava/lang/Object;)V
 
-    .line 264
-    :cond_7
-    :goto_2
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-virtual {v1, v3, v0}, Lh1/m;->h0(ILandroid/os/Bundle;)V
 
-    return-void
-.end method
-
-.method protected onCreateNavController(Landroidx/navigation/NavController;)V
-    .locals 4
-
-    .line 282
-    invoke-virtual {p1}, Landroidx/navigation/NavController;->getNavigatorProvider()Landroidx/navigation/NavigatorProvider;
-
-    move-result-object v0
-
-    new-instance v1, Landroidx/navigation/fragment/DialogFragmentNavigator;
-
-    .line 283
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->requireContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v3
-
-    invoke-direct {v1, v2, v3}, Landroidx/navigation/fragment/DialogFragmentNavigator;-><init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;)V
-
-    .line 282
-    invoke-virtual {v0, v1}, Landroidx/navigation/NavigatorProvider;->addNavigator(Landroidx/navigation/Navigator;)Landroidx/navigation/Navigator;
-
-    .line 284
-    invoke-virtual {p1}, Landroidx/navigation/NavController;->getNavigatorProvider()Landroidx/navigation/NavigatorProvider;
-
-    move-result-object p1
-
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->createFragmentNavigator()Landroidx/navigation/Navigator;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroidx/navigation/NavigatorProvider;->addNavigator(Landroidx/navigation/Navigator;)Landroidx/navigation/Navigator;
+    .line 30
+    :cond_9
+    :goto_4
+    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public H0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
 
-    .line 328
+    const-string p2, "inflater"
+
+    invoke-static {p1, p2}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
     new-instance p2, Landroidx/fragment/app/FragmentContainerView;
 
     invoke-virtual {p1}, Landroid/view/LayoutInflater;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
+    const-string p3, "inflater.context"
+
+    invoke-static {p1, p3}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p2, p1}, Landroidx/fragment/app/FragmentContainerView;-><init>(Landroid/content/Context;)V
 
-    .line 333
-    invoke-direct {p0}, Landroidx/navigation/fragment/NavHostFragment;->getContainerId()I
+    .line 2
+    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->e2()I
 
     move-result p1
 
-    invoke-virtual {p2, p1}, Landroidx/fragment/app/FragmentContainerView;->setId(I)V
+    invoke-virtual {p2, p1}, Landroid/widget/FrameLayout;->setId(I)V
 
     return-object p2
 .end method
 
-.method public onDestroyView()V
-    .locals 3
+.method public K0()V
+    .locals 4
 
-    .line 412
-    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onDestroyView()V
+    .line 1
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->K0()V
 
-    .line 413
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mViewParent:Landroid/view/View;
+    .line 2
+    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->k0:Landroid/view/View;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    invoke-static {v0}, Landroidx/navigation/Navigation;->findNavController(Landroid/view/View;)Landroidx/navigation/NavController;
+    .line 3
+    invoke-static {v0}, Lh1/c0;->c(Landroid/view/View;)Lh1/m;
 
-    move-result-object v0
+    move-result-object v2
 
-    iget-object v2, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    iget-object v3, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
-    if-ne v0, v2, :cond_0
+    if-ne v2, v3, :cond_0
 
-    .line 414
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mViewParent:Landroid/view/View;
+    .line 4
+    invoke-static {v0, v1}, Lh1/c0;->f(Landroid/view/View;Lh1/m;)V
 
-    invoke-static {v0, v1}, Landroidx/navigation/Navigation;->setViewNavController(Landroid/view/View;Landroidx/navigation/NavController;)V
-
-    .line 416
+    .line 5
     :cond_0
-    iput-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->mViewParent:Landroid/view/View;
+    iput-object v1, p0, Landroidx/navigation/fragment/NavHostFragment;->k0:Landroid/view/View;
 
     return-void
 .end method
 
-.method public onInflate(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
+.method public P0(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
     .locals 2
 
-    .line 375
-    invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->onInflate(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
+    const-string v0, "context"
 
-    .line 377
-    sget-object p3, Landroidx/navigation/R$styleable;->NavHost:[I
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
+    const-string v0, "attrs"
+
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->P0(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
+
+    .line 2
+    sget-object p3, Lh1/i0;->NavHost:[I
+
+    .line 3
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p3
 
-    .line 379
-    sget v0, Landroidx/navigation/R$styleable;->NavHost_navGraph:I
+    const-string v0, "context.obtainStyledAttr\u2026yleable.NavHost\n        )"
+
+    invoke-static {p3, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    sget v0, Lh1/i0;->NavHost_navGraph:I
 
     const/4 v1, 0x0
 
+    .line 5
     invoke-virtual {p3, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 382
-    iput v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mGraphId:I
+    .line 6
+    iput v0, p0, Landroidx/navigation/fragment/NavHostFragment;->l0:I
 
-    .line 384
+    .line 7
     :cond_0
+    sget-object v0, Lbi/x;->a:Lbi/x;
+
+    .line 8
     invoke-virtual {p3}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 386
-    sget-object p3, Landroidx/navigation/fragment/R$styleable;->NavHostFragment:[I
+    .line 9
+    sget-object p3, Lj1/g;->NavHostFragment:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 387
-    sget p2, Landroidx/navigation/fragment/R$styleable;->NavHostFragment_defaultNavHost:I
+    const-string p2, "context.obtainStyledAttr\u2026tyleable.NavHostFragment)"
+
+    invoke-static {p1, p2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    sget p2, Lj1/g;->NavHostFragment_defaultNavHost:I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -733,51 +555,60 @@
 
     const/4 p2, 0x1
 
-    .line 389
-    iput-boolean p2, p0, Landroidx/navigation/fragment/NavHostFragment;->mDefaultNavHost:Z
+    .line 11
+    iput-boolean p2, p0, Landroidx/navigation/fragment/NavHostFragment;->m0:Z
 
-    .line 391
+    .line 12
     :cond_1
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
 .end method
 
-.method public onPrimaryNavigationFragmentChanged(Z)V
+.method public W0(Z)V
     .locals 1
 
-    .line 300
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    .line 1
+    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
     if-eqz v0, :cond_0
 
-    .line 301
-    invoke-virtual {v0, p1}, Landroidx/navigation/NavHostController;->enableOnBackPressed(Z)V
+    if-eqz v0, :cond_1
+
+    .line 2
+    invoke-virtual {v0, p1}, Lh1/v;->s(Z)V
 
     goto :goto_0
 
-    .line 303
+    .line 3
     :cond_0
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/navigation/fragment/NavHostFragment;->mIsPrimaryBeforeOnCreate:Ljava/lang/Boolean;
+    iput-object p1, p0, Landroidx/navigation/fragment/NavHostFragment;->j0:Ljava/lang/Boolean;
 
+    :cond_1
     :goto_0
     return-void
 .end method
 
-.method public onSaveInstanceState(Landroid/os/Bundle;)V
+.method public Z0(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 397
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    const-string v0, "outState"
 
-    .line 398
-    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Landroidx/navigation/NavHostController;->saveState()Landroid/os/Bundle;
+    .line 1
+    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->Z0(Landroid/os/Bundle;)V
+
+    .line 2
+    iget-object v0, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
+
+    invoke-static {v0}, Loi/k;->d(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Lh1/m;->f0()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -785,12 +616,12 @@
 
     const-string v1, "android-support-nav:fragment:navControllerState"
 
-    .line 400
+    .line 3
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    .line 402
+    .line 4
     :cond_0
-    iget-boolean v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mDefaultNavHost:Z
+    iget-boolean v0, p0, Landroidx/navigation/fragment/NavHostFragment;->m0:Z
 
     if-eqz v0, :cond_1
 
@@ -798,106 +629,241 @@
 
     const-string v1, "android-support-nav:fragment:defaultHost"
 
-    .line 403
+    .line 5
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 405
+    .line 6
     :cond_1
-    iget v0, p0, Landroidx/navigation/fragment/NavHostFragment;->mGraphId:I
+    iget v0, p0, Landroidx/navigation/fragment/NavHostFragment;->l0:I
 
     if-eqz v0, :cond_2
 
     const-string v1, "android-support-nav:fragment:graphId"
 
-    .line 406
+    .line 7
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     :cond_2
     return-void
 .end method
 
-.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 2
+.method public c1(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 1
 
-    .line 356
-    invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    const-string v0, "view"
 
-    .line 357
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->c1(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 2
     instance-of p2, p1, Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_1
 
-    .line 360
-    iget-object p2, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    .line 3
+    iget-object p2, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
 
-    invoke-static {p1, p2}, Landroidx/navigation/Navigation;->setViewNavController(Landroid/view/View;Landroidx/navigation/NavController;)V
+    invoke-static {p1, p2}, Lh1/c0;->f(Landroid/view/View;Lh1/m;)V
 
-    .line 363
+    .line 4
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
-    .line 364
+    .line 5
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p1
 
+    const-string p2, "null cannot be cast to non-null type android.view.View"
+
+    invoke-static {p1, p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
     check-cast p1, Landroid/view/View;
 
-    iput-object p1, p0, Landroidx/navigation/fragment/NavHostFragment;->mViewParent:Landroid/view/View;
+    iput-object p1, p0, Landroidx/navigation/fragment/NavHostFragment;->k0:Landroid/view/View;
 
-    .line 365
+    .line 6
+    invoke-static {p1}, Loi/k;->d(Ljava/lang/Object;)V
+
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
 
-    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->getId()I
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->N()I
 
     move-result p2
 
     if-ne p1, p2, :cond_0
 
-    .line 366
-    iget-object p1, p0, Landroidx/navigation/fragment/NavHostFragment;->mViewParent:Landroid/view/View;
+    .line 7
+    iget-object p1, p0, Landroidx/navigation/fragment/NavHostFragment;->k0:Landroid/view/View;
 
-    iget-object p2, p0, Landroidx/navigation/fragment/NavHostFragment;->mNavController:Landroidx/navigation/NavHostController;
+    invoke-static {p1}, Loi/k;->d(Ljava/lang/Object;)V
 
-    invoke-static {p1, p2}, Landroidx/navigation/Navigation;->setViewNavController(Landroid/view/View;Landroidx/navigation/NavController;)V
+    iget-object p2, p0, Landroidx/navigation/fragment/NavHostFragment;->i0:Lh1/v;
+
+    invoke-static {p1, p2}, Lh1/c0;->f(Landroid/view/View;Lh1/m;)V
 
     :cond_0
     return-void
 
-    .line 358
+    .line 8
     :cond_1
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "created host view "
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, " is not a ViewGroup"
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
     new-instance p2, Ljava/lang/IllegalStateException;
 
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "created host view "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    const-string v0, " is not a ViewGroup"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p2
+.end method
+
+.method public d2()Lh1/d0;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lh1/d0<",
+            "+",
+            "Lj1/e$b;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lj1/e;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->H1()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "requireContext()"
+
+    invoke-static {v1, v2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->B()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v2
+
+    const-string v3, "childFragmentManager"
+
+    invoke-static {v2, v3}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->e2()I
+
+    move-result v3
+
+    invoke-direct {v0, v1, v2, v3}, Lj1/e;-><init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;I)V
+
+    return-object v0
+.end method
+
+.method public final e2()I
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->N()I
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    sget v0, Lj1/f;->nav_host_fragment_container:I
+
+    :goto_0
+    return v0
+.end method
+
+.method public f2(Lh1/m;)V
+    .locals 5
+
+    const-string v0, "navController"
+
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p1}, Lh1/m;->F()Lh1/e0;
+
+    move-result-object v0
+
+    .line 2
+    new-instance v1, Lj1/c;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->H1()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-string v3, "requireContext()"
+
+    invoke-static {v2, v3}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->B()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v3
+
+    const-string v4, "childFragmentManager"
+
+    invoke-static {v3, v4}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v1, v2, v3}, Lj1/c;-><init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;)V
+
+    .line 3
+    invoke-virtual {v0, v1}, Lh1/e0;->b(Lh1/d0;)Lh1/d0;
+
+    .line 4
+    invoke-virtual {p1}, Lh1/m;->F()Lh1/e0;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Landroidx/navigation/fragment/NavHostFragment;->d2()Lh1/d0;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lh1/e0;->b(Lh1/d0;)Lh1/d0;
+
+    return-void
+.end method
+
+.method public g2(Lh1/v;)V
+    .locals 1
+
+    const-string v0, "navHostController"
+
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Landroidx/navigation/fragment/NavHostFragment;->f2(Lh1/m;)V
+
+    return-void
 .end method

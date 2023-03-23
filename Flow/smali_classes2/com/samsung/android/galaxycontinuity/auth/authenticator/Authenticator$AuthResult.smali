@@ -36,9 +36,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
-    .line 20
+    .line 21
     new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
     const-string v1, "AUTH_RESULT_NONE"
@@ -49,72 +49,77 @@
 
     sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_NONE:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    .line 21
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
-
-    const-string v1, "AUTH_RESULT_CANCELED"
-
-    const/4 v3, 0x1
-
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_CANCELED:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
-
     .line 22
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    const-string v1, "AUTH_RESULT_SUCCESS"
+    const-string v3, "AUTH_RESULT_CANCELED"
 
-    const/4 v4, 0x2
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v4}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_SUCCESS:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_CANCELED:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
     .line 23
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    new-instance v3, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    const-string v1, "AUTH_RESULT_FAILED"
+    const-string v5, "AUTH_RESULT_SUCCESS"
 
-    const/4 v5, 0x3
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_FAILED:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_SUCCESS:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    const/4 v1, 0x4
+    .line 24
+    new-instance v5, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    const-string v7, "AUTH_RESULT_FAILED"
 
-    .line 19
-    sget-object v6, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_NONE:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    const/4 v8, 0x3
 
-    aput-object v6, v1, v2
+    invoke-direct {v5, v7, v8}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;-><init>(Ljava/lang/String;I)V
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_CANCELED:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    sput-object v5, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_FAILED:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    aput-object v2, v1, v3
+    const/4 v7, 0x4
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_SUCCESS:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    new-array v7, v7, [Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    aput-object v2, v1, v4
+    aput-object v0, v7, v2
 
-    aput-object v0, v1, v5
+    aput-object v1, v7, v4
 
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->$VALUES:[Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
+
+    .line 20
+    sput-object v7, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->$VALUES:[Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 19
+    .line 20
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -122,8 +127,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 19
+    .line 20
     const-class v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -138,7 +151,7 @@
 .method public static values()[Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
     .locals 1
 
-    .line 19
+    .line 20
     sget-object v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->$VALUES:[Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
     invoke-virtual {v0}, [Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->clone()Ljava/lang/Object;

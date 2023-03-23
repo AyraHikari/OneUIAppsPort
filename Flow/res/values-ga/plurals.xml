@@ -8,22 +8,4 @@
         <item quantity="few">%d chomhad curtha le liosta na n-aistrithe comhaid.</item>
         <item quantity="many">%d gcomhad curtha le liosta na n-aistrithe comhaid.</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Cláraigh agus bainistigh suas le %d ríomhaire nó táibléad in Samsung Flow.
-
-Ní féidir ach ríomhaire nó táibléad amháin a nascadh le d'fhón ag an am céanna. Beidh ort ceann acu a roghnú nuair a dhéanfaidh siad araon, na ríomhairí nó na táibléid chláraithe, iarracht nascadh le d'fhón."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Cláraigh agus bainistigh suas le %d ríomhaire nó táibléad in Samsung Flow.
-
-Ní féidir ach ríomhaire nó táibléad amháin a bheith nasctha le d'fhón ag an am céanna. Beidh ort ceann acu a roghnú nuair a dhéanfaidh siad araon, an ríomhaire nó an táibléad cláraithe, iarracht nascadh le d'fhón."</item>
-        <item quantity="two">"Cláraigh agus bainistigh suas le %d ríomhaire nó tháibléad in Samsung Flow.
-
-Ní féidir ach ríomhaire nó táibléad amháin a nascadh le d'fhón ag an am céanna. Beidh ort ceann acu a roghnú nuair a dhéanfaidh siad araon, na ríomhairí nó na táibléid chláraithe, iarracht nascadh le d'fhón."</item>
-        <item quantity="few">"Cláraigh agus bainistigh suas le %d ríomhaire nó tháibléad in Samsung Flow.
-
-Ní féidir ach ríomhaire nó táibléad amháin a nascadh le d'fhón ag an am céanna. Beidh ort ceann acu a roghnú nuair a dhéanfaidh siad araon, na ríomhairí nó na táibléid chláraithe, iarracht nascadh le d'fhón."</item>
-        <item quantity="many">"Cláraigh agus bainistigh suas le %d ríomhaire nó dtáibléad in Samsung Flow.
-
-Ní féidir ach ríomhaire nó táibléad amháin a nascadh le d'fhón ag an am céanna. Beidh ort ceann acu a roghnú nuair a dhéanfaidh siad araon, na ríomhairí nó na táibléid chláraithe, iarracht nascadh le d'fhón."</item>
-    </plurals>
 </resources>

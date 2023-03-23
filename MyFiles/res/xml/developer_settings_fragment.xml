@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="UI options" android:key="pref_key_developer_option">
+        <DropDownPreference android:title="Select Model Grade" android:key="pref_key_select_model_grade" android:summary="select model grade" />
+        <SwitchPreferenceCompat android:title="Tablet Ui" android:key="pref_key_tablet_ui" android:summary="enable/disable tablet Device" android:defaultValue="false" />
+        <SwitchPreferenceCompat android:title="Support Minimized Sip" android:key="pref_key_scroll_da_enabled" android:summary="enable/disable MinimizedSip" android:defaultValue="false" />
+        <DropDownPreference android:title="Select picker mode" android:key="pref_key_picker_mode" android:summary="send intent for picker mode test" />
+        <SwitchPreferenceCompat android:title="Support Immersive Scroll" android:key="pref_key_immersive_scroll" android:summary="enable/disable Immersive Scroll" android:defaultValue="false" />
+        <SwitchPreferenceCompat android:title="Support Manage Home" android:key="pref_key_manage_home" android:summary="enable/disable manage home" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Database">
+        <androidx.preference.Preference android:title="MyFiles database" android:key="pref_key_get_myfiles_database" android:summary="Get MyFiles database" />
+        <SwitchPreferenceCompat android:title="Auto fill" android:key="pref_key_nsm_auto_fill" android:summary="auto fill for NSM" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -28,11 +28,7 @@
     <string name="abc_shareactionprovider_share_with_application">Compartilhar com %s</string>
     <string name="abc_toolbar_collapse_description">Recolher</string>
     <string name="copy">Copiar</string>
-    <string name="copy_toast_msg">Link copiado para a área de transferência</string>
     <string name="expand_button_title">Avançado</string>
-    <string name="fallback_menu_item_copy_link">Copiar link</string>
-    <string name="fallback_menu_item_open_in_browser">Abrir no navegador</string>
-    <string name="fallback_menu_item_share_link">Compartilhar link</string>
     <string name="nav_app_bar_navigate_up_description">Navegar para cima</string>
     <string name="nav_app_bar_open_drawer_description">Abrir gaveta de navegação</string>
     <string name="not_set">Não definido</string>

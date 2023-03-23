@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Rekisteröi ja hallitse %d tietokonetta tai tablet-laitetta Samsung Flow’ssa.
-
-Vain yksi tietokone tai tablet-laite voidaan yhdistää puhelimeen kerrallaan. Sinun on valittava niistä toinen, kun molemmat rekisteröidyt tietokoneet tai tablet-laitteet yrittävät muodostaa yhteyden puhelimeen."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Rekisteröi ja hallitse %d tietokonetta tai tablet-laitetta Samsung Flow’ssa.
-
-Vain yksi tietokone tai tablet-laite voidaan yhdistää puhelimeen kerrallaan. Sinun on valittava niistä toinen, kun molemmat rekisteröidyt tietokoneet tai tablet-laitteet yrittävät muodostaa yhteyden puhelimeen."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d uutta ilmoitusta</item>
+        <item quantity="one">%d uusi ilmoitus</item>
     </plurals>
 </resources>

@@ -31,20 +31,6 @@
 
 .field public static final enum SOCKET_CONNECTION_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-.field public static final enum SOCKET_DATA_ALL_RECEIVED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-.field public static final enum SOCKET_DATA_ALL_SENT:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-.field public static final enum SOCKET_DATA_RECEIVED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-.field public static final enum SOCKET_DATA_RECEIVING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-.field public static final enum SOCKET_DATA_SENDING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-.field public static final enum SOCKET_DATA_SENT:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-.field public static final enum SOCKET_DATA_TRANSFER_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
 .field public static final enum SOCKET_NONE:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
 .field public static final enum SOCKET_SERVER_OPENED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
@@ -52,9 +38,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 11
 
-    .line 109
+    .line 117
     new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
     const-string v1, "SOCKET_NONE"
@@ -65,192 +51,90 @@
 
     sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_NONE:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    .line 110
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_CONNECTING"
-
-    const/4 v3, 0x1
-
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    .line 111
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_CONNECTED"
-
-    const/4 v4, 0x2
-
-    invoke-direct {v0, v1, v4}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    .line 112
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_CONNECTION_FAILED"
-
-    const/4 v5, 0x3
-
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTION_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    .line 113
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_SERVER_OPENED"
-
-    const/4 v6, 0x4
-
-    invoke-direct {v0, v1, v6}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_SERVER_OPENED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    .line 114
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_DATA_SENDING"
-
-    const/4 v7, 0x5
-
-    invoke-direct {v0, v1, v7}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_SENDING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    .line 115
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_DATA_SENT"
-
-    const/4 v8, 0x6
-
-    invoke-direct {v0, v1, v8}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_SENT:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    .line 116
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_DATA_ALL_SENT"
-
-    const/4 v9, 0x7
-
-    invoke-direct {v0, v1, v9}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_ALL_SENT:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    .line 117
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    const-string v1, "SOCKET_DATA_RECEIVING"
-
-    const/16 v10, 0x8
-
-    invoke-direct {v0, v1, v10}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_RECEIVING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
     .line 118
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    const-string v1, "SOCKET_DATA_RECEIVED"
+    const-string v3, "SOCKET_CONNECTING"
 
-    const/16 v11, 0x9
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v11}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_RECEIVED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
     .line 119
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    new-instance v3, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    const-string v1, "SOCKET_DATA_ALL_RECEIVED"
+    const-string v5, "SOCKET_CONNECTED"
 
-    const/16 v12, 0xa
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v12}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_ALL_RECEIVED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
     .line 120
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    new-instance v5, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    const-string v1, "SOCKET_DATA_TRANSFER_FAILED"
+    const-string v7, "SOCKET_CONNECTION_FAILED"
 
-    const/16 v13, 0xb
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v13}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_TRANSFER_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    sput-object v5, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTION_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    const/16 v1, 0xc
+    .line 121
+    new-instance v7, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    const-string v9, "SOCKET_SERVER_OPENED"
 
-    .line 108
-    sget-object v14, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_NONE:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    const/4 v10, 0x4
 
-    aput-object v14, v1, v2
+    invoke-direct {v7, v9, v10}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;-><init>(Ljava/lang/String;I)V
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    sput-object v7, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_SERVER_OPENED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    aput-object v2, v1, v3
+    const/4 v9, 0x5
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    new-array v9, v9, [Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    aput-object v2, v1, v4
+    aput-object v0, v9, v2
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTION_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    aput-object v1, v9, v4
 
-    aput-object v2, v1, v5
+    aput-object v3, v9, v6
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_SERVER_OPENED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    aput-object v5, v9, v8
 
-    aput-object v2, v1, v6
+    aput-object v7, v9, v10
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_SENDING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    aput-object v2, v1, v7
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_SENT:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    aput-object v2, v1, v8
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_ALL_SENT:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    aput-object v2, v1, v9
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_RECEIVING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    aput-object v2, v1, v10
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_RECEIVED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    aput-object v2, v1, v11
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_ALL_RECEIVED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    aput-object v2, v1, v12
-
-    aput-object v0, v1, v13
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    .line 116
+    sput-object v9, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 108
+    .line 116
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -258,8 +142,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 108
+    .line 116
     const-class v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -274,7 +166,7 @@
 .method public static values()[Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
     .locals 1
 
-    .line 108
+    .line 116
     sget-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
     invoke-virtual {v0}, [Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->clone()Ljava/lang/Object;

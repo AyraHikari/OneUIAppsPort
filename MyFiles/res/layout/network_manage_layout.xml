@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/network_manage_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" style="@style/CollapsingToolbarLayoutStyle">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarStyle" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:contentInsetEnd="@dimen/action_bar_content_inset" app:contentInsetStart="@dimen/action_bar_content_inset" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <View android:id="@id/start_margin" android:background="@color/light_theme_background_color" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/network_manage_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:foreground="@drawable/rounded_corner" android:layout_weight="1.0">
+                    <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:paddingTop="@dimen/network_manage_server_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false" android:paddingStart="@dimen/network_manage_server_padding_start_end" android:paddingEnd="@dimen/network_manage_server_padding_start_end">
+                        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <include android:id="@id/address" layout="@layout/network_edit_layout" />
+                            <include android:id="@id/port" layout="@layout/network_edit_layout" />
+                            <include android:id="@id/security_mode" layout="@layout/network_spinner_layout" />
+                            <include android:id="@id/user_name" layout="@layout/network_edit_layout" />
+                            <include android:id="@id/signin" layout="@layout/network_password_layout" />
+                            <include android:id="@id/passphrases" layout="@layout/network_edit_layout" />
+                            <include android:id="@id/encryption" layout="@layout/network_spinner_layout" />
+                            <include android:id="@id/transfer_mode" layout="@layout/network_spinner_layout" />
+                            <include android:id="@id/display_name" layout="@layout/network_edit_layout" />
+                            <include android:id="@id/encoding" layout="@layout/network_spinner_layout" />
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </FrameLayout>
+                <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/bottom_navigation" android:background="@color/light_theme_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:menu="@menu/network_manage_menu_bottom_bar" style="@style/BottomMenuTextType" />
+            </LinearLayout>
+            <View android:id="@id/end_margin" android:background="@color/light_theme_background_color" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

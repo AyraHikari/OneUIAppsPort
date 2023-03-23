@@ -2,7 +2,7 @@
 <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
-        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="48.0dip" android:layout_height="48.0dip" style="?android:progressBarStyleLarge" />
+        <androidx.appcompat.widget.SeslProgressBar android:layout_gravity="center_vertical" android:layout_width="48.0dip" android:layout_height="48.0dip" style="?android:progressBarStyleLarge" />
         <TextView android:textSize="@dimen/auth_guide_text_size" android:textColor="@color/dialog_desc_color" android:layout_gravity="center_vertical" android:id="@id/verify_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/processing" android:layout_marginStart="16.0dip" />
     </LinearLayout>
 </LinearLayout>

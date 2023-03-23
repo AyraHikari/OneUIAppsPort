@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/category_folder_grid_thumbnail_border_radius" />
+            <solid android:color="@color/grid_item_selection_state_color" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/category_folder_selected_grid_thumbnail_border_radius" />
+            <solid android:color="@color/grid_item_selected_state_color" />
+            <stroke android:width="@dimen/thumbnail_focused_border_width" android:color="@color/color_primary" />
+        </shape>
+    </item>
+</selector>

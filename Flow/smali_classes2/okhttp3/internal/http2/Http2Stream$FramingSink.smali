@@ -32,12 +32,14 @@
 
 .field final synthetic this$0:Lokhttp3/internal/http2/Http2Stream;
 
+.field private trailers:Lokhttp3/Headers;
+
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 461
+    .line 517
     const-class v0, Lokhttp3/internal/http2/Http2Stream;
 
     return-void
@@ -46,12 +48,12 @@
 .method constructor <init>(Lokhttp3/internal/http2/Http2Stream;)V
     .locals 0
 
-    .line 461
+    .line 517
     iput-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 468
+    .line 524
     new-instance p1, Lokio/Buffer;
 
     invoke-direct {p1}, Lokio/Buffer;-><init>()V
@@ -59,6 +61,15 @@
     iput-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
     return-void
+.end method
+
+.method static synthetic access$302(Lokhttp3/internal/http2/Http2Stream$FramingSink;Lokhttp3/Headers;)Lokhttp3/Headers;
+    .locals 0
+
+    .line 517
+    iput-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->trailers:Lokhttp3/Headers;
+
+    return-object p1
 .end method
 
 .method private emitFrame(Z)V
@@ -69,12 +80,12 @@
         }
     .end annotation
 
-    .line 491
+    .line 550
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     monitor-enter v0
 
-    .line 492
+    .line 551
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
@@ -84,7 +95,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 494
+    .line 553
     :goto_0
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
@@ -111,7 +122,7 @@
 
     if-nez v1, :cond_0
 
-    .line 495
+    .line 554
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     invoke-virtual {v1}, Lokhttp3/internal/http2/Http2Stream;->waitForIo()V
@@ -120,7 +131,7 @@
 
     goto :goto_0
 
-    .line 498
+    .line 557
     :cond_0
     :try_start_2
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
@@ -129,12 +140,12 @@
 
     invoke-virtual {v1}, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->exitAndThrowIfTimedOut()V
 
-    .line 501
+    .line 560
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     invoke-virtual {v1}, Lokhttp3/internal/http2/Http2Stream;->checkOutNotClosed()V
 
-    .line 502
+    .line 561
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-wide v1, v1, Lokhttp3/internal/http2/Http2Stream;->bytesLeftInWriteWindow:J
@@ -149,7 +160,7 @@
 
     move-result-wide v9
 
-    .line 503
+    .line 562
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-wide v2, v1, Lokhttp3/internal/http2/Http2Stream;->bytesLeftInWriteWindow:J
@@ -158,30 +169,22 @@
 
     iput-wide v2, v1, Lokhttp3/internal/http2/Http2Stream;->bytesLeftInWriteWindow:J
 
-    .line 504
+    .line 563
     monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 506
+    .line 565
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
 
     invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->enter()V
 
-    .line 508
-    :try_start_3
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
-
-    iget-object v5, v0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
-
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
-
-    iget v6, v0, Lokhttp3/internal/http2/Http2Stream;->id:I
-
     if-eqz p1, :cond_1
 
+    .line 567
+    :try_start_3
     iget-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
     invoke-virtual {p1}, Lokio/Buffer;->size()J
@@ -196,11 +199,25 @@
 
     goto :goto_1
 
+    :catchall_0
+    move-exception p1
+
+    goto :goto_2
+
     :cond_1
     const/4 p1, 0x0
 
     :goto_1
     move v7, p1
+
+    .line 568
+    iget-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
+
+    iget-object v5, p1, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
+
+    iget-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
+
+    iget v6, p1, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     iget-object v8, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
@@ -208,7 +225,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 510
+    .line 570
     iget-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object p1, p1, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
@@ -217,9 +234,7 @@
 
     return-void
 
-    :catchall_0
-    move-exception p1
-
+    :goto_2
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
@@ -231,7 +246,7 @@
     :catchall_1
     move-exception p1
 
-    .line 498
+    .line 557
     :try_start_4
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
@@ -244,7 +259,7 @@
     :catchall_2
     move-exception p1
 
-    .line 504
+    .line 563
     monitor-exit v0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
@@ -262,12 +277,12 @@
         }
     .end annotation
 
-    .line 531
+    .line 591
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     monitor-enter v0
 
-    .line 532
+    .line 592
     :try_start_0
     iget-boolean v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->closed:Z
 
@@ -277,13 +292,13 @@
 
     return-void
 
-    .line 533
+    .line 593
     :cond_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 534
+    .line 594
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->sink:Lokhttp3/internal/http2/Http2Stream$FramingSink;
@@ -292,9 +307,9 @@
 
     const/4 v1, 0x1
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_6
 
-    .line 536
+    .line 598
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->size()J
@@ -305,10 +320,75 @@
 
     cmp-long v0, v2, v4
 
+    const/4 v2, 0x0
+
     if-lez v0, :cond_1
 
-    .line 537
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_1
+    move v0, v2
+
+    .line 599
     :goto_0
+    iget-object v3, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->trailers:Lokhttp3/Headers;
+
+    if-eqz v3, :cond_2
+
+    move v3, v1
+
+    goto :goto_1
+
+    :cond_2
+    move v3, v2
+
+    :goto_1
+    if-eqz v3, :cond_4
+
+    .line 601
+    :goto_2
+    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
+
+    invoke-virtual {v0}, Lokio/Buffer;->size()J
+
+    move-result-wide v6
+
+    cmp-long v0, v6, v4
+
+    if-lez v0, :cond_3
+
+    .line 602
+    invoke-direct {p0, v2}, Lokhttp3/internal/http2/Http2Stream$FramingSink;->emitFrame(Z)V
+
+    goto :goto_2
+
+    .line 604
+    :cond_3
+    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
+
+    iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
+
+    iget-object v2, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
+
+    iget v2, v2, Lokhttp3/internal/http2/Http2Stream;->id:I
+
+    iget-object v3, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->trailers:Lokhttp3/Headers;
+
+    invoke-static {v3}, Lokhttp3/internal/Util;->toHeaderBlock(Lokhttp3/Headers;)Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v2, v1, v3}, Lokhttp3/internal/http2/Http2Connection;->writeHeaders(IZLjava/util/List;)V
+
+    goto :goto_4
+
+    :cond_4
+    if-eqz v0, :cond_5
+
+    .line 606
+    :goto_3
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->size()J
@@ -317,15 +397,15 @@
 
     cmp-long v0, v2, v4
 
-    if-lez v0, :cond_2
+    if-lez v0, :cond_6
 
-    .line 538
+    .line 607
     invoke-direct {p0, v1}, Lokhttp3/internal/http2/Http2Stream$FramingSink;->emitFrame(Z)V
 
-    goto :goto_0
+    goto :goto_3
 
-    .line 542
-    :cond_1
+    .line 610
+    :cond_5
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v2, v0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
@@ -342,29 +422,30 @@
 
     invoke-virtual/range {v2 .. v7}, Lokhttp3/internal/http2/Http2Connection;->writeData(IZLokio/Buffer;J)V
 
-    .line 545
-    :cond_2
+    .line 613
+    :cond_6
+    :goto_4
     iget-object v2, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     monitor-enter v2
 
-    .line 546
+    .line 614
     :try_start_1
     iput-boolean v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->closed:Z
 
-    .line 547
+    .line 615
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 548
+    .line 616
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
 
     invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Connection;->flush()V
 
-    .line 549
+    .line 617
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Stream;->cancelStreamIfNecessary()V
@@ -374,7 +455,7 @@
     :catchall_0
     move-exception v0
 
-    .line 547
+    .line 615
     :try_start_2
     monitor-exit v2
     :try_end_2
@@ -385,7 +466,7 @@
     :catchall_1
     move-exception v1
 
-    .line 533
+    .line 593
     :try_start_3
     monitor-exit v0
     :try_end_3
@@ -402,23 +483,23 @@
         }
     .end annotation
 
-    .line 516
+    .line 576
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     monitor-enter v0
 
-    .line 517
+    .line 577
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     invoke-virtual {v1}, Lokhttp3/internal/http2/Http2Stream;->checkOutNotClosed()V
 
-    .line 518
+    .line 578
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 519
+    .line 579
     :goto_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
@@ -434,10 +515,10 @@
 
     const/4 v0, 0x0
 
-    .line 520
+    .line 580
     invoke-direct {p0, v0}, Lokhttp3/internal/http2/Http2Stream$FramingSink;->emitFrame(Z)V
 
-    .line 521
+    .line 581
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
@@ -452,7 +533,7 @@
     :catchall_0
     move-exception v1
 
-    .line 518
+    .line 578
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -464,7 +545,7 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 526
+    .line 586
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
@@ -480,12 +561,12 @@
         }
     .end annotation
 
-    .line 479
+    .line 538
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->write(Lokio/Buffer;J)V
 
-    .line 480
+    .line 539
     :goto_0
     iget-object p1, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
@@ -501,7 +582,7 @@
 
     const/4 p1, 0x0
 
-    .line 481
+    .line 540
     invoke-direct {p0, p1}, Lokhttp3/internal/http2/Http2Stream$FramingSink;->emitFrame(Z)V
 
     goto :goto_0

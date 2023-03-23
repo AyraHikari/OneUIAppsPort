@@ -17,8 +17,22 @@
 .field private static final sCreateFromFamiliesWithDefault:Ljava/lang/reflect/Method;
 
 .field private static final sFontFamily:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 .field private static final sFontFamilyCtor:Ljava/lang/reflect/Constructor;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/reflect/Constructor<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -171,6 +185,22 @@
 
 .method private static addFontWeightStyle(Ljava/lang/Object;Ljava/nio/ByteBuffer;IIZ)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "family",
+            "buffer",
+            "ttcIndex",
+            "weight",
+            "style"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -238,6 +268,14 @@
 
 .method private static createFromFamiliesWithDefault(Ljava/lang/Object;)Landroid/graphics/Typeface;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "family"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -279,24 +317,21 @@
 .end method
 
 .method public static isUsable()Z
-    .locals 2
+    .locals 3
 
     .line 94
     sget-object v0, Landroidx/core/graphics/TypefaceCompatApi24Impl;->sAddFontWeightStyle:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
 
-    const-string v0, "TypefaceCompatApi24Impl"
+    const-string v1, "TypefaceCompatApi24Impl"
 
-    const-string v1, "Unable to collect necessary private methods.Fallback to legacy implementation."
+    const-string v2, "Unable to collect necessary private methods.Fallback to legacy implementation."
 
     .line 95
-    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 98
     :cond_0
-    sget-object v0, Landroidx/core/graphics/TypefaceCompatApi24Impl;->sAddFontWeightStyle:Ljava/lang/reflect/Method;
-
     if-eqz v0, :cond_1
 
     const/4 v0, 0x1
@@ -341,6 +376,20 @@
 # virtual methods
 .method public createFromFontFamilyFilesResourceEntry(Landroid/content/Context;Landroidx/core/content/res/FontResourcesParserCompat$FontFamilyFilesResourceEntry;Landroid/content/res/Resources;I)Landroid/graphics/Typeface;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "entry",
+            "resources",
+            "style"
+        }
+    .end annotation
 
     .line 167
     invoke-static {}, Landroidx/core/graphics/TypefaceCompatApi24Impl;->newFamily()Ljava/lang/Object;
@@ -419,6 +468,20 @@
 
 .method public createFromFontInfo(Landroid/content/Context;Landroid/os/CancellationSignal;[Landroidx/core/provider/FontsContractCompat$FontInfo;I)Landroid/graphics/Typeface;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cancellationSignal",
+            "fonts",
+            "style"
+        }
+    .end annotation
 
     .line 135
     invoke-static {}, Landroidx/core/graphics/TypefaceCompatApi24Impl;->newFamily()Ljava/lang/Object;

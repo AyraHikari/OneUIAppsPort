@@ -18,7 +18,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 19
+    .line 17
     const-class v0, Landroid/graphics/drawable/StateListDrawable;
 
     sput-object v0, Landroidx/reflect/graphics/drawable/SeslStateListDrawableReflector;->mClass:Ljava/lang/Class;
@@ -29,7 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 17
+    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,9 +37,17 @@
 
 .method public static getStateCount(Landroid/graphics/drawable/StateListDrawable;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     .line 29
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -102,9 +110,19 @@
 
 .method public static getStateDrawable(Landroid/graphics/drawable/StateListDrawable;I)Landroid/graphics/drawable/Drawable;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "drawable",
+            "index"
+        }
+    .end annotation
 
     .line 53
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -181,9 +199,19 @@
 
 .method public static getStateSet(Landroid/graphics/drawable/StateListDrawable;I)[I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "drawable",
+            "index"
+        }
+    .end annotation
 
     .line 77
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x1
 
@@ -248,8 +276,6 @@
     if-eqz p1, :cond_1
 
     .line 86
-    check-cast p0, [I
-
     check-cast p0, [I
 
     return-object p0

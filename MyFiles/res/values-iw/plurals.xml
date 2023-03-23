@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">ניתן לבחור לכל היותר %d פריטים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ניתן לבחור פריט %d בלבד.</item>
+        <item quantity="two">ניתן לבחור לכל היותר %d פריטים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">ניתן לבחור לכל היותר %d פריטים.</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">לא ניתן להעביר %d קבצים לסל המיחזור</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">לא ניתן להעביר קובץ %d לסל המיחזור</item>
+        <item quantity="two">לא ניתן להעביר %d קבצים לסל המיחזור</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">לא ניתן להעביר %d קבצים לסל המיחזור</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">לא ניתן להעביר %d תיקיות לסל המיחזור</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">אין אפשרות להעביר תיקייה %d לסל המיחזור</item>
+        <item quantity="two">לא ניתן להעביר %d תיקיות לסל המיחזור</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">לא ניתן להעביר %d תיקיות לסל המיחזור</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">לא ניתן להעביר %d פריטים לסל המיחזור</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">לא ניתן להעביר פריט %d לסל המיחזור</item>
+        <item quantity="two">לא ניתן להעביר %d פריטים לסל המיחזור</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">לא ניתן להעביר %d פריטים לסל המיחזור</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d מתוך הקבצים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d מתוך הקבצים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+        <item quantity="two">%d מתוך הקבצים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d מתוך הקבצים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d מתוך התיקיות שנבחרו יימחקו מכיוון שהן בענן או בהתקן אחסון USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d מתוך התיקיות שנבחרו יימחקו מכיוון שהן בענן או בהתקן אחסון USB.</item>
+        <item quantity="two">%d מתוך התיקיות שנבחרו יימחקו מכיוון שהן בענן או בהתקן אחסון USB.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d מתוך התיקיות שנבחרו יימחקו מכיוון שהן בענן או בהתקן אחסון USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d מתוך הפריטים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d מתוך הפריטים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+        <item quantity="two">%d מתוך הפריטים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d מתוך הפריטים שנבחרו יימחקו מכיוון שהם בענן או בהתקן אחסון USB.</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">דוחס %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">דוחס קובץ %d …</item>
+        <item quantity="two">דוחס %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">דוחס %d קבצים …</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">דוחס %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">דוחס %d קובץ…</item>
+        <item quantity="two">דוחס %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">דוחס %d קבצים…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">דוחס %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">דוחס %d תיקייה…</item>
+        <item quantity="two">דוחס %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">דוחס %d תיקיות…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">דוחס %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">דוחס %d תיקייה…</item>
+        <item quantity="two">דוחס %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">דוחס %d תיקיות…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">דוחס %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">דוחס %d פריט…</item>
+        <item quantity="two">דוחס %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">דוחס %d פריטים…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">דוחס %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">דוחס %d פריט…</item>
+        <item quantity="two">דוחס %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">דוחס %d פריטים…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">מעתיק %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעתיק קובץ %d…</item>
+        <item quantity="two">מעתיק %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעתיק %d קבצים…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">מעתיק %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעתיק %d קובץ…</item>
+        <item quantity="two">מעתיק %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעתיק %d קבצים…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">מעתיק %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעתיק תיקייה %d…</item>
+        <item quantity="two">מעתיק %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעתיק %d תיקיות…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">מעתיק %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעתיק %d תיקייה…</item>
+        <item quantity="two">מעתיק %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעתיק %d תיקיות…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">מעתיק %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעתיק פריט %d…</item>
+        <item quantity="two">מעתיק %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעתיק %d פריטים…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">מעתיק %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעתיק %d פריט…</item>
+        <item quantity="two">מעתיק %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעתיק %d פריטים…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">האם למחוק %d קבצים מהטלפון?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק קובץ %d מהטלפון?</item>
+        <item quantity="two">האם למחוק %d קבצים מהטלפון?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d קבצים מהטלפון?</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">האם למחוק %d קבצים מהטאבלט?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק %d קובץ מהטאבלט?</item>
+        <item quantity="two">האם למחוק %d קבצים מהטבאלט?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d קבצים מהטבאלט?</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">האם למחוק %d תיקיות מהטלפון?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק תיקייה %d מהטלפון?</item>
+        <item quantity="two">האם למחוק %d תיקיות מהטלפון?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d תיקיות מהטלפון?</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">האם למחוק %d תיקיות מהטאבלט?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק %d תיקייה מהטאבלט?</item>
+        <item quantity="two">האם למחוק %d תיקיות מהטאבלט?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d תיקיות מהטאבלט?</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">האם למחוק %d פריטים מהטלפון?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק פריט %d מהטלפון?</item>
+        <item quantity="two">האם למחוק %d פריטים מהטלפון?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d פריטים מהטלפון?</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">האם למחוק %d פריטים מהטאבלט?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק %d פריט מהטאבלט?</item>
+        <item quantity="two">האם למחוק %d פריטים מהטאבלט?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d פריטים מהטאבלט?</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">מוחק %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק %d קובץ…</item>
+        <item quantity="two">מוחק %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק %d קבצים…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">מוחק %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק %d תיקייה…</item>
+        <item quantity="two">מוחק %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק %d תיקיות…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">מוחק %d פריטים מסל המיחזור…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק %d פריט מסל המיחזור…</item>
+        <item quantity="two">מוחק %d פריטים מסל המיחזור…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק %d פריטים מסל המיחזור…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">מוחק %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק %d פריט…</item>
+        <item quantity="two">מוחק %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק %d פריטים…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">מחלץ %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מחלץ %d קובץ…</item>
+        <item quantity="two">מחלץ %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מחלץ %d קבצים…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">מחלץ %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מחלץ %d תיקייה…</item>
+        <item quantity="two">מחלץ %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מחלץ %d תיקיות…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">מחלץ %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מחלץ %d פריט…</item>
+        <item quantity="two">מחלץ %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מחלץ %d פריטים…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d קבצים יועברו אף הם אל סל המיחזור ב- %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">קובץ %1$d יועבר אף הוא אל סל המיחזור ב- %2$s.</item>
+        <item quantity="two">%1$d קבצים יועברו אף הם אל סל המיחזור ב- %2$s.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$d קבצים יועברו אף הם אל סל המיחזור ב- %2$s.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">משחזר %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">משחזר %d קובץ…</item>
+        <item quantity="two">משחזר %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">משחזר %d קבצים…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d תיקיות יועברו אל סל המיחזור ב-%2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d תיקייה תועבר אל סל המיחזור ב-%2$s.</item>
+        <item quantity="two">%1$d תיקיות יועברו אל סל המיחזור ב-%2$s.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$d תיקיות יועברו אל סל המיחזור ב-%2$s.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">משחזר %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">משחזר %d תיקייה…</item>
+        <item quantity="two">משחזר %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">משחזר %d תיקיות…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">האחסון הפנימי מלא. האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האחסון הפנימי מלא. האם למחוק קובץ %d לצמיתות?</item>
+        <item quantity="two">האחסון הפנימי מלא. האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האחסון הפנימי מלא. האם למחוק %d קבצים לצמיתות?</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">האחסון הפנימי מלא. האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האחסון הפנימי מלא. האם למחוק תיקיה %d לצמיתות?</item>
+        <item quantity="two">האחסון הפנימי מלא. האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האחסון הפנימי מלא. האם למחוק %d תיקיות לצמיתות?</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">האחסון הפנימי מלא. האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האחסון הפנימי מלא. האם למחוק פריט %d לצמיתות?</item>
+        <item quantity="two">האחסון הפנימי מלא. האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האחסון הפנימי מלא. האם למחוק %d פריטים לצמיתות?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק קובץ %d לצמיתות?</item>
+        <item quantity="two">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d קבצים לצמיתות?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק תיקיה %d לצמיתות?</item>
+        <item quantity="two">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d תיקיות לצמיתות?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק פריט %d לצמיתות?</item>
+        <item quantity="two">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האחסון הפנימי וכרטיס ה-SD מלאים. האם למחוק %d פריטים לצמיתות?</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">משחזר %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">משחזר %d פריט…</item>
+        <item quantity="two">משחזר %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">משחזר %d פריטים…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d פריטים יועברו אף הם אל סל המיחזור ב- %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d פריטים יועברו אף הם אל סל המיחזור ב- %2$s.</item>
+        <item quantity="two">%1$d פריטים יועברו אף הם אל סל המיחזור ב- %2$s.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$d פריטים יועברו אף הם אל סל המיחזור ב- %2$s.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">ניתן לפתוח לכל היותר %d חלונות של יישומים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ניתן לפתוח לכל היותר %d חלון של יישום.</item>
+        <item quantity="two">ניתן לפתוח לכל היותר %d חלונות של יישומים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">ניתן לפתוח לכל היותר %d חלונות של יישומים.</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">האם להעביר %d קבצים אל סל המיחזור?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם להעביר %d קובץ אל סל המיחזור?</item>
+        <item quantity="two">האם להעביר %d קבצים אל סל המיחזור?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם להעביר %d קבצים אל סל המיחזור?</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">האם להעביר %d קבצים אל סל המיחזור?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם להעביר קובץ %d אל סל המיחזור?</item>
+        <item quantity="two">האם להעביר %d קבצים אל סל המיחזור?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם להעביר %d קבצים אל סל המיחזור?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">האם להעביר %d תיקיות אל סל המיחזור?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם להעביר %d תיקייה אל סל המיחזור?</item>
+        <item quantity="two">האם להעביר %d תיקיות אל סל המיחזור?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם להעביר %d תיקיות אל סל המיחזור?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">האם להעביר %d תיקיות אל סל המיחזור?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם להעביר תיקייה %d אל סל המיחזור?</item>
+        <item quantity="two">האם להעביר %d תיקיות אל סל המיחזור?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם להעביר %d תיקיות אל סל המיחזור?</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">האם להעביר %d פריטים אל סל המיחזור?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם להעביר %d פריט אל סל המיחזור?</item>
+        <item quantity="two">האם להעביר %d פריטים אל סל המיחזור?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם להעביר %d פריטים אל סל המיחזור?</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">האם להעביר %d פריטים אל סל המיחזור?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם להעביר %d פריט אל סל המיחזור?</item>
+        <item quantity="two">האם להעביר %d פריטים אל סל המיחזור?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם להעביר %d פריטים אל סל המיחזור?</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">מעביר %d קבצים אל סל המיחזור…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר קובץ %d אל סל המיחזור…</item>
+        <item quantity="two">מעביר %d קבצים אל סל המיחזור…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d לסל המיחזור…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">מעביר %d תיקיות אל סל המיחזור…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר %d לסל המיחזור…</item>
+        <item quantity="two">מעביר %d תיקיות אל סל המיחזור…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d תיקיות לסל המיחזור…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">מעביר %d פריטים אל סל המיחזור…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר פריט %d אל סל המיחזור…</item>
+        <item quantity="two">מעביר %d פריטים אל סל המיחזור…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d פריטים אל סל המיחזור…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">מעביר %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר קובץ %d…</item>
+        <item quantity="two">מעביר %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d קבצים…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">מעביר %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר %d קובץ…</item>
+        <item quantity="two">מעביר %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d קבצים…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">מעביר %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר %d תיקייה…</item>
+        <item quantity="two">מעביר %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d תיקיות…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">מעביר %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר %d תיקייה…</item>
+        <item quantity="two">מעביר %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d תיקיות…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">מעביר %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר %d פריט…</item>
+        <item quantity="two">מעביר %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d פריטים…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">מעביר %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעביר %d פריט…</item>
+        <item quantity="two">מעביר %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מעביר %d פריטים…</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d פריטים נדחסו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d פריט נדחס</item>
+        <item quantity="two">%d פריטים נדחסו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d פריטים נדחסו</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d פריטים הועתקו אל %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d פריט הועתק אל %2$s</item>
+        <item quantity="two">%1$d פריטים הועתקו אל %2$s</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$d פריטים הועתקו אל %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">האם למחוק את התיקייה ואת %d הקבצים שבתוכה?</item>
+        <item quantity="one">האם למחוק את התיקייה ואת הקובץ שבתוכה?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">האם למחוק %1$d תיקיות ואת %2$d הקבצים שבתוכן?</item>
+        <item quantity="one">האם למחוק את התיקייה ואת הקובץ שבתוכה?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d פריטים נמחקו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d פריט נמחק</item>
+        <item quantity="two">%d פריטים נמחקו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d פריטים נמחקו</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">מוריד %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוריד %d קובץ…</item>
+        <item quantity="two">מוריד %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוריד %d קבצים…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">מוריד %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוריד %d תיקייה…</item>
+        <item quantity="two">מוריד %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוריד %d תיקיות…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">מוריד %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוריד %d פריט…</item>
+        <item quantity="two">מוריד %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוריד %d פריטים…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">לא ניתן לשתף תיקיות. התיקיות ריקות.</item>
+        <item quantity="one">לא ניתן לשתף תיקייה. התיקייה ריקה.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d קבצים יימחקו לצמיתות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d קובץ יימחק לצמיתות.</item>
+        <item quantity="two">%d קבצים יימחקו לצמיתות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d קבצים יימחקו לצמיתות.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d תיקיות יימחקו לצמיתות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d תיקייה תימחק לצמיתות.</item>
+        <item quantity="two">%d תיקיות יימחקו לצמיתות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d תיקיות יימחקו לצמיתות.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d פריטים חולצו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d פריט חולץ</item>
+        <item quantity="two">%d פריטים חולצו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d פריטים חולצו</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">"%d קבצים נוספו ל'מועדפים'."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d קובץ נוסף ל'מועדפים'."</item>
+        <item quantity="two">"%d קבצים נוספו ל'מועדפים'."</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">"%d קבצים נוספו ל'מועדפים'."</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d קבצים הוסרו מהמועדפים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">קובץ %d הוסר מהמועדפים.</item>
+        <item quantity="two">%d קבצים הוסרו מהמועדפים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d קבצים הוסרו מהמועדפים.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">"%d תיקיות נוספו ל'מועדפים'."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d תיקייה נוספה ל'מועדפים'."</item>
+        <item quantity="two">"%d תיקיות נוספו ל'מועדפים'."</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">"%d תיקיות נוספו ל'מועדפים'."</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d תיקיות הוסרו מהמועדפים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">תיקייה %d הוסרה מהמועדפים.</item>
+        <item quantity="two">%d תיקיות הוסרו מהמועדפים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d תיקיות הוסרו מהמועדפים.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">"%d פריטים נוספו ל'מועדפים'."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d פריט נוסף ל'מועדפים'."</item>
+        <item quantity="two">"%d פריטים נוספו ל'מועדפים'."</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">"%d פריטים נוספו ל'מועדפים'."</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d פריטים הוסרו מהמועדפים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">פריט %d הוסר מהמועדפים.</item>
+        <item quantity="two">%d פריטים הוסרו מהמועדפים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d פריטים הוסרו מהמועדפים.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d פריטים</item>
+        <item quantity="one">פריט אחד</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d פריטים</item>
+        <item quantity="one">פריט %d</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d פריטים הועתקו אל הלוח</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d פריט הועתק אל הלוח</item>
+        <item quantity="two">%d פריטים הועתקו אל הלוח</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d פריטים הועתקו אל הלוח</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d פריטים הועברו אל הלוח</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d פריט הועבר אל הלוח</item>
+        <item quantity="two">%d פריטים הועברו אל הלוח</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d פריטים הועברו אל הלוח</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">נבחרו %d פריטים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d פריט נבחר</item>
+        <item quantity="two">נבחרו %d פריטים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">נבחרו %d פריטים</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d פריטים הועברו אל %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d פריט הועבר אל %2$s</item>
+        <item quantity="two">%1$d פריטים הועברו אל %2$s</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$d פריטים הועברו אל %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d פריטים הועברו אל סל המיחזור</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d פריט הועבר אל סל המיחזור</item>
+        <item quantity="two">%d פריטים הועברו אל סל המיחזור</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d פריטים הועברו אל סל המיחזור</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d נבחר/ו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d נבחר/ו</item>
+        <item quantity="two">%d נבחר/ו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d נבחר/ו</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">כרטיס ה-SD מלא. האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">כרטיס ה-SD מלא. האם למחוק קובץ %d לצמיתות?</item>
+        <item quantity="two">כרטיס ה-SD מלא. האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">כרטיס ה-SD מלא. האם למחוק %d קבצים לצמיתות?</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">כרטיס ה-SD מלא. האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">כרטיס ה-SD מלא. האם למחוק תיקיה %d לצמיתות?</item>
+        <item quantity="two">כרטיס ה-SD מלא. האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">כרטיס ה-SD מלא. האם למחוק %d תיקיות לצמיתות?</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">כרטיס ה-SD מלא. האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">כרטיס ה-SD מלא. האם למחוק פריט %d לצמיתות?</item>
+        <item quantity="two">כרטיס ה-SD מלא. האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">כרטיס ה-SD מלא. האם למחוק %d פריטים לצמיתות?</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">קובץ זה יימחק בעוד %d ימים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">קובץ זה יימחק בעוד יום אחד (%d).</item>
+        <item quantity="two">קובץ זה יימחק בעוד %d ימים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">קובץ זה יימחק בעוד %d ימים.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">תיקייה זו תימחק בעוד %d ימים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">תיקייה זו תימחק בעוד יום אחד (%d).</item>
+        <item quantity="two">תיקייה זו תימחק בעוד %d ימים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">תיקייה זו תימחק בעוד %d ימים.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק קובץ %d לצמיתות?</item>
+        <item quantity="two">האם למחוק %d קבצים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d קבצים לצמיתות?</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">מוחק %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק קובץ %d…</item>
+        <item quantity="two">מוחק %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק %d קבצים…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">משחזר %d קבצים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">משחזר %d קבצים…</item>
+        <item quantity="two">משחזר %d קבצים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">משחזר %d קבצים…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק תיקייה %d לצמיתות?</item>
+        <item quantity="two">האם למחוק %d תיקיות לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d תיקיות לצמיתות?</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">מוחק %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק %d תיקיות…</item>
+        <item quantity="two">מוחק %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק %d תיקיות…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">משחזר %d תיקיות…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">משחזר %d תיקייה…</item>
+        <item quantity="two">משחזר %d תיקיות…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">משחזר %d תיקיות…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם למחוק פריט %d לצמיתות?</item>
+        <item quantity="two">האם למחוק %d פריטים לצמיתות?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם למחוק %d פריטים לצמיתות?</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">מוחק %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק %d פריט…</item>
+        <item quantity="two">מוחק %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק %d פריטים…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">משחזר %d פריטים…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">משחזר %d פריט…</item>
+        <item quantity="two">משחזר %d פריטים…</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">משחזר %d פריטים…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">מוחק בעוד %d ימים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מוחק בעוד יום (%d)</item>
+        <item quantity="two">מוחק בעוד %d ימים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מוחק בעוד %d ימים</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">האם להסיר %d יישומים?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">האם להסיר %d יישום?</item>
+        <item quantity="two">האם להסיר %d יישומים?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">האם להסיר %d יישומים?</item>
+    </plurals>
+</resources>

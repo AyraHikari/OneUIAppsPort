@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 531
+    .line 566
     invoke-direct {p0}, Lorg/jsoup/select/Evaluator;-><init>()V
 
     return-void
@@ -29,23 +29,19 @@
 .method public matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
     .locals 0
 
-    .line 534
+    .line 569
     invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->parent()Lorg/jsoup/nodes/Element;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 535
+    .line 570
     instance-of p1, p1, Lorg/jsoup/nodes/Document;
 
     if-nez p1, :cond_0
 
-    invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->elementSiblingIndex()Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->elementSiblingIndex()I
 
     move-result p1
 

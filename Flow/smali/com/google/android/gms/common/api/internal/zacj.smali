@@ -1,39 +1,40 @@
-.class final synthetic Lcom/google/android/gms/common/api/internal/zacj;
+.class public final synthetic Lcom/google/android/gms/common/api/internal/zacj;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
+.implements Ljava/lang/Runnable;
 
 
-# instance fields
-.field private final zakf:Lcom/google/android/gms/common/util/BiConsumer;
+# static fields
+.field public static final synthetic zaa:Lcom/google/android/gms/common/api/internal/zacj;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/util/BiConsumer;)V
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/common/api/internal/zacj;
+
+    invoke-direct {v0}, Lcom/google/android/gms/common/api/internal/zacj;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/common/api/internal/zacj;->zaa:Lcom/google/android/gms/common/api/internal/zacj;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zacj;->zakf:Lcom/google/android/gms/common/util/BiConsumer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zacj;->zakf:Lcom/google/android/gms/common/util/BiConsumer;
-
-    check-cast p1, Lcom/google/android/gms/common/api/Api$AnyClient;
-
-    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
-
-    .line 2
-    invoke-interface {v0, p1, p2}, Lcom/google/android/gms/common/util/BiConsumer;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final run()V
+    .locals 0
 
     return-void
 .end method

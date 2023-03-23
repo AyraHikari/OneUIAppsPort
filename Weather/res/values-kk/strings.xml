@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Кіру</string>
     <string name="common_signin_button_text_long">Google арқылы кіру</string>
     <string name="copy">Көшіру</string>
-    <string name="copy_toast_msg">Сілтеме буферге көшірілді.</string>
     <string name="error_icon_content_description">Қате</string>
     <string name="expand_button_title">Қосымша</string>
     <string name="exposed_dropdown_menu_content_description">Ашылмалы мәзірді көрсету</string>
-    <string name="fallback_menu_item_copy_link">Сілтемені көшіру</string>
-    <string name="fallback_menu_item_open_in_browser">Браузерден ашу</string>
-    <string name="fallback_menu_item_share_link">Сілтемені бөлісу</string>
     <string name="icon_content_description">Диалог белгішесі</string>
     <string name="item_view_role_description">Қойынды</string>
     <string name="material_clock_toggle_content_description">\"AM\" немесе \"PM\" форматын таңдау</string>

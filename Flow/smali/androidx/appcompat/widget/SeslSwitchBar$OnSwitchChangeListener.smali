@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onSwitchChanged(Landroidx/appcompat/widget/SwitchCompat;Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "switchView",
+            "isChecked"
+        }
+    .end annotation
 .end method

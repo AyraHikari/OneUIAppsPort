@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 44
     iget-object v0, p0, Landroidx/lifecycle/AndroidViewModel;->mApplication:Landroid/app/Application;
 
     return-object v0

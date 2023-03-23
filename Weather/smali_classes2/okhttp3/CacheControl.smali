@@ -103,7 +103,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     new-instance v0, Lokhttp3/CacheControl$Companion;
@@ -114,34 +114,34 @@
 
     sput-object v0, Lokhttp3/CacheControl;->Companion:Lokhttp3/CacheControl$Companion;
 
-    .line 264
+    .line 1
     new-instance v0, Lokhttp3/CacheControl$Builder;
 
     invoke-direct {v0}, Lokhttp3/CacheControl$Builder;-><init>()V
 
-    .line 265
+    .line 2
     invoke-virtual {v0}, Lokhttp3/CacheControl$Builder;->noCache()Lokhttp3/CacheControl$Builder;
 
     move-result-object v0
 
-    .line 266
+    .line 3
     invoke-virtual {v0}, Lokhttp3/CacheControl$Builder;->build()Lokhttp3/CacheControl;
 
     move-result-object v0
 
     sput-object v0, Lokhttp3/CacheControl;->FORCE_NETWORK:Lokhttp3/CacheControl;
 
-    .line 274
+    .line 4
     new-instance v0, Lokhttp3/CacheControl$Builder;
 
     invoke-direct {v0}, Lokhttp3/CacheControl$Builder;-><init>()V
 
-    .line 275
+    .line 5
     invoke-virtual {v0}, Lokhttp3/CacheControl$Builder;->onlyIfCached()Lokhttp3/CacheControl$Builder;
 
     move-result-object v0
 
-    .line 276
+    .line 6
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const v2, 0x7fffffff
@@ -150,7 +150,7 @@
 
     move-result-object v0
 
-    .line 277
+    .line 7
     invoke-virtual {v0}, Lokhttp3/CacheControl$Builder;->build()Lokhttp3/CacheControl;
 
     move-result-object v0
@@ -163,7 +163,7 @@
 .method private constructor <init>(ZZIIZZZIIZZZLjava/lang/String;)V
     .locals 0
 
-    .line 28
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lokhttp3/CacheControl;->noCache:Z
@@ -198,7 +198,7 @@
 .method public synthetic constructor <init>(ZZIIZZZIIZZZLjava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 28
+    .line 2
     invoke-direct/range {p0 .. p13}, Lokhttp3/CacheControl;-><init>(ZZIIZZZIIZZZLjava/lang/String;)V
 
     return-void
@@ -206,8 +206,6 @@
 
 .method public static final parse(Lokhttp3/Headers;)Lokhttp3/CacheControl;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/CacheControl;->Companion:Lokhttp3/CacheControl$Companion;
 
@@ -222,16 +220,7 @@
 # virtual methods
 .method public final -deprecated_immutable()Z
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "immutable"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 141
     iget-boolean v0, p0, Lokhttp3/CacheControl;->immutable:Z
 
     return v0
@@ -239,16 +228,7 @@
 
 .method public final -deprecated_maxAgeSeconds()I
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "maxAgeSeconds"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 92
     iget v0, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
 
     return v0
@@ -256,16 +236,7 @@
 
 .method public final -deprecated_maxStaleSeconds()I
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "maxStaleSeconds"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 113
     iget v0, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
 
     return v0
@@ -273,16 +244,7 @@
 
 .method public final -deprecated_minFreshSeconds()I
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "minFreshSeconds"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 120
     iget v0, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
 
     return v0
@@ -290,16 +252,7 @@
 
 .method public final -deprecated_mustRevalidate()Z
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "mustRevalidate"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 106
     iget-boolean v0, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
 
     return v0
@@ -307,16 +260,7 @@
 
 .method public final -deprecated_noCache()Z
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "noCache"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 78
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noCache:Z
 
     return v0
@@ -324,16 +268,7 @@
 
 .method public final -deprecated_noStore()Z
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "noStore"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 85
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noStore:Z
 
     return v0
@@ -341,16 +276,7 @@
 
 .method public final -deprecated_noTransform()Z
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "noTransform"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 134
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noTransform:Z
 
     return v0
@@ -358,16 +284,7 @@
 
 .method public final -deprecated_onlyIfCached()Z
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "onlyIfCached"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 127
     iget-boolean v0, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
 
     return v0
@@ -375,16 +292,7 @@
 
 .method public final -deprecated_sMaxAgeSeconds()I
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "sMaxAgeSeconds"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 99
     iget v0, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
 
     return v0
@@ -393,7 +301,6 @@
 .method public final immutable()Z
     .locals 1
 
-    .line 69
     iget-boolean v0, p0, Lokhttp3/CacheControl;->immutable:Z
 
     return v0
@@ -402,7 +309,6 @@
 .method public final isPrivate()Z
     .locals 1
 
-    .line 50
     iget-boolean v0, p0, Lokhttp3/CacheControl;->isPrivate:Z
 
     return v0
@@ -411,7 +317,6 @@
 .method public final isPublic()Z
     .locals 1
 
-    .line 51
     iget-boolean v0, p0, Lokhttp3/CacheControl;->isPublic:Z
 
     return v0
@@ -420,7 +325,6 @@
 .method public final maxAgeSeconds()I
     .locals 1
 
-    .line 42
     iget v0, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
 
     return v0
@@ -429,7 +333,6 @@
 .method public final maxStaleSeconds()I
     .locals 1
 
-    .line 55
     iget v0, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
 
     return v0
@@ -438,7 +341,6 @@
 .method public final minFreshSeconds()I
     .locals 1
 
-    .line 57
     iget v0, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
 
     return v0
@@ -447,7 +349,6 @@
 .method public final mustRevalidate()Z
     .locals 1
 
-    .line 53
     iget-boolean v0, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
 
     return v0
@@ -456,7 +357,6 @@
 .method public final noCache()Z
     .locals 1
 
-    .line 36
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noCache:Z
 
     return v0
@@ -465,7 +365,6 @@
 .method public final noStore()Z
     .locals 1
 
-    .line 39
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noStore:Z
 
     return v0
@@ -474,7 +373,6 @@
 .method public final noTransform()Z
     .locals 1
 
-    .line 67
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noTransform:Z
 
     return v0
@@ -483,7 +381,6 @@
 .method public final onlyIfCached()Z
     .locals 1
 
-    .line 65
     iget-boolean v0, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
 
     return v0
@@ -492,26 +389,25 @@
 .method public final sMaxAgeSeconds()I
     .locals 1
 
-    .line 48
     iget v0, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
 
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 5
+    .locals 4
 
-    .line 144
+    .line 1
     iget-object v0, p0, Lokhttp3/CacheControl;->headerValue:Ljava/lang/String;
 
     if-nez v0, :cond_e
 
-    .line 146
+    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 147
+    .line 3
     iget-boolean v1, p0, Lokhttp3/CacheControl;->noCache:Z
 
     if-eqz v1, :cond_0
@@ -520,7 +416,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 148
+    .line 4
     :cond_0
     iget-boolean v1, p0, Lokhttp3/CacheControl;->noStore:Z
 
@@ -530,7 +426,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 149
+    .line 5
     :cond_1
     iget v1, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
 
@@ -544,17 +440,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    iget v1, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
 
-    iget v4, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 150
+    .line 6
     :cond_2
     iget v1, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
 
@@ -564,17 +456,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    iget v1, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
 
-    iget v4, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 151
+    .line 7
     :cond_3
     iget-boolean v1, p0, Lokhttp3/CacheControl;->isPrivate:Z
 
@@ -584,7 +472,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 152
+    .line 8
     :cond_4
     iget-boolean v1, p0, Lokhttp3/CacheControl;->isPublic:Z
 
@@ -594,7 +482,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 153
+    .line 9
     :cond_5
     iget-boolean v1, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
 
@@ -604,7 +492,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 154
+    .line 10
     :cond_6
     iget v1, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
 
@@ -614,17 +502,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    iget v1, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
 
-    iget v4, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 155
+    .line 11
     :cond_7
     iget v1, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
 
@@ -634,17 +518,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    iget v1, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
 
-    iget v3, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 156
+    .line 12
     :cond_8
     iget-boolean v1, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
 
@@ -654,7 +534,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 157
+    .line 13
     :cond_9
     iget-boolean v1, p0, Lokhttp3/CacheControl;->noTransform:Z
 
@@ -664,7 +544,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 158
+    .line 14
     :cond_a
     iget-boolean v1, p0, Lokhttp3/CacheControl;->immutable:Z
 
@@ -674,13 +554,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 159
+    .line 15
     :cond_b
-    move-object v1, v0
-
-    check-cast v1, Ljava/lang/CharSequence;
-
-    invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
 
@@ -700,7 +576,7 @@
 
     return-object v0
 
-    .line 160
+    .line 16
     :cond_d
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
@@ -714,16 +590,16 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    .line 146
+    .line 17
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "StringBuilder().apply(builderAction).toString()"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 162
+    .line 18
     iput-object v0, p0, Lokhttp3/CacheControl;->headerValue:Ljava/lang/String;
 
     :cond_e

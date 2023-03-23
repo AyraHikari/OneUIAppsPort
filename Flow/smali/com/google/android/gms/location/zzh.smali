@@ -1,83 +1,79 @@
-.class final Lcom/google/android/gms/location/zzh;
+.class public final synthetic Lcom/google/android/gms/location/zzh;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/google/android/gms/location/DetectedActivity;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic zza:Lcom/google/android/gms/location/zzl;
+
+.field public final synthetic zzb:Landroid/app/PendingIntent;
 
 
 # direct methods
-.method constructor <init>()V
+.method public synthetic constructor <init>(Lcom/google/android/gms/location/zzl;Landroid/app/PendingIntent;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/location/zzh;->zza:Lcom/google/android/gms/location/zzl;
+
+    iput-object p2, p0, Lcom/google/android/gms/location/zzh;->zzb:Landroid/app/PendingIntent;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 3
 
-    check-cast p1, Lcom/google/android/gms/location/DetectedActivity;
+    iget-object v0, p0, Lcom/google/android/gms/location/zzh;->zza:Lcom/google/android/gms/location/zzl;
 
-    check-cast p2, Lcom/google/android/gms/location/DetectedActivity;
+    iget-object v1, p0, Lcom/google/android/gms/location/zzh;->zzb:Landroid/app/PendingIntent;
 
-    invoke-virtual {p2}, Lcom/google/android/gms/location/DetectedActivity;->getConfidence()I
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    move-result v0
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    sget v2, Lcom/google/android/gms/location/ActivityRecognitionClient;->zza:I
 
-    move-result-object v0
+    .line 1
+    new-instance v2, Lcom/google/android/gms/location/zzj;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/location/DetectedActivity;->getConfidence()I
+    invoke-direct {v2, p2}, Lcom/google/android/gms/location/zzj;-><init>(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    move-result v1
+    const-string p2, "ActivityRecognitionRequest can\'t be null."
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 2
+    invoke-static {v0, p2}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    const-string p2, "PendingIntent must be specified."
 
-    invoke-virtual {v0, v1}, Ljava/lang/Integer;->compareTo(Ljava/lang/Integer;)I
+    .line 3
+    invoke-static {v1, p2}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v0
+    const-string p2, "ResultHolder not provided."
 
-    if-nez v0, :cond_0
+    .line 4
+    invoke-static {v2, p2}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/location/DetectedActivity;->getType()I
+    .line 5
+    new-instance p2, Lcom/google/android/gms/common/api/internal/StatusCallback;
 
-    move-result p1
+    invoke-direct {p2, v2}, Lcom/google/android/gms/common/api/internal/StatusCallback;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 1
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/location/zzbe;->getService()Landroid/os/IInterface;
 
     move-result-object p1
 
-    invoke-virtual {p2}, Lcom/google/android/gms/location/DetectedActivity;->getType()I
+    .line 6
+    check-cast p1, Lcom/google/android/gms/internal/location/zzam;
 
-    move-result p2
+    invoke-interface {p1, v0, v1, p2}, Lcom/google/android/gms/internal/location/zzam;->zzs(Lcom/google/android/gms/location/zzl;Landroid/app/PendingIntent;Lcom/google/android/gms/common/api/internal/IStatusCallback;)V
 
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Ljava/lang/Integer;->compareTo(Ljava/lang/Integer;)I
-
-    move-result p1
-
-    return p1
-
-    :cond_0
-    return v0
+    return-void
 .end method

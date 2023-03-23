@@ -1,5 +1,6 @@
 .class final Lcom/google/android/gms/common/config/zzb;
 .super Lcom/google/android/gms/common/config/GservicesValue;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # annotations
@@ -24,21 +25,17 @@
 
 
 # virtual methods
-.method protected final synthetic zzd(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 2
+.method protected final bridge synthetic zza(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
 
-    .line 4
-    iget-object p1, p0, Lcom/google/android/gms/common/config/zzb;->mKey:Ljava/lang/String;
+    const/4 p1, 0x0
 
-    iget-object v0, p0, Lcom/google/android/gms/common/config/zzb;->zzbq:Ljava/lang/Object;
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v0, p0, Lcom/google/android/gms/common/config/zzb;->zzb:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Long;
 
-    const/4 v1, 0x0
-
-    invoke-interface {v1, p1, v0}, Lcom/google/android/gms/common/config/GservicesValue$zza;->getLong(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
-
-    move-result-object p1
-
-    return-object p1
+    throw p1
 .end method

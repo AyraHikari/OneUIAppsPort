@@ -22,12 +22,12 @@
 .method constructor <init>(Lcom/airbnb/lottie/model/layer/TextLayer;I)V
     .locals 0
 
-    .line 37
+    .line 43
     iput-object p1, p0, Lcom/airbnb/lottie/model/layer/TextLayer$2;->this$0:Lcom/airbnb/lottie/model/layer/TextLayer;
 
     invoke-direct {p0, p2}, Landroid/graphics/Paint;-><init>(I)V
 
-    .line 38
+    .line 44
     sget-object p1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p0, p1}, Lcom/airbnb/lottie/model/layer/TextLayer$2;->setStyle(Landroid/graphics/Paint$Style;)V

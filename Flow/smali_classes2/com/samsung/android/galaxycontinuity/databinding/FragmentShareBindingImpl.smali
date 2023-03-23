@@ -24,74 +24,60 @@
 
     sput-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090203
+    const v1, 0x7f0a02fa
 
     const/4 v2, 0x4
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 18
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f090208
+    const v1, 0x7f0a02ff
 
     const/4 v2, 0x5
 
+    .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 19
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f09020a
+    const v1, 0x7f0a0303
 
     const/4 v2, 0x6
 
+    .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 20
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f090115
+    const v1, 0x7f0a0198
 
     const/4 v2, 0x7
 
+    .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 21
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f09019e
+    const v1, 0x7f0a0290
 
     const/16 v2, 0x8
 
+    .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 22
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f0901f7
+    const v1, 0x7f0a02eb
 
     const/16 v2, 0x9
 
+    .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 23
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f090058
+    const v1, 0x7f0a0071
 
     const/16 v2, 0xa
 
+    .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 24
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f0901c8
+    const v1, 0x7f0a02ad
 
     const/16 v2, 0xb
 
+    .line 24
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -99,6 +85,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 33
     sget-object v0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -118,6 +114,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     move-object/from16 v15, p0
 
@@ -176,7 +184,7 @@
 
     move-object v10, v0
 
-    check-cast v10, Landroid/widget/Button;
+    check-cast v10, Landroid/widget/ImageButton;
 
     const/4 v0, 0x4
 
@@ -228,7 +236,7 @@
 
     move-object/from16 v15, v16
 
-    invoke-direct/range {v0 .. v15}, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/RelativeLayout;Landroid/widget/RelativeLayout;Lcom/samsung/android/galaxycontinuity/customcontrols/GifEditText;Landroid/widget/ScrollView;Landroid/widget/ImageButton;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/Button;Landroid/widget/RelativeLayout;Landroid/widget/TextView;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/widget/RelativeLayout;Landroidx/recyclerview/widget/RecyclerView;)V
+    invoke-direct/range {v0 .. v15}, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/RelativeLayout;Landroid/widget/RelativeLayout;Lcom/samsung/android/galaxycontinuity/customcontrols/GifEditText;Landroid/widget/ScrollView;Landroid/widget/ImageButton;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/ImageButton;Landroid/widget/RelativeLayout;Landroid/widget/TextView;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/widget/RelativeLayout;Landroidx/recyclerview/widget/RecyclerView;)V
 
     const-wide/16 v0, -0x1
 
@@ -272,6 +280,16 @@
 
 .method private onChangeFragmentShareUIVisibility(Landroidx/databinding/ObservableBoolean;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FragmentShareUIVisibility",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -511,6 +529,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -531,6 +561,14 @@
 
 .method public setFragment(Lcom/samsung/android/galaxycontinuity/activities/SharedFragment;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "Fragment"
+        }
+    .end annotation
 
     .line 90
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/databinding/FragmentShareBindingImpl;->mFragment:Lcom/samsung/android/galaxycontinuity/activities/SharedFragment;
@@ -577,6 +615,16 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 

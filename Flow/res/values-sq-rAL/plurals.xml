@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Regjistro dhe menaxho deri në %d kompjuterë ose tableta në Samsung Flow.
-
-Vetëm një kompjuter ose tabletë mund të lidhet me telefonin tënd njëherësh. Do të duhet të zgjedhësh një, kur të dy kompjuterët ose tabletat e regjistruara përpiqen të lidhen me telefonin."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Regjistro dhe menaxho deri në %d kompjuter ose tabletë në Samsung Flow.
-
-Vetëm një kompjuter ose tabletë mund të lidhet me telefonin tënd njëherësh. Do të duhet të zgjedhësh një, kur të dy kompjuterët ose tabletat e regjistruara përpiqen të lidhen me telefonin."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

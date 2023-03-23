@@ -66,13 +66,12 @@
 
     const-string v0, "source"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "sink"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 611
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->client:Z
@@ -89,7 +88,6 @@
 .method public final getClient()Z
     .locals 1
 
-    .line 612
     iget-boolean v0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->client:Z
 
     return v0
@@ -98,7 +96,6 @@
 .method public final getSink()Lokio/BufferedSink;
     .locals 1
 
-    .line 614
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->sink:Lokio/BufferedSink;
 
     return-object v0
@@ -107,7 +104,6 @@
 .method public final getSource()Lokio/BufferedSource;
     .locals 1
 
-    .line 613
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->source:Lokio/BufferedSource;
 
     return-object v0

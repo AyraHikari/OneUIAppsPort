@@ -40,7 +40,7 @@
 .end method
 
 .method public static obtain(Landroid/content/Context;)Lcom/bumptech/glide/load/Key;
-    .locals 2
+    .locals 3
 
     .line 24
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -52,21 +52,19 @@
 
     invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Lcom/bumptech/glide/load/Key;
+    check-cast v2, Lcom/bumptech/glide/load/Key;
 
-    if-nez v1, :cond_1
+    if-nez v2, :cond_1
 
     .line 27
     invoke-static {p0}, Lcom/bumptech/glide/signature/ApplicationVersionSignature;->obtainVersionSignature(Landroid/content/Context;)Lcom/bumptech/glide/load/Key;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 28
-    sget-object p0, Lcom/bumptech/glide/signature/ApplicationVersionSignature;->PACKAGE_NAME_TO_KEY:Ljava/util/concurrent/ConcurrentHashMap;
-
-    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0, v2}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -77,11 +75,11 @@
     goto :goto_0
 
     :cond_0
-    move-object v1, p0
+    move-object v2, p0
 
     :cond_1
     :goto_0
-    return-object v1
+    return-object v2
 .end method
 
 .method private static obtainVersionSignature(Landroid/content/Context;)Lcom/bumptech/glide/load/Key;

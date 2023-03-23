@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/picker_folder_ui_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/recycler_view" android:tag="binding_1" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/empty_view" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/no_item" />
+    </LinearLayout>
+    <ViewStub android:id="@id/loading_view_stub" android:tag="binding_3" android:layout="@layout/loading_container" android:inflatedId="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

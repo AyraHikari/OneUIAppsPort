@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/trash_notify_text_size" android:textColor="@color/trash_expire_notify_text_color" android:gravity="center_vertical" android:id="@id/trash_notify_content_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/trash_notify_section_bottom_margin" android:paddingStart="@dimen/trash_notify_message_text_padding" android:paddingEnd="@dimen/trash_notify_message_text_padding" style="@style/RobotoRegular" />
+</androidx.core.widget.NestedScrollView>

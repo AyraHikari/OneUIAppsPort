@@ -41,20 +41,28 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1106
+    .line 1132
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
 
-    .line 1107
+    .line 1133
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->sentMessageIDList:Ljava/util/ArrayList;
 
-    .line 1108
+    .line 1134
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -67,7 +75,7 @@
 .method synthetic constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$1;)V
     .locals 0
 
-    .line 1106
+    .line 1132
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
 
     return-void
@@ -75,8 +83,16 @@
 
 .method private isReplied(Landroid/service/notification/StatusBarNotification;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sbn"
+        }
+    .end annotation
 
-    .line 1200
+    .line 1226
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
     move-result-object v0
@@ -115,12 +131,12 @@
 .method public clearAll()V
     .locals 1
 
-    .line 1195
+    .line 1221
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->sentMessageIDList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 1196
+    .line 1222
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->phoneNumberList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
@@ -130,8 +146,18 @@
 
 .method public parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sbn",
+            "isPosted"
+        }
+    .end annotation
 
-    .line 1113
+    .line 1139
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
@@ -146,7 +172,7 @@
 
     if-eqz v0, :cond_0
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x18
 
@@ -154,14 +180,14 @@
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
-    .line 1115
-    invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2200(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;)Z
+    .line 1141
+    invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2300(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 1116
+    .line 1142
     :cond_0
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->isReplied(Landroid/service/notification/StatusBarNotification;)Z
 
@@ -175,17 +201,17 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 1120
+    .line 1146
     invoke-super {p0, p1, v0}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;->parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     move-result-object v2
 
     xor-int/lit8 v3, p2, 0x1
 
-    .line 1122
+    .line 1148
     iput-boolean v3, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
-    .line 1124
+    .line 1150
     iget-object v3, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->title:Ljava/lang/String;
 
     invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
@@ -204,7 +230,7 @@
 
     return-object v1
 
-    .line 1128
+    .line 1154
     :cond_3
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -214,6 +240,8 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     iget-object v4, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     invoke-virtual {v4}, Ljava/lang/String;->length()I
@@ -222,13 +250,15 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1130
+    .line 1156
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v3
@@ -241,7 +271,7 @@
 
     if-eqz v3, :cond_11
 
-    .line 1132
+    .line 1158
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;
 
     move-result-object v3
@@ -256,10 +286,10 @@
 
     const/4 v4, 0x1
 
-    .line 1135
+    .line 1161
     iput-boolean v4, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isSuccessGettingMessage:Z
 
-    .line 1136
+    .line 1162
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->sentMessageIDList:Ljava/util/ArrayList;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -270,13 +300,19 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     const-string v7, ":"
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     iget-object v8, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->MsgID:Ljava/lang/String;
 
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -293,7 +329,7 @@
     :cond_4
     if-eqz p2, :cond_5
 
-    .line 1140
+    .line 1166
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->sentMessageIDList:Ljava/util/ArrayList;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -304,11 +340,17 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     iget-object v6, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->MsgID:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -316,11 +358,11 @@
 
     invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1142
+    .line 1168
     :cond_5
     iput v4, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->type:I
 
-    .line 1143
+    .line 1169
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->PhoneNumber:Ljava/lang/String;
 
     if-eqz v1, :cond_8
@@ -333,7 +375,7 @@
 
     if-nez v1, :cond_8
 
-    .line 1145
+    .line 1171
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->phoneNumberList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -348,7 +390,7 @@
 
     move-result v6
 
-    const-string v7, "|"
+    const-string/jumbo v7, "|"
 
     if-eqz v6, :cond_7
 
@@ -358,7 +400,7 @@
 
     check-cast v6, Ljava/lang/String;
 
-    .line 1146
+    .line 1172
     iget-object v8, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->PhoneNumber:Ljava/lang/String;
 
     invoke-static {v6, v8}, Landroid/telephony/PhoneNumberUtils;->compare(Ljava/lang/String;Ljava/lang/String;)Z
@@ -367,7 +409,7 @@
 
     if-eqz v8, :cond_6
 
-    .line 1148
+    .line 1174
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -378,9 +420,15 @@
 
     invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -395,7 +443,7 @@
     :cond_7
     if-nez v5, :cond_8
 
-    .line 1153
+    .line 1179
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -406,11 +454,17 @@
 
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     iget-object v5, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->PhoneNumber:Ljava/lang/String;
 
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -418,14 +472,14 @@
 
     iput-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
-    .line 1154
+    .line 1180
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnSMSMMSParser;->phoneNumberList:Ljava/util/ArrayList;
 
     iget-object v5, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->PhoneNumber:Ljava/lang/String;
 
     invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1159
+    .line 1185
     :cond_8
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->Name:Ljava/lang/String;
 
@@ -439,33 +493,33 @@
 
     if-nez v1, :cond_9
 
-    .line 1160
+    .line 1186
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->Name:Ljava/lang/String;
 
     iput-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->title:Ljava/lang/String;
 
-    .line 1163
+    .line 1189
     :cond_9
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v5, 0x17
 
     if-ne v1, v5, :cond_a
 
-    .line 1164
+    .line 1190
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->MsgText:Ljava/lang/String;
 
     iput-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     goto :goto_1
 
-    .line 1166
+    .line 1192
     :cond_a
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->AttachedFiles:Ljava/util/ArrayList;
 
     if-nez v1, :cond_b
 
-    .line 1167
+    .line 1193
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->MsgText:Ljava/lang/String;
 
     if-eqz v1, :cond_b
@@ -478,29 +532,29 @@
 
     if-nez v1, :cond_b
 
-    .line 1168
+    .line 1194
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->MsgText:Ljava/lang/String;
 
     iput-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
-    .line 1174
+    .line 1200
     :cond_b
     :goto_1
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->PhoneNumber:Ljava/lang/String;
 
     iput-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->phoneNumber:Ljava/lang/String;
 
-    .line 1175
+    .line 1201
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->AttachedFile:Ljava/lang/String;
 
     iput-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->attachImage:Ljava/lang/String;
 
-    .line 1176
+    .line 1202
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->AttachedFiles:Ljava/util/ArrayList;
 
     iput-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->MMSContentsData:Ljava/util/ArrayList;
 
-    .line 1177
+    .line 1203
     iget-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->attachImage:Ljava/lang/String;
 
     if-eqz v1, :cond_c
@@ -520,18 +574,18 @@
 
     iget-object v1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->MMSContentsData:Ljava/util/ArrayList;
 
-    .line 1178
+    .line 1204
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
     if-lez v1, :cond_e
 
-    .line 1179
+    .line 1205
     :cond_d
     iput-boolean v4, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isMMS:Z
 
-    .line 1181
+    .line 1207
     :cond_e
     iget-object v1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->Photo:Ljava/lang/String;
 
@@ -545,7 +599,7 @@
 
     const-string v5, "android.largeIcon"
 
-    invoke-static {v1, p1, v5, v0}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2700(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v1, p1, v5, v0}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2800(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object p1
 
@@ -559,13 +613,13 @@
 
     xor-int/lit8 p1, p2, 0x1
 
-    .line 1182
+    .line 1208
     iput-boolean p1, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
-    .line 1183
+    .line 1209
     iput-boolean v4, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isReceived:Z
 
-    .line 1184
+    .line 1210
     iget-object p1, v3, Lcom/samsung/android/galaxycontinuity/data/MessageData;->PhoneNumber:Ljava/lang/String;
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->isGlobalPhoneNumber(Ljava/lang/String;)Z
@@ -576,7 +630,7 @@
 
     goto :goto_3
 
-    .line 1186
+    .line 1212
     :cond_10
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;
 

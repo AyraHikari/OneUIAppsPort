@@ -13,10 +13,6 @@
     name = "Builder"
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCacheControl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CacheControl.kt\nokhttp3/CacheControl$Builder\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,416:1\n1#2:417\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -82,18 +78,18 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 168
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 171
+    .line 2
     iput v0, p0, Lokhttp3/CacheControl$Builder;->maxAgeSeconds:I
 
-    .line 172
+    .line 3
     iput v0, p0, Lokhttp3/CacheControl$Builder;->maxStaleSeconds:I
 
-    .line 173
+    .line 4
     iput v0, p0, Lokhttp3/CacheControl$Builder;->minFreshSeconds:I
 
     return-void
@@ -126,7 +122,7 @@
 
     move-object/from16 v0, p0
 
-    .line 253
+    .line 1
     new-instance v16, Lokhttp3/CacheControl;
 
     iget-boolean v2, v0, Lokhttp3/CacheControl$Builder;->noCache:Z
@@ -137,7 +133,7 @@
 
     iget v9, v0, Lokhttp3/CacheControl$Builder;->maxStaleSeconds:I
 
-    .line 254
+    .line 2
     iget v10, v0, Lokhttp3/CacheControl$Builder;->minFreshSeconds:I
 
     iget-boolean v11, v0, Lokhttp3/CacheControl$Builder;->onlyIfCached:Z
@@ -160,69 +156,58 @@
 
     move-object/from16 v1, v16
 
-    .line 253
+    .line 3
     invoke-direct/range {v1 .. v15}, Lokhttp3/CacheControl;-><init>(ZZIIZZZIIZZZLjava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v16
 .end method
 
 .method public final immutable()Lokhttp3/CacheControl$Builder;
-    .locals 2
+    .locals 1
 
-    .line 241
-    move-object v0, p0
+    const/4 v0, 0x1
 
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->immutable:Z
 
-    const/4 v1, 0x1
-
-    .line 242
-    iput-boolean v1, v0, Lokhttp3/CacheControl$Builder;->immutable:Z
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public final maxAge(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
-    .locals 3
+    .locals 2
 
     const-string v0, "timeUnit"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 195
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-ltz p1, :cond_0
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    int-to-long v1, p1
+    int-to-long v0, p1
 
-    .line 197
-    invoke-virtual {p2, v1, v2}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
+    .line 1
+    invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
     move-result-wide p1
 
-    .line 198
-    invoke-direct {v0, p1, p2}, Lokhttp3/CacheControl$Builder;->clampToInt(J)I
+    .line 2
+    invoke-direct {p0, p1, p2}, Lokhttp3/CacheControl$Builder;->clampToInt(J)I
 
     move-result p1
 
-    iput p1, v0, Lokhttp3/CacheControl$Builder;->maxAgeSeconds:I
+    iput p1, p0, Lokhttp3/CacheControl$Builder;->maxAgeSeconds:I
 
-    return-object v0
+    return-object p0
 
-    .line 196
+    .line 3
     :cond_1
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -232,13 +217,9 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p2
-
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -250,52 +231,45 @@
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 .end method
 
 .method public final maxStale(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
-    .locals 3
+    .locals 2
 
     const-string v0, "timeUnit"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 208
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-ltz p1, :cond_0
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    int-to-long v1, p1
+    int-to-long v0, p1
 
-    .line 210
-    invoke-virtual {p2, v1, v2}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
+    .line 1
+    invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
     move-result-wide p1
 
-    .line 211
-    invoke-direct {v0, p1, p2}, Lokhttp3/CacheControl$Builder;->clampToInt(J)I
+    .line 2
+    invoke-direct {p0, p1, p2}, Lokhttp3/CacheControl$Builder;->clampToInt(J)I
 
     move-result p1
 
-    iput p1, v0, Lokhttp3/CacheControl$Builder;->maxStaleSeconds:I
+    iput p1, p0, Lokhttp3/CacheControl$Builder;->maxStaleSeconds:I
 
-    return-object v0
+    return-object p0
 
-    .line 209
+    .line 3
     :cond_1
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -305,13 +279,9 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p2
-
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -323,52 +293,45 @@
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 .end method
 
 .method public final minFresh(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
-    .locals 3
+    .locals 2
 
     const-string v0, "timeUnit"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 222
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-ltz p1, :cond_0
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    int-to-long v1, p1
+    int-to-long v0, p1
 
-    .line 224
-    invoke-virtual {p2, v1, v2}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
+    .line 1
+    invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
     move-result-wide p1
 
-    .line 225
-    invoke-direct {v0, p1, p2}, Lokhttp3/CacheControl$Builder;->clampToInt(J)I
+    .line 2
+    invoke-direct {p0, p1, p2}, Lokhttp3/CacheControl$Builder;->clampToInt(J)I
 
     move-result p1
 
-    iput p1, v0, Lokhttp3/CacheControl$Builder;->minFreshSeconds:I
+    iput p1, p0, Lokhttp3/CacheControl$Builder;->minFreshSeconds:I
 
-    return-object v0
+    return-object p0
 
-    .line 223
+    .line 3
     :cond_1
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -378,13 +341,9 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p2
-
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -396,71 +355,45 @@
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 .end method
 
 .method public final noCache()Lokhttp3/CacheControl$Builder;
-    .locals 2
+    .locals 1
 
-    .line 179
-    move-object v0, p0
+    const/4 v0, 0x1
 
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noCache:Z
 
-    const/4 v1, 0x1
-
-    .line 180
-    iput-boolean v1, v0, Lokhttp3/CacheControl$Builder;->noCache:Z
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public final noStore()Lokhttp3/CacheControl$Builder;
-    .locals 2
+    .locals 1
 
-    .line 184
-    move-object v0, p0
+    const/4 v0, 0x1
 
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noStore:Z
 
-    const/4 v1, 0x1
-
-    .line 185
-    iput-boolean v1, v0, Lokhttp3/CacheControl$Builder;->noStore:Z
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public final noTransform()Lokhttp3/CacheControl$Builder;
-    .locals 2
+    .locals 1
 
-    .line 237
-    move-object v0, p0
+    const/4 v0, 0x1
 
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noTransform:Z
 
-    const/4 v1, 0x1
-
-    .line 238
-    iput-boolean v1, v0, Lokhttp3/CacheControl$Builder;->noTransform:Z
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public final onlyIfCached()Lokhttp3/CacheControl$Builder;
-    .locals 2
+    .locals 1
 
-    .line 232
-    move-object v0, p0
+    const/4 v0, 0x1
 
-    check-cast v0, Lokhttp3/CacheControl$Builder;
+    iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->onlyIfCached:Z
 
-    const/4 v1, 0x1
-
-    .line 233
-    iput-boolean v1, v0, Lokhttp3/CacheControl$Builder;->onlyIfCached:Z
-
-    return-object v0
+    return-object p0
 .end method

@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -15,7 +16,7 @@
 
 
 # instance fields
-.field private final zajl:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+.field private final zaa:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey<",
@@ -40,11 +41,9 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;->zajl:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;->zaa:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
 
     return-void
 .end method
@@ -63,8 +62,7 @@
         }
     .end annotation
 
-    .line 4
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;->zajl:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;->zaa:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
 
     return-object v0
 .end method

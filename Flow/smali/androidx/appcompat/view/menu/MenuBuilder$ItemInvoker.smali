@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract invokeItem(Landroidx/appcompat/view/menu/MenuItemImpl;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 .end method

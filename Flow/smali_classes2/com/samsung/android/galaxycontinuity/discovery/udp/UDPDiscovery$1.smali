@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 48
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$1;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public dataReceived(Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 51
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getRequestType()I

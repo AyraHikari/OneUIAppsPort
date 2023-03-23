@@ -23,7 +23,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 25
+    .line 26
     invoke-direct {p0}, Landroidx/preference/PreferenceDialogFragmentCompat;-><init>()V
 
     return-void
@@ -32,7 +32,7 @@
 .method private getListPreference()Landroidx/preference/ListPreference;
     .locals 1
 
-    .line 76
+    .line 78
     invoke-virtual {p0}, Landroidx/preference/ListPreferenceDialogFragmentCompat;->getPreference()Landroidx/preference/DialogPreference;
 
     move-result-object v0
@@ -45,12 +45,12 @@
 .method public static newInstance(Ljava/lang/String;)Landroidx/preference/ListPreferenceDialogFragmentCompat;
     .locals 3
 
-    .line 38
+    .line 40
     new-instance v0, Landroidx/preference/ListPreferenceDialogFragmentCompat;
 
     invoke-direct {v0}, Landroidx/preference/ListPreferenceDialogFragmentCompat;-><init>()V
 
-    .line 40
+    .line 42
     new-instance v1, Landroid/os/Bundle;
 
     const/4 v2, 0x1
@@ -59,10 +59,10 @@
 
     const-string v2, "key"
 
-    .line 41
+    .line 43
     invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 42
+    .line 44
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreferenceDialogFragmentCompat;->setArguments(Landroid/os/Bundle;)V
 
     return-object v0
@@ -73,17 +73,17 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 48
+    .line 50
     invoke-super {p0, p1}, Landroidx/preference/PreferenceDialogFragmentCompat;->onCreate(Landroid/os/Bundle;)V
 
     if-nez p1, :cond_1
 
-    .line 50
+    .line 52
     invoke-direct {p0}, Landroidx/preference/ListPreferenceDialogFragmentCompat;->getListPreference()Landroidx/preference/ListPreference;
 
     move-result-object p1
 
-    .line 52
+    .line 54
     invoke-virtual {p1}, Landroidx/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -96,7 +96,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 57
+    .line 59
     invoke-virtual {p1}, Landroidx/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
@@ -107,14 +107,14 @@
 
     iput v0, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mClickedDialogEntryIndex:I
 
-    .line 58
+    .line 60
     invoke-virtual {p1}, Landroidx/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mEntries:[Ljava/lang/CharSequence;
 
-    .line 59
+    .line 61
     invoke-virtual {p1}, Landroidx/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -123,7 +123,7 @@
 
     goto :goto_0
 
-    .line 53
+    .line 55
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -138,7 +138,7 @@
 
     const-string v1, "ListPreferenceDialogFragment.index"
 
-    .line 61
+    .line 63
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -147,7 +147,7 @@
 
     const-string v0, "ListPreferenceDialogFragment.entries"
 
-    .line 62
+    .line 64
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getCharSequenceArray(Ljava/lang/String;)[Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -156,7 +156,7 @@
 
     const-string v0, "ListPreferenceDialogFragment.entryValues"
 
-    .line 63
+    .line 65
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getCharSequenceArray(Ljava/lang/String;)[Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -170,35 +170,35 @@
 .method public onDialogClosed(Z)V
     .locals 2
 
-    .line 104
-    invoke-direct {p0}, Landroidx/preference/ListPreferenceDialogFragmentCompat;->getListPreference()Landroidx/preference/ListPreference;
-
-    move-result-object v0
-
     if-eqz p1, :cond_0
 
-    .line 105
+    .line 106
     iget p1, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mClickedDialogEntryIndex:I
 
     if-ltz p1, :cond_0
 
-    .line 106
-    iget-object v1, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mEntryValues:[Ljava/lang/CharSequence;
+    .line 107
+    iget-object v0, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mEntryValues:[Ljava/lang/CharSequence;
 
-    aget-object p1, v1, p1
+    aget-object p1, v0, p1
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 107
+    .line 108
+    invoke-direct {p0}, Landroidx/preference/ListPreferenceDialogFragmentCompat;->getListPreference()Landroidx/preference/ListPreference;
+
+    move-result-object v0
+
+    .line 109
     invoke-virtual {v0, p1}, Landroidx/preference/ListPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 108
+    .line 110
     invoke-virtual {v0, p1}, Landroidx/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     :cond_0
@@ -208,10 +208,10 @@
 .method protected onPrepareDialogBuilder(Landroidx/appcompat/app/AlertDialog$Builder;)V
     .locals 3
 
-    .line 81
+    .line 83
     invoke-super {p0, p1}, Landroidx/preference/PreferenceDialogFragmentCompat;->onPrepareDialogBuilder(Landroidx/appcompat/app/AlertDialog$Builder;)V
 
-    .line 83
+    .line 85
     iget-object v0, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mEntries:[Ljava/lang/CharSequence;
 
     iget v1, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mClickedDialogEntryIndex:I
@@ -224,7 +224,7 @@
 
     const/4 v0, 0x0
 
-    .line 99
+    .line 101
     invoke-virtual {p1, v0, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
     return-void
@@ -233,24 +233,24 @@
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 69
+    .line 71
     invoke-super {p0, p1}, Landroidx/preference/PreferenceDialogFragmentCompat;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 70
+    .line 72
     iget v0, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mClickedDialogEntryIndex:I
 
     const-string v1, "ListPreferenceDialogFragment.index"
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 71
+    .line 73
     iget-object v0, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mEntries:[Ljava/lang/CharSequence;
 
     const-string v1, "ListPreferenceDialogFragment.entries"
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putCharSequenceArray(Ljava/lang/String;[Ljava/lang/CharSequence;)V
 
-    .line 72
+    .line 74
     iget-object v0, p0, Landroidx/preference/ListPreferenceDialogFragmentCompat;->mEntryValues:[Ljava/lang/CharSequence;
 
     const-string v1, "ListPreferenceDialogFragment.entryValues"

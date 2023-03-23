@@ -1,4 +1,4 @@
-.class final Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission$1;
+.class Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission$1;
 .super Ljava/lang/Object;
 .source "PermissionHelper.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -40,6 +40,14 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 68
     new-instance v0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
@@ -51,6 +59,14 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 65
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission$1;->createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
@@ -62,6 +78,14 @@
 
 .method public newArray(I)[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
     .line 73
     new-array p1, p1, [Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
@@ -71,6 +95,14 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
     .line 65
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission$1;->newArray(I)[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;

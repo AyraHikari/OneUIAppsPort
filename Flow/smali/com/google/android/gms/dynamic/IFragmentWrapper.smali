@@ -1,5 +1,6 @@
 .class public interface abstract Lcom/google/android/gms/dynamic/IFragmentWrapper;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 # interfaces
 .implements Landroid/os/IInterface;
@@ -14,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract getArguments()Landroid/os/Bundle;
+.method public abstract zzA()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -22,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract getId()I
+.method public abstract zzb()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30,7 +31,7 @@
     .end annotation
 .end method
 
-.method public abstract getRetainInstance()Z
+.method public abstract zzc()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -38,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract getTag()Ljava/lang/String;
+.method public abstract zzd()Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -46,7 +47,7 @@
     .end annotation
 .end method
 
-.method public abstract getTargetRequestCode()I
+.method public abstract zze()Lcom/google/android/gms/dynamic/IFragmentWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -54,7 +55,7 @@
     .end annotation
 .end method
 
-.method public abstract getUserVisibleHint()Z
+.method public abstract zzf()Lcom/google/android/gms/dynamic/IFragmentWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -62,7 +63,7 @@
     .end annotation
 .end method
 
-.method public abstract isAdded()Z
+.method public abstract zzg()Lcom/google/android/gms/dynamic/IObjectWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -70,7 +71,7 @@
     .end annotation
 .end method
 
-.method public abstract isDetached()Z
+.method public abstract zzh()Lcom/google/android/gms/dynamic/IObjectWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -78,7 +79,7 @@
     .end annotation
 .end method
 
-.method public abstract isHidden()Z
+.method public abstract zzi()Lcom/google/android/gms/dynamic/IObjectWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -86,7 +87,7 @@
     .end annotation
 .end method
 
-.method public abstract isInLayout()Z
+.method public abstract zzj()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -94,7 +95,7 @@
     .end annotation
 .end method
 
-.method public abstract isRemoving()Z
+.method public abstract zzk(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -102,7 +103,7 @@
     .end annotation
 .end method
 
-.method public abstract isResumed()Z
+.method public abstract zzl(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -110,7 +111,7 @@
     .end annotation
 .end method
 
-.method public abstract isVisible()Z
+.method public abstract zzm(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -118,7 +119,7 @@
     .end annotation
 .end method
 
-.method public abstract setHasOptionsMenu(Z)V
+.method public abstract zzn(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -126,7 +127,7 @@
     .end annotation
 .end method
 
-.method public abstract setMenuVisibility(Z)V
+.method public abstract zzo(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -134,7 +135,7 @@
     .end annotation
 .end method
 
-.method public abstract setRetainInstance(Z)V
+.method public abstract zzp(Landroid/content/Intent;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -142,7 +143,7 @@
     .end annotation
 .end method
 
-.method public abstract setUserVisibleHint(Z)V
+.method public abstract zzq(Landroid/content/Intent;I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -150,7 +151,7 @@
     .end annotation
 .end method
 
-.method public abstract startActivity(Landroid/content/Intent;)V
+.method public abstract zzr(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -158,7 +159,7 @@
     .end annotation
 .end method
 
-.method public abstract startActivityForResult(Landroid/content/Intent;I)V
+.method public abstract zzs()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -166,7 +167,7 @@
     .end annotation
 .end method
 
-.method public abstract zza(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract zzt()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -174,7 +175,7 @@
     .end annotation
 .end method
 
-.method public abstract zzae()Lcom/google/android/gms/dynamic/IObjectWrapper;
+.method public abstract zzu()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -182,7 +183,7 @@
     .end annotation
 .end method
 
-.method public abstract zzaf()Lcom/google/android/gms/dynamic/IFragmentWrapper;
+.method public abstract zzv()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -190,7 +191,7 @@
     .end annotation
 .end method
 
-.method public abstract zzag()Lcom/google/android/gms/dynamic/IObjectWrapper;
+.method public abstract zzw()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -198,7 +199,7 @@
     .end annotation
 .end method
 
-.method public abstract zzah()Lcom/google/android/gms/dynamic/IFragmentWrapper;
+.method public abstract zzx()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -206,7 +207,7 @@
     .end annotation
 .end method
 
-.method public abstract zzai()Lcom/google/android/gms/dynamic/IObjectWrapper;
+.method public abstract zzy()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -214,7 +215,7 @@
     .end annotation
 .end method
 
-.method public abstract zzb(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract zzz()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

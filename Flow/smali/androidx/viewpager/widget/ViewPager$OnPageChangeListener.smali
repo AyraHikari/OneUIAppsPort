@@ -16,10 +16,38 @@
 
 # virtual methods
 .method public abstract onPageScrollStateChanged(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 .end method
 
 .method public abstract onPageScrolled(IFI)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "positionOffset",
+            "positionOffsetPixels"
+        }
+    .end annotation
 .end method
 
 .method public abstract onPageSelected(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 .end method

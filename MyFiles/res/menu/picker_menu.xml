@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_category_view_type" android:visible="false" app:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_search" android:id="@id/menu_search" android:title="@string/menu_search" app:showAsAction="always|collapseActionView" />
+    <item android:id="@id/menu_create_folder" android:title="@string/menu_create_folder" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_view_by" android:id="@id/menu_view_list_type" android:title="@string/menu_view" app:showAsAction="always" />
+</menu>

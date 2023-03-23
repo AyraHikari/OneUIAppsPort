@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">%dଟି ରୁ ଅଧିକ ଆଇଟମ୍ ଚୟନ କରିପାରିବେ ନାହିଁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ରୁ ଅଧିକ ଆଇଟମ୍ ଚୟନ କରିପାରିବେ ନାହିଁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%dଟି ଫାଇଲ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଯାଇ ପାରିଲା ନାହିଁ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଯାଇ ପାରିଲା ନାହିଁ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇ ପାରିବେ ନାହିଁ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇ ପାରିବେ ନାହିଁ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇ ପାରିବେ ନାହିଁ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇ ପାରିବେ ନାହିଁ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%dଟି ଚୟନିତ ଫାଇଲ୍ ବିଲୋପ ହେବ କାରଣ ସେଗୁଡିକ କ୍ଲାଉଡ୍ କିମ୍ୱା ଏକ USB ଷ୍ଟୋରେଜ୍ ଡିଭାଇସରେ ଅଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଚୟନିତ ଫାଇଲ୍ ବିଲୋପ ହେବ କାରଣ ଏହା କ୍ଲାଉଡ୍ କିମ୍ୱା ଏକ USB ଷ୍ଟୋରେଜ୍ ଡିଭାଇସରେ ଅଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%dଟି ଚୟନିତ ଫୋଲ୍ଡର୍ ବିଲୋପ ହେବ କାରଣ ସେଗୁଡିକ କ୍ଲାଉଡ୍ କିମ୍ୱା ଏକ USB ଷ୍ଟୋରେଜ୍ ଡିଭାଇସରେ ଅଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଚୟନିତ ଫାଇଲ୍ ବିଲୋପ ହେବ କାରଣ ଏହା କ୍ଲାଉଡ୍ କିମ୍ୱା ଏକ USB ଷ୍ଟୋରେଜ୍ ଡିଭାଇସରେ ଅଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%dଟି ଚୟନିତ ଆଇଟମ୍ ବିଲୋପ ହେବ କାରଣ ସେଗୁଡିକ କ୍ଲାଉଡ୍ କିମ୍ୱା ଏକ USB ଷ୍ଟୋରେଜ୍ ଡିଭାଇସରେ ଅଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଚୟନିତ ଆଇଟମ୍ ବିଲୋପ ହେବ କାରଣ ଏହା କ୍ଲାଉଡ୍ କିମ୍ୱା ଏକ USB ଷ୍ଟୋରେଜ୍ ଡିଭାଇସ୍ ଅନ୍ କରିଥାଏ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%dଟି ଫାଇଲ୍‌ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍‌ ସଂଙ୍କୁଚିତ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%dଟି ଫାଇଲ୍‌ ସଂଙ୍କୁଚିତ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ସଂଙ୍କୁଚିତ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ସଂକୋଚନ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%dଟି ଫାଇଲ୍ କପି ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ କପି ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%dଟି ଫାଇଲ୍ କପି ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ କପି ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ କପି ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ କପି ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ କପି ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ କପି ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%dଟି ଆଇଟମ୍ କପି ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ କପି ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%dଟି ଆଇଟମ୍ କପି ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ କପି ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">ଆପଣଙ୍କ ଫୋନରୁ %dଟି ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଫୋନରୁ %dଟି ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">ଆପଣଙ୍କ ଟ୍ୟାବଲେଟରୁ %dଟି ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଟ୍ୟାବଲେଟରୁ %dଟି ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">ଆପଣଙ୍କ ଫୋନରୁ %dଟି ଫୋଲ୍ଡର୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଫୋନରୁ %dଟି ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">ଆପଣଙ୍କ ଟ୍ୟାବଲେଟରୁ %dଟି ଫୋଲ୍ଡର୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଟ୍ୟାବଲେଟରୁ %dଟି ଫୋଲ୍ଡର୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">ଆପଣଙ୍କ ଫୋନରୁ %d ଆଇଟମ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଫୋନରୁ %dଟି ଆଇଟମ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">ଆପଣଙ୍କ ଟ୍ୟାବଲେଟରୁ %d ଆଇଟମ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଟ୍ୟାବଲେଟରୁ %dଟି ଆଇଟମ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%dଟି ଫାଇଲ୍‌ ବିଲୋପ କରୁଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ବିଲୋପ କରୁଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">ଟ୍ରାସରୁ %dଟି ଆଇଟମ୍‌ ବିଲୋପ କରୁଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଟ୍ରାସରୁ %dଟି ଆଇଟମ୍‌ ବିଲୋପ କରୁଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%dଟି ଫାଇଲ୍‌ ଏକ୍ସଟ୍ରାକ୍ଟ କରୁଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍‌ ଏକ୍ସଟ୍ରାକ୍ଟ କରୁଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ଏକ୍ସଟ୍ରାକ୍ଟ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ଏକ୍ସଟ୍ରାକ୍ଟ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%dଟି ଆଇଟମ୍‌‌ ଏକ୍ସଟ୍ରାକ୍ଟ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍‌ ଏକ୍ସଟ୍ରାକ୍ଟ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$sରେ ଟ୍ରାସକୁ %1$dଟି ଫାଇଲ୍ ଘୁଞ୍ଚା ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$sରେ ଟ୍ରାସକୁ %1$dଟି ଫାଇଲ୍ ମଧ୍ୟ ଘୁଞ୍ଚା ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%dଟି ଫାଇଲ୍‌ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍‌ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$dଟି ଫୋଲ୍ଡର୍ %2$sରେ ଟ୍ରାସକୁ ମଧ୍ୟ ଘୁଞ୍ଚା ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$dଟି ଫୋଲ୍ଡର୍ %2$sରେ ଟ୍ରାସକୁ ମଧ୍ୟ ଘୁଞ୍ଚା ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ଏବଂ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ଏବଂ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ଏବଂ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ଏବଂ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ଏବଂ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଅନ୍ତଃର୍ନିହିତ ଷ୍ଟୋରେଜ୍ ଏବଂ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%dଟି ଆଇଟମ୍‌ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$sରେ ଟ୍ରାସକୁ %1$dଟି ଆଇଟମ୍ ଘୁଞ୍ଚା ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$sରେ ଟ୍ରାସକୁ %1$dଟି ଆଇଟମ୍ ମଧ୍ୟ ଘୁଞ୍ଚା ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">%dଟି ରୁ ଅଧିକ ଆପ୍ଲିକେସନ୍‌ ୱିଣ୍ଡୋ ଖୋଲିପାରିବେ ନାହିଁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ରୁ ଅଧିକ ଆପ୍ଲିକେସନ୍‌ ୱିଣ୍ଡୋ ଖୋଲିପାରିବେ ନାହିଁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%dଟି ଫାଇଲ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">ଟ୍ରାସକୁ %dଟି ଫାଇଲ୍ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଟ୍ରାସକୁ %dଟି ଫାଇଲ୍ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">ଟ୍ରାସକୁ %dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଟ୍ରାସକୁ %dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ଟ୍ରାସକୁ ଘୁଞ୍ଚାଇବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">ଟ୍ରାସକୁ %dଟି ଫାଇଲ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଟ୍ରାସକୁ %dଟି ଫାଇଲ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">ଟ୍ରାସକୁ %dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଟ୍ରାସକୁ %dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">ଟ୍ରାସକୁ %dଟି ଆଇଟମ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଟ୍ରାସକୁ %dଟି ଆଇଟମ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%dଟି ଫାଇଲ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%dଟି ଫାଇଲ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ଘୁଞ୍ଚା ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ସଙ୍କୁଚିତ ହେଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ସଙ୍କୁଚିତ ହେଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%2$sକୁ %1$dଟି ଆଇଟମ୍ କପି ହୋଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$sକୁ %1$dଟି ଆଇଟମ୍ କପି ହୋଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">ଏଥିରେ ଥିବା ଫୋଲ୍ଡର୍ ଏବଂ %dଟି ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="one">ଏଥିରେ ଥିବା ଫୋଲ୍ଡର୍ ଏବଂ ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">ସେଗୁଡିକରୁ %1$dଟି ଫୋଲ୍ଡର୍ ଏବଂ %2$dଟି ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+        <item quantity="one">ଏଥିରେ ଥିବା ଫୋଲ୍ଡର୍ ଏବଂ ଫାଇଲ୍ ବିଲୋପ କରିବେ?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ବିଲୋପ ହୋଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ବିଲୋପ ହୋଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%dଟି ଫାଇଲ୍‌ ଡାଉନଲୋଡ୍ କରୁଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍‌ ଡାଉନଲୋଡ୍ କରୁଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍‌ ଡାଉନଲୋଡ୍ କରୁଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍‌ ଡାଉନଲୋଡ୍ କରୁଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%dଟି ଆଇଟମ୍‌ ଡାଉନଲୋଡ୍ କରୁଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍‌ ଡାଉନଲୋଡ୍ କରୁଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">ଫୋଲ୍ଡରଗୁଡିକ ଅଂଶୀଦାର କରିପାରିବେ ନାହିଁ। ଫୋଲ୍ଡର୍ ଖାଲି ଅଛି।</item>
+        <item quantity="one">ଫୋଲ୍ଡର୍ ଅଂଶୀଦାର କରିପାରିବେ ନାହିଁ। ଫୋଲ୍ଡର୍ ଖାଲି ଅଛି।</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ଏକ୍ସଟ୍ରାକ୍ଟ ହୋଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ଏକ୍ସଟ୍ରାକ୍ଟ ହୋଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">ପସନ୍ଦିତାକୁ %dଟି ଫାଇଲ୍ ଯୋଡାଯାଇଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ପସନ୍ଦିତାକୁ %dଟି ଫାଇଲ୍ ଯୋଡାଯାଇଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">ପସନ୍ଦିତାରୁ %dଟି ଫାଇଲ୍ ଅପସାରଣ ହୋଇଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ପସନ୍ଦିତାରୁ %dଟି ଫାଇଲ୍ ଅପସାରଣ ହୋଇଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">ପସନ୍ଦିତାକୁ %dଟି ଫୋଲ୍ଡର୍ ଯୋଡାଯାଇଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ପସନ୍ଦିତାକୁ %dଟି ଫୋଲ୍ଡର୍ ଯୋଡାଯାଇଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">ପସନ୍ଦିତାରୁ %dଟି ଫୋଲ୍ଡର୍ ଅପସାରଣ ହୋଇଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ପସନ୍ଦିତାରୁ %dଟି ଫୋଲ୍ଡର୍ ଅପସାରଣ ହୋଇଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">ପସନ୍ଦିତାକୁ %dଟି ଆଇଟମ୍‌ ଯୋଡାଯାଇଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ପସନ୍ଦିତାକୁ %dଟି ଆଇଟମ୍‌ ଯୋଡାଯାଇଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">ପସନ୍ଦିତାରୁ %dଟି ଆଇଟମ୍‌ ଅପସାରଣ ହୋଇଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ପସନ୍ଦିତାରୁ %dଟି ଆଇଟମ୍‌ ଅପସାରଣ ହୋଇଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%dଟି ଆଇଟମ୍‌</item>
+        <item quantity="one">1 ଆଇଟମ୍</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%dଟି ଆଇଟମ୍‌</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">କ୍ଲିପବୋର୍ଡକୁ %dଟି ଆଇଟମ୍ କପି ହୋଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">କ୍ଲିପବୋର୍ଡକୁ %dଟି ଆଇଟମ୍ କପି ହୋଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">କ୍ଲିପବୋର୍ଡକୁ %dଟି ଆଇଟମ୍ ଘୁଞ୍ଚାଯାଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">କ୍ଲିପବୋର୍ଡକୁ %dଟି ଆଇଟମ୍ ଘୁଞ୍ଚାଯାଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ଚୟନିତ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ଚୟନିତ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%2$sକୁ %1$dଟି ଡିଭାଇସ୍ ଘୁଞ୍ଚାଯାଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$sକୁ %1$dଟି ଡିଭାଇସ୍ ଘୁଞ୍ଚାଯାଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">ଟ୍ରାସକୁ %dଟି ଆଇଟମ୍ ଘୁଞ୍ଚାଯାଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଟ୍ରାସକୁ %dଟି ଆଇଟମ୍ ଘୁଞ୍ଚାଯାଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%dଟି ଚୟନିତ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଚୟନିତ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">ଆପଣଙ୍କ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">ଆପଣଙ୍କ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">ଆପଣଙ୍କ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ SD କାର୍ଡ ପୂର୍ଣ୍ଣ ହୋଇଛି। %dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">ଏହି ଫାଇଲ୍ %d ଦିନରେ ବିଲୋପ ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଏହି ଫାଇଲ୍ %d ଦିନରେ ବିଲୋପ ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">ଏହି ଫୋଲ୍ଡର୍ %d ଦିନରେ ବିଲୋପ ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଏହି ଫୋଲ୍ଡର୍ %d ଦିନରେ ବିଲୋପ ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%dଟି ଫାଇଲ୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%dଟି ଫାଇଲ୍‌ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫାଇଲ୍‌ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%dଟି ଫୋଲ୍ଡର୍ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଫୋଲ୍ଡର୍ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ସ୍ଥାୟୀଭାବେ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%dଟି ଆଇଟମ୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ବିଲୋପ ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%dଟି ଆଇଟମ୍‌ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆଇଟମ୍ ପୁନରୁଦ୍ଧାର ହେଉଛି…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d ଦିନରେ ବିଲୋପ ହେବ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଦିନରେ ବିଲୋପ ହେବ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%dଟି ଆପ୍ଲିକେସନ୍ ଅଣସଂସ୍ଥାପନ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଆପ୍ଲିକେସନ୍ ଅଣସଂସ୍ଥାପନ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

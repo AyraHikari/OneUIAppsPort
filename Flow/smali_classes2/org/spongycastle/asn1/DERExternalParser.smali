@@ -86,7 +86,7 @@
 .method public toASN1Primitive()Lorg/spongycastle/asn1/ASN1Primitive;
     .locals 3
 
-    const-string v0, "unable to get DER object"
+    const-string/jumbo v0, "unable to get DER object"
 
     .line 57
     :try_start_0

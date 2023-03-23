@@ -23,6 +23,18 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroidx/recyclerview/widget/RecyclerView;Lcom/samsung/android/galaxycontinuity/customcontrols/RecyclerItemClickListener$OnItemClickListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10,
+            0x0
+        }
+        names = {
+            "context",
+            "recyclerView",
+            "listener"
+        }
+    .end annotation
 
     .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -57,6 +69,16 @@
 # virtual methods
 .method public onInterceptTouchEvent(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "e"
+        }
+    .end annotation
 
     .line 39
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
@@ -107,12 +129,30 @@
 
 .method public onRequestDisallowInterceptTouchEvent(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "disallowIntercept"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onTouchEvent(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "motionEvent"
+        }
+    .end annotation
 
     return-void
 .end method

@@ -23,8 +23,20 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;Landroid/view/View;Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "src",
+            "val$popup"
+        }
+    .end annotation
 
-    .line 257
+    .line 279
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$1;->this$0:Landroidx/appcompat/widget/AppCompatSpinner;
 
     iput-object p3, p0, Landroidx/appcompat/widget/AppCompatSpinner$1;->val$popup:Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;
@@ -39,7 +51,7 @@
 .method public getPopup()Landroidx/appcompat/view/menu/ShowableListMenu;
     .locals 1
 
-    .line 260
+    .line 282
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$1;->val$popup:Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;
 
     return-object v0
@@ -48,7 +60,7 @@
 .method public onForwardingStarted()Z
     .locals 1
 
-    .line 266
+    .line 288
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$1;->this$0:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->getInternalPopup()Landroidx/appcompat/widget/AppCompatSpinner$SpinnerPopup;
@@ -61,10 +73,10 @@
 
     if-nez v0, :cond_0
 
-    .line 267
+    .line 289
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$1;->this$0:Landroidx/appcompat/widget/AppCompatSpinner;
 
-    invoke-static {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->access$000(Landroidx/appcompat/widget/AppCompatSpinner;)V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->showPopup()V
 
     :cond_0
     const/4 v0, 0x1

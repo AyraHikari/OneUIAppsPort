@@ -1,4 +1,4 @@
-.class final Lokhttp3/ResponseBody$1;
+.class Lokhttp3/ResponseBody$1;
 .super Lokhttp3/ResponseBody;
 .source "ResponseBody.java"
 
@@ -26,7 +26,7 @@
 .method constructor <init>(Lokhttp3/MediaType;JLokio/BufferedSource;)V
     .locals 0
 
-    .line 217
+    .line 228
     iput-object p1, p0, Lokhttp3/ResponseBody$1;->val$contentType:Lokhttp3/MediaType;
 
     iput-wide p2, p0, Lokhttp3/ResponseBody$1;->val$contentLength:J
@@ -43,7 +43,7 @@
 .method public contentLength()J
     .locals 2
 
-    .line 223
+    .line 234
     iget-wide v0, p0, Lokhttp3/ResponseBody$1;->val$contentLength:J
 
     return-wide v0
@@ -54,7 +54,7 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 219
+    .line 230
     iget-object v0, p0, Lokhttp3/ResponseBody$1;->val$contentType:Lokhttp3/MediaType;
 
     return-object v0
@@ -63,7 +63,7 @@
 .method public source()Lokio/BufferedSource;
     .locals 1
 
-    .line 227
+    .line 238
     iget-object v0, p0, Lokhttp3/ResponseBody$1;->val$content:Lokio/BufferedSource;
 
     return-object v0

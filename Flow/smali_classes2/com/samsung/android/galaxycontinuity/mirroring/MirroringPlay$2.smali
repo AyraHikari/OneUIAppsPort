@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$json"
+        }
+    .end annotation
 
-    .line 385
+    .line 380
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$2;->val$json:Ljava/lang/String;
@@ -42,19 +52,23 @@
 .method public run()V
     .locals 5
 
-    .line 390
+    .line 385
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "sendControlNoti : "
+    const-string/jumbo v1, "sendControlNoti : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$2;->val$json:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -62,7 +76,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 391
+    .line 386
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
@@ -71,7 +85,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 392
+    .line 387
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$2;->val$json:Ljava/lang/String;
 
     sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
@@ -80,7 +94,7 @@
 
     move-result-object v0
 
-    .line 393
+    .line 388
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
@@ -104,10 +118,10 @@
     :catch_0
     move-exception v0
 
-    .line 396
+    .line 391
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 397
+    .line 392
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -116,13 +130,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

@@ -46,7 +46,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 88
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,7 +54,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 88
     invoke-direct {p0}, Lokhttp3/internal/platform/OpenJSSEPlatform$Companion;-><init>()V
 
     return-void
@@ -66,12 +64,7 @@
 .method public final buildIfSupported()Lokhttp3/internal/platform/OpenJSSEPlatform;
     .locals 2
 
-    .line 98
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/internal/platform/OpenJSSEPlatform$Companion;
-
-    invoke-virtual {v0}, Lokhttp3/internal/platform/OpenJSSEPlatform$Companion;->isSupported()Z
+    invoke-virtual {p0}, Lokhttp3/internal/platform/OpenJSSEPlatform$Companion;->isSupported()Z
 
     move-result v0
 
@@ -92,7 +85,6 @@
 .method public final isSupported()Z
     .locals 1
 
-    .line 89
     invoke-static {}, Lokhttp3/internal/platform/OpenJSSEPlatform;->access$isSupported$cp()Z
 
     move-result v0

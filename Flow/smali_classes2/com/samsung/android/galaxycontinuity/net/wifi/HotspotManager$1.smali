@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 249
+    .line 255
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -34,10 +42,20 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     if-eqz p2, :cond_6
 
-    .line 253
+    .line 259
     :try_start_0
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -51,7 +69,7 @@
 
     goto :goto_1
 
-    .line 256
+    .line 262
     :cond_0
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -86,13 +104,13 @@
 
     goto :goto_1
 
-    .line 258
+    .line 264
     :cond_3
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object p1
 
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -108,12 +126,12 @@
 
     if-eq p1, v0, :cond_4
 
-    .line 259
+    .line 265
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object p1
 
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -127,7 +145,7 @@
 
     if-nez p1, :cond_5
 
-    .line 260
+    .line 266
     :cond_4
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
 
@@ -135,7 +153,7 @@
 
     move-result-object p2
 
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_RESULT:Ljava/lang/String;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;->DIALOG_RESULT:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -149,7 +167,7 @@
 
     invoke-static {p1, p2}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->access$002(Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;I)I
 
-    .line 262
+    .line 268
     :cond_5
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
 
@@ -159,7 +177,7 @@
 
     if-eqz p1, :cond_6
 
-    .line 263
+    .line 269
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->access$100(Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;)Ljava/util/concurrent/CountDownLatch;
@@ -175,7 +193,7 @@
     :catch_0
     move-exception p1
 
-    .line 268
+    .line 274
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_6

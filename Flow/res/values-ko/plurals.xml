@@ -8,14 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow에서 컴퓨터나 태블릿을 %d개까지 등록하고 관리해 보세요.
-
-컴퓨터나 태블릿은 한 번에 하나만 휴대전화에 연결할 수 있습니다. 등록된 컴퓨터나 태블릿 모두 휴대전화에 연결을 시도할 때는 이 중 하나를 선택해야 합니다."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">새 알림 %d개</item>
+        <item quantity="one">새 알림 %d개</item>
     </plurals>
 </resources>

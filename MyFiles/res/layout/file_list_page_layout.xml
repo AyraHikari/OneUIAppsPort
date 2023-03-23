@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/file_list_page_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/file_list_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ViewStub android:id="@id/expire_notify_stub" android:paddingTop="@dimen/trash_notify_section_vertical_margin" android:layout="@layout/trash_expire_notify" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/empty_view" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/no_item" />
+        </LinearLayout>
+        <ViewStub android:id="@id/loading_view_stub" android:tag="binding_2" android:layout="@layout/loading_container" android:inflatedId="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ViewStub android:id="@id/bottom_text_box_stub" android:tag="binding_3" android:layout="@layout/bottom_text_box_layout" android:inflatedId="@id/bottom_text_box" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

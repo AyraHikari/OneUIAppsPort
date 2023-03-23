@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1633
+    .line 1604
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -34,8 +42,18 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
-    .line 1636
+    .line 1607
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -44,11 +62,15 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -56,7 +78,7 @@
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1637
+    .line 1608
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$5200(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/lang/String;
@@ -75,12 +97,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 1638
+    .line 1609
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->setSourceConnectSetting(I)V
 
     const-string p1, "fileUri"
 
-    .line 1640
+    .line 1611
     invoke-virtual {p2, p1}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
 
     move-result p1
@@ -89,7 +111,7 @@
 
     const-string p1, "fileUri"
 
-    .line 1641
+    .line 1612
     invoke-virtual {p2, p1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -99,7 +121,7 @@
     :cond_0
     const-string p1, "dstFolderUri"
 
-    .line 1642
+    .line 1613
     invoke-virtual {p2, p1}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
 
     move-result p1
@@ -108,12 +130,12 @@
 
     const-string p1, "dstFolderUri"
 
-    .line 1643
+    .line 1614
     invoke-virtual {p2, p1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1647
+    .line 1618
     :goto_0
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -123,7 +145,11 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -131,7 +157,7 @@
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1648
+    .line 1619
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     move-result-object p2
@@ -143,7 +169,7 @@
     :cond_1
     return-void
 
-    .line 1649
+    .line 1620
     :cond_2
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
@@ -161,7 +187,7 @@
 
     if-eqz p1, :cond_c
 
-    .line 1650
+    .line 1621
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$5400(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/lang/Object;
@@ -170,7 +196,7 @@
 
     monitor-enter p1
 
-    .line 1651
+    .line 1622
     :try_start_0
     invoke-virtual {p2}, Landroid/content/Intent;->getClipData()Landroid/content/ClipData;
 
@@ -190,7 +216,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
-    .line 1652
+    .line 1623
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$4300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     move-result-object v1
@@ -201,7 +227,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
-    .line 1653
+    .line 1624
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$4300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     move-result-object v1
@@ -214,7 +240,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
-    .line 1654
+    .line 1625
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$4300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     move-result-object v1
@@ -229,28 +255,28 @@
 
     goto/16 :goto_4
 
-    .line 1656
+    .line 1627
     :cond_3
     monitor-exit p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1658
+    .line 1629
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->setSourceConnectSetting(I)V
 
-    const-string p1, "start drag to pc"
+    const-string/jumbo p1, "start drag to pc"
 
-    .line 1659
+    .line 1630
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1661
+    .line 1632
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     move v1, v0
 
-    .line 1662
+    .line 1633
     :goto_1
     invoke-virtual {p2}, Landroid/content/Intent;->getClipData()Landroid/content/ClipData;
 
@@ -262,7 +288,7 @@
 
     if-ge v1, v3, :cond_4
 
-    .line 1663
+    .line 1634
     invoke-virtual {p2}, Landroid/content/Intent;->getClipData()Landroid/content/ClipData;
 
     move-result-object v3
@@ -271,17 +297,17 @@
 
     move-result-object v3
 
-    .line 1664
+    .line 1635
     invoke-virtual {v3}, Landroid/content/ClipData$Item;->getUri()Landroid/net/Uri;
 
     move-result-object v3
 
-    .line 1666
+    .line 1637
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getFileFromUri(Landroid/net/Uri;)Ljava/io/File;
 
     move-result-object v3
 
-    .line 1668
+    .line 1639
     new-instance v10, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;
 
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
@@ -312,7 +338,7 @@
 
     goto :goto_1
 
-    .line 1671
+    .line 1642
     :cond_4
     invoke-virtual {p2}, Landroid/content/Intent;->getClipData()Landroid/content/ClipData;
 
@@ -326,19 +352,19 @@
 
     move-result-object v1
 
-    .line 1672
+    .line 1643
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getFileFromUri(Landroid/net/Uri;)Ljava/io/File;
 
     move-result-object v1
 
-    .line 1675
+    .line 1646
     invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
 
     move-result v3
 
     if-eqz v3, :cond_7
 
-    .line 1676
+    .line 1647
     invoke-virtual {v1}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object p2
@@ -347,11 +373,11 @@
 
     goto :goto_2
 
-    .line 1677
+    .line 1648
     :cond_5
     array-length v0, p2
 
-    .line 1679
+    .line 1650
     :goto_2
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -361,11 +387,17 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     const-string v1, ")"
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -378,9 +410,9 @@
     return-void
 
     :cond_6
-    const p2, 0x7f070058
+    const p2, 0x7f080068
 
-    .line 1685
+    .line 1656
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
@@ -398,10 +430,10 @@
     :cond_7
     const-string v3, "User try to DragDrop file"
 
-    .line 1687
+    .line 1658
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1688
+    .line 1659
     invoke-virtual {p2}, Landroid/content/Intent;->getClipData()Landroid/content/ClipData;
 
     move-result-object p2
@@ -424,7 +456,7 @@
 
     if-nez p2, :cond_8
 
-    .line 1691
+    .line 1662
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p2
@@ -436,9 +468,9 @@
     :cond_8
     if-nez p2, :cond_9
 
-    const/high16 p2, 0x7f0e0000
+    const/high16 p2, 0x7f0f0000
 
-    .line 1695
+    .line 1666
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
@@ -451,19 +483,19 @@
 
     move-result-object p2
 
-    .line 1698
+    .line 1669
     :cond_9
     :goto_3
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->bitmapToBase64(Landroid/graphics/Bitmap;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 1700
+    .line 1671
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/DragStartData;
 
     invoke-direct {v0, p1, p2}, Lcom/samsung/android/galaxycontinuity/data/DragStartData;-><init>(Ljava/util/ArrayList;Ljava/lang/String;)V
 
-    .line 1701
+    .line 1672
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object p1
@@ -474,10 +506,10 @@
 
     if-eqz p1, :cond_a
 
-    .line 1702
+    .line 1673
     iput-boolean v2, v0, Lcom/samsung/android/galaxycontinuity/data/DragStartData;->isPull:Z
 
-    .line 1703
+    .line 1674
     :cond_a
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
@@ -489,7 +521,7 @@
 
     goto :goto_5
 
-    .line 1655
+    .line 1626
     :cond_b
     :goto_4
     :try_start_1
@@ -500,7 +532,7 @@
     :catchall_0
     move-exception p2
 
-    .line 1656
+    .line 1627
     monitor-exit p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

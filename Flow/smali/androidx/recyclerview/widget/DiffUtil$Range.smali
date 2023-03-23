@@ -28,7 +28,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 482
+    .line 577
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,20 +37,48 @@
 .method public constructor <init>(IIII)V
     .locals 0
 
-    .line 485
+    .line 580
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 486
+    .line 581
     iput p1, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->oldListStart:I
 
-    .line 487
+    .line 582
     iput p2, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->oldListEnd:I
 
-    .line 488
+    .line 583
     iput p3, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->newListStart:I
 
-    .line 489
+    .line 584
     iput p4, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->newListEnd:I
 
     return-void
+.end method
+
+
+# virtual methods
+.method newSize()I
+    .locals 2
+
+    .line 592
+    iget v0, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->newListEnd:I
+
+    iget v1, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->newListStart:I
+
+    sub-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method oldSize()I
+    .locals 2
+
+    .line 588
+    iget v0, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->oldListEnd:I
+
+    iget v1, p0, Landroidx/recyclerview/widget/DiffUtil$Range;->oldListStart:I
+
+    sub-int/2addr v0, v1
+
+    return v0
 .end method

@@ -7,9 +7,15 @@
 
 
 # annotations
+.annotation build Landroid/annotation/SuppressLint;
+    value = {
+        "BanParcelableUsage"
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroidx/activity/result/IntentSenderRequest$Builder;
+        Landroidx/activity/result/IntentSenderRequest$b;
     }
 .end annotation
 
@@ -27,57 +33,56 @@
 
 
 # instance fields
-.field private final mFillInIntent:Landroid/content/Intent;
+.field public final h:Landroid/content/IntentSender;
 
-.field private final mFlagsMask:I
+.field public final i:Landroid/content/Intent;
 
-.field private final mFlagsValues:I
+.field public final j:I
 
-.field private final mIntentSender:Landroid/content/IntentSender;
+.field public final k:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 132
-    new-instance v0, Landroidx/activity/result/IntentSenderRequest$1;
+    new-instance v0, Landroidx/activity/result/IntentSenderRequest$a;
 
-    invoke-direct {v0}, Landroidx/activity/result/IntentSenderRequest$1;-><init>()V
+    invoke-direct {v0}, Landroidx/activity/result/IntentSenderRequest$a;-><init>()V
 
     sput-object v0, Landroidx/activity/result/IntentSenderRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
+.method public constructor <init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
     .locals 0
 
-    .line 77
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 78
-    iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest;->mIntentSender:Landroid/content/IntentSender;
+    .line 2
+    iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/IntentSender;
 
-    .line 79
-    iput-object p2, p0, Landroidx/activity/result/IntentSenderRequest;->mFillInIntent:Landroid/content/Intent;
+    .line 3
+    iput-object p2, p0, Landroidx/activity/result/IntentSenderRequest;->i:Landroid/content/Intent;
 
-    .line 80
-    iput p3, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsMask:I
+    .line 4
+    iput p3, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
 
-    .line 81
-    iput p4, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsValues:I
+    .line 5
+    iput p4, p0, Landroidx/activity/result/IntentSenderRequest;->k:I
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 124
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 125
+    .line 7
     const-class v0, Landroid/content/IntentSender;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -90,9 +95,9 @@
 
     check-cast v0, Landroid/content/IntentSender;
 
-    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->mIntentSender:Landroid/content/IntentSender;
+    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/IntentSender;
 
-    .line 126
+    .line 8
     const-class v0, Landroid/content/Intent;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -105,27 +110,59 @@
 
     check-cast v0, Landroid/content/Intent;
 
-    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->mFillInIntent:Landroid/content/Intent;
+    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->i:Landroid/content/Intent;
 
-    .line 127
+    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsMask:I
+    iput v0, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
 
-    .line 128
+    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsValues:I
+    iput p1, p0, Landroidx/activity/result/IntentSenderRequest;->k:I
 
     return-void
 .end method
 
 
 # virtual methods
+.method public a()Landroid/content/Intent;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->i:Landroid/content/Intent;
+
+    return-object v0
+.end method
+
+.method public b()I
+    .locals 1
+
+    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
+
+    return v0
+.end method
+
+.method public c()I
+    .locals 1
+
+    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->k:I
+
+    return v0
+.end method
+
+.method public d()Landroid/content/IntentSender;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/IntentSender;
+
+    return-object v0
+.end method
+
 .method public describeContents()I
     .locals 1
 
@@ -134,62 +171,26 @@
     return v0
 .end method
 
-.method public getFillInIntent()Landroid/content/Intent;
-    .locals 1
-
-    .line 102
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->mFillInIntent:Landroid/content/Intent;
-
-    return-object v0
-.end method
-
-.method public getFlagsMask()I
-    .locals 1
-
-    .line 111
-    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsMask:I
-
-    return v0
-.end method
-
-.method public getFlagsValues()I
-    .locals 1
-
-    .line 120
-    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsValues:I
-
-    return v0
-.end method
-
-.method public getIntentSender()Landroid/content/IntentSender;
-    .locals 1
-
-    .line 91
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->mIntentSender:Landroid/content/IntentSender;
-
-    return-object v0
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 151
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->mIntentSender:Landroid/content/IntentSender;
+    .line 1
+    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/IntentSender;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 152
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->mFillInIntent:Landroid/content/Intent;
+    .line 2
+    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->i:Landroid/content/Intent;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 153
-    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsMask:I
+    .line 3
+    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 154
-    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->mFlagsValues:I
+    .line 4
+    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->k:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

@@ -3,7 +3,7 @@
 .source "ViewDataBinding.java"
 
 # interfaces
-.implements Landroidx/lifecycle/LifecycleObserver;
+.implements Landroidx/lifecycle/v;
 
 
 # annotations
@@ -12,13 +12,13 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "OnStartListener"
 .end annotation
 
 
 # instance fields
-.field final mBinding:Ljava/lang/ref/WeakReference;
+.field public final h:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -30,26 +30,26 @@
 
 
 # direct methods
-.method private constructor <init>(Landroidx/databinding/ViewDataBinding;)V
+.method public constructor <init>(Landroidx/databinding/ViewDataBinding;)V
     .locals 1
 
-    .line 1679
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1680
+    .line 3
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Landroidx/databinding/ViewDataBinding$OnStartListener;->mBinding:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Landroidx/databinding/ViewDataBinding$OnStartListener;->h:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroidx/databinding/ViewDataBinding;Landroidx/databinding/ViewDataBinding$1;)V
+.method public synthetic constructor <init>(Landroidx/databinding/ViewDataBinding;Landroidx/databinding/ViewDataBinding$a;)V
     .locals 0
 
-    .line 1677
+    .line 1
     invoke-direct {p0, p1}, Landroidx/databinding/ViewDataBinding$OnStartListener;-><init>(Landroidx/databinding/ViewDataBinding;)V
 
     return-void
@@ -59,12 +59,12 @@
 # virtual methods
 .method public onStart()V
     .locals 1
-    .annotation runtime Landroidx/lifecycle/OnLifecycleEvent;
-        value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
+    .annotation runtime Landroidx/lifecycle/i0;
+        value = .enum Landroidx/lifecycle/o$b;->ON_START:Landroidx/lifecycle/o$b;
     .end annotation
 
-    .line 1685
-    iget-object v0, p0, Landroidx/databinding/ViewDataBinding$OnStartListener;->mBinding:Ljava/lang/ref/WeakReference;
+    .line 1
+    iget-object v0, p0, Landroidx/databinding/ViewDataBinding$OnStartListener;->h:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -74,8 +74,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 1687
-    invoke-virtual {v0}, Landroidx/databinding/ViewDataBinding;->executePendingBindings()V
+    .line 2
+    invoke-virtual {v0}, Landroidx/databinding/ViewDataBinding;->F()V
 
     :cond_0
     return-void

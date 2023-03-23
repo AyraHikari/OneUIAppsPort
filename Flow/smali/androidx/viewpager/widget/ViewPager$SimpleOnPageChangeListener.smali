@@ -21,7 +21,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 361
+    .line 369
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,18 +31,46 @@
 # virtual methods
 .method public onPageScrollStateChanged(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onPageScrolled(IFI)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "positionOffset",
+            "positionOffsetPixels"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onPageSelected(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     return-void
 .end method

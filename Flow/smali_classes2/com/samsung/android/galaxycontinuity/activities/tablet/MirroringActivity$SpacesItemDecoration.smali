@@ -23,13 +23,23 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "space"
+        }
+    .end annotation
 
-    .line 2390
+    .line 2527
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$SpacesItemDecoration;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;-><init>()V
 
-    .line 2391
+    .line 2528
     iput p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$SpacesItemDecoration;->space:F
 
     return-void
@@ -39,8 +49,22 @@
 # virtual methods
 .method public getItemOffsets(Landroid/graphics/Rect;Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "outRect",
+            "view",
+            "parent",
+            "state"
+        }
+    .end annotation
 
-    .line 2400
+    .line 2537
     invoke-virtual {p3, p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildAdapterPosition(Landroid/view/View;)I
 
     move-result p2
@@ -55,7 +79,7 @@
 
     return-void
 
-    .line 2403
+    .line 2540
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isRTL()Z
 
@@ -63,7 +87,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 2404
+    .line 2541
     iget p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$SpacesItemDecoration;->space:F
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/Utils;->dpToPixel(F)I
@@ -74,7 +98,7 @@
 
     goto :goto_0
 
-    .line 2406
+    .line 2543
     :cond_1
     iget p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$SpacesItemDecoration;->space:F
 

@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Не може да се изберат повеќе од %d ставки.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се избере повеќе од %d ставка.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Не може да се префрлат %d датотеки во Ѓубрето</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се префрли %d датотека во Ѓубрето</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Не може да се префрлат %d папки во Ѓубрето</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се префрли %d папка во Ѓубрето</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Не може да се префрлат %d ставки во Ѓубрето</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се префрли %d ставка во Ѓубрето</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d од избраните датотеки ќе се избришат затоа што се на облак или во мемориски уред USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d од избраните датотеки ќе се избрише затоа што е на облак или во мемориски уред USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d од избраните папки ќе се избришат затоа што се на облак или во мемориски уред USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d од избраните папки ќе се избрише затоа што е на облак или во мемориски уред USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d од избраните ставки ќе се избришат затоа што се на облак или во мемориски уред USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d од избраните ставки ќе се избрише затоа што е на облак или во мемориски уред USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Се компримираат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се компримира %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Се компримираат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се компримира %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Се компримираат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се компримира %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Се компримираат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се компримира %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Се компримираат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се компримира %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Се компримираат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се компримира %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Се копираат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се копира %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Се копираат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се копира %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Се копираат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се копира %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Се копираат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се копира %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Се копираат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се копира %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Се копираат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се копира %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Да се избришат %d датотеки од телефонот?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се избрише %d датотека од телефонот?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Да се избриш. %d датот. од Вашиот таблет?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се избрише %d датот. од Вашиот таблет?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Да се избришат %d папки од телефонот?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се избрише %d папка од телефонот?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Да се избришат %d папки од Вашиот таблет?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се избрише %d папка од Вашиот таблет?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Да се избришат %d ставки од телефонот?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се избрише %d ставка од телефонот?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Да се избришат %d ставки од Вашиот таблет?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се избрише %d ставка од Вашиот таблет?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Се бришат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се брише %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Се бришат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се брише %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Се бришат %d ставки од Ѓубре…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се брише %d ставка од Ѓубре…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Се бришат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се брише %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Се извлекуваат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се извлекува %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Се извлекуваат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се извлекува %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Се извлекуваат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се извлекува %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d датотеки исто така ќе се префрлат во Ѓубрето во %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d датотека исто така ќе се префрли во Ѓубрето во %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Се обвновуваат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се обвновува %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d папки исто така ќе се префрлат во Ѓубрето во %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d папка исто така ќе се префрли во Ѓубрето во %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Се враќаат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се враќа %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Вашата внатрешна меморија е полна. Трајно да се избришат %d датотеки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата внатрешна меморија е полна. Трајно да се избрише %d датотека?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Вашата внатрешна меморија е полна. Трајно да се избришат %d папки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата внатрешна меморија е полна. Трајно да се избрише %d папка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Вашата внатрешна меморија е полна. Трајно да се избришат %d ставки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата внатрешна меморија е полна. Трајно да се избрише %d ставка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Вашата внатрешна меморија и SD-картичката се полни. Трајно да се избришат %d датотеки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата внатрешна меморија и SD-картичката се полни. Трајно да се избрише %d датотека?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Вашата внатрешна меморија и SD-картичката се полни. Трајно да се избришат %d папки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата внатрешна меморија и SD-картичката се полни. Трајно да се избрише %d папка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Вашата внатрешна меморија и SD-картичката се полни. Трајно да се избришат %d ставки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата внатрешна меморија и SD-картичката се полни. Трајно да се избрише %d ставка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Се враќаат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се враќа %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d ставки исто така ќе се префрлат во Ѓубрето во %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ставка исто така ќе се префрли во Ѓубрето во %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Не може да се отворат повеќе од %d прозорци на апликација.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се отвори повеќе од %d прозорец на апликација.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Да се префрлат %d датотеки во Ѓубре?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се префрли %d датотека во Ѓубре?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Да се префрлат %d датотеки во Ѓубре?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се префрли %d датотека во Ѓубре?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Да се префрлат %d папки во Ѓубре?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се префрли %d папка во Ѓубре?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Да се префрлат %d папки во Ѓубре?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се префрли %d папка во Ѓубре?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Да се преместат %d ставки во Ѓубре?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се премести %d ставка во Ѓубре?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Да се префрлат %d ставки во Ѓубре?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се префрли %d ставка во Ѓубре?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Се префрлаат %d датотеки во Ѓубрето…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d датотека во Ѓубрето…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Се префрлаат %d папки во Ѓубрето…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d папка во Ѓубрето…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Се префрлаат %d ставки во Ѓубрето…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d ставка во Ѓубрето…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Се префрлаат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Се преместуваат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се преместува %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Се префрлаат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Се префрлаат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Се префрлаат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Се префрлаат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се префрла %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d ставки се компримирани</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е компримирана</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d ставки се ископирани во %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ставка е ископирана во %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Да се избрише папка и %d датотеки во неа?</item>
+        <item quantity="one">Да се избрише папка и датотеката во неа?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Да се избришат %1$d папки и %2$d датотеки во нив?</item>
+        <item quantity="one">Да се избрише папка и датотеката во неа?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d ставки се избришани</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е избришана</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Се преземаат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се презема %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Се преземаат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се презема %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Се преземаат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се презема %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Не може да се споделат папки. Папките се празни.</item>
+        <item quantity="one">Не може да се сподели папка. Папката е празна.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d датотеки трајно ќе се избришат.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d датотека трајно ќе се избрише.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d папки трајно ќе се избришат.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d папка трајно ќе се избрише.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d ставки се извлечени</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е извлечена</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d датотеки се додадени во Омилени.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d датотека е додадена во Омилени.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d датотеки се отстранети од Омилени.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d датотека е отстранета од Омилени.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d папки се додадени во Омилени.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d папка е додадена во Омилени.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d папки се отстранети од Омилени.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d папка е отстранета од Омилени.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d ставки се додадени во Омилени.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е додадена во Омилени.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d ставки се отстранети од Омилени.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е отстранета од Омилени.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d содржини</item>
+        <item quantity="one">1 запис</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d содржини</item>
+        <item quantity="one">%d запис</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d ставки се ископирани во посредната меморија</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е ископирана во посредната меморија</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d ставки се префрлени во посредната меморија</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е префрлена во посредната меморија</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">Избрани се %d записи</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Избран е %d запис</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d ставки се префрлени во %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ставка е префрлена во %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d ставки се префрлени во Ѓубре</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ставка е префрлена во Ѓубре</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d избрани</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d избран</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Вашата SD-картичка е полна. Трајно да се избришат %d датотеки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата SD-картичка е полна. Трајно да се избрише %d датотека?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Вашата SD-картичка е полна. Трајно да се избришат %d папки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата SD-картичка е полна. Трајно да се избрише %d папка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Вашата SD-картичка е полна. Трајно да се избришат %d ставки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вашата SD-картичка е полна. Трајно да се избрише %d ставка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Оваа датотека ќе се избрише за %d дена.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Оваа датотека ќе се избрише за %d ден.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Оваа папка ќе се избрише за %d дена.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Оваа папка ќе се избрише за %d ден.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Трајно да се избришат %d датотеки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Трајно да се избрише %d датотека?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Се бришат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се брише %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Се обновуваат %d датотеки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се обновува %d датотека…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Трајно да се избришат %d папки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Трајно да се избрише %d папка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Се бришат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се бришат %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Се обновуваат %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се обновува %d папка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Трајно да се избришат %d ставки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Трајно да се избрише %d ставка?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Се бришат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се брише %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Се обновуваат %d ставки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Се обновува %d ставка…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Бришење за %d дена</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бришење за %d ден</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Да се одинсталираат %d апликации?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Да се одинсталира %d апликација?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

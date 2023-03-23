@@ -33,7 +33,7 @@
 .method constructor <init>(Landroidx/lifecycle/Transformations$2;)V
     .locals 0
 
-    .line 150
+    .line 152
     iput-object p1, p0, Landroidx/lifecycle/Transformations$2$1;->this$0:Landroidx/lifecycle/Transformations$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +51,7 @@
         }
     .end annotation
 
-    .line 153
+    .line 155
     iget-object v0, p0, Landroidx/lifecycle/Transformations$2$1;->this$0:Landroidx/lifecycle/Transformations$2;
 
     iget-object v0, v0, Landroidx/lifecycle/Transformations$2;->val$result:Landroidx/lifecycle/MediatorLiveData;

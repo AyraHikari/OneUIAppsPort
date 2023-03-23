@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Det går inte att välja fler än %d objekt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att välja fler än %d objekt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Det går inte att flytta %d filer till papperskorgen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att flytta %d fil till papperskorgen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Det går inte att flytta %d mappar till papperskorgen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att flytta %d mapp till papperskorgen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Det går inte att flytta %d objekt till papperskorgen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att flytta %d objekt till papperskorgen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d av de valda filerna raderas eftersom de finns i molnet eller på ett USB-minne.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d av de valda filerna raderas eftersom den finns i molnet eller på ett USB-minne.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d av de valda mapparna raderas eftersom de finns i molnet eller på ett USB-minne.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d av de valda mapparna raderas eftersom den finns i molnet eller på ett USB-minne.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d av de valda objekten raderas eftersom de finns i molnet eller på ett USB-minne.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d av de valda objekten raderas eftersom det finns i molnet eller på ett USB-minne.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Komprimerar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimerar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Komprimerar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimerar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Komprimerar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimerar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Komprimerar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimerar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Komprimerar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimerar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Komprimerar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimerar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Kopierar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopierar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Kopierar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopierar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Kopierar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopierar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Kopierar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopierar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Kopierar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopierar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Kopierar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopierar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Radera %d filer från telefonen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Radera %d fil från telefonen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Vill du radera %d filer från surfplattan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vill du radera %d fil från surfplattan?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Radera %d mappar från telefonen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Radera %d mapp från telefonen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Vill du radera %d mappar från surfplattan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vill du radera %d mapp från surfplattan?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Radera %d objekt från telefonen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Radera %d objekt från telefonen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Vill du radera %d objekt från surfplattan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vill du radera %d objekt från surfplattan?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Raderar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Raderar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Raderar %d objekt i pappersk…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar %d objekt i pappersk…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Raderar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Packar upp %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Packar upp %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Packar upp %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Packar upp %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Packar upp %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Packar upp %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d filer flyttas också till papperskorgen i %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d fil flyttas också till papperskorgen i %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Återställer %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Återställer %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d mappar flyttas också till papperskorgen i %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d mapp flyttas också till papperskorgen i %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Återställer %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Återställer %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Det interna lagringsutrymmet är fullt. Radera %d filer?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det interna lagringsutrymmet är fullt. Radera %d fil?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Det interna lagringsutrymmet är fullt. Radera %d mappar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det interna lagringsutrymmet är fullt. Radera %d mapp?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Det interna lagringsutrymmet är fullt. Radera %d objekt?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det interna lagringsutrymmet är fullt. Radera %d objekt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Det interna lagringsutrymmet och SD-kortet är fullt. Radera %d filer?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det interna lagringsutrymmet och SD-kortet är fullt. Radera %d fil?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Det interna lagringsutrymmet och SD-kortet är fullt. Radera %d mappar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det interna lagringsutrymmet och SD-kortet är fullt. Radera %d mapp?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Det interna lagringsutrymmet och SD-kortet är fullt. Radera %d objekt?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det interna lagringsutrymmet och SD-kortet är fullt. Radera %d objekt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Återställer %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Återställer %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d objekt flyttas också till papperskorgen i %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d objekt flyttas också till papperskorgen i %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Det går inte att öppna fler än %d appfönster.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att öppna fler än %d appfönster.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Vill du flytta %d filer till papperskorgen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vill du flytta %d fil till papperskorgen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Flytta %d filer till papperskorgen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flytta %d fil till papperskorgen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Vill du flytta %d mappar till papperskorgen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vill du flytta %d mapp till papperskorgen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Flytta %d mappar till papperskorgen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flytta %d mapp till papperskorgen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Flytta %d objekt till papperskorgen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flytta %d objekt till papperskorgen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Vill du flytta %d objekt till papperskorgen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vill du flytta %d objekt till papperskorgen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Flyttar %d filer till papperskorgen …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d fil till papperskorgen …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Flyttar %d mappar till papperskorgen …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d mapp till papperskorgen …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Flyttar %d objekt till papperskorgen …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d objekt till papperskorgen …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Flyttar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Flyttar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Flyttar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Flyttar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Flyttar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Flyttar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Flyttar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d objekt komprimerades</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt komprimerades</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d objekt kopierades till %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d objekt kopierades till %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Vill du radera mappen och de %d filerna i den?</item>
+        <item quantity="one">Vill du radera mappen och filen i den?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Vill du radera %1$d mappar och de %2$d filerna i dem?</item>
+        <item quantity="one">Vill du radera mappen och filen i den?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d objekt raderades</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt raderades</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Hämtar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hämtar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Hämtar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hämtar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Hämtar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hämtar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Det går inte att dela mapparna. De är tomma.</item>
+        <item quantity="one">Det går inte att dela mappen. Den är tom.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d filer raderas permanent.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fil raderas permanent.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d mappar raderas permanent.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mapp raderas permanent.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d objekt extraherades</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt extraherades</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d filer lades till i Favoriter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fil lades till i Favoriter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d filer har tagits bort från Favoriter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fil har tagits bort från Favoriter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d mappar lades till i Favoriter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mapp lades till i Favoriter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d mappar har tagits bort från Favoriter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mapp har tagits bort från Favoriter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d objekt lades till i Favoriter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt lades till i Favoriter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d objekt har tagits bort från Favoriter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt har tagits bort från Favoriter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d objekt</item>
+        <item quantity="one">1 objekt</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d objekt</item>
+        <item quantity="one">%d objekt</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d objekt kopierades till Urklipp</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt kopierades till Urklipp</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d objekt flyttades till Urklipp</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt flyttades till Urklipp</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d valda objekt</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d valt objekt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d objekt flyttades till %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d objekt flyttades till %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d objekt flyttades till papperskorgen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt flyttades till papperskorgen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d valda</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d vald</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD-kortet är fullt. Radera %d filer?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortet är fullt. Radera %d fil?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD-kortet är fullt. Radera %d mappar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortet är fullt. Radera %d mapp?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD-kortet är fullt. Radera %d objekt?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortet är fullt. Radera %d objekt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Den här filen raderas om %d dagar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Den här filen raderas om %d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Den här mappen raderas om %d dagar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Den här mappen raderas om %d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Radera %d filer permanent?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Radera %d fil permanent?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Raderar %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Återställer %d filer …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Återställer %d fil …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Radera %d mappar permanent?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Radera %d mapp permanent?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Raderar %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Återställer %d mappar …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Återställer %d mapp …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Radera %d objekt permanent?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Radera %d objekt permanent?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Raderar %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Återställer %d objekt …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Återställer %d objekt …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Raderar om %d dagar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Raderar om %d dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Avinstallera %d appar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Avinstallera %d app?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

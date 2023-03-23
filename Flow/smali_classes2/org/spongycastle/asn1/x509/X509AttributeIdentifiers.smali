@@ -102,44 +102,36 @@
     .line 20
     invoke-virtual {v0, v4}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v4
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_authenticationInfo:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 21
-    sget-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v4, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_authenticationInfo:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v4, "2"
 
+    .line 21
     invoke-virtual {v0, v4}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v4
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_accessIdentity:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 22
-    sget-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v4, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_accessIdentity:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v4, "3"
 
+    .line 22
     invoke-virtual {v0, v4}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v4
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_chargingIdentity:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v4, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_chargingIdentity:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     .line 23
-    sget-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_group:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca_group:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     .line 25
-    sget-object v0, Lorg/spongycastle/asn1/x509/X509AttributeIdentifiers;->id_aca:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
     invoke-virtual {v0, v3}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     move-result-object v0

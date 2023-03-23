@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:focusable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:minHeight="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start|center" android:id="@id/icon_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/permission_icon_padding_end">
+        <androidx.preference.internal.PreferenceImageView android:id="@id/permission_icon" android:layout_width="@dimen/permission_icon_size" android:layout_height="@dimen/permission_icon_size" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <RelativeLayout android:paddingTop="@dimen/permission_description_padding" android:paddingBottom="@dimen/permission_description_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/permission_title_text_size" android:textColor="@color/permission_notice_sub_title_text_color" android:ellipsize="marquee" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/RobotoRegular" />
+        <TextView android:textSize="@dimen/permission_description_text_size" android:textColor="@color/permission_notice_description_index_text_color" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:layout_below="@id/title" android:layout_alignStart="@id/title" style="@style/RobotoRegular" />
+    </RelativeLayout>
+</LinearLayout>

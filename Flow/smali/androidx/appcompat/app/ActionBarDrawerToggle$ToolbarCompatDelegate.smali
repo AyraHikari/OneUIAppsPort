@@ -28,6 +28,14 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toolbar"
+        }
+    .end annotation
 
     .line 591
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -86,6 +94,14 @@
 
 .method public setActionBarDescription(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "contentDescRes"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -110,6 +126,16 @@
 
 .method public setActionBarUpIndicator(Landroid/graphics/drawable/Drawable;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "upDrawable",
+            "contentDescRes"
+        }
+    .end annotation
 
     .line 599
     iget-object v0, p0, Landroidx/appcompat/app/ActionBarDrawerToggle$ToolbarCompatDelegate;->mToolbar:Landroidx/appcompat/widget/Toolbar;

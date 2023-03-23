@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3422
+    .line 3439
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,29 +40,39 @@
 # virtual methods
 .method public compare(Landroid/view/View;Landroid/view/View;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
-    .line 3425
+    .line 3442
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
     check-cast p1, Landroidx/viewpager/widget/ViewPager$LayoutParams;
 
-    .line 3426
+    .line 3443
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Landroidx/viewpager/widget/ViewPager$LayoutParams;
 
-    .line 3427
+    .line 3444
     iget-boolean v0, p1, Landroidx/viewpager/widget/ViewPager$LayoutParams;->isDecor:Z
 
     iget-boolean v1, p2, Landroidx/viewpager/widget/ViewPager$LayoutParams;->isDecor:Z
 
     if-eq v0, v1, :cond_1
 
-    .line 3428
+    .line 3445
     iget-boolean p1, p1, Landroidx/viewpager/widget/ViewPager$LayoutParams;->isDecor:Z
 
     if-eqz p1, :cond_0
@@ -77,7 +87,7 @@
     :goto_0
     return p1
 
-    .line 3430
+    .line 3447
     :cond_1
     iget p1, p1, Landroidx/viewpager/widget/ViewPager$LayoutParams;->position:I
 
@@ -90,8 +100,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
-    .line 3422
+    .line 3439
     check-cast p1, Landroid/view/View;
 
     check-cast p2, Landroid/view/View;

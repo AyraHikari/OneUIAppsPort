@@ -28,8 +28,20 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$top",
+            "val$bottom"
+        }
+    .end annotation
 
-    .line 671
+    .line 708
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$3;->this$0:Landroidx/appcompat/app/AlertController;
 
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$3;->val$top:Landroid/view/View;
@@ -45,8 +57,24 @@
 # virtual methods
 .method public onScrollChange(Landroidx/core/widget/NestedScrollView;IIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "scrollX",
+            "scrollY",
+            "oldScrollX",
+            "oldScrollY"
+        }
+    .end annotation
 
-    .line 676
+    .line 713
     iget-object p2, p0, Landroidx/appcompat/app/AlertController$3;->val$top:Landroid/view/View;
 
     iget-object p3, p0, Landroidx/appcompat/app/AlertController$3;->val$bottom:Landroid/view/View;

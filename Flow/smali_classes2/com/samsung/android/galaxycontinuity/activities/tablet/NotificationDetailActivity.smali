@@ -32,7 +32,7 @@
 .method public initView()V
     .locals 8
 
-    const v0, 0x7f090047
+    const v0, 0x7f0a0057
 
     .line 55
     :try_start_0
@@ -62,7 +62,7 @@
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    const v1, 0x7f090269
+    const v1, 0x7f0a0397
 
     .line 94
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->findViewById(I)Landroid/view/View;
@@ -73,7 +73,7 @@
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->tvTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f090268
+    const v1, 0x7f0a0396
 
     .line 95
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->findViewById(I)Landroid/view/View;
@@ -127,7 +127,7 @@
 
     move-result-object v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
     if-eqz v0, :cond_2
 
@@ -151,17 +151,34 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const/4 v0, 0x0
-
     .line 114
-    iput v0, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 115
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->tvText:Landroid/widget/TextView;
+
+    const/16 v2, 0x8
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     :cond_3
+    const/4 v0, 0x0
+
+    .line 117
+    iput v0, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
+
+    :cond_4
     cmp-long v0, v6, v4
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
-    .line 118
+    .line 121
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v0
@@ -177,24 +194,32 @@
     :catch_0
     move-exception v0
 
-    .line 122
+    .line 125
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 123
+    .line 126
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->finish()V
 
-    :cond_4
+    :cond_5
     :goto_0
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 32
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0c0019
+    const p1, 0x7f0d0017
 
     .line 33
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->setContentView(I)V
@@ -207,19 +232,27 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     const-string v0, "FlowMainActivity onNewIntent"
 
-    .line 129
+    .line 132
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 130
+    .line 133
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 132
+    .line 135
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->setIntent(Landroid/content/Intent;)V
 
-    .line 134
+    .line 137
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->initView()V
 
     return-void
@@ -227,6 +260,14 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 39
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I

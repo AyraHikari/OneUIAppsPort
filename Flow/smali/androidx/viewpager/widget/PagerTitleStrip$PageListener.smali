@@ -27,8 +27,16 @@
 # direct methods
 .method constructor <init>(Landroidx/viewpager/widget/PagerTitleStrip;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 475
+    .line 480
     iput-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -40,8 +48,20 @@
 # virtual methods
 .method public onAdapterChanged(Landroidx/viewpager/widget/ViewPager;Landroidx/viewpager/widget/PagerAdapter;Landroidx/viewpager/widget/PagerAdapter;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "viewPager",
+            "oldAdapter",
+            "newAdapter"
+        }
+    .end annotation
 
-    .line 506
+    .line 511
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
     invoke-virtual {p1, p2, p3}, Landroidx/viewpager/widget/PagerTitleStrip;->updateAdapter(Landroidx/viewpager/widget/PagerAdapter;Landroidx/viewpager/widget/PagerAdapter;)V
@@ -52,7 +72,7 @@
 .method public onChanged()V
     .locals 4
 
-    .line 511
+    .line 516
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget-object v1, v0, Landroidx/viewpager/widget/PagerTitleStrip;->mPager:Landroidx/viewpager/widget/ViewPager;
@@ -71,7 +91,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroidx/viewpager/widget/PagerTitleStrip;->updateText(ILandroidx/viewpager/widget/PagerAdapter;)V
 
-    .line 513
+    .line 518
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget v0, v0, Landroidx/viewpager/widget/PagerTitleStrip;->mLastKnownPositionOffset:F
@@ -86,7 +106,7 @@
 
     iget v1, v0, Landroidx/viewpager/widget/PagerTitleStrip;->mLastKnownPositionOffset:F
 
-    .line 514
+    .line 519
     :cond_0
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
@@ -105,8 +125,16 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 500
+    .line 505
     iput p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->mScrollState:I
 
     return-void
@@ -114,6 +142,18 @@
 
 .method public onPageScrolled(IFI)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "positionOffset",
+            "positionOffsetPixels"
+        }
+    .end annotation
 
     const/high16 p3, 0x3f000000    # 0.5f
 
@@ -123,7 +163,7 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 484
+    .line 489
     :cond_0
     iget-object p3, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
@@ -136,13 +176,21 @@
 
 .method public onPageSelected(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
-    .line 489
+    .line 494
     iget p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->mScrollState:I
 
     if-nez p1, :cond_1
 
-    .line 491
+    .line 496
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget-object v0, p1, Landroidx/viewpager/widget/PagerTitleStrip;->mPager:Landroidx/viewpager/widget/ViewPager;
@@ -161,7 +209,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroidx/viewpager/widget/PagerTitleStrip;->updateText(ILandroidx/viewpager/widget/PagerAdapter;)V
 
-    .line 493
+    .line 498
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget p1, p1, Landroidx/viewpager/widget/PagerTitleStrip;->mLastKnownPositionOffset:F
@@ -176,7 +224,7 @@
 
     iget v0, p1, Landroidx/viewpager/widget/PagerTitleStrip;->mLastKnownPositionOffset:F
 
-    .line 494
+    .line 499
     :cond_0
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$PageListener;->this$0:Landroidx/viewpager/widget/PagerTitleStrip;
 

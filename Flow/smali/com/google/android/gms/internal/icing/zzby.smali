@@ -1,157 +1,99 @@
 .class final Lcom/google/android/gms/internal/icing/zzby;
-.super Lcom/google/android/gms/internal/icing/zzbw;
+.super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
+
+# interfaces
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
         "Ljava/lang/Object;",
-        ">",
-        "Lcom/google/android/gms/internal/icing/zzbw<",
-        "TT;>;"
+        "Ljava/util/Comparator<",
+        "Lcom/google/android/gms/internal/icing/zzcf;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field private final zzdr:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TT;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method constructor <init>(Ljava/lang/Object;)V
+.method constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/internal/icing/zzbw;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzby;->zzdr:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+.method public final bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 4
 
-    .line 6
-    instance-of v0, p1, Lcom/google/android/gms/internal/icing/zzby;
+    .line 1
+    check-cast p1, Lcom/google/android/gms/internal/icing/zzcf;
 
-    if-eqz v0, :cond_0
+    check-cast p2, Lcom/google/android/gms/internal/icing/zzcf;
 
-    .line 7
-    check-cast p1, Lcom/google/android/gms/internal/icing/zzby;
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzbx;
 
-    .line 8
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzby;->zzdr:Ljava/lang/Object;
+    .line 2
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/icing/zzbx;-><init>(Lcom/google/android/gms/internal/icing/zzcf;)V
 
-    iget-object p1, p1, Lcom/google/android/gms/internal/icing/zzby;->zzdr:Ljava/lang/Object;
+    new-instance v1, Lcom/google/android/gms/internal/icing/zzbx;
 
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    .line 3
+    invoke-direct {v1, p2}, Lcom/google/android/gms/internal/icing/zzbx;-><init>(Lcom/google/android/gms/internal/icing/zzcf;)V
+
+    :cond_0
+    invoke-interface {v0}, Lcom/google/android/gms/internal/icing/zzcb;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v1}, Lcom/google/android/gms/internal/icing/zzcb;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 4
+    invoke-interface {v0}, Lcom/google/android/gms/internal/icing/zzcb;->zza()B
+
+    move-result v2
+
+    and-int/lit16 v2, v2, 0xff
+
+    invoke-interface {v1}, Lcom/google/android/gms/internal/icing/zzcb;->zza()B
+
+    move-result v3
+
+    and-int/lit16 v3, v3, 0xff
+
+    invoke-static {v2, v3}, Ljava/lang/Integer;->compare(II)I
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    .line 5
+    :cond_1
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/icing/zzcf;->zzc()I
 
     move-result p1
 
-    return p1
+    invoke-virtual {p2}, Lcom/google/android/gms/internal/icing/zzcf;->zzc()I
 
-    :cond_0
-    const/4 p1, 0x0
+    move-result p2
 
-    return p1
-.end method
+    invoke-static {p1, p2}, Ljava/lang/Integer;->compare(II)I
 
-.method public final get()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+    move-result v2
 
-    .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzby;->zzdr:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 10
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzby;->zzdr:Ljava/lang/Object;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    const v1, 0x598df91c
-
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final isPresent()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 11
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzby;->zzdr:Ljava/lang/Object;
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0xd
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Optional.of("
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, ")"
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    :goto_0
+    return v2
 .end method

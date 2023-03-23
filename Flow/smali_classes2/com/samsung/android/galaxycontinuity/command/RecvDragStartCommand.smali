@@ -6,6 +6,16 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/content/Context;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "args"
+        }
+    .end annotation
 
     .line 13
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/command/CommandBase;-><init>(Landroid/content/Context;[Ljava/lang/Object;)V
@@ -20,7 +30,7 @@
 
     const-string v0, ""
 
-    const-string v1, "run RecvDragStartCommand"
+    const-string/jumbo v1, "run RecvDragStartCommand"
 
     .line 18
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -76,7 +86,7 @@
 
     const-class v3, Lcom/samsung/android/galaxycontinuity/command/ShareCommand;
 
-    const/4 v4, 0x4
+    const/4 v4, 0x5
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -97,6 +107,12 @@
     const/4 v1, 0x3
 
     aput-object v0, v4, v1
+
+    const/4 v0, 0x4
+
+    const/4 v1, 0x0
+
+    aput-object v1, v4, v0
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->execute(Ljava/lang/Class;[Ljava/lang/Object;)V
     :try_end_0

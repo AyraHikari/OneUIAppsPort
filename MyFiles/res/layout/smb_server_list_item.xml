@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/basic_list_item_two_line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/found_smb_server_icon_size" android:layout_height="@dimen/found_smb_server_icon_size" android:layout_marginTop="@dimen/found_smb_server_icon_vertical_margin" android:layout_marginBottom="@dimen/found_smb_server_icon_vertical_margin" android:src="@drawable/file_type_smb" android:layout_marginStart="@dimen/found_smb_server_icon_horizontal_margin" android:layout_marginEnd="@dimen/found_smb_server_icon_horizontal_margin" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/list_item_text_end_margin">
+        <TextView android:textSize="@dimen/found_smb_server_name_text_size" android:textColor="@color/list_item_text1" android:ellipsize="end" android:id="@id/found_smb_server_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/found_smb_server_info_text_size" android:textColor="@color/list_item_text2" android:ellipsize="end" android:id="@id/found_smb_server_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -42,20 +42,28 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 751
+    .line 777
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
 
-    .line 767
+    .line 793
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
-    .line 768
+    .line 794
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -68,7 +76,7 @@
 .method synthetic constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$1;)V
     .locals 0
 
-    .line 751
+    .line 777
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
 
     return-void
@@ -76,8 +84,16 @@
 
 .method private addNotiEntryItem(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$NotificationEntry;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 872
+    .line 898
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->notiList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -97,7 +113,7 @@
 
     check-cast v1, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$NotificationEntry;
 
-    .line 873
+    .line 899
     invoke-virtual {v1, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$NotificationEntry;->equals(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$NotificationEntry;)Z
 
     move-result v1
@@ -108,7 +124,7 @@
 
     return p1
 
-    .line 878
+    .line 904
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->notiList:Ljava/util/ArrayList;
 
@@ -121,8 +137,18 @@
 
 .method private getInputedText(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "currentText",
+            "priorText"
+        }
+    .end annotation
 
-    .line 771
+    .line 797
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -136,7 +162,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 775
+    .line 801
     :goto_0
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
@@ -144,31 +170,31 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 776
+    .line 802
     invoke-virtual {p2, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 778
+    .line 804
     invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 779
+    .line 805
     invoke-virtual {p1, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
-    .line 781
+    .line 807
     array-length v2, v1
 
     if-nez v2, :cond_1
 
     goto :goto_1
 
-    .line 785
+    .line 811
     :cond_1
     array-length p1, v1
 
@@ -186,7 +212,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 786
+    .line 812
     array-length p1, v1
 
     sub-int/2addr p1, p2
@@ -203,7 +229,7 @@
 
     aput-object v0, v1, p1
 
-    .line 789
+    .line 815
     :cond_2
     array-length p1, v1
 
@@ -225,10 +251,18 @@
 
 .method private getNotificationTextLine(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sbn"
+        }
+    .end annotation
 
     const-string v0, ""
 
-    .line 798
+    .line 824
     :try_start_0
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
@@ -244,11 +278,9 @@
 
     check-cast p1, [Ljava/lang/CharSequence;
 
-    check-cast p1, [Ljava/lang/CharSequence;
-
     if-eqz p1, :cond_2
 
-    .line 799
+    .line 825
     array-length v1, p1
 
     if-lez v1, :cond_2
@@ -257,20 +289,20 @@
 
     move-object v2, v0
 
-    .line 801
+    .line 827
     :goto_0
     array-length v3, p1
 
     if-ge v1, v3, :cond_1
 
-    .line 802
+    .line 828
     array-length v3, p1
 
     add-int/lit8 v3, v3, -0x1
 
     if-ne v1, v3, :cond_0
 
-    .line 803
+    .line 829
     aget-object v3, p1, v1
 
     invoke-interface {v3}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -283,7 +315,7 @@
 
     goto :goto_1
 
-    .line 805
+    .line 831
     :cond_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -293,9 +325,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, "\n"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -318,7 +354,7 @@
     :catch_0
     const-string p1, "[android.textLines] is not exists"
 
-    .line 812
+    .line 838
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     :cond_2
@@ -330,12 +366,12 @@
 .method public clearAll()V
     .locals 1
 
-    .line 867
+    .line 893
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->notiList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 868
+    .line 894
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
@@ -345,8 +381,16 @@
 
 .method public getFlowKey(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sbn"
+        }
+    .end annotation
 
-    .line 821
+    .line 847
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -357,21 +401,27 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "|"
+    move-result-object v0
+
+    const-string/jumbo v1, "|"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
     const-string v2, "android.title"
 
-    invoke-static {v1, p1, v2}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2100(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2200(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -380,15 +430,25 @@
 
 .method public parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sbn",
+            "isPosted"
+        }
+    .end annotation
 
-    .line 827
+    .line 853
     new-instance v0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$NotificationEntry;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
     invoke-direct {v0, v1, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$NotificationEntry;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;)V
 
-    .line 828
+    .line 854
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->addNotiEntryItem(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$NotificationEntry;)Z
 
     move-result v0
@@ -399,13 +459,13 @@
 
     return-object v1
 
-    .line 831
+    .line 857
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;->parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     move-result-object p2
 
-    .line 834
+    .line 860
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
     iget-object v2, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->key:Ljava/lang/String;
@@ -416,7 +476,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 835
+    .line 861
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
     iget-object v2, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->key:Ljava/lang/String;
@@ -427,7 +487,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 836
+    .line 862
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
     iget-object v3, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->key:Ljava/lang/String;
@@ -439,7 +499,7 @@
     :cond_1
     const-string v0, ""
 
-    .line 839
+    .line 865
     :goto_0
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
@@ -449,22 +509,22 @@
 
     if-eqz v2, :cond_3
 
-    .line 840
+    .line 866
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->getNotificationTextLine(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 841
+    .line 867
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 842
+    .line 868
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
-    invoke-static {v0, p1, v3}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2100(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v3}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2200(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -472,7 +532,7 @@
 
     goto :goto_1
 
-    .line 844
+    .line 870
     :cond_2
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->getNotificationTextLine(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
 
@@ -480,7 +540,7 @@
 
     iput-object p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
-    .line 846
+    .line 872
     :goto_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
@@ -492,29 +552,29 @@
 
     goto :goto_2
 
-    .line 848
+    .line 874
     :cond_3
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->getNotificationTextLine(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 849
+    .line 875
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 850
+    .line 876
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
-    invoke-static {v0, p1, v3}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2100(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v3}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2200(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
-    .line 851
+    .line 877
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
     iget-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->key:Ljava/lang/String;
@@ -525,7 +585,7 @@
 
     goto :goto_2
 
-    .line 853
+    .line 879
     :cond_4
     invoke-direct {p0, v2, v0}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->getInputedText(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -533,14 +593,14 @@
 
     iput-object p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
-    .line 854
+    .line 880
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnTangoParser;->lastTextLineMaps:Ljava/util/HashMap;
 
     iget-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->key:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 855
+    .line 881
     iget-object p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     if-nez p1, :cond_5
@@ -551,7 +611,7 @@
     :goto_2
     const/4 p1, 0x0
 
-    .line 860
+    .line 886
     iput-boolean p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isReplyEnable:Z
 
     return-object p2

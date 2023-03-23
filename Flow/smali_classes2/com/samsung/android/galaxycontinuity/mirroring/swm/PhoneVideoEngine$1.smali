@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 310
+    .line 355
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +48,7 @@
 
     move-object/from16 v1, p0
 
-    .line 315
+    .line 360
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     const/4 v2, 0x1
@@ -49,10 +57,10 @@
 
     const-string v0, "[VideoEngine] doEncodeVideo : Encoding Start"
 
-    .line 317
+    .line 362
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 319
+    .line 364
     :goto_0
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -60,15 +68,15 @@
 
     move-result v0
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_f
 
-    .line 328
+    .line 373
     :try_start_0
     new-instance v0, Landroid/media/MediaCodec$BufferInfo;
 
     invoke-direct {v0}, Landroid/media/MediaCodec$BufferInfo;-><init>()V
 
-    .line 329
+    .line 374
     iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$100(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/media/MediaCodec;
@@ -84,9 +92,9 @@
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_8
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_7
 
-    if-ltz v3, :cond_c
+    if-ltz v3, :cond_d
 
-    .line 336
+    .line 381
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$200(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/lang/Object;
@@ -95,7 +103,7 @@
 
     monitor-enter v4
 
-    .line 337
+    .line 382
     :try_start_1
     iget-object v5, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -103,18 +111,16 @@
 
     invoke-static {v5, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 338
+    .line 383
     monitor-exit v4
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_4
 
-    .line 341
+    .line 386
     :try_start_2
     iget-object v5, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    iget-object v6, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
-    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$100(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/media/MediaCodec;
+    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$100(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/media/MediaCodec;
 
     move-result-object v6
 
@@ -124,7 +130,7 @@
 
     invoke-static {v5, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$402(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
-    .line 342
+    .line 387
     iget-object v5, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$400(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/nio/ByteBuffer;
@@ -135,25 +141,25 @@
 
     return-void
 
-    .line 345
+    .line 390
     :cond_0
     iget v5, v0, Landroid/media/MediaCodec$BufferInfo;->size:I
 
-    if-lez v5, :cond_b
+    if-lez v5, :cond_c
 
-    .line 346
+    .line 391
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v5
 
-    .line 347
+    .line 392
     iget v7, v0, Landroid/media/MediaCodec$BufferInfo;->size:I
 
     sget v8, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->MEDIA_HEADER_SIZE:I
 
     add-int/2addr v7, v8
 
-    .line 350
+    .line 395
     iget v8, v0, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
     const/4 v9, 0x2
@@ -164,10 +170,10 @@
 
     const-string v8, "It is a codec config data"
 
-    .line 351
+    .line 396
     invoke-static {v8}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 352
+    .line 397
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v8
@@ -180,13 +186,13 @@
 
     const-wide/16 v5, 0x0
 
-    .line 359
+    .line 404
     :cond_1
     iget v8, v0, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
     if-ne v8, v2, :cond_2
 
-    .line 360
+    .line 405
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -195,13 +201,21 @@
 
     invoke-virtual {v8, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v8
+
     invoke-virtual {v8, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v8
 
     const-string v10, ", totalSize = "
 
     invoke-virtual {v8, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v8
+
     invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v8
 
     invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -209,7 +223,7 @@
 
     invoke-static {v8}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 363
+    .line 408
     :cond_2
     iget v8, v0, Landroid/media/MediaCodec$BufferInfo;->size:I
 
@@ -217,14 +231,14 @@
 
     div-int/2addr v8, v10
 
-    .line 364
+    .line 409
     iget v0, v0, Landroid/media/MediaCodec$BufferInfo;->size:I
 
     sget v10, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->MAX_DATA_SIZE:I
 
     rem-int/2addr v0, v10
 
-    .line 366
+    .line 411
     iget-object v10, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$200(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/lang/Object;
@@ -238,7 +252,7 @@
     .catch Ljava/lang/NullPointerException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 367
+    .line 412
     :try_start_3
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
@@ -253,18 +267,18 @@
     :goto_1
     const/4 v14, 0x4
 
-    if-ge v12, v8, :cond_5
+    if-ge v12, v8, :cond_6
 
-    if-nez v12, :cond_3
+    if-nez v12, :cond_4
 
-    .line 372
+    .line 417
     sget v15, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->MAX_DATA_SIZE:I
 
     sget v16, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->MEDIA_HEADER_SIZE:I
 
     add-int v15, v15, v16
 
-    .line 373
+    .line 418
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
@@ -274,7 +288,7 @@
 
     invoke-static {v4, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 374
+    .line 419
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$400(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/nio/ByteBuffer;
@@ -293,7 +307,7 @@
 
     invoke-virtual {v2, v4, v9, v13}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
-    .line 376
+    .line 421
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
@@ -302,7 +316,7 @@
 
     invoke-static {v2, v7, v5, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->addMediaHeader([BIJ)V
 
-    if-eqz v11, :cond_4
+    if-eqz v11, :cond_5
 
     new-array v2, v14, [B
 
@@ -342,20 +356,18 @@
     :try_start_6
     aput-byte v4, v2, v9
 
-    .line 385
+    .line 430
     new-instance v4, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 386
+    .line 431
     invoke-virtual {v4, v2}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 388
+    .line 433
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    iget-object v9, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
-    invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
 
     move-result-object v9
 
@@ -375,7 +387,16 @@
 
     invoke-static {v2, v9}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 389
+    .line 435
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
+
+    move-result-object v2
+
+    if-eqz v2, :cond_3
+
+    .line 436
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
@@ -384,7 +405,8 @@
 
     invoke-virtual {v4, v2}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 391
+    .line 438
+    :cond_3
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -402,18 +424,18 @@
 
     goto/16 :goto_6
 
-    .line 394
-    :cond_3
+    .line 441
+    :cond_4
     sget v15, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->MAX_DATA_SIZE:I
 
-    .line 395
+    .line 442
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     new-array v4, v15, [B
 
     invoke-static {v2, v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 397
+    .line 444
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$400(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/nio/ByteBuffer;
@@ -432,14 +454,12 @@
 
     invoke-virtual {v2, v4, v13, v9}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
-    if-eqz v11, :cond_4
+    if-eqz v11, :cond_5
 
-    .line 400
+    .line 447
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
 
     move-result-object v4
 
@@ -449,14 +469,12 @@
 
     invoke-static {v2, v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 407
-    :cond_4
+    .line 454
+    :cond_5
     :goto_2
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
 
     move-result-object v4
 
@@ -477,24 +495,24 @@
 
     goto/16 :goto_6
 
-    :cond_5
-    if-eqz v0, :cond_a
+    :cond_6
+    if-eqz v0, :cond_b
 
-    if-nez v8, :cond_8
+    if-nez v8, :cond_9
 
-    .line 412
+    .line 459
     sget v2, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->MEDIA_HEADER_SIZE:I
 
     add-int/2addr v2, v0
 
-    .line 413
+    .line 460
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     new-array v8, v2, [B
 
     invoke-static {v4, v8}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 414
+    .line 461
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$400(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/nio/ByteBuffer;
@@ -511,7 +529,7 @@
 
     invoke-virtual {v4, v8, v9, v0}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
-    .line 416
+    .line 463
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
@@ -520,7 +538,7 @@
 
     invoke-static {v0, v7, v5, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->addMediaHeader([BIJ)V
 
-    if-eqz v11, :cond_7
+    if-eqz v11, :cond_8
 
     new-array v0, v14, [B
 
@@ -557,20 +575,18 @@
 
     aput-byte v4, v0, v6
 
-    .line 425
+    .line 472
     new-instance v4, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 426
+    .line 473
     invoke-virtual {v4, v0}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 428
+    .line 475
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    iget-object v6, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
-    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
 
     move-result-object v6
 
@@ -590,16 +606,16 @@
 
     invoke-static {v0, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 430
+    .line 477
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
 
     move-result-object v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
-    .line 431
+    .line 478
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
@@ -608,8 +624,8 @@
 
     invoke-virtual {v4, v0}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 433
-    :cond_6
+    .line 480
+    :cond_7
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -620,7 +636,7 @@
 
     goto :goto_3
 
-    :cond_7
+    :cond_8
     const/4 v5, 0x1
 
     :goto_3
@@ -628,17 +644,17 @@
 
     goto :goto_4
 
-    :cond_8
+    :cond_9
     const/4 v5, 0x1
 
-    .line 438
+    .line 485
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     new-array v4, v0, [B
 
     invoke-static {v2, v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 440
+    .line 487
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$400(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/nio/ByteBuffer;
@@ -655,14 +671,12 @@
 
     invoke-virtual {v2, v4, v6, v0}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
-    if-eqz v11, :cond_9
+    if-eqz v11, :cond_a
 
-    .line 443
+    .line 490
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
 
     move-result-object v4
 
@@ -672,14 +686,12 @@
 
     invoke-static {v2, v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$302(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;[B)[B
 
-    .line 449
-    :cond_9
+    .line 496
+    :cond_a
     :goto_4
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)[B
 
     move-result-object v4
 
@@ -687,10 +699,10 @@
 
     goto :goto_5
 
-    :cond_a
+    :cond_b
     const/4 v5, 0x1
 
-    .line 452
+    .line 499
     :goto_5
     monitor-exit v10
 
@@ -714,10 +726,10 @@
 
     goto :goto_6
 
-    :cond_b
+    :cond_c
     move v5, v2
 
-    .line 455
+    .line 502
     :goto_7
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -747,7 +759,7 @@
     :catch_2
     move-exception v0
 
-    .line 463
+    .line 510
     :goto_8
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -757,13 +769,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -774,7 +790,7 @@
     :catch_3
     move-exception v0
 
-    .line 460
+    .line 507
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -783,13 +799,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -802,7 +822,7 @@
 
     move v5, v2
 
-    .line 458
+    .line 505
     :goto_9
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -812,19 +832,23 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/nio/BufferUnderflowException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 468
+    .line 515
     :goto_a
     :try_start_9
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
@@ -840,12 +864,12 @@
     .catch Ljava/lang/IllegalStateException; {:try_start_9 .. :try_end_9} :catch_6
     .catch Ljava/lang/NullPointerException; {:try_start_9 .. :try_end_9} :catch_5
 
-    goto :goto_b
+    goto/16 :goto_b
 
     :catch_5
     move-exception v0
 
-    .line 473
+    .line 520
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -854,13 +878,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/lang/NullPointerException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -871,7 +899,7 @@
     :catch_6
     move-exception v0
 
-    .line 470
+    .line 517
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -880,13 +908,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/lang/IllegalStateException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -897,7 +929,7 @@
     :catchall_4
     move-exception v0
 
-    .line 338
+    .line 383
     :try_start_a
     monitor-exit v4
     :try_end_a
@@ -905,14 +937,14 @@
 
     throw v0
 
-    :cond_c
+    :cond_d
     move v5, v2
 
     const/4 v0, -0x2
 
-    if-ne v3, v0, :cond_d
+    if-ne v3, v0, :cond_e
 
-    .line 478
+    .line 525
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$100(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/media/MediaCodec;
@@ -923,7 +955,7 @@
 
     move-result-object v0
 
-    .line 479
+    .line 526
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -932,9 +964,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -942,8 +978,8 @@
 
     goto :goto_b
 
-    .line 481
-    :cond_d
+    .line 528
+    :cond_e
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -952,7 +988,11 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -973,7 +1013,7 @@
     :catch_8
     move-exception v0
 
-    .line 331
+    .line 376
     :goto_c
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -983,23 +1023,27 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    :cond_e
+    :cond_f
     :goto_d
     const-string v0, "[VideoEngine] doEncodeVideo : stop stream video"
 
-    .line 484
+    .line 531
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     return-void

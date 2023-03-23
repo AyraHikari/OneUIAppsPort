@@ -28,6 +28,19 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "resource",
+            "objects"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,7 +62,7 @@
 
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->mCategoryList:Ljava/util/ArrayList;
 
-    const p2, 0x7f100053
+    const p2, 0x7f11005d
 
     .line 28
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
@@ -67,6 +80,14 @@
 # virtual methods
 .method public bridge synthetic add(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "appName"
+        }
+    .end annotation
 
     .line 22
     check-cast p1, Ljava/lang/String;
@@ -78,6 +99,14 @@
 
 .method public add(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appName"
+        }
+    .end annotation
 
     .line 33
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->mCategoryList:Ljava/util/ArrayList;
@@ -111,7 +140,7 @@
     .line 39
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->mCategoryList:Ljava/util/ArrayList;
 
-    const v0, 0x7f100053
+    const v0, 0x7f11005d
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
 
@@ -134,7 +163,7 @@
     .line 55
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->mCategoryList:Ljava/util/ArrayList;
 
-    const v1, 0x7f100053
+    const v1, 0x7f11005d
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
 
@@ -162,6 +191,14 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 22
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->getItem(I)Ljava/lang/String;
@@ -173,6 +210,14 @@
 
 .method public getItem(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 85
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->mCategoryList:Ljava/util/ArrayList;
@@ -188,6 +233,18 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     .line 68
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -229,6 +286,14 @@
 
 .method public bridge synthetic remove(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "appName"
+        }
+    .end annotation
 
     .line 22
     check-cast p1, Ljava/lang/String;
@@ -240,6 +305,14 @@
 
 .method public remove(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appName"
+        }
+    .end annotation
 
     .line 46
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->mCategoryList:Ljava/util/ArrayList;

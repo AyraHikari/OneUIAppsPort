@@ -60,6 +60,7 @@
     <string name="air_quality">Oro kokybė</string>
     <string name="air_quality_next_tts">Vėlesnės dienos oro kokybės prognozės</string>
     <string name="air_quality_previous_tts">Ankstesnės dienos oro kokybės prognozės</string>
+    <string name="alert_title">Įspėjimas apie sudėtingas oro sąlygas</string>
     <string name="all_added_cities">Visi miestai pridėti</string>
     <string name="allow">Leisti</string>
     <string name="allow_permission_in_settings">Jei norite naudoti šią funkciją, nustatymuose turite suteikti leidimą.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Nepalaikomas veiksmas.</string>
     <string name="apply_daylight_saving_time">Taikyti žiemos/vasaros laiką?</string>
     <string name="as_possible_after_verification">Pranešimas išsiųstas. Patvirtinus miesto pavadinimas bus pakeistas vos atsiradus galimybei.</string>
+    <string name="auto_refresh_on_screen_description">Kas valandą automatiškai gaukite atnaujintą orų informaciją. Kai ši funkcija įjungta, atnaujinti rankiniu būdu negalima.</string>
+    <string name="auto_refresh_on_the_go">Automatiškai atnaujinti keliaujant</string>
+    <string name="auto_refresh_on_the_go_advanced">Išplėstiniai</string>
+    <string name="auto_refresh_on_the_go_description">Vairuodami, važiuodami dviračiu, bėgiodami ar vaikščiodami naują informaciją apie orus gaukite dažniau. Kai ši funkcija įjungta, atnaujinti rankiniu būdu negalima.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Vairuodami, važiuodami dviračiu, bėgiodami ar vaikščiodami naują informaciją apie orus gaukite dažniau.</string>
     <string name="bottomsheet_action_expand_halfway">Išskleisti iki pusės</string>
     <string name="btn_report">Pran.</string>
     <string name="button_finish">Baigti</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Jei reikia daugiau informacijos, bakstelėkite dukart.</string>
     <string name="china">Kinija</string>
     <string name="cities_button">Miestai</string>
+    <string name="city_added">Miestas pridėtas.</string>
     <string name="city_list_text">Miestai</string>
     <string name="clear">Giedra</string>
     <string name="clear_text_end_icon_content_description">Išvalyti tekstą</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Tam, kad galėtumėte gauti vietos orų informaciją, jūsų įrenginio buvimo vietos duomenys bus siunčiami turinio teikėjui.</string>
     <string name="contents_error_msg">Ši paslauga laikinai nepasiekiama. Bandykite dar kartą vėliau.</string>
     <string name="copy">Kopijuoti</string>
-    <string name="copy_toast_msg">Nuoroda nukopijuota į iškarpinę</string>
     <string name="correct_city_name">Pataisykite miesto pavadinimą</string>
     <string name="couldnt_find_location">Nepavyko rasti vietos</string>
     <string name="cover_screen_top_sync_dialog_text">Nustatyti tą pačią vietą pagrindiniame ekrane?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Elementas nuvilktas į %d padėtį.</string>
     <string name="dragndroplist_drag_start">Elementas pradėtas vilkti %d padėtyje.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d padėtyje esančio elemento vilkti negalima.</string>
+    <string name="drawer_tips">Patarimai: %s</string>
     <string name="drawer_tips_message">Bakstelėkite čia ir pridėkite, ištrinkite ar pertvarkykite vietas. Be to, galite pradžios ekrane pridėti kelis valdiklius, kuriuose bus rodomos skirtingos vietos.</string>
     <string name="drawer_tips_message_1">Šio meniu apačioje bakstelėkite „Tvarkyti vietas“, jei norite pridėti, ištrinti arba pertvarkyti vietas.</string>
     <string name="drawer_tips_message_2">Pradžios ekrane galite pridėti daugiau nei vieną valdiklį, kad vienu metu būtų rodomos skirtingos vietos.</string>
@@ -211,12 +218,9 @@
     <string name="error_location_message">Vietos klaida</string>
     <string name="error_text_input_filled">Įveskite ieškotiną žodį.</string>
     <string name="eula_high_accuracy_dialog_ok">Gerai</string>
-    <string name="expand_button_title">Išplėstinė</string>
+    <string name="expand_button_title">Išplėstiniai</string>
     <string name="exposed_dropdown_menu_content_description">Rodyti išskleidžiamąjį meniu</string>
     <string name="failed_to_send_report">Nepavyko nusiųsti ataskaitos</string>
-    <string name="fallback_menu_item_copy_link">Kopijuoti nuorodą</string>
-    <string name="fallback_menu_item_open_in_browser">Atidaryti naršyklėje</string>
-    <string name="fallback_menu_item_share_link">Bendrinti nuorodą</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Parankinė vieta</string>
     <string name="feel_like_pd_minus_temp">Pojūtis kaip -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Prognozės vaizdo įrašas</string>
     <string name="format_km_per_hour">%s km/v</string>
     <string name="format_m_per_hour">%s mi/h</string>
+    <string name="fri">Pen.</string>
     <string name="general">Bendrieji</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Gaukite individualizuotą turinį pagal tai, kaip naudojatės savo telefonu.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Gaukite individualizuotą turinį pagal tai, kaip naudojatės savo planšetiniu kompiuteriu.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">gauti orų informaciją, įskaitant dabartinę jūsų vietą, iš orų programos</string>
     <string name="go_to_website">Eiti į svetainę</string>
     <string name="goto_apps">Yra naujas naujinys. Diegti dabar?</string>
     <string name="goto_apps_later">Vėliau</string>
     <string name="goto_apps_now">Dabar</string>
     <string name="goto_apps_update_title">Įspėjimai dėl naujo turinio</string>
     <string name="header_tts">Antraštė</string>
+    <string name="heavy">Stiprus</string>
     <string name="heavy_rain">Smarkus lietus</string>
     <string name="heavy_rain_followed_by_intense_heat">Smarkus lietus, paskui kaitra</string>
     <string name="heavy_rain_followed_by_light_rain">Smarkus lietus, paskui kaitra</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Matomumas</string>
     <string name="life_index_wind">Vėjas</string>
     <string name="life_index_wind_force">Vėjo greit.</string>
+    <string name="light">Silpnas</string>
     <string name="light_rain_followed_by_heavy_rain">Nesmarkus lietus, paskui smarkus lietus</string>
     <string name="light_rain_with_some_heavy_rain">Nesmarkus lietus, protarpiais smarkus lietus</string>
     <string name="link_tts">Nuoroda</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Rezultatų nerasta.</string>
     <string name="message_service_not_available">Paslauga dabar nepasiekiama.</string>
     <string name="minus_tts">Minusas</string>
+    <string name="mon">Pir.</string>
     <string name="more">Daug</string>
     <string name="more_cuntact_us">Susisiekite su mumis</string>
     <string name="more_information">Daugiau</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Bakstelėkite čia ir pakeiskite numatytąją orų vietą bei tvarkykite visas savo vietas.</string>
     <string name="new_version_available">Yra nauja %s versija.</string>
     <string name="new_version_is_available">Yra nauja versija.</string>
+    <string name="news_menu_show_news">Rodyti naujienas</string>
+    <string name="news_opt_in_banner_title_text">Sekite naujausią įvykių informaciją rodydami naujienas orų valdiklyje.</string>
+    <string name="news_opt_in_popup_desc_text">Sekite pasaulio naujienas rodydami naujausias %s antraštes orų valdiklyje.</string>
+    <string name="news_opt_in_popup_title_text">Peržiūrėkite naujienas ir orus viename valdiklyje</string>
+    <string name="news_request_agree_text">Bakstelėkite ir gaukite naujienų iš %s</string>
+    <string name="news_widget_bubble_text">Gaukite naujienas su orų informacija.</string>
+    <string name="news_widget_dummy_title">Populiariausia istorija šiandien</string>
+    <string name="news_widget_new_dummy_title">5 dalykai, kuriuose jums reikia žinoti šįryt</string>
+    <string name="news_widget_oobe_text">Bakst. čia pridėkit naujienų.</string>
     <string name="next">Kitas miestas</string>
+    <string name="next_btn">Kitas</string>
     <string name="next_city">Bakstelėkite du kartus norėdami peržiūrėti orų informaciją kitame mieste.</string>
     <string name="night_tts">Naktis</string>
     <string name="no_application_available">Nėra galimų programų.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Orų informacijos nėra</string>
     <string name="not_in_use">Nenaudojama</string>
     <string name="not_now">Ne dabar</string>
+    <string name="not_now_btn">Ne dabar</string>
     <string name="not_selected">Nepasirinkta</string>
     <string name="not_set">Nenustatyta</string>
     <string name="nothing_selected">Niekas nepasirinkta.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Jei norite, kad vieta būtų nustatoma greitai ir tiksliai, bakstelėkite parinktį NUSTATYMAI, nustatykite GPS, „Wi-Fi“ mobiliojo tinklo vietos nustatymo būdą.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Jei norite, kad vieta būtų nustatoma greitai ir tiksliai, bakstelėkite parinktį NUSTATYMAI, nustatykite GPS ir „Wi-Fi“ vietos nustatymo būdą.</string>
     <string name="notice_gps_trun_off_message_verizon">Jei norite peržiūrėti vietos orų informaciją, įjunkite vietos nustatymą ir įsitikinkite, kad režimas nustatytas kaip „Didelio tikslumo“.</string>
+    <string name="notification_alert_channel_name">Įspėjimas apie sudėtingas oro sąlygas</string>
     <string name="notification_apps_update_channel_name">Atnaujinti pranešimus</string>
     <string name="notification_auto_refresh_channel_name">Automatinis orų atnaujinimas</string>
     <string name="notification_dex_channel_name">Orai „Samsung DeX“</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Atid. programą</string>
     <string name="open_source_licences">Atvirojo kodo licencijos</string>
     <string name="other_locations">Kitos vietos</string>
+    <string name="partly_sunny">Su pragiedruliais</string>
     <string name="password_toggle_content_description">Rodyti slaptažodį</string>
     <string name="paused">Pristabdyta</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Suvestinė „%1$s“ nukopijuota į iškarpinę.</string>
     <string name="preview">%s peržiūra</string>
     <string name="previous">Ankst. miestas</string>
+    <string name="previous_btn">Ankstesnis</string>
     <string name="previous_city">Bakstelėkite du kartus norėdami peržiūrėti orų informaciją ankstesniame mieste.</string>
     <string name="privacy_policy">Privatumo politika</string>
     <string name="probability_of_rain_text">Lietaus tikimybė</string>
     <string name="protect_your_content">Apsaugokite savo turinį</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radiolokatorius ir žemėlapiai</string>
     <string name="rain">Lietus</string>
     <string name="rain_followed_by_intense_heat">Lietus, paskui kaitra</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Jei norite atnaujinti orų informaciją, bakstelėkite NUSTATYMAI, eikite į Programos informacija > Leidimai, tada suteikę toliau nurodytus leidimus bandykite dar kartą:</string>
     <string name="runtime_location_permission_title">Suteikti leidimus</string>
     <string name="runtime_oem_grant_permission_desc">„%s“ programai suteikiamas leidimas pasiekti šią informaciją:</string>
+    <string name="sat">Šeš.</string>
     <string name="save_button">Išsaugoti</string>
     <string name="search_menu_title">Ieškoti</string>
     <string name="search_most_searched_for">Dažniausiai ieškota</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Yra naujo turinio</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Daugiau</string>
+    <string name="sesl_preferecne_badge_description">Naujas pranešimas</string>
     <string name="sesl_preferencecategory_added_title">Antraštė</string>
     <string name="sesl_search_hint">Paieška</string>
     <string name="sesl_searchview_description_clear">Išvalyti paieškos laukelį</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Neprijung.</string>
     <string name="st_view_less">Žiūrėti mažiau</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Išjungta</string>
+    <string name="status_on">Įjungta</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Sek.</string>
     <string name="sunny">Saulėta</string>
     <string name="sunny_with_some_clouds">Saulėta, šiek tiek debesuota</string>
     <string name="sunny_with_some_heavy_rain">Saulėta, protarpiais smarkus lietus</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Bakstelėkite čia ir atkurkite orų duomenis iš senojo įrenginio.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Bakstelėkite KARTOTI ir pabandykite savo vietą surasti dar kartą.</string>
     <string name="tap_setting_message_edge_panel">Jei norite gauti vietos orų duomenis, įjunkite vietos funkciją.</string>
+    <string name="tap_the_settings_icon">Palieskite nustatymų piktogramą.</string>
     <string name="tap_to_get_the_weather">Bakstelėkite ir gaukite orų informaciją</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Nuostatos ir sąlygos</string>
     <string name="the_latest_version">Naujausia versija jau įdiegta.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Tai taip pat bus taikoma pranešimams ir kalendoriui.</string>
+    <string name="thu">Ket.</string>
     <string name="tick_box_tts">Žymimasis langelis</string>
     <string name="ticked_tts">Pažymėta</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Kas valandą</string>
     <string name="title_select_locations">Pasirinkti vietas</string>
     <string name="title_theme">Temos</string>
+    <string name="to_continue_agree_to_updated">Jei norite tęsti, sutikite su atnaujintomis %s.</string>
     <string name="to_get_local_weather_chn">"Kad matytumėte vietos orų informaciją, Jūsų buvimo vietos duomenys bus nusiųsti orų prognozės paslaugų teikėjui. (Prašome susipažinti su paslaugų teikėjo %1$sSąlygomis%2$s ir %3$sPrivatumo politika%4$s).
 Kitos Jūsų įrenginio programėlės ir paslaugos gali prisijungti prie orų duomenų, kad orų informacija būtų rodoma tose programėlėse.
 Kad orų informacija Jums būtų teikiama nuolat, programėlė „Orai“ turės matyti Jūsų buvimo vietą, netgi kai ja nesinaudojate."</string>
     <string name="today">Šiandien</string>
+    <string name="try_it_out_btn">Išbandyti</string>
+    <string name="tue">Ant.</string>
+    <string name="turn_on_to_use_precise_location">Jei norite naudotis šia funkcija, turite leisti %s visada pasiekti jūsų vietą ir įjungti „Naudoti tikslią vietą“. Bakstelėkite „Nustatymai“, tada eikite į Leidimai > Vieta.</string>
     <string name="tw_title_weather_broadcast">Transliuoti</string>
-    <string name="unable_to_check_for_updates">Neįmanoma ieškoti naujinių. Čia nėra ryšio su tinklu.</string>
+    <string name="unable_to_check_for_updates">Nepavyko ieškoti naujinių. Vėliau bandykite dar kartą.</string>
     <string name="unable_to_receive_info_msg">Neįmanoma gauti informacijos</string>
     <string name="unticked_tts">Nepažymėta</string>
     <string name="unused">Nenaudojama</string>
     <string name="update">Atnaujinti</string>
     <string name="update_abb8">Naujinti</string>
     <string name="update_app">Naujinti programą</string>
+    <string name="updated_tile_chn">Atnaujinta: %s</string>
     <string name="updated_tts">%s atnaujinta</string>
+    <string name="use_current_location">Naudoti dabartinę vietą</string>
     <string name="use_current_location_agree_popup">"Norint pateikti jums vietos orų informaciją, jūsų dabartinės buvimo vietos informacija bus nusiųsta orų prognozės paslaugų teikėjui. (Žr. paslaugų teikėjo %1$sprivatumo politiką%2$s.)
 Kitos jūsų įrenginyje veikiančios programos ir paslaugos gali pasiekti gautą informaciją apie orus ir ją rodyti atitinkamose programose."</string>
     <string name="use_current_location_and_background_agree_popup">"Kad matytumėte vietos orų informaciją, Jūsų buvimo vietos duomenys bus nusiųsti orų prognozės paslaugų teikėjui. (Prašome susipažinti su paslaugų teikėjo %1$sPrivatumo politiką%2$s.)
@@ -746,9 +784,16 @@ Kad orų informacija Jums būtų teikiama nuolat, programėlė „Orai“ turės
 Galite išjungti Jūsų buvimo vietos duomenų rinkimo funkciją per programos „Oras“ nustatymus."</string>
     <string name="use_current_location_body_msg_chn">"Prieš pradėdami naudotis programa „Oras“ prašome atidžiai perskaityti:
 Jeigu norite žinoti orą Jūsų dabartinėje buvimo vietoje, turėsite suteikti trečiųjų šalių paslaugų teikėjui nuolatinę (netgi kai paslauga nesinaudojate) prieigą prie Jūsų įrenginio ir leisti gauti tam tikrus duomenis, kaip nurodyta toliau. Prieš pareikšdami tokį sutikimą atidžiai perskaitykite, kad suprastumėte trečiosios šalies paslaugų teikėjo %1$ssąlygas%2$s ir %3$sPrivatumo politiką%4$s. Savo sutikimą galite atsiimti nustatymų meniu išjungdami parinktį „Vieta“. Kitos Jūsų įrenginyje veikiančios programos ir paslaugos gali pasiekti gautą informaciją apie orus ir ją rodyti atitinkamose programose ir paslaugose."</string>
+    <string name="use_current_location_body_msg_kor">"Bus renkami duomenys apie jūsų dabartinę vietą, kurie bus naudojami tam tikroms orų programos funkcijos suteikti, pvz., informacijai apie vietinius orus gauti.
+
+Kad informacija apie orus jums būtų teikiama nuolatos, ši programa reguliariai apdoros jūsų vietą, net jei programa nesinaudosite. Tęsdami sutinkate, kad anksčiau nurodytais tikslais būtų renkama ir naudojama jūsų vietos informacija.
+
+Šį vietos informacijos rinkimą ir naudojimą galite sustabdyti orų programos nustatymuose."</string>
     <string name="use_current_location_body_purpose">Paskirtis</string>
     <string name="use_current_location_body_purpose_content">Teikti informaciją apie orą Jūsų dabartinėje vietovėje</string>
     <string name="use_current_location_body_search_provider">Paslaugų teikėjas</string>
+    <string name="use_current_location_continue">Tęsti</string>
+    <string name="use_current_location_not_now">Ne dabar</string>
     <string name="use_current_location_off_alert_popup">Dabartinės vietos informacija bus pašalinta.</string>
     <string name="useful_informations">Gyvenimo patarimai ir kiti pranešimai</string>
     <string name="using_as">Naudojama kaip %s</string>
@@ -856,9 +901,11 @@ Jeigu norite žinoti orą Jūsų dabartinėje buvimo vietoje, turėsite suteikti
     <string name="weather_tip">Orų patarimai</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Tre.</string>
     <string name="weekly_forecast">Kasdien</string>
     <string name="widget_background">Valdiklio fonas</string>
     <string name="widget_empty_text">Bakstelėkite, jei reikia orų informacijos</string>
+    <string name="widget_location">Miesto pavadinimas</string>
     <string name="widget_name_4x1">Orai ir laikrodis</string>
     <string name="widget_setting">Nustatymai</string>
     <string name="widget_setting_background_color">Fono spalva</string>

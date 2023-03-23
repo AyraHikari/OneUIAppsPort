@@ -533,36 +533,33 @@
 
     if-eqz v2, :cond_2
 
-    sub-int v2, v1, v14
+    sub-int v3, v1, v14
 
     goto :goto_1
 
     :cond_2
-    move v2, v1
+    move v3, v1
 
     .line 260
     :goto_1
-    rem-int v3, v2, v4
+    rem-int v5, v3, v4
 
-    if-nez v3, :cond_b
-
-    .line 265
-    iget-boolean v3, v6, Lorg/spongycastle/crypto/tls/TlsBlockCipher;->encryptThenMAC:Z
+    if-nez v5, :cond_b
 
     const/16 v5, 0x14
 
     const/16 v16, 0x1
 
-    if-eqz v3, :cond_4
+    if-eqz v2, :cond_4
 
-    add-int v3, v0, v1
+    add-int v2, v0, v1
 
-    sub-int v7, v3, v14
+    sub-int v7, v2, v14
 
     .line 268
-    invoke-static {v15, v7, v3}, Lorg/spongycastle/util/Arrays;->copyOfRange([BII)[B
+    invoke-static {v15, v7, v2}, Lorg/spongycastle/util/Arrays;->copyOfRange([BII)[B
 
-    move-result-object v3
+    move-result-object v2
 
     .line 269
     iget-object v7, v6, Lorg/spongycastle/crypto/tls/TlsBlockCipher;->readMac:Lorg/spongycastle/crypto/tls/TlsMac;
@@ -582,7 +579,7 @@
     move-result-object v1
 
     .line 271
-    invoke-static {v1, v3}, Lorg/spongycastle/util/Arrays;->constantTimeAreEqual([B[B)Z
+    invoke-static {v1, v2}, Lorg/spongycastle/util/Arrays;->constantTimeAreEqual([B[B)Z
 
     move-result v1
 
@@ -612,22 +609,22 @@
     .line 288
     iget-object v1, v6, Lorg/spongycastle/crypto/tls/TlsBlockCipher;->decryptCipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    new-instance v3, Lorg/spongycastle/crypto/params/ParametersWithIV;
+    new-instance v2, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
     const/4 v8, 0x0
 
-    invoke-direct {v3, v8, v15, v0, v4}, Lorg/spongycastle/crypto/params/ParametersWithIV;-><init>(Lorg/spongycastle/crypto/CipherParameters;[BII)V
+    invoke-direct {v2, v8, v15, v0, v4}, Lorg/spongycastle/crypto/params/ParametersWithIV;-><init>(Lorg/spongycastle/crypto/CipherParameters;[BII)V
 
-    invoke-interface {v1, v7, v3}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
+    invoke-interface {v1, v7, v2}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
     add-int/2addr v0, v4
 
-    sub-int/2addr v2, v4
+    sub-int/2addr v3, v4
 
     :cond_5
     move v13, v0
 
-    move v8, v2
+    move v8, v3
 
     move v0, v7
 
@@ -894,12 +891,9 @@
     :cond_2
     new-array v15, v1, [B
 
-    .line 183
-    iget-boolean v1, v0, Lorg/spongycastle/crypto/tls/TlsBlockCipher;->useExplicitIV:Z
-
     const/4 v14, 0x0
 
-    if-eqz v1, :cond_3
+    if-eqz v3, :cond_3
 
     .line 185
     new-array v1, v8, [B

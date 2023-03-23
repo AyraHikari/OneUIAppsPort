@@ -1,91 +1,41 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: Weather_1.6.41.12.apk
+apkFileName: com.sec.android.daemonapp_1.6.56.1-165601100_minAPI28(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk
 compressionType: false
 doNotCompress:
-- dex
-- arsc
-- so
-- res/drawable/sesl_fastscroll_track_alpha.9.png
-- res/drawable/widget_setting_seek_bar_progress_bg.9.png
-- res/drawable-hdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-hdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-hdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-hdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-hdpi/notification_bg_low_normal.9.png
-- res/drawable-hdpi/notification_bg_low_pressed.9.png
-- res/drawable-hdpi/notification_bg_normal.9.png
-- res/drawable-hdpi/notification_bg_normal_pressed.9.png
-- res/drawable-hdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-ldrtl-xxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-ldrtl-xxhdpi/sesl_textfield_default_alpha.9.png
-- res/drawable-ldrtl-xxxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-ldrtl-xxxhdpi/sesl_textfield_default_alpha.9.png
-- res/drawable-mdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-mdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-mdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-mdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-mdpi/notification_bg_low_normal.9.png
-- res/drawable-mdpi/notification_bg_low_pressed.9.png
-- res/drawable-mdpi/notification_bg_normal.9.png
-- res/drawable-mdpi/notification_bg_normal_pressed.9.png
-- res/drawable-mdpi/sesl_index_bar_bg.9.png
-- res/drawable-mdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-mdpi/sesl_scrollbar_handle_mtrl_alpha.9.png
-- res/drawable-mdpi/sesl_toast_frame_alpha.9.png
-- res/drawable-nodpi/tw_noti_badge_mtrl.9.png
-- res/drawable-xhdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-xhdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-xhdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-xhdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-xhdpi/notification_bg_low_normal.9.png
-- res/drawable-xhdpi/notification_bg_low_pressed.9.png
-- res/drawable-xhdpi/notification_bg_normal.9.png
-- res/drawable-xhdpi/notification_bg_normal_pressed.9.png
-- res/drawable-xhdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-xhdpi/sesl_toast_frame_alpha.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-xxhdpi/sesl_action_bar_stacked_divider_alpha.9.png
-- res/drawable-xxhdpi/sesl_index_bar_bg.9.png
-- res/drawable-xxhdpi/sesl_index_bar_textmode_bg.9.png
-- res/drawable-xxhdpi/sesl_progress_bar.9.png
-- res/drawable-xxhdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-xxhdpi/sesl_scrollbar_handle_mtrl_alpha.9.png
-- res/drawable-xxhdpi/sesl_spinner_mtrl_am_alpha.9.png
-- res/drawable-xxhdpi/sesl_tab_n_badge_mtrl.9.png
-- res/drawable-xxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-xxhdpi/sesl_textfield_default_alpha.9.png
-- res/drawable-xxhdpi/sesl_toast_frame_alpha.9.png
-- res/drawable-xxxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-xxxhdpi/sesl_textfield_default_alpha.9.png
+- resources.arsc
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- lib/arm64-v8a/libDiagMonKey.so
+- lib/armeabi-v7a/libDiagMonKey.so
+- png
+- webp
+- res/drawable-nodpi/tw_list_icon_reorder.bmp
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '26'
-  targetSdkVersion: '31'
+  minSdkVersion: '28'
+  targetSdkVersion: '33'
 sharedLibrary: false
 sparseResources: false
 unknownFiles:
-  androidsupportmultidexversion.txt: '0'
   DebugProbesKt.bin: '8'
+  androidsupportmultidexversion.txt: '8'
+  kotlin-tooling-metadata.json: '8'
   play-services-base.properties: '8'
   play-services-basement.properties: '8'
   play-services-location.properties: '8'
-  play-services-places-placereport.properties: '8'
   play-services-tasks.properties: '8'
-  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
-  okhttp3/internal/publicsuffix/NOTICE: '8'
   SEC-INF/buildConfirm.crt: '8'
   SEC-INF/buildinfo.xml: '8'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
 usesFramework:
   ids:
   - 1
   tag: null
-version: 2.4.0-dirty
+version: 2.7.0
 versionInfo:
-  versionCode: '164108100'
-  versionName: 1.6.41.8
+  versionCode: '165601100'
+  versionName: 1.6.56.1

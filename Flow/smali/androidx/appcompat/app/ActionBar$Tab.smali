@@ -55,31 +55,111 @@
 .end method
 
 .method public abstract setContentDescription(I)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 .end method
 
 .method public abstract setContentDescription(Ljava/lang/CharSequence;)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "contentDesc"
+        }
+    .end annotation
 .end method
 
 .method public abstract setCustomView(I)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layoutResId"
+        }
+    .end annotation
 .end method
 
 .method public abstract setCustomView(Landroid/view/View;)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 .end method
 
 .method public abstract setIcon(I)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 .end method
 
 .method public abstract setIcon(Landroid/graphics/drawable/Drawable;)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "icon"
+        }
+    .end annotation
 .end method
 
 .method public abstract setTabListener(Landroidx/appcompat/app/ActionBar$TabListener;)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 .end method
 
 .method public abstract setTag(Ljava/lang/Object;)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 .end method
 
 .method public abstract setText(I)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 .end method
 
 .method public abstract setText(Ljava/lang/CharSequence;)Landroidx/appcompat/app/ActionBar$Tab;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "text"
+        }
+    .end annotation
 .end method

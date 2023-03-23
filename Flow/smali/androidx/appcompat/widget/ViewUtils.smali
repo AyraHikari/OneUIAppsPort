@@ -14,7 +14,7 @@
     .locals 5
 
     .line 42
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
@@ -88,6 +88,18 @@
 
 .method public static computeFitSystemWindows(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "inoutInsets",
+            "outLocalInsets"
+        }
+    .end annotation
 
     .line 66
     sget-object v0, Landroidx/appcompat/widget/ViewUtils;->sComputeFitSystemWindowsMethod:Ljava/lang/reflect/Method;
@@ -131,6 +143,14 @@
 
 .method public static isLayoutRtl(Landroid/view/View;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 58
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
@@ -152,13 +172,21 @@
 
 .method public static makeOptionalFitsSystemWindows(Landroid/view/View;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     const-string v0, "Could not invoke makeOptionalFitsSystemWindows"
 
     const-string v1, "ViewUtils"
 
     .line 80
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x10
 

@@ -1,11 +1,12 @@
 .class public Lcom/google/android/gms/common/util/Hex;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # static fields
-.field private static final zzgy:[C
+.field private static final zza:[C
 
-.field private static final zzgz:[C
+.field private static final zzb:[C
 
 
 # direct methods
@@ -16,17 +17,15 @@
 
     new-array v1, v0, [C
 
-    .line 27
     fill-array-data v1, :array_0
 
-    sput-object v1, Lcom/google/android/gms/common/util/Hex;->zzgy:[C
+    sput-object v1, Lcom/google/android/gms/common/util/Hex;->zza:[C
 
     new-array v0, v0, [C
 
-    .line 28
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/google/android/gms/common/util/Hex;->zzgz:[C
+    sput-object v0, Lcom/google/android/gms/common/util/Hex;->zzb:[C
 
     return-void
 
@@ -76,7 +75,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,10 +83,10 @@
 .method public static bytesToStringLowercase([B)Ljava/lang/String;
     .locals 7
 
-    .line 11
+    .line 1
     array-length v0, p0
 
-    shl-int/lit8 v0, v0, 0x1
+    add-int/2addr v0, v0
 
     new-array v0, v0, [C
 
@@ -96,42 +94,41 @@
 
     move v2, v1
 
-    .line 13
+    .line 2
     :goto_0
     array-length v3, p0
 
     if-ge v1, v3, :cond_0
 
-    .line 14
+    .line 3
     aget-byte v3, p0, v1
 
     and-int/lit16 v3, v3, 0xff
 
     add-int/lit8 v4, v2, 0x1
 
-    .line 15
-    sget-object v5, Lcom/google/android/gms/common/util/Hex;->zzgz:[C
+    sget-object v5, Lcom/google/android/gms/common/util/Hex;->zzb:[C
 
     ushr-int/lit8 v6, v3, 0x4
 
     aget-char v6, v5, v6
 
+    .line 4
     aput-char v6, v0, v2
 
     add-int/lit8 v2, v4, 0x1
 
     and-int/lit8 v3, v3, 0xf
 
-    .line 16
     aget-char v3, v5, v3
 
+    .line 5
     aput-char v3, v0, v4
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 18
     :cond_0
     new-instance p0, Ljava/lang/String;
 
@@ -145,7 +142,7 @@
 
     const/4 v0, 0x0
 
-    .line 2
+    .line 1
     invoke-static {p0, v0}, Lcom/google/android/gms/common/util/Hex;->bytesToStringUppercase([BZ)Ljava/lang/String;
 
     move-result-object p0
@@ -156,14 +153,14 @@
 .method public static bytesToStringUppercase([BZ)Ljava/lang/String;
     .locals 5
 
-    .line 3
+    .line 2
     array-length v0, p0
 
-    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
-    shl-int/lit8 v2, v0, 0x1
+    add-int v2, v0, v0
 
+    .line 3
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
     const/4 v2, 0x0
@@ -177,30 +174,28 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 6
+    .line 4
     aget-byte v3, p0, v2
 
     and-int/lit16 v3, v3, 0xff
 
     if-eqz v3, :cond_1
 
-    .line 7
     :cond_0
-    sget-object v3, Lcom/google/android/gms/common/util/Hex;->zzgy:[C
+    sget-object v3, Lcom/google/android/gms/common/util/Hex;->zza:[C
 
+    .line 5
     aget-byte v4, p0, v2
 
     and-int/lit16 v4, v4, 0xf0
 
     ushr-int/lit8 v4, v4, 0x4
 
-    aget-char v3, v3, v4
+    aget-char v4, v3, v4
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 8
-    sget-object v3, Lcom/google/android/gms/common/util/Hex;->zzgy:[C
-
+    .line 6
     aget-byte v4, p0, v2
 
     and-int/lit8 v4, v4, 0xf
@@ -213,7 +208,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_1
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -230,19 +224,19 @@
         }
     .end annotation
 
-    .line 19
+    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 20
     rem-int/lit8 v1, v0, 0x2
 
     if-nez v1, :cond_1
 
-    .line 22
+    .line 2
     div-int/lit8 v1, v0, 0x2
 
+    .line 3
     new-array v1, v1, [B
 
     const/4 v2, 0x0
@@ -250,12 +244,12 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 24
-    div-int/lit8 v3, v2, 0x2
+    add-int/lit8 v3, v2, 0x2
 
-    add-int/lit8 v4, v2, 0x2
+    div-int/lit8 v4, v2, 0x2
 
-    invoke-virtual {p0, v2, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    .line 4
+    invoke-virtual {p0, v2, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
@@ -267,21 +261,22 @@
 
     int-to-byte v2, v2
 
-    aput-byte v2, v1, v3
+    aput-byte v2, v1, v4
 
-    move v2, v4
+    move v2, v3
 
     goto :goto_0
 
     :cond_0
     return-object v1
 
-    .line 21
+    .line 1
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "Hex string has odd number of characters"
 
+    .line 2
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/cloud_account_list_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/cloud_subtitle" android:paddingTop="@dimen/sesl_list_subheader_padding_bottom" android:text="@string/cloud_account" style="@style/SubHeader" />
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner">
+        <ViewStub android:id="@id/samsung_drive_account_stub" android:tag="binding_2" android:layout="@layout/home_list_item_with_progress" android:inflatedId="@id/samsung_drive_account_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/one_drive_account_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_list_item_with_progress" />
+        <include android:id="@id/google_drive_account_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_list_item_with_progress" />
+    </LinearLayout>
+    <View android:tag="binding_3" style="@style/SubHeader_NoText" />
+    <ViewStub android:id="@id/switch_to_one_drive_view_stub" android:tag="binding_4" android:layout="@layout/settings_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

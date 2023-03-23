@@ -26,6 +26,14 @@
 # direct methods
 .method public constructor <init>(Landroid/bluetooth/BluetoothDevice;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,6 +51,16 @@
 
 .method public constructor <init>(Landroid/net/nsd/NsdServiceInfo;Landroid/net/nsd/NsdServiceInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authInfo",
+            "notiInfo"
+        }
+    .end annotation
 
     .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -63,6 +81,14 @@
 
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

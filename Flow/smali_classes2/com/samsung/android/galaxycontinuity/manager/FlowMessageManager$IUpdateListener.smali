@@ -16,10 +16,26 @@
 
 # virtual methods
 .method public abstract onAdded(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCleared()V
 .end method
 
 .method public abstract onRemoved(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 .end method

@@ -16,6 +16,8 @@
 
 .field private entityType:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
+.field private isMappable:Z
+
 .field private repeatInfo:Ljava/lang/String;
 
 .field private startDate:Ljava/util/Date;
@@ -58,7 +60,7 @@
 .method static create()Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;
     .locals 1
 
-    .line 23
+    .line 24
     new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;
 
     invoke-direct {v0}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;-><init>()V
@@ -71,7 +73,7 @@
 .method public getBankAccountNumber()Ljava/lang/String;
     .locals 1
 
-    .line 240
+    .line 241
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->bankAccountNumber:Ljava/lang/String;
 
     return-object v0
@@ -80,7 +82,7 @@
 .method public getBankAmount()Ljava/lang/String;
     .locals 1
 
-    .line 262
+    .line 263
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->bankAmount:Ljava/lang/String;
 
     return-object v0
@@ -89,7 +91,7 @@
 .method public getBankName()Ljava/lang/String;
     .locals 1
 
-    .line 218
+    .line 219
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->bankName:Ljava/lang/String;
 
     return-object v0
@@ -98,7 +100,7 @@
 .method public getEndDateTime()Ljava/util/Date;
     .locals 1
 
-    .line 125
+    .line 126
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->endDate:Ljava/util/Date;
 
     return-object v0
@@ -107,7 +109,7 @@
 .method public getEndIndex()I
     .locals 1
 
-    .line 83
+    .line 84
     iget v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->endIndex:I
 
     return v0
@@ -116,7 +118,7 @@
 .method public getRepeatInfo()Ljava/lang/String;
     .locals 1
 
-    .line 196
+    .line 197
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->repeatInfo:Ljava/lang/String;
 
     return-object v0
@@ -125,7 +127,7 @@
 .method public getStartDateTime()Ljava/util/Date;
     .locals 1
 
-    .line 104
+    .line 105
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->startDate:Ljava/util/Date;
 
     return-object v0
@@ -134,7 +136,7 @@
 .method public getStartIndex()I
     .locals 1
 
-    .line 66
+    .line 67
     iget v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->startIndex:I
 
     return v0
@@ -143,7 +145,7 @@
 .method public getString()Ljava/lang/String;
     .locals 1
 
-    .line 49
+    .line 50
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->text:Ljava/lang/String;
 
     return-object v0
@@ -152,7 +154,7 @@
 .method public getType()Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
     .locals 1
 
-    .line 32
+    .line 33
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->entityType:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
     return-object v0
@@ -169,7 +171,7 @@
         }
     .end annotation
 
-    .line 172
+    .line 173
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->unresolvedEndDateTimeUnit:Ljava/util/EnumSet;
 
     return-object v0
@@ -186,16 +188,25 @@
         }
     .end annotation
 
-    .line 148
+    .line 149
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->unresolvedStartDateTimeUnit:Ljava/util/EnumSet;
 
     return-object v0
 .end method
 
+.method public isMappable()Z
+    .locals 1
+
+    .line 285
+    iget-boolean v0, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->isMappable:Z
+
+    return v0
+.end method
+
 .method public setBankAccountNumber(Ljava/lang/String;)V
     .locals 0
 
-    .line 248
+    .line 249
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->bankAccountNumber:Ljava/lang/String;
 
     return-void
@@ -204,7 +215,7 @@
 .method public setBankAmount(Ljava/lang/String;)V
     .locals 0
 
-    .line 270
+    .line 271
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->bankAmount:Ljava/lang/String;
 
     return-void
@@ -213,7 +224,7 @@
 .method public setBankName(Ljava/lang/String;)V
     .locals 0
 
-    .line 226
+    .line 227
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->bankName:Ljava/lang/String;
 
     return-void
@@ -222,7 +233,7 @@
 .method public setEndDateTime(Ljava/util/Date;)V
     .locals 0
 
-    .line 133
+    .line 134
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->endDate:Ljava/util/Date;
 
     return-void
@@ -231,8 +242,17 @@
 .method public setEndIndex(I)V
     .locals 0
 
-    .line 91
+    .line 92
     iput p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->endIndex:I
+
+    return-void
+.end method
+
+.method public setMappable(Z)V
+    .locals 0
+
+    .line 293
+    iput-boolean p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->isMappable:Z
 
     return-void
 .end method
@@ -240,7 +260,7 @@
 .method public setRepeatInfo(Ljava/lang/String;)V
     .locals 0
 
-    .line 204
+    .line 205
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->repeatInfo:Ljava/lang/String;
 
     return-void
@@ -249,7 +269,7 @@
 .method public setStartDateTime(Ljava/util/Date;)V
     .locals 0
 
-    .line 112
+    .line 113
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->startDate:Ljava/util/Date;
 
     return-void
@@ -258,7 +278,7 @@
 .method public setStartIndex(I)V
     .locals 0
 
-    .line 74
+    .line 75
     iput p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->startIndex:I
 
     return-void
@@ -267,7 +287,7 @@
 .method public setString(Ljava/lang/String;)V
     .locals 0
 
-    .line 57
+    .line 58
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->text:Ljava/lang/String;
 
     return-void
@@ -276,7 +296,7 @@
 .method public setType(Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;)V
     .locals 0
 
-    .line 40
+    .line 41
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->entityType:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
     return-void
@@ -293,7 +313,7 @@
         }
     .end annotation
 
-    .line 181
+    .line 182
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->unresolvedEndDateTimeUnit:Ljava/util/EnumSet;
 
     return-void
@@ -310,7 +330,7 @@
         }
     .end annotation
 
-    .line 157
+    .line 158
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntity;->unresolvedStartDateTimeUnit:Ljava/util/EnumSet;
 
     return-void

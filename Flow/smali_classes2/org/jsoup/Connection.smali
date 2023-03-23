@@ -32,10 +32,16 @@
     .end annotation
 .end method
 
+.method public abstract data(Ljava/lang/String;)Lorg/jsoup/Connection$KeyVal;
+.end method
+
 .method public abstract data(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/Connection;
 .end method
 
 .method public abstract data(Ljava/lang/String;Ljava/lang/String;Ljava/io/InputStream;)Lorg/jsoup/Connection;
+.end method
+
+.method public abstract data(Ljava/lang/String;Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)Lorg/jsoup/Connection;
 .end method
 
 .method public abstract data(Ljava/util/Collection;)Lorg/jsoup/Connection;
@@ -88,6 +94,19 @@
 .method public abstract header(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/Connection;
 .end method
 
+.method public abstract headers(Ljava/util/Map;)Lorg/jsoup/Connection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lorg/jsoup/Connection;"
+        }
+    .end annotation
+.end method
+
 .method public abstract ignoreContentType(Z)Lorg/jsoup/Connection;
 .end method
 
@@ -114,6 +133,12 @@
 .method public abstract postDataCharset(Ljava/lang/String;)Lorg/jsoup/Connection;
 .end method
 
+.method public abstract proxy(Ljava/lang/String;I)Lorg/jsoup/Connection;
+.end method
+
+.method public abstract proxy(Ljava/net/Proxy;)Lorg/jsoup/Connection;
+.end method
+
 .method public abstract referrer(Ljava/lang/String;)Lorg/jsoup/Connection;
 .end method
 
@@ -123,10 +148,16 @@
 .method public abstract request(Lorg/jsoup/Connection$Request;)Lorg/jsoup/Connection;
 .end method
 
+.method public abstract requestBody(Ljava/lang/String;)Lorg/jsoup/Connection;
+.end method
+
 .method public abstract response()Lorg/jsoup/Connection$Response;
 .end method
 
 .method public abstract response(Lorg/jsoup/Connection$Response;)Lorg/jsoup/Connection;
+.end method
+
+.method public abstract sslSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)Lorg/jsoup/Connection;
 .end method
 
 .method public abstract timeout(I)Lorg/jsoup/Connection;
@@ -139,7 +170,4 @@
 .end method
 
 .method public abstract userAgent(Ljava/lang/String;)Lorg/jsoup/Connection;
-.end method
-
-.method public abstract validateTLSCertificates(Z)Lorg/jsoup/Connection;
 .end method

@@ -1,12 +1,12 @@
 .class public final Lcom/google/android/gms/common/util/DataUtils;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,7 +15,7 @@
 .method public static copyStringToBuffer(Ljava/lang/String;Landroid/database/CharArrayBuffer;)V
     .locals 3
 
-    .line 2
+    .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -24,12 +24,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 2
     iput v1, p1, Landroid/database/CharArrayBuffer;->sizeCopied:I
 
-    goto :goto_1
+    return-void
 
-    .line 4
+    .line 3
     :cond_0
     iget-object v0, p1, Landroid/database/CharArrayBuffer;->data:[C
 
@@ -47,7 +47,7 @@
 
     goto :goto_0
 
-    .line 6
+    .line 5
     :cond_1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -59,7 +59,7 @@
 
     goto :goto_1
 
-    .line 5
+    .line 4
     :cond_2
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
@@ -68,7 +68,7 @@
 
     iput-object v0, p1, Landroid/database/CharArrayBuffer;->data:[C
 
-    .line 7
+    .line 6
     :goto_1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -82,19 +82,19 @@
 .method public static loadImageBytes(Landroid/graphics/Bitmap;)[B
     .locals 3
 
-    .line 10
+    .line 1
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 11
+    .line 2
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v2, 0x64
 
     invoke-virtual {p0, v1, v2, v0}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 12
+    .line 3
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0

@@ -17,7 +17,8 @@
     value = {
         Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$BottomUpDirectoryState;,
         Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$TopDownDirectoryState;,
-        Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$SingleFileState;
+        Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$SingleFileState;,
+        Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$WhenMappings;
     }
 .end annotation
 
@@ -30,11 +31,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0082\u0004\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0003\r\u000e\u000fB\u0005\u00a2\u0006\u0002\u0010\u0003J\u0008\u0010\u0007\u001a\u00020\u0008H\u0014J\u0010\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0002H\u0002J\u000b\u0010\u000c\u001a\u0004\u0018\u00010\u0002H\u0082\u0010R\u0014\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0010"
     }
@@ -60,9 +56,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -104,15 +101,13 @@
     .line 73
     invoke-static {p1}, Lkotlin/io/FileTreeWalk;->access$getStart$p(Lkotlin/io/FileTreeWalk;)Ljava/io/File;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
+    invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
+    if-eqz v1, :cond_0
 
     invoke-static {p1}, Lkotlin/io/FileTreeWalk;->access$getStart$p(Lkotlin/io/FileTreeWalk;)Ljava/io/File;
 
@@ -130,15 +125,13 @@
     :cond_0
     invoke-static {p1}, Lkotlin/io/FileTreeWalk;->access$getStart$p(Lkotlin/io/FileTreeWalk;)Ljava/io/File;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
+    invoke-virtual {v1}, Ljava/io/File;->isFile()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
+    if-eqz v1, :cond_1
 
     new-instance v1, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$SingleFileState;
 
@@ -227,14 +220,19 @@
 
     check-cast v0, Lkotlin/io/FileTreeWalk$WalkState;
 
-    if-eqz v0, :cond_3
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    return-object v0
 
     .line 98
+    :cond_0
     invoke-virtual {v0}, Lkotlin/io/FileTreeWalk$WalkState;->step()Ljava/io/File;
 
     move-result-object v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     .line 101
     iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
@@ -244,7 +242,7 @@
     goto :goto_0
 
     .line 105
-    :cond_0
+    :cond_1
     invoke-virtual {v0}, Lkotlin/io/FileTreeWalk$WalkState;->getRoot()Ljava/io/File;
 
     move-result-object v0
@@ -253,13 +251,13 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_3
 
     invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
 
@@ -273,12 +271,12 @@
 
     move-result v2
 
-    if-lt v0, v2, :cond_1
+    if-lt v0, v2, :cond_2
 
     goto :goto_1
 
     .line 110
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
 
     invoke-direct {p0, v1}, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->directoryState(Ljava/io/File;)Lkotlin/io/FileTreeWalk$DirectoryState;
@@ -289,14 +287,9 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     :goto_1
     return-object v1
-
-    :cond_3
-    const/4 v0, 0x0
-
-    return-object v0
 .end method
 
 

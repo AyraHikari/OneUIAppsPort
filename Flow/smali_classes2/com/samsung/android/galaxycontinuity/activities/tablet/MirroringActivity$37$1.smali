@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$37;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 2338
+    .line 2475
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$37$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$37;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,15 +48,15 @@
 
     const-string v0, "hideLoadingScreenView Hide it!!"
 
-    .line 2341
+    .line 2478
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 2343
+    .line 2480
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$37$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$37;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$37;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$3700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/RelativeLayout;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$4100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/RelativeLayout;
 
     move-result-object v0
 

@@ -38,7 +38,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 11
 
     .line 61
     new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
@@ -52,79 +52,82 @@
     sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_NONE:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
     .line 62
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    const-string v1, "ENROLLSTATE_PUB_KEY_REQUESTED"
+    const-string v3, "ENROLLSTATE_PUB_KEY_REQUESTED"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_PUB_KEY_REQUESTED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_PUB_KEY_REQUESTED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
     .line 63
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    new-instance v3, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    const-string v1, "ENROLLSTATE_KEY_CREATED"
+    const-string v5, "ENROLLSTATE_KEY_CREATED"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_KEY_CREATED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_KEY_CREATED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
     .line 64
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    new-instance v5, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    const-string v1, "ENROLLSTATE_AUTH_STARTED"
+    const-string v7, "ENROLLSTATE_AUTH_STARTED"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_AUTH_STARTED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    sput-object v5, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_AUTH_STARTED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
     .line 65
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    new-instance v7, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    const-string v1, "ENROLLSTATE_COMPLETED"
+    const-string v9, "ENROLLSTATE_COMPLETED"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_COMPLETED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    sput-object v7, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_COMPLETED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    const/4 v1, 0x5
+    const/4 v9, 0x5
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    new-array v9, v9, [Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+
+    aput-object v0, v9, v2
+
+    aput-object v1, v9, v4
+
+    aput-object v3, v9, v6
+
+    aput-object v5, v9, v8
+
+    aput-object v7, v9, v10
 
     .line 60
-    sget-object v7, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_NONE:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
-
-    aput-object v7, v1, v2
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_PUB_KEY_REQUESTED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_KEY_CREATED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_AUTH_STARTED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
-
-    aput-object v2, v1, v5
-
-    aput-object v0, v1, v6
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    sput-object v9, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -139,6 +142,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 60
     const-class v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;

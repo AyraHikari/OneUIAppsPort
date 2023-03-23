@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$naviBarDelay"
+        }
+    .end annotation
 
-    .line 1229
+    .line 1333
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     iput p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->val$naviBarDelay:I
@@ -42,10 +52,10 @@
 .method public run()V
     .locals 7
 
-    .line 1236
+    .line 1340
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v0
 
@@ -53,10 +63,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1237
+    .line 1341
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v0
 
@@ -64,10 +74,10 @@
 
     move-result v1
 
-    .line 1238
+    .line 1342
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v0
 
@@ -75,10 +85,10 @@
 
     move-result v0
 
-    .line 1239
+    .line 1343
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v2
 
@@ -98,11 +108,11 @@
 
     if-eqz v0, :cond_b
 
-    .line 1242
+    .line 1346
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    .line 1243
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    .line 1347
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v3
 
@@ -110,7 +120,7 @@
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v3
 
@@ -123,10 +133,10 @@
 
     if-eq v2, v3, :cond_3
 
-    .line 1248
+    .line 1352
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v4
 
@@ -141,10 +151,10 @@
     :cond_2
     int-to-float v4, v0
 
-    .line 1256
+    .line 1360
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v5
 
@@ -158,10 +168,10 @@
     :goto_1
     int-to-float v4, v1
 
-    .line 1250
+    .line 1354
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v5
 
@@ -174,10 +184,10 @@
 
     mul-float/2addr v4, v5
 
-    .line 1265
+    .line 1369
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v5
 
@@ -189,10 +199,10 @@
 
     if-eq v2, v3, :cond_5
 
-    .line 1267
+    .line 1371
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v3
 
@@ -207,10 +217,10 @@
     :cond_4
     int-to-float v1, v1
 
-    .line 1271
+    .line 1375
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v3
 
@@ -220,10 +230,10 @@
 
     int-to-float v0, v0
 
-    .line 1272
+    .line 1376
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v4
 
@@ -239,10 +249,10 @@
     :goto_3
     int-to-float v0, v0
 
-    .line 1268
+    .line 1372
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v3
 
@@ -252,10 +262,10 @@
 
     int-to-float v1, v1
 
-    .line 1269
+    .line 1373
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v4
 
@@ -265,11 +275,11 @@
 
     mul-float v0, v1, v4
 
-    .line 1276
+    .line 1380
     :goto_4
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v1
 
@@ -280,10 +290,10 @@
     :cond_6
     if-eq v2, v3, :cond_8
 
-    .line 1279
+    .line 1383
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v3
 
@@ -298,10 +308,10 @@
     :cond_7
     int-to-float v0, v0
 
-    .line 1283
+    .line 1387
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v3
 
@@ -311,10 +321,10 @@
 
     int-to-float v1, v1
 
-    .line 1284
+    .line 1388
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v4
 
@@ -330,10 +340,10 @@
     :goto_5
     int-to-float v1, v1
 
-    .line 1280
+    .line 1384
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v3
 
@@ -343,10 +353,10 @@
 
     int-to-float v0, v0
 
-    .line 1281
+    .line 1385
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v4
 
@@ -358,21 +368,21 @@
 
     move v1, v0
 
-    .line 1288
+    .line 1392
     :goto_6
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v0
 
     int-to-float v0, v0
 
-    .line 1293
+    .line 1397
     :goto_7
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/view/SurfaceView;
+    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/view/SurfaceView;
 
     move-result-object v4
 
@@ -382,10 +392,10 @@
 
     check-cast v4, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 1294
+    .line 1398
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
+    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
 
     move-result-object v5
 
@@ -395,10 +405,10 @@
 
     check-cast v5, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 1295
+    .line 1399
     iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
+    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
 
     move-result-object v6
 
@@ -410,10 +420,10 @@
 
     if-nez v2, :cond_9
 
-    .line 1297
+    .line 1401
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v2
 
@@ -425,21 +435,21 @@
 
     float-to-int v1, v1
 
-    .line 1298
+    .line 1402
     iput v1, v4, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
     float-to-int v0, v0
 
-    .line 1299
+    .line 1403
     iput v0, v4, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 1301
+    .line 1405
     iput v1, v5, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
-    .line 1302
+    .line 1406
     iput v0, v5, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 1303
+    .line 1407
     iput v0, v6, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
     goto :goto_8
@@ -447,23 +457,23 @@
     :cond_9
     float-to-int v1, v1
 
-    .line 1306
+    .line 1410
     iput v1, v4, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
     float-to-int v2, v0
 
-    .line 1307
+    .line 1411
     iput v2, v4, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 1309
+    .line 1413
     iput v1, v5, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
-    .line 1310
+    .line 1414
     iput v2, v5, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
     const/high16 v1, 0x437a0000    # 250.0f
 
-    .line 1311
+    .line 1415
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/Utils;->dpToPixel(F)I
 
     move-result v1
@@ -474,53 +484,53 @@
 
     if-ltz v0, :cond_a
 
-    .line 1312
+    .line 1416
     iput v2, v6, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
     goto :goto_8
 
-    .line 1314
+    .line 1418
     :cond_a
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)I
 
     move-result v0
 
     iput v0, v6, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 1318
+    .line 1422
     :goto_8
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v0
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->setTouchAreaScale(F)V
 
-    .line 1320
+    .line 1424
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/view/SurfaceView;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/view/SurfaceView;
 
     move-result-object v0
 
     invoke-virtual {v0, v4}, Landroid/view/SurfaceView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1321
+    .line 1425
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
     invoke-virtual {v0, v5}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1323
+    .line 1427
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$17;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 

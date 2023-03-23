@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 281
+    .line 285
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
         }
     .end annotation
 
-    .line 286
+    .line 290
     new-instance p1, Landroidx/loader/app/LoaderManagerImpl$LoaderViewModel;
 
     invoke-direct {p1}, Landroidx/loader/app/LoaderManagerImpl$LoaderViewModel;-><init>()V

@@ -13,10 +13,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$execute$1\n+ 2 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection$ReaderRunnable\n*L\n1#1,218:1\n716#2,2:219\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -43,15 +39,15 @@
 
 
 # instance fields
-.field final synthetic $cancelable:Z
+.field public final synthetic $cancelable:Z
 
-.field final synthetic $clearPrevious$inlined:Z
+.field public final synthetic $clearPrevious$inlined:Z
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $settings$inlined:Lokhttp3/internal/http2/Settings;
+.field public final synthetic $settings$inlined:Lokhttp3/internal/http2/Settings;
 
-.field final synthetic this$0:Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;
+.field public final synthetic this$0:Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;
 
 
 # direct methods
@@ -68,7 +64,6 @@
 
     iput-object p7, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$settings$$inlined$execute$1;->$settings$inlined:Lokhttp3/internal/http2/Settings;
 
-    .line 96
     invoke-direct {p0, p3, p4}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;Z)V
 
     return-void
@@ -79,7 +74,6 @@
 .method public runOnce()J
     .locals 3
 
-    .line 219
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$settings$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;
 
     iget-boolean v1, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$settings$$inlined$execute$1;->$clearPrevious$inlined:Z

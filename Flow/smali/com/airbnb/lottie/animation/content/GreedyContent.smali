@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/airbnb/lottie/animation/content/GreedyContent;
+.class interface abstract Lcom/airbnb/lottie/animation/content/GreedyContent;
 .super Ljava/lang/Object;
 .source "GreedyContent.java"
 

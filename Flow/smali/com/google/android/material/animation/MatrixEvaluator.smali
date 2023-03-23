@@ -29,22 +29,22 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 25
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x9
 
     new-array v1, v0, [F
 
-    .line 26
+    .line 27
     iput-object v1, p0, Lcom/google/android/material/animation/MatrixEvaluator;->tempStartValues:[F
 
     new-array v0, v0, [F
 
-    .line 27
+    .line 28
     iput-object v0, p0, Lcom/google/android/material/animation/MatrixEvaluator;->tempEndValues:[F
 
-    .line 28
+    .line 29
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
@@ -59,12 +59,12 @@
 .method public evaluate(FLandroid/graphics/Matrix;Landroid/graphics/Matrix;)Landroid/graphics/Matrix;
     .locals 3
 
-    .line 32
+    .line 34
     iget-object v0, p0, Lcom/google/android/material/animation/MatrixEvaluator;->tempStartValues:[F
 
     invoke-virtual {p2, v0}, Landroid/graphics/Matrix;->getValues([F)V
 
-    .line 33
+    .line 35
     iget-object p2, p0, Lcom/google/android/material/animation/MatrixEvaluator;->tempEndValues:[F
 
     invoke-virtual {p3, p2}, Landroid/graphics/Matrix;->getValues([F)V
@@ -76,7 +76,7 @@
 
     if-ge p2, p3, :cond_0
 
-    .line 35
+    .line 37
     iget-object p3, p0, Lcom/google/android/material/animation/MatrixEvaluator;->tempEndValues:[F
 
     aget v0, p3, p2
@@ -87,7 +87,7 @@
 
     sub-float/2addr v0, v2
 
-    .line 36
+    .line 38
     aget v1, v1, p2
 
     mul-float/2addr v0, p1
@@ -100,7 +100,7 @@
 
     goto :goto_0
 
-    .line 38
+    .line 40
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/animation/MatrixEvaluator;->tempMatrix:Landroid/graphics/Matrix;
 
@@ -108,7 +108,7 @@
 
     invoke-virtual {p1, p2}, Landroid/graphics/Matrix;->setValues([F)V
 
-    .line 39
+    .line 41
     iget-object p1, p0, Lcom/google/android/material/animation/MatrixEvaluator;->tempMatrix:Landroid/graphics/Matrix;
 
     return-object p1
@@ -117,7 +117,7 @@
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 25
+    .line 26
     check-cast p2, Landroid/graphics/Matrix;
 
     check-cast p3, Landroid/graphics/Matrix;

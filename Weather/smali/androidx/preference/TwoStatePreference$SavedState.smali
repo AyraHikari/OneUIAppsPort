@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -27,30 +27,29 @@
 
 
 # instance fields
-.field mChecked:Z
+.field public h:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 276
-    new-instance v0, Landroidx/preference/TwoStatePreference$SavedState$1;
+    new-instance v0, Landroidx/preference/TwoStatePreference$SavedState$a;
 
-    invoke-direct {v0}, Landroidx/preference/TwoStatePreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Landroidx/preference/TwoStatePreference$SavedState$a;-><init>()V
 
     sput-object v0, Landroidx/preference/TwoStatePreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 292
+    .line 1
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 293
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -65,15 +64,15 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Landroidx/preference/TwoStatePreference$SavedState;->mChecked:Z
+    iput-boolean v0, p0, Landroidx/preference/TwoStatePreference$SavedState;->h:Z
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcelable;)V
+.method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 297
+    .line 3
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -84,11 +83,11 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 302
-    invoke-super {p0, p1, p2}, Landroidx/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    .line 1
+    invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 303
-    iget-boolean p2, p0, Landroidx/preference/TwoStatePreference$SavedState;->mChecked:Z
+    .line 2
+    iget-boolean p2, p0, Landroidx/preference/TwoStatePreference$SavedState;->h:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

@@ -21,6 +21,14 @@
 # virtual methods
 .method public parse(Lorg/json/JSONObject;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const-string v0, "isKeyboardAttached"
 
@@ -56,6 +64,14 @@
 
 .method public run(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 28
     iget-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/command/source/KeyboardStateChangedCommand;->isKeyboardAttached:Z

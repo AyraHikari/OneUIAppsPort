@@ -3,12 +3,12 @@
 .source "TabLayout.java"
 
 # interfaces
-.implements Landroid/view/animation/Animation$AnimationListener;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/tabs/TabLayout$TabView;->showMainTabTouchBackground(I)V
+    value = Lcom/google/android/material/tabs/TabLayout$TabView;->addOnLayoutChangeListener(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,13 +20,17 @@
 # instance fields
 .field final synthetic this$1:Lcom/google/android/material/tabs/TabLayout$TabView;
 
+.field final synthetic val$view:Landroid/view/View;
+
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/tabs/TabLayout$TabView;)V
+.method constructor <init>(Lcom/google/android/material/tabs/TabLayout$TabView;Landroid/view/View;)V
     .locals 0
 
-    .line 2575
+    .line 3269
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$TabView$2;->this$1:Lcom/google/android/material/tabs/TabLayout$TabView;
+
+    iput-object p2, p0, Lcom/google/android/material/tabs/TabLayout$TabView$2;->val$view:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,59 +39,25 @@
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/view/animation/Animation;)V
-    .locals 4
+.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 0
 
-    .line 2586
-    new-instance p1, Landroid/view/animation/AnimationSet;
+    .line 3281
+    iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$TabView$2;->val$view:Landroid/view/View;
 
-    const/4 v0, 0x1
+    invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
 
-    invoke-direct {p1, v0}, Landroid/view/animation/AnimationSet;-><init>(Z)V
+    move-result p1
 
-    .line 2587
-    invoke-virtual {p1, v0}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
+    if-nez p1, :cond_0
 
-    .line 2589
-    new-instance v1, Landroid/view/animation/AlphaAnimation;
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    const/4 v3, 0x0
-
-    invoke-direct {v1, v2, v3}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
-
-    const-wide/16 v2, 0x190
-
-    .line 2590
-    invoke-virtual {v1, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
-
-    .line 2591
-    invoke-virtual {v1, v0}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
-
-    .line 2592
-    invoke-virtual {p1, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
-
-    .line 2594
+    .line 3282
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$TabView$2;->this$1:Lcom/google/android/material/tabs/TabLayout$TabView;
 
-    invoke-static {p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$500(Lcom/google/android/material/tabs/TabLayout$TabView;)Landroid/view/View;
+    iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout$TabView$2;->val$view:Landroid/view/View;
 
-    move-result-object p1
+    invoke-static {p1, p2}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$2500(Lcom/google/android/material/tabs/TabLayout$TabView;Landroid/view/View;)V
 
-    invoke-virtual {p1, v1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    return-void
-.end method
-
-.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/view/animation/Animation;)V
-    .locals 0
-
+    :cond_0
     return-void
 .end method

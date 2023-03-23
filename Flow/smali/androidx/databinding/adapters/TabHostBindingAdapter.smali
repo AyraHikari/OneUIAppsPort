@@ -53,19 +53,32 @@
 .end method
 
 .method public static setCurrentTabTag(Landroid/widget/TabHost;Ljava/lang/String;)V
-    .locals 1
+    .locals 2
 
-    .line 53
+    .line 51
     invoke-virtual {p0}, Landroid/widget/TabHost;->getCurrentTabTag()Ljava/lang/String;
 
     move-result-object v0
 
-    if-eq v0, p1, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 54
-    invoke-virtual {p0, p1}, Landroid/widget/TabHost;->setCurrentTabByTag(Ljava/lang/String;)V
+    .line 52
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
 
     :cond_0
+    if-nez v0, :cond_2
+
+    if-eqz p1, :cond_2
+
+    .line 54
+    :cond_1
+    invoke-virtual {p0, p1}, Landroid/widget/TabHost;->setCurrentTabByTag(Ljava/lang/String;)V
+
+    :cond_2
     return-void
 .end method
 

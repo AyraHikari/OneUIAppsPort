@@ -29,7 +29,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/google/api/client/http/HttpRequest;Lcom/google/api/client/http/LowLevelHttpResponse;)V
-    .locals 6
+    .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -84,86 +84,88 @@
     .line 127
     invoke-virtual {p2}, Lcom/google/api/client/http/LowLevelHttpResponse;->getReasonPhrase()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
     .line 128
-    iput-object v0, p0, Lcom/google/api/client/http/HttpResponse;->statusMessage:Ljava/lang/String;
+    iput-object v2, p0, Lcom/google/api/client/http/HttpResponse;->statusMessage:Ljava/lang/String;
 
     .line 129
-    sget-object v2, Lcom/google/api/client/http/HttpTransport;->LOGGER:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/api/client/http/HttpTransport;->LOGGER:Ljava/util/logging/Logger;
 
     .line 130
-    iget-boolean v3, p0, Lcom/google/api/client/http/HttpResponse;->loggingEnabled:Z
+    iget-boolean v4, p0, Lcom/google/api/client/http/HttpResponse;->loggingEnabled:Z
 
-    if-eqz v3, :cond_1
+    if-eqz v4, :cond_1
 
-    sget-object v3, Ljava/util/logging/Level;->CONFIG:Ljava/util/logging/Level;
+    sget-object v4, Ljava/util/logging/Level;->CONFIG:Ljava/util/logging/Level;
 
-    invoke-virtual {v2, v3}, Ljava/util/logging/Logger;->isLoggable(Ljava/util/logging/Level;)Z
+    invoke-virtual {v3, v4}, Ljava/util/logging/Logger;->isLoggable(Ljava/util/logging/Level;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_1
+    if-eqz v4, :cond_1
 
     const/4 v1, 0x1
 
     :cond_1
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
     if-eqz v1, :cond_4
 
     .line 133
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "-------------- RESPONSE --------------"
+    const-string v6, "-------------- RESPONSE --------------"
 
     .line 134
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v5, Lcom/google/api/client/util/StringUtils;->LINE_SEPARATOR:Ljava/lang/String;
+    move-result-object v6
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v7, Lcom/google/api/client/util/StringUtils;->LINE_SEPARATOR:Ljava/lang/String;
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 135
     invoke-virtual {p2}, Lcom/google/api/client/http/LowLevelHttpResponse;->getStatusLine()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v6
 
-    if-eqz v5, :cond_2
+    if-eqz v6, :cond_2
 
     .line 137
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
     .line 139
     :cond_2
-    iget v5, p0, Lcom/google/api/client/http/HttpResponse;->statusCode:I
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    if-eqz v2, :cond_3
 
-    if-eqz v0, :cond_3
-
-    const/16 v5, 0x20
+    const/16 v0, 0x20
 
     .line 141
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 144
     :cond_3
     :goto_0
     sget-object v0, Lcom/google/api/client/util/StringUtils;->LINE_SEPARATOR:Ljava/lang/String;
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
     :cond_4
-    move-object v4, v3
+    move-object v5, v4
 
     .line 148
     :goto_1
@@ -173,15 +175,15 @@
 
     if-eqz v1, :cond_5
 
-    move-object v5, v4
+    move-object v2, v5
 
     goto :goto_2
 
     :cond_5
-    move-object v5, v3
+    move-object v2, v4
 
     :goto_2
-    invoke-virtual {v0, p2, v5}, Lcom/google/api/client/http/HttpHeaders;->fromHttpResponse(Lcom/google/api/client/http/LowLevelHttpResponse;Ljava/lang/StringBuilder;)V
+    invoke-virtual {v0, p2, v2}, Lcom/google/api/client/http/HttpHeaders;->fromHttpResponse(Lcom/google/api/client/http/LowLevelHttpResponse;Ljava/lang/StringBuilder;)V
 
     .line 152
     invoke-virtual {p2}, Lcom/google/api/client/http/LowLevelHttpResponse;->getContentType()Ljava/lang/String;
@@ -209,21 +211,21 @@
 
     .line 157
     :cond_7
-    new-instance v3, Lcom/google/api/client/http/HttpMediaType;
+    new-instance v4, Lcom/google/api/client/http/HttpMediaType;
 
-    invoke-direct {v3, p2}, Lcom/google/api/client/http/HttpMediaType;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, p2}, Lcom/google/api/client/http/HttpMediaType;-><init>(Ljava/lang/String;)V
 
     :goto_3
-    iput-object v3, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
+    iput-object v4, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
 
     if-eqz v1, :cond_8
 
     .line 161
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {v2, p1}, Ljava/util/logging/Logger;->config(Ljava/lang/String;)V
+    invoke-virtual {v3, p1}, Ljava/util/logging/Logger;->config(Ljava/lang/String;)V
 
     :cond_8
     return-void

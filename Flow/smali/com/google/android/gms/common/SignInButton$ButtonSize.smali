@@ -1,5 +1,6 @@
 .class public interface abstract annotation Lcom/google/android/gms/common/SignInButton$ButtonSize;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

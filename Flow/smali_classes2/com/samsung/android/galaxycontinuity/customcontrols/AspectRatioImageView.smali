@@ -107,6 +107,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 70
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;)V
@@ -178,6 +186,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -189,6 +207,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyle"
+        }
+    .end annotation
 
     .line 78
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -493,9 +523,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v2, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView;->mResource:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -622,6 +656,16 @@
 
 .method protected onMeasure(II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "widthMeasureSpec",
+            "heightMeasureSpec"
+        }
+    .end annotation
 
     .line 182
     :try_start_0
@@ -738,6 +782,20 @@
 
 .method public setCornerRadiiDP(FFFF)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "leftTop",
+            "rightTop",
+            "leftBottom",
+            "rightBottom"
+        }
+    .end annotation
 
     .line 254
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView;->getResources()Landroid/content/res/Resources;
@@ -805,6 +863,14 @@
 
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bm"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -833,6 +899,14 @@
 
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -861,6 +935,14 @@
 
 .method public setImageResource(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 
     .line 164
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView;->mResource:I
@@ -889,6 +971,14 @@
 
 .method public setImageURI(Landroid/net/Uri;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
     .line 174
     invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;->setImageURI(Landroid/net/Uri;)V
@@ -905,6 +995,14 @@
 
 .method public setOval(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "oval"
+        }
+    .end annotation
 
     .line 274
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView;->isOval:Z
@@ -920,6 +1018,14 @@
 
 .method public setScaleType(Landroid/widget/ImageView$ScaleType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleType"
+        }
+    .end annotation
 
     .line 141
     invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V

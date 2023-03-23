@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$this$0"
+        }
+    .end annotation
 
-    .line 197
+    .line 198
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;->val$this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
@@ -41,8 +51,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
-    .line 200
+    .line 201
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
@@ -51,7 +69,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 202
+    .line 203
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;
 
@@ -63,7 +81,7 @@
 
     return-void
 
-    .line 205
+    .line 206
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;
 
@@ -77,7 +95,7 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 206
+    .line 207
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;
 
     iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
@@ -86,7 +104,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;->setDeleteMode(Z)V
 
-    .line 208
+    .line 209
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;
 
@@ -103,7 +121,7 @@
     :catch_0
     move-exception p1
 
-    .line 210
+    .line 211
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_2

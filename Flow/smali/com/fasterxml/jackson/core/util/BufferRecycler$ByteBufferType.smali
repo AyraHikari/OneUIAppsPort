@@ -40,7 +40,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 10
 
     .line 16
     new-instance v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
@@ -56,60 +56,54 @@
     sput-object v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->READ_IO_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
     .line 21
-    new-instance v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    new-instance v1, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
-    const-string v1, "WRITE_ENCODING_BUFFER"
+    const-string v4, "WRITE_ENCODING_BUFFER"
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    invoke-direct {v0, v1, v4, v3}, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v4, v5, v3}, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->WRITE_ENCODING_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    sput-object v1, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->WRITE_ENCODING_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
     .line 27
-    new-instance v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    new-instance v3, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
-    const-string v1, "WRITE_CONCAT_BUFFER"
+    const-string v4, "WRITE_CONCAT_BUFFER"
 
-    const/4 v3, 0x2
+    const/4 v6, 0x2
 
-    const/16 v5, 0x7d0
+    const/16 v7, 0x7d0
 
-    invoke-direct {v0, v1, v3, v5}, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v3, v4, v6, v7}, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->WRITE_CONCAT_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    sput-object v3, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->WRITE_CONCAT_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
     .line 35
-    new-instance v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    new-instance v4, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
-    const-string v1, "BASE64_CODEC_BUFFER"
+    const-string v8, "BASE64_CODEC_BUFFER"
 
-    const/4 v6, 0x3
+    const/4 v9, 0x3
 
-    invoke-direct {v0, v1, v6, v5}, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v4, v8, v9, v7}, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->BASE64_CODEC_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    sput-object v4, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->BASE64_CODEC_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    new-array v7, v7, [Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v5
+
+    aput-object v3, v7, v6
+
+    aput-object v4, v7, v9
 
     .line 15
-    sget-object v5, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->READ_IO_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->WRITE_ENCODING_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->WRITE_CONCAT_BUFFER:Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
-
-    aput-object v2, v1, v3
-
-    aput-object v0, v1, v6
-
-    sput-object v1, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->$VALUES:[Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
+    sput-object v7, Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;->$VALUES:[Lcom/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType;
 
     return-void
 .end method

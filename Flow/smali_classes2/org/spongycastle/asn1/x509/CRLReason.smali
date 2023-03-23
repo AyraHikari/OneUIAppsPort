@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 11
 
-    const-string v0, "unspecified"
+    const-string/jumbo v0, "unspecified"
 
     const-string v1, "keyCompromise"
 
@@ -65,13 +65,13 @@
 
     const-string v3, "affiliationChanged"
 
-    const-string v4, "superseded"
+    const-string/jumbo v4, "superseded"
 
     const-string v5, "cessationOfOperation"
 
     const-string v6, "certificateHold"
 
-    const-string v7, "unknown"
+    const-string/jumbo v7, "unknown"
 
     const-string v8, "removeFromCRL"
 
@@ -166,13 +166,11 @@
 
     invoke-virtual {v1, v0}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v2
 
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
     .line 146
-    sget-object v1, Lorg/spongycastle/asn1/x509/CRLReason;->table:Ljava/util/Hashtable;
-
     new-instance v2, Lorg/spongycastle/asn1/x509/CRLReason;
 
     invoke-direct {v2, p0}, Lorg/spongycastle/asn1/x509/CRLReason;-><init>(I)V
@@ -181,9 +179,7 @@
 
     .line 149
     :cond_0
-    sget-object p0, Lorg/spongycastle/asn1/x509/CRLReason;->table:Ljava/util/Hashtable;
-
-    invoke-virtual {p0, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -258,9 +254,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

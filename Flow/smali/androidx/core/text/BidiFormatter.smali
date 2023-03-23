@@ -63,53 +63,61 @@
 
     sput-object v0, Landroidx/core/text/BidiFormatter;->DEFAULT_TEXT_DIRECTION_HEURISTIC:Landroidx/core/text/TextDirectionHeuristicCompat;
 
-    const/16 v0, 0x200e
+    const/16 v1, 0x200e
 
     .line 115
-    invoke-static {v0}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
+    invoke-static {v1}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Landroidx/core/text/BidiFormatter;->LRM_STRING:Ljava/lang/String;
+    sput-object v1, Landroidx/core/text/BidiFormatter;->LRM_STRING:Ljava/lang/String;
 
-    const/16 v0, 0x200f
+    const/16 v1, 0x200f
 
     .line 120
-    invoke-static {v0}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
+    invoke-static {v1}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Landroidx/core/text/BidiFormatter;->RLM_STRING:Ljava/lang/String;
+    sput-object v1, Landroidx/core/text/BidiFormatter;->RLM_STRING:Ljava/lang/String;
 
     .line 217
-    new-instance v0, Landroidx/core/text/BidiFormatter;
-
-    sget-object v1, Landroidx/core/text/BidiFormatter;->DEFAULT_TEXT_DIRECTION_HEURISTIC:Landroidx/core/text/TextDirectionHeuristicCompat;
+    new-instance v1, Landroidx/core/text/BidiFormatter;
 
     const/4 v2, 0x0
 
     const/4 v3, 0x2
 
-    invoke-direct {v0, v2, v3, v1}, Landroidx/core/text/BidiFormatter;-><init>(ZILandroidx/core/text/TextDirectionHeuristicCompat;)V
+    invoke-direct {v1, v2, v3, v0}, Landroidx/core/text/BidiFormatter;-><init>(ZILandroidx/core/text/TextDirectionHeuristicCompat;)V
 
-    sput-object v0, Landroidx/core/text/BidiFormatter;->DEFAULT_LTR_INSTANCE:Landroidx/core/text/BidiFormatter;
+    sput-object v1, Landroidx/core/text/BidiFormatter;->DEFAULT_LTR_INSTANCE:Landroidx/core/text/BidiFormatter;
 
     .line 222
-    new-instance v0, Landroidx/core/text/BidiFormatter;
-
-    sget-object v1, Landroidx/core/text/BidiFormatter;->DEFAULT_TEXT_DIRECTION_HEURISTIC:Landroidx/core/text/TextDirectionHeuristicCompat;
+    new-instance v1, Landroidx/core/text/BidiFormatter;
 
     const/4 v2, 0x1
 
-    invoke-direct {v0, v2, v3, v1}, Landroidx/core/text/BidiFormatter;-><init>(ZILandroidx/core/text/TextDirectionHeuristicCompat;)V
+    invoke-direct {v1, v2, v3, v0}, Landroidx/core/text/BidiFormatter;-><init>(ZILandroidx/core/text/TextDirectionHeuristicCompat;)V
 
-    sput-object v0, Landroidx/core/text/BidiFormatter;->DEFAULT_RTL_INSTANCE:Landroidx/core/text/BidiFormatter;
+    sput-object v1, Landroidx/core/text/BidiFormatter;->DEFAULT_RTL_INSTANCE:Landroidx/core/text/BidiFormatter;
 
     return-void
 .end method
 
 .method constructor <init>(ZILandroidx/core/text/TextDirectionHeuristicCompat;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "isRtlContext",
+            "flags",
+            "heuristic"
+        }
+    .end annotation
 
     .line 262
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -128,6 +136,14 @@
 
 .method private static getEntryDir(Ljava/lang/CharSequence;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
 
     .line 558
     new-instance v0, Landroidx/core/text/BidiFormatter$DirectionalityEstimator;
@@ -145,6 +161,14 @@
 
 .method private static getExitDir(Ljava/lang/CharSequence;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
 
     .line 541
     new-instance v0, Landroidx/core/text/BidiFormatter$DirectionalityEstimator;
@@ -177,6 +201,14 @@
 
 .method public static getInstance(Ljava/util/Locale;)Landroidx/core/text/BidiFormatter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "locale"
+        }
+    .end annotation
 
     .line 254
     new-instance v0, Landroidx/core/text/BidiFormatter$Builder;
@@ -192,6 +224,14 @@
 
 .method public static getInstance(Z)Landroidx/core/text/BidiFormatter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rtlContext"
+        }
+    .end annotation
 
     .line 245
     new-instance v0, Landroidx/core/text/BidiFormatter$Builder;
@@ -207,6 +247,14 @@
 
 .method static isRtlLocale(Ljava/util/Locale;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "locale"
+        }
+    .end annotation
 
     .line 516
     invoke-static {p0}, Landroidx/core/text/TextUtilsCompat;->getLayoutDirectionFromLocale(Ljava/util/Locale;)I
@@ -228,6 +276,16 @@
 
 .method private markAfter(Ljava/lang/CharSequence;Landroidx/core/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "heuristic"
+        }
+    .end annotation
 
     .line 300
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -291,6 +349,16 @@
 
 .method private markBefore(Ljava/lang/CharSequence;Landroidx/core/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "heuristic"
+        }
+    .end annotation
 
     .line 328
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -377,6 +445,14 @@
 
 .method public isRtl(Ljava/lang/CharSequence;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
 
     .line 358
     iget-object v0, p0, Landroidx/core/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroidx/core/text/TextDirectionHeuristicCompat;
@@ -396,6 +472,14 @@
 
 .method public isRtl(Ljava/lang/String;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
 
     .line 347
     invoke-virtual {p0, p1}, Landroidx/core/text/BidiFormatter;->isRtl(Ljava/lang/CharSequence;)Z
@@ -416,6 +500,14 @@
 
 .method public unicodeWrap(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
 
     .line 506
     iget-object v0, p0, Landroidx/core/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroidx/core/text/TextDirectionHeuristicCompat;
@@ -431,6 +523,16 @@
 
 .method public unicodeWrap(Ljava/lang/CharSequence;Landroidx/core/text/TextDirectionHeuristicCompat;)Ljava/lang/CharSequence;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "heuristic"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -444,6 +546,18 @@
 
 .method public unicodeWrap(Ljava/lang/CharSequence;Landroidx/core/text/TextDirectionHeuristicCompat;Z)Ljava/lang/CharSequence;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "heuristic",
+            "isolate"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -479,7 +593,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 415
+    .line 416
     sget-object v1, Landroidx/core/text/TextDirectionHeuristicsCompat;->RTL:Landroidx/core/text/TextDirectionHeuristicCompat;
 
     goto :goto_0
@@ -487,6 +601,7 @@
     :cond_1
     sget-object v1, Landroidx/core/text/TextDirectionHeuristicsCompat;->LTR:Landroidx/core/text/TextDirectionHeuristicCompat;
 
+    .line 415
     :goto_0
     invoke-direct {p0, p1, v1}, Landroidx/core/text/BidiFormatter;->markBefore(Ljava/lang/CharSequence;Landroidx/core/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
 
@@ -532,7 +647,7 @@
 
     if-eqz p2, :cond_5
 
-    .line 426
+    .line 427
     sget-object p2, Landroidx/core/text/TextDirectionHeuristicsCompat;->RTL:Landroidx/core/text/TextDirectionHeuristicCompat;
 
     goto :goto_3
@@ -540,6 +655,7 @@
     :cond_5
     sget-object p2, Landroidx/core/text/TextDirectionHeuristicsCompat;->LTR:Landroidx/core/text/TextDirectionHeuristicCompat;
 
+    .line 426
     :goto_3
     invoke-direct {p0, p1, p2}, Landroidx/core/text/BidiFormatter;->markAfter(Ljava/lang/CharSequence;Landroidx/core/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
 
@@ -553,6 +669,16 @@
 
 .method public unicodeWrap(Ljava/lang/CharSequence;Z)Ljava/lang/CharSequence;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "isolate"
+        }
+    .end annotation
 
     .line 483
     iget-object v0, p0, Landroidx/core/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroidx/core/text/TextDirectionHeuristicCompat;
@@ -566,6 +692,14 @@
 
 .method public unicodeWrap(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
 
     .line 494
     iget-object v0, p0, Landroidx/core/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroidx/core/text/TextDirectionHeuristicCompat;
@@ -581,6 +715,16 @@
 
 .method public unicodeWrap(Ljava/lang/String;Landroidx/core/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "heuristic"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -594,6 +738,18 @@
 
 .method public unicodeWrap(Ljava/lang/String;Landroidx/core/text/TextDirectionHeuristicCompat;Z)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "heuristic",
+            "isolate"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -616,6 +772,16 @@
 
 .method public unicodeWrap(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "str",
+            "isolate"
+        }
+    .end annotation
 
     .line 469
     iget-object v0, p0, Landroidx/core/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroidx/core/text/TextDirectionHeuristicCompat;

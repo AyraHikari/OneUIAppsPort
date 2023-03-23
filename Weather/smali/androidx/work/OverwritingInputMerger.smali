@@ -1,5 +1,5 @@
 .class public final Landroidx/work/OverwritingInputMerger;
-.super Landroidx/work/InputMerger;
+.super Lj2/k;
 .source "OverwritingInputMerger.java"
 
 
@@ -7,15 +7,14 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 32
-    invoke-direct {p0}, Landroidx/work/InputMerger;-><init>()V
+    invoke-direct {p0}, Lj2/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public merge(Ljava/util/List;)Landroidx/work/Data;
+.method public b(Ljava/util/List;)Landroidx/work/b;
     .locals 3
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
@@ -30,23 +29,23 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Landroidx/work/Data;",
+            "Landroidx/work/b;",
             ">;)",
-            "Landroidx/work/Data;"
+            "Landroidx/work/b;"
         }
     .end annotation
 
-    .line 36
-    new-instance v0, Landroidx/work/Data$Builder;
+    .line 1
+    new-instance v0, Landroidx/work/b$a;
 
-    invoke-direct {v0}, Landroidx/work/Data$Builder;-><init>()V
+    invoke-direct {v0}, Landroidx/work/b$a;-><init>()V
 
-    .line 37
+    .line 2
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 39
+    .line 3
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -62,10 +61,10 @@
 
     move-result-object v2
 
-    check-cast v2, Landroidx/work/Data;
+    check-cast v2, Landroidx/work/b;
 
-    .line 40
-    invoke-virtual {v2}, Landroidx/work/Data;->getKeyValueMap()Ljava/util/Map;
+    .line 4
+    invoke-virtual {v2}, Landroidx/work/b;->i()Ljava/util/Map;
 
     move-result-object v2
 
@@ -73,12 +72,12 @@
 
     goto :goto_0
 
-    .line 43
+    .line 5
     :cond_0
-    invoke-virtual {v0, v1}, Landroidx/work/Data$Builder;->putAll(Ljava/util/Map;)Landroidx/work/Data$Builder;
+    invoke-virtual {v0, v1}, Landroidx/work/b$a;->c(Ljava/util/Map;)Landroidx/work/b$a;
 
-    .line 44
-    invoke-virtual {v0}, Landroidx/work/Data$Builder;->build()Landroidx/work/Data;
+    .line 6
+    invoke-virtual {v0}, Landroidx/work/b$a;->a()Landroidx/work/b;
 
     move-result-object p1
 

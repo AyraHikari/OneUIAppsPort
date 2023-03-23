@@ -15,6 +15,14 @@
 
 .method public static getBase64UTF8EncodedString([B)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytesarray"
+        }
+    .end annotation
 
     const-string v0, "UTF-8"
 

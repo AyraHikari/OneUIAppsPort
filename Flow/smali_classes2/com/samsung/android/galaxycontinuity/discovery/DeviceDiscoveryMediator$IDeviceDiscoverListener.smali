@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onDeviceFound(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 .end method

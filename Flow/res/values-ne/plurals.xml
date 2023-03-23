@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow मा बढीमा %d वटा कम्प्युटर वा ट्याबलेट दर्ता र व्यवस्थापन गर्नुहोस्।
-
-तपाईको फोनमा एक पटकमा बढीमा एउटा कम्प्युटर वा ट्याबलेट मात्र जोड्न मिल्छ। दर्ता गरिएका कम्प्युटर वा ट्याबलेट दुवै तपाईको फोनमा जोडिन खोज्दा तपाईले कुनै एउटा यन्त्र रोज्नुपर्ने हुन्छ।"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flow मा बढीमा %d कम्प्युटर वा ट्याबलेट दर्ता र व्यवस्थापन गर्नुहोस्।
-
-तपाईको फोनमा एक पटकमा बढीमा एउटा कम्प्युटर वा ट्याबलेट मात्र जोड्न मिल्छ। दर्ता गरिएका कम्प्युटर वा ट्याबलेट दुवै तपाईको फोनमा जोडिन खोज्दा तपाईले कुनै एउटा यन्त्र रोज्नुपर्ने हुन्छ।"</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d नयाँ सूचनाहरू</item>
+        <item quantity="one">%d नयाँ सूचना</item>
     </plurals>
 </resources>

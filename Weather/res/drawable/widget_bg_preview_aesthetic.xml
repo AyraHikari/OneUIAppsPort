@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/widget_background_radius" />
+            <gradient android:startColor="#ff6aaceb" android:endColor="#ff8abdff" android:angle="135.0" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/widget_background_radius" />
+            <solid android:color="@color/col_widget_preview_aesthetic_bg_dim" />
+        </shape>
+    </item>
+</layer-list>

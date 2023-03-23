@@ -60,6 +60,7 @@
     <string name="air_quality">Kualitas udara</string>
     <string name="air_quality_next_tts">Prakiraan kualitas udara harian yang akan datang</string>
     <string name="air_quality_previous_tts">Prakiraan kualitas udara harian lebih awal</string>
+    <string name="alert_title">Peringatan cuaca buruk</string>
     <string name="all_added_cities">Semua kota yang ditambahkan</string>
     <string name="allow">Izinkan</string>
     <string name="allow_permission_in_settings">Untuk menggunakan fitur ini, Anda harus memperbolehkan izin di Pengaturan.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Tindakan tidak didukung.</string>
     <string name="apply_daylight_saving_time">Gunakan waktu penyimpanan siang hari?</string>
     <string name="as_possible_after_verification">Laporan dikirim. Nama kota akan diubah secepatnya setelah verifikasi.</string>
+    <string name="auto_refresh_on_screen_description">Dapatkan info cuaca terbaru setiap jam secara otomatis. Saat ini aktif, Anda tidak dapat menyegarkan secara manual.</string>
+    <string name="auto_refresh_on_the_go">Segarkan otomatis saat bepergian</string>
+    <string name="auto_refresh_on_the_go_advanced">Lanjutan</string>
+    <string name="auto_refresh_on_the_go_description">Dapatkan pembaruan cuaca yang lebih sering saat Anda mengemudi, bersepeda, berlari, atau berjalan kaki. Saat ini aktif, Anda tidak dapat menyegarkan secara manual.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Dapatkan pembaruan cuaca yang lebih sering saat Anda mengemudi, bersepeda, berlari, atau berjalan kaki.</string>
     <string name="bottomsheet_action_expand_halfway">Luaskan setengah</string>
     <string name="btn_report">Lapor</string>
     <string name="button_finish">Selesai</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Ketuk dua kali untuk menampilkan informasi selengkapnya.</string>
     <string name="china">Tiongkok</string>
     <string name="cities_button">Kota</string>
+    <string name="city_added">Kota ditambahkan.</string>
     <string name="city_list_text">Kota</string>
     <string name="clear">Hapus</string>
     <string name="clear_text_end_icon_content_description">Menghapus teks</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Informasi lokasi perangkat Anda akan dikirimkan ke penyedia konten sehingga Anda bisa mendapatkan informasi cuaca lokal.</string>
     <string name="contents_error_msg">Layanan ini untuk sementara tidak tersedia. Silakan coba lagi nanti.</string>
     <string name="copy">Salin</string>
-    <string name="copy_toast_msg">Link disalin ke papan klip</string>
     <string name="correct_city_name">Perbaiki nama kota</string>
     <string name="couldnt_find_location">Tidak dapat menemukan lokasi</string>
     <string name="cover_screen_top_sync_dialog_text">Atur lokasi yang sama pada layar utama?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Item diletakkan ke posisi %d.</string>
     <string name="dragndroplist_drag_start">Mulai menyeret item pada posisi %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Item pada posisi %d tidak bisa diseret.</string>
+    <string name="drawer_tips">Tips %s</string>
     <string name="drawer_tips_message">Ketuk di sini untuk menambah, menghapus, dan mengatur ulang lokasi. Anda juga dapat menambahkan berbagai widget untuk menunjukkan lokasi berbeda pada Layar depan.</string>
     <string name="drawer_tips_message_1">Ketuk Kelola lokasi di bawah menu ini untuk menambahkan, menghapus, atau menyusun ulang lokasi.</string>
     <string name="drawer_tips_message_2">Anda dapat menambahkan lebih dari satu widget ke Layar depan untuk menampilkan lokasi yang berbeda secara bersamaan.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Lanjutan</string>
     <string name="exposed_dropdown_menu_content_description">Tampilkan menu dropdown</string>
     <string name="failed_to_send_report">Gagal mengirim laporan</string>
-    <string name="fallback_menu_item_copy_link">Salin link</string>
-    <string name="fallback_menu_item_open_in_browser">Buka di browser</string>
-    <string name="fallback_menu_item_share_link">Bagikan link</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Lokasi favorit</string>
     <string name="feel_like_pd_minus_temp">Terasa seperti -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Video prakiraan</string>
     <string name="format_km_per_hour">%s km/j</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Jum.</string>
     <string name="general">Umum</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Dapatkan konten personal berdasarkan cara Anda menggunakan ponsel.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Dapatkan konten personal berdasarkan cara Anda menggunakan tablet.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">dapatkan informasi cuaca, termasuk lokasi Anda saat ini, dari Cuaca</string>
     <string name="go_to_website">Buka situs web</string>
     <string name="goto_apps">Pembaruan baru tersedia. Instal sekarang?</string>
     <string name="goto_apps_later">Nanti</string>
     <string name="goto_apps_now">Sekarang</string>
     <string name="goto_apps_update_title">Isyarat konten baru</string>
     <string name="header_tts">Header</string>
+    <string name="heavy">Berat</string>
     <string name="heavy_rain">Hujan lebat</string>
     <string name="heavy_rain_followed_by_intense_heat">Hujan lebat lalu panas terik</string>
     <string name="heavy_rain_followed_by_light_rain">Hujan lebat lalu panas terik</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Visibilitas</string>
     <string name="life_index_wind">Angin</string>
     <string name="life_index_wind_force">Kecepatan angin</string>
+    <string name="light">Ringan</string>
     <string name="light_rain_followed_by_heavy_rain">Hujan kecil lalu hujan lebat</string>
     <string name="light_rain_with_some_heavy_rain">Hujan kecil dengan hujan lebat</string>
     <string name="link_tts">Tautan</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Tidak ditemukan hasil.</string>
     <string name="message_service_not_available">Layanan tidak tersedia sekarang.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Sen.</string>
     <string name="more">Lagi</string>
     <string name="more_cuntact_us">Hubungi kami</string>
     <string name="more_information">Lainnya</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Ketuk di sini untuk mengubah lokasi cuaca default dan mengelola semua lokasi Anda.</string>
     <string name="new_version_available">Versi baru %s tersedia.</string>
     <string name="new_version_is_available">Versi baru tersedia.</string>
+    <string name="news_menu_show_news">Tampilkan berita</string>
+    <string name="news_opt_in_banner_title_text">Dapatkan berita terkini dengan menampilkan berita di widget Cuaca.</string>
+    <string name="news_opt_in_popup_desc_text">Ikuti perkembangan dunia dengan menampilkan berita utama terbaru dari %s di widget Cuaca.</string>
+    <string name="news_opt_in_popup_title_text">Lihat berita dan cuaca dalam satu widget</string>
+    <string name="news_request_agree_text">Ketuk untuk mendapatkan berita dari %s</string>
+    <string name="news_widget_bubble_text">Dapatkan berita dan info cuaca.</string>
+    <string name="news_widget_dummy_title">Berita teratas hari ini</string>
+    <string name="news_widget_new_dummy_title">5 hal yang perlu Anda ketahui pagi ini</string>
+    <string name="news_widget_oobe_text">Ktuk di sini utk tmbah berita.</string>
     <string name="next">Kota sesudahnya</string>
+    <string name="next_btn">Berikutnya</string>
     <string name="next_city">Ketuk dua kali untuk melihat informasi cuaca kota berikutnya.</string>
     <string name="night_tts">Malam</string>
     <string name="no_application_available">Tidak tersedia aplikasi.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Tak ada informasi cuaca</string>
     <string name="not_in_use">Tidak digunakan</string>
     <string name="not_now">Tidak sekarang</string>
+    <string name="not_now_btn">Jangan sekarang</string>
     <string name="not_selected">Tidak dipilih</string>
     <string name="not_set">Belum disetel</string>
     <string name="nothing_selected">Tidak ada yang dipilih.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Untuk deteksi lokasi yang paling cepat dan akurat, ketuk PENGATURAN, lalu atur Metode pencarian ke GPS, Wi-Fi, dan jaringan seluler.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Untuk deteksi lokasi yang paling cepat dan akurat, ketuk PENGATURAN, lalu atur Metode pencarian ke GPS dan Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Untuk melihat informasi cuaca lokal, hidupkan pengaturan Lokasi dan pastikan modenya diatur ke Akurasi tinggi.</string>
+    <string name="notification_alert_channel_name">Peringatan cuaca buruk</string>
     <string name="notification_apps_update_channel_name">Notifikasi pembaruan</string>
     <string name="notification_auto_refresh_channel_name">Segarkan otomatis cuaca</string>
     <string name="notification_dex_channel_name">Cuaca di Samsung DeX</string>
@@ -535,7 +556,7 @@
     <string name="notification_touch_widget_popup_content_for_one_hour_interval">Informasi cuaca diperbarui secara otomatis setiap jam. Ini dapat dikenakan biaya tambahan. Anda dapat mengubah interval penyegaran di pengaturan widget cuaca.</string>
     <string name="notification_updating">Memperbarui…</string>
     <string name="notifications">Notifikasi</string>
-    <string name="off_text">Tdk aktif</string>
+    <string name="off_text">Nonaktif</string>
     <string name="on_text">Aktif</string>
     <string name="only_support_in">Layanan ini hanya didukung di %s.</string>
     <string name="oobe_eula_description_permission_info">Lokasi: Digunakan untuk mencari informasi cuaca di lokasi saat ini.</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Buka aplikasi</string>
     <string name="open_source_licences">Lisensi sumber terbuka</string>
     <string name="other_locations">Lokasi lain</string>
+    <string name="partly_sunny">Sebagian cerah</string>
     <string name="password_toggle_content_description">Tampilkan sandi</string>
     <string name="paused">Dijeda</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">\"%1$s\" disalin ke papan klip.</string>
     <string name="preview">Pratinjau %s</string>
     <string name="previous">Kota sebelumnya</string>
+    <string name="previous_btn">Sebelumnya</string>
     <string name="previous_city">Ketuk dua kali untuk melihat informasi cuaca kota sebelumnya.</string>
     <string name="privacy_policy">Kebijakan Privasi</string>
     <string name="probability_of_rain_text">Peluang hujan</string>
     <string name="protect_your_content">Lindungi konten Anda</string>
+    <string name="ps_in">%s inci</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar dan peta</string>
     <string name="rain">Hujan</string>
     <string name="rain_followed_by_intense_heat">Hujan diikuti lalu panas terik</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Untuk memperbarui informasi cuaca, ketuk PENGATURAN, buka Info aplikasi > Izin, lalu perbolehkan izin berikut dan coba lagi:</string>
     <string name="runtime_location_permission_title">Perbolehkan izin</string>
     <string name="runtime_oem_grant_permission_desc">Aplikasi %s diizinkan untuk mengakses hal berikut ini:</string>
+    <string name="sat">Sab.</string>
     <string name="save_button">Simpan</string>
     <string name="search_menu_title">Telusuri</string>
     <string name="search_most_searched_for">Paling banyak dicari</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Konten baru tersedia</string>
     <string name="sesl_material_overflow_badge_text_n">B</string>
     <string name="sesl_more_item_label">Lainnya</string>
+    <string name="sesl_preferecne_badge_description">Notifikasi baru</string>
     <string name="sesl_preferencecategory_added_title">Header</string>
     <string name="sesl_search_hint">Cari</string>
     <string name="sesl_searchview_description_clear">Hapus bidang pencarian</string>
@@ -639,7 +666,7 @@
     <string name="sesl_searchview_description_voice">Pencarian dengan suara</string>
     <string name="sesl_switch_off">Nonaktif</string>
     <string name="sesl_switch_on">Aktif</string>
-    <string name="sesl_switchbar_off_text">Tdk aktif</string>
+    <string name="sesl_switchbar_off_text">Nonaktif</string>
     <string name="sesl_switchbar_on_text">Aktif</string>
     <string name="sesl_toolbar_collapse_description">Ciutkan</string>
     <string name="set_default_location">Atur lokasi default</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Lihat lebih sedikit</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Nonaktif</string>
+    <string name="status_on">Aktif</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Mgu.</string>
     <string name="sunny">Cerah</string>
     <string name="sunny_with_some_clouds">Cerah sedikit berawan</string>
     <string name="sunny_with_some_heavy_rain">Cerah dengan sedikit hujan lebat</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Ketuk di sini untuk memulihkan data cuaca dari perangkat lama.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Ketuk COBA LAGI untuk mencari ulang lokasi Anda.</string>
     <string name="tap_setting_message_edge_panel">Aktifkan Lokasi untuk mendapatkan info cuaca setempat.</string>
+    <string name="tap_the_settings_icon">Ketuk ikon pengaturan.</string>
     <string name="tap_to_get_the_weather">Ketuk untuk mendapatkan cuaca</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Syarat dan Ketentuan</string>
     <string name="the_latest_version">Versi terbaru telah terinstal.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Ini juga akan diterapkan untuk pemberitahuan dan Kalender.</string>
+    <string name="thu">Kam.</string>
     <string name="tick_box_tts">Kotak centang</string>
     <string name="ticked_tts">Dicentang</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Tiap jam</string>
     <string name="title_select_locations">Pilih lokasi</string>
     <string name="title_theme">Tema</string>
+    <string name="to_continue_agree_to_updated">Untuk melanjutkan, setujui %s terbaru kami.</string>
     <string name="to_get_local_weather_chn">"Untuk mendapatkan cuaca setempat, lokasi Anda saat ini akan dikirimkan ke penyedia layanan cuaca. (Lihatlah %1$sSyarat dan Ketentuan%2$s dan %3$sKebijakan Privasi penyedia layanan%4$s.)
 Aplikasi dan layanan lain pada perangkat Anda dapat mengakses data cuaca yang dimuat untuk menunjukkan cuaca pada aplikasi tersebut.
 Untuk memberi Anda informasi cuaca secara berkelanjutan, Cuaca akan perlu mengakses lokasi Anda, sekalipun saat aplikasi tidak digunakan."</string>
-    <string name="today">Hr ini</string>
+    <string name="today">Hari ini</string>
+    <string name="try_it_out_btn">Cobalah</string>
+    <string name="tue">Sel.</string>
+    <string name="turn_on_to_use_precise_location">Untuk menggunakan fitur ini, Anda harus mengizinkan %s mengakses lokasi Anda sepanjang waktu dan mengaktifkan Gunakan lokasi presisi. Ketuk Pengaturan, lalu buka Izin > Lokasi.</string>
     <string name="tw_title_weather_broadcast">Siaran</string>
-    <string name="unable_to_check_for_updates">Tidak dapat memeriksa pembaruan. Tidak ada koneksi jaringan.</string>
+    <string name="unable_to_check_for_updates">Tidak dapat memeriksa pembaruan. Coba lagi nanti.</string>
     <string name="unable_to_receive_info_msg">Tidak dapat menerima info</string>
     <string name="unticked_tts">Hapus centang</string>
     <string name="unused">Tidak digunakan</string>
     <string name="update">Prbrui</string>
-    <string name="update_abb8">Pembaruan</string>
+    <string name="update_abb8">Perbarui</string>
     <string name="update_app">Perbarui aplikasi</string>
+    <string name="updated_tile_chn">Diupdate: %s</string>
     <string name="updated_tts">%s diperbarui</string>
+    <string name="use_current_location">Gunakan lokasi saat ini</string>
     <string name="use_current_location_agree_popup">"Untuk mendapatkan cuaca lokal, lokasi Anda saat ini akan dikirim ke penyedia layanan cuaca. (Harap lihat %1$skebijakan privasi%2$s penyedia.)
 Aplikasi dan layanan lain pada perangkat Anda dapat mengakses data cuaca yang diambil untuk menampilkan cuaca di aplikasi tersebut."</string>
     <string name="use_current_location_and_background_agree_popup">"Untuk mendapatkan cuaca setempat, lokasi Anda saat ini akan dikirimkan ke penyedia layanan cuaca. (Lihatlah kebijakan %1$sprivasi penyedia layanan%2$s.)
@@ -746,9 +784,16 @@ Untuk memberi Anda informasi cuaca secara berkelanjutan, Cuaca akan perlu mengak
 Anda dapat menonaktifkan lokasi Anda dengan membuka pengaturan aplikasi Cuaca."</string>
     <string name="use_current_location_body_msg_chn">"Baca secara saksama sebelum menggunakan “Cuaca” :
 Jika Anda ingin mengetahui cuaca di lokasi saat ini, Anda perlu mengizinkan penyedia layanan pihak ketiga untuk memiliki akses berkelanjutan (meskipun ketika Anda tidak menggunakan layanan) ke perangkat Anda dan memperoleh data tertentu, sebagaimana tercantum di bawah. Baca secara saksama dan pahami %1$sSyarat dan Ketentuan%2$s serta %3$sKebijakan Privasi%4$s penyedia layanan pihak ketiga sebelum memberikan izin tersebut. Anda dapat menarik izin dengan mematikan “Lokasi” di menu Pengaturan. Aplikasi dan layanan lain pada perangkat Anda dapat mengakses data cuaca yang diambil untuk menampilkan cuaca di aplikasi dan layanan tersebut."</string>
+    <string name="use_current_location_body_msg_kor">"Lokasi Anda saat ini akan dikumpulkan dan digunakan untuk menyediakan beberapa fitur aplikasi Cuaca, seperti mendapatkan cuaca lokal Anda.
+
+Agar dapat memberikan info cuaca secara terus menerus, aplikasi ini akan secara rutin memproses lokasi Anda, meskipun Anda sedang tidak menggunakan aplikasi ini. Dengan melanjutkan, Anda menyetujui pengumpulan dan pemrosesan lokasi Anda untuk tujuan di atas.
+
+Anda dapat menghentikan pengumpulan dan penggunaan lokasi ini di pengaturan aplikasi Cuaca."</string>
     <string name="use_current_location_body_purpose">Tujuan</string>
     <string name="use_current_location_body_purpose_content">Untuk menyediakan informasi cuaca di lokasi saat ini</string>
     <string name="use_current_location_body_search_provider">Penyedia Layanan</string>
+    <string name="use_current_location_continue">Lanjutkan</string>
+    <string name="use_current_location_not_now">Jangan sekarang</string>
     <string name="use_current_location_off_alert_popup">Informasi lokasi saat ini akan dihapus.</string>
     <string name="useful_informations">Kiat tentang kehidupan dan laporan lainnya</string>
     <string name="using_as">Menggunakan sebagai %s</string>
@@ -856,9 +901,11 @@ Jika Anda ingin mengetahui cuaca di lokasi saat ini, Anda perlu mengizinkan peny
     <string name="weather_tip">Kiat cuaca</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Rab.</string>
     <string name="weekly_forecast">Harian</string>
     <string name="widget_background">Latar widget</string>
     <string name="widget_empty_text">Ketuk untuk info cuaca</string>
+    <string name="widget_location">Nama kota</string>
     <string name="widget_name_4x1">Cuaca dan Jam</string>
     <string name="widget_setting">Pengaturan</string>
     <string name="widget_setting_background_color">Warna latar belakang</string>

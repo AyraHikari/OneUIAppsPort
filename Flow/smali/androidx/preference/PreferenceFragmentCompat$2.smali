@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/preference/PreferenceFragmentCompat;)V
     .locals 0
 
-    .line 211
+    .line 166
     iput-object p1, p0, Landroidx/preference/PreferenceFragmentCompat$2;->this$0:Landroidx/preference/PreferenceFragmentCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 214
+    .line 169
     iget-object v0, p0, Landroidx/preference/PreferenceFragmentCompat$2;->this$0:Landroidx/preference/PreferenceFragmentCompat;
 
     iget-object v0, v0, Landroidx/preference/PreferenceFragmentCompat;->mList:Landroidx/recyclerview/widget/RecyclerView;

@@ -27,13 +27,13 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 705
+    .line 843
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 706
+    .line 844
     iput p1, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingTop:I
 
-    .line 707
+    .line 845
     iput p2, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingBottom:I
 
     return-void
@@ -44,7 +44,7 @@
 .method public getPaddingBottom()I
     .locals 1
 
-    .line 715
+    .line 853
     iget v0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingBottom:I
 
     return v0
@@ -53,7 +53,7 @@
 .method public getPaddingTop()I
     .locals 1
 
-    .line 711
+    .line 849
     iget v0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingTop:I
 
     return v0

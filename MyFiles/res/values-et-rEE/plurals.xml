@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Ei saa valida üle %d üksuse.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ei saa valida üle %d üksuse.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d faili ei saa prügikasti teisaldada</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili ei saa prügikasti teisaldada</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d kausta ei saa prügikasti teisaldada</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta ei saa prügikasti teisaldada</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d üksust ei saa prügikasti teisaldada</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksust ei saa prügikasti teisaldada</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Valitud failidest kustutatakse %d, kuna need asuvad pilves või USB-mäluseadmes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Valitud failidest kustutatakse %d, kuna see asub pilves või USB-mäluseadmes.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Valitud kaustadest kustutatakse %d, kuna need asuvad pilves või USB-mäluseadmes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Valitud kaustadest kustutatakse %d, kuna see asub pilves või USB-mäluseadmes.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Valitud üksustest kustutatakse %d, kuna need asuvad pilves või USB-mäluseadmes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Valitud üksustest kustutatakse %d, kuna see asub pilves või USB-mäluseadmes.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d faili tihendamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili tihendamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d faili tihendamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili tihendamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d kausta tihendamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta tihendamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d kausta tihendamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta tihendamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d üksuse tihendamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse tihendamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d üksuse tihendamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse tihendamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d faili kopeerimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili kopeerimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d faili kopeerimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili kopeerimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d kausta kopeerimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta kopeerimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d kausta kopeerimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta kopeerimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d üksuse kopeerimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse kopeerimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d üksuse kopeerimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse kopeerimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Kas kustutada %d faili teie telefonist?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada %d fail teie telefonist?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Kas kustutada %d faili tahvelseadmest?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada %d fail tahvelseadmest?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Kas kustutada %d kausta teie telefonist?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada %d kaust teie telefonist?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Kas kustutada %d kausta tahvelseadmest?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada %d kaust tahvelseadmest?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Kas kustutada %d üksust teie telefonist?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada %d üksus teie telefonist?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Kas kustutada %d üksust tahvelseadmest?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada %d üksus tahvelseadmest?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d faili kustutamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili kustutamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d kausta kustutamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta kustutamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d üksuse kustutam. prügist…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse kustutam. pürgist…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d üksuse kustutamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse kustutamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d faili ekstraktimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili ekstraktimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d kausta ekstraktimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta ekstraktimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d üksuse ekstraktimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse ekstraktimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">Lisaks teisaldatakse %1$d faili prügikasti asukohas %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lisaks teisaldatakse %1$d fail prügikasti asukohas %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d faili taastamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili taastamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">Lisaks teisaldatakse %1$d kausta prügikasti asukohas %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lisaks teisaldatakse %1$d kaust prügikasti asukohas %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d kausta taastamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta taastamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Sisemälu on täis. Kas kustutada jäädavalt %d faili?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisemälu on täis. Kas kustutada jäädavalt %d fail?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Sisemälu on täis. Kas kustutada jäädavalt %d kausta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisemälu on täis. Kas kustutada jäädavalt %d kaust?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Sisemälu on täis. Kas kustutada jäädavalt %d üksust?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisemälu on täis. Kas kustutada jäädavalt %d üksus?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Teie sisemälu ja SD-kaart on täis. Kas kustutada jäädavalt %d faili?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie sisemälu ja SD-kaart on täis. Kas kustutada jäädavalt %d fail?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Teie sisemälu ja SD-kaart on täis. Kas kustutada jäädavalt %d kausta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie sisemälu ja SD-kaart on täis. Kas kustutada jäädavalt %d kaust?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Teie sisemälu ja SD-kaart on täis. Kas kustutada jäädavalt %d üksust?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie sisemälu ja SD-kaart on täis. Kas kustutada jäädavalt %d üksus?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d üksuse taastamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse taastamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">Lisaks teisaldatakse %1$d üksust prügikasti asukohas %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lisaks teisaldatakse %1$d üksus prügikasti asukohas %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Ei saa avada üle %d rakenduse akna.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ei saa avada üle %d rakenduse akna.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Kas teisaldada %d faili prügikasti?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas teisaldada %d fail prügikasti?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Kas teisaldada %d faili prügikasti?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas teisaldada %d fail prügikasti?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Kas teisaldada %d kausta prügikasti?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas teisaldada %d kaust prügikasti?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Kas teisaldada %d kausta prügikasti?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas teisaldada %d kaust prügikasti?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Kas teisaldada %d üksust prügikasti?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas teisaldada %d üksus prügikasti?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Kas teisaldada %d üksust prügikasti?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas teisaldada %d üksus prügikasti?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d faili teisaldamine prügikasti…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili teisaldamine prügikasti…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d kausta teisaldamine prügikasti…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta teisaldamine prügikasti…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d üksuse teisaldamine prügikasti…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse teisaldamine prügikasti…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d faili teisaldamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili teisaldamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d faili teisaldamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili teisaldamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d kausta teisaldamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta teisaldamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d kausta teisaldamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta teisaldamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d üksuse teisaldamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse teisaldamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d üksuse teisaldamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse teisaldamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">Tihendati %d üksust</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tihendati %d üksus</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d üksust kopeeriti kohta %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d üksus kopeeriti kohta %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Kas kustutada kaust ja selles olevad %d faili?</item>
+        <item quantity="one">Kas kustutada kaust ja selles olev fail?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Kas kustutada %1$d kausta ja neis olevad %2$d faili?</item>
+        <item quantity="one">Kas kustutada kaust ja selles olev fail?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">Kustutati %d üksust</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kustutati %d üksus</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d faili allalaadimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili allalaadimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d kausta allalaadimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta allalaadimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d üksuse allalaadimine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse allalaadimine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Ei saa jagada kaustasid. Kaustad on tühjad.</item>
+        <item quantity="one">Ei saa jagada kausta. Kaust on tühi.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d faili kustutatakse jäädavalt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fail kustutatakse jäädavalt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d kausta kustutatakse jäädavalt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kaust kustutatakse jäädavalt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">Ekstraktiti %d üksust</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ekstraktiti %d üksus</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d faili lisati lemmikutesse.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fail lisati lemmikutesse.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d faili eemaldati lemmikutest.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fail eemaldati lemmikutest.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d kausta lisati lemmikutesse.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kaust lisati lemmikutesse.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d kausta eemaldati lemmikutest.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kaust eemaldati lemmikutest.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d üksust lisati lemmikutesse.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksus lisati lemmikutesse.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d üksust eemaldati lemmikutest.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksus eemaldati lemmikutest.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d üksust</item>
+        <item quantity="one">1 üksus</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d üksust</item>
+        <item quantity="one">%d üksus</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d üksust kopeeriti lõikelauale</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksus kopeeriti lõikelauale</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d üksust teisaldati lõikelauale</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksus teisaldati lõikelauale</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d valitud üksust</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d valitud üksus</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d üksust teisaldati kohta %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d üksus teisaldati kohta %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d üksust teisaldati prügikasti</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksus teisaldati prügikasti</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d on valitud</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d on valitud</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Teie SD-kaart on täis. Kas kustutada jäädavalt %d faili?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie SD-kaart on täis. Kas kustutada jäädavalt %d fail?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Teie SD-kaart on täis. Kas kustutada jäädavalt %d kausta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie SD-kaart on täis. Kas kustutada jäädavalt %d kaust?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Teie SD-kaart on täis. Kas kustutada jäädavalt %d üksust?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie SD-kaart on täis. Kas kustutada jäädavalt %d üksus?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">See fail kustutatakse %d päeva pärast.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">See fail kustutatakse %d päeva pärast.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">See kaust kustutatakse %d päeva pärast.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">See kaust kustutatakse %d päeva pärast.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Kas kustutada jäädavalt %d faili?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada jäädavalt %d fail?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d faili kustutamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili kustutamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d faili taastamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faili taastamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Kas kustutada jäädavalt %d kausta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada jäädavalt %d kaust?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d kausta kustutamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta kustutamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d kausta taastamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kausta taastamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Kas kustutada jäädavalt %d üksust?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas kustutada jäädavalt %d üksus?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d üksuse kustutamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse kustutamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d üksuse taastamine…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d üksuse taastamine…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Kustutatakse %d päeva pärast</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kustutatakse %d päeva pärast</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Kas desinstallida %d rakendust?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kas desinstallida %d rakendus?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

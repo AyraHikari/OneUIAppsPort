@@ -33,6 +33,7 @@
     <string name="air_quality">Абанын сапаты</string>
     <string name="air_quality_next_tts">Кеч күнүмдүк аба сапатынын прогнозу</string>
     <string name="air_quality_previous_tts">Эрте күнүмдүк аба сапатынын прогнозу</string>
+    <string name="alert_title">Аба ырайы тууралуу катаал эскертүү</string>
     <string name="all_added_cities">Бардык кошулган шаарлар</string>
     <string name="allow">Уруксат бер</string>
     <string name="allow_permission_in_settings">Бул өзгөчөлүктү колдонууга, Орнотуулардан уруксат бериңиз.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Аракет колдоого алынбайт</string>
     <string name="apply_daylight_saving_time">Жайкы мезгилди пайдалануубу?</string>
     <string name="as_possible_after_verification">Отчет жөнөтүлдү. Ырастоодон кийин, шаардын аталышы тез арада өзгөртүлөт.</string>
+    <string name="auto_refresh_on_screen_description">Саат сайын жаңыланган аба ырайы маалыматын автоматтык түрдө алыңыз. Бул күйгүзүлгөндө, сиз кол менен жаңылай албайсыз.</string>
+    <string name="auto_refresh_on_the_go">Жолдо автоматтык жаңылоо</string>
+    <string name="auto_refresh_on_the_go_advanced">Өнүктүрүлгөн</string>
+    <string name="auto_refresh_on_the_go_description">Айдоодо, велосипед тээп баратканда, чуркоодо же жөө басууда аба ырайын тез-тез жаңыртып туруңуз. Бул күйгүзүлгөндө, сиз кол менен жаңырта албайсыз.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Айдоо, велосипед тебүү, чуркоо же жөө басуу учурунда аба ырайынын жаңыртууларын тез-тез алып туруңуз.</string>
     <string name="btn_report">Отчет</string>
     <string name="button_finish">Бүтүр</string>
     <string name="button_tts">Баскыч</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Дагы маалымат үчүн, эки жолу басыңыз.</string>
     <string name="china">Кытай</string>
     <string name="cities_button">Шаарлар</string>
+    <string name="city_added">Шаар кошулду.</string>
     <string name="city_list_text">Шаарлар</string>
     <string name="clear">Ачык</string>
     <string name="clear_then_cloudy">Ачык анан булуттуу</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Нерсе %d турагына ташталды.</string>
     <string name="dragndroplist_drag_start">Нерсе сүйрөөнү %d турагынан баштоо.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d туракты алган нерсени сүйрөөгө болбойт.</string>
+    <string name="drawer_tips">%s пайдалуу кеңештери</string>
     <string name="drawer_tips_message">Жайгашууларды кошуу, өчүрүү жана кайра иреттөө үчүн бул жерди басыңыз. Башкы экранда ар түрдүү жайгашууларды көрсөтүү үчүн бир нече виджеттерди кошо аласыз.</string>
     <string name="drawer_tips_message_1">Жайгашууларды кошуу, өчүрүү жана кайра иреттөө үчүн, ушул менюнун ылдыйындагы Жайгашууларды башкарууну басыңыз.</string>
     <string name="drawer_tips_message_2">Ар түрдүү жайгашууларды бир убакытта көрсөтүү үчүн, Башкы экранга бирден ашуун виджет кошо аласыз.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Маалымат видеосу</string>
     <string name="format_km_per_hour">%s км/с</string>
     <string name="format_m_per_hour">%s ми/с</string>
+    <string name="fri">Жм.</string>
     <string name="general">Жалпы</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Телефонду колдонууңуздун негизинде жекелештирилген мазмунду алып туруңуз.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Планшетти колдонууңуздун негизинде жекелештирилген мазмун алып туруңуз.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">Аба ырайынан аба ырайы маалыматын, анын ичинде учурдагы жайгашууңузду алыңыз</string>
     <string name="go_to_website">Вебсайтка баруу</string>
     <string name="goto_apps">Жаңы жаңыртуу байкалат. Азыр орнотуубу?</string>
     <string name="goto_apps_later">Кийин</string>
     <string name="goto_apps_now">Азыр</string>
     <string name="goto_apps_update_title">Жаңы мазмун сигналдары</string>
     <string name="header_tts">Баш аты</string>
+    <string name="heavy">Оор</string>
     <string name="heavy_rain">Нөшөр</string>
     <string name="heavy_rain_followed_by_intense_heat">Катуу жаан артынан катуу ысык</string>
     <string name="heavy_rain_followed_by_light_rain">Катуу жаан артынан катуу ысык</string>
@@ -193,7 +204,7 @@
     <string name="heavy_rain_with_some_snow">Катуу жаан жана бир аз кар</string>
     <string name="heavy_rain_with_sunny_intervals">Катуу жаан жана күн пайда болуп, жоголуп турат</string>
     <string name="help">Жардам</string>
-    <string name="help_favorite_location_msg">Сиздин сүйүктүү жайгашууңуз эскертүүлөр, Календарь, Always On Display жана башка туташтырылган кызматтарда аба-ырайы маалыматтарын камсыз кылууга колдонулат. Сиз сүйүктүү жайгашууңузду жайгашуулар тизмеңизден өзгөртө аласыз.</string>
+    <string name="help_favorite_location_msg">Сиздин сүйүктүү жайгашууңуз эскертүүлөр, Календарь, Always On Display жана башка туташтырылган кызматтарда аба-ырайы маалыматын камсыз кылууга колдонулат. Сиз сүйүктүү жайгашууңузду жайгашуулар тизмеңизден өзгөртө аласыз.</string>
     <string name="help_favorite_location_without_aod_and_calendar_msg">Сүйүктүү жайгашууңуз эскертүүлөрдө аба ырайы маалыматын көрсөтүү үчүн колдонулат. Сүйүктүү жайгашууңузду жайгашуулар тизмесинен өзгөртө аласыз.</string>
     <string name="help_favorite_location_without_aod_msg">Сүйүктүү жайгашууңуз эскертүүлөр, Календарь жана башка туташтырылган кызматтарда аба-ырайы маалыматын камсыз кылууга колдонулат. Сүйүктүү жайгашууңузду жайгашуулар тизмесинен өзгөртө аласыз.</string>
     <string name="high_accuracy">GPS, Wi-Fi, жана мобилдик тармактар</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Көрүнүктүүлүгү</string>
     <string name="life_index_wind">Wind</string>
     <string name="life_index_wind_force">Шамал ылдамдыгы</string>
+    <string name="light">Жеңил</string>
     <string name="light_rain_followed_by_heavy_rain">Жамгыр артынан катуу жаан</string>
     <string name="light_rain_with_some_heavy_rain">Жамгыр жана катуу жаан</string>
     <string name="link_tts">Шилтеме</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Натыйжалар табылбады.</string>
     <string name="message_service_not_available">Кызмат азыр иштебей эле</string>
     <string name="minus_tts">Минус</string>
+    <string name="mon">Дш.</string>
     <string name="more">Дагы</string>
     <string name="more_cuntact_us">Биз менен байланышыңыз</string>
     <string name="more_information">Көбүрөөк</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Бул жерди басып, баштапкы аба-ырайы жайгашуусун өзгөртүп, бардык жайгашаууларыңызды башкарыңыз.</string>
     <string name="new_version_available">"%s'тун жаңы нускасы байкалат."</string>
     <string name="new_version_is_available">Жаңы версия байкалат</string>
+    <string name="news_menu_show_news">Жаңылыктарды көрсөтүү</string>
+    <string name="news_opt_in_banner_title_text">Аба ырайы виджетинде жаңылыктарды көрсөтүп, учурдагы окуялардан кабардар болуңуз.</string>
+    <string name="news_opt_in_popup_desc_text">Аба ырайы виджетинде %s соңку баш саптарын көрсөтүп, дүйнө менен жаңылыктардан кабардар болуңуз.</string>
+    <string name="news_opt_in_popup_title_text">Жаңылыктарды жана аба ырайын бир виджеттен көрүңүз</string>
+    <string name="news_request_agree_text">%s дегенден жаңылыктарды алуу үчүн басыңыз</string>
+    <string name="news_widget_bubble_text">Аба ырайы менен жаңылыктарды алыңыз.</string>
+    <string name="news_widget_dummy_title">Бүгүнкү мыкты окуя</string>
+    <string name="news_widget_new_dummy_title">Бүгүн эртең менен сиз билишиңиз керек болгон 5 нерсе</string>
+    <string name="news_widget_oobe_text">Жаң. кошуу ү-н бул жерди бас.</string>
     <string name="next">Next city</string>
+    <string name="next_btn">Кийинки</string>
     <string name="next_city">Кийинки шаардын аба-ырайы маалыматын көрүү үчүн, эки жолу басыңыз.</string>
     <string name="night_tts">Түн</string>
     <string name="no_application_available">Бир да сунуучу байкалбайт.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Эч кандай аба ырайы маалыматы жок</string>
     <string name="not_in_use">Колдонулбайт</string>
     <string name="not_now">Азыр эмес</string>
+    <string name="not_now_btn">Азыр эмес</string>
     <string name="not_selected">Тандалган жок</string>
     <string name="nothing_selected">Эч нерсе тандалган жок</string>
     <string name="noti">Эскертме</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Эң ылдам жана эң так жайгашуунуну аныктоо үчүн, ОРНОТУУЛАРды басыңыз, андан соң Жайгашуу ыкмасын GPS’ке, Wi-Fi’ге жана мобилдик тармакка орнотуңуз.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Эң ылдам жана эң так жайгашуунуну аныктоо үчүн, ОРНОТУУЛАРды басыңыз, андан соң Жайгашуу ыкмасын GPS’ке жана Wi-Fi’ге орнотуңуз.</string>
     <string name="notice_gps_trun_off_message_verizon">Жергиликтүү аба-ырайы маалыматын көрүү үчүн, Жайгашуу орнотууларын күйгүзүп, режим Жогорку тактыкка коюлганын текшериңиз.</string>
+    <string name="notification_alert_channel_name">Аба ырайы тууралуу катаал эскертүү</string>
     <string name="notification_apps_update_channel_name">Жаңыртылган эскертүүлөр</string>
     <string name="notification_auto_refresh_channel_name">Аба-ырайын авто жаңылоо</string>
     <string name="notification_dex_channel_name">"Samsung DeX'теги аба-ырайы"</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Колдон. ачуу</string>
     <string name="open_source_licences">Ачык булак лицензиялары</string>
     <string name="other_locations">Башка жайгашуулар</string>
+    <string name="partly_sunny">Бир аз күн тиет</string>
     <string name="paused">Тынытылды</string>
     <string name="pd_km">%.1f км</string>
     <string name="pd_km_h">%d км/с</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Жаан-чачын: %d мм</string>
     <string name="preview">%s алдын ала көрүү</string>
     <string name="previous">Previous city</string>
+    <string name="previous_btn">Мурунку</string>
     <string name="previous_city">Мурунку шаардын аба-ырайы маалыматын көрүү үчүн, эки жолу басыңыз.</string>
     <string name="privacy_policy">Жекелик Политикасы</string>
     <string name="probability_of_rain_text">Жаан мүмкүнчүлүгү</string>
     <string name="protect_your_content">Мазмунуңузду коргоңуз</string>
+    <string name="ps_in">%s дюйм</string>
+    <string name="ps_mm">%s мм</string>
     <string name="radar">Радар жана карталар</string>
     <string name="rain">Жамгыр</string>
     <string name="rain_followed_by_intense_heat">Жаан артынан катуу ысык</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Аба-ырайы маалыматын жаңыртуу үчүн, ОРНОТУУЛАРДЫ басып, Колдонмо маалыматы > Уруксаттарга барыңыз, андан соң төмөнкү уруксаттарды берип, дагы аракеттениңиз:</string>
     <string name="runtime_location_permission_title">Уруксаттарды берүү</string>
     <string name="runtime_oem_grant_permission_desc">%s колдонмосуна төмөнкүгө кошулууга уруксат берилди:</string>
+    <string name="sat">Иш.</string>
     <string name="save_button">Сактоо</string>
     <string name="search_most_searched_for">Көбүрөөк издөөдө болгон</string>
     <string name="search_tab_cities">Шаарлар</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Жаңы мазмун байкалат</string>
     <string name="sesl_material_overflow_badge_text_n">Ж</string>
     <string name="sesl_more_item_label">Дагы</string>
+    <string name="sesl_preferecne_badge_description">Жаңы билдирүү</string>
     <string name="sesl_preferencecategory_added_title">Баш аты</string>
     <string name="sesl_search_hint">Издөө</string>
     <string name="sesl_searchview_description_clear">Издөө талаасын тазалоо</string>
@@ -528,8 +559,8 @@
     <string name="sesl_searchview_description_search">Издөө</string>
     <string name="sesl_searchview_description_submit">Сурамды которуу</string>
     <string name="sesl_searchview_description_voice">Үн издөө</string>
-    <string name="sesl_switch_off">Жабык</string>
-    <string name="sesl_switch_on">Ачык</string>
+    <string name="sesl_switch_off">Өчүк</string>
+    <string name="sesl_switch_on">Күйүк</string>
     <string name="sesl_switchbar_off_text">Өчүрүү</string>
     <string name="sesl_switchbar_on_text">Күйүк</string>
     <string name="sesl_toolbar_collapse_description">Жыюу</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Тармактык туташууңузду текшерип, дагы аракеттениңиз.</string>
     <string name="st_offline">Оффлайн</string>
     <string name="st_view_less">Азыраак көрүү</string>
+    <string name="status_off">Өчүк</string>
+    <string name="status_on">Күйүк</string>
+    <string name="sun">Жек.</string>
     <string name="sunny">Күндүү</string>
     <string name="sunny_with_some_clouds">Күнөстүү жана бир аз булут</string>
     <string name="sunny_with_some_heavy_rain">Күнөстүү жана катуу жаан</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Эски түзмөгүңүздөн аба-ырайы маалыматтарыңызды калыбына келтирүү үчүн бул жерди басыңыз.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Жайгашууңузду кайра табуу үчүн ДАГЫ АРАКЕТ КЫЛУУНУ басыңыз.</string>
     <string name="tap_setting_message_edge_panel">Жергиликтүү аба-ырайын алуу үчүн Жайгаштырууну күйгүзүңүз.</string>
+    <string name="tap_the_settings_icon">Орнотуулар сүрөтчөсүн таптоо.</string>
     <string name="tap_to_get_the_weather">Аба ырайын алуу үчүн басуу</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Шарттар жана Жагдайлар</string>
     <string name="the_latest_version">Акыркы нускасы эчак орнотулган.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Бул эскертүүлөр жана Календарда да колдонулат.</string>
+    <string name="thu">Бей</string>
     <string name="tick_box_tts">Текшерүү кутусу</string>
     <string name="ticked_tts">Белгиленген</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Саат боюнча</string>
     <string name="title_select_locations">Жайгашууну тандоо</string>
     <string name="title_theme">Темалар</string>
+    <string name="to_continue_agree_to_updated">Улантуу үчүн жаңыртылган %s макулдугуңузду билдириңиз.</string>
     <string name="to_get_local_weather_chn">"Учурда жүргөн жериңиз тууралуу маалымат аба-ырайын кабарлоочу кызматка жөнөтүлүп, жергиликтүү аба ырайын билип турасыз. (Кызматтын %1$sТейлөө шарттары%2$s менен %3$sКупуялык саясатын%4$s карап чыгыңыз).
 Түзмөгүңүздөгү башка колдонмолор жана кызматтар аба-ырайын көрсөтүү үчүн сакталган маалыматты колдонушат.
 Аба-ырайы тууралуу маалыматты үзгүлтүксүз кабарлап туруу үчүн, Аба-ырайын кабарлоочу кызмат кайда жүргөнүңүздү билип турат (колдонмо жабылып турса да)."</string>
     <string name="today">Бүгүн</string>
+    <string name="try_it_out_btn">Кол. көрүү</string>
+    <string name="tue">Шей</string>
+    <string name="turn_on_to_use_precise_location">Бул функцияны колдонуу үчүн сиз %s кызматына жайгашууңузга ар дайым кирүүгө уруксат берип, Так жайгашууну колдонууну күйгүзүңүз. Жөндөөлөрдү басып, андан кийин Уруксаттар > Жайгашууга өтүңүз.</string>
     <string name="tw_title_weather_broadcast">Алып баруу</string>
-    <string name="unable_to_check_for_updates">Жаңыртууларды текшерүү мүмкүн эмес. Эч кандай тармак туташуусу жок.</string>
+    <string name="unable_to_check_for_updates">Жаңыртуулар текшерилбей койду. Кийинирээк дагы аракеттениңиз.</string>
     <string name="unable_to_receive_info_msg">Маалыматты кабыл алуу болбоду</string>
     <string name="unticked_tts">Белги алынган</string>
     <string name="unused">Колдонулбаган</string>
     <string name="update">Жаңырт</string>
     <string name="update_abb8">Жаңыртуу</string>
     <string name="update_app">Колдонмону жаңыртуу</string>
+    <string name="updated_tile_chn">Жаңыртылган: %s</string>
     <string name="updated_tts">%s жаңыртылды</string>
+    <string name="use_current_location">Жайгашууңузду колдонуу</string>
     <string name="use_current_location_agree_popup">"Жергиликтүү аба ырайынын абалын алууга, учурдагы жердигиңиз аба ырай кызматтар тейлөөчүсүнө жиберилет. (Кызмат тейлөөчүнүн %1$sжекелик саясатын%2$s караңыз).
 Түзмөгүңүздөгү башка кайрылмалар менен кызматтар, ошол кайрылмаларда аба ырайын көрсөтүүгө, кайтарылган аба ырай маалыматына жеткирилиши ыктымал."</string>
     <string name="use_current_location_and_background_agree_popup">"Учурда жүргөн жериңиз тууралуу маалымат аба-ырайын кабарлоочу кызматка жөнөтүлүп, жергиликтүү аба ырайын билип турасыз. (Кызматтын %1$sКупуялык саясатын%2$s карап чыгыңыз.)
@@ -635,9 +677,16 @@
 Турган жериңизди колдонууну Аба ырайы колдонмосунун орнотууларынан өчүрүп койсоңуз болот."</string>
     <string name="use_current_location_body_msg_chn">"Аба ырайы кызматын колдонуудан мурун кунт коюп окуп чыгыңыз:
 Жергиликтүү аба ырайын билип тургуңуз келсе, үчүнчү жактагы кызмат көрсөтүүчүгө түзмөгүңүзгө такай кирип, төмөндө келтирилген маалыматтарды алып турууга уруксат беришиңиз керек (кызматты пайдаланбаган учурда да). Уруксат берүүдөн мурун, үчүнчү тараптагы кызмат көрсөтүүчүнүн %1$sШарттарын %2$s жана %3$sКупуялык саясатын%4$s кунт коюп окуп чыгышыңыз керек. Берилген уруксатты кайра артка алуу үчүн Орнотуулар менюсунда “Жайгашкан жер” функциясын өчүрүп коюңуз. Түзмөгүңүздөгү башка колдонмолор менен кызматтар ошол колдонмолордо жана кызматтарда аба ырайы тууралуу маалыматты көрсөтүү үчүн буга чейинки аба ырайы тууралуу маалыматты калыбына келтириши мүмкүн."</string>
+    <string name="use_current_location_body_msg_kor">"Учурдагы жайгашкан жериңиз чогултулуп, Аба ырайы колдонмосунун айрым функцияларын, мисалы, жергиликтүү аба ырайыңызды алуу үчүн колдонулат.
+
+Аба ырайы тууралуу үзгүлтүксүз маалымат берүү үчүн, бул колдонмо сиз пайдаланбай турганыңызда дагы, жайгашкан жериңизди дайыма аныктап турат. Улантуу менен, жогорудагы максаттар үчүн жайгашкан жериңизди чогултууга жана иштетүүгө макулдугуңузду билдиресиз.
+
+Бул жайгашкан жерди чогултууну жана керектөөнү Аба ырайы колдонмосунун жөндөөлөрүнөн токтотсоңуз болот."</string>
     <string name="use_current_location_body_purpose">Кандай максатта колдонулат</string>
     <string name="use_current_location_body_purpose_content">Жергиликтүү аба ырайын кабарлап туруу үчүн</string>
     <string name="use_current_location_body_search_provider">Кызмат көрсөтүүчү</string>
+    <string name="use_current_location_continue">Улантуу</string>
+    <string name="use_current_location_not_now">Азыр эмес</string>
     <string name="use_current_location_off_alert_popup">Учурдагы жайгашуу маалыматы алып салынган.</string>
     <string name="useful_informations">Жашоо жардамдары жана башка отчеттор</string>
     <string name="using_as">%s катары пайдалануу</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">Аба ырайы кеңештери</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Шар</string>
     <string name="weekly_forecast">Күнүгө</string>
     <string name="widget_background">Виджет фону</string>
     <string name="widget_empty_text">Аба-ырайы маалыматын алуу үчүн басуу</string>
+    <string name="widget_location">Шаар аты</string>
     <string name="widget_name_4x1">Аба ырайы жана саат</string>
     <string name="widget_setting">Орнотуулар</string>
     <string name="widget_setting_background_color">Фондун өңү</string>

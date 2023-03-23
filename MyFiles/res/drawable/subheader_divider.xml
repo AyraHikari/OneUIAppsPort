@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="line"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/basic_sub_header_divider_width" android:color="@color/dialog_sub_header_text_color" android:dashWidth="@dimen/basic_sub_header_divider_dash_width" android:dashGap="@dimen/basic_sub_header_divider_dash_gap" />
+</shape>

@@ -18,7 +18,7 @@
 .method public constructor <init>(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 2
 
-    .line 348
+    .line 463
     sget v0, Lcom/google/android/material/R$layout;->design_navigation_item_separator:I
 
     const/4 v1, 0x0

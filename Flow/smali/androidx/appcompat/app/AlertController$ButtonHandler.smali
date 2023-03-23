@@ -33,11 +33,19 @@
 # direct methods
 .method public constructor <init>(Landroid/content/DialogInterface;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialog"
+        }
+    .end annotation
 
-    .line 166
+    .line 171
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 167
+    .line 172
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -51,8 +59,16 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
-    .line 172
+    .line 177
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, -0x3
@@ -73,7 +89,7 @@
 
     goto :goto_0
 
-    .line 181
+    .line 186
     :cond_0
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -83,7 +99,7 @@
 
     goto :goto_0
 
-    .line 177
+    .line 182
     :cond_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 

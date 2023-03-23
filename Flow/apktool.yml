@@ -1,131 +1,32 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: SamsungFlow_b1_v4.8.03.5.apk
+apkFileName: Samsung-Flow-4.9.03.6-v2.apk
 compressionType: false
 doNotCompress:
-- arsc
-- so
+- resources.arsc
+- lib/arm64-v8a/libflowkeyboard.so
+- lib/armeabi-v7a/libflowkeyboard.so
+- lib/x86/libflowkeyboard.so
+- lib/x86_64/libflowkeyboard.so
 - png
-- res/drawable/sesl_action_bar_background_divider_alpha.9.png
-- res/drawable/sesl_fastscroll_track_alpha.9.png
-- res/drawable/sesl_section_divider_default_alpha.9.png
-- res/drawable-hdpi/abc_list_focused_holo.9.png
-- res/drawable-hdpi/abc_list_longpressed_holo.9.png
-- res/drawable-hdpi/abc_list_pressed_holo_dark.9.png
-- res/drawable-hdpi/abc_list_pressed_holo_light.9.png
-- res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png
-- res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png
-- res/drawable-hdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-hdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-hdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-hdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-hdpi/notification_bg_low_normal.9.png
-- res/drawable-hdpi/notification_bg_low_pressed.9.png
-- res/drawable-hdpi/notification_bg_normal.9.png
-- res/drawable-hdpi/notification_bg_normal_pressed.9.png
-- res/drawable-hdpi/sesl_btn_switch_mtrl.9.png
-- res/drawable-hdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-hdpi/sesl_switch_track_alpha.9.png
-- res/drawable-ldrtl-xxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-ldrtl-xxhdpi/sesl_textfield_default_alpha.9.png
-- res/drawable-ldrtl-xxxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-ldrtl-xxxhdpi/sesl_textfield_default_alpha.9.png
-- res/drawable-mdpi/abc_list_focused_holo.9.png
-- res/drawable-mdpi/abc_list_longpressed_holo.9.png
-- res/drawable-mdpi/abc_list_pressed_holo_dark.9.png
-- res/drawable-mdpi/abc_list_pressed_holo_light.9.png
-- res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png
-- res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png
-- res/drawable-mdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-mdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-mdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-mdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-mdpi/notification_bg_low_normal.9.png
-- res/drawable-mdpi/notification_bg_low_pressed.9.png
-- res/drawable-mdpi/notification_bg_normal.9.png
-- res/drawable-mdpi/notification_bg_normal_pressed.9.png
-- res/drawable-mdpi/sesl_btn_switch_mtrl.9.png
-- res/drawable-mdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-mdpi/sesl_scrollbar_handle_mtrl_alpha.9.png
-- res/drawable-mdpi/sesl_switch_track_alpha.9.png
-- res/drawable-mdpi/sesl_toast_frame_alpha.9.png
-- res/drawable-xhdpi/abc_list_focused_holo.9.png
-- res/drawable-xhdpi/abc_list_longpressed_holo.9.png
-- res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png
-- res/drawable-xhdpi/abc_list_pressed_holo_light.9.png
-- res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png
-- res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png
-- res/drawable-xhdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-xhdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-xhdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-xhdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-xhdpi/notification_bg_low_normal.9.png
-- res/drawable-xhdpi/notification_bg_low_pressed.9.png
-- res/drawable-xhdpi/notification_bg_normal.9.png
-- res/drawable-xhdpi/notification_bg_normal_pressed.9.png
-- res/drawable-xhdpi/sesl_btn_switch_mtrl.9.png
-- res/drawable-xhdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-xhdpi/sesl_spinner_picker_alpha.9.png
-- res/drawable-xhdpi/sesl_toast_frame_alpha.9.png
-- res/drawable-xxhdpi/abc_list_focused_holo.9.png
-- res/drawable-xxhdpi/abc_list_longpressed_holo.9.png
-- res/drawable-xxhdpi/abc_list_pressed_holo_dark.9.png
-- res/drawable-xxhdpi/abc_list_pressed_holo_light.9.png
-- res/drawable-xxhdpi/abc_list_selector_disabled_holo_dark.9.png
-- res/drawable-xxhdpi/abc_list_selector_disabled_holo_light.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_icon_dark_normal_background.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_icon_light_normal_background.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_text_dark_normal_background.9.png
-- res/drawable-xxhdpi/common_google_signin_btn_text_light_normal_background.9.png
-- res/drawable-xxhdpi/sesl_action_bar_stacked_divider_alpha.9.png
-- res/drawable-xxhdpi/sesl_btn_switch_mtrl.9.png
-- res/drawable-xxhdpi/sesl_progress_bar.9.png
-- res/drawable-xxhdpi/sesl_scrollbar_handle_alpha.9.png
-- res/drawable-xxhdpi/sesl_scrollbar_handle_mtrl_alpha.9.png
-- res/drawable-xxhdpi/sesl_spinner_mtrl_am_alpha.9.png
-- res/drawable-xxhdpi/sesl_spinner_picker_alpha.9.png
-- res/drawable-xxhdpi/sesl_switch_track_alpha.9.png
-- res/drawable-xxhdpi/sesl_tab_n_badge_mtrl.9.png
-- res/drawable-xxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-xxhdpi/sesl_textfield_default_alpha.9.png
-- res/drawable-xxhdpi/sesl_toast_frame_alpha.9.png
-- res/drawable-xxhdpi/tw_section_divider_mtrl.9.png
-- res/drawable-xxxhdpi/sesl_spinner_picker_alpha.9.png
-- res/drawable-xxxhdpi/sesl_textfield_activated_alpha.9.png
-- res/drawable-xxxhdpi/sesl_textfield_default_alpha.9.png
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '23'
-  targetSdkVersion: '30'
+  minSdkVersion: '24'
+  targetSdkVersion: '31'
 sharedLibrary: false
 sparseResources: false
 unknownFiles:
-  firebase-annotations.properties: '8'
+  DebugProbesKt.bin: '8'
   firebase-appindexing.properties: '8'
-  firebase-common.properties: '8'
-  firebase-components.properties: '8'
-  firebase-datatransport.properties: '8'
-  firebase-encoders-json.properties: '8'
-  firebase-encoders.properties: '8'
-  firebase-iid-interop.properties: '8'
-  firebase-iid.properties: '8'
-  firebase-installations-interop.properties: '8'
-  firebase-installations.properties: '8'
-  firebase-measurement-connector.properties: '8'
-  firebase-messaging.properties: '8'
+  kotlin-tooling-metadata.json: '8'
   play-services-base.properties: '8'
   play-services-basement.properties: '8'
-  play-services-cloud-messaging.properties: '8'
   play-services-location.properties: '8'
-  play-services-places-placereport.properties: '8'
-  play-services-stats.properties: '8'
   play-services-tasks.properties: '8'
-  transport-api.properties: '8'
-  transport-backend-cct.properties: '8'
-  transport-runtime.properties: '8'
   okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
   SEC-INF/buildConfirm.crt: '8'
   SEC-INF/buildinfo.xml: '8'
   com/fasterxml/jackson/core/json/VERSION.txt: '8'
@@ -703,15 +604,13 @@ unknownFiles:
   javax/annotation/meta/TypeQualifierNickname.java: '8'
   javax/annotation/meta/TypeQualifierValidator.java: '8'
   javax/annotation/meta/When.java: '8'
-  org/jsoup/nodes/entities-base.properties: '8'
-  org/jsoup/nodes/entities-full.properties: '8'
   org/spongycastle/x509/CertPathReviewerMessages.properties: '8'
   org/spongycastle/x509/CertPathReviewerMessages_de.properties: '8'
 usesFramework:
   ids:
   - 1
   tag: null
-version: 2.4.0-dirty
+version: 2.7.0
 versionInfo:
-  versionCode: '480305000'
-  versionName: 4.8.03.5
+  versionCode: '490502000'
+  versionName: 4.9.05.2

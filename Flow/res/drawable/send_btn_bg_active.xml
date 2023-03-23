@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/btn_new_bg_color" />
+            <size android:height="38.0dip" android:width="38.0dip" />
+        </shape>
+    </item>
+</layer-list>

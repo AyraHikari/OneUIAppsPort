@@ -11,7 +11,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 53
+    .line 55
     sget v0, Landroidx/preference/R$attr;->preferenceScreenStyle:I
 
     const v1, 0x101008b
@@ -24,7 +24,7 @@
 
     const/4 p1, 0x1
 
-    .line 43
+    .line 44
     iput-boolean p1, p0, Landroidx/preference/PreferenceScreen;->mShouldUseGeneratedIds:Z
 
     return-void
@@ -43,7 +43,7 @@
 .method protected onClick()V
     .locals 1
 
-    .line 59
+    .line 61
     invoke-virtual {p0}, Landroidx/preference/PreferenceScreen;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -64,7 +64,7 @@
 
     goto :goto_0
 
-    .line 63
+    .line 65
     :cond_0
     invoke-virtual {p0}, Landroidx/preference/PreferenceScreen;->getPreferenceManager()Landroidx/preference/PreferenceManager;
 
@@ -76,7 +76,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 65
+    .line 67
     invoke-interface {v0, p0}, Landroidx/preference/PreferenceManager$OnNavigateToScreenListener;->onNavigateToScreen(Landroidx/preference/PreferenceScreen;)V
 
     :cond_1
@@ -87,19 +87,19 @@
 .method public setShouldUseGeneratedIds(Z)V
     .locals 1
 
-    .line 100
+    .line 102
     invoke-virtual {p0}, Landroidx/preference/PreferenceScreen;->isAttached()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 104
+    .line 106
     iput-boolean p1, p0, Landroidx/preference/PreferenceScreen;->mShouldUseGeneratedIds:Z
 
     return-void
 
-    .line 101
+    .line 103
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -113,7 +113,7 @@
 .method public shouldUseGeneratedIds()Z
     .locals 1
 
-    .line 81
+    .line 83
     iget-boolean v0, p0, Landroidx/preference/PreferenceScreen;->mShouldUseGeneratedIds:Z
 
     return v0

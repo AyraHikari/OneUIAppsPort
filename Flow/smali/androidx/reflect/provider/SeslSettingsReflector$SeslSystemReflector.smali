@@ -46,11 +46,62 @@
     return-void
 .end method
 
+.method public static getField_SEM_ACCESSIBILITY_REDUCE_TRANSPARENCY()Ljava/lang/String;
+    .locals 5
+
+    .line 53
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x1f
+
+    if-lt v0, v2, :cond_0
+
+    .line 54
+    sget-object v0, Landroidx/reflect/provider/SeslSettingsReflector$SeslSystemReflector;->mClass:Ljava/lang/Class;
+
+    const/4 v2, 0x0
+
+    new-array v3, v2, [Ljava/lang/Class;
+
+    const-string v4, "hidden_SEM_ACCESSIBILITY_REDUCE_TRANSPARENCY"
+
+    invoke-static {v0, v4, v3}, Landroidx/reflect/SeslBaseReflector;->getDeclaredMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 56
+    invoke-static {v1, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 60
+    :cond_0
+    instance-of v0, v1, Ljava/lang/String;
+
+    if-eqz v0, :cond_1
+
+    .line 61
+    check-cast v1, Ljava/lang/String;
+
+    return-object v1
+
+    :cond_1
+    const-string v0, "not_supported"
+
+    return-object v0
+.end method
+
 .method public static getField_SEM_PEN_HOVERING()Ljava/lang/String;
     .locals 5
 
     .line 28
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -86,7 +137,8 @@
     :cond_0
     sget-object v0, Landroidx/reflect/provider/SeslSettingsReflector$SeslSystemReflector;->mClass:Ljava/lang/Class;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 35
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
@@ -99,6 +151,7 @@
     :cond_1
     const-string v2, "PEN_HOVERING"
 
+    .line 34
     :goto_0
     invoke-static {v0, v2}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
 

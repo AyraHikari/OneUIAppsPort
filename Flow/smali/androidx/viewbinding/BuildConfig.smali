@@ -10,10 +10,6 @@
 
 .field public static final LIBRARY_PACKAGE_NAME:Ljava/lang/String; = "androidx.viewbinding"
 
-.field public static final VERSION_CODE:I = -0x1
-
-.field public static final VERSION_NAME:Ljava/lang/String; = ""
-
 
 # direct methods
 .method public constructor <init>()V

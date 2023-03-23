@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDBroadcast;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 81
+    .line 82
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDBroadcast$1;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDBroadcast;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,18 @@
 # virtual methods
 .method public onRegistrationFailed(Landroid/net/nsd/NsdServiceInfo;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "serviceInfo",
+            "errorCode"
+        }
+    .end annotation
 
-    .line 95
+    .line 96
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -47,7 +65,11 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -60,10 +82,18 @@
 
 .method public onServiceRegistered(Landroid/net/nsd/NsdServiceInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "NsdServiceInfo"
+        }
+    .end annotation
 
     const-string p1, "onServiceRegistered"
 
-    .line 88
+    .line 89
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-void
@@ -71,10 +101,18 @@
 
 .method public onServiceUnregistered(Landroid/net/nsd/NsdServiceInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     const-string p1, "onServiceUnregistered"
 
-    .line 102
+    .line 103
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-void
@@ -82,10 +120,20 @@
 
 .method public onUnregistrationFailed(Landroid/net/nsd/NsdServiceInfo;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "serviceInfo",
+            "errorCode"
+        }
+    .end annotation
 
     const-string p1, "onUnregistrationFailed"
 
-    .line 108
+    .line 109
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-void

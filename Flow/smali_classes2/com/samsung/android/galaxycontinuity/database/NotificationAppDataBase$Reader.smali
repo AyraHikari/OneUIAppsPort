@@ -23,13 +23,23 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;Landroid/database/Cursor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "cursor"
+        }
+    .end annotation
 
-    .line 231
+    .line 232
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 232
+    .line 233
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->cursor:Landroid/database/Cursor;
 
     return-void
@@ -40,7 +50,7 @@
 .method public getCurrent()Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
     .locals 6
 
-    .line 242
+    .line 243
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->cursor:Landroid/database/Cursor;
 
     const/4 v1, 0x0
@@ -55,7 +65,7 @@
 
     goto :goto_0
 
-    .line 245
+    .line 246
     :cond_0
     new-instance v0, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
@@ -75,14 +85,14 @@
 
     const-string v5, "label"
 
-    .line 246
+    .line 247
     invoke-virtual {v3, v4, v5}, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-direct {v0, v2, v3, v1}, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;-><init>(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 248
+    .line 249
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -95,7 +105,7 @@
 
     iput v1, v0, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->id:I
 
-    .line 249
+    .line 250
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
@@ -110,7 +120,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 250
+    .line 251
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -123,7 +133,7 @@
 
     iput-boolean v1, v0, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isFavorite:Z
 
-    .line 251
+    .line 252
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -136,7 +146,7 @@
 
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->activityName:Ljava/lang/String;
 
-    .line 252
+    .line 253
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->icon:Landroidx/databinding/ObservableField;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
@@ -165,7 +175,7 @@
 .method public getNext()Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
     .locals 1
 
-    .line 236
+    .line 237
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->cursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_1
@@ -178,7 +188,7 @@
 
     goto :goto_0
 
-    .line 238
+    .line 239
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;->getCurrent()Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 

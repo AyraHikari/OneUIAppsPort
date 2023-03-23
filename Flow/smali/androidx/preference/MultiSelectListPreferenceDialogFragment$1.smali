@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/preference/MultiSelectListPreferenceDialogFragment;)V
     .locals 0
 
-    .line 118
+    .line 119
     iput-object p1, p0, Landroidx/preference/MultiSelectListPreferenceDialogFragment$1;->this$0:Landroidx/preference/MultiSelectListPreferenceDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 122
+    .line 123
     iget-object p1, p0, Landroidx/preference/MultiSelectListPreferenceDialogFragment$1;->this$0:Landroidx/preference/MultiSelectListPreferenceDialogFragment;
 
     iget-boolean p3, p1, Landroidx/preference/MultiSelectListPreferenceDialogFragment;->mPreferenceChanged:Z
@@ -55,12 +55,12 @@
 
     aget-object p2, v1, p2
 
-    .line 123
+    .line 124
     invoke-interface {p2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 122
+    .line 123
     invoke-interface {v0, p2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     move-result p2
@@ -71,7 +71,7 @@
 
     goto :goto_0
 
-    .line 125
+    .line 126
     :cond_0
     iget-object p1, p0, Landroidx/preference/MultiSelectListPreferenceDialogFragment$1;->this$0:Landroidx/preference/MultiSelectListPreferenceDialogFragment;
 
@@ -87,12 +87,12 @@
 
     aget-object p2, v1, p2
 
-    .line 126
+    .line 127
     invoke-interface {p2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 125
+    .line 126
     invoke-interface {v0, p2}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     move-result p2

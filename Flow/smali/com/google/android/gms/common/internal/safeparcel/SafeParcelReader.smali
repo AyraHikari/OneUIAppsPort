@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # annotations
@@ -14,7 +15,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,12 +23,12 @@
 .method public static createBigDecimal(Landroid/os/Parcel;I)Ljava/math/BigDecimal;
     .locals 3
 
-    .line 77
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 78
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -39,27 +39,27 @@
 
     return-object p0
 
-    .line 81
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object v1
 
-    .line 82
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
     add-int/2addr v0, p1
 
-    .line 83
+    .line 5
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
-    .line 84
     new-instance p0, Ljava/math/BigDecimal;
 
     new-instance p1, Ljava/math/BigInteger;
 
+    .line 6
     invoke-direct {p1, v1}, Ljava/math/BigInteger;-><init>([B)V
 
     invoke-direct {p0, p1, v2}, Ljava/math/BigDecimal;-><init>(Ljava/math/BigInteger;I)V
@@ -70,12 +70,12 @@
 .method public static createBigDecimalArray(Landroid/os/Parcel;I)[Ljava/math/BigDecimal;
     .locals 8
 
-    .line 184
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 185
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -86,13 +86,13 @@
 
     return-object p0
 
-    .line 188
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    .line 189
+    .line 4
     new-array v2, v1, [Ljava/math/BigDecimal;
 
     const/4 v3, 0x0
@@ -100,21 +100,21 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 191
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object v4
 
-    .line 192
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v5
 
-    .line 193
     new-instance v6, Ljava/math/BigDecimal;
 
     new-instance v7, Ljava/math/BigInteger;
 
+    .line 7
     invoke-direct {v7, v4}, Ljava/math/BigInteger;-><init>([B)V
 
     invoke-direct {v6, v7, v5}, Ljava/math/BigDecimal;-><init>(Ljava/math/BigInteger;I)V
@@ -128,7 +128,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 195
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v2
@@ -137,12 +137,12 @@
 .method public static createBigInteger(Landroid/os/Parcel;I)Ljava/math/BigInteger;
     .locals 2
 
-    .line 56
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 57
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -153,7 +153,7 @@
 
     return-object p0
 
-    .line 60
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createByteArray()[B
 
@@ -161,12 +161,12 @@
 
     add-int/2addr v0, p1
 
-    .line 61
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
-    .line 62
     new-instance p0, Ljava/math/BigInteger;
 
+    .line 5
     invoke-direct {p0, v1}, Ljava/math/BigInteger;-><init>([B)V
 
     return-object p0
@@ -175,12 +175,12 @@
 .method public static createBigIntegerArray(Landroid/os/Parcel;I)[Ljava/math/BigInteger;
     .locals 6
 
-    .line 159
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 160
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -191,13 +191,13 @@
 
     return-object p0
 
-    .line 163
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    .line 164
+    .line 4
     new-array v2, v1, [Ljava/math/BigInteger;
 
     const/4 v3, 0x0
@@ -205,9 +205,9 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 166
     new-instance v4, Ljava/math/BigInteger;
 
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object v5
@@ -223,7 +223,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 168
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v2
@@ -232,12 +232,12 @@
 .method public static createBooleanArray(Landroid/os/Parcel;I)[Z
     .locals 2
 
-    .line 131
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 132
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -248,7 +248,7 @@
 
     return-object p0
 
-    .line 135
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createBooleanArray()[Z
 
@@ -256,7 +256,7 @@
 
     add-int/2addr v0, p1
 
-    .line 136
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -275,12 +275,12 @@
         }
     .end annotation
 
-    .line 211
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 212
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -291,13 +291,13 @@
 
     return-object p0
 
-    .line 215
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
+    .line 3
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 216
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -309,7 +309,7 @@
     :goto_0
     if-ge v4, v2, :cond_2
 
-    .line 218
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v5
@@ -337,7 +337,7 @@
     :cond_2
     add-int/2addr v0, p1
 
-    .line 220
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -346,12 +346,12 @@
 .method public static createBundle(Landroid/os/Parcel;I)Landroid/os/Bundle;
     .locals 2
 
-    .line 106
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 107
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -362,7 +362,7 @@
 
     return-object p0
 
-    .line 110
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readBundle()Landroid/os/Bundle;
 
@@ -370,7 +370,7 @@
 
     add-int/2addr v0, p1
 
-    .line 111
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -379,12 +379,12 @@
 .method public static createByteArray(Landroid/os/Parcel;I)[B
     .locals 2
 
-    .line 113
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 114
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -395,7 +395,7 @@
 
     return-object p0
 
-    .line 117
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createByteArray()[B
 
@@ -403,7 +403,7 @@
 
     add-int/2addr v0, p1
 
-    .line 118
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -412,12 +412,12 @@
 .method public static createByteArrayArray(Landroid/os/Parcel;I)[[B
     .locals 5
 
-    .line 120
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 121
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -428,13 +428,13 @@
 
     return-object p0
 
-    .line 124
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    .line 125
+    .line 4
     new-array v2, v1, [[B
 
     const/4 v3, 0x0
@@ -442,7 +442,7 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 127
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object v4
@@ -456,7 +456,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 129
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v2
@@ -474,12 +474,12 @@
         }
     .end annotation
 
-    .line 353
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 354
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -490,15 +490,15 @@
 
     return-object p0
 
-    .line 357
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    .line 358
     new-instance v2, Landroid/util/SparseArray;
 
+    .line 4
     invoke-direct {v2, v1}, Landroid/util/SparseArray;-><init>(I)V
 
     const/4 v3, 0x0
@@ -506,17 +506,17 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 360
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
-    .line 361
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object v5
 
-    .line 362
+    .line 7
     invoke-virtual {v2, v4, v5}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
     add-int/lit8 v3, v3, 0x1
@@ -526,7 +526,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 364
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v2
@@ -535,12 +535,12 @@
 .method public static createCharArray(Landroid/os/Parcel;I)[C
     .locals 2
 
-    .line 138
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 139
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -551,7 +551,7 @@
 
     return-object p0
 
-    .line 142
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createCharArray()[C
 
@@ -559,7 +559,7 @@
 
     add-int/2addr v0, p1
 
-    .line 143
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -568,12 +568,12 @@
 .method public static createDoubleArray(Landroid/os/Parcel;I)[D
     .locals 2
 
-    .line 177
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 178
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -584,7 +584,7 @@
 
     return-object p0
 
-    .line 181
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createDoubleArray()[D
 
@@ -592,7 +592,7 @@
 
     add-int/2addr v0, p1
 
-    .line 182
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -611,12 +611,12 @@
         }
     .end annotation
 
-    .line 388
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 389
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -627,13 +627,13 @@
 
     return-object p0
 
-    .line 392
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
+    .line 3
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 393
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -643,7 +643,7 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 395
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v4
@@ -661,7 +661,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 397
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -680,12 +680,12 @@
         }
     .end annotation
 
-    .line 266
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 267
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -696,13 +696,13 @@
 
     return-object p0
 
-    .line 270
     :cond_0
     new-instance v1, Landroid/util/SparseArray;
 
+    .line 3
     invoke-direct {v1}, Landroid/util/SparseArray;-><init>()V
 
-    .line 271
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -712,17 +712,17 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 273
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
-    .line 274
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v5
 
-    .line 275
+    .line 7
     invoke-static {v5, v6}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object v5
@@ -736,7 +736,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 277
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -745,12 +745,12 @@
 .method public static createFloatArray(Landroid/os/Parcel;I)[F
     .locals 2
 
-    .line 170
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 171
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -761,7 +761,7 @@
 
     return-object p0
 
-    .line 174
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createFloatArray()[F
 
@@ -769,7 +769,7 @@
 
     add-int/2addr v0, p1
 
-    .line 175
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -788,12 +788,12 @@
         }
     .end annotation
 
-    .line 377
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 378
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -804,13 +804,13 @@
 
     return-object p0
 
-    .line 381
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
+    .line 3
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 382
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -820,7 +820,7 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 384
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readFloat()F
 
     move-result v4
@@ -838,7 +838,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 386
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -857,12 +857,12 @@
         }
     .end annotation
 
-    .line 253
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 254
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -873,13 +873,13 @@
 
     return-object p0
 
-    .line 257
     :cond_0
     new-instance v1, Landroid/util/SparseArray;
 
+    .line 3
     invoke-direct {v1}, Landroid/util/SparseArray;-><init>()V
 
-    .line 258
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -889,17 +889,17 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 260
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
-    .line 261
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readFloat()F
 
     move-result v5
 
-    .line 262
+    .line 7
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v5
@@ -913,7 +913,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 264
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -922,12 +922,12 @@
 .method public static createIBinderArray(Landroid/os/Parcel;I)[Landroid/os/IBinder;
     .locals 2
 
-    .line 204
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 205
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -938,7 +938,7 @@
 
     return-object p0
 
-    .line 208
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createBinderArray()[Landroid/os/IBinder;
 
@@ -946,7 +946,7 @@
 
     add-int/2addr v0, p1
 
-    .line 209
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -965,12 +965,12 @@
         }
     .end annotation
 
-    .line 406
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 407
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -981,7 +981,7 @@
 
     return-object p0
 
-    .line 410
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createBinderArrayList()Ljava/util/ArrayList;
 
@@ -989,7 +989,7 @@
 
     add-int/2addr v0, p1
 
-    .line 411
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1008,12 +1008,12 @@
         }
     .end annotation
 
-    .line 340
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 341
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1024,15 +1024,15 @@
 
     return-object p0
 
-    .line 344
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    .line 345
     new-instance v2, Landroid/util/SparseArray;
 
+    .line 4
     invoke-direct {v2, v1}, Landroid/util/SparseArray;-><init>(I)V
 
     const/4 v3, 0x0
@@ -1040,17 +1040,17 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 347
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
-    .line 348
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     move-result-object v5
 
-    .line 349
+    .line 7
     invoke-virtual {v2, v4, v5}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
     add-int/lit8 v3, v3, 0x1
@@ -1060,7 +1060,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 351
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v2
@@ -1069,12 +1069,12 @@
 .method public static createIntArray(Landroid/os/Parcel;I)[I
     .locals 2
 
-    .line 145
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 146
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1085,7 +1085,7 @@
 
     return-object p0
 
-    .line 149
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createIntArray()[I
 
@@ -1093,7 +1093,7 @@
 
     add-int/2addr v0, p1
 
-    .line 150
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1112,12 +1112,12 @@
         }
     .end annotation
 
-    .line 222
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 223
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1128,13 +1128,13 @@
 
     return-object p0
 
-    .line 226
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
+    .line 3
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 227
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -1144,7 +1144,7 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 229
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
@@ -1162,7 +1162,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 231
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1171,12 +1171,12 @@
 .method public static createLongArray(Landroid/os/Parcel;I)[J
     .locals 2
 
-    .line 152
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 153
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1187,7 +1187,7 @@
 
     return-object p0
 
-    .line 156
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createLongArray()[J
 
@@ -1195,7 +1195,7 @@
 
     add-int/2addr v0, p1
 
-    .line 157
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1214,12 +1214,12 @@
         }
     .end annotation
 
-    .line 366
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 367
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1230,13 +1230,13 @@
 
     return-object p0
 
-    .line 370
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
+    .line 3
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 371
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -1246,7 +1246,7 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 373
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v4
@@ -1264,7 +1264,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 375
+    .line 6
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1273,12 +1273,12 @@
 .method public static createParcel(Landroid/os/Parcel;I)Landroid/os/Parcel;
     .locals 2
 
-    .line 427
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 428
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1289,18 +1289,18 @@
 
     return-object p0
 
-    .line 431
+    .line 3
     :cond_0
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 432
+    .line 4
     invoke-virtual {v1, p0, v0, p1}, Landroid/os/Parcel;->appendFrom(Landroid/os/Parcel;II)V
 
     add-int/2addr v0, p1
 
-    .line 433
+    .line 5
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1309,12 +1309,12 @@
 .method public static createParcelArray(Landroid/os/Parcel;I)[Landroid/os/Parcel;
     .locals 8
 
-    .line 435
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 436
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1325,13 +1325,13 @@
 
     return-object v1
 
-    .line 439
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
-    .line 440
+    .line 4
     new-array v3, v2, [Landroid/os/Parcel;
 
     const/4 v4, 0x0
@@ -1339,37 +1339,37 @@
     :goto_0
     if-ge v4, v2, :cond_2
 
-    .line 442
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 444
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v6
 
-    .line 445
+    .line 7
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v7
 
-    .line 446
+    .line 8
     invoke-virtual {v7, p0, v6, v5}, Landroid/os/Parcel;->appendFrom(Landroid/os/Parcel;II)V
 
-    .line 447
+    .line 9
     aput-object v7, v3, v4
 
     add-int/2addr v6, v5
 
-    .line 448
+    .line 10
     invoke-virtual {p0, v6}, Landroid/os/Parcel;->setDataPosition(I)V
 
     goto :goto_1
 
-    .line 450
+    .line 11
     :cond_1
     aput-object v1, v3, v4
 
@@ -1381,7 +1381,7 @@
     :cond_2
     add-int/2addr v0, p1
 
-    .line 452
+    .line 12
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v3
@@ -1400,12 +1400,12 @@
         }
     .end annotation
 
-    .line 454
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 455
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1416,15 +1416,15 @@
 
     return-object v1
 
-    .line 458
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
-    .line 459
     new-instance v3, Ljava/util/ArrayList;
 
+    .line 4
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v4, 0x0
@@ -1432,37 +1432,37 @@
     :goto_0
     if-ge v4, v2, :cond_2
 
-    .line 461
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 463
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v6
 
-    .line 464
+    .line 7
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v7
 
-    .line 465
+    .line 8
     invoke-virtual {v7, p0, v6, v5}, Landroid/os/Parcel;->appendFrom(Landroid/os/Parcel;II)V
 
-    .line 466
+    .line 9
     invoke-virtual {v3, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/2addr v6, v5
 
-    .line 467
+    .line 10
     invoke-virtual {p0, v6}, Landroid/os/Parcel;->setDataPosition(I)V
 
     goto :goto_1
 
-    .line 469
+    .line 11
     :cond_1
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1474,7 +1474,7 @@
     :cond_2
     add-int/2addr v0, p1
 
-    .line 471
+    .line 12
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v3
@@ -1493,12 +1493,12 @@
         }
     .end annotation
 
-    .line 305
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 306
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1509,15 +1509,15 @@
 
     return-object v1
 
-    .line 309
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
-    .line 310
     new-instance v3, Landroid/util/SparseArray;
 
+    .line 4
     invoke-direct {v3}, Landroid/util/SparseArray;-><init>()V
 
     const/4 v4, 0x0
@@ -1525,42 +1525,42 @@
     :goto_0
     if-ge v4, v2, :cond_2
 
-    .line 312
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v5
 
-    .line 313
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v6
 
     if-eqz v6, :cond_1
 
-    .line 315
+    .line 7
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v7
 
-    .line 316
+    .line 8
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v8
 
-    .line 317
+    .line 9
     invoke-virtual {v8, p0, v7, v6}, Landroid/os/Parcel;->appendFrom(Landroid/os/Parcel;II)V
 
-    .line 318
+    .line 10
     invoke-virtual {v3, v5, v8}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
     add-int/2addr v7, v6
 
-    .line 319
+    .line 11
     invoke-virtual {p0, v7}, Landroid/os/Parcel;->setDataPosition(I)V
 
     goto :goto_1
 
-    .line 321
+    .line 12
     :cond_1
     invoke-virtual {v3, v5, v1}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
@@ -1572,7 +1572,7 @@
     :cond_2
     add-int/2addr v0, p1
 
-    .line 323
+    .line 13
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v3
@@ -1592,12 +1592,12 @@
         }
     .end annotation
 
-    .line 99
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 100
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1608,7 +1608,7 @@
 
     return-object p0
 
-    .line 103
+    .line 3
     :cond_0
     invoke-interface {p2, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
@@ -1618,7 +1618,7 @@
 
     add-int/2addr v0, p1
 
-    .line 104
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object p2
@@ -1627,12 +1627,12 @@
 .method public static createSparseBooleanArray(Landroid/os/Parcel;I)Landroid/util/SparseBooleanArray;
     .locals 2
 
-    .line 233
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 234
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1643,7 +1643,7 @@
 
     return-object p0
 
-    .line 237
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readSparseBooleanArray()Landroid/util/SparseBooleanArray;
 
@@ -1651,7 +1651,7 @@
 
     add-int/2addr v0, p1
 
-    .line 238
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1660,12 +1660,12 @@
 .method public static createSparseIntArray(Landroid/os/Parcel;I)Landroid/util/SparseIntArray;
     .locals 6
 
-    .line 240
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 241
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1676,13 +1676,13 @@
 
     return-object p0
 
-    .line 244
     :cond_0
     new-instance v1, Landroid/util/SparseIntArray;
 
+    .line 3
     invoke-direct {v1}, Landroid/util/SparseIntArray;-><init>()V
 
-    .line 245
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -1692,17 +1692,17 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 247
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
-    .line 248
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v5
 
-    .line 249
+    .line 7
     invoke-virtual {v1, v4, v5}, Landroid/util/SparseIntArray;->append(II)V
 
     add-int/lit8 v3, v3, 0x1
@@ -1712,7 +1712,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 251
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1721,12 +1721,12 @@
 .method public static createSparseLongArray(Landroid/os/Parcel;I)Landroid/util/SparseLongArray;
     .locals 7
 
-    .line 279
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 280
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1737,13 +1737,13 @@
 
     return-object p0
 
-    .line 283
+    .line 3
     :cond_0
     new-instance v1, Landroid/util/SparseLongArray;
 
     invoke-direct {v1}, Landroid/util/SparseLongArray;-><init>()V
 
-    .line 284
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -1753,17 +1753,17 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 286
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
-    .line 287
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v5
 
-    .line 288
+    .line 7
     invoke-virtual {v1, v4, v5, v6}, Landroid/util/SparseLongArray;->append(IJ)V
 
     add-int/lit8 v3, v3, 0x1
@@ -1773,7 +1773,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 290
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1782,12 +1782,12 @@
 .method public static createString(Landroid/os/Parcel;I)Ljava/lang/String;
     .locals 2
 
-    .line 85
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 86
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1798,7 +1798,7 @@
 
     return-object p0
 
-    .line 89
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -1806,7 +1806,7 @@
 
     add-int/2addr v0, p1
 
-    .line 90
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1815,12 +1815,12 @@
 .method public static createStringArray(Landroid/os/Parcel;I)[Ljava/lang/String;
     .locals 2
 
-    .line 197
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 198
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1831,7 +1831,7 @@
 
     return-object p0
 
-    .line 201
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createStringArray()[Ljava/lang/String;
 
@@ -1839,7 +1839,7 @@
 
     add-int/2addr v0, p1
 
-    .line 202
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1858,12 +1858,12 @@
         }
     .end annotation
 
-    .line 399
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 400
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1874,7 +1874,7 @@
 
     return-object p0
 
-    .line 403
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
 
@@ -1882,7 +1882,7 @@
 
     add-int/2addr v0, p1
 
-    .line 404
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1901,12 +1901,12 @@
         }
     .end annotation
 
-    .line 292
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 293
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1917,13 +1917,13 @@
 
     return-object p0
 
-    .line 296
     :cond_0
     new-instance v1, Landroid/util/SparseArray;
 
+    .line 3
     invoke-direct {v1}, Landroid/util/SparseArray;-><init>()V
 
-    .line 297
+    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -1933,17 +1933,17 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 299
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
-    .line 300
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 301
+    .line 7
     invoke-virtual {v1, v4, v5}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
     add-int/lit8 v3, v3, 0x1
@@ -1953,7 +1953,7 @@
     :cond_1
     add-int/2addr v0, p1
 
-    .line 303
+    .line 8
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -1973,12 +1973,12 @@
         }
     .end annotation
 
-    .line 413
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 414
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -1989,7 +1989,7 @@
 
     return-object p0
 
-    .line 417
+    .line 3
     :cond_0
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->createTypedArray(Landroid/os/Parcelable$Creator;)[Ljava/lang/Object;
 
@@ -1997,7 +1997,7 @@
 
     add-int/2addr v0, p1
 
-    .line 418
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object p2
@@ -2019,12 +2019,12 @@
         }
     .end annotation
 
-    .line 420
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 421
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -2035,7 +2035,7 @@
 
     return-object p0
 
-    .line 424
+    .line 3
     :cond_0
     invoke-virtual {p0, p2}, Landroid/os/Parcel;->createTypedArrayList(Landroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
 
@@ -2043,7 +2043,7 @@
 
     add-int/2addr v0, p1
 
-    .line 425
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object p2
@@ -2065,12 +2065,12 @@
         }
     .end annotation
 
-    .line 325
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 326
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -2081,15 +2081,15 @@
 
     return-object v1
 
-    .line 329
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
-    .line 330
     new-instance v3, Landroid/util/SparseArray;
 
+    .line 4
     invoke-direct {v3}, Landroid/util/SparseArray;-><init>()V
 
     const/4 v4, 0x0
@@ -2097,19 +2097,19 @@
     :goto_0
     if-ge v4, v2, :cond_2
 
-    .line 332
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v5
 
-    .line 333
+    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v6
 
     if-eqz v6, :cond_1
 
-    .line 334
+    .line 7
     invoke-interface {p2, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
     move-result-object v6
@@ -2119,7 +2119,7 @@
     :cond_1
     move-object v6, v1
 
-    .line 336
+    .line 8
     :goto_1
     invoke-virtual {v3, v5, v6}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
@@ -2130,7 +2130,7 @@
     :cond_2
     add-int/2addr v0, p1
 
-    .line 338
+    .line 9
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v3
@@ -2139,7 +2139,7 @@
 .method public static ensureAtEnd(Landroid/os/Parcel;I)V
     .locals 3
 
-    .line 480
+    .line 1
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -2148,23 +2148,23 @@
 
     return-void
 
-    .line 481
     :cond_0
     new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;
 
-    const/16 v1, 0x25
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const/16 v2, 0x25
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    .line 2
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v1, "Overread allowed size end="
+    const-string v2, "Overread allowed size end="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2174,11 +2174,9 @@
 .end method
 
 .method public static getFieldId(I)I
-    .locals 1
+    .locals 0
 
-    const v0, 0xffff
-
-    and-int/2addr p0, v0
+    int-to-char p0, p0
 
     return p0
 .end method
@@ -2188,10 +2186,10 @@
 
     const/4 v0, 0x4
 
-    .line 29
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 30
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2211,7 +2209,7 @@
 .method public static readBooleanObject(Landroid/os/Parcel;I)Ljava/lang/Boolean;
     .locals 2
 
-    .line 31
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result v0
@@ -2225,10 +2223,10 @@
     :cond_0
     const/4 v1, 0x4
 
-    .line 34
+    .line 2
     invoke-static {p0, p1, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;III)V
 
-    .line 35
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2255,10 +2253,10 @@
 
     const/4 v0, 0x4
 
-    .line 36
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 37
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2273,10 +2271,10 @@
 
     const/4 v0, 0x4
 
-    .line 38
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 39
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2291,10 +2289,10 @@
 
     const/16 v0, 0x8
 
-    .line 70
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 71
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide p0
@@ -2305,7 +2303,7 @@
 .method public static readDoubleObject(Landroid/os/Parcel;I)Ljava/lang/Double;
     .locals 2
 
-    .line 72
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result v0
@@ -2319,10 +2317,10 @@
     :cond_0
     const/16 v1, 0x8
 
-    .line 75
+    .line 2
     invoke-static {p0, p1, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;III)V
 
-    .line 76
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide p0
@@ -2339,10 +2337,10 @@
 
     const/4 v0, 0x4
 
-    .line 63
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 64
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readFloat()F
 
     move-result p0
@@ -2353,7 +2351,7 @@
 .method public static readFloatObject(Landroid/os/Parcel;I)Ljava/lang/Float;
     .locals 2
 
-    .line 65
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result v0
@@ -2367,10 +2365,10 @@
     :cond_0
     const/4 v1, 0x4
 
-    .line 68
+    .line 2
     invoke-static {p0, p1, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;III)V
 
-    .line 69
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->readFloat()F
 
     move-result p0
@@ -2385,7 +2383,7 @@
 .method public static readHeader(Landroid/os/Parcel;)I
     .locals 0
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2396,12 +2394,12 @@
 .method public static readIBinder(Landroid/os/Parcel;I)Landroid/os/IBinder;
     .locals 2
 
-    .line 92
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 93
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -2412,7 +2410,7 @@
 
     return-object p0
 
-    .line 96
+    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
@@ -2420,7 +2418,7 @@
 
     add-int/2addr v0, p1
 
-    .line 97
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -2431,10 +2429,10 @@
 
     const/4 v0, 0x4
 
-    .line 42
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 43
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2445,7 +2443,7 @@
 .method public static readIntegerObject(Landroid/os/Parcel;I)Ljava/lang/Integer;
     .locals 2
 
-    .line 44
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result v0
@@ -2459,10 +2457,10 @@
     :cond_0
     const/4 v1, 0x4
 
-    .line 47
+    .line 2
     invoke-static {p0, p1, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;III)V
 
-    .line 48
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2477,12 +2475,12 @@
 .method public static readList(Landroid/os/Parcel;ILjava/util/List;Ljava/lang/ClassLoader;)V
     .locals 1
 
-    .line 473
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 474
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -2491,13 +2489,13 @@
 
     return-void
 
-    .line 477
+    .line 3
     :cond_0
     invoke-virtual {p0, p2, p3}, Landroid/os/Parcel;->readList(Ljava/util/List;Ljava/lang/ClassLoader;)V
 
     add-int/2addr v0, p1
 
-    .line 478
+    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-void
@@ -2508,10 +2506,10 @@
 
     const/16 v0, 0x8
 
-    .line 49
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 50
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide p0
@@ -2522,7 +2520,7 @@
 .method public static readLongObject(Landroid/os/Parcel;I)Ljava/lang/Long;
     .locals 2
 
-    .line 51
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result v0
@@ -2536,10 +2534,10 @@
     :cond_0
     const/16 v1, 0x8
 
-    .line 54
+    .line 2
     invoke-static {p0, p1, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;III)V
 
-    .line 55
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide p0
@@ -2551,15 +2549,48 @@
     return-object p0
 .end method
 
+.method public static readPendingIntent(Landroid/os/Parcel;I)Landroid/app/PendingIntent;
+    .locals 2
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 2
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v0
+
+    if-nez p1, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    invoke-static {p0}, Landroid/app/PendingIntent;->readPendingIntentOrNullFromParcel(Landroid/os/Parcel;)Landroid/app/PendingIntent;
+
+    move-result-object v1
+
+    add-int/2addr v0, p1
+
+    .line 4
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
+
+    return-object v1
+.end method
+
 .method public static readShort(Landroid/os/Parcel;I)S
     .locals 1
 
     const/4 v0, 0x4
 
-    .line 40
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zza(Landroid/os/Parcel;II)V
+    .line 1
+    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->zzb(Landroid/os/Parcel;II)V
 
-    .line 41
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -2580,13 +2611,11 @@
 
     shr-int/lit8 p0, p1, 0x10
 
-    const p1, 0xffff
-
-    and-int/2addr p0, p1
+    int-to-char p0, p0
 
     return p0
 
-    .line 7
+    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2598,12 +2627,12 @@
 .method public static skipUnknownField(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 8
+    .line 1
     invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 9
+    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -2618,22 +2647,21 @@
 .method public static validateObjectHeader(Landroid/os/Parcel;)I
     .locals 5
 
-    .line 20
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
 
     move-result v0
 
-    .line 21
+    .line 2
     invoke-static {p0, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
 
     move-result v1
 
-    .line 22
+    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v2
 
-    .line 23
     invoke-static {v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
 
     move-result v3
@@ -2642,11 +2670,9 @@
 
     if-eq v3, v4, :cond_1
 
-    .line 24
     new-instance v1, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;
 
-    const-string v2, "Expected object header. Got 0x"
-
+    .line 4
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -2654,6 +2680,8 @@
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
+
+    const-string v2, "Expected object header. Got 0x"
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -2667,9 +2695,11 @@
 
     goto :goto_0
 
+    .line 6
     :cond_0
     new-instance v0, Ljava/lang/String;
 
+    .line 4
     invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     :goto_0
@@ -2682,7 +2712,7 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 26
+    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->dataSize()I
 
     move-result v0
@@ -2691,99 +2721,33 @@
 
     return v1
 
-    .line 27
     :cond_2
     new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;
 
-    const/16 v3, 0x36
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    const/16 v4, 0x36
 
-    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+    .line 6
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v3, "Size read is invalid start="
+    const-string v4, "Size read is invalid start="
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string v2, " end="
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-direct {v0, v1, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
-
-    throw v0
-.end method
-
-.method private static zza(Landroid/os/Parcel;II)V
-    .locals 4
-
-    .line 11
-    invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
-
-    move-result p1
-
-    if-ne p1, p2, :cond_0
-
-    return-void
-
-    .line 13
-    :cond_0
-    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;
-
-    .line 14
-    invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, 0x2e
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v2, "Expected size "
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p2, " got "
-
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " (0x"
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, ")"
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
     throw v0
 .end method
@@ -2795,11 +2759,10 @@
 
     return-void
 
-    .line 17
+    .line 1
     :cond_0
     new-instance p1, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;
 
-    .line 18
     invoke-static {p2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -2812,9 +2775,9 @@
 
     move-result v1
 
-    add-int/lit8 v1, v1, 0x2e
-
     new-instance v2, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v1, v1, 0x2e
 
     invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
@@ -2847,4 +2810,69 @@
     invoke-direct {p1, p2, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
     throw p1
+.end method
+
+.method private static zzb(Landroid/os/Parcel;II)V
+    .locals 4
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readSize(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    if-ne p1, p2, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;
+
+    .line 2
+    invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v2, v2, 0x2e
+
+    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v2, "Expected size "
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p2, " got "
+
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, " (0x"
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ")"
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
+
+    throw v0
 .end method

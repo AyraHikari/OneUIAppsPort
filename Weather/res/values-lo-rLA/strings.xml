@@ -33,6 +33,7 @@
     <string name="air_quality">ຄຸນນະພາບອາກາດ</string>
     <string name="air_quality_next_tts">ການພະຍາກອນຄຸນນະພາບອາກາດປະຈຳວັນພາຍຫຼັງ</string>
     <string name="air_quality_previous_tts">ການພະຍາກອນຄຸນນະພາບອາກາດປະຈຳວັນກ່ອນໜ້ານີ້</string>
+    <string name="alert_title">ການເຕືອນສະພາບອາກາດທີ່ຮ້າຍແຮງ</string>
     <string name="all_added_cities">ເມືອງທີ່ເພີ່ມທັງໝົດ</string>
     <string name="allow">ອະນຸຍາດ</string>
     <string name="allow_permission_in_settings">ເພື່ອໃຊ້ຄຸນສົມບັດນີ້, ທ່ານຈຳເປັນຕ້ອງອະນຸຍາດການອະນຸຍາດໃນການຕັ້ງຄ່າ.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">ການດໍາເນີນການບໍ່ໄດ້ຮັບການຮອງຮັບ.</string>
     <string name="apply_daylight_saving_time">ໃຊ້ການປະຢັດໄຟບໍ?</string>
     <string name="as_possible_after_verification">ສົ່ງລາຍງານແລ້ວ. ຊື່ເມືອງຈະຖືກປ່ຽນແປງທັນທີຫຼັງຈາກການກວດສອບ.</string>
+    <string name="auto_refresh_on_screen_description">ຮັບຂໍ້ມູນສະພາບອາກາດທີ່ຣີເຟຣຊໂດຍອັດຕະໂນມັດທຸກໆຊົ່ວໂມງ. ເມື່ອເປີດສິ່ງນີ້, ທ່ານບໍ່ສາມາດຣີເຟຣຊດ້ວຍຕົນເອງໄດ້.</string>
+    <string name="auto_refresh_on_the_go">ຣີເຟຣຊອັດຕະໂນມັດໃນຂະນະເດີນທາງ</string>
+    <string name="auto_refresh_on_the_go_advanced">ຂັ້ນສູງ</string>
+    <string name="auto_refresh_on_the_go_description">ຮັບການອັບເດດສະພາບອາກາດຖີ່ຂຶ້ນເມື່ອທ່ານກຳລັງຂັບຂີ່, ກຳລັງຂີລົດຖີບ, ກຳລັງແລ່ນ ຫຼື ກຳລັງຍ່າງ. ເມື່ອເປີດສິ່ງນີ້, ທ່ານບໍ່ສາມາດຣີເຟຣຊດ້ວຍຕົນເອງໄດ້.</string>
+    <string name="auto_refresh_on_the_go_simple_description">ຮັບການອັບເດດສະພາບອາກາດຖີ່ຂຶ້ນເມື່ອທ່ານກຳລັງຂັບຂີ່, ກຳລັງຂີລົດຖີບ, ກຳລັງແລ່ນ ຫຼື ກຳລັງຍ່າງ.</string>
     <string name="btn_report">ລາຍງານ</string>
     <string name="button_finish">ຈົບ</string>
     <string name="button_tts">ປຸ່ມ</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">ແຕະສອງຄັ້ງສຳລັບຂໍ້ມູນເພີ່ມເຕີມ.</string>
     <string name="china">ປະເທດຈີນ</string>
     <string name="cities_button">ເມືອງຕ່າງໆ</string>
+    <string name="city_added">ເພີ່ມເມືອງແລ້ວ.</string>
     <string name="city_list_text">ເມືອງຕ່າງໆ</string>
     <string name="clear">ແຈ້ງ</string>
     <string name="clear_then_cloudy">ແຈ່ມໃສ່ຈາກນັ້ນມີເມກບັງ</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">ລາຍການຕົກລົງໄປສູ່ຕໍາແໜ່ງ %d.</string>
     <string name="dragndroplist_drag_start">ເລີ່ມຕົ້ນລາກລາຍການຢູ່ທີ່ຕໍາແໜ່ງ %d ແລ້ວ.</string>
     <string name="dragndroplist_item_cannot_be_dragged">ລາຍການຢູ່ທີ່ຕໍາແໜ່ງ %d ບໍ່ສາມາດລາກໄປໄດ້.</string>
+    <string name="drawer_tips">ເຄັດລັບ %s</string>
     <string name="drawer_tips_message">ແຕະທີ່ນີ້ເພື່ອເພີ່ມ, ລຶບ, ແລະ ຈັດລຽງຈຸດທີ່ຕັ້ງຄືນໃໝ່. ນອກຈາກນີ້ ທ່ານຍັງສາມາດເພີ່ມຫຼາຍໆວິດເຈັດເພື່ອສະແດງຈຸດທີ່ຕັ້ງທີ່ແຕກຕ່າງກັນໃນໜ້າຈໍຫຼັກ.</string>
     <string name="drawer_tips_message_1">ແຕະ [ຈັດການຈຸດທີ່ຕັ້ງ] ທີ່ສ່ວນລຸ່ມສຸດຂອງເມນູນີ້ເພື່ອເພີ່ມ, ລຶບ, ແລະ ຈັດລຳດັບຈຸດທີ່ຕັ້ງຄືນໃໝ່.</string>
     <string name="drawer_tips_message_2">ທ່ານສາມາດເພີ່ມໄດ້ຫຼາຍກວ່າໜຶ່ງວິດເຈັດໃສ່ໜ້າຈໍຫຼັກ ເພື່ອສະແດງຈຸດທີ່ຕັ້ງອື່ນໆໃນເວລາດຽວກັນ.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">ເຜີຍແຜ່ວິດີໂອ</string>
     <string name="format_km_per_hour">%s ກມ/ຊມ</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">ສ</string>
     <string name="general">ທົ່ວໄປ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">ຮັບເອົາເນື້ອໃນທີ່ເຮັດເປັນສ່ວນຕົວຕາມວິທີທີ່ທ່ານໃຊ້ໂທລະສັບຂອງທ່ານ.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">ຮັບເອົາເນື້ອໃນທີ່ເຮັດເປັນສ່ວນຕົວຕາມວິທີທີ່ທ່ານໃຊ້ແທັບເລັດຂອງທ່ານ.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">ຮັບຂໍ້ມູນສະພາບອາກາດ, ລວມທັງຈຸດທີ່ຕັ້ງປະຈຸບັນຂອງທ່ານຈາກສະພາບອາກາດ</string>
     <string name="go_to_website">ໄປທີ່ເວັບໄຊທ໌</string>
     <string name="goto_apps">ມີການອັບເດດໃໝ່ຢູ່. ຕິດຕັ້ງດຽວນີ້ບໍ?</string>
     <string name="goto_apps_later">ພາຍຫຼັງ</string>
     <string name="goto_apps_now">ດຽວນີ້</string>
     <string name="goto_apps_update_title">ການເຕືອນເນື້ອໃນໃໝ່</string>
     <string name="header_tts">ສ່ວນຫົວ</string>
+    <string name="heavy">ໜັກ</string>
     <string name="heavy_rain">ຝົນຕົກໜັກ</string>
     <string name="heavy_rain_followed_by_intense_heat">ຝົນຕົກໜັກຫຼັງຈາກຄວາມຮ້ອນຈັດ</string>
     <string name="heavy_rain_followed_by_light_rain">ຝົນຕົກໜັກຫຼັງຈາກຄວາມຮ້ອນຈັດ</string>
@@ -210,7 +221,7 @@
     <string name="how_to_add_delete_set_location_as_favorite">ເພີ່ມ, ລຶບ ຫຼື ຕັ້ງ​ຈຸດ​ທີ່​ຕັ້ງ​ເປັນ​ລາຍ​ການ​ທີ່​ມັກ​ຂອງ​ທ່ານ.</string>
     <string name="how_to_add_hold_a_blank">ເພື່ອ​ເພີ່ມ​ວິດ​ເຈັດ​ສະ​ພາບ​ອາ​ກາດ​ໃສ່​ໜ້າ​ຈໍຫຼັກ:</string>
     <string name="how_to_change_the_location_appearance">ເພື່ອ​ປ່ຽນ​ຈຸດ​ທີ່​ຕັ້ງ ຫຼື ລັກ​ສະ​ນະ​ຂອງວິດ​ເຈັດ, ກົດ​ຄ້າງ​ໄວ້, ຈາກ​ນັ້ນແຕະ [ການ​ຕັ້ງ​ຄ່າ].</string>
-    <string name="how_to_favorite_location_used_in_location">ຈຸດ​ທີ່​ຕັ້ງ​ທີ່​ມັກ​ຂອງ​ທ່ານ​ຖືກ​ໃຊ້​ໃນ​ການ​ແຈ້ງ​ເຕືອນ, ປະ​ຕິ​ທິນ ແລະ Always On Display.</string>
+    <string name="how_to_favorite_location_used_in_location">ຈຸດທີ່ຕັ້ງທີ່ມັກຂອງທ່ານຖືກໃຊ້ໃນການແຈ້ງເຕືອນ, ປະຕິທິນ ແລະ Always On Display.</string>
     <string name="how_to_press_and_hold_space">ແຕະພື້ນທີ່ຫວ່າງເປົ່າຂອງໜ້າຈໍຫຼັກຄ້າງໄວ້, ຈາກນັ້ນແຕະ [ວິດເຈັດ].</string>
     <string name="how_to_press_and_hold_widget">ແຕະວິດເຈັດຄ້າງໄວ້ເພື່ອເລືອກມັນ.</string>
     <string name="how_to_search_or_swipe">ຊອກ​ຫາ ຫຼື ຮູດ​ເພື່ອ​ຊອກ​ຫາ​ສະ​ພາບ​ອາ​ກາດ.</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">ສະແດງໃຫ້ເຫັນ</string>
     <string name="life_index_wind">ລົມ</string>
     <string name="life_index_wind_force">ຄວາມໄວຂອງລົມ</string>
+    <string name="light">ແສງໄຟ</string>
     <string name="light_rain_followed_by_heavy_rain">ຝົນຕົກເລັກນ້ອຍຫຼັງຈາກຝົນຕົກໜັກ</string>
     <string name="light_rain_with_some_heavy_rain">ຝົນຕົກເລັກນ້ອຍພ້ອມກັບມີຝົນຕົກໜັກເປັນບາງແຫ່ງ</string>
     <string name="link_tts">ລິ້ງ</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">ບໍ່ພົບຜົນໄດ້ຮັບ.</string>
     <string name="message_service_not_available">ບໍລິການບໍ່ສາມາດໃຊ້ໄດ້ໃນຂະນະນີ້.</string>
     <string name="minus_tts">ລຶບ</string>
+    <string name="mon">ຈ</string>
     <string name="more">ເພີ່ມເຕີມ</string>
     <string name="more_cuntact_us">ຕິດຕໍ່ພວກເຮົາ</string>
     <string name="more_information">ເພີ່ມເຕີມ</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">ແຕະທີ່ນີ້ເພື່ອປ່ຽນຈຸດທີ່ຕັ້ງສະພາບອາກາດມາດຕະຖານ ແລະ ຈັດການຈຸດທີ່ຕັ້ງທັງໝົດຂອງທ່ານ.</string>
     <string name="new_version_available">ລຸ້ນໃໝ່ຂອງ %s ມີຢູ່.</string>
     <string name="new_version_is_available">ມີເວີເຊິນໃໝ່ໃຫ້ຢູ່.</string>
+    <string name="news_menu_show_news">ສະແດງຂ່າວ</string>
+    <string name="news_opt_in_banner_title_text">ຕິດຕາມຂ່າວຫຼ້າສຸດກ່ຽວກັບເຫດການປະຈຸບັນໂດຍການສະແດງຂ່າວໃນວິດເຈັດສະພາບອາກາດ.</string>
+    <string name="news_opt_in_popup_desc_text">ຕາມທັນໂລກໂດຍການສະແດງຫົວຂໍ້ຂ່າວຫຼ້າສຸດຈາກ %s ໃນວິດເຈັດສະພາບອາກາດ.</string>
+    <string name="news_opt_in_popup_title_text">ເບິ່ງຂ່າວ ແລະ ສະພາບອາກາດໃນວິດເຈັດດຽວ</string>
+    <string name="news_request_agree_text">ແຕະເພື່ອຮັບຂ່າວຈາກ %s</string>
+    <string name="news_widget_bubble_text">ຮັບຂ່າວພ້ອມກັບສະພາບອາກາດ.</string>
+    <string name="news_widget_dummy_title">ເລື່ອງຍອດນິຍົມຂອງມື້ນີ້</string>
+    <string name="news_widget_new_dummy_title">5 ສິ່ງທີ່ທ່ານຈຳເປັນຕ້ອງຮູ້ໃນຕອນເຊົ້ານີ້</string>
+    <string name="news_widget_oobe_text">ແຕະທີ່ນີ້ເພື່ອເພີ່ມຂ່າວ.</string>
     <string name="next">ເມືອງຕໍ່ໄປ</string>
+    <string name="next_btn">ຖັດໄປ</string>
     <string name="next_city">ແຕະສອງຄັ້ງເພື່ອເບິ່ງຂໍ້ມູນສະຖາບອາກາດສຳລັບເມືອງຖັດໄປ.</string>
     <string name="night_tts">ກາງຄືນ</string>
     <string name="no_application_available">ບໍ່ມີແອພພລິເຄຊັນຢູ່.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">ບໍ່ມີຂໍ້ມູນສະພາບອາກາດ</string>
     <string name="not_in_use">ບໍ່ໄດ້ໃຊ້ຢູ່</string>
     <string name="not_now">ບໍ່ແມ່ນຕອນນີ້</string>
+    <string name="not_now_btn">ບໍ່ແມ່ນດຽວນີ້</string>
     <string name="not_selected">ບໍ່ໄດ້ເລືອກ</string>
     <string name="nothing_selected">ບໍ່ມີອັນໃດໄດ້ເລືອກ.</string>
     <string name="noti">ແຈ້ງການ</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">ສໍາລັບການກວດຫາທີ່ຕັ້ງແບບໄວທີ່ສຸດ ແລະ ຖືກຕ້ອງທີ່ສຸດ, ແຕະ [ການຕັ້ງຄ່າ], ຈາກນັ້ນ, ກຳນົດວິທີຊອກຫາຈຸດ​ທີ່​ຕັ້ງ ຫາ GPS​​, Wi-Fi ແລະເຄືອຂ່າຍມືຖື.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">ສໍາລັບການກວດຫາທີ່ຕັ້ງແບບໄວທີ່ສຸດ ແລະ ຖືກຕ້ອງທີ່ສຸດ, ແຕະ [ການຕັ້ງຄ່າ] ຈາກນັ້ນ, ກຳນົດວິທີຊອກຫາຈຸດ​ທີ່​ຕັ້ງ ຫາ GPS ​​ແລະ Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">ເພື່ອເບິ່ງຂໍ້ມູນສະພາບອາກາດໃນທ້ອງຖິ່ນຂອງທ່ານ, ເປີດການຕັ້ງຄ່າຈຸດທີ່ຕັ້ງ ແລະເບິ່ງໃຫ້ແນ່ໃຈວ່າໂໝດຖືກຕັ້ງເປັນຄວາມຖືກຕ້ອງສູງແລ້ວ.</string>
+    <string name="notification_alert_channel_name">ການເຕືອນສະພາບອາກາດທີ່ຮ້າຍແຮງ</string>
     <string name="notification_apps_update_channel_name">ອັບເດດການແຈ້ງເຕືອນ</string>
     <string name="notification_auto_refresh_channel_name">ການຣີເຟຣຊສະພາບອາກາດອັດຕະໂນມັດ</string>
     <string name="notification_dex_channel_name">ສະພາບອາກາດໃນ Samsung DeX</string>
@@ -438,6 +463,7 @@
     <string name="open_app">ເປີດແອັບ</string>
     <string name="open_source_licences">ໃບອະນຸຍາດ Open source</string>
     <string name="other_locations">ຈຸດທີ່ຕັ້ງອື່ນ</string>
+    <string name="partly_sunny">ແດດກ້າເປັນບາງສ່ວນ</string>
     <string name="paused">ຢຸດຊົ່ວຄາວແລ້ວ</string>
     <string name="pd_km">%.1f ກມ</string>
     <string name="pd_km_h">%d km/ຊົ່ວໂມງ</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">ພະຍຸຝົນ: %d ມມ</string>
     <string name="preview">ການສະແດງຕົວຢ່າງ %s</string>
     <string name="previous">ເມືອງຜ່ານມາ</string>
+    <string name="previous_btn">ກ່ອນໜ້າ</string>
     <string name="previous_city">ແຕະສອງຄັ້ງເພື່ອເບິ່ງຂໍ້ມູນສະຖາບອາກາດສຳລັບເມືອງກ່ອນໜ້າ.</string>
     <string name="privacy_policy">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</string>
     <string name="probability_of_rain_text">ອາດຈະມີຝົນຕົກ</string>
     <string name="protect_your_content">ປ້ອງກັນເນື້ອໃນຂອງທ່ານ</string>
+    <string name="ps_in">%s ນິ້ວ</string>
+    <string name="ps_mm">%s ມມ</string>
     <string name="radar">ເຣດາ ແລະ ແຜນທີ່</string>
     <string name="rain">ຝົນ</string>
     <string name="rain_followed_by_intense_heat">ຝົນຕົກຫຼັງຈາກຄວາມຮ້ອນຈັດ</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">ເພື່ອອັບເດດຂໍ້ມູນສະພາບອາກາດ, ແຕະ [ການຕັ້ງຄ່າ], ໄປທີ່ຂໍ້ມູນແອັບ > ການອະນຸຍາດ, ຈາກນັ້ນອະນຸຍາດການອະນຸຍາດຕໍ່ໄປນີ້ ແລະລອງໃໝ່ອີກ:</string>
     <string name="runtime_location_permission_title">ອະນຸຍາດການອະນຸຍາດ</string>
     <string name="runtime_oem_grant_permission_desc">ແອັບ %s ໄດ້ຖືກອະນຸຍາດໃຫ້ເຂົ້າໃຊ້ດັ່ງຕໍ່ໄປນີ້:</string>
+    <string name="sat">ສ</string>
     <string name="save_button">ບັນທຶກ</string>
     <string name="search_most_searched_for">ຊອກ​ຫາແລ້ວສ່ວນ​ໃຫຍ່​​</string>
     <string name="search_tab_cities">ເມືອງ</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">ເນື້ອໃນໃໝ່ມີຢູ່</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">ເພີ່ມເຕີມ</string>
+    <string name="sesl_preferecne_badge_description">ການແຈ້ງເຕືອນໃໝ່</string>
     <string name="sesl_preferencecategory_added_title">ສ່ວນຫົວ</string>
     <string name="sesl_search_hint">ຄົ້ນຫາ</string>
     <string name="sesl_searchview_description_clear">ລຶບຊ່ອງຊອກຫາ</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">ກວດເບິ່ງການເຊື່ອມຕໍ່ເຄືອຂ່າຍຂອງ​ທ່ານແລະລອງໃໝ່ອີກ.</string>
     <string name="st_offline">ອອຟໄລນ໌</string>
     <string name="st_view_less">ເບິ່ງໜ້ອຍລົງ</string>
+    <string name="status_off">ປິດ</string>
+    <string name="status_on">ເປີດ</string>
+    <string name="sun">ອ.ທ</string>
     <string name="sunny">ແດດກ້າ</string>
     <string name="sunny_with_some_clouds">ແດດກ້າພ້ອມທັງມີເມກບາງສ່ວນ</string>
     <string name="sunny_with_some_heavy_rain">ແດດກ້າພ້ອມກັບມີຝົນຕົກໜັກເປັນບາງແຫ່ງ</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">ແຕະທີ່ນີ້ເພື່ອຣີສະຕໍຂໍ້ມູນສະພາບອາກາດຈາກອຸປະກອນເກົ່າຂອງທ່ານ.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">ແຕະ [ລອງໃໝ່ອີກ] ເພື່ອລອງຊອກຫາຈຸດທີ່ຕັ້ງຂອງທ່ານອີກ.</string>
     <string name="tap_setting_message_edge_panel">ເປີດຈຸດທີ່ຕັ້ງ ເພື່ອຮັບເອົາສະພາບອາກາດໃນທ້ອງຖິ່ນ.</string>
+    <string name="tap_the_settings_icon">ແຕະໄອຄອນການຕັ້ງຄ່າ.</string>
     <string name="tap_to_get_the_weather">ແຕະເພື່ອຮັບເອົາສະພາບອາກາດ</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">ຂໍ້ກໍານົດ ແລະເງື່ອນໄຂ</string>
     <string name="the_latest_version">ຕິດຕັ້ງລຸ້ນຫຼ້າສຸດຮຽບຮ້ອຍແລ້ວ.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">ນີ້ຍັງຈະນຳໃຊ້ກັບການແຈ້ງເຕືອນ ແລະ ປະຕິທິນ.</string>
+    <string name="thu">ພ.ຫ</string>
     <string name="tick_box_tts">ກ່ອງໝາຍເອົາ</string>
     <string name="ticked_tts">ໝາຍຕິກແລ້ວ</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">ຕໍ່ຊົ່ວໂມງ</string>
     <string name="title_select_locations">ເລືອກຈຸດທີ່ຕັ້ງ</string>
     <string name="title_theme">ຕີມ</string>
+    <string name="to_continue_agree_to_updated">ເພື່ອສືບຕໍ່, ເຫັນດີນຳ %s ທີ່ອັບເດດຂອງພວກເຮົາ.</string>
     <string name="to_get_local_weather_chn">"ເພື່ອຮັບຮູ້ສະພາບອາກາດທ້ອງຖິ່ນ, ທີ່​ຕັ້ງປັດຈຸບັນຂອງທ່ານຈະຖືກສົ່ງໄປໃຫ້ຜູ້ໃຫ້ການບໍລິການສະພາບອາກາດ. (ກະ​ລຸ​ນາ​ເບິ່ງ %1$sຂໍ້​ກຳ​ນົດ ແລະ ເງື່ອນ​ໄຂ%2$s ຂອງ​ຜູ້​ໃຫ້​ບໍ​ລິ​ການ ແລະ %3$sນະ​ໂຍ​ບາຍ​ຄວາມ​ເປັນ​ສ່ວນ​ຕົວ%4$s).
 ແອັບ ແລະ ການ​ບໍ​ລິ​ການ​ອື່ນ​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ອາດ​ຈະ​ເຂົ້າ​ເຖິງ​ຂໍ້​ມູນ​ສະ​ພາບ​ອາ​ກາດ​ທີ່​ໄດ້​ມາ​ເພື່ອ​ສະ​ແດງ​ສະ​ພາບ​ອາ​ກາດ​ຢູ່​ໃນ​ແອັບ​ເຫຼົ່າ​ນັ້ນ.
 ເພື່ອ​ໃຫ້​ຂໍ້​ມູນ​ສະ​ພາບ​ອາ​ກາດ​ຕໍ່​ເນື່ອງ​ແກ່​ທ່ານ, ສະ​ພາບ​ອາ​ກາດ​ຈະ​ມີ​ການ​ເຂົ້າ​ເຖິງ​ທີ່​ຕັ້ງ​ຂອງ​ທ່ານ, ແມ້​ແຕ່​ເມື່ອ​ທ່ານ​ບໍ່​ໃຊ້​ແອັບ​ຢູ່."</string>
     <string name="today">ມື້ນີ້</string>
+    <string name="try_it_out_btn">ລອງໃຊ້ມັນເບິ່ງ</string>
+    <string name="tue">ອ</string>
+    <string name="turn_on_to_use_precise_location">ເພື່ອໃຊ້ຄຸນສົມບັດນີ້, ທ່ານຈຳເປັນຕ້ອງອະນຸຍາດໃຫ້ %s ເຂົ້າໃຊ້ຈຸດທີ່ຕັ້ງຂອງທ່ານຕະຫຼອດເວລາ ແລະ ເປີດ ໃຊ້ຈຸດທີ່ຕັ້ງທີ່ຖືກຕ້ອງ. ແຕະ [ການຕັ້ງຄ່າ], ຈາກນັ້ນໄປທີ່ ການອະນຸຍາດ > ຈຸດທີ່ຕັ້ງ.</string>
     <string name="tw_title_weather_broadcast">ອອກອາກາດ</string>
-    <string name="unable_to_check_for_updates">ບໍ່ສາມາດກວດເບິ່ງການອັບເດດໄດ້. ບໍ່ມີການເຊື່ອມຕໍ່ເຄືອຂ່າຍ.</string>
+    <string name="unable_to_check_for_updates">ບໍ່ສາມາດກວດຫາອັບເດດໄດ້. ລອງໃໝ່ອີກພາຍຫຼັງ.</string>
     <string name="unable_to_receive_info_msg">ບໍ່ສາມາດຮັບຂໍ້ມູນໄດ້</string>
     <string name="unticked_tts">ເອົາໝາຍຕິກອອກ</string>
     <string name="unused">ບໍ່ໄດ້ໃຊ້</string>
     <string name="update">ອັບເດດ</string>
     <string name="update_abb8">ອັບເດດ</string>
     <string name="update_app">ອັບເດດແອັບ</string>
+    <string name="updated_tile_chn">ໄດ້ອັບເດດແລ້ວ: %s</string>
     <string name="updated_tts">ອັບເດດ %s ແລ້ວ</string>
+    <string name="use_current_location">ໃຊ້ທີ່ຕັ້ງປະຈຸບັນ</string>
     <string name="use_current_location_agree_popup">"ເພື່ອຮັບສະພາບອາກາດທ້ອງຖິ່ນ, ສະຖານທີ່ໃນປະຈຸບັນຂອງທ່ານຈະຖືກສົ່ງໄປໃຫ້ຜູ້ໃຫ້ການບໍລິການສະພາບອາກາດ. (ກະລຸນາເບິ່ງ %1$sນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ%2$s ຂອງຜູ້ໃຫ້ບໍລິການ).
 ແອັບຯອື່ນໆ ແລະ ການບໍລິການເທິງອຸປະກອນຂອງທ່ານອາດຈະເຂົາເຖິງຂໍ້ມູນສະພາບອາກາດທີ່ດຶງມາເພື່ອສະແດງສະພາບອາກາດໃນແອັບຯເຫຼົ່ານັ້ນ."</string>
     <string name="use_current_location_and_background_agree_popup">"ເພື່ອຮັບຮູ້ສະພາບອາກາດທ້ອງຖິ່ນ, ທີ່​ຕັ້ງປັດຈຸບັນຂອງທ່ານຈະຖືກສົ່ງໄປໃຫ້ຜູ້ໃຫ້ການບໍລິການສະພາບອາກາດ. (ກະ​ລຸ​ນາ​ເບິ່ງ%1$sນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ%2$s.)
@@ -635,9 +677,16 @@
 ທ່ານ​ສາ​ມາດ​ປິດ​ການ​ນຳ​ໃຊ້​ຈຸດ​ທີ່​ຕັ້ງ​ຂອງ​ທ່ານ​ໂດຍ​ການ​ໄປ​ທີ່​ການ​ຕັ້ງ​ຄ່າ​ແອັບ​ສະ​ພາບ​ອາ​ກາດ."</string>
     <string name="use_current_location_body_msg_chn">"ກະ​ລຸ​ນາ​ອ່ານ​ໃຫ້​ລະ​ອຽດ​ກ່ອນ​ນຳ​ໃຊ້ “ອາກາດ” :
 ຖ້າ​ທ່ານ​ຕ້ອງ​ການ​ຮູ້​ສະ​ພາບ​ອາ​ກາດ​ຂອງຈຸດທີ່ຕັ້ງປະຈຸບັນ​ຂອງ​ທ່ານ, ທ່ານ​ຈະ​ຕ້ອງ​ອະ​ນຸ​ຍາດ​ໃຫ້​ຜູ້​ໃຫ້​ການບໍ​ລິ​ການພາກ​ສ່ວນ​ທີ​ສາມມີ​ການ​ເຂົ້າ​ເຖິງ​ອຸ​ປະ​ກອນ ແລະ ເອົາ​ຂໍ້​ມູນ​ສະ​ເພາະ​ຢ່າງ​ຕໍ່​ເນື່ອງ (ເຖິງ​ແມ່ນ​ວ່າ​ເມື່ອ​ທ່ານ​ບໍ່​ໃຊ້​ບໍ​ລິ​ການ​ກໍ​ຕາມ), ດັ່ງ​ທີ່​ເຮັດ​ເປັນ​ລາຍ​ການ​ໄວ້​ຢູ່​ລຸ່ມ​ນີ້. ກະ​ລຸ​ນາ​ອ່ານ​ໃຫ້​ລະ​ອຽດ ແລະ ເຂົ້າ​ໃຈ%1$sຂໍ້ກໍານົດ ແລະເງື່ອນໄຂ%2$s ແລະ %3$s​ນະ​ໂຍ​ບາຍ​ຄວາມ​ເປັນ​ສ່ວນ​ຕົວ%4$sຂອງຜູ້ໃຫ້ການບໍລິການ​ພາກ​ສ່ວນ​ທີ​ສາມ​ກ່ອນ​ໃຫ້​ການ​ອະ​ນຸ​ຍາດ​ດັ່ງ​ກ່າວ. ທ່ານ​ອາດ​ຈະ​ຖອນ​ການ​ອະ​ນຸ​ຍາດ​ຂອງ​ທ່ານ​ໄດ້​ໂດຍ​ການ​ປິດ “ຈຸດທີ່ຕັ້ງ” ຢູ່​ໃນ​ເມ​ນູ​ການ​ຕັ້ງ​ຄ່າ. ແອັບ ​ແລະ ບໍ​ລິ​ການອື່ນໆໃນອຸປະກອນຂອງທ່ານອາດຈະເຂົ້າເຖິງຂໍ້ມູນອາກາດທີ່​ເກັບ​ໄວ້ເພື່ອສະແດງສະພາບອາກາດຢູ່ໃນແອັບ ແລະ ບໍ​ລິ​ການເຫຼົ່ານັ້ນ."</string>
+    <string name="use_current_location_body_msg_kor">"ຈຸດທີ່ຕັ້ງປະຈຸບັນຂອງທ່ານຈະຖືກເກັບກຳ ແລະ ຖືກໃຊ້ເພື່ອໃຫ້ບາງຄຸນສົມບັດແອັບສະພາບອາກາດ ເຊັ່ນ ການຮັບຂໍ້ມູນສະພາບອາກາດໃນທ້ອງຖິ່ນຂອງທ່ານ.
+
+ເພື່ອໃຫ້ຂໍ້ມູນສະພາບອາກາດຢ່າງຕໍ່ເນື່ອງ, ແອັບນີ້ຈະປະມວນຜົນຈຸດທີ່ຕັ້ງຂອງທ່ານເປັນປະຈຳ, ເຖິງແມ່ນວ່າເມື່ອທ່ານບໍ່ໄດ້ໃຊ້ແອັບກໍຕາມ. ໂດຍສືບຕໍ່, ທ່ານເຫັນດີນຳການເກັບກຳ ແລະ ການປະມວນຜົນຈຸດທີ່ຕັ້ງຂອງທ່ານເພື່ອຈຸດປະສົງຂ້າງເທິງ.
+
+ທ່ານສາມາດຢຸດການເກັບກຳ ແລະ ການນຳໃຊ້ຈຸດທີ່ຕັ້ງນີ້ໄດ້ໃນການຕັ້ງຄ່າແອັບສະພາບອາກາດ."</string>
     <string name="use_current_location_body_purpose">ຈຸດປະສົງ</string>
     <string name="use_current_location_body_purpose_content">ເພື່ອ​ໃຫ້​ຂໍ້​ມູນ​ສະ​ພາບ​ອາ​ກາດ​ສຳ​ລັບຈຸດທີ່ຕັ້ງປະຈຸບັນ​ຂອງ​ທ່ານ</string>
     <string name="use_current_location_body_search_provider">ຜູ້ໃຫ້ການບໍລິການ</string>
+    <string name="use_current_location_continue">ສືບຕໍ່</string>
+    <string name="use_current_location_not_now">ບໍ່ແມ່ນດຽວນີ້</string>
     <string name="use_current_location_off_alert_popup">ຂໍ້​ມູນ​ທີ່​ຕັ້ງ​ປະ​ຈຸ​ບັນ​ຈະ​ຖືກ​ເອົາ​ອອກ​ໄປ.</string>
     <string name="useful_informations">ເຄັດລັບຊີວິດ ແລະ ລາຍງານອື່ນໆ</string>
     <string name="using_as">ການໃຊ້ເປັນ %s</string>
@@ -746,9 +795,11 @@
     <string name="weather_tip">ຄໍາແນະນໍາສະພາບອາກາດ</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">ພ</string>
     <string name="weekly_forecast">ປະຈຳວັນ</string>
     <string name="widget_background">ພື້ນຫຼັງວິດເຈັດ</string>
     <string name="widget_empty_text">ແຕະສຳລັບຂໍ້ມູນອາກາດ</string>
+    <string name="widget_location">ຊື່ເມືອງ</string>
     <string name="widget_name_4x1">ສະພາບອາກາດ ແລະໂມງ</string>
     <string name="widget_setting">ການຕັ້ງຄ່າ</string>
     <string name="widget_setting_background_color">ສີພື້ນຫຼັງ</string>

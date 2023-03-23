@@ -40,6 +40,14 @@
 # virtual methods
 .method public cancelIndentifyWithIris(Landroid/os/CancellationSignal;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cancellationSignal"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -90,6 +98,14 @@
 
 .method public initialize(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 45
     :try_start_0
@@ -197,6 +213,22 @@
 
 .method public startIdentifyWithIris(Landroid/content/Context;Landroid/view/View;[BLandroid/os/CancellationSignal;Lcom/samsung/android/camera/sdk/iris/SIrisManager$AuthenticationCallback;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "view",
+            "challenge",
+            "cancellationSignal",
+            "callback"
+        }
+    .end annotation
 
     .line 78
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/auth/util/IrisHelper;->initialize(Landroid/content/Context;)V

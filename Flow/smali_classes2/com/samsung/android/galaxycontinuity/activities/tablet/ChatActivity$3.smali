@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 215
+    .line 216
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -34,8 +42,18 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
-    .line 218
+    .line 219
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
@@ -48,7 +66,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 219
+    .line 220
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->finish()V

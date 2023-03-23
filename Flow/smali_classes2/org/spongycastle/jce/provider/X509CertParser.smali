@@ -304,15 +304,13 @@
     if-eqz v0, :cond_1
 
     .line 108
-    iget v0, p0, Lorg/spongycastle/jce/provider/X509CertParser;->sDataObjectCount:I
+    iget v2, p0, Lorg/spongycastle/jce/provider/X509CertParser;->sDataObjectCount:I
 
-    iget-object v2, p0, Lorg/spongycastle/jce/provider/X509CertParser;->sData:Lorg/spongycastle/asn1/ASN1Set;
+    invoke-virtual {v0}, Lorg/spongycastle/asn1/ASN1Set;->size()I
 
-    invoke-virtual {v2}, Lorg/spongycastle/asn1/ASN1Set;->size()I
+    move-result v0
 
-    move-result v2
-
-    if-eq v0, v2, :cond_0
+    if-eq v2, v0, :cond_0
 
     .line 110
     invoke-direct {p0}, Lorg/spongycastle/jce/provider/X509CertParser;->getCertificate()Ljava/security/cert/Certificate;

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/edit_home_header" android:text="@string/settings_customization" style="@style/SubHeader" />
+    <TextView android:textSize="@dimen/home_list_item_text_size" android:textColor="@color/list_item_text1" android:gravity="center_vertical" android:id="@id/edit_home_title" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/list_item_text_vertical_padding" android:paddingBottom="@dimen/list_item_text_vertical_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner" android:minHeight="@dimen/basic_list_item_one_line_height" android:text="@string/customize_my_files_home" android:paddingStart="@dimen/basic_list_item_padding_left" android:paddingEnd="@dimen/basic_list_item_padding_left" />
+</LinearLayout>

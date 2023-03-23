@@ -33,6 +33,7 @@
     <string name="air_quality">एअर दर्जा</string>
     <string name="air_quality_next_tts">नंतर दैनिक हवा गुणवत्ता पुर्वानुमाने</string>
     <string name="air_quality_previous_tts">पूर्वीची दैनिक हवा गुणवत्ता पुर्वानुमाने</string>
+    <string name="alert_title">तीव्र हवामान इशारा</string>
     <string name="all_added_cities">सर्व जोडलेली शहरे</string>
     <string name="allow">अनुमती द्या</string>
     <string name="allow_permission_in_settings">हे वैशिष्‍ट्य वापरण्या साठी, आपल्याला सेटिंग्स मध्ये परवानगीला अनुमती देण्याची आवश्यकता आहे.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">कार्य समर्थित नाही.</string>
     <string name="apply_daylight_saving_time">डेलाइट सेव्हिंग वेळ लागू करायची?</string>
     <string name="as_possible_after_verification">अहवाल पाठवला. पडताळणी नंतर शक्य तेवढ्या नंतर शहर नाव बदलले जाईल.</string>
+    <string name="auto_refresh_on_screen_description">दर तासाला स्वयंचलितपणे रिफ्रेश हवामान माहिती मिळवा. जेव्हा हे चालू असते, तेव्हा आपण व्यक्तिचलित पणे रिफ्रेश करू शकत नाही.</string>
+    <string name="auto_refresh_on_the_go">जाता जाता स्‍वयं रिफ्रेश करा</string>
+    <string name="auto_refresh_on_the_go_advanced">प्रगत</string>
+    <string name="auto_refresh_on_the_go_description">आपण गाडी चालवत असताना, बाइक चालवत असताना, धावत असताना, किंवा चालत असताना अधिक वारंवार हवामान अद्ययावते मिळवा. जेव्हा हे चालू असते, तेव्हा आपण व्यक्तिचलितपणे रिफ्रेश करू शकत नाही.</string>
+    <string name="auto_refresh_on_the_go_simple_description">आपण गाडी चालवत असताना, बाइक चालवत असताना, धावत असताना, किंवा चालत असताना अधिक वारंवार हवामान अद्ययावते मिळवा.</string>
     <string name="btn_report">अहवाल</string>
     <string name="button_finish">समाप्त</string>
     <string name="button_tts">बटण</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">अधिक माहितीसाठी दोनदा टॅप करा.</string>
     <string name="china">चीन</string>
     <string name="cities_button">शहर</string>
+    <string name="city_added">शहर जोडले.</string>
     <string name="city_list_text">शहर</string>
     <string name="clear">पुसा</string>
     <string name="clear_then_cloudy">आधी निरभ्र नंतर ढगाळ.</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">%d जागेवर आयटेम्स ड्रॉप केले.</string>
     <string name="dragndroplist_drag_start">%d जागेवर आयटेम ड्रॅग करणे सुरू करा.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d जागेवरील आयटेम्स ड्रॅग केले जाऊ शकत नाहीत.</string>
+    <string name="drawer_tips">%s टिपा</string>
     <string name="drawer_tips_message">स्थाने जोडण्या साठी, हटवण्या साठी आणि पुन्हा क्रम लावण्या साठी येथे टॅप करा. मुख्‍य स्‍क्रीन वर भिन्न स्थाने दर्शवण्या साठी आपण बहुविध विजेट देखील जोडू शकता.</string>
     <string name="drawer_tips_message_1">जोडण्या साठी, हटवण्या साठी आणि स्थान रेकॉर्डर करण्या साठी या मेनूच्या तळाशी असलेली “स्थाने व्यवस्थापित करा” टॅप करा.</string>
     <string name="drawer_tips_message_2">एकाच वेळी भिन्न स्थाने दर्शवण्या साठी आपण मुख्य स्क्रीन वर एका पेक्षा अधिक विजेट जोडू शकता.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">पूर्वानुमान व्हिडिओ</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">शुक्र</string>
     <string name="general">साधारण</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">आपण आपला फोन कसा वापरता यावर आधारित वैयक्तिकृत सामग्री प्राप्त करा.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">आपण आपला टॅबलेट कसा वापरता यावर आधारित वैयक्तिकृत सामग्री प्राप्त करा.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">हवामान वरून आपल्या वर्तमान स्थानासह हवामान माहिती मिळवा</string>
     <string name="go_to_website">वेबसाइट वर जा</string>
     <string name="goto_apps">नवीन अद्ययावत उपलब्ध. आता इंस्टॉल करायचे?</string>
     <string name="goto_apps_later">नंतर</string>
     <string name="goto_apps_now">आता</string>
     <string name="goto_apps_update_title">नवीन सामग्री अलर्टस</string>
     <string name="header_tts">हेडर</string>
+    <string name="heavy">जड</string>
     <string name="heavy_rain">जोरदार पाऊस</string>
     <string name="heavy_rain_followed_by_intense_heat">जोरदार पावसा नंतर तीव्र उष्मा.</string>
     <string name="heavy_rain_followed_by_light_rain">जोरदार पावसा नंतर तीव्र उष्मा.</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">दृश्‍यमानता</string>
     <string name="life_index_wind">वारा</string>
     <string name="life_index_wind_force">वाऱ्याची गती</string>
+    <string name="light">हलके</string>
     <string name="light_rain_followed_by_heavy_rain">हलक्या पावसा नंतर जोरदार पाऊस.</string>
     <string name="light_rain_with_some_heavy_rain">अधुन मधून जोरदार सरींसह हलका पाऊस.</string>
     <string name="link_tts">लिंक</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">कोणतेही परिणाम सापडले नाहीत.</string>
     <string name="message_service_not_available">आता सेवा उपलब्ध नाही.</string>
     <string name="minus_tts">वजा</string>
+    <string name="mon">सोम</string>
     <string name="more">आणखी</string>
     <string name="more_cuntact_us">आमच्‍याशी संपर्क साधा</string>
     <string name="more_information">अधिक</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">डिफॉल्ट हवामान स्थान बदलण्या साठी आणि आपली सर्व स्थाने व्यवस्थापित करण्या साठी येथे टॅप करा.</string>
     <string name="new_version_available">%s ची नवीन आवृत्‍ती उपलब्‍ध आहे.</string>
     <string name="new_version_is_available">नवी आवृत्ती उपलब्‍ध आहे.</string>
+    <string name="news_menu_show_news">बातम्या दाखवा</string>
+    <string name="news_opt_in_banner_title_text">हवामान विजेटवर बातम्या दाखवून चालू घडामोडींवर अद्ययावत रहा.</string>
+    <string name="news_opt_in_popup_desc_text">हवामान विजेटवर %s कडील नवीनतम ठळक बातम्या दाखवून जगासह अद्ययावत रहा.</string>
+    <string name="news_opt_in_popup_title_text">एका विजेटमध्ये बातम्या आणि हवामान पहा</string>
+    <string name="news_request_agree_text">%s कडून बातम्या मिळवण्यासाठी टॅप करा</string>
+    <string name="news_widget_bubble_text">हवामानासह बातम्या मिळवा.</string>
+    <string name="news_widget_dummy_title">आजची शीर्ष स्टोरी</string>
+    <string name="news_widget_new_dummy_title">आज सकाळी आपल्याला 5 गोष्टी माहित असणे आवश्यक आहे</string>
+    <string name="news_widget_oobe_text">बातम्या जोडण्यासाठी येथे टॅप करा.</string>
     <string name="next">पुढील शहर</string>
+    <string name="next_btn">पुढील</string>
     <string name="next_city">पुढील शहरासाठी हवामान माहिती पाहण्याकरिता दोनदा टॅप करा.</string>
     <string name="night_tts">रात्र</string>
     <string name="no_application_available">कोणतीही ऍप्लिकेशन्स उपलब्ध नाहीत.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">कोणतीही हवामान माहिती नाही</string>
     <string name="not_in_use">वापरात नाही</string>
     <string name="not_now">आता नाही</string>
+    <string name="not_now_btn">आत्ता नाही</string>
     <string name="not_selected">निवडलेले नाही</string>
     <string name="nothing_selected">काहीही निवडलेले नाही.</string>
     <string name="noti">सूचना</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">अधिक जलद आणि अधिक अचूक स्थान शोधासाठी, “सेटिंग्स” टॅप करा, नंतर स्थान पद्धत GPS आणि Wi-Fi वर सेट करा.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">अधिक जलद आणि अधिक अचूक स्थान शोधासाठी, “सेटिंग्स” टॅप करा, नंतर स्थान पद्धत GPS आणि Wi-Fi वर सेट करा.</string>
     <string name="notice_gps_trun_off_message_verizon">आपली स्थानिक हवामान माहिती पाहण्या साठी, स्थान सेवा चालू करा आणि मोड उच्च अचूकता वर सेट केला असल्याची खात्री करा.</string>
+    <string name="notification_alert_channel_name">तीव्र हवामान इशारा</string>
     <string name="notification_apps_update_channel_name">अधिसूचना अद्ययावत करा</string>
     <string name="notification_auto_refresh_channel_name">हवामान स्वयं रिफ्रेश</string>
     <string name="notification_dex_channel_name">Samsung DeX मधील हवामान</string>
@@ -438,6 +463,7 @@
     <string name="open_app">अनुप्रयोग उघडा</string>
     <string name="open_source_licences">खुला स्त्रोत परवाने</string>
     <string name="other_locations">अन्य स्थाने</string>
+    <string name="partly_sunny">अंशतः सूर्यप्रकाशित.</string>
     <string name="paused">विराम दिला</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">अवक्षेपण: %d mm</string>
     <string name="preview">%s पूर्वावलोकन</string>
     <string name="previous">मागील शहर</string>
+    <string name="previous_btn">मागील</string>
     <string name="previous_city">मागील शहरासाठी हवामान माहिती पाहण्याकरिता दोनदा टॅप करा.</string>
     <string name="privacy_policy">गोपनीयता धोरण</string>
     <string name="probability_of_rain_text">पाऊसाची शक्‍यता</string>
     <string name="protect_your_content">आपली सामग्री संरक्षित करा</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">रडार आणि नकाशे</string>
     <string name="rain">पाऊस</string>
     <string name="rain_followed_by_intense_heat">पावसानंतर तीव्र उष्मा.</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">हवामान माहिती अद्ययावत करण्या साठी, “सेटिंग्स” टॅप करा, अनुप्रयोग माहिती > परवानग्‍या वर जा, नंतर खालील परवानग्‍यांना अनुमती द्या आणि पुन्‍हा प्रयत्‍न करा:</string>
     <string name="runtime_location_permission_title">परवानग्‍यांना अनुमती द्या</string>
     <string name="runtime_oem_grant_permission_desc">%s अनुप्रयोगाला खालील गोष्टी ऍक्सेस करण्याची अनुमती आहे:</string>
+    <string name="sat">शनि</string>
     <string name="save_button">जतन करा</string>
     <string name="search_most_searched_for">च्‍यासाठी अधिक शोधलेले</string>
     <string name="search_tab_cities">शहरे</string>
@@ -510,7 +540,7 @@
     <string name="selected">निवडले</string>
     <string name="sending">पाठवत आहे…</string>
     <string name="service_is_not_available_temporarily">तात्पुरती सेवा उपलब्ध नाही.</string>
-    <string name="sesl_action_bar_up_description">वरती नेव्हिगेट करा.</string>
+    <string name="sesl_action_bar_up_description">वर नेव्हिगेट करा.</string>
     <string name="sesl_action_menu_overflow_badge_description">नवीन सामग्री उपलब्ध</string>
     <string name="sesl_action_menu_overflow_badge_text_n">नव.</string>
     <string name="sesl_action_menu_overflow_description">अधिक पर्याय</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">नवीन सामग्री उपलब्ध</string>
     <string name="sesl_material_overflow_badge_text_n">नव.</string>
     <string name="sesl_more_item_label">अधिक</string>
+    <string name="sesl_preferecne_badge_description">नवीन अधिसूचना</string>
     <string name="sesl_preferencecategory_added_title">हेडर</string>
     <string name="sesl_search_hint">शोधा</string>
     <string name="sesl_searchview_description_clear">शोध क्षेत्र साफ करा</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">आपले नेटवर्क कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.</string>
     <string name="st_offline">ऑफलाइन</string>
     <string name="st_view_less">कमी पहा</string>
+    <string name="status_off">बंद</string>
+    <string name="status_on">चालू</string>
+    <string name="sun">रवि</string>
     <string name="sunny">सूर्यप्रकाशित</string>
     <string name="sunny_with_some_clouds">थोड्याशा ढगांसह ऊन.</string>
     <string name="sunny_with_some_heavy_rain">थोड्या जोरदार पावसा सह ऊन.</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">आपल्या जुन्या उपकरणा वरून हवामान डेटा पूर्वस्थित करण्या साठी येथे टॅप करा.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">आपले स्थान पुन्हा शोधण्याचा प्रयत्न करण्या साठी “पुनःप्रयत्न करा” टॅप करा.</string>
     <string name="tap_setting_message_edge_panel">स्थानिक हवामान प्राप्त करण्या साठी स्थान चालू करा.</string>
+    <string name="tap_the_settings_icon">सेटिंग्स आयकॉन टॅप करा.</string>
     <string name="tap_to_get_the_weather">हवामान प्राप्त करण्या साठी टॅप करा</string>
     <string name="temp_f_c">%d° फेरानाइड</string>
     <string name="temp_f_m">%d° सेल्सिअस</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">अटी आणि शर्ती</string>
     <string name="the_latest_version">नवीनतम आवृत्‍ती आधीपासूनच इन्‍स्‍टॉल केली आहे.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">हे अधिसूचना आणि दिनदर्शिके वर देखील लागू केले जाईल.</string>
+    <string name="thu">गुरु</string>
     <string name="tick_box_tts">चेकबॉक्स</string>
     <string name="ticked_tts">टिक केलेले</string>
     <string name="time_am">AM</string>
@@ -611,23 +647,29 @@
     <string name="times_forecast">ताशी</string>
     <string name="title_select_locations">स्थान निवडा</string>
     <string name="title_theme">थीम्स</string>
+    <string name="to_continue_agree_to_updated">सुरू ठेवण्यासाठी, आमच्या अद्ययावत केलेल्या %s ला सहमती द्या.</string>
     <string name="to_get_local_weather_chn">"स्थानिक हवामान मिळवण्यास, आपले वर्तमान स्थान हवामान सेवा प्रदात्याला पाठवले जाईल. (कृपया प्रदात्याच्या %1$sअटी आणि शर्ती%2$s आणि %3$sगोपनीयता धोरण%4$s).
 आपल्या उपकरण वरील अन्य अॅप्स आणि सेवांना त्या अॅप्समध्ये हवामान दाखविण्यास पुर्नप्राप्त केेलेल्या डेटा मध्ये प्रवेश करू शकतात.
 आपणाला सातत्याने हवामान माहिती प्रदान करण्य़ाच्या दृष्टीने, हवामानाला आपले स्थान आपण अॅप वापरत नसला तरी देखील त्यामध्ये त्याला प्रवेश असेल."</string>
     <string name="today">आज</string>
+    <string name="try_it_out_btn">ते वापरून पहा</string>
+    <string name="tue">मंगळ</string>
+    <string name="turn_on_to_use_precise_location">हे वैशिष्‍ट्य वापरण्‍यासाठी, आपल्याला %s ला आपल्या स्‍थानावर नेहमी ऍक्सेस करण्‍याची अनुमती द्यावी लागेल आणि अचूक स्थान वापरा चालू करा. “सेटिंग्स” वर टॅप करा, नंतर परवानग्या > स्थान वर जा.</string>
     <string name="tw_title_weather_broadcast">ब्रॉडकास्ट करा</string>
-    <string name="unable_to_check_for_updates">अद्यतने तपासण्यात अक्षम. नेटवर्क कनेक्शन नाही.</string>
+    <string name="unable_to_check_for_updates">अद्ययावतां साठी तपासू शकलो नाही. नंतर पुन्हा प्रयत्न करा.</string>
     <string name="unable_to_receive_info_msg">माहिती प्राप्त करण्यात अक्षम</string>
     <string name="unticked_tts">अनटिक केलेले</string>
     <string name="unused">न वापरलेले</string>
     <string name="update">अद्यावत</string>
     <string name="update_abb8">अद्ययावत करा</string>
     <string name="update_app">अनुप्रयोग अद्ययावत करा</string>
+    <string name="updated_tile_chn">अद्ययावत केलेले: %s</string>
     <string name="updated_tts">%s अद्ययावत केले</string>
+    <string name="use_current_location">वर्तमान स्‍थान वापरा</string>
     <string name="use_current_location_agree_popup">"स्थानिक हवामान मिळवण्यासाठी, आपले वर्तमान स्थान हवामान सेवा प्रदात्याला पाठवले जाईल. (कृपया प्रदात्याचे %1$sगोपनीयता धोरण%2$s पहा.)
 आपल्या उपकरणावरील इतर अनुप्रयोग आणि सेवा त्या अनुप्रयोगांमध्ये हवामान दर्शवण्यासाठी पुनर्प्राप्त केलेला हवामान डेटा प्रवेशू शकतात."</string>
-    <string name="use_current_location_and_background_agree_popup">"स्थानिक हवामान मिळवण्यास, आपले वर्तमान स्थान हवामान सेवा प्रदात्याला पाठवले जाईल. (कृपया प्रदात्याचे %1$sगोपनीयता धोरण%2$sपहा.)
-आपल्या उपकरण वरील अन्य अॅप्स आणि सेवांना त्या अॅप्समध्ये हवामान दाखविण्यास पुर्नप्राप्त केेलेल्या डेटा मध्ये प्रवेश करू शकतात.
+    <string name="use_current_location_and_background_agree_popup">"स्थानिक हवामान मिळवण्यास, आपले वर्तमान स्थान हवामान सेवा प्रदात्याला पाठवले जाईल. (कृपया प्रदात्याचे %1$sगोपनीयता धोरण%2$s पहा.)
+आपल्या उपकरण वरील अन्य ॲप्स आणि सेवांना त्या ॲप्समध्ये हवामान दाखविण्यास पुर्नप्राप्त केलेल्या डेटा मध्ये प्रवेश करू शकतात.
 आपणाला सातत्याने हवामान माहिती प्रदान करण्य़ाच्या दृष्टीने, हवामानाला आपले स्थान आपण अॅप वापरत नसला तरी देखील त्यामध्ये त्याला प्रवेश असेल."</string>
     <string name="use_current_location_body_data_required_permission">डेटा / आवश्यक परवानग्या</string>
     <string name="use_current_location_body_location">स्थान</string>
@@ -635,9 +677,16 @@
 तुम्ही हवामान अनुप्रयोग सेटिंग्स मध्ये जाऊन तुमचे स्थान वापरून बंद करू शकता."</string>
     <string name="use_current_location_body_msg_chn">"कृपया “हवामान” वापरण्यापूर्वी काळजीपूर्वक वाचा:
 जर तुम्हाला तुमच्या वर्तमान स्थान चे हवामान जाणून घ्यावयाचे असल्यास, तुम्हाला तृतीय पक्ष सेवा प्रदात्यांना सातत्याने (अगदी जेव्हा तुम्ही सेवा वापरत नसाल तेव्हा देखील) तुमच्या उपकरण आणि विशिष्ट डेटा प्राप्त करण्याचा अॅक्सेस करण्याची परवानगी देण्याची गरज आहे, जसा खाली सूचीबद्ध करण्यात आलेला आहे. कृपया अशी परवानगी देण्यापूर्वी तृतीय पक्ष सेवा प्रदाताचे %1$sअटी आणि शर्ती%2$s आणि %3$sगोपनीयता धोरण%4$s काळजीपूर्वक वाचा आणि समजावून घ्या. तुम्ही सेटिंग्स मेनू मध्ये “स्थान” बंद करून तुमची परवानगी काढून घेऊ शकता. तुमच्या उपकरणावरील इतर अनुप्रयोग आणि सेवा त्या अनुप्रयोग आणि सेवांमध्ये हवामान दर्शवण्यासाठी पुनर्प्राप्त केलेला हवामान डेटा मध्ये अॅक्सेस करू शकतात."</string>
+    <string name="use_current_location_body_msg_kor">"आपले वर्तमान स्थान संकलित केले जाईल आणि हवामान ऍपची काही वैशिष्ट्ये प्रदान करण्यासाठी वापरली जाईल, जसे की आपले स्थानिक हवामान जाणून घेणे.
+
+सतत हवामान माहिती देण्यासाठी, आपण ऍप वापरत नसतानाही हा ऍप आपल्या स्थानावर नियमितपणे प्रक्रिया करेल. सुरू ठेवून, आपण वरील उद्देशांसाठी आपल्या स्थानाचे संकलन आणि प्रक्रिया करण्यास सहमती देता.
+
+आपण हवामान ऍप सेटिंग्स मध्ये हे स्थान संकलन आणि वापर थांबवू शकता."</string>
     <string name="use_current_location_body_purpose">उद्देश</string>
     <string name="use_current_location_body_purpose_content">तुमच्या वर्तमान स्थान साठी हवामान माहिती प्रदान करण्यास</string>
     <string name="use_current_location_body_search_provider">सेवा प्रदाता</string>
+    <string name="use_current_location_continue">चालू ठेवा</string>
+    <string name="use_current_location_not_now">आत्ता नाही</string>
     <string name="use_current_location_off_alert_popup">वर्तमान स्थान माहिती काढून टाकली जाईल.</string>
     <string name="useful_informations">जीवन टिपा आणि इतर अहवाल</string>
     <string name="using_as">%s म्हणून वापरणे</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">हवामान टिपा</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">बुध</string>
     <string name="weekly_forecast">दररोज</string>
     <string name="widget_background">विजेट पार्श्‍वभूमी</string>
     <string name="widget_empty_text">हवामान माहिती साठी टॅप करा</string>
+    <string name="widget_location">शहराचे नाव</string>
     <string name="widget_name_4x1">हवामान आणि घड्याळ</string>
     <string name="widget_setting">सेटिंग्स</string>
     <string name="widget_setting_background_color">पार्श्वभूमीचा रंग</string>

@@ -33,6 +33,7 @@
     <string name="air_quality">ಗಾಳಿ ಗುಣಮಟ್ಟ</string>
     <string name="air_quality_next_tts">ನಂತರದ ದೈನಂದಿನ ಗಾಳಿ ಗುಣಮಟ್ಟ ಮುನ್ಸೂಚನೆಗಳು</string>
     <string name="air_quality_previous_tts">ಮುಂಚಿನ ದೈನಂದಿನ ಗಾಳಿ ಗುಣಮಟ್ಟ ಮುನ್ಸೂಚನೆಗಳು</string>
+    <string name="alert_title">ತೀವ್ರ ಹವಾಮಾನ ಎಚ್ಚರಿಕೆ</string>
     <string name="all_added_cities">ಎಲ್ಲಾ ಸೇರಿಸಿದ ನಗರಗಳು</string>
     <string name="allow">ಅನುಮತಿಸಿ</string>
     <string name="allow_permission_in_settings">ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸಲು, ಸಂಯೋಜನೆಗಳಲ್ಲಿ ನೀವು ಅನುಮತಿಯನ್ನು ಅನುಮತಿಸಬೇಕಾಗಿದೆ.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">ಕ್ರಮವನ್ನು ಬೆಂಬಲಿಸಲಾಗಿಲ್ಲ.</string>
     <string name="apply_daylight_saving_time">ಹಗಲು ಬೆಳಕು ಉಳಿಸುವ ಸಮಯ ಅಳವಡಿಸಲೆ?</string>
     <string name="as_possible_after_verification">ವರದಿ ಕಳುಹಿಸಿದೆ. ಪರಿಶೀಲನೆ ನಂತರ ಸಾಧ್ಯವಿರುವಷ್ಟು ಬೇಗ ನಗರ ಹೆಸರನ್ನು ಬದಲಿಸಲಾಗುವುದು.</string>
+    <string name="auto_refresh_on_screen_description">ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪ್ರತಿ ಗಂಟೆ ರಿಫ್ರೆಶ್ ಮಾಡಲಾದ ಹವಾಮಾನ ಮಾಹಿತಿ ಪಡೆಯಿರಿ. ಇದು ಆನ್ ಆಗಿರುವಾಗ, ಹಸ್ತಚಾಲಿತವಾಗಿ ರಿಫ್ರೆಶ್ ಮಾಡಲು ನಿಮಗೆ ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="auto_refresh_on_the_go">ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವಾಗಲೇ ಸ್ವಯಂ ತಾಜಾಗೊಳಿಸು</string>
+    <string name="auto_refresh_on_the_go_advanced">ಸುಧಾರಿತ</string>
+    <string name="auto_refresh_on_the_go_description">ನೀವು ವಾಹನ ಚಾಲನೆ ಮಾಡುತ್ತಿರುವಾಗ, ಬೈಕ್ ಸವಾರಿ ಮಾಡುತ್ತಿರುವಾಗ, ಓಡುತ್ತಿರುವಾಗ ಅಥವಾ ನಡೆಯುತ್ತಿರುವಾಗ ಹೆಚ್ಚು ಆಗಾಗ್ಗೆ ಹವಾಮಾನ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಪಡೆಯಿರಿ. ಇದು ಆನ್ ಆಗಿರುವಾಗ, ಹಸ್ತಚಾಲಿತವಾಗಿ ರಿಫ್ರೆಶ್ ಮಾಡಲು ನಿಮಗೆ ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="auto_refresh_on_the_go_simple_description">ನೀವು ವಾಹನ ಚಾಲನೆ ಮಾಡುತ್ತಿರುವಾಗ, ಬೈಕ್ ಸವಾರಿ ಮಾಡುತ್ತಿರುವಾಗ, ಓಡುತ್ತಿರುವಾಗ ಅಥವಾ ನಡೆಯುತ್ತಿರುವಾಗ ಹೆಚ್ಚು ಆಗಾಗ್ಗೆ ಹವಾಮಾನ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಪಡೆಯಿರಿ.</string>
     <string name="btn_report">ರಿಪೋರ್ಟ್</string>
     <string name="button_finish">ಮುಗಿಸು</string>
     <string name="button_tts">ಬಟನ್</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">ಹೆಚ್ಚು ಮಾಹಿತಿಗಾಗಿ ಎರಡು ಬಾರಿ ತಟ್ಟಿ.</string>
     <string name="china">ಚೀನಾ</string>
     <string name="cities_button">ನಗರಗಳು</string>
+    <string name="city_added">ನಗರ ಸೇರಿಸಿದೆ.</string>
     <string name="city_list_text">ನಗರಗಳು</string>
     <string name="clear">ತೆರವು</string>
     <string name="clear_then_cloudy">ನೀಲಾಕಾಶ ನಂತರ ಮೋಡ</string>
@@ -130,8 +137,8 @@
     <string name="discard_button">ತ್ಯಜಿಸು</string>
     <string name="display_scaling_mode_condensed">ಚಿಕ್ಕದು</string>
     <string name="display_scaling_mode_standard">ದೊಡ್ಡದು</string>
-    <string name="done_button">ಮಾಡಿದೆ</string>
-    <string name="done_tts">ಮಾಡಿದೆ</string>
+    <string name="done_button">ಮುಗಿದಿದೆ</string>
+    <string name="done_tts">ಮುಗಿದಿದೆ</string>
     <string name="double_tab_to_deselect_all_tts">ಆಯ್ಕೆ ತೆಗೆಯಲು ಎರಡು ಬಾರಿ ತಟ್ಟಿ.</string>
     <string name="double_tab_to_select_all_tts">ಎಲ್ಲಾ ಆಯ್ಕೆ ಮಾಡಲು ಎರಡು ಬಾರಿ ತಟ್ಟಿ.</string>
     <string name="double_tap_and_hold_then_drag_to_reorder">ಎರಡುಬಾರಿ ತಟ್ಟಿ ಹಿಡಿಯಿರಿ, ನಂತರ ಮರುಕ್ರಮಗೊಳಿಸಲು ಡ್ರ್ಯಾಗ್ ಮಾಡಿ.</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">ಅಂಶವನ್ನು %d ಸ್ಥಾನಕ್ಕೆ ಡ್ರಾಪ್ ಮಾಡಲಾಗಿದೆ.</string>
     <string name="dragndroplist_drag_start">ಅಂಶವನ್ನು %d ಸ್ಥಾನದಲ್ಲಿ ಡ್ರ್ಯಾಗ್ ಮಾಡುವುದಕ್ಕೆ ಆರಂಭಿಸಲಾಗಿದೆ.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d ಸ್ಥಾನದಲ್ಲಿರುವ ಅಂಶವನ್ನು ಡ್ರ್ಯಾಗ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="drawer_tips">%s ಸಲಹೆಗಳು</string>
     <string name="drawer_tips_message">ಸ್ಥಳಗಳನ್ನು ಸೇರಿಸಲು, ಅಳಿಸಲು ಮತ್ತು ಮರುಕ್ರಮಗೊಳಿಸಲು ಇಲ್ಲಿ ತಟ್ಟಿ. ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ ವಿಭಿನ್ನ ಸ್ಥಳಗಳನ್ನು ತೋರಿಸುವುದಕ್ಕಾಗಿ ನೀವು ಸಹ ಬಹು ವಿಜೆಟ್‌ಗಳನ್ನು ಸೇರಿಸಬಹುದು.</string>
     <string name="drawer_tips_message_1">ಸ್ಥಳಗಳನ್ನು ಸೇರಿಸಲು, ಅಳಿಸಲು ಮತ್ತು ಮರುಕ್ರಮಗೊಳಿಸಲು ಈ ಮೆನುವಿನ ಕೆಳಭಾಗದಲ್ಲಿ “ಸ್ಥಳಗಳನ್ನು ನಿರ್ವಹಿಸಿ” ಅನ್ನು ತಟ್ಟಿ.</string>
     <string name="drawer_tips_message_2">ಒಂದೇ ಸಮಯಕ್ಕೆ ಬೇರೆ ಸ್ಥಳಗಳನ್ನು ತೋರಿಸುವುದಕ್ಕಾಗಿ ನೀವು ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ಗೆ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ವಿಜೆಟ್ ಸೇರಿಸಬಹುದು.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">ಮುನ್ಸೂಚನೆ ವೀಡಿಯೊ</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">ಶುಕ್ರ</string>
     <string name="general">ಸಾಮಾನ್ಯ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ನೀವು ಹೇಗೆ ಬಳಸುತ್ತೀರಿ ಎಂಬುದರ ಆಧಾರದ ಮೇಲೆ ಪರ್ಸನಲೈಸ್ ಮಾಡಲಾದ ವಿಷಯವನ್ನು ಪಡೆಯಿರಿ.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ಅನ್ನು ನೀವು ಹೇಗೆ ಬಳಸುತ್ತೀರಿ ಎಂಬುದರ ಆಧಾರದ ಮೇಲೆ ಪರ್ಸನಲೈಸ್ ಮಾಡಲಾದ ಒಳಾಂಶವನ್ನು ಪಡೆಯಿರಿ.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">ಹವಾಮಾನದಿಂದ ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಒಳಗೊಂಡಂತೆ, ಹವಾಮಾನ ಮಾಹಿತಿ ಪಡೆಯಿರಿ</string>
     <string name="go_to_website">ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೋಗಿ</string>
     <string name="goto_apps">ಹೊಸ ನವೀಕರಣ ಲಭ್ಯವಿದೆ. ಈಗ ಸ್ಥಾಪಿಸುವುದೆ?</string>
     <string name="goto_apps_later">ನಂತರ</string>
     <string name="goto_apps_now">ಇದೀಗ</string>
     <string name="goto_apps_update_title">ಹೊಸ ಒಳಾಂಶ ಎಚ್ಚರಿಕೆಗಳು</string>
     <string name="header_tts">ತಲೆಬರಹ</string>
+    <string name="heavy">ಹೆಚ್ಚು</string>
     <string name="heavy_rain">ಭಾರಿ ಮಳೆ</string>
     <string name="heavy_rain_followed_by_intense_heat">ವಿಪರೀತ ತಾಪದ ನಂತರ ಭಾರೀ ಮಳೆ</string>
     <string name="heavy_rain_followed_by_light_rain">ವಿಪರೀತ ತಾಪದ ನಂತರ ಭಾರೀ ಮಳೆ</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">ಗೋಚರತೆ</string>
     <string name="life_index_wind">ಗಾಳಿ</string>
     <string name="life_index_wind_force">ಗಾಳಿಯ ವೇಗ</string>
+    <string name="light">ಕಡಿಮೆ</string>
     <string name="light_rain_followed_by_heavy_rain">ಹಗುರ ಮಳೆಯ ನಂತರ ಭಾರೀ ಮಳೆ</string>
     <string name="light_rain_with_some_heavy_rain">ಹಗುರದಿಂದ ಭಾರೀ ಮಳೆ</string>
     <string name="link_tts">ಲಿಂಕ್</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿಲ್ಲ.</string>
     <string name="message_service_not_available">ಸೇವೆ ಇದೀಗ ಲಭ್ಯವಿಲ್ಲ.</string>
     <string name="minus_tts">ಮೈನಸ್</string>
+    <string name="mon">ಸೋಮ</string>
     <string name="more">ಹೆಚ್ಚು</string>
     <string name="more_cuntact_us">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</string>
     <string name="more_information">ಹೆಚ್ಚು</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">ಡೀಫಾಲ್ಟ್ ಹವಾಮಾನ ಸ್ಥಳವನ್ನು ಬದಲಿಸಲು ಇಲ್ಲಿ ತಟ್ಟಿ ಮತ್ತು ನಿಮ್ಮ ಎಲ್ಲಾ ಸ್ಥಳಗಳನ್ನು ನಿರ್ವಹಿಸಿ.</string>
     <string name="new_version_available">%sನ ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ.</string>
     <string name="new_version_is_available">ಒಂದು ಹೊಸ ಆವೃತ್ತಿಯು ಲಭ್ಯವಿರುತ್ತದೆ.</string>
+    <string name="news_menu_show_news">ನ್ಯೂಸ್ ತೋರಿಸಿ</string>
+    <string name="news_opt_in_banner_title_text">ಹವಾಮಾನ ವಿಜೆಟ್‌ನಲ್ಲಿ ನ್ಯೂಸ್ ತೋರಿಸುವ ಮೂಲಕ ಪ್ರಸ್ತುತ ಈವೆಂಟ್‌ಗಳ ಕುರಿತು ಅಪ್ ಟು ಡೇಟ್ ಆಗಿರಿ.</string>
+    <string name="news_opt_in_popup_desc_text">ಹವಾಮಾನ ವಿಜೆಟ್‌ನಲ್ಲಿ %sನಿಂದ ಇತ್ತೀಚಿನ ಮುಖ್ಯಾಂಶಗಳನ್ನು ತೋರಿಸುವ ಮೂಲಕ ಪ್ರಪಂಚದೊಂದಿಗೆ ಅಪ್ ಟು ಡೇಟ್ ಆಗಿ ಉಳಿಯಿರಿ.</string>
+    <string name="news_opt_in_popup_title_text">ಒಂದೇ ವಿಜೆಟ್‌ನಲ್ಲಿ ನ್ಯೂಸ್ ಮತ್ತು ಹವಾಮಾನವನ್ನು ನೋಡಿ</string>
+    <string name="news_request_agree_text">%sನಿಂದ ನ್ಯೂಸ್ ಪಡೆಯಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="news_widget_bubble_text">ಹವಾಮಾನದೊಂದಿಗೆ ಸುದ್ದಿಯನ್ನು ಪಡೆಯಿರಿ.</string>
+    <string name="news_widget_dummy_title">ಇಂದಿನ ಪ್ರಮುಖ ಸ್ಟೋರಿ</string>
+    <string name="news_widget_new_dummy_title">ಇಂದಿನ ಬೆಳಿಗ್ಗೆ ನೀವು ತಿಳಿದುಕೊಂಡಿರಬೇಕಾದ 5 ಸಂಗತಿಗಳು</string>
+    <string name="news_widget_oobe_text">ನ್ಯೂಸ್ ಸೇರಿಸಲು ಇಲ್ಲಿ ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
     <string name="next">ಮುಂದಿನ ನಗರ</string>
+    <string name="next_btn">ಮುಂದೆ</string>
     <string name="next_city">ಮುಂದಿನ ನಗರದ ಹವಾಮಾನ ಮಾಹಿತಿಯನ್ನು ವೀಕ್ಷಿಸಲು ಎರಡುಬಾರಿ ತಟ್ಟಿ.</string>
     <string name="night_tts">ರಾತ್ರಿ</string>
     <string name="no_application_available">ಅನ್ವಯಿಸುವಿಕೆಗಳು ಲಭ್ಯವಿಲ್ಲ.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">ಹವಾಮಾನ ಮಾಹಿತಿಯಿಲ್ಲ</string>
     <string name="not_in_use">ಬಳಕೆಯಲ್ಲಿ ಇಲ್ಲ</string>
     <string name="not_now">ಈಗ ಬೇಡ</string>
+    <string name="not_now_btn">ಈಗಲ್ಲ</string>
     <string name="not_selected">ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ</string>
     <string name="nothing_selected">ಯಾವುದನ್ನೂ ಆಯ್ಕೆಮಾಡಿಲ್ಲ.</string>
     <string name="noti">ಪ್ರಕಟಣೆ</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">ವೇಗವಾದ ಮತ್ತು ಅತ್ಯಂತ ನಿಖರ ಸ್ಥಳ ಪತ್ತೆಗಾಗಿ, “ಸಂಯೋಜನೆಗಳನ್ನು” ತಟ್ಟಿ, ನಂತರ ಗುರುತಿಸುವ ವಿಧಾನವನ್ನು GPS, Wi-Fi ಮತ್ತು ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಗೆ ಹೊಂದಿಸಿ.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">ವೇಗವಾದ ಮತ್ತು ಅತ್ಯಂತ ನಿಖರ ಸ್ಥಳ ಪತ್ತೆಗಾಗಿ, “ಸಂಯೋಜನೆಗಳನ್ನು” ತಟ್ಟಿ, ನಂತರ ಗುರುತಿಸುವ ವಿಧಾನವನ್ನು GPS ಅಥವಾ Wi-Fiಗೆ ಹೊಂದಿಸಿ.</string>
     <string name="notice_gps_trun_off_message_verizon">ನಿಮ್ಮ ಸ್ಥಳೀಯ ಹವಾಮಾನ ಮಾಹಿತಿಯನ್ನು ವೀಕ್ಷಿಸಲು, ಸ್ಥಳ ಸಂಯೋಜನೆಗಳನ್ನು ಆನ್ ಮಾಡಿ ಹಾಗೂ ಅಧಿಕ ನಿಖರತೆ ಎಂದು ಮೋಡ್ ಹೊಂದಿಸಲಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.</string>
+    <string name="notification_alert_channel_name">ತೀವ್ರ ಹವಾಮಾನ ಎಚ್ಚರಿಕೆ</string>
     <string name="notification_apps_update_channel_name">ಪ್ರಕಟಣೆಗಳನ್ನು ನವೀಕರಿಸಿ</string>
     <string name="notification_auto_refresh_channel_name">ಹವಾಮಾನ ಸ್ವಯಂ ತಾಜಾಗೊಳಿಸಿ</string>
     <string name="notification_dex_channel_name">Samsung DeXನಲ್ಲಿ ಹವಾಮಾನ</string>
@@ -438,6 +463,7 @@
     <string name="open_app">ಅನ್ವಯಿಸುವಿಕೆ ತೆರೆಯಿರಿ</string>
     <string name="open_source_licences">ಮುಕ್ತ ಮೂಲ ಪರವಾನಗಿಗಳು</string>
     <string name="other_locations">ಇತರ ಸ್ಥಳಗಳು</string>
+    <string name="partly_sunny">ಸ್ವಲ್ಪಮಟ್ಟಿಗೆ ಬಿಸಿಲು</string>
     <string name="paused">ವಿರಾಮಗೊಳಿಸಿದೆ</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">ಮಳೆ ಪ್ರಮಾಣ: %d mm</string>
     <string name="preview">%s ಪೂರ್ವವೀಕ್ಷಣೆ</string>
     <string name="previous">ಹಿಂದಿನ ನಗರ</string>
+    <string name="previous_btn">ಹಿಂದೆ</string>
     <string name="previous_city">ಹಿಂದಿನ ನಗರದ ಹವಾಮಾನ ಮಾಹಿತಿಯನ್ನು ವೀಕ್ಷಿಸಲು ಎರಡುಬಾರಿ ತಟ್ಟಿ.</string>
     <string name="privacy_policy">ಗೌಪ್ಯತಾ ನೀತಿ</string>
     <string name="probability_of_rain_text">ಮಳೆಯ ಸಂಭವನೀಯತೆ</string>
     <string name="protect_your_content">ನಿಮ್ಮ ವಿಷಯ ಸಂರಕ್ಷಿಸಿ</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">ರಾಡಾರ್ ಮತ್ತು ನಕ್ಷೆಗಳು</string>
     <string name="rain">ಮಳೆ</string>
     <string name="rain_followed_by_intense_heat">ವಿಪರೀತ ತಾಪದ ನಂತರ ಮಳೆ</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">ಹವಾಮಾನ ಮಾಹಿತಿ ನವೀಕರಿಸಲು, “ಸಂಯೋಜನೆಗಳು” ತಟ್ಟಿ, ಅನ್ವಯಿಸುವಿಕೆ ಮಾಹಿತಿ > ಅನುಮತಿಗಳಿಗೆ ಹೋಗಿ, ನಂತರ ಈ ಅನುಮತಿಗಳನ್ನು ಅನುಮತಿಸಿ ಹಾಗೂ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ:</string>
     <string name="runtime_location_permission_title">ಅನುಮತಿಗಳಿಗೆ ಅವಕಾಶ ನೀಡಿ</string>
     <string name="runtime_oem_grant_permission_desc">%s ಅನ್ವಯಿಸುವಿಕೆಯು ಈ ಕೆಳಗಿನವುಗಳಿಗೆ ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಯನ್ನು ನೀಡಿದೆ:</string>
+    <string name="sat">ಶನಿ</string>
     <string name="save_button">ಉಳಿಸು</string>
     <string name="search_most_searched_for">ಇದಕ್ಕೆ ಹೆಚ್ಚು ಹುಡುಕಿರುವುದು</string>
     <string name="search_tab_cities">ನಗರಗಳು</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">ಹೊಸ ವಿಷಯ ಲಭ್ಯವಿದೆ</string>
     <string name="sesl_material_overflow_badge_text_n">ಹೊ</string>
     <string name="sesl_more_item_label">ಅಧಿಕ</string>
+    <string name="sesl_preferecne_badge_description">ಹೊಸ ಪ್ರಕಟಣೆಗಳು</string>
     <string name="sesl_preferencecategory_added_title">ತಲೆಬರಹ</string>
     <string name="sesl_search_hint">ಹುಡುಕಿ</string>
     <string name="sesl_searchview_description_clear">ಹುಡುಕಾಟ ಕ್ಷೇತ್ರ ತೆರವುಗೊಳಿಸಿ</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">ನಿಮ್ಮ ನೆಟ್‍ವರ್ಕ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಹಾಗೂ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="st_offline">ಆಫ್‌ಲೈನ್</string>
     <string name="st_view_less">ಕಡಿಮೆ ವೀಕ್ಷಿಸಿ</string>
+    <string name="status_off">ಆಫ್</string>
+    <string name="status_on">ಆನ್</string>
+    <string name="sun">ರವಿ</string>
     <string name="sunny">ಬಿಸಿಲು</string>
     <string name="sunny_with_some_clouds">ಸ್ವಲ್ಪ ಮೋಡಗಳ ಜೊತೆ ಬಿಸಿಲು</string>
     <string name="sunny_with_some_heavy_rain">ಸ್ವಲ್ಪ ಹೊತ್ತಿನ ಭಾರಿ ಮಳೆ ಉಳಿದಂತೆ ಬಿಸಿಲು</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">ನಿಮ್ಮ ಹಳೆಯ ಸಾಧನದಿಂದ ಹವಾಮಾನ ಡೇಟಾವನ್ನು ಪುನಃಸ್ಥಾಪಿಸಲು ಇಲ್ಲಿ ತಟ್ಟಿ.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಮತ್ತೊಮ್ಮೆ ಹುಡಕಲು ಪ್ರಯತ್ನಿಸಲು “ಮರುಪ್ರಯತ್ನಿಸಿ” ತಟ್ಟಿ.</string>
     <string name="tap_setting_message_edge_panel">ಸ್ಥಳೀಯ ಹವಾಮಾನ ಪಡೆಯಲು ಸ್ಥಳವನ್ನು ಆನ್ ಮಾಡಿ.</string>
+    <string name="tap_the_settings_icon">ಸಂಯೋಜನೆಗಳ ಐಕಾನ್‌ ತಟ್ಟಿ.</string>
     <string name="tap_to_get_the_weather">ಹವಾಮಾನ ಪಡೆಯಲು ತಟ್ಟಿ</string>
     <string name="temp_f_c">%d°ಫ್ಯಾರನ್ಹೀಟ್</string>
     <string name="temp_f_m">%d°ಸೆಲ್ಸಿಯಸ್</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">ನಿಬಂಧನೆಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</string>
     <string name="the_latest_version">ಈಗಾಗಲೇ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">ಇದನ್ನು ಪ್ರಕಟಣೆಗಳು ಮತ್ತು ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸಹ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="thu">ಗುರು</string>
     <string name="tick_box_tts">ಪರಿಶೀಲನೆ ಪೆಟ್ಟಿಗೆ</string>
     <string name="ticked_tts">ಟಿಕ್ ಮಾಡಿರುವುದು</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">ಗಂಟೆಗೊಮ್ಮೆ</string>
     <string name="title_select_locations">ಸ್ಥಳಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="title_theme">ಥೀಮ್‌ಗಳು</string>
+    <string name="to_continue_agree_to_updated">ಮುಂದುವರಿಯಲು, ನಮ್ಮ ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾದ %sಗೆ ಒಪ್ಪಿಕೊಳ್ಳಿ.</string>
     <string name="to_get_local_weather_chn">"ಸ್ಥಳೀಯ ಹವಾಮಾನ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಲು, ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಹವಾಮಾನ ಸೇವೆಗಳ ಪೂರೈಕೆದಾರರಿಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ. (ದಯವಿಟ್ಟು ಒದಗಿಸುವವರ %1$sನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳು%2$s ಮತ್ತು %3$sಖಾಸಗಿತನ ನೀತಿ%4$s ನೋಡಿ).
 ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿನ ಇತರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಸೇವೆಗಳು ಇಲ್ಲಿ ಸಂಗ್ರಹಿಸಿಟ್ಟ ಹವಾಮಾನ ಮಾಹಿತಿಯನ್ನು ಆ ಆಪ್ಲಿಕೇಷನ್ ಗಳಲ್ಲಿ ತೋರಿಸಲು ಮರುಪಡೆಯಲಾದ ಹವಾಮಾನ ಡೇಟಾವನ್ನು ಪ್ರವೇಶಿಸಬಹುದು.
 ನಿರಂತರ ಹವಾಮಾನ ಮಾಹಿತಿಯನ್ನು ನಿಮಗೆ ಒದಗಿಸಲು, ನೀವು ಅಪ್ಲಿಕೇಶನ್ ಬಳಸದಿದ್ದರೂ ಸಹ ಹವಾಮಾನವು ನಿಮ್ಮ ಸ್ಥಳಕ್ಕೆ ಪ್ರವೇಶವನ್ನು ಹೊಂದಿರುತ್ತದೆ."</string>
     <string name="today">ಇಂದು</string>
+    <string name="try_it_out_btn">ಇದನ್ನು ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="tue">ಮಂಗಳ</string>
+    <string name="turn_on_to_use_precise_location">ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸಲು, ಎಲ್ಲ ಸಮಯಗಳಲ್ಲಿ ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಪ್ರವೇಶಿಸಲು %sಗೆ ನೀವು ಅನುಮತಿಸಬೇಕಾಗುತ್ತದೆ ಮತ್ತು ನಿಖರ ಸ್ಥಳವನ್ನು ಬಳಸಿ ಅನ್ನು ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ. “ಸೆಟ್ಟಿಂಗ್‌ಗಳು” ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ, ನಂತರ ಅನುಮತಿಗಳು > ಸ್ಥಳ ಎಂಬಲ್ಲಿಗೆ ಹೋಗಿ.</string>
     <string name="tw_title_weather_broadcast">ಬ್ರಾಡ್‌ಕಾಸ್ಟ್</string>
-    <string name="unable_to_check_for_updates">ನವೀಕರಣಗಳಿಗಾಗಿ ಪರೀಕ್ಷಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಯಾವುದೇ ನೆಟ್‌ವರ್ಕ್ ಸಂಪರ್ಕವಿಲ್ಲ.</string>
+    <string name="unable_to_check_for_updates">ನವೀಕರಣಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="unable_to_receive_info_msg">ಮಾಹಿತಿ ಸ್ವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ</string>
     <string name="unticked_tts">ಟಿಕ್‌ ಮಾಡಿಲ್ಲದಿರುವುದು</string>
     <string name="unused">ಬಳಸಲಾಗಿಲ್ಲ</string>
     <string name="update">ನವೀಕರಿಸು</string>
     <string name="update_abb8">ನವೀಕರಿಸಿ</string>
-    <string name="update_app">ಅನ್ವಯಿಸುವಿಕೆ ನವೀಕರಿಸಿ</string>
+    <string name="update_app">ಆ್ಯಪ್ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ</string>
+    <string name="updated_tile_chn">ನವಿಕರಿಸಲಾಗಿದೆ: %s</string>
     <string name="updated_tts">%s ನವೀಕರಿಸಲಾಗಿದೆ</string>
+    <string name="use_current_location">ಸದ್ಯದ ಸ್ಥಳವನ್ನು ಬಳಸಿ</string>
     <string name="use_current_location_agree_popup">"ಸ್ಥಳೀಯ ಹವಾಮಾನವನ್ನು ಪಡೆಯಲು, ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಹವಾಮಾನ ಸೇವೆಗಳ ಪೂರೈಕೆದಾರನಿಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ. (ದಯವಿಟ್ಟು ಪೂರೈಕೆದಾರರ %1$sಗೌಪ್ಯತಾ ನೀತಿ%2$s ನೋಡಿ.)
 ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಇತರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಸೇವೆಗಳು, ಆ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಲ್ಲಿ ಹವಾಮಾನವನ್ನು ತೋರಿಸಲು ಮರುಪಡೆಯಲಾದ ಹವಾಮಾನ ಡೇಟಾವನ್ನು ಪ್ರವೇಶಿಸಬಹುದಾಗಿದೆ."</string>
     <string name="use_current_location_and_background_agree_popup">"ಸ್ಥಳೀಯ ಹವಾಮಾನವನ್ನು ಪಡೆಯಲು, ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಹವಾಮಾನ ಸೇವೆಗಳ ಪೂರೈಕೆದಾರನಿಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ. (ದಯವಿಟ್ಟು ಒದಗಿಸುವವರ %1$sಗೌಪ್ಯತಾ ನೀತಿ%2$sನೋಡಿ.)
@@ -635,9 +677,16 @@
 ಹವಾಮಾನ ಆಪ್ ಸಂಯೋಜನೆಗಳಿಗೆ ಹೋಗುವ ಮೂಲಕ ನೀವು ನಿಮ್ಮ ಸ್ಥಳದ ಬಳಕೆಯನ್ನು ಆಫ್ ಮಾಡಬಹುದಾಗಿದೆ."</string>
     <string name="use_current_location_body_msg_chn">"“ಹವಾಮಾನ” ಬಳಸುವ ಮೊದಲು ದಯವಿಟ್ಟು ಎಚ್ಚರಿಕೆಯಿಂದ ಓದಿ :
 ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳದ ಹವಾಮಾನವನ್ನು ತಿಳಿಯಲು ನೀವು ಬಯಸಿದರೆ, ಈ ತೃತೀಯ ಪಕ್ಷದ ಸೇವಾ ಪೂರೈಕೆದಾರರು ನಿಮ್ಮ ಸಾಧನಕ್ಕೆ ನಿರಂತರ (ಸೇವೆಯನ್ನು ಬಳಸದೇ ಇರುವ ಸಮಯದಲ್ಲಿಯೂ ಕೂಡ) ಪ್ರವೇಶವನ್ನು ಹೊಂದಲು ಹಾಗೂ ಕೆಳಗೆ ಪಟ್ಟಿ ಮಾಡಲಾಗಿರುವಂತೆ ನಿರ್ದಿಷ್ಟ ಡೇಟಾವನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ನೀವು ಅನುಮತಿಸಬೇಕಾಗುತ್ತದೆ. ಅಂತಹ ಅನುಮತಿಯನ್ನು ನೀಡುವ ಮೊದಲು, ದಯವಿಟ್ಟು ಈ ತೃತೀಯ ಪಕ್ಷದ ಸೇವಾ ಪೂರೈಕೆದಾರರ %1$sನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳು%2$s ಹಾಗೂ %3$sಖಾಸಗಿತನ ನೀತಿ%4$s ಯನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಓದಿ ಮತ್ತು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ. ʼಸಂಯೋಜನೆಗಳುʼ ಮೆನುವಿನಲ್ಲಿ “ಸ್ಥಳ” ಅನ್ನು ಆಫ್‌ ಮಾಡುವ ಮೂಲಕ ನಿಮ್ಮ ಅನುಮತಿಯನ್ನು ನೀವು ಹಿಂಪಡೆಯಬಹುದು. ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿರುವ ಇತರ ಆಪ್‌ಗಳು ಮತ್ತು ಸೇವೆಗಳು ಆಯಾ ಆಪ್‌ಗಳಲ್ಲಿ ಹವಾಮಾನವನ್ನು ತೋರಿಸಲು, ಈ ಆಪ್‌ನಲ್ಲಿ ಪಡೆಯಲಾದ ಹವಾಮಾನ ಡೇಟಾವನ್ನು ಪ್ರವೇಶಿಸಬಹುದಾಗಿದೆ."</string>
+    <string name="use_current_location_body_msg_kor">"ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ನಿಮ್ಮ ಸ್ಥಳೀಯ ಹವಾಮಾನ ಪಡೆಯುವಿಕೆ ಎಂಬುಂತಹ ಕೆಲವು ಹವಾಮಾನ ಆ್ಯಪ್ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಒದಗಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.
+
+ನಿರಂತರ ಹವಾಮಾನ್ಯ ಆ್ಯಪ್ ಒದಗಿಸುವುದಕ್ಕಾಗಿ, ನೀವು ಆ್ಯಪ್ ಬಳಸುತ್ತಿಲ್ಲದೇ ಇರುವಾಗಲೂ ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಈ ಆ್ಯಪ್ ನಿಯಮಿತವಾಗಿ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುತ್ತದೆ. ಮುಂದುವರಿಯುವ ಮೂಲಕ, ಮೇಲಿನ ಉದ್ದೇಶಗಳಿಗಾಗಿ ನಿಮ್ಮ ಸ್ಥಳದ ಸಂಗ್ರಹ ಮತ್ತು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಿಕೆಗೆ ನೀವು ಒಪ್ಪುತ್ತೀರಿ.
+
+ಹವಾಮಾನ ಆ್ಯಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಈ ಸ್ಥಳದ ಸಂಗ್ರಹ ಮತ್ತು ಬಳಕೆಯನ್ನು ನೀವು ನಿಲ್ಲಿಸಬಹುದು."</string>
     <string name="use_current_location_body_purpose">ಉದ್ದೇಶ</string>
     <string name="use_current_location_body_purpose_content">ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳಕ್ಕಾಗಿ ಹವಾಮಾನ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಲು</string>
     <string name="use_current_location_body_search_provider">ಸೇವಾ ಪೂರೈಕೆದಾರರು</string>
+    <string name="use_current_location_continue">ಮುಂದುವರಿಯಿರಿ</string>
+    <string name="use_current_location_not_now">ಈಗಲ್ಲ</string>
     <string name="use_current_location_off_alert_popup">ಪ್ರಸ್ತುತ ಸ್ಥಳ ಮಾಹಿತಿಯನ್ನು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.</string>
     <string name="useful_informations">ಲೈಫ್ ಸಲಹೆಗಳು ಮತ್ತು ಇತರ ವರದಿಗಳು</string>
     <string name="using_as">%s ಎಂದು ಬಳಸುವುದು</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">ಹವಾಮಾನ ಸಲಹೆಗಳು</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">ಬುಧ</string>
     <string name="weekly_forecast">ದೈನಂದಿನ</string>
     <string name="widget_background">ವಿಜೆಟ್‌ ಹಿನ್ನೆಲೆ</string>
     <string name="widget_empty_text">ಹವಾಮಾನ ಮಾಹಿತಿಗೆ ತಟ್ಟಿ</string>
+    <string name="widget_location">ನಗರದ ಹೆಸರು</string>
     <string name="widget_name_4x1">ಹವಾಮಾನ ಮತ್ತು ಗಡಿಯಾರ</string>
     <string name="widget_setting">ಸಂಯೋಜನೆಗಳು</string>
     <string name="widget_setting_background_color">ಹಿನ್ನೆಲೆ ಬಣ್ಣ</string>

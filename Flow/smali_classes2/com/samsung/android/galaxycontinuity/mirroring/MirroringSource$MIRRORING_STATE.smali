@@ -46,34 +46,43 @@
     sput-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_PLAYING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     .line 101
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
-    const-string v1, "MIRRORING_STATE_STOPPED"
+    const-string v3, "MIRRORING_STATE_STOPPED"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_STOPPED:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_STOPPED:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
+    new-array v3, v3, [Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 99
-    sget-object v4, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_PLAYING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -88,6 +97,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 99
     const-class v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;

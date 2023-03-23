@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_CANT_SELECT_MORE_THAN_PD_ITEMS %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_CANT_SELECT_MORE_THAN_PD_ITEMS %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_CANT_SELECT_MORE_THAN_PD_ITEMS %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_CANT_SELECT_MORE_THAN_PD_ITEMS %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_CANT_SELECT_MORE_THAN_PD_ITEMS %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_CANT_SELECT_MORE_THAN_PD_ITEMS %d</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_HEADER_CANT_MOVE_PD_FILES_TO_THE_TRASH %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_HEADER_CANT_MOVE_PD_FILES_TO_THE_TRASH %d</item>
+        <item quantity="one">PLURAL_ONE_MF_HEADER_CANT_MOVE_PD_FILES_TO_THE_TRASH %d</item>
+        <item quantity="two">PLURAL_TWO_MF_HEADER_CANT_MOVE_PD_FILES_TO_THE_TRASH %d</item>
+        <item quantity="few">PLURAL_FEW_MF_HEADER_CANT_MOVE_PD_FILES_TO_THE_TRASH %d</item>
+        <item quantity="many">PLURAL_MANY_MF_HEADER_CANT_MOVE_PD_FILES_TO_THE_TRASH %d</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_HEADER_CANT_MOVE_PD_FOLDERS_TO_THE_TRASH %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_HEADER_CANT_MOVE_PD_FOLDERS_TO_THE_TRASH %d</item>
+        <item quantity="one">PLURAL_ONE_MF_HEADER_CANT_MOVE_PD_FOLDERS_TO_THE_TRASH %d</item>
+        <item quantity="two">PLURAL_TWO_MF_HEADER_CANT_MOVE_PD_FOLDERS_TO_THE_TRASH %d</item>
+        <item quantity="few">PLURAL_FEW_MF_HEADER_CANT_MOVE_PD_FOLDERS_TO_THE_TRASH %d</item>
+        <item quantity="many">PLURAL_MANY_MF_HEADER_CANT_MOVE_PD_FOLDERS_TO_THE_TRASH %d</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_HEADER_CANT_MOVE_PD_ITEMS_TO_THE_TRASH %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_HEADER_CANT_MOVE_PD_ITEMS_TO_THE_TRASH %d</item>
+        <item quantity="one">PLURAL_ONE_MF_HEADER_CANT_MOVE_PD_ITEMS_TO_THE_TRASH %d</item>
+        <item quantity="two">PLURAL_TWO_MF_HEADER_CANT_MOVE_PD_ITEMS_TO_THE_TRASH %d</item>
+        <item quantity="few">PLURAL_FEW_MF_HEADER_CANT_MOVE_PD_ITEMS_TO_THE_TRASH %d</item>
+        <item quantity="many">PLURAL_MANY_MF_HEADER_CANT_MOVE_PD_ITEMS_TO_THE_TRASH %d</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PD_OF_THE_SELECTED_FILES_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PD_OF_THE_SELECTED_FILES_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PD_OF_THE_SELECTED_FILES_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PD_OF_THE_SELECTED_FILES_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PD_OF_THE_SELECTED_FILES_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PD_OF_THE_SELECTED_FILES_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PD_OF_THE_SELECTED_FOLDERS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PD_OF_THE_SELECTED_FOLDERS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PD_OF_THE_SELECTED_FOLDERS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PD_OF_THE_SELECTED_FOLDERS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PD_OF_THE_SELECTED_FOLDERS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PD_OF_THE_SELECTED_FOLDERS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PD_OF_THE_SELECTED_ITEMS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PD_OF_THE_SELECTED_ITEMS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PD_OF_THE_SELECTED_ITEMS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PD_OF_THE_SELECTED_ITEMS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PD_OF_THE_SELECTED_ITEMS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PD_OF_THE_SELECTED_ITEMS_WILL_BE_DELETED_BECAUSE_THEYRE_ON_THE_CLOUD_OR_A_USB_STORAGE_DEVICE %d</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_COMPRESSING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_COMPRESSING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_COMPRESSING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_COMPRESSING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_COMPRESSING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_COMPRESSING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_COMPRESSING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_COMPRESSING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_COMPRESSING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_COPYING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_COPYING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_COPYING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_COPYING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_COPYING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_COPYING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_COPYING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_COPYING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_COPYING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_COPYING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_COPYING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_COPYING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_COPYING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_COPYING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_COPYING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_COPYING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_COPYING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_COPYING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_PHONE_Q %d</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETE_PD_FILES_FROM_YOUR_TABLET_Q %d</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_PHONE_Q %d</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETE_PD_FOLDERS_FROM_YOUR_TABLET_Q %d</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_PHONE_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_PHONE_Q %d</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_TABLET_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETE_PD_ITEMS_FROM_YOUR_TABLET_Q %d</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_DELETING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_DELETING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_DELETING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_DELETING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_DELETING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_DELETING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_DELETING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_DELETING_PD_ITEMS_FROM_TRASH_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_DELETING_PD_ITEMS_FROM_TRASH_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_DELETING_PD_ITEMS_FROM_TRASH_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_DELETING_PD_ITEMS_FROM_TRASH_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_DELETING_PD_ITEMS_FROM_TRASH_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_DELETING_PD_ITEMS_FROM_TRASH_ING %d</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_DELETING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_EXTRACTING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_EXTRACTING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_EXTRACTING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_EXTRACTING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_EXTRACTING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_EXTRACTING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_EXTRACTING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_EXTRACTING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_EXTRACTING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_EXTRACTING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_EXTRACTING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_EXTRACTING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_EXTRACTING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_EXTRACTING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_EXTRACTING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_EXTRACTING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_EXTRACTING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_EXTRACTING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_P1SD_FILES_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_P1SD_FILES_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_P1SD_FILES_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_P1SD_FILES_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_P1SD_FILES_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_P1SD_FILES_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_RESTORING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_P1SD_FOLDERS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_P1SD_FOLDERS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_P1SD_FOLDERS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_P1SD_FOLDERS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_P1SD_FOLDERS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_P1SD_FOLDERS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_RESTORING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_INTERNAL_STORAGE_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_INTERNAL_STORAGE_AND_SD_CARD_ARE_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_RESTORING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_P1SD_ITEMS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_P1SD_ITEMS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_P1SD_ITEMS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_P1SD_ITEMS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_P1SD_ITEMS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_P1SD_ITEMS_WILL_ALSO_BE_MOVED_TO_THE_TRASH_IN_P2SS %1$d %2$s</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">PLURAL_OTHER_DEX_TPOP_CANT_OPEN_MORE_THAN_PD_APP_WINDOWS %d</item>
+        <item quantity="zero">PLURAL_ZERO_DEX_TPOP_CANT_OPEN_MORE_THAN_PD_APP_WINDOWS %d</item>
+        <item quantity="one">PLURAL_ONE_DEX_TPOP_CANT_OPEN_MORE_THAN_PD_APP_WINDOWS %d</item>
+        <item quantity="two">PLURAL_TWO_DEX_TPOP_CANT_OPEN_MORE_THAN_PD_APP_WINDOWS %d</item>
+        <item quantity="few">PLURAL_FEW_DEX_TPOP_CANT_OPEN_MORE_THAN_PD_APP_WINDOWS %d</item>
+        <item quantity="many">PLURAL_MANY_DEX_TPOP_CANT_OPEN_MORE_THAN_PD_APP_WINDOWS %d</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVE_PD_FILES_TO_THE_TRASH_Q %d</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVE_PD_FOLDERS_TO_THE_TRASH_Q %d</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_MOVE_PD_ITEMS_TO_THE_TRASH_Q %d</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVING_PD_FILES_TO_THE_TRASH_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVING_PD_FILES_TO_THE_TRASH_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVING_PD_FILES_TO_THE_TRASH_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVING_PD_FILES_TO_THE_TRASH_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVING_PD_FILES_TO_THE_TRASH_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVING_PD_FILES_TO_THE_TRASH_ING %d</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVING_PD_FOLDERS_TO_THE_TRASH_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVING_PD_FOLDERS_TO_THE_TRASH_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVING_PD_FOLDERS_TO_THE_TRASH_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVING_PD_FOLDERS_TO_THE_TRASH_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVING_PD_FOLDERS_TO_THE_TRASH_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVING_PD_FOLDERS_TO_THE_TRASH_ING %d</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVING_PD_ITEMS_TO_THE_TRASH_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVING_PD_ITEMS_TO_THE_TRASH_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVING_PD_ITEMS_TO_THE_TRASH_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVING_PD_ITEMS_TO_THE_TRASH_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVING_PD_ITEMS_TO_THE_TRASH_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVING_PD_ITEMS_TO_THE_TRASH_ING %d</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_MOVING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_MOVING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_MOVING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_MOVING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_MOVING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_MOVING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_MOVING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_MOVING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_MOVING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_MOVING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_MOVING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_PD_ITEMS_COMPRESSED %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_PD_ITEMS_COMPRESSED %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_PD_ITEMS_COMPRESSED %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_PD_ITEMS_COMPRESSED %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_PD_ITEMS_COMPRESSED %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_PD_ITEMS_COMPRESSED %d</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_P1SD_ITEMS_COPIED_TO_P2SS %1$d %2$s</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_P1SD_ITEMS_COPIED_TO_P2SS %1$d %2$s</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_P1SD_ITEMS_COPIED_TO_P2SS %1$d %2$s</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_P1SD_ITEMS_COPIED_TO_P2SS %1$d %2$s</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_P1SD_ITEMS_COPIED_TO_P2SS %1$d %2$s</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_P1SD_ITEMS_COPIED_TO_P2SS %1$d %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">DREAM_MF_POP_DELETE_FOLDER_AND_THE_PD_FILES_IN_IT_Q %d</item>
+        <item quantity="one">DREAM_MF_POP_DELETE_FOLDER_AND_THE_FILE_IN_IT_Q</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">DREAM_MF_POP_DELETE_P1SD_FOLDERS_AND_THE_P2SD_FILES_IN_THEM_Q %1$d %2$d</item>
+        <item quantity="one">DREAM_MF_POP_DELETE_FOLDER_AND_THE_FILE_IN_IT_Q</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_PD_ITEMS_DELETED %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_PD_ITEMS_DELETED %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_PD_ITEMS_DELETED %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_PD_ITEMS_DELETED %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_PD_ITEMS_DELETED %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_PD_ITEMS_DELETED %d</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_DOWNLOADING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_DOWNLOADING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_DOWNLOADING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_DOWNLOADING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_DOWNLOADING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_DOWNLOADING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_DOWNLOADING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_DOWNLOADING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_DOWNLOADING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_DOWNLOADING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_DOWNLOADING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_DOWNLOADING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">PLURAL_OTHER_MF_TMBODY_DOWNLOADING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TMBODY_DOWNLOADING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TMBODY_DOWNLOADING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TMBODY_DOWNLOADING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TMBODY_DOWNLOADING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TMBODY_DOWNLOADING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">DREAM_MF_TPOP_CANT_SHARE_FOLDERS_FOLDERS_EMPTY</item>
+        <item quantity="one">DREAM_MF_TPOP_CANT_SHARE_FOLDER_FOLDER_EMPTY</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PD_FILES_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PD_FILES_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PD_FILES_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PD_FILES_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PD_FILES_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PD_FILES_WILL_BE_PERMANENTLY_DELETED %d</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PD_FOLDERS_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PD_FOLDERS_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PD_FOLDERS_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PD_FOLDERS_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PD_FOLDERS_WILL_BE_PERMANENTLY_DELETED %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PD_FOLDERS_WILL_BE_PERMANENTLY_DELETED %d</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_PD_ITEMS_EXTRACTED %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_PD_ITEMS_EXTRACTED %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_PD_ITEMS_EXTRACTED %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_PD_ITEMS_EXTRACTED %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_PD_ITEMS_EXTRACTED %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_PD_ITEMS_EXTRACTED %d</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">PLURAL_OTHER_MF_TPOP_PD_FILES_ADDED_TO_FAVORITES %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TPOP_PD_FILES_ADDED_TO_FAVORITES %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TPOP_PD_FILES_ADDED_TO_FAVORITES %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TPOP_PD_FILES_ADDED_TO_FAVORITES %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TPOP_PD_FILES_ADDED_TO_FAVORITES %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TPOP_PD_FILES_ADDED_TO_FAVORITES %d</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">PLURAL_OTHER_MF_TPOP_PD_FILES_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TPOP_PD_FILES_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TPOP_PD_FILES_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TPOP_PD_FILES_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TPOP_PD_FILES_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TPOP_PD_FILES_REMOVED_FROM_FAVORITES %d</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">PLURAL_OTHER_MF_TPOP_PD_FOLDERS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TPOP_PD_FOLDERS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TPOP_PD_FOLDERS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TPOP_PD_FOLDERS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TPOP_PD_FOLDERS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TPOP_PD_FOLDERS_ADDED_TO_FAVORITES %d</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">PLURAL_OTHER_MF_TPOP_PD_FOLDERS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TPOP_PD_FOLDERS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TPOP_PD_FOLDERS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TPOP_PD_FOLDERS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TPOP_PD_FOLDERS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TPOP_PD_FOLDERS_REMOVED_FROM_FAVORITES %d</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">PLURAL_OTHER_MF_TPOP_PD_ITEMS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TPOP_PD_ITEMS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TPOP_PD_ITEMS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TPOP_PD_ITEMS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TPOP_PD_ITEMS_ADDED_TO_FAVORITES %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TPOP_PD_ITEMS_ADDED_TO_FAVORITES %d</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">PLURAL_OTHER_MF_TPOP_PD_ITEMS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TPOP_PD_ITEMS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TPOP_PD_ITEMS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TPOP_PD_ITEMS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TPOP_PD_ITEMS_REMOVED_FROM_FAVORITES %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TPOP_PD_ITEMS_REMOVED_FROM_FAVORITES %d</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">IDS_MF_BODY_PD_ITEMS %d</item>
+        <item quantity="one">IDS_EMAIL_BODY_1_ITEM_ABB</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">IDS_MF_BODY_PD_ITEMS %d</item>
+        <item quantity="one">IDS_MF_BODY_PD_ITEM %d</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_PD_ITEMS_COPIED_TO_CLIPBOARD %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_PD_ITEMS_COPIED_TO_CLIPBOARD %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_PD_ITEMS_COPIED_TO_CLIPBOARD %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_PD_ITEMS_COPIED_TO_CLIPBOARD %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_PD_ITEMS_COPIED_TO_CLIPBOARD %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_PD_ITEMS_COPIED_TO_CLIPBOARD %d</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_PD_ITEMS_MOVED_TO_CLIPBOARD %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_PD_ITEMS_MOVED_TO_CLIPBOARD %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_PD_ITEMS_MOVED_TO_CLIPBOARD %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_PD_ITEMS_MOVED_TO_CLIPBOARD %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_PD_ITEMS_MOVED_TO_CLIPBOARD %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_PD_ITEMS_MOVED_TO_CLIPBOARD %d</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">PLURAL_OTHER_ACCS_TBOPT_PD_ITEMS_SELECTED %d</item>
+        <item quantity="zero">PLURAL_ZERO_ACCS_TBOPT_PD_ITEMS_SELECTED %d</item>
+        <item quantity="one">PLURAL_ONE_ACCS_TBOPT_PD_ITEMS_SELECTED %d</item>
+        <item quantity="two">PLURAL_TWO_ACCS_TBOPT_PD_ITEMS_SELECTED %d</item>
+        <item quantity="few">PLURAL_FEW_ACCS_TBOPT_PD_ITEMS_SELECTED %d</item>
+        <item quantity="many">PLURAL_MANY_ACCS_TBOPT_PD_ITEMS_SELECTED %d</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_P1SD_ITEMS_MOVED_TO_P2SS %1$d %2$s</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_P1SD_ITEMS_MOVED_TO_P2SS %1$d %2$s</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_P1SD_ITEMS_MOVED_TO_P2SS %1$d %2$s</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_P1SD_ITEMS_MOVED_TO_P2SS %1$d %2$s</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_P1SD_ITEMS_MOVED_TO_P2SS %1$d %2$s</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_P1SD_ITEMS_MOVED_TO_P2SS %1$d %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">PLURAL_OTHER_MF_TBOPT_PD_ITEMS_MOVED_TO_TRASH %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_TBOPT_PD_ITEMS_MOVED_TO_TRASH %d</item>
+        <item quantity="one">PLURAL_ONE_MF_TBOPT_PD_ITEMS_MOVED_TO_TRASH %d</item>
+        <item quantity="two">PLURAL_TWO_MF_TBOPT_PD_ITEMS_MOVED_TO_TRASH %d</item>
+        <item quantity="few">PLURAL_FEW_MF_TBOPT_PD_ITEMS_MOVED_TO_TRASH %d</item>
+        <item quantity="many">PLURAL_MANY_MF_TBOPT_PD_ITEMS_MOVED_TO_TRASH %d</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">PLURAL_OTHER_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="zero">PLURAL_ZERO_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="one">PLURAL_ONE_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="two">PLURAL_TWO_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="few">PLURAL_FEW_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="many">PLURAL_MANY_IDLE_HEADER_PD_SELECTED %d</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_YOUR_SD_CARD_IS_FULL_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_THIS_FILE_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_THIS_FILE_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_THIS_FILE_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_THIS_FILE_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_THIS_FILE_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_THIS_FILE_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_THIS_FOLDER_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_THIS_FOLDER_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_THIS_FOLDER_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_THIS_FOLDER_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_THIS_FOLDER_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_THIS_FOLDER_WILL_BE_DELETED_IN_PD_DAYS %d</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PERMANENTLY_DELETE_PD_FILES_Q %d</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_RESTORING_PD_FILES_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_RESTORING_PD_FILES_ING %d</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PERMANENTLY_DELETE_PD_FOLDERS_Q %d</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_RESTORING_PD_FOLDERS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_RESTORING_PD_FOLDERS_ING %d</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_PERMANENTLY_DELETE_PD_ITEMS_Q %d</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_DELETING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_DELETING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">PLURAL_OTHER_MF_PHEADER_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_PHEADER_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="one">PLURAL_ONE_MF_PHEADER_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="two">PLURAL_TWO_MF_PHEADER_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="few">PLURAL_FEW_MF_PHEADER_RESTORING_PD_ITEMS_ING %d</item>
+        <item quantity="many">PLURAL_MANY_MF_PHEADER_RESTORING_PD_ITEMS_ING %d</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">PLURAL_OTHER_MF_HEADER_DELETING_IN_PD_DAYS %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_HEADER_DELETING_IN_PD_DAYS %d</item>
+        <item quantity="one">PLURAL_ONE_MF_HEADER_DELETING_IN_PD_DAYS %d</item>
+        <item quantity="two">PLURAL_TWO_MF_HEADER_DELETING_IN_PD_DAYS %d</item>
+        <item quantity="few">PLURAL_FEW_MF_HEADER_DELETING_IN_PD_DAYS %d</item>
+        <item quantity="many">PLURAL_MANY_MF_HEADER_DELETING_IN_PD_DAYS %d</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">PLURAL_OTHER_MF_BODY_UNINSTALL_PD_APPS_Q %d</item>
+        <item quantity="zero">PLURAL_ZERO_MF_BODY_UNINSTALL_PD_APPS_Q %d</item>
+        <item quantity="one">PLURAL_ONE_MF_BODY_UNINSTALL_PD_APPS_Q %d</item>
+        <item quantity="two">PLURAL_TWO_MF_BODY_UNINSTALL_PD_APPS_Q %d</item>
+        <item quantity="few">PLURAL_FEW_MF_BODY_UNINSTALL_PD_APPS_Q %d</item>
+        <item quantity="many">PLURAL_MANY_MF_BODY_UNINSTALL_PD_APPS_Q %d</item>
+    </plurals>
+</resources>

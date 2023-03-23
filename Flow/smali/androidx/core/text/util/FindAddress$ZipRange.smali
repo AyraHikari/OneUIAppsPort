@@ -27,6 +27,20 @@
 # direct methods
 .method constructor <init>(IIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "low",
+            "high",
+            "exception1",
+            "exception2"
+        }
+    .end annotation
 
     .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,6 +64,14 @@
 # virtual methods
 .method matches(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "zipCode"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

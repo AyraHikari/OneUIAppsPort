@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/internal/CollapsingTextHelper;)V
     .locals 0
 
-    .line 283
+    .line 382
     iput-object p1, p0, Lcom/google/android/material/internal/CollapsingTextHelper$1;->this$0:Lcom/google/android/material/internal/CollapsingTextHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public apply(Landroid/graphics/Typeface;)V
     .locals 1
 
-    .line 286
+    .line 385
     iget-object v0, p0, Lcom/google/android/material/internal/CollapsingTextHelper$1;->this$0:Lcom/google/android/material/internal/CollapsingTextHelper;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/CollapsingTextHelper;->setCollapsedTypeface(Landroid/graphics/Typeface;)V

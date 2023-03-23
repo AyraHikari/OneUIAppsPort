@@ -34,12 +34,6 @@
 
 .field public static final EVENT_AUDIO_REDIRECTION_REQUEST_RECEVIED:Ljava/lang/String; = "com.samsung.android.galaxycontinuity.Mirroring.EVENT_AUDIO_REDIRECTION_REQUEST_RECEVIED"
 
-.field public static final EVENT_CALL_STATE_IDLE:Ljava/lang/String; = "com.samsung.android.galaxycontinuity.Mirroring.IDLE"
-
-.field public static final EVENT_CALL_STATE_OFFHOOK:Ljava/lang/String; = "com.samsung.android.galaxycontinuity.Mirroring.OFFHOOK"
-
-.field public static final EVENT_CALL_STATE_RINGING:Ljava/lang/String; = "com.samsung.android.galaxycontinuity.Mirroring.RINGING"
-
 .field public static final EVENT_CHANGE_FPS:Ljava/lang/String; = "com.samsung.android.galaxycontinuity.Mirroring.REQUEST_CHANGEFPS"
 
 .field public static final EVENT_CHANGE_MIRRORING_STATE:Ljava/lang/String; = "com.samsung.android.galaxycontinuity.Mirroring.CHANGE_MIRRORING_STATE"
@@ -215,6 +209,8 @@
 .field public static final RESOLUTION_HIGH_HEIGHT:I = 0x640
 
 .field public static final RESOLUTION_HIGH_WIDTH:I = 0x384
+
+.field public static final RESOLUTION_LIMIT:I = 0x2000
 
 .field public static final RESOLUTION_LOW_HEIGHT:I = 0x3c0
 

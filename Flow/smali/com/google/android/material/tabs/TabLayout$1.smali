@@ -3,12 +3,12 @@
 .source "TabLayout.java"
 
 # interfaces
-.implements Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/tabs/TabLayout;->wrapOnTabSelectedListener(Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;)Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;
+    value = Lcom/google/android/material/tabs/TabLayout;->ensureScrollAnimator()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,17 +20,13 @@
 # instance fields
 .field final synthetic this$0:Lcom/google/android/material/tabs/TabLayout;
 
-.field final synthetic val$baseListener:Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;
-
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/tabs/TabLayout;Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;)V
+.method constructor <init>(Lcom/google/android/material/tabs/TabLayout;)V
     .locals 0
 
-    .line 921
+    .line 1967
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$1;->this$0:Lcom/google/android/material/tabs/TabLayout;
-
-    iput-object p2, p0, Lcom/google/android/material/tabs/TabLayout$1;->val$baseListener:Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,35 +35,25 @@
 
 
 # virtual methods
-.method public onTabReselected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
-    .locals 1
+.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 2
 
-    .line 934
-    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$1;->val$baseListener:Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;
+    .line 1970
+    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$1;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
-    invoke-interface {v0, p1}, Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;->onTabReselected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
-    return-void
-.end method
+    move-result-object p1
 
-.method public onTabSelected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
-    .locals 1
+    check-cast p1, Ljava/lang/Integer;
 
-    .line 924
-    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$1;->val$baseListener:Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
-    invoke-interface {v0, p1}, Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;->onTabSelected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
+    move-result p1
 
-    return-void
-.end method
+    const/4 v1, 0x0
 
-.method public onTabUnselected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
-    .locals 1
-
-    .line 929
-    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$1;->val$baseListener:Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;
-
-    invoke-interface {v0, p1}, Lcom/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener;->onTabUnselected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
+    invoke-virtual {v0, p1, v1}, Lcom/google/android/material/tabs/TabLayout;->scrollTo(II)V
 
     return-void
 .end method

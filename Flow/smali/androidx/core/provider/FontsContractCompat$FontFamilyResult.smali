@@ -31,17 +31,51 @@
 # direct methods
 .method public constructor <init>(I[Landroidx/core/provider/FontsContractCompat$FontInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "statusCode",
+            "fonts"
+        }
+    .end annotation
 
-    .line 427
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 390
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 428
+    .line 391
     iput p1, p0, Landroidx/core/provider/FontsContractCompat$FontFamilyResult;->mStatusCode:I
 
-    .line 429
+    .line 392
     iput-object p2, p0, Landroidx/core/provider/FontsContractCompat$FontFamilyResult;->mFonts:[Landroidx/core/provider/FontsContractCompat$FontInfo;
 
     return-void
+.end method
+
+.method static create(I[Landroidx/core/provider/FontsContractCompat$FontInfo;)Landroidx/core/provider/FontsContractCompat$FontFamilyResult;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "statusCode",
+            "fonts"
+        }
+    .end annotation
+
+    .line 407
+    new-instance v0, Landroidx/core/provider/FontsContractCompat$FontFamilyResult;
+
+    invoke-direct {v0, p0, p1}, Landroidx/core/provider/FontsContractCompat$FontFamilyResult;-><init>(I[Landroidx/core/provider/FontsContractCompat$FontInfo;)V
+
+    return-object v0
 .end method
 
 
@@ -49,7 +83,7 @@
 .method public getFonts()[Landroidx/core/provider/FontsContractCompat$FontInfo;
     .locals 1
 
-    .line 437
+    .line 400
     iget-object v0, p0, Landroidx/core/provider/FontsContractCompat$FontFamilyResult;->mFonts:[Landroidx/core/provider/FontsContractCompat$FontInfo;
 
     return-object v0
@@ -58,7 +92,7 @@
 .method public getStatusCode()I
     .locals 1
 
-    .line 433
+    .line 396
     iget v0, p0, Landroidx/core/provider/FontsContractCompat$FontFamilyResult;->mStatusCode:I
 
     return v0

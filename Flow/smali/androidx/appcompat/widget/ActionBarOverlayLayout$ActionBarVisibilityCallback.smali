@@ -16,6 +16,14 @@
 
 # virtual methods
 .method public abstract enableContentAnimations(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enable"
+        }
+    .end annotation
 .end method
 
 .method public abstract hideForSystem()V
@@ -28,6 +36,14 @@
 .end method
 
 .method public abstract onWindowVisibilityChanged(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 .end method
 
 .method public abstract showForSystem()V

@@ -125,7 +125,7 @@
     iput-object p2, p0, Lorg/spongycastle/jce/X509LDAPCertStoreParameters$Builder;->baseDN:Ljava/lang/String;
 
     :goto_0
-    const-string p1, "userCertificate"
+    const-string/jumbo p1, "userCertificate"
 
     .line 192
     iput-object p1, p0, Lorg/spongycastle/jce/X509LDAPCertStoreParameters$Builder;->userCertificateAttribute:Ljava/lang/String;
@@ -254,7 +254,7 @@
     .line 224
     iput-object p2, p0, Lorg/spongycastle/jce/X509LDAPCertStoreParameters$Builder;->attributeAuthorityRevocationListIssuerAttributeName:Ljava/lang/String;
 
-    const-string p1, "uid serialNumber cn"
+    const-string/jumbo p1, "uid serialNumber cn"
 
     .line 225
     iput-object p1, p0, Lorg/spongycastle/jce/X509LDAPCertStoreParameters$Builder;->searchForSerialNumberIn:Ljava/lang/String;

@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/core/app/ServiceCompat$Api24Impl;,
         Landroidx/core/app/ServiceCompat$StopForegroundFlags;
     }
 .end annotation
@@ -23,7 +24,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 37
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,16 +32,26 @@
 
 .method public static stopForeground(Landroid/app/Service;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "service",
+            "flags"
+        }
+    .end annotation
 
-    .line 98
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 101
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 99
-    invoke-virtual {p0, p1}, Landroid/app/Service;->stopForeground(I)V
+    .line 102
+    invoke-static {p0, p1}, Landroidx/core/app/ServiceCompat$Api24Impl;->stopForeground(Landroid/app/Service;I)V
 
     goto :goto_1
 
@@ -56,7 +67,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 101
+    .line 104
     :goto_0
     invoke-virtual {p0, v0}, Landroid/app/Service;->stopForeground(Z)V
 

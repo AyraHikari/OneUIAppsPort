@@ -14,21 +14,41 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # direct methods
+.method public static synthetic getSealedSubclasses$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getSupertypes$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getTypeParameters$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getVisibility$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public static synthetic isAbstract$annotations()V
     .locals 0
 
@@ -53,6 +73,12 @@
     return-void
 .end method
 
+.method public static synthetic isFun$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public static synthetic isInner$annotations()V
     .locals 0
 
@@ -71,25 +97,7 @@
     return-void
 .end method
 
-.method public static synthetic sealedSubclasses$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic supertypes$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic typeParameters$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic visibility$annotations()V
+.method public static synthetic isValue$annotations()V
     .locals 0
 
     return-void

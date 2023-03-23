@@ -426,7 +426,7 @@
     :cond_9
     new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
 
-    const-string p2, "unknown parameter type."
+    const-string/jumbo p2, "unknown parameter type."
 
     invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 

@@ -60,6 +60,7 @@
     <string name="air_quality">Hava kalitesi</string>
     <string name="air_quality_next_tts">Daha geç günlük hava kalitesi tahminleri</string>
     <string name="air_quality_previous_tts">Daha erken günlük hava kalitesi tahminleri</string>
+    <string name="alert_title">Şiddetli hava durumu uyarısı</string>
     <string name="all_added_cities">Eklenen tüm şehirler</string>
     <string name="allow">İzin ver</string>
     <string name="allow_permission_in_settings">"Bu özelliği kullanmak için Ayarlar'da izin vermeniz gerekir."</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Eylem desteklenmiyor.</string>
     <string name="apply_daylight_saving_time">Gün ışığından yararlanma uygulansın mı?</string>
     <string name="as_possible_after_verification">Rapor gönderildi. Şehir ismi, doğrulamanın hemen ardından değiştirilecek.</string>
+    <string name="auto_refresh_on_screen_description">Her saat otomatik olarak güncel hava durumu bilgilerini alın. Bu açıkken manuel olarak yenileyemezsiniz.</string>
+    <string name="auto_refresh_on_the_go">Hareket halindeyken otomatik yenileme</string>
+    <string name="auto_refresh_on_the_go_advanced">Gelişmiş</string>
+    <string name="auto_refresh_on_the_go_description">Araç sürerken, bisiklete binerken, koşarken veya yürürken daha sık hava durumu güncellemesi alın. Bu açıkken manuel olarak yenileyemezsiniz.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Araç sürerken, bisiklete binerken, koşarken veya yürürken daha sık hava durumu güncellemesi alın.</string>
     <string name="bottomsheet_action_expand_halfway">Yarım genişlet</string>
     <string name="btn_report">Bildir</string>
     <string name="button_finish">Son</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Daha fazla bilgi için çift dokunun.</string>
     <string name="china">Çin</string>
     <string name="cities_button">Şehirler</string>
+    <string name="city_added">Şehir eklendi.</string>
     <string name="city_list_text">Şehirler</string>
     <string name="clear">Açık</string>
     <string name="clear_text_end_icon_content_description">Metni temizle</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Yerel hava durumu bilgilerinin size verilebilmesi için cihazınızın konum bilgileri içerik sağlayıcıya gönderilecektir.</string>
     <string name="contents_error_msg">Bu servis geçici olarak kullanılamıyor. Lütfen daha sonra tekrar deneyin.</string>
     <string name="copy">Kopyala</string>
-    <string name="copy_toast_msg">Bağlantı panoya kopyalandı</string>
     <string name="correct_city_name">Şehir ismini düzelt</string>
     <string name="couldnt_find_location">Konum bulunamadı</string>
     <string name="cover_screen_top_sync_dialog_text">Ana ekranda aynı konum ayarlansın mı?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Öge %d pozisyonuna bırakıldı.</string>
     <string name="dragndroplist_drag_start">%d pozisyonunda öge sürükleme başladı.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d pozisyonundaki öge sürüklenemez.</string>
+    <string name="drawer_tips">%s ipucu</string>
     <string name="drawer_tips_message">Konumları eklemek, silmek ve yeniden sıralamak için buraya dokunun. Ayrıca, Ana ekranda farklı konumları görüntülemek için birden fazla widget ekleyebilirsiniz.</string>
     <string name="drawer_tips_message_1">Konumları eklemek, silmek ve yeniden sıralamak için bu menünün alt kısmındaki Konumları yönet ögesine dokunun.</string>
     <string name="drawer_tips_message_2">Aynı anda farklı konumları göstermesi için Ana ekrana birden fazla widget ekleyebilirsiniz.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Gelişmiş</string>
     <string name="exposed_dropdown_menu_content_description">Açılır menüyü göster</string>
     <string name="failed_to_send_report">Rapor gönderilemedi</string>
-    <string name="fallback_menu_item_copy_link">Bağlantıyı kopyala</string>
-    <string name="fallback_menu_item_open_in_browser">Tarayıcıda aç</string>
-    <string name="fallback_menu_item_share_link">Bağlantıyı paylaş</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Favori konum</string>
     <string name="feel_like_pd_minus_temp">Hissedilen sıcaklık -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Hava tahmini videosu</string>
     <string name="format_km_per_hour">%s km/sa</string>
     <string name="format_m_per_hour">%s mil/sa</string>
+    <string name="fri">Cum</string>
     <string name="general">Genel</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Telefonunuzu kullanma yönteminize dayanan kişiselleştirilmiş içerik alın.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Tabletinizi kullanma yönteminize dayanan kişiselleştirilmiş içerikler alın.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">Hava Durumundan geçerli konumunuz dahil olmak üzere hava durumu bilgilerini almasına</string>
     <string name="go_to_website">Web sitesine git</string>
     <string name="goto_apps">Yeni güncelleme mevcut. Şimdi yüklensin mi?</string>
     <string name="goto_apps_later">Sonra</string>
     <string name="goto_apps_now">Şimdi</string>
     <string name="goto_apps_update_title">Yeni içerik uyarıları</string>
     <string name="header_tts">Başlık</string>
+    <string name="heavy">Yoğun</string>
     <string name="heavy_rain">Şiddetli yağmur</string>
     <string name="heavy_rain_followed_by_intense_heat">Yoğun sıcak hava ardından sağanak yağmur</string>
     <string name="heavy_rain_followed_by_light_rain">Yoğun sıcak hava ardından sağanak yağmur</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Görünürlük</string>
     <string name="life_index_wind">Rüzgar</string>
     <string name="life_index_wind_force">Rüzgar hızı</string>
+    <string name="light">Hafif</string>
     <string name="light_rain_followed_by_heavy_rain">Sağanak ardından hafif yağmur</string>
     <string name="light_rain_with_some_heavy_rain">Az sağanak yağışlı hafif yağmur</string>
     <string name="link_tts">Bağlantı</string>
@@ -443,7 +451,7 @@
     <string name="menu_settings_edge_screen">Edge ekranı</string>
     <string name="menu_settings_informationtext1">Kaynak: Weather center, Korea Environment Corporation, Weathernews Inc.</string>
     <string name="menu_settings_informationtext2">"- Bu widget'ın yerel hava durumu bilgileri, Kore hava durumu merkezi verilerine dayanmaktadır."</string>
-    <string name="menu_settings_lockscreen_and_s_view_cover">Kilt ekranı ve S View kapağı</string>
+    <string name="menu_settings_lockscreen_and_s_view_cover">Kilit ekranı ve S View kapağı</string>
     <string name="menu_settings_notification_message">Hava durumu değişiklikleriyle ilgili bildirimler alın.</string>
     <string name="menu_settings_notifications">Hava durumu bildirimleri</string>
     <string name="menu_settings_s_planner">S Planlayıcı</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Sonuç bulunamadı.</string>
     <string name="message_service_not_available">Hizmete şu anda erişilemiyor.</string>
     <string name="minus_tts">Eksi</string>
+    <string name="mon">Pzt</string>
     <string name="more">Daha fazla</string>
     <string name="more_cuntact_us">Bize ulaşın</string>
     <string name="more_information">Daha fazla</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Varsayılan hava durumu konumunu değiştirmek ve tüm konumlarınızı yönetmek için buraya dokunun.</string>
     <string name="new_version_available">Yeni bir %s sürümü mevcut.</string>
     <string name="new_version_is_available">Yeni bir sürüm mevcut.</string>
+    <string name="news_menu_show_news">Haberleri göster</string>
+    <string name="news_opt_in_banner_title_text">Hava Durumu widgetında haberleri görüntüleyerek yeni olaylardan haberdar olun.</string>
+    <string name="news_opt_in_popup_desc_text">Hava Durumu widgetında %s uygulamasından en yeni başlıkları görüntüleyerek dünyadaki olaylardan haberdar olun.</string>
+    <string name="news_opt_in_popup_title_text">Haberleri ve hava durumunu tek widgetta görün</string>
+    <string name="news_request_agree_text">%s uygulamasından haber almak için dokunun</string>
+    <string name="news_widget_bubble_text">Hava durumuyla birlikte haberleri alın.</string>
+    <string name="news_widget_dummy_title">Günün en önemli hikayesi</string>
+    <string name="news_widget_new_dummy_title">Bu sabah bilmeniz gereken 5 şey</string>
+    <string name="news_widget_oobe_text">Buraya dokunup haber ekleyin.</string>
     <string name="next">Sonraki şehir</string>
+    <string name="next_btn">Sonraki</string>
     <string name="next_city">Sonraki şehrin hava durumunu görüntülemek için çift dokunun.</string>
     <string name="night_tts">Gece</string>
     <string name="no_application_available">Uygulama yok.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Hava durumu bilgisi yok</string>
     <string name="not_in_use">Kullanımda değil</string>
     <string name="not_now">Şimdi değil</string>
+    <string name="not_now_btn">Şimdi değil</string>
     <string name="not_selected">Seçili değil</string>
     <string name="not_set">Ayarlanmadı</string>
     <string name="nothing_selected">Bir şey seçilmedi.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">En hızlı ve en doğru konum algılaması için AYARLAR ögesine dokunun, ardından Konum belirleme yöntemini GPS, Wi-Fi ve mobil ağlar olarak ayarlayın.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">En hızlı ve en doğru konum algılaması için AYARLAR ögesine dokunun, ardından Konum belirleme yöntemini GPS ve Wi-Fi olarak ayarlayın.</string>
     <string name="notice_gps_trun_off_message_verizon">Yerel hava durumu bilgilerinizi görüntülemek için Konum ayarlarını açın ve modun Yüksek doğruluk olarak ayarlandığından emin olun.</string>
+    <string name="notification_alert_channel_name">Şiddetli hava durumu uyarısı</string>
     <string name="notification_apps_update_channel_name">Güncelleme bildirimleri</string>
     <string name="notification_auto_refresh_channel_name">Hava durumunu otomatik yenile</string>
     <string name="notification_dex_channel_name">"Samsung DeX'te hava durumu"</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Uygulamayı aç</string>
     <string name="open_source_licences">Açık kaynak lisansları</string>
     <string name="other_locations">Diğer konumlar</string>
+    <string name="partly_sunny">Kısmen güneşli</string>
     <string name="password_toggle_content_description">Şifreyi göster</string>
     <string name="paused">Duraklatıldı</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">\"%1$s\" panoya kopyalandı.</string>
     <string name="preview">%s önizlemesi</string>
     <string name="previous">Önceki şehir</string>
+    <string name="previous_btn">Önceki</string>
     <string name="previous_city">Önceki şehrin hava durumunu görüntülemek için çift dokunun.</string>
     <string name="privacy_policy">Gizlilik İlkesi</string>
     <string name="probability_of_rain_text">Yağmur yağ. olasılğı</string>
     <string name="protect_your_content">İçeriklerinizi koruyun</string>
+    <string name="ps_in">%s inç</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar ve haritalar</string>
     <string name="rain">Yağmur</string>
     <string name="rain_followed_by_intense_heat">Yoğun sıcak hava ardından yağmur</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Hava durumu bilgilerini güncellemek için AYARLAR ögesine dokunun, Uygulama bilgileri > İzinler bölümüne gidin, ardından aşağıdaki izinleri verip tekrar deneyin:</string>
     <string name="runtime_location_permission_title">İzin ver</string>
     <string name="runtime_oem_grant_permission_desc">%s uygulamasının aşağıdakilere erişmesine izin verildi:</string>
+    <string name="sat">Cmt</string>
     <string name="save_button">Kaydet</string>
     <string name="search_menu_title">Ara</string>
     <string name="search_most_searched_for">En çok arananlar</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Yeni içerik mevcut</string>
     <string name="sesl_material_overflow_badge_text_n">Y</string>
     <string name="sesl_more_item_label">Daha fazla</string>
+    <string name="sesl_preferecne_badge_description">Yeni bildirim</string>
     <string name="sesl_preferencecategory_added_title">Üst Bilgi</string>
     <string name="sesl_search_hint">Ara</string>
     <string name="sesl_searchview_description_clear">Arama alanını temizle</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Çevrimdışı</string>
     <string name="st_view_less">Daha az göster</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Kapalı</string>
+    <string name="status_on">Açık</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Pzr</string>
     <string name="sunny">Güneşli</string>
     <string name="sunny_with_some_clouds">Az bulutlu açık</string>
     <string name="sunny_with_some_heavy_rain">Az sağanak yağmurlu açık</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Eski cihazınızdan hava durumu verilerini geri yüklemek için buraya dokunun.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Konumunuzu tekrar bulmaya çalışmak için TEKRAR DENE ögesine dokunun.</string>
     <string name="tap_setting_message_edge_panel">"Yerel hava durumunu almak için Konum'u açın."</string>
+    <string name="tap_the_settings_icon">Ayarlar simgesine dokunun.</string>
     <string name="tap_to_get_the_weather">Hava durumunu öğrenmek için dokunun</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Hüküm ve Koşullar</string>
     <string name="the_latest_version">En son sürüm zaten yüklü.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">"Bu, bildirimlere ve Takvim'e de uygulanır."</string>
+    <string name="thu">Per</string>
     <string name="tick_box_tts">Onay kutusu</string>
     <string name="ticked_tts">İşaretli</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Saatlik</string>
     <string name="title_select_locations">Konumları seçin</string>
     <string name="title_theme">Temalar</string>
+    <string name="to_continue_agree_to_updated">Devam etmek için güncellenmiş %s metinlerimizi kabul edin.</string>
     <string name="to_get_local_weather_chn">"Yerel hava durumunu almak için geçerli konumunuz hava durumu servis sağlayıcıya gönderilecektir. (Lütfen sağlayıcının %1$sHüküm ve Koşullar%2$s’na ve %3$sGizlilik Politikası%4$s’na bakın.)
 Cihazınızdaki başka uygulamalar ve servisler o uygulamalardaki hava durumunu göstermek için alınmış hava durumu verilerine erişebilir.
 Size sürekli şekilde hava durumu bilgileri sağlayabilmek için, siz uygulamayı kullanmadığınız zaman bile Hava Durumu konumunuza erişim sahibi olacaktır."</string>
     <string name="today">Bugün</string>
+    <string name="try_it_out_btn">Dene</string>
+    <string name="tue">Sal</string>
+    <string name="turn_on_to_use_precise_location">"Bu özelliği kullanmak için %s uygulamasının konumunuza her zaman erişebilmesine izin vermeniz ve Tam konumu kullan özelliğini açmanız gerekir. Ayarlar'a dokunun ve İzinler > Konum bölümüne gidin."</string>
     <string name="tw_title_weather_broadcast">Yayın</string>
-    <string name="unable_to_check_for_updates">Güncellemeler kontrol edilemiyor. Ağ bağlantısı yok.</string>
+    <string name="unable_to_check_for_updates">Güncellemeler denetlenemedi. Daha sonra tekrar deneyin.</string>
     <string name="unable_to_receive_info_msg">Bilgi alınamıyor</string>
     <string name="unticked_tts">İşaretlenmemiş</string>
     <string name="unused">Kullanılmıyor</string>
     <string name="update">Güncelle</string>
     <string name="update_abb8">Güncelle</string>
     <string name="update_app">Uygulamayı güncelle</string>
+    <string name="updated_tile_chn">Güncellenen: %s</string>
     <string name="updated_tts">%s güncellendi</string>
+    <string name="use_current_location">Geçerli konumu kullan</string>
     <string name="use_current_location_agree_popup">"Yerel hava durumunu almak amacıyla mevcut konumunuz, hava durumu hizmetleri sağlayıcısına gönderilecektir. (Lütfen sağlayıcının %1$sgizlilik ilkesine%2$s bakın.)
 Cihazınızdaki diğer uygulamalar ve hizmetler, bu uygulamalarda hava durumunu göstermek için alınan hava durumu verilerine erişebilir."</string>
     <string name="use_current_location_and_background_agree_popup">"Yerel hava durumunu almak için geçerli konumunuz hava durumu servis sağlayıcıya gönderilecektir. (Lütfen sağlayıcının %1$sGizlilik Politikasını%2$s bakın.)
@@ -746,9 +784,16 @@ Size sürekli şekilde hava durumu bilgileri sağlayabilmek için, siz uygulamay
 Hava Durumu uygulaması ayarlarına giderek konumunuzun kullanılmasını kapatabilirsiniz."</string>
     <string name="use_current_location_body_msg_chn">"“Hava” uygulamasını kullanmadan önce lütfen dikkatlice okuyun:
 Geçerli konumunuzun hava durumunu öğrenmek istiyorsanız, üçüncü taraf servis sağlayıcısının cihazınıza sürekli (hizmeti kullanmasanız bile) erişmesine ve aşağıda listelendiği gibi belirli verileri almasına izin vermeniz gerekir. Lütfen söz konusu izni vermeden önce üçüncü taraf servis sağlayıcının %1$sHüküm ve Koşullarını%2$s ve %3$sGizlilik Politikasını%4$s dikkatlice okuyun ve anlayın. Ayarlar menüsünde “Konum” özelliğini kapatarak izninizi geri çekebilirsiniz. Cihazınızdaki diğer uygulamalar ve hizmetler, bu uygulamalarda ve hizmetlerde hava durumunu göstermek için alınan hava durumu verilerine erişebilir."</string>
+    <string name="use_current_location_body_msg_kor">"Mevcut konum verileriniz toplanır ve Hava durumu uygulamasının bulunduğunuz yerdeki hava durumunu göstermek gibi bazı özelliklerini sağlamak için kullanılır.
+
+Hava durumunu sürekli olarak sağlamak için bu uygulama, siz uygulamayı kullanmıyorken bile düzenli olarak konumunuzu işler. Devam ederek yukarıda verilen amaçlar doğrultusunda konum verilerinizin toplanmasını ve işlenmesini kabul etmiş olursunuz.
+
+Bu konum verileri toplama ve kullanımını Hava durumu ayarlarından durdurabilirsiniz."</string>
     <string name="use_current_location_body_purpose">Amaç</string>
     <string name="use_current_location_body_purpose_content">Geçerli konumunuz için hava durumu bilgisi sağlamak amacıyla</string>
     <string name="use_current_location_body_search_provider">Servis Sağlayıcı</string>
+    <string name="use_current_location_continue">Devam</string>
+    <string name="use_current_location_not_now">Şimdi değil</string>
     <string name="use_current_location_off_alert_popup">Geçerli konum bilgileri kaldırılacak.</string>
     <string name="useful_informations">Hayat için ipuçları ve başka raporlar</string>
     <string name="using_as">%s olarak kullanılıyor</string>
@@ -856,9 +901,11 @@ Geçerli konumunuzun hava durumunu öğrenmek istiyorsanız, üçüncü taraf se
     <string name="weather_tip">Hava durumu ipuçları</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Çar</string>
     <string name="weekly_forecast">Günlük</string>
     <string name="widget_background">Widget arka planı</string>
     <string name="widget_empty_text">Hava bilgisi için dokunun</string>
+    <string name="widget_location">Şehir ismi</string>
     <string name="widget_name_4x1">Hava Durumu ve Saat</string>
     <string name="widget_setting">Ayarlar</string>
     <string name="widget_setting_background_color">Arka plan rengi</string>

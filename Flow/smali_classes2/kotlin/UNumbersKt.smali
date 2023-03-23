@@ -4,16 +4,7 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUNumbers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UNumbers.kt\nkotlin/UNumbersKt\n*L\n1#1,328:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000&\n\u0000\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008)\u001a\u0017\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0003\u0010\u0004\u001a\u0017\u0010\u0000\u001a\u00020\u0001*\u00020\u0005H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0006\u0010\u0007\u001a\u0017\u0010\u0000\u001a\u00020\u0001*\u00020\u0008H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\t\u0010\n\u001a\u0017\u0010\u0000\u001a\u00020\u0001*\u00020\u000bH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000c\u0010\r\u001a\u0017\u0010\u000e\u001a\u00020\u0001*\u00020\u0002H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000f\u0010\u0004\u001a\u0017\u0010\u000e\u001a\u00020\u0001*\u00020\u0005H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0010\u0010\u0007\u001a\u0017\u0010\u000e\u001a\u00020\u0001*\u00020\u0008H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0011\u0010\n\u001a\u0017\u0010\u000e\u001a\u00020\u0001*\u00020\u000bH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0012\u0010\r\u001a\u0017\u0010\u0013\u001a\u00020\u0001*\u00020\u0002H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0014\u0010\u0004\u001a\u0017\u0010\u0013\u001a\u00020\u0001*\u00020\u0005H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0015\u0010\u0007\u001a\u0017\u0010\u0013\u001a\u00020\u0001*\u00020\u0008H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0016\u0010\n\u001a\u0017\u0010\u0013\u001a\u00020\u0001*\u00020\u000bH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0017\u0010\r\u001a\u001f\u0010\u0018\u001a\u00020\u0002*\u00020\u00022\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001a\u0010\u001b\u001a\u001f\u0010\u0018\u001a\u00020\u0005*\u00020\u00052\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001c\u0010\u001d\u001a\u001f\u0010\u0018\u001a\u00020\u0008*\u00020\u00082\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001e\u0010\u001f\u001a\u001f\u0010\u0018\u001a\u00020\u000b*\u00020\u000b2\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008 \u0010!\u001a\u001f\u0010\"\u001a\u00020\u0002*\u00020\u00022\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008#\u0010\u001b\u001a\u001f\u0010\"\u001a\u00020\u0005*\u00020\u00052\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008$\u0010\u001d\u001a\u001f\u0010\"\u001a\u00020\u0008*\u00020\u00082\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008%\u0010\u001f\u001a\u001f\u0010\"\u001a\u00020\u000b*\u00020\u000b2\u0006\u0010\u0019\u001a\u00020\u0001H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008&\u0010!\u001a\u0017\u0010\'\u001a\u00020\u0002*\u00020\u0002H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008(\u0010)\u001a\u0017\u0010\'\u001a\u00020\u0005*\u00020\u0005H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008*\u0010\u0007\u001a\u0017\u0010\'\u001a\u00020\u0008*\u00020\u0008H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010,\u001a\u0017\u0010\'\u001a\u00020\u000b*\u00020\u000bH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010.\u001a\u0017\u0010/\u001a\u00020\u0002*\u00020\u0002H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u00080\u0010)\u001a\u0017\u0010/\u001a\u00020\u0005*\u00020\u0005H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u00081\u0010\u0007\u001a\u0017\u0010/\u001a\u00020\u0008*\u00020\u0008H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u00082\u0010,\u001a\u0017\u0010/\u001a\u00020\u000b*\u00020\u000bH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u00083\u0010.\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u00064"
     }
@@ -75,9 +66,10 @@
     k = 0x2
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -87,7 +79,7 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 185
+    .line 169
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -100,7 +92,7 @@
 .method private static final countLeadingZeroBits-VKZWuLQ(J)I
     .locals 0
 
-    .line 106
+    .line 97
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfLeadingZeros(J)I
 
     move-result p0
@@ -111,7 +103,7 @@
 .method private static final countLeadingZeroBits-WZ4Q5Ns(I)I
     .locals 0
 
-    .line 25
+    .line 23
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -126,7 +118,7 @@
 
     and-int/2addr p0, v0
 
-    .line 265
+    .line 242
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -141,7 +133,7 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 176
+    .line 161
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -156,7 +148,7 @@
 .method private static final countOneBits-VKZWuLQ(J)I
     .locals 0
 
-    .line 97
+    .line 89
     invoke-static {p0, p1}, Ljava/lang/Long;->bitCount(J)I
 
     move-result p0
@@ -167,7 +159,7 @@
 .method private static final countOneBits-WZ4Q5Ns(I)I
     .locals 0
 
-    .line 16
+    .line 15
     invoke-static {p0}, Ljava/lang/Integer;->bitCount(I)I
 
     move-result p0
@@ -182,7 +174,7 @@
 
     and-int/2addr p0, v0
 
-    .line 256
+    .line 234
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -199,7 +191,7 @@
 
     or-int/lit16 p0, p0, 0x100
 
-    .line 194
+    .line 177
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -210,7 +202,7 @@
 .method private static final countTrailingZeroBits-VKZWuLQ(J)I
     .locals 0
 
-    .line 115
+    .line 105
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -221,7 +213,7 @@
 .method private static final countTrailingZeroBits-WZ4Q5Ns(I)I
     .locals 0
 
-    .line 34
+    .line 31
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -236,7 +228,7 @@
 
     or-int/2addr p0, v0
 
-    .line 274
+    .line 250
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -247,7 +239,7 @@
 .method private static final rotateLeft-JSWoG40(JI)J
     .locals 0
 
-    .line 151
+    .line 138
     invoke-static {p0, p1, p2}, Ljava/lang/Long;->rotateLeft(JI)J
 
     move-result-wide p0
@@ -262,7 +254,7 @@
 .method private static final rotateLeft-LxnNnR4(BI)B
     .locals 0
 
-    .line 231
+    .line 211
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateLeft(BI)B
 
     move-result p0
@@ -277,7 +269,7 @@
 .method private static final rotateLeft-V7xB4Y4(II)I
     .locals 0
 
-    .line 70
+    .line 64
     invoke-static {p0, p1}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -292,7 +284,7 @@
 .method private static final rotateLeft-olVBNx4(SI)S
     .locals 0
 
-    .line 311
+    .line 284
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateLeft(SI)S
 
     move-result p0
@@ -307,7 +299,7 @@
 .method private static final rotateRight-JSWoG40(JI)J
     .locals 0
 
-    .line 167
+    .line 153
     invoke-static {p0, p1, p2}, Ljava/lang/Long;->rotateRight(JI)J
 
     move-result-wide p0
@@ -322,7 +314,7 @@
 .method private static final rotateRight-LxnNnR4(BI)B
     .locals 0
 
-    .line 247
+    .line 226
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateRight(BI)B
 
     move-result p0
@@ -337,7 +329,7 @@
 .method private static final rotateRight-V7xB4Y4(II)I
     .locals 0
 
-    .line 87
+    .line 80
     invoke-static {p0, p1}, Ljava/lang/Integer;->rotateRight(II)I
 
     move-result p0
@@ -352,7 +344,7 @@
 .method private static final rotateRight-olVBNx4(SI)S
     .locals 0
 
-    .line 327
+    .line 299
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateRight(SI)S
 
     move-result p0
@@ -369,7 +361,7 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 204
+    .line 186
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -386,7 +378,7 @@
 .method private static final takeHighestOneBit-VKZWuLQ(J)J
     .locals 0
 
-    .line 125
+    .line 114
     invoke-static {p0, p1}, Ljava/lang/Long;->highestOneBit(J)J
 
     move-result-wide p0
@@ -401,7 +393,7 @@
 .method private static final takeHighestOneBit-WZ4Q5Ns(I)I
     .locals 0
 
-    .line 44
+    .line 40
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -420,7 +412,7 @@
 
     and-int/2addr p0, v0
 
-    .line 284
+    .line 259
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -439,7 +431,7 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 214
+    .line 195
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0
@@ -456,7 +448,7 @@
 .method private static final takeLowestOneBit-VKZWuLQ(J)J
     .locals 0
 
-    .line 135
+    .line 123
     invoke-static {p0, p1}, Ljava/lang/Long;->lowestOneBit(J)J
 
     move-result-wide p0
@@ -471,7 +463,7 @@
 .method private static final takeLowestOneBit-WZ4Q5Ns(I)I
     .locals 0
 
-    .line 54
+    .line 49
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0
@@ -490,7 +482,7 @@
 
     and-int/2addr p0, v0
 
-    .line 294
+    .line 268
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0

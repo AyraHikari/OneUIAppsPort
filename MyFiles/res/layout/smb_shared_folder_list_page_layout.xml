@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/smb_shared_folder_list_page_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/shared_folder_list" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/loading_view_stub" android:tag="binding_2" android:layout="@layout/loading_container" android:inflatedId="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

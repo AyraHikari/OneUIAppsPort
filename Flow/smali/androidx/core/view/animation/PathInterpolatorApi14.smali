@@ -19,6 +19,16 @@
 # direct methods
 .method constructor <init>(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "controlX",
+            "controlY"
+        }
+    .end annotation
 
     .line 56
     invoke-static {p1, p2}, Landroidx/core/view/animation/PathInterpolatorApi14;->createQuad(FF)Landroid/graphics/Path;
@@ -32,6 +42,20 @@
 
 .method constructor <init>(FFFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "controlX1",
+            "controlY1",
+            "controlX2",
+            "controlY2"
+        }
+    .end annotation
 
     .line 61
     invoke-static {p1, p2, p3, p4}, Landroidx/core/view/animation/PathInterpolatorApi14;->createCubic(FFFF)Landroid/graphics/Path;
@@ -45,6 +69,14 @@
 
 .method constructor <init>(Landroid/graphics/Path;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
     .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -129,6 +161,20 @@
 
 .method private static createCubic(FFFF)Landroid/graphics/Path;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "controlX1",
+            "controlY1",
+            "controlX2",
+            "controlY2"
+        }
+    .end annotation
 
     .line 107
     new-instance v7, Landroid/graphics/Path;
@@ -162,6 +208,16 @@
 
 .method private static createQuad(FF)Landroid/graphics/Path;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "controlX",
+            "controlY"
+        }
+    .end annotation
 
     .line 99
     new-instance v0, Landroid/graphics/Path;
@@ -185,6 +241,14 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

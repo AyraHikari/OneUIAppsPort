@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout android:tag="layout/detail_air_quality_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+<com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout android:tag="layout/detail_air_quality_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/particulars_common_container_paddingTopBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/air_container_padding_start" android:paddingEnd="@dimen/air_container_padding_end" android:paddingVertical="@dimen/particulars_common_container_paddingTopBottom" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/space">
         <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
@@ -9,4 +9,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/air_item_common_vertical_gap" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_container" app:layout_goneMarginTop="0.0dip" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout>
+</com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout>

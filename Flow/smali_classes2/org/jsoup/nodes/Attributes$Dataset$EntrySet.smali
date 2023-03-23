@@ -25,15 +25,15 @@
 
 
 # instance fields
-.field final synthetic this$1:Lorg/jsoup/nodes/Attributes$Dataset;
+.field final synthetic this$0:Lorg/jsoup/nodes/Attributes$Dataset;
 
 
 # direct methods
 .method private constructor <init>(Lorg/jsoup/nodes/Attributes$Dataset;)V
     .locals 0
 
-    .line 234
-    iput-object p1, p0, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;->this$1:Lorg/jsoup/nodes/Attributes$Dataset;
+    .line 479
+    iput-object p1, p0, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;->this$0:Lorg/jsoup/nodes/Attributes$Dataset;
 
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
@@ -43,7 +43,7 @@
 .method synthetic constructor <init>(Lorg/jsoup/nodes/Attributes$Dataset;Lorg/jsoup/nodes/Attributes$1;)V
     .locals 0
 
-    .line 234
+    .line 479
     invoke-direct {p0, p1}, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;-><init>(Lorg/jsoup/nodes/Attributes$Dataset;)V
 
     return-void
@@ -64,10 +64,10 @@
         }
     .end annotation
 
-    .line 238
+    .line 483
     new-instance v0, Lorg/jsoup/nodes/Attributes$Dataset$DatasetIterator;
 
-    iget-object v1, p0, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;->this$1:Lorg/jsoup/nodes/Attributes$Dataset;
+    iget-object v1, p0, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;->this$0:Lorg/jsoup/nodes/Attributes$Dataset;
 
     const/4 v2, 0x0
 
@@ -79,10 +79,10 @@
 .method public size()I
     .locals 3
 
-    .line 244
+    .line 489
     new-instance v0, Lorg/jsoup/nodes/Attributes$Dataset$DatasetIterator;
 
-    iget-object v1, p0, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;->this$1:Lorg/jsoup/nodes/Attributes$Dataset;
+    iget-object v1, p0, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;->this$0:Lorg/jsoup/nodes/Attributes$Dataset;
 
     const/4 v2, 0x0
 
@@ -90,7 +90,7 @@
 
     const/4 v1, 0x0
 
-    .line 245
+    .line 490
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 

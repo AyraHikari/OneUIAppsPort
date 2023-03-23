@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 135
+    .line 132
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$3;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +46,10 @@
 .method public run()V
     .locals 2
 
-    .line 138
+    .line 135
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->doEncryptionTest()V
 
-    .line 140
+    .line 137
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/IrisHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/IrisHelper;
 
     move-result-object v0

@@ -161,15 +161,17 @@
     if-eqz v1, :cond_0
 
     .line 90
-    new-instance v2, Lorg/spongycastle/asn1/BERTaggedObject;
+    new-instance v1, Lorg/spongycastle/asn1/BERTaggedObject;
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    invoke-direct {v2, v3, v4, v1}, Lorg/spongycastle/asn1/BERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
+    iget-object v4, p0, Lorg/spongycastle/asn1/pkcs/ContentInfo;->content:Lorg/spongycastle/asn1/ASN1Encodable;
 
-    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
+    invoke-direct {v1, v2, v3, v4}, Lorg/spongycastle/asn1/BERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
+
+    invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
 
     .line 93
     :cond_0

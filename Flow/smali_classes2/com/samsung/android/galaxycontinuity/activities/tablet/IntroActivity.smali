@@ -26,7 +26,7 @@
 .method private initView()V
     .locals 2
 
-    const v0, 0x7f090260
+    const v0, 0x7f0a0384
 
     .line 51
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->findViewById(I)Landroid/view/View;
@@ -43,11 +43,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f100029
+    const v1, 0x7f11002d
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/ActionBar;->setTitle(I)V
 
-    const v0, 0x7f09025d
+    const v0, 0x7f0a0380
 
     .line 55
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->findViewById(I)Landroid/view/View;
@@ -58,7 +58,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->mTitleText:Landroid/widget/TextView;
 
-    const v0, 0x7f0900be
+    const v0, 0x7f0a0109
 
     .line 56
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->findViewById(I)Landroid/view/View;
@@ -69,7 +69,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->mDescriptionText:Landroid/widget/TextView;
 
-    const v0, 0x7f090100
+    const v0, 0x7f0a017a
 
     .line 57
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->findViewById(I)Landroid/view/View;
@@ -96,7 +96,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f1000ec
+    const v1, 0x7f110103
 
     .line 61
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
@@ -107,7 +107,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f1000eb
+    const v1, 0x7f110102
 
     .line 65
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
@@ -118,13 +118,13 @@
 
     if-eqz v0, :cond_2
 
-    const v1, 0x7f070259
+    const v1, 0x7f0800ae
 
     .line 69
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     :cond_2
-    const v0, 0x7f09007b
+    const v0, 0x7f0a00a2
 
     .line 74
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->findViewById(I)Landroid/view/View;
@@ -142,7 +142,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090047
+    const v0, 0x7f0a0057
 
     .line 84
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->findViewById(I)Landroid/view/View;
@@ -165,6 +165,14 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newConfig"
+        }
+    .end annotation
 
     .line 40
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -174,11 +182,19 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 31
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0c0015
+    const p1, 0x7f0d0013
 
     .line 33
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;->setContentView(I)V

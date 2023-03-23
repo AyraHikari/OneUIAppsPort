@@ -28,6 +28,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;Landroid/app/Activity;Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$activity",
+            "val$permissions"
+        }
+    .end annotation
 
     .line 404
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
@@ -84,7 +96,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c003b
+    const v2, 0x7f0d0038
 
     const/4 v3, 0x0
 
@@ -93,7 +105,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0c003c
+    const v4, 0x7f0d0039
 
     .line 416
     invoke-virtual {v1, v4, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -103,7 +115,7 @@
     .line 418
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
 
-    const v4, 0x7f0900cc
+    const v4, 0x7f0a011e
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -116,7 +128,7 @@
     .line 419
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;->val$activity:Landroid/app/Activity;
 
-    const v4, 0x7f100081
+    const v4, 0x7f110091
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -134,9 +146,11 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;->val$activity:Landroid/app/Activity;
 
-    const v7, 0x7f100029
+    const v7, 0x7f11002d
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -144,9 +158,13 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     const-string v6, "</strong>"
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -214,7 +232,7 @@
     .line 429
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
 
-    const v5, 0x7f09013e
+    const v5, 0x7f0a01cc
 
     invoke-virtual {v2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -297,7 +315,7 @@
     move-result-object v4
 
     .line 444
-    sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v5, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v7, 0x18
 
@@ -344,7 +362,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0c005c
+    const v8, 0x7f0d0058
 
     invoke-direct {v5, v7, v8, v4}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$PermissionListAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
@@ -380,7 +398,7 @@
     .line 456
     invoke-virtual {v0, v6}, Landroidx/appcompat/app/AlertDialog$Builder;->setCancelable(Z)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f10019f
+    const v1, 0x7f11021e
 
     .line 458
     new-instance v2, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1$1;
@@ -396,7 +414,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f10009d
+    const v1, 0x7f1100b1
 
     .line 486
     new-instance v2, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1$3;

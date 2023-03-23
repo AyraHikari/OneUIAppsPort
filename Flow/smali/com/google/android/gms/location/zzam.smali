@@ -1,117 +1,56 @@
-.class public final Lcom/google/android/gms/location/zzam;
+.class public final synthetic Lcom/google/android/gms/location/zzam;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/location/zzal;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic zza:Lcom/google/android/gms/location/FusedLocationProviderClient;
+
+.field public final synthetic zzb:Lcom/google/android/gms/location/CurrentLocationRequest;
+
+.field public final synthetic zzc:Lcom/google/android/gms/tasks/CancellationToken;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>(Lcom/google/android/gms/location/FusedLocationProviderClient;Lcom/google/android/gms/location/CurrentLocationRequest;Lcom/google/android/gms/tasks/CancellationToken;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/location/zzam;->zza:Lcom/google/android/gms/location/FusedLocationProviderClient;
+
+    iput-object p2, p0, Lcom/google/android/gms/location/zzam;->zzb:Lcom/google/android/gms/location/CurrentLocationRequest;
+
+    iput-object p3, p0, Lcom/google/android/gms/location/zzam;->zzc:Lcom/google/android/gms/tasks/CancellationToken;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 7
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 4
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+    iget-object v0, p0, Lcom/google/android/gms/location/zzam;->zza:Lcom/google/android/gms/location/FusedLocationProviderClient;
 
-    move-result v0
+    iget-object v1, p0, Lcom/google/android/gms/location/zzam;->zzb:Lcom/google/android/gms/location/CurrentLocationRequest;
 
-    const/4 v1, 0x0
+    iget-object v2, p0, Lcom/google/android/gms/location/zzam;->zzc:Lcom/google/android/gms/tasks/CancellationToken;
 
-    const-string v2, ""
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    move-object v3, v2
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    move-object v2, v1
+    .line 1
+    new-instance v3, Lcom/google/android/gms/location/zzat;
 
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    invoke-direct {v3, v0, p2}, Lcom/google/android/gms/location/zzat;-><init>(Lcom/google/android/gms/location/FusedLocationProviderClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    move-result v4
+    .line 2
+    invoke-virtual {p1, v1, v2, v3}, Lcom/google/android/gms/internal/location/zzbe;->zzt(Lcom/google/android/gms/location/CurrentLocationRequest;Lcom/google/android/gms/tasks/CancellationToken;Lcom/google/android/gms/internal/location/zzao;)V
 
-    if-ge v4, v0, :cond_3
-
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
-
-    move-result v4
-
-    invoke-static {v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
-
-    move-result v5
-
-    const/4 v6, 0x1
-
-    if-eq v5, v6, :cond_2
-
-    const/4 v6, 0x2
-
-    if-eq v5, v6, :cond_1
-
-    const/4 v6, 0x3
-
-    if-eq v5, v6, :cond_0
-
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    :cond_0
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createString(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_0
-
-    :cond_1
-    sget-object v2, Landroid/app/PendingIntent;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    invoke-static {p1, v4, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/app/PendingIntent;
-
-    goto :goto_0
-
-    :cond_2
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createStringList(Landroid/os/Parcel;I)Ljava/util/ArrayList;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
-
-    new-instance p1, Lcom/google/android/gms/location/zzal;
-
-    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/location/zzal;-><init>(Ljava/util/List;Landroid/app/PendingIntent;Ljava/lang/String;)V
-
-    return-object p1
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    new-array p1, p1, [Lcom/google/android/gms/location/zzal;
-
-    return-object p1
+    return-void
 .end method

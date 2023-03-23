@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/search_file_list_page_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sec.android.app.myfiles.external.ui.pages.filelist.search.SearchFilterView android:id="@id/search_filter_view" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/file_list_layout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/rounded_corner">
+        <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/empty_view" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/no_item" />
+        </LinearLayout>
+        <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_container" />
+    </LinearLayout>
+    <ViewStub android:id="@id/search_history_view_stub" android:visibility="gone" android:layout="@layout/search_history_stub" android:inflatedId="@id/search_history_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

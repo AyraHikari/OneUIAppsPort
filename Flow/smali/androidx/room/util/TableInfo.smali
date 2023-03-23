@@ -1,4 +1,4 @@
-.class public Landroidx/room/util/TableInfo;
+.class public final Landroidx/room/util/TableInfo;
 .super Ljava/lang/Object;
 .source "TableInfo.java"
 
@@ -60,6 +60,19 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "columns",
+            "foreignKeys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,6 +99,21 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "columns",
+            "foreignKeys",
+            "indices"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -143,6 +171,16 @@
 
 .method public static read(Landroidx/sqlite/db/SupportSQLiteDatabase;Ljava/lang/String;)Landroidx/room/util/TableInfo;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "database",
+            "tableName"
+        }
+    .end annotation
 
     .line 169
     invoke-static {p0, p1}, Landroidx/room/util/TableInfo;->readColumns(Landroidx/sqlite/db/SupportSQLiteDatabase;Ljava/lang/String;)Ljava/util/Map;
@@ -169,6 +207,17 @@
 
 .method private static readColumns(Landroidx/sqlite/db/SupportSQLiteDatabase;Ljava/lang/String;)Ljava/util/Map;
     .locals 14
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "database",
+            "tableName"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -191,13 +240,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, "`)"
+    move-result-object v0
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const-string v0, "`)"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -333,6 +388,15 @@
 
 .method private static readForeignKeyFieldMappings(Landroid/database/Cursor;)Ljava/util/List;
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cursor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -431,6 +495,17 @@
 
 .method private static readForeignKeys(Landroidx/sqlite/db/SupportSQLiteDatabase;Ljava/lang/String;)Ljava/util/Set;
     .locals 18
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "database",
+            "tableName"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -457,13 +532,19 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     move-object/from16 v2, p1
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, "`)"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -646,6 +727,18 @@
 
 .method private static readIndex(Landroidx/sqlite/db/SupportSQLiteDatabase;Ljava/lang/String;Z)Landroidx/room/util/TableInfo$Index;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "database",
+            "name",
+            "unique"
+        }
+    .end annotation
 
     .line 310
     new-instance v0, Ljava/lang/StringBuilder;
@@ -656,11 +749,17 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, "`)"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -793,6 +892,17 @@
 
 .method private static readIndices(Landroidx/sqlite/db/SupportSQLiteDatabase;Ljava/lang/String;)Ljava/util/Set;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "database",
+            "tableName"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -814,13 +924,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, "`)"
+    move-result-object v0
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const-string v0, "`)"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -961,6 +1077,14 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -968,98 +1092,90 @@
 
     return v0
 
-    :cond_0
-    const/4 v1, 0x0
-
-    if-eqz p1, :cond_a
-
     .line 121
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_0
+    instance-of v1, p1, Landroidx/room/util/TableInfo;
 
-    move-result-object v2
+    const/4 v2, 0x0
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-nez v1, :cond_1
 
-    move-result-object v3
-
-    if-eq v2, v3, :cond_1
-
-    goto :goto_4
+    return v2
 
     .line 123
     :cond_1
     check-cast p1, Landroidx/room/util/TableInfo;
 
     .line 125
-    iget-object v2, p0, Landroidx/room/util/TableInfo;->name:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/room/util/TableInfo;->name:Ljava/lang/String;
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     iget-object v3, p1, Landroidx/room/util/TableInfo;->name:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_3
+    if-nez v1, :cond_3
 
     goto :goto_0
 
     :cond_2
-    iget-object v2, p1, Landroidx/room/util/TableInfo;->name:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/room/util/TableInfo;->name:Ljava/lang/String;
 
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
 
     :goto_0
-    return v1
+    return v2
 
     .line 126
     :cond_3
-    iget-object v2, p0, Landroidx/room/util/TableInfo;->columns:Ljava/util/Map;
+    iget-object v1, p0, Landroidx/room/util/TableInfo;->columns:Ljava/util/Map;
 
-    if-eqz v2, :cond_4
+    if-eqz v1, :cond_4
 
     iget-object v3, p1, Landroidx/room/util/TableInfo;->columns:Ljava/util/Map;
 
-    invoke-interface {v2, v3}, Ljava/util/Map;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v1, v3}, Ljava/util/Map;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_5
+    if-nez v1, :cond_5
 
     goto :goto_1
 
     :cond_4
-    iget-object v2, p1, Landroidx/room/util/TableInfo;->columns:Ljava/util/Map;
+    iget-object v1, p1, Landroidx/room/util/TableInfo;->columns:Ljava/util/Map;
 
-    if-eqz v2, :cond_5
+    if-eqz v1, :cond_5
 
     :goto_1
-    return v1
+    return v2
 
     .line 129
     :cond_5
-    iget-object v2, p0, Landroidx/room/util/TableInfo;->foreignKeys:Ljava/util/Set;
+    iget-object v1, p0, Landroidx/room/util/TableInfo;->foreignKeys:Ljava/util/Set;
 
-    if-eqz v2, :cond_6
+    if-eqz v1, :cond_6
 
     iget-object v3, p1, Landroidx/room/util/TableInfo;->foreignKeys:Ljava/util/Set;
 
-    invoke-interface {v2, v3}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v1, v3}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_7
+    if-nez v1, :cond_7
 
     goto :goto_2
 
     :cond_6
-    iget-object v2, p1, Landroidx/room/util/TableInfo;->foreignKeys:Ljava/util/Set;
+    iget-object v1, p1, Landroidx/room/util/TableInfo;->foreignKeys:Ljava/util/Set;
 
-    if-eqz v2, :cond_7
+    if-eqz v1, :cond_7
 
     :goto_2
-    return v1
+    return v2
 
     .line 133
     :cond_7
@@ -1084,10 +1200,6 @@
     :cond_9
     :goto_3
     return v0
-
-    :cond_a
-    :goto_4
-    return v1
 .end method
 
 .method public hashCode()I
@@ -1158,41 +1270,61 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Landroidx/room/util/TableInfo;->name:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/16 v1, 0x27
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", columns="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Landroidx/room/util/TableInfo;->columns:Ljava/util/Map;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", foreignKeys="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Landroidx/room/util/TableInfo;->foreignKeys:Ljava/util/Set;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", indices="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Landroidx/room/util/TableInfo;->indices:Ljava/util/Set;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const/16 v1, 0x7d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

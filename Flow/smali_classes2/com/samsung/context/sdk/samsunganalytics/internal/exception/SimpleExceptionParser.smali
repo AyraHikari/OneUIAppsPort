@@ -24,6 +24,16 @@
 # virtual methods
 .method public getDescription(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "threadName",
+            "throwable"
+        }
+    .end annotation
 
     .line 8
     new-instance p1, Ljava/lang/StringBuilder;

@@ -26,6 +26,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$ThumbnailHandler;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$latch"
+        }
+    .end annotation
 
     .line 197
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$ThumbnailHandler$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$ThumbnailHandler;
@@ -41,6 +51,18 @@
 # virtual methods
 .method public onCompleted(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;Ljava/lang/String;Landroid/net/Uri;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedContentsItem",
+            "path",
+            "uri"
+        }
+    .end annotation
 
     .line 200
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$ThumbnailHandler$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$ThumbnailHandler;

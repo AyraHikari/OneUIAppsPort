@@ -33,6 +33,7 @@
     <string name="air_quality">Якасць паветра</string>
     <string name="air_quality_next_tts">Пазнейшыя штодзённыя прагнозы якасці паветра</string>
     <string name="air_quality_previous_tts">Ранейшыя штодзённыя прагнозы якасці паветра</string>
+    <string name="alert_title">Абвестка пра небяспечнае надвор’е</string>
     <string name="all_added_cities">Усе дададзеныя гарады</string>
     <string name="allow">Дазволіць</string>
     <string name="allow_permission_in_settings">Для выкарыстання гэтай функцыі неабходна даць дазвол у наладах.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Дзеянне не падтрымліваецца.</string>
     <string name="apply_daylight_saving_time">Дастасаваць летні час?</string>
     <string name="as_possible_after_verification">Справаздача адпраўлена. Пасля праверкі назва горада будзе як мага хутчэй зменена.</string>
+    <string name="auto_refresh_on_screen_description">Аўтаматычна атрымлівайце абноўленую інфармацыю пра надвор’е кожную гадзіну. Калі гэта функцыя ўключана, абнаўляць уручную нельга.</string>
+    <string name="auto_refresh_on_the_go">Аўтаабнаўленне на хаду</string>
+    <string name="auto_refresh_on_the_go_advanced">Адмысловыя</string>
+    <string name="auto_refresh_on_the_go_description">Атрымлівайце больш частыя абнаўленні надвор’я, калі вы за рулём аўтамабіля, на веласіпедзе, бяжыце або ідзяце. Калі гэта функцыя ўключана, абнаўляць уручную нельга.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Атрымлівайце больш частыя абнаўленні надвор’я, калі вы за рулём аўтамабіля, на веласіпедзе, бяжыце або ідзяце.</string>
     <string name="btn_report">Павед.</string>
     <string name="button_finish">Гатова</string>
     <string name="button_tts">Кнопка</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Націсніце тут для атрымання дадатковых звестак.</string>
     <string name="china">Кітай</string>
     <string name="cities_button">Гарады</string>
+    <string name="city_added">Горад дададзены.</string>
     <string name="city_list_text">Гарады</string>
     <string name="clear">Ясна</string>
     <string name="clear_then_cloudy">Ясна, потым воблачна</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Элемент перацягнуты ў пазіцыю %d.</string>
     <string name="dragndroplist_drag_start">Пачалося перацягванне элемента ў пазіцыю %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Элемент у пазіцыі %d немагчыма перацягнуць.</string>
+    <string name="drawer_tips">Падказкі: %s</string>
     <string name="drawer_tips_message">Націсніце тут, каб дадаць або выдаліць месцы, а таксама змяніць іх парадак. Вы таксама можаце дадаць некалькі віджэтаў, каб паказваць розныя месцы на галоўным экране.</string>
     <string name="drawer_tips_message_1">Націсніце «Кіраваць месцамі» унізе гэтага меню, каб дадаць або выдаліць месцы, а таксама змяніць іх парадак.</string>
     <string name="drawer_tips_message_2">Вы можаце дадаваць больш аднаго віджэта на галоўны экран, каб адначасова паказваць розныя месцы.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Відэа прагнозу</string>
     <string name="format_km_per_hour">%s км/г</string>
     <string name="format_m_per_hour">%s мі/г</string>
+    <string name="fri">Пт</string>
     <string name="general">Агульнае</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Атрымлівайце персаналізаванае змесціва на аснове таго, як вы карыстаецеся сваім тэлефонам.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Атрымлівайце персаналізаванае змесціва на аснове таго, як вы карыстаецеся планшэтам.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">атрымлівайце звесткі пра надвор’е, у тым ліку ваша бягучае месцазнаходжанне, з праграмы «Надвор’е»</string>
     <string name="go_to_website">Перайсці на вэб-сайт</string>
     <string name="goto_apps">Ёсць новае абнаўленне. Усталяваць зараз?</string>
     <string name="goto_apps_later">Пазней</string>
     <string name="goto_apps_now">Цяпер</string>
     <string name="goto_apps_update_title">Абвесткі аб новым змесціве</string>
     <string name="header_tts">Загаловак</string>
+    <string name="heavy">Моцныя</string>
     <string name="heavy_rain">Моцны дождж</string>
     <string name="heavy_rain_followed_by_intense_heat">Моцны дождж, потым моцная спёка</string>
     <string name="heavy_rain_followed_by_light_rain">Моцны дождж, потым моцная спёка</string>
@@ -193,7 +204,7 @@
     <string name="heavy_rain_with_some_snow">Моцны дождж, месцамі снег</string>
     <string name="heavy_rain_with_sunny_intervals">Моцны дождж і пераменная воблачнасць</string>
     <string name="help">Даведка</string>
-    <string name="help_favorite_location_msg">Ваша ўпадабанае месцазнаходжанне будзе выкарыстоўвацца для прадастаўлення інфармацыі аб надвор’і ў апавяшчэннях, календары, Always On Display і іншых падлучаных сэрвісах. Вы можаце змяніць ваша ўпадабанае месцазнаходжанне ў спісе месцазнаходжанняў.</string>
+    <string name="help_favorite_location_msg">Ваша ўпадабанае месцазнаходжанне будзе выкарыстоўвацца для забеспячэння інфармацыі аб надвор’і ў апавяшчэннях, календары, Always On Display і іншых падлучаных сэрвісах. Вы можаце змяніць ваша ўпадабанае месцазнаходжанне ў спісе месцазнаходжанняў.</string>
     <string name="help_favorite_location_without_aod_and_calendar_msg">Ваша ўпадабанае месцазнаходжанне будзе выкарыстоўвацца для паведамлення звестак пра надвор’е ў апавяшчэннях. Вы можаце змяніць упадабанае месцазнаходжанне ў спісе месцазнаходжанняў.</string>
     <string name="help_favorite_location_without_aod_msg">Ваша ўпадабанае месцазнаходжанне будзе выкарыстоўвацца для стварэння інфармацыі аб надвор’і ў апавяшчэннях, календары і іншых падлучаных сэрвісах. Вы можаце змяніць ваша ўпадабанае месцазнаходжанне ў спісе месцазнаходжанняў.</string>
     <string name="high_accuracy">GPS, Wi-Fi і мабільныя сеткі</string>
@@ -339,6 +350,7 @@
     <string name="life_index_visibility">Бачнасць</string>
     <string name="life_index_wind">Вецер</string>
     <string name="life_index_wind_force">Хуткасць ветру</string>
+    <string name="light">Слабыя</string>
     <string name="light_rain_followed_by_heavy_rain">Лёгкі дождж з пераходам у моцны дождж</string>
     <string name="light_rain_with_some_heavy_rain">Лёгкі дождж, часам моцны дождж</string>
     <string name="link_tts">Звязаць</string>
@@ -394,6 +406,7 @@
     <string name="message_no_search_result_z">Вынікі не знойдзены.</string>
     <string name="message_service_not_available">Сэрвіс зараз недаступны.</string>
     <string name="minus_tts">Мінус</string>
+    <string name="mon">Пн</string>
     <string name="more">Яшчэ</string>
     <string name="more_cuntact_us">Звязацца з намі</string>
     <string name="more_information">Больш</string>
@@ -403,7 +416,17 @@
     <string name="navigation_drawer_tips_message">Націсніце тут, каб змяніць месцазнаходжанне па змаўчанні для прагнозу надвор’я і кіраваць сваімі месцазнаходжаннямі.</string>
     <string name="new_version_available">Даступна новая версія %s.</string>
     <string name="new_version_is_available">Ёсць новая версія.</string>
+    <string name="news_menu_show_news">Паказаць навіны</string>
+    <string name="news_opt_in_banner_title_text">Будзьце ў курсе бягучых падзей дзякуючы паказу навін у віджэце надвор’я.</string>
+    <string name="news_opt_in_popup_desc_text">Будзьце ў курсе падзей у свеце дзякуючы паказу актуальных загалоўкаў з %s у віджэце надвор’я.</string>
+    <string name="news_opt_in_popup_title_text">Глядзіце навіны і надвор’е ў адным віджэце</string>
+    <string name="news_request_agree_text">Націсніце, каб атрымліваць навіны ад %s</string>
+    <string name="news_widget_bubble_text">Атрымлівайце навіны разам з інфармацыяй аб надвор’і.</string>
+    <string name="news_widget_dummy_title">Сённяшняя лепшая гісторыя</string>
+    <string name="news_widget_new_dummy_title">5 рэчаў, якія вам трэба ведаць гэтай раніцай</string>
+    <string name="news_widget_oobe_text">Нац. тут, каб дадаць навіны.</string>
     <string name="next">Next city</string>
+    <string name="next_btn">Далей</string>
     <string name="next_city">Двойчы націсніце, каб праглядзець інфармацыю аб надвор’і ў наступным горадзе.</string>
     <string name="night_tts">Ноч</string>
     <string name="no_application_available">Няма праграм.</string>
@@ -412,6 +435,7 @@
     <string name="no_weather_information">Няма звестак пра надвор’е</string>
     <string name="not_in_use">Не выкарыстоўваецца</string>
     <string name="not_now">Не зараз</string>
+    <string name="not_now_btn">Не зараз</string>
     <string name="not_selected">Не выбрана</string>
     <string name="nothing_selected">Нічога не выбрана.</string>
     <string name="noti">Папярэджанне</string>
@@ -419,6 +443,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Каб павялічыць хуткасць і дакладнасць вызначэння месцазнаходжання, націсніце НАЛАДЫ, затым наладзьце спосаб вызначэння месцазнаходжання на GPS, Wi-Fi і мабільныя сеткі.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Каб павялічыць хуткасць і дакладнасць вызначэння месцазнаходжання, націсніце НАЛАДЫ, затым наладзьце спосаб вызначэння месцазнаходжання на GPS і Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Каб паглядзець інфармацыю аб мясцовым надвор’і, уключыце Налады месцазнаходжання і пераканайцеся, што зададзены рэжым «Высокая дакладнасць».</string>
+    <string name="notification_alert_channel_name">Абвестка пра небяспечнае надвор’е</string>
     <string name="notification_apps_update_channel_name">Апавяшчэнні пра абнаўленні</string>
     <string name="notification_auto_refresh_channel_name">Аўтаабнаўленне Надвор’я</string>
     <string name="notification_dex_channel_name">Надвор’е ў Samsung DeX</string>
@@ -439,6 +464,7 @@
     <string name="open_app">Адкр. праграму</string>
     <string name="open_source_licences">Ліцэнзіі адкрытага ПЗ</string>
     <string name="other_locations">Іншыя месцы</string>
+    <string name="partly_sunny">Месцамі сонечна</string>
     <string name="paused">Прыпынена</string>
     <string name="pd_km">%.1f км</string>
     <string name="pd_km_h">%d км/г</string>
@@ -455,10 +481,13 @@
     <string name="precipitation_pd_mm">Ападкі: %d мм</string>
     <string name="preview">Перадпрагляд %s</string>
     <string name="previous">Previous city</string>
+    <string name="previous_btn">Папярэдні</string>
     <string name="previous_city">Двойчы націсніце, каб праглядзець інфармацыю аб надвор’і ў папярэднім горадзе.</string>
     <string name="privacy_policy">Палітыка прыватнасці</string>
     <string name="probability_of_rain_text">Імавернасць дажджу</string>
     <string name="protect_your_content">Абараніце сваё змесціва</string>
+    <string name="ps_in">%s цалі(яў)</string>
+    <string name="ps_mm">%s мм</string>
     <string name="radar">Радар і карты</string>
     <string name="rain">Дождж</string>
     <string name="rain_followed_by_intense_heat">Дождж, потым моцная спёка</string>
@@ -496,6 +525,7 @@
     <string name="runtime_location_permission_desc">Каб абнавіць інфармацыю пра надвор’е, націсніце «НАЛАДЫ», перайдзіце да «Інфармацыя аб праграме > Дазволы», затым дайце наступныя дазволы і паўтарыце спробу:</string>
     <string name="runtime_location_permission_title">Даць дазволы</string>
     <string name="runtime_oem_grant_permission_desc">Праграме %s дазволены доступ да наступнага:</string>
+    <string name="sat">Сб</string>
     <string name="save_button">Захаваць</string>
     <string name="search_most_searched_for">Найбольш часта шукалі</string>
     <string name="search_tab_cities">Гарады</string>
@@ -522,6 +552,7 @@
     <string name="sesl_material_badge_description">Даступна новае змесціва</string>
     <string name="sesl_material_overflow_badge_text_n">Н</string>
     <string name="sesl_more_item_label">Болей</string>
+    <string name="sesl_preferecne_badge_description">Новае апавяшчэнне</string>
     <string name="sesl_preferencecategory_added_title">Загаловак</string>
     <string name="sesl_search_hint">Пошук</string>
     <string name="sesl_searchview_description_clear">Ачысціць поле пошуку</string>
@@ -586,6 +617,9 @@
     <string name="st_no_network_desc">Праверце падлучэнне да сеткі і паўтарыце спробу.</string>
     <string name="st_offline">Па-за сетк</string>
     <string name="st_view_less">Паказаць менш</string>
+    <string name="status_off">Выключаны</string>
+    <string name="status_on">Уключана</string>
+    <string name="sun">Ндз</string>
     <string name="sunny">Сонечна</string>
     <string name="sunny_with_some_clouds">Сонечна, часам воблачна</string>
     <string name="sunny_with_some_heavy_rain">Сонечна, часам моцны дождж</string>
@@ -598,6 +632,7 @@
     <string name="tap_here_to_restore_the_weather">Націсніце тут, каб аднавіць даныя пра надвор’е з вашай старой прылады.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Націсніце «ПАЎТАРЫЦЬ», каб паўтарыць спробу пошуку вашага месцазнаходжання.</string>
     <string name="tap_setting_message_edge_panel">Каб атрымліваць мясцовыя звесткі аб надвор’і, уключыце вызначэнне месцазнаходжання.</string>
+    <string name="tap_the_settings_icon">Націсніце на значок налад.</string>
     <string name="tap_to_get_the_weather">Націсніце, каб атрымаць прагноз надвор’я</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -605,6 +640,7 @@
     <string name="terms_and_conditions">Умовы</string>
     <string name="the_latest_version">Апошняя версія ўжо ўсталявана.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Гэта таксама будзе прыменена да апавяшчэнняў і календара.</string>
+    <string name="thu">Чц</string>
     <string name="tick_box_tts">Сцяжок</string>
     <string name="ticked_tts">Птушка стаіць</string>
     <string name="time_am">AM</string>
@@ -612,19 +648,25 @@
     <string name="times_forecast">Па гадзінах</string>
     <string name="title_select_locations">Выберыце месцы</string>
     <string name="title_theme">Тэмы</string>
+    <string name="to_continue_agree_to_updated">Каб працягнуць, пагадзіцеся з нашым(і) абноўленым(і) %s.</string>
     <string name="to_get_local_weather_chn">"Для атрымання звестак пра мясцовае надвор’е ваша бягучае месцазнаходжанне будзе адпраўлена пастаўшчыку метэаралагічных паслуг. (Глядзіце %1$sУмовы%2$s і %3$sПалітыку прыватнасці%4$s пастаўшчыка.)
 Іншыя праграмы і сэрвісы на вашай прыладзе могуць мець доступ да атрыманых даных пра надвор’е і самі паказваць надвор’е.
 Каб пастаянна даваць вам звесткі пра надвор’е, праграма «Надвор’е» будзе атрымліваць доступ да вашага месцазнаходжання, нават калі вы ёй не карыстаецеся."</string>
     <string name="today">Сёння</string>
+    <string name="try_it_out_btn">Спрабаваць</string>
+    <string name="tue">Аў</string>
+    <string name="turn_on_to_use_precise_location">Для выкарыстання гэтай функцыі трэба даць %s дазвол на пастаянны доступ да месцазнаходжання і ўключыць опцыю «Выкарыстоўваць дакладнае месцазнаходжанне». Націсніце «Налады», а потым перайдзіце ў меню «Дазволы > Месцазнаходжанне».</string>
     <string name="tw_title_weather_broadcast">Трансляцыя</string>
-    <string name="unable_to_check_for_updates">Немагчыма праверыць абнаўленні. Няма злучэння з сеткай.</string>
+    <string name="unable_to_check_for_updates">Не атрымалася праверыць наяўнасць абнаўленняў. Паўтарыце спробу пазней.</string>
     <string name="unable_to_receive_info_msg">Немагчыма атрымаць інфармацыю</string>
     <string name="unticked_tts">Птушка знята</string>
     <string name="unused">Не выкарыстоўваецца</string>
     <string name="update">Абнавіць</string>
     <string name="update_abb8">Абнавіць</string>
     <string name="update_app">Абнавіць праграму</string>
+    <string name="updated_tile_chn">Абноўлена: %s</string>
     <string name="updated_tts">%s абноўлена</string>
+    <string name="use_current_location">Ужываць бягучае месцазн.</string>
     <string name="use_current_location_agree_popup">"Для атрымання звестак пра мясцовае надвор’е ваша бягучае месцазнаходжанне будзе адпраўлена пастаўшчыку метэаралагічных паслуг. (Глядзіце %1$sпалітыку прыватнасці%2$s пастаўшчыка.)
 Іншыя праграмы і сэрвісы на вашай прыладзе могуць мець доступ да атрыманых даных пра надвор’е і самі паказваць надвор’е."</string>
     <string name="use_current_location_and_background_agree_popup">"Для атрымання звестак пра мясцовае надвор’е ваша бягучае месцазнаходжанне будзе адпраўлена пастаўшчыку метэаралагічных паслуг. (Глядзіце %1$sПалітыку прыватнасці%2$s пастаўшчыка.)
@@ -636,9 +678,16 @@
 Выключыць выкарыстанне месцазнаходжання можна ў наладах праграмы «Надвор’е»."</string>
     <string name="use_current_location_body_msg_chn">"Прачытайце ўважліва перад выкарыстаннем «Надвор’я»:
 Калі вы хочаце даведвацца надвор’е ў бягучым месцазнаходжанні, вам трэба будзе дазволіць старонняму пастаўшчыку паслуг мець пастаянны (нават калі вы не карыстаецеся сэрвісам) доступ да вашай прылады і атрымліваць пэўныя даныя згодна са спісам ніжэй. Уважліва прачытайце і зразумейце %1$sУмовы%2$s і %3$sПалітыку прыватнасці%4$s старонняга пастаўшчыка паслуг, перш чым даваць такі дазвол. Адклікаць дазвол можна, выключыўшы «Месцазнаходжанне» ў меню «Налады». Іншыя праграмы і сэрвісы на вашай прыладзе могуць мець доступ да атрыманых даных пра надвор’е і самі паказваць надвор’е."</string>
+    <string name="use_current_location_body_msg_kor">"Інфармацыя пра ваша бягучае месцазнаходжанне будзе збірацца і выкарыстоўвацца для працы некаторых функцый праграмы «Надвор’е», такіх як мясцовае надвор’е.
+
+Каб бесперапынна даваць інфармацыю аб надвор’і, гэта праграма будзе рэгулярна апрацоўваць інфармацыю пра ваша месцазнаходжанне, нават калі вы не карыстаецеся ёю. Працягваючы, вы пагаджаецеся са зборам і апрацоўкай інфармацыі пра ваша месцазнаходжанне ў вышэйзгаданых мэтах.
+
+Вы можаце спыніць збор інфармацыі пра месцазнаходжанне і выкарыстанне ў наладах праграмы «Надвор’е»."</string>
     <string name="use_current_location_body_purpose">Мэта</string>
     <string name="use_current_location_body_purpose_content">Каб даваць звесткі пра надвор’е для бягучага месцазнаходжання</string>
     <string name="use_current_location_body_search_provider">Пастаўшчык паслуг</string>
+    <string name="use_current_location_continue">Працягнуць</string>
+    <string name="use_current_location_not_now">Не зараз</string>
     <string name="use_current_location_off_alert_popup">Інфармацыя аб цяперашнім месцазнаходжанні будзе выдалена.</string>
     <string name="useful_informations">Практычныя парады і іншыя справаздачы</string>
     <string name="using_as">Выкарыстоўваецца як %s</string>
@@ -744,9 +793,11 @@
     <string name="weather_tip">Падказкі аб надвор’і</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Ср</string>
     <string name="weekly_forecast">Па днях</string>
     <string name="widget_background">Фон віджэта</string>
     <string name="widget_empty_text">Націсніце, каб праглядзець інфармацыю аб надвор’і</string>
+    <string name="widget_location">Назва горада</string>
     <string name="widget_name_4x1">Надвор’е і Гадзіннік</string>
     <string name="widget_setting">Налады</string>
     <string name="widget_setting_background_color">Фонавы колер</string>

@@ -139,15 +139,15 @@
 
     const-string v0, ""
 
-    .line 336
+    .line 339
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mRequestedSSID:Ljava/lang/String;
 
     const/4 v0, -0x1
 
-    .line 337
+    .line 340
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mRequestedNetID:I
 
-    .line 522
+    .line 525
     iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mIsConnectedByCommand:Z
 
     .line 52
@@ -159,7 +159,7 @@
 
     move-result-object v0
 
-    const-string v1, "wifi"
+    const-string/jumbo v1, "wifi"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -192,10 +192,18 @@
 
 .method private connect(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ap"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 462
+    .line 465
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -205,17 +213,25 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget-object v2, p1, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, ", "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget v2, p1, Landroid/net/wifi/WifiConfiguration;->networkId:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -223,7 +239,7 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 463
+    .line 466
     new-instance v1, Ljava/util/concurrent/CountDownLatch;
 
     const/4 v2, 0x1
@@ -232,19 +248,19 @@
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->stateCheckLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 465
+    .line 468
     iget v1, p1, Landroid/net/wifi/WifiConfiguration;->networkId:I
 
     iput v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mRequestedNetID:I
 
-    .line 466
+    .line 469
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->disconnect()Z
 
     move-result v1
 
-    .line 467
+    .line 470
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
     iget p1, p1, Landroid/net/wifi/WifiConfiguration;->networkId:I
@@ -253,14 +269,14 @@
 
     move-result p1
 
-    .line 468
+    .line 471
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v3}, Landroid/net/wifi/WifiManager;->reconnect()Z
 
     move-result v3
 
-    .line 470
+    .line 473
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -269,15 +285,19 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 471
+    .line 474
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -286,15 +306,19 @@
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 472
+    .line 475
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -303,7 +327,11 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -313,7 +341,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 475
+    .line 478
     :try_start_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->stateCheckLatch:Ljava/util/concurrent/CountDownLatch;
 
@@ -327,12 +355,12 @@
 
     if-nez p1, :cond_0
 
-    const-string p1, "timed out"
-
-    .line 476
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
+    const-string/jumbo p1, "timed out"
 
     .line 479
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
+
+    .line 482
     :cond_0
     iget-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->isConnected:Z
     :try_end_1
@@ -348,7 +376,7 @@
     :catch_0
     move-exception p1
 
-    .line 485
+    .line 488
     :try_start_2
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_2
@@ -359,7 +387,7 @@
     :catch_1
     move-exception p1
 
-    .line 489
+    .line 492
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return v0
@@ -367,10 +395,18 @@
 
 .method private findAP(Ljava/lang/String;)Landroid/net/wifi/ScanResult;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "SSID"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 497
+    .line 500
     :try_start_0
     new-instance v1, Ljava/util/concurrent/CountDownLatch;
 
@@ -380,14 +416,14 @@
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->scanLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 498
+    .line 501
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->startScan()Z
 
     move-result v1
 
-    .line 499
+    .line 502
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -396,9 +432,11 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     if-eqz v1, :cond_0
 
-    const-string v3, "success"
+    const-string/jumbo v3, "success"
 
     goto :goto_0
 
@@ -407,6 +445,8 @@
 
     :goto_0
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -418,7 +458,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 507
+    .line 510
     :try_start_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->scanLatch:Ljava/util/concurrent/CountDownLatch;
 
@@ -435,10 +475,10 @@
     :catch_0
     move-exception v1
 
-    .line 509
+    .line 512
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 513
+    .line 516
     :cond_1
     :goto_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
@@ -464,26 +504,34 @@
 
     check-cast v2, Landroid/net/wifi/ScanResult;
 
-    .line 514
+    .line 517
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "scanResult SSID : "
+    const-string/jumbo v4, "scanResult SSID : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     iget-object v4, v2, Landroid/net/wifi/ScanResult;->SSID:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, ", "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     iget-object v4, v2, Landroid/net/wifi/ScanResult;->BSSID:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -491,7 +539,7 @@
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 515
+    .line 518
     iget-object v3, v2, Landroid/net/wifi/ScanResult;->SSID:Ljava/lang/String;
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -508,7 +556,7 @@
     :catch_1
     move-exception p1
 
-    .line 501
+    .line 504
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return-object v0
@@ -750,7 +798,7 @@
 .method private showWarningDialog()Z
     .locals 5
 
-    const-string v0, "showWarningDialog : 2"
+    const-string/jumbo v0, "showWarningDialog : 2"
 
     .line 102
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -800,7 +848,7 @@
 
     move-result-object v3
 
-    const-class v4, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;
+    const-class v4, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;
 
     invoke-direct {v0, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -810,7 +858,7 @@
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 114
-    sget-object v3, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
+    sget-object v3, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
 
     const/4 v4, 0x2
 
@@ -909,8 +957,6 @@
     if-eqz v1, :cond_1
 
     .line 209
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mReceiverThread:Landroid/os/HandlerThread;
-
     invoke-virtual {v1}, Landroid/os/HandlerThread;->quitSafely()Z
 
     :cond_1
@@ -995,8 +1041,6 @@
     if-eqz v1, :cond_1
 
     .line 163
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mReceiverThreadForDialog:Landroid/os/HandlerThread;
-
     invoke-virtual {v1}, Landroid/os/HandlerThread;->interrupt()V
 
     .line 164
@@ -1061,19 +1105,29 @@
 # virtual methods
 .method public connect(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SSID",
+            "password"
+        }
+    .end annotation
 
-    .line 340
+    .line 343
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mControlLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 341
+    .line 344
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v1
 
-    .line 342
+    .line 345
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;
 
     move-result-object v2
@@ -1082,21 +1136,21 @@
 
     move-result v2
 
-    .line 341
+    .line 344
     invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setOriWifiStatus(Z)V
 
-    .line 344
+    .line 347
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->turnOnWifi()Z
 
     const/4 v1, 0x0
 
-    .line 346
+    .line 349
     iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->isConnected:Z
 
-    .line 347
+    .line 350
     iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->sendConnected:Z
 
-    .line 348
+    .line 351
     iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->sendDisconnected:Z
 
     const-string v2, ""
@@ -1108,42 +1162,42 @@
 
     if-ge v3, v4, :cond_1
 
-    .line 353
+    .line 356
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->findAP(Ljava/lang/String;)Landroid/net/wifi/ScanResult;
 
     move-result-object v5
 
     if-eqz v5, :cond_0
 
-    .line 356
+    .line 359
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 357
+    .line 360
     iget-object v3, v5, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 358
+    .line 361
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     goto :goto_1
 
-    .line 362
+    .line 365
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->turnOffWifi()Z
 
-    .line 363
+    .line 366
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->turnOnWifi()Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 366
+    .line 369
     :cond_1
     :goto_1
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -1152,7 +1206,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 367
+    .line 370
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1161,20 +1215,24 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 368
+    .line 371
     monitor-exit v0
 
     return v1
 
-    .line 370
+    .line 373
     :cond_2
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1184,7 +1242,11 @@
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1192,14 +1254,14 @@
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 373
+    .line 376
     new-instance v3, Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {v3}, Landroid/net/wifi/WifiConfiguration;-><init>()V
 
     const-string v5, "\""
 
-    .line 374
+    .line 377
     invoke-virtual {v5, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
@@ -1214,15 +1276,15 @@
 
     const/4 v5, 0x1
 
-    .line 375
+    .line 378
     iput v5, v3, Landroid/net/wifi/WifiConfiguration;->status:I
 
     const/16 v6, 0x28
 
-    .line 376
+    .line 379
     iput v6, v3, Landroid/net/wifi/WifiConfiguration;->priority:I
 
-    .line 378
+    .line 381
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v6
@@ -1233,54 +1295,54 @@
 
     const-string v6, "WEP"
 
-    .line 379
+    .line 382
     invoke-virtual {v2, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
-    .line 380
+    .line 383
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
 
     invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 381
-    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
-
-    invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
-
-    .line 382
-    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
-
-    invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
-
-    .line 383
-    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedAuthAlgorithms:Ljava/util/BitSet;
-
-    invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
-
     .line 384
-    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedAuthAlgorithms:Ljava/util/BitSet;
+    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
 
     invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
 
     .line 385
-    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedPairwiseCiphers:Ljava/util/BitSet;
+    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
 
-    invoke-virtual {v2, v7}, Ljava/util/BitSet;->set(I)V
+    invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
 
     .line 386
-    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
+    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedAuthAlgorithms:Ljava/util/BitSet;
 
     invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
 
     .line 387
-    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
+    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedAuthAlgorithms:Ljava/util/BitSet;
 
     invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
 
     .line 388
+    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedPairwiseCiphers:Ljava/util/BitSet;
+
+    invoke-virtual {v2, v7}, Ljava/util/BitSet;->set(I)V
+
+    .line 389
+    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
+
+    invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
+
+    .line 390
+    iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
+
+    invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
+
+    .line 391
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->wepKeys:[Ljava/lang/String;
 
     aput-object p2, v2, v1
@@ -1290,7 +1352,7 @@
     :cond_3
     const-string v6, "WPA"
 
-    .line 389
+    .line 392
     invoke-virtual {v2, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v6
@@ -1305,60 +1367,60 @@
 
     if-eqz v2, :cond_6
 
-    .line 390
+    .line 393
     :cond_4
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedAuthAlgorithms:Ljava/util/BitSet;
 
     invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 391
+    .line 394
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
 
     invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
 
-    .line 392
+    .line 395
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
 
     invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 393
+    .line 396
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
 
     invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
 
-    .line 394
+    .line 397
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedPairwiseCiphers:Ljava/util/BitSet;
 
     invoke-virtual {v2, v7}, Ljava/util/BitSet;->set(I)V
 
-    .line 395
+    .line 398
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedPairwiseCiphers:Ljava/util/BitSet;
 
     invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
 
-    .line 396
+    .line 399
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
 
     invoke-virtual {v2, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 397
+    .line 400
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
 
     invoke-virtual {v2, v5}, Ljava/util/BitSet;->set(I)V
 
-    .line 398
+    .line 401
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
 
     invoke-virtual {v2, v4}, Ljava/util/BitSet;->set(I)V
 
-    .line 399
+    .line 402
     iget-object v2, v3, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
 
     invoke-virtual {v2, v7}, Ljava/util/BitSet;->set(I)V
 
     const-string v2, "\""
 
-    .line 400
+    .line 403
     invoke-virtual {v2, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -1373,33 +1435,33 @@
 
     goto :goto_2
 
-    .line 403
+    .line 406
     :cond_5
     iget-object p2, v3, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
 
     invoke-virtual {p2, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 404
+    .line 407
     iget-object p2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
 
     invoke-virtual {p2, v5}, Ljava/util/BitSet;->set(I)V
 
-    .line 405
+    .line 408
     iget-object p2, v3, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
 
     invoke-virtual {p2, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 406
+    .line 409
     iget-object p2, v3, Landroid/net/wifi/WifiConfiguration;->allowedAuthAlgorithms:Ljava/util/BitSet;
 
     invoke-virtual {p2}, Ljava/util/BitSet;->clear()V
 
-    .line 407
+    .line 410
     iget-object p2, v3, Landroid/net/wifi/WifiConfiguration;->allowedPairwiseCiphers:Ljava/util/BitSet;
 
     invoke-virtual {p2, v7}, Ljava/util/BitSet;->set(I)V
 
-    .line 410
+    .line 413
     :cond_6
     :goto_2
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
@@ -1408,7 +1470,7 @@
 
     move-result p2
 
-    .line 411
+    .line 414
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1417,7 +1479,11 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1425,7 +1491,7 @@
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 412
+    .line 415
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1434,11 +1500,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     const-string v3, "\""
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1448,19 +1520,19 @@
 
     const/4 v2, 0x0
 
-    .line 415
+    .line 418
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 417
+    .line 420
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v4}, Landroid/net/wifi/WifiManager;->getConfiguredNetworks()Ljava/util/List;
 
     move-result-object v4
 
-    .line 420
+    .line 423
     invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -1478,7 +1550,7 @@
 
     check-cast v6, Landroid/net/wifi/WifiConfiguration;
 
-    .line 421
+    .line 424
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -1487,9 +1559,13 @@
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v7
+
     iget-object v8, v6, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1497,7 +1573,7 @@
 
     invoke-static {v7}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 422
+    .line 425
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -1506,9 +1582,13 @@
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v7
+
     iget v8, v6, Landroid/net/wifi/WifiConfiguration;->networkId:I
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1516,7 +1596,7 @@
 
     invoke-static {v7}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 423
+    .line 426
     iget-object v7, v6, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     if-eqz v7, :cond_7
@@ -1531,27 +1611,33 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v8
+
     invoke-virtual {v8, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
 
     const-string v9, "\""
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v8
+
     invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 424
+    .line 427
     invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
     if-eqz v7, :cond_7
 
-    .line 426
+    .line 429
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 428
+    .line 431
     iget v7, v6, Landroid/net/wifi/WifiConfiguration;->networkId:I
 
     if-ne p2, v7, :cond_7
@@ -1561,7 +1647,7 @@
     :cond_8
     if-nez v2, :cond_9
 
-    .line 436
+    .line 439
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result p2
@@ -1573,14 +1659,14 @@
     :cond_9
     if-eqz v2, :cond_a
 
-    .line 440
+    .line 443
     invoke-direct {p0, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->connect(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v1
 
     goto :goto_3
 
-    .line 442
+    .line 445
     :cond_a
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1599,7 +1685,7 @@
 
     check-cast v2, Landroid/net/wifi/WifiConfiguration;
 
-    .line 443
+    .line 446
     invoke-direct {p0, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->connect(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v2
@@ -1612,18 +1698,22 @@
     :goto_3
     if-eqz v1, :cond_d
 
-    .line 452
+    .line 455
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "wifi connection : "
+    const-string/jumbo v2, "wifi connection : "
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1631,25 +1721,29 @@
 
     goto :goto_4
 
-    .line 454
+    .line 457
     :cond_d
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "wifi connection failed : "
+    const-string/jumbo v2, "wifi connection failed : "
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 456
+    .line 459
     :goto_4
     monitor-exit v0
 
@@ -1658,7 +1752,7 @@
     :catchall_0
     move-exception p1
 
-    .line 457
+    .line 460
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1683,7 +1777,7 @@
 .method public disconnect()Z
     .locals 1
 
-    .line 533
+    .line 536
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->disconnect()Z
@@ -1696,7 +1790,7 @@
 .method public getIsConnectedByCommand()Z
     .locals 1
 
-    .line 529
+    .line 532
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mIsConnectedByCommand:Z
 
     return v0
@@ -1714,7 +1808,7 @@
 .method public isAllowWifiWarning()Z
     .locals 5
 
-    .line 563
+    .line 566
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -1727,7 +1821,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 566
+    .line 569
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v0
@@ -1740,12 +1834,12 @@
 
     const-string v2, "ChinaNalSecurity"
 
-    .line 568
+    .line 571
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    .line 570
+    .line 573
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -1754,7 +1848,7 @@
 
     move-result-object v2
 
-    const-string v3, "wlan_permission_available"
+    const-string/jumbo v3, "wlan_permission_available"
 
     const/4 v4, 0x1
 
@@ -1798,7 +1892,7 @@
 .method public isWiFiConnected()Z
     .locals 8
 
-    .line 603
+    .line 606
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -1811,7 +1905,7 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 606
+    .line 609
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getAllNetworks()[Landroid/net/Network;
 
     move-result-object v1
@@ -1827,14 +1921,14 @@
 
     aget-object v5, v1, v4
 
-    .line 607
+    .line 610
     invoke-virtual {v0, v5}, Landroid/net/ConnectivityManager;->getNetworkInfo(Landroid/net/Network;)Landroid/net/NetworkInfo;
 
     move-result-object v5
 
     if-eqz v5, :cond_0
 
-    .line 608
+    .line 611
     invoke-virtual {v5}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v6
@@ -1843,7 +1937,7 @@
 
     if-ne v6, v7, :cond_0
 
-    .line 609
+    .line 612
     invoke-virtual {v5}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v0
@@ -1861,8 +1955,16 @@
 
 .method public setIsConnectedByCommand(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnectedByCommand"
+        }
+    .end annotation
 
-    .line 525
+    .line 528
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->mIsConnectedByCommand:Z
 
     return-void
@@ -1870,10 +1972,18 @@
 
 .method public setWifiEnabled(Z)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 540
+    .line 543
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
@@ -1898,7 +2008,7 @@
 
     if-nez v1, :cond_1
 
-    .line 541
+    .line 544
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1906,6 +2016,8 @@
     const-string v5, "failed : Can not turn "
 
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     if-eqz p1, :cond_0
 
@@ -1917,9 +2029,13 @@
     :goto_0
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1930,7 +2046,7 @@
     :cond_1
     move v1, v0
 
-    .line 545
+    .line 548
     :goto_1
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
@@ -1946,14 +2062,14 @@
 
     const-wide/16 v5, 0x1f4
 
-    .line 547
+    .line 550
     invoke-static {v5, v6}, Ljava/lang/Thread;->sleep(J)V
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 551
+    .line 554
     :cond_2
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1962,6 +2078,8 @@
     const-string v5, "Try turn "
 
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     if-eqz p1, :cond_3
 
@@ -1973,7 +2091,11 @@
     :goto_2
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1981,7 +2103,7 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 553
+    .line 556
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
@@ -2002,7 +2124,7 @@
     :catch_0
     move-exception p1
 
-    .line 556
+    .line 559
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return v0

@@ -13,10 +13,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$schedule$2\n+ 2 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection\n*L\n1#1,218:1\n153#2,14:219\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -43,11 +39,11 @@
 
 
 # instance fields
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $pingIntervalNanos$inlined:J
+.field public final synthetic $pingIntervalNanos$inlined:J
 
-.field final synthetic this$0:Lokhttp3/internal/http2/Http2Connection;
+.field public final synthetic this$0:Lokhttp3/internal/http2/Http2Connection;
 
 
 # direct methods
@@ -66,7 +62,6 @@
 
     const/4 p4, 0x0
 
-    .line 84
     invoke-direct {p0, p2, p1, p3, p4}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -77,12 +72,12 @@
 .method public runOnce()J
     .locals 8
 
-    .line 219
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$$special$$inlined$schedule$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     monitor-enter v0
 
-    .line 220
+    .line 2
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$$special$$inlined$schedule$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -108,7 +103,7 @@
 
     goto :goto_0
 
-    .line 223
+    .line 3
     :cond_0
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$$special$$inlined$schedule$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -126,13 +121,13 @@
 
     move v1, v3
 
-    .line 219
+    .line 4
     :goto_0
     monitor-exit v0
 
     if-eqz v1, :cond_1
 
-    .line 228
+    .line 5
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$$special$$inlined$schedule$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     const/4 v1, 0x0
@@ -143,13 +138,13 @@
 
     goto :goto_1
 
-    .line 231
+    .line 6
     :cond_1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$$special$$inlined$schedule$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     invoke-virtual {v0, v3, v2, v3}, Lokhttp3/internal/http2/Http2Connection;->writePing(ZII)V
 
-    .line 232
+    .line 7
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Connection$$special$$inlined$schedule$1;->$pingIntervalNanos$inlined:J
 
     :goto_1
@@ -158,7 +153,7 @@
     :catchall_0
     move-exception v1
 
-    .line 219
+    .line 8
     monitor-exit v0
 
     throw v1

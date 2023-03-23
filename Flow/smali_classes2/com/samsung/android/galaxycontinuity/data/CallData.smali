@@ -23,6 +23,24 @@
 # direct methods
 .method public constructor <init>(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_bVideoCallFlag",
+            "_sName",
+            "_sPhoneNumber",
+            "_sCallState",
+            "_sUserIcon",
+            "_sNumberType"
+        }
+    .end annotation
 
     .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

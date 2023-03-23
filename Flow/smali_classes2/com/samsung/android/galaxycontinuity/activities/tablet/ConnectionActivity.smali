@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final REQUIRED_PERMISSIONS:[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+.field public static REQUIRED_PERMISSIONS:[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission; = null
 
 .field public static final SETUP_CONFIRM_PASS_KEY_FRAGMENT_TAG:Ljava/lang/String; = "SetupConfirmPassKeyFragmentTag"
 
@@ -25,13 +25,9 @@
 
 
 # instance fields
-.field REQUEST_CHECK_SETTINGS:I
+.field private isDialogProvided:Z
 
 .field private isDoneButtonClicked:Z
-
-.field protected locationRequest:Lcom/google/android/gms/location/LocationRequest;
-
-.field protected mGoogleApiClient:Lcom/google/android/gms/common/api/GoogleApiClient;
 
 .field private mHandler:Landroid/os/Handler;
 
@@ -43,6 +39,8 @@
 
 .field mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;
 
+.field receiverForDialog:Landroid/content/BroadcastReceiver;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -52,7 +50,7 @@
 
     new-array v1, v0, [Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
 
-    .line 66
+    .line 52
     new-instance v2, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
 
     const-string v3, "android.permission.ACCESS_FINE_LOCATION"
@@ -71,38 +69,43 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 56
+    .line 42
     invoke-direct {p0}, Landroidx/appcompat/app/AppCompatActivity;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 61
+    .line 47
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandlerThread:Landroid/os/HandlerThread;
 
-    .line 62
+    .line 48
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandler:Landroid/os/Handler;
 
-    .line 64
+    .line 50
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;
 
-    .line 243
+    .line 185
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionHelper:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
 
     const/4 v0, 0x0
 
-    .line 244
+    .line 186
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionGranted:Z
 
-    const/16 v1, 0x64
+    .line 187
+    iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->isDialogProvided:Z
 
-    .line 276
-    iput v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->REQUEST_CHECK_SETTINGS:I
+    .line 243
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$3;
 
-    .line 350
+    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$3;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->receiverForDialog:Landroid/content/BroadcastReceiver;
+
+    .line 272
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->isDoneButtonClicked:Z
 
     return-void
@@ -111,7 +114,7 @@
 .method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)Z
     .locals 0
 
-    .line 56
+    .line 42
     iget-boolean p0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionGranted:Z
 
     return p0
@@ -120,143 +123,113 @@
 .method static synthetic access$002(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;Z)Z
     .locals 0
 
-    .line 56
+    .line 42
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionGranted:Z
 
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)Z
+.method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
     .locals 0
 
-    .line 56
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->checkLocationSetting()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
-    .locals 0
-
-    .line 56
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->startService()V
+    .line 42
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->initDeviceSearchPage()V
 
     return-void
 .end method
 
-.method private checkLocationSetting()Z
-    .locals 3
+.method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)Z
+    .locals 0
 
-    const/4 v0, 0x0
+    .line 42
+    iget-boolean p0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->isDialogProvided:Z
 
-    .line 280
-    :try_start_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    return p0
+.end method
 
-    const/16 v2, 0x1b
+.method static synthetic access$202(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;Z)Z
+    .locals 0
 
-    if-gt v1, v2, :cond_0
+    .line 42
+    iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->isDialogProvided:Z
 
-    return v0
+    return p1
+.end method
 
-    .line 283
+.method static synthetic access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
+    .locals 0
+
+    .line 42
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->showTurnOnLocationSettingDialog()V
+
+    return-void
+.end method
+
+.method static synthetic access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
+    .locals 0
+
+    .line 42
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->turnOnLocationSetting()V
+
+    return-void
+.end method
+
+.method private addPermission()V
+    .locals 4
+
+    .line 176
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-le v0, v1, :cond_0
+
+    .line 177
+    new-instance v0, Ljava/util/ArrayList;
+
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->REQUIRED_PERMISSIONS:[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 178
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+
+    const-string v2, "android.permission.BLUETOOTH_SCAN"
+
+    const/4 v3, 0x1
+
+    invoke-direct {v1, v2, v3}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;-><init>(Ljava/lang/String;Z)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 179
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+
+    const-string v2, "android.permission.BLUETOOTH_CONNECT"
+
+    invoke-direct {v1, v2, v3}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;-><init>(Ljava/lang/String;Z)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+
+    .line 181
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+
+    sput-object v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->REQUIRED_PERMISSIONS:[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+
     :cond_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v1
-
-    const-string v2, "location"
-
-    invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/location/LocationManager;
-
-    .line 285
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mGoogleApiClient:Lcom/google/android/gms/common/api/GoogleApiClient;
-
-    if-nez v2, :cond_1
-
-    if-eqz v1, :cond_1
-
-    const-string v2, "gps"
-
-    invoke-virtual {v1, v2}, Landroid/location/LocationManager;->isProviderEnabled(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    const-string v1, "In settings, \'Location\' menu is off"
-
-    .line 286
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    .line 287
-    new-instance v1, Lcom/google/android/gms/common/api/GoogleApiClient$Builder;
-
-    invoke-direct {v1, p0}, Lcom/google/android/gms/common/api/GoogleApiClient$Builder;-><init>(Landroid/content/Context;)V
-
-    sget-object v2, Lcom/google/android/gms/location/LocationServices;->API:Lcom/google/android/gms/common/api/Api;
-
-    .line 288
-    invoke-virtual {v1, v2}, Lcom/google/android/gms/common/api/GoogleApiClient$Builder;->addApi(Lcom/google/android/gms/common/api/Api;)Lcom/google/android/gms/common/api/GoogleApiClient$Builder;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$5;
-
-    invoke-direct {v2, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$5;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
-
-    .line 289
-    invoke-virtual {v1, v2}, Lcom/google/android/gms/common/api/GoogleApiClient$Builder;->addConnectionCallbacks(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)Lcom/google/android/gms/common/api/GoogleApiClient$Builder;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$4;
-
-    invoke-direct {v2, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$4;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;)V
-
-    .line 333
-    invoke-virtual {v1, v2}, Lcom/google/android/gms/common/api/GoogleApiClient$Builder;->addOnConnectionFailedListener(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/GoogleApiClient$Builder;
-
-    move-result-object v1
-
-    .line 338
-    invoke-virtual {v1}, Lcom/google/android/gms/common/api/GoogleApiClient$Builder;->build()Lcom/google/android/gms/common/api/GoogleApiClient;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mGoogleApiClient:Lcom/google/android/gms/common/api/GoogleApiClient;
-
-    .line 339
-    invoke-virtual {v1}, Lcom/google/android/gms/common/api/GoogleApiClient;->connect()V
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_1
-    const-string v1, "In settings, \'Location\' menu is on"
-
-    .line 343
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v1
-
-    .line 345
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-
-    :goto_0
-    return v0
+    return-void
 .end method
 
 .method private grantPermission()V
@@ -264,79 +237,81 @@
 
     const/4 v0, 0x0
 
-    .line 247
+    .line 190
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionGranted:Z
 
-    .line 248
+    .line 191
     new-instance v0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
 
     invoke-direct {v0}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;-><init>()V
 
-    .line 249
+    .line 192
     sget-object v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->REQUIRED_PERMISSIONS:[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
 
-    new-instance v2, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$3;
+    new-instance v2, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$2;
 
-    invoke-direct {v2, p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$3;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;)V
+    invoke-direct {v2, p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$2;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;)V
 
     invoke-virtual {v0, p0, v1, v2}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;->request(Landroid/content/Context;[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$OnPermissionRequestListener;)V
 
     return-void
 .end method
 
-.method private initView(Landroid/os/Bundle;)V
+.method private initDeviceSearchPage()V
     .locals 2
 
-    const v0, 0x7f090260
+    .line 215
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->startService()V
 
-    .line 181
-    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/appcompat/widget/Toolbar;
-
-    .line 182
-    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->setSupportActionBar(Landroidx/appcompat/widget/Toolbar;)V
-
-    .line 183
-    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
+    .line 217
+    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v0
 
-    const v1, 0x7f100029
+    const-string v1, "SetupSelectDeviceFragmentTag"
 
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/ActionBar;->setTitle(I)V
+    .line 218
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
+
+    if-eqz v0, :cond_0
+
+    .line 221
+    iget-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionGranted:Z
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;->setGrantPermissionAndStartSearch(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private initView(Landroid/os/Bundle;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
-    .line 186
+    .line 150
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->setupFragment()V
 
     :cond_0
-    const p1, 0x7f090047
-
-    .line 189
-    invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/FrameLayout;
-
-    .line 190
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$2;
-
-    invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$2;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;Landroid/widget/FrameLayout;)V
-
-    invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
-
     return-void
 .end method
 
 .method private setupFragment()V
     .locals 6
 
-    .line 223
+    .line 155
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -351,7 +326,7 @@
 
     const-string v1, "SetupSelectDeviceFragmentTag"
 
-    .line 224
+    .line 156
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -363,7 +338,7 @@
     :cond_0
     const-string v1, "SetupConfirmPassKeyFragmentTag"
 
-    .line 226
+    .line 158
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -374,7 +349,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 227
+    .line 159
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -385,7 +360,7 @@
 
     move-result-object v0
 
-    .line 228
+    .line 160
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
@@ -396,7 +371,7 @@
 
     move-result-object v1
 
-    .line 229
+    .line 161
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
@@ -407,7 +382,7 @@
 
     move-result-object v4
 
-    .line 230
+    .line 162
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v5
@@ -416,7 +391,7 @@
 
     move-result v2
 
-    .line 232
+    .line 164
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;
 
     invoke-virtual {v3, v0, v1, v4, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;->updatePasskeyConfirmFragement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
@@ -426,14 +401,14 @@
     :cond_1
     const-string v1, "SetupEnrollCompletedFragmentTag"
 
-    .line 233
+    .line 165
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 234
+    .line 166
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -446,7 +421,7 @@
 
     move-result v0
 
-    .line 235
+    .line 167
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
@@ -457,7 +432,7 @@
 
     move-result v1
 
-    .line 236
+    .line 168
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
@@ -466,14 +441,14 @@
 
     move-result v2
 
-    .line 238
+    .line 170
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;
 
     invoke-virtual {v3, v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;->showAuthCompleted(III)V
 
     goto :goto_1
 
-    .line 225
+    .line 157
     :cond_2
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;
@@ -485,15 +460,53 @@
     return-void
 .end method
 
+.method private showTurnOnLocationSettingDialog()V
+    .locals 4
+
+    .line 226
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string v1, "ACTION_DIALOG_RESULT"
+
+    .line 227
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 228
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->receiverForDialog:Landroid/content/BroadcastReceiver;
+
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandler:Landroid/os/Handler;
+
+    const-string v3, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
+
+    invoke-virtual {p0, v1, v0, v3, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
+    .line 230
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
+
+    move-result-object v0
+
+    const/16 v1, 0xb
+
+    const v2, 0x7f1100b0
+
+    const v3, 0x7f1100b3
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->showPermissionDialog(III)V
+
+    return-void
+.end method
+
 .method private startService()V
     .locals 3
 
-    const-string v0, "start tablet service"
+    const-string/jumbo v0, "start tablet service"
 
-    .line 172
+    .line 140
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 174
+    .line 142
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
     move-result-object v0
@@ -507,65 +520,54 @@
     return-void
 .end method
 
+.method private turnOnLocationSetting()V
+    .locals 3
 
-# virtual methods
-.method public onActivityResult(IILandroid/content/Intent;)V
-    .locals 2
-
-    .line 154
-    iget v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->REQUEST_CHECK_SETTINGS:I
-
-    if-ne p1, v0, :cond_2
-
-    const/4 v0, -0x1
-
-    if-ne p2, v0, :cond_2
-
-    .line 155
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mGoogleApiClient:Lcom/google/android/gms/common/api/GoogleApiClient;
-
-    if-eqz v0, :cond_0
-
-    .line 156
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->disconnect()V
-
-    .line 158
-    :cond_0
-    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
+    .line 234
+    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    const-string v1, "SetupSelectDeviceFragmentTag"
+    const-string v1, "location_mode"
 
-    .line 159
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+    const/4 v2, 0x3
 
-    move-result-object v0
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    check-cast v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
+    const-wide/16 v0, 0x64
 
-    if-eqz v0, :cond_1
+    .line 237
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v1, 0x1
+    goto :goto_0
 
-    .line 162
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;->setGrantPermissionAndStartSearch(Z)V
+    :catch_0
+    move-exception v0
 
-    .line 164
-    :cond_1
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->startService()V
+    .line 239
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
 
-    .line 167
-    :cond_2
-    invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/app/AppCompatActivity;->onActivityResult(IILandroid/content/Intent;)V
-
+    :goto_0
     return-void
 .end method
 
+
+# virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newConfig"
+        }
+    .end annotation
 
-    .line 148
+    .line 136
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
@@ -573,16 +575,29 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
-    .line 72
+    const-string v0, "ConnectionActivity : in"
+
+    .line 58
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
+    .line 59
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0c000d
+    const v0, 0x7f0d000c
 
-    .line 74
+    .line 61
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->setContentView(I)V
 
-    .line 76
+    .line 63
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "htBTOn"
@@ -591,24 +606,24 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandlerThread:Landroid/os/HandlerThread;
 
-    .line 77
+    .line 64
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 78
+    .line 65
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v0
 
-    .line 79
+    .line 66
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandler:Landroid/os/Handler;
 
-    .line 81
+    .line 68
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->initView(Landroid/os/Bundle;)V
 
     return-void
@@ -617,15 +632,15 @@
 .method public onDestroy()V
     .locals 3
 
-    .line 86
+    .line 73
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onDestroy()V
 
     const-string v0, "onDestory"
 
-    .line 87
+    .line 74
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 89
+    .line 76
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionHelper:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
 
     if-eqz v0, :cond_0
@@ -636,12 +651,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 90
+    .line 77
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionHelper:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;->closeGotoPermissionSettingDialog()Z
 
-    .line 93
+    .line 80
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandlerThread:Landroid/os/HandlerThread;
 
@@ -649,13 +664,13 @@
 
     if-eqz v0, :cond_1
 
-    .line 94
+    .line 81
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
-    .line 95
+    .line 82
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandlerThread:Landroid/os/HandlerThread;
 
-    .line 98
+    .line 85
     :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
@@ -667,12 +682,12 @@
 
     move-result-object v0
 
-    .line 99
+    .line 86
     instance-of v2, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     if-eqz v2, :cond_2
 
-    .line 100
+    .line 87
     check-cast v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->setEnrollCallbackListener(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;)V
@@ -684,16 +699,16 @@
 .method public onDoneButtonClicked()V
     .locals 2
 
-    .line 354
+    .line 276
     monitor-enter p0
 
-    .line 355
+    .line 277
     :try_start_0
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->isDoneButtonClicked:Z
 
     if-eqz v0, :cond_0
 
-    .line 356
+    .line 278
     monitor-exit p0
 
     return-void
@@ -701,15 +716,15 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 359
+    .line 281
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->isDoneButtonClicked:Z
 
-    .line 360
+    .line 282
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 362
+    .line 284
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -734,7 +749,7 @@
 
     if-nez v0, :cond_1
 
-    .line 363
+    .line 285
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;
@@ -743,15 +758,15 @@
 
     const v1, 0x10008000
 
-    .line 364
+    .line 286
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 365
+    .line 287
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 367
+    .line 289
     :cond_1
     new-instance v0, Landroid/content/Intent;
 
@@ -761,18 +776,18 @@
 
     const v1, 0x8000
 
-    .line 368
+    .line 290
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     const/high16 v1, 0x10000000
 
-    .line 369
+    .line 291
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 370
+    .line 292
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 371
+    .line 293
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->finish()V
 
     :goto_0
@@ -781,7 +796,7 @@
     :catchall_0
     move-exception v0
 
-    .line 360
+    .line 282
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -792,14 +807,22 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
-    .line 129
+    .line 117
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 131
+    .line 119
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->setIntent(Landroid/content/Intent;)V
 
-    .line 133
+    .line 121
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->setupFragment()V
 
     return-void
@@ -808,10 +831,10 @@
 .method protected onStart()V
     .locals 2
 
-    .line 106
+    .line 93
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onStart()V
 
-    .line 108
+    .line 95
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$1;
@@ -820,7 +843,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 115
+    .line 102
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionHelper:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
 
     if-eqz v0, :cond_0
@@ -831,16 +854,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 116
+    .line 103
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mPermissionHelper:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;->closeGotoPermissionSettingDialog()Z
 
-    .line 119
+    .line 106
     :cond_0
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->addPermission()V
+
+    .line 107
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->grantPermission()V
 
-    .line 121
+    .line 109
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
     move-result-object v0
@@ -849,12 +875,12 @@
 
     move-result-object v0
 
-    .line 122
+    .line 110
     instance-of v1, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     if-eqz v1, :cond_1
 
-    .line 123
+    .line 111
     check-cast v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/activities/tablet/ConnectionActivity$TabletSetupConnectionListener;
@@ -868,10 +894,10 @@
 .method protected onStop()V
     .locals 2
 
-    .line 138
+    .line 126
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onStop()V
 
-    .line 140
+    .line 128
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
     move-result-object v0
@@ -882,12 +908,12 @@
 
     move-result-object v0
 
-    .line 141
+    .line 129
     instance-of v1, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     if-eqz v1, :cond_0
 
-    .line 142
+    .line 130
     check-cast v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     const/4 v1, 0x0

@@ -38,7 +38,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 107
+    .line 96
     invoke-direct {p0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$BaseCallback;-><init>()V
 
     return-void
@@ -55,7 +55,7 @@
 .method public bridge synthetic onDismissed(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 107
+    .line 96
     check-cast p1, Lcom/google/android/material/snackbar/Snackbar;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/snackbar/Snackbar$Callback;->onDismissed(Lcom/google/android/material/snackbar/Snackbar;I)V
@@ -72,7 +72,7 @@
 .method public bridge synthetic onShown(Ljava/lang/Object;)V
     .locals 0
 
-    .line 107
+    .line 96
     check-cast p1, Lcom/google/android/material/snackbar/Snackbar;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/snackbar/Snackbar$Callback;->onShown(Lcom/google/android/material/snackbar/Snackbar;)V

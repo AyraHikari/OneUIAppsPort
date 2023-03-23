@@ -10,5 +10,8 @@
 .method public abstract onDisconnected(Landroid/content/ComponentName;)V
 .end method
 
-.method public abstract onError()V
+.method public onError()V
+    .locals 0
+
+    return-void
 .end method

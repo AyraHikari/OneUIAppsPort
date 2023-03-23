@@ -8,20 +8,10 @@
         <item quantity="few">%d datoteke so bile dodane na seznam za prenos datotek.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnikov ali tabličnih računalnikov.
-
-S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnik ali tablični računalnik.
-
-S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
-        <item quantity="two">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnika ali tablična računalnika.
-
-S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
-        <item quantity="few">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnike ali tablične računalnike.
-
-S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novih obvestil</item>
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
     </plurals>
 </resources>

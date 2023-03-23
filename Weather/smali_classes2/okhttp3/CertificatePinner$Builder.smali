@@ -65,15 +65,13 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 326
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 327
+    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast v0, Ljava/util/List;
 
     iput-object v0, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
 
@@ -83,59 +81,51 @@
 
 # virtual methods
 .method public final varargs add(Ljava/lang/String;[Ljava/lang/String;)Lokhttp3/CertificatePinner$Builder;
-    .locals 6
+    .locals 5
 
     const-string v0, "pattern"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "pins"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 336
-    move-object v0, p0
+    .line 1
+    array-length v0, p2
 
-    check-cast v0, Lokhttp3/CertificatePinner$Builder;
-
-    .line 337
-    array-length v1, p2
-
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     :goto_0
-    if-ge v2, v1, :cond_0
+    if-ge v1, v0, :cond_0
 
-    aget-object v3, p2, v2
+    aget-object v2, p2, v1
 
-    .line 338
-    iget-object v4, v0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
+    .line 2
+    iget-object v3, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
 
-    new-instance v5, Lokhttp3/CertificatePinner$Pin;
+    new-instance v4, Lokhttp3/CertificatePinner$Pin;
 
-    invoke-direct {v5, p1, v3}, Lokhttp3/CertificatePinner$Pin;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v4, p1, v2}, Lokhttp3/CertificatePinner$Pin;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
     :cond_0
-    return-object v0
+    return-object p0
 .end method
 
 .method public final build()Lokhttp3/CertificatePinner;
     .locals 4
 
-    .line 342
     new-instance v0, Lokhttp3/CertificatePinner;
 
     iget-object v1, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
 
-    check-cast v1, Ljava/lang/Iterable;
-
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->toSet(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v1}, Lci/y;->I0(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object v1
 
@@ -159,7 +149,6 @@
         }
     .end annotation
 
-    .line 327
     iget-object v0, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
 
     return-object v0

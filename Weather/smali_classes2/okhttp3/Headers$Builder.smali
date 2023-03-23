@@ -13,10 +13,6 @@
     name = "Builder"
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nHeaders.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Headers.kt\nokhttp3/Headers$Builder\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,441:1\n1#2:442\n37#3,2:443\n*E\n*S KotlinDebug\n*F\n+ 1 Headers.kt\nokhttp3/Headers$Builder\n*L\n343#1,2:443\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -78,17 +74,15 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 208
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 209
+    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     const/16 v1, 0x14
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
-
-    check-cast v0, Ljava/util/List;
 
     iput-object v0, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
@@ -102,17 +96,7 @@
 
     const-string v0, "line"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 234
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    .line 235
-    move-object v1, p1
-
-    check-cast v1, Ljava/lang/CharSequence;
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v2, 0x3a
 
@@ -124,64 +108,67 @@
 
     const/4 v6, 0x0
 
-    invoke-static/range {v1 .. v6}, Lkotlin/text/StringsKt;->indexOf$default(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
+    move-object v1, p1
 
-    move-result v1
+    .line 1
+    invoke-static/range {v1 .. v6}, Lhl/u;->V(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
 
-    const/4 v2, 0x1
+    move-result v0
 
-    const/4 v4, -0x1
+    const/4 v1, 0x1
 
-    if-eq v1, v4, :cond_0
+    const/4 v2, 0x0
 
-    move v4, v2
+    const/4 v3, -0x1
+
+    if-eq v0, v3, :cond_0
+
+    move v3, v1
 
     goto :goto_0
 
     :cond_0
-    move v4, v3
+    move v3, v2
 
     :goto_0
-    if-eqz v4, :cond_1
+    if-eqz v3, :cond_1
 
-    .line 237
-    invoke-virtual {p1, v3, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    .line 2
+    invoke-virtual {p1, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    const-string v4, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
+    const-string v3, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v4, "null cannot be cast to non-null type kotlin.CharSequence"
+    const-string v3, "null cannot be cast to non-null type kotlin.CharSequence"
 
-    invoke-static {v3, v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v2, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    check-cast v3, Ljava/lang/CharSequence;
+    invoke-static {v2}, Lhl/u;->O0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    invoke-static {v3}, Lkotlin/text/StringsKt;->trim(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    move-result-object v2
 
-    move-result-object v3
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    invoke-virtual {v3}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v3
+    add-int/2addr v0, v1
 
-    add-int/2addr v1, v2
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    const-string v1, "(this as java.lang.String).substring(startIndex)"
+    const-string v0, "(this as java.lang.String).substring(startIndex)"
 
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v3, p1}, Lokhttp3/Headers$Builder;->add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, v2, p1}, Lokhttp3/Headers$Builder;->add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    return-object v0
+    return-object p0
 
-    .line 236
+    .line 3
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -191,13 +178,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -209,71 +192,59 @@
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast v0, Ljava/lang/Throwable;
-
     throw v0
 .end method
 
 .method public final add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-    .locals 2
+    .locals 1
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 243
-    move-object v0, p0
+    .line 4
+    sget-object v0, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
 
-    check-cast v0, Lokhttp3/Headers$Builder;
+    invoke-static {v0, p1}, Lokhttp3/Headers$Companion;->access$checkName(Lokhttp3/Headers$Companion;Ljava/lang/String;)V
 
-    .line 244
-    sget-object v1, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
+    .line 5
+    invoke-static {v0, p2, p1}, Lokhttp3/Headers$Companion;->access$checkValue(Lokhttp3/Headers$Companion;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v1, p1}, Lokhttp3/Headers$Companion;->access$checkName(Lokhttp3/Headers$Companion;Ljava/lang/String;)V
+    .line 6
+    invoke-virtual {p0, p1, p2}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    .line 245
-    sget-object v1, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
-
-    invoke-static {v1, p2, p1}, Lokhttp3/Headers$Companion;->access$checkValue(Lokhttp3/Headers$Companion;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 246
-    invoke-virtual {v0, p1, p2}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public final add(Ljava/lang/String;Ljava/time/Instant;)Lokhttp3/Headers$Builder;
-    .locals 4
+    .locals 3
+    .annotation build Lorg/codehaus/mojo/animal_sniffer/IgnoreJRERequirement;
+    .end annotation
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 280
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    .line 281
-    new-instance v1, Ljava/util/Date;
+    .line 8
+    new-instance v0, Ljava/util/Date;
 
     invoke-virtual {p2}, Ljava/time/Instant;->toEpochMilli()J
 
-    move-result-wide v2
+    move-result-wide v1
 
-    invoke-direct {v1, v2, v3}, Ljava/util/Date;-><init>(J)V
+    invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
-    invoke-virtual {v0, p1, v1}, Lokhttp3/Headers$Builder;->add(Ljava/lang/String;Ljava/util/Date;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, p1, v0}, Lokhttp3/Headers$Builder;->add(Ljava/lang/String;Ljava/util/Date;)Lokhttp3/Headers$Builder;
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final add(Ljava/lang/String;Ljava/util/Date;)Lokhttp3/Headers$Builder;
@@ -281,66 +252,56 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 271
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    .line 272
+    .line 7
     invoke-static {p2}, Lokhttp3/internal/http/DatesKt;->toHttpDateString(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-virtual {v0, p1, p2}, Lokhttp3/Headers$Builder;->add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, p1, p2}, Lokhttp3/Headers$Builder;->add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final addAll(Lokhttp3/Headers;)Lokhttp3/Headers$Builder;
-    .locals 5
+    .locals 4
 
     const-string v0, "headers"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 261
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    .line 262
+    .line 1
     invoke-virtual {p1}, Lokhttp3/Headers;->size()I
 
-    move-result v1
+    move-result v0
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     :goto_0
-    if-ge v2, v1, :cond_0
+    if-ge v1, v0, :cond_0
 
-    .line 263
-    invoke-virtual {p1, v2}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
+    .line 2
+    invoke-virtual {p1, v1}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v1}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {p1, v2}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
+    invoke-virtual {p0, v2, v3}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    move-result-object v4
-
-    invoke-virtual {v0, v3, v4}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
     :cond_0
-    return-object v0
+    return-object p0
 .end method
 
 .method public final addLenient$okhttp(Ljava/lang/String;)Lokhttp3/Headers$Builder;
@@ -348,17 +309,7 @@
 
     const-string v0, "line"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 215
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    .line 216
-    move-object v1, p1
-
-    check-cast v1, Ljava/lang/CharSequence;
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v2, 0x3a
 
@@ -370,95 +321,95 @@
 
     const/4 v6, 0x0
 
-    invoke-static/range {v1 .. v6}, Lkotlin/text/StringsKt;->indexOf$default(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
+    move-object v1, p1
 
-    move-result v1
+    .line 1
+    invoke-static/range {v1 .. v6}, Lhl/u;->V(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
 
-    const-string v2, "(this as java.lang.String).substring(startIndex)"
+    move-result v0
 
-    const/4 v5, -0x1
+    const-string v1, "(this as java.lang.String).substring(startIndex)"
 
-    if-eq v1, v5, :cond_0
+    const/4 v2, 0x1
 
-    .line 219
-    invoke-virtual {p1, v4, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v4
+    const/4 v4, -0x1
 
-    const-string v5, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
+    if-eq v0, v4, :cond_0
 
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-virtual {p1, v3, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    add-int/2addr v1, v3
+    move-result-object v3
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    const-string v4, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
+
+    invoke-static {v3, v4}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    add-int/2addr v0, v2
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {p1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v4, p1}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, v3, p1}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
     goto :goto_0
 
-    .line 221
+    .line 3
     :cond_0
-    invoke-virtual {p1, v4}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p1, v3}, Ljava/lang/String;->charAt(I)C
 
-    move-result v1
+    move-result v0
 
-    const/16 v4, 0x3a
+    const/16 v3, 0x3a
 
-    const-string v5, ""
+    const-string v4, ""
 
-    if-ne v1, v4, :cond_1
+    if-ne v0, v3, :cond_1
 
-    .line 224
-    invoke-virtual {p1, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    .line 4
+    invoke-virtual {p1, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {p1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v5, p1}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, v4, p1}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
     goto :goto_0
 
-    .line 228
+    .line 5
     :cond_1
-    invoke-virtual {v0, v5, p1}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, v4, p1}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
     :goto_0
-    return-object v0
+    return-object p0
 .end method
 
 .method public final addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-    .locals 2
+    .locals 1
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 305
-    move-object v0, p0
+    .line 6
+    iget-object v0, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
-    check-cast v0, Lokhttp3/Headers$Builder;
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 306
-    iget-object v1, v0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
+    .line 7
+    iget-object p1, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
-    invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 307
-    iget-object p1, v0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
-
-    check-cast p2, Ljava/lang/CharSequence;
-
-    invoke-static {p2}, Lkotlin/text/StringsKt;->trim(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {p2}, Lhl/u;->O0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p2
 
@@ -468,51 +419,44 @@
 
     invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final addUnsafeNonAscii(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-    .locals 2
+    .locals 1
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 253
-    move-object v0, p0
+    .line 1
+    sget-object v0, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
 
-    check-cast v0, Lokhttp3/Headers$Builder;
+    invoke-static {v0, p1}, Lokhttp3/Headers$Companion;->access$checkName(Lokhttp3/Headers$Companion;Ljava/lang/String;)V
 
-    .line 254
-    sget-object v1, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    invoke-static {v1, p1}, Lokhttp3/Headers$Companion;->access$checkName(Lokhttp3/Headers$Companion;Ljava/lang/String;)V
-
-    .line 255
-    invoke-virtual {v0, p1, p2}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public final build()Lokhttp3/Headers;
     .locals 3
 
-    .line 343
+    .line 1
     new-instance v0, Lokhttp3/Headers;
 
     iget-object v1, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
-
-    check-cast v1, Ljava/util/Collection;
 
     const/4 v2, 0x0
 
     new-array v2, v2, [Ljava/lang/String;
 
-    .line 444
+    .line 2
     invoke-interface {v1, v2}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v1
@@ -525,7 +469,7 @@
 
     const/4 v2, 0x0
 
-    .line 343
+    .line 3
     invoke-direct {v0, v1, v2}, Lokhttp3/Headers;-><init>([Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v0
@@ -536,9 +480,9 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 335
+    .line 1
     iget-object v0, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -551,23 +495,23 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v2}, Lkotlin/ranges/RangesKt;->downTo(II)Lkotlin/ranges/IntProgression;
+    invoke-static {v0, v2}, Lui/h;->i(II)Lui/a;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lkotlin/ranges/RangesKt;->step(Lkotlin/ranges/IntProgression;I)Lkotlin/ranges/IntProgression;
+    invoke-static {v0, v1}, Lui/h;->k(Lui/a;I)Lui/a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lkotlin/ranges/IntProgression;->getFirst()I
+    invoke-virtual {v0}, Lui/a;->a()I
 
     move-result v1
 
-    invoke-virtual {v0}, Lkotlin/ranges/IntProgression;->getLast()I
+    invoke-virtual {v0}, Lui/a;->i()I
 
     move-result v2
 
-    invoke-virtual {v0}, Lkotlin/ranges/IntProgression;->getStep()I
+    invoke-virtual {v0}, Lui/a;->l()I
 
     move-result v0
 
@@ -580,7 +524,7 @@
     :cond_0
     if-lt v1, v2, :cond_2
 
-    .line 336
+    .line 2
     :goto_0
     iget-object v3, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
@@ -592,13 +536,13 @@
 
     const/4 v4, 0x1
 
-    invoke-static {p1, v3, v4}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {p1, v3, v4}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 337
+    .line 3
     iget-object p1, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
     add-int/2addr v1, v4
@@ -635,135 +579,119 @@
         }
     .end annotation
 
-    .line 209
     iget-object v0, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
     return-object v0
 .end method
 
 .method public final removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
-    .locals 4
+    .locals 3
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 310
-    move-object v0, p0
+    const/4 v0, 0x0
 
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    const/4 v1, 0x0
-
-    .line 312
+    .line 1
     :goto_0
-    iget-object v2, v0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
+    iget-object v1, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
-    move-result v2
+    move-result v1
 
-    if-ge v1, v2, :cond_1
+    if-ge v0, v1, :cond_1
 
-    .line 313
-    iget-object v2, v0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
+    .line 2
+    iget-object v1, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
-    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v1
 
-    check-cast v2, Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    invoke-static {p1, v2, v3}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {p1, v1, v2}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
-    .line 314
-    iget-object v2, v0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
+    .line 3
+    iget-object v1, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
-    invoke-interface {v2, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 315
-    iget-object v2, v0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
+    .line 4
+    iget-object v1, p0, Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
 
-    invoke-interface {v2, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    add-int/lit8 v1, v1, -0x2
+    add-int/lit8 v0, v0, -0x2
 
     :cond_0
-    add-int/lit8 v1, v1, 0x2
+    add-int/lit8 v0, v0, 0x2
 
     goto :goto_0
 
     :cond_1
-    return-object v0
+    return-object p0
 .end method
 
 .method public final set(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-    .locals 2
+    .locals 1
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 326
-    move-object v0, p0
+    .line 3
+    sget-object v0, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
 
-    check-cast v0, Lokhttp3/Headers$Builder;
+    invoke-static {v0, p1}, Lokhttp3/Headers$Companion;->access$checkName(Lokhttp3/Headers$Companion;Ljava/lang/String;)V
 
-    .line 327
-    sget-object v1, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
+    .line 4
+    invoke-static {v0, p2, p1}, Lokhttp3/Headers$Companion;->access$checkValue(Lokhttp3/Headers$Companion;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v1, p1}, Lokhttp3/Headers$Companion;->access$checkName(Lokhttp3/Headers$Companion;Ljava/lang/String;)V
+    .line 5
+    invoke-virtual {p0, p1}, Lokhttp3/Headers$Builder;->removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    .line 328
-    sget-object v1, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
+    .line 6
+    invoke-virtual {p0, p1, p2}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    invoke-static {v1, p2, p1}, Lokhttp3/Headers$Companion;->access$checkValue(Lokhttp3/Headers$Companion;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 329
-    invoke-virtual {v0, p1}, Lokhttp3/Headers$Builder;->removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
-
-    .line 330
-    invoke-virtual {v0, p1, p2}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public final set(Ljava/lang/String;Ljava/time/Instant;)Lokhttp3/Headers$Builder;
-    .locals 4
+    .locals 3
+    .annotation build Lorg/codehaus/mojo/animal_sniffer/IgnoreJRERequirement;
+    .end annotation
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 297
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    .line 298
-    new-instance v1, Ljava/util/Date;
+    .line 2
+    new-instance v0, Ljava/util/Date;
 
     invoke-virtual {p2}, Ljava/time/Instant;->toEpochMilli()J
 
-    move-result-wide v2
+    move-result-wide v1
 
-    invoke-direct {v1, v2, v3}, Ljava/util/Date;-><init>(J)V
+    invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
-    invoke-virtual {v0, p1, v1}, Lokhttp3/Headers$Builder;->set(Ljava/lang/String;Ljava/util/Date;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, p1, v0}, Lokhttp3/Headers$Builder;->set(Ljava/lang/String;Ljava/util/Date;)Lokhttp3/Headers$Builder;
 
     move-result-object p1
 
@@ -775,23 +703,18 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 288
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Headers$Builder;
-
-    .line 289
+    .line 1
     invoke-static {p2}, Lokhttp3/internal/http/DatesKt;->toHttpDateString(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-virtual {v0, p1, p2}, Lokhttp3/Headers$Builder;->set(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {p0, p1, p2}, Lokhttp3/Headers$Builder;->set(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
-    return-object v0
+    return-object p0
 .end method

@@ -28,6 +28,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,6 +52,18 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "authPortNum",
+            "notiPortNum"
+        }
+    .end annotation
 
     .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -126,6 +146,14 @@
 
 .method public setBroadcastInfoUpdateNeeded(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isInfoUpdateNeeded"
+        }
+    .end annotation
 
     .line 62
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/DeviceBroadcastMediator;->mUDPBroadcast:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;
@@ -159,7 +187,7 @@
 .method public startWiFiBroadcast()V
     .locals 3
 
-    const-string v0, "startWiFiBroadcast"
+    const-string/jumbo v0, "startWiFiBroadcast"
 
     .line 77
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -215,7 +243,7 @@
 .method public stopWiFiBroadcast()V
     .locals 2
 
-    const-string v0, "stopWiFiBroadcast"
+    const-string/jumbo v0, "stopWiFiBroadcast"
 
     .line 87
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -251,8 +279,18 @@
 
 .method public updatePortNumber(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authPortNum",
+            "notiPortNum"
+        }
+    .end annotation
 
-    const-string v0, "updatePortNumber"
+    const-string/jumbo v0, "updatePortNumber"
 
     .line 43
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V

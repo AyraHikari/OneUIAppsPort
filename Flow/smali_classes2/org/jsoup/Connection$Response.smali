@@ -33,7 +33,16 @@
 .method public abstract bodyAsBytes()[B
 .end method
 
+.method public abstract bodyStream()Ljava/io/BufferedInputStream;
+.end method
+
+.method public abstract bufferUp()Lorg/jsoup/Connection$Response;
+.end method
+
 .method public abstract charset()Ljava/lang/String;
+.end method
+
+.method public abstract charset(Ljava/lang/String;)Lorg/jsoup/Connection$Response;
 .end method
 
 .method public abstract contentType()Ljava/lang/String;

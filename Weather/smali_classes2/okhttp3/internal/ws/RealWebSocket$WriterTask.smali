@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x12
+    accessFlags = 0x11
     name = "WriterTask"
 .end annotation
 
@@ -40,7 +40,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lokhttp3/internal/ws/RealWebSocket;
+.field public final synthetic this$0:Lokhttp3/internal/ws/RealWebSocket;
 
 
 # direct methods
@@ -52,7 +52,6 @@
         }
     .end annotation
 
-    .line 617
     iput-object p1, p0, Lokhttp3/internal/ws/RealWebSocket$WriterTask;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -65,15 +64,11 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string p1, " writer"
 
-    const-string v0, " writer"
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -93,7 +88,7 @@
 .method public runOnce()J
     .locals 3
 
-    .line 620
+    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$WriterTask;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
@@ -112,10 +107,8 @@
     :catch_0
     move-exception v0
 
-    .line 622
+    .line 2
     iget-object v1, p0, Lokhttp3/internal/ws/RealWebSocket$WriterTask;->this$0:Lokhttp3/internal/ws/RealWebSocket;
-
-    check-cast v0, Ljava/lang/Exception;
 
     const/4 v2, 0x0
 

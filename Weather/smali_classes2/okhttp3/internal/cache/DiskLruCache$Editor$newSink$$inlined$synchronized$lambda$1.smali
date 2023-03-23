@@ -1,9 +1,9 @@
 .class final Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$$inlined$synchronized$lambda$1;
-.super Lkotlin/jvm/internal/Lambda;
+.super Loi/m;
 .source "DiskLruCache.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lni/l;
 
 
 # annotations
@@ -12,36 +12,33 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function1<",
+        "Loi/m;",
+        "Lni/l<",
         "Ljava/io/IOException;",
-        "Lkotlin/Unit;",
+        "Lbi/x;",
         ">;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n\u00a2\u0006\u0002\u0008\u0004\u00a8\u0006\u0005"
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0006\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004\u00a8\u0006\u0005"
     }
     d2 = {
-        "<anonymous>",
-        "",
-        "it",
         "Ljava/io/IOException;",
+        "it",
+        "Lbi/x;",
         "invoke",
-        "okhttp3/internal/cache/DiskLruCache$Editor$newSink$1$1"
+        "(Ljava/io/IOException;)V",
+        "okhttp3/internal/cache/DiskLruCache$Editor$newSink$1$1",
+        "<anonymous>"
     }
     k = 0x3
     mv = {
@@ -53,13 +50,13 @@
 
 
 # instance fields
-.field final synthetic $index$inlined:I
+.field public final synthetic $index$inlined:I
 
-.field final synthetic this$0:Lokhttp3/internal/cache/DiskLruCache$Editor;
+.field public final synthetic this$0:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/cache/DiskLruCache$Editor;I)V
+.method public constructor <init>(Lokhttp3/internal/cache/DiskLruCache$Editor;I)V
     .locals 0
 
     iput-object p1, p0, Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$$inlined$synchronized$lambda$1;->this$0:Lokhttp3/internal/cache/DiskLruCache$Editor;
@@ -68,7 +65,7 @@
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    invoke-direct {p0, p1}, Loi/m;-><init>(I)V
 
     return-void
 .end method
@@ -78,12 +75,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 825
+    .line 1
     check-cast p1, Ljava/io/IOException;
 
     invoke-virtual {p0, p1}, Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$$inlined$synchronized$lambda$1;->invoke(Ljava/io/IOException;)V
 
-    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    sget-object p1, Lbi/x;->a:Lbi/x;
 
     return-object p1
 .end method
@@ -93,27 +90,27 @@
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 885
+    .line 2
     iget-object p1, p0, Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$$inlined$synchronized$lambda$1;->this$0:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
     iget-object p1, p1, Lokhttp3/internal/cache/DiskLruCache$Editor;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     monitor-enter p1
 
-    .line 886
+    .line 3
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$$inlined$synchronized$lambda$1;->this$0:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
     invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->detach$okhttp()V
 
-    .line 887
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    .line 4
+    sget-object v0, Lbi/x;->a:Lbi/x;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 885
+    .line 5
     monitor-exit p1
 
     return-void

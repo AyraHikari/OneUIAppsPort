@@ -36,10 +36,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 10
 
-    .line 38
+    .line 1
     new-instance v0, Lorg/simpleframework/xml/transform/DateType;
 
     const-string v1, "FULL"
@@ -52,7 +52,7 @@
 
     sput-object v0, Lorg/simpleframework/xml/transform/DateType;->FULL:Lorg/simpleframework/xml/transform/DateType;
 
-    .line 43
+    .line 2
     new-instance v1, Lorg/simpleframework/xml/transform/DateType;
 
     const-string v3, "LONG"
@@ -65,7 +65,7 @@
 
     sput-object v1, Lorg/simpleframework/xml/transform/DateType;->LONG:Lorg/simpleframework/xml/transform/DateType;
 
-    .line 48
+    .line 3
     new-instance v3, Lorg/simpleframework/xml/transform/DateType;
 
     const-string v5, "NORMAL"
@@ -78,7 +78,7 @@
 
     sput-object v3, Lorg/simpleframework/xml/transform/DateType;->NORMAL:Lorg/simpleframework/xml/transform/DateType;
 
-    .line 53
+    .line 4
     new-instance v5, Lorg/simpleframework/xml/transform/DateType;
 
     const-string v7, "SHORT"
@@ -103,7 +103,7 @@
 
     aput-object v5, v7, v8
 
-    .line 33
+    .line 5
     sput-object v7, Lorg/simpleframework/xml/transform/DateType;->$VALUES:[Lorg/simpleframework/xml/transform/DateType;
 
     return-void
@@ -119,10 +119,10 @@
         }
     .end annotation
 
-    .line 67
+    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 68
+    .line 2
     new-instance p1, Lorg/simpleframework/xml/transform/DateType$DateFormat;
 
     invoke-direct {p1, p3}, Lorg/simpleframework/xml/transform/DateType$DateFormat;-><init>(Ljava/lang/String;)V
@@ -134,23 +134,18 @@
 
 .method public static getDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 109
+    .line 1
     invoke-static {p0}, Lorg/simpleframework/xml/transform/DateType;->getType(Ljava/lang/String;)Lorg/simpleframework/xml/transform/DateType;
 
     move-result-object v0
 
-    .line 110
+    .line 2
     invoke-direct {v0}, Lorg/simpleframework/xml/transform/DateType;->getFormat()Lorg/simpleframework/xml/transform/DateType$DateFormat;
 
     move-result-object v0
 
-    .line 112
+    .line 3
     invoke-virtual {v0, p0}, Lorg/simpleframework/xml/transform/DateType$DateFormat;->getDate(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p0
@@ -161,7 +156,6 @@
 .method private getFormat()Lorg/simpleframework/xml/transform/DateType$DateFormat;
     .locals 1
 
-    .line 79
     iget-object v0, p0, Lorg/simpleframework/xml/transform/DateType;->format:Lorg/simpleframework/xml/transform/DateType$DateFormat;
 
     return-object v0
@@ -169,20 +163,15 @@
 
 .method public static getText(Ljava/util/Date;)Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 93
+    .line 1
     sget-object v0, Lorg/simpleframework/xml/transform/DateType;->FULL:Lorg/simpleframework/xml/transform/DateType;
 
     invoke-direct {v0}, Lorg/simpleframework/xml/transform/DateType;->getFormat()Lorg/simpleframework/xml/transform/DateType$DateFormat;
 
     move-result-object v0
 
-    .line 95
+    .line 2
     invoke-virtual {v0, p0}, Lorg/simpleframework/xml/transform/DateType$DateFormat;->getText(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p0
@@ -193,7 +182,7 @@
 .method public static getType(Ljava/lang/String;)Lorg/simpleframework/xml/transform/DateType;
     .locals 1
 
-    .line 126
+    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p0
@@ -202,7 +191,7 @@
 
     if-le p0, v0, :cond_0
 
-    .line 129
+    .line 2
     sget-object p0, Lorg/simpleframework/xml/transform/DateType;->FULL:Lorg/simpleframework/xml/transform/DateType;
 
     return-object p0
@@ -212,7 +201,7 @@
 
     if-le p0, v0, :cond_1
 
-    .line 132
+    .line 3
     sget-object p0, Lorg/simpleframework/xml/transform/DateType;->LONG:Lorg/simpleframework/xml/transform/DateType;
 
     return-object p0
@@ -222,12 +211,12 @@
 
     if-le p0, v0, :cond_2
 
-    .line 135
+    .line 4
     sget-object p0, Lorg/simpleframework/xml/transform/DateType;->NORMAL:Lorg/simpleframework/xml/transform/DateType;
 
     return-object p0
 
-    .line 137
+    .line 5
     :cond_2
     sget-object p0, Lorg/simpleframework/xml/transform/DateType;->SHORT:Lorg/simpleframework/xml/transform/DateType;
 
@@ -237,7 +226,6 @@
 .method public static valueOf(Ljava/lang/String;)Lorg/simpleframework/xml/transform/DateType;
     .locals 1
 
-    .line 33
     const-class v0, Lorg/simpleframework/xml/transform/DateType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -252,7 +240,6 @@
 .method public static values()[Lorg/simpleframework/xml/transform/DateType;
     .locals 1
 
-    .line 33
     sget-object v0, Lorg/simpleframework/xml/transform/DateType;->$VALUES:[Lorg/simpleframework/xml/transform/DateType;
 
     invoke-virtual {v0}, [Lorg/simpleframework/xml/transform/DateType;->clone()Ljava/lang/Object;

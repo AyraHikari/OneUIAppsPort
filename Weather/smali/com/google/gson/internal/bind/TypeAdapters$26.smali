@@ -1,9 +1,6 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$26;
-.super Ljava/lang/Object;
+.super Lcom/google/gson/TypeAdapter;
 .source "TypeAdapters.java"
-
-# interfaces
-.implements Lcom/google/gson/TypeAdapterFactory;
 
 
 # annotations
@@ -12,63 +9,152 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/gson/TypeAdapter<",
+        "Ljava/util/Calendar;",
+        ">;"
+    }
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 572
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public create(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lcom/google/gson/Gson;",
-            "Lcom/google/gson/reflect/TypeToken<",
-            "TT;>;)",
-            "Lcom/google/gson/TypeAdapter<",
-            "TT;>;"
-        }
-    .end annotation
+.method public bridge synthetic c(Lm6/a;Ljava/lang/Object;)V
+    .locals 0
 
-    .line 575
-    invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
+    check-cast p2, Ljava/util/Calendar;
 
-    move-result-object p2
+    invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$26;->d(Lm6/a;Ljava/util/Calendar;)V
 
-    const-class v0, Ljava/sql/Timestamp;
+    return-void
+.end method
 
-    if-eq p2, v0, :cond_0
+.method public d(Lm6/a;Ljava/util/Calendar;)V
+    .locals 2
 
-    const/4 p1, 0x0
+    if-nez p2, :cond_0
 
-    return-object p1
+    .line 1
+    invoke-virtual {p1}, Lm6/a;->D()Lm6/a;
 
-    .line 579
+    return-void
+
+    .line 2
     :cond_0
-    const-class p2, Ljava/util/Date;
+    invoke-virtual {p1}, Lm6/a;->i()Lm6/a;
 
-    invoke-virtual {p1, p2}, Lcom/google/gson/Gson;->getAdapter(Ljava/lang/Class;)Lcom/google/gson/TypeAdapter;
+    const-string v0, "year"
 
-    move-result-object p1
+    .line 3
+    invoke-virtual {p1, v0}, Lm6/a;->y(Ljava/lang/String;)Lm6/a;
 
-    .line 580
-    new-instance p2, Lcom/google/gson/internal/bind/TypeAdapters$26$1;
+    const/4 v0, 0x1
 
-    invoke-direct {p2, p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$26$1;-><init>(Lcom/google/gson/internal/bind/TypeAdapters$26;Lcom/google/gson/TypeAdapter;)V
+    .line 4
+    invoke-virtual {p2, v0}, Ljava/util/Calendar;->get(I)I
 
-    return-object p2
+    move-result v0
+
+    int-to-long v0, v0
+
+    invoke-virtual {p1, v0, v1}, Lm6/a;->X(J)Lm6/a;
+
+    const-string v0, "month"
+
+    .line 5
+    invoke-virtual {p1, v0}, Lm6/a;->y(Ljava/lang/String;)Lm6/a;
+
+    const/4 v0, 0x2
+
+    .line 6
+    invoke-virtual {p2, v0}, Ljava/util/Calendar;->get(I)I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    invoke-virtual {p1, v0, v1}, Lm6/a;->X(J)Lm6/a;
+
+    const-string v0, "dayOfMonth"
+
+    .line 7
+    invoke-virtual {p1, v0}, Lm6/a;->y(Ljava/lang/String;)Lm6/a;
+
+    const/4 v0, 0x5
+
+    .line 8
+    invoke-virtual {p2, v0}, Ljava/util/Calendar;->get(I)I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    invoke-virtual {p1, v0, v1}, Lm6/a;->X(J)Lm6/a;
+
+    const-string v0, "hourOfDay"
+
+    .line 9
+    invoke-virtual {p1, v0}, Lm6/a;->y(Ljava/lang/String;)Lm6/a;
+
+    const/16 v0, 0xb
+
+    .line 10
+    invoke-virtual {p2, v0}, Ljava/util/Calendar;->get(I)I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    invoke-virtual {p1, v0, v1}, Lm6/a;->X(J)Lm6/a;
+
+    const-string v0, "minute"
+
+    .line 11
+    invoke-virtual {p1, v0}, Lm6/a;->y(Ljava/lang/String;)Lm6/a;
+
+    const/16 v0, 0xc
+
+    .line 12
+    invoke-virtual {p2, v0}, Ljava/util/Calendar;->get(I)I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    invoke-virtual {p1, v0, v1}, Lm6/a;->X(J)Lm6/a;
+
+    const-string v0, "second"
+
+    .line 13
+    invoke-virtual {p1, v0}, Lm6/a;->y(Ljava/lang/String;)Lm6/a;
+
+    const/16 v0, 0xd
+
+    .line 14
+    invoke-virtual {p2, v0}, Ljava/util/Calendar;->get(I)I
+
+    move-result p2
+
+    int-to-long v0, p2
+
+    invoke-virtual {p1, v0, v1}, Lm6/a;->X(J)Lm6/a;
+
+    .line 15
+    invoke-virtual {p1}, Lm6/a;->p()Lm6/a;
+
+    return-void
 .end method

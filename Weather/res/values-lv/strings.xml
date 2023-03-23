@@ -60,6 +60,7 @@
     <string name="air_quality">Gaisa kvalitāte</string>
     <string name="air_quality_next_tts">Vēlākas ikdienas gaisa kvalitātes prognozes</string>
     <string name="air_quality_previous_tts">Agrākas ikdienas gaisa kvalitātes prognozes</string>
+    <string name="alert_title">Brīdinājums par bīstamiem laikapstākļiem</string>
     <string name="all_added_cities">Visas pievienotās pilsētas</string>
     <string name="allow">Atļaut</string>
     <string name="allow_permission_in_settings">Lai izmantotu šo funkciju, piešķiriet atļauju izvēlnē Iestatījumi.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Darbība netiek atbalstīta.</string>
     <string name="apply_daylight_saving_time">Vai lietot vasaras laiku?</string>
     <string name="as_possible_after_verification">Ziņojums ir nosūtīts. Pilsētas nosaukums tiks mainīts, tiklīdz būs veikta verifikācija.</string>
+    <string name="auto_refresh_on_screen_description">Automātiski saņemiet atjauninātu laika prognozi katru stundu. Ja ir ieslēgta šī funkcija, atsvaidzināšanu nevar veikt manuāli.</string>
+    <string name="auto_refresh_on_the_go">Automātiski atsvaidzināt, atrodoties ceļā</string>
+    <string name="auto_refresh_on_the_go_advanced">Papildu</string>
+    <string name="auto_refresh_on_the_go_description">Biežāk iegūstiet laika ziņu atjauninājumus, kad braucat ar automašīnu vai velosipēdu, skrienat vai ejat. Ja tas ir ieslēgts, atsvaidzināšanu nevar veikt manuāli.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Biežāk iegūstiet laika ziņu atjauninājumus, kad braucat ar automašīnu vai velosipēdu, skrienat vai ejat.</string>
     <string name="bottomsheet_action_expand_halfway">Izvērst līdz pusei</string>
     <string name="btn_report">Ziņot</string>
     <string name="button_finish">Pabeigt</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Veiciet dubultskārienu, lai saņemtu plašāku informāciju.</string>
     <string name="china">Ķīna</string>
     <string name="cities_button">Pilsētas</string>
+    <string name="city_added">Pilsēta ir pievienota.</string>
     <string name="city_list_text">Pilsētas</string>
     <string name="clear">Skaidrs</string>
     <string name="clear_text_end_icon_content_description">Notīrīt tekstu</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Jūsu ierīces atrašanās vietas informācija tiks nosūtīta satura nodrošinātājam, lai tas jums varētu nodrošināt vietējo laika prognožu informāciju.</string>
     <string name="contents_error_msg">Šis pakalpojums īslaicīgi nav pieejams. Lūdzu, mēģiniet vēlreiz vēlāk.</string>
     <string name="copy">Kopēt</string>
-    <string name="copy_toast_msg">Saite ir kopēta starpliktuvē.</string>
     <string name="correct_city_name">Labot pilsētas nosaukumu</string>
     <string name="couldnt_find_location">Nevarēja noteikt atrašanās vietu</string>
     <string name="cover_screen_top_sync_dialog_text">Vai iestatīt to pašu atrašanās vietu galvenajā ekrānā?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Objekts nomests %d. pozīcijā.</string>
     <string name="dragndroplist_drag_start">Sākta objekta vilkšana uz %d. pozīciju.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Objektu, kas atrodas %d. pozīcijā, nevar vilkt.</string>
+    <string name="drawer_tips">%s padomi</string>
     <string name="drawer_tips_message">Pieskarieties šeit, lai pievienotu, dzēstu un pārkārtotu atrašanās vietas. Jūs varat arī pievienot vairākus logrīkus, lai sākuma ekrānā parādītu dažādas atrašanās vietas.</string>
     <string name="drawer_tips_message_1">Šīs izvēlnes apakšdaļā pieskarieties pie Pārvaldīt atrašanās vietas, lai pievienotu, dzēstu un pārkārtotu atrašanās vietas.</string>
     <string name="drawer_tips_message_2">Sākuma ekrānam varat pievienot vairāk nekā vienu logrīku, lai vienlaikus parādītu dažādas atrašanās vietas.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Papildu iestatījumi</string>
     <string name="exposed_dropdown_menu_content_description">Rādīt nolaižamo izvēlni</string>
     <string name="failed_to_send_report">Neizdevās nosūtīt ziņojumu</string>
-    <string name="fallback_menu_item_copy_link">Kopēt saiti</string>
-    <string name="fallback_menu_item_open_in_browser">Atvērt pārlūkprogrammā</string>
-    <string name="fallback_menu_item_share_link">Kopīgot saiti</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Izlases atrašanās vieta</string>
     <string name="feel_like_pd_minus_temp">Pēc sajūtām ir -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Prognozes video</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s j./h</string>
+    <string name="fri">Pk.</string>
     <string name="general">Vispārīgi</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Iegūstiet personalizētu saturu, ņemot vērā to, kā izmantojat savu tālruni.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Iegūstiet personalizētu saturu, ņemot vērā to, kā izmantojat savu planšetdatoru.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">saņemt informāciju par laikapstākļiem, tostarp jūsu pašreizējo atrašanās vietu, no programmas Weather</string>
     <string name="go_to_website">Atvērt tīmekļa vietni</string>
     <string name="goto_apps">Pieejams jauns atjauninājums. Vai instalēt tūlīt?</string>
     <string name="goto_apps_later">Vēlāk</string>
     <string name="goto_apps_now">Tagad</string>
     <string name="goto_apps_update_title">Paziņojumi par jaunu saturu</string>
     <string name="header_tts">Galvene</string>
+    <string name="heavy">Spēcīgi</string>
     <string name="heavy_rain">Spēcīgs lietus</string>
     <string name="heavy_rain_followed_by_intense_heat">Stiprs lietus, vēlāk ļoti silts</string>
     <string name="heavy_rain_followed_by_light_rain">Stiprs lietus, vēlāk ļoti silts</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Redzamība</string>
     <string name="life_index_wind">Vējš</string>
     <string name="life_index_wind_force">Vēja ātrums</string>
+    <string name="light">Viegli</string>
     <string name="light_rain_followed_by_heavy_rain">Sīks lietus, vēlāk stiprs lietus</string>
     <string name="light_rain_with_some_heavy_rain">Sīks lietus, dažbrīd stiprs lietus</string>
     <string name="link_tts">Saite</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Nekas nav atrasts.</string>
     <string name="message_service_not_available">Pakalpojums pašlaik nav pieejams.</string>
     <string name="minus_tts">Mīnus</string>
+    <string name="mon">Pr.</string>
     <string name="more">Vēl</string>
     <string name="more_cuntact_us">Sazinieties ar mums</string>
     <string name="more_information">Vairāk</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Pieskarieties šeit, lai mainītu noklusējuma atrašanās vietu laika prognozei un pārvaldītu visas savas atrašanās vietas.</string>
     <string name="new_version_available">Pieejama jauna programmas %s versija.</string>
     <string name="new_version_is_available">Ir pieejama jauna versija.</string>
+    <string name="news_menu_show_news">Rādīt ziņas</string>
+    <string name="news_opt_in_banner_title_text">Esiet informēts par pašreizējiem pasākumiem, parādot ziņas laika ziņu logrīkā.</string>
+    <string name="news_opt_in_popup_desc_text">Esiet informēts par notiekošo pasaulē, laika ziņu logrīkā parādot jaunākos ziņu virsrakstus no programmas %s.</string>
+    <string name="news_opt_in_popup_title_text">Skatiet ziņas un laika prognozes vienā logrīkā</string>
+    <string name="news_request_agree_text">Pieskarieties, lai saņemtu ziņas no %s</string>
+    <string name="news_widget_bubble_text">Saņemiet ziņas kopā ar laika prognozi.</string>
+    <string name="news_widget_dummy_title">Šodienas populārākais stāsts</string>
+    <string name="news_widget_new_dummy_title">5 lietas, kas jums šorīt jāzina</string>
+    <string name="news_widget_oobe_text">Pieskar., lai pievien. ziņas.</string>
     <string name="next">Nāk. pilsēta</string>
+    <string name="next_btn">Tālāk</string>
     <string name="next_city">Veiciet dubultskārienu, lai skatītu nākamās pilsētas informāciju.</string>
     <string name="night_tts">Nakts</string>
     <string name="no_application_available">Nav pieejama neviena programma.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Nav laika ziņu informācijas</string>
     <string name="not_in_use">Netiek lietots</string>
     <string name="not_now">Ne tagad</string>
+    <string name="not_now_btn">Ne tagad</string>
     <string name="not_selected">Nav izvēlēts</string>
     <string name="not_set">Nav iestatīts</string>
     <string name="nothing_selected">Nekas nav izvēlēts.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Lai ātrāk un precīzāk noteiktu atrašanās vietu, pieskarieties pie IESTATĪJUMI un kā atrašanās vietas noteikšanas metodi izvēlieties GPS, Wi-Fi un mobilie tīkli.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Lai ātrāk un precīzāk noteiktu atrašanās vietu, pieskarieties pie IESTATĪJUMI un kā atrašanās vietas noteikšanas metodi izvēlieties GPS un Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Lai skatītu vietējās laika prognozes, ieslēdziet atrašanās vietas iestatījumus un pārliecinieties, vai režīma iestatījums ir Augsta precizitāte.</string>
+    <string name="notification_alert_channel_name">Brīdinājums par bīstamiem laikapstākļiem</string>
     <string name="notification_apps_update_channel_name">Atjauninājumu paziņojumi</string>
     <string name="notification_auto_refresh_channel_name">Laika prognozes aut. atsvaidz.</string>
     <string name="notification_dex_channel_name">Laika ziņas pak. Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Atv. programmu</string>
     <string name="open_source_licences">Atklātā pirmkoda licences</string>
     <string name="other_locations">Citas atrašanās vietas</string>
+    <string name="partly_sunny">Vietām saulains</string>
     <string name="password_toggle_content_description">Rādīt paroli</string>
     <string name="paused">Pauzēts</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Preference “%1$s” ir kopēta starpliktuvē.</string>
     <string name="preview">%s priekšskatījums</string>
     <string name="previous">Iepr. pilsēta</string>
+    <string name="previous_btn">Atpakaļ</string>
     <string name="previous_city">Veiciet dubultskārienu, lai skatītu iepriekšējās pilsētas informāciju.</string>
     <string name="privacy_policy">Konfidencialitātes politika</string>
     <string name="probability_of_rain_text">Iespējams lietus</string>
     <string name="protect_your_content">Aizsargājiet saturu</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radars un kartes</string>
     <string name="rain">Lietus</string>
     <string name="rain_followed_by_intense_heat">Lietus, vēlāk ļoti silts</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Lai atjauninātu laika prognozes informāciju, pieskarieties pie IESTATĪJUMI, Programmas dati > Atļaujas un pēc tam aktivizējiet tālāk norādītās atļaujas un mēģiniet vēlreiz:</string>
     <string name="runtime_location_permission_title">Piešķirt atļaujas</string>
     <string name="runtime_oem_grant_permission_desc">Programmai %s ir piešķirta atļauja piekļūt šādam saturam:</string>
+    <string name="sat">Se.</string>
     <string name="save_button">Saglabāt</string>
     <string name="search_menu_title">Meklēt</string>
     <string name="search_most_searched_for">Visbiežāk meklēts</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Pieejams jauns saturs</string>
     <string name="sesl_material_overflow_badge_text_n">J</string>
     <string name="sesl_more_item_label">Citi</string>
+    <string name="sesl_preferecne_badge_description">Jauns paziņojums</string>
     <string name="sesl_preferencecategory_added_title">Galvene</string>
     <string name="sesl_search_hint">Meklēt</string>
     <string name="sesl_searchview_description_clear">Notīrīt meklēšanas lauku</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Bezsaistē</string>
     <string name="st_view_less">Skatīt mazāk</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Izslēgts</string>
+    <string name="status_on">Ieslēgts</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Sv.</string>
     <string name="sunny">Saulains</string>
     <string name="sunny_with_some_clouds">Saulains, vietām mākoņains</string>
     <string name="sunny_with_some_heavy_rain">Saulains, vietām stiprs lietus</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Pieskarieties šeit, lai atjaunotu laika prognozes datus no vecās ierīces.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Pieskarieties pie MĒĢINĀT VĒLREIZ, lai vēlreiz mēģinātu noteikt savu atrašanās vietu.</string>
     <string name="tap_setting_message_edge_panel">Ieslēdziet funkciju Atrašanās vieta, lai saņemtu vietējo laika prognozi.</string>
+    <string name="tap_the_settings_icon">Pieskarieties iestatījumu ikonai.</string>
     <string name="tap_to_get_the_weather">Pieskarieties, lai skatītu laika prognozi</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Noteikumi un nosacījumi</string>
     <string name="the_latest_version">Jaunākā versija jau ir instalēta.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Tas tiks piemērots arī paziņojumiem un programmai Kalendārs.</string>
+    <string name="thu">Ce.</string>
     <string name="tick_box_tts">Izvēles rūtiņa</string>
     <string name="ticked_tts">Atzīmēts</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Katru stundu</string>
     <string name="title_select_locations">Izvēlēties atrašanās vietas</string>
     <string name="title_theme">Motīvi</string>
+    <string name="to_continue_agree_to_updated">Lai turpinātu, piekrītiet atjauninātajam dokumentam %s.</string>
     <string name="to_get_local_weather_chn">"Lai iegūtu informāciju par vietējiem laikapstākļiem, jūsu pašreizējās atrašanās vietas dati jānosūta laikapstākļu pakalpojuma nodrošinātājam. (Lūdzu, skatiet pakalpojumu sniedzēja %1$sNoteikumus un nosacījumus%2$s un %3$sPrivātuma politiku%4$s).
 Citas lietotnes un pakalpojumi jūsu ierīcē var piekļūt izgūtiem laikapstākļu datiem, lai parādītu laikapstākļus šajās lietotnēs.
 Lai sniegtu jums pastāvīgu informāciju par laika apstākļiem, lietotne Laikapstākļi varēs piekļūt jūsu atrašanās vietai pat tad, kad nelietojat lietotni."</string>
     <string name="today">Šodien</string>
+    <string name="try_it_out_btn">Izmēģiniet</string>
+    <string name="tue">Ot.</string>
+    <string name="turn_on_to_use_precise_location">Lai lietotu šo funkciju, jums ir jāļauj %s nepārtraukti piekļūt jūsu atrašanās vietas informācijai un jāieslēdz funkcija Izmantot precīzu atrašanās vietu. Pieskarieties pie Iestatījumi, pēc tam atveriet Atļaujas > Atrašanās vieta.</string>
     <string name="tw_title_weather_broadcast">Apraide</string>
-    <string name="unable_to_check_for_updates">Nevar meklēt atjauninājumus. Nav savienojuma ar tīklu.</string>
+    <string name="unable_to_check_for_updates">Nevarēja meklēt atjauninājumus. Mēģiniet vēlreiz vēlāk.</string>
     <string name="unable_to_receive_info_msg">Nevar saņemt informāciju</string>
     <string name="unticked_tts">Noņemta atzīme</string>
     <string name="unused">Neizmantota</string>
     <string name="update">Atjaunināt</string>
     <string name="update_abb8">Atjaunināt</string>
     <string name="update_app">Atjaunināt programmu</string>
+    <string name="updated_tile_chn">Atjaunināts: %s</string>
     <string name="updated_tts">Dokuments %s ir atjaunināts</string>
+    <string name="use_current_location">Izm.pašr.atraš.vietu</string>
     <string name="use_current_location_agree_popup">"Lai iegūtu informāciju par vietējiem laikapstākļiem, jūsu pašreizējās atrašanās vietas dati jānosūta laikapstākļu pakalpojuma nodrošinātājam. (lūdzam skatīt pakalpojumu sniedzēja %1$sKonfidencialitātes politiku%2$s).
 Citas programmas un pakalpojumi jūsu ierīcē var piekļūt laikapstākļu datiem, lai parādītu laikapstākļu informāciju šajās programmās."</string>
     <string name="use_current_location_and_background_agree_popup">"Lai iegūtu informāciju par vietējiem laikapstākļiem, jūsu pašreizējās atrašanās vietas dati jānosūta laikapstākļu pakalpojuma nodrošinātājam. (Lūdzu, skatiet pakalpojumu sniedzēja %1$sPrivātuma politiku%2$s.)
@@ -746,9 +784,16 @@ Lai sniegtu jums pastāvīgu informāciju par laika apstākļiem, lietotne Laika
 Izmantojot atrašanās vietu, varat izslēgt programmas Laiks iestatījumus."</string>
     <string name="use_current_location_body_msg_chn">"Lūdzu, uzmanīgi izlasiet pirms programmas “Laiks” izmantošanas:
 Ja vēlaties uzzināt savas pašreizējās atrašanās vietas laika apstākļus, jums būs jāļauj trešās personas pakalpojumu sniedzējam pastāvīgi (pat ja jūs neizmantojat pakalpojumu) piekļūt jūsu ierīcei un iegūt noteiktus datus, kā norādīts zemāk. Pirms šādas atļaujas piešķiršanas, lūdzu, uzmanīgi izlasiet un izprotiet trešās personas pakalpojumu sniedzēja %1$sNoteikumus un nosacījumus%2$s un %3$sKonfidencialitātes politiku%4$s. Jūs varat atsaukt savu atļauju, izvēlnē Iestatījumi izslēdzot “Atrašanās vieta”. Citas programmas un pakalpojumi jūsu ierīcē var izgūt laika apstākļu datus, lai parādītu laika apstākļu informāciju šajās programmās un pakalpojumos."</string>
+    <string name="use_current_location_body_msg_kor">"Jūsu pašreizējās atrašanās vietas informācija tiks apkopota un izmantota, lai nodrošinātu dažas laika prognozes programmas funkcijas, piemēram, vietējo laika prognozi.
+
+Lai nodrošinātu nepārtrauktu laika prognoz, šī programma regulāri apstrādās jūsu atrašanās vietas informāciju, pat ja neizmantosit šo programmu. Turpinot jūs piekrītat jūsu atrašanās vietas informācijas apkopošanai un apstrādei iepriekš minētajiem nolūkiem.
+
+Jūs varat pārtraukt šo atrašanās vietas informācijas apkopošanu un izmantošanu laika prognozes programmas iestatījumos."</string>
     <string name="use_current_location_body_purpose">Mērķis</string>
     <string name="use_current_location_body_purpose_content">Lai sniegtu informāciju par jūsu pašreizējās atrašanās vietas laika apstākļiem</string>
     <string name="use_current_location_body_search_provider">Pakalpojumu sniedzējs</string>
+    <string name="use_current_location_continue">Turpināt</string>
+    <string name="use_current_location_not_now">Ne tagad</string>
     <string name="use_current_location_off_alert_popup">Pašreizējā atrašanās vietas informācija tiks noņemta.</string>
     <string name="useful_informations">Padomi dzīvei un citi ziņojumi</string>
     <string name="using_as">Izmanto kā %s</string>
@@ -856,9 +901,11 @@ Ja vēlaties uzzināt savas pašreizējās atrašanās vietas laika apstākļus,
     <string name="weather_tip">Laika prognozes padomi</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Tr.</string>
     <string name="weekly_forecast">Katru dienu</string>
     <string name="widget_background">Logrīka fons</string>
     <string name="widget_empty_text">Pieskarieties, lai skatītu laika ziņas</string>
+    <string name="widget_location">Pilsētas nosaukums</string>
     <string name="widget_name_4x1">Laika ziņas un pulkstenis</string>
     <string name="widget_setting">Iestatījumi</string>
     <string name="widget_setting_background_color">Fona krāsa</string>

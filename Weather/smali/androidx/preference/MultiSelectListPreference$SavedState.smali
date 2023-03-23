@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field mValues:Ljava/util/Set;
+.field public h:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -39,55 +39,54 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 235
-    new-instance v0, Landroidx/preference/MultiSelectListPreference$SavedState$1;
+    new-instance v0, Landroidx/preference/MultiSelectListPreference$SavedState$a;
 
-    invoke-direct {v0}, Landroidx/preference/MultiSelectListPreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Landroidx/preference/MultiSelectListPreference$SavedState$a;-><init>()V
 
     sput-object v0, Landroidx/preference/MultiSelectListPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 251
+    .line 1
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 252
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    .line 253
+    .line 3
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v1, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->mValues:Ljava/util/Set;
+    iput-object v1, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->h:Ljava/util/Set;
 
-    .line 254
+    .line 4
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 255
+    .line 5
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readStringArray([Ljava/lang/String;)V
 
-    .line 257
-    iget-object p1, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->mValues:Ljava/util/Set;
+    .line 6
+    iget-object p1, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->h:Ljava/util/Set;
 
     invoke-static {p1, v0}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcelable;)V
+.method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 261
+    .line 7
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -98,11 +97,11 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 266
-    invoke-super {p0, p1, p2}, Landroidx/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    .line 1
+    invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 267
-    iget-object p2, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->mValues:Ljava/util/Set;
+    .line 2
+    iget-object p2, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->h:Ljava/util/Set;
 
     invoke-interface {p2}, Ljava/util/Set;->size()I
 
@@ -110,8 +109,8 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 268
-    iget-object p2, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->mValues:Ljava/util/Set;
+    .line 3
+    iget-object p2, p0, Landroidx/preference/MultiSelectListPreference$SavedState;->h:Ljava/util/Set;
 
     invoke-interface {p2}, Ljava/util/Set;->size()I
 

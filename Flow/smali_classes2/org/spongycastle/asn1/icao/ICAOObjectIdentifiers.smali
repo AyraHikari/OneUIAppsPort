@@ -57,59 +57,49 @@
     .line 24
     invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_ldsSecurityObject:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 29
-    sget-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_mrtd_security:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_ldsSecurityObject:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "2"
 
+    .line 29
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_cscaMasterList:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 31
-    sget-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_mrtd_security:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_cscaMasterList:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "3"
 
+    .line 31
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_cscaMasterListSigningKey:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 36
-    sget-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_mrtd_security:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_cscaMasterListSigningKey:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "4"
 
+    .line 36
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_documentTypeList:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 41
-    sget-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_mrtd_security:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_documentTypeList:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "5"
 
+    .line 41
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_aaProtocolObject:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 46
-    sget-object v0, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_mrtd_security:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/icao/ICAOObjectIdentifiers;->id_icao_aaProtocolObject:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "6"
 
+    .line 46
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     move-result-object v0

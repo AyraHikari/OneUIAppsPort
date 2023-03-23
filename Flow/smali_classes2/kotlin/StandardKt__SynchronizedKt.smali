@@ -4,18 +4,9 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSynchronized.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Synchronized.kt\nkotlin/StandardKt__SynchronizedKt\n*L\n1#1,32:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
-        "\u0000\u0012\n\u0002\u0008\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a7\u0010\u0000\u001a\u0002H\u0001\"\u0004\u0008\u0000\u0010\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u0002H\u00010\u0005H\u0087\u0008\u0082\u0002\n\n\u0008\u0008\u0001\u0012\u0002\u0010\u0002 \u0001\u00a2\u0006\u0002\u0010\u0006\u00a8\u0006\u0007"
+        "\u0000\u0012\n\u0002\u0008\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a:\u0010\u0000\u001a\u0002H\u0001\"\u0004\u0008\u0000\u0010\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u0002H\u00010\u0005H\u0087\u0008\u00f8\u0001\u0000\u0082\u0002\n\n\u0008\u0008\u0001\u0012\u0002\u0010\u0002 \u0001\u00a2\u0006\u0002\u0010\u0006\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006\u0007"
     }
     d2 = {
         "synchronized",
@@ -30,10 +21,10 @@
     k = 0x5
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
-    xi = 0x1
+    xi = 0x31
     xs = "kotlin/StandardKt"
 .end annotation
 
@@ -60,12 +51,20 @@
         }
     .end annotation
 
-    .line 23
+    const-string v0, "lock"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "block"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 28
     monitor-enter p0
 
     const/4 v0, 0x1
 
-    .line 25
+    .line 30
     :try_start_0
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
@@ -75,7 +74,7 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 29
+    .line 34
     monitor-exit p0
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -85,10 +84,10 @@
     :catchall_0
     move-exception p1
 
-    .line 30
+    .line 32
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 29
+    .line 34
     monitor-exit p0
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V

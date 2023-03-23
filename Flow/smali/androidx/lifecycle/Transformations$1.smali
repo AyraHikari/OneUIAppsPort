@@ -1,4 +1,4 @@
-.class final Landroidx/lifecycle/Transformations$1;
+.class Landroidx/lifecycle/Transformations$1;
 .super Ljava/lang/Object;
 .source "Transformations.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -35,7 +35,7 @@
 .method constructor <init>(Landroidx/lifecycle/MediatorLiveData;Landroidx/arch/core/util/Function;)V
     .locals 0
 
-    .line 72
+    .line 73
     iput-object p1, p0, Landroidx/lifecycle/Transformations$1;->val$result:Landroidx/lifecycle/MediatorLiveData;
 
     iput-object p2, p0, Landroidx/lifecycle/Transformations$1;->val$mapFunction:Landroidx/arch/core/util/Function;
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    .line 75
+    .line 76
     iget-object v0, p0, Landroidx/lifecycle/Transformations$1;->val$result:Landroidx/lifecycle/MediatorLiveData;
 
     iget-object v1, p0, Landroidx/lifecycle/Transformations$1;->val$mapFunction:Landroidx/arch/core/util/Function;

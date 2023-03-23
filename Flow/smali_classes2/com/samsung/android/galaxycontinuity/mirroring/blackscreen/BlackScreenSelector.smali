@@ -19,6 +19,14 @@
 
 .method public static getProperBlackScreen(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 10
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/BlackScreenSelector;->sBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
@@ -26,7 +34,7 @@
     if-nez v0, :cond_1
 
     .line 11
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1a
 

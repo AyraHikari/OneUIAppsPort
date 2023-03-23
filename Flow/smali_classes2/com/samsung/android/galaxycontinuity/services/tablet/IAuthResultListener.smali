@@ -13,6 +13,14 @@
 
 # virtual methods
 .method public abstract onAuthFailed(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 .end method
 
 .method public abstract onAuthSuccess()V

@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    const-string v1, "servicediscovery"
+    const-string/jumbo v1, "servicediscovery"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -98,6 +98,14 @@
 
 .method private onServiceFound(Landroid/net/nsd/NsdServiceInfo;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "service"
+        }
+    .end annotation
 
     .line 149
     invoke-virtual {p1}, Landroid/net/nsd/NsdServiceInfo;->getServiceType()Ljava/lang/String;
@@ -156,7 +164,11 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -408,6 +420,16 @@
 
 .method public resolveService(Landroid/net/nsd/NsdServiceInfo;Landroid/net/nsd/NsdManager$ResolveListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "info",
+            "listener"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -424,7 +446,7 @@
 
     move-result-object v0
 
-    const-string v1, "servicediscovery"
+    const-string/jumbo v1, "servicediscovery"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -445,6 +467,14 @@
 
 .method public setDeviceDiscoverListener(Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 191
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mListener:Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;
@@ -454,6 +484,14 @@
 
 .method public setDeviceIDToFind(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceID"
+        }
+    .end annotation
 
     .line 186
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mDeviceIDToFind:Ljava/lang/String;
@@ -474,7 +512,7 @@
 
     move-result-object v0
 
-    const-string v1, "servicediscovery"
+    const-string/jumbo v1, "servicediscovery"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -514,15 +552,11 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mAuthDiscoveryListener:Landroid/net/nsd/NsdManager$DiscoveryListener;
-
-    if-eqz v1, :cond_0
-
-    .line 197
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mNsdManager:Landroid/net/nsd/NsdManager;
-
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mAuthDiscoveryListener:Landroid/net/nsd/NsdManager$DiscoveryListener;
 
+    if-eqz v2, :cond_0
+
+    .line 197
     invoke-virtual {v1, v2}, Landroid/net/nsd/NsdManager;->stopServiceDiscovery(Landroid/net/nsd/NsdManager$DiscoveryListener;)V
 
     .line 198
@@ -551,15 +585,11 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mNotiDiscoveryListener:Landroid/net/nsd/NsdManager$DiscoveryListener;
-
-    if-eqz v1, :cond_1
-
-    .line 208
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mNsdManager:Landroid/net/nsd/NsdManager;
-
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/discovery/nsd/NSDDiscovery;->mNotiDiscoveryListener:Landroid/net/nsd/NsdManager$DiscoveryListener;
 
+    if-eqz v2, :cond_1
+
+    .line 208
     invoke-virtual {v1, v2}, Landroid/net/nsd/NsdManager;->stopServiceDiscovery(Landroid/net/nsd/NsdManager$DiscoveryListener;)V
 
     .line 209

@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -27,43 +27,42 @@
 
 
 # instance fields
-.field mValue:Ljava/lang/String;
+.field public h:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 285
-    new-instance v0, Landroidx/preference/ListPreference$SavedState$1;
+    new-instance v0, Landroidx/preference/ListPreference$SavedState$a;
 
-    invoke-direct {v0}, Landroidx/preference/ListPreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Landroidx/preference/ListPreference$SavedState$a;-><init>()V
 
     sput-object v0, Landroidx/preference/ListPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
 
-    .line 301
+    .line 1
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 302
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/preference/ListPreference$SavedState;->mValue:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/preference/ListPreference$SavedState;->h:Ljava/lang/String;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcelable;)V
+.method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 306
+    .line 3
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -74,11 +73,11 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 311
-    invoke-super {p0, p1, p2}, Landroidx/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    .line 1
+    invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 312
-    iget-object p2, p0, Landroidx/preference/ListPreference$SavedState;->mValue:Ljava/lang/String;
+    .line 2
+    iget-object p2, p0, Landroidx/preference/ListPreference$SavedState;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

@@ -14,28 +14,11 @@
 .end annotation
 
 
-# static fields
-.field private static final sEmptyBundle:Landroid/os/Bundle;
-
-
 # instance fields
 .field mBundle:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 49
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    sput-object v0, Landroidx/core/view/accessibility/AccessibilityViewCommand$CommandArguments;->sEmptyBundle:Landroid/os/Bundle;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -49,8 +32,16 @@
 # virtual methods
 .method public setBundle(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bundle"
+        }
+    .end annotation
 
-    .line 56
+    .line 54
     iput-object p1, p0, Landroidx/core/view/accessibility/AccessibilityViewCommand$CommandArguments;->mBundle:Landroid/os/Bundle;
 
     return-void

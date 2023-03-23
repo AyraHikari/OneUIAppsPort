@@ -43,8 +43,6 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 369
-    iget-object p1, p0, Lcom/google/api/client/util/Types$1$1;->this$0:Lcom/google/api/client/util/Types$1;
-
     iget-object p1, p1, Lcom/google/api/client/util/Types$1;->val$value:Ljava/lang/Object;
 
     invoke-static {p1}, Ljava/lang/reflect/Array;->getLength(Ljava/lang/Object;)I

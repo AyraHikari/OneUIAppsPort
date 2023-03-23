@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow ile en fazla %d bilgisayar veya tablet kaydedin ve yönetin.
-
-Tek seferde telefonunuza sadece bir bilgisayar veya tablet bağlanabilir. Kayıtlı bilgisayarların veya tabletlerin ikisi birden telefonunuza bağlanmayı denerse birini seçmeniz gerekir."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flow ile en fazla %d bilgisayar veya tablet kaydedin ve yönetin.
-
-Tek seferde telefonunuza sadece bir bilgisayar veya tablet bağlanabilir. Kayıtlı bilgisayarların veya tabletlerin ikisi birden telefonunuza bağlanmayı denerse birini seçmeniz gerekir."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d yeni bildirim</item>
+        <item quantity="one">%d yeni bildirim</item>
     </plurals>
 </resources>

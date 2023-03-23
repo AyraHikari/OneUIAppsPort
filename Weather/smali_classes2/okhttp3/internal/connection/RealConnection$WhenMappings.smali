@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
+.method public static synthetic constructor <clinit>()V
     .locals 3
 
     invoke-static {}, Ljava/net/Proxy$Type;->values()[Ljava/net/Proxy$Type;

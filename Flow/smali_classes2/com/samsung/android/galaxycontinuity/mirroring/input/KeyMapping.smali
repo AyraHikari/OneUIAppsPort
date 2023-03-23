@@ -81,6 +81,14 @@
 
 .method private static getDefaultFunction(Ljava/lang/String;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     const-string v0, "flow_mouse_right"
 
@@ -283,6 +291,16 @@
 
 .method public static getFunction(Landroid/content/Context;Ljava/lang/String;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "key"
+        }
+    .end annotation
 
     .line 103
     :try_start_0
@@ -310,6 +328,16 @@
 
 .method public static getFunctionByScanCode(Landroid/content/Context;I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "scanCode"
+        }
+    .end annotation
 
     const/16 v0, 0x57
 
@@ -493,6 +521,16 @@
 
 .method private static getFunctionKeyCode(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "function",
+            "keyCode"
+        }
+    .end annotation
 
     packed-switch p0, :pswitch_data_0
 
@@ -601,6 +639,18 @@
 
 .method public static getFunctionKeyCode(Landroid/content/Context;II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "scanCode",
+            "keyCode"
+        }
+    .end annotation
 
     .line 46
     invoke-static {p0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/input/KeyMapping;->getFunctionByScanCode(Landroid/content/Context;I)I
@@ -617,6 +667,14 @@
 
 .method public static isFunctionKey(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scanCode"
+        }
+    .end annotation
 
     const/16 v0, 0x72
 

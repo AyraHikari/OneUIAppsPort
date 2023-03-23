@@ -1,70 +1,111 @@
-.class final Lcom/google/android/gms/common/api/internal/zat;
+.class public final Lcom/google/android/gms/common/api/internal/zat;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;
+.implements Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;
 
 
 # instance fields
-.field private final synthetic zaeq:Lcom/google/android/gms/common/api/internal/zas;
+.field public final zaa:Lcom/google/android/gms/common/api/Api;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/Api<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field private final zab:Z
+
+.field private zac:Lcom/google/android/gms/common/api/internal/zau;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/zas;)V
+.method public constructor <init>(Lcom/google/android/gms/common/api/Api;Z)V
     .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zat;->zaeq:Lcom/google/android/gms/common/api/internal/zas;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/Api<",
+            "*>;Z)V"
+        }
+    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zat;->zaa:Lcom/google/android/gms/common/api/Api;
+
+    iput-boolean p2, p0, Lcom/google/android/gms/common/api/internal/zat;->zab:Z
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final run()V
+.method private final zab()Lcom/google/android/gms/common/api/internal/zau;
     .locals 2
 
-    .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zat;->zaeq:Lcom/google/android/gms/common/api/internal/zas;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zat;->zac:Lcom/google/android/gms/common/api/internal/zau;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/zas;->zaa(Lcom/google/android/gms/common/api/internal/zas;)Ljava/util/concurrent/locks/Lock;
+    const-string v1, "Callbacks must be attached to a ClientConnectionHelper instance before connecting the client."
 
-    move-result-object v0
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zat;->zac:Lcom/google/android/gms/common/api/internal/zau;
 
-    .line 3
-    :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zat;->zaeq:Lcom/google/android/gms/common/api/internal/zas;
+    return-object v0
+.end method
 
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/zas;->zab(Lcom/google/android/gms/common/api/internal/zas;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zat;->zaeq:Lcom/google/android/gms/common/api/internal/zas;
+# virtual methods
+.method public final onConnected(Landroid/os/Bundle;)V
+    .locals 1
 
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/zas;->zaa(Lcom/google/android/gms/common/api/internal/zas;)Ljava/util/concurrent/locks/Lock;
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/zat;->zab()Lcom/google/android/gms/common/api/internal/zau;
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/internal/zau;->onConnected(Landroid/os/Bundle;)V
 
     return-void
+.end method
 
-    :catchall_0
-    move-exception v0
+.method public final onConnectionFailed(Lcom/google/android/gms/common/ConnectionResult;)V
+    .locals 3
 
-    .line 6
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zat;->zaeq:Lcom/google/android/gms/common/api/internal/zas;
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/zat;->zab()Lcom/google/android/gms/common/api/internal/zau;
 
-    invoke-static {v1}, Lcom/google/android/gms/common/api/internal/zas;->zaa(Lcom/google/android/gms/common/api/internal/zas;)Ljava/util/concurrent/locks/Lock;
+    move-result-object v0
 
-    move-result-object v1
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zat;->zaa:Lcom/google/android/gms/common/api/Api;
 
-    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    iget-boolean v2, p0, Lcom/google/android/gms/common/api/internal/zat;->zab:Z
 
-    throw v0
+    invoke-interface {v0, p1, v1, v2}, Lcom/google/android/gms/common/api/internal/zau;->zaa(Lcom/google/android/gms/common/ConnectionResult;Lcom/google/android/gms/common/api/Api;Z)V
+
+    return-void
+.end method
+
+.method public final onConnectionSuspended(I)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/zat;->zab()Lcom/google/android/gms/common/api/internal/zau;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/internal/zau;->onConnectionSuspended(I)V
+
+    return-void
+.end method
+
+.method public final zaa(Lcom/google/android/gms/common/api/internal/zau;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zat;->zac:Lcom/google/android/gms/common/api/internal/zau;
+
+    return-void
 .end method

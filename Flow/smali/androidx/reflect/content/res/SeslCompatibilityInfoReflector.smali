@@ -19,6 +19,14 @@
 
 .method public static getField_applicationScale(Landroid/content/res/Resources;)F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resources"
+        }
+    .end annotation
 
     .line 26
     invoke-static {p0}, Landroidx/reflect/content/res/SeslResourcesReflector;->getCompatibilityInfo(Landroid/content/res/Resources;)Ljava/lang/Object;

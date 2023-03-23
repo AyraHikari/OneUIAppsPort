@@ -57,9 +57,8 @@
 
     const-string v0, "data"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 600
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->formatOpcode:I
@@ -74,7 +73,6 @@
 .method public final getData()Lokio/ByteString;
     .locals 1
 
-    .line 602
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->data:Lokio/ByteString;
 
     return-object v0
@@ -83,7 +81,6 @@
 .method public final getFormatOpcode()I
     .locals 1
 
-    .line 601
     iget v0, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->formatOpcode:I
 
     return v0

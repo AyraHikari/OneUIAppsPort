@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/margin_view" style="@style/SubHeader_NoText" />
+    <TextView android:textColor="@color/storage_analysis_group_header_title_text" android:id="@id/title" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/basic_sub_header_divider_height" style="@style/SubHeader_GroupingCase" />
+</LinearLayout>

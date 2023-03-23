@@ -18,7 +18,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 19
+    .line 17
     const-class v0, Landroid/os/UserHandle;
 
     sput-object v0, Landroidx/reflect/os/SeslUserHandleReflector;->mClass:Ljava/lang/Class;
@@ -29,7 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 17
+    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,8 +38,8 @@
 .method public static myUserId()I
     .locals 4
 
-    .line 26
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 24
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -47,7 +47,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 27
+    .line 25
     sget-object v0, Landroidx/reflect/os/SeslUserHandleReflector;->mClass:Ljava/lang/Class;
 
     new-array v2, v1, [Ljava/lang/Class;
@@ -60,7 +60,7 @@
 
     goto :goto_0
 
-    .line 29
+    .line 27
     :cond_0
     sget-object v0, Landroidx/reflect/os/SeslUserHandleReflector;->mClass:Ljava/lang/Class;
 
@@ -79,17 +79,17 @@
 
     new-array v3, v1, [Ljava/lang/Object;
 
-    .line 33
+    .line 31
     invoke-static {v2, v0, v3}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 34
+    .line 32
     instance-of v2, v0, Ljava/lang/Integer;
 
     if-eqz v2, :cond_1
 
-    .line 35
+    .line 33
     check-cast v0, Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I

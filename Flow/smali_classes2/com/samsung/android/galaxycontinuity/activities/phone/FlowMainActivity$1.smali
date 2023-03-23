@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 169
+    .line 181
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +46,14 @@
 .method public run()V
     .locals 3
 
-    .line 172
+    .line 184
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->needTermsUpdate()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 173
+    .line 185
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
@@ -54,7 +62,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 174
+    .line 186
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
 
     const/4 v2, 0x4

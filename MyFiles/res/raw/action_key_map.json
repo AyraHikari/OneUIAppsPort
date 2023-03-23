@@ -1,0 +1,296 @@
+{
+  "Settings": {
+    "/Settings/Advanced/SmartStay": {
+      "globalKey": "eternal_settings_smart_stay",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Advanced/EasyMute": {
+      "globalKey": "eternal_settings_easy_mute",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Advanced/PalmSwipeToCapture": {
+      "globalKey": "eternal_settings_palm_swipe_to_capture",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Advanced/SmartCapture": {
+      "globalKey": "eternal_settings_smart_capture",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Advanced/SmartAlert": {
+      "globalKey": "eternal_settings_smart_alert",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Advanced/SwipeToCallOrSendMessage": {
+      "globalKey": "eternal_settings_swipe_to_call_or_send_message",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/AutoBrightness": {
+      "globalKey": "eternal_settings_auto_brightness",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/FontSize": {
+      "globalKey": "eternal_settings_font_size",
+      "actionType": "SLIDER"
+    },
+    "/Settings/Display/BlockAccidentalTouches": {
+      "globalKey": "eternal_settings_block_accidental_touches",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/BluelightFilter": {
+      "globalKey": "eternal_settings_blue_light_filter",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/FontStyle": {
+      "globalKey": "eternal_settings_font_style",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/ScreenTimeout": {
+      "globalKey": "eternal_settings_screen_timeout",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/ScreenZoom": {
+      "globalKey": "eternal_settings_screen_zoom",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/ButtonLayout": {
+      "globalKey": "eternal_settings_button_layout",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/ShowBatteryPercentage": {
+      "globalKey": "eternal_settings_show_battery_percentage",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/ShowRecentNotificationOnly": {
+      "globalKey": "eternal_settings_show_recent_notification_only",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/WiFi/Advanced/AutoWifi": {
+      "globalKey": "eternal_settings_auto_wifi",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/Location": {
+      "globalKey": "eternal_settings_location",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/LocationBluetoothScan": {
+      "globalKey": "eternal_settings_location_bluetooth_scan",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/LocationWifiScan": {
+      "globalKey": "eternal_settings_location_wifi_scan",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/Nfc": {
+      "globalKey": "eternal_settings_nfc",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/WiFi/Advanced/SwitchToMobileData/IndividualApps": {
+      "globalKey": "eternal_settings_individual_apps",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/WiFi/Advanced/WifiPowerSavingMode": {
+      "globalKey": "eternal_settings_wifi_power_saving_mode",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/WiFi/Advanced/Hotspot20/Enabled": {
+      "globalKey": "eternal_settings_hotspot20",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/WiFi/Advanced/WIPS": {
+      "globalKey": "eternal_settings_wips",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Display/NavigationBar/NavigationTypes": {
+      "globalKey": "eternal_settings_navigation_types",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Advanced/LiftToWake": {
+      "globalKey": "eternal_settings_aod_lift_to_wake",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Connections/WiFi/Advanced/SwitchToMobileData/Enabled": {
+      "globalKey": "eternal_settings_switch_to_mobile_data",
+      "actionType": "SWITCH"
+    },
+    "/Settings/General/ShowKeyboardButton": {
+      "globalKey": "eternal_settings_show_keyboard_button",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/RoamingClock": {
+      "globalKey": "eternal_settings_roaming_clock",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/RoamingClockHomeCity": {
+      "globalKey": "eternal_settings_roaming_clock_home_city",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/RoamingClockPosition": {
+      "globalKey": "eternal_settings_roaming_clock_position",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/FaceWidget": {
+      "globalKey": "eternal_settings_face_widget",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/FaceWidgetPosition": {
+      "globalKey": "eternal_settings_face_widget_position",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/HideContent": {
+      "globalKey": "eternal_settings_hide_content",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/NotificationIconOnly": {
+      "globalKey": "eternal_settings_notification_icon_only",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/ShowNotification": {
+      "globalKey": "eternal_settings_show_notification",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/Transparency": {
+      "globalKey": "eternal_settings_transparency",
+      "actionType": "SWITCH"
+    },
+    "/Settings/LockScreen/AutoReverseTextColor": {
+      "globalKey": "eternal_settings_auto_reverse_text_color",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Notifications/AppIconBadge": {
+      "globalKey": "eternal_settings_app_icon_badge",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Notifications/AppIconBadgeShowNotifications": {
+      "globalKey": "eternal_settings_app_icon_badge_show_notifications",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Notifications/AppIconBadgeStyle": {
+      "globalKey": "eternal_settings_app_icon_badge_style",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Security/MakePasswordVisible": {
+      "globalKey": "eternal_settings_make_password_visible",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/ChargingSound": {
+      "globalKey": "eternal_settings_charging_sound",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/DialingKeypadTone": {
+      "globalKey": "eternal_settings_dialing_keypad_tone",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/KeyboardSound": {
+      "globalKey": "eternal_settings_keyboard_sound",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/KeyboardVibration": {
+      "globalKey": "eternal_settings_keyboard_vibration",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/NotificationSound": {
+      "globalKey": "eternal_settings_notification_sound",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/NotificationSoundSim2": {
+      "globalKey": "eternal_settings_notification_sound_sim2",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/ScreenLockSound": {
+      "globalKey": "eternal_settings_screen_lock_sound",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/TouchSound": {
+      "globalKey": "eternal_settings_touch_sound",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/UseVolumeKeyForMedia": {
+      "globalKey": "eternal_settings_use_volume_key_for_media",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/VibrationFeedback": {
+      "globalKey": "eternal_settings_vibration_feedback",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/VibrationPattern": {
+      "globalKey": "eternal_settings_vibration_pattern",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Sound/VibrationWhileRinging": {
+      "globalKey": "eternal_settings_vibration_while_ringing",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Accessibility/PreferredEngine": {
+      "globalKey": "eternal_settings_preferred_engine",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Accessibility/Pitch": {
+      "globalKey": "eternal_settings_pitch",
+      "actionType": "SWITCH"
+    },
+    "/Settings/Accessibility/Rate": {
+      "globalKey": "eternal_settings_rate",
+      "actionType": "SWITCH"
+    }
+  },
+  "Accessibility": {
+    "/Accessibility/Default/FlashNotification": {
+      "globalKey": "eternal_accessibility_ally_flash_notification",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/ScreenNotification": {
+      "globalKey": "eternal_accessibility_screen_notification",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/NotificationReminderSelectable": {
+      "globalKey": "eternal_accessibility_notification_reminder_selectable",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/TimeKey": {
+      "globalKey": "eternal_accessibility_notification_reminder_interval_time_key",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectAccess": {
+      "globalKey": "eternal_accessibility_direct_access",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectAccessibility": {
+      "globalKey": "eternal_accessibility_direct_accessibility",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectSTalkback": {
+      "globalKey": "eternal_accessibility_direct_stalkback",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectUniversalSwitch": {
+      "globalKey": "eternal_accessibility_direct_universal_switch",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectAccessMagnifier": {
+      "globalKey": "eternal_accessibility_direct_access_magnifier",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectNegative": {
+      "globalKey": "eternal_accessibility_direct_negative",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectColorAdjustment": {
+      "globalKey": "eternal_accessibility_direct_color_adjustment",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectColorLens": {
+      "globalKey": "eternal_accessibility_direct_color_lens",
+      "actionType": "SWITCH"
+    },
+    "/Accessibility/Default/DirectAccessControl": {
+      "globalKey": "eternal_accessibility_direct_access_control",
+      "actionType": "SWITCH"
+    }
+  },
+  "SamsungCapture": {
+    "/SamsungCapture/Screenshots/ScreenshotToolbar": {
+      "globalKey": "eternal_samsungcapture_screenshot_toolbar",
+      "actionType": "SWITCH"
+    }
+  }
+}

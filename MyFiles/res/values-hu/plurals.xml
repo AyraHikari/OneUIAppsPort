@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Legfeljebb %d elemet választhat ki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d elemet választhat ki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Nem helyezhető át %d fájl a Kukába</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nem helyezhető át %d fájl a Kukába</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Nem helyezhető át %d mappa a Kukába</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nem helyezhető át %d mappa a Kukába</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Nem helyezhető át %d elem a Kukába</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nem helyezhető át %d elem a Kukába</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">A kijelölt fájlok közül %d törlődni fog, mivel a felhőben vagy egy USB-tárolóeszközön van.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A kijelölt fájlok közül %d törlődni fog, mivel a felhőben vagy egy USB-tárolóeszközön van.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">A kijelölt mappák közül %d törlődni fog, mivel a felhőben vagy egy USB-tárolóeszközön van.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A kijelölt mappák közül %d törlődni fog, mivel a felhőben vagy egy USB-tárolóeszközön van.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">A kijelölt elemek közül %d törlődni fog, mivel a felhőben vagy egy USB-tárolóeszközön van.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A kijelölt elemek közül %d törlődni fog, mivel a felhőben vagy egy USB-tárolóeszközön van.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d fájl tömörítése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl tömörítése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d fájl tömörítése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl tömörítése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d mappa tömörítése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa tömörítése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d mappa tömörítése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa tömörítése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d elem tömörítése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem tömörítése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d elem tömörítése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem tömörítése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d fájl másolása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl másolása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d fájl másolása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl másolása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d mappa másolása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa másolása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d mappa másolása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa másolása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d elem másolása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem másolása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d elem másolása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem másolása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Töröl %d fájlt a telefonról?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Töröl %d fájlt a telefonról?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Töröl %d fájlt a táblagépről?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Töröl %d fájlt a táblagépről?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Töröl %d mappát a telefonról?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Töröl %d mappát a telefonról?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Töröl %d mappát a táblagépről?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Töröl %d mappát a táblagépről?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Töröl %d elemet a telefonról?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Töröl %d elemet a telefonról?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Töröl %d elemet a táblagépről?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Töröl %d elemet a táblagépről?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d fájl törlése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl törlése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d mappa törlése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa törlése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d elem törlése a Kukából…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem törlése a Kukából…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d elem törlése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem törlése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d fájl kibontása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl kibontása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d mappa kibontása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa kibontása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d elem kibontása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem kibontása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d fájl is a Kukába kerül a(z) %2$s szolgáltatásban.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d fájl is a Kukába kerül a(z) %2$s szolgáltatásban.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d fájl visszaállítása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl visszaállítása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d mappa is a Kukába fog kerülni a(z) %2$s szolgáltatásban.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d mappa is a Kukába fog kerülni a(z) %2$s szolgáltatásban.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d mappa visszaállítása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa visszaállítása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">A belső tárhely megtelt. Véglegesen töröl %d fájlt?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A belső tárhely megtelt. Véglegesen töröl %d fájlt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">A belső tárhely megtelt. Véglegesen töröl %d mappát?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A belső tárhely megtelt. Véglegesen töröl %d mappát?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">A belső tárhely megtelt. Véglegesen töröl %d elemet?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A belső tárhely megtelt. Véglegesen töröl %d elemet?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">A belső tárhely és az SD-kártya megtelt. Véglegesen töröl %d fájlt?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A belső tárhely és az SD-kártya megtelt. Véglegesen töröl %d fájlt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">A belső tárhely és az SD-kártya megtelt. Véglegesen töröl %d mappát?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A belső tárhely és az SD-kártya megtelt. Véglegesen töröl %d mappát?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">A belső tárhely és az SD-kártya megtelt. Véglegesen töröl %d elemet?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A belső tárhely és az SD-kártya megtelt. Véglegesen töröl %d elemet?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d elem visszaállítása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem visszaállítása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d elem is a Kukába kerül a(z) %2$s szolgáltatásban.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elem is a Kukába kerül a(z) %2$s szolgáltatásban.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Legfeljebb %d alkalmazásablak nyitható meg.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d alkalmazásablak nyitható meg.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Áthelyez %d fájlt a Kukába?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Áthelyez %d fájlt a Kukába?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Áthelyez %d fájlt a Kukába?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Áthelyez %d fájlt a Kukába?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Áthelyez %d mappát a Kukába?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Áthelyez %d mappát a Kukába?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Áthelyez %d mappát a Kukába?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Áthelyez %d mappát a Kukába?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Áthelyez %d elemet a Kukába?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Áthelyez %d elemet a Kukába?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Áthelyez %d elemet a Kukába?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Áthelyez %d elemet a Kukába?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d fájl áthelyezése a Kukába…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl áthelyezése a Kukába…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d mappa áthelyezése a Kukába…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa áthelyezése a Kukába…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d elem áthelyezése a Kukába…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem áthelyezése a Kukába…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d fájl áthelyezése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl áthelyezése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d fájl áthelyezése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl áthelyezése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d mappa áthelyezése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa áthelyezése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d mappa áthelyezése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa áthelyezése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d elem áthelyezése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem áthelyezése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d elem áthelyezése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem áthelyezése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d elem tömörítve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem tömörítve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d elem átmásolva ide: %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elem átmásolva ide: %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Törli az albumot és benne lévő %d fájlt?</item>
+        <item quantity="one">Törli az albumot és benne lévő fájlt?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Töröl %1$d albumot és a bennük található %2$d fájlt?</item>
+        <item quantity="one">Törli az albumot és benne lévő fájlt?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d elem törölve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem törölve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d fájl letöltése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl letöltése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d mappa letöltése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa letöltése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d elem letöltése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem letöltése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Nem lehet megosztani a mappákat, mert üresek.</item>
+        <item quantity="one">Nem lehet megosztani a mappát, mert üres.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d fájl véglegesen törlődni fog.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl véglegesen törlődni fog.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d mappa véglegesen törlődni fog.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa véglegesen törlődni fog.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d elem kibontva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem kibontva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">Hozzáadott %d fájlt a Kedvencekhez.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hozzáadott %d fájlt a Kedvencekhez.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d fájl eltávolítva a Kedvencek közül.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl eltávolítva a Kedvencek közül.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">Hozzáadott %d mappát a Kedvencekhez.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hozzáadott %d mappát a Kedvencekhez.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d mappa eltávolítva a Kedvencek közül.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa eltávolítva a Kedvencek közül.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">Hozzáadott %d elemet a Kedvencekhez.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hozzáadott %d elemet a Kedvencekhez.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d elem eltávolítva a Kedvencek közül.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem eltávolítva a Kedvencek közül.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d tétel</item>
+        <item quantity="one">1 tétel</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d tétel</item>
+        <item quantity="one">%d tétel</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d elem átmásolva a vágólapra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem átmásolva a vágólapra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d elem áthelyezve a vágólapra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem áthelyezve a vágólapra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d elem kijelölve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem kijelölve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d elem áthelyezve ide: %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elem áthelyezve ide: %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d elem áthelyezve a Kukába</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem áthelyezve a Kukába</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d kijelölve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kijelölve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Az SD-kártya megtelt. Véglegesen töröl %d fájlt?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Az SD-kártya megtelt. Véglegesen töröl %d fájlt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Az SD-kártya megtelt. Véglegesen töröl %d mappát?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Az SD-kártya megtelt. Véglegesen töröl %d mappát?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Az SD-kártya megtelt. Véglegesen töröl %d elemet?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Az SD-kártya megtelt. Véglegesen töröl %d elemet?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">A fájl %d nap múlva törlődni fog.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A fájl %d nap múlva törlődni fog.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">A mappa %d nap múlva törlődni fog.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A mappa %d nap múlva törlődni fog.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Véglegesen töröl %d fájlt?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Véglegesen töröl %d fájlt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d fájl törlése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl törlése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d fájl visszaállítása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fájl visszaállítása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Véglegesen töröl %d mappát?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Véglegesen töröl %d mappát?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d mappa törlése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa törlése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d mappa visszaállítása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa visszaállítása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Véglegesen töröl %d elemet?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Véglegesen töröl %d elemet?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d elem törlése…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem törlése…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d elem visszaállítása…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elem visszaállítása…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Törlés %d nap múlva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Törlés %d nap múlva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Eltávolít %d alkalmazást?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eltávolít %d alkalmazást?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,72 +1,52 @@
 .class final Lcom/google/android/gms/common/api/internal/zacl;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/google/android/gms/tasks/Continuation;
+.super Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/android/gms/tasks/Continuation<",
-        "Ljava/lang/Boolean;",
-        "Ljava/lang/Void;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field final synthetic zaa:Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;
 
 
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zacl;->zaa:Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;
+
+    invoke-direct {p0, p2}, Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;-><init>(Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic then(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
+.method protected final unregisterListener(Lcom/google/android/gms/common/api/Api$AnyClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/lang/Exception;
+            "(",
+            "Lcom/google/android/gms/common/api/Api$AnyClient;",
+            "Lcom/google/android/gms/tasks/TaskCompletionSource<",
+            "Ljava/lang/Boolean;",
+            ">;)V"
         }
     .end annotation
 
-    .line 3
-    invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    move-result-object p1
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zacl;->zaa:Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;
 
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;->zab(Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;)Lcom/google/android/gms/common/api/internal/RemoteCall;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    move-result-object v0
 
-    move-result p1
+    invoke-interface {v0, p1, p2}, Lcom/google/android/gms/common/api/internal/RemoteCall;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 4
-    :cond_0
-    new-instance p1, Lcom/google/android/gms/common/api/ApiException;
-
-    new-instance v0, Lcom/google/android/gms/common/api/Status;
-
-    const/16 v1, 0xd
-
-    const-string v2, "listener already unregistered"
-
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
-
-    invoke-direct {p1, v0}, Lcom/google/android/gms/common/api/ApiException;-><init>(Lcom/google/android/gms/common/api/Status;)V
-
-    throw p1
+    return-void
 .end method

@@ -14,19 +14,15 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0002\u001a\u00020\u0003H\u0014\u00a8\u0006\u0004"
+        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0003\u001a\u00020\u0002H\u0014\u00a8\u0006\u0004"
     }
     d2 = {
         "okhttp3/internal/connection/RealCall$timeout$1",
         "Lokio/AsyncTimeout;",
+        "Lbi/x;",
         "timedOut",
-        "",
         "okhttp"
     }
     k = 0x1
@@ -39,11 +35,11 @@
 
 
 # instance fields
-.field final synthetic this$0:Lokhttp3/internal/connection/RealCall;
+.field public final synthetic this$0:Lokhttp3/internal/connection/RealCall;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/connection/RealCall;)V
+.method public constructor <init>(Lokhttp3/internal/connection/RealCall;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -51,7 +47,6 @@
         }
     .end annotation
 
-    .line 70
     iput-object p1, p0, Lokhttp3/internal/connection/RealCall$timeout$1;->this$0:Lokhttp3/internal/connection/RealCall;
 
     invoke-direct {p0}, Lokio/AsyncTimeout;-><init>()V
@@ -61,10 +56,9 @@
 
 
 # virtual methods
-.method protected timedOut()V
+.method public timedOut()V
     .locals 1
 
-    .line 72
     iget-object v0, p0, Lokhttp3/internal/connection/RealCall$timeout$1;->this$0:Lokhttp3/internal/connection/RealCall;
 
     invoke-virtual {v0}, Lokhttp3/internal/connection/RealCall;->cancel()V

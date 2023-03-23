@@ -18,17 +18,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 180
+    .line 220
     invoke-direct {p0}, Lorg/jsoup/parser/Token$Tag;-><init>()V
 
-    .line 181
-    new-instance v0, Lorg/jsoup/nodes/Attributes;
-
-    invoke-direct {v0}, Lorg/jsoup/nodes/Attributes;-><init>()V
-
-    iput-object v0, p0, Lorg/jsoup/parser/Token$StartTag;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    .line 182
+    .line 221
     sget-object v0, Lorg/jsoup/parser/Token$TokenType;->StartTag:Lorg/jsoup/parser/Token$TokenType;
 
     iput-object v0, p0, Lorg/jsoup/parser/Token$StartTag;->type:Lorg/jsoup/parser/Token$TokenType;
@@ -41,11 +34,20 @@
 .method nameAttr(Ljava/lang/String;Lorg/jsoup/nodes/Attributes;)Lorg/jsoup/parser/Token$StartTag;
     .locals 0
 
-    .line 194
+    .line 232
     iput-object p1, p0, Lorg/jsoup/parser/Token$StartTag;->tagName:Ljava/lang/String;
 
-    .line 195
+    .line 233
     iput-object p2, p0, Lorg/jsoup/parser/Token$StartTag;->attributes:Lorg/jsoup/nodes/Attributes;
+
+    .line 234
+    iget-object p1, p0, Lorg/jsoup/parser/Token$StartTag;->tagName:Ljava/lang/String;
+
+    invoke-static {p1}, Lorg/jsoup/internal/Normalizer;->lowerCase(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/jsoup/parser/Token$StartTag;->normalName:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -53,14 +55,12 @@
 .method reset()Lorg/jsoup/parser/Token$Tag;
     .locals 1
 
-    .line 187
+    .line 226
     invoke-super {p0}, Lorg/jsoup/parser/Token$Tag;->reset()Lorg/jsoup/parser/Token$Tag;
 
-    .line 188
-    new-instance v0, Lorg/jsoup/nodes/Attributes;
+    const/4 v0, 0x0
 
-    invoke-direct {v0}, Lorg/jsoup/nodes/Attributes;-><init>()V
-
+    .line 227
     iput-object v0, p0, Lorg/jsoup/parser/Token$StartTag;->attributes:Lorg/jsoup/nodes/Attributes;
 
     return-object p0
@@ -69,7 +69,7 @@
 .method bridge synthetic reset()Lorg/jsoup/parser/Token;
     .locals 1
 
-    .line 178
+    .line 218
     invoke-virtual {p0}, Lorg/jsoup/parser/Token$StartTag;->reset()Lorg/jsoup/parser/Token$Tag;
 
     move-result-object v0
@@ -80,7 +80,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 201
+    .line 240
     iget-object v0, p0, Lorg/jsoup/parser/Token$StartTag;->attributes:Lorg/jsoup/nodes/Attributes;
 
     const-string v1, ">"
@@ -97,12 +97,14 @@
 
     if-lez v0, :cond_0
 
-    .line 202
+    .line 241
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {p0}, Lorg/jsoup/parser/Token$StartTag;->name()Ljava/lang/String;
 
@@ -110,9 +112,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, " "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lorg/jsoup/parser/Token$StartTag;->attributes:Lorg/jsoup/nodes/Attributes;
 
@@ -122,7 +128,11 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -130,7 +140,7 @@
 
     return-object v0
 
-    .line 204
+    .line 243
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -138,13 +148,19 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p0}, Lorg/jsoup/parser/Token$StartTag;->name()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

@@ -28,8 +28,20 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$phoneDevice",
+            "val$connectionType"
+        }
+    .end annotation
 
-    .line 393
+    .line 442
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->val$phoneDevice:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
@@ -43,6 +55,14 @@
 
 .method private showEnrollConnectionFailedDialog(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnectionBluetooth"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -53,7 +73,7 @@
     :cond_0
     const-string p1, "error_wifi_connection_failed"
 
-    .line 460
+    .line 509
     :goto_0
     new-instance v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6$2;
 
@@ -63,7 +83,7 @@
 
     const/4 v0, 0x0
 
-    .line 475
+    .line 524
     invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/MessageDialogActivity;->showMessageDialog(Ljava/lang/String;I)V
 
     return-void
@@ -74,7 +94,7 @@
 .method public run()V
     .locals 7
 
-    .line 397
+    .line 446
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
@@ -86,7 +106,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->showPINConfirmFragment(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
 
-    .line 399
+    .line 448
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->val$connectionType:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;->BLUETOOTH:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
@@ -97,7 +117,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 400
+    .line 449
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->val$phoneDevice:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getBluetoothDevice()Landroid/bluetooth/BluetoothDevice;
@@ -112,7 +132,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 401
+    .line 450
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->val$phoneDevice:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
@@ -127,7 +147,7 @@
 
     invoke-static {v0, v4}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->access$102(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 403
+    .line 452
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     new-instance v4, Ljava/util/concurrent/CountDownLatch;
@@ -136,7 +156,7 @@
 
     invoke-static {v0, v4}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->access$302(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;Ljava/util/concurrent/CountDownLatch;)Ljava/util/concurrent/CountDownLatch;
 
-    .line 404
+    .line 453
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->val$phoneDevice:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getBluetoothDevice()Landroid/bluetooth/BluetoothDevice;
@@ -151,14 +171,14 @@
 
     move-result-object v0
 
-    .line 405
+    .line 454
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 406
+    .line 455
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -169,7 +189,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 410
+    .line 459
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
@@ -193,10 +213,10 @@
     :try_start_2
     const-string v0, "await is interrupted"
 
-    .line 412
+    .line 461
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 415
+    .line 464
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
@@ -206,7 +226,7 @@
 
     invoke-static {v0, v4}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->access$202(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
-    .line 418
+    .line 467
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->val$phoneDevice:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
 
@@ -220,7 +240,7 @@
 
     if-eq v0, v1, :cond_2
 
-    .line 419
+    .line 468
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
     move-result-object v0
@@ -231,12 +251,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 420
+    .line 469
     invoke-direct {p0, v3}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->showEnrollConnectionFailedDialog(Z)V
 
     return-void
 
-    .line 426
+    .line 475
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
@@ -256,7 +276,7 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 428
+    .line 477
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->val$connectionType:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;->BLUETOOTH:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
@@ -275,14 +295,14 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 430
+    .line 479
     new-instance v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6$1;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6$1;-><init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;)V
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/MessageDialogActivity;->addResultReceiver(Lcom/samsung/android/galaxycontinuity/util/MessageDialogResultReceiver;)V
 
-    .line 445
+    .line 494
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/activities/MessageDialogActivity;->showRegisterFailDialog()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
@@ -292,7 +312,7 @@
     :catch_1
     move-exception v0
 
-    .line 448
+    .line 497
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_5

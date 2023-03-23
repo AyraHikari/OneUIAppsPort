@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/storage_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

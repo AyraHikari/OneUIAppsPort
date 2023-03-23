@@ -34,7 +34,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 7
 
     .line 1023
     new-instance v0, Lcom/caverock/androidsvg/SVG$Style$LineJoin;
@@ -48,43 +48,39 @@
     sput-object v0, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->Miter:Lcom/caverock/androidsvg/SVG$Style$LineJoin;
 
     .line 1024
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Style$LineJoin;
+    new-instance v1, Lcom/caverock/androidsvg/SVG$Style$LineJoin;
 
-    const-string v1, "Round"
+    const-string v3, "Round"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/caverock/androidsvg/SVG$Style$LineJoin;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/caverock/androidsvg/SVG$Style$LineJoin;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->Round:Lcom/caverock/androidsvg/SVG$Style$LineJoin;
+    sput-object v1, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->Round:Lcom/caverock/androidsvg/SVG$Style$LineJoin;
 
     .line 1025
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Style$LineJoin;
+    new-instance v3, Lcom/caverock/androidsvg/SVG$Style$LineJoin;
 
-    const-string v1, "Bevel"
+    const-string v5, "Bevel"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/caverock/androidsvg/SVG$Style$LineJoin;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/caverock/androidsvg/SVG$Style$LineJoin;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->Bevel:Lcom/caverock/androidsvg/SVG$Style$LineJoin;
+    sput-object v3, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->Bevel:Lcom/caverock/androidsvg/SVG$Style$LineJoin;
 
-    const/4 v1, 0x3
+    const/4 v5, 0x3
 
-    new-array v1, v1, [Lcom/caverock/androidsvg/SVG$Style$LineJoin;
+    new-array v5, v5, [Lcom/caverock/androidsvg/SVG$Style$LineJoin;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 1021
-    sget-object v5, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->Miter:Lcom/caverock/androidsvg/SVG$Style$LineJoin;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->Round:Lcom/caverock/androidsvg/SVG$Style$LineJoin;
-
-    aput-object v2, v1, v3
-
-    aput-object v0, v1, v4
-
-    sput-object v1, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Style$LineJoin;
+    sput-object v5, Lcom/caverock/androidsvg/SVG$Style$LineJoin;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Style$LineJoin;
 
     return-void
 .end method

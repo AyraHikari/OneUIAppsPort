@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 899
+    .line 1036
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11$2;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,18 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "which"
+        }
+    .end annotation
 
-    .line 902
+    .line 1039
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11$2;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
@@ -47,7 +65,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 903
+    .line 1040
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11$2;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
@@ -56,7 +74,7 @@
 
     invoke-virtual {p1}, Landroidx/appcompat/app/AlertDialog;->dismiss()V
 
-    .line 904
+    .line 1041
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11$2;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$11;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;

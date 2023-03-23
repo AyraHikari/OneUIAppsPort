@@ -10,6 +10,14 @@
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ActionBarContainer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "container"
+        }
+    .end annotation
 
     .line 32
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
@@ -24,6 +32,14 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 38
     iget-object v0, p0, Landroidx/appcompat/widget/ActionBarBackgroundDrawable;->mContainer:Landroidx/appcompat/widget/ActionBarContainer;
@@ -99,6 +115,14 @@
 
 .method public getOutline(Landroid/graphics/Outline;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "outline"
+        }
+    .end annotation
 
     .line 68
     iget-object v0, p0, Landroidx/appcompat/widget/ActionBarBackgroundDrawable;->mContainer:Landroidx/appcompat/widget/ActionBarContainer;
@@ -145,12 +169,28 @@
 
 .method public setAlpha(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "alpha"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cf"
+        }
+    .end annotation
 
     return-void
 .end method

@@ -1,37 +1,23 @@
-.class Lcom/google/android/gms/internal/icing/zzar;
-.super Lcom/google/android/gms/internal/icing/zzao;
+.class public final Lcom/google/android/gms/internal/icing/zzar;
+.super Landroid/os/Handler;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/internal/icing/zzao;-><init>()V
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public zza(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/search/GoogleNowAuthState;)V
+.method public constructor <init>(Landroid/os/Looper;)V
     .locals 0
 
     .line 2
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public zzb(Lcom/google/android/gms/common/api/Status;)V
-    .locals 0
-
-    .line 3
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
+    return-void
 .end method

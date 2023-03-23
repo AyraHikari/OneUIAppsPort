@@ -22,6 +22,14 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     .line 37
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
@@ -117,6 +125,14 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 84
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/IconDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
@@ -228,6 +244,14 @@
 
 .method public setAlpha(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "alpha"
+        }
+    .end annotation
 
     .line 135
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/IconDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
@@ -239,6 +263,14 @@
 
 .method public setBitmapY(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "y"
+        }
+    .end annotation
 
     .line 106
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/IconDrawable;->mBitmapY:F
@@ -248,6 +280,20 @@
 
 .method public setBounds(IIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "top",
+            "right",
+            "bottom"
+        }
+    .end annotation
 
     .line 63
     invoke-super {p0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
@@ -273,6 +319,14 @@
 
 .method public setBounds(Landroid/graphics/Rect;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bounds"
+        }
+    .end annotation
 
     .line 58
     iget v0, p1, Landroid/graphics/Rect;->left:I
@@ -290,6 +344,14 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cf"
+        }
+    .end annotation
 
     .line 140
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/IconDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
@@ -301,6 +363,14 @@
 
 .method public setGravity(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "gravity"
+        }
+    .end annotation
 
     .line 71
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/IconDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
@@ -312,6 +382,14 @@
 
 .method public setHeight(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "height"
+        }
+    .end annotation
 
     .line 127
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/phone/IconDrawable;->copyBounds()Landroid/graphics/Rect;
@@ -337,6 +415,14 @@
 
 .method public setPadding(Landroid/graphics/Rect;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "padding"
+        }
+    .end annotation
 
     .line 75
     iget v0, p1, Landroid/graphics/Rect;->left:I
@@ -356,6 +442,14 @@
 
 .method public setWidth(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "width"
+        }
+    .end annotation
 
     .line 120
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/phone/IconDrawable;->copyBounds()Landroid/graphics/Rect;

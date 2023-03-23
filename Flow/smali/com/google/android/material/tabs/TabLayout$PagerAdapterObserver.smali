@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/tabs/TabLayout;)V
     .locals 0
 
-    .line 3631
+    .line 4339
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$PagerAdapterObserver;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -35,7 +35,7 @@
 .method public onChanged()V
     .locals 1
 
-    .line 3635
+    .line 4343
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$PagerAdapterObserver;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->populateFromPagerAdapter()V
@@ -46,7 +46,7 @@
 .method public onInvalidated()V
     .locals 1
 
-    .line 3640
+    .line 4348
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$PagerAdapterObserver;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->populateFromPagerAdapter()V

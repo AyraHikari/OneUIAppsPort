@@ -39,27 +39,27 @@
     return-object p0
 
     :pswitch_0
-    const-string p0, "sha512"
+    const-string/jumbo p0, "sha512"
 
     return-object p0
 
     :pswitch_1
-    const-string p0, "sha384"
+    const-string/jumbo p0, "sha384"
 
     return-object p0
 
     :pswitch_2
-    const-string p0, "sha256"
+    const-string/jumbo p0, "sha256"
 
     return-object p0
 
     :pswitch_3
-    const-string p0, "sha224"
+    const-string/jumbo p0, "sha224"
 
     return-object p0
 
     :pswitch_4
-    const-string p0, "sha1"
+    const-string/jumbo p0, "sha1"
 
     return-object p0
 
@@ -72,8 +72,6 @@
     const-string p0, "none"
 
     return-object p0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -101,17 +99,25 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "("
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p0, ")"
+    move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ")"
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 

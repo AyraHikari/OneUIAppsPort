@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/weather_area" android:background="@drawable/widget_bg_gradient_sunny" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0" android:paddingHorizontal="13.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="100.0" android:layout_weight="@integer/aesthetic_horizontal_percent_current_temp_nx2_land">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="@integer/aesthetic_horizontal_percent_current_temp_nx2_land" android:layout_weight="@integer/aesthetic_vertical_percent_current_temp_nx2_land">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/widget_current_weather_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_partly_sunny" android:scaleType="fitStart" android:adjustViewBounds="true" />
+                    </RelativeLayout>
+                    <TextView android:gravity="start|center" android:id="@id/widget_current_temp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="23°" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" android:layout_marginStart="5.0dip" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/aesthetic_weather_temp_preview_text_min_size_2x1_land" style="@style/AestheticWidget.TextAppearance.Temperature" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@integer/aesthetic_horizontal_percent_center_margin_nx2_land" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/current_city_area" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="100.0" android:layout_weight="@integer/aesthetic_horizontal_percent_info_nx2_land">
+                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@integer/aesthetic_vertical_percent_city_name_nx2_land">
+                    <TextView android:gravity="end|center" android:id="@id/widget_current_city_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/widget_location" android:layout_weight="1.0" android:textAlignment="viewEnd" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/aesthetic_weather_city_preview_text_min_size_2x1_land" style="@style/AestheticWidget.TextAppearance" />
+                </LinearLayout>
+                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@integer/aesthetic_vertical_percent_city_name_nx2_land">
+                    <TextView android:gravity="end|center" android:id="@id/widget_weather_desc" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/partly_sunny" android:layout_weight="1.0" android:textAlignment="viewEnd" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/aesthetic_weather_city_preview_text_min_size_2x1_land" style="@style/AestheticWidget.TextAppearance" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

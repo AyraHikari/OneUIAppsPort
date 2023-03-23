@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout android:tag="layout/detail_life_content_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/detail_life_contents_top_margin"
+<com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout android:tag="layout/detail_life_content_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/detail_life_contents_top_margin"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/detail_life_contents_content_margin_side" android:layout_marginEnd="@dimen/detail_life_contents_title_end">
@@ -12,4 +12,4 @@
             <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_contents" android:tag="binding_4" android:visibility="visible" android:clipToPadding="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" android:paddingHorizontal="@dimen/detail_life_contents_content_margin_side" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-</com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout>
+</com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout>

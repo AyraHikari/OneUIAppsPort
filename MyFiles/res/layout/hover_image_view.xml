@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/air_view_popup_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/air_view_preview_margin" android:minHeight="@dimen/air_view_preview_min_height" android:elevation="@dimen/air_view_preview_elevation">
+        <ImageView android:id="@id/air_view_preview_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/air_view_preview_min_width" android:minHeight="@dimen/air_view_preview_min_width" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <include android:id="@id/air_button_include_layout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/hover_btn_layout" style="@style/HoverBtnView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -14,47 +14,47 @@
 
 
 # static fields
-.field public static final common_full_open_on_phone:I = 0x7f070028
+.field public static final common_full_open_on_phone:I = 0x7f080029
 
-.field public static final common_google_signin_btn_icon_dark:I = 0x7f070029
+.field public static final common_google_signin_btn_icon_dark:I = 0x7f08002a
 
-.field public static final common_google_signin_btn_icon_dark_focused:I = 0x7f07002a
+.field public static final common_google_signin_btn_icon_dark_focused:I = 0x7f08002b
 
-.field public static final common_google_signin_btn_icon_dark_normal:I = 0x7f07002b
+.field public static final common_google_signin_btn_icon_dark_normal:I = 0x7f08002c
 
-.field public static final common_google_signin_btn_icon_dark_normal_background:I = 0x7f07002c
+.field public static final common_google_signin_btn_icon_dark_normal_background:I = 0x7f08002d
 
-.field public static final common_google_signin_btn_icon_disabled:I = 0x7f07002d
+.field public static final common_google_signin_btn_icon_disabled:I = 0x7f08002e
 
-.field public static final common_google_signin_btn_icon_light:I = 0x7f07002e
+.field public static final common_google_signin_btn_icon_light:I = 0x7f08002f
 
-.field public static final common_google_signin_btn_icon_light_focused:I = 0x7f07002f
+.field public static final common_google_signin_btn_icon_light_focused:I = 0x7f080030
 
-.field public static final common_google_signin_btn_icon_light_normal:I = 0x7f070030
+.field public static final common_google_signin_btn_icon_light_normal:I = 0x7f080031
 
-.field public static final common_google_signin_btn_icon_light_normal_background:I = 0x7f070031
+.field public static final common_google_signin_btn_icon_light_normal_background:I = 0x7f080032
 
-.field public static final common_google_signin_btn_text_dark:I = 0x7f070032
+.field public static final common_google_signin_btn_text_dark:I = 0x7f080033
 
-.field public static final common_google_signin_btn_text_dark_focused:I = 0x7f070033
+.field public static final common_google_signin_btn_text_dark_focused:I = 0x7f080034
 
-.field public static final common_google_signin_btn_text_dark_normal:I = 0x7f070034
+.field public static final common_google_signin_btn_text_dark_normal:I = 0x7f080035
 
-.field public static final common_google_signin_btn_text_dark_normal_background:I = 0x7f070035
+.field public static final common_google_signin_btn_text_dark_normal_background:I = 0x7f080036
 
-.field public static final common_google_signin_btn_text_disabled:I = 0x7f070036
+.field public static final common_google_signin_btn_text_disabled:I = 0x7f080037
 
-.field public static final common_google_signin_btn_text_light:I = 0x7f070037
+.field public static final common_google_signin_btn_text_light:I = 0x7f080038
 
-.field public static final common_google_signin_btn_text_light_focused:I = 0x7f070038
+.field public static final common_google_signin_btn_text_light_focused:I = 0x7f080039
 
-.field public static final common_google_signin_btn_text_light_normal:I = 0x7f070039
+.field public static final common_google_signin_btn_text_light_normal:I = 0x7f08003a
 
-.field public static final common_google_signin_btn_text_light_normal_background:I = 0x7f07003a
+.field public static final common_google_signin_btn_text_light_normal_background:I = 0x7f08003b
 
-.field public static final googleg_disabled_color_18:I = 0x7f07005c
+.field public static final googleg_disabled_color_18:I = 0x7f08006d
 
-.field public static final googleg_standard_color_18:I = 0x7f07005d
+.field public static final googleg_standard_color_18:I = 0x7f08006e
 
 
 # direct methods

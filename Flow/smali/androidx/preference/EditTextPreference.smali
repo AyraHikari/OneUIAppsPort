@@ -25,7 +25,7 @@
 
     const/4 v0, 0x0
 
-    .line 70
+    .line 68
     invoke-direct {p0, p1, v0}, Landroidx/preference/EditTextPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -34,7 +34,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 65
+    .line 63
     sget v0, Landroidx/preference/R$attr;->editTextPreferenceStyle:I
 
     const v1, 0x1010092
@@ -53,7 +53,7 @@
 
     const/4 v0, 0x0
 
-    .line 60
+    .line 59
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/EditTextPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
@@ -62,17 +62,17 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 1
 
-    .line 46
+    .line 44
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 48
+    .line 46
     sget-object v0, Landroidx/preference/R$styleable;->EditTextPreference:[I
 
     invoke-virtual {p1, p2, v0, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 51
+    .line 49
     sget p2, Landroidx/preference/R$styleable;->EditTextPreference_useSimpleSummaryProvider:I
 
     sget p3, Landroidx/preference/R$styleable;->EditTextPreference_useSimpleSummaryProvider:I
@@ -85,14 +85,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 53
+    .line 51
     invoke-static {}, Landroidx/preference/EditTextPreference$SimpleSummaryProvider;->getInstance()Landroidx/preference/EditTextPreference$SimpleSummaryProvider;
 
     move-result-object p2
 
     invoke-virtual {p0, p2}, Landroidx/preference/EditTextPreference;->setSummaryProvider(Landroidx/preference/Preference$SummaryProvider;)V
 
-    .line 56
+    .line 54
     :cond_0
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -101,7 +101,7 @@
 
 
 # virtual methods
-.method public getOnBindEditTextListener()Landroidx/preference/EditTextPreference$OnBindEditTextListener;
+.method getOnBindEditTextListener()Landroidx/preference/EditTextPreference$OnBindEditTextListener;
     .locals 1
 
     .line 165
@@ -113,7 +113,7 @@
 .method public getText()Ljava/lang/String;
     .locals 1
 
-    .line 99
+    .line 98
     iget-object v0, p0, Landroidx/preference/EditTextPreference;->mText:Ljava/lang/String;
 
     return-object v0
@@ -122,7 +122,7 @@
 .method protected onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 0
 
-    .line 104
+    .line 103
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -212,7 +212,7 @@
 .method protected onSetInitialValue(Ljava/lang/Object;)V
     .locals 0
 
-    .line 109
+    .line 108
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroidx/preference/EditTextPreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
@@ -236,28 +236,28 @@
 .method public setText(Ljava/lang/String;)V
     .locals 1
 
-    .line 79
+    .line 77
     invoke-virtual {p0}, Landroidx/preference/EditTextPreference;->shouldDisableDependents()Z
 
     move-result v0
 
-    .line 81
+    .line 79
     iput-object p1, p0, Landroidx/preference/EditTextPreference;->mText:Ljava/lang/String;
 
-    .line 83
+    .line 81
     invoke-virtual {p0, p1}, Landroidx/preference/EditTextPreference;->persistString(Ljava/lang/String;)Z
 
-    .line 85
+    .line 83
     invoke-virtual {p0}, Landroidx/preference/EditTextPreference;->shouldDisableDependents()Z
 
     move-result p1
 
     if-eq p1, v0, :cond_0
 
-    .line 87
+    .line 85
     invoke-virtual {p0, p1}, Landroidx/preference/EditTextPreference;->notifyDependencyChange(Z)V
 
-    .line 90
+    .line 88
     :cond_0
     invoke-virtual {p0}, Landroidx/preference/EditTextPreference;->notifyChanged()V
 
@@ -267,7 +267,7 @@
 .method public shouldDisableDependents()Z
     .locals 1
 
-    .line 114
+    .line 113
     iget-object v0, p0, Landroidx/preference/EditTextPreference;->mText:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z

@@ -102,6 +102,14 @@
 # virtual methods
 .method public addOnLoadedListener(Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$OnLoadedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 76
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader;->listenerLock:Ljava/lang/Object;
@@ -154,13 +162,11 @@
     .line 62
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader;->mThumbnailThread:[Landroid/os/HandlerThread;
 
-    aget-object v1, v1, v0
+    aget-object v2, v1, v0
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     .line 63
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader;->mThumbnailThread:[Landroid/os/HandlerThread;
-
     aget-object v1, v1, v0
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->interrupt()V
@@ -221,7 +227,11 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -279,6 +289,14 @@
 
 .method public loadPackageIconAsync(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 111
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader;->mThumbnailHandler:[Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$ThumbnailHandler;
@@ -331,6 +349,14 @@
 
 .method public loadThumbnailAsync(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 97
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader;->mThumbnailHandler:[Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$ThumbnailHandler;
@@ -383,6 +409,14 @@
 
 .method public onLoaded(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 90
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader;->listenerLock:Ljava/lang/Object;
@@ -433,6 +467,14 @@
 
 .method public removeOnLoadedListener(Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader$OnLoadedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 83
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/ThumbnailLoader;->listenerLock:Ljava/lang/Object;

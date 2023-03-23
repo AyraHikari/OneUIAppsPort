@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 178
+    .line 193
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,12 +45,20 @@
 # virtual methods
 .method public onSystemUiVisibilityChange(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 
     and-int/lit8 p1, p1, 0x4
 
     if-nez p1, :cond_0
 
-    .line 184
+    .line 199
     new-instance p1, Landroid/os/Handler;
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
@@ -53,7 +69,7 @@
 
     invoke-direct {p1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 185
+    .line 200
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$1$1;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$1$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$1;)V
@@ -64,7 +80,7 @@
 
     goto :goto_0
 
-    .line 192
+    .line 207
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 

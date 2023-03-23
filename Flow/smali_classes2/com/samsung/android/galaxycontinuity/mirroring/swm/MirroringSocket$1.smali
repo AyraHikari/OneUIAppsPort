@@ -30,8 +30,22 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;I[BI)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$leng",
+            "val$data",
+            "val$offset"
+        }
+    .end annotation
 
-    .line 234
+    .line 243
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     iput p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->val$leng:I
@@ -50,7 +64,7 @@
 .method public run()V
     .locals 4
 
-    .line 238
+    .line 247
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -62,7 +76,7 @@
 
     return-void
 
-    .line 241
+    .line 250
     :cond_0
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->val$leng:I
 
@@ -70,14 +84,16 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 242
+    .line 251
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "start a new stream "
+    const-string/jumbo v1, "start a new stream "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->val$data:[B
 
@@ -87,13 +103,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 245
+    .line 254
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -109,7 +127,7 @@
 
     if-nez v0, :cond_2
 
-    .line 246
+    .line 255
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->access$200(Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
@@ -131,10 +149,10 @@
     :catch_0
     move-exception v0
 
-    .line 249
+    .line 258
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 250
+    .line 259
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->access$200(Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;

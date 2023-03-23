@@ -15,6 +15,13 @@
 .field private static sResourcesImplFieldFetched:Z
 
 .field private static sThemedResourceCacheClazz:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 .field private static sThemedResourceCacheClazzFetched:Z
 
@@ -35,9 +42,17 @@
 
 .method static flush(Landroid/content/res/Resources;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "resources"
+        }
+    .end annotation
 
     .line 46
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
@@ -47,7 +62,7 @@
 
     .line 49
     :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
@@ -60,7 +75,7 @@
 
     .line 51
     :cond_1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
@@ -73,7 +88,7 @@
 
     .line 53
     :cond_2
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
@@ -89,6 +104,14 @@
 
 .method private static flushLollipops(Landroid/content/res/Resources;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "resources"
+        }
+    .end annotation
 
     .line 60
     sget-boolean v0, Landroidx/appcompat/app/ResourcesFlusher;->sDrawableCacheFieldFetched:Z
@@ -172,6 +195,14 @@
 
 .method private static flushMarshmallows(Landroid/content/res/Resources;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "resources"
+        }
+    .end annotation
 
     .line 84
     sget-boolean v0, Landroidx/appcompat/app/ResourcesFlusher;->sDrawableCacheFieldFetched:Z
@@ -254,6 +285,14 @@
 
 .method private static flushNougats(Landroid/content/res/Resources;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "resources"
+        }
+    .end annotation
 
     .line 113
     sget-boolean v0, Landroidx/appcompat/app/ResourcesFlusher;->sResourcesImplFieldFetched:Z
@@ -407,6 +446,14 @@
 
 .method private static flushThemedResourcesCache(Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "cache"
+        }
+    .end annotation
 
     .line 166
     sget-boolean v0, Landroidx/appcompat/app/ResourcesFlusher;->sThemedResourceCacheClazzFetched:Z

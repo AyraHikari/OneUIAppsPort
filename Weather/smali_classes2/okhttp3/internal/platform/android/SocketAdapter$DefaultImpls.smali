@@ -34,7 +34,7 @@
 
     const-string p0, "sslSocketFactory"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -46,7 +46,7 @@
 
     const-string p0, "sslSocketFactory"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 

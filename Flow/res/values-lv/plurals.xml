@@ -8,18 +8,9 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Reģistrējiet un pārvaldiet līdz pat %d datoriem vai planšetdatoriem programmā Samsung Flow.
-
-Ar tālruni vienlaikus var savienot tikai vienu datoru vai planšetdatoru. Kad reģistrētie datori vai planšetdatori mēģinās izveidot savienojumu ar tālruni, jums būs jāizvēlas viens no tiem."</item>
-        <item quantity="zero">"Reģistrējiet un pārvaldiet līdz pat %d datoriem vai planšetdatoriem programmā Samsung Flow.
-
-Ar tālruni vienlaikus var savienot tikai vienu datoru vai planšetdatoru. Kad reģistrētie datori vai planšetdatori mēģinās izveidot savienojumu ar tālruni, jums būs jāizvēlas viens no tiem."</item>
-        <item quantity="one">"Reģistrējiet un pārvaldiet līdz pat %d datoram vai planšetdatoram programmā Samsung Flow.
-
-Ar tālruni vienlaikus var savienot tikai vienu datoru vai planšetdatoru. Kad reģistrētie datori vai planšetdatori mēģinās izveidot savienojumu ar tālruni, jums būs jāizvēlas viens no tiem."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d jauni paziņojumi</item>
+        <item quantity="zero">%d jaunu paziņojumu</item>
+        <item quantity="one">%d jauns paziņojums</item>
     </plurals>
 </resources>

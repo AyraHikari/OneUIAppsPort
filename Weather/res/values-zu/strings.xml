@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Ngena ngemvume</string>
     <string name="common_signin_button_text_long">Ngena ngemvume nge-Google</string>
     <string name="copy">Kopisha</string>
-    <string name="copy_toast_msg">Isixhumanisi sikopishelwe ku-clipboard</string>
     <string name="error_icon_content_description">Iphutha</string>
     <string name="expand_button_title">Okuthuthukisiwe</string>
     <string name="exposed_dropdown_menu_content_description">Bonisa imenyu yokudonsela phansi</string>
-    <string name="fallback_menu_item_copy_link">Kopisha isixhumanisi</string>
-    <string name="fallback_menu_item_open_in_browser">Vula kusiphequluli</string>
-    <string name="fallback_menu_item_share_link">Yabelana ngesixhumanisi</string>
     <string name="icon_content_description">Isithonjana sebhokisi</string>
     <string name="item_view_role_description">Ithebhu</string>
     <string name="material_clock_toggle_content_description">Khetha u-AM noma u-PM</string>

@@ -6,7 +6,6 @@
     <item android:id="@id/menu_connect_to_phone" android:title="@string/connect_to_phone" />
     <item android:id="@id/menu_managedevice" android:title="@string/manage_pcs_title" />
     <item android:id="@id/menu_settings" android:title="@string/settings" />
-    <item android:id="@id/menu_help" android:title="@string/help" />
     <item android:id="@id/menu_notices" android:title="@string/notices" />
     <item android:id="@id/menu_contact_us" android:title="@string/help_contact_us" />
 </menu>

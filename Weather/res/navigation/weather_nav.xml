@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation android:id="@id/main_nav" app:startDestination="@id/main"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="Main" android:name="com.sec.android.daemonapp.main.MainFragment" android:id="@id/main">
-        <action android:id="@id/action_main_to_refresh" app:destination="@id/refresh" app:popUpTo="@id/main_nav" app:popUpToInclusive="true" />
+    <fragment android:label="Main" android:name="com.sec.android.daemonapp.app.main.MainFragment" android:id="@id/main">
+        <action android:id="@id/action_main_to_deeplink" app:destination="@id/deeplink" app:popUpTo="@id/main_nav" app:popUpToInclusive="true" />
     </fragment>
-    <fragment android:label="Detail" android:name="com.sec.android.daemonapp.detail.fragment.DetailFragment" android:id="@id/detail">
+    <fragment android:label="Detail" android:name="com.sec.android.daemonapp.app.detail.fragment.DetailFragment" android:id="@id/detail">
         <action android:id="@id/action_detail_to_location" app:destination="@id/locations" />
         <action android:id="@id/action_detail_to_search" app:destination="@id/search" />
         <action android:id="@id/action_detail_to_setting" app:destination="@id/settings_nav" />
@@ -12,31 +12,43 @@
         <action android:id="@id/action_detail_to_helpFragment" app:destination="@id/help" />
         <argument android:name="location_key" android:defaultValue="" app:argType="string" app:nullable="true" />
     </fragment>
-    <fragment android:label="Locations" android:name="com.sec.android.daemonapp.location.LocationsFragment" android:id="@id/locations">
+    <fragment android:label="Locations" android:name="com.sec.android.daemonapp.app.location.LocationsFragment" android:id="@id/locations">
         <action android:id="@id/action_location_to_search" app:destination="@id/search" />
         <action android:id="@id/action_location_to_helpFragment" app:destination="@id/help" />
     </fragment>
-    <fragment android:label="Search" android:name="com.sec.android.daemonapp.search.SearchFragment" android:id="@id/search">
+    <fragment android:label="Search" android:name="com.sec.android.daemonapp.app.search.SearchFragment" android:id="@id/search">
         <action android:id="@id/action_search_to_location" app:destination="@id/locations" app:popUpTo="@id/locations" app:popUpToInclusive="true" />
     </fragment>
-    <fragment android:label="HowToUseFragment" android:name="com.sec.android.daemonapp.howtouse.HowToUseFragment" android:id="@id/how_to_use" />
-    <fragment android:label="HelpFragment" android:name="com.sec.android.daemonapp.help.HelpFragment" android:id="@id/help" />
+    <fragment android:label="HowToUseFragment" android:name="com.sec.android.daemonapp.app.howtouse.HowToUseFragment" android:id="@id/how_to_use" />
+    <fragment android:label="HelpFragment" android:name="com.sec.android.daemonapp.app.help.HelpFragment" android:id="@id/help" />
     <navigation android:id="@id/settings_nav" app:startDestination="@id/settings">
-        <fragment android:label="Settings" android:name="com.sec.android.daemonapp.setting.settings.SettingsFragment" android:id="@id/settings">
+        <fragment android:label="Settings" android:name="com.sec.android.daemonapp.app.setting.settings.SettingsFragment" android:id="@id/settings">
             <action android:id="@id/action_settings_to_eula" app:destination="@id/eula" />
             <action android:id="@id/action_settings_to_about" app:destination="@id/about" />
+            <action android:id="@id/action_settings_to_permission" app:destination="@id/app_permission" />
+            <action android:id="@id/action_settings_to_history" app:destination="@id/history" />
+            <action android:id="@id/action_settings_to_refresh_on_the_go" app:destination="@id/auto_refresh_on_the_go_setting" />
         </fragment>
-        <fragment android:label="About" android:name="com.sec.android.daemonapp.setting.about.AboutFragment" android:id="@id/about">
+        <fragment android:label="About" android:name="com.sec.android.daemonapp.app.setting.about.AboutFragment" android:id="@id/about">
             <action android:id="@id/action_about_to_licence" app:destination="@id/open_source_license" />
-            <action android:id="@id/action_about_to_permission" app:destination="@id/app_permission" />
         </fragment>
-        <fragment android:label="AppPermission" android:name="com.sec.android.daemonapp.setting.about.AppPermissionFragment" android:id="@id/app_permission" />
+        <fragment android:label="AppPermission" android:name="com.sec.android.daemonapp.app.setting.about.AppPermissionFragment" android:id="@id/app_permission" />
         <fragment android:label="EulaFragment" android:name="com.samsung.android.weather.app.common.setting.eula.EulaFragment" android:id="@id/eula" />
-        <fragment android:label="OpenSourceLicenseFragment" android:name="com.sec.android.daemonapp.setting.opensource.OpenSourceLicenseFragment" android:id="@id/open_source_license" />
+        <fragment android:label="AutoRefreshOnTheGoSettingFragment" android:name="com.sec.android.daemonapp.app.setting.pa.AutoRefreshOnTheGoSettingFragment" android:id="@id/auto_refresh_on_the_go_setting">
+            <argument android:name="from_tips" android:defaultValue="false" app:argType="boolean" />
+        </fragment>
+        <fragment android:label="OpenSourceLicenseFragment" android:name="com.sec.android.daemonapp.app.setting.opensource.OpenSourceLicenseFragment" android:id="@id/open_source_license" />
+        <fragment android:label="HistoryFragment" android:name="com.sec.android.daemonapp.app.setting.history.HistoryFragment" android:id="@id/history" />
     </navigation>
-    <fragment android:label="Refresh" android:name="com.sec.android.daemonapp.main.RefreshFragment" android:id="@id/refresh" />
-    <fragment android:label="Get Current" android:name="com.sec.android.daemonapp.main.GetCurrentFragment" android:id="@id/get_current" />
+    <fragment android:label="DeepLink" android:name="com.sec.android.daemonapp.app.main.DeepLinkFragment" android:id="@id/deeplink">
+        <argument android:name="mode" android:defaultValue="" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="Get Current" android:name="com.sec.android.daemonapp.app.main.GetCurrentFragment" android:id="@id/get_current" />
     <fragment android:label="EulaFragment" android:name="com.samsung.android.weather.app.common.setting.eula.EulaFragment" android:id="@id/eula" />
+    <fragment android:label="AutoRefreshOnTheGoSettingFragment" android:name="com.sec.android.daemonapp.app.setting.pa.AutoRefreshOnTheGoSettingFragment" android:id="@id/global_auto_refresh_on_the_go_setting">
+        <argument android:name="from_tips" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment android:label="HistoryFragment" android:name="com.sec.android.daemonapp.app.setting.history.HistoryFragment" android:id="@id/history" />
     <action android:id="@id/action_global_to_detail" app:destination="@id/detail" app:popUpTo="@id/main_nav" app:popUpToInclusive="true">
         <argument android:name="location_key" android:defaultValue="" app:argType="string" />
     </action>
@@ -62,5 +74,9 @@
     </action>
     <action android:id="@id/action_global_to_get_current" app:destination="@id/get_current" app:popUpTo="@id/main_nav" app:popUpToInclusive="true" />
     <action android:id="@id/action_global_to_eula" app:destination="@id/eula" app:popUpTo="@id/main_nav" app:popUpToInclusive="true" />
-    <action android:id="@id/action_global_to_refresh" app:destination="@id/refresh" app:popUpTo="@id/main_nav" app:popUpToInclusive="true" />
+    <action android:id="@id/action_global_to_deeplink" app:destination="@id/deeplink" app:popUpTo="@id/main_nav" app:popUpToInclusive="true" />
+    <action android:id="@id/action_global_to_auto_refresh_on_the_go" app:destination="@id/global_auto_refresh_on_the_go_setting" app:popUpTo="@id/main_nav" app:popUpToInclusive="true">
+        <argument android:name="from_tips" android:defaultValue="false" app:argType="boolean" />
+    </action>
+    <action android:id="@id/action_global_to_history" app:destination="@id/history" app:popUpTo="@id/main_nav" app:popUpToInclusive="true" />
 </navigation>

@@ -19,6 +19,22 @@
 
 .method public static getDayLengthOf(Ldalvik/system/PathClassLoader;Ljava/lang/Object;IIZ)I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarTables",
+            "year",
+            "month",
+            "leap"
+        }
+    .end annotation
 
     const/4 v0, 0x3
 
@@ -100,29 +116,39 @@
 
 .method public static getField_INDEX_OF_LEAP_MONTH(Ldalvik/system/PathClassLoader;Ljava/lang/Object;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarTables"
+        }
+    .end annotation
 
     const-string v0, "com.samsung.android.calendar.secfeature.lunarcalendar.SolarLunarTables"
 
     const-string v1, "INDEX_OF_LEAP_MONTH"
 
-    .line 130
+    .line 133
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslPathClassReflector;->getField(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 132
+    .line 136
     invoke-static {p1, p0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 133
+    .line 137
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 134
+    .line 138
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -139,29 +165,39 @@
 
 .method public static getField_START_OF_LUNAR_YEAR(Ldalvik/system/PathClassLoader;Ljava/lang/Object;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarTables"
+        }
+    .end annotation
 
     const-string v0, "com.samsung.android.calendar.secfeature.lunarcalendar.SolarLunarTables"
 
     const-string v1, "START_OF_LUNAR_YEAR"
 
-    .line 94
+    .line 95
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslPathClassReflector;->getField(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 96
+    .line 98
     invoke-static {p1, p0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 97
+    .line 99
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 98
+    .line 100
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -178,29 +214,39 @@
 
 .method public static getField_WIDTH_PER_YEAR(Ldalvik/system/PathClassLoader;Ljava/lang/Object;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarTables"
+        }
+    .end annotation
 
     const-string v0, "com.samsung.android.calendar.secfeature.lunarcalendar.SolarLunarTables"
 
     const-string v1, "WIDTH_PER_YEAR"
 
-    .line 112
+    .line 114
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslPathClassReflector;->getField(Ldalvik/system/PathClassLoader;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 114
+    .line 117
     invoke-static {p1, p0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 115
+    .line 118
     instance-of p1, p0, Ljava/lang/Integer;
 
     if-eqz p1, :cond_0
 
-    .line 116
+    .line 119
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -217,6 +263,18 @@
 
 .method public static getLunar(Ldalvik/system/PathClassLoader;Ljava/lang/Object;I)B
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarTables",
+            "index"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -241,7 +299,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 78
+    .line 79
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -252,12 +310,12 @@
 
     move-result-object p0
 
-    .line 79
+    .line 80
     instance-of p1, p0, Ljava/lang/Byte;
 
     if-eqz p1, :cond_0
 
-    .line 80
+    .line 81
     check-cast p0, Ljava/lang/Byte;
 
     invoke-virtual {p0}, Ljava/lang/Byte;->byteValue()B
@@ -274,6 +332,20 @@
 
 .method public static isLeapMonth(Ldalvik/system/PathClassLoader;Ljava/lang/Object;II)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pathClassLoader",
+            "solarLunarTables",
+            "year",
+            "month"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 

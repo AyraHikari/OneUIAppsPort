@@ -60,6 +60,7 @@
     <string name="air_quality">Luftkvalitet</string>
     <string name="air_quality_next_tts">Senere daglige luftkvalitetsprognoser</string>
     <string name="air_quality_previous_tts">Tidligere daglige luftkvalitetsprognoser</string>
+    <string name="alert_title">Varsel om barske vejrforhold</string>
     <string name="all_added_cities">Alle tilføjede byer</string>
     <string name="allow">Tillad</string>
     <string name="allow_permission_in_settings">Du skal give tilladelse under Indstillinger for at bruge denne funktion.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Handling ikke understøttet.</string>
     <string name="apply_daylight_saving_time">Vil du anvende sommertid?</string>
     <string name="as_possible_after_verification">Rapporten er blevet sendt. Bynavnet vil blive ændret så hurtigt som muligt, efter det er blevet bekræftet.</string>
+    <string name="auto_refresh_on_screen_description">Få automatisk opdateret vejroplysninger hver time. Når dette er aktiveret, kan du ikke opdatere manuelt.</string>
+    <string name="auto_refresh_on_the_go">Automatisk opdatering på farten</string>
+    <string name="auto_refresh_on_the_go_advanced">Avanceret</string>
+    <string name="auto_refresh_on_the_go_description">Få hyppigere vejropdateringer, når du kører, cykler, løber eller går. Når dette er aktiveret, kan du ikke opdatere manuelt.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Få hyppigere vejropdateringer, når du kører, cykler, løber eller går.</string>
     <string name="bottomsheet_action_expand_halfway">Udvid halvdelen</string>
     <string name="btn_report">Rappo.</string>
     <string name="button_finish">Udfør</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Dobbelttryk for at få flere oplysninger.</string>
     <string name="china">Kina</string>
     <string name="cities_button">Byer</string>
+    <string name="city_added">Byen er tilføjet.</string>
     <string name="city_list_text">Byer</string>
     <string name="clear">Klart</string>
     <string name="clear_text_end_icon_content_description">Ryd tekst</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Din enheds placeringsoplysninger sendes til indholdsudbyderen, så du kan få oplysninger om det lokale vejr.</string>
     <string name="contents_error_msg">Denne tjeneste er ikke tilgængelig lige nu. Prøv igen senere.</string>
     <string name="copy">Kopiér</string>
-    <string name="copy_toast_msg">Linket er kopieret til udklipsholderen</string>
     <string name="correct_city_name">Ret bynavn</string>
     <string name="couldnt_find_location">Det var ikke muligt at finde placeringen</string>
     <string name="cover_screen_top_sync_dialog_text">Vil du angive den samme placering på hovedskærmen?</string>
@@ -161,7 +167,7 @@
     <string name="deny">Afvis</string>
     <string name="detail">Detaljer</string>
     <string name="dialog_Entire_cities_deleted">Alle byer vil blive slettet, og oplysninger om vejret vises ikke i widget.</string>
-    <string name="dialog_apps_icon_message">Ikonet for vejr-widgetten tilføjes på applikationslisten.</string>
+    <string name="dialog_apps_icon_message">Ikonet for widgetten Vejr tilføjes på applikationslisten.</string>
     <string name="dialog_cancel_button">Annuller</string>
     <string name="dialog_cities_deleted">%d byer vil blive slettet.</string>
     <string name="dialog_connect_button">Tilslut</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Element sluppet i position %d.</string>
     <string name="dragndroplist_drag_start">Er begyndt at trække element i position %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Element i position %d kan ikke trækkes.</string>
+    <string name="drawer_tips">Tips om %s</string>
     <string name="drawer_tips_message">Tryk her for at tilføje, slette og omarrangere placeringer. Du kan også tilføje flere widgets for at vise forskellige placeringer på startskærmen.</string>
     <string name="drawer_tips_message_1">Tryk på Administrer placeringer nederst i denne menu for at tilføje, slette og flytte rundt på placeringer.</string>
     <string name="drawer_tips_message_2">Du kan føje mere end én widget til startskærmen for at vise forskellige placeringer samtidigt.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Avanceret</string>
     <string name="exposed_dropdown_menu_content_description">Vis rullemenuen</string>
     <string name="failed_to_send_report">Kunne ikke sende rapport</string>
-    <string name="fallback_menu_item_copy_link">Kopiér link</string>
-    <string name="fallback_menu_item_open_in_browser">Åbn i browser</string>
-    <string name="fallback_menu_item_share_link">Del link</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Favoritplacering</string>
     <string name="feel_like_pd_minus_temp">Føles som -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Video med vejrudsigt</string>
     <string name="format_km_per_hour">%s km/t</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Fre</string>
     <string name="general">Generelt</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Få tilpasset indhold, der er baseret på, hvordan du bruger din telefon.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Få tilpasset indhold, der er baseret på, hvordan du bruger din tablet.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">få vejroplysninger, herunder din aktuelle placering, fra Vejr</string>
     <string name="go_to_website">Gå til websted</string>
     <string name="goto_apps">Ny opdatering tilgængelig. Installer nu?</string>
     <string name="goto_apps_later">Senere</string>
     <string name="goto_apps_now">Nu</string>
     <string name="goto_apps_update_title">Advarsler om nyt indhold</string>
     <string name="header_tts">Overskrift</string>
+    <string name="heavy">Kraftig</string>
     <string name="heavy_rain">Kraftig regn</string>
     <string name="heavy_rain_followed_by_intense_heat">Kraftig regn efterfulgt af intens varme</string>
     <string name="heavy_rain_followed_by_light_rain">Kraftig regn efterfulgt af intens varme</string>
@@ -264,7 +271,7 @@
     <string name="hourly_next_tts">Senere timevejrudsigter</string>
     <string name="hourly_previous_tts">Tidligere timevejrudsigter</string>
     <string name="how_to_add_delete_set_location_as_favorite">Tilføj, slet eller angiv en placering som din favorit.</string>
-    <string name="how_to_add_hold_a_blank">Sådan føjer du Vejr-widgetten til startskærmen:</string>
+    <string name="how_to_add_hold_a_blank">Sådan føjer du widgetten Vejr til startskærmen:</string>
     <string name="how_to_change_the_location_appearance">Hvis du vil ændre widgettens placering eller udseende, skal du trykke og holde på Indstillinger.</string>
     <string name="how_to_favorite_location_used_in_location">Din favoritplacering anvendes i meddelelser, kalender og Always On Display.</string>
     <string name="how_to_press_and_hold_space">Tryk og hold på et tomt sted på startskærmen, og tryk så på Widgets.</string>
@@ -275,7 +282,7 @@
     <string name="how_to_slide_finger">Glid fingeren for at vælge en placering, og løft derefter fingeren for at anbringe widgetten. Hvis du har mere end én side på startskærmen, kan du flytte kanten af skærmen for at rulle til venstre eller højre.</string>
     <string name="how_to_tap_manage_locations">Tryk på Administrer placeringer.</string>
     <string name="how_to_tap_menu">Tryk på menuikonet.</string>
-    <string name="how_to_tap_the_weather_widget">Tryk på menuen for Vejr-widgetten.</string>
+    <string name="how_to_tap_the_weather_widget">Tryk på menuen for widgetten Vejr.</string>
     <string name="how_to_use">Sådan bruges</string>
     <string name="how_to_use_app">App</string>
     <string name="how_to_use_widget">Widget</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Synlighed</string>
     <string name="life_index_wind">Vind</string>
     <string name="life_index_wind_force">Vindhastighed</string>
+    <string name="light">Let</string>
     <string name="light_rain_followed_by_heavy_rain">Let regn efterfulgt af kraftig regn</string>
     <string name="light_rain_with_some_heavy_rain">Let regn med nogen kraftig regn</string>
     <string name="link_tts">Link</string>
@@ -464,6 +472,7 @@ mislykkedes."</string>
     <string name="message_no_search_result_z">Ingen resultater fundet.</string>
     <string name="message_service_not_available">Tjenesten er ikke tilgængelig nu.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Man</string>
     <string name="more">Mere</string>
     <string name="more_cuntact_us">Kontakt os</string>
     <string name="more_information">Mere</string>
@@ -508,7 +517,17 @@ mislykkedes."</string>
     <string name="navigation_drawer_tips_message">Tryk her for at ændre standardvejrplaceringen og administrere alle dine placeringer.</string>
     <string name="new_version_available">Der findes en ny version af %s.</string>
     <string name="new_version_is_available">En ny version er tilgængelig.</string>
+    <string name="news_menu_show_news">Vis nyheder</string>
+    <string name="news_opt_in_banner_title_text">Hold dig opdateret om, hvad der sker, ved at vise nyheder i widgetten Vejr.</string>
+    <string name="news_opt_in_popup_desc_text">Hold dig opdateret om, hvad der sker i verden, ved at vise de seneste overskrifter fra %s i widgetten Vejr.</string>
+    <string name="news_opt_in_popup_title_text">Se nyhederne og vejret i én widget</string>
+    <string name="news_request_agree_text">Tryk for at få nyheder fra %s</string>
+    <string name="news_widget_bubble_text">Få nyheder sammen med vejret.</string>
+    <string name="news_widget_dummy_title">Dagens tophistorie</string>
+    <string name="news_widget_new_dummy_title">De 5 ting, du skal vide her til morgen</string>
+    <string name="news_widget_oobe_text">Tryk her for at tilf. nyheder.</string>
     <string name="next">Næste by</string>
+    <string name="next_btn">Næste</string>
     <string name="next_city">Dobbelttryk for at se vejroplysninger om næste by.</string>
     <string name="night_tts">Nat</string>
     <string name="no_application_available">Ingen applikationer til rådighed.</string>
@@ -517,6 +536,7 @@ mislykkedes."</string>
     <string name="no_weather_information">Ingen vejroplysninger</string>
     <string name="not_in_use">Ikke i brug</string>
     <string name="not_now">Ikke nu</string>
+    <string name="not_now_btn">Ikke nu</string>
     <string name="not_selected">Ikke valgt</string>
     <string name="not_set">Ikke angivet</string>
     <string name="nothing_selected">Intet er valgt.</string>
@@ -525,6 +545,7 @@ mislykkedes."</string>
     <string name="notice_accurate_location_detection_msg_no_path">For den hurtigste og mest nøjagtige placeringstjeneste skal du trykke på INDSTILLINGER og angive Placeringsmetode til GPS, Wi-Fi og mobile netværk.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">For den hurtigste og mest nøjagtige placeringstjeneste skal du trykke på INDSTILLINGER og angive Placeringsmetode til GPS og Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">For at se de lokale vejroplysninger skal du aktivere indstillinger for Placering og sørge for, at tilstanden er angivet til Stor nøjagtighed.</string>
+    <string name="notification_alert_channel_name">Varsel om barske vejrforhold</string>
     <string name="notification_apps_update_channel_name">Opdater meddelelser</string>
     <string name="notification_auto_refresh_channel_name">Automatisk vejropdatering</string>
     <string name="notification_dex_channel_name">Vejr i Samsung DeX</string>
@@ -545,6 +566,7 @@ mislykkedes."</string>
     <string name="open_app">Åbn app</string>
     <string name="open_source_licences">Open source-licenser</string>
     <string name="other_locations">Andre placeringer</string>
+    <string name="partly_sunny">Delvis sol</string>
     <string name="password_toggle_content_description">Vis adgangskode</string>
     <string name="paused">Sat på pause</string>
     <string name="pd_km">%.1f km</string>
@@ -563,10 +585,13 @@ mislykkedes."</string>
     <string name="preference_copied">\"%1$s\" blev kopieret til udklipsholderen.</string>
     <string name="preview">%s-eksempel</string>
     <string name="previous">Forrige by</string>
+    <string name="previous_btn">Forrige</string>
     <string name="previous_city">Dobbelttryk for at se vejroplysninger om forrige by.</string>
     <string name="privacy_policy">Fortrolighedspolitik</string>
     <string name="probability_of_rain_text">Mulighed for regn</string>
     <string name="protect_your_content">Beskyt dit indhold</string>
+    <string name="ps_in">%s tommer</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar og kort</string>
     <string name="rain">Regn</string>
     <string name="rain_followed_by_intense_heat">Regn efterfulgt af intens varme</string>
@@ -604,6 +629,7 @@ mislykkedes."</string>
     <string name="runtime_location_permission_desc">Hvis du vil opdatere vejroplysninger, skal du trykke på INDSTILLINGER, gå til Appoplysninger > Tilladelser, aktivere følgende tilladelser og prøve igen:</string>
     <string name="runtime_location_permission_title">Giv tilladelser</string>
     <string name="runtime_oem_grant_permission_desc">%s-appen har tilladelse til at få adgang til følgende:</string>
+    <string name="sat">Lør</string>
     <string name="save_button">Gem</string>
     <string name="search_menu_title">Søg</string>
     <string name="search_most_searched_for">Mest søgte</string>
@@ -631,6 +657,7 @@ mislykkedes."</string>
     <string name="sesl_material_badge_description">Nyt indhold tilgængeligt</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Mere</string>
+    <string name="sesl_preferecne_badge_description">Ny meddelelse</string>
     <string name="sesl_preferencecategory_added_title">Overskrift</string>
     <string name="sesl_search_hint">Søg</string>
     <string name="sesl_searchview_description_clear">Ryd søgefelt</string>
@@ -664,8 +691,8 @@ mislykkedes."</string>
     <string name="setup_wizard_eula_confirm">Jeg accepterer at bruge mine placeringsoplysninger til at se vejrudsigten for min nuværende placering.</string>
     <string name="setup_wizard_get_weather_forecasts">Få vejrudsigter</string>
     <string name="setup_wizard_location_confirm">Jeg accepterer at ændre placeringsmetode til %s for at se vejrudsigten for min nuværende placering.</string>
-    <string name="show_alert_description">Få vejrvarsler og badges på Vejr-widgetten og i appen.</string>
-    <string name="show_alert_description_edge">Få vejrvarsler og badges på Vejr-widgetten, i appen og på Edge-skærmen.</string>
+    <string name="show_alert_description">Få vejrvarsler og badges på widgetten Vejr og i appen.</string>
+    <string name="show_alert_description_edge">Få vejrvarsler og badges på widgetten Vejr, i appen og på Edge-skærmen.</string>
     <string name="show_on_apps_screen">Vis %s på appskærmen</string>
     <string name="show_weather_alert">Vejrvarsler</string>
     <string name="signed_in_as">Logget ind som %s</string>
@@ -696,7 +723,10 @@ mislykkedes."</string>
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Se færre</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Fra</string>
+    <string name="status_on">Til</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Søn</string>
     <string name="sunny">Sol</string>
     <string name="sunny_with_some_clouds">Solrigt med nogle skyer</string>
     <string name="sunny_with_some_heavy_rain">Solrigt med nogen kraftig regn</string>
@@ -709,6 +739,7 @@ mislykkedes."</string>
     <string name="tap_here_to_restore_the_weather">Tryk her for at gendanne vejrdata fra din gamle enhed.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Tryk på PRØV IGEN for at finde din placering igen.</string>
     <string name="tap_setting_message_edge_panel">Aktiver Placering for at få det lokale vejr.</string>
+    <string name="tap_the_settings_icon">Tryk på ikonet Indstillinger.</string>
     <string name="tap_to_get_the_weather">Tryk for at få vejrudsigten</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
@@ -716,6 +747,7 @@ mislykkedes."</string>
     <string name="terms_and_conditions">Vilkår og betingelser</string>
     <string name="the_latest_version">Den nyeste version er allerede installeret.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Dette vil også blive anvendt i meddelelser og Kalender.</string>
+    <string name="thu">Tor</string>
     <string name="tick_box_tts">Afkrydsningsfelt</string>
     <string name="ticked_tts">Markeret</string>
     <string name="time_am">AM</string>
@@ -723,19 +755,25 @@ mislykkedes."</string>
     <string name="times_forecast">Hver time</string>
     <string name="title_select_locations">Vælg placeringer</string>
     <string name="title_theme">Temaer</string>
+    <string name="to_continue_agree_to_updated">Du skal acceptere vores opdaterede %s for at kunne fortsætte.</string>
     <string name="to_get_local_weather_chn">"Din aktuelle placering vil blive sendt til vejrtjenesteudbyderen, så du kan få oplysninger om det lokale vejr. (Se venligst udbyderens %1$sVilkår og betingelser%2$s og %3$sFortrolighedspolitik%4$s).
 Andre apps og tjenester på din enhed kan få adgang til de hentede vejroplysninger for at vise vejret i de pågældende apps.
 For at give dig løbende vejroplysninger, har Vejret adgang til din placering, selv når du ikke bruger appen."</string>
     <string name="today">I dag</string>
+    <string name="try_it_out_btn">Prøv det</string>
+    <string name="tue">Tir</string>
+    <string name="turn_on_to_use_precise_location">For at bruge denne funktion skal du give %s tilladelse til at få adgang til din placering hele tiden og slå Brug nøjagtig placering til. Tryk på Indstillinger, og gå derefter til Tilladelser > Placering.</string>
     <string name="tw_title_weather_broadcast">Udsend</string>
-    <string name="unable_to_check_for_updates">Kan ikke søge efter opdateringer. Der er ingen netværksforbindelse.</string>
+    <string name="unable_to_check_for_updates">Det var ikke muligt at søge efter opdateringer. Prøv igen senere.</string>
     <string name="unable_to_receive_info_msg">Kan ikke modtage oplysninger</string>
     <string name="unticked_tts">Flueben fjernet</string>
     <string name="unused">Ubrugt</string>
     <string name="update">Opdater</string>
     <string name="update_abb8">Opdater</string>
     <string name="update_app">Opdater app</string>
+    <string name="updated_tile_chn">Opdateret: %s</string>
     <string name="updated_tts">%s er blevet opdateret</string>
+    <string name="use_current_location">Brug aktuel placering</string>
     <string name="use_current_location_agree_popup">"Din aktuelle placering vil blive sendt til vejrtjenesteudbyderen, så du kan få oplysninger om det lokale vejr. (Se udbyderens %1$sfortrolighedspolitik%2$s).
 Andre apps og tjenester på din enhed vil muligvis tilgå de hentede vejrdata med henblik på at vise vejroplysningerne i disse apps."</string>
     <string name="use_current_location_and_background_agree_popup">"Din aktuelle placering vil blive sendt til vejrtjenesteudbyderen, så du kan få oplysninger om det lokale vejr. (Se venligst udbyderens %1$sdatabeskyttelsespolitik%2$s.)
@@ -747,9 +785,16 @@ For at give dig løbende vejroplysninger, har Vejret adgang til din placering, s
 Du kan deaktivere brugen af din placering ved at gå ind i Vejr-appens indstillinger."</string>
     <string name="use_current_location_body_msg_chn">"Læs omhyggeligt, inden du bruger “Vejr”:
 Hvis du vil have oplysninger om vejret for din aktuelle placering, skal du give tredjepartstjenesteudbyderen tilladelse til at have kontinuerlig (selv når du ikke bruger tjenesten) adgang til din enhed og indsamle visse oplysninger, som angivet nedenfor. Læs omhyggeligt og forstå tredjepartstjenesteudbyderens %1$svilkår og betingelser%2$s og %3$sdatabeskyttelsespolitik%4$s, før du giver en sådan tilladelse. Du kan trække din tilladelse tilbage ved at slå “Placering” fra i menuen Indstillinger. Andre apps og tjenester på din enhed vil muligvis tilgå de hentede vejroplysninger med henblik på at vise vejroplysningerne i de pågældende apps og tjenester."</string>
+    <string name="use_current_location_body_msg_kor">"Din nuværende placering bliver registreret og brugt til at levere nogle af funktionerne i appen Vejr, f.eks. til at hente oplysninger om det lokale vejr på din placering.
+
+For at levere kontinuerlige vejroplysninger vil denne app regelmæssigt behandle oplysningerne om din placering, selv når du ikke bruger appen. Hvis du fortsætter, accepterer du, at der indsamles og behandles oplysninger om din placering til ovenstående formål.
+
+Du kan stoppe denne indsamling og brug af placeringsoplysninger i indstillingerne for appen Vejr."</string>
     <string name="use_current_location_body_purpose">Formål</string>
     <string name="use_current_location_body_purpose_content">For at tilvejebringe vejroplysninger for din aktuelle placering</string>
     <string name="use_current_location_body_search_provider">Tjenesteudbyder</string>
+    <string name="use_current_location_continue">Fortsæt</string>
+    <string name="use_current_location_not_now">Ikke nu</string>
     <string name="use_current_location_off_alert_popup">Oplysninger om aktuel placering bliver fjernet.</string>
     <string name="useful_informations">Livstips og andre rapporter</string>
     <string name="using_as">Bruger som %s</string>
@@ -857,9 +902,11 @@ Hvis du vil have oplysninger om vejret for din aktuelle placering, skal du give 
     <string name="weather_tip">Vejrtips</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Ons</string>
     <string name="weekly_forecast">Dagligt</string>
     <string name="widget_background">Widget-baggrund</string>
     <string name="widget_empty_text">Tryk for vejrinfo</string>
+    <string name="widget_location">Bynavn</string>
     <string name="widget_name_4x1">Vejr og Ur</string>
     <string name="widget_setting">Indstillinger</string>
     <string name="widget_setting_background_color">Baggrundsfarve</string>
@@ -869,7 +916,7 @@ Hvis du vil have oplysninger om vejret for din aktuelle placering, skal du give 
     <string name="widget_setting_dark_mode_disable_warning">Det er ikke muligt at bruge Mørketilstand, når der bruges et tema.</string>
     <string name="widget_setting_night_mode_sub_title">Skift automatisk til et mørkt tema, når Aftentilstand er aktiveret.</string>
     <string name="widget_setting_night_mode_title">Match med Mørketilstand</string>
-    <string name="widget_setting_visibility_warning">Du kan justere vejr-widgettens baggrundsfarve og gennemsigtighed i indstillingerne.</string>
+    <string name="widget_setting_visibility_warning">Du kan justere widgetten Vejrs baggrundsfarve og gennemsigtighed i indstillingerne.</string>
     <string name="widget_setting_white">Hvid</string>
     <string name="widget_settings">Widgetindstillinger</string>
     <string name="widget_settings_add">Tilføj</string>

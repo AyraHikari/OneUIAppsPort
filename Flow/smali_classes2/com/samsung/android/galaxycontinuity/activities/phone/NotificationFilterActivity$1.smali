@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 180
+    .line 187
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
-    .line 183
+    .line 190
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;
@@ -55,12 +71,12 @@
 
     xor-int/2addr p1, v0
 
-    .line 185
+    .line 192
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {v1, p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$100(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;Z)V
 
-    .line 187
+    .line 194
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v1
@@ -69,7 +85,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 189
+    .line 196
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object p1
@@ -80,12 +96,12 @@
 
     if-nez p1, :cond_0
 
-    .line 190
+    .line 197
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$202(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;Z)Z
 
-    .line 191
+    .line 198
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)V

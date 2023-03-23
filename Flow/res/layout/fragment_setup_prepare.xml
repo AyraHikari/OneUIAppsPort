@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="65.0dip">
-        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-                <TextView android:textSize="@dimen/setup_title_text_size" android:textColor="@color/setup_title_text_color" android:id="@id/preparing" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_preparing" android:textAlignment="center" android:layout_marginStart="@dimen/setup_panel_start_margin" android:layout_marginEnd="@dimen/setup_panel_end_margin" />
-                <ImageView android:layout_gravity="center_horizontal" android:layout_width="312.0dip" android:layout_height="184.0dip" android:layout_marginTop="45.0dip" android:src="@drawable/welcome_image_tablet_phone_pc" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
-</FrameLayout>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/welcome_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/top_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintHeight_percent="0.142" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="34.0sp" android:textStyle="bold" android:textColor="@color/welcome_title_text_color" android:id="@id/prepare_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/app_name" android:fontFamily="sec-roboto-light" android:textAlignment="center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/top_view" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/second_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_percent="0.16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/prepare_title">
+                <View android:id="@id/neededSpace" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_percent="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/auth_desc_color" android:id="@id/preparing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/setup_preparing" android:fontFamily="sec-roboto-light" android:textAlignment="center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView android:id="@id/prepare_image" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/img_welcome_phone_tablet_pc" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="300.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/second_view" />
+            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/basic_dream_sub_description_main_color" android:gravity="center_horizontal" android:id="@id/preparing_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/setup_preparing_detail" android:fontFamily="sec-roboto-light" android:textAlignment="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/prepare_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

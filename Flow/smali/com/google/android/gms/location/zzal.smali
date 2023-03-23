@@ -1,172 +1,50 @@
-.class public final Lcom/google/android/gms/location/zzal;
-.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.class public final synthetic Lcom/google/android/gms/location/zzal;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
-
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lcom/google/android/gms/location/zzal;",
-            ">;"
-        }
-    .end annotation
-.end field
+# interfaces
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
 
 
 # instance fields
-.field private final tag:Ljava/lang/String;
+.field public final synthetic zza:Lcom/google/android/gms/location/FusedLocationProviderClient;
 
-.field private final zzbu:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final zzbv:Landroid/app/PendingIntent;
+.field public final synthetic zzb:Landroid/location/Location;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/google/android/gms/location/zzam;
-
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzam;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/location/zzal;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method constructor <init>(Ljava/util/List;Landroid/app/PendingIntent;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lcom/google/android/gms/location/FusedLocationProviderClient;Landroid/location/Location;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;",
-            "Landroid/app/PendingIntent;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-nez p1, :cond_0
+    iput-object p1, p0, Lcom/google/android/gms/location/zzal;->zza:Lcom/google/android/gms/location/FusedLocationProviderClient;
 
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object p1
-
-    goto :goto_0
-
-    :cond_0
-    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object p1
-
-    :goto_0
-    iput-object p1, p0, Lcom/google/android/gms/location/zzal;->zzbu:Ljava/util/List;
-
-    iput-object p2, p0, Lcom/google/android/gms/location/zzal;->zzbv:Landroid/app/PendingIntent;
-
-    iput-object p3, p0, Lcom/google/android/gms/location/zzal;->tag:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/location/zzal;->zzb:Landroid/location/Location;
 
     return-void
-.end method
-
-.method public static zza(Landroid/app/PendingIntent;)Lcom/google/android/gms/location/zzal;
-    .locals 3
-
-    const-string v0, "PendingIntent can not be null."
-
-    invoke-static {p0, v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    new-instance v0, Lcom/google/android/gms/location/zzal;
-
-    const/4 v1, 0x0
-
-    const-string v2, ""
-
-    invoke-direct {v0, v1, p0, v2}, Lcom/google/android/gms/location/zzal;-><init>(Ljava/util/List;Landroid/app/PendingIntent;Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public static zza(Ljava/util/List;)Lcom/google/android/gms/location/zzal;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)",
-            "Lcom/google/android/gms/location/zzal;"
-        }
-    .end annotation
-
-    const-string v0, "geofence can\'t be null."
-
-    invoke-static {p0, v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
-
-    move-result v0
-
-    xor-int/lit8 v0, v0, 0x1
-
-    const-string v1, "Geofences must contains at least one id."
-
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/Object;)V
-
-    new-instance v0, Lcom/google/android/gms/location/zzal;
-
-    const/4 v1, 0x0
-
-    const-string v2, ""
-
-    invoke-direct {v0, p0, v1, v2}, Lcom/google/android/gms/location/zzal;-><init>(Ljava/util/List;Landroid/app/PendingIntent;Ljava/lang/String;)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 3
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
+    iget-object v0, p0, Lcom/google/android/gms/location/zzal;->zza:Lcom/google/android/gms/location/FusedLocationProviderClient;
 
-    move-result v0
+    iget-object v1, p0, Lcom/google/android/gms/location/zzal;->zzb:Landroid/location/Location;
 
-    iget-object v1, p0, Lcom/google/android/gms/location/zzal;->zzbu:Ljava/util/List;
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    const/4 v2, 0x1
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    const/4 v3, 0x0
+    .line 1
+    new-instance v2, Lcom/google/android/gms/location/zzas;
 
-    invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeStringList(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-direct {v2, v0, p2}, Lcom/google/android/gms/location/zzas;-><init>(Lcom/google/android/gms/location/FusedLocationProviderClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    iget-object v1, p0, Lcom/google/android/gms/location/zzal;->zzbv:Landroid/app/PendingIntent;
-
-    const/4 v2, 0x2
-
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
-
-    iget-object p2, p0, Lcom/google/android/gms/location/zzal;->tag:Ljava/lang/String;
-
-    const/4 v1, 0x3
-
-    invoke-static {p1, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeString(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+    .line 2
+    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/internal/location/zzbe;->zzE(Landroid/location/Location;Lcom/google/android/gms/common/api/internal/IStatusCallback;)V
 
     return-void
 .end method

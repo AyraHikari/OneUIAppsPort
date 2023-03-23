@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow’da %d tagacha kompyuter yoki planshetni ro‘yxatdan o‘tkazing va boshqaring.
-
-Bir vaqtda faqat bitta kompyuter yoki planshet telefoningizga ulanishi mumkin. Ro‘yxatdan o‘tgan kompyuter va planshet telefoningizga ulanishga urinayotganda, ulardan birini tanlashingiz lozim bo‘ladi."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flow’da %d tagacha kompyuter yoki planshetni ro‘yxatdan o‘tkazing va boshqaring.
-
-Bir vaqtda faqat bitta kompyuter yoki planshet telefoningizga ulanishi mumkin. Ro‘yxatdan o‘tgan kompyuter va planshet telefoningizga ulanishga urinayotganda, ulardan birini tanlashingiz lozim bo‘ladi."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

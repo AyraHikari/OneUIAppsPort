@@ -63,7 +63,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/MultipartBody$Part$Companion;
@@ -80,7 +80,7 @@
 .method private constructor <init>(Lokhttp3/Headers;Lokhttp3/RequestBody;)V
     .locals 0
 
-    .line 176
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/MultipartBody$Part;->headers:Lokhttp3/Headers;
@@ -93,7 +93,7 @@
 .method public synthetic constructor <init>(Lokhttp3/Headers;Lokhttp3/RequestBody;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 176
+    .line 2
     invoke-direct {p0, p1, p2}, Lokhttp3/MultipartBody$Part;-><init>(Lokhttp3/Headers;Lokhttp3/RequestBody;)V
 
     return-void
@@ -101,8 +101,6 @@
 
 .method public static final create(Lokhttp3/Headers;Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Part;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/MultipartBody$Part;->Companion:Lokhttp3/MultipartBody$Part$Companion;
 
@@ -115,8 +113,6 @@
 
 .method public static final create(Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Part;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/MultipartBody$Part;->Companion:Lokhttp3/MultipartBody$Part$Companion;
 
@@ -129,8 +125,6 @@
 
 .method public static final createFormData(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/MultipartBody$Part;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/MultipartBody$Part;->Companion:Lokhttp3/MultipartBody$Part$Companion;
 
@@ -143,8 +137,6 @@
 
 .method public static final createFormData(Ljava/lang/String;Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Part;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/MultipartBody$Part;->Companion:Lokhttp3/MultipartBody$Part$Companion;
 
@@ -159,16 +151,7 @@
 # virtual methods
 .method public final -deprecated_body()Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "body"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 193
     iget-object v0, p0, Lokhttp3/MultipartBody$Part;->body:Lokhttp3/RequestBody;
 
     return-object v0
@@ -176,16 +159,7 @@
 
 .method public final -deprecated_headers()Lokhttp3/Headers;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "headers"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 186
     iget-object v0, p0, Lokhttp3/MultipartBody$Part;->headers:Lokhttp3/Headers;
 
     return-object v0
@@ -194,7 +168,6 @@
 .method public final body()Lokhttp3/RequestBody;
     .locals 1
 
-    .line 178
     iget-object v0, p0, Lokhttp3/MultipartBody$Part;->body:Lokhttp3/RequestBody;
 
     return-object v0
@@ -203,7 +176,6 @@
 .method public final headers()Lokhttp3/Headers;
     .locals 1
 
-    .line 177
     iget-object v0, p0, Lokhttp3/MultipartBody$Part;->headers:Lokhttp3/Headers;
 
     return-object v0

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="sesl_action_bar_text_item_mode">false</bool>
+    <bool name="sesl_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="sesl_config_desktop_mode">false</bool>
+    <bool name="sesl_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="sesl_material_desktop_mode">false</bool>
+    <bool name="sesl_seekbar_sliding_animation">true</bool>
+    <bool name="window_light_statusbar">true</bool>
+</resources>

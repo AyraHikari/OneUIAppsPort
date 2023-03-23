@@ -154,7 +154,7 @@
 .end method
 
 .method private static addPExtTo([I)I
-    .locals 14
+    .locals 15
 
     const/4 v0, 0x0
 
@@ -169,35 +169,35 @@
 
     sget-object v5, Lorg/spongycastle/math/ec/custom/djb/Curve25519Field;->PExt:[I
 
-    aget v5, v5, v0
+    aget v6, v5, v0
 
-    int-to-long v5, v5
+    int-to-long v6, v6
 
-    and-long/2addr v5, v3
+    and-long/2addr v6, v3
 
-    add-long/2addr v1, v5
+    add-long/2addr v1, v6
 
-    long-to-int v5, v1
+    long-to-int v6, v1
 
     .line 199
-    aput v5, p0, v0
+    aput v6, p0, v0
 
     const/16 v0, 0x20
 
     shr-long/2addr v1, v0
 
-    const-wide/16 v5, 0x0
+    const-wide/16 v6, 0x0
 
-    cmp-long v7, v1, v5
+    cmp-long v8, v1, v6
 
-    const/4 v8, 0x1
+    const/4 v9, 0x1
 
-    const/16 v9, 0x8
+    const/16 v10, 0x8
 
-    if-eqz v7, :cond_0
+    if-eqz v8, :cond_0
 
     .line 203
-    invoke-static {v9, p0, v8}, Lorg/spongycastle/math/raw/Nat;->incAt(I[II)I
+    invoke-static {v10, p0, v9}, Lorg/spongycastle/math/raw/Nat;->incAt(I[II)I
 
     move-result v1
 
@@ -205,35 +205,35 @@
 
     .line 205
     :cond_0
-    aget v7, p0, v9
+    aget v8, p0, v10
 
-    int-to-long v10, v7
+    int-to-long v11, v8
 
-    and-long/2addr v10, v3
+    and-long/2addr v11, v3
 
-    const-wide/16 v12, 0x13
+    const-wide/16 v13, 0x13
 
-    sub-long/2addr v10, v12
+    sub-long/2addr v11, v13
 
-    add-long/2addr v1, v10
+    add-long/2addr v1, v11
 
-    long-to-int v7, v1
+    long-to-int v8, v1
 
     .line 206
-    aput v7, p0, v9
+    aput v8, p0, v10
 
     shr-long/2addr v1, v0
 
-    cmp-long v5, v1, v5
+    cmp-long v6, v1, v6
 
-    const/16 v6, 0xf
+    const/16 v7, 0xf
 
-    if-eqz v5, :cond_1
+    if-eqz v6, :cond_1
 
     const/16 v1, 0x9
 
     .line 210
-    invoke-static {v6, p0, v1}, Lorg/spongycastle/math/raw/Nat;->decAt(I[II)I
+    invoke-static {v7, p0, v1}, Lorg/spongycastle/math/raw/Nat;->decAt(I[II)I
 
     move-result v1
 
@@ -241,30 +241,28 @@
 
     .line 212
     :cond_1
-    aget v5, p0, v6
+    aget v6, p0, v7
 
-    int-to-long v9, v5
+    int-to-long v10, v6
 
-    and-long/2addr v9, v3
+    and-long/2addr v10, v3
 
-    sget-object v5, Lorg/spongycastle/math/ec/custom/djb/Curve25519Field;->PExt:[I
+    aget v5, v5, v7
 
-    aget v5, v5, v6
+    add-int/2addr v5, v9
 
-    add-int/2addr v5, v8
+    int-to-long v5, v5
 
-    int-to-long v7, v5
+    and-long/2addr v3, v5
 
-    and-long/2addr v3, v7
+    add-long/2addr v10, v3
 
-    add-long/2addr v9, v3
-
-    add-long/2addr v1, v9
+    add-long/2addr v1, v10
 
     long-to-int v3, v1
 
     .line 213
-    aput v3, p0, v6
+    aput v3, p0, v7
 
     shr-long v0, v1, v0
 
@@ -344,7 +342,7 @@
 .end method
 
 .method public static fromBigInteger(Ljava/math/BigInteger;)[I
-    .locals 1
+    .locals 2
 
     .line 50
     invoke-static {p0}, Lorg/spongycastle/math/raw/Nat256;->fromBigInteger(Ljava/math/BigInteger;)[I
@@ -357,13 +355,11 @@
 
     invoke-static {p0, v0}, Lorg/spongycastle/math/raw/Nat256;->gte([I[I)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     .line 53
-    sget-object v0, Lorg/spongycastle/math/ec/custom/djb/Curve25519Field;->P:[I
-
     invoke-static {v0, p0}, Lorg/spongycastle/math/raw/Nat256;->subFrom([I[I)I
 
     goto :goto_0
@@ -640,7 +636,7 @@
 .end method
 
 .method private static subPExtFrom([I)I
-    .locals 14
+    .locals 15
 
     const/4 v0, 0x0
 
@@ -655,35 +651,35 @@
 
     sget-object v5, Lorg/spongycastle/math/ec/custom/djb/Curve25519Field;->PExt:[I
 
-    aget v5, v5, v0
+    aget v6, v5, v0
 
-    int-to-long v5, v5
+    int-to-long v6, v6
 
-    and-long/2addr v5, v3
+    and-long/2addr v6, v3
 
-    sub-long/2addr v1, v5
+    sub-long/2addr v1, v6
 
-    long-to-int v5, v1
+    long-to-int v6, v1
 
     .line 236
-    aput v5, p0, v0
+    aput v6, p0, v0
 
     const/16 v0, 0x20
 
     shr-long/2addr v1, v0
 
-    const-wide/16 v5, 0x0
+    const-wide/16 v6, 0x0
 
-    cmp-long v7, v1, v5
+    cmp-long v8, v1, v6
 
-    const/4 v8, 0x1
+    const/4 v9, 0x1
 
-    const/16 v9, 0x8
+    const/16 v10, 0x8
 
-    if-eqz v7, :cond_0
+    if-eqz v8, :cond_0
 
     .line 240
-    invoke-static {v9, p0, v8}, Lorg/spongycastle/math/raw/Nat;->decAt(I[II)I
+    invoke-static {v10, p0, v9}, Lorg/spongycastle/math/raw/Nat;->decAt(I[II)I
 
     move-result v1
 
@@ -691,35 +687,35 @@
 
     .line 242
     :cond_0
-    aget v7, p0, v9
+    aget v8, p0, v10
 
-    int-to-long v10, v7
+    int-to-long v11, v8
 
-    and-long/2addr v10, v3
+    and-long/2addr v11, v3
 
-    const-wide/16 v12, 0x13
+    const-wide/16 v13, 0x13
 
-    add-long/2addr v10, v12
+    add-long/2addr v11, v13
 
-    add-long/2addr v1, v10
+    add-long/2addr v1, v11
 
-    long-to-int v7, v1
+    long-to-int v8, v1
 
     .line 243
-    aput v7, p0, v9
+    aput v8, p0, v10
 
     shr-long/2addr v1, v0
 
-    cmp-long v5, v1, v5
+    cmp-long v6, v1, v6
 
-    const/16 v6, 0xf
+    const/16 v7, 0xf
 
-    if-eqz v5, :cond_1
+    if-eqz v6, :cond_1
 
     const/16 v1, 0x9
 
     .line 247
-    invoke-static {v6, p0, v1}, Lorg/spongycastle/math/raw/Nat;->incAt(I[II)I
+    invoke-static {v7, p0, v1}, Lorg/spongycastle/math/raw/Nat;->incAt(I[II)I
 
     move-result v1
 
@@ -727,30 +723,28 @@
 
     .line 249
     :cond_1
-    aget v5, p0, v6
+    aget v6, p0, v7
 
-    int-to-long v9, v5
+    int-to-long v10, v6
 
-    and-long/2addr v9, v3
+    and-long/2addr v10, v3
 
-    sget-object v5, Lorg/spongycastle/math/ec/custom/djb/Curve25519Field;->PExt:[I
+    aget v5, v5, v7
 
-    aget v5, v5, v6
+    add-int/2addr v5, v9
 
-    add-int/2addr v5, v8
+    int-to-long v5, v5
 
-    int-to-long v7, v5
+    and-long/2addr v3, v5
 
-    and-long/2addr v3, v7
+    sub-long/2addr v10, v3
 
-    sub-long/2addr v9, v3
-
-    add-long/2addr v1, v9
+    add-long/2addr v1, v10
 
     long-to-int v3, v1
 
     .line 250
-    aput v3, p0, v6
+    aput v3, p0, v7
 
     shr-long v0, v1, v0
 

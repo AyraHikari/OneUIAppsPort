@@ -39,8 +39,6 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 230
-    iget-object p1, p0, Lorg/spongycastle/asn1/ASN1Sequence$1;->this$0:Lorg/spongycastle/asn1/ASN1Sequence;
-
     invoke-virtual {p1}, Lorg/spongycastle/asn1/ASN1Sequence;->size()I
 
     move-result p1

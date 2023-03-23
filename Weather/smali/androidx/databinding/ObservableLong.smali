@@ -1,5 +1,5 @@
 .class public Landroidx/databinding/ObservableLong;
-.super Landroidx/databinding/BaseObservableField;
+.super Landroidx/databinding/b;
 .source "ObservableLong.java"
 
 # interfaces
@@ -18,21 +18,18 @@
     .end annotation
 .end field
 
-.field static final serialVersionUID:J = 0x1L
-
 
 # instance fields
-.field private mValue:J
+.field public i:J
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 103
-    new-instance v0, Landroidx/databinding/ObservableLong$1;
+    new-instance v0, Landroidx/databinding/ObservableLong$a;
 
-    invoke-direct {v0}, Landroidx/databinding/ObservableLong$1;-><init>()V
+    invoke-direct {v0}, Landroidx/databinding/ObservableLong$a;-><init>()V
 
     sput-object v0, Landroidx/databinding/ObservableLong;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -42,8 +39,8 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 60
-    invoke-direct {p0}, Landroidx/databinding/BaseObservableField;-><init>()V
+    .line 3
+    invoke-direct {p0}, Landroidx/databinding/b;-><init>()V
 
     return-void
 .end method
@@ -51,20 +48,11 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 53
-    invoke-direct {p0}, Landroidx/databinding/BaseObservableField;-><init>()V
+    .line 1
+    invoke-direct {p0}, Landroidx/databinding/b;-><init>()V
 
-    .line 54
-    iput-wide p1, p0, Landroidx/databinding/ObservableLong;->mValue:J
-
-    return-void
-.end method
-
-.method public varargs constructor <init>([Landroidx/databinding/Observable;)V
-    .locals 0
-
-    .line 71
-    invoke-direct {p0, p1}, Landroidx/databinding/BaseObservableField;-><init>([Landroidx/databinding/Observable;)V
+    .line 2
+    iput-wide p1, p0, Landroidx/databinding/ObservableLong;->i:J
 
     return-void
 .end method
@@ -79,40 +67,10 @@
     return v0
 .end method
 
-.method public get()J
-    .locals 2
-
-    .line 78
-    iget-wide v0, p0, Landroidx/databinding/ObservableLong;->mValue:J
-
-    return-wide v0
-.end method
-
-.method public set(J)V
-    .locals 2
-
-    .line 87
-    iget-wide v0, p0, Landroidx/databinding/ObservableLong;->mValue:J
-
-    cmp-long v0, p1, v0
-
-    if-eqz v0, :cond_0
-
-    .line 88
-    iput-wide p1, p0, Landroidx/databinding/ObservableLong;->mValue:J
-
-    .line 89
-    invoke-virtual {p0}, Landroidx/databinding/ObservableLong;->notifyChange()V
-
-    :cond_0
-    return-void
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 100
-    iget-wide v0, p0, Landroidx/databinding/ObservableLong;->mValue:J
+    iget-wide v0, p0, Landroidx/databinding/ObservableLong;->i:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 

@@ -27,7 +27,7 @@
 .method constructor <init>(Lorg/jsoup/nodes/Element;Ljava/lang/StringBuilder;)V
     .locals 0
 
-    .line 875
+    .line 1140
     iput-object p1, p0, Lorg/jsoup/nodes/Element$1;->this$0:Lorg/jsoup/nodes/Element;
 
     iput-object p2, p0, Lorg/jsoup/nodes/Element$1;->val$accum:Ljava/lang/StringBuilder;
@@ -42,31 +42,31 @@
 .method public head(Lorg/jsoup/nodes/Node;I)V
     .locals 0
 
-    .line 877
+    .line 1142
     instance-of p2, p1, Lorg/jsoup/nodes/TextNode;
 
     if-eqz p2, :cond_0
 
-    .line 878
+    .line 1143
     check-cast p1, Lorg/jsoup/nodes/TextNode;
 
-    .line 879
+    .line 1144
     iget-object p2, p0, Lorg/jsoup/nodes/Element$1;->val$accum:Ljava/lang/StringBuilder;
 
     invoke-static {p2, p1}, Lorg/jsoup/nodes/Element;->access$000(Ljava/lang/StringBuilder;Lorg/jsoup/nodes/TextNode;)V
 
     goto :goto_0
 
-    .line 880
+    .line 1145
     :cond_0
     instance-of p2, p1, Lorg/jsoup/nodes/Element;
 
     if-eqz p2, :cond_2
 
-    .line 881
+    .line 1146
     check-cast p1, Lorg/jsoup/nodes/Element;
 
-    .line 882
+    .line 1147
     iget-object p2, p0, Lorg/jsoup/nodes/Element$1;->val$accum:Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->length()I
@@ -75,7 +75,7 @@
 
     if-lez p2, :cond_2
 
-    .line 883
+    .line 1148
     invoke-virtual {p1}, Lorg/jsoup/nodes/Element;->isBlock()Z
 
     move-result p2
@@ -101,19 +101,19 @@
     :cond_1
     iget-object p1, p0, Lorg/jsoup/nodes/Element$1;->val$accum:Ljava/lang/StringBuilder;
 
-    .line 884
+    .line 1149
     invoke-static {p1}, Lorg/jsoup/nodes/TextNode;->lastCharIsWhitespace(Ljava/lang/StringBuilder;)Z
 
     move-result p1
 
     if-nez p1, :cond_2
 
-    .line 885
+    .line 1150
     iget-object p1, p0, Lorg/jsoup/nodes/Element$1;->val$accum:Ljava/lang/StringBuilder;
 
-    const-string p2, " "
+    const/16 p2, 0x20
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     :cond_2
     :goto_0
@@ -123,5 +123,46 @@
 .method public tail(Lorg/jsoup/nodes/Node;I)V
     .locals 0
 
+    .line 1156
+    instance-of p2, p1, Lorg/jsoup/nodes/Element;
+
+    if-eqz p2, :cond_0
+
+    .line 1157
+    move-object p2, p1
+
+    check-cast p2, Lorg/jsoup/nodes/Element;
+
+    .line 1158
+    invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->isBlock()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p1}, Lorg/jsoup/nodes/Node;->nextSibling()Lorg/jsoup/nodes/Node;
+
+    move-result-object p1
+
+    instance-of p1, p1, Lorg/jsoup/nodes/TextNode;
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lorg/jsoup/nodes/Element$1;->val$accum:Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Lorg/jsoup/nodes/TextNode;->lastCharIsWhitespace(Ljava/lang/StringBuilder;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 1159
+    iget-object p1, p0, Lorg/jsoup/nodes/Element$1;->val$accum:Ljava/lang/StringBuilder;
+
+    const/16 p2, 0x20
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    :cond_0
     return-void
 .end method

@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 69
+    .line 64
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -29,35 +29,12 @@
 
 # virtual methods
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
-    .locals 1
+    .locals 0
 
-    const/4 p2, 0x0
-
-    const/4 v0, 0x0
-
-    .line 71
-    invoke-virtual {p1, p2, v0}, Lorg/jsoup/parser/Tokeniser;->consumeCharacterReference(Ljava/lang/Character;Z)[C
-
-    move-result-object p2
-
-    if-nez p2, :cond_0
-
-    const/16 p2, 0x26
-
-    .line 73
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
-
-    goto :goto_0
-
-    .line 75
-    :cond_0
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit([C)V
-
-    .line 76
-    :goto_0
+    .line 66
     sget-object p2, Lorg/jsoup/parser/TokeniserState$4;->Rcdata:Lorg/jsoup/parser/TokeniserState;
 
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
+    invoke-static {p1, p2}, Lorg/jsoup/parser/TokeniserState;->access$100(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/TokeniserState;)V
 
     return-void
 .end method

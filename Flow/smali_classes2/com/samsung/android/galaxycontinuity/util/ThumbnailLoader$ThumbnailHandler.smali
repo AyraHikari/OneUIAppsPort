@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Landroid/os/Looper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "looper"
+        }
+    .end annotation
 
     .line 125
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -44,6 +52,18 @@
 
 .method private getUrlFavicon(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;Ljava/net/URL;Lorg/jsoup/nodes/Document;)Landroid/graphics/Bitmap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "item",
+            "url",
+            "doc"
+        }
+    .end annotation
 
     .line 156
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
@@ -220,6 +240,18 @@
 
 .method private getUrlInfo(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;Ljava/net/URL;Lorg/jsoup/nodes/Document;)Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "item",
+            "url",
+            "doc"
+        }
+    .end annotation
 
     if-nez p3, :cond_0
 
@@ -280,6 +312,14 @@
 
 .method private getUrlThumb(Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;)Landroid/graphics/Bitmap;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "urlInfoData"
+        }
+    .end annotation
 
     .line 145
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->urlThumbPath:Ljava/lang/String;
@@ -329,13 +369,21 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
     .line 187
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     instance-of v0, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_c
 
     .line 188
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -448,7 +496,7 @@
     goto/16 :goto_4
 
     :cond_0
-    const-string v1, "success getting thumbnail"
+    const-string/jumbo v1, "success getting thumbnail"
 
     .line 214
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -496,9 +544,13 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -717,11 +769,11 @@
 
     move-result-object v1
 
-    const-string v2, "url_title"
+    const-string/jumbo v2, "url_title"
 
-    const-string v4, "url_desc"
+    const-string/jumbo v4, "url_desc"
 
-    const-string v5, "url_thumb_path"
+    const-string/jumbo v5, "url_thumb_path"
 
     filled-new-array {v2, v4, v5}, [Ljava/lang/String;
 
@@ -731,7 +783,7 @@
 
     :cond_a
     :goto_4
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_b
 
     .line 270
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;
@@ -761,7 +813,7 @@
 
     move-result-object v0
 
-    const-string v1, "thumb_path"
+    const-string/jumbo v1, "thumb_path"
 
     filled-new-array {v1}, [Ljava/lang/String;
 
@@ -769,22 +821,43 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/database/ShareDatabase;->updateShareContents(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;[Ljava/lang/String;)V
 
-    goto :goto_5
-
     .line 276
     :cond_b
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getHasLargeThumb()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_d
+
+    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->hasThumb:Landroidx/databinding/ObservableBoolean;
+
+    invoke-virtual {v0}, Landroidx/databinding/ObservableBoolean;->get()Z
+
+    move-result v0
+
+    if-nez v0, :cond_d
+
+    const/4 v0, 0x0
+
+    .line 277
+    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->setHasLargeThumb(Z)V
+
+    goto :goto_5
+
+    .line 279
+    :cond_c
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     instance-of v0, v0, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_d
 
-    .line 277
+    .line 280
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    .line 278
+    .line 281
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->packageName:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v0}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -797,7 +870,7 @@
 
     move-result-object v0
 
-    .line 279
+    .line 282
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;
 
     move-result-object v1
@@ -806,12 +879,12 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;->addCache(ILandroid/graphics/Bitmap;)V
 
-    .line 281
+    .line 284
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->icon:Landroidx/databinding/ObservableField;
 
     invoke-virtual {p1, v0}, Landroidx/databinding/ObservableField;->set(Ljava/lang/Object;)V
 
-    :cond_c
+    :cond_d
     :goto_5
     return-void
 .end method

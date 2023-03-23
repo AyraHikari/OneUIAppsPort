@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "permissions",
+            "grantResults"
+        }
+    .end annotation
 .end method

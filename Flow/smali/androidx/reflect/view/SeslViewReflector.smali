@@ -3,15 +3,9 @@
 .source "SeslViewReflector.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/reflect/view/SeslViewReflector$SeslMeasureSpecReflector;
-    }
-.end annotation
-
-
 # static fields
+.field private static final TAG:Ljava/lang/String; = "SeslViewReflector"
+
 .field private static final mClass:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -26,7 +20,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 23
+    .line 25
     const-class v0, Landroid/view/View;
 
     sput-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
@@ -37,7 +31,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 21
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,8 +39,16 @@
 
 .method public static clearAccessibilityFocus(Landroid/view/View;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 120
+    .line 127
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const/4 v1, 0x0
@@ -63,7 +65,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 122
+    .line 129
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
@@ -72,8 +74,16 @@
 
 .method public static getField_mPaddingLeft(Landroid/view/View;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 66
+    .line 68
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const-string v1, "mPaddingLeft"
@@ -84,17 +94,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 68
+    .line 70
     invoke-static {p0, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 69
+    .line 71
     instance-of v0, p0, Ljava/lang/Integer;
 
     if-eqz v0, :cond_0
 
-    .line 70
+    .line 72
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -111,8 +121,16 @@
 
 .method public static getField_mPaddingRight(Landroid/view/View;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 87
+    .line 89
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const-string v1, "mPaddingRight"
@@ -123,17 +141,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 89
+    .line 91
     invoke-static {p0, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 90
+    .line 92
     instance-of v0, p0, Ljava/lang/Integer;
 
     if-eqz v0, :cond_0
 
-    .line 91
+    .line 93
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -150,9 +168,19 @@
 
 .method public static getWindowDisplayFrame(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "outRect"
+        }
+    .end annotation
 
-    .line 367
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 409
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -162,7 +190,7 @@
 
     if-lt v0, v3, :cond_0
 
-    .line 368
+    .line 410
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v3, v2, [Ljava/lang/Class;
@@ -179,7 +207,7 @@
 
     goto :goto_0
 
-    .line 370
+    .line 412
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
@@ -202,7 +230,7 @@
 
     aput-object p1, v2, v1
 
-    .line 374
+    .line 416
     invoke-static {p0, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
@@ -211,11 +239,19 @@
 
 .method public static isHighContrastTextEnabled(Landroid/view/View;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 305
+    .line 342
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1d
 
@@ -241,17 +277,17 @@
 
     new-array v1, v2, [Ljava/lang/Object;
 
-    .line 308
+    .line 345
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 309
+    .line 346
     instance-of v0, p0, Ljava/lang/Boolean;
 
     if-eqz v0, :cond_1
 
-    .line 310
+    .line 347
     check-cast p0, Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
@@ -266,8 +302,16 @@
 
 .method public static isHoveringUIEnabled(Landroid/view/View;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 266
+    .line 279
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const/4 v1, 0x0
@@ -284,17 +328,17 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 268
+    .line 281
     invoke-static {p0, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 269
+    .line 282
     instance-of v0, p0, Ljava/lang/Boolean;
 
     if-eqz v0, :cond_0
 
-    .line 270
+    .line 283
     check-cast p0, Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
@@ -309,11 +353,26 @@
 
 .method public static isInScrollingContainer(Landroid/view/View;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 104
-    sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
+    .line 107
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
+
+    const/16 v2, 0x1e
+
+    if-gt v0, v2, :cond_0
+
+    .line 108
+    sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v2, v1, [Ljava/lang/Class;
 
@@ -323,21 +382,36 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    goto :goto_0
+
+    .line 110
+    :cond_0
+    sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
+
+    new-array v2, v1, [Ljava/lang/Class;
+
+    const-string v3, "hidden_isInScrollingContainer"
+
+    invoke-static {v0, v3, v2}, Landroidx/reflect/SeslBaseReflector;->getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    :goto_0
+    if-eqz v0, :cond_1
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 106
+    .line 113
     invoke-static {p0, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 107
+    .line 114
     instance-of v0, p0, Ljava/lang/Boolean;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 108
+    .line 115
     check-cast p0, Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
@@ -346,16 +420,24 @@
 
     return p0
 
-    :cond_0
+    :cond_1
     return v1
 .end method
 
 .method public static isVisibleToUser(Landroid/view/View;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 164
+    .line 177
     invoke-static {p0, v0}, Landroidx/reflect/view/SeslViewReflector;->isVisibleToUser(Landroid/view/View;Landroid/graphics/Rect;)Z
 
     move-result p0
@@ -365,8 +447,18 @@
 
 .method public static isVisibleToUser(Landroid/view/View;Landroid/graphics/Rect;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "boundInView"
+        }
+    .end annotation
 
-    .line 180
+    .line 193
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const/4 v1, 0x1
@@ -391,17 +483,17 @@
 
     aput-object p1, v1, v4
 
-    .line 182
+    .line 195
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 183
+    .line 196
     instance-of p1, p0, Ljava/lang/Boolean;
 
     if-eqz p1, :cond_0
 
-    .line 184
+    .line 197
     check-cast p0, Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
@@ -416,47 +508,91 @@
 
 .method public static notifyViewAccessibilityStateChangedIfNeeded(Landroid/view/View;I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "changeType"
+        }
+    .end annotation
 
-    .line 150
+    .line 158
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    const/16 v3, 0x1e
+
+    if-gt v0, v3, :cond_0
+
+    .line 159
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
-    const/4 v1, 0x1
+    new-array v3, v2, [Ljava/lang/Class;
 
-    new-array v2, v1, [Ljava/lang/Class;
+    sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    aput-object v4, v3, v1
 
-    const/4 v4, 0x0
+    const-string v4, "notifyViewAccessibilityStateChangedIfNeeded"
 
-    aput-object v3, v2, v4
-
-    const-string v3, "notifyViewAccessibilityStateChangedIfNeeded"
-
-    invoke-static {v0, v3, v2}, Landroidx/reflect/SeslBaseReflector;->getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-static {v0, v4, v3}, Landroidx/reflect/SeslBaseReflector;->getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    goto :goto_0
 
-    new-array v1, v1, [Ljava/lang/Object;
+    .line 162
+    :cond_0
+    sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
-    .line 153
+    new-array v3, v2, [Ljava/lang/Class;
+
+    sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    aput-object v4, v3, v1
+
+    const-string v4, "hidden_notifyViewAccessibilityStateChangedIfNeeded"
+
+    invoke-static {v0, v4, v3}, Landroidx/reflect/SeslBaseReflector;->getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 166
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    aput-object p1, v1, v4
+    aput-object p1, v2, v1
 
-    invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
 .method public static requestAccessibilityFocus(Landroid/view/View;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 133
+    .line 140
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const/4 v1, 0x0
@@ -473,17 +609,17 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 135
+    .line 142
     invoke-static {p0, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 136
+    .line 143
     instance-of v0, p0, Ljava/lang/Boolean;
 
     if-eqz v0, :cond_0
 
-    .line 137
+    .line 144
     check-cast p0, Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
@@ -498,8 +634,16 @@
 
 .method public static resetPaddingToInitialValues(Landroid/view/View;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 356
+    .line 398
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const/4 v1, 0x0
@@ -516,7 +660,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 358
+    .line 400
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
@@ -525,11 +669,26 @@
 
 .method public static resolvePadding(Landroid/view/View;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 346
-    sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
+    .line 384
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
+
+    const/16 v2, 0x1e
+
+    if-gt v0, v2, :cond_0
+
+    .line 385
+    sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v2, v1, [Ljava/lang/Class;
 
@@ -539,22 +698,47 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    goto :goto_0
+
+    .line 387
+    :cond_0
+    sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
+
+    new-array v2, v1, [Ljava/lang/Class;
+
+    const-string v3, "hidden_resolvePadding"
+
+    invoke-static {v0, v3, v2}, Landroidx/reflect/SeslBaseReflector;->getDeclaredMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    :goto_0
+    if-eqz v0, :cond_1
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 348
+    .line 390
     invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
 .method public static semGetHoverPopup(Landroid/view/View;Z)Ljava/lang/Object;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "createIfNotExist"
+        }
+    .end annotation
 
-    .line 323
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 360
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x1
 
@@ -566,7 +750,7 @@
 
     if-lt v0, v4, :cond_0
 
-    .line 324
+    .line 361
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v4, v1, [Ljava/lang/Class;
@@ -585,7 +769,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 326
+    .line 363
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -598,15 +782,15 @@
 
     goto :goto_0
 
-    .line 328
+    .line 365
     :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v4, 0x18
 
     if-lt v0, v4, :cond_1
 
-    .line 329
+    .line 366
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v4, v1, [Ljava/lang/Class;
@@ -625,7 +809,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 331
+    .line 368
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -640,7 +824,7 @@
 
     goto :goto_0
 
-    .line 334
+    .line 371
     :cond_1
     sget-object p1, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
@@ -656,7 +840,7 @@
 
     new-array v0, v2, [Ljava/lang/Object;
 
-    .line 336
+    .line 373
     invoke-static {p0, p1, v0}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -668,9 +852,17 @@
 
 .method public static semGetHoverPopupType(Landroid/view/View;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 197
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 210
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -678,7 +870,7 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 198
+    .line 211
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v2, v1, [Ljava/lang/Class;
@@ -693,17 +885,17 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 200
+    .line 213
     invoke-static {p0, v0, v2}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 201
+    .line 214
     instance-of v0, p0, Ljava/lang/Integer;
 
     if-eqz v0, :cond_1
 
-    .line 202
+    .line 215
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -712,7 +904,7 @@
 
     return p0
 
-    .line 206
+    .line 219
     :cond_0
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
@@ -724,17 +916,17 @@
 
     if-eqz v0, :cond_1
 
-    .line 208
+    .line 221
     invoke-static {p0, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 209
+    .line 222
     instance-of v0, p0, Ljava/lang/Integer;
 
     if-eqz v0, :cond_1
 
-    .line 210
+    .line 223
     check-cast p0, Ljava/lang/Integer;
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
@@ -747,11 +939,94 @@
     return v1
 .end method
 
+.method public static semSetBlurInfo(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "blurInfo"
+        }
+    .end annotation
+
+    .line 297
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1f
+
+    if-lt v0, v1, :cond_0
+
+    :try_start_0
+    const-string v0, "android.view.SemBlurInfo"
+
+    .line 299
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    .line 300
+    sget-object v1, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
+
+    const-string v2, "hidden_semSetBlurInfo"
+
+    const/4 v3, 0x1
+
+    new-array v4, v3, [Ljava/lang/Class;
+
+    const/4 v5, 0x0
+
+    aput-object v0, v4, v5
+
+    invoke-static {v1, v2, v4}, Landroidx/reflect/SeslBaseReflector;->getDeclaredMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    new-array v1, v3, [Ljava/lang/Object;
+
+    aput-object p1, v1, v5
+
+    .line 304
+    invoke-static {p0, v0, v1}, Landroidx/reflect/SeslBaseReflector;->invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    const-string p1, "SeslViewReflector"
+
+    const-string v0, "semSetBlurInfo ClassNotFoundException"
+
+    .line 307
+    invoke-static {p1, v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
 .method public static semSetDirectPenInputEnabled(Landroid/view/View;Z)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "enabled"
+        }
+    .end annotation
 
-    .line 246
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 259
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -761,7 +1036,7 @@
 
     if-lt v0, v3, :cond_0
 
-    .line 247
+    .line 260
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v3, v2, [Ljava/lang/Class;
@@ -778,15 +1053,15 @@
 
     goto :goto_0
 
-    .line 248
+    .line 261
     :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
     if-lt v0, v3, :cond_1
 
-    .line 249
+    .line 262
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v3, v2, [Ljava/lang/Class;
@@ -803,7 +1078,7 @@
 
     goto :goto_0
 
-    .line 251
+    .line 264
     :cond_1
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
@@ -824,7 +1099,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 255
+    .line 268
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -839,9 +1114,19 @@
 
 .method public static semSetHoverPopupType(Landroid/view/View;I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "type"
+        }
+    .end annotation
 
-    .line 225
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 238
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -851,7 +1136,7 @@
 
     if-lt v0, v3, :cond_0
 
-    .line 226
+    .line 239
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v3, v2, [Ljava/lang/Class;
@@ -868,15 +1153,15 @@
 
     goto :goto_0
 
-    .line 227
+    .line 240
     :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x18
 
     if-lt v0, v3, :cond_1
 
-    .line 228
+    .line 241
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v3, v2, [Ljava/lang/Class;
@@ -893,7 +1178,7 @@
 
     goto :goto_0
 
-    .line 230
+    .line 243
     :cond_1
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
@@ -914,7 +1199,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 234
+    .line 247
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -929,9 +1214,21 @@
 
 .method public static semSetPointerIcon(Landroid/view/View;ILandroid/view/PointerIcon;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "toolType",
+            "pointerIcon"
+        }
+    .end annotation
 
-    .line 285
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 322
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x1
 
@@ -943,7 +1240,7 @@
 
     if-lt v0, v4, :cond_0
 
-    .line 286
+    .line 323
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v4, v3, [Ljava/lang/Class;
@@ -964,15 +1261,15 @@
 
     goto :goto_0
 
-    .line 288
+    .line 325
     :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v4, 0x18
 
     if-lt v0, v4, :cond_1
 
-    .line 289
+    .line 326
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     new-array v4, v3, [Ljava/lang/Class;
@@ -1001,7 +1298,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 294
+    .line 331
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -1018,8 +1315,18 @@
 
 .method public static setField_mPaddingLeft(Landroid/view/View;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "value"
+        }
+    .end annotation
 
-    .line 34
+    .line 36
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const-string v1, "mPaddingLeft"
@@ -1030,7 +1337,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 36
+    .line 38
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -1043,8 +1350,18 @@
 
 .method public static setField_mPaddingRight(Landroid/view/View;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "value"
+        }
+    .end annotation
 
-    .line 49
+    .line 51
     sget-object v0, Landroidx/reflect/view/SeslViewReflector;->mClass:Ljava/lang/Class;
 
     const-string v1, "mPaddingRight"
@@ -1055,7 +1372,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 51
+    .line 53
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

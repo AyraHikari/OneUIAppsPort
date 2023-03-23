@@ -70,6 +70,16 @@
 
 .method private getDistance(FF)F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "distanceX",
+            "distanceY"
+        }
+    .end annotation
 
     float-to-double v0, p1
 
@@ -98,6 +108,14 @@
 # virtual methods
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     .line 89
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/smartview/BlackScreenGestureDetector;->getGestureListener()Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/smartview/BlackScreenGestureDetector$GestureListener;
@@ -113,6 +131,14 @@
 
 .method public onDoubleTapEvent(Landroid/view/MotionEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -121,6 +147,14 @@
 
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -129,6 +163,14 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     .line 38
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
@@ -294,15 +336,21 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v4
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " SrcPoint "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/smartview/BlackScreenGestureDetector;->mSrcPoint:Landroid/graphics/PointF;
 
@@ -310,9 +358,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/smartview/BlackScreenGestureDetector;->mSrcPoint:Landroid/graphics/PointF;
 
@@ -320,9 +372,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " desX : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     .line 67
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -331,9 +387,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " desY: "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
@@ -341,17 +401,27 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " distanceX : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, " distanceY : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -421,6 +491,14 @@
 
 .method setGestureListener(Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/smartview/BlackScreenGestureDetector$GestureListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "gestureListener"
+        }
+    .end annotation
 
     .line 30
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/smartview/BlackScreenGestureDetector;->mGestureListener:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/smartview/BlackScreenGestureDetector$GestureListener;

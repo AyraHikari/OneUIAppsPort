@@ -122,7 +122,7 @@
 
     aput-object p1, v1, p0
 
-    const-string p0, "size=%s offset=%s byteCount=%s"
+    const-string/jumbo p0, "size=%s offset=%s byteCount=%s"
 
     invoke-static {p0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 

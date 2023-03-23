@@ -1,11 +1,14 @@
 .class Landroidx/fragment/app/Fragment$3;
-.super Landroidx/fragment/app/FragmentContainer;
+.super Ljava/lang/Object;
 .source "Fragment.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/Fragment;->instantiateChildFragmentManager()V
+    value = Landroidx/fragment/app/Fragment;->callStartTransitionListener(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,70 +20,42 @@
 # instance fields
 .field final synthetic this$0:Landroidx/fragment/app/Fragment;
 
+.field final synthetic val$controller:Landroidx/fragment/app/SpecialEffectsController;
+
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/Fragment;)V
+.method constructor <init>(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/SpecialEffectsController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$controller"
+        }
+    .end annotation
 
-    .line 2448
+    .line 2857
     iput-object p1, p0, Landroidx/fragment/app/Fragment$3;->this$0:Landroidx/fragment/app/Fragment;
 
-    invoke-direct {p0}, Landroidx/fragment/app/FragmentContainer;-><init>()V
+    iput-object p2, p0, Landroidx/fragment/app/Fragment$3;->val$controller:Landroidx/fragment/app/SpecialEffectsController;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onFindViewById(I)Landroid/view/View;
+.method public run()V
     .locals 1
 
-    .line 2452
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$3;->this$0:Landroidx/fragment/app/Fragment;
+    .line 2860
+    iget-object v0, p0, Landroidx/fragment/app/Fragment$3;->val$controller:Landroidx/fragment/app/SpecialEffectsController;
 
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;
+    invoke-virtual {v0}, Landroidx/fragment/app/SpecialEffectsController;->executePendingOperations()V
 
-    if-eqz v0, :cond_0
-
-    .line 2455
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$3;->this$0:Landroidx/fragment/app/Fragment;
-
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;
-
-    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 2453
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Fragment does not have a view"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public onHasView()Z
-    .locals 1
-
-    .line 2460
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$3;->this$0:Landroidx/fragment/app/Fragment;
-
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
+    return-void
 .end method

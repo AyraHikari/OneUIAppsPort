@@ -4,15 +4,19 @@
 
 
 # static fields
-.field private static final SESL_TAB_ROUND_RECT_PRESS_DURATION:I = 0x32
+.field private static final DURATION_ALPHA:I = 0x64
 
-.field private static final SESL_TAB_ROUND_RECT_RELEASE_DURATION:I = 0x15e
+.field private static final DURATION_PRESS:I = 0xfa
 
-.field private static final SESL_TAB_ROUND_RECT_SCALE_MINOR:F = 0.95f
+.field private static final DURATION_RELEASE:I = 0x15e
+
+.field private static final SCALE_MINOR:F = 0.95f
 
 
 # instance fields
-.field private mBackground:Landroid/graphics/drawable/Drawable;
+.field private final LINEAR_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
+.field private final SCALE_INTERPOLATOR:Landroid/view/animation/PathInterpolator;
 
 .field private mPressAnimationSet:Landroid/view/animation/AnimationSet;
 
@@ -23,7 +27,7 @@
 
     const/4 v0, 0x0
 
-    .line 38
+    .line 44
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -34,7 +38,7 @@
 
     const/4 v0, 0x0
 
-    .line 42
+    .line 48
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -45,55 +49,87 @@
 
     const/4 v0, 0x0
 
-    .line 46
+    .line 52
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
-    .locals 0
+    .locals 2
 
-    .line 50
+    .line 57
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 51
-    invoke-direct {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->isLightTheme()Z
+    .line 39
+    new-instance p2, Landroid/view/animation/LinearInterpolator;
 
-    move-result p1
+    invoke-direct {p2}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
-    if-eqz p1, :cond_0
+    iput-object p2, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->LINEAR_INTERPOLATOR:Landroid/view/animation/Interpolator;
 
-    .line 52
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
+    .line 40
+    new-instance p2, Landroid/view/animation/PathInterpolator;
 
-    move-result-object p1
+    const p3, 0x3e6147ae    # 0.22f
 
-    sget p2, Lcom/google/android/material/R$drawable;->sesl_tablayout_subtab_indicator_background:I
+    const/high16 p4, 0x3e800000    # 0.25f
 
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    const/4 v0, 0x0
 
-    move-result-object p1
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    invoke-direct {p2, p3, p4, v0, v1}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
+
+    iput-object p2, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->SCALE_INTERPOLATOR:Landroid/view/animation/PathInterpolator;
+
+    .line 58
+    invoke-static {p1}, Landroidx/appcompat/util/SeslMisc;->isLightTheme(Landroid/content/Context;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 60
+    sget p3, Lcom/google/android/material/R$drawable;->sesl_tablayout_subtab_indicator_background_light:I
 
     goto :goto_0
 
-    .line 53
+    .line 61
     :cond_0
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
+    sget p3, Lcom/google/android/material/R$drawable;->sesl_tablayout_subtab_indicator_background_dark:I
 
-    move-result-object p1
-
-    sget p2, Lcom/google/android/material/R$drawable;->sesl_tablayout_subtab_indicator_background_dark:I
-
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p1
-
+    .line 59
     :goto_0
-    iput-object p1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mBackground:Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, p3}, Landroidx/core/content/ContextCompat;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
-    .line 54
-    invoke-virtual {p0, p1}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    move-result-object p1
+
+    invoke-static {p0, p1}, Landroidx/core/view/ViewCompat;->setBackground(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+
+    .line 63
+    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    if-eqz p2, :cond_1
+
+    sget p2, Lcom/google/android/material/R$color;->sesl_tablayout_subtab_background_stroke_color_light:I
+
+    goto :goto_1
+
+    .line 64
+    :cond_1
+    sget p2, Lcom/google/android/material/R$color;->sesl_tablayout_subtab_background_stroke_color_dark:I
+
+    .line 63
+    :goto_1
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result p1
+
+    .line 65
+    invoke-virtual {p0, p1}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->onSetSelectedIndicatorColor(I)V
 
     return-void
 .end method
@@ -101,47 +137,10 @@
 .method static synthetic access$002(Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;Landroid/view/animation/AnimationSet;)Landroid/view/animation/AnimationSet;
     .locals 0
 
-    .line 26
+    .line 29
     iput-object p1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
 
     return-object p1
-.end method
-
-.method private isLightTheme()Z
-    .locals 4
-
-    .line 197
-    new-instance v0, Landroid/util/TypedValue;
-
-    invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
-
-    .line 198
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v1
-
-    sget v2, Landroidx/appcompat/R$attr;->isLightTheme:I
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v1, v2, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    .line 199
-    iget v0, v0, Landroid/util/TypedValue;->data:I
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v3, 0x0
-
-    :goto_0
-    return v3
 .end method
 
 
@@ -149,7 +148,7 @@
 .method onHide()V
     .locals 4
 
-    .line 67
+    .line 78
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, 0x0
@@ -158,53 +157,73 @@
 
     const-wide/16 v2, 0x0
 
-    .line 68
+    .line 79
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
     const/4 v2, 0x1
 
-    .line 69
+    .line 80
     invoke-virtual {v0, v2}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
 
-    .line 70
+    .line 81
     invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 71
+    .line 82
     invoke-virtual {p0, v1}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->setAlpha(F)V
 
     return-void
 .end method
 
 .method onSetSelectedIndicatorColor(I)V
-    .locals 1
+    .locals 2
 
-    .line 204
+    .line 152
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     instance-of v0, v0, Landroid/graphics/drawable/NinePatchDrawable;
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
-    .line 205
+    .line 153
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x16
+
+    if-lt v0, v1, :cond_0
+
+    .line 154
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setTint(I)V
 
-    .line 207
+    goto :goto_0
+
+    .line 156
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    sget-object v1, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-virtual {v0, p1, v1}, Landroid/graphics/drawable/Drawable;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
+
+    .line 159
+    :goto_0
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->isSelected()Z
 
     move-result p1
 
-    if-nez p1, :cond_0
+    if-nez p1, :cond_1
 
-    .line 208
+    .line 160
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->setHide()V
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
@@ -213,25 +232,25 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 76
+    .line 87
     invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->setAlpha(F)V
 
-    .line 77
+    .line 88
     new-instance v1, Landroid/view/animation/AlphaAnimation;
 
     invoke-direct {v1, v0, v0}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
     const-wide/16 v2, 0x0
 
-    .line 78
+    .line 89
     invoke-virtual {v1, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
     const/4 v0, 0x1
 
-    .line 79
+    .line 90
     invoke-virtual {v1, v0}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
 
-    .line 80
+    .line 91
     invoke-virtual {p0, v1}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->startAnimation(Landroid/view/animation/Animation;)V
 
     return-void
@@ -240,201 +259,79 @@
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 0
 
-    .line 59
+    .line 70
     invoke-super {p0, p1, p2}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->onVisibilityChanged(Landroid/view/View;I)V
 
     if-eqz p2, :cond_0
 
-    .line 60
+    .line 71
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->isSelected()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 61
+    .line 72
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->onHide()V
 
     :cond_0
     return-void
 .end method
 
-.method startPressAndReleaseEffect()V
-    .locals 15
+.method public bridge synthetic setHide()V
+    .locals 0
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    .line 28
+    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setHide()V
 
-    .line 146
-    invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->setAlpha(F)V
+    return-void
+.end method
 
-    .line 147
-    new-instance v1, Landroid/view/animation/AnimationSet;
+.method public bridge synthetic setPressed()V
+    .locals 0
 
-    const/4 v2, 0x0
+    .line 28
+    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setPressed()V
 
-    invoke-direct {v1, v2}, Landroid/view/animation/AnimationSet;-><init>(Z)V
+    return-void
+.end method
 
-    iput-object v1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
+.method public bridge synthetic setReleased()V
+    .locals 0
 
-    const-wide/16 v2, 0x32
+    .line 28
+    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setReleased()V
 
-    .line 148
-    invoke-virtual {v1, v2, v3}, Landroid/view/animation/AnimationSet;->setStartOffset(J)V
+    return-void
+.end method
 
-    .line 149
-    iget-object v1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
+.method public bridge synthetic setSelectedIndicatorColor(I)V
+    .locals 0
 
-    const/4 v4, 0x1
+    .line 28
+    invoke-super {p0, p1}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setSelectedIndicatorColor(I)V
 
-    invoke-virtual {v1, v4}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
+    return-void
+.end method
 
-    .line 150
-    iget-object v1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
+.method public bridge synthetic setShow()V
+    .locals 0
 
-    new-instance v5, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$2;
-
-    invoke-direct {v5, p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$2;-><init>(Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;)V
-
-    invoke-virtual {v1, v5}, Landroid/view/animation/AnimationSet;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
-
-    .line 165
-    new-instance v1, Landroid/view/animation/ScaleAnimation;
-
-    const/high16 v7, 0x3f800000    # 1.0f
-
-    const v8, 0x3f733333    # 0.95f
-
-    const/high16 v9, 0x3f800000    # 1.0f
-
-    const v10, 0x3f733333    # 0.95f
-
-    const/4 v11, 0x1
-
-    const/high16 v12, 0x3f000000    # 0.5f
-
-    const/4 v13, 0x1
-
-    const/high16 v14, 0x3f000000    # 0.5f
-
-    move-object v6, v1
-
-    invoke-direct/range {v6 .. v14}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
-
-    .line 170
-    invoke-virtual {v1, v2, v3}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
-
-    .line 171
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
-
-    move-result-object v5
-
-    sget v6, Lcom/google/android/material/tabs/TabLayout;->SESL_TAB_ANIM_INTERPOLATOR:I
-
-    invoke-virtual {v1, v5, v6}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/content/Context;I)V
-
-    .line 172
-    invoke-virtual {v1, v4}, Landroid/view/animation/ScaleAnimation;->setFillAfter(Z)V
-
-    .line 173
-    iget-object v5, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
-
-    invoke-virtual {v5, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
-
-    .line 175
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->isSelected()Z
-
-    move-result v5
-
-    if-nez v5, :cond_0
-
-    .line 176
-    new-instance v5, Landroid/view/animation/AlphaAnimation;
-
-    const/4 v6, 0x0
-
-    invoke-direct {v5, v6, v0}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
-
-    .line 177
-    invoke-virtual {v5, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
-
-    .line 178
-    invoke-virtual {v5, v4}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
-
-    .line 179
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    sget v6, Lcom/google/android/material/tabs/TabLayout;->SESL_TAB_ANIM_INTERPOLATOR:I
-
-    invoke-virtual {v5, v0, v6}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/content/Context;I)V
-
-    .line 180
-    iget-object v0, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
-
-    invoke-virtual {v0, v5}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
-
-    .line 183
-    :cond_0
-    new-instance v0, Landroid/view/animation/ScaleAnimation;
-
-    const v7, 0x3f733333    # 0.95f
-
-    const/high16 v8, 0x3f800000    # 1.0f
-
-    const v9, 0x3f733333    # 0.95f
-
-    const/high16 v10, 0x3f800000    # 1.0f
-
-    const/4 v11, 0x1
-
-    const/high16 v12, 0x3f000000    # 0.5f
-
-    const/4 v13, 0x1
-
-    const/high16 v14, 0x3f000000    # 0.5f
-
-    move-object v6, v0
-
-    invoke-direct/range {v6 .. v14}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
-
-    .line 188
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/ScaleAnimation;->setStartOffset(J)V
-
-    const-wide/16 v2, 0x15e
-
-    .line 189
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
-
-    .line 190
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    sget v3, Lcom/google/android/material/tabs/TabLayout;->SESL_TAB_ANIM_INTERPOLATOR:I
-
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/content/Context;I)V
-
-    .line 191
-    invoke-virtual {v0, v4}, Landroid/view/animation/ScaleAnimation;->setFillAfter(Z)V
-
-    .line 193
-    iget-object v0, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
+    .line 28
+    invoke-super {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->setShow()V
 
     return-void
 .end method
 
 .method startPressEffect()V
-    .locals 15
+    .locals 13
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 85
+    .line 96
     invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->setAlpha(F)V
 
-    .line 86
+    .line 97
     new-instance v1, Landroid/view/animation/AnimationSet;
 
     const/4 v2, 0x0
@@ -443,105 +340,94 @@
 
     iput-object v1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
 
-    const-wide/16 v2, 0x32
+    const/4 v2, 0x1
 
-    .line 87
-    invoke-virtual {v1, v2, v3}, Landroid/view/animation/AnimationSet;->setStartOffset(J)V
+    .line 98
+    invoke-virtual {v1, v2}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 88
+    .line 99
     iget-object v1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
 
-    const/4 v4, 0x1
+    new-instance v3, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$1;
 
-    invoke-virtual {v1, v4}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
+    invoke-direct {v3, p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$1;-><init>(Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;)V
 
-    .line 89
-    iget-object v1, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
+    invoke-virtual {v1, v3}, Landroid/view/animation/AnimationSet;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    new-instance v5, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$1;
-
-    invoke-direct {v5, p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator$1;-><init>(Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;)V
-
-    invoke-virtual {v1, v5}, Landroid/view/animation/AnimationSet;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
-
-    .line 104
+    .line 114
     new-instance v1, Landroid/view/animation/ScaleAnimation;
+
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    const v6, 0x3f733333    # 0.95f
 
     const/high16 v7, 0x3f800000    # 1.0f
 
     const v8, 0x3f733333    # 0.95f
 
-    const/high16 v9, 0x3f800000    # 1.0f
+    const/4 v9, 0x1
 
-    const v10, 0x3f733333    # 0.95f
+    const/high16 v10, 0x3f000000    # 0.5f
 
     const/4 v11, 0x1
 
     const/high16 v12, 0x3f000000    # 0.5f
 
-    const/4 v13, 0x1
+    move-object v4, v1
 
-    const/high16 v14, 0x3f000000    # 0.5f
+    invoke-direct/range {v4 .. v12}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
 
-    move-object v6, v1
+    const-wide/16 v3, 0xfa
 
-    invoke-direct/range {v6 .. v14}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
+    .line 117
+    invoke-virtual {v1, v3, v4}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
 
-    .line 109
-    invoke-virtual {v1, v2, v3}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
+    .line 118
+    iget-object v3, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->SCALE_INTERPOLATOR:Landroid/view/animation/PathInterpolator;
 
-    .line 110
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
+    invoke-virtual {v1, v3}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    move-result-object v5
+    .line 119
+    invoke-virtual {v1, v2}, Landroid/view/animation/ScaleAnimation;->setFillAfter(Z)V
 
-    sget v6, Lcom/google/android/material/tabs/TabLayout;->SESL_TAB_ANIM_INTERPOLATOR:I
+    .line 120
+    iget-object v3, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
 
-    invoke-virtual {v1, v5, v6}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/content/Context;I)V
+    invoke-virtual {v3, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 111
-    invoke-virtual {v1, v4}, Landroid/view/animation/ScaleAnimation;->setFillAfter(Z)V
-
-    .line 112
-    iget-object v5, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
-
-    invoke-virtual {v5, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
-
-    .line 114
+    .line 122
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->isSelected()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 115
+    .line 123
     new-instance v1, Landroid/view/animation/AlphaAnimation;
 
-    const/4 v5, 0x0
+    const/4 v3, 0x0
 
-    invoke-direct {v1, v5, v0}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
+    invoke-direct {v1, v3, v0}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 116
-    invoke-virtual {v1, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
+    const-wide/16 v3, 0x64
 
-    .line 117
-    invoke-virtual {v1, v4}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
+    .line 124
+    invoke-virtual {v1, v3, v4}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 118
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
+    .line 125
+    invoke-virtual {v1, v2}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
 
-    move-result-object v0
+    .line 126
+    iget-object v0, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->LINEAR_INTERPOLATOR:Landroid/view/animation/Interpolator;
 
-    sget v2, Lcom/google/android/material/tabs/TabLayout;->SESL_TAB_ANIM_INTERPOLATOR:I
+    invoke-virtual {v1, v0}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    invoke-virtual {v1, v0, v2}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/content/Context;I)V
-
-    .line 119
+    .line 127
     iget-object v0, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 122
+    .line 130
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->mPressAnimationSet:Landroid/view/animation/AnimationSet;
 
@@ -555,10 +441,10 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 127
+    .line 135
     invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->setAlpha(F)V
 
-    .line 128
+    .line 136
     new-instance v0, Landroid/view/animation/AnimationSet;
 
     const/4 v1, 0x0
@@ -567,10 +453,10 @@
 
     const/4 v1, 0x1
 
-    .line 129
+    .line 137
     invoke-virtual {v0, v1}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 131
+    .line 139
     new-instance v11, Landroid/view/animation/ScaleAnimation;
 
     const v3, 0x3f733333    # 0.95f
@@ -595,25 +481,21 @@
 
     const-wide/16 v2, 0x15e
 
-    .line 136
+    .line 142
     invoke-virtual {v11, v2, v3}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
 
-    .line 137
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->getContext()Landroid/content/Context;
+    .line 143
+    iget-object v2, p0, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->SCALE_INTERPOLATOR:Landroid/view/animation/PathInterpolator;
 
-    move-result-object v2
+    invoke-virtual {v11, v2}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    sget v3, Lcom/google/android/material/tabs/TabLayout;->SESL_TAB_ANIM_INTERPOLATOR:I
-
-    invoke-virtual {v11, v2, v3}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/content/Context;I)V
-
-    .line 138
+    .line 144
     invoke-virtual {v11, v1}, Landroid/view/animation/ScaleAnimation;->setFillAfter(Z)V
 
-    .line 140
+    .line 146
     invoke-virtual {v0, v11}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 141
+    .line 147
     invoke-virtual {p0, v0}, Lcom/google/android/material/tabs/SeslTabRoundRectIndicator;->startAnimation(Landroid/view/animation/Animation;)V
 
     return-void

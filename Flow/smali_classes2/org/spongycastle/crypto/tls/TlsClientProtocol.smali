@@ -1072,16 +1072,18 @@
     .line 283
     iget-object p1, p0, Lorg/spongycastle/crypto/tls/TlsClientProtocol;->selectedSessionID:[B
 
-    array-length v0, p1
+    array-length p1, p1
 
-    if-lez v0, :cond_22
+    if-lez p1, :cond_22
 
     .line 285
-    new-instance v0, Lorg/spongycastle/crypto/tls/TlsSessionImpl;
+    new-instance p1, Lorg/spongycastle/crypto/tls/TlsSessionImpl;
 
-    invoke-direct {v0, p1, p2}, Lorg/spongycastle/crypto/tls/TlsSessionImpl;-><init>([BLorg/spongycastle/crypto/tls/SessionParameters;)V
+    iget-object v0, p0, Lorg/spongycastle/crypto/tls/TlsClientProtocol;->selectedSessionID:[B
 
-    iput-object v0, p0, Lorg/spongycastle/crypto/tls/TlsClientProtocol;->tlsSession:Lorg/spongycastle/crypto/tls/TlsSession;
+    invoke-direct {p1, v0, p2}, Lorg/spongycastle/crypto/tls/TlsSessionImpl;-><init>([BLorg/spongycastle/crypto/tls/SessionParameters;)V
+
+    iput-object p1, p0, Lorg/spongycastle/crypto/tls/TlsClientProtocol;->tlsSession:Lorg/spongycastle/crypto/tls/TlsSession;
 
     goto :goto_6
 

@@ -51,6 +51,14 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 60
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -84,6 +92,16 @@
 
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permission",
+            "isReqired"
+        }
+    .end annotation
 
     .line 55
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -127,6 +145,16 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
     .line 92
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;->mPermission:Ljava/lang/String;

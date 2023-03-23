@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract onError(ILjava/lang/String;)V
+.method public abstract onError(ILjava/lang/String;Landroid/os/Bundle;)V
 .end method
 
 .method public abstract onPartialResults(Ljava/lang/String;Landroid/os/Bundle;)V

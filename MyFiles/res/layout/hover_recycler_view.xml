@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/air_view_folder_popup_background" android:padding="@dimen/air_view_popup_background_stroke_width" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/air_view_folder_popup_foreground" android:elevation="@dimen/air_view_preview_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

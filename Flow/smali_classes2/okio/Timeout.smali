@@ -38,6 +38,35 @@
     return-void
 .end method
 
+.method static minTimeout(JJ)J
+    .locals 3
+
+    const-wide/16 v0, 0x0
+
+    cmp-long v2, p0, v0
+
+    if-nez v2, :cond_0
+
+    return-wide p2
+
+    :cond_0
+    cmp-long v0, p2, v0
+
+    if-nez v0, :cond_1
+
+    return-wide p0
+
+    :cond_1
+    cmp-long v0, p0, p2
+
+    if-gez v0, :cond_2
+
+    return-wide p0
+
+    :cond_2
+    return-wide p2
+.end method
+
 
 # virtual methods
 .method public clearDeadline()Lokio/Timeout;
@@ -94,7 +123,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "unit == null"
+    const-string/jumbo p2, "unit == null"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -112,9 +141,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -185,7 +218,7 @@
 
     if-nez v0, :cond_2
 
-    .line 148
+    .line 149
     iget-boolean v0, p0, Lokio/Timeout;->hasDeadline:Z
 
     if-eqz v0, :cond_1
@@ -206,7 +239,7 @@
 
     goto :goto_0
 
-    .line 149
+    .line 150
     :cond_0
     new-instance v0, Ljava/io/InterruptedIOException;
 
@@ -222,9 +255,16 @@
 
     .line 145
     :cond_2
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
+
+    .line 146
     new-instance v0, Ljava/io/InterruptedIOException;
 
-    const-string v1, "thread interrupted"
+    const-string v1, "interrupted"
 
     invoke-direct {v0, v1}, Ljava/io/InterruptedIOException;-><init>(Ljava/lang/String;)V
 
@@ -255,7 +295,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "unit == null"
+    const-string/jumbo p2, "unit == null"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -269,13 +309,17 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "timeout < 0: "
+    const-string/jumbo v1, "timeout < 0: "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -301,13 +345,13 @@
         }
     .end annotation
 
-    .line 191
+    .line 192
     :try_start_0
     invoke-virtual {p0}, Lokio/Timeout;->hasDeadline()Z
 
     move-result v0
 
-    .line 192
+    .line 193
     invoke-virtual {p0}, Lokio/Timeout;->timeoutNanos()J
 
     move-result-wide v1
@@ -320,12 +364,12 @@
 
     if-nez v5, :cond_0
 
-    .line 195
+    .line 196
     invoke-virtual {p1}, Ljava/lang/Object;->wait()V
 
     return-void
 
-    .line 201
+    .line 202
     :cond_0
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -337,14 +381,14 @@
 
     if-eqz v7, :cond_1
 
-    .line 203
+    .line 204
     invoke-virtual {p0}, Lokio/Timeout;->deadlineNanoTime()J
 
     move-result-wide v7
 
     sub-long/2addr v7, v5
 
-    .line 204
+    .line 205
     invoke-static {v1, v2, v7, v8}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v1
@@ -354,7 +398,7 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 206
+    .line 207
     invoke-virtual {p0}, Lokio/Timeout;->deadlineNanoTime()J
 
     move-result-wide v0
@@ -369,13 +413,8 @@
 
     const-wide/32 v3, 0xf4240
 
-    .line 214
-    div-long v7, v1, v3
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 215
-    invoke-static {v7, v8}, Ljava/lang/Long;->signum(J)I
+    div-long v7, v1, v3
 
     mul-long/2addr v3, v7
 
@@ -383,10 +422,10 @@
 
     long-to-int v0, v3
 
-    :try_start_1
+    .line 216
     invoke-virtual {p1, v7, v8, v0}, Ljava/lang/Object;->wait(JI)V
 
-    .line 216
+    .line 217
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v3
@@ -400,20 +439,27 @@
 
     return-void
 
-    .line 221
+    .line 222
     :cond_4
     new-instance p1, Ljava/io/InterruptedIOException;
 
-    const-string v0, "timeout"
+    const-string/jumbo v0, "timeout"
 
     invoke-direct {p1, v0}, Ljava/io/InterruptedIOException;-><init>(Ljava/lang/String;)V
 
     throw p1
-    :try_end_1
-    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 224
+    .line 225
     :catch_0
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
+
+    .line 226
     new-instance p1, Ljava/io/InterruptedIOException;
 
     const-string v0, "interrupted"

@@ -80,6 +80,8 @@
 
 .field public static final KEY_PHRASE_TEXT_LIST:Ljava/lang/String; = "phraseTextList"
 
+.field public static final KEY_POI_MAPPABLE_ARRAY:Ljava/lang/String; = "poiMappableArray"
+
 .field public static final KEY_REPEAT_INFO_LIST:Ljava/lang/String; = "repeatInfoList"
 
 .field public static final KEY_RESULT_CODE:Ljava/lang/String; = "resultCode"
@@ -170,7 +172,7 @@
 
 .field public static final URI_STRING:Ljava/lang/String; = "content://com.samsung.android.scs.ai.text"
 
-.field public static final VERSION:I = 0x9
+.field public static final VERSION:I = 0xa
 
 
 # direct methods

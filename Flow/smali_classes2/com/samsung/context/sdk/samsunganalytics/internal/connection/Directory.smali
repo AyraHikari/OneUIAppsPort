@@ -31,7 +31,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 10
 
     .line 5
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
@@ -47,68 +47,75 @@
     sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DEVICE_CONTROLLER_DIR:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
     .line 6
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    new-instance v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
-    const-string v1, "DATA_DELETE"
+    const-string v3, "DATA_DELETE"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    const-string v4, "/app/delete"
+    const-string v5, "/app/delete"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v3, v4, v5}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DATA_DELETE:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DATA_DELETE:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
     .line 7
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    new-instance v3, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
-    const-string v1, "DLS_DIR"
+    const-string v5, "DLS_DIR"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    const-string v5, ""
+    const-string v7, ""
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v3, v5, v6, v7}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DLS_DIR:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    sput-object v3, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DLS_DIR:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
     .line 8
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    new-instance v5, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
-    const-string v1, "DLS_DIR_BAT"
+    const-string v8, "DLS_DIR_BAT"
 
-    const/4 v6, 0x3
+    const/4 v9, 0x3
 
-    invoke-direct {v0, v1, v6, v5}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v5, v8, v9, v7}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DLS_DIR_BAT:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    sput-object v5, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DLS_DIR_BAT:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    new-array v7, v7, [Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v9
 
     .line 4
-    sget-object v5, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DEVICE_CONTROLLER_DIR:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DATA_DELETE:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DLS_DIR:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
-
-    aput-object v2, v1, v4
-
-    aput-object v0, v1, v6
-
-    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
+    sput-object v7, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "directory"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -128,6 +135,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 4
     const-class v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
@@ -169,6 +184,14 @@
 
 .method public setDirectory(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "directory"
+        }
+    .end annotation
 
     .line 18
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->directory:Ljava/lang/String;

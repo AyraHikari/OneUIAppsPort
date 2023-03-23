@@ -923,7 +923,7 @@
     .line 1201
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "unknown HashAlgorithm"
+    const-string/jumbo p1, "unknown HashAlgorithm"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -988,8 +988,6 @@
     invoke-direct {p0, p1}, Lorg/spongycastle/crypto/digests/MD5Digest;-><init>(Lorg/spongycastle/crypto/digests/MD5Digest;)V
 
     return-object p0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1
@@ -1092,7 +1090,7 @@
     .line 1173
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown HashAlgorithm"
+    const-string/jumbo v0, "unknown HashAlgorithm"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1145,8 +1143,6 @@
     invoke-direct {p0}, Lorg/spongycastle/crypto/digests/MD5Digest;-><init>()V
 
     return-object p0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1
@@ -2274,7 +2270,7 @@
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown PRFAlgorithm"
+    const-string/jumbo v0, "unknown PRFAlgorithm"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -3215,7 +3211,7 @@
     .line 1259
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown HashAlgorithm"
+    const-string/jumbo v0, "unknown HashAlgorithm"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -3256,8 +3252,6 @@
     sget-object p0, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->md5:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     return-object p0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1

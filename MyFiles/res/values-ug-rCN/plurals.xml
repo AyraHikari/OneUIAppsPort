@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">最多选择 %d 个项目。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">无法将 %d 个文件移至回收站</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">无法将 %d 个文件夹移至回收站</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">无法将 %d 个项目移至回收站</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">تاللىغان %d ھۆججەت ئۆچۈرۈلىدۇ، چۈنكى ئۇلار بۇلۇت ياكى USB ئۈسكۈنىسىدە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تاللىغان %d ھۆججەت ئۆچۈرۈلىدۇ، چۈنكى ئۇ بۇلۇت ياكى USB ئۈسكۈنىسىدە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">تاللىغان %d قىسقۇچ ئۆچۈرۈلىدۇ، چۈنكى ئۇلار بۇلۇت ياكى USB ئۈسكۈنىسىدە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تاللىغان %d قىسقۇچ ئۆچۈرۈلىدۇ، چۈنكى ئۇ بۇلۇت ياكى USB ئۈسكۈنىسىدە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">تاللىغان %d نەرسە ئۆچۈرۈلىدۇ، چۈنكى ئۇلار بۇلۇت ياكى USB ئۈسكۈنىسىدە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تاللىغان %d نەرسە ئۆچۈرۈلىدۇ، چۈنكى ئۇ بۇلۇت ياكى USB ئۈسكۈنىسىدە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">‏%d ھۆججەت قىسىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت قىسىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">‏%d ھۆججەتنى قىسىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى قىسىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">‏%d قىسقۇچ قىسىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ قىسىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">‏%d قىسقۇچنى قىسىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى قىسىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">‏%d نەرسە قىسىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە قىسىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">‏%d نەرسىنى قىسىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى قىسىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">‏%d ھۆججەت كۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت كۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">‏%d ھۆججەتنى كۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى كۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">‏%d قىسقۇچ كۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ كۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">‏%d قىسقۇچنى كۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى كۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">‏%d نەرسە كۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە كۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">‏%d نەرسىنى كۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى كۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">تېلېفوندىن ‏%d ھۆججەتنى ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تېلېفوندىن ‏%d ھۆججەتنى ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">تاختا كومپيۇتېردىن ‏%d ھۆججەتنى ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تاختا كومپيۇتېردىن ‏%d ھۆججەتنى ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">تېلېفوندىن ‏%d قىسقۇچنى ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تېلېفوندىن ‏%d قىسقۇچنى ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">تاختا كومپيۇتېردىن ‏%d قىسقۇچنى ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تاختا كومپيۇتېردىن ‏%d قىسقۇچنى ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">تېلېفوندىن ‏%d نەرسىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تېلېفوندىن ‏%d نەرسىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">تاختا كومپيۇتېردىن ‏%d نەرسىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تاختا كومپيۇتېردىن ‏%d نەرسىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">‏%d ھۆججەتنى ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">‏%d قىسقۇچنى ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">سېۋەتتىن ‏%d نەرسە ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">سېۋەتتىن ‏%d نەرسە ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">‏%d نەرسىنى ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى ئۆچۈرۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">‏%d ھۆججەتنى يېشىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى يېشىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">‏%d قىسقۇچنى يېيىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى يېيىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">‏%d نەرسىنى يېيىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى يېيىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">‏%1$d ھۆججەتمۇ %2$s دىكى سېۋەتكە يۆتكىلىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%1$d ھۆججەتمۇ %2$s دىكى سېۋەتكە يۆتكىلىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">‏%d ھۆججەتنى قايتۇرۇۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى قايتۇرۇۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">‏%1$d قىسقۇچمۇ %2$s دىكى سېۋەتكە يۆتكىلىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%1$d قىسقۇچمۇ %2$s دىكى سېۋەتكە يۆتكىلىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">‏%d قىسقۇچنى قايتۇرۇۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى قايتۇرۇۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">您的内部存储已满。是否永久删除 %d 个文件？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">您的内部存储已满。是否永久删除 %d 个文件夹？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">您的内部存储已满。是否永久删除 %d 个项目？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">您的内部存储和 SD 卡已满。是否永久删除 %d 个文件？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">您的内部存储和 SD 卡已满。是否永久删除 %d 个文件夹？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">您的内部存储和 SD 卡已满。是否永久删除 %d 个项目？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">‏%d نەرسىنى قايتۇرۇۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى قايتۇرۇۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">‏%1$d نەرسىمۇ %2$s دىكى سېۋەتكە يۆتكىلىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%1$d نەرسىمۇ %2$s دىكى سېۋەتكە يۆتكىلىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">‏%d دىن كۆپ ئەپ كۆزنىكى ئېچىلمايدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d دىن كۆپ ئەپ كۆزنىكى ئېچىلمايدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">‏%d ھۆججەتنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">‏%d ھۆججەتنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">‏%d قىسقۇچنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">‏%d قىسقۇچنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">‏%d نەرسىنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">‏%d نەرسىنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى سېۋەتكە يۆتكەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">‏%d ھۆججەت سېۋەتكە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت سېۋەتكە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">‏%d قىسقۇچ سېۋەتكە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ سېۋەتكە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">‏%d نەرسە سېۋەتكە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە سېۋەتكە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">‏%d ھۆججەت يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">‏%d ھۆججەتنى يۆتكەۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى يۆتكەۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">‏%d قىسقۇچ يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">‏%d قىسقۇچنى يۆتكەۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچنى يۆتكەۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">‏%d نەرسە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە يۆتكىلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">‏%d نەرسىنى يۆتكەۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى يۆتكەۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d نەرسە قىسىلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d نەرسە قىسىلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">‏%1$d نەرسە %2$s گە كۆچۈرۈلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%1$d نەرسە %2$s گە كۆچۈرۈلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">ئۇنىڭدىكى پاپكا ۋە %d ھۆججەتنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">ئۇنىڭدىكى پاپكا ۋە ھۆججەتنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">ئۇلاردىكى %1$d پاپكا ۋە %2$d ھۆججەتنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">ئۇنىڭدىكى پاپكا ۋە ھۆججەتنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">‏%d نەرسە ئۆچۈرۈلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە ئۆچۈرۈلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d ھۆججەت چۈشۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ھۆججەت چۈشۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d قىسقۇچ چۈشۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d قىسقۇچ چۈشۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d نەرسە چۈشۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d نەرسە چۈشۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">پاپكىلارنى ئورتاقلىشالمايسىز. پاپكىلار بوش.</item>
+        <item quantity="one">پاپكىنى ئورتاقلىشالمايسىز. پاپكا بوش.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">‏%d ھۆججەت مەڭگۈلۈك ئۆچۈرۈلىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت مەڭگۈلۈك ئۆچۈرۈلىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">‏%d قىسقۇچ مەڭگۈلۈك ئۆچۈرۈلىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ مەڭگۈلۈك ئۆچۈرۈلىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">‏%d نەرسە يېشىلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە يېشىلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d ھۆججەت يىغقۇچقا قوشۇلدى.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ھۆججەت يىغقۇچقا قوشۇلدى.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">‏%d ھۆججەت ئامراقلاردىن چىقىرىۋېتىلدى.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت ئامراقلاردىن چىقىرىۋېتىلدى.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">‏%d قىسقۇچ يىغقۇچقا قوشۇلدى.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ يىغقۇچقا قوشۇلدى.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">‏%d قىسقۇچ ئامراقلاردىن چىقىرىۋېتىلدى.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ ئامراقلاردىن چىقىرىۋېتىلدى.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">‏%d نەرسە يىغقۇچقا قوشۇلدى.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە يىغقۇچقا قوشۇلدى.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">‏%d بۇيۇم ئامراقلاردىن چىقىرىۋېتىلدى.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d بۇيۇم ئامراقلاردىن چىقىرىۋېتىلدى.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d نەرسە</item>
+        <item quantity="one">1 نەرسە</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d نەرسە</item>
+        <item quantity="one">%d نەرسە</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">‏%d نەرسە كېسىش تاختىسىغا كۆچۈرۈلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە كېسىش تاختىسىغا كۆچۈرۈلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">‏%d نەرسە كېسىش تاختىسىغا يۆتكەلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە كېسىش تاختىسىغا يۆتكەلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d نەرسە تاللاندى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە تاللاندى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">‏%1$d نەرسە %2$s گە يۆتكەلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%1$d نەرسە %2$s گە يۆتكەلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">‏%d نەرسە سېۋەتكە يۆتكەلدى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە سېۋەتكە يۆتكەلدى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d تاللاندى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d تاللاندى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">您的 SD 卡已满。是否永久删除 %d 个文件？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">您的 SD 卡已满。是否永久删除 %d 个文件夹？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">您的 SD 卡已满。是否永久删除 %d 个项目？</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">此文件将在 %d 天后删除。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">此文件夹将在 %d 天后删除。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">‏%d ھۆججەتنى مەڭگۈلۈك ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەتنى مەڭگۈلۈك ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">‏%d ھۆججەت ئۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت ئۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">‏%d ھۆججەت ئەسلىگە كېلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ھۆججەت ئەسلىگە كېلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d قىسقۇچنى مەڭگۈلۈك ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d قىسقۇچنى مەڭگۈلۈك ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">‏%d قىسقۇچ ئۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ ئۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">‏%d قىسقۇچ ئەسلىگە كېلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d قىسقۇچ ئەسلىگە كېلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">‏%d نەرسىنى مەڭگۈلۈك ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسىنى مەڭگۈلۈك ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">‏%d نەرسە ئۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە ئۆچۈرۈلۈۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">‏%d نەرسە ئەسلىگە كېلىۋاتىدۇ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d نەرسە ئەسلىگە كېلىۋاتىدۇ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">将在 %d 天后删除</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">‏%d ئەپنى ئۆچۈرەمسىز؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ئەپنى ئۆچۈرەمسىز؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

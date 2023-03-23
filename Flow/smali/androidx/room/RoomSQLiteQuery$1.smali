@@ -1,4 +1,4 @@
-.class final Landroidx/room/RoomSQLiteQuery$1;
+.class Landroidx/room/RoomSQLiteQuery$1;
 .super Ljava/lang/Object;
 .source "RoomSQLiteQuery.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Landroidx/room/RoomSQLiteQuery;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$query"
+        }
+    .end annotation
 
     .line 91
     iput-object p1, p0, Landroidx/room/RoomSQLiteQuery$1;->val$query:Landroidx/room/RoomSQLiteQuery;
@@ -37,6 +45,16 @@
 # virtual methods
 .method public bindBlob(I[B)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 114
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery$1;->val$query:Landroidx/room/RoomSQLiteQuery;
@@ -48,6 +66,16 @@
 
 .method public bindDouble(ID)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 104
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery$1;->val$query:Landroidx/room/RoomSQLiteQuery;
@@ -59,6 +87,16 @@
 
 .method public bindLong(IJ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 99
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery$1;->val$query:Landroidx/room/RoomSQLiteQuery;
@@ -70,6 +108,14 @@
 
 .method public bindNull(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     .line 94
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery$1;->val$query:Landroidx/room/RoomSQLiteQuery;
@@ -81,6 +127,16 @@
 
 .method public bindString(ILjava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 109
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery$1;->val$query:Landroidx/room/RoomSQLiteQuery;

@@ -41,7 +41,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "windowSize must be at least 2"
+    const-string/jumbo p2, "windowSize must be at least 2"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -84,9 +84,7 @@
 
     iget-object v4, p0, Lorg/spongycastle/crypto/prng/ReversedWindowGenerator;->window:[B
 
-    iget-object v5, p0, Lorg/spongycastle/crypto/prng/ReversedWindowGenerator;->window:[B
-
-    array-length v5, v5
+    array-length v5, v4
 
     invoke-interface {v2, v4, v0, v5}, Lorg/spongycastle/crypto/prng/RandomGenerator;->nextBytes([BII)V
 

@@ -84,7 +84,7 @@
 .method public constructor <init>(Lcom/airbnb/lottie/LottieDrawable;)V
     .locals 1
 
-    .line 37
+    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 17
@@ -99,35 +99,41 @@
     .line 20
     iput-boolean v0, p0, Lcom/airbnb/lottie/TextDelegate;->cacheText:Z
 
-    .line 38
+    .line 39
     iput-object p1, p0, Lcom/airbnb/lottie/TextDelegate;->drawable:Lcom/airbnb/lottie/LottieDrawable;
 
     const/4 p1, 0x0
 
-    .line 39
+    .line 40
     iput-object p1, p0, Lcom/airbnb/lottie/TextDelegate;->animationView:Lcom/airbnb/lottie/LottieAnimationView;
 
     return-void
 .end method
 
+.method private getText(Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    return-object p1
+.end method
+
 .method private invalidate()V
     .locals 1
 
-    .line 94
+    .line 95
     iget-object v0, p0, Lcom/airbnb/lottie/TextDelegate;->animationView:Lcom/airbnb/lottie/LottieAnimationView;
 
     if-eqz v0, :cond_0
 
-    .line 95
+    .line 96
     invoke-virtual {v0}, Lcom/airbnb/lottie/LottieAnimationView;->invalidate()V
 
-    .line 97
+    .line 98
     :cond_0
     iget-object v0, p0, Lcom/airbnb/lottie/TextDelegate;->drawable:Lcom/airbnb/lottie/LottieDrawable;
 
     if-eqz v0, :cond_1
 
-    .line 98
+    .line 99
     invoke-virtual {v0}, Lcom/airbnb/lottie/LottieDrawable;->invalidateSelf()V
 
     :cond_1
@@ -136,16 +142,10 @@
 
 
 # virtual methods
-.method public getText(Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    return-object p1
-.end method
-
 .method public final getTextInternal(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 83
+    .line 84
     iget-boolean v0, p0, Lcom/airbnb/lottie/TextDelegate;->cacheText:Z
 
     if-eqz v0, :cond_0
@@ -158,7 +158,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 84
+    .line 85
     iget-object v0, p0, Lcom/airbnb/lottie/TextDelegate;->stringMap:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -169,18 +169,18 @@
 
     return-object p1
 
-    .line 86
+    .line 87
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/airbnb/lottie/TextDelegate;->getText(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/airbnb/lottie/TextDelegate;->getText(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 87
+    .line 88
     iget-boolean v1, p0, Lcom/airbnb/lottie/TextDelegate;->cacheText:Z
 
     if-eqz v1, :cond_1
 
-    .line 88
+    .line 89
     iget-object v1, p0, Lcom/airbnb/lottie/TextDelegate;->stringMap:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -192,12 +192,12 @@
 .method public invalidateAllText()V
     .locals 1
 
-    .line 78
+    .line 79
     iget-object v0, p0, Lcom/airbnb/lottie/TextDelegate;->stringMap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    .line 79
+    .line 80
     invoke-direct {p0}, Lcom/airbnb/lottie/TextDelegate;->invalidate()V
 
     return-void
@@ -206,12 +206,12 @@
 .method public invalidateText(Ljava/lang/String;)V
     .locals 1
 
-    .line 70
+    .line 71
     iget-object v0, p0, Lcom/airbnb/lottie/TextDelegate;->stringMap:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 71
+    .line 72
     invoke-direct {p0}, Lcom/airbnb/lottie/TextDelegate;->invalidate()V
 
     return-void
@@ -220,7 +220,7 @@
 .method public setCacheText(Z)V
     .locals 0
 
-    .line 63
+    .line 64
     iput-boolean p1, p0, Lcom/airbnb/lottie/TextDelegate;->cacheText:Z
 
     return-void
@@ -229,12 +229,12 @@
 .method public setText(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 54
+    .line 55
     iget-object v0, p0, Lcom/airbnb/lottie/TextDelegate;->stringMap:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 55
+    .line 56
     invoke-direct {p0}, Lcom/airbnb/lottie/TextDelegate;->invalidate()V
 
     return-void

@@ -3,6 +3,11 @@
 .source "LogWriter.java"
 
 
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
 # instance fields
 .field private mBuilder:Ljava/lang/StringBuilder;
 
@@ -12,6 +17,14 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
 
     .line 43
     invoke-direct {p0}, Ljava/io/Writer;-><init>()V
@@ -91,6 +104,18 @@
 
 .method public write([CII)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buf",
+            "offset",
+            "count"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

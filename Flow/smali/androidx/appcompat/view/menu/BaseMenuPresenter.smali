@@ -31,6 +31,18 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "menuLayoutRes",
+            "itemLayoutRes"
+        }
+    .end annotation
 
     .line 61
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -58,6 +70,16 @@
 # virtual methods
 .method protected addItemView(Landroid/view/View;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "itemView",
+            "childIndex"
+        }
+    .end annotation
 
     .line 134
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -83,10 +105,30 @@
 .end method
 
 .method public abstract bindItemView(Landroidx/appcompat/view/menu/MenuItemImpl;Landroidx/appcompat/view/menu/MenuView$ItemView;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "item",
+            "itemView"
+        }
+    .end annotation
 .end method
 
 .method public collapseItemActionView(Landroidx/appcompat/view/menu/MenuBuilder;Landroidx/appcompat/view/menu/MenuItemImpl;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "menu",
+            "item"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -95,6 +137,14 @@
 
 .method public createItemView(Landroid/view/ViewGroup;)Landroidx/appcompat/view/menu/MenuView$ItemView;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parent"
+        }
+    .end annotation
 
     .line 167
     iget-object v0, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mSystemInflater:Landroid/view/LayoutInflater;
@@ -114,6 +164,16 @@
 
 .method public expandItemActionView(Landroidx/appcompat/view/menu/MenuBuilder;Landroidx/appcompat/view/menu/MenuItemImpl;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "menu",
+            "item"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -122,6 +182,16 @@
 
 .method protected filterLeftoverView(Landroid/view/ViewGroup;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "childIndex"
+        }
+    .end annotation
 
     .line 148
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->removeViewAt(I)V
@@ -151,7 +221,7 @@
 .method public getId()I
     .locals 1
 
-    .line 243
+    .line 244
     iget v0, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mId:I
 
     return v0
@@ -159,6 +229,18 @@
 
 .method public getItemView(Landroidx/appcompat/view/menu/MenuItemImpl;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "item",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     .line 183
     instance-of v0, p2, Landroidx/appcompat/view/menu/MenuView$ItemView;
@@ -188,6 +270,14 @@
 
 .method public getMenuView(Landroid/view/ViewGroup;)Landroidx/appcompat/view/menu/MenuView;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "root"
+        }
+    .end annotation
 
     .line 77
     iget-object v0, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
@@ -228,6 +318,16 @@
 
 .method public initForMenu(Landroid/content/Context;Landroidx/appcompat/view/menu/MenuBuilder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "menu"
+        }
+    .end annotation
 
     .line 70
     iput-object p1, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mContext:Landroid/content/Context;
@@ -247,6 +347,16 @@
 
 .method public onCloseMenu(Landroidx/appcompat/view/menu/MenuBuilder;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "menu",
+            "allMenusAreClosing"
+        }
+    .end annotation
 
     .line 213
     iget-object v0, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mCallback:Landroidx/appcompat/view/menu/MenuPresenter$Callback;
@@ -262,20 +372,36 @@
 
 .method public onSubMenuSelected(Landroidx/appcompat/view/menu/SubMenuBuilder;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "menu"
+        }
+    .end annotation
 
     .line 220
     iget-object v0, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mCallback:Landroidx/appcompat/view/menu/MenuPresenter$Callback;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 221
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    .line 222
+    :cond_0
+    iget-object p1, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mMenu:Landroidx/appcompat/view/menu/MenuBuilder;
+
+    :goto_0
     invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/MenuPresenter$Callback;->onOpenSubMenu(Landroidx/appcompat/view/menu/MenuBuilder;)Z
 
     move-result p1
 
     return p1
 
-    :cond_0
+    :cond_1
     const/4 p1, 0x0
 
     return p1
@@ -283,6 +409,14 @@
 
 .method public setCallback(Landroidx/appcompat/view/menu/MenuPresenter$Callback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cb"
+        }
+    .end annotation
 
     .line 154
     iput-object p1, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mCallback:Landroidx/appcompat/view/menu/MenuPresenter$Callback;
@@ -292,8 +426,16 @@
 
 .method public setId(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
-    .line 247
+    .line 248
     iput p1, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mId:I
 
     return-void
@@ -301,6 +443,16 @@
 
 .method public shouldIncludeItem(ILandroidx/appcompat/view/menu/MenuItemImpl;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "childIndex",
+            "item"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 
@@ -309,6 +461,14 @@
 
 .method public updateMenuView(Z)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cleared"
+        }
+    .end annotation
 
     .line 91
     iget-object p1, p0, Landroidx/appcompat/view/menu/BaseMenuPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
@@ -373,11 +533,11 @@
 
     if-eqz v7, :cond_1
 
+    .line 104
     move-object v7, v6
 
     check-cast v7, Landroidx/appcompat/view/menu/MenuView$ItemView;
 
-    .line 104
     invoke-interface {v7}, Landroidx/appcompat/view/menu/MenuView$ItemView;->getItemData()Landroidx/appcompat/view/menu/MenuItemImpl;
 
     move-result-object v7

@@ -9,7 +9,7 @@
     <string name="abc_action_bar_up_description">Omhoog navigeren</string>
     <string name="abc_action_menu_overflow_description">Meer opties</string>
     <string name="abc_action_mode_done">Klaar</string>
-    <string name="abc_activity_chooser_view_see_all">Alles weergeven</string>
+    <string name="abc_activity_chooser_view_see_all">Alles tonen</string>
     <string name="abc_activitychooserview_choose_application">Een app selecteren</string>
     <string name="abc_capital_off">UIT</string>
     <string name="abc_capital_on">AAN</string>
@@ -60,6 +60,7 @@
     <string name="air_quality">Luchtkwaliteit</string>
     <string name="air_quality_next_tts">Latere prognoses per dag luchtkwaliteit</string>
     <string name="air_quality_previous_tts">Eerdere prognoses per dag luchtkwaliteit</string>
+    <string name="alert_title">Waarschuwing voor extreem weer</string>
     <string name="all_added_cities">Alle toegevoegde plaatsen</string>
     <string name="allow">Toestaan</string>
     <string name="allow_permission_in_settings">Als u deze functie wilt gebruiken, moet u machtigingen toestaan in Instellingen.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Actie niet ondersteund.</string>
     <string name="apply_daylight_saving_time">Zomertijd toepassen?</string>
     <string name="as_possible_after_verification">Rapport verzonden. Plaatsnaam wordt zo snel mogelijk na de verificatie gewijzigd.</string>
+    <string name="auto_refresh_on_screen_description">Ontvang elk uur automatisch een nieuw weerbericht. Als dit is ingeschakeld, kun je niet handmatig vernieuwen.</string>
+    <string name="auto_refresh_on_the_go">Automatisch onderweg vernieuwen</string>
+    <string name="auto_refresh_on_the_go_advanced">Geavanceerd</string>
+    <string name="auto_refresh_on_the_go_description">Ontvang frequentere updates van het weerbericht als u autorijdt, fietst, hardloopt of wandelt. Als dit is ingeschakeld, kunt u niet handmatig vernieuwen.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Ontvang frequentere updates van het weerbericht als je autorijdt, fietst, hardloopt of wandelt.</string>
     <string name="bottomsheet_action_expand_halfway">Half uitvouwen</string>
     <string name="btn_report">Melden</string>
     <string name="button_finish">Voltooien</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Tik twee keer voor meer informatie.</string>
     <string name="china">China</string>
     <string name="cities_button">Plaatsen</string>
+    <string name="city_added">Plaats toegevoegd.</string>
     <string name="city_list_text">Plaatsen</string>
     <string name="clear">Helder</string>
     <string name="clear_text_end_icon_content_description">Tekst wissen</string>
@@ -108,9 +115,9 @@
     <string name="cloudy_with_sunny_intervals">Bewolkt met zonnige perioden</string>
     <string name="comma">,</string>
     <string name="comments">Opmerkingen</string>
-    <string name="common_google_play_services_enable_button">Inschakelen</string>
+    <string name="common_google_play_services_enable_button">Aanzetten</string>
     <string name="common_google_play_services_enable_text">%1$s werkt niet, tenzij je Google Play-services inschakelt.</string>
-    <string name="common_google_play_services_enable_title">Google Play-services inschakelen</string>
+    <string name="common_google_play_services_enable_title">Google Play-services aanzetten</string>
     <string name="common_google_play_services_install_button">Installeren</string>
     <string name="common_google_play_services_install_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die je nog niet op je apparaat hebt.</string>
     <string name="common_google_play_services_install_title">Google Play-services ophalen</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">De locatiegegevens van uw apparaat worden naar de contentprovider verzonden zodat u lokale weerberichten kunt ontvangen.</string>
     <string name="contents_error_msg">Dit service is tijdelijk niet beschikbaar. Probeer het later opnieuw.</string>
     <string name="copy">Kopiëren</string>
-    <string name="copy_toast_msg">Link naar klembord gekopieerd</string>
     <string name="correct_city_name">Plaatsnaam corrigeren</string>
     <string name="couldnt_find_location">Kan locatie niet vinden</string>
     <string name="cover_screen_top_sync_dialog_text">Dezelfde locatie instellen op het hoofdscherm?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Item neergezet op positie %d.</string>
     <string name="dragndroplist_drag_start">Begonnen met item naar positie %d slepen.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Item op positie %d kan niet worden gesleept.</string>
+    <string name="drawer_tips">Tips %s</string>
     <string name="drawer_tips_message">Tik hier voor het toevoegen, verwijderen en opnieuw indelen van locaties. U kunt ook meerdere widgets toevoegen om verschillende locaties op het Startscherm weer te geven.</string>
     <string name="drawer_tips_message_1">Tik op Locaties beheren onderaan dit menu voor het toevoegen, verwijderen en opnieuw indelen van locaties.</string>
     <string name="drawer_tips_message_2">U kunt meer dan één widget toevoegen aan het Startscherm om verschillende locaties tegelijk weer te geven.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Geavanceerd</string>
     <string name="exposed_dropdown_menu_content_description">Dropdownmenu weergeven</string>
     <string name="failed_to_send_report">Rapport niet verzonden</string>
-    <string name="fallback_menu_item_copy_link">Link kopiëren</string>
-    <string name="fallback_menu_item_open_in_browser">Openen in browser</string>
-    <string name="fallback_menu_item_share_link">Link delen</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Favoriete locatie</string>
     <string name="feel_like_pd_minus_temp">Voelt als -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Video met verwachting</string>
     <string name="format_km_per_hour">%s km/u</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Vr</string>
     <string name="general">Algemeen</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Krijg persoonlijke inhoud op basis van uw gebruik van de telefoon.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Krijg persoonlijke inhoud op basis van uw gebruik van de tablet.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">weerbericht, inclusief uw huidige locatie, te ontvangen van Weer</string>
     <string name="go_to_website">Ga naar website</string>
     <string name="goto_apps">Nieuwe update beschikbaar. Nu installeren?</string>
     <string name="goto_apps_later">Later</string>
     <string name="goto_apps_now">Nu</string>
     <string name="goto_apps_update_title">Meldingen nieuwe inhoud</string>
     <string name="header_tts">Koptekst</string>
+    <string name="heavy">Zwaar</string>
     <string name="heavy_rain">Zware regen</string>
     <string name="heavy_rain_followed_by_intense_heat">Veel regen en daarna zeer warm</string>
     <string name="heavy_rain_followed_by_light_rain">Veel regen en daarna zeer warm</string>
@@ -266,7 +273,7 @@
     <string name="how_to_add_delete_set_location_as_favorite">U kunt een locatie toevoegen, verwijderen of als uw favoriet instellen.</string>
     <string name="how_to_add_hold_a_blank">De widget Weer toevoegen aan het Startscherm:</string>
     <string name="how_to_change_the_location_appearance">Als u de locatie of de weergave van de widget wilt wijzigen, houdt u deze ingedrukt en tikt u op Instellingen.</string>
-    <string name="how_to_favorite_location_used_in_location">Uw favoriete locatie wordt gebruikt in meldingen, Agenda en Always On Display.</string>
+    <string name="how_to_favorite_location_used_in_location">Je favoriete locatie wordt gebruikt in meldingen, Agenda en Always On Display.</string>
     <string name="how_to_press_and_hold_space">Druk op een lege plek op het Startscherm, houd vast en tik vervolgens op Widgets.</string>
     <string name="how_to_press_and_hold_widget">Druk op een widget en houd vast om deze te selecteren.</string>
     <string name="how_to_search_or_swipe">Zoek en veeg om Weer te vinden.</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Zichtbaarheid</string>
     <string name="life_index_wind">Wind</string>
     <string name="life_index_wind_force">Windsnelheid</string>
+    <string name="light">Licht</string>
     <string name="light_rain_followed_by_heavy_rain">Wat regen gevolgd door stevige buien</string>
     <string name="light_rain_with_some_heavy_rain">Wat regen met af en toe stevige buien</string>
     <string name="link_tts">Koppeling</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Geen resultaten gevonden.</string>
     <string name="message_service_not_available">Service is nu niet beschikbaar.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Ma</string>
     <string name="more">Meer</string>
     <string name="more_cuntact_us">Neem contact op</string>
     <string name="more_information">Meer</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Tik hier om de standaard weerlocatie te wijzigen en al uw locaties te beheren.</string>
     <string name="new_version_available">Nieuwe versie van %s beschikbaar.</string>
     <string name="new_version_is_available">Er is een nieuwe versie beschikbaar.</string>
+    <string name="news_menu_show_news">Nieuws weergeven</string>
+    <string name="news_opt_in_banner_title_text">Blijf op de hoogte van actuele gebeurtenissen door nieuws weer te geven in de Weerwidget.</string>
+    <string name="news_opt_in_popup_desc_text">Blijf op de hoogte van het wereldnieuws door recente koppen van %s weer te geven in de Weerwidget.</string>
+    <string name="news_opt_in_popup_title_text">Nieuws en weerbericht bekijken in één widget</string>
+    <string name="news_request_agree_text">Tikken voor nieuws van %s</string>
+    <string name="news_widget_bubble_text">Ontvang nieuws in de weer-widget.</string>
+    <string name="news_widget_dummy_title">Topartikel van vandaag</string>
+    <string name="news_widget_new_dummy_title">5 dingen die u moet weten over deze ochtend</string>
+    <string name="news_widget_oobe_text">Tik hier en voeg nieuws toe.</string>
     <string name="next">Volgende plaats</string>
+    <string name="next_btn">Volgende</string>
     <string name="next_city">Tik twee keer om het weerbericht voor de volgende stad weer te geven.</string>
     <string name="night_tts">Nacht</string>
     <string name="no_application_available">Geen applicaties beschikbaar.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Geen weerbericht</string>
     <string name="not_in_use">Niet in gebruik</string>
     <string name="not_now">Niet nu</string>
+    <string name="not_now_btn">Niet nu</string>
     <string name="not_selected">Niet geselecteerd</string>
     <string name="not_set">Niet ingesteld</string>
     <string name="nothing_selected">Niets geselecteerd.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Voor een snelle en nauwkeurige locatiedetectie tikt u op INSTELLINGEN en stelt u de Locatiemethode in op GPS, Wi-Fi en mobiele netwerken.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Voor een snelle en nauwkeurige locatiedetectie tikt u op INSTELLINGEN en stelt u de Locatiemethode in op GPS en Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Als u het lokale weerbericht wilt zien, schakelt u Locatie-instellingen in en zorgt u dat de stand is ingesteld op Hoge precisie.</string>
+    <string name="notification_alert_channel_name">Waarschuwing voor extreem weer</string>
     <string name="notification_apps_update_channel_name">Updatemeldingen</string>
     <string name="notification_auto_refresh_channel_name">Weerbericht autom. vernieuwen</string>
     <string name="notification_dex_channel_name">Weer in Samsung DeX</string>
@@ -544,7 +565,8 @@
     <string name="open_app">App openen</string>
     <string name="open_source_licences">Open bron-licenties</string>
     <string name="other_locations">Overige locaties</string>
-    <string name="password_toggle_content_description">Wachtwoord weergeven</string>
+    <string name="partly_sunny">Deels zonnig</string>
+    <string name="password_toggle_content_description">Wachtwoord tonen</string>
     <string name="paused">Gepauzeerd</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/u</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">"'%1$s' is gekopieerd naar het klembord."</string>
     <string name="preview">Voorbeeld %s</string>
     <string name="previous">Vorige plaats</string>
+    <string name="previous_btn">Vorige</string>
     <string name="previous_city">Tik twee keer om het weerbericht voor de vorige stad weer te geven.</string>
     <string name="privacy_policy">Privacybeleid</string>
     <string name="probability_of_rain_text">Kans op regen</string>
     <string name="protect_your_content">Uw inhoud beheren</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar en kaarten</string>
     <string name="rain">Regen</string>
     <string name="rain_followed_by_intense_heat">Regen en daarna zeer warm</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Tik voor het bijwerken van het weerbericht op INSTELLINGEN, ga naar App-info > Machtigingen, sta de volgende machtigingen toe en probeer het opnieuw:</string>
     <string name="runtime_location_permission_title">Machtigingen toestaan</string>
     <string name="runtime_oem_grant_permission_desc">De app %s vraagt toestemming om het volgende te openen:</string>
+    <string name="sat">Za</string>
     <string name="save_button">Opslaan</string>
     <string name="search_menu_title">Zoeken</string>
     <string name="search_most_searched_for">Meest gezocht naar</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Nieuwe inhoud beschikbaar</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Meer</string>
+    <string name="sesl_preferecne_badge_description">Nieuwe melding</string>
     <string name="sesl_preferencecategory_added_title">Koptekst</string>
     <string name="sesl_search_hint">Zoeken</string>
     <string name="sesl_searchview_description_clear">Zoekveld wissen</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Minder weergeven</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Uit</string>
+    <string name="status_on">Aan</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Zo</string>
     <string name="sunny">Zonnig</string>
     <string name="sunny_with_some_clouds">Zonnig met hier en daar bewolking</string>
     <string name="sunny_with_some_heavy_rain">Zonnig met af en toe veel regen</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Tik hier om de weerberichtgegevens van uw oude apparaat te herstellen.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Tik op OPNIEUW PROBEREN om uw locatie nogmaals te zoeken.</string>
     <string name="tap_setting_message_edge_panel">Schakel Locatie in om het lokale weerbericht weer te geven.</string>
+    <string name="tap_the_settings_icon">Tik op het pictogram Instellingen.</string>
     <string name="tap_to_get_the_weather">Tik om het weerbericht op te halen</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Algemene voorwaarden</string>
     <string name="the_latest_version">De laatste versie is al geïnstalleerd.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Dit wordt ook toegepast voor meldingen en Agenda.</string>
+    <string name="thu">Do</string>
     <string name="tick_box_tts">Selectievakje</string>
     <string name="ticked_tts">Geselecteerd</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Per uur</string>
     <string name="title_select_locations">Locaties selecteren</string>
     <string name="title_theme">"Thema's"</string>
+    <string name="to_continue_agree_to_updated">U moet akkoord gaan met onze bijgewerkte %s, als u verder wilt gaan.</string>
     <string name="to_get_local_weather_chn">"Uw huidige locatie wordt doorgegeven aan de provider van weerservices om lokale weerberichten te kunnen ontvangen. (Raadpleeg de %1$sAlgemene voorwaarden%2$s en het %3$sPrivacybeleid%4$s van de provider.)
 Andere apps en services op uw apparaat kunnen toegang hebben tot de ontvangen weergegevens om het weer te kunnen tonen in de betreffende apps.
 Om u van een continu weerbericht te voorzien, zal Weer toegang hebben tot uw locatie, zelfs als u de app niet gebruikt."</string>
     <string name="today">Vandaag</string>
+    <string name="try_it_out_btn">Probeer het</string>
+    <string name="tue">Di</string>
+    <string name="turn_on_to_use_precise_location">Als u deze functie wilt gebruiken, staat u toe dat %s altijd toegang krijgt tot uw locatie en dat Precisielocatie gebruiken wordt ingeschakeld. Tik op Instellingen en ga naar Machtigingen > Locatie.</string>
     <string name="tw_title_weather_broadcast">Bericht</string>
-    <string name="unable_to_check_for_updates">Kan niet controleren op updates. Er is geen netwerkverbinding.</string>
+    <string name="unable_to_check_for_updates">Kan niet controleren op updates. Probeer het later opnieuw.</string>
     <string name="unable_to_receive_info_msg">Kan info niet ontvangen</string>
     <string name="unticked_tts">Gedeselecteerd</string>
     <string name="unused">Ongebruikt</string>
     <string name="update">Bijwerken</string>
     <string name="update_abb8">Bijwerken</string>
     <string name="update_app">App bijwerken</string>
+    <string name="updated_tile_chn">Bijgewerkt: %s</string>
     <string name="updated_tts">%s is bijgewerkt</string>
+    <string name="use_current_location">Huidige locatie gebruiken</string>
     <string name="use_current_location_agree_popup">"Uw huidige locatie wordt doorgegeven aan de provider van weerservices om lokale weerberichten te kunnen ontvangen. (Zie hiervoor het %1$sprivacybeleid%2$s van de provider.)
 Andere apps en services op uw apparaat kunnen gebruikmaken van de ontvangen weergegevens om het weer te kunnen tonen in de betreffende apps."</string>
     <string name="use_current_location_and_background_agree_popup">"Uw huidige locatie wordt doorgegeven aan de provider van weerservices om lokale weerberichten te kunnen ontvangen. (Raadpleeg het %1$sprivacy beleid%2$s van de provider.)
@@ -746,9 +784,16 @@ Om u van een continu weerbericht te voorzien, zal Weer toegang hebben tot uw loc
 U kunt het gebruik van uw locatie uitschakelen in de instellingen van de Weer-app."</string>
     <string name="use_current_location_body_msg_chn">"Lees aandachtig voordat u “Weer” gebruikt:
 Als u het weer van uw huidige locatie wilt weten, moet u de externe serviceprovider toestemming geven om continu (zelfs wanneer u de service niet gebruikt) toegang te hebben tot uw apparaat en bepaalde gegevens te verwerven, zoals hieronder vermeld. Lees de %1$sAlgemene voorwaarden%2$s en het %3$sPrivacybeleid%4$s van de derde serviceprovider zorgvuldig door en zorg dat u dit goed begrijpt. U kunt uw toestemming intrekken door “Locatie” in het menu Instellingen uit te schakelen. Andere apps en services op uw apparaat kunnen toegang krijgen tot de ontvangen weergegevens om het weer te kunnen tonen in de betreffende apps en services."</string>
+    <string name="use_current_location_body_msg_kor">"Gegevens van uw huidige locatie worden verzameld en gebruikt om bepaalde functies van de Weer-app te bieden, zoals berichten over het lokale weer.
+
+Om doorlopend weerberichten te kunnen aanbieden, verwerkt deze app regelmatig gegevens over uw locatie, zelfs als u de app niet gebruikt. Als u verdergaat, gaat u akkoord met het verzamelen en verwerken van uw locatie voor de bovenstaande doeleinden.
+
+U kunt het verzamelen en gebruiken van deze locatie stoppen in de instellingen van de Weer-app."</string>
     <string name="use_current_location_body_purpose">Doel</string>
     <string name="use_current_location_body_purpose_content">Om het weerbericht voor uw huidige locatie weer te geven</string>
     <string name="use_current_location_body_search_provider">Serviceprovider</string>
+    <string name="use_current_location_continue">Doorgaan</string>
+    <string name="use_current_location_not_now">Niet nu</string>
     <string name="use_current_location_off_alert_popup">Huidige locatiegegevens worden verwijderd.</string>
     <string name="useful_informations">Life tips en andere rapporten</string>
     <string name="using_as">Gebruiken als %s</string>
@@ -856,9 +901,11 @@ Als u het weer van uw huidige locatie wilt weten, moet u de externe serviceprovi
     <string name="weather_tip">Weertips</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Wo</string>
     <string name="weekly_forecast">Dagelijks</string>
     <string name="widget_background">Widgetachtergrond</string>
     <string name="widget_empty_text">Tik voor weerbericht</string>
+    <string name="widget_location">Plaatsnaam</string>
     <string name="widget_name_4x1">Weer en Klok</string>
     <string name="widget_setting">Instellingen</string>
     <string name="widget_setting_background_color">Achtergrondkleur</string>

@@ -3,6 +3,11 @@
 .source "OnCompositionLoadedListener.java"
 
 
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
 # virtual methods
 .method public abstract onCompositionLoaded(Lcom/airbnb/lottie/LottieComposition;)V
 .end method

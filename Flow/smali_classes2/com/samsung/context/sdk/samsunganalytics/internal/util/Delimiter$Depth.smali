@@ -40,7 +40,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
     .line 10
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
@@ -58,57 +58,68 @@
     sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->ONE_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
 
     .line 11
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+    new-instance v1, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
 
-    const-string v1, "TWO_DEPTH"
+    const-string v3, "TWO_DEPTH"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    const-string v4, "\u0004"
+    const-string v5, "\u0004"
 
-    const-string v5, "\u0005"
+    const-string v6, "\u0005"
 
-    invoke-direct {v0, v1, v3, v4, v5}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v3, v4, v5, v6}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->TWO_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->TWO_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
 
     .line 12
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+    new-instance v3, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
 
-    const-string v1, "THREE_DEPTH"
+    const-string v5, "THREE_DEPTH"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    const-string v5, "\u0006"
+    const-string v7, "\u0006"
 
-    const-string v6, "\u0007"
+    const-string v8, "\u0007"
 
-    invoke-direct {v0, v1, v4, v5, v6}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v3, v5, v6, v7, v8}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->THREE_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+    sput-object v3, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->THREE_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
 
-    const/4 v1, 0x3
+    const/4 v5, 0x3
 
-    new-array v1, v1, [Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+    new-array v5, v5, [Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 9
-    sget-object v5, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->ONE_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->TWO_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
-
-    aput-object v2, v1, v3
-
-    aput-object v0, v1, v4
-
-    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+    sput-object v5, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "coll",
+            "keyvalue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -132,6 +143,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 9
     const-class v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;

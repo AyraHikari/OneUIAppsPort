@@ -24,21 +24,17 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/util/regex/Pattern;)V
     .locals 0
 
-    .line 254
+    .line 282
     invoke-direct {p0}, Lorg/jsoup/select/Evaluator;-><init>()V
 
-    .line 255
-    invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    .line 283
+    invoke-static {p1}, Lorg/jsoup/internal/Normalizer;->normalize(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lorg/jsoup/select/Evaluator$AttributeWithValueMatching;->key:Ljava/lang/String;
 
-    .line 256
+    .line 284
     iput-object p2, p0, Lorg/jsoup/select/Evaluator$AttributeWithValueMatching;->pattern:Ljava/util/regex/Pattern;
 
     return-void
@@ -49,7 +45,7 @@
 .method public matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
     .locals 1
 
-    .line 261
+    .line 289
     iget-object p1, p0, Lorg/jsoup/select/Evaluator$AttributeWithValueMatching;->key:Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Lorg/jsoup/nodes/Element;->hasAttr(Ljava/lang/String;)Z
@@ -94,7 +90,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 266
+    .line 294
     iget-object v1, p0, Lorg/jsoup/select/Evaluator$AttributeWithValueMatching;->key:Ljava/lang/String;
 
     const/4 v2, 0x0

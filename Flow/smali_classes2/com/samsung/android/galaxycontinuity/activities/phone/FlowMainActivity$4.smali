@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$isVisible"
+        }
+    .end annotation
 
-    .line 582
+    .line 665
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
 
     iput-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$4;->val$isVisible:Z
@@ -42,36 +52,36 @@
 .method public run()V
     .locals 2
 
-    .line 585
+    .line 668
+    iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$4;->val$isVisible:Z
+
+    if-eqz v0, :cond_0
+
+    .line 669
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/LinearLayout;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/TextView;
 
     move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 586
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/LinearLayout;
-
-    move-result-object v0
-
-    iget-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$4;->val$isVisible:Z
-
-    if-eqz v1, :cond_0
 
     const/4 v1, 0x0
 
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
     goto :goto_0
 
+    .line 671
     :cond_0
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/TextView;
+
+    move-result-object v0
+
     const/16 v1, 0x8
 
-    :goto_0
-    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    :cond_1
+    :goto_0
     return-void
 .end method

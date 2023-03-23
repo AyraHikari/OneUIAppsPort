@@ -16,6 +16,10 @@
 
 
 # instance fields
+.field private final DEFAULT_ANIMATION_CANCEL_DURATION:I
+
+.field private final DEFAULT_ANIMATION_DURATION:I
+
 .field private final DEFAULT_DRAWABLE_PADDING:I
 
 .field private final DEFAULT_LEFT_COLOR:I
@@ -38,6 +42,8 @@
 
 .field private mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
+.field private mLastRectAlpha:F
+
 .field private mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
 .field private mSwipeBitmap:Landroid/graphics/Bitmap;
@@ -53,12 +59,12 @@
 .method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;Landroid/content/Context;)V
     .locals 1
 
-    .line 45
+    .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "#6ebd52"
 
-    .line 23
+    .line 24
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result v0
@@ -67,7 +73,7 @@
 
     const-string v0, "#56c0e5"
 
-    .line 24
+    .line 25
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result v0
@@ -76,7 +82,7 @@
 
     const-string v0, "#ffffff"
 
-    .line 25
+    .line 26
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result v0
@@ -85,48 +91,63 @@
 
     const/16 v0, 0xf
 
-    .line 26
+    .line 27
     iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->DEFAULT_TEXT_SIZE:I
 
     const/16 v0, 0xa
 
-    .line 27
+    .line 28
     iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->DEFAULT_DRAWABLE_PADDING:I
+
+    const/16 v0, 0x64
+
+    .line 30
+    iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->DEFAULT_ANIMATION_DURATION:I
+
+    const/16 v0, 0xfa
+
+    .line 31
+    iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->DEFAULT_ANIMATION_CANCEL_DURATION:I
 
     const/4 v0, 0x0
 
-    .line 29
+    .line 33
     iput-object v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mBgLeftToRight:Landroid/graphics/Paint;
 
-    .line 30
+    .line 34
     iput-object v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mBgRightToLeft:Landroid/graphics/Paint;
 
-    .line 31
+    .line 35
     iput-object v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mTextPaint:Landroid/graphics/Paint;
 
-    .line 32
+    .line 36
     iput-object v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeRect:Landroid/graphics/Rect;
 
-    .line 33
+    .line 37
     iput-object v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
 
-    .line 34
+    .line 38
     iput-object v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
     const/4 v0, 0x0
 
-    .line 38
+    .line 42
     iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->DIRECTION_LTR:I
 
     const/4 v0, 0x1
 
-    .line 39
+    .line 43
     iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->DIRECTION_RTL:I
 
-    .line 46
-    iput-object p2, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mContext:Landroid/content/Context;
+    const/4 v0, 0x0
+
+    .line 44
+    iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mLastRectAlpha:F
 
     .line 47
+    iput-object p2, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mContext:Landroid/content/Context;
+
+    .line 48
     iput-object p1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     return-void
@@ -135,12 +156,12 @@
 .method private calculateTopOfList(Landroid/view/View;)I
     .locals 2
 
-    .line 127
+    .line 126
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result v0
 
-    .line 128
+    .line 127
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p1
@@ -149,12 +170,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 129
+    .line 128
     instance-of v1, p1, Landroidx/recyclerview/widget/RecyclerView;
 
     if-nez v1, :cond_0
 
-    .line 130
+    .line 129
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->calculateTopOfList(Landroid/view/View;)I
 
     move-result p1
@@ -194,32 +215,32 @@
 .method private drawRectInto(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/drawable/Drawable;Landroid/graphics/Paint;ILjava/lang/String;FI)V
     .locals 6
 
-    .line 222
+    .line 231
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 224
+    .line 233
     invoke-virtual {p5, p6}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 225
+    .line 234
     iget-object p8, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mTextPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p8, p6}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 227
+    .line 236
     invoke-virtual {p1, p2}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/Rect;)Z
 
-    .line 228
+    .line 237
     invoke-virtual {p1, p2, p5}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
     if-eqz p4, :cond_0
 
-    .line 231
+    .line 240
     invoke-virtual {p4, p3}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 232
+    .line 241
     invoke-virtual {p4, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 235
+    .line 244
     :cond_0
     iget-object v2, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mTextPaint:Landroid/graphics/Paint;
 
@@ -235,7 +256,7 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->drawSwipeText(Landroid/graphics/Canvas;Landroid/graphics/Paint;Ljava/lang/String;ILandroid/graphics/Rect;)V
 
-    .line 237
+    .line 246
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
@@ -246,189 +267,298 @@
 
     move-object/from16 v10, p0
 
-    .line 137
-    invoke-direct/range {p0 .. p1}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->calculateTopOfList(Landroid/view/View;)I
+    move-object/from16 v0, p1
 
-    move-result v0
+    const/4 v1, 0x2
 
-    .line 138
-    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
+    new-array v2, v1, [I
 
-    move-result v11
+    .line 136
+    iget-object v3, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView;->getLocationInWindow([I)V
+
+    new-array v3, v1, [I
+
+    const/4 v4, 0x0
 
     .line 139
-    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v0, v4}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 140
+    invoke-virtual {v0, v3}, Landroid/view/View;->getLocationInWindow([I)V
+
+    const/4 v11, 0x0
+
+    .line 142
+    aget v5, v3, v11
+
+    aget v2, v2, v11
+
+    sub-int/2addr v5, v2
+
+    aput v5, v3, v11
+
+    .line 144
+    invoke-direct/range {p0 .. p1}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->calculateTopOfList(Landroid/view/View;)I
+
+    move-result v2
+
+    .line 145
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
 
     move-result v12
 
-    .line 140
-    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getLeft()I
-
-    move-result v1
-
-    .line 143
-    new-instance v2, Landroid/graphics/Rect;
-
-    add-int v3, v0, v12
-
-    invoke-direct {v2, v1, v0, v11, v3}, Landroid/graphics/Rect;-><init>(IIII)V
-
-    iput-object v2, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeRect:Landroid/graphics/Rect;
-
-    .line 145
-    iget-object v0, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
-
-    if-nez v0, :cond_0
-
     .line 146
-    sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getHeight()I
 
-    invoke-static {v11, v12, v0}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+    move-result v13
 
-    move-result-object v0
+    .line 147
+    aget v5, v3, v11
 
-    iput-object v0, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getPaddingLeft()I
+
+    move-result v6
+
+    add-int/2addr v5, v6
 
     .line 148
-    :cond_0
-    new-instance v13, Landroid/graphics/Canvas;
+    aget v3, v3, v11
 
-    iget-object v0, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
-
-    invoke-direct {v13, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
-
-    .line 149
-    sget-object v0, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
-
-    const/4 v14, 0x0
-
-    invoke-virtual {v13, v14, v0}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
-
-    .line 151
-    invoke-static/range {p2 .. p2}, Ljava/lang/Math;->abs(F)F
-
-    move-result v0
-
-    .line 152
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
 
-    move-result v1
+    move-result v6
 
-    int-to-float v1, v1
+    add-int/2addr v3, v6
 
-    div-float v1, v0, v1
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getPaddingRight()I
+
+    move-result v6
+
+    sub-int/2addr v3, v6
+
+    .line 151
+    new-instance v6, Landroid/graphics/Rect;
+
+    add-int v7, v2, v13
+
+    invoke-direct {v6, v5, v2, v3, v7}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    iput-object v6, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeRect:Landroid/graphics/Rect;
+
+    .line 153
+    iget-object v2, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
+
+    if-nez v2, :cond_0
+
+    .line 154
+    sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {v12, v13, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object v2
+
+    iput-object v2, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
+
+    .line 156
+    :cond_0
+    new-instance v14, Landroid/graphics/Canvas;
+
+    iget-object v2, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
+
+    invoke-direct {v14, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 157
+    sget-object v2, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-virtual {v14, v11, v2}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
+
+    .line 159
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    const/high16 v3, 0x40000000    # 2.0f
+
+    div-float/2addr v2, v3
+
+    .line 160
+    invoke-static/range {p2 .. p2}, Ljava/lang/Math;->abs(F)F
+
+    move-result v3
+
+    .line 161
+    invoke-static {v3, v2}, Ljava/lang/Math;->min(FF)F
+
+    move-result v5
+
+    div-float/2addr v5, v2
 
     const/high16 v2, 0x437f0000    # 255.0f
 
-    mul-float v15, v1, v2
+    mul-float v15, v5, v2
 
-    const/4 v1, 0x0
+    .line 163
+    iget v5, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mLastRectAlpha:F
 
-    cmpl-float v2, p3, v1
+    cmpl-float v6, v5, v2
 
-    const-string v3, ", d.getBounds()="
+    if-eqz v6, :cond_1
 
-    const-string v4, "SeslSwipeListAnimator"
+    cmpl-float v6, v15, v2
 
-    if-lez v2, :cond_2
+    if-nez v6, :cond_1
 
-    .line 156
+    const/16 v2, 0x6c
+
+    .line 164
+    invoke-static {v2}, Landroidx/reflect/view/SeslHapticFeedbackConstantsReflector;->semGetVibrationIndex(I)I
+
+    move-result v2
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->performHapticFeedback(I)Z
+
+    goto :goto_0
+
+    :cond_1
+    cmpl-float v5, v5, v2
+
+    if-nez v5, :cond_2
+
+    cmpl-float v2, v15, v2
+
+    if-eqz v2, :cond_2
+
+    const/16 v2, 0x6d
+
+    .line 166
+    invoke-static {v2}, Landroidx/reflect/view/SeslHapticFeedbackConstantsReflector;->semGetVibrationIndex(I)I
+
+    move-result v2
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->performHapticFeedback(I)Z
+
+    .line 168
+    :cond_2
+    :goto_0
+    iput v15, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mLastRectAlpha:F
+
+    cmpl-float v0, p3, v4
+
+    const-string v2, ", d.getBounds()="
+
+    const-string v5, "SeslSwipeListAnimator"
+
+    if-lez v0, :cond_4
+
+    .line 172
     iget-object v0, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
 
     iget-object v9, v0, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawableLeftToRight:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v9, :cond_1
+    if-eqz v9, :cond_3
 
-    .line 159
+    .line 175
     invoke-virtual {v9}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 160
+    .line 176
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
-    move-result v1
+    move-result v3
 
-    .line 161
+    .line 177
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v0
 
-    .line 162
-    new-instance v2, Ljava/lang/StringBuilder;
+    .line 178
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "#1 draw LtoR, d = "
+    const-string v6, "#1 draw LtoR, d = "
 
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v9}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v4, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 163
+    .line 179
     new-instance v2, Landroid/graphics/Rect;
-
-    iget-object v3, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
-
-    iget v3, v3, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawablePadding:I
 
     iget-object v4, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
 
     iget v4, v4, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawablePadding:I
 
-    add-int/2addr v1, v4
+    iget-object v5, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
 
-    invoke-direct {v2, v3, v14, v1, v0}, Landroid/graphics/Rect;-><init>(IIII)V
+    iget v5, v5, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawablePadding:I
 
-    sub-int v0, v12, v0
+    add-int/2addr v3, v5
 
-    .line 165
-    div-int/lit8 v0, v0, 0x2
+    invoke-direct {v2, v4, v11, v3, v0}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    invoke-virtual {v2, v14, v0}, Landroid/graphics/Rect;->offset(II)V
+    sub-int v0, v13, v0
+
+    .line 181
+    div-int/2addr v0, v1
+
+    invoke-virtual {v2, v11, v0}, Landroid/graphics/Rect;->offset(II)V
 
     move-object/from16 v16, v2
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_1
+    :cond_3
     const-string v0, "#2 draw LtoR, d = null"
 
-    .line 167
-    invoke-static {v4, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .line 183
+    invoke-static {v5, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 168
+    .line 184
     new-instance v0, Landroid/graphics/Rect;
 
-    invoke-direct {v0, v14, v14, v14, v14}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v0, v11, v11, v11, v11}, Landroid/graphics/Rect;-><init>(IIII)V
 
     move-object/from16 v16, v0
 
-    .line 171
-    :goto_0
+    .line 187
+    :goto_1
     new-instance v2, Landroid/graphics/Rect;
 
     move/from16 v0, p2
 
     float-to-int v8, v0
 
-    invoke-direct {v2, v14, v14, v8, v12}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v2, v11, v11, v8, v13}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 173
+    .line 189
     iget-object v5, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mBgLeftToRight:Landroid/graphics/Paint;
 
     const/16 v6, 0xff
@@ -447,7 +577,7 @@
 
     move-object/from16 v0, p0
 
-    move-object v1, v13
+    move-object v1, v14
 
     move-object/from16 v3, v16
 
@@ -455,7 +585,7 @@
 
     move-object v4, v9
 
-    move v14, v8
+    move v11, v8
 
     move/from16 v8, v18
 
@@ -465,14 +595,14 @@
 
     invoke-direct/range {v0 .. v9}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->drawRectInto(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/drawable/Drawable;Landroid/graphics/Paint;ILjava/lang/String;FI)V
 
-    .line 178
+    .line 194
     new-instance v2, Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
-    invoke-direct {v2, v14, v0, v11, v12}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v2, v11, v0, v12, v13}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 179
+    .line 195
     iget-object v5, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mBgLeftToRight:Landroid/graphics/Paint;
 
     float-to-int v6, v15
@@ -495,113 +625,121 @@
 
     invoke-direct/range {v0 .. v9}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->drawRectInto(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/drawable/Drawable;Landroid/graphics/Paint;ILjava/lang/String;FI)V
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
-    :cond_2
-    cmpg-float v1, p3, v1
+    :cond_4
+    cmpg-float v0, p3, v4
 
-    if-gez v1, :cond_4
-
-    .line 185
-    iget-object v1, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
-
-    iget-object v14, v1, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawableRightToLeft:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v14, :cond_3
-
-    .line 188
-    invoke-virtual {v14}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
-
-    move-result-object v1
-
-    .line 189
-    invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
-
-    move-result v2
-
-    .line 190
-    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
-
-    move-result v1
-
-    .line 191
-    iget-object v5, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
-
-    iget v5, v5, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawablePadding:I
-
-    sub-int v5, v11, v5
-
-    .line 192
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "#3 draw RtoL, d = "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v14}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
-
-    move-result-object v3
-
-    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v4, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 193
-    new-instance v3, Landroid/graphics/Rect;
-
-    sub-int v2, v5, v2
-
-    const/4 v6, 0x0
-
-    invoke-direct {v3, v2, v6, v5, v1}, Landroid/graphics/Rect;-><init>(IIII)V
-
-    sub-int v1, v12, v1
-
-    .line 194
-    div-int/lit8 v1, v1, 0x2
-
-    invoke-virtual {v3, v6, v1}, Landroid/graphics/Rect;->offset(II)V
-
-    move-object/from16 v16, v3
-
-    goto :goto_1
-
-    :cond_3
-    const/4 v6, 0x0
-
-    const-string v1, "#4 draw RtoL, d = null"
-
-    .line 196
-    invoke-static {v4, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 197
-    new-instance v1, Landroid/graphics/Rect;
-
-    invoke-direct {v1, v11, v6, v11, v6}, Landroid/graphics/Rect;-><init>(IIII)V
-
-    move-object/from16 v16, v1
+    if-gez v0, :cond_6
 
     .line 200
-    :goto_1
+    iget-object v0, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
+
+    iget-object v11, v0, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawableRightToLeft:Landroid/graphics/drawable/Drawable;
+
+    if-eqz v11, :cond_5
+
+    .line 203
+    invoke-virtual {v11}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object v0
+
+    .line 204
+    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
+
+    move-result v4
+
+    .line 205
+    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
+
+    move-result v0
+
+    .line 206
+    iget-object v6, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
+
+    iget v6, v6, Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;->drawablePadding:I
+
+    sub-int v6, v12, v6
+
+    .line 207
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "#3 draw RtoL, d = "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v11}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object v7
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v5, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 208
     new-instance v2, Landroid/graphics/Rect;
 
-    float-to-int v0, v0
+    sub-int v4, v6, v4
 
-    sub-int v9, v11, v0
+    const/4 v7, 0x0
 
-    invoke-direct {v2, v9, v6, v11, v12}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v2, v4, v7, v6, v0}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 201
+    sub-int v0, v13, v0
+
+    .line 209
+    div-int/2addr v0, v1
+
+    invoke-virtual {v2, v7, v0}, Landroid/graphics/Rect;->offset(II)V
+
+    move-object/from16 v16, v2
+
+    goto :goto_2
+
+    :cond_5
+    const/4 v7, 0x0
+
+    const-string v0, "#4 draw RtoL, d = null"
+
+    .line 211
+    invoke-static {v5, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 212
+    new-instance v0, Landroid/graphics/Rect;
+
+    invoke-direct {v0, v12, v7, v12, v7}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    move-object/from16 v16, v0
+
+    .line 215
+    :goto_2
+    new-instance v2, Landroid/graphics/Rect;
+
+    float-to-int v0, v3
+
+    sub-int v9, v12, v0
+
+    invoke-direct {v2, v9, v7, v12, v13}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    .line 216
     iget-object v5, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mBgRightToLeft:Landroid/graphics/Paint;
 
     const/16 v6, 0xff
@@ -616,32 +754,32 @@
 
     int-to-float v8, v0
 
-    const/4 v11, 0x1
+    const/4 v12, 0x1
 
     move-object/from16 v0, p0
 
-    move-object v1, v13
+    move-object v1, v14
 
     move-object/from16 v3, v16
 
-    move-object v4, v14
+    move-object v4, v11
 
-    move-object/from16 v17, v14
+    move-object/from16 v17, v11
 
-    move v14, v9
+    move v11, v9
 
-    move v9, v11
+    move v9, v12
 
     invoke-direct/range {v0 .. v9}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->drawRectInto(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/drawable/Drawable;Landroid/graphics/Paint;ILjava/lang/String;FI)V
 
-    .line 206
+    .line 221
     new-instance v2, Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
-    invoke-direct {v2, v0, v0, v14, v12}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v2, v0, v0, v11, v13}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 207
+    .line 222
     iget-object v5, v10, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mBgRightToLeft:Landroid/graphics/Paint;
 
     float-to-int v6, v15
@@ -664,75 +802,71 @@
 
     invoke-direct/range {v0 .. v9}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->drawRectInto(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/drawable/Drawable;Landroid/graphics/Paint;ILjava/lang/String;FI)V
 
-    :cond_4
-    :goto_2
-    return-object v13
+    :cond_6
+    :goto_3
+    return-object v14
 .end method
 
 .method private drawSwipeText(Landroid/graphics/Canvas;Landroid/graphics/Paint;Ljava/lang/String;ILandroid/graphics/Rect;)V
     .locals 5
 
-    .line 242
-    invoke-virtual {p1}, Landroid/graphics/Canvas;->getHeight()I
+    .line 250
+    new-instance v0, Landroid/graphics/Rect;
 
-    move-result v0
+    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 243
-    invoke-virtual {p1}, Landroid/graphics/Canvas;->getWidth()I
+    .line 251
+    sget-object v1, Landroid/graphics/Paint$Align;->LEFT:Landroid/graphics/Paint$Align;
 
-    .line 245
-    new-instance v1, Landroid/graphics/Rect;
+    invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
-
-    .line 246
-    sget-object v2, Landroid/graphics/Paint$Align;->LEFT:Landroid/graphics/Paint$Align;
-
-    invoke-virtual {p2, v2}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
-
-    .line 247
+    .line 252
     invoke-virtual {p3}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p2, p3, v2, v1, v0}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
+
+    .line 254
+    invoke-virtual {p2}, Landroid/graphics/Paint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
+
+    move-result-object v1
+
+    .line 255
+    iget v2, v1, Landroid/graphics/Paint$FontMetrics;->top:F
+
+    iget v3, v1, Landroid/graphics/Paint$FontMetrics;->bottom:F
+
+    sub-float/2addr v2, v3
+
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v2
 
-    const/4 v3, 0x0
-
-    invoke-virtual {p2, p3, v3, v2, v1}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
-
-    .line 249
-    invoke-virtual {p2}, Landroid/graphics/Paint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
-
-    move-result-object v2
-
-    .line 250
-    iget v3, v2, Landroid/graphics/Paint$FontMetrics;->top:F
-
-    iget v4, v2, Landroid/graphics/Paint$FontMetrics;->bottom:F
-
-    sub-float/2addr v3, v4
-
-    invoke-static {v3}, Ljava/lang/Math;->abs(F)F
+    .line 256
+    invoke-virtual {p1}, Landroid/graphics/Canvas;->getHeight()I
 
     move-result v3
 
-    int-to-float v0, v0
+    int-to-float v3, v3
 
     const/high16 v4, 0x40000000    # 2.0f
 
-    div-float/2addr v0, v4
-
     div-float/2addr v3, v4
 
-    add-float/2addr v0, v3
+    div-float/2addr v2, v4
 
-    .line 254
-    iget v2, v2, Landroid/graphics/Paint$FontMetrics;->bottom:F
+    add-float/2addr v3, v2
 
-    sub-float/2addr v0, v2
+    iget v1, v1, Landroid/graphics/Paint$FontMetrics;->bottom:F
+
+    sub-float/2addr v3, v1
 
     if-nez p4, :cond_0
 
-    .line 257
+    .line 260
     iget p4, p5, Landroid/graphics/Rect;->right:I
 
     iget-object p5, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeConfiguration:Landroidx/recyclerview/widget/SeslSwipeListAnimator$SwipeConfiguration;
@@ -743,7 +877,7 @@
 
     goto :goto_0
 
-    .line 259
+    .line 262
     :cond_0
     iget p4, p5, Landroid/graphics/Rect;->left:I
 
@@ -753,15 +887,15 @@
 
     sub-int/2addr p4, p5
 
-    iget p5, v1, Landroid/graphics/Rect;->right:I
+    iget p5, v0, Landroid/graphics/Rect;->right:I
 
     sub-int/2addr p4, p5
 
     :goto_0
     int-to-float p4, p4
 
-    .line 262
-    invoke-virtual {p1, p3, p4, v0, p2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
+    .line 265
+    invoke-virtual {p1, p3, p4, v3, p2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
     return-void
 .end method
@@ -769,27 +903,27 @@
 .method private drawTextToCenter(Landroid/graphics/Canvas;Landroid/graphics/Paint;Ljava/lang/String;)V
     .locals 5
 
-    .line 280
+    .line 278
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getHeight()I
 
     move-result v0
 
-    .line 281
+    .line 279
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v1
 
-    .line 283
+    .line 281
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 284
+    .line 282
     sget-object v3, Landroid/graphics/Paint$Align;->LEFT:Landroid/graphics/Paint$Align;
 
     invoke-virtual {p2, v3}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 285
+    .line 283
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -804,7 +938,7 @@
 
     div-float/2addr v1, v3
 
-    .line 286
+    .line 284
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
     move-result v4
@@ -825,7 +959,7 @@
 
     div-float/2addr v0, v3
 
-    .line 287
+    .line 285
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v4
@@ -842,7 +976,7 @@
 
     sub-float/2addr v0, v2
 
-    .line 288
+    .line 286
     invoke-virtual {p1, p3, v1, v0, p2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
     return-void
@@ -851,12 +985,12 @@
 .method private getBitmapDrawableToSwipeBitmap()Landroid/graphics/drawable/BitmapDrawable;
     .locals 3
 
-    .line 268
+    .line 270
     iget-object v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
 
-    .line 269
+    .line 271
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
     iget-object v1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
@@ -869,7 +1003,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 270
+    .line 272
     iget-object v1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeRect:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/BitmapDrawable;->setBounds(Landroid/graphics/Rect;)V
@@ -905,82 +1039,240 @@
 
 # virtual methods
 .method public clearSwipeAnimation(Landroid/view/View;)V
-    .locals 0
+    .locals 4
 
-    .line 301
-    iget-object p1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
+    const/4 v0, 0x0
 
-    if-eqz p1, :cond_0
+    .line 291
+    iput v0, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mLastRectAlpha:F
 
-    .line 302
-    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+    .line 293
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
+    const-string v2, "clearSwipeAnimation: view = "
 
-    const/4 p1, 0x0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 303
-    iput-object p1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
+    move-result-object v1
 
-    .line 304
-    iput-object p1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, " mDrawSwipeBitmapDrawable = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-object v2, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "SeslSwipeListAnimator"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 294
+    iget-object v1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
+
+    if-eqz v1, :cond_0
+
+    .line 295
+    invoke-virtual {v1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
+
+    const/4 v1, 0x0
+
+    .line 296
+    iput-object v1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 297
+    iput-object v1, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mSwipeBitmap:Landroid/graphics/Bitmap;
 
     :cond_0
+    if-eqz p1, :cond_1
+
+    .line 300
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "clearSwipeAnimation: view.getTranslationX() = "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
+
+    move-result v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 301
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
+
+    move-result v1
+
+    cmpl-float v1, v1, v0
+
+    if-eqz v1, :cond_1
+
+    const-string v1, "clearSwipeAnimation: **** set view.setTranslationX(0f) ****"
+
+    .line 302
+    invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 303
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
+
+    :cond_1
     return-void
 .end method
 
 .method public doMoveAction(Landroid/graphics/Canvas;Landroid/view/View;FZ)V
-    .locals 3
+    .locals 2
 
-    .line 96
-    invoke-virtual {p2}, Landroid/view/View;->getWidth()I
+    .line 95
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result v0
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    int-to-float v0, v0
+    const-string v1, "doMoveAction: viewForeground = "
 
-    div-float v0, p3, v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 97
-    invoke-static {p3}, Ljava/lang/Math;->abs(F)F
+    move-result-object v0
 
-    move-result v1
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x0
+    move-result-object v0
 
-    cmpl-float v2, p3, v2
+    const-string v1, " deltaX = "
 
-    if-nez v2, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-eqz p4, :cond_1
+    move-result-object v0
 
-    .line 107
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", isCurrentlyActive = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "SeslSwipeListAnimator"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    cmpl-float v0, p3, v0
+
+    if-nez v0, :cond_1
+
+    if-eqz p4, :cond_0
+
+    goto :goto_0
+
     :cond_0
-    invoke-direct {p0, p2, p3, v0}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->drawRectToBitmapCanvas(Landroid/view/View;FF)Landroid/graphics/Canvas;
+    const-string p1, "doMoveAction: #2 reutrn"
 
-    .line 111
+    .line 102
+    invoke-static {v1, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 103
+    invoke-virtual {p0, p2}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->clearSwipeAnimation(Landroid/view/View;)V
+
+    return-void
+
     :cond_1
-    invoke-virtual {p2, p3}, Landroid/view/View;->setTranslationX(F)V
+    :goto_0
+    const-string p4, "doMoveAction: #1 drawRectToBitmapCanvas"
 
-    const/high16 p3, 0x3f800000    # 1.0f
+    .line 98
+    invoke-static {v1, p4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 112
+    .line 99
     invoke-virtual {p2}, Landroid/view/View;->getWidth()I
 
     move-result p4
 
     int-to-float p4, p4
 
-    div-float/2addr v1, p4
+    div-float p4, p3, p4
 
-    sub-float/2addr p3, v1
+    .line 100
+    invoke-direct {p0, p2, p3, p4}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->drawRectToBitmapCanvas(Landroid/view/View;FF)Landroid/graphics/Canvas;
 
-    .line 113
+    .line 108
+    invoke-virtual {p2, p3}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 109
+    invoke-virtual {p2}, Landroid/view/View;->getWidth()I
+
+    move-result p4
+
+    int-to-float p4, p4
+
+    const/high16 v0, 0x40000000    # 2.0f
+
+    div-float/2addr p4, v0
+
+    .line 110
+    invoke-static {p3}, Ljava/lang/Math;->abs(F)F
+
+    move-result p3
+
+    invoke-static {p3, p4}, Ljava/lang/Math;->min(FF)F
+
+    move-result p3
+
+    div-float/2addr p3, p4
+
+    const/high16 p4, 0x3f800000    # 1.0f
+
+    sub-float p3, p4, p3
+
+    .line 112
+    invoke-static {p3, p4}, Ljava/lang/Math;->min(FF)F
+
+    move-result p3
+
     invoke-virtual {p2, p3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 117
+    .line 116
     invoke-direct {p0}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->getBitmapDrawableToSwipeBitmap()Landroid/graphics/drawable/BitmapDrawable;
 
     move-result-object p2
@@ -989,7 +1281,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 120
+    .line 119
     iget-object p3, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {p2}, Landroid/graphics/drawable/BitmapDrawable;->getBounds()Landroid/graphics/Rect;
@@ -998,14 +1290,12 @@
 
     invoke-virtual {p3, p2}, Landroidx/recyclerview/widget/RecyclerView;->invalidate(Landroid/graphics/Rect;)V
 
-    const-string p2, "SeslSwipeListAnimator"
+    const-string p2, "doMoveAction: draw"
 
-    const-string p3, "doMoveAction: draw"
+    .line 120
+    invoke-static {v1, p2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 121
-    invoke-static {p2, p3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 122
     iget-object p2, p0, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->mDrawSwipeBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p2, p1}, Landroid/graphics/drawable/BitmapDrawable;->draw(Landroid/graphics/Canvas;)V
@@ -1014,20 +1304,44 @@
     return-void
 .end method
 
+.method public getAnimationDuration(Landroidx/recyclerview/widget/RecyclerView;IFF)J
+    .locals 0
+
+    const/4 p1, 0x4
+
+    if-ne p2, p1, :cond_0
+
+    const-wide/16 p1, 0xfa
+
+    return-wide p1
+
+    :cond_0
+    const-wide/16 p1, 0x64
+
+    return-wide p1
+.end method
+
 .method public onSwiped(Landroid/view/View;)V
-    .locals 1
+    .locals 2
+
+    const-string v0, "SeslSwipeListAnimator"
+
+    const-string v1, "onSwiped"
 
     .line 309
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 310
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/SeslSwipeListAnimator;->clearSwipeAnimation(Landroid/view/View;)V
 
     const/4 v0, 0x0
 
-    .line 311
+    .line 312
     invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 312
+    .line 313
     invoke-virtual {p1, v0}, Landroid/view/View;->setAlpha(F)V
 
     return-void

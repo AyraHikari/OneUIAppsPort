@@ -1316,9 +1316,7 @@
 
     iget v2, p0, Lcom/caverock/androidsvg/SVGParser$TextScanner;->position:I
 
-    iget v3, p0, Lcom/caverock/androidsvg/SVGParser$TextScanner;->position:I
-
-    add-int/lit8 v3, v3, 0x2
+    add-int/lit8 v3, v2, 0x2
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 

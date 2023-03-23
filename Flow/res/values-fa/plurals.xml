@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"در Samsung Flow می‌توانید تا %d رایانه یا تبلت را ثبت و مدیریت کنید.
-
-هر بار فقط یک رایانه یا تبلت را می‌توان به تلفن متصل نمود. وقتی هم رایانه‌ها و هم تبلت‌های ثبت‌شده سعی در اتصال به تلفن شما داشته باشند، باید یکی را انتخاب کنید."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"در Samsung Flow می‌توانید تا %d رایانه یا تبلت را ثبت و مدیریت کنید.
-
-هر بار فقط یک رایانه یا تبلت را می‌توان به تلفن متصل نمود. وقتی هم رایانه‌ها و هم تبلت‌های ثبت‌شده سعی در اتصال به تلفن شما داشته باشند، باید یکی را انتخاب کنید."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d اعلان جدید</item>
+        <item quantity="one">%d اعلان جدید</item>
     </plurals>
 </resources>

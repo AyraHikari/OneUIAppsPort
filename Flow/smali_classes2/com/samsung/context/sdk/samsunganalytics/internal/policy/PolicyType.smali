@@ -75,17 +75,13 @@
 
     new-array v1, v1, [Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;
 
-    .line 9
-    sget-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;->DIAGNOSTIC_TERMS:Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
+    aput-object v6, v1, v2
 
     const/4 v2, 0x1
 
     aput-object v0, v1, v2
 
+    .line 9
     sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;
 
     return-void
@@ -93,6 +89,23 @@
 
 .method private constructor <init>(Ljava/lang/String;ILcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "senderType",
+            "needQuota",
+            "enableUseDBQueue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -118,6 +131,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 9
     const-class v0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;

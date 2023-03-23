@@ -245,7 +245,7 @@
 
     const-string v3, "client finished"
 
-    const-string v4, "server finished"
+    const-string/jumbo v4, "server finished"
 
     const/16 v6, 0x14
 

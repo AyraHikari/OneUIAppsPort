@@ -55,11 +55,6 @@
 
     sput-object v0, Landroidx/recyclerview/widget/AsyncDifferConfig$Builder;->sExecutorLock:Ljava/lang/Object;
 
-    const/4 v0, 0x0
-
-    .line 145
-    sput-object v0, Landroidx/recyclerview/widget/AsyncDifferConfig$Builder;->sDiffExecutor:Ljava/util/concurrent/Executor;
-
     return-void
 .end method
 

@@ -11,42 +11,41 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u000b\u0018\u0000 \u001b2\u00020\u0001:\u0001\u001bB\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\u000c\u001a\u00020\rJ\u0011\u0010\u000e\u001a\u00020\u00042\u0006\u0010\u000f\u001a\u00020\u0004H\u0086\u0002J\u000e\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0011J\u0006\u0010\u0013\u001a\u00020\u0004J\u000e\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u0004J\u000e\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u0004J\u000e\u0010\u0016\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u0004J\u000e\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0018\u001a\u00020\u0000J\u0019\u0010\t\u001a\u00020\u00002\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\u0004H\u0086\u0002J\u0006\u0010\u001a\u001a\u00020\u0004R\u0011\u0010\u0003\u001a\u00020\u00048F\u00a2\u0006\u0006\u001a\u0004\u0008\u0005\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\u00048F\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\u0006R\u000e\u0010\t\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001c"
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u000b\n\u0002\u0010\u0015\n\u0002\u0008\u000b\u0018\u0000 \u001e2\u00020\u0001:\u0001\u001eB\u0007\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\u0006\u0010\u0003\u001a\u00020\u0002J\u0019\u0010\u0007\u001a\u00020\u00002\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u0004H\u0086\u0002J\u000e\u0010\t\u001a\u00020\u00082\u0006\u0010\u0005\u001a\u00020\u0004J\u0011\u0010\n\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004H\u0086\u0002J\u0006\u0010\u000b\u001a\u00020\u0004J\u000e\u0010\r\u001a\u00020\u00082\u0006\u0010\u000c\u001a\u00020\u0008J\u0006\u0010\u000e\u001a\u00020\u0004J\u000e\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u000c\u001a\u00020\u0004J\u000e\u0010\u0010\u001a\u00020\u00042\u0006\u0010\u000c\u001a\u00020\u0004J\u000e\u0010\u0012\u001a\u00020\u00022\u0006\u0010\u0011\u001a\u00020\u0000R\u0016\u0010\u0007\u001a\u00020\u00048\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0007\u0010\u0013R\u0014\u0010\u0015\u001a\u00020\u00148\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0015\u0010\u0016R\u0011\u0010\u0019\u001a\u00020\u00048F\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0018R\u0011\u0010\u001b\u001a\u00020\u00048F\u00a2\u0006\u0006\u001a\u0004\u0008\u001a\u0010\u0018\u00a8\u0006\u001f"
     }
     d2 = {
         "Lokhttp3/internal/http2/Settings;",
         "",
-        "()V",
-        "headerTableSize",
-        "",
-        "getHeaderTableSize",
-        "()I",
-        "initialWindowSize",
-        "getInitialWindowSize",
-        "set",
-        "values",
-        "",
+        "Lbi/x;",
         "clear",
         "",
-        "get",
         "id",
-        "getEnablePush",
+        "value",
+        "set",
         "",
+        "isSet",
+        "get",
+        "size",
         "defaultValue",
+        "getEnablePush",
         "getMaxConcurrentStreams",
         "getMaxFrameSize",
         "getMaxHeaderListSize",
-        "isSet",
-        "merge",
         "other",
-        "value",
-        "size",
+        "merge",
+        "I",
+        "",
+        "values",
+        "[I",
+        "getHeaderTableSize",
+        "()I",
+        "headerTableSize",
+        "getInitialWindowSize",
+        "initialWindowSize",
+        "<init>",
+        "()V",
         "Companion",
         "okhttp"
     }
@@ -86,7 +85,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/internal/http2/Settings$Companion;
@@ -103,14 +102,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 22
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0xa
 
     new-array v0, v0, [I
 
-    .line 28
+    .line 2
     iput-object v0, p0, Lokhttp3/internal/http2/Settings;->values:[I
 
     return-void
@@ -123,10 +122,10 @@
 
     const/4 v0, 0x0
 
-    .line 44
+    .line 1
     iput v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
-    .line 45
+    .line 2
     iget-object v1, p0, Lokhttp3/internal/http2/Settings;->values:[I
 
     const/4 v2, 0x0
@@ -139,7 +138,7 @@
 
     const/4 v6, 0x0
 
-    invoke-static/range {v1 .. v6}, Lkotlin/collections/ArraysKt;->fill$default([IIIIILjava/lang/Object;)V
+    invoke-static/range {v1 .. v6}, Lci/k;->m([IIIIILjava/lang/Object;)V
 
     return-void
 .end method
@@ -147,7 +146,6 @@
 .method public final get(I)I
     .locals 1
 
-    .line 66
     iget-object v0, p0, Lokhttp3/internal/http2/Settings;->values:[I
 
     aget p1, v0, p1
@@ -158,7 +156,6 @@
 .method public final getEnablePush(Z)Z
     .locals 2
 
-    .line 74
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x4
@@ -190,7 +187,6 @@
 .method public final getHeaderTableSize()I
     .locals 2
 
-    .line 34
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x2
@@ -215,7 +211,6 @@
 .method public final getInitialWindowSize()I
     .locals 2
 
-    .line 40
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit16 v0, v0, 0x80
@@ -240,7 +235,6 @@
 .method public final getMaxConcurrentStreams()I
     .locals 2
 
-    .line 79
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x10
@@ -265,7 +259,6 @@
 .method public final getMaxFrameSize(I)I
     .locals 1
 
-    .line 84
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x20
@@ -285,7 +278,6 @@
 .method public final getMaxHeaderListSize(I)I
     .locals 1
 
-    .line 89
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x40
@@ -309,7 +301,6 @@
 
     shl-int p1, v0, p1
 
-    .line 62
     iget v1, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/2addr p1, v1
@@ -330,7 +321,7 @@
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -339,7 +330,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 98
+    .line 1
     invoke-virtual {p1, v0}, Lokhttp3/internal/http2/Settings;->isSet(I)Z
 
     move-result v1
@@ -348,7 +339,7 @@
 
     goto :goto_1
 
-    .line 99
+    .line 2
     :cond_0
     invoke-virtual {p1, v0}, Lokhttp3/internal/http2/Settings;->get(I)I
 
@@ -370,7 +361,7 @@
 
     if-ltz p1, :cond_1
 
-    .line 49
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Settings;->values:[I
 
     array-length v1, v0
@@ -384,14 +375,14 @@
 
     shl-int/2addr v1, p1
 
-    .line 54
+    .line 2
     iget v2, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     or-int/2addr v1, v2
 
     iput v1, p0, Lokhttp3/internal/http2/Settings;->set:I
 
-    .line 55
+    .line 3
     aput p2, v0, p1
 
     :cond_1
@@ -402,7 +393,6 @@
 .method public final size()I
     .locals 1
 
-    .line 69
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     invoke-static {v0}, Ljava/lang/Integer;->bitCount(I)I

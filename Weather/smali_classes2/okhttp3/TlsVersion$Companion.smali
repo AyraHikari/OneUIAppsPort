@@ -45,7 +45,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +53,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 38
     invoke-direct {p0}, Lokhttp3/TlsVersion$Companion;-><init>()V
 
     return-void
@@ -64,14 +62,12 @@
 # virtual methods
 .method public final forJavaName(Ljava/lang/String;)Lokhttp3/TlsVersion;
     .locals 3
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     const-string v0, "javaName"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 41
+    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
     move-result v0
@@ -91,7 +87,7 @@
     :pswitch_0
     const-string v0, "TLSv1.3"
 
-    .line 42
+    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -105,7 +101,7 @@
     :pswitch_1
     const-string v0, "TLSv1.2"
 
-    .line 43
+    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -119,7 +115,7 @@
     :pswitch_2
     const-string v0, "TLSv1.1"
 
-    .line 44
+    .line 4
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -133,7 +129,7 @@
     :cond_0
     const-string v0, "TLSv1"
 
-    .line 45
+    .line 5
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -147,7 +143,7 @@
     :cond_1
     const-string v0, "SSLv3"
 
-    .line 46
+    .line 6
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -159,7 +155,7 @@
     :goto_0
     return-object p1
 
-    .line 47
+    .line 7
     :cond_2
     :goto_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -172,19 +168,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 

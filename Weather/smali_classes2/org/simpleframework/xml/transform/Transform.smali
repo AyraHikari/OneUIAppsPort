@@ -23,12 +23,6 @@
             ")TT;"
         }
     .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 .end method
 
 .method public abstract write(Ljava/lang/Object;)Ljava/lang/String;
@@ -36,12 +30,6 @@
         value = {
             "(TT;)",
             "Ljava/lang/String;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
         }
     .end annotation
 .end method

@@ -13,10 +13,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$execute$1\n+ 2 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection\n+ 3 Util.kt\nokhttp3/internal/Util\n*L\n1#1,218:1\n912#2,2:219\n914#2,7:223\n921#2:233\n395#3,2:221\n397#3,3:230\n*E\n*S KotlinDebug\n*F\n+ 1 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection\n*L\n913#1,2:221\n913#1,3:230\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -43,17 +39,17 @@
 
 
 # instance fields
-.field final synthetic $cancelable:Z
+.field public final synthetic $cancelable:Z
 
-.field final synthetic $inFinished$inlined:Z
+.field public final synthetic $inFinished$inlined:Z
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $requestHeaders$inlined:Ljava/util/List;
+.field public final synthetic $requestHeaders$inlined:Ljava/util/List;
 
-.field final synthetic $streamId$inlined:I
+.field public final synthetic $streamId$inlined:I
 
-.field final synthetic this$0:Lokhttp3/internal/http2/Http2Connection;
+.field public final synthetic this$0:Lokhttp3/internal/http2/Http2Connection;
 
 
 # direct methods
@@ -72,7 +68,6 @@
 
     iput-boolean p8, p0, Lokhttp3/internal/http2/Http2Connection$pushHeadersLater$$inlined$execute$1;->$inFinished$inlined:Z
 
-    .line 96
     invoke-direct {p0, p3, p4}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;Z)V
 
     return-void
@@ -83,7 +78,7 @@
 .method public runOnce()J
     .locals 4
 
-    .line 219
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$pushHeadersLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     invoke-static {v0}, Lokhttp3/internal/http2/Http2Connection;->access$getPushObserver$p(Lokhttp3/internal/http2/Http2Connection;)Lokhttp3/internal/http2/PushObserver;
@@ -102,7 +97,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 223
+    .line 2
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$pushHeadersLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -119,12 +114,12 @@
     :cond_0
     if-nez v0, :cond_1
 
-    .line 224
+    .line 3
     iget-boolean v0, p0, Lokhttp3/internal/http2/Http2Connection$pushHeadersLater$$inlined$execute$1;->$inFinished$inlined:Z
 
     if-eqz v0, :cond_2
 
-    .line 225
+    .line 4
     :cond_1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$pushHeadersLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -132,7 +127,7 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 226
+    .line 5
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$pushHeadersLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -150,7 +145,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 225
+    .line 6
     :try_start_2
     monitor-exit v0
 

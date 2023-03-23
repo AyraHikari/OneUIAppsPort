@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/spinner_layout" android:tag="layout/network_spinner_layout_0" style="@style/NetworkManageView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/spinner_tv" style="@style/NetworkManageTextView" />
+    <Spinner android:id="@id/network_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

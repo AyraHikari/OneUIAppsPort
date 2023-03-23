@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/as_home_nested_scrollview" android:tag="layout/analyze_storage_home_layout_0" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/as_home_overview_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner">
+            <com.sec.android.app.myfiles.external.ui.pages.analyzestorage.AnalyzeStorageViewPager android:id="@id/as_home_overview_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <GridView android:gravity="center" android:id="@id/as_home_indicator_grid" android:layout_width="@dimen/analyze_storage_home_viewpager_indicator_width" android:layout_height="@dimen/analyze_storage_home_viewpager_indicator_height" android:stretchMode="columnWidth" android:layoutDirection="ltr" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:id="@id/as_divider_trash" style="@style/SubHeader_NoText" />
+        <include android:id="@id/as_sub_list_trash_app" layout="@layout/as_sub_list_layout" />
+        <View android:id="@id/as_divider_rarely_used_app" android:tag="binding_2" style="@style/SubHeader_NoText" />
+        <include android:id="@id/as_sub_list_rarely_used_app" layout="@layout/as_sub_list_layout" />
+        <View android:id="@id/as_divider_cached_file" android:tag="binding_3" style="@style/SubHeader_NoText" />
+        <include android:id="@id/as_sub_list_cached_file" layout="@layout/as_sub_list_layout" />
+        <View android:id="@id/as_divider_duplicated_file" style="@style/SubHeader_NoText" />
+        <include android:id="@id/as_sub_list_duplicated_file" layout="@layout/as_sub_list_layout" />
+        <View android:id="@id/as_divider_large_file" style="@style/SubHeader_NoText" />
+        <include android:id="@id/as_sub_list_large_file" layout="@layout/as_sub_list_layout" />
+        <View android:minHeight="@dimen/basic_round_page_bottom_blank_height" style="@style/BackgroundMarginView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

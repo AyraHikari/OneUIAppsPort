@@ -1,4 +1,4 @@
-.class final Landroidx/customview/view/AbsSavedState$1;
+.class Landroidx/customview/view/AbsSavedState$1;
 .super Landroidx/customview/view/AbsSavedState;
 .source "AbsSavedState.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 

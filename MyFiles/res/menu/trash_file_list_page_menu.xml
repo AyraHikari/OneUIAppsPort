@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_edit" android:visible="false" android:title="@string/menu_edit" app:showAsAction="always" />
+    <item android:id="@id/menu_empty_trash" android:visible="false" android:title="@string/empty" app:showAsAction="always" />
+</menu>

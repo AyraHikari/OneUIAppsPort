@@ -40,10 +40,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 28
     new-instance v0, Lokhttp3/internal/connection/ConnectInterceptor;
 
     invoke-direct {v0}, Lokhttp3/internal/connection/ConnectInterceptor;-><init>()V
@@ -56,7 +55,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -66,20 +64,15 @@
 # virtual methods
 .method public intercept(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
     .locals 10
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     const-string v0, "chain"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 31
+    .line 1
     check-cast p1, Lokhttp3/internal/http/RealInterceptorChain;
 
-    .line 32
+    .line 2
     invoke-virtual {p1}, Lokhttp3/internal/http/RealInterceptorChain;->getCall$okhttp()Lokhttp3/internal/connection/RealCall;
 
     move-result-object v0
@@ -104,12 +97,12 @@
 
     move-object v1, p1
 
-    .line 33
+    .line 3
     invoke-static/range {v1 .. v9}, Lokhttp3/internal/http/RealInterceptorChain;->copy$okhttp$default(Lokhttp3/internal/http/RealInterceptorChain;ILokhttp3/internal/connection/Exchange;Lokhttp3/Request;IIIILjava/lang/Object;)Lokhttp3/internal/http/RealInterceptorChain;
 
     move-result-object v0
 
-    .line 34
+    .line 4
     invoke-virtual {p1}, Lokhttp3/internal/http/RealInterceptorChain;->getRequest$okhttp()Lokhttp3/Request;
 
     move-result-object p1

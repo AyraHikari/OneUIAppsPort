@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Մուտք գործել</string>
     <string name="common_signin_button_text_long">Մուտք գործել Google-ով</string>
     <string name="copy">Պատճենել</string>
-    <string name="copy_toast_msg">Հղումը պատճենվեց սեղմատախտակին</string>
     <string name="error_icon_content_description">Սխալ</string>
     <string name="expand_button_title">Լրացուցիչ</string>
     <string name="exposed_dropdown_menu_content_description">Ցույց տալ իջնող ընտրացանկը</string>
-    <string name="fallback_menu_item_copy_link">Պատճենել հղումը</string>
-    <string name="fallback_menu_item_open_in_browser">Բացել դիտարկիչում</string>
-    <string name="fallback_menu_item_share_link">Կիսվել հղումով</string>
     <string name="icon_content_description">Երկխոսության պատուհանի պատկերակ</string>
     <string name="item_view_role_description">Ներդիր</string>
     <string name="material_clock_toggle_content_description">Ընտրել AM կամ PM</string>

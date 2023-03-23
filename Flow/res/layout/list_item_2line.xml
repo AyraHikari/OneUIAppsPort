@@ -6,12 +6,16 @@
             <RadioButton android:id="@id/list_item_radio" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginEnd="16.0dip" />
         </FrameLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/descPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/switch_panel" android:layout_toEndOf="@id/radio_panel">
-            <TextView android:ellipsize="end" android:id="@id/list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/TextViewListItemTitle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/TextViewListItemTitle" />
+                <Button android:textSize="11.0dip" android:textColor="@color/btn_send_icon_color_active" android:layout_gravity="center_vertical" android:id="@id/new_badge" android:background="@drawable/badge_round_rec" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="17.0dip" android:text="New" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
             <TextView android:id="@id/list_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/TextViewListItemDesc" />
         </LinearLayout>
         <FrameLayout android:id="@id/switch_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
             <Switch android:id="@id/list_item_switch" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" style="@android:style/Widget.DeviceDefault" />
         </FrameLayout>
+        <Spinner android:id="@id/methodSpinner" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-8.0dip" android:layout_marginStart="-14.0dip" />
     </RelativeLayout>
     <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
         <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff979797" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_title_connection_method" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />

@@ -18,10 +18,10 @@
 .method public constructor <init>(Lorg/jsoup/select/Evaluator;)V
     .locals 0
 
-    .line 95
+    .line 97
     invoke-direct {p0}, Lorg/jsoup/select/StructuralEvaluator;-><init>()V
 
-    .line 96
+    .line 98
     iput-object p1, p0, Lorg/jsoup/select/StructuralEvaluator$PreviousSibling;->evaluator:Lorg/jsoup/select/Evaluator;
 
     return-void
@@ -38,7 +38,7 @@
 
     return v0
 
-    .line 103
+    .line 105
     :cond_0
     invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->previousElementSibling()Lorg/jsoup/nodes/Element;
 
@@ -47,7 +47,7 @@
     :goto_0
     if-eqz p2, :cond_2
 
-    .line 106
+    .line 108
     iget-object v1, p0, Lorg/jsoup/select/StructuralEvaluator$PreviousSibling;->evaluator:Lorg/jsoup/select/Evaluator;
 
     invoke-virtual {v1, p1, p2}, Lorg/jsoup/select/Evaluator;->matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
@@ -60,7 +60,7 @@
 
     return p1
 
-    .line 109
+    .line 111
     :cond_1
     invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->previousElementSibling()Lorg/jsoup/nodes/Element;
 
@@ -79,7 +79,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 116
+    .line 118
     iget-object v1, p0, Lorg/jsoup/select/StructuralEvaluator$PreviousSibling;->evaluator:Lorg/jsoup/select/Evaluator;
 
     const/4 v2, 0x0

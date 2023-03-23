@@ -130,9 +130,7 @@
     invoke-virtual {p1, v2, v0, v1}, Lcom/fasterxml/jackson/core/JsonGenerator;->writeRaw([CII)V
 
     .line 390
-    sget-object v0, Lcom/fasterxml/jackson/core/util/DefaultPrettyPrinter$Lf2SpacesIndenter;->SPACES:[C
-
-    array-length v0, v0
+    array-length v0, v2
 
     sub-int/2addr p2, v0
 

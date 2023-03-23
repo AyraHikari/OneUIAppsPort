@@ -21,8 +21,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "view"
+        }
+    .end annotation
 
-    .line 1744
+    .line 1715
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$10;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-direct {p0, p2}, Landroid/view/View$DragShadowBuilder;-><init>(Landroid/view/View;)V
@@ -34,8 +44,18 @@
 # virtual methods
 .method public onProvideShadowMetrics(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "shadowSize",
+            "shadowTouchPoint"
+        }
+    .end annotation
 
-    .line 1748
+    .line 1719
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$10;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$4700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Landroid/view/View;
@@ -58,7 +78,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Point;->set(II)V
 
-    .line 1749
+    .line 1720
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$10;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$4700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Landroid/view/View;

@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">સાઇન ઇન કરો</string>
     <string name="common_signin_button_text_long">Google માં સાઇન ઇન કરો</string>
     <string name="copy">કૉપિ કરો</string>
-    <string name="copy_toast_msg">ક્લિપબોર્ડ પર લિંક કૉપિ કરી</string>
     <string name="error_icon_content_description">ભૂલ</string>
     <string name="expand_button_title">વિગતવાર</string>
     <string name="exposed_dropdown_menu_content_description">ડ્રૉપડાઉન મેનૂ બતાવો</string>
-    <string name="fallback_menu_item_copy_link">લિંક કૉપિ કરો</string>
-    <string name="fallback_menu_item_open_in_browser">બ્રાઉઝરમાં ખોલો</string>
-    <string name="fallback_menu_item_share_link">લિંક શેર કરો</string>
     <string name="icon_content_description">સંવાદનું આઇકન</string>
     <string name="item_view_role_description">ટૅબ</string>
     <string name="material_clock_toggle_content_description">AM અથવા PM પસંદ કરો</string>

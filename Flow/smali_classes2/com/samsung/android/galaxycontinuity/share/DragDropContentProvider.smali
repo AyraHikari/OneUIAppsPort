@@ -135,13 +135,11 @@
     .line 70
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 71
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->uriMatcher:Landroid/content/UriMatcher;
-
     const-string v2, "dragAndDrop/#"
 
     const/4 v3, 0x2
 
+    .line 71
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
@@ -153,14 +151,14 @@
     .line 38
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
-    .line 271
+    .line 275
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mUriMap:Ljava/util/HashMap;
 
-    .line 272
+    .line 276
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -169,13 +167,13 @@
 
     const/4 v0, 0x0
 
-    .line 273
+    .line 277
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->htDeliveryThread:Landroid/os/HandlerThread;
 
-    .line 274
+    .line 278
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mDeliveryHandler:Landroid/os/Handler;
 
-    .line 275
+    .line 279
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -184,7 +182,7 @@
 
     const/4 v0, -0x1
 
-    .line 276
+    .line 280
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLastContentId:I
 
     return-void
@@ -201,6 +199,14 @@
 
 .method private checkAvailableColumn(Ljava/lang/String;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "column"
+        }
+    .end annotation
 
     .line 85
     sget-object v0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->ALL_COLUMN:[Ljava/lang/String;
@@ -238,6 +244,14 @@
 
 .method private getSubMethod(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "method"
+        }
+    .end annotation
 
     const-string v0, "@"
 
@@ -260,6 +274,18 @@
 # virtual methods
 .method public call(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "method",
+            "arg",
+            "extras"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -301,7 +327,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -337,7 +367,7 @@
     goto :goto_0
 
     :cond_1
-    const-string v2, "startDelivery"
+    const-string/jumbo v2, "startDelivery"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -350,7 +380,7 @@
     goto :goto_0
 
     :cond_2
-    const-string v2, "updateFilePath"
+    const-string/jumbo v2, "updateFilePath"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -486,13 +516,25 @@
 
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "selection",
+            "selectionArgs"
+        }
+    .end annotation
 
-    .line 230
+    .line 234
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->getCallingPackage()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 232
+    .line 236
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p3
@@ -511,7 +553,7 @@
 
     return p1
 
-    .line 236
+    .line 240
     :cond_0
     sget-object p2, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->uriMatcher:Landroid/content/UriMatcher;
 
@@ -523,12 +565,12 @@
 
     if-ne p2, p3, :cond_1
 
-    .line 237
+    .line 241
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 238
+    .line 242
     iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-static {p2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -539,14 +581,14 @@
 
     move-result-object p2
 
-    .line 239
+    .line 243
     iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-interface {p3, p2}, Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;->delete(Lcom/samsung/android/galaxycontinuity/data/DragContent;)I
 
     move-result p2
 
-    .line 244
+    .line 248
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object p3
@@ -561,7 +603,7 @@
 
     return p2
 
-    .line 241
+    .line 245
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -573,9 +615,13 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p3
+
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -586,8 +632,16 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
-    .line 182
+    .line 186
     sget-object v0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->uriMatcher:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
@@ -598,13 +652,13 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 184
+    .line 188
     :try_start_0
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 185
+    .line 189
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -617,7 +671,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 188
+    .line 192
     iget-object p1, v0, Lcom/samsung/android/galaxycontinuity/data/DragContent;->mime_type:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -627,10 +681,10 @@
     :catch_0
     move-exception v0
 
-    .line 191
+    .line 195
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 194
+    .line 198
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -642,9 +696,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -655,13 +713,23 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "values"
+        }
+    .end annotation
 
-    .line 200
+    .line 204
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->getCallingPackage()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 202
+    .line 206
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -680,7 +748,7 @@
 
     return-object v0
 
-    .line 206
+    .line 210
     :cond_0
     :try_start_0
     new-instance p1, Lcom/samsung/android/galaxycontinuity/data/DragContent;
@@ -689,7 +757,7 @@
 
     const-string v1, "_display_name"
 
-    .line 207
+    .line 211
     invoke-virtual {p2, v1}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -698,7 +766,7 @@
 
     const-string v1, "_size"
 
-    .line 208
+    .line 212
     invoke-virtual {p2, v1}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -707,7 +775,7 @@
 
     const-string v1, "mime_type"
 
-    .line 209
+    .line 213
     invoke-virtual {p2, v1}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -716,7 +784,7 @@
 
     const-string v1, "_data"
 
-    .line 210
+    .line 214
     invoke-virtual {p2, v1}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -725,14 +793,14 @@
 
     const-string v1, "_originalUri"
 
-    .line 211
+    .line 215
     invoke-virtual {p2, v1}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
     iput-object p2, p1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
 
-    .line 214
+    .line 218
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-interface {p2, p1}, Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;->insert(Lcom/samsung/android/galaxycontinuity/data/DragContent;)J
@@ -745,14 +813,14 @@
 
     if-lez v1, :cond_1
 
-    .line 216
+    .line 220
     sget-object v1, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v1, p1, p2}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object p1
 
-    .line 217
+    .line 221
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -773,10 +841,10 @@
     :catch_0
     move-exception p1
 
-    .line 223
+    .line 227
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 224
+    .line 228
     throw p1
 .end method
 
@@ -808,13 +876,24 @@
 
 .method public openFile(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "mode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
         }
     .end annotation
 
-    .line 280
+    .line 284
     sget-object p2, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->uriMatcher:Landroid/content/UriMatcher;
 
     invoke-virtual {p2, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
@@ -829,13 +908,13 @@
 
     return-object v0
 
-    .line 282
+    .line 286
     :cond_0
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 283
+    .line 287
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-static {p2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -846,13 +925,13 @@
 
     move-result-object v1
 
-    .line 286
+    .line 290
     :try_start_0
     invoke-static {}, Landroid/os/ParcelFileDescriptor;->createPipe()[Landroid/os/ParcelFileDescriptor;
 
     move-result-object v2
 
-    .line 288
+    .line 292
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->DELIVERY_LOCK:Ljava/lang/Object;
 
     monitor-enter v3
@@ -860,13 +939,13 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 289
+    .line 293
     :try_start_1
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->htDeliveryThread:Landroid/os/HandlerThread;
 
     if-nez v4, :cond_1
 
-    .line 290
+    .line 294
     new-instance v4, Landroid/os/HandlerThread;
 
     const-string v5, "htDeliveryThread"
@@ -875,10 +954,10 @@
 
     iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->htDeliveryThread:Landroid/os/HandlerThread;
 
-    .line 291
+    .line 295
     invoke-virtual {v4}, Landroid/os/HandlerThread;->start()V
 
-    .line 292
+    .line 296
     new-instance v4, Landroid/os/Handler;
 
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->htDeliveryThread:Landroid/os/HandlerThread;
@@ -891,13 +970,13 @@
 
     iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mDeliveryHandler:Landroid/os/Handler;
 
-    .line 294
+    .line 298
     :cond_1
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 296
+    .line 300
     :try_start_2
     new-instance v3, Ljava/util/ArrayList;
 
@@ -907,7 +986,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 298
+    .line 302
     iget v5, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->uid:I
 
     iget v6, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLastContentId:I
@@ -922,7 +1001,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 299
+    .line 303
     new-instance v5, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;
 
     iget-object v7, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->displayName:Ljava/lang/String;
@@ -941,22 +1020,22 @@
 
     invoke-direct/range {v6 .. v11}, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;-><init>(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
 
-    .line 300
+    .line 304
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 302
+    .line 306
     new-instance v5, Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {v5, v4}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    .line 303
+    .line 307
     iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLatchMap:Ljava/util/HashMap;
 
     iget-object v7, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
 
     invoke-virtual {v6, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 304
+    .line 308
     iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mUriMap:Ljava/util/HashMap;
 
     iget-object v7, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
@@ -967,7 +1046,7 @@
 
     invoke-virtual {v6, v7, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 306
+    .line 310
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;
 
     move-result-object p1
@@ -978,10 +1057,10 @@
 
     invoke-virtual {p1, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->sendDragStart(Ljava/util/ArrayList;)V
 
-    .line 308
+    .line 312
     invoke-virtual {v5}, Ljava/util/concurrent/CountDownLatch;->await()V
 
-    .line 309
+    .line 313
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-static {p2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -1002,14 +1081,14 @@
 
     if-eqz v1, :cond_3
 
-    .line 329
+    .line 333
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLatchMap:Ljava/util/HashMap;
 
     iget-object p2, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 330
+    .line 334
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mUriMap:Ljava/util/HashMap;
 
     iget-object p2, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
@@ -1019,7 +1098,7 @@
     :cond_3
     return-object v0
 
-    .line 315
+    .line 319
     :cond_4
     :try_start_3
     iget-object p1, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->filePath:Ljava/lang/String;
@@ -1032,19 +1111,19 @@
 
     if-eqz p1, :cond_5
 
-    .line 316
+    .line 320
     aget-object p1, v2, v3
 
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->close()V
 
-    .line 317
+    .line 321
     aget-object p1, v2, v4
 
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->close()V
 
     goto :goto_0
 
-    .line 319
+    .line 323
     :cond_5
     new-instance p1, Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
 
@@ -1052,7 +1131,7 @@
 
     invoke-direct {p1, v4}, Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
 
-    .line 320
+    .line 324
     new-instance v4, Ljava/io/FileInputStream;
 
     new-instance v5, Ljava/io/File;
@@ -1063,7 +1142,7 @@
 
     invoke-direct {v4, v5}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    .line 321
+    .line 325
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mDeliveryHandler:Landroid/os/Handler;
 
     new-instance v6, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider$DeliveryRunnable;
@@ -1072,13 +1151,13 @@
 
     invoke-virtual {v5, v6}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 323
+    .line 327
     :goto_0
     iget p1, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->uid:I
 
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLastContentId:I
 
-    .line 324
+    .line 328
     aget-object p1, v2, v3
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
@@ -1086,14 +1165,14 @@
 
     if-eqz v1, :cond_6
 
-    .line 329
+    .line 333
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLatchMap:Ljava/util/HashMap;
 
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 330
+    .line 334
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mUriMap:Ljava/util/HashMap;
 
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
@@ -1106,7 +1185,7 @@
     :catchall_0
     move-exception p1
 
-    .line 294
+    .line 298
     :try_start_4
     monitor-exit v3
     :try_end_4
@@ -1126,7 +1205,7 @@
     :catch_0
     move-exception p1
 
-    .line 326
+    .line 330
     :try_start_6
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_6
@@ -1134,14 +1213,14 @@
 
     if-eqz v1, :cond_7
 
-    .line 329
+    .line 333
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLatchMap:Ljava/util/HashMap;
 
     iget-object p2, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 330
+    .line 334
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mUriMap:Ljava/util/HashMap;
 
     iget-object p2, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
@@ -1154,27 +1233,43 @@
     :goto_1
     if-eqz v1, :cond_8
 
-    .line 329
+    .line 333
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mLatchMap:Ljava/util/HashMap;
 
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 330
+    .line 334
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->mUriMap:Ljava/util/HashMap;
 
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/data/DragContent;->originalUri:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 332
+    .line 336
     :cond_8
     throw p1
 .end method
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "projection",
+            "selection",
+            "selectionArgs",
+            "sortOrder"
+        }
+    .end annotation
 
     .line 144
     sget-object p3, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->uriMatcher:Landroid/content/UriMatcher;
@@ -1185,7 +1280,7 @@
 
     const/4 p4, 0x2
 
-    if-ne p3, p4, :cond_4
+    if-ne p3, p4, :cond_5
 
     .line 145
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
@@ -1246,51 +1341,68 @@
 
     goto :goto_0
 
-    :cond_2
-    const-string p2, " FROM "
-
-    .line 160
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-class p2, Lcom/samsung/android/galaxycontinuity/data/DragContent;
-
-    invoke-virtual {p2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p2, " WHERE uid = "
-
     .line 161
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p2, " ORDER BY "
-
-    .line 163
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 164
-    invoke-static {p5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    :cond_2
+    invoke-virtual {p4}, Ljava/lang/StringBuilder;->length()I
 
     move-result p2
 
-    if-eqz p2, :cond_3
+    if-nez p2, :cond_3
 
-    const-string p2, "uid"
+    const-string p2, "SELECT * "
+
+    .line 162
+    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :cond_3
+    const-string p2, " FROM "
+
+    .line 164
+    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    const-class v0, Lcom/samsung/android/galaxycontinuity/data/DragContent;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p2, " WHERE uid = "
 
     .line 165
     invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_3
+    move-result-object p2
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p2, " ORDER BY "
 
     .line 167
-    :cond_3
-    invoke-virtual {p4, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 168
+    invoke-static {p5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_4
+
+    const-string/jumbo p2, "uid"
 
     .line 169
+    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_3
+
+    .line 171
+    :cond_4
+    invoke-virtual {p4, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 173
     :goto_3
     new-instance p2, Landroidx/sqlite/db/SimpleSQLiteQuery;
 
@@ -1300,14 +1412,14 @@
 
     invoke-direct {p2, p3}, Landroidx/sqlite/db/SimpleSQLiteQuery;-><init>(Ljava/lang/String;)V
 
-    .line 170
+    .line 174
     iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-interface {p3, p2}, Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;->rowQuery(Landroidx/sqlite/db/SupportSQLiteQuery;)Landroid/database/Cursor;
 
     move-result-object p2
 
-    .line 174
+    .line 178
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object p3
@@ -1320,8 +1432,8 @@
 
     return-object p2
 
-    .line 172
-    :cond_4
+    .line 176
+    :cond_5
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     new-instance p3, Ljava/lang/StringBuilder;
@@ -1332,9 +1444,13 @@
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p3
+
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1345,13 +1461,27 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "values",
+            "selection",
+            "selectionArgs"
+        }
+    .end annotation
 
-    .line 251
+    .line 255
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->getCallingPackage()Ljava/lang/String;
 
     move-result-object p3
 
-    .line 253
+    .line 257
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p4
@@ -1370,7 +1500,7 @@
 
     return p1
 
-    .line 257
+    .line 261
     :cond_0
     sget-object p3, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->uriMatcher:Landroid/content/UriMatcher;
 
@@ -1382,12 +1512,12 @@
 
     if-ne p3, p4, :cond_1
 
-    .line 258
+    .line 262
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object p3
 
-    .line 259
+    .line 263
     iget-object p4, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-static {p3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -1400,21 +1530,21 @@
 
     const-string p4, "_data"
 
-    .line 260
+    .line 264
     invoke-virtual {p2, p4}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
     iput-object p2, p3, Lcom/samsung/android/galaxycontinuity/data/DragContent;->filePath:Ljava/lang/String;
 
-    .line 261
+    .line 265
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->dragContentDao:Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;
 
     invoke-interface {p2, p3}, Lcom/samsung/android/galaxycontinuity/data/DragContent$DragContentDao;->update(Lcom/samsung/android/galaxycontinuity/data/DragContent;)I
 
     move-result p2
 
-    .line 266
+    .line 270
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/share/DragDropContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object p3
@@ -1429,7 +1559,7 @@
 
     return p2
 
-    .line 263
+    .line 267
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -1441,9 +1571,13 @@
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p3
+
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 

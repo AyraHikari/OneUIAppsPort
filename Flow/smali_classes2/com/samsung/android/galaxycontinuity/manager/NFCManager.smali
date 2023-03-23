@@ -78,6 +78,14 @@
 
 .method public static convertNFCIdToString([B)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
     .line 210
     new-instance v0, Ljava/lang/StringBuilder;
@@ -134,6 +142,14 @@
 
 .method public static declared-synchronized getInstance(Landroid/app/Activity;)Lcom/samsung/android/galaxycontinuity/manager/NFCManager;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     const-class v0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;
 
@@ -238,6 +254,14 @@
 
 .method public setEnable(Z)Z
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
     .line 96
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mNfcAdapter:Landroid/nfc/NfcAdapter;
@@ -276,6 +300,8 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     if-eqz p1, :cond_3
 
     const-string p1, "ON"
@@ -288,7 +314,9 @@
     :goto_0
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -350,8 +378,6 @@
 
     .line 118
     :try_start_1
-    sget-object v4, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->sActivity:Landroid/app/Activity;
-
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mNfcReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v4, v5, v0, v2, v3}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
@@ -541,20 +567,16 @@
 
     if-eqz v1, :cond_a
 
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mNfcReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mNfcReceiver:Landroid/content/BroadcastReceiver;
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    if-eqz v1, :cond_a
+    if-eqz v4, :cond_a
 
     if-eqz p1, :cond_a
 
     .line 160
     :try_start_9
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->sActivity:Landroid/app/Activity;
-
-    iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mNfcReceiver:Landroid/content/BroadcastReceiver;
-
     invoke-virtual {v1, v4}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_4
@@ -577,8 +599,6 @@
     if-eqz v1, :cond_b
 
     .line 166
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mHandlerThread:Landroid/os/HandlerThread;
-
     invoke-virtual {v1}, Landroid/os/HandlerThread;->quitSafely()Z
 
     .line 167
@@ -612,6 +632,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     if-eqz p1, :cond_d
 
     const-string v1, "ON"
@@ -623,6 +645,8 @@
 
     :goto_7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -682,6 +706,16 @@
 
 .method public setEnableReaderMode(ZLandroid/nfc/NfcAdapter$ReaderCallback;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "enable",
+            "callback"
+        }
+    .end annotation
 
     .line 182
     :try_start_0
@@ -692,8 +726,6 @@
     if-eqz p1, :cond_0
 
     .line 184
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mNfcAdapter:Landroid/nfc/NfcAdapter;
-
     sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->sActivity:Landroid/app/Activity;
 
     const/16 v2, 0x1f
@@ -706,11 +738,9 @@
 
     .line 192
     :cond_0
-    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mNfcAdapter:Landroid/nfc/NfcAdapter;
+    sget-object p2, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->sActivity:Landroid/app/Activity;
 
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->sActivity:Landroid/app/Activity;
-
-    invoke-virtual {p2, v0}, Landroid/nfc/NfcAdapter;->disableReaderMode(Landroid/app/Activity;)V
+    invoke-virtual {v0, p2}, Landroid/nfc/NfcAdapter;->disableReaderMode(Landroid/app/Activity;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -733,8 +763,6 @@
     if-eqz v0, :cond_0
 
     .line 56
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NFCManager;->mHandlerThread:Landroid/os/HandlerThread;
-
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
     const/4 v0, 0x0

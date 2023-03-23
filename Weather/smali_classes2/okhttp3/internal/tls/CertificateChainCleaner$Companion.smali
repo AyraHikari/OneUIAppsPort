@@ -49,7 +49,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 40
     invoke-direct {p0}, Lokhttp3/internal/tls/CertificateChainCleaner$Companion;-><init>()V
 
     return-void
@@ -71,9 +69,9 @@
 
     const-string v0, "trustManager"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 42
+    .line 1
     sget-object v0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
     invoke-virtual {v0}, Lokhttp3/internal/platform/Platform$Companion;->get()Lokhttp3/internal/platform/Platform;
@@ -92,9 +90,9 @@
 
     const-string v0, "caCerts"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 46
+    .line 2
     new-instance v0, Lokhttp3/internal/tls/BasicCertificateChainCleaner;
 
     new-instance v1, Lokhttp3/internal/tls/BasicTrustRootIndex;
@@ -109,11 +107,7 @@
 
     invoke-direct {v1, p1}, Lokhttp3/internal/tls/BasicTrustRootIndex;-><init>([Ljava/security/cert/X509Certificate;)V
 
-    check-cast v1, Lokhttp3/internal/tls/TrustRootIndex;
-
     invoke-direct {v0, v1}, Lokhttp3/internal/tls/BasicCertificateChainCleaner;-><init>(Lokhttp3/internal/tls/TrustRootIndex;)V
-
-    check-cast v0, Lokhttp3/internal/tls/CertificateChainCleaner;
 
     return-object v0
 .end method

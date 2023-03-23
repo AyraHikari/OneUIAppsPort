@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">%d tadan ortiq elementni tanlab bo‘lmaydi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tadan ortiq elementni tanlab bo‘lmaydi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d ta faylni Savatga ko‘chirib bo‘lmaydi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta faylni Savatga ko‘chirib bo‘lmaydi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d ta jildni Savatga ko‘chirib bo‘lmaydi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jildni Savatga ko‘chirib bo‘lmaydi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d ta elementni Savatga ko‘chirib bo‘lmaydi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta elementni Savatga ko‘chirib bo‘lmaydi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Tanlangan fayllarning %d tasi o‘chirib tashlanadi, chunki ular bulut yoki USB saqlash qurilmasida joylashgan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tanlangan fayllarning %d tasi o‘chirib tashlanadi, chunki ular bulut yoki USB saqlash qurilmasida joylashgan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Tanlangan jildlarning %d tasi o‘chirib tashlanadi, chunki ular bulut yoki USB saqlash qurilmasida joylashgan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tanlangan jildlarning %d tasi o‘chirib tashlanadi, chunki ular bulut yoki USB saqlash qurilmasida joylashgan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Tanlangan elementlarning %d tasi o‘chirib tashlanadi, chunki ular bulut yoki USB saqlash qurilmasida joylashgan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tanlangan elementlarning %d tasi o‘chirib tashlanadi, chunki ular bulut yoki USB saqlash qurilmasida joylashgan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d ta fayl zichlanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl zichlanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d ta fayl zichlanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl zichlanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d ta jild zichlanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild zichlanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d ta jild zichlanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild zichlanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d ta element zichlanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element zichlanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d ta element zichlanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element zichlanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d ta fayldan nusxa olinmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayldan nusxa olinmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d ta fyl. nusxa olinmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fyl. nusxa olinmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d ta jilddan nusxa olinmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jilddan nusxa olinmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d ta jild nusxalanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild nusxalanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d ta elementdan nusxa olinmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta elementdan nusxa olinmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d ta element nusxalanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element nusxalanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Telefondan %d ta faylni o‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Telefondan %d ta fayl o‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Planshetdan %d ta fayl o‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Planshetdan %d ta fayl o‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Telefondan %d ta jild o‘chirisinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Telefondan %d ta jild o‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Planshetdan %d ta jild o‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Planshetdan %d ta jild o‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Telefondan %d ta element o‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Telefondan %d ta elem. o‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Planshetdan %d ta element o‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Planshetdan %d ta element o‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d ta fayl o‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl o‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d ta jild o’chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild o’chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d ta elmnt. Savatdan o‘chir…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta elmnt. Savatdan o‘chir…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d ta element o’chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element o’chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d ta fayl chiqarilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl chiqarilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d ta jild chiqarilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild chiqarilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d ta element chiqarilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element chiqarilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d ta fayl ham %2$s’dagi Savatga ko‘chiriladi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ta fayl ham %2$s’dagi Savatga ko‘chiriladi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d ta fayl tiklanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl tiklanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d jildi ham %2$s’dagi Savatga ko‘chiriladi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d jildi ham %2$s’dagi Savatga ko‘chiriladi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d ta jild tiklanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild tiklanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Ichki xotirangiz to‘la. %d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ichki xotirangiz to‘la. %d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Ichki xotirangiz to‘la. %d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ichki xotirangiz to‘la. %d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Ichki xotirangiz to‘la. %d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ichki xotirangiz to‘la. %d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Ichki xotira va SD-kartangiz to‘la. %d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ichki xotira va SD-kartangiz to‘la. %d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Ichki xotira va SD-kartangiz to‘la. %d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ichki xotira va SD-kartangiz to‘la. %d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Ichki xotira va SD-kartangiz to‘la. %d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ichki xotira va SD-kartangiz to‘la. %d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d ta element tiklanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element tiklanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d ta element ham %2$s’dagi Savatga ko‘chiriladi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ta element ham %2$s’dagi Savatga ko‘chiriladi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">%d tadan ortiq ilova oynasini ochib bo‘lmaydi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tadan ortiq ilova oynasini ochib bo‘lmaydi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d ta fayl Savatga ko‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl Savatga ko‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d ta fayl Savatga ko‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl Savatga ko‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d ta jild Savatga ko‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild Savatga ko‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d ta jild Savatga ko‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild Savatga ko‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d ta element Savatga ko‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element Savatga ko‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d ta element Savatga ko‘chirilsinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element Savatga ko‘chirilsinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d ta fayl Savatga ko‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl Savatga ko‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d ta jild Savatga ko‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild Savatga ko‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d ta element Savatga ko‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element Savatga ko‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d ta fayl ko‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl ko‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d ta fayl ko‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl ko‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d ta jild ko‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild ko‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d ta jild ko’chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild ko’chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d ta element ko‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element ko‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d ta element ko’chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element ko’chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d ta element zichlandi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element zichlandi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d ta elementdan %2$s’ga nusxa ko‘chirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ta elementdan %2$s’ga nusxa ko‘chirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Jild va undagi %d ta fayl o‘chirib tashlansinmi?</item>
+        <item quantity="one">Jild va undagi fayl o‘chirib tashlansinmi?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d ta jild va ulardagi %2$d ta fayl o‘chirib tashlansinmi?</item>
+        <item quantity="one">Jild va undagi fayl o‘chirib tashlansinmi?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d ta element o‘chirib tashlandi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element o‘chirib tashlandi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d ta fayl yuklab olinmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl yuklab olinmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d ta jild yuklab olinmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild yuklab olinmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d te element yuk. olinmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d te element yuk. olinmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Jildlarni ulashib bo‘lmaydi. Jildlar bo‘sh.</item>
+        <item quantity="one">Jildni ulashib bo‘lmaydi. Jild bo‘sh.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d ta fayl butunlay o‘chirib tashlanadi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl butunlay o‘chirib tashlanadi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d ta jild butunlay o‘chirib tashlanadi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild butunlay o‘chirib tashlanadi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d ta element chiqarildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element chiqarildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d ta fayl Tanlanganlarga qo‘shildi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl Tanlanganlarga qo‘shildi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d ta fayl Tanlanganlardan olib tashlandi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl Tanlanganlardan olib tashlandi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d ta jild Tanlanganlarga qo‘shildi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild Tanlanganlarga qo‘shildi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d ta jild Tanlanganlardan olib tashlandi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild Tanlanganlardan olib tashlandi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d ta element Tanlanganlarga qo‘shildi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element Tanlanganlarga qo‘shildi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d ta element Tanlanganlardan olib tashlandi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element Tanlanganlardan olib tashlandi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d element</item>
+        <item quantity="one">1 element</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d element</item>
+        <item quantity="one">%dta element</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d ta elementdan almashish buferiga nusxa ko‘chirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta elementdan almashish buferiga nusxa ko‘chirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d ta element almashish buferiga ko‘chirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element almashish buferiga ko‘chirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d ta element tanlandi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element tanlandi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d ta element %2$s’ga ko‘chirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ta element %2$s’ga ko‘chirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d ta element Savatga ko‘chirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element Savatga ko‘chirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d ta tanlandi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta tanlandi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD-kartangiz to‘la. %d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kartangiz to‘la. %d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD-kartangiz to‘la. %d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kartangiz to‘la. %d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD-kartangiz to‘la. %d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kartangiz to‘la. %d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Bu fayl %d kundan so‘ng o‘chirib tashlanadi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bu fayl %d kundan so‘ng o‘chirib tashlanadi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Bu jild %d kundan so‘ng o‘chirib tashlanadi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bu jild %d kundan so‘ng o‘chirib tashlanadi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d ta fayl o‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl o‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d ta fayl tiklanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fayl tiklanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d ta jild o‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild o‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d ta jild tiklanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta jild tiklanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element butunlay o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d ta element o‘chirilmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element o‘chirilmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d ta element tiklanmoqda…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta element tiklanmoqda…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d kundan so‘ng o‘chirib tashlash</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kundan so‘ng o‘chirib tashlash</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d ta ilova olib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta ilova olib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

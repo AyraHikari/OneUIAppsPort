@@ -36,7 +36,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 10
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 37
+    .line 41
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -76,7 +76,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 29
+    .line 33
     instance-of v0, p1, Landroidx/core/util/Pair;
 
     const/4 v1, 0x0
@@ -85,11 +85,11 @@
 
     return v1
 
-    .line 32
+    .line 36
     :cond_0
     check-cast p1, Landroidx/core/util/Pair;
 
-    .line 33
+    .line 37
     iget-object v0, p1, Landroidx/core/util/Pair;->first:Ljava/lang/Object;
 
     iget-object v2, p0, Lcom/airbnb/lottie/model/MutablePair;->first:Ljava/lang/Object;
@@ -119,7 +119,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 47
+    .line 51
     iget-object v0, p0, Lcom/airbnb/lottie/model/MutablePair;->first:Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -161,10 +161,10 @@
         }
     .end annotation
 
-    .line 15
+    .line 19
     iput-object p1, p0, Lcom/airbnb/lottie/model/MutablePair;->first:Ljava/lang/Object;
 
-    .line 16
+    .line 20
     iput-object p2, p0, Lcom/airbnb/lottie/model/MutablePair;->second:Ljava/lang/Object;
 
     return-void
@@ -173,7 +173,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 52
+    .line 56
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -181,6 +181,8 @@
     const-string v1, "Pair{"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/airbnb/lottie/model/MutablePair;->first:Ljava/lang/Object;
 
@@ -190,9 +192,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/airbnb/lottie/model/MutablePair;->second:Ljava/lang/Object;
 
@@ -202,9 +208,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "}"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.sec.android.app.myfiles" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <permission android:name="com.sec.android.app.myfiles.permission.WRITE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.android.app.myfiles.permission.READ" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.android.app.myfiles.permission.MOVE_TO_KNOX_BY_DND" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.android.app.myfiles.permission.MANAGE_TRASH" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.sec.android.app.myfiles.permission.MANAGE_TRASH"/>
+    <uses-permission android:name="com.samsung.android.app.networkstoragemanager.permission.START_NSM_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.providers.media.READ"/>
+    <uses-permission android:name="com.samsung.android.providers.media.WRITE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="com.sec.android.app.myfiles.permission.MOVE_TO_KNOX_BY_DND"/>
+    <uses-permission android:name="com.sec.permission.ACCESSBILITY_SHARING"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="sidesync.app.action.permission.KMS_FILETRANSFER_DRAG_FILEINFO"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.samsung.android.app.simplesharing.READ_CONTENTS"/>
+    <uses-permission android:name="com.samsung.android.app.simplesharing.WRITE_CONTENTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_2381fdf4dc3fcec874742ba95463edde982381fb681bec4bf6ab25a79a20914a63e80b55cced80a873e05b8c5fc6d610e329565a46de3b7af760ab3cf274ea8bbc6cc06f0c579b2ea489a79eb6665372cbb3946f8b8e15f34b56ddd6a1a45585e1b2457f5e4d9cde6365208279419977c30277e844533fddcab4d82ac401beba"/>
+    <uses-permission android:name="com.sec.android.app.samsungapps.accesspermission.UPDATE_EXISTS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.sec.android.diagmonagent.permission.DIAGMON"/>
+    <uses-permission android:name="com.sec.android.diagmonagent.permission.PROVIDER"/>
+    <uses-permission android:name="com.sec.knox.bridge.permission.FILE_OPERATION_HANDLER"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.settings.permission.ACCESS_EPISODE"/>
+    <uses-permission android:name="dexonpc.app.action.permission.KMS_FILETRANSFER_DRAG_FILEINFO"/>
+    <uses-permission android:name="com.samsung.android.app.networkstoragemanager.ACCESS_NETWORK_STORAGE_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.rubin.app.ui.permission.LAUNCH_RUBIN_SETTING"/>
+    <uses-permission android:name="com.samsung.android.rubin.context.permission.READ_CONTEXT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.rubin.persona.permission.READ_PERSONA_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.rubin.debugmode.ACCESS_DEBUG_MODE"/>
+    <uses-feature android:name="com.samsung.feature.samsung_experience_mobile"/>
+    <uses-permission android:name="com.samsung.android.bixby.service.bixbysearch.permission.BIXBY_SEARCH"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.sec.android.gallery3d.provider2.READ"/>
+    <uses-permission android:name="com.samsung.contacts.permission.TRASH_BIN"/>
+    <uses-permission android:name="com.samsung.android.messaging.permission.READ_MESSAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher_my_files" android:label="@string/app_name" android:largeHeap="true" android:name="com.sec.android.app.myfiles.external.MyFilesApplication" android:requestLegacyExternalStorage="true" android:supportsRtl="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="SamsungBasicInteraction" android:value="SEP10"/>
+        <meta-data android:name="com.samsung.android.bixby.capsuleId" android:value="viv.myFilesApp"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.companionApp" android:value="true"/>
+        <meta-data android:name="com.samsung.android.support.executable" android:resource="@xml/executable"/>
+        <meta-data android:name="com.samsung.android.dex.multiinstance.enable" android:value="true"/>
+        <meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/app_restrictions"/>
+        <meta-data android:name="com.samsung.android.resolver.ranking_priority" android:value="900"/>
+        <meta-data android:name="com.samsung.android.notification.logging" android:value="runestone"/>
+        <meta-data android:name="com.samsung.android.multiwindow.support.pair.shortcut" android:value="true"/>
+        <meta-data android:name="com.sec.android.app.myfiles.support_uri_list_share" android:value="true"/>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.sec.android.app.myfiles.external.ui.MainActivity" android:taskAffinity="" android:theme="@style/MyFiles.Default" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <meta-data android:name="com.samsung.android.multiwindow.activity.alias.targetactivity" android:value="com.sec.android.app.myfiles.external.ui.MultiInstanceLaunchActivity"/>
+            <meta-data android:name="com.samsung.android.startingwindow.LAYOUT_RESID_FOR_MASS" android:resource="@layout/splash_layout"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_DOWNLOADS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="samsung.myfiles.intent.action.EXECUTABLE_RECENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.VIEW_CATEGORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="application/open_cloud_shortcut"/>
+                <data android:mimeType="application/zip"/>
+                <data android:mimeType="application/rar"/>
+                <data android:mimeType="application/x-rar-compressed"/>
+                <data android:mimeType="application/x-7z-compressed"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.sec.android.app.myfiles.external.ui.MultiInstanceLaunchActivity" android:taskAffinity="" android:theme="@style/MyFiles.NoDisplay">
+            <intent-filter>
+                <action android:name="samsung.myfiles.intent.action.LAUNCH_MY_FILES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.OPEN_OPERATION_DESTINATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.sec.android.app.myfiles.external.ui.activity.MainActivity1" android:taskAffinity="" android:theme="@style/MyFiles.Default">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.sec.android.app.myfiles.external.ui.activity.MainActivity2" android:taskAffinity="" android:theme="@style/MyFiles.Default">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.sec.android.app.myfiles.external.ui.activity.MainActivity3" android:taskAffinity="" android:theme="@style/MyFiles.Default">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.sec.android.app.myfiles.external.ui.activity.MainActivity4" android:taskAffinity="" android:theme="@style/MyFiles.Default">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="density|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.sec.android.app.myfiles.external.ui.SettingsActivity" android:theme="@style/MyFiles.Settings">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"/>
+                <category android:name="com.sec.android.intent.category.SEC_APPLICATION_SETTINGS"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.sec.android.app.myfiles.external.ui.NetworkStorageManageActivity" android:theme="@style/MyFiles.Default">
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.MANAGE_NETWORK_STORAGE_MANAGE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:label="SamsungDriveAccountActivity" android:name="com.sec.android.app.myfiles.external.account.SamsungDriveLoginActivity" android:theme="@style/MyFiles.Default">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.sign_in_samsung_account"/>
+                <action android:name="com.sec.android.intent.action.passwd_check_samsung_account"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:label="GoogleDriveLoginActivity" android:name="com.sec.android.app.myfiles.external.account.GoogleDriveLoginActivity" android:theme="@style/MyFiles.Default">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.sign_in_google_account"/>
+                <action android:name="com.sec.android.intent.action.passwd_check_google_account"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:label="OneDriveLoginActivity" android:name="com.sec.android.app.myfiles.external.account.OneDriveLoginActivity" android:theme="@style/MyFiles.Default">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.sign_in_onedrive_account"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:label="@string/app_name" android:name="com.sec.android.app.myfiles.external.ui.BixbyActivity" android:theme="@style/Theme.AppCompat.Translucent">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.bixby_file_open"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:label="@string/app_name" android:name="com.sec.android.app.myfiles.external.ui.SFinderExecutionActivity" android:theme="@style/Theme.AppCompat.Translucent">
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.EXECUTE_FILE_BY_INTENT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.sec.android.app.myfiles.external.ui.PickerActivity" android:theme="@style/MyFiles.Translucent">
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.PICK_DATA"/>
+                <action android:name="com.sec.android.app.myfiles.PICK_DATA_MULTIPLE"/>
+                <action android:name="com.sec.android.app.myfiles.PICK_SELECT_PATH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.android.support.executable"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.CREATE_DOCUMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:label="DeveloperSettingActivity" android:name="com.sec.android.app.myfiles.external.ui.developer.DeveloperSettingActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:configChanges="density|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.sec.android.app.myfiles.external.ui.AnalyzeStorageActivity" android:theme="@style/MyFiles.Default">
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.RUN_STORAGE_ANALYSIS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:name="com.sec.android.app.myfiles.external.ui.PermissionNoticeActivity" android:theme="@style/MyFiles.Default">
+            <intent-filter>
+                <action android:name="com.sec.android.app.secsetupwizard.APP_PERMISSIONS_FOR_CHINA"/>
+                <action android:name="com.samsung.android.spv.ACTION_VIEW_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.sec.android.log.mf3km12ugy" android:exported="true" android:name="com.sec.android.diagmonagent.log.provider.DiagMonProvider" android:permission="com.sec.android.diagmonagent.permission.PROVIDER"/>
+        <provider android:authorities="com.sec.android.app.myfiles.deviceSearch.DeviceSearchIndexProvider" android:exported="true" android:name="com.sec.android.app.myfiles.external.providers.DeviceSearchIndexProvider" android:permission="com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER" android:syncable="false">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.DEVICE_SEARCH"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.sec.android.app.myfiles.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.sec.android.app.myfiles.external.providers.MyFilesFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="myfiles" android:exported="true" android:name="com.sec.android.app.myfiles.external.providers.MyFilesProvider" android:readPermission="com.sec.android.app.myfiles.permission.READ" android:writePermission="com.sec.android.app.myfiles.permission.WRITE">
+            <path-permission android:pathPrefix="/search_suggest_regex_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+        </provider>
+        <provider android:authorities="com.sec.android.app.myfiles.provider.MyFilesEpisodeProvider" android:exported="true" android:name="com.sec.android.app.myfiles.external.providers.MyFilesEpisodeProvider" android:permission="com.samsung.android.settings.permission.ACCESS_EPISODE">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.SCENE"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.sec.android.app.myfiles.external.providers.SettingsIndexablesProvider" android:exported="true" android:grantUriPermissions="true" android:name="com.sec.android.app.myfiles.external.providers.SettingsIndexablesProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.settings.require_settings_key" android:value="top_level_myfiles_settings_main_screen"/>
+            <meta-data android:name="com.samsung.android.settings.require_settings_title" android:value="@string/myfiles_settings"/>
+        </provider>
+        <receiver android:exported="false" android:name="com.sec.android.app.myfiles.external.receiver.MyFilesReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.MTP_FILE_SCAN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.HOME_SHORTCUT_INFO"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.os.storage.action.VOLUME_STATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.EXECUTE_FILE_BY_INTENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.myfiles.external.receiver.OneDriveMigrationStatusReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.scloud.app.broadcast.ACTION_MIGRATION_STATUS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.myfiles.external.receiver.DownloadReceiver" android:permission="com.sec.android.app.myfiles.permission.WRITE">
+            <intent-filter>
+                <action android:name="com.samsung.android.coreapps.rshare.intent.ACTION_DOWNLOAD_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.myfiles.external.receiver.MoveToSecureFolderCompletedReceiver" android:permission="com.sec.knox.bridge.permission.FILE_OPERATION_HANDLER">
+            <intent-filter>
+                <action android:name="com.sec.knox.bridge.service.ACTION_FILE_OPERATIONS_DONE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.android.app.myfiles.external.receiver.StorageMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+                <action android:name="com.sec.android.app.myfiles.INTERNAL_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.android.app.myfiles.external.receiver.OperationFinishReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.OPERATION_FINISHED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.myfiles.DELETE_OPERATION_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.myfiles.external.receiver.AccountRemovedReceiver">
+            <intent-filter>
+                <action android:name="android.accounts.action.ACCOUNT_REMOVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.myfiles.external.receiver.AppUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="com.sec.android.app.samsungapps.UPDATE_EXISTS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.android.app.myfiles.external.receiver.DoPReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.app.dexonpc.file_transmit_finished_download"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.myfiles.external.receiver.CustomizationServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:host="com.samsung.android.rubin.context.tripevent" android:pathPattern="/trip_event.*" android:scheme="content"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.app.myfiles.external.receiver.TrashExpirationReceiver"/>
+        <receiver android:name="com.sec.android.app.myfiles.external.receiver.ShortcutCallbackReceiver"/>
+        <receiver android:exported="true" android:name="com.sec.android.app.myfiles.external.receiver.SmartSwitchBackupAndRestoreReceiver" android:permission="com.sec.android.app.myfiles.permission.WRITE">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_MYFILES_UPDATE_SHORTCUT"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_MYFILES"/>
+                <action android:name="com.samsung.android.intent.action.RESPONSE_BACKUP_MYFILES"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_MYFILES"/>
+                <action android:name="com.samsung.android.intent.action.RESPONSE_RESTORE_MYFILES"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.sec.android.app.myfiles.external.operations.OperationService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.microsoft.identity.client.AuthenticationActivity"/>
+        <activity android:exported="true" android:name="com.microsoft.identity.client.BrowserTabActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.sec.android.app.myfiles.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.sec.android.app.myfiles.CapsuleProvider" android:exported="true" android:name="com.samsung.android.sdk.bixby2.provider.CapsuleProvider"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.version" android:value="@string/sdk_version"/>
+        <service android:name="com.sec.android.diagmonagent.log.ged.scheduler.GEDJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="SPDE.build.signature" android:value="0da31e6fe79fdb9af995d792a7a6de361ed191a6/87428855/release/SecMyFiles-1204441-12.2.04"/>
+        <meta-data android:name="SPDE.env.version" android:value="4.0.1/L30.1.18/0.9.27"/>
+    </application>
+</manifest>

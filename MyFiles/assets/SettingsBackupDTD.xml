@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceConfiguration>
+    <GeneralInfo>
+        <Version> </Version>
+        <DeviceType> </DeviceType>
+        <BuildNum> </BuildNum>
+        <CreatedTime> </CreatedTime>
+    </GeneralInfo>
+    <BackupDataSet>
+        <BackupData>
+            <SoftwareUpdate>
+                <WifiAutoDownload> </WifiAutoDownload>
+            </SoftwareUpdate>
+        </BackupData>
+        <BackupData>
+            <AOD>
+                <ContentToShow> </ContentToShow>
+                <ClockType contentType=" " aod=" " lock=" " compatContentType=" " imageClockName=" " imageClockBitmap=" " imageClockContentType =" "> </ClockType>
+                <Brightness mode=" " level=" "> </Brightness>
+                <DBVersion> </DBVersion>
+                <Time allDay=" " end=" " start=" "> </Time>
+                <WorldClockInfo cityIndex=" " timeZoneIndex=" " city_0=" " city_1=" " city_2=" " city_3=" "> </WorldClockInfo>
+                <StateMode> </StateMode>
+                <TapToShow> </TapToShow>
+                <ShowMusicInformation> </ShowMusicInformation>
+                <ScreenOrientation> </ScreenOrientation>
+                <ClockColor aodColor=" " lockColor=" " customLockColor=" "> </ClockColor>
+                <ChargingInfoAlways> </ChargingInfoAlways>
+            </AOD>
+        </BackupData>
+
+        <BackupData>
+            <Accessibility>
+                <Default>
+                    <NotificationReminderVibrate> </NotificationReminderVibrate>
+                    <FlashNotification> </FlashNotification>
+                    <AccessibilityDisplayMagnificationNavbarEnabled> </AccessibilityDisplayMagnificationNavbarEnabled>
+                    <HoverZoomValue> </HoverZoomValue>
+                    <AccessibilityCaptioningForegroundColor> </AccessibilityCaptioningForegroundColor>
+                    <DirectNegative> </DirectNegative>
+                    <AccessibilityCaptioningWindowColor> </AccessibilityCaptioningWindowColor>
+                    <DirectColorAdjustment> </DirectColorAdjustment>
+                    <DirectUniversalSwitch> </DirectUniversalSwitch>
+                    <DirectAccessibility> </DirectAccessibility>
+                    <DirectAccess> </DirectAccess>
+                    <FingerMagnifier> </FingerMagnifier>
+                    <HighTextContrastEnabled> </HighTextContrastEnabled>
+                    <LongPressTimeout> </LongPressTimeout>
+                    <AccessControlUse> </AccessControlUse>
+                    <AssistantMenu> </AssistantMenu>
+                    <EasyInteraction> </EasyInteraction>
+                    <AirMotionWakeUp> </AirMotionWakeUp>
+                    <AccessibilityFontSwitch> </AccessibilityFontSwitch>
+                    <AccessibilityEnabled> </AccessibilityEnabled>
+                    <AccessibilityShortcutEnabled> </AccessibilityShortcutEnabled>
+                    <AccessibilityCaptioningFontScale> </AccessibilityCaptioningFontScale>
+                    <RapidKeyInput> </RapidKeyInput>
+                    <DirectAccessControl> </DirectAccessControl>
+                    <HoverZoomMagnifierSize> </HoverZoomMagnifierSize>
+                    <EnabledAccessibilityService> </EnabledAccessibilityService>
+                    <HearingAid> </HearingAid>
+                    <AccessibilityCaptioningEdgeType> </AccessibilityCaptioningEdgeType>
+                    <AccessibilityLargeCursor> </AccessibilityLargeCursor>
+                    <ShowButtonBackground> </ShowButtonBackground>
+                    <DirectAccessMagnifier> </DirectAccessMagnifier>
+                    <AccessibilityCaptioningBackgroundColor> </AccessibilityCaptioningBackgroundColor>
+                    <SoundDetector> </SoundDetector>
+                    <AllSoundOff> </AllSoundOff>
+                    <ScreenNotification> </ScreenNotification>
+                    <AccessibilityCursorColor> </AccessibilityCursorColor>
+                    <AccessibilityAutoclickEnabled> </AccessibilityAutoclickEnabled>
+                    <AccessControlTimeSetHour> </AccessControlTimeSetHour>
+                    <AccessibilityCaptioningLocale> </AccessibilityCaptioningLocale>
+                    <AccessibilityButtonTargetComponent> </AccessibilityButtonTargetComponent>
+                    <AccessibilityCaptioningPreset> </AccessibilityCaptioningPreset>
+                    <AccesscontrolTimeSetMin> </AccesscontrolTimeSetMin>
+                    <AccessibilityDisplayMagnificationEnabled> </AccessibilityDisplayMagnificationEnabled>
+                    <DirectTalkback> </DirectTalkback>
+                    <NotificationReminderAppList> </NotificationReminderAppList>
+                    <AccessibilityCaptioningEdgeColor> </AccessibilityCaptioningEdgeColor>
+                    <DirectSTalkback> </DirectSTalkback>
+                    <AccessibilityAutoclickDelay> </AccessibilityAutoclickDelay>
+                    <AccessControlVolumeButton> </AccessControlVolumeButton>
+                    <MagnifierWindowHorizontalFocusLock> </MagnifierWindowHorizontalFocusLock>
+                    <AccessibilityLargePointerIcon> </AccessibilityLargePointerIcon>
+                    <TimeKey> </TimeKey>
+                    <AccessControlKeyboardBlock> </AccessControlKeyboardBlock>
+                    <AccessibilityCaptioningTypeface> </AccessibilityCaptioningTypeface>
+                    <AccessControlPowerButton> </AccessControlPowerButton>
+                    <DirectGreyscale> </DirectGreyscale>
+                    <NotificationReminderSelectable> </NotificationReminderSelectable>
+                    <AccessibilityDisplayInversionEnabled> </AccessibilityDisplayInversionEnabled>
+                    <AccessibilityCaptioningEnabled> </AccessibilityCaptioningEnabled>
+                    <TapDurationEnabled> </TapDurationEnabled>
+                    <TapDurationThreshold> </TapDurationThreshold>
+                    <TouchBlockingEnabled> </TouchBlockingEnabled>
+                    <TouchBlockingPeriod> </TouchBlockingPeriod>
+                    <NotificationReminderType> </NotificationReminderType>
+                    <RemoveAnimations> </RemoveAnimations>
+                    <AccessControlEnabled> </AccessControlEnabled>
+                    <AccessibilityShorcutOnLockScreen> </AccessibilityShorcutOnLockScreen>
+                    <AccessibilityShortcutTargetService> </AccessibilityShortcutTargetService>
+                    <DirectColorLens> </DirectColorLens>
+                    <AccessibilityInteractiveUiTimeoutMs> </AccessibilityInteractiveUiTimeoutMs>
+                    <AccessibilityNonInteractiveUiTimeoutMs> </AccessibilityNonInteractiveUiTimeoutMs>
+                    <MasterBalance> </MasterBalance>
+                    <MasterMono> </MasterMono>
+                    <StickyKeysEnabled> </StickyKeysEnabled>
+                    <SlowKeysEnabled> </SlowKeysEnabled>
+                    <BounceKeysEnabled> </BounceKeysEnabled>
+                    <SlowKeysPeriod> </SlowKeysPeriod>
+                    <BounceKeysPeriod> </BounceKeysPeriod>
+                    <AssistantMenuEamEnable> </AssistantMenuEamEnable>
+                    <DirectMuteAllSound> </DirectMuteAllSound>
+                    <DirectHighContrastFont> </DirectHighContrastFont>
+                    <AmplifyAmbientSound> </AmplifyAmbientSound>
+                    <LcdCurtain> </LcdCurtain>
+                </Default>
+                <UniversalSwitch>
+                    <SelectionModeGranularity> </SelectionModeGranularity>
+                    <SelectionMode> </SelectionMode>
+                    <Settings> </Settings>
+                    <VoiceFeedback> </VoiceFeedback>
+                    <EditHome> </EditHome>
+                    <EditText> </EditText>
+                    <EditTextIcon> </EditTextIcon>
+                    <AutoTapVal> </AutoTapVal>
+                    <Gestures> </Gestures>
+                    <PauseFirstItem> </PauseFirstItem>
+                    <IgnoreRepeat> </IgnoreRepeat>
+                    <IgnoreRepeatVal> </IgnoreRepeatVal>
+                    <MoveApp> </MoveApp>
+                    <TapDuration> </TapDuration>
+                    <Contextual> </Contextual>
+                    <LargeCursor> </LargeCursor>
+                    <AutoMoveWhileHolding> </AutoMoveWhileHolding>
+                    <CursorColor> </CursorColor>
+                    <Main> </Main>
+                    <ScanDirection> </ScanDirection>
+                    <SoundFeedbackVol> </SoundFeedbackVol>
+                    <RotateScreen> </RotateScreen>
+                    <AutoMoveWhileHoldingVal> </AutoMoveWhileHoldingVal>
+                    <GranularitySettings> </GranularitySettings>
+                    <Actions> </Actions>
+                    <AutoTapKeyboard> </AutoTapKeyboard>
+                    <AutoTap> </AutoTap>
+                    <PauseFirstItemVal> </PauseFirstItemVal>
+                    <ScanMethod> </ScanMethod>
+                    <Buttons> </Buttons>
+                    <ScanLoops> </ScanLoops>
+                    <ScanSpeed> </ScanSpeed>
+                    <AutoScan> </AutoScan>
+                    <SwitchIncreaseVolume> </SwitchIncreaseVolume>
+                    <SwitchSelectItem> </SwitchSelectItem>
+                    <SwitchQuickPanel> </SwitchQuickPanel>
+                    <SoundFeddback> </SoundFeddback>
+                    <SwitchTouchHold> </SwitchTouchHold>
+                    <SwitchNotification> </SwitchNotification>
+                    <SwitchTap> </SwitchTap>
+                    <SwitchScrollForward> </SwitchScrollForward>
+                    <SwitchScrollBackward> </SwitchScrollBackward>
+                    <SwitchRecentApps> </SwitchRecentApps>
+                    <SwitchDecreaseVolume> </SwitchDecreaseVolume>
+                    <SwitchMoveToNextItem> </SwitchMoveToNextItem>
+                    <SwitchHome> </SwitchHome>
+                    <SwitchBack> </SwitchBack>
+                    <SwitchMoveToPreviousItem> </SwitchMoveToPreviousItem>
+                    <SwitchAutoScan> </SwitchAutoScan>
+                    <SoundFeedback> </SoundFeedback>
+                    <TapDurationVal> </TapDurationVal>
+                </UniversalSwitch>
+                <VoiceAssistant>
+                    <PrefSuspended> </PrefSuspended>
+                    <PrefInformationBattery> </PrefInformationBattery>
+                    <PrefSingleTap> </PrefSingleTap>
+                    <PrefCallerId> </PrefCallerId>
+                    <PrefShortcutRightAndLeft> </PrefShortcutRightAndLeft>
+                    <PrefSelectorSpeechRatekey> </PrefSelectorSpeechRatekey>
+                    <PrefQuickMenuSpeechRateKey> </PrefQuickMenuSpeechRateKey>
+                    <PrefShortcutSideTapDouble> </PrefShortcutSideTapDouble>
+                    <PrefShortcutUpAndRight> </PrefShortcutUpAndRight>
+                    <PrefPerformanceStatus> </PrefPerformanceStatus>
+                    <PrefSelectorVerbosityKey> </PrefSelectorVerbosityKey>
+                    <PrefQuickMenuSoundFeedbackkey> </PrefQuickMenuSoundFeedbackkey>
+                    <PrefSpeechVolume> </PrefSpeechVolume>
+                    <PrefPunctuation> </PrefPunctuation>
+                    <PrefSideTapSensitivity> </PrefSideTapSensitivity>
+                    <PrefProximity> </PrefProximity>
+                    <PrefQuickMenuDarkScreenKey> </PrefQuickMenuDarkScreenKey>
+                    <PrefNodeDescOrderKey> </PrefNodeDescOrderKey>
+                    <PrefShakeToReadThreshold> </PrefShakeToReadThreshold>
+                    <PrefVibration> </PrefVibration>
+                    <PrefDimVolumeThreeClicks> </PrefDimVolumeThreeClicks>
+                    <PrefSpeakContainerElementPositionsKey> </PrefSpeakContainerElementPositionsKey>
+                    <PrefTreeDebug> </PrefTreeDebug>
+                    <PrefA11yHints> </PrefA11yHints>
+                    <PrefInformationBluetooth> </PrefInformationBluetooth>
+                    <PrefShortcutDownAndRight> </PrefShortcutDownAndRight>
+                    <PrefElementIdsKey> </PrefElementIdsKey>
+                    <PrefQuickMenuRapidKeyInputKey> </PrefQuickMenuRapidKeyInputKey>
+                    <PrefSpeakRolesKey> </PrefSpeakRolesKey>
+                    <PrefResumeTalkback> </PrefResumeTalkback>
+                    <PrefInformationNetwork> </PrefInformationNetwork>
+                    <PrefKeyboardEcho> </PrefKeyboardEcho>
+                    <PrefInformationDate> </PrefInformationDate>
+                    <PrefInformationTime> </PrefInformationTime>
+                    <PrefPitchVolume> </PrefPitchVolume>
+                    <PrefVerbosityPresetKey> </PrefVerbosityPresetKey>
+                    <PrefShortcutLeft> </PrefShortcutLeft>
+                    <PrefSelectorActivationKey> </PrefSelectorActivationKey>
+                    <PrefUseAudioFocus> </PrefUseAudioFocus>
+                    <PrefQuickMenuVibraionFeedbakey> </PrefQuickMenuVibraionFeedbakey>
+                    <PrefQuickMenuDeviceVolumeKey> </PrefQuickMenuDeviceVolumeKey>
+                    <PrefQuickMenuLargeCursorKey> </PrefQuickMenuLargeCursorKey>
+                    <PrefShortcutUpAndLeft> </PrefShortcutUpAndLeft>
+                    <PrefDimWhenTalkbackEnabledKey> </PrefDimWhenTalkbackEnabledKey>
+                    <PrefWebScripts> </PrefWebScripts>
+                    <PrefIntonation> </PrefIntonation>
+                    <PrefTtsOverlay> </PrefTtsOverlay>
+                    <PrefSelectorAudioFocusKey> </PrefSelectorAudioFocusKey>
+                    <PrefShowDimScreenConfirmationDialog> </PrefShowDimScreenConfirmationDialog>
+                    <PrefSelectKeymap> </PrefSelectKeymap>
+                    <PrefShortcutRightAndDown> </PrefShortcutRightAndDown>
+                    <PrefQuickMenuPunctuationKey> </PrefQuickMenuPunctuationKey>
+                    <PrefSoundback> </PrefSoundback>
+                    <PrefLogLevel> </PrefLogLevel>
+                    <PrefScreenoff> </PrefScreenoff>
+                    <FirstTimeUser> </FirstTimeUser>
+                    <PrefSoundbackVolume> </PrefSoundbackVolume>
+                    <PrefShowSuspensionConfirmationDialog> </PrefShowSuspensionConfirmationDialog>
+                    <PrefQuickMenuFocusOnSpeechAudioKey> </PrefQuickMenuFocusOnSpeechAudioKey>
+                    <PrefQuickMenuCursorColorKey> </PrefQuickMenuCursorColorKey>
+                    <PrefQuickMenuNotificationkey> </PrefQuickMenuNotificationkey>
+                    <PrefPhoneticLetters> </PrefPhoneticLetters>
+                    <PrefRateVolume> </PrefRateVolume>
+                    <PrefSingleTapNavigationBar> </PrefSingleTapNavigationBar>
+                    <PrefReadScreenKeyboardInputAloud> </PrefReadScreenKeyboardInputAloud>
+                    <PrefReadHardwareKeyboardInputAloud> </PrefReadHardwareKeyboardInputAloud>
+                    <PrefInformationCenter> </PrefInformationCenter>
+                    <PrefSpeakPassword> </PrefSpeakPassword>
+                    <PrefCapitalLettersKey> </PrefCapitalLettersKey>
+                    <PrefEnhancedFocusKey> </PrefEnhancedFocusKey>
+                    <PrefEffectForLightSensingKey> </PrefEffectForLightSensingKey>
+                    <PrefVoiceForLightSensingKey> </PrefVoiceForLightSensingKey>
+                    <PrefQuickMenuLightSensingKey> </PrefQuickMenuLightSensingKey>
+                </VoiceAssistant>
+                <Mdnie>
+                    <GreyscaleMode> </GreyscaleMode>
+                    <ColorBlindCvdseverity> </ColorBlindCvdseverity>
+                    <ColorLensOpacity> </ColorLensOpacity>
+                    <ColorLensSwitch> </ColorLensSwitch>
+                    <ColorBlindUserParameter> </ColorBlindUserParameter>
+                    <ColorBlind> </ColorBlind>
+                    <ColorAdjustmentType> </ColorAdjustmentType>
+                    <ColorLensType> </ColorLensType>
+                    <ColorBlindCvdtype> </ColorBlindCvdtype>
+                    <HighContrast> </HighContrast>
+                    <PredefinedColorBlindIntensity> </PredefinedColorBlindIntensity>
+                </Mdnie>
+                <AssistantMenu>
+                    <AssistantMenuActiveItemCount> </AssistantMenuActiveItemCount>
+                    <AssistantMenuSize> </AssistantMenuSize>
+                    <Transparency> </Transparency>
+                    <AssistantPlusItemCount> </AssistantPlusItemCount>
+                    <AssistantMenuInactiveItemCount> </AssistantMenuInactiveItemCount>
+                    <CursorPointerSpeed> </CursorPointerSpeed>
+                    <CursorPointerSize> </CursorPointerSize>
+                    <CursorPadSize> </CursorPadSize>
+                    <AssistantMenuPlusContact> </AssistantMenuPlusContact>
+                    <AssistantMenuPlusCamera> </AssistantMenuPlusCamera>
+                    <AssistantMenuPlusEmail> </AssistantMenuPlusEmail>
+                    <AssistantMenuPlusGallery> </AssistantMenuPlusGallery>
+                    <AssistantMenuPlusDialer> </AssistantMenuPlusDialer>
+                    <AssistantMenuPlusMessage> </AssistantMenuPlusMessage>
+                    <AssistantMenuPlusBrowser> </AssistantMenuPlusBrowser>
+                    <AssistantMenuPlusSettings> </AssistantMenuPlusSettings>
+                    <AssistantMenuOptionUpperapps> </AssistantMenuOptionUpperapps>
+                    <AssistantMenuOptionLowerapps> </AssistantMenuOptionLowerapps>
+                    <AssistantMenuShowAsEdgeIcon> </AssistantMenuShowAsEdgeIcon>
+                </AssistantMenu>
+                <ViewClear>
+                    <FakeBoldFont> </FakeBoldFont>
+                    <MagnifierWindowFollowTypingFocus> </MagnifierWindowFollowTypingFocus>
+                </ViewClear>
+                <Main>
+                    <HideNotificaiton> </HideNotificaiton>
+                </Main>
+            </Accessibility>
+        </BackupData>
+        <BackupData>
+            <Settings>
+                <Connections>
+                    <LocationBluetoothScan> </LocationBluetoothScan>
+                    <WiFi>
+                        <Advanced>
+                            <SwitchToMobileData>
+                                <Enabled> </Enabled>
+                                <Aggressive> </Aggressive>
+                                <IndividualApps> </IndividualApps>
+                            </SwitchToMobileData>
+                            <AutoWifi> </AutoWifi>
+                            <WifiPowerSavingMode> </WifiPowerSavingMode>
+                            <Hotspot20>
+                                <Enabled> </Enabled>
+                                <History> </History>
+                            </Hotspot20>
+                            <WIPS> </WIPS>
+                            <ShowNetworkInfo>
+                                <Enabled> </Enabled>
+                            </ShowNetworkInfo>
+                        </Advanced>
+                    </WiFi>
+                    <Nfc beam=" " securenfc=" "> </Nfc>
+                    <Location> </Location>
+                    <LocationWifiScan> </LocationWifiScan>
+                    <LocationMethod> </LocationMethod>
+                </Connections>
+                <Sound>
+                    <KeyboardSound> </KeyboardSound>
+                    <VibrationFeedback> </VibrationFeedback>
+                    <DialingKeypadTone> </DialingKeypadTone>
+                    <NotificationSound> </NotificationSound>
+                    <NotificationSoundSim2> </NotificationSoundSim2>
+                    <TouchSound> </TouchSound>
+                    <ScreenLockSound> </ScreenLockSound>
+                    <VibrationPattern> </VibrationPattern>
+                    <UseVolumeKeyForMedia> </UseVolumeKeyForMedia>
+                    <ChargingSound> </ChargingSound>
+                    <VibrationWhileRinging> </VibrationWhileRinging>
+                    <KeyboardVibration> </KeyboardVibration>
+                    <DialingKeypadVibration> </DialingKeypadVibration>
+                    <NavigationGesturesVibration> </NavigationGesturesVibration>
+                    <CameraFeedbackVibration> </CameraFeedbackVibration>
+                </Sound>
+                <LockScreen>
+                    <RoamingClockPosition> </RoamingClockPosition>
+                    <RoamingClockHomeCity> </RoamingClockHomeCity>
+                    <HideContent> </HideContent>
+                    <ShowNotification> </ShowNotification>
+                    <NotificationIconOnly> </NotificationIconOnly>
+                    <RoamingClock> </RoamingClock>
+                    <FaceWidget musicController=" " todaySchedule=" " nextAlarm=" "> </FaceWidget>
+                    <FaceWidgetPosition> </FaceWidgetPosition>
+                    <Transparency> </Transparency>
+                    <AutoReverseTextColor> </AutoReverseTextColor>
+                    <Shortcut> </Shortcut>
+                    <ContactInformation> </ContactInformation>
+                    <ShowOnAOD> </ShowOnAOD>
+                    <ShortcutLayout> </ShortcutLayout>
+                    <NotificationsToShow> </NotificationsToShow>
+                    <LunarCalendar> </LunarCalendar>
+                    <HijriCalendar> </HijriCalendar>
+                </LockScreen>
+                <General>
+                    <ShowKeyboardButton> </ShowKeyboardButton>
+                    <ChangeLanguageShortcut> </ChangeLanguageShortcut>
+                </General>
+                <Accounts>
+                    <SamsungAccountID> </SamsungAccountID>
+                    <GoogleAccountID> </GoogleAccountID>
+                </Accounts>
+                <Advanced>
+                    <EasyMute turnOver=" " palmTouch=" "> </EasyMute>
+                    <SmartStay> </SmartStay>
+                    <SmartAlert> </SmartAlert>
+                    <PalmSwipeToCapture> </PalmSwipeToCapture>
+                    <SmartCapture> </SmartCapture>
+                    <SwipeToCallOrSendMessage> </SwipeToCallOrSendMessage>
+                    <DirectCall> </DirectCall>
+                    <DirectShare> </DirectShare>
+                    <ReduceAnimations> </ReduceAnimations>
+                    <LiftToWake> </LiftToWake>
+                    <DoubleTapToWake> </DoubleTapToWake>
+                    <OneHandedMode wakeupType=" " showHardKey=" "> </OneHandedMode>
+                    <FingerSensorGestures supportSpay=" "> </FingerSensorGestures>
+                    <CoverTextDirection> </CoverTextDirection>
+                    <ActiveKeyShortPress> </ActiveKeyShortPress>
+                    <ActiveKeyLongPress> </ActiveKeyLongPress>
+                    <ActiveKeyOnLockScreen> </ActiveKeyOnLockScreen>
+                    <SideKeyDoublePressSwitch> </SideKeyDoublePressSwitch>
+                    <SideKeyDoublePressType> </SideKeyDoublePressType>
+                    <SideKeyDoublePressOpenAppValue> </SideKeyDoublePressOpenAppValue>
+                    <SideKeyLongPressType> </SideKeyLongPressType>
+                    <XcoverTopKeyShortPress> </XcoverTopKeyShortPress>
+                    <XcoverTopKeyLongPress> </XcoverTopKeyLongPress>
+                    <XcoverTopKeyOnLockScreen> </XcoverTopKeyOnLockScreen>
+                    <ShakeToShare> </ShakeToShare>
+                    <SmartPopupView> </SmartPopupView>
+                    <XcoverKeyPtt> </XcoverKeyPtt>
+                </Advanced>
+                <Display>
+                    <ScreenZoom range=" "> </ScreenZoom>
+                    <AutoBrightness> </AutoBrightness>
+                    <FontSize range=" " largeFont=" "> </FontSize>
+                    <ScreenTimeout> </ScreenTimeout>
+                    <BluelightFilter turnOnAsScheduled=" " opacity=" " turnOnAsScheduledStart=" " turnOnAsScheduledEnd=" " turnOnAsScheduledType=" "> </BluelightFilter>
+                    <ButtonLayout> </ButtonLayout>
+                    <ShowRecentNotificationOnly> </ShowRecentNotificationOnly>
+                    <FontStyle name=" "> </FontStyle>
+                    <UnlockWithHomeButton> </UnlockWithHomeButton>
+                    <BlockAccidentalTouches> </BlockAccidentalTouches>
+                    <ShowBatteryPercentage> </ShowBatteryPercentage>
+                    <NightMode turnOnAsScheduled=" " turnOnAsScheduledStart=" " turnOnAsScheduledEnd=" " turnOnAsScheduledType=" " applyToWallpaper=" "> </NightMode>
+                    <NavigationTypes DetailGestureType=" " BackGestureSensitivity=" "> </NavigationTypes>
+                    <NavigationGestureHint> </NavigationGestureHint>
+                    <ScreenMode screenModeType=" " whiteBalance=" " red=" " green=" " blue=" "> </ScreenMode>
+                    <ScreenResolution> </ScreenResolution>
+                    <ScreenSaver> </ScreenSaver>
+                    <HardPressHomeButton pressureUserLevel=" "> </HardPressHomeButton>
+                    <TouchSensetivity> </TouchSensetivity>
+                    <FontBold> </FontBold>
+                    <BlockGesturesWithSPen> </BlockGesturesWithSPen>
+                    <BackGestureOnKeyboard> </BackGestureOnKeyboard>
+                    <ShowChargingInformation> </ShowChargingInformation>
+                    <ShowButtonToHideKeyboard> </ShowButtonToHideKeyboard>
+                    <RefreshRate> </RefreshRate>
+                    <SwitchAppsToFrontScreen> </SwitchAppsToFrontScreen>
+                </Display>
+                <Accessibility>
+                    <PreferredEngine> </PreferredEngine>
+                    <Pitch> </Pitch>
+                    <Rate> </Rate>
+                </Accessibility>
+                <Notifications>
+                    <AppIconBadgeStyle> </AppIconBadgeStyle>
+                    <AppIconBadgeShowNotifications> </AppIconBadgeShowNotifications>
+                    <AppIconBadge> </AppIconBadge>
+                    <ShowSnoozeOption> </ShowSnoozeOption>
+                    <DndDuration> </DndDuration>
+                </Notifications>
+                <Security>
+                    <MakePasswordVisible> </MakePasswordVisible>
+                </Security>
+            </Settings>
+        </BackupData>
+        <BackupData>
+            <AirCommand>
+                <AirCommand>
+                    <Shortcuts version=" "> </Shortcuts>
+                    <FloatingIconEnabled> </FloatingIconEnabled>
+                </AirCommand>
+                <RemoteSPen>
+                    <Enabled> </Enabled>
+                    <AppDefinedRule version=" "> </AppDefinedRule>
+                    <CameraControlRule version=" "> </CameraControlRule>
+                    <MediaControlRule version=" "> </MediaControlRule>
+                    <BaseRule version=" "> </BaseRule>
+                    <SPenUnlockEnabled> </SPenUnlockEnabled>
+                </RemoteSPen>
+                <Spen>
+                    <ScreenOffMemoEnabled useSignatureColorEnabled=" "> </ScreenOffMemoEnabled>
+                    <AirViewEnabled> </AirViewEnabled>
+                    <WritingBuddyEnabled> </WritingBuddyEnabled>
+                    <HoveringPointerEnabled> </HoveringPointerEnabled>
+                    <SPenDetachmentOption> </SPenDetachmentOption>
+                    <SPenAlertEnabled> </SPenAlertEnabled>
+                    <PowerSaverEnabled> </PowerSaverEnabled>
+                    <SoundEnabled> </SoundEnabled>
+                    <VibrationEnabled> </VibrationEnabled>
+                    <SPenDoubleTapLaunchEnabled> </SPenDoubleTapLaunchEnabled>
+                </Spen>
+            </AirCommand>
+        </BackupData>
+        <BackupData>
+            <Routine>
+                <Setting>
+                    <RoutineServiceEnable> </RoutineServiceEnable>
+                </Setting>
+                <Preference>
+                    <HideWidgetLock> </HideWidgetLock>
+                    <ShowRoutineIcon> </ShowRoutineIcon>
+                    <RoutineDeclineMsg> </RoutineDeclineMsg>
+                    <IconColorOrder> </IconColorOrder>
+                    <IsPreaddedItem> </IsPreaddedItem>
+                    <MainTapIndex> </MainTapIndex>
+                </Preference>
+                <Item>
+                    <RoutineItemList> </RoutineItemList>
+                </Item>
+                <Common>
+                    <RoutineBackupVersion> </RoutineBackupVersion>
+                </Common>
+            </Routine>
+        </BackupData>
+        <BackupData>
+            <SoundAlive>
+                <GlobalEffect>
+                    <Dolby> </Dolby>
+                    <DolbyOld> </DolbyOld>
+                    <DolbyUser> </DolbyUser>
+                    <DolbyGameMode> </DolbyGameMode>
+                </GlobalEffect>
+                <Equalizer>
+                    <PresetIndex> </PresetIndex>
+                    <EQIndex> </EQIndex>
+                    <SquareIndex> </SquareIndex>
+                    <CustomSquareIndex> </CustomSquareIndex>
+                    <TabIndexCustom> </TabIndexCustom>
+                    <TabCurrentPage> </TabCurrentPage>
+                </Equalizer>
+                <GlobalEffect>
+                    <UHQUpscaler> </UHQUpscaler>
+                    <UHQUpscalerOld> </UHQUpscalerOld>
+                    <Karaoke> </Karaoke>
+                    <Surround> </Surround>
+                    <TubeAmp> </TubeAmp>
+                    <ConcertHall> </ConcertHall>
+                </GlobalEffect>
+            </SoundAlive>
+        </BackupData>
+        <BackupData>
+            <SamsungCloud>
+                <Settings>
+                    <ShowIcon> </ShowIcon>
+                </Settings>
+            </SamsungCloud>
+        </BackupData>
+        <BackupData>
+            <Finder>
+                <Settings>
+                    <ShowSuggestedApps> </ShowSuggestedApps>
+                    <ShowRecentlyUsedTags> </ShowRecentlyUsedTags>
+                    <ManageApps> </ManageApps>
+                    <ShowSearchSuggestions> </ShowSearchSuggestions>
+                </Settings>
+            </Finder>
+        </BackupData>
+        <BackupData>
+            <MyFiles>
+                <EditMyFilesHome>
+                    <RecentFiles> </RecentFiles>
+                    <Categories> </Categories>
+                    <SDCard> </SDCard>
+                    <SamsungDrive> </SamsungDrive>
+                    <GoogleDrive> </GoogleDrive>
+                    <OneDrive> </OneDrive>
+                    <NetworkStorage> </NetworkStorage>
+                </EditMyFilesHome>
+                <FileManagement>
+                    <Trash> </Trash>
+                    <ManageFilesUsingWiFiOnly> </ManageFilesUsingWiFiOnly>
+                    <ShowHiddenFiles> </ShowHiddenFiles>
+                    <ManageFilesUsingWiFiOnlyNetworkStorage> </ManageFilesUsingWiFiOnlyNetworkStorage>
+                    <ShowFrequentlyUsedOnTop> </ShowFrequentlyUsedOnTop>
+                </FileManagement>
+                <StorageAnalysis>
+                    <LargeFileSize customLargeFileSize=" " customLargeFileUnit=" "> </LargeFileSize>
+                    <DurationOfUnusedFiles customDurationOfUnusedFiles=" "> </DurationOfUnusedFiles>
+                </StorageAnalysis>
+                <Popup>
+                    <CloudMigrationClose> </CloudMigrationClose>
+                </Popup>
+            </MyFiles>
+        </BackupData>
+        <BackupData>
+            <HBD>
+                <BackupDeviceInfo> </BackupDeviceInfo>
+                <Language> </Language>
+                <CoverLanguage> </CoverLanguage>
+                <UsePhonepadInPortrait> </UsePhonepadInPortrait>
+                <NumbersAndSymbolsType> </NumbersAndSymbolsType>
+                <UsePredictionOn> </UsePredictionOn>
+                <UseAutoCapitalize> </UseAutoCapitalize>
+                <UseAutoPunctuate> </UseAutoPunctuate>
+                <FuzzyPinyinInput> </FuzzyPinyinInput>
+                <UseSuggestSticker useMojitok=" " useBitmoji=" " methodPrediction=" " methodPopup=" " manageAppLists=" "> </UseSuggestSticker>
+                <TextShortcuts> </TextShortcuts>
+                <ViewType useOneHandRight=" " viewTypeLand=" " prevViewType=" " prevViewTypeLand=" " frontViewType=" " frontViewTypeLand=" " prevFrontViewType=" " prevFrontViewTypeLand=" " foldFeatureValue=" " viewTypePolicyVersion=" "> </ViewType>
+                <KeyboardSize sizeType=" "> </KeyboardSize>
+                <KeyboardTransparency> </KeyboardTransparency>
+                <UseNumFirstLine> </UseNumFirstLine>
+                <UseCoverNumFirstLine> </UseCoverNumFirstLine>
+                <UseAlternativeCharacters> </UseAlternativeCharacters>
+                <UseCoverAlternativeCharacters> </UseCoverAlternativeCharacters>
+                <CustomSymbols> </CustomSymbols>
+                <KeyboardSwipe> </KeyboardSwipe>
+                <KeyboardSwipeNone> </KeyboardSwipeNone>
+                <UseSwipeToType> </UseSwipeToType>
+                <UseCursorControl> </UseCursorControl>
+                <TouchAndHoldDelay> </TouchAndHoldDelay>
+                <BackspaceDeleteSpeed> </BackspaceDeleteSpeed>
+                <TouchAndHoldSpaceBar> </TouchAndHoldSpaceBar>
+                <UsePenDetection> </UsePenDetection>
+                <UseLanguageSwitchingUsingSpaceBar> </UseLanguageSwitchingUsingSpaceBar>
+                <UseLanguageSwitchingUsingKey> </UseLanguageSwitchingUsingKey>
+                <Hwr>
+                    <HwrCandidateType> </HwrCandidateType>
+                    <HwrMode> </HwrMode>
+                    <RecognitionType> </RecognitionType>
+                    <Style> </Style>
+                    <Time> </Time>
+                    <Switch> </Switch>
+                </Hwr>
+                <CHN>
+                    <LinkToContacts> </LinkToContacts>
+                    <UseInsertWordWithSpaceKey> </UseInsertWordWithSpaceKey>
+                    <UseSogouHotWords> </UseSogouHotWords>
+                    <UseSogouCloudLink> </UseSogouCloudLink>
+                    <UseRareWords> </UseRareWords>
+                    <UseTraditionalChineseInput> </UseTraditionalChineseInput>
+                </CHN>
+                <JPN>
+                    <UseFlickToggleInputKey> </UseFlickToggleInputKey>
+                    <UseAutoCursorMovement> </UseAutoCursorMovement>
+                    <UsePredictiveTextLines> </UsePredictiveTextLines>
+                    <FlickCustomization> </FlickCustomization>
+                    <UseFlickAngleMultiKey> </UseFlickAngleMultiKey>
+                    <UseJapaneseInputWordLearning> </UseJapaneseInputWordLearning>
+                    <UseJapaneseWildCardPrediction> </UseJapaneseWildCardPrediction>
+                    <UseHalfWidthInput> </UseHalfWidthInput>
+                    <UseVoiceInputJapanese> </UseVoiceInputJapanese>
+                    <UseMushroom> </UseMushroom>
+                </JPN>
+                <Toolbar>
+                    <ToolbarSet exposeCount=" "> </ToolbarSet>
+                    <ToolbarSubSet exposeCount=" "> </ToolbarSubSet>
+                    <UseToolbar> </UseToolbar>
+                </Toolbar>
+                <Theme>
+                    <CustomKeyboardTheme> </CustomKeyboardTheme>
+                    <KeyboardTheme> </KeyboardTheme>
+                    <CoverKeyboardTheme> </CoverKeyboardTheme>
+                    <OpenKeyboardTheme> </OpenKeyboardTheme>
+                </Theme>
+                <HighContrast>
+                    <UseHighContrast> </UseHighContrast>
+                    <HighContrastTheme> </HighContrastTheme>
+                </HighContrast>
+                <KeyTapFeedback>
+                    <Sound> </Sound>
+                    <Vibrate> </Vibrate>
+                    <Preview> </Preview>
+                </KeyTapFeedback>
+                <UseSuggestEmoji> </UseSuggestEmoji>
+                <AutoLmUpdateState> </AutoLmUpdateState>
+                <UsePeriodKeyPopupMultiTap> </UsePeriodKeyPopupMultiTap>
+                <ViewTypePosition>
+                    <FloatingMode> </FloatingMode>
+                    <SplitMode> </SplitMode>
+                </ViewTypePosition>
+                <KeyboardFontSize range=" " device=" "> </KeyboardFontSize>
+                <Moakey dragLength=" "> </Moakey>
+            </HBD>
+        </BackupData>
+        <BackupData>
+            <SamsungCapture>
+                <Screenshots>
+                    <ScreenshotToolbar> </ScreenshotToolbar>
+                    <DeleteSharedScreenshots> </DeleteSharedScreenshots>
+                    <ScreenshotFormat> </ScreenshotFormat>
+                    <HideStatusAndNavigationBars> </HideStatusAndNavigationBars>
+                </Screenshots>
+                <ScreenRecorder>
+                    <Sound> </Sound>
+                    <VideoQuality> </VideoQuality>
+                    <SelfieVideoSize> </SelfieVideoSize>
+                </ScreenRecorder>
+            </SamsungCapture>
+        </BackupData>
+        <BackupData>
+            <Tag>
+                <TagSortingOption> </TagSortingOption>
+                <ContentsSortingOption> </ContentsSortingOption>
+                <AddTagIcon> </AddTagIcon>
+            </Tag>
+        </BackupData>
+        <BackupData>
+            <DynamicLockScreen>
+                <Common>
+                    <ServiceType> </ServiceType>
+                </Common>
+                <FreshPack>
+                    <AppliedPackInfo> </AppliedPackInfo>
+                    <AutoUpdate> </AutoUpdate>
+                    <UseMobileData> </UseMobileData>
+                </FreshPack>
+            </DynamicLockScreen>
+        </BackupData>
+    </BackupDataSet>
+</DeviceConfiguration>

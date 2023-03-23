@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <root-path name="external" path="." />
+    <external-path name="device_storage" path=".." />
+</paths>

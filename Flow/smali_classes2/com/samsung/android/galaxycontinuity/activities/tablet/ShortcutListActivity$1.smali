@@ -3,12 +3,12 @@
 .source "ShortcutListActivity.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;->loadRecyclerViewAsync()V
+    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;->initView()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,13 +20,27 @@
 # instance fields
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;
 
+.field final synthetic val$mainLayout:Landroid/widget/RelativeLayout;
+
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;Landroid/widget/RelativeLayout;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$mainLayout"
+        }
+    .end annotation
 
-    .line 102
+    .line 87
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;
+
+    iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1;->val$mainLayout:Landroid/widget/RelativeLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,34 +49,52 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "left",
+            "top",
+            "right",
+            "bottom",
+            "oldLeft",
+            "oldTop",
+            "oldRight",
+            "oldBottom"
+        }
+    .end annotation
 
-    .line 105
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;
+    if-ne p2, p6, :cond_0
 
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;
+    if-ne p3, p7, :cond_0
 
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
+    if-ne p4, p8, :cond_0
 
-    move-result-object v2
+    if-ne p5, p9, :cond_0
 
-    invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->getAppList()Ljava/util/ArrayList;
+    return-void
 
-    move-result-object v2
+    .line 94
+    :cond_0
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1;->val$mainLayout:Landroid/widget/RelativeLayout;
 
-    invoke-direct {v1, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;-><init>(Ljava/util/ArrayList;)V
+    new-instance p2, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1$1;
 
-    iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;->mShortcutListAdapter:Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;
+    invoke-direct {p2, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1;)V
 
-    .line 106
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;
-
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1$1;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity$1;)V
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ShortcutListActivity;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, p2}, Landroid/widget/RelativeLayout;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method

@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Кирүү</string>
     <string name="common_signin_button_text_long">Google менен кирүү</string>
     <string name="copy">Көчүрүү</string>
-    <string name="copy_toast_msg">Шилтеме буферге көчүрүлдү</string>
     <string name="error_icon_content_description">Ката</string>
     <string name="expand_button_title">Өркүндөтүлгөн</string>
     <string name="exposed_dropdown_menu_content_description">Түрүлмө менюну көрсөтүү</string>
-    <string name="fallback_menu_item_copy_link">Шилтемени көчүрүү</string>
-    <string name="fallback_menu_item_open_in_browser">Серепчиден ачуу</string>
-    <string name="fallback_menu_item_share_link">Шилтемени бөлүшүү</string>
     <string name="icon_content_description">Диалог сүрөтчөсү</string>
     <string name="item_view_role_description">Өтмөк</string>
     <string name="material_clock_toggle_content_description">Тандоо: AM же PM</string>

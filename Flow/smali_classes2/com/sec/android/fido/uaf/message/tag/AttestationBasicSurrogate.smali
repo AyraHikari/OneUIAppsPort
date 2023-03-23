@@ -99,7 +99,7 @@
 .method public setValue(Lcom/sec/android/fido/uaf/message/tag/Signature;)Lcom/sec/android/fido/uaf/message/tag/AttestationBasicSurrogate;
     .locals 1
 
-    const-string v0, "signature is NULL"
+    const-string/jumbo v0, "signature is NULL"
 
     .line 39
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

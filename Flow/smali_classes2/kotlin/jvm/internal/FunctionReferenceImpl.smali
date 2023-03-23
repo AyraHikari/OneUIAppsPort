@@ -3,58 +3,66 @@
 .source "FunctionReferenceImpl.java"
 
 
-# instance fields
-.field private final name:Ljava/lang/String;
-
-.field private final owner:Lkotlin/reflect/KDeclarationContainer;
-
-.field private final signature:Ljava/lang/String;
-
-
 # direct methods
-.method public constructor <init>(ILkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    .locals 7
 
-    .line 16
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/FunctionReference;-><init>(I)V
+    .line 24
+    sget-object v2, Lkotlin/jvm/internal/FunctionReferenceImpl;->NO_RECEIVER:Ljava/lang/Object;
 
-    .line 17
-    iput-object p2, p0, Lkotlin/jvm/internal/FunctionReferenceImpl;->owner:Lkotlin/reflect/KDeclarationContainer;
+    move-object v0, p0
 
-    .line 18
-    iput-object p3, p0, Lkotlin/jvm/internal/FunctionReferenceImpl;->name:Ljava/lang/String;
+    move v1, p1
 
-    .line 19
-    iput-object p4, p0, Lkotlin/jvm/internal/FunctionReferenceImpl;->signature:Ljava/lang/String;
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move v6, p5
+
+    invoke-direct/range {v0 .. v6}, Lkotlin/jvm/internal/FunctionReference;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public getName()Ljava/lang/String;
-    .locals 1
+.method public constructor <init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    .locals 0
 
     .line 29
-    iget-object v0, p0, Lkotlin/jvm/internal/FunctionReferenceImpl;->name:Ljava/lang/String;
+    invoke-direct/range {p0 .. p6}, Lkotlin/jvm/internal/FunctionReference;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
-    return-object v0
+    return-void
 .end method
 
-.method public getOwner()Lkotlin/reflect/KDeclarationContainer;
-    .locals 1
+.method public constructor <init>(ILkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 7
 
-    .line 24
-    iget-object v0, p0, Lkotlin/jvm/internal/FunctionReferenceImpl;->owner:Lkotlin/reflect/KDeclarationContainer;
+    .line 15
+    sget-object v2, Lkotlin/jvm/internal/FunctionReferenceImpl;->NO_RECEIVER:Ljava/lang/Object;
 
-    return-object v0
-.end method
+    move-object v0, p2
 
-.method public getSignature()Ljava/lang/String;
-    .locals 1
+    check-cast v0, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;
 
-    .line 34
-    iget-object v0, p0, Lkotlin/jvm/internal/FunctionReferenceImpl;->signature:Ljava/lang/String;
+    invoke-interface {v0}, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;->getJClass()Ljava/lang/Class;
 
-    return-object v0
+    move-result-object v3
+
+    instance-of p2, p2, Lkotlin/reflect/KClass;
+
+    xor-int/lit8 v6, p2, 0x1
+
+    move-object v0, p0
+
+    move v1, p1
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    invoke-direct/range {v0 .. v6}, Lkotlin/jvm/internal/FunctionReference;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-void
 .end method

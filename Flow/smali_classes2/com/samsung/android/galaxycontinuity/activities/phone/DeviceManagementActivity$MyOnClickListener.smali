@@ -24,8 +24,16 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 221
+    .line 289
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$MyOnClickListener;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
-    .line 224
+    .line 292
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$MyOnClickListener;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;)Landroidx/recyclerview/widget/RecyclerView;
@@ -49,7 +65,7 @@
 
     move-result p1
 
-    .line 225
+    .line 293
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$MyOnClickListener;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;)Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$DeviceListAdapter;
@@ -64,10 +80,10 @@
 
     const-string v0, "4050"
 
-    .line 228
+    .line 296
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;)V
 
-    .line 229
+    .line 297
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$MyOnClickListener;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
@@ -76,21 +92,21 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 230
+    .line 298
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->MACAddress:Ljava/lang/String;
 
     const-string v2, "MACAddress"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 231
+    .line 299
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->deviceID:Ljava/lang/String;
 
     const-string v1, "DeviceID"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 232
+    .line 300
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$MyOnClickListener;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;->startActivity(Landroid/content/Intent;)V

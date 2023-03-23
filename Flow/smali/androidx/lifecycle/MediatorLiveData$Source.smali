@@ -63,18 +63,18 @@
         }
     .end annotation
 
-    .line 135
+    .line 138
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 133
+    .line 136
     iput v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mVersion:I
 
-    .line 136
+    .line 139
     iput-object p1, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
-    .line 137
+    .line 140
     iput-object p2, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mObserver:Landroidx/lifecycle/Observer;
 
     return-void
@@ -90,7 +90,7 @@
         }
     .end annotation
 
-    .line 150
+    .line 153
     iget v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mVersion:I
 
     iget-object v1, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
@@ -101,7 +101,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 151
+    .line 154
     iget-object v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getVersion()I
@@ -110,7 +110,7 @@
 
     iput v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mVersion:I
 
-    .line 152
+    .line 155
     iget-object v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mObserver:Landroidx/lifecycle/Observer;
 
     invoke-interface {v0, p1}, Landroidx/lifecycle/Observer;->onChanged(Ljava/lang/Object;)V
@@ -122,7 +122,7 @@
 .method plug()V
     .locals 1
 
-    .line 141
+    .line 144
     iget-object v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0, p0}, Landroidx/lifecycle/LiveData;->observeForever(Landroidx/lifecycle/Observer;)V
@@ -133,7 +133,7 @@
 .method unplug()V
     .locals 1
 
-    .line 145
+    .line 148
     iget-object v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0, p0}, Landroidx/lifecycle/LiveData;->removeObserver(Landroidx/lifecycle/Observer;)V

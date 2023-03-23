@@ -29,7 +29,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 8
 
     .line 6
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
@@ -59,13 +59,13 @@
     sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->REGISTRATION:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
 
     .line 7
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
+    new-instance v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
 
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Utils;->isEngBin()Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
     goto :goto_1
 
@@ -73,49 +73,58 @@
     const-string v2, "https://dc.di.atlas.samsung.com"
 
     :goto_1
-    const-string v1, "POLICY"
+    const-string v3, "POLICY"
 
-    const/4 v3, 0x1
+    const/4 v5, 0x1
 
-    invoke-direct {v0, v1, v3, v2}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v3, v5, v2}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->POLICY:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
+    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->POLICY:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
 
     .line 8
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
+    new-instance v2, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
 
-    const-string v1, "DLS"
+    const-string v3, "DLS"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    const-string v5, ""
+    const-string v7, ""
 
-    invoke-direct {v0, v1, v2, v5}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v2, v3, v6, v7}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->DLS:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
+    sput-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->DLS:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
 
-    const/4 v1, 0x3
+    const/4 v3, 0x3
 
-    new-array v1, v1, [Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
+    new-array v3, v3, [Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
+
+    aput-object v0, v3, v4
+
+    aput-object v1, v3, v5
+
+    aput-object v2, v3, v6
 
     .line 5
-    sget-object v5, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->REGISTRATION:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
-
-    aput-object v5, v1, v4
-
-    sget-object v4, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->POLICY:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
-
-    aput-object v4, v1, v3
-
-    aput-object v0, v1, v2
-
-    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
+    sput-object v3, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -135,6 +144,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 5
     const-class v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;
@@ -176,6 +193,14 @@
 
 .method public setDomain(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
 
     .line 20
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Domain;->domain:Ljava/lang/String;

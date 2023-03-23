@@ -60,6 +60,7 @@
     <string name="air_quality">大気質</string>
     <string name="air_quality_next_tts">次の日の大気質予報</string>
     <string name="air_quality_previous_tts">前の日の大気質予報</string>
+    <string name="alert_title">悪天候警報</string>
     <string name="all_added_cities">追加した全ての都市</string>
     <string name="allow">Allow</string>
     <string name="allow_permission_in_settings">この機能を使用するには、[設定]で権限を許可する必要があります。</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">この操作は対応していません。</string>
     <string name="apply_daylight_saving_time">サマータイムを適用しますか？</string>
     <string name="as_possible_after_verification">レポートを送信しました。確認後、可能な限り早く都市名を変更します。</string>
+    <string name="auto_refresh_on_screen_description">更新された天気情報を毎時間自動的に取得します。この設定をONにすると、手動で更新できなくなります。</string>
+    <string name="auto_refresh_on_the_go">どこでも自動更新</string>
+    <string name="auto_refresh_on_the_go_advanced">詳細設定</string>
+    <string name="auto_refresh_on_the_go_description">運転、サイクリング、ランニング、ウォーキング中に気象情報の更新を頻繁に取得します。この設定をONにすると、手動で更新できなくなります。</string>
+    <string name="auto_refresh_on_the_go_simple_description">運転、サイクリング、ランニング、ウォーキング中に天気情報の更新を頻繁に取得します。</string>
     <string name="bottomsheet_action_expand_halfway">下半分を展開</string>
     <string name="btn_report">報告</string>
     <string name="button_finish">完了</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">詳細はダブルタップしてください。</string>
     <string name="china">中国</string>
     <string name="cities_button">都市</string>
+    <string name="city_added">都市を追加しました。</string>
     <string name="city_list_text">都市</string>
     <string name="clear">快晴</string>
     <string name="clear_text_end_icon_content_description">テキストを消去</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">現在地の気象情報を取得するために、デバイスの位置情報がコンテンツプロバイダに送信されます。</string>
     <string name="contents_error_msg">このサービスは一時的に利用できません。後ほどお試しください。</string>
     <string name="copy">コピー</string>
-    <string name="copy_toast_msg">リンクをクリップボードにコピーしました</string>
     <string name="correct_city_name">正しい都市名</string>
     <string name="couldnt_find_location">現在地の検出に失敗</string>
     <string name="cover_screen_top_sync_dialog_text">メイン画面のウィジェットにも同じ地域を設定しますか？</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">アイテムをポジション%dにドロップしました。</string>
     <string name="dragndroplist_drag_start">ポジション%dのアイテムのドラッグを開始しました。</string>
     <string name="dragndroplist_item_cannot_be_dragged">ポジション%dのアイテムをドラッグすることはできません。</string>
+    <string name="drawer_tips">%sのヒント</string>
     <string name="drawer_tips_message">ここをタップすると、地域を追加、削除、並べ替えることができます。ホーム画面に複数のウィジェットを追加して、さまざまな地域を表示することもできます。</string>
     <string name="drawer_tips_message_1">このメニューの下部にある[地域を管理]をタップすると、地域を追加、削除、並べ替えることができます。</string>
     <string name="drawer_tips_message_2">複数のウィジェットをホーム画面に追加して、さまざまな地域を同時に表示することができます。</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">詳細設定</string>
     <string name="exposed_dropdown_menu_content_description">プルダウン メニューを表示</string>
     <string name="failed_to_send_report">レポートの送信に失敗</string>
-    <string name="fallback_menu_item_copy_link">リンクをコピー</string>
-    <string name="fallback_menu_item_open_in_browser">ブラウザで開く</string>
-    <string name="fallback_menu_item_share_link">リンクの共有</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">お気に入りの地域</string>
     <string name="feel_like_pd_minus_temp">体感温度-%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">天気予報の動画</string>
     <string name="format_km_per_hour">%skm/h</string>
     <string name="format_m_per_hour">%smph</string>
+    <string name="fri">金</string>
     <string name="general">一般</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">端末の使用状況に基づいて、ユーザーに合わせてカスタマイズされたコンテンツを取得します。</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">タブレットの使用状況に基づいて、ユーザーに合わせてカスタマイズされたコンテンツを取得します。</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">[天気予報]から、現在地を含む天気情報を取得</string>
     <string name="go_to_website">Webサイトに移動</string>
     <string name="goto_apps">更新が利用可能です。今すぐインストールしますか？</string>
     <string name="goto_apps_later">後で</string>
     <string name="goto_apps_now">今</string>
     <string name="goto_apps_update_title">新しいコンテンツのお知らせ</string>
     <string name="header_tts">ヘッダー</string>
+    <string name="heavy">多い</string>
     <string name="heavy_rain">大雨</string>
     <string name="heavy_rain_followed_by_intense_heat">大雨のち晴れ</string>
     <string name="heavy_rain_followed_by_light_rain">大雨のち晴れ</string>
@@ -344,7 +351,7 @@
     <string name="item_view_role_description">タブ</string>
     <string name="japan">日本</string>
     <string name="korea">韓国</string>
-    <string name="last_updated_text">更新日時</string>
+    <string name="last_updated_text">更新</string>
     <string name="last_updated_tts">最終更新日</string>
     <string name="lifeIndex_forecast">生活指数</string>
     <string name="life_contents">今日のストーリー</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">公開設定</string>
     <string name="life_index_wind">風</string>
     <string name="life_index_wind_force">風速</string>
+    <string name="light">少ない</string>
     <string name="light_rain_followed_by_heavy_rain">小雨のち大雨</string>
     <string name="light_rain_with_some_heavy_rain">小雨時々大雨</string>
     <string name="link_tts">リンク</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">検索結果がありません。</string>
     <string name="message_service_not_available">現在サービスが利用できません。</string>
     <string name="minus_tts">マイナス</string>
+    <string name="mon">月</string>
     <string name="more">その他</string>
     <string name="more_cuntact_us">お問い合わせ</string>
     <string name="more_information">さらに表示</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">ここをタップすると、表示される天気の地域を変更したり、追加した全ての地域を管理したりすることができます。</string>
     <string name="new_version_available">%sの新しいバージョンが利用可能です。</string>
     <string name="new_version_is_available">新しいバージョンが利用可能です。</string>
+    <string name="news_menu_show_news">ニュースを表示</string>
+    <string name="news_opt_in_banner_title_text">天気予報ウィジェットにニュースを表示して、最新のトピックスを確認できます。</string>
+    <string name="news_opt_in_popup_desc_text">天気予報ウィジェットに%sからの最新のヘッドラインを表示して、世界のニュースを確認できます。</string>
+    <string name="news_opt_in_popup_title_text">1つのウィジェットでニュースと天気を確認</string>
+    <string name="news_request_agree_text">%sからニュースを取得するにはタップしてください</string>
+    <string name="news_widget_bubble_text">ニュースと天気予報を取得します。</string>
+    <string name="news_widget_dummy_title">今日の人気のトピックス</string>
+    <string name="news_widget_new_dummy_title">今朝知っておくべき5つのこと</string>
+    <string name="news_widget_oobe_text">ここをﾀｯﾌﾟしﾆｭｰｽを追加します。</string>
     <string name="next">次の都市</string>
+    <string name="next_btn">次へ</string>
     <string name="next_city">次の都市の気象情報を表示するには、ダブルタップします。</string>
     <string name="night_tts">夜</string>
     <string name="no_application_available">利用できるアプリケーションがありません。</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">天気情報がありません</string>
     <string name="not_in_use">未使用</string>
     <string name="not_now">後で</string>
+    <string name="not_now_btn">後で</string>
     <string name="not_selected">選択なし</string>
     <string name="not_set">未設定</string>
     <string name="nothing_selected">何も選択されていません。</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">素早く正確に位置情報を検索するには、[設定]をタップしてから[位置情報の検出方法]を[GPS、Wi-Fiおよびモバイルネットワーク]に設定してください。</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">素早く正確に位置情報を検索するには、[設定]をタップしてから[位置情報の検出方法]を[GPSおよびWi-Fi]に設定します。</string>
     <string name="notice_gps_trun_off_message_verizon">お住まいの地域の気象情報を表示するには、[位置設定]をONにし、モードを[高精度]に設定してください。</string>
+    <string name="notification_alert_channel_name">悪天候警報</string>
     <string name="notification_apps_update_channel_name">更新通知</string>
     <string name="notification_auto_refresh_channel_name">天気予報の自動更新</string>
     <string name="notification_dex_channel_name">Samsung DeXの天気情報</string>
@@ -544,6 +565,7 @@
     <string name="open_app">アプリを起動</string>
     <string name="open_source_licences">オープンソースライセンス</string>
     <string name="other_locations">その他の地域</string>
+    <string name="partly_sunny">曇り、ところにより晴れ</string>
     <string name="password_toggle_content_description">パスワードを表示</string>
     <string name="paused">停止中</string>
     <string name="pd_km">%.1fkm</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">「%1$s」をクリップボードにコピーしました。</string>
     <string name="preview">%sのプレビュー</string>
     <string name="previous">前の都市</string>
+    <string name="previous_btn">前へ</string>
     <string name="previous_city">前の都市の気象情報を表示するには、ダブルタップします。</string>
     <string name="privacy_policy">プライバシーポリシー</string>
     <string name="probability_of_rain_text">降水確率(雨)</string>
     <string name="protect_your_content">コンテンツを保護</string>
+    <string name="ps_in">%sインチ</string>
+    <string name="ps_mm">%smm</string>
     <string name="radar">レーダーと地図</string>
     <string name="rain">雨</string>
     <string name="rain_followed_by_intense_heat">雨のち晴れ</string>
@@ -595,7 +620,7 @@
     <string name="restore_weather_data_max_cities">都市の最大数(%1$d件)を超えています。最大%2$d件の都市を選択し、[完了]をタップしてください。</string>
     <string name="restore_weather_data_max_cities_toast_msg">都市の最大数(%d件)を超えています。</string>
     <string name="restoring">天気情報を読み込み中…</string>
-    <string name="restrict_background_data_dialog_message">[天気予報]のすべての機能を使用するには、[設定]で[バックグラウンドデータの使用を許可]および[データセーバーON時にデータ使用を許可]をONにしてください。</string>
+    <string name="restrict_background_data_dialog_message">[天気予報]の全ての機能を使用するには、[設定]で[バックグラウンドデータの使用を許可]および[データセーバーON時にデータ使用を許可]をONにしてください。</string>
     <string name="restrict_background_data_dialog_title">ﾊﾞｯｸｸﾞﾗｳﾝﾄﾞﾃﾞｰﾀが制限</string>
     <string name="restrict_background_data_enabled">バックグラウンドデータ制限が有効になっています。</string>
     <string name="retail_function_not_supported">この機能は、デモモードでは対応していません。</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">天気情報を更新するには、[設定]をタップして、[アプリ情報] > [権限]に移動し、次の権限を許可してから再度実行してください。</string>
     <string name="runtime_location_permission_title">権限を許可</string>
     <string name="runtime_oem_grant_permission_desc">%sアプリは、次の項目へアクセスする権限が許可されています。</string>
+    <string name="sat">土</string>
     <string name="save_button">保存</string>
     <string name="search_menu_title">検索</string>
     <string name="search_most_searched_for">主要都市</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">利用可能な新しいコンテンツ</string>
     <string name="sesl_material_overflow_badge_text_n">新</string>
     <string name="sesl_more_item_label">その他</string>
+    <string name="sesl_preferecne_badge_description">新着通知</string>
     <string name="sesl_preferencecategory_added_title">ヘッダー</string>
     <string name="sesl_search_hint">検索</string>
     <string name="sesl_searchview_description_clear">検索欄の入力内容を消去</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">オフライン</string>
     <string name="st_view_less">閉じる</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">OFF</string>
+    <string name="status_on">ON</string>
     <string name="summary_collapsed_preference_list">%1$s、%2$s</string>
+    <string name="sun">日</string>
     <string name="sunny">晴れ</string>
     <string name="sunny_with_some_clouds">晴れ時々曇り</string>
     <string name="sunny_with_some_heavy_rain">晴れ時々大雨</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">古いデバイスから天気データを復元するには、ここをタップしてください。</string>
     <string name="tap_retry_to_try_to_find_your_location_again">再度現在地を検出するには、[再試行]をタップしてください。</string>
     <string name="tap_setting_message_edge_panel">地域の天気情報を取得するには、[位置情報]をONにしてください。</string>
+    <string name="tap_the_settings_icon">設定アイコンをタップします。</string>
     <string name="tap_to_get_the_weather">天気情報を取得するには、タップしてください</string>
     <string name="temp_f_c">華氏%d度</string>
     <string name="temp_f_m">摂氏%d度</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">利用規約</string>
     <string name="the_latest_version">最新バージョンは既にインストールされています。</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">この設定は通知とカレンダーにも適用されます。</string>
+    <string name="thu">木</string>
     <string name="tick_box_tts">チェックボックス</string>
     <string name="ticked_tts">選択済み</string>
     <string name="time_am">午前</string>
@@ -722,33 +754,46 @@
     <string name="times_forecast">時間ごと</string>
     <string name="title_select_locations">地域を選択</string>
     <string name="title_theme">テーマ</string>
+    <string name="to_continue_agree_to_updated">続行するには、更新された%sに同意してください。</string>
     <string name="to_get_local_weather_chn">"現在地の天気を確認する際、お客様の現在の位置情報が気象サービスプロバイダに送信されます。（気象サービスプロバイダの %1$s利用規約%2$s および %3$sプライバシーポリシー%4$sをご覧ください。）
 お客様の端末上のその他のアプリやサービスは、取得した天気データにアクセスして、それらのアプリ上で天気を表示する場合があります。
 お客様に継続して天気情報をお届けするために、アプリを使用していないときでも天気はお客様の位置情報にアクセスします。"</string>
     <string name="today">今日</string>
+    <string name="try_it_out_btn">試す</string>
+    <string name="tue">火</string>
+    <string name="turn_on_to_use_precise_location">この機能を使用するには、位置情報へのアクセスを%sに常に許可して、[正確な位置情報を使用]をONにする必要があります。[設定]をタップしてから、[権限] > [位置情報]に移動してください。</string>
     <string name="tw_title_weather_broadcast">ﾌﾞﾛｰﾄﾞｷｬｽﾄ</string>
-    <string name="unable_to_check_for_updates">ネットワーク接続がないため、更新を確認できません。</string>
+    <string name="unable_to_check_for_updates">更新を確認できませんでした。後ほどお試しください。</string>
     <string name="unable_to_receive_info_msg">情報の受信不可</string>
     <string name="unticked_tts">選択なし</string>
     <string name="unused">未使用</string>
     <string name="update">更新</string>
     <string name="update_abb8">更新</string>
     <string name="update_app">アプリを更新</string>
+    <string name="updated_tile_chn">更新： %s</string>
     <string name="updated_tts">%sの更新</string>
+    <string name="use_current_location">現在地情報を使用</string>
     <string name="use_current_location_agree_popup">"現在地の天気を確認する際、お客様の現在の位置情報が気象サービスプロバイダに送信されます(プロバイダの%1$sプライバシーポリシー%2$sをご覧ください)。
 お客様の端末の他のアプリやサービスが、天気を表示するために、取得された気象データにアクセスする場合があります。"</string>
     <string name="use_current_location_and_background_agree_popup">"現在地の天気を確認する際、お客様の現在の位置情報が気象サービスプロバイダに送信されます。（気象サービスプロバイダの%1$sプライバシーポリシー%2$sをご覧ください。）
 お客様の端末上のその他のアプリやサービスは、取得した天気データにアクセスして、それらのアプリ上で天気を表示する場合があります。
 お客様に継続して天気情報をお届けするために、アプリを使用していないときでも[天気予報]はお客様の位置情報にアクセスします。"</string>
     <string name="use_current_location_body_data_required_permission">データ／必要なアクセス権限</string>
-    <string name="use_current_location_body_location">場所</string>
+    <string name="use_current_location_body_location">位置情報</string>
     <string name="use_current_location_body_msg">"お客様の現在地情報は、地域の天気予報の取得など、天気予報アプリの一部の機能を提供するために収集され、利用されます。お客様のデバイスの他のアプリやサービスは、天気予報を表示するために、取得された天気予報データにアクセスする場合があります。天気予報情報を継続してお届けするために、このアプリは、お客様がアプリを利用していないときでも定期的にお客様の位置情報を処理します。「同意する」を押すことで、お客様は上記の目的で位置情報が収集、処理されることに同意することになります。
 天気予報アプリの設定に進むことで、お客様の位置情報の利用をOFFにすることができます。"</string>
     <string name="use_current_location_body_msg_chn">"「天気予報」をご利用いただく前に以下をよくお読みください。
 現在地の天気予報を知りたい場合は、以下に示すように、（お客様がサービスを利用していない場合でも）サードパーティのサービスプロバイダがお客様のデバイスに継続的にアクセスして特定のデータを取得するのを許可する必要があります。サードパーティのサービスプロバイダの%1$s利用規約%2$sと%3$sプライバシーポリシー%4$sをよく読み、内容を理解してから、そのようなアクセス権限を与えてください。設定メニューで「位置情報」をOFFにすることで、アクセス権限を取り消すことができます。お客様のデバイスの他のアプリやサービスは、天気予報を表示するために、取得された天気予報データにアクセスする場合があります。"</string>
+    <string name="use_current_location_body_msg_kor">"現在地の天気の取得など、天気予報アプリの一部の機能を提供するために、あなたの現在地情報を収集および使用します。
+
+継続的に天気情報を提供するために、アプリを使用していないときでも、このアプリは定期的にあなたの位置情報を処理します。続行すると、上記の目的であなたの位置情報を収集および処理することに同意したものとみなされます。
+
+この位置情報の収集および使用は天気予報アプリの設定で停止することができます。"</string>
     <string name="use_current_location_body_purpose">目的</string>
     <string name="use_current_location_body_purpose_content">現在地の天気予報情報を提供するため</string>
     <string name="use_current_location_body_search_provider">サービスプロバイダ</string>
+    <string name="use_current_location_continue">続行</string>
+    <string name="use_current_location_not_now">後で</string>
     <string name="use_current_location_off_alert_popup">現在地情報を削除します。</string>
     <string name="useful_informations">その他のお役立ち情報</string>
     <string name="using_as">%sとして使用</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">天気情報</string>
     <string name="weathernews">株式会社ウェザーニューズ</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">水</string>
     <string name="weekly_forecast">週間</string>
     <string name="widget_background">ウィジェットの背景</string>
     <string name="widget_empty_text">天気情報を表示するには、タップしてください</string>
+    <string name="widget_location">都市名</string>
     <string name="widget_name_4x1">天気予報と時計</string>
     <string name="widget_setting">設定</string>
     <string name="widget_setting_background_color">背景色</string>

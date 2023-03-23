@@ -50,7 +50,7 @@
 .method static setDefaultAppBarLayoutStateListAnimator(Landroid/view/View;F)V
     .locals 11
 
-    .line 61
+    .line 62
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -61,7 +61,7 @@
 
     move-result v0
 
-    .line 63
+    .line 64
     new-instance v1, Landroid/animation/StateListAnimator;
 
     invoke-direct {v1}, Landroid/animation/StateListAnimator;-><init>()V
@@ -72,11 +72,11 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x101000e
+    const v4, 0x101009e
 
     aput v4, v2, v3
 
-    .line 66
+    .line 67
     sget v5, Lcom/google/android/material/R$attr;->state_liftable:I
 
     const/4 v6, 0x1
@@ -99,7 +99,7 @@
 
     const-string v8, "elevation"
 
-    .line 68
+    .line 69
     invoke-static {p0, v8, v5}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object v5
@@ -110,7 +110,7 @@
 
     move-result-object v0
 
-    .line 66
+    .line 67
     invoke-virtual {v1, v2, v0}, Landroid/animation/StateListAnimator;->addState([ILandroid/animation/Animator;)V
 
     new-array v0, v6, [I
@@ -121,7 +121,7 @@
 
     aput p1, v2, v3
 
-    .line 73
+    .line 74
     invoke-static {p0, v8, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
@@ -130,7 +130,7 @@
 
     move-result-object p1
 
-    .line 71
+    .line 72
     invoke-virtual {v1, v0, p1}, Landroid/animation/StateListAnimator;->addState([ILandroid/animation/Animator;)V
 
     new-array p1, v3, [I
@@ -139,7 +139,7 @@
 
     aput v7, v0, v3
 
-    .line 76
+    .line 77
     invoke-static {p0, v8, v0}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object v0
@@ -152,7 +152,7 @@
 
     invoke-virtual {v1, p1, v0}, Landroid/animation/StateListAnimator;->addState([ILandroid/animation/Animator;)V
 
-    .line 78
+    .line 79
     invoke-virtual {p0, v1}, Landroid/view/View;->setStateListAnimator(Landroid/animation/StateListAnimator;)V
 
     return-void

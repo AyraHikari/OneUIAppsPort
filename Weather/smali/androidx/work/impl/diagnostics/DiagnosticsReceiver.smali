@@ -4,21 +4,20 @@
 
 
 # static fields
-.field private static final TAG:Ljava/lang/String;
+.field public static final a:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     const-string v0, "DiagnosticsRcvr"
 
-    .line 38
-    invoke-static {v0}, Landroidx/work/Logger;->tagWithPrefix(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lj2/n;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Landroidx/work/impl/diagnostics/DiagnosticsReceiver;->TAG:Ljava/lang/String;
+    sput-object v0, Landroidx/work/impl/diagnostics/DiagnosticsReceiver;->a:Ljava/lang/String;
 
     return-void
 .end method
@@ -26,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 37
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -51,13 +49,13 @@
 
     return-void
 
-    .line 45
+    .line 1
     :cond_0
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object p2
 
-    sget-object v0, Landroidx/work/impl/diagnostics/DiagnosticsReceiver;->TAG:Ljava/lang/String;
+    sget-object v0, Landroidx/work/impl/diagnostics/DiagnosticsReceiver;->a:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -65,22 +63,22 @@
 
     const-string v3, "Requesting diagnostics"
 
-    invoke-virtual {p2, v0, v3, v2}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {p2, v0, v3, v2}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 47
+    .line 2
     :try_start_0
-    invoke-static {p1}, Landroidx/work/WorkManager;->getInstance(Landroid/content/Context;)Landroidx/work/WorkManager;
+    invoke-static {p1}, Lj2/y;->g(Landroid/content/Context;)Lj2/y;
 
     move-result-object p1
 
-    .line 48
+    .line 3
     const-class p2, Landroidx/work/impl/workers/DiagnosticsWorker;
 
-    invoke-static {p2}, Landroidx/work/OneTimeWorkRequest;->from(Ljava/lang/Class;)Landroidx/work/OneTimeWorkRequest;
+    invoke-static {p2}, Lj2/p;->d(Ljava/lang/Class;)Lj2/p;
 
     move-result-object p2
 
-    invoke-virtual {p1, p2}, Landroidx/work/WorkManager;->enqueue(Landroidx/work/WorkRequest;)Landroidx/work/Operation;
+    invoke-virtual {p1, p2}, Lj2/y;->b(Lj2/z;)Lj2/q;
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -89,12 +87,12 @@
     :catch_0
     move-exception p1
 
-    .line 50
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 4
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object p2
 
-    sget-object v0, Landroidx/work/impl/diagnostics/DiagnosticsReceiver;->TAG:Ljava/lang/String;
+    sget-object v0, Landroidx/work/impl/diagnostics/DiagnosticsReceiver;->a:Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -104,7 +102,7 @@
 
     const-string p1, "WorkManager is not initialized"
 
-    invoke-virtual {p2, v0, p1, v2}, Landroidx/work/Logger;->error(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {p2, v0, p1, v2}, Lj2/n;->b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
     :goto_0
     return-void

@@ -4,16 +4,7 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUnsignedUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UnsignedUtils.kt\nkotlin/UnsignedKt\n*L\n1#1,107:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u00000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\t\n\u0002\u0008\u0007\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0004\u001a\u0018\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0002\u001a\u00020\u0003H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0007\u001a\u0018\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\tH\u0001\u001a\"\u0010\u000c\u001a\u00020\u00012\u0006\u0010\n\u001a\u00020\u00012\u0006\u0010\u000b\u001a\u00020\u0001H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000e\u001a\"\u0010\u000f\u001a\u00020\u00012\u0006\u0010\n\u001a\u00020\u00012\u0006\u0010\u000b\u001a\u00020\u0001H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0010\u0010\u000e\u001a\u0010\u0010\u0011\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\tH\u0001\u001a\u0018\u0010\u0012\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u00132\u0006\u0010\u000b\u001a\u00020\u0013H\u0001\u001a\"\u0010\u0014\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u0006H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0015\u0010\u0016\u001a\"\u0010\u0017\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u0006H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0018\u0010\u0016\u001a\u0010\u0010\u0019\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u0013H\u0001\u001a\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0002\u001a\u00020\u0013H\u0000\u001a\u0018\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0002\u001a\u00020\u00132\u0006\u0010\u001c\u001a\u00020\tH\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u001d"
     }
@@ -52,9 +43,10 @@
     k = 0x2
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -62,7 +54,7 @@
 .method public static final doubleToUInt(D)I
     .locals 5
 
-    .line 67
+    .line 66
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -78,7 +70,7 @@
 
     goto :goto_1
 
-    .line 68
+    .line 67
     :cond_0
     invoke-static {v2}, Lkotlin/UnsignedKt;->uintToDouble(I)D
 
@@ -90,7 +82,7 @@
 
     goto :goto_0
 
-    .line 69
+    .line 68
     :cond_1
     invoke-static {v1}, Lkotlin/UnsignedKt;->uintToDouble(I)D
 
@@ -103,17 +95,15 @@
     goto :goto_1
 
     :cond_2
-    const v0, 0x7fffffff
+    const-wide v0, 0x41dfffffffc00000L    # 2.147483647E9
 
-    int-to-double v1, v0
+    cmpg-double v0, p0, v0
 
-    cmpg-double v3, p0, v1
-
-    if-gtz v3, :cond_3
+    if-gtz v0, :cond_3
 
     double-to-int p0, p0
 
-    .line 70
+    .line 69
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result v1
@@ -121,11 +111,15 @@
     goto :goto_1
 
     :cond_3
+    const v0, 0x7fffffff
+
+    int-to-double v1, v0
+
     sub-double/2addr p0, v1
 
     double-to-int p0, p0
 
-    .line 71
+    .line 70
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -147,7 +141,7 @@
 .method public static final doubleToULong(D)J
     .locals 7
 
-    .line 76
+    .line 75
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -163,7 +157,7 @@
 
     goto :goto_1
 
-    .line 77
+    .line 76
     :cond_0
     invoke-static {v3, v4}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
@@ -175,7 +169,7 @@
 
     goto :goto_0
 
-    .line 78
+    .line 77
     :cond_1
     invoke-static {v1, v2}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
@@ -188,17 +182,15 @@
     goto :goto_1
 
     :cond_2
-    const-wide v0, 0x7fffffffffffffffL
+    const-wide/high16 v0, 0x43e0000000000000L    # 9.223372036854776E18
 
-    long-to-double v0, v0
+    cmpg-double v2, p0, v0
 
-    cmpg-double v0, p0, v0
-
-    if-gez v0, :cond_3
+    if-gez v2, :cond_3
 
     double-to-long p0, p0
 
-    .line 79
+    .line 78
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v1
@@ -206,13 +198,11 @@
     goto :goto_1
 
     :cond_3
-    const-wide/high16 v0, 0x43e0000000000000L    # 9.223372036854776E18
-
     sub-double/2addr p0, v0
 
     double-to-long p0, p0
 
-    .line 82
+    .line 81
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -238,7 +228,7 @@
 
     xor-int/2addr p1, v0
 
-    .line 10
+    .line 9
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
 
     move-result p0
@@ -259,7 +249,7 @@
 
     and-long/2addr p0, v2
 
-    .line 15
+    .line 14
     div-long/2addr v0, p0
 
     long-to-int p0, v0
@@ -284,7 +274,7 @@
 
     and-long/2addr p0, v2
 
-    .line 17
+    .line 16
     rem-long/2addr v0, p0
 
     long-to-int p0, v0
@@ -331,7 +321,10 @@
 
     xor-long/2addr p2, v0
 
-    cmp-long p0, p0, p2
+    .line 11
+    invoke-static {p0, p1, p2, p3}, Lkotlin/jvm/internal/Intrinsics;->compare(JJ)I
+
+    move-result p0
 
     return p0
 .end method
@@ -345,7 +338,7 @@
 
     if-gez v2, :cond_1
 
-    .line 27
+    .line 26
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result p0
@@ -373,7 +366,7 @@
 
     if-ltz v0, :cond_2
 
-    .line 32
+    .line 31
     div-long/2addr p0, p2
 
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
@@ -387,7 +380,7 @@
 
     ushr-long v1, p0, v0
 
-    .line 36
+    .line 35
     div-long/2addr v1, p2
 
     shl-long/2addr v1, v0
@@ -396,7 +389,7 @@
 
     sub-long/2addr p0, v3
 
-    .line 38
+    .line 37
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -437,7 +430,7 @@
 
     if-gez v2, :cond_1
 
-    .line 47
+    .line 46
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result v0
@@ -449,7 +442,7 @@
     :cond_0
     sub-long/2addr p0, p2
 
-    .line 50
+    .line 49
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -462,7 +455,7 @@
 
     if-ltz v2, :cond_2
 
-    .line 56
+    .line 55
     rem-long/2addr p0, p2
 
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
@@ -476,7 +469,7 @@
 
     ushr-long v3, p0, v2
 
-    .line 60
+    .line 59
     div-long/2addr v3, p2
 
     shl-long v2, v3, v2
@@ -485,7 +478,7 @@
 
     sub-long/2addr p0, v2
 
-    .line 62
+    .line 61
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v2
@@ -546,7 +539,7 @@
 
     const/16 v0, 0xa
 
-    .line 93
+    .line 92
     invoke-static {p0, p1, v0}, Lkotlin/UnsignedKt;->ulongToString(JI)Ljava/lang/String;
 
     move-result-object p0
@@ -561,11 +554,11 @@
 
     cmp-long v0, p0, v0
 
-    const-string v1, "java.lang.Long.toString(this, checkRadix(radix))"
+    const-string/jumbo v1, "toString(this, checkRadix(radix))"
 
     if-ltz v0, :cond_0
 
-    .line 96
+    .line 95
     invoke-static {p2}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
     move-result p2
@@ -574,7 +567,7 @@
 
     move-result-object p0
 
-    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 
@@ -585,7 +578,7 @@
 
     int-to-long v4, p2
 
-    .line 98
+    .line 97
     div-long/2addr v2, v4
 
     shl-long/2addr v2, v0
@@ -604,7 +597,7 @@
 
     add-long/2addr v2, v4
 
-    .line 104
+    .line 103
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -618,9 +611,11 @@
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-static {p2}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
@@ -630,11 +625,13 @@
 
     move-result-object p0
 
-    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 

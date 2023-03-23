@@ -240,12 +240,7 @@
     invoke-static {v6, v2, v0, v2, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 120
-    sget-object v0, Lcom/fasterxml/jackson/core/io/CharTypes;->sInputCodesComment:[I
-
     invoke-static {v0, v1, v4, v5}, Ljava/util/Arrays;->fill([IIII)V
-
-    .line 121
-    sget-object v0, Lcom/fasterxml/jackson/core/io/CharTypes;->sInputCodesComment:[I
 
     const/16 v6, 0x9
 
@@ -253,15 +248,12 @@
 
     const/16 v9, 0xa
 
-    .line 122
     aput v9, v0, v9
 
     const/16 v10, 0xd
 
-    .line 123
     aput v10, v0, v10
 
-    .line 124
     aput v8, v0, v8
 
     new-array v0, v2, [I
@@ -437,15 +429,13 @@
 
     shr-int/lit8 v6, v4, 0x4
 
-    aget-char v5, v5, v6
+    aget-char v6, v5, v6
 
-    invoke-virtual {p0, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 211
-    sget-object v5, Lcom/fasterxml/jackson/core/io/CharTypes;->HEX_CHARS:[C
+    invoke-virtual {p0, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     and-int/lit8 v4, v4, 0xf
 
+    .line 211
     aget-char v4, v5, v4
 
     invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;

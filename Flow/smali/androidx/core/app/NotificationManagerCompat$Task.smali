@@ -16,6 +16,15 @@
 
 # virtual methods
 .method public abstract send(Landroidx/core/app/INotificationSideChannel;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "service"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

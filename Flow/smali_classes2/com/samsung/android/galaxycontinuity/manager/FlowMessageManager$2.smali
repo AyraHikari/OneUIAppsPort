@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 622
+    .line 614
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$2;->this$0:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 1
 
-    .line 625
+    .line 617
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$2;->this$0:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->access$000(Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;)V

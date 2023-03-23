@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/category_folder_grid_thumbnail_border_radius" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/category_folder_grid_thumbnail_border_radius" />
+            <stroke android:width="@dimen/category_folder_thumbnail_border_width" android:color="@color/category_folder_thumbnail_border" />
+        </shape>
+    </item>
+</ripple>

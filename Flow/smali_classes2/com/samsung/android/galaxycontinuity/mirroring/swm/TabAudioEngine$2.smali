@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 249
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
@@ -39,7 +47,7 @@
     .locals 10
 
     :try_start_0
-    const-string v0, "start audio play"
+    const-string/jumbo v0, "start audio play"
 
     .line 253
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -111,6 +119,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$700(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;)Landroid/media/MediaCodec;
@@ -122,6 +132,8 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -199,19 +211,7 @@
     .line 291
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
 
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
-
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$900(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;)I
-
-    move-result v2
-
-    int-to-long v2, v2
-
-    add-long/2addr v2, v4
-
-    long-to-int v2, v2
-
-    invoke-static {v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$902(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;I)I
+    invoke-static {v0, v4, v5}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$914(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;J)I
 
     goto :goto_1
 
@@ -219,15 +219,7 @@
     :cond_4
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
 
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine$2;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;
-
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$900(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;)I
-
-    move-result v2
-
-    sub-int/2addr v2, v6
-
-    invoke-static {v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$902(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;I)I
+    invoke-static {v0, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->access$920(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;I)I
 
     .line 296
     :cond_5

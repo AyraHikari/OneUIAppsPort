@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:id="@id/settings_scroll_view" android:tag="layout/settings_layout_0" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/settings_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/update_app_card_view_stub" android:layout="@layout/app_update_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/cloud_account_list_view_stub" android:layout="@layout/cloud_account_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/settings_customization" layout="@layout/settings_customization_layout" />
+        <TextView android:id="@id/settings_file_management_title" android:text="@string/settings_file_management" style="@style/SubHeader" />
+        <include android:id="@id/settings_file_management" layout="@layout/settings_file_management" />
+        <include android:id="@id/as_option_view" layout="@layout/as_options_list_layout" />
+        <View style="@style/SubHeader_NoText" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_container" android:tag="binding_2" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner" android:weightSum="1.0" android:minHeight="@dimen/basic_list_item_one_line_height">
+            <TextView android:textSize="@dimen/home_list_item_text_size" android:textColor="@color/list_item_text1" android:id="@id/about_page_text" android:paddingTop="@dimen/list_item_text_vertical_padding" android:paddingBottom="@dimen/list_item_text_vertical_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/about_page" android:layout_weight="1.0" android:layout_marginStart="@dimen/basic_list_item_padding_left" android:layout_marginEnd="@dimen/basic_list_item_padding_left" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/about_page_badge" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <include android:gravity="center" android:orientation="vertical" android:id="@id/about_page_badge" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/n_badge_stub" />
+        </LinearLayout>
+        <View android:minHeight="@dimen/basic_round_page_bottom_blank_height" style="@style/BackgroundMarginView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

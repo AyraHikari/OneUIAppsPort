@@ -1,9 +1,9 @@
 .class final Lokhttp3/internal/connection/RouteSelector$resetNextProxy$1;
-.super Lkotlin/jvm/internal/Lambda;
+.super Loi/m;
 .source "RouteSelector.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lni/a;
 
 
 # annotations
@@ -12,14 +12,14 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function0<",
+        "Loi/m;",
+        "Lni/a<",
         "Ljava/util/List<",
         "+",
         "Ljava/net/Proxy;",
@@ -52,15 +52,15 @@
 
 
 # instance fields
-.field final synthetic $proxy:Ljava/net/Proxy;
+.field public final synthetic $proxy:Ljava/net/Proxy;
 
-.field final synthetic $url:Lokhttp3/HttpUrl;
+.field public final synthetic $url:Lokhttp3/HttpUrl;
 
-.field final synthetic this$0:Lokhttp3/internal/connection/RouteSelector;
+.field public final synthetic this$0:Lokhttp3/internal/connection/RouteSelector;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/connection/RouteSelector;Ljava/net/Proxy;Lokhttp3/HttpUrl;)V
+.method public constructor <init>(Lokhttp3/internal/connection/RouteSelector;Ljava/net/Proxy;Lokhttp3/HttpUrl;)V
     .locals 0
 
     iput-object p1, p0, Lokhttp3/internal/connection/RouteSelector$resetNextProxy$1;->this$0:Lokhttp3/internal/connection/RouteSelector;
@@ -71,7 +71,7 @@
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    invoke-direct {p0, p1}, Loi/m;-><init>(I)V
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 36
+    .line 1
     invoke-virtual {p0}, Lokhttp3/internal/connection/RouteSelector$resetNextProxy$1;->invoke()Ljava/util/List;
 
     move-result-object v0
@@ -100,18 +100,18 @@
         }
     .end annotation
 
-    .line 99
+    .line 2
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector$resetNextProxy$1;->$proxy:Ljava/net/Proxy;
 
     if-eqz v0, :cond_0
 
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lci/p;->d(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 
-    .line 102
+    .line 3
     :cond_0
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector$resetNextProxy$1;->$url:Lokhttp3/HttpUrl;
 
@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    .line 103
+    .line 4
     invoke-virtual {v0}, Ljava/net/URI;->getHost()Ljava/lang/String;
 
     move-result-object v1
@@ -142,7 +142,7 @@
 
     return-object v0
 
-    .line 106
+    .line 5
     :cond_1
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector$resetNextProxy$1;->this$0:Lokhttp3/internal/connection/RouteSelector;
 
@@ -158,14 +158,10 @@
 
     move-result-object v0
 
-    .line 107
-    move-object v1, v0
+    if-eqz v0, :cond_3
 
-    check-cast v1, Ljava/util/Collection;
-
-    if-eqz v1, :cond_3
-
-    invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
+    .line 6
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v1
 
@@ -197,7 +193,7 @@
 
     return-object v0
 
-    .line 109
+    .line 7
     :cond_4
     invoke-static {v0}, Lokhttp3/internal/Util;->toImmutableList(Ljava/util/List;)Ljava/util/List;
 

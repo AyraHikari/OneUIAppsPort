@@ -1,5 +1,6 @@
 .class final Lcom/google/android/gms/security/zza;
 .super Landroid/os/AsyncTask;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # annotations
@@ -15,9 +16,9 @@
 
 
 # instance fields
-.field private final synthetic val$context:Landroid/content/Context;
+.field final synthetic zza:Landroid/content/Context;
 
-.field private final synthetic zzix:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
+.field final synthetic zzb:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
 
 
 # direct methods
@@ -25,22 +26,27 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/gms/security/zza;->val$context:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/android/gms/security/zza;->zza:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/google/android/gms/security/zza;->zzix:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
+    iput-object p2, p0, Lcom/google/android/gms/security/zza;->zzb:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method private final varargs zza([Ljava/lang/Void;)Ljava/lang/Integer;
+
+# virtual methods
+.method protected final bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
-    :try_start_0
-    iget-object p1, p0, Lcom/google/android/gms/security/zza;->val$context:Landroid/content/Context;
+    .line 1
+    check-cast p1, [Ljava/lang/Void;
 
+    :try_start_0
+    iget-object p1, p0, Lcom/google/android/gms/security/zza;->zza:Landroid/content/Context;
+
+    .line 2
     invoke-static {p1}, Lcom/google/android/gms/security/ProviderInstaller;->installIfNeeded(Landroid/content/Context;)V
     :try_end_0
     .catch Lcom/google/android/gms/common/GooglePlayServicesRepairableException; {:try_start_0 .. :try_end_0} :catch_1
@@ -48,24 +54,25 @@
 
     const/4 p1, 0x0
 
-    .line 6
+    .line 5
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    return-object p1
+    goto :goto_0
 
     :catch_0
     move-exception p1
 
-    .line 5
+    .line 4
     iget p1, p1, Lcom/google/android/gms/common/GooglePlayServicesNotAvailableException;->errorCode:I
 
+    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    return-object p1
+    goto :goto_0
 
     :catch_1
     move-exception p1
@@ -79,52 +86,39 @@
 
     move-result-object p1
 
+    :goto_0
     return-object p1
 .end method
 
-
-# virtual methods
-.method protected final synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 13
-    check-cast p1, [Ljava/lang/Void;
-
-    invoke-direct {p0, p1}, Lcom/google/android/gms/security/zza;->zza([Ljava/lang/Void;)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method protected final synthetic onPostExecute(Ljava/lang/Object;)V
+.method protected final bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 4
 
-    .line 7
+    .line 1
     check-cast p1, Ljava/lang/Integer;
 
-    .line 8
+    .line 2
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 9
-    iget-object p1, p0, Lcom/google/android/gms/security/zza;->zzix:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
+    iget-object p1, p0, Lcom/google/android/gms/security/zza;->zzb:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
 
+    .line 3
     invoke-interface {p1}, Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;->onProviderInstalled()V
 
     return-void
 
-    .line 10
+    .line 4
     :cond_0
-    invoke-static {}, Lcom/google/android/gms/security/ProviderInstaller;->zzal()Lcom/google/android/gms/common/GoogleApiAvailabilityLight;
+    invoke-static {}, Lcom/google/android/gms/security/ProviderInstaller;->zza()Lcom/google/android/gms/common/GoogleApiAvailabilityLight;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/security/zza;->val$context:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/android/gms/security/zza;->zza:Landroid/content/Context;
 
+    .line 5
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v2
@@ -135,9 +129,9 @@
 
     move-result-object v0
 
-    .line 11
-    iget-object v1, p0, Lcom/google/android/gms/security/zza;->zzix:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
+    iget-object v1, p0, Lcom/google/android/gms/security/zza;->zzb:Lcom/google/android/gms/security/ProviderInstaller$ProviderInstallListener;
 
+    .line 6
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p1

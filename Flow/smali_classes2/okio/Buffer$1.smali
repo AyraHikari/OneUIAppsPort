@@ -22,7 +22,7 @@
 .method constructor <init>(Lokio/Buffer;)V
     .locals 0
 
-    .line 75
+    .line 79
     iput-object p1, p0, Lokio/Buffer$1;->this$0:Lokio/Buffer;
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
@@ -47,7 +47,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 91
+    .line 95
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -56,9 +56,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ".outputStream()"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -70,7 +74,7 @@
 .method public write(I)V
     .locals 1
 
-    .line 77
+    .line 81
     iget-object v0, p0, Lokio/Buffer$1;->this$0:Lokio/Buffer;
 
     int-to-byte p1, p1
@@ -83,7 +87,7 @@
 .method public write([BII)V
     .locals 1
 
-    .line 81
+    .line 85
     iget-object v0, p0, Lokio/Buffer$1;->this$0:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->write([BII)Lokio/Buffer;

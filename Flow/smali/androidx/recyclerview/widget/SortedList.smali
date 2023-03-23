@@ -120,8 +120,6 @@
 
     check-cast p1, [Ljava/lang/Object;
 
-    check-cast p1, [Ljava/lang/Object;
-
     iput-object p1, p0, Landroidx/recyclerview/widget/SortedList;->mData:[Ljava/lang/Object;
 
     .line 104
@@ -323,8 +321,6 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    check-cast v0, [Ljava/lang/Object;
-
     .line 800
     iget-object v1, p0, Landroidx/recyclerview/widget/SortedList;->mData:[Ljava/lang/Object;
 
@@ -386,17 +382,25 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " because size is "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget p1, p0, Landroidx/recyclerview/widget/SortedList;->mSize:I
+    move-result-object v0
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const-string v0, " because size is "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    iget v0, p0, Landroidx/recyclerview/widget/SortedList;->mSize:I
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -421,8 +425,6 @@
     invoke-static {v0, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object v0
-
-    check-cast v0, [Ljava/lang/Object;
 
     check-cast v0, [Ljava/lang/Object;
 
@@ -699,8 +701,6 @@
 
     check-cast v3, [Ljava/lang/Object;
 
-    check-cast v3, [Ljava/lang/Object;
-
     iput-object v3, p0, Landroidx/recyclerview/widget/SortedList;->mData:[Ljava/lang/Object;
 
     .line 419
@@ -717,12 +717,7 @@
 
     if-ge v2, p2, :cond_4
 
-    .line 423
     :cond_2
-    iget v3, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataStart:I
-
-    iget v4, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataSize:I
-
     if-ne v3, v4, :cond_3
 
     sub-int/2addr p2, v2
@@ -1099,8 +1094,6 @@
 
     check-cast v3, [Ljava/lang/Object;
 
-    check-cast v3, [Ljava/lang/Object;
-
     iput-object v3, p0, Landroidx/recyclerview/widget/SortedList;->mData:[Ljava/lang/Object;
 
     .line 281
@@ -1110,29 +1103,26 @@
 
     if-lt v3, v2, :cond_2
 
-    iget v3, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataStart:I
+    iget v4, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataStart:I
 
-    iget v4, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataSize:I
+    iget v5, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataSize:I
 
-    if-ge v3, v4, :cond_4
+    if-ge v4, v5, :cond_4
 
     .line 282
     :cond_2
-    iget v3, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataStart:I
+    iget v4, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataStart:I
 
-    iget v4, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataSize:I
+    iget v5, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataSize:I
 
-    if-lt v3, v4, :cond_3
+    if-lt v4, v5, :cond_3
 
-    .line 283
-    iget v1, p0, Landroidx/recyclerview/widget/SortedList;->mNewDataStart:I
-
-    sub-int/2addr v2, v1
+    sub-int/2addr v2, v3
 
     .line 285
-    iget-object v3, p0, Landroidx/recyclerview/widget/SortedList;->mData:[Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/recyclerview/widget/SortedList;->mData:[Ljava/lang/Object;
 
-    invoke-static {p1, v1, v3, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p1, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 286
     iget p1, p0, Landroidx/recyclerview/widget/SortedList;->mNewDataStart:I
@@ -1151,29 +1141,26 @@
     .line 288
     iget-object p1, p0, Landroidx/recyclerview/widget/SortedList;->mCallback:Landroidx/recyclerview/widget/SortedList$Callback;
 
-    invoke-virtual {p1, v1, v2}, Landroidx/recyclerview/widget/SortedList$Callback;->onInserted(II)V
+    invoke-virtual {p1, v3, v2}, Landroidx/recyclerview/widget/SortedList$Callback;->onInserted(II)V
 
     goto :goto_1
 
-    .line 291
     :cond_3
-    iget v5, p0, Landroidx/recyclerview/widget/SortedList;->mNewDataStart:I
+    if-lt v3, v2, :cond_6
 
-    if-lt v5, v2, :cond_6
-
-    sub-int/2addr v4, v3
+    sub-int/2addr v5, v4
 
     .line 293
     iget p1, p0, Landroidx/recyclerview/widget/SortedList;->mSize:I
 
-    sub-int/2addr p1, v4
+    sub-int/2addr p1, v5
 
     iput p1, p0, Landroidx/recyclerview/widget/SortedList;->mSize:I
 
     .line 294
     iget-object p1, p0, Landroidx/recyclerview/widget/SortedList;->mCallback:Landroidx/recyclerview/widget/SortedList$Callback;
 
-    invoke-virtual {p1, v5, v4}, Landroidx/recyclerview/widget/SortedList$Callback;->onRemoved(II)V
+    invoke-virtual {p1, v3, v5}, Landroidx/recyclerview/widget/SortedList$Callback;->onRemoved(II)V
 
     :cond_4
     :goto_1
@@ -1192,17 +1179,17 @@
 
     .line 298
     :cond_6
-    iget-object v4, p0, Landroidx/recyclerview/widget/SortedList;->mOldData:[Ljava/lang/Object;
+    iget-object v5, p0, Landroidx/recyclerview/widget/SortedList;->mOldData:[Ljava/lang/Object;
 
-    aget-object v3, v4, v3
+    aget-object v4, v5, v4
 
     .line 299
-    aget-object v4, p1, v5
+    aget-object v3, p1, v3
 
     .line 301
     iget-object v5, p0, Landroidx/recyclerview/widget/SortedList;->mCallback:Landroidx/recyclerview/widget/SortedList$Callback;
 
-    invoke-virtual {v5, v3, v4}, Landroidx/recyclerview/widget/SortedList$Callback;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-virtual {v5, v4, v3}, Landroidx/recyclerview/widget/SortedList$Callback;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v5
 
@@ -1217,7 +1204,7 @@
     if-lez v5, :cond_8
 
     .line 305
-    invoke-direct {p0, v4}, Landroidx/recyclerview/widget/SortedList;->replaceAllInsert(Ljava/lang/Object;)V
+    invoke-direct {p0, v3}, Landroidx/recyclerview/widget/SortedList;->replaceAllInsert(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -1225,7 +1212,7 @@
     :cond_8
     iget-object v5, p0, Landroidx/recyclerview/widget/SortedList;->mCallback:Landroidx/recyclerview/widget/SortedList$Callback;
 
-    invoke-virtual {v5, v3, v4}, Landroidx/recyclerview/widget/SortedList$Callback;->areItemsTheSame(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4, v3}, Landroidx/recyclerview/widget/SortedList$Callback;->areItemsTheSame(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -1235,7 +1222,7 @@
     invoke-direct {p0}, Landroidx/recyclerview/widget/SortedList;->replaceAllRemove()V
 
     .line 311
-    invoke-direct {p0, v4}, Landroidx/recyclerview/widget/SortedList;->replaceAllInsert(Ljava/lang/Object;)V
+    invoke-direct {p0, v3}, Landroidx/recyclerview/widget/SortedList;->replaceAllInsert(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -1245,7 +1232,7 @@
 
     iget v6, p0, Landroidx/recyclerview/widget/SortedList;->mNewDataStart:I
 
-    aput-object v4, v5, v6
+    aput-object v3, v5, v6
 
     .line 314
     iget v5, p0, Landroidx/recyclerview/widget/SortedList;->mOldDataStart:I
@@ -1262,7 +1249,7 @@
     .line 316
     iget-object v5, p0, Landroidx/recyclerview/widget/SortedList;->mCallback:Landroidx/recyclerview/widget/SortedList$Callback;
 
-    invoke-virtual {v5, v3, v4}, Landroidx/recyclerview/widget/SortedList$Callback;->areContentsTheSame(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4, v3}, Landroidx/recyclerview/widget/SortedList$Callback;->areContentsTheSame(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -1276,7 +1263,7 @@
     sub-int/2addr v6, v1
 
     .line 320
-    invoke-virtual {v5, v3, v4}, Landroidx/recyclerview/widget/SortedList$Callback;->getChangePayload(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v4, v3}, Landroidx/recyclerview/widget/SortedList$Callback;->getChangePayload(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -1480,8 +1467,6 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    check-cast v0, [Ljava/lang/Object;
-
     .line 194
     invoke-interface {p1, v0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
@@ -1557,24 +1542,26 @@
     .line 519
     iget-object v0, p0, Landroidx/recyclerview/widget/SortedList;->mCallback:Landroidx/recyclerview/widget/SortedList$Callback;
 
-    instance-of v1, v0, Landroidx/recyclerview/widget/SortedList$BatchedCallback;
+    instance-of v0, v0, Landroidx/recyclerview/widget/SortedList$BatchedCallback;
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     return-void
 
     .line 522
     :cond_0
-    iget-object v1, p0, Landroidx/recyclerview/widget/SortedList;->mBatchedCallback:Landroidx/recyclerview/widget/SortedList$BatchedCallback;
+    iget-object v0, p0, Landroidx/recyclerview/widget/SortedList;->mBatchedCallback:Landroidx/recyclerview/widget/SortedList$BatchedCallback;
 
-    if-nez v1, :cond_1
+    if-nez v0, :cond_1
 
     .line 523
-    new-instance v1, Landroidx/recyclerview/widget/SortedList$BatchedCallback;
+    new-instance v0, Landroidx/recyclerview/widget/SortedList$BatchedCallback;
 
-    invoke-direct {v1, v0}, Landroidx/recyclerview/widget/SortedList$BatchedCallback;-><init>(Landroidx/recyclerview/widget/SortedList$Callback;)V
+    iget-object v1, p0, Landroidx/recyclerview/widget/SortedList;->mCallback:Landroidx/recyclerview/widget/SortedList$Callback;
 
-    iput-object v1, p0, Landroidx/recyclerview/widget/SortedList;->mBatchedCallback:Landroidx/recyclerview/widget/SortedList$BatchedCallback;
+    invoke-direct {v0, v1}, Landroidx/recyclerview/widget/SortedList$BatchedCallback;-><init>(Landroidx/recyclerview/widget/SortedList$Callback;)V
+
+    iput-object v0, p0, Landroidx/recyclerview/widget/SortedList;->mBatchedCallback:Landroidx/recyclerview/widget/SortedList$BatchedCallback;
 
     .line 525
     :cond_1
@@ -1716,17 +1703,25 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " but size is "
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget p1, p0, Landroidx/recyclerview/widget/SortedList;->mSize:I
+    move-result-object v1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const-string v1, " but size is "
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    iget v1, p0, Landroidx/recyclerview/widget/SortedList;->mSize:I
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1923,8 +1918,6 @@
     invoke-static {v0, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object v0
-
-    check-cast v0, [Ljava/lang/Object;
 
     check-cast v0, [Ljava/lang/Object;
 

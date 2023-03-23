@@ -15,6 +15,12 @@
 
 
 # virtual methods
+.method public abstract contentType()Ljava/lang/String;
+.end method
+
+.method public abstract contentType(Ljava/lang/String;)Lorg/jsoup/Connection$KeyVal;
+.end method
+
 .method public abstract hasInputStream()Z
 .end method
 

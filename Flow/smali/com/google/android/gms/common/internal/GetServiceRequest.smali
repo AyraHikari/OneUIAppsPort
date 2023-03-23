@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/internal/GetServiceRequest;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # static fields
@@ -15,150 +16,149 @@
 
 
 # instance fields
-.field private final version:I
+.field final zza:I
 
-.field private final zzdg:I
+.field final zzb:I
 
-.field private zzdh:I
+.field zzc:I
 
-.field zzdi:Landroid/os/IBinder;
+.field zzd:Ljava/lang/String;
 
-.field zzdj:[Lcom/google/android/gms/common/api/Scope;
+.field zze:Landroid/os/IBinder;
 
-.field zzdk:Landroid/os/Bundle;
+.field zzf:[Lcom/google/android/gms/common/api/Scope;
 
-.field zzdl:Landroid/accounts/Account;
+.field zzg:Landroid/os/Bundle;
 
-.field zzdm:[Lcom/google/android/gms/common/Feature;
+.field zzh:Landroid/accounts/Account;
 
-.field zzdn:[Lcom/google/android/gms/common/Feature;
+.field zzi:[Lcom/google/android/gms/common/Feature;
 
-.field private zzdo:Z
+.field zzj:[Lcom/google/android/gms/common/Feature;
 
-.field zzy:Ljava/lang/String;
+.field zzk:Z
+
+.field zzl:I
+
+.field zzm:Z
+
+.field private zzn:Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 47
-    new-instance v0, Lcom/google/android/gms/common/internal/zzd;
+    new-instance v0, Lcom/google/android/gms/common/internal/zzm;
 
-    invoke-direct {v0}, Lcom/google/android/gms/common/internal/zzd;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/common/internal/zzm;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/internal/GetServiceRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public constructor <init>(I)V
-    .locals 1
+.method constructor <init>(IIILjava/lang/String;Landroid/os/IBinder;[Lcom/google/android/gms/common/api/Scope;Landroid/os/Bundle;Landroid/accounts/Account;[Lcom/google/android/gms/common/Feature;[Lcom/google/android/gms/common/Feature;ZIZLjava/lang/String;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    const/4 v0, 0x4
+    iput p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zza:I
 
-    .line 2
-    iput v0, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->version:I
+    iput p2, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzb:I
 
-    .line 3
-    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
-
-    iput v0, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdh:I
-
-    .line 4
-    iput p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdg:I
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdo:Z
-
-    return-void
-.end method
-
-.method constructor <init>(IIILjava/lang/String;Landroid/os/IBinder;[Lcom/google/android/gms/common/api/Scope;Landroid/os/Bundle;Landroid/accounts/Account;[Lcom/google/android/gms/common/Feature;[Lcom/google/android/gms/common/Feature;Z)V
-    .locals 0
-
-    .line 7
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
-
-    .line 8
-    iput p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->version:I
-
-    .line 9
-    iput p2, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdg:I
-
-    .line 10
-    iput p3, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdh:I
+    iput p3, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzc:I
 
     const-string p2, "com.google.android.gms"
 
-    .line 11
     invoke-virtual {p2, p4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p3
 
     if-eqz p3, :cond_0
 
-    .line 12
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzy:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzd:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 13
+    .line 3
     :cond_0
-    iput-object p4, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzy:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzd:Ljava/lang/String;
 
     :goto_0
     const/4 p2, 0x2
 
     if-ge p1, p2, :cond_2
 
-    const/4 p1, 0x0
-
     if-eqz p5, :cond_1
 
-    .line 19
+    .line 2
     invoke-static {p5}, Lcom/google/android/gms/common/internal/IAccountAccessor$Stub;->asInterface(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/IAccountAccessor;
 
     move-result-object p1
 
-    .line 20
+    .line 3
     invoke-static {p1}, Lcom/google/android/gms/common/internal/AccountAccessor;->getAccountBinderSafe(Lcom/google/android/gms/common/internal/IAccountAccessor;)Landroid/accounts/Account;
 
     move-result-object p1
 
-    .line 22
-    :cond_1
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdl:Landroid/accounts/Account;
-
     goto :goto_1
 
-    .line 23
-    :cond_2
-    iput-object p5, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdi:Landroid/os/IBinder;
+    :cond_1
+    const/4 p1, 0x0
 
-    .line 24
-    iput-object p8, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdl:Landroid/accounts/Account;
-
-    .line 25
     :goto_1
-    iput-object p6, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdj:[Lcom/google/android/gms/common/api/Scope;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzh:Landroid/accounts/Account;
 
-    .line 26
-    iput-object p7, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdk:Landroid/os/Bundle;
+    goto :goto_2
 
-    .line 27
-    iput-object p9, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdm:[Lcom/google/android/gms/common/Feature;
+    :cond_2
+    iput-object p5, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zze:Landroid/os/IBinder;
 
-    .line 28
-    iput-object p10, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdn:[Lcom/google/android/gms/common/Feature;
+    iput-object p8, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzh:Landroid/accounts/Account;
 
-    .line 29
-    iput-boolean p11, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdo:Z
+    :goto_2
+    iput-object p6, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzf:[Lcom/google/android/gms/common/api/Scope;
+
+    iput-object p7, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzg:Landroid/os/Bundle;
+
+    iput-object p9, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzi:[Lcom/google/android/gms/common/Feature;
+
+    iput-object p10, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzj:[Lcom/google/android/gms/common/Feature;
+
+    iput-boolean p11, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzk:Z
+
+    iput p12, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzl:I
+
+    iput-boolean p13, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzm:Z
+
+    iput-object p14, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzn:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(ILjava/lang/String;)V
+    .locals 1
+
+    .line 4
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+
+    const/4 v0, 0x6
+
+    iput v0, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zza:I
+
+    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+
+    iput v0, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzc:I
+
+    iput p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzb:I
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzk:Z
+
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzn:Ljava/lang/String;
 
     return-void
 .end method
@@ -168,101 +168,24 @@
 .method public getExtraArgs()Landroid/os/Bundle;
     .locals 1
 
-    .line 31
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdk:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzg:Landroid/os/Bundle;
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
 
-    .line 33
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
-
-    move-result v0
-
-    .line 34
-    iget v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->version:I
-
-    const/4 v2, 0x1
-
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
-
-    .line 35
-    iget v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdg:I
-
-    const/4 v2, 0x2
-
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
-
-    .line 36
-    iget v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdh:I
-
-    const/4 v2, 0x3
-
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
-
-    .line 37
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzy:Ljava/lang/String;
-
-    const/4 v2, 0x4
-
-    const/4 v3, 0x0
-
-    invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeString(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    .line 38
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdi:Landroid/os/IBinder;
-
-    const/4 v2, 0x5
-
-    invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeIBinder(Landroid/os/Parcel;ILandroid/os/IBinder;Z)V
-
-    .line 39
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdj:[Lcom/google/android/gms/common/api/Scope;
-
-    const/4 v2, 0x6
-
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedArray(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
-
-    .line 40
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdk:Landroid/os/Bundle;
-
-    const/4 v2, 0x7
-
-    invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBundle(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
-
-    .line 41
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdl:Landroid/accounts/Account;
-
-    const/16 v2, 0x8
-
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
-
-    .line 42
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdm:[Lcom/google/android/gms/common/Feature;
-
-    const/16 v2, 0xa
-
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedArray(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
-
-    .line 43
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdn:[Lcom/google/android/gms/common/Feature;
-
-    const/16 v2, 0xb
-
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedArray(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
-
-    .line 44
-    iget-boolean p2, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzdo:Z
-
-    const/16 v1, 0xc
-
-    invoke-static {p1, v1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBoolean(Landroid/os/Parcel;IZ)V
-
-    .line 45
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/zzm;->zza(Lcom/google/android/gms/common/internal/GetServiceRequest;Landroid/os/Parcel;I)V
 
     return-void
+.end method
+
+.method public final zza()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/GetServiceRequest;->zzn:Ljava/lang/String;
+
+    return-object v0
 .end method

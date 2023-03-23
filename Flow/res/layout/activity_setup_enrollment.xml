@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/setup_enroll_root" android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:backgroundTint="@color/background_round_color" />
-    <LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
-            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginBottom="33.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
-                <ProgressBar android:id="@id/progressBar" android:background="@drawable/circular_progressbar_bar_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="12" android:indeterminate="false" android:progressDrawable="@drawable/circular_progressbar_bar" style="?android:progressBarStyleHorizontal" />
-                <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:lottie_fileName="sc_easy_setup_check_medium.json" />
-                <TextView android:textSize="13.0dip" android:textColor="@color/progress_circle_text_color" android:id="@id/progressText" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12%" android:layout_centerInParent="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
-            </RelativeLayout>
-        </RelativeLayout>
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:backgroundTint="@color/background_round_color" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/setup_enroll_linear" android:background="@color/background_round_color" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="18.0dip" app:layout_constraintBottom_toTopOf="@id/buttons" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" app:layout_constraintWidth_percent="0.8">
         <LinearLayout android:orientation="vertical" android:id="@id/setupPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </LinearLayout>
-</LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/btn_new_bg_color" android:ellipsize="end" android:id="@id/button_cancel" android:background="@drawable/ripple_round_rect" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:text="@string/dialog_cancel" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="sec-roboto-light" android:layout_marginStart="24.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/sent_bubble_text_color" android:ellipsize="end" android:id="@id/button_ok" android:background="@drawable/new_button_background" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:text="@string/dialog_ok" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="sec-roboto-light" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginEnd="24.0dip" android:backgroundTint="@color/btn_new_bg_color" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

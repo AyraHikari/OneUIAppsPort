@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/edit_text_compress_stub_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_unit_text_margin_start" android:paddingStart="@dimen/editText_padding_start"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/basic_dialog_text_checkbox_padding_top" android:layout_weight="1.0" android:paddingEnd="@dimen/basic_dialog_padding_horizontal">
+        <CheckBox android:textSize="@dimen/basic_dialog_main_text_size" android:textColor="@color/dialog_body_text_color" android:id="@id/dialog_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/protected_with_password" android:drawablePadding="8.0dip" android:drawableStart="@android:color/transparent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/password_layout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/compress_dialog_margin_bottom">
+        <LinearLayout android:orientation="vertical" android:id="@id/show_password_layout" android:tag="binding_3" android:paddingTop="@dimen/edit_text_dialog_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/input_password" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/icon_tint_color">
+                <EditText android:textSize="@dimen/basic_edit_text_size" android:id="@id/password_et" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_password" android:maxLines="1" android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

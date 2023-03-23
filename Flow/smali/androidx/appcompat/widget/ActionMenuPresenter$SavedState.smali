@@ -37,7 +37,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 740
+    .line 716
     new-instance v0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$1;
 
     invoke-direct {v0}, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$1;-><init>()V
@@ -50,7 +50,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 723
+    .line 699
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,11 +58,19 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
-    .line 726
+    .line 702
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 727
+    .line 703
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -84,8 +92,18 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
-    .line 737
+    .line 713
     iget p2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->openSubMenuId:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

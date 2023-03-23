@@ -27,7 +27,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcom/airbnb/lottie/animation/Keyframe<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
             "Lcom/airbnb/lottie/model/content/ShapeData;",
             ">;>;)V"
         }
@@ -55,12 +55,12 @@
 
 
 # virtual methods
-.method public getValue(Lcom/airbnb/lottie/animation/Keyframe;F)Landroid/graphics/Path;
+.method public getValue(Lcom/airbnb/lottie/value/Keyframe;F)Landroid/graphics/Path;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/airbnb/lottie/animation/Keyframe<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
             "Lcom/airbnb/lottie/model/content/ShapeData;",
             ">;F)",
             "Landroid/graphics/Path;"
@@ -68,12 +68,12 @@
     .end annotation
 
     .line 20
-    iget-object v0, p1, Lcom/airbnb/lottie/animation/Keyframe;->startValue:Ljava/lang/Object;
+    iget-object v0, p1, Lcom/airbnb/lottie/value/Keyframe;->startValue:Ljava/lang/Object;
 
     check-cast v0, Lcom/airbnb/lottie/model/content/ShapeData;
 
     .line 21
-    iget-object p1, p1, Lcom/airbnb/lottie/animation/Keyframe;->endValue:Ljava/lang/Object;
+    iget-object p1, p1, Lcom/airbnb/lottie/value/Keyframe;->endValue:Ljava/lang/Object;
 
     check-cast p1, Lcom/airbnb/lottie/model/content/ShapeData;
 
@@ -95,11 +95,11 @@
     return-object p1
 .end method
 
-.method public bridge synthetic getValue(Lcom/airbnb/lottie/animation/Keyframe;F)Ljava/lang/Object;
+.method public bridge synthetic getValue(Lcom/airbnb/lottie/value/Keyframe;F)Ljava/lang/Object;
     .locals 0
 
     .line 11
-    invoke-virtual {p0, p1, p2}, Lcom/airbnb/lottie/animation/keyframe/ShapeKeyframeAnimation;->getValue(Lcom/airbnb/lottie/animation/Keyframe;F)Landroid/graphics/Path;
+    invoke-virtual {p0, p1, p2}, Lcom/airbnb/lottie/animation/keyframe/ShapeKeyframeAnimation;->getValue(Lcom/airbnb/lottie/value/Keyframe;F)Landroid/graphics/Path;
 
     move-result-object p1
 

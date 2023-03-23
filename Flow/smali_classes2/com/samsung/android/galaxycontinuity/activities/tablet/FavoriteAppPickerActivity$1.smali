@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 73
+    .line 72
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,18 +45,26 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
-    .line 76
+    .line 75
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
 
-    .line 77
+    .line 76
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 78
+    .line 77
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;
 
     iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mUnSelectedFavoriteAdapter:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
@@ -74,7 +90,7 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    .line 79
+    .line 78
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;
 
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mPlayer:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
@@ -98,17 +114,17 @@
     :cond_0
     const-string v1, "_data"
 
-    .line 82
+    .line 81
     invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 83
+    .line 82
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->setResult(ILandroid/content/Intent;)V
 
-    .line 84
+    .line 83
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->finish()V

@@ -37,7 +37,7 @@
     return-object v0
 .end method
 
-.method public onError(I)V
+.method public onError(Landroid/os/Bundle;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

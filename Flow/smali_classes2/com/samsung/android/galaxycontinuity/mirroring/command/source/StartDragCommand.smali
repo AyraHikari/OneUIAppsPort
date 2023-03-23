@@ -21,6 +21,14 @@
 # virtual methods
 .method public parse(Lorg/json/JSONObject;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     .line 22
     :try_start_0
@@ -54,6 +62,14 @@
 
 .method public run(Landroid/content/Context;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 30
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/command/source/StartDragCommand;->param:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;

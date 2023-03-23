@@ -210,47 +210,73 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/protocol/ChannelBinding;->serverEndPoint:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/16 v1, 0x27
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", tlsServerCertificate=\'"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/protocol/ChannelBinding;->tlsServerCertificate:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", tlsUnique=\'"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/protocol/ChannelBinding;->tlsUnique:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, ", cid_pubkey=\'"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/sec/android/fido/uaf/message/protocol/ChannelBinding;->cid_pubkey:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/16 v1, 0x7d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -274,7 +300,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    const-string v1, "serverEndPoint is EMPTIED"
+    const-string/jumbo v1, "serverEndPoint is EMPTIED"
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -296,7 +322,7 @@
     :catch_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string v1, "serverEndPoint is NOT encoded as base64url"
+    const-string/jumbo v1, "serverEndPoint is NOT encoded as base64url"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
@@ -316,7 +342,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    const-string v1, "tlsServerCertificate is EMPTIED"
+    const-string/jumbo v1, "tlsServerCertificate is EMPTIED"
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -338,7 +364,7 @@
     :catch_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string v1, "tlsServerCertificate is NOT encoded as base64url"
+    const-string/jumbo v1, "tlsServerCertificate is NOT encoded as base64url"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
@@ -358,7 +384,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    const-string v1, "tlsUnique is EMPTIED"
+    const-string/jumbo v1, "tlsUnique is EMPTIED"
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -380,7 +406,7 @@
     :catch_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string v1, "tlsUnique is NOT encoded as base64url"
+    const-string/jumbo v1, "tlsUnique is NOT encoded as base64url"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

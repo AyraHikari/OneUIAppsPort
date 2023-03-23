@@ -51,6 +51,8 @@
 
 .field mReceiver:Landroid/content/BroadcastReceiver;
 
+.field private mcollator:Ljava/text/Collator;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -62,17 +64,17 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 52
+    .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 41
+    .line 43
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->SHORTCUT_LOCK:Ljava/lang/Object;
 
-    .line 42
+    .line 44
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
     const/4 v1, 0x1
@@ -81,19 +83,35 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mInitLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 64
+    .line 69
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
-    .line 282
+    .line 302
     new-instance v0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$4;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$4;-><init>(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->generalComparator:Ljava/util/Comparator;
+
+    .line 57
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/text/Collator;->getInstance(Ljava/util/Locale;)Ljava/text/Collator;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mcollator:Ljava/text/Collator;
+
+    const/4 v1, 0x0
+
+    .line 58
+    invoke-virtual {v0, v1}, Ljava/text/Collator;->setStrength(I)V
 
     return-void
 .end method
@@ -101,7 +119,7 @@
 .method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 36
+    .line 38
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
     return-object p0
@@ -110,8 +128,17 @@
 .method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;)Ljava/util/Comparator;
     .locals 0
 
-    .line 36
+    .line 38
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->generalComparator:Ljava/util/Comparator;
+
+    return-object p0
+.end method
+
+.method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;)Ljava/text/Collator;
+    .locals 0
+
+    .line 38
+    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mcollator:Ljava/text/Collator;
 
     return-object p0
 .end method
@@ -123,20 +150,20 @@
 
     monitor-enter v0
 
-    .line 46
+    .line 50
     :try_start_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     if-nez v1, :cond_0
 
-    .line 47
+    .line 51
     new-instance v1, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;-><init>()V
 
     sput-object v1, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
-    .line 48
+    .line 52
     :cond_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
     :try_end_0
@@ -157,7 +184,7 @@
 .method private waitInit()V
     .locals 1
 
-    .line 139
+    .line 154
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mInitLatch:Ljava/util/concurrent/CountDownLatch;
 
@@ -170,7 +197,7 @@
     :catch_0
     move-exception v0
 
-    .line 141
+    .line 156
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
@@ -181,13 +208,21 @@
 # virtual methods
 .method public addAppToList(Lcom/samsung/android/galaxycontinuity/data/AppInfoData;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appInfo"
+        }
+    .end annotation
 
-    .line 226
+    .line 241
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->SHORTCUT_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 227
+    .line 242
     :try_start_0
     new-instance v1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
@@ -205,14 +240,14 @@
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 228
+    .line 243
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 230
+    .line 245
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -225,12 +260,12 @@
 
     check-cast v2, Landroid/content/pm/ShortcutManager;
 
-    .line 231
+    .line 246
     invoke-virtual {v2}, Landroid/content/pm/ShortcutManager;->getPinnedShortcuts()Ljava/util/List;
 
     move-result-object v2
 
-    .line 233
+    .line 248
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -248,7 +283,7 @@
 
     check-cast v3, Landroid/content/pm/ShortcutInfo;
 
-    .line 234
+    .line 249
     invoke-virtual {v3}, Landroid/content/pm/ShortcutInfo;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
@@ -259,7 +294,7 @@
 
     move-result-object v4
 
-    .line 236
+    .line 251
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/AppInfoData;->packageName:Ljava/lang/String;
 
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -268,7 +303,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 238
+    .line 253
     iget-object p1, v1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v3}, Landroid/content/pm/ShortcutInfo;->isEnabled()Z
@@ -277,7 +312,7 @@
 
     invoke-virtual {p1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 243
+    .line 258
     :cond_1
     new-instance p1, Landroid/os/Handler;
 
@@ -287,14 +322,14 @@
 
     invoke-direct {p1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 244
+    .line 259
     new-instance v2, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$2;
 
     invoke-direct {v2, p0, v1}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$2;-><init>(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
 
     invoke-virtual {p1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 254
+    .line 274
     monitor-exit v0
 
     return-void
@@ -310,14 +345,24 @@
 .end method
 
 .method public createPinnedShortcut(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$CreatedPinnedShortcutListener;)V
-    .locals 5
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "app",
+            "listener"
+        }
+    .end annotation
 
-    .line 68
+    .line 73
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->SHORTCUT_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 69
+    .line 74
     :try_start_0
     new-instance v1, Landroid/content/Intent;
 
@@ -327,7 +372,7 @@
 
     const-string v2, "packageName"
 
-    .line 70
+    .line 75
     iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->packageName:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v3}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -340,12 +385,12 @@
 
     const-string v2, "activityName"
 
-    .line 71
+    .line 76
     iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->activityName:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 74
+    .line 79
     new-instance v2, Landroid/content/pm/ShortcutInfo$Builder;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -364,7 +409,7 @@
 
     iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->label:Landroidx/databinding/ObservableField;
 
-    .line 75
+    .line 80
     invoke-virtual {v3}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -377,7 +422,7 @@
 
     iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->label:Landroidx/databinding/ObservableField;
 
-    .line 76
+    .line 81
     invoke-virtual {v3}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -390,7 +435,7 @@
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->icon:Landroidx/databinding/ObservableField;
 
-    .line 77
+    .line 82
     invoke-virtual {p1}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
 
     move-result-object p1
@@ -405,17 +450,17 @@
 
     move-result-object p1
 
-    .line 78
+    .line 83
     invoke-virtual {p1, v1}, Landroid/content/pm/ShortcutInfo$Builder;->setIntent(Landroid/content/Intent;)Landroid/content/pm/ShortcutInfo$Builder;
 
     move-result-object p1
 
-    .line 79
+    .line 84
     invoke-virtual {p1}, Landroid/content/pm/ShortcutInfo$Builder;->build()Landroid/content/pm/ShortcutInfo;
 
     move-result-object p1
 
-    .line 81
+    .line 86
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -428,33 +473,55 @@
 
     check-cast v1, Landroid/content/pm/ShortcutManager;
 
-    .line 83
+    .line 88
     invoke-virtual {v1, p1}, Landroid/content/pm/ShortcutManager;->createShortcutResultIntent(Landroid/content/pm/ShortcutInfo;)Landroid/content/Intent;
 
     move-result-object v2
 
-    const-string v3, "samsungflow.intent.action.created_pinned_shortcut"
+    const-string/jumbo v3, "samsungflow.intent.action.created_pinned_shortcut"
 
-    .line 84
+    .line 89
     invoke-virtual {v2, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 86
+    .line 92
+    sget v3, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v4, 0x1e
+
+    const/4 v5, 0x0
+
+    if-le v3, v4, :cond_0
+
+    .line 93
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v3
 
-    const/4 v4, 0x0
+    const/high16 v4, 0x2000000
 
-    invoke-static {v3, v4, v2, v4}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+    invoke-static {v3, v5, v2, v4}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
-    .line 89
+    goto :goto_0
+
+    .line 96
+    :cond_0
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v3
+
+    invoke-static {v3, v5, v2, v5}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v2
+
+    .line 99
+    :goto_0
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    if-eqz v3, :cond_0
+    if-eqz v3, :cond_1
 
-    .line 90
+    .line 100
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v3
@@ -463,25 +530,25 @@
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 92
-    :cond_0
+    .line 102
+    :cond_1
     new-instance v3, Landroid/content/IntentFilter;
 
     invoke-direct {v3}, Landroid/content/IntentFilter;-><init>()V
 
-    const-string v4, "samsungflow.intent.action.created_pinned_shortcut"
+    const-string/jumbo v4, "samsungflow.intent.action.created_pinned_shortcut"
 
-    .line 93
+    .line 103
     invoke-virtual {v3, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 95
+    .line 105
     new-instance v4, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$1;
 
     invoke-direct {v4, p0, p2}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$1;-><init>(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$CreatedPinnedShortcutListener;)V
 
     iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 109
+    .line 119
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p2
@@ -490,14 +557,35 @@
 
     invoke-virtual {p2, v4, v3}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 111
+    .line 121
     invoke-virtual {v2}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
 
     move-result-object p2
 
     invoke-virtual {v1, p1, p2}, Landroid/content/pm/ShortcutManager;->requestPinShortcut(Landroid/content/pm/ShortcutInfo;Landroid/content/IntentSender;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 112
+    const-wide/16 p1, 0x12c
+
+    .line 123
+    :try_start_1
+    invoke-static {p1, p2}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_1
+    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p1
+
+    .line 125
+    :try_start_2
+    invoke-virtual {p1}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    .line 127
+    :goto_1
     monitor-exit v0
 
     return-void
@@ -506,8 +594,8 @@
     move-exception p1
 
     monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     throw p1
 .end method
@@ -515,12 +603,12 @@
 .method public deInit()V
     .locals 2
 
-    .line 57
+    .line 62
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_0
 
-    .line 59
+    .line 64
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -531,7 +619,7 @@
 
     const/4 v0, 0x0
 
-    .line 60
+    .line 65
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mReceiver:Landroid/content/BroadcastReceiver;
 
     :cond_0
@@ -549,10 +637,10 @@
         }
     .end annotation
 
-    .line 146
+    .line 161
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->waitInit()V
 
-    .line 147
+    .line 162
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
     return-object v0
@@ -560,8 +648,16 @@
 
 .method public getNotificationApp(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pkgName"
+        }
+    .end annotation
 
-    .line 175
+    .line 190
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -581,7 +677,7 @@
 
     check-cast v1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    .line 176
+    .line 191
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->packageName:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v2}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -607,7 +703,7 @@
 .method public getPinnedShortcutCnt()I
     .locals 3
 
-    .line 186
+    .line 201
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -629,7 +725,7 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    .line 187
+    .line 202
     iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v2}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -646,13 +742,21 @@
 
 .method public removeAppFromList(Lcom/samsung/android/galaxycontinuity/data/AppInfoData;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appInfo"
+        }
+    .end annotation
 
-    .line 258
+    .line 278
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->SHORTCUT_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 259
+    .line 279
     :try_start_0
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/AppInfoData;->packageName:Ljava/lang/String;
 
@@ -660,7 +764,7 @@
 
     move-result-object p1
 
-    .line 261
+    .line 281
     new-instance v1, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -669,14 +773,14 @@
 
     invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 262
+    .line 282
     new-instance v2, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;
 
     invoke-direct {v2, p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;-><init>(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 272
+    .line 292
     monitor-exit v0
 
     return-void
@@ -693,8 +797,16 @@
 
 .method public sendAddedApp(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "app"
+        }
+    .end annotation
 
-    .line 219
+    .line 234
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v0
@@ -711,12 +823,12 @@
 
     move-result-object v0
 
-    .line 220
+    .line 235
     sget-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     if-ne v0, v1, :cond_0
 
-    .line 221
+    .line 236
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v0
@@ -739,6 +851,15 @@
 
 .method public sendApplist(Ljava/util/List;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -748,7 +869,7 @@
         }
     .end annotation
 
-    .line 193
+    .line 208
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v0
@@ -765,12 +886,12 @@
 
     move-result-object v0
 
-    .line 194
+    .line 209
     sget-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     if-ne v0, v1, :cond_0
 
-    .line 195
+    .line 210
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -783,7 +904,7 @@
 
     invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 197
+    .line 212
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v3
@@ -796,7 +917,7 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->execute(Ljava/lang/Class;[Ljava/lang/Object;)V
 
-    .line 199
+    .line 214
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -809,7 +930,7 @@
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 200
+    .line 215
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -829,7 +950,7 @@
 
     const-wide/16 v3, 0x3c
 
-    .line 203
+    .line 218
     :try_start_0
     invoke-static {v3, v4}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -840,10 +961,10 @@
     :catch_0
     move-exception v3
 
-    .line 205
+    .line 220
     invoke-virtual {v3}, Ljava/lang/InterruptedException;->printStackTrace()V
 
-    .line 207
+    .line 222
     :goto_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
@@ -865,8 +986,16 @@
 
 .method public sendRemovedApp(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "app"
+        }
+    .end annotation
 
-    .line 213
+    .line 228
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v0
@@ -883,12 +1012,12 @@
 
     move-result-object v0
 
-    .line 214
+    .line 229
     sget-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     if-ne v0, v1, :cond_0
 
-    .line 215
+    .line 230
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v0
@@ -911,6 +1040,15 @@
 
 .method public setAppListInfo(Ljava/util/ArrayList;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -920,18 +1058,18 @@
         }
     .end annotation
 
-    .line 123
+    .line 138
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->SHORTCUT_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 124
+    .line 139
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    .line 126
+    .line 141
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -949,7 +1087,7 @@
 
     check-cast v1, Lcom/samsung/android/galaxycontinuity/data/AppInfoData;
 
-    .line 127
+    .line 142
     new-instance v2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
     iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/data/AppInfoData;->packageName:Ljava/lang/String;
@@ -966,30 +1104,30 @@
 
     invoke-direct {v2, v3, v4, v5, v1}, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 128
+    .line 143
     iget-object v1, v2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     const/4 v3, 0x0
 
     invoke-virtual {v1, v3}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 129
+    .line 144
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 132
+    .line 147
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->updatePinnedShortcutList()V
 
-    .line 133
+    .line 148
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mInitLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 134
+    .line 149
     monitor-exit v0
 
     return-void
@@ -1006,8 +1144,16 @@
 
 .method public setOnAppListChangedListener(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$OnAppListChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listChangedListener"
+        }
+    .end annotation
 
-    .line 279
+    .line 299
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mListener:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$OnAppListChangedListener;
 
     return-void
@@ -1016,12 +1162,12 @@
 .method public updatePinnedShortcutList()V
     .locals 5
 
-    .line 152
+    .line 167
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->SHORTCUT_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 153
+    .line 168
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
@@ -1031,12 +1177,12 @@
 
     if-nez v1, :cond_0
 
-    .line 154
+    .line 169
     monitor-exit v0
 
     return-void
 
-    .line 156
+    .line 171
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -1050,12 +1196,12 @@
 
     check-cast v1, Landroid/content/pm/ShortcutManager;
 
-    .line 157
+    .line 172
     invoke-virtual {v1}, Landroid/content/pm/ShortcutManager;->getPinnedShortcuts()Ljava/util/List;
 
     move-result-object v1
 
-    .line 159
+    .line 174
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mAppList:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1075,7 +1221,7 @@
 
     check-cast v3, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    .line 160
+    .line 175
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     const/4 v4, 0x0
@@ -1084,7 +1230,7 @@
 
     goto :goto_0
 
-    .line 162
+    .line 177
     :cond_1
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1103,7 +1249,7 @@
 
     check-cast v2, Landroid/content/pm/ShortcutInfo;
 
-    .line 163
+    .line 178
     invoke-virtual {v2}, Landroid/content/pm/ShortcutInfo;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
@@ -1114,7 +1260,7 @@
 
     move-result-object v3
 
-    .line 165
+    .line 180
     invoke-virtual {p0, v3}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->getNotificationApp(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
     move-result-object v3
@@ -1123,7 +1269,7 @@
 
     goto :goto_1
 
-    .line 169
+    .line 184
     :cond_2
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
@@ -1135,7 +1281,7 @@
 
     goto :goto_1
 
-    .line 171
+    .line 186
     :cond_3
     monitor-exit v0
 

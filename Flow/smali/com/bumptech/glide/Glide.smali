@@ -49,7 +49,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/bumptech/glide/load/engine/Engine;Lcom/bumptech/glide/load/engine/cache/MemoryCache;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;Landroid/content/Context;Lcom/bumptech/glide/load/DecodeFormat;)V
-    .locals 3
+    .locals 4
 
     .line 203
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -92,9 +92,9 @@
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-direct {p1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p1, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     iput-object p1, p0, Lcom/bumptech/glide/Glide;->mainHandler:Landroid/os/Handler;
 
@@ -113,86 +113,74 @@
     iput-object p1, p0, Lcom/bumptech/glide/Glide;->dataLoadProviderRegistry:Lcom/bumptech/glide/provider/DataLoadProviderRegistry;
 
     .line 214
-    new-instance p1, Lcom/bumptech/glide/load/resource/bitmap/StreamBitmapDataLoadProvider;
+    new-instance p2, Lcom/bumptech/glide/load/resource/bitmap/StreamBitmapDataLoadProvider;
 
-    invoke-direct {p1, p3, p5}, Lcom/bumptech/glide/load/resource/bitmap/StreamBitmapDataLoadProvider;-><init>(Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;Lcom/bumptech/glide/load/DecodeFormat;)V
+    invoke-direct {p2, p3, p5}, Lcom/bumptech/glide/load/resource/bitmap/StreamBitmapDataLoadProvider;-><init>(Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;Lcom/bumptech/glide/load/DecodeFormat;)V
 
     .line 216
-    iget-object p2, p0, Lcom/bumptech/glide/Glide;->dataLoadProviderRegistry:Lcom/bumptech/glide/provider/DataLoadProviderRegistry;
+    const-class v1, Ljava/io/InputStream;
 
-    const-class v0, Ljava/io/InputStream;
+    const-class v2, Landroid/graphics/Bitmap;
 
-    const-class v1, Landroid/graphics/Bitmap;
-
-    invoke-virtual {p2, v0, v1, p1}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
+    invoke-virtual {p1, v1, v2, p2}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
 
     .line 218
-    new-instance p2, Lcom/bumptech/glide/load/resource/bitmap/FileDescriptorBitmapDataLoadProvider;
+    new-instance v1, Lcom/bumptech/glide/load/resource/bitmap/FileDescriptorBitmapDataLoadProvider;
 
-    invoke-direct {p2, p3, p5}, Lcom/bumptech/glide/load/resource/bitmap/FileDescriptorBitmapDataLoadProvider;-><init>(Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;Lcom/bumptech/glide/load/DecodeFormat;)V
+    invoke-direct {v1, p3, p5}, Lcom/bumptech/glide/load/resource/bitmap/FileDescriptorBitmapDataLoadProvider;-><init>(Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;Lcom/bumptech/glide/load/DecodeFormat;)V
 
     .line 220
-    iget-object p5, p0, Lcom/bumptech/glide/Glide;->dataLoadProviderRegistry:Lcom/bumptech/glide/provider/DataLoadProviderRegistry;
+    const-class p5, Landroid/os/ParcelFileDescriptor;
 
-    const-class v0, Landroid/os/ParcelFileDescriptor;
+    const-class v2, Landroid/graphics/Bitmap;
 
-    const-class v1, Landroid/graphics/Bitmap;
-
-    invoke-virtual {p5, v0, v1, p2}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
+    invoke-virtual {p1, p5, v2, v1}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
 
     .line 222
     new-instance p5, Lcom/bumptech/glide/load/resource/bitmap/ImageVideoDataLoadProvider;
 
-    invoke-direct {p5, p1, p2}, Lcom/bumptech/glide/load/resource/bitmap/ImageVideoDataLoadProvider;-><init>(Lcom/bumptech/glide/provider/DataLoadProvider;Lcom/bumptech/glide/provider/DataLoadProvider;)V
+    invoke-direct {p5, p2, v1}, Lcom/bumptech/glide/load/resource/bitmap/ImageVideoDataLoadProvider;-><init>(Lcom/bumptech/glide/provider/DataLoadProvider;Lcom/bumptech/glide/provider/DataLoadProvider;)V
 
     .line 224
-    iget-object p1, p0, Lcom/bumptech/glide/Glide;->dataLoadProviderRegistry:Lcom/bumptech/glide/provider/DataLoadProviderRegistry;
-
     const-class p2, Lcom/bumptech/glide/load/model/ImageVideoWrapper;
 
-    const-class v0, Landroid/graphics/Bitmap;
+    const-class v1, Landroid/graphics/Bitmap;
 
-    invoke-virtual {p1, p2, v0, p5}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
+    invoke-virtual {p1, p2, v1, p5}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
 
     .line 226
-    new-instance p1, Lcom/bumptech/glide/load/resource/gif/GifDrawableLoadProvider;
+    new-instance p2, Lcom/bumptech/glide/load/resource/gif/GifDrawableLoadProvider;
 
-    invoke-direct {p1, p4, p3}, Lcom/bumptech/glide/load/resource/gif/GifDrawableLoadProvider;-><init>(Landroid/content/Context;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
+    invoke-direct {p2, p4, p3}, Lcom/bumptech/glide/load/resource/gif/GifDrawableLoadProvider;-><init>(Landroid/content/Context;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
 
     .line 228
-    iget-object p2, p0, Lcom/bumptech/glide/Glide;->dataLoadProviderRegistry:Lcom/bumptech/glide/provider/DataLoadProviderRegistry;
+    const-class v1, Ljava/io/InputStream;
 
-    const-class v0, Ljava/io/InputStream;
+    const-class v2, Lcom/bumptech/glide/load/resource/gif/GifDrawable;
 
-    const-class v1, Lcom/bumptech/glide/load/resource/gif/GifDrawable;
-
-    invoke-virtual {p2, v0, v1, p1}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
+    invoke-virtual {p1, v1, v2, p2}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
 
     .line 230
-    iget-object p2, p0, Lcom/bumptech/glide/Glide;->dataLoadProviderRegistry:Lcom/bumptech/glide/provider/DataLoadProviderRegistry;
+    const-class v1, Lcom/bumptech/glide/load/model/ImageVideoWrapper;
 
-    const-class v0, Lcom/bumptech/glide/load/model/ImageVideoWrapper;
+    const-class v2, Lcom/bumptech/glide/load/resource/gifbitmap/GifBitmapWrapper;
 
-    const-class v1, Lcom/bumptech/glide/load/resource/gifbitmap/GifBitmapWrapper;
+    new-instance v3, Lcom/bumptech/glide/load/resource/gifbitmap/ImageVideoGifDrawableLoadProvider;
 
-    new-instance v2, Lcom/bumptech/glide/load/resource/gifbitmap/ImageVideoGifDrawableLoadProvider;
+    invoke-direct {v3, p5, p2, p3}, Lcom/bumptech/glide/load/resource/gifbitmap/ImageVideoGifDrawableLoadProvider;-><init>(Lcom/bumptech/glide/provider/DataLoadProvider;Lcom/bumptech/glide/provider/DataLoadProvider;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
 
-    invoke-direct {v2, p5, p1, p3}, Lcom/bumptech/glide/load/resource/gifbitmap/ImageVideoGifDrawableLoadProvider;-><init>(Lcom/bumptech/glide/provider/DataLoadProvider;Lcom/bumptech/glide/provider/DataLoadProvider;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
-
-    invoke-virtual {p2, v0, v1, v2}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
+    invoke-virtual {p1, v1, v2, v3}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
 
     .line 233
-    iget-object p1, p0, Lcom/bumptech/glide/Glide;->dataLoadProviderRegistry:Lcom/bumptech/glide/provider/DataLoadProviderRegistry;
-
     const-class p2, Ljava/io/InputStream;
 
     const-class p5, Ljava/io/File;
 
-    new-instance v0, Lcom/bumptech/glide/load/resource/file/StreamFileDataLoadProvider;
+    new-instance v1, Lcom/bumptech/glide/load/resource/file/StreamFileDataLoadProvider;
 
-    invoke-direct {v0}, Lcom/bumptech/glide/load/resource/file/StreamFileDataLoadProvider;-><init>()V
+    invoke-direct {v1}, Lcom/bumptech/glide/load/resource/file/StreamFileDataLoadProvider;-><init>()V
 
-    invoke-virtual {p1, p2, p5, v0}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
+    invoke-virtual {p1, p2, p5, v1}, Lcom/bumptech/glide/provider/DataLoadProviderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/provider/DataLoadProvider;)V
 
     .line 235
     const-class p1, Ljava/io/File;
@@ -338,30 +326,26 @@
     invoke-virtual {p0, p1, p2, p5}, Lcom/bumptech/glide/Glide;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/model/ModelLoaderFactory;)V
 
     .line 249
-    iget-object p1, p0, Lcom/bumptech/glide/Glide;->transcoderRegistry:Lcom/bumptech/glide/load/resource/transcode/TranscoderRegistry;
+    const-class p1, Landroid/graphics/Bitmap;
 
-    const-class p2, Landroid/graphics/Bitmap;
+    const-class p2, Lcom/bumptech/glide/load/resource/bitmap/GlideBitmapDrawable;
 
-    const-class p5, Lcom/bumptech/glide/load/resource/bitmap/GlideBitmapDrawable;
-
-    new-instance v0, Lcom/bumptech/glide/load/resource/transcode/GlideBitmapDrawableTranscoder;
+    new-instance p5, Lcom/bumptech/glide/load/resource/transcode/GlideBitmapDrawableTranscoder;
 
     invoke-virtual {p4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p3}, Lcom/bumptech/glide/load/resource/transcode/GlideBitmapDrawableTranscoder;-><init>(Landroid/content/res/Resources;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
+    invoke-direct {p5, v1, p3}, Lcom/bumptech/glide/load/resource/transcode/GlideBitmapDrawableTranscoder;-><init>(Landroid/content/res/Resources;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
 
-    invoke-virtual {p1, p2, p5, v0}, Lcom/bumptech/glide/load/resource/transcode/TranscoderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;)V
+    invoke-virtual {v0, p1, p2, p5}, Lcom/bumptech/glide/load/resource/transcode/TranscoderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;)V
 
     .line 251
-    iget-object p1, p0, Lcom/bumptech/glide/Glide;->transcoderRegistry:Lcom/bumptech/glide/load/resource/transcode/TranscoderRegistry;
+    const-class p1, Lcom/bumptech/glide/load/resource/gifbitmap/GifBitmapWrapper;
 
-    const-class p2, Lcom/bumptech/glide/load/resource/gifbitmap/GifBitmapWrapper;
+    const-class p2, Lcom/bumptech/glide/load/resource/drawable/GlideDrawable;
 
-    const-class p5, Lcom/bumptech/glide/load/resource/drawable/GlideDrawable;
-
-    new-instance v0, Lcom/bumptech/glide/load/resource/transcode/GifBitmapWrapperDrawableTranscoder;
+    new-instance p5, Lcom/bumptech/glide/load/resource/transcode/GifBitmapWrapperDrawableTranscoder;
 
     new-instance v1, Lcom/bumptech/glide/load/resource/transcode/GlideBitmapDrawableTranscoder;
 
@@ -371,9 +355,9 @@
 
     invoke-direct {v1, p4, p3}, Lcom/bumptech/glide/load/resource/transcode/GlideBitmapDrawableTranscoder;-><init>(Landroid/content/res/Resources;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
 
-    invoke-direct {v0, v1}, Lcom/bumptech/glide/load/resource/transcode/GifBitmapWrapperDrawableTranscoder;-><init>(Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;)V
+    invoke-direct {p5, v1}, Lcom/bumptech/glide/load/resource/transcode/GifBitmapWrapperDrawableTranscoder;-><init>(Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;)V
 
-    invoke-virtual {p1, p2, p5, v0}, Lcom/bumptech/glide/load/resource/transcode/TranscoderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;)V
+    invoke-virtual {v0, p1, p2, p5}, Lcom/bumptech/glide/load/resource/transcode/TranscoderRegistry;->register(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;)V
 
     .line 255
     new-instance p1, Lcom/bumptech/glide/load/resource/bitmap/CenterCrop;

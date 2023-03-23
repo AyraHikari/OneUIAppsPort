@@ -24,9 +24,9 @@
 
 .field private static final mLoadLock:Ljava/lang/Object;
 
-.field private static mProtocol:Ljava/lang/String;
+.field private static mProtocol:Ljava/lang/String; = ""
 
-.field private static mRedirectHostUrl:Ljava/lang/String;
+.field private static mRedirectHostUrl:Ljava/lang/String; = ""
 
 
 # direct methods
@@ -40,14 +40,6 @@
 
     sput-object v0, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->mLoadLock:Ljava/lang/Object;
 
-    const-string v0, ""
-
-    .line 522
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->mProtocol:Ljava/lang/String;
-
-    .line 523
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->mRedirectHostUrl:Ljava/lang/String;
-
     const/4 v0, 0x3
 
     new-array v1, v0, [[Ljava/lang/String;
@@ -56,7 +48,7 @@
 
     const-string v3, "content"
 
-    .line 591
+    .line 595
     filled-new-array {v2, v3}, [Ljava/lang/String;
 
     move-result-object v2
@@ -93,7 +85,7 @@
 
     const-string v7, "head meta[name=description]"
 
-    .line 613
+    .line 617
     filled-new-array {v7, v3}, [Ljava/lang/String;
 
     move-result-object v7
@@ -142,7 +134,7 @@
 
     const-string v7, "head meta[property=og:image]"
 
-    .line 632
+    .line 636
     filled-new-array {v7, v3}, [Ljava/lang/String;
 
     move-result-object v7
@@ -177,7 +169,7 @@
 
     const-string v0, "img[alt=Cover art]"
 
-    const-string v4, "src"
+    const-string/jumbo v4, "src"
 
     filled-new-array {v0, v4}, [Ljava/lang/String;
 
@@ -289,6 +281,16 @@
 
 .method private static checkContentType(Ljava/net/URL;Ljava/lang/String;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "url",
+            "type"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -406,9 +408,17 @@
 .end method
 
 .method public static checkValidUrl(Ljava/lang/String;)Z
-    .locals 5
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "urlStr"
+        }
+    .end annotation
 
-    .line 265
+    .line 270
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -419,53 +429,17 @@
 
     return v1
 
-    .line 268
+    .line 272
     :cond_0
-    new-instance v0, Landroid/text/SpannableString;
-
-    invoke-direct {v0, p0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
-
-    .line 269
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x1e
-
-    const/4 v4, 0x1
-
-    if-le v2, v3, :cond_2
-
-    .line 270
-    sget-object v0, Landroid/util/Patterns;->WEB_URL:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->matches()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/HyperLinkManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/HyperLinkManager;
 
     move-result-object v0
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->URL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    invoke-virtual {v0, p0}, Lcom/samsung/android/galaxycontinuity/manager/HyperLinkManager;->checkValidURLElement(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v0, p0, v2}, Lcom/samsung/android/galaxycontinuity/manager/HyperLinkManager;->checkValidElement(Ljava/lang/String;Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;)Z
+    move-result-object v0
 
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    move v1, v4
-
-    :cond_1
-    return v1
-
-    .line 272
-    :cond_2
+    .line 273
     sget-object v2, Landroid/util/Patterns;->WEB_URL:Ljava/util/regex/Pattern;
 
     invoke-virtual {v2, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -476,24 +450,32 @@
 
     move-result p0
 
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_1
 
-    invoke-static {v0, v4}, Landroid/text/util/Linkify;->addLinks(Landroid/text/Spannable;I)Z
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result p0
 
-    if-eqz p0, :cond_3
+    if-nez p0, :cond_1
 
-    move v1, v4
+    const/4 v1, 0x1
 
-    :cond_3
+    :cond_1
     return v1
 .end method
 
 .method private static extractDescription(Lorg/jsoup/nodes/Document;)Ljava/lang/String;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "doc"
+        }
+    .end annotation
 
-    .line 623
+    .line 627
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->DESCRIPTION_SET:[[Ljava/lang/String;
 
     array-length v1, v0
@@ -509,7 +491,7 @@
 
     aget-object v3, v0, v4
 
-    .line 624
+    .line 628
     aget-object v5, v3, v2
 
     invoke-virtual {p0, v5}, Lorg/jsoup/nodes/Document;->select(Ljava/lang/String;)Lorg/jsoup/select/Elements;
@@ -528,7 +510,7 @@
 
     move-result-object v3
 
-    .line 625
+    .line 629
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -549,8 +531,16 @@
 
 .method private static extractImageUrl(Lorg/jsoup/nodes/Document;)Ljava/lang/String;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "doc"
+        }
+    .end annotation
 
-    .line 651
+    .line 655
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->IMAGE_URL_SET:[[Ljava/lang/String;
 
     array-length v1, v0
@@ -566,7 +556,7 @@
 
     aget-object v3, v0, v4
 
-    .line 652
+    .line 656
     aget-object v5, v3, v2
 
     invoke-virtual {p0, v5}, Lorg/jsoup/nodes/Document;->select(Ljava/lang/String;)Lorg/jsoup/select/Elements;
@@ -585,7 +575,7 @@
 
     move-result-object v3
 
-    .line 653
+    .line 657
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -599,7 +589,7 @@
 
     goto :goto_0
 
-    .line 658
+    .line 662
     :cond_1
     :goto_1
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -610,12 +600,12 @@
 
     const-string v0, "[src]"
 
-    .line 659
+    .line 663
     invoke-virtual {p0, v0}, Lorg/jsoup/nodes/Document;->select(Ljava/lang/String;)Lorg/jsoup/select/Elements;
 
     move-result-object p0
 
-    .line 660
+    .line 664
     invoke-virtual {p0}, Lorg/jsoup/select/Elements;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -635,7 +625,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 661
+    .line 665
     invoke-virtual {v0}, Lorg/jsoup/nodes/Element;->tagName()Ljava/lang/String;
 
     move-result-object v1
@@ -656,7 +646,7 @@
 
     const-string p0, "abs:src"
 
-    .line 662
+    .line 666
     invoke-virtual {v0, p0}, Lorg/jsoup/nodes/Element;->attr(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -671,13 +661,21 @@
 
 .method private static extractTitle(Lorg/jsoup/nodes/Document;)Ljava/lang/String;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "doc"
+        }
+    .end annotation
 
-    .line 598
+    .line 602
     invoke-virtual {p0}, Lorg/jsoup/nodes/Document;->title()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 599
+    .line 603
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v1
@@ -686,7 +684,7 @@
 
     const-string v0, "head title"
 
-    .line 600
+    .line 604
     invoke-virtual {p0, v0}, Lorg/jsoup/nodes/Document;->select(Ljava/lang/String;)Lorg/jsoup/select/Elements;
 
     move-result-object v0
@@ -699,14 +697,14 @@
 
     move-result-object v0
 
-    .line 601
+    .line 605
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 602
+    .line 606
     sget-object v1, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->TITLE_SET:[[Ljava/lang/String;
 
     array-length v2, v1
@@ -720,7 +718,7 @@
 
     aget-object v0, v1, v4
 
-    .line 603
+    .line 607
     aget-object v5, v0, v3
 
     invoke-virtual {p0, v5}, Lorg/jsoup/nodes/Document;->select(Ljava/lang/String;)Lorg/jsoup/select/Elements;
@@ -739,7 +737,7 @@
 
     move-result-object v0
 
-    .line 604
+    .line 608
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -760,6 +758,16 @@
 
 .method private static getDocument(Ljava/net/HttpURLConnection;Ljava/lang/String;)Lorg/jsoup/nodes/Document;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "hConn",
+            "urlStr"
+        }
+    .end annotation
 
     const-string v0, "\""
 
@@ -818,7 +826,7 @@
     move-result-object v2
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
-    .catchall {:try_start_0 .. :try_end_0} :catchall_7
+    .catchall {:try_start_0 .. :try_end_0} :catchall_5
 
     .line 449
     :try_start_1
@@ -835,7 +843,7 @@
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_7
+    .catchall {:try_start_2 .. :try_end_2} :catchall_5
 
     goto/16 :goto_4
 
@@ -847,34 +855,25 @@
     :catchall_0
     move-exception p1
 
+    if-eqz v2, :cond_1
+
     .line 448
     :try_start_3
-    throw p1
+    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    goto :goto_0
 
     :catchall_1
     move-exception v0
 
-    if-eqz v2, :cond_1
-
-    .line 450
     :try_start_4
-    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
-    goto :goto_0
-
-    :catchall_2
-    move-exception v2
-
-    :try_start_5
-    invoke-virtual {p1, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :cond_1
     :goto_0
-    throw v0
+    throw p1
 
     .line 454
     :cond_2
@@ -896,13 +895,13 @@
     invoke-direct {v7, v8, v9}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
     invoke-direct {v6, v7}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
-    .catchall {:try_start_5 .. :try_end_5} :catchall_7
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_5
 
     .line 456
     :goto_1
-    :try_start_6
+    :try_start_5
     invoke-virtual {v6}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     move-result-object v7
@@ -978,9 +977,9 @@
     invoke-virtual {v0}, Ljava/util/Scanner;->next()Ljava/lang/String;
 
     move-result-object v0
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
-    .catchall {:try_start_6 .. :try_end_6} :catchall_6
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
     goto :goto_2
 
@@ -989,16 +988,16 @@
 
     .line 469
     :goto_2
-    :try_start_7
+    :try_start_6
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 471
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->loadHttpURLConnectionForHTML(Ljava/net/URL;)Ljava/net/HttpURLConnection;
 
     move-result-object p0
-    :try_end_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_3
-    .catchall {:try_start_7 .. :try_end_7} :catchall_6
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
+    .catchall {:try_start_6 .. :try_end_6} :catchall_4
 
     if-nez p0, :cond_7
 
@@ -1009,10 +1008,10 @@
 
     .line 488
     :cond_6
-    :try_start_8
+    :try_start_7
     invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
-    :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_1
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_1
 
     goto :goto_3
 
@@ -1027,30 +1026,30 @@
 
     .line 476
     :cond_7
-    :try_start_9
+    :try_start_8
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v2
-    :try_end_9
-    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_3
-    .catchall {:try_start_9 .. :try_end_9} :catchall_6
+    :try_end_8
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_3
+    .catchall {:try_start_8 .. :try_end_8} :catchall_4
 
     .line 477
-    :try_start_a
+    :try_start_9
     invoke-static {v2, v0, p1}, Lorg/jsoup/Jsoup;->parse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;
 
     move-result-object v1
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_3
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
     if-eqz v2, :cond_8
 
     .line 478
-    :try_start_b
+    :try_start_a
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
-    :try_end_b
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_3
-    .catchall {:try_start_b .. :try_end_b} :catchall_6
+    :try_end_a
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_3
+    .catchall {:try_start_a .. :try_end_a} :catchall_4
 
     :cond_8
     move-object p1, v1
@@ -1068,10 +1067,10 @@
     if-eqz v1, :cond_d
 
     .line 488
-    :try_start_c
+    :try_start_b
     invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
-    :try_end_c
-    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_2
+    :try_end_b
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_2
 
     goto :goto_7
 
@@ -1083,42 +1082,33 @@
 
     goto :goto_7
 
-    :catchall_3
+    :catchall_2
     move-exception p1
-
-    .line 476
-    :try_start_d
-    throw p1
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_4
-
-    :catchall_4
-    move-exception v0
 
     if-eqz v2, :cond_b
 
-    .line 478
-    :try_start_e
+    .line 476
+    :try_start_c
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
-    :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_5
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_3
 
     goto :goto_5
 
-    :catchall_5
-    move-exception v2
+    :catchall_3
+    move-exception v0
 
-    :try_start_f
-    invoke-virtual {p1, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_start_d
+    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :cond_b
     :goto_5
-    throw v0
-    :try_end_f
-    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_3
-    .catchall {:try_start_f .. :try_end_f} :catchall_6
+    throw p1
+    :try_end_d
+    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_3
+    .catchall {:try_start_d .. :try_end_d} :catchall_4
 
-    :catchall_6
+    :catchall_4
     move-exception p1
 
     move-object v1, v6
@@ -1134,7 +1124,7 @@
 
     goto :goto_6
 
-    :catchall_7
+    :catchall_5
     move-exception p1
 
     goto :goto_8
@@ -1146,10 +1136,10 @@
 
     .line 481
     :goto_6
-    :try_start_10
+    :try_start_e
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-    :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_7
+    :try_end_e
+    .catchall {:try_start_e .. :try_end_e} :catchall_5
 
     if-eqz p0, :cond_c
 
@@ -1160,10 +1150,10 @@
     if-eqz v1, :cond_d
 
     .line 488
-    :try_start_11
+    :try_start_f
     invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
-    :try_end_11
-    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_2
+    :try_end_f
+    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_2
 
     :cond_d
     :goto_7
@@ -1179,10 +1169,10 @@
     if-eqz v1, :cond_f
 
     .line 488
-    :try_start_12
+    :try_start_10
     invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
-    :try_end_12
-    .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_5
+    :try_end_10
+    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_5
 
     goto :goto_9
 
@@ -1204,6 +1194,16 @@
 
 .method public static getFaviconUsingUrl(Ljava/net/URL;Lorg/jsoup/nodes/Document;)Ljava/lang/String;
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fullUrl",
+            "doc"
+        }
+    .end annotation
 
     move-object/from16 v0, p0
 
@@ -1229,277 +1229,329 @@
 
     .line 85
     :try_start_0
-    new-instance v4, Ljava/io/File;
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v6}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getFilesDir()Ljava/io/File;
+    invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getCacheDir()Ljava/io/File;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    const/4 v5, 0x0
 
-    move-result-object v6
+    const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v6, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v6, "favicon"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v6, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 86
-    invoke-virtual {v4}, Ljava/io/File;->isDirectory()Z
-
-    move-result v5
-
-    if-nez v5, :cond_0
-
-    invoke-virtual {v4}, Ljava/io/File;->mkdir()Z
-
-    move-result v5
-
-    if-nez v5, :cond_0
+    if-eqz v4, :cond_5
 
     .line 87
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/io/File;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    const-string v6, "Cannot create folder : "
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v4
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v8
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    sget-object v9, Ljava/io/File;->separator:Ljava/lang/String;
 
-    move-result-object v4
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    move-result-object v8
+
+    const-string v9, "favicon"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    sget-object v9, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-direct {v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 88
+    invoke-virtual {v7}, Ljava/io/File;->isDirectory()Z
+
+    move-result v8
+
+    if-nez v8, :cond_0
+
+    invoke-virtual {v7}, Ljava/io/File;->mkdir()Z
+
+    move-result v8
+
+    if-nez v8, :cond_0
 
     .line 89
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v9, "Cannot create folder : "
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v7}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v7}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 91
     :cond_0
-    new-instance v4, Ljava/io/File;
+    new-instance v7, Ljava/io/File;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v6}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getFilesDir()Ljava/io/File;
+    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    sget-object v8, Ljava/io/File;->separator:Ljava/lang/String;
 
-    move-result-object v6
+    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    sget-object v6, Ljava/io/File;->separator:Ljava/lang/String;
+    const-string v8, "favicon"
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v6, "favicon"
+    move-result-object v4
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v8, Ljava/io/File;->separator:Ljava/lang/String;
 
-    sget-object v6, Ljava/io/File;->separator:Ljava/lang/String;
+    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
     invoke-static/range {p0 .. p0}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getThumbFileName(Ljava/net/URL;)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v8
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v6, ".png"
+    move-result-object v4
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v8, ".png"
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 90
-    invoke-virtual {v4}, Ljava/io/File;->lastModified()J
+    move-result-object v4
 
-    move-result-wide v5
-
-    .line 91
-    new-instance v7, Ljava/util/Date;
-
-    invoke-direct {v7}, Ljava/util/Date;-><init>()V
+    invoke-direct {v7, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 92
-    invoke-virtual {v7}, Ljava/util/Date;->getTime()J
+    invoke-virtual {v7}, Ljava/io/File;->lastModified()J
 
-    move-result-wide v7
+    move-result-wide v8
 
     .line 93
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    new-instance v4, Ljava/util/Date;
 
-    move-result v9
+    invoke-direct {v4}, Ljava/util/Date;-><init>()V
 
-    const/4 v10, 0x0
+    .line 94
+    invoke-virtual {v4}, Ljava/util/Date;->getTime()J
 
-    const/4 v11, 0x0
+    move-result-wide v10
 
-    if-eqz v9, :cond_2
+    .line 95
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
 
-    invoke-virtual {v4}, Ljava/io/File;->length()J
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    invoke-virtual {v7}, Ljava/io/File;->length()J
 
     move-result-wide v12
 
     const-wide/16 v14, 0x0
 
-    cmp-long v9, v12, v14
+    cmp-long v4, v12, v14
 
-    if-eqz v9, :cond_2
+    if-eqz v4, :cond_2
 
-    sub-long/2addr v7, v5
+    sub-long/2addr v10, v8
 
-    const-wide v5, 0x9a7ec800L
+    const-wide v8, 0x9a7ec800L
 
-    cmp-long v5, v7, v5
+    cmp-long v4, v10, v8
 
-    if-ltz v5, :cond_1
+    if-ltz v4, :cond_1
 
     goto :goto_0
 
-    .line 106
+    .line 108
     :cond_1
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/io/File;->getPath()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-static {v5}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-static {v4}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
-    move-result-object v5
+    move-result-object v4
 
-    move-object v6, v5
-
-    move v5, v10
+    move v8, v5
 
     goto :goto_1
 
     :cond_2
     :goto_0
-    const/4 v5, 0x1
-
-    .line 95
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_3
-
-    .line 96
-    invoke-virtual {v4}, Ljava/io/File;->delete()Z
-
-    move-result v6
-
-    if-nez v6, :cond_3
+    const/4 v4, 0x1
 
     .line 97
-    new-instance v6, Ljava/lang/StringBuilder;
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v8
 
-    const-string v7, "Cannot delete file : "
+    if-eqz v8, :cond_3
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 98
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
 
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    move-result v8
 
-    move-result-object v7
+    if-nez v8, :cond_3
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 99
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v6
+    const-string v9, "Cannot delete file : "
 
-    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v7}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v8}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 99
+    .line 101
     :cond_3
     :try_start_1
-    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
+    invoke-virtual {v7}, Ljava/io/File;->createNewFile()Z
 
-    move-result v6
+    move-result v8
 
-    if-nez v6, :cond_4
+    if-nez v8, :cond_4
 
-    .line 100
-    new-instance v6, Ljava/lang/StringBuilder;
+    .line 102
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "Cannot create file : "
+    const-string v9, "Cannot create file : "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object v7
+    invoke-virtual {v7}, Ljava/io/File;->getPath()Ljava/lang/String;
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v8
 
-    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v8}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_8
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
     :cond_4
-    move-object v6, v11
+    move v8, v4
+
+    move-object v4, v6
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v0
+
+    .line 104
+    :try_start_2
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+
+    .line 105
+    monitor-exit v3
+
+    return-object v6
+
+    :cond_5
+    const-string v4, "CacheDirectory is null."
+
+    .line 111
+    invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    move v8, v5
+
+    move-object v4, v6
+
+    move-object v7, v4
 
     :goto_1
-    if-eqz v2, :cond_13
+    if-eqz v2, :cond_14
 
-    .line 109
-    :try_start_2
+    .line 114
     invoke-virtual {v2}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
-    move-result-object v7
+    move-result-object v9
 
-    if-eqz v7, :cond_13
+    if-eqz v9, :cond_14
 
     invoke-virtual {v2}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -1509,13 +1561,13 @@
 
     move-result v2
 
-    if-eqz v2, :cond_13
+    if-eqz v2, :cond_14
 
-    if-eqz v5, :cond_13
+    if-eqz v8, :cond_14
 
-    if-nez v1, :cond_5
+    if-nez v1, :cond_6
 
-    .line 112
+    .line 117
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1524,13 +1576,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual/range {p0 .. p0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1538,26 +1594,30 @@
 
     const-string v0, "LOAD_FAIL"
 
-    .line 113
+    .line 118
     monitor-exit v3
 
     return-object v0
 
-    .line 116
-    :cond_5
+    .line 121
+    :cond_6
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual/range {p0 .. p0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v6, "/favicon.ico"
+    move-result-object v2
 
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, "/favicon.ico"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1567,47 +1627,47 @@
 
     move-result-object v2
 
-    const/16 v6, 0x20
+    const/16 v4, 0x20
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
-    .line 119
+    .line 124
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
-    move-result v7
+    move-result v9
 
-    if-lt v7, v6, :cond_7
+    if-lt v9, v4, :cond_8
 
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getHeight()I
 
-    move-result v7
+    move-result v9
 
-    if-ge v7, v6, :cond_6
+    if-ge v9, v4, :cond_7
 
     goto :goto_2
 
-    :cond_6
-    move-object v7, v2
+    :cond_7
+    move-object v9, v2
 
     goto :goto_3
 
-    .line 120
-    :cond_7
+    .line 125
+    :cond_8
     :goto_2
     invoke-virtual/range {p0 .. p0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v9
 
-    invoke-static {v0, v7, v1}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getHighQualityFavicon(Ljava/net/URL;Ljava/lang/String;Lorg/jsoup/nodes/Document;)Landroid/graphics/Bitmap;
+    invoke-static {v0, v9, v1}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getHighQualityFavicon(Ljava/net/URL;Ljava/lang/String;Lorg/jsoup/nodes/Document;)Landroid/graphics/Bitmap;
 
-    move-result-object v7
+    move-result-object v9
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     :goto_3
-    if-nez v7, :cond_a
+    if-nez v9, :cond_b
 
-    .line 125
+    .line 130
     :try_start_3
     invoke-virtual/range {p0 .. p0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
@@ -1617,157 +1677,165 @@
 
     move-result-object v2
 
-    .line 127
-    new-instance v8, Ljava/lang/StringBuilder;
+    .line 132
+    new-instance v10, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v9, "/favicon.ico"
+    move-result-object v10
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v11, "/favicon.ico"
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v10
 
-    invoke-static {v8}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->requestBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v10
 
-    if-eqz v7, :cond_9
+    invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->requestBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
-    .line 130
-    invoke-virtual {v7}, Landroid/graphics/Bitmap;->getWidth()I
+    move-result-object v9
 
-    move-result v8
+    if-eqz v9, :cond_a
 
-    if-lt v8, v6, :cond_9
+    .line 135
+    invoke-virtual {v9}, Landroid/graphics/Bitmap;->getWidth()I
 
-    invoke-virtual {v7}, Landroid/graphics/Bitmap;->getHeight()I
+    move-result v10
 
-    move-result v8
+    if-lt v10, v4, :cond_a
 
-    if-ge v8, v6, :cond_8
+    invoke-virtual {v9}, Landroid/graphics/Bitmap;->getHeight()I
+
+    move-result v10
+
+    if-ge v10, v4, :cond_9
 
     goto :goto_4
 
-    :cond_8
-    move-object v2, v7
+    :cond_9
+    move-object v2, v9
 
     goto :goto_5
 
-    .line 131
-    :cond_9
+    .line 136
+    :cond_a
     :goto_4
     invoke-static {v0, v2, v1}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getHighQualityFavicon(Ljava/net/URL;Ljava/lang/String;Lorg/jsoup/nodes/Document;)Landroid/graphics/Bitmap;
 
     move-result-object v0
     :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    move-object v2, v7
+    move-object v2, v9
 
-    move-object v7, v0
+    move-object v9, v0
 
     goto :goto_5
 
-    :catch_0
+    :catch_1
     move-exception v0
 
-    move-object v6, v7
+    move-object v4, v9
 
     goto/16 :goto_c
 
-    :cond_a
+    :cond_b
     :goto_5
-    if-nez v7, :cond_b
+    if-nez v9, :cond_c
 
     goto :goto_6
 
-    :cond_b
-    move-object v2, v7
+    :cond_c
+    move-object v2, v9
 
     :goto_6
-    if-eqz v2, :cond_12
+    if-eqz v2, :cond_13
 
-    .line 140
+    .line 145
     :try_start_4
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
 
     move-result v0
 
-    if-nez v0, :cond_c
+    if-nez v0, :cond_d
 
-    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
+    invoke-virtual {v7}, Ljava/io/File;->createNewFile()Z
 
     move-result v0
 
-    if-nez v0, :cond_c
+    if-nez v0, :cond_d
 
     const-string v0, "Cannot create file : "
 
-    .line 141
+    .line 146
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 142
-    :cond_c
+    .line 147
+    :cond_d
     new-instance v1, Ljava/io/FileOutputStream;
 
-    invoke-direct {v1, v4}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v1, v7}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_5
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 143
+    .line 148
     :try_start_5
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
 
-    if-le v0, v6, :cond_d
+    if-le v0, v4, :cond_e
 
-    .line 144
-    invoke-static {v2, v6, v6}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->resizeBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
+    .line 149
+    invoke-static {v2, v4, v4}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->resizeBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    :cond_d
-    if-eqz v2, :cond_10
+    :cond_e
+    if-eqz v2, :cond_11
 
-    .line 148
-    invoke-static {v2, v10}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->bitmapTobyteArray(Landroid/graphics/Bitmap;Z)[B
+    .line 153
+    invoke-static {v2, v5}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->bitmapTobyteArray(Landroid/graphics/Bitmap;Z)[B
 
     move-result-object v0
 
-    .line 149
-    array-length v6, v0
+    .line 154
+    array-length v4, v0
 
-    if-nez v6, :cond_f
+    if-nez v4, :cond_10
 
-    .line 150
-    invoke-virtual {v4}, Ljava/io/File;->delete()Z
+    .line 155
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
 
     move-result v0
 
-    if-nez v0, :cond_e
+    if-nez v0, :cond_f
 
-    .line 151
+    .line 156
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "Cannot delete file : "
+    const-string v4, "Cannot delete file : "
 
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v6
+    invoke-virtual {v7}, Ljava/io/File;->getPath()Ljava/lang/String;
 
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1775,81 +1843,81 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    :cond_e
-    const-string v6, "LOAD_FAIL"
+    :cond_f
+    const-string v4, "LOAD_FAIL"
     :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 163
+    .line 168
     :try_start_6
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_5
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     goto :goto_7
-
-    :catch_1
-    move-exception v0
-
-    move-object v1, v0
-
-    .line 166
-    :try_start_7
-    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
-    :try_end_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_5
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
-
-    .line 167
-    :goto_7
-    :try_start_8
-    monitor-exit v3
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_2
-
-    return-object v6
-
-    .line 155
-    :cond_f
-    :try_start_9
-    invoke-virtual {v1, v0}, Ljava/io/FileOutputStream;->write([B)V
-
-    .line 156
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
-    :try_end_9
-    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_3
-    .catchall {:try_start_9 .. :try_end_9} :catchall_1
-
-    .line 163
-    :cond_10
-    :try_start_a
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_a
-    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_2
-    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_5
-    .catchall {:try_start_a .. :try_end_a} :catchall_2
-
-    goto :goto_d
 
     :catch_2
     move-exception v0
 
     move-object v1, v0
 
-    .line 166
-    :goto_8
-    :try_start_b
+    .line 171
+    :try_start_7
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
-    :try_end_b
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_5
-    .catchall {:try_start_b .. :try_end_b} :catchall_2
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_6
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+
+    .line 172
+    :goto_7
+    :try_start_8
+    monitor-exit v3
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
+
+    return-object v4
+
+    .line 160
+    :cond_10
+    :try_start_9
+    invoke-virtual {v1, v0}, Ljava/io/FileOutputStream;->write([B)V
+
+    .line 161
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
+    :try_end_9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_4
+    .catchall {:try_start_9 .. :try_end_9} :catchall_1
+
+    .line 168
+    :cond_11
+    :try_start_a
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+    :try_end_a
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_6
+    .catchall {:try_start_a .. :try_end_a} :catchall_2
 
     goto :goto_d
 
     :catch_3
+    move-exception v0
+
+    move-object v1, v0
+
+    .line 171
+    :goto_8
+    :try_start_b
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
+    :try_end_b
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_6
+    .catchall {:try_start_b .. :try_end_b} :catchall_2
+
+    goto :goto_d
+
+    :catch_4
     move-exception v0
 
     goto :goto_9
@@ -1857,44 +1925,44 @@
     :catchall_0
     move-exception v0
 
-    move-object v6, v0
+    move-object v4, v0
 
-    move-object v1, v11
+    move-object v1, v6
 
     goto :goto_a
 
-    :catch_4
+    :catch_5
     move-exception v0
 
-    move-object v1, v11
+    move-object v1, v6
 
-    .line 159
+    .line 164
     :goto_9
     :try_start_c
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_c
     .catchall {:try_start_c .. :try_end_c} :catchall_1
 
-    if-eqz v1, :cond_12
+    if-eqz v1, :cond_13
 
-    .line 163
+    .line 168
     :try_start_d
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_d
-    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_6
-    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_5
+    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_6
     .catchall {:try_start_d .. :try_end_d} :catchall_2
 
     goto :goto_d
 
-    :catch_5
+    :catch_6
     move-exception v0
 
-    move-object v6, v2
+    move-object v4, v2
 
     goto :goto_c
 
-    :catch_6
+    :catch_7
     move-exception v0
 
     move-object v1, v0
@@ -1904,69 +1972,69 @@
     :catchall_1
     move-exception v0
 
-    move-object v6, v0
+    move-object v4, v0
 
     :goto_a
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_12
 
     :try_start_e
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_e
-    .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_7
-    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_5
+    .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_8
+    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_6
     .catchall {:try_start_e .. :try_end_e} :catchall_2
 
     goto :goto_b
 
-    :catch_7
+    :catch_8
     move-exception v0
 
     move-object v1, v0
 
-    .line 166
+    .line 171
     :try_start_f
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 168
-    :cond_11
+    .line 173
+    :cond_12
     :goto_b
-    throw v6
+    throw v4
     :try_end_f
-    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_6
     .catchall {:try_start_f .. :try_end_f} :catchall_2
 
-    .line 171
+    .line 176
     :goto_c
     :try_start_10
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_e
 
-    :cond_12
-    :goto_d
-    move-object v6, v2
-
     :cond_13
+    :goto_d
+    move-object v4, v2
+
+    :cond_14
     :goto_e
-    if-eqz v5, :cond_15
+    if-eqz v8, :cond_15
 
-    if-nez v6, :cond_15
+    if-nez v4, :cond_15
 
-    .line 176
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    .line 181
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_15
 
-    .line 177
-    invoke-virtual {v4}, Ljava/io/File;->delete()Z
+    .line 182
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
 
     move-result v0
 
-    if-nez v0, :cond_14
+    if-nez v0, :cond_16
 
-    .line 178
+    .line 183
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1975,11 +2043,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v7}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1987,18 +2059,21 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    :cond_14
-    move-object v4, v11
+    goto :goto_f
 
     :cond_15
-    if-eqz v4, :cond_16
+    move-object v6, v7
 
-    .line 182
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    :cond_16
+    :goto_f
+    if-eqz v6, :cond_17
+
+    .line 187
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
     move-result v0
 
-    if-eqz v0, :cond_16
+    if-eqz v0, :cond_17
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2008,71 +2083,64 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v6}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
 
-    goto :goto_f
-
-    :cond_16
-    const-string v0, "Can not load favicon"
-
-    :goto_f
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    .line 183
-    monitor-exit v3
-    :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_2
-
-    if-nez v4, :cond_17
-
-    const-string v0, "LOAD_FAIL"
-
-    return-object v0
-
-    .line 189
-    :cond_17
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_18
-
-    invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_10
 
-    :cond_18
-    const-string v0, "LOAD_FAIL"
+    :cond_17
+    const-string v0, "Can not load favicon"
 
     :goto_10
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 188
+    monitor-exit v3
+    :try_end_10
+    .catchall {:try_start_10 .. :try_end_10} :catchall_2
+
+    if-nez v6, :cond_18
+
+    const-string v0, "LOAD_FAIL"
+
     return-object v0
 
-    :catch_8
-    move-exception v0
+    .line 194
+    :cond_18
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
-    .line 102
-    :try_start_11
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    move-result v0
 
-    .line 103
-    monitor-exit v3
+    if-eqz v0, :cond_19
 
-    return-object v11
+    invoke-virtual {v6}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_11
+
+    :cond_19
+    const-string v0, "LOAD_FAIL"
+
+    :goto_11
+    return-object v0
 
     :catchall_2
     move-exception v0
 
-    .line 183
+    .line 188
+    :try_start_11
     monitor-exit v3
     :try_end_11
     .catchall {:try_start_11 .. :try_end_11} :catchall_2
@@ -2082,10 +2150,18 @@
 
 .method public static getHTMLFromUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "url"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 702
+    .line 706
     :try_start_0
     invoke-static {p0}, Landroid/webkit/URLUtil;->isNetworkUrl(Ljava/lang/String;)Z
 
@@ -2093,7 +2169,7 @@
 
     if-nez v1, :cond_0
 
-    .line 703
+    .line 707
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2102,19 +2178,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    .line 705
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 709
     :cond_0
     new-instance v1, Ljava/net/URL;
 
     invoke-direct {v1, p0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 707
+    .line 711
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->loadHttpURLConnectionForHTML(Ljava/net/URL;)Ljava/net/HttpURLConnection;
 
     move-result-object v1
@@ -2124,7 +2204,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 709
+    .line 713
     :try_start_1
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
@@ -2136,7 +2216,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 710
+    .line 714
     new-instance v2, Ljava/net/URL;
 
     const-string v3, "Location"
@@ -2147,15 +2227,15 @@
 
     invoke-direct {v2, v3}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 711
+    .line 715
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 712
+    .line 716
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->loadHttpURLConnectionForHTML(Ljava/net/URL;)Ljava/net/HttpURLConnection;
 
     move-result-object v1
 
-    .line 715
+    .line 719
     :cond_1
     invoke-static {v1, p0}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getDocument(Ljava/net/HttpURLConnection;Ljava/lang/String;)Lorg/jsoup/nodes/Document;
 
@@ -2163,7 +2243,7 @@
 
     if-eqz p0, :cond_3
 
-    .line 717
+    .line 721
     invoke-virtual {p0}, Lorg/jsoup/nodes/Document;->outerHtml()Ljava/lang/String;
 
     move-result-object p0
@@ -2173,7 +2253,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 722
+    .line 726
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_2
@@ -2199,7 +2279,7 @@
 
     move-object v1, v0
 
-    .line 719
+    .line 723
     :goto_0
     :try_start_2
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
@@ -2208,7 +2288,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 722
+    .line 726
     :goto_1
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
@@ -2225,13 +2305,25 @@
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 723
+    .line 727
     :cond_5
     throw p0
 .end method
 
 .method private static getHighQualityFavicon(Ljava/net/URL;Ljava/lang/String;Lorg/jsoup/nodes/Document;)Landroid/graphics/Bitmap;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fullUrl",
+            "url",
+            "doc"
+        }
+    .end annotation
 
     const-string v0, "/"
 
@@ -2253,9 +2345,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, "://"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {p0}, Ljava/net/URL;->getHost()Ljava/lang/String;
 
@@ -2263,7 +2359,9 @@
 
     invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -2313,7 +2411,7 @@
 
     move-result-object v6
 
-    const-string v7, "shortcut icon"
+    const-string/jumbo v7, "shortcut icon"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -2425,7 +2523,9 @@
 
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v10
+
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v9, v9, 0x1
 
@@ -2450,7 +2550,11 @@
 
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2458,13 +2562,17 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    goto :goto_2
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    goto/16 :goto_2
 
     :cond_4
     const-string v7, "./"
@@ -2496,7 +2604,9 @@
 
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v10
+
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v9, v9, 0x1
 
@@ -2519,7 +2629,11 @@
 
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2527,9 +2641,13 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2552,13 +2670,19 @@
 
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     const-string v7, ":"
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2572,9 +2696,13 @@
 
     invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
     :try_end_0
@@ -2625,7 +2753,11 @@
 
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2660,9 +2792,13 @@
 
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2699,6 +2835,14 @@
 
 .method public static getHtmlDocument(Ljava/lang/String;)Lorg/jsoup/nodes/Document;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "urlStr"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -2719,9 +2863,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -2791,9 +2939,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, "://"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v1}, Ljava/net/URL;->getHost()Ljava/lang/String;
 
@@ -2801,7 +2953,9 @@
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2870,6 +3024,16 @@
 
 .method public static getInfoOfWebsite(Ljava/net/URL;Lorg/jsoup/nodes/Document;)Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fullUrl",
+            "doc"
+        }
+    .end annotation
 
     .line 526
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2880,15 +3044,21 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ")"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2907,135 +3077,154 @@
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->urlThumbPath:Ljava/lang/String;
 
     .line 536
-    new-instance v1, Ljava/io/File;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getCacheDir()Ljava/io/File;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_9
+
+    .line 538
+    new-instance v2, Ljava/io/File;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v3
-
-    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getFilesDir()Ljava/io/File;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v3, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v3, "favicon"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget-object v4, Ljava/io/File;->separator:Ljava/lang/String;
 
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, "favicon"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    sget-object v5, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 539
+    invoke-virtual {v2}, Ljava/io/File;->isDirectory()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    invoke-virtual {v2}, Ljava/io/File;->mkdir()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    .line 540
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "cannot create folder : "
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 537
-    invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    invoke-virtual {v1}, Ljava/io/File;->mkdir()Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    .line 538
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "cannot create folder : "
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    .line 540
+    .line 542
     :cond_0
-    new-instance v1, Ljava/io/File;
+    new-instance v2, Ljava/io/File;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v1
 
-    invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getFilesDir()Ljava/io/File;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v4, Ljava/io/File;->separator:Ljava/lang/String;
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
     sget-object v3, Ljava/io/File;->separator:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    sget-object v3, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getThumbFileName(Ljava/net/URL;)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, "_webThumb.png"
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    const-string v1, "_webThumb.png"
 
-    .line 542
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v2, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 543
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    .line 543
-    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
+    .line 544
+    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p0
 
@@ -3043,87 +3232,91 @@
 
     goto/16 :goto_3
 
-    .line 547
+    .line 548
     :cond_1
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->extractImageUrl(Lorg/jsoup/nodes/Document;)Ljava/lang/String;
 
     move-result-object p0
 
-    if-eqz p0, :cond_9
+    if-eqz p0, :cond_a
 
-    const-string v2, "//"
+    const-string v1, "//"
 
-    .line 549
-    invoke-virtual {p0, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    .line 550
+    invoke-virtual {p0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
-    .line 551
-    new-instance v2, Ljava/lang/StringBuilder;
+    .line 552
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v3, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->mProtocol:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v3, ":"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v2
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 552
-    invoke-virtual {v2, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v2
+    .line 553
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_0
 
     :cond_2
-    const-string v2, "http"
+    const-string v1, "http"
 
-    .line 553
-    invoke-virtual {p0, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    .line 554
+    invoke-virtual {p0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_5
+    if-nez v1, :cond_5
 
-    .line 555
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->mRedirectHostUrl:Ljava/lang/String;
+    .line 556
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->mRedirectHostUrl:Ljava/lang/String;
 
     const-string v3, "/"
 
-    .line 556
+    .line 557
     invoke-virtual {p0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
-    .line 557
-    invoke-virtual {v2, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    .line 558
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
     goto :goto_0
 
     :cond_3
     const-string v4, "blogger.com"
 
-    .line 559
-    invoke-virtual {v2, v4}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    .line 560
+    invoke-virtual {v1, v4}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 560
+    .line 561
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -3132,19 +3325,23 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
     goto :goto_0
 
-    .line 563
+    .line 564
     :cond_4
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -3152,24 +3349,28 @@
 
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_0
 
     :cond_5
-    const-string v2, ""
+    const-string v1, ""
 
-    .line 568
+    .line 569
     :goto_0
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
@@ -3180,23 +3381,25 @@
     goto :goto_1
 
     :cond_6
-    move-object v3, v2
+    move-object v3, v1
 
     :goto_1
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->requestBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v3
 
-    .line 569
+    .line 570
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "url thumb path : "
+    const-string/jumbo v5, "url thumb path : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    move-result-object v4
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
@@ -3205,32 +3408,34 @@
     goto :goto_2
 
     :cond_7
-    move-object p0, v2
+    move-object p0, v1
 
     :goto_2
     invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_a
 
-    .line 571
+    .line 572
     invoke-virtual {v3}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result p0
 
-    .line 572
+    .line 573
     invoke-virtual {v3}, Landroid/graphics/Bitmap;->getWidth()I
 
-    move-result v2
+    move-result v1
 
     const/high16 v4, 0x434b0000    # 203.0f
 
-    .line 573
+    .line 574
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/Utils;->dpToPixel(F)I
 
     move-result v5
@@ -3241,40 +3446,44 @@
 
     mul-int/2addr p0, v4
 
-    div-int/2addr p0, v2
+    div-int/2addr p0, v1
 
     invoke-static {v3, v5, p0}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->resizeBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
     move-result-object p0
 
-    .line 574
-    invoke-static {p0, v1}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->saveBitmapToFile(Landroid/graphics/Bitmap;Ljava/io/File;)Z
+    .line 575
+    invoke-static {p0, v2}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->saveBitmapToFile(Landroid/graphics/Bitmap;Ljava/io/File;)Z
 
     move-result p0
 
     if-nez p0, :cond_8
 
-    .line 575
-    invoke-virtual {v1}, Ljava/io/File;->delete()Z
+    .line 576
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
     move-result p0
 
-    if-nez p0, :cond_9
+    if-nez p0, :cond_a
 
-    .line 576
+    .line 577
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Cannot delete webThumb : "
+    const-string v1, "Cannot delete webThumb : "
 
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3284,16 +3493,24 @@
 
     goto :goto_3
 
-    .line 578
+    .line 579
     :cond_8
-    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p0
 
     iput-object p0, v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->urlThumbPath:Ljava/lang/String;
 
-    .line 584
+    goto :goto_3
+
     :cond_9
+    const-string p0, "CacheDirectory is null."
+
+    .line 585
+    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 588
+    :cond_a
     :goto_3
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->extractTitle(Lorg/jsoup/nodes/Document;)Ljava/lang/String;
 
@@ -3301,14 +3518,14 @@
 
     iput-object p0, v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->title:Ljava/lang/String;
 
-    .line 585
+    .line 589
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->extractDescription(Lorg/jsoup/nodes/Document;)Ljava/lang/String;
 
     move-result-object p0
 
     iput-object p0, v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->desc:Ljava/lang/String;
 
-    .line 587
+    .line 591
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->print()V
 
     return-object v0
@@ -3319,7 +3536,7 @@
 
     const/4 v0, 0x0
 
-    .line 751
+    .line 755
     :try_start_0
     invoke-static {}, Ljava/net/NetworkInterface;->getNetworkInterfaces()Ljava/util/Enumeration;
 
@@ -3332,14 +3549,14 @@
 
     if-eqz v2, :cond_3
 
-    .line 753
+    .line 757
     invoke-interface {v1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/net/NetworkInterface;
 
-    .line 755
+    .line 759
     invoke-virtual {v2}, Ljava/net/NetworkInterface;->getInetAddresses()Ljava/util/Enumeration;
 
     move-result-object v3
@@ -3352,14 +3569,14 @@
 
     if-eqz v4, :cond_0
 
-    .line 756
+    .line 760
     invoke-interface {v3}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/net/InetAddress;
 
-    .line 757
+    .line 761
     invoke-virtual {v4}, Ljava/net/InetAddress;->isLoopbackAddress()Z
 
     move-result v5
@@ -3378,12 +3595,12 @@
 
     if-nez v5, :cond_1
 
-    .line 758
+    .line 762
     invoke-virtual {v2}, Ljava/net/NetworkInterface;->getDisplayName()Ljava/lang/String;
 
     move-result-object v5
 
-    const-string v6, "wlan0"
+    const-string/jumbo v6, "wlan0"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -3391,7 +3608,7 @@
 
     if-nez v5, :cond_2
 
-    .line 759
+    .line 763
     invoke-virtual {v2}, Ljava/net/NetworkInterface;->getDisplayName()Ljava/lang/String;
 
     move-result-object v5
@@ -3404,7 +3621,7 @@
 
     if-nez v5, :cond_2
 
-    .line 760
+    .line 764
     invoke-virtual {v2}, Ljava/net/NetworkInterface;->getDisplayName()Ljava/lang/String;
 
     move-result-object v5
@@ -3417,7 +3634,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 761
+    .line 765
     :cond_2
     instance-of v5, v4, Ljava/net/Inet4Address;
     :try_end_0
@@ -3432,7 +3649,7 @@
     :catch_0
     move-exception v1
 
-    .line 769
+    .line 773
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_3
@@ -3441,6 +3658,14 @@
 
 .method public static getThumbFileName(Ljava/net/URL;)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "url"
+        }
+    .end annotation
 
     const-string v0, ""
 
@@ -3478,9 +3703,13 @@
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3508,9 +3737,13 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3534,9 +3767,13 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3546,8 +3783,16 @@
 
 .method private static getTopDomain(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "url"
+        }
+    .end annotation
 
-    .line 195
+    .line 200
     :try_start_0
     new-instance v0, Ljava/net/URL;
 
@@ -3560,7 +3805,7 @@
     :catch_0
     move-exception v0
 
-    .line 197
+    .line 202
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -3568,12 +3813,12 @@
     :goto_0
     const-string v1, "//"
 
-    .line 200
+    .line 205
     invoke-virtual {p0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
-    .line 201
+    .line 206
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x1
@@ -3582,17 +3827,17 @@
 
     const-string v1, "/"
 
-    .line 202
+    .line 207
     invoke-virtual {p0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
     const/4 v1, 0x0
 
-    .line 203
+    .line 208
     aget-object p0, p0, v1
 
-    .line 205
+    .line 210
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3611,13 +3856,19 @@
     :goto_1
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, "://"
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "://"
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -3629,7 +3880,7 @@
 
     const/4 v0, 0x0
 
-    .line 780
+    .line 784
     :try_start_0
     invoke-static {}, Ljava/net/NetworkInterface;->getNetworkInterfaces()Ljava/util/Enumeration;
 
@@ -3642,14 +3893,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 782
+    .line 786
     invoke-interface {v1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/net/NetworkInterface;
 
-    .line 784
+    .line 788
     invoke-virtual {v2}, Ljava/net/NetworkInterface;->getInetAddresses()Ljava/util/Enumeration;
 
     move-result-object v3
@@ -3662,14 +3913,14 @@
 
     if-eqz v4, :cond_0
 
-    .line 785
+    .line 789
     invoke-interface {v3}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/net/InetAddress;
 
-    .line 786
+    .line 790
     invoke-virtual {v4}, Ljava/net/InetAddress;->isLoopbackAddress()Z
 
     move-result v5
@@ -3688,7 +3939,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 787
+    .line 791
     instance-of v5, v4, Ljava/net/Inet4Address;
     :try_end_0
     .catch Ljava/net/SocketException; {:try_start_0 .. :try_end_0} :catch_0
@@ -3702,7 +3953,7 @@
     :catch_0
     move-exception v1
 
-    .line 795
+    .line 799
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_2
@@ -3712,7 +3963,7 @@
 .method public static getWiFiIPAddress()Ljava/lang/String;
     .locals 3
 
-    .line 732
+    .line 736
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -3722,7 +3973,7 @@
 
     move-result-object v0
 
-    const-string v1, "wifi"
+    const-string/jumbo v1, "wifi"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -3736,12 +3987,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 734
+    .line 738
     invoke-virtual {v0}, Landroid/net/wifi/WifiInfo;->getIpAddress()I
 
     move-result v0
 
-    .line 735
+    .line 739
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
     move-result-object v1
@@ -3754,7 +4005,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 736
+    .line 740
     invoke-static {v0}, Ljava/lang/Integer;->reverseBytes(I)I
 
     move-result v0
@@ -3762,7 +4013,7 @@
     :cond_0
     int-to-long v0, v0
 
-    .line 738
+    .line 742
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -3786,7 +4037,7 @@
     :catch_0
     move-exception v0
 
-    .line 741
+    .line 745
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_1
@@ -3798,7 +4049,7 @@
 .method public static isWifiP2pConnected()Z
     .locals 8
 
-    .line 685
+    .line 689
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -3811,7 +4062,7 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 687
+    .line 691
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getAllNetworks()[Landroid/net/Network;
 
     move-result-object v1
@@ -3827,12 +4078,12 @@
 
     aget-object v5, v1, v4
 
-    .line 688
+    .line 692
     invoke-virtual {v0, v5}, Landroid/net/ConnectivityManager;->getNetworkInfo(Landroid/net/Network;)Landroid/net/NetworkInfo;
 
     move-result-object v5
 
-    .line 689
+    .line 693
     invoke-virtual {v5}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v6
@@ -3841,7 +4092,7 @@
 
     if-ne v6, v7, :cond_0
 
-    .line 690
+    .line 694
     invoke-virtual {v5}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v5
@@ -3850,7 +4101,7 @@
 
     const-string v0, "Already wi-di connected"
 
-    .line 691
+    .line 695
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const/4 v0, 0x1
@@ -3868,6 +4119,14 @@
 
 .method private static loadHttpURLConnection(Ljava/net/URL;)Ljava/net/HttpURLConnection;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "url"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -3952,8 +4211,16 @@
 
 .method private static loadHttpURLConnectionForHTML(Ljava/net/URL;)Ljava/net/HttpURLConnection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "url"
+        }
+    .end annotation
 
-    const-string v0, "text/html"
+    const-string/jumbo v0, "text/html"
 
     .line 379
     invoke-static {p0, v0}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->checkContentType(Ljava/net/URL;Ljava/lang/String;)Z
@@ -3977,6 +4244,14 @@
 
 .method private static mustRedirect(I)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "code"
+        }
+    .end annotation
 
     const/16 v0, 0x12d
 
@@ -4006,13 +4281,19 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p0, ", trying secure redirect"
+    move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, ", trying secure redirect"
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -4025,29 +4306,37 @@
 
 .method private static replaceSpaces(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "url"
+        }
+    .end annotation
 
-    .line 671
+    .line 675
     invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 672
+    .line 676
     invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p0
 
     const-string v0, " "
 
-    .line 673
+    .line 677
     invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 674
+    .line 678
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -4058,7 +4347,7 @@
 
     const-string v0, "%20"
 
-    .line 675
+    .line 679
     invoke-virtual {p0, v0}, Ljava/util/regex/Matcher;->replaceAll(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -4069,18 +4358,26 @@
 
 .method public static requestBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "urlStr"
+        }
+    .end annotation
 
-    const-string v0, "svg"
+    const-string/jumbo v0, "svg"
 
     const/4 v1, 0x0
 
-    .line 214
+    .line 219
     :try_start_0
     new-instance v2, Ljava/net/URL;
 
     invoke-direct {v2, p0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 215
+    .line 220
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->loadHttpURLConnection(Ljava/net/URL;)Ljava/net/HttpURLConnection;
 
     move-result-object v2
@@ -4092,7 +4389,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 258
+    .line 263
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_0
@@ -4101,14 +4398,14 @@
     :cond_1
     const/4 v3, 0x1
 
-    .line 219
+    .line 224
     :try_start_1
     invoke-virtual {v2, v3}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
-    .line 220
+    .line 225
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 221
+    .line 226
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v4
@@ -4116,7 +4413,7 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_6
     .catchall {:try_start_1 .. :try_end_1} :catchall_3
 
-    .line 222
+    .line 227
     :try_start_2
     invoke-virtual {p0, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -4124,14 +4421,14 @@
 
     if-eqz v5, :cond_2
 
-    .line 223
+    .line 228
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->bitmapFromSVG(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
     goto :goto_0
 
-    .line 225
+    .line 230
     :cond_2
     invoke-static {v4}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
 
@@ -4143,20 +4440,20 @@
     :goto_0
     if-nez v5, :cond_7
 
-    .line 228
+    .line 233
     :try_start_3
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v6
 
-    .line 229
+    .line 234
     invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->mustRedirect(I)Z
 
     move-result v6
 
     if-eqz v6, :cond_7
 
-    .line 230
+    .line 235
     new-instance v6, Ljava/net/URL;
 
     const-string v7, "Location"
@@ -4167,13 +4464,13 @@
 
     invoke-direct {v6, v7}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 231
+    .line 236
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 233
+    .line 238
     :try_start_4
     invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->loadHttpURLConnection(Ljava/net/URL;)Ljava/net/HttpURLConnection;
 
@@ -4186,7 +4483,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 252
+    .line 257
     :try_start_5
     invoke-virtual {v4}, Ljava/io/InputStream;->close()V
     :try_end_5
@@ -4197,28 +4494,28 @@
     :catch_0
     move-exception p0
 
-    .line 254
+    .line 259
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_3
     :goto_1
     if-eqz v2, :cond_4
 
-    .line 258
+    .line 263
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_4
     return-object v1
 
-    .line 237
+    .line 242
     :cond_5
     :try_start_6
     invoke-virtual {v2, v3}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
-    .line 238
+    .line 243
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 239
+    .line 244
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v1
@@ -4226,7 +4523,7 @@
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 240
+    .line 245
     :try_start_7
     invoke-virtual {p0, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -4234,14 +4531,14 @@
 
     if-eqz p0, :cond_6
 
-    .line 241
+    .line 246
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->bitmapFromSVG(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
     goto :goto_2
 
-    .line 243
+    .line 248
     :cond_6
     invoke-static {v1}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
 
@@ -4283,7 +4580,7 @@
     :goto_3
     if-eqz v4, :cond_8
 
-    .line 252
+    .line 257
     :try_start_8
     invoke-virtual {v4}, Ljava/io/InputStream;->close()V
     :try_end_8
@@ -4294,14 +4591,14 @@
     :catch_4
     move-exception p0
 
-    .line 254
+    .line 259
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_8
     :goto_4
     if-eqz v2, :cond_a
 
-    .line 258
+    .line 263
     :goto_5
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->disconnect()V
 
@@ -4346,7 +4643,7 @@
 
     move-object v5, v2
 
-    .line 248
+    .line 253
     :goto_8
     :try_start_9
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
@@ -4355,7 +4652,7 @@
 
     if-eqz v1, :cond_9
 
-    .line 252
+    .line 257
     :try_start_a
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_a
@@ -4366,7 +4663,7 @@
     :catch_8
     move-exception p0
 
-    .line 254
+    .line 259
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_9
@@ -4385,7 +4682,7 @@
     :goto_b
     if-eqz v1, :cond_b
 
-    .line 252
+    .line 257
     :try_start_b
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_b
@@ -4396,17 +4693,17 @@
     :catch_9
     move-exception v0
 
-    .line 254
+    .line 259
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_b
     :goto_c
     if-eqz v2, :cond_c
 
-    .line 258
+    .line 263
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 260
+    .line 265
     :cond_c
     throw p0
 .end method

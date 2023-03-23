@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_main_layout" android:layout_width="@dimen/widget_news_popup_dialog_image_width" android:layout_height="@dimen/widget_news_popup_dialog_image_height" android:layout_marginVertical="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:background="@drawable/widget_bg_news" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <include android:id="@id/news_dummy_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/news_layout" />
+            <include layout="@layout/widget_news_arrow_previous_land" />
+            <include layout="@layout/widget_news_arrow_next_land" />
+        </FrameLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" android:paddingEnd="@dimen/news_widget_2x2_weather_paddingEnd_land">
+            <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/temperature_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/widget_current_weather_icon" android:background="@drawable/ic_sunny_whitebg" android:layout_width="@dimen/news_widget_2x2_weather_icon_size_land" android:layout_height="@dimen/news_widget_2x2_weather_icon_size_land" android:layout_marginEnd="@dimen/widget_2x1_weather_icon_marginEnd" />
+                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Temperature" android:textSize="@dimen/news_widget_2x2_temperature_text_size_land" android:textColor="#fffafafa" android:id="@id/widget_current_temp_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23°" android:includeFontPadding="false" />
+            </LinearLayout>
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.CityName" android:textSize="@dimen/news_widget_2x2_city_name_text_size_land" android:textColor="#fffafafa" android:ellipsize="end" android:gravity="end|center" android:id="@id/widget_current_city_name_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_2x1_update_text_area_marginTop_land" android:text="@string/widget_location" android:maxLines="1" android:includeFontPadding="false" />
+            <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/widget_update_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_2x1_update_text_area_marginTop_land">
+                <TextClock android:textSize="@dimen/news_widget_2x2_updated_text_size_land" android:textColor="#fffafafa" android:ellipsize="end" android:layout_gravity="end" android:id="@id/widget_update_text_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="12:45 AM" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="@dimen/widget_2x1_updated_text_marginEnd" style="@style/WeatherWidget.TextAppearance.LastUpdate" />
+                <ImageView android:id="@id/widget_refresh_icon" android:layout_width="@dimen/news_widget_2x2_refresh_progress_size_land" android:layout_height="@dimen/news_widget_2x2_refresh_progress_size_land" android:src="@drawable/weather_widget_4x4_ic_updated_mtrl_no_theme" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

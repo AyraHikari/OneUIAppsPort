@@ -47,8 +47,6 @@
 
 .field public shortcutListData:Lcom/samsung/android/galaxycontinuity/data/ShortcutListData;
 
-.field public smpInfoData:Lcom/samsung/android/galaxycontinuity/data/SMPInfoData;
-
 .field public socketServerInfoData:Lcom/samsung/android/galaxycontinuity/data/SocketServerInfoData;
 
 .field public socketTransferCompletedData:Lcom/samsung/android/galaxycontinuity/data/SocketTransferCompletedData;
@@ -68,7 +66,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 50
+    .line 49
     invoke-direct {p0}, Lorg/json/JSONObject;-><init>()V
 
     return-void
@@ -76,13 +74,22 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "json"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
         }
     .end annotation
 
-    .line 109
+    .line 104
     invoke-direct {p0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -90,26 +97,34 @@
 
 .method public varargs constructor <init>([Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "args"
+        }
+    .end annotation
 
-    .line 68
+    .line 66
     invoke-direct {p0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 69
+    .line 67
     array-length v0, p1
 
     const/4 v1, 0x0
 
     :goto_0
-    if-ge v1, v0, :cond_11
+    if-ge v1, v0, :cond_10
 
     aget-object v2, p1, v1
 
-    .line 70
+    .line 68
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/CallData;
 
     if-eqz v3, :cond_0
 
-    .line 71
+    .line 69
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -120,13 +135,13 @@
 
     goto/16 :goto_1
 
-    .line 72
+    .line 70
     :cond_0
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/AlarmData;
 
     if-eqz v3, :cond_1
 
-    .line 73
+    .line 71
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -137,13 +152,13 @@
 
     goto/16 :goto_1
 
-    .line 74
+    .line 72
     :cond_1
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/HotspotInfoData;
 
     if-eqz v3, :cond_2
 
-    .line 75
+    .line 73
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -154,13 +169,13 @@
 
     goto/16 :goto_1
 
-    .line 76
+    .line 74
     :cond_2
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/WiFiDirectCancelData;
 
     if-eqz v3, :cond_3
 
-    .line 77
+    .line 75
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -171,13 +186,13 @@
 
     goto/16 :goto_1
 
-    .line 78
+    .line 76
     :cond_3
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     if-eqz v3, :cond_4
 
-    .line 79
+    .line 77
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -188,13 +203,13 @@
 
     goto/16 :goto_1
 
-    .line 80
+    .line 78
     :cond_4
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/MessageData;
 
     if-eqz v3, :cond_5
 
-    .line 81
+    .line 79
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -205,13 +220,13 @@
 
     goto/16 :goto_1
 
-    .line 82
+    .line 80
     :cond_5
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 
     if-eqz v3, :cond_6
 
-    .line 83
+    .line 81
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -222,13 +237,13 @@
 
     goto/16 :goto_1
 
-    .line 84
+    .line 82
     :cond_6
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/TransferCompletedData;
 
     if-eqz v3, :cond_7
 
-    .line 85
+    .line 83
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -239,13 +254,13 @@
 
     goto/16 :goto_1
 
-    .line 86
+    .line 84
     :cond_7
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
 
     if-eqz v3, :cond_8
 
-    .line 87
+    .line 85
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -254,15 +269,15 @@
 
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
 
-    goto/16 :goto_1
+    goto :goto_1
 
-    .line 88
+    .line 86
     :cond_8
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/SocketTransferCompletedData;
 
     if-eqz v3, :cond_9
 
-    .line 89
+    .line 87
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -273,13 +288,13 @@
 
     goto :goto_1
 
-    .line 90
+    .line 88
     :cond_9
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/MirroringInfoData;
 
     if-eqz v3, :cond_a
 
-    .line 91
+    .line 89
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -290,13 +305,13 @@
 
     goto :goto_1
 
-    .line 92
+    .line 90
     :cond_a
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/HdmiInfoData;
 
     if-eqz v3, :cond_b
 
-    .line 93
+    .line 91
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -307,13 +322,13 @@
 
     goto :goto_1
 
-    .line 94
+    .line 92
     :cond_b
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
     if-eqz v3, :cond_c
 
-    .line 95
+    .line 93
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -324,13 +339,13 @@
 
     goto :goto_1
 
-    .line 96
+    .line 94
     :cond_c
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/SocketTransferStartData;
 
     if-eqz v3, :cond_d
 
-    .line 97
+    .line 95
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -341,13 +356,13 @@
 
     goto :goto_1
 
-    .line 98
+    .line 96
     :cond_d
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/DragStartData;
 
     if-eqz v3, :cond_e
 
-    .line 99
+    .line 97
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -358,13 +373,13 @@
 
     goto :goto_1
 
-    .line 100
+    .line 98
     :cond_e
     instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/SocketServerInfoData;
 
     if-eqz v3, :cond_f
 
-    .line 101
+    .line 99
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -373,51 +388,42 @@
 
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->socketServerInfoData:Lcom/samsung/android/galaxycontinuity/data/SocketServerInfoData;
 
-    goto :goto_1
-
-    .line 103
     :cond_f
-    instance-of v3, v2, Lcom/samsung/android/galaxycontinuity/data/SMPInfoData;
-
-    if-eqz v3, :cond_10
-
-    .line 104
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->clone(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/samsung/android/galaxycontinuity/data/SMPInfoData;
-
-    iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->smpInfoData:Lcom/samsung/android/galaxycontinuity/data/SMPInfoData;
-
-    :cond_10
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto/16 :goto_0
 
-    :cond_11
+    :cond_10
     return-void
 .end method
 
 .method public static clone(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 56
+    .line 54
     :try_start_0
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 57
+    .line 55
     new-instance v1, Ljava/io/ObjectOutputStream;
 
     invoke-direct {v1, v0}, Ljava/io/ObjectOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 58
+    .line 56
     invoke-virtual {v1, p0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 59
+    .line 57
     new-instance p0, Ljava/io/ByteArrayInputStream;
 
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -426,12 +432,12 @@
 
     invoke-direct {p0, v0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    .line 60
+    .line 58
     new-instance v0, Ljava/io/ObjectInputStream;
 
     invoke-direct {v0, p0}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
 
-    .line 61
+    .line 59
     invoke-virtual {v0}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object p0
@@ -443,7 +449,7 @@
     :catch_0
     move-exception p0
 
-    .line 63
+    .line 61
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 p0, 0x0

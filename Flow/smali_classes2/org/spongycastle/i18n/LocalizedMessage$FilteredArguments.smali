@@ -214,7 +214,7 @@
 .end method
 
 .method private filter(ILjava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     .line 421
     iget-object v0, p0, Lorg/spongycastle/i18n/LocalizedMessage$FilteredArguments;->filter:Lorg/spongycastle/i18n/filter/Filter;
@@ -228,13 +228,13 @@
     :cond_0
     if-eqz p1, :cond_3
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v1, :cond_2
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v1, :cond_1
 
     const/4 p1, 0x0
 
@@ -242,13 +242,11 @@
 
     .line 431
     :cond_1
-    iget-object p1, p0, Lorg/spongycastle/i18n/LocalizedMessage$FilteredArguments;->filter:Lorg/spongycastle/i18n/filter/Filter;
-
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object p1
 
-    invoke-interface {p1, p2}, Lorg/spongycastle/i18n/filter/Filter;->doFilterUrl(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, p1}, Lorg/spongycastle/i18n/filter/Filter;->doFilterUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -256,13 +254,11 @@
 
     .line 429
     :cond_2
-    iget-object p1, p0, Lorg/spongycastle/i18n/LocalizedMessage$FilteredArguments;->filter:Lorg/spongycastle/i18n/filter/Filter;
-
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object p1
 
-    invoke-interface {p1, p2}, Lorg/spongycastle/i18n/filter/Filter;->doFilter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, p1}, Lorg/spongycastle/i18n/filter/Filter;->doFilter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

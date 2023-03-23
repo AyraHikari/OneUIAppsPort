@@ -25,7 +25,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -54,7 +54,7 @@
     .locals 1
 
     .line 38
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     if-lt v0, p0, :cond_0
 

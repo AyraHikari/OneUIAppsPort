@@ -3,29 +3,33 @@
 .source "PropertyReference2Impl.java"
 
 
-# instance fields
-.field private final name:Ljava/lang/String;
-
-.field private final owner:Lkotlin/reflect/KDeclarationContainer;
-
-.field private final signature:Ljava/lang/String;
-
-
 # direct methods
-.method public constructor <init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
 
+    .line 23
+    invoke-direct {p0, p1, p2, p3, p4}, Lkotlin/jvm/internal/PropertyReference2;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
     .line 15
-    invoke-direct {p0}, Lkotlin/jvm/internal/PropertyReference2;-><init>()V
+    move-object v0, p1
 
-    .line 16
-    iput-object p1, p0, Lkotlin/jvm/internal/PropertyReference2Impl;->owner:Lkotlin/reflect/KDeclarationContainer;
+    check-cast v0, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;
 
-    .line 17
-    iput-object p2, p0, Lkotlin/jvm/internal/PropertyReference2Impl;->name:Ljava/lang/String;
+    invoke-interface {v0}, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;->getJClass()Ljava/lang/Class;
 
-    .line 18
-    iput-object p3, p0, Lkotlin/jvm/internal/PropertyReference2Impl;->signature:Ljava/lang/String;
+    move-result-object v0
+
+    instance-of p1, p1, Lkotlin/reflect/KClass;
+
+    xor-int/lit8 p1, p1, 0x1
+
+    invoke-direct {p0, v0, p2, p3, p1}, Lkotlin/jvm/internal/PropertyReference2;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
 .end method
@@ -35,7 +39,7 @@
 .method public get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
-    .line 38
+    .line 28
     invoke-virtual {p0}, Lkotlin/jvm/internal/PropertyReference2Impl;->getGetter()Lkotlin/reflect/KProperty2$Getter;
 
     move-result-object v0
@@ -57,31 +61,4 @@
     move-result-object p1
 
     return-object p1
-.end method
-
-.method public getName()Ljava/lang/String;
-    .locals 1
-
-    .line 28
-    iget-object v0, p0, Lkotlin/jvm/internal/PropertyReference2Impl;->name:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public getOwner()Lkotlin/reflect/KDeclarationContainer;
-    .locals 1
-
-    .line 23
-    iget-object v0, p0, Lkotlin/jvm/internal/PropertyReference2Impl;->owner:Lkotlin/reflect/KDeclarationContainer;
-
-    return-object v0
-.end method
-
-.method public getSignature()Ljava/lang/String;
-    .locals 1
-
-    .line 33
-    iget-object v0, p0, Lkotlin/jvm/internal/PropertyReference2Impl;->signature:Ljava/lang/String;
-
-    return-object v0
 .end method

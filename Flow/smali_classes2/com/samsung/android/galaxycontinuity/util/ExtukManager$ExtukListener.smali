@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onResult(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "extuk"
+        }
+    .end annotation
 .end method

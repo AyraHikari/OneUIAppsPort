@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/preference/ListPreferenceDialogFragment;)V
     .locals 0
 
-    .line 96
+    .line 98
     iput-object p1, p0, Landroidx/preference/ListPreferenceDialogFragment$1;->this$0:Landroidx/preference/ListPreferenceDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,19 +38,19 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
 
-    .line 99
+    .line 101
     iget-object v0, p0, Landroidx/preference/ListPreferenceDialogFragment$1;->this$0:Landroidx/preference/ListPreferenceDialogFragment;
 
     iput p2, v0, Landroidx/preference/ListPreferenceDialogFragment;->mClickedDialogEntryIndex:I
 
-    .line 103
+    .line 105
     iget-object p2, p0, Landroidx/preference/ListPreferenceDialogFragment$1;->this$0:Landroidx/preference/ListPreferenceDialogFragment;
 
     const/4 v0, -0x1
 
     invoke-virtual {p2, p1, v0}, Landroidx/preference/ListPreferenceDialogFragment;->onClick(Landroid/content/DialogInterface;I)V
 
-    .line 105
+    .line 107
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     return-void

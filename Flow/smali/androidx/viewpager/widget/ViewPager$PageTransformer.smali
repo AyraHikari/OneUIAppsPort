@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract transformPage(Landroid/view/View;F)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "page",
+            "position"
+        }
+    .end annotation
 .end method

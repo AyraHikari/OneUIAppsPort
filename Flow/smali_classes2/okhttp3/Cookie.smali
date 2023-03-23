@@ -129,17 +129,23 @@
     .line 81
     iget-object v0, p1, Lokhttp3/Cookie$Builder;->name:Ljava/lang/String;
 
-    if-eqz v0, :cond_2
+    const-string v1, "builder.name == null"
+
+    invoke-static {v0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 82
     iget-object v0, p1, Lokhttp3/Cookie$Builder;->value:Ljava/lang/String;
 
-    if-eqz v0, :cond_1
+    const-string v1, "builder.value == null"
+
+    invoke-static {v0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 83
     iget-object v0, p1, Lokhttp3/Cookie$Builder;->domain:Ljava/lang/String;
 
-    if-eqz v0, :cond_0
+    const-string v1, "builder.domain == null"
+
+    invoke-static {v0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 85
     iget-object v0, p1, Lokhttp3/Cookie$Builder;->name:Ljava/lang/String;
@@ -187,36 +193,6 @@
     iput-boolean p1, p0, Lokhttp3/Cookie;->hostOnly:Z
 
     return-void
-
-    .line 83
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "builder.domain == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 82
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "builder.value == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 81
-    :cond_2
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "builder.name == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method private static dateCharacterOffset(Ljava/lang/String;IIZ)I
@@ -576,7 +552,7 @@
     goto :goto_3
 
     :cond_7
-    const-string v3, "secure"
+    const-string/jumbo v3, "secure"
 
     .line 278
     invoke-virtual {v4, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -1067,33 +1043,31 @@
 
     invoke-virtual {v1, p1}, Ljava/util/regex/Matcher;->usePattern(Ljava/util/regex/Pattern;)Ljava/util/regex/Matcher;
 
-    move-result-object p1
+    move-result-object v9
 
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->matches()Z
+    invoke-virtual {v9}, Ljava/util/regex/Matcher;->matches()Z
 
-    move-result p1
+    move-result v9
 
-    if-eqz p1, :cond_2
+    if-eqz v9, :cond_2
 
     .line 350
     invoke-virtual {v1, v10}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v6
 
-    sget-object v6, Ljava/util/Locale;->US:Ljava/util/Locale;
+    sget-object v9, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    invoke-virtual {p1, v6}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 351
-    sget-object v6, Lokhttp3/Cookie;->MONTH_PATTERN:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v6}, Ljava/util/regex/Pattern;->pattern()Ljava/lang/String;
+    invoke-virtual {v6, v9}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v6, p1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+    .line 351
+    invoke-virtual {p1}, Ljava/util/regex/Pattern;->pattern()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v6}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result p1
 
@@ -1818,17 +1792,19 @@
     .line 560
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    new-instance v1, Ljava/util/Date;
-
-    iget-wide v2, p0, Lokhttp3/Cookie;->expiresAt:J
-
-    invoke-direct {v1, v2, v3}, Ljava/util/Date;-><init>(J)V
-
-    invoke-static {v1}, Lokhttp3/internal/http/HttpDate;->format(Ljava/util/Date;)Ljava/lang/String;
-
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/util/Date;
+
+    iget-wide v3, p0, Lokhttp3/Cookie;->expiresAt:J
+
+    invoke-direct {v2, v3, v4}, Ljava/util/Date;-><init>(J)V
+
+    invoke-static {v2}, Lokhttp3/internal/http/HttpDate;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 564
     :cond_1
@@ -1861,9 +1837,11 @@
     .line 572
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lokhttp3/Cookie;->path:Ljava/lang/String;
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lokhttp3/Cookie;->path:Ljava/lang/String;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 574
     iget-boolean p1, p0, Lokhttp3/Cookie;->secure:Z

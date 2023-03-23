@@ -1,91 +1,45 @@
 .class public final Lcom/google/android/gms/common/internal/service/zai;
-.super Lcom/google/android/gms/common/internal/GmsClient;
+.super Lcom/google/android/gms/internal/base/zaa;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/internal/GmsClient<",
-        "Lcom/google/android/gms/common/internal/service/zal;",
-        ">;"
-    }
-.end annotation
+# interfaces
+.implements Landroid/os/IInterface;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
-    .locals 7
+.method constructor <init>(Landroid/os/IBinder;)V
+    .locals 1
 
-    const/16 v3, 0x27
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    move-object v6, p5
+    const-string v0, "com.google.android.gms.common.internal.service.IClientTelemetryService"
 
     .line 1
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/GmsClient;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/ClientSettings;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic createServiceInterface(Landroid/os/IBinder;)Landroid/os/IInterface;
-    .locals 2
+.method public final zae(Lcom/google/android/gms/common/internal/TelemetryData;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    :cond_0
-    const-string v0, "com.google.android.gms.common.internal.service.ICommonService"
-
-    .line 9
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zaa;->zaa()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 10
-    instance-of v1, v0, Lcom/google/android/gms/common/internal/service/zal;
+    .line 2
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/base/zac;->zac(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
-    if-eqz v1, :cond_1
+    const/4 p1, 0x1
 
-    .line 11
-    check-cast v0, Lcom/google/android/gms/common/internal/service/zal;
+    .line 3
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;->zad(ILandroid/os/Parcel;)V
 
-    return-object v0
-
-    .line 12
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/common/internal/service/zam;
-
-    invoke-direct {v0, p1}, Lcom/google/android/gms/common/internal/service/zam;-><init>(Landroid/os/IBinder;)V
-
-    return-object v0
-.end method
-
-.method protected final getServiceDescriptor()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.common.internal.service.ICommonService"
-
-    return-object v0
-.end method
-
-.method public final getStartServiceAction()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.common.service.START"
-
-    return-object v0
+    return-void
 .end method

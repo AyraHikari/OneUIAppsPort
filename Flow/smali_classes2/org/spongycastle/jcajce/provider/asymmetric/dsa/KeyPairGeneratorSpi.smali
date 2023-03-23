@@ -183,7 +183,7 @@
     :cond_2
     new-instance p1, Ljava/security/InvalidParameterException;
 
-    const-string p2, "strength must be from 512 - 4096 and a multiple of 1024 above 1024"
+    const-string/jumbo p2, "strength must be from 512 - 4096 and a multiple of 1024 above 1024"
 
     invoke-direct {p1, p2}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 

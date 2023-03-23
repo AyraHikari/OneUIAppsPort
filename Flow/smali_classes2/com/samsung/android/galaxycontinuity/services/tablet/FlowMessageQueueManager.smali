@@ -106,6 +106,14 @@
 
 .method public queue(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 20
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/FlowMessageQueueManager;->mMessageQueue:Ljava/util/concurrent/LinkedBlockingQueue;

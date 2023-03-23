@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.myfiles.external.ui.widget.splitHomeItemView.SplitHomeItemSubHeaderView android:orientation="vertical" android:id="@id/category_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/category_header_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/basic_sub_header_divider_height">
+        <TextView android:id="@id/home_category_header" android:background="@null" android:layout_width="wrap_content" android:text="@string/subtitle_category" android:paddingEnd="0.0dip" style="?android:listSeparatorTextViewStyle" />
+        <View android:background="@drawable/subheader_divider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/basic_sub_header_divider_margin_top" android:layout_marginStart="@dimen/basic_sub_header_divider_margin_start" android:layout_marginEnd="@dimen/basic_sub_header_divider_margin_end" />
+    </LinearLayout>
+    <View android:id="@id/subheader_divider" android:background="@drawable/subheader_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/basic_sub_header_no_title_divider_height" android:layout_marginTop="@dimen/basic_sub_header_no_title_divider_margin_top" android:layout_marginStart="@dimen/basic_sub_no_title_header_divider_margin_start_end" android:layout_marginEnd="@dimen/basic_sub_no_title_header_divider_margin_start_end" />
+</com.sec.android.app.myfiles.external.ui.widget.splitHomeItemView.SplitHomeItemSubHeaderView>

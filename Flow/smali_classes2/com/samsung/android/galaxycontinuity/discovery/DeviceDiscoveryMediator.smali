@@ -44,6 +44,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -141,6 +149,14 @@
 
 .method private updateAndNotifyDeviceUpdated(Lcom/samsung/android/galaxycontinuity/discovery/model/FoundDevice;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     .line 125
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/discovery/FoundDeviceRepository;->updateDeviceInfo(Lcom/samsung/android/galaxycontinuity/discovery/model/FoundDevice;)V
@@ -180,6 +196,14 @@
 
 .method public ensureAuthAddressResolved(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     .line 145
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->isAuthIPAddressResolved()Z
@@ -233,6 +257,14 @@
 
 .method public ensureNotiAddressResolved(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     .line 176
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->isNotiIPAddressResolved()Z
@@ -302,6 +334,14 @@
 
 .method public setDeviceFoundListener(Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator$IDeviceDiscoverListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 51
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator;->mListener:Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator$IDeviceDiscoverListener;
@@ -311,6 +351,14 @@
 
 .method public setDeviceSelected(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selectedDevice"
+        }
+    .end annotation
 
     .line 220
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/discovery/FoundDeviceRepository;->setDeviceSelected(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
@@ -444,6 +492,14 @@
 
 .method public startWiFiDiscovery(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceIdToFind"
+        }
+    .end annotation
 
     .line 110
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator;->mWiFiDiscoveries:Ljava/util/ArrayList;

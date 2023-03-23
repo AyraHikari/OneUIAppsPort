@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$23;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 1591
+    .line 1708
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$23$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$23;
 
     invoke-direct {p0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$BottomSheetCallback;-><init>()V
@@ -34,18 +42,38 @@
 # virtual methods
 .method public onSlide(Landroid/view/View;F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "v"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onStateChanged(Landroid/view/View;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "newState"
+        }
+    .end annotation
 
     const/4 p1, 0x4
 
     if-ne p2, p1, :cond_0
 
-    .line 1595
+    .line 1712
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$23$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$23;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$23;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;

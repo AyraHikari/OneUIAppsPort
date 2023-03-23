@@ -15,6 +15,16 @@
 
 .method public static matches(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mimeType",
+            "filters"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -65,6 +75,16 @@
 
 .method public static matches([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mimeTypes",
+            "filter"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -115,6 +135,16 @@
 
 .method public static matches(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mimeType",
+            "filter"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -145,6 +175,16 @@
 
 .method public static matchesMany([Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mimeTypes",
+            "filter"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -214,6 +254,16 @@
 
 .method private static mimeTypeAgainstFilter([Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mimeTypeParts",
+            "filterParts"
+        }
+    .end annotation
 
     .line 48
     array-length v0, p1

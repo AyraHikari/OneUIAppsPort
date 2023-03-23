@@ -50,7 +50,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 495
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,7 +58,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 495
     invoke-direct {p0}, Lokhttp3/internal/http2/Http2Reader$Companion;-><init>()V
 
     return-void
@@ -70,7 +68,6 @@
 .method public final getLogger()Ljava/util/logging/Logger;
     .locals 1
 
-    .line 496
     invoke-static {}, Lokhttp3/internal/http2/Http2Reader;->access$getLogger$cp()Ljava/util/logging/Logger;
 
     move-result-object v0
@@ -80,11 +77,6 @@
 
 .method public final lengthWithoutPadding(III)I
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     and-int/lit8 p2, p2, 0x8
 
@@ -99,7 +91,6 @@
 
     return p1
 
-    .line 503
     :cond_1
     new-instance p2, Ljava/io/IOException;
 
@@ -111,29 +102,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p3
+    const-string p3, " > remaining length "
 
-    const-string v0, " > remaining length "
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p3
-
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p2, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    check-cast p2, Ljava/lang/Throwable;
 
     throw p2
 .end method

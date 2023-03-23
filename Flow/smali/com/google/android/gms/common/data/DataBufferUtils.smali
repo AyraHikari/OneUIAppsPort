@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/common/data/DataBufferUtils;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # static fields
@@ -12,7 +13,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 2
+    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Lcom/google/android/gms/common/data/DataBuffer;->getCount()I
@@ -43,7 +43,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 3
+    .line 2
     :try_start_0
     invoke-interface {p0}, Lcom/google/android/gms/common/data/DataBuffer;->iterator()Ljava/util/Iterator;
 
@@ -62,7 +62,7 @@
 
     check-cast v2, Lcom/google/android/gms/common/data/Freezable;
 
-    .line 4
+    .line 3
     invoke-interface {v2}, Lcom/google/android/gms/common/data/Freezable;->freeze()Ljava/lang/Object;
 
     move-result-object v2
@@ -73,7 +73,7 @@
 
     goto :goto_0
 
-    .line 6
+    .line 4
     :cond_0
     invoke-interface {p0}, Lcom/google/android/gms/common/data/DataBuffer;->close()V
 
@@ -82,9 +82,9 @@
     :catchall_0
     move-exception v0
 
-    .line 8
     invoke-interface {p0}, Lcom/google/android/gms/common/data/DataBuffer;->close()V
 
+    .line 5
     throw v0
 .end method
 
@@ -100,7 +100,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 14
+    .line 1
     invoke-interface {p0}, Lcom/google/android/gms/common/data/DataBuffer;->getCount()I
 
     move-result p0
@@ -127,7 +127,7 @@
         }
     .end annotation
 
-    .line 10
+    .line 1
     invoke-interface {p0}, Lcom/google/android/gms/common/data/DataBuffer;->getMetadata()Landroid/os/Bundle;
 
     move-result-object p0
@@ -136,7 +136,7 @@
 
     const-string v0, "next_page_token"
 
-    .line 11
+    .line 2
     invoke-virtual {p0, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -163,7 +163,7 @@
         }
     .end annotation
 
-    .line 12
+    .line 1
     invoke-interface {p0}, Lcom/google/android/gms/common/data/DataBuffer;->getMetadata()Landroid/os/Bundle;
 
     move-result-object p0
@@ -172,7 +172,7 @@
 
     const-string v0, "prev_page_token"
 
-    .line 13
+    .line 2
     invoke-virtual {p0, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0

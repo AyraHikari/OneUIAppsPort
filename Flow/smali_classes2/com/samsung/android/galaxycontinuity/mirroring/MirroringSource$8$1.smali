@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 1587
+    .line 1558
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8$1;->this$1:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,18 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "arg0",
+            "arg1"
+        }
+    .end annotation
 
-    .line 1590
+    .line 1561
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8$1;->this$1:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
@@ -63,7 +81,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 1591
+    .line 1562
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result p1
@@ -72,7 +90,7 @@
 
     goto :goto_0
 
-    .line 1593
+    .line 1564
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8$1;->this$1:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;
 
@@ -88,7 +106,7 @@
 
     invoke-static {p1, p2, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$5000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
-    .line 1595
+    .line 1566
     :try_start_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8$1;->this$1:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;
 
@@ -110,7 +128,7 @@
 
     const-string p1, "remove view success"
 
-    .line 1596
+    .line 1567
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -120,7 +138,7 @@
     :catch_0
     move-exception p1
 
-    .line 1599
+    .line 1570
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_1

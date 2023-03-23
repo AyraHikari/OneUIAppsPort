@@ -15,6 +15,10 @@
 
 
 # static fields
+.field public static final ACTION_UPDATE_CONNECTION_STATE:Ljava/lang/String; = "com.samsung.systemui.clipboard.UPDATE_CONNECTION_STATE"
+
+.field public static final SAMSUNGFLOW_CLIPBOARD_SYNC_STATE:Ljava/lang/String; = "samsungflow_clipboard_sync_state"
+
 .field private static final SOCKET_CONNECTION_TIME:I = 0x10
 
 .field public static final TYPE_HTML:I = 0x4
@@ -67,6 +71,8 @@
 
 .field private mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
+.field private mContext:Landroid/content/Context;
+
 .field private mExpectedSocketStates:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -111,6 +117,8 @@
 
 .field private final stateLock:Ljava/lang/Object;
 
+.field private updateClipboardStatusBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
 .field widiListener:Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
 
 
@@ -124,158 +132,181 @@
 .method private constructor <init>()V
     .locals 3
 
-    .line 130
+    .line 128
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 98
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandLock:Ljava/lang/Object;
-
-    .line 99
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stateLock:Ljava/lang/Object;
-
-    .line 100
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->socketLock:Ljava/lang/Object;
-
-    .line 101
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;->NONE:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSyncState:Ljava/lang/Object;
-
-    .line 102
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->NONE:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSocketState:Ljava/lang/Object;
-
-    .line 103
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncStateListeners:Ljava/util/ArrayList;
-
-    .line 104
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSyncStates:Ljava/util/ArrayList;
-
-    .line 105
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSocketStates:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    .line 107
-    iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isRegistered:Z
+    .line 66
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatusBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
+    .line 95
+    new-instance v1, Ljava/lang/Object;
+
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandLock:Ljava/lang/Object;
+
+    .line 96
+    new-instance v1, Ljava/lang/Object;
+
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stateLock:Ljava/lang/Object;
+
+    .line 97
+    new-instance v1, Ljava/lang/Object;
+
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->socketLock:Ljava/lang/Object;
+
+    .line 98
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;->NONE:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSyncState:Ljava/lang/Object;
+
+    .line 99
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->NONE:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSocketState:Ljava/lang/Object;
+
+    .line 100
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncStateListeners:Ljava/util/ArrayList;
+
+    .line 101
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSyncStates:Ljava/util/ArrayList;
+
+    .line 102
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSocketStates:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
-    .line 109
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    .line 104
+    iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isRegistered:Z
+
+    .line 107
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     const v2, 0xc3b4
 
-    .line 111
+    .line 109
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->SERVER_PORT:I
 
-    .line 216
-    iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mIsStopping:Z
+    .line 269
+    iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mIsStopping:Z
 
-    .line 523
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
+    .line 579
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
 
-    .line 524
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mReceiveSocketHandler:Landroid/os/Handler;
+    .line 580
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mReceiveSocketHandler:Landroid/os/Handler;
 
-    .line 525
+    .line 581
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->serverLock:Ljava/lang/Object;
 
-    .line 579
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$5;
+    .line 635
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$6;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$5;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$6;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->onClipboardUpdateListener:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$OnClipboardUpdateListener;
 
-    .line 733
+    .line 789
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
-    .line 830
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$6;
-
-    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$6;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->clientListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
-
-    .line 875
+    .line 886
     new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$7;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$7;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->clientListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
-    .line 918
+    .line 931
     new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$8;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
 
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
+
+    .line 974
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$9;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$9;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->widiListener:Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
+
+    .line 129
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)V
+.method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
     .locals 0
 
-    .line 72
+    .line 65
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatus()V
+
+    return-void
+.end method
+
+.method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 65
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+.method static synthetic access$1000(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Ljava/util/HashMap;
     .locals 0
 
-    .line 72
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->registerListener()V
+    .line 65
+    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
-    return-void
+    return-object p0
 .end method
 
-.method static synthetic access$1000(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
+.method static synthetic access$1100(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
     .locals 0
 
-    .line 72
+    .line 65
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setClipData(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
 
     return-void
 .end method
 
-.method static synthetic access$1100(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;J[Ljava/lang/Object;)Z
+.method static synthetic access$1200(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;J[Ljava/lang/Object;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -283,7 +314,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 65
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->waitState(J[Ljava/lang/Object;)Z
 
     move-result p0
@@ -291,73 +322,82 @@
     return p0
 .end method
 
-.method static synthetic access$1200(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)I
+.method static synthetic access$1300(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)I
     .locals 0
 
-    .line 72
+    .line 65
     iget p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->SERVER_PORT:I
 
     return p0
 .end method
 
-.method static synthetic access$1300(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/String;I)V
+.method static synthetic access$1400(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/String;I)V
     .locals 0
 
-    .line 72
+    .line 65
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->connectToSocektServer(Ljava/lang/String;I)V
 
     return-void
 .end method
 
-.method static synthetic access$1400(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
+.method static synthetic access$1500(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
     .locals 0
 
-    .line 72
+    .line 65
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mLatestClip:Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
     return-object p0
 .end method
 
-.method static synthetic access$1402(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
+.method static synthetic access$1502(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
     .locals 0
 
-    .line 72
+    .line 65
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mLatestClip:Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
     return-object p1
 .end method
 
-.method static synthetic access$1500(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
+.method static synthetic access$1600(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
     .locals 0
 
-    .line 72
+    .line 65
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->sendClipData(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
 
     return-void
 .end method
 
-.method static synthetic access$1600(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+.method static synthetic access$1700(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
     .locals 0
 
-    .line 72
+    .line 65
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     return-object p0
 .end method
 
-.method static synthetic access$1700(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Ljava/lang/Object;
+.method static synthetic access$1800(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Ljava/lang/Object;
     .locals 0
 
-    .line 72
+    .line 65
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandLock:Ljava/lang/Object;
 
     return-object p0
 .end method
 
-.method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)Z
+.method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
     .locals 0
 
-    .line 72
+    .line 65
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->registerListener()V
+
+    return-void
+.end method
+
+.method static synthetic access$300(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 65
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isState(Ljava/lang/Object;)Z
 
     move-result p0
@@ -365,82 +405,82 @@
     return p0
 .end method
 
-.method static synthetic access$302(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Z)Z
+.method static synthetic access$402(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Z)Z
     .locals 0
 
-    .line 72
+    .line 65
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mIsStopping:Z
 
     return p1
 .end method
 
-.method static synthetic access$400(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+.method static synthetic access$500(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
     .locals 0
 
-    .line 72
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stopSocket()V
+    .line 65
 
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Ljava/lang/Object;
+.method static synthetic access$600(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Ljava/lang/Object;
     .locals 0
 
-    .line 72
+    .line 65
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->serverLock:Ljava/lang/Object;
 
     return-object p0
 .end method
 
-.method static synthetic access$600(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Landroid/os/HandlerThread;
+.method static synthetic access$700(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Landroid/os/HandlerThread;
     .locals 0
 
-    .line 72
+    .line 65
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
 
     return-object p0
 .end method
 
-.method static synthetic access$602(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Landroid/os/HandlerThread;)Landroid/os/HandlerThread;
+.method static synthetic access$702(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Landroid/os/HandlerThread;)Landroid/os/HandlerThread;
     .locals 0
 
-    .line 72
+    .line 65
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
 
     return-object p1
 .end method
 
-.method static synthetic access$700(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+.method static synthetic access$800(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
     .locals 0
 
-    .line 72
+    .line 65
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->unregisterListener()V
 
     return-void
 .end method
 
-.method static synthetic access$802(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;)Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
+.method static synthetic access$902(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;)Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
     .locals 0
 
-    .line 72
+    .line 65
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
     return-object p1
 .end method
 
-.method static synthetic access$900(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)Ljava/util/HashMap;
-    .locals 0
-
-    .line 72
-    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
-
-    return-object p0
-.end method
-
 .method private connectToSocektServer(Ljava/lang/String;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "serverAddress",
+            "serverPort"
+        }
+    .end annotation
 
-    .line 364
+    .line 418
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -449,7 +489,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -457,12 +501,12 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 365
+    .line 419
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_CONNECTING:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
 
-    .line 366
+    .line 420
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     check-cast v0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient;
@@ -475,12 +519,12 @@
 .method private connectWiDi()Z
     .locals 6
 
-    .line 298
+    .line 352
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->WIDI_CONNECTING:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
 
-    .line 299
+    .line 353
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object v0
@@ -493,7 +537,7 @@
 
     if-nez v0, :cond_2
 
-    .line 300
+    .line 354
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
     move-result v0
@@ -524,7 +568,7 @@
 
     if-nez v0, :cond_2
 
-    .line 301
+    .line 355
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
@@ -554,7 +598,7 @@
 
     goto :goto_0
 
-    .line 304
+    .line 358
     :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
@@ -568,17 +612,17 @@
 
     const-string v0, "Try connect widi for clipboard"
 
-    .line 305
+    .line 359
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 307
+    .line 361
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 308
+    .line 362
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v0
@@ -591,7 +635,7 @@
 
     goto :goto_2
 
-    .line 302
+    .line 356
     :cond_2
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
@@ -601,6 +645,8 @@
     const-string v2, "Already "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
@@ -622,9 +668,13 @@
     :goto_1
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, " connected"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -632,12 +682,12 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 303
+    .line 357
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->WIDI_CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
 
-    .line 313
+    .line 367
     :cond_4
     :goto_2
     :try_start_0
@@ -653,7 +703,7 @@
 
     const-string v0, "Current thread already interrupted"
 
-    .line 314
+    .line 368
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     :cond_5
@@ -663,7 +713,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 315
+    .line 369
     sget-object v4, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->WIDI_CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     aput-object v4, v0, v1
@@ -684,7 +734,7 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 320
+    .line 374
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->WIDI_CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isState(Ljava/lang/Object;)Z
@@ -704,7 +754,7 @@
     :catch_0
     move-exception v0
 
-    .line 317
+    .line 371
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return v1
@@ -717,20 +767,20 @@
 
     monitor-enter v0
 
-    .line 120
+    .line 118
     :try_start_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mInstance:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
     if-nez v1, :cond_0
 
-    .line 121
+    .line 119
     new-instance v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;-><init>()V
 
     sput-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mInstance:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
-    .line 123
+    .line 121
     :cond_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mInstance:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
     :try_end_0
@@ -750,13 +800,21 @@
 
 .method private isState(Ljava/lang/Object;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 662
+    .line 718
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 663
+    .line 719
     :try_start_0
     instance-of v1, p1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
 
@@ -766,7 +824,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 664
+    .line 720
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSyncState:Ljava/lang/Object;
 
     if-ne v1, p1, :cond_0
@@ -781,20 +839,20 @@
 
     goto :goto_1
 
-    .line 665
+    .line 721
     :cond_1
     instance-of v1, p1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     if-eqz v1, :cond_2
 
-    .line 666
+    .line 722
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSocketState:Ljava/lang/Object;
 
     if-ne v1, p1, :cond_0
 
     goto :goto_0
 
-    .line 668
+    .line 724
     :cond_2
     :goto_1
     monitor-exit v0
@@ -816,15 +874,15 @@
 
     const-string v0, "open socket Server"
 
-    .line 350
+    .line 404
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 351
+    .line 405
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_CONNECTING:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
 
-    .line 353
+    .line 407
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
     move-result v0
@@ -851,14 +909,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 354
+    .line 408
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getWiFiIPAddress()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 356
+    .line 410
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
@@ -868,7 +926,7 @@
 
     move-result-object v0
 
-    .line 358
+    .line 412
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
@@ -880,7 +938,7 @@
 
     invoke-virtual {v1, v0, v3, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->open(Ljava/lang/String;II)Z
 
-    .line 360
+    .line 414
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v1
@@ -922,6 +980,15 @@
 
 .method private receiveFile(Ljava/util/ArrayList;)Z
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -931,17 +998,18 @@
         }
     .end annotation
 
-    .line 474
+    .line 528
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
+    :cond_0
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -949,22 +1017,26 @@
 
     check-cast v0, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;
 
-    .line 475
+    .line 529
     new-instance v1, Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->getClipboardCasheDir()Ljava/lang/String;
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->getClipboardCacheDir()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     iget-object v3, v0, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;->fileName:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -972,7 +1044,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 476
+    .line 530
     new-instance v2, Lcom/samsung/android/galaxycontinuity/util/FileRenamePolicy;
 
     invoke-direct {v2}, Lcom/samsung/android/galaxycontinuity/util/FileRenamePolicy;-><init>()V
@@ -983,7 +1055,7 @@
 
     const/4 v2, 0x0
 
-    .line 479
+    .line 533
     :try_start_0
     invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
 
@@ -991,22 +1063,22 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
 
-    if-nez v3, :cond_0
+    if-nez v3, :cond_1
 
     return v2
 
-    :cond_0
+    :cond_1
     const/4 v3, 0x0
 
-    .line 491
+    .line 545
     :try_start_1
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v4
 
-    if-eqz v4, :cond_1
+    if-eqz v4, :cond_2
 
-    .line 492
+    .line 546
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1015,11 +1087,15 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1027,14 +1103,14 @@
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 493
+    .line 547
     new-instance v4, Ljava/io/FileOutputStream;
 
     invoke-direct {v4, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_1
     .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 494
+    .line 548
     :try_start_2
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
@@ -1055,8 +1131,8 @@
 
     goto :goto_1
 
-    .line 496
-    :cond_1
+    .line 550
+    :cond_2
     :try_start_3
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1066,9 +1142,13 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     iget-object v5, v0, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;->fileName:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1076,7 +1156,7 @@
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 497
+    .line 551
     sget-object v4, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v4}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
@@ -1094,11 +1174,11 @@
 
     move-object v3, v11
 
-    .line 500
+    .line 554
     :goto_1
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 501
+    .line 555
     sget-object v3, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v3}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
@@ -1107,9 +1187,9 @@
     move-object v3, v4
 
     :goto_3
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_3
 
-    .line 506
+    .line 560
     :try_start_4
     invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
     :try_end_4
@@ -1120,11 +1200,11 @@
     :catch_2
     move-exception v3
 
-    .line 509
+    .line 563
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 512
-    :cond_2
+    .line 566
+    :cond_3
     :goto_4
     sget-object v3, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
@@ -1132,23 +1212,32 @@
 
     move-result v3
 
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_4
 
     return v2
 
-    .line 515
-    :cond_3
+    .line 569
+    :cond_4
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     iput-object v2, v0, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;->fileName:Ljava/lang/String;
 
-    .line 517
-    invoke-static {v1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
+    .line 571
+    sget-object v2, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardContentProvider;->Companion:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardContentProvider$Companion;
+
+    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
+    invoke-virtual {v2, v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardContentProvider$Companion;->getUri(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 573
     invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -1160,7 +1249,7 @@
     :catch_3
     move-exception p1
 
-    .line 483
+    .line 537
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1169,11 +1258,15 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1181,12 +1274,12 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 484
+    .line 538
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return v2
 
-    :cond_4
+    :cond_5
     const/4 p1, 0x1
 
     return p1
@@ -1195,7 +1288,7 @@
 .method private registerListener()V
     .locals 2
 
-    .line 164
+    .line 214
     :try_start_0
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isRegistered:Z
 
@@ -1203,13 +1296,13 @@
 
     return-void
 
-    .line 167
+    .line 217
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
     if-nez v0, :cond_1
 
-    .line 168
+    .line 218
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystemProvider;->Companion:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystemProvider$Companion;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystemProvider$Companion;->getClipboardSystem()Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
@@ -1218,7 +1311,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
-    .line 169
+    .line 219
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->onClipboardUpdateListener:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$OnClipboardUpdateListener;
 
     invoke-interface {v0, v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;->registerListener(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$OnClipboardUpdateListener;)V
@@ -1226,7 +1319,7 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 172
+    .line 222
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isRegistered:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -1236,15 +1329,62 @@
     :catch_0
     move-exception v0
 
-    .line 174
+    .line 224
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
 .end method
 
+.method private registerUpdateClipboardStatusBR()V
+    .locals 3
+
+    .line 150
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatusBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
+    if-nez v0, :cond_0
+
+    .line 151
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$1;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$1;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatusBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
+    .line 161
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string v1, "com.samsung.systemui.clipboard.UPDATE_CONNECTION_STATE"
+
+    .line 162
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 164
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatusBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    :cond_0
+    return-void
+.end method
+
 .method private removeLatch(Ljava/util/ArrayList;Ljava/util/concurrent/CountDownLatch;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expectedStates",
+            "latch"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1256,14 +1396,14 @@
         }
     .end annotation
 
-    .line 802
+    .line 858
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
-    .line 803
+    .line 859
     invoke-interface {v0}, Ljava/util/Set;->size()I
 
     move-result v1
@@ -1274,7 +1414,7 @@
 
     move-result-object v0
 
-    .line 805
+    .line 861
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -1284,7 +1424,7 @@
 
     aget-object v3, v0, v2
 
-    .line 806
+    .line 862
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1299,7 +1439,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 807
+    .line 863
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1310,7 +1450,7 @@
 
     invoke-virtual {v4, p2}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 809
+    .line 865
     :cond_0
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
@@ -1326,10 +1466,10 @@
 
     if-nez v4, :cond_1
 
-    .line 810
+    .line 866
     invoke-virtual {p1, v3}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 811
+    .line 867
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1353,10 +1493,10 @@
 
     const-string v0, "requestSocketConnection"
 
-    .line 324
+    .line 378
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 326
+    .line 380
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->isConnected()Z
@@ -1369,17 +1509,17 @@
 
     const-string v0, "Already Socket connected"
 
-    .line 329
+    .line 383
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 330
+    .line 384
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
 
     return v1
 
-    .line 334
+    .line 388
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
@@ -1393,7 +1533,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 335
+    .line 389
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->openSocketServer()V
 
     goto :goto_0
@@ -1401,7 +1541,7 @@
     :cond_1
     new-array v0, v2, [Ljava/lang/Object;
 
-    .line 337
+    .line 391
     sget-object v6, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_CONNECTING:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     aput-object v6, v0, v5
@@ -1412,7 +1552,7 @@
 
     invoke-direct {p0, v3, v4, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->waitState(J[Ljava/lang/Object;)Z
 
-    .line 339
+    .line 393
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isState(Ljava/lang/Object;)Z
@@ -1427,7 +1567,7 @@
     :goto_0
     new-array v0, v2, [Ljava/lang/Object;
 
-    .line 343
+    .line 397
     sget-object v2, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     aput-object v2, v0, v5
@@ -1444,7 +1584,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
-    .line 346
+    .line 400
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isState(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1462,8 +1602,16 @@
 
 .method private sendClipData(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "clipboardSyncData"
+        }
+    .end annotation
 
-    .line 414
+    .line 468
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v0
@@ -1480,13 +1628,13 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->execute(Ljava/lang/Class;[Ljava/lang/Object;)V
 
-    .line 417
+    .line 471
     :try_start_0
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->fileList:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
-    .line 418
+    .line 472
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isSyncing()Z
 
     move-result v0
@@ -1498,10 +1646,10 @@
     :cond_0
     const-string v0, "7121"
 
-    .line 421
+    .line 475
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;)V
 
-    .line 423
+    .line 477
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->fileList:Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->sendFile(Ljava/util/ArrayList;)V
@@ -1513,7 +1661,7 @@
     :catch_0
     move-exception p1
 
-    .line 426
+    .line 480
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_1
@@ -1523,6 +1671,15 @@
 
 .method private sendFile(Ljava/util/ArrayList;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1532,7 +1689,7 @@
         }
     .end annotation
 
-    .line 446
+    .line 500
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1553,7 +1710,7 @@
 
     const/4 v1, 0x0
 
-    .line 449
+    .line 503
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -1577,10 +1734,10 @@
 
     const-string v2, "Sending clip file"
 
-    .line 451
+    .line 505
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 452
+    .line 506
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     const-wide/16 v6, 0x0
@@ -1593,7 +1750,7 @@
 
     goto :goto_1
 
-    .line 454
+    .line 508
     :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1603,9 +1760,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     iget-object v3, v0, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;->fileName:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1613,7 +1774,7 @@
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 455
+    .line 509
     sget-object v2, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v2}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
@@ -1625,7 +1786,7 @@
     :catch_0
     move-exception v2
 
-    .line 458
+    .line 512
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1634,20 +1795,24 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;->fileName:Ljava/lang/String;
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 459
+    .line 513
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 460
+    .line 514
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
@@ -1655,7 +1820,7 @@
     :goto_1
     if-eqz v1, :cond_0
 
-    .line 465
+    .line 519
     :try_start_1
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_1
@@ -1666,7 +1831,7 @@
     :catch_1
     move-exception v0
 
-    .line 468
+    .line 522
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -1677,22 +1842,30 @@
 
 .method private setClipData(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clipSyncData"
+        }
+    .end annotation
 
-    const-string v0, "setClipData"
+    const-string/jumbo v0, "setClipData"
 
-    .line 370
+    .line 424
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     if-nez p1, :cond_0
 
     const-string p1, "clipSyncData is null"
 
-    .line 372
+    .line 426
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-void
 
-    .line 376
+    .line 430
     :cond_0
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->fileList:Ljava/util/ArrayList;
 
@@ -1708,33 +1881,32 @@
 
     const-string p1, "Failed clipSyncData receiving"
 
-    .line 377
+    .line 431
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 378
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stopSocket()V
+    .line 432
 
     return-void
 
-    .line 381
+    .line 435
     :cond_1
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mLatestClip:Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
-    .line 384
+    .line 438
     iget v0, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->type:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_2
 
-    .line 385
+    .line 439
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mLatestClip:Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setTextClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
 
     goto :goto_0
 
-    .line 386
+    .line 440
     :cond_2
     iget p1, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->type:I
 
@@ -1742,14 +1914,14 @@
 
     if-ne p1, v0, :cond_3
 
-    .line 387
+    .line 441
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mLatestClip:Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setHtmlClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
 
     goto :goto_0
 
-    .line 389
+    .line 443
     :cond_3
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mLatestClip:Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
@@ -1759,7 +1931,7 @@
 
     if-ne p1, v0, :cond_4
 
-    .line 390
+    .line 444
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mLatestClip:Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setImageClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
@@ -1771,8 +1943,16 @@
 
 .method private setHtmlClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clipSyncData"
+        }
+    .end annotation
 
-    .line 399
+    .line 453
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->clipData:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->fileList:Ljava/util/ArrayList;
@@ -1783,7 +1963,7 @@
 
     iput-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->clipData:Ljava/lang/String;
 
-    .line 401
+    .line 455
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
     invoke-interface {v0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;->setHtmlClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
@@ -1793,8 +1973,16 @@
 
 .method private setImageClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clipSyncData"
+        }
+    .end annotation
 
-    .line 405
+    .line 459
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;->fileList:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
@@ -1809,7 +1997,7 @@
 
     goto :goto_0
 
-    .line 408
+    .line 462
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
@@ -1822,31 +2010,39 @@
 
 .method private setState(Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 673
+    .line 729
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x0
 
-    .line 676
+    .line 732
     :try_start_0
     instance-of v2, p1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
 
     if-eqz v2, :cond_2
 
-    .line 677
+    .line 733
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSyncState:Ljava/lang/Object;
 
     if-ne v1, p1, :cond_0
 
-    .line 678
+    .line 734
     monitor-exit v0
 
     return-void
 
-    .line 680
+    .line 736
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1856,15 +2052,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSyncState:Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, ", current sync_state : "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1872,10 +2076,10 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 681
+    .line 737
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSyncState:Ljava/lang/Object;
 
-    .line 683
+    .line 739
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncStateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1895,7 +2099,7 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$IClipSyncStateListener;
 
-    .line 684
+    .line 740
     move-object v3, p1
 
     check-cast v3, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
@@ -1904,29 +2108,29 @@
 
     goto :goto_0
 
-    .line 686
+    .line 742
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSyncStates:Ljava/util/ArrayList;
 
     goto :goto_1
 
-    .line 687
+    .line 743
     :cond_2
     instance-of v2, p1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     if-eqz v2, :cond_4
 
-    .line 688
+    .line 744
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSocketState:Ljava/lang/Object;
 
     if-ne v1, p1, :cond_3
 
-    .line 689
+    .line 745
     monitor-exit v0
 
     return-void
 
-    .line 690
+    .line 746
     :cond_3
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1936,15 +2140,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSocketState:Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, ", current CONNECTION_STATE : "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1952,24 +2164,24 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 691
+    .line 747
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSocketState:Ljava/lang/Object;
 
-    .line 692
+    .line 748
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSocketStates:Ljava/util/ArrayList;
 
     :cond_4
     :goto_1
     if-eqz v1, :cond_7
 
-    .line 695
+    .line 751
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_7
 
-    .line 696
+    .line 752
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1980,35 +2192,35 @@
 
     if-nez v2, :cond_5
 
-    .line 698
+    .line 754
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    .line 699
+    .line 755
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-void
 
-    .line 703
+    .line 759
     :cond_5
     :try_start_1
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 705
+    .line 761
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 706
+    .line 762
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    .line 707
+    .line 763
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 709
+    .line 765
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -2026,10 +2238,10 @@
 
     check-cast v2, Ljava/util/concurrent/CountDownLatch;
 
-    .line 710
+    .line 766
     invoke-virtual {v2}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 711
+    .line 767
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2038,7 +2250,11 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2046,7 +2262,7 @@
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 712
+    .line 768
     invoke-direct {p0, v1, v2}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->removeLatch(Ljava/util/ArrayList;Ljava/util/concurrent/CountDownLatch;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -2057,18 +2273,18 @@
     :catch_0
     move-exception p1
 
-    .line 715
+    .line 771
     :try_start_2
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 717
+    .line 773
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
     move-result-object p1
 
-    .line 718
+    .line 774
     invoke-interface {p1}, Ljava/util/Set;->size()I
 
     move-result v1
@@ -2079,7 +2295,7 @@
 
     move-result-object p1
 
-    .line 720
+    .line 776
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -2089,7 +2305,7 @@
 
     aget-object v3, p1, v2
 
-    .line 721
+    .line 777
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2098,7 +2314,7 @@
 
     if-eqz v4, :cond_6
 
-    .line 722
+    .line 778
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2109,7 +2325,7 @@
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
-    .line 724
+    .line 780
     :cond_6
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
@@ -2119,7 +2335,7 @@
 
     goto :goto_3
 
-    .line 728
+    .line 784
     :cond_7
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2129,15 +2345,19 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 730
+    .line 786
     :cond_8
     monitor-exit v0
 
@@ -2155,8 +2375,16 @@
 
 .method private setTextClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clipSyncData"
+        }
+    .end annotation
 
-    .line 395
+    .line 449
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
     invoke-interface {v0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;->setTextClip(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
@@ -2169,40 +2397,36 @@
 
     const-string v0, "Stop socket"
 
-    .line 559
+    .line 615
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 560
+    .line 616
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->socketLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 561
+    .line 617
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
-    instance-of v1, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
+    instance-of v2, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
-    .line 562
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
-
+    .line 618
     check-cast v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
 
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->stop()Z
 
     goto :goto_0
 
-    .line 564
+    .line 620
     :cond_0
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
-
     check-cast v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient;
 
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient;->stop()Z
 
-    .line 567
+    .line 623
     :goto_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_CONNECTING:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
@@ -2223,7 +2447,7 @@
 
     const/4 v4, 0x0
 
-    .line 569
+    .line 625
     sget-object v5, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     aput-object v5, v3, v4
@@ -2239,17 +2463,17 @@
     :try_start_2
     const-string v1, "Interrupted exception"
 
-    .line 571
+    .line 627
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 574
+    .line 630
     :cond_1
     :goto_1
     monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 576
+    .line 632
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->NONE:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
@@ -2259,7 +2483,7 @@
     :catchall_0
     move-exception v1
 
-    .line 574
+    .line 630
     :try_start_3
     monitor-exit v0
     :try_end_3
@@ -2271,7 +2495,7 @@
 .method private unregisterListener()V
     .locals 1
 
-    .line 180
+    .line 230
     :try_start_0
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isRegistered:Z
 
@@ -2279,7 +2503,7 @@
 
     return-void
 
-    .line 183
+    .line 233
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipboardSystem:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSystem;
 
@@ -2287,7 +2511,7 @@
 
     const/4 v0, 0x0
 
-    .line 185
+    .line 235
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isRegistered:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -2297,27 +2521,168 @@
     :catch_0
     move-exception v0
 
-    .line 187
+    .line 237
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
 .end method
 
+.method private unregisterUpdateClipboardStatusBR()V
+    .locals 2
+
+    .line 193
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatusBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
+    if-eqz v0, :cond_0
+
+    .line 194
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    const/4 v0, 0x0
+
+    .line 195
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatusBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
+    :cond_0
+    return-void
+.end method
+
+.method private updateClipboardStatus()V
+    .locals 5
+
+    const-string/jumbo v0, "samsungflow_clipboard_sync_state"
+
+    .line 169
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1f
+
+    if-le v1, v2, :cond_3
+
+    const/4 v1, -0x1
+
+    .line 172
+    :try_start_0
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    invoke-static {v2, v0}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
+
+    move-result v1
+    :try_end_0
+    .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    const-string v2, "Not found SAMSUNGFLOW_CLIPBOARD_SYNC_STATE"
+
+    .line 174
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 176
+    :goto_0
+    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isSyncing()Z
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    if-eqz v2, :cond_1
+
+    if-eqz v1, :cond_0
+
+    .line 178
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    invoke-static {v1, v0, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    .line 180
+    :cond_0
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    invoke-static {v1, v0, v4}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    const-string v0, "SAMSUNGFLOW_CLIPBOARD_SYNC_STATE value : 1"
+
+    .line 181
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    :cond_1
+    if-eq v1, v4, :cond_2
+
+    .line 184
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    invoke-static {v1, v0, v4}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    .line 186
+    :cond_2
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    invoke-static {v1, v0, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    const-string v0, "SAMSUNGFLOW_CLIPBOARD_SYNC_STATE value : 0"
+
+    .line 187
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    :cond_3
+    :goto_1
+    return-void
+.end method
+
 .method private varargs waitState(J[Ljava/lang/Object;)Z
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeoutSeconds",
+            "expectedP2pStates"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 741
+    .line 797
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 743
+    .line 799
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stateLock:Ljava/lang/Object;
 
     monitor-enter v1
@@ -2326,39 +2691,39 @@
 
     if-nez p3, :cond_0
 
-    .line 745
+    .line 801
     :try_start_0
     monitor-exit v1
 
     return v2
 
-    .line 747
+    .line 803
     :cond_0
     invoke-static {v0, p3}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
-    .line 749
+    .line 805
     aget-object p3, p3, v2
 
     instance-of p3, p3, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
 
     if-eqz p3, :cond_1
 
-    .line 750
+    .line 806
     iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSyncState:Ljava/lang/Object;
 
-    .line 751
+    .line 807
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSyncStates:Ljava/util/ArrayList;
 
     goto :goto_0
 
-    .line 753
+    .line 809
     :cond_1
     iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mSocketState:Ljava/lang/Object;
 
-    .line 754
+    .line 810
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mExpectedSocketStates:Ljava/util/ArrayList;
 
-    .line 757
+    .line 813
     :goto_0
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -2375,18 +2740,22 @@
 
     move-result-object v5
 
-    .line 758
+    .line 814
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "wait state: "
+    const-string/jumbo v7, "wait state: "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2394,7 +2763,7 @@
 
     goto :goto_1
 
-    .line 762
+    .line 818
     :cond_2
     invoke-virtual {v0, p3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -2404,7 +2773,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 763
+    .line 819
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2413,7 +2782,11 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2421,18 +2794,18 @@
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 764
+    .line 820
     monitor-exit v1
 
     return v5
 
-    .line 768
+    .line 824
     :cond_3
     new-instance v4, Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {v4, v5}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    .line 770
+    .line 826
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
@@ -2448,7 +2821,7 @@
 
     move-result-object v7
 
-    .line 771
+    .line 827
     iget-object v8, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v8, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2459,26 +2832,26 @@
 
     if-nez v8, :cond_4
 
-    .line 773
+    .line 829
     new-instance v8, Ljava/util/ArrayList;
 
     invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
-    .line 774
+    .line 830
     iget-object v9, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->latchHashMap:Ljava/util/HashMap;
 
     invoke-virtual {v9, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 777
+    .line 833
     :cond_4
     invoke-virtual {v8, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 778
+    .line 834
     invoke-virtual {v3, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 780
+    .line 836
     :cond_5
     monitor-exit v1
     :try_end_0
@@ -2490,7 +2863,7 @@
 
     if-nez v1, :cond_7
 
-    .line 783
+    .line 839
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2499,7 +2872,11 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2507,17 +2884,19 @@
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 784
+    .line 840
     invoke-virtual {v4}, Ljava/util/concurrent/CountDownLatch;->await()V
 
-    .line 785
+    .line 841
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p2, "state changed : "
+    const-string/jumbo p2, "state changed : "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     instance-of p2, p3, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
 
@@ -2533,6 +2912,8 @@
     :goto_3
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -2541,7 +2922,7 @@
 
     return v5
 
-    .line 788
+    .line 844
     :cond_7
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2551,13 +2932,21 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string v3, "s : "
+    move-result-object v1
+
+    const-string/jumbo v3, "s : "
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2565,7 +2954,7 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 789
+    .line 845
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v4, p1, p2, v1}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
@@ -2574,14 +2963,16 @@
 
     if-eqz p1, :cond_9
 
-    .line 790
+    .line 846
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p2, "state changed : "
+    const-string/jumbo p2, "state changed : "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     instance-of p2, p3, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
 
@@ -2597,6 +2988,8 @@
     :goto_4
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -2605,7 +2998,7 @@
 
     return v5
 
-    .line 793
+    .line 849
     :cond_9
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -2622,18 +3015,22 @@
 
     move-result-object p2
 
-    .line 794
+    .line 850
     new-instance p3, Ljava/lang/StringBuilder;
 
     invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "timeout : "
+    const-string/jumbo v0, "timeout : "
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p3
+
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -2647,7 +3044,7 @@
     :catchall_0
     move-exception p1
 
-    .line 780
+    .line 836
     :try_start_1
     monitor-exit v1
     :try_end_1
@@ -2660,8 +3057,16 @@
 # virtual methods
 .method public addStateListener(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$IClipSyncStateListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 817
+    .line 873
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncStateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -2670,7 +3075,7 @@
 
     if-nez v0, :cond_0
 
-    .line 818
+    .line 874
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncStateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -2681,19 +3086,27 @@
 
 .method public commandExecute(Ljava/lang/Runnable;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runnable"
+        }
+    .end annotation
 
-    .line 641
+    .line 697
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 643
+    .line 699
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtClipboardSync:Landroid/os/HandlerThread;
 
     if-nez v1, :cond_0
 
-    .line 644
+    .line 700
     new-instance v1, Landroid/os/HandlerThread;
 
     const-string v2, "mHtClipboardSync"
@@ -2702,10 +3115,10 @@
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtClipboardSync:Landroid/os/HandlerThread;
 
-    .line 645
+    .line 701
     invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
 
-    .line 646
+    .line 702
     new-instance v1, Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtClipboardSync:Landroid/os/HandlerThread;
@@ -2718,7 +3131,7 @@
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncHandler:Landroid/os/Handler;
 
-    .line 649
+    .line 705
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncHandler:Landroid/os/Handler;
 
@@ -2737,11 +3150,11 @@
     :catch_0
     move-exception p1
 
-    .line 651
+    .line 707
     :try_start_1
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 653
+    .line 709
     :goto_0
     monitor-exit v0
 
@@ -2761,24 +3174,24 @@
     const/4 v0, 0x0
 
     :try_start_0
-    const-string v1, "start connecting"
+    const-string/jumbo v1, "start connecting"
 
-    .line 270
+    .line 324
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 272
+    .line 326
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->connectWiDi()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    const-string v1, "widi connection fail"
+    const-string/jumbo v1, "widi connection fail"
 
-    .line 273
+    .line 327
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 274
+    .line 328
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
     move-result v1
@@ -2797,30 +3210,30 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 275
+    .line 329
     new-instance v1, Landroid/content/Intent;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
 
-    const-class v3, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;
+    const-class v3, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v2, 0x10000000
 
-    .line 276
+    .line 330
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 277
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
+    .line 331
+    sget-object v2, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
 
     const/4 v3, 0x3
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 279
+    .line 333
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -2830,7 +3243,7 @@
     :cond_0
     return v0
 
-    .line 284
+    .line 338
     :cond_1
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->requestSocketConnection()Z
 
@@ -2838,19 +3251,19 @@
 
     if-nez v1, :cond_2
 
-    const-string v1, "socket connection fail"
+    const-string/jumbo v1, "socket connection fail"
 
-    .line 285
+    .line 339
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 286
+    .line 340
     sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;->SOCKET_FAILED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$CONNECTION_STATE;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->setState(Ljava/lang/Object;)V
 
     return v0
 
-    .line 289
+    .line 343
     :cond_2
     sget-object v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;->CONNECTED:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
 
@@ -2865,7 +3278,7 @@
     :catch_0
     move-exception v1
 
-    .line 291
+    .line 345
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return v0
@@ -2873,6 +3286,17 @@
 
 .method public convertUriInHtml(Ljava/lang/String;Ljava/util/ArrayList;)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "html",
+            "fileList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2884,7 +3308,7 @@
         }
     .end annotation
 
-    .line 598
+    .line 654
     invoke-static {p1}, Lorg/jsoup/Jsoup;->parse(Ljava/lang/String;)Lorg/jsoup/nodes/Document;
 
     move-result-object v0
@@ -2895,7 +3319,7 @@
 
     move-result-object v0
 
-    .line 599
+    .line 655
     invoke-virtual {v0}, Lorg/jsoup/select/Elements;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -2918,21 +3342,21 @@
 
     const-string v3, "abs:src"
 
-    .line 600
+    .line 656
     invoke-virtual {v2, v3}, Lorg/jsoup/nodes/Element;->attr(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 601
+    .line 657
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    const-string v3, "src"
+    const-string/jumbo v3, "src"
 
-    .line 602
+    .line 658
     invoke-virtual {v2, v3}, Lorg/jsoup/nodes/Element;->attr(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -2940,7 +3364,7 @@
     :cond_1
     const-string v2, "http"
 
-    .line 604
+    .line 660
     invoke-virtual {v3, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -2958,7 +3382,7 @@
     :cond_2
     add-int/lit8 v2, v1, 0x1
 
-    .line 608
+    .line 664
     invoke-virtual {p2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -2984,21 +3408,18 @@
 
     const-string v0, "clipboard sync deinit"
 
-    .line 149
+    .line 200
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 152
+    .line 202
     :try_start_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->removeClipboardCacheDir()V
-
-    .line 153
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandLock:Ljava/lang/Object;
 
     monitor-enter v0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 154
+    .line 203
     :try_start_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
@@ -3008,12 +3429,15 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->removeWiDiListner(Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;)V
 
-    .line 155
+    .line 204
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->unregisterUpdateClipboardStatusBR()V
+
+    .line 205
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 156
+    .line 206
     :try_start_2
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->stopSync()V
     :try_end_2
@@ -3024,7 +3448,7 @@
     :catchall_0
     move-exception v1
 
-    .line 155
+    .line 205
     :try_start_3
     monitor-exit v0
     :try_end_3
@@ -3038,7 +3462,7 @@
     :catch_0
     move-exception v0
 
-    .line 158
+    .line 208
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
@@ -3048,19 +3472,19 @@
 .method public dismissDialog()V
     .locals 2
 
-    .line 625
+    .line 681
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isEnabledSemClipboard()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 626
+    .line 682
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
-    const-string v1, "semclipboard"
+    const-string/jumbo v1, "semclipboard"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -3068,7 +3492,7 @@
 
     check-cast v0, Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
-    .line 627
+    .line 683
     invoke-virtual {v0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->dismissDialog()V
 
     :cond_0
@@ -3081,20 +3505,29 @@
     :try_start_0
     const-string v0, "clipboard sync init"
 
-    .line 136
+    .line 134
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 137
+    .line 135
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->createClipboardCacheDir()V
 
-    .line 139
+    .line 136
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->removeOldClipboardCache()V
+
+    .line 137
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->updateClipboardStatus()V
+
+    .line 138
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->registerUpdateClipboardStatusBR()V
+
+    .line 140
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandLock:Ljava/lang/Object;
 
     monitor-enter v0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 140
+    .line 141
     :try_start_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
@@ -3120,7 +3553,7 @@
     :goto_0
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->fileSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
-    .line 141
+    .line 142
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object v1
@@ -3129,7 +3562,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->addWiDiListiner(Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;)V
 
-    .line 142
+    .line 143
     monitor-exit v0
 
     goto :goto_1
@@ -3149,7 +3582,7 @@
     :catch_0
     move-exception v0
 
-    .line 144
+    .line 145
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_1
@@ -3159,7 +3592,7 @@
 .method public isEnabledSemClipboard()Z
     .locals 2
 
-    .line 617
+    .line 673
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -3170,12 +3603,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 618
+    .line 674
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
-    const-string v1, "semclipboard"
+    const-string/jumbo v1, "semclipboard"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -3183,7 +3616,7 @@
 
     check-cast v0, Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
-    .line 619
+    .line 675
     invoke-virtual {v0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isEnabled()Z
 
     move-result v0
@@ -3199,19 +3632,19 @@
 .method public isShowing()Z
     .locals 2
 
-    .line 632
+    .line 688
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isEnabledSemClipboard()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 633
+    .line 689
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
-    const-string v1, "semclipboard"
+    const-string/jumbo v1, "semclipboard"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -3219,7 +3652,7 @@
 
     check-cast v0, Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
-    .line 634
+    .line 690
     invoke-virtual {v0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isShowing()Z
 
     move-result v0
@@ -3235,7 +3668,7 @@
 .method public isSyncing()Z
     .locals 1
 
-    .line 657
+    .line 713
     sget-object v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;->NONE:Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->isState(Ljava/lang/Object;)Z
@@ -3249,19 +3682,29 @@
 
 .method public onReceiveSocketServerOpened(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "type",
+            "serverAddress",
+            "serverPort"
+        }
+    .end annotation
 
-    .line 528
+    .line 584
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->serverLock:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 529
+    .line 585
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->isInterrupted()Z
 
@@ -3269,7 +3712,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 530
+    .line 586
     :cond_0
     new-instance v0, Landroid/os/HandlerThread;
 
@@ -3279,10 +3722,10 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
 
-    .line 531
+    .line 587
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 532
+    .line 588
     new-instance v0, Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtReceiveSocket:Landroid/os/HandlerThread;
@@ -3295,17 +3738,17 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mReceiveSocketHandler:Landroid/os/Handler;
 
-    .line 535
+    .line 591
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mReceiveSocketHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$4;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$5;
 
-    invoke-direct {v1, p0, p2, p3}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$4;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/String;I)V
+    invoke-direct {v1, p0, p2, p3}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$5;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Ljava/lang/String;I)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 555
+    .line 611
     monitor-exit p1
 
     return-void
@@ -3322,11 +3765,19 @@
 
 .method public receiveClipData(Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "clipboardSyncData"
+        }
+    .end annotation
 
-    .line 431
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$3;
+    .line 485
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$4;
 
-    invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$3;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$4;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;Lcom/samsung/android/galaxycontinuity/data/ClipboardSyncData;)V
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandExecute(Ljava/lang/Runnable;)V
 
@@ -3335,8 +3786,16 @@
 
 .method public removeStateListener(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$IClipSyncStateListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 822
+    .line 878
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncStateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -3345,7 +3804,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 823
+    .line 879
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncStateListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -3357,10 +3816,10 @@
 .method public startSync()V
     .locals 1
 
-    .line 192
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$1;
+    .line 242
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$2;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$1;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$2;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandExecute(Ljava/lang/Runnable;)V
 
@@ -3370,35 +3829,35 @@
 .method public stopSync()V
     .locals 3
 
-    .line 219
+    .line 272
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    const-string v1, "stop clipboard sync"
+    const-string/jumbo v1, "stop clipboard sync"
 
-    .line 220
+    .line 273
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 221
+    .line 274
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtClipboardSync:Landroid/os/HandlerThread;
 
     if-eqz v1, :cond_1
 
-    .line 222
+    .line 275
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mClipSyncHandler:Landroid/os/Handler;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 224
+    .line 277
     iget-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mIsStopping:Z
 
     if-nez v1, :cond_0
 
-    .line 225
+    .line 278
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mHtClipboardSync:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->interrupt()V
@@ -3406,19 +3865,19 @@
     :cond_0
     const/4 v1, 0x1
 
-    .line 227
+    .line 280
     iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->mIsStopping:Z
 
-    .line 229
+    .line 282
     :cond_1
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 231
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$2;
+    .line 284
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$3;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$2;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$3;-><init>(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;)V
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->commandExecute(Ljava/lang/Runnable;)V
 
@@ -3427,7 +3886,7 @@
     :catchall_0
     move-exception v1
 
-    .line 229
+    .line 282
     :try_start_1
     monitor-exit v0
     :try_end_1

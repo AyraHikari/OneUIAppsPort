@@ -110,7 +110,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 7
+    .locals 8
 
     .line 156
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -123,41 +123,37 @@
     iput-object v0, p0, Lcom/google/common/base/FinalizableReferenceQueue;->queue:Ljava/lang/ref/ReferenceQueue;
 
     .line 159
-    new-instance v0, Ljava/lang/ref/PhantomReference;
+    new-instance v1, Ljava/lang/ref/PhantomReference;
 
-    iget-object v1, p0, Lcom/google/common/base/FinalizableReferenceQueue;->queue:Ljava/lang/ref/ReferenceQueue;
+    invoke-direct {v1, p0, v0}, Ljava/lang/ref/PhantomReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    invoke-direct {v0, p0, v1}, Ljava/lang/ref/PhantomReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
+    iput-object v1, p0, Lcom/google/common/base/FinalizableReferenceQueue;->frqRef:Ljava/lang/ref/PhantomReference;
 
-    iput-object v0, p0, Lcom/google/common/base/FinalizableReferenceQueue;->frqRef:Ljava/lang/ref/PhantomReference;
+    const/4 v2, 0x1
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     .line 162
     :try_start_0
-    sget-object v3, Lcom/google/common/base/FinalizableReferenceQueue;->startFinalizer:Ljava/lang/reflect/Method;
+    sget-object v4, Lcom/google/common/base/FinalizableReferenceQueue;->startFinalizer:Ljava/lang/reflect/Method;
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    const/4 v5, 0x3
+    const/4 v6, 0x3
 
-    new-array v5, v5, [Ljava/lang/Object;
+    new-array v6, v6, [Ljava/lang/Object;
 
-    const-class v6, Lcom/google/common/base/FinalizableReference;
+    const-class v7, Lcom/google/common/base/FinalizableReference;
 
-    aput-object v6, v5, v2
+    aput-object v7, v6, v3
 
-    iget-object v6, p0, Lcom/google/common/base/FinalizableReferenceQueue;->queue:Ljava/lang/ref/ReferenceQueue;
+    aput-object v0, v6, v2
 
-    aput-object v6, v5, v1
+    const/4 v0, 0x2
 
-    const/4 v6, 0x2
+    aput-object v1, v6, v0
 
-    aput-object v0, v5, v6
-
-    invoke-virtual {v3, v4, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -170,17 +166,17 @@
     .line 167
     sget-object v1, Lcom/google/common/base/FinalizableReferenceQueue;->logger:Ljava/util/logging/Logger;
 
-    sget-object v3, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
+    sget-object v2, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 
     const-string v4, "Failed to start reference finalizer thread. Reference cleanup will only occur when new references are created."
 
-    invoke-virtual {v1, v3, v4, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v2, v4, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    move v1, v2
+    move v2, v3
 
     .line 171
     :goto_0
-    iput-boolean v1, p0, Lcom/google/common/base/FinalizableReferenceQueue;->threadStarted:Z
+    iput-boolean v2, p0, Lcom/google/common/base/FinalizableReferenceQueue;->threadStarted:Z
 
     return-void
 

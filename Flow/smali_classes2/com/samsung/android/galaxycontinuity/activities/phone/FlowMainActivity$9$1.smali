@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 1042
+    .line 1078
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,172 +44,70 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 4
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "which"
+        }
+    .end annotation
 
-    .line 1045
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
-
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$2000(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)V
-
-    .line 1047
-    new-instance p1, Ljava/util/HashMap;
-
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
-
-    const-string p2, "Set Secure Dialog Result"
-
-    const-string v0, "1"
-
-    .line 1049
-    invoke-virtual {p1, p2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string p2, "6005"
-
-    .line 1051
-    invoke-static {p2, p1}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;Ljava/util/HashMap;)V
-
-    .line 1053
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
-
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->getApplicationContext()Landroid/content/Context;
+    .line 1081
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/auth/util/FingerPrintHelper;->isFingerPrintSupportedDevice(Landroid/content/Context;)Z
+    const-string p2, ""
 
-    move-result p1
+    invoke-virtual {p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setGearPopupBTMACAddress(Ljava/lang/String;)V
 
-    const-string p2, "com.android.settings.LOCKSCREEN_SETTINGS"
+    .line 1083
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
-    const-string v0, "com.samsung.settings.LOCKSCREENMENU_SETTINGS"
+    move-result-object p1
 
-    const-string v1, "android.settings.SETTINGS"
+    invoke-virtual {p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setGearPopupDeviceID(Ljava/lang/String;)V
 
-    const/16 v2, 0x1c
+    .line 1085
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
-    const/4 v3, 0x0
+    move-result-object p1
 
-    if-eqz p1, :cond_1
-
-    .line 1055
-    :try_start_0
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    if-lt p1, v2, :cond_0
-
-    .line 1056
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
-
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    new-instance v0, Landroid/content/Intent;
-
-    invoke-direct {v0, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, v0, v3}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->startActivityForResult(Landroid/content/Intent;I)V
-
-    goto :goto_0
-
-    .line 1058
-    :cond_0
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
-
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    new-instance p2, Landroid/content/Intent;
-
-    invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, p2, v3}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->startActivityForResult(Landroid/content/Intent;I)V
-    :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 1064
-    :catch_0
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
-
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    new-instance p2, Landroid/content/Intent;
-
-    invoke-direct {p2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, p2, v3}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->startActivityForResult(Landroid/content/Intent;I)V
-
-    goto :goto_0
-
-    .line 1061
-    :catch_1
-    new-instance p1, Landroid/content/Intent;
-
-    const-string p2, "android.app.action.SET_NEW_PASSWORD"
-
-    invoke-direct {p1, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 1062
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
 
-    iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+    iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->val$deviceID:Ljava/lang/String;
 
-    invoke-virtual {p2, p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->startActivity(Landroid/content/Intent;)V
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
 
-    goto :goto_0
+    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->val$btMacAddr:Ljava/lang/String;
 
-    .line 1068
-    :cond_1
-    :try_start_1
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {p1, p2, v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getFlowDevice(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowDevice;
 
-    if-lt p1, v2, :cond_2
+    move-result-object p1
 
-    .line 1069
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
+    if-eqz p1, :cond_0
 
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+    const/4 p2, 0x0
 
-    new-instance v0, Landroid/content/Intent;
+    .line 1088
+    iput-boolean p2, p1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isGearAllowPopupNeeded:Z
 
-    invoke-direct {v0, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    const/4 p2, 0x1
 
-    invoke-virtual {p1, v0, v3}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->startActivityForResult(Landroid/content/Intent;I)V
+    .line 1089
+    iput-boolean p2, p1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isAllowConnectionViaGear:Z
 
-    goto :goto_0
+    .line 1091
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
-    .line 1071
-    :cond_2
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
+    move-result-object p2
 
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+    invoke-virtual {p2, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->update(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)Z
 
-    new-instance p2, Landroid/content/Intent;
-
-    invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, p2, v3}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->startActivityForResult(Landroid/content/Intent;I)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
-
-    goto :goto_0
-
-    .line 1074
-    :catch_2
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;
-
-    iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$9;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    new-instance p2, Landroid/content/Intent;
-
-    invoke-direct {p2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, p2, v3}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->startActivityForResult(Landroid/content/Intent;I)V
-
-    :goto_0
+    :cond_0
     return-void
 .end method

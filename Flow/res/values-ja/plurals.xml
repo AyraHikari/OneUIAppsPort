@@ -8,14 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flowで最大%d台のPC/タブレットを登録して管理することができます。
-
-端末に一度に接続できるPC/タブレットは1台のみです。登録した2台のPC/タブレットが端末に接続しようとした場合、1台を選択する必要があります。"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d 件の新しい通知</item>
+        <item quantity="one">%d 件の新しい通知</item>
     </plurals>
 </resources>

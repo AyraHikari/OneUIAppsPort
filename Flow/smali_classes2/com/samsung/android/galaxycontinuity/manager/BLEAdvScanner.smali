@@ -14,6 +14,14 @@
 # direct methods
 .method public constructor <init>(Landroid/bluetooth/BluetoothAdapter;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "adapter"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -68,6 +76,14 @@
 # virtual methods
 .method public startScanning(Landroid/bluetooth/le/ScanCallback;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
     .line 28
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/BLEAdvScanner;->mBluetoothLeScanner:Landroid/bluetooth/le/BluetoothLeScanner;

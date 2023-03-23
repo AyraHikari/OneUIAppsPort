@@ -6,8 +6,18 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/content/Context;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "args"
+        }
+    .end annotation
 
-    .line 28
+    .line 29
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/command/CommandBase;-><init>(Landroid/content/Context;[Ljava/lang/Object;)V
 
     return-void
@@ -20,15 +30,15 @@
 
     const-string v0, "Run RecvHandshakeCommand"
 
-    .line 33
+    .line 34
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 36
+    .line 37
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_a
 
-    .line 37
+    .line 38
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -39,51 +49,14 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setClientVersion(I)V
 
-    .line 38
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    const/4 v1, 0x1
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    .line 39
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
-
-    iget v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->VERSION:I
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    aput-object v3, v2, v4
-
-    const-string v3, "%s"
-
-    invoke-static {v3, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "Connected Device Version"
-
-    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v2, "7100"
-
     .line 40
-    invoke-static {v2, v0}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;Ljava/util/HashMap;)V
-
-    .line 42
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
-    const-string v2, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
+    const-string v1, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
@@ -91,21 +64,29 @@
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
-    .line 44
+    .line 42
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
-    .line 45
+    .line 43
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v0
+
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;->deviceID:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
@@ -113,17 +94,9 @@
 
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
 
-    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;->deviceID:Ljava/lang/String;
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;->MACAddress:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;->MACAddress:Ljava/lang/String;
-
-    invoke-virtual {v0, v3, v5}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getFlowDevice(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowDevice;
+    invoke-virtual {v0, v2, v3}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getFlowDevice(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowDevice;
 
     move-result-object v0
 
@@ -131,151 +104,147 @@
 
     return-void
 
-    .line 50
+    .line 48
     :cond_0
-    iget-boolean v3, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isDynamicLockAvailable:Z
+    new-instance v2, Ljava/util/HashMap;
 
-    .line 52
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+    invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+    .line 49
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isTablet()Z
 
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
+    move-result v3
 
-    iget-boolean v5, v5, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isGearAvailable:Z
+    const-string v4, "Connected Device Version"
 
-    iput-boolean v5, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isGearRegistered:Z
+    if-eqz v3, :cond_1
 
-    .line 53
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+    const-string v3, "2"
 
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->GearMACAddress:Ljava/lang/String;
-
-    iput-object v5, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->GearMACAddress:Ljava/lang/String;
-
-    .line 54
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
-
-    iget-boolean v5, v5, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isBioAuthAvailable:Z
-
-    iput-boolean v5, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isBioAvailable:Z
-
-    .line 55
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
-
-    iget-boolean v5, v5, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isDynamicLockAvailable:Z
-
-    iput-boolean v5, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isDynamicLockAvailable:Z
-
-    .line 58
-    :try_start_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->update(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)Z
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 50
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    :catch_0
-    move-exception v5
+    .line 52
+    :cond_1
+    iget-object v3, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->deviceType:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+
+    sget-object v5, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_WINDOWS:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+
+    if-ne v3, v5, :cond_2
+
+    const-string v3, "1"
+
+    .line 53
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_2
+    const-string v3, "0"
+
+    .line 55
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :goto_0
+    const-string v3, "7100"
+
+    .line 58
+    invoke-static {v3, v2}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;Ljava/util/HashMap;)V
 
     .line 60
-    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    iget-boolean v2, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isDynamicLockAvailable:Z
 
-    .line 63
-    :goto_0
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
-
-    iget-boolean v5, v5, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isDynamicLockAvailable:Z
-
-    if-eq v3, v5, :cond_1
-
-    .line 64
-    new-instance v3, Landroid/content/Intent;
-
-    const-string v5, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_UPDATE_ONGOING_NOTI"
-
-    invoke-direct {v3, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const/4 v5, 0x3
-
-    const-string v6, "ONGING_NOTI_TYPE"
-
-    .line 65
-    invoke-virtual {v3, v6, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 66
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
-
-    iget-object v5, v5, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;->deviceID:Ljava/lang/String;
-
-    const-string v6, "ONGING_NOTI_DEVICE_ID"
-
-    invoke-virtual {v3, v6, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 67
-    iget-object v5, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->MACAddress:Ljava/lang/String;
-
-    const-string v6, "ONGING_NOTI_MACADDRESS"
-
-    invoke-virtual {v3, v6, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 68
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v3, v2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
-
-    .line 71
-    :cond_1
+    .line 62
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
 
-    iget-boolean v3, v3, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isGearPopupNeed:Z
+    iget-boolean v3, v3, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isGearAvailable:Z
 
-    if-eqz v3, :cond_2
+    iput-boolean v3, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isGearRegistered:Z
 
-    .line 72
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+    .line 63
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->GearMACAddress:Ljava/lang/String;
+
+    iput-object v3, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->GearMACAddress:Ljava/lang/String;
+
+    .line 64
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
+
+    iget-boolean v3, v3, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isBioAuthAvailable:Z
+
+    iput-boolean v3, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isBioAvailable:Z
+
+    .line 65
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
+
+    iget-boolean v3, v3, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isDynamicLockAvailable:Z
+
+    iput-boolean v3, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isDynamicLockAvailable:Z
+
+    .line 68
+    :try_start_0
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v3
 
-    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->MACAddress:Ljava/lang/String;
+    invoke-virtual {v3, v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->update(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)Z
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v3, v0}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setGearPopupBTMACAddress(Ljava/lang/String;)V
+    goto :goto_1
+
+    :catch_0
+    move-exception v3
+
+    .line 70
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+
+    .line 73
+    :goto_1
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
+
+    iget-boolean v3, v3, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isDynamicLockAvailable:Z
+
+    if-eq v2, v3, :cond_3
 
     .line 74
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+    new-instance v2, Landroid/content/Intent;
 
-    move-result-object v0
+    const-string v3, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_UPDATE_ONGOING_NOTI"
 
+    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const/4 v3, 0x3
+
+    const-string v4, "ONGING_NOTI_TYPE"
+
+    .line 75
+    invoke-virtual {v2, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 76
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
@@ -284,38 +253,90 @@
 
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;->deviceID:Ljava/lang/String;
 
-    invoke-virtual {v0, v3}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setGearPopupDeviceID(Ljava/lang/String;)V
+    const-string v4, "ONGING_NOTI_DEVICE_ID"
 
-    .line 76
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v3, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_GEAR_POPUP_NEEDED"
-
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v2, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 77
+    iget-object v3, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->MACAddress:Ljava/lang/String;
+
+    const-string v4, "ONGING_NOTI_MACADDRESS"
+
+    invoke-virtual {v2, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 78
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v3
 
-    invoke-virtual {v3, v0, v2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-virtual {v3, v2, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 83
-    :cond_2
+    .line 81
+    :cond_3
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->authConfigInfoData:Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;
+
+    iget-boolean v2, v2, Lcom/samsung/android/galaxycontinuity/data/AuthConfigInfoData;->isGearPopupNeed:Z
+
+    if-eqz v2, :cond_4
+
+    .line 82
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+
+    move-result-object v2
+
+    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->MACAddress:Ljava/lang/String;
+
+    invoke-virtual {v2, v0}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setGearPopupBTMACAddress(Ljava/lang/String;)V
+
+    .line 84
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/command/RecvHandshakeCommand;->mFlowMessage:Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;->deviceID:Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setGearPopupDeviceID(Ljava/lang/String;)V
+
+    .line 86
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v2, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_GEAR_POPUP_NEEDED"
+
+    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 87
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+
+    .line 93
+    :cond_4
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->clearParserCache()V
 
-    .line 84
+    .line 94
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->clearImageHashCodeCache()V
 
-    .line 86
+    .line 96
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
 
     move-result-object v0
@@ -324,56 +345,60 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz v0, :cond_5
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isHotspotAvailable()Z
 
     move-result v0
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_5
 
-    move v0, v1
-
-    goto :goto_1
-
-    :cond_3
-    move v0, v4
-
-    .line 87
-    :goto_1
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->isEnabled()Z
-
-    move-result v3
-
-    if-nez v3, :cond_5
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->isEnabling()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_4
+    move v0, v2
 
     goto :goto_2
 
-    :cond_4
-    move v3, v4
+    :cond_5
+    move v0, v3
+
+    .line 97
+    :goto_2
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->isEnabled()Z
+
+    move-result v4
+
+    if-nez v4, :cond_7
+
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->isEnabling()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_6
 
     goto :goto_3
 
-    :cond_5
-    :goto_2
-    move v3, v1
+    :cond_6
+    move v4, v3
 
-    .line 88
+    goto :goto_4
+
+    :cond_7
     :goto_3
+    move v4, v2
+
+    .line 98
+    :goto_4
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v5
@@ -382,7 +407,7 @@
 
     move-result v5
 
-    .line 89
+    .line 99
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -391,7 +416,11 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -399,77 +428,78 @@
 
     invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 91
+    .line 101
     new-instance v6, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     invoke-direct {v6}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;-><init>()V
 
-    .line 92
+    .line 102
     new-instance v7, Lcom/samsung/android/galaxycontinuity/data/HotspotInfoData;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_8
 
-    if-eqz v5, :cond_6
-
-    goto :goto_4
-
-    :cond_6
-    move v1, v4
-
-    :goto_4
-    if-eqz v3, :cond_7
-
-    const-string v0, "ENABLE"
+    if-eqz v5, :cond_8
 
     goto :goto_5
 
-    :cond_7
-    const-string v0, "DISABLE"
+    :cond_8
+    move v2, v3
 
     :goto_5
-    invoke-direct {v7, v1, v0}, Lcom/samsung/android/galaxycontinuity/data/HotspotInfoData;-><init>(ZLjava/lang/String;)V
+    if-eqz v4, :cond_9
+
+    const-string v0, "ENABLE"
+
+    goto :goto_6
+
+    :cond_9
+    const-string v0, "DISABLE"
+
+    .line 103
+    :goto_6
+    invoke-direct {v7, v2, v0}, Lcom/samsung/android/galaxycontinuity/data/HotspotInfoData;-><init>(ZLjava/lang/String;)V
 
     iput-object v7, v6, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->hotspotInfoData:Lcom/samsung/android/galaxycontinuity/data/HotspotInfoData;
 
-    .line 95
+    .line 105
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/HdmiInfoData;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->isHdmiSwitchSet()Z
 
-    move-result v1
+    move-result v2
 
-    invoke-direct {v0, v1}, Lcom/samsung/android/galaxycontinuity/data/HdmiInfoData;-><init>(Z)V
+    invoke-direct {v0, v2}, Lcom/samsung/android/galaxycontinuity/data/HdmiInfoData;-><init>(Z)V
 
     iput-object v0, v6, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->hdmiInfoData:Lcom/samsung/android/galaxycontinuity/data/HdmiInfoData;
 
-    .line 97
+    .line 107
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
-    const-string v1, "RecvHandshakeCommand"
+    const-string v2, "RecvHandshakeCommand"
 
-    invoke-direct {v0, v1, v6}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
+    invoke-direct {v0, v2, v6}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
 
-    .line 101
+    .line 111
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, v0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->sendMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
+    invoke-virtual {v2, v0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->sendMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
 
-    .line 103
+    .line 113
     new-instance v0, Landroid/content/Intent;
 
-    const-string v1, "HANDSHAKE_FINISHED"
+    const-string v2, "HANDSHAKE_FINISHED"
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 104
+    .line 114
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    :cond_8
+    :cond_a
     return-void
 .end method

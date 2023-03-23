@@ -78,6 +78,18 @@
 
 .method public static addMediaHeader([BIJ)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "size",
+            "tick"
+        }
+    .end annotation
 
     shr-int/lit8 v0, p1, 0x18
 
@@ -216,6 +228,14 @@
 
 .method public static byteArrayToLeInt([B)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "encodedValue"
+        }
+    .end annotation
 
     const/4 v0, 0x3
 
@@ -260,6 +280,14 @@
 
 .method public static byteArrayToLeLong([B)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "encodedValue"
+        }
+    .end annotation
 
     .line 66
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;

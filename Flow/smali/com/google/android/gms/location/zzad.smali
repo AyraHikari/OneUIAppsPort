@@ -1,49 +1,52 @@
-.class final Lcom/google/android/gms/location/zzad;
-.super Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;
+.class public final synthetic Lcom/google/android/gms/location/zzad;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
+
+# interfaces
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/api/Api$AbstractClientBuilder<",
-        "Lcom/google/android/gms/internal/location/zzaz;",
-        "Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final synthetic zza:Lcom/google/android/gms/location/zzad;
 
 
 # direct methods
-.method constructor <init>()V
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/location/zzad;
+
+    invoke-direct {v0}, Lcom/google/android/gms/location/zzad;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/location/zzad;->zza:Lcom/google/android/gms/location/zzad;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic buildClient(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
-    .locals 7
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
 
-    new-instance p4, Lcom/google/android/gms/internal/location/zzaz;
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    const-string v5, "locationServices"
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    move-object v0, p4
+    .line 1
+    new-instance v0, Lcom/google/android/gms/location/zzav;
 
-    move-object v1, p1
+    invoke-direct {v0, p2}, Lcom/google/android/gms/location/zzav;-><init>(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    move-object v2, p2
+    .line 2
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/internal/location/zzbe;->zzs(Lcom/google/android/gms/internal/location/zzai;)V
 
-    move-object v3, p5
-
-    move-object v4, p6
-
-    move-object v6, p3
-
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/internal/location/zzaz;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;Ljava/lang/String;Lcom/google/android/gms/common/internal/ClientSettings;)V
-
-    return-object p4
+    return-void
 .end method

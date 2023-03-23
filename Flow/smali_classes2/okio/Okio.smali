@@ -208,7 +208,7 @@
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "timeout == null"
+    const-string/jumbo p1, "timeout == null"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -267,7 +267,7 @@
     :cond_0
     new-instance p0, Ljava/io/IOException;
 
-    const-string v0, "socket\'s output stream == null"
+    const-string/jumbo v0, "socket\'s output stream == null"
 
     invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
@@ -277,7 +277,7 @@
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "socket == null"
+    const-string/jumbo v0, "socket == null"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -381,7 +381,7 @@
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "timeout == null"
+    const-string/jumbo p1, "timeout == null"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -440,7 +440,7 @@
     :cond_0
     new-instance p0, Ljava/io/IOException;
 
-    const-string v0, "socket\'s input stream == null"
+    const-string/jumbo v0, "socket\'s input stream == null"
 
     invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
@@ -450,7 +450,7 @@
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "socket == null"
+    const-string/jumbo v0, "socket == null"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

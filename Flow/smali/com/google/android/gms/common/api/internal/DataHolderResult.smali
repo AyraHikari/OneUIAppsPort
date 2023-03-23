@@ -1,9 +1,10 @@
-.class public Lcom/google/android/gms/common/api/internal/DataHolderResult;
+.class public abstract Lcom/google/android/gms/common/api/internal/DataHolderResult;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/common/api/Releasable;
 .implements Lcom/google/android/gms/common/api/Result;
+.implements Lcom/google/android/gms/common/api/Releasable;
 
 
 # instance fields
@@ -33,13 +34,10 @@
 .method protected constructor <init>(Lcom/google/android/gms/common/data/DataHolder;Lcom/google/android/gms/common/api/Status;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     iput-object p2, p0, Lcom/google/android/gms/common/api/internal/DataHolderResult;->mStatus:Lcom/google/android/gms/common/api/Status;
 
-    .line 5
     iput-object p1, p0, Lcom/google/android/gms/common/api/internal/DataHolderResult;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
     return-void
@@ -50,7 +48,6 @@
 .method public getStatus()Lcom/google/android/gms/common/api/Status;
     .locals 1
 
-    .line 7
     iget-object v0, p0, Lcom/google/android/gms/common/api/internal/DataHolderResult;->mStatus:Lcom/google/android/gms/common/api/Status;
 
     return-object v0
@@ -59,12 +56,11 @@
 .method public release()V
     .locals 1
 
-    .line 8
+    .line 1
     iget-object v0, p0, Lcom/google/android/gms/common/api/internal/DataHolderResult;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
     if-eqz v0, :cond_0
 
-    .line 9
     invoke-virtual {v0}, Lcom/google/android/gms/common/data/DataHolder;->close()V
 
     :cond_0

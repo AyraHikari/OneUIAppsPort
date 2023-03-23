@@ -35,41 +35,51 @@
 # direct methods
 .method constructor <init>(Landroidx/room/InvalidationTracker$Observer;[I[Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "observer",
+            "tableIds",
+            "tableNames"
+        }
+    .end annotation
 
-    .line 597
+    .line 655
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 598
+    .line 656
     iput-object p1, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mObserver:Landroidx/room/InvalidationTracker$Observer;
 
-    .line 599
+    .line 657
     iput-object p2, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableIds:[I
 
-    .line 600
+    .line 658
     iput-object p3, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableNames:[Ljava/lang/String;
 
-    .line 601
+    .line 659
     array-length p1, p2
 
     const/4 p2, 0x1
 
     if-ne p1, p2, :cond_0
 
-    .line 602
+    .line 660
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    .line 603
-    iget-object p2, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableNames:[Ljava/lang/String;
+    const/4 p2, 0x0
 
-    const/4 p3, 0x0
-
-    aget-object p2, p2, p3
+    .line 661
+    aget-object p2, p3, p2
 
     invoke-virtual {p1, p2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 604
+    .line 662
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     move-result-object p1
@@ -81,7 +91,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 606
+    .line 664
     iput-object p1, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mSingleTableSet:Ljava/util/Set;
 
     :goto_0
@@ -92,6 +102,15 @@
 # virtual methods
 .method notifyByTableInvalidStatus(Ljava/util/Set;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "invalidatedTablesIds"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -101,7 +120,7 @@
         }
     .end annotation
 
-    .line 618
+    .line 676
     iget-object v0, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableIds:[I
 
     array-length v0, v0
@@ -113,12 +132,12 @@
     :goto_0
     if-ge v2, v0, :cond_3
 
-    .line 620
+    .line 678
     iget-object v3, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableIds:[I
 
     aget v3, v3, v2
 
-    .line 621
+    .line 679
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -133,7 +152,7 @@
 
     if-ne v0, v3, :cond_0
 
-    .line 624
+    .line 682
     iget-object v1, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mSingleTableSet:Ljava/util/Set;
 
     goto :goto_1
@@ -141,12 +160,12 @@
     :cond_0
     if-nez v1, :cond_1
 
-    .line 627
+    .line 685
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 629
+    .line 687
     :cond_1
     iget-object v3, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableNames:[Ljava/lang/String;
 
@@ -163,7 +182,7 @@
     :cond_3
     if-eqz v1, :cond_4
 
-    .line 634
+    .line 692
     iget-object p1, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mObserver:Landroidx/room/InvalidationTracker$Observer;
 
     invoke-virtual {p1, v1}, Landroidx/room/InvalidationTracker$Observer;->onInvalidated(Ljava/util/Set;)V
@@ -174,8 +193,16 @@
 
 .method notifyByTableNames([Ljava/lang/String;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tables"
+        }
+    .end annotation
 
-    .line 646
+    .line 704
     iget-object v0, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableNames:[Ljava/lang/String;
 
     array-length v0, v0
@@ -188,7 +215,7 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 647
+    .line 705
     array-length v0, p1
 
     move v2, v1
@@ -198,7 +225,7 @@
 
     aget-object v4, p1, v2
 
-    .line 648
+    .line 706
     iget-object v5, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableNames:[Ljava/lang/String;
 
     aget-object v5, v5, v1
@@ -209,7 +236,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 650
+    .line 708
     iget-object v3, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mSingleTableSet:Ljava/util/Set;
 
     goto :goto_4
@@ -219,13 +246,13 @@
 
     goto :goto_0
 
-    .line 655
+    .line 713
     :cond_1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 656
+    .line 714
     array-length v2, p1
 
     move v4, v1
@@ -235,7 +262,7 @@
 
     aget-object v5, p1, v4
 
-    .line 657
+    .line 715
     iget-object v6, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mTableNames:[Ljava/lang/String;
 
     array-length v7, v6
@@ -247,14 +274,14 @@
 
     aget-object v9, v6, v8
 
-    .line 658
+    .line 716
     invoke-virtual {v9, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v10
 
     if-eqz v10, :cond_2
 
-    .line 659
+    .line 717
     invoke-virtual {v0, v9}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
@@ -270,7 +297,7 @@
 
     goto :goto_1
 
-    .line 664
+    .line 722
     :cond_4
     invoke-virtual {v0}, Ljava/util/HashSet;->size()I
 
@@ -284,7 +311,7 @@
     :goto_4
     if-eqz v3, :cond_6
 
-    .line 669
+    .line 727
     iget-object p1, p0, Landroidx/room/InvalidationTracker$ObserverWrapper;->mObserver:Landroidx/room/InvalidationTracker$Observer;
 
     invoke-virtual {p1, v3}, Landroidx/room/InvalidationTracker$Observer;->onInvalidated(Ljava/util/Set;)V

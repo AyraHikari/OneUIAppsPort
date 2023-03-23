@@ -10,9 +10,9 @@
 
 .field public static final LIBRARY_PACKAGE_NAME:Ljava/lang/String; = "com.samsung.android.sdk.scs.ai"
 
-.field public static final VERSION_CODE:I = 0x5fa74e1
+.field public static final VERSION_CODE:I = 0x5fa74e2
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "1.3.1"
+.field public static final VERSION_NAME:Ljava/lang/String; = "1.3.2"
 
 
 # direct methods

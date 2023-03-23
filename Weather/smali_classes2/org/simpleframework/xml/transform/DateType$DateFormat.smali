@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "DateFormat"
 .end annotation
 
@@ -22,10 +22,10 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 162
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 163
+    .line 2
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     invoke-direct {v0, p1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
@@ -39,15 +39,9 @@
 # virtual methods
 .method public declared-synchronized getDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
     monitor-enter p0
 
-    .line 189
     :try_start_0
     iget-object v0, p0, Lorg/simpleframework/xml/transform/DateType$DateFormat;->format:Ljava/text/SimpleDateFormat;
 
@@ -71,15 +65,9 @@
 
 .method public declared-synchronized getText(Ljava/util/Date;)Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
     monitor-enter p0
 
-    .line 176
     :try_start_0
     iget-object v0, p0, Lorg/simpleframework/xml/transform/DateType$DateFormat;->format:Ljava/text/SimpleDateFormat;
 

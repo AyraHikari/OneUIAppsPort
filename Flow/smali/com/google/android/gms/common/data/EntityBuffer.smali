@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/data/EntityBuffer;
 .super Lcom/google/android/gms/common/data/AbstractDataBuffer;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -15,9 +16,9 @@
 
 
 # instance fields
-.field private zame:Z
+.field private zaa:Z
 
-.field private zamf:Ljava/util/ArrayList;
+.field private zab:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -37,37 +38,40 @@
 
     const/4 p1, 0x0
 
-    .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zame:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zaa:Z
 
     return-void
 .end method
 
-.method private final zacb()V
+.method private final zab()V
     .locals 7
 
-    .line 23
+    .line 1
     monitor-enter p0
 
-    .line 24
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zame:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zaa:Z
 
     if-nez v0, :cond_3
 
-    .line 25
     iget-object v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
+
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/common/data/DataHolder;
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/data/DataHolder;->getCount()I
 
     move-result v0
 
-    .line 26
     new-instance v1, Ljava/util/ArrayList;
 
+    .line 2
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
     const/4 v2, 0x1
 
@@ -75,28 +79,28 @@
 
     const/4 v3, 0x0
 
-    .line 28
+    .line 3
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
     invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 29
+    .line 4
     invoke-virtual {p0}, Lcom/google/android/gms/common/data/EntityBuffer;->getPrimaryDataMarkerColumn()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 30
     iget-object v4, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
+    .line 5
     invoke-virtual {v4, v3}, Lcom/google/android/gms/common/data/DataHolder;->getWindowIndex(I)I
 
     move-result v4
 
-    .line 31
     iget-object v5, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
+    .line 6
     invoke-virtual {v5, v1, v3, v4}, Lcom/google/android/gms/common/data/DataHolder;->getString(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v3
@@ -106,32 +110,32 @@
     :goto_0
     if-ge v4, v0, :cond_2
 
-    .line 33
     iget-object v5, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
+    .line 7
     invoke-virtual {v5, v4}, Lcom/google/android/gms/common/data/DataHolder;->getWindowIndex(I)I
 
     move-result v5
 
-    .line 34
     iget-object v6, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
+    .line 8
     invoke-virtual {v6, v1, v4, v5}, Lcom/google/android/gms/common/data/DataHolder;->getString(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v6
 
     if-eqz v6, :cond_1
 
-    .line 37
+    .line 9
     invoke-virtual {v6, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    .line 39
-    iget-object v3, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
+    .line 10
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
@@ -145,10 +149,11 @@
 
     goto :goto_0
 
-    .line 36
+    .line 8
     :cond_1
     new-instance v0, Ljava/lang/NullPointerException;
 
+    .line 12
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -189,11 +194,11 @@
 
     throw v0
 
-    .line 41
+    .line 10
     :cond_2
-    iput-boolean v2, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zame:Z
+    iput-boolean v2, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zaa:Z
 
-    .line 42
+    .line 11
     :cond_3
     monitor-exit p0
 
@@ -209,64 +214,6 @@
     throw v0
 .end method
 
-.method private final zah(I)I
-    .locals 3
-
-    if-ltz p1, :cond_0
-
-    .line 43
-    iget-object v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    if-ge p1, v0, :cond_0
-
-    .line 45
-    iget-object v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Integer;
-
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
-
-    move-result p1
-
-    return p1
-
-    .line 44
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const/16 v1, 0x35
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Position "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " is out of bounds for this buffer"
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
 
 # virtual methods
 .method public final get(I)Ljava/lang/Object;
@@ -277,51 +224,58 @@
         }
     .end annotation
 
-    .line 4
-    invoke-direct {p0}, Lcom/google/android/gms/common/data/EntityBuffer;->zacb()V
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/data/EntityBuffer;->zab()V
 
-    .line 5
-    invoke-direct {p0, p1}, Lcom/google/android/gms/common/data/EntityBuffer;->zah(I)I
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/data/EntityBuffer;->zaa(I)I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    if-ltz p1, :cond_3
+    const/4 v2, 0x1
 
-    .line 6
-    iget-object v2, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    if-ltz p1, :cond_4
 
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+    iget-object v3, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
-    move-result v2
+    .line 3
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
-    if-ne p1, v2, :cond_0
+    move-result v3
+
+    if-ne p1, v3, :cond_0
 
     goto :goto_1
 
-    .line 8
+    .line 2
     :cond_0
-    iget-object v2, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+    .line 4
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
-    move-result v2
+    move-result v3
 
-    const/4 v3, 0x1
+    add-int/lit8 v3, v3, -0x1
 
-    sub-int/2addr v2, v3
+    if-ne p1, v3, :cond_1
 
-    if-ne p1, v2, :cond_1
+    iget-object v3, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
-    .line 9
-    iget-object v2, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
+    .line 5
+    invoke-static {v3}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v2}, Lcom/google/android/gms/common/data/DataHolder;->getCount()I
+    move-result-object v3
 
-    move-result v2
+    check-cast v3, Lcom/google/android/gms/common/data/DataHolder;
 
-    iget-object v4, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    invoke-virtual {v3}, Lcom/google/android/gms/common/data/DataHolder;->getCount()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
     invoke-virtual {v4, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -337,21 +291,22 @@
 
     .line 10
     :cond_1
-    iget-object v2, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
     add-int/lit8 v4, p1, 0x1
 
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 6
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljava/lang/Integer;
+    check-cast v3, Ljava/lang/Integer;
 
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
-    move-result v2
+    move-result v3
 
-    iget-object v4, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
     invoke-virtual {v4, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -364,32 +319,38 @@
     move-result v4
 
     :goto_0
-    sub-int/2addr v2, v4
+    sub-int/2addr v3, v4
 
-    if-ne v2, v3, :cond_2
+    if-ne v3, v2, :cond_3
 
-    .line 12
-    invoke-direct {p0, p1}, Lcom/google/android/gms/common/data/EntityBuffer;->zah(I)I
+    .line 7
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/data/EntityBuffer;->zaa(I)I
 
     move-result p1
 
-    .line 13
     iget-object v3, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
+
+    .line 8
+    invoke-static {v3}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/android/gms/common/data/DataHolder;
 
     invoke-virtual {v3, p1}, Lcom/google/android/gms/common/data/DataHolder;->getWindowIndex(I)I
 
     move-result v3
 
-    .line 14
+    .line 9
     invoke-virtual {p0}, Lcom/google/android/gms/common/data/EntityBuffer;->getChildDataMarkerColumn()Ljava/lang/String;
 
     move-result-object v4
 
     if-eqz v4, :cond_2
 
-    .line 16
     iget-object v5, p0, Lcom/google/android/gms/common/data/EntityBuffer;->mDataHolder:Lcom/google/android/gms/common/data/DataHolder;
 
+    .line 10
     invoke-virtual {v5, v4, p1, v3}, Lcom/google/android/gms/common/data/DataHolder;->getString(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object p1
@@ -401,8 +362,13 @@
     :cond_2
     move v1, v2
 
-    .line 20
+    goto :goto_1
+
     :cond_3
+    move v1, v3
+
+    .line 2
+    :cond_4
     :goto_1
     invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/common/data/EntityBuffer;->getEntry(II)Ljava/lang/Object;
 
@@ -422,12 +388,12 @@
 .method public getCount()I
     .locals 1
 
-    .line 21
-    invoke-direct {p0}, Lcom/google/android/gms/common/data/EntityBuffer;->zacb()V
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/data/EntityBuffer;->zab()V
 
-    .line 22
-    iget-object v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zamf:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
 
+    .line 2
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -444,4 +410,64 @@
 .end method
 
 .method protected abstract getPrimaryDataMarkerColumn()Ljava/lang/String;
+.end method
+
+.method final zaa(I)I
+    .locals 3
+
+    if-ltz p1, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    if-ge p1, v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/common/data/EntityBuffer;->zab:Ljava/util/ArrayList;
+
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    return p1
+
+    .line 1
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const/16 v2, 0x35
+
+    .line 2
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v2, "Position "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, " is out of bounds for this buffer"
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

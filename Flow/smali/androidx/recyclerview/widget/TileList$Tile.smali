@@ -57,18 +57,17 @@
         }
     .end annotation
 
-    .line 92
+    .line 99
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 94
+    .line 101
     invoke-static {p1, p2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, [Ljava/lang/Object;
 
-    check-cast p1, [Ljava/lang/Object;
-
+    .line 102
     iput-object p1, p0, Landroidx/recyclerview/widget/TileList$Tile;->mItems:[Ljava/lang/Object;
 
     return-void
@@ -79,7 +78,7 @@
 .method containsPosition(I)Z
     .locals 2
 
-    .line 98
+    .line 106
     iget v0, p0, Landroidx/recyclerview/widget/TileList$Tile;->mStartPosition:I
 
     if-gt v0, p1, :cond_0
@@ -109,7 +108,7 @@
         }
     .end annotation
 
-    .line 102
+    .line 110
     iget-object v0, p0, Landroidx/recyclerview/widget/TileList$Tile;->mItems:[Ljava/lang/Object;
 
     iget v1, p0, Landroidx/recyclerview/widget/TileList$Tile;->mStartPosition:I

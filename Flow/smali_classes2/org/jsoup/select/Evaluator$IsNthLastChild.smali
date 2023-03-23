@@ -18,7 +18,7 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 467
+    .line 502
     invoke-direct {p0, p1, p2}, Lorg/jsoup/select/Evaluator$CssNthEvaluator;-><init>(II)V
 
     return-void
@@ -29,7 +29,7 @@
 .method protected calculatePosition(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)I
     .locals 0
 
-    .line 472
+    .line 507
     invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->parent()Lorg/jsoup/nodes/Element;
 
     move-result-object p1
@@ -42,11 +42,7 @@
 
     move-result p1
 
-    invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->elementSiblingIndex()Ljava/lang/Integer;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->elementSiblingIndex()I
 
     move-result p2
 

@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 311
+    .line 286
     new-instance v0, Landroidx/appcompat/widget/SeslSwitchBar$SavedState$1;
 
     invoke-direct {v0}, Landroidx/appcompat/widget/SeslSwitchBar$SavedState$1;-><init>()V
@@ -48,13 +48,21 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
-    .line 291
+    .line 307
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
     const/4 v0, 0x0
 
-    .line 292
+    .line 308
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readValue(Ljava/lang/ClassLoader;)Ljava/lang/Object;
 
     move-result-object v1
@@ -67,7 +75,7 @@
 
     iput-boolean v1, p0, Landroidx/appcompat/widget/SeslSwitchBar$SavedState;->checked:Z
 
-    .line 293
+    .line 309
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readValue(Ljava/lang/ClassLoader;)Ljava/lang/Object;
 
     move-result-object p1
@@ -86,7 +94,7 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroidx/appcompat/widget/SeslSwitchBar$1;)V
     .locals 0
 
-    .line 279
+    .line 282
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/SeslSwitchBar$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -94,8 +102,16 @@
 
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "superState"
+        }
+    .end annotation
 
-    .line 284
+    .line 300
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -106,7 +122,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 305
+    .line 321
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -115,7 +131,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 306
+    move-result-object v0
+
+    .line 322
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v1
@@ -126,25 +144,37 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " checked="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-boolean v1, p0, Landroidx/appcompat/widget/SeslSwitchBar$SavedState;->checked:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " visible="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-boolean v1, p0, Landroidx/appcompat/widget/SeslSwitchBar$SavedState;->visible:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "}"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -155,11 +185,21 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "out",
+            "flags"
+        }
+    .end annotation
 
-    .line 298
+    .line 314
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 299
+    .line 315
     iget-boolean p2, p0, Landroidx/appcompat/widget/SeslSwitchBar$SavedState;->checked:Z
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -168,7 +208,7 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 
-    .line 300
+    .line 316
     iget-boolean p2, p0, Landroidx/appcompat/widget/SeslSwitchBar$SavedState;->visible:Z
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;

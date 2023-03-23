@@ -19,11 +19,25 @@
 
 .field private static final DEBUG:Z = false
 
+.field private static final DELAY_ADD_START:J = 0x64L
+
+.field private static final DURATION_ADD:J = 0xc8L
+
+.field private static final DURATION_CHANGE:J = 0x190L
+
+.field private static final DURATION_MOVE:J = 0x190L
+
+.field private static final DURATION_REMOVE:J = 0x64L
+
+.field private static final ITEM_MOVE_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
 .field public static final MOVE_ANIM_PENDING:I = 0x2
 
 .field public static final PREV_ANIM_EXECUTED:I = 0x10
 
 .field public static final REMOVAL_ANIM_PENDING:I = 0x1
+
+.field private static final TAG:Ljava/lang/String; = "DefaultItemAnimator"
 
 .field private static sDefaultInterpolator:Landroid/animation/TimeInterpolator;
 
@@ -38,10 +52,6 @@
         }
     .end annotation
 .end field
-
-.field private mAddDuration:J
-
-.field private mAddStartDelay:J
 
 .field mAdditionsList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -64,8 +74,6 @@
     .end annotation
 .end field
 
-.field private mChangeDuration:J
-
 .field mChangesList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -76,6 +84,8 @@
         }
     .end annotation
 .end field
+
+.field private mEnableRemoveDelay:Z
 
 .field private mLastItemBottom:I
 
@@ -88,10 +98,6 @@
         }
     .end annotation
 .end field
-
-.field private mMoveDuration:J
-
-.field private mMoveInterpolator:Landroid/view/animation/Interpolator;
 
 .field mMovesList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -156,136 +162,122 @@
     .end annotation
 .end field
 
-.field private mRemoveDuration:J
-
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
     .locals 5
 
-    .line 41
+    .line 60
+    new-instance v0, Landroid/view/animation/PathInterpolator;
+
+    const v1, 0x3ecccccd    # 0.4f
+
+    const v2, 0x3f19999a    # 0.6f
+
+    const/4 v3, 0x0
+
+    const/high16 v4, 0x3f800000    # 1.0f
+
+    invoke-direct {v0, v1, v2, v3, v4}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
+
+    sput-object v0, Landroidx/recyclerview/widget/DefaultItemAnimator;->ITEM_MOVE_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 42
     invoke-direct {p0}, Landroidx/recyclerview/widget/SimpleItemAnimator;-><init>()V
 
-    .line 46
+    .line 64
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
-    .line 47
+    .line 65
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
-    .line 48
+    .line 66
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
-    .line 49
+    .line 67
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
-    .line 51
+    .line 69
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
-    .line 52
+    .line 70
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
-    .line 53
+    .line 71
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
-    .line 55
+    .line 73
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddAnimations:Ljava/util/ArrayList;
 
-    .line 56
+    .line 74
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveAnimations:Ljava/util/ArrayList;
 
-    .line 57
+    .line 75
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveAnimations:Ljava/util/ArrayList;
 
-    .line 58
+    .line 76
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeAnimations:Ljava/util/ArrayList;
 
-    const-wide/16 v0, 0x14a
-
-    .line 67
-    iput-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddDuration:J
-
-    const-wide/16 v2, 0x78
-
-    .line 68
-    iput-wide v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveDuration:J
-
-    .line 69
-    iput-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveDuration:J
-
-    .line 70
-    iput-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeDuration:J
-
-    const-wide/16 v0, 0x64
-
-    .line 71
-    iput-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddStartDelay:J
-
     const/4 v0, 0x0
 
-    .line 73
+    .line 79
     iput v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
-    .line 74
+    .line 80
     iput v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mLastItemBottom:I
 
-    .line 76
-    new-instance v0, Landroid/view/animation/PathInterpolator;
-
-    const v1, 0x3ea8f5c3    # 0.33f
-
-    const/4 v2, 0x0
-
-    const v3, 0x3e4ccccd    # 0.2f
-
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    invoke-direct {v0, v1, v2, v3, v4}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
-
-    iput-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveInterpolator:Landroid/view/animation/Interpolator;
+    .line 84
+    iput-boolean v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mEnableRemoveDelay:Z
 
     return-void
 .end method
@@ -293,42 +285,82 @@
 .method static synthetic access$000(Landroidx/recyclerview/widget/DefaultItemAnimator;)I
     .locals 0
 
-    .line 41
+    .line 42
     iget p0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     return p0
 .end method
 
-.method static synthetic access$002(Landroidx/recyclerview/widget/DefaultItemAnimator;I)I
-    .locals 0
+.method static synthetic access$072(Landroidx/recyclerview/widget/DefaultItemAnimator;I)I
+    .locals 1
 
-    .line 41
+    .line 42
+    iget v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
+
+    and-int/2addr p1, v0
+
+    iput p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
+
+    return p1
+.end method
+
+.method static synthetic access$076(Landroidx/recyclerview/widget/DefaultItemAnimator;I)I
+    .locals 1
+
+    .line 42
+    iget v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
+
+    or-int/2addr p1, v0
+
     iput p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     return p1
 .end method
 
 .method private animateRemoveImpl(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
-    .locals 4
+    .locals 6
 
-    .line 243
+    .line 302
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 244
+    .line 303
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
 
-    .line 245
-    iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveAnimations:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 246
+    .line 304
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getRemoveDuration()J
 
     move-result-wide v2
 
+    .line 306
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v4
+
+    const-string v5, "preferencecategory"
+
+    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    const-wide/16 v2, 0x0
+
+    .line 309
+    :cond_0
+    iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveAnimations:Ljava/util/ArrayList;
+
+    invoke-virtual {v4, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 310
     invoke-virtual {v1, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v2
@@ -347,7 +379,7 @@
 
     move-result-object p1
 
-    .line 265
+    .line 330
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
 
     return-void
@@ -366,7 +398,7 @@
         }
     .end annotation
 
-    .line 494
+    .line 582
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -376,21 +408,21 @@
     :goto_0
     if-ltz v0, :cond_1
 
-    .line 495
+    .line 583
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;
 
-    .line 496
+    .line 584
     invoke-direct {p0, v1, p2}, Landroidx/recyclerview/widget/DefaultItemAnimator;->endChangeAnimationIfNecessary(Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 497
+    .line 585
     iget-object v2, v1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     if-nez v2, :cond_0
@@ -399,7 +431,7 @@
 
     if-nez v2, :cond_0
 
-    .line 498
+    .line 586
     invoke-interface {p1, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     :cond_0
@@ -414,23 +446,23 @@
 .method private endChangeAnimationIfNecessary(Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;)V
     .locals 1
 
-    .line 505
+    .line 593
     iget-object v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     if-eqz v0, :cond_0
 
-    .line 506
+    .line 594
     iget-object v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->endChangeAnimationIfNecessary(Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
 
-    .line 508
+    .line 596
     :cond_0
     iget-object v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->newHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     if-eqz v0, :cond_1
 
-    .line 509
+    .line 597
     iget-object v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->newHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->endChangeAnimationIfNecessary(Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
@@ -442,7 +474,7 @@
 .method private endChangeAnimationIfNecessary(Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
     .locals 4
 
-    .line 514
+    .line 602
     iget-object v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->newHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     const/4 v1, 0x1
@@ -453,23 +485,23 @@
 
     if-ne v0, p2, :cond_0
 
-    .line 515
+    .line 603
     iput-object v2, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->newHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     goto :goto_0
 
-    .line 516
+    .line 604
     :cond_0
     iget-object v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     if-ne v0, p2, :cond_1
 
-    .line 517
+    .line 605
     iput-object v2, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     move v3, v1
 
-    .line 522
+    .line 610
     :goto_0
     iget-object p1, p2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
@@ -477,19 +509,19 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setAlpha(F)V
 
-    .line 523
+    .line 611
     iget-object p1, p2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 524
+    .line 612
     iget-object p1, p2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 525
+    .line 613
     invoke-virtual {p0, p2, v3}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchChangeFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;Z)V
 
     return v1
@@ -501,12 +533,12 @@
 .method private resetAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 2
 
-    .line 616
+    .line 704
     sget-object v0, Landroidx/recyclerview/widget/DefaultItemAnimator;->sDefaultInterpolator:Landroid/animation/TimeInterpolator;
 
     if-nez v0, :cond_0
 
-    .line 617
+    .line 705
     new-instance v0, Landroid/animation/ValueAnimator;
 
     invoke-direct {v0}, Landroid/animation/ValueAnimator;-><init>()V
@@ -517,7 +549,7 @@
 
     sput-object v0, Landroidx/recyclerview/widget/DefaultItemAnimator;->sDefaultInterpolator:Landroid/animation/TimeInterpolator;
 
-    .line 619
+    .line 707
     :cond_0
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
@@ -529,7 +561,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
-    .line 620
+    .line 708
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->endAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     return-void
@@ -540,22 +572,22 @@
 .method public animateAdd(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
     .locals 2
 
-    .line 270
+    .line 335
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->resetAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 271
+    .line 336
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
-    .line 272
+    .line 337
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 274
+    .line 339
     iget p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     and-int/lit8 v0, p1, 0x8
@@ -564,7 +596,7 @@
 
     or-int/lit8 p1, p1, 0x8
 
-    .line 275
+    .line 340
     iput p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     :cond_0
@@ -574,33 +606,56 @@
 .end method
 
 .method animateAddImpl(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
-    .locals 5
+    .locals 6
 
-    .line 282
+    .line 347
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 283
+    .line 348
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
 
-    .line 284
-    iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddAnimations:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    .line 285
-    invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v2
-
+    .line 349
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getAddDuration()J
 
-    move-result-wide v3
+    move-result-wide v2
 
-    invoke-virtual {v2, v3, v4}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+    .line 351
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v4
+
+    const-string v5, "preferencecategory"
+
+    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    const-wide/16 v2, 0x0
+
+    .line 355
+    :cond_0
+    iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddAnimations:Ljava/util/ArrayList;
+
+    invoke-virtual {v4, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/high16 v4, 0x3f800000    # 1.0f
+
+    .line 356
+    invoke-virtual {v1, v4}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v2
 
@@ -608,12 +663,12 @@
 
     invoke-direct {v3, p0, p1, v0, v1}, Landroidx/recyclerview/widget/DefaultItemAnimator$5;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;Landroid/view/View;Landroid/view/ViewPropertyAnimator;)V
 
-    .line 286
+    .line 357
     invoke-virtual {v2, v3}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
-    .line 312
+    .line 384
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
 
     return-void
@@ -636,14 +691,14 @@
 
     move v5, p6
 
-    .line 409
+    .line 487
     invoke-virtual/range {v0 .. v5}, Landroidx/recyclerview/widget/DefaultItemAnimator;->animateMove(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;IIII)Z
 
     move-result p1
 
     return p1
 
-    .line 411
+    .line 489
     :cond_0
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
@@ -651,21 +706,21 @@
 
     move-result v0
 
-    .line 412
+    .line 490
     iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getTranslationY()F
 
     move-result v1
 
-    .line 413
+    .line 491
     iget-object v2, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getAlpha()F
 
     move-result v2
 
-    .line 414
+    .line 492
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->resetAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     sub-int v3, p5, p3
@@ -684,27 +739,27 @@
 
     float-to-int v4, v4
 
-    .line 418
+    .line 496
     iget-object v5, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v5, v0}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 419
+    .line 497
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 420
+    .line 498
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setAlpha(F)V
 
     if-eqz p2, :cond_1
 
-    .line 423
+    .line 501
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/DefaultItemAnimator;->resetAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 424
+    .line 502
     iget-object v0, p2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     neg-int v1, v3
@@ -713,7 +768,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 425
+    .line 503
     iget-object v0, p2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     neg-int v1, v4
@@ -722,14 +777,14 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 426
+    .line 504
     iget-object v0, p2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
-    .line 428
+    .line 506
     :cond_1
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
@@ -753,7 +808,7 @@
 
     invoke-virtual {v0, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 430
+    .line 508
     iget p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     and-int/lit8 p2, p1, 0x4
@@ -762,7 +817,7 @@
 
     or-int/lit8 p1, p1, 0x4
 
-    .line 431
+    .line 509
     iput p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     :cond_2
@@ -772,9 +827,9 @@
 .end method
 
 .method animateChangeImpl(Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;)V
-    .locals 6
+    .locals 7
 
-    .line 438
+    .line 516
     iget-object v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     const/4 v1, 0x0
@@ -785,17 +840,17 @@
 
     goto :goto_0
 
-    .line 439
+    .line 517
     :cond_0
     iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 440
+    .line 518
     :goto_0
     iget-object v2, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->newHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     if-eqz v2, :cond_1
 
-    .line 441
+    .line 519
     iget-object v1, v2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     :cond_1
@@ -803,29 +858,29 @@
 
     if-eqz v0, :cond_2
 
-    .line 443
+    .line 521
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v3
 
-    .line 444
+    .line 522
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getChangeDuration()J
 
     move-result-wide v4
 
-    .line 443
+    .line 521
     invoke-virtual {v3, v4, v5}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v3
 
-    .line 445
+    .line 523
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeAnimations:Ljava/util/ArrayList;
 
     iget-object v5, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 446
+    .line 524
     iget v4, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->toX:I
 
     iget v5, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->fromX:I
@@ -836,7 +891,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/ViewPropertyAnimator;->translationX(F)Landroid/view/ViewPropertyAnimator;
 
-    .line 447
+    .line 525
     iget v4, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->toY:I
 
     iget v5, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->fromY:I
@@ -847,8 +902,24 @@
 
     invoke-virtual {v3, v4}, Landroid/view/ViewPropertyAnimator;->translationY(F)Landroid/view/ViewPropertyAnimator;
 
-    .line 448
+    .line 526
     invoke-virtual {v3, v2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v4
+
+    .line 528
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getChangeDuration()J
+
+    move-result-wide v5
+
+    invoke-virtual {v4, v5, v6}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v4
+
+    sget-object v5, Landroidx/recyclerview/widget/DefaultItemAnimator;->ITEM_MOVE_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
+    .line 529
+    invoke-virtual {v4, v5}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v4
 
@@ -856,29 +927,30 @@
 
     invoke-direct {v5, p0, p1, v3, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator$8;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;Landroid/view/ViewPropertyAnimator;Landroid/view/View;)V
 
+    .line 531
     invoke-virtual {v4, v5}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
-    .line 468
+    .line 552
     invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->start()V
 
     :cond_2
     if-eqz v1, :cond_3
 
-    .line 471
+    .line 555
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
-    .line 472
+    .line 556
     iget-object v3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeAnimations:Ljava/util/ArrayList;
 
     iget-object v4, p1, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->newHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 473
+    .line 557
     invoke-virtual {v0, v2}, Landroid/view/ViewPropertyAnimator;->translationX(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v3
@@ -897,8 +969,15 @@
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    .line 474
+    .line 558
     invoke-virtual {v2, v3}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v2
+
+    sget-object v3, Landroidx/recyclerview/widget/DefaultItemAnimator;->ITEM_MOVE_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
+    .line 560
+    invoke-virtual {v2, v3}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v2
 
@@ -906,11 +985,12 @@
 
     invoke-direct {v3, p0, p1, v0, v1}, Landroidx/recyclerview/widget/DefaultItemAnimator$9;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;Landroid/view/ViewPropertyAnimator;Landroid/view/View;)V
 
+    .line 562
     invoke-virtual {v2, v3}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
-    .line 489
+    .line 577
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
 
     :cond_3
@@ -920,10 +1000,10 @@
 .method public animateMove(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;IIII)Z
     .locals 8
 
-    .line 318
+    .line 390
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 319
+    .line 391
     iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getTranslationX()F
@@ -934,7 +1014,7 @@
 
     add-int v4, p2, v1
 
-    .line 320
+    .line 392
     iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getTranslationY()F
@@ -945,7 +1025,7 @@
 
     add-int v5, p3, p2
 
-    .line 321
+    .line 393
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->resetAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     sub-int p2, p4, v4
@@ -956,7 +1036,7 @@
 
     if-nez p3, :cond_0
 
-    .line 325
+    .line 397
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchMoveFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     const/4 p1, 0x0
@@ -970,7 +1050,7 @@
 
     int-to-float p2, p2
 
-    .line 329
+    .line 401
     invoke-virtual {v0, p2}, Landroid/view/View;->setTranslationX(F)V
 
     :cond_1
@@ -980,10 +1060,10 @@
 
     int-to-float p2, p2
 
-    .line 332
+    .line 404
     invoke-virtual {v0, p2}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 334
+    .line 406
     :cond_2
     iget-object p2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
@@ -1001,7 +1081,7 @@
 
     invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 336
+    .line 408
     iget p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     and-int/lit8 p2, p1, 0x2
@@ -1010,7 +1090,7 @@
 
     or-int/lit8 p1, p1, 0x2
 
-    .line 337
+    .line 409
     iput p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     :cond_3
@@ -1022,7 +1102,7 @@
 .method animateMoveImpl(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;IIII)V
     .locals 7
 
-    .line 344
+    .line 416
     iget-object v4, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     sub-int v3, p4, p2
@@ -1033,7 +1113,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 348
+    .line 420
     invoke-virtual {v4}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object p3
@@ -1043,25 +1123,30 @@
     :cond_0
     if-eqz v5, :cond_1
 
-    .line 351
+    .line 423
     invoke-virtual {v4}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object p3
 
     invoke-virtual {p3, p2}, Landroid/view/ViewPropertyAnimator;->translationY(F)Landroid/view/ViewPropertyAnimator;
 
-    .line 356
+    .line 428
     :cond_1
     invoke-virtual {v4}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v6
 
-    .line 357
+    .line 430
+    sget-object p2, Landroidx/recyclerview/widget/DefaultItemAnimator;->ITEM_MOVE_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
+    invoke-virtual {v6, p2}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+
+    .line 432
     iget-object p2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 358
+    .line 434
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getHostView()Landroid/view/View;
 
     move-result-object p2
@@ -1070,14 +1155,14 @@
 
     if-eqz p2, :cond_2
 
-    .line 359
+    .line 435
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getHostView()Landroid/view/View;
 
     move-result-object p2
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 360
+    .line 436
     iget p3, p2, Landroidx/recyclerview/widget/RecyclerView;->mBlackTop:I
 
     const/4 p4, -0x1
@@ -1098,26 +1183,20 @@
 
     if-ne p3, p4, :cond_2
 
-    .line 361
+    .line 437
     new-instance p3, Landroidx/recyclerview/widget/DefaultItemAnimator$6;
 
     invoke-direct {p3, p0, p2}, Landroidx/recyclerview/widget/DefaultItemAnimator$6;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Landroidx/recyclerview/widget/RecyclerView;)V
 
     invoke-virtual {v6, p3}, Landroid/view/ViewPropertyAnimator;->setUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
 
-    .line 369
+    .line 446
     :cond_2
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getMoveDuration()J
 
     move-result-wide p2
 
     invoke-virtual {v6, p2, p3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p2
-
-    iget-object p3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveInterpolator:Landroid/view/animation/Interpolator;
-
-    invoke-virtual {p2, p3}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p2
 
@@ -1131,11 +1210,12 @@
 
     invoke-direct/range {v0 .. v6}, Landroidx/recyclerview/widget/DefaultItemAnimator$7;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;ILandroid/view/View;ILandroid/view/ViewPropertyAnimator;)V
 
+    .line 447
     invoke-virtual {p2, p3}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
-    .line 400
+    .line 478
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
 
     return-void
@@ -1144,15 +1224,15 @@
 .method public animateRemove(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
     .locals 2
 
-    .line 228
+    .line 287
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->resetAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 229
+    .line 288
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 231
+    .line 290
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getBottom()I
@@ -1163,7 +1243,7 @@
 
     if-le v0, v1, :cond_0
 
-    .line 232
+    .line 291
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getBottom()I
@@ -1172,7 +1252,7 @@
 
     iput p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mLastItemBottom:I
 
-    .line 235
+    .line 294
     :cond_0
     iget p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
@@ -1184,7 +1264,7 @@
 
     or-int/2addr p1, v1
 
-    .line 236
+    .line 295
     iput p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     :cond_1
@@ -1203,7 +1283,7 @@
         }
     .end annotation
 
-    .line 759
+    .line 847
     invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -1242,7 +1322,7 @@
         }
     .end annotation
 
-    .line 735
+    .line 823
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -1252,7 +1332,7 @@
     :goto_0
     if-ltz v0, :cond_0
 
-    .line 736
+    .line 824
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1280,7 +1360,7 @@
 
     const/4 v0, 0x0
 
-    .line 83
+    .line 856
     iput v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     return-void
@@ -1289,34 +1369,43 @@
 .method dispatchFinishedWhenDone()V
     .locals 1
 
-    .line 644
+    .line 732
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->isRunning()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 645
+    .line 733
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchAnimationsFinished()V
 
     :cond_0
     return-void
 .end method
 
+.method public enableRemoveDelay(Z)V
+    .locals 0
+
+    .line 89
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mEnableRemoveDelay:Z
+
+    return-void
+.end method
+
 .method public endAnimation(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 7
 
-    .line 531
+    .line 619
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 533
+    .line 621
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
 
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 535
+    .line 623
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -1330,7 +1419,7 @@
 
     if-ltz v1, :cond_1
 
-    .line 536
+    .line 624
     iget-object v3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1339,21 +1428,21 @@
 
     check-cast v3, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;
 
-    .line 537
+    .line 625
     iget-object v3, v3, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->holder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     if-ne v3, p1, :cond_0
 
-    .line 538
+    .line 626
     invoke-virtual {v0, v2}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 539
+    .line 627
     invoke-virtual {v0, v2}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 540
+    .line 628
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchMoveFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 541
+    .line 629
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -1363,13 +1452,13 @@
 
     goto :goto_0
 
-    .line 544
+    .line 632
     :cond_1
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
     invoke-direct {p0, v1, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->endChangeAnimation(Ljava/util/List;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 545
+    .line 633
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -1380,13 +1469,13 @@
 
     if-eqz v1, :cond_2
 
-    .line 546
+    .line 634
     invoke-virtual {v0, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 547
+    .line 635
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchRemoveFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 549
+    .line 637
     :cond_2
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
@@ -1396,13 +1485,13 @@
 
     if-eqz v1, :cond_3
 
-    .line 550
+    .line 638
     invoke-virtual {v0, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 551
+    .line 639
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchAddFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 554
+    .line 642
     :cond_3
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
@@ -1415,7 +1504,7 @@
     :goto_1
     if-ltz v1, :cond_5
 
-    .line 555
+    .line 643
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1424,17 +1513,17 @@
 
     check-cast v4, Ljava/util/ArrayList;
 
-    .line 556
+    .line 644
     invoke-direct {p0, v4, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->endChangeAnimation(Ljava/util/List;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 557
+    .line 645
     invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 558
+    .line 646
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -1444,7 +1533,7 @@
 
     goto :goto_1
 
-    .line 561
+    .line 649
     :cond_5
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
@@ -1457,7 +1546,7 @@
     :goto_2
     if-ltz v1, :cond_8
 
-    .line 562
+    .line 650
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1466,7 +1555,7 @@
 
     check-cast v4, Ljava/util/ArrayList;
 
-    .line 563
+    .line 651
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v5
@@ -1476,38 +1565,38 @@
     :goto_3
     if-ltz v5, :cond_7
 
-    .line 564
+    .line 652
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;
 
-    .line 565
+    .line 653
     iget-object v6, v6, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->holder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     if-ne v6, p1, :cond_6
 
-    .line 566
+    .line 654
     invoke-virtual {v0, v2}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 567
+    .line 655
     invoke-virtual {v0, v2}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 568
+    .line 656
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchMoveFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 569
+    .line 657
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 570
+    .line 658
     invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v4
 
     if-eqz v4, :cond_7
 
-    .line 571
+    .line 659
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -1525,7 +1614,7 @@
 
     goto :goto_2
 
-    .line 577
+    .line 665
     :cond_8
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
@@ -1538,7 +1627,7 @@
     :goto_5
     if-ltz v1, :cond_a
 
-    .line 578
+    .line 666
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1547,27 +1636,27 @@
 
     check-cast v2, Ljava/util/ArrayList;
 
-    .line 579
+    .line 667
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_9
 
-    .line 580
+    .line 668
     invoke-virtual {v0, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 581
+    .line 669
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchAddFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 582
+    .line 670
     invoke-virtual {v2}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v2
 
     if-eqz v2, :cond_9
 
-    .line 583
+    .line 671
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -1577,28 +1666,28 @@
 
     goto :goto_5
 
-    .line 590
+    .line 678
     :cond_a
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 596
+    .line 684
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 602
+    .line 690
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 608
+    .line 696
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 612
+    .line 700
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchFinishedWhenDone()V
 
     return-void
@@ -1607,7 +1696,7 @@
 .method public endAnimations()V
     .locals 7
 
-    .line 651
+    .line 739
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -1621,7 +1710,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 653
+    .line 741
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1630,23 +1719,23 @@
 
     check-cast v2, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;
 
-    .line 654
+    .line 742
     iget-object v3, v2, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->holder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     iget-object v3, v3, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 655
+    .line 743
     invoke-virtual {v3, v1}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 656
+    .line 744
     invoke-virtual {v3, v1}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 657
+    .line 745
     iget-object v1, v2, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->holder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchMoveFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 658
+    .line 746
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -1655,7 +1744,7 @@
 
     goto :goto_0
 
-    .line 660
+    .line 748
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
@@ -1668,7 +1757,7 @@
     :goto_1
     if-ltz v0, :cond_1
 
-    .line 662
+    .line 750
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1677,10 +1766,10 @@
 
     check-cast v2, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 663
+    .line 751
     invoke-virtual {p0, v2}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchRemoveFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 664
+    .line 752
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -1689,7 +1778,7 @@
 
     goto :goto_1
 
-    .line 666
+    .line 754
     :cond_1
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
@@ -1704,7 +1793,7 @@
 
     if-ltz v0, :cond_2
 
-    .line 668
+    .line 756
     iget-object v3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1713,15 +1802,15 @@
 
     check-cast v3, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 669
+    .line 757
     iget-object v4, v3, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v4, v2}, Landroid/view/View;->setAlpha(F)V
 
-    .line 670
+    .line 758
     invoke-virtual {p0, v3}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchAddFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 671
+    .line 759
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -1730,7 +1819,7 @@
 
     goto :goto_2
 
-    .line 673
+    .line 761
     :cond_2
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
@@ -1743,7 +1832,7 @@
     :goto_3
     if-ltz v0, :cond_3
 
-    .line 675
+    .line 763
     iget-object v3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1758,13 +1847,13 @@
 
     goto :goto_3
 
-    .line 677
+    .line 765
     :cond_3
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 678
+    .line 766
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->isRunning()Z
 
     move-result v0
@@ -1773,7 +1862,7 @@
 
     return-void
 
-    .line 682
+    .line 770
     :cond_4
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
@@ -1786,7 +1875,7 @@
     :goto_4
     if-ltz v0, :cond_7
 
-    .line 684
+    .line 772
     iget-object v3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1795,7 +1884,7 @@
 
     check-cast v3, Ljava/util/ArrayList;
 
-    .line 685
+    .line 773
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result v4
@@ -1805,41 +1894,41 @@
     :goto_5
     if-ltz v4, :cond_6
 
-    .line 687
+    .line 775
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;
 
-    .line 688
+    .line 776
     iget-object v6, v5, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->holder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 689
+    .line 777
     iget-object v6, v6, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 690
+    .line 778
     invoke-virtual {v6, v1}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 691
+    .line 779
     invoke-virtual {v6, v1}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 692
+    .line 780
     iget-object v5, v5, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->holder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
     invoke-virtual {p0, v5}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchMoveFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 693
+    .line 781
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 694
+    .line 782
     invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v5
 
     if-eqz v5, :cond_5
 
-    .line 695
+    .line 783
     iget-object v5, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -1854,7 +1943,7 @@
 
     goto :goto_4
 
-    .line 699
+    .line 787
     :cond_7
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
@@ -1867,7 +1956,7 @@
     :goto_6
     if-ltz v0, :cond_a
 
-    .line 701
+    .line 789
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1876,7 +1965,7 @@
 
     check-cast v1, Ljava/util/ArrayList;
 
-    .line 702
+    .line 790
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
@@ -1886,33 +1975,33 @@
     :goto_7
     if-ltz v3, :cond_9
 
-    .line 704
+    .line 792
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 705
+    .line 793
     iget-object v5, v4, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 706
+    .line 794
     invoke-virtual {v5, v2}, Landroid/view/View;->setAlpha(F)V
 
-    .line 707
+    .line 795
     invoke-virtual {p0, v4}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchAddFinished(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
-    .line 708
+    .line 796
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 709
+    .line 797
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v4
 
     if-eqz v4, :cond_8
 
-    .line 710
+    .line 798
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -1927,7 +2016,7 @@
 
     goto :goto_6
 
-    .line 714
+    .line 802
     :cond_a
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
@@ -1940,7 +2029,7 @@
     :goto_8
     if-ltz v0, :cond_d
 
-    .line 716
+    .line 804
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1949,7 +2038,7 @@
 
     check-cast v1, Ljava/util/ArrayList;
 
-    .line 717
+    .line 805
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -1959,7 +2048,7 @@
     :goto_9
     if-ltz v2, :cond_c
 
-    .line 719
+    .line 807
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -1968,14 +2057,14 @@
 
     invoke-direct {p0, v3}, Landroidx/recyclerview/widget/DefaultItemAnimator;->endChangeAnimationIfNecessary(Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;)V
 
-    .line 720
+    .line 808
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v3
 
     if-eqz v3, :cond_b
 
-    .line 721
+    .line 809
     iget-object v3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -1990,28 +2079,28 @@
 
     goto :goto_8
 
-    .line 726
+    .line 814
     :cond_d
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->cancelAll(Ljava/util/List;)V
 
-    .line 727
+    .line 815
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->cancelAll(Ljava/util/List;)V
 
-    .line 728
+    .line 816
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->cancelAll(Ljava/util/List;)V
 
-    .line 729
+    .line 817
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeAnimations:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->cancelAll(Ljava/util/List;)V
 
-    .line 731
+    .line 819
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->dispatchAnimationsFinished()V
 
     return-void
@@ -2020,8 +2109,7 @@
 .method public getAddDuration()J
     .locals 2
 
-    .line 765
-    iget-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddDuration:J
+    const-wide/16 v0, 0xc8
 
     return-wide v0
 .end method
@@ -2029,8 +2117,7 @@
 .method public getChangeDuration()J
     .locals 2
 
-    .line 780
-    iget-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeDuration:J
+    const-wide/16 v0, 0x190
 
     return-wide v0
 .end method
@@ -2038,7 +2125,7 @@
 .method public getLastItemBottom()I
     .locals 1
 
-    .line 87
+    .line 860
     iget v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mLastItemBottom:I
 
     return v0
@@ -2047,8 +2134,7 @@
 .method public getMoveDuration()J
     .locals 2
 
-    .line 775
-    iget-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveDuration:J
+    const-wide/16 v0, 0x190
 
     return-wide v0
 .end method
@@ -2056,7 +2142,7 @@
 .method public getPendingAnimFlag()I
     .locals 1
 
-    .line 79
+    .line 852
     iget v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAnimFlag:I
 
     return v0
@@ -2065,16 +2151,24 @@
 .method public getRemoveDuration()J
     .locals 2
 
-    .line 770
-    iget-wide v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveDuration:J
+    const-wide/16 v0, 0x64
 
     return-wide v0
+.end method
+
+.method public isEnableRemoveDelay()Z
+    .locals 1
+
+    .line 92
+    iget-boolean v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mEnableRemoveDelay:Z
+
+    return v0
 .end method
 
 .method public isRunning()Z
     .locals 1
 
-    .line 625
+    .line 713
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -2085,7 +2179,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
-    .line 626
+    .line 714
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2094,7 +2188,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
-    .line 627
+    .line 715
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2103,7 +2197,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
-    .line 628
+    .line 716
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2112,7 +2206,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMoveAnimations:Ljava/util/ArrayList;
 
-    .line 629
+    .line 717
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2121,7 +2215,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mRemoveAnimations:Ljava/util/ArrayList;
 
-    .line 630
+    .line 718
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2130,7 +2224,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddAnimations:Ljava/util/ArrayList;
 
-    .line 631
+    .line 719
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2139,7 +2233,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangeAnimations:Ljava/util/ArrayList;
 
-    .line 632
+    .line 720
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2148,7 +2242,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
-    .line 633
+    .line 721
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2157,7 +2251,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
-    .line 634
+    .line 722
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2166,7 +2260,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
-    .line 635
+    .line 723
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -2191,7 +2285,7 @@
 .method public runPendingAnimations()V
     .locals 9
 
-    .line 136
+    .line 141
     iget-object v0, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -2200,7 +2294,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    .line 137
+    .line 142
     iget-object v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
@@ -2209,7 +2303,7 @@
 
     xor-int/lit8 v1, v1, 0x1
 
-    .line 138
+    .line 143
     iget-object v2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->isEmpty()Z
@@ -2218,7 +2312,7 @@
 
     xor-int/lit8 v2, v2, 0x1
 
-    .line 139
+    .line 144
     iget-object v3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
@@ -2237,7 +2331,7 @@
 
     return-void
 
-    .line 145
+    .line 150
     :cond_0
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
@@ -2258,12 +2352,12 @@
 
     check-cast v5, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 146
+    .line 156
     invoke-direct {p0, v5}, Landroidx/recyclerview/widget/DefaultItemAnimator;->animateRemoveImpl(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     goto :goto_0
 
-    .line 148
+    .line 158
     :cond_1
     iget-object v4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingRemovals:Ljava/util/ArrayList;
 
@@ -2273,34 +2367,39 @@
 
     if-eqz v1, :cond_3
 
-    .line 151
+    .line 161
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 152
+    .line 162
     iget-object v6, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 153
+    .line 163
     iget-object v6, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mMovesList:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 154
+    .line 164
     iget-object v6, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingMoves:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->clear()V
 
-    .line 155
+    .line 165
     new-instance v6, Landroidx/recyclerview/widget/DefaultItemAnimator$1;
 
     invoke-direct {v6, p0, v5}, Landroidx/recyclerview/widget/DefaultItemAnimator$1;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Ljava/util/ArrayList;)V
 
     if-eqz v0, :cond_2
 
-    .line 167
+    .line 181
+    iget-boolean v7, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mEnableRemoveDelay:Z
+
+    if-eqz v7, :cond_2
+
+    .line 182
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -2311,7 +2410,7 @@
 
     iget-object v5, v5, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 168
+    .line 188
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getRemoveDuration()J
 
     move-result-wide v7
@@ -2320,7 +2419,7 @@
 
     goto :goto_1
 
-    .line 170
+    .line 195
     :cond_2
     invoke-interface {v6}, Ljava/lang/Runnable;->run()V
 
@@ -2328,34 +2427,39 @@
     :goto_1
     if-eqz v2, :cond_5
 
-    .line 175
+    .line 200
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 176
+    .line 201
     iget-object v6, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 177
+    .line 202
     iget-object v6, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mChangesList:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 178
+    .line 203
     iget-object v6, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingChanges:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->clear()V
 
-    .line 179
+    .line 204
     new-instance v6, Landroidx/recyclerview/widget/DefaultItemAnimator$2;
 
     invoke-direct {v6, p0, v5}, Landroidx/recyclerview/widget/DefaultItemAnimator$2;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Ljava/util/ArrayList;)V
 
     if-eqz v0, :cond_4
 
-    .line 190
+    .line 219
+    iget-boolean v7, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mEnableRemoveDelay:Z
+
+    if-eqz v7, :cond_4
+
+    .line 220
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -2364,7 +2468,7 @@
 
     iget-object v5, v5, Landroidx/recyclerview/widget/DefaultItemAnimator$ChangeInfo;->oldHolder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 191
+    .line 226
     iget-object v5, v5, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getRemoveDuration()J
@@ -2375,35 +2479,35 @@
 
     goto :goto_2
 
-    .line 193
+    .line 233
     :cond_4
     invoke-interface {v6}, Ljava/lang/Runnable;->run()V
 
     :cond_5
     :goto_2
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_c
 
-    .line 198
+    .line 238
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 199
+    .line 239
     iget-object v5, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 200
+    .line 240
     iget-object v5, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAdditionsList:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 201
+    .line 241
     iget-object v5, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mPendingAdditions:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
-    .line 202
+    .line 242
     new-instance v5, Landroidx/recyclerview/widget/DefaultItemAnimator$3;
 
     invoke-direct {v5, p0, v3}, Landroidx/recyclerview/widget/DefaultItemAnimator$3;-><init>(Landroidx/recyclerview/widget/DefaultItemAnimator;Ljava/util/ArrayList;)V
@@ -2416,7 +2520,7 @@
 
     goto :goto_3
 
-    .line 221
+    .line 280
     :cond_6
     invoke-interface {v5}, Ljava/lang/Runnable;->run()V
 
@@ -2426,7 +2530,7 @@
     :goto_3
     if-eqz v0, :cond_8
 
-    .line 213
+    .line 258
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getRemoveDuration()J
 
     :cond_8
@@ -2434,7 +2538,7 @@
 
     if-eqz v1, :cond_9
 
-    .line 214
+    .line 259
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getMoveDuration()J
 
     move-result-wide v0
@@ -2447,16 +2551,16 @@
     :goto_4
     if-eqz v2, :cond_a
 
-    .line 215
+    .line 260
     invoke-virtual {p0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->getChangeDuration()J
 
     move-result-wide v6
 
-    .line 216
+    .line 261
     :cond_a
     invoke-static {v0, v1, v6, v7}, Ljava/lang/Math;->max(JJ)J
 
-    .line 217
+    .line 262
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -2465,12 +2569,37 @@
 
     iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    .line 218
-    iget-wide v1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator;->mAddStartDelay:J
+    .line 268
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
-    invoke-static {v0, v5, v1, v2}, Landroidx/core/view/ViewCompat;->postOnAnimationDelayed(Landroid/view/View;Ljava/lang/Runnable;J)V
+    move-result-object v1
+
+    if-eqz v1, :cond_b
+
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v1
+
+    const-string v2, "preferencecategory"
+
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_b
+
+    .line 269
+    invoke-interface {v5}, Ljava/lang/Runnable;->run()V
+
+    goto :goto_5
 
     :cond_b
+    const-wide/16 v1, 0x64
+
+    .line 271
+    invoke-static {v0, v5, v1, v2}, Landroidx/core/view/ViewCompat;->postOnAnimationDelayed(Landroid/view/View;Ljava/lang/Runnable;J)V
+
+    :cond_c
     :goto_5
     return-void
 .end method

@@ -30,13 +30,12 @@
             <TextView android:textSize="24.0dip" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/lock_screen_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/mirroring_lock_screen_help_desc" />
         </LinearLayout>
     </RelativeLayout>
-    <RelativeLayout android:id="@id/favoriteView" android:background="@drawable/favorite_list_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
-        <androidx.recyclerview.widget.RecyclerView android:id="@id/selectedFavoriteListView" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="643.0dip" android:layout_centerInParent="true" android:overScrollMode="never" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip" android:layout_alignParentStart="true"
-          xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout android:id="@id/favoriteView" android:background="@drawable/favorite_list_bg" android:paddingTop="8.0dip" android:paddingBottom="16.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="8.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/selectedFavoriteListView" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="608.0dip" android:layout_centerInParent="true" android:overScrollMode="never" android:layout_marginStart="8.0dip" android:layout_marginEnd="10.0dip" android:layout_alignParentStart="true" />
     </RelativeLayout>
     <RelativeLayout android:id="@id/loading_screen_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-            <ProgressBar android:layout_gravity="center" android:layout_width="60.0dip" android:layout_height="60.0dip" style="?android:progressBarStyleLarge" />
+            <androidx.appcompat.widget.SeslProgressBar android:layout_gravity="center" android:layout_width="60.0dip" android:layout_height="60.0dip" style="?android:progressBarStyleLarge" />
             <TextView android:textSize="15.0dip" android:textColor="#fffafafa" android:id="@id/userConsentHelpText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/mirroring_check_user_consent_on_phone" android:textAlignment="center" />
         </LinearLayout>
     </RelativeLayout>

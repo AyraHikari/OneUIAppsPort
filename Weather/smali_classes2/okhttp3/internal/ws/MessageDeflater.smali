@@ -8,33 +8,34 @@
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u000b\u001a\u00020\u000cH\u0016J\u000e\u0010\r\u001a\u00020\u000c2\u0006\u0010\u000e\u001a\u00020\u0006J\u0014\u0010\u000f\u001a\u00020\u0003*\u00020\u00062\u0006\u0010\u0010\u001a\u00020\u0011H\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0012"
+        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0013\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\u0014\u0010\u0006\u001a\u00020\u0005*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0002J\u000e\u0010\t\u001a\u00020\u00082\u0006\u0010\u0007\u001a\u00020\u0002J\u0008\u0010\n\u001a\u00020\u0008H\u0016R\u0014\u0010\u000b\u001a\u00020\u00028\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u000b\u0010\u000cR\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u000e\u0010\u000fR\u0014\u0010\u0011\u001a\u00020\u00108\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0011\u0010\u0012R\u0014\u0010\u0013\u001a\u00020\u00058\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0013\u0010\u0014\u00a8\u0006\u0017"
     }
     d2 = {
         "Lokhttp3/internal/ws/MessageDeflater;",
         "Ljava/io/Closeable;",
-        "noContextTakeover",
+        "Lokio/Buffer;",
+        "Lokio/ByteString;",
+        "suffix",
         "",
-        "(Z)V",
+        "endsWith",
+        "buffer",
+        "Lbi/x;",
+        "deflate",
+        "close",
         "deflatedBytes",
         "Lokio/Buffer;",
+        "Ljava/util/zip/Deflater;",
         "deflater",
         "Ljava/util/zip/Deflater;",
+        "Lokio/DeflaterSink;",
         "deflaterSink",
         "Lokio/DeflaterSink;",
-        "close",
-        "",
-        "deflate",
-        "buffer",
-        "endsWith",
-        "suffix",
-        "Lokio/ByteString;",
+        "noContextTakeover",
+        "Z",
+        "<init>",
+        "(Z)V",
         "okhttp"
     }
     k = 0x1
@@ -60,19 +61,19 @@
 .method public constructor <init>(Z)V
     .locals 3
 
-    .line 29
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lokhttp3/internal/ws/MessageDeflater;->noContextTakeover:Z
 
-    .line 32
+    .line 2
     new-instance p1, Lokio/Buffer;
 
     invoke-direct {p1}, Lokio/Buffer;-><init>()V
 
     iput-object p1, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lokio/Buffer;
 
-    .line 33
+    .line 3
     new-instance v0, Ljava/util/zip/Deflater;
 
     const/4 v1, -0x1
@@ -83,10 +84,8 @@
 
     iput-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflater:Ljava/util/zip/Deflater;
 
-    .line 34
+    .line 4
     new-instance v1, Lokio/DeflaterSink;
-
-    check-cast p1, Lokio/Sink;
 
     invoke-direct {v1, p1, v0}, Lokio/DeflaterSink;-><init>(Lokio/Sink;Ljava/util/zip/Deflater;)V
 
@@ -98,7 +97,6 @@
 .method private final endsWith(Lokio/Buffer;Lokio/ByteString;)Z
     .locals 4
 
-    .line 64
     invoke-virtual {p1}, Lokio/Buffer;->size()J
 
     move-result-wide v0
@@ -122,13 +120,7 @@
 # virtual methods
 .method public close()V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    .line 62
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:Lokio/DeflaterSink;
 
     invoke-virtual {v0}, Lokio/DeflaterSink;->close()V
@@ -138,17 +130,12 @@
 
 .method public final deflate(Lokio/Buffer;)V
     .locals 6
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     const-string v0, "buffer"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 39
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->size()J
@@ -175,17 +162,17 @@
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 41
+    .line 2
     iget-boolean v0, p0, Lokhttp3/internal/ws/MessageDeflater;->noContextTakeover:Z
 
     if-eqz v0, :cond_1
 
-    .line 42
+    .line 3
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflater:Ljava/util/zip/Deflater;
 
     invoke-virtual {v0}, Ljava/util/zip/Deflater;->reset()V
 
-    .line 45
+    .line 4
     :cond_1
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:Lokio/DeflaterSink;
 
@@ -195,12 +182,12 @@
 
     invoke-virtual {v0, p1, v3, v4}, Lokio/DeflaterSink;->write(Lokio/Buffer;J)V
 
-    .line 46
+    .line 5
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:Lokio/DeflaterSink;
 
     invoke-virtual {v0}, Lokio/DeflaterSink;->flush()V
 
-    .line 48
+    .line 6
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lokio/Buffer;
 
     invoke-static {}, Lokhttp3/internal/ws/MessageDeflaterKt;->access$getEMPTY_DEFLATE_BLOCK$p()Lokio/ByteString;
@@ -213,7 +200,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 49
+    .line 7
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->size()J
@@ -226,7 +213,7 @@
 
     sub-long/2addr v2, v4
 
-    .line 50
+    .line 8
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lokio/Buffer;
 
     const/4 v4, 0x0
@@ -235,22 +222,14 @@
 
     move-result-object v0
 
-    check-cast v0, Ljava/io/Closeable;
-
-    check-cast v4, Ljava/lang/Throwable;
-
+    .line 9
     :try_start_0
-    move-object v1, v0
-
-    check-cast v1, Lokio/Buffer$UnsafeCursor;
-
-    .line 51
-    invoke-virtual {v1, v2, v3}, Lokio/Buffer$UnsafeCursor;->resizeBuffer(J)J
+    invoke-virtual {v0, v2, v3}, Lokio/Buffer$UnsafeCursor;->resizeBuffer(J)J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 50
-    invoke-static {v0, v4}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    .line 10
+    invoke-static {v0, v4}, Lli/a;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     goto :goto_1
 
@@ -265,17 +244,17 @@
     :catchall_1
     move-exception v1
 
-    invoke-static {v0, p1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1}, Lli/a;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     throw v1
 
-    .line 55
+    .line 11
     :cond_2
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lokio/Buffer;
 
     invoke-virtual {v0, v2}, Lokio/Buffer;->writeByte(I)Lokio/Buffer;
 
-    .line 58
+    .line 12
     :goto_1
     iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lokio/Buffer;
 
@@ -287,7 +266,7 @@
 
     return-void
 
-    .line 39
+    .line 13
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -298,8 +277,6 @@
     move-result-object v0
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p1, Ljava/lang/Throwable;
 
     throw p1
 .end method

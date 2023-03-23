@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.myfiles.external.ui.widget.thumbnail.GridThumbnailView android:layout_width="fill_parent" android:layout_height="fill_parent" app:setForeground="RippleBorder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/file_detail_container" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/GridFileDetailInfo">
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/category_grid_item_file_info_first_line_text_size" android:textColor="@color/recent_grid_view_text_color" android:ellipsize="middle" android:id="@id/file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/grid_item_text_bottom_margin" android:singleLine="true" />
+    </LinearLayout>
+</com.sec.android.app.myfiles.external.ui.widget.thumbnail.GridThumbnailView>

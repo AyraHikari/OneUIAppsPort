@@ -21,6 +21,14 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "version"
+        }
+    .end annotation
 
     .line 209
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -34,31 +42,87 @@
 
 # virtual methods
 .method protected abstract createAllTables(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 .end method
 
 .method protected abstract dropAllTables(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 .end method
 
 .method protected abstract onCreate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 .end method
 
 .method protected abstract onOpen(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 .end method
 
 .method protected onPostMigrate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method protected onPreMigrate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method protected onValidateSchema(Landroidx/sqlite/db/SupportSQLiteDatabase;)Landroidx/room/RoomOpenHelper$ValidationResult;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "db"
+        }
+    .end annotation
 
     .line 241
     invoke-virtual {p0, p1}, Landroidx/room/RoomOpenHelper$Delegate;->validateMigration(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
@@ -77,6 +141,15 @@
 
 .method protected validateMigration(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "db"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

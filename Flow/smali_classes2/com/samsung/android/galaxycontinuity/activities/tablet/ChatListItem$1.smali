@@ -28,6 +28,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem;Lcom/samsung/android/galaxycontinuity/data/NotificationData;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$notificationData",
+            "val$dataIndex"
+        }
+    .end annotation
 
     .line 198
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem;
@@ -45,6 +57,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     .line 201
     new-instance p1, Ljava/lang/StringBuilder;
@@ -54,6 +74,8 @@
     const-string v0, "mContentsString : "
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem$1;->val$notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
@@ -71,6 +93,8 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -85,6 +109,8 @@
     const-string v0, "mContentsType : "
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem$1;->val$notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
@@ -101,6 +127,8 @@
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsType:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

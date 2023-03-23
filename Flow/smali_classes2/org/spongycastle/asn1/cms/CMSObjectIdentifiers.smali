@@ -99,15 +99,13 @@
     .line 40
     invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Lorg/spongycastle/asn1/cms/CMSObjectIdentifiers;->id_ri_ocsp_response:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 42
-    sget-object v0, Lorg/spongycastle/asn1/cms/CMSObjectIdentifiers;->id_ri:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v1, Lorg/spongycastle/asn1/cms/CMSObjectIdentifiers;->id_ri_ocsp_response:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v1, "4"
 
+    .line 42
     invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     move-result-object v0

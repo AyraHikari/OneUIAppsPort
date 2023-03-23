@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/no_item_scrollView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/essentials_layout" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="@integer/no_item_weight_sum">
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/no_item_side_weight" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/no_item_text_weight">
+                <com.altamirasoft.path_animation.PathLineAnimationView android:id="@id/no_item_icon" android:visibility="gone" android:layout_width="@dimen/no_item_icon_size" android:layout_height="@dimen/no_item_icon_size" />
+                <TextView android:textSize="@dimen/no_item_text_size" android:textColor="@color/no_item_text" android:id="@id/no_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/no_item_text_margin_top" android:text="@string/no_files" android:importantForAccessibility="no" android:textAlignment="center" />
+                <TextView android:textSize="@dimen/no_item_sub_text_size" android:textColor="@color/no_item_sub_text" android:ellipsize="end" android:id="@id/no_item_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/no_item_sub_text_margin_top" android:text="@string/no_recent_files" android:maxLines="4" android:lineSpacingExtra="@dimen/no_item_sub_text_line_spacing" android:importantForAccessibility="no" android:textAlignment="center" />
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/no_item_side_weight" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

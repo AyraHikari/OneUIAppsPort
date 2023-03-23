@@ -21,9 +21,9 @@
         <item quantity="many">N/A</item>
     </plurals>
     <plurals name="selected_count_msg">
-        <item quantity="other">%d sélectionnées</item>
+        <item quantity="other">%d sélectionnés</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d sélectionnée</item>
+        <item quantity="one">%d sélectionné</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>

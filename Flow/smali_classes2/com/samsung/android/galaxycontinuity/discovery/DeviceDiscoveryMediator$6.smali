@@ -28,6 +28,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator;Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$device",
+            "val$cdLatch"
+        }
+    .end annotation
 
     .line 185
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator$6;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator;

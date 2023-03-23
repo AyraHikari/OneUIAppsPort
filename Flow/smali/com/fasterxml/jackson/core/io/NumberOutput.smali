@@ -445,26 +445,23 @@
 
     if-lt p0, v0, :cond_5
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     goto :goto_1
 
     :cond_5
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     :goto_1
-    if-eqz v0, :cond_7
+    if-eqz v1, :cond_7
 
-    .line 156
-    sget v1, Lcom/fasterxml/jackson/core/io/NumberOutput;->BILLION:I
+    sub-int/2addr p0, v0
 
-    sub-int/2addr p0, v1
+    if-lt p0, v0, :cond_6
 
-    if-lt p0, v1, :cond_6
+    sub-int/2addr p0, v0
 
-    sub-int/2addr p0, v1
-
-    add-int/lit8 v1, p2, 0x1
+    add-int/lit8 v0, p2, 0x1
 
     const/16 v2, 0x32
 
@@ -474,7 +471,7 @@
     goto :goto_2
 
     :cond_6
-    add-int/lit8 v1, p2, 0x1
+    add-int/lit8 v0, p2, 0x1
 
     const/16 v2, 0x31
 
@@ -482,24 +479,24 @@
     aput-byte v2, p1, p2
 
     :goto_2
-    move p2, v1
+    move p2, v0
 
     .line 164
     :cond_7
-    div-int/lit16 v1, p0, 0x3e8
+    div-int/lit16 v0, p0, 0x3e8
 
-    mul-int/lit16 v2, v1, 0x3e8
+    mul-int/lit16 v2, v0, 0x3e8
 
     sub-int/2addr p0, v2
 
     .line 167
-    div-int/lit16 v2, v1, 0x3e8
+    div-int/lit16 v2, v0, 0x3e8
 
     mul-int/lit16 v3, v2, 0x3e8
 
-    sub-int/2addr v1, v3
+    sub-int/2addr v0, v3
 
-    if-eqz v0, :cond_8
+    if-eqz v1, :cond_8
 
     .line 171
     invoke-static {v2, p1, p2}, Lcom/fasterxml/jackson/core/io/NumberOutput;->outputFullTriplet(I[BI)I
@@ -516,7 +513,7 @@
 
     .line 175
     :goto_3
-    invoke-static {v1, p1, p2}, Lcom/fasterxml/jackson/core/io/NumberOutput;->outputFullTriplet(I[BI)I
+    invoke-static {v0, p1, p2}, Lcom/fasterxml/jackson/core/io/NumberOutput;->outputFullTriplet(I[BI)I
 
     move-result p2
 
@@ -618,26 +615,23 @@
 
     if-lt p0, v0, :cond_5
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     goto :goto_1
 
     :cond_5
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     :goto_1
-    if-eqz v0, :cond_7
+    if-eqz v1, :cond_7
 
-    .line 104
-    sget v1, Lcom/fasterxml/jackson/core/io/NumberOutput;->BILLION:I
+    sub-int/2addr p0, v0
 
-    sub-int/2addr p0, v1
+    if-lt p0, v0, :cond_6
 
-    if-lt p0, v1, :cond_6
+    sub-int/2addr p0, v0
 
-    sub-int/2addr p0, v1
-
-    add-int/lit8 v1, p2, 0x1
+    add-int/lit8 v0, p2, 0x1
 
     const/16 v2, 0x32
 
@@ -647,7 +641,7 @@
     goto :goto_2
 
     :cond_6
-    add-int/lit8 v1, p2, 0x1
+    add-int/lit8 v0, p2, 0x1
 
     const/16 v2, 0x31
 
@@ -655,24 +649,24 @@
     aput-char v2, p1, p2
 
     :goto_2
-    move p2, v1
+    move p2, v0
 
     .line 112
     :cond_7
-    div-int/lit16 v1, p0, 0x3e8
+    div-int/lit16 v0, p0, 0x3e8
 
-    mul-int/lit16 v2, v1, 0x3e8
+    mul-int/lit16 v2, v0, 0x3e8
 
     sub-int/2addr p0, v2
 
     .line 115
-    div-int/lit16 v2, v1, 0x3e8
+    div-int/lit16 v2, v0, 0x3e8
 
     mul-int/lit16 v3, v2, 0x3e8
 
-    sub-int/2addr v1, v3
+    sub-int/2addr v0, v3
 
-    if-eqz v0, :cond_8
+    if-eqz v1, :cond_8
 
     .line 120
     invoke-static {v2, p1, p2}, Lcom/fasterxml/jackson/core/io/NumberOutput;->outputFullTriplet(I[CI)I
@@ -689,7 +683,7 @@
 
     .line 124
     :goto_3
-    invoke-static {v1, p1, p2}, Lcom/fasterxml/jackson/core/io/NumberOutput;->outputFullTriplet(I[CI)I
+    invoke-static {v0, p1, p2}, Lcom/fasterxml/jackson/core/io/NumberOutput;->outputFullTriplet(I[CI)I
 
     move-result p2
 
@@ -702,7 +696,7 @@
 .end method
 
 .method private static outputLeadingTriplet(I[BI)I
-    .locals 2
+    .locals 3
 
     shl-int/lit8 p0, p0, 0x2
 
@@ -715,51 +709,47 @@
 
     if-eqz p0, :cond_0
 
-    add-int/lit8 v0, p2, 0x1
+    add-int/lit8 v2, p2, 0x1
 
     int-to-byte p0, p0
 
     .line 349
     aput-byte p0, p1, p2
 
-    move p2, v0
+    move p2, v2
+
+    :cond_0
+    add-int/lit8 p0, v1, 0x1
 
     .line 351
-    :cond_0
-    sget-object p0, Lcom/fasterxml/jackson/core/io/NumberOutput;->LEADING_TRIPLETS:[C
+    aget-char v1, v0, v1
 
-    add-int/lit8 v0, v1, 0x1
+    if-eqz v1, :cond_1
 
-    aget-char p0, p0, v1
+    add-int/lit8 v2, p2, 0x1
 
-    if-eqz p0, :cond_1
+    int-to-byte v1, v1
 
+    .line 353
+    aput-byte v1, p1, p2
+
+    move p2, v2
+
+    :cond_1
     add-int/lit8 v1, p2, 0x1
+
+    .line 356
+    aget-char p0, v0, p0
 
     int-to-byte p0, p0
 
-    .line 353
     aput-byte p0, p1, p2
 
-    move p2, v1
-
-    :cond_1
-    add-int/lit8 p0, p2, 0x1
-
-    .line 356
-    sget-object v1, Lcom/fasterxml/jackson/core/io/NumberOutput;->LEADING_TRIPLETS:[C
-
-    aget-char v0, v1, v0
-
-    int-to-byte v0, v0
-
-    aput-byte v0, p1, p2
-
-    return p0
+    return v1
 .end method
 
 .method private static outputLeadingTriplet(I[CI)I
-    .locals 2
+    .locals 3
 
     shl-int/lit8 p0, p0, 0x2
 
@@ -772,41 +762,37 @@
 
     if-eqz p0, :cond_0
 
-    add-int/lit8 v0, p2, 0x1
+    add-int/lit8 v2, p2, 0x1
 
     .line 333
     aput-char p0, p1, p2
 
-    move p2, v0
+    move p2, v2
+
+    :cond_0
+    add-int/lit8 p0, v1, 0x1
 
     .line 335
-    :cond_0
-    sget-object p0, Lcom/fasterxml/jackson/core/io/NumberOutput;->LEADING_TRIPLETS:[C
+    aget-char v1, v0, v1
 
-    add-int/lit8 v0, v1, 0x1
+    if-eqz v1, :cond_1
 
-    aget-char p0, p0, v1
-
-    if-eqz p0, :cond_1
-
-    add-int/lit8 v1, p2, 0x1
+    add-int/lit8 v2, p2, 0x1
 
     .line 337
-    aput-char p0, p1, p2
+    aput-char v1, p1, p2
 
-    move p2, v1
+    move p2, v2
 
     :cond_1
-    add-int/lit8 p0, p2, 0x1
+    add-int/lit8 v1, p2, 0x1
 
     .line 340
-    sget-object v1, Lcom/fasterxml/jackson/core/io/NumberOutput;->LEADING_TRIPLETS:[C
+    aget-char p0, v0, p0
 
-    aget-char v0, v1, v0
+    aput-char p0, p1, p2
 
-    aput-char v0, p1, p2
-
-    return p0
+    return v1
 .end method
 
 .method public static outputLong(J[BI)I
@@ -1013,16 +999,14 @@
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
-    move-result p0
-
-    .line 196
-    sget-object p1, Lcom/fasterxml/jackson/core/io/NumberOutput;->SMALLEST_LONG:Ljava/lang/String;
+    move-result p1
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0, p2, p3}, Ljava/lang/String;->getChars(II[CI)V
+    .line 196
+    invoke-virtual {p0, v0, p1, p2, p3}, Ljava/lang/String;->getChars(II[CI)V
 
-    add-int/2addr p3, p0
+    add-int/2addr p3, p1
 
     return p3
 

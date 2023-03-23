@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bottom_menu_layout" android:tag="layout/bottom_menu_layout_0" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottom_icon_menu" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:menu="@menu/bottom_choice_menu" style="@style/BottomMenuIconType" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottom_text_menu" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BottomMenuTextType" />
+</FrameLayout>

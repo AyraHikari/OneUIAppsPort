@@ -27,6 +27,17 @@
 # direct methods
 .method public constructor <init>(Ljava/util/ArrayList;Lcom/samsung/android/galaxycontinuity/data/MousePoint;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fileList",
+            "lastMousePoint"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,6 +76,17 @@
 
 .method public constructor <init>(Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fileList",
+            "thumbnail"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

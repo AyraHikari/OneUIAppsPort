@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final DEFAULT_DATA_STORE_ID:Ljava/lang/String;
+.field public static final DEFAULT_DATA_STORE_ID:Ljava/lang/String; = "StoredChannel"
 
 .field private static final serialVersionUID:J = 0x1L
 
@@ -28,16 +28,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
-
-    .line 44
-    const-class v0, Lcom/google/api/client/googleapis/notifications/StoredChannel;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/api/client/googleapis/notifications/StoredChannel;->DEFAULT_DATA_STORE_ID:Ljava/lang/String;
+    .locals 0
 
     return-void
 .end method

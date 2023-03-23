@@ -93,15 +93,15 @@
     if-nez v0, :cond_3
 
     .line 145
-    array-length v0, p2
-
-    if-le v4, v0, :cond_3
-
-    iget v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
-
     array-length v1, p2
 
-    if-ne v0, v1, :cond_3
+    if-le v4, v1, :cond_3
+
+    iget v1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
+
+    array-length v3, p2
+
+    if-ne v1, v3, :cond_3
 
     .line 147
     array-length v0, p2
@@ -136,7 +136,11 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -160,10 +164,7 @@
 
     goto :goto_1
 
-    .line 159
     :cond_3
-    iget v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->markpos:I
-
     if-lez v0, :cond_4
 
     .line 160
@@ -489,14 +490,12 @@
 
     if-lez v1, :cond_3
 
+    add-int/lit8 v1, v2, 0x1
+
     .line 243
-    iget v1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    iput v1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
 
-    add-int/lit8 v2, v1, 0x1
-
-    iput v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
-    aget-byte v0, v0, v1
+    aget-byte v0, v0, v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -532,7 +531,7 @@
 .end method
 
 .method public declared-synchronized read([BII)I
-    .locals 5
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -572,56 +571,45 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 287
-    iget v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
+    sub-int v4, v3, v2
 
-    iget v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    if-lt v4, p3, :cond_1
 
-    sub-int/2addr v2, v3
-
-    if-lt v2, p3, :cond_1
-
-    move v2, p3
+    move v3, p3
 
     goto :goto_0
 
     :cond_1
-    iget v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
-
-    iget v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
-    sub-int/2addr v2, v3
+    sub-int/2addr v3, v2
 
     .line 288
     :goto_0
-    iget v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
-    invoke-static {v0, v3, p1, p2, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v2, p1, p2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 289
-    iget v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    iget v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
 
-    add-int/2addr v3, v2
+    add-int/2addr v2, v3
 
-    iput v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    iput v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
 
-    if-eq v2, p3, :cond_3
+    if-eq v3, p3, :cond_3
 
     .line 290
     invoke-virtual {v1}, Ljava/io/InputStream;->available()I
 
-    move-result v3
+    move-result v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    if-nez v3, :cond_2
+    if-nez v2, :cond_2
 
     goto :goto_1
 
     :cond_2
-    add-int/2addr p2, v2
+    add-int/2addr p2, v3
 
-    sub-int v2, p3, v2
+    sub-int v2, p3, v3
 
     goto :goto_2
 
@@ -630,7 +618,7 @@
     :goto_1
     monitor-exit p0
 
-    return v2
+    return v3
 
     :cond_4
     move v2, p3
@@ -723,25 +711,19 @@
 
     iget v4, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
 
-    sub-int/2addr v3, v4
+    sub-int v5, v3, v4
 
-    if-lt v3, v2, :cond_b
+    if-lt v5, v2, :cond_b
 
     move v3, v2
 
     goto :goto_6
 
     :cond_b
-    iget v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
-
-    iget v4, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
     sub-int/2addr v3, v4
 
     .line 321
     :goto_6
-    iget v4, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
     invoke-static {v0, v4, p1, p2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 322
@@ -837,9 +819,7 @@
     if-eq v0, v1, :cond_0
 
     .line 352
-    iget v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->markpos:I
-
-    iput v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    iput v1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -880,7 +860,7 @@
 .end method
 
 .method public declared-synchronized skip(J)J
-    .locals 8
+    .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -922,23 +902,21 @@
 
     iget v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
 
-    sub-int/2addr v2, v3
+    sub-int v4, v2, v3
 
-    int-to-long v2, v2
+    int-to-long v4, v4
 
-    cmp-long v2, v2, p1
+    cmp-long v4, v4, p1
 
-    if-ltz v2, :cond_1
+    if-ltz v4, :cond_1
 
-    .line 383
-    iget v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
-    int-to-long v0, v0
+    int-to-long v0, v3
 
     add-long/2addr v0, p1
 
     long-to-int v0, v0
 
+    .line 383
     iput v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -948,36 +926,29 @@
 
     return-wide p1
 
-    .line 386
     :cond_1
-    :try_start_2
-    iget v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
+    sub-int v3, v2, v3
 
-    iget v3, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
-    sub-int/2addr v2, v3
-
-    int-to-long v2, v2
+    int-to-long v3, v3
 
     .line 387
-    iget v4, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
-
-    iput v4, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    :try_start_2
+    iput v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
 
     .line 389
-    iget v4, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->markpos:I
+    iget v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->markpos:I
 
     const/4 v5, -0x1
 
-    if-eq v4, v5, :cond_4
+    if-eq v2, v5, :cond_4
 
-    iget v4, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->marklimit:I
+    iget v2, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->marklimit:I
 
-    int-to-long v6, v4
+    int-to-long v6, v2
 
-    cmp-long v4, p1, v6
+    cmp-long v2, p1, v6
 
-    if-gtz v4, :cond_4
+    if-gtz v2, :cond_4
 
     .line 390
     invoke-direct {p0, v1, v0}, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->fillbuf(Ljava/io/InputStream;[B)I
@@ -991,7 +962,7 @@
     .line 391
     monitor-exit p0
 
-    return-wide v2
+    return-wide v3
 
     .line 393
     :cond_2
@@ -1000,25 +971,23 @@
 
     iget v1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
 
-    sub-int/2addr v0, v1
+    sub-int v2, v0, v1
 
-    int-to-long v0, v0
+    int-to-long v5, v2
 
-    sub-long v4, p1, v2
+    sub-long v7, p1, v3
 
-    cmp-long v0, v0, v4
+    cmp-long v2, v5, v7
 
-    if-ltz v0, :cond_3
+    if-ltz v2, :cond_3
 
-    .line 394
-    iget v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    int-to-long v0, v1
 
-    int-to-long v0, v0
-
-    add-long/2addr v0, v4
+    add-long/2addr v0, v7
 
     long-to-int v0, v0
 
+    .line 394
     iput v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -1028,35 +997,28 @@
 
     return-wide p1
 
-    .line 398
     :cond_3
-    :try_start_4
-    iget p1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
+    int-to-long p1, v0
 
-    int-to-long p1, p1
+    add-long/2addr v3, p1
 
-    add-long/2addr v2, p1
+    int-to-long p1, v1
 
-    iget p1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
-
-    int-to-long p1, p1
-
-    sub-long/2addr v2, p1
+    sub-long/2addr v3, p1
 
     .line 399
-    iget p1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->count:I
-
-    iput p1, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
+    :try_start_4
+    iput v0, p0, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->pos:I
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 400
     monitor-exit p0
 
-    return-wide v2
+    return-wide v3
 
     :cond_4
-    sub-long/2addr p1, v2
+    sub-long/2addr p1, v3
 
     .line 402
     :try_start_5
@@ -1066,11 +1028,11 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    add-long/2addr v2, p1
+    add-long/2addr v3, p1
 
     monitor-exit p0
 
-    return-wide v2
+    return-wide v3
 
     .line 379
     :cond_5

@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/preference/PreferenceGroup;)V
     .locals 0
 
-    .line 72
+    .line 73
     iput-object p1, p0, Landroidx/preference/PreferenceGroup$1;->this$0:Landroidx/preference/PreferenceGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +38,10 @@
 .method public run()V
     .locals 1
 
-    .line 75
+    .line 76
     monitor-enter p0
 
-    .line 76
+    .line 77
     :try_start_0
     iget-object v0, p0, Landroidx/preference/PreferenceGroup$1;->this$0:Landroidx/preference/PreferenceGroup;
 
@@ -49,7 +49,7 @@
 
     invoke-virtual {v0}, Landroidx/collection/SimpleArrayMap;->clear()V
 
-    .line 77
+    .line 78
     monitor-exit p0
 
     return-void

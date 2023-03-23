@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$2"
+        }
+    .end annotation
 
-    .line 461
+    .line 467
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2$1;->this$2:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 464
+    .line 470
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
     move-result-object v0
@@ -49,12 +57,12 @@
 
     move-result-object v0
 
-    .line 466
+    .line 472
     instance-of v1, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     if-eqz v1, :cond_0
 
-    .line 467
+    .line 473
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2$1;->this$2:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2;
 
     iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6;
@@ -65,7 +73,7 @@
 
     if-nez v1, :cond_0
 
-    .line 468
+    .line 474
     check-cast v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2$1;->this$2:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$6$2;

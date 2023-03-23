@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Ezin dira hautatu %d elementu baino gehiago.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ezin dira %d elementu baino gehiago hautatu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Ezin dira eraman %d fitxategi zakarrontzira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ezin da eraman %d fitxategi zakarrontzira</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Ez dira eraman %d karpeta zakarrontzira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ez da eraman %d karpeta zakarrontzira</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Ez dira eraman %d elementu zakarrontzira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ez da eraman %d elementu zakarrontzira</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Hautatutako fitxategietako %d ezabatuko dira hodeian edo USB bidezko biltegiratze gailu batean daudelako.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hautatutako fitxategietako %d ezabatuko da hodeian edo USB bidezko biltegiratze gailu batean dagoelako.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Hautatutako karpetetako %d ezabatuko dira hodeian edo USB bidezko biltegiratze gailu batean daudelako.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hautatutako karpetetako %d ezabatuko da hodeian edo USB bidezko biltegiratze gailu batean dagoelako.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Hautatutako elementuetako %d ezabatuko dira hodeian edo USB bidezko biltegiratze gailu batean daudelako.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hautatutako elementuetako %d ezabatuko da hodeian edo USB bidezko biltegiratze gailu batean dagoelako.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d fitxategi konprimatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi konprimatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d fitxategi konprimatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi konprimatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d karpeta konprimatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta konprimatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d karpeta konprimatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta konprimatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d elementu konprimatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu konprimatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d elementu konprimatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu konprimatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d fitxategi kopiatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi kopiatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d fitxategi kopiatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi kopiatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d karpeta kopiatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta kopiatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d karpeta kopiatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta kopiatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d elementu kopiatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu kopiatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d elementu kopiatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu kopiatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">%d fitxategi telefonotik ezabatu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi telefonotik ezabatu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">%d fitxategi tabletatik ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi tabletatik ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">%d karpeta telefonotik ezabatu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta telefonotik ezabatu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">%d karpeta tabletatik ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta tabletatik ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">%d elementu telefonotik ezabatu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu telefonotik ezabatu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">%d elementu tabletatik ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu tabletatik ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d fitxategi ezabatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi ezabatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d karpeta ezabatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta ezabatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Zakarrontz. %d el. ezabatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zakarrontz. %d el. ezabatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d elementu ezabatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu ezabatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d fitxategi ateratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi ateratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d karpeta ateratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta ateratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d elementu ateratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu ateratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d fitxategi ere Zakarrontzia atalera eramango dira %2$s barru.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d fitxategi ere Zakarrontzia atalera eramango da %2$s barru.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d fitxategi berreskuratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi berreskuratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d karpeta ere Zakarrontzia atalera eramango dira (%2$s).</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d karpeta ere Zakarrontzia atalera eramango da (%2$s).</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d karpeta leheneratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta leheneratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Barne biltegia beteta dago. %d fitxategi betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Barne biltegia beteta dago. %d fitxategi betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Barne biltegia beteta dago. %d karpeta betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Barne biltegia beteta dago. %d karpeta betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Barne biltegia beteta dago. %d elementu betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Barne biltegia beteta dago. %d elementu betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Barne biltegia eta SD txartela beteta daude. %d fitxategi betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Barne biltegia eta SD txartela beteta daude. %d fitxategi betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Barne biltegia eta SD txartela beteta daude. %d karpeta betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Barne biltegia eta SD txartela beteta daude. %d karpeta betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Barne biltegia eta SD txartela beteta daude. %d elementu betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Barne biltegia eta SD txartela beteta daude. %d elementu betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d elementu leheneratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu leheneratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d elementu ere Zakarrontzia atalera eramango dira %2$s barru.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elementu ere Zakarrontzia atalera eramango da %2$s barru.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Gehienez ere aplikazioaren %d leiho ireki daitezke.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere aplikazioaren %d leiho ireki daiteke.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d fitxategi Zakarrontzia atalera eraman nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi Zakarrontzia atalera eraman nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d fitxategi Zakarrontzia atalera eraman?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi Zakarrontzia atalera eraman?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d karpeta Zakarrontzia atalera eraman nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta Zakarrontzia atalera eraman nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d karpeta Zakarrontzia atalera eraman?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta Zakarrontzia atalera eraman?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d elementu Zakarrontzira eraman?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu Zakarrontzira eraman?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d elementu Zakarrontzia atalera eraman nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu Zakarrontzia atalera eraman nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d fitx. Zakarrontzia atalera mugitzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitx. Zakarrontzia atalera mugitzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d karpeta Zakarrontzia atalera mugitzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta Zakarrontzia atalera mugitzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d elementu Zakarrontzia atalera mugitzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu Zakarrontzia atalera mugitzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d fitxategi mugitzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi mugitzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d fitxategi mugitzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi mugitzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d karpeta mugitzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta mugitzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d karpeta eramaten…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta eramaten…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d elementu mugitzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu mugitzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d elementu eramaten…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu eramaten…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d elementu konprimatu dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu konprimatu da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d elementu kopiatu dira hemen: %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elementu kopiatu da hemen: %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Karpeta eta %d fitxategi ezabatu?</item>
+        <item quantity="one">Karpeta eta bertako fitxategia ezabatu?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d karpeta eta bertako %2$d fitxategiak ezabatu?</item>
+        <item quantity="one">Karpeta eta bertako fitxategia ezabatu?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d elementu ezabatu dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu ezabatu da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d fitxategi deskargatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi deskargatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d karpeta deskargatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta deskargatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d elementu deskargatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementua deskargatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Ezin da karpetarik partekatu. Karpetak hutsik daude.</item>
+        <item quantity="one">Ezin da partekatu karpeta. Karpeta hutsik dago.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d fitxategi betiko ezabatuko dira.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi betiko ezabatuko da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d karpeta betiko ezabatuko dira.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta betiko ezabatuko da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d elementu atera dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu atera da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d fitxategi gehitu dira Gogokoak atalean.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi gehitu da Gogokoak atalean.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d fitxategi kendu dira gogokoetatik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi kendu da gogokoetatik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d karpeta gehitu dira Gogokoak atalean.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta gehitu da Gogokoak atalean.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d karpeta kendu dira gogokoetatik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta kendu da gogokoetatik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d elementu gehitu dira Gogokoak atalean.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu gehitu da Gogokoak atalean.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d elementu kendu dira gogokoetatik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu kendu da gogokoetatik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d elementu</item>
+        <item quantity="one">Elementu 1</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d elementu</item>
+        <item quantity="one">%d elementu</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d elementu arbelean kopiatu dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu arbelean kopiatu da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d elementu arbelera eraman dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu arbelera eraman da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d elementu hautatu dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu hautatu da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d elementu eraman dira hona: %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elementu eraman da hona: %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d elementu Zakarrontzia atalera eraman dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu Zakarrontzia atalera eraman da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d hautatu dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d hautatu da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD txartela beteta dago. %d fitxategi betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD txartela beteta dago. %d fitxategi betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD txartela beteta dago. %d karpeta betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD txartela beteta dago. %d karpeta betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD txartela beteta dago. %d elementu betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD txartela beteta dago. %d elementu betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Fitxategia %d egun barru ezabatuko da.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fitxategia %d egun barru ezabatuko da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Karpeta %d egun barru ezabatuko da.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karpeta %d egun barru ezabatuko da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d fitxategi betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d fitxategi ezabatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi ezabatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d fitxategi leheneratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi leheneratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d karpeta betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d karpeta ezabatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta ezabatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d karpeta leheneratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d karpeta leheneratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d elementu betiko ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu betiko ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d elementu ezabatzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu ezabatzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d elementu leheneratzen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementu leheneratzen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d egun barru ezabatuko da</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d egun barru ezabatuko da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d aplikazio desinstalatu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aplikazio desinstalatu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

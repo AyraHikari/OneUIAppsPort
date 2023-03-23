@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="@dimen/basic_navigation_rail_width" android:layout_height="wrap_content" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/item_container" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rail_list_item_width" android:layout_height="@dimen/rail_list_item_height" android:layout_marginTop="@dimen/basic_drawer_rail_item_margin_vertical" android:layout_marginBottom="@dimen/basic_drawer_rail_item_margin_vertical">
+        <View android:id="@id/background" android:background="@drawable/drawer_list_item_background" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rail_list_item_margin_vertical" android:layout_marginBottom="@dimen/rail_list_item_margin_vertical" android:layout_marginStart="@dimen/rail_list_item_margin_horizontal" android:layout_marginEnd="@dimen/rail_list_item_margin_horizontal" />
+        <ViewStub android:id="@id/app_update_badge_stub" android:layout="@layout/n_badge_stub" android:inflatedId="@id/app_update_badge" android:layout_width="@dimen/app_update_new_badge_size" android:layout_height="@dimen/app_update_new_badge_size" android:layout_marginTop="@dimen/basic_navigation_rail_badge_margin_top" android:layout_marginStart="@dimen/basic_navigation_rail_badge_margin_start" />
+    </FrameLayout>
+    <View android:id="@id/divider" android:background="@drawable/subheader_divider" android:visibility="gone" android:layout_width="@dimen/basic_drawer_list_item_icon_size" android:layout_height="@dimen/basic_drawer_list_divider_height" />
+</LinearLayout>

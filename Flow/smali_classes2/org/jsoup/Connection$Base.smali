@@ -24,6 +24,17 @@
 
 
 # virtual methods
+.method public abstract addHeader(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/Connection$Base;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")TT;"
+        }
+    .end annotation
+.end method
+
 .method public abstract cookie(Ljava/lang/String;)Ljava/lang/String;
 .end method
 
@@ -73,6 +84,19 @@
     .end annotation
 .end method
 
+.method public abstract headers(Ljava/lang/String;)Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
 .method public abstract headers()Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -96,6 +120,19 @@
 .end method
 
 .method public abstract method()Lorg/jsoup/Connection$Method;
+.end method
+
+.method public abstract multiHeaders()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
 .end method
 
 .method public abstract removeCookie(Ljava/lang/String;)Lorg/jsoup/Connection$Base;

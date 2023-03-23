@@ -8,14 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Daftarkan dan kelola hingga %d komputer atau tablet di Samsung Flow.
-
-Hanya satu komputer atau tablet yang dapat disambungkan ke ponsel Anda. Anda harus memilih salah satu ketika beberapa komputer atau tablet yang terdaftar mencoba menyambung ke ponsel Anda."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notifikasi baru</item>
+        <item quantity="one">%d notifikasi baru</item>
     </plurals>
 </resources>

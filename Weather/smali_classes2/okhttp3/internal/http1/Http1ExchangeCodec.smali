@@ -19,84 +19,84 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nHttp1ExchangeCodec.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Http1ExchangeCodec.kt\nokhttp3/internal/http1/Http1ExchangeCodec\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,497:1\n1#2:498\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\t\u0018\u0000 ?2\u00020\u0001:\u0007<=>?@ABB\'\u0012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0008\u0010\u001b\u001a\u00020\u001cH\u0016J\u0018\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00172\u0006\u0010 \u001a\u00020!H\u0016J\u0010\u0010\"\u001a\u00020\u001c2\u0006\u0010#\u001a\u00020$H\u0002J\u0008\u0010%\u001a\u00020\u001cH\u0016J\u0008\u0010&\u001a\u00020\u001cH\u0016J\u0008\u0010\'\u001a\u00020\u001eH\u0002J\u0010\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+H\u0002J\u0010\u0010,\u001a\u00020)2\u0006\u0010-\u001a\u00020!H\u0002J\u0008\u0010.\u001a\u00020\u001eH\u0002J\u0008\u0010/\u001a\u00020)H\u0002J\u0010\u00100\u001a\u00020)2\u0006\u00101\u001a\u00020\u0019H\u0016J\u0012\u00102\u001a\u0004\u0018\u0001032\u0006\u00104\u001a\u00020\u0010H\u0016J\u0010\u00105\u001a\u00020!2\u0006\u00101\u001a\u00020\u0019H\u0016J\u000e\u00106\u001a\u00020\u001c2\u0006\u00101\u001a\u00020\u0019J\u0008\u0010\u0014\u001a\u00020\u0015H\u0016J\u0016\u00107\u001a\u00020\u001c2\u0006\u00108\u001a\u00020\u00152\u0006\u00109\u001a\u00020:J\u0010\u0010;\u001a\u00020\u001c2\u0006\u0010\u001f\u001a\u00020\u0017H\u0016R\u0010\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u000f\u001a\u00020\u00108F\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u0011R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0016\u001a\u00020\u0010*\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0018R\u0018\u0010\u0016\u001a\u00020\u0010*\u00020\u00198BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u001a\u00a8\u0006C"
+        "\u0000\u008e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0011\u0018\u0000 D2\u00020\u0001:\u0007EFGDHIJB)\u0012\u0008\u00100\u001a\u0004\u0018\u00010/\u0012\u0006\u00103\u001a\u000202\u0012\u0006\u00108\u001a\u000207\u0012\u0006\u0010;\u001a\u00020:\u00a2\u0006\u0004\u0008B\u0010CJ\u0008\u0010\u0003\u001a\u00020\u0002H\u0002J\u0008\u0010\u0004\u001a\u00020\u0002H\u0002J\u0010\u0010\u0008\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0002J\u0010\u0010\u000b\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\tH\u0002J\u0008\u0010\u000c\u001a\u00020\u0007H\u0002J\u0010\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u000e\u001a\u00020\rH\u0002J\u0018\u0010\u0014\u001a\u00020\u00022\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0013\u001a\u00020\u0005H\u0016J\u0008\u0010\u0015\u001a\u00020\u000fH\u0016J\u0010\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016J\u0010\u0010\u0019\u001a\u00020\u00052\u0006\u0010\u0018\u001a\u00020\u0017H\u0016J\u0010\u0010\u001a\u001a\u00020\u00072\u0006\u0010\u0018\u001a\u00020\u0017H\u0016J\u0008\u0010\u001c\u001a\u00020\u001bH\u0016J\u0008\u0010\u001d\u001a\u00020\u000fH\u0016J\u0008\u0010\u001e\u001a\u00020\u000fH\u0016J\u0016\u0010\"\u001a\u00020\u000f2\u0006\u0010\u001f\u001a\u00020\u001b2\u0006\u0010!\u001a\u00020 J\u0012\u0010&\u001a\u0004\u0018\u00010%2\u0006\u0010$\u001a\u00020#H\u0016J\u000e\u0010\'\u001a\u00020\u000f2\u0006\u0010\u0018\u001a\u00020\u0017R\u0016\u0010)\u001a\u00020(8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008)\u0010*R\u0014\u0010,\u001a\u00020+8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008,\u0010-R\u0018\u0010\u001c\u001a\u0004\u0018\u00010\u001b8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u001c\u0010.R\u0016\u00100\u001a\u0004\u0018\u00010/8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u00080\u00101R\u001a\u00103\u001a\u0002028\u0016X\u0096\u0004\u00a2\u0006\u000c\n\u0004\u00083\u00104\u001a\u0004\u00085\u00106R\u0014\u00108\u001a\u0002078\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u00088\u00109R\u0014\u0010;\u001a\u00020:8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008;\u0010<R\u0018\u0010=\u001a\u00020#*\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008=\u0010>R\u0018\u0010=\u001a\u00020#*\u00020\u00118BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008=\u0010?R\u0011\u0010@\u001a\u00020#8F\u00a2\u0006\u0006\u001a\u0004\u0008@\u0010A\u00a8\u0006K"
     }
     d2 = {
         "Lokhttp3/internal/http1/Http1ExchangeCodec;",
         "Lokhttp3/internal/http/ExchangeCodec;",
-        "client",
-        "Lokhttp3/OkHttpClient;",
-        "connection",
-        "Lokhttp3/internal/connection/RealConnection;",
-        "source",
-        "Lokio/BufferedSource;",
-        "sink",
-        "Lokio/BufferedSink;",
-        "(Lokhttp3/OkHttpClient;Lokhttp3/internal/connection/RealConnection;Lokio/BufferedSource;Lokio/BufferedSink;)V",
-        "getConnection",
-        "()Lokhttp3/internal/connection/RealConnection;",
-        "headersReader",
-        "Lokhttp3/internal/http1/HeadersReader;",
-        "isClosed",
-        "",
-        "()Z",
-        "state",
-        "",
-        "trailers",
-        "Lokhttp3/Headers;",
-        "isChunked",
-        "Lokhttp3/Request;",
-        "(Lokhttp3/Request;)Z",
-        "Lokhttp3/Response;",
-        "(Lokhttp3/Response;)Z",
-        "cancel",
-        "",
-        "createRequestBody",
         "Lokio/Sink;",
+        "newChunkedSink",
+        "newKnownLengthSink",
+        "",
+        "length",
+        "Lokio/Source;",
+        "newFixedLengthSource",
+        "Lokhttp3/HttpUrl;",
+        "url",
+        "newChunkedSource",
+        "newUnknownLengthSource",
+        "Lokio/ForwardingTimeout;",
+        "timeout",
+        "Lbi/x;",
+        "detachTimeout",
+        "Lokhttp3/Request;",
         "request",
         "contentLength",
-        "",
-        "detachTimeout",
-        "timeout",
-        "Lokio/ForwardingTimeout;",
-        "finishRequest",
-        "flushRequest",
-        "newChunkedSink",
-        "newChunkedSource",
-        "Lokio/Source;",
-        "url",
-        "Lokhttp3/HttpUrl;",
-        "newFixedLengthSource",
-        "length",
-        "newKnownLengthSink",
-        "newUnknownLengthSource",
-        "openResponseBodySource",
-        "response",
-        "readResponseHeaders",
-        "Lokhttp3/Response$Builder;",
-        "expectContinue",
-        "reportedContentLength",
-        "skipConnectBody",
-        "writeRequest",
-        "headers",
-        "requestLine",
-        "",
+        "createRequestBody",
+        "cancel",
         "writeRequestHeaders",
+        "Lokhttp3/Response;",
+        "response",
+        "reportedContentLength",
+        "openResponseBodySource",
+        "Lokhttp3/Headers;",
+        "trailers",
+        "flushRequest",
+        "finishRequest",
+        "headers",
+        "",
+        "requestLine",
+        "writeRequest",
+        "",
+        "expectContinue",
+        "Lokhttp3/Response$Builder;",
+        "readResponseHeaders",
+        "skipConnectBody",
+        "",
+        "state",
+        "I",
+        "Lokhttp3/internal/http1/HeadersReader;",
+        "headersReader",
+        "Lokhttp3/internal/http1/HeadersReader;",
+        "Lokhttp3/Headers;",
+        "Lokhttp3/OkHttpClient;",
+        "client",
+        "Lokhttp3/OkHttpClient;",
+        "Lokhttp3/internal/connection/RealConnection;",
+        "connection",
+        "Lokhttp3/internal/connection/RealConnection;",
+        "getConnection",
+        "()Lokhttp3/internal/connection/RealConnection;",
+        "Lokio/BufferedSource;",
+        "source",
+        "Lokio/BufferedSource;",
+        "Lokio/BufferedSink;",
+        "sink",
+        "Lokio/BufferedSink;",
+        "isChunked",
+        "(Lokhttp3/Response;)Z",
+        "(Lokhttp3/Request;)Z",
+        "isClosed",
+        "()Z",
+        "<init>",
+        "(Lokhttp3/OkHttpClient;Lokhttp3/internal/connection/RealConnection;Lokio/BufferedSource;Lokio/BufferedSink;)V",
+        "Companion",
         "AbstractSource",
         "ChunkedSink",
         "ChunkedSource",
-        "Companion",
         "FixedLengthSource",
         "KnownLengthSink",
         "UnknownLengthSource",
@@ -148,7 +148,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/internal/http1/Http1ExchangeCodec$Companion;
@@ -167,17 +167,17 @@
 
     const-string v0, "connection"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "source"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "sink"
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 64
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->client:Lokhttp3/OkHttpClient;
@@ -188,7 +188,7 @@
 
     iput-object p4, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lokio/BufferedSink;
 
-    .line 73
+    .line 2
     new-instance p1, Lokhttp3/internal/http1/HeadersReader;
 
     invoke-direct {p1, p3}, Lokhttp3/internal/http1/HeadersReader;-><init>(Lokio/BufferedSource;)V
@@ -201,7 +201,6 @@
 .method public static final synthetic access$detachTimeout(Lokhttp3/internal/http1/Http1ExchangeCodec;Lokio/ForwardingTimeout;)V
     .locals 0
 
-    .line 64
     invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->detachTimeout(Lokio/ForwardingTimeout;)V
 
     return-void
@@ -210,7 +209,6 @@
 .method public static final synthetic access$getClient$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lokhttp3/OkHttpClient;
     .locals 0
 
-    .line 64
     iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->client:Lokhttp3/OkHttpClient;
 
     return-object p0
@@ -219,7 +217,6 @@
 .method public static final synthetic access$getHeadersReader$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lokhttp3/internal/http1/HeadersReader;
     .locals 0
 
-    .line 64
     iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->headersReader:Lokhttp3/internal/http1/HeadersReader;
 
     return-object p0
@@ -228,7 +225,6 @@
 .method public static final synthetic access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lokio/BufferedSink;
     .locals 0
 
-    .line 64
     iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lokio/BufferedSink;
 
     return-object p0
@@ -237,7 +233,6 @@
 .method public static final synthetic access$getSource$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lokio/BufferedSource;
     .locals 0
 
-    .line 64
     iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->source:Lokio/BufferedSource;
 
     return-object p0
@@ -246,7 +241,6 @@
 .method public static final synthetic access$getState$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)I
     .locals 0
 
-    .line 64
     iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     return p0
@@ -255,7 +249,6 @@
 .method public static final synthetic access$getTrailers$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lokhttp3/Headers;
     .locals 0
 
-    .line 64
     iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->trailers:Lokhttp3/Headers;
 
     return-object p0
@@ -264,7 +257,6 @@
 .method public static final synthetic access$setState$p(Lokhttp3/internal/http1/Http1ExchangeCodec;I)V
     .locals 0
 
-    .line 64
     iput p1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     return-void
@@ -273,7 +265,6 @@
 .method public static final synthetic access$setTrailers$p(Lokhttp3/internal/http1/Http1ExchangeCodec;Lokhttp3/Headers;)V
     .locals 0
 
-    .line 64
     iput-object p1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->trailers:Lokhttp3/Headers;
 
     return-void
@@ -282,20 +273,20 @@
 .method private final detachTimeout(Lokio/ForwardingTimeout;)V
     .locals 2
 
-    .line 243
+    .line 1
     invoke-virtual {p1}, Lokio/ForwardingTimeout;->delegate()Lokio/Timeout;
 
     move-result-object v0
 
-    .line 244
+    .line 2
     sget-object v1, Lokio/Timeout;->NONE:Lokio/Timeout;
 
     invoke-virtual {p1, v1}, Lokio/ForwardingTimeout;->setDelegate(Lokio/Timeout;)Lokio/ForwardingTimeout;
 
-    .line 245
+    .line 3
     invoke-virtual {v0}, Lokio/Timeout;->clearDeadline()Lokio/Timeout;
 
-    .line 246
+    .line 4
     invoke-virtual {v0}, Lokio/Timeout;->clearTimeout()Lokio/Timeout;
 
     return-void
@@ -306,7 +297,7 @@
 
     const-string v0, "Transfer-Encoding"
 
-    .line 79
+    .line 2
     invoke-virtual {p1, v0}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -315,7 +306,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, p1, v1}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v0, p1, v1}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result p1
 
@@ -331,7 +322,7 @@
 
     const/4 v2, 0x2
 
-    .line 76
+    .line 1
     invoke-static {p1, v0, v1, v2, v1}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -340,7 +331,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, p1, v1}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v0, p1, v1}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result p1
 
@@ -350,7 +341,7 @@
 .method private final newChunkedSink()Lokio/Sink;
     .locals 2
 
-    .line 207
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x1
@@ -367,19 +358,17 @@
 
     const/4 v0, 0x2
 
-    .line 208
+    .line 2
     iput v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
-    .line 209
+    .line 3
     new-instance v0, Lokhttp3/internal/http1/Http1ExchangeCodec$ChunkedSink;
 
     invoke-direct {v0, p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$ChunkedSink;-><init>(Lokhttp3/internal/http1/Http1ExchangeCodec;)V
 
-    check-cast v0, Lokio/Sink;
-
     return-object v0
 
-    .line 207
+    .line 4
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -389,13 +378,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -409,15 +394,13 @@
 
     invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast v1, Ljava/lang/Throwable;
-
     throw v1
 .end method
 
 .method private final newChunkedSource(Lokhttp3/HttpUrl;)Lokio/Source;
     .locals 2
 
-    .line 225
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x4
@@ -436,19 +419,17 @@
 
     const/4 v0, 0x5
 
-    .line 226
+    .line 2
     iput v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
-    .line 227
+    .line 3
     new-instance v0, Lokhttp3/internal/http1/Http1ExchangeCodec$ChunkedSource;
 
     invoke-direct {v0, p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec$ChunkedSource;-><init>(Lokhttp3/internal/http1/Http1ExchangeCodec;Lokhttp3/HttpUrl;)V
 
-    check-cast v0, Lokio/Source;
-
     return-object v0
 
-    .line 225
+    .line 4
     :cond_1
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -458,13 +439,9 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -478,15 +455,13 @@
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast v0, Ljava/lang/Throwable;
-
     throw v0
 .end method
 
 .method private final newFixedLengthSource(J)Lokio/Source;
     .locals 2
 
-    .line 219
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x4
@@ -505,19 +480,17 @@
 
     const/4 v0, 0x5
 
-    .line 220
+    .line 2
     iput v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
-    .line 221
+    .line 3
     new-instance v0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;
 
     invoke-direct {v0, p0, p1, p2}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;-><init>(Lokhttp3/internal/http1/Http1ExchangeCodec;J)V
 
-    check-cast v0, Lokio/Source;
-
     return-object v0
 
-    .line 219
+    .line 4
     :cond_1
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -527,13 +500,9 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
     iget p2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -547,15 +516,13 @@
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 .end method
 
 .method private final newKnownLengthSink()Lokio/Sink;
     .locals 2
 
-    .line 213
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x1
@@ -572,19 +539,17 @@
 
     const/4 v0, 0x2
 
-    .line 214
+    .line 2
     iput v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
-    .line 215
+    .line 3
     new-instance v0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;
 
     invoke-direct {v0, p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;-><init>(Lokhttp3/internal/http1/Http1ExchangeCodec;)V
 
-    check-cast v0, Lokio/Sink;
-
     return-object v0
 
-    .line 213
+    .line 4
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -594,13 +559,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -614,15 +575,13 @@
 
     invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast v1, Ljava/lang/Throwable;
-
     throw v1
 .end method
 
 .method private final newUnknownLengthSource()Lokio/Source;
     .locals 2
 
-    .line 231
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x4
@@ -641,26 +600,24 @@
 
     const/4 v0, 0x5
 
-    .line 232
+    .line 2
     iput v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
-    .line 233
+    .line 3
     invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnection;->noNewExchanges$okhttp()V
 
-    .line 234
+    .line 4
     new-instance v0, Lokhttp3/internal/http1/Http1ExchangeCodec$UnknownLengthSource;
 
     invoke-direct {v0, p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$UnknownLengthSource;-><init>(Lokhttp3/internal/http1/Http1ExchangeCodec;)V
 
-    check-cast v0, Lokio/Source;
-
     return-object v0
 
-    .line 231
+    .line 5
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -670,13 +627,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -690,8 +643,6 @@
 
     invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast v1, Ljava/lang/Throwable;
-
     throw v1
 .end method
 
@@ -700,7 +651,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 104
     invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
 
     move-result-object v0
@@ -715,9 +665,9 @@
 
     const-string v0, "request"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 93
+    .line 1
     invoke-virtual {p1}, Lokhttp3/Request;->body()Lokhttp3/RequestBody;
 
     move-result-object v0
@@ -743,11 +693,9 @@
 
     invoke-direct {p1, p2}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 
-    .line 95
+    .line 2
     :cond_1
     :goto_0
     invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->isChunked(Lokhttp3/Request;)Z
@@ -769,7 +717,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 96
+    .line 3
     invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newKnownLengthSink()Lokio/Sink;
 
     move-result-object p1
@@ -777,7 +725,7 @@
     :goto_1
     return-object p1
 
-    .line 98
+    .line 4
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -785,15 +733,12 @@
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method public finishRequest()V
     .locals 1
 
-    .line 155
     iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
@@ -804,7 +749,6 @@
 .method public flushRequest()V
     .locals 1
 
-    .line 151
     iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
@@ -815,7 +759,6 @@
 .method public getConnection()Lokhttp3/internal/connection/RealConnection;
     .locals 1
 
-    .line 68
     iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->connection:Lokhttp3/internal/connection/RealConnection;
 
     return-object v0
@@ -824,7 +767,6 @@
 .method public final isClosed()Z
     .locals 2
 
-    .line 89
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x6
@@ -847,9 +789,9 @@
 
     const-string v0, "response"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 132
+    .line 1
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->promisesBody(Lokhttp3/Response;)Z
 
     move-result v0
@@ -864,7 +806,7 @@
 
     goto :goto_0
 
-    .line 133
+    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->isChunked(Lokhttp3/Response;)Z
 
@@ -886,7 +828,7 @@
 
     goto :goto_0
 
-    .line 135
+    .line 3
     :cond_1
     invoke-static {p1}, Lokhttp3/internal/Util;->headersContentLength(Lokhttp3/Response;)J
 
@@ -898,14 +840,14 @@
 
     if-eqz p1, :cond_2
 
-    .line 137
+    .line 4
     invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Lokio/Source;
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 139
+    .line 5
     :cond_2
     invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newUnknownLengthSource()Lokio/Source;
 
@@ -918,7 +860,7 @@
 .method public readResponseHeaders(Z)Lokhttp3/Response$Builder;
     .locals 4
 
-    .line 173
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x3
@@ -938,7 +880,7 @@
     :goto_0
     if-eqz v2, :cond_4
 
-    .line 178
+    .line 2
     :try_start_0
     sget-object v0, Lokhttp3/internal/http/StatusLine;->Companion:Lokhttp3/internal/http/StatusLine$Companion;
 
@@ -952,33 +894,33 @@
 
     move-result-object v0
 
-    .line 180
+    .line 3
     new-instance v2, Lokhttp3/Response$Builder;
 
     invoke-direct {v2}, Lokhttp3/Response$Builder;-><init>()V
 
-    .line 181
+    .line 4
     iget-object v3, v0, Lokhttp3/internal/http/StatusLine;->protocol:Lokhttp3/Protocol;
 
     invoke-virtual {v2, v3}, Lokhttp3/Response$Builder;->protocol(Lokhttp3/Protocol;)Lokhttp3/Response$Builder;
 
     move-result-object v2
 
-    .line 182
+    .line 5
     iget v3, v0, Lokhttp3/internal/http/StatusLine;->code:I
 
     invoke-virtual {v2, v3}, Lokhttp3/Response$Builder;->code(I)Lokhttp3/Response$Builder;
 
     move-result-object v2
 
-    .line 183
+    .line 6
     iget-object v3, v0, Lokhttp3/internal/http/StatusLine;->message:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Lokhttp3/Response$Builder;->message(Ljava/lang/String;)Lokhttp3/Response$Builder;
 
     move-result-object v2
 
-    .line 184
+    .line 7
     iget-object v3, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->headersReader:Lokhttp3/internal/http1/HeadersReader;
 
     invoke-virtual {v3}, Lokhttp3/internal/http1/HeadersReader;->readHeaders()Lokhttp3/Headers;
@@ -993,7 +935,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 187
+    .line 8
     iget p1, v0, Lokhttp3/internal/http/StatusLine;->code:I
 
     if-ne p1, v3, :cond_2
@@ -1002,13 +944,13 @@
 
     goto :goto_1
 
-    .line 190
+    .line 9
     :cond_2
     iget p1, v0, Lokhttp3/internal/http/StatusLine;->code:I
 
     if-ne p1, v3, :cond_3
 
-    .line 191
+    .line 10
     iput v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     goto :goto_1
@@ -1016,7 +958,7 @@
     :cond_3
     const/4 p1, 0x4
 
-    .line 195
+    .line 11
     iput p1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
     :try_end_0
     .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1027,7 +969,7 @@
     :catch_0
     move-exception p1
 
-    .line 201
+    .line 12
     invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
 
     move-result-object v0
@@ -1048,7 +990,7 @@
 
     move-result-object v0
 
-    .line 202
+    .line 13
     new-instance v1, Ljava/io/IOException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1059,25 +1001,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
-
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
-
-    check-cast p1, Ljava/lang/Throwable;
 
     invoke-direct {v1, v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    check-cast v1, Ljava/lang/Throwable;
-
     throw v1
 
-    .line 174
+    .line 14
     :cond_4
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -1087,19 +1021,15 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 173
+    .line 15
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -1107,8 +1037,6 @@
     move-result-object p1
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 .end method
@@ -1118,9 +1046,9 @@
 
     const-string v0, "response"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 124
+    .line 1
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->promisesBody(Lokhttp3/Response;)Z
 
     move-result v0
@@ -1131,7 +1059,7 @@
 
     goto :goto_0
 
-    .line 125
+    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->isChunked(Lokhttp3/Response;)Z
 
@@ -1143,7 +1071,7 @@
 
     goto :goto_0
 
-    .line 126
+    .line 3
     :cond_1
     invoke-static {p1}, Lokhttp3/internal/Util;->headersContentLength(Lokhttp3/Response;)J
 
@@ -1158,9 +1086,9 @@
 
     const-string v0, "response"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 254
+    .line 1
     invoke-static {p1}, Lokhttp3/internal/Util;->headersContentLength(Lokhttp3/Response;)J
 
     move-result-wide v0
@@ -1173,7 +1101,7 @@
 
     return-void
 
-    .line 256
+    .line 2
     :cond_0
     invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Lokio/Source;
 
@@ -1181,12 +1109,12 @@
 
     const v0, 0x7fffffff
 
-    .line 257
+    .line 3
     sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-static {p1, v0, v1}, Lokhttp3/internal/Util;->skipAll(Lokio/Source;ILjava/util/concurrent/TimeUnit;)Z
 
-    .line 258
+    .line 4
     invoke-interface {p1}, Lokio/Source;->close()V
 
     return-void
@@ -1195,7 +1123,7 @@
 .method public trailers()Lokhttp3/Headers;
     .locals 2
 
-    .line 146
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x6
@@ -1212,7 +1140,7 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 147
+    .line 2
     iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->trailers:Lokhttp3/Headers;
 
     if-eqz v0, :cond_1
@@ -1225,7 +1153,7 @@
     :goto_1
     return-object v0
 
-    .line 146
+    .line 3
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -1237,8 +1165,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast v0, Ljava/lang/Throwable;
-
     throw v0
 .end method
 
@@ -1247,13 +1173,13 @@
 
     const-string v0, "headers"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "requestLine"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 160
+    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     const/4 v1, 0x0
@@ -1272,7 +1198,7 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 161
+    .line 2
     iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lokio/BufferedSink;
 
     invoke-interface {v0, p2}, Lokio/BufferedSink;->writeUtf8(Ljava/lang/String;)Lokio/BufferedSink;
@@ -1283,7 +1209,7 @@
 
     invoke-interface {p2, v0}, Lokio/BufferedSink;->writeUtf8(Ljava/lang/String;)Lokio/BufferedSink;
 
-    .line 162
+    .line 3
     invoke-virtual {p1}, Lokhttp3/Headers;->size()I
 
     move-result p2
@@ -1291,7 +1217,7 @@
     :goto_1
     if-ge v1, p2, :cond_1
 
-    .line 163
+    .line 4
     iget-object v3, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lokio/BufferedSink;
 
     invoke-virtual {p1, v1}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
@@ -1304,12 +1230,12 @@
 
     const-string v4, ": "
 
-    .line 164
+    .line 5
     invoke-interface {v3, v4}, Lokio/BufferedSink;->writeUtf8(Ljava/lang/String;)Lokio/BufferedSink;
 
     move-result-object v3
 
-    .line 165
+    .line 6
     invoke-virtual {p1, v1}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v4
@@ -1318,25 +1244,25 @@
 
     move-result-object v3
 
-    .line 166
+    .line 7
     invoke-interface {v3, v0}, Lokio/BufferedSink;->writeUtf8(Ljava/lang/String;)Lokio/BufferedSink;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 168
+    .line 8
     :cond_1
     iget-object p1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lokio/BufferedSink;
 
     invoke-interface {p1, v0}, Lokio/BufferedSink;->writeUtf8(Ljava/lang/String;)Lokio/BufferedSink;
 
-    .line 169
+    .line 9
     iput v2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     return-void
 
-    .line 160
+    .line 10
     :cond_2
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -1346,13 +1272,9 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
     iget p2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1366,8 +1288,6 @@
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 .end method
 
@@ -1376,9 +1296,9 @@
 
     const-string v0, "request"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 118
+    .line 1
     sget-object v0, Lokhttp3/internal/http/RequestLine;->INSTANCE:Lokhttp3/internal/http/RequestLine;
 
     invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
@@ -1399,13 +1319,13 @@
 
     const-string v2, "connection.route().proxy.type()"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, p1, v1}, Lokhttp3/internal/http/RequestLine;->get(Lokhttp3/Request;Ljava/net/Proxy$Type;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 119
+    .line 2
     invoke-virtual {p1}, Lokhttp3/Request;->headers()Lokhttp3/Headers;
 
     move-result-object p1

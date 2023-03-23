@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/preference/SeekBarPreference;)V
     .locals 0
 
-    .line 100
+    .line 154
     iput-object p1, p0, Landroidx/preference/SeekBarPreference$2;->this$0:Landroidx/preference/SeekBarPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 103
+    .line 157
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
     move-result p1
@@ -49,7 +49,7 @@
 
     return v0
 
-    .line 107
+    .line 161
     :cond_0
     iget-object p1, p0, Landroidx/preference/SeekBarPreference$2;->this$0:Landroidx/preference/SeekBarPreference;
 
@@ -79,13 +79,11 @@
 
     goto :goto_0
 
-    .line 119
+    .line 173
     :cond_3
     iget-object p1, p0, Landroidx/preference/SeekBarPreference$2;->this$0:Landroidx/preference/SeekBarPreference;
 
-    invoke-static {p1}, Landroidx/preference/SeekBarPreference;->access$100(Landroidx/preference/SeekBarPreference;)Landroidx/appcompat/widget/SeslSeekBar;
-
-    move-result-object p1
+    iget-object p1, p1, Landroidx/preference/SeekBarPreference;->mSeekBar:Landroidx/appcompat/widget/SeslSeekBar;
 
     if-nez p1, :cond_4
 
@@ -93,18 +91,16 @@
 
     const-string p2, "SeekBar view is null and hence cannot be adjusted."
 
-    .line 120
+    .line 174
     invoke-static {p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return v0
 
-    .line 123
+    .line 177
     :cond_4
     iget-object p1, p0, Landroidx/preference/SeekBarPreference$2;->this$0:Landroidx/preference/SeekBarPreference;
 
-    invoke-static {p1}, Landroidx/preference/SeekBarPreference;->access$100(Landroidx/preference/SeekBarPreference;)Landroidx/appcompat/widget/SeslSeekBar;
-
-    move-result-object p1
+    iget-object p1, p1, Landroidx/preference/SeekBarPreference;->mSeekBar:Landroidx/appcompat/widget/SeslSeekBar;
 
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/SeslSeekBar;->onKeyDown(ILandroid/view/KeyEvent;)Z
 

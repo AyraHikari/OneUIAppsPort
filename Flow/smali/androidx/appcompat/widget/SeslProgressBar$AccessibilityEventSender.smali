@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Landroidx/appcompat/widget/SeslProgressBar;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2172
+    .line 2371
     iput-object p1, p0, Landroidx/appcompat/widget/SeslProgressBar$AccessibilityEventSender;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +44,7 @@
 .method synthetic constructor <init>(Landroidx/appcompat/widget/SeslProgressBar;Landroidx/appcompat/widget/SeslProgressBar$1;)V
     .locals 0
 
-    .line 2172
+    .line 2371
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/SeslProgressBar$AccessibilityEventSender;-><init>(Landroidx/appcompat/widget/SeslProgressBar;)V
 
     return-void
@@ -47,7 +55,7 @@
 .method public run()V
     .locals 2
 
-    .line 2175
+    .line 2374
     iget-object v0, p0, Landroidx/appcompat/widget/SeslProgressBar$AccessibilityEventSender;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     const/4 v1, 0x4

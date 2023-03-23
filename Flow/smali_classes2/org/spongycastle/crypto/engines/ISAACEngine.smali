@@ -108,115 +108,113 @@
     .line 196
     iget-object v1, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->engineState:[I
 
-    aget v1, v1, v0
+    aget v3, v1, v0
 
-    and-int/lit8 v3, v0, 0x3
+    and-int/lit8 v4, v0, 0x3
 
-    if-eqz v3, :cond_3
+    if-eqz v4, :cond_3
 
-    if-eq v3, v2, :cond_2
+    if-eq v4, v2, :cond_2
 
-    const/4 v4, 0x2
+    const/4 v5, 0x2
 
-    if-eq v3, v4, :cond_1
+    if-eq v4, v5, :cond_1
 
-    const/4 v4, 0x3
+    const/4 v5, 0x3
 
-    if-eq v3, v4, :cond_0
+    if-eq v4, v5, :cond_0
 
     goto :goto_1
 
     .line 202
     :cond_0
-    iget v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iget v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
-    ushr-int/lit8 v4, v3, 0x10
+    ushr-int/lit8 v5, v4, 0x10
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v4, v5
 
-    iput v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iput v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
     goto :goto_1
 
     .line 201
     :cond_1
-    iget v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iget v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
-    shl-int/lit8 v4, v3, 0x2
+    shl-int/lit8 v5, v4, 0x2
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v4, v5
 
-    iput v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iput v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
     goto :goto_1
 
     .line 200
     :cond_2
-    iget v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iget v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
-    ushr-int/lit8 v4, v3, 0x6
+    ushr-int/lit8 v5, v4, 0x6
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v4, v5
 
-    iput v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iput v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
     goto :goto_1
 
     .line 199
     :cond_3
-    iget v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iget v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
-    shl-int/lit8 v4, v3, 0xd
+    shl-int/lit8 v5, v4, 0xd
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v4, v5
 
-    iput v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iput v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
     .line 204
     :goto_1
-    iget v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
-
-    iget-object v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->engineState:[I
+    iget v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
     add-int/lit16 v5, v0, 0x80
 
     and-int/lit16 v5, v5, 0xff
 
-    aget v5, v4, v5
+    aget v5, v1, v5
 
-    add-int/2addr v3, v5
+    add-int/2addr v4, v5
 
-    iput v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
+    iput v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->a:I
 
-    ushr-int/lit8 v5, v1, 0x2
+    ushr-int/lit8 v5, v3, 0x2
 
     and-int/lit16 v5, v5, 0xff
 
     .line 205
-    aget v5, v4, v5
+    aget v5, v1, v5
 
-    add-int/2addr v5, v3
+    add-int/2addr v5, v4
 
-    iget v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->b:I
+    iget v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->b:I
 
-    add-int/2addr v5, v3
+    add-int/2addr v5, v4
 
-    aput v5, v4, v0
+    aput v5, v1, v0
 
     .line 206
-    iget-object v3, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->results:[I
+    iget-object v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->results:[I
 
     ushr-int/lit8 v5, v5, 0xa
 
     and-int/lit16 v5, v5, 0xff
 
-    aget v4, v4, v5
+    aget v1, v1, v5
 
-    add-int/2addr v4, v1
+    add-int/2addr v1, v3
 
-    iput v4, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->b:I
+    iput v1, p0, Lorg/spongycastle/crypto/engines/ISAACEngine;->b:I
 
-    aput v4, v3, v0
+    aput v1, v4, v0
 
     add-int/lit8 v0, v0, 0x1
 
@@ -728,6 +726,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p2
@@ -738,7 +738,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -859,9 +861,13 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     const-string p3, " not initialised"
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

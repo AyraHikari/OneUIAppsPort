@@ -29,8 +29,26 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/app/AlertController$AlertParams;Landroid/content/Context;Landroid/database/Cursor;ZLandroidx/appcompat/app/AlertController$RecycleListView;Landroidx/appcompat/app/AlertController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0,
+            0x0,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "context",
+            "c",
+            "autoRequery",
+            "val$listView",
+            "val$dialog"
+        }
+    .end annotation
 
-    .line 1233
+    .line 1291
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->this$0:Landroidx/appcompat/app/AlertController$AlertParams;
 
     iput-object p5, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->val$listView:Landroidx/appcompat/app/AlertController$RecycleListView;
@@ -39,28 +57,24 @@
 
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/CursorAdapter;-><init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
 
-    .line 1238
+    .line 1296
     invoke-virtual {p0}, Landroidx/appcompat/app/AlertController$AlertParams$2;->getCursor()Landroid/database/Cursor;
 
-    move-result-object p1
+    move-result-object p2
 
-    .line 1239
-    iget-object p2, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->this$0:Landroidx/appcompat/app/AlertController$AlertParams;
+    .line 1297
+    iget-object p3, p1, Landroidx/appcompat/app/AlertController$AlertParams;->mLabelColumn:Ljava/lang/String;
 
-    iget-object p2, p2, Landroidx/appcompat/app/AlertController$AlertParams;->mLabelColumn:Ljava/lang/String;
+    invoke-interface {p2, p3}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
-    invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+    move-result p3
 
-    move-result p2
+    iput p3, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->mLabelIndex:I
 
-    iput p2, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->mLabelIndex:I
+    .line 1298
+    iget-object p1, p1, Landroidx/appcompat/app/AlertController$AlertParams;->mIsCheckedColumn:Ljava/lang/String;
 
-    .line 1240
-    iget-object p2, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->this$0:Landroidx/appcompat/app/AlertController$AlertParams;
-
-    iget-object p2, p2, Landroidx/appcompat/app/AlertController$AlertParams;->mIsCheckedColumn:Ljava/lang/String;
-
-    invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+    invoke-interface {p2, p1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
     move-result p1
 
@@ -73,17 +87,29 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "context",
+            "cursor"
+        }
+    .end annotation
 
     const p2, 0x1020014
 
-    .line 1245
+    .line 1303
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/CheckedTextView;
 
-    .line 1247
+    .line 1305
     iget p2, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->mLabelIndex:I
 
     invoke-interface {p3, p2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -92,7 +118,7 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1248
+    .line 1306
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->val$listView:Landroidx/appcompat/app/AlertController$RecycleListView;
 
     invoke-interface {p3}, Landroid/database/Cursor;->getPosition()I
@@ -101,7 +127,7 @@
 
     iget v0, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->mIsCheckedIndex:I
 
-    .line 1249
+    .line 1307
     invoke-interface {p3, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result p3
@@ -115,7 +141,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 1248
+    .line 1306
     :goto_0
     invoke-virtual {p1, p2, v0}, Landroidx/appcompat/app/AlertController$RecycleListView;->setItemChecked(IZ)V
 
@@ -124,8 +150,20 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cursor",
+            "parent"
+        }
+    .end annotation
 
-    .line 1254
+    .line 1312
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$AlertParams$2;->this$0:Landroidx/appcompat/app/AlertController$AlertParams;
 
     iget-object p1, p1, Landroidx/appcompat/app/AlertController$AlertParams;->mInflater:Landroid/view/LayoutInflater;

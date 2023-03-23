@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Rexistra e xestiona ata %d ordenadores ou tabletas en Samsung Flow.
-
-Só se pode conectar un ordenador ou tableta ao teu ordenador á vez. Terás que escoller un cando os ordenadores ou tabletas rexistrados tenten conectarse ao teu teléfono."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Rexistra e xestiona ata %d ordenador ou tableta en Samsung Flow.
-
-Só se pode conectar un ordenador ou tableta ao teu ordenador á vez. Terás que escoller un cando os ordenadores ou tabletas rexistrados tenten conectarse ao teu teléfono."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

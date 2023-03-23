@@ -21,13 +21,21 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/drawable/Drawable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
-    .line 383
+    .line 382
     invoke-direct {p0, p1}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     const/4 p1, 0x1
 
-    .line 384
+    .line 383
     iput-boolean p1, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
     return-void
@@ -37,13 +45,21 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
-    .line 401
+    .line 400
     iget-boolean v0, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 402
+    .line 401
     invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;->draw(Landroid/graphics/Canvas;)V
 
     :cond_0
@@ -52,8 +68,16 @@
 
 .method setEnabled(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
-    .line 388
+    .line 387
     iput-boolean p1, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
     return-void
@@ -61,13 +85,23 @@
 
 .method public setHotspot(FF)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "y"
+        }
+    .end annotation
 
-    .line 408
+    .line 407
     iget-boolean v0, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 409
+    .line 408
     invoke-super {p0, p1, p2}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;->setHotspot(FF)V
 
     :cond_0
@@ -76,13 +110,27 @@
 
 .method public setHotspotBounds(IIII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "top",
+            "right",
+            "bottom"
+        }
+    .end annotation
 
-    .line 415
+    .line 414
     iget-boolean v0, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 416
+    .line 415
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;->setHotspotBounds(IIII)V
 
     :cond_0
@@ -91,13 +139,21 @@
 
 .method public setState([I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stateSet"
+        }
+    .end annotation
 
-    .line 393
+    .line 392
     iget-boolean v0, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 394
+    .line 393
     invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;->setState([I)Z
 
     move-result p1
@@ -112,13 +168,23 @@
 
 .method public setVisible(ZZ)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "visible",
+            "restart"
+        }
+    .end annotation
 
-    .line 422
+    .line 421
     iget-boolean v0, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 423
+    .line 422
     invoke-super {p0, p1, p2}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;->setVisible(ZZ)Z
 
     move-result p1

@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow'до %d компьютер же планшетке чейин каттап, аларды башкарыңыз.
-
-Бир убакта бир гана компьютер же планшет телефонуңузга туташтырылат. Катталган компьютер же планшеттер телефонуңузга туташууга аракет кылганда, бирөөсүн тандооңуз керек."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flow'до %d компьютер же планшетке чейин каттап, аларды башкарыңыз.
-
-Бир убакта бир гана компьютер же планшет телефонуңузга туташтырылат. Катталган компьютер же планшеттер телефонуңузга туташууга аракет кылганда, бирөөсүн тандооңуз керек."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

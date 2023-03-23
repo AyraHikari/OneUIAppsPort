@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 58
+    .line 62
     invoke-static {}, Lcom/airbnb/lottie/model/layer/Layer$MatteType;->values()[Lcom/airbnb/lottie/model/layer/Layer$MatteType;
 
     move-result-object v0
@@ -34,7 +34,7 @@
     sput-object v0, Lcom/airbnb/lottie/model/layer/CompositionLayer$1;->$SwitchMap$com$airbnb$lottie$model$layer$Layer$MatteType:[I
 
     :try_start_0
-    sget-object v1, Lcom/airbnb/lottie/model/layer/Layer$MatteType;->Add:Lcom/airbnb/lottie/model/layer/Layer$MatteType;
+    sget-object v1, Lcom/airbnb/lottie/model/layer/Layer$MatteType;->ADD:Lcom/airbnb/lottie/model/layer/Layer$MatteType;
 
     invoke-virtual {v1}, Lcom/airbnb/lottie/model/layer/Layer$MatteType;->ordinal()I
 
@@ -50,7 +50,7 @@
     :try_start_1
     sget-object v0, Lcom/airbnb/lottie/model/layer/CompositionLayer$1;->$SwitchMap$com$airbnb$lottie$model$layer$Layer$MatteType:[I
 
-    sget-object v1, Lcom/airbnb/lottie/model/layer/Layer$MatteType;->Invert:Lcom/airbnb/lottie/model/layer/Layer$MatteType;
+    sget-object v1, Lcom/airbnb/lottie/model/layer/Layer$MatteType;->INVERT:Lcom/airbnb/lottie/model/layer/Layer$MatteType;
 
     invoke-virtual {v1}, Lcom/airbnb/lottie/model/layer/Layer$MatteType;->ordinal()I
 

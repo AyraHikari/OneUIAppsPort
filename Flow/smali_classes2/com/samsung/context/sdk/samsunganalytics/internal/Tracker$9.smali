@@ -25,6 +25,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;Ljava/lang/String;J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$deviceId",
+            "val$timestamp"
+        }
+    .end annotation
 
     .line 542
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker$9;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;
@@ -42,6 +54,20 @@
 # virtual methods
 .method public onFail(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "code",
+            "param",
+            "param2",
+            "param3"
+        }
+    .end annotation
 
     .line 550
     iget-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker$9;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;
@@ -78,6 +104,20 @@
 
 .method public onSuccess(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "code",
+            "param",
+            "param2",
+            "param3"
+        }
+    .end annotation
 
     return-void
 .end method

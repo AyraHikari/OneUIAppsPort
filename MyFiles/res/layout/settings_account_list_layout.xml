@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:tag="layout/settings_account_list_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/account_list" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner" android:overScrollMode="never" app:layoutManager="LinearLayoutManager" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/add_account_btn_container" android:background="@color/light_theme_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/add_account_btn" android:background="@drawable/cloud_account_add_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/cloud_account_add_btn_height">
+                <ImageView android:id="@id/add_account_btn_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_add_icon" android:scaleType="centerInside" android:tint="@color/cloud_account_add_btn_text_color" android:layout_marginStart="@dimen/cloud_account_add_btn_margin_horizontal" android:layout_marginEnd="@dimen/cloud_account_add_btn_icon_margin_end" />
+                <TextView android:textSize="@dimen/cloud_account_add_btn_text" android:textColor="@color/cloud_account_add_btn_text_color" android:ellipsize="end" android:id="@id/add_account_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_account" android:maxLines="2" android:layout_marginEnd="@dimen/cloud_account_add_btn_margin_horizontal" style="@style/RobotoMedium" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:minHeight="@dimen/basic_round_page_bottom_blank_height" style="@style/BackgroundMarginView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -55,10 +55,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -69,7 +68,7 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 62
+    .line 1
     check-cast p1, Ljava/lang/String;
 
     check-cast p2, Ljava/lang/String;
@@ -86,13 +85,13 @@
 
     const-string v0, "a"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "b"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 65
+    .line 2
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -114,20 +113,20 @@
 
     if-ge v1, v0, :cond_2
 
-    .line 67
+    .line 3
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
 
-    .line 68
+    .line 4
     invoke-virtual {p2, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
 
     if-eq v4, v5, :cond_1
 
-    .line 69
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+    .line 5
+    invoke-static {v4, v5}, Loi/k;->h(II)I
 
     move-result p1
 
@@ -146,13 +145,13 @@
 
     goto :goto_0
 
-    .line 72
+    .line 6
     :cond_2
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result p1
 
-    .line 73
+    .line 7
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result p2

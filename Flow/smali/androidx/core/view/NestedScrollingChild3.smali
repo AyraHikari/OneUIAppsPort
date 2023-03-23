@@ -8,4 +8,24 @@
 
 # virtual methods
 .method public abstract dispatchNestedScroll(IIII[II[I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dxConsumed",
+            "dyConsumed",
+            "dxUnconsumed",
+            "dyUnconsumed",
+            "offsetInWindow",
+            "type",
+            "consumed"
+        }
+    .end annotation
 .end method

@@ -64,6 +64,7 @@
     <string name="air_quality">Air Quality</string>
     <string name="air_quality_next_tts">Later daily air quality forecasts</string>
     <string name="air_quality_previous_tts">Earlier daily air quality forecasts</string>
+    <string name="alert_title">Severe weather alert</string>
     <string name="all_added_cities">All added cities</string>
     <string name="allow">Allow</string>
     <string name="allow_permission_in_settings">To use this feature, you need to allow permission in Settings.</string>
@@ -76,12 +77,17 @@
     <string name="app_name">DiagMonSA</string>
     <string name="app_process_name">:com.samsung.android.weather</string>
     <string name="app_update_dialog_message">A new version of %s is available</string>
-    <string name="app_update_dialog_title">Update %s?</string>
+    <string name="app_update_dialog_title">A new version of %s is available.</string>
     <string name="appbar_base_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="application_not_support_restricted">Action not supported.</string>
     <string name="apply_daylight_saving_time">Apply daylight saving time?</string>
     <string name="as_possible_after_verification">Report sent. City name will be changed as soon as possible after verification.</string>
+    <string name="auto_refresh_on_screen_description">"Get refreshed weather info every hour automatically. When this is on, you can't refresh manually."</string>
+    <string name="auto_refresh_on_the_go">Auto refresh on the go</string>
+    <string name="auto_refresh_on_the_go_advanced">Advanced</string>
+    <string name="auto_refresh_on_the_go_description">"Get more frequent weather updates when you're driving, biking, running, or walking. When this is on, you can't refresh manually."</string>
+    <string name="auto_refresh_on_the_go_simple_description">"Get more frequent weather updates when you're driving, biking, running, or walking."</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="btn_report">Report</string>
@@ -96,6 +102,7 @@
     <string name="china">China</string>
     <string name="chip_text">Chip text</string>
     <string name="cities_button">Cities</string>
+    <string name="city_added">City added.</string>
     <string name="city_list_text">Cities</string>
     <string name="clear">Clear</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
@@ -148,7 +155,6 @@
     <string name="content_provider_mgs_legalphrase">Your device’s location information will be sent to the content provider so that you can be provided with local weather information.</string>
     <string name="contents_error_msg">This service is temporarily not available. Please try again later.</string>
     <string name="copy">Copy</string>
-    <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="correct_city_name">Correct city name</string>
     <string name="couldnt_find_location">Couldn’t find location</string>
     <string name="cover_screen_top_sync_dialog_text">Set the same location on the main screen?</string>
@@ -212,6 +218,7 @@
     <string name="dragndroplist_drag_release">Item dropped into position %d.</string>
     <string name="dragndroplist_drag_start">Started dragging item at position %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Item at position %d cannot be dragged.</string>
+    <string name="drawer_tips">%s Tips</string>
     <string name="drawer_tips_message">Tap here to add, delete, and reorder locations. You can also add multiple widgets to show different locations on the Home screen.</string>
     <string name="drawer_tips_message_1">Tap Manage locations at the bottom of this menu to add, delete, and reorder locations.</string>
     <string name="drawer_tips_message_2">You can add more than one widget to the Home screen to show different locations at the same time.</string>
@@ -239,9 +246,6 @@
     <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="failed_to_send_report">Failed to send report</string>
-    <string name="fallback_menu_item_copy_link">Copy link</string>
-    <string name="fallback_menu_item_open_in_browser">Open in browser</string>
-    <string name="fallback_menu_item_share_link">Share link</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Favorite Location</string>
     <string name="feel_like_pd_minus_temp">Feels like -%d°</string>
@@ -253,8 +257,8 @@
     <string name="font_clock_2016">clock2016</string>
     <string name="font_clock_2017L">clock2017L</string>
     <string name="font_clock_2017R">clock2017R</string>
-    <string name="font_clock_2019L">clock2017L</string>
-    <string name="font_clock_2021">clock2017L</string>
+    <string name="font_clock_2019L">clock2019L</string>
+    <string name="font_clock_2021">clock2019L</string>
     <string name="font_neo_num3l">samsung-neo-num3L</string>
     <string name="font_roboto_black">sans-serif-black</string>
     <string name="font_roboto_condensed">sans-serif-condensed</string>
@@ -268,10 +272,12 @@
     <string name="forecast_video">Forecast video</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Fri</string>
     <string name="full_wday_month_day_no_year">EEEE, MMMM d</string>
     <string name="general">General</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Get personalized content based on how you use your phone.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Get personalized content based on how you use your tablet.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">get weather information, including your current location, from Weather</string>
     <string name="go_to_website">Go to website</string>
     <string name="goto_apps">New update available. Install now?</string>
     <string name="goto_apps_later">Later</string>
@@ -279,6 +285,7 @@
     <string name="goto_apps_update_title">New content alerts</string>
     <string name="graph_button_tts">Show temperature graph.</string>
     <string name="header_tts">Header</string>
+    <string name="heavy">Heavy</string>
     <string name="heavy_rain">Heavy rain</string>
     <string name="heavy_rain_followed_by_intense_heat">Heavy rain followed by intense heat</string>
     <string name="heavy_rain_followed_by_light_rain">Heavy rain followed by intense heat</string>
@@ -440,6 +447,7 @@
     <string name="life_index_visibility">Visibility</string>
     <string name="life_index_wind">Wind</string>
     <string name="life_index_wind_force">Wind speed</string>
+    <string name="light">Light</string>
     <string name="light_rain_followed_by_heavy_rain">Light rain followed by heavy rain</string>
     <string name="light_rain_with_some_heavy_rain">Light rain with some heavy rain</string>
     <string name="link_tts">Link</string>
@@ -452,6 +460,31 @@
     <string name="locations">Locations</string>
     <string name="low_temperature">Low</string>
     <string name="lowest_tmep_tts">Lowest</string>
+    <string name="m3_ref_typeface_brand_display_regular">sans-serif</string>
+    <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
+    <string name="m3_ref_typeface_brand_regular">sans-serif</string>
+    <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
+    <string name="m3_ref_typeface_plain_regular">sans-serif</string>
+    <string name="m3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="m3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_standard">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_typescale_body_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_body_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_body_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_label_large_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_label_medium_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_label_small_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_title_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_title_medium_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_title_small_font">sans-serif-medium</string>
     <string name="main_screen_top_sync_dialog_text">Set the same location on the cover screen?</string>
     <string name="mainly_clear_with_patchy_cloud">Mainly clear with patchy cloud</string>
     <string name="manage_locations">Manage locations</string>
@@ -524,6 +557,7 @@
     <string name="message_no_search_result_z">No results found.</string>
     <string name="message_service_not_available">Service is not available now.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Mon</string>
     <string name="more">More</string>
     <string name="more_cuntact_us">Contact us</string>
     <string name="more_information">More</string>
@@ -537,7 +571,7 @@
     <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
     <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
     <string name="mtrl_picker_cancel">@android:string/cancel</string>
-    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_confirm">OK</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">Select Date</string>
     <string name="mtrl_picker_date_header_unselected">Selected date</string>
@@ -564,6 +598,7 @@
     <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
     <string name="n_selected">%d selected</string>
     <string name="nav_app_bar_navigate_up_description">Navigate up</string>
     <string name="nav_app_bar_open_drawer_description">Open navigation drawer</string>
@@ -572,7 +607,17 @@
     <string name="navigation_drawer_tips_message">Tap here to change the default weather location and manage all of your locations.</string>
     <string name="new_version_available">A new version of %s is available.</string>
     <string name="new_version_is_available">A new version is available.</string>
+    <string name="news_menu_show_news">Show news</string>
+    <string name="news_opt_in_banner_title_text">Stay up to date on current events by showing news on the Weather widget.</string>
+    <string name="news_opt_in_popup_desc_text">Stay up to date with the world by showing the latest headlines from %s on the Weather widget.</string>
+    <string name="news_opt_in_popup_title_text">See the news and weather in one widget</string>
+    <string name="news_request_agree_text">Tap to get news from %s</string>
+    <string name="news_widget_bubble_text">Get news with the weather.</string>
+    <string name="news_widget_dummy_title">"Today's top story"</string>
+    <string name="news_widget_new_dummy_title">The 5 things you need to know this morning</string>
+    <string name="news_widget_oobe_text">Tap here to add news.</string>
     <string name="next">Next city</string>
+    <string name="next_btn">Next</string>
     <string name="next_city">Double tap to view weather information for next city.</string>
     <string name="night_tts">Night</string>
     <string name="no_application_available">No applications available.</string>
@@ -582,6 +627,7 @@
     <string name="no_weather_information">No weather information</string>
     <string name="not_in_use">Not in use</string>
     <string name="not_now">Not now</string>
+    <string name="not_now_btn">Not now</string>
     <string name="not_selected">Not selected</string>
     <string name="not_set">Not set</string>
     <string name="nothing_selected">Nothing selected.</string>
@@ -590,6 +636,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">For the fastest and most accurate location detection, tap SETTINGS, then set the Locating method to GPS, Wi-Fi, and mobile networks.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">For the fastest and most accurate location detection, tap SETTINGS, then set the Locating method to GPS and Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">To view your local weather information, turn on Location settings and make sure the mode is set to High accuracy.</string>
+    <string name="notification_alert_channel_name">Severe weather alert</string>
     <string name="notification_apps_update_channel_name">Update notifications</string>
     <string name="notification_auto_refresh_channel_name">Weather auto refresh</string>
     <string name="notification_dex_channel_name">Weather in Samsung DeX</string>
@@ -611,6 +658,7 @@
     <string name="open_source_licences">Open source licences</string>
     <string name="other_locations">Other Locations</string>
     <string name="partly_cloudy">Partly cloudy</string>
+    <string name="partly_sunny">Partly sunny</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -633,10 +681,13 @@
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
     <string name="preview">%s preview</string>
     <string name="previous">Previous city</string>
+    <string name="previous_btn">Previous</string>
     <string name="previous_city">Double tap to view weather information for previous city.</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="probability_of_rain_text">Probability of rain</string>
     <string name="protect_your_content">Protect your content</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar and maps</string>
     <string name="rain">Rain</string>
     <string name="rain_followed_by_intense_heat">Rain followed by intense heat</string>
@@ -677,6 +728,7 @@
     <string name="runtime_location_permission_desc">To update weather information, tap SETTINGS, go to App info > Permissions, then allow the following permissions and try again:</string>
     <string name="runtime_location_permission_title">Allow permissions</string>
     <string name="runtime_oem_grant_permission_desc">The %s app is allowed permission to access the following:</string>
+    <string name="sat">Sat</string>
     <string name="save_button">Save</string>
     <string name="search_menu_title">Search</string>
     <string name="search_most_searched_for">Most searched for</string>
@@ -719,6 +771,7 @@
     <string name="sesl_material_badge_description">New content available</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">More</string>
+    <string name="sesl_preferecne_badge_description">New notification</string>
     <string name="sesl_preference_off">OFF</string>
     <string name="sesl_preference_on">ON</string>
     <string name="sesl_preferencecategory_added_title">Header</string>
@@ -790,7 +843,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">View less</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">off</string>
+    <string name="status_on">on</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Sun</string>
     <string name="sunny">Sunny</string>
     <string name="sunny_with_some_clouds">Sunny with some clouds</string>
     <string name="sunny_with_some_heavy_rain">Sunny with some heavy rain</string>
@@ -803,14 +859,16 @@
     <string name="tap_here_to_restore_the_weather">Tap here to restore weather data from your old device</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Tap RETRY to try to find your location again</string>
     <string name="tap_setting_message_edge_panel">Turn on Location to get the local weather.</string>
+    <string name="tap_the_settings_icon">Tap the settings icon.</string>
     <string name="tap_to_get_the_weather">Tap to get the weather</string>
     <string name="temp_f_c">%d°C</string>
     <string name="temp_f_m">%d°F</string>
-    <string name="temp_unit">°</string>
+    <string name="temp_unit">1</string>
     <string name="ten_minute_forecast">10 minute forecast</string>
     <string name="terms_and_conditions">Terms and Conditions</string>
     <string name="the_latest_version">The latest version is already installed.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">This will also be applied to notifications and Calendar.</string>
+    <string name="thu">Thu</string>
     <string name="thunderstorms">Thunderstorms</string>
     <string name="tick_box_tts">Checkbox</string>
     <string name="ticked_tts">Checked</string>
@@ -819,13 +877,17 @@
     <string name="times_forecast">Hourly</string>
     <string name="title_select_locations">Select locations</string>
     <string name="title_theme">Theme</string>
+    <string name="to_continue_agree_to_updated">To continue, agree to our updated %s.</string>
     <string name="to_get_local_weather_chn">"To get local weather, your current location will be sent to the weather services provider. (Please see the provider’s %1$sTerms and Conditions%2$s and %3$sPrivacy Policy%4$s).
 Other apps and services on your device may access the retrieved weather data to show the weather in those apps.
 In order to provide you with continuing weather information, Weather will have access to your location, even when you are not using the app."</string>
     <string name="today">Today</string>
+    <string name="try_it_out_btn">Try it out</string>
+    <string name="tue">Tue</string>
+    <string name="turn_on_to_use_precise_location">To use this feature, you need to allow %s to access your location all the time and turn on Use precise location. Tap Settings, then go to Permissions > Location.</string>
     <string name="tw_title_weather_broadcast">Broadcast</string>
     <string name="twc_logo">weather.com</string>
-    <string name="unable_to_check_for_updates">"Can't check for updates. Your phone's network connection isn't stable."</string>
+    <string name="unable_to_check_for_updates">"Couldn't check for updates. Try again later."</string>
     <string name="unable_to_receive_info_msg">Unable to receive info</string>
     <string name="unicode_location_off"></string>
     <string name="unicode_location_on"></string>
@@ -834,8 +896,10 @@ In order to provide you with continuing weather information, Weather will have a
     <string name="update">Update</string>
     <string name="update_abb8">Update</string>
     <string name="update_app">Update App</string>
+    <string name="updated_tile_chn">Updated: %s</string>
     <string name="updated_tts">%s updated</string>
     <string name="us_vendor">0</string>
+    <string name="use_current_location">Use current location</string>
     <string name="use_current_location_agree_popup">"To get local weather, your current location will be sent to the weather services provider. (Please see the provider’s %1$sprivacy policy%2$s.)
 
 Other apps and services on your device may access the retrieved weather data to show the weather in those apps."</string>
@@ -848,9 +912,16 @@ In order to provide you with continuing weather information, Weather will have a
     <string name="use_current_location_body_msg">"Your current location will be collected and used to provide some of the Weather app features, such as getting your local weather. Other apps and services on your device may access the retrieved weather data to show the weather in those apps. In order to provide you with continuing weather information, this app will regularly process your location, even when you are not using the app. By pressing Agree, you are agreeing to the collection and processing of your location for the above purposes.
 You can turn off using your location by going into the Weather app settings."</string>
     <string name="use_current_location_body_msg_chn">If you want to know the weather of your current location, you will need to permit the third party service provider to have continuous (even when you are not using the service) access to your device and acquire certain data, as listed below. Please read carefully and understand the third party service provider’s %1$sTerms and Conditions%2$s and %3$sPrivacy Policy%4$s before giving such permission. You may withdraw your permission by turning off “Location” in the Settings menu. Other apps and services on your device may access the retrieved weather data to show the weather in those apps and services.</string>
+    <string name="use_current_location_body_msg_kor">"Your current location will be collected and used to provide some of the Weather app features, such as getting your local weather.
+
+In order to provide continuous weather info, this app will regularly process your location, even when you're not using the app. By continuing, you agree to the collection and processing of your location for the above purposes.
+
+You can stop this location collection and usage in the Weather app settings."</string>
     <string name="use_current_location_body_purpose">Purpose</string>
     <string name="use_current_location_body_purpose_content">To provide weather information for your current location</string>
     <string name="use_current_location_body_search_provider">Service Provider</string>
+    <string name="use_current_location_continue">Continue</string>
+    <string name="use_current_location_not_now">Not now</string>
     <string name="use_current_location_off_alert_popup">Current location information will be removed.</string>
     <string name="useful_informations">Life tips and other reports</string>
     <string name="using_as">Using as %s</string>
@@ -958,9 +1029,11 @@ You can turn off using your location by going into the Weather app settings."</s
     <string name="weather_tip">Weather Tip</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Wed</string>
     <string name="weekly_forecast">Daily</string>
     <string name="widget_background">Widget background</string>
     <string name="widget_empty_text">Tap for weather info</string>
+    <string name="widget_location">City name</string>
     <string name="widget_name_4x1">Weather and Clock</string>
     <string name="widget_setting">Settings</string>
     <string name="widget_setting_background_color">Background color</string>

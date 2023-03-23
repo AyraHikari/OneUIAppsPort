@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 551
+    .line 575
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService$2;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 1
 
-    .line 554
+    .line 578
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     move-result-object v0

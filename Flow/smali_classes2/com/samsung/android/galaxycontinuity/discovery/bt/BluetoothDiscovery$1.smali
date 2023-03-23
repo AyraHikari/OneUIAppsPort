@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 118
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery$1;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;
@@ -33,7 +41,17 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 4
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 121
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -57,65 +75,27 @@
 
     move-result-object p1
 
-    const/4 v0, -0x1
-
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
-    move-result v1
+    const-string v0, "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
 
-    const v2, -0x6a269925
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/4 v3, 0x1
+    move-result v0
 
-    if-eq v1, v2, :cond_2
+    if-nez v0, :cond_3
 
-    const v2, 0x459717c3
+    const-string v0, "android.bluetooth.device.action.FOUND"
 
-    if-eq v1, v2, :cond_1
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
 
     goto :goto_0
 
     :cond_1
-    const-string v1, "android.bluetooth.device.action.FOUND"
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_2
-    const-string v1, "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    move v0, v3
-
-    :cond_3
-    :goto_0
-    if-eqz v0, :cond_5
-
-    if-eq v0, v3, :cond_4
-
-    goto :goto_1
-
-    .line 144
-    :cond_4
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery$1;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;
-
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;->access$100(Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;)V
-
-    goto :goto_1
-
-    :cond_5
     const-string p1, "android.bluetooth.device.extra.DEVICE"
 
     .line 128
@@ -136,9 +116,13 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     const-string v0, " is added"
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -156,9 +140,9 @@
 
     move-result v0
 
-    and-int/2addr v0, v3
+    and-int/lit8 v0, v0, 0x1
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_4
 
     .line 135
     invoke-virtual {p2}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
@@ -167,7 +151,7 @@
 
     const/16 v1, 0x200
 
-    if-eq v0, v1, :cond_6
+    if-eq v0, v1, :cond_2
 
     .line 136
     invoke-virtual {p2}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
@@ -176,10 +160,10 @@
 
     const/16 v0, 0x700
 
-    if-ne p2, v0, :cond_7
+    if-ne p2, v0, :cond_4
 
     .line 137
-    :cond_6
+    :cond_2
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery$1;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;->access$000(Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;)Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;
@@ -192,7 +176,15 @@
 
     invoke-interface {p2, v0}, Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;->onDeviceFound(Lcom/samsung/android/galaxycontinuity/discovery/model/FoundDevice;)V
 
-    :cond_7
-    :goto_1
+    goto :goto_0
+
+    .line 144
+    :cond_3
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery$1;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;->access$100(Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;)V
+
+    :cond_4
+    :goto_0
     return-void
 .end method

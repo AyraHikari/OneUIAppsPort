@@ -17,8 +17,6 @@
     <string name="biometric_iris_success_verification">%s has identified you by your irises.</string>
     <string name="biometric_no_match_attempt_left">No match. You have %d attempts left.</string>
     <string name="cancel_all">Hanafoana azy rehetra</string>
-    <string name="chan_mkt">Marketing</string>
-    <string name="chan_ntc">Notice</string>
     <string name="checkbox_all">Mitambatra</string>
     <string name="confirm_pass_key_connecting_to_deivce">Connecting to %s…</string>
     <string name="connecting_wifi_direct">Connecting using Wi-Fi Direct…</string>
@@ -56,41 +54,8 @@
     <string name="flow_history">Flow history</string>
     <string name="flow_main_device_not_secure_dialog_desc">To use Samsung Flow, a screen lock must be set on your phone.</string>
     <string name="flow_main_device_not_secure_dialog_title">Set secure screen lock</string>
-    <string name="help_connecting_devices_desc_1">Connect your computer or tablet to your phone (%s) using Samsung Flow.</string>
-    <string name="help_connecting_devices_desc_2">Turn on Bluetooth on both devices.</string>
-    <string name="help_connecting_devices_desc_3">Open Samsung Flow on both devices, then follow the setup wizard on your computer.</string>
-    <string name="help_connecting_devices_desc_4">For more information, visit www.samsung.com/samsungflow.</string>
-    <string name="help_connecting_devices_desc_5">Minimum requirements</string>
-    <string name="help_connecting_devices_desc_6">Windows computer or tablet: Windows 10 Creators Update (v1703) and June patch build (15063.413), Bluetooth (Bluetooth LE is optional), and Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Android tablet: Android Marshmallow or higher. See FAQ for more details.</string>
-    <string name="help_connecting_devices_title">Connecting to your PCs/tablets</string>
     <string name="help_contact_us">Contact us</string>
     <string name="help_install_samsung_flow_title">Connect devices by Samsung Flow</string>
-    <string name="help_mobile_hotspot_desc">"You can access the internet on your computer or tablet by using your phone as a mobile hotspot while other networks aren't available.
-
-Both your phone and service provider must support the Mobile Hotspot function. Using Mobile Hotspot may result in additional charges."</string>
-    <string name="help_mobile_hotspot_title">Using Mobile Hotspot</string>
-    <string name="help_noti_sync_desc">"View notifications from your phone on your computer or tablet when you unlock the computer or tablet using Samsung Flow. You can instantly reply to text messages and messages from other apps when new notifications are received.
-
-This function may not be available for some messaging apps.
-
-You can manage notifications in Samsung Flow by going to More options button > Settings > Manage notifications."</string>
-    <string name="help_noti_sync_title">Syncing notifications</string>
-    <string name="help_sharing_contents_desc_1">You can easily share content between connected devices.</string>
-    <string name="help_sharing_contents_desc_2">Phone to computer or tablet</string>
-    <string name="help_sharing_contents_desc_3">Find the sharing option in an app, such as a browser, then choose Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_4">You can also tap %s in the Flow history tab to select files and share them.</string>
-    <string name="help_sharing_contents_desc_5">Computer or tablet to phone</string>
-    <string name="help_sharing_contents_desc_6">Find the sharing option in an app, such as a browser, then choose Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_7">You can also tap %s in the Flow history tab to select files and share them, or drag and drop files into Samsung Flow.</string>
-    <string name="help_sharing_contents_title">Sharing content</string>
-    <string name="help_smart_view_desc">"Switch between your phone and your computer or tablet with Smart View.
-
-Tap %s on your Windows computer or Windows tablet to start using Smart View with Samsung Flow.
-
-To use your favorite apps and features through Smart View, sync your phone apps with the apps on your computer or tablet."</string>
-    <string name="help_smart_view_title">Using Smart View</string>
-    <string name="help_using_multi_device_title">Using multiple PCs/tablets</string>
     <string name="hotspot_description">Use a connected device as an Internet access point by using Mobile Hotspot while Samsung Flow is running.</string>
     <string name="hotspot_warning_password_empty">"Any device can connect to your phone's Mobile Hotspot without entering a password."</string>
     <string name="hotspot_warning_password_empty_title">No password set</string>
@@ -192,5 +157,4 @@ Start the Samsung Flow setup on your computer or tablet."</string>
     <string name="unexpected_error">Nisy olana tsy nampoizina. Andramo indray rehefa avy eo.</string>
     <string name="update">Hanavao</string>
     <string name="update_samsung_flow">Unable to connect to %s. Update Samsung Flow to the latest version and try again.</string>
-    <string name="welcome_button_start">Start</string>
 </resources>

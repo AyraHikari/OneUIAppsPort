@@ -43,10 +43,12 @@
     <string name="biometric_fingerprint_success_verification">%s has identified you by your fingerprint.</string>
     <string name="biometric_iris_success_verification">%s has identified you by your irises.</string>
     <string name="biometric_no_match_attempt_left">No match. You have %d attempts left.</string>
+    <string name="bottomsheet_action_expand_halfway">Nweba phakathi</string>
     <string name="cancel_all">Khansela zonke</string>
-    <string name="chan_mkt">Marketing</string>
-    <string name="chan_ntc">Notice</string>
+    <string name="character_counter_content_description">Izinhlamvu ezifakiwe ezingu-%1$d zokungu-%2$d</string>
+    <string name="character_counter_overflowed_content_description">Umkhawulo wezinhlamvu udlule u-%1$d kokungu-%2$d</string>
     <string name="checkbox_all">Konke</string>
+    <string name="clear_text_end_icon_content_description">Sula umbhalo</string>
     <string name="common_google_play_services_enable_button">Nika amandla</string>
     <string name="common_google_play_services_enable_text">I-%1$s ngeke isebenze ngaphandle kokuthi unike amandla amasevisi we-Google Play.</string>
     <string name="common_google_play_services_enable_title">Nika amandla amasevisi we-Google Play</string>
@@ -65,6 +67,7 @@
     <string name="common_open_on_phone">Vula kufoni</string>
     <string name="common_signin_button_text">Ngena ngemvume</string>
     <string name="common_signin_button_text_long">Ngena ngemvume nge-Google</string>
+    <string name="confirm_device_credential_password">Sebenzisa iphasiwedi</string>
     <string name="confirm_pass_key_connecting_to_deivce">Connecting to %s…</string>
     <string name="connecting_wifi_direct">Connecting using Wi-Fi Direct…</string>
     <string name="connection_available_device">Available devices</string>
@@ -80,6 +83,7 @@
     <string name="copied_to_clipboard">Text copied to clipboard.</string>
     <string name="copy">Kopisha</string>
     <string name="copy_text">Kopisha umbhalo</string>
+    <string name="default_error_msg">Iphutha elingaziwe</string>
     <string name="delete_lower">Delete</string>
     <string name="device_detail_enter_pc_name">Enter name</string>
     <string name="device_detail_subheader_auth_methods">Authentication methods</string>
@@ -90,61 +94,41 @@
     <string name="dismiss">Dismiss</string>
     <string name="enable_hotspot_popup_title">Connect to Mobile Hotspot?</string>
     <string name="enter_message">Enter message</string>
+    <string name="error_icon_content_description">Iphutha</string>
     <string name="expand_button_title">Okuthuthukisiwe</string>
+    <string name="exposed_dropdown_menu_content_description">Bonisa imenyu yokudonsela phansi</string>
     <string name="failed_to_receive_some_files">Failed to receive some files</string>
     <string name="failed_to_send_some_files">Ihlulekile ukuthumela amafayela athile.</string>
     <string name="failed_to_verify">"Couldn't verify your identity"</string>
-    <string name="fcm_fallback_notification_channel_label">Okwahlukahlukene</string>
     <string name="file_received">Ifayela lamukelwe</string>
     <string name="file_sent">Ifayela lithunyelwe</string>
     <string name="file_transfer_limit">The maximum number of files that can be transferred at the same time (%d) has been reached.</string>
     <string name="files_received_tablet">Amafayela amukelwe.</string>
     <string name="files_sent">Amafayela athunyelwe.</string>
+    <string name="fingerprint_dialog_touch_sensor">Thinta inzwa yezigxivizo zeminwe</string>
+    <string name="fingerprint_error_hw_not_available">Izingxenyekazi zekhompuyutha zezigxivizo zeminwe azitholakali.</string>
+    <string name="fingerprint_error_hw_not_present">Le divayisi ayinayo inzwa yezigxivizo zeminwe</string>
+    <string name="fingerprint_error_lockout">Imizamo eminingi kakhulu. Sicela uzame futhi ngokuhamba kwesikhathi.</string>
+    <string name="fingerprint_error_no_fingerprints">Azikho izigxivizo zeminwe ezibhalisiwe.</string>
+    <string name="fingerprint_error_user_canceled">Umsebenzi wezigxivizo zeminwe ukhanselwe umsebenzisi.</string>
     <string name="fingerprint_guide">Use your fingerprints to verify your identity.</string>
+    <string name="fingerprint_not_recognized">Akwaziwa</string>
     <string name="flow_history">Flow history</string>
     <string name="flow_main_device_not_secure_dialog_desc">To use Samsung Flow, a screen lock must be set on your phone.</string>
     <string name="flow_main_device_not_secure_dialog_title">Set secure screen lock</string>
-    <string name="help_connecting_devices_desc_1">Connect your computer or tablet to your phone (%s) using Samsung Flow.</string>
-    <string name="help_connecting_devices_desc_2">Turn on Bluetooth on both devices.</string>
-    <string name="help_connecting_devices_desc_3">Open Samsung Flow on both devices, then follow the setup wizard on your computer.</string>
-    <string name="help_connecting_devices_desc_4">For more information, visit www.samsung.com/samsungflow.</string>
-    <string name="help_connecting_devices_desc_5">Minimum requirements</string>
-    <string name="help_connecting_devices_desc_6">Windows computer or tablet: Windows 10 Creators Update (v1703) and June patch build (15063.413), Bluetooth (Bluetooth LE is optional), and Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Android tablet: Android Marshmallow or higher. See FAQ for more details.</string>
-    <string name="help_connecting_devices_title">Connecting to your PCs/tablets</string>
+    <string name="generic_error_no_device_credential">Ayikho iphinikhodi, iphethini, noma iphasiwedi esethiwe.</string>
+    <string name="generic_error_no_keyguard">Le divayisi ayisekeli Iphinikhodi, iphethini, noma iphasiwedi</string>
+    <string name="generic_error_user_canceled">Ukugunyaza kukhanselwe umsebenzisi.</string>
     <string name="help_contact_us">Contact us</string>
     <string name="help_install_samsung_flow_title">Connect devices by Samsung Flow</string>
-    <string name="help_mobile_hotspot_desc">"You can access the internet on your computer or tablet by using your phone as a mobile hotspot while other networks aren't available.
-
-Both your phone and service provider must support the Mobile Hotspot function. Using Mobile Hotspot may result in additional charges."</string>
-    <string name="help_mobile_hotspot_title">Using Mobile Hotspot</string>
-    <string name="help_noti_sync_desc">"View notifications from your phone on your computer or tablet when you unlock the computer or tablet using Samsung Flow. You can instantly reply to text messages and messages from other apps when new notifications are received.
-
-This function may not be available for some messaging apps.
-
-You can manage notifications in Samsung Flow by going to More options button > Settings > Manage notifications."</string>
-    <string name="help_noti_sync_title">Syncing notifications</string>
-    <string name="help_sharing_contents_desc_1">You can easily share content between connected devices.</string>
-    <string name="help_sharing_contents_desc_2">Phone to computer or tablet</string>
-    <string name="help_sharing_contents_desc_3">Find the sharing option in an app, such as a browser, then choose Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_4">You can also tap %s in the Flow history tab to select files and share them.</string>
-    <string name="help_sharing_contents_desc_5">Computer or tablet to phone</string>
-    <string name="help_sharing_contents_desc_6">Find the sharing option in an app, such as a browser, then choose Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_7">You can also tap %s in the Flow history tab to select files and share them, or drag and drop files into Samsung Flow.</string>
-    <string name="help_sharing_contents_title">Sharing content</string>
-    <string name="help_smart_view_desc">"Switch between your phone and your computer or tablet with Smart View.
-
-Tap %s on your Windows computer or Windows tablet to start using Smart View with Samsung Flow.
-
-To use your favorite apps and features through Smart View, sync your phone apps with the apps on your computer or tablet."</string>
-    <string name="help_smart_view_title">Using Smart View</string>
-    <string name="help_using_multi_device_title">Using multiple PCs/tablets</string>
     <string name="hotspot_description">Use a connected device as an Internet access point by using Mobile Hotspot while Samsung Flow is running.</string>
     <string name="hotspot_warning_password_empty">"Any device can connect to your phone's Mobile Hotspot without entering a password."</string>
     <string name="hotspot_warning_password_empty_title">No password set</string>
+    <string name="icon_content_description">Isithonjana sebhokisi</string>
     <string name="incoming_call_on_your_phone">Incoming call on your phone</string>
     <string name="intro_register_your_phone_description">"So far you've only registered your Gear with Samsung Flow. To fully enjoy Samsung Flow, register your Galaxy phone also."</string>
     <string name="intro_register_your_phone_title">Register your phone</string>
+    <string name="item_view_role_description">Ithebhu</string>
     <string name="latest_version_installed">The latest version is already installed.</string>
     <string name="managde_device_item_deregister_title">Deregister</string>
     <string name="managde_device_item_gear_auth_desc">Sign in to Samsung Flow by verifying your identity with your Gear.</string>
@@ -152,6 +136,18 @@ To use your favorite apps and features through Smart View, sync your phone apps 
     <string name="managde_device_item_rename_title">Rename</string>
     <string name="manage_pcs_desc">Manage your registered devices.</string>
     <string name="manage_pcs_title">Manage devices</string>
+    <string name="material_clock_toggle_content_description">Khetha u-AM noma u-PM</string>
+    <string name="material_hour_selection">Khetha ihora</string>
+    <string name="material_hour_suffix">%1$s ezimpondweni</string>
+    <string name="material_minute_selection">Khetha amaminithi</string>
+    <string name="material_minute_suffix">amaminithi angu-%1$s</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Shintshela kumodi yewashi ngokufakwa kwesikhathi.</string>
+    <string name="material_timepicker_hour">Ihora</string>
+    <string name="material_timepicker_minute">Iminithi</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Khetha isikhathi</string>
+    <string name="material_timepicker_text_input_mode_description">Shintshela kumodi yokufaka umbhalo ngokufaka isikhathi.</string>
     <string name="menu_delete">Cisha</string>
     <string name="menu_disable_hotspot">Disconnect Mobile Hotspot</string>
     <string name="menu_enable_hotspot">Connect to Mobile Hotspot</string>
@@ -162,6 +158,39 @@ To use your favorite apps and features through Smart View, sync your phone apps 
     <string name="mms_not_recevied_normally">Turn on Auto retrieve on your phone to receive multimedia messages.</string>
     <string name="mobile_hotspot_disabled">Disconnected from Mobile Hotspot.</string>
     <string name="mobile_hotspot_enabled">Connected to Mobile Hotspot.</string>
+    <string name="mtrl_badge_numberless_content_description">Isaziso esisha</string>
+    <string name="mtrl_chip_close_icon_content_description">Susa i-%1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Izaziso ezintsha ezingaphezu kokungu-%1$d</string>
+    <string name="mtrl_picker_a11y_next_month">Shintshela kunyanga elandelayo</string>
+    <string name="mtrl_picker_a11y_prev_month">Shintshela kunyanga edlule</string>
+    <string name="mtrl_picker_announce_current_selection">Ukukhetha kwamanje: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Khetha Idethi</string>
+    <string name="mtrl_picker_date_header_unselected">Khetha idethi</string>
+    <string name="mtrl_picker_day_of_week_column_header">Ikholomu yezinsuku: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Ifomethi engavumelekile.</string>
+    <string name="mtrl_picker_invalid_format_example">Isibonelo: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Sebenzisa: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Ibanga elingavumelekile.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Zulela onyakeni %1$s</string>
+    <string name="mtrl_picker_out_of_range">Ikude kubanga: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Idethi yokuqala – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Idethi yokuphela</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Khetha Ibanga</string>
+    <string name="mtrl_picker_range_header_unselected">Idethi yokuqala – Idethi yokuphela</string>
+    <string name="mtrl_picker_save">Londoloza</string>
+    <string name="mtrl_picker_text_input_date_hint">Idethi</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Idethi yokuphela</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Idethi yokuqala</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Shintshela kwimodi yokufaka yekhalenda</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Thepha ukuze ushintshe ekukhetheni usuku</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Shintshela kwimodi yokufaka yombhalo</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Thepha ukuze ushintshele ekukhetheni unyaka</string>
     <string name="new_version_available">Isibuyekezo esisha sokuthi %s siyatholakala. Thepha BUYEKEZA ukuze udawunilode futhi ufake isibuyekezo samuva.</string>
     <string name="no_notifications">No notifications</string>
     <string name="no_registered_pc">No registered PCs/tablets</string>
@@ -182,6 +211,7 @@ To use your favorite apps and features through Smart View, sync your phone apps 
     <string name="ongoing_disconnected">Disconnected from %s. To prevent automatic reconnection, turn off Samsung Flow.</string>
     <string name="ongoing_unlock_phone_for_auth">Uthole isicelo soxhumano ku-%s.</string>
     <string name="ongoing_unlock_phone_for_enroll">Unlock your phone to register.</string>
+    <string name="password_toggle_content_description">Bonisa iphasiwedi</string>
     <string name="phone">Phone</string>
     <string name="preference_copied">\"%1$s\" kukopishelwe kuklibhodi.</string>
     <string name="processing">Ukulungisa…</string>
@@ -247,5 +277,4 @@ Start the Samsung Flow setup on your computer or tablet."</string>
     <string name="update_samsung_flow">Unable to connect to %s. Update Samsung Flow to the latest version and try again.</string>
     <string name="v7_preference_off">VALA</string>
     <string name="v7_preference_on">VULA</string>
-    <string name="welcome_button_start">Start</string>
 </resources>

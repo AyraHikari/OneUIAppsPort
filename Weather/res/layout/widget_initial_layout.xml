@@ -3,6 +3,6 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/widget_initial_loading_size" android:layout_height="@dimen/widget_initial_loading_size" android:src="@drawable/ic_loading" />
-        <TextView android:textSize="@dimen/widget_initial_text_size" android:textColor="@color/col_FAFAFA" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loading_message" android:includeFontPadding="true" android:shadowColor="@color/col_28_000000" android:shadowRadius="6.0" android:fontFamily="@string/font_roboto_medium" />
+        <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error.BlackShadow" android:textSize="@dimen/widget_initial_text_size" android:textColor="@color/col_FAFAFA" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loading_message" android:includeFontPadding="true" />
     </LinearLayout>
 </RelativeLayout>

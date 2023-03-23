@@ -3,4 +3,5 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@drawable/samsung_flow_background" />
     <foreground android:drawable="@drawable/samsung_flow_foreground" />
+    <monochrome android:drawable="@drawable/ic_monochrome_samsung_flow" />
 </adaptive-icon>

@@ -1,58 +1,57 @@
-.class public interface abstract Lcom/google/android/gms/common/api/internal/zabd;
-.super Ljava/lang/Object;
+.class final Lcom/google/android/gms/common/api/internal/zabd;
+.super Lcom/google/android/gms/common/api/internal/zabw;
+.source "com.google.android.gms:play-services-base@@18.0.1"
+
+
+# instance fields
+.field private final zaa:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Lcom/google/android/gms/common/api/internal/zabe;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/zabe;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/zabw;-><init>()V
+
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/zabd;->zaa:Ljava/lang/ref/WeakReference;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract begin()V
-.end method
+.method public final zaa()V
+    .locals 1
 
-.method public abstract connect()V
-.end method
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zabd;->zaa:Ljava/lang/ref/WeakReference;
 
-.method public abstract disconnect()Z
-.end method
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
-.method public abstract enqueue(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<A::",
-            "Lcom/google/android/gms/common/api/Api$AnyClient;",
-            "R::",
-            "Lcom/google/android/gms/common/api/Result;",
-            "T:",
-            "Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl<",
-            "TR;TA;>;>(TT;)TT;"
-        }
-    .end annotation
-.end method
+    move-result-object v0
 
-.method public abstract execute(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<A::",
-            "Lcom/google/android/gms/common/api/Api$AnyClient;",
-            "T:",
-            "Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl<",
-            "+",
-            "Lcom/google/android/gms/common/api/Result;",
-            "TA;>;>(TT;)TT;"
-        }
-    .end annotation
-.end method
+    check-cast v0, Lcom/google/android/gms/common/api/internal/zabe;
 
-.method public abstract onConnected(Landroid/os/Bundle;)V
-.end method
+    if-nez v0, :cond_0
 
-.method public abstract onConnectionSuspended(I)V
-.end method
+    return-void
 
-.method public abstract zaa(Lcom/google/android/gms/common/ConnectionResult;Lcom/google/android/gms/common/api/Api;Z)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/ConnectionResult;",
-            "Lcom/google/android/gms/common/api/Api<",
-            "*>;Z)V"
-        }
-    .end annotation
+    .line 2
+    :cond_0
+    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/zabe;->zai(Lcom/google/android/gms/common/api/internal/zabe;)V
+
+    return-void
 .end method

@@ -1,37 +1,64 @@
-.class final Lcom/google/android/gms/internal/location/zzah;
-.super Lcom/google/android/gms/internal/location/zzai;
+.class public abstract Lcom/google/android/gms/internal/location/zzah;
+.super Lcom/google/android/gms/internal/location/zzb;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
-
-# instance fields
-.field private final synthetic zzct:Lcom/google/android/gms/location/zzal;
+# interfaces
+.implements Lcom/google/android/gms/internal/location/zzai;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/internal/location/zzaf;Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/zzal;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
-    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzah;->zzct:Lcom/google/android/gms/location/zzal;
+    const-string v0, "com.google.android.gms.location.internal.IFusedLocationProviderCallback"
 
-    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzai;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    .line 1
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/location/zzb;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
-    .locals 1
+.method protected final zza(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    check-cast p1, Lcom/google/android/gms/internal/location/zzaz;
+    const/4 p3, 0x1
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzah;->zzct:Lcom/google/android/gms/location/zzal;
+    if-eq p1, p3, :cond_1
 
-    invoke-virtual {p1, v0, p0}, Lcom/google/android/gms/internal/location/zzaz;->zza(Lcom/google/android/gms/location/zzal;Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
+    const/4 p2, 0x2
 
-    return-void
+    if-eq p1, p2, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 1
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/location/zzah;->zzc()V
+
+    goto :goto_0
+
+    .line 2
+    :cond_1
+    sget-object p1, Lcom/google/android/gms/internal/location/zzaa;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lcom/google/android/gms/internal/location/zzc;->zza(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/internal/location/zzaa;
+
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/location/zzah;->zzb(Lcom/google/android/gms/internal/location/zzaa;)V
+
+    :goto_0
+    return p3
 .end method

@@ -3,11 +3,19 @@
 .source "TrafficStatsCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/net/TrafficStatsCompat$Api24Impl;
+    }
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 167
+    .line 170
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,7 +26,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 41
+    .line 44
     invoke-static {}, Landroid/net/TrafficStats;->clearThreadStatsTag()V
 
     return-void
@@ -29,7 +37,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 53
+    .line 56
     invoke-static {}, Landroid/net/TrafficStats;->getThreadStatsTag()I
 
     move-result v0
@@ -39,10 +47,19 @@
 
 .method public static incrementOperationCount(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "operationCount"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 67
+    .line 70
     invoke-static {p0}, Landroid/net/TrafficStats;->incrementOperationCount(I)V
 
     return-void
@@ -50,10 +67,21 @@
 
 .method public static incrementOperationCount(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "tag",
+            "operationCount"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 81
+    .line 84
     invoke-static {p0, p1}, Landroid/net/TrafficStats;->incrementOperationCount(II)V
 
     return-void
@@ -61,10 +89,19 @@
 
 .method public static setThreadStatsTag(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 99
+    .line 102
     invoke-static {p0}, Landroid/net/TrafficStats;->setThreadStatsTag(I)V
 
     return-void
@@ -72,31 +109,40 @@
 
 .method public static tagDatagramSocket(Ljava/net/DatagramSocket;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
         }
     .end annotation
 
-    .line 137
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 140
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 138
-    invoke-static {p0}, Landroid/net/TrafficStats;->tagDatagramSocket(Ljava/net/DatagramSocket;)V
+    .line 141
+    invoke-static {p0}, Landroidx/core/net/TrafficStatsCompat$Api24Impl;->tagDatagramSocket(Ljava/net/DatagramSocket;)V
 
     goto :goto_0
 
-    .line 140
+    .line 143
     :cond_0
     invoke-static {p0}, Landroid/os/ParcelFileDescriptor;->fromDatagramSocket(Ljava/net/DatagramSocket;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
 
-    .line 141
+    .line 144
     new-instance v1, Landroidx/core/net/DatagramSocketWrapper;
 
     invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
@@ -107,7 +153,7 @@
 
     invoke-static {v1}, Landroid/net/TrafficStats;->tagSocket(Ljava/net/Socket;)V
 
-    .line 146
+    .line 149
     invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->detachFd()I
 
     :goto_0
@@ -116,6 +162,15 @@
 
 .method public static tagSocket(Ljava/net/Socket;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -125,7 +180,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 114
+    .line 117
     invoke-static {p0}, Landroid/net/TrafficStats;->tagSocket(Ljava/net/Socket;)V
 
     return-void
@@ -133,31 +188,40 @@
 
 .method public static untagDatagramSocket(Ljava/net/DatagramSocket;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
         }
     .end annotation
 
-    .line 154
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 157
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 155
-    invoke-static {p0}, Landroid/net/TrafficStats;->untagDatagramSocket(Ljava/net/DatagramSocket;)V
+    .line 158
+    invoke-static {p0}, Landroidx/core/net/TrafficStatsCompat$Api24Impl;->untagDatagramSocket(Ljava/net/DatagramSocket;)V
 
     goto :goto_0
 
-    .line 157
+    .line 160
     :cond_0
     invoke-static {p0}, Landroid/os/ParcelFileDescriptor;->fromDatagramSocket(Ljava/net/DatagramSocket;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
 
-    .line 158
+    .line 161
     new-instance v1, Landroidx/core/net/DatagramSocketWrapper;
 
     invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
@@ -168,7 +232,7 @@
 
     invoke-static {v1}, Landroid/net/TrafficStats;->untagSocket(Ljava/net/Socket;)V
 
-    .line 163
+    .line 166
     invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->detachFd()I
 
     :goto_0
@@ -177,6 +241,15 @@
 
 .method public static untagSocket(Ljava/net/Socket;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -186,7 +259,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 124
+    .line 127
     invoke-static {p0}, Landroid/net/TrafficStats;->untagSocket(Ljava/net/Socket;)V
 
     return-void

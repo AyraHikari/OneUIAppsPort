@@ -1,4 +1,4 @@
-.class Lorg/jsoup/parser/ParseErrorList;
+.class public Lorg/jsoup/parser/ParseErrorList;
 .super Ljava/util/ArrayList;
 .source "ParseErrorList.java"
 
@@ -34,7 +34,7 @@
     return-void
 .end method
 
-.method static noTracking()Lorg/jsoup/parser/ParseErrorList;
+.method public static noTracking()Lorg/jsoup/parser/ParseErrorList;
     .locals 2
 
     .line 28
@@ -47,7 +47,7 @@
     return-object v0
 .end method
 
-.method static tracking(I)Lorg/jsoup/parser/ParseErrorList;
+.method public static tracking(I)Lorg/jsoup/parser/ParseErrorList;
     .locals 2
 
     .line 32

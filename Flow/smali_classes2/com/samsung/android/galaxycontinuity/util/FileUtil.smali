@@ -17,70 +17,68 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
     const-string v0, "external"
 
-    .line 445
+    .line 467
     invoke-static {v0}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_PROVIDER_URI:Landroid/net/Uri;
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
-    new-array v1, v0, [Landroid/net/Uri;
+    new-array v2, v1, [Landroid/net/Uri;
 
-    .line 447
-    sget-object v2, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    .line 469
+    sget-object v3, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    aput-object v2, v1, v3
+    aput-object v3, v2, v4
 
-    sget-object v2, Landroid/provider/MediaStore$Video$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
+    sget-object v3, Landroid/provider/MediaStore$Video$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
+
+    aput-object v3, v2, v5
+
+    sput-object v2, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_VIDEO:[Landroid/net/Uri;
+
+    new-array v2, v1, [Landroid/net/Uri;
+
+    .line 474
+    sget-object v3, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    aput-object v3, v2, v4
+
+    sget-object v3, Landroid/provider/MediaStore$Audio$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    aput-object v3, v2, v5
+
+    sput-object v2, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_AUDIO:[Landroid/net/Uri;
+
+    new-array v1, v1, [Landroid/net/Uri;
+
+    .line 479
+    sget-object v2, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     aput-object v2, v1, v4
 
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_VIDEO:[Landroid/net/Uri;
+    sget-object v2, Landroid/provider/MediaStore$Images$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    new-array v1, v0, [Landroid/net/Uri;
+    aput-object v2, v1, v5
 
-    .line 452
-    sget-object v2, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_IMAGES:[Landroid/net/Uri;
 
-    aput-object v2, v1, v3
+    new-array v1, v5, [Landroid/net/Uri;
 
-    sget-object v2, Landroid/provider/MediaStore$Audio$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
+    aput-object v0, v1, v4
 
-    aput-object v2, v1, v4
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_AUDIO:[Landroid/net/Uri;
-
-    new-array v0, v0, [Landroid/net/Uri;
-
-    .line 457
-    sget-object v1, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
-
-    aput-object v1, v0, v3
-
-    sget-object v1, Landroid/provider/MediaStore$Images$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
-
-    aput-object v1, v0, v4
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_IMAGES:[Landroid/net/Uri;
-
-    new-array v0, v4, [Landroid/net/Uri;
-
-    .line 462
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_PROVIDER_URI:Landroid/net/Uri;
-
-    aput-object v1, v0, v3
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_FILE:[Landroid/net/Uri;
+    .line 484
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_FILE:[Landroid/net/Uri;
 
     return-void
 .end method
@@ -88,7 +86,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 45
+    .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -96,6 +94,17 @@
 
 .method public static copyFile(Ljava/io/DataInputStream;Ljava/io/DataOutputStream;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "in",
+            "out"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -109,7 +118,7 @@
     :goto_0
     const/4 v2, 0x0
 
-    .line 186
+    .line 201
     invoke-virtual {p0, v1, v2, v0}, Ljava/io/DataInputStream;->read([BII)I
 
     move-result v3
@@ -118,10 +127,10 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 187
+    .line 202
     invoke-virtual {p1, v1, v2, v3}, Ljava/io/DataOutputStream;->write([BII)V
 
-    .line 188
+    .line 203
     invoke-virtual {p1}, Ljava/io/DataOutputStream;->flush()V
 
     goto :goto_0
@@ -132,6 +141,16 @@
 
 .method public static copyUriToFolder(Landroid/net/Uri;Ljava/io/File;)Ljava/io/File;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "destFolder"
+        }
+    .end annotation
 
     const-string v0, "NAME"
 
@@ -141,13 +160,13 @@
 
     return-object v1
 
-    .line 488
+    .line 510
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
 
-    .line 493
+    .line 515
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
     move-result v3
@@ -160,7 +179,7 @@
 
     if-nez v3, :cond_2
 
-    .line 494
+    .line 516
     :cond_1
     invoke-virtual {p1}, Ljava/io/File;->mkdir()Z
 
@@ -168,7 +187,7 @@
 
     if-nez v3, :cond_2
 
-    .line 495
+    .line 517
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -179,9 +198,13 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     const-string p1, "directory is not created"
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -191,7 +214,7 @@
 
     return-object v1
 
-    .line 501
+    .line 526
     :cond_2
     :try_start_0
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getFileInfoFromUri(Landroid/net/Uri;)Ljava/util/HashMap;
@@ -202,7 +225,7 @@
 
     return-object v1
 
-    .line 506
+    .line 531
     :cond_3
     new-instance v4, Ljava/io/File;
 
@@ -216,25 +239,31 @@
 
     invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object p1, Ljava/io/File;->separator:Ljava/lang/String;
+    move-result-object p1
 
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v5, Ljava/io/File;->separator:Ljava/lang/String;
 
-    invoke-virtual {v3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    check-cast p1, Ljava/lang/String;
+    invoke-virtual {v3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    check-cast v5, Ljava/lang/String;
+
+    invoke-virtual {p1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 507
+    .line 532
     new-instance p1, Lcom/samsung/android/galaxycontinuity/util/FileRenamePolicy;
 
     invoke-direct {p1}, Lcom/samsung/android/galaxycontinuity/util/FileRenamePolicy;-><init>()V
@@ -242,11 +271,8 @@
     invoke-virtual {p1, v4}, Lcom/samsung/android/galaxycontinuity/util/FileRenamePolicy;->rename(Ljava/io/File;)Ljava/io/File;
 
     move-result-object p1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_9
 
-    .line 513
-    :try_start_1
+    .line 534
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -259,7 +285,7 @@
 
     if-nez v2, :cond_4
 
-    .line 515
+    .line 536
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -268,42 +294,15 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object p0
-
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    return-object v1
-
-    .line 519
-    :cond_4
-    invoke-virtual {p1}, Ljava/io/File;->createNewFile()Z
-
-    move-result p0
-
-    if-nez p0, :cond_5
-
-    .line 520
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "Cannot create file : "
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -313,7 +312,42 @@
 
     return-object v1
 
-    .line 524
+    .line 540
+    :cond_4
+    invoke-virtual {p1}, Ljava/io/File;->createNewFile()Z
+
+    move-result p0
+
+    if-nez p0, :cond_5
+
+    .line 541
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "Cannot create file : "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return-object v1
+
+    .line 545
     :cond_5
     invoke-virtual {v2}, Landroid/content/res/AssetFileDescriptor;->createInputStream()Ljava/io/FileInputStream;
 
@@ -323,7 +357,7 @@
 
     return-object v1
 
-    .line 528
+    .line 549
     :cond_6
     new-instance p0, Ljava/io/DataInputStream;
 
@@ -332,13 +366,12 @@
     move-result-object v2
 
     invoke-direct {p0, v2}, Ljava/io/DataInputStream;-><init>(Ljava/io/InputStream;)V
-    :try_end_1
-    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_6
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_5
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 529
-    :try_start_2
+    .line 550
+    :try_start_1
     new-instance v2, Ljava/io/DataOutputStream;
 
     new-instance v4, Ljava/io/FileOutputStream;
@@ -346,16 +379,21 @@
     invoke-direct {v4, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
     invoke-direct {v2, v4}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
-    :try_end_2
-    .catch Ljava/lang/NullPointerException; {:try_start_2 .. :try_end_2} :catch_4
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_3
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 530
-    :try_start_3
+    .line 551
+    :try_start_2
     invoke-static {p0, v2}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->copyFile(Ljava/io/DataInputStream;Ljava/io/DataOutputStream;)V
 
-    .line 531
+    .line 552
+    invoke-virtual {v2}, Ljava/io/DataOutputStream;->flush()V
+
+    .line 553
+    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
+
+    .line 554
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -363,6 +401,8 @@
     const-string v5, "Copy to temp : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -372,51 +412,55 @@
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-    :try_end_3
-    .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_2
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 537
-    :try_start_4
+    .line 561
+    :try_start_3
     invoke-virtual {p0}, Ljava/io/DataInputStream;->close()V
-
-    .line 538
-    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_9
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
 
     goto :goto_0
 
     :catch_0
     move-exception p0
 
-    .line 540
-    :try_start_5
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_9
+    .line 563
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
+    .line 569
     :goto_0
-    move-object v1, p1
-
-    goto/16 :goto_d
-
-    :catchall_0
-    move-exception p1
+    :try_start_4
+    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
 
     goto :goto_1
 
     :catch_1
+    move-exception p0
+
+    .line 571
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+
+    :goto_1
+    move-object v1, p1
+
+    goto :goto_6
+
+    :catchall_0
     move-exception p1
 
-    goto :goto_3
+    goto :goto_2
 
     :catch_2
     move-exception p1
@@ -428,24 +472,16 @@
 
     move-object v2, v1
 
-    :goto_1
-    move-object v6, p1
+    :goto_2
+    move-object v1, p0
 
-    move-object p1, p0
+    move-object p0, p1
 
-    move-object p0, v6
-
-    goto :goto_9
+    goto :goto_7
 
     :catch_3
     move-exception p1
 
-    goto :goto_2
-
-    :catch_4
-    move-exception p1
-
-    :goto_2
     move-object v2, v1
 
     :goto_3
@@ -455,135 +491,132 @@
 
     move-object p0, v6
 
-    goto :goto_5
+    goto :goto_4
 
     :catchall_2
     move-exception p0
 
+    move-object v2, v1
+
+    goto :goto_7
+
+    :catch_4
+    move-exception p0
+
     move-object p1, v1
 
     move-object v2, p1
 
-    goto :goto_9
+    .line 556
+    :goto_4
+    :try_start_5
+    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_3
+
+    if-eqz p1, :cond_7
+
+    .line 561
+    :try_start_6
+    invoke-virtual {p1}, Ljava/io/DataInputStream;->close()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_5
+
+    goto :goto_5
 
     :catch_5
     move-exception p0
 
-    goto :goto_4
+    .line 563
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+
+    :cond_7
+    :goto_5
+    if-eqz v2, :cond_8
+
+    .line 569
+    :try_start_7
+    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
+    :try_end_7
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_6
+
+    goto :goto_6
 
     :catch_6
     move-exception p0
 
-    :goto_4
-    move-object p1, v1
-
-    move-object v2, p1
-
-    .line 533
-    :goto_5
-    :try_start_6
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_3
-
-    if-eqz p1, :cond_7
-
-    .line 537
-    :try_start_7
-    invoke-virtual {p1}, Ljava/io/DataInputStream;->close()V
-
-    goto :goto_6
-
-    :catch_7
-    move-exception p0
-
-    goto :goto_7
-
-    :cond_7
-    :goto_6
-    if-eqz v2, :cond_8
-
-    .line 538
-    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
-    :try_end_7
-    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_9
-
-    goto :goto_8
-
-    .line 540
-    :goto_7
-    :try_start_8
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-    :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_9
+    .line 571
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_8
-    :goto_8
+    :goto_6
     return-object v1
 
     :catchall_3
     move-exception p0
 
-    :goto_9
-    if-eqz p1, :cond_9
+    move-object v1, p1
 
-    .line 537
+    :goto_7
+    if-eqz v1, :cond_9
+
+    .line 561
+    :try_start_8
+    invoke-virtual {v1}, Ljava/io/DataInputStream;->close()V
+    :try_end_8
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_7
+
+    goto :goto_8
+
+    :catch_7
+    move-exception p1
+
+    .line 563
+    invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
+
+    :cond_9
+    :goto_8
+    if-eqz v2, :cond_a
+
+    .line 569
     :try_start_9
-    invoke-virtual {p1}, Ljava/io/DataInputStream;->close()V
+    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_8
 
-    goto :goto_a
+    goto :goto_9
 
     :catch_8
     move-exception p1
 
-    goto :goto_b
+    .line 571
+    invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
-    :cond_9
-    :goto_a
-    if-eqz v2, :cond_a
-
-    .line 538
-    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
-    :try_end_9
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_8
-    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_9
-
-    goto :goto_c
-
-    .line 540
-    :goto_b
-    :try_start_a
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-
-    .line 542
+    .line 574
     :cond_a
-    :goto_c
+    :goto_9
     throw p0
-    :try_end_a
-    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_9
-
-    :catch_9
-    move-exception p0
-
-    .line 544
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-
-    :goto_d
-    return-object v1
 .end method
 
 .method public static createFile(Ljava/lang/String;)Ljava/io/File;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
-    .line 171
+    .line 186
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 172
+    .line 187
     new-instance p0, Ljava/io/File;
 
     const-string v0, ""
@@ -592,13 +625,13 @@
 
     return-object p0
 
-    .line 175
+    .line 190
     :cond_0
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 176
+    .line 191
     new-instance p0, Lcom/samsung/android/galaxycontinuity/util/FileRenamePolicy;
 
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/FileRenamePolicy;-><init>()V
@@ -612,13 +645,21 @@
 
 .method public static createFolder(Ljava/lang/String;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
-    .line 725
+    .line 750
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 728
+    .line 753
     invoke-virtual {v0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v1
@@ -635,7 +676,7 @@
 
     if-nez v1, :cond_0
 
-    .line 729
+    .line 754
     invoke-virtual {v0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v1
@@ -656,7 +697,7 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 732
+    .line 757
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -674,7 +715,7 @@
     :cond_1
     if-nez v1, :cond_2
 
-    .line 737
+    .line 762
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -683,9 +724,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -698,7 +743,7 @@
 .method public static ensureDownloadFolderExist()V
     .locals 3
 
-    .line 163
+    .line 178
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -707,12 +752,12 @@
 
     move-result-object v0
 
-    .line 164
+    .line 179
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 165
+    .line 180
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -725,7 +770,7 @@
 
     if-nez v1, :cond_0
 
-    .line 166
+    .line 181
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -734,9 +779,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -748,10 +797,18 @@
 
 .method private static extractPathFromUri(Landroid/net/Uri;)Ljava/lang/String;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
     const-string v0, "_data"
 
-    .line 126
+    .line 141
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -764,7 +821,7 @@
 
     const/4 v8, 0x0
 
-    .line 130
+    .line 145
     :try_start_0
     filled-new-array {v0}, [Ljava/lang/String;
 
@@ -784,7 +841,7 @@
 
     if-eqz v8, :cond_0
 
-    .line 132
+    .line 147
     invoke-interface {v8}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
@@ -797,7 +854,7 @@
 
     if-ltz v2, :cond_0
 
-    .line 133
+    .line 148
     invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
@@ -814,7 +871,7 @@
     :cond_0
     if-eqz v8, :cond_1
 
-    .line 141
+    .line 156
     :try_start_1
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
     :try_end_1
@@ -825,7 +882,7 @@
     :catch_0
     move-exception p0
 
-    .line 144
+    .line 159
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
@@ -833,7 +890,7 @@
     :catch_1
     move-exception v0
 
-    .line 137
+    .line 152
     :try_start_2
     invoke-virtual {p0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -845,7 +902,7 @@
 
     if-eqz v8, :cond_1
 
-    .line 141
+    .line 156
     :try_start_3
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
     :try_end_3
@@ -870,10 +927,10 @@
     :catch_2
     move-exception v0
 
-    .line 144
+    .line 159
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 146
+    .line 161
     :cond_2
     :goto_1
     throw p0
@@ -881,8 +938,16 @@
 
 .method public static getContentUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
-    .line 426
+    .line 448
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -890,6 +955,8 @@
     const-string v1, "."
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, "\\."
 
@@ -909,6 +976,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -921,7 +990,7 @@
 
     move-result-object v0
 
-    .line 427
+    .line 449
     invoke-static {}, Landroid/webkit/MimeTypeMap;->getSingleton()Landroid/webkit/MimeTypeMap;
 
     move-result-object v1
@@ -930,14 +999,14 @@
 
     move-result-object v0
 
-    .line 430
+    .line 452
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->isAudio(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 431
+    .line 453
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_AUDIO:[Landroid/net/Uri;
 
     invoke-static {v0, p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getMediaUri([Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
@@ -946,7 +1015,7 @@
 
     goto :goto_0
 
-    .line 432
+    .line 454
     :cond_0
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->isVideo(Ljava/lang/String;)Z
 
@@ -954,7 +1023,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 433
+    .line 455
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_VIDEO:[Landroid/net/Uri;
 
     invoke-static {v0, p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getMediaUri([Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
@@ -963,7 +1032,7 @@
 
     goto :goto_0
 
-    .line 434
+    .line 456
     :cond_1
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->isImage(Ljava/lang/String;)Z
 
@@ -971,7 +1040,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 435
+    .line 457
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_IMAGES:[Landroid/net/Uri;
 
     invoke-static {v0, p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getMediaUri([Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
@@ -986,7 +1055,7 @@
     :goto_0
     if-nez v0, :cond_3
 
-    .line 439
+    .line 461
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->MEDIA_STORE_URIS_FILE:[Landroid/net/Uri;
 
     invoke-static {v0, p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getMediaUri([Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
@@ -997,10 +1066,54 @@
     return-object v0
 .end method
 
+.method public static getExtensionFromFileName(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileName"
+        }
+    .end annotation
+
+    const-string v0, "."
+
+    .line 56
+    invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    .line 60
+    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    const-string p0, ""
+
+    :goto_0
+    return-object p0
+.end method
+
 .method public static getFileFromUri(Landroid/net/Uri;)Ljava/io/File;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
-    .line 74
+    .line 88
     new-instance v0, Ljava/io/File;
 
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getFilePath(Landroid/net/Uri;)Ljava/lang/String;
@@ -1014,6 +1127,15 @@
 
 .method public static getFileInfoFromUri(Landroid/net/Uri;)Ljava/util/HashMap;
     .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1034,7 +1156,7 @@
 
     const-string v3, "_display_name"
 
-    .line 554
+    .line 579
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v4
@@ -1043,17 +1165,17 @@
 
     move-result-object v5
 
-    .line 555
+    .line 580
     invoke-virtual/range {p0 .. p0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 556
+    .line 581
     invoke-virtual/range {p0 .. p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 559
+    .line 584
     new-instance v11, Ljava/util/HashMap;
 
     invoke-direct {v11}, Ljava/util/HashMap;-><init>()V
@@ -1066,10 +1188,10 @@
 
     if-nez v4, :cond_0
 
-    .line 566
+    .line 591
     invoke-virtual {v11, v13, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 567
+    .line 592
     invoke-virtual {v11, v12, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v11
@@ -1077,7 +1199,7 @@
     :cond_0
     const-string v7, "content"
 
-    .line 571
+    .line 596
     invoke-virtual {v7, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v8
@@ -1117,7 +1239,7 @@
 
     move-object v10, v3
 
-    .line 574
+    .line 599
     invoke-virtual/range {v5 .. v10}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v3
@@ -1127,7 +1249,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 580
+    .line 605
     :try_start_1
     invoke-interface {v3}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -1135,14 +1257,14 @@
 
     if-eqz v5, :cond_3
 
-    .line 581
+    .line 606
     invoke-interface {v3, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v5
 
     if-ltz v5, :cond_1
 
-    .line 582
+    .line 607
     invoke-interface {v3, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
@@ -1156,7 +1278,7 @@
     :cond_1
     move-object v0, v14
 
-    .line 584
+    .line 609
     :goto_0
     invoke-interface {v3, v4}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1164,7 +1286,7 @@
 
     if-ltz v5, :cond_2
 
-    .line 585
+    .line 610
     invoke-interface {v3, v4}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v4
@@ -1188,7 +1310,7 @@
     :cond_3
     move-object v4, v14
 
-    .line 588
+    .line 613
     :goto_2
     invoke-interface {v3}, Landroid/database/Cursor;->close()V
 
@@ -1199,7 +1321,7 @@
 
     invoke-interface {v3}, Landroid/database/Cursor;->close()V
 
-    .line 589
+    .line 614
     throw v0
 
     :catchall_1
@@ -1210,7 +1332,7 @@
     :catch_0
     move-exception v0
 
-    .line 576
+    .line 601
     :try_start_2
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_2
@@ -1222,21 +1344,21 @@
     :goto_3
     if-nez v14, :cond_d
 
-    .line 594
+    .line 619
     invoke-virtual/range {p0 .. p0}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object v14
 
     goto/16 :goto_b
 
-    .line 591
+    .line 616
     :goto_4
     throw v0
 
     :cond_5
     move-object v0, v10
 
-    .line 596
+    .line 621
     invoke-virtual {v7, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
@@ -1254,7 +1376,7 @@
 
     move-object/from16 v6, p0
 
-    .line 599
+    .line 624
     invoke-virtual/range {v5 .. v10}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v4
@@ -1265,7 +1387,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 608
+    .line 633
     :try_start_4
     invoke-interface {v4}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -1273,14 +1395,14 @@
 
     if-eqz v5, :cond_8
 
-    .line 609
+    .line 634
     invoke-interface {v4, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v5
 
     if-ltz v5, :cond_6
 
-    .line 610
+    .line 635
     invoke-interface {v4, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v3
@@ -1294,7 +1416,7 @@
     :cond_6
     move-object v3, v14
 
-    .line 612
+    .line 637
     :goto_5
     invoke-interface {v4, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1302,7 +1424,7 @@
 
     if-ltz v5, :cond_7
 
-    .line 613
+    .line 638
     invoke-interface {v4, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
@@ -1326,7 +1448,7 @@
     :cond_8
     move-object v0, v14
 
-    .line 616
+    .line 641
     :goto_7
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
@@ -1337,7 +1459,7 @@
 
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
-    .line 617
+    .line 642
     throw v0
 
     :catchall_3
@@ -1348,7 +1470,7 @@
     :catch_1
     move-exception v0
 
-    .line 604
+    .line 629
     :try_start_5
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_5
@@ -1356,7 +1478,7 @@
 
     goto :goto_9
 
-    .line 619
+    .line 644
     :goto_8
     throw v0
 
@@ -1365,7 +1487,7 @@
     :goto_9
     move-object v0, v14
 
-    .line 620
+    .line 645
     :goto_a
     invoke-static {v14}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1373,7 +1495,7 @@
 
     if-eqz v3, :cond_a
 
-    .line 622
+    .line 647
     invoke-virtual/range {p0 .. p0}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object v3
@@ -1388,20 +1510,20 @@
     :cond_b
     const-string v0, "file"
 
-    .line 624
+    .line 649
     invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_14
 
-    .line 626
+    .line 651
     :try_start_6
     invoke-virtual/range {p0 .. p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 627
+    .line 652
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -1410,7 +1532,7 @@
 
     return-object v16
 
-    .line 629
+    .line 654
     :cond_c
     new-instance v3, Ljava/io/File;
 
@@ -1424,12 +1546,12 @@
 
     move-result-object v4
 
-    .line 630
+    .line 655
     invoke-virtual {v0, v15}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 631
+    .line 656
     array-length v3, v0
 
     add-int/lit8 v3, v3, -0x1
@@ -1442,25 +1564,25 @@
     :goto_b
     if-eqz v14, :cond_f
 
-    .line 643
+    .line 668
     :try_start_7
     invoke-virtual {v14, v15}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 644
+    .line 669
     array-length v3, v0
 
     if-lez v3, :cond_e
 
-    .line 645
+    .line 670
     array-length v3, v0
 
     add-int/lit8 v3, v3, -0x1
 
     aget-object v14, v0, v3
 
-    .line 648
+    .line 673
     :cond_e
     invoke-virtual {v14, v2, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1470,7 +1592,7 @@
 
     goto :goto_c
 
-    .line 651
+    .line 676
     :catch_3
     invoke-virtual {v14, v2, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1478,7 +1600,7 @@
 
     move-object v14, v0
 
-    .line 654
+    .line 679
     :cond_f
     :goto_c
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -1495,7 +1617,7 @@
 
     if-eqz v0, :cond_12
 
-    .line 657
+    .line 682
     :cond_10
     :try_start_8
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -1514,7 +1636,7 @@
 
     if-eqz v16, :cond_11
 
-    .line 659
+    .line 684
     invoke-virtual/range {v16 .. v16}, Ljava/io/InputStream;->available()I
 
     move-result v0
@@ -1529,7 +1651,7 @@
     :cond_11
     if-eqz v16, :cond_12
 
-    .line 665
+    .line 690
     :try_start_9
     invoke-virtual/range {v16 .. v16}, Ljava/io/InputStream;->close()V
     :try_end_9
@@ -1542,7 +1664,7 @@
 
     move-object v1, v0
 
-    .line 667
+    .line 692
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_d
@@ -1557,7 +1679,7 @@
     :catch_5
     move-exception v0
 
-    .line 661
+    .line 686
     :try_start_a
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_a
@@ -1565,18 +1687,18 @@
 
     if-eqz v16, :cond_12
 
-    .line 665
+    .line 690
     :try_start_b
     invoke-virtual/range {v16 .. v16}, Ljava/io/InputStream;->close()V
     :try_end_b
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_4
 
-    .line 672
+    .line 697
     :cond_12
     :goto_d
     invoke-virtual {v11, v13, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 673
+    .line 698
     invoke-virtual {v11, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v11
@@ -1584,7 +1706,7 @@
     :goto_e
     if-eqz v16, :cond_13
 
-    .line 665
+    .line 690
     :try_start_c
     invoke-virtual/range {v16 .. v16}, Ljava/io/InputStream;->close()V
     :try_end_c
@@ -1597,10 +1719,10 @@
 
     move-object v2, v0
 
-    .line 667
+    .line 692
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 669
+    .line 694
     :cond_13
     :goto_f
     throw v1
@@ -1612,6 +1734,17 @@
 
 .method public static getFileInfoListFromFolder(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parentPath",
+            "folderPath"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1624,17 +1757,17 @@
         }
     .end annotation
 
-    .line 53
+    .line 67
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 54
+    .line 68
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 56
+    .line 70
     invoke-virtual {v1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object p1
@@ -1645,7 +1778,7 @@
 
     return-object p0
 
-    .line 60
+    .line 74
     :cond_0
     array-length v1, p1
 
@@ -1656,19 +1789,21 @@
 
     aget-object v3, p1, v2
 
-    .line 61
+    .line 75
     invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 62
+    .line 76
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -1676,9 +1811,13 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     const-string v5, "/"
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1694,19 +1833,19 @@
 
     if-eqz v3, :cond_2
 
-    .line 63
+    .line 77
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
     if-lez v4, :cond_2
 
-    .line 64
+    .line 78
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     goto :goto_1
 
-    .line 66
+    .line 80
     :cond_1
     new-instance v4, Lcom/samsung/android/galaxycontinuity/data/FileInfoData;
 
@@ -1716,11 +1855,15 @@
 
     invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1757,14 +1900,22 @@
 .end method
 
 .method public static getFilePath(Landroid/net/Uri;)Ljava/lang/String;
-    .locals 5
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
-    .line 78
+    .line 92
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->extractPathFromUri(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 80
+    .line 94
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -1773,7 +1924,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 81
+    .line 95
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v0
@@ -1789,20 +1940,20 @@
 
     move-result-object v0
 
-    .line 83
+    .line 97
     :goto_0
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 85
+    .line 99
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 86
+    .line 100
     invoke-virtual {p0}, Landroid/net/Uri;->getEncodedPath()Ljava/lang/String;
 
     move-result-object v0
@@ -1818,13 +1969,13 @@
 
     move-result-object v0
 
-    .line 87
+    .line 101
     :goto_1
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 90
+    .line 104
     :cond_2
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -1832,33 +1983,42 @@
 
     if-eqz v0, :cond_3
 
-    .line 91
+    .line 105
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_2
 
-    .line 93
+    .line 107
     :cond_3
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v0
 
+    .line 112
     :cond_4
     :goto_2
-    const-string v1, "/device_storage"
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
-    .line 99
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    move-result-object v1
 
-    move-result v1
+    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getCacheDir()Ljava/io/File;
 
-    const-string v3, "/"
+    move-result-object v1
 
-    if-eqz v1, :cond_7
+    const-string v3, "/device_storage"
 
-    .line 101
+    .line 114
+    invoke-virtual {v0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v3
+
+    const-string v4, "/"
+
+    if-eqz v3, :cond_7
+
+    .line 116
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string v1, "/device_storage/0"
@@ -1879,31 +2039,33 @@
     :goto_3
     invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 102
-    invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    .line 117
+    invoke-virtual {v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x2
 
-    .line 103
+    .line 118
     :goto_4
-    array-length v4, v1
+    array-length v3, v1
 
-    if-ge v2, v4, :cond_6
+    if-ge v2, v3, :cond_6
 
-    .line 104
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    aget-object v4, v1, v2
-
+    .line 119
     invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    aget-object v5, v1, v2
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_4
 
-    .line 106
+    .line 121
     :cond_6
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1912,85 +2074,71 @@
     goto :goto_5
 
     :cond_7
-    const-string v1, "/mnt/media_rw"
+    const-string v3, "/mnt/media_rw"
 
-    .line 107
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    .line 122
+    invoke-virtual {v0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_8
+    if-eqz v5, :cond_8
 
     const-string p0, "/storage"
 
-    .line 108
-    invoke-virtual {v0, v1, p0}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 123
+    invoke-virtual {v0, v3, p0}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     goto :goto_5
 
     :cond_8
-    const-string v1, "/external"
+    const-string v3, "/external"
 
-    .line 109
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    .line 124
+    invoke-virtual {v0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_9
+    if-eqz v5, :cond_9
 
-    .line 112
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 127
+    invoke-virtual {v0, v3, v2}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     goto :goto_5
 
-    .line 113
     :cond_9
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+    if-eqz v1, :cond_a
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getFilesDir()Ljava/io/File;
-
-    move-result-object v1
-
+    .line 128
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v0, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v2
 
-    if-nez v1, :cond_a
+    if-nez v2, :cond_a
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object p0
 
-    const-string v1, "com.samsung.android.galaxycontinuity.provider"
+    const-string v2, "com.samsung.android.galaxycontinuity.provider"
 
-    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
     if-eqz p0, :cond_a
 
-    .line 115
+    .line 130
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getFilesDir()Ljava/io/File;
-
-    move-result-object v1
 
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -1998,9 +2146,15 @@
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p0
+
+    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2011,7 +2165,7 @@
     :cond_a
     move-object p0, v0
 
-    .line 118
+    .line 133
     :goto_5
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -2019,7 +2173,7 @@
 
     if-nez v1, :cond_b
 
-    .line 119
+    .line 134
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2028,15 +2182,19 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 120
+    .line 135
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2045,7 +2203,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2059,12 +2221,22 @@
 
 .method private static getMediaUri([Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
     .locals 14
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uriList",
+            "path"
+        }
+    .end annotation
 
     const-string v0, "_data"
 
     const-string v1, "_id"
 
-    .line 469
+    .line 491
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -2073,7 +2245,7 @@
 
     move-result-object v2
 
-    .line 470
+    .line 492
     array-length v9, p0
 
     const/4 v10, 0x0
@@ -2089,7 +2261,7 @@
 
     aget-object v13, p0, v12
 
-    .line 471
+    .line 493
     :try_start_0
     filled-new-array {v1, v0}, [Ljava/lang/String;
 
@@ -2117,7 +2289,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 474
+    .line 496
     :try_start_1
     invoke-interface {v3}, Landroid/database/Cursor;->getCount()I
 
@@ -2145,7 +2317,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 475
+    .line 497
     invoke-interface {v3, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v4
@@ -2167,49 +2339,41 @@
     :catchall_0
     move-exception v4
 
-    .line 471
+    if-eqz v3, :cond_0
+
+    .line 493
     :try_start_2
-    throw v4
+    invoke-interface {v3}, Landroid/database/Cursor;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    :catchall_1
-    move-exception v5
-
-    if-eqz v3, :cond_0
-
-    .line 477
-    :try_start_3
-    invoke-interface {v3}, Landroid/database/Cursor;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
     goto :goto_1
 
-    :catchall_2
+    :catchall_1
     move-exception v3
 
-    :try_start_4
+    :try_start_3
     invoke-virtual {v4, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :cond_0
     :goto_1
-    throw v5
+    throw v4
 
     :cond_1
     :goto_2
     if-eqz v3, :cond_2
 
+    .line 499
     invoke-interface {v3}, Landroid/database/Cursor;->close()V
-    :try_end_4
-    .catch Ljava/lang/SecurityException; {:try_start_4 .. :try_end_4} :catch_0
+    :try_end_3
+    .catch Ljava/lang/SecurityException; {:try_start_3 .. :try_end_3} :catch_0
 
     goto :goto_3
 
     :catch_0
     move-exception v3
 
-    .line 478
+    .line 500
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_2
@@ -2224,8 +2388,16 @@
 
 .method public static getMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileName"
+        }
+    .end annotation
 
-    .line 353
+    .line 375
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2234,14 +2406,14 @@
 
     const-string p0, "etc"
 
-    .line 354
+    .line 376
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/info/MediaFile;->getMimeType(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 356
+    .line 378
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2250,6 +2422,8 @@
     const-string v1, "."
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, "\\."
 
@@ -2269,7 +2443,9 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -2281,12 +2457,12 @@
 
     move-result-object p0
 
-    .line 358
+    .line 380
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/info/MediaFile;->getMimeType(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 360
+    .line 382
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -2307,8 +2483,26 @@
 
 .method public static getUriFromFile(Ljava/io/File;)Landroid/net/Uri;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "file"
+        }
+    .end annotation
 
-    .line 338
+    .line 360
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getCacheDir()Ljava/io/File;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
     invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
@@ -2317,7 +2511,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getFilesDir()Ljava/io/File;
+    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getCacheDir()Ljava/io/File;
 
     move-result-object v1
 
@@ -2331,7 +2525,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 339
+    .line 361
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -2344,7 +2538,7 @@
 
     goto :goto_0
 
-    .line 341
+    .line 363
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -2356,7 +2550,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 342
+    .line 364
     invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -2369,12 +2563,14 @@
 
     if-nez v1, :cond_1
 
-    .line 343
+    .line 365
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -2392,7 +2588,9 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2404,7 +2602,7 @@
     :goto_0
     if-nez v0, :cond_2
 
-    .line 347
+    .line 369
     invoke-static {p0}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object v0
@@ -2415,8 +2613,16 @@
 
 .method public static isAPK(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
-    .line 402
+    .line 424
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2448,8 +2654,16 @@
 
 .method public static isAudio(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
-    .line 418
+    .line 440
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2482,13 +2696,21 @@
 
 .method public static isExist(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
-    .line 47
+    .line 50
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 49
+    .line 52
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
@@ -2498,13 +2720,21 @@
 
 .method public static isFromExternalStorage(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
-    .line 151
+    .line 166
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 154
+    .line 169
     :try_start_0
     invoke-static {v0}, Landroid/os/Environment;->isExternalStorageRemovable(Ljava/io/File;)Z
 
@@ -2517,7 +2747,7 @@
     :catch_0
     move-exception p0
 
-    .line 156
+    .line 171
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const/4 p0, 0x0
@@ -2527,8 +2757,16 @@
 
 .method public static isImage(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
-    .line 406
+    .line 428
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2561,8 +2799,16 @@
 
 .method public static isMedia(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
-    .line 422
+    .line 444
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->isAudio(Ljava/lang/String;)Z
 
     move-result v0
@@ -2592,8 +2838,16 @@
 
 .method public static isVideo(Ljava/io/File;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "file"
+        }
+    .end annotation
 
-    .line 410
+    .line 432
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -2611,8 +2865,16 @@
 
 .method public static isVideo(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
-    .line 414
+    .line 436
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2629,7 +2891,7 @@
 
     aget-object p0, p0, v1
 
-    const-string v0, "video"
+    const-string/jumbo v0, "video"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -2645,8 +2907,16 @@
 
 .method public static isVideoOrImage(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
-    .line 394
+    .line 416
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->isImage(Ljava/lang/String;)Z
 
     move-result v0
@@ -2676,8 +2946,18 @@
 
 .method public static launchFile(Landroid/content/Context;Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "context",
+            "item"
+        }
+    .end annotation
 
-    .line 252
+    .line 267
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getUriPath()Ljava/lang/String;
 
     move-result-object v0
@@ -2686,14 +2966,14 @@
 
     move-result-object v0
 
-    .line 253
+    .line 268
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getFileFromUri(Landroid/net/Uri;)Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    .line 255
+    .line 270
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -2702,7 +2982,7 @@
 
     goto :goto_0
 
-    .line 263
+    .line 278
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2712,19 +2992,27 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getTitle()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->share_id:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2732,7 +3020,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 265
+    .line 280
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isDeleted:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v0}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -2741,14 +3029,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 266
+    .line 281
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->onNotify(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
 
-    .line 268
+    .line 283
     :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/MediaScannerWrapper;->with()Lcom/samsung/android/galaxycontinuity/util/MediaScannerWrapper;
 
@@ -2762,7 +3050,7 @@
 
     return-void
 
-    .line 256
+    .line 271
     :cond_2
     :goto_0
     new-instance p0, Ljava/lang/StringBuilder;
@@ -2775,9 +3063,13 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     const-string v0, " not exist"
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2785,14 +3077,14 @@
 
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 257
+    .line 272
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getUriPath()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 258
+    .line 273
     iget-object p0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isDeleted:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {p0}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -2801,7 +3093,7 @@
 
     if-nez p0, :cond_3
 
-    .line 259
+    .line 274
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     move-result-object p0
@@ -2814,10 +3106,20 @@
 
 .method public static launchFile(Landroid/content/Context;Ljava/io/File;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "file"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
-    .line 237
+    .line 252
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -2826,7 +3128,7 @@
 
     goto :goto_0
 
-    .line 244
+    .line 259
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2836,11 +3138,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2848,7 +3154,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 247
+    .line 262
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -2857,7 +3163,7 @@
 
     move-result-object v0
 
-    .line 248
+    .line 263
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getUriFromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object p1
@@ -2870,7 +3176,7 @@
     :goto_0
     if-eqz p1, :cond_2
 
-    .line 239
+    .line 254
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2879,11 +3185,15 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2896,7 +3206,7 @@
     :cond_2
     const-string p0, "file is null"
 
-    .line 241
+    .line 256
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :goto_1
@@ -2905,13 +3215,25 @@
 
 .method public static launchFile(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mimeType",
+            "uri"
+        }
+    .end annotation
 
-    .line 278
+    .line 293
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getFileFromUri(Landroid/net/Uri;)Ljava/io/File;
 
     move-result-object v0
 
-    .line 279
+    .line 294
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -2920,7 +3242,7 @@
 
     return-void
 
-    .line 282
+    .line 297
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2930,17 +3252,25 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, ", mimeType : "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2948,14 +3278,14 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 284
+    .line 299
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 285
+    .line 300
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p0
@@ -2965,59 +3295,66 @@
     return-void
 
     :cond_1
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_6
 
-    .line 289
+    .line 304
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->isAPK(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x18
 
-    if-le v1, v2, :cond_2
+    if-gt v1, v2, :cond_6
 
-    goto :goto_2
-
-    .line 294
     :cond_2
+    invoke-static {p1, p2}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isIntentAvailable(Ljava/lang/String;Landroid/net/Uri;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    goto :goto_3
+
+    .line 309
+    :cond_3
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.VIEW"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 295
+    .line 310
     invoke-virtual {v0, p2, p1}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 297
+    .line 312
     instance-of p1, p0, Landroidx/appcompat/app/AppCompatActivity;
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_4
 
-    const/4 p1, 0x1
+    const p1, 0x24000001
 
-    .line 298
+    .line 313
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 299
+    .line 314
     invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_3
+    :cond_4
     const p0, 0x18000001
 
-    .line 301
+    .line 316
     invoke-virtual {v0, p0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     :try_start_0
     const-string p0, "AbsolutePath"
 
-    .line 305
+    .line 320
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getFilePath(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object p1
@@ -3031,43 +3368,65 @@
     :catch_0
     move-exception p0
 
-    .line 307
+    .line 322
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 310
+    .line 325
     :goto_0
+    sget p0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 p1, 0x1e
+
+    const/4 p2, 0x0
+
+    if-le p0, p1, :cond_5
+
+    .line 326
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p0
 
-    const/4 p1, 0x0
+    const/high16 p1, 0xa000000
 
-    const/high16 p2, 0x8000000
-
-    invoke-static {p0, p1, v0, p2}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+    invoke-static {p0, p2, v0, p1}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object p0
 
-    .line 313
+    goto :goto_1
+
+    .line 328
+    :cond_5
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object p0
+
+    const/high16 p1, 0x8000000
+
+    invoke-static {p0, p2, v0, p1}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object p0
+
+    .line 331
+    :goto_1
     :try_start_1
     invoke-virtual {p0}, Landroid/app/PendingIntent;->send()V
     :try_end_1
     .catch Landroid/app/PendingIntent$CanceledException; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_1
+    goto :goto_2
 
     :catch_1
     move-exception p0
 
-    .line 315
+    .line 333
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    :goto_1
+    :goto_2
     return-void
 
-    .line 290
-    :cond_4
-    :goto_2
+    .line 305
+    :cond_6
+    :goto_3
     invoke-virtual {v0}, Ljava/io/File;->getParent()Ljava/lang/String;
 
     move-result-object p0
@@ -3079,10 +3438,18 @@
 
 .method public static loadFile(Ljava/lang/String;)[B
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileName"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 700
+    .line 725
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -3095,7 +3462,7 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 701
+    .line 726
     :try_start_1
     invoke-virtual {p0}, Ljava/io/FileInputStream;->available()I
 
@@ -3103,13 +3470,13 @@
 
     const/4 v2, 0x0
 
-    .line 703
+    .line 728
     new-array v3, v1, [B
 
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 706
+    .line 731
     invoke-virtual {p0, v3, v2, v1}, Ljava/io/FileInputStream;->read([BII)I
 
     move-result v4
@@ -3124,7 +3491,7 @@
     :cond_0
     if-eqz p0, :cond_1
 
-    .line 714
+    .line 740
     :try_start_2
     invoke-virtual {p0}, Ljava/io/FileInputStream;->close()V
     :try_end_2
@@ -3135,7 +3502,7 @@
     :catch_0
     move-exception p0
 
-    .line 717
+    .line 743
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_1
@@ -3163,7 +3530,7 @@
 
     move-object p0, v0
 
-    .line 710
+    .line 736
     :goto_2
     :try_start_3
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
@@ -3172,7 +3539,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 714
+    .line 740
     :try_start_4
     invoke-virtual {p0}, Ljava/io/FileInputStream;->close()V
     :try_end_4
@@ -3183,7 +3550,7 @@
     :catch_3
     move-exception p0
 
-    .line 717
+    .line 743
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_2
@@ -3196,7 +3563,7 @@
     :goto_4
     if-eqz p0, :cond_3
 
-    .line 714
+    .line 740
     :try_start_5
     invoke-virtual {p0}, Ljava/io/FileInputStream;->close()V
     :try_end_5
@@ -3207,10 +3574,10 @@
     :catch_4
     move-exception p0
 
-    .line 717
+    .line 743
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 719
+    .line 745
     :cond_3
     :goto_5
     throw v0
@@ -3218,98 +3585,140 @@
 
 .method public static openMyFiles(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "startPath"
+        }
+    .end annotation
 
     const-string v0, "open MyFiles"
 
-    .line 321
+    .line 339
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const-string v0, "com.sec.android.app.myfiles"
 
-    .line 322
+    .line 340
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isAppInstalled(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 323
+    .line 341
     new-instance v0, Landroid/content/Intent;
 
-    const-string v1, "samsung.myfiles.intent.action.LAUNCH_MY_FILES"
+    const-string/jumbo v1, "samsung.myfiles.intent.action.LAUNCH_MY_FILES"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const-string v1, "samsung.myfiles.intent.extra.START_PATH"
+    const-string/jumbo v1, "samsung.myfiles.intent.extra.START_PATH"
 
-    .line 325
+    .line 343
     invoke-virtual {v0, v1, p0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 327
+    .line 345
+    sget p0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    const/4 v2, 0x0
+
+    if-le p0, v1, :cond_0
+
+    .line 346
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p0
 
-    const/4 v1, 0x0
+    const/high16 v1, 0xa000000
 
-    const/high16 v2, 0x8000000
-
-    invoke-static {p0, v1, v0, v2}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2, v0, v1}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object p0
 
-    .line 329
+    goto :goto_0
+
+    .line 348
+    :cond_0
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object p0
+
+    const/high16 v1, 0x8000000
+
+    invoke-static {p0, v2, v0, v1}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object p0
+
+    .line 350
+    :goto_0
     :try_start_0
     invoke-virtual {p0}, Landroid/app/PendingIntent;->send()V
     :try_end_0
     .catch Landroid/app/PendingIntent$CanceledException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p0
 
-    .line 331
+    .line 352
     invoke-virtual {p0}, Landroid/app/PendingIntent$CanceledException;->printStackTrace()V
 
-    :cond_0
-    :goto_0
+    :cond_1
+    :goto_1
     return-void
 .end method
 
 .method public static removeFile(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
     const-string v0, " delete failed"
 
-    .line 224
+    .line 239
     :try_start_0
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 225
+    .line 240
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 226
+    .line 241
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 227
+    .line 242
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3319,7 +3728,7 @@
 
     goto :goto_0
 
-    .line 229
+    .line 244
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3327,9 +3736,13 @@
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, " not exist"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3344,19 +3757,23 @@
     :catch_0
     move-exception v1
 
-    .line 231
+    .line 246
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 232
+    .line 247
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p0
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -3369,10 +3786,20 @@
 
 .method public static saveFile([BLjava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "fileName"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 682
+    .line 707
     :try_start_0
     new-instance v1, Ljava/io/File;
 
@@ -3380,7 +3807,7 @@
 
     invoke-virtual {v1}, Ljava/io/File;->deleteOnExit()V
 
-    .line 683
+    .line 708
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -3391,10 +3818,10 @@
 
     move-result-object v0
 
-    .line 684
+    .line 709
     invoke-virtual {v0, p0}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 685
+    .line 710
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -3404,12 +3831,12 @@
     :catch_0
     move-exception p0
 
-    .line 687
+    .line 712
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     if-eqz v0, :cond_0
 
-    .line 690
+    .line 715
     :try_start_1
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_1
@@ -3420,7 +3847,7 @@
     :catch_1
     move-exception p0
 
-    .line 692
+    .line 717
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_0

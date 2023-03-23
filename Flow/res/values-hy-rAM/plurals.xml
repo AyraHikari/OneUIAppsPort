@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow-ում գրանցեք և կառավարեք մինչև %d համակարգիչ կամ պլանշետ:
-
-Միաժամանակ միայն մեկ համակարգիչ կամ պլանշետ կարող է կապակցվել Ձեր հեռախոսին: Ստիպված կլինեք ընտրել մեկը, երբ և՛ գրանցված համակարգիչները, և՛ պլանշետները փորձեն կապակցվել հեռախոսին:"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flow-ում գրանցեք և կառավարեք մինչև %d համակարգիչ կամ պլանշետ:
-
-Միաժամանակ միայն մեկ համակարգիչ կամ պլանշետ կարող է կապակցվել Ձեր հեռախոսին: Ստիպված կլինեք ընտրել մեկը, երբ և՛ գրանցված համակարգիչները, և՛ պլանշետները փորձեն կապակցվել հեռախոսին:"</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

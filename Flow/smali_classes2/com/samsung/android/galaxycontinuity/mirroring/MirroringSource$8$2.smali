@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 1620
+    .line 1591
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8$2;->this$1:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 1622
+    .line 1593
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8$2;->this$1:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;

@@ -1,156 +1,109 @@
 .class public final Lcom/google/android/gms/common/internal/zzj;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # static fields
-.field private static final zza:Landroid/net/Uri;
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/google/android/gms/common/internal/zzj;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private static final zzb:Landroid/net/Uri;
+
+# instance fields
+.field public h:Landroid/os/Bundle;
+
+.field public i:[Lcom/google/android/gms/common/Feature;
+
+.field public j:I
+
+.field public k:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 1
 
-    const-string v0, "https://plus.google.com/"
+    new-instance v0, Lq4/u0;
 
-    .line 21
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-direct {v0}, Lq4/u0;-><init>()V
 
-    move-result-object v0
-
-    .line 22
-    sput-object v0, Lcom/google/android/gms/common/internal/zzj;->zza:Landroid/net/Uri;
-
-    .line 23
-    invoke-virtual {v0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
-
-    move-result-object v0
-
-    const-string v1, "circles"
-
-    invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object v0
-
-    const-string v1, "find"
-
-    invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/gms/common/internal/zzj;->zzb:Landroid/net/Uri;
+    sput-object v0, Lcom/google/android/gms/common/internal/zzj;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public static zza()Landroid/content/Intent;
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
 
-    .line 18
-    new-instance v0, Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    const-string v1, "com.google.android.clockwork.home.UPDATE_ANDROID_WEAR_ACTION"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-string v1, "com.google.android.wearable.app"
-
-    .line 19
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    return-object v0
+    return-void
 .end method
 
-.method public static zza(Ljava/lang/String;)Landroid/content/Intent;
-    .locals 2
+.method public constructor <init>(Landroid/os/Bundle;[Lcom/google/android/gms/common/Feature;ILcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;)V
+    .locals 0
 
-    const-string v0, "package"
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    const/4 v1, 0x0
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzj;->h:Landroid/os/Bundle;
+
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/zzj;->i:[Lcom/google/android/gms/common/Feature;
+
+    iput p3, p0, Lcom/google/android/gms/common/internal/zzj;->j:I
+
+    iput-object p4, p0, Lcom/google/android/gms/common/internal/zzj;->k:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
 
     .line 1
-    invoke-static {v0, p0, v1}, Landroid/net/Uri;->fromParts(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {p1}, Lr4/b;->a(Landroid/os/Parcel;)I
 
-    move-result-object p0
+    move-result v0
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->h:Landroid/os/Bundle;
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
 
     .line 2
-    new-instance v0, Landroid/content/Intent;
+    invoke-static {p1, v2, v1, v3}, Lr4/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
 
-    const-string v1, "android.settings.APPLICATION_DETAILS_SETTINGS"
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->i:[Lcom/google/android/gms/common/Feature;
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    const/4 v2, 0x2
 
     .line 3
-    invoke-virtual {v0, p0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+    invoke-static {p1, v2, v1, p2, v3}, Lr4/b;->q(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
 
-    return-object v0
-.end method
+    iget v1, p0, Lcom/google/android/gms/common/internal/zzj;->j:I
 
-.method public static zza(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-    .locals 3
+    const/4 v2, 0x3
+
+    .line 4
+    invoke-static {p1, v2, v1}, Lr4/b;->h(Landroid/os/Parcel;II)V
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->k:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
+
+    const/4 v2, 0x4
 
     .line 5
-    new-instance v0, Landroid/content/Intent;
+    invoke-static {p1, v2, v1, p2, v3}, Lr4/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
-    const-string v1, "android.intent.action.VIEW"
+    .line 6
+    invoke-static {p1, v0}, Lr4/b;->b(Landroid/os/Parcel;I)V
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-string v1, "market://details"
-
-    .line 8
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    .line 9
-    invoke-virtual {v1}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
-
-    move-result-object v1
-
-    const-string v2, "id"
-
-    .line 10
-    invoke-virtual {v1, v2, p0}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object p0
-
-    .line 11
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string v1, "pcampaignid"
-
-    .line 12
-    invoke-virtual {p0, v1, p1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 13
-    :cond_0
-    invoke-virtual {p0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
-
-    move-result-object p0
-
-    .line 14
-    invoke-virtual {v0, p0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
-
-    const-string p0, "com.android.vending"
-
-    .line 15
-    invoke-virtual {v0, p0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    const/high16 p0, 0x80000
-
-    .line 16
-    invoke-virtual {v0, p0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    return-object v0
+    return-void
 .end method

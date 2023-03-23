@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/data/MousePoint;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$targetPoint"
+        }
+    .end annotation
 
-    .line 1770
+    .line 1744
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$11;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$11;->val$targetPoint:Lcom/samsung/android/galaxycontinuity/data/MousePoint;
@@ -42,7 +52,7 @@
 .method public run()V
     .locals 6
 
-    .line 1774
+    .line 1748
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$11;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
@@ -71,7 +81,7 @@
 
     if-ge v3, v0, :cond_0
 
-    .line 1776
+    .line 1750
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$11;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     const/4 v1, 0x2
@@ -96,14 +106,14 @@
 
     const-wide/16 v0, 0x32
 
-    .line 1777
+    .line 1751
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 1780
+    .line 1754
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$11;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
@@ -134,7 +144,7 @@
     :catch_0
     move-exception v0
 
-    .line 1782
+    .line 1756
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_1

@@ -15,9 +15,17 @@
 
 .method public static getDensityDpi(Landroid/content/res/Resources;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resources"
+        }
+    .end annotation
 
     .line 41
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 

@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 174
+    .line 175
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
-    .line 177
+    .line 178
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -47,7 +63,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 178
+    .line 179
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;)Landroid/widget/ImageButton;
@@ -56,7 +72,7 @@
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
-    const v1, 0x7f07007f
+    const v1, 0x7f080097
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -64,7 +80,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 179
+    .line 180
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -75,7 +91,7 @@
 
     goto :goto_0
 
-    .line 181
+    .line 182
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
@@ -85,7 +101,7 @@
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
-    const v1, 0x7f07007e
+    const v1, 0x7f080096
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -93,7 +109,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 182
+    .line 183
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -102,7 +118,7 @@
 
     iput-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isAlarmOff:Z
 
-    .line 184
+    .line 185
     :goto_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 

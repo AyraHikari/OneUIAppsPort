@@ -2,9 +2,6 @@
 .super Lcom/google/android/material/shape/EdgeTreatment;
 .source "TriangleEdgeTreatment.java"
 
-# interfaces
-.implements Ljava/lang/Cloneable;
-
 
 # instance fields
 .field private final inside:Z
@@ -16,13 +13,13 @@
 .method public constructor <init>(FZ)V
     .locals 0
 
-    .line 40
+    .line 42
     invoke-direct {p0}, Lcom/google/android/material/shape/EdgeTreatment;-><init>()V
 
-    .line 41
+    .line 43
     iput p1, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->size:F
 
-    .line 42
+    .line 44
     iput-boolean p2, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->inside:Z
 
     return-void
@@ -33,7 +30,7 @@
 .method public getEdgePath(FFFLcom/google/android/material/shape/ShapePath;)V
     .locals 2
 
-    .line 47
+    .line 50
     iget v0, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->size:F
 
     mul-float/2addr v0, p3
@@ -44,7 +41,7 @@
 
     invoke-virtual {p4, v0, v1}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
-    .line 48
+    .line 51
     iget-boolean v0, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->inside:Z
 
     if-eqz v0, :cond_0
@@ -63,7 +60,7 @@
 
     invoke-virtual {p4, p2, v0}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
-    .line 49
+    .line 52
     iget v0, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->size:F
 
     mul-float/2addr v0, p3
@@ -72,7 +69,7 @@
 
     invoke-virtual {p4, p2, v1}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
-    .line 50
+    .line 53
     invoke-virtual {p4, p1, v1}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
     return-void

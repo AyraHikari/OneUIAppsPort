@@ -82,6 +82,14 @@
 
 .method private read(Landroid/content/Context;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -192,6 +200,14 @@
 # virtual methods
 .method public addUser(Lcom/samsung/android/galaxycontinuity/data/User;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "user"
+        }
+    .end annotation
 
     .line 81
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/UsersManager;->deleteUser(Lcom/samsung/android/galaxycontinuity/data/User;)V
@@ -209,6 +225,14 @@
 
 .method public deleteSamePhone(Lcom/samsung/android/galaxycontinuity/data/User;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "user"
+        }
+    .end annotation
 
     .line 97
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/UsersManager;->mUsers:Ljava/util/List;
@@ -295,6 +319,14 @@
 
 .method public deleteUser(Lcom/samsung/android/galaxycontinuity/data/User;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "user"
+        }
+    .end annotation
 
     .line 89
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/UsersManager;->mUsers:Ljava/util/List;
@@ -345,6 +377,16 @@
 
 .method public getGearMacAddrOfUser(Landroid/content/Context;J)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "serialNumberForUser"
+        }
+    .end annotation
 
     .line 135
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/UsersManager;->read(Landroid/content/Context;)V
@@ -393,6 +435,17 @@
 
 .method public getMacAddrsOfUser(Landroid/content/Context;J)Ljava/util/ArrayList;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "serialNumberForUser"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -451,6 +504,16 @@
 
 .method public getPhoneMacAddrOfUser(Landroid/content/Context;J)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "serialNumberForUser"
+        }
+    .end annotation
 
     .line 123
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/UsersManager;->read(Landroid/content/Context;)V
@@ -499,6 +562,14 @@
 
 .method public save(Landroid/content/Context;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 59
     new-instance v0, Ljava/io/File;

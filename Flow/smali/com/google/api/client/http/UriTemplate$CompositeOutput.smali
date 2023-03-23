@@ -56,7 +56,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 17
+    .locals 25
 
     .line 97
     new-instance v8, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
@@ -113,38 +113,38 @@
     sput-object v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->HASH:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     .line 103
-    new-instance v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    new-instance v1, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
-    const/16 v1, 0x2e
+    const/16 v2, 0x2e
 
-    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-result-object v4
+    move-result-object v20
 
-    const-string v2, "DOT"
+    const-string v18, "DOT"
 
-    const/4 v3, 0x2
+    const/16 v19, 0x2
 
-    const-string v5, "."
+    const-string v21, "."
 
-    const-string v6, "."
+    const-string v22, "."
 
-    const/4 v7, 0x0
+    const/16 v23, 0x0
 
-    const/4 v8, 0x0
+    const/16 v24, 0x0
 
-    move-object v1, v0
+    move-object/from16 v17, v1
 
-    invoke-direct/range {v1 .. v8}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-direct/range {v17 .. v24}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    sput-object v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->DOT:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    sput-object v1, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->DOT:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     .line 106
-    new-instance v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    new-instance v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
-    const/16 v1, 0x2f
+    const/16 v3, 0x2f
 
-    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
     move-result-object v12
 
@@ -158,43 +158,43 @@
 
     const/16 v16, 0x0
 
-    move-object v9, v0
+    move-object v9, v2
 
     invoke-direct/range {v9 .. v16}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    sput-object v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->FORWARD_SLASH:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    sput-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->FORWARD_SLASH:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     .line 109
-    new-instance v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    new-instance v3, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
-    const/16 v1, 0x3b
+    const/16 v4, 0x3b
 
-    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-result-object v4
+    move-result-object v20
 
-    const-string v2, "SEMI_COLON"
+    const-string v18, "SEMI_COLON"
 
-    const/4 v3, 0x4
+    const/16 v19, 0x4
 
-    const-string v5, ";"
+    const-string v21, ";"
 
-    const-string v6, ";"
+    const-string v22, ";"
 
-    const/4 v7, 0x1
+    const/16 v23, 0x1
 
-    move-object v1, v0
+    move-object/from16 v17, v3
 
-    invoke-direct/range {v1 .. v8}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-direct/range {v17 .. v24}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    sput-object v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->SEMI_COLON:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    sput-object v3, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->SEMI_COLON:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     .line 112
-    new-instance v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    new-instance v4, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
-    const/16 v1, 0x3f
+    const/16 v5, 0x3f
 
-    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-static {v5}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
     move-result-object v12
 
@@ -208,37 +208,37 @@
 
     const/4 v15, 0x1
 
-    move-object v9, v0
+    move-object v9, v4
 
     invoke-direct/range {v9 .. v16}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    sput-object v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->QUERY:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    sput-object v4, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->QUERY:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     .line 115
-    new-instance v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    new-instance v5, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
-    const/16 v1, 0x26
+    const/16 v6, 0x26
 
-    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-static {v6}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-result-object v4
+    move-result-object v20
 
-    const-string v2, "AMP"
+    const-string v18, "AMP"
 
-    const/4 v3, 0x6
+    const/16 v19, 0x6
 
-    const-string v5, "&"
+    const-string v21, "&"
 
-    const-string v6, "&"
+    const-string v22, "&"
 
-    move-object v1, v0
+    move-object/from16 v17, v5
 
-    invoke-direct/range {v1 .. v8}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-direct/range {v17 .. v24}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    sput-object v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->AMP:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    sput-object v5, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->AMP:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     .line 118
-    new-instance v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    new-instance v6, Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     const-string v10, "SIMPLE"
 
@@ -252,64 +252,50 @@
 
     const/4 v15, 0x0
 
-    move-object v9, v0
+    move-object v9, v6
 
     invoke-direct/range {v9 .. v16}, Lcom/google/api/client/http/UriTemplate$CompositeOutput;-><init>(Ljava/lang/String;ILjava/lang/Character;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    sput-object v0, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->SIMPLE:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    sput-object v6, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->SIMPLE:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
-    const/16 v1, 0x8
+    const/16 v7, 0x8
 
-    new-array v1, v1, [Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    new-array v7, v7, [Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+
+    const/4 v9, 0x0
+
+    aput-object v8, v7, v9
+
+    const/4 v8, 0x1
+
+    aput-object v0, v7, v8
+
+    const/4 v0, 0x2
+
+    aput-object v1, v7, v0
+
+    const/4 v0, 0x3
+
+    aput-object v2, v7, v0
+
+    const/4 v0, 0x4
+
+    aput-object v3, v7, v0
+
+    const/4 v0, 0x5
+
+    aput-object v4, v7, v0
+
+    const/4 v0, 0x6
+
+    aput-object v5, v7, v0
+
+    const/4 v0, 0x7
+
+    aput-object v6, v7, v0
 
     .line 94
-    sget-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->PLUS:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->HASH:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
-
-    const/4 v3, 0x1
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->DOT:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
-
-    const/4 v3, 0x2
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->FORWARD_SLASH:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
-
-    const/4 v3, 0x3
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->SEMI_COLON:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
-
-    const/4 v3, 0x4
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->QUERY:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
-
-    const/4 v3, 0x5
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->AMP:Lcom/google/api/client/http/UriTemplate$CompositeOutput;
-
-    const/4 v3, 0x6
-
-    aput-object v2, v1, v3
-
-    const/4 v2, 0x7
-
-    aput-object v0, v1, v2
-
-    sput-object v1, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->$VALUES:[Lcom/google/api/client/http/UriTemplate$CompositeOutput;
+    sput-object v7, Lcom/google/api/client/http/UriTemplate$CompositeOutput;->$VALUES:[Lcom/google/api/client/http/UriTemplate$CompositeOutput;
 
     return-void
 .end method

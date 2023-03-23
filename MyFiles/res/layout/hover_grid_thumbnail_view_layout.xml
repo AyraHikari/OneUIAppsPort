@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon_layout" android:layout_width="@dimen/air_view_preview_list_item_grid_icon_size" android:layout_height="@dimen/air_view_preview_list_item_grid_icon_size" android:layout_marginTop="@dimen/air_view_preview_list_item_grid_icon_margin_top" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/thumbnail_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/hide_mask_stub" android:layout="@layout/thumbnail_hide_mask" android:inflatedId="@id/hide_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/play_icon_stub" android:layout="@layout/list_item_play_icon_stub_common" android:inflatedId="@id/play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/list_item_play_icon_margin" android:layout_marginStart="@dimen/list_item_play_icon_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

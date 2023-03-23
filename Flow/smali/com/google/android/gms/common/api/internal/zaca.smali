@@ -1,61 +1,74 @@
-.class final Lcom/google/android/gms/common/api/internal/zaca;
-.super Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/api/internal/RegisterListenerMethod<",
-        "TA;T",
-        "L;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final synthetic zakh:Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;
-
-
-# direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;Lcom/google/android/gms/common/api/internal/ListenerHolder;[Lcom/google/android/gms/common/Feature;Z)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zaca;->zakh:Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;
-
-    invoke-direct {p0, p2, p3, p4}, Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;-><init>(Lcom/google/android/gms/common/api/internal/ListenerHolder;[Lcom/google/android/gms/common/Feature;Z)V
-
-    return-void
-.end method
+.class public interface abstract Lcom/google/android/gms/common/api/internal/zaca;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # virtual methods
-.method protected final registerListener(Lcom/google/android/gms/common/api/Api$AnyClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
-    .locals 1
+.method public abstract zab()Lcom/google/android/gms/common/ConnectionResult;
+.end method
+
+.method public abstract zac(JLjava/util/concurrent/TimeUnit;)Lcom/google/android/gms/common/ConnectionResult;
+.end method
+
+.method public abstract zad(Lcom/google/android/gms/common/api/Api;)Lcom/google/android/gms/common/ConnectionResult;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TA;",
-            "Lcom/google/android/gms/tasks/TaskCompletionSource<",
-            "Ljava/lang/Void;",
-            ">;)V"
+            "(",
+            "Lcom/google/android/gms/common/api/Api<",
+            "*>;)",
+            "Lcom/google/android/gms/common/ConnectionResult;"
         }
     .end annotation
+.end method
 
-    .annotation system Ldalvik/annotation/Throws;
+.method public abstract zae(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Landroid/os/RemoteException;
+            "<A::",
+            "Lcom/google/android/gms/common/api/Api$AnyClient;",
+            "R::",
+            "Lcom/google/android/gms/common/api/Result;",
+            "T:",
+            "Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl<",
+            "TR;TA;>;>(TT;)TT;"
         }
     .end annotation
+.end method
 
-    .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaca;->zakh:Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;
+.method public abstract zaf(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<A::",
+            "Lcom/google/android/gms/common/api/Api$AnyClient;",
+            "T:",
+            "Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl<",
+            "+",
+            "Lcom/google/android/gms/common/api/Result;",
+            "TA;>;>(TT;)TT;"
+        }
+    .end annotation
+.end method
 
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;->zaa(Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;)Lcom/google/android/gms/common/api/internal/RemoteCall;
+.method public abstract zaq()V
+.end method
 
-    move-result-object v0
+.method public abstract zar()V
+.end method
 
-    invoke-interface {v0, p1, p2}, Lcom/google/android/gms/common/api/internal/RemoteCall;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public abstract zas(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+.end method
 
-    return-void
+.method public abstract zat()V
+.end method
+
+.method public abstract zau()V
+.end method
+
+.method public abstract zaw()Z
+.end method
+
+.method public abstract zax()Z
+.end method
+
+.method public abstract zay(Lcom/google/android/gms/common/api/internal/SignInConnectionListener;)Z
 .end method

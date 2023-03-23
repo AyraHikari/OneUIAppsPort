@@ -5,4 +5,12 @@
 
 # virtual methods
 .method public abstract onChecked(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationApp"
+        }
+    .end annotation
 .end method

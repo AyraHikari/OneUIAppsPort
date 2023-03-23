@@ -81,7 +81,7 @@
 
     const-string v0, "BD3C76F3-8572-4687-B392-0FE5BDEFE643"
 
-    .line 58
+    .line 57
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -90,15 +90,15 @@
 
     const/4 v0, 0x0
 
-    .line 62
+    .line 61
     sput-object v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->sInstance:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;
 
     const/4 v0, 0x1
 
-    .line 74
+    .line 73
     sput v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->NUMBER_OF_CORES:I
 
-    .line 76
+    .line 75
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     sput-object v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->KEEP_ALIVE_TIME_UNIT:Ljava/util/concurrent/TimeUnit;
@@ -109,27 +109,27 @@
 .method private constructor <init>()V
     .locals 9
 
-    .line 92
+    .line 91
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 64
+    .line 63
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
-    .line 65
+    .line 64
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthRunnable:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;
 
-    .line 67
+    .line 66
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
-    .line 68
+    .line 67
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 69
+    .line 68
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 78
+    .line 77
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -138,37 +138,37 @@
 
     const/4 v0, 0x0
 
-    .line 82
+    .line 81
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mPCPINConfirmed:Z
 
-    .line 84
+    .line 83
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mIsEnrolling:Z
 
-    .line 194
+    .line 192
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mNotiWiFiPortNumber:I
 
-    .line 694
+    .line 692
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->lastServerReqeustMap:Ljava/util/HashMap;
 
-    .line 695
+    .line 693
     new-instance v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthServerListener;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthServerListener;-><init>(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthServerListener;
 
-    .line 93
+    .line 92
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerWorkQueue:Ljava/util/concurrent/BlockingQueue;
 
-    .line 94
+    .line 93
     new-instance v0, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;-><init>()V
@@ -183,7 +183,7 @@
 
     move-result-object v8
 
-    .line 95
+    .line 94
     new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget v3, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->NUMBER_OF_CORES:I
@@ -208,7 +208,7 @@
 .method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Z)V
     .locals 0
 
-    .line 57
+    .line 56
     invoke-direct/range {p0 .. p8}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->showPassKeyConfirmFragment(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Z)V
 
     return-void
@@ -217,7 +217,7 @@
 .method static synthetic access$1000(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
     .locals 0
 
-    .line 57
+    .line 56
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     return-object p0
@@ -226,7 +226,7 @@
 .method static synthetic access$1100(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
     .locals 0
 
-    .line 57
+    .line 56
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     return-object p0
@@ -235,7 +235,7 @@
 .method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)Z
     .locals 0
 
-    .line 57
+    .line 56
     iget-boolean p0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mIsEnrolling:Z
 
     return p0
@@ -244,7 +244,7 @@
 .method static synthetic access$202(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;Z)Z
     .locals 0
 
-    .line 57
+    .line 56
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mIsEnrolling:Z
 
     return p1
@@ -253,7 +253,7 @@
 .method static synthetic access$300(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;III)V
     .locals 0
 
-    .line 57
+    .line 56
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->showEnrollCompletedFragment(III)V
 
     return-void
@@ -262,7 +262,7 @@
 .method static synthetic access$400(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[B)V
     .locals 0
 
-    .line 57
+    .line 56
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->ensureDeviceDataSet(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[B)V
 
     return-void
@@ -271,7 +271,7 @@
 .method static synthetic access$500(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[BLcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;)V
     .locals 0
 
-    .line 57
+    .line 56
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->processMessage(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[BLcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;)V
 
     return-void
@@ -280,7 +280,7 @@
 .method static synthetic access$600(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)Ljava/lang/Object;
     .locals 0
 
-    .line 57
+    .line 56
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
     return-object p0
@@ -289,7 +289,7 @@
 .method static synthetic access$700(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
     .locals 0
 
-    .line 57
+    .line 56
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     return-object p0
@@ -298,7 +298,7 @@
 .method static synthetic access$702(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;)Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
     .locals 0
 
-    .line 57
+    .line 56
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     return-object p1
@@ -307,7 +307,7 @@
 .method static synthetic access$800(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
     .locals 0
 
-    .line 57
+    .line 56
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     return-object p0
@@ -316,7 +316,7 @@
 .method static synthetic access$900(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
     .locals 0
 
-    .line 57
+    .line 56
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     return-object p0
@@ -327,13 +327,13 @@
 
     const-string v0, "closeAllServer"
 
-    .line 257
+    .line 255
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 259
+    .line 257
     monitor-enter p0
 
-    .line 260
+    .line 258
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
@@ -341,26 +341,26 @@
 
     const/4 v0, 0x0
 
-    .line 261
+    .line 259
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
-    .line 263
+    .line 261
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->closeServer(Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;)V
 
-    .line 264
+    .line 262
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 266
+    .line 264
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->closeServer(Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;)V
 
-    .line 267
+    .line 265
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 268
+    .line 266
     monitor-exit p0
 
     return-void
@@ -377,13 +377,21 @@
 
 .method private closeServer(Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "wifiServer"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 154
+    .line 152
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->stopAllCommunication()V
 
-    .line 155
+    .line 153
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->closeServer()V
 
     :cond_0
@@ -392,6 +400,16 @@
 
 .method private ensureDeviceDataSet(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[B)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "msg"
+        }
+    .end annotation
 
     const-string v0, "VERSION not support"
 
@@ -401,7 +419,7 @@
 
     goto/16 :goto_3
 
-    .line 790
+    .line 788
     :cond_0
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getDeviceName()Ljava/lang/String;
 
@@ -432,7 +450,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 793
+    .line 791
     :try_start_0
     new-instance v2, Ljava/lang/String;
 
@@ -448,7 +466,7 @@
 
     invoke-direct {v2, p2, v3}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
-    .line 795
+    .line 793
     new-instance p2, Lorg/json/JSONObject;
 
     invoke-direct {p2, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
@@ -462,7 +480,7 @@
     :catch_0
     move-exception p2
 
-    .line 797
+    .line 795
     invoke-static {v0, p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
@@ -470,7 +488,7 @@
 
     return-void
 
-    .line 804
+    .line 802
     :cond_2
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getDeviceName()Ljava/lang/String;
 
@@ -485,7 +503,7 @@
     :try_start_1
     const-string p2, "deviceName"
 
-    .line 806
+    .line 804
     invoke-virtual {v1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -499,10 +517,10 @@
     :catch_1
     move-exception p2
 
-    .line 808
+    .line 806
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 812
+    .line 810
     :cond_3
     :goto_1
     iget-object p2, p1, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mDeviceID:Ljava/lang/String;
@@ -516,7 +534,7 @@
     :try_start_2
     const-string p2, "deviceID"
 
-    .line 814
+    .line 812
     invoke-virtual {v1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -530,10 +548,10 @@
     :catch_2
     move-exception p2
 
-    .line 816
+    .line 814
     invoke-static {v0, p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 820
+    .line 818
     :cond_4
     :goto_2
     iget-object p2, p1, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mBTMACAddress:Ljava/lang/String;
@@ -544,7 +562,7 @@
 
     if-eqz p2, :cond_6
 
-    .line 822
+    .line 820
     :try_start_3
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->isBluetoothSocket()Z
 
@@ -552,7 +570,7 @@
 
     if-eqz p2, :cond_5
 
-    .line 823
+    .line 821
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;
 
     move-result-object p2
@@ -564,7 +582,7 @@
     :cond_5
     const-string p2, "MACAddress"
 
-    .line 825
+    .line 823
     invoke-virtual {v1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -578,7 +596,7 @@
     :catch_3
     move-exception p1
 
-    .line 828
+    .line 826
     invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_6
@@ -588,6 +606,14 @@
 
 .method private executeRunnable(Ljava/lang/Runnable;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -601,10 +627,10 @@
     :goto_0
     const-string v1, "command is null"
 
-    .line 284
+    .line 282
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 286
+    .line 284
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -619,9 +645,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "is added"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -629,15 +659,13 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 289
+    .line 287
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
     if-eqz v0, :cond_3
 
-    .line 290
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
-
+    .line 288
     invoke-virtual {v0}, Ljava/util/concurrent/ThreadPoolExecutor;->isShutdown()Z
 
     move-result v0
@@ -655,17 +683,17 @@
     :cond_1
     const-string v0, "mServerThreadPool Shutdown"
 
-    .line 291
+    .line 289
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->v(Ljava/lang/String;)V
 
-    .line 292
+    .line 290
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerWorkQueue:Ljava/util/concurrent/BlockingQueue;
 
-    .line 293
+    .line 291
     new-instance v0, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;-><init>()V
@@ -680,10 +708,8 @@
 
     move-result-object v8
 
-    .line 294
+    .line 292
     new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
-
-    sget v2, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->NUMBER_OF_CORES:I
 
     sget v3, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->NUMBER_OF_CORES:I
 
@@ -695,11 +721,13 @@
 
     move-object v1, v0
 
+    move v2, v3
+
     invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    .line 297
+    .line 295
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
@@ -712,7 +740,7 @@
     :catch_0
     move-exception p1
 
-    .line 300
+    .line 298
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_3
@@ -727,20 +755,20 @@
 
     monitor-enter v0
 
-    .line 87
+    .line 86
     :try_start_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->sInstance:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;
 
     if-nez v1, :cond_0
 
-    .line 88
+    .line 87
     new-instance v1, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;-><init>()V
 
     sput-object v1, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->sInstance:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;
 
-    .line 89
+    .line 88
     :cond_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->sInstance:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;
     :try_end_0
@@ -760,8 +788,18 @@
 
 .method private makeResponseData(Ljava/lang/String;S)[B
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "resultJson",
+            "type"
+        }
+    .end annotation
 
-    .line 272
+    .line 270
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -770,7 +808,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -778,14 +820,14 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 273
+    .line 271
     sget-object v0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     move-result-object p1
 
-    .line 275
+    .line 273
     array-length v0, p1
 
     add-int/lit8 v0, v0, 0x4
@@ -794,20 +836,20 @@
 
     move-result-object v0
 
-    .line 276
+    .line 274
     invoke-virtual {v0, p2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
-    .line 277
+    .line 275
     array-length p2, p1
 
     int-to-short p2, p2
 
     invoke-virtual {v0, p2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
-    .line 278
+    .line 276
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
 
-    .line 280
+    .line 278
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
 
     move-result-object p1
@@ -820,19 +862,19 @@
 
     const-string v0, "openRFCommServer"
 
-    .line 201
+    .line 199
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 202
+    .line 200
     monitor-enter p0
 
-    .line 203
+    .line 201
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     if-nez v0, :cond_0
 
-    .line 204
+    .line 202
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->FINGER_PRINT_UUID:Ljava/util/UUID;
@@ -845,7 +887,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
-    .line 207
+    .line 205
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
@@ -853,12 +895,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;->setSocketListener(Lcom/samsung/android/galaxycontinuity/net/IAuthNotiSocketListener;)V
 
-    .line 208
+    .line 206
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;->open()Ljava/lang/Boolean;
 
-    .line 209
+    .line 207
     monitor-exit p0
 
     return-void
@@ -876,7 +918,7 @@
 .method private openServerSocket()V
     .locals 5
 
-    .line 215
+    .line 213
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;
 
     move-result-object v0
@@ -893,13 +935,13 @@
 
     if-eqz v0, :cond_4
 
-    .line 216
+    .line 214
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/NetUtil;->getWiFiIPAddress()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 218
+    .line 216
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -914,38 +956,38 @@
 
     if-nez v1, :cond_1
 
-    .line 219
+    .line 217
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->closeServer(Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;)V
 
     const/4 v1, 0x0
 
-    .line 220
+    .line 218
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 222
+    .line 220
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-direct {p0, v2}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->closeServer(Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;)V
 
-    .line 223
+    .line 221
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 226
+    .line 224
     :cond_1
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mIPAddress:Ljava/lang/String;
 
-    .line 228
+    .line 226
     monitor-enter p0
 
-    .line 229
+    .line 227
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     if-nez v0, :cond_2
 
-    .line 230
+    .line 228
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     const-string v1, ""
@@ -960,23 +1002,23 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 231
+    .line 229
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthServerListener;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->setSocketListener(Lcom/samsung/android/galaxycontinuity/net/IAuthNotiSocketListener;)V
 
-    .line 232
+    .line 230
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->open()Ljava/lang/Boolean;
 
-    .line 235
+    .line 233
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     if-nez v0, :cond_3
 
-    .line 236
+    .line 234
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     const-string v1, ""
@@ -991,17 +1033,17 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 237
+    .line 235
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mServerListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthServerListener;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->setSocketListener(Lcom/samsung/android/galaxycontinuity/net/IAuthNotiSocketListener;)V
 
-    .line 238
+    .line 236
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->open()Ljava/lang/Boolean;
 
-    .line 240
+    .line 238
     :cond_3
     monitor-exit p0
 
@@ -1020,33 +1062,45 @@
 
 .method private processMessage(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[BLcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "socket",
+            "msg",
+            "listener"
+        }
+    .end annotation
 
     const-string v0, "processMessage"
 
-    .line 305
+    .line 303
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     if-nez p1, :cond_0
 
     return-void
 
-    .line 309
+    .line 307
     :cond_0
     invoke-static {p2}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 310
+    .line 308
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->getShort()S
 
     move-result v1
 
-    .line 312
+    .line 310
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->getShort()S
 
     move-result v0
 
-    .line 314
+    .line 312
     new-instance v2, Ljava/lang/String;
 
     const/4 v3, 0x4
@@ -1061,7 +1115,7 @@
 
     invoke-direct {v2, p2, v0}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
-    .line 317
+    .line 315
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1070,7 +1124,11 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1080,7 +1138,7 @@
 
     const/4 p2, 0x1
 
-    .line 326
+    .line 324
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -1088,7 +1146,7 @@
 
     const-string v3, "VERSION"
 
-    .line 327
+    .line 325
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v0
@@ -1102,7 +1160,7 @@
 
     const-string v3, "VERSION not support"
 
-    .line 331
+    .line 329
     invoke-static {v3, v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     move v0, p2
@@ -1123,7 +1181,7 @@
 
     const-string v3, "TAB"
 
-    .line 345
+    .line 343
     :cond_2
     :goto_1
     invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
@@ -1132,7 +1190,7 @@
 
     if-nez v0, :cond_3
 
-    .line 346
+    .line 344
     new-instance p1, Landroid/content/Intent;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -1145,15 +1203,15 @@
 
     const/high16 p2, 0x10000000
 
-    .line 347
+    .line 345
     invoke-virtual {p1, p2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     const-string p2, "TYPE"
 
-    .line 348
+    .line 346
     invoke-virtual {p1, p2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 349
+    .line 347
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p2
@@ -1185,7 +1243,7 @@
 
     goto/16 :goto_2
 
-    .line 372
+    .line 370
     :cond_4
     :try_start_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isDeviceSecured()Z
@@ -1194,12 +1252,12 @@
 
     if-eqz p2, :cond_5
 
-    .line 373
+    .line 371
     new-instance v7, Lcom/samsung/android/galaxycontinuity/auth/command/UpdateInfoCommand;
 
     invoke-direct {v7, v2, p1}, Lcom/samsung/android/galaxycontinuity/auth/command/UpdateInfoCommand;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
 
-    .line 374
+    .line 372
     new-instance p2, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;
 
     const/4 v8, 0x0
@@ -1216,7 +1274,7 @@
 
     invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->executeRunnable(Ljava/lang/Runnable;)V
 
-    .line 377
+    .line 375
     :cond_5
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
@@ -1224,52 +1282,52 @@
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 378
+    .line 376
     :try_start_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     if-eqz v0, :cond_6
 
-    .line 379
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
-
+    .line 377
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;->cancelAuthentication()V
 
-    .line 382
+    .line 380
     :cond_6
-    new-instance v4, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;
 
-    iget v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mNotiWiFiPortNumber:I
+    iget v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mNotiWiFiPortNumber:I
 
-    invoke-direct {v4, v2, p1, v0}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;I)V
+    invoke-direct {v0, v2, p1, v1}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;I)V
 
-    iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
-    .line 384
-    new-instance v6, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;
+    .line 382
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;
 
-    const/4 v5, 0x0
+    iget-object v7, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
-    move-object v0, v6
+    const/4 v8, 0x0
 
-    move-object v1, p0
+    move-object v3, v0
 
-    move-object v2, p3
+    move-object v4, p0
 
-    move-object v3, p1
+    move-object v5, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;-><init>(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$1;)V
+    move-object v6, p1
 
-    iput-object v6, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthRunnable:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;
+    invoke-direct/range {v3 .. v8}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;-><init>(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$1;)V
 
-    .line 385
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthRunnable:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;
+
+    .line 383
     monitor-exit p2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 386
+    .line 384
     :try_start_3
-    invoke-direct {p0, v6}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->executeRunnable(Ljava/lang/Runnable;)V
+    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->executeRunnable(Ljava/lang/Runnable;)V
     :try_end_3
     .catch Lorg/json/JSONException; {:try_start_3 .. :try_end_3} :catch_1
 
@@ -1278,7 +1336,7 @@
     :catchall_0
     move-exception p1
 
-    .line 385
+    .line 383
     :try_start_4
     monitor-exit p2
     :try_end_4
@@ -1287,7 +1345,7 @@
     :try_start_5
     throw p1
 
-    .line 390
+    .line 388
     :cond_7
     new-instance p1, Lorg/json/JSONObject;
 
@@ -1295,7 +1353,7 @@
 
     const-string p3, "body"
 
-    .line 392
+    .line 390
     invoke-virtual {p1, p3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -1308,33 +1366,31 @@
 
     check-cast p1, Lcom/samsung/android/galaxycontinuity/auth/data/ConfirmPINBody;
 
-    .line 393
+    .line 391
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/auth/data/ConfirmPINBody;->getConfirmPinResult()I
 
     move-result p1
 
     if-eqz p1, :cond_9
 
-    .line 396
+    .line 394
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     if-eqz p1, :cond_8
 
-    .line 397
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
-
+    .line 395
     invoke-interface {p1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;->showPrepareFragment()V
 
     :cond_8
     return-void
 
-    .line 402
+    .line 400
     :cond_9
     iput-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mPCPINConfirmed:Z
 
     goto :goto_2
 
-    .line 409
+    .line 407
     :cond_a
     new-instance p2, Lorg/json/JSONObject;
 
@@ -1342,7 +1398,7 @@
 
     const-string p3, "body"
 
-    .line 411
+    .line 409
     invoke-virtual {p2, p3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -1355,14 +1411,14 @@
 
     check-cast p2, Lcom/samsung/android/galaxycontinuity/auth/data/UnlockOptionBody;
 
-    .line 412
+    .line 410
     invoke-virtual {p2}, Lcom/samsung/android/galaxycontinuity/auth/data/UnlockOptionBody;->getIsUnlockEnabled()Z
 
     move-result p2
 
     if-eqz p2, :cond_d
 
-    .line 415
+    .line 413
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getDeviceName()Ljava/lang/String;
 
     move-result-object p1
@@ -1371,32 +1427,34 @@
 
     goto :goto_2
 
-    .line 361
+    .line 359
     :cond_b
     iput-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mIsEnrolling:Z
 
     const/4 p2, 0x0
 
-    .line 362
+    .line 360
     iput-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mPCPINConfirmed:Z
 
-    .line 364
+    .line 362
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
     monitor-enter p2
     :try_end_5
     .catch Lorg/json/JSONException; {:try_start_5 .. :try_end_5} :catch_1
 
-    .line 365
+    .line 363
     :try_start_6
-    new-instance v7, Lcom/samsung/android/galaxycontinuity/auth/command/CDFEnrollCommand;
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFEnrollCommand;
 
-    invoke-direct {v7, v2, p1}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFEnrollCommand;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
+    invoke-direct {v0, v2, p1}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFEnrollCommand;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
 
-    iput-object v7, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
-    .line 367
+    .line 365
     new-instance v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$AuthRunnable;
+
+    iget-object v7, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     const/4 v8, 0x0
 
@@ -1412,7 +1470,7 @@
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->executeRunnable(Ljava/lang/Runnable;)V
 
-    .line 368
+    .line 366
     monitor-exit p2
 
     goto :goto_2
@@ -1427,7 +1485,7 @@
     :try_start_7
     throw p1
 
-    .line 355
+    .line 353
     :cond_c
     new-instance p1, Lorg/json/JSONObject;
 
@@ -1435,7 +1493,7 @@
 
     const-string p2, "Version"
 
-    .line 356
+    .line 354
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -1444,7 +1502,7 @@
 
     const-string p2, "App_min_version"
 
-    .line 357
+    .line 355
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -1458,12 +1516,12 @@
     :catch_1
     move-exception p1
 
-    .line 422
+    .line 420
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const-string p1, "Execute failed"
 
-    .line 423
+    .line 421
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     :cond_d
@@ -1473,8 +1531,16 @@
 
 .method private sendPINConfirmResult(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "errorCode"
+        }
+    .end annotation
 
-    .line 496
+    .line 494
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v0
@@ -1487,7 +1553,7 @@
 
     return-void
 
-    .line 501
+    .line 499
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
@@ -1503,12 +1569,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 502
+    .line 500
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     goto :goto_0
 
-    .line 504
+    .line 502
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
@@ -1524,19 +1590,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 505
+    .line 503
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     goto :goto_0
 
-    .line 507
+    .line 505
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 511
+    .line 509
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->isConnected()Z
 
     move-result v1
@@ -1547,14 +1613,14 @@
 
     const-string v2, "PINConfirm"
 
-    .line 512
+    .line 510
     invoke-static {v1, v2}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->newBuilder(ILjava/lang/String;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;
 
     move-result-object v1
 
     new-instance v2, Lcom/samsung/android/galaxycontinuity/auth/data/ConfirmPINBody;
 
-    .line 513
+    .line 511
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v3
@@ -1577,7 +1643,7 @@
 
     move-result-object p1
 
-    .line 515
+    .line 513
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->toJson()Ljava/lang/String;
 
     move-result-object p1
@@ -1588,7 +1654,7 @@
 
     move-result-object p1
 
-    .line 517
+    .line 515
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v1
@@ -1613,18 +1679,30 @@
 
 .method private showEnrollCompletedFragment(III)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "resultCode",
+            "errorCode",
+            "majorDeviceClass"
+        }
+    .end annotation
 
-    .line 553
+    .line 551
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     if-eqz v0, :cond_0
 
-    .line 554
+    .line 552
     invoke-interface {v0, p1, p2, p3}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;->showAuthCompletedFragment(III)V
 
     goto :goto_0
 
-    .line 556
+    .line 554
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -1640,30 +1718,30 @@
 
     const-string v2, "SetupEnrollCompletedFragmentTag"
 
-    .line 557
+    .line 555
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v1, "AUTHRESULT"
 
-    .line 558
+    .line 556
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string p1, "AUTHERRORCODE"
 
-    .line 559
+    .line 557
     invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string p1, "DEVICECLASS"
 
-    .line 560
+    .line 558
     invoke-virtual {v0, p1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const/high16 p1, 0x10000000
 
-    .line 561
+    .line 559
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 562
+    .line 560
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
@@ -1676,18 +1754,26 @@
 
 .method private showInputPINOnPCFragment(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "remoteDeviceName"
+        }
+    .end annotation
 
-    .line 567
+    .line 565
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     if-eqz v0, :cond_0
 
-    .line 568
+    .line 566
     invoke-interface {v0, p1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;->showPINInputOnPCFragment(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 570
+    .line 568
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -1703,20 +1789,20 @@
 
     const-string v2, "SetupEnterPINOnPCFragmentTag"
 
-    .line 571
+    .line 569
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v1, "REMOTEDEVICENAME"
 
-    .line 572
+    .line 570
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const/high16 p1, 0x10000000
 
-    .line 573
+    .line 571
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 574
+    .line 572
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
@@ -1729,13 +1815,21 @@
 
 .method private showNoti(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
-    .line 490
+    .line 488
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 492
+    .line 490
     invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/util/Utils;->showToastMessage(Ljava/lang/String;I)V
 
     return-void
@@ -1743,6 +1837,28 @@
 
 .method private showPassKeyConfirmFragment(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Z)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "generatedPIN",
+            "deviceName",
+            "MACAddress",
+            "deviceID",
+            "majorDeviceClass",
+            "deviceTypeDescription",
+            "manufacturerType",
+            "isUnlockEnabled"
+        }
+    .end annotation
 
     move-object v0, p0
 
@@ -1750,15 +1866,15 @@
 
     move/from16 v2, p8
 
-    .line 533
+    .line 531
     iget-object v3, v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     if-eqz v3, :cond_0
 
-    .line 534
+    .line 532
     invoke-interface {v3, v1, v2}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;->setDeviceType(Ljava/lang/String;Z)V
 
-    .line 535
+    .line 533
     iget-object v4, v0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     move-object v5, p1
@@ -1777,7 +1893,7 @@
 
     goto :goto_0
 
-    .line 537
+    .line 535
     :cond_0
     new-instance v3, Landroid/content/Intent;
 
@@ -1793,67 +1909,67 @@
 
     const-string v5, "SetupConfirmPassKeyFragmentTag"
 
-    .line 538
+    .line 536
     invoke-virtual {v3, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v4, "GENREATEDPIN"
 
     move-object v5, p1
 
-    .line 539
+    .line 537
     invoke-virtual {v3, v4, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v4, "DEVICENAME"
 
     move-object v5, p2
 
-    .line 540
+    .line 538
     invoke-virtual {v3, v4, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v4, "MACADDRESS"
 
     move-object v5, p3
 
-    .line 541
+    .line 539
     invoke-virtual {v3, v4, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v4, "DEVICEID"
 
     move-object v5, p4
 
-    .line 542
+    .line 540
     invoke-virtual {v3, v4, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v4, "DEVICECLASS"
 
     move/from16 v5, p5
 
-    .line 543
+    .line 541
     invoke-virtual {v3, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string v4, "DEVICETYPEDESCRIPTION"
 
-    .line 544
+    .line 542
     invoke-virtual {v3, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v1, "MANUFACTURERTYPE"
 
     move-object/from16 v4, p7
 
-    .line 545
+    .line 543
     invoke-virtual {v3, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v1, "ISUNLOCKENABLED"
 
-    .line 546
+    .line 544
     invoke-virtual {v3, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const/high16 v1, 0x14000000
 
-    .line 547
+    .line 545
     invoke-virtual {v3, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 548
+    .line 546
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -1869,12 +1985,12 @@
 .method public cancelEnrollment()V
     .locals 2
 
-    .line 181
+    .line 179
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     if-eqz v0, :cond_0
 
-    .line 182
+    .line 180
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v1
@@ -1885,13 +2001,13 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;->stopCommunication(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
 
-    .line 185
+    .line 183
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     if-eqz v0, :cond_1
 
-    .line 186
+    .line 184
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v1
@@ -1902,13 +2018,13 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->stopCommunication(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
 
-    .line 189
+    .line 187
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     if-eqz v0, :cond_2
 
-    .line 190
+    .line 188
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v1
@@ -1925,8 +2041,16 @@
 
 .method disconnectConnectionFrom(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 654
+    .line 652
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     if-eqz v0, :cond_0
@@ -1937,12 +2061,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 655
+    .line 653
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;->stopCommunication(Ljava/lang/String;)V
 
-    .line 658
+    .line 656
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
@@ -1954,12 +2078,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 659
+    .line 657
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->stopCommunication(Ljava/lang/String;)V
 
-    .line 662
+    .line 660
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
@@ -1971,7 +2095,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 663
+    .line 661
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->stopCommunication(Ljava/lang/String;)V
@@ -1991,7 +2115,7 @@
 .method public getPortNumber()I
     .locals 1
 
-    .line 245
+    .line 243
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     if-nez v0, :cond_0
@@ -2000,7 +2124,7 @@
 
     return v0
 
-    .line 249
+    .line 247
     :cond_0
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;->getLocalPortNumber()I
 
@@ -2011,6 +2135,14 @@
 
 .method handleLastRequest(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -2019,7 +2151,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 673
+    .line 671
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     if-eqz v1, :cond_1
@@ -2030,10 +2162,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 674
+    .line 672
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
-    .line 677
+    .line 675
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
@@ -2045,10 +2177,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 678
+    .line 676
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 681
+    .line 679
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
@@ -2060,13 +2192,13 @@
 
     if-eqz v1, :cond_3
 
-    .line 682
+    .line 680
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     :cond_3
     if-eqz v0, :cond_4
 
-    .line 687
+    .line 685
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->lastServerReqeustMap:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
@@ -2075,7 +2207,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 688
+    .line 686
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;->getSocketFor(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
 
     move-result-object v1
@@ -2090,7 +2222,7 @@
 
     invoke-direct {p0, v1, v2, v0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->processMessage(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[BLcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;)V
 
-    .line 689
+    .line 687
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->lastServerReqeustMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2102,18 +2234,16 @@
 .method public isAuthenticating()Z
     .locals 2
 
-    .line 171
+    .line 169
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 172
+    .line 170
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;->isAuthenticating()Z
 
@@ -2136,7 +2266,7 @@
     :catchall_0
     move-exception v1
 
-    .line 173
+    .line 171
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2147,7 +2277,7 @@
 .method public isEnrolling()Z
     .locals 1
 
-    .line 579
+    .line 577
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mIsEnrolling:Z
 
     return v0
@@ -2156,7 +2286,7 @@
 .method public isPINConfirmedOnTab()Z
     .locals 1
 
-    .line 442
+    .line 440
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mPCPINConfirmed:Z
 
     return v0
@@ -2164,22 +2294,36 @@
 
 .method public onPINConfirmCompleted(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "deviceName",
+            "deviceID",
+            "btMacAddr"
+        }
+    .end annotation
 
-    .line 447
+    .line 445
     sget p3, Lcom/samsung/android/galaxycontinuity/activities/SetupConfirmPassKeyFragment;->PINCONFIRM_RESULT_OK:I
 
     const/4 p4, 0x0
 
     if-ne p1, p3, :cond_0
 
-    .line 448
+    .line 446
     monitor-enter p0
 
-    .line 449
+    .line 447
     :try_start_0
     invoke-direct {p0, p4}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->sendPINConfirmResult(I)V
 
-    .line 450
+    .line 448
     monitor-exit p0
 
     goto :goto_0
@@ -2196,12 +2340,12 @@
     :cond_0
     const p1, -0x7ffffffd
 
-    .line 453
+    .line 451
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->sendPINConfirmResult(I)V
 
-    const p1, 0x7f10007e
+    const p1, 0x7f11008e
 
-    .line 455
+    .line 453
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -2218,7 +2362,7 @@
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->showNoti(Ljava/lang/String;)V
 
-    .line 457
+    .line 455
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object p1
@@ -2236,23 +2380,21 @@
 .method public onUserPresent()V
     .locals 2
 
-    .line 434
+    .line 432
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 435
+    .line 433
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     if-eqz v1, :cond_0
 
-    .line 436
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
-
+    .line 434
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;->onUserPresented()V
 
-    .line 438
+    .line 436
     :cond_0
     monitor-exit v0
 
@@ -2270,8 +2412,16 @@
 
 .method public setNotiWiFiPortNumber(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notiWiFiPortNumber"
+        }
+    .end annotation
 
-    .line 197
+    .line 195
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mNotiWiFiPortNumber:I
 
     return-void
@@ -2279,8 +2429,16 @@
 
 .method public setSetupConnectionListner(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listner"
+        }
+    .end annotation
 
-    .line 177
+    .line 175
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     return-void
@@ -2289,17 +2447,17 @@
 .method public showPrepareFragment()V
     .locals 3
 
-    .line 522
+    .line 520
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mSetupConnectionListner:Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;
 
     if-eqz v0, :cond_0
 
-    .line 523
+    .line 521
     invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$OnSetupInteractionListener;->showPrepareFragment()V
 
     goto :goto_0
 
-    .line 525
+    .line 523
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -2315,15 +2473,15 @@
 
     const-string v2, "SetupPrepareFragmentTag"
 
-    .line 526
+    .line 524
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const/high16 v1, 0x10000000
 
-    .line 527
+    .line 525
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 528
+    .line 526
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -2335,28 +2493,12 @@
 .end method
 
 .method public startService()V
-    .locals 2
+    .locals 0
 
-    .line 100
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    .line 101
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$1;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager$1;-><init>(Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;)V
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 110
+    .line 108
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->openRFCommServer()V
 
-    .line 112
+    .line 110
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->openServerSocket()V
 
     return-void
@@ -2365,31 +2507,29 @@
 .method public stopAllService()V
     .locals 2
 
-    .line 160
+    .line 158
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->closeAllServer()V
 
-    .line 162
+    .line 160
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 163
+    .line 161
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
     if-eqz v1, :cond_0
 
-    .line 164
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
-
+    .line 162
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;->cancelAuthentication()V
 
     const/4 v1, 0x0
 
-    .line 165
+    .line 163
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
-    .line 167
+    .line 165
     :cond_0
     monitor-exit v0
 
@@ -2408,10 +2548,10 @@
 .method public stopBTService()V
     .locals 3
 
-    .line 116
+    .line 114
     monitor-enter p0
 
-    .line 117
+    .line 115
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
@@ -2419,31 +2559,29 @@
 
     if-eqz v0, :cond_0
 
-    .line 118
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
-
+    .line 116
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;->stopAllCommunication()V
 
-    .line 119
+    .line 117
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;->closeServer()V
 
-    .line 120
+    .line 118
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mBtAuthServer:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTServer;
 
-    .line 122
+    .line 120
     :cond_0
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 124
+    .line 122
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 125
+    .line 123
     :try_start_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
@@ -2455,7 +2593,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 126
+    .line 124
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v2
@@ -2474,15 +2612,13 @@
 
     if-eqz v2, :cond_1
 
-    .line 127
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
-
+    .line 125
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;->cancelAuthentication()V
 
-    .line 128
+    .line 126
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
-    .line 130
+    .line 128
     :cond_1
     monitor-exit v0
 
@@ -2500,7 +2636,7 @@
     :catchall_1
     move-exception v0
 
-    .line 122
+    .line 120
     :try_start_2
     monitor-exit p0
     :try_end_2
@@ -2512,15 +2648,15 @@
 .method public stopWiFiService()V
     .locals 3
 
-    const-string v0, "stopWiFiService"
+    const-string/jumbo v0, "stopWiFiService"
 
-    .line 134
+    .line 132
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 135
+    .line 133
     monitor-enter p0
 
-    .line 136
+    .line 134
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
@@ -2528,28 +2664,28 @@
 
     const/4 v0, 0x0
 
-    .line 137
+    .line 135
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mLegacyWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 139
+    .line 137
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->closeServer(Lcom/samsung/android/galaxycontinuity/net/AuthNotiServer;)V
 
-    .line 140
+    .line 138
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mWiFiAuthServer:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiServer;
 
-    .line 141
+    .line 139
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 143
+    .line 141
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->authCommandLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 144
+    .line 142
     :try_start_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
@@ -2561,7 +2697,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 145
+    .line 143
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v2
@@ -2580,15 +2716,13 @@
 
     if-eqz v2, :cond_0
 
-    .line 146
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
-
+    .line 144
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;->cancelAuthentication()V
 
-    .line 147
+    .line 145
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/subfeature/AuthBTManager;->mAuthCommand:Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;
 
-    .line 149
+    .line 147
     :cond_0
     monitor-exit v1
 
@@ -2606,7 +2740,7 @@
     :catchall_1
     move-exception v0
 
-    .line 141
+    .line 139
     :try_start_2
     monitor-exit p0
     :try_end_2

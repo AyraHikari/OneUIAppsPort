@@ -98,11 +98,11 @@
 
 .field mIsAudioRedirectEnabled:Z
 
-.field private mIsCalling:Z
-
 .field private mIsMirroringWindowClosed:Z
 
 .field private mIsScreenOn:Z
+
+.field private mLimit:I
 
 .field private mMainPortNum:I
 
@@ -165,7 +165,7 @@
 .method private constructor <init>()V
     .locals 5
 
-    .line 188
+    .line 189
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 104
@@ -203,53 +203,58 @@
     .line 113
     iput v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFPS:I
 
+    const/16 v1, 0x2000
+
+    .line 114
+    iput v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mLimit:I
+
     const/4 v1, 0x0
 
-    .line 119
+    .line 120
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
-    .line 122
+    .line 123
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 123
+    .line 124
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     const v2, 0xea65
 
-    .line 124
+    .line 125
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainPortNum:I
 
-    .line 126
+    .line 127
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
-    .line 127
+    .line 128
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 128
+    .line 129
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    .line 129
+    .line 130
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoLatch:Ljava/util/concurrent/CountDownLatch;
 
     const v2, 0xea62
 
-    .line 130
+    .line 131
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoPortNum:I
 
-    .line 132
+    .line 133
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 133
+    .line 134
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
 
-    .line 134
+    .line 135
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 135
+    .line 136
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
@@ -258,144 +263,141 @@
 
     const v2, 0xea61
 
-    .line 136
+    .line 137
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioPortNum:I
 
-    .line 138
+    .line 139
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->INPUT_SEVER_LOCK:Ljava/lang/Object;
 
-    .line 139
+    .line 140
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 140
+    .line 141
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     const v2, 0xea64
 
-    .line 141
+    .line 142
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputPortNum:I
 
-    .line 143
+    .line 144
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     const v2, 0xea66
 
-    .line 144
+    .line 145
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoritePortNum:I
 
-    .line 146
+    .line 147
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mNotificationManager:Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;
 
-    .line 149
+    .line 150
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteInitInfoFile:Ljava/io/File;
 
-    .line 150
+    .line 151
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteInitIconFile:Ljava/io/File;
 
-    .line 151
+    .line 152
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteUpdateInfoFile:Ljava/io/File;
 
-    .line 152
+    .line 153
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteUpdateIconFile:Ljava/io/File;
 
-    .line 153
+    .line 154
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSendingArray:[B
 
     const/4 v2, -0x1
 
-    .line 154
+    .line 155
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
-    .line 155
+    .line 156
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ROTATION_DEGREE:I
 
-    .line 157
+    .line 158
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsScreenOn:Z
 
     const/4 v2, 0x0
 
-    .line 158
-    iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsCalling:Z
-
-    .line 159
+    .line 160
     iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsMirroringWindowClosed:Z
 
-    .line 162
+    .line 163
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRotationDegree:I
 
-    .line 164
+    .line 165
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
 
-    .line 165
+    .line 166
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mHostName:Ljava/lang/String;
 
-    .line 169
+    .line 170
     iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->deviceInfoChanged:Z
 
     const-wide/16 v3, 0x0
 
-    .line 171
+    .line 172
     iput-wide v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mSmartViewStartedTickTime:J
 
-    .line 173
+    .line 174
     iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserConsentGranted:Z
 
     const/4 v2, 0x2
 
-    .line 175
+    .line 176
     iput v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
-    .line 178
+    .line 179
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsAudioRedirectEnabled:Z
 
-    .line 180
+    .line 181
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
-    .line 330
+    .line 341
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$1;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$1;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->widiListener:Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
 
-    .line 503
+    .line 510
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$2;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$2;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 1335
+    .line 1305
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$6;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$6;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mInetSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
-    .line 1527
+    .line 1498
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->CoverManagerKlass:Ljava/lang/Class;
 
-    .line 1528
+    .line 1499
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mCoverManager:Ljava/lang/Object;
 
-    .line 1555
+    .line 1526
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mWindowManager:Landroid/view/WindowManager;
 
-    .line 1556
+    .line 1527
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->ParamsMultiWindow:Landroid/view/WindowManager$LayoutParams;
 
-    .line 1633
+    .line 1604
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$9;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->dragDropReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 1883
+    .line 1857
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$12;
 
     new-instance v1, Landroid/os/Handler;
@@ -410,7 +412,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAutoRotateObserver:Landroid/database/ContentObserver;
 
-    .line 1907
+    .line 1881
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$13;
 
     new-instance v1, Landroid/os/Handler;
@@ -425,21 +427,21 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserRotateObserver:Landroid/database/ContentObserver;
 
-    .line 1921
+    .line 1895
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$14;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$14;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
-    .line 189
+    .line 190
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/ScreenWakeHolderSelector;->getProperScreenWakeHolder()Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mWakeLockManager:Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;
 
-    .line 191
+    .line 192
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -455,10 +457,18 @@
 
 .method private declared-synchronized SendFavoriteFile(Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestedFile"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 908
+    .line 870
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -468,7 +478,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -478,7 +492,7 @@
 
     const-string v0, "favorite_init_info.data"
 
-    .line 911
+    .line 873
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -487,7 +501,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 912
+    .line 874
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteInitInfoFile:Ljava/io/File;
 
     goto :goto_0
@@ -495,14 +509,14 @@
     :cond_0
     const-string v0, "favorite_init_icon.data"
 
-    .line 913
+    .line 875
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 914
+    .line 876
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteInitIconFile:Ljava/io/File;
 
     goto :goto_0
@@ -510,14 +524,14 @@
     :cond_1
     const-string v0, "favorite_update_info.data"
 
-    .line 915
+    .line 877
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 916
+    .line 878
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteUpdateInfoFile:Ljava/io/File;
 
     goto :goto_0
@@ -525,14 +539,14 @@
     :cond_2
     const-string v0, "favorite_update_icon.data"
 
-    .line 917
+    .line 879
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
-    .line 918
+    .line 880
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteUpdateIconFile:Ljava/io/File;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
@@ -545,12 +559,12 @@
     :goto_0
     if-nez p1, :cond_4
 
-    .line 921
+    .line 883
     monitor-exit p0
 
     return-void
 
-    .line 925
+    .line 887
     :cond_4
     :try_start_1
     invoke-virtual {p1}, Ljava/io/File;->length()J
@@ -563,7 +577,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSendingArray:[B
 
-    .line 927
+    .line 889
     new-instance v0, Ljava/io/FileInputStream;
 
     invoke-direct {v0, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
@@ -572,7 +586,7 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 928
+    .line 890
     :try_start_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSendingArray:[B
 
@@ -584,7 +598,7 @@
 
     if-ne v1, v2, :cond_5
 
-    .line 929
+    .line 891
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -593,40 +607,44 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 931
+    .line 893
     :cond_5
     invoke-virtual {v0}, Ljava/io/FileInputStream;->close()V
 
-    .line 933
+    .line 895
     new-instance p1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$3;
 
     invoke-direct {p1, p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$3;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
 
     const-string v1, "Mirroring_SendFavoriteApp_Thread"
 
-    .line 950
+    .line 912
     invoke-virtual {p1, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 951
+    .line 913
     invoke-virtual {p1}, Ljava/lang/Thread;->start()V
     :try_end_2
     .catch Ljava/lang/NullPointerException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 959
+    .line 921
     :try_start_3
     invoke-virtual {v0}, Ljava/io/FileInputStream;->close()V
     :try_end_3
@@ -638,7 +656,7 @@
     :catch_0
     move-exception p1
 
-    .line 961
+    .line 923
     :goto_1
     :try_start_4
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
@@ -676,7 +694,7 @@
     :catch_3
     move-exception p1
 
-    .line 955
+    .line 917
     :goto_2
     :try_start_5
     new-instance v0, Ljava/lang/StringBuilder;
@@ -687,13 +705,17 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -703,7 +725,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 959
+    .line 921
     :try_start_6
     invoke-virtual {v1}, Ljava/io/FileInputStream;->close()V
     :try_end_6
@@ -720,7 +742,7 @@
     :catch_5
     move-exception p1
 
-    .line 953
+    .line 915
     :goto_3
     :try_start_7
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
@@ -729,7 +751,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 959
+    .line 921
     :try_start_8
     invoke-virtual {v1}, Ljava/io/FileInputStream;->close()V
     :try_end_8
@@ -743,7 +765,7 @@
 
     goto :goto_1
 
-    .line 964
+    .line 926
     :cond_6
     :goto_4
     monitor-exit p0
@@ -753,7 +775,7 @@
     :goto_5
     if-eqz v1, :cond_7
 
-    .line 959
+    .line 921
     :try_start_9
     invoke-virtual {v1}, Ljava/io/FileInputStream;->close()V
     :try_end_9
@@ -765,11 +787,11 @@
     :catch_7
     move-exception v0
 
-    .line 961
+    .line 923
     :try_start_a
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 963
+    .line 925
     :cond_7
     :goto_6
     throw p1
@@ -789,10 +811,10 @@
 
     const-string v0, "[Mirroring] StartFavoriteAppManager"
 
-    .line 395
+    .line 406
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 397
+    .line 408
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -803,10 +825,10 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mNotificationManager:Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;
 
-    .line 399
+    .line 410
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;->initialize()V
 
-    .line 400
+    .line 411
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mNotificationManager:Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;->makeLauncherAppList()V
@@ -841,22 +863,13 @@
     return p0
 .end method
 
-.method static synthetic access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+.method static synthetic access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
     .locals 0
 
     .line 92
-    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mInetSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
     return-object p0
-.end method
-
-.method static synthetic access$1002(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
-    .locals 0
-
-    .line 92
-    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
-
-    return-object p1
 .end method
 
 .method static synthetic access$102(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Z)Z
@@ -868,16 +881,7 @@
     return p1
 .end method
 
-.method static synthetic access$1100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
-    .locals 0
-
-    .line 92
-    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mInetSocket:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
-
-    return-object p0
-.end method
-
-.method static synthetic access$1200(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$1100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -886,7 +890,7 @@
     return p0
 .end method
 
-.method static synthetic access$1202(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$1102(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
@@ -895,7 +899,7 @@
     return p1
 .end method
 
-.method static synthetic access$1300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/lang/String;
+.method static synthetic access$1200(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/lang/String;
     .locals 0
 
     .line 92
@@ -904,7 +908,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1400(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+.method static synthetic access$1300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
     .locals 0
 
     .line 92
@@ -913,7 +917,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1402(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+.method static synthetic access$1302(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
     .locals 0
 
     .line 92
@@ -922,7 +926,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1500(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$1400(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -931,7 +935,7 @@
     return p0
 .end method
 
-.method static synthetic access$1502(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$1402(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
@@ -940,7 +944,7 @@
     return p1
 .end method
 
-.method static synthetic access$1600(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+.method static synthetic access$1500(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
     .locals 0
 
     .line 92
@@ -949,7 +953,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1602(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+.method static synthetic access$1502(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
     .locals 0
 
     .line 92
@@ -958,7 +962,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$1600(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -967,7 +971,7 @@
     return p0
 .end method
 
-.method static synthetic access$1702(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$1602(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
@@ -976,7 +980,7 @@
     return p1
 .end method
 
-.method static synthetic access$1800(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+.method static synthetic access$1700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
     .locals 0
 
     .line 92
@@ -985,7 +989,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1802(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+.method static synthetic access$1702(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
     .locals 0
 
     .line 92
@@ -994,7 +998,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1900(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$1800(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -1003,11 +1007,29 @@
     return p0
 .end method
 
-.method static synthetic access$1902(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$1802(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoritePortNum:I
+
+    return p1
+.end method
+
+.method static synthetic access$1900(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Z
+    .locals 0
+
+    .line 92
+    iget-boolean p0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsMirroringWindowClosed:Z
+
+    return p0
+.end method
+
+.method static synthetic access$1902(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Z)Z
+    .locals 0
+
+    .line 92
+    iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsMirroringWindowClosed:Z
 
     return p1
 .end method
@@ -1021,25 +1043,7 @@
     return-void
 .end method
 
-.method static synthetic access$2000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Z
-    .locals 0
-
-    .line 92
-    iget-boolean p0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsMirroringWindowClosed:Z
-
-    return p0
-.end method
-
-.method static synthetic access$2002(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Z)Z
-    .locals 0
-
-    .line 92
-    iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsMirroringWindowClosed:Z
-
-    return p1
-.end method
-
-.method static synthetic access$2100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;Z)V
+.method static synthetic access$2000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;Z)V
     .locals 0
 
     .line 92
@@ -1048,7 +1052,7 @@
     return-void
 .end method
 
-.method static synthetic access$2200(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$2100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -1057,7 +1061,7 @@
     return p0
 .end method
 
-.method static synthetic access$2202(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$2102(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
@@ -1066,7 +1070,7 @@
     return p1
 .end method
 
-.method static synthetic access$2300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$2200(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -1075,7 +1079,7 @@
     return p0
 .end method
 
-.method static synthetic access$2302(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$2202(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
@@ -1084,7 +1088,7 @@
     return p1
 .end method
 
-.method static synthetic access$2400(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$2300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -1093,7 +1097,7 @@
     return p0
 .end method
 
-.method static synthetic access$2402(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$2302(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
@@ -1102,7 +1106,7 @@
     return p1
 .end method
 
-.method static synthetic access$2500(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+.method static synthetic access$2400(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
     .locals 0
 
     .line 92
@@ -1111,11 +1115,29 @@
     return p0
 .end method
 
-.method static synthetic access$2502(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+.method static synthetic access$2402(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
     .locals 0
 
     .line 92
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBitrate:I
+
+    return p1
+.end method
+
+.method static synthetic access$2500(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)I
+    .locals 0
+
+    .line 92
+    iget p0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mLimit:I
+
+    return p0
+.end method
+
+.method static synthetic access$2502(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+    .locals 0
+
+    .line 92
+    iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mLimit:I
 
     return p1
 .end method
@@ -1165,6 +1187,15 @@
     return-void
 .end method
 
+.method static synthetic access$300(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
+    .locals 0
+
+    .line 92
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->finishAll()V
+
+    return-void
+.end method
+
 .method static synthetic access$3000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/io/File;
     .locals 0
 
@@ -1181,15 +1212,6 @@
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteInitInfoFile:Ljava/io/File;
 
     return-object p1
-.end method
-
-.method static synthetic access$302(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Z)Z
-    .locals 0
-
-    .line 92
-    iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsCalling:Z
-
-    return p1
 .end method
 
 .method static synthetic access$3100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/io/File;
@@ -1318,15 +1340,6 @@
     return p0
 .end method
 
-.method static synthetic access$400(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
-    .locals 0
-
-    .line 92
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->finishAll()V
-
-    return-void
-.end method
-
 .method static synthetic access$4000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
     .locals 0
 
@@ -1343,6 +1356,15 @@
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     return-object p1
+.end method
+
+.method static synthetic access$402(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
+    .locals 0
+
+    .line 92
+    iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
+
+    return p1
 .end method
 
 .method static synthetic access$4100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/util/concurrent/CountDownLatch;
@@ -1480,6 +1502,15 @@
     return-object p1
 .end method
 
+.method static synthetic access$500(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)V
+    .locals 0
+
+    .line 92
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->doScreenRotate(I)V
+
+    return-void
+.end method
+
 .method static synthetic access$5000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
 
@@ -1487,15 +1518,6 @@
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->startDrag(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     return-void
-.end method
-
-.method static synthetic access$502(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)I
-    .locals 0
-
-    .line 92
-    iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
-
-    return p1
 .end method
 
 .method static synthetic access$5100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/data/MousePoint;)V
@@ -1579,16 +1601,7 @@
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;I)V
-    .locals 0
-
-    .line 92
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->doScreenRotate(I)V
-
-    return-void
-.end method
-
-.method static synthetic access$700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/lang/Object;
+.method static synthetic access$600(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Ljava/lang/Object;
     .locals 0
 
     .line 92
@@ -1597,7 +1610,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$800(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+.method static synthetic access$700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
     .locals 0
 
     .line 92
@@ -1606,7 +1619,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$802(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+.method static synthetic access$702(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
     .locals 0
 
     .line 92
@@ -1615,7 +1628,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$900(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Z)V
+.method static synthetic access$800(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Z)V
     .locals 0
 
     .line 92
@@ -1624,161 +1637,168 @@
     return-void
 .end method
 
+.method static synthetic access$900(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+    .locals 0
+
+    .line 92
+    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+
+    return-object p0
+.end method
+
+.method static synthetic access$902(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+    .locals 0
+
+    .line 92
+    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
+
+    return-object p1
+.end method
+
 .method private addIntentFilter()V
-    .locals 3
+    .locals 5
 
     const-string v0, "[Mirroring] addIntentFilter"
 
-    .line 419
+    .line 430
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 421
+    .line 432
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.SHOW_BLACKSCREEN"
 
-    .line 422
+    .line 433
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.REMOVE_BLACKSCREEN"
 
-    .line 423
+    .line 434
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.REVERSE_BLACKSCREEN"
 
-    .line 424
+    .line 435
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.DISCONNECTION"
 
-    .line 426
+    .line 437
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.ORIENTATION"
 
-    .line 427
+    .line 438
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.CHANGE_MIRRORING_STATE"
 
-    .line 429
+    .line 440
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.EVENT_CONNECTION_REQUEST_RECEVIED"
 
-    .line 430
+    .line 441
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.CHANGE_RESOLUTION_FROM_PC"
 
-    .line 431
+    .line 442
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.REQUEST_CHANGEFPS"
 
-    .line 433
+    .line 444
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.SCREEN_ON"
 
-    .line 435
+    .line 446
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "MAKE_FAVORITE_LIST_COMPLETE"
 
-    .line 437
+    .line 448
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.REQUEST_TRANSFER_FAVORITE"
 
-    .line 438
+    .line 449
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "APP_REMOVE"
 
-    .line 439
+    .line 450
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "APP_ADD"
 
-    .line 440
+    .line 451
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "APP_CHANGED"
 
-    .line 441
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.IDLE"
-
-    .line 443
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.OFFHOOK"
-
-    .line 444
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.RINGING"
-
-    .line 445
+    .line 452
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "android.intent.action.HDMI_PLUGGED"
 
-    .line 447
+    .line 454
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "android.intent.action.SCREEN_OFF"
 
-    .line 449
+    .line 456
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "android.intent.action.SCREEN_ON"
 
-    .line 450
+    .line 457
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "android.intent.action.USER_PRESENT"
 
-    .line 451
+    .line 458
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_MIRRORING_USERCONSENT_FINISHED"
 
-    .line 452
+    .line 459
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.Mirroring.EVENT_AUDIO_REDIRECTION_REQUEST_RECEVIED"
 
-    .line 453
+    .line 460
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_TURN_OFF_SMARTVIEW"
 
-    .line 454
+    .line 461
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 460
+    .line 467
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {v1, v2, v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const-string v3, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
 
-    .line 462
+    const/4 v4, 0x0
+
+    invoke-virtual {v1, v2, v0, v3, v4}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
+    .line 469
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isMyFilesSupportSamsungFlow()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "smartview_dnd_enabled"
+    const-string/jumbo v0, "smartview_dnd_enabled"
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->checkSettingsString(Ljava/lang/String;)Z
 
@@ -1786,7 +1806,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 463
+    .line 470
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/Define;->FLOW_DRAGGING:[Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -1795,14 +1815,14 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->FLOW_DRAGGING:Ljava/lang/String;
 
-    .line 464
+    .line 471
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/Define;->EVENT_DRAG_DROP_MYFILES:[Ljava/lang/String;
 
     aget-object v0, v0, v1
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->EVENT_DRAG_DROP_MYFILES:Ljava/lang/String;
 
-    .line 465
+    .line 472
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/Define;->ACTION_SOURCE_DRAG_START:[Ljava/lang/String;
 
     aget-object v0, v0, v1
@@ -1811,7 +1831,7 @@
 
     goto :goto_0
 
-    .line 467
+    .line 474
     :cond_0
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/Define;->FLOW_DRAGGING:[Ljava/lang/String;
 
@@ -1821,42 +1841,42 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->FLOW_DRAGGING:Ljava/lang/String;
 
-    .line 468
+    .line 475
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/Define;->EVENT_DRAG_DROP_MYFILES:[Ljava/lang/String;
 
     aget-object v0, v0, v1
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->EVENT_DRAG_DROP_MYFILES:Ljava/lang/String;
 
-    .line 469
+    .line 476
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/Define;->ACTION_SOURCE_DRAG_START:[Ljava/lang/String;
 
     aget-object v0, v0, v1
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->ACTION_SOURCE_DRAG_START:Ljava/lang/String;
 
-    .line 472
+    .line 479
     :goto_0
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 473
+    .line 480
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->EVENT_DRAG_DROP_MYFILES:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 474
+    .line 481
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->ACTION_SOURCE_DRAG_START:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v1, "com.sec.android.sidesync.myfiles.request_file"
 
-    .line 475
+    .line 482
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 477
+    .line 484
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -1870,8 +1890,16 @@
 
 .method private changeFPS(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fps"
+        }
+    .end annotation
 
-    .line 1145
+    .line 1115
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1880,7 +1908,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1888,26 +1920,24 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1147
+    .line 1117
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFPS:I
 
-    .line 1148
+    .line 1118
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1149
+    .line 1119
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     if-eqz v1, :cond_0
 
-    .line 1150
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
+    .line 1120
     invoke-virtual {v1, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->setFPS(I)V
 
-    .line 1152
+    .line 1122
     :cond_0
     monitor-exit v0
 
@@ -1925,8 +1955,20 @@
 
 .method private changeMirroringState(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;Z)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "state",
+            "requestor",
+            "sendToPC"
+        }
+    .end annotation
 
-    .line 1007
+    .line 969
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1935,13 +1977,21 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ",   sendToPC : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1951,66 +2001,66 @@
 
     const-string v0, "Start"
 
-    .line 1009
+    .line 971
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_8
 
-    .line 1013
+    .line 975
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->offRotationSetting()V
 
     const-string v0, "Start"
 
-    .line 1014
+    .line 976
     invoke-direct {p0, v0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->preCheckForMirroringControl(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;)Z
 
     move-result p2
 
-    if-eqz p2, :cond_c
+    if-eqz p2, :cond_e
 
-    .line 1018
+    .line 980
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter p2
 
-    .line 1019
+    .line 981
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     if-eqz v0, :cond_0
 
-    .line 1020
+    .line 982
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->restartVideoEncoder(Z)V
 
-    .line 1022
+    .line 984
     :cond_0
     monitor-exit p2
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 1023
+    .line 985
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->AUDIO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1025
+    .line 987
     :try_start_1
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioLatch:Ljava/util/concurrent/CountDownLatch;
 
-    const-wide/16 v1, 0x5
+    const-wide/16 v2, 0x5
 
-    sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+    sget-object v4, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    invoke-virtual {p2, v1, v2, v3}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
+    invoke-virtual {p2, v2, v3, v4}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 1031
+    .line 993
     :try_start_2
     iget-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsAudioRedirectEnabled:Z
 
@@ -2020,38 +2070,36 @@
 
     if-eqz p2, :cond_1
 
-    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
-
     invoke-virtual {p2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;->isRecording()Z
 
     move-result p2
 
     if-nez p2, :cond_1
 
-    .line 1032
+    .line 994
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
 
     invoke-virtual {p2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;->enableShareAudio()V
 
-    .line 1034
+    .line 996
     :cond_1
     monitor-exit v0
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 1036
+    .line 998
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mWakeLockManager:Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;
 
     if-eqz p2, :cond_2
 
-    .line 1037
+    .line 999
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
     invoke-interface {p2, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;->turnScreenOn(Landroid/content/Context;)V
 
-    .line 1039
+    .line 1001
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mWakeLockManager:Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -2060,20 +2108,20 @@
 
     invoke-interface {p2, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;->holdScreen(Landroid/content/Context;)V
 
-    .line 1042
+    .line 1004
     :cond_2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move-result-wide v0
+    move-result-wide v2
 
-    iput-wide v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mSmartViewStartedTickTime:J
+    iput-wide v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mSmartViewStartedTickTime:J
 
     const/4 p2, 0x1
 
-    .line 1044
+    .line 1006
     invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setSViewCoverDisable(Z)V
 
-    .line 1046
+    .line 1008
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v0
@@ -2084,19 +2132,19 @@
 
     if-eqz v0, :cond_3
 
-    .line 1047
+    .line 1009
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
     invoke-static {v0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->setPSSKeyboardState(Landroid/content/Context;I)V
 
-    .line 1049
+    .line 1011
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->openInputDevice()Z
 
     goto :goto_0
 
-    .line 1051
+    .line 1013
     :cond_3
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->getKeyboardAttachedStatusInTab()Z
 
@@ -2104,56 +2152,110 @@
 
     if-eqz v0, :cond_4
 
-    .line 1052
+    .line 1014
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
     invoke-static {v0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->setPSSKeyboardState(Landroid/content/Context;I)V
 
-    .line 1054
+    .line 1016
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->openInputDevice()Z
 
-    .line 1058
+    .line 1020
     :cond_4
     :goto_0
-    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
-    invoke-interface {p2}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
+    invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
+
+    .line 1022
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->getRotationAngle(Landroid/content/Context;)I
+
+    move-result v0
+
+    rem-int/lit16 v0, v0, 0xb4
+
+    if-nez v0, :cond_5
+
+    goto :goto_1
+
+    :cond_5
+    move v1, p2
+
+    :goto_1
+    iput v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
+
+    .line 1023
+    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
+
+    monitor-enter p2
+
+    .line 1024
+    :try_start_3
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+
+    if-eqz v0, :cond_6
+
+    .line 1025
+    iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->setUserOrientation(I)V
+
+    .line 1026
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+
+    iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->setDeviceOrientation(I)V
+
+    .line 1028
+    :cond_6
+    monitor-exit p2
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     const-string p2, "[Mirroring] onMirroringEventReceived : event = 1, argument = S_MIRRORING_STARTED"
 
-    .line 1060
+    .line 1030
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1062
+    .line 1032
     sget-object p2, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_PLAYING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setMirroringState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;)V
 
-    if-eqz p3, :cond_5
+    if-eqz p3, :cond_7
 
-    .line 1064
+    .line 1034
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
-    if-eqz p2, :cond_5
+    if-eqz p2, :cond_7
 
-    .line 1065
+    .line 1035
     invoke-virtual {p2, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendMirroringState(Ljava/lang/String;)V
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
-    .line 1067
-    :cond_5
+    .line 1037
+    :cond_7
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p2, "sendToPC : "
+    const-string/jumbo p2, "sendToPC : "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2161,7 +2263,7 @@
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1068
+    .line 1038
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2170,9 +2272,13 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2180,137 +2286,144 @@
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
     :catchall_0
     move-exception p1
 
-    goto :goto_1
-
-    :catch_0
-    move-exception p1
-
-    .line 1027
-    :try_start_3
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-
     .line 1028
-    monitor-exit v0
-
-    return-void
-
-    .line 1034
-    :goto_1
-    monitor-exit v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :try_start_4
+    monitor-exit p2
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     throw p1
 
     :catchall_1
     move-exception p1
 
-    .line 1022
-    :try_start_4
-    monitor-exit p2
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+    goto :goto_2
+
+    :catch_0
+    move-exception p1
+
+    .line 989
+    :try_start_5
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+
+    .line 990
+    monitor-exit v0
+
+    return-void
+
+    .line 996
+    :goto_2
+    monitor-exit v0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     throw p1
 
-    :cond_6
+    :catchall_2
+    move-exception p1
+
+    .line 984
+    :try_start_6
+    monitor-exit p2
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+
+    throw p1
+
+    :cond_8
     const-string v0, "Stop"
 
-    .line 1081
+    .line 1051
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_e
 
-    .line 1082
+    .line 1052
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->restoreRotationSetting()V
 
     const-string v0, "Stop"
 
-    .line 1084
+    .line 1054
     invoke-direct {p0, v0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->preCheckForMirroringControl(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_e
 
-    .line 1085
+    .line 1055
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1086
-    :try_start_5
+    .line 1056
+    :try_start_7
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    if-eqz v2, :cond_7
-
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+    if-eqz v2, :cond_9
 
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->isEncoding()Z
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_9
 
-    .line 1087
+    .line 1057
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->stopEncode()V
 
-    .line 1089
-    :cond_7
+    .line 1059
+    :cond_9
     monitor-exit v0
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_3
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_4
 
-    .line 1090
+    .line 1060
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->AUDIO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 1091
-    :try_start_6
+    .line 1061
+    :try_start_8
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
 
-    if-eqz v0, :cond_8
-
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
+    if-eqz v0, :cond_a
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;->isRecording()Z
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_a
 
-    .line 1092
+    .line 1062
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;->stopAudioRecord()V
 
-    .line 1093
+    .line 1063
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;->pauseMedia()V
 
-    .line 1095
-    :cond_8
+    .line 1065
+    :cond_a
     monitor-exit v2
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_3
 
-    .line 1097
+    .line 1067
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;->REQUEST_BY_PC:Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;
 
-    if-ne p2, v0, :cond_9
+    if-ne p2, v0, :cond_b
 
-    .line 1098
+    .line 1068
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mWakeLockManager:Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -2319,46 +2432,46 @@
 
     invoke-interface {v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;->releaseScreen(Landroid/content/Context;)V
 
-    .line 1101
-    :cond_9
+    .line 1071
+    :cond_b
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setSViewCoverDisable(Z)V
 
-    .line 1103
+    .line 1073
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
     invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->setPSSKeyboardState(Landroid/content/Context;I)V
 
-    .line 1105
+    .line 1075
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->closeInputDevice()Z
 
-    .line 1107
+    .line 1077
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;->REQUEST_BY_CALL:Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;
 
-    if-eq p2, v0, :cond_a
+    if-eq p2, v0, :cond_c
 
-    .line 1108
+    .line 1078
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
     invoke-interface {p2, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->setEnable(Z)V
 
-    .line 1110
-    :cond_a
+    .line 1080
+    :cond_c
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
     invoke-interface {p2}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
 
-    .line 1112
+    .line 1082
     iget-wide v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mSmartViewStartedTickTime:J
 
     const-wide/16 v2, 0x0
 
     cmp-long p2, v0, v2
 
-    if-eqz p2, :cond_b
+    if-eqz p2, :cond_d
 
-    .line 1113
+    .line 1083
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -2371,61 +2484,61 @@
 
     div-long/2addr v0, v4
 
-    .line 1114
+    .line 1084
     iput-wide v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mSmartViewStartedTickTime:J
 
     const-string p2, "7112"
 
-    .line 1115
+    .line 1085
     invoke-static {p2, v0, v1}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;J)V
 
-    :cond_b
+    :cond_d
     const-string p2, "[Mirroring] onMirroringEventReceived : event = 1, argument = S_MIRRORING_STOPPED"
 
-    .line 1118
+    .line 1088
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1120
+    .line 1090
     sget-object p2, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_STOPPED:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setMirroringState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;)V
 
-    if-eqz p3, :cond_c
+    if-eqz p3, :cond_e
 
-    .line 1122
+    .line 1092
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
-    if-eqz p2, :cond_c
+    if-eqz p2, :cond_e
 
-    .line 1123
+    .line 1093
     invoke-virtual {p2, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendMirroringState(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :catchall_2
-    move-exception p1
-
-    .line 1095
-    :try_start_7
-    monitor-exit v2
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
-
-    throw p1
+    goto :goto_3
 
     :catchall_3
     move-exception p1
 
-    .line 1089
-    :try_start_8
-    monitor-exit v0
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_3
+    .line 1065
+    :try_start_9
+    monitor-exit v2
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_3
 
     throw p1
 
-    :cond_c
-    :goto_2
+    :catchall_4
+    move-exception p1
+
+    .line 1059
+    :try_start_a
+    monitor-exit v0
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_4
+
+    throw p1
+
+    :cond_e
+    :goto_3
     return-void
 .end method
 
@@ -2434,32 +2547,32 @@
 
     const-string v0, "[Mirroring] closeAVSocket"
 
-    .line 1490
+    .line 1461
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1492
+    .line 1463
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 1493
+    .line 1464
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->stop()V
 
-    .line 1494
+    .line 1465
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 1497
+    .line 1468
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-eqz v0, :cond_1
 
-    .line 1498
+    .line 1469
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->stop()V
 
-    .line 1499
+    .line 1470
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     :cond_1
@@ -2471,32 +2584,32 @@
 
     const-string v0, "[Mirroring] closeChkConAndTouchCtrolSocket"
 
-    .line 1504
+    .line 1475
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1506
+    .line 1477
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 1507
+    .line 1478
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->stop()V
 
-    .line 1508
+    .line 1479
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 1511
+    .line 1482
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-eqz v0, :cond_1
 
-    .line 1512
+    .line 1483
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->stop()V
 
-    .line 1513
+    .line 1484
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     :cond_1
@@ -2508,20 +2621,20 @@
 
     const-string v0, "[Mirroring] closeMainSocket"
 
-    .line 1518
+    .line 1489
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1520
+    .line 1491
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-eqz v0, :cond_0
 
-    .line 1521
+    .line 1492
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->stop()V
 
     const/4 v0, 0x0
 
-    .line 1522
+    .line 1493
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     :cond_0
@@ -2530,8 +2643,16 @@
 
 .method private doScreenRotate(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rotation"
+        }
+    .end annotation
 
-    .line 1131
+    .line 1101
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -2540,7 +2661,7 @@
 
     move-result-object v0
 
-    const-string v1, "user_rotation"
+    const-string/jumbo v1, "user_rotation"
 
     const/4 v2, 0x0
 
@@ -2548,7 +2669,7 @@
 
     move-result v0
 
-    .line 1135
+    .line 1105
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v3
@@ -2559,7 +2680,7 @@
 
     invoke-static {v3, v1, p1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1138
+    .line 1108
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
@@ -2572,7 +2693,7 @@
 
     move-result p1
 
-    .line 1141
+    .line 1111
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2581,15 +2702,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v0, " -> "
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " -> "
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2606,91 +2735,87 @@
     :try_start_0
     const-string v0, "[Mirroring] finishAll"
 
-    .line 1164
+    .line 1134
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
-    .line 1166
+    .line 1136
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsMirroringWindowClosed:Z
 
-    .line 1168
+    .line 1138
     sget-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_STOPPED:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setMirroringState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;)V
 
-    .line 1169
+    .line 1139
     sget-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;->MIRRORING_STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setConnectionState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;)V
 
-    .line 1171
+    .line 1141
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->stopMirroring()V
 
-    .line 1172
+    .line 1142
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->restoreRotationSetting()V
 
-    .line 1174
+    .line 1144
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->setEnable(Z)V
 
-    .line 1175
+    .line 1145
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
     invoke-interface {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->setVisible(Z)V
 
-    .line 1176
+    .line 1146
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
     invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
 
-    .line 1180
+    .line 1150
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->removeIntentFilter()V
 
-    .line 1182
+    .line 1152
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1183
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
-
+    .line 1153
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->disableServer()V
 
     const/4 v0, 0x0
 
-    .line 1184
+    .line 1154
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
-    .line 1188
+    .line 1158
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->closeAVSocket()V
 
-    .line 1189
+    .line 1159
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->closeChkConAndTouchCtrolSocket()V
 
-    .line 1190
+    .line 1160
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->closeMainSocket()V
 
     const-string v0, "[Mirroring] onMirroringEventReceived : event = 0, argument = S_MIRRORING_STOPPED"
 
-    .line 1192
+    .line 1162
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1194
+    .line 1164
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mNotificationManager:Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;
 
     if-eqz v0, :cond_1
 
-    .line 1195
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mNotificationManager:Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;
-
+    .line 1165
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/NotificationManager;->terminate()V
 
-    .line 1202
+    .line 1172
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mWakeLockManager:Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;
 
@@ -2700,20 +2825,20 @@
 
     invoke-interface {v0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/IScreenWakeHolder;->releaseScreen(Landroid/content/Context;)V
 
-    .line 1204
+    .line 1174
     invoke-direct {p0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setSViewCoverDisable(Z)V
 
-    .line 1206
+    .line 1176
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->setPSSKeyboardState(Landroid/content/Context;I)V
 
-    .line 1208
+    .line 1178
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->closeInputDevice()Z
 
-    .line 1210
+    .line 1180
     iget-wide v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mSmartViewStartedTickTime:J
 
     const-wide/16 v2, 0x0
@@ -2722,7 +2847,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1211
+    .line 1181
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -2735,17 +2860,17 @@
 
     div-long/2addr v0, v4
 
-    .line 1212
+    .line 1182
     iput-wide v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mSmartViewStartedTickTime:J
 
     const-string v2, "7112"
 
-    .line 1213
+    .line 1183
     invoke-static {v2, v0, v1}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;J)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1215
+    .line 1185
     :cond_2
     monitor-exit p0
 
@@ -2762,7 +2887,7 @@
 .method private getConnectionState()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
     .locals 2
 
-    .line 383
+    .line 394
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2771,9 +2896,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2781,7 +2910,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 385
+    .line 396
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mConnectionState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
     return-object v0
@@ -2794,20 +2923,20 @@
 
     monitor-enter v0
 
-    .line 183
+    .line 184
     :try_start_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sInstance:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     if-nez v1, :cond_0
 
-    .line 184
+    .line 185
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;-><init>()V
 
     sput-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sInstance:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
-    .line 185
+    .line 186
     :cond_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sInstance:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
     :try_end_0
@@ -2828,7 +2957,7 @@
 .method private getMirroringState()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
     .locals 2
 
-    .line 360
+    .line 371
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2837,9 +2966,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2847,7 +2980,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 362
+    .line 373
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     return-object v0
@@ -2855,21 +2988,31 @@
 
 .method private handleAutoTouch(Lcom/samsung/android/galaxycontinuity/data/MousePoint;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "targetPoint"
+        }
+    .end annotation
 
     const-string v0, "Auto Touch on mAutoDragAttachView"
 
-    .line 1766
+    .line 1740
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1769
+    .line 1743
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "targetPoint x = "
+    const-string/jumbo v1, "targetPoint x = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/MousePoint;->getX()D
 
@@ -2877,9 +3020,13 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", targetPoint y = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/MousePoint;->getY()D
 
@@ -2887,13 +3034,15 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1770
+    .line 1744
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$11;
@@ -2902,7 +3051,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 1786
+    .line 1760
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -2912,7 +3061,7 @@
     :catch_0
     move-exception p1
 
-    .line 1788
+    .line 1762
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
@@ -2922,7 +3071,7 @@
 .method private offRotationSetting()V
     .locals 5
 
-    .line 1827
+    .line 1801
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ROTATION_DEGREE:I
 
     const/4 v1, -0x1
@@ -2933,7 +3082,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1828
+    .line 1802
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -2954,7 +3103,7 @@
     :goto_0
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ROTATION_DEGREE:I
 
-    .line 1831
+    .line 1805
     :cond_1
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
@@ -2962,12 +3111,12 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1832
+    .line 1806
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ROTATION_DEGREE:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->doScreenRotate(I)V
 
-    .line 1835
+    .line 1809
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -2976,14 +3125,14 @@
 
     move-result-object v0
 
-    .line 1834
+    .line 1808
     invoke-static {v0, v4, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
-    .line 1836
+    .line 1810
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -2994,7 +3143,7 @@
 
     invoke-static {v0, v4, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1838
+    .line 1812
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3003,13 +3152,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " -> "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -3025,6 +3180,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -3033,7 +3190,7 @@
 
     goto :goto_1
 
-    .line 1841
+    .line 1815
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3043,9 +3200,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3053,7 +3214,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1844
+    .line 1818
     :goto_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -3063,17 +3224,17 @@
 
     move-result-object v0
 
-    .line 1845
+    .line 1819
     invoke-static {v4}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAutoRotateObserver:Landroid/database/ContentObserver;
 
-    .line 1844
+    .line 1818
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 1847
+    .line 1821
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -3082,9 +3243,9 @@
 
     move-result-object v0
 
-    const-string v1, "user_rotation"
+    const-string/jumbo v1, "user_rotation"
 
-    .line 1848
+    .line 1822
     invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
@@ -3098,13 +3259,25 @@
 
 .method private onTouchEventDragging(IFF)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "TouchEvent",
+            "currentX",
+            "currentY"
+        }
+    .end annotation
 
-    .line 1794
+    .line 1768
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->INPUT_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1795
+    .line 1769
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
@@ -3122,7 +3295,7 @@
 
     mul-float v3, p2, v2
 
-    .line 1802
+    .line 1776
     invoke-static {v3}, Ljava/lang/Math;->round(F)I
 
     move-result v3
@@ -3133,7 +3306,7 @@
 
     mul-float/2addr v2, p3
 
-    .line 1803
+    .line 1777
     invoke-static {v2}, Ljava/lang/Math;->round(F)I
 
     move-result v2
@@ -3142,7 +3315,7 @@
 
     aput v4, v5, v4
 
-    .line 1805
+    .line 1779
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3151,21 +3324,33 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    const-string p2, " , "
+    move-result-object p2
 
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " , "
 
-    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p2, "] - "
+    move-result-object p2
 
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string p3, "] - "
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -3181,7 +3366,7 @@
 
     goto :goto_0
 
-    .line 1808
+    .line 1782
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
@@ -3193,7 +3378,7 @@
 
     goto :goto_0
 
-    .line 1814
+    .line 1788
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
@@ -3205,7 +3390,7 @@
 
     goto :goto_0
 
-    .line 1811
+    .line 1785
     :cond_2
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
@@ -3215,7 +3400,7 @@
 
     invoke-virtual/range {v2 .. v7}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->handleTouchEvent(II[I[I[I)V
 
-    .line 1821
+    .line 1795
     :cond_3
     :goto_0
     monitor-exit v0
@@ -3235,26 +3420,26 @@
 .method private openAudioServer()V
     .locals 4
 
-    .line 2163
+    .line 2137
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
     invoke-direct {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
 
-    .line 2165
+    .line 2139
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-nez v1, :cond_0
 
-    .line 2166
+    .line 2140
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     invoke-direct {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 2167
+    .line 2141
     :cond_0
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
@@ -3262,7 +3447,7 @@
 
     if-nez v1, :cond_1
 
-    .line 2168
+    .line 2142
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
     const v3, 0xea61
@@ -3271,7 +3456,7 @@
 
     goto :goto_0
 
-    .line 2170
+    .line 2144
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
@@ -3279,7 +3464,7 @@
 
     invoke-virtual {v0, v1, v3, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->open(Ljava/lang/String;II)Z
 
-    .line 2172
+    .line 2146
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -3291,7 +3476,7 @@
 
     const-string v1, "audioPort"
 
-    .line 2173
+    .line 2147
     invoke-virtual {p0, v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sendConnectionRequest(Ljava/lang/String;I)V
 
     return-void
@@ -3300,26 +3485,26 @@
 .method private openFavoriteServer()V
     .locals 4
 
-    .line 2192
+    .line 2166
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
     invoke-direct {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
 
-    .line 2194
+    .line 2168
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-nez v1, :cond_0
 
-    .line 2195
+    .line 2169
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     invoke-direct {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 2197
+    .line 2171
     :cond_0
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
@@ -3327,7 +3512,7 @@
 
     if-nez v1, :cond_1
 
-    .line 2198
+    .line 2172
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
     const v3, 0xea66
@@ -3336,7 +3521,7 @@
 
     goto :goto_0
 
-    .line 2200
+    .line 2174
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
@@ -3344,7 +3529,7 @@
 
     invoke-virtual {v0, v1, v3, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->open(Ljava/lang/String;II)Z
 
-    .line 2202
+    .line 2176
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoriteSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -3354,9 +3539,9 @@
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mFavoritePortNum:I
 
-    const-string v1, "transferPort"
+    const-string/jumbo v1, "transferPort"
 
-    .line 2203
+    .line 2177
     invoke-virtual {p0, v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sendConnectionRequest(Ljava/lang/String;I)V
 
     return-void
@@ -3365,26 +3550,26 @@
 .method private openInputServer()V
     .locals 4
 
-    .line 2177
+    .line 2151
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
     invoke-direct {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
 
-    .line 2179
+    .line 2153
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-nez v1, :cond_0
 
-    .line 2180
+    .line 2154
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     invoke-direct {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 2182
+    .line 2156
     :cond_0
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
@@ -3392,7 +3577,7 @@
 
     if-nez v1, :cond_1
 
-    .line 2183
+    .line 2157
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
     const v3, 0xea64
@@ -3401,7 +3586,7 @@
 
     goto :goto_0
 
-    .line 2185
+    .line 2159
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
@@ -3409,7 +3594,7 @@
 
     invoke-virtual {v0, v1, v3, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->open(Ljava/lang/String;II)Z
 
-    .line 2187
+    .line 2161
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -3419,9 +3604,9 @@
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputPortNum:I
 
-    const-string v1, "uibcPort"
+    const-string/jumbo v1, "uibcPort"
 
-    .line 2188
+    .line 2162
     invoke-virtual {p0, v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sendConnectionRequest(Ljava/lang/String;I)V
 
     return-void
@@ -3430,26 +3615,26 @@
 .method private openVideoServer()V
     .locals 4
 
-    .line 2148
+    .line 2122
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
     invoke-direct {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
 
-    .line 2150
+    .line 2124
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-nez v1, :cond_0
 
-    .line 2151
+    .line 2125
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     invoke-direct {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 2152
+    .line 2126
     :cond_0
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
@@ -3457,7 +3642,7 @@
 
     if-nez v1, :cond_1
 
-    .line 2153
+    .line 2127
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
     const v3, 0xea62
@@ -3466,7 +3651,7 @@
 
     goto :goto_0
 
-    .line 2155
+    .line 2129
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
@@ -3474,7 +3659,7 @@
 
     invoke-virtual {v0, v1, v3, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->open(Ljava/lang/String;II)Z
 
-    .line 2158
+    .line 2132
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -3484,9 +3669,9 @@
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoPortNum:I
 
-    const-string v1, "videoPort"
+    const-string/jumbo v1, "videoPort"
 
-    .line 2159
+    .line 2133
     invoke-virtual {p0, v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sendConnectionRequest(Ljava/lang/String;I)V
 
     return-void
@@ -3494,8 +3679,18 @@
 
 .method private preCheckForMirroringControl(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "command",
+            "requestor"
+        }
+    .end annotation
 
-    .line 967
+    .line 929
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3504,13 +3699,21 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ", requestor = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3520,7 +3723,7 @@
 
     const-string v0, "Start"
 
-    .line 971
+    .line 933
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -3529,35 +3732,22 @@
 
     const/4 v2, 0x1
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_3
 
-    .line 972
+    .line 934
     iget-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsMirroringWindowClosed:Z
 
     if-eqz p1, :cond_0
 
     const-string p1, "[Mirroring] preCheckForMirroringControl : CANNOT START because MirroringWindow on PC is not activated"
 
-    .line 973
+    .line 935
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto :goto_2
 
-    .line 976
+    .line 940
     :cond_0
-    iget-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsCalling:Z
-
-    if-eqz p1, :cond_1
-
-    const-string p1, "[Mirroring] preCheckForMirroringControl : CANNOT START by CallState"
-
-    .line 977
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    goto :goto_2
-
-    .line 978
-    :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     move-result-object p1
@@ -3566,56 +3756,56 @@
 
     move-result p1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_1
 
     const-string p1, "[Mirroring] preCheckForMirroringControl : CANNOT START by FileShare"
 
-    .line 979
+    .line 941
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto :goto_2
 
-    .line 982
-    :cond_2
+    .line 944
+    :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     sget-object p2, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_STOPPED:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
-    if-eq p1, p2, :cond_3
+    if-eq p1, p2, :cond_2
 
     const-string p1, "[Mirroring] preCheckForMirroringControl : CANNOTSTART becuase MirroringState is not STOPPED"
 
-    .line 983
+    .line 945
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto :goto_2
 
-    :cond_3
+    :cond_2
     const-string p1, "[Mirroring] preCheckForMirroringControl : CAN START"
 
-    .line 985
+    .line 947
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto :goto_0
 
-    :cond_4
+    :cond_3
     const-string v0, "Stop"
 
-    .line 988
+    .line 950
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_7
 
-    .line 989
+    .line 951
     sget-object p1, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;->REQUEST_BY_PC:Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;
 
-    if-ne p2, p1, :cond_5
+    if-ne p2, p1, :cond_4
 
     const-string p1, "[Mirroring] preCheckForMirroringControl : CAN STOP (MirroringWindow is closed)"
 
-    .line 991
+    .line 953
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :goto_0
@@ -3623,40 +3813,40 @@
 
     goto :goto_2
 
-    .line 993
-    :cond_5
+    .line 955
+    :cond_4
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     sget-object p2, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_PLAYING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
-    if-eq p1, p2, :cond_7
+    if-eq p1, p2, :cond_6
 
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mConnectionState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
     sget-object p2, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;->MIRRORING_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
-    if-ne p1, p2, :cond_6
+    if-ne p1, p2, :cond_5
 
     goto :goto_1
 
-    :cond_6
+    :cond_5
     const-string p1, "[Mirroring] preCheckForMirroringControl : CANNOT STOP"
 
-    .line 998
+    .line 960
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto :goto_2
 
-    :cond_7
+    :cond_6
     :goto_1
     const-string p1, "[Mirroring] preCheckForMirroringControl : CAN STOP"
 
-    .line 995
+    .line 957
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto :goto_0
 
-    :cond_8
+    :cond_7
     :goto_2
     return v1
 .end method
@@ -3666,16 +3856,16 @@
 
     const-string v0, "[Mirroring] removeIntentFilter"
 
-    .line 481
+    .line 488
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 484
+    .line 491
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_0
 
-    .line 485
+    .line 492
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -3684,7 +3874,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 486
+    .line 493
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -3700,7 +3890,7 @@
     :catch_0
     move-exception v0
 
-    .line 489
+    .line 496
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3709,13 +3899,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v0}, Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3728,13 +3922,21 @@
 
 .method private restartVideoEncoder(Z)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "checkEncoding"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] restart video encoder"
 
-    .line 1272
+    .line 1242
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1275
+    .line 1245
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoLatch:Ljava/util/concurrent/CountDownLatch;
 
@@ -3746,12 +3948,12 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1280
+    .line 1250
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRestartHandler:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
-    .line 1281
+    .line 1251
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "RestartHandlerThread"
@@ -3760,10 +3962,10 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRestartHandlerThread:Landroid/os/HandlerThread;
 
-    .line 1282
+    .line 1252
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 1284
+    .line 1254
     new-instance v0, Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRestartHandlerThread:Landroid/os/HandlerThread;
@@ -3776,7 +3978,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRestartHandler:Landroid/os/Handler;
 
-    .line 1287
+    .line 1257
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRestartHandler:Landroid/os/Handler;
 
@@ -3791,7 +3993,7 @@
     :catch_0
     move-exception p1
 
-    .line 1277
+    .line 1247
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return-void
@@ -3799,8 +4001,16 @@
 
 .method private sendJSON(Lorg/json/JSONObject;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "json"
+        }
+    .end annotation
 
-    .line 2128
+    .line 2102
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$15;
@@ -3811,10 +4021,10 @@
 
     const-string p1, "Mirroring_sendJson_Thread"
 
-    .line 2143
+    .line 2117
     invoke-virtual {v0, p1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 2144
+    .line 2118
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -3823,14 +4033,14 @@
 .method private sendLastStateOfBlackscreen()V
     .locals 3
 
-    .line 494
+    .line 501
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
     invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->getIsBlackScreen()Z
 
     move-result v0
 
-    .line 495
+    .line 502
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3839,7 +4049,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3847,12 +4061,12 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 498
+    .line 505
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     if-eqz v1, :cond_0
 
-    .line 499
+    .line 506
     invoke-virtual {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendLastStateOfBlackscreen(Z)V
 
     :cond_0
@@ -3861,45 +4075,53 @@
 
 .method private sendRotationState(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] sendRotationState"
 
-    .line 1302
+    .line 1272
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1304
+    .line 1274
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 1305
+    .line 1275
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     :try_start_0
-    const-string v2, "rotationDegree"
+    const-string/jumbo v2, "rotationDegree"
 
-    .line 1308
+    .line 1278
     invoke-virtual {v1, v2, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string p1, "TYPE"
 
     const-string v2, "NOTI"
 
-    .line 1309
+    .line 1279
     invoke-virtual {v0, p1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string p1, "MSG"
 
     const-string v2, "ROTATIONDEGREE"
 
-    .line 1310
+    .line 1280
     invoke-virtual {v0, p1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string p1, "PARAM"
 
-    .line 1311
+    .line 1281
     invoke-virtual {v0, p1, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -3909,7 +4131,7 @@
     :catch_0
     move-exception p1
 
-    .line 1313
+    .line 1283
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3918,19 +4140,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {p1}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 1316
+    .line 1286
     :goto_0
     new-instance p1, Ljava/lang/Thread;
 
@@ -3942,10 +4168,10 @@
 
     const-string v0, "Mirroring_SendInfoData_Thread"
 
-    .line 1330
+    .line 1300
     invoke-virtual {p1, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 1331
+    .line 1301
     invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -3953,8 +4179,16 @@
 
 .method private setConnectionState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 389
+    .line 400
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3963,7 +4197,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3971,7 +4209,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 391
+    .line 402
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mConnectionState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
     return-void
@@ -3979,8 +4217,16 @@
 
 .method private setMirroringState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 366
+    .line 377
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3989,7 +4235,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3997,18 +4247,18 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 368
+    .line 379
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     if-ne p1, v0, :cond_0
 
     return-void
 
-    .line 371
+    .line 382
     :cond_0
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
-    .line 373
+    .line 384
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_UPDATE_ONGOING_NOTI"
@@ -4019,10 +4269,10 @@
 
     const-string v2, "ONGING_NOTI_TYPE"
 
-    .line 374
+    .line 385
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 375
+    .line 386
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v1
@@ -4035,7 +4285,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 376
+    .line 387
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v1
@@ -4048,7 +4298,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 377
+    .line 388
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -4057,7 +4307,7 @@
 
     invoke-virtual {v1, v0, v2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 379
+    .line 390
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_PLAYING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     if-ne p1, v0, :cond_1
@@ -4077,8 +4327,16 @@
 
 .method private setSViewCoverDisable(Z)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "turnOn"
+        }
+    .end annotation
 
-    .line 1531
+    .line 1502
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->CoverManagerKlass:Ljava/lang/Class;
 
     const/4 v1, 0x0
@@ -4095,7 +4353,7 @@
     :try_start_0
     const-string v0, "com.samsung.android.cover.CoverManager"
 
-    .line 1533
+    .line 1504
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
@@ -4104,7 +4362,7 @@
 
     new-array v3, v2, [Ljava/lang/Class;
 
-    .line 1534
+    .line 1505
     const-class v4, Landroid/content/Context;
 
     aput-object v4, v3, v1
@@ -4134,10 +4392,10 @@
     :catch_0
     move-exception v0
 
-    .line 1536
+    .line 1507
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 1541
+    .line 1512
     :cond_1
     :goto_0
     :try_start_1
@@ -4150,12 +4408,12 @@
     :cond_2
     new-array v0, v2, [Ljava/lang/Class;
 
-    .line 1543
+    .line 1514
     sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     aput-object v3, v0, v1
 
-    .line 1544
+    .line 1515
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->CoverManagerKlass:Ljava/lang/Class;
 
     const-string v4, "disableCoverManager"
@@ -4164,7 +4422,7 @@
 
     move-result-object v0
 
-    .line 1545
+    .line 1516
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mCoverManager:Ljava/lang/Object;
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -4208,7 +4466,7 @@
     :catch_5
     move-exception p1
 
-    .line 1547
+    .line 1518
     :goto_1
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -4218,6 +4476,17 @@
 
 .method private startDrag(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fileUriList",
+            "mimeTypeList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4230,23 +4499,23 @@
         }
     .end annotation
 
-    const-string v0, "start Drag"
+    const-string/jumbo v0, "start Drag"
 
-    .line 1709
+    .line 1680
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_3
 
-    .line 1712
+    .line 1683
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
     if-lez v1, :cond_3
 
-    .line 1713
+    .line 1684
     new-instance v1, Landroid/content/ClipDescription;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->FLOW_DRAGGING:Ljava/lang/String;
@@ -4261,8 +4530,8 @@
 
     invoke-direct {v1, v2, p2}, Landroid/content/ClipDescription;-><init>(Ljava/lang/CharSequence;[Ljava/lang/String;)V
 
-    .line 1715
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 1686
+    sget p2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x18
 
@@ -4270,7 +4539,7 @@
 
     if-lt p2, v2, :cond_1
 
-    .line 1716
+    .line 1687
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -4288,7 +4557,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    .line 1717
+    .line 1688
     new-instance v2, Landroid/content/ClipData$Item;
 
     invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -4299,7 +4568,7 @@
 
     if-nez v3, :cond_0
 
-    .line 1719
+    .line 1690
     new-instance p2, Landroid/content/ClipData;
 
     invoke-direct {p2, v1, v2}, Landroid/content/ClipData;-><init>(Landroid/content/ClipDescription;Landroid/content/ClipData$Item;)V
@@ -4308,13 +4577,13 @@
 
     goto :goto_0
 
-    .line 1721
+    .line 1692
     :cond_0
     invoke-virtual {v3, v2}, Landroid/content/ClipData;->addItem(Landroid/content/ClipData$Item;)V
 
     goto :goto_0
 
-    .line 1725
+    .line 1696
     :cond_1
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -4333,7 +4602,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    .line 1726
+    .line 1697
     new-instance v2, Landroid/content/ClipData$Item;
 
     invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -4352,7 +4621,7 @@
 
     if-nez v3, :cond_2
 
-    .line 1728
+    .line 1699
     new-instance p2, Landroid/content/ClipData;
 
     invoke-direct {p2, v1, v2}, Landroid/content/ClipData;-><init>(Landroid/content/ClipDescription;Landroid/content/ClipData$Item;)V
@@ -4361,13 +4630,13 @@
 
     goto :goto_1
 
-    .line 1730
+    .line 1701
     :cond_2
     invoke-virtual {v3, v2}, Landroid/content/ClipData;->addItem(Landroid/content/ClipData$Item;)V
 
     goto :goto_1
 
-    .line 1735
+    .line 1706
     :cond_3
     new-instance p1, Landroid/content/ClipData$Item;
 
@@ -4375,7 +4644,7 @@
 
     invoke-direct {p1, v1}, Landroid/content/ClipData$Item;-><init>(Landroid/net/Uri;)V
 
-    .line 1736
+    .line 1707
     new-instance v3, Landroid/content/ClipData;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->FLOW_DRAGGING:Ljava/lang/String;
@@ -4390,7 +4659,7 @@
 
     invoke-direct {v3, v1, p2, p1}, Landroid/content/ClipData;-><init>(Ljava/lang/CharSequence;[Ljava/lang/String;Landroid/content/ClipData$Item;)V
 
-    .line 1742
+    .line 1713
     :cond_4
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mDragView:Landroid/view/View;
 
@@ -4408,7 +4677,7 @@
 
     invoke-virtual {p1, v2, p2}, Landroid/view/View;->measure(II)V
 
-    .line 1743
+    .line 1714
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mDragView:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
@@ -4423,14 +4692,19 @@
 
     invoke-virtual {p1, v0, v0, p2, v1}, Landroid/view/View;->layout(IIII)V
 
-    .line 1744
+    .line 1715
     new-instance p1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$10;
 
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mDragView:Landroid/view/View;
 
     invoke-direct {p1, p0, p2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$10;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Landroid/view/View;)V
 
-    .line 1754
+    if-nez v3, :cond_5
+
+    return-void
+
+    .line 1728
+    :cond_5
     :try_start_0
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -4440,11 +4714,15 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {v3}, Landroid/content/ClipData;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4452,31 +4730,27 @@
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1755
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 1729
+    sget p2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
-    if-le p2, v1, :cond_5
+    if-le p2, v1, :cond_6
 
-    .line 1756
+    .line 1730
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAutoDragAttachView:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAutoDragAttachView:Landroid/view/View;
+    const/16 v0, 0x303
 
-    const/16 v1, 0x303
-
-    invoke-virtual {p2, v3, p1, v0, v1}, Landroid/view/View;->startDragAndDrop(Landroid/content/ClipData;Landroid/view/View$DragShadowBuilder;Ljava/lang/Object;I)Z
+    invoke-virtual {p2, v3, p1, p2, v0}, Landroid/view/View;->startDragAndDrop(Landroid/content/ClipData;Landroid/view/View$DragShadowBuilder;Ljava/lang/Object;I)Z
 
     goto :goto_2
 
-    .line 1758
-    :cond_5
+    .line 1732
+    :cond_6
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAutoDragAttachView:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAutoDragAttachView:Landroid/view/View;
-
-    invoke-virtual {p2, v3, p1, v1, v0}, Landroid/view/View;->startDrag(Landroid/content/ClipData;Landroid/view/View$DragShadowBuilder;Ljava/lang/Object;I)Z
+    invoke-virtual {p2, v3, p1, p2, v0}, Landroid/view/View;->startDrag(Landroid/content/ClipData;Landroid/view/View$DragShadowBuilder;Ljava/lang/Object;I)Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4485,7 +4759,7 @@
     :catch_0
     move-exception p1
 
-    .line 1761
+    .line 1735
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_2
@@ -4497,15 +4771,15 @@
 
     const-string v0, "[Mirroring] stopMirroring"
 
-    .line 1464
+    .line 1435
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 1466
+    .line 1437
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1467
+    .line 1438
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -4513,65 +4787,59 @@
 
     if-eqz v1, :cond_0
 
-    .line 1468
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
+    .line 1439
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->deInit()V
 
-    .line 1469
+    .line 1440
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    .line 1471
+    .line 1442
     :cond_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 1472
+    .line 1443
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->AUDIO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 1473
+    .line 1444
     :try_start_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
 
     if-eqz v0, :cond_1
 
-    .line 1474
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
-
+    .line 1445
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;->deInit()V
 
-    .line 1475
+    .line 1446
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mAudioEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneAudioEngine;
 
-    .line 1477
+    .line 1448
     :cond_1
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 1479
+    .line 1450
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->INPUT_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1480
+    .line 1451
     :try_start_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     if-eqz v1, :cond_2
 
-    .line 1481
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
-
+    .line 1452
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->disableServer()V
 
-    .line 1482
+    .line 1453
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mUserInputServer:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
-    .line 1484
+    .line 1455
     :cond_2
     monitor-exit v0
     :try_end_2
@@ -4579,7 +4847,7 @@
 
     const/4 v0, 0x0
 
-    .line 1486
+    .line 1457
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->setSourceConnectSetting(I)V
 
     return-void
@@ -4587,7 +4855,7 @@
     :catchall_0
     move-exception v1
 
-    .line 1484
+    .line 1455
     :try_start_3
     monitor-exit v0
     :try_end_3
@@ -4598,7 +4866,7 @@
     :catchall_1
     move-exception v0
 
-    .line 1477
+    .line 1448
     :try_start_4
     monitor-exit v1
     :try_end_4
@@ -4609,7 +4877,7 @@
     :catchall_2
     move-exception v1
 
-    .line 1471
+    .line 1442
     :try_start_5
     monitor-exit v0
     :try_end_5
@@ -4625,10 +4893,10 @@
 
     const-string v0, "[Mirroring] MirroringManager : deinit"
 
-    .line 271
+    .line 272
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 272
+    .line 273
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;->getInstance()Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager;
 
     move-result-object v0
@@ -4639,7 +4907,7 @@
 
     if-nez v0, :cond_0
 
-    .line 273
+    .line 274
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->getInstance()Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     move-result-object v0
@@ -4650,7 +4918,7 @@
 
     if-nez v0, :cond_0
 
-    .line 274
+    .line 275
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object v0
@@ -4659,7 +4927,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->removeWiDiListner(Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;)V
 
-    .line 275
+    .line 276
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object v0
@@ -4668,7 +4936,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stopAsync(Ljava/lang/Runnable;)V
 
-    .line 278
+    .line 279
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->finishAll()V
 
@@ -4679,6 +4947,19 @@
 
 .method public handleDragFile(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/samsung/android/galaxycontinuity/data/MousePoint;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "fileUriList",
+            "mimeTypeList",
+            "point"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4693,7 +4974,7 @@
         }
     .end annotation
 
-    .line 1559
+    .line 1530
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -4702,7 +4983,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 1560
+    .line 1531
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;
 
     invoke-direct {v1, p0, p1, p2, p3}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$8;-><init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/samsung/android/galaxycontinuity/data/MousePoint;)V
@@ -4717,10 +4998,10 @@
 
     const-string v0, "init_connect"
 
-    .line 204
+    .line 205
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 205
+    .line 206
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -4729,17 +5010,25 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainPortNum:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ", mResolution = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mResolution:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4747,7 +5036,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 207
+    .line 208
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -4760,32 +5049,32 @@
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRotationDegree:I
 
-    .line 208
+    .line 209
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isScreenOn()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsScreenOn:Z
 
-    .line 210
+    .line 211
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->addIntentFilter()V
 
-    .line 212
+    .line 213
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;->MIRRORING_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setConnectionState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;)V
 
-    .line 214
+    .line 215
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mHostName:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
-    .line 216
+    .line 217
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-nez v0, :cond_0
 
-    .line 217
+    .line 218
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient;
@@ -4798,7 +5087,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 221
+    .line 222
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -4808,7 +5097,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->connectToHost(Ljava/lang/String;I)V
 
-    .line 222
+    .line 223
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -4816,6 +5105,8 @@
     const-string v1, "[Mirroring] MainSocket port = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -4825,13 +5116,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 223
+    .line 224
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object v0
@@ -4848,7 +5141,7 @@
 .method public init_open()Z
     .locals 4
 
-    .line 229
+    .line 230
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -4861,43 +5154,47 @@
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRotationDegree:I
 
-    .line 230
+    .line 231
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isScreenOn()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsScreenOn:Z
 
-    .line 232
+    .line 233
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->addIntentFilter()V
 
-    .line 234
+    .line 235
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;->MIRRORING_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->setConnectionState(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;)V
 
-    .line 235
+    .line 236
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mHostName:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIPAddress:Ljava/lang/String;
 
     const-string v0, "init_open"
 
-    .line 238
+    .line 239
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 239
+    .line 240
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "server listener = "
+    const-string/jumbo v1, "server listener = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4905,26 +5202,26 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 240
+    .line 241
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->serverListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
     invoke-direct {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
 
-    .line 241
+    .line 242
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-nez v1, :cond_0
 
-    .line 242
+    .line 243
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     invoke-direct {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
-    .line 245
+    .line 246
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -4934,7 +5231,7 @@
 
     if-nez v1, :cond_2
 
-    .line 246
+    .line 247
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->isOpened()Z
 
     move-result v1
@@ -4943,10 +5240,10 @@
 
     const-string v1, "Opening server..."
 
-    .line 247
+    .line 248
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 249
+    .line 250
     :try_start_0
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
@@ -4954,7 +5251,7 @@
 
     if-nez v1, :cond_1
 
-    .line 250
+    .line 251
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mHostName:Ljava/lang/String;
 
     const v3, 0xea65
@@ -4963,7 +5260,7 @@
 
     goto :goto_0
 
-    .line 252
+    .line 253
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mHostName:Ljava/lang/String;
 
@@ -4971,7 +5268,7 @@
 
     invoke-virtual {v0, v1, v3, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->open(Ljava/lang/String;II)Z
 
-    .line 254
+    .line 255
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
@@ -4981,7 +5278,7 @@
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainPortNum:I
 
-    .line 255
+    .line 256
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -4990,9 +5287,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainPortNum:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -5007,7 +5308,7 @@
     :catch_0
     move-exception v0
 
-    .line 258
+    .line 259
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -5016,9 +5317,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -5029,10 +5334,10 @@
     :cond_2
     const-string v0, "Server is already opened."
 
-    .line 262
+    .line 263
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 265
+    .line 266
     :cond_3
     :goto_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mHostName:Ljava/lang/String;
@@ -5049,7 +5354,7 @@
 .method public isMirroringRunning()Z
     .locals 2
 
-    .line 355
+    .line 366
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMirroringState:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;->MIRRORING_STATE_PLAYING:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
@@ -5070,7 +5375,7 @@
 .method public isSocketConnected()Z
     .locals 3
 
-    .line 409
+    .line 420
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoSocket:Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
 
     if-eqz v0, :cond_0
@@ -5083,7 +5388,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 410
+    .line 421
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->isConnected()Z
 
     move-result v0
@@ -5113,7 +5418,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 413
+    .line 424
     :goto_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5123,7 +5428,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -5137,7 +5446,7 @@
 .method public isStart()Z
     .locals 2
 
-    .line 295
+    .line 296
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->getConnectionState()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$CONNECTION_STATE;
 
     move-result-object v0
@@ -5146,7 +5455,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 296
+    .line 297
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->getMirroringState()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$MIRRORING_STATE;
 
     move-result-object v0
@@ -5166,7 +5475,7 @@
     :cond_0
     const-string v0, "is mirroring start : true"
 
-    .line 301
+    .line 302
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const/4 v0, 0x1
@@ -5177,7 +5486,7 @@
     :goto_0
     const-string v0, "is mirroring start : false"
 
-    .line 297
+    .line 298
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const/4 v0, 0x0
@@ -5190,15 +5499,15 @@
 
     const-string v0, "[Mirroring] setConfigurationChanged"
 
-    .line 1218
+    .line 1188
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1219
+    .line 1189
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
     invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
 
-    .line 1221
+    .line 1191
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -5209,7 +5518,7 @@
 
     rem-int/lit16 v0, v0, 0xb4
 
-    .line 1223
+    .line 1193
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -5218,15 +5527,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, ", userOrientation : "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -5238,46 +5555,44 @@
 
     if-nez v0, :cond_0
 
-    .line 1224
+    .line 1194
     iget v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
 
     if-ne v2, v1, :cond_0
 
-    .line 1225
+    .line 1195
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->doScreenRotate(I)V
 
-    .line 1227
+    .line 1197
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 1228
+    .line 1198
     :try_start_0
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     if-eqz v3, :cond_1
 
-    .line 1229
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
+    .line 1199
     invoke-virtual {v3, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->setDeviceOrientation(I)V
 
-    .line 1231
+    .line 1201
     :cond_1
     monitor-exit v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 1232
+    .line 1202
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     if-eqz v2, :cond_2
 
-    .line 1233
+    .line 1203
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendNaviBarGestureStatus()V
 
-    .line 1236
+    .line 1206
     :cond_2
     iget v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRotationDegree:I
 
@@ -5285,44 +5600,44 @@
 
     if-eq v0, v2, :cond_5
 
-    .line 1237
+    .line 1207
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mRotationDegree:I
 
-    .line 1238
+    .line 1208
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sendRotationState(I)V
 
-    .line 1240
+    .line 1210
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     if-eqz v0, :cond_3
 
-    .line 1241
+    .line 1211
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendDeviceInfo()V
 
-    .line 1243
+    .line 1213
     :cond_3
     iput-boolean v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->deviceInfoChanged:Z
 
-    .line 1245
+    .line 1215
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1247
+    .line 1217
     :try_start_1
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     if-eqz v2, :cond_4
 
-    .line 1248
+    .line 1218
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->restartVideoEncoder(Z)V
 
-    .line 1249
+    .line 1219
     monitor-exit v0
 
     return-void
 
-    .line 1251
+    .line 1221
     :cond_4
     monitor-exit v0
 
@@ -5337,45 +5652,45 @@
 
     throw v1
 
-    .line 1254
+    .line 1224
     :cond_5
     :goto_0
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->deviceInfoChanged:Z
 
     if-eqz v0, :cond_8
 
-    .line 1255
+    .line 1225
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     if-eqz v0, :cond_6
 
-    .line 1256
+    .line 1226
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendDeviceInfo()V
 
-    .line 1258
+    .line 1228
     :cond_6
     iput-boolean v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->deviceInfoChanged:Z
 
-    .line 1259
+    .line 1229
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->VIDEO_SEVER_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1260
+    .line 1230
     :try_start_2
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     if-eqz v2, :cond_7
 
-    .line 1261
+    .line 1231
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->restartVideoEncoder(Z)V
 
-    .line 1262
+    .line 1232
     monitor-exit v0
 
     return-void
 
-    .line 1264
+    .line 1234
     :cond_7
     monitor-exit v0
 
@@ -5397,7 +5712,7 @@
     :catchall_2
     move-exception v0
 
-    .line 1231
+    .line 1201
     :try_start_3
     monitor-exit v2
     :try_end_3
@@ -5408,8 +5723,16 @@
 
 .method public onReceiveCallState(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 308
+    .line 307
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_RINGING:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -5418,26 +5741,40 @@
 
     const/4 v1, 0x0
 
+    const-string v2, "CALL_STATE"
+
     if-eqz v0, :cond_0
 
     const-string p1, "[Mirroring] onReceiveCallState : RINGING"
 
-    .line 309
+    .line 308
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     .line 310
-    iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsCalling:Z
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
+
+    if-eqz p1, :cond_3
 
     .line 311
-    new-instance p1, Landroid/content/Intent;
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
-    const-string v0, "com.samsung.android.galaxycontinuity.Mirroring.RINGING"
+    invoke-interface {p1, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->setVisible(Z)V
 
-    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    .line 312
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
+
+    invoke-interface {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
+
+    .line 314
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
+
+    const-string v0, "RINGING"
+
+    invoke-virtual {p1, v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendStateMessage(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 312
+    .line 316
     :cond_0
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_OFFHOOK:Ljava/lang/String;
 
@@ -5449,24 +5786,34 @@
 
     const-string p1, "[Mirroring] onReceiveCallState : OFFHOOK"
 
-    .line 313
+    .line 317
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    const/4 p1, 0x1
+    .line 319
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
-    .line 314
-    iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsCalling:Z
+    if-eqz p1, :cond_3
 
-    .line 315
-    new-instance p1, Landroid/content/Intent;
+    .line 320
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
-    const-string v0, "com.samsung.android.galaxycontinuity.Mirroring.OFFHOOK"
+    invoke-interface {p1, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->setVisible(Z)V
 
-    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    .line 321
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
+
+    invoke-interface {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
+
+    .line 323
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
+
+    const-string v0, "OFFHOOK"
+
+    invoke-virtual {p1, v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendStateMessage(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 316
+    .line 325
     :cond_1
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_IDLE:Ljava/lang/String;
 
@@ -5478,47 +5825,41 @@
 
     const-string p1, "[Mirroring] onReceiveCallState : STATEIDLE"
 
-    .line 317
+    .line 326
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 318
-    new-instance p1, Landroid/content/Intent;
+    .line 327
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
-    const-string v0, "com.samsung.android.galaxycontinuity.Mirroring.IDLE"
+    const/4 v0, 0x1
 
-    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-interface {p1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->setVisible(Z)V
 
-    .line 319
-    iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsCalling:Z
+    .line 328
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mBlackScreen:Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;
 
-    const-string v2, "ISCALLING"
+    invoke-interface {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/IBlackScreen;->updateBlackScreen()V
 
-    invoke-virtual {p1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    .line 330
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
-    .line 320
-    iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mIsCalling:Z
+    if-eqz p1, :cond_3
+
+    const-string v0, "IDLE"
+
+    .line 331
+    invoke-virtual {p1, v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendStateMessage(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_2
     const-string p1, "[Mirroring] onReceiveCallState : UNKNOWN"
 
-    .line 323
+    .line 334
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    const/4 p1, 0x0
-
-    :goto_0
-    if-eqz p1, :cond_3
-
-    .line 327
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;)V
-
     :cond_3
+    :goto_0
     return-void
 .end method
 
@@ -5529,21 +5870,19 @@
 
     const/4 v1, 0x0
 
-    .line 1854
+    .line 1828
     :try_start_0
     iput v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->userOrientation:I
 
-    .line 1855
+    .line 1829
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     if-eqz v2, :cond_0
 
-    .line 1856
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mVideoEngine:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
-
+    .line 1830
     invoke-virtual {v2, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->setUserOrientation(I)V
 
-    .line 1858
+    .line 1832
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -5557,7 +5896,7 @@
 
     invoke-virtual {v2, v3}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 1859
+    .line 1833
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -5570,28 +5909,23 @@
 
     invoke-virtual {v2, v3}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 1862
+    .line 1836
     iget v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ROTATION_DEGREE:I
 
     const/4 v3, -0x1
 
     if-eq v2, v3, :cond_1
 
-    .line 1863
-    iget v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ROTATION_DEGREE:I
-
-    invoke-direct {p0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->doScreenRotate(I)V
-
-    .line 1864
+    .line 1838
     iput v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ROTATION_DEGREE:I
 
-    .line 1867
+    .line 1841
     :cond_1
     iget v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
     if-eq v2, v3, :cond_2
 
-    .line 1868
+    .line 1842
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -5604,7 +5938,7 @@
 
     invoke-static {v2, v0, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1870
+    .line 1844
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -5613,15 +5947,21 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     iget v4, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     const-string v4, ") = "
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1871
+    move-result-object v2
+
+    .line 1845
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v4
@@ -5636,19 +5976,21 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1870
+    .line 1844
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1873
+    .line 1847
     iput v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
     goto :goto_0
 
-    .line 1875
+    .line 1849
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5658,9 +6000,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mOriginal_ACCELEROMETER_ROTATION:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -5675,7 +6021,7 @@
     :catch_0
     move-exception v0
 
-    .line 1878
+    .line 1852
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
@@ -5684,45 +6030,55 @@
 
 .method public sendConnectionRequest(Ljava/lang/String;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "port"
+        }
+    .end annotation
 
-    .line 2111
+    .line 2085
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 2112
+    .line 2086
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     :try_start_0
-    const-string v2, "type"
+    const-string/jumbo v2, "type"
 
-    .line 2115
+    .line 2089
     invoke-virtual {v1, v2, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string p1, "port"
 
-    .line 2116
+    .line 2090
     invoke-virtual {v1, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string p1, "TYPE"
 
     const-string p2, "REQ"
 
-    .line 2117
+    .line 2091
     invoke-virtual {v0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string p1, "MSG"
 
     const-string p2, "REQUEST_CONNECT"
 
-    .line 2118
+    .line 2092
     invoke-virtual {v0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string p1, "PARAM"
 
-    .line 2119
+    .line 2093
     invoke-virtual {v0, p1, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -5732,10 +6088,10 @@
     :catch_0
     move-exception p1
 
-    .line 2121
+    .line 2095
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 2124
+    .line 2098
     :goto_0
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->sendJSON(Lorg/json/JSONObject;)V
 
@@ -5744,16 +6100,24 @@
 
 .method public sendFailureMessage(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
-    .line 1451
+    .line 1422
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainServer:Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1452
+    .line 1423
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;->sendFailureMessage(Ljava/lang/String;)V
 
-    .line 1453
+    .line 1424
     new-instance p1, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -5774,13 +6138,23 @@
 
 .method public sendMainServerOpened(Ljava/lang/String;I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "hostName",
+            "portNum"
+        }
+    .end annotation
 
     const-string v0, "Telling PC that main server is now opened!"
 
-    .line 2057
+    .line 2031
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 2059
+    .line 2033
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
     const/4 v1, 0x0
@@ -5789,22 +6163,22 @@
 
     if-nez v0, :cond_0
 
-    .line 2060
+    .line 2034
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/MirroringInfoData;
 
     invoke-direct {v0, v2, p1, p2, v1}, Lcom/samsung/android/galaxycontinuity/data/MirroringInfoData;-><init>(Ljava/lang/String;Ljava/lang/String;II)V
 
     goto :goto_0
 
-    .line 2062
+    .line 2036
     :cond_0
-    new-instance v3, Lcom/samsung/android/galaxycontinuity/data/MirroringInfoData;
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/data/MirroringInfoData;
 
-    invoke-direct {v3, v2, p1, p2, v0}, Lcom/samsung/android/galaxycontinuity/data/MirroringInfoData;-><init>(Ljava/lang/String;Ljava/lang/String;II)V
+    iget v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
-    move-object v0, v3
+    invoke-direct {v0, v2, p1, p2, v3}, Lcom/samsung/android/galaxycontinuity/data/MirroringInfoData;-><init>(Ljava/lang/String;Ljava/lang/String;II)V
 
-    .line 2064
+    .line 2038
     :goto_0
     new-instance p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
@@ -5816,14 +6190,14 @@
 
     invoke-direct {p1, p2}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;-><init>([Ljava/lang/Object;)V
 
-    .line 2065
+    .line 2039
     new-instance p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     const-string v0, "RecvMirroringControlCommand"
 
     invoke-direct {p2, v0, p1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
 
-    .line 2066
+    .line 2040
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;
 
     move-result-object p1
@@ -5835,8 +6209,16 @@
 
 .method public setHostName(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hostName"
+        }
+    .end annotation
 
-    .line 284
+    .line 285
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mHostName:Ljava/lang/String;
 
     return-void
@@ -5844,8 +6226,16 @@
 
 .method public setMainPortNumber(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "portNum"
+        }
+    .end annotation
 
-    .line 288
+    .line 289
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5854,7 +6244,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -5864,7 +6258,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 291
+    .line 292
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->mMainPortNum:I
 
     :cond_0
@@ -5873,8 +6267,16 @@
 
 .method public setProtocolVersion(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "version"
+        }
+    .end annotation
 
-    .line 199
+    .line 200
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5883,9 +6285,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -5896,8 +6302,16 @@
 
 .method public setVersion(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "version"
+        }
+    .end annotation
 
-    .line 195
+    .line 196
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->version:I
 
     return-void

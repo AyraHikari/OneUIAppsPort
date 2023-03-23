@@ -45,6 +45,19 @@
 # direct methods
 .method constructor <init>(Ljava/util/Collection;Ljava/util/Map;Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fragments",
+            "childNonConfigs",
+            "viewModelStores"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -134,6 +147,14 @@
 
 .method isRetaining(Landroidx/fragment/app/Fragment;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "f"
+        }
+    .end annotation
 
     .line 57
     iget-object v0, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mFragments:Ljava/util/Collection;

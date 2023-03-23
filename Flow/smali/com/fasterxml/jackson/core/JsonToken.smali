@@ -69,207 +69,207 @@
     sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->NOT_AVAILABLE:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 32
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v1, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "START_OBJECT"
+    const-string v4, "START_OBJECT"
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    const-string v5, "{"
+    const-string v6, "{"
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v4, v5, v6}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->START_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v1, Lcom/fasterxml/jackson/core/JsonToken;->START_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 38
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v4, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "END_OBJECT"
+    const-string v6, "END_OBJECT"
 
-    const/4 v5, 0x2
+    const/4 v7, 0x2
 
-    const-string v6, "}"
+    const-string v8, "}"
 
-    invoke-direct {v0, v1, v5, v6}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v4, v6, v7, v8}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->END_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v4, Lcom/fasterxml/jackson/core/JsonToken;->END_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 44
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v6, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "START_ARRAY"
+    const-string v8, "START_ARRAY"
 
-    const/4 v6, 0x3
+    const/4 v9, 0x3
 
-    const-string v7, "["
+    const-string v10, "["
 
-    invoke-direct {v0, v1, v6, v7}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v6, v8, v9, v10}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->START_ARRAY:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v6, Lcom/fasterxml/jackson/core/JsonToken;->START_ARRAY:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 50
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v8, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "END_ARRAY"
+    const-string v10, "END_ARRAY"
 
-    const/4 v7, 0x4
+    const/4 v11, 0x4
 
-    const-string v8, "]"
+    const-string v12, "]"
 
-    invoke-direct {v0, v1, v7, v8}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v8, v10, v11, v12}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->END_ARRAY:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v8, Lcom/fasterxml/jackson/core/JsonToken;->END_ARRAY:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 56
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v10, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "FIELD_NAME"
+    const-string v12, "FIELD_NAME"
 
-    const/4 v8, 0x5
+    const/4 v13, 0x5
 
-    invoke-direct {v0, v1, v8, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v10, v12, v13, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->FIELD_NAME:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v10, Lcom/fasterxml/jackson/core/JsonToken;->FIELD_NAME:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 68
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v12, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "VALUE_EMBEDDED_OBJECT"
+    const-string v14, "VALUE_EMBEDDED_OBJECT"
 
-    const/4 v9, 0x6
+    const/4 v15, 0x6
 
-    invoke-direct {v0, v1, v9, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v12, v14, v15, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_EMBEDDED_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v12, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_EMBEDDED_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 75
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v14, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "VALUE_STRING"
+    const-string v15, "VALUE_STRING"
 
-    const/4 v10, 0x7
+    const/4 v13, 0x7
 
-    invoke-direct {v0, v1, v10, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v14, v15, v13, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_STRING:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v14, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_STRING:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 83
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v15, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "VALUE_NUMBER_INT"
+    const-string v13, "VALUE_NUMBER_INT"
 
     const/16 v11, 0x8
 
-    invoke-direct {v0, v1, v11, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v15, v13, v11, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NUMBER_INT:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v15, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NUMBER_INT:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 91
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v13, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "VALUE_NUMBER_FLOAT"
+    const-string v11, "VALUE_NUMBER_FLOAT"
 
-    const/16 v12, 0x9
+    const/16 v9, 0x9
 
-    invoke-direct {v0, v1, v12, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v13, v11, v9, v3}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NUMBER_FLOAT:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v13, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NUMBER_FLOAT:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 97
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v3, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "VALUE_TRUE"
+    const-string v11, "VALUE_TRUE"
 
-    const/16 v3, 0xa
+    const/16 v9, 0xa
 
-    const-string v13, "true"
+    const-string v7, "true"
 
-    invoke-direct {v0, v1, v3, v13}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v3, v11, v9, v7}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_TRUE:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v3, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_TRUE:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 103
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v7, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "VALUE_FALSE"
+    const-string v11, "VALUE_FALSE"
 
-    const/16 v13, 0xb
+    const/16 v9, 0xb
 
-    const-string v14, "false"
+    const-string v5, "false"
 
-    invoke-direct {v0, v1, v13, v14}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v7, v11, v9, v5}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_FALSE:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v7, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_FALSE:Lcom/fasterxml/jackson/core/JsonToken;
 
     .line 109
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonToken;
+    new-instance v5, Lcom/fasterxml/jackson/core/JsonToken;
 
-    const-string v1, "VALUE_NULL"
+    const-string v11, "VALUE_NULL"
 
-    const/16 v14, 0xc
+    const/16 v9, 0xc
 
-    const-string v15, "null"
+    const-string v2, "null"
 
-    invoke-direct {v0, v1, v14, v15}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v5, v11, v9, v2}, Lcom/fasterxml/jackson/core/JsonToken;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NULL:Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v5, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NULL:Lcom/fasterxml/jackson/core/JsonToken;
 
-    const/16 v1, 0xd
+    const/16 v2, 0xd
 
-    new-array v1, v1, [Lcom/fasterxml/jackson/core/JsonToken;
+    new-array v2, v2, [Lcom/fasterxml/jackson/core/JsonToken;
+
+    const/4 v11, 0x0
+
+    aput-object v0, v2, v11
+
+    const/4 v0, 0x1
+
+    aput-object v1, v2, v0
+
+    const/4 v0, 0x2
+
+    aput-object v4, v2, v0
+
+    const/4 v0, 0x3
+
+    aput-object v6, v2, v0
+
+    const/4 v0, 0x4
+
+    aput-object v8, v2, v0
+
+    const/4 v0, 0x5
+
+    aput-object v10, v2, v0
+
+    const/4 v0, 0x6
+
+    aput-object v12, v2, v0
+
+    const/4 v0, 0x7
+
+    aput-object v14, v2, v0
+
+    const/16 v0, 0x8
+
+    aput-object v15, v2, v0
+
+    const/16 v0, 0x9
+
+    aput-object v13, v2, v0
+
+    const/16 v0, 0xa
+
+    aput-object v3, v2, v0
+
+    const/16 v0, 0xb
+
+    aput-object v7, v2, v0
+
+    aput-object v5, v2, v9
 
     .line 7
-    sget-object v15, Lcom/fasterxml/jackson/core/JsonToken;->NOT_AVAILABLE:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v15, v1, v2
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->START_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->END_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->START_ARRAY:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->END_ARRAY:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v7
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->FIELD_NAME:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v8
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_EMBEDDED_OBJECT:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v9
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_STRING:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v10
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NUMBER_INT:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v11
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_NUMBER_FLOAT:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v12
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_TRUE:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonToken;->VALUE_FALSE:Lcom/fasterxml/jackson/core/JsonToken;
-
-    aput-object v2, v1, v13
-
-    aput-object v0, v1, v14
-
-    sput-object v1, Lcom/fasterxml/jackson/core/JsonToken;->$VALUES:[Lcom/fasterxml/jackson/core/JsonToken;
+    sput-object v2, Lcom/fasterxml/jackson/core/JsonToken;->$VALUES:[Lcom/fasterxml/jackson/core/JsonToken;
 
     return-void
 .end method

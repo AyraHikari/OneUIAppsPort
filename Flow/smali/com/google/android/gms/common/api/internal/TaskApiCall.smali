@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/api/internal/TaskApiCall;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -22,9 +23,11 @@
 
 
 # instance fields
-.field private final zake:[Lcom/google/android/gms/common/Feature;
+.field private final zaa:[Lcom/google/android/gms/common/Feature;
 
-.field private final zakl:Z
+.field private final zab:Z
+
+.field private final zac:I
 
 
 # direct methods
@@ -33,42 +36,40 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
-    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zake:[Lcom/google/android/gms/common/Feature;
+    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zaa:[Lcom/google/android/gms/common/Feature;
 
     const/4 v0, 0x0
 
-    .line 3
-    iput-boolean v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zakl:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zab:Z
+
+    iput v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zac:I
 
     return-void
 .end method
 
-.method private constructor <init>([Lcom/google/android/gms/common/Feature;Z)V
-    .locals 0
+.method protected constructor <init>([Lcom/google/android/gms/common/Feature;ZI)V
+    .locals 1
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zake:[Lcom/google/android/gms/common/Feature;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zaa:[Lcom/google/android/gms/common/Feature;
 
-    .line 7
-    iput-boolean p2, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zakl:Z
+    const/4 v0, 0x0
 
-    return-void
-.end method
+    if-eqz p1, :cond_0
 
-.method synthetic constructor <init>([Lcom/google/android/gms/common/Feature;ZLcom/google/android/gms/common/api/internal/zaci;)V
-    .locals 0
+    if-eqz p2, :cond_0
 
-    .line 12
-    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/common/api/internal/TaskApiCall;-><init>([Lcom/google/android/gms/common/Feature;Z)V
+    const/4 v0, 0x1
+
+    :cond_0
+    iput-boolean v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zab:Z
+
+    iput p3, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zac:I
 
     return-void
 .end method
@@ -87,12 +88,11 @@
         }
     .end annotation
 
-    .line 11
     new-instance v0, Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;-><init>(Lcom/google/android/gms/common/api/internal/zaci;)V
+    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;-><init>(Lcom/google/android/gms/common/api/internal/zacw;)V
 
     return-object v0
 .end method
@@ -118,17 +118,23 @@
 .method public shouldAutoResolveMissingFeatures()Z
     .locals 1
 
-    .line 10
-    iget-boolean v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zakl:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zab:Z
 
     return v0
 .end method
 
-.method public final zabt()[Lcom/google/android/gms/common/Feature;
+.method public final zaa()I
     .locals 1
 
-    .line 9
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zake:[Lcom/google/android/gms/common/Feature;
+    iget v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zac:I
+
+    return v0
+.end method
+
+.method public final zab()[Lcom/google/android/gms/common/Feature;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/TaskApiCall;->zaa:[Lcom/google/android/gms/common/Feature;
 
     return-object v0
 .end method

@@ -4,12 +4,6 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/airbnb/lottie/model/animatable/AnimatableValue$Factory;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -33,5 +27,16 @@
     .end annotation
 .end method
 
-.method public abstract hasAnimation()Z
+.method public abstract getKeyframes()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
+            "TK;>;>;"
+        }
+    .end annotation
+.end method
+
+.method public abstract isStatic()Z
 .end method

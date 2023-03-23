@@ -76,6 +76,15 @@
 # virtual methods
 .method public apply(Landroid/content/SharedPreferences$Editor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "editor"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

@@ -58,7 +58,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 239
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +66,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 239
     invoke-direct {p0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;-><init>()V
 
     return-void
@@ -76,7 +74,6 @@
 .method public static final synthetic access$binarySearch(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;[B[[BI)Ljava/lang/String;
     .locals 0
 
-    .line 239
     invoke-direct {p0, p1, p2, p3}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->binarySearch([B[[BI)Ljava/lang/String;
 
     move-result-object p0
@@ -89,22 +86,19 @@
 
     move-object/from16 v0, p1
 
-    .line 258
-    array-length v1, v0
+    move-object/from16 v1, p2
 
-    const/4 v2, 0x0
-
-    .line 259
-    check-cast v2, Ljava/lang/String;
+    .line 1
+    array-length v2, v0
 
     const/4 v4, 0x0
 
     :goto_0
-    if-ge v4, v1, :cond_c
+    if-ge v4, v2, :cond_c
 
-    add-int v5, v4, v1
+    add-int v5, v4, v2
 
-    .line 261
+    .line 2
     div-int/lit8 v5, v5, 0x2
 
     :goto_1
@@ -114,7 +108,7 @@
 
     if-le v5, v7, :cond_0
 
-    .line 264
+    .line 3
     aget-byte v8, v0, v5
 
     int-to-byte v9, v6
@@ -135,7 +129,7 @@
     :goto_2
     add-int v10, v5, v9
 
-    .line 271
+    .line 4
     aget-byte v11, v0, v10
 
     int-to-byte v12, v6
@@ -168,9 +162,9 @@
 
     goto :goto_4
 
-    .line 290
+    .line 5
     :cond_2
-    aget-object v15, p2, v11
+    aget-object v15, v1, v11
 
     aget-byte v15, v15, v12
 
@@ -187,7 +181,7 @@
     :goto_4
     add-int v16, v5, v13
 
-    .line 293
+    .line 6
     aget-byte v3, v0, v16
 
     invoke-static {v3, v14}, Lokhttp3/internal/Util;->and(BI)I
@@ -209,20 +203,16 @@
 
     goto :goto_5
 
-    .line 302
+    .line 7
     :cond_4
-    aget-object v3, p2, v11
+    aget-object v3, v1, v11
 
     array-length v3, v3
 
     if-ne v3, v12, :cond_b
 
-    .line 305
-    move-object/from16 v3, p2
-
-    check-cast v3, [Ljava/lang/Object;
-
-    array-length v3, v3
+    .line 8
+    array-length v3, v1
 
     sub-int/2addr v3, v8
 
@@ -234,7 +224,7 @@
     :goto_6
     add-int/lit8 v5, v5, -0x1
 
-    move v1, v5
+    move v2, v5
 
     goto :goto_0
 
@@ -249,8 +239,8 @@
     :cond_6
     sub-int v3, v6, v13
 
-    .line 322
-    aget-object v7, p2, v11
+    .line 9
+    aget-object v7, v1, v11
 
     array-length v7, v7
 
@@ -258,18 +248,14 @@
 
     add-int/lit8 v11, v11, 0x1
 
-    .line 323
-    move-object/from16 v8, p2
-
-    check-cast v8, [Ljava/lang/Object;
-
-    array-length v8, v8
+    .line 10
+    array-length v8, v1
 
     :goto_8
     if-ge v11, v8, :cond_7
 
-    .line 324
-    aget-object v9, p2, v11
+    .line 11
+    aget-object v9, v1, v11
 
     array-length v9, v9
 
@@ -289,13 +275,13 @@
 
     goto :goto_7
 
-    .line 333
+    .line 12
     :cond_9
     sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     const-string v2, "UTF_8"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v2, Ljava/lang/String;
 
@@ -318,6 +304,8 @@
     goto :goto_3
 
     :cond_c
+    const/4 v2, 0x0
+
     :goto_9
     return-object v2
 .end method
@@ -327,7 +315,6 @@
 .method public final get()Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
     .locals 1
 
-    .line 250
     invoke-static {}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->access$getInstance$cp()Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
 
     move-result-object v0

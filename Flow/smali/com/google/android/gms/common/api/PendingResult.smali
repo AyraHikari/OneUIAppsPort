@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/api/PendingResult;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -23,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +34,7 @@
 .method public addStatusListener(Lcom/google/android/gms/common/api/PendingResult$StatusListener;)V
     .locals 0
 
-    .line 2
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -102,21 +102,10 @@
         }
     .end annotation
 
-    .line 3
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     throw p1
-.end method
-
-.method public zam()Ljava/lang/Integer;
-    .locals 1
-
-    .line 4
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw v0
 .end method

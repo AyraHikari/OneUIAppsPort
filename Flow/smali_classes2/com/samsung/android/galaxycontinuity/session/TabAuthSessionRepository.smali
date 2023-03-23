@@ -89,6 +89,14 @@
 
 .method public setAuthSessionAlive(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "authSessionAlive"
+        }
+    .end annotation
 
     .line 23
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/session/TabAuthSessionRepository;->mAuthSessionAlive:Z
@@ -98,6 +106,14 @@
 
 .method public setEnrollingConnectionType(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 31
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/session/TabAuthSessionRepository;->mConnectionType:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;

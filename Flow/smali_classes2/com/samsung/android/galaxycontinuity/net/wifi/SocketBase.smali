@@ -93,6 +93,16 @@
 
 .method private dataReceived(Ljava/net/Socket;J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "dataLength"
+        }
+    .end annotation
 
     .line 62
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocketListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
@@ -116,6 +126,16 @@
 
 .method private dataReceiving(JJ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedLength",
+            "totalReceivedLength"
+        }
+    .end annotation
 
     .line 70
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocketListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
@@ -139,6 +159,16 @@
 
 .method private dataSending(JJ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sentLength",
+            "totalSentLength"
+        }
+    .end annotation
 
     .line 86
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocketListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
@@ -162,6 +192,16 @@
 
 .method private dataSent(Ljava/net/Socket;J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "dataLength"
+        }
+    .end annotation
 
     .line 78
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocketListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
@@ -210,6 +250,14 @@
 # virtual methods
 .method connected(Ljava/net/Socket;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 35
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocket:Ljava/net/Socket;
@@ -236,6 +284,14 @@
 
 .method connectionFailed(Ljava/lang/Exception;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "exception"
+        }
+    .end annotation
 
     .line 54
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocketListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
@@ -259,6 +315,14 @@
 
 .method public disconnected(Ljava/net/Socket;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 46
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocketListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
@@ -318,6 +382,18 @@
 
 .method public read(Ljava/io/OutputStream;JJ)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "outputStream",
+            "offset",
+            "outputStreamSize"
+        }
+    .end annotation
 
     .line 147
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mReadThread:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;
@@ -350,6 +426,14 @@
 
 .method setSocketListener(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 31
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocketListener:Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
@@ -359,6 +443,14 @@
 
 .method public start(Ljava/net/Socket;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 104
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mSocket:Ljava/net/Socket;
@@ -514,6 +606,18 @@
 
 .method public write(Ljava/io/InputStream;JJ)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "inputStream",
+            "offset",
+            "inputStreamSize"
+        }
+    .end annotation
 
     .line 153
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->mWriteThread:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;

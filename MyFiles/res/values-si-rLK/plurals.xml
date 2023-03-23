@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">අයිතම %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d අයිතමයකට වඩා තේරිය නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">ගොනු %dක් කසළට ගෙන යාමට නොහැක</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ගොනුවක් කසළට ගෙන යාමට නොහැක</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">ෆෝල්ඩර %dක් කසළට ගෙන යාමට නොහැක</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ෆෝල්ඩරයක් කසළට ගෙන යාමට නොහැක</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">අයිතම %dක් කසළට ගෙන යාමට නොහැක</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d අයිතමයක් කසළට ගෙන යාමට නොහැක</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">තේරූ ගොනු %dක් ඒවා ක්ලවුඩ් හෝ USB ගබඩා උපාංගයක ඇති නිසා මකනු ලැබේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">තේරූ ගොනු %dක් එය ක්ලවුඩ් හෝ USB ගබඩා උපාංගයක ඇති නිසා මකනු ලැබේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">තේරූ ෆෝල්ඩර %dක් ඒවා ක්ලවුඩ් හෝ USB ගබඩා උපාංගයක ඇති නිසා මකනු ලැබේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">තේරූ ෆෝල්ඩර %dක් එය ක්ලවුඩ් හෝ USB ගබඩා උපාංගයක ඇති නිසා මකනු ලැබේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">තේරූ අයිතම %dක් ඒවා ක්ලවුඩ් හෝ USB ගබඩා උපාංගයක ඇති නිසා මකනු ලැබේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">තේරූ අයිතම %dක් එය ක්ලවුඩ් හෝ USB ගබඩා උපාංගයක ඇති නිසා මකනු ලැබේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">ගොනු %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">ගොනු %dක් හකුළමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් හකුළමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">ෆෝල්ඩර %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">ෆෝල්ඩර %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">අයිතම %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">අයිතම %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් සම්පීඩනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">ගොනු %dක් පිටපත් කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් පිටපත් කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">ගොනු %dක් පිටපත් කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් පිටපත් කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">ෆෝල්ඩර %dක් පිටපත් කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් පිටපත් කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">ෆෝල්ඩර %dක් පිටපත් කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් පිටපත් කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">අයිතම %dක් පිටපත් කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් පිටපත් කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">අයිතම %dක් පිටපත් කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් පිටපත් කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">ඔබේ දුරකථනයෙන් ගොනු %dක් මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ දුරකථනයෙන් ගොනු %dක් මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">ඔබේ ටැබ්ලටයෙන් ගොනු %dක් මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ ටැබ්ලටයෙන් ගොනු %dක් මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">ඔබේ දුරකථනයෙන් ෆෝල්ඩර %dක් මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ දුරකථනයෙන් ෆෝල්ඩර %dක් මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">ඔබේ ටැබ්ලටයෙන් ෆෝල්ඩර %dක් මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ ටැබ්ලටයෙන් ෆෝල්ඩර %dක් මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">ඔබේ දුරකථනයෙන් අයිතම %dක් මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ දුරකථනයෙන් අයිතම %dක් මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">ඔබේ ටැබ්ලටයෙන් අයිතම %dක් මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ ටැබ්ලටයෙන් අයිතම %dක් මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">ගොනු %dක් මකමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් මකමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">ෆෝල්ඩර %dක් මකමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් මකමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">කසළින් අයිතම %dක් මකමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">කසළින් අයිතම %dක් මකමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">අයිතම %dක් මකමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් මකමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">ගොනු %dක් උපුටමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් උපුටමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">ෆෝල්ඩර %dක් උපුටමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් උපුටමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">අයිතම %dක් උපුටමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් උපුටමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$s තුළ කසළට ගොනු %1$dක් ගෙන යනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s තුළ කසළට ගොනු %1$dක් ගෙන යනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">ගොනු %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$s තුළ කසළට ෆෝල්ඩර %1$dක් ද ගෙන යනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s තුළ කසළට ෆෝල්ඩර %1$dක් ද ගෙන යනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">ෆෝල්ඩර %dක් ප්‍රතිසාධනය වේ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ප්‍රතිසාධනය වේ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">ඔබේ අභ්‍යන්තර ගබඩාව පිරී ඇත. ගොනු %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ අභ්‍යන්තර ගබඩාව පිරී ඇත. ගොනු %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">ඔබේ අභ්‍යන්තර ගබඩාව පිරී ඇත. ෆෝල්ඩර %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ අභ්‍යන්තර ගබඩාව පිරී ඇත. ෆෝල්ඩර %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">ඔබේ අභ්‍යන්තර ගබඩාව පිරී ඇත. අයිතම %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ අභ්‍යන්තර ගබඩාව පිරී ඇත. අයිතම %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">ඔබේ අභ්‍යන්තර ගබඩාව සහ SD කාඩ්පත පිරී ඇත. ගොනු %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ අභ්‍යන්තර ගබඩාව සහ SD කාඩ්පත පිරී ඇත. ගොනු %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">ඔබේ අභ්‍යන්තර ගබඩාව සහ SD කාඩ්පත පිරී ඇත. ෆෝල්ඩර %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ අභ්‍යන්තර ගබඩාව සහ SD කාඩ්පත පිරී ඇත. ෆෝල්ඩර %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">ඔබේ අභ්‍යන්තර ගබඩාව සහ SD කාඩ්පත පිරී ඇත. අයිතම %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ අභ්‍යන්තර ගබඩාව සහ SD කාඩ්පත පිරී ඇත. අයිතම %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">අයිතම %dක් ප්‍රතිසාධනය වේ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ප්‍රතිසාධනය වේ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$s තුළ කසළට අයිතම %1$dක් ගෙන යනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s තුළ කසළට අයිතම %1$dක් ගෙන යනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">යෙදුම් කවුළු %dකට වඩා විවෘත කළ නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">යෙදුම් කවුළු %dකට වඩා විවෘත කළ නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">ගොනු %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">ගොනු %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">ෆෝල්ඩර %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">ෆෝල්ඩර %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">අයිතම %dක් කසළ වෙත ගෙන යන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් කසළ වෙත ගෙන යන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">අයිතම %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් කසළට ගෙන යන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">ගොනු %dක් කසළට ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් කසළට ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">ෆෝල්ඩර %dක් කසළට ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් කසළට ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">අයිතම %dක් කසළට ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් කසළට ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">ගොනු %dක් ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">ගොනු %dක් ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">ෆෝල්ඩර %dක් ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">ෆෝල්ඩර %dක් ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">අයිතම %dක් ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">අයිතම %dක් ගෙන යමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ගෙන යමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">අයිතම %dක් සම්පීඩිතයි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් සම්පීඩිතයි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">අයිතම %1$dක් %2$s වෙත පිටපත් කෙරිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %1$dක් %2$s වෙත පිටපත් කෙරිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">ෆෝල්ඩරය සහ එහි ඇති ගොනු %dක් මකන්න ද?</item>
+        <item quantity="one">ෆෝල්ඩරය සහ එහි ඇති ගොනුව මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">ෆෝල්ඩර %1$dක් සහ ඒවායේ ඇති ගොනු %2$dක් මකන්න ද?</item>
+        <item quantity="one">ෆෝල්ඩරය සහ එහි ඇති ගොනුව මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">අයිතම %dක් මැකිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් මැකිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">ගොනු %dක් බාගනිමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් බාගනිමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">ෆෝල්ඩර %dක් බාගනිමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් බාගනිමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">අයිතම %dක් බාගනිමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් බාගනිමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">ෆෝල්ඩර බෙදා ගත නොහැක. ෆෝල්ඩර හිස්.</item>
+        <item quantity="one">ෆෝල්ඩරය බෙදා ගත නොහැක. ෆෝල්ඩරය හිස්.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">ගොනු %dක් ස්ථිරවම මැකෙනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ස්ථිරවම මැකෙනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">ෆෝල්ඩර %dක් ස්ථිරවම මැකෙනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ස්ථිරවම මැකෙනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">අයිතම %dක් ඉපිටිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ඉපිටිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">ගොනු %dක් ප්‍රියතමයන්ට එක් කෙරිණි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ප්‍රියතමයන්ට එක් කෙරිණි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">ගොනු %dක් ප්‍රියතමයන්ගෙන් ඉවත් කෙරිණි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ප්‍රියතමයන්ගෙන් ඉවත් කෙරිණි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">ෆෝල්ඩර %dක් ප්‍රියතමයන්ට එක් කෙරිණි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ප්‍රියතමයන්ට එක් කෙරිණි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">ෆෝල්ඩර %dක් ප්‍රියතමයන්ගෙන් ඉවත් කෙරිණි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ප්‍රියතමයන්ගෙන් ඉවත් කෙරිණි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">අයිතම %dක් ප්‍රියතමයන්ට එක් කෙරිණි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ප්‍රියතමයන්ට එක් කෙරිණි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">අයිතම %dක් ප්‍රියතමයන්ගෙන් ඉවත් කෙරිණි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ප්‍රියතමයන්ගෙන් ඉවත් කෙරිණි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">අයිතම %d</item>
+        <item quantity="one">අයිතම 1</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">අයිතම %d</item>
+        <item quantity="one">අයිතම %d</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">අයිතම %dක් ක්ලිප් පුවරුවට පිටපත් කෙරිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ක්ලිප් පුවරුවට පිටපත් කෙරිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">අයිතම %dක් ක්ලිප් පුවරුවට ගෙන යැවිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ක්ලිප් පුවරුවට ගෙන යැවිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">අයිතම %dක් තේරිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් තේරිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">අයිතම %1$dක් %2$s වෙත ගෙන යැවිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %1$dක් %2$s වෙත ගෙන යැවිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">අයිතම %dක් කසළට ගෙන යැවිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් කසළට ගෙන යැවිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%dක් තේරිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dක් තේරිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">ඔබේ SD කාඩ්පත පිරී ඇත. ගොනු %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ SD කාඩ්පත පිරී ඇත. ගොනු %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">ඔබේ SD කාඩ්පත පිරී ඇත. ෆෝල්ඩර %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ SD කාඩ්පත පිරී ඇත. ෆෝල්ඩර %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">ඔබේ SD කාඩ්පත පිරී ඇත. අයිතම %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ SD කාඩ්පත පිරී ඇත. අයිතම %dක් ස්ථිරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">මෙම ගොනුව දින %dකින් මකනු ලැබේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">මෙම ගොනුව දින %dකින් මකනු ලැබේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">මෙම ෆෝල්ඩරය දින %dකින් මකනු ලැබේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">මෙම ෆෝල්ඩරය දින %dකින් මකනු ලැබේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">ගොනු %dක් ස්ථීරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ස්ථීරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">ගොනු %dක් මකමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් මකමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">ගොනු %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගොනු %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">ෆෝල්ඩර %dක් ස්ථීරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ස්ථීරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">ෆෝල්ඩර %dක් මකමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් මකමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">ෆෝල්ඩර %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ෆෝල්ඩර %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">අයිතම %dක් ස්ථීරවම මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ස්ථීරවම මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">අයිතම %dක් මකමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් මකමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">අයිතම %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අයිතම %dක් ප්‍රතිසාධනය කරමින්…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">දින %dකින් මකනු ලැබේ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">දින %dකින් මකනු ලැබේ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">යෙදුම් %dක් අස්ථාපනය කරන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">යෙදුම් %dක් අස්ථාපනය කරන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -122,6 +122,17 @@
 
 .method public static getNotDuplicatedPermission(Landroid/app/Activity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "am",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -252,6 +263,17 @@
 
 .method public static getPermissionsNeedToShowSettings(Landroid/app/Activity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "am",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -323,6 +345,15 @@
 
 .method public static getPermissionsStringArray(Ljava/util/ArrayList;)[Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -384,6 +415,14 @@
 
 .method public static getPermissionsStringArray([Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;)[Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permissions"
+        }
+    .end annotation
 
     .line 330
     new-instance v0, Ljava/util/ArrayList;
@@ -430,6 +469,17 @@
 
 .method public static isCompulsoryPermission(Ljava/lang/String;Ljava/util/ArrayList;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permissionString",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -460,6 +510,16 @@
 
 .method public static isCompulsoryPermission(Ljava/lang/String;[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permissionString",
+            "permissions"
+        }
+    .end annotation
 
     .line 272
     array-length v0, p1
@@ -502,6 +562,16 @@
 
 .method public static isGrantedPermission(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mContext",
+            "permissionString"
+        }
+    .end annotation
 
     .line 226
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getDeviceOsVer()I
@@ -544,6 +614,17 @@
 
 .method public static isGrantedPermissions(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mContext",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -624,6 +705,17 @@
 
 .method public static notHasCompulsaryPermissions(Landroid/content/Context;Ljava/util/ArrayList;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mContext",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -693,6 +785,16 @@
 
 .method public static notHasCompulsaryPermissions(Landroid/content/Context;[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mContext",
+            "permissions"
+        }
+    .end annotation
 
     .line 323
     new-instance v0, Ljava/util/ArrayList;
@@ -716,6 +818,17 @@
 
 .method public static notHasPermissions(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mContext",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -749,6 +862,17 @@
 
 .method public static notHasPermissions(Landroid/content/Context;[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;)Ljava/util/ArrayList;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mContext",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -873,6 +997,17 @@
 
 .method public showGotoPermissionSettingDialog(Landroid/app/Activity;Ljava/util/ArrayList;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "activity",
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -905,6 +1040,14 @@
 
 .method public startInstalledAppDetailsActivity(Landroid/app/Activity;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -935,11 +1078,15 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {p1}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

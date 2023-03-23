@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onUpdated(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;ZZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0
+        }
+        names = {
+            "notificationApp",
+            "isAdd",
+            "isUpdated"
+        }
+    .end annotation
 .end method

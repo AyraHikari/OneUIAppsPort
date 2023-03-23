@@ -29,7 +29,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 11
 
     .line 15
     new-instance v0, Lcom/fasterxml/jackson/core/format/MatchStrength;
@@ -43,73 +43,65 @@
     sput-object v0, Lcom/fasterxml/jackson/core/format/MatchStrength;->NO_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
 
     .line 25
-    new-instance v0, Lcom/fasterxml/jackson/core/format/MatchStrength;
+    new-instance v1, Lcom/fasterxml/jackson/core/format/MatchStrength;
 
-    const-string v1, "INCONCLUSIVE"
+    const-string v3, "INCONCLUSIVE"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/format/MatchStrength;->INCONCLUSIVE:Lcom/fasterxml/jackson/core/format/MatchStrength;
+    sput-object v1, Lcom/fasterxml/jackson/core/format/MatchStrength;->INCONCLUSIVE:Lcom/fasterxml/jackson/core/format/MatchStrength;
 
     .line 37
-    new-instance v0, Lcom/fasterxml/jackson/core/format/MatchStrength;
+    new-instance v3, Lcom/fasterxml/jackson/core/format/MatchStrength;
 
-    const-string v1, "WEAK_MATCH"
+    const-string v5, "WEAK_MATCH"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/format/MatchStrength;->WEAK_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
+    sput-object v3, Lcom/fasterxml/jackson/core/format/MatchStrength;->WEAK_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
 
     .line 48
-    new-instance v0, Lcom/fasterxml/jackson/core/format/MatchStrength;
+    new-instance v5, Lcom/fasterxml/jackson/core/format/MatchStrength;
 
-    const-string v1, "SOLID_MATCH"
+    const-string v7, "SOLID_MATCH"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/format/MatchStrength;->SOLID_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
+    sput-object v5, Lcom/fasterxml/jackson/core/format/MatchStrength;->SOLID_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
 
     .line 60
-    new-instance v0, Lcom/fasterxml/jackson/core/format/MatchStrength;
+    new-instance v7, Lcom/fasterxml/jackson/core/format/MatchStrength;
 
-    const-string v1, "FULL_MATCH"
+    const-string v9, "FULL_MATCH"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/fasterxml/jackson/core/format/MatchStrength;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/format/MatchStrength;->FULL_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
+    sput-object v7, Lcom/fasterxml/jackson/core/format/MatchStrength;->FULL_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
 
-    const/4 v1, 0x5
+    const/4 v9, 0x5
 
-    new-array v1, v1, [Lcom/fasterxml/jackson/core/format/MatchStrength;
+    new-array v9, v9, [Lcom/fasterxml/jackson/core/format/MatchStrength;
+
+    aput-object v0, v9, v2
+
+    aput-object v1, v9, v4
+
+    aput-object v3, v9, v6
+
+    aput-object v5, v9, v8
+
+    aput-object v7, v9, v10
 
     .line 10
-    sget-object v7, Lcom/fasterxml/jackson/core/format/MatchStrength;->NO_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
-
-    aput-object v7, v1, v2
-
-    sget-object v2, Lcom/fasterxml/jackson/core/format/MatchStrength;->INCONCLUSIVE:Lcom/fasterxml/jackson/core/format/MatchStrength;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/fasterxml/jackson/core/format/MatchStrength;->WEAK_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/fasterxml/jackson/core/format/MatchStrength;->SOLID_MATCH:Lcom/fasterxml/jackson/core/format/MatchStrength;
-
-    aput-object v2, v1, v5
-
-    aput-object v0, v1, v6
-
-    sput-object v1, Lcom/fasterxml/jackson/core/format/MatchStrength;->$VALUES:[Lcom/fasterxml/jackson/core/format/MatchStrength;
+    sput-object v9, Lcom/fasterxml/jackson/core/format/MatchStrength;->$VALUES:[Lcom/fasterxml/jackson/core/format/MatchStrength;
 
     return-void
 .end method

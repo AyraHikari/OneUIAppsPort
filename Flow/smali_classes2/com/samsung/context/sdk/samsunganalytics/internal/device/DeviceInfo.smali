@@ -28,6 +28,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -134,7 +142,7 @@
     iput-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/device/DeviceInfo;->language:Ljava/lang/String;
 
     .line 39
-    sget-object v0, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+    sget-object v0, Layra/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/device/DeviceInfo;->androidVersion:Ljava/lang/String;
 
@@ -149,7 +157,7 @@
     iput-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/device/DeviceInfo;->deviceModel:Ljava/lang/String;
 
     .line 42
-    sget-object v0, Landroid/os/Build$VERSION;->INCREMENTAL:Ljava/lang/String;
+    sget-object v0, Layra/os/Build$VERSION;->INCREMENTAL:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/device/DeviceInfo;->firmwareVersion:Ljava/lang/String;
 

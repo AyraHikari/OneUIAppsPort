@@ -89,7 +89,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    const-string p2, "status and revCerts sequence must be in common order"
+    const-string/jumbo p2, "status and revCerts sequence must be in common order"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

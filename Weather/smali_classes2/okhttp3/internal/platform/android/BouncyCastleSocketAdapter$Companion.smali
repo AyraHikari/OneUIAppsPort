@@ -45,7 +45,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +53,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 59
     invoke-direct {p0}, Lokhttp3/internal/platform/android/BouncyCastleSocketAdapter$Companion;-><init>()V
 
     return-void
@@ -65,7 +63,6 @@
 .method public final getFactory()Lokhttp3/internal/platform/android/DeferredSocketAdapter$Factory;
     .locals 1
 
-    .line 60
     invoke-static {}, Lokhttp3/internal/platform/android/BouncyCastleSocketAdapter;->access$getFactory$cp()Lokhttp3/internal/platform/android/DeferredSocketAdapter$Factory;
 
     move-result-object v0

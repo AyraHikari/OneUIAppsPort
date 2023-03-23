@@ -1,166 +1,188 @@
-.class public abstract Lcom/google/android/gms/common/images/zaa;
+.class final Lcom/google/android/gms/common/images/zaa;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final zamv:Lcom/google/android/gms/common/images/zab;
+.field final synthetic zaa:Lcom/google/android/gms/common/images/ImageManager;
 
-.field private zamw:I
+.field private final zab:Landroid/net/Uri;
 
-.field protected zamx:I
-
-.field private zamy:Z
-
-.field private zamz:Z
-
-.field private zana:Z
-
-.field private zanb:Z
+.field private final zac:Landroid/os/ParcelFileDescriptor;
 
 
 # direct methods
-.method public constructor <init>(Landroid/net/Uri;I)V
-    .locals 2
+.method public constructor <init>(Lcom/google/android/gms/common/images/ImageManager;Landroid/net/Uri;Landroid/os/ParcelFileDescriptor;)V
+    .locals 0
 
-    .line 1
+    iput-object p1, p0, Lcom/google/android/gms/common/images/zaa;->zaa:Lcom/google/android/gms/common/images/ImageManager;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
+    iput-object p2, p0, Lcom/google/android/gms/common/images/zaa;->zab:Landroid/net/Uri;
 
-    .line 2
-    iput v0, p0, Lcom/google/android/gms/common/images/zaa;->zamw:I
-
-    .line 3
-    iput v0, p0, Lcom/google/android/gms/common/images/zaa;->zamx:I
-
-    .line 4
-    iput-boolean v0, p0, Lcom/google/android/gms/common/images/zaa;->zamy:Z
-
-    const/4 v1, 0x1
-
-    .line 5
-    iput-boolean v1, p0, Lcom/google/android/gms/common/images/zaa;->zamz:Z
-
-    .line 6
-    iput-boolean v0, p0, Lcom/google/android/gms/common/images/zaa;->zana:Z
-
-    .line 7
-    iput-boolean v1, p0, Lcom/google/android/gms/common/images/zaa;->zanb:Z
-
-    .line 8
-    new-instance v0, Lcom/google/android/gms/common/images/zab;
-
-    invoke-direct {v0, p1}, Lcom/google/android/gms/common/images/zab;-><init>(Landroid/net/Uri;)V
-
-    iput-object v0, p0, Lcom/google/android/gms/common/images/zaa;->zamv:Lcom/google/android/gms/common/images/zab;
-
-    .line 9
-    iput p2, p0, Lcom/google/android/gms/common/images/zaa;->zamx:I
+    iput-object p3, p0, Lcom/google/android/gms/common/images/zaa;->zac:Landroid/os/ParcelFileDescriptor;
 
     return-void
 .end method
 
 
 # virtual methods
-.method final zaa(Landroid/content/Context;Landroid/graphics/Bitmap;Z)V
-    .locals 1
+.method public final run()V
+    .locals 12
 
-    .line 11
-    invoke-static {p2}, Lcom/google/android/gms/common/internal/Asserts;->checkNotNull(Ljava/lang/Object;)V
+    const-string v0, "LoadBitmapFromDiskRunnable can\'t be executed in the main thread"
 
-    .line 12
-    new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
+    .line 1
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/Asserts;->checkNotMainThread(Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/google/android/gms/common/images/zaa;->zac:Landroid/os/ParcelFileDescriptor;
 
-    move-result-object p1
+    const/4 v1, 0x1
 
-    invoke-direct {v0, p1, p2}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+    const/4 v2, 0x0
 
-    const/4 p1, 0x0
+    const/4 v3, 0x0
 
-    const/4 p2, 0x1
-
-    .line 13
-    invoke-virtual {p0, v0, p3, p1, p2}, Lcom/google/android/gms/common/images/zaa;->zaa(Landroid/graphics/drawable/Drawable;ZZZ)V
-
-    return-void
-.end method
-
-.method final zaa(Landroid/content/Context;Lcom/google/android/gms/internal/base/zak;)V
-    .locals 1
-
-    .line 15
-    iget-boolean p1, p0, Lcom/google/android/gms/common/images/zaa;->zanb:Z
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    const/4 p2, 0x1
-
-    const/4 v0, 0x0
-
-    .line 16
-    invoke-virtual {p0, p1, v0, p2, v0}, Lcom/google/android/gms/common/images/zaa;->zaa(Landroid/graphics/drawable/Drawable;ZZZ)V
-
-    :cond_0
-    return-void
-.end method
-
-.method final zaa(Landroid/content/Context;Lcom/google/android/gms/internal/base/zak;Z)V
-    .locals 0
-
-    .line 19
-    iget p2, p0, Lcom/google/android/gms/common/images/zaa;->zamx:I
-
-    if-eqz p2, :cond_0
-
-    .line 21
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    .line 22
-    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    const/4 p2, 0x0
-
-    .line 24
-    invoke-virtual {p0, p1, p3, p2, p2}, Lcom/google/android/gms/common/images/zaa;->zaa(Landroid/graphics/drawable/Drawable;ZZZ)V
-
-    return-void
-.end method
-
-.method protected abstract zaa(Landroid/graphics/drawable/Drawable;ZZZ)V
-.end method
-
-.method protected final zaa(ZZ)Z
-    .locals 1
-
-    .line 26
-    iget-boolean v0, p0, Lcom/google/android/gms/common/images/zaa;->zamz:Z
+    const-string v4, "ImageManager"
 
     if-eqz v0, :cond_0
 
-    if-nez p2, :cond_0
+    .line 2
+    :try_start_0
+    invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
 
-    if-nez p1, :cond_0
+    move-result-object v0
 
-    const/4 p1, 0x1
+    invoke-static {v0}, Landroid/graphics/BitmapFactory;->decodeFileDescriptor(Ljava/io/FileDescriptor;)Landroid/graphics/Bitmap;
 
-    return p1
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v2, v0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    .line 8
+    iget-object v3, p0, Lcom/google/android/gms/common/images/zaa;->zab:Landroid/net/Uri;
+
+    .line 3
+    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v5, "OOM while loading bitmap for uri: "
+
+    invoke-virtual {v5, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v4, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    move v3, v1
+
+    .line 2
+    :goto_0
+    :try_start_1
+    iget-object v0, p0, Lcom/google/android/gms/common/images/zaa;->zac:Landroid/os/ParcelFileDescriptor;
+
+    .line 4
+    invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->close()V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v0
+
+    const-string v5, "closed failed"
+
+    .line 5
+    invoke-static {v4, v5, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0
-    const/4 p1, 0x0
+    :goto_1
+    move-object v9, v2
 
-    return p1
+    move v10, v3
+
+    .line 4
+    new-instance v0, Ljava/util/concurrent/CountDownLatch;
+
+    .line 6
+    invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+
+    iget-object v7, p0, Lcom/google/android/gms/common/images/zaa;->zaa:Lcom/google/android/gms/common/images/ImageManager;
+
+    invoke-static {v7}, Lcom/google/android/gms/common/images/ImageManager;->zab(Lcom/google/android/gms/common/images/ImageManager;)Landroid/os/Handler;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/google/android/gms/common/images/zac;
+
+    iget-object v8, p0, Lcom/google/android/gms/common/images/zaa;->zab:Landroid/net/Uri;
+
+    move-object v6, v2
+
+    move-object v11, v0
+
+    invoke-direct/range {v6 .. v11}, Lcom/google/android/gms/common/images/zac;-><init>(Lcom/google/android/gms/common/images/ImageManager;Landroid/net/Uri;Landroid/graphics/Bitmap;ZLjava/util/concurrent/CountDownLatch;)V
+
+    .line 7
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 8
+    :try_start_2
+    invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
+    :try_end_2
+    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_2
+
+    return-void
+
+    .line 5
+    :catch_2
+    iget-object v0, p0, Lcom/google/android/gms/common/images/zaa;->zab:Landroid/net/Uri;
+
+    .line 9
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "Latch interrupted while posting "
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v4, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
 .end method

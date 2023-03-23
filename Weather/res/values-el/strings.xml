@@ -60,6 +60,7 @@
     <string name="air_quality">Ποιότητα αέρα</string>
     <string name="air_quality_next_tts">Καθημερινές προγνώσεις για την ποιότητα του αέρα αργότερα</string>
     <string name="air_quality_previous_tts">Καθημερινές προγνώσεις για την ποιότητα του αέρα νωρίτερα</string>
+    <string name="alert_title">Ειδοποίηση για σοβαρά καιρικά φαινόμενα</string>
     <string name="all_added_cities">Όλες οι πόλεις που προσθέσατε</string>
     <string name="allow">Επιτρέπεται</string>
     <string name="allow_permission_in_settings">Για να χρησιμοποιήσετε αυτήν τη λειτουργία, θα πρέπει να παραχωρήσετε το δικαίωμα στις Ρυθμίσεις.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Η ενέργεια δεν υποστηρίζεται.</string>
     <string name="apply_daylight_saving_time">Εφαρμογή θερινής ώρας;</string>
     <string name="as_possible_after_verification">Αναφορά στάλθηκε. Το όνομα πόλης θα αλλάξει το συντομότερο δυνατό μετά την επαλήθευση.</string>
+    <string name="auto_refresh_on_screen_description">Θα λαμβάνετε ενημερωμένες πληροφορίες για τον καιρό κάθε ώρα αυτόματα. Όταν αυτή η λειτουργία είναι ενεργή, δεν θα είναι δυνατή η ανανέωση με μη αυτόματο τρόπο.</string>
+    <string name="auto_refresh_on_the_go">Αυτόματη ανανέωση εν κινήσει</string>
+    <string name="auto_refresh_on_the_go_advanced">Σύνθετες</string>
+    <string name="auto_refresh_on_the_go_description">Θα λαμβάνετε συχνότερα ενημερώσεις για τον καιρό όταν οδηγείτε, κάνετε ποδήλατο, τρέχετε ή περπατάτε. Όταν αυτή η λειτουργία είναι ενεργή, δεν θα είναι δυνατή η ανανέωση με μη αυτόματο τρόπο.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Θα λαμβάνετε συχνότερα ενημερώσεις για τον καιρό όταν οδηγείτε, κάνετε ποδήλατο, τρέχετε ή περπατάτε.</string>
     <string name="bottomsheet_action_expand_halfway">Ανάπτυξη μέχρι τη μέση</string>
     <string name="btn_report">Αναφ.</string>
     <string name="button_finish">Τέλος</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Πατήστε δύο φορές για περισσότερες πληροφορίες.</string>
     <string name="china">Κίνα</string>
     <string name="cities_button">Πόλεις</string>
+    <string name="city_added">Η πόλη προστέθηκε.</string>
     <string name="city_list_text">Πόλεις</string>
     <string name="clear">Αίθριος</string>
     <string name="clear_text_end_icon_content_description">Διαγραφή κειμένου</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Οι πληροφορίες τοποθεσίας της συσκευής σας θα σταλθούν στον πάροχο περιεχομένου για να σας παρέχονται τοπικές πληροφορίες καιρού.</string>
     <string name="contents_error_msg">Αυτή η υπηρεσία δεν είναι διαθέσιμη προσωρινά. Δοκιμάστε ξανά αργότερα.</string>
     <string name="copy">Αντιγραφή</string>
-    <string name="copy_toast_msg">Ο σύνδεσμος αντιγράφηκε στο πρόχειρο</string>
     <string name="correct_city_name">Σωστό όνομα πόλης</string>
     <string name="couldnt_find_location">Δεν ήταν δυνατή η εύρεση της τοποθεσίας</string>
     <string name="cover_screen_top_sync_dialog_text">Να οριστεί η ίδια τοποθεσία στην κύρια οθόνη;</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Έγινε απόθεση του στοιχείου στη θέση %d.</string>
     <string name="dragndroplist_drag_start">Ξεκίνησε η μεταφορά του στοιχείου στη θέση %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Δεν είναι δυνατή η μεταφορά του στοιχείου στη θέση %d.</string>
+    <string name="drawer_tips">Συμβουλές για το %s</string>
     <string name="drawer_tips_message">Πατήστε εδώ για την προσθήκη, τη διαγραφή και την αναδιάταξη τοποθεσιών. Μπορείτε επίσης να προσθέσετε πολλαπλά widget για την εμφάνιση διαφορετικών τοποθεσιών στην Αρχική οθόνη.</string>
     <string name="drawer_tips_message_1">Πατήστε «Διαχείριση τοποθεσιών» στο τέλος αυτού του μενού για προσθήκη, διαγραφής και αναδιάταξη τοποθεσιών.</string>
     <string name="drawer_tips_message_2">Μπορείτε να προσθέσετε περισσότερα από ένα widget στην Αρχική οθόνη για την εμφάνιση διαφορετικών τοποθεσιών ταυτόχρονα.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Σύνθετες</string>
     <string name="exposed_dropdown_menu_content_description">Εμφάνιση αναπτυσσόμενου μενού</string>
     <string name="failed_to_send_report">Η αποστολή της αναφοράς απέτυχε</string>
-    <string name="fallback_menu_item_copy_link">Αντιγραφή συνδέσμου</string>
-    <string name="fallback_menu_item_open_in_browser">Άνοιγμα σε πρόγραμμα περιήγησης</string>
-    <string name="fallback_menu_item_share_link">Κοινοποίηση συνδέσμου</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Αγαπημένη τοποθεσία</string>
     <string name="feel_like_pd_minus_temp">Αίσθηση -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Βίντεο πρόγνωσης</string>
     <string name="format_km_per_hour">%s χλμ/ώ</string>
     <string name="format_m_per_hour">%s μ.α.ώ.</string>
+    <string name="fri">Παρ.</string>
     <string name="general">Γενικά</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Δείτε εξατομικευμένο περιεχόμενο με βάση τον τρόπο με τον οποίο χρησιμοποιείτε το τηλέφωνό σας.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Δείτε εξατομικευμένο περιεχόμενο με βάση τον τρόπο με τον οποίο χρησιμοποιείτε το tablet σας.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">λαμβάνει πληροφορίες για τον καιρό, συμπεριλαμβανομένης της τρέχουσας τοποθεσίας σας, από την εφαρμογή Καιρός</string>
     <string name="go_to_website">Μετάβαση σε τοποθεσία web</string>
     <string name="goto_apps">Υπάρχει διαθέσιμη νέα ενημέρωση. Να γίνει εγκατάσταση τώρα;</string>
     <string name="goto_apps_later">Αργότερα</string>
     <string name="goto_apps_now">Τώρα</string>
     <string name="goto_apps_update_title">Ειδοποιήσεις νέου περιεχομένου</string>
     <string name="header_tts">Επικεφαλίδα</string>
+    <string name="heavy">Έντονος</string>
     <string name="heavy_rain">Ραγδαία βροχή</string>
     <string name="heavy_rain_followed_by_intense_heat">Έντονη βροχή και μετά έντονη ζέστη</string>
     <string name="heavy_rain_followed_by_light_rain">Έντονη βροχή και μετά έντονη ζέστη</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Ορατότητα</string>
     <string name="life_index_wind">Άνεμος</string>
     <string name="life_index_wind_force">Ταχύτητα ανέμου</string>
+    <string name="light">Ήπιος</string>
     <string name="light_rain_followed_by_heavy_rain">Ελαφριά βροχόπτωση και μετά έντονη βροχή</string>
     <string name="light_rain_with_some_heavy_rain">Ελαφριά βροχόπτωση με κατά τόπους έντονη βροχή</string>
     <string name="link_tts">Σύνδεση</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Δεν βρέθηκαν αποτελέσματα.</string>
     <string name="message_service_not_available">Μη διαθέσιμη υπηρεσία.</string>
     <string name="minus_tts">Μείον</string>
+    <string name="mon">Δευ.</string>
     <string name="more">Περισσότερα</string>
     <string name="more_cuntact_us">Επικοινωνήστε μαζί μας</string>
     <string name="more_information">Περισσότερα</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Πατήστε εδώ για να αλλάξετε την προεπιλεγμένη τοποθεσία καιρού και να διαχειριστείτε όλες τις τοποθεσίες σας.</string>
     <string name="new_version_available">Υπάρχει διαθέσιμη μια νέα έκδοση του %s.</string>
     <string name="new_version_is_available">Υπάρχει διαθέσιμη νέα έκδοση.</string>
+    <string name="news_menu_show_news">Εμφάνιση ειδήσεων</string>
+    <string name="news_opt_in_banner_title_text">Ενημερωθείτε για τα τρέχοντα συμβάντα με την προβολή ειδήσεων στο widget Καιρός.</string>
+    <string name="news_opt_in_popup_desc_text">Ενημερωθείτε για ό,τι συμβαίνει στον κόσμο με την προβολή πρόσφατων τίτλων ειδήσεων από την εφαρμογή %s στο widget Καιρός.</string>
+    <string name="news_opt_in_popup_title_text">Δείτε ειδήσεις και τον καιρό σε ένα widget</string>
+    <string name="news_request_agree_text">Πατήστε για να δείτε ειδήσεις από %s</string>
+    <string name="news_widget_bubble_text">Δείτε ειδήσεις μαζί με την πρόγνωση του καιρού.</string>
+    <string name="news_widget_dummy_title">Κορυφαία είδηση της ημέρας</string>
+    <string name="news_widget_new_dummy_title">Τα 5 πράγματα που πρέπει να γνωρίζετε σήμερα το πρωί</string>
+    <string name="news_widget_oobe_text">Πατ. εδώ για προσθ. ειδήσεων.</string>
     <string name="next">Επόμενη πόλη</string>
+    <string name="next_btn">Επόμενο</string>
     <string name="next_city">Πατήστε δύο φορές για να δείτε πληροφορίες καιρού για την επόμενη πόλη.</string>
     <string name="night_tts">Νύχτα</string>
     <string name="no_application_available">Δεν υπάρχουν διαθέσιμες εφαρμογές.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Δεν υπάρχουν πληροφορίες καιρού</string>
     <string name="not_in_use">Δεν χρησιμοποιείται</string>
     <string name="not_now">Όχι τώρα</string>
+    <string name="not_now_btn">Όχι τώρα</string>
     <string name="not_selected">Δεν έχει επιλεγεί</string>
     <string name="not_set">Δεν έχει οριστεί</string>
     <string name="nothing_selected">Δεν έχει γίνει καμία επιλογή.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Για τον ταχύτερο και ακριβέστερο εντοπισμό τοποθεσίας, πατήστε ΡΥΘΜΙΣΕΙΣ και, στη συνέχεια, ορίστε τη Μέθοδο εντοπισμού σε «GPS, Wi-Fi και δίκτυα κινητής τηλεφωνίας».</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Για τον ταχύτερο και ακριβέστερο εντοπισμό τοποθεσίας, πατήστε ΡΥΘΜΙΣΕΙΣ και, στη συνέχεια, ορίστε τη Μέθοδο εντοπισμού σε «GPS και Wi-Fi».</string>
     <string name="notice_gps_trun_off_message_verizon">Για να δείτε πληροφορίες καιρού για την τοποθεσία σας, ενεργοποιήστε τις ρυθμίσεις τοποθεσίας και βεβαιωθείτε ότι η λειτουργία έχει οριστεί σε «Υψηλή ακρίβεια».</string>
+    <string name="notification_alert_channel_name">Ειδοποίηση για σοβαρά καιρικά φαινόμενα</string>
     <string name="notification_apps_update_channel_name">Ενημέρωση ειδοποιήσεων</string>
     <string name="notification_auto_refresh_channel_name">Αυτόματη ανανέωση καιρού</string>
     <string name="notification_dex_channel_name">Καιρός στο Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Άνοιγμα εφαρμ.</string>
     <string name="open_source_licences">Άδειες ανοιχτού κώδικα</string>
     <string name="other_locations">Άλλες τοποθεσίες</string>
+    <string name="partly_sunny">Μερική ηλιοφάνεια</string>
     <string name="password_toggle_content_description">Εμφάνιση κωδικού πρόσβασης</string>
     <string name="paused">Σε παύση</string>
     <string name="pd_km">%.1f χλμ</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Το \"%1$s\" αντιγράφηκε στο πρόχειρο.</string>
     <string name="preview">Προεπισκόπηση %s</string>
     <string name="previous">Προηγούμενη πόλη</string>
+    <string name="previous_btn">Προηγούμενο</string>
     <string name="previous_city">Πατήστε δύο φορές για να δείτε πληροφορίες καιρού για την προηγούμενη πόλη.</string>
     <string name="privacy_policy">Πολιτική απορρήτου</string>
     <string name="probability_of_rain_text">Πιθανότητα βροχής</string>
     <string name="protect_your_content">Προστασία περιεχομένου</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Ραντάρ και χάρτες</string>
     <string name="rain">Βροχή</string>
     <string name="rain_followed_by_intense_heat">Βροχή και μετά έντονη ζέστη</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Για να ενημερώσετε τις πληροφορίες καιρού, πατήστε ΡΥΘΜΙΣΕΙΣ, μεταβείτε στο μενού Πληροφορίες εφαρμογής > Δικαιώματα και, στη συνέχεια, παραχωρήστε τα παρακάτω δικαιώματα και δοκιμάστε ξανά:</string>
     <string name="runtime_location_permission_title">Παραχώρηση δικαιωμάτων</string>
     <string name="runtime_oem_grant_permission_desc">Η εφαρμογή %s έχει δικαίωμα πρόσβασης για τα εξής:</string>
+    <string name="sat">Σάβ.</string>
     <string name="save_button">Αποθήκευση</string>
     <string name="search_menu_title">Αναζήτηση</string>
     <string name="search_most_searched_for">Δημοφιλείς αναζητήσεις</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Υπάρχει νέο διαθέσιμο περιεχόμενο</string>
     <string name="sesl_material_overflow_badge_text_n">Ν</string>
     <string name="sesl_more_item_label">Περισσότερα</string>
+    <string name="sesl_preferecne_badge_description">Νέα ειδοποίηση</string>
     <string name="sesl_preferencecategory_added_title">Επικεφαλίδα</string>
     <string name="sesl_search_hint">Αναζήτηση</string>
     <string name="sesl_searchview_description_clear">Εκκαθάριση πεδίου αναζήτησης</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Προβολή λιγότερων</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Ανενεργό</string>
+    <string name="status_on">Ενεργό</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Κυρ.</string>
     <string name="sunny">Με ήλιο</string>
     <string name="sunny_with_some_clouds">Ηλιοφάνεια με λίγα σύννεφα</string>
     <string name="sunny_with_some_heavy_rain">Ηλιοφάνεια με λίγη έντονη βροχή</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Πατήστε εδώ για την επαναφορά των δεδομένων καιρού από την παλιά συσκευή σας.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Πατήστε ΕΠΑΝΑΛΗΨΗ για να δοκιμάσετε ξανά να βρείτε την τοποθεσία σας.</string>
     <string name="tap_setting_message_edge_panel">Ενεργοποιήστε την Τοποθεσία για τη λήψη των πληροφοριών καιρού.</string>
+    <string name="tap_the_settings_icon">Πατήστε το εικονίδιο ρυθμίσεων.</string>
     <string name="tap_to_get_the_weather">Πατήστε για να δείτε τον καιρό</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Όροι και Προϋποθέσεις</string>
     <string name="the_latest_version">Έχει ήδη εγκατασταθεί η πιο πρόσφατη έκδοση.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Αυτό θα εφαρμοστεί επίσης στις ειδοποιήσεις και το Ημερολόγιο.</string>
+    <string name="thu">Πέμ.</string>
     <string name="tick_box_tts">Πλαίσιο ελέγχου</string>
     <string name="ticked_tts">Επιλέχθηκε</string>
     <string name="time_am">ΠΜ</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Ωριαία</string>
     <string name="title_select_locations">Επιλογή τοποθεσιών</string>
     <string name="title_theme">Θέματα</string>
+    <string name="to_continue_agree_to_updated">Για να συνεχίσετε, αποδεχτείτε τους/την ενημερωμένους(η) %s.</string>
     <string name="to_get_local_weather_chn">"Για τη λήψη πληροφοριών τοπικού καιρού, οι πληροφορίες τοποθεσίας της συσκευής σας θα αποσταλούν στον παροχέα υπηρεσιών. (Ανατρέξτε στους %1$sΌρους και Προϋποθέσεις%2$s και στην %3$sΠολιτική Απορρήτου%4$s του παροχέα).
 Άλλες εφαρμογές και υπηρεσίες στη συσκευή σας ενδέχεται να έχουν πρόσβαση στα ανακτηθέντα δεδομένα καιρού, για εμφάνιση των πληροφοριών καιρού σε αυτές τις εφαρμογές.
 Για να σας παρέχουμε συνεχείς πληροφορίες καιρού, η υπηρεσία καιρού θα έχει πρόσβαση στην τοποθεσία σας, ακόμα και όταν δεν χρησιμοποιείτε την εφαρμογή."</string>
     <string name="today">Σήμερα</string>
+    <string name="try_it_out_btn">Δοκιμή</string>
+    <string name="tue">Τρ.</string>
+    <string name="turn_on_to_use_precise_location">Για να χρησιμοποιήσετε αυτήν τη λειτουργία, θα πρέπει να επιτρέψετε στην εφαρμογή %s να έχει πάντα πρόσβαση στην τοποθεσία σας και να ενεργοποιήσετε τη λειτουργία «Χρήση ακριβούς τοποθεσίας». Πατήστε Ρυθμίσεις και μεταβείτε στο μενού Άδειες > Τοποθεσία.</string>
     <string name="tw_title_weather_broadcast">Μετάδοση</string>
-    <string name="unable_to_check_for_updates">Δεν είναι δυνατός ο έλεγχος για ενημερώσεις. Δεν υπάρχει σύνδεση δικτύου.</string>
+    <string name="unable_to_check_for_updates">Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις. Δοκιμάστε ξανά αργότερα.</string>
     <string name="unable_to_receive_info_msg">Αδύνατη η λήψη πληροφοριών</string>
     <string name="unticked_tts">Μη επιλεγμένο</string>
     <string name="unused">Μη χρησιμοποιούμενα στοιχεία</string>
     <string name="update">Ενημέρωση</string>
     <string name="update_abb8">Ενημέρωση</string>
     <string name="update_app">Ενημέρωση εφαρμογής</string>
+    <string name="updated_tile_chn">Ενημερώθηκε: %s</string>
     <string name="updated_tts">Η %s ενημερώθηκε</string>
+    <string name="use_current_location">Χρήση τρέχ. τοποθεσίας</string>
     <string name="use_current_location_agree_popup">"Για τη λήψη πληροφοριών τοπικού καιρού, οι πληροφορίες τοποθεσίας της συσκευής σας θα αποσταλούν στον παροχέα υπηρεσιών. (Ανατρέξτε στην %1$sπολιτική απορρήτου%2$s του παροχέα.)
 Άλλες εφαρμογές και υπηρεσίες στη συσκευή σας ενδέχεται να έχουν πρόσβαση στα ανακτηθέντα δεδομένα καιρού, για εμφάνιση των πληροφοριών καιρού σε αυτές τις εφαρμογές."</string>
     <string name="use_current_location_and_background_agree_popup">"Για τη λήψη πληροφοριών τοπικού καιρού, οι πληροφορίες τοποθεσίας της συσκευής σας θα αποσταλούν στον παροχέα υπηρεσιών. (Ανατρέξτε στην %1$sΠολιτική Απορρήτου%2$s του παροχέα.)
@@ -746,9 +784,16 @@
 Μπορείτε να απενεργοποιήσετε τη χρήση της τοποθεσίας σας μεταβαίνοντας στις ρυθμίσεις της εφαρμογής Καιρός."</string>
     <string name="use_current_location_body_msg_chn">"Διαβάστε προσεκτικά πριν χρησιμοποιήσετε το «Καιρός»:
 Εάν θέλετε να μάθετε τον καιρό της τρέχουσας τοποθεσίας σας, θα πρέπει να επιτρέψετε στον τρίτο πάροχο υπηρεσιών να έχει συνεχή (ακόμη και όταν δεν χρησιμοποιείτε την υπηρεσία) πρόσβαση στη συσκευή σας και να αποκτά ορισμένα δεδομένα, όπως αναφέρονται παρακάτω. Διαβάστε προσεκτικά και κατανοήστε τους %1$sΌρους και Προϋποθέσεις%2$s και την %3$sΠολιτική ιδιωτικού απορρήτου%4$s του τρίτου παρόχου υπηρεσιών πριν δώσετε τέτοια άδεια. Μπορείτε να ανακαλέσετε την άδειά σας, απενεργοποιώντας την «Τοποθεσία» στο μενού Ρυθμίσεις. Άλλες εφαρμογές και υπηρεσίες στη συσκευή σας ενδέχεται να έχουν πρόσβαση στα ανακτηθέντα δεδομένα καιρού για εμφάνιση των πληροφοριών καιρού σε αυτές τις εφαρμογές και υπηρεσίες."</string>
+    <string name="use_current_location_body_msg_kor">"Η τρέχουσα τοποθεσία σας θα συλλεχθεί και θα χρησιμοποιηθεί για την παροχή ορισμένων λειτουργιών της εφαρμογής Καιρός, όπως είναι η λήψη του τοπικού καιρού.
+
+Για να παρέχει διαρκώς πληροφορίες για τον καιρό, η εφαρμογή θα επεξεργάζεται τακτικά την τοποθεσία σας, ακόμη και όταν δεν τη χρησιμοποιείτε. Αν συνεχίσετε, θα αποδεχτείτε τη συλλογή και την επεξεργασία της τοποθεσίας σας για τους παραπάνω σκοπούς.
+
+Μπορείτε να διακόψετε τη συλλογή και τη χρήση της τοποθεσίας από τις ρυθμίσεις της εφαρμογής Καιρός."</string>
     <string name="use_current_location_body_purpose">Σκοπός</string>
     <string name="use_current_location_body_purpose_content">Για την παροχή πληροφοριών καιρού για την τρέχουσα τοποθεσία σας</string>
     <string name="use_current_location_body_search_provider">Πάροχος υπηρεσιών</string>
+    <string name="use_current_location_continue">Συνέχεια</string>
+    <string name="use_current_location_not_now">Όχι τώρα</string>
     <string name="use_current_location_off_alert_popup">Θα καταργηθούν οι τρέχουσες πληροφορίες τοποθεσίας.</string>
     <string name="useful_informations">Συμβουλές για τη ζωή και άλλες αναφορές</string>
     <string name="using_as">Χρησιμοποιείται ως %s</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">Συμβουλές για τον καιρό</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Τετ.</string>
     <string name="weekly_forecast">Ημερήσια</string>
     <string name="widget_background">Φόντο widget</string>
     <string name="widget_empty_text">Πατήστε για πληροφορίες καιρού</string>
+    <string name="widget_location">Όνομα πόλης</string>
     <string name="widget_name_4x1">Καιρός και ρολόι</string>
     <string name="widget_setting">Ρυθμίσεις</string>
     <string name="widget_setting_background_color">Χρώμα φόντου</string>

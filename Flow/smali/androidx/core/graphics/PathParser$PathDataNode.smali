@@ -23,6 +23,16 @@
 # direct methods
 .method constructor <init>(C[F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "params"
+        }
+    .end annotation
 
     .line 352
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,6 +48,14 @@
 
 .method constructor <init>(Landroidx/core/graphics/PathParser$PathDataNode;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "n"
+        }
+    .end annotation
 
     .line 357
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,6 +83,22 @@
 
 .method private static addCommand(Landroid/graphics/Path;[FCC[F)V
     .locals 25
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "path",
+            "current",
+            "previousCmd",
+            "cmd",
+            "val"
+        }
+    .end annotation
 
     move-object/from16 v10, p0
 
@@ -1108,6 +1142,32 @@
 
 .method private static arcToBezier(Landroid/graphics/Path;DDDDDDDDD)V
     .locals 49
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "p",
+            "cx",
+            "cy",
+            "a",
+            "b",
+            "e1x",
+            "e1y",
+            "theta",
+            "start",
+            "sweep"
+        }
+    .end annotation
 
     move-wide/from16 v0, p5
 
@@ -1369,6 +1429,32 @@
 
 .method private static drawArc(Landroid/graphics/Path;FFFFFFFZZ)V
     .locals 41
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "p",
+            "x0",
+            "y0",
+            "x1",
+            "y1",
+            "a",
+            "b",
+            "theta",
+            "isMoreThanHalf",
+            "isPositiveArc"
+        }
+    .end annotation
 
     move/from16 v1, p1
 
@@ -1522,7 +1608,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v10, v11}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1683,6 +1773,16 @@
 
 .method public static nodesToPath([Landroidx/core/graphics/PathParser$PathDataNode;Landroid/graphics/Path;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "node",
+            "path"
+        }
+    .end annotation
 
     const/4 v0, 0x6
 
@@ -1726,6 +1826,18 @@
 # virtual methods
 .method public interpolatePathDataNode(Landroidx/core/graphics/PathParser$PathDataNode;Landroidx/core/graphics/PathParser$PathDataNode;F)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeFrom",
+            "nodeTo",
+            "fraction"
+        }
+    .end annotation
 
     .line 388
     iget-char v0, p1, Landroidx/core/graphics/PathParser$PathDataNode;->mType:C

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_news_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/news_widget_2x2_prev_arrow_touch_size_width_land" android:paddingEnd="@dimen/news_widget_2x2_next_arrow_touch_size_width_land">
+        <TextView android:textSize="@dimen/news_widget_2x2_publisher_text_size" android:textColor="@color/col_70_FAFAFA" android:ellipsize="end" android:id="@id/news_publisher_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Upday" android:maxLines="1" style="@style/WeatherWidget.TextAppearance.NewsDescription" />
+        <TextView android:textSize="@dimen/news_widget_2x2_title_text_size" android:textColor="@color/col_FAFAFA" android:ellipsize="end" android:id="@id/news_title_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/news_widget_2x2_title_marginTop" android:text="@string/news_widget_new_dummy_title" android:maxLines="3" style="@style/WeatherWidget.TextAppearance.NewsTitle" />
+    </LinearLayout>
+</FrameLayout>

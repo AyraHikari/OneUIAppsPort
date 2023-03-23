@@ -14,6 +14,18 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectedThread;Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "thread",
+            "state",
+            "socket"
+        }
+    .end annotation
 
     .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

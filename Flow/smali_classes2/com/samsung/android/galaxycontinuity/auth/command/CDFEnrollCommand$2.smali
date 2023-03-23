@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 198
+    .line 205
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->values()[Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     move-result-object v0

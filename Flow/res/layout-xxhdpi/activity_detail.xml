@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="192.0dip">
-        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/manage_pcs_title" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" style="@style/CollapsingToolbarStyle">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="192.0dip">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/notices" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" style="@style/CollapsingToolbarStyle">
             <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
-    <RelativeLayout android:orientation="vertical" android:background="@color/landscape_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior"
-      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/activity_main_panel" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
-            <androidx.core.widget.NestedScrollView android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
-                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                    <com.samsung.android.galaxycontinuity.customcontrols.RoundedCornerFrameLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                        <ImageView android:id="@id/detail_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="189.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:scaleType="fitCenter" android:contentDescription="TODO" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
-                    </com.samsung.android.galaxycontinuity.customcontrols.RoundedCornerFrameLayout>
-                    <TextView android:id="@id/detail_desc" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/TextViewDesc" />
+    <RelativeLayout android:orientation="vertical" android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.core.widget.NestedScrollView android:id="@id/desc_text_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/detail_title" android:paddingTop="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/activity_horizontal_ss_margin" android:paddingEnd="@dimen/activity_horizontal_ss_margin" style="@style/BasicDreamDescription" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0sp" android:id="@id/detail_desc" android:paddingTop="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
                 </LinearLayout>
-            </androidx.core.widget.NestedScrollView>
-        </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
     </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$checkEncoding"
+        }
+    .end annotation
 
-    .line 1287
+    .line 1257
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$4;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     iput-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$4;->val$checkEncoding:Z
@@ -42,14 +52,14 @@
 .method public run()V
     .locals 2
 
-    .line 1290
+    .line 1260
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$4;->val$checkEncoding:Z
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$4;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$800(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     move-result-object v0
 
@@ -61,11 +71,11 @@
 
     return-void
 
-    .line 1293
+    .line 1263
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$4;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$800(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$700(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     move-result-object v0
 
@@ -77,7 +87,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1295
+    .line 1265
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$4;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     const-string v1, "FAILURE_VIDEO_CODEC_RESURCE_OVERSPEC"

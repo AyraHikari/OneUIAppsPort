@@ -28,6 +28,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem;Lcom/samsung/android/galaxycontinuity/data/NotificationData;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$notificationData",
+            "val$dataIndex"
+        }
+    .end annotation
 
     .line 248
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem;
@@ -45,6 +57,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     .line 251
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatListItem;

@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
-    .line 1039
+    .line 737
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$3;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,29 +36,12 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
-    .line 1042
+    .line 740
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$3;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->mItemAnimator:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;
-
-    if-eqz v0, :cond_0
-
-    .line 1043
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$3;->this$0:Landroidx/recyclerview/widget/RecyclerView;
-
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->mItemAnimator:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->runPendingAnimations()V
-
-    .line 1045
-    :cond_0
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$3;->this$0:Landroidx/recyclerview/widget/RecyclerView;
-
-    const/4 v1, 0x0
-
-    iput-boolean v1, v0, Landroidx/recyclerview/widget/RecyclerView;->mPostedAnimatorRunner:Z
+    invoke-static {v0}, Landroidx/recyclerview/widget/RecyclerView;->access$300(Landroidx/recyclerview/widget/RecyclerView;)V
 
     return-void
 .end method

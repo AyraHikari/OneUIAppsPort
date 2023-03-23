@@ -88,6 +88,14 @@
 # direct methods
 .method public constructor <init>([B)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 90
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -130,6 +138,14 @@
 
 .method private setContactCrc([B)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 196
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;->mManufacturerType:I
@@ -191,6 +207,14 @@
 
 .method private setContactHash([B)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 181
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;->mManufacturerType:I
@@ -241,6 +265,14 @@
 
 .method private setDeviceCategory([B)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 166
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;->mManufacturerType:I
@@ -293,6 +325,14 @@
 
 .method private setDeviceId([B)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 213
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;->mManufacturerType:I
@@ -373,6 +413,14 @@
 
 .method private setManufacturerRawData([B)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 109
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;->mManufacturerRawData:[B
@@ -382,6 +430,14 @@
 
 .method private setManufacturerType([B)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -557,6 +613,14 @@
 
 .method public isSupportFeature(B)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "feature"
+        }
+    .end annotation
 
     .line 241
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;->mManufacturerType:I
@@ -589,6 +653,14 @@
 
 .method public updateDeviceInfo([B)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 

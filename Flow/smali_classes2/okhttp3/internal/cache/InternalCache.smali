@@ -10,6 +10,9 @@
             Ljava/io/IOException;
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract put(Lokhttp3/Response;)Lokhttp3/internal/cache/CacheRequest;
@@ -17,6 +20,9 @@
         value = {
             Ljava/io/IOException;
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end method
 

@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 35
+    .line 43
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/discovery/model/FoundDevice$DeviceType;->values()[Lcom/samsung/android/galaxycontinuity/discovery/model/FoundDevice$DeviceType;
 
     move-result-object v0

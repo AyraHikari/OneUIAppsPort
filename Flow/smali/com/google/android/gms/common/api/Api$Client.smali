@@ -1,5 +1,6 @@
 .class public interface abstract Lcom/google/android/gms/common/api/Api$Client;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
 .implements Lcom/google/android/gms/common/api/Api$AnyClient;
@@ -23,6 +24,9 @@
 .method public abstract disconnect()V
 .end method
 
+.method public abstract disconnect(Ljava/lang/String;)V
+.end method
+
 .method public abstract dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 .end method
 
@@ -30,6 +34,9 @@
 .end method
 
 .method public abstract getEndpointPackageName()Ljava/lang/String;
+.end method
+
+.method public abstract getLastDisconnectMessage()Ljava/lang/String;
 .end method
 
 .method public abstract getMinApkVersion()I
@@ -48,6 +55,17 @@
 .end method
 
 .method public abstract getRequiredFeatures()[Lcom/google/android/gms/common/Feature;
+.end method
+
+.method public abstract getScopesForConnectionlessNonSignIn()Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Lcom/google/android/gms/common/api/Scope;",
+            ">;"
+        }
+    .end annotation
 .end method
 
 .method public abstract getServiceBrokerBinder()Landroid/os/IBinder;

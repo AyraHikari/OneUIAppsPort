@@ -49,7 +49,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1072
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 1072
     invoke-direct {p0}, Lokhttp3/OkHttpClient$Companion;-><init>()V
 
     return-void
@@ -77,7 +75,6 @@
         }
     .end annotation
 
-    .line 1075
     invoke-static {}, Lokhttp3/OkHttpClient;->access$getDEFAULT_CONNECTION_SPECS$cp()Ljava/util/List;
 
     move-result-object v0
@@ -96,7 +93,6 @@
         }
     .end annotation
 
-    .line 1073
     invoke-static {}, Lokhttp3/OkHttpClient;->access$getDEFAULT_PROTOCOLS$cp()Ljava/util/List;
 
     move-result-object v0

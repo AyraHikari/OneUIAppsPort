@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/internal/IAccountAccessor$Stub;
 .super Lcom/google/android/gms/internal/common/zzb;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 # interfaces
 .implements Lcom/google/android/gms/common/internal/IAccountAccessor;
@@ -13,12 +14,6 @@
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x409
     name = "Stub"
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/google/android/gms/common/internal/IAccountAccessor$Stub$zza;
-    }
 .end annotation
 
 
@@ -46,26 +41,25 @@
     :cond_0
     const-string v0, "com.google.android.gms.common.internal.IAccountAccessor"
 
-    .line 5
+    .line 1
     invoke-interface {p0, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
     move-result-object v0
 
-    .line 6
+    .line 2
     instance-of v1, v0, Lcom/google/android/gms/common/internal/IAccountAccessor;
 
     if-eqz v1, :cond_1
 
-    .line 7
+    .line 3
     check-cast v0, Lcom/google/android/gms/common/internal/IAccountAccessor;
 
     return-object v0
 
-    .line 8
     :cond_1
-    new-instance v0, Lcom/google/android/gms/common/internal/IAccountAccessor$Stub$zza;
+    new-instance v0, Lcom/google/android/gms/common/internal/zzv;
 
-    invoke-direct {v0, p0}, Lcom/google/android/gms/common/internal/IAccountAccessor$Stub$zza;-><init>(Landroid/os/IBinder;)V
+    invoke-direct {v0, p0}, Lcom/google/android/gms/common/internal/zzv;-><init>(Landroid/os/IBinder;)V
 
     return-object v0
 .end method
@@ -84,16 +78,16 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 10
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/IAccountAccessor$Stub;->getAccount()Landroid/accounts/Account;
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/IAccountAccessor$Stub;->zzb()Landroid/accounts/Account;
 
     move-result-object p1
 
-    .line 11
+    .line 2
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 12
-    invoke-static {p3, p1}, Lcom/google/android/gms/internal/common/zzc;->zzb(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    .line 3
+    invoke-static {p3, p1}, Lcom/google/android/gms/internal/common/zzc;->zzd(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 p1, 0x1
 

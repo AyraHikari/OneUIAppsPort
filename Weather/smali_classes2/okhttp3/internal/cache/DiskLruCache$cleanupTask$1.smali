@@ -39,11 +39,11 @@
 
 
 # instance fields
-.field final synthetic this$0:Lokhttp3/internal/cache/DiskLruCache;
+.field public final synthetic this$0:Lokhttp3/internal/cache/DiskLruCache;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/cache/DiskLruCache;Ljava/lang/String;)V
+.method public constructor <init>(Lokhttp3/internal/cache/DiskLruCache;Ljava/lang/String;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -53,7 +53,6 @@
         }
     .end annotation
 
-    .line 176
     iput-object p1, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     const/4 p1, 0x0
@@ -72,12 +71,12 @@
 .method public runOnce()J
     .locals 6
 
-    .line 178
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     monitor-enter v0
 
-    .line 179
+    .line 2
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
@@ -104,7 +103,7 @@
     :cond_0
     const/4 v1, 0x1
 
-    .line 184
+    .line 3
     :try_start_1
     iget-object v4, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
@@ -115,7 +114,7 @@
 
     goto :goto_0
 
-    .line 186
+    .line 4
     :catch_0
     :try_start_2
     iget-object v4, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
@@ -124,7 +123,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 190
+    .line 5
     :goto_0
     :try_start_3
     iget-object v4, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
@@ -135,12 +134,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 191
+    .line 6
     iget-object v4, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-virtual {v4}, Lokhttp3/internal/cache/DiskLruCache;->rebuildJournal$okhttp()V
 
-    .line 192
+    .line 7
     iget-object v4, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     const/4 v5, 0x0
@@ -152,14 +151,14 @@
 
     goto :goto_1
 
-    .line 195
+    .line 8
     :catch_1
     :try_start_4
     iget-object v4, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-static {v4, v1}, Lokhttp3/internal/cache/DiskLruCache;->access$setMostRecentRebuildFailed$p(Lokhttp3/internal/cache/DiskLruCache;Z)V
 
-    .line 196
+    .line 9
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$cleanupTask$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-static {}, Lokio/Okio;->blackhole()Lokio/Sink;
@@ -174,14 +173,14 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 199
+    .line 10
     :cond_1
     :goto_1
     monitor-exit v0
 
     return-wide v2
 
-    .line 180
+    .line 11
     :cond_2
     :goto_2
     monitor-exit v0
@@ -191,7 +190,7 @@
     :catchall_0
     move-exception v1
 
-    .line 178
+    .line 12
     monitor-exit v0
 
     throw v1

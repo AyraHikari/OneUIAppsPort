@@ -87,7 +87,7 @@
 .method public setValue([B)Lcom/sec/android/fido/uaf/message/tag/Signature;
     .locals 2
 
-    const-string v0, "signature is NULL"
+    const-string/jumbo v0, "signature is NULL"
 
     .line 46
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -105,7 +105,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    const-string v1, "signature is EMPTIED"
+    const-string/jumbo v1, "signature is EMPTIED"
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 

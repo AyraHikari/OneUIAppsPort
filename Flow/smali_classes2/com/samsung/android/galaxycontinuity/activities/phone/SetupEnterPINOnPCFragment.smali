@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    const-string v1, "show_button_background"
+    const-string/jumbo v1, "show_button_background"
 
     const/4 v2, 0x0
 
@@ -77,7 +77,7 @@
     .line 82
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/SetupEnterPINOnPCFragment;->mCancelButton:Landroid/widget/Button;
 
-    const v1, 0x7f070059
+    const v1, 0x7f08006a
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -87,7 +87,7 @@
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/SetupEnterPINOnPCFragment;->mCancelButton:Landroid/widget/Button;
 
-    const v1, 0x7f07012f
+    const v1, 0x7f080116
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -117,7 +117,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09024c
+    const v1, 0x7f0a0369
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -127,7 +127,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f1001b1
+    const v1, 0x7f110233
 
     .line 96
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/phone/SetupEnterPINOnPCFragment;->getString(I)Ljava/lang/String;
@@ -156,7 +156,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090078
+    const v1, 0x7f0a009f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -182,6 +182,14 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bundle"
+        }
+    .end annotation
 
     .line 51
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
@@ -238,13 +246,21 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     .line 109
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
 
-    const v0, 0x7f090078
+    const v0, 0x7f0a009f
 
     if-ne p1, v0, :cond_0
 
@@ -266,6 +282,14 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newConfig"
+        }
+    .end annotation
 
     .line 66
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -278,6 +302,14 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 33
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onCreate(Landroid/os/Bundle;)V
@@ -287,8 +319,20 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "container",
+            "savedInstanceState"
+        }
+    .end annotation
 
-    const p3, 0x7f0c004b
+    const p3, 0x7f0d0047
 
     const/4 v0, 0x0
 
@@ -302,6 +346,14 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 45
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
@@ -318,6 +370,14 @@
 
 .method public setRemoteDeviceName(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceName"
+        }
+    .end annotation
 
     .line 28
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/SetupEnterPINOnPCFragment;->mRemoteDeviceName:Ljava/lang/String;

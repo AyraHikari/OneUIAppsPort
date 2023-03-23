@@ -15,24 +15,24 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 10
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
+    .line 15
     new-instance v0, Landroid/graphics/PointF;
 
     invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
 
     iput-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint1:Landroid/graphics/PointF;
 
-    .line 12
+    .line 16
     new-instance v0, Landroid/graphics/PointF;
 
     invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
 
     iput-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint2:Landroid/graphics/PointF;
 
-    .line 13
+    .line 17
     new-instance v0, Landroid/graphics/PointF;
 
     invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
@@ -45,16 +45,16 @@
 .method public constructor <init>(Landroid/graphics/PointF;Landroid/graphics/PointF;Landroid/graphics/PointF;)V
     .locals 0
 
-    .line 16
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 21
     iput-object p1, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint1:Landroid/graphics/PointF;
 
-    .line 18
+    .line 22
     iput-object p2, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint2:Landroid/graphics/PointF;
 
-    .line 19
+    .line 23
     iput-object p3, p0, Lcom/airbnb/lottie/model/CubicCurveData;->vertex:Landroid/graphics/PointF;
 
     return-void
@@ -65,7 +65,7 @@
 .method public getControlPoint1()Landroid/graphics/PointF;
     .locals 1
 
-    .line 27
+    .line 31
     iget-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint1:Landroid/graphics/PointF;
 
     return-object v0
@@ -74,7 +74,7 @@
 .method public getControlPoint2()Landroid/graphics/PointF;
     .locals 1
 
-    .line 35
+    .line 39
     iget-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint2:Landroid/graphics/PointF;
 
     return-object v0
@@ -83,7 +83,7 @@
 .method public getVertex()Landroid/graphics/PointF;
     .locals 1
 
-    .line 43
+    .line 47
     iget-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->vertex:Landroid/graphics/PointF;
 
     return-object v0
@@ -92,7 +92,7 @@
 .method public setControlPoint1(FF)V
     .locals 1
 
-    .line 23
+    .line 27
     iget-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint1:Landroid/graphics/PointF;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
@@ -103,7 +103,7 @@
 .method public setControlPoint2(FF)V
     .locals 1
 
-    .line 31
+    .line 35
     iget-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->controlPoint2:Landroid/graphics/PointF;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
@@ -114,7 +114,7 @@
 .method public setVertex(FF)V
     .locals 1
 
-    .line 39
+    .line 43
     iget-object v0, p0, Lcom/airbnb/lottie/model/CubicCurveData;->vertex:Landroid/graphics/PointF;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V

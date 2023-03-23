@@ -1,9 +1,9 @@
 .class final Lokhttp3/CertificatePinner$check$1;
-.super Lkotlin/jvm/internal/Lambda;
+.super Loi/m;
 .source "CertificatePinner.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lni/a;
 
 
 # annotations
@@ -12,23 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function0<",
+        "Loi/m;",
+        "Lni/a<",
         "Ljava/util/List<",
         "+",
         "Ljava/security/cert/X509Certificate;",
         ">;>;"
     }
-.end annotation
-
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCertificatePinner.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CertificatePinner.kt\nokhttp3/CertificatePinner$check$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,370:1\n1497#2:371\n1568#2,3:372\n*E\n*S KotlinDebug\n*F\n+ 1 CertificatePinner.kt\nokhttp3/CertificatePinner$check$1\n*L\n152#1:371\n152#1,3:372\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -56,15 +52,15 @@
 
 
 # instance fields
-.field final synthetic $hostname:Ljava/lang/String;
+.field public final synthetic $hostname:Ljava/lang/String;
 
-.field final synthetic $peerCertificates:Ljava/util/List;
+.field public final synthetic $peerCertificates:Ljava/util/List;
 
-.field final synthetic this$0:Lokhttp3/CertificatePinner;
+.field public final synthetic this$0:Lokhttp3/CertificatePinner;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/CertificatePinner;Ljava/util/List;Ljava/lang/String;)V
+.method public constructor <init>(Lokhttp3/CertificatePinner;Ljava/util/List;Ljava/lang/String;)V
     .locals 0
 
     iput-object p1, p0, Lokhttp3/CertificatePinner$check$1;->this$0:Lokhttp3/CertificatePinner;
@@ -75,7 +71,7 @@
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    invoke-direct {p0, p1}, Loi/m;-><init>(I)V
 
     return-void
 .end method
@@ -85,7 +81,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 136
+    .line 1
     invoke-virtual {p0}, Lokhttp3/CertificatePinner$check$1;->invoke()Ljava/util/List;
 
     move-result-object v0
@@ -104,7 +100,7 @@
         }
     .end annotation
 
-    .line 151
+    .line 2
     iget-object v0, p0, Lokhttp3/CertificatePinner$check$1;->this$0:Lokhttp3/CertificatePinner;
 
     invoke-virtual {v0}, Lokhttp3/CertificatePinner;->getCertificateChainCleaner$okhttp()Lokhttp3/internal/tls/CertificateChainCleaner;
@@ -128,23 +124,19 @@
     :cond_0
     iget-object v0, p0, Lokhttp3/CertificatePinner$check$1;->$peerCertificates:Ljava/util/List;
 
+    .line 3
     :goto_0
-    check-cast v0, Ljava/lang/Iterable;
-
-    .line 371
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
 
-    invoke-static {v0, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lci/r;->t(Ljava/lang/Iterable;I)I
 
     move-result v2
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    check-cast v1, Ljava/util/Collection;
-
-    .line 372
+    .line 4
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -160,12 +152,12 @@
 
     move-result-object v2
 
-    .line 373
+    .line 5
     check-cast v2, Ljava/security/cert/Certificate;
 
     const-string v3, "null cannot be cast to non-null type java.security.cert.X509Certificate"
 
-    .line 152
+    .line 6
     invoke-static {v2, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     check-cast v2, Ljava/security/cert/X509Certificate;
@@ -174,9 +166,6 @@
 
     goto :goto_1
 
-    .line 374
     :cond_1
-    check-cast v1, Ljava/util/List;
-
     return-object v1
 .end method

@@ -39,6 +39,14 @@
 
 .method public static capabilityToString(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capability"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -83,6 +91,14 @@
 
 .method public static feedbackTypeToString(I)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "feedbackType"
+        }
+    .end annotation
 
     .line 215
     new-instance v0, Ljava/lang/StringBuilder;
@@ -199,6 +215,14 @@
 
 .method public static flagToString(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flag"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -261,15 +285,23 @@
 
 .method public static getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "info"
+        }
+    .end annotation
 
-    .line 286
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 287
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
     if-lt v0, v1, :cond_0
 
-    .line 287
+    .line 288
     invoke-virtual {p0}, Landroid/accessibilityservice/AccessibilityServiceInfo;->getCapabilities()I
 
     move-result p0
@@ -296,15 +328,25 @@
 
 .method public static loadDescription(Landroid/accessibilityservice/AccessibilityServiceInfo;Landroid/content/pm/PackageManager;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "info",
+            "packageManager"
+        }
+    .end annotation
 
-    .line 197
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 198
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 198
+    .line 199
     invoke-virtual {p0, p1}, Landroid/accessibilityservice/AccessibilityServiceInfo;->loadDescription(Landroid/content/pm/PackageManager;)Ljava/lang/String;
 
     move-result-object p0

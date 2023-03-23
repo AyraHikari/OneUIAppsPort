@@ -13,10 +13,6 @@
     name = "Companion"
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nHandshake.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Handshake.kt\nokhttp3/Handshake$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,200:1\n1#2:201\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -62,7 +58,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 143
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +66,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 143
     invoke-direct {p0}, Lokhttp3/Handshake$Companion;-><init>()V
 
     return-void
@@ -92,7 +86,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 172
+    .line 1
     array-length v0, p1
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -107,9 +101,9 @@
 
     goto :goto_0
 
-    .line 174
+    .line 2
     :cond_0
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
     move-result-object p1
 
@@ -121,31 +115,12 @@
 # virtual methods
 .method public final -deprecated_get(Ljavax/net/ssl/SSLSession;)Lokhttp3/Handshake;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to extension function"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "sslSession.handshake()"
-            imports = {}
-        .end subannotation
-    .end annotation
 
     const-string v0, "sslSession"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 184
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Handshake$Companion;
-
-    invoke-virtual {v0, p1}, Lokhttp3/Handshake$Companion;->get(Ljavax/net/ssl/SSLSession;)Lokhttp3/Handshake;
+    invoke-virtual {p0, p1}, Lokhttp3/Handshake$Companion;->get(Ljavax/net/ssl/SSLSession;)Lokhttp3/Handshake;
 
     move-result-object p1
 
@@ -154,27 +129,19 @@
 
 .method public final get(Ljavax/net/ssl/SSLSession;)Lokhttp3/Handshake;
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     const-string v0, "$this$handshake"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 148
+    .line 1
     invoke-interface {p1}, Ljavax/net/ssl/SSLSession;->getCipherSuite()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_5
 
-    .line 149
+    .line 2
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v1
@@ -192,7 +159,7 @@
     :cond_0
     const-string v1, "SSL_NULL_WITH_NULL_NULL"
 
-    .line 150
+    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -210,7 +177,7 @@
 
     if-nez v1, :cond_4
 
-    .line 153
+    .line 4
     :goto_0
     sget-object v1, Lokhttp3/CipherSuite;->Companion:Lokhttp3/CipherSuite$Companion;
 
@@ -218,7 +185,7 @@
 
     move-result-object v0
 
-    .line 156
+    .line 5
     invoke-interface {p1}, Ljavax/net/ssl/SSLSession;->getProtocol()Ljava/lang/String;
 
     move-result-object v1
@@ -227,31 +194,27 @@
 
     const-string v2, "NONE"
 
-    .line 157
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 6
+    invoke-static {v2, v1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 158
+    .line 7
     sget-object v2, Lokhttp3/TlsVersion;->Companion:Lokhttp3/TlsVersion$Companion;
 
     invoke-virtual {v2, v1}, Lokhttp3/TlsVersion$Companion;->forJavaName(Ljava/lang/String;)Lokhttp3/TlsVersion;
 
     move-result-object v1
 
-    .line 161
+    .line 8
     :try_start_0
-    move-object v2, p0
-
-    check-cast v2, Lokhttp3/Handshake$Companion;
-
     invoke-interface {p1}, Ljavax/net/ssl/SSLSession;->getPeerCertificates()[Ljava/security/cert/Certificate;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-direct {v2, v3}, Lokhttp3/Handshake$Companion;->toImmutableList([Ljava/security/cert/Certificate;)Ljava/util/List;
+    invoke-direct {p0, v2}, Lokhttp3/Handshake$Companion;->toImmutableList([Ljava/security/cert/Certificate;)Ljava/util/List;
 
     move-result-object v2
     :try_end_0
@@ -259,26 +222,22 @@
 
     goto :goto_1
 
-    .line 163
+    .line 9
     :catch_0
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
     move-result-object v2
 
-    .line 166
+    .line 10
     :goto_1
     new-instance v3, Lokhttp3/Handshake;
 
-    .line 167
-    move-object v4, p0
-
-    check-cast v4, Lokhttp3/Handshake$Companion;
-
+    .line 11
     invoke-interface {p1}, Ljavax/net/ssl/SSLSession;->getLocalCertificates()[Ljava/security/cert/Certificate;
 
     move-result-object p1
 
-    invoke-direct {v4, p1}, Lokhttp3/Handshake$Companion;->toImmutableList([Ljava/security/cert/Certificate;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lokhttp3/Handshake$Companion;->toImmutableList([Ljava/security/cert/Certificate;)Ljava/util/List;
 
     move-result-object p1
 
@@ -286,14 +245,12 @@
 
     invoke-direct {v4, v2}, Lokhttp3/Handshake$Companion$handshake$1;-><init>(Ljava/util/List;)V
 
-    check-cast v4, Lkotlin/jvm/functions/Function0;
-
-    .line 166
-    invoke-direct {v3, v1, v0, p1, v4}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lkotlin/jvm/functions/Function0;)V
+    .line 12
+    invoke-direct {v3, v1, v0, p1, v4}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lni/a;)V
 
     return-object v3
 
-    .line 157
+    .line 13
     :cond_2
     new-instance p1, Ljava/io/IOException;
 
@@ -301,11 +258,9 @@
 
     invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 
-    .line 156
+    .line 14
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -317,11 +272,9 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 
-    .line 151
+    .line 15
     :cond_4
     new-instance p1, Ljava/io/IOException;
 
@@ -333,23 +286,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 
-    .line 148
+    .line 16
     :cond_5
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -360,8 +307,6 @@
     move-result-object v0
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    check-cast p1, Ljava/lang/Throwable;
 
     throw p1
 .end method
@@ -385,31 +330,28 @@
         }
     .end annotation
 
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
-
     const-string v0, "tlsVersion"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "cipherSuite"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "peerCertificates"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "localCertificates"
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 193
+    .line 17
     invoke-static {p3}, Lokhttp3/internal/Util;->toImmutableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p3
 
-    .line 194
+    .line 18
     new-instance v0, Lokhttp3/Handshake;
 
     invoke-static {p4}, Lokhttp3/internal/Util;->toImmutableList(Ljava/util/List;)Ljava/util/List;
@@ -420,9 +362,7 @@
 
     invoke-direct {v1, p3}, Lokhttp3/Handshake$Companion$get$1;-><init>(Ljava/util/List;)V
 
-    check-cast v1, Lkotlin/jvm/functions/Function0;
-
-    invoke-direct {v0, p1, p2, p4, v1}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1, p2, p4, v1}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lni/a;)V
 
     return-object v0
 .end method

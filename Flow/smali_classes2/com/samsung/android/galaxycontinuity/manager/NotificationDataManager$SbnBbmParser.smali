@@ -21,8 +21,16 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 885
+    .line 911
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnBbmParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
@@ -33,7 +41,7 @@
 .method synthetic constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$1;)V
     .locals 0
 
-    .line 885
+    .line 911
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnBbmParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
 
     return-void
@@ -49,15 +57,25 @@
 
 .method public parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sbn",
+            "isPosted"
+        }
+    .end annotation
 
-    .line 901
+    .line 927
     invoke-super {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;->parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     move-result-object p1
 
     const/4 p2, 0x0
 
-    .line 902
+    .line 928
     iput-boolean p2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isReplyEnable:Z
 
     return-object p1

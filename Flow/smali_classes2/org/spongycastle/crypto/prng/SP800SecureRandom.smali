@@ -130,8 +130,6 @@
     if-eqz v0, :cond_0
 
     .line 43
-    iget-object v0, p0, Lorg/spongycastle/crypto/prng/SP800SecureRandom;->randomSource:Ljava/security/SecureRandom;
-
     invoke-virtual {v0, p1, p2}, Ljava/security/SecureRandom;->setSeed(J)V
 
     .line 45
@@ -163,8 +161,6 @@
     if-eqz v0, :cond_0
 
     .line 31
-    iget-object v0, p0, Lorg/spongycastle/crypto/prng/SP800SecureRandom;->randomSource:Ljava/security/SecureRandom;
-
     invoke-virtual {v0, p1}, Ljava/security/SecureRandom;->setSeed([B)V
 
     .line 33

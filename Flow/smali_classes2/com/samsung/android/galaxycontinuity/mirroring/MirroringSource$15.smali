@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Lorg/json/JSONObject;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$json"
+        }
+    .end annotation
 
-    .line 2128
+    .line 2102
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$15;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$15;->val$json:Lorg/json/JSONObject;
@@ -42,15 +52,17 @@
 .method public run()V
     .locals 3
 
-    .line 2133
+    .line 2107
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "sendControlNoti : "
+    const-string/jumbo v1, "sendControlNoti : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$15;->val$json:Lorg/json/JSONObject;
 
@@ -60,13 +72,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 2134
+    .line 2108
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$15;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
@@ -75,7 +89,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2135
+    .line 2109
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$15;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)Lcom/samsung/android/galaxycontinuity/mirroring/maincontrol/PhoneControlNotiHandler;
@@ -107,10 +121,10 @@
     :catch_0
     move-exception v0
 
-    .line 2138
+    .line 2112
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 2139
+    .line 2113
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -119,13 +133,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

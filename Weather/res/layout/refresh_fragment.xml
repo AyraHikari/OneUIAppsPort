@@ -2,7 +2,7 @@
 <RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <ProgressBar android:layout_gravity="center_horizontal" android:drawingCacheQuality="high" android:duplicateParentState="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateBehavior="repeat" android:autoStart="true" style="?android:progressBarStyleLarge" />
+        <androidx.appcompat.widget.SeslProgressBar android:layout_gravity="center_horizontal" android:drawingCacheQuality="high" android:duplicateParentState="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateBehavior="repeat" android:autoStart="true" style="?android:progressBarStyleLarge" />
         <TextView android:textSize="15.0sp" android:textColor="@color/primary_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/restoring" />
     </LinearLayout>
 </RelativeLayout>

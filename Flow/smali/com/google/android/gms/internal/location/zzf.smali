@@ -1,47 +1,22 @@
-.class final Lcom/google/android/gms/internal/location/zzf;
-.super Lcom/google/android/gms/internal/location/zzj;
-
-
-# instance fields
-.field private final synthetic zzbw:J
-
-.field private final synthetic zzbx:Landroid/app/PendingIntent;
+.class abstract Lcom/google/android/gms/internal/location/zzf;
+.super Lcom/google/android/gms/location/zzb;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/internal/location/zze;Lcom/google/android/gms/common/api/GoogleApiClient;JLandroid/app/PendingIntent;)V
+.method public constructor <init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
     .locals 0
 
-    iput-wide p3, p0, Lcom/google/android/gms/internal/location/zzf;->zzbw:J
-
-    iput-object p5, p0, Lcom/google/android/gms/internal/location/zzf;->zzbx:Landroid/app/PendingIntent;
-
-    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzj;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    .line 1
+    invoke-direct {p0, p1}, Lcom/google/android/gms/location/zzb;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final bridge synthetic createFailedResult(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/Result;
+    .locals 0
 
-    check-cast p1, Lcom/google/android/gms/internal/location/zzaz;
-
-    iget-wide v0, p0, Lcom/google/android/gms/internal/location/zzf;->zzbw:J
-
-    iget-object v2, p0, Lcom/google/android/gms/internal/location/zzf;->zzbx:Landroid/app/PendingIntent;
-
-    invoke-virtual {p1, v0, v1, v2}, Lcom/google/android/gms/internal/location/zzaz;->zza(JLandroid/app/PendingIntent;)V
-
-    sget-object p1, Lcom/google/android/gms/common/api/Status;->RESULT_SUCCESS:Lcom/google/android/gms/common/api/Status;
-
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/location/zzf;->setResult(Lcom/google/android/gms/common/api/Result;)V
-
-    return-void
+    return-object p1
 .end method

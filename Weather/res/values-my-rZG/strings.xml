@@ -33,6 +33,7 @@
     <string name="air_quality">ေလ အရည္အေသြး</string>
     <string name="air_quality_next_tts">ေနာက္ပုိင္းကာလ ေန႔စဥ္ ေလထုအရည္အေသြး ႀကိဳတင္ခန္႔မွန္းခ်က္မ်ား</string>
     <string name="air_quality_previous_tts">အေစာပုိင္းကာလ ေန႔စဥ္ ေလထုအရည္အေသြး ႀကိဳတင္ခန္႔မွန္းခ်က္မ်ား</string>
+    <string name="alert_title">ျပင္းထန္ေသာ မိုးေလဝသ သတိေပးခ်က္</string>
     <string name="all_added_cities">ထည့္ထားေသာ ၿမိဳ႕အားလံုး</string>
     <string name="allow">ခြင့္ျပဳပါ</string>
     <string name="allow_permission_in_settings">ဤအဂၤါရပ္ကို သုံးရန္ သတ္မွတ္ခ်က္မ်ားတြင္ ခြင့္ျပဳခ်က္မ်ားကို ခြင့္ျပဳရန္ လိုသည္။</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">လႈပ္ရွားမႈ မပံ့ပိုးပါ။</string>
     <string name="apply_daylight_saving_time">စံေတာ္ခ်ိန္ထက္ တစ္နာရီေစာထားေသာ အခ်ိန္ကုိ အသုံးျပဳလုိပါသလား?</string>
     <string name="as_possible_after_verification">ရီပို႔တင္ထားသည္။ ၿမိဳ႕ႀကီးအမည္ကို စိစစ္မႈၿပီးလွ်င္ အျမန္ဆုံး ေျပာင္းပါမည္။</string>
+    <string name="auto_refresh_on_screen_description">အသစ္ျဖစ္ေသာ ရာသီဥတုအခ်က္အလက္မ်ားကို တစ္နာရီတစ္ႀကိမ္ ေအာ္တို ရယူပါ။ ၎ကို ဖြင့္ထားပါက ကိုယ္တိုင္ အသစ္ျပန္စ၍ မရပါ။</string>
+    <string name="auto_refresh_on_the_go">သြားရင္းလာရင္း အလိုအေလ်ာက္ အသစ္ျဖစ္ေစျခင္း</string>
+    <string name="auto_refresh_on_the_go_advanced">အဆင့္ျမင့္</string>
+    <string name="auto_refresh_on_the_go_description">သင္ ကားေမာင္းျခင္း၊ စက္ဘီးစီးျခင္း၊ ေျပးလႊားျခင္း သို႔မဟုတ္ လမ္းေလွ်ာက္ျခင္း လုပ္ေနခ်ိန္တြင္ မိုးေလဝသ အပ္ဒိတ္မ်ား မၾကာခဏ ရယူပါ။ ၎ကို ဖြင့္ထားပါက ကိုယ္တိုင္ ျပန္လည္လန္းဆန္း၍ မရပါ။</string>
+    <string name="auto_refresh_on_the_go_simple_description">သင္ ကားေမာင္းျခင္း၊ စက္ဘီးစီးျခင္း၊ ေျပးလႊားျခင္း သို႔မဟုတ္ လမ္းေလွ်ာက္ျခင္း လုပ္ေနခ်ိန္တြင္ မိုးေလဝသ အပ္ဒိတ္မ်ား မၾကာခဏ ရယူပါ။</string>
     <string name="btn_report">ရီပို႔</string>
     <string name="button_finish">ၿပီးပါၿပီ</string>
     <string name="button_tts">ခလုတ္</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">အခ်က္အလက္ပိုမိုသိရွိရန္ ႏွစ္ခ်က္ႏွိပ္ပါ။</string>
     <string name="china">တရုတ္</string>
     <string name="cities_button">ၿမိဳ႕မ်ား</string>
+    <string name="city_added">ၿမိဳ႕ထည့္ၿပီး။</string>
     <string name="city_list_text">ၿမိဳ႕မ်ား</string>
     <string name="clear">တိမ္ကင္းစင္</string>
     <string name="clear_then_cloudy">ၾကည္လင္ျပီးေနာက္ တိမ္ထူမည္</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">%d တည္ေနရာ အတြင္းသို႔ ဆြဲယူထည့္ထားေသာ အရာ။</string>
     <string name="dragndroplist_drag_start">%d တည္ေနရာမွာ အရာပစၥည္းအား ဆြဲယူျခင္းကို စတင္ခဲ့ၿပီးၿပီ။</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d တည္ေနရာတြင္ ရွိေနေသာ အရာမ်ားကို ဆြဲယူလို႔ မရပါ။</string>
+    <string name="drawer_tips">%s အႀကံျပဳခ်က္မ်ား</string>
     <string name="drawer_tips_message">တည္ေနရာမ်ား ထည့္ရန္၊ ဖ်က္ပစ္ရန္ႏွင့္ ျပန္စီရန္ ဤေနရာကို ႏွိပ္ပါ။ ပင္မ ဖန္သားျပင္တြင္ မတူညီေသာ တည္ေနရာမ်ားကို ျပသရန္ ဝစ္ဂ်စ္မ်ားစြာကိုလည္း ထည့္ႏိုင္ပါသည္။</string>
     <string name="drawer_tips_message_1">တည္ေနရာမ်ား ထည့္ရန္၊ ဖ်က္ရန္ႏွင့္ ျပန္စီရန္ ဤမီႏူး၏ ေအာက္ေျခရွိ “တည္ေနရာမ်ား စီမံမည္” ကို ႏွိပ္ပါ။</string>
     <string name="drawer_tips_message_2">မတူညီေသာ ေနရာမ်ားကို တစ္ၿပိဳင္တည္း ျပသရန္ ပင္မဖန္သားျပင္တြင္ ဝစ္ဂ်စ္တစ္ခုထက္မက ထည့္ႏိုင္သည္။</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">မုိးေလဝသ ခန္႔မွန္းဗီဒီယုိ</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Fri</string>
     <string name="general">အေထြေထြ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">သင့္ဖုန္းကုိ အသံုးျပဳသည့္ပံုစံအေပၚ အေျခခံၿပီး တစ္ဦးခ်င္း အေၾကာင္းအရာကို ရယူပါ။</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">သင့္တက္ဘလက္ကုိ အသံုးျပဳသည့္ပံုစံအေပၚ အေျခခံၿပီး တစ္ဦးခ်င္းအလိုက္ ပါဝင္သည့္အေၾကာင္းအရာကို ရယူပါ။</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">မိုးေလဝသမွ သင္၏ လက္ရွိတည္ေနရာ အပါအဝင္ မိုးေလဝသ အခ်က္အလက္မ်ားကို ရယူပါ</string>
     <string name="go_to_website">ဝဘ္ဆိုက္သို႔ သြားရန္</string>
     <string name="goto_apps">အသစ္ အဆင့္ျမင့္တင္မႈ ရႏိုင္သည္။ ယခု ထည့္သြင္းမလား?</string>
     <string name="goto_apps_later">ေနာက္ေတာ့</string>
     <string name="goto_apps_now">ယခု</string>
     <string name="goto_apps_update_title">ပါဝင္မႈ အသစ္ သတိေပးခ်က္မ်ား</string>
     <string name="header_tts">ေခါင္းစီး</string>
+    <string name="heavy">ျပင္းျပင္း</string>
     <string name="heavy_rain">သည္းထန္ေသာ မိုး</string>
     <string name="heavy_rain_followed_by_intense_heat">မိုးသည္းျပီးေနာက္မွာ အပူျပင္းလာမည္</string>
     <string name="heavy_rain_followed_by_light_rain">မိုးသည္းျပီးေနာက္မွာ အပူျပင္းလာမည္</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">ျမင္ႏိုင္စြမ္း</string>
     <string name="life_index_wind">ေလ</string>
     <string name="life_index_wind_force">ေလတိုက္ႏႈန္း</string>
+    <string name="light">မီးေရာင္</string>
     <string name="light_rain_followed_by_heavy_rain">မိုးဖြဲဖြဲေနာက္မွာ မိုးသည္းမည္</string>
     <string name="light_rain_with_some_heavy_rain">မိုးဖြဲဖြဲႏွင့္ မိုးသည္းမည္</string>
     <string name="link_tts">လင့္ခ္</string>
@@ -367,7 +379,7 @@
     <string name="menu_current_city_show">လက္ရွိတည္ေနရာကို သံုးပါ</string>
     <string name="menu_delete_title">ဖ်က္ပစ္ပါ</string>
     <string name="menu_details_share">မွ်ေဝပါ</string>
-    <string name="menu_edit_title">တည္းျဖတ္</string>
+    <string name="menu_edit_title">တည္းျဖတ္ပါ</string>
     <string name="menu_search_title">ရွာေဖြပါ</string>
     <string name="menu_settings_calendar">ျပကၡဒိန္</string>
     <string name="menu_settings_edge_screen">ဖန္သားျပင္အစပ္ အနားကြပ္ဖုန္း</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">မည္သည့္ရလဒ္မွ မေတြ႕ပါ။</string>
     <string name="message_service_not_available">ဝန္ေဆာင္မႈမ်ား ေလာေလာဆယ္တြင္ မရႏုိင္ပါ။</string>
     <string name="minus_tts">အႏႈတ္</string>
+    <string name="mon">Mon</string>
     <string name="more">ထပ္မံ၍</string>
     <string name="more_cuntact_us">ကၽြႏ္ုပ္တို႔ထံ ဆက္သြယ္ပါ</string>
     <string name="more_information">ေနာက္ထပ္</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">ပုံေသ မိုးေလဝသ တည္ေနရာကို ေျပာင္းရန္ႏွင့္ သင့္တည္ေနရာ အားလုံးကို စီမံရန္ ဤေနရာကို ႏွိပ္ပါ။</string>
     <string name="new_version_available">%s ၏ ဗားရွင္းအသစ္တစ္ခု ရွိသည္။</string>
     <string name="new_version_is_available">ဗားရွင္း အသစ္တစ္ခု ရႏိုင္သည္။</string>
+    <string name="news_menu_show_news">သတင္းမ်ားကုိ ျပပါ</string>
+    <string name="news_opt_in_banner_title_text">မိုးေလဝသ ဝဒ္ဂ်က္တြင္ သတင္းမ်ားကို ျပျခင္းျဖင့္ လက္ရွိျဖစ္ရပ္မ်ားႏွင့္ အဆက္မျပတ္ေအာင္ေနပါ။</string>
+    <string name="news_opt_in_popup_desc_text">မိုးေလဝသ ဝဒ္ဂ်က္တြင္ %s မွ ေနာက္ဆုံးသတင္းေခါင္းစဥ္မ်ားကို ျပျခင္းျဖင့္ ကမၻာႀကီးႏွင့္ အဆက္မျပတ္ေအာင္ေနပါ။</string>
+    <string name="news_opt_in_popup_title_text">ဝဒ္ဂ်က္တစ္ခုျဖင့္ သတင္းမ်ားႏွင့္ မိုးေလဝသကို ၾကည့္ပါ</string>
+    <string name="news_request_agree_text">%s မွ သတင္းမ်ားကို ရယူရန္ ႏွိပ္ပါ</string>
+    <string name="news_widget_bubble_text">မိုးေလဝသ သတင္းမ်ား ရယူပါ။</string>
+    <string name="news_widget_dummy_title">ယေန႔အတြက္ ထိပ္တန္းဇာတ္လမ္း</string>
+    <string name="news_widget_new_dummy_title">ယေန႔မနက္ သင္သိထားရမည့္ အေၾကာင္းအရာ ၅ ခု</string>
+    <string name="news_widget_oobe_text">သတင္းမ်ား ထည့္ရန္ ဒီမွာ ႏွိပ္ပါ။</string>
     <string name="next">ေနာက္ ၿမိဳ႕</string>
+    <string name="next_btn">ေနာက္တစ္ပုဒ္</string>
     <string name="next_city">ေနာက္ၿမိဳ႕အတြက္ မုိးေလဝသအခ်က္အလက္ကုိၾကည့္ရန္ ႏွစ္ခ်က္ႏွိပ္ပါ။</string>
     <string name="night_tts">ည</string>
     <string name="no_application_available">အပလီေကးရွင္းမ်ား မရႏိုင္ပါ။</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">ရာသီဥတု အခ်က္အလက္မရွိပါ</string>
     <string name="not_in_use">အသုံးျပဳမေနပါ</string>
     <string name="not_now">ယခု မဟုတ္ေသးပါ</string>
+    <string name="not_now_btn">ယခု မဟုတ္ေသးပါ</string>
     <string name="not_selected">ေ႐ြးမထားပါ</string>
     <string name="nothing_selected">ဘာမွ ေရြးခ်ယ္မထားပါ။</string>
     <string name="noti">သတိျပဳရန္</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">အျမန္ဆုံးႏွင့္ အတိက်ဆုံးေနရာကို ရွာေဖြရန္အတြက္၊ “သတ္မွတ္ခ်က္မ်ား” ကို ႏွိပ္ၿပီးေနာက္၊ တည္ေနရာ နည္းလမ္းကို GPS၊ Wi-Fi၊ ႏွင့္ မိုဘိုင္း ကြန္ယက္မ်ားသို႔သတ္မွတ္ပါ။</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">အျမန္ဆုံးႏွင့္ အတိက်ဆုံးေနရာကို ရွာေဖြရန္အတြက္ “သတ္မွတ္ခ်က္မ်ား” ကို ႏွိပ္ၿပီးေနာက္၊ တည္ေနရာ နည္းလမ္းကို GPS ႏွင့္ Wi-Fi သို႔သတ္မွတ္ပါ။</string>
     <string name="notice_gps_trun_off_message_verizon">သင့္နယ္ေဒသ မိုးေလဝသအခ်က္အလက္ကို ၾကည့္ရန္၊ တည္ေနရာသတ္မွတ္ခ်က္မ်ားကို ဖြင့္ၿပီး အေနအထားကို တိက်မႈႏႈန္းျမင့္ပုံစံတြင္ သတ္မွတ္ထားေၾကာင္း ေသခ်ာေအာင္လုပ္ပါ။</string>
+    <string name="notification_alert_channel_name">ျပင္းထန္ေသာ မိုးေလဝသ သတိေပးခ်က္</string>
     <string name="notification_apps_update_channel_name">အသိေပးခ်က္မ်ားကုိ အပ္ဒိတ္လုပ္ပါ</string>
     <string name="notification_auto_refresh_channel_name">မိုးေလဝသ ေအာ္တို ျပန္ဖြင့္ျခင္း</string>
     <string name="notification_dex_channel_name">Samsung DeX ရွိ မိုးေလဝသ</string>
@@ -438,6 +463,7 @@
     <string name="open_app">အက္ပ္ ဖြင့္ပါ</string>
     <string name="open_source_licences">အခမဲ့သံုး ရင္းျမစ္လိုင္စင္မ်ား</string>
     <string name="other_locations">အျခား တည္ေနရာမ်ား</string>
+    <string name="partly_sunny">အမ်ားအားျဖင့္ ေနသာပါမည္။</string>
     <string name="paused">ရပ္ထားသည္</string>
     <string name="pd_km">%.1f ကီလိုမီတာ</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">ပါဝင္ျခင္း : %d mm</string>
     <string name="preview">%s အႀကိဳျမင္ကြင္း</string>
     <string name="previous">ယခင္ ၿမိဳ႕</string>
+    <string name="previous_btn">ယခင္</string>
     <string name="previous_city">ယခင္ၿမိဳ႕အတြက္ မုိးေလဝသအခ်က္အလက္ကုိၾကည့္ရန္ ႏွစ္ခ်က္ႏွိပ္ပါ။</string>
     <string name="privacy_policy">ကုိယ္ေရးလံုျခံဳမႈ မူဝါဒ</string>
     <string name="probability_of_rain_text">မိုး ရြာသြန္းႏိုင္ေခ်</string>
     <string name="protect_your_content">သင့္ပါဝင္ခ်က္ကို ကာကြယ္ပါ</string>
+    <string name="ps_in">%s လက္မ</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">ေရဒါႏွင့္ ေျမပံုမ်ား</string>
     <string name="rain">မုိး</string>
     <string name="rain_followed_by_intense_heat">မိုးေနာက္မွာ အပူျပင္းလာမည္</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">မုိးေလဝသ အခ်က္အလက္မ်ားကုိ အပ္ဒိတ္လုပ္ရန္ “သတ္မွတ္ခ်က္မ်ား” ကိုႏွိပ္ပါ၊ အက္ပ္ အင္ဖို > ခြင့္ျပဳခ်က္မ်ားသို႔သြားၿပီးေနာက္ ေအာက္ပါခြင့္ျပဳခ်က္မ်ားကို ခြင့္ျပဳၿပီး ထပ္မံႀကိဳးစားပါ :</string>
     <string name="runtime_location_permission_title">ခြင့္ျပဳခ်က္မ်ားကို ဖြင့္ပါ</string>
     <string name="runtime_oem_grant_permission_desc">%s အက္ပ္ကို ေနာက္ဆက္ေဖာ္ျပပါအရာမ်ားထဲ ဝင္ခြင့္ေပးရန္ ခြင့္ျပဳသည္ :</string>
+    <string name="sat">Sat</string>
     <string name="save_button">သိမ္းဆည္းပါ</string>
     <string name="search_most_searched_for">အမ်ားဆံုး ရွာထားသည္</string>
     <string name="search_tab_cities">ၿမိဳ႕မ်ား</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">အေၾကာင္းအရာအသစ္ မရွိပါ</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">ေနာက္ထပ္</string>
+    <string name="sesl_preferecne_badge_description">ေၾကညာအသိေပးခ်က္အသစ္</string>
     <string name="sesl_preferencecategory_added_title">ေခါင္းစည္း</string>
     <string name="sesl_search_hint">ရွာေဖြပါ</string>
     <string name="sesl_searchview_description_clear">ရွာေဖြေနရာ ရွင္းပါ</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">သင္၏ ကြန္ယက္ခ်ိတ္ဆက္မႈကို စစ္ေဆးၿပီးေနာက္ ထပ္မံႀကိဳးစားပါ။</string>
     <string name="st_offline">ေအာ့ဖ္လုိင္း</string>
     <string name="st_view_less">ေလွ်ာ့ၾကည့္ရန္</string>
+    <string name="status_off">ပိတ္</string>
+    <string name="status_on">ဖြင့္</string>
+    <string name="sun">ေႏြ</string>
     <string name="sunny">ေနသာပါမည္</string>
     <string name="sunny_with_some_clouds">ေနသာျခင္းႏွင့္ တိမ္တစ္ခ်ိဳ႕</string>
     <string name="sunny_with_some_heavy_rain">ေနသာျခင္းႏွင့္ မိုးသည္းျခင္းတစ္ခ်ိဳ႕</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">သင့္ကိရိယာ အေဟာင္းမွ မိုးေလဝသ ေဒတာမ်ားကို ျပန္လည္ရယူရန္ ဤေနရာကို ႏွိပ္ပါ။</string>
     <string name="tap_retry_to_try_to_find_your_location_again">သင့္တည္ေနရာကုိ ထပ္ရွာၾကည့္ရန္ “ထပ္မံႀကိဳးစားပါ” ကုိ ႏွိပ္ပါ။</string>
     <string name="tap_setting_message_edge_panel">ေဒသတြင္း မိုးေလဝသကို ရရွိရန္ တည္ေနရာကို ဖြင့္ပါ။</string>
+    <string name="tap_the_settings_icon">ဆက္တင္မ်ား သေကၤတကို ႏွိပ္ပါ။</string>
     <string name="tap_to_get_the_weather">မိုးေလဝသ ရရွိရန္ ႏွိပ္ပါ</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">သတ္မွတ္ခ်က္မ်ားႏွင့္ အေျခအေနမ်ား</string>
     <string name="the_latest_version">ေနာက္ဆုံးေပၚဗားရွင္းကို ထည့္သြင္းထားၿပီးျဖစ္သည္။</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">ယင္းကို အသိေပးခ်က္မ်ားႏွင့္ ျပကၡဒိန္တြင္လည္း သုံးပါမည္။</string>
+    <string name="thu">Thu</string>
     <string name="tick_box_tts">အမွန္ျခစ္ရန္အကြက္</string>
     <string name="ticked_tts">အမွန္ျခစ္ထားသည္</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">နာရီအလိုက္</string>
     <string name="title_select_locations">တည္ေနရာမ်ားကို ေရြးခ်ယ္ပါ</string>
     <string name="title_theme">အခင္းအက်င္းမ်ား</string>
+    <string name="to_continue_agree_to_updated">ဆက္လုပ္ရန္၊ ကြၽႏ္ုပ္တို႔ အပ္ဒိတ္လုပ္ထားေသာ %s ကို သေဘာတူရမည္။</string>
     <string name="to_get_local_weather_chn">"ေဒသတြင္း ရာသီဥတု သိရွိရန္၊ သင့္လက္ရွိ တည္ေနရာကို ရာသီဥတု ဝန္ေဆာင္မႈ ပံ့ပိုးသူထံ ပို႔ပါမည္။ (ေပးအပ္သူ %1$s စည္းမ်ဥ္းကန္႔သတ္ခ်က္မ်ား %2$s ႏွင့္ %3$sလံုျခံဳေရး မူဝါဒ ကို ၾကည့္ပါ%4$s။)
 သင့္ကိရိယာရွိ အျခား အက္ပ္မ်ားႏွင့္ ဝန္ေဆာင္မွဳမ်ားမွ ထိုအက္ပ္မ်ားတြင္ ျပသရန္ ရာသီဥတုအခ်က္အလက္မ်ားကို ဝင္ေရာက္ရယူနိုင္သည္။
 သင့္အားရာသီဥတုအခ်က္အလက္မ်ားကို ဆက္လက္ေပးအပ္ရန္ ရာသီဥတုမွ သင့္တည္ေနရာအား သင္အက္ပ္သံုးစြဲျခင္းမျပဳလွ်င္ပင္ ရယူနိုင္သည္။"</string>
     <string name="today">ယေန႔</string>
+    <string name="try_it_out_btn">စမ္းလုပ္ၾကည့္ပါ</string>
+    <string name="tue">Tue</string>
+    <string name="turn_on_to_use_precise_location">ဤလုပ္ေဆာင္ခ်က္ကိုသုံးရန္ %s ကို သင့္တည္ေနရာကို အၿမဲတမ္း ဝင္ေရာက္သုံးစြဲခြင့္ျပဳရန္ႏွင့္ တည္ေနရာအတိအက်ကိုသုံးပါ ကို ဖြင့္ရန္လိုသည္။ “သတ္မွတ္ခ်က္မ်ား” ကို ႏွိပ္ပါ၊ ထို႔ေနာက္ ခြင့္ျပဳခ်က္မ်ား > တည္ေနရာ သို႔ သြားပါ။</string>
     <string name="tw_title_weather_broadcast">ထုတ္လႊင့္ပါ</string>
-    <string name="unable_to_check_for_updates">အပ္ဒိတ္မ်ားကို စစ္ေဆး၍မရႏိုင္ပါ။ ကြန္ယက္ ခ်ိတ္ဆက္မႈမရွိပါ။</string>
+    <string name="unable_to_check_for_updates">အပ္ဒိတ္မ်ား ရွိ၊ မရွိ စစ္ၾကည့္၍မရပါ။ ေနာက္မွ ထပ္ႀကိဳးစားပါ။</string>
     <string name="unable_to_receive_info_msg">အခ်က္အလက္ကုိ လက္မခံႏုိင္ပါ</string>
     <string name="unticked_tts">အျခစ္ျဖဳတ္ထားသည္</string>
     <string name="unused">မသုံးရေသး</string>
     <string name="update">အပ္ဒိတ္လုပ္ပါ</string>
     <string name="update_abb8">အပ္ဒိတ္</string>
     <string name="update_app">အက္ပ္ကို အပ္ဒိတ္လုပ္ပါ</string>
+    <string name="updated_tile_chn">ေခာတ္ႏွင့္အညီ ျပန္လည္မြမ္းမံၿပီးပါၿပီ %s</string>
     <string name="updated_tts">%s ကိုအပ္ဒိတ္လုပ္ၿပီးပါၿပီ</string>
+    <string name="use_current_location">လက္ရွိတည္ေနရာကို သံုးပါ</string>
     <string name="use_current_location_agree_popup">"ေဒသတြင္း ရာသီဥတု သိရွိရန္၊ သင့္လက္ရွိ တည္ေနရာကို ရာသီဥတု ဝန္ေဆာင္မႈ ပံ့ပိုးသူထံ ပို႔ပါမည္။ (ေထာက္ပံ့သူ၏ %1$sသီးသန္႔တည္ရွိေနမွဳ မူ၀ါဒ%2$s ကို ၾကည့္ပါ။)
 သင့္ကိရိယာရွိ အျခား အက္ပ္မ်ားႏွင့္ ဝန္ေဆာင္မႈမ်ား လက္ခံရရွိထားေသာ ရာသီဥတု အခ်က္အလက္မ်ားကို ယင္းအက္ပ္မ်ားတြင္ ေဖၚျပရန္အတြက္ အသံုးျပဳႏိုင္ပါသည္။"</string>
     <string name="use_current_location_and_background_agree_popup">"ေဒသတြင္း ရာသီဥတု သိရွိရန္၊ သင့္လက္ရွိ တည္ေနရာကို ရာသီဥတု ဝန္ေဆာင္မႈ ပံ့ပိုးသူထံ ပို႔ပါမည္။(ေပးအပ္သူ%1$sလုံၿခဳံေရးမူဝါဒမ်ား%2$s။)
@@ -635,9 +677,16 @@
 မိုးေလဝသ အက္ပ္ ဆက္တင္မ်ားသို႔ သြားျခင္းျဖင့္ သင့္တည္ေနရာ အသုံးျပဳျခင္းကို သင္ပိတ္ႏိုင္သည္။"</string>
     <string name="use_current_location_body_msg_chn">"“မိုးေလဝသ” ကို အသံုးမျပဳမီ ဂ႐ုတစိုက္ ဖတ္႐ႈေပးပါ-
 သင္သည္ သင့္လက္ရွိတည္ေနရာ၏ မိုးေလဝသကို သိရွိလိုပါက၊ သင္သည္ (ဝန္ေဆာင္မႈကို အသံုးျပဳေနခ်ိန္မဟုတ္လွ်င္ပင္) ျပင္ပမွ ဝန္ေဆာင္မႈ ေပးသူအား ေအာက္တြင္ေဖာ္ျပထားသည့္အတိုင္း ဆက္လက္၍ သင့္စက္ထံဝင္ေရာက္ကာ အခ်ိဳ႕ေသာေဒတာမ်ားကို ရယူရန္အတြက္ ခြင့္ျပဳေပးရန္ လိုအပ္ပါလိမ့္မည္။ ထိုသို႔ ခြင့္ျပဳခ်က္မေပးမီတြင္ ျပင္ပမွ ဝန္ေဆာင္မႈ ေပးသူ၏ %1$sစည္းမ်ဥ္းကန္႔သတ္ခ်က္မ်ား%2$s ႏွင့္ %3$sကိုယ္ေရးလံုၿခံဳမႈမူဝါဒ%4$sကို ဂ႐ုတစိုက္ဖတ္႐ႈကာ နားလည္ေအာင္လုပ္ထားပါ။ သင္သည္ သတ္မွတ္ခ်က္မ်ား မီႏ်ဴးတြင္ “တည္ေနရာ” ကို ပိတ္လိုက္ျခင္းျဖင့္၊ သင္၏ခြင့္ျပဳခ်က္ကို ႐ုတ္သိမ္းႏိုင္ပါသည္။ သင့္စက္ေပၚရွိ တျခားအက္ပ္မ်ားႏွင့္ ဝန္ေဆာင္မႈမ်ားသည္ အဆိုပါ အက္ပ္မ်ားႏွင့္ ဝန္ေဆာင္မႈမ်ားတြင္ မိုးေလဝသကို ျပသရန္ ရယူထားေသာ မိုးေလဝသ ေဒတာမ်ားကို ဝင္ေရာက္သုံးႏိုင္ပါသည္။"</string>
+    <string name="use_current_location_body_msg_kor">"သင့္လက္ရွိ တည္ေနရာကို စုစည္းရယူၿပီးေနာက္ သင့္ျပည္တြင္း မိုးေလဝသကို ရယူျခင္းကဲ့သို႔ မိုးေလဝသအက္ပ္ လုပ္ေဆာင္ခ်က္ အခ်ိဳ႕ကို ပံ့ပိုးရန္ ၎ကို သံုးပါမည္။
+
+သင္ကအက္ပ္ကို အသံုးမျပဳခ်ိန္တြင္ပင္ မိုးေလဝသ အခ်က္အလက္မ်ားကို အဆက္မျပတ္ ပံ့ပိုးေပးရန္အတြက္ ဤအက္ပ္သည္ သင့္တည္ေနရာကို ပံုမွန္ ေဆာင္ရြက္မည္။ ဆက္လုပ္ျခင္းျဖင့္ အထက္ပါ ရည္ရြယ္ခ်က္မ်ားအတြက္ သင့္တည္ေနရာကို စုေဆာင္းၿပီး စီမံေဆာင္ရြက္မည္ကို သင္ သေဘာတူရာေရာက္သည္။
+
+သင္သည္ မိုးေလဝသ အက္ပ္ သတ္မွတ္ခ်က္မ်ားတြင္ ဤတည္ေနရာ စုေဆာင္းမႈႏွင့္ အသံုးျပဳမႈကို ရပ္တန္႔ႏိုင္သည္။"</string>
     <string name="use_current_location_body_purpose">ရည္ရြယ္ခ်က္</string>
     <string name="use_current_location_body_purpose_content">သင္၏ လက္ရွိ တည္ေနရာအတြက္ မိုးေလဝသအခ်က္အလက္မ်ားကို ျဖည့္ဆည္းေပးရန္</string>
     <string name="use_current_location_body_search_provider">ဝန္ေဆာင္မႈ ေပးသူ</string>
+    <string name="use_current_location_continue">ဆက္လုပ္ပါ</string>
+    <string name="use_current_location_not_now">ယခု မဟုတ္ေသးပါ</string>
     <string name="use_current_location_off_alert_popup">ေလာေလာဆယ္ တည္ေနရာ အခ်က္အလက္ကို ဖယ္ထုတ္သြားမည္။</string>
     <string name="useful_informations">ဘဝအတြက္ အၾကံေပးခ်က္မ်ားႏွင့္ အျခား မွတ္တမ္းမ်ား</string>
     <string name="using_as">%s အျဖစ္ သံုးျခင္း</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">ရာသီဥတု အၾကံျပဳခ်က္မ်ား</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Wed</string>
     <string name="weekly_forecast">ေန႔တုိင္း</string>
     <string name="widget_background">ဝစ္ဂ်စ္ ေနာက္ခံ</string>
     <string name="widget_empty_text">မိုးေလဝသအင္ဖို သိရန္ ႏွိပ္ပါ</string>
+    <string name="widget_location">ျမိဳ႕အမည္</string>
     <string name="widget_name_4x1">မိုေလဝသႏွင့္ နာရီ</string>
     <string name="widget_setting">သတ္မွတ္ခ်က္မ်ား</string>
     <string name="widget_setting_background_color">ေနာက္ခံ အေရာင္</string>

@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/auth/authenticator/FingerPrintAuthenticator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 52
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/FingerPrintAuthenticator$1;->this$0:Lcom/samsung/android/galaxycontinuity/auth/authenticator/FingerPrintAuthenticator;
@@ -34,6 +42,16 @@
 # virtual methods
 .method public notifyResult(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 

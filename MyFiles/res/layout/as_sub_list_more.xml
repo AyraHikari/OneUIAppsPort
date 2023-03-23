@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/sa_grid_more_foreground" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/as_sub_list_more_text_size" android:textColor="@color/sa_grid_more_text" android:gravity="center" android:id="@id/more_item_count" android:background="@drawable/as_more_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/as_sub_list_more_text_min_width" android:minHeight="@dimen/as_sub_list_more_text_min_height" android:paddingStart="@dimen/as_sub_list_more_text_padding" android:paddingEnd="@dimen/as_sub_list_more_text_padding" style="@style/RobotoLight" />
+</LinearLayout>

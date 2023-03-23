@@ -12,37 +12,37 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x12
+    accessFlags = 0x11
     name = "RealCacheRequest"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\u0011\u0012\n\u0010\u0002\u001a\u00060\u0003R\u00020\u0004\u00a2\u0006\u0002\u0010\u0005J\u0008\u0010\u000f\u001a\u00020\u0010H\u0016J\u0008\u0010\u0006\u001a\u00020\u0007H\u0016R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000eR\u0012\u0010\u0002\u001a\u00060\u0003R\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0011"
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\u0013\u0012\n\u0010\u0011\u001a\u00060\u000fR\u00020\u0010\u00a2\u0006\u0004\u0008\u0013\u0010\u0014J\u0008\u0010\u0003\u001a\u00020\u0002H\u0016J\u0008\u0010\u0005\u001a\u00020\u0004H\u0016R\u0014\u0010\u0006\u001a\u00020\u00048\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0006\u0010\u0007R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0005\u0010\u0007R\"\u0010\t\u001a\u00020\u00088\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\t\u0010\n\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000eR\u0018\u0010\u0011\u001a\u00060\u000fR\u00020\u00108\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0011\u0010\u0012\u00a8\u0006\u0015"
     }
     d2 = {
         "Lokhttp3/Cache$RealCacheRequest;",
         "Lokhttp3/internal/cache/CacheRequest;",
-        "editor",
-        "Lokhttp3/internal/cache/DiskLruCache$Editor;",
-        "Lokhttp3/internal/cache/DiskLruCache;",
-        "(Lokhttp3/Cache;Lokhttp3/internal/cache/DiskLruCache$Editor;)V",
-        "body",
+        "Lbi/x;",
+        "abort",
         "Lokio/Sink;",
+        "body",
         "cacheOut",
-        "done",
+        "Lokio/Sink;",
         "",
+        "done",
+        "Z",
         "getDone",
         "()Z",
         "setDone",
         "(Z)V",
-        "abort",
-        "",
+        "Lokhttp3/internal/cache/DiskLruCache$Editor;",
+        "Lokhttp3/internal/cache/DiskLruCache;",
+        "editor",
+        "Lokhttp3/internal/cache/DiskLruCache$Editor;",
+        "<init>",
+        "(Lokhttp3/Cache;Lokhttp3/internal/cache/DiskLruCache$Editor;)V",
         "okhttp"
     }
     k = 0x1
@@ -63,7 +63,7 @@
 
 .field private final editor:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
-.field final synthetic this$0:Lokhttp3/Cache;
+.field public final synthetic this$0:Lokhttp3/Cache;
 
 
 # direct methods
@@ -79,9 +79,9 @@
 
     const-string v0, "editor"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 389
+    .line 1
     iput-object p1, p0, Lokhttp3/Cache$RealCacheRequest;->this$0:Lokhttp3/Cache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -90,19 +90,17 @@
 
     const/4 p1, 0x1
 
-    .line 392
+    .line 2
     invoke-virtual {p2, p1}, Lokhttp3/internal/cache/DiskLruCache$Editor;->newSink(I)Lokio/Sink;
 
     move-result-object p1
 
     iput-object p1, p0, Lokhttp3/Cache$RealCacheRequest;->cacheOut:Lokio/Sink;
 
-    .line 397
+    .line 3
     new-instance p2, Lokhttp3/Cache$RealCacheRequest$1;
 
     invoke-direct {p2, p0, p1}, Lokhttp3/Cache$RealCacheRequest$1;-><init>(Lokhttp3/Cache$RealCacheRequest;Lokio/Sink;)V
-
-    check-cast p2, Lokio/Sink;
 
     iput-object p2, p0, Lokhttp3/Cache$RealCacheRequest;->body:Lokio/Sink;
 
@@ -112,7 +110,6 @@
 .method public static final synthetic access$getEditor$p(Lokhttp3/Cache$RealCacheRequest;)Lokhttp3/internal/cache/DiskLruCache$Editor;
     .locals 0
 
-    .line 389
     iget-object p0, p0, Lokhttp3/Cache$RealCacheRequest;->editor:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
     return-object p0
@@ -123,12 +120,12 @@
 .method public abort()V
     .locals 4
 
-    .line 412
+    .line 1
     iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->this$0:Lokhttp3/Cache;
 
     monitor-enter v0
 
-    .line 413
+    .line 2
     :try_start_0
     iget-boolean v1, p0, Lokhttp3/Cache$RealCacheRequest;->done:Z
     :try_end_0
@@ -143,11 +140,11 @@
     :cond_0
     const/4 v1, 0x1
 
-    .line 414
+    .line 3
     :try_start_1
     iput-boolean v1, p0, Lokhttp3/Cache$RealCacheRequest;->done:Z
 
-    .line 415
+    .line 4
     iget-object v2, p0, Lokhttp3/Cache$RealCacheRequest;->this$0:Lokhttp3/Cache;
 
     invoke-virtual {v2}, Lokhttp3/Cache;->getWriteAbortCount$okhttp()I
@@ -160,17 +157,15 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 412
+    .line 5
     monitor-exit v0
 
-    .line 417
+    .line 6
     iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->cacheOut:Lokio/Sink;
-
-    check-cast v0, Ljava/io/Closeable;
 
     invoke-static {v0}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
 
-    .line 419
+    .line 7
     :try_start_2
     iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->editor:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
@@ -184,7 +179,7 @@
     :catchall_0
     move-exception v1
 
-    .line 412
+    .line 8
     monitor-exit v0
 
     throw v1
@@ -193,7 +188,6 @@
 .method public body()Lokio/Sink;
     .locals 1
 
-    .line 424
     iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->body:Lokio/Sink;
 
     return-object v0
@@ -202,7 +196,6 @@
 .method public final getDone()Z
     .locals 1
 
-    .line 394
     iget-boolean v0, p0, Lokhttp3/Cache$RealCacheRequest;->done:Z
 
     return v0
@@ -211,7 +204,6 @@
 .method public final setDone(Z)V
     .locals 0
 
-    .line 394
     iput-boolean p1, p0, Lokhttp3/Cache$RealCacheRequest;->done:Z
 
     return-void

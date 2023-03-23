@@ -60,6 +60,7 @@
     <string name="air_quality">空氣品質</string>
     <string name="air_quality_next_tts">每日空氣品質短期預報</string>
     <string name="air_quality_previous_tts">每日空氣品質長期預報</string>
+    <string name="alert_title">劇烈天氣警報</string>
     <string name="all_added_cities">所有已新增城市</string>
     <string name="allow">允許</string>
     <string name="allow_permission_in_settings">若要使用此功能，需在設定中允許權限。</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">不支持這個動作。</string>
     <string name="apply_daylight_saving_time">要套用日光節約時間嗎？</string>
     <string name="as_possible_after_verification">已送出報告。驗證後會盡快變更城市名稱。</string>
+    <string name="auto_refresh_on_screen_description">每小時自動重新整理天氣資訊。開啟此功能就不必另行手動重新整理。</string>
+    <string name="auto_refresh_on_the_go">自動重新整理</string>
+    <string name="auto_refresh_on_the_go_advanced">進階</string>
+    <string name="auto_refresh_on_the_go_description">開車、騎車、跑步或走路期間增加氣象資訊更新頻率。如開啟此設定，則無法手動重新整理。</string>
+    <string name="auto_refresh_on_the_go_simple_description">開車、騎行、跑步或走路時，取得頻繁更新的天氣資訊。</string>
     <string name="bottomsheet_action_expand_halfway">展開一半</string>
     <string name="btn_report">報告</string>
     <string name="button_finish">完成</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">輕觸兩下來取得更多資訊。</string>
     <string name="china">中國</string>
     <string name="cities_button">城市</string>
+    <string name="city_added">已新增城市。</string>
     <string name="city_list_text">城市</string>
     <string name="clear">晴朗</string>
     <string name="clear_text_end_icon_content_description">清除文字</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">您的裝置位置資訊將傳送給內容提供者，以取得當地天氣資訊。</string>
     <string name="contents_error_msg">此服務暫時無法使用。請稍後重試。</string>
     <string name="copy">複製</string>
-    <string name="copy_toast_msg">已將連結複製到剪貼簿</string>
     <string name="correct_city_name">修正城市名稱</string>
     <string name="couldnt_find_location">找不到位置</string>
     <string name="cover_screen_top_sync_dialog_text">於主螢幕設定相同地點嗎？</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">項目已拖放到位置 %d。</string>
     <string name="dragndroplist_drag_start">已開始拖曳位於 %d 的項目。</string>
     <string name="dragndroplist_item_cannot_be_dragged">無法拖曳位於 %d 的項目。</string>
+    <string name="drawer_tips">%s提示</string>
     <string name="drawer_tips_message">輕觸此處即可新增、刪除並重新排序地點。您也可新增多個 widget 於主螢幕上顯示不同地點。</string>
     <string name="drawer_tips_message_1">輕觸此功能表底部的 [管理地點] 來新增、刪除與重新排序地點。</string>
     <string name="drawer_tips_message_2">您可將一個以上的 widget 新增至主螢幕來同時顯示不同地點。</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">進階</string>
     <string name="exposed_dropdown_menu_content_description">顯示下拉式選單</string>
     <string name="failed_to_send_report">無法傳送報告</string>
-    <string name="fallback_menu_item_copy_link">複製連結</string>
-    <string name="fallback_menu_item_open_in_browser">在瀏覽器中開啟</string>
-    <string name="fallback_menu_item_share_link">分享連結</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">常用地點</string>
     <string name="feel_like_pd_minus_temp">體感溫度 -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">預報影片</string>
     <string name="format_km_per_hour">%s公里/小時</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">週五</string>
     <string name="general">一般</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">根據手機使用習慣取得個人化內容。</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">根據您的平板使用習慣取得個人化內容。</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">透過天氣功能取得天氣資訊，包含目前位置</string>
     <string name="go_to_website">前往網站</string>
     <string name="goto_apps">有更新可用。安裝嗎？</string>
     <string name="goto_apps_later">稍候</string>
     <string name="goto_apps_now">現在</string>
     <string name="goto_apps_update_title">新內容提醒</string>
     <string name="header_tts">標題</string>
+    <string name="heavy">大</string>
     <string name="heavy_rain">大雨</string>
     <string name="heavy_rain_followed_by_intense_heat">豪雨轉炎熱</string>
     <string name="heavy_rain_followed_by_light_rain">豪雨轉炎熱</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">能見度</string>
     <string name="life_index_wind">風</string>
     <string name="life_index_wind_force">風速</string>
+    <string name="light">小</string>
     <string name="light_rain_followed_by_heavy_rain">小雨轉豪雨</string>
     <string name="light_rain_with_some_heavy_rain">小雨伴隨局部豪雨</string>
     <string name="link_tts">連結</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">找不到結果。</string>
     <string name="message_service_not_available">服務目前無法使用。</string>
     <string name="minus_tts">減</string>
+    <string name="mon">週一</string>
     <string name="more">更多</string>
     <string name="more_cuntact_us">與我們聯絡</string>
     <string name="more_information">更多</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">輕觸此觸來變更預設天氣地點並管理所有地點。</string>
     <string name="new_version_available">有新版的 %s 可用。</string>
     <string name="new_version_is_available">已有新版本可用。</string>
+    <string name="news_menu_show_news">顯示新聞</string>
+    <string name="news_opt_in_banner_title_text">在天氣 widget 中顯示新聞，掌握最新時事。</string>
+    <string name="news_opt_in_popup_desc_text">在天氣 widget 中顯示 %s 提供的最新頭條，掌握全球時事焦點。</string>
+    <string name="news_opt_in_popup_title_text">在單一 widget 查看所有新聞與氣象資訊</string>
+    <string name="news_request_agree_text">輕觸即可享有 %s 提供的新聞</string>
+    <string name="news_widget_bubble_text">取得天氣新聞。</string>
+    <string name="news_widget_dummy_title">今日頭條新聞</string>
+    <string name="news_widget_new_dummy_title">今早的 5 大新聞摘要</string>
+    <string name="news_widget_oobe_text">輕觸這裡來加入新聞。</string>
     <string name="next">下一城市</string>
+    <string name="next_btn">下一首</string>
     <string name="next_city">輕觸兩下來檢視下一個城市的天氣資訊。</string>
     <string name="night_tts">晚上</string>
     <string name="no_application_available">沒有可用的應用程式。</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">無天氣資訊</string>
     <string name="not_in_use">目前未使用</string>
     <string name="not_now">現在不要</string>
+    <string name="not_now_btn">現在不要</string>
     <string name="not_selected">未選擇</string>
     <string name="not_set">未設定</string>
     <string name="nothing_selected">未選擇任何項目</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">如需最快速且最精確的位置偵測，請輕觸 [設定]，然後將 [定位方式] 設定為 [GPS、Wi-Fi 與行動網路]。</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">如需最快速且最精確的位置偵測，請輕觸 [設定]，然後將 [定位方式] 設定為 [GPS 與 Wi-Fi]。</string>
     <string name="notice_gps_trun_off_message_verizon">若要檢視位置天氣資訊，請開啟定位設定並確認已設為高精確度模式。</string>
+    <string name="notification_alert_channel_name">劇烈天氣警報</string>
     <string name="notification_apps_update_channel_name">更新通知</string>
     <string name="notification_auto_refresh_channel_name">自動重新整理天氣</string>
     <string name="notification_dex_channel_name">Samsung DeX 的天氣服務</string>
@@ -544,6 +565,7 @@
     <string name="open_app">開啟應用程式</string>
     <string name="open_source_licences">開放原始碼授權</string>
     <string name="other_locations">其他地點</string>
+    <string name="partly_sunny">時晴</string>
     <string name="password_toggle_content_description">顯示密碼</string>
     <string name="paused">已暫停</string>
     <string name="pd_km">%.1f 公里</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">已將「%1$s」複製到剪貼簿。</string>
     <string name="preview">預覽%s</string>
     <string name="previous">前一城市</string>
+    <string name="previous_btn">上一步</string>
     <string name="previous_city">輕觸兩下來檢視上一個城市的天氣資訊。</string>
     <string name="privacy_policy">隱私權政策</string>
     <string name="probability_of_rain_text">降雨機率</string>
     <string name="protect_your_content">保護您的內容</string>
+    <string name="ps_in">%s 英吋</string>
+    <string name="ps_mm">%s 毫米</string>
     <string name="radar">雷達與地圖</string>
     <string name="rain">有雨</string>
     <string name="rain_followed_by_intense_heat">陣雨轉炎熱</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">若要更新天氣資訊，請輕觸 [設定]，前往 [應用程式資訊] > [權限]，然後允許下列權限並重試：</string>
     <string name="runtime_location_permission_title">允許權限</string>
     <string name="runtime_oem_grant_permission_desc">%s應用程式擁有存取下列功能的權限：</string>
+    <string name="sat">週六</string>
     <string name="save_button">儲存</string>
     <string name="search_menu_title">搜尋</string>
     <string name="search_most_searched_for">最常搜尋</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">有新內容可用</string>
     <string name="sesl_material_overflow_badge_text_n">新</string>
     <string name="sesl_more_item_label">更多</string>
+    <string name="sesl_preferecne_badge_description">新通知</string>
     <string name="sesl_preferencecategory_added_title">標題</string>
     <string name="sesl_search_hint">搜尋</string>
     <string name="sesl_searchview_description_clear">清除搜尋欄位</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">離線</string>
     <string name="st_view_less">檢視較少</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">關</string>
+    <string name="status_on">開</string>
     <string name="summary_collapsed_preference_list">%1$s、%2$s</string>
+    <string name="sun">週日</string>
     <string name="sunny">晴天</string>
     <string name="sunny_with_some_clouds">晴時多雲</string>
     <string name="sunny_with_some_heavy_rain">晴時有豪雨</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">輕觸此處以自舊裝置還原天氣資料。</string>
     <string name="tap_retry_to_try_to_find_your_location_again">輕觸 [重試] 來嘗試再次尋找您的位置。</string>
     <string name="tap_setting_message_edge_panel">開啟 [定位] 來取得當地天氣資訊。</string>
+    <string name="tap_the_settings_icon">輕觸設定圖示。</string>
     <string name="tap_to_get_the_weather">輕觸此處來取得天氣資訊</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">條款與條件</string>
     <string name="the_latest_version">已安裝最新版本。</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">此設定也將套用至通知和日曆。</string>
+    <string name="thu">週四</string>
     <string name="tick_box_tts">核取方塊</string>
     <string name="ticked_tts">已勾選</string>
     <string name="time_am">上午</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">每小時</string>
     <string name="title_select_locations">選擇地點</string>
     <string name="title_theme">主題</string>
+    <string name="to_continue_agree_to_updated">若要繼續，請同意更新版 %s。</string>
     <string name="to_get_local_weather_chn">"為取得當地天氣，您目前的位置將會傳送給天氣服務供應商。（請參閱該供應商的%1$s條款與條件%2$s及%3$s隱私權政策%4$s。）
 您裝置上的其他應用程式和服務可能會存取擷取的天氣資料，以便在該等應用程式中顯示天氣。
 為了向您持續提供天氣資訊，即使您不使用天氣應用程式，該應用程式也可以存取您的位置。"</string>
     <string name="today">今天</string>
+    <string name="try_it_out_btn">試用</string>
+    <string name="tue">週二</string>
+    <string name="turn_on_to_use_precise_location">若要使用此功能，請允許 %s 可隨時存取您的定位並開啟 [使用精確定位]。請輕觸 [設定]，然後前往 [權限] > [定位]。</string>
     <string name="tw_title_weather_broadcast">廣播</string>
-    <string name="unable_to_check_for_updates">無法檢查更新。沒有網路連線。</string>
+    <string name="unable_to_check_for_updates">無法檢查更新。請稍後重試。</string>
     <string name="unable_to_receive_info_msg">無法接收資訊</string>
     <string name="unticked_tts">取消勾選</string>
     <string name="unused">未使用</string>
     <string name="update">更新</string>
     <string name="update_abb8">更新</string>
     <string name="update_app">更新應用程式</string>
+    <string name="updated_tile_chn">更新：%s</string>
     <string name="updated_tts">已更新 %s</string>
+    <string name="use_current_location">使用目前位置</string>
     <string name="use_current_location_agree_popup">"為取得當地天氣，您目前的位置將會傳送給天氣服務供應商。(請參閱供應商的%1$s隱私權政策%2$s。)
 您裝置上的其他應用程式和服務可能會存取擷取的天氣資料，以便在該等應用程式中顯示天氣。"</string>
     <string name="use_current_location_and_background_agree_popup">"為取得當地天氣，您目前的位置將會傳送給天氣服務供應商。（請參閱該供應商的%1$s隱私權政策%2$s。）
@@ -746,9 +784,16 @@
 您可以透過天氣應用程式設定，關閉存取定位的功能。"</string>
     <string name="use_current_location_body_msg_chn">"在使用「氣象」之前，請仔細閱讀以下內容：
 如果您想知道當前定位的天氣，您需要同意第三方服務供應商持續存取您的裝置並獲取某些資料（即使在您不使用該服務的時候），如下所列。在作出此類同意之前，請仔細閱讀並了解第三方服務供應商的%1$s條款與條件%2$s以及%3$s隱私權政策%4$s。您可以透過在「設定」功能表中關閉「定位」來撤銷您的同意。您裝置上的其他應用程式和服務可能會存取已擷取的氣象資料，以便在該等應用程式及服務中顯示氣象。"</string>
+    <string name="use_current_location_body_msg_kor">"系統將蒐集您目前的位置，用以提供部分天氣應用程式功能使用，例如顯示您所在位置的天氣資訊。
+
+為持續提供天氣資訊，此應用程式將定期偵測您的位置，即便在您未使用應用程式的情況下也不例外。繼續即表示您同意系統就上述目的蒐集並處理您的定位資訊。
+
+您可前往 [天氣] 應用程式設定中停止定位之蒐集與使用。"</string>
     <string name="use_current_location_body_purpose">目的</string>
     <string name="use_current_location_body_purpose_content">提供您當前定位的氣象資訊</string>
     <string name="use_current_location_body_search_provider">服務供應商</string>
+    <string name="use_current_location_continue">繼續</string>
+    <string name="use_current_location_not_now">現在不要</string>
     <string name="use_current_location_off_alert_popup">將移除目前的位置資訊。</string>
     <string name="useful_informations">生活新知與其他資訊</string>
     <string name="using_as">使用 %s</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">天氣提示</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">上海星團信息技術有限公司</string>
+    <string name="wed">週三</string>
     <string name="weekly_forecast">每日</string>
     <string name="widget_background">Widget 背景</string>
     <string name="widget_empty_text">輕觸以取得天氣資訊</string>
+    <string name="widget_location">城市名</string>
     <string name="widget_name_4x1">天氣與時鐘</string>
     <string name="widget_setting">設定</string>
     <string name="widget_setting_background_color">背景顏色</string>

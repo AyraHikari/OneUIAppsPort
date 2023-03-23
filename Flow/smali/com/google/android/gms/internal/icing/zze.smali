@@ -1,49 +1,79 @@
-.class final Lcom/google/android/gms/internal/icing/zze;
-.super Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;
+.class public final Lcom/google/android/gms/internal/icing/zze;
+.super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/api/Api$AbstractClientBuilder<",
-        "Lcom/google/android/gms/internal/icing/zzah;",
-        "Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final zza:Lcom/google/android/gms/common/api/Api$ClientKey;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/Api$ClientKey<",
+            "Lcom/google/android/gms/internal/icing/zzae;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final zzb:Lcom/google/android/gms/common/api/Api;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/Api<",
+            "Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final zzc:Lcom/google/android/gms/internal/icing/zzz;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
+
+.field private static final zzd:Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/Api$AbstractClientBuilder<",
+            "Lcom/google/android/gms/internal/icing/zzae;",
+            "Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;-><init>()V
+    new-instance v0, Lcom/google/android/gms/common/api/Api$ClientKey;
 
-    return-void
-.end method
+    invoke-direct {v0}, Lcom/google/android/gms/common/api/Api$ClientKey;-><init>()V
 
+    sput-object v0, Lcom/google/android/gms/internal/icing/zze;->zza:Lcom/google/android/gms/common/api/Api$ClientKey;
 
-# virtual methods
-.method public final synthetic buildClient(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
-    .locals 6
+    .line 2
+    new-instance v1, Lcom/google/android/gms/internal/icing/zzd;
+
+    invoke-direct {v1}, Lcom/google/android/gms/internal/icing/zzd;-><init>()V
+
+    sput-object v1, Lcom/google/android/gms/internal/icing/zze;->zzd:Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;
 
     .line 3
-    new-instance p4, Lcom/google/android/gms/internal/icing/zzah;
+    new-instance v2, Lcom/google/android/gms/common/api/Api;
 
-    move-object v0, p4
+    const-string v3, "AppDataSearch.LIGHTWEIGHT_API"
 
-    move-object v1, p1
+    invoke-direct {v2, v3, v1, v0}, Lcom/google/android/gms/common/api/Api;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;Lcom/google/android/gms/common/api/Api$ClientKey;)V
 
-    move-object v2, p2
+    sput-object v2, Lcom/google/android/gms/internal/icing/zze;->zzb:Lcom/google/android/gms/common/api/Api;
 
-    move-object v3, p3
+    .line 4
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzal;
 
-    move-object v4, p5
+    invoke-direct {v0}, Lcom/google/android/gms/internal/icing/zzal;-><init>()V
 
-    move-object v5, p6
+    sput-object v0, Lcom/google/android/gms/internal/icing/zze;->zzc:Lcom/google/android/gms/internal/icing/zzz;
 
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/internal/icing/zzah;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
-
-    return-object p4
+    return-void
 .end method

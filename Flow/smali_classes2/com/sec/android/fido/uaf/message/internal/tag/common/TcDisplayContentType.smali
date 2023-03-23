@@ -30,7 +30,7 @@
 
     sput-object v0, Lcom/sec/android/fido/uaf/message/internal/tag/common/TcDisplayContentType;->sTransactionConfirmationDisplayContentType:Ljava/util/Set;
 
-    const-string v1, "text/plain"
+    const-string/jumbo v1, "text/plain"
 
     .line 37
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z

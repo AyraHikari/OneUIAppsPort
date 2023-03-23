@@ -26,6 +26,8 @@
 
 .field static final BIOMETRICAUTHAVAILABLE:Ljava/lang/String; = "biometricauthavailable"
 
+.field static final BIOMETRICSUNLOCK:Ljava/lang/String; = "biometricsunlock"
+
 .field static final BTDEVICECLASS:Ljava/lang/String; = "btdeviceclass"
 
 .field static final CONNECTIONTYPE:Ljava/lang/String; = "connectiontype"
@@ -64,7 +66,7 @@
 
 .field static final SIMPLEUNLOCK:Ljava/lang/String; = "simpleunlock"
 
-.field static final _CREATE:Ljava/lang/String; = "create table flowdevices(_id integer primary key autoincrement, devicename text not null , aliasname text, macaddress text not null ,nfcid text, pcserverguid text, devicetype integer ,fidoused integer ,samsungpassused integer ,enrollcompleted integer, simpleunlock integer, samsungpass integer, btdeviceclass integer, gearavailable integer, allowconnectionviagear integer, dynamiclockavailable integer, biometricauthavailable integer, allowconnectionviabio integer, gearmacaddress text,gearauthallowpopup integer,connectiontype integer,deviceid text,lastaddress text,protocolversion integer);"
+.field static final _CREATE:Ljava/lang/String; = "create table flowdevices(_id integer primary key autoincrement, devicename text not null , aliasname text, macaddress text not null ,nfcid text, pcserverguid text, devicetype integer ,fidoused integer ,samsungpassused integer ,enrollcompleted integer, simpleunlock integer, samsungpass integer, biometricsunlock integer, btdeviceclass integer, gearavailable integer, allowconnectionviagear integer, dynamiclockavailable integer, biometricauthavailable integer, allowconnectionviabio integer, gearmacaddress text,gearauthallowpopup integer,connectiontype integer,deviceid text,lastaddress text,protocolversion integer);"
 
 .field static final _TABLENAME:Ljava/lang/String; = "flowdevices"
 

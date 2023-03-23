@@ -32,13 +32,21 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 949
+    .line 975
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnHangoutParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
 
-    .line 950
+    .line 976
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
@@ -51,7 +59,7 @@
 .method synthetic constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$1;)V
     .locals 0
 
-    .line 949
+    .line 975
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnHangoutParser;-><init>(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;)V
 
     return-void
@@ -59,10 +67,18 @@
 
 .method private isDuplicatedNotification(Landroid/service/notification/StatusBarNotification;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sbn"
+        }
+    .end annotation
 
     const-string v0, "android.text"
 
-    .line 995
+    .line 1020
     :try_start_0
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
@@ -70,7 +86,7 @@
 
     iget-wide v1, v1, Landroid/app/Notification;->when:J
 
-    .line 996
+    .line 1021
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
     move-result-object v3
@@ -87,7 +103,7 @@
 
     goto :goto_0
 
-    .line 997
+    .line 1022
     :cond_0
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
@@ -103,7 +119,7 @@
 
     move-result-object p1
 
-    .line 999
+    .line 1024
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnHangoutParser;->maps:Ljava/util/HashMap;
 
@@ -137,7 +153,7 @@
 
     return p1
 
-    .line 1002
+    .line 1027
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnHangoutParser;->maps:Ljava/util/HashMap;
 
@@ -154,7 +170,7 @@
     :catch_0
     move-exception p1
 
-    .line 1005
+    .line 1030
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_1
@@ -168,7 +184,7 @@
 .method public clearAll()V
     .locals 1
 
-    .line 983
+    .line 1009
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnHangoutParser;->maps:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
@@ -178,8 +194,18 @@
 
 .method public parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sbn",
+            "isPosted"
+        }
+    .end annotation
 
-    .line 973
+    .line 999
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getDeviceOsVer()I
 
     move-result v0
@@ -188,10 +214,10 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 974
+    .line 1000
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnHangoutParser;->this$0:Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;
 
-    invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2200(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;)Z
+    invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;->access$2300(Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager;Landroid/service/notification/StatusBarNotification;)Z
 
     move-result v0
 
@@ -210,7 +236,7 @@
 
     return-object p1
 
-    .line 978
+    .line 1004
     :cond_1
     invoke-super {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/NotificationDataManager$SbnParser;->parse(Landroid/service/notification/StatusBarNotification;Z)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 

@@ -47,7 +47,7 @@
 
     const-string v0, "_id"
 
-    const-string v1, "version"
+    const-string/jumbo v1, "version"
 
     const-string v2, "package_name"
 
@@ -73,6 +73,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/sqlite/SQLiteOpenHelper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "databaseHelper"
+        }
+    .end annotation
 
     .line 56
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/database/Database;-><init>(Landroid/content/Context;Landroid/database/sqlite/SQLiteOpenHelper;)V
@@ -92,12 +102,12 @@
 .method public clearContents()V
     .locals 3
 
-    .line 187
+    .line 188
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 188
+    .line 189
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -107,22 +117,22 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 190
+    .line 191
     :try_start_1
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
     const-string v2, "delete from notification_apps"
 
-    .line 191
+    .line 192
     invoke-virtual {v1, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 192
+    .line 193
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 196
+    .line 197
     :goto_0
     :try_start_2
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
@@ -139,7 +149,7 @@
     :catch_0
     move-exception v2
 
-    .line 194
+    .line 195
     :try_start_3
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_3
@@ -147,24 +157,24 @@
 
     goto :goto_0
 
-    .line 198
+    .line 199
     :goto_1
     :try_start_4
     monitor-exit v0
 
     return-void
 
-    .line 196
+    .line 197
     :goto_2
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 197
+    .line 198
     throw v2
 
     :catchall_1
     move-exception v1
 
-    .line 198
+    .line 199
     monitor-exit v0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
@@ -174,13 +184,21 @@
 
 .method public deleteContent(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "app"
+        }
+    .end annotation
 
-    .line 179
+    .line 180
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 180
+    .line 181
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -198,7 +216,7 @@
 
     const/4 v5, 0x0
 
-    .line 181
+    .line 182
     iget p1, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->id:I
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -209,10 +227,10 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 182
+    .line 183
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 183
+    .line 184
     monitor-exit v0
 
     return-void
@@ -265,6 +283,8 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     sget-object v4, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->NOTIFICATION_CONTENTS_PROJECTION:[Ljava/lang/String;
 
     const-string v5, ","
@@ -275,25 +295,37 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " FROM "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, "notification_apps"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " WHERE "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, "is_favorite"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " = 1"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -490,6 +522,8 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     sget-object v4, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->NOTIFICATION_CONTENTS_PROJECTION:[Ljava/lang/String;
 
     const-string v5, ","
@@ -500,25 +534,37 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " FROM "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, "notification_apps"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " WHERE "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, "is_favorite"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " = 0"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -639,6 +685,14 @@
 
 .method public insertContent(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "app"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -652,6 +706,16 @@
 
 .method public insertContent(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;Z)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "app",
+            "saveIcon"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -681,7 +745,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/ContentValues;-><init>(I)V
 
-    const-string v2, "version"
+    const-string/jumbo v2, "version"
 
     const/4 v4, 0x2
 
@@ -829,13 +893,21 @@
 
 .method public isExistApp(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)Z
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "app"
+        }
+    .end annotation
 
-    .line 204
+    .line 205
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 205
+    .line 206
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -852,7 +924,7 @@
 
     const-string v2, "COUNT(*)"
 
-    .line 209
+    .line 210
     filled-new-array {v2}, [Ljava/lang/String;
 
     move-result-object v4
@@ -865,7 +937,7 @@
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->packageName:Landroidx/databinding/ObservableField;
 
-    .line 210
+    .line 211
     invoke-virtual {p1}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
 
     move-result-object p1
@@ -884,21 +956,21 @@
 
     move-object v2, v1
 
-    .line 209
+    .line 210
     invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v10
 
     if-eqz v10, :cond_0
 
-    .line 212
+    .line 213
     invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 213
+    .line 214
     invoke-interface {v10, v12}, Landroid/database/Cursor;->getInt(I)I
 
     move-result p1
@@ -913,15 +985,15 @@
     :goto_0
     if-eqz v10, :cond_1
 
-    .line 216
+    .line 217
     :try_start_2
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 218
+    .line 219
     :cond_1
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 219
+    .line 220
     monitor-exit v0
 
     if-lez p1, :cond_2
@@ -939,17 +1011,17 @@
 
     if-eqz v10, :cond_3
 
-    .line 216
+    .line 217
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 217
+    .line 218
     :cond_3
     throw p1
 
     :catchall_1
     move-exception p1
 
-    .line 219
+    .line 220
     monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
@@ -959,8 +1031,16 @@
 
 .method public readerFor(Landroid/database/Cursor;)Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cursor"
+        }
+    .end annotation
 
-    .line 225
+    .line 226
     new-instance v0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;
 
     invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase$Reader;-><init>(Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;Landroid/database/Cursor;)V
@@ -970,6 +1050,16 @@
 
 .method public varargs updateContent(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;[Ljava/lang/String;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "app",
+            "targets"
+        }
+    .end annotation
 
     .line 152
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->DB_LOCK:Ljava/lang/Object;
@@ -992,7 +1082,7 @@
     move v4, v3
 
     :goto_0
-    if-ge v4, v2, :cond_5
+    if-ge v4, v2, :cond_6
 
     aget-object v5, p2, v4
 
@@ -1018,7 +1108,7 @@
 
     invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_1
+    goto/16 :goto_1
 
     :cond_0
     const-string v6, "label"
@@ -1101,14 +1191,14 @@
     .line 164
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v5
+    move-result v6
 
-    if-eqz v5, :cond_4
+    if-eqz v6, :cond_4
 
     .line 165
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->activityName:Ljava/lang/String;
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_5
 
     const-string v5, "activity"
 
@@ -1117,14 +1207,43 @@
 
     invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
+    goto :goto_1
+
     :cond_4
+    const-string v6, "icon"
+
+    .line 168
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
+
+    const-string v5, "icon"
+
+    .line 169
+    iget-object v6, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->icon:Landroidx/databinding/ObservableField;
+
+    invoke-virtual {v6}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/graphics/Bitmap;
+
+    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->bitmapToBase64(Landroid/graphics/Bitmap;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_5
     :goto_1
     add-int/lit8 v4, v4, 0x1
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 172
-    :cond_5
+    .line 173
+    :cond_6
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
     invoke-virtual {p2}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -1139,7 +1258,7 @@
 
     new-array v5, v5, [Ljava/lang/String;
 
-    .line 173
+    .line 174
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -1148,11 +1267,15 @@
 
     invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p1, ""
+    move-result-object p1
 
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, ""
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1160,10 +1283,10 @@
 
     invoke-virtual {p2, v2, v1, v4, v5}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 174
+    .line 175
     invoke-virtual {p2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 175
+    .line 176
     monitor-exit v0
 
     return-void

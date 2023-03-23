@@ -60,6 +60,7 @@
     <string name="air_quality">Kalidad ng hangin</string>
     <string name="air_quality_next_tts">Mas huling pagtataya sa arawang kalidad ng hangin</string>
     <string name="air_quality_previous_tts">Mas maagang pagtataya sa arawang kalidad ng hangin</string>
+    <string name="alert_title">Alerto sa matinding lagay ng panahon</string>
     <string name="all_added_cities">Lahat ng idinagdag na lungsod</string>
     <string name="allow">Payagan</string>
     <string name="allow_permission_in_settings">Para magamit ang feature na ito, kailangan mong payagan ang mga pahintulot sa Mga Setting.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Hindi sinusuportahan ang aksyon.</string>
     <string name="apply_daylight_saving_time">Gamitin ang daylight saving time</string>
     <string name="as_possible_after_verification">Naipadala ang ulat. Babaguhin ang pangalan ng lungsod sa lalong madaling panahon pagkatapos na mai-verify.</string>
+    <string name="auto_refresh_on_screen_description">Awtomatikong makatanggap ng na-refresh na info sa lagay ng panahon bawat oras. Kapag naka-on ito, hindi ka makaka-refresh nang mano-mano.</string>
+    <string name="auto_refresh_on_the_go">Mag-awto refresh habang kumikilos</string>
+    <string name="auto_refresh_on_the_go_advanced">Advanced</string>
+    <string name="auto_refresh_on_the_go_description">Makatanggap ng mas madalas na mga update sa lagay ng panahon kapag nagmamaneho, nagbibisikleta, tumatakbo o naglalakad ka. Kapag naka-on ito, hindi ka makaka-refresh nang mano-mano.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Makatanggap ng mas madalas na mga update sa lagay ng panahon kapag nagmamaneho, nagbibisikleta, tumatakbo o naglalakad ka.</string>
     <string name="bottomsheet_action_expand_halfway">I-expand hanggang gitna</string>
     <string name="btn_report">Iulat</string>
     <string name="button_finish">Tapusin</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">I-double tap para sa mas maraming impormasyon.</string>
     <string name="china">China</string>
     <string name="cities_button">Mga Lungsod</string>
+    <string name="city_added">Naidagdag ang lungsod.</string>
     <string name="city_list_text">Mga Lungsod</string>
     <string name="clear">Maaliwalas</string>
     <string name="clear_text_end_icon_content_description">I-clear ang text</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Ipapadala ang impormasyon ng lokasyon ng iyong device sa provider ng content upang mabigyan ka ng impormasyon ng lokal na lagay ng panahon.</string>
     <string name="contents_error_msg">Pansamantalang hindi magagamit ang serbisyong ito. Pakisubukan muli mamaya.</string>
     <string name="copy">Kopyahin</string>
-    <string name="copy_toast_msg">Nakopya sa clipboard ang link</string>
     <string name="correct_city_name">Wastong pangalan ng lungsod</string>
     <string name="couldnt_find_location">Hindi mahanap ang lokasyon</string>
     <string name="cover_screen_top_sync_dialog_text">I-set ang parehong lokasyon sa main screen?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Na-drop ang item sa posisyon %d.</string>
     <string name="dragndroplist_drag_start">Sinimulan ang pag-drag ng item sa posisyon %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Hindi mada-drag ang item sa posisyon %d.</string>
+    <string name="drawer_tips">%s tip</string>
     <string name="drawer_tips_message">Mag-tap dito para magdagdag, magtanggal at baguhin ang pagkasunod-sunod ng mga lokasyon. Makadaragdag ka rin ng maraming widget para magpakita ng iba-ibang lokasyon sa Home screen.</string>
     <string name="drawer_tips_message_1">I-tap ang Pamahalaan ang mga lokasyon sa ibaba ng menu na ito para magdagdag, magtanggal at baguhin ang pagkasunod-sunod ng mga lokasyon.</string>
     <string name="drawer_tips_message_2">Makadaragdag ka ng higit sa isang widget sa Home screen para magpakita ng iba-ibang lokasyon nang magkasabay.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Advanced</string>
     <string name="exposed_dropdown_menu_content_description">Ipakita ang dropdown na menu</string>
     <string name="failed_to_send_report">Nabigong ipadala ang ulat</string>
-    <string name="fallback_menu_item_copy_link">Kopyahin ang link</string>
-    <string name="fallback_menu_item_open_in_browser">Buksan sa browser</string>
-    <string name="fallback_menu_item_share_link">Ibahagi ang link</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Paboritong lokasyon</string>
     <string name="feel_like_pd_minus_temp">Parang -%d° ang pakiramdam</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Video ng pagtataya</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Biy</string>
     <string name="general">Pangkalahatan</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Makatanggap ng naka-personalize na nilalaman na nakabatay sa kung paano mo gamitin ang telepono mo.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Makatanggap ng naka-personalize na nilalaman batay sa kung paano mo ginagamit ang tablet mo.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">makakuha ng impormasyon sa lagay ng panahon, kabilang ang kasalukuyang lokasyon mo, mula sa Weather</string>
     <string name="go_to_website">Pumunta sa website</string>
     <string name="goto_apps">May bagong update na available. I-install ngayon?</string>
     <string name="goto_apps_later">Mamaya</string>
     <string name="goto_apps_now">Ngayon</string>
     <string name="goto_apps_update_title">Mga alerto sa bagong content</string>
     <string name="header_tts">Header</string>
+    <string name="heavy">Mabigat</string>
     <string name="heavy_rain">Malakas na ulan</string>
     <string name="heavy_rain_followed_by_intense_heat">Heavy rain followed by intense heat</string>
     <string name="heavy_rain_followed_by_light_rain">Heavy rain followed by intense heat</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Visibility</string>
     <string name="life_index_wind">Hangin</string>
     <string name="life_index_wind_force">Bilis ng hangin</string>
+    <string name="light">Liwanag</string>
     <string name="light_rain_followed_by_heavy_rain">Light rain followed by heavy rain</string>
     <string name="light_rain_with_some_heavy_rain">Light rain with some heavy rain</string>
     <string name="link_tts">I-link</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Walang nahanap na resulta.</string>
     <string name="message_service_not_available">Hindi available ngayon ang serbisyo.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Lun</string>
     <string name="more">More</string>
     <string name="more_cuntact_us">Makipag-ugnayan sa amin</string>
     <string name="more_information">Marami pa</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">I-tap dito para baguhin ang default na lokasyon sa lagay ng panahon at pamahalaan ang lahat ng lokasyon mo.</string>
     <string name="new_version_available">May bagong bersiyon ng %s na magagamit.</string>
     <string name="new_version_is_available">May available na bagong bersiyon.</string>
+    <string name="news_menu_show_news">Ipakita ang balita</string>
+    <string name="news_opt_in_banner_title_text">Manatiling up-to-date sa mga kasalukuyang pangyayari sa pamamagitan ng pagpapakita ng balita sa Weather widget.</string>
+    <string name="news_opt_in_popup_desc_text">Manatiling up-to-date sa mundo sa pamamagitan ng pagpapakita ng mga pinakabagong ulo ng balita mula sa %s sa Weather widget.</string>
+    <string name="news_opt_in_popup_title_text">Makita ang balita at lagay ng panahon sa iisang widget</string>
+    <string name="news_request_agree_text">I-tap para makakuha ng balita mula sa %s</string>
+    <string name="news_widget_bubble_text">Makatanggap ng balita kasama ng lagay ng panahon.</string>
+    <string name="news_widget_dummy_title">Nangungunang kwento ngayong araw</string>
+    <string name="news_widget_new_dummy_title">Ang 5 bagay na kailangan mong malaman ngayong umaga</string>
+    <string name="news_widget_oobe_text">Mag-tap dito para magdagdag ng mga balita.</string>
     <string name="next">Next city</string>
+    <string name="next_btn">Susunod</string>
     <string name="next_city">I-double tap para tingnan ang impormasyon sa lagay ng panahon para sa sunod na lungsod.</string>
     <string name="night_tts">Gabi</string>
     <string name="no_application_available">Walang available na mga application.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Walang impormasyon sa lagay ng panahon</string>
     <string name="not_in_use">Hindi ginagamit</string>
     <string name="not_now">Hindi ngayon</string>
+    <string name="not_now_btn">Huwag ngayon</string>
     <string name="not_selected">Hindi pinili</string>
     <string name="not_set">Hindi nakatakda</string>
     <string name="nothing_selected">Walang napili.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Para sa pinakamabilis at pinakatumpak na pagtukoy sa lokasyon, i-tap ang MGA SETTING, pagkatapos ay i-set ang Locating method sa GPS, Wi-Fi at mga mobile network.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Para sa pinakamabilis at pinakatumpak na pagtukoy sa lokasyon, i-tap ang MGA SETTING, pagkatapos ay i-set ang Locating method sa GPS at Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Para tingnan ang inyong lokal na impormasyon sa lagay ng panahon, i-on ang mga setting ng Location at tiyakin na naka-set sa High accuracy ang mode.</string>
+    <string name="notification_alert_channel_name">Alerto sa matinding lagay ng panahon</string>
     <string name="notification_apps_update_channel_name">I-update ang mga notification</string>
     <string name="notification_auto_refresh_channel_name">Awto refresh ng Weather</string>
     <string name="notification_dex_channel_name">Weather sa Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Buksan ang app</string>
     <string name="open_source_licences">Mga open source license</string>
     <string name="other_locations">Iba pang mga lokasyon</string>
+    <string name="partly_sunny">Bahagyang maaraw</string>
     <string name="password_toggle_content_description">Ipakita ang password</string>
     <string name="paused">Naka-pause</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Nakopya sa clipboard ang \"%1$s.\"</string>
     <string name="preview">Preview ng %s</string>
     <string name="previous">Previous city</string>
+    <string name="previous_btn">Nauna</string>
     <string name="previous_city">I-double tap para tingnan ang impormasyon sa lagay ng panahon para sa naunang lungsod.</string>
     <string name="privacy_policy">Patakaran sa Privacy</string>
     <string name="probability_of_rain_text">Posibilidad ng ulan</string>
     <string name="protect_your_content">Protektahan, content mo</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar at mga mapa</string>
     <string name="rain">Ulan</string>
     <string name="rain_followed_by_intense_heat">Rain followed by intense heat</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Para i-update ang impormasyon sa lagay ng panahon, i-tap ang SETTINGS, pumunta sa App info > Permissions, tapos payagan ang mga sumusunod na pahintulot at subukang muli:</string>
     <string name="runtime_location_permission_title">Payagan ang mga pahintulot</string>
     <string name="runtime_oem_grant_permission_desc">Pinayagan ang %s app na ma-access ang mga sumusunod:</string>
+    <string name="sat">Sab</string>
     <string name="save_button">I-save</string>
     <string name="search_menu_title">Maghanap</string>
     <string name="search_most_searched_for">Pinakamadalas hanapin</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">May bagong content na magagamit</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Higit pa</string>
+    <string name="sesl_preferecne_badge_description">Bagong notification</string>
     <string name="sesl_preferencecategory_added_title">Header</string>
     <string name="sesl_search_hint">Maghanap</string>
     <string name="sesl_searchview_description_clear">I-clear ang field ng paghahanap</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Naka-offline</string>
     <string name="st_view_less">Tingnan nang mas kaunti</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Naka-off</string>
+    <string name="status_on">Naka-on</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Lin</string>
     <string name="sunny">Maaraw</string>
     <string name="sunny_with_some_clouds">Sunny with some clouds</string>
     <string name="sunny_with_some_heavy_rain">Sunny with some heavy rain</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Mag-tap dito para i-restore ang data ng lagay ng panahon mula sa lumang device mo.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">I-tap ang RETRY para subukang hanapin muli ang lokasyon mo.</string>
     <string name="tap_setting_message_edge_panel">Naka-on ang Lokasyon para makuha ang lokal na lagay ng panahon.</string>
+    <string name="tap_the_settings_icon">I-tap ang icon ng mga setting.</string>
     <string name="tap_to_get_the_weather">I-tap para makuha ang lagay ng panahon</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Mga Tuntunin at Kondisyon</string>
     <string name="the_latest_version">Naka-install na ang pinakabagong bersiyon.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Ilalapat din ito sa mga notification at sa Kalendaryo.</string>
+    <string name="thu">Huw</string>
     <string name="tick_box_tts">Checkbox</string>
     <string name="ticked_tts">Naka-tick</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Bawat oras</string>
     <string name="title_select_locations">Pumili ng mga lokasyon</string>
     <string name="title_theme">Mga Tema</string>
+    <string name="to_continue_agree_to_updated">Para magpatuloy, sumang-ayon sa na-update na %s namin.</string>
     <string name="to_get_local_weather_chn">"Upang makuha ang lokal na lagay ng panahon, ipapadala ang kasalukuyan mong lokasyon sa provider ng mga serbisyo ng lagay ng panahon. (Pakitingnan ang %1$sMga Tuntunin at Kundisyon%2$s at %3$sPatakaran sa Privacy%4$s ng provider).
 Posibleng i-access ng iba pang app at serbisyo sa iyong device ang nakuhang data ng lagay ng panahon upang maipakita ang lagay ng panahon sa mga app na iyon.
 Upang mabigyan ka ng tuloy-tuloy na impormasyon tungkol sa lagay ng panahon, magkakaroon ng access ang Lagay ng Panahon sa iyong lokasyon, kahit na hindi mo ginagamit ang app."</string>
-    <string name="today">Ngayon</string>
+    <string name="today">Ngayong araw</string>
+    <string name="try_it_out_btn">Subukan ito</string>
+    <string name="tue">Mar</string>
+    <string name="turn_on_to_use_precise_location">Para magamit ang feature na ito, kailangan mong payagan ang %s na ma-access ang lokasyon mo sa lahat ng oras at i-on ang Use precise location. I-tap ang Settings, tapos pumunta sa Permissions > Location.</string>
     <string name="tw_title_weather_broadcast">Pagpapahayag</string>
-    <string name="unable_to_check_for_updates">Hindi masuri kung may mga update. Walang koneksiyon sa network.</string>
+    <string name="unable_to_check_for_updates">Hindi matingnan kung may mga update. Subukang muli mamaya.</string>
     <string name="unable_to_receive_info_msg">Di matanggap ang impormasyon</string>
     <string name="unticked_tts">Walang check</string>
     <string name="unused">Hindi nagamit</string>
     <string name="update">Update</string>
     <string name="update_abb8">I-update</string>
     <string name="update_app">I-update ang app</string>
+    <string name="updated_tile_chn">Na-update: %s</string>
     <string name="updated_tts">Nai-update ang %s</string>
+    <string name="use_current_location">Gamitin ang lokasyon ngayon</string>
     <string name="use_current_location_agree_popup">"Upang makuha ang lokal na lagay ng panahon, ipapadala ang kasalukuyan mong lokasyon sa services provider ng lagay ng panahon. (Pakibasa ang %1$spatakaran sa privacy%2$s ng provider.)
 Maaaring i-access ng iba pang mga app at serbisyo na nasa iyong device ang nakuhang data ng lagay ng panahon upang ipakita ang lagay ng panahon sa mga app na iyon."</string>
     <string name="use_current_location_and_background_agree_popup">"Upang makuha ang lokal na lagay ng panahon, ipapadala ang kasalukuyan mong lokasyon sa services provider ng lagay ng panahon. (Pakitingnan ang patakaran ng %1$sPatakaran sa Privacy%2$s.)
@@ -746,9 +784,16 @@ Upang mabigyan ka ng tuloy-tuloy na impormasyon tungkol sa lagay ng panahon, maa
 Puwede mong i-off ang paggamit sa iyong lokasyon sa pamamagitan ng pagpunta sa mga setting ng app ng Lagay ng Panahon."</string>
     <string name="use_current_location_body_msg_chn">"Pakibasa nang maingat bago gamitin ang “Weather” :
 Kung gusto mong malaman ang lagay ng panahon sa kasalukuyang lokasyon mo, kakailanganin mong pahintulutan ang third party na service provider na magkaroon ng tuloy-tuloy (kahit hindi mo ginagamit ang device) na access sa device mo at kumuha ng ilang data tulad ng nakalista sa ibaba. Pakibasa nang maingat at unawain ang%1$s Mga Termino at Kondisyon%2$s at %3$sPatakaran sa Privacy%4$s ng third party na service provider bago magbigay ng ganoong pahintulot. Maaari mong bawiin ang pahintulot mo sa pamamagitan ng pag-off sa “Location” sa Settings ng menu. Puwedeng i-access ng iba pang app at serbisyo sa iyong device ang nakuhang data ng lagay ng panahon para ipakita ang panahon sa mga app at serbisyong iyon."</string>
+    <string name="use_current_location_body_msg_kor">"Kokolektahin ang kasalukuyang lokasyon mo at gagamitin para maibigay ang ilang feature ng Weather app, gaya ng pagkuha ng lokal na lagay ng panahon para sa iyo.
+
+Para maibigay ang tuloy-tuloy na info sa lagay ng panahon, regular na ipoproseso ng app na ito ang lokasyon mo, kahit na hindi mo ginagamit ang app. Sa pagpapatuloy, sumasang-ayon ka sa pagkolekta at pagproseso ng lokasyon mo para sa mga layunin na nasa itaas.
+
+Mahihinto mo ang pagkolekta at paggamit sa lokasyon sa mga setting ng Weather app."</string>
     <string name="use_current_location_body_purpose">Layunin</string>
     <string name="use_current_location_body_purpose_content">Para magbigay ng lagay ng panahon sa kasalukuyan mong lokasyon</string>
     <string name="use_current_location_body_search_provider">Service Provider</string>
+    <string name="use_current_location_continue">Magpatuloy</string>
+    <string name="use_current_location_not_now">Huwag ngayon</string>
     <string name="use_current_location_off_alert_popup">Ang kasalukuyang impormasyon ng lokasyon ay alisin.</string>
     <string name="useful_informations">Mga tip sa buhay at iba pang ulat</string>
     <string name="using_as">Ginagamit bilang %s</string>
@@ -856,9 +901,11 @@ Kung gusto mong malaman ang lagay ng panahon sa kasalukuyang lokasyon mo, kakail
     <string name="weather_tip">Mga tip sa lagay ng panahon</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Miy</string>
     <string name="weekly_forecast">Araw-araw</string>
     <string name="widget_background">Background ng widget</string>
     <string name="widget_empty_text">I-tap para sa info sa lagay ng panahon</string>
+    <string name="widget_location">Pangalan ng siyudad</string>
     <string name="widget_name_4x1">Weather at Clock</string>
     <string name="widget_setting">Mga setting</string>
     <string name="widget_setting_background_color">Kulay ng background</string>

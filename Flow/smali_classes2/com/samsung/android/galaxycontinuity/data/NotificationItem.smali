@@ -12,6 +12,15 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowMessage"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

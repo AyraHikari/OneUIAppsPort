@@ -4,16 +4,7 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUProgressionUtil.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UProgressionUtil.kt\nkotlin/internal/UProgressionUtilKt\n*L\n1#1,69:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\u001a*\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u0001H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0005\u0010\u0006\u001a*\u0010\u0000\u001a\u00020\u00072\u0006\u0010\u0002\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u0007H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0008\u0010\t\u001a*\u0010\n\u001a\u00020\u00012\u0006\u0010\u000b\u001a\u00020\u00012\u0006\u0010\u000c\u001a\u00020\u00012\u0006\u0010\r\u001a\u00020\u000eH\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000f\u0010\u0006\u001a*\u0010\n\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u0010H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0011\u0010\t\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0012"
     }
@@ -41,9 +32,10 @@
     k = 0x2
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -51,17 +43,17 @@
 .method private static final differenceModulo-WZ9TVnA(III)I
     .locals 1
 
-    .line 11
+    .line 10
     invoke-static {p0, p2}, Lkotlin/UnsignedKt;->uintRemainder-J1ME1BU(II)I
 
     move-result p0
 
-    .line 12
+    .line 11
     invoke-static {p1, p2}, Lkotlin/UnsignedKt;->uintRemainder-J1ME1BU(II)I
 
     move-result p1
 
-    .line 13
+    .line 12
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result v0
@@ -90,17 +82,17 @@
 .method private static final differenceModulo-sambcqE(JJJ)J
     .locals 1
 
-    .line 17
+    .line 16
     invoke-static {p0, p1, p4, p5}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
 
     move-result-wide p0
 
-    .line 18
+    .line 17
     invoke-static {p2, p3, p4, p5}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
 
     move-result-wide p2
 
-    .line 19
+    .line 18
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result v0
@@ -135,7 +127,7 @@
 
     if-lez v0, :cond_1
 
-    .line 65
+    .line 64
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result v0
@@ -168,7 +160,7 @@
     :cond_1
     if-gez v0, :cond_3
 
-    .line 66
+    .line 65
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result v0
@@ -201,15 +193,13 @@
     :goto_0
     return-wide p2
 
-    .line 67
+    .line 66
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string p1, "Step is zero."
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -219,7 +209,7 @@
 
     if-lez p2, :cond_1
 
-    .line 41
+    .line 40
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result v0
@@ -248,7 +238,7 @@
     :cond_1
     if-gez p2, :cond_3
 
-    .line 42
+    .line 41
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result v0
@@ -277,15 +267,13 @@
     :goto_0
     return p1
 
-    .line 43
+    .line 42
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string p1, "Step is zero."
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method

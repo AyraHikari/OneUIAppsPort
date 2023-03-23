@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    const-string v1, "t"
+    const-string/jumbo v1, "t"
 
     const-string v2, "pp"
 
@@ -116,6 +116,16 @@
 
 .method public set(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$PropertyBuilder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 564
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$PropertyBuilder;->property:Ljava/util/Map;

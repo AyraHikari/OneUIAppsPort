@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/common/util/IOUtils;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # annotations
@@ -11,7 +12,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,7 +26,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 8
+    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/os/ParcelFileDescriptor;->close()V
     :try_end_0
@@ -46,7 +46,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 3
+    .line 2
     :try_start_0
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -58,7 +58,7 @@
 .end method
 
 .method public static copyStream(Ljava/io/InputStream;Ljava/io/OutputStream;)J
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -70,8 +70,10 @@
 
     const/4 v0, 0x0
 
-    .line 13
-    invoke-static {p0, p1, v0}, Lcom/google/android/gms/common/util/IOUtils;->zza(Ljava/io/InputStream;Ljava/io/OutputStream;Z)J
+    const/16 v1, 0x400
+
+    .line 1
+    invoke-static {p0, p1, v0, v1}, Lcom/google/android/gms/common/util/IOUtils;->copyStream(Ljava/io/InputStream;Ljava/io/OutputStream;ZI)J
 
     move-result-wide p0
 
@@ -89,7 +91,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 15
+    .line 2
     new-array v0, p3, [B
 
     const-wide/16 v1, 0x0
@@ -97,7 +99,7 @@
     :goto_0
     const/4 v3, 0x0
 
-    .line 17
+    .line 3
     :try_start_0
     invoke-virtual {p0, v0, v3, p3}, Ljava/io/InputStream;->read([BII)I
 
@@ -111,7 +113,7 @@
 
     add-long/2addr v1, v5
 
-    .line 19
+    .line 4
     invoke-virtual {p1, v0, v3, v4}, Ljava/io/OutputStream;->write([BII)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -121,10 +123,10 @@
     :cond_0
     if-eqz p2, :cond_1
 
-    .line 21
+    .line 5
     invoke-static {p0}, Lcom/google/android/gms/common/util/IOUtils;->closeQuietly(Ljava/io/Closeable;)V
 
-    .line 22
+    .line 6
     invoke-static {p1}, Lcom/google/android/gms/common/util/IOUtils;->closeQuietly(Ljava/io/Closeable;)V
 
     :cond_1
@@ -133,22 +135,26 @@
     :catchall_0
     move-exception p3
 
-    if-eqz p2, :cond_2
+    if-nez p2, :cond_2
 
-    .line 24
+    goto :goto_1
+
+    .line 5
+    :cond_2
     invoke-static {p0}, Lcom/google/android/gms/common/util/IOUtils;->closeQuietly(Ljava/io/Closeable;)V
 
-    .line 25
+    .line 6
     invoke-static {p1}, Lcom/google/android/gms/common/util/IOUtils;->closeQuietly(Ljava/io/Closeable;)V
 
-    :cond_2
+    .line 7
+    :goto_1
     throw p3
 .end method
 
 .method public static isGzipByteBuffer([B)Z
     .locals 3
 
-    .line 12
+    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -192,7 +198,7 @@
 
     const/4 v0, 0x1
 
-    .line 27
+    .line 1
     invoke-static {p0, v0}, Lcom/google/android/gms/common/util/IOUtils;->readInputStreamFully(Ljava/io/InputStream;Z)[B
 
     move-result-object p0
@@ -201,7 +207,7 @@
 .end method
 
 .method public static readInputStreamFully(Ljava/io/InputStream;Z)[B
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -211,15 +217,17 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 28
+    .line 2
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 29
-    invoke-static {p0, v0, p1}, Lcom/google/android/gms/common/util/IOUtils;->zza(Ljava/io/InputStream;Ljava/io/OutputStream;Z)J
+    const/16 v1, 0x400
 
-    .line 30
+    .line 3
+    invoke-static {p0, v0, p1, v1}, Lcom/google/android/gms/common/util/IOUtils;->copyStream(Ljava/io/InputStream;Ljava/io/OutputStream;ZI)J
+
+    .line 4
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -238,22 +246,22 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 31
+    .line 1
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 33
+    .line 2
     invoke-static {p0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 34
+    .line 3
     invoke-static {v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/16 v1, 0x1000
 
     new-array v1, v1, [B
 
-    .line 36
+    .line 4
     :goto_0
     invoke-virtual {p0, v1}, Ljava/io/InputStream;->read([B)I
 
@@ -261,41 +269,20 @@
 
     const/4 v3, -0x1
 
-    if-eq v2, v3, :cond_0
+    if-ne v2, v3, :cond_0
 
-    const/4 v3, 0x0
-
-    .line 38
-    invoke-virtual {v0, v1, v3, v2}, Ljava/io/OutputStream;->write([BII)V
-
-    goto :goto_0
-
-    .line 40
-    :cond_0
+    .line 6
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
 
     return-object p0
-.end method
 
-.method private static zza(Ljava/io/InputStream;Ljava/io/OutputStream;Z)J
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    :cond_0
+    const/4 v3, 0x0
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    .line 5
+    invoke-virtual {v0, v1, v3, v2}, Ljava/io/OutputStream;->write([BII)V
 
-    const/16 v0, 0x400
-
-    .line 14
-    invoke-static {p0, p1, p2, v0}, Lcom/google/android/gms/common/util/IOUtils;->copyStream(Ljava/io/InputStream;Ljava/io/OutputStream;ZI)J
-
-    move-result-wide p0
-
-    return-wide p0
+    goto :goto_0
 .end method

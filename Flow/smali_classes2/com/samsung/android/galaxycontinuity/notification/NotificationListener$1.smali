@@ -26,6 +26,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/notification/NotificationListener;Landroid/service/notification/StatusBarNotification;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$sbn"
+        }
+    .end annotation
 
     .line 58
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationListener$1;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationListener;

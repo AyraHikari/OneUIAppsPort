@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/server/response/FastParser$ParseException;
 .super Ljava/lang/Exception;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -26,7 +27,9 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 3
+    const-string p1, "Error instantiating inner object"
+
+    .line 2
     invoke-direct {p0, p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
@@ -35,7 +38,7 @@
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 5
+    .line 3
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
 
     return-void

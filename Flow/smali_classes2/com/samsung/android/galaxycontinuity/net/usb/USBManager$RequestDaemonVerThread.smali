@@ -35,6 +35,14 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 212
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager$RequestDaemonVerThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;
@@ -120,7 +128,7 @@
     goto :goto_0
 
     :cond_0
-    const-string v0, "ss_conn_daemon not exist"
+    const-string/jumbo v0, "ss_conn_daemon not exist"
 
     .line 234
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -129,7 +137,7 @@
 
     :cond_1
     :goto_0
-    const-string v0, "ss_conn_daemon exist"
+    const-string/jumbo v0, "ss_conn_daemon exist"
 
     .line 232
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -151,9 +159,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -177,9 +189,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager$RequestDaemonVerThread;->byteReqData:[B
 
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager$RequestDaemonVerThread;->byteReqData:[B
-
-    array-length v2, v2
+    array-length v2, v1
 
     const/4 v3, 0x0
 

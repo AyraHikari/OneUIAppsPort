@@ -709,37 +709,35 @@
     .line 235
     sget-object v6, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
-    aget-object v6, v6, v0
+    aget-object v7, v6, v0
 
-    aget-byte v6, v6, v5
+    aget-byte v7, v7, v5
 
-    and-int/lit16 v6, v6, 0xff
+    and-int/lit16 v7, v7, 0xff
 
-    aput v6, v3, v0
+    aput v7, v3, v0
 
     .line 237
-    invoke-direct {p0, v6}, Lorg/spongycastle/crypto/engines/TwofishEngine;->Mx_X(I)I
+    invoke-direct {p0, v7}, Lorg/spongycastle/crypto/engines/TwofishEngine;->Mx_X(I)I
+
+    move-result v8
+
+    and-int/lit16 v8, v8, 0xff
+
+    aput v8, v4, v0
+
+    .line 238
+    invoke-direct {p0, v7}, Lorg/spongycastle/crypto/engines/TwofishEngine;->Mx_Y(I)I
 
     move-result v7
 
     and-int/lit16 v7, v7, 0xff
 
-    aput v7, v4, v0
-
-    .line 238
-    invoke-direct {p0, v6}, Lorg/spongycastle/crypto/engines/TwofishEngine;->Mx_Y(I)I
-
-    move-result v6
-
-    and-int/lit16 v6, v6, 0xff
-
-    aput v6, v2, v0
-
-    .line 240
-    sget-object v6, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aput v7, v2, v0
 
     const/4 v7, 0x1
 
+    .line 240
     aget-object v6, v6, v7
 
     aget-byte v6, v6, v5
@@ -1017,23 +1015,21 @@
 
     sget-object v6, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
-    aget-object v6, v6, v3
+    aget-object v7, v6, v3
 
-    aget-byte v0, v6, v0
+    aget-byte v0, v7, v0
 
     and-int/lit16 v0, v0, 0xff
 
     invoke-direct {p0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v6
+    move-result v7
 
-    xor-int/2addr v0, v6
+    xor-int/2addr v0, v7
 
     aget p2, p2, v0
 
     iget-object v0, p0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS1:[I
-
-    sget-object v6, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
     aget-object v3, v6, v3
 
@@ -1054,9 +1050,7 @@
 
     iget-object v0, p0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS2:[I
 
-    sget-object v1, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
-    aget-object v1, v1, v5
+    aget-object v1, v6, v5
 
     aget-byte v1, v1, v2
 
@@ -1075,9 +1069,7 @@
 
     iget-object v0, p0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS3:[I
 
-    sget-object v1, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
-    aget-object v1, v1, v5
+    aget-object v1, v6, v5
 
     aget-byte p1, v1, p1
 
@@ -1098,51 +1090,45 @@
     :cond_1
     sget-object v7, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
-    aget-object v7, v7, v5
+    aget-object v9, v7, v5
 
-    aget-byte v0, v7, v0
+    aget-byte v0, v9, v0
 
     and-int/lit16 v0, v0, 0xff
 
     invoke-direct {p0, p2}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v7
+    move-result v9
 
-    xor-int/2addr v0, v7
+    xor-int/2addr v0, v9
 
     .line 545
-    sget-object v7, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v9, v7, v3
 
-    aget-object v7, v7, v3
-
-    aget-byte v1, v7, v1
+    aget-byte v1, v9, v1
 
     and-int/lit16 v1, v1, 0xff
 
     invoke-direct {p0, p2}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v7
+    move-result v9
 
-    xor-int/2addr v1, v7
+    xor-int/2addr v1, v9
 
     .line 546
-    sget-object v7, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v9, v7, v3
 
-    aget-object v7, v7, v3
-
-    aget-byte v2, v7, v2
+    aget-byte v2, v9, v2
 
     and-int/lit16 v2, v2, 0xff
 
     invoke-direct {p0, p2}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
 
-    move-result v7
+    move-result v9
 
-    xor-int/2addr v2, v7
+    xor-int/2addr v2, v9
 
     .line 547
-    sget-object v7, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
     aget-object v7, v7, v5
 
     aget-byte p1, v7, p1
@@ -1159,51 +1145,45 @@
     :cond_2
     sget-object p2, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
-    aget-object p2, p2, v5
+    aget-object v7, p2, v5
 
-    aget-byte p2, p2, v0
+    aget-byte v0, v7, v0
 
-    and-int/lit16 p2, p2, 0xff
+    and-int/lit16 v0, v0, 0xff
 
     invoke-direct {p0, v8}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v0
+    move-result v7
 
-    xor-int/2addr v0, p2
+    xor-int/2addr v0, v7
 
     .line 550
-    sget-object p2, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v7, p2, v5
 
-    aget-object p2, p2, v5
+    aget-byte v1, v7, v1
 
-    aget-byte p2, p2, v1
-
-    and-int/lit16 p2, p2, 0xff
+    and-int/lit16 v1, v1, 0xff
 
     invoke-direct {p0, v8}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v1
+    move-result v7
 
-    xor-int/2addr v1, p2
+    xor-int/2addr v1, v7
 
     .line 551
-    sget-object p2, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v7, p2, v3
 
-    aget-object p2, p2, v3
+    aget-byte v2, v7, v2
 
-    aget-byte p2, p2, v2
-
-    and-int/lit16 p2, p2, 0xff
+    and-int/lit16 v2, v2, 0xff
 
     invoke-direct {p0, v8}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
 
-    move-result v2
+    move-result v7
 
-    xor-int/2addr v2, p2
+    xor-int/2addr v2, v7
 
     .line 552
-    sget-object p2, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
     aget-object p2, p2, v3
 
     aget-byte p1, p2, p1
@@ -1224,18 +1204,18 @@
 
     aget-object v8, v7, v3
 
-    aget-object v7, v7, v3
+    aget-object v9, v7, v3
 
-    aget-byte v0, v7, v0
+    aget-byte v0, v9, v0
 
     and-int/lit16 v0, v0, 0xff
 
     .line 555
     invoke-direct {p0, v6}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v7
+    move-result v9
 
-    xor-int/2addr v0, v7
+    xor-int/2addr v0, v9
 
     aget-byte v0, v8, v0
 
@@ -1243,30 +1223,28 @@
 
     invoke-direct {p0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v7
+    move-result v8
 
-    xor-int/2addr v0, v7
+    xor-int/2addr v0, v8
 
     aget p2, p2, v0
 
     iget-object v0, p0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS1:[I
 
-    sget-object v7, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
     aget-object v8, v7, v3
 
-    aget-object v7, v7, v5
+    aget-object v9, v7, v5
 
-    aget-byte v1, v7, v1
+    aget-byte v1, v9, v1
 
     and-int/lit16 v1, v1, 0xff
 
     .line 556
     invoke-direct {p0, v6}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v7
+    move-result v9
 
-    xor-int/2addr v1, v7
+    xor-int/2addr v1, v9
 
     aget-byte v1, v8, v1
 
@@ -1274,9 +1252,9 @@
 
     invoke-direct {p0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v7
+    move-result v8
 
-    xor-int/2addr v1, v7
+    xor-int/2addr v1, v8
 
     aget v0, v0, v1
 
@@ -1284,24 +1262,22 @@
 
     iget-object v0, p0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS2:[I
 
-    sget-object v1, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v1, v7, v5
 
-    aget-object v7, v1, v5
+    aget-object v3, v7, v3
 
-    aget-object v1, v1, v3
+    aget-byte v2, v3, v2
 
-    aget-byte v1, v1, v2
-
-    and-int/lit16 v1, v1, 0xff
+    and-int/lit16 v2, v2, 0xff
 
     .line 557
     invoke-direct {p0, v6}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
 
-    move-result v2
+    move-result v3
 
-    xor-int/2addr v1, v2
+    xor-int/2addr v2, v3
 
-    aget-byte v1, v7, v1
+    aget-byte v1, v1, v2
 
     and-int/lit16 v1, v1, 0xff
 
@@ -1317,24 +1293,22 @@
 
     iget-object v0, p0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS3:[I
 
-    sget-object v1, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v1, v7, v5
 
-    aget-object v2, v1, v5
+    aget-object v2, v7, v5
 
-    aget-object v1, v1, v5
-
-    aget-byte p1, v1, p1
+    aget-byte p1, v2, p1
 
     and-int/lit16 p1, p1, 0xff
 
     .line 558
     invoke-direct {p0, v6}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b3(I)I
 
-    move-result v1
+    move-result v2
 
-    xor-int/2addr p1, v1
+    xor-int/2addr p1, v2
 
-    aget-byte p1, v2, p1
+    aget-byte p1, v1, p1
 
     and-int/lit16 p1, p1, 0xff
 
@@ -2136,7 +2110,7 @@
 .end method
 
 .method private setKey([B)V
-    .locals 18
+    .locals 19
 
     move-object/from16 v0, p0
 
@@ -2351,19 +2325,19 @@
 
     sget-object v13, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
-    aget-object v13, v13, v6
+    aget-object v14, v13, v6
 
-    aget-byte v13, v13, v9
+    aget-byte v14, v14, v9
 
-    and-int/lit16 v13, v13, 0xff
+    and-int/lit16 v14, v14, 0xff
 
     invoke-direct {v0, v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v13, v14
+    xor-int/2addr v14, v15
 
-    aget v12, v12, v13
+    aget v12, v12, v14
 
     aput v12, v10, v11
 
@@ -2372,50 +2346,46 @@
 
     add-int/lit8 v12, v11, 0x1
 
-    iget-object v13, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS1:[I
+    iget-object v14, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS1:[I
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v15, v13, v6
 
-    aget-object v14, v14, v6
+    aget-byte v15, v15, v9
 
-    aget-byte v14, v14, v9
-
-    and-int/lit16 v14, v14, 0xff
+    and-int/lit16 v15, v15, 0xff
 
     invoke-direct {v0, v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v15
+    move-result v16
 
-    xor-int/2addr v14, v15
+    xor-int v15, v15, v16
 
-    aget v13, v13, v14
+    aget v14, v14, v15
 
-    aput v13, v10, v12
+    aput v14, v10, v12
 
     .line 403
     iget-object v10, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gSBox:[I
 
     add-int/lit16 v12, v11, 0x200
 
-    iget-object v13, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS2:[I
+    iget-object v14, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS2:[I
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v15, v13, v7
 
-    aget-object v14, v14, v7
+    aget-byte v15, v15, v9
 
-    aget-byte v14, v14, v9
-
-    and-int/lit16 v14, v14, 0xff
+    and-int/lit16 v15, v15, 0xff
 
     invoke-direct {v0, v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
 
-    move-result v15
+    move-result v16
 
-    xor-int/2addr v14, v15
+    xor-int v15, v15, v16
 
-    aget v13, v13, v14
+    aget v14, v14, v15
 
-    aput v13, v10, v12
+    aput v14, v10, v12
 
     .line 404
     iget-object v10, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gSBox:[I
@@ -2423,8 +2393,6 @@
     add-int/lit16 v11, v11, 0x201
 
     iget-object v12, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS3:[I
-
-    sget-object v13, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
     aget-object v13, v13, v7
 
@@ -2448,123 +2416,111 @@
     :cond_5
     sget-object v10, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
+    aget-object v11, v10, v7
+
+    aget-byte v11, v11, v9
+
+    and-int/lit16 v11, v11, 0xff
+
+    invoke-direct {v0, v5}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
+
+    move-result v12
+
+    xor-int/2addr v11, v12
+
+    .line 408
+    aget-object v12, v10, v6
+
+    aget-byte v12, v12, v9
+
+    and-int/lit16 v12, v12, 0xff
+
+    invoke-direct {v0, v5}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
+
+    move-result v13
+
+    xor-int/2addr v12, v13
+
+    .line 409
+    aget-object v13, v10, v6
+
+    aget-byte v13, v13, v9
+
+    and-int/lit16 v13, v13, 0xff
+
+    invoke-direct {v0, v5}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
+
+    move-result v14
+
+    xor-int/2addr v13, v14
+
+    .line 410
     aget-object v10, v10, v7
 
     aget-byte v10, v10, v9
 
     and-int/lit16 v10, v10, 0xff
 
-    invoke-direct {v0, v5}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
-
-    move-result v11
-
-    xor-int/2addr v10, v11
-
-    .line 408
-    sget-object v11, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
-    aget-object v11, v11, v6
-
-    aget-byte v11, v11, v9
-
-    and-int/lit16 v11, v11, 0xff
-
-    invoke-direct {v0, v5}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
-
-    move-result v12
-
-    xor-int/2addr v11, v12
-
-    .line 409
-    sget-object v12, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
-    aget-object v12, v12, v6
-
-    aget-byte v12, v12, v9
-
-    and-int/lit16 v12, v12, 0xff
-
-    invoke-direct {v0, v5}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
-
-    move-result v13
-
-    xor-int/2addr v12, v13
-
-    .line 410
-    sget-object v13, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
-    aget-object v13, v13, v7
-
-    aget-byte v13, v13, v9
-
-    and-int/lit16 v13, v13, 0xff
-
     invoke-direct {v0, v5}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b3(I)I
-
-    move-result v14
-
-    xor-int/2addr v13, v14
-
-    .line 413
-    :goto_3
-    sget-object v14, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
-    aget-object v14, v14, v7
-
-    aget-byte v10, v14, v10
-
-    and-int/lit16 v10, v10, 0xff
-
-    invoke-direct {v0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
     move-result v14
 
     xor-int/2addr v10, v14
 
-    .line 414
+    .line 413
+    :goto_3
     sget-object v14, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
 
-    aget-object v14, v14, v7
+    aget-object v15, v14, v7
 
-    aget-byte v11, v14, v11
+    aget-byte v11, v15, v11
 
     and-int/lit16 v11, v11, 0xff
 
-    invoke-direct {v0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
+    invoke-direct {v0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v11, v14
+    xor-int/2addr v11, v15
 
-    .line 415
-    sget-object v14, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    .line 414
+    aget-object v15, v14, v7
 
-    aget-object v14, v14, v6
-
-    aget-byte v12, v14, v12
+    aget-byte v12, v15, v12
 
     and-int/lit16 v12, v12, 0xff
 
-    invoke-direct {v0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
+    invoke-direct {v0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v12, v14
+    xor-int/2addr v12, v15
 
-    .line 416
-    sget-object v14, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    .line 415
+    aget-object v15, v14, v6
 
-    aget-object v14, v14, v6
-
-    aget-byte v13, v14, v13
+    aget-byte v13, v15, v13
 
     and-int/lit16 v13, v13, 0xff
+
+    invoke-direct {v0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
+
+    move-result v15
+
+    xor-int/2addr v13, v15
+
+    .line 416
+    aget-object v14, v14, v6
+
+    aget-byte v10, v14, v10
+
+    and-int/lit16 v10, v10, 0xff
 
     invoke-direct {v0, v4}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b3(I)I
 
     move-result v14
 
-    xor-int/2addr v13, v14
+    xor-int/2addr v10, v14
 
     .line 419
     :goto_4
@@ -2578,144 +2534,138 @@
 
     aget-object v17, v16, v6
 
-    aget-object v16, v16, v6
+    aget-object v18, v16, v6
 
-    aget-byte v10, v16, v10
+    aget-byte v11, v18, v11
 
-    and-int/lit16 v10, v10, 0xff
+    and-int/lit16 v11, v11, 0xff
 
     .line 420
     invoke-direct {v0, v2}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v16
+    move-result v18
 
-    xor-int v10, v10, v16
+    xor-int v11, v11, v18
 
-    aget-byte v10, v17, v10
+    aget-byte v11, v17, v11
 
-    and-int/lit16 v10, v10, 0xff
+    and-int/lit16 v11, v11, 0xff
 
     invoke-direct {v0, v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b0(I)I
 
-    move-result v16
+    move-result v17
 
-    xor-int v10, v10, v16
+    xor-int v11, v11, v17
 
-    aget v3, v3, v10
+    aget v3, v3, v11
 
     aput v3, v14, v15
 
     .line 421
     iget-object v3, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gSBox:[I
 
-    add-int/lit8 v10, v15, 0x1
+    add-int/lit8 v11, v15, 0x1
 
     iget-object v14, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS1:[I
 
-    sget-object v16, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
-
     aget-object v17, v16, v6
 
-    aget-object v16, v16, v7
+    aget-object v18, v16, v7
 
-    aget-byte v11, v16, v11
+    aget-byte v12, v18, v12
 
-    and-int/lit16 v11, v11, 0xff
+    and-int/lit16 v12, v12, 0xff
 
     .line 422
     invoke-direct {v0, v2}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v16
+    move-result v18
 
-    xor-int v11, v11, v16
+    xor-int v12, v12, v18
 
-    aget-byte v11, v17, v11
+    aget-byte v12, v17, v12
 
-    and-int/lit16 v11, v11, 0xff
+    and-int/lit16 v12, v12, 0xff
 
     invoke-direct {v0, v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b1(I)I
 
-    move-result v16
+    move-result v17
 
-    xor-int v11, v11, v16
+    xor-int v12, v12, v17
 
-    aget v11, v14, v11
+    aget v12, v14, v12
 
-    aput v11, v3, v10
+    aput v12, v3, v11
 
     .line 423
     iget-object v3, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gSBox:[I
 
-    add-int/lit16 v10, v15, 0x200
+    add-int/lit16 v11, v15, 0x200
 
-    iget-object v11, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS2:[I
+    iget-object v12, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS2:[I
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v14, v16, v7
 
-    aget-object v16, v14, v7
+    aget-object v17, v16, v6
 
-    aget-object v14, v14, v6
+    aget-byte v13, v17, v13
 
-    aget-byte v12, v14, v12
-
-    and-int/lit16 v12, v12, 0xff
+    and-int/lit16 v13, v13, 0xff
 
     .line 424
     invoke-direct {v0, v2}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
 
-    move-result v14
+    move-result v17
 
-    xor-int/2addr v12, v14
+    xor-int v13, v13, v17
 
-    aget-byte v12, v16, v12
+    aget-byte v13, v14, v13
 
-    and-int/lit16 v12, v12, 0xff
+    and-int/lit16 v13, v13, 0xff
 
     invoke-direct {v0, v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b2(I)I
 
     move-result v14
 
-    xor-int/2addr v12, v14
+    xor-int/2addr v13, v14
 
-    aget v11, v11, v12
+    aget v12, v12, v13
 
-    aput v11, v3, v10
+    aput v12, v3, v11
 
     .line 425
     iget-object v3, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gSBox:[I
 
     add-int/lit16 v15, v15, 0x201
 
-    iget-object v10, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS3:[I
+    iget-object v11, v0, Lorg/spongycastle/crypto/engines/TwofishEngine;->gMDS3:[I
 
-    sget-object v11, Lorg/spongycastle/crypto/engines/TwofishEngine;->P:[[B
+    aget-object v12, v16, v7
 
-    aget-object v12, v11, v7
+    aget-object v13, v16, v7
 
-    aget-object v11, v11, v7
+    aget-byte v10, v13, v10
 
-    aget-byte v11, v11, v13
-
-    and-int/lit16 v11, v11, 0xff
+    and-int/lit16 v10, v10, 0xff
 
     .line 426
     invoke-direct {v0, v2}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b3(I)I
 
     move-result v13
 
-    xor-int/2addr v11, v13
+    xor-int/2addr v10, v13
 
-    aget-byte v11, v12, v11
+    aget-byte v10, v12, v10
 
-    and-int/lit16 v11, v11, 0xff
+    and-int/lit16 v10, v10, 0xff
 
     invoke-direct {v0, v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;->b3(I)I
 
     move-result v12
 
-    xor-int/2addr v11, v12
+    xor-int/2addr v10, v12
 
-    aget v10, v10, v11
+    aget v10, v11, v10
 
     aput v10, v3, v15
 
@@ -2812,6 +2762,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p2
@@ -2822,7 +2774,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 

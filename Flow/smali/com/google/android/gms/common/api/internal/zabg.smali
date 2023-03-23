@@ -1,83 +1,85 @@
-.class final Lcom/google/android/gms/common/api/internal/zabg;
-.super Lcom/google/android/gms/internal/base/zap;
+.class abstract Lcom/google/android/gms/common/api/internal/zabg;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # instance fields
-.field private final synthetic zahv:Lcom/google/android/gms/common/api/internal/zabe;
+.field private final zaa:Lcom/google/android/gms/common/api/internal/zabf;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/zabe;Landroid/os/Looper;)V
+.method protected constructor <init>(Lcom/google/android/gms/common/api/internal/zabf;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zabg;->zahv:Lcom/google/android/gms/common/api/internal/zabe;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/base/zap;-><init>(Landroid/os/Looper;)V
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zabg;->zaa:Lcom/google/android/gms/common/api/internal/zabf;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final handleMessage(Landroid/os/Message;)V
+.method protected abstract zaa()V
+.end method
+
+.method public final zab(Lcom/google/android/gms/common/api/internal/zabi;)V
     .locals 2
 
-    .line 4
-    iget v0, p1, Landroid/os/Message;->what:I
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zabi;->zah(Lcom/google/android/gms/common/api/internal/zabi;)Ljava/util/concurrent/locks/Lock;
 
-    const/4 v1, 0x1
+    move-result-object v0
 
-    if-eq v0, v1, :cond_1
+    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    const/4 v1, 0x2
+    .line 2
+    :try_start_0
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zabi;->zag(Lcom/google/android/gms/common/api/internal/zabi;)Lcom/google/android/gms/common/api/internal/zabf;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zabg;->zaa:Lcom/google/android/gms/common/api/internal/zabf;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eq v0, v1, :cond_0
 
-    .line 9
-    iget p1, p1, Landroid/os/Message;->what:I
-
-    const/16 v0, 0x1f
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Unknown message id: "
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zabi;->zah(Lcom/google/android/gms/common/api/internal/zabi;)Ljava/util/concurrent/locks/Lock;
 
     move-result-object p1
 
-    const-string v0, "GACStateManager"
-
-    invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    .line 3
+    :goto_0
+    invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return-void
 
-    .line 8
+    .line 4
     :cond_0
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast p1, Ljava/lang/RuntimeException;
-
-    throw p1
+    :try_start_1
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/internal/zabg;->zaa()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 5
-    :cond_1
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zabi;->zah(Lcom/google/android/gms/common/api/internal/zabi;)Ljava/util/concurrent/locks/Lock;
 
-    check-cast p1, Lcom/google/android/gms/common/api/internal/zabf;
+    move-result-object p1
 
-    .line 6
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zabg;->zahv:Lcom/google/android/gms/common/api/internal/zabe;
+    goto :goto_0
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/zabf;->zac(Lcom/google/android/gms/common/api/internal/zabe;)V
+    :catchall_0
+    move-exception v0
 
-    return-void
+    .line 4
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zabi;->zah(Lcom/google/android/gms/common/api/internal/zabi;)Ljava/util/concurrent/locks/Lock;
+
+    move-result-object p1
+
+    .line 3
+    invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 5
+    throw v0
 .end method

@@ -15,6 +15,14 @@
 
 .method public static isLightTheme(Landroid/content/Context;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 14
     new-instance v0, Landroid/util/TypedValue;

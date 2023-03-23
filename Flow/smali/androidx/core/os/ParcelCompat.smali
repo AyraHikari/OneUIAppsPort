@@ -15,6 +15,14 @@
 
 .method public static readBoolean(Landroid/os/Parcel;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 32
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
@@ -36,6 +44,16 @@
 
 .method public static writeBoolean(Landroid/os/Parcel;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "out",
+            "value"
+        }
+    .end annotation
 
     .line 43
     invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V

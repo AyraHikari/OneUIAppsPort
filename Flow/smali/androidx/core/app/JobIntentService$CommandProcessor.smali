@@ -31,8 +31,16 @@
 # direct methods
 .method constructor <init>(Landroidx/core/app/JobIntentService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 383
+    .line 387
     iput-object p1, p0, Landroidx/core/app/JobIntentService$CommandProcessor;->this$0:Landroidx/core/app/JobIntentService;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -44,8 +52,16 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "params"
+        }
+    .end annotation
 
-    .line 383
+    .line 387
     check-cast p1, [Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Landroidx/core/app/JobIntentService$CommandProcessor;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
@@ -57,8 +73,16 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "params"
+        }
+    .end annotation
 
-    .line 390
+    .line 394
     :goto_0
     iget-object p1, p0, Landroidx/core/app/JobIntentService$CommandProcessor;->this$0:Landroidx/core/app/JobIntentService;
 
@@ -68,7 +92,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 392
+    .line 396
     iget-object v0, p0, Landroidx/core/app/JobIntentService$CommandProcessor;->this$0:Landroidx/core/app/JobIntentService;
 
     invoke-interface {p1}, Landroidx/core/app/JobIntentService$GenericWorkItem;->getIntent()Landroid/content/Intent;
@@ -77,7 +101,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/core/app/JobIntentService;->onHandleWork(Landroid/content/Intent;)V
 
-    .line 394
+    .line 398
     invoke-interface {p1}, Landroidx/core/app/JobIntentService$GenericWorkItem;->complete()V
 
     goto :goto_0
@@ -90,8 +114,16 @@
 
 .method protected bridge synthetic onCancelled(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "aVoid"
+        }
+    .end annotation
 
-    .line 383
+    .line 387
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Landroidx/core/app/JobIntentService$CommandProcessor;->onCancelled(Ljava/lang/Void;)V
@@ -101,8 +133,16 @@
 
 .method protected onCancelled(Ljava/lang/Void;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aVoid"
+        }
+    .end annotation
 
-    .line 404
+    .line 408
     iget-object p1, p0, Landroidx/core/app/JobIntentService$CommandProcessor;->this$0:Landroidx/core/app/JobIntentService;
 
     invoke-virtual {p1}, Landroidx/core/app/JobIntentService;->processorFinished()V
@@ -112,8 +152,16 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "aVoid"
+        }
+    .end annotation
 
-    .line 383
+    .line 387
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Landroidx/core/app/JobIntentService$CommandProcessor;->onPostExecute(Ljava/lang/Void;)V
@@ -123,8 +171,16 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aVoid"
+        }
+    .end annotation
 
-    .line 409
+    .line 413
     iget-object p1, p0, Landroidx/core/app/JobIntentService$CommandProcessor;->this$0:Landroidx/core/app/JobIntentService;
 
     invoke-virtual {p1}, Landroidx/core/app/JobIntentService;->processorFinished()V

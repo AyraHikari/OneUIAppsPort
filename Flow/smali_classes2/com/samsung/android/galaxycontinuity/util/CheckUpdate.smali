@@ -6,15 +6,12 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;,
         Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;
     }
 .end annotation
 
 
 # static fields
-.field private static final CSC_PATH:Ljava/lang/String; = "/system/csc/sales_code.dat"
-
 .field private static final E_FAIL:I = 0xb
 
 .field private static final E_GALAXYAPPS_NOT_INSTALLED:I = 0xc
@@ -49,15 +46,9 @@
 
 .field public static final S_UPDATE:I = 0x2
 
-.field private static sInstance:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;
-
 
 # instance fields
 .field private appId:Ljava/lang/String;
-
-.field private mCheckTask:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
-
-.field private mContext:Landroid/content/Context;
 
 .field private mEdit:Landroid/content/SharedPreferences$Editor;
 
@@ -75,55 +66,43 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
-    return-void
-.end method
-
-.method private constructor <init>(Landroid/content/Context;)V
-    .locals 2
-
-    .line 103
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, ""
+
+    .line 80
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
+
+    .line 81
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+
+    .line 82
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
+
+    .line 83
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
+
+    .line 84
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    .line 81
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mCheckTask:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
-
-    const-string v1, ""
-
-    .line 85
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
-
     .line 86
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
-
-    .line 87
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
-
-    .line 88
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
-
-    .line 89
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
-
-    .line 91
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
     const-string v0, "FAIL"
 
-    .line 396
+    .line 395
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mSAcc:Ljava/lang/String;
-
-    .line 104
-    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;)Ljava/lang/String;
+.method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;Landroid/content/Context;)Ljava/lang/String;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -132,43 +111,25 @@
     .end annotation
 
     .line 58
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getUpdateURL()Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getUpdateURL(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;Ljava/net/URL;)I
+.method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;Landroid/content/Context;Ljava/net/URL;)I
     .locals 0
 
     .line 58
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->checkUpdate(Ljava/net/URL;)I
+    invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->checkUpdate(Landroid/content/Context;Ljava/net/URL;)I
 
     move-result p0
 
     return p0
 .end method
 
-.method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;)Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
-    .locals 0
-
-    .line 58
-    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mCheckTask:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
-
-    return-object p0
-.end method
-
-.method static synthetic access$202(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;)Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
-    .locals 0
-
-    .line 58
-    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mCheckTask:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
-
-    return-object p1
-.end method
-
-.method static synthetic access$300(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;)Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;
+.method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;)Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;
     .locals 0
 
     .line 58
@@ -177,396 +138,232 @@
     return-object p0
 .end method
 
-.method private checkUpdate(Ljava/net/URL;)I
-    .locals 12
+.method private checkUpdate(Landroid/content/Context;Ljava/net/URL;)I
+    .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "url"
+        }
+    .end annotation
 
-    const/16 v0, 0xd
+    move-object/from16 v1, p0
 
-    const/16 v1, 0xb
+    const/4 v4, 0x0
 
-    const/4 v2, 0x0
-
-    .line 158
+    .line 147
     :try_start_0
     invoke-static {}, Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;
 
-    move-result-object v3
+    move-result-object v5
 
-    .line 159
-    invoke-virtual {v3}, Lorg/xmlpull/v1/XmlPullParserFactory;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
+    .line 148
+    invoke-virtual {v5}, Lorg/xmlpull/v1/XmlPullParserFactory;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
 
-    move-result-object v3
+    move-result-object v5
 
-    .line 160
-    invoke-virtual {p1}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+    .line 149
+    invoke-virtual/range {p2 .. p2}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
-    move-result-object p1
+    move-result-object v6
 
-    const/16 v4, 0x7d0
+    const/16 v7, 0x7d0
 
-    .line 161
-    invoke-virtual {p1, v4}, Ljava/net/URLConnection;->setReadTimeout(I)V
+    .line 150
+    invoke-virtual {v6, v7}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
-    .line 162
-    invoke-virtual {p1}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
+    .line 151
+    invoke-virtual {v6}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
-    move-result-object p1
+    move-result-object v6
     :try_end_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_8
     .catch Ljava/net/SocketException; {:try_start_0 .. :try_end_0} :catch_7
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_6
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_5
 
-    .line 163
+    .line 152
     :try_start_1
-    invoke-interface {v3, p1, v2}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/InputStream;Ljava/lang/String;)V
+    invoke-interface {v5, v6, v4}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/InputStream;Ljava/lang/String;)V
 
-    .line 164
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
+    .line 153
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
-    move-result v2
+    move-result v4
     :try_end_1
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_1 .. :try_end_1} :catch_4
     .catch Ljava/net/SocketException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    const/4 v4, 0x1
+    const/4 v7, 0x1
 
-    move v5, v4
+    move v8, v7
 
     :goto_0
-    if-eq v2, v4, :cond_e
+    if-eq v4, v7, :cond_11
 
-    const-string v6, "[Update RSP] versionName : "
+    const-string v9, "[Update RSP] versionName : "
 
-    const-string v7, "[Update RSP] resultCode : "
+    const-string v10, "[Update RSP] resultCode : "
 
-    const/4 v8, 0x2
+    const/4 v11, 0x0
 
-    if-ne v2, v8, :cond_5
+    const/4 v12, 0x3
 
-    .line 168
+    const/4 v13, 0x2
+
+    if-ne v4, v13, :cond_7
+
+    .line 157
     :try_start_2
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v14
 
-    const-string v10, "appId"
+    .line 158
+    invoke-virtual {v14}, Ljava/lang/String;->hashCode()I
 
-    .line 169
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v16
 
-    move-result v10
+    const/4 v2, 0x5
 
-    const/4 v11, 0x4
+    const/4 v3, 0x4
 
-    if-eqz v10, :cond_0
+    sparse-switch v16, :sswitch_data_0
 
-    .line 170
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+    goto :goto_1
 
-    move-result v9
+    :sswitch_0
+    const-string/jumbo v15, "versionName"
 
-    if-ne v9, v11, :cond_5
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 172
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+    move-result v14
 
-    move-result-object v9
+    if-eqz v14, :cond_0
 
-    iput-object v9, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
+    move v15, v2
 
-    .line 173
-    new-instance v9, Ljava/lang/StringBuilder;
+    goto :goto_2
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    :sswitch_1
+    const-string/jumbo v15, "versionCode"
 
-    const-string v10, "[Update RSP] appId : "
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v14
 
-    iget-object v10, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
+    if-eqz v14, :cond_0
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move v15, v3
 
-    const-string v10, ":"
+    goto :goto_2
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :sswitch_2
+    const-string/jumbo v15, "version"
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v9
+    move-result v14
 
-    invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    if-eqz v14, :cond_0
 
-    goto/16 :goto_1
+    move v15, v12
+
+    goto :goto_2
+
+    :sswitch_3
+    const-string v15, "appId"
+
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_0
+
+    move v15, v11
+
+    goto :goto_2
+
+    :sswitch_4
+    const-string/jumbo v15, "resultCode"
+
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_0
+
+    move v15, v7
+
+    goto :goto_2
+
+    :sswitch_5
+    const-string/jumbo v15, "resultMsg"
+
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_0
+
+    move v15, v13
+
+    goto :goto_2
 
     :cond_0
-    const-string v10, "resultCode"
+    :goto_1
+    const/4 v15, -0x1
 
-    .line 175
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :goto_2
+    if-eqz v15, :cond_6
 
-    move-result v10
+    if-eq v15, v7, :cond_5
 
-    if-eqz v10, :cond_1
+    if-eq v15, v13, :cond_4
 
-    .line 176
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+    if-eq v15, v12, :cond_3
 
-    move-result v9
+    if-eq v15, v3, :cond_2
 
-    if-ne v9, v11, :cond_5
+    if-eq v15, v2, :cond_1
 
-    .line 178
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+    goto/16 :goto_3
 
-    move-result-object v9
-
-    iput-object v9, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
-
-    .line 179
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v10, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    goto/16 :goto_1
-
+    .line 195
     :cond_1
-    const-string v10, "resultMsg"
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
-    .line 181
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v2
 
-    move-result v10
-
-    if-eqz v10, :cond_2
-
-    .line 182
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
-
-    move-result v9
-
-    if-ne v9, v11, :cond_5
-
-    .line 184
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
-
-    move-result-object v9
-
-    .line 185
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v11, "[Update RSP] resultMsg : "
-
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    goto/16 :goto_1
-
-    :cond_2
-    const-string v10, "version"
-
-    .line 187
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_3
-
-    .line 188
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
-
-    move-result v9
-
-    if-ne v9, v11, :cond_5
-
-    .line 190
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
-
-    move-result-object v9
-
-    iput-object v9, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
-
-    .line 191
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v10, "[Update RSP] version : "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v10, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_3
-    const-string v10, "versionCode"
-
-    .line 193
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_4
-
-    .line 194
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
-
-    move-result v9
-
-    if-ne v9, v11, :cond_5
-
-    .line 196
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
-
-    move-result-object v9
-
-    iput-object v9, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
+    if-ne v2, v3, :cond_7
 
     .line 197
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v10, "[Update RSP] versionCode : "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v10, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_4
-    const-string v10, "versionName"
-
-    .line 199
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_5
-
-    .line 200
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
-
-    move-result v9
-
-    if-ne v9, v11, :cond_5
-
-    .line 202
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
-
-    move-result-object v9
-
-    iput-object v9, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
-
-    .line 203
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v10, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    :cond_5
-    :goto_1
-    const/4 v9, 0x3
-
-    if-ne v2, v9, :cond_d
-
-    .line 209
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    const-string v10, "appInfo"
+    iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
 
-    .line 210
-    invoke-virtual {v2, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-nez v10, :cond_6
-
-    const-string v10, "result"
-
-    invoke-virtual {v2, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_d
-
-    .line 211
-    :cond_6
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
-
-    const-string v10, "0"
-
-    invoke-virtual {v2, v10}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_c
-
-    .line 212
+    .line 198
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v7, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+    move-result-object v2
 
-    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -574,39 +371,300 @@
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 213
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
+    goto/16 :goto_3
+
+    .line 188
+    :cond_2
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v2
+
+    if-ne v2, v3, :cond_7
+
+    .line 190
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
+
+    .line 191
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "[Update RSP] versionCode : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    goto/16 :goto_3
+
+    .line 181
+    :cond_3
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v2
+
+    if-ne v2, v3, :cond_7
+
+    .line 183
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
+
+    .line 184
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "[Update RSP] version : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    goto :goto_3
+
+    .line 174
+    :cond_4
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v2
+
+    if-ne v2, v3, :cond_7
+
+    .line 176
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 177
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v14, "[Update RSP] resultMsg : "
+
+    invoke-virtual {v3, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    goto :goto_3
+
+    .line 167
+    :cond_5
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v2
+
+    if-ne v2, v3, :cond_7
+
+    .line 169
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+
+    .line 170
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    goto :goto_3
+
+    .line 160
+    :cond_6
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v2
+
+    if-ne v2, v3, :cond_7
+
+    .line 162
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
+
+    .line 163
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "[Update RSP] appId : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, ":"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    :cond_7
+    :goto_3
+    if-ne v4, v12, :cond_f
+
+    .line 205
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "appInfo"
+
+    .line 206
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_8
+
+    const-string/jumbo v3, "result"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_f
+
+    .line 207
+    :cond_8
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+
+    const-string v3, "0"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_e
+
+    .line 208
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 209
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
     :try_end_2
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_2 .. :try_end_2} :catch_4
     .catch Ljava/net/SocketException; {:try_start_2 .. :try_end_2} :catch_3
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
-    const-string v7, "LatestVersion"
+    const-string v3, "LatestVersion"
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_9
 
     :try_start_3
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
+    const-string v4, ""
 
-    const-string v10, ""
-
-    invoke-virtual {v2, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_7
+    if-nez v2, :cond_9
 
-    .line 214
+    .line 210
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
+    move-result-object v2
 
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -614,30 +672,30 @@
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 215
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    .line 211
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
+    iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
 
-    invoke-interface {v2, v7, v6}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v2, v3, v4}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    goto :goto_2
+    goto :goto_4
 
-    .line 217
-    :cond_7
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    .line 213
+    :cond_9
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
+    iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->version:Ljava/lang/String;
 
-    invoke-interface {v2, v7, v6}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v2, v3, v4}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 220
-    :goto_2
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+    .line 216
+    :goto_4
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
 
-    const-string v6, "1"
+    const-string v3, "1"
 
-    invoke-virtual {v2, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v2
     :try_end_3
@@ -646,67 +704,63 @@
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
 
-    const-string v6, "NeedUpdateButton"
+    const-string v3, "NeedUpdateButton"
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_a
 
-    .line 221
+    .line 217
     :try_start_4
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    const-string v5, "UpdatePopupLater"
+    const-string v4, "UpdatePopupLater"
 
-    const/4 v7, 0x0
+    invoke-interface {v2, v4, v11}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v2, v5, v7}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    .line 218
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    .line 222
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v2, v3, v11}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v2, v6, v7}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    move v8, v7
 
-    move v5, v4
+    goto :goto_6
 
-    goto :goto_4
+    .line 220
+    :cond_a
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
 
-    .line 224
-    :cond_8
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->resultCode:Ljava/lang/String;
+    const-string v4, "2"
 
-    const-string v7, "2"
-
-    invoke-virtual {v2, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_b
+    if-eqz v2, :cond_d
 
-    .line 225
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    .line 221
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v2, v6, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v2, v3, v7}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 227
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
+    .line 223
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
     :try_end_4
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_4 .. :try_end_4} :catch_4
     .catch Ljava/net/SocketException; {:try_start_4 .. :try_end_4} :catch_3
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
-    if-eqz v2, :cond_b
+    if-eqz v2, :cond_d
 
-    .line 230
+    .line 226
     :try_start_5
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionCode:Ljava/lang/String;
-
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v2
 
-    if-ltz v2, :cond_a
+    if-ltz v2, :cond_c
 
-    .line 231
+    .line 227
     rem-int/lit8 v2, v2, 0x2
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
@@ -714,45 +768,53 @@
     .catch Ljava/net/SocketException; {:try_start_5 .. :try_end_5} :catch_3
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
 
-    if-ne v2, v4, :cond_9
+    if-ne v2, v7, :cond_b
 
-    goto :goto_3
+    goto :goto_5
 
-    :cond_9
-    move v5, v8
+    :cond_b
+    move v8, v13
 
-    goto :goto_4
+    goto :goto_6
 
     :catch_0
-    :cond_a
-    :goto_3
-    move v5, v9
+    :cond_c
+    :goto_5
+    move v8, v12
 
-    .line 242
-    :cond_b
-    :goto_4
+    .line 237
+    :cond_d
+    :goto_6
     :try_start_6
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 245
-    :cond_c
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
+    .line 240
+    :cond_e
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->appId:Ljava/lang/String;
 
-    invoke-direct {p0, v2}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->isGalaxyAppsIsntalled(Ljava/lang/String;)Z
+    move-object/from16 v3, p1
 
-    move-result v2
-
-    if-nez v2, :cond_d
-
-    const/16 v5, 0xc
-
-    .line 249
-    :cond_d
-    invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+    invoke-direct {v1, v3, v2}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->isGalaxyAppsIsntalled(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v2
+
+    if-nez v2, :cond_10
+
+    const/16 v8, 0xc
+
+    goto :goto_7
+
+    :cond_f
+    move-object/from16 v3, p1
+
+    .line 244
+    :cond_10
+    :goto_7
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v4
     :try_end_6
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_6 .. :try_end_6} :catch_4
     .catch Ljava/net/SocketException; {:try_start_6 .. :try_end_6} :catch_3
@@ -761,496 +823,372 @@
 
     goto/16 :goto_0
 
-    :cond_e
-    move v0, v5
+    :cond_11
+    move v2, v8
 
-    goto :goto_b
+    goto :goto_e
 
     :catch_1
     move-exception v0
 
-    move-object v2, p1
+    move-object v2, v0
 
-    goto :goto_5
+    move-object v4, v6
+
+    goto :goto_8
 
     :catch_2
-    move-exception v1
+    move-exception v0
 
-    move-object v2, p1
+    move-object v2, v0
 
-    goto :goto_6
+    move-object v4, v6
+
+    goto :goto_9
 
     :catch_3
-    move-exception v1
+    move-exception v0
 
-    move-object v2, p1
+    move-object v2, v0
 
-    goto :goto_7
+    move-object v4, v6
+
+    goto :goto_a
 
     :catch_4
     move-exception v0
 
-    move-object v2, p1
+    move-object v2, v0
 
-    goto :goto_8
+    move-object v4, v6
+
+    goto :goto_c
 
     :catch_5
     move-exception v0
 
-    .line 264
-    :goto_5
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    move-object v2, v0
 
-    .line 265
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Update check, Exception "
-
-    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
-
-    goto :goto_9
-
-    :catch_6
-    move-exception v1
+    .line 259
+    :goto_8
+    invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 260
-    :goto_6
-    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string p1, "Update check, but network fail"
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 261
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+    const-string v5, "Update check, Exception "
 
-    goto :goto_a
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :catch_7
-    move-exception v1
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+
+    goto :goto_d
+
+    :catch_6
+    move-exception v0
+
+    move-object v2, v0
+
+    .line 255
+    :goto_9
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
+
+    const-string v2, "Update check, but network fail"
 
     .line 256
-    :goto_7
-    invoke-virtual {v1}, Ljava/net/SocketException;->printStackTrace()V
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    const-string p1, "Update check, network is unavailable"
+    goto :goto_b
 
-    .line 257
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+    :catch_7
+    move-exception v0
 
-    goto :goto_a
+    move-object v2, v0
+
+    .line 251
+    :goto_a
+    invoke-virtual {v2}, Ljava/net/SocketException;->printStackTrace()V
+
+    const-string v2, "Update check, network is unavailable"
+
+    .line 252
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+
+    :goto_b
+    move-object v6, v4
+
+    const/16 v2, 0xd
+
+    goto :goto_e
 
     :catch_8
     move-exception v0
 
-    .line 252
-    :goto_8
-    invoke-virtual {v0}, Lorg/xmlpull/v1/XmlPullParserException;->printStackTrace()V
+    move-object v2, v0
 
-    const-string p1, "xml parsing errore"
+    .line 247
+    :goto_c
+    invoke-virtual {v2}, Lorg/xmlpull/v1/XmlPullParserException;->printStackTrace()V
 
-    .line 253
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+    const-string/jumbo v2, "xml parsing errore"
 
-    :goto_9
-    move v0, v1
+    .line 248
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    :goto_a
-    move-object p1, v2
+    :goto_d
+    move-object v6, v4
 
-    :goto_b
-    if-eqz p1, :cond_f
+    const/16 v2, 0xb
 
-    .line 271
+    :goto_e
+    if-eqz v6, :cond_12
+
+    .line 266
     :try_start_7
-    invoke-virtual {p1}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v6}, Ljava/io/InputStream;->close()V
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_9
 
-    goto :goto_c
+    goto :goto_f
 
     :catch_9
-    move-exception p1
+    move-exception v0
 
-    .line 273
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    move-object v3, v0
 
-    :cond_f
-    :goto_c
-    return v0
+    .line 268
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+
+    :cond_12
+    :goto_f
+    return v2
+
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x6c7469dc -> :sswitch_5
+        -0x221d6c56 -> :sswitch_4
+        0x58b7f1c -> :sswitch_3
+        0x14f51cd8 -> :sswitch_2
+        0x290b12e5 -> :sswitch_1
+        0x290fdf83 -> :sswitch_0
+    .end sparse-switch
 .end method
 
 .method public static getAbiType()Ljava/lang/String;
-    .locals 2
+    .locals 1
 
-    .line 108
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ge v0, v1, :cond_0
-
-    const-string v0, "no"
-
-    return-object v0
-
-    .line 110
-    :cond_0
+    .line 89
     sget-object v0, Landroid/os/Build;->SUPPORTED_64_BIT_ABIS:[Ljava/lang/String;
 
     array-length v0, v0
 
-    if-lez v0, :cond_1
+    if-lez v0, :cond_0
 
     const-string v0, "64"
 
     return-object v0
 
-    .line 112
-    :cond_1
+    .line 91
+    :cond_0
     sget-object v0, Landroid/os/Build;->SUPPORTED_32_BIT_ABIS:[Ljava/lang/String;
 
     array-length v0, v0
 
-    if-lez v0, :cond_2
+    if-lez v0, :cond_1
 
     const-string v0, "32"
 
     return-object v0
 
-    :cond_2
+    :cond_1
     const-string v0, "ex"
 
     return-object v0
 .end method
 
-.method private getCSCVersion()Ljava/lang/String;
+.method private getMCC(Landroid/content/Context;)Ljava/lang/String;
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
         }
     .end annotation
 
-    .line 464
-    new-instance v0, Ljava/io/File;
+    const-string v0, "phone"
 
-    const-string v1, "/system/csc/sales_code.dat"
+    .line 403
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    move-result-object p1
 
-    .line 465
-    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
+    check-cast p1, Landroid/telephony/TelephonyManager;
 
-    move-result v1
+    const-string v0, ""
 
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_2
-
-    const/16 v1, 0x14
-
-    new-array v1, v1, [B
-
-    .line 469
-    :try_start_0
-    new-instance v3, Ljava/io/FileInputStream;
-
-    invoke-direct {v3, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 470
-    :try_start_1
-    invoke-virtual {v3, v1}, Ljava/io/InputStream;->read([B)I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 471
-    new-instance v0, Ljava/lang/String;
-
-    const-string v4, "UTF-8"
-
-    invoke-direct {v0, v1, v4}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, "FAIL"
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    :goto_0
-    move-object v2, v0
-
-    .line 479
-    :goto_1
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-
-    goto :goto_4
-
-    :catch_0
-    move-exception v0
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v0
-
-    goto :goto_3
-
-    :catch_1
-    move-exception v0
-
-    move-object v3, v2
-
-    .line 476
-    :goto_2
-    :try_start_2
-    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    if-eqz v3, :cond_2
-
-    goto :goto_1
-
-    :catchall_1
-    move-exception v0
-
-    move-object v2, v3
-
-    :goto_3
-    if-eqz v2, :cond_1
-
-    .line 479
-    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
-
-    .line 481
-    :cond_1
-    throw v0
-
-    :cond_2
-    :goto_4
-    return-object v2
-.end method
-
-.method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;
-    .locals 3
-
-    const-class v0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;
-
-    monitor-enter v0
-
-    if-eqz p0, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    :try_start_0
-    const-string v2, "context is null"
-
-    .line 94
-    invoke-static {v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
-
-    .line 96
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->sInstance:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;
-
-    if-nez v1, :cond_1
-
-    .line 97
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;-><init>(Landroid/content/Context;)V
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->sInstance:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;
-
-    .line 100
-    :cond_1
-    sget-object p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->sInstance:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    return-object p0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-
-    throw p0
-.end method
-
-.method private getMCC()Ljava/lang/String;
-    .locals 6
-
-    .line 404
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    const-string v1, "phone"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/telephony/TelephonyManager;
-
-    const-string v1, ""
-
-    if-nez v0, :cond_0
-
-    return-object v1
-
-    .line 409
-    :cond_0
-    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 410
-    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getPhoneType()I
-
-    move-result v3
-
-    const/4 v4, 0x3
-
-    const/4 v5, 0x0
-
-    if-eqz v3, :cond_1
-
-    .line 419
-    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    .line 420
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 421
-    invoke-virtual {v0, v5, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_1
-    if-eqz v2, :cond_2
-
-    .line 412
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 413
-    invoke-virtual {v2, v5, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v1
-
-    :cond_2
-    :goto_0
-    return-object v1
-.end method
-
-.method private getMNC()Ljava/lang/String;
-    .locals 3
-
-    .line 432
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    const-string v1, "phone"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/telephony/TelephonyManager;
-
-    const-string v1, ""
-
-    if-nez v0, :cond_0
-
-    return-object v1
-
-    .line 436
-    :cond_0
-    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 437
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    const/4 v1, 0x3
-
-    .line 438
-    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v0
+    if-nez p1, :cond_0
 
     return-object v0
 
+    .line 408
+    :cond_0
+    invoke-virtual {p1}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 409
+    invoke-virtual {p1}, Landroid/telephony/TelephonyManager;->getPhoneType()I
+
+    move-result v2
+
+    const/4 v3, 0x3
+
+    const/4 v4, 0x0
+
+    if-nez v2, :cond_1
+
+    if-eqz v1, :cond_2
+
+    .line 410
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    .line 411
+    invoke-virtual {v1, v4, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 416
     :cond_1
-    return-object v1
+    invoke-virtual {p1}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_2
+
+    .line 417
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 418
+    invoke-virtual {p1, v4, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_2
+    return-object v0
 .end method
 
-.method private getUpdateURL()Ljava/lang/String;
-    .locals 7
+.method private getMNC(Landroid/content/Context;)Ljava/lang/String;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
+
+    const-string v0, "phone"
+
+    .line 428
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/telephony/TelephonyManager;
+
+    const-string v0, ""
+
+    if-nez p1, :cond_0
+
+    return-object v0
+
+    .line 432
+    :cond_0
+    invoke-virtual {p1}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    .line 433
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const/4 v0, 0x3
+
+    .line 434
+    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_1
+    return-object v0
+.end method
+
+.method private getUpdateURL(Landroid/content/Context;)Ljava/lang/String;
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 318
+    .line 317
     new-instance v0, Lcom/samsung/android/galaxycontinuity/util/ExtukManager;
 
     invoke-direct {v0}, Lcom/samsung/android/galaxycontinuity/util/ExtukManager;-><init>()V
 
-    .line 319
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
+    .line 318
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getMCC(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getMCC()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/util/ExtukManager;->getmExtuk(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/util/ExtukManager;->getmExtuk(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 321
+    .line 320
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1259,7 +1197,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1267,19 +1209,19 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 323
+    .line 322
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     const-string v2, "OMAP_SS"
 
-    .line 324
+    .line 323
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 325
+    .line 324
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->readModelCMCC()Ljava/lang/String;
 
     move-result-object v1
@@ -1287,7 +1229,7 @@
     :cond_0
     const-string v2, "SAMSUNG-"
 
-    .line 327
+    .line 326
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -1296,7 +1238,7 @@
 
     const/16 v2, 0x8
 
-    .line 328
+    .line 327
     invoke-virtual {v1, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1304,26 +1246,20 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 333
+    .line 332
     :try_start_0
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
     if-eqz v3, :cond_2
 
-    .line 334
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    .line 333
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1335,7 +1271,7 @@
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 343
+    .line 342
     :cond_2
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1345,67 +1281,81 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, "appId="
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
+    move-result-object v3
 
-    invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 344
+    .line 343
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v3, "&callerId="
+    move-result-object v3
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, "&callerId="
 
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     if-eqz v2, :cond_3
 
-    .line 346
+    .line 345
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v3, "&versionCode="
+    move-result-object v3
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, "&versionCode="
 
-    iget v2, v2, Landroid/content/pm/PackageInfo;->versionCode:I
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 348
+    iget v2, v2, Landroid/content/pm/PackageInfo;->versionCode:I
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 347
     :cond_3
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1413,13 +1363,46 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, "&deviceId="
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 348
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "&mcc="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getMCC(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1430,17 +1413,23 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "&mcc="
+    move-result-object v1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "&mnc="
 
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getMCC()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getMNC(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1451,311 +1440,296 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "&mnc="
+    move-result-object v1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "&csc="
 
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getMNC()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getCSC(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
 
     .line 351
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "&csc="
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getCSC()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 352
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
     const-string v1, "&cc="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mSAcc:Ljava/lang/String;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 353
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    .line 352
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string v1, "&sdkVer="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    move-result-object p1
 
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
-    move-result-object v1
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    .line 354
-    new-instance v2, Ljava/lang/StringBuilder;
+    .line 353
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string v1, "&systemId="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move-result-wide v3
+    move-result-wide v1
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    move-result-wide v5
+    move-result-wide v3
 
-    sub-long/2addr v3, v5
+    sub-long/2addr v1, v3
 
-    invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 355
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    .line 354
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string v1, "&abiType="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->getAbiType()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 356
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    .line 355
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string v1, "&extuk="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object p1
 
-    .line 357
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 356
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->isPD()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_4
+    if-eqz v0, :cond_4
 
-    .line 358
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 357
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string v0, "&pd=1"
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
 
     goto :goto_0
 
-    .line 360
+    .line 359
     :cond_4
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string v0, "&pd=0"
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 364
+    move-result-object p1
+
+    .line 363
     :goto_0
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    return-object v0
+    return-object p1
 
     :catch_0
-    move-exception v0
+    move-exception p1
 
-    .line 336
-    invoke-virtual {v0}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
+    .line 335
+    invoke-virtual {p1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
-    const-string v0, ""
+    const-string p1, ""
 
-    return-object v0
+    return-object p1
 .end method
 
-.method private isCSCExistFile()Z
-    .locals 2
-
-    .line 488
-    new-instance v0, Ljava/io/File;
-
-    const-string v1, "/system/csc/sales_code.dat"
-
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 490
-    :try_start_0
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_0
-
-    :try_start_1
-    const-string v1, "CSC is not exist"
-
-    .line 492
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception v1
-
-    goto :goto_0
-
-    :catch_1
-    move-exception v1
-
-    const/4 v0, 0x0
-
-    .line 495
-    :goto_0
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
-
-    :cond_0
-    :goto_1
-    return v0
-.end method
-
-.method private isGalaxyAppsIsntalled(Ljava/lang/String;)Z
+.method private isGalaxyAppsIsntalled(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName"
+        }
+    .end annotation
 
-    .line 370
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    .line 369
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 372
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 371
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 373
-    invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    .line 372
+    invoke-virtual {p2, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 374
+    .line 373
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 375
-    invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+    .line 374
+    invoke-virtual {p2, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v2
 
     add-int/2addr v1, v2
 
-    .line 376
-    invoke-virtual {p1, v2, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    .line 375
+    invoke-virtual {p2, v2, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p2
 
-    .line 380
+    .line 379
     :cond_0
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result p2
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_1
+    if-eqz p2, :cond_1
+
+    .line 381
+    :try_start_0
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_1
 
     .line 382
-    :try_start_0
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -1764,26 +1738,13 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_1
+    const-string p2, "com.sec.android.app.samsungapps"
 
-    .line 383
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object p1
-
-    const-string v1, "com.sec.android.app.samsungapps"
-
-    invoke-virtual {p1, v1, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-virtual {p1, p2, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     const-string p1, "com.sec.android.app.samsungapps is installed"
 
-    .line 384
+    .line 383
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1795,12 +1756,12 @@
     :catch_0
     move-exception p1
 
-    .line 388
+    .line 387
     invoke-virtual {p1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
     const-string p1, "com.sec.android.app.samsungapps is not installed"
 
-    .line 389
+    .line 388
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :cond_1
@@ -1810,26 +1771,17 @@
 .method private isPD()Z
     .locals 2
 
-    .line 501
+    .line 458
     new-instance v0, Ljava/io/File;
 
     const-string v1, "mnt/sdcard/pd.test"
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 502
+    .line 460
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x1
 
     return v0
 .end method
@@ -1842,23 +1794,21 @@
         }
     .end annotation
 
-    .line 512
+    .line 467
     new-instance v0, Ljava/io/File;
 
     const-string v1, "/system/version"
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 513
+    .line 468
     invoke-virtual {v0}, Ljava/io/File;->isFile()Z
 
     move-result v1
 
     const-string v2, ""
 
-    const/4 v3, 0x1
-
-    if-ne v1, v3, :cond_3
+    if-eqz v1, :cond_3
 
     const/16 v1, 0x80
 
@@ -1866,7 +1816,7 @@
 
     const/4 v3, 0x0
 
-    .line 517
+    .line 472
     :try_start_0
     new-instance v4, Ljava/io/FileInputStream;
 
@@ -1881,13 +1831,13 @@
     :catch_0
     move-exception v0
 
-    .line 519
+    .line 474
     invoke-virtual {v0}, Ljava/io/FileNotFoundException;->printStackTrace()V
 
     :goto_0
     if-eqz v3, :cond_0
 
-    .line 523
+    .line 478
     :try_start_1
     invoke-virtual {v3, v1}, Ljava/io/InputStream;->read([B)I
 
@@ -1911,14 +1861,14 @@
     :goto_1
     if-lez v0, :cond_2
 
-    .line 526
+    .line 481
     new-instance v4, Ljava/lang/String;
 
     const/4 v5, 0x0
 
-    const-string v6, "UTF-8"
+    sget-object v6, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
-    invoke-direct {v4, v1, v5, v0, v6}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
+    invoke-direct {v4, v1, v5, v0, v6}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1927,7 +1877,7 @@
 
     goto :goto_4
 
-    .line 529
+    .line 484
     :goto_2
     :try_start_2
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
@@ -1941,10 +1891,10 @@
     :goto_3
     if-eqz v3, :cond_1
 
-    .line 532
+    .line 487
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
-    .line 533
+    .line 488
     :cond_1
     throw v0
 
@@ -1952,7 +1902,7 @@
     :goto_4
     if-eqz v3, :cond_3
 
-    .line 532
+    .line 487
     :goto_5
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
@@ -1962,13 +1912,21 @@
 
 .method private registerAppUpdateListener(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "l"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 129
+    .line 107
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mUiListener:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;
 
-    .line 130
+    .line 108
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mUiListener:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;
 
     return-void
@@ -1976,73 +1934,64 @@
 
 
 # virtual methods
-.method public cancelCheckTask()V
-    .locals 2
-
-    .line 540
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mCheckTask:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x1
-
-    .line 541
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;->cancel(Z)Z
-
-    :cond_0
-    return-void
-.end method
-
-.method public getCSC()Ljava/lang/String;
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
+.method public getCSC(Landroid/content/Context;)Ljava/lang/String;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
         }
     .end annotation
 
-    .line 448
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
+    .line 443
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->getSalesCode(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->getSalesCode(Landroid/content/Context;)Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v0
+    if-nez p1, :cond_0
 
-    if-nez v0, :cond_0
+    const-string v0, "getCSC::getCSCVersion::value is null"
 
-    const-string v1, "getCSC::getCSCVersion::value is null"
-
-    .line 450
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 445
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_0
-    const-string v1, "FAIL"
+    const-string v0, "FAIL"
 
-    .line 453
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    .line 448
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v0
 
-    const/4 v2, 0x1
+    if-eqz v0, :cond_1
 
-    if-ne v1, v2, :cond_1
+    const-string v0, "getCSC::getCSCVersion::Fail to read CSC Version"
 
-    const-string v1, "getCSC::getCSCVersion::Fail to read CSC Version"
-
-    .line 454
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 449
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :cond_1
     :goto_0
+    return-object p1
+.end method
+
+.method public getVersionName()Ljava/lang/String;
+    .locals 1
+
+    .line 313
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->versionName:Ljava/lang/String;
+
     return-object v0
 .end method
 
 .method public needToCheckUpdate()Z
     .locals 5
 
-    .line 282
+    .line 277
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -2051,23 +2000,23 @@
 
     move-result-object v0
 
-    .line 283
+    .line 278
     new-instance v1, Ljava/text/SimpleDateFormat;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v2
 
-    const-string v3, "yyyy-MM-dd HH:mm"
+    const-string/jumbo v3, "yyyy-MM-dd HH:mm"
 
     invoke-direct {v1, v3, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 285
+    .line 280
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v2
 
-    .line 287
+    .line 282
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v3
@@ -2078,14 +2027,14 @@
 
     goto :goto_0
 
-    .line 292
+    .line 287
     :cond_0
     :try_start_0
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v3
 
-    .line 293
+    .line 288
     invoke-virtual {v1, v0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object v0
@@ -2094,10 +2043,10 @@
 
     const/4 v0, 0x5
 
-    .line 294
+    .line 289
     invoke-virtual {v3, v0, v4}, Ljava/util/Calendar;->add(II)V
 
-    .line 296
+    .line 291
     invoke-virtual {v3}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
@@ -2116,7 +2065,7 @@
     :goto_0
     if-eqz v4, :cond_1
 
-    .line 306
+    .line 301
     :try_start_1
     invoke-virtual {v2}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -2126,7 +2075,7 @@
 
     move-result-object v0
 
-    .line 307
+    .line 302
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v1
@@ -2142,7 +2091,7 @@
 
     const-string v1, ">>>"
 
-    .line 310
+    .line 305
     invoke-static {v1, v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_1
@@ -2152,96 +2101,86 @@
 
 .method public setCC(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cc"
+        }
+    .end annotation
 
-    .line 399
+    .line 398
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mSAcc:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public startCheck(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;)V
+.method public startCheck(Landroid/content/Context;Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "l"
+        }
+    .end annotation
 
-    .line 134
-    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->needToCheckUpdate()Z
+    .line 112
+    invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->registerAppUpdateListener(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;)V
 
-    move-result v0
+    const-string p2, "SAMSUNG_FLOW_PREFERENCE"
 
-    if-eqz v0, :cond_0
+    const/4 v0, 0x0
 
-    .line 135
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->registerAppUpdateListener(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;)V
+    .line 114
+    invoke-virtual {p1, p2, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    .line 136
-    new-instance p1, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
+    move-result-object p2
 
-    invoke-direct {p1, p0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;-><init>(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;)V
+    .line 115
+    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mCheckTask:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
+    move-result-object p2
 
-    .line 138
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    const-string v0, "SAMSUNG_FLOW_PREFERENCE"
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object p1
-
-    .line 139
-    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
-
-    .line 141
+    .line 117
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getPackageVersion()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
     const-string v2, "LatestVersion"
 
-    invoke-interface {p1, v2, v0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {p2, v2, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 142
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    .line 118
+    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    const-string v0, "NeedUpdateButton"
+    const-string v1, "NeedUpdateButton"
 
-    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {p2, v1, v0}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 143
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
+    .line 119
+    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
+    invoke-interface {p2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 145
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mCheckTask:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;
+    .line 121
+    new-instance p2, Ljava/lang/Thread;
 
-    sget-object v0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$1;
 
-    const/4 v1, 0x0
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$1;-><init>(Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;Landroid/content/Context;)V
 
-    check-cast v1, [Ljava/lang/Object;
+    invoke-direct {p2, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    invoke-virtual {p1, v0, v1}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$CheckTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    .line 137
+    invoke-virtual {p2}, Ljava/lang/Thread;->start()V
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 147
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-interface {p1, v0}, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;->onResult(Ljava/lang/Integer;)V
-
-    :goto_0
     return-void
 .end method
 
@@ -2250,11 +2189,8 @@
 
     const/4 v0, 0x0
 
-    .line 120
+    .line 99
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mUiListener:Lcom/samsung/android/galaxycontinuity/util/CheckUpdate$OnAppUpdateListener;
-
-    .line 121
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/CheckUpdate;->mContext:Landroid/content/Context;
 
     return-void
 .end method

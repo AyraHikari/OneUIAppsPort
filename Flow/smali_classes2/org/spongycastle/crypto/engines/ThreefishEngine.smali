@@ -140,7 +140,7 @@
 .end method
 
 .method public constructor <init>(I)V
-    .locals 3
+    .locals 2
 
     .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -153,45 +153,49 @@
     iput-object v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->t:[J
 
     .line 125
-    div-int/lit8 v1, p1, 0x8
+    div-int/lit8 v0, p1, 0x8
 
-    iput v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->blocksizeBytes:I
+    iput v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->blocksizeBytes:I
 
     .line 126
-    div-int/lit8 v1, v1, 0x8
+    div-int/lit8 v0, v0, 0x8
 
-    iput v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->blocksizeWords:I
+    iput v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->blocksizeWords:I
 
     .line 127
-    new-array v2, v1, [J
+    new-array v1, v0, [J
 
-    iput-object v2, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->currentBlock:[J
+    iput-object v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->currentBlock:[J
 
-    mul-int/lit8 v1, v1, 0x2
+    mul-int/lit8 v0, v0, 0x2
 
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     .line 133
-    new-array v1, v1, [J
+    new-array v0, v0, [J
 
-    iput-object v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->kw:[J
+    iput-object v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->kw:[J
 
-    const/16 v2, 0x100
+    const/16 v0, 0x100
 
-    if-eq p1, v2, :cond_2
+    if-eq p1, v0, :cond_2
 
-    const/16 v2, 0x200
+    const/16 v0, 0x200
 
-    if-eq p1, v2, :cond_1
+    if-eq p1, v0, :cond_1
 
-    const/16 v2, 0x400
+    const/16 v0, 0x400
 
-    if-ne p1, v2, :cond_0
+    if-ne p1, v0, :cond_0
 
     .line 144
     new-instance p1, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish1024Cipher;
 
-    invoke-direct {p1, v1, v0}, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish1024Cipher;-><init>([J[J)V
+    iget-object v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->kw:[J
+
+    iget-object v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->t:[J
+
+    invoke-direct {p1, v0, v1}, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish1024Cipher;-><init>([J[J)V
 
     iput-object p1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->cipher:Lorg/spongycastle/crypto/engines/ThreefishEngine$ThreefishCipher;
 
@@ -211,7 +215,11 @@
     :cond_1
     new-instance p1, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish512Cipher;
 
-    invoke-direct {p1, v1, v0}, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish512Cipher;-><init>([J[J)V
+    iget-object v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->kw:[J
+
+    iget-object v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->t:[J
+
+    invoke-direct {p1, v0, v1}, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish512Cipher;-><init>([J[J)V
 
     iput-object p1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->cipher:Lorg/spongycastle/crypto/engines/ThreefishEngine$ThreefishCipher;
 
@@ -221,7 +229,11 @@
     :cond_2
     new-instance p1, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish256Cipher;
 
-    invoke-direct {p1, v1, v0}, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish256Cipher;-><init>([J[J)V
+    iget-object v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->kw:[J
+
+    iget-object v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->t:[J
+
+    invoke-direct {p1, v0, v1}, Lorg/spongycastle/crypto/engines/ThreefishEngine$Threefish256Cipher;-><init>([J[J)V
 
     iput-object p1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->cipher:Lorg/spongycastle/crypto/engines/ThreefishEngine$ThreefishCipher;
 
@@ -479,13 +491,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->blocksizeWords:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " words)"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -707,11 +725,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->blocksizeBytes:I
 
     mul-int/lit8 v1, v1, 0x8
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -825,13 +847,19 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     iget v0, p0, Lorg/spongycastle/crypto/engines/ThreefishEngine;->blocksizeBytes:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     const-string v0, " bytes)"
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -906,6 +934,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     .line 178
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -917,7 +947,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 

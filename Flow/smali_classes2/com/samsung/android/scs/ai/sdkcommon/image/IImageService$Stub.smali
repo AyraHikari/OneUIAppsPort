@@ -119,7 +119,7 @@
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string v0, "setDefaultImpl() called twice"
+    const-string/jumbo v0, "setDefaultImpl() called twice"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

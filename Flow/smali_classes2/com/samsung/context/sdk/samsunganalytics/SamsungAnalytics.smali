@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final SDK_VERSION:Ljava/lang/String; = "2.01.007"
+.field public static final SDK_VERSION:Ljava/lang/String; = "2.01.008"
 
 .field private static instance:Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
@@ -16,6 +16,16 @@
 # direct methods
 .method private constructor <init>(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "configuration"
+        }
+    .end annotation
 
     .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -138,6 +148,16 @@
 
 .method private static getInstanceAndConfig(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "application",
+            "configuration"
+        }
+    .end annotation
 
     .line 81
     sget-object v0, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->instance:Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
@@ -187,6 +207,16 @@
 
 .method public static setConfiguration(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "application",
+            "configuration"
+        }
+    .end annotation
 
     .line 101
     invoke-static {p0, p1}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstanceAndConfig(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
@@ -339,6 +369,14 @@
 
 .method public enableUncaughtExceptionLogging(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "serviceID"
+        }
+    .end annotation
 
     .line 145
     :try_start_0
@@ -368,6 +406,16 @@
 
 .method public enableUncaughtExceptionLogging(Ljava/lang/String;Z)Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "serviceID",
+            "wifiOnly"
+        }
+    .end annotation
 
     .line 155
     :try_start_0
@@ -457,6 +505,15 @@
 
 .method public registerSettingPref(Ljava/util/Map;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -494,6 +551,14 @@
 
 .method public restrictNetworkType(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "networkType"
+        }
+    .end annotation
 
     .line 204
     :try_start_0
@@ -525,6 +590,15 @@
 
 .method public sendLog(Ljava/util/Map;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "log"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -557,6 +631,15 @@
 
 .method public sendLogSync(Ljava/util/Map;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "log"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

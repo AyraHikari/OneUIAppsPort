@@ -88,10 +88,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
-    .line 44
+    .line 1
     new-instance v0, Lokhttp3/internal/http2/Hpack;
 
     invoke-direct {v0}, Lokhttp3/internal/http2/Hpack;-><init>()V
@@ -102,7 +102,7 @@
 
     new-array v1, v1, [Lokhttp3/internal/http2/Header;
 
-    .line 59
+    .line 2
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_AUTHORITY:Lokio/ByteString;
@@ -115,7 +115,7 @@
 
     aput-object v2, v1, v3
 
-    .line 60
+    .line 3
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_METHOD:Lokio/ByteString;
@@ -124,14 +124,12 @@
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/4 v3, 0x1
+    const/4 v5, 0x1
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 61
+    .line 4
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_METHOD:Lokio/ByteString;
 
     const-string v5, "POST"
 
@@ -141,7 +139,7 @@
 
     aput-object v2, v1, v3
 
-    .line 62
+    .line 5
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_PATH:Lokio/ByteString;
@@ -150,14 +148,12 @@
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/4 v3, 0x3
+    const/4 v5, 0x3
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 63
+    .line 6
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_PATH:Lokio/ByteString;
 
     const-string v5, "/index.html"
 
@@ -167,7 +163,7 @@
 
     aput-object v2, v1, v3
 
-    .line 64
+    .line 7
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_SCHEME:Lokio/ByteString;
@@ -176,14 +172,12 @@
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/4 v3, 0x5
+    const/4 v5, 0x5
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 65
+    .line 8
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_SCHEME:Lokio/ByteString;
 
     const-string v5, "https"
 
@@ -193,7 +187,7 @@
 
     aput-object v2, v1, v3
 
-    .line 66
+    .line 9
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     sget-object v3, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
@@ -202,79 +196,67 @@
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/4 v3, 0x7
+    const/4 v5, 0x7
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 67
+    .line 10
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
 
     const-string v5, "204"
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/16 v3, 0x8
+    const/16 v5, 0x8
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 68
+    .line 11
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
 
     const-string v5, "206"
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/16 v3, 0x9
+    const/16 v5, 0x9
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 69
+    .line 12
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
 
     const-string v5, "304"
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/16 v3, 0xa
+    const/16 v5, 0xa
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 70
+    .line 13
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
 
     const-string v5, "400"
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/16 v3, 0xb
+    const/16 v5, 0xb
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 71
+    .line 14
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
 
     const-string v5, "404"
 
     invoke-direct {v2, v3, v5}, Lokhttp3/internal/http2/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
-    const/16 v3, 0xc
+    const/16 v5, 0xc
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v5
 
-    .line 72
+    .line 15
     new-instance v2, Lokhttp3/internal/http2/Header;
-
-    sget-object v3, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lokio/ByteString;
 
     const-string v5, "500"
 
@@ -284,7 +266,7 @@
 
     aput-object v2, v1, v3
 
-    .line 73
+    .line 16
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "accept-charset"
@@ -295,7 +277,7 @@
 
     aput-object v2, v1, v3
 
-    .line 74
+    .line 17
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "accept-encoding"
@@ -308,7 +290,7 @@
 
     aput-object v2, v1, v3
 
-    .line 75
+    .line 18
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "accept-language"
@@ -319,7 +301,7 @@
 
     aput-object v2, v1, v3
 
-    .line 76
+    .line 19
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "accept-ranges"
@@ -330,7 +312,7 @@
 
     aput-object v2, v1, v3
 
-    .line 77
+    .line 20
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "accept"
@@ -341,7 +323,7 @@
 
     aput-object v2, v1, v3
 
-    .line 78
+    .line 21
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "access-control-allow-origin"
@@ -352,7 +334,7 @@
 
     aput-object v2, v1, v3
 
-    .line 79
+    .line 22
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "age"
@@ -363,7 +345,7 @@
 
     aput-object v2, v1, v3
 
-    .line 80
+    .line 23
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "allow"
@@ -374,7 +356,7 @@
 
     aput-object v2, v1, v3
 
-    .line 81
+    .line 24
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "authorization"
@@ -385,7 +367,7 @@
 
     aput-object v2, v1, v3
 
-    .line 82
+    .line 25
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "cache-control"
@@ -396,7 +378,7 @@
 
     aput-object v2, v1, v3
 
-    .line 83
+    .line 26
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "content-disposition"
@@ -407,7 +389,7 @@
 
     aput-object v2, v1, v3
 
-    .line 84
+    .line 27
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "content-encoding"
@@ -418,7 +400,7 @@
 
     aput-object v2, v1, v3
 
-    .line 85
+    .line 28
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "content-language"
@@ -429,7 +411,7 @@
 
     aput-object v2, v1, v3
 
-    .line 86
+    .line 29
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "content-length"
@@ -440,7 +422,7 @@
 
     aput-object v2, v1, v3
 
-    .line 87
+    .line 30
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "content-location"
@@ -451,7 +433,7 @@
 
     aput-object v2, v1, v3
 
-    .line 88
+    .line 31
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "content-range"
@@ -462,7 +444,7 @@
 
     aput-object v2, v1, v3
 
-    .line 89
+    .line 32
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "content-type"
@@ -473,7 +455,7 @@
 
     aput-object v2, v1, v3
 
-    .line 90
+    .line 33
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "cookie"
@@ -484,7 +466,7 @@
 
     aput-object v2, v1, v3
 
-    .line 91
+    .line 34
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "date"
@@ -495,7 +477,7 @@
 
     aput-object v2, v1, v3
 
-    .line 92
+    .line 35
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "etag"
@@ -506,7 +488,7 @@
 
     aput-object v2, v1, v3
 
-    .line 93
+    .line 36
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "expect"
@@ -517,7 +499,7 @@
 
     aput-object v2, v1, v3
 
-    .line 94
+    .line 37
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "expires"
@@ -528,7 +510,7 @@
 
     aput-object v2, v1, v3
 
-    .line 95
+    .line 38
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "from"
@@ -539,7 +521,7 @@
 
     aput-object v2, v1, v3
 
-    .line 96
+    .line 39
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "host"
@@ -550,7 +532,7 @@
 
     aput-object v2, v1, v3
 
-    .line 97
+    .line 40
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "if-match"
@@ -561,7 +543,7 @@
 
     aput-object v2, v1, v3
 
-    .line 98
+    .line 41
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "if-modified-since"
@@ -572,7 +554,7 @@
 
     aput-object v2, v1, v3
 
-    .line 99
+    .line 42
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "if-none-match"
@@ -583,7 +565,7 @@
 
     aput-object v2, v1, v3
 
-    .line 100
+    .line 43
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "if-range"
@@ -594,7 +576,7 @@
 
     aput-object v2, v1, v3
 
-    .line 101
+    .line 44
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "if-unmodified-since"
@@ -605,7 +587,7 @@
 
     aput-object v2, v1, v3
 
-    .line 102
+    .line 45
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "last-modified"
@@ -616,7 +598,7 @@
 
     aput-object v2, v1, v3
 
-    .line 103
+    .line 46
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "link"
@@ -627,7 +609,7 @@
 
     aput-object v2, v1, v3
 
-    .line 104
+    .line 47
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "location"
@@ -638,7 +620,7 @@
 
     aput-object v2, v1, v3
 
-    .line 105
+    .line 48
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "max-forwards"
@@ -649,7 +631,7 @@
 
     aput-object v2, v1, v3
 
-    .line 106
+    .line 49
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "proxy-authenticate"
@@ -660,7 +642,7 @@
 
     aput-object v2, v1, v3
 
-    .line 107
+    .line 50
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "proxy-authorization"
@@ -671,7 +653,7 @@
 
     aput-object v2, v1, v3
 
-    .line 108
+    .line 51
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "range"
@@ -682,7 +664,7 @@
 
     aput-object v2, v1, v3
 
-    .line 109
+    .line 52
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "referer"
@@ -693,7 +675,7 @@
 
     aput-object v2, v1, v3
 
-    .line 110
+    .line 53
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "refresh"
@@ -704,7 +686,7 @@
 
     aput-object v2, v1, v3
 
-    .line 111
+    .line 54
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "retry-after"
@@ -715,7 +697,7 @@
 
     aput-object v2, v1, v3
 
-    .line 112
+    .line 55
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "server"
@@ -726,7 +708,7 @@
 
     aput-object v2, v1, v3
 
-    .line 113
+    .line 56
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "set-cookie"
@@ -737,7 +719,7 @@
 
     aput-object v2, v1, v3
 
-    .line 114
+    .line 57
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "strict-transport-security"
@@ -748,7 +730,7 @@
 
     aput-object v2, v1, v3
 
-    .line 115
+    .line 58
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "transfer-encoding"
@@ -759,7 +741,7 @@
 
     aput-object v2, v1, v3
 
-    .line 116
+    .line 59
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "user-agent"
@@ -770,7 +752,7 @@
 
     aput-object v2, v1, v3
 
-    .line 117
+    .line 60
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "vary"
@@ -781,7 +763,7 @@
 
     aput-object v2, v1, v3
 
-    .line 118
+    .line 61
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "via"
@@ -792,7 +774,7 @@
 
     aput-object v2, v1, v3
 
-    .line 119
+    .line 62
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     const-string v3, "www-authenticate"
@@ -803,10 +785,10 @@
 
     aput-object v2, v1, v3
 
-    .line 58
+    .line 63
     sput-object v1, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
 
-    .line 122
+    .line 64
     invoke-direct {v0}, Lokhttp3/internal/http2/Hpack;->nameToFirstIndex()Ljava/util/Map;
 
     move-result-object v0
@@ -819,14 +801,13 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method private final nameToFirstIndex()Ljava/util/Map;
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -837,7 +818,7 @@
         }
     .end annotation
 
-    .line 383
+    .line 1
     new-instance v0, Ljava/util/LinkedHashMap;
 
     sget-object v1, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
@@ -846,7 +827,7 @@
 
     invoke-direct {v0, v2}, Ljava/util/LinkedHashMap;-><init>(I)V
 
-    .line 384
+    .line 2
     array-length v1, v1
 
     const/4 v2, 0x0
@@ -854,7 +835,7 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 385
+    .line 3
     sget-object v3, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
 
     aget-object v4, v3, v2
@@ -867,37 +848,31 @@
 
     if-nez v4, :cond_0
 
-    .line 386
-    move-object v4, v0
-
-    check-cast v4, Ljava/util/Map;
-
+    .line 4
     aget-object v3, v3, v2
 
     iget-object v3, v3, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-interface {v4, v3, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 389
+    .line 5
     :cond_1
-    check-cast v0, Ljava/util/Map;
-
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 
     const-string v1, "Collections.unmodifiableMap(result)"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -906,17 +881,12 @@
 # virtual methods
 .method public final checkLowercase(Lokio/ByteString;)Lokio/ByteString;
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 612
+    .line 1
     invoke-virtual {p1}, Lokio/ByteString;->size()I
 
     move-result v0
@@ -934,7 +904,7 @@
 
     int-to-byte v3, v3
 
-    .line 613
+    .line 2
     invoke-virtual {p1, v1}, Lokio/ByteString;->getByte(I)B
 
     move-result v4
@@ -951,7 +921,7 @@
 
     goto :goto_0
 
-    .line 614
+    .line 3
     :cond_1
     new-instance v0, Ljava/io/IOException;
 
@@ -963,23 +933,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
     invoke-virtual {p1}, Lokio/ByteString;->utf8()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 
@@ -999,7 +963,6 @@
         }
     .end annotation
 
-    .line 122
     sget-object v0, Lokhttp3/internal/http2/Hpack;->NAME_TO_FIRST_INDEX:Ljava/util/Map;
 
     return-object v0
@@ -1008,7 +971,6 @@
 .method public final getSTATIC_HEADER_TABLE()[Lokhttp3/internal/http2/Header;
     .locals 1
 
-    .line 58
     sget-object v0, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
 
     return-object v0

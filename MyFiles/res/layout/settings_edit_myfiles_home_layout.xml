@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:tag="layout/settings_edit_myfiles_home_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/edit_home_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner" android:textDirection="locale">
+            <com.sec.android.app.myfiles.external.ui.widget.halfmargin.MyFilesSwitch android:id="@id/recent_files_switch" android:tag="binding_1" app:switch_divider="false" app:switch_text="@string/subtitle_recent" style="@style/MyFilesSwitch" />
+            <com.sec.android.app.myfiles.external.ui.widget.halfmargin.MyFilesSwitch android:id="@id/category_switch" android:tag="binding_2" app:switch_text="@string/subtitle_category" style="@style/MyFilesSwitch" />
+            <ViewStub android:id="@id/sd_card_stub" android:tag="binding_3" android:layout="@layout/settings_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/samsung_drive_stub" android:tag="binding_4" android:layout="@layout/settings_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/one_drive_stub" android:tag="binding_5" android:layout="@layout/settings_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/google_drive_stub" android:tag="binding_6" android:layout="@layout/settings_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/network_storage_stub" android:tag="binding_7" android:layout="@layout/settings_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/myfiles_progress_material" style="?android:progressBarStyleLarge" />
+            <TextView android:textColor="@color/basic_list_item_text1" android:id="@id/loading_view_text" android:paddingTop="@dimen/loading_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:maxLines="1" />
+        </LinearLayout>
+        <View android:minHeight="@dimen/basic_round_page_bottom_blank_height" style="@style/BackgroundMarginView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

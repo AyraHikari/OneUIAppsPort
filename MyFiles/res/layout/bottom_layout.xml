@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_detail_layout" android:tag="layout/bottom_layout_0" android:background="@color/bottom_detail_layout_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/bottom_operation" android:layout="@layout/bottom_operation_layout" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_layout_height" />
+    <ViewStub android:id="@id/bottom_operation_tablet" android:tag="binding_1" android:layout="@layout/bottom_operation_tablet_layout" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_layout_height_tablet" />
+    <ViewStub android:id="@id/bottom_menu_stub" android:tag="binding_2" android:layout="@layout/bottom_menu_layout" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_layout_height" />
+</LinearLayout>

@@ -94,8 +94,6 @@
     if-eqz v1, :cond_0
 
     .line 175
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;->mPermissionsThread:Landroid/os/HandlerThread;
-
     invoke-virtual {v1}, Landroid/os/HandlerThread;->interrupt()V
 
     .line 176
@@ -157,6 +155,19 @@
 
 .method public request(Landroid/content/Context;Ljava/util/ArrayList;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$OnPermissionRequestListener;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0
+        }
+        names = {
+            "context",
+            "permissions",
+            "listener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -430,6 +441,18 @@
 
 .method public request(Landroid/content/Context;[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$OnPermissionRequestListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0
+        }
+        names = {
+            "context",
+            "permissions",
+            "listener"
+        }
+    .end annotation
 
     .line 105
     new-instance v0, Ljava/util/ArrayList;

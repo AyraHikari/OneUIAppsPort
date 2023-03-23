@@ -19,6 +19,14 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -71,7 +79,7 @@
 
     move-result-object v1
 
-    const-string v2, "setButtonBrightnessLimit"
+    const-string/jumbo v2, "setButtonBrightnessLimit"
 
     const/4 v3, 0x1
 
@@ -153,6 +161,14 @@
 
 .method public setEnable(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isEnabled"
+        }
+    .end annotation
 
     .line 28
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/BlackScreen;->mIsBlackScreenEnabled:Z
@@ -168,6 +184,14 @@
 
 .method public setVisible(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isVisible"
+        }
+    .end annotation
 
     .line 38
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/BlackScreen;->mIsBlackScreenVisible:Z
@@ -202,7 +226,7 @@
 
     move-result-object v1
 
-    const-string v2, "setButtonBrightnessLimit"
+    const-string/jumbo v2, "setButtonBrightnessLimit"
 
     const/4 v3, 0x1
 

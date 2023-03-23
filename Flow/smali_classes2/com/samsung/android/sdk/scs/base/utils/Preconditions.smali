@@ -223,19 +223,12 @@
         }
     .end annotation
 
-    if-eqz p0, :cond_0
-
-    return-object p0
-
-    .line 16
-    :cond_0
-    new-instance p0, Ljava/lang/NullPointerException;
-
     const-string v0, "null reference"
 
-    invoke-direct {p0, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    .line 16
+    invoke-static {p0, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    throw p0
+    return-object p0
 .end method
 
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

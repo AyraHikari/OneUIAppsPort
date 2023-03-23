@@ -172,8 +172,6 @@
     if-eqz v1, :cond_0
 
     .line 232
-    iget-object v1, p0, Lorg/spongycastle/crypto/io/CipherOutputStream;->bufferedBlockCipher:Lorg/spongycastle/crypto/BufferedBlockCipher;
-
     iget-object v2, p0, Lorg/spongycastle/crypto/io/CipherOutputStream;->buf:[B
 
     invoke-virtual {v1, v2, v0}, Lorg/spongycastle/crypto/BufferedBlockCipher;->doFinal([BI)I
@@ -198,8 +196,6 @@
     if-eqz v1, :cond_1
 
     .line 241
-    iget-object v1, p0, Lorg/spongycastle/crypto/io/CipherOutputStream;->aeadBlockCipher:Lorg/spongycastle/crypto/modes/AEADBlockCipher;
-
     iget-object v2, p0, Lorg/spongycastle/crypto/io/CipherOutputStream;->buf:[B
 
     invoke-interface {v1, v2, v0}, Lorg/spongycastle/crypto/modes/AEADBlockCipher;->doFinal([BI)I
@@ -224,8 +220,6 @@
     if-eqz v0, :cond_2
 
     .line 250
-    iget-object v0, p0, Lorg/spongycastle/crypto/io/CipherOutputStream;->streamCipher:Lorg/spongycastle/crypto/StreamCipher;
-
     invoke-interface {v0}, Lorg/spongycastle/crypto/StreamCipher;->reset()V
     :try_end_0
     .catch Lorg/spongycastle/crypto/InvalidCipherTextException; {:try_start_0 .. :try_end_0} :catch_1

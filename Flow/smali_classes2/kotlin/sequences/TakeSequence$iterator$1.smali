@@ -27,11 +27,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u001d\n\u0000\n\u0002\u0010(\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0003*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00028\u00000\u0001J\t\u0010\u000b\u001a\u00020\u000cH\u0096\u0002J\u000e\u0010\r\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u000eR\u0017\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0003\u0010\u0004R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\n\u00a8\u0006\u000f"
     }
@@ -56,9 +51,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -74,31 +70,29 @@
 
 .field private left:I
 
-.field final synthetic this$0:Lkotlin/sequences/TakeSequence;
-
 
 # direct methods
 .method constructor <init>(Lkotlin/sequences/TakeSequence;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()V"
+            "(",
+            "Lkotlin/sequences/TakeSequence<",
+            "TT;>;)V"
         }
     .end annotation
 
-    .line 362
-    iput-object p1, p0, Lkotlin/sequences/TakeSequence$iterator$1;->this$0:Lkotlin/sequences/TakeSequence;
-
+    .line 409
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 363
+    .line 410
     invoke-static {p1}, Lkotlin/sequences/TakeSequence;->access$getCount$p(Lkotlin/sequences/TakeSequence;)I
 
     move-result v0
 
     iput v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
-    .line 364
+    .line 411
     invoke-static {p1}, Lkotlin/sequences/TakeSequence;->access$getSequence$p(Lkotlin/sequences/TakeSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -124,7 +118,7 @@
         }
     .end annotation
 
-    .line 364
+    .line 411
     iget-object v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -133,7 +127,7 @@
 .method public final getLeft()I
     .locals 1
 
-    .line 363
+    .line 410
     iget v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     return v0
@@ -142,7 +136,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 374
+    .line 421
     iget v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     if-lez v0, :cond_0
@@ -174,17 +168,17 @@
         }
     .end annotation
 
-    .line 367
+    .line 414
     iget v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     if-eqz v0, :cond_0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 369
+    .line 416
     iput v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
-    .line 370
+    .line 417
     iget-object v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -193,13 +187,11 @@
 
     return-object v0
 
-    .line 368
+    .line 415
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 .end method
@@ -219,7 +211,7 @@
 .method public final setLeft(I)V
     .locals 0
 
-    .line 363
+    .line 410
     iput p1, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     return-void

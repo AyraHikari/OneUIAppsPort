@@ -43,7 +43,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 16
 
     .line 26
     new-instance v0, Lcom/google/api/client/json/JsonToken;
@@ -57,178 +57,174 @@
     sput-object v0, Lcom/google/api/client/json/JsonToken;->START_ARRAY:Lcom/google/api/client/json/JsonToken;
 
     .line 29
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v1, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "END_ARRAY"
+    const-string v3, "END_ARRAY"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->END_ARRAY:Lcom/google/api/client/json/JsonToken;
+    sput-object v1, Lcom/google/api/client/json/JsonToken;->END_ARRAY:Lcom/google/api/client/json/JsonToken;
 
     .line 32
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v3, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "START_OBJECT"
+    const-string v5, "START_OBJECT"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->START_OBJECT:Lcom/google/api/client/json/JsonToken;
+    sput-object v3, Lcom/google/api/client/json/JsonToken;->START_OBJECT:Lcom/google/api/client/json/JsonToken;
 
     .line 35
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v5, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "END_OBJECT"
+    const-string v7, "END_OBJECT"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->END_OBJECT:Lcom/google/api/client/json/JsonToken;
+    sput-object v5, Lcom/google/api/client/json/JsonToken;->END_OBJECT:Lcom/google/api/client/json/JsonToken;
 
     .line 38
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v7, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "FIELD_NAME"
+    const-string v9, "FIELD_NAME"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->FIELD_NAME:Lcom/google/api/client/json/JsonToken;
+    sput-object v7, Lcom/google/api/client/json/JsonToken;->FIELD_NAME:Lcom/google/api/client/json/JsonToken;
 
     .line 41
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v9, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "VALUE_STRING"
+    const-string v11, "VALUE_STRING"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->VALUE_STRING:Lcom/google/api/client/json/JsonToken;
+    sput-object v9, Lcom/google/api/client/json/JsonToken;->VALUE_STRING:Lcom/google/api/client/json/JsonToken;
 
     .line 47
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v11, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "VALUE_NUMBER_INT"
+    const-string v13, "VALUE_NUMBER_INT"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v13, v14}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->VALUE_NUMBER_INT:Lcom/google/api/client/json/JsonToken;
+    sput-object v11, Lcom/google/api/client/json/JsonToken;->VALUE_NUMBER_INT:Lcom/google/api/client/json/JsonToken;
 
     .line 50
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v13, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "VALUE_NUMBER_FLOAT"
+    const-string v15, "VALUE_NUMBER_FLOAT"
 
-    const/4 v9, 0x7
+    const/4 v14, 0x7
 
-    invoke-direct {v0, v1, v9}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v13, v15, v14}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->VALUE_NUMBER_FLOAT:Lcom/google/api/client/json/JsonToken;
+    sput-object v13, Lcom/google/api/client/json/JsonToken;->VALUE_NUMBER_FLOAT:Lcom/google/api/client/json/JsonToken;
 
     .line 53
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v15, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "VALUE_TRUE"
+    const-string v14, "VALUE_TRUE"
 
-    const/16 v10, 0x8
+    const/16 v12, 0x8
 
-    invoke-direct {v0, v1, v10}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v15, v14, v12}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->VALUE_TRUE:Lcom/google/api/client/json/JsonToken;
+    sput-object v15, Lcom/google/api/client/json/JsonToken;->VALUE_TRUE:Lcom/google/api/client/json/JsonToken;
 
     .line 56
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v14, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "VALUE_FALSE"
+    const-string v12, "VALUE_FALSE"
 
-    const/16 v11, 0x9
+    const/16 v10, 0x9
 
-    invoke-direct {v0, v1, v11}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v14, v12, v10}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->VALUE_FALSE:Lcom/google/api/client/json/JsonToken;
+    sput-object v14, Lcom/google/api/client/json/JsonToken;->VALUE_FALSE:Lcom/google/api/client/json/JsonToken;
 
     .line 59
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v12, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "VALUE_NULL"
+    const-string v10, "VALUE_NULL"
 
-    const/16 v12, 0xa
+    const/16 v8, 0xa
 
-    invoke-direct {v0, v1, v12}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v12, v10, v8}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->VALUE_NULL:Lcom/google/api/client/json/JsonToken;
+    sput-object v12, Lcom/google/api/client/json/JsonToken;->VALUE_NULL:Lcom/google/api/client/json/JsonToken;
 
     .line 62
-    new-instance v0, Lcom/google/api/client/json/JsonToken;
+    new-instance v10, Lcom/google/api/client/json/JsonToken;
 
-    const-string v1, "NOT_AVAILABLE"
+    const-string v8, "NOT_AVAILABLE"
 
-    const/16 v13, 0xb
+    const/16 v6, 0xb
 
-    invoke-direct {v0, v1, v13}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v10, v8, v6}, Lcom/google/api/client/json/JsonToken;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/json/JsonToken;->NOT_AVAILABLE:Lcom/google/api/client/json/JsonToken;
+    sput-object v10, Lcom/google/api/client/json/JsonToken;->NOT_AVAILABLE:Lcom/google/api/client/json/JsonToken;
 
-    const/16 v1, 0xc
+    const/16 v8, 0xc
 
-    new-array v1, v1, [Lcom/google/api/client/json/JsonToken;
+    new-array v8, v8, [Lcom/google/api/client/json/JsonToken;
+
+    aput-object v0, v8, v2
+
+    aput-object v1, v8, v4
+
+    const/4 v0, 0x2
+
+    aput-object v3, v8, v0
+
+    const/4 v0, 0x3
+
+    aput-object v5, v8, v0
+
+    const/4 v0, 0x4
+
+    aput-object v7, v8, v0
+
+    const/4 v0, 0x5
+
+    aput-object v9, v8, v0
+
+    const/4 v0, 0x6
+
+    aput-object v11, v8, v0
+
+    const/4 v0, 0x7
+
+    aput-object v13, v8, v0
+
+    const/16 v0, 0x8
+
+    aput-object v15, v8, v0
+
+    const/16 v0, 0x9
+
+    aput-object v14, v8, v0
+
+    const/16 v0, 0xa
+
+    aput-object v12, v8, v0
+
+    aput-object v10, v8, v6
 
     .line 23
-    sget-object v14, Lcom/google/api/client/json/JsonToken;->START_ARRAY:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v14, v1, v2
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->END_ARRAY:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->START_OBJECT:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->END_OBJECT:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->FIELD_NAME:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->VALUE_STRING:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v7
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->VALUE_NUMBER_INT:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v8
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->VALUE_NUMBER_FLOAT:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v9
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->VALUE_TRUE:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v10
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->VALUE_FALSE:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v11
-
-    sget-object v2, Lcom/google/api/client/json/JsonToken;->VALUE_NULL:Lcom/google/api/client/json/JsonToken;
-
-    aput-object v2, v1, v12
-
-    aput-object v0, v1, v13
-
-    sput-object v1, Lcom/google/api/client/json/JsonToken;->$VALUES:[Lcom/google/api/client/json/JsonToken;
+    sput-object v8, Lcom/google/api/client/json/JsonToken;->$VALUES:[Lcom/google/api/client/json/JsonToken;
 
     return-void
 .end method

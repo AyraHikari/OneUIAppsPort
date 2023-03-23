@@ -259,16 +259,14 @@
     .line 139
     iget-object v2, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->buf:[B
 
-    aget-byte v2, v2, v1
+    aget-byte v4, v2, v1
 
-    if-ne v2, v3, :cond_2
+    if-ne v4, v3, :cond_2
 
     .line 140
-    iget v2, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
+    iget v3, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
 
-    if-eq v1, v2, :cond_1
-
-    iget-object v2, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->buf:[B
+    if-eq v1, v3, :cond_1
 
     add-int/lit8 v3, v1, -0x1
 
@@ -291,9 +289,7 @@
 
     iget v5, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
 
-    iget v6, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
-
-    sub-int/2addr v3, v6
+    sub-int/2addr v3, v5
 
     iget-object v6, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->charset:Ljava/nio/charset/Charset;
 
@@ -340,9 +336,7 @@
 
     iget v5, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->end:I
 
-    iget v6, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
-
-    sub-int/2addr v5, v6
+    sub-int/2addr v5, v4
 
     invoke-virtual {v1, v2, v4, v5}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
@@ -365,25 +359,19 @@
     .line 167
     iget-object v4, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->buf:[B
 
-    aget-byte v4, v4, v2
+    aget-byte v5, v4, v2
 
-    if-ne v4, v3, :cond_6
+    if-ne v5, v3, :cond_6
 
     .line 168
     iget v3, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
 
     if-eq v2, v3, :cond_5
 
+    sub-int v5, v2, v3
+
     .line 169
-    iget-object v3, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->buf:[B
-
-    iget v4, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
-
-    iget v5, p0, Lcom/bumptech/glide/disklrucache/StrictLineReader;->pos:I
-
-    sub-int v5, v2, v5
-
-    invoke-virtual {v1, v3, v4, v5}, Ljava/io/ByteArrayOutputStream;->write([BII)V
+    invoke-virtual {v1, v4, v3, v5}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
     :cond_5
     add-int/lit8 v2, v2, 0x1

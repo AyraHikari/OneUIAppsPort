@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/widget_main_layout" android:tag="layout/setting_forecast_preview_0" android:padding="@dimen/setting_preview_inner_padding" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx3_height"
+<FrameLayout android:id="@id/widget_main_layout" android:tag="layout/setting_forecast_preview_0" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx2_height"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/widget_preview_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
-            <ImageView android:layout_gravity="center_vertical" android:id="@id/preview_background" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="@dimen/setting_preview_xx3_bg_height" android:layout_weight="0.8" />
+    <FrameLayout android:id="@id/widget_preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/setting_preview_inner_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/preview_background" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="@dimen/setting_preview_xx2_bg_height" android:layout_weight="0.8" />
         </LinearLayout>
-        <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
-            <include android:layout_gravity="center_vertical" android:id="@id/widget_preview_area" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.8" layout="@layout/widget_main_forecast_3x3" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+            <include android:layout_gravity="center_vertical" android:id="@id/widget_preview_area" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.8" layout="@layout/widget_main_forecast_3x2" />
         </LinearLayout>
-        <include android:id="@id/empty_area" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/widget_main_empty" />
-        <include android:id="@id/restore_area" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/widget_main_restore" />
     </FrameLayout>
 </FrameLayout>

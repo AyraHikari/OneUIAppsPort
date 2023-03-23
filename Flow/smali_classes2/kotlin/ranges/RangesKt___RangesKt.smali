@@ -5,15 +5,10 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\n_Ranges.kt\nKotlin\n*S Kotlin\n*F\n+ 1 _Ranges.kt\nkotlin/ranges/RangesKt___RangesKt\n*L\n1#1,1211:1\n*E\n"
+    value = "SMAP\n_Ranges.kt\nKotlin\n*S Kotlin\n*F\n+ 1 _Ranges.kt\nkotlin/ranges/RangesKt___RangesKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1227:1\n1#2:1228\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000n\n\u0002\u0008\u0002\n\u0002\u0010\u000f\n\u0002\u0008\u0002\n\u0002\u0010\u0005\n\u0002\u0010\u0006\n\u0002\u0010\u0007\n\u0002\u0010\u0008\n\u0002\u0010\t\n\u0002\u0010\n\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000c\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u001d\u001a\'\u0010\u0000\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u0002*\u0002H\u00012\u0006\u0010\u0003\u001a\u0002H\u0001\u00a2\u0006\u0002\u0010\u0004\u001a\u0012\u0010\u0000\u001a\u00020\u0005*\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u0005\u001a\u0012\u0010\u0000\u001a\u00020\u0006*\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0006\u001a\u0012\u0010\u0000\u001a\u00020\u0007*\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u0007\u001a\u0012\u0010\u0000\u001a\u00020\u0008*\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u0008\u001a\u0012\u0010\u0000\u001a\u00020\t*\u00020\t2\u0006\u0010\u0003\u001a\u00020\t\u001a\u0012\u0010\u0000\u001a\u00020\n*\u00020\n2\u0006\u0010\u0003\u001a\u00020\n\u001a\'\u0010\u000b\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u0002*\u0002H\u00012\u0006\u0010\u000c\u001a\u0002H\u0001\u00a2\u0006\u0002\u0010\u0004\u001a\u0012\u0010\u000b\u001a\u00020\u0005*\u00020\u00052\u0006\u0010\u000c\u001a\u00020\u0005\u001a\u0012\u0010\u000b\u001a\u00020\u0006*\u00020\u00062\u0006\u0010\u000c\u001a\u00020\u0006\u001a\u0012\u0010\u000b\u001a\u00020\u0007*\u00020\u00072\u0006\u0010\u000c\u001a\u00020\u0007\u001a\u0012\u0010\u000b\u001a\u00020\u0008*\u00020\u00082\u0006\u0010\u000c\u001a\u00020\u0008\u001a\u0012\u0010\u000b\u001a\u00020\t*\u00020\t2\u0006\u0010\u000c\u001a\u00020\t\u001a\u0012\u0010\u000b\u001a\u00020\n*\u00020\n2\u0006\u0010\u000c\u001a\u00020\n\u001a3\u0010\r\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u0002*\u0002H\u00012\u0008\u0010\u0003\u001a\u0004\u0018\u0001H\u00012\u0008\u0010\u000c\u001a\u0004\u0018\u0001H\u0001\u00a2\u0006\u0002\u0010\u000e\u001a/\u0010\r\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u0002*\u0002H\u00012\u000c\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u0002H\u00010\u0010H\u0007\u00a2\u0006\u0002\u0010\u0011\u001a-\u0010\r\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u0002*\u0002H\u00012\u000c\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u0002H\u00010\u0012\u00a2\u0006\u0002\u0010\u0013\u001a\u001a\u0010\r\u001a\u00020\u0005*\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00052\u0006\u0010\u000c\u001a\u00020\u0005\u001a\u001a\u0010\r\u001a\u00020\u0006*\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00062\u0006\u0010\u000c\u001a\u00020\u0006\u001a\u001a\u0010\r\u001a\u00020\u0007*\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\u0007\u001a\u001a\u0010\r\u001a\u00020\u0008*\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u00082\u0006\u0010\u000c\u001a\u00020\u0008\u001a\u0018\u0010\r\u001a\u00020\u0008*\u00020\u00082\u000c\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0012\u001a\u001a\u0010\r\u001a\u00020\t*\u00020\t2\u0006\u0010\u0003\u001a\u00020\t2\u0006\u0010\u000c\u001a\u00020\t\u001a\u0018\u0010\r\u001a\u00020\t*\u00020\t2\u000c\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0012\u001a\u001a\u0010\r\u001a\u00020\n*\u00020\n2\u0006\u0010\u0003\u001a\u00020\n2\u0006\u0010\u000c\u001a\u00020\n\u001a\u001c\u0010\u0014\u001a\u00020\u0015*\u00020\u00162\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0087\n\u00a2\u0006\u0002\u0010\u0019\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00050\u00122\u0006\u0010\u001a\u001a\u00020\u0006H\u0087\u0002\u00a2\u0006\u0002\u0008\u001b\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00050\u00122\u0006\u0010\u001a\u001a\u00020\u0007H\u0087\u0002\u00a2\u0006\u0002\u0008\u001b\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00050\u00122\u0006\u0010\u001a\u001a\u00020\u0008H\u0087\u0002\u00a2\u0006\u0002\u0008\u001b\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00050\u00122\u0006\u0010\u001a\u001a\u00020\tH\u0087\u0002\u00a2\u0006\u0002\u0008\u001b\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00050\u00122\u0006\u0010\u001a\u001a\u00020\nH\u0087\u0002\u00a2\u0006\u0002\u0008\u001b\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00060\u00122\u0006\u0010\u001a\u001a\u00020\u0005H\u0087\u0002\u00a2\u0006\u0002\u0008\u001c\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00060\u00122\u0006\u0010\u001a\u001a\u00020\u0007H\u0087\u0002\u00a2\u0006\u0002\u0008\u001c\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00060\u00122\u0006\u0010\u001a\u001a\u00020\u0008H\u0087\u0002\u00a2\u0006\u0002\u0008\u001c\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00060\u00122\u0006\u0010\u001a\u001a\u00020\tH\u0087\u0002\u00a2\u0006\u0002\u0008\u001c\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00060\u00122\u0006\u0010\u001a\u001a\u00020\nH\u0087\u0002\u00a2\u0006\u0002\u0008\u001c\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00070\u00122\u0006\u0010\u001a\u001a\u00020\u0005H\u0087\u0002\u00a2\u0006\u0002\u0008\u001d\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00070\u00122\u0006\u0010\u001a\u001a\u00020\u0006H\u0087\u0002\u00a2\u0006\u0002\u0008\u001d\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00070\u00122\u0006\u0010\u001a\u001a\u00020\u0008H\u0087\u0002\u00a2\u0006\u0002\u0008\u001d\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00070\u00122\u0006\u0010\u001a\u001a\u00020\tH\u0087\u0002\u00a2\u0006\u0002\u0008\u001d\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00070\u00122\u0006\u0010\u001a\u001a\u00020\nH\u0087\u0002\u00a2\u0006\u0002\u0008\u001d\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00080\u00122\u0006\u0010\u001a\u001a\u00020\u0005H\u0087\u0002\u00a2\u0006\u0002\u0008\u001e\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00080\u00122\u0006\u0010\u001a\u001a\u00020\u0006H\u0087\u0002\u00a2\u0006\u0002\u0008\u001e\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00080\u00122\u0006\u0010\u001a\u001a\u00020\u0007H\u0087\u0002\u00a2\u0006\u0002\u0008\u001e\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00080\u00122\u0006\u0010\u001a\u001a\u00020\tH\u0087\u0002\u00a2\u0006\u0002\u0008\u001e\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\u00080\u00122\u0006\u0010\u001a\u001a\u00020\nH\u0087\u0002\u00a2\u0006\u0002\u0008\u001e\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\t0\u00122\u0006\u0010\u001a\u001a\u00020\u0005H\u0087\u0002\u00a2\u0006\u0002\u0008\u001f\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\t0\u00122\u0006\u0010\u001a\u001a\u00020\u0006H\u0087\u0002\u00a2\u0006\u0002\u0008\u001f\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\t0\u00122\u0006\u0010\u001a\u001a\u00020\u0007H\u0087\u0002\u00a2\u0006\u0002\u0008\u001f\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\t0\u00122\u0006\u0010\u001a\u001a\u00020\u0008H\u0087\u0002\u00a2\u0006\u0002\u0008\u001f\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\t0\u00122\u0006\u0010\u001a\u001a\u00020\nH\u0087\u0002\u00a2\u0006\u0002\u0008\u001f\u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\n0\u00122\u0006\u0010\u001a\u001a\u00020\u0005H\u0087\u0002\u00a2\u0006\u0002\u0008 \u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\n0\u00122\u0006\u0010\u001a\u001a\u00020\u0006H\u0087\u0002\u00a2\u0006\u0002\u0008 \u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\n0\u00122\u0006\u0010\u001a\u001a\u00020\u0007H\u0087\u0002\u00a2\u0006\u0002\u0008 \u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\n0\u00122\u0006\u0010\u001a\u001a\u00020\u0008H\u0087\u0002\u00a2\u0006\u0002\u0008 \u001a \u0010\u0014\u001a\u00020\u0015*\u0008\u0012\u0004\u0012\u00020\n0\u00122\u0006\u0010\u001a\u001a\u00020\tH\u0087\u0002\u00a2\u0006\u0002\u0008 \u001a\u001c\u0010\u0014\u001a\u00020\u0015*\u00020!2\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0008H\u0087\n\u00a2\u0006\u0002\u0010\"\u001a\u001c\u0010\u0014\u001a\u00020\u0015*\u00020#2\u0008\u0010\u0017\u001a\u0004\u0018\u00010\tH\u0087\n\u00a2\u0006\u0002\u0010$\u001a\u0015\u0010%\u001a\u00020&*\u00020\u00052\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\u00052\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020(*\u00020\u00052\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\u00052\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u001a\u0015\u0010%\u001a\u00020)*\u00020\u00182\u0006\u0010\'\u001a\u00020\u0018H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\u00082\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\u00082\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020(*\u00020\u00082\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\u00082\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u001a\u0015\u0010%\u001a\u00020(*\u00020\t2\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020(*\u00020\t2\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020(*\u00020\t2\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010%\u001a\u00020(*\u00020\t2\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\n2\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\n2\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010%\u001a\u00020(*\u00020\n2\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010%\u001a\u00020&*\u00020\n2\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u001a\r\u0010*\u001a\u00020\u0018*\u00020\u0016H\u0087\u0008\u001a\u0014\u0010*\u001a\u00020\u0018*\u00020\u00162\u0006\u0010*\u001a\u00020+H\u0007\u001a\r\u0010*\u001a\u00020\u0008*\u00020!H\u0087\u0008\u001a\u0014\u0010*\u001a\u00020\u0008*\u00020!2\u0006\u0010*\u001a\u00020+H\u0007\u001a\r\u0010*\u001a\u00020\t*\u00020#H\u0087\u0008\u001a\u0014\u0010*\u001a\u00020\t*\u00020#2\u0006\u0010*\u001a\u00020+H\u0007\u001a\u0014\u0010,\u001a\u0004\u0018\u00010\u0018*\u00020\u0016H\u0087\u0008\u00a2\u0006\u0002\u0010-\u001a\u001b\u0010,\u001a\u0004\u0018\u00010\u0018*\u00020\u00162\u0006\u0010*\u001a\u00020+H\u0007\u00a2\u0006\u0002\u0010.\u001a\u0014\u0010,\u001a\u0004\u0018\u00010\u0008*\u00020!H\u0087\u0008\u00a2\u0006\u0002\u0010/\u001a\u001b\u0010,\u001a\u0004\u0018\u00010\u0008*\u00020!2\u0006\u0010*\u001a\u00020+H\u0007\u00a2\u0006\u0002\u00100\u001a\u0014\u0010,\u001a\u0004\u0018\u00010\t*\u00020#H\u0087\u0008\u00a2\u0006\u0002\u00101\u001a\u001b\u0010,\u001a\u0004\u0018\u00010\t*\u00020#2\u0006\u0010*\u001a\u00020+H\u0007\u00a2\u0006\u0002\u00102\u001a\n\u00103\u001a\u00020)*\u00020)\u001a\n\u00103\u001a\u00020&*\u00020&\u001a\n\u00103\u001a\u00020(*\u00020(\u001a\u0015\u00104\u001a\u00020)*\u00020)2\u0006\u00104\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u00104\u001a\u00020&*\u00020&2\u0006\u00104\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u00104\u001a\u00020(*\u00020(2\u0006\u00104\u001a\u00020\tH\u0086\u0004\u001a\u0013\u00105\u001a\u0004\u0018\u00010\u0005*\u00020\u0006H\u0000\u00a2\u0006\u0002\u00106\u001a\u0013\u00105\u001a\u0004\u0018\u00010\u0005*\u00020\u0007H\u0000\u00a2\u0006\u0002\u00107\u001a\u0013\u00105\u001a\u0004\u0018\u00010\u0005*\u00020\u0008H\u0000\u00a2\u0006\u0002\u00108\u001a\u0013\u00105\u001a\u0004\u0018\u00010\u0005*\u00020\tH\u0000\u00a2\u0006\u0002\u00109\u001a\u0013\u00105\u001a\u0004\u0018\u00010\u0005*\u00020\nH\u0000\u00a2\u0006\u0002\u0010:\u001a\u0013\u0010;\u001a\u0004\u0018\u00010\u0008*\u00020\u0006H\u0000\u00a2\u0006\u0002\u0010<\u001a\u0013\u0010;\u001a\u0004\u0018\u00010\u0008*\u00020\u0007H\u0000\u00a2\u0006\u0002\u0010=\u001a\u0013\u0010;\u001a\u0004\u0018\u00010\u0008*\u00020\tH\u0000\u00a2\u0006\u0002\u0010>\u001a\u0013\u0010?\u001a\u0004\u0018\u00010\t*\u00020\u0006H\u0000\u00a2\u0006\u0002\u0010@\u001a\u0013\u0010?\u001a\u0004\u0018\u00010\t*\u00020\u0007H\u0000\u00a2\u0006\u0002\u0010A\u001a\u0013\u0010B\u001a\u0004\u0018\u00010\n*\u00020\u0006H\u0000\u00a2\u0006\u0002\u0010C\u001a\u0013\u0010B\u001a\u0004\u0018\u00010\n*\u00020\u0007H\u0000\u00a2\u0006\u0002\u0010D\u001a\u0013\u0010B\u001a\u0004\u0018\u00010\n*\u00020\u0008H\u0000\u00a2\u0006\u0002\u0010E\u001a\u0013\u0010B\u001a\u0004\u0018\u00010\n*\u00020\tH\u0000\u00a2\u0006\u0002\u0010F\u001a\u0015\u0010G\u001a\u00020!*\u00020\u00052\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\u00052\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020#*\u00020\u00052\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\u00052\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u001a\u0015\u0010G\u001a\u00020\u0016*\u00020\u00182\u0006\u0010\'\u001a\u00020\u0018H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\u00082\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\u00082\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020#*\u00020\u00082\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\u00082\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u001a\u0015\u0010G\u001a\u00020#*\u00020\t2\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020#*\u00020\t2\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020#*\u00020\t2\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010G\u001a\u00020#*\u00020\t2\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\n2\u0006\u0010\'\u001a\u00020\u0005H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\n2\u0006\u0010\'\u001a\u00020\u0008H\u0086\u0004\u001a\u0015\u0010G\u001a\u00020#*\u00020\n2\u0006\u0010\'\u001a\u00020\tH\u0086\u0004\u001a\u0015\u0010G\u001a\u00020!*\u00020\n2\u0006\u0010\'\u001a\u00020\nH\u0086\u0004\u00a8\u0006H"
     }
@@ -95,10 +90,10 @@
     k = 0x5
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
-    xi = 0x1
+    xi = 0x31
     xs = "kotlin/ranges/RangesKt"
 .end annotation
 
@@ -112,26 +107,23 @@
     return-void
 .end method
 
-.method public static final byteRangeContains(Lkotlin/ranges/ClosedRange;D)Z
+.method public static final synthetic byteRangeContains(Lkotlin/ranges/ClosedRange;D)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Byte;",
-            ">;D)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 255
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 260
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(D)Ljava/lang/Byte;
 
     move-result-object p1
@@ -153,26 +145,23 @@
     return p0
 .end method
 
-.method public static final byteRangeContains(Lkotlin/ranges/ClosedRange;F)Z
+.method public static final synthetic byteRangeContains(Lkotlin/ranges/ClosedRange;F)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Byte;",
-            ">;F)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 299
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 308
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(F)Ljava/lang/Byte;
 
     move-result-object p1
@@ -205,11 +194,11 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 332
+    .line 342
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(I)Ljava/lang/Byte;
 
     move-result-object p1
@@ -242,11 +231,11 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 374
+    .line 386
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(J)Ljava/lang/Byte;
 
     move-result-object p1
@@ -279,11 +268,11 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 424
+    .line 438
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(S)Ljava/lang/Byte;
 
     move-result-object p1
@@ -376,15 +365,15 @@
         }
     .end annotation
 
-    const-string v0, "$this$coerceAtLeast"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "minimumValue"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 885
+    .line 901
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -479,15 +468,15 @@
         }
     .end annotation
 
-    const-string v0, "$this$coerceAtMost"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "maximumValue"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 962
+    .line 978
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -528,7 +517,7 @@
     :cond_1
     return p0
 
-    .line 1059
+    .line 1075
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -540,25 +529,33 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p2, " is less than minimum "
+    move-result-object p2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " is less than minimum "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p2
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const/16 p2, 0x2e
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -586,7 +583,7 @@
     :cond_1
     return-wide p0
 
-    .line 1129
+    .line 1145
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -598,25 +595,33 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p4, p5}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string p4, " is less than minimum "
 
     invoke-virtual {p1, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p2, p3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const/16 p2, 0x2e
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -644,7 +649,7 @@
     :cond_1
     return p0
 
-    .line 1115
+    .line 1131
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -656,25 +661,33 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    const-string p2, " is less than minimum "
+    move-result-object p2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " is less than minimum "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p2
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const/16 p2, 0x2e
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -696,7 +709,7 @@
     :cond_1
     return p0
 
-    .line 1087
+    .line 1103
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -708,25 +721,33 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p2, " is less than minimum "
+    move-result-object p2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " is less than minimum "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p2
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const/16 p2, 0x2e
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -744,14 +765,14 @@
 
     const-string v0, "range"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1181
+    .line 1197
     instance-of v0, p1, Lkotlin/ranges/ClosedFloatingPointRange;
 
     if-eqz v0, :cond_0
 
-    .line 1182
+    .line 1198
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -772,7 +793,7 @@
 
     return p0
 
-    .line 1184
+    .line 1200
     :cond_0
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->isEmpty()Z
 
@@ -780,7 +801,7 @@
 
     if-nez v0, :cond_3
 
-    .line 1186
+    .line 1202
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -805,7 +826,7 @@
 
     goto :goto_0
 
-    .line 1187
+    .line 1203
     :cond_1
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -833,7 +854,7 @@
     :goto_0
     return p0
 
-    .line 1184
+    .line 1200
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -845,19 +866,23 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 v0, 0x2e
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -885,7 +910,7 @@
     :cond_1
     return-wide p0
 
-    .line 1101
+    .line 1117
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -897,25 +922,33 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string p4, " is less than minimum "
 
     invoke-virtual {p1, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const/16 p2, 0x2e
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -933,14 +966,14 @@
 
     const-string v0, "range"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1200
+    .line 1216
     instance-of v0, p2, Lkotlin/ranges/ClosedFloatingPointRange;
 
     if-eqz v0, :cond_0
 
-    .line 1201
+    .line 1217
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -961,7 +994,7 @@
 
     return-wide p0
 
-    .line 1203
+    .line 1219
     :cond_0
     invoke-interface {p2}, Lkotlin/ranges/ClosedRange;->isEmpty()Z
 
@@ -969,7 +1002,7 @@
 
     if-nez v0, :cond_3
 
-    .line 1205
+    .line 1221
     invoke-interface {p2}, Lkotlin/ranges/ClosedRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -996,7 +1029,7 @@
 
     goto :goto_0
 
-    .line 1206
+    .line 1222
     :cond_1
     invoke-interface {p2}, Lkotlin/ranges/ClosedRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -1026,7 +1059,7 @@
     :goto_0
     return-wide p0
 
-    .line 1203
+    .line 1219
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1038,19 +1071,23 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const/16 p2, 0x2e
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -1065,22 +1102,22 @@
         }
     .end annotation
 
-    const-string v0, "$this$coerceIn"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_2
 
     if-eqz p2, :cond_2
 
-    .line 1040
+    .line 1056
     invoke-interface {p1, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
 
     if-gtz v0, :cond_1
 
-    .line 1041
+    .line 1057
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -1089,7 +1126,7 @@
 
     return-object p1
 
-    .line 1042
+    .line 1058
     :cond_0
     invoke-interface {p0, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
@@ -1099,7 +1136,7 @@
 
     return-object p2
 
-    .line 1040
+    .line 1056
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1111,32 +1148,40 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string p2, " is less than minimum "
+    move-result-object p2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " is less than minimum "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p2
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const/16 p2, 0x2e
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 
     :cond_2
     if-eqz p1, :cond_3
 
-    .line 1045
+    .line 1061
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -1148,7 +1193,7 @@
     :cond_3
     if-eqz p2, :cond_4
 
-    .line 1046
+    .line 1062
     invoke-interface {p0, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result p1
@@ -1173,22 +1218,22 @@
         }
     .end annotation
 
-    const-string v0, "$this$coerceIn"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "range"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1144
+    .line 1160
     invoke-interface {p1}, Lkotlin/ranges/ClosedFloatingPointRange;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 1147
+    .line 1163
     invoke-interface {p1}, Lkotlin/ranges/ClosedFloatingPointRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -1215,7 +1260,7 @@
 
     goto :goto_0
 
-    .line 1149
+    .line 1165
     :cond_0
     invoke-interface {p1}, Lkotlin/ranges/ClosedFloatingPointRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -1245,7 +1290,7 @@
     :goto_0
     return-object p0
 
-    .line 1144
+    .line 1160
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1257,19 +1302,23 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 v0, 0x2e
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -1286,20 +1335,20 @@
         }
     .end annotation
 
-    const-string v0, "$this$coerceIn"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "range"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1162
+    .line 1178
     instance-of v0, p1, Lkotlin/ranges/ClosedFloatingPointRange;
 
     if-eqz v0, :cond_0
 
-    .line 1163
+    .line 1179
     check-cast p1, Lkotlin/ranges/ClosedFloatingPointRange;
 
     invoke-static {p0, p1}, Lkotlin/ranges/RangesKt;->coerceIn(Ljava/lang/Comparable;Lkotlin/ranges/ClosedFloatingPointRange;)Ljava/lang/Comparable;
@@ -1308,7 +1357,7 @@
 
     return-object p0
 
-    .line 1165
+    .line 1181
     :cond_0
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->isEmpty()Z
 
@@ -1316,7 +1365,7 @@
 
     if-nez v0, :cond_3
 
-    .line 1167
+    .line 1183
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -1333,7 +1382,7 @@
 
     goto :goto_0
 
-    .line 1168
+    .line 1184
     :cond_1
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -1353,7 +1402,7 @@
     :goto_0
     return-object p0
 
-    .line 1165
+    .line 1181
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1365,19 +1414,23 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 v0, 0x2e
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -1399,7 +1452,7 @@
     :cond_1
     return p0
 
-    .line 1073
+    .line 1089
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1411,25 +1464,33 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p2, " is less than minimum "
+    move-result-object p2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " is less than minimum "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p2
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const/16 p2, 0x2e
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -1437,9 +1498,9 @@
 .method private static final contains(Lkotlin/ranges/CharRange;Ljava/lang/Character;)Z
     .locals 1
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
@@ -1468,9 +1529,9 @@
 .method private static final contains(Lkotlin/ranges/IntRange;Ljava/lang/Integer;)Z
     .locals 1
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
@@ -1499,9 +1560,9 @@
 .method private static final contains(Lkotlin/ranges/LongRange;Ljava/lang/Long;)Z
     .locals 2
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
@@ -1527,28 +1588,25 @@
     return p0
 .end method
 
-.method public static final doubleRangeContains(Lkotlin/ranges/ClosedRange;B)Z
+.method public static final synthetic doubleRangeContains(Lkotlin/ranges/ClosedRange;B)Z
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Double;",
-            ">;B)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-double v0, p1
 
-    .line 219
+    .line 220
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1573,13 +1631,13 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     float-to-double v0, p1
 
-    .line 316
+    .line 326
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1593,28 +1651,25 @@
     return p0
 .end method
 
-.method public static final doubleRangeContains(Lkotlin/ranges/ClosedRange;I)Z
+.method public static final synthetic doubleRangeContains(Lkotlin/ranges/ClosedRange;I)Z
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Double;",
-            ">;I)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-double v0, p1
 
-    .line 349
+    .line 360
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1628,28 +1683,25 @@
     return p0
 .end method
 
-.method public static final doubleRangeContains(Lkotlin/ranges/ClosedRange;J)Z
+.method public static final synthetic doubleRangeContains(Lkotlin/ranges/ClosedRange;J)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Double;",
-            ">;J)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     long-to-double p1, p1
 
-    .line 391
+    .line 404
     invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1663,28 +1715,25 @@
     return p0
 .end method
 
-.method public static final doubleRangeContains(Lkotlin/ranges/ClosedRange;S)Z
+.method public static final synthetic doubleRangeContains(Lkotlin/ranges/ClosedRange;S)Z
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Double;",
-            ">;S)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-double v0, p1
 
-    .line 433
+    .line 448
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1701,7 +1750,7 @@
 .method public static final downTo(CC)Lkotlin/ranges/CharProgression;
     .locals 2
 
-    .line 492
+    .line 508
     sget-object v0, Lkotlin/ranges/CharProgression;->Companion:Lkotlin/ranges/CharProgression$Companion;
 
     const/4 v1, -0x1
@@ -1716,7 +1765,7 @@
 .method public static final downTo(BB)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 472
+    .line 488
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1731,7 +1780,7 @@
 .method public static final downTo(BI)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 522
+    .line 538
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1746,7 +1795,7 @@
 .method public static final downTo(BS)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 602
+    .line 618
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1761,7 +1810,7 @@
 .method public static final downTo(IB)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 452
+    .line 468
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1776,7 +1825,7 @@
 .method public static final downTo(II)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 502
+    .line 518
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1791,7 +1840,7 @@
 .method public static final downTo(IS)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 582
+    .line 598
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1806,7 +1855,7 @@
 .method public static final downTo(SB)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 482
+    .line 498
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1821,7 +1870,7 @@
 .method public static final downTo(SI)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 532
+    .line 548
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1836,7 +1885,7 @@
 .method public static final downTo(SS)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 612
+    .line 628
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1851,7 +1900,7 @@
 .method public static final downTo(BJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 562
+    .line 578
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v1, p0
@@ -1870,7 +1919,7 @@
 .method public static final downTo(IJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 542
+    .line 558
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v1, p0
@@ -1889,7 +1938,7 @@
 .method public static final downTo(JB)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 462
+    .line 478
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v3, p2
@@ -1908,7 +1957,7 @@
 .method public static final downTo(JI)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 512
+    .line 528
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v3, p2
@@ -1927,7 +1976,7 @@
 .method public static final downTo(JJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 552
+    .line 568
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     const-wide/16 v5, -0x1
@@ -1946,7 +1995,7 @@
 .method public static final downTo(JS)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 592
+    .line 608
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v3, p2
@@ -1965,7 +2014,7 @@
 .method public static final downTo(SJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 572
+    .line 588
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v1, p0
@@ -1981,28 +2030,25 @@
     return-object p0
 .end method
 
-.method public static final floatRangeContains(Lkotlin/ranges/ClosedRange;B)Z
+.method public static final synthetic floatRangeContains(Lkotlin/ranges/ClosedRange;B)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Float;",
-            ">;B)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-float p1, p1
 
-    .line 228
+    .line 230
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2027,13 +2073,13 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     double-to-float p1, p1
 
-    .line 272
+    .line 278
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2047,28 +2093,25 @@
     return p0
 .end method
 
-.method public static final floatRangeContains(Lkotlin/ranges/ClosedRange;I)Z
+.method public static final synthetic floatRangeContains(Lkotlin/ranges/ClosedRange;I)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Float;",
-            ">;I)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-float p1, p1
 
-    .line 358
+    .line 370
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2082,28 +2125,25 @@
     return p0
 .end method
 
-.method public static final floatRangeContains(Lkotlin/ranges/ClosedRange;J)Z
+.method public static final synthetic floatRangeContains(Lkotlin/ranges/ClosedRange;J)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Float;",
-            ">;J)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     long-to-float p1, p1
 
-    .line 400
+    .line 414
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2117,28 +2157,25 @@
     return p0
 .end method
 
-.method public static final floatRangeContains(Lkotlin/ranges/ClosedRange;S)Z
+.method public static final synthetic floatRangeContains(Lkotlin/ranges/ClosedRange;S)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Float;",
-            ">;S)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-float p1, p1
 
-    .line 442
+    .line 458
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2163,9 +2200,9 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 194
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2181,26 +2218,23 @@
     return p0
 .end method
 
-.method public static final intRangeContains(Lkotlin/ranges/ClosedRange;D)Z
+.method public static final synthetic intRangeContains(Lkotlin/ranges/ClosedRange;D)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Integer;",
-            ">;D)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 237
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 240
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toIntExactOrNull(D)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2222,26 +2256,23 @@
     return p0
 .end method
 
-.method public static final intRangeContains(Lkotlin/ranges/ClosedRange;F)Z
+.method public static final synthetic intRangeContains(Lkotlin/ranges/ClosedRange;F)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Integer;",
-            ">;F)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 281
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 288
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toIntExactOrNull(F)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2274,11 +2305,11 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 366
+    .line 378
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toIntExactOrNull(J)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2311,11 +2342,11 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 408
+    .line 422
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2340,9 +2371,9 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-long v0, p1
 
@@ -2360,26 +2391,23 @@
     return p0
 .end method
 
-.method public static final longRangeContains(Lkotlin/ranges/ClosedRange;D)Z
+.method public static final synthetic longRangeContains(Lkotlin/ranges/ClosedRange;D)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Long;",
-            ">;D)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 246
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 250
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toLongExactOrNull(D)Ljava/lang/Long;
 
     move-result-object p1
@@ -2401,26 +2429,23 @@
     return p0
 .end method
 
-.method public static final longRangeContains(Lkotlin/ranges/ClosedRange;F)Z
+.method public static final synthetic longRangeContains(Lkotlin/ranges/ClosedRange;F)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Long;",
-            ">;F)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 290
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 298
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toLongExactOrNull(F)Ljava/lang/Long;
 
     move-result-object p1
@@ -2453,13 +2478,13 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-long v0, p1
 
-    .line 324
+    .line 334
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -2484,13 +2509,13 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-long v0, p1
 
-    .line 416
+    .line 430
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -2507,6 +2532,10 @@
 .method private static final random(Lkotlin/ranges/CharRange;)C
     .locals 1
 
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 48
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
@@ -2522,13 +2551,13 @@
 .method public static final random(Lkotlin/ranges/CharRange;Lkotlin/random/Random;)C
     .locals 1
 
-    const-string v0, "$this$random"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "random"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 87
     :try_start_0
@@ -2564,13 +2593,15 @@
 
     invoke-direct {p1, p0}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method private static final random(Lkotlin/ranges/IntRange;)I
     .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 26
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
@@ -2587,13 +2618,13 @@
 .method public static final random(Lkotlin/ranges/IntRange;Lkotlin/random/Random;)I
     .locals 1
 
-    const-string v0, "$this$random"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "random"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 59
     :try_start_0
@@ -2617,13 +2648,15 @@
 
     invoke-direct {p1, p0}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method private static final random(Lkotlin/ranges/LongRange;)J
     .locals 2
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 37
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
@@ -2640,13 +2673,13 @@
 .method public static final random(Lkotlin/ranges/LongRange;Lkotlin/random/Random;)J
     .locals 1
 
-    const-string v0, "$this$random"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "random"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 73
     :try_start_0
@@ -2670,13 +2703,15 @@
 
     invoke-direct {p1, p0}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method private static final randomOrNull(Lkotlin/ranges/CharRange;)Ljava/lang/Character;
     .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 120
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
@@ -2693,13 +2728,13 @@
 .method public static final randomOrNull(Lkotlin/ranges/CharRange;Lkotlin/random/Random;)Ljava/lang/Character;
     .locals 1
 
-    const-string v0, "$this$randomOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "random"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 151
     invoke-virtual {p0}, Lkotlin/ranges/CharRange;->isEmpty()Z
@@ -2740,6 +2775,10 @@
 .method private static final randomOrNull(Lkotlin/ranges/IntRange;)Ljava/lang/Integer;
     .locals 1
 
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 100
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
@@ -2755,13 +2794,13 @@
 .method public static final randomOrNull(Lkotlin/ranges/IntRange;Lkotlin/random/Random;)Ljava/lang/Integer;
     .locals 1
 
-    const-string v0, "$this$randomOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "random"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 129
     invoke-virtual {p0}, Lkotlin/ranges/IntRange;->isEmpty()Z
@@ -2790,6 +2829,10 @@
 .method private static final randomOrNull(Lkotlin/ranges/LongRange;)Ljava/lang/Long;
     .locals 1
 
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 110
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
@@ -2805,13 +2848,13 @@
 .method public static final randomOrNull(Lkotlin/ranges/LongRange;Lkotlin/random/Random;)Ljava/lang/Long;
     .locals 1
 
-    const-string v0, "$this$randomOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "random"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 140
     invoke-virtual {p0}, Lkotlin/ranges/LongRange;->isEmpty()Z
@@ -2840,11 +2883,11 @@
 .method public static final reversed(Lkotlin/ranges/CharProgression;)Lkotlin/ranges/CharProgression;
     .locals 3
 
-    const-string v0, "$this$reversed"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 633
+    .line 649
     sget-object v0, Lkotlin/ranges/CharProgression;->Companion:Lkotlin/ranges/CharProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->getLast()C
@@ -2871,11 +2914,11 @@
 .method public static final reversed(Lkotlin/ranges/IntProgression;)Lkotlin/ranges/IntProgression;
     .locals 3
 
-    const-string v0, "$this$reversed"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 619
+    .line 635
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->getLast()I
@@ -2902,11 +2945,11 @@
 .method public static final reversed(Lkotlin/ranges/LongProgression;)Lkotlin/ranges/LongProgression;
     .locals 8
 
-    const-string v0, "$this$reversed"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 626
+    .line 642
     sget-object v1, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->getLast()J
@@ -2941,9 +2984,9 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-short p1, p1
 
@@ -2961,26 +3004,23 @@
     return p0
 .end method
 
-.method public static final shortRangeContains(Lkotlin/ranges/ClosedRange;D)Z
+.method public static final synthetic shortRangeContains(Lkotlin/ranges/ClosedRange;D)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Short;",
-            ">;D)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 264
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 270
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(D)Ljava/lang/Short;
 
     move-result-object p1
@@ -3002,26 +3042,23 @@
     return p0
 .end method
 
-.method public static final shortRangeContains(Lkotlin/ranges/ClosedRange;F)Z
+.method public static final synthetic shortRangeContains(Lkotlin/ranges/ClosedRange;F)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/ranges/ClosedRange<",
-            "Ljava/lang/Short;",
-            ">;F)Z"
-        }
-    .end annotation
-
     .annotation runtime Lkotlin/Deprecated;
         message = "This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed."
     .end annotation
 
-    const-string v0, "$this$contains"
+    .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "1.4"
+        hiddenSince = "1.5"
+        warningSince = "1.3"
+    .end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "<this>"
 
-    .line 308
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 318
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(F)Ljava/lang/Short;
 
     move-result-object p1
@@ -3054,11 +3091,11 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 340
+    .line 350
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(I)Ljava/lang/Short;
 
     move-result-object p1
@@ -3091,11 +3128,11 @@
         }
     .end annotation
 
-    const-string v0, "$this$contains"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 382
+    .line 394
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(J)Ljava/lang/Short;
 
     move-result-object p1
@@ -3120,9 +3157,9 @@
 .method public static final step(Lkotlin/ranges/CharProgression;I)Lkotlin/ranges/CharProgression;
     .locals 3
 
-    const-string v0, "$this$step"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-lez p1, :cond_0
 
@@ -3133,7 +3170,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 656
+    .line 672
     :goto_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3143,7 +3180,7 @@
 
     invoke-static {v0, v1}, Lkotlin/ranges/RangesKt;->checkStepIsPositive(ZLjava/lang/Number;)V
 
-    .line 657
+    .line 673
     sget-object v0, Lkotlin/ranges/CharProgression;->Companion:Lkotlin/ranges/CharProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->getFirst()C
@@ -3176,9 +3213,9 @@
 .method public static final step(Lkotlin/ranges/IntProgression;I)Lkotlin/ranges/IntProgression;
     .locals 3
 
-    const-string v0, "$this$step"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-lez p1, :cond_0
 
@@ -3189,7 +3226,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 640
+    .line 656
     :goto_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3199,7 +3236,7 @@
 
     invoke-static {v0, v1}, Lkotlin/ranges/RangesKt;->checkStepIsPositive(ZLjava/lang/Number;)V
 
-    .line 641
+    .line 657
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->getFirst()I
@@ -3232,9 +3269,9 @@
 .method public static final step(Lkotlin/ranges/LongProgression;J)Lkotlin/ranges/LongProgression;
     .locals 11
 
-    const-string v0, "$this$step"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-wide/16 v0, 0x0
 
@@ -3249,7 +3286,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 648
+    .line 664
     :goto_0
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -3259,7 +3296,7 @@
 
     invoke-static {v2, v3}, Lkotlin/ranges/RangesKt;->checkStepIsPositive(ZLjava/lang/Number;)V
 
-    .line 649
+    .line 665
     sget-object v4, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->getFirst()J
@@ -3296,34 +3333,37 @@
 .method public static final toByteExactOrNull(D)Ljava/lang/Byte;
     .locals 4
 
-    const/16 v0, -0x80
+    const-wide v0, 0x405fc00000000000L    # 127.0
 
-    int-to-double v0, v0
+    cmpg-double v0, p0, v0
 
-    const/16 v2, 0x7f
-
-    int-to-double v2, v2
-
-    cmpl-double v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-double v0, p0, v2
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
+
+    const-wide/high16 v2, -0x3fa0000000000000L    # -128.0
+
+    cmpg-double v0, v2, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
 
     double-to-int p0, p0
 
     int-to-byte p0, p0
 
-    .line 673
+    .line 689
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 p0, 0x0
 
     :goto_0
@@ -3333,23 +3373,60 @@
 .method public static final toByteExactOrNull(F)Ljava/lang/Byte;
     .locals 2
 
-    const/16 v0, -0x80
+    const/high16 v0, 0x42fe0000    # 127.0f
 
-    int-to-float v0, v0
+    cmpg-float v0, p0, v0
 
-    const/16 v1, 0x7f
-
-    int-to-float v1, v1
-
-    cmpl-float v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-float v0, p0, v1
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
 
+    const/high16 v0, -0x3d000000    # -128.0f
+
+    cmpg-float v0, v0, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
+
     float-to-int p0, p0
+
+    int-to-byte p0, p0
+
+    .line 693
+    invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public static final toByteExactOrNull(I)Ljava/lang/Byte;
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/16 v1, 0x7f
+
+    if-gt p0, v1, :cond_0
+
+    const/16 v1, -0x80
+
+    if-gt v1, p0, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    if-eqz v0, :cond_1
 
     int-to-byte p0, p0
 
@@ -3360,149 +3437,119 @@
 
     goto :goto_0
 
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return-object p0
-.end method
-
-.method public static final toByteExactOrNull(I)Ljava/lang/Byte;
-    .locals 1
-
-    const/16 v0, -0x80
-
-    if-le v0, p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v0, 0x7f
-
-    if-lt v0, p0, :cond_1
-
-    int-to-byte p0, p0
-
-    .line 661
-    invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
-
-    move-result-object p0
-
-    goto :goto_1
-
     :cond_1
-    :goto_0
     const/4 p0, 0x0
 
-    :goto_1
+    :goto_0
     return-object p0
 .end method
 
 .method public static final toByteExactOrNull(J)Ljava/lang/Byte;
     .locals 4
 
-    const/16 v0, -0x80
+    const-wide/16 v0, 0x7f
 
-    int-to-long v0, v0
+    cmp-long v0, p0, v0
 
-    const/16 v2, 0x7f
+    const/4 v1, 0x0
 
-    int-to-long v2, v2
+    if-gtz v0, :cond_0
 
-    cmp-long v0, v0, p0
+    const-wide/16 v2, -0x80
 
-    if-lez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
     cmp-long v0, v2, p0
 
-    if-ltz v0, :cond_1
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
 
     long-to-int p0, p0
 
     int-to-byte p0, p0
 
-    .line 665
+    .line 681
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
-    :goto_0
     const/4 p0, 0x0
 
-    :goto_1
+    :goto_0
     return-object p0
 .end method
 
 .method public static final toByteExactOrNull(S)Ljava/lang/Byte;
     .locals 2
 
-    const/16 v0, -0x80
+    const/4 v0, 0x0
 
-    int-to-short v0, v0
+    const/16 v1, -0x80
+
+    if-gt v1, p0, :cond_0
 
     const/16 v1, 0x7f
 
-    int-to-short v1, v1
+    if-gt p0, v1, :cond_0
 
-    if-le v0, p0, :cond_0
-
-    goto :goto_0
+    const/4 v0, 0x1
 
     :cond_0
-    if-lt v1, p0, :cond_1
+    if-eqz v0, :cond_1
 
     int-to-byte p0, p0
 
-    .line 669
+    .line 685
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
-    :goto_0
     const/4 p0, 0x0
 
-    :goto_1
+    :goto_0
     return-object p0
 .end method
 
 .method public static final toIntExactOrNull(D)Ljava/lang/Integer;
     .locals 4
 
-    const/high16 v0, -0x80000000
+    const-wide v0, 0x41dfffffffc00000L    # 2.147483647E9
 
-    int-to-double v0, v0
+    cmpg-double v0, p0, v0
 
-    const v2, 0x7fffffff
-
-    int-to-double v2, v2
-
-    cmpl-double v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-double v0, p0, v2
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
 
+    const-wide/high16 v2, -0x3e20000000000000L    # -2.147483648E9
+
+    cmpg-double v0, v2, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
+
     double-to-int p0, p0
 
-    .line 685
+    .line 701
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 p0, 0x0
 
     :goto_0
@@ -3512,32 +3559,35 @@
 .method public static final toIntExactOrNull(F)Ljava/lang/Integer;
     .locals 2
 
-    const/high16 v0, -0x80000000
+    const/high16 v0, 0x4f000000
 
-    int-to-float v0, v0
+    cmpg-float v0, p0, v0
 
-    const v1, 0x7fffffff
-
-    int-to-float v1, v1
-
-    cmpl-float v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-float v0, p0, v1
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
 
+    const/high16 v0, -0x31000000
+
+    cmpg-float v0, v0, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
+
     float-to-int p0, p0
 
-    .line 689
+    .line 705
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 p0, 0x0
 
     :goto_0
@@ -3547,71 +3597,73 @@
 .method public static final toIntExactOrNull(J)Ljava/lang/Integer;
     .locals 4
 
-    const/high16 v0, -0x80000000
+    const-wide/32 v0, 0x7fffffff
 
-    int-to-long v0, v0
+    cmp-long v0, p0, v0
 
-    const v2, 0x7fffffff
+    const/4 v1, 0x0
 
-    int-to-long v2, v2
+    if-gtz v0, :cond_0
 
-    cmp-long v0, v0, p0
+    const-wide/32 v2, -0x80000000
 
-    if-lez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
     cmp-long v0, v2, p0
 
-    if-ltz v0, :cond_1
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
 
     long-to-int p0, p0
 
-    .line 681
+    .line 697
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
-    :goto_0
     const/4 p0, 0x0
 
-    :goto_1
+    :goto_0
     return-object p0
 .end method
 
 .method public static final toLongExactOrNull(D)Ljava/lang/Long;
     .locals 4
 
-    const-wide/high16 v0, -0x8000000000000000L
+    const-wide/high16 v0, 0x43e0000000000000L    # 9.223372036854776E18
 
-    long-to-double v0, v0
+    cmpg-double v0, p0, v0
 
-    const-wide v2, 0x7fffffffffffffffL
-
-    long-to-double v2, v2
-
-    cmpl-double v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-double v0, p0, v2
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
 
+    const-wide/high16 v2, -0x3c20000000000000L    # -9.223372036854776E18
+
+    cmpg-double v0, v2, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
+
     double-to-long p0, p0
 
-    .line 693
+    .line 709
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 p0, 0x0
 
     :goto_0
@@ -3619,34 +3671,37 @@
 .end method
 
 .method public static final toLongExactOrNull(F)Ljava/lang/Long;
-    .locals 3
+    .locals 2
 
-    const-wide/high16 v0, -0x8000000000000000L
+    const/high16 v0, 0x5f000000
 
-    long-to-float v0, v0
+    cmpg-float v0, p0, v0
 
-    const-wide v1, 0x7fffffffffffffffL
-
-    long-to-float v1, v1
-
-    cmpl-float v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-float v0, p0, v1
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
 
+    const/high16 v0, -0x21000000
+
+    cmpg-float v0, v0, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
+
     float-to-long v0, p0
 
-    .line 697
+    .line 713
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 p0, 0x0
 
     :goto_0
@@ -3656,34 +3711,37 @@
 .method public static final toShortExactOrNull(D)Ljava/lang/Short;
     .locals 4
 
-    const/16 v0, -0x8000
+    const-wide v0, 0x40dfffc000000000L    # 32767.0
 
-    int-to-double v0, v0
+    cmpg-double v0, p0, v0
 
-    const/16 v2, 0x7fff
-
-    int-to-double v2, v2
-
-    cmpl-double v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-double v0, p0, v2
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
+
+    const-wide/high16 v2, -0x3f20000000000000L    # -32768.0
+
+    cmpg-double v0, v2, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
 
     double-to-int p0, p0
 
     int-to-short p0, p0
 
-    .line 709
+    .line 725
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 p0, 0x0
 
     :goto_0
@@ -3693,34 +3751,37 @@
 .method public static final toShortExactOrNull(F)Ljava/lang/Short;
     .locals 2
 
-    const/16 v0, -0x8000
+    const v0, 0x46fffe00    # 32767.0f
 
-    int-to-float v0, v0
+    cmpg-float v0, p0, v0
 
-    const/16 v1, 0x7fff
-
-    int-to-float v1, v1
-
-    cmpl-float v0, p0, v0
-
-    if-ltz v0, :cond_0
-
-    cmpg-float v0, p0, v1
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_0
+
+    const/high16 v0, -0x39000000    # -32768.0f
+
+    cmpg-float v0, v0, p0
+
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
 
     float-to-int p0, p0
 
     int-to-short p0, p0
 
-    .line 713
+    .line 729
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 p0, 0x0
 
     :goto_0
@@ -3728,83 +3789,91 @@
 .end method
 
 .method public static final toShortExactOrNull(I)Ljava/lang/Short;
-    .locals 1
+    .locals 2
 
-    const/16 v0, -0x8000
+    const/4 v0, 0x0
 
-    if-le v0, p0, :cond_0
+    const/16 v1, 0x7fff
 
-    goto :goto_0
+    if-gt p0, v1, :cond_0
+
+    const/16 v1, -0x8000
+
+    if-gt v1, p0, :cond_0
+
+    const/4 v0, 0x1
 
     :cond_0
-    const/16 v0, 0x7fff
-
-    if-lt v0, p0, :cond_1
+    if-eqz v0, :cond_1
 
     int-to-short p0, p0
 
-    .line 701
+    .line 717
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
-    :goto_0
     const/4 p0, 0x0
 
-    :goto_1
+    :goto_0
     return-object p0
 .end method
 
 .method public static final toShortExactOrNull(J)Ljava/lang/Short;
     .locals 4
 
-    const/16 v0, -0x8000
+    const-wide/16 v0, 0x7fff
 
-    int-to-long v0, v0
+    cmp-long v0, p0, v0
 
-    const/16 v2, 0x7fff
+    const/4 v1, 0x0
 
-    int-to-long v2, v2
+    if-gtz v0, :cond_0
 
-    cmp-long v0, v0, p0
+    const-wide/16 v2, -0x8000
 
-    if-lez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
     cmp-long v0, v2, p0
 
-    if-ltz v0, :cond_1
+    if-gtz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_1
 
     long-to-int p0, p0
 
     int-to-short p0, p0
 
-    .line 705
+    .line 721
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
-    :goto_0
     const/4 p0, 0x0
 
-    :goto_1
+    :goto_0
     return-object p0
 .end method
 
 .method public static final until(CC)Lkotlin/ranges/CharRange;
     .locals 1
 
-    if-gtz p1, :cond_0
+    const/4 v0, 0x0
 
-    .line 758
+    .line 774
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+
+    move-result v0
+
+    if-gtz v0, :cond_0
+
     sget-object p0, Lkotlin/ranges/CharRange;->Companion:Lkotlin/ranges/CharRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/CharRange$Companion;->getEMPTY()Lkotlin/ranges/CharRange;
@@ -3813,7 +3882,7 @@
 
     return-object p0
 
-    .line 759
+    .line 775
     :cond_0
     new-instance v0, Lkotlin/ranges/CharRange;
 
@@ -3829,7 +3898,7 @@
 .method public static final until(BB)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 740
+    .line 756
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -3846,7 +3915,7 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 787
+    .line 803
     sget-object p0, Lkotlin/ranges/IntRange;->Companion:Lkotlin/ranges/IntRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntRange$Companion;->getEMPTY()Lkotlin/ranges/IntRange;
@@ -3855,7 +3924,7 @@
 
     return-object p0
 
-    .line 788
+    .line 804
     :cond_0
     new-instance v0, Lkotlin/ranges/IntRange;
 
@@ -3869,7 +3938,7 @@
 .method public static final until(BS)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 865
+    .line 881
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -3882,7 +3951,7 @@
 .method public static final until(IB)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 722
+    .line 738
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -3899,7 +3968,7 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 768
+    .line 784
     sget-object p0, Lkotlin/ranges/IntRange;->Companion:Lkotlin/ranges/IntRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntRange$Companion;->getEMPTY()Lkotlin/ranges/IntRange;
@@ -3908,7 +3977,7 @@
 
     return-object p0
 
-    .line 769
+    .line 785
     :cond_0
     new-instance v0, Lkotlin/ranges/IntRange;
 
@@ -3922,7 +3991,7 @@
 .method public static final until(IS)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 847
+    .line 863
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -3935,7 +4004,7 @@
 .method public static final until(SB)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 749
+    .line 765
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -3952,7 +4021,7 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 797
+    .line 813
     sget-object p0, Lkotlin/ranges/IntRange;->Companion:Lkotlin/ranges/IntRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntRange$Companion;->getEMPTY()Lkotlin/ranges/IntRange;
@@ -3961,7 +4030,7 @@
 
     return-object p0
 
-    .line 798
+    .line 814
     :cond_0
     new-instance v0, Lkotlin/ranges/IntRange;
 
@@ -3975,7 +4044,7 @@
 .method public static final until(SS)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 874
+    .line 890
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -3986,7 +4055,7 @@
 .end method
 
 .method public static final until(BJ)Lkotlin/ranges/LongRange;
-    .locals 4
+    .locals 5
 
     const-wide/high16 v0, -0x8000000000000000L
 
@@ -3994,7 +4063,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 827
+    .line 843
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -4003,23 +4072,23 @@
 
     return-object p0
 
+    .line 844
     :cond_0
-    int-to-long v0, p0
+    new-instance v0, Lkotlin/ranges/LongRange;
 
-    .line 828
-    new-instance p0, Lkotlin/ranges/LongRange;
+    int-to-long v1, p0
 
-    const-wide/16 v2, 0x1
+    const-wide/16 v3, 0x1
 
-    sub-long/2addr p1, v2
+    sub-long/2addr p1, v3
 
-    invoke-direct {p0, v0, v1, p1, p2}, Lkotlin/ranges/LongRange;-><init>(JJ)V
+    invoke-direct {v0, v1, v2, p1, p2}, Lkotlin/ranges/LongRange;-><init>(JJ)V
 
-    return-object p0
+    return-object v0
 .end method
 
 .method public static final until(IJ)Lkotlin/ranges/LongRange;
-    .locals 4
+    .locals 5
 
     const-wide/high16 v0, -0x8000000000000000L
 
@@ -4027,7 +4096,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 807
+    .line 823
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -4036,25 +4105,25 @@
 
     return-object p0
 
+    .line 824
     :cond_0
-    int-to-long v0, p0
+    new-instance v0, Lkotlin/ranges/LongRange;
 
-    .line 808
-    new-instance p0, Lkotlin/ranges/LongRange;
+    int-to-long v1, p0
 
-    const-wide/16 v2, 0x1
+    const-wide/16 v3, 0x1
 
-    sub-long/2addr p1, v2
+    sub-long/2addr p1, v3
 
-    invoke-direct {p0, v0, v1, p1, p2}, Lkotlin/ranges/LongRange;-><init>(JJ)V
+    invoke-direct {v0, v1, v2, p1, p2}, Lkotlin/ranges/LongRange;-><init>(JJ)V
 
-    return-object p0
+    return-object v0
 .end method
 
 .method public static final until(JB)Lkotlin/ranges/LongRange;
     .locals 5
 
-    .line 731
+    .line 747
     new-instance v0, Lkotlin/ranges/LongRange;
 
     int-to-long v1, p2
@@ -4071,7 +4140,7 @@
 .method public static final until(JI)Lkotlin/ranges/LongRange;
     .locals 5
 
-    .line 778
+    .line 794
     new-instance v0, Lkotlin/ranges/LongRange;
 
     int-to-long v1, p2
@@ -4094,7 +4163,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 817
+    .line 833
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -4103,7 +4172,7 @@
 
     return-object p0
 
-    .line 818
+    .line 834
     :cond_0
     new-instance v0, Lkotlin/ranges/LongRange;
 
@@ -4119,7 +4188,7 @@
 .method public static final until(JS)Lkotlin/ranges/LongRange;
     .locals 5
 
-    .line 856
+    .line 872
     new-instance v0, Lkotlin/ranges/LongRange;
 
     int-to-long v1, p2
@@ -4134,7 +4203,7 @@
 .end method
 
 .method public static final until(SJ)Lkotlin/ranges/LongRange;
-    .locals 4
+    .locals 5
 
     const-wide/high16 v0, -0x8000000000000000L
 
@@ -4142,7 +4211,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 837
+    .line 853
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -4151,17 +4220,17 @@
 
     return-object p0
 
+    .line 854
     :cond_0
-    int-to-long v0, p0
+    new-instance v0, Lkotlin/ranges/LongRange;
 
-    .line 838
-    new-instance p0, Lkotlin/ranges/LongRange;
+    int-to-long v1, p0
 
-    const-wide/16 v2, 0x1
+    const-wide/16 v3, 0x1
 
-    sub-long/2addr p1, v2
+    sub-long/2addr p1, v3
 
-    invoke-direct {p0, v0, v1, p1, p2}, Lkotlin/ranges/LongRange;-><init>(JJ)V
+    invoke-direct {v0, v1, v2, p1, p2}, Lkotlin/ranges/LongRange;-><init>(JJ)V
 
-    return-object p0
+    return-object v0
 .end method

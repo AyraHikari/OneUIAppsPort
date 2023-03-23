@@ -27,11 +27,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000#\n\u0000\n\u0002\u0010(\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00028\u00000\u0001J\u0008\u0010\u000b\u001a\u00020\u000cH\u0002J\t\u0010\r\u001a\u00020\u000eH\u0096\u0002J\u000e\u0010\u000f\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u0010R\u0017\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0003\u0010\u0004R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\n\u00a8\u0006\u0011"
     }
@@ -58,9 +53,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -77,6 +73,13 @@
 .field private position:I
 
 .field final synthetic this$0:Lkotlin/sequences/SubSequence;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/sequences/SubSequence<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -84,16 +87,18 @@
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()V"
+            "(",
+            "Lkotlin/sequences/SubSequence<",
+            "TT;>;)V"
         }
     .end annotation
 
-    .line 318
     iput-object p1, p0, Lkotlin/sequences/SubSequence$iterator$1;->this$0:Lkotlin/sequences/SubSequence;
 
+    .line 365
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 320
+    .line 367
     invoke-static {p1}, Lkotlin/sequences/SubSequence;->access$getSequence$p(Lkotlin/sequences/SubSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -110,7 +115,7 @@
 .method private final drop()V
     .locals 2
 
-    .line 325
+    .line 372
     :goto_0
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
@@ -130,12 +135,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 326
+    .line 373
     iget-object v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 327
+    .line 374
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     add-int/lit8 v0, v0, 0x1
@@ -160,7 +165,7 @@
         }
     .end annotation
 
-    .line 320
+    .line 367
     iget-object v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -169,7 +174,7 @@
 .method public final getPosition()I
     .locals 1
 
-    .line 321
+    .line 368
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     return v0
@@ -178,10 +183,10 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 332
+    .line 379
     invoke-direct {p0}, Lkotlin/sequences/SubSequence$iterator$1;->drop()V
 
-    .line 333
+    .line 380
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     iget-object v1, p0, Lkotlin/sequences/SubSequence$iterator$1;->this$0:Lkotlin/sequences/SubSequence;
@@ -219,10 +224,10 @@
         }
     .end annotation
 
-    .line 337
+    .line 384
     invoke-direct {p0}, Lkotlin/sequences/SubSequence$iterator$1;->drop()V
 
-    .line 338
+    .line 385
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     iget-object v1, p0, Lkotlin/sequences/SubSequence$iterator$1;->this$0:Lkotlin/sequences/SubSequence;
@@ -233,14 +238,14 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 340
+    .line 387
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
-    .line 341
+    .line 388
     iget-object v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -249,13 +254,11 @@
 
     return-object v0
 
-    .line 339
+    .line 386
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 .end method
@@ -275,7 +278,7 @@
 .method public final setPosition(I)V
     .locals 0
 
-    .line 321
+    .line 368
     iput p1, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     return-void

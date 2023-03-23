@@ -12,7 +12,7 @@
     <string name="abc_activity_chooser_view_see_all">عرض الكل</string>
     <string name="abc_activitychooserview_choose_application">اختيار تطبيق</string>
     <string name="abc_capital_off">إيقاف</string>
-    <string name="abc_capital_on">تفعيل</string>
+    <string name="abc_capital_on">مفعّلة</string>
     <string name="abc_menu_alt_shortcut_label">Alt+</string>
     <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
     <string name="abc_menu_delete_shortcut_label">حذف</string>
@@ -60,6 +60,7 @@
     <string name="air_quality">جودة الهواء</string>
     <string name="air_quality_next_tts">توقعات جودة الهواء اليومية اللاحقة</string>
     <string name="air_quality_previous_tts">توقعات جودة الهواء اليومية الأبكر</string>
+    <string name="alert_title">تنبيه بأحوال الطقس القاسية</string>
     <string name="all_added_cities">كل المدن التي تمت إضافتها</string>
     <string name="allow">السماح</string>
     <string name="allow_permission_in_settings">لاستخدام هذه الميزة، يجب منح الإذن في الضبط.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">ليس الإجراء مدعومًا.</string>
     <string name="apply_daylight_saving_time">تطبيق التوقيت الصيفي؟</string>
     <string name="as_possible_after_verification">تم إرسال التقرير. سيتم تغيير اسم المدينة فوراً بعد التحقق.</string>
+    <string name="auto_refresh_on_screen_description">يمكنك الحصول على معلومات الطقس المحدثة كل ساعة تلقائياً. وعندما يكون هذا الخيار قيد التشغيل، يتعذر عليك التحديث يدوياً.‬</string>
+    <string name="auto_refresh_on_the_go">تحديث تلقائي أثناء التنقل</string>
+    <string name="auto_refresh_on_the_go_advanced">متقدمة</string>
+    <string name="auto_refresh_on_the_go_description">يمكنك الحصول على تحديثات الطقس بشكل متكرر أثناء قيامك بالقيادة أو ركوب الدراجات أو الجري أو المشي. وعندما يكون هذا الخيار قيد التشغيل، يتعذر عليك التحديث يدوياً.</string>
+    <string name="auto_refresh_on_the_go_simple_description">يمكنك الحصول على تحديثات الطقس بشكل متكرر أثناء قيامك بالقيادة أو ركوب الدراجات أو الجري أو المشي.</string>
     <string name="bottomsheet_action_expand_halfway">توسيع البطاقة السفلية</string>
     <string name="btn_report">تقرير</string>
     <string name="button_finish">إنهاء</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">انقر نقراً مزدوجاً للحصول على مزيد من المعلومات.</string>
     <string name="china">الصين</string>
     <string name="cities_button">المدن</string>
+    <string name="city_added">تمت إضافة المدينة.</string>
     <string name="city_list_text">المدن</string>
     <string name="clear">صافي</string>
     <string name="clear_text_end_icon_content_description">محو النص</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">سيتم إرسال معلومات الموقع الخاصة بجهازك إلى موفر المحتوى حتى يمكنك تلقي معلومات الطقس المحلية.</string>
     <string name="contents_error_msg">هذه الخدمة غير متوفرة مؤقتاً. يرجى المحاولة مرة أخرى لاحقاً.</string>
     <string name="copy">نسخ</string>
-    <string name="copy_toast_msg">تم نسخ الرابط إلى الحافظة.</string>
     <string name="correct_city_name">اسم المدينة صحيح</string>
     <string name="couldnt_find_location">تعذّر العثور على الموقع</string>
     <string name="cover_screen_top_sync_dialog_text">هل تريد ضبط الموقع نفسه على الشاشة الرئيسية؟</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">تم إسقاط العنصر في الموضع %d.</string>
     <string name="dragndroplist_drag_start">بدء سحب العنصر من الموضع %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">يتعذر سحب العنصر الموجود في الموضع %d.</string>
+    <string name="drawer_tips">تلميحات حول %s</string>
     <string name="drawer_tips_message">انقر هنا لإضافة المواقع وحذفها وإعادة ترتيبها. يمكنك أيضاً إضافة تطبيقات مصغرة متعددة لإظهار مواقع مختلفة على الشاشة الرئيسية.</string>
     <string name="drawer_tips_message_1">انقر فوق ”إدارة المواقع“ في أسفل هذه القائمة لإضافة المواقع وحذفها وإعادة ترتيبها.</string>
     <string name="drawer_tips_message_2">يمكنك إضافة أكثر من تطبيق مصغر واحد إلى الشاشة الرئيسية لإظهار مواقع مختلفة في الوقت نفسه.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">إعدادات متقدمة</string>
     <string name="exposed_dropdown_menu_content_description">عرض القائمة المنسدلة</string>
     <string name="failed_to_send_report">تعذّر إرسال التقرير</string>
-    <string name="fallback_menu_item_copy_link">نسخ الرابط</string>
-    <string name="fallback_menu_item_open_in_browser">فتح في المتصفح</string>
-    <string name="fallback_menu_item_share_link">مشاركة الرابط</string>
     <string name="farenheit">°ف</string>
     <string name="favorite_location">الموقع المفضل</string>
     <string name="feel_like_pd_minus_temp">درجة الحرارة تبدو -%d °</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">بث الفيديو</string>
     <string name="format_km_per_hour">%s كم/س</string>
     <string name="format_m_per_hour">%s ميل في الساعة</string>
+    <string name="fri">جمعة</string>
     <string name="general">عام</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">احصل على المحتوى المخصص استناداً إلى كيفية استخدام هاتفك.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">يتم الحصول على المحتوى المخصص استناداً إلى كيفية استخدام جهازك اللوحي.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">الحصول على معلومات الطقس، بما في ذلك موقعك الحالي، من الطقس</string>
     <string name="go_to_website">الانتقال إلى موقع الويب</string>
     <string name="goto_apps">يتوفر تحديث جديد. هل تريد تثبيته الآن؟</string>
     <string name="goto_apps_later">لاحقا</string>
     <string name="goto_apps_now">الآن</string>
     <string name="goto_apps_update_title">تنبيهات جديدة للمحتوى</string>
     <string name="header_tts">رأس الصفحة</string>
+    <string name="heavy">ثقيل</string>
     <string name="heavy_rain">مطر غزير</string>
     <string name="heavy_rain_followed_by_intense_heat">سقوط أمطار غزيرة مصحوبة بحرارة شديدة</string>
     <string name="heavy_rain_followed_by_light_rain">سقوط أمطار غزيرة مصحوبة بحرارة شديدة</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">الرؤية</string>
     <string name="life_index_wind">الرياح</string>
     <string name="life_index_wind_force">سرعة الريح</string>
+    <string name="light">خفيف</string>
     <string name="light_rain_followed_by_heavy_rain">أمطار خفيفة مصحوبة بسقوط أمطار غزيرة</string>
     <string name="light_rain_with_some_heavy_rain">أمطار خفيفة مصحوبة مع سقوط بعض الأمطار الغزيرة</string>
     <string name="link_tts">الرابط</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">لم يتم العثور على أي نتائج.</string>
     <string name="message_service_not_available">الخدمة غير متوفرة الآن.</string>
     <string name="minus_tts">ناقص</string>
+    <string name="mon">إثنين</string>
     <string name="more">مزيد</string>
     <string name="more_cuntact_us">اتصل بنا</string>
     <string name="more_information">المزيد</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">انقر هنا لتغيير موقع الطقس الافتراضي وإدارة كل مواقعك.</string>
     <string name="new_version_available">يتوفر إصدار جديد من %s.</string>
     <string name="new_version_is_available">يتوفر إصدار جديد.</string>
+    <string name="news_menu_show_news">عرض الأخبار</string>
+    <string name="news_opt_in_banner_title_text">أبق مطلعاً على آخر الأحداث الحالية بإظهار الأخبار على تطبيق الطقس المصغر.</string>
+    <string name="news_opt_in_popup_desc_text">أبق مطلعاً على آخر الأحداث العالمية بإظهار أحدث الأخبار الرئيسية من %s على تطبيق الطقس المصغر.</string>
+    <string name="news_opt_in_popup_title_text">شاهد الأخبار والطقس في تطبيق مصغر واحد</string>
+    <string name="news_request_agree_text">انقر للحصول على أخبار من %s</string>
+    <string name="news_widget_bubble_text">احصل على الأخبار مع الطقس.</string>
+    <string name="news_widget_dummy_title">أهم قصة اليوم</string>
+    <string name="news_widget_new_dummy_title">الأمور الـ ٥ التي تحتاج إلى معرفتها هذا الصباح</string>
+    <string name="news_widget_oobe_text">انقر هنا لإضافة أخبار.</string>
     <string name="next">المدينة التالية</string>
+    <string name="next_btn">التالي</string>
     <string name="next_city">انقر نقراً مزدوجاً لعرض معلومات الطقس للمدينة التالية.</string>
     <string name="night_tts">في الليل</string>
     <string name="no_application_available">لا توجد تطبيقات متوفرة.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">ما من معلومات حول الطقس</string>
     <string name="not_in_use">غير مستخدمة</string>
     <string name="not_now">ليس الآن</string>
+    <string name="not_now_btn">ليس الآن</string>
     <string name="not_selected">لم يتم التحديد</string>
     <string name="not_set">لم يتمّ تحديد قيمة.</string>
     <string name="nothing_selected">لم يتم تحديد أي شيء.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">للحصول على الطريقة الأسرع والأكثر دقة لكشف الموقع، انقر فوق ”الضبط“، ثم حدد ”طريقة تحديد الموقع“ إلى GPS وWi-Fi، وشبكات المحمول.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">للحصول على الطريقة الأسرع والأكثر دقة لكشف الموقع، انقر فوق ”الضبط“، ثم حدد ”طريقة تحديد الموقع“ إلى GPS وWi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">لعرض معلومات الطقس المحلي، قم بتشغيل ضبط الموقع وتأكد من ضبط الوضع على دقة عالية.</string>
+    <string name="notification_alert_channel_name">تنبيه بأحوال الطقس القاسية</string>
     <string name="notification_apps_update_channel_name">تحديث الإشعارات</string>
     <string name="notification_auto_refresh_channel_name">التحديث التلقائي للطقس</string>
     <string name="notification_dex_channel_name">الطقس في Samsung DeX</string>
@@ -535,8 +556,8 @@
     <string name="notification_touch_widget_popup_content_for_one_hour_interval">يتم تحديث معلومات الطقس تلقائيا كل ساعة. قد ينتج عن ذلك تكاليف إضافية. ويمكنك تغيير فاصل التحديث في إعدادات التطبيق المصغر للمستخدم الخاصة بالطقس.</string>
     <string name="notification_updating">جارٍ التحديث…</string>
     <string name="notifications">الإشعارات</string>
-    <string name="off_text">غير مفعل</string>
-    <string name="on_text">مفعل</string>
+    <string name="off_text">إيقاف التشغيل</string>
+    <string name="on_text">قيد التشغيل</string>
     <string name="only_support_in">تتوفر هذه الخدمة في %s فقط.</string>
     <string name="oobe_eula_description_permission_info">الموقع: يُستخدَم للبحث عن معلومات الطقس للموقع الحالي.</string>
     <string name="oobe_eula_description_text">‏‫الإذن التالي اختياري. ويمكنك استخدام التطبيق بدونه، ولكن قد تكون بعض الوظائف محدودة.</string>
@@ -544,6 +565,7 @@
     <string name="open_app">فتح التطبيق</string>
     <string name="open_source_licences">فتح تراخيص المصدر</string>
     <string name="other_locations">مواقع أخرى</string>
+    <string name="partly_sunny">مشمس جزئيًا</string>
     <string name="password_toggle_content_description">عرض كلمة المرور</string>
     <string name="paused">تم الإيقاف مؤقتاً</string>
     <string name="pd_km">%,1f كم</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">تم نسخ \"%1$s\" إلى الحافظة.</string>
     <string name="preview">معاينة %s</string>
     <string name="previous">المدينة السابقة</string>
+    <string name="previous_btn">السابق</string>
     <string name="previous_city">انقر نقراً مزدوجاً لعرض معلومات الطقس للمدينة السابقة.</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
     <string name="probability_of_rain_text">احتمال سقوط أمطار</string>
     <string name="protect_your_content">حماية المحتوى</string>
+    <string name="ps_in">%s بوصة</string>
+    <string name="ps_mm">%s ملم</string>
     <string name="radar">الرادار والخرائط</string>
     <string name="rain">مطر</string>
     <string name="rain_followed_by_intense_heat">ممطر مصحوب بحرارة شديدة</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">لتحديث معلومات الطقس، انقر فوق ”الضبط“، وانتقل إلى معلومات التطبيق > الأذونات، ثم اسمح بالأذونات التالية وحاول مرة أخرى:</string>
     <string name="runtime_location_permission_title">السماح بالأذونات</string>
     <string name="runtime_oem_grant_permission_desc">تم منح تطبيق %s إذن الوصول إلى ما يلي:</string>
+    <string name="sat">سبت</string>
     <string name="save_button">حفظ</string>
     <string name="search_menu_title">البحث</string>
     <string name="search_most_searched_for">أكثر المدن التي تم البحث عنها</string>
@@ -619,7 +645,7 @@
     <string name="selected">تم التحديد</string>
     <string name="sending">جاري الإرسال…</string>
     <string name="service_is_not_available_temporarily">الخدمة غير متاحة مؤقتا.</string>
-    <string name="sesl_action_bar_up_description">الرجوع للخلف</string>
+    <string name="sesl_action_bar_up_description">التنقل إلى الأعلى</string>
     <string name="sesl_action_menu_overflow_badge_description">محتوى جديد متوفر</string>
     <string name="sesl_action_menu_overflow_badge_text_n">ج</string>
     <string name="sesl_action_menu_overflow_description">مزيد من الخيارات</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">محتوى جديد متوفر</string>
     <string name="sesl_material_overflow_badge_text_n">ج</string>
     <string name="sesl_more_item_label">المزيد</string>
+    <string name="sesl_preferecne_badge_description">إشعار جديد</string>
     <string name="sesl_preferencecategory_added_title">رأس</string>
     <string name="sesl_search_hint">البحث</string>
     <string name="sesl_searchview_description_clear">مسح حقل البحث</string>
@@ -637,10 +664,10 @@
     <string name="sesl_searchview_description_search">البحث</string>
     <string name="sesl_searchview_description_submit">إرسال استعلام</string>
     <string name="sesl_searchview_description_voice">البحث الصوتي</string>
-    <string name="sesl_switch_off">متوقف عن التشغيل</string>
+    <string name="sesl_switch_off">إيقاف التشغيل</string>
     <string name="sesl_switch_on">قيد التشغيل</string>
-    <string name="sesl_switchbar_off_text">غير مفعل</string>
-    <string name="sesl_switchbar_on_text">مفعل</string>
+    <string name="sesl_switchbar_off_text">إيقاف التشغيل</string>
+    <string name="sesl_switchbar_on_text">قيد التشغيل</string>
     <string name="sesl_toolbar_collapse_description">طي</string>
     <string name="set_default_location">تعيين الموقع الافتراضي</string>
     <string name="set_favorite">ضبط المفضلة</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">بدون اتصال</string>
     <string name="st_view_less">عرض أقل</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">غير مفعل</string>
+    <string name="status_on">مشغّل</string>
     <string name="summary_collapsed_preference_list">%1$s، %2$s</string>
+    <string name="sun">أحد</string>
     <string name="sunny">مشمس</string>
     <string name="sunny_with_some_clouds">‏‫مشمس مع ظهور بعض السحب</string>
     <string name="sunny_with_some_heavy_rain">‏‫مشمس مع سقوط أمطار غزيرة</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">انقر هنا لاستعادة بيانات الطقس من جهازك القديم.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">انقر فوق ”إعادة المحاولة“ لمحاولة البحث عن موقعك مرة أخرى.</string>
     <string name="tap_setting_message_edge_panel">قم بتشغيل الموقع للحصول على الطقس المحلي.</string>
+    <string name="tap_the_settings_icon">انقر فوق رمز الضبط.</string>
     <string name="tap_to_get_the_weather">النقر للحصول على الطقس</string>
     <string name="temp_f_c">%d من درجات فهرنهايت</string>
     <string name="temp_f_m">%d درجة مئوية</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">البنود والشروط</string>
     <string name="the_latest_version">تم مسبقاً تثبيت أحدث إصدار.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">سيتم أيضاً تطبيق هذا الموقع على الإشعارات والتقويم.</string>
+    <string name="thu">خميس</string>
     <string name="tick_box_tts">مربع الاختيار</string>
     <string name="ticked_tts">محدد</string>
     <string name="time_am">ص</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">كل ساعة</string>
     <string name="title_select_locations">تحديد المواقع</string>
     <string name="title_theme">السمات</string>
+    <string name="to_continue_agree_to_updated">للمتابعة، يجب الموافقة على %s المحدثة الخاصة بنا.</string>
     <string name="to_get_local_weather_chn">"للحصول على معلومات عن أحوال الطقس المحلي، سيتم إرسال موقعك الحالي إلى مزود خدمات الطقس. (يرجى الاطلاع على %1$sالبنود والشروط%2$s %3$sوسياسة الخصوصية%4$s الخاصة بمزوّد الخدمة.)
 قد تصل تطبيقات وخدمات أخرى على جهازك إلى بيانات الطقس التي تمّ استخراجها لإظهار معلومات عن الطقس في تلك التطبيقات.
 لتزويدك بمعلومات عن أحوال الطقس بشكل مستمر، سيُتاح لتطبيق الطقس الوصول إلى موقعك، حتى عندما لا يكون التطبيق قيد الاستخدام."</string>
     <string name="today">اليوم</string>
+    <string name="try_it_out_btn">التجربة الآن</string>
+    <string name="tue">ثلاثاء</string>
+    <string name="turn_on_to_use_precise_location">لاستخدام هذه الميزة، يجب عليك السماح لـ %s بالوصول إلى موقعك طوال الوقت وتشغيل استخدام الموقع الدقيق. انقر فوق الضبط، ثم انتقل إلى الأذونات > الموقع.</string>
     <string name="tw_title_weather_broadcast">بث</string>
-    <string name="unable_to_check_for_updates">يتعذر التحقق من وجود تحديثات. ما من اتصال بالشبكة.</string>
+    <string name="unable_to_check_for_updates">تعذر البحث عن تحديثات. حاول مرة أخرى لاحقاً.</string>
     <string name="unable_to_receive_info_msg">يتعذر تلقي معلومات</string>
     <string name="unticked_tts">غير محددة</string>
     <string name="unused">غير المستخدمة</string>
     <string name="update">تحديث</string>
     <string name="update_abb8">تحديث</string>
     <string name="update_app">تحديث التطبيق</string>
+    <string name="updated_tile_chn">تم التحديث: %s</string>
     <string name="updated_tts">تم تحديث %s</string>
+    <string name="use_current_location">استخدام الموقع الحالي</string>
     <string name="use_current_location_agree_popup">"للحصول على معلومات الطقس المحلي، سيتم إرسال الموقع الحالي الخاص بك إلى مزود خدمات الطقس. (يرجى الاطلاع على %1$sسياسة الخصوصية%2$s الخاصة بالمزود.)
 قد تصل التطبيقات والخدمات الأخرى في الجهاز الخاص بك إلى بيانات الطقس التي تم استردادها لإظهار معلومات الطقس في تلك التطبيقات."</string>
     <string name="use_current_location_and_background_agree_popup">"للحصول على معلومات الطقس المحلي، سيتم إرسال الموقع الحالي الخاص بك إلى مزود خدمات الطقس. (يرجى الاطلاع على %1$sسياسة الخصوصية%2$s لمزود الخدمات.)
@@ -746,14 +784,21 @@
 يمكنك إيقاف استخدام موقعك بلانتقال إلى إعدادات تطبيق الطقس."</string>
     <string name="use_current_location_body_msg_chn">"يُرجى قراءة هذا الإشعار قراءةً متأنيةً قبل استخدام \"الطقس\":
 إذا كنت تريد معرفة حالة الطقس في الموقع الحالي، فستحتاج إلى السماح إلى مزود الخدمة التابع إلى جهة خارجية بالوصول المستمر (حتى وغن لم تكن تستخدم الخدمة) إلى جهازك والحصول على بعض البيانات، على النحو المبين أدناه. يًرجى قراءة وفهم %1$sالبنود والشروط%2$s و%3$sسياسة الخصوصية%4$s لمزود الخدمة التابع إلى جهة خارجية قبل منحه هذا الإذن. يمكنك سحب الإذن الخاص بك عن طريق إيقاف تشغيل \"الموقع\" في قائمة الإعدادات. قد تحصل التطبيقات والخدمات الأخرى في جهازك على بيانات الطقس التي تم استردادها لإظهار حالة الطقس في تلك التطبيقات والخدمات."</string>
+    <string name="use_current_location_body_msg_kor">"سيتم جمع موقعك الحالي واستخدامه لتوفير بعض ميزات تطبيق الطقس، مثل الحصول على الطقس المحلي لديك.
+
+ولتوفير معلومات الطقس المستمرة، سيقوم هذا التطبيق بمعالجة موقعك بشكل منتظم، حتى في حالة عدم استخدامك التطبيق. تعتبر المتابعة موافقة منك على جمع موقعك ومعالجته للأغراض السابقة.
+
+يمكنك إيقاف جمع الموقع هذا واستخدامه في ضبط تطبيق الطقس."</string>
     <string name="use_current_location_body_purpose">الغرض</string>
     <string name="use_current_location_body_purpose_content">لتوفير معلومات الطقس لموقعك الحالي</string>
     <string name="use_current_location_body_search_provider">مزود الخدمة</string>
+    <string name="use_current_location_continue">متابعة</string>
+    <string name="use_current_location_not_now">ليس الآن</string>
     <string name="use_current_location_off_alert_popup">ستتم إزالة معلومات الموقع الحالي.</string>
     <string name="useful_informations">نصائح للحياة وتقارير أخرى</string>
     <string name="using_as">استخدام كـ %s</string>
     <string name="v7_preference_off">إيقاف</string>
-    <string name="v7_preference_on">تفعيل</string>
+    <string name="v7_preference_on">مفعّلة</string>
     <string name="values_are_not_available_in_other_countries">لا تتوفر قيم %s في بلدان أخرى.</string>
     <string name="version_name">إصدار %s</string>
     <string name="videos">مقاطع فيديو</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">تلميحات حول الطقس</string>
     <string name="weathernews">Weathernews Inc.‎</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">أربعاء</string>
     <string name="weekly_forecast">يومياً</string>
     <string name="widget_background">خلفية التطبيق المصغر</string>
     <string name="widget_empty_text">انقر للحصول على معلومات الطقس</string>
+    <string name="widget_location">اسم المدينة</string>
     <string name="widget_name_4x1">الطقس والساعة</string>
     <string name="widget_setting">الضبط</string>
     <string name="widget_setting_background_color">لون الخلفية</string>

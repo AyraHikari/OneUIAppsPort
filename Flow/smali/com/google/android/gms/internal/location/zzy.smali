@@ -1,47 +1,33 @@
 .class final Lcom/google/android/gms/internal/location/zzy;
-.super Lcom/google/android/gms/internal/location/zzab;
+.super Lcom/google/android/gms/common/api/internal/IStatusCallback$Stub;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # instance fields
-.field private final synthetic zzbx:Landroid/app/PendingIntent;
-
-.field private final synthetic zzck:Lcom/google/android/gms/location/LocationRequest;
+.field private final zza:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/internal/location/zzq;Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/LocationRequest;Landroid/app/PendingIntent;)V
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
     .locals 0
 
-    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzy;->zzck:Lcom/google/android/gms/location/LocationRequest;
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/IStatusCallback$Stub;-><init>()V
 
-    iput-object p4, p0, Lcom/google/android/gms/internal/location/zzy;->zzbx:Landroid/app/PendingIntent;
-
-    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzab;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzy;->zza:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final onResult(Lcom/google/android/gms/common/api/Status;)V
+    .locals 1
 
-    check-cast p1, Lcom/google/android/gms/internal/location/zzaz;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzy;->zza:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
 
-    new-instance v0, Lcom/google/android/gms/internal/location/zzac;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/location/zzac;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
-
-    iget-object v1, p0, Lcom/google/android/gms/internal/location/zzy;->zzck:Lcom/google/android/gms/location/LocationRequest;
-
-    iget-object v2, p0, Lcom/google/android/gms/internal/location/zzy;->zzbx:Landroid/app/PendingIntent;
-
-    invoke-virtual {p1, v1, v2, v0}, Lcom/google/android/gms/internal/location/zzaz;->zza(Lcom/google/android/gms/location/LocationRequest;Landroid/app/PendingIntent;Lcom/google/android/gms/internal/location/zzaj;)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;->setResult(Ljava/lang/Object;)V
 
     return-void
 .end method

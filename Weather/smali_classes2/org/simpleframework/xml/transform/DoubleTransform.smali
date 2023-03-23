@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +31,7 @@
 .method public read(Ljava/lang/String;)Ljava/lang/Double;
     .locals 0
 
-    .line 55
+    .line 2
     invoke-static {p1}, Ljava/lang/Double;->valueOf(Ljava/lang/String;)Ljava/lang/Double;
 
     move-result-object p1
@@ -42,13 +41,8 @@
 
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 42
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/DoubleTransform;->read(Ljava/lang/String;)Ljava/lang/Double;
 
     move-result-object p1
@@ -59,7 +53,7 @@
 .method public write(Ljava/lang/Double;)Ljava/lang/String;
     .locals 0
 
-    .line 69
+    .line 2
     invoke-virtual {p1}, Ljava/lang/Double;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -69,13 +63,8 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 42
+    .line 1
     check-cast p1, Ljava/lang/Double;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/DoubleTransform;->write(Ljava/lang/Double;)Ljava/lang/String;

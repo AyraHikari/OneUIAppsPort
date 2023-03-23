@@ -6,9 +6,11 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lorg/jsoup/select/Evaluator$MatchText;,
         Lorg/jsoup/select/Evaluator$MatchesOwn;,
         Lorg/jsoup/select/Evaluator$Matches;,
         Lorg/jsoup/select/Evaluator$ContainsOwnText;,
+        Lorg/jsoup/select/Evaluator$ContainsData;,
         Lorg/jsoup/select/Evaluator$ContainsText;,
         Lorg/jsoup/select/Evaluator$IndexEvaluator;,
         Lorg/jsoup/select/Evaluator$IsEmpty;,
@@ -39,6 +41,7 @@
         Lorg/jsoup/select/Evaluator$Attribute;,
         Lorg/jsoup/select/Evaluator$Class;,
         Lorg/jsoup/select/Evaluator$Id;,
+        Lorg/jsoup/select/Evaluator$TagEndsWith;,
         Lorg/jsoup/select/Evaluator$Tag;
     }
 .end annotation
@@ -48,7 +51,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 20
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

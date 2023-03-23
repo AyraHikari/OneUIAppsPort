@@ -12,7 +12,7 @@
 
 
 # static fields
-.field private static final HOUSE_COMPONENT:Ljava/lang/String; = "(?:one|\\d+([a-z](?=[^a-z]|$)|st|nd|rd|th)?)"
+.field private static final HOUSE_COMPONENT:Ljava/lang/String; = "(?:one|[0-9]+([a-z](?=[^a-z]|$)|st|nd|rd|th)?)"
 
 .field private static final HOUSE_END:Ljava/lang/String; = "(?=[,\"\'\t \u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\n\u000b\u000c\r\u0085\u2028\u2029]|$)"
 
@@ -697,7 +697,7 @@
 
     sput-object v0, Landroidx/core/text/util/FindAddress;->sWordRe:Ljava/util/regex/Pattern;
 
-    const-string v0, "(?:one|\\d+([a-z](?=[^a-z]|$)|st|nd|rd|th)?)(?:-(?:one|\\d+([a-z](?=[^a-z]|$)|st|nd|rd|th)?))*(?=[,\"\'\t \u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\n\u000b\u000c\r\u0085\u2028\u2029]|$)"
+    const-string v0, "(?:one|[0-9]+([a-z](?=[^a-z]|$)|st|nd|rd|th)?)(?:-(?:one|[0-9]+([a-z](?=[^a-z]|$)|st|nd|rd|th)?))*(?=[,\"\'\t \u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\n\u000b\u000c\r\u0085\u2028\u2029]|$)"
 
     .line 171
     invoke-static {v0, v6}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
@@ -724,7 +724,7 @@
 
     sput-object v0, Landroidx/core/text/util/FindAddress;->sLocationNameRe:Ljava/util/regex/Pattern;
 
-    const-string v0, "(\\d+)(st|nd|rd|th)"
+    const-string v0, "([0-9]+)(st|nd|rd|th)"
 
     .line 265
     invoke-static {v0, v6}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
@@ -733,7 +733,7 @@
 
     sput-object v0, Landroidx/core/text/util/FindAddress;->sSuffixedNumberRe:Ljava/util/regex/Pattern;
 
-    const-string v0, "(?:\\d{5}(?:-\\d{4})?)(?=[,*\u2022\t \u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\n\u000b\u000c\r\u0085\u2028\u2029]|$)"
+    const-string v0, "(?:[0-9]{5}(?:-[0-9]{4})?)(?=[,*\u2022\t \u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\n\u000b\u000c\r\u0085\u2028\u2029]|$)"
 
     .line 268
     invoke-static {v0, v6}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
@@ -756,6 +756,16 @@
 
 .method private static attemptMatch(Ljava/lang/String;Ljava/util/regex/MatchResult;)I
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "content",
+            "houseNumberMatch"
+        }
+    .end annotation
 
     .line 403
     invoke-interface {p1}, Ljava/util/regex/MatchResult;->end()I
@@ -1060,6 +1070,14 @@
 
 .method private static checkHouseNumber(Ljava/lang/String;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "houseNumber"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1232,6 +1250,14 @@
 
 .method static findAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 
     .line 500
     sget-object v0, Landroidx/core/text/util/FindAddress;->sHouseNumberRe:Ljava/util/regex/Pattern;
@@ -1303,6 +1329,14 @@
 
 .method public static isValidLocationName(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "location"
+        }
+    .end annotation
 
     .line 388
     sget-object v0, Landroidx/core/text/util/FindAddress;->sLocationNameRe:Ljava/util/regex/Pattern;
@@ -1320,6 +1354,14 @@
 
 .method public static isValidZipCode(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "zipCode"
+        }
+    .end annotation
 
     .line 377
     sget-object v0, Landroidx/core/text/util/FindAddress;->sZipCodeRe:Ljava/util/regex/Pattern;
@@ -1337,6 +1379,16 @@
 
 .method public static isValidZipCode(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "zipCode",
+            "state"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1354,6 +1406,16 @@
 
 .method private static isValidZipCode(Ljava/lang/String;Ljava/util/regex/MatchResult;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "zipCode",
+            "stateMatch"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1422,6 +1484,16 @@
 
 .method public static matchHouseNumber(Ljava/lang/String;I)Ljava/util/regex/MatchResult;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "content",
+            "offset"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1495,6 +1567,16 @@
 
 .method public static matchState(Ljava/lang/String;I)Ljava/util/regex/MatchResult;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "content",
+            "offset"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

@@ -25,6 +25,16 @@
 # direct methods
 .method private constructor <init>(ILcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPBroadcastReceivedListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "port",
+            "listener"
+        }
+    .end annotation
 
     .line 218
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -164,7 +174,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -193,8 +207,6 @@
     if-eqz v1, :cond_1
 
     .line 253
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPReceivingThread;->listener:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPBroadcastReceivedListener;
-
     invoke-interface {v1, v0}, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPBroadcastReceivedListener;->dataReceived(Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
@@ -287,6 +299,14 @@
 
 .method public setListener(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPBroadcastReceivedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 226
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPReceivingThread;->listener:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPBroadcastReceivedListener;

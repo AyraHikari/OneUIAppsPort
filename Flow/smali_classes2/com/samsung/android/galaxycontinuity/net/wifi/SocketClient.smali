@@ -18,6 +18,14 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socketListener"
+        }
+    .end annotation
 
     .line 12
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;-><init>()V
@@ -37,6 +45,16 @@
 # virtual methods
 .method public declared-synchronized connectToHost(Ljava/lang/String;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "hostname",
+            "port"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -50,7 +68,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -82,15 +104,23 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, " - "
+    move-result-object v0
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v0, " - "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -191,8 +221,6 @@
     if-eqz v0, :cond_0
 
     .line 50
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient;->mConnectThread:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient$ConnectThread;
-
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient$ConnectThread;->cancel()V
 
     const/4 v0, 0x0

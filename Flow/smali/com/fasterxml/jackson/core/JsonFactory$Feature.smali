@@ -52,26 +52,24 @@
     sput-object v0, Lcom/fasterxml/jackson/core/JsonFactory$Feature;->INTERN_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonFactory$Feature;
 
     .line 117
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonFactory$Feature;
+    new-instance v1, Lcom/fasterxml/jackson/core/JsonFactory$Feature;
 
-    const-string v1, "CANONICALIZE_FIELD_NAMES"
+    const-string v4, "CANONICALIZE_FIELD_NAMES"
 
-    invoke-direct {v0, v1, v3, v3}, Lcom/fasterxml/jackson/core/JsonFactory$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v1, v4, v3, v3}, Lcom/fasterxml/jackson/core/JsonFactory$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonFactory$Feature;->CANONICALIZE_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonFactory$Feature;
+    sput-object v1, Lcom/fasterxml/jackson/core/JsonFactory$Feature;->CANONICALIZE_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonFactory$Feature;
 
-    const/4 v1, 0x2
+    const/4 v4, 0x2
 
-    new-array v1, v1, [Lcom/fasterxml/jackson/core/JsonFactory$Feature;
+    new-array v4, v4, [Lcom/fasterxml/jackson/core/JsonFactory$Feature;
+
+    aput-object v0, v4, v2
+
+    aput-object v1, v4, v3
 
     .line 88
-    sget-object v4, Lcom/fasterxml/jackson/core/JsonFactory$Feature;->INTERN_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonFactory$Feature;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/fasterxml/jackson/core/JsonFactory$Feature;->$VALUES:[Lcom/fasterxml/jackson/core/JsonFactory$Feature;
+    sput-object v4, Lcom/fasterxml/jackson/core/JsonFactory$Feature;->$VALUES:[Lcom/fasterxml/jackson/core/JsonFactory$Feature;
 
     return-void
 .end method

@@ -42,6 +42,14 @@
 
 .method public constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "queueSize"
+        }
+    .end annotation
 
     .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -121,6 +129,14 @@
 
 .method public insert(Lcom/samsung/context/sdk/samsunganalytics/internal/sender/SimpleLog;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "log"
+        }
+    .end annotation
 
     .line 31
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/queue/QueueManager;->logQueue:Ljava/util/concurrent/LinkedBlockingQueue;

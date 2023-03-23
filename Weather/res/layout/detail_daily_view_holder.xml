@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout android:id="@id/daily_container" android:tag="layout/detail_daily_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingVertical="@dimen/daily_padding_vertical"
+<com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout android:id="@id/daily_container" android:tag="layout/detail_daily_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingVertical="@dimen/daily_padding_vertical"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:tag="binding_1" android:paddingBottom="@dimen/daily_yesterday_margin_bottom" android:focusable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.7" android:importantForAccessibility="yes" android:paddingHorizontal="@dimen/daily_padding_horizontal">
@@ -19,4 +19,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_daily" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </LinearLayout>
-</com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout>
+</com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout>

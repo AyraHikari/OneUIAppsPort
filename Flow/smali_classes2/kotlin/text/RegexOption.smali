@@ -17,11 +17,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\r\u0008\u0086\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002B\u0019\u0008\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0006R\u0014\u0010\u0005\u001a\u00020\u0004X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008R\u0014\u0010\u0003\u001a\u00020\u0004X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\u0008j\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010\u00a8\u0006\u0011"
     }
@@ -48,9 +43,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -79,20 +75,109 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 16
+.method private static final synthetic $values()[Lkotlin/text/RegexOption;
+    .locals 3
 
     const/4 v0, 0x7
 
     new-array v0, v0, [Lkotlin/text/RegexOption;
 
-    new-instance v8, Lkotlin/text/RegexOption;
+    sget-object v1, Lkotlin/text/RegexOption;->IGNORE_CASE:Lkotlin/text/RegexOption;
 
-    const-string v2, "IGNORE_CASE"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    const/4 v4, 0x2
+    sget-object v1, Lkotlin/text/RegexOption;->MULTILINE:Lkotlin/text/RegexOption;
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lkotlin/text/RegexOption;->LITERAL:Lkotlin/text/RegexOption;
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lkotlin/text/RegexOption;->UNIX_LINES:Lkotlin/text/RegexOption;
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lkotlin/text/RegexOption;->COMMENTS:Lkotlin/text/RegexOption;
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lkotlin/text/RegexOption;->DOT_MATCHES_ALL:Lkotlin/text/RegexOption;
+
+    const/4 v2, 0x5
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lkotlin/text/RegexOption;->CANON_EQ:Lkotlin/text/RegexOption;
+
+    const/4 v2, 0x6
+
+    aput-object v1, v0, v2
+
+    return-object v0
+.end method
+
+.method static constructor <clinit>()V
+    .locals 15
+
+    .line 33
+    new-instance v7, Lkotlin/text/RegexOption;
+
+    const-string v1, "IGNORE_CASE"
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x0
+
+    move-object v0, v7
+
+    invoke-direct/range {v0 .. v6}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v7, Lkotlin/text/RegexOption;->IGNORE_CASE:Lkotlin/text/RegexOption;
+
+    .line 39
+    new-instance v0, Lkotlin/text/RegexOption;
+
+    const-string v9, "MULTILINE"
+
+    const/4 v10, 0x1
+
+    const/16 v11, 0x8
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x2
+
+    const/4 v14, 0x0
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v14}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lkotlin/text/RegexOption;->MULTILINE:Lkotlin/text/RegexOption;
+
+    .line 47
+    new-instance v0, Lkotlin/text/RegexOption;
+
+    const-string v2, "LITERAL"
+
+    const/16 v4, 0x10
 
     const/4 v5, 0x0
 
@@ -100,142 +185,75 @@
 
     const/4 v7, 0x0
 
-    move-object v1, v8
+    move-object v1, v0
 
-    .line 33
     invoke-direct/range {v1 .. v7}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    sput-object v8, Lkotlin/text/RegexOption;->IGNORE_CASE:Lkotlin/text/RegexOption;
+    sput-object v0, Lkotlin/text/RegexOption;->LITERAL:Lkotlin/text/RegexOption;
 
-    const/4 v1, 0x0
+    .line 54
+    new-instance v0, Lkotlin/text/RegexOption;
 
-    aput-object v8, v0, v1
+    const-string v9, "UNIX_LINES"
 
-    new-instance v1, Lkotlin/text/RegexOption;
-
-    const-string v10, "MULTILINE"
+    const/4 v10, 0x3
 
     const/4 v11, 0x1
 
-    const/16 v12, 0x8
+    move-object v8, v0
 
-    const/4 v13, 0x0
+    invoke-direct/range {v8 .. v14}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    const/4 v14, 0x2
-
-    const/4 v15, 0x0
-
-    move-object v9, v1
-
-    .line 39
-    invoke-direct/range {v9 .. v15}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    sput-object v1, Lkotlin/text/RegexOption;->MULTILINE:Lkotlin/text/RegexOption;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    new-instance v1, Lkotlin/text/RegexOption;
-
-    const-string v4, "LITERAL"
-
-    const/4 v5, 0x2
-
-    const/16 v6, 0x10
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x2
-
-    const/4 v9, 0x0
-
-    move-object v3, v1
-
-    .line 47
-    invoke-direct/range {v3 .. v9}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    sput-object v1, Lkotlin/text/RegexOption;->LITERAL:Lkotlin/text/RegexOption;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    new-instance v1, Lkotlin/text/RegexOption;
-
-    const-string v4, "UNIX_LINES"
-
-    const/4 v5, 0x3
-
-    const/4 v6, 0x1
-
-    move-object v3, v1
-
-    .line 54
-    invoke-direct/range {v3 .. v9}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    sput-object v1, Lkotlin/text/RegexOption;->UNIX_LINES:Lkotlin/text/RegexOption;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    new-instance v1, Lkotlin/text/RegexOption;
-
-    const-string v4, "COMMENTS"
-
-    const/4 v5, 0x4
-
-    const/4 v6, 0x4
-
-    move-object v3, v1
+    sput-object v0, Lkotlin/text/RegexOption;->UNIX_LINES:Lkotlin/text/RegexOption;
 
     .line 57
-    invoke-direct/range {v3 .. v9}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    new-instance v0, Lkotlin/text/RegexOption;
 
-    sput-object v1, Lkotlin/text/RegexOption;->COMMENTS:Lkotlin/text/RegexOption;
+    const-string v2, "COMMENTS"
 
-    const/4 v2, 0x4
+    const/4 v3, 0x4
 
-    aput-object v1, v0, v2
+    const/4 v4, 0x4
 
-    new-instance v1, Lkotlin/text/RegexOption;
+    move-object v1, v0
 
-    const-string v4, "DOT_MATCHES_ALL"
+    invoke-direct/range {v1 .. v7}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    const/4 v5, 0x5
-
-    const/16 v6, 0x20
-
-    move-object v3, v1
+    sput-object v0, Lkotlin/text/RegexOption;->COMMENTS:Lkotlin/text/RegexOption;
 
     .line 60
-    invoke-direct/range {v3 .. v9}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    new-instance v0, Lkotlin/text/RegexOption;
 
-    sput-object v1, Lkotlin/text/RegexOption;->DOT_MATCHES_ALL:Lkotlin/text/RegexOption;
+    const-string v9, "DOT_MATCHES_ALL"
 
-    const/4 v2, 0x5
+    const/4 v10, 0x5
 
-    aput-object v1, v0, v2
+    const/16 v11, 0x20
 
-    new-instance v1, Lkotlin/text/RegexOption;
+    move-object v8, v0
 
-    const-string v4, "CANON_EQ"
+    invoke-direct/range {v8 .. v14}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    const/4 v5, 0x6
-
-    const/16 v6, 0x80
-
-    move-object v3, v1
+    sput-object v0, Lkotlin/text/RegexOption;->DOT_MATCHES_ALL:Lkotlin/text/RegexOption;
 
     .line 63
-    invoke-direct/range {v3 .. v9}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    new-instance v0, Lkotlin/text/RegexOption;
 
-    sput-object v1, Lkotlin/text/RegexOption;->CANON_EQ:Lkotlin/text/RegexOption;
+    const-string v2, "CANON_EQ"
 
-    const/4 v2, 0x6
+    const/4 v3, 0x6
 
-    aput-object v1, v0, v2
+    const/16 v4, 0x80
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v7}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lkotlin/text/RegexOption;->CANON_EQ:Lkotlin/text/RegexOption;
+
+    invoke-static {}, Lkotlin/text/RegexOption;->$values()[Lkotlin/text/RegexOption;
+
+    move-result-object v0
 
     sput-object v0, Lkotlin/text/RegexOption;->$VALUES:[Lkotlin/text/RegexOption;
 
@@ -295,7 +313,7 @@
 
     sget-object v0, Lkotlin/text/RegexOption;->$VALUES:[Lkotlin/text/RegexOption;
 
-    invoke-virtual {v0}, [Lkotlin/text/RegexOption;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

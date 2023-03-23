@@ -40,10 +40,12 @@
     return-void
 .end method
 
-.method private updateOffsets()V
+
+# virtual methods
+.method applyOffsets()V
     .locals 4
 
-    .line 54
+    .line 51
     iget-object v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->view:Landroid/view/View;
 
     iget v1, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->offsetTop:I
@@ -60,7 +62,7 @@
 
     invoke-static {v0, v1}, Landroidx/core/view/ViewCompat;->offsetTopAndBottom(Landroid/view/View;I)V
 
-    .line 55
+    .line 52
     iget-object v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->view:Landroid/view/View;
 
     iget v1, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->offsetLeft:I
@@ -80,12 +82,10 @@
     return-void
 .end method
 
-
-# virtual methods
 .method public getLayoutLeft()I
     .locals 1
 
-    .line 101
+    .line 98
     iget v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->layoutLeft:I
 
     return v0
@@ -94,7 +94,7 @@
 .method public getLayoutTop()I
     .locals 1
 
-    .line 97
+    .line 94
     iget v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->layoutTop:I
 
     return v0
@@ -103,7 +103,7 @@
 .method public getLeftAndRightOffset()I
     .locals 1
 
-    .line 93
+    .line 90
     iget v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->offsetLeft:I
 
     return v0
@@ -112,7 +112,7 @@
 .method public getTopAndBottomOffset()I
     .locals 1
 
-    .line 89
+    .line 86
     iget v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->offsetTop:I
 
     return v0
@@ -121,7 +121,7 @@
 .method public isHorizontalOffsetEnabled()Z
     .locals 1
 
-    .line 117
+    .line 114
     iget-boolean v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->horizontalOffsetEnabled:Z
 
     return v0
@@ -130,13 +130,13 @@
 .method public isVerticalOffsetEnabled()Z
     .locals 1
 
-    .line 109
+    .line 106
     iget-boolean v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->verticalOffsetEnabled:Z
 
     return v0
 .end method
 
-.method public onViewLayout()V
+.method onViewLayout()V
     .locals 1
 
     .line 46
@@ -157,16 +157,13 @@
 
     iput v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->layoutLeft:I
 
-    .line 50
-    invoke-direct {p0}, Lcom/google/android/material/appbar/ViewOffsetHelper;->updateOffsets()V
-
     return-void
 .end method
 
 .method public setHorizontalOffsetEnabled(Z)V
     .locals 0
 
-    .line 113
+    .line 110
     iput-boolean p1, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->horizontalOffsetEnabled:Z
 
     return-void
@@ -175,7 +172,7 @@
 .method public setLeftAndRightOffset(I)Z
     .locals 1
 
-    .line 80
+    .line 77
     iget-boolean v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->horizontalOffsetEnabled:Z
 
     if-eqz v0, :cond_0
@@ -184,11 +181,11 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 81
+    .line 78
     iput p1, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->offsetLeft:I
 
-    .line 82
-    invoke-direct {p0}, Lcom/google/android/material/appbar/ViewOffsetHelper;->updateOffsets()V
+    .line 79
+    invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetHelper;->applyOffsets()V
 
     const/4 p1, 0x1
 
@@ -203,7 +200,7 @@
 .method public setTopAndBottomOffset(I)Z
     .locals 1
 
-    .line 65
+    .line 62
     iget-boolean v0, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->verticalOffsetEnabled:Z
 
     if-eqz v0, :cond_0
@@ -212,11 +209,11 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 66
+    .line 63
     iput p1, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->offsetTop:I
 
-    .line 67
-    invoke-direct {p0}, Lcom/google/android/material/appbar/ViewOffsetHelper;->updateOffsets()V
+    .line 64
+    invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetHelper;->applyOffsets()V
 
     const/4 p1, 0x1
 
@@ -231,7 +228,7 @@
 .method public setVerticalOffsetEnabled(Z)V
     .locals 0
 
-    .line 105
+    .line 102
     iput-boolean p1, p0, Lcom/google/android/material/appbar/ViewOffsetHelper;->verticalOffsetEnabled:Z
 
     return-void

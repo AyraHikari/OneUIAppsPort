@@ -14,6 +14,16 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/content/Context;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "args"
+        }
+    .end annotation
 
     .line 20
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/command/CommandBase;-><init>(Landroid/content/Context;[Ljava/lang/Object;)V
@@ -165,6 +175,7 @@
     :cond_5
     const-string v0, "DISABLE"
 
+    .line 43
     :goto_4
     invoke-direct {v6, v1, v0}, Lcom/samsung/android/galaxycontinuity/data/HotspotInfoData;-><init>(ZLjava/lang/String;)V
 

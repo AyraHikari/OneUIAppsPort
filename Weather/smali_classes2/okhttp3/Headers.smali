@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/lang/Iterable;
-.implements Lkotlin/jvm/internal/markers/KMappedMarker;
+.implements Lpi/a;
 
 
 # annotations
@@ -19,66 +19,63 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/lang/Iterable<",
-        "Lkotlin/Pair<",
+        "Lbi/n<",
         "+",
         "Ljava/lang/String;",
         "+",
         "Ljava/lang/String;",
         ">;>;",
-        "Lkotlin/jvm/internal/markers/KMappedMarker;"
+        "Lpi/a;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0011\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010(\n\u0002\u0008\u0002\n\u0002\u0010\"\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0010 \n\u0002\u0008\u0006\u0018\u0000 \'2\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00020\u0001:\u0002&\'B\u0015\u0008\u0002\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005\u00a2\u0006\u0002\u0010\u0006J\u0006\u0010\u000b\u001a\u00020\u000cJ\u0013\u0010\r\u001a\u00020\u000e2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0096\u0002J\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0012\u001a\u00020\u0003H\u0086\u0002J\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u0012\u001a\u00020\u0003J\u0012\u0010\u0015\u001a\u0004\u0018\u00010\u00162\u0006\u0010\u0012\u001a\u00020\u0003H\u0007J\u0008\u0010\u0017\u001a\u00020\tH\u0016J\u001b\u0010\u0018\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00020\u0019H\u0096\u0002J\u000e\u0010\u0012\u001a\u00020\u00032\u0006\u0010\u001a\u001a\u00020\tJ\u000c\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u001cJ\u0006\u0010\u001d\u001a\u00020\u001eJ\r\u0010\u0008\u001a\u00020\tH\u0007\u00a2\u0006\u0002\u0008\u001fJ\u0018\u0010 \u001a\u0014\u0012\u0004\u0012\u00020\u0003\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\"0!J\u0008\u0010#\u001a\u00020\u0003H\u0016J\u000e\u0010$\u001a\u00020\u00032\u0006\u0010\u001a\u001a\u00020\tJ\u0014\u0010%\u001a\u0008\u0012\u0004\u0012\u00020\u00030\"2\u0006\u0010\u0012\u001a\u00020\u0003R\u0016\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0007R\u0011\u0010\u0008\u001a\u00020\t8G\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\n\u00a8\u0006("
+        "\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\"\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010(\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010$\n\u0000\n\u0002\u0010\u0011\n\u0002\u0008\u0007\u0018\u0000 \'2\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00020\u0001:\u0002(\'B\u0017\u0008\u0002\u0012\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u00030\"\u00a2\u0006\u0004\u0008%\u0010&J\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u0003H\u0086\u0002J\u0010\u0010\u0007\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0004\u001a\u00020\u0003J\u0012\u0010\t\u001a\u0004\u0018\u00010\u00082\u0006\u0010\u0004\u001a\u00020\u0003H\u0007J\u000f\u0010\r\u001a\u00020\nH\u0007\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u000e\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\nJ\u000e\u0010\u000f\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\nJ\u000c\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0010J\u0014\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u00122\u0006\u0010\u0004\u001a\u00020\u0003J\u0006\u0010\u0015\u001a\u00020\u0014J\u001b\u0010\u0017\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00020\u0016H\u0096\u0002J\u0006\u0010\u0019\u001a\u00020\u0018J\u0013\u0010\u001d\u001a\u00020\u001c2\u0008\u0010\u001b\u001a\u0004\u0018\u00010\u001aH\u0096\u0002J\u0008\u0010\u001e\u001a\u00020\nH\u0016J\u0008\u0010\u001f\u001a\u00020\u0003H\u0016J\u0018\u0010!\u001a\u0014\u0012\u0004\u0012\u00020\u0003\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00120 R\u001a\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u00030\"8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008#\u0010$R\u0011\u0010\r\u001a\u00020\n8G\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000c\u00a8\u0006)"
     }
     d2 = {
         "Lokhttp3/Headers;",
         "",
-        "Lkotlin/Pair;",
+        "Lbi/n;",
         "",
-        "namesAndValues",
+        "name",
+        "get",
+        "Ljava/util/Date;",
+        "getDate",
+        "Ljava/time/Instant;",
+        "getInstant",
         "",
-        "([Ljava/lang/String;)V",
-        "[Ljava/lang/String;",
-        "size",
-        "",
+        "-deprecated_size",
         "()I",
+        "size",
+        "index",
+        "value",
+        "",
+        "names",
+        "",
+        "values",
+        "",
         "byteCount",
         "",
-        "equals",
+        "iterator",
+        "Lokhttp3/Headers$Builder;",
+        "newBuilder",
         "",
         "other",
         "",
-        "get",
-        "name",
-        "getDate",
-        "Ljava/util/Date;",
-        "getInstant",
-        "Ljava/time/Instant;",
+        "equals",
         "hashCode",
-        "iterator",
+        "toString",
         "",
-        "index",
-        "names",
-        "",
-        "newBuilder",
-        "Lokhttp3/Headers$Builder;",
-        "-deprecated_size",
         "toMultimap",
         "",
-        "",
-        "toString",
-        "value",
-        "values",
-        "Builder",
+        "namesAndValues",
+        "[Ljava/lang/String;",
+        "<init>",
+        "([Ljava/lang/String;)V",
         "Companion",
+        "Builder",
         "okhttp"
     }
     k = 0x1
@@ -99,7 +96,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/Headers$Companion;
@@ -116,7 +113,7 @@
 .method private constructor <init>([Ljava/lang/String;)V
     .locals 0
 
-    .line 50
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
@@ -127,7 +124,7 @@
 .method public synthetic constructor <init>([Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 50
+    .line 2
     invoke-direct {p0, p1}, Lokhttp3/Headers;-><init>([Ljava/lang/String;)V
 
     return-void
@@ -146,9 +143,6 @@
         }
     .end annotation
 
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
-
     sget-object v0, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
 
     invoke-virtual {v0, p0}, Lokhttp3/Headers$Companion;->of(Ljava/util/Map;)Lokhttp3/Headers;
@@ -160,8 +154,6 @@
 
 .method public static final varargs of([Ljava/lang/String;)Lokhttp3/Headers;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
 
@@ -176,16 +168,7 @@
 # virtual methods
 .method public final -deprecated_size()I
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "size"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 81
     invoke-virtual {p0}, Lokhttp3/Headers;->size()I
 
     move-result v0
@@ -196,7 +179,7 @@
 .method public final byteCount()J
     .locals 6
 
-    .line 122
+    .line 1
     iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     array-length v1, v0
@@ -205,7 +188,7 @@
 
     int-to-long v1, v1
 
-    .line 124
+    .line 2
     array-length v0, v0
 
     const/4 v3, 0x0
@@ -213,7 +196,7 @@
     :goto_0
     if-ge v3, v0, :cond_0
 
-    .line 125
+    .line 3
     iget-object v4, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     aget-object v4, v4, v3
@@ -237,7 +220,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 178
     instance-of v0, p1, Lokhttp3/Headers;
 
     if-eqz v0, :cond_0
@@ -270,9 +252,8 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 54
     sget-object v0, Lokhttp3/Headers;->Companion:Lokhttp3/Headers$Companion;
 
     iget-object v1, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
@@ -289,9 +270,8 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 60
     invoke-virtual {p0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -313,19 +293,21 @@
 
 .method public final getInstant(Ljava/lang/String;)Ljava/time/Instant;
     .locals 1
+    .annotation build Lorg/codehaus/mojo/animal_sniffer/IgnoreJRERequirement;
+    .end annotation
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 68
+    .line 1
     invoke-virtual {p0, p1}, Lokhttp3/Headers;->getDate(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 69
+    .line 2
     invoke-virtual {p1}, Ljava/util/Date;->toInstant()Ljava/time/Instant;
 
     move-result-object p1
@@ -342,7 +324,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 181
     iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
@@ -358,19 +339,18 @@
         value = {
             "()",
             "Ljava/util/Iterator<",
-            "Lkotlin/Pair<",
+            "Lbi/n<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;>;"
         }
     .end annotation
 
-    .line 132
     invoke-virtual {p0}, Lokhttp3/Headers;->size()I
 
     move-result v0
 
-    new-array v1, v0, [Lkotlin/Pair;
+    new-array v1, v0, [Lbi/n;
 
     const/4 v2, 0x0
 
@@ -385,7 +365,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v3, v4}, Lbi/u;->a(Ljava/lang/Object;Ljava/lang/Object;)Lbi/n;
 
     move-result-object v3
 
@@ -396,7 +376,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {v1}, Lkotlin/jvm/internal/ArrayIteratorKt;->iterator([Ljava/lang/Object;)Ljava/util/Iterator;
+    invoke-static {v1}, Loi/b;->a([Ljava/lang/Object;)Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -406,7 +386,6 @@
 .method public final name(I)Ljava/lang/String;
     .locals 1
 
-    .line 84
     iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     mul-int/lit8 p1, p1, 0x2
@@ -427,18 +406,18 @@
         }
     .end annotation
 
-    .line 91
+    .line 1
     new-instance v0, Ljava/util/TreeSet;
 
-    sget-object v1, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+    sget-object v1, Loi/g0;->a:Loi/g0;
 
-    invoke-static {v1}, Lkotlin/text/StringsKt;->getCASE_INSENSITIVE_ORDER(Lkotlin/jvm/internal/StringCompanionObject;)Ljava/util/Comparator;
+    invoke-static {v1}, Lhl/t;->s(Loi/g0;)Ljava/util/Comparator;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Ljava/util/TreeSet;-><init>(Ljava/util/Comparator;)V
 
-    .line 92
+    .line 2
     invoke-virtual {p0}, Lokhttp3/Headers;->size()I
 
     move-result v1
@@ -448,7 +427,7 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 93
+    .line 3
     invoke-virtual {p0, v2}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v3
@@ -459,17 +438,15 @@
 
     goto :goto_0
 
-    .line 95
+    .line 4
     :cond_0
-    check-cast v0, Ljava/util/Set;
-
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     move-result-object v0
 
     const-string v1, "Collections.unmodifiableSet(result)"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -477,21 +454,19 @@
 .method public final newBuilder()Lokhttp3/Headers$Builder;
     .locals 3
 
-    .line 136
+    .line 1
     new-instance v0, Lokhttp3/Headers$Builder;
 
     invoke-direct {v0}, Lokhttp3/Headers$Builder;-><init>()V
 
-    .line 137
+    .line 2
     invoke-virtual {v0}, Lokhttp3/Headers$Builder;->getNamesAndValues$okhttp()Ljava/util/List;
 
     move-result-object v1
 
-    check-cast v1, Ljava/util/Collection;
-
     iget-object v2, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
-    invoke-static {v1, v2}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lci/v;->z(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     return-object v0
 .end method
@@ -499,7 +474,6 @@
 .method public final size()I
     .locals 1
 
-    .line 74
     iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     array-length v0, v0
@@ -522,18 +496,18 @@
         }
     .end annotation
 
-    .line 195
+    .line 1
     new-instance v0, Ljava/util/TreeMap;
 
-    sget-object v1, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+    sget-object v1, Loi/g0;->a:Loi/g0;
 
-    invoke-static {v1}, Lkotlin/text/StringsKt;->getCASE_INSENSITIVE_ORDER(Lkotlin/jvm/internal/StringCompanionObject;)Ljava/util/Comparator;
+    invoke-static {v1}, Lhl/t;->s(Loi/g0;)Ljava/util/Comparator;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Ljava/util/TreeMap;-><init>(Ljava/util/Comparator;)V
 
-    .line 196
+    .line 2
     invoke-virtual {p0}, Lokhttp3/Headers;->size()I
 
     move-result v1
@@ -543,7 +517,7 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 197
+    .line 3
     invoke-virtual {p0, v2}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v3
@@ -552,7 +526,7 @@
 
     const-string v5, "Locale.US"
 
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "null cannot be cast to non-null type java.lang.String"
 
@@ -564,9 +538,9 @@
 
     const-string v4, "(this as java.lang.String).toLowerCase(locale)"
 
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 198
+    .line 4
     invoke-virtual {v0, v3}, Ljava/util/TreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -575,23 +549,17 @@
 
     if-nez v4, :cond_0
 
-    .line 200
+    .line 5
     new-instance v4, Ljava/util/ArrayList;
 
     const/4 v5, 0x2
 
     invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
 
-    check-cast v4, Ljava/util/List;
+    .line 6
+    invoke-interface {v0, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 201
-    move-object v5, v0
-
-    check-cast v5, Ljava/util/Map;
-
-    invoke-interface {v5, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 203
+    .line 7
     :cond_0
     invoke-virtual {p0, v2}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
@@ -603,22 +571,19 @@
 
     goto :goto_0
 
-    .line 205
     :cond_1
-    check-cast v0, Ljava/util/Map;
-
     return-object v0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 184
+    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 185
+    .line 2
     invoke-virtual {p0}, Lokhttp3/Headers;->size()I
 
     move-result v1
@@ -628,7 +593,7 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 186
+    .line 3
     invoke-virtual {p0, v2}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v3
@@ -637,10 +602,10 @@
 
     const-string v3, ": "
 
-    .line 187
+    .line 4
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 188
+    .line 5
     invoke-virtual {p0, v2}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v3
@@ -649,14 +614,14 @@
 
     const-string v3, "\n"
 
-    .line 189
+    .line 6
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 184
+    .line 7
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -664,7 +629,7 @@
 
     const-string v1, "StringBuilder().apply(builderAction).toString()"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -672,7 +637,6 @@
 .method public final value(I)Ljava/lang/String;
     .locals 1
 
-    .line 87
     iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     mul-int/lit8 p1, p1, 0x2
@@ -699,54 +663,49 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
-
-    .line 100
-    check-cast v0, Ljava/util/List;
-
-    .line 101
+    .line 1
     invoke-virtual {p0}, Lokhttp3/Headers;->size()I
 
-    move-result v1
+    move-result v0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
     :goto_0
-    if-ge v2, v1, :cond_2
+    if-ge v2, v0, :cond_2
 
-    .line 102
+    .line 2
     invoke-virtual {p0, v2}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v3
 
     const/4 v4, 0x1
 
-    invoke-static {p1, v3, v4}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {p1, v3, v4}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
-    .line 103
-    new-instance v0, Ljava/util/ArrayList;
+    .line 3
+    new-instance v1, Ljava/util/ArrayList;
 
     const/4 v3, 0x2
 
-    invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    check-cast v0, Ljava/util/List;
-
-    .line 104
+    .line 4
     :cond_0
     invoke-virtual {p0, v2}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
     add-int/lit8 v2, v2, 0x1
@@ -754,22 +713,22 @@
     goto :goto_0
 
     :cond_2
-    if-eqz v0, :cond_3
+    if-eqz v1, :cond_3
 
-    .line 108
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    .line 5
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
     const-string v0, "Collections.unmodifiableList(result)"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 110
+    .line 6
     :cond_3
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
     move-result-object p1
 

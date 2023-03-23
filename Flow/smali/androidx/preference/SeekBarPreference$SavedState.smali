@@ -38,7 +38,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 411
+    .line 518
     new-instance v0, Landroidx/preference/SeekBarPreference$SavedState$1;
 
     invoke-direct {v0}, Landroidx/preference/SeekBarPreference$SavedState$1;-><init>()V
@@ -51,24 +51,24 @@
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 429
+    .line 536
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 432
+    .line 539
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroidx/preference/SeekBarPreference$SavedState;->mSeekBarValue:I
 
-    .line 433
+    .line 540
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroidx/preference/SeekBarPreference$SavedState;->mMin:I
 
-    .line 434
+    .line 541
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -81,7 +81,7 @@
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 438
+    .line 545
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -92,20 +92,20 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 443
+    .line 550
     invoke-super {p0, p1, p2}, Landroidx/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 446
+    .line 553
     iget p2, p0, Landroidx/preference/SeekBarPreference$SavedState;->mSeekBarValue:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 447
+    .line 554
     iget p2, p0, Landroidx/preference/SeekBarPreference$SavedState;->mMin:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 448
+    .line 555
     iget p2, p0, Landroidx/preference/SeekBarPreference$SavedState;->mMax:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

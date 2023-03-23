@@ -1,20 +1,20 @@
 .class final Lcom/google/android/gms/common/api/internal/zacq;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/common/api/internal/zacs;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private final synthetic zalb:Lcom/google/android/gms/common/api/internal/zacp;
+.field final synthetic zaa:Lcom/google/android/gms/common/api/internal/zact;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/zacp;)V
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/zact;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zacq;->zalb:Lcom/google/android/gms/common/api/internal/zacp;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zacq;->zaa:Lcom/google/android/gms/common/api/internal/zact;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,22 +23,23 @@
 
 
 # virtual methods
-.method public final zac(Lcom/google/android/gms/common/api/internal/BasePendingResult;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
-            "*>;)V"
-        }
-    .end annotation
+.method public final run()V
+    .locals 3
 
-    .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zacq;->zalb:Lcom/google/android/gms/common/api/internal/zacp;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zacq;->zaa:Lcom/google/android/gms/common/api/internal/zact;
 
-    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/zacp;->zakz:Ljava/util/Set;
+    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/zact;->zac(Lcom/google/android/gms/common/api/internal/zact;)Lcom/google/android/gms/common/api/internal/zacs;
 
-    invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+    move-result-object v0
+
+    new-instance v1, Lcom/google/android/gms/common/ConnectionResult;
+
+    const/4 v2, 0x4
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/common/ConnectionResult;-><init>(I)V
+
+    invoke-interface {v0, v1}, Lcom/google/android/gms/common/api/internal/zacs;->zae(Lcom/google/android/gms/common/ConnectionResult;)V
 
     return-void
 .end method

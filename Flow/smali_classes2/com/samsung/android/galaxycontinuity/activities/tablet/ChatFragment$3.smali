@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 125
+    .line 127
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;-><init>()V
@@ -34,15 +42,27 @@
 # virtual methods
 .method public onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "recyclerView",
+            "dx",
+            "dy"
+        }
+    .end annotation
 
-    .line 128
+    .line 130
     invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;->onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
 
     if-nez p2, :cond_0
 
     if-nez p3, :cond_0
 
-    .line 130
+    .line 132
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Z
@@ -51,12 +71,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 131
+    .line 133
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)V
 
-    .line 134
+    .line 136
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
@@ -74,7 +94,7 @@
 
     move-result p1
 
-    .line 136
+    .line 138
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListAdapter;

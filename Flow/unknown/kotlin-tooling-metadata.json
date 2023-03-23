@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "buildSystem": "Gradle",
+  "buildSystemVersion": "6.8.3",
+  "buildPlugin": "org.jetbrains.kotlin.gradle.plugin.KotlinAndroidPluginWrapper",
+  "buildPluginVersion": "1.6.0",
+  "projectSettings": {
+    "isHmppEnabled": false,
+    "isCompatibilityMetadataVariantEnabled": true
+  },
+  "projectTargets": [
+    {
+      "target": "org.jetbrains.kotlin.gradle.plugin.mpp.KotlinAndroidTarget",
+      "platformType": "androidJvm",
+      "extras": {
+        "android": {
+          "sourceCompatibility": "1.8",
+          "targetCompatibility": "1.8"
+        }
+      }
+    }
+  ]
+}

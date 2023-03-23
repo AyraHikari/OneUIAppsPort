@@ -60,6 +60,7 @@
     <string name="air_quality">공기 청정도</string>
     <string name="air_quality_next_tts">이후 일일 대기질 예보</string>
     <string name="air_quality_previous_tts">이전 일일 대기질 예보</string>
+    <string name="alert_title">기상 특보</string>
     <string name="all_added_cities">추가된 모든 도시</string>
     <string name="allow">허용</string>
     <string name="allow_permission_in_settings">이 기능을 사용하려면 설정에서 권한을 허용해 주세요.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">지원되지 않는 동작입니다.</string>
     <string name="apply_daylight_saving_time">서머타임을 적용할까요?</string>
     <string name="as_possible_after_verification">의견이 등록되었어요. 최대한 빠르게 도시 이름을 확인하여 반영하겠습니다.</string>
+    <string name="auto_refresh_on_screen_description">1시간마다 최신 날씨 정보를 자동으로 받아보세요. 이 옵션을 켜면 날씨 정보를 직접 새로고침할 수 없습니다.</string>
+    <string name="auto_refresh_on_the_go">이동 시 자동 새로고침</string>
+    <string name="auto_refresh_on_the_go_advanced">고급</string>
+    <string name="auto_refresh_on_the_go_description">자전거를 타거나, 달리기, 산책, 운전 중에 최신 날씨 정보를 받아볼 수 있습니다. 이 옵션을 켜면 날씨 정보를 직접 새로고침할 수 없습니다.</string>
+    <string name="auto_refresh_on_the_go_simple_description">자전거를 타거나, 달리기, 산책, 운전 중에 최신 날씨 정보를 받아볼 수 있습니다.</string>
     <string name="bottomsheet_action_expand_halfway">반만 펼치기</string>
     <string name="btn_report">보내기</string>
     <string name="button_finish">완료</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">자세한 정보를 보려면 두 번 누르세요.</string>
     <string name="china">중국</string>
     <string name="cities_button">도시</string>
+    <string name="city_added">도시를 추가했어요.</string>
     <string name="city_list_text">도시</string>
     <string name="clear">맑음</string>
     <string name="clear_text_end_icon_content_description">텍스트 삭제</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">지역 날씨 정보를 제공하기 위해 귀하의 디바이스 위치 정보를 콘텐츠 제공자에게 전송합니다.</string>
     <string name="contents_error_msg">서비스를 일시적으로 사용할 수 없어요. 나중에 다시 해보세요.</string>
     <string name="copy">복사</string>
-    <string name="copy_toast_msg">클립보드에 링크 복사됨</string>
     <string name="correct_city_name">도시 이름 수정</string>
     <string name="couldnt_find_location">위치정보를 찾을 수 없음</string>
     <string name="cover_screen_top_sync_dialog_text">메인 화면도 같은 위치로 설정할까요?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">항목을 %d번 위치로 이동했습니다.</string>
     <string name="dragndroplist_drag_start">%d 위치에 있는 항목을 이동하기 시작했습니다.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d번 위치에 있는 항목은 이동할 수 없습니다.</string>
+    <string name="drawer_tips">%s 도움말</string>
     <string name="drawer_tips_message">지역을 추가하거나 삭제하거나 순서를 변경하려면 여기를 누르세요. 홈 화면에 위젯을 여러 개 추가하여 여러 지역을 표시할 수도 있습니다.</string>
     <string name="drawer_tips_message_1">지역을 추가하거나 삭제하거나 순서를 바꾸려면 이 메뉴 하단에서 지역 관리를 누르세요.</string>
     <string name="drawer_tips_message_2">홈 화면에 위젯을 더 추가하여 한번에 여러 지역을 확인할 수 있습니다.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">고급</string>
     <string name="exposed_dropdown_menu_content_description">드롭다운 메뉴 표시</string>
     <string name="failed_to_send_report">오류 보내기 안 됨</string>
-    <string name="fallback_menu_item_copy_link">링크 복사</string>
-    <string name="fallback_menu_item_open_in_browser">브라우저에서 열기</string>
-    <string name="fallback_menu_item_share_link">링크 공유</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">즐겨찾는 지역</string>
     <string name="feel_like_pd_minus_temp">체감온도 -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">날씨 예보 동영상</string>
     <string name="format_km_per_hour">%skm/h</string>
     <string name="format_m_per_hour">%smph</string>
+    <string name="fri">금</string>
     <string name="general">일반</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">내 휴대전화 사용 패턴에 맞춰 알맞은 콘텐츠를 받아보세요.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">내 태블릿 사용 패턴에 맞춰 알맞은 콘텐츠를 받아 보세요.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">날씨 앱을 통해 현재 위치를 포함한 날씨 정보에 접근</string>
     <string name="go_to_website">웹사이트로 이동</string>
     <string name="goto_apps">새 업데이트가 있습니다. 지금 설치할까요?</string>
     <string name="goto_apps_later">나중에</string>
     <string name="goto_apps_now">지금</string>
     <string name="goto_apps_update_title">새 콘텐츠 알림</string>
     <string name="header_tts">머리글</string>
+    <string name="heavy">많음</string>
     <string name="heavy_rain">호우</string>
     <string name="heavy_rain_followed_by_intense_heat">호우 뒤 폭염</string>
     <string name="heavy_rain_followed_by_light_rain">호우 뒤 폭염</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">가시거리</string>
     <string name="life_index_wind">바람</string>
     <string name="life_index_wind_force">풍속</string>
+    <string name="light">적음</string>
     <string name="light_rain_followed_by_heavy_rain">약한 비 뒤 강한 비</string>
     <string name="light_rain_with_some_heavy_rain">약하게 비 오고 가끔 강한 비</string>
     <string name="link_tts">링크</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">검색 결과가 없어요.</string>
     <string name="message_service_not_available">현재 서비스를 이용할 수 없습니다.</string>
     <string name="minus_tts">마이너스</string>
+    <string name="mon">월</string>
     <string name="more">더보기</string>
     <string name="more_cuntact_us">문의하기</string>
     <string name="more_information">더보기</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">기본 날씨 지역을 변경하거나 전체 지역을 관리하려면 여기를 누르세요.</string>
     <string name="new_version_available">%s 앱의 새 버전이 있습니다.</string>
     <string name="new_version_is_available">최신 버전을 확인하세요.</string>
+    <string name="news_menu_show_news">뉴스 표시</string>
+    <string name="news_opt_in_banner_title_text">날씨 위젯에 뉴스를 표시하여 최신 소식을 놓치지 마세요.</string>
+    <string name="news_opt_in_popup_desc_text">날씨 위젯에 %s에서 제공하는 최신 뉴스를 표시하여 국내외 주요 소식을 놓치지 마세요.</string>
+    <string name="news_opt_in_popup_title_text">하나의 위젯에서 날씨와 뉴스 보기</string>
+    <string name="news_request_agree_text">%s에서 뉴스를 가져오려면 누르세요</string>
+    <string name="news_widget_bubble_text">날씨 정보와 뉴스를 함께 받아보세요.</string>
+    <string name="news_widget_dummy_title">오늘의 인기 스토리</string>
+    <string name="news_widget_new_dummy_title">오늘 아침에 알아야 할 5가지</string>
+    <string name="news_widget_oobe_text">뉴스를 추가하려면 여기를 누르세요.</string>
     <string name="next">다음 도시</string>
+    <string name="next_btn">다음</string>
     <string name="next_city">다음 도시의 날씨정보를 확인하려면 두 번 누르세요.</string>
     <string name="night_tts">밤</string>
     <string name="no_application_available">사용 가능한 애플리케이션이 없습니다.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">날씨정보가 없습니다</string>
     <string name="not_in_use">사용 안 함</string>
     <string name="not_now">나중에</string>
+    <string name="not_now_btn">나중에</string>
     <string name="not_selected">선택 안 됨</string>
     <string name="not_set">설정되지 않음</string>
     <string name="nothing_selected">선택한 것이 없습니다.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">빠르고 정확한 위치 인식을 위해 설정 버튼을 누른 후, [위치 인식 방식]을 [GPS, Wi-Fi, 모바일 네트워크]로 설정하세요.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">빠르고 정확한 위치 인식을 위해 설정 버튼을 누른 후, [위치 인식 방식]을 [GPS 및 Wi-Fi]로 설정하세요.</string>
     <string name="notice_gps_trun_off_message_verizon">지역 날씨정보를 보려면 위치 기능을 켠 후 위치 인식 모드가 [높은 정확도]로 설정된 상태인지 확인하세요.</string>
+    <string name="notification_alert_channel_name">기상 특보</string>
     <string name="notification_apps_update_channel_name">업데이트 알림</string>
     <string name="notification_auto_refresh_channel_name">날씨 자동 새로고침</string>
     <string name="notification_dex_channel_name">Samsung DeX에서 날씨</string>
@@ -544,6 +565,7 @@
     <string name="open_app">앱 열기</string>
     <string name="open_source_licences">오픈소스 라이선스</string>
     <string name="other_locations">다른 지역</string>
+    <string name="partly_sunny">일부 맑음</string>
     <string name="password_toggle_content_description">비밀번호 표시</string>
     <string name="paused">일시중지됨</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">"'%1$s'이(가) 클립보드에 복사되었습니다."</string>
     <string name="preview">%s 미리보기</string>
     <string name="previous">이전 도시</string>
+    <string name="previous_btn">이전</string>
     <string name="previous_city">이전 도시의 날씨정보를 확인하려면 두 번 누르세요.</string>
     <string name="privacy_policy">개인정보 처리방침</string>
     <string name="probability_of_rain_text">비가 올 확률</string>
     <string name="protect_your_content">콘텐츠 보호</string>
+    <string name="ps_in">%sin</string>
+    <string name="ps_mm">%smm</string>
     <string name="radar">레이더 및 지도</string>
     <string name="rain">비</string>
     <string name="rain_followed_by_intense_heat">비 온 뒤 폭염</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">날씨정보를 업데이트하려면 상세설정 버튼을 누르고 [애플리케이션 정보 > 권한]으로 이동하여 다음 권한을 허용하고 다시 해보세요.</string>
     <string name="runtime_location_permission_title">권한 허용</string>
     <string name="runtime_oem_grant_permission_desc">%s 앱에서 다음 항목에 접근할 수 있도록 허용된 상태입니다.</string>
+    <string name="sat">토</string>
     <string name="save_button">저장</string>
     <string name="search_menu_title">검색</string>
     <string name="search_most_searched_for">인기 도시</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">새 콘텐츠 사용 가능</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">더보기</string>
+    <string name="sesl_preferecne_badge_description">새 알림</string>
     <string name="sesl_preferencecategory_added_title">머리글</string>
     <string name="sesl_search_hint">검색</string>
     <string name="sesl_searchview_description_clear">검색창 지우기</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">오프라인</string>
     <string name="st_view_less">접기</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">사용 안 함</string>
+    <string name="status_on">사용 중</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">일</string>
     <string name="sunny">맑음</string>
     <string name="sunny_with_some_clouds">맑고 가끔 흐림</string>
     <string name="sunny_with_some_heavy_rain">맑고 가끔 강한 비</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">이전 기기의 날씨 데이터를 복원하려면 여기를 누르세요.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">내 위치정보를 다시 찾으려면 다시 시도 버튼을 누르세요.</string>
     <string name="tap_setting_message_edge_panel">지역 날씨정보를 보려면 위치 기능을 켜세요.</string>
+    <string name="tap_the_settings_icon">설정 아이콘을 누르세요.</string>
     <string name="tap_to_get_the_weather">날씨를 확인하려면 누르세요</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">이용약관</string>
     <string name="the_latest_version">최신 버전입니다.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">알림과 캘린더에도 적용됩니다.</string>
+    <string name="thu">목</string>
     <string name="tick_box_tts">체크박스</string>
     <string name="ticked_tts">선택된 상태입니다.</string>
     <string name="time_am">오전</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">시간별</string>
     <string name="title_select_locations">지역 선택</string>
     <string name="title_theme">테마 날씨</string>
+    <string name="to_continue_agree_to_updated">계속하려면 개정된 %s에 동의해 주세요.</string>
     <string name="to_get_local_weather_chn">"지역 날씨 정보를 확인하기 위해, 귀하의 현재 위치를 날씨 서비스 제공업체에 전송합니다. (제공업체의 %1$s이용약관%2$s 및 %3$s개인정보 처리방침%4$s을 참조하십시오.)
 디바이스의 다른 앱과 서비스에서 검색된 날씨 데이터에 접근하여 해당 앱에 날씨를 표시할 수 있습니다.
 지속적인 날씨 정보를 제공하기 위해 앱을 사용하지 않을 때에도 날씨 서비스 제공업체가 현재 위치에 접근할 수 있습니다."</string>
     <string name="today">오늘</string>
+    <string name="try_it_out_btn">사용해보기</string>
+    <string name="tue">화</string>
+    <string name="turn_on_to_use_precise_location">이 기능을 사용하려면 %s 앱에서 내 위치정보에 항상 접근하고 정확한 위치 사용 기능을 켤 수 있도록 허용해야 합니다. 설정을 누르고 [권한 > 위치]로 이동하세요.</string>
     <string name="tw_title_weather_broadcast">날씨 방송</string>
-    <string name="unable_to_check_for_updates">네트워크 연결이 없어 업데이트를 확인할 수 없습니다.</string>
+    <string name="unable_to_check_for_updates">업데이트를 확인하지 못했습니다. 나중에 다시 해보세요.</string>
     <string name="unable_to_receive_info_msg">정보를 받을 수 없음</string>
     <string name="unticked_tts">선택을 해제했습니다.</string>
     <string name="unused">사용 안 함</string>
     <string name="update">업데이트</string>
     <string name="update_abb8">업데이트</string>
     <string name="update_app">앱 업데이트</string>
+    <string name="updated_tile_chn">업데이트: %s</string>
     <string name="updated_tts">%s 업데이트됨</string>
+    <string name="use_current_location">현재 위치정보 사용</string>
     <string name="use_current_location_agree_popup">"지역 날씨 정보 확인을 위해 귀하의 현재 위치를 날씨 서비스 공급자에게 전송합니다(서비스 공급자의 %1$s개인정보 처리방침%2$s 참조).
 디바이스의 다른 앱 및 서비스에서 해당 앱에 날씨 정보를 표시하기 위해 수집된 날씨 데이터에 액세스할 수 있습니다."</string>
     <string name="use_current_location_and_background_agree_popup">"지역 날씨 정보 확인을 위해 귀하의 현재 위치를 날씨 서비스 공급자에게 전송합니다(서비스 공급자의 %1$s개인정보 처리방침%2$s 참조).
@@ -746,9 +784,16 @@
 날씨 앱의 설정에서 위치 정보 이용을 끌 수 있습니다."</string>
     <string name="use_current_location_body_msg_chn">"“날씨”를 사용하기 전에 주의 깊게 읽어주십시오.
 현재 위치의 날씨를 알고 싶은 경우에는 제3자 서비스 공급자가 귀하의 제품에 지속적으로(서비스를 이용하지 않을 때에도) 접근하고 아래와 같은 특정 데이터를 획득하도록 허용해야 합니다. 그것을 허용하기 전에 제3자 서비스 공급자의 %1$s이용약관%2$s 및 %3$s개인정보 처리방침%4$s을 주의 깊게 읽고 이해하시기 바랍니다. 설정 메뉴에서 “위치”를 끄면 허용을 철회할 수 있습니다. 제품의 다른 애플리케이션과 서비스에서 날씨 정보를 표시하기 위해 수집된 날씨 데이터에 액세스할 수 있습니다."</string>
+    <string name="use_current_location_body_msg_kor">"지역 날씨 확인과 같이 날씨 앱의 일부 기능을 제공하기 위해 현재 위치 정보를 수집하여 사용합니다.
+
+날씨 정보를 계속해서 제공하기 위해 앱을 사용하지 않을 때도 위치 정보가 정기적으로 처리됩니다. 앱 사용을 위해 아래 버튼을 눌러 위 목적으로 위치 정보를 수집하고 처리하는 데 동의해 주세요.
+
+날씨 앱 설정에서 위치 정보 수집 및 사용을 중지할 수 있습니다."</string>
     <string name="use_current_location_body_purpose">목적</string>
     <string name="use_current_location_body_purpose_content">현재 위치에 대한 날씨 정보 제공</string>
     <string name="use_current_location_body_search_provider">서비스 공급자</string>
+    <string name="use_current_location_continue">계속</string>
+    <string name="use_current_location_not_now">나중에</string>
     <string name="use_current_location_off_alert_popup">현재 위치정보를 삭제합니다.</string>
     <string name="useful_informations">생활 관련 팁 및 기타 정보</string>
     <string name="using_as">%s 사용 중</string>
@@ -761,7 +806,7 @@
     <string name="weather">날씨</string>
     <string name="weather_add_current_location">날씨 확인</string>
     <string name="weather_daemon_permission_description">이 앱은 날씨정보를 읽을 수 있습니다.</string>
-    <string name="weather_forecast">날씨정보</string>
+    <string name="weather_forecast">날씨 예보</string>
     <string name="weather_information_not_available_for_selected_city">선택한 지역의 날씨정보는 확인할 수 없어요.</string>
     <string name="weather_map">날씨 지도</string>
     <string name="weather_permissions">권한</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">날씨 팁</string>
     <string name="weathernews">웨더뉴스(주)</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">수</string>
     <string name="weekly_forecast">일별</string>
     <string name="widget_background">위젯 배경</string>
     <string name="widget_empty_text">날씨정보를 추가하려면 누르세요</string>
+    <string name="widget_location">도시 이름</string>
     <string name="widget_name_4x1">날씨 및 시계</string>
     <string name="widget_setting">상세설정</string>
     <string name="widget_setting_background_color">배경 색상</string>

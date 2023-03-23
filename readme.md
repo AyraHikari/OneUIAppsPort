@@ -8,6 +8,7 @@ This is modified version of Samsung apps, it was ported and can be installed to 
 - [Samsung Weather](https://github.com/AyraHikari/OneUIAppsPort/tree/master/Weather)
 - [Samsung Clock](https://github.com/AyraHikari/OneUIAppsPort/tree/master/Clock)
 - [Samsung Flow](https://github.com/AyraHikari/OneUIAppsPort/tree/master/Flow)
+- [Samsung MyFiles](https://github.com/AyraHikari/OneUIAppsPort/tree/master/MyFiles)
 - [Samsung GoodLock](https://github.com/AyraHikari/GoodLock)
 
 ## How to build

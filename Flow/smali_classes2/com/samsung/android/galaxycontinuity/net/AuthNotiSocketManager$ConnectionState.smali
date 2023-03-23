@@ -42,7 +42,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 10
+    .locals 15
 
     .line 30
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
@@ -56,109 +56,108 @@
     sput-object v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_NONE:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     .line 31
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
-    const-string v1, "STATE_LISTEN"
+    const-string v3, "STATE_LISTEN"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_LISTEN:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_LISTEN:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     .line 32
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    new-instance v3, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
-    const-string v1, "STATE_CONNECTING"
+    const-string v5, "STATE_CONNECTING"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     .line 33
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    new-instance v5, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
-    const-string v1, "STATE_CONNECTED"
+    const-string v7, "STATE_CONNECTED"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    sput-object v5, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     .line 34
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    new-instance v7, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
-    const-string v1, "STATE_DISCONNECTED"
+    const-string v9, "STATE_DISCONNECTED"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    sput-object v7, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     .line 35
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    new-instance v9, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
-    const-string v1, "STATE_CLOSING"
+    const-string v11, "STATE_CLOSING"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CLOSING:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    sput-object v9, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CLOSING:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     .line 36
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    new-instance v11, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
-    const-string v1, "STATE_CLOSED"
+    const-string v13, "STATE_CLOSED"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v13, v14}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CLOSED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    sput-object v11, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CLOSED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
-    const/4 v1, 0x7
+    const/4 v13, 0x7
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    new-array v13, v13, [Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+
+    aput-object v0, v13, v2
+
+    aput-object v1, v13, v4
+
+    aput-object v3, v13, v6
+
+    aput-object v5, v13, v8
+
+    aput-object v7, v13, v10
+
+    aput-object v9, v13, v12
+
+    aput-object v11, v13, v14
 
     .line 29
-    sget-object v9, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_NONE:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
-
-    aput-object v9, v1, v2
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_LISTEN:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->STATE_CLOSING:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
-
-    aput-object v2, v1, v7
-
-    aput-object v0, v1, v8
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->$VALUES:[Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
+    sput-object v13, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;->$VALUES:[Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -173,6 +172,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 29
     const-class v0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;

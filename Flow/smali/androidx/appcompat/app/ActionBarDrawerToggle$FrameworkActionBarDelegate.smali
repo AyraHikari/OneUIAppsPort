@@ -26,6 +26,14 @@
 # direct methods
 .method constructor <init>(Landroid/app/Activity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     .line 519
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -68,7 +76,7 @@
     .locals 5
 
     .line 525
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
@@ -152,9 +160,17 @@
 
 .method public setActionBarDescription(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "contentDescRes"
+        }
+    .end annotation
 
     .line 570
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
@@ -193,6 +209,16 @@
 
 .method public setActionBarUpIndicator(Landroid/graphics/drawable/Drawable;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "themeImage",
+            "contentDescRes"
+        }
+    .end annotation
 
     .line 554
     iget-object v0, p0, Landroidx/appcompat/app/ActionBarDrawerToggle$FrameworkActionBarDelegate;->mActivity:Landroid/app/Activity;
@@ -204,7 +230,7 @@
     if-eqz v0, :cond_1
 
     .line 556
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x12
 

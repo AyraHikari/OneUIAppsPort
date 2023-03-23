@@ -33,55 +33,55 @@
 
     sput-object v0, Lorg/spongycastle/crypto/tls/TlsECCUtils;->EXT_ec_point_formats:Ljava/lang/Integer;
 
-    const-string v1, "sect163k1"
+    const-string/jumbo v1, "sect163k1"
 
-    const-string v2, "sect163r1"
+    const-string/jumbo v2, "sect163r1"
 
-    const-string v3, "sect163r2"
+    const-string/jumbo v3, "sect163r2"
 
-    const-string v4, "sect193r1"
+    const-string/jumbo v4, "sect193r1"
 
-    const-string v5, "sect193r2"
+    const-string/jumbo v5, "sect193r2"
 
-    const-string v6, "sect233k1"
+    const-string/jumbo v6, "sect233k1"
 
-    const-string v7, "sect233r1"
+    const-string/jumbo v7, "sect233r1"
 
-    const-string v8, "sect239k1"
+    const-string/jumbo v8, "sect239k1"
 
-    const-string v9, "sect283k1"
+    const-string/jumbo v9, "sect283k1"
 
-    const-string v10, "sect283r1"
+    const-string/jumbo v10, "sect283r1"
 
-    const-string v11, "sect409k1"
+    const-string/jumbo v11, "sect409k1"
 
-    const-string v12, "sect409r1"
+    const-string/jumbo v12, "sect409r1"
 
-    const-string v13, "sect571k1"
+    const-string/jumbo v13, "sect571k1"
 
-    const-string v14, "sect571r1"
+    const-string/jumbo v14, "sect571r1"
 
-    const-string v15, "secp160k1"
+    const-string/jumbo v15, "secp160k1"
 
-    const-string v16, "secp160r1"
+    const-string/jumbo v16, "secp160r1"
 
-    const-string v17, "secp160r2"
+    const-string/jumbo v17, "secp160r2"
 
-    const-string v18, "secp192k1"
+    const-string/jumbo v18, "secp192k1"
 
-    const-string v19, "secp192r1"
+    const-string/jumbo v19, "secp192r1"
 
-    const-string v20, "secp224k1"
+    const-string/jumbo v20, "secp224k1"
 
-    const-string v21, "secp224r1"
+    const-string/jumbo v21, "secp224r1"
 
-    const-string v22, "secp256k1"
+    const-string/jumbo v22, "secp256k1"
 
-    const-string v23, "secp256r1"
+    const-string/jumbo v23, "secp256r1"
 
-    const-string v24, "secp384r1"
+    const-string/jumbo v24, "secp384r1"
 
-    const-string v25, "secp521r1"
+    const-string/jumbo v25, "secp521r1"
 
     const-string v26, "brainpoolP256r1"
 

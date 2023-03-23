@@ -127,7 +127,7 @@
 
 # virtual methods
 .method public doFinal([BI)I
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/spongycastle/crypto/DataLengthException;,
@@ -140,14 +140,11 @@
     :try_start_0
     iget v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
 
-    add-int/2addr v0, p2
+    add-int v1, p2, v0
 
-    array-length v1, p1
+    array-length v2, p1
 
-    if-gt v0, v1, :cond_2
-
-    .line 278
-    iget v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I
+    if-gt v1, v2, :cond_2
 
     const/4 v1, 0x0
 
@@ -163,9 +160,7 @@
 
     iget-object v2, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
 
-    iget-object v3, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->buf:[B
-
-    invoke-interface {v0, v2, v1, v3, v1}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, v2, v1, v2, v1}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     .line 286
     iget v0, p0, Lorg/spongycastle/crypto/BufferedBlockCipher;->bufOff:I

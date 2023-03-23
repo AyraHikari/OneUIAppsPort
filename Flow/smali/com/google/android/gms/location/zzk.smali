@@ -1,149 +1,103 @@
 .class public final Lcom/google/android/gms/location/zzk;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/location/zzj;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field private zza:J
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-wide/high16 v0, -0x8000000000000000L
+
+    iput-wide v0, p0, Lcom/google/android/gms/location/zzk;->zza:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 17
+.method public final zza(J)Lcom/google/android/gms/location/zzk;
+    .locals 2
 
-    move-object/from16 v0, p1
+    const-wide/16 v0, 0x0
 
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+    cmp-long v0, p1, v0
 
-    move-result v1
+    if-ltz v0, :cond_0
 
-    const/4 v2, 0x1
-
-    const-wide/16 v3, 0x32
-
-    const/4 v5, 0x0
-
-    const-wide v6, 0x7fffffffffffffffL
-
-    const v8, 0x7fffffff
-
-    move v10, v2
-
-    move-wide v11, v3
-
-    move v13, v5
-
-    move-wide v14, v6
-
-    move/from16 v16, v8
-
-    :goto_0
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v3
-
-    if-ge v3, v1, :cond_5
-
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
-
-    move-result v3
-
-    invoke-static {v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
-
-    move-result v4
-
-    if-eq v4, v2, :cond_4
-
-    const/4 v5, 0x2
-
-    if-eq v4, v5, :cond_3
-
-    const/4 v5, 0x3
-
-    if-eq v4, v5, :cond_2
-
-    const/4 v5, 0x4
-
-    if-eq v4, v5, :cond_1
-
-    const/4 v5, 0x5
-
-    if-eq v4, v5, :cond_0
-
-    invoke-static {v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_0
-    invoke-static {v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
+    const/4 v0, 0x0
 
-    move-result v16
+    :goto_0
+    const-string v1, "intervalMillis can\'t be negative."
 
-    goto :goto_0
+    .line 1
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    :cond_1
-    invoke-static {v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readLong(Landroid/os/Parcel;I)J
+    iput-wide p1, p0, Lcom/google/android/gms/location/zzk;->zza:J
 
-    move-result-wide v14
-
-    goto :goto_0
-
-    :cond_2
-    invoke-static {v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readFloat(Landroid/os/Parcel;I)F
-
-    move-result v13
-
-    goto :goto_0
-
-    :cond_3
-    invoke-static {v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readLong(Landroid/os/Parcel;I)J
-
-    move-result-wide v11
-
-    goto :goto_0
-
-    :cond_4
-    invoke-static {v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readBoolean(Landroid/os/Parcel;I)Z
-
-    move-result v10
-
-    goto :goto_0
-
-    :cond_5
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
-
-    new-instance v0, Lcom/google/android/gms/location/zzj;
-
-    move-object v9, v0
-
-    invoke-direct/range {v9 .. v16}, Lcom/google/android/gms/location/zzj;-><init>(ZJFJI)V
-
-    return-object v0
+    return-object p0
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public final zzb()Lcom/google/android/gms/location/zzl;
+    .locals 14
 
-    new-array p1, p1, [Lcom/google/android/gms/location/zzj;
+    .line 1
+    iget-wide v0, p0, Lcom/google/android/gms/location/zzk;->zza:J
 
-    return-object p1
+    const-wide/high16 v2, -0x8000000000000000L
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    const-string v1, "Must set intervalMillis."
+
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkState(ZLjava/lang/Object;)V
+
+    .line 2
+    new-instance v0, Lcom/google/android/gms/location/zzl;
+
+    iget-wide v3, p0, Lcom/google/android/gms/location/zzk;->zza:J
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const-wide/16 v11, 0x0
+
+    const/4 v13, 0x0
+
+    move-object v2, v0
+
+    .line 3
+    invoke-direct/range {v2 .. v13}, Lcom/google/android/gms/location/zzl;-><init>(JZLandroid/os/WorkSource;Ljava/lang/String;[IZLjava/lang/String;JLjava/lang/String;)V
+
+    return-object v0
 .end method

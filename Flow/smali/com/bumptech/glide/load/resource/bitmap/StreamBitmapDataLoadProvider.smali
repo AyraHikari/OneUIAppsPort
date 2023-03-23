@@ -67,9 +67,7 @@
     .line 31
     new-instance p1, Lcom/bumptech/glide/load/resource/file/FileToStreamDecoder;
 
-    iget-object p2, p0, Lcom/bumptech/glide/load/resource/bitmap/StreamBitmapDataLoadProvider;->decoder:Lcom/bumptech/glide/load/resource/bitmap/StreamBitmapDecoder;
-
-    invoke-direct {p1, p2}, Lcom/bumptech/glide/load/resource/file/FileToStreamDecoder;-><init>(Lcom/bumptech/glide/load/ResourceDecoder;)V
+    invoke-direct {p1, v0}, Lcom/bumptech/glide/load/resource/file/FileToStreamDecoder;-><init>(Lcom/bumptech/glide/load/ResourceDecoder;)V
 
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bitmap/StreamBitmapDataLoadProvider;->cacheDecoder:Lcom/bumptech/glide/load/resource/file/FileToStreamDecoder;
 

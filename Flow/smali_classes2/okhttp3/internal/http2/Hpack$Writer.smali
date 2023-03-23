@@ -222,17 +222,15 @@
     :cond_0
     iget-object p1, p0, Lokhttp3/internal/http2/Hpack$Writer;->dynamicTable:[Lokhttp3/internal/http2/Header;
 
-    iget v1, p0, Lokhttp3/internal/http2/Hpack$Writer;->nextHeaderIndex:I
+    add-int/lit8 v1, v2, 0x1
 
-    add-int/lit8 v2, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
-    add-int/lit8 v1, v1, 0x1
-
-    add-int/2addr v1, v0
+    add-int/2addr v2, v0
 
     iget v3, p0, Lokhttp3/internal/http2/Hpack$Writer;->headerCount:I
 
-    invoke-static {p1, v2, p1, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p1, v1, p1, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 427
     iget-object p1, p0, Lokhttp3/internal/http2/Hpack$Writer;->dynamicTable:[Lokhttp3/internal/http2/Header;
@@ -603,7 +601,7 @@
 
     iget-object v9, v9, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
-    invoke-static {v9, v5}, Lokhttp3/internal/Util;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v9
 
@@ -619,7 +617,7 @@
 
     iget-object v9, v9, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
-    invoke-static {v9, v5}, Lokhttp3/internal/Util;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v9
 
@@ -670,7 +668,7 @@
 
     iget-object v11, v11, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
-    invoke-static {v11, v4}, Lokhttp3/internal/Util;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v11, v4}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v11
 
@@ -683,7 +681,7 @@
 
     iget-object v11, v11, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
-    invoke-static {v11, v5}, Lokhttp3/internal/Util;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v11, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v11
 

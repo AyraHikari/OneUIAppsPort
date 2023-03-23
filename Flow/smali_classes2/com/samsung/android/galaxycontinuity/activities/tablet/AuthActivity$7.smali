@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 529
+    .line 535
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 1
 
-    .line 532
+    .line 538
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)Ljava/util/concurrent/CountDownLatch;
@@ -47,7 +55,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 533
+    .line 539
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)Ljava/util/concurrent/CountDownLatch;

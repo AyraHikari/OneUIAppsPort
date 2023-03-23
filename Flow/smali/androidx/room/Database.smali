@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/AnnotationDefault;
     value = .subannotation Landroidx/room/Database;
+        autoMigrations = {}
         exportSchema = true
         views = {}
     .end subannotation
@@ -26,6 +27,16 @@
 
 
 # virtual methods
+.method public abstract autoMigrations()[Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()[",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end method
+
 .method public abstract entities()[Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {

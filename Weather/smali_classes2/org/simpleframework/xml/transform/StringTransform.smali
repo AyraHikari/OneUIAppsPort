@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,13 +30,7 @@
 # virtual methods
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 42
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/StringTransform;->read(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -53,13 +46,7 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 42
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/StringTransform;->write(Ljava/lang/String;)Ljava/lang/String;

@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Registreer en beheer maximaal %d computers of tablets in Samsung Flow.
-
-Er kan slechts één computer of tablet tegelijk zijn verbonden met uw telefoon. Kies één apparaat als beide geregistreerde computers of tablets verbinding met uw telefoon proberen te krijgen."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Registreer en beheer maximaal %d computer of tablet in Samsung Flow.
-
-Er kan slechts één computer of tablet tegelijk zijn verbonden met uw telefoon. Kies één apparaat als beide geregistreerde computers of tablets verbinding met uw telefoon proberen te krijgen."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nieuwe meldingen</item>
+        <item quantity="one">%d nieuwe melding</item>
     </plurals>
 </resources>

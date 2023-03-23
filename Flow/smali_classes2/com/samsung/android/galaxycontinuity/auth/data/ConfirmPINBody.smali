@@ -29,6 +29,14 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,6 +49,16 @@
 
 .method public constructor <init>(IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "isUseSamsungPass"
+        }
+    .end annotation
 
     .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

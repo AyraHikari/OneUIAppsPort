@@ -132,7 +132,7 @@
     .line 126
     new-instance v8, Ljava/io/RandomAccessFile;
 
-    const-string v0, "rw"
+    const-string/jumbo v0, "rw"
 
     invoke-direct {v8, p0, v0}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -183,7 +183,7 @@
     .line 144
     new-instance v1, Ljava/io/RandomAccessFile;
 
-    const-string v0, "rw"
+    const-string/jumbo v0, "rw"
 
     invoke-direct {v1, p0, v0}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -217,18 +217,16 @@
 
     invoke-virtual {v2}, Lokio/ByteString;->size()I
 
-    move-result v2
+    move-result v3
 
-    int-to-long v2, v2
+    int-to-long v3, v3
 
-    invoke-virtual {v0, v2, v3}, Lokio/Buffer;->readByteString(J)Lokio/ByteString;
+    invoke-virtual {v0, v3, v4}, Lokio/Buffer;->readByteString(J)Lokio/ByteString;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 151
-    sget-object v3, Lokhttp3/internal/cache2/Relay;->PREFIX_CLEAN:Lokio/ByteString;
-
-    invoke-virtual {v2, v3}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v2}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -284,7 +282,7 @@
     :cond_0
     new-instance p0, Ljava/io/IOException;
 
-    const-string v0, "unreadable cache file"
+    const-string/jumbo v0, "unreadable cache file"
 
     invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 

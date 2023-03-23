@@ -1,23 +1,13 @@
-.class public final Lcom/google/android/gms/location/zzq;
+.class final Lcom/google/android/gms/location/zzq;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/location/GeofencingRequest;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/util/Comparator;
 
 
 # direct methods
-.method public constructor <init>()V
+.method constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,87 +17,66 @@
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 7
+.method public final bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 4
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+    .line 1
+    check-cast p1, Lcom/google/android/gms/location/ActivityTransition;
+
+    check-cast p2, Lcom/google/android/gms/location/ActivityTransition;
+
+    .line 2
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    invoke-static {p2}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    invoke-virtual {p1}, Lcom/google/android/gms/location/ActivityTransition;->getActivityType()I
 
     move-result v0
 
-    const/4 v1, 0x0
+    .line 5
+    invoke-virtual {p2}, Lcom/google/android/gms/location/ActivityTransition;->getActivityType()I
 
-    const/4 v2, 0x0
+    move-result v1
 
-    const-string v3, ""
+    const/4 v2, 0x1
 
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    const/4 v3, -0x1
 
-    move-result v4
+    if-eq v0, v1, :cond_1
 
-    if-ge v4, v0, :cond_3
-
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
-
-    move-result v4
-
-    invoke-static {v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
-
-    move-result v5
-
-    const/4 v6, 0x1
-
-    if-eq v5, v6, :cond_2
-
-    const/4 v6, 0x2
-
-    if-eq v5, v6, :cond_1
-
-    const/4 v6, 0x3
-
-    if-eq v5, v6, :cond_0
-
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
+    if-lt v0, v1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createString(Landroid/os/Parcel;I)Ljava/lang/String;
+    return v3
 
-    move-result-object v3
-
-    goto :goto_0
-
+    .line 6
     :cond_1
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
+    invoke-virtual {p1}, Lcom/google/android/gms/location/ActivityTransition;->getTransitionType()I
 
-    move-result v2
+    move-result p1
+
+    .line 7
+    invoke-virtual {p2}, Lcom/google/android/gms/location/ActivityTransition;->getTransitionType()I
+
+    move-result p2
+
+    if-ne p1, p2, :cond_2
+
+    const/4 v2, 0x0
 
     goto :goto_0
 
     :cond_2
-    sget-object v1, Lcom/google/android/gms/internal/location/zzbh;->CREATOR:Landroid/os/Parcelable$Creator;
+    if-ge p1, p2, :cond_3
 
-    invoke-static {p1, v4, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createTypedList(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
-
-    move-result-object v1
-
-    goto :goto_0
+    move v2, v3
 
     :cond_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
-
-    new-instance p1, Lcom/google/android/gms/location/GeofencingRequest;
-
-    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/location/GeofencingRequest;-><init>(Ljava/util/List;ILjava/lang/String;)V
-
-    return-object p1
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    new-array p1, p1, [Lcom/google/android/gms/location/GeofencingRequest;
-
-    return-object p1
+    :goto_0
+    return v2
 .end method

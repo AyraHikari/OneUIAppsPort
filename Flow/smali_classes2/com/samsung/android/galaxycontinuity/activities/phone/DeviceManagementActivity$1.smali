@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 90
+    .line 99
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -34,8 +42,18 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
-    .line 93
+    .line 102
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
 
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1$1;

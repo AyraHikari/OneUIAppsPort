@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">உள்நுழைக</string>
     <string name="common_signin_button_text_long">Google மூலம் உள்நுழைக</string>
     <string name="copy">நகலெடு</string>
-    <string name="copy_toast_msg">கிளிப்-போர்டுக்கு இணைப்பு நகலெடுக்கப்பட்டது</string>
     <string name="error_icon_content_description">பிழை</string>
     <string name="expand_button_title">மேம்பட்டவை</string>
     <string name="exposed_dropdown_menu_content_description">கீழ் தோன்றல் மெனுவைக் காட்டும் பட்டன்</string>
-    <string name="fallback_menu_item_copy_link">இணைப்பை நகலெடு</string>
-    <string name="fallback_menu_item_open_in_browser">உலாவியில் திற</string>
-    <string name="fallback_menu_item_share_link">இணைப்பைப் பகிர்</string>
     <string name="icon_content_description">உரையாடல் ஐகான்</string>
     <string name="item_view_role_description">தாவல்</string>
     <string name="material_clock_toggle_content_description">AM அல்லது PMமைத் தேர்ந்தெடுக்க உதவும்</string>

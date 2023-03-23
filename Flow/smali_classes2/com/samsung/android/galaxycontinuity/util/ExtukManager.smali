@@ -35,6 +35,18 @@
 
 .method private _getExtuk(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/util/ExtukManager$ExtukListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mcc",
+            "listener"
+        }
+    .end annotation
 
     .line 66
     new-instance p2, Landroid/content/Intent;
@@ -93,6 +105,14 @@
 
 .method private getAndroidId(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 73
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -110,6 +130,16 @@
 
 .method private init(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mcc"
+        }
+    .end annotation
 
     .line 53
     new-instance v0, Lcom/samsung/android/galaxycontinuity/util/ExtukManager$1;
@@ -123,6 +153,14 @@
 
 .method private isChina(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mcc"
+        }
+    .end annotation
 
     const-string v0, "460"
 
@@ -158,6 +196,16 @@
 
 .method private isPackageExist(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -189,6 +237,16 @@
 # virtual methods
 .method public getmExtuk(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mcc"
+        }
+    .end annotation
 
     .line 25
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/ExtukManager;->mExtuk:Ljava/lang/String;
@@ -212,7 +270,7 @@
 
     if-eqz v0, :cond_2
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1d
 

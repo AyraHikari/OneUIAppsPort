@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Регистрирайте и управлявайте до %d компютъра или таблета в Samsung Flow.
-
-Само един компютър или таблет може да се свърже с телефона наведнъж. Трябва да изберете единия, когато и двата регистрирани компютъра или таблета се опитват да се свържат с телефона."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Регистрирайте и управлявайте до %d компютър или таблет в Samsung Flow.
-
-Само един компютър или таблет може да се свърже с телефона наведнъж. Трябва да изберете единия, когато и двата регистрирани компютъра или таблета се опитват да се свържат с телефона."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нови известия</item>
+        <item quantity="one">%d ново известие</item>
     </plurals>
 </resources>

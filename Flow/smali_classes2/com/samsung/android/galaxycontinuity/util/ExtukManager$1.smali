@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/util/ExtukManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 53
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/ExtukManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/ExtukManager;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onResult(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "extuk"
+        }
+    .end annotation
 
     .line 56
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/ExtukManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/ExtukManager;

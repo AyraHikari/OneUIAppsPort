@@ -17,6 +17,8 @@
 
 .field private cnt:Landroid/widget/TextView;
 
+.field private cntLayout:Landroid/widget/RelativeLayout;
+
 .field private flowKey:Ljava/lang/String;
 
 .field id:J
@@ -29,6 +31,8 @@
 
 .field private mainIconBackground:Landroid/widget/ImageView;
 
+.field private messageIcon:Landroid/widget/ImageView;
+
 .field private sender:Ljava/lang/String;
 
 .field private time:Landroid/widget/TextView;
@@ -39,6 +43,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -50,32 +62,42 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 36
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x0
 
-    .line 49
+    .line 51
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->isChat:Z
 
-    .line 50
+    .line 52
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->isReplyEnable:Z
 
     const-wide/16 p1, 0x0
 
-    .line 51
+    .line 53
     iput-wide p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->id:J
 
     const-string p1, ""
 
-    .line 53
+    .line 55
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->flowKey:Ljava/lang/String;
 
-    .line 54
+    .line 56
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->applicationName:Ljava/lang/String;
 
-    .line 55
+    .line 57
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->sender:Ljava/lang/String;
 
     return-void
@@ -83,10 +105,20 @@
 
 .method private isSameDay(Ljava/util/Calendar;Ljava/util/Calendar;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "calendar1",
+            "calendar2"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 200
+    .line 210
     invoke-virtual {p1, v0}, Ljava/util/Calendar;->get(I)I
 
     move-result v1
@@ -99,7 +131,7 @@
 
     const/4 v1, 0x2
 
-    .line 201
+    .line 211
     invoke-virtual {p1, v1}, Ljava/util/Calendar;->get(I)I
 
     move-result v2
@@ -112,7 +144,7 @@
 
     const/4 v1, 0x5
 
-    .line 202
+    .line 212
     invoke-virtual {p1, v1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
@@ -134,18 +166,26 @@
 
 .method private setDateTime(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
-    .line 182
+    .line 192
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 183
+    .line 193
     iget-wide v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
 
     invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->setTimeInMillis(J)V
 
-    .line 185
+    .line 195
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v1
@@ -156,15 +196,15 @@
 
     if-eqz v0, :cond_1
 
-    .line 186
+    .line 196
     new-instance v0, Ljava/text/SimpleDateFormat;
 
-    .line 187
+    .line 197
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
 
-    .line 188
+    .line 198
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -182,13 +222,13 @@
     :cond_0
     const-string v2, "hh:mm"
 
-    .line 187
+    .line 197
     :goto_0
     invoke-static {v1, v2}, Landroid/text/format/DateFormat;->getBestDateTimePattern(Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 188
+    .line 198
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v2
@@ -197,16 +237,16 @@
 
     goto :goto_1
 
-    .line 190
+    .line 200
     :cond_1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
-    .line 191
+    .line 201
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
 
-    const-string v2, "yy/M/d"
+    const-string/jumbo v2, "yy/M/d"
 
     invoke-static {v1, v2}, Landroid/text/format/DateFormat;->getBestDateTimePattern(Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
 
@@ -218,7 +258,7 @@
 
     invoke-direct {v0, v1, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 194
+    .line 204
     :goto_1
     iget-wide v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
 
@@ -230,7 +270,7 @@
 
     move-result-object p1
 
-    .line 196
+    .line 206
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->time:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -240,32 +280,40 @@
 
 .method private setIcon(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
-    .line 153
+    .line 162
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 154
+    .line 163
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIcon:Landroid/widget/ImageView;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 156
+    .line 165
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1, v1, v1, v1}, Landroid/widget/ImageView;->setPadding(IIII)V
 
-    .line 157
+    .line 166
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1, v1, v1, v1}, Landroid/widget/ImageView;->setPadding(IIII)V
 
-    .line 158
+    .line 167
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->largeIcon:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -274,7 +322,7 @@
 
     if-nez v0, :cond_0
 
-    .line 159
+    .line 168
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->largeIcon:Ljava/lang/String;
@@ -287,7 +335,7 @@
 
     goto :goto_1
 
-    .line 160
+    .line 169
     :cond_0
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->icon:Ljava/lang/String;
 
@@ -297,7 +345,7 @@
 
     if-nez v0, :cond_1
 
-    .line 161
+    .line 170
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->icon:Ljava/lang/String;
@@ -310,7 +358,7 @@
 
     goto :goto_1
 
-    .line 162
+    .line 171
     :cond_1
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->smallIcon:Ljava/lang/String;
 
@@ -320,14 +368,16 @@
 
     if-nez v0, :cond_3
 
-    .line 163
+    .line 172
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->smallIcon:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 164
+    if-eqz v0, :cond_4
+
+    .line 174
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
@@ -349,7 +399,7 @@
 
     move-result v2
 
-    .line 166
+    .line 176
     :goto_0
     sget-object v3, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -357,22 +407,22 @@
 
     move-result-object v2
 
-    .line 167
+    .line 177
     new-instance v3, Landroid/graphics/Canvas;
 
     invoke-direct {v3, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 168
+    .line 178
     iget p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->notificationColor:I
 
     invoke-virtual {v3, p1}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 169
+    .line 179
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 170
+    .line 180
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
@@ -387,48 +437,57 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 171
+    .line 181
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIcon:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     goto :goto_1
 
-    .line 174
+    .line 184
     :cond_3
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
-    const/high16 v0, 0x7f0e0000
+    const/high16 v0, 0x7f0f0000
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
+    :cond_4
     :goto_1
     return-void
 .end method
 
 .method private setText(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
-    .line 125
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->cnt:Landroid/widget/TextView;
+    .line 129
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->cntLayout:Landroid/widget/RelativeLayout;
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 126
+    .line 130
     iget v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
 
     const/4 v2, 0x0
 
     if-lez v0, :cond_0
 
-    .line 127
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->cnt:Landroid/widget/TextView;
+    .line 131
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->cntLayout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 128
+    .line 132
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->cnt:Landroid/widget/TextView;
 
     iget v3, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
@@ -439,36 +498,55 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 131
+    .line 135
     :cond_0
     iget-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isAlarmOff:Z
 
     if-eqz v0, :cond_1
 
-    .line 132
+    .line 136
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->alarmIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 134
+    .line 138
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->alarmIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 136
+    .line 140
     :goto_0
+    iget-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isReplyEnable:Z
+
+    if-eqz v0, :cond_2
+
+    .line 141
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->messageIcon:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    goto :goto_1
+
+    .line 143
+    :cond_2
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->messageIcon:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 145
+    :goto_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isRTL()Z
 
     move-result v0
 
-    const-string v3, "\u200e"
+    const-string/jumbo v3, "\u200e"
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    .line 137
+    .line 146
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->title:Landroid/widget/TextView;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -477,11 +555,17 @@
 
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->title:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -489,47 +573,47 @@
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    goto :goto_1
+    goto :goto_2
 
-    .line 139
-    :cond_2
+    .line 148
+    :cond_3
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->title:Landroid/widget/TextView;
 
     iget-object v4, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->title:Ljava/lang/String;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 141
-    :goto_1
+    .line 150
+    :goto_2
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
-    .line 142
+    .line 151
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->body:Landroid/widget/TextView;
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 144
-    :cond_3
+    .line 153
+    :cond_4
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->body:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 145
+    .line 154
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isRTL()Z
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
-    .line 146
+    .line 155
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->body:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -538,29 +622,35 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 148
-    :cond_4
+    .line 157
+    :cond_5
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->body:Landroid/widget/TextView;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    :goto_2
+    :goto_3
     return-void
 .end method
 
@@ -568,45 +658,53 @@
 # virtual methods
 .method public bind(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 2
-
-    .line 75
-    invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setTag(Ljava/lang/Object;)V
-
-    .line 76
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setText(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
-
-    .line 77
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setIcon(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
-
-    .line 78
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setDateTime(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
     .line 79
+    invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setTag(Ljava/lang/Object;)V
+
+    .line 80
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setText(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
+
+    .line 81
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setIcon(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
+
+    .line 82
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->setDateTime(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
+
+    .line 83
     iget-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isChat:Z
 
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->isChat:Z
 
-    .line 80
+    .line 84
     iget-wide v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->id:J
 
     iput-wide v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->id:J
 
-    .line 81
+    .line 85
     iget-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isReplyEnable:Z
 
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->isReplyEnable:Z
 
-    .line 82
+    .line 86
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->flowKey:Ljava/lang/String;
 
-    .line 83
+    .line 87
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->applicationName:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->applicationName:Ljava/lang/String;
 
-    .line 84
+    .line 88
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->sender:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -625,7 +723,7 @@
     :goto_0
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->sender:Ljava/lang/String;
 
-    .line 85
+    .line 89
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->checkBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -636,14 +734,14 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 86
+    .line 90
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->checkBox:Landroid/widget/CheckBox;
 
     iget-boolean p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isChecked:Z
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 87
+    .line 91
     :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->checkBox:Landroid/widget/CheckBox;
 
@@ -655,7 +753,7 @@
 .method public getApplicationName()Ljava/lang/String;
     .locals 1
 
-    .line 109
+    .line 113
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->applicationName:Ljava/lang/String;
 
     return-object v0
@@ -664,7 +762,7 @@
 .method public getFlowKey()Ljava/lang/String;
     .locals 1
 
-    .line 105
+    .line 109
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->flowKey:Ljava/lang/String;
 
     return-object v0
@@ -673,7 +771,7 @@
 .method public getNotiId()J
     .locals 2
 
-    .line 101
+    .line 105
     iget-wide v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->id:J
 
     return-wide v0
@@ -682,7 +780,7 @@
 .method public getSender()Ljava/lang/String;
     .locals 1
 
-    .line 113
+    .line 117
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->sender:Ljava/lang/String;
 
     return-object v0
@@ -691,7 +789,7 @@
 .method public getText()Ljava/lang/String;
     .locals 1
 
-    .line 121
+    .line 125
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->body:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -708,7 +806,7 @@
 .method public getTitle()Ljava/lang/String;
     .locals 1
 
-    .line 117
+    .line 121
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->title:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -725,7 +823,7 @@
 .method public isChat()Z
     .locals 1
 
-    .line 97
+    .line 101
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->isChat:Z
 
     return v0
@@ -734,7 +832,7 @@
 .method public isReplyEnable()Z
     .locals 1
 
-    .line 95
+    .line 99
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->isReplyEnable:Z
 
     return v0
@@ -743,12 +841,12 @@
 .method protected onFinishInflate()V
     .locals 1
 
-    .line 59
+    .line 61
     invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
 
-    const v0, 0x7f090054
+    const v0, 0x7f0a006a
 
-    .line 61
+    .line 63
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -757,9 +855,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->title:Landroid/widget/TextView;
 
-    const v0, 0x7f0901a5
+    const v0, 0x7f0a029a
 
-    .line 62
+    .line 64
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -768,9 +866,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->time:Landroid/widget/TextView;
 
-    const v0, 0x7f090146
+    const v0, 0x7f0a01d6
 
-    .line 63
+    .line 65
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -779,9 +877,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIcon:Landroid/widget/ImageView;
 
-    const v0, 0x7f090147
+    const v0, 0x7f0a01d7
 
-    .line 64
+    .line 66
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -790,9 +888,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->mainIconBackground:Landroid/widget/ImageView;
 
-    const v0, 0x7f09017b
+    const v0, 0x7f0a0256
 
-    .line 67
+    .line 69
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -801,9 +899,20 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->cnt:Landroid/widget/TextView;
 
-    const v0, 0x7f09006d
+    const v0, 0x7f0a0257
 
-    .line 68
+    .line 70
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/RelativeLayout;
+
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->cntLayout:Landroid/widget/RelativeLayout;
+
+    const v0, 0x7f0a008d
+
+    .line 71
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -812,9 +921,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->body:Landroid/widget/TextView;
 
-    const v0, 0x7f090095
+    const v0, 0x7f0a00c4
 
-    .line 69
+    .line 72
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -823,9 +932,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->checkBox:Landroid/widget/CheckBox;
 
-    const v0, 0x7f09004c
+    const v0, 0x7f0a005c
 
-    .line 70
+    .line 73
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -834,13 +943,32 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->alarmIcon:Landroid/widget/ImageView;
 
+    const v0, 0x7f0a020f
+
+    .line 74
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->messageIcon:Landroid/widget/ImageView;
+
     return-void
 .end method
 
 .method public setCheckBoxVisibility(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 
-    .line 207
+    .line 217
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->checkBox:Landroid/widget/CheckBox;
 
     if-eqz p1, :cond_0
@@ -860,8 +988,16 @@
 
 .method public setLongPressListener(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter$OnItemClickListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 216
+    .line 226
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem$1;
 
     invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter$OnItemClickListener;)V
@@ -873,8 +1009,16 @@
 
 .method public setOnCheckBoxTouchListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 212
+    .line 222
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;->checkBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V

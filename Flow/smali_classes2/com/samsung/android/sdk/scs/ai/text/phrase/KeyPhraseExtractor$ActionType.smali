@@ -46,28 +46,26 @@
     sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;->MANUAL:Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
 
     .line 285
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
+    new-instance v1, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
 
-    const-string v1, "AUTO"
+    const-string v3, "AUTO"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;->AUTO:Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
+    sput-object v1, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;->AUTO:Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
+    new-array v3, v3, [Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 277
-    sget-object v4, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;->MANUAL:Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;->$VALUES:[Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
+    sput-object v3, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;->$VALUES:[Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor$ActionType;
 
     return-void
 .end method

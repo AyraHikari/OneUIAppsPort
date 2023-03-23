@@ -59,6 +59,20 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fileName",
+            "fileSize",
+            "fileBinary",
+            "fileUri"
+        }
+    .end annotation
 
     .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -80,6 +94,21 @@
 
 .method public constructor <init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_aSrcFiles",
+            "_lFileSizes",
+            "_aFileBinarys",
+            "aFileUris"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

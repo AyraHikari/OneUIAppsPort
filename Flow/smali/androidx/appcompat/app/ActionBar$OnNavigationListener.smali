@@ -19,4 +19,14 @@
 
 # virtual methods
 .method public abstract onNavigationItemSelected(IJ)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "itemPosition",
+            "itemId"
+        }
+    .end annotation
 .end method

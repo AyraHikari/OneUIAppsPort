@@ -1,25 +1,25 @@
 .class final Lokhttp3/Handshake$peerCertificates$2;
-.super Lkotlin/jvm/internal/Lambda;
+.super Loi/m;
 .source "Handshake.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lni/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lkotlin/jvm/functions/Function0;)V
+    value = Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lni/a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function0<",
+        "Loi/m;",
+        "Lni/a<",
         "Ljava/util/List<",
         "+",
         "Ljava/security/cert/Certificate;",
@@ -52,18 +52,18 @@
 
 
 # instance fields
-.field final synthetic $peerCertificatesFn:Lkotlin/jvm/functions/Function0;
+.field public final synthetic $peerCertificatesFn:Lni/a;
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function0;)V
+.method public constructor <init>(Lni/a;)V
     .locals 0
 
-    iput-object p1, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lkotlin/jvm/functions/Function0;
+    iput-object p1, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lni/a;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    invoke-direct {p0, p1}, Loi/m;-><init>(I)V
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 34
+    .line 1
     invoke-virtual {p0}, Lokhttp3/Handshake$peerCertificates$2;->invoke()Ljava/util/List;
 
     move-result-object v0
@@ -92,11 +92,11 @@
         }
     .end annotation
 
-    .line 53
+    .line 2
     :try_start_0
-    iget-object v0, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lkotlin/jvm/functions/Function0;
+    iget-object v0, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lni/a;
 
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {v0}, Lni/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -106,9 +106,9 @@
 
     goto :goto_0
 
-    .line 55
+    .line 3
     :catch_0
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
     move-result-object v0
 

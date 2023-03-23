@@ -43,15 +43,3 @@
         0x0
     }
 .end annotation
-
-.annotation runtime Lkotlin/annotation/Retention;
-    value = .enum Lkotlin/annotation/AnnotationRetention;->BINARY:Lkotlin/annotation/AnnotationRetention;
-.end annotation
-
-.annotation runtime Lkotlin/annotation/Target;
-    allowedTargets = {
-        .enum Lkotlin/annotation/AnnotationTarget;->CONSTRUCTOR:Lkotlin/annotation/AnnotationTarget;,
-        .enum Lkotlin/annotation/AnnotationTarget;->CLASS:Lkotlin/annotation/AnnotationTarget;,
-        .enum Lkotlin/annotation/AnnotationTarget;->FUNCTION:Lkotlin/annotation/AnnotationTarget;
-    }
-.end annotation

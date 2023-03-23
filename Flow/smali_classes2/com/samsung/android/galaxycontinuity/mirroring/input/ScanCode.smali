@@ -677,6 +677,14 @@
 
 .method private static _getKeyCodeConstan(Ljava/lang/String;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keycodeStr"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -714,7 +722,11 @@
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -738,6 +750,14 @@
 
 .method public static checkScanCode(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scancode"
+        }
+    .end annotation
 
     const/16 v0, 0x47
 
@@ -2665,9 +2685,9 @@
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 411
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2678,13 +2698,13 @@
 
     move-result-object v8
 
-    const/16 v10, 0xd4
+    const/16 v14, 0xd4
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 412
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2695,13 +2715,13 @@
 
     move-result-object v8
 
-    const/16 v10, 0xd8
+    const/16 v14, 0xd8
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 413
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2712,13 +2732,13 @@
 
     move-result-object v8
 
-    const/16 v10, 0x75
+    const/16 v14, 0x75
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 414
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2729,13 +2749,13 @@
 
     move-result-object v8
 
-    const/16 v10, 0x76
+    const/16 v14, 0x76
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 415
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2746,13 +2766,13 @@
 
     move-result-object v8
 
-    const/16 v10, 0x52
+    const/16 v14, 0x52
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v14
+    move-result-object v13
 
-    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 416
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2763,18 +2783,20 @@
 
     move-result-object v8
 
-    const/16 v14, 0x56
+    const/16 v13, 0x56
 
-    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v13
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 417
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/16 v8, 0x52
+
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
@@ -2787,13 +2809,13 @@
 
     move-result-object v8
 
-    const/16 v10, 0xd2
+    const/16 v13, 0xd2
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v13
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 419
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2802,9 +2824,9 @@
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v13
 
-    invoke-virtual {v0, v10, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v13, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 420
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2815,13 +2837,13 @@
 
     move-result-object v8
 
-    sget v10, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->KEYCODE_QPANEL_ON_OFF:I
+    sget v13, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->KEYCODE_QPANEL_ON_OFF:I
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 421
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -2832,13 +2854,13 @@
 
     move-result-object v8
 
-    const/16 v10, 0x40
+    const/16 v14, 0x40
 
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v0, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 422
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -3363,9 +3385,7 @@
 
     move-result-object v6
 
-    sget v8, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->KEYCODE_LANG:I
-
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
@@ -4213,9 +4233,7 @@
 
     move-result-object v6
 
-    sget v8, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->KEYCODE_LANG:I
-
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
@@ -4671,9 +4689,7 @@
 
     move-result-object v2
 
-    sget v3, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->KEYCODE_QPANEL_ON_OFF:I
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
@@ -4836,6 +4852,14 @@
 
 .method public static getKeyByScancode(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scanCode"
+        }
+    .end annotation
 
     .line 554
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;
@@ -4877,6 +4901,14 @@
 
 .method public static getKeyCodeConstant(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keycode"
+        }
+    .end annotation
 
     const/16 v0, 0x3ea
 
@@ -5130,6 +5162,14 @@
 
 .method public static getScancodeByKey(I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     .line 561
     sget-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->mCodeMap:Ljava/util/HashMap;

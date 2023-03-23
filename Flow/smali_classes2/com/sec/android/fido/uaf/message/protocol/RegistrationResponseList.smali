@@ -245,13 +245,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/protocol/RegistrationResponseList;->uafRegResponse:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const/16 v1, 0x7d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -280,7 +286,7 @@
     move v0, v1
 
     :goto_0
-    const-string v3, "uafRegResponse is NULL"
+    const-string/jumbo v3, "uafRegResponse is NULL"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -293,7 +299,7 @@
 
     xor-int/2addr v0, v2
 
-    const-string v3, "uafRegResponse is EMPTY"
+    const-string/jumbo v3, "uafRegResponse is EMPTY"
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
@@ -332,7 +338,7 @@
     move v5, v1
 
     :goto_2
-    const-string v6, "uafRegResponse has NULL"
+    const-string/jumbo v6, "uafRegResponse has NULL"
 
     .line 98
     invoke-static {v5, v6}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V

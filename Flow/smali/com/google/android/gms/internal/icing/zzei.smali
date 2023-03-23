@@ -1,12 +1,42 @@
 .class final Lcom/google/android/gms/internal/icing/zzei;
-.super Lcom/google/android/gms/internal/icing/zzeg;
+.super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/icing/zzep;
 
 
-# static fields
-.field private static final zzlt:Ljava/lang/Class;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcom/google/android/gms/internal/icing/zzep<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final zza:Lcom/google/android/gms/internal/icing/zzee;
+
+.field private final zzb:Lcom/google/android/gms/internal/icing/zzfd;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/lang/Class<",
+            "Lcom/google/android/gms/internal/icing/zzfd<",
+            "**>;"
+        }
+    .end annotation
+.end field
+
+.field private final zzc:Z
+
+.field private final zzd:Lcom/google/android/gms/internal/icing/zzcq;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/internal/icing/zzcq<",
             "*>;"
         }
     .end annotation
@@ -14,356 +44,288 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 49
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/gms/internal/icing/zzei;->zzlt:Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/icing/zzeg;-><init>(Lcom/google/android/gms/internal/icing/zzej;)V
-
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lcom/google/android/gms/internal/icing/zzej;)V
-    .locals 0
-
-    .line 48
-    invoke-direct {p0}, Lcom/google/android/gms/internal/icing/zzei;-><init>()V
-
-    return-void
-.end method
-
-.method private static zzb(Ljava/lang/Object;J)Ljava/util/List;
+.method private constructor <init>(Lcom/google/android/gms/internal/icing/zzfd;Lcom/google/android/gms/internal/icing/zzcq;Lcom/google/android/gms/internal/icing/zzee;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<E:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Object;",
-            "J)",
-            "Ljava/util/List<",
-            "TE;>;"
+            "(",
+            "Lcom/google/android/gms/internal/icing/zzfd<",
+            "**>;",
+            "Lcom/google/android/gms/internal/icing/zzcq<",
+            "*>;",
+            "Lcom/google/android/gms/internal/icing/zzee;",
+            ")V"
         }
     .end annotation
 
-    .line 47
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/internal/icing/zzgi;->zzo(Ljava/lang/Object;J)Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p0
+    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzei;->zzb:Lcom/google/android/gms/internal/icing/zzfd;
 
-    check-cast p0, Ljava/util/List;
+    .line 1
+    invoke-virtual {p2, p3}, Lcom/google/android/gms/internal/icing/zzcq;->zza(Lcom/google/android/gms/internal/icing/zzee;)Z
 
-    return-object p0
+    move-result p1
+
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/icing/zzei;->zzc:Z
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
+
+    iput-object p3, p0, Lcom/google/android/gms/internal/icing/zzei;->zza:Lcom/google/android/gms/internal/icing/zzee;
+
+    return-void
+.end method
+
+.method static zzg(Lcom/google/android/gms/internal/icing/zzfd;Lcom/google/android/gms/internal/icing/zzcq;Lcom/google/android/gms/internal/icing/zzee;)Lcom/google/android/gms/internal/icing/zzei;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/google/android/gms/internal/icing/zzfd<",
+            "**>;",
+            "Lcom/google/android/gms/internal/icing/zzcq<",
+            "*>;",
+            "Lcom/google/android/gms/internal/icing/zzee;",
+            ")",
+            "Lcom/google/android/gms/internal/icing/zzei<",
+            "TT;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzei;
+
+    .line 1
+    invoke-direct {v0, p0, p1, p2}, Lcom/google/android/gms/internal/icing/zzei;-><init>(Lcom/google/android/gms/internal/icing/zzfd;Lcom/google/android/gms/internal/icing/zzcq;Lcom/google/android/gms/internal/icing/zzee;)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method final zza(Ljava/lang/Object;J)V
-    .locals 3
+.method public final zza(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)Z"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzb:Lcom/google/android/gms/internal/icing/zzfd;
+
+    .line 1
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzfd;->zzb(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/internal/icing/zzei;->zzb:Lcom/google/android/gms/internal/icing/zzfd;
 
     .line 2
-    invoke-static {p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzgi;->zzo(Ljava/lang/Object;J)Ljava/lang/Object;
+    invoke-virtual {v1, p2}, Lcom/google/android/gms/internal/icing/zzfd;->zzb(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
-
-    check-cast v0, Ljava/util/List;
+    move-result-object v1
 
     .line 3
-    instance-of v1, v0, Lcom/google/android/gms/internal/icing/zzeh;
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    if-eqz v1, :cond_0
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzc:Z
+
+    if-nez v0, :cond_1
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
 
     .line 4
-    check-cast v0, Lcom/google/android/gms/internal/icing/zzeh;
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzcq;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/icing/zzcu;
 
-    invoke-interface {v0}, Lcom/google/android/gms/internal/icing/zzeh;->zzce()Lcom/google/android/gms/internal/icing/zzeh;
-
-    move-result-object v0
-
-    goto :goto_0
+    iget-object p1, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
 
     .line 5
-    :cond_0
-    sget-object v1, Lcom/google/android/gms/internal/icing/zzei;->zzlt:Ljava/lang/Class;
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/internal/icing/zzcq;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/icing/zzcu;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 p1, 0x0
 
-    move-result-object v2
+    .line 6
+    throw p1
+.end method
 
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+.method public final zzb(Ljava/lang/Object;)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
 
-    move-result v1
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzb:Lcom/google/android/gms/internal/icing/zzfd;
 
-    if-eqz v1, :cond_1
-
-    return-void
-
-    .line 7
-    :cond_1
-    instance-of v1, v0, Lcom/google/android/gms/internal/icing/zzfg;
-
-    if-eqz v1, :cond_3
-
-    instance-of v1, v0, Lcom/google/android/gms/internal/icing/zzdx;
-
-    if-eqz v1, :cond_3
-
-    .line 8
-    check-cast v0, Lcom/google/android/gms/internal/icing/zzdx;
-
-    invoke-interface {v0}, Lcom/google/android/gms/internal/icing/zzdx;->zzag()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    .line 9
-    invoke-interface {v0}, Lcom/google/android/gms/internal/icing/zzdx;->zzah()V
-
-    :cond_2
-    return-void
-
-    .line 11
-    :cond_3
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    .line 1
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzfd;->zzb(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 12
-    :goto_0
-    invoke-static {p1, p2, p3, v0}, Lcom/google/android/gms/internal/icing/zzgi;->zza(Ljava/lang/Object;JLjava/lang/Object;)V
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/icing/zzei;->zzc:Z
+
+    if-nez v1, :cond_0
+
+    return v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
+
+    .line 2
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzcq;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/icing/zzcu;
+
+    const/4 p1, 0x0
+
+    .line 3
+    throw p1
+.end method
+
+.method public final zzc(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzb:Lcom/google/android/gms/internal/icing/zzfd;
+
+    .line 1
+    invoke-static {v0, p1, p2}, Lcom/google/android/gms/internal/icing/zzer;->zzF(Lcom/google/android/gms/internal/icing/zzfd;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzc:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
+
+    .line 2
+    invoke-static {v0, p1, p2}, Lcom/google/android/gms/internal/icing/zzer;->zzE(Lcom/google/android/gms/internal/icing/zzcq;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final zzd(Ljava/lang/Object;)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzb:Lcom/google/android/gms/internal/icing/zzfd;
+
+    .line 1
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzfd;->zzb(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 2
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/icing/zzfd;->zze(Ljava/lang/Object;)I
+
+    move-result v0
+
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/icing/zzei;->zzc:Z
+
+    if-nez v1, :cond_0
+
+    return v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
+
+    .line 3
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzcq;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/icing/zzcu;
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final zze(Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzb:Lcom/google/android/gms/internal/icing/zzfd;
+
+    .line 1
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzfd;->zzc(Ljava/lang/Object;)V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
+
+    .line 2
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzcq;->zzc(Ljava/lang/Object;)V
 
     return-void
 .end method
 
-.method final zza(Ljava/lang/Object;Ljava/lang/Object;J)V
-    .locals 4
+.method public final zzf(Ljava/lang/Object;)Z
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<E:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Object;",
-            "Ljava/lang/Object;",
-            "J)V"
+            "(TT;)Z"
         }
     .end annotation
 
-    .line 14
-    invoke-static {p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzei;->zzb(Ljava/lang/Object;J)Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
 
-    move-result-object p2
+    .line 1
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzcq;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/icing/zzcu;
 
-    .line 15
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    const/4 p1, 0x0
 
-    move-result v0
+    .line 2
+    throw p1
+.end method
 
-    .line 16
-    invoke-static {p1, p3, p4}, Lcom/google/android/gms/internal/icing/zzei;->zzb(Ljava/lang/Object;J)Ljava/util/List;
+.method public final zzi(Ljava/lang/Object;Lcom/google/android/gms/internal/icing/zzcn;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/google/android/gms/internal/icing/zzcn;",
+            ")V"
+        }
+    .end annotation
 
-    move-result-object v1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    .line 17
-    invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
+    iget-object p2, p0, Lcom/google/android/gms/internal/icing/zzei;->zzd:Lcom/google/android/gms/internal/icing/zzcq;
 
-    move-result v2
+    .line 1
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/icing/zzcq;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/icing/zzcu;
 
-    if-eqz v2, :cond_2
+    const/4 p1, 0x0
 
-    .line 18
-    instance-of v2, v1, Lcom/google/android/gms/internal/icing/zzeh;
-
-    if-eqz v2, :cond_0
-
-    .line 19
-    new-instance v1, Lcom/google/android/gms/internal/icing/zzee;
-
-    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/icing/zzee;-><init>(I)V
-
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    instance-of v2, v1, Lcom/google/android/gms/internal/icing/zzfg;
-
-    if-eqz v2, :cond_1
-
-    instance-of v2, v1, Lcom/google/android/gms/internal/icing/zzdx;
-
-    if-eqz v2, :cond_1
-
-    .line 21
-    check-cast v1, Lcom/google/android/gms/internal/icing/zzdx;
-
-    invoke-interface {v1, v0}, Lcom/google/android/gms/internal/icing/zzdx;->zzj(I)Lcom/google/android/gms/internal/icing/zzdx;
-
-    move-result-object v0
-
-    move-object v1, v0
-
-    goto :goto_0
-
-    .line 22
-    :cond_1
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 23
-    :goto_0
-    invoke-static {p1, p3, p4, v1}, Lcom/google/android/gms/internal/icing/zzgi;->zza(Ljava/lang/Object;JLjava/lang/Object;)V
-
-    goto :goto_2
-
-    .line 24
-    :cond_2
-    sget-object v2, Lcom/google/android/gms/internal/icing/zzei;->zzlt:Ljava/lang/Class;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    .line 25
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v3
-
-    add-int/2addr v3, v0
-
-    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 26
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
-
-    .line 28
-    invoke-static {p1, p3, p4, v2}, Lcom/google/android/gms/internal/icing/zzgi;->zza(Ljava/lang/Object;JLjava/lang/Object;)V
-
-    :goto_1
-    move-object v1, v2
-
-    goto :goto_2
-
-    .line 29
-    :cond_3
-    instance-of v2, v1, Lcom/google/android/gms/internal/icing/zzgh;
-
-    if-eqz v2, :cond_4
-
-    .line 30
-    new-instance v2, Lcom/google/android/gms/internal/icing/zzee;
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v3
-
-    add-int/2addr v3, v0
-
-    invoke-direct {v2, v3}, Lcom/google/android/gms/internal/icing/zzee;-><init>(I)V
-
-    .line 31
-    check-cast v1, Lcom/google/android/gms/internal/icing/zzgh;
-
-    invoke-virtual {v2, v1}, Lcom/google/android/gms/internal/icing/zzch;->addAll(Ljava/util/Collection;)Z
-
-    .line 33
-    invoke-static {p1, p3, p4, v2}, Lcom/google/android/gms/internal/icing/zzgi;->zza(Ljava/lang/Object;JLjava/lang/Object;)V
-
-    goto :goto_1
-
-    .line 34
-    :cond_4
-    instance-of v2, v1, Lcom/google/android/gms/internal/icing/zzfg;
-
-    if-eqz v2, :cond_5
-
-    instance-of v2, v1, Lcom/google/android/gms/internal/icing/zzdx;
-
-    if-eqz v2, :cond_5
-
-    move-object v2, v1
-
-    check-cast v2, Lcom/google/android/gms/internal/icing/zzdx;
-
-    .line 35
-    invoke-interface {v2}, Lcom/google/android/gms/internal/icing/zzdx;->zzag()Z
-
-    move-result v3
-
-    if-nez v3, :cond_5
-
-    .line 36
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    invoke-interface {v2, v1}, Lcom/google/android/gms/internal/icing/zzdx;->zzj(I)Lcom/google/android/gms/internal/icing/zzdx;
-
-    move-result-object v1
-
-    .line 37
-    invoke-static {p1, p3, p4, v1}, Lcom/google/android/gms/internal/icing/zzgi;->zza(Ljava/lang/Object;JLjava/lang/Object;)V
-
-    .line 40
-    :cond_5
-    :goto_2
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    .line 41
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    if-lez v0, :cond_6
-
-    if-lez v2, :cond_6
-
-    .line 43
-    invoke-interface {v1, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    :cond_6
-    if-lez v0, :cond_7
-
-    move-object p2, v1
-
-    .line 45
-    :cond_7
-    invoke-static {p1, p3, p4, p2}, Lcom/google/android/gms/internal/icing/zzgi;->zza(Ljava/lang/Object;JLjava/lang/Object;)V
-
-    return-void
+    .line 2
+    throw p1
 .end method

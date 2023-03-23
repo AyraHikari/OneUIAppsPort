@@ -521,7 +521,7 @@
 .end method
 
 .method protected contest(III)I
-    .locals 9
+    .locals 10
 
     const/4 v0, 0x0
 
@@ -595,11 +595,11 @@
     :cond_3
     iget-object v6, p0, Lcom/bumptech/glide/gifencoder/NeuQuant;->bias:[I
 
-    aget v6, v6, v5
+    aget v8, v6, v5
 
-    shr-int/lit8 v6, v6, 0xc
+    shr-int/lit8 v8, v8, 0xc
 
-    sub-int/2addr v7, v6
+    sub-int/2addr v7, v8
 
     if-ge v7, v2, :cond_4
 
@@ -609,29 +609,27 @@
 
     .line 498
     :cond_4
-    iget-object v6, p0, Lcom/bumptech/glide/gifencoder/NeuQuant;->freq:[I
+    iget-object v7, p0, Lcom/bumptech/glide/gifencoder/NeuQuant;->freq:[I
 
-    aget v7, v6, v5
+    aget v8, v7, v5
 
-    shr-int/lit8 v7, v7, 0xa
+    shr-int/lit8 v8, v8, 0xa
 
     .line 499
-    aget v8, v6, v5
+    aget v9, v7, v5
 
-    sub-int/2addr v8, v7
+    sub-int/2addr v9, v8
 
-    aput v8, v6, v5
+    aput v9, v7, v5
 
     .line 500
-    iget-object v6, p0, Lcom/bumptech/glide/gifencoder/NeuQuant;->bias:[I
+    aget v7, v6, v5
 
-    aget v8, v6, v5
+    shl-int/lit8 v8, v8, 0xa
 
-    shl-int/lit8 v7, v7, 0xa
+    add-int/2addr v7, v8
 
-    add-int/2addr v8, v7
-
-    aput v8, v6, v5
+    aput v7, v6, v5
 
     add-int/lit8 v5, v5, 0x1
 
@@ -842,22 +840,22 @@
     move-object/from16 v6, p0
 
     .line 240
-    iget v0, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->lengthcount:I
+    iget v7, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->lengthcount:I
 
-    const/16 v1, 0x5e5
+    const/16 v0, 0x5e5
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
-    if-ge v0, v1, :cond_0
+    if-ge v7, v0, :cond_0
 
     .line 241
-    iput v7, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->samplefac:I
+    iput v8, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->samplefac:I
 
     .line 242
     :cond_0
-    iget v0, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->samplefac:I
+    iget v1, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->samplefac:I
 
-    add-int/lit8 v2, v0, -0x1
+    add-int/lit8 v2, v1, -0x1
 
     const/4 v3, 0x3
 
@@ -868,18 +866,15 @@
     iput v2, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->alphadec:I
 
     .line 243
-    iget-object v8, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->thepicture:[B
+    iget-object v9, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->thepicture:[B
 
-    .line 245
-    iget v9, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->lengthcount:I
-
-    mul-int/2addr v0, v3
+    mul-int/2addr v1, v3
 
     .line 246
-    div-int v10, v9, v0
+    div-int v10, v7, v1
 
     .line 247
-    div-int/lit8 v0, v10, 0x64
+    div-int/lit8 v1, v10, 0x64
 
     const/16 v2, 0x800
 
@@ -917,7 +912,7 @@
     :cond_1
     iget v5, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->lengthcount:I
 
-    if-ge v5, v1, :cond_2
+    if-ge v5, v0, :cond_2
 
     move v13, v3
 
@@ -929,11 +924,11 @@
 
     if-eqz v3, :cond_4
 
-    const/16 v1, 0x5d9
+    const/16 v0, 0x5d9
 
     :cond_3
     :goto_1
-    move v13, v1
+    move v13, v0
 
     goto :goto_2
 
@@ -943,7 +938,7 @@
 
     if-eqz v3, :cond_5
 
-    const/16 v1, 0x5c1
+    const/16 v0, 0x5c1
 
     goto :goto_1
 
@@ -953,7 +948,7 @@
 
     if-eqz v5, :cond_3
 
-    const/16 v1, 0x5b5
+    const/16 v0, 0x5b5
 
     goto :goto_1
 
@@ -968,7 +963,7 @@
 
     move/from16 v16, v12
 
-    move v12, v0
+    move v12, v1
 
     :cond_6
     if-ge v5, v10, :cond_b
@@ -976,7 +971,7 @@
     add-int/lit8 v0, v17, 0x0
 
     .line 276
-    aget-byte v0, v8, v0
+    aget-byte v0, v9, v0
 
     and-int/lit16 v0, v0, 0xff
 
@@ -985,7 +980,7 @@
     add-int/lit8 v0, v17, 0x1
 
     .line 277
-    aget-byte v0, v8, v0
+    aget-byte v0, v9, v0
 
     and-int/lit16 v0, v0, 0xff
 
@@ -994,7 +989,7 @@
     add-int/lit8 v0, v17, 0x2
 
     .line 278
-    aget-byte v0, v8, v0
+    aget-byte v0, v9, v0
 
     and-int/lit16 v0, v0, 0xff
 
@@ -1048,7 +1043,7 @@
     :cond_7
     add-int v0, v17, v13
 
-    if-lt v0, v9, :cond_8
+    if-lt v0, v7, :cond_8
 
     .line 287
     iget v1, v6, Lcom/bumptech/glide/gifencoder/NeuQuant;->lengthcount:I
@@ -1062,7 +1057,7 @@
 
     if-nez v12, :cond_9
 
-    move v12, v7
+    move v12, v8
 
     .line 292
     :cond_9
@@ -1084,7 +1079,7 @@
 
     shr-int/lit8 v0, v14, 0x6
 
-    if-gt v0, v7, :cond_a
+    if-gt v0, v8, :cond_a
 
     move v15, v11
 

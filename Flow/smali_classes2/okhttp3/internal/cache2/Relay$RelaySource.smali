@@ -37,26 +37,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 225
-    new-instance p1, Lokio/Timeout;
+    new-instance v0, Lokio/Timeout;
 
-    invoke-direct {p1}, Lokio/Timeout;-><init>()V
+    invoke-direct {v0}, Lokio/Timeout;-><init>()V
 
-    iput-object p1, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lokio/Timeout;
+    iput-object v0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lokio/Timeout;
 
     .line 228
-    new-instance p1, Lokhttp3/internal/cache2/FileOperator;
+    new-instance v0, Lokhttp3/internal/cache2/FileOperator;
 
-    iget-object v0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
+    iget-object p1, p1, Lokhttp3/internal/cache2/Relay;->file:Ljava/io/RandomAccessFile;
 
-    iget-object v0, v0, Lokhttp3/internal/cache2/Relay;->file:Ljava/io/RandomAccessFile;
+    invoke-virtual {p1}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
-    invoke-virtual {v0}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
+    move-result-object p1
 
-    move-result-object v0
+    invoke-direct {v0, p1}, Lokhttp3/internal/cache2/FileOperator;-><init>(Ljava/nio/channels/FileChannel;)V
 
-    invoke-direct {p1, v0}, Lokhttp3/internal/cache2/FileOperator;-><init>(Ljava/nio/channels/FileChannel;)V
-
-    iput-object p1, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->fileOperator:Lokhttp3/internal/cache2/FileOperator;
+    iput-object v0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->fileOperator:Lokhttp3/internal/cache2/FileOperator;
 
     return-void
 .end method
@@ -550,13 +548,11 @@
 
     throw v0
 
-    .line 285
     :cond_6
+    sub-long/2addr v7, v13
+
+    .line 285
     :try_start_a
-    iget-wide v5, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
-
-    sub-long/2addr v7, v5
-
     invoke-static {v2, v3, v7, v8}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v2

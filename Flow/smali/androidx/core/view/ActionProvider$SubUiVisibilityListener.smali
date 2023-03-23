@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onSubUiVisibilityChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isVisible"
+        }
+    .end annotation
 .end method

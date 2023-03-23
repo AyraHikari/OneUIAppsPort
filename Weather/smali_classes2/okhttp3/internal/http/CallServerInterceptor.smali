@@ -45,7 +45,6 @@
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lokhttp3/internal/http/CallServerInterceptor;->forWebSocket:Z
@@ -57,130 +56,107 @@
 # virtual methods
 .method public intercept(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
     .locals 11
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     const-string v0, "chain"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
+    .line 1
     check-cast p1, Lokhttp3/internal/http/RealInterceptorChain;
 
-    .line 31
+    .line 2
     invoke-virtual {p1}, Lokhttp3/internal/http/RealInterceptorChain;->getExchange$okhttp()Lokhttp3/internal/connection/Exchange;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v0}, Loi/k;->d(Ljava/lang/Object;)V
 
-    .line 32
+    .line 3
     invoke-virtual {p1}, Lokhttp3/internal/http/RealInterceptorChain;->getRequest$okhttp()Lokhttp3/Request;
 
     move-result-object p1
 
-    .line 33
+    .line 4
     invoke-virtual {p1}, Lokhttp3/Request;->body()Lokhttp3/RequestBody;
 
     move-result-object v1
 
-    .line 34
+    .line 5
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 36
+    .line 6
     invoke-virtual {v0, p1}, Lokhttp3/internal/connection/Exchange;->writeRequestHeaders(Lokhttp3/Request;)V
 
-    const/4 v4, 0x0
-
-    .line 39
-    move-object v5, v4
-
-    check-cast v5, Lokhttp3/Response$Builder;
-
-    .line 40
+    .line 7
     invoke-virtual {p1}, Lokhttp3/Request;->method()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-static {v6}, Lokhttp3/internal/http/HttpMethod;->permitsRequestBody(Ljava/lang/String;)Z
+    invoke-static {v4}, Lokhttp3/internal/http/HttpMethod;->permitsRequestBody(Ljava/lang/String;)Z
 
-    move-result v6
+    move-result v4
 
-    const/4 v7, 0x0
+    const/4 v5, 0x0
 
-    const/4 v8, 0x1
+    const/4 v6, 0x0
 
-    if-eqz v6, :cond_3
+    const/4 v7, 0x1
+
+    if-eqz v4, :cond_3
 
     if-eqz v1, :cond_3
 
-    const-string v6, "Expect"
+    const-string v4, "Expect"
 
-    .line 44
-    invoke-virtual {p1, v6}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
+    .line 8
+    invoke-virtual {p1, v4}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v4
 
-    const-string v9, "100-continue"
+    const-string v8, "100-continue"
 
-    invoke-static {v9, v6, v8}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v8, v4, v7}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
-    move-result v6
+    move-result v4
 
-    if-eqz v6, :cond_0
+    if-eqz v4, :cond_0
 
-    .line 45
+    .line 9
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->flushRequest()V
 
-    .line 46
-    invoke-virtual {v0, v8}, Lokhttp3/internal/connection/Exchange;->readResponseHeaders(Z)Lokhttp3/Response$Builder;
+    .line 10
+    invoke-virtual {v0, v7}, Lokhttp3/internal/connection/Exchange;->readResponseHeaders(Z)Lokhttp3/Response$Builder;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 47
+    .line 11
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->responseHeadersStart()V
 
-    move v6, v7
+    move v8, v6
 
     goto :goto_0
 
     :cond_0
-    move v6, v8
+    move-object v4, v5
+
+    move v8, v7
 
     :goto_0
-    if-nez v5, :cond_2
+    if-nez v4, :cond_2
 
-    .line 51
+    .line 12
     invoke-virtual {v1}, Lokhttp3/RequestBody;->isDuplex()Z
 
     move-result v9
 
     if-eqz v9, :cond_1
 
-    .line 53
+    .line 13
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->flushRequest()V
 
-    .line 54
-    invoke-virtual {v0, p1, v8}, Lokhttp3/internal/connection/Exchange;->createRequestBody(Lokhttp3/Request;Z)Lokio/Sink;
-
-    move-result-object v9
-
-    invoke-static {v9}, Lokio/Okio;->buffer(Lokio/Sink;)Lokio/BufferedSink;
-
-    move-result-object v9
-
-    .line 55
-    invoke-virtual {v1, v9}, Lokhttp3/RequestBody;->writeTo(Lokio/BufferedSink;)V
-
-    goto :goto_1
-
-    .line 58
-    :cond_1
+    .line 14
     invoke-virtual {v0, p1, v7}, Lokhttp3/internal/connection/Exchange;->createRequestBody(Lokhttp3/Request;Z)Lokio/Sink;
 
     move-result-object v9
@@ -189,19 +165,34 @@
 
     move-result-object v9
 
-    .line 59
+    .line 15
     invoke-virtual {v1, v9}, Lokhttp3/RequestBody;->writeTo(Lokio/BufferedSink;)V
-
-    .line 60
-    invoke-interface {v9}, Lokio/BufferedSink;->close()V
 
     goto :goto_1
 
-    .line 63
+    .line 16
+    :cond_1
+    invoke-virtual {v0, p1, v6}, Lokhttp3/internal/connection/Exchange;->createRequestBody(Lokhttp3/Request;Z)Lokio/Sink;
+
+    move-result-object v9
+
+    invoke-static {v9}, Lokio/Okio;->buffer(Lokio/Sink;)Lokio/BufferedSink;
+
+    move-result-object v9
+
+    .line 17
+    invoke-virtual {v1, v9}, Lokhttp3/RequestBody;->writeTo(Lokio/BufferedSink;)V
+
+    .line 18
+    invoke-interface {v9}, Lokio/Sink;->close()V
+
+    goto :goto_1
+
+    .line 19
     :cond_2
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->noRequestBody()V
 
-    .line 64
+    .line 20
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->getConnection$okhttp()Lokhttp3/internal/connection/RealConnection;
 
     move-result-object v9
@@ -212,74 +203,76 @@
 
     if-nez v9, :cond_4
 
-    .line 68
+    .line 21
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->noNewExchangesOnConnection()V
 
     goto :goto_1
 
-    .line 72
+    .line 22
     :cond_3
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->noRequestBody()V
 
-    move v6, v8
+    move-object v4, v5
+
+    move v8, v7
 
     :cond_4
     :goto_1
     if-eqz v1, :cond_5
 
-    .line 75
+    .line 23
     invoke-virtual {v1}, Lokhttp3/RequestBody;->isDuplex()Z
 
     move-result v1
 
     if-nez v1, :cond_6
 
-    .line 76
+    .line 24
     :cond_5
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->finishRequest()V
 
     :cond_6
-    if-nez v5, :cond_7
+    if-nez v4, :cond_7
 
-    .line 79
-    invoke-virtual {v0, v7}, Lokhttp3/internal/connection/Exchange;->readResponseHeaders(Z)Lokhttp3/Response$Builder;
+    .line 25
+    invoke-virtual {v0, v6}, Lokhttp3/internal/connection/Exchange;->readResponseHeaders(Z)Lokhttp3/Response$Builder;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v4}, Loi/k;->d(Ljava/lang/Object;)V
 
-    if-eqz v6, :cond_7
+    if-eqz v8, :cond_7
 
-    .line 81
+    .line 26
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->responseHeadersStart()V
 
-    move v6, v7
+    move v8, v6
 
-    .line 86
+    .line 27
     :cond_7
-    invoke-virtual {v5, p1}, Lokhttp3/Response$Builder;->request(Lokhttp3/Request;)Lokhttp3/Response$Builder;
+    invoke-virtual {v4, p1}, Lokhttp3/Response$Builder;->request(Lokhttp3/Request;)Lokhttp3/Response$Builder;
 
     move-result-object v1
 
-    .line 87
+    .line 28
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->getConnection$okhttp()Lokhttp3/internal/connection/RealConnection;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v5}, Lokhttp3/internal/connection/RealConnection;->handshake()Lokhttp3/Handshake;
+    invoke-virtual {v4}, Lokhttp3/internal/connection/RealConnection;->handshake()Lokhttp3/Handshake;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v1, v5}, Lokhttp3/Response$Builder;->handshake(Lokhttp3/Handshake;)Lokhttp3/Response$Builder;
+    invoke-virtual {v1, v4}, Lokhttp3/Response$Builder;->handshake(Lokhttp3/Handshake;)Lokhttp3/Response$Builder;
 
     move-result-object v1
 
-    .line 88
+    .line 29
     invoke-virtual {v1, v2, v3}, Lokhttp3/Response$Builder;->sentRequestAtMillis(J)Lokhttp3/Response$Builder;
 
     move-result-object v1
 
-    .line 89
+    .line 30
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v9
@@ -288,39 +281,39 @@
 
     move-result-object v1
 
-    .line 90
+    .line 31
     invoke-virtual {v1}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
 
     move-result-object v1
 
-    .line 91
+    .line 32
     invoke-virtual {v1}, Lokhttp3/Response;->code()I
 
-    move-result v5
+    move-result v4
 
     const/16 v9, 0x64
 
-    if-ne v5, v9, :cond_9
+    if-ne v4, v9, :cond_9
 
-    .line 95
-    invoke-virtual {v0, v7}, Lokhttp3/internal/connection/Exchange;->readResponseHeaders(Z)Lokhttp3/Response$Builder;
+    .line 33
+    invoke-virtual {v0, v6}, Lokhttp3/internal/connection/Exchange;->readResponseHeaders(Z)Lokhttp3/Response$Builder;
 
     move-result-object v1
 
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v1}, Loi/k;->d(Ljava/lang/Object;)V
 
-    if-eqz v6, :cond_8
+    if-eqz v8, :cond_8
 
-    .line 97
+    .line 34
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->responseHeadersStart()V
 
-    .line 100
+    .line 35
     :cond_8
     invoke-virtual {v1, p1}, Lokhttp3/Response$Builder;->request(Lokhttp3/Request;)Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 101
+    .line 36
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->getConnection$okhttp()Lokhttp3/internal/connection/RealConnection;
 
     move-result-object v1
@@ -333,12 +326,12 @@
 
     move-result-object p1
 
-    .line 102
+    .line 37
     invoke-virtual {p1, v2, v3}, Lokhttp3/Response$Builder;->sentRequestAtMillis(J)Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 103
+    .line 38
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
@@ -347,55 +340,55 @@
 
     move-result-object p1
 
-    .line 104
+    .line 39
     invoke-virtual {p1}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
 
     move-result-object v1
 
-    .line 105
+    .line 40
     invoke-virtual {v1}, Lokhttp3/Response;->code()I
 
-    move-result v5
+    move-result v4
 
-    .line 108
+    .line 41
     :cond_9
     invoke-virtual {v0, v1}, Lokhttp3/internal/connection/Exchange;->responseHeadersEnd(Lokhttp3/Response;)V
 
-    .line 110
+    .line 42
     iget-boolean p1, p0, Lokhttp3/internal/http/CallServerInterceptor;->forWebSocket:Z
 
     if-eqz p1, :cond_a
 
     const/16 p1, 0x65
 
-    if-ne v5, p1, :cond_a
+    if-ne v4, p1, :cond_a
 
-    .line 112
+    .line 43
     invoke-virtual {v1}, Lokhttp3/Response;->newBuilder()Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 113
+    .line 44
     sget-object v1, Lokhttp3/internal/Util;->EMPTY_RESPONSE:Lokhttp3/ResponseBody;
 
     invoke-virtual {p1, v1}, Lokhttp3/Response$Builder;->body(Lokhttp3/ResponseBody;)Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 114
+    .line 45
     invoke-virtual {p1}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
 
     move-result-object p1
 
     goto :goto_2
 
-    .line 116
+    .line 46
     :cond_a
     invoke-virtual {v1}, Lokhttp3/Response;->newBuilder()Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 117
+    .line 47
     invoke-virtual {v0, v1}, Lokhttp3/internal/connection/Exchange;->openResponseBody(Lokhttp3/Response;)Lokhttp3/ResponseBody;
 
     move-result-object v1
@@ -404,12 +397,12 @@
 
     move-result-object p1
 
-    .line 118
+    .line 48
     invoke-virtual {p1}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
 
     move-result-object p1
 
-    .line 120
+    .line 49
     :goto_2
     invoke-virtual {p1}, Lokhttp3/Response;->request()Lokhttp3/Request;
 
@@ -423,7 +416,7 @@
 
     const-string v3, "close"
 
-    invoke-static {v3, v1, v8}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v3, v1, v7}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v1
 
@@ -431,31 +424,31 @@
 
     const/4 v1, 0x2
 
-    .line 121
-    invoke-static {p1, v2, v4, v1, v4}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    .line 50
+    invoke-static {p1, v2, v5, v1, v5}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v3, v1, v8}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v3, v1, v7}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v1
 
     if-eqz v1, :cond_c
 
-    .line 122
+    .line 51
     :cond_b
     invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->noNewExchangesOnConnection()V
 
     :cond_c
     const/16 v0, 0xcc
 
-    if-eq v5, v0, :cond_d
+    if-eq v4, v0, :cond_d
 
     const/16 v0, 0xcd
 
-    if-ne v5, v0, :cond_10
+    if-ne v4, v0, :cond_10
 
-    .line 124
+    .line 52
     :cond_d
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
@@ -479,10 +472,10 @@
 
     if-lez v0, :cond_10
 
-    .line 125
+    .line 53
     new-instance v0, Ljava/net/ProtocolException;
 
-    .line 126
+    .line 54
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -491,17 +484,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
-    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string v2, " had non-zero Content-Length: "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
 
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
@@ -515,21 +502,17 @@
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v4
+    move-result-object v5
 
     :cond_f
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 125
+    .line 55
     invoke-direct {v0, p1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 

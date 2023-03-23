@@ -77,6 +77,20 @@
 # direct methods
 .method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;Lcom/samsung/android/galaxycontinuity/activities/tablet/SwipeDismissRecyclerViewTouchListener$DismissCallbacks;Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter$OnItemClickListener;Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "recyclerView",
+            "callbacks",
+            "itemClickListener",
+            "context"
+        }
+    .end annotation
 
     .line 134
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -249,6 +263,16 @@
 
 .method private performDismiss(Landroid/view/View;I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "dismissView",
+            "dismissPosition"
+        }
+    .end annotation
 
     .line 354
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -327,6 +351,14 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     .line 96
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SwipeDismissRecyclerViewTouchListener;->mSwiping:Z
@@ -361,6 +393,16 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "motionEvent"
+        }
+    .end annotation
 
     .line 179
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SwipeDismissRecyclerViewTouchListener;->mViewWidth:I
@@ -864,6 +906,7 @@
 
     if-eqz p2, :cond_11
 
+    .line 263
     iget p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SwipeDismissRecyclerViewTouchListener;->mViewWidth:I
 
     goto :goto_6
@@ -876,7 +919,6 @@
     :goto_6
     int-to-float p2, p2
 
-    .line 263
     invoke-virtual {v3, p2}, Landroid/view/ViewPropertyAnimator;->translationX(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p2
@@ -1076,6 +1118,14 @@
 
 .method public setEnabled(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
     xor-int/lit8 p1, p1, 0x1
 

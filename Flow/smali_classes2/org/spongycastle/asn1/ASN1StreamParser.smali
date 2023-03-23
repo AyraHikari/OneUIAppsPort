@@ -84,7 +84,7 @@
 
 # virtual methods
 .method readImplicit(ZI)Lorg/spongycastle/asn1/ASN1Encodable;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -94,9 +94,9 @@
     .line 60
     iget-object v0, p0, Lorg/spongycastle/asn1/ASN1StreamParser;->_in:Ljava/io/InputStream;
 
-    instance-of v1, v0, Lorg/spongycastle/asn1/IndefiniteLengthInputStream;
+    instance-of v0, v0, Lorg/spongycastle/asn1/IndefiniteLengthInputStream;
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
     if-eqz p1, :cond_0
 
@@ -118,19 +118,19 @@
     throw p1
 
     :cond_1
-    const/16 v1, 0x11
+    const/16 v0, 0x11
 
-    const/16 v2, 0x10
+    const/16 v1, 0x10
 
-    const/4 v3, 0x4
+    const/4 v2, 0x4
 
     if-eqz p1, :cond_4
 
-    if-eq p2, v3, :cond_3
+    if-eq p2, v2, :cond_3
 
-    if-eq p2, v2, :cond_2
+    if-eq p2, v1, :cond_2
 
-    if-ne p2, v1, :cond_5
+    if-ne p2, v0, :cond_5
 
     .line 75
     new-instance p1, Lorg/spongycastle/asn1/DERSetParser;
@@ -156,11 +156,11 @@
     return-object p1
 
     :cond_4
-    if-eq p2, v3, :cond_8
+    if-eq p2, v2, :cond_8
 
-    if-eq p2, v2, :cond_7
+    if-eq p2, v1, :cond_7
 
-    if-eq p2, v1, :cond_6
+    if-eq p2, v0, :cond_6
 
     .line 95
     :cond_5
@@ -176,7 +176,7 @@
     :cond_6
     new-instance p1, Lorg/spongycastle/asn1/ASN1Exception;
 
-    const-string p2, "sequences must use constructed encoding (see X.690 8.9.1/8.10.1)"
+    const-string/jumbo p2, "sequences must use constructed encoding (see X.690 8.9.1/8.10.1)"
 
     invoke-direct {p1, p2}, Lorg/spongycastle/asn1/ASN1Exception;-><init>(Ljava/lang/String;)V
 
@@ -186,7 +186,7 @@
     :cond_7
     new-instance p1, Lorg/spongycastle/asn1/ASN1Exception;
 
-    const-string p2, "sets must use constructed encoding (see X.690 8.11.1/8.12.1)"
+    const-string/jumbo p2, "sets must use constructed encoding (see X.690 8.11.1/8.12.1)"
 
     invoke-direct {p1, p2}, Lorg/spongycastle/asn1/ASN1Exception;-><init>(Ljava/lang/String;)V
 
@@ -196,9 +196,11 @@
     :cond_8
     new-instance p1, Lorg/spongycastle/asn1/DEROctetStringParser;
 
-    check-cast v0, Lorg/spongycastle/asn1/DefiniteLengthInputStream;
+    iget-object p2, p0, Lorg/spongycastle/asn1/ASN1StreamParser;->_in:Ljava/io/InputStream;
 
-    invoke-direct {p1, v0}, Lorg/spongycastle/asn1/DEROctetStringParser;-><init>(Lorg/spongycastle/asn1/DefiniteLengthInputStream;)V
+    check-cast p2, Lorg/spongycastle/asn1/DefiniteLengthInputStream;
+
+    invoke-direct {p1, p2}, Lorg/spongycastle/asn1/DEROctetStringParser;-><init>(Lorg/spongycastle/asn1/DefiniteLengthInputStream;)V
 
     return-object p1
 .end method
@@ -242,9 +244,11 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "unknown BER object encountered: 0x"
+    const-string/jumbo v2, "unknown BER object encountered: 0x"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -252,7 +256,9 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -477,15 +483,21 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "unknown tag "
+    const-string/jumbo v3, "unknown tag "
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, " encountered"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

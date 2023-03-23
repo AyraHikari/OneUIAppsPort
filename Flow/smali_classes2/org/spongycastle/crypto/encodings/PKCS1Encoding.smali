@@ -258,7 +258,7 @@
     .line 387
     iget-boolean v0, p0, Lorg/spongycastle/crypto/encodings/PKCS1Encoding;->forPrivateKey:Z
 
-    const-string v2, "unknown block type"
+    const-string/jumbo v2, "unknown block type"
 
     const/4 v3, 0x1
 
@@ -541,7 +541,7 @@
     :cond_5
     new-instance p1, Lorg/spongycastle/crypto/InvalidCipherTextException;
 
-    const-string p2, "sorry, this method is only for decryption, not for signing"
+    const-string/jumbo p2, "sorry, this method is only for decryption, not for signing"
 
     invoke-direct {p1, p2}, Lorg/spongycastle/crypto/InvalidCipherTextException;-><init>(Ljava/lang/String;)V
 
@@ -704,7 +704,7 @@
 
     const/4 v2, 0x1
 
-    const-string v3, "true"
+    const-string/jumbo v3, "true"
 
     if-eqz v1, :cond_0
 

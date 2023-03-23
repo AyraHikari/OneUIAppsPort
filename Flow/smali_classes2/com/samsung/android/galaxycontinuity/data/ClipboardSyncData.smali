@@ -48,6 +48,16 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "clip"
+        }
+    .end annotation
 
     .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -75,6 +85,19 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/util/ArrayList;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "clip",
+            "fileList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -114,6 +137,14 @@
 
 .method public constructor <init>(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isSync"
+        }
+    .end annotation
 
     .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

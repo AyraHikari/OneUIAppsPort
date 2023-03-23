@@ -28,8 +28,20 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$top",
+            "val$bottom"
+        }
+    .end annotation
 
-    .line 688
+    .line 725
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$5;->this$0:Landroidx/appcompat/app/AlertController;
 
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$5;->val$top:Landroid/view/View;
@@ -45,8 +57,22 @@
 # virtual methods
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "firstVisibleItem",
+            "visibleItemCount",
+            "totalItemCount"
+        }
+    .end annotation
 
-    .line 695
+    .line 732
     iget-object p2, p0, Landroidx/appcompat/app/AlertController$5;->val$top:Landroid/view/View;
 
     iget-object p3, p0, Landroidx/appcompat/app/AlertController$5;->val$bottom:Landroid/view/View;
@@ -58,6 +84,16 @@
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "scrollState"
+        }
+    .end annotation
 
     return-void
 .end method

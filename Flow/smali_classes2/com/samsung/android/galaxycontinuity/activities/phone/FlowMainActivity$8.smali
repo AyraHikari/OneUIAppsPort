@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->showGearAuthDialog(Ljava/lang/String;Ljava/lang/String;)V
+    value = Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->updateConnectedMessage()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,21 +20,21 @@
 # instance fields
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
 
-.field final synthetic val$btMacAddr:Ljava/lang/String;
-
-.field final synthetic val$deviceID:Ljava/lang/String;
-
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;Ljava/lang/String;Ljava/lang/String;)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 968
+    .line 980
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->val$deviceID:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->val$btMacAddr:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,82 +44,161 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 5
 
-    .line 971
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$1800(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)V
-
-    .line 973
-    new-instance v0, Landroidx/appcompat/app/AlertDialog$Builder;
-
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    invoke-direct {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const v1, 0x7f1001a7
-
-    .line 974
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
-
-    const v1, 0x7f1001a6
-
-    .line 975
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
-
-    .line 976
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8$1;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;)V
-
-    const v2, 0x7f1000a2
-
-    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
-
-    .line 993
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8$2;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8$2;-><init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;)V
-
-    const v2, 0x7f10009d
-
-    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
-
-    .line 1004
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8$3;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8$3;-><init>(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;)V
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroidx/appcompat/app/AlertDialog$Builder;
-
-    .line 1015
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    invoke-virtual {v0}, Landroidx/appcompat/app/AlertDialog$Builder;->create()Landroidx/appcompat/app/AlertDialog;
+    .line 983
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$1902(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;Landroidx/appcompat/app/AlertDialog;)Landroidx/appcompat/app/AlertDialog;
-
-    .line 1016
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
-
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->isFinishing()Z
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->isThereEnrolledDevice()Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    const/4 v1, 0x0
 
-    .line 1017
+    if-eqz v0, :cond_1
+
+    const-string/jumbo v0, "update connected status from toolbar"
+
+    .line 984
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 985
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$1900(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroidx/appcompat/app/AlertDialog;
+    const/4 v2, 0x1
+
+    invoke-static {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$1500(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;Z)V
+
+    .line 986
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroidx/appcompat/app/AlertDialog;->show()V
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getmMainDevice()Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
 
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 987
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getmMainDevice()Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->isConnectedTo(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 988
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+
+    const v4, 0x7f1100ac
+
+    invoke-virtual {v3, v4}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getMainDeviceName()Ljava/lang/String;
+
+    move-result-object v4
+
+    aput-object v4, v2, v1
+
+    invoke-static {v3, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 989
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    const v1, 0x7f0601bb
+
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getColor(I)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    goto :goto_0
+
+    .line 991
     :cond_0
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    const v1, 0x7f1100ad
+
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 992
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    const v1, 0x7f060025
+
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getColor(I)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    goto :goto_0
+
+    :cond_1
+    const-string/jumbo v0, "there is no enrolled device, hide latest device info from toolbar"
+
+    .line 995
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 996
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;
+
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;->access$1500(Lcom/samsung/android/galaxycontinuity/activities/phone/FlowMainActivity;Z)V
+
+    :goto_0
     return-void
 .end method

@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">ግባ</string>
     <string name="common_signin_button_text_long">በGoogle ይግቡ</string>
     <string name="copy">ቅዳ</string>
-    <string name="copy_toast_msg">አገናኝ ወደ ቅንጥብ ሰሌዳ ተቀድቷል</string>
     <string name="error_icon_content_description">ስህተት</string>
     <string name="expand_button_title">የላቀ</string>
     <string name="exposed_dropdown_menu_content_description">ተቆልቋይ ምናሌን አሳይ</string>
-    <string name="fallback_menu_item_copy_link">አገናኝ ቅዳ</string>
-    <string name="fallback_menu_item_open_in_browser">በአሳሽ ውስጥ ክፈት</string>
-    <string name="fallback_menu_item_share_link">አገናኝ አጋራ</string>
     <string name="icon_content_description">የንግግር አዶ</string>
     <string name="item_view_role_description">ትር</string>
     <string name="material_clock_toggle_content_description">AM ወይም PM ይምረጡ</string>

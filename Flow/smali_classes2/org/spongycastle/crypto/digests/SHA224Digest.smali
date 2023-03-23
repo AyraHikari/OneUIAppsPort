@@ -674,7 +674,7 @@
 .end method
 
 .method protected processBlock()V
-    .locals 14
+    .locals 15
 
     const/16 v0, 0x10
 
@@ -777,15 +777,15 @@
 
     sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
 
-    aget v13, v13, v11
+    aget v14, v13, v11
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
-    iget-object v13, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
+    iget-object v14, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
 
-    aget v13, v13, v11
+    aget v14, v14, v11
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v8, v12
 
@@ -798,9 +798,9 @@
 
     invoke-direct {p0, v1, v2, v3}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Maj(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v8, v12
 
@@ -813,21 +813,19 @@
 
     invoke-direct {p0, v4, v5, v6}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Ch(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
-    sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
+    aget v14, v13, v11
 
-    aget v13, v13, v11
+    add-int/2addr v12, v14
 
-    add-int/2addr v12, v13
+    iget-object v14, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
 
-    iget-object v13, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
+    aget v14, v14, v11
 
-    aget v13, v13, v11
-
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v7, v12
 
@@ -840,9 +838,9 @@
 
     invoke-direct {p0, v8, v1, v2}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Maj(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v7, v12
 
@@ -855,21 +853,19 @@
 
     invoke-direct {p0, v3, v4, v5}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Ch(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
-    sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
+    aget v14, v13, v11
 
-    aget v13, v13, v11
+    add-int/2addr v12, v14
 
-    add-int/2addr v12, v13
+    iget-object v14, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
 
-    iget-object v13, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
+    aget v14, v14, v11
 
-    aget v13, v13, v11
-
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v6, v12
 
@@ -882,9 +878,9 @@
 
     invoke-direct {p0, v7, v8, v1}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Maj(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v6, v12
 
@@ -897,21 +893,19 @@
 
     invoke-direct {p0, v2, v3, v4}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Ch(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
-    sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
+    aget v14, v13, v11
 
-    aget v13, v13, v11
+    add-int/2addr v12, v14
 
-    add-int/2addr v12, v13
+    iget-object v14, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
 
-    iget-object v13, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
+    aget v14, v14, v11
 
-    aget v13, v13, v11
-
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v5, v12
 
@@ -924,9 +918,9 @@
 
     invoke-direct {p0, v6, v7, v8}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Maj(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v5, v12
 
@@ -939,21 +933,19 @@
 
     invoke-direct {p0, v1, v2, v3}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Ch(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
-    sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
+    aget v14, v13, v11
 
-    aget v13, v13, v11
+    add-int/2addr v12, v14
 
-    add-int/2addr v12, v13
+    iget-object v14, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
 
-    iget-object v13, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
+    aget v14, v14, v11
 
-    aget v13, v13, v11
-
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v4, v12
 
@@ -966,9 +958,9 @@
 
     invoke-direct {p0, v5, v6, v7}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Maj(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v4, v12
 
@@ -981,21 +973,19 @@
 
     invoke-direct {p0, v8, v1, v2}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Ch(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
-    sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
+    aget v14, v13, v11
 
-    aget v13, v13, v11
+    add-int/2addr v12, v14
 
-    add-int/2addr v12, v13
+    iget-object v14, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
 
-    iget-object v13, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
+    aget v14, v14, v11
 
-    aget v13, v13, v11
-
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v3, v12
 
@@ -1008,9 +998,9 @@
 
     invoke-direct {p0, v4, v5, v6}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Maj(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v3, v12
 
@@ -1023,21 +1013,19 @@
 
     invoke-direct {p0, v7, v8, v1}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Ch(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
-    sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
+    aget v14, v13, v11
 
-    aget v13, v13, v11
+    add-int/2addr v12, v14
 
-    add-int/2addr v12, v13
+    iget-object v14, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
 
-    iget-object v13, p0, Lorg/spongycastle/crypto/digests/SHA224Digest;->X:[I
+    aget v14, v14, v11
 
-    aget v13, v13, v11
-
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v2, v12
 
@@ -1050,9 +1038,9 @@
 
     invoke-direct {p0, v3, v4, v5}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Maj(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
+    add-int/2addr v12, v14
 
     add-int/2addr v2, v12
 
@@ -1065,11 +1053,9 @@
 
     invoke-direct {p0, v6, v7, v8}, Lorg/spongycastle/crypto/digests/SHA224Digest;->Ch(III)I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v12, v13
-
-    sget-object v13, Lorg/spongycastle/crypto/digests/SHA224Digest;->K:[I
+    add-int/2addr v12, v14
 
     aget v13, v13, v11
 

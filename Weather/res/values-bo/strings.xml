@@ -33,6 +33,7 @@
     <string name="air_quality">མཁའ་དབུགས་རྒྱུ་སྤོས།</string>
     <string name="air_quality_next_tts">ཉིན་རེའི་མཁའ་རླུང་སྤུས་ཚད་ཀྱི་སྔོན་བརྡ་ཕྱི་མ།</string>
     <string name="air_quality_previous_tts">ཉིན་རེའི་མཁའ་རླུང་སྤུས་ཚད་ཀྱི་སྔོན་བརྡ་སྔོན་མ།</string>
+    <string name="alert_title">恶劣天气预警</string>
     <string name="all_added_cities">སྣོན་འཇུག་བྱས་པའི་གྲོང་ཁྱེར་ཡོངས་རྫོགས།</string>
     <string name="allow">ཆོག་མཆན།</string>
     <string name="allow_permission_in_settings">བྱེད་ནུས་འདི་སྤྱོད་དགོས་ན།ཁྱེད་ཀྱིས་སྒྲིག་འགོད་ནས་དབང་ཚད་ཆོག་མཆན་སྟེར་དགོས།</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">འགུལ་སྟངས་ལ་རྒྱབ་སྐྱོར་མི་ཐེབས།</string>
     <string name="apply_daylight_saving_time">ཉིན་མོའི་གསོག་པའི་དུས་ཚོད་འཇུག</string>
     <string name="as_possible_after_verification">已发送报告。我们将在验证后将尽快更改城市名称。</string>
+    <string name="auto_refresh_on_screen_description">每小时自动刷新一次天气信息。启用此选项后，您将无法手动刷新。</string>
+    <string name="auto_refresh_on_the_go">随时随地自动刷新</string>
+    <string name="auto_refresh_on_the_go_advanced">高级</string>
+    <string name="auto_refresh_on_the_go_description">在开车、骑自行车、跑步或步行时，获取更频繁的天气更新。开启此设置后，您无法手动刷新。</string>
+    <string name="auto_refresh_on_the_go_simple_description">在开车、骑自行车、跑步或步行时，获取更频繁的天气更新。</string>
     <string name="btn_report">报告</string>
     <string name="button_finish">ལས་ཟིན།</string>
     <string name="button_tts">མཐེབ་གནོན།</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">ཆ་རྡེབ་བྱས་ནས་དེ་ལས་མང་བའི་ཆ་འཕྲིན་འཐོབ་པར་བྱེད།</string>
     <string name="china">ཀྲུང་གོ</string>
     <string name="cities_button">ཁྲོམ་ཚོགས</string>
+    <string name="city_added">གྲོང་ཁྱེར་བསྣན་ཟིན།</string>
     <string name="city_list_text">ཁྲོམ་ཚོགས</string>
     <string name="clear">གཙང་སེལ</string>
     <string name="clear_then_cloudy">དྭངས་བ་ནས་འཐིབ།</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">སྡེ་ཚན་གནས་ %d. ལ་བཞག་སོང་།</string>
     <string name="dragndroplist_drag_start">གནས་ %d ལ་སྡེ་ཚན་སྤོ་འགོ་བཙུགས་སོང་།</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d ལ་ཡོད་པའི་སྡེ་ཚན་འཐེན་འགུལ་བྱེད་མི་ཐུབ།</string>
+    <string name="drawer_tips">%sདྲན་སྐུལ།</string>
     <string name="drawer_tips_message">འདིར་རྡེབ་ནསཁ་སྣོན་བྱེད་པ་དང་དོར་གསུབ་བཏང་བ་དང་ཡང་བསྐྱར་བསྟར་ཕྲེང་སྒྲིག་ཆོག ཁྱེད་ཀྱིས་ལྷུ་ལག་གང་མང་ཁ་སྣོན་བྱེད་ནས་ཡོལ་ངོས་གཙོ་བོ་སྟེང་གི་གནས་མི་འདྲ་བར་མངོན་ཆོག</string>
     <string name="drawer_tips_message_1">གདམ་བྱང་ཞབས་ཀྱི་དོ་དམ་གནས་ཡུལ་ལ་རྡེབ་ནས་གནས་ཡུལ་ལ་ཁ་སྣོན་དང་དོར་སུབ།ཡང་བསྐྱར་བསྟར་སྒྲིག་བྱེད།</string>
     <string name="drawer_tips_message_2">ཁྱེད་ཀྱིས་ལྷུ་ལག་གཅིག་གི་ཡན་ཡོལ་ངོས་གཙོ་བོའི་ཁྲོད་དུ་ཁ་སྣོན་བྱེད་དེ་དུས་མཉམ་དུ་གནས་ཡུལ་མི་འདྲ་བ་ནས་འཆར་པར་བྱེད་ཐུབ།</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">གནམ་གཤིས་སྔོན་བརྡའི་བརྙན་ཟློས།</string>
     <string name="format_km_per_hour">%sསྤྱི་ལེ་/ཆུ་ཚོད་</string>
     <string name="format_m_per_hour">%sདབྱིན་ལེ་/ཆུ་ཚོད་</string>
+    <string name="fri">གཟའ་པ་སངས།</string>
     <string name="general">སྤྱིར་བཏང་།</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">ཁྱེད་ཀྱི་ལག་ཁྱེར་ཁ་པར་བེད་སྤྱོད་བྱེད་པའི་གོམས་གཤིས་ལ་གཞིགས་ནས་མི་སྒེར་གྱི་ཁྱད་ཆོས་ལྡན་པའི་ནང་དོན་ཐོབ་ཐབས་བྱེད།</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">ཁྱེད་ཀྱིས་ངོས་པང་གློག་ཀླད་སྤྱོད་སྟངས་ལ་གཞིག་ནས་སྒེར་གཤིས་ཅན་གྱི་ནང་དོན་ཐོབ་པར་བྱེད།</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">从天气获取天气信息，包括您当前的位置</string>
     <string name="go_to_website">དྲ་ཚིགས་སུ་ཞུགས།</string>
     <string name="goto_apps">གསར་སྒྱུར་གསར་པ་འདུག སྒྲིག་འཇུག་བྱེད་དགོས་སམ།</string>
     <string name="goto_apps_later">ཅུང་ཙམ་ནས་དྲན་སྐུལ་བྱེད།</string>
     <string name="goto_apps_now">ད་ལྟ།</string>
     <string name="goto_apps_update_title">ནང་དོན་གསར་བའི་དྲན་སྐུལ།</string>
     <string name="header_tts">ཁ་བྱང་།</string>
+    <string name="heavy">大雨</string>
     <string name="heavy_rain">དྲག་ཆར།</string>
     <string name="heavy_rain_followed_by_intense_heat">ཚ་ཆེན་ནས་ཆར་ཆེན།</string>
     <string name="heavy_rain_followed_by_light_rain">ཚ་ཆེན་ནས་ཆར་ཆེན།</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">能见度</string>
     <string name="life_index_wind">རླུང</string>
     <string name="life_index_wind_force">རླུང་གི་མྱུར་ཚད།</string>
+    <string name="light">小雨</string>
     <string name="light_rain_followed_by_heavy_rain">ཆར་ཆེན་ནས་ཆར་ཆུང་།</string>
     <string name="light_rain_with_some_heavy_rain">ཆར་ཆུང་ནས་ཆར་ཆེན།</string>
     <string name="link_tts">འབྲེལ་བྱང་།</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">མཇུག་འབྲས་གང་མང་མ་རྙེད།</string>
     <string name="message_service_not_available">ད་ལྟ་ཞབས་ཏོག་མིན་ནུག།</string>
     <string name="minus_tts">ཉུང་བ།</string>
+    <string name="mon">གཟའ་ཟླ་བ།</string>
     <string name="more">དེ་བས་མང་བ།</string>
     <string name="more_cuntact_us">ང་ཚོར་འབྲེལ་གཏུག་བྱོས།</string>
     <string name="more_information">དེ་བས་མང་བ།</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">འདིར་མནན་ནས་སོར་བཞག་གནམ་གཤིས་ཀྱི་གནས་ཡུལ་སྒྱུར་བ་དང་ཁྱེད་ཀྱི་གནས་ཡུལ་ཚང་མར་དོ་དམ་བྱེད།</string>
     <string name="new_version_available">པར་གཞི་གསར་པ་%sསྤྱོད་ཆོག</string>
     <string name="new_version_is_available">པར་གཞི་གསར་པ་སྤྱོད་མི་ཐུབ།</string>
+    <string name="news_menu_show_news">显示新闻</string>
+    <string name="news_opt_in_banner_title_text">通过在天气小组件上显示新闻，了解最新事件。</string>
+    <string name="news_opt_in_popup_desc_text">通过在天气小组件上显示%s的最新头条新闻，了解世界最新信息。</string>
+    <string name="news_opt_in_popup_title_text">在小组件中查看新闻和天气</string>
+    <string name="news_request_agree_text">点击即可从 %s 获取新闻</string>
+    <string name="news_widget_bubble_text">获取有关天气的新闻。</string>
+    <string name="news_widget_dummy_title">今天的头条新闻</string>
+    <string name="news_widget_new_dummy_title">今天早上的 5 件新闻简要</string>
+    <string name="news_widget_oobe_text">点击此处可添加新闻。</string>
     <string name="next">ཁྲོམ་རྗེས་མ</string>
+    <string name="next_btn">རྗེས་མ།</string>
     <string name="next_city">ཆ་རྡེབ་ཀྱིས་གྲོང་ཁྱེར་རྗེས་མའི་གནམ་གཤིས་ཆ་འཕྲིན་ལ་ལྟ།</string>
     <string name="night_tts">མཚན་མོ།</string>
     <string name="no_application_available">སྤྱོད་ཆོག་པའི་ཉེར་སྤྱོད་བྱ་རིམ་མེད།</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">没有天气信息</string>
     <string name="not_in_use">བེད་སྤྱོད་བྱེད་ཀྱིན་མེད་པ།</string>
     <string name="not_now">ད་ལྟ་མི་དགོས།</string>
+    <string name="not_now_btn">ད་ལྟ་མི་དགོས།</string>
     <string name="not_selected">བདམས་མ་ཐུབ།</string>
     <string name="nothing_selected">འདེམས་ག་བྱས་མེད།</string>
     <string name="noti">ཡིད་གཟབ།</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">གལ་སྲིད་ཆེས་མགྱོགས་པ་དང་ཆེས་གནད་འཁེལ་བའི་གནས་ཡུལ་ཚོར་རྟོགས་བྱེད་དགོས་ཚེ། ༼སྒྲིག་འགོད༽བརྡེབས་དགོས།དེ་རྗེས་གནས་གཏན་བྱེད་ཐབས་༼GPSདང་Wi-Fi དང་འགུལ་གཏོང་དྲ་བ༽ལ་སྒྲིག་དགོས།</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">གལ་སྲིད་ཆེས་མགྱོགས་པ་དང་ཆེས་གནད་འཁེལ་བའི་གནས་ཡུལ་ཚོར་རྟོགས་བྱེད་དགོས་ཚེ། ༼སྒྲིག་འགོད༽བརྡེབས་དགོས།དེ་རྗེས་གནས་གཏན་བྱེད་ཐབས་༼GPSདང་Wi-Fi༽ལ་སྒྲིག་དགོས།</string>
     <string name="notice_gps_trun_off_message_verizon">若要查看您当地的天气信息，请开启位置设置并确保模式设置为高精确度。</string>
+    <string name="notification_alert_channel_name">恶劣天气预警</string>
     <string name="notification_apps_update_channel_name">བརྡ་ཐོ་གསར་བརྗེས།</string>
     <string name="notification_auto_refresh_channel_name">གནམ་གཤིས་རང་འགུལ་གྱི་གསར་འདོན།</string>
     <string name="notification_dex_channel_name">Samsung DeX་ནང་དུ་གནམ་གཤིས་སྔོན་བརྡ་འཆར།</string>
@@ -438,6 +463,7 @@
     <string name="open_app">ཉེར་སྤྱོད་ཀྱི་ཁ་འབྱེད།</string>
     <string name="open_source_licences">ཡོང་ཁུངས་ཆོག་མཆན་ལག་ཁྱེར།</string>
     <string name="other_locations">གནས་ཡུལ་གཞན་པ།</string>
+    <string name="partly_sunny">ཕྱོགས་ཙམ་ཉིན་ཡོད་པ</string>
     <string name="paused">མཚམས་བཞག་ཟིན།</string>
     <string name="pd_km">སྤྱི་ལེ་%.1f</string>
     <string name="pd_km_h">%dསྤྱི་ལེ་/ཆུ་ཚོད།</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">ཆུ་བབས་ཚད་ཧའོ་རྨིད་%d</string>
     <string name="preview">%sསྔོན་བལྟ།</string>
     <string name="previous">སྔོན་གྱི་ཁྲོམ</string>
+    <string name="previous_btn">གླུ་གཞས་གོང་མ།</string>
     <string name="previous_city">ཆ་རྡེབ་ཀྱིས་གྲོང་ཁྱེར་གོང་མའི་གནམ་གཤིས་ཆ་འཕྲིན་ལ་ལྟ།</string>
     <string name="privacy_policy">གསང་བའི་སྲིད་ཇུས།</string>
     <string name="probability_of_rain_text">ཆར་པ་འབབ་པ་འདྲ་བ</string>
     <string name="protect_your_content">ཁྱེད་ཀྱི་ནང་དོན་ལ་སྲུང་སྐྱོང་བྱེད</string>
+    <string name="ps_in">དབྱིན་ཚུན་%s</string>
+    <string name="ps_mm">%s 毫米</string>
     <string name="radar">རེག་བརྡ་དང་ས་ཁྲ།</string>
     <string name="rain">ཆར་པ</string>
     <string name="rain_followed_by_intense_heat">ཚ་ཆེན་ནས་ཆར་བ།</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">གལ་ཏེ་གནམ་གཤིས་ཆ་འཕྲིན་གསར་བརྗེས་བྱས་ཚེ།༼སྒྲིག་འགོད་༽བརྡེབས་དགོས།༼ཉེར་སྤྱོད་བྱ་རིམ་ཆ་འཕྲིན་༽>༼དབང་ཚད་༽ནང་ཞུགས་ནས།དེ་རྗེས་གཤམ་གྱི་དབང་ཚད་སྤྲད་ནས་བསྐྱར་ཚོད་བྱ་དགོས།</string>
     <string name="runtime_location_permission_title">དབང་ཚད་སྤྲད་པ།</string>
     <string name="runtime_oem_grant_permission_desc">%s应用程序已获得访问以下内容的权限：</string>
+    <string name="sat">གཟའ་སྤེན་པ།</string>
     <string name="save_button">ཉར་ཚགས།</string>
     <string name="search_most_searched_for">འཚོལ་བཤེར་མང་ཤོས།</string>
     <string name="search_tab_cities">ཁྲོམ་ཚོགས</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">ནང་དོན་གསར་པ་སྤྱོད་ཆོག་པ།</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">དེ་ལས་མང་བ།</string>
+    <string name="sesl_preferecne_badge_description">བརྡ་སྦྱོར་གསར་བ།</string>
     <string name="sesl_preferencecategory_added_title">ཁ་བྱང་།</string>
     <string name="sesl_search_hint">འཚོལ་བཤེར།</string>
     <string name="sesl_searchview_description_clear">འཚོལ་བཤེར་སྡེ་གཙང་སེལ་བྱེད།</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">ཁྱེད་ཀྱི་དྲ་བའི་འབྲེལ་མཐུད་བརྟག་དཔྱད་བྱས་ནས་བསྐྱར་ཚོད་བྱེད་དགོས།</string>
     <string name="st_offline">离线</string>
     <string name="st_view_less">སྡུད།</string>
+    <string name="status_off">ཁ་རྒྱག</string>
+    <string name="status_on">སྒུལ་སློང་།</string>
+    <string name="sun">ཉི་མ།</string>
     <string name="sunny">གནམ་དྭངས་པ།</string>
     <string name="sunny_with_some_clouds">དྭངས་པ་དང་སྤྲིན་སྟུག</string>
     <string name="sunny_with_some_heavy_rain">དྭངས་པ་དང་ཆར་ཆེན།</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">གནས་འདིར་བརྡེབས་ནས་ཁྱེད་ཀྱི་སྒྲིག་ཆས་རྙིང་བའི་ནང་གི་གནམ་གཤིས་དན་གྲངས་སོར་ཆུད་བྱེད།</string>
     <string name="tap_retry_to_try_to_find_your_location_again">གལ་སྲིད་བསྐྱར་དུ་ཁྱེད་ཀྱི་གནས་ཡུལ་འཚོལ་ཐབས་བྱས་ཚེ།༼བསྐྱར་ཚོད་༽བརྡེབས་དགོས།</string>
     <string name="tap_setting_message_edge_panel">༼གནས་འཁེལ་ཞབས་ཞུ༽ཡི་སྒུལ་བསླངས་ནས་རང་གནས་ཀྱི་གནམ་གཤིས་སྔོན་བརྡ་འཐོབ་པར་བྱེད།</string>
+    <string name="tap_the_settings_icon">སྒྲིག་འགོད་རྟགས་རིས་བརྡེབས་དགོས།</string>
     <string name="tap_to_get_the_weather">བརྡེབས་ནས་གནམ་གཤིས་འཐོབ་པར་བྱེད།</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">དོན་ཚན་དང་ཆ་རྐྱེན།</string>
     <string name="the_latest_version">པར་གཞི་ཆེས་གསར་ཤོས་དེ་སྒྲིག་འཇུག་བྱས་འདུག</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">ད་དུང་འདི་བརྡ་ཐོ་དང་ལོ་ཐོ་ལ་སྤྱོད་རུང་།</string>
+    <string name="thu">གཟའ་ཕུར་བུ།</string>
     <string name="tick_box_tts">འདྲ་བཤུའི་སྒྲོམ་བུ།</string>
     <string name="ticked_tts">འདེམས་ཟིན།</string>
     <string name="time_am">སྔ་དྲོ།</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">ཆུ་ཚོད་གཅིག་རེ།</string>
     <string name="title_select_locations">གནས་ས་འདམ།</string>
     <string name="title_theme">主题</string>
+    <string name="to_continue_agree_to_updated">若要继续，请同意我们更新的%s。</string>
     <string name="to_get_local_weather_chn">"为了获取您所在地区的天气状况，系统会将您的当前位置发送给天气预报服务提供商。（请参阅提供商的%1$s条款和条件%2$s与%3$s隐私政策%4$s。）
 设备上的其他应用程序和服务可能会访问检索到的天气数据，从而在这些应用程序中显示天气信息。
 为了向您持续提供天气信息，即使您不使用天气应用，天气也会访问您所在的位置。"</string>
     <string name="today">དེ་རིང་།</string>
+    <string name="try_it_out_btn">试一试</string>
+    <string name="tue">ལྷག་པ།</string>
+    <string name="turn_on_to_use_precise_location">若要使用此功能，您需要始终允许 %s 访问您的位置，并开启【使用精确位置】。点击【设置】，然后进入【权限】>【位置信息】。</string>
     <string name="tw_title_weather_broadcast">རྒྱང་བསྒྲགས།</string>
-    <string name="unable_to_check_for_updates">དྲ་བའི་འབྲེལ་མཐུད་མེད་པས། གསར་བརྗེས་བརྟག་དཔྱད་བྱེད་མི་ཐུབ།</string>
+    <string name="unable_to_check_for_updates">གསར་སྒྱུར་ལ་ལྟ་རྟོག་བྱེད་མི་ཐུབ།ཅུང་ཙམ་གྱི་རྗེས་སུ་སླར་ཚོད་ལྟ་བྱེད་རོགས།</string>
     <string name="unable_to_receive_info_msg">གློག་འཕྲིན་འབྱོར་མ་སོང་།</string>
     <string name="unticked_tts">འདེམས་མེད།</string>
     <string name="unused">བེད་སྤྱོད་བྱས་མེད།</string>
     <string name="update">གསར་སྒྱུར།</string>
     <string name="update_abb8">གསར་སྒྱུར།</string>
     <string name="update_app">ཉེར་སྤྱོད་བྱ་རིམ་གསར་བརྗེ་བྱེད།</string>
+    <string name="updated_tile_chn">གསར་བརྗེད་པ: %s</string>
     <string name="updated_tts">%s་གསར་སྒྱུར་བྱས་ཟིན།</string>
+    <string name="use_current_location">མིག་སྔའི་གནས་ཡུལ་སྤྱད་པ།</string>
     <string name="use_current_location_agree_popup">"为了获取您所在地区的天气状况，系统会将您的当前位置发送给天气预报服务提供商。(请参阅提供商的 %1$s隐私政策%2$s。)
 设备上的其他应用程序和服务可能会访问检索到的天气数据，以便在这些应用程序中提供天气信息。"</string>
     <string name="use_current_location_and_background_agree_popup">"为了获取您所在地区的天气状况，系统会将您的当前位置发送给天气预报服务提供商。（请参阅提供商的%1$s隐私政策%2$s。）
@@ -635,9 +677,16 @@
 您可以到天气应用程序的设置里关闭您的位置信息。"</string>
     <string name="use_current_location_body_msg_chn">"在使用“天气”前，请仔细阅读以下内容：
 如果您想要知道您当前位置的天气，您需要允许第三方运营商能一直访问您设备的权限（甚至您不在使用该设备亦然）并且还可以取得以下的特定数据。在授予上述权限时，请仔细阅读第三方运营商的%1$s条款与条件%2$s和%3$s隐私政策%4$s。您可以在设置菜单中关闭“位置”设定来收回您授予的权限。设备上的其他应用程序和服务可能会访问检索到的天气数据，从而在这些应用程序中提供天气信息。"</string>
-    <string name="use_current_location_body_purpose">用途</string>
+    <string name="use_current_location_body_msg_kor">"系统将收集您的当前位置，并将其用于提供一些天气应用程序功能，例如获取您当地的天气。
+
+为了提供连续的天气信息，即使您不使用该应用程序，此应用程序也会定期处理您的位置。继续即表示您同意出于上述目的收集和处理您的位置。
+
+您可以在天气应用程序设置中停止此位置收集和使用。"</string>
+    <string name="use_current_location_body_purpose">目的</string>
     <string name="use_current_location_body_purpose_content">为您当前的位置提供天气信息</string>
     <string name="use_current_location_body_search_provider">服务提供商</string>
+    <string name="use_current_location_continue">མུ་མཐུད།</string>
+    <string name="use_current_location_not_now">ད་ལྟ་མི་དགོས།</string>
     <string name="use_current_location_off_alert_popup">ད་ལྟའི་གནས་ཡུལ་ཆ་འཕྲིན་སུབ་གྱི་རེད།</string>
     <string name="useful_informations">འཚོ་བའི་དྲན་སྐུལ་ཆུང་བ་དང་སྙན་ཞུ་གཞན་པ།</string>
     <string name="using_as">%sནས་བེད་སྤྱོད་བྱས།</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">གནམ་གཤིས་དན་སྐུལ།</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">ཧྲང་ཧེ་སྐར་ཚོགས་ཆ་འཕྲིན་ལག་རྩལ་ཚད་ཡོད་སྤྱི་གཉེར།</string>
+    <string name="wed">གཟའ་ལྷག་པ།</string>
     <string name="weekly_forecast">ཉིན་རེ།</string>
     <string name="widget_background">ལྷུ་ཆས་ཆུང་བའི་རྒྱབ་ལྗོངས།</string>
     <string name="widget_empty_text">རྡེབ་ནས་གནམ་གཤིས་ཆ་འཕྲིན་ཐོབ་པར་བྱེད།</string>
+    <string name="widget_location">གྲོང་ཁྱེར་གྱི་མིང་།</string>
     <string name="widget_name_4x1">གནམ་གཤིས་དང་དུས་ཅོང་།</string>
     <string name="widget_setting">སྒྲིག་འགོད།</string>
     <string name="widget_setting_background_color">རྒྱབ་ལྗོངས་ཚོན་མདོག</string>

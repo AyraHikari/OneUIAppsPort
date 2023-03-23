@@ -22,16 +22,7 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nKotlinVersion.kt\nKotlin\n*S Kotlin\n*F\n+ 1 KotlinVersion.kt\nkotlin/KotlinVersion\n*L\n1#1,78:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u000c\n\u0002\u0010\u000b\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 \u00172\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0017B\u0017\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0005B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0007J\u0011\u0010\r\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\u0000H\u0096\u0002J\u0013\u0010\u000f\u001a\u00020\u00102\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u0011H\u0096\u0002J\u0008\u0010\u0012\u001a\u00020\u0003H\u0016J\u0016\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0003J\u001e\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0003J\u0008\u0010\u0014\u001a\u00020\u0015H\u0016J \u0010\u0016\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0003H\u0002R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\tR\u0011\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\tR\u000e\u0010\u000c\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0018"
     }
@@ -65,9 +56,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -91,7 +83,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 2
 
     new-instance v0, Lkotlin/KotlinVersion$Companion;
 
@@ -102,15 +94,9 @@
     sput-object v0, Lkotlin/KotlinVersion;->Companion:Lkotlin/KotlinVersion$Companion;
 
     .line 75
-    new-instance v0, Lkotlin/KotlinVersion;
+    invoke-static {}, Lkotlin/KotlinVersionCurrentValue;->get()Lkotlin/KotlinVersion;
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x3
-
-    const/16 v3, 0x48
-
-    invoke-direct {v0, v1, v2, v3}, Lkotlin/KotlinVersion;-><init>(III)V
+    move-result-object v0
 
     sput-object v0, Lkotlin/KotlinVersion;->CURRENT:Lkotlin/KotlinVersion;
 
@@ -131,9 +117,10 @@
 .method public constructor <init>(III)V
     .locals 0
 
-    .line 17
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 17
     iput p1, p0, Lkotlin/KotlinVersion;->major:I
 
     iput p2, p0, Lkotlin/KotlinVersion;->minor:I
@@ -151,41 +138,63 @@
 .end method
 
 .method private final versionOf(III)I
-    .locals 2
+    .locals 4
 
-    if-gez p1, :cond_0
+    const/16 v0, 0x100
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-ltz p1, :cond_0
+
+    if-ge p1, v0, :cond_0
+
+    move v3, v1
 
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0xff
+    move v3, v2
 
-    if-lt v0, p1, :cond_3
+    :goto_0
+    if-eqz v3, :cond_3
 
-    if-gez p2, :cond_1
+    if-ltz p2, :cond_1
 
-    goto :goto_0
+    if-ge p2, v0, :cond_1
 
-    :cond_1
-    if-lt v0, p2, :cond_3
-
-    if-gez p3, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    if-lt v0, p3, :cond_3
-
-    const/4 v0, 0x1
+    move v3, v1
 
     goto :goto_1
 
-    :cond_3
-    :goto_0
-    const/4 v0, 0x0
+    :cond_1
+    move v3, v2
 
     :goto_1
-    if-eqz v0, :cond_4
+    if-eqz v3, :cond_3
+
+    if-ltz p3, :cond_2
+
+    if-ge p3, v0, :cond_2
+
+    move v0, v1
+
+    goto :goto_2
+
+    :cond_2
+    move v0, v2
+
+    :goto_2
+    if-eqz v0, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    move v1, v2
+
+    :goto_3
+    if-eqz v1, :cond_4
 
     shl-int/lit8 p1, p1, 0x10
 
@@ -207,19 +216,31 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const/16 p1, 0x2e
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 v0, 0x2e
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -232,8 +253,6 @@
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 .end method
 
@@ -242,7 +261,7 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
 
-    .line 17
+    .line 16
     check-cast p1, Lkotlin/KotlinVersion;
 
     invoke-virtual {p0, p1}, Lkotlin/KotlinVersion;->compareTo(Lkotlin/KotlinVersion;)I
@@ -257,7 +276,7 @@
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 45
     iget v0, p0, Lkotlin/KotlinVersion;->version:I
@@ -272,48 +291,46 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 38
-    move-object v0, p0
+    const/4 v0, 0x1
 
-    check-cast v0, Lkotlin/KotlinVersion;
+    if-ne p0, p1, :cond_0
 
-    const/4 v1, 0x1
-
-    if-ne v0, p1, :cond_0
-
-    return v1
+    return v0
 
     .line 39
     :cond_0
-    instance-of v0, p1, Lkotlin/KotlinVersion;
+    instance-of v1, p1, Lkotlin/KotlinVersion;
 
-    if-nez v0, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 p1, 0x0
-
-    :cond_1
     check-cast p1, Lkotlin/KotlinVersion;
 
-    const/4 v0, 0x0
+    goto :goto_0
 
-    if-eqz p1, :cond_3
+    :cond_1
+    const/4 p1, 0x0
+
+    :goto_0
+    const/4 v1, 0x0
+
+    if-nez p1, :cond_2
+
+    return v1
 
     .line 40
+    :cond_2
     iget v2, p0, Lkotlin/KotlinVersion;->version:I
 
     iget p1, p1, Lkotlin/KotlinVersion;->version:I
 
-    if-ne v2, p1, :cond_2
+    if-ne v2, p1, :cond_3
 
-    goto :goto_0
-
-    :cond_2
-    move v1, v0
-
-    :goto_0
-    return v1
+    goto :goto_1
 
     :cond_3
+    move v0, v1
+
+    :goto_1
     return v0
 .end method
 
@@ -356,13 +373,14 @@
 .method public final isAtLeast(II)Z
     .locals 1
 
-    .line 53
+    .line 52
     iget v0, p0, Lkotlin/KotlinVersion;->major:I
 
     if-gt v0, p1, :cond_1
 
     if-ne v0, p1, :cond_0
 
+    .line 53
     iget p1, p0, Lkotlin/KotlinVersion;->minor:I
 
     if-lt p1, p2, :cond_0
@@ -385,19 +403,21 @@
 .method public final isAtLeast(III)Z
     .locals 1
 
-    .line 62
+    .line 60
     iget v0, p0, Lkotlin/KotlinVersion;->major:I
 
     if-gt v0, p1, :cond_1
 
     if-ne v0, p1, :cond_0
 
+    .line 61
     iget p1, p0, Lkotlin/KotlinVersion;->minor:I
 
     if-gt p1, p2, :cond_1
 
     if-ne p1, p2, :cond_0
 
+    .line 62
     iget p1, p0, Lkotlin/KotlinVersion;->patch:I
 
     if-lt p1, p3, :cond_0
@@ -429,19 +449,29 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const/16 v1, 0x2e
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget v2, p0, Lkotlin/KotlinVersion;->minor:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget v1, p0, Lkotlin/KotlinVersion;->patch:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

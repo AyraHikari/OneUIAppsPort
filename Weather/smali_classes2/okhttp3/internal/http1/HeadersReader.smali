@@ -58,7 +58,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/internal/http1/HeadersReader$Companion;
@@ -77,9 +77,9 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 24
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/internal/http1/HeadersReader;->source:Lokio/BufferedSource;
@@ -88,7 +88,7 @@
 
     int-to-long v0, p1
 
-    .line 25
+    .line 2
     iput-wide v0, p0, Lokhttp3/internal/http1/HeadersReader;->headerLimit:J
 
     return-void
@@ -99,7 +99,6 @@
 .method public final getSource()Lokio/BufferedSource;
     .locals 1
 
-    .line 24
     iget-object v0, p0, Lokhttp3/internal/http1/HeadersReader;->source:Lokio/BufferedSource;
 
     return-object v0
@@ -108,23 +107,19 @@
 .method public final readHeaders()Lokhttp3/Headers;
     .locals 3
 
-    .line 36
+    .line 1
     new-instance v0, Lokhttp3/Headers$Builder;
 
     invoke-direct {v0}, Lokhttp3/Headers$Builder;-><init>()V
 
-    .line 38
+    .line 2
     :goto_0
     invoke-virtual {p0}, Lokhttp3/internal/http1/HeadersReader;->readLine()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 39
-    move-object v2, v1
-
-    check-cast v2, Ljava/lang/CharSequence;
-
-    invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
+    .line 3
+    invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
 
@@ -140,14 +135,14 @@
     :goto_1
     if-eqz v2, :cond_1
 
-    .line 42
+    .line 4
     invoke-virtual {v0}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
 
     move-result-object v0
 
     return-object v0
 
-    .line 40
+    .line 5
     :cond_1
     invoke-virtual {v0, v1}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
@@ -157,7 +152,7 @@
 .method public final readLine()Ljava/lang/String;
     .locals 5
 
-    .line 29
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/http1/HeadersReader;->source:Lokio/BufferedSource;
 
     iget-wide v1, p0, Lokhttp3/internal/http1/HeadersReader;->headerLimit:J
@@ -166,7 +161,7 @@
 
     move-result-object v0
 
-    .line 30
+    .line 2
     iget-wide v1, p0, Lokhttp3/internal/http1/HeadersReader;->headerLimit:J
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I

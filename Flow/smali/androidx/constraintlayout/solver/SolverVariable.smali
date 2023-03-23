@@ -14,13 +14,15 @@
 # static fields
 .field private static final INTERNAL_DEBUG:Z = false
 
-.field static final MAX_STRENGTH:I = 0x7
+.field static final MAX_STRENGTH:I = 0x9
 
-.field public static final STRENGTH_BARRIER:I = 0x7
+.field public static final STRENGTH_BARRIER:I = 0x6
+
+.field public static final STRENGTH_CENTERING:I = 0x7
 
 .field public static final STRENGTH_EQUALITY:I = 0x5
 
-.field public static final STRENGTH_FIXED:I = 0x6
+.field public static final STRENGTH_FIXED:I = 0x8
 
 .field public static final STRENGTH_HIGH:I = 0x3
 
@@ -31,6 +33,8 @@
 .field public static final STRENGTH_MEDIUM:I = 0x2
 
 .field public static final STRENGTH_NONE:I = 0x0
+
+.field private static final VAR_USE_HASH:Z = false
 
 .field private static uniqueConstantId:I = 0x1
 
@@ -48,7 +52,25 @@
 
 .field definitionId:I
 
+.field goalStrengthVector:[F
+
 .field public id:I
+
+.field public inGoal:Z
+
+.field inRows:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Landroidx/constraintlayout/solver/ArrayRow;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public isFinalValue:Z
+
+.field isSynonym:Z
 
 .field mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
@@ -62,6 +84,10 @@
 
 .field strengthVector:[F
 
+.field synonym:I
+
+.field synonymDelta:F
+
 .field public usageInRowCount:I
 
 
@@ -73,93 +99,141 @@
 .end method
 
 .method public constructor <init>(Landroidx/constraintlayout/solver/SolverVariable$Type;Ljava/lang/String;)V
-    .locals 1
+    .locals 3
 
-    .line 119
+    .line 129
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p2, -0x1
 
-    .line 49
+    .line 53
     iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->id:I
 
-    .line 50
+    .line 54
     iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->definitionId:I
+
+    const/4 v0, 0x0
+
+    .line 55
+    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->strength:I
+
+    .line 57
+    iput-boolean v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->isFinalValue:Z
+
+    const/16 v1, 0x9
+
+    new-array v2, v1, [F
+
+    .line 60
+    iput-object v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
+
+    new-array v1, v1, [F
+
+    .line 61
+    iput-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->goalStrengthVector:[F
+
+    const/16 v1, 0x10
+
+    new-array v1, v1, [Landroidx/constraintlayout/solver/ArrayRow;
+
+    .line 65
+    iput-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
+
+    .line 66
+    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+
+    .line 67
+    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->usageInRowCount:I
+
+    .line 68
+    iput-boolean v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->isSynonym:Z
+
+    .line 69
+    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonym:I
 
     const/4 p2, 0x0
 
-    .line 51
-    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->strength:I
+    .line 70
+    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonymDelta:F
 
-    const/4 v0, 0x7
+    const/4 p2, 0x0
 
-    new-array v0, v0, [F
+    .line 172
+    iput-object p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->inRows:Ljava/util/HashSet;
 
-    .line 55
-    iput-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
-
-    const/16 v0, 0x8
-
-    new-array v0, v0, [Landroidx/constraintlayout/solver/ArrayRow;
-
-    .line 58
-    iput-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
-
-    .line 59
-    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
-
-    .line 60
-    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->usageInRowCount:I
-
-    .line 120
+    .line 130
     iput-object p1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mType:Landroidx/constraintlayout/solver/SolverVariable$Type;
 
     return-void
 .end method
 
 .method public constructor <init>(Ljava/lang/String;Landroidx/constraintlayout/solver/SolverVariable$Type;)V
-    .locals 2
+    .locals 4
 
-    .line 114
+    .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 49
+    .line 53
     iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->id:I
 
-    .line 50
+    .line 54
     iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->definitionId:I
+
+    const/4 v1, 0x0
+
+    .line 55
+    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->strength:I
+
+    .line 57
+    iput-boolean v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->isFinalValue:Z
+
+    const/16 v2, 0x9
+
+    new-array v3, v2, [F
+
+    .line 60
+    iput-object v3, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
+
+    new-array v2, v2, [F
+
+    .line 61
+    iput-object v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->goalStrengthVector:[F
+
+    const/16 v2, 0x10
+
+    new-array v2, v2, [Landroidx/constraintlayout/solver/ArrayRow;
+
+    .line 65
+    iput-object v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
+
+    .line 66
+    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+
+    .line 67
+    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->usageInRowCount:I
+
+    .line 68
+    iput-boolean v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->isSynonym:Z
+
+    .line 69
+    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonym:I
 
     const/4 v0, 0x0
 
-    .line 51
-    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->strength:I
+    .line 70
+    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonymDelta:F
 
-    const/4 v1, 0x7
+    const/4 v0, 0x0
 
-    new-array v1, v1, [F
+    .line 172
+    iput-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->inRows:Ljava/util/HashSet;
 
-    .line 55
-    iput-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
-
-    const/16 v1, 0x8
-
-    new-array v1, v1, [Landroidx/constraintlayout/solver/ArrayRow;
-
-    .line 58
-    iput-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
-
-    .line 59
-    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
-
-    .line 60
-    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->usageInRowCount:I
-
-    .line 115
+    .line 125
     iput-object p1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mName:Ljava/lang/String;
 
-    .line 116
+    .line 126
     iput-object p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mType:Landroidx/constraintlayout/solver/SolverVariable$Type;
 
     return-void
@@ -170,16 +244,20 @@
 
     if-eqz p1, :cond_0
 
-    .line 94
+    .line 104
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     sget p1, Landroidx/constraintlayout/solver/SolverVariable;->uniqueErrorId:I
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -187,7 +265,7 @@
 
     return-object p0
 
-    .line 96
+    .line 106
     :cond_0
     sget-object p1, Landroidx/constraintlayout/solver/SolverVariable$1;->$SwitchMap$androidx$constraintlayout$solver$SolverVariable$Type:[I
 
@@ -217,7 +295,7 @@
 
     if-ne p1, v1, :cond_1
 
-    .line 104
+    .line 114
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -225,6 +303,8 @@
     const-string p1, "V"
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     sget p1, Landroidx/constraintlayout/solver/SolverVariable;->uniqueId:I
 
@@ -234,13 +314,15 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 106
+    .line 116
     :cond_1
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -252,7 +334,7 @@
 
     throw p1
 
-    .line 101
+    .line 111
     :cond_2
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -262,6 +344,8 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     sget p1, Landroidx/constraintlayout/solver/SolverVariable;->uniqueErrorId:I
 
     add-int/2addr p1, v0
@@ -270,13 +354,15 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 99
+    .line 109
     :cond_3
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -286,6 +372,8 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     sget p1, Landroidx/constraintlayout/solver/SolverVariable;->uniqueSlackId:I
 
     add-int/2addr p1, v0
@@ -294,13 +382,15 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 98
+    .line 108
     :cond_4
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -310,6 +400,8 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     sget p1, Landroidx/constraintlayout/solver/SolverVariable;->uniqueConstantId:I
 
     add-int/2addr p1, v0
@@ -318,13 +410,15 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 97
+    .line 107
     :cond_5
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -334,6 +428,8 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     sget p1, Landroidx/constraintlayout/solver/SolverVariable;->uniqueUnrestrictedId:I
 
     add-int/2addr p1, v0
@@ -341,6 +437,8 @@
     sput p1, Landroidx/constraintlayout/solver/SolverVariable;->uniqueUnrestrictedId:I
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -352,7 +450,7 @@
 .method static increaseErrorId()V
     .locals 1
 
-    .line 89
+    .line 99
     sget v0, Landroidx/constraintlayout/solver/SolverVariable;->uniqueErrorId:I
 
     add-int/lit8 v0, v0, 0x1
@@ -369,13 +467,13 @@
 
     const/4 v0, 0x0
 
-    .line 163
+    .line 178
     :goto_0
     iget v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
 
     if-ge v0, v1, :cond_1
 
-    .line 164
+    .line 179
     iget-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
     aget-object v1, v1, v0
@@ -389,7 +487,7 @@
 
     goto :goto_0
 
-    .line 168
+    .line 183
     :cond_1
     iget-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
@@ -397,7 +495,7 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 169
+    .line 184
     array-length v1, v0
 
     mul-int/lit8 v1, v1, 0x2
@@ -410,7 +508,7 @@
 
     iput-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
-    .line 171
+    .line 186
     :cond_2
     iget-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
@@ -420,7 +518,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 172
+    .line 187
     iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
 
     return-void
@@ -432,11 +530,11 @@
     const/4 v0, 0x0
 
     :goto_0
-    const/4 v1, 0x7
+    const/16 v1, 0x9
 
     if-ge v0, v1, :cond_0
 
-    .line 128
+    .line 138
     iget-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
 
     const/4 v2, 0x0
@@ -454,55 +552,49 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 213
+    .line 287
     iget-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mName:Ljava/lang/String;
 
     return-object v0
 .end method
 
 .method public final removeFromRow(Landroidx/constraintlayout/solver/ArrayRow;)V
-    .locals 5
+    .locals 4
 
-    .line 176
+    .line 195
     iget v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
 
     const/4 v1, 0x0
 
-    move v2, v1
-
     :goto_0
-    if-ge v2, v0, :cond_2
+    if-ge v1, v0, :cond_2
 
-    .line 178
-    iget-object v3, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
+    .line 197
+    iget-object v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
-    aget-object v3, v3, v2
+    aget-object v2, v2, v1
 
-    if-ne v3, p1, :cond_1
+    if-ne v2, p1, :cond_1
 
     :goto_1
-    sub-int p1, v0, v2
-
-    add-int/lit8 p1, p1, -0x1
+    add-int/lit8 p1, v0, -0x1
 
     if-ge v1, p1, :cond_0
 
-    .line 180
+    .line 199
     iget-object p1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
-    add-int v3, v2, v1
+    add-int/lit8 v2, v1, 0x1
 
-    add-int/lit8 v4, v3, 0x1
+    aget-object v3, p1, v2
 
-    aget-object v4, p1, v4
+    aput-object v3, p1, v1
 
-    aput-object v4, p1, v3
-
-    add-int/lit8 v1, v1, 0x1
+    move v1, v2
 
     goto :goto_1
 
-    .line 182
+    .line 201
     :cond_0
     iget p1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
 
@@ -513,7 +605,7 @@
     return-void
 
     :cond_1
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
@@ -522,41 +614,134 @@
 .end method
 
 .method public reset()V
-    .locals 2
+    .locals 6
 
     const/4 v0, 0x0
 
-    .line 197
+    .line 257
     iput-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mName:Ljava/lang/String;
 
-    .line 198
-    sget-object v0, Landroidx/constraintlayout/solver/SolverVariable$Type;->UNKNOWN:Landroidx/constraintlayout/solver/SolverVariable$Type;
+    .line 258
+    sget-object v1, Landroidx/constraintlayout/solver/SolverVariable$Type;->UNKNOWN:Landroidx/constraintlayout/solver/SolverVariable$Type;
 
-    iput-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mType:Landroidx/constraintlayout/solver/SolverVariable$Type;
-
-    const/4 v0, 0x0
-
-    .line 199
-    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->strength:I
-
-    const/4 v1, -0x1
-
-    .line 200
-    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->id:I
-
-    .line 201
-    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->definitionId:I
+    iput-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mType:Landroidx/constraintlayout/solver/SolverVariable$Type;
 
     const/4 v1, 0x0
 
-    .line 202
-    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->computedValue:F
+    .line 259
+    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->strength:I
 
-    .line 203
-    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+    const/4 v2, -0x1
 
-    .line 204
-    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->usageInRowCount:I
+    .line 260
+    iput v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->id:I
+
+    .line 261
+    iput v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->definitionId:I
+
+    const/4 v3, 0x0
+
+    .line 262
+    iput v3, p0, Landroidx/constraintlayout/solver/SolverVariable;->computedValue:F
+
+    .line 263
+    iput-boolean v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->isFinalValue:Z
+
+    .line 264
+    iput-boolean v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->isSynonym:Z
+
+    .line 265
+    iput v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonym:I
+
+    .line 266
+    iput v3, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonymDelta:F
+
+    .line 270
+    iget v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+
+    move v4, v1
+
+    :goto_0
+    if-ge v4, v2, :cond_0
+
+    .line 272
+    iget-object v5, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
+
+    aput-object v0, v5, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    .line 274
+    :cond_0
+    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+
+    .line 276
+    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->usageInRowCount:I
+
+    .line 277
+    iput-boolean v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->inGoal:Z
+
+    .line 278
+    iget-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->goalStrengthVector:[F
+
+    invoke-static {v0, v3}, Ljava/util/Arrays;->fill([FF)V
+
+    return-void
+.end method
+
+.method public setFinalValue(Landroidx/constraintlayout/solver/LinearSystem;F)V
+    .locals 3
+
+    .line 227
+    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->computedValue:F
+
+    const/4 p2, 0x1
+
+    .line 228
+    iput-boolean p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->isFinalValue:Z
+
+    const/4 p2, 0x0
+
+    .line 229
+    iput-boolean p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->isSynonym:Z
+
+    const/4 v0, -0x1
+
+    .line 230
+    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonym:I
+
+    const/4 v1, 0x0
+
+    .line 231
+    iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonymDelta:F
+
+    .line 232
+    iget v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+
+    .line 233
+    iput v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->definitionId:I
+
+    move v0, p2
+
+    :goto_0
+    if-ge v0, v1, :cond_0
+
+    .line 235
+    iget-object v2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
+
+    aget-object v2, v2, v0
+
+    invoke-virtual {v2, p1, p0, p2}, Landroidx/constraintlayout/solver/ArrayRow;->updateFromFinalVariable(Landroidx/constraintlayout/solver/LinearSystem;Landroidx/constraintlayout/solver/SolverVariable;Z)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 237
+    :cond_0
+    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
 
     return-void
 .end method
@@ -564,8 +749,60 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 216
+    .line 290
     iput-object p1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setSynonym(Landroidx/constraintlayout/solver/LinearSystem;Landroidx/constraintlayout/solver/SolverVariable;F)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    .line 244
+    iput-boolean v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->isSynonym:Z
+
+    .line 245
+    iget p2, p2, Landroidx/constraintlayout/solver/SolverVariable;->id:I
+
+    iput p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonym:I
+
+    .line 246
+    iput p3, p0, Landroidx/constraintlayout/solver/SolverVariable;->synonymDelta:F
+
+    .line 247
+    iget p2, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+
+    const/4 p3, -0x1
+
+    .line 248
+    iput p3, p0, Landroidx/constraintlayout/solver/SolverVariable;->definitionId:I
+
+    const/4 p3, 0x0
+
+    move v0, p3
+
+    :goto_0
+    if-ge v0, p2, :cond_0
+
+    .line 250
+    iget-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
+
+    aget-object v1, v1, v0
+
+    invoke-virtual {v1, p1, p0, p3}, Landroidx/constraintlayout/solver/ArrayRow;->updateFromSynonymVariable(Landroidx/constraintlayout/solver/LinearSystem;Landroidx/constraintlayout/solver/SolverVariable;Z)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 252
+    :cond_0
+    iput p3, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
+
+    .line 253
+    invoke-virtual {p1}, Landroidx/constraintlayout/solver/LinearSystem;->displayReadableRows()V
 
     return-void
 .end method
@@ -573,7 +810,7 @@
 .method public setType(Landroidx/constraintlayout/solver/SolverVariable$Type;Ljava/lang/String;)V
     .locals 0
 
-    .line 218
+    .line 292
     iput-object p1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mType:Landroidx/constraintlayout/solver/SolverVariable$Type;
 
     return-void
@@ -582,16 +819,20 @@
 .method strengthsToString()Ljava/lang/String;
     .locals 9
 
-    .line 133
+    .line 143
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "["
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -607,7 +848,7 @@
 
     move v4, v3
 
-    .line 136
+    .line 146
     :goto_0
     iget-object v6, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
 
@@ -615,24 +856,28 @@
 
     if-ge v3, v6, :cond_4
 
-    .line 137
+    .line 147
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
+    move-result-object v0
 
-    aget v0, v0, v3
+    iget-object v6, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    aget v6, v6, v3
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 138
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 148
     iget-object v6, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
 
     aget v7, v6, v3
@@ -647,57 +892,57 @@
 
     goto :goto_1
 
-    .line 140
+    .line 150
     :cond_0
-    aget v6, v6, v3
+    aget v7, v6, v3
 
-    cmpg-float v6, v6, v8
+    cmpg-float v7, v7, v8
 
-    if-gez v6, :cond_1
+    if-gez v7, :cond_1
 
     move v4, v1
 
-    .line 143
+    .line 153
     :cond_1
     :goto_1
-    iget-object v6, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
+    aget v7, v6, v3
 
-    aget v6, v6, v3
+    cmpl-float v7, v7, v8
 
-    cmpl-float v6, v6, v8
-
-    if-eqz v6, :cond_2
+    if-eqz v7, :cond_2
 
     move v5, v2
 
-    .line 146
+    .line 156
     :cond_2
-    iget-object v6, p0, Landroidx/constraintlayout/solver/SolverVariable;->strengthVector:[F
-
     array-length v6, v6
 
     sub-int/2addr v6, v1
 
     if-ge v3, v6, :cond_3
 
-    .line 147
+    .line 157
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, ", "
+    move-result-object v0
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, ", "
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_2
 
-    .line 149
+    .line 159
     :cond_3
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -705,11 +950,15 @@
 
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, "] "
+    move-result-object v0
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, "] "
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -721,36 +970,44 @@
     :cond_4
     if-eqz v4, :cond_5
 
-    .line 153
+    .line 163
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, " (-)"
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " (-)"
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     :cond_5
     if-eqz v5, :cond_6
 
-    .line 156
+    .line 166
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, " (*)"
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " (*)"
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -761,30 +1018,62 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 233
+    .line 313
+    iget-object v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mName:Ljava/lang/String;
+
+    const-string v1, ""
+
+    if-eqz v0, :cond_0
+
+    .line 314
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, ""
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
+    goto :goto_0
+
+    .line 316
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->id:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
     return-object v0
 .end method
 
-.method public final updateReferencesWithNewDefinition(Landroidx/constraintlayout/solver/ArrayRow;)V
-    .locals 5
+.method public final updateReferencesWithNewDefinition(Landroidx/constraintlayout/solver/LinearSystem;Landroidx/constraintlayout/solver/ArrayRow;)V
+    .locals 4
 
-    .line 189
+    .line 215
     iget v0, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
 
     const/4 v1, 0x0
@@ -794,24 +1083,18 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 191
+    .line 217
     iget-object v3, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
 
     aget-object v3, v3, v2
 
-    iget-object v3, v3, Landroidx/constraintlayout/solver/ArrayRow;->variables:Landroidx/constraintlayout/solver/ArrayLinkedVariables;
-
-    iget-object v4, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquations:[Landroidx/constraintlayout/solver/ArrayRow;
-
-    aget-object v4, v4, v2
-
-    invoke-virtual {v3, v4, p1, v1}, Landroidx/constraintlayout/solver/ArrayLinkedVariables;->updateFromRow(Landroidx/constraintlayout/solver/ArrayRow;Landroidx/constraintlayout/solver/ArrayRow;Z)V
+    invoke-virtual {v3, p1, p2, v1}, Landroidx/constraintlayout/solver/ArrayRow;->updateFromRow(Landroidx/constraintlayout/solver/LinearSystem;Landroidx/constraintlayout/solver/ArrayRow;Z)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 193
+    .line 219
     :cond_0
     iput v1, p0, Landroidx/constraintlayout/solver/SolverVariable;->mClientEquationsCount:I
 

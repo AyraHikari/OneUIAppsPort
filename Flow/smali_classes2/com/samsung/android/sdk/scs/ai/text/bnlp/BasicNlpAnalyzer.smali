@@ -54,7 +54,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/bnlp/-$$Lambda$1fItRLjCUymglcKhkxvNGD0_M7g;->INSTANCE:Lcom/samsung/android/sdk/scs/ai/text/bnlp/-$$Lambda$1fItRLjCUymglcKhkxvNGD0_M7g;
+    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/bnlp/-$$Lambda$BasicNlpAnalyzer$-tyXSJp6yIHZkhd2CSpn4WX993I;->INSTANCE:Lcom/samsung/android/sdk/scs/ai/text/bnlp/-$$Lambda$BasicNlpAnalyzer$-tyXSJp6yIHZkhd2CSpn4WX993I;
 
     invoke-static {v1, v2}, Ljava/util/stream/Collectors;->collectingAndThen(Ljava/util/stream/Collector;Ljava/util/function/Function;)Ljava/util/stream/Collector;
 
@@ -92,6 +92,16 @@
     iput-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/bnlp/BasicNlpAnalyzer;->mServiceExecutor:Lcom/samsung/android/sdk/scs/ai/text/TextServiceExecutor;
 
     return-void
+.end method
+
+.method public static synthetic lambda$-tyXSJp6yIHZkhd2CSpn4WX993I(Ljava/util/Set;)Ljava/util/Set;
+    .locals 0
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method private requestAnalyze(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
@@ -165,7 +175,7 @@
     .line 196
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string p1, "string"
+    const-string/jumbo p1, "string"
 
     .line 197
     invoke-virtual {v1, p1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
@@ -214,9 +224,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v1, p1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -246,7 +260,7 @@
     return-object v0
 
     :cond_0
-    const-string v3, "resultCode"
+    const-string/jumbo v3, "resultCode"
 
     .line 114
     invoke-virtual {v1, v3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -262,11 +276,15 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "unexpected resultCode!!! resultCode: "
+    const-string/jumbo v4, "unexpected resultCode!!! resultCode: "
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -277,21 +295,21 @@
     return-object v0
 
     :cond_1
-    const-string v3, "sentenceRawTextList"
+    const-string/jumbo v3, "sentenceRawTextList"
 
     .line 119
     invoke-virtual {v1, v3}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v3
 
-    const-string v4, "sentencePositionList"
+    const-string/jumbo v4, "sentencePositionList"
 
     .line 120
     invoke-virtual {v1, v4}, Landroid/os/Bundle;->getIntegerArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v4
 
-    const-string v5, "wordRawTextList"
+    const-string/jumbo v5, "wordRawTextList"
 
     .line 122
     invoke-virtual {v1, v5}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -300,7 +318,7 @@
 
     check-cast v5, Ljava/util/ArrayList;
 
-    const-string v6, "wordPositionList"
+    const-string/jumbo v6, "wordPositionList"
 
     .line 124
     invoke-virtual {v1, v6}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -309,7 +327,7 @@
 
     check-cast v6, Ljava/util/ArrayList;
 
-    const-string v7, "tokenRawTextList"
+    const-string/jumbo v7, "tokenRawTextList"
 
     .line 126
     invoke-virtual {v1, v7}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -318,7 +336,7 @@
 
     check-cast v7, Ljava/util/ArrayList;
 
-    const-string v8, "tokenPositionList"
+    const-string/jumbo v8, "tokenPositionList"
 
     .line 128
     invoke-virtual {v1, v8}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -327,7 +345,7 @@
 
     check-cast v8, Ljava/util/ArrayList;
 
-    const-string v9, "tokenPosTagList"
+    const-string/jumbo v9, "tokenPosTagList"
 
     .line 130
     invoke-virtual {v1, v9}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -336,7 +354,7 @@
 
     check-cast v9, Ljava/util/ArrayList;
 
-    const-string v10, "tokenStemList"
+    const-string/jumbo v10, "tokenStemList"
 
     .line 132
     invoke-virtual {v1, v10}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -345,7 +363,7 @@
 
     check-cast v10, Ljava/util/ArrayList;
 
-    const-string v11, "tokenLemmaList"
+    const-string/jumbo v11, "tokenLemmaList"
 
     .line 134
     invoke-virtual {v1, v11}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -354,7 +372,7 @@
 
     check-cast v11, Ljava/util/ArrayList;
 
-    const-string v12, "tokenMpTagsList"
+    const-string/jumbo v12, "tokenMpTagsList"
 
     .line 136
     invoke-virtual {v1, v12}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -774,53 +792,81 @@
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v3, ", sentencePositionList: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v3, ", wordRawTextList: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v5, v30
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v3, ", wordPositionList: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v6, v22
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v3, ", tokenRawTextList: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v7, v21
 
     invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v3, ", tokenPositionList: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v8, v16
 
     invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v3, ", tokenPosTagList: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     move-object/from16 v9, v17
 
     invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -923,7 +969,7 @@
     goto :goto_0
 
     :cond_1
-    const-string p1, "resultCode"
+    const-string/jumbo p1, "resultCode"
 
     .line 77
     invoke-virtual {v1, p1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -932,7 +978,7 @@
 
     if-ne p1, v0, :cond_2
 
-    const-string p1, "textSupportedBoolean"
+    const-string/jumbo p1, "textSupportedBoolean"
 
     .line 79
     invoke-virtual {v1, p1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
@@ -950,13 +996,17 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "unexpected resultCode!!! resultCode: "
+    const-string/jumbo v1, "unexpected resultCode!!! resultCode: "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 

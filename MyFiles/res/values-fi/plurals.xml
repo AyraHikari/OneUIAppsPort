@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Voit valita enintään %d kohdetta.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Voit valita enintään %d kohteen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d tiedostoa ei voi siirtää roskakoriin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tiedostoa ei voi siirtää roskakoriin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d kansiota ei voi siirtää roskakoriin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kansiota ei voi siirtää roskakoriin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d kohdetta ei voi siirtää roskakoriin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohdetta ei voi siirtää roskakoriin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Valituista tiedostoista %d poistetaan, sillä ne ovat pilvessä tai USB-tallennuslaitteessa.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Valituista tiedostoista %d poistetaan, sillä se on pilvessä tai USB-tallennuslaitteessa.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Valituista kansioista %d poistetaan, sillä ne ovat pilvessä tai USB-tallennuslaitteessa.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Valituista kansioista %d poistetaan, sillä se on pilvessä tai USB-tallennuslaitteessa.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Valituista kohteista %d poistetaan, sillä ne ovat pilvessä tai USB-tallennuslaitteessa.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Valituista kohteista %d poistetaan, sillä se on pilvessä tai USB-tallennuslaitteessa.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Pakataan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pakataan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Pakataan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pakataan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Pakataan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pakataan %d kansio…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Pakataan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pakataan %d kansiota…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Pakataan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pakataan %d kohde…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Pakataan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pakataan %d kohdetta…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Kopioidaan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopioidaan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Kopioidaan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopioidaan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Kopioidaan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopioidaan %d kansio…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Kopioidaan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopioidaan %d kansiota…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Kopioidaan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopioidaan %d kohde…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Kopioidaan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopioidaan %d kohdetta…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Poistetaanko %d tiedostoa puhelimesta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d tiedosto puhelimesta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Poistetaanko %d tiedostoa tablet-laitteesta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d tiedosto tablet-laitteesta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Poistetaanko %d kansiota puhelimesta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d kansio puhelimesta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Poistetaanko %d kansiota tablet-laitteesta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d kansio tablet-laitteesta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Poistetaanko %d kohdetta puhelimesta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d kohde puhelimesta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Poistetaanko %d kohdetta tablet-laitteesta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d kohde tablet-laitteesta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Poistetaan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Poistetaan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaan %d kansiota…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Poist. %d kohdetta roskakorista…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poist. %d kohde roskakorista…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Poistetaan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaan %d kohdetta…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Puretaan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Puretaan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Puretaan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Puretaan %d kansiota…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Puretaan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Puretaan %d kohdetta…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d tiedostoa siirretään myös %2$sssa roskakoriin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d tiedosto siirretään myös %2$sssa roskakoriin.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Palautetaan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Palautetaan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d kansiota siirretään myös %2$sssa roskakoriin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d kansio siirretään myös %2$sssa roskakoriin.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Palautetaan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Palautetaan %d kansiota…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Sisäinen muisti on täynnä. Poistetaanko %d tiedostoa pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisäinen muisti on täynnä. Poistetaanko %d tiedosto pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Sisäinen muisti on täynnä. Poistetaanko %d kansiota pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisäinen muisti on täynnä. Poistetaanko %d kansio pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Sisäinen muisti on täynnä. Poistetaanko %d kohdetta pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisäinen muisti on täynnä. Poistetaanko %d kohde pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Sisäinen muisti ja SD-kortti ovat täynnä. Poistetaanko %d tiedostoa pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisäinen muisti ja SD-kortti ovat täynnä. Poistetaanko %d tiedosto pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Sisäinen muisti ja SD-kortti ovat täynnä. Poistetaanko %d kansiota pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisäinen muisti ja SD-kortti ovat täynnä. Poistetaanko %d kansio pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Sisäinen muisti ja SD-kortti ovat täynnä. Poistetaanko %d kohdetta pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sisäinen muisti ja SD-kortti ovat täynnä. Poistetaanko %d kohde pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Palautetaan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Palautetaan %d kohdetta…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d kohdetta siirretään myös %2$sssa roskakoriin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d kohde siirretään myös %2$sssa roskakoriin.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Yli %d sovellusikkunaa ei voi avata.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Yli %d sovellusikkunaa ei voi avata.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Siirretäänkö %d tiedostoa roskakoriin?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretäänkö %d tiedosto roskakoriin?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Siirretäänkö %d tiedostoa roskakoriin?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretäänkö %d tiedosto roskakoriin?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Siirretäänkö %d kansiota roskakoriin?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretäänkö %d kansio roskakoriin?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Siirretäänkö %d kansiota roskakoriin?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretäänkö %d kansio roskakoriin?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Siirretäänkö %d kohdetta roskakoriin?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretäänkö %d kohde roskakoriin?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Siirretäänkö %d kohdetta roskakoriin?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretäänkö %d kohde roskakoriin?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Siirretään %d tiedostoa roskakoriin…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d tiedosto roskakoriin…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Siirretään %d kansiota roskakoriin…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d kansio roskakoriin…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Siirretään %d kohdetta roskakoriin…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d kohde roskakoriin…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Siirretään %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Siirretään %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Siirretään %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d kansio…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Siirretään %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d kansiota…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Siirretään %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d kohde…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Siirretään %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siirretään %d kohdetta…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d kohdetta pakattu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde pakattu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d kohdetta kopioitu kohteeseen %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d kohde kopioitu kohteeseen %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Poistetaanko kansio ja siinä olevat %d tiedostoa?</item>
+        <item quantity="one">Poistetaanko kansio ja siinä oleva tiedosto?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Poistetaanko %1$d kansiota ja niissä olevat %2$d tiedostoa?</item>
+        <item quantity="one">Poistetaanko kansio ja siinä oleva tiedosto?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d kohdetta poistettu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde poistettu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Ladataan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ladataan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Ladataan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ladataan %d kansio…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Ladataan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ladataan %d kohde…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Kansioita ei voi jakaa. Kansiot ovat tyhjiä.</item>
+        <item quantity="one">Kansiota ei voi jakaa. Kansio on tyhjä.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d tiedostoa poistetaan lopullisesti.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tiedosto poistetaan lopullisesti.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d kansiota poistetaan lopullisesti.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kansio poistetaan lopullisesti.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d kohdetta purettu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde purettu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d tiedostoa lisätty suosikkeihin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tiedosto lisätty suosikkeihin.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d tiedostoa poistettu Suosikeista.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tiedosto poistettu Suosikeista.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d kansiota lisätty suosikkeihin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kansio lisätty suosikkeihin.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d kansiota poistettu Suosikeista.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kansio poistettu Suosikeista.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d kohdetta lisätty suosikkeihin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde lisätty suosikkeihin.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d kohdetta poistettu Suosikeista.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde poistettu Suosikeista.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d kohdetta</item>
+        <item quantity="one">1 kohde</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d kohdetta</item>
+        <item quantity="one">%d kohde</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d kohdetta kopioitu leikepöydälle</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde kopioitu leikepöydälle</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d kohdetta siirretty leikepöydälle</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde siirretty leikepöydälle</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d kohdetta valittu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde valittu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d kohdetta siirretty kohteeseen %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d kohde siirretty kohteeseen %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d kohdetta siirretty roskakoriin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kohde siirretty roskakoriin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d valittu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d valittu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD-kortti on täynnä. Poistetaanko %d tiedostoa pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortti on täynnä. Poistetaanko %d tiedosto pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD-kortti on täynnä. Poistetaanko %d kansiota pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortti on täynnä. Poistetaanko %d kansio pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD-kortti on täynnä. Poistetaanko %d kohdetta pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortti on täynnä. Poistetaanko %d kohde pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Tämä tiedosto poistetaan %d päivän kuluttua.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tämä tiedosto poistetaan %d päivän kuluttua.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Tämä kansio poistetaan %d päivän kuluttua.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tämä kansio poistetaan %d päivän kuluttua.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Poistetaanko %d tiedostoa pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d tiedosto pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Poistetaan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Palautetaan %d tiedostoa…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Palautetaan %d tiedosto…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Poistetaanko %d kansiota pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d kansio pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Poistetaan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaan %d kansio…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Palautetaan %d kansiota…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Palautetaan %d kansio…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Poistetaanko %d kohdetta pysyvästi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d kohde pysyvästi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Poistetaan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaan %d kohde…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Palautetaan %d kohdetta…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Palautetaan %d kohde…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Poistetaan %d päivän kuluttua</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaan %d päivän kuluttua</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Poistetaanko %d sovelluksen asennus?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poistetaanko %d sovelluksen asennus?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

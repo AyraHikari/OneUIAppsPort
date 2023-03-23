@@ -18,51 +18,116 @@
 
 
 # instance fields
+.field takeCallDialog:Landroidx/appcompat/app/AlertDialog;
+
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
 
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1717
+    .line 1835
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 p1, 0x0
+
+    .line 2090
+    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->takeCallDialog:Landroidx/appcompat/app/AlertDialog;
+
+    return-void
+.end method
+
+.method static synthetic access$3400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;)V
+    .locals 0
+
+    .line 1835
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->closeTakeCallDialog()V
+
+    return-void
+.end method
+
+.method private closeTakeCallDialog()V
+    .locals 1
+
+    .line 2119
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->takeCallDialog:Landroidx/appcompat/app/AlertDialog;
+
+    if-eqz v0, :cond_0
+
+    .line 2120
+    invoke-virtual {v0}, Landroidx/appcompat/app/AlertDialog;->dismiss()V
+
+    const/4 v0, 0x0
+
+    .line 2121
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->takeCallDialog:Landroidx/appcompat/app/AlertDialog;
+
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
 .method public onBlackScreenStatusChanged(Z)V
-    .locals 2
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "isBlackscreenOn"
+        }
+    .end annotation
 
-    .line 1764
+    .line 1882
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$3;
+    invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$202(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Z)Z
 
-    invoke-direct {v1, p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$3;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;Z)V
+    .line 1883
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->runOnUiThread(Ljava/lang/Runnable;)V
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$3;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$3;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     return-void
 .end method
 
 .method public onCallStateChanged(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callState"
+        }
+    .end annotation
 
     const-string v0, "OFFHOOK"
 
-    .line 1978
+    .line 2094
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result v0
 
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 1980
+    .line 2096
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$6;
@@ -71,31 +136,61 @@
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
+    goto :goto_0
+
     :cond_0
+    const-string v0, "IDLE"
+
+    .line 2113
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 2114
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->closeTakeCallDialog()V
+
+    :cond_1
+    :goto_0
     return-void
 .end method
 
 .method public onFail(Ljava/lang/String;)V
-    .locals 6
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
-    .line 1789
+    const/4 v0, 0x1
+
+    .line 1895
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    .line 1897
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
-    move-result v0
+    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
-    const/4 v1, 0x5
+    move-result v2
 
-    const/4 v2, 0x4
+    const/4 v3, 0x0
 
-    const/4 v3, 0x3
+    const/4 v4, -0x1
 
-    const/4 v4, 0x2
+    sparse-switch v2, :sswitch_data_0
 
-    const/4 v5, 0x1
+    :goto_0
+    move v0, v4
 
-    sparse-switch v0, :sswitch_data_0
-
-    goto :goto_0
+    goto :goto_1
 
     :sswitch_0
     const-string v0, "FAILURE_MIRRORING_HDMI_PLUGGED"
@@ -104,9 +199,12 @@
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
-    move p1, v5
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x5
 
     goto :goto_1
 
@@ -117,9 +215,12 @@
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_1
 
-    move p1, v3
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x4
 
     goto :goto_1
 
@@ -130,9 +231,12 @@
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_2
 
-    move p1, v4
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x3
 
     goto :goto_1
 
@@ -143,24 +247,25 @@
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_3
 
-    const/4 p1, 0x0
+    goto :goto_0
+
+    :cond_3
+    const/4 v0, 0x2
 
     goto :goto_1
 
     :sswitch_4
-    const-string v0, "FAILURE_USER_CONSENT_DENIED"
+    const-string v2, "FAILURE_USER_CONSENT_DENIED"
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_5
 
-    move p1, v2
-
-    goto :goto_1
+    goto :goto_0
 
     :sswitch_5
     const-string v0, "FAILURE_CANNOT_LAUNCH_SHORTCUT"
@@ -169,139 +274,134 @@
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_4
 
-    move p1, v1
+    goto :goto_0
 
-    goto :goto_1
-
-    :cond_0
-    :goto_0
-    const/4 p1, -0x1
-
-    :goto_1
-    const v0, 0x7f10011b
-
-    if-eqz p1, :cond_5
-
-    if-eq p1, v5, :cond_4
-
-    if-eq p1, v4, :cond_4
-
-    if-eq p1, v3, :cond_3
-
-    if-eq p1, v2, :cond_2
-
-    if-eq p1, v1, :cond_1
-
-    return-void
-
-    .line 1809
-    :cond_1
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    const v0, 0x7f1000f2
-
-    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 1810
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    const v1, 0x7f1000f1
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_2
-
-    .line 1805
-    :cond_2
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 1806
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    const v1, 0x7f10011d
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_2
-
-    .line 1801
-    :cond_3
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    const v0, 0x7f10011c
-
-    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 1802
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    const v1, 0x7f100119
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_2
-
-    .line 1797
     :cond_4
+    move v0, v3
+
+    :cond_5
+    :goto_1
+    const p1, 0x7f110164
+
+    packed-switch v0, :pswitch_data_0
+
+    return-void
+
+    .line 1908
+    :pswitch_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    const v0, 0x7f110165
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1798
+    .line 1909
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    const v1, 0x7f10011a
+    const v2, 0x7f110162
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_2
 
-    .line 1791
-    :cond_5
+    .line 1904
+    :pswitch_1
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 1905
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    const v2, 0x7f110163
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_2
+
+    .line 1899
+    :pswitch_2
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 1900
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    const v2, 0x7f110161
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_2
+
+    .line 1912
+    :pswitch_3
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 1913
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    const v2, 0x7f110166
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_2
+
+    .line 1916
+    :pswitch_4
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    const v0, 0x7f11010a
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1792
+    .line 1917
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    const v1, 0x7f100118
+    const v1, 0x7f110109
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1815
-    :goto_2
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+    .line 1918
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-static {v1, p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v1
+
+    .line 1923
+    :goto_2
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-static {v2, p1, v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-void
-
-    nop
 
     :sswitch_data_0
     .sparse-switch
@@ -312,12 +412,30 @@
         0x43c0b536 -> :sswitch_1
         0x5336f2c2 -> :sswitch_0
     .end sparse-switch
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
 .end method
 
 .method public onFavoriteAdded(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "favoriteApp"
+        }
+    .end annotation
 
-    .line 1734
+    .line 1852
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$1;
@@ -332,7 +450,7 @@
 .method public onFavoriteCreated()V
     .locals 2
 
-    .line 1966
+    .line 2080
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$5;
@@ -346,8 +464,16 @@
 
 .method public onFavoriteRemoved(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "favoriteApp"
+        }
+    .end annotation
 
-    .line 1747
+    .line 1865
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$2;
@@ -361,34 +487,93 @@
 
 .method public onMirroringStateChanged(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     const-string v0, "Start"
 
-    .line 1821
+    .line 1929
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_5
 
-    .line 1822
+    .line 1930
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
 
-    .line 1825
-    :try_start_0
+    .line 1932
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2400(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->getPhoneRotationDegree()I
 
     move-result p1
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    if-eqz p1, :cond_1
+    const/4 v1, 0x1
 
-    .line 1826
+    if-ne p1, v1, :cond_0
+
+    move p1, v1
+
+    goto :goto_0
+
+    :cond_0
+    move p1, v0
+
+    .line 1933
+    :goto_0
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->getIsOrentationFixedToLand()Z
+
+    move-result v2
+
+    if-eq v2, p1, :cond_1
+
+    .line 1934
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->setIsOrentationFixedToLand(Z)V
+
+    .line 1935
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
+
+    .line 1939
+    :cond_1
+    :try_start_0
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    .line 1940
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getIntent()Landroid/content/Intent;
@@ -399,95 +584,95 @@
 
     move-result-object p1
 
-    const-string v1, "packageName"
+    const-string v0, "packageName"
 
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1827
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+    .line 1941
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
-
-    move-result-object v1
-
-    const-string v2, "activityName"
-
-    invoke-virtual {v1, v2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 1828
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$900(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 1829
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    invoke-static {v2, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1002(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Z)Z
-
-    .line 1830
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setShortcutPackageName(Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
-    .line 1831
+    move-result-object v0
+
+    const-string v2, "activityName"
+
+    invoke-virtual {v0, v2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1942
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 1943
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-static {v2, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1202(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Z)Z
+
+    .line 1944
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setShortcutPackageName(Ljava/lang/String;)V
+
+    .line 1945
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object p1
 
-    invoke-virtual {p1, v1}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setShortcutActivityName(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setShortcutActivityName(Ljava/lang/String;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 1833
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+    .line 1947
+    :cond_2
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 1835
-    :cond_1
+    .line 1949
+    :cond_3
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2800(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    .line 1950
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 1836
+    .line 1951
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$900(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
+    invoke-static {p1, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1202(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Z)Z
 
-    move-result p1
+    goto :goto_1
 
-    if-eqz p1, :cond_2
-
-    .line 1837
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
-
-    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1002(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Z)Z
-
-    goto :goto_0
-
-    .line 1839
-    :cond_2
+    .line 1953
+    :cond_4
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getIntent()Landroid/content/Intent;
@@ -504,50 +689,50 @@
 
     move-result-object p1
 
-    .line 1840
+    .line 1954
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2900(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p1
 
-    .line 1844
+    .line 1958
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_3
+    :cond_5
     const-string v0, "Stop"
 
-    .line 1846
+    .line 1960
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_6
 
-    .line 1847
+    .line 1961
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->finish()V
 
-    :cond_4
-    :goto_0
+    :cond_6
+    :goto_1
     return-void
 .end method
 
 .method public onNaviBarStateChanged()V
     .locals 2
 
-    .line 2043
+    .line 2169
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v0
 
@@ -557,22 +742,22 @@
 
     if-nez v0, :cond_0
 
-    .line 2044
+    .line 2170
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
 
     goto :goto_0
 
-    .line 2046
+    .line 2172
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
 
     :goto_0
     return-void
@@ -581,12 +766,12 @@
 .method public onOrientationChanged()V
     .locals 2
 
-    .line 1961
+    .line 2075
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
 
     return-void
 .end method
@@ -594,17 +779,17 @@
 .method public onPhoneInfoReceived()V
     .locals 3
 
-    .line 1722
+    .line 1840
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$800(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
 
-    .line 1724
+    .line 1842
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v2
 
@@ -612,12 +797,12 @@
 
     move-result v2
 
-    invoke-static {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$902(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Z)Z
+    invoke-static {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$1102(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Z)Z
 
-    .line 1725
+    .line 1843
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v0
 
@@ -627,20 +812,20 @@
 
     if-nez v0, :cond_0
 
-    .line 1726
+    .line 1844
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
 
     goto :goto_0
 
-    .line 1728
+    .line 1846
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;I)V
 
     :goto_0
     return-void
@@ -648,23 +833,31 @@
 
 .method public onScreenStateChanged(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "screenState"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
     if-ne p1, v0, :cond_0
 
-    .line 1854
+    .line 1968
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$3000(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
 
     goto :goto_0
 
-    .line 1856
+    .line 1970
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2800(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$3100(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
 
     :goto_0
     return-void
@@ -672,6 +865,19 @@
 
 .method public onStartDragReceived(Ljava/util/ArrayList;Ljava/lang/String;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0
+        }
+        names = {
+            "fileList",
+            "thumbnail",
+            "isPull"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -683,7 +889,7 @@
         }
     .end annotation
 
-    .line 1862
+    .line 1976
     iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$4;
@@ -697,8 +903,16 @@
 
 .method public onUserConsentStateChanged(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "isGranted"
+        }
+    .end annotation
 
-    .line 2027
+    .line 2153
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback$7;
@@ -711,21 +925,29 @@
 .end method
 
 .method public onWiDiStatusChanged(Ljava/lang/String;)V
-    .locals 3
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     const-string v0, "CONNECTED"
 
-    .line 2001
+    .line 2127
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2002
+    .line 2128
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object p1
 
@@ -736,18 +958,20 @@
     :cond_0
     const-string v0, "FAILED"
 
-    .line 2003
+    .line 2129
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    const v1, 0x7f100119
+    const/4 v1, 0x1
 
-    const v2, 0x7f10011c
+    const v2, 0x7f110162
+
+    const v3, 0x7f110165
 
     if-eqz v0, :cond_2
 
-    .line 2004
+    .line 2130
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object p1
@@ -760,93 +984,93 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 2006
+    .line 2132
     new-instance p1, Landroid/content/Intent;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
-    const-class v1, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;
+    const-class v1, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;
 
     invoke-direct {p1, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v0, 0x10000000
 
-    .line 2007
+    .line 2133
     invoke-virtual {p1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 2008
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
+    .line 2134
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
 
     const/4 v1, 0x3
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 2010
+    .line 2136
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->startActivity(Landroid/content/Intent;)V
 
-    .line 2011
+    .line 2137
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->finish()V
 
     return-void
 
-    .line 2015
+    .line 2141
     :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-virtual {p1, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2016
+    .line 2142
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2017
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+    .line 2143
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v1, p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, p1, v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0
 
     :cond_2
     const-string v0, "CLOSED"
 
-    .line 2018
+    .line 2144
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
-    .line 2019
+    .line 2145
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-virtual {p1, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2020
+    .line 2146
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2021
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
+    .line 2147
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$PlayerCallback;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v1, p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, p1, v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$2500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;Ljava/lang/String;Ljava/lang/String;Z)V
 
     :cond_3
     :goto_0

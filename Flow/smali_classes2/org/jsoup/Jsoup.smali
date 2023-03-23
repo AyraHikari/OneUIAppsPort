@@ -46,25 +46,25 @@
 .method public static clean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;Lorg/jsoup/nodes/Document$OutputSettings;)Ljava/lang/String;
     .locals 0
 
-    .line 231
+    .line 233
     invoke-static {p0, p1}, Lorg/jsoup/Jsoup;->parseBodyFragment(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;
 
     move-result-object p0
 
-    .line 232
+    .line 234
     new-instance p1, Lorg/jsoup/safety/Cleaner;
 
     invoke-direct {p1, p2}, Lorg/jsoup/safety/Cleaner;-><init>(Lorg/jsoup/safety/Whitelist;)V
 
-    .line 233
+    .line 235
     invoke-virtual {p1, p0}, Lorg/jsoup/safety/Cleaner;->clean(Lorg/jsoup/nodes/Document;)Lorg/jsoup/nodes/Document;
 
     move-result-object p0
 
-    .line 234
+    .line 236
     invoke-virtual {p0, p3}, Lorg/jsoup/nodes/Document;->outputSettings(Lorg/jsoup/nodes/Document$OutputSettings;)Lorg/jsoup/nodes/Document;
 
-    .line 235
+    .line 237
     invoke-virtual {p0}, Lorg/jsoup/nodes/Document;->body()Lorg/jsoup/nodes/Element;
 
     move-result-object p0
@@ -103,20 +103,12 @@
 .method public static isValid(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Z
     .locals 1
 
-    const-string v0, ""
-
-    .line 247
-    invoke-static {p0, v0}, Lorg/jsoup/Jsoup;->parseBodyFragment(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;
-
-    move-result-object p0
-
-    .line 248
+    .line 250
     new-instance v0, Lorg/jsoup/safety/Cleaner;
 
     invoke-direct {v0, p1}, Lorg/jsoup/safety/Cleaner;-><init>(Lorg/jsoup/safety/Whitelist;)V
 
-    .line 249
-    invoke-virtual {v0, p0}, Lorg/jsoup/safety/Cleaner;->isValid(Lorg/jsoup/nodes/Document;)Z
+    invoke-virtual {v0, p0}, Lorg/jsoup/safety/Cleaner;->isValidBodyHtml(Ljava/lang/String;)Z
 
     move-result p0
 

@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 362
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker$7;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;
@@ -34,6 +42,16 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     const-string p1, "DID"
 

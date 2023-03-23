@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/as_options_list_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/menu_analyze_storage_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_analyze_storage" android:maxLines="1" android:textAlignment="viewStart" style="@style/SubHeader" />
+    <com.sec.android.app.myfiles.external.ui.widget.halfmargin.SettingsItemView android:id="@id/large_files_container" android:tag="binding_1" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner" app:hasDivider="false" app:settings_title="@string/tmbody_find_files_larger_than" app:subTitleColor="@color/set_value_text_color" />
+</LinearLayout>

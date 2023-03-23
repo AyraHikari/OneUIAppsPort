@@ -16,4 +16,12 @@
 .end method
 
 .method public abstract initialize(Landroidx/appcompat/view/menu/MenuBuilder;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "menu"
+        }
+    .end annotation
 .end method

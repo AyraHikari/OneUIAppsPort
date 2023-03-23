@@ -304,59 +304,53 @@
 
     invoke-virtual {v5, v11}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v5
+    move-result-object v11
 
-    add-int/lit8 v11, v9, 0x1
+    add-int/lit8 v14, v9, 0x1
 
-    aget-object v14, v7, v11
+    aget-object v1, v7, v14
 
-    invoke-virtual {v5, v14}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v11, v1}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v5
+    move-result-object v1
 
-    sget-object v14, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    aget v11, v6, v9
 
-    aget v16, v6, v9
-
-    add-int/lit8 v1, v16, -0x1
+    sub-int/2addr v11, v13
 
     .line 109
-    invoke-virtual {v14, v1}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v5, v11}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v1
+    move-result-object v11
 
-    invoke-virtual {v1, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v1
-
-    aget-object v4, v7, v11
-
-    sget-object v13, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
-    mul-int/lit8 v14, v12, 0x10
-
-    .line 110
-    invoke-virtual {v13, v14}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
-
-    move-result-object v13
-
-    invoke-virtual {v4, v13}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v11, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    aget-object v11, v7, v14
 
-    move-result-object v1
+    mul-int/lit8 v13, v12, 0x10
+
+    .line 110
+    invoke-virtual {v5, v13}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+
+    move-result-object v13
+
+    invoke-virtual {v11, v13}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v11
+
+    invoke-virtual {v4, v11}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v4
 
     .line 109
-    invoke-virtual {v5, v1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v4}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
     .line 112
-    sget-object v4, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
-    invoke-virtual {v1, v4}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -369,9 +363,7 @@
     if-nez v4, :cond_5
 
     .line 114
-    sget-object v4, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v1, v4}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -380,60 +372,70 @@
 
     .line 122
     :goto_7
-    aget-object v5, v7, v11
+    aget-object v5, v7, v14
 
-    int-to-long v13, v4
+    move-object v11, v2
 
-    move-object/from16 v16, v2
+    move-object v13, v3
 
-    invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+    int-to-long v2, v4
 
-    move-result-object v2
+    move/from16 p4, v8
 
-    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
-    move-result-object v2
+    move-result-object v8
 
-    invoke-virtual {v5, v2}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v8}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v2
+    move-result-object v8
 
-    sget-object v5, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
+    invoke-virtual {v5, v8}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    invoke-virtual {v2, v5}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    move-result-object v5
 
-    move-result-object v2
+    sget-object v8, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
 
-    aput-object v2, v7, v9
+    invoke-virtual {v5, v8}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v5
+
+    aput-object v5, v7, v9
 
     .line 124
-    aget-object v2, v7, v9
+    aget-object v5, v7, v9
 
-    sget-object v5, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    move-object/from16 v16, v11
 
-    move-object/from16 v17, v3
+    sget-object v11, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
 
-    aget v3, v6, v9
+    move/from16 v17, v12
 
-    invoke-virtual {v5, v3}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    aget v12, v6, v9
 
-    move-result-object v3
+    invoke-virtual {v11, v12}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    move-result-object v12
 
-    move-result v2
+    invoke-virtual {v5, v12}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    const/4 v3, 0x1
+    move-result v5
 
-    if-ne v2, v3, :cond_6
+    const/4 v12, 0x1
 
-    move v5, v3
+    if-ne v5, v12, :cond_6
+
+    move/from16 v8, p4
+
+    move v5, v12
+
+    move-object v3, v13
 
     move-object v4, v15
 
     move-object/from16 v2, v16
 
-    move-object/from16 v3, v17
+    move/from16 v12, v17
 
     const/4 v1, 0x0
 
@@ -443,56 +445,48 @@
 
     .line 130
     :cond_6
-    sget-object v2, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    aget-object v5, v7, v14
 
-    aget-object v3, v7, v11
+    invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
-    invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+    move-result-object v12
+
+    invoke-virtual {v1, v12}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v12
+
+    invoke-virtual {v5, v12}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v5
 
-    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    aget-object v12, v7, v9
+
+    invoke-virtual {v11, v5, v12}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v5, v8}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    move-result-object v3
+    move-result v5
 
-    aget-object v5, v7, v9
-
-    invoke-virtual {v2, v3, v5}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v2
-
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
-
-    move-result v2
-
-    if-nez v2, :cond_8
-
-    sget-object v2, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    if-nez v5, :cond_8
 
     .line 131
-    invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v3}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v3
-
-    aget-object v5, v7, v9
-
-    invoke-virtual {v2, v3, v5}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v2
 
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
+    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    move-result-object v2
+
+    aget-object v3, v7, v9
+
+    invoke-virtual {v11, v2, v3}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v8}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v2
 
@@ -504,11 +498,13 @@
 
     add-int/lit8 v10, v10, 0x1
 
+    move/from16 v8, p4
+
+    move-object v3, v13
+
     move-object v4, v15
 
     move-object/from16 v2, v16
-
-    move-object/from16 v3, v17
 
     const/4 v1, 0x0
 
@@ -547,9 +543,13 @@
 
     add-int/lit8 v4, v4, 0x2
 
+    move/from16 v8, p4
+
+    move-object v3, v13
+
     move-object/from16 v2, v16
 
-    move-object/from16 v3, v17
+    move/from16 v12, v17
 
     goto/16 :goto_7
 
@@ -863,59 +863,53 @@
 
     invoke-virtual {v10, v12}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v10
+    move-result-object v12
 
-    add-int/lit8 v12, v8, 0x1
+    add-int/lit8 v14, v8, 0x1
 
-    aget-object v14, v6, v12
+    aget-object v1, v6, v14
 
-    invoke-virtual {v10, v14}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v12, v1}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v10
+    move-result-object v1
 
-    sget-object v14, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    aget v12, v2, v8
 
-    aget v16, v2, v8
-
-    add-int/lit8 v1, v16, -0x1
+    sub-int/2addr v12, v13
 
     .line 229
-    invoke-virtual {v14, v1}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v10, v12}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v1
+    move-result-object v12
 
-    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v1
-
-    aget-object v5, v6, v12
-
-    sget-object v13, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
-    mul-int/lit8 v14, v11, 0x20
-
-    .line 230
-    invoke-virtual {v13, v14}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
-
-    move-result-object v13
-
-    invoke-virtual {v5, v13}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v12, v5}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v5
 
-    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    aget-object v12, v6, v14
 
-    move-result-object v1
+    mul-int/lit8 v13, v11, 0x20
+
+    .line 230
+    invoke-virtual {v10, v13}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v12
+
+    invoke-virtual {v5, v12}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v5
 
     .line 229
-    invoke-virtual {v10, v1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
     .line 232
-    sget-object v5, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
-    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v10}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v5
 
@@ -928,9 +922,7 @@
     if-nez v5, :cond_5
 
     .line 234
-    sget-object v5, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v1, v5}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v10}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -939,13 +931,13 @@
 
     .line 242
     :goto_7
-    aget-object v10, v6, v12
+    aget-object v10, v6, v14
 
-    int-to-long v13, v5
+    int-to-long v12, v5
 
     move-object/from16 p4, v3
 
-    invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+    invoke-static {v12, v13}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v3
 
@@ -968,27 +960,29 @@
     .line 244
     aget-object v3, v6, v8
 
-    sget-object v10, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     move-object/from16 v16, v4
 
-    aget v4, v2, v8
+    sget-object v4, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
 
-    invoke-virtual {v10, v4}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    move/from16 p6, v7
 
-    move-result-object v4
+    aget v7, v2, v8
 
-    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    invoke-virtual {v4, v7}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+
+    move-result-object v7
+
+    invoke-virtual {v3, v7}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v3
 
-    const/4 v4, 0x1
+    const/4 v7, 0x1
 
-    if-ne v3, v4, :cond_6
+    if-ne v3, v7, :cond_6
 
     move-object/from16 v3, p4
 
-    move v10, v4
+    move v10, v7
 
     move-object v5, v15
 
@@ -998,60 +992,54 @@
 
     const/16 v12, 0x20
 
+    move/from16 v7, p6
+
     goto/16 :goto_4
 
     .line 250
     :cond_6
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    aget-object v3, v6, v14
 
-    aget-object v4, v6, v12
+    invoke-static {v12, v13}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
-    invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+    move-result-object v7
 
-    move-result-object v10
+    invoke-virtual {v1, v7}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    invoke-virtual {v1, v10}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    move-result-object v7
 
-    move-result-object v10
-
-    invoke-virtual {v4, v10}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v4
-
-    aget-object v10, v6, v8
-
-    invoke-virtual {v3, v4, v10}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v3, v7}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v3
 
-    sget-object v4, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
+    aget-object v7, v6, v8
 
-    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    invoke-virtual {v4, v3, v7}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v10}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v3
 
     if-nez v3, :cond_8
 
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     .line 251
-    invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
-
-    move-result-object v4
-
-    invoke-virtual {v1, v4}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v4
-
-    aget-object v10, v6, v8
-
-    invoke-virtual {v3, v4, v10}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-static {v12, v13}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v3
 
-    sget-object v4, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
+    invoke-virtual {v1, v3}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    move-result-object v3
+
+    aget-object v7, v6, v8
+
+    invoke-virtual {v4, v3, v7}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v10}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v3
 
@@ -1064,6 +1052,8 @@
     add-int/lit8 v9, v9, 0x1
 
     move-object/from16 v3, p4
+
+    move/from16 v7, p6
 
     move-object v5, v15
 
@@ -1105,6 +1095,8 @@
     add-int/lit8 v5, v5, 0x2
 
     move-object/from16 v3, p4
+
+    move/from16 v7, p6
 
     move-object/from16 v4, v16
 
@@ -1338,20 +1330,18 @@
 
     invoke-virtual {v2, v3}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v2
+    move-result-object v11
 
     invoke-virtual {v9, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
     move-result-object v11
 
-    invoke-virtual {v2, v11}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v2
-
-    sget-object v11, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     .line 330
-    invoke-virtual {v11, v3}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
     move-result-object v3
 
@@ -1364,15 +1354,13 @@
 
     move-result-object v3
 
-    sget-object v11, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     const/16 v12, 0x400
 
-    invoke-virtual {v11, v12}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v2, v12}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v11
+    move-result-object v13
 
-    invoke-virtual {v3, v11}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v3, v13}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v3
 
@@ -1381,13 +1369,11 @@
     move-result-object v1
 
     .line 330
-    invoke-virtual {v2, v1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v11, v1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
     .line 333
-    sget-object v2, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     invoke-virtual {v1, v2}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v2
@@ -1401,9 +1387,7 @@
     if-nez v2, :cond_4
 
     .line 335
-    sget-object v2, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v1, v3}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -1439,27 +1423,27 @@
     move-result-object v2
 
     .line 345
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    sget-object v15, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
 
-    invoke-virtual {v3, v12}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v15, v12}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v3
+    move-result-object v8
 
-    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    invoke-virtual {v2, v8}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    move-result v3
+    move-result v8
 
-    if-ne v3, v5, :cond_5
+    if-ne v8, v5, :cond_5
+
+    const/4 v8, 0x0
 
     goto/16 :goto_2
 
     .line 351
     :cond_5
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     invoke-virtual {v9, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v15
+    move-result-object v8
 
     invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
@@ -1469,48 +1453,44 @@
 
     move-result-object v12
 
-    invoke-virtual {v15, v12}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v8, v12}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v12
+    move-result-object v8
 
-    invoke-virtual {v3, v12, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v15, v8, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v3
+    move-result-object v8
 
-    sget-object v12, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
+    invoke-virtual {v8, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    invoke-virtual {v3, v12}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    move-result v8
 
-    move-result v3
-
-    if-nez v3, :cond_6
-
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    if-nez v8, :cond_6
 
     .line 352
     invoke-static {v13, v14}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
-    move-result-object v12
+    move-result-object v8
 
-    invoke-virtual {v11, v12}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v11, v8}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v12
+    move-result-object v8
 
-    invoke-virtual {v9, v12}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v9, v8}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v12
+    move-result-object v8
 
-    invoke-virtual {v3, v12, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v15, v8, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v3
+    move-result-object v8
 
-    sget-object v12, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v3, v12}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    invoke-virtual {v8, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v3
 
     if-eqz v3, :cond_6
+
+    const/4 v8, 0x0
 
     .line 354
     aput-object v2, p3, v8
@@ -1521,6 +1501,8 @@
     return-void
 
     :cond_6
+    const/4 v8, 0x0
+
     add-int/lit8 v1, v1, 0x2
 
     const/16 v12, 0x400
@@ -1753,20 +1735,18 @@
 
     invoke-virtual {v1, v2}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v1
+    move-result-object v3
 
     invoke-virtual {v9, v6}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
     move-result-object v3
 
-    invoke-virtual {v1, v3}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v1
-
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     .line 418
-    invoke-virtual {v3, v2}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -1779,15 +1759,13 @@
 
     move-result-object v2
 
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     const/16 v11, 0x400
 
-    invoke-virtual {v3, v11}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v1, v11}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v2, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -1796,13 +1774,11 @@
     move-result-object v0
 
     .line 418
-    invoke-virtual {v1, v0}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v3, v0}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
     .line 421
-    sget-object v1, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
@@ -1816,9 +1792,7 @@
     if-nez v1, :cond_4
 
     .line 423
-    sget-object v1, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v0, v2}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -1852,27 +1826,27 @@
     move-result-object v2
 
     .line 433
-    sget-object v5, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    sget-object v8, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
 
-    invoke-virtual {v5, v11}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
+    invoke-virtual {v8, v11}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    move-result-object v5
+    move-result-object v15
 
-    invoke-virtual {v2, v5}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    invoke-virtual {v2, v15}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    move-result v5
+    move-result v15
 
-    if-ne v5, v12, :cond_5
+    if-ne v15, v12, :cond_5
+
+    const/4 v15, 0x0
 
     goto/16 :goto_2
 
     .line 439
     :cond_5
-    sget-object v5, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
-
     invoke-virtual {v9, v6}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v8
+    move-result-object v15
 
     invoke-static {v3, v4}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
@@ -1882,23 +1856,19 @@
 
     move-result-object v11
 
-    invoke-virtual {v8, v11}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v15, v11}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v8
+    move-result-object v11
 
-    invoke-virtual {v5, v8, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v8, v11, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    move-result-object v5
+    move-result-object v11
 
-    sget-object v8, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
+    invoke-virtual {v11, v5}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    invoke-virtual {v5, v8}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    move-result v11
 
-    move-result v5
-
-    if-nez v5, :cond_6
-
-    sget-object v5, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->TWO:Ljava/math/BigInteger;
+    if-nez v11, :cond_6
 
     .line 440
     invoke-static {v3, v4}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
@@ -1913,20 +1883,20 @@
 
     move-result-object v3
 
-    invoke-virtual {v5, v3, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    invoke-virtual {v8, v3, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v3
 
-    sget-object v4, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+    invoke-virtual {v3, v5}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v3
 
     if-eqz v3, :cond_6
 
+    const/4 v11, 0x0
+
     .line 442
-    aput-object v2, p5, v15
+    aput-object v2, p5, v11
 
     .line 443
     aput-object v9, p5, v12
@@ -1934,7 +1904,11 @@
     return-void
 
     :cond_6
+    const/4 v11, 0x0
+
     add-int/lit8 v1, v1, 0x2
+
+    move v15, v11
 
     const/16 v11, 0x400
 
@@ -1974,7 +1948,7 @@
 .end method
 
 .method private procedure_C(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
-    .locals 4
+    .locals 5
 
     .line 463
     sget-object v0, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
@@ -2006,15 +1980,15 @@
 
     invoke-virtual {v2, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    move-result v3
+    move-result v4
 
-    if-lez v3, :cond_0
+    if-lez v4, :cond_0
 
     invoke-virtual {v2, v0}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
-    move-result v3
+    move-result v4
 
-    if-gez v3, :cond_0
+    if-gez v4, :cond_0
 
     .line 474
     invoke-virtual {v2, p2, p1}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
@@ -2022,8 +1996,6 @@
     move-result-object v2
 
     .line 476
-    sget-object v3, Lorg/spongycastle/crypto/generators/GOST3410ParametersGenerator;->ONE:Ljava/math/BigInteger;
-
     invoke-virtual {v2, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v3

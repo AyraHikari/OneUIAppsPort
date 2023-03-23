@@ -3,17 +3,6 @@
 .source "RangeSlider.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/google/android/material/slider/RangeSlider;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
-    name = "RangeSliderState"
-.end annotation
-
-
 # static fields
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
     .annotation system Ldalvik/annotation/Signature;
@@ -27,29 +16,28 @@
 
 
 # instance fields
-.field private minSeparation:F
+.field public h:F
 
-.field private separationUnit:I
+.field public i:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 206
-    new-instance v0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState$1;
+    new-instance v0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState$a;
 
-    invoke-direct {v0}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState$1;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState$a;-><init>()V
 
     sput-object v0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method private constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 194
+    .line 2
     const-class v0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -62,75 +50,30 @@
 
     invoke-direct {p0, v0}, Landroid/view/AbsSavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 195
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->minSeparation:F
+    iput v0, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->h:F
 
-    .line 196
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->separationUnit:I
+    iput p1, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->i:I
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/google/android/material/slider/RangeSlider$1;)V
+.method public synthetic constructor <init>(Landroid/os/Parcel;Lcom/google/android/material/slider/b;)V
     .locals 0
 
-    .line 184
+    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;-><init>(Landroid/os/Parcel;)V
 
     return-void
-.end method
-
-.method constructor <init>(Landroid/os/Parcelable;)V
-    .locals 0
-
-    .line 190
-    invoke-direct {p0, p1}, Landroid/view/AbsSavedState;-><init>(Landroid/os/Parcelable;)V
-
-    return-void
-.end method
-
-.method static synthetic access$000(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;)F
-    .locals 0
-
-    .line 184
-    iget p0, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->minSeparation:F
-
-    return p0
-.end method
-
-.method static synthetic access$002(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;F)F
-    .locals 0
-
-    .line 184
-    iput p1, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->minSeparation:F
-
-    return p1
-.end method
-
-.method static synthetic access$100(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;)I
-    .locals 0
-
-    .line 184
-    iget p0, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->separationUnit:I
-
-    return p0
-.end method
-
-.method static synthetic access$102(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;I)I
-    .locals 0
-
-    .line 184
-    iput p1, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->separationUnit:I
-
-    return p1
 .end method
 
 
@@ -138,16 +81,16 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 201
+    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 202
-    iget p2, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->minSeparation:F
+    .line 2
+    iget p2, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->h:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 203
-    iget p2, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->separationUnit:I
+    .line 3
+    iget p2, p0, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->i:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

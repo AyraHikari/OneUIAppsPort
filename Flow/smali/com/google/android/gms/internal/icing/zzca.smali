@@ -1,79 +1,133 @@
-.class public final Lcom/google/android/gms/internal/icing/zzca;
-.super Ljava/lang/Object;
+.class final Lcom/google/android/gms/internal/icing/zzca;
+.super Lcom/google/android/gms/internal/icing/zzcd;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
+
+
+# instance fields
+.field private final zzc:I
 
 
 # direct methods
-.method public static zza(Lcom/google/android/gms/internal/icing/zzbx;)Lcom/google/android/gms/internal/icing/zzbx;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lcom/google/android/gms/internal/icing/zzbx<",
-            "TT;>;)",
-            "Lcom/google/android/gms/internal/icing/zzbx<",
-            "TT;>;"
-        }
-    .end annotation
+.method constructor <init>([BII)V
+    .locals 0
 
     .line 1
-    instance-of v0, p0, Lcom/google/android/gms/internal/icing/zzcc;
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/icing/zzcd;-><init>([B)V
 
-    if-nez v0, :cond_2
+    array-length p1, p1
 
-    instance-of v0, p0, Lcom/google/android/gms/internal/icing/zzbz;
+    const/4 p2, 0x0
 
-    if-eqz v0, :cond_0
+    .line 2
+    invoke-static {p2, p3, p1}, Lcom/google/android/gms/internal/icing/zzca;->zzm(III)I
 
-    goto :goto_0
+    iput p3, p0, Lcom/google/android/gms/internal/icing/zzca;->zzc:I
 
-    .line 3
-    :cond_0
-    instance-of v0, p0, Ljava/io/Serializable;
-
-    if-eqz v0, :cond_1
-
-    .line 4
-    new-instance v0, Lcom/google/android/gms/internal/icing/zzbz;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/icing/zzbz;-><init>(Lcom/google/android/gms/internal/icing/zzbx;)V
-
-    return-object v0
-
-    .line 5
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/icing/zzcc;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/icing/zzcc;-><init>(Lcom/google/android/gms/internal/icing/zzbx;)V
-
-    return-object v0
-
-    :cond_2
-    :goto_0
-    return-object p0
+    return-void
 .end method
 
-.method public static zzc(Ljava/lang/Object;)Lcom/google/android/gms/internal/icing/zzbx;
+
+# virtual methods
+.method public final zza(I)B
+    .locals 4
+
+    iget v0, p0, Lcom/google/android/gms/internal/icing/zzca;->zzc:I
+
+    add-int/lit8 v1, p1, 0x1
+
+    sub-int v1, v0, v1
+
+    or-int/2addr v1, p1
+
+    if-gez v1, :cond_1
+
+    if-gez p1, :cond_0
+
+    new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const/16 v2, 0x16
+
+    .line 2
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v2, "Index < 0: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_0
+    new-instance v1, Ljava/lang/ArrayIndexOutOfBoundsException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const/16 v3, 0x28
+
+    .line 3
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v3, "Index > length: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, ", "
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v1, p1}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzca;->zza:[B
+
+    .line 1
+    aget-byte p1, v0, p1
+
+    return p1
+.end method
+
+.method final zzb(I)B
     .locals 1
-    .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(TT;)",
-            "Lcom/google/android/gms/internal/icing/zzbx<",
-            "TT;>;"
-        }
-    .end annotation
 
-    .line 7
-    new-instance v0, Lcom/google/android/gms/internal/icing/zzcb;
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzca;->zza:[B
 
-    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/icing/zzcb;-><init>(Ljava/lang/Object;)V
+    .line 1
+    aget-byte p1, v0, p1
 
-    return-object v0
+    return p1
+.end method
+
+.method public final zzc()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/internal/icing/zzca;->zzc:I
+
+    return v0
+.end method
+
+.method protected final zzd()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
 .end method

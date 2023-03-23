@@ -89,26 +89,22 @@
 .method public constructor <init>(Ljava/nio/charset/Charset;)V
     .locals 0
 
-    .line 88
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
 
-    .line 89
+    .line 2
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast p1, Ljava/util/List;
 
     iput-object p1, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
-    .line 90
+    .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast p1, Ljava/util/List;
 
     iput-object p1, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
@@ -124,9 +120,7 @@
 
     const/4 p1, 0x0
 
-    .line 88
-    check-cast p1, Ljava/nio/charset/Charset;
-
+    .line 4
     :cond_0
     invoke-direct {p0, p1}, Lokhttp3/FormBody$Builder;-><init>(Ljava/nio/charset/Charset;)V
 
@@ -136,167 +130,149 @@
 
 # virtual methods
 .method public final add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/FormBody$Builder;
-    .locals 15
+    .locals 16
 
-    const-string v0, "name"
+    move-object/from16 v0, p0
 
-    move-object/from16 v2, p1
+    const-string v1, "name"
 
-    invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v3, p1
 
-    const-string v0, "value"
+    invoke-static {v3, v1}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-object/from16 v13, p2
+    const-string v1, "value"
 
-    invoke-static {v13, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v14, p2
 
-    .line 92
-    move-object v0, p0
+    invoke-static {v14, v1}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v0, Lokhttp3/FormBody$Builder;
-
-    .line 93
+    .line 1
     iget-object v1, v0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
-    move-object v14, v1
+    sget-object v15, Lokhttp3/HttpUrl;->Companion:Lokhttp3/HttpUrl$Companion;
 
-    check-cast v14, Ljava/util/Collection;
-
-    sget-object v1, Lokhttp3/HttpUrl;->Companion:Lokhttp3/HttpUrl$Companion;
-
-    .line 96
-    iget-object v10, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
-
-    const/4 v3, 0x0
+    .line 2
+    iget-object v11, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
 
     const/4 v4, 0x0
 
-    const-string v5, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
+    const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    const-string v6, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
 
     const/4 v7, 0x0
 
-    const/4 v8, 0x1
+    const/4 v8, 0x0
 
-    const/4 v9, 0x0
+    const/4 v9, 0x1
 
-    const/16 v11, 0x5b
+    const/4 v10, 0x0
 
-    const/4 v12, 0x0
+    const/16 v12, 0x5b
 
-    .line 93
-    invoke-static/range {v1 .. v12}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
+    const/4 v13, 0x0
 
-    move-result-object v1
+    move-object v2, v15
 
-    invoke-interface {v14, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 3
+    invoke-static/range {v2 .. v13}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
 
-    .line 98
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    .line 4
     iget-object v1, v0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
-    move-object v14, v1
+    .line 5
+    iget-object v11, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
 
-    check-cast v14, Ljava/util/Collection;
+    const-string v6, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
 
-    sget-object v1, Lokhttp3/HttpUrl;->Companion:Lokhttp3/HttpUrl$Companion;
+    move-object v2, v15
 
-    .line 101
-    iget-object v10, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
+    move-object/from16 v3, p2
 
-    const-string v5, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
+    .line 6
+    invoke-static/range {v2 .. v13}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
 
-    move-object/from16 v2, p2
+    move-result-object v2
 
-    .line 98
-    invoke-static/range {v1 .. v12}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v14, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     return-object v0
 .end method
 
 .method public final addEncoded(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/FormBody$Builder;
-    .locals 15
+    .locals 16
 
-    const-string v0, "name"
+    move-object/from16 v0, p0
 
-    move-object/from16 v2, p1
+    const-string v1, "name"
 
-    invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v3, p1
 
-    const-string v0, "value"
+    invoke-static {v3, v1}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-object/from16 v13, p2
+    const-string v1, "value"
 
-    invoke-static {v13, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v14, p2
 
-    .line 105
-    move-object v0, p0
+    invoke-static {v14, v1}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v0, Lokhttp3/FormBody$Builder;
-
-    .line 106
+    .line 1
     iget-object v1, v0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
-    move-object v14, v1
+    sget-object v15, Lokhttp3/HttpUrl;->Companion:Lokhttp3/HttpUrl$Companion;
 
-    check-cast v14, Ljava/util/Collection;
-
-    sget-object v1, Lokhttp3/HttpUrl;->Companion:Lokhttp3/HttpUrl$Companion;
-
-    .line 110
-    iget-object v10, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
-
-    const/4 v3, 0x0
+    .line 2
+    iget-object v11, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
 
     const/4 v4, 0x0
 
-    const-string v5, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
+    const/4 v5, 0x0
 
-    const/4 v6, 0x1
+    const-string v6, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
 
-    const/4 v7, 0x0
+    const/4 v7, 0x1
 
-    const/4 v8, 0x1
+    const/4 v8, 0x0
 
-    const/4 v9, 0x0
+    const/4 v9, 0x1
 
-    const/16 v11, 0x53
+    const/4 v10, 0x0
 
-    const/4 v12, 0x0
+    const/16 v12, 0x53
 
-    .line 106
-    invoke-static/range {v1 .. v12}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
+    const/4 v13, 0x0
 
-    move-result-object v1
+    move-object v2, v15
 
-    invoke-interface {v14, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 3
+    invoke-static/range {v2 .. v13}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
 
-    .line 112
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    .line 4
     iget-object v1, v0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
-    move-object v14, v1
+    .line 5
+    iget-object v11, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
 
-    check-cast v14, Ljava/util/Collection;
+    const-string v6, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
 
-    sget-object v1, Lokhttp3/HttpUrl;->Companion:Lokhttp3/HttpUrl$Companion;
+    move-object v2, v15
 
-    .line 116
-    iget-object v10, v0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
+    move-object/from16 v3, p2
 
-    const-string v5, " \"\':;<=>@[]^`{}|/\\?#&!$(),~"
+    .line 6
+    invoke-static/range {v2 .. v13}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
 
-    move-object/from16 v2, p2
+    move-result-object v2
 
-    .line 112
-    invoke-static/range {v1 .. v12}, Lokhttp3/HttpUrl$Companion;->canonicalize$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v14, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     return-object v0
 .end method
@@ -304,7 +280,6 @@
 .method public final build()Lokhttp3/FormBody;
     .locals 3
 
-    .line 120
     new-instance v0, Lokhttp3/FormBody;
 
     iget-object v1, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;

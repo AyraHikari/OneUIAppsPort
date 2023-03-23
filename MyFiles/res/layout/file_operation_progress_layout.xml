@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/basic_dialog_padding_vertical" android:paddingBottom="@dimen/basic_dialog_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/basic_dialog_padding_horizontal" android:paddingEnd="@dimen/basic_dialog_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/basic_progress_dialog_main_text_size" android:textColor="@color/basic_dialog_body_text_color" android:id="@id/file_operation_dialog_progress_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/processing" />
+    <TextView android:textSize="@dimen/basic_progress_dialog_main_text_size" android:textColor="@color/basic_dialog_body_text_color" android:ellipsize="middle" android:id="@id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <ProgressBar android:id="@id/cur_file_progressbar" android:layout_width="fill_parent" android:layout_height="@dimen/file_operation_progress_height" android:layout_marginTop="@dimen/basic_progress_dialog_margin_top" android:max="100" android:indeterminate="false" android:indeterminateDrawable="@drawable/myfiles_progress_indeterminate_material" android:progressDrawable="@drawable/file_operation_progressbar_background" style="?android:progressBarStyleHorizontal" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/basic_progress_dialog_margin_top">
+        <TextView android:textSize="@dimen/basic_progress_dialog_main_text_size" android:textColor="@color/basic_dialog_body_text_color" android:id="@id/file_operation_dialog_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/basic_progress_dialog_main_text_size" android:textColor="@color/basic_dialog_body_text_color" android:id="@id/file_operation_dialog_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

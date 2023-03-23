@@ -29,6 +29,17 @@
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/FragmentManager;Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fm",
+            "tabHeader"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,6 +70,18 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "container",
+            "position",
+            "object"
+        }
+    .end annotation
 
     .line 51
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/TabPagerAdapter;->instantiatedFragments:Landroid/util/SparseArray;
@@ -86,6 +109,14 @@
 
 .method public getFragment(I)Landroidx/fragment/app/Fragment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 57
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/TabPagerAdapter;->instantiatedFragments:Landroid/util/SparseArray;
@@ -115,6 +146,14 @@
 
 .method public getItem(I)Landroidx/fragment/app/Fragment;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -136,6 +175,16 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "container",
+            "position"
+        }
+    .end annotation
 
     .line 44
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/FragmentStatePagerAdapter;->instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;

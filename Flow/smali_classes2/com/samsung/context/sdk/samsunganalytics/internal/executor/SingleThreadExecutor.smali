@@ -59,6 +59,14 @@
 # virtual methods
 .method public execute(Lcom/samsung/context/sdk/samsunganalytics/internal/executor/AsyncTaskClient;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "api"
+        }
+    .end annotation
 
     .line 29
     sget-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/executor/SingleThreadExecutor;->executorService:Ljava/util/concurrent/ExecutorService;

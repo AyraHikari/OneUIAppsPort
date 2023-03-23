@@ -5,11 +5,6 @@
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u001f\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002*\u0008\u0012\u0004\u0012\u0002H\u00020\u0003H\u0087\u0008\u00a8\u0006\u0004"
     }
@@ -23,10 +18,10 @@
     k = 0x5
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
-    xi = 0x1
+    xi = 0x31
     xs = "kotlin/sequences/SequencesKt"
 .end annotation
 
@@ -41,7 +36,7 @@
 .end method
 
 .method private static final asSequence(Ljava/util/Enumeration;)Lkotlin/sequences/Sequence;
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -53,6 +48,10 @@
             "TT;>;"
         }
     .end annotation
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 16
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->iterator(Ljava/util/Enumeration;)Ljava/util/Iterator;

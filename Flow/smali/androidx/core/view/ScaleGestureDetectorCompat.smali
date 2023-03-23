@@ -3,11 +3,19 @@
 .source "ScaleGestureDetectorCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/view/ScaleGestureDetectorCompat$Api19Impl;
+    }
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 26
+    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,16 +23,24 @@
 
 .method public static isQuickScaleEnabled(Landroid/view/ScaleGestureDetector;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleGestureDetector"
+        }
+    .end annotation
 
-    .line 78
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 82
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 79
-    invoke-virtual {p0}, Landroid/view/ScaleGestureDetector;->isQuickScaleEnabled()Z
+    .line 83
+    invoke-static {p0}, Landroidx/core/view/ScaleGestureDetectorCompat$Api19Impl;->isQuickScaleEnabled(Landroid/view/ScaleGestureDetector;)Z
 
     move-result p0
 
@@ -38,10 +54,19 @@
 
 .method public static isQuickScaleEnabled(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleGestureDetector"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 68
+    .line 72
     check-cast p0, Landroid/view/ScaleGestureDetector;
 
     invoke-static {p0}, Landroidx/core/view/ScaleGestureDetectorCompat;->isQuickScaleEnabled(Landroid/view/ScaleGestureDetector;)Z
@@ -53,16 +78,26 @@
 
 .method public static setQuickScaleEnabled(Landroid/view/ScaleGestureDetector;Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "scaleGestureDetector",
+            "enabled"
+        }
+    .end annotation
 
-    .line 53
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 57
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 54
-    invoke-virtual {p0, p1}, Landroid/view/ScaleGestureDetector;->setQuickScaleEnabled(Z)V
+    .line 58
+    invoke-static {p0, p1}, Landroidx/core/view/ScaleGestureDetectorCompat$Api19Impl;->setQuickScaleEnabled(Landroid/view/ScaleGestureDetector;Z)V
 
     :cond_0
     return-void
@@ -70,10 +105,21 @@
 
 .method public static setQuickScaleEnabled(Ljava/lang/Object;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "scaleGestureDetector",
+            "enabled"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 40
+    .line 44
     check-cast p0, Landroid/view/ScaleGestureDetector;
 
     invoke-static {p0, p1}, Landroidx/core/view/ScaleGestureDetectorCompat;->setQuickScaleEnabled(Landroid/view/ScaleGestureDetector;Z)V

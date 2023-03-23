@@ -43,19 +43,19 @@
 .method public static getInstance()Landroidx/preference/EditTextPreference$SimpleSummaryProvider;
     .locals 1
 
-    .line 234
+    .line 235
     sget-object v0, Landroidx/preference/EditTextPreference$SimpleSummaryProvider;->sSimpleSummaryProvider:Landroidx/preference/EditTextPreference$SimpleSummaryProvider;
 
     if-nez v0, :cond_0
 
-    .line 235
+    .line 236
     new-instance v0, Landroidx/preference/EditTextPreference$SimpleSummaryProvider;
 
     invoke-direct {v0}, Landroidx/preference/EditTextPreference$SimpleSummaryProvider;-><init>()V
 
     sput-object v0, Landroidx/preference/EditTextPreference$SimpleSummaryProvider;->sSimpleSummaryProvider:Landroidx/preference/EditTextPreference$SimpleSummaryProvider;
 
-    .line 237
+    .line 238
     :cond_0
     sget-object v0, Landroidx/preference/EditTextPreference$SimpleSummaryProvider;->sSimpleSummaryProvider:Landroidx/preference/EditTextPreference$SimpleSummaryProvider;
 
@@ -67,7 +67,7 @@
 .method public provideSummary(Landroidx/preference/EditTextPreference;)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 242
+    .line 244
     invoke-virtual {p1}, Landroidx/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v0
@@ -78,7 +78,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 243
+    .line 245
     invoke-virtual {p1}, Landroidx/preference/EditTextPreference;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -91,7 +91,7 @@
 
     return-object p1
 
-    .line 245
+    .line 247
     :cond_0
     invoke-virtual {p1}, Landroidx/preference/EditTextPreference;->getText()Ljava/lang/String;
 

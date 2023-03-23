@@ -1,66 +1,51 @@
-.class public final Lcom/google/android/gms/common/internal/zzh;
+.class final Lcom/google/android/gms/common/internal/zzh;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
-# instance fields
-.field private final mPackageName:Ljava/lang/String;
-
-.field private final zzdt:I
-
-.field private final zzej:Ljava/lang/String;
-
-.field private final zzek:Z
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/common/internal/BinderWrapper;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+.method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzh;->mPackageName:Ljava/lang/String;
-
-    .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/zzh;->zzej:Ljava/lang/String;
-
-    .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/common/internal/zzh;->zzek:Z
-
-    const/16 p1, 0x81
-
-    .line 5
-    iput p1, p0, Lcom/google/android/gms/common/internal/zzh;->zzdt:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method final getPackageName()Ljava/lang/String;
-    .locals 1
+.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 2
 
-    .line 8
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzh;->mPackageName:Ljava/lang/String;
+    .line 1
+    new-instance v0, Lcom/google/android/gms/common/internal/BinderWrapper;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lcom/google/android/gms/common/internal/BinderWrapper;-><init>(Landroid/os/Parcel;Lcom/google/android/gms/common/internal/zzi;)V
 
     return-object v0
 .end method
 
-.method final zzq()I
-    .locals 1
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    .line 9
-    iget v0, p0, Lcom/google/android/gms/common/internal/zzh;->zzdt:I
+    .line 1
+    new-array p1, p1, [Lcom/google/android/gms/common/internal/BinderWrapper;
 
-    return v0
-.end method
-
-.method final zzt()Ljava/lang/String;
-    .locals 1
-
-    .line 7
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzh;->zzej:Ljava/lang/String;
-
-    return-object v0
+    return-object p1
 .end method

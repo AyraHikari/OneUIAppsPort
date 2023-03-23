@@ -1,4 +1,4 @@
-.class final Lcom/samsung/context/sdk/samsunganalytics/internal/policy/Validation$1;
+.class Lcom/samsung/context/sdk/samsunganalytics/internal/policy/Validation$1;
 .super Landroid/content/BroadcastReceiver;
 .source "Validation.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -23,6 +23,16 @@
 # direct methods
 .method constructor <init>(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$context",
+            "val$configuration"
+        }
+    .end annotation
 
     .line 154
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/Validation$1;->val$context:Landroid/app/Application;
@@ -38,6 +48,16 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "innerContext",
+            "intent"
+        }
+    .end annotation
 
     .line 157
     new-instance p1, Ljava/lang/StringBuilder;
@@ -48,11 +68,15 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

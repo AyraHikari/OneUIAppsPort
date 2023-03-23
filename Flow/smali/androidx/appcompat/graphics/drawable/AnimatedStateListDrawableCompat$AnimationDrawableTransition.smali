@@ -79,14 +79,14 @@
     move-result-object p1
 
     .line 401
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x12
 
     if-lt p2, v0, :cond_2
 
     .line 402
-    invoke-virtual {p1, v3}, Landroid/animation/ObjectAnimator;->setAutoCancel(Z)V
+    invoke-static {p1, v3}, Landroidx/appcompat/resources/Compatibility$Api18Impl;->setAutoCancel(Landroid/animation/ObjectAnimator;Z)V
 
     .line 404
     :cond_2

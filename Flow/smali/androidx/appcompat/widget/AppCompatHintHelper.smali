@@ -15,6 +15,18 @@
 
 .method static onCreateInputConnection(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroid/view/View;)Landroid/view/inputmethod/InputConnection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "ic",
+            "outAttrs",
+            "view"
+        }
+    .end annotation
 
     if-eqz p0, :cond_1
 

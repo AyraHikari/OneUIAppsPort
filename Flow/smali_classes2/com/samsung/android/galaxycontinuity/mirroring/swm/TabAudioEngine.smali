@@ -40,6 +40,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 51
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -225,13 +233,34 @@
     return p0
 .end method
 
-.method static synthetic access$902(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;I)I
-    .locals 0
+.method static synthetic access$914(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;J)I
+    .locals 2
 
     .line 34
+    iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->delayTimeSum:I
+
+    int-to-long v0, v0
+
+    add-long/2addr v0, p1
+
+    long-to-int p1, v0
+
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->delayTimeSum:I
 
     return p1
+.end method
+
+.method static synthetic access$920(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;I)I
+    .locals 1
+
+    .line 34
+    iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->delayTimeSum:I
+
+    sub-int/2addr v0, p1
+
+    iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->delayTimeSum:I
+
+    return v0
 .end method
 
 
@@ -251,8 +280,6 @@
     if-eqz v0, :cond_0
 
     .line 433
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->mMediaCodecDecoder:Landroid/media/MediaCodec;
-
     invoke-virtual {v0}, Landroid/media/MediaCodec;->stop()V
 
     .line 434
@@ -323,7 +350,7 @@
 
     const v0, 0xac44
 
-    const-string v3, "sample-rate"
+    const-string/jumbo v3, "sample-rate"
 
     .line 421
     invoke-virtual {v1, v3, v0}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
@@ -359,6 +386,14 @@
 
 .method public initMirroringPlay(Ljava/net/Socket;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 62
     new-instance v0, Landroid/os/HandlerThread;
@@ -481,7 +516,11 @@
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -528,7 +567,7 @@
     move-result-object v7
 
     .line 348
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x17
 
@@ -536,7 +575,7 @@
 
     if-le v1, v2, :cond_1
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     if-ge v1, v3, :cond_1
 
@@ -547,7 +586,7 @@
 
     .line 352
     :cond_1
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     if-lt v1, v3, :cond_2
 
@@ -690,6 +729,14 @@
 
 .method public setTimeStampRepo(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "repo"
+        }
+    .end annotation
 
     .line 58
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->mTimeStampRepo:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
@@ -731,9 +778,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -800,8 +851,6 @@
     if-eqz v0, :cond_0
 
     .line 454
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->mDecoderThreadHandler:Landroid/os/HandlerThread;
-
     invoke-virtual {v0}, Landroid/os/HandlerThread;->interrupt()V
 
     .line 455
@@ -824,8 +873,6 @@
     if-eqz v2, :cond_1
 
     .line 462
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->mSync:Landroid/media/MediaSync;
-
     invoke-virtual {v2}, Landroid/media/MediaSync;->release()V
 
     .line 463
@@ -859,18 +906,11 @@
     iput-wide v2, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;->mModeratedAudioStartTimeMs:J
 
     .line 475
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->setIsMirroringStarted(Z)V
-
-    .line 476
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/manager/ExportedMirroringStateProvider;->notifyMirroringState(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 477
+    .line 476
     monitor-exit p0
 
     return-void
@@ -888,25 +928,25 @@
 
     const/4 v0, 0x0
 
-    .line 480
+    .line 479
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->isPlaying:Z
 
-    .line 482
+    .line 481
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->mPlayerThreadHandler:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_0
 
-    .line 483
+    .line 482
     invoke-virtual {v0}, Landroid/os/HandlerThread;->interrupt()V
 
-    .line 484
+    .line 483
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->mPlayerThreadHandler:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
     const/4 v0, 0x0
 
-    .line 485
+    .line 484
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabAudioEngine;->mPlayerThreadHandler:Landroid/os/HandlerThread;
 
     :cond_0

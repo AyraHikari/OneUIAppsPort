@@ -43,6 +43,30 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZILjava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "srvNonce",
+            "skNonce",
+            "dkNonce",
+            "srvHMAC",
+            "isEnrollRequest",
+            "isForUnlock",
+            "unlockMethod",
+            "gearMACAddress",
+            "sessionKey"
+        }
+    .end annotation
 
     .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -167,6 +191,14 @@
 
 .method public setIsForUnlock(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isForUnlock"
+        }
+    .end annotation
 
     .line 55
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->isForUnlock:Z

@@ -26,10 +26,10 @@
 .method constructor <init>(Landroidx/preference/Preference;)V
     .locals 0
 
-    .line 2368
+    .line 2453
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2369
+    .line 2454
     iput-object p1, p0, Landroidx/preference/Preference$OnPreferenceCopyListener;->mPreference:Landroidx/preference/Preference;
 
     return-void
@@ -40,14 +40,14 @@
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 0
 
-    .line 2375
+    .line 2460
     iget-object p2, p0, Landroidx/preference/Preference$OnPreferenceCopyListener;->mPreference:Landroidx/preference/Preference;
 
     invoke-virtual {p2}, Landroidx/preference/Preference;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object p2
 
-    .line 2376
+    .line 2461
     iget-object p3, p0, Landroidx/preference/Preference$OnPreferenceCopyListener;->mPreference:Landroidx/preference/Preference;
 
     invoke-virtual {p3}, Landroidx/preference/Preference;->isCopyingEnabled()Z
@@ -64,11 +64,11 @@
 
     goto :goto_0
 
-    .line 2379
+    .line 2464
     :cond_0
     invoke-interface {p1, p2}, Landroid/view/ContextMenu;->setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/ContextMenu;
 
-    .line 2380
+    .line 2465
     sget p2, Landroidx/preference/R$string;->copy:I
 
     const/4 p3, 0x0
@@ -77,7 +77,7 @@
 
     move-result-object p1
 
-    .line 2381
+    .line 2466
     invoke-interface {p1, p0}, Landroid/view/MenuItem;->setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
 
     :cond_1
@@ -88,10 +88,10 @@
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 6
 
-    .line 2386
+    .line 2471
     iget-object p1, p0, Landroidx/preference/Preference$OnPreferenceCopyListener;->mPreference:Landroidx/preference/Preference;
 
-    .line 2387
+    .line 2472
     invoke-virtual {p1}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -104,7 +104,7 @@
 
     check-cast p1, Landroid/content/ClipboardManager;
 
-    .line 2389
+    .line 2474
     iget-object v0, p0, Landroidx/preference/Preference$OnPreferenceCopyListener;->mPreference:Landroidx/preference/Preference;
 
     invoke-virtual {v0}, Landroidx/preference/Preference;->getSummary()Ljava/lang/CharSequence;
@@ -113,15 +113,15 @@
 
     const-string v1, "Preference"
 
-    .line 2390
+    .line 2475
     invoke-static {v1, v0}, Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
 
     move-result-object v1
 
-    .line 2391
+    .line 2476
     invoke-virtual {p1, v1}, Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
 
-    .line 2392
+    .line 2477
     iget-object p1, p0, Landroidx/preference/Preference$OnPreferenceCopyListener;->mPreference:Landroidx/preference/Preference;
 
     invoke-virtual {p1}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
@@ -130,7 +130,7 @@
 
     iget-object v1, p0, Landroidx/preference/Preference$OnPreferenceCopyListener;->mPreference:Landroidx/preference/Preference;
 
-    .line 2393
+    .line 2478
     invoke-virtual {v1}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -149,12 +149,12 @@
 
     move-result-object v0
 
-    .line 2392
+    .line 2477
     invoke-static {p1, v0, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object p1
 
-    .line 2395
+    .line 2480
     invoke-virtual {p1}, Landroid/widget/Toast;->show()V
 
     return v3

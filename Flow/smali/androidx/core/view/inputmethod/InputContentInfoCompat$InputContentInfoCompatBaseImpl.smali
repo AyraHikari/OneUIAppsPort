@@ -28,6 +28,18 @@
 # direct methods
 .method constructor <init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "contentUri",
+            "description",
+            "linkUri"
+        }
+    .end annotation
 
     .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

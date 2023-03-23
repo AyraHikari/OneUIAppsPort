@@ -57,7 +57,7 @@
     .line 29
     sput v0, Lcom/samsung/android/galaxycontinuity/util/MediaUtils;->MAX_DATA_SIZE:I
 
-    const-string v0, "video/avc"
+    const-string/jumbo v0, "video/avc"
 
     .line 30
     sput-object v0, Lcom/samsung/android/galaxycontinuity/util/MediaUtils;->MIME_TYPE:Ljava/lang/String;
@@ -101,6 +101,14 @@
 
 .method public static byteArrayToLeInt([B)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "encodedValue"
+        }
+    .end annotation
 
     const/4 v0, 0x3
 
@@ -145,6 +153,14 @@
 
 .method public static leIntToByteArray(I)[B
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 

@@ -32,29 +32,30 @@
 
 .field private mInnerView:Landroid/view/View;
 
-.field private final mTempPts:[F
-
 .field final synthetic this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context"
+        }
+    .end annotation
 
-    .line 768
+    .line 743
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
-    .line 769
+    .line 744
     invoke-direct {p0, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    const/4 v0, 0x2
-
-    new-array v0, v0, [F
-
-    .line 758
-    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mTempPts:[F
-
-    .line 771
+    .line 746
     invoke-static {p1}, Landroidx/appcompat/widget/ActionMenuPresenter;->access$000(Landroidx/appcompat/widget/ActionMenuPresenter;)Z
 
     move-result v0
@@ -75,7 +76,7 @@
     :goto_0
     iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
-    .line 772
+    .line 747
     new-instance p1, Landroid/widget/FrameLayout$LayoutParams;
 
     const/4 v1, -0x2
@@ -84,74 +85,69 @@
 
     invoke-virtual {p0, v0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 775
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
-
-    instance-of v0, p1, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
-
-    if-eqz v0, :cond_1
-
-    .line 776
-    invoke-virtual {p1}, Landroid/view/View;->getContentDescription()Ljava/lang/CharSequence;
+    .line 750
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
+    .line 751
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
-    .line 777
-    new-instance p1, Ljava/lang/StringBuilder;
+    instance-of v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
 
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    if-eqz v1, :cond_1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v0, " , "
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getContext()Landroid/content/Context;
+    .line 752
+    invoke-virtual {v0}, Landroid/view/View;->getContentDescription()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
+
+    .line 753
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " , "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     sget v1, Landroidx/appcompat/R$string;->sesl_action_menu_overflow_badge_description:I
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeContentDescription:Ljava/lang/CharSequence;
 
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeContentDescription:Ljava/lang/CharSequence;
-
-    .line 781
+    .line 757
     :cond_1
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
 
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result p1
+    move-result v0
 
-    if-eqz p1, :cond_2
+    if-eqz v0, :cond_2
 
-    .line 782
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
+    .line 758
     sget v0, Landroidx/appcompat/R$string;->sesl_action_menu_overflow_description:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -160,25 +156,25 @@
 
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
 
-    .line 783
+    .line 759
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
     if-eqz v0, :cond_2
 
-    .line 784
+    .line 760
     invoke-virtual {v0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     :cond_2
     const-string p1, "layout_inflater"
 
-    .line 788
+    .line 764
     invoke-virtual {p2, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/view/LayoutInflater;
 
-    .line 789
+    .line 766
     sget p2, Landroidx/appcompat/R$layout;->sesl_action_menu_item_badge:I
 
     const/4 v0, 0x0
@@ -191,7 +187,7 @@
 
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
 
-    .line 791
+    .line 768
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p1
@@ -200,7 +196,7 @@
 
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
 
-    .line 792
+    .line 769
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->addView(Landroid/view/View;)V
@@ -213,7 +209,7 @@
 .method public getInnerView()Landroid/view/View;
     .locals 1
 
-    .line 838
+    .line 824
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
     return-object v0
@@ -237,223 +233,290 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "configuration"
+        }
+    .end annotation
 
-    .line 801
+    .line 778
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 802
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
-
-    .line 803
+    .line 780
     invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    sget v1, Landroidx/appcompat/R$dimen;->sesl_menu_item_badge_text_size:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    int-to-float v0, v0
-
-    const/4 v1, 0x0
-
-    .line 802
-    invoke-virtual {p1, v1, v0}, Landroid/widget/TextView;->setTextSize(IF)V
-
-    .line 804
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
-
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
-    check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
+    .line 781
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
 
-    .line 805
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+    sget v1, Landroidx/appcompat/R$dimen;->sesl_menu_item_badge_text_size:I
+
+    .line 782
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    int-to-float v1, v1
+
+    const/4 v2, 0x0
+
+    .line 781
+    invoke-virtual {v0, v2, v1}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    .line 783
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    sget v1, Landroidx/appcompat/R$dimen;->sesl_badge_default_width:I
+    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
-
-    move-result v0
-
+    .line 785
     iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
 
-    .line 806
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
+    invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
+
+    invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, ""
+
+    if-ne v1, v2, :cond_0
+
+    goto :goto_0
+
+    .line 789
+    :cond_0
+    sget v1, Landroidx/appcompat/R$dimen;->sesl_badge_default_width:I
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result v1
 
-    int-to-float v1, v1
+    iget-object v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+    .line 790
+    invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    sget v3, Landroidx/appcompat/R$dimen;->sesl_badge_additional_width:I
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
+    invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
 
-    mul-float/2addr v1, v2
+    int-to-float v2, v2
 
-    add-float/2addr v0, v1
+    sget v3, Landroidx/appcompat/R$dimen;->sesl_badge_additional_width:I
 
-    float-to-int v0, v0
+    invoke-virtual {p1, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
-    iput v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    move-result v3
 
-    .line 807
+    mul-float/2addr v2, v3
+
+    add-float/2addr v1, v2
+
+    float-to-int v1, v1
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+
+    .line 791
+    sget v1, Landroidx/appcompat/R$dimen;->sesl_badge_default_width:I
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    sget v2, Landroidx/appcompat/R$dimen;->sesl_badge_additional_width:I
+
+    invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v2
+
+    add-float/2addr v1, v2
+
+    float-to-int v1, v1
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
+    .line 792
     invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v1
 
+    sget v2, Landroidx/appcompat/R$dimen;->sesl_menu_item_number_badge_top_margin:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    .line 793
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x11
+
+    if-lt v1, v2, :cond_2
+
+    .line 794
+    sget v1, Landroidx/appcompat/R$dimen;->sesl_menu_item_number_badge_end_margin:I
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+
+    goto :goto_1
+
+    .line 786
+    :cond_1
+    :goto_0
     sget v1, Landroidx/appcompat/R$dimen;->sesl_menu_item_badge_size:I
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
-    move-result v0
+    move-result v1
 
-    float-to-int v0, v0
+    float-to-int v1, v1
 
-    iput v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
-    .line 808
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+    .line 787
+    sget v1, Landroidx/appcompat/R$dimen;->sesl_menu_item_badge_size:I
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
+    .line 798
+    :cond_2
+    :goto_1
+    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
+
+    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 800
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
+
+    instance-of v0, v0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
+
+    const-string v1, " , "
+
+    if-eqz v0, :cond_3
+
+    .line 801
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getContentDescription()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    sget v1, Landroidx/appcompat/R$dimen;->sesl_menu_item_badge_end_margin:I
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+    .line 802
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result v0
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    float-to-int v0, v0
+    iget-object v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 809
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
+    move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 812
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
-
-    instance-of p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
-
-    const-string v0, " , "
-
-    if-eqz p1, :cond_0
-
-    .line 813
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getContentDescription()Ljava/lang/CharSequence;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
-
-    .line 814
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
-
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 815
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
+    move-result-object v0
 
     sget v2, Landroidx/appcompat/R$string;->sesl_action_menu_overflow_badge_description:I
 
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeContentDescription:Ljava/lang/CharSequence;
-
-    .line 819
-    :cond_0
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
-
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    .line 820
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    sget v1, Landroidx/appcompat/R$string;->sesl_action_menu_overflow_description:I
-
-    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
-
-    .line 821
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
-
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 822
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getContext()Landroid/content/Context;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeContentDescription:Ljava/lang/CharSequence;
+
+    .line 806
+    :cond_3
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 807
+    sget v0, Landroidx/appcompat/R$string;->sesl_action_menu_overflow_description:I
+
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
+
+    .line 808
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     sget v1, Landroidx/appcompat/R$string;->sesl_action_menu_overflow_badge_description:I
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p1
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -461,50 +524,60 @@
 
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeContentDescription:Ljava/lang/CharSequence;
 
-    .line 826
-    :cond_1
+    .line 812
+    :cond_4
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getVisibility()I
 
     move-result p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_5
 
-    .line 827
+    .line 813
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
     instance-of v0, p1, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_6
 
-    .line 828
+    .line 814
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeContentDescription:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 831
-    :cond_2
+    .line 817
+    :cond_5
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
     instance-of v0, p1, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_6
 
-    .line 832
+    .line 818
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    :cond_3
-    :goto_0
+    :cond_6
+    :goto_2
     return-void
 .end method
 
 .method public setBadgeText(Ljava/lang/String;I)V
-    .locals 3
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "badgeString",
+            "number"
+        }
+    .end annotation
 
     const/16 v0, 0x63
 
@@ -512,21 +585,30 @@
 
     move p2, v0
 
+    .line 840
     :cond_0
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    const-string v1, ""
+
     if-nez p1, :cond_2
 
-    const-string v0, ""
+    .line 844
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 855
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result p1
 
-    move-result v0
-
-    if-eqz v0, :cond_1
+    if-eqz p1, :cond_1
 
     goto :goto_0
 
-    .line 858
+    .line 849
     :cond_1
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
@@ -534,120 +616,208 @@
 
     move-result-object p1
 
-    int-to-long v0, p2
+    int-to-long v1, p2
 
-    invoke-virtual {p1, v0, v1}, Ljava/text/NumberFormat;->format(J)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 861
-    :cond_2
-    :goto_0
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
-
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 863
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    sget v1, Landroidx/appcompat/R$dimen;->sesl_badge_default_width:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
-
-    move-result v0
-
-    .line 864
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p1
-
-    int-to-float p1, p1
-
-    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p1, v1, v2}, Ljava/text/NumberFormat;->format(J)Ljava/lang/String;
 
     move-result-object v1
 
-    sget v2, Landroidx/appcompat/R$dimen;->sesl_badge_additional_width:I
+    .line 850
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
 
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+    move-result-object p1
 
-    move-result v1
+    sget v2, Landroidx/appcompat/R$dimen;->sesl_badge_default_width:I
 
-    mul-float/2addr p1, v1
+    invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
-    add-float/2addr v0, p1
+    move-result p1
 
-    float-to-int p1, v0
+    .line 851
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
 
-    .line 865
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
+    move-result v2
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    int-to-float v2, v2
 
-    move-result-object v0
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
 
-    .line 866
-    iput p1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+    move-result-object v3
 
-    .line 867
+    sget v4, Landroidx/appcompat/R$dimen;->sesl_badge_additional_width:I
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v3
+
+    mul-float/2addr v2, v3
+
+    add-float/2addr p1, v2
+
+    float-to-int p1, p1
+
+    .line 852
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    sget v3, Landroidx/appcompat/R$dimen;->sesl_badge_default_width:I
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v2
+
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    sget v4, Landroidx/appcompat/R$dimen;->sesl_badge_additional_width:I
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v3
+
+    add-float/2addr v2, v3
+
+    float-to-int v2, v2
+
+    .line 853
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    sget v4, Landroidx/appcompat/R$dimen;->sesl_menu_item_number_badge_top_margin:I
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    iput v3, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    .line 854
+    sget v3, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v4, 0x11
+
+    if-lt v3, v4, :cond_3
+
+    .line 855
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    sget v4, Landroidx/appcompat/R$dimen;->sesl_menu_item_number_badge_end_margin:I
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    invoke-virtual {v0, v3}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+
+    goto :goto_1
+
+    .line 846
+    :cond_2
+    :goto_0
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget v2, Landroidx/appcompat/R$dimen;->sesl_menu_item_badge_size:I
+
+    invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result p1
+
+    float-to-int p1, p1
+
+    .line 847
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    sget v3, Landroidx/appcompat/R$dimen;->sesl_menu_item_badge_size:I
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    .line 859
+    :cond_3
+    :goto_1
+    iget-object v3, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeText:Landroid/widget/TextView;
+
+    invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 860
+    iput p1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+
+    .line 861
+    iput v2, v0, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
+    .line 862
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 868
+    .line 863
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
 
-    if-lez p2, :cond_3
+    if-lez p2, :cond_4
 
     const/4 p2, 0x0
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_3
+    :cond_4
     const/16 p2, 0x8
 
-    :goto_1
+    :goto_2
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 869
+    .line 864
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeBackground:Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getVisibility()I
 
     move-result p1
 
-    if-nez p1, :cond_4
+    if-nez p1, :cond_5
 
-    .line 870
+    .line 865
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
     instance-of p2, p1, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
 
-    if-eqz p2, :cond_5
+    if-eqz p2, :cond_6
 
-    .line 871
+    .line 866
     iget-object p2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mBadgeContentDescription:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 874
-    :cond_4
+    .line 869
+    :cond_5
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mInnerView:Landroid/view/View;
 
     instance-of p2, p1, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowImageView;
 
-    if-eqz p2, :cond_5
+    if-eqz p2, :cond_6
 
-    .line 875
+    .line 870
     iget-object p2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->mContentDescription:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    :cond_5
-    :goto_2
+    :cond_6
+    :goto_3
     return-void
 .end method

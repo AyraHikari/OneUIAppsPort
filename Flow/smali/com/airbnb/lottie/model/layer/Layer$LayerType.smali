@@ -25,134 +25,122 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-.field public static final enum Image:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+.field public static final enum IMAGE:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-.field public static final enum Null:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+.field public static final enum NULL:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-.field public static final enum PreComp:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+.field public static final enum PRE_COMP:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-.field public static final enum Shape:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+.field public static final enum SHAPE:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-.field public static final enum Solid:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+.field public static final enum SOLID:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-.field public static final enum Text:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+.field public static final enum TEXT:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-.field public static final enum Unknown:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+.field public static final enum UNKNOWN:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 10
+    .locals 15
 
-    .line 33
+    .line 20
     new-instance v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const-string v1, "PreComp"
+    const-string v1, "PRE_COMP"
 
     const/4 v2, 0x0
 
     invoke-direct {v0, v1, v2}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->PreComp:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->PRE_COMP:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    .line 34
-    new-instance v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    .line 21
+    new-instance v1, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const-string v1, "Solid"
+    const-string v3, "SOLID"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Solid:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    sput-object v1, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->SOLID:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    .line 35
-    new-instance v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    .line 22
+    new-instance v3, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const-string v1, "Image"
+    const-string v5, "IMAGE"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Image:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    sput-object v3, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->IMAGE:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    .line 36
-    new-instance v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    .line 23
+    new-instance v5, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const-string v1, "Null"
+    const-string v7, "NULL"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Null:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    sput-object v5, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->NULL:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    .line 37
-    new-instance v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    .line 24
+    new-instance v7, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const-string v1, "Shape"
+    const-string v9, "SHAPE"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Shape:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    sput-object v7, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->SHAPE:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    .line 38
-    new-instance v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    .line 25
+    new-instance v9, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const-string v1, "Text"
+    const-string v11, "TEXT"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Text:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    sput-object v9, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->TEXT:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    .line 39
-    new-instance v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    .line 26
+    new-instance v11, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const-string v1, "Unknown"
+    const-string v13, "UNKNOWN"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v13, v14}, Lcom/airbnb/lottie/model/layer/Layer$LayerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Unknown:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    sput-object v11, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->UNKNOWN:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    const/4 v1, 0x7
+    const/4 v13, 0x7
 
-    new-array v1, v1, [Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    new-array v13, v13, [Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
-    .line 32
-    sget-object v9, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->PreComp:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    aput-object v0, v13, v2
 
-    aput-object v9, v1, v2
+    aput-object v1, v13, v4
 
-    sget-object v2, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Solid:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    aput-object v3, v13, v6
 
-    aput-object v2, v1, v3
+    aput-object v5, v13, v8
 
-    sget-object v2, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Image:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    aput-object v7, v13, v10
 
-    aput-object v2, v1, v4
+    aput-object v9, v13, v12
 
-    sget-object v2, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Null:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    aput-object v11, v13, v14
 
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Shape:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->Text:Lcom/airbnb/lottie/model/layer/Layer$LayerType;
-
-    aput-object v2, v1, v7
-
-    aput-object v0, v1, v8
-
-    sput-object v1, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->$VALUES:[Lcom/airbnb/lottie/model/layer/Layer$LayerType;
+    .line 19
+    sput-object v13, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->$VALUES:[Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
     return-void
 .end method
@@ -165,7 +153,7 @@
         }
     .end annotation
 
-    .line 32
+    .line 19
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -174,7 +162,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/airbnb/lottie/model/layer/Layer$LayerType;
     .locals 1
 
-    .line 32
+    .line 19
     const-class v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -189,7 +177,7 @@
 .method public static values()[Lcom/airbnb/lottie/model/layer/Layer$LayerType;
     .locals 1
 
-    .line 32
+    .line 19
     sget-object v0, Lcom/airbnb/lottie/model/layer/Layer$LayerType;->$VALUES:[Lcom/airbnb/lottie/model/layer/Layer$LayerType;
 
     invoke-virtual {v0}, [Lcom/airbnb/lottie/model/layer/Layer$LayerType;->clone()Ljava/lang/Object;

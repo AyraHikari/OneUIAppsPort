@@ -47,29 +47,27 @@
     sput-object v0, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;->Meet:Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
 
     .line 152
-    new-instance v0, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
+    new-instance v1, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
 
-    const-string v1, "Slice"
+    const-string v3, "Slice"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;-><init>(Ljava/lang/String;I)V
 
     .line 156
-    sput-object v0, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;->Slice:Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
+    sput-object v1, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;->Slice:Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
+    new-array v3, v3, [Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 145
-    sget-object v4, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;->Meet:Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;->ENUM$VALUES:[Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
+    sput-object v3, Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;->ENUM$VALUES:[Lcom/caverock/androidsvg/PreserveAspectRatio$Scale;
 
     return-void
 .end method

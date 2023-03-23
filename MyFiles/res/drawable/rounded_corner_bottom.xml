@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="bottom|center|left" android:height="@dimen/rounded_corner_size" android:width="@dimen/rounded_corner_size" android:drawable="@drawable/sesl_bottom_left_round" />
+    <item android:gravity="bottom|center|right" android:height="@dimen/rounded_corner_size" android:width="@dimen/rounded_corner_size" android:drawable="@drawable/sesl_bottom_right_round" />
+</layer-list>

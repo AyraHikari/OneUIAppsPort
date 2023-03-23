@@ -81,7 +81,7 @@
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 5
 
     const/4 v0, 0x1
 
@@ -164,38 +164,36 @@
 
     if-nez v2, :cond_6
 
-    move v2, v0
+    move v3, v0
 
     goto :goto_0
 
     :cond_6
-    move v2, v1
+    move v3, v1
 
     :goto_0
-    iget-object v3, p1, Lcom/bumptech/glide/load/engine/EngineKey;->transformation:Lcom/bumptech/glide/load/Transformation;
+    iget-object v4, p1, Lcom/bumptech/glide/load/engine/EngineKey;->transformation:Lcom/bumptech/glide/load/Transformation;
 
-    if-nez v3, :cond_7
+    if-nez v4, :cond_7
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_1
 
     :cond_7
-    move v3, v1
+    move v4, v1
 
     :goto_1
-    xor-int/2addr v2, v3
+    xor-int/2addr v3, v4
 
-    if-eqz v2, :cond_8
+    if-eqz v3, :cond_8
 
     return v1
 
-    .line 74
     :cond_8
-    iget-object v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->transformation:Lcom/bumptech/glide/load/Transformation;
-
     if-eqz v2, :cond_9
 
+    .line 74
     invoke-interface {v2}, Lcom/bumptech/glide/load/Transformation;->getId()Ljava/lang/String;
 
     move-result-object v2
@@ -220,38 +218,36 @@
 
     if-nez v2, :cond_a
 
-    move v2, v0
+    move v3, v0
 
     goto :goto_2
 
     :cond_a
-    move v2, v1
+    move v3, v1
 
     :goto_2
-    iget-object v3, p1, Lcom/bumptech/glide/load/engine/EngineKey;->decoder:Lcom/bumptech/glide/load/ResourceDecoder;
+    iget-object v4, p1, Lcom/bumptech/glide/load/engine/EngineKey;->decoder:Lcom/bumptech/glide/load/ResourceDecoder;
 
-    if-nez v3, :cond_b
+    if-nez v4, :cond_b
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_3
 
     :cond_b
-    move v3, v1
+    move v4, v1
 
     :goto_3
-    xor-int/2addr v2, v3
+    xor-int/2addr v3, v4
 
-    if-eqz v2, :cond_c
+    if-eqz v3, :cond_c
 
     return v1
 
-    .line 78
     :cond_c
-    iget-object v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->decoder:Lcom/bumptech/glide/load/ResourceDecoder;
-
     if-eqz v2, :cond_d
 
+    .line 78
     invoke-interface {v2}, Lcom/bumptech/glide/load/ResourceDecoder;->getId()Ljava/lang/String;
 
     move-result-object v2
@@ -276,38 +272,36 @@
 
     if-nez v2, :cond_e
 
-    move v2, v0
+    move v3, v0
 
     goto :goto_4
 
     :cond_e
-    move v2, v1
+    move v3, v1
 
     :goto_4
-    iget-object v3, p1, Lcom/bumptech/glide/load/engine/EngineKey;->cacheDecoder:Lcom/bumptech/glide/load/ResourceDecoder;
+    iget-object v4, p1, Lcom/bumptech/glide/load/engine/EngineKey;->cacheDecoder:Lcom/bumptech/glide/load/ResourceDecoder;
 
-    if-nez v3, :cond_f
+    if-nez v4, :cond_f
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_5
 
     :cond_f
-    move v3, v1
+    move v4, v1
 
     :goto_5
-    xor-int/2addr v2, v3
+    xor-int/2addr v3, v4
 
-    if-eqz v2, :cond_10
+    if-eqz v3, :cond_10
 
     return v1
 
-    .line 82
     :cond_10
-    iget-object v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->cacheDecoder:Lcom/bumptech/glide/load/ResourceDecoder;
-
     if-eqz v2, :cond_11
 
+    .line 82
     invoke-interface {v2}, Lcom/bumptech/glide/load/ResourceDecoder;->getId()Ljava/lang/String;
 
     move-result-object v2
@@ -332,38 +326,36 @@
 
     if-nez v2, :cond_12
 
-    move v2, v0
+    move v3, v0
 
     goto :goto_6
 
     :cond_12
-    move v2, v1
+    move v3, v1
 
     :goto_6
-    iget-object v3, p1, Lcom/bumptech/glide/load/engine/EngineKey;->encoder:Lcom/bumptech/glide/load/ResourceEncoder;
+    iget-object v4, p1, Lcom/bumptech/glide/load/engine/EngineKey;->encoder:Lcom/bumptech/glide/load/ResourceEncoder;
 
-    if-nez v3, :cond_13
+    if-nez v4, :cond_13
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_7
 
     :cond_13
-    move v3, v1
+    move v4, v1
 
     :goto_7
-    xor-int/2addr v2, v3
+    xor-int/2addr v3, v4
 
-    if-eqz v2, :cond_14
+    if-eqz v3, :cond_14
 
     return v1
 
-    .line 86
     :cond_14
-    iget-object v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->encoder:Lcom/bumptech/glide/load/ResourceEncoder;
-
     if-eqz v2, :cond_15
 
+    .line 86
     invoke-interface {v2}, Lcom/bumptech/glide/load/ResourceEncoder;->getId()Ljava/lang/String;
 
     move-result-object v2
@@ -388,38 +380,36 @@
 
     if-nez v2, :cond_16
 
-    move v2, v0
+    move v3, v0
 
     goto :goto_8
 
     :cond_16
-    move v2, v1
+    move v3, v1
 
     :goto_8
-    iget-object v3, p1, Lcom/bumptech/glide/load/engine/EngineKey;->transcoder:Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;
+    iget-object v4, p1, Lcom/bumptech/glide/load/engine/EngineKey;->transcoder:Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;
 
-    if-nez v3, :cond_17
+    if-nez v4, :cond_17
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_9
 
     :cond_17
-    move v3, v1
+    move v4, v1
 
     :goto_9
-    xor-int/2addr v2, v3
+    xor-int/2addr v3, v4
 
-    if-eqz v2, :cond_18
+    if-eqz v3, :cond_18
 
     return v1
 
-    .line 90
     :cond_18
-    iget-object v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->transcoder:Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;
-
     if-eqz v2, :cond_19
 
+    .line 90
     invoke-interface {v2}, Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;->getId()Ljava/lang/String;
 
     move-result-object v2
@@ -444,38 +434,36 @@
 
     if-nez v2, :cond_1a
 
-    move v2, v0
+    move v3, v0
 
     goto :goto_a
 
     :cond_1a
-    move v2, v1
+    move v3, v1
 
     :goto_a
-    iget-object v3, p1, Lcom/bumptech/glide/load/engine/EngineKey;->sourceEncoder:Lcom/bumptech/glide/load/Encoder;
+    iget-object v4, p1, Lcom/bumptech/glide/load/engine/EngineKey;->sourceEncoder:Lcom/bumptech/glide/load/Encoder;
 
-    if-nez v3, :cond_1b
+    if-nez v4, :cond_1b
 
-    move v3, v0
+    move v4, v0
 
     goto :goto_b
 
     :cond_1b
-    move v3, v1
+    move v4, v1
 
     :goto_b
-    xor-int/2addr v2, v3
+    xor-int/2addr v3, v4
 
-    if-eqz v2, :cond_1c
+    if-eqz v3, :cond_1c
 
     return v1
 
-    .line 94
     :cond_1c
-    iget-object v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->sourceEncoder:Lcom/bumptech/glide/load/Encoder;
-
     if-eqz v2, :cond_1d
 
+    .line 94
     invoke-interface {v2}, Lcom/bumptech/glide/load/Encoder;->getId()Ljava/lang/String;
 
     move-result-object v2
@@ -747,41 +735,61 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/EngineKey;->id:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/16 v1, 0x2b
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->signature:Lcom/bumptech/glide/load/Key;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, "+["
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->width:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/16 v2, 0x78
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v2, p0, Lcom/bumptech/glide/load/engine/EngineKey;->height:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, "]+"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const/16 v2, 0x27
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v3, p0, Lcom/bumptech/glide/load/engine/EngineKey;->cacheDecoder:Lcom/bumptech/glide/load/ResourceDecoder;
 
@@ -801,11 +809,19 @@
     :goto_0
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v3, p0, Lcom/bumptech/glide/load/engine/EngineKey;->decoder:Lcom/bumptech/glide/load/ResourceDecoder;
 
@@ -823,11 +839,19 @@
     :goto_1
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v3, p0, Lcom/bumptech/glide/load/engine/EngineKey;->transformation:Lcom/bumptech/glide/load/Transformation;
 
@@ -845,11 +869,19 @@
     :goto_2
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v3, p0, Lcom/bumptech/glide/load/engine/EngineKey;->encoder:Lcom/bumptech/glide/load/ResourceEncoder;
 
@@ -867,11 +899,19 @@
     :goto_3
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v3, p0, Lcom/bumptech/glide/load/engine/EngineKey;->transcoder:Lcom/bumptech/glide/load/resource/transcode/ResourceTranscoder;
 
@@ -889,11 +929,19 @@
     :goto_4
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/EngineKey;->sourceEncoder:Lcom/bumptech/glide/load/Encoder;
 
@@ -906,11 +954,17 @@
     :cond_5
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/16 v1, 0x7d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

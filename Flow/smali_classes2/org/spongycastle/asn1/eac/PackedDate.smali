@@ -33,7 +33,7 @@
     .line 32
     new-instance v0, Ljava/text/SimpleDateFormat;
 
-    const-string v1, "yyMMdd\'Z\'"
+    const-string/jumbo v1, "yyMMdd\'Z\'"
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
@@ -71,7 +71,7 @@
     .line 50
     new-instance v0, Ljava/text/SimpleDateFormat;
 
-    const-string v1, "yyMMdd\'Z\'"
+    const-string/jumbo v1, "yyMMdd\'Z\'"
 
     invoke-direct {v0, v1, p2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
@@ -187,7 +187,7 @@
     .line 86
     new-instance v0, Ljava/text/SimpleDateFormat;
 
-    const-string v1, "yyyyMMdd"
+    const-string/jumbo v1, "yyyyMMdd"
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
@@ -200,11 +200,15 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {p0}, Lorg/spongycastle/asn1/eac/PackedDate;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

@@ -33,6 +33,7 @@
     <string name="air_quality">காற்றின் தரம்</string>
     <string name="air_quality_next_tts">பிந்தைய தினசரி காற்று தர ஒளிபரப்புகள்</string>
     <string name="air_quality_previous_tts">முந்தைய தினசரி காற்று தர ஒளிபரப்புகள்</string>
+    <string name="alert_title">கடுமையான வானிலை விழிப்பூட்டல்</string>
     <string name="all_added_cities">சேர்க்கப்பட்ட நகரங்கள் அனைத்தும்</string>
     <string name="allow">அனுமதிக்கவும்</string>
     <string name="allow_permission_in_settings">இந்த அம்சத்தைப் பயன்படுத்த, அமைவுகளில் அனுமதியை அனுமதிக்க வேண்டும்.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">செயல் ஆதரிக்கப்படவில்லை.</string>
     <string name="apply_daylight_saving_time">பகலொளி சேமிப்பு பயன்படுத்தவா?</string>
     <string name="as_possible_after_verification">புகார் அனுப்பப்பட்டது. சரிபார்க்கப்பட்டவுடன், நகரத்தின் பெயர் மாற்றப்படும்.</string>
+    <string name="auto_refresh_on_screen_description">ஒவ்வொரு மணிநேரமும் தானாக புதுப்பிக்கப்பட்ட வானிலை விவரத்தைப் பெறவும். இது ஆன் செய்யப்பட்டிருக்கும் போது, கைமுறையாகப் புதுப்பிக்க இயலாது.</string>
+    <string name="auto_refresh_on_the_go">பயணத்தின் போதே தானாக புதுப்பிக்கலாம்</string>
+    <string name="auto_refresh_on_the_go_advanced">மேம்பட்டது</string>
+    <string name="auto_refresh_on_the_go_description">நீங்கள் வாகனம் ஓட்டும்போது, பைக் ஓட்டும்போது, ஓடும்போது அல்லது நடக்கும்போது அடிக்கடி வானிலை அறிவிப்புகளைப் பெறவும். இது ஆன் செய்யப்பட்டிருக்கும் போது, கைமுறையாகப் புதுப்பிக்க இயலாது.</string>
+    <string name="auto_refresh_on_the_go_simple_description">நீங்கள் வாகனம் ஓட்டும்போது, பைக் ஓட்டும்போது, ஓடும்போது அல்லது நடக்கும்போது அடிக்கடி வானிலை அறிவிப்புகளைப் பெறவும்.</string>
     <string name="btn_report">புகாரளிக்கவும்</string>
     <string name="button_finish">முடிக்கவும்</string>
     <string name="button_tts">பொத்தான்</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">கூடுதல் விவரத்திற்கு இருமுறை டேப் செய்க.</string>
     <string name="china">சீனா</string>
     <string name="cities_button">நகரங்கள்</string>
+    <string name="city_added">நகரம் சேர்க்கப்பட்டது.</string>
     <string name="city_list_text">நகரங்கள்</string>
     <string name="clear">தெ. வானிலை</string>
     <string name="clear_then_cloudy">தெளிவுக்கு பிறகு மேகமூட்டம்</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">உருப்படியானது %d நிலையில் ட்ராப் செய்யப்பட்டது.</string>
     <string name="dragndroplist_drag_start">%d நிலையில் உருப்படியை ட்ராக் செய்ய துவங்கியது.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d நிலையிலுள்ள உருப்படியை ட்ராக் செய்ய .</string>
+    <string name="drawer_tips">%s குறிப்புகள்</string>
     <string name="drawer_tips_message">இருப்பிடங்களைச் சேர்க்க, நீக்க மற்றும் மறுவரிசைப்படுத்த இங்கே டேப் செய்யவும். முகப்புத் திரையில் வேறுபட்ட இருப்பிடங்களைக் காட்ட, பல விட்ஜெட்களையும் சேர்க்கலாம்.</string>
     <string name="drawer_tips_message_1">இருப்பிடங்களைச் சேர்க்க, நீக்க மற்றும் மறுவரிசைப்படுத்த இந்த மெனுவின் அடிப்பகுதியிலிருக்கும் இருப்பிடங்களை நிர்வகிக்கவும் என்பதை டேப் செய்யவும்.</string>
     <string name="drawer_tips_message_2">ஒரே நேரத்தில் வேறுபட்ட இருப்பிடங்களைக் காட்ட முகப்புத் திரையில் ஒரு விட்ஜெட்டிற்கும் அதிகமாகச் சேர்க்கலாம்.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">முன்னறிவிப்பு நிகழ்படம்</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">வெள்</string>
     <string name="general">பொது</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">நீங்கள் ஃபோனைப் பயன்படுத்தும் முறையின் அடிப்படையில், தனிப்பயனாக்கப்பட்ட உள்ளடக்கத்தைப் பெறவும்.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">நீங்கள் டேப்லெட்டை பயன்படுத்தும் முறையின் அடிப்படையில், தனிப்பயனாக்கப்பட்ட உள்ளடக்கத்தைப் பெறவும்.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">உங்கள் நடப்பு இருப்பிடம் உட்பட வானிலை தகவலை வானிலையிலிருந்து பெறவும்</string>
     <string name="go_to_website">வலைத்தளத்திற்கு செல்லவும்</string>
     <string name="goto_apps">புதிய புதுப்பித்தல் கிடைக்கிறது. இப்போது நிறுவவா?</string>
     <string name="goto_apps_later">பிறகு</string>
     <string name="goto_apps_now">இப்போது</string>
     <string name="goto_apps_update_title">புதிய உள்ளடக்க விழிப்பூட்டல்கள்</string>
     <string name="header_tts">தலைப்பு</string>
+    <string name="heavy">கனமழை</string>
     <string name="heavy_rain">கனமான மழை</string>
     <string name="heavy_rain_followed_by_intense_heat">பலத்த மழையை தொடர்ந்து கடுமையான வெப்பம்</string>
     <string name="heavy_rain_followed_by_light_rain">பலத்த மழையை தொடர்ந்து கடுமையான வெப்பம்</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">புலப்பாடு</string>
     <string name="life_index_wind">காற்று</string>
     <string name="life_index_wind_force">காற்றின் வேகம்</string>
+    <string name="light">லேசான மழை</string>
     <string name="light_rain_followed_by_heavy_rain">இலேசான மழையை தொடர்ந்து பலத்த மழை</string>
     <string name="light_rain_with_some_heavy_rain">இலேசான மழையுடன் சிறிது பலத்த மழை</string>
     <string name="link_tts">இணைப்பு</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">முடிவுகள் எதுவும் கண்டறியப்படவில்லை.</string>
     <string name="message_service_not_available">சேவை தற்போது கிடைக்கவில்லை.</string>
     <string name="minus_tts">கழித்தல்</string>
+    <string name="mon">திங்</string>
     <string name="more">மேலும்</string>
     <string name="more_cuntact_us">எங்களை தொடர்பு கொள்க</string>
     <string name="more_information">மேலும்</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">டீஃபால்ட் வானிலை இருப்பிடத்தை மாற்ற மற்றும் உங்கள் இருப்பிடங்கள் அனைத்தையும் நிர்வகிக்க, இங்கு டேப் செய்யவும்.</string>
     <string name="new_version_available">%s-இன் புதிய பதிப்பு கிடைக்கிறது.</string>
     <string name="new_version_is_available">புதிய பதிப்பு கிடைக்கிறது.</string>
+    <string name="news_menu_show_news">செய்திகளைக் காட்டவும்</string>
+    <string name="news_opt_in_banner_title_text">வானிலை விட்ஜெட்டில் செய்திகளைக் காட்டுவதன் மூலம் நடப்பு நிகழ்வுகளை அறிந்த நிலையில் இருக்கவும்.</string>
+    <string name="news_opt_in_popup_desc_text">வானிலை விட்ஜெட்டில் %s-இன் சமீபத்திய தலைப்புச் செய்திகளைக் காட்டுவதன் மூலம் உலக நிகழ்வுகளை அறிந்த நிலையில் இருக்கவும்.</string>
+    <string name="news_opt_in_popup_title_text">செய்திகளையும் வானிலையையும் ஒரே விட்ஜெட்டில் காணலாம்</string>
+    <string name="news_request_agree_text">%s-இடமிருந்து செய்திகளைப் பெற டேப் செய்யவும்</string>
+    <string name="news_widget_bubble_text">வானிலை பற்றிய செய்திகளைப் பெறவும்.</string>
+    <string name="news_widget_dummy_title">இன்றைய முதன்மை கதை</string>
+    <string name="news_widget_new_dummy_title">இன்று காலை நீங்கள் தெரிந்து கொள்ள வேண்டிய 5 விஷயங்கள்</string>
+    <string name="news_widget_oobe_text">செய்திகளை சேர்க்க இங்கே டேப் செய்க.</string>
     <string name="next">அடுத்த நகரம்</string>
+    <string name="next_btn">அடுத்து</string>
     <string name="next_city">அடுத்த நகரத்திற்கான வானிலை விவரத்தை காண, இருமுறை டேப் செய்யவும்.</string>
     <string name="night_tts">இரவு</string>
     <string name="no_application_available">பயன்பாடுகள் எதுவும் இல்லை.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">வானிலை விவரம் ஏதுமில்லை</string>
     <string name="not_in_use">பயனில் இல்லை</string>
     <string name="not_now">இப். வேண்டாம்</string>
+    <string name="not_now_btn">இப்போது இல்லை</string>
     <string name="not_selected">தேர்வு செய்யப்படவில்லை</string>
     <string name="nothing_selected">எதுவும் தேர்வுசெய்யப்படவில்லை.</string>
     <string name="noti">அறிவிப்பு</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">அதிவேக மற்றும் மிகத் துல்லியமான இருப்பிட கண்டறிதலுக்கு, “அமைவுகளை” டேப் செய்து, பிறகு இருப்பிட முறையை GPS, Wi-Fi மற்றும் மொபைல் நெட்வொர்க்குகள் என்று அமைக்கவும்.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">அதிவேக மற்றும் மிகத் துல்லியமான இருப்பிட கண்டறிதலுக்கு, “அமைவுகளை” டேப் செய்து, பிறகு இருப்பிட முறையை GPS மற்றும் Wi-Fi என்று அமைக்கவும்.</string>
     <string name="notice_gps_trun_off_message_verizon">உங்கள் உள்ளூர் வானிலை விவரங்களைப் பார்க்க, இருப்பிட அமைவுகளை இயக்கி, உயர் துல்லியம் முறை அமைக்கப்பட்டுள்ளதை உறுதிசெய்து கொள்ளவும்.</string>
+    <string name="notification_alert_channel_name">கடுமையான வானிலை விழிப்பூட்டல்</string>
     <string name="notification_apps_update_channel_name">அறிவிப்புகளைப் புதுப்பிக்கவும்</string>
     <string name="notification_auto_refresh_channel_name">வானிலை தானியங்கு புதுப்பிப்பு</string>
     <string name="notification_dex_channel_name">Samsung DeX-இல் வானிலை</string>
@@ -438,6 +463,7 @@
     <string name="open_app">ப.பாட்டை திற.</string>
     <string name="open_source_licences">திறந்த மூல உரிமங்கள்</string>
     <string name="other_locations">மற்ற இருப்பிடங்கள்</string>
+    <string name="partly_sunny">பகுதி வெயில்</string>
     <string name="paused">இடைநிறுத்தப்பட்டது</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">மழைப் பொழிவு: %d mm</string>
     <string name="preview">%s முன்காட்சி</string>
     <string name="previous">முந்தைய நகரம்</string>
+    <string name="previous_btn">முந்தையது</string>
     <string name="previous_city">முந்தைய நகரத்திற்கான வானிலை விவரத்தை காண, இருமுறை டேப் செய்யவும்.</string>
     <string name="privacy_policy">தனியுரிமைக் கொள்கை</string>
     <string name="probability_of_rain_text">மழைக்கான சாத்தியக்கூறு</string>
     <string name="protect_your_content">உள்ளடக்கம் பாதுகாக்கவும்</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">ரேடார் மற்றும் வரைபடங்கள்</string>
     <string name="rain">மழை</string>
     <string name="rain_followed_by_intense_heat">மழையை தொடர்ந்து கடுமையான வெப்பம்</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">வானிலை விவரங்களைப் புதுப்பிக்க, “அமைவுகள்” என்பதை டேப் செய்து, பயன்பாட்டு விவரம் > அனுமதிகள் என்பதற்குச் சென்று, பிறகு பின்வரும் அனுமதிகளை அனுமதித்து, மீண்டும் முயலவும்:</string>
     <string name="runtime_location_permission_title">அனுமதிகளை அனுமதிக்கவும்</string>
     <string name="runtime_oem_grant_permission_desc">%s பயன்பாடு பின்வருவதை அணுகுவதற்கு அனுமதியை அனுமதிக்கிறது:</string>
+    <string name="sat">சனி</string>
     <string name="save_button">சேமிக்கவும்</string>
     <string name="search_most_searched_for">அதிகமாகத் தேடியது</string>
     <string name="search_tab_cities">நகரங்கள்</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">புதிய உள்ளடக்கம் கிடைக்கிறது</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">மேலும்</string>
+    <string name="sesl_preferecne_badge_description">புதிய அறிவிப்பு</string>
     <string name="sesl_preferencecategory_added_title">தலைப்பு</string>
     <string name="sesl_search_hint">தேடவும்</string>
     <string name="sesl_searchview_description_clear">தேடுபுலத்தை அழிக்கவும்</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">உங்கள் நெட்வொர்க் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.</string>
     <string name="st_offline">ஆஃப்லைன்</string>
     <string name="st_view_less">சிறிதாக காட்டவும்</string>
+    <string name="status_off">ஆஃப்</string>
+    <string name="status_on">ஆன்</string>
+    <string name="sun">ஞாயி</string>
     <string name="sunny">வெயில்</string>
     <string name="sunny_with_some_clouds">சில மேகங்களுடன் வெப்பம்</string>
     <string name="sunny_with_some_heavy_rain">சிறிது பலத்த மழையுடன் வெப்பம்</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">உங்கள் பழைய சாதனத்திலிருந்து வானிலைத் தரவை மீள்சேமிக்க இங்கே டேப் செய்யவும்.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">உங்கள் இருப்பிடத்தை மீண்டும் கண்டறிய முயற்சிக்க, “மீண்டும் முயலவும்” என்பதை டேப் செய்யவும்.</string>
     <string name="tap_setting_message_edge_panel">உள்ளூர் வானிலையைப் பெற, இருப்பிடத்தை ஆன் செய்யவும்.</string>
+    <string name="tap_the_settings_icon">அமைப்புகள் சின்னம் டேப் செய்யவும்.</string>
     <string name="tap_to_get_the_weather">வானிலையை பெற டேப் செய்யவும்</string>
     <string name="temp_f_c">%d°ஃபாரன்ஹீட்</string>
     <string name="temp_f_m">%d°செல்சியஸ்</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">விதிகளும் நிபந்தனைகளும்</string>
     <string name="the_latest_version">சமீபத்திய பதிப்பு ஏற்கனவே நிறுவப்பட்டது.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">இது அறிவிப்புகள் மற்றும் நாட்காட்டியில் பயன்படுத்தப்படும்.</string>
+    <string name="thu">வியா</string>
     <string name="tick_box_tts">தேர்வுப் பெட்டி</string>
     <string name="ticked_tts">தேர்வுசெய்யப்பட்டது</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">மணிக்கொருமுறை</string>
     <string name="title_select_locations">இருப்பிடங்களைத் தேர்வு செய்யவும்</string>
     <string name="title_theme">தீம்கள்</string>
+    <string name="to_continue_agree_to_updated">தொடர, எங்களது புதுப்பிக்கப்பட்ட %s-ஐ ஏற்கவும்.</string>
     <string name="to_get_local_weather_chn">"உள்ளூர் வானிலைத் தகவலைப் பெற, உங்களின் நடப்பு இருப்பிடம் வானிலைச் சேவை வழங்குநருக்கு அனுப்பப்படும். (தயவுசெய்து வழங்குநரின் %1$sவிதிகள் மற்றும் நிபந்தனைகள்%2$s மற்றும் %3$sதனியுரிமைக் கொள்கை%4$sயைப் பார்க்கவும்.)
 உங்கள் சாதனத்தில் உள்ள பிற செயலிகள் மற்றும் சேவைகள், அந்தச் செயலிகளில் வானிலையைக் காண்பிப்பதற்காக மீட்டெடுக்கப்பட்ட வானிலைத் தரவை அணுகலாம்.
 தொடர்ச்சியான வானிலைத் தகவல்களை உங்களுக்கு வழங்குவதற்காக, நீங்கள் செயலியைப் பயன்படுத்தாவிட்டாலும் கூட, வானிலைக்கு உங்கள் இருப்பிடத்தின் அணுகல்தன்மை இருக்கும்."</string>
     <string name="today">இன்று</string>
+    <string name="try_it_out_btn">இதை முயலுக</string>
+    <string name="tue">செவ்</string>
+    <string name="turn_on_to_use_precise_location">இந்த அம்சத்தைப் பயன்படுத்துவதற்காக எப்போதும் உங்கள் இருப்பிடத்தை அணுக %s-ஐ அனுமதித்து, துல்லியமான இருப்பிடத்தைப் பயன்படுத்தவும் அம்சத்தை ஆன் செய்ய வேண்டும். அமைவுகள் என்பதை டேப் செய்து, பிறகு அனுமதிகள் > இருப்பிடம் என்பதற்குச் செல்லவும்.</string>
     <string name="tw_title_weather_broadcast">ஒளிபரப்பு</string>
-    <string name="unable_to_check_for_updates">புதுப்பிப்புகளைச் சோதிக்க இயலாது. நெட்வொர்க் இணைப்பு கிடைக்கவில்லை.</string>
+    <string name="unable_to_check_for_updates">புதுப்பிப்புகள் உள்ளனவா என்று பார்க்க இயலவில்லை. பின்னர் மீண்டும் முயலவும்.</string>
     <string name="unable_to_receive_info_msg">விவரத்தைப் பெற இயலவில்லை</string>
     <string name="unticked_tts">தேர்வுநீக்கப்பட்டவை</string>
     <string name="unused">பயன்படுத்தாதது</string>
     <string name="update">புதுப்பி</string>
     <string name="update_abb8">புதுப்பி</string>
     <string name="update_app">பயன்பாட்டை புதுப்பிக்கவும்</string>
+    <string name="updated_tile_chn">புதுப்பிக்கப்பட்டவை: %s</string>
     <string name="updated_tts">%s புதுப்பிக்கப்பட்டுள்ளது</string>
+    <string name="use_current_location">நடப்பு இடத்தை உபயோகி</string>
     <string name="use_current_location_agree_popup">"உள்ளூர் வானிலையைப் பெற, உங்களின் தற்போதைய இருப்பிடம் வானிலைச் சேவை வழங்குநருக்கு அனுப்பப்படும். (வழங்குநரின் %1$sதனியுரிமைக் கொள்கையைப்%2$s பார்க்கவும்.)
 உங்கள் சாதனத்தில் உள்ள பிற பயன்பாடுகளும் சேவைகளும் அந்தப் பயன்பாடுகளில் வானிலையைக் காட்ட, பெறப்பட்ட வானிலைத் தரவை அணுகக்கூடும்."</string>
     <string name="use_current_location_and_background_agree_popup">"உள்ளூர் வானிலைத் தகவலைப் பெற, உங்களின் நடப்பு இருப்பிடம் வானிலைச் சேவை வழங்குநருக்கு அனுப்பப்படும். (தயவுசெய்து வழங்குநரின் %1$sதனியுரிமைக் கொள்கை%2$sயைப் பார்க்கவும்.)
@@ -635,9 +677,16 @@
 வானிலை பயன்பாட்டு அமைவுகள் -க்குச் சென்று உங்கள் இருப்பிடம் பயன்படுத்தப்படுவதை நீங்கள் ஆஃப் செய்யலாம்."</string>
     <string name="use_current_location_body_msg_chn">"“வானிலை” -ஐ பயன்படுத்துவதற்கு முன்பு தயவுசெய்து கவனமாகப் படிக்கவும் :
 உங்கள் தற்போதைய இருப்பிடத்தின் வானிலையை நீங்கள் அறிய விரும்பினால், மூன்றாம் தரப்பு சேவை வழங்குநரை உங்கள் சாதனத்திற்கு தொடர்ச்சியாக (நீங்கள் சேவையைப் பயன்படுத்தாவிட்டாலும் கூட) அணுகலைப் பெறவும் கீழே பட்டியலிடப்பட்டுள்ள சில தரவுகளை பெறவும் நீங்கள் அனுமதிக்க வேண்டும். அத்தகைய அனுமதியை அளிக்கும் முன் தயவுசெய்து மூன்றாம் தரப்பு சேவை வழங்குநரின் %1$sவிதிகள் மற்றும் நிபந்தனைகள்%2$s மற்றும் %3$sதனியுரிமைக் கொள்கையைக்%4$s கவனமாக வாசித்துப் புரிந்து கொள்ளவும். அமைவுகள் மெனுவில் “இருப்பிடம்” -ஐ முடக்குவதன் மூலம் உங்கள் அனுமதியை நீங்கள் திரும்பப் பெறலாம். உங்கள் சாதனத்தில் உள்ள பிற பயன்பாடுகளும் சேவைகளும் அந்தப் பயன்பாடுகளிலும் சேவைகளிலும் வானிலையைக் காட்ட, பெறப்பட்ட வானிலைத் தரவை அணுகக்கூடும்."</string>
+    <string name="use_current_location_body_msg_kor">"உங்களின் நடப்பு இருப்பிடம் சேகரிக்கப்பட்டு, உங்கள் உள்ளூர் வானிலையைப் பெறுவது போன்ற சில வானிலை பயன்பாட்டு அம்சங்களை வழங்கப் பயன்படும்.
+
+தொடர்ச்சியான வானிலை விவரத்தை வழங்குவதற்காக, நீங்கள் அதை பயன்படுத்தாவிட்டாலும், இந்த பயன்பாடுகள் உங்கள் இருப்பிடத்தைத் தொடர்ந்து செயலாக்கும். தொடர்வதன் மூலம், மேற்கூறிய நோக்கங்களுக்காக உங்கள் இருப்பிடத்தின் சேகரிப்பு மற்றும் செயலாக்கத்தை ஏற்கிறீர்கள்.
+
+இந்த இருப்பிடச் சேகரிப்பையும் உபயோகத்தையும் வானிலை பயன்பாட்டு அமைவுகளில் நிறுத்தலாம்."</string>
     <string name="use_current_location_body_purpose">நோக்கம்</string>
     <string name="use_current_location_body_purpose_content">உங்கள் தற்போதைய இருப்பிடத்திற்கான வானிலை தகவல்களை வழங்க</string>
     <string name="use_current_location_body_search_provider">சேவை வழங்குநர்</string>
+    <string name="use_current_location_continue">தொடரவும்</string>
+    <string name="use_current_location_not_now">இப்போது இல்லை</string>
     <string name="use_current_location_off_alert_popup">நடப்பு இருப்பிட விவரம் அகற்றப்படும்.</string>
     <string name="useful_informations">வாழ்க்கைக் குறிப்புகள் மற்றும் பிற அறிக்கைகள்</string>
     <string name="using_as">%s-ஆக பயன்படுத்துகிறது</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">வானிலை குறிப்புகள்</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">புத</string>
     <string name="weekly_forecast">தினமும்</string>
     <string name="widget_background">விட்ஜெட் பின்னணி</string>
     <string name="widget_empty_text">வானிலை விவரத்திற்கு, டேப் செய்க</string>
+    <string name="widget_location">நகரின் பெயர்</string>
     <string name="widget_name_4x1">வானிலை மற்றும் கடிகாரம்</string>
     <string name="widget_setting">அமைவுகள்</string>
     <string name="widget_setting_background_color">பின்னணி நிறம்</string>

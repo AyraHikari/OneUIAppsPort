@@ -15,41 +15,33 @@
 
 
 # static fields
-.field static final ACTION_FORCE_STOP_RESCHEDULE:Ljava/lang/String; = "ACTION_FORCE_STOP_RESCHEDULE"
+.field public static final k:Ljava/lang/String;
 
-.field private static final ALARM_ID:I = -0x1
-
-.field private static final BACKOFF_DURATION_MS:J = 0x12cL
-
-.field static final MAX_ATTEMPTS:I = 0x3
-
-.field private static final TAG:Ljava/lang/String;
-
-.field private static final TEN_YEARS:J
+.field public static final l:J
 
 
 # instance fields
-.field private final mContext:Landroid/content/Context;
+.field public final h:Landroid/content/Context;
 
-.field private mRetryCount:I
+.field public final i:Lk2/i;
 
-.field private final mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+.field public j:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     const-string v0, "ForceStopRunnable"
 
-    .line 75
-    invoke-static {v0}, Landroidx/work/Logger;->tagWithPrefix(Ljava/lang/String;)Ljava/lang/String;
+    .line 1
+    invoke-static {v0}, Lj2/n;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sput-object v0, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
-    .line 85
+    .line 2
     sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0xe42
@@ -58,12 +50,12 @@
 
     move-result-wide v0
 
-    sput-wide v0, Landroidx/work/impl/utils/ForceStopRunnable;->TEN_YEARS:J
+    sput-wide v0, Landroidx/work/impl/utils/ForceStopRunnable;->l:J
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroidx/work/impl/WorkManagerImpl;)V
+.method public constructor <init>(Landroid/content/Context;Lk2/i;)V
     .locals 0
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
@@ -76,28 +68,28 @@
         }
     .end annotation
 
-    .line 91
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 92
+    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->h:Landroid/content/Context;
 
-    .line 93
-    iput-object p2, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 3
+    iput-object p2, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
     const/4 p1, 0x0
 
-    .line 94
-    iput p1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mRetryCount:I
+    .line 4
+    iput p1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->j:I
 
     return-void
 .end method
 
-.method static getIntent(Landroid/content/Context;)Landroid/content/Intent;
+.method public static c(Landroid/content/Context;)Landroid/content/Intent;
     .locals 3
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
@@ -108,12 +100,12 @@
         }
     .end annotation
 
-    .line 338
+    .line 1
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 339
+    .line 2
     new-instance v1, Landroid/content/ComponentName;
 
     const-class v2, Landroidx/work/impl/utils/ForceStopRunnable$BroadcastReceiver;
@@ -124,13 +116,13 @@
 
     const-string p0, "ACTION_FORCE_STOP_RESCHEDULE"
 
-    .line 340
+    .line 3
     invoke-virtual {v0, p0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     return-object v0
 .end method
 
-.method private static getPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+.method public static d(Landroid/content/Context;I)Landroid/app/PendingIntent;
     .locals 2
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
@@ -143,14 +135,14 @@
         }
     .end annotation
 
-    .line 329
-    invoke-static {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->getIntent(Landroid/content/Context;)Landroid/content/Intent;
+    .line 1
+    invoke-static {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->c(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0
 
     const/4 v1, -0x1
 
-    .line 330
+    .line 2
     invoke-static {p0, v1, v0, p1}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object p0
@@ -158,8 +150,14 @@
     return-object p0
 .end method
 
-.method static setAlarm(Landroid/content/Context;)V
-    .locals 6
+.method public static g(Landroid/content/Context;)V
+    .locals 5
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "ClassVerificationFailure"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x0
@@ -171,15 +169,15 @@
 
     const-string v0, "alarm"
 
-    .line 346
+    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    .line 349
-    invoke-static {}, Landroidx/core/os/BuildCompat;->isAtLeastS()Z
+    .line 2
+    invoke-static {}, Lk0/a;->c()Z
 
     move-result v1
 
@@ -192,201 +190,177 @@
     :cond_0
     const/high16 v1, 0x8000000
 
-    .line 352
+    .line 3
     :goto_0
-    invoke-static {p0, v1}, Landroidx/work/impl/utils/ForceStopRunnable;->getPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v1}, Landroidx/work/impl/utils/ForceStopRunnable;->d(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object p0
 
-    .line 353
+    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    sget-wide v3, Landroidx/work/impl/utils/ForceStopRunnable;->TEN_YEARS:J
+    sget-wide v3, Landroidx/work/impl/utils/ForceStopRunnable;->l:J
 
     add-long/2addr v1, v3
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
-    .line 355
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+    const/4 v3, 0x0
 
-    const/16 v4, 0x13
+    .line 5
+    invoke-virtual {v0, v3, v1, v2, p0}, Landroid/app/AlarmManager;->setExact(IJLandroid/app/PendingIntent;)V
 
-    const/4 v5, 0x0
-
-    if-lt v3, v4, :cond_1
-
-    .line 356
-    invoke-virtual {v0, v5, v1, v2, p0}, Landroid/app/AlarmManager;->setExact(IJLandroid/app/PendingIntent;)V
-
-    goto :goto_1
-
-    .line 358
     :cond_1
-    invoke-virtual {v0, v5, v1, v2, p0}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
-
-    :cond_2
-    :goto_1
     return-void
 .end method
 
 
 # virtual methods
-.method public cleanUp()Z
+.method public a()Z
     .locals 12
 
-    .line 245
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 1
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->h:Landroid/content/Context;
 
-    const/4 v1, 0x0
+    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    const/16 v2, 0x17
-
-    if-lt v0, v2, :cond_0
-
-    .line 249
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mContext:Landroid/content/Context;
-
-    iget-object v2, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
-
-    invoke-static {v0, v2}, Landroidx/work/impl/background/systemjob/SystemJobScheduler;->reconcileJobs(Landroid/content/Context;Landroidx/work/impl/WorkManagerImpl;)Z
+    invoke-static {v0, v1}, Ln2/b;->i(Landroid/content/Context;Lk2/i;)Z
 
     move-result v0
+
+    .line 2
+    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
+
+    invoke-virtual {v1}, Lk2/i;->s()Landroidx/work/impl/WorkDatabase;
+
+    move-result-object v1
+
+    .line 3
+    invoke-virtual {v1}, Landroidx/work/impl/WorkDatabase;->P()Ls2/q;
+
+    move-result-object v2
+
+    .line 4
+    invoke-virtual {v1}, Landroidx/work/impl/WorkDatabase;->O()Ls2/n;
+
+    move-result-object v3
+
+    .line 5
+    invoke-virtual {v1}, Lv1/t0;->e()V
+
+    .line 6
+    :try_start_0
+    invoke-interface {v2}, Ls2/q;->h()Ljava/util/List;
+
+    move-result-object v4
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    if-eqz v4, :cond_0
+
+    .line 7
+    invoke-interface {v4}, Ljava/util/List;->isEmpty()Z
+
+    move-result v7
+
+    if-nez v7, :cond_0
+
+    move v7, v5
 
     goto :goto_0
 
     :cond_0
-    move v0, v1
+    move v7, v6
 
-    .line 252
     :goto_0
-    iget-object v2, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    if-eqz v7, :cond_1
 
-    invoke-virtual {v2}, Landroidx/work/impl/WorkManagerImpl;->getWorkDatabase()Landroidx/work/impl/WorkDatabase;
-
-    move-result-object v2
-
-    .line 253
-    invoke-virtual {v2}, Landroidx/work/impl/WorkDatabase;->workSpecDao()Landroidx/work/impl/model/WorkSpecDao;
-
-    move-result-object v3
-
-    .line 254
-    invoke-virtual {v2}, Landroidx/work/impl/WorkDatabase;->workProgressDao()Landroidx/work/impl/model/WorkProgressDao;
+    .line 8
+    invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
 
-    .line 255
-    invoke-virtual {v2}, Landroidx/work/impl/WorkDatabase;->beginTransaction()V
-
-    .line 258
-    :try_start_0
-    invoke-interface {v3}, Landroidx/work/impl/model/WorkSpecDao;->getRunningWork()Ljava/util/List;
-
-    move-result-object v5
-
-    const/4 v6, 0x1
-
-    if-eqz v5, :cond_1
-
-    .line 259
-    invoke-interface {v5}, Ljava/util/List;->isEmpty()Z
-
-    move-result v7
-
-    if-nez v7, :cond_1
-
-    move v7, v6
-
-    goto :goto_1
-
-    :cond_1
-    move v7, v1
-
     :goto_1
-    if-eqz v7, :cond_2
-
-    .line 268
-    invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :goto_2
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v8
 
-    if-eqz v8, :cond_2
+    if-eqz v8, :cond_1
 
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, Landroidx/work/impl/model/WorkSpec;
+    check-cast v8, Ls2/p;
 
-    .line 269
-    sget-object v9, Landroidx/work/WorkInfo$State;->ENQUEUED:Landroidx/work/WorkInfo$State;
+    .line 9
+    sget-object v9, Lj2/x$a;->h:Lj2/x$a;
 
-    new-array v10, v6, [Ljava/lang/String;
+    new-array v10, v5, [Ljava/lang/String;
 
-    iget-object v11, v8, Landroidx/work/impl/model/WorkSpec;->id:Ljava/lang/String;
+    iget-object v11, v8, Ls2/p;->a:Ljava/lang/String;
 
-    aput-object v11, v10, v1
+    aput-object v11, v10, v6
 
-    invoke-interface {v3, v9, v10}, Landroidx/work/impl/model/WorkSpecDao;->setState(Landroidx/work/WorkInfo$State;[Ljava/lang/String;)I
+    invoke-interface {v2, v9, v10}, Ls2/q;->m(Lj2/x$a;[Ljava/lang/String;)I
 
-    .line 270
-    iget-object v8, v8, Landroidx/work/impl/model/WorkSpec;->id:Ljava/lang/String;
+    .line 10
+    iget-object v8, v8, Ls2/p;->a:Ljava/lang/String;
 
     const-wide/16 v9, -0x1
 
-    invoke-interface {v3, v8, v9, v10}, Landroidx/work/impl/model/WorkSpecDao;->markWorkSpecScheduled(Ljava/lang/String;J)I
+    invoke-interface {v2, v8, v9, v10}, Ls2/q;->b(Ljava/lang/String;J)I
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 273
-    :cond_2
-    invoke-interface {v4}, Landroidx/work/impl/model/WorkProgressDao;->deleteAll()V
+    .line 11
+    :cond_1
+    invoke-interface {v3}, Ls2/n;->b()V
 
-    .line 274
-    invoke-virtual {v2}, Landroidx/work/impl/WorkDatabase;->setTransactionSuccessful()V
+    .line 12
+    invoke-virtual {v1}, Lv1/t0;->E()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 276
-    invoke-virtual {v2}, Landroidx/work/impl/WorkDatabase;->endTransaction()V
+    .line 13
+    invoke-virtual {v1}, Lv1/t0;->i()V
 
     if-nez v7, :cond_3
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    move v5, v6
 
     :cond_3
-    move v1, v6
-
-    :cond_4
-    return v1
+    :goto_2
+    return v5
 
     :catchall_0
     move-exception v0
 
-    invoke-virtual {v2}, Landroidx/work/impl/WorkDatabase;->endTransaction()V
+    invoke-virtual {v1}, Lv1/t0;->i()V
 
-    .line 277
+    .line 14
     throw v0
 .end method
 
-.method public forceStopRunnable()V
+.method public b()V
     .locals 5
 
-    .line 215
-    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->cleanUp()Z
+    .line 1
+    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->a()Z
 
     move-result v0
 
-    .line 216
-    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->shouldRescheduleWorkers()Z
+    .line 2
+    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->h()Z
 
     move-result v1
 
@@ -394,111 +368,116 @@
 
     if-eqz v1, :cond_0
 
-    .line 217
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 3
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     new-array v3, v2, [Ljava/lang/Throwable;
 
     const-string v4, "Rescheduling Workers."
 
-    invoke-virtual {v0, v1, v4, v3}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v0, v1, v4, v3}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 218
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 4
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->rescheduleEligibleWork()V
+    invoke-virtual {v0}, Lk2/i;->x()V
 
-    .line 220
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 5
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->getPreferenceUtils()Landroidx/work/impl/utils/PreferenceUtils;
+    invoke-virtual {v0}, Lk2/i;->p()Lt2/e;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroidx/work/impl/utils/PreferenceUtils;->setNeedsReschedule(Z)V
+    invoke-virtual {v0, v2}, Lt2/e;->c(Z)V
 
     goto :goto_0
 
-    .line 221
+    .line 6
     :cond_0
-    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->isForceStopped()Z
+    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->e()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 222
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 7
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     new-array v2, v2, [Ljava/lang/Throwable;
 
     const-string v3, "Application was force-stopped, rescheduling."
 
-    invoke-virtual {v0, v1, v3, v2}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v0, v1, v3, v2}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 223
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 8
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->rescheduleEligibleWork()V
+    invoke-virtual {v0}, Lk2/i;->x()V
 
     goto :goto_0
 
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 225
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 9
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     new-array v2, v2, [Ljava/lang/Throwable;
 
     const-string v3, "Found unfinished work, scheduling it."
 
-    invoke-virtual {v0, v1, v3, v2}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v0, v1, v3, v2}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 226
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 10
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    .line 227
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->getConfiguration()Landroidx/work/Configuration;
+    .line 11
+    invoke-virtual {v0}, Lk2/i;->m()Landroidx/work/a;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    .line 228
-    invoke-virtual {v1}, Landroidx/work/impl/WorkManagerImpl;->getWorkDatabase()Landroidx/work/impl/WorkDatabase;
+    .line 12
+    invoke-virtual {v1}, Lk2/i;->s()Landroidx/work/impl/WorkDatabase;
 
     move-result-object v1
 
-    iget-object v2, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    iget-object v2, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    .line 229
-    invoke-virtual {v2}, Landroidx/work/impl/WorkManagerImpl;->getSchedulers()Ljava/util/List;
+    .line 13
+    invoke-virtual {v2}, Lk2/i;->r()Ljava/util/List;
 
     move-result-object v2
 
-    .line 226
-    invoke-static {v0, v1, v2}, Landroidx/work/impl/Schedulers;->schedule(Landroidx/work/Configuration;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
+    .line 14
+    invoke-static {v0, v1, v2}, Lk2/f;->b(Landroidx/work/a;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
 
     :cond_2
     :goto_0
     return-void
 .end method
 
-.method public isForceStopped()Z
+.method public e()Z
     .locals 6
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "ClassVerificationFailure"
+        }
+    .end annotation
 
     const/high16 v0, 0x20000000
 
@@ -506,9 +485,9 @@
 
     const/4 v2, 0x1
 
-    .line 167
+    .line 1
     :try_start_0
-    invoke-static {}, Landroidx/core/os/BuildCompat;->isAtLeastS()Z
+    invoke-static {}, Lk0/a;->c()Z
 
     move-result v3
 
@@ -516,16 +495,16 @@
 
     const/high16 v0, 0x22000000
 
-    .line 170
+    .line 2
     :cond_0
-    iget-object v3, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Landroidx/work/impl/utils/ForceStopRunnable;->h:Landroid/content/Context;
 
-    invoke-static {v3, v0}, Landroidx/work/impl/utils/ForceStopRunnable;->getPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {v3, v0}, Landroidx/work/impl/utils/ForceStopRunnable;->d(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v0
 
-    .line 171
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 3
+    sget v3, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v4, 0x1e
 
@@ -533,16 +512,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 174
+    .line 4
     invoke-virtual {v0}, Landroid/app/PendingIntent;->cancel()V
 
-    .line 176
+    .line 5
     :cond_1
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->h:Landroid/content/Context;
 
     const-string v3, "activity"
 
-    .line 177
+    .line 6
     invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -551,14 +530,14 @@
 
     const/4 v3, 0x0
 
-    .line 179
+    .line 7
     invoke-virtual {v0, v3, v1, v1}, Landroid/app/ActivityManager;->getHistoricalProcessExitReasons(Ljava/lang/String;II)Ljava/util/List;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    .line 185
+    .line 8
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v3
@@ -567,7 +546,7 @@
 
     move v3, v1
 
-    .line 186
+    .line 9
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -575,14 +554,14 @@
 
     if-ge v3, v4, :cond_4
 
-    .line 187
+    .line 10
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/app/ApplicationExitInfo;
 
-    .line 188
+    .line 11
     invoke-virtual {v4}, Landroid/app/ApplicationExitInfo;->getReason()I
 
     move-result v4
@@ -601,10 +580,10 @@
     :cond_3
     if-nez v0, :cond_4
 
-    .line 194
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mContext:Landroid/content/Context;
+    .line 12
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->h:Landroid/content/Context;
 
-    invoke-static {v0}, Landroidx/work/impl/utils/ForceStopRunnable;->setAlarm(Landroid/content/Context;)V
+    invoke-static {v0}, Landroidx/work/impl/utils/ForceStopRunnable;->g(Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
@@ -622,13 +601,13 @@
     :catch_1
     move-exception v0
 
-    .line 205
+    .line 13
     :goto_1
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v3
 
-    sget-object v4, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v4, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     new-array v5, v2, [Ljava/lang/Throwable;
 
@@ -636,23 +615,23 @@
 
     const-string v0, "Ignoring exception"
 
-    invoke-virtual {v3, v4, v0, v5}, Landroidx/work/Logger;->warning(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v3, v4, v0, v5}, Lj2/n;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
     return v2
 .end method
 
-.method public multiProcessChecks()Z
+.method public f()Z
     .locals 6
 
-    .line 297
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 1
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->getConfiguration()Landroidx/work/Configuration;
+    invoke-virtual {v0}, Lk2/i;->m()Landroidx/work/a;
 
     move-result-object v0
 
-    .line 302
-    invoke-virtual {v0}, Landroidx/work/Configuration;->getDefaultProcessName()Ljava/lang/String;
+    .line 2
+    invoke-virtual {v0}, Landroidx/work/a;->c()Ljava/lang/String;
 
     move-result-object v1
 
@@ -666,35 +645,35 @@
 
     if-eqz v1, :cond_0
 
-    .line 303
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 3
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     new-array v3, v3, [Ljava/lang/Throwable;
 
     const-string v4, "The default process name was not specified."
 
-    invoke-virtual {v0, v1, v4, v3}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v0, v1, v4, v3}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
     return v2
 
-    .line 306
+    .line 4
     :cond_0
-    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->h:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Landroidx/work/impl/utils/ProcessUtils;->isDefaultProcess(Landroid/content/Context;Landroidx/work/Configuration;)Z
+    invoke-static {v1, v0}, Lt2/f;->b(Landroid/content/Context;Landroidx/work/a;)Z
 
     move-result v0
 
-    .line 307
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 5
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v1
 
-    sget-object v4, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v4, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -712,17 +691,53 @@
 
     new-array v3, v3, [Ljava/lang/Throwable;
 
-    invoke-virtual {v1, v4, v2, v3}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v4, v2, v3}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
     return v0
+.end method
+
+.method public h()Z
+    .locals 1
+
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
+
+    invoke-virtual {v0}, Lk2/i;->p()Lt2/e;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lt2/e;->a()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public i(J)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "duration"
+        }
+    .end annotation
+
+    :try_start_0
+    invoke-static {p1, p2}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    return-void
 .end method
 
 .method public run()V
     .locals 11
 
-    .line 100
+    .line 1
     :try_start_0
-    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->multiProcessChecks()Z
+    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->f()Z
 
     move-result v0
     :try_end_0
@@ -730,27 +745,27 @@
 
     if-nez v0, :cond_0
 
-    .line 151
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 2
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->onForceStopRunnableCompleted()V
+    invoke-virtual {v0}, Lk2/i;->w()V
 
     return-void
 
-    .line 105
+    .line 3
     :cond_0
     :goto_0
     :try_start_1
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->h:Landroid/content/Context;
 
-    invoke-static {v0}, Landroidx/work/impl/WorkDatabasePathHelper;->migrateDatabase(Landroid/content/Context;)V
+    invoke-static {v0}, Lk2/h;->e(Landroid/content/Context;)V
 
-    .line 108
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 4
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v1, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     const-string v2, "Performing cleanup operations."
 
@@ -758,13 +773,13 @@
 
     new-array v4, v3, [Ljava/lang/Throwable;
 
-    invoke-virtual {v0, v1, v2, v4}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v0, v1, v2, v4}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 110
+    .line 5
     :try_start_2
-    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->forceStopRunnable()V
+    invoke-virtual {p0}, Landroidx/work/impl/utils/ForceStopRunnable;->b()V
     :try_end_2
     .catch Landroid/database/sqlite/SQLiteCantOpenDatabaseException; {:try_start_2 .. :try_end_2} :catch_5
     .catch Landroid/database/sqlite/SQLiteDatabaseCorruptException; {:try_start_2 .. :try_end_2} :catch_4
@@ -804,16 +819,16 @@
     :catch_5
     move-exception v0
 
-    .line 118
+    .line 6
     :goto_1
     :try_start_3
-    iget v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mRetryCount:I
+    iget v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->j:I
 
     const/4 v2, 0x1
 
     add-int/2addr v1, v2
 
-    iput v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mRetryCount:I
+    iput v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->j:I
 
     const/4 v4, 0x3
 
@@ -821,40 +836,40 @@
 
     const-string v1, "The file system on the device is in a bad state. WorkManager cannot access the app\'s internal data store."
 
-    .line 127
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 7
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v4
 
-    sget-object v5, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v5, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     new-array v6, v2, [Ljava/lang/Throwable;
 
     aput-object v0, v6, v3
 
-    invoke-virtual {v4, v5, v1, v6}, Landroidx/work/Logger;->error(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v4, v5, v1, v6}, Lj2/n;->b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 128
+    .line 8
     new-instance v4, Ljava/lang/IllegalStateException;
 
     invoke-direct {v4, v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 130
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 9
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    .line 131
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->getConfiguration()Landroidx/work/Configuration;
+    .line 10
+    invoke-virtual {v0}, Lk2/i;->m()Landroidx/work/a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroidx/work/Configuration;->getExceptionHandler()Landroidx/work/InitializationExceptionHandler;
+    invoke-virtual {v0}, Landroidx/work/a;->d()Lj2/j;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 133
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 11
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v1
 
@@ -864,22 +879,22 @@
 
     aput-object v4, v2, v3
 
-    invoke-virtual {v1, v5, v6, v2}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v5, v6, v2}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 136
-    invoke-interface {v0, v4}, Landroidx/work/InitializationExceptionHandler;->handleException(Ljava/lang/Throwable;)V
+    .line 12
+    invoke-interface {v0, v4}, Lj2/j;->a(Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 151
+    .line 13
     :goto_2
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->onForceStopRunnableCompleted()V
+    invoke-virtual {v0}, Lk2/i;->w()V
 
     return-void
 
-    .line 139
+    .line 14
     :cond_1
     :try_start_4
     throw v4
@@ -891,18 +906,18 @@
 
     mul-long/2addr v4, v6
 
-    .line 143
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 15
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v1
 
-    sget-object v8, Landroidx/work/impl/utils/ForceStopRunnable;->TAG:Ljava/lang/String;
+    sget-object v8, Landroidx/work/impl/utils/ForceStopRunnable;->k:Ljava/lang/String;
 
     const-string v9, "Retrying after %s"
 
     new-array v10, v2, [Ljava/lang/Object;
 
-    .line 144
+    .line 16
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -917,16 +932,16 @@
 
     aput-object v0, v2, v3
 
-    invoke-virtual {v1, v8, v4, v2}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v8, v4, v2}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 146
-    iget v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mRetryCount:I
+    .line 17
+    iget v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->j:I
 
     int-to-long v0, v0
 
     mul-long/2addr v0, v6
 
-    invoke-virtual {p0, v0, v1}, Landroidx/work/impl/utils/ForceStopRunnable;->sleep(J)V
+    invoke-virtual {p0, v0, v1}, Landroidx/work/impl/utils/ForceStopRunnable;->i(J)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -935,49 +950,11 @@
     :catchall_0
     move-exception v0
 
-    .line 151
-    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
+    .line 18
+    iget-object v1, p0, Landroidx/work/impl/utils/ForceStopRunnable;->i:Lk2/i;
 
-    invoke-virtual {v1}, Landroidx/work/impl/WorkManagerImpl;->onForceStopRunnableCompleted()V
+    invoke-virtual {v1}, Lk2/i;->w()V
 
-    .line 152
+    .line 19
     throw v0
-.end method
-
-.method shouldRescheduleWorkers()Z
-    .locals 1
-
-    .line 286
-    iget-object v0, p0, Landroidx/work/impl/utils/ForceStopRunnable;->mWorkManager:Landroidx/work/impl/WorkManagerImpl;
-
-    invoke-virtual {v0}, Landroidx/work/impl/WorkManagerImpl;->getPreferenceUtils()Landroidx/work/impl/utils/PreferenceUtils;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/work/impl/utils/PreferenceUtils;->getNeedsReschedule()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public sleep(J)V
-    .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "duration"
-        }
-    .end annotation
-
-    .line 318
-    :try_start_0
-    invoke-static {p1, p2}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
 .end method

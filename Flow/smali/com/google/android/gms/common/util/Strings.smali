@@ -1,9 +1,10 @@
 .class public Lcom/google/android/gms/common/util/Strings;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # static fields
-.field private static final zzhh:Ljava/util/regex/Pattern;
+.field private static final zza:Ljava/util/regex/Pattern;
 
 
 # direct methods
@@ -12,12 +13,11 @@
 
     const-string v0, "\\$\\{(.*?)\\}"
 
-    .line 4
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/gms/common/util/Strings;->zzhh:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/android/gms/common/util/Strings;->zza:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -25,7 +25,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +33,7 @@
 .method public static emptyToNull(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 2
+    .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -49,10 +48,16 @@
 
 .method public static isEmptyOrWhitespace(Ljava/lang/String;)Z
     .locals 0
+    .annotation runtime Lorg/checkerframework/checker/nullness/qual/EnsuresNonNullIf;
+        expression = {
+            "#1"
+        }
+        result = false
+    .end annotation
 
     if-eqz p0, :cond_1
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p0

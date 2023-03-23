@@ -1,5 +1,6 @@
-.class public Lcom/google/android/gms/common/api/Api$BaseClientBuilder;
+.class public abstract Lcom/google/android/gms/common/api/Api$BaseClientBuilder;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -36,7 +37,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    .line 3
+    .line 1
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p1

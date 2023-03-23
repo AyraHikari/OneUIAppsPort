@@ -1002,8 +1002,6 @@
     if-eqz p1, :cond_1
 
     .line 94
-    iget-object p1, p0, Lcom/google/api/client/googleapis/auth/oauth2/DefaultCredentialProvider;->cachedCredential:Lcom/google/api/client/googleapis/auth/oauth2/GoogleCredential;
-
     monitor-exit p0
 
     return-object p1

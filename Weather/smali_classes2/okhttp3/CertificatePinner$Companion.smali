@@ -13,10 +13,6 @@
     name = "Companion"
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCertificatePinner.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CertificatePinner.kt\nokhttp3/CertificatePinner$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,370:1\n1#2:371\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -55,7 +51,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 345
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -64,7 +59,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 345
     invoke-direct {p0}, Lokhttp3/CertificatePinner$Companion;-><init>()V
 
     return-void
@@ -74,19 +68,17 @@
 # virtual methods
 .method public final pin(Ljava/security/cert/Certificate;)Ljava/lang/String;
     .locals 2
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     const-string v0, "certificate"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 365
+    .line 1
     instance-of v0, p1, Ljava/security/cert/X509Certificate;
 
     if-eqz v0, :cond_0
 
-    .line 366
+    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -95,15 +87,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
-    move-object v1, p0
-
-    check-cast v1, Lokhttp3/CertificatePinner$Companion;
-
     check-cast p1, Ljava/security/cert/X509Certificate;
 
-    invoke-virtual {v1, p1}, Lokhttp3/CertificatePinner$Companion;->sha256Hash(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
+    invoke-virtual {p0, p1}, Lokhttp3/CertificatePinner$Companion;->sha256Hash(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
 
     move-result-object p1
 
@@ -113,15 +99,13 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 
-    .line 365
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -133,21 +117,16 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method public final sha1Hash(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
     .locals 7
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     const-string v0, "$this$sha1Hash"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 351
     sget-object v1, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
@@ -156,7 +135,7 @@
 
     const-string v0, "publicKey"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-interface {p1}, Ljava/security/PublicKey;->getEncoded()[B
 
@@ -164,7 +143,7 @@
 
     const-string p1, "publicKey.encoded"
 
-    invoke-static {v2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, p1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v3, 0x0
 
@@ -187,14 +166,11 @@
 
 .method public final sha256Hash(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
     .locals 7
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     const-string v0, "$this$sha256Hash"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 355
     sget-object v1, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
@@ -203,7 +179,7 @@
 
     const-string v0, "publicKey"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-interface {p1}, Ljava/security/PublicKey;->getEncoded()[B
 
@@ -211,7 +187,7 @@
 
     const-string p1, "publicKey.encoded"
 
-    invoke-static {v2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, p1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v3, 0x0
 

@@ -48,7 +48,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 16
 
     .line 69
     new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
@@ -64,116 +64,104 @@
     sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->AUTO_CLOSE_SOURCE:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     .line 85
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-instance v1, Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const-string v1, "ALLOW_COMMENTS"
+    const-string v4, "ALLOW_COMMENTS"
 
-    invoke-direct {v0, v1, v3, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v1, v4, v3, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_COMMENTS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v1, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_COMMENTS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     .line 96
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-instance v4, Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const-string v1, "ALLOW_UNQUOTED_FIELD_NAMES"
+    const-string v5, "ALLOW_UNQUOTED_FIELD_NAMES"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v4, v5, v6, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_UNQUOTED_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v4, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_UNQUOTED_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     .line 109
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-instance v5, Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const-string v1, "ALLOW_SINGLE_QUOTES"
+    const-string v7, "ALLOW_SINGLE_QUOTES"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v5, v7, v8, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_SINGLE_QUOTES:Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v5, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_SINGLE_QUOTES:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     .line 122
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-instance v7, Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const-string v1, "ALLOW_UNQUOTED_CONTROL_CHARS"
+    const-string v9, "ALLOW_UNQUOTED_CONTROL_CHARS"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v7, v9, v10, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_UNQUOTED_CONTROL_CHARS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v7, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_UNQUOTED_CONTROL_CHARS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     .line 133
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-instance v9, Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const-string v1, "ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER"
+    const-string v11, "ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v9, v11, v12, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER:Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v9, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     .line 145
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-instance v11, Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const-string v1, "ALLOW_NUMERIC_LEADING_ZEROS"
+    const-string v13, "ALLOW_NUMERIC_LEADING_ZEROS"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v11, v13, v14, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_NUMERIC_LEADING_ZEROS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v11, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_NUMERIC_LEADING_ZEROS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     .line 165
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-instance v13, Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const-string v1, "ALLOW_NON_NUMERIC_NUMBERS"
+    const-string v15, "ALLOW_NON_NUMERIC_NUMBERS"
 
-    const/4 v9, 0x7
+    const/4 v14, 0x7
 
-    invoke-direct {v0, v1, v9, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v13, v15, v14, v2}, Lcom/fasterxml/jackson/core/JsonParser$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_NON_NUMERIC_NUMBERS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v13, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_NON_NUMERIC_NUMBERS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
-    const/16 v1, 0x8
+    const/16 v15, 0x8
 
-    new-array v1, v1, [Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    new-array v15, v15, [Lcom/fasterxml/jackson/core/JsonParser$Feature;
+
+    aput-object v0, v15, v2
+
+    aput-object v1, v15, v3
+
+    aput-object v4, v15, v6
+
+    aput-object v5, v15, v8
+
+    aput-object v7, v15, v10
+
+    aput-object v9, v15, v12
+
+    const/4 v0, 0x6
+
+    aput-object v11, v15, v0
+
+    aput-object v13, v15, v14
 
     .line 53
-    sget-object v10, Lcom/fasterxml/jackson/core/JsonParser$Feature;->AUTO_CLOSE_SOURCE:Lcom/fasterxml/jackson/core/JsonParser$Feature;
-
-    aput-object v10, v1, v2
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_COMMENTS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_UNQUOTED_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonParser$Feature;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_SINGLE_QUOTES:Lcom/fasterxml/jackson/core/JsonParser$Feature;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_UNQUOTED_CONTROL_CHARS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER:Lcom/fasterxml/jackson/core/JsonParser$Feature;
-
-    aput-object v2, v1, v7
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$Feature;->ALLOW_NUMERIC_LEADING_ZEROS:Lcom/fasterxml/jackson/core/JsonParser$Feature;
-
-    aput-object v2, v1, v8
-
-    aput-object v0, v1, v9
-
-    sput-object v1, Lcom/fasterxml/jackson/core/JsonParser$Feature;->$VALUES:[Lcom/fasterxml/jackson/core/JsonParser$Feature;
+    sput-object v15, Lcom/fasterxml/jackson/core/JsonParser$Feature;->$VALUES:[Lcom/fasterxml/jackson/core/JsonParser$Feature;
 
     return-void
 .end method

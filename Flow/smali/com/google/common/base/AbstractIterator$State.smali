@@ -36,7 +36,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
     .line 37
     new-instance v0, Lcom/google/common/base/AbstractIterator$State;
@@ -49,56 +49,50 @@
 
     sput-object v0, Lcom/google/common/base/AbstractIterator$State;->READY:Lcom/google/common/base/AbstractIterator$State;
 
-    new-instance v0, Lcom/google/common/base/AbstractIterator$State;
+    new-instance v1, Lcom/google/common/base/AbstractIterator$State;
 
-    const-string v1, "NOT_READY"
+    const-string v3, "NOT_READY"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/google/common/base/AbstractIterator$State;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/google/common/base/AbstractIterator$State;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/common/base/AbstractIterator$State;->NOT_READY:Lcom/google/common/base/AbstractIterator$State;
+    sput-object v1, Lcom/google/common/base/AbstractIterator$State;->NOT_READY:Lcom/google/common/base/AbstractIterator$State;
 
-    new-instance v0, Lcom/google/common/base/AbstractIterator$State;
+    new-instance v3, Lcom/google/common/base/AbstractIterator$State;
 
-    const-string v1, "DONE"
+    const-string v5, "DONE"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/google/common/base/AbstractIterator$State;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/google/common/base/AbstractIterator$State;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/common/base/AbstractIterator$State;->DONE:Lcom/google/common/base/AbstractIterator$State;
+    sput-object v3, Lcom/google/common/base/AbstractIterator$State;->DONE:Lcom/google/common/base/AbstractIterator$State;
 
-    new-instance v0, Lcom/google/common/base/AbstractIterator$State;
+    new-instance v5, Lcom/google/common/base/AbstractIterator$State;
 
-    const-string v1, "FAILED"
+    const-string v7, "FAILED"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/google/common/base/AbstractIterator$State;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/google/common/base/AbstractIterator$State;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/common/base/AbstractIterator$State;->FAILED:Lcom/google/common/base/AbstractIterator$State;
+    sput-object v5, Lcom/google/common/base/AbstractIterator$State;->FAILED:Lcom/google/common/base/AbstractIterator$State;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Lcom/google/common/base/AbstractIterator$State;
+    new-array v7, v7, [Lcom/google/common/base/AbstractIterator$State;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 36
-    sget-object v6, Lcom/google/common/base/AbstractIterator$State;->READY:Lcom/google/common/base/AbstractIterator$State;
-
-    aput-object v6, v1, v2
-
-    sget-object v2, Lcom/google/common/base/AbstractIterator$State;->NOT_READY:Lcom/google/common/base/AbstractIterator$State;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/common/base/AbstractIterator$State;->DONE:Lcom/google/common/base/AbstractIterator$State;
-
-    aput-object v2, v1, v4
-
-    aput-object v0, v1, v5
-
-    sput-object v1, Lcom/google/common/base/AbstractIterator$State;->$VALUES:[Lcom/google/common/base/AbstractIterator$State;
+    sput-object v7, Lcom/google/common/base/AbstractIterator$State;->$VALUES:[Lcom/google/common/base/AbstractIterator$State;
 
     return-void
 .end method

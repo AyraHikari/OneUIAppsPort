@@ -29,6 +29,13 @@
 .field private mInitializedMenuBuilderReferences:Z
 
 .field private mMenuBuilderClass:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 .field private mMenuBuilderRemoveItemAtMethod:Ljava/lang/reflect/Method;
 
@@ -38,19 +45,29 @@
 # direct methods
 .method constructor <init>(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "callback",
+            "textView"
+        }
+    .end annotation
 
-    .line 547
+    .line 589
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 548
+    .line 590
     iput-object p1, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCallback:Landroid/view/ActionMode$Callback;
 
-    .line 549
+    .line 591
     iput-object p2, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mTextView:Landroid/widget/TextView;
 
     const/4 p1, 0x0
 
-    .line 550
+    .line 592
     iput-boolean p1, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mInitializedMenuBuilderReferences:Z
 
     return-void
@@ -59,7 +76,7 @@
 .method private createProcessTextIntent()Landroid/content/Intent;
     .locals 2
 
-    .line 669
+    .line 716
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
@@ -81,13 +98,23 @@
 
 .method private createProcessTextIntentForResolveInfo(Landroid/content/pm/ResolveInfo;Landroid/widget/TextView;)Landroid/content/Intent;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "info",
+            "textView11"
+        }
+    .end annotation
 
-    .line 657
+    .line 704
     invoke-direct {p0}, Landroidx/core/widget/TextViewCompat$OreoCallback;->createProcessTextIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 658
+    .line 705
     invoke-direct {p0, p2}, Landroidx/core/widget/TextViewCompat$OreoCallback;->isEditable(Landroid/widget/TextView;)Z
 
     move-result p2
@@ -108,7 +135,7 @@
 
     iget-object p1, p1, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    .line 659
+    .line 706
     invoke-virtual {p2, v0, p1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p1
@@ -118,6 +145,17 @@
 
 .method private getSupportedActivities(Landroid/content/Context;Landroid/content/pm/PackageManager;)Ljava/util/List;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "context",
+            "packageManager"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -130,19 +168,19 @@
         }
     .end annotation
 
-    .line 628
+    .line 675
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 629
+    .line 676
     instance-of v1, p1, Landroid/app/Activity;
 
     if-nez v1, :cond_0
 
     return-object v0
 
-    .line 634
+    .line 681
     :cond_0
     invoke-direct {p0}, Landroidx/core/widget/TextViewCompat$OreoCallback;->createProcessTextIntent()Landroid/content/Intent;
 
@@ -154,7 +192,7 @@
 
     move-result-object p2
 
-    .line 635
+    .line 682
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -173,14 +211,14 @@
 
     check-cast v1, Landroid/content/pm/ResolveInfo;
 
-    .line 636
+    .line 683
     invoke-direct {p0, v1, p1}, Landroidx/core/widget/TextViewCompat$OreoCallback;->isSupportedActivity(Landroid/content/pm/ResolveInfo;Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 637
+    .line 684
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -191,20 +229,28 @@
 
 .method private isEditable(Landroid/widget/TextView;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "textView11"
+        }
+    .end annotation
 
-    .line 663
+    .line 710
     instance-of v0, p1, Landroid/text/Editable;
 
     if-eqz v0, :cond_0
 
-    .line 664
+    .line 711
     invoke-virtual {p1}, Landroid/widget/TextView;->onCheckIsTextEditor()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 665
+    .line 712
     invoke-virtual {p1}, Landroid/widget/TextView;->isEnabled()Z
 
     move-result p1
@@ -224,8 +270,18 @@
 
 .method private isSupportedActivity(Landroid/content/pm/ResolveInfo;Landroid/content/Context;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "info",
+            "context"
+        }
+    .end annotation
 
-    .line 644
+    .line 691
     invoke-virtual {p2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
@@ -244,7 +300,7 @@
 
     return v1
 
-    .line 647
+    .line 694
     :cond_0
     iget-object v0, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -256,7 +312,7 @@
 
     return v2
 
-    .line 650
+    .line 697
     :cond_1
     iget-object v0, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -268,7 +324,7 @@
 
     iget-object p1, p1, Landroid/content/pm/ActivityInfo;->permission:Ljava/lang/String;
 
-    .line 651
+    .line 698
     invoke-virtual {p2, p1}, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
 
     move-result p1
@@ -287,20 +343,28 @@
 
 .method private recomputeProcessTextMenuItems(Landroid/view/Menu;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "menu"
+        }
+    .end annotation
 
-    .line 575
+    .line 622
     iget-object v0, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mTextView:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 576
+    .line 623
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
-    .line 578
+    .line 625
     iget-boolean v2, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mInitializedMenuBuilderReferences:Z
 
     const-string v3, "removeItemAt"
@@ -311,13 +375,13 @@
 
     if-nez v2, :cond_0
 
-    .line 579
+    .line 626
     iput-boolean v5, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mInitializedMenuBuilderReferences:Z
 
     :try_start_0
     const-string v2, "com.android.internal.view.menu.MenuBuilder"
 
-    .line 582
+    .line 629
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v2
@@ -326,19 +390,19 @@
 
     new-array v6, v5, [Ljava/lang/Class;
 
-    .line 583
+    .line 630
     sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     aput-object v7, v6, v4
 
-    .line 584
+    .line 631
     invoke-virtual {v2, v3, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
 
     iput-object v2, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mMenuBuilderRemoveItemAtMethod:Ljava/lang/reflect/Method;
 
-    .line 585
+    .line 632
     iput-boolean v5, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCanUseMenuBuilderReferences:Z
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -349,16 +413,16 @@
     :catch_0
     const/4 v2, 0x0
 
-    .line 587
+    .line 634
     iput-object v2, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mMenuBuilderClass:Ljava/lang/Class;
 
-    .line 588
+    .line 635
     iput-object v2, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mMenuBuilderRemoveItemAtMethod:Ljava/lang/reflect/Method;
 
-    .line 589
+    .line 636
     iput-boolean v4, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCanUseMenuBuilderReferences:Z
 
-    .line 594
+    .line 642
     :cond_0
     :goto_0
     :try_start_1
@@ -368,18 +432,18 @@
 
     iget-object v2, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mMenuBuilderClass:Ljava/lang/Class;
 
-    .line 595
     invoke-virtual {v2, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
+    .line 643
     iget-object v2, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mMenuBuilderRemoveItemAtMethod:Ljava/lang/reflect/Method;
 
     goto :goto_1
 
-    .line 597
+    .line 644
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -391,12 +455,12 @@
 
     aput-object v7, v6, v4
 
-    .line 598
+    .line 645
     invoke-virtual {v2, v3, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
 
-    .line 599
+    .line 646
     :goto_1
     invoke-interface {p1}, Landroid/view/Menu;->size()I
 
@@ -407,12 +471,12 @@
     :goto_2
     if-ltz v3, :cond_3
 
-    .line 600
+    .line 647
     invoke-interface {p1, v3}, Landroid/view/Menu;->getItem(I)Landroid/view/MenuItem;
 
     move-result-object v6
 
-    .line 601
+    .line 648
     invoke-interface {v6}, Landroid/view/MenuItem;->getIntent()Landroid/content/Intent;
 
     move-result-object v7
@@ -421,7 +485,7 @@
 
     const-string v7, "android.intent.action.PROCESS_TEXT"
 
-    .line 602
+    .line 649
     invoke-interface {v6}, Landroid/view/MenuItem;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
@@ -438,7 +502,7 @@
 
     new-array v6, v5, [Ljava/lang/Object;
 
-    .line 603
+    .line 650
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
@@ -456,7 +520,7 @@
 
     goto :goto_2
 
-    .line 615
+    .line 662
     :cond_3
     invoke-direct {p0, v0, v1}, Landroidx/core/widget/TextViewCompat$OreoCallback;->getSupportedActivities(Landroid/content/Context;Landroid/content/pm/PackageManager;)Ljava/util/List;
 
@@ -464,7 +528,7 @@
 
     move v2, v4
 
-    .line 616
+    .line 663
     :goto_3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -472,7 +536,7 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 617
+    .line 664
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -481,19 +545,19 @@
 
     add-int/lit8 v6, v2, 0x64
 
-    .line 620
+    .line 667
     invoke-virtual {v3, v1}, Landroid/content/pm/ResolveInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v7
 
-    .line 618
+    .line 665
     invoke-interface {p1, v4, v4, v6, v7}, Landroid/view/Menu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
     move-result-object v6
 
     iget-object v7, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mTextView:Landroid/widget/TextView;
 
-    .line 621
+    .line 668
     invoke-direct {p0, v3, v7}, Landroidx/core/widget/TextViewCompat$OreoCallback;->createProcessTextIntentForResolveInfo(Landroid/content/pm/ResolveInfo;Landroid/widget/TextView;)Landroid/content/Intent;
 
     move-result-object v3
@@ -502,7 +566,7 @@
 
     move-result-object v3
 
-    .line 622
+    .line 669
     invoke-interface {v3, v5}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
     add-int/lit8 v2, v2, 0x1
@@ -516,10 +580,29 @@
 
 
 # virtual methods
-.method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
+.method getWrappedCallback()Landroid/view/ActionMode$Callback;
     .locals 1
 
-    .line 566
+    .line 618
+    iget-object v0, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCallback:Landroid/view/ActionMode$Callback;
+
+    return-object v0
+.end method
+
+.method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "item"
+        }
+    .end annotation
+
+    .line 608
     iget-object v0, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCallback:Landroid/view/ActionMode$Callback;
 
     invoke-interface {v0, p1, p2}, Landroid/view/ActionMode$Callback;->onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
@@ -531,8 +614,18 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "menu"
+        }
+    .end annotation
 
-    .line 555
+    .line 597
     iget-object v0, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCallback:Landroid/view/ActionMode$Callback;
 
     invoke-interface {v0, p1, p2}, Landroid/view/ActionMode$Callback;->onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
@@ -544,8 +637,16 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
-    .line 571
+    .line 613
     iget-object v0, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCallback:Landroid/view/ActionMode$Callback;
 
     invoke-interface {v0, p1}, Landroid/view/ActionMode$Callback;->onDestroyActionMode(Landroid/view/ActionMode;)V
@@ -555,11 +656,21 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "menu"
+        }
+    .end annotation
 
-    .line 560
+    .line 602
     invoke-direct {p0, p2}, Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
 
-    .line 561
+    .line 603
     iget-object v0, p0, Landroidx/core/widget/TextViewCompat$OreoCallback;->mCallback:Landroid/view/ActionMode$Callback;
 
     invoke-interface {v0, p1, p2}, Landroid/view/ActionMode$Callback;->onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z

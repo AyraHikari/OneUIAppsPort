@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Skráðu og stjórnaðu allt að %d tölvum eða spjaldtölvum í Samsung Flow.
-
-Aðeins ein tölva eða spjaldtölva getur verið tengd við símann þinn í einu. Þú þarft að velja aðra hvora þegar báðar skráðu tölvurnar eða spjaldtölvurnar reyna að tengjast símanum."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Skráðu og stjórnaðu allt að %d tölvu eða spjaldtölvu í Samsung Flow.
-
-Aðeins ein tölva eða spjaldtölva getur verið tengd við símann þinn í einu. Þú þarft að velja aðra hvora þegar báðar skráðu tölvurnar eða spjaldtölvurnar reyna að tengjast símanum."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

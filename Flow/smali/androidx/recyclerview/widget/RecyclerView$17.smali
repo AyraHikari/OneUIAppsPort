@@ -1,14 +1,11 @@
 .class Landroidx/recyclerview/widget/RecyclerView$17;
-.super Ljava/lang/Object;
+.super Landroidx/recyclerview/widget/LinearSmoothScroller;
 .source "RecyclerView.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/recyclerview/widget/RecyclerView;->pageScroll(I)Z
+    value = Landroidx/recyclerview/widget/RecyclerView;->seslSnapScrollToPosition(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,38 +17,56 @@
 # instance fields
 .field final synthetic this$0:Landroidx/recyclerview/widget/RecyclerView;
 
+.field final synthetic val$scrollDuration:F
+
 
 # direct methods
-.method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
+.method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;Landroid/content/Context;F)V
     .locals 0
 
-    .line 15739
+    .line 15892
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$17;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p3, p0, Landroidx/recyclerview/widget/RecyclerView$17;->val$scrollDuration:F
+
+    invoke-direct {p0, p2}, Landroidx/recyclerview/widget/LinearSmoothScroller;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method protected calculateSpeedPerPixel(Landroid/util/DisplayMetrics;)F
+    .locals 1
 
-    .line 15742
+    .line 15904
+    iget p1, p0, Landroidx/recyclerview/widget/RecyclerView$17;->val$scrollDuration:F
+
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$17;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->computeHorizontalScrollRange()I
 
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->getChildAt(I)Landroid/view/View;
+    move-result v0
 
-    move-result-object v0
+    int-to-float v0, v0
 
-    if-eqz v0, :cond_0
+    div-float/2addr p1, v0
 
-    .line 15744
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    return p1
+.end method
 
-    :cond_0
-    return-void
+.method protected getHorizontalSnapPreference()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method protected getVerticalSnapPreference()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
 .end method

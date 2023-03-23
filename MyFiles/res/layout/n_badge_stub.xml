@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/n_badge" android:background="@drawable/tw_noti_badge_mtrl" android:layout_width="@dimen/app_update_new_badge_size" android:layout_height="@dimen/app_update_new_badge_size" android:layout_marginEnd="@dimen/app_update_new_badge_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/app_update_new_badge_text_size" android:textColor="@color/overlay_icon_tint_color" android:gravity="center" android:id="@id/n_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_badge" style="@style/RobotoMedium" />
+</LinearLayout>

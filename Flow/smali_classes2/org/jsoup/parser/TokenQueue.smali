@@ -54,12 +54,12 @@
 .method public static unescape(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
-    .line 292
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 305
+    invoke-static {}, Lorg/jsoup/internal/StringUtil;->borrowBuilder()Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    .line 294
+    .line 307
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object p0
@@ -83,12 +83,12 @@
 
     if-ne v3, v5, :cond_1
 
-    .line 297
+    .line 310
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 300
+    .line 313
     :cond_0
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -100,9 +100,9 @@
 
     goto :goto_0
 
-    .line 303
+    .line 316
     :cond_2
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v0}, Lorg/jsoup/internal/StringUtil;->releaseBuilder(Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -134,17 +134,21 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
+    move-result-object p1
+
+    iget-object v0, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
 
     iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -179,7 +183,7 @@
 .end method
 
 .method public chompBalanced(CC)Ljava/lang/String;
-    .locals 7
+    .locals 9
 
     const/4 v0, 0x0
 
@@ -187,106 +191,147 @@
 
     move v2, v0
 
-    move v3, v1
+    move v3, v2
 
     move v4, v3
 
-    .line 267
+    move v5, v1
+
+    move v6, v5
+
+    .line 269
     :cond_0
     invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->isEmpty()Z
 
-    move-result v5
+    move-result v7
 
-    if-eqz v5, :cond_1
+    if-eqz v7, :cond_1
 
-    goto :goto_1
+    goto :goto_3
 
-    .line 268
+    .line 270
     :cond_1
     invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->consume()C
 
-    move-result v5
-
-    invoke-static {v5}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
-
-    move-result-object v5
+    move-result v7
 
     if-eqz v0, :cond_2
 
-    const/16 v6, 0x5c
+    const/16 v8, 0x5c
 
-    if-eq v0, v6, :cond_4
+    if-eq v0, v8, :cond_7
 
-    .line 270
     :cond_2
-    invoke-static {p1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    const/16 v8, 0x27
 
-    move-result-object v6
+    if-ne v7, v8, :cond_3
 
-    invoke-virtual {v5, v6}, Ljava/lang/Character;->equals(Ljava/lang/Object;)Z
+    if-eq v7, p1, :cond_3
 
-    move-result v6
+    if-nez v2, :cond_3
 
-    if-eqz v6, :cond_3
-
-    add-int/lit8 v2, v2, 0x1
-
-    if-ne v3, v1, :cond_4
-
-    .line 273
-    iget v3, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
+    xor-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 275
     :cond_3
-    invoke-static {p2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    const/16 v8, 0x22
 
-    move-result-object v6
+    if-ne v7, v8, :cond_4
 
-    invoke-virtual {v5, v6}, Ljava/lang/Character;->equals(Ljava/lang/Object;)Z
+    if-eq v7, p1, :cond_4
 
-    move-result v6
+    if-nez v3, :cond_4
 
-    if-eqz v6, :cond_4
-
-    add-int/lit8 v2, v2, -0x1
+    xor-int/lit8 v2, v2, 0x1
 
     :cond_4
     :goto_0
-    if-lez v2, :cond_5
+    if-nez v3, :cond_9
 
-    if-eqz v0, :cond_5
-
-    .line 280
-    iget v0, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
-
-    move v4, v0
-
-    .line 281
-    :cond_5
-    invoke-virtual {v5}, Ljava/lang/Character;->charValue()C
-
-    move-result v0
-
-    if-gtz v2, :cond_0
-
-    :goto_1
-    if-ltz v4, :cond_6
-
-    .line 283
-    iget-object p1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
-
-    invoke-virtual {p1, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object p1
+    if-eqz v2, :cond_5
 
     goto :goto_2
 
+    :cond_5
+    if-ne v7, p1, :cond_6
+
+    add-int/lit8 v4, v4, 0x1
+
+    if-ne v5, v1, :cond_7
+
+    .line 282
+    iget v5, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
+
+    goto :goto_1
+
     :cond_6
+    if-ne v7, p2, :cond_7
+
+    add-int/lit8 v4, v4, -0x1
+
+    :cond_7
+    :goto_1
+    if-lez v4, :cond_8
+
+    if-eqz v0, :cond_8
+
+    .line 289
+    iget v6, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
+
+    :cond_8
+    move v0, v7
+
+    :cond_9
+    :goto_2
+    if-gtz v4, :cond_0
+
+    :goto_3
+    if-ltz v6, :cond_a
+
+    .line 292
+    iget-object p1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
+
+    invoke-virtual {p1, v5, v6}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_4
+
+    :cond_a
     const-string p1, ""
 
-    :goto_2
+    :goto_4
+    if-lez v4, :cond_b
+
+    .line 294
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "Did not find balanced marker at \'"
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    const-string v0, "\'"
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p2}, Lorg/jsoup/helper/Validate;->fail(Ljava/lang/String;)V
+
+    :cond_b
     return-object p1
 .end method
 
@@ -392,10 +437,10 @@
 .method public consumeAttributeKey()Ljava/lang/String;
     .locals 3
 
-    .line 374
+    .line 387
     iget v0, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
 
-    .line 375
+    .line 388
     :goto_0
     invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->isEmpty()Z
 
@@ -421,7 +466,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 376
+    .line 389
     :cond_0
     iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
 
@@ -431,7 +476,7 @@
 
     goto :goto_0
 
-    .line 378
+    .line 391
     :cond_1
     iget-object v1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
 
@@ -454,10 +499,10 @@
 .method public consumeCssIdentifier()Ljava/lang/String;
     .locals 3
 
-    .line 362
+    .line 375
     iget v0, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
 
-    .line 363
+    .line 376
     :goto_0
     invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->isEmpty()Z
 
@@ -478,6 +523,73 @@
     fill-array-data v1, :array_0
 
     invoke-virtual {p0, v1}, Lorg/jsoup/parser/TokenQueue;->matchesAny([C)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 377
+    :cond_0
+    iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
+
+    add-int/lit8 v1, v1, 0x1
+
+    iput v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
+
+    goto :goto_0
+
+    .line 379
+    :cond_1
+    iget-object v1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
+
+    iget v2, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
+
+    invoke-virtual {v1, v0, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+
+    :array_0
+    .array-data 2
+        0x2ds
+        0x5fs
+    .end array-data
+.end method
+
+.method public consumeElementSelector()Ljava/lang/String;
+    .locals 5
+
+    .line 362
+    iget v0, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
+
+    .line 363
+    :goto_0
+    invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->matchesWord()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "*|"
+
+    const-string/jumbo v2, "|"
+
+    const-string v3, "_"
+
+    const-string v4, "-"
+
+    filled-new-array {v1, v2, v3, v4}, [Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lorg/jsoup/parser/TokenQueue;->matchesAny([Ljava/lang/String;)Z
 
     move-result v1
 
@@ -504,15 +616,9 @@
     move-result-object v0
 
     return-object v0
-
-    :array_0
-    .array-data 2
-        0x2ds
-        0x5fs
-    .end array-data
 .end method
 
-.method public consumeElementSelector()Ljava/lang/String;
+.method public consumeTagName()Ljava/lang/String;
     .locals 3
 
     .line 349
@@ -555,68 +661,6 @@
     goto :goto_0
 
     .line 353
-    :cond_1
-    iget-object v1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
-
-    iget v2, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
-
-    invoke-virtual {v1, v0, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    :array_0
-    .array-data 2
-        0x7cs
-        0x5fs
-        0x2ds
-    .end array-data
-.end method
-
-.method public consumeTagName()Ljava/lang/String;
-    .locals 3
-
-    .line 336
-    iget v0, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
-
-    .line 337
-    :goto_0
-    invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->matchesWord()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const/4 v1, 0x3
-
-    new-array v1, v1, [C
-
-    fill-array-data v1, :array_0
-
-    invoke-virtual {p0, v1}, Lorg/jsoup/parser/TokenQueue;->matchesAny([C)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 338
-    :cond_0
-    iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
-
-    add-int/lit8 v1, v1, 0x1
-
-    iput v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
-
-    goto :goto_0
-
-    .line 340
     :cond_1
     iget-object v1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
 
@@ -848,7 +892,7 @@
 
     const/4 v1, 0x0
 
-    .line 312
+    .line 325
     :goto_0
     invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->matchesWhitespace()Z
 
@@ -856,7 +900,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 313
+    .line 326
     iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
 
     add-int/2addr v1, v0
@@ -874,10 +918,10 @@
 .method public consumeWord()Ljava/lang/String;
     .locals 3
 
-    .line 324
+    .line 337
     iget v0, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
 
-    .line 325
+    .line 338
     :goto_0
     invoke-virtual {p0}, Lorg/jsoup/parser/TokenQueue;->matchesWord()Z
 
@@ -885,7 +929,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 326
+    .line 339
     iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
 
     add-int/lit8 v1, v1, 0x1
@@ -894,7 +938,7 @@
 
     goto :goto_0
 
-    .line 327
+    .line 340
     :cond_0
     iget-object v1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
 
@@ -1152,7 +1196,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lorg/jsoup/helper/StringUtil;->isWhitespace(I)Z
+    invoke-static {v0}, Lorg/jsoup/internal/StringUtil;->isWhitespace(I)Z
 
     move-result v0
 
@@ -1234,7 +1278,7 @@
 .method public remainder()Ljava/lang/String;
     .locals 3
 
-    .line 386
+    .line 399
     iget-object v0, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
 
     iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I
@@ -1247,7 +1291,7 @@
 
     move-result-object v0
 
-    .line 387
+    .line 400
     iget-object v1, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -1262,7 +1306,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 393
+    .line 406
     iget-object v0, p0, Lorg/jsoup/parser/TokenQueue;->queue:Ljava/lang/String;
 
     iget v1, p0, Lorg/jsoup/parser/TokenQueue;->pos:I

@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Daxil olun</string>
     <string name="common_signin_button_text_long">Google ilə daxil olun</string>
     <string name="copy">Kopyalayın</string>
-    <string name="copy_toast_msg">Link buferə kopyalandı</string>
     <string name="error_icon_content_description">Xəta</string>
-    <string name="expand_button_title">Qabaqcıl ayarlar</string>
+    <string name="expand_button_title">Əlavə</string>
     <string name="exposed_dropdown_menu_content_description">Açılan menyunu göstərin</string>
-    <string name="fallback_menu_item_copy_link">Linki kopyalayın</string>
-    <string name="fallback_menu_item_open_in_browser">Brauzerdə açın</string>
-    <string name="fallback_menu_item_share_link">Linki paylaşın</string>
     <string name="icon_content_description">Dialoq ikonası</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Gündüz və ya axşam seçin</string>

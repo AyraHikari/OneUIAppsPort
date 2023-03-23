@@ -1,161 +1,142 @@
 .class final Lcom/google/android/gms/internal/icing/zzfl;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/google/android/gms/internal/icing/zzev;
-
-
-# instance fields
-.field private final flags:I
-
-.field private final info:Ljava/lang/String;
-
-.field private final zzme:Lcom/google/android/gms/internal/icing/zzex;
-
-.field private final zzml:[Ljava/lang/Object;
+.super Lcom/google/android/gms/internal/icing/zzfm;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/internal/icing/zzex;Ljava/lang/String;[Ljava/lang/Object;)V
-    .locals 3
+.method constructor <init>(Lsun/misc/Unsafe;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzfl;->zzme:Lcom/google/android/gms/internal/icing/zzex;
-
-    .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/icing/zzfl;->info:Ljava/lang/String;
-
-    .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/icing/zzfl;->zzml:[Ljava/lang/Object;
-
-    const/4 p1, 0x0
-
-    .line 6
-    invoke-virtual {p2, p1}, Ljava/lang/String;->charAt(I)C
-
-    move-result p1
-
-    const p3, 0xd800
-
-    if-ge p1, p3, :cond_0
-
-    .line 8
-    iput p1, p0, Lcom/google/android/gms/internal/icing/zzfl;->flags:I
-
-    return-void
-
-    :cond_0
-    and-int/lit16 p1, p1, 0x1fff
-
-    const/16 v0, 0xd
-
-    const/4 v1, 0x1
-
-    :goto_0
-    add-int/lit8 v2, v1, 0x1
-
-    .line 11
-    invoke-virtual {p2, v1}, Ljava/lang/String;->charAt(I)C
-
-    move-result v1
-
-    if-lt v1, p3, :cond_1
-
-    and-int/lit16 v1, v1, 0x1fff
-
-    shl-int/2addr v1, v0
-
-    or-int/2addr p1, v1
-
-    add-int/lit8 v0, v0, 0xd
-
-    move v1, v2
-
-    goto :goto_0
-
-    :cond_1
-    shl-int p2, v1, v0
-
-    or-int/2addr p1, p2
-
-    .line 14
-    iput p1, p0, Lcom/google/android/gms/internal/icing/zzfl;->flags:I
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/icing/zzfm;-><init>(Lsun/misc/Unsafe;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final zzco()I
-    .locals 2
+.method public final zza(Ljava/lang/Object;JB)V
+    .locals 1
 
-    .line 19
-    iget v0, p0, Lcom/google/android/gms/internal/icing/zzfl;->flags:I
+    .line 1
+    sget-boolean v0, Lcom/google/android/gms/internal/icing/zzfn;->zzb:Z
 
-    const/4 v1, 0x1
+    if-eqz v0, :cond_0
 
-    and-int/2addr v0, v1
+    .line 2
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzt(Ljava/lang/Object;JB)V
 
-    if-ne v0, v1, :cond_0
+    return-void
 
-    sget v0, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzki:I
-
-    return v0
-
+    .line 3
     :cond_0
-    sget v0, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzkj:I
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzu(Ljava/lang/Object;JB)V
 
-    return v0
+    return-void
 .end method
 
-.method public final zzcp()Z
-    .locals 2
+.method public final zzb(Ljava/lang/Object;J)Z
+    .locals 1
 
-    .line 20
-    iget v0, p0, Lcom/google/android/gms/internal/icing/zzfl;->flags:I
+    .line 1
+    sget-boolean v0, Lcom/google/android/gms/internal/icing/zzfn;->zzb:Z
 
-    const/4 v1, 0x2
+    if-eqz v0, :cond_0
 
-    and-int/2addr v0, v1
+    .line 2
+    invoke-static {p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfn;->zzv(Ljava/lang/Object;J)Z
 
-    if-ne v0, v1, :cond_0
+    move-result p1
 
-    const/4 v0, 0x1
+    return p1
 
-    return v0
-
+    .line 3
     :cond_0
-    const/4 v0, 0x0
+    invoke-static {p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfn;->zzw(Ljava/lang/Object;J)Z
 
-    return v0
+    move-result p1
+
+    return p1
 .end method
 
-.method public final zzcq()Lcom/google/android/gms/internal/icing/zzex;
+.method public final zzc(Ljava/lang/Object;JZ)V
     .locals 1
 
-    .line 18
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfl;->zzme:Lcom/google/android/gms/internal/icing/zzex;
+    .line 1
+    sget-boolean v0, Lcom/google/android/gms/internal/icing/zzfn;->zzb:Z
 
-    return-object v0
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzx(Ljava/lang/Object;JZ)V
+
+    return-void
+
+    .line 3
+    :cond_0
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzy(Ljava/lang/Object;JZ)V
+
+    return-void
 .end method
 
-.method final zzcx()Ljava/lang/String;
-    .locals 1
+.method public final zzd(Ljava/lang/Object;J)F
+    .locals 0
 
-    .line 16
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfl;->info:Ljava/lang/String;
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfm;->zzk(Ljava/lang/Object;J)I
 
-    return-object v0
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p1
+
+    return p1
 .end method
 
-.method final zzcy()[Ljava/lang/Object;
-    .locals 1
+.method public final zze(Ljava/lang/Object;JF)V
+    .locals 0
 
-    .line 17
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfl;->zzml:[Ljava/lang/Object;
+    .line 1
+    invoke-static {p4}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    return-object v0
+    move-result p4
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfm;->zzl(Ljava/lang/Object;JI)V
+
+    return-void
+.end method
+
+.method public final zzf(Ljava/lang/Object;J)D
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfm;->zzm(Ljava/lang/Object;J)J
+
+    move-result-wide p1
+
+    invoke-static {p1, p2}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public final zzg(Ljava/lang/Object;JD)V
+    .locals 6
+
+    .line 1
+    invoke-static {p4, p5}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    move-result-wide v4
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-wide v2, p2
+
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/gms/internal/icing/zzfm;->zzn(Ljava/lang/Object;JJ)V
+
+    return-void
 .end method

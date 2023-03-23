@@ -26,8 +26,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1337
+    .line 1441
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$18;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,40 +45,54 @@
 
 .method private switchCoordinates([I[I[II)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "x",
+            "y",
+            "index"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 1339
+    .line 1443
     aget v1, p1, v0
 
-    .line 1340
+    .line 1444
     aget v2, p2, v0
 
-    .line 1341
+    .line 1445
     aget v3, p3, v0
 
-    .line 1342
+    .line 1446
     aget v4, p1, p4
 
     aput v4, p1, v0
 
-    .line 1343
+    .line 1447
     aget v4, p2, p4
 
     aput v4, p2, v0
 
-    .line 1344
+    .line 1448
     aget v4, p3, p4
 
     aput v4, p3, v0
 
-    .line 1345
+    .line 1449
     aput v1, p1, p4
 
-    .line 1346
+    .line 1450
     aput v2, p2, p4
 
-    .line 1347
+    .line 1451
     aput v3, p3, p4
 
     return-void
@@ -80,13 +102,23 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "event"
+        }
+    .end annotation
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
 
-    .line 1355
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 1459
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x17
 
@@ -100,10 +132,10 @@
 
     if-nez v2, :cond_0
 
-    .line 1356
+    .line 1460
     iget-object v2, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$18;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Z
 
     move-result v2
 
@@ -117,40 +149,40 @@
 
     if-eqz v2, :cond_0
 
-    .line 1357
+    .line 1461
     iget-object v2, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$18;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$900(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)V
 
-    .line 1361
+    .line 1465
     :cond_0
     iget-object v2, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$18;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->hideFavoriteAppList()V
 
-    .line 1363
+    .line 1467
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v4
 
-    .line 1364
+    .line 1468
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v5
 
-    .line 1366
+    .line 1470
     new-array v8, v5, [I
 
-    .line 1367
+    .line 1471
     new-array v7, v5, [I
 
-    .line 1368
+    .line 1472
     new-array v6, v5, [I
 
-    .line 1369
+    .line 1473
     new-array v9, v5, [I
 
-    .line 1370
+    .line 1474
     new-array v10, v5, [F
 
     const/4 v2, 0x0
@@ -162,10 +194,10 @@
 
     if-ge v3, v5, :cond_3
 
-    .line 1375
+    .line 1479
     iget-object v13, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$18;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v13}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v13}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v13
 
@@ -187,7 +219,7 @@
 
     move-result-object v11
 
-    .line 1377
+    .line 1481
     invoke-virtual {v11}, Lcom/samsung/android/galaxycontinuity/data/MousePoint;->getX()D
 
     move-result-wide v13
@@ -196,7 +228,7 @@
 
     aput v13, v7, v3
 
-    .line 1378
+    .line 1482
     invoke-virtual {v11}, Lcom/samsung/android/galaxycontinuity/data/MousePoint;->getY()D
 
     move-result-wide v13
@@ -205,21 +237,21 @@
 
     aput v11, v8, v3
 
-    .line 1380
+    .line 1484
     invoke-virtual {v1, v3}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v11
 
     aput v11, v6, v3
 
-    .line 1381
+    .line 1485
     invoke-virtual {v1, v3}, Landroid/view/MotionEvent;->getToolType(I)I
 
     move-result v11
 
     aput v11, v9, v3
 
-    .line 1382
+    .line 1486
     aget v11, v9, v3
 
     const/4 v13, 0x3
@@ -240,7 +272,7 @@
 
     return v2
 
-    .line 1386
+    .line 1490
     :cond_1
     aget v11, v9, v3
 
@@ -248,7 +280,7 @@
 
     if-ne v11, v13, :cond_2
 
-    .line 1387
+    .line 1491
     invoke-virtual {v1, v3}, Landroid/view/MotionEvent;->getPressure(I)F
 
     move-result v11
@@ -277,7 +309,7 @@
 
     goto :goto_1
 
-    .line 1406
+    .line 1510
     :cond_4
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionIndex()I
 
@@ -287,7 +319,7 @@
 
     goto :goto_1
 
-    .line 1400
+    .line 1504
     :cond_5
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionIndex()I
 
@@ -297,7 +329,7 @@
 
     goto :goto_1
 
-    .line 1395
+    .line 1499
     :cond_6
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getEventTime()J
 
@@ -315,7 +347,7 @@
 
     return v12
 
-    .line 1397
+    .line 1501
     :cond_7
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getEventTime()J
 
@@ -328,14 +360,14 @@
     :cond_8
     const-wide/16 v1, 0x0
 
-    .line 1403
+    .line 1507
     iput-wide v1, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$18;->lastEventTime:J
 
-    .line 1414
+    .line 1518
     :goto_1
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$18;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;
 
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$200(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;->access$300(Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     move-result-object v3
 

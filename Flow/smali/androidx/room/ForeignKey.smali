@@ -25,6 +25,10 @@
     value = .enum Ljava/lang/annotation/RetentionPolicy;->CLASS:Ljava/lang/annotation/RetentionPolicy;
 .end annotation
 
+.annotation runtime Ljava/lang/annotation/Target;
+    value = {}
+.end annotation
+
 
 # static fields
 .field public static final CASCADE:I = 0x5

@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/common/api/zza;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -20,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,10 +28,10 @@
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 6
 
-    .line 7
+    .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
 
     move-result v0
@@ -40,7 +40,7 @@
 
     const/4 v2, 0x0
 
-    .line 10
+    .line 2
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
@@ -48,12 +48,11 @@
 
     if-ge v3, v0, :cond_2
 
-    .line 11
+    .line 3
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
 
     move-result v3
 
-    .line 12
     invoke-static {v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
 
     move-result v4
@@ -66,12 +65,12 @@
 
     if-eq v4, v5, :cond_0
 
-    .line 19
+    .line 6
     invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
-    .line 17
+    .line 4
     :cond_0
     invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createString(Landroid/os/Parcel;I)Ljava/lang/String;
 
@@ -79,7 +78,7 @@
 
     goto :goto_0
 
-    .line 14
+    .line 5
     :cond_1
     invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
 
@@ -87,13 +86,13 @@
 
     goto :goto_0
 
-    .line 21
+    .line 7
     :cond_2
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
 
-    .line 22
     new-instance p1, Lcom/google/android/gms/common/api/Scope;
 
+    .line 8
     invoke-direct {p1, v1, v2}, Lcom/google/android/gms/common/api/Scope;-><init>(ILjava/lang/String;)V
 
     return-object p1
@@ -102,7 +101,7 @@
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 4
+    .line 1
     new-array p1, p1, [Lcom/google/android/gms/common/api/Scope;
 
     return-object p1

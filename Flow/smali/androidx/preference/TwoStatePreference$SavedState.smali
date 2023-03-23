@@ -34,7 +34,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 276
+    .line 283
     new-instance v0, Landroidx/preference/TwoStatePreference$SavedState$1;
 
     invoke-direct {v0}, Landroidx/preference/TwoStatePreference$SavedState$1;-><init>()V
@@ -47,10 +47,10 @@
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 292
+    .line 299
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 293
+    .line 300
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -73,7 +73,7 @@
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 297
+    .line 304
     invoke-direct {p0, p1}, Landroidx/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -84,10 +84,10 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 302
+    .line 309
     invoke-super {p0, p1, p2}, Landroidx/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 303
+    .line 310
     iget-boolean p2, p0, Landroidx/preference/TwoStatePreference$SavedState;->mChecked:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

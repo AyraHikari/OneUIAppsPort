@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/air_view_btn_background" />
+    <corners android:radius="@dimen/air_button_layout_background_corner" />
+</shape>

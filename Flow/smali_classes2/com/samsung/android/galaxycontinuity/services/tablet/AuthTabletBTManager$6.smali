@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1348
+    .line 1344
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/MessageDialogResultReceiver;-><init>()V
@@ -34,20 +42,30 @@
 # virtual methods
 .method public notifyResult(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result"
+        }
+    .end annotation
 
     const-string p2, "DeviceFull"
 
-    .line 1351
+    .line 1347
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 1352
+    .line 1348
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/activities/MessageDialogActivity;->removeResultReceiver(Lcom/samsung/android/galaxycontinuity/util/MessageDialogResultReceiver;)V
 
-    .line 1355
+    .line 1351
     :cond_0
     new-instance p1, Landroid/content/Intent;
 
@@ -59,10 +77,10 @@
 
     const-string v0, "RESULT"
 
-    .line 1356
+    .line 1352
     invoke-virtual {p1, v0, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1357
+    .line 1353
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p2
@@ -76,6 +94,18 @@
 
 .method public notifyResult(Ljava/lang/String;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result",
+            "checked"
+        }
+    .end annotation
 
     return-void
 .end method

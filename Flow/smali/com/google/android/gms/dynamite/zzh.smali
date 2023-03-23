@@ -1,70 +1,54 @@
 .class final Lcom/google/android/gms/dynamite/zzh;
-.super Ldalvik/system/PathClassLoader;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
+
+# interfaces
+.implements Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Ljava/lang/ClassLoader;)V
+.method constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ldalvik/system/PathClassLoader;-><init>(Ljava/lang/String;Ljava/lang/ClassLoader;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final loadClass(Ljava/lang/String;Z)Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Z)",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-
+.method public final selectModule(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$IVersions;)Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$SelectionResult;
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/ClassNotFoundException;
+            Lcom/google/android/gms/dynamite/DynamiteModule$LoadingException;
         }
     .end annotation
 
-    const-string v0, "java."
+    .line 1
+    new-instance v0, Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$SelectionResult;
 
-    .line 2
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-direct {v0}, Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$SelectionResult;-><init>()V
 
-    move-result v0
+    const/4 v1, 0x0
 
-    if-nez v0, :cond_0
+    invoke-interface {p3, p1, p2, v1}, Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$IVersions;->zzb(Landroid/content/Context;Ljava/lang/String;Z)I
 
-    const-string v0, "android."
+    move-result p1
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    iput p1, v0, Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$SelectionResult;->remoteVersion:I
 
-    move-result v0
+    if-nez p1, :cond_0
 
-    if-nez v0, :cond_0
+    iput v1, v0, Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$SelectionResult;->selection:I
 
-    .line 3
-    :try_start_0
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/dynamite/zzh;->findClass(Ljava/lang/String;)Ljava/lang/Class;
+    goto :goto_0
 
-    move-result-object p1
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p1
-
-    .line 5
-    :catch_0
     :cond_0
-    invoke-super {p0, p1, p2}, Ldalvik/system/PathClassLoader;->loadClass(Ljava/lang/String;Z)Ljava/lang/Class;
+    const/4 p1, 0x1
 
-    move-result-object p1
+    iput p1, v0, Lcom/google/android/gms/dynamite/DynamiteModule$VersionPolicy$SelectionResult;->selection:I
 
-    return-object p1
+    :goto_0
+    return-object v0
 .end method

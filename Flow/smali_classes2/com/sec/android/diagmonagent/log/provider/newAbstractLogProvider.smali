@@ -125,6 +125,18 @@
 # virtual methods
 .method public call(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "method",
+            "arg",
+            "extras"
+        }
+    .end annotation
 
     .line 226
     invoke-virtual {p0}, Lcom/sec/android/diagmonagent/log/provider/newAbstractLogProvider;->enforceSelfOrSystem()V
@@ -146,7 +158,7 @@
     return-object p1
 
     :cond_0
-    const-string v0, "set"
+    const-string/jumbo v0, "set"
 
     .line 232
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -245,6 +257,14 @@
 
 .method protected contains(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 359
     invoke-virtual {p0}, Lcom/sec/android/diagmonagent/log/provider/newAbstractLogProvider;->getDiagMonSharedPreferences()Landroid/content/SharedPreferences;
@@ -260,6 +280,18 @@
 
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "arg0",
+            "arg1",
+            "arg2"
+        }
+    .end annotation
 
     .line 274
     new-instance p1, Ljava/lang/RuntimeException;
@@ -279,6 +311,14 @@
 
 .method protected get(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 368
     invoke-virtual {p0}, Lcom/sec/android/diagmonagent/log/provider/newAbstractLogProvider;->getDiagMonSharedPreferences()Landroid/content/SharedPreferences;
@@ -380,17 +420,35 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 284
     invoke-virtual {p0}, Lcom/sec/android/diagmonagent/log/provider/newAbstractLogProvider;->enforceSelfOrSystem()V
 
-    const-string p1, "text/plain"
+    const-string/jumbo p1, "text/plain"
 
     return-object p1
 .end method
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "arg0",
+            "arg1"
+        }
+    .end annotation
 
     .line 294
     new-instance p1, Ljava/lang/RuntimeException;
@@ -404,6 +462,15 @@
 
 .method protected makeLogListBundle(Ljava/util/List;)Landroid/os/Bundle;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "logList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -525,6 +592,17 @@
 
 .method public openFile(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "mode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -618,6 +696,15 @@
 
 .method protected openParcelFileDescriptor(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -640,6 +727,22 @@
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "arg0",
+            "arg1",
+            "arg2",
+            "arg3",
+            "arg4"
+        }
+    .end annotation
 
     .line 303
     new-instance p1, Ljava/lang/RuntimeException;
@@ -653,6 +756,16 @@
 
 .method protected set(Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "extras"
+        }
+    .end annotation
 
     .line 336
     invoke-virtual {p0}, Lcom/sec/android/diagmonagent/log/provider/newAbstractLogProvider;->getDiagMonSharedPreferences()Landroid/content/SharedPreferences;
@@ -792,6 +905,20 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "arg0",
+            "arg1",
+            "arg2",
+            "arg3"
+        }
+    .end annotation
 
     .line 312
     new-instance p1, Ljava/lang/RuntimeException;

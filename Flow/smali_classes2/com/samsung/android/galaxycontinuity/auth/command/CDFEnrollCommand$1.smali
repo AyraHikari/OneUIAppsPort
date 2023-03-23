@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/auth/command/CDFEnrollCommand;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 171
+    .line 178
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFEnrollCommand$1;->this$0:Lcom/samsung/android/galaxycontinuity/auth/command/CDFEnrollCommand;
 
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/MessageDialogResultReceiver;-><init>()V
@@ -34,27 +42,37 @@
 # virtual methods
 .method public notifyResult(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result"
+        }
+    .end annotation
 
     const-string v0, "DeviceFull"
 
-    .line 174
+    .line 181
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 175
+    .line 182
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/activities/MessageDialogActivity;->removeResultReceiver(Lcom/samsung/android/galaxycontinuity/util/MessageDialogResultReceiver;)V
 
     if-nez p2, :cond_0
 
     const-string p1, "1054"
 
-    .line 178
+    .line 185
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;)V
 
-    .line 179
+    .line 186
     new-instance p1, Landroid/content/Intent;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -67,10 +85,10 @@
 
     const/high16 p2, 0x10000000
 
-    .line 180
+    .line 187
     invoke-virtual {p1, p2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 181
+    .line 188
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p2
@@ -83,6 +101,18 @@
 
 .method public notifyResult(Ljava/lang/String;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result",
+            "checked"
+        }
+    .end annotation
 
     return-void
 .end method

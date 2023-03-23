@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.sec.android.app.myfiles.content" version="1">
+    <defaultAnalyzer class="bs.LowerCaseSpaceAnalyzer" />
+    <fieldType name="string" class="StringField" dataType="String"/>
+    <fieldType name="long" class="LongPoint" dataType="long"/>
+    <fieldType name="float" class="FloatPoint" dataType="float"/>
+    <fieldType name="long_stored" class="StoredField" dataType="long"/>
+    <fieldType name="int" class="IntPoint" dataType="int"/>
+    <fieldType name="int_stored" class="StoredField" dataType="int"/>
+    <fieldType name="text" class="TextField" dataType="String"/>
+    <fieldType name="text_multi_value" class="TextField" dataType="MultiValuedString"/>
+    <fieldType name="long_sorted" class="NumericDocValuesField" dataType="long"/>
+    <fieldType name="sort" class="SortedDocValuesField" dataType="BytesRef"/>
+    <fieldType name="int_sort" class="NumericDocValuesField" dataType="int"/>
+
+    <field name="_id" type="int"/>
+    <field name="_data" type="string"/>
+    <field name="_display_name" type="string"/>
+    <field name="user_tag" type="string"/>
+    <field name="mime_type" type="string"/>
+    <field name="date_modified" type="long"/>
+    <field name="_size" type="long" />
+    <field name="file_type" type="int"/>
+    <field name="domain_type" type="int"/>
+</schema>
+

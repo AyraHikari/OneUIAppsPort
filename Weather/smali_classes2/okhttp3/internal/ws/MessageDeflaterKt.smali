@@ -36,10 +36,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    .line 26
     sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     const-string v1, "000000ffff"
@@ -56,7 +55,6 @@
 .method public static final synthetic access$getEMPTY_DEFLATE_BLOCK$p()Lokio/ByteString;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/internal/ws/MessageDeflaterKt;->EMPTY_DEFLATE_BLOCK:Lokio/ByteString;
 
     return-object v0

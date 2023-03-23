@@ -6,8 +6,8 @@
     <string name="abc_action_mode_done">Feito</string>
     <string name="abc_activity_chooser_view_see_all">Ver todo</string>
     <string name="abc_activitychooserview_choose_application">Selecciona unha aplicación</string>
-    <string name="abc_capital_off">DESACTIVAR</string>
-    <string name="abc_capital_on">ACTIVAR</string>
+    <string name="abc_capital_off">DESACTIVADO</string>
+    <string name="abc_capital_on">ACTIVADO</string>
     <string name="abc_menu_alt_shortcut_label">Alt +</string>
     <string name="abc_menu_ctrl_shortcut_label">Ctrl +</string>
     <string name="abc_menu_delete_shortcut_label">eliminar</string>
@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Iniciar sesión</string>
     <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
     <string name="copy">Copiar</string>
-    <string name="copy_toast_msg">Copiouse a ligazón no portapapeis</string>
     <string name="error_icon_content_description">Produciuse un erro</string>
     <string name="expand_button_title">Configuración avanzada</string>
     <string name="exposed_dropdown_menu_content_description">Mostra o menú despregable</string>
-    <string name="fallback_menu_item_copy_link">Copiar ligazón</string>
-    <string name="fallback_menu_item_open_in_browser">Abrir no navegador</string>
-    <string name="fallback_menu_item_share_link">Compartir ligazón</string>
     <string name="icon_content_description">Icona de cadro de diálogo</string>
     <string name="item_view_role_description">Pestana</string>
     <string name="material_clock_toggle_content_description">Seleccionar a.m. ou p.m.</string>

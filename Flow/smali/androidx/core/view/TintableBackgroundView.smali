@@ -11,7 +11,23 @@
 .end method
 
 .method public abstract setSupportBackgroundTintList(Landroid/content/res/ColorStateList;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tint"
+        }
+    .end annotation
 .end method
 
 .method public abstract setSupportBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tintMode"
+        }
+    .end annotation
 .end method

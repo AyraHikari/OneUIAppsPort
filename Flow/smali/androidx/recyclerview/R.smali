@@ -6,6 +6,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Landroidx/recyclerview/R$anim;,
+        Landroidx/recyclerview/R$animator;,
         Landroidx/recyclerview/R$attr;,
         Landroidx/recyclerview/R$bool;,
         Landroidx/recyclerview/R$color;,

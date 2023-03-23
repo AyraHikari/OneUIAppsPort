@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$app"
+        }
+    .end annotation
 
-    .line 262
+    .line 282
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;->val$app:Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
@@ -42,7 +52,7 @@
 .method public run()V
     .locals 3
 
-    .line 265
+    .line 285
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->access$000(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;)Ljava/util/ArrayList;
@@ -55,7 +65,7 @@
 
     move-result v0
 
-    .line 266
+    .line 286
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->access$000(Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;)Ljava/util/ArrayList;
@@ -66,14 +76,14 @@
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 268
+    .line 288
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mListener:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$OnAppListChangedListener;
 
     if-eqz v1, :cond_0
 
-    .line 269
+    .line 289
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->mListener:Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager$OnAppListChangedListener;

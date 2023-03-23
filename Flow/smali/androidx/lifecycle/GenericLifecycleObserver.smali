@@ -3,9 +3,9 @@
 .source "GenericLifecycleObserver.java"
 
 # interfaces
-.implements Landroidx/lifecycle/LifecycleObserver;
+.implements Landroidx/lifecycle/LifecycleEventObserver;
 
 
-# virtual methods
-.method public abstract onStateChanged(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
-.end method
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation

@@ -46,28 +46,26 @@
     sput-object v0, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;->CACHE:Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
 
     .line 134
-    new-instance v0, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
+    new-instance v1, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
 
-    const-string v1, "SOURCE"
+    const-string v3, "SOURCE"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;->SOURCE:Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
+    sput-object v1, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;->SOURCE:Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
+    new-array v3, v3, [Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 130
-    sget-object v4, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;->CACHE:Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;->$VALUES:[Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
+    sput-object v3, Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;->$VALUES:[Lcom/bumptech/glide/load/engine/EngineRunnable$Stage;
 
     return-void
 .end method

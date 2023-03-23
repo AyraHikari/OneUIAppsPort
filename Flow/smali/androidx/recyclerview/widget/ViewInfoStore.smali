@@ -17,10 +17,10 @@
 
 
 # instance fields
-.field final mLayoutHolderMap:Landroidx/collection/ArrayMap;
+.field final mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/ArrayMap<",
+            "Landroidx/collection/SimpleArrayMap<",
             "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;",
             "Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;",
             ">;"
@@ -43,17 +43,17 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 35
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 42
-    new-instance v0, Landroidx/collection/ArrayMap;
+    .line 43
+    new-instance v0, Landroidx/collection/SimpleArrayMap;
 
-    invoke-direct {v0}, Landroidx/collection/ArrayMap;-><init>()V
+    invoke-direct {v0}, Landroidx/collection/SimpleArrayMap;-><init>()V
 
-    iput-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    iput-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    .line 45
+    .line 47
     new-instance v0, Landroidx/collection/LongSparseArray;
 
     invoke-direct {v0}, Landroidx/collection/LongSparseArray;-><init>()V
@@ -66,10 +66,10 @@
 .method private popFromLayoutStep(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
     .locals 3
 
-    .line 99
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 101
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->indexOfKey(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfKey(Ljava/lang/Object;)I
 
     move-result p1
 
@@ -79,11 +79,11 @@
 
     return-object v0
 
-    .line 103
+    .line 105
     :cond_0
-    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v1, p1}, Landroidx/collection/ArrayMap;->valueAt(I)Ljava/lang/Object;
+    invoke-virtual {v1, p1}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -91,14 +91,14 @@
 
     if-eqz v1, :cond_4
 
-    .line 104
+    .line 106
     iget v2, v1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
     and-int/2addr v2, p2
 
     if-eqz v2, :cond_4
 
-    .line 105
+    .line 107
     iget v0, v1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
     not-int v2, p2
@@ -111,7 +111,7 @@
 
     if-ne p2, v0, :cond_1
 
-    .line 108
+    .line 110
     iget-object p2, v1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     goto :goto_0
@@ -121,10 +121,10 @@
 
     if-ne p2, v0, :cond_3
 
-    .line 110
+    .line 112
     iget-object p2, v1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->postInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
-    .line 115
+    .line 117
     :goto_0
     iget v0, v1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -132,18 +132,18 @@
 
     if-nez v0, :cond_2
 
-    .line 116
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 118
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->removeAt(I)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->removeAt(I)Ljava/lang/Object;
 
-    .line 117
+    .line 119
     invoke-static {v1}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->recycle(Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;)V
 
     :cond_2
     return-object p2
 
-    .line 112
+    .line 114
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -162,10 +162,10 @@
 .method addToAppearedInPreLayoutHolders(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;)V
     .locals 2
 
-    .line 143
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 145
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -173,17 +173,17 @@
 
     if-nez v0, :cond_0
 
-    .line 145
+    .line 147
     invoke-static {}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->obtain()Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;
 
     move-result-object v0
 
-    .line 146
-    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
-
-    invoke-virtual {v1, p1, v0}, Landroidx/collection/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 148
+    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
+
+    invoke-virtual {v1, p1, v0}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 150
     :cond_0
     iget p1, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -191,7 +191,7 @@
 
     iput p1, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
-    .line 149
+    .line 151
     iput-object p2, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     return-void
@@ -200,10 +200,10 @@
 .method addToDisappearedInLayout(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 2
 
-    .line 196
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 198
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -211,17 +211,17 @@
 
     if-nez v0, :cond_0
 
-    .line 198
+    .line 200
     invoke-static {}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->obtain()Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;
 
     move-result-object v0
 
-    .line 199
-    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
-
-    invoke-virtual {v1, p1, v0}, Landroidx/collection/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 201
+    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
+
+    invoke-virtual {v1, p1, v0}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 203
     :cond_0
     iget p1, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -235,7 +235,7 @@
 .method addToOldChangeHolders(JLandroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 1
 
-    .line 130
+    .line 132
     iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mOldChangedHolders:Landroidx/collection/LongSparseArray;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/collection/LongSparseArray;->put(JLjava/lang/Object;)V
@@ -246,10 +246,10 @@
 .method addToPostLayout(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;)V
     .locals 2
 
-    .line 180
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 182
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -257,21 +257,21 @@
 
     if-nez v0, :cond_0
 
-    .line 182
+    .line 184
     invoke-static {}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->obtain()Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;
 
     move-result-object v0
 
-    .line 183
-    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
-
-    invoke-virtual {v1, p1, v0}, Landroidx/collection/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 185
+    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
+
+    invoke-virtual {v1, p1, v0}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 187
     :cond_0
     iput-object p2, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->postInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
-    .line 186
+    .line 188
     iget p1, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
     or-int/lit8 p1, p1, 0x8
@@ -284,10 +284,10 @@
 .method addToPreLayout(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;)V
     .locals 2
 
-    .line 62
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 64
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -295,21 +295,21 @@
 
     if-nez v0, :cond_0
 
-    .line 64
+    .line 66
     invoke-static {}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->obtain()Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;
 
     move-result-object v0
 
-    .line 65
-    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
-
-    invoke-virtual {v1, p1, v0}, Landroidx/collection/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 67
+    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
+
+    invoke-virtual {v1, p1, v0}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 69
     :cond_0
     iput-object p2, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
-    .line 68
+    .line 70
     iget p1, v0, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
     or-int/lit8 p1, p1, 0x4
@@ -322,12 +322,12 @@
 .method clear()V
     .locals 1
 
-    .line 52
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 54
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0}, Landroidx/collection/ArrayMap;->clear()V
+    invoke-virtual {v0}, Landroidx/collection/SimpleArrayMap;->clear()V
 
-    .line 53
+    .line 55
     iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mOldChangedHolders:Landroidx/collection/LongSparseArray;
 
     invoke-virtual {v0}, Landroidx/collection/LongSparseArray;->clear()V
@@ -338,7 +338,7 @@
 .method getFromOldChangeHolders(J)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 1
 
-    .line 171
+    .line 173
     iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mOldChangedHolders:Landroidx/collection/LongSparseArray;
 
     invoke-virtual {v0, p1, p2}, Landroidx/collection/LongSparseArray;->get(J)Ljava/lang/Object;
@@ -353,10 +353,10 @@
 .method isDisappearing(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
     .locals 1
 
-    .line 72
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 74
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -366,7 +366,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 73
+    .line 75
     iget p1, p1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
     and-int/2addr p1, v0
@@ -385,10 +385,10 @@
 .method isInPreLayout(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)Z
     .locals 1
 
-    .line 159
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 161
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -396,7 +396,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 160
+    .line 162
     iget p1, p1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
     and-int/lit8 p1, p1, 0x4
@@ -417,7 +417,7 @@
 .method onDetach()V
     .locals 0
 
-    .line 271
+    .line 273
     invoke-static {}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->drainCache()V
 
     return-void
@@ -426,7 +426,7 @@
 .method public onViewDetached(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 0
 
-    .line 275
+    .line 277
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/ViewInfoStore;->removeFromDisappearedInLayout(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     return-void
@@ -437,7 +437,7 @@
 
     const/16 v0, 0x8
 
-    .line 95
+    .line 97
     invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/ViewInfoStore;->popFromLayoutStep(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     move-result-object p1
@@ -450,7 +450,7 @@
 
     const/4 v0, 0x4
 
-    .line 84
+    .line 86
     invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/ViewInfoStore;->popFromLayoutStep(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     move-result-object p1
@@ -461,10 +461,10 @@
 .method process(Landroidx/recyclerview/widget/ViewInfoStore$ProcessCallback;)V
     .locals 5
 
-    .line 217
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 219
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0}, Landroidx/collection/ArrayMap;->size()I
+    invoke-virtual {v0}, Landroidx/collection/SimpleArrayMap;->size()I
 
     move-result v0
 
@@ -473,25 +473,25 @@
     :goto_0
     if-ltz v0, :cond_7
 
-    .line 218
-    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 220
+    iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v1, v0}, Landroidx/collection/ArrayMap;->keyAt(I)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Landroidx/collection/SimpleArrayMap;->keyAt(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 219
-    iget-object v2, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 221
+    iget-object v2, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v2, v0}, Landroidx/collection/ArrayMap;->removeAt(I)Ljava/lang/Object;
+    invoke-virtual {v2, v0}, Landroidx/collection/SimpleArrayMap;->removeAt(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;
 
-    .line 220
+    .line 222
     iget v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
     const/4 v4, 0x3
@@ -500,12 +500,12 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 222
+    .line 224
     invoke-interface {p1, v1}, Landroidx/recyclerview/widget/ViewInfoStore$ProcessCallback;->unused(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     goto :goto_1
 
-    .line 223
+    .line 225
     :cond_0
     iget v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -513,17 +513,17 @@
 
     if-eqz v3, :cond_2
 
-    .line 225
+    .line 227
     iget-object v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     if-nez v3, :cond_1
 
-    .line 228
+    .line 230
     invoke-interface {p1, v1}, Landroidx/recyclerview/widget/ViewInfoStore$ProcessCallback;->unused(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     goto :goto_1
 
-    .line 230
+    .line 232
     :cond_1
     iget-object v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
@@ -533,7 +533,7 @@
 
     goto :goto_1
 
-    .line 232
+    .line 234
     :cond_2
     iget v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -543,7 +543,7 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 234
+    .line 236
     iget-object v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     iget-object v4, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->postInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
@@ -552,7 +552,7 @@
 
     goto :goto_1
 
-    .line 235
+    .line 237
     :cond_3
     iget v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -562,7 +562,7 @@
 
     if-ne v3, v4, :cond_4
 
-    .line 237
+    .line 239
     iget-object v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     iget-object v4, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->postInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
@@ -571,7 +571,7 @@
 
     goto :goto_1
 
-    .line 238
+    .line 240
     :cond_4
     iget v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -579,7 +579,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 240
+    .line 242
     iget-object v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     const/4 v4, 0x0
@@ -588,7 +588,7 @@
 
     goto :goto_1
 
-    .line 241
+    .line 243
     :cond_5
     iget v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -596,7 +596,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 243
+    .line 245
     iget-object v3, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->preInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
 
     iget-object v4, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->postInfo:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo;
@@ -605,11 +605,11 @@
 
     goto :goto_1
 
-    .line 244
+    .line 246
     :cond_6
     iget v1, v2, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
-    .line 249
+    .line 251
     :goto_1
     invoke-static {v2}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->recycle(Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;)V
 
@@ -624,10 +624,10 @@
 .method removeFromDisappearedInLayout(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 1
 
-    .line 209
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    .line 211
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -637,7 +637,7 @@
 
     return-void
 
-    .line 213
+    .line 215
     :cond_0
     iget v0, p1, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->flags:I
 
@@ -651,7 +651,7 @@
 .method removeViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 2
 
-    .line 258
+    .line 260
     iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mOldChangedHolders:Landroidx/collection/LongSparseArray;
 
     invoke-virtual {v0}, Landroidx/collection/LongSparseArray;->size()I
@@ -663,7 +663,7 @@
     :goto_0
     if-ltz v0, :cond_1
 
-    .line 259
+    .line 261
     iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mOldChangedHolders:Landroidx/collection/LongSparseArray;
 
     invoke-virtual {v1, v0}, Landroidx/collection/LongSparseArray;->valueAt(I)Ljava/lang/Object;
@@ -672,7 +672,7 @@
 
     if-ne p1, v1, :cond_0
 
-    .line 260
+    .line 262
     iget-object v1, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mOldChangedHolders:Landroidx/collection/LongSparseArray;
 
     invoke-virtual {v1, v0}, Landroidx/collection/LongSparseArray;->removeAt(I)V
@@ -684,12 +684,12 @@
 
     goto :goto_0
 
-    .line 264
+    .line 266
     :cond_1
     :goto_1
-    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/ArrayMap;
+    iget-object v0, p0, Landroidx/recyclerview/widget/ViewInfoStore;->mLayoutHolderMap:Landroidx/collection/SimpleArrayMap;
 
-    invoke-virtual {v0, p1}, Landroidx/collection/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -697,7 +697,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 266
+    .line 268
     invoke-static {p1}, Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;->recycle(Landroidx/recyclerview/widget/ViewInfoStore$InfoRecord;)V
 
     :cond_2

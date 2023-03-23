@@ -4,16 +4,7 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMathJVM.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MathJVM.kt\nkotlin/math/Constants\n*L\n1#1,1259:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0006\n\u0002\u0008\u0006\u0008\u00c2\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0010\u0010\u0003\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0008\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\n"
     }
@@ -33,9 +24,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -59,7 +51,6 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 20
     new-instance v0, Lkotlin/math/Constants;
 
     invoke-direct {v0}, Lkotlin/math/Constants;-><init>()V
@@ -94,25 +85,23 @@
     .line 31
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
-    move-result-wide v0
+    move-result-wide v2
 
-    sput-wide v0, Lkotlin/math/Constants;->taylor_n_bound:D
+    sput-wide v2, Lkotlin/math/Constants;->taylor_n_bound:D
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    int-to-double v2, v2
+    int-to-double v4, v4
+
+    div-double v0, v4, v0
 
     .line 33
-    sget-wide v4, Lkotlin/math/Constants;->taylor_2_bound:D
+    sput-wide v0, Lkotlin/math/Constants;->upper_taylor_2_bound:D
 
-    div-double v4, v2, v4
-
-    sput-wide v4, Lkotlin/math/Constants;->upper_taylor_2_bound:D
-
-    div-double/2addr v2, v0
+    div-double/2addr v4, v2
 
     .line 35
-    sput-wide v2, Lkotlin/math/Constants;->upper_taylor_n_bound:D
+    sput-wide v4, Lkotlin/math/Constants;->upper_taylor_n_bound:D
 
     return-void
 .end method

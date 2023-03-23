@@ -496,11 +496,15 @@
 
     invoke-virtual {p2, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p3}, Ljava/security/AlgorithmParameters;->toString()Ljava/lang/String;
 
     move-result-object p3
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -683,11 +687,13 @@
     iput-object p3, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->engineParams:Lorg/spongycastle/jce/spec/IESParameterSpec;
 
     .line 204
-    new-instance v2, Lorg/spongycastle/crypto/params/IESParameters;
+    new-instance p3, Lorg/spongycastle/crypto/params/IESParameters;
 
-    invoke-virtual {p3}, Lorg/spongycastle/jce/spec/IESParameterSpec;->getDerivationV()[B
+    iget-object v2, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->engineParams:Lorg/spongycastle/jce/spec/IESParameterSpec;
 
-    move-result-object p3
+    invoke-virtual {v2}, Lorg/spongycastle/jce/spec/IESParameterSpec;->getDerivationV()[B
+
+    move-result-object v2
 
     iget-object v3, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->engineParams:Lorg/spongycastle/jce/spec/IESParameterSpec;
 
@@ -701,27 +707,27 @@
 
     move-result v4
 
-    invoke-direct {v2, p3, v3, v4}, Lorg/spongycastle/crypto/params/IESParameters;-><init>([B[BI)V
+    invoke-direct {p3, v2, v3, v4}, Lorg/spongycastle/crypto/params/IESParameters;-><init>([B[BI)V
 
     .line 206
     iput p1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->state:I
 
     .line 208
-    iget-object p3, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->buffer:Ljava/io/ByteArrayOutputStream;
+    iget-object v2, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->buffer:Ljava/io/ByteArrayOutputStream;
 
-    invoke-virtual {p3}, Ljava/io/ByteArrayOutputStream;->reset()V
+    invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->reset()V
 
     if-eq p1, v1, :cond_5
 
-    const/4 p3, 0x2
+    const/4 v2, 0x2
 
-    if-eq p1, p3, :cond_4
+    if-eq p1, v2, :cond_4
 
     if-eq p1, v0, :cond_5
 
-    const/4 p3, 0x4
+    const/4 v0, 0x4
 
-    if-eq p1, p3, :cond_4
+    if-eq p1, v0, :cond_4
 
     .line 221
     sget-object p1, Ljava/lang/System;->out:Ljava/io/PrintStream;
@@ -736,9 +742,9 @@
     :cond_4
     iget-object p1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->cipher:Lorg/spongycastle/crypto/engines/IESEngine;
 
-    const/4 p3, 0x0
+    const/4 v0, 0x0
 
-    invoke-virtual {p1, p3, p2, p4, v2}, Lorg/spongycastle/crypto/engines/IESEngine;->init(ZLorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;)V
+    invoke-virtual {p1, v0, p2, p4, p3}, Lorg/spongycastle/crypto/engines/IESEngine;->init(ZLorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;)V
 
     goto :goto_2
 
@@ -746,7 +752,7 @@
     :cond_5
     iget-object p1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/ies/CipherSpi;->cipher:Lorg/spongycastle/crypto/engines/IESEngine;
 
-    invoke-virtual {p1, v1, p2, p4, v2}, Lorg/spongycastle/crypto/engines/IESEngine;->init(ZLorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;)V
+    invoke-virtual {p1, v1, p2, p4, p3}, Lorg/spongycastle/crypto/engines/IESEngine;->init(ZLorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;Lorg/spongycastle/crypto/CipherParameters;)V
 
     :goto_2
     return-void
@@ -786,9 +792,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -814,11 +824,15 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, " unavailable with RSA."
+    move-result-object p1
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " unavailable with RSA."
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 

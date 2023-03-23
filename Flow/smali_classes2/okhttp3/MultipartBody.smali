@@ -57,7 +57,7 @@
     const-string v0, "multipart/mixed"
 
     .line 35
-    invoke-static {v0}, Lokhttp3/MediaType;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
+    invoke-static {v0}, Lokhttp3/MediaType;->get(Ljava/lang/String;)Lokhttp3/MediaType;
 
     move-result-object v0
 
@@ -66,7 +66,7 @@
     const-string v0, "multipart/alternative"
 
     .line 42
-    invoke-static {v0}, Lokhttp3/MediaType;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
+    invoke-static {v0}, Lokhttp3/MediaType;->get(Ljava/lang/String;)Lokhttp3/MediaType;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
     const-string v0, "multipart/digest"
 
     .line 49
-    invoke-static {v0}, Lokhttp3/MediaType;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
+    invoke-static {v0}, Lokhttp3/MediaType;->get(Ljava/lang/String;)Lokhttp3/MediaType;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
     const-string v0, "multipart/parallel"
 
     .line 55
-    invoke-static {v0}, Lokhttp3/MediaType;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
+    invoke-static {v0}, Lokhttp3/MediaType;->get(Ljava/lang/String;)Lokhttp3/MediaType;
 
     move-result-object v0
 
@@ -93,7 +93,7 @@
     const-string v0, "multipart/form-data"
 
     .line 62
-    invoke-static {v0}, Lokhttp3/MediaType;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
+    invoke-static {v0}, Lokhttp3/MediaType;->get(Ljava/lang/String;)Lokhttp3/MediaType;
 
     move-result-object v0
 
@@ -183,21 +183,27 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string p2, "; boundary="
+    move-result-object p2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, "; boundary="
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p1}, Lokio/ByteString;->utf8()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    invoke-static {p1}, Lokhttp3/MediaType;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lokhttp3/MediaType;->get(Ljava/lang/String;)Lokhttp3/MediaType;
 
     move-result-object p1
 
@@ -213,7 +219,7 @@
     return-void
 .end method
 
-.method static appendQuotedString(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method static appendQuotedString(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 5
 
     const/16 v0, 0x22
@@ -282,7 +288,7 @@
     :cond_3
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    return-object p0
+    return-void
 .end method
 
 .method private writeOrCountBytes(Lokio/BufferedSink;Z)J
@@ -491,9 +497,7 @@
 
     .line 176
     :goto_4
-    sget-object v6, Lokhttp3/MultipartBody;->CRLF:[B
-
-    invoke-interface {p1, v6}, Lokio/BufferedSink;->write([B)Lokio/BufferedSink;
+    invoke-interface {p1, v9}, Lokio/BufferedSink;->write([B)Lokio/BufferedSink;
 
     add-int/lit8 v5, v5, 0x1
 
@@ -506,13 +510,11 @@
     invoke-interface {p1, v1}, Lokio/BufferedSink;->write([B)Lokio/BufferedSink;
 
     .line 180
-    iget-object v1, p0, Lokhttp3/MultipartBody;->boundary:Lokio/ByteString;
+    iget-object v2, p0, Lokhttp3/MultipartBody;->boundary:Lokio/ByteString;
 
-    invoke-interface {p1, v1}, Lokio/BufferedSink;->write(Lokio/ByteString;)Lokio/BufferedSink;
+    invoke-interface {p1, v2}, Lokio/BufferedSink;->write(Lokio/ByteString;)Lokio/BufferedSink;
 
     .line 181
-    sget-object v1, Lokhttp3/MultipartBody;->DASHDASH:[B
-
     invoke-interface {p1, v1}, Lokio/BufferedSink;->write([B)Lokio/BufferedSink;
 
     .line 182

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThemeMetaData FormatVersion="1.3" GuideVersion="1.4">
+    <AppMetaData Name="weatherwidget" TargetApi="19" TargetPackageName="com.sec.android.daemonapp" VersionCode="1" VersionName="141110.02">
+        <Include RefName="SESL" />
+        <Property Comment="clock/temperature color" DefaultValue="#fffafafa" DestAttribName="col_def_time_font_color" UID="29-1-5" ValueRef="" ValueType="TextColor" />
+        <Property Comment="date color" DefaultValue="#fffafafa" DestAttribName="col_def_date_font_color" UID="29-1-8" ValueRef="29-1-5" ValueType="TextColor" />
+        <Property Comment="weather info color" DefaultValue="#fffafafa" DestAttribName="col_def_info_color" UID="29-1-10" ValueRef="" ValueType="TextColor" />
+        <Property Comment="weather info color opacity 40" DefaultValue="#66fafafa" DestAttribName="col_def_info_color_40" Opacity="40" UID="29-1-24" ValueRef="29-1-10" ValueType="TextColor" />
+        <Property Comment="am/pm color" DefaultValue="#fffafafa" DestAttribName="col_def_ampm_font_color" UID="29-1-23" ValueRef="29-1-8" ValueType="TextColor" />
+        <Property DefaultValue="weather_widget_ic_update" DestAttribName="weather_widget_4x4_ic_updated_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="16X16" UID="29-1-14" ValueRef="" ValueType="Image" />
+        <Property Comment="Sunny" DefaultValue="weather_ic_sunny" Description="" DestAttribName="weather_ic_75_sunny_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Sunny" UID="29-2-2-1" ValueType="Image" />
+        <Property Comment="Partly Sunny" DefaultValue="weather_ic_partly_sunny" Description="weather_ic_partly_sunny" DestAttribName="weather_ic_75_partlysunny_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Partly Sunny" UID="29-2-2-2" ValueType="Image" />
+        <Property Comment="Cloudy" DefaultValue="weather_ic_cloudy" Description="" DestAttribName="weather_ic_75_cloudy_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Cloudy" UID="29-2-2-3" ValueType="Image" />
+        <Property Comment="Rain" DefaultValue="weather_ic_rain" Description="" DestAttribName="weather_ic_75_rain_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Rain" UID="29-2-2-4" ValueType="Image" />
+        <Property Comment="Fog" DefaultValue="weather_ic_fog" Description="" DestAttribName="weather_ic_75_fog_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Fog" UID="29-2-2-5" ValueType="Image" />
+        <Property Comment="Shower" DefaultValue="weather_ic_shower" Description="" DestAttribName="weather_ic_75_shower_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Shower" UID="29-2-2-6" ValueType="Image" />
+        <Property Comment="Partly Sunny with Shower" DefaultValue="weather_ic_partly_sunny_shower" Description="" DestAttribName="weather_ic_75_partlysunnywithshower_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Partly Sunny with Shower" UID="29-2-2-7" ValueType="Image" />
+        <Property Comment="Thunderstorm" DefaultValue="weather_ic_thunderstorm" Description="" DestAttribName="weather_ic_75_thunderstorm_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Thunderstorm" UID="29-2-2-8" ValueType="Image" />
+        <Property Comment="Partly Sunny with Thunder Shower" DefaultValue="weather_ic_partly_sunny_thunder_shower" Description="" DestAttribName="weather_ic_75_partlysunnywiththundershower_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Partly Sunny with Thunder Shower" UID="29-2-2-9" ValueType="Image" />
+        <Property Comment="Flurries" DefaultValue="weather_ic_flurries" Description="" DestAttribName="weather_ic_75_flurries_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Flurries" UID="29-2-2-10" ValueType="Image" />
+        <Property Comment="Partly Sunny with Flurries" DefaultValue="weather_ic_partly_sunny_flurries" Description="" DestAttribName="weather_ic_75_partlysunnywithflurries_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Partly Sunny with Flurries" UID="29-2-2-11" ValueType="Image" />
+        <Property Comment="Rain and Snow Mixed" DefaultValue="weather_ic_rain_snow_mixed" Description="" DestAttribName="weather_ic_75_rainandsnowmixed_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Rain and Snow Mixed" UID="29-2-2-12" ValueType="Image" />
+        <Property Comment="Snow" DefaultValue="weather_ic_snow" Description="" DestAttribName="weather_ic_75_snow_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Snow" UID="29-2-2-13" ValueType="Image" />
+        <Property Comment="Ice, Sleet, Freezing Rain" DefaultValue="weather_ic_ice_sleet_freezing_rain" Description="" DestAttribName="weather_ic_75_ice_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Ice, Sleet, Freezing Rain" UID="29-2-2-14" ValueType="Image" />
+        <Property Comment="Hot" DefaultValue="weather_ic_hot" Description="" DestAttribName="weather_ic_75_hot_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Hot" UID="29-2-2-15" ValueType="Image" />
+        <Property Comment="Cold" DefaultValue="weather_ic_cold" Description="" DestAttribName="weather_ic_75_cold_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Cold" UID="29-2-2-16" ValueType="Image" />
+        <Property Comment="Windy" DefaultValue="weather_ic_windy" Description="" DestAttribName="weather_ic_75_windy_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Windy" UID="29-2-2-17" ValueType="Image" />
+        <Property Comment="Clear" DefaultValue="weather_ic_clear" Description="" DestAttribName="weather_ic_75_clear_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Clear" UID="29-2-2-18" ValueType="Image" />
+        <Property Comment="Mostly Clear" DefaultValue="weather_ic_mostly_clear" Description="" DestAttribName="weather_ic_75_mostlyclear_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Mostly Clear" UID="29-2-2-19" ValueType="Image" />
+        <Property Comment="Hail" DefaultValue="weather_ic_hail" Description="" DestAttribName="weather_ic_75_hail_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Hail" UID="29-2-2-20" ValueType="Image" />
+        <Property Comment="Heavyrain" DefaultValue="weather_ic_heavy_rain" Description="" DestAttribName="weather_ic_75_heavyrain_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Heavyrain" UID="29-2-2-21" ValueType="Image" />
+        <Property Comment="Sandstorm" DefaultValue="weather_ic_sandstorm" Description="" DestAttribName="weather_ic_75_sandstorm_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Sandstorm" UID="29-2-2-22" ValueType="Image" />
+        <Property Comment="Hurricane" DefaultValue="weather_ic_hurricane" Description="" DestAttribName="weather_ic_75_hurricane_mtrl" DestQualifiers="sw360dp-xxxhdpi" ImageSize="73X73" Name="Hurricane" UID="29-2-2-23" ValueType="Image" />
+        <Property Comment="Weather Color Primary" DefaultValue="#ff0074d4" DestAttribName="weather_color_primary" UID="29-1-1" ValueRef="1-A" ValueType="Color" />
+        <Property Comment="weather color primary dark" DefaultValue="#ff0074d4" DestAttribName="weather_color_primary_dark" UID="29-1-2" ValueRef="24-E" ValueType="Color" />
+        <Property Comment="Background Color" DefaultValue="#fff6f6f6" DestAttribName="col_common_bg_color" UID="29-4-2" ValueRef="1-1-1" ValueType="BgColor" />
+        <Property Comment="Button text color" DefaultValue="#ff252525" DestAttribName="col_def_action_button_tint_color" UID="29-4-4" ValueRef="1-11-1" ValueType="TintColor" />
+        <Property Comment="Main text color" DefaultValue="#ff252525" DestAttribName="col_list_main_text_color" UID="29-4-5" ValueRef="24-A" ValueType="TextColor" />
+        <Property Comment="Sub text color" DefaultValue="#ff909090" DestAttribName="col_list_sub_text_color" UID="29-4-6" ValueRef="24-B" ValueType="TextColor" />
+        <Property Comment="Time text color" DefaultValue="#ff909090" DestAttribName="col_time_text_color" UID="29-4-7" ValueRef="24-B" ValueType="TextColor" />
+        <Property Comment="Current location icon tint color" DefaultValue="#ff252525" DestAttribName="col_def_widget_current_location_icon_color" UID="29-4-8" ValueRef="24-A" ValueType="TintColor" />
+        <Property Comment="Current temperature text color" DefaultValue="#ff252525" DestAttribName="col_def_locations_temp_text_color" UID="29-4-9" ValueRef="24-A" ValueType="TextColor" />
+        <Property Comment="Max/Min temperature text color" DefaultValue="#ff909090" DestAttribName="col_max_min_temp_text_color" UID="29-4-10" ValueRef="24-B" ValueType="TextColor" />
+        <Property Comment="Contents Background Color" DefaultValue="#fffafafa" DestAttribName="col_common_contents_bg_color" UID="29-4-11" ValueRef="1-18-1" ValueType="BgColor" />
+        <Property Comment="Contents Background Image" DefaultValue="" DestAttribName="common_contents_bg" DestQualifiers="sw360dp-xxxhdpi" UID="29-4-12" ValueRef="1-18-2" ValueType="BgImage" />
+        <Property Comment="splash icon tint color" DefaultValue="#ff909090" DestAttribName="col_splash_icon_tint_color" UID="29-4-14" ValueRef="24-B" ValueType="TintColor" />
+        <Property Comment="City list reorder icon color" DefaultValue="#ff808080" DestAttribName="col_def_list_reorder_color" UID="29-4-15" ValueRef="1-C" ValueType="Color" />
+        <Property Comment="All text color" DefaultValue="#ff252525" DestAttribName="col_def_select_all_text_color" UID="29-4-18" ValueRef="1-49-6" ValueType="TextColor" />
+        <Property Comment="Search Result HighLight Color" DefaultValue="#ff4297ff" DestAttribName="col_def_list_text_highlight_color" UID="29-4-19" ValueRef="1-59-9" ValueType="TextColor" />
+        <Property Comment="No Search result text color" DefaultValue="#7f252525" DestAttribName="col_search_msg_text_color" UID="29-6-3" ValueRef="1-1-4" ValueType="TextColor" />
+        <Property Comment="Loading text color" DefaultValue="#ff252525" DestAttribName="col_search_loading_text_color" UID="29-6-4" ValueRef="1-1-4" ValueType="TextColor" />
+        <Property Comment="Description text color" DefaultValue="#ff252525" DestAttribName="description_text_color" UID="29-6-5" ValueRef="24-A" ValueType="TextColor" />
+        <Property Comment="Raised Button - Recommend Background Color" DefaultValue="#1a000000" DestAttribName="col_search_most_bg_color" UID="29-7-1" ValueRef="1-7-1-D" ValueType="BgColor" />
+        <Property Comment="Raised Button - Recommend TextColor" DefaultValue="#ff252525" DestAttribName="col_search_most_name_color" UID="29-7-2" ValueRef="1-7-2-D" ValueType="TextColor" />
+        <Property Comment="Sub App Bar Background color - ON" DefaultValue="#520072de" DestAttribName="sub_app_bar_enabled_background" UID="29-40-1" ValueRef="1-40-1" ValueType="BgColor" />
+        <Property Comment="Sub App Bar Background color - OFF" DefaultValue="#fffafafa" DestAttribName="sub_app_bar_background" UID="29-40-2" ValueRef="1-40-2" ValueType="BgColor" />
+        <Property Comment="Sub App Bar text color - ON" DefaultValue="#ff0072de" DestAttribName="col_def_sub_appbar_enabled_text_color" UID="29-40-3" ValueRef="1-40-3" ValueType="Color" />
+        <Property Comment="Sub App Bar text color - OFF" DefaultValue="#ff252525" DestAttribName="col_def_sub_appbar_text_color" UID="29-40-4" ValueRef="1-40-4" ValueType="Color" />
+        <Property Comment="About page Version info text color" DefaultValue="#ff252525" DestAttribName="about_app_name" UID="29-2-7" ValueRef="1-1-3" ValueType="TextColor" />
+        <Property Comment="Update button BG" DefaultValue="#ff0074d4" DestAttribName="about_update_btn_bg_color" UID="29-2-10" ValueRef="1-A" ValueType="BgColor" />
+        <Property Comment="Update button text color" DefaultValue="#fffafafa" DestAttribName="about_update_btn_text_color" UID="29-2-11" ValueRef="1-E" ValueType="TextColor" />
+        <Property Comment="About page Subtext color" DefaultValue="#ff979797" DestAttribName="about_description" UID="29-2-12" ValueRef="1-1-4" ValueType="TextColor" />
+        <Property Comment="About page Button bg color" DefaultValue="#ffebebeb" DestAttribName="about_raised_btn_bg_color" UID="29-2-13" ValueRef="1-7-1-D" ValueType="BgColor" />
+        <Property Comment="About page Button text color" DefaultValue="#ff252525" DestAttribName="about_raised_btn_text_color" UID="29-2-14" ValueRef="1-7-2-D" ValueType="TextColor" />
+        <Property Comment="About page BG color" DefaultValue="#fffcfcfc" DestAttribName="col_about_weather_bg_color" UID="29-2-15" ValueRef="1-1-1" ValueType="BgColor" />
+        <Property Comment="About page info icon color" DefaultValue="#ff010101" DestAttribName="about_info_color" UID="29-2-16" ValueRef="1-1-3" ValueType="TintColor" />
+        <Property Comment="Navigation background color" DefaultValue="#fff6f6f6" DestAttribName="navigation_bar_bg_color" UID="29-3-1" ValueRef="1-69-1" ValueType="BgColor" />
+        <Property Comment="Icon image theme (Dark / Light)" DefaultValue="true" DestAttribName="window_light_navigation_bar" POption="AlwaysOverriden" UID="29-3-2" ValueRef="1-69-2" ValueType="Bool" />
+        <Property Comment="Status Bar background color" DefaultValue="#fff6f6f6" DestAttribName="status_bar_bg_color" UID="29-3-3" ValueRef="1-51" ValueType="BgColor" />
+        <Property Comment="Status Bar Icon image theme (Dark / Light)" DefaultValue="true" DestAttribName="window_light_status_bar" POption="AlwaysOverriden" UID="29-3-4" ValueRef="1-51-1" ValueType="Bool" />
+        <Property Comment="Card update text color" DefaultValue="#fffcfcfc" DestAttribName="update_tip_card_update_button_text_color" UID="29-5-4" ValueRef="1-9-15" ValueType="TextColor" />
+        <Property Comment="Card update bg color" DefaultValue="#cc0072de" DestAttribName="update_tip_card_bg" UID="29-5-5" ValueRef="1-48-2" ValueType="BgColor" />
+        <Property Comment="Card update body text color" DefaultValue="#fffcfcfc" DestAttribName="update_tip_card_body_text_color" UID="29-5-6" ValueRef="1-48-4" ValueType="Color" />
+        <Property Comment="Drop down sub text color" DefaultValue="#ff0381fe" DestAttribName="preference_sub_text_color" UID="29-5-7" ValueRef="24-E" ValueType="Color" />
+        <Property Comment="badge background color" DefaultValue="#ffff713f" DestAttribName="badge_bg_color" UID="29-5-1" ValueRef="1-33-1" ValueType="BgColor" />
+        <Property Comment="badge background image" DefaultValue="" DestAttribName="wx_badge_bg" DestQualifiers="sw360dp-xxxhdpi" UID="29-5-2" ValueRef="1-33-2" ValueType="Image" />
+        <Property Comment="badge text color" DefaultValue="#fffafafa" DestAttribName="badge_text_color" UID="29-5-3" ValueRef="1-33-3" ValueType="TextColor" />
+        <Property Comment="Help page text color" DefaultValue="#ff505050" DestAttribName="col_help_description_text_color" UID="29-8-1" ValueRef="1-3-3-D" ValueType="TextColor" />
+        <Property Comment="Permission main text color" DefaultValue="#ff252525" DestAttribName="permission_item_title" UID="29-8-2" ValueRef="24-A" ValueType="TextColor" />
+        <Property Comment="Permission desc text color" DefaultValue="#ff8c8c8c" DestAttribName="permission_item_desc" UID="29-8-3" ValueRef="24-B" ValueType="TextColor" />
+        <Property Comment="Permission icon color" DefaultValue="#ff505050" DestAttribName="permission_icon_color" UID="29-8-4" ValueRef="24-A" ValueType="TintColor" />
+        <Property Comment="Setting main text color" DefaultValue="#ff252525" DestAttribName="widget_setting_main_text_color" UID="29-10-5" ValueRef="1-3-1" ValueType="TextColor" />
+        <Property Comment="Setting sub header text color" DefaultValue="#ff909090" DestAttribName="widget_setting_sub_header_text_color" UID="29-10-6" ValueRef="1-19-2" ValueType="TextColor" />
+        <Property Comment="Setting divider color" DefaultValue="#ffe6e6e6" DestAttribName="col_def_list_divider_color" UID="29-10-7" ValueRef="1-2" ValueType="Color" />
+        <Property Comment="Setting title text color" DefaultValue="#ff252525" DestAttribName="widget_setting_title_text_color" UID="29-10-8" ValueRef="24-A" ValueType="TextColor" />
+        <Property Comment="Setting Seekbar Thumb color" DefaultValue="#ff008cff" DestAttribName="widget_setting_seek_bar_tick_color" UID="29-10-9" ValueRef="24-E" ValueType="Color" />
+        <Property Comment="Setting Seekbar tick mark color" DefaultValue="#ff9c9c9c" DestAttribName="widget_setting_seek_bar_tick_mark_solid_color" UID="29-10-10" ValueRef="24-B" ValueType="TextColor" />
+        <Property Comment="Setting Seekbar progress background color" DefaultValue="#4c979797" DestAttribName="widget_setting_seek_bar_progress_solid_color" Opacity="40" UID="29-10-11" ValueRef="24-B" ValueType="TextColor" />
+        <Property Comment="Setting bottom navigation text color" DefaultValue="#ff008cff" DestAttribName="widget_setting_bottom_navigation_text_color" UID="29-10-15" ValueRef="1-14-2" ValueType="TextColor" />
+        <Property Comment="Setting sub text color" DefaultValue="#ff909090" DestAttribName="widget_setting_sub_text_color" UID="29-10-16" ValueRef="24-B" ValueType="TextColor" />
+        <Property Comment="Setting change button text color" DefaultValue="#ff0381fe" DestAttribName="widget_setting_change_button_text_color" UID="29-10-17" ValueRef="1-A" ValueType="TextColor" />
+        <Property Comment="Citylist sub header title info icon" DefaultValue="#ff909090" DestAttribName="col_locations_sub_header_info_ic_color" UID="29-11-1" ValueRef="1-1-3" ValueType="TintColor" />
+        <Property Comment="edge panel background panel" DefaultValue="#a5fcfcfc" DestAttribName="col_def_edge_panel_bg_color" UID="29-12-1" ValueRef="44_1-21-1" ValueType="BgColor" />
+    </AppMetaData>
+</ThemeMetaData>

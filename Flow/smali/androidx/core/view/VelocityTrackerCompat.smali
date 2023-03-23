@@ -20,6 +20,17 @@
 
 .method public static getXVelocity(Landroid/view/VelocityTracker;I)F
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "tracker",
+            "pointerId"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -33,6 +44,17 @@
 
 .method public static getYVelocity(Landroid/view/VelocityTracker;I)F
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "tracker",
+            "pointerId"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

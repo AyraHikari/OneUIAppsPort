@@ -1,16 +1,9 @@
 .class public interface abstract Lcom/google/android/gms/common/internal/IGmsCallbacks;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 # interfaces
 .implements Landroid/os/IInterface;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/google/android/gms/common/internal/IGmsCallbacks$zza;
-    }
-.end annotation
 
 
 # virtual methods
@@ -22,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract zza(ILandroid/os/Bundle;)V
+.method public abstract zzb(ILandroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract zza(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/zzb;)V
+.method public abstract zzc(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/zzj;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

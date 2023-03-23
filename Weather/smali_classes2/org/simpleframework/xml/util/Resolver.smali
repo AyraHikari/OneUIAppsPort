@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field protected final cache:Lorg/simpleframework/xml/util/Resolver$Cache;
+.field public final cache:Lorg/simpleframework/xml/util/Resolver$Cache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lorg/simpleframework/xml/util/Resolver<",
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field protected final stack:Lorg/simpleframework/xml/util/Resolver$Stack;
+.field public final stack:Lorg/simpleframework/xml/util/Resolver$Stack;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lorg/simpleframework/xml/util/Resolver<",
@@ -46,10 +46,10 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 82
+    .line 1
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
-    .line 83
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/util/Resolver$Stack;
 
     const/4 v1, 0x0
@@ -58,7 +58,7 @@
 
     iput-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->stack:Lorg/simpleframework/xml/util/Resolver$Stack;
 
-    .line 84
+    .line 3
     new-instance v0, Lorg/simpleframework/xml/util/Resolver$Cache;
 
     invoke-direct {v0, p0}, Lorg/simpleframework/xml/util/Resolver$Cache;-><init>(Lorg/simpleframework/xml/util/Resolver;)V
@@ -71,7 +71,7 @@
 .method private match([CI[CI)Z
     .locals 5
 
-    .line 251
+    .line 2
     :goto_0
     array-length v0, p3
 
@@ -87,14 +87,14 @@
 
     if-ge p2, v0, :cond_8
 
-    .line 252
+    .line 3
     aget-char v0, p3, p4
 
     const/16 v4, 0x3f
 
     if-ne v0, v1, :cond_6
 
-    .line 253
+    .line 4
     :cond_0
     aget-char v0, p3, p4
 
@@ -102,14 +102,14 @@
 
     add-int/lit8 p4, p4, 0x1
 
-    .line 254
+    .line 5
     array-length v0, p3
 
     if-lt p4, v0, :cond_0
 
     return v3
 
-    .line 257
+    .line 6
     :cond_1
     aget-char v0, p3, p4
 
@@ -117,21 +117,21 @@
 
     add-int/lit8 p4, p4, 0x1
 
-    .line 258
+    .line 7
     array-length v0, p3
 
     if-lt p4, v0, :cond_2
 
     return v3
 
-    .line 261
+    .line 8
     :cond_2
     :goto_1
     array-length v0, p1
 
     if-ge p2, v0, :cond_5
 
-    .line 262
+    .line 9
     aget-char v0, p1, p2
 
     aget-char v1, p3, p4
@@ -145,12 +145,12 @@
     :cond_3
     add-int/lit8 v0, p4, -0x1
 
-    .line 263
+    .line 10
     aget-char v0, p3, v0
 
     if-eq v0, v4, :cond_5
 
-    .line 264
+    .line 11
     invoke-direct {p0, p1, p2, p3, p4}, Lorg/simpleframework/xml/util/Resolver;->match([CI[CI)Z
 
     move-result v0
@@ -164,7 +164,7 @@
 
     goto :goto_1
 
-    .line 271
+    .line 12
     :cond_5
     array-length v0, p1
 
@@ -175,7 +175,7 @@
     :cond_6
     add-int/lit8 v0, p2, 0x1
 
-    .line 274
+    .line 13
     aget-char p2, p1, p2
 
     add-int/lit8 v1, p4, 0x1
@@ -186,7 +186,7 @@
 
     add-int/lit8 p2, v1, -0x1
 
-    .line 275
+    .line 14
     aget-char p2, p3, p2
 
     if-eq p2, v4, :cond_7
@@ -200,13 +200,13 @@
 
     goto :goto_0
 
-    .line 279
+    .line 15
     :cond_8
     array-length v0, p3
 
     if-ne v0, p4, :cond_a
 
-    .line 280
+    .line 16
     array-length p1, p1
 
     if-ne p1, p2, :cond_9
@@ -216,7 +216,7 @@
     :cond_9
     return v2
 
-    .line 282
+    .line 17
     :cond_a
     aget-char p1, p3, p4
 
@@ -224,7 +224,7 @@
 
     add-int/lit8 p4, p4, 0x1
 
-    .line 283
+    .line 18
     array-length p1, p3
 
     if-lt p4, p1, :cond_a
@@ -240,7 +240,7 @@
 
     const/4 v0, 0x0
 
-    .line 235
+    .line 1
     invoke-direct {p0, p1, v0, p2, v0}, Lorg/simpleframework/xml/util/Resolver;->match([CI[CI)Z
 
     move-result p1
@@ -260,15 +260,15 @@
         }
     .end annotation
 
-    .line 148
+    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 150
+    .line 5
     iget-object v1, p0, Lorg/simpleframework/xml/util/Resolver;->stack:Lorg/simpleframework/xml/util/Resolver$Stack;
 
-    invoke-virtual {v1}, Lorg/simpleframework/xml/util/Resolver$Stack;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
@@ -286,12 +286,12 @@
 
     check-cast v2, Lorg/simpleframework/xml/util/Match;
 
-    .line 151
+    .line 6
     invoke-interface {v2}, Lorg/simpleframework/xml/util/Match;->getPattern()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 153
+    .line 7
     invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v3
@@ -302,12 +302,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 154
+    .line 8
     iget-object v3, p0, Lorg/simpleframework/xml/util/Resolver;->cache:Lorg/simpleframework/xml/util/Resolver$Cache;
 
-    invoke-virtual {v3, p1, v0}, Lorg/simpleframework/xml/util/Resolver$Cache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, p1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 155
+    .line 9
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -321,7 +321,7 @@
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 62
+    .line 1
     check-cast p1, Lorg/simpleframework/xml/util/Match;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/Resolver;->add(Lorg/simpleframework/xml/util/Match;)Z
@@ -339,7 +339,7 @@
         }
     .end annotation
 
-    .line 172
+    .line 2
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->stack:Lorg/simpleframework/xml/util/Resolver$Stack;
 
     invoke-virtual {v0, p1}, Lorg/simpleframework/xml/util/Resolver$Stack;->push(Lorg/simpleframework/xml/util/Match;)V
@@ -352,15 +352,15 @@
 .method public clear()V
     .locals 1
 
-    .line 221
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->cache:Lorg/simpleframework/xml/util/Resolver$Cache;
 
-    invoke-virtual {v0}, Lorg/simpleframework/xml/util/Resolver$Cache;->clear()V
+    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->clear()V
 
-    .line 222
+    .line 2
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->stack:Lorg/simpleframework/xml/util/Resolver$Stack;
 
-    invoke-virtual {v0}, Lorg/simpleframework/xml/util/Resolver$Stack;->clear()V
+    invoke-virtual {v0}, Ljava/util/LinkedList;->clear()V
 
     return-void
 .end method
@@ -375,7 +375,6 @@
         }
     .end annotation
 
-    .line 185
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->stack:Lorg/simpleframework/xml/util/Resolver$Stack;
 
     invoke-virtual {v0}, Lorg/simpleframework/xml/util/Resolver$Stack;->sequence()Ljava/util/Iterator;
@@ -393,15 +392,15 @@
         }
     .end annotation
 
-    .line 199
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->cache:Lorg/simpleframework/xml/util/Resolver$Cache;
 
-    invoke-virtual {v0}, Lorg/simpleframework/xml/util/Resolver$Cache;->clear()V
+    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->clear()V
 
-    .line 200
+    .line 2
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->stack:Lorg/simpleframework/xml/util/Resolver$Stack;
 
-    invoke-virtual {v0, p1}, Lorg/simpleframework/xml/util/Resolver$Stack;->remove(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -418,10 +417,10 @@
         }
     .end annotation
 
-    .line 99
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->cache:Lorg/simpleframework/xml/util/Resolver$Cache;
 
-    invoke-virtual {v0, p1}, Lorg/simpleframework/xml/util/Resolver$Cache;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -429,12 +428,12 @@
 
     if-nez v0, :cond_0
 
-    .line 102
+    .line 2
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/Resolver;->resolveAll(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 104
+    .line 3
     :cond_0
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -449,7 +448,7 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 107
+    .line 4
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -471,10 +470,10 @@
         }
     .end annotation
 
-    .line 122
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->cache:Lorg/simpleframework/xml/util/Resolver$Cache;
 
-    invoke-virtual {v0, p1}, Lorg/simpleframework/xml/util/Resolver$Cache;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -484,7 +483,7 @@
 
     return-object v0
 
-    .line 127
+    .line 2
     :cond_0
     invoke-virtual {p1}, Ljava/lang/String;->toCharArray()[C
 
@@ -496,7 +495,7 @@
 
     return-object p1
 
-    .line 132
+    .line 3
     :cond_1
     invoke-direct {p0, p1, v0}, Lorg/simpleframework/xml/util/Resolver;->resolveAll(Ljava/lang/String;[C)Ljava/util/List;
 
@@ -508,10 +507,9 @@
 .method public size()I
     .locals 1
 
-    .line 211
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver;->stack:Lorg/simpleframework/xml/util/Resolver$Stack;
 
-    invoke-virtual {v0}, Lorg/simpleframework/xml/util/Resolver$Stack;->size()I
+    invoke-virtual {v0}, Ljava/util/LinkedList;->size()I
 
     move-result v0
 

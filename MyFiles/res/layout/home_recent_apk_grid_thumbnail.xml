@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/category_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.myfiles.external.ui.widget.thumbnail.RecentApkThumbnail android:layout_gravity="center" android:id="@id/apk_thumbnail" android:layout_width="@dimen/list_item_icon_width" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:id="@id/file_detail_container" android:background="@color/grid_item_icon_file_info_bg_color" style="@style/GridFileDetailInfo">
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/grid_item_file_info_text_size" android:textColor="@color/grid_item_icon_1st_text_color" android:ellipsize="middle" android:gravity="center" android:id="@id/file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/grid_item_text_bottom_margin" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

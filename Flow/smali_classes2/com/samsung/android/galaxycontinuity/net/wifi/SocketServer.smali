@@ -18,6 +18,14 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socketListener"
+        }
+    .end annotation
 
     .line 13
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;-><init>()V
@@ -83,6 +91,18 @@
 
 .method public open(Ljava/lang/String;II)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "host",
+            "port",
+            "timeout"
+        }
+    .end annotation
 
     .line 18
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->mAcceptThread:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer$AcceptThread;
@@ -119,8 +139,6 @@
     if-eqz v0, :cond_0
 
     .line 41
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer;->mAcceptThread:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer$AcceptThread;
-
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketServer$AcceptThread;->cancel()V
 
     const/4 v0, 0x0

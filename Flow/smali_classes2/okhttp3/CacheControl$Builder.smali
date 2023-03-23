@@ -36,18 +36,18 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 278
+    .line 293
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 281
+    .line 296
     iput v0, p0, Lokhttp3/CacheControl$Builder;->maxAgeSeconds:I
 
-    .line 282
+    .line 297
     iput v0, p0, Lokhttp3/CacheControl$Builder;->maxStaleSeconds:I
 
-    .line 283
+    .line 298
     iput v0, p0, Lokhttp3/CacheControl$Builder;->minFreshSeconds:I
 
     return-void
@@ -58,7 +58,7 @@
 .method public build()Lokhttp3/CacheControl;
     .locals 1
 
-    .line 370
+    .line 385
     new-instance v0, Lokhttp3/CacheControl;
 
     invoke-direct {v0, p0}, Lokhttp3/CacheControl;-><init>(Lokhttp3/CacheControl$Builder;)V
@@ -71,7 +71,7 @@
 
     const/4 v0, 0x1
 
-    .line 365
+    .line 380
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->immutable:Z
 
     return-object p0
@@ -84,7 +84,7 @@
 
     int-to-long v0, p1
 
-    .line 309
+    .line 324
     invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
     move-result-wide p1
@@ -102,13 +102,13 @@
     :cond_0
     long-to-int p1, p1
 
-    .line 312
+    .line 327
     :goto_0
     iput p1, p0, Lokhttp3/CacheControl$Builder;->maxAgeSeconds:I
 
     return-object p0
 
-    .line 308
+    .line 323
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -120,9 +120,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -138,7 +142,7 @@
 
     int-to-long v0, p1
 
-    .line 325
+    .line 340
     invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
     move-result-wide p1
@@ -156,13 +160,13 @@
     :cond_0
     long-to-int p1, p1
 
-    .line 328
+    .line 343
     :goto_0
     iput p1, p0, Lokhttp3/CacheControl$Builder;->maxStaleSeconds:I
 
     return-object p0
 
-    .line 324
+    .line 339
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -174,9 +178,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -192,7 +200,7 @@
 
     int-to-long v0, p1
 
-    .line 342
+    .line 357
     invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
     move-result-wide p1
@@ -210,13 +218,13 @@
     :cond_0
     long-to-int p1, p1
 
-    .line 345
+    .line 360
     :goto_0
     iput p1, p0, Lokhttp3/CacheControl$Builder;->minFreshSeconds:I
 
     return-object p0
 
-    .line 341
+    .line 356
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -228,9 +236,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -244,7 +256,7 @@
 
     const/4 v0, 0x1
 
-    .line 290
+    .line 305
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noCache:Z
 
     return-object p0
@@ -255,7 +267,7 @@
 
     const/4 v0, 0x1
 
-    .line 296
+    .line 311
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noStore:Z
 
     return-object p0
@@ -266,7 +278,7 @@
 
     const/4 v0, 0x1
 
-    .line 360
+    .line 375
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noTransform:Z
 
     return-object p0
@@ -277,7 +289,7 @@
 
     const/4 v0, 0x1
 
-    .line 354
+    .line 369
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->onlyIfCached:Z
 
     return-object p0

@@ -19,6 +19,7 @@
     <dimen name="sesl_action_bar_default_height">56.0dip</dimen>
     <dimen name="sesl_action_bar_height_with_padding">56.0dip</dimen>
     <dimen name="sesl_action_bar_top_padding">0.0dip</dimen>
+    <dimen name="sesl_action_item_show_button_background_inset_vertical">5.0dip</dimen>
     <dimen name="sesl_dialog_body_text_padding_bottom">12.0dip</dimen>
     <dimen name="sesl_dialog_button_bar_padding_bottom">4.0dip</dimen>
     <dimen name="sesl_dialog_title_padding_bottom">2.0dip</dimen>
@@ -29,9 +30,13 @@
     <dimen name="setting_actionbar_marginBottom">0.0dip</dimen>
     <dimen name="setting_controller_top_margin">0.0dip</dimen>
     <item type="dimen" name="setting_preview_xx1_height">@dimen/match_parent</item>
-    <dimen name="setting_preview_xx2_bg_height">150.0dip</dimen>
+    <item type="dimen" name="setting_preview_xx2_bg_height">@dimen/match_parent</item>
     <item type="dimen" name="setting_preview_xx2_height">@dimen/match_parent</item>
     <item type="dimen" name="setting_preview_xx3_bg_height">@dimen/match_parent</item>
     <item type="dimen" name="setting_preview_xx3_height">@dimen/match_parent</item>
     <dimen name="setting_widget_guideline_padding">118.0dip</dimen>
+    <dimen name="widget_news_dialog_margin_title">2.0dip</dimen>
+    <dimen name="widget_news_dialog_padding_top">12.0dip</dimen>
+    <dimen name="widget_news_popup_dialog_image_height">96.0dip</dimen>
+    <dimen name="widget_news_popup_dialog_image_width">331.0dip</dimen>
 </resources>

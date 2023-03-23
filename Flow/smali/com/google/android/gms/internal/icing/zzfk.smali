@@ -1,79 +1,142 @@
-.class interface abstract Lcom/google/android/gms/internal/icing/zzfk;
-.super Ljava/lang/Object;
+.class final Lcom/google/android/gms/internal/icing/zzfk;
+.super Lcom/google/android/gms/internal/icing/zzfm;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# direct methods
+.method constructor <init>(Lsun/misc/Unsafe;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/icing/zzfm;-><init>(Lsun/misc/Unsafe;)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)Z"
-        }
-    .end annotation
+.method public final zza(Ljava/lang/Object;JB)V
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/google/android/gms/internal/icing/zzfn;->zzb:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzt(Ljava/lang/Object;JB)V
+
+    return-void
+
+    .line 3
+    :cond_0
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzu(Ljava/lang/Object;JB)V
+
+    return-void
 .end method
 
-.method public abstract hashCode(Ljava/lang/Object;)I
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)I"
-        }
-    .end annotation
+.method public final zzb(Ljava/lang/Object;J)Z
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/google/android/gms/internal/icing/zzfn;->zzb:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-static {p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfn;->zzv(Ljava/lang/Object;J)Z
+
+    move-result p1
+
+    return p1
+
+    .line 3
+    :cond_0
+    invoke-static {p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfn;->zzw(Ljava/lang/Object;J)Z
+
+    move-result p1
+
+    return p1
 .end method
 
-.method public abstract zza(Ljava/lang/Object;Lcom/google/android/gms/internal/icing/zzgw;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/google/android/gms/internal/icing/zzgw;",
-            ")V"
-        }
-    .end annotation
+.method public final zzc(Ljava/lang/Object;JZ)V
+    .locals 1
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 1
+    sget-boolean v0, Lcom/google/android/gms/internal/icing/zzfn;->zzb:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzx(Ljava/lang/Object;JZ)V
+
+    return-void
+
+    .line 3
+    :cond_0
+    invoke-static {p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfn;->zzy(Ljava/lang/Object;JZ)V
+
+    return-void
 .end method
 
-.method public abstract zzc(Ljava/lang/Object;Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)V"
-        }
-    .end annotation
+.method public final zzd(Ljava/lang/Object;J)F
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfm;->zzk(Ljava/lang/Object;J)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p1
+
+    return p1
 .end method
 
-.method public abstract zzf(Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
+.method public final zze(Ljava/lang/Object;JF)V
+    .locals 0
+
+    .line 1
+    invoke-static {p4}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    move-result p4
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/gms/internal/icing/zzfm;->zzl(Ljava/lang/Object;JI)V
+
+    return-void
 .end method
 
-.method public abstract zzm(Ljava/lang/Object;)Z
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)Z"
-        }
-    .end annotation
+.method public final zzf(Ljava/lang/Object;J)D
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/icing/zzfm;->zzm(Ljava/lang/Object;J)J
+
+    move-result-wide p1
+
+    invoke-static {p1, p2}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    move-result-wide p1
+
+    return-wide p1
 .end method
 
-.method public abstract zzn(Ljava/lang/Object;)I
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)I"
-        }
-    .end annotation
+.method public final zzg(Ljava/lang/Object;JD)V
+    .locals 6
+
+    .line 1
+    invoke-static {p4, p5}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    move-result-wide v4
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-wide v2, p2
+
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/gms/internal/icing/zzfm;->zzn(Ljava/lang/Object;JJ)V
+
+    return-void
 .end method

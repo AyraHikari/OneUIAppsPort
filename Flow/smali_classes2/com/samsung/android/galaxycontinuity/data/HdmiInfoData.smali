@@ -13,6 +13,14 @@
 # direct methods
 .method public constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 
     .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

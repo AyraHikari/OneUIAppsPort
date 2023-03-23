@@ -4,17 +4,15 @@
 
 
 # static fields
-.field public static final APPLICATION_ID:Ljava/lang/String; = "com.samsung.context.sdk.samsunganalytics"
-
 .field public static final BUILD_TYPE:Ljava/lang/String; = "release"
 
 .field public static final DEBUG:Z = false
 
-.field public static final FLAVOR:Ljava/lang/String; = ""
+.field public static final LIBRARY_PACKAGE_NAME:Ljava/lang/String; = "com.samsung.context.sdk.samsunganalytics"
 
-.field public static final VERSION_CODE:I = 0x3112f
+.field public static final VERSION_CODE:I = 0x31130
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "2.01.007"
+.field public static final VERSION_NAME:Ljava/lang/String; = "2.01.008"
 
 
 # direct methods

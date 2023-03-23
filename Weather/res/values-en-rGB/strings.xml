@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Sign In</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy">Copy</string>
-    <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="error_icon_content_description">Error</string>
     <string name="expand_button_title">Advanced</string>
     <string name="exposed_dropdown_menu_content_description">Show drop-down menu</string>
-    <string name="fallback_menu_item_copy_link">Copy link</string>
-    <string name="fallback_menu_item_open_in_browser">Open in browser</string>
-    <string name="fallback_menu_item_share_link">Share link</string>
     <string name="icon_content_description">Dialogue Icon</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Select a.m. or p.m.</string>

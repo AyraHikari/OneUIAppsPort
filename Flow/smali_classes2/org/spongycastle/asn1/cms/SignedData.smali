@@ -174,9 +174,11 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "unknown tag value "
+    const-string/jumbo v2, "unknown tag value "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v0}, Lorg/spongycastle/asn1/ASN1TaggedObject;->getTagNo()I
 
@@ -184,7 +186,9 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -625,16 +629,18 @@
     if-eqz v1, :cond_1
 
     .line 304
-    iget-boolean v3, p0, Lorg/spongycastle/asn1/cms/SignedData;->certsBer:Z
+    iget-boolean v1, p0, Lorg/spongycastle/asn1/cms/SignedData;->certsBer:Z
 
-    if-eqz v3, :cond_0
+    if-eqz v1, :cond_0
 
     .line 306
-    new-instance v3, Lorg/spongycastle/asn1/BERTaggedObject;
+    new-instance v1, Lorg/spongycastle/asn1/BERTaggedObject;
 
-    invoke-direct {v3, v2, v2, v1}, Lorg/spongycastle/asn1/BERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
+    iget-object v3, p0, Lorg/spongycastle/asn1/cms/SignedData;->certificates:Lorg/spongycastle/asn1/ASN1Set;
 
-    invoke-virtual {v0, v3}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
+    invoke-direct {v1, v2, v2, v3}, Lorg/spongycastle/asn1/BERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
+
+    invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
 
     goto :goto_0
 
@@ -656,18 +662,20 @@
     if-eqz v1, :cond_3
 
     .line 316
-    iget-boolean v3, p0, Lorg/spongycastle/asn1/cms/SignedData;->crlsBer:Z
+    iget-boolean v1, p0, Lorg/spongycastle/asn1/cms/SignedData;->crlsBer:Z
 
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
-    if-eqz v3, :cond_2
+    if-eqz v1, :cond_2
 
     .line 318
-    new-instance v3, Lorg/spongycastle/asn1/BERTaggedObject;
+    new-instance v1, Lorg/spongycastle/asn1/BERTaggedObject;
 
-    invoke-direct {v3, v2, v4, v1}, Lorg/spongycastle/asn1/BERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
+    iget-object v4, p0, Lorg/spongycastle/asn1/cms/SignedData;->crls:Lorg/spongycastle/asn1/ASN1Set;
 
-    invoke-virtual {v0, v3}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
+    invoke-direct {v1, v2, v3, v4}, Lorg/spongycastle/asn1/BERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
+
+    invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
 
     goto :goto_1
 
@@ -675,9 +683,9 @@
     :cond_2
     new-instance v1, Lorg/spongycastle/asn1/DERTaggedObject;
 
-    iget-object v3, p0, Lorg/spongycastle/asn1/cms/SignedData;->crls:Lorg/spongycastle/asn1/ASN1Set;
+    iget-object v4, p0, Lorg/spongycastle/asn1/cms/SignedData;->crls:Lorg/spongycastle/asn1/ASN1Set;
 
-    invoke-direct {v1, v2, v4, v3}, Lorg/spongycastle/asn1/DERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
+    invoke-direct {v1, v2, v3, v4}, Lorg/spongycastle/asn1/DERTaggedObject;-><init>(ZILorg/spongycastle/asn1/ASN1Encodable;)V
 
     invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
 

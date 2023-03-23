@@ -98,6 +98,8 @@
     .line 79
     new-instance v1, Lorg/spongycastle/crypto/params/DSAParameterGenerationParameters;
 
+    iget v2, p0, Lorg/spongycastle/jcajce/provider/asymmetric/dsa/AlgorithmParameterGeneratorSpi;->strength:I
+
     const/16 v4, 0x100
 
     iget-object v5, p0, Lorg/spongycastle/jcajce/provider/asymmetric/dsa/AlgorithmParameterGeneratorSpi;->random:Ljava/security/SecureRandom;
@@ -197,7 +199,7 @@
     :cond_0
     new-instance p1, Ljava/security/InvalidParameterException;
 
-    const-string p2, "strength must be a multiple of 64 below 1024 bits."
+    const-string/jumbo p2, "strength must be a multiple of 64 below 1024 bits."
 
     invoke-direct {p1, p2}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 
@@ -218,7 +220,7 @@
     :cond_2
     new-instance p1, Ljava/security/InvalidParameterException;
 
-    const-string p2, "strength must be a multiple of 1024 above 1024 bits."
+    const-string/jumbo p2, "strength must be a multiple of 1024 above 1024 bits."
 
     invoke-direct {p1, p2}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 
@@ -238,7 +240,7 @@
     :cond_4
     new-instance p1, Ljava/security/InvalidParameterException;
 
-    const-string p2, "strength must be from 512 - 3072"
+    const-string/jumbo p2, "strength must be from 512 - 3072"
 
     invoke-direct {p1, p2}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 

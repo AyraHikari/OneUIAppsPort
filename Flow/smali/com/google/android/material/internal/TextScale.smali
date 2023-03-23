@@ -80,7 +80,7 @@
 
     if-eqz p3, :cond_4
 
-    .line 57
+    .line 59
     iget-object v0, p2, Landroidx/transition/TransitionValues;->view:Landroid/view/View;
 
     instance-of v0, v0, Landroid/widget/TextView;
@@ -95,21 +95,21 @@
 
     goto :goto_1
 
-    .line 63
+    .line 65
     :cond_0
     iget-object v0, p3, Landroidx/transition/TransitionValues;->view:Landroid/view/View;
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 64
+    .line 66
     iget-object p2, p2, Landroidx/transition/TransitionValues;->values:Ljava/util/Map;
 
-    .line 65
+    .line 67
     iget-object p3, p3, Landroidx/transition/TransitionValues;->values:Ljava/util/Map;
 
     const-string v1, "android:textscale:scale"
 
-    .line 67
+    .line 69
     invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -133,7 +133,7 @@
     :cond_1
     move p2, v3
 
-    .line 69
+    .line 71
     :goto_0
     invoke-interface {p3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -171,12 +171,12 @@
 
     aput v3, p1, p2
 
-    .line 74
+    .line 76
     invoke-static {p1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object p1
 
-    .line 76
+    .line 78
     new-instance p2, Lcom/google/android/material/internal/TextScale$1;
 
     invoke-direct {p2, p0, v0}, Lcom/google/android/material/internal/TextScale$1;-><init>(Lcom/google/android/material/internal/TextScale;Landroid/widget/TextView;)V

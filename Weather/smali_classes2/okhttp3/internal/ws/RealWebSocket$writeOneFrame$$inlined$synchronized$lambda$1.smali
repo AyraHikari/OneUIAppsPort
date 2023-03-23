@@ -13,10 +13,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$execute$1\n+ 2 RealWebSocket.kt\nokhttp3/internal/ws/RealWebSocket\n*L\n1#1,218:1\n513#2,2:219\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -44,31 +40,31 @@
 
 
 # instance fields
-.field final synthetic $cancelable:Z
+.field public final synthetic $cancelable:Z
 
-.field final synthetic $messageOrClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+.field public final synthetic $messageOrClose$inlined:Loi/b0;
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $pong$inlined:Lokio/ByteString;
+.field public final synthetic $pong$inlined:Lokio/ByteString;
 
-.field final synthetic $readerToClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+.field public final synthetic $readerToClose$inlined:Loi/b0;
 
-.field final synthetic $receivedCloseCode$inlined:Lkotlin/jvm/internal/Ref$IntRef;
+.field public final synthetic $receivedCloseCode$inlined:Loi/z;
 
-.field final synthetic $receivedCloseReason$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+.field public final synthetic $receivedCloseReason$inlined:Loi/b0;
 
-.field final synthetic $streamsToClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+.field public final synthetic $streamsToClose$inlined:Loi/b0;
 
-.field final synthetic $writer$inlined:Lokhttp3/internal/ws/WebSocketWriter;
+.field public final synthetic $writer$inlined:Lokhttp3/internal/ws/WebSocketWriter;
 
-.field final synthetic $writerToClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+.field public final synthetic $writerToClose$inlined:Loi/b0;
 
-.field final synthetic this$0:Lokhttp3/internal/ws/RealWebSocket;
+.field public final synthetic this$0:Lokhttp3/internal/ws/RealWebSocket;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;ZLokhttp3/internal/ws/RealWebSocket;Lokhttp3/internal/ws/WebSocketWriter;Lokio/ByteString;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$IntRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;)V
+.method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;ZLokhttp3/internal/ws/RealWebSocket;Lokhttp3/internal/ws/WebSocketWriter;Lokio/ByteString;Loi/b0;Loi/z;Loi/b0;Loi/b0;Loi/b0;Loi/b0;)V
     .locals 0
 
     iput-object p1, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$name:Ljava/lang/String;
@@ -81,19 +77,18 @@
 
     iput-object p7, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$pong$inlined:Lokio/ByteString;
 
-    iput-object p8, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$messageOrClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+    iput-object p8, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$messageOrClose$inlined:Loi/b0;
 
-    iput-object p9, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$receivedCloseCode$inlined:Lkotlin/jvm/internal/Ref$IntRef;
+    iput-object p9, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$receivedCloseCode$inlined:Loi/z;
 
-    iput-object p10, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$receivedCloseReason$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+    iput-object p10, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$receivedCloseReason$inlined:Loi/b0;
 
-    iput-object p11, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$streamsToClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+    iput-object p11, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$streamsToClose$inlined:Loi/b0;
 
-    iput-object p12, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$readerToClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+    iput-object p12, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$readerToClose$inlined:Loi/b0;
 
-    iput-object p13, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$writerToClose$inlined:Lkotlin/jvm/internal/Ref$ObjectRef;
+    iput-object p13, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->$writerToClose$inlined:Loi/b0;
 
-    .line 96
     invoke-direct {p0, p3, p4}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;Z)V
 
     return-void
@@ -104,7 +99,6 @@
 .method public runOnce()J
     .locals 2
 
-    .line 219
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$writeOneFrame$$inlined$synchronized$lambda$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     invoke-virtual {v0}, Lokhttp3/internal/ws/RealWebSocket;->cancel()V

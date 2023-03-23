@@ -40,7 +40,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 13
 
     .line 47
     new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
@@ -53,84 +53,74 @@
 
     sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->INT:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    new-instance v1, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    const-string v1, "LONG"
+    const-string v3, "LONG"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->LONG:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    sput-object v1, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->LONG:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    new-instance v3, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    const-string v1, "BIG_INTEGER"
+    const-string v5, "BIG_INTEGER"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->BIG_INTEGER:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    sput-object v3, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->BIG_INTEGER:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    new-instance v5, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    const-string v1, "FLOAT"
+    const-string v7, "FLOAT"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->FLOAT:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    sput-object v5, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->FLOAT:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    new-instance v7, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    const-string v1, "DOUBLE"
+    const-string v9, "DOUBLE"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->DOUBLE:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    sput-object v7, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->DOUBLE:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    new-instance v9, Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    const-string v1, "BIG_DECIMAL"
+    const-string v11, "BIG_DECIMAL"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/fasterxml/jackson/core/JsonParser$NumberType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->BIG_DECIMAL:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    sput-object v9, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->BIG_DECIMAL:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
-    const/4 v1, 0x6
+    const/4 v11, 0x6
 
-    new-array v1, v1, [Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    new-array v11, v11, [Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+
+    aput-object v0, v11, v2
+
+    aput-object v1, v11, v4
+
+    aput-object v3, v11, v6
+
+    aput-object v5, v11, v8
+
+    aput-object v7, v11, v10
+
+    aput-object v9, v11, v12
 
     .line 46
-    sget-object v8, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->INT:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
-
-    aput-object v8, v1, v2
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->LONG:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->BIG_INTEGER:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->FLOAT:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->DOUBLE:Lcom/fasterxml/jackson/core/JsonParser$NumberType;
-
-    aput-object v2, v1, v6
-
-    aput-object v0, v1, v7
-
-    sput-object v1, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->$VALUES:[Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+    sput-object v11, Lcom/fasterxml/jackson/core/JsonParser$NumberType;->$VALUES:[Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 
     return-void
 .end method

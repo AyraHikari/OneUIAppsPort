@@ -4,16 +4,7 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUStrings.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UStrings.kt\nkotlin/text/UStringsKt\n*L\n1#1,296:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000,\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0013\u001a\u001e\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0005\u0010\u0006\u001a\u001e\u0010\u0000\u001a\u00020\u0001*\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0008\u0010\t\u001a\u001e\u0010\u0000\u001a\u00020\u0001*\u00020\n2\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000b\u0010\u000c\u001a\u001e\u0010\u0000\u001a\u00020\u0001*\u00020\r2\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000e\u0010\u000f\u001a\u0014\u0010\u0010\u001a\u00020\u0002*\u00020\u0001H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0011\u001a\u001c\u0010\u0010\u001a\u00020\u0002*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0012\u001a\u0011\u0010\u0013\u001a\u0004\u0018\u00010\u0002*\u00020\u0001H\u0007\u00f8\u0001\u0000\u001a\u0019\u0010\u0013\u001a\u0004\u0018\u00010\u0002*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u001a\u0014\u0010\u0014\u001a\u00020\u0007*\u00020\u0001H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0015\u001a\u001c\u0010\u0014\u001a\u00020\u0007*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0016\u001a\u0011\u0010\u0017\u001a\u0004\u0018\u00010\u0007*\u00020\u0001H\u0007\u00f8\u0001\u0000\u001a\u0019\u0010\u0017\u001a\u0004\u0018\u00010\u0007*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u001a\u0014\u0010\u0018\u001a\u00020\n*\u00020\u0001H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0019\u001a\u001c\u0010\u0018\u001a\u00020\n*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001a\u001a\u0011\u0010\u001b\u001a\u0004\u0018\u00010\n*\u00020\u0001H\u0007\u00f8\u0001\u0000\u001a\u0019\u0010\u001b\u001a\u0004\u0018\u00010\n*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u001a\u0014\u0010\u001c\u001a\u00020\r*\u00020\u0001H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001d\u001a\u001c\u0010\u001c\u001a\u00020\r*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001e\u001a\u0011\u0010\u001f\u001a\u0004\u0018\u00010\r*\u00020\u0001H\u0007\u00f8\u0001\u0000\u001a\u0019\u0010\u001f\u001a\u0004\u0018\u00010\r*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006 "
     }
@@ -55,9 +46,10 @@
     k = 0x2
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -91,9 +83,9 @@
 
     move-result-object p0
 
-    const-string p1, "java.lang.Integer.toStri\u2026(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(this, checkRadix(radix))"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -116,9 +108,9 @@
 
     move-result-object p0
 
-    const-string p1, "java.lang.Long.toString(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(this, checkRadix(radix))"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -139,9 +131,9 @@
 
     move-result-object p0
 
-    const-string p1, "java.lang.Integer.toStri\u2026(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(this, checkRadix(radix))"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -149,9 +141,9 @@
 .method public static final toUByte(Ljava/lang/String;)B
     .locals 1
 
-    const-string v0, "$this$toUByte"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 57
     invoke-static {p0}, Lkotlin/text/UStringsKt;->toUByteOrNull(Ljava/lang/String;)Lkotlin/UByte;
@@ -169,7 +161,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -177,9 +171,9 @@
 .method public static final toUByte(Ljava/lang/String;I)B
     .locals 1
 
-    const-string v0, "$this$toUByte"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 66
     invoke-static {p0, p1}, Lkotlin/text/UStringsKt;->toUByteOrNull(Ljava/lang/String;I)Lkotlin/UByte;
@@ -197,7 +191,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -205,9 +201,9 @@
 .method public static final toUByteOrNull(Ljava/lang/String;)Lkotlin/UByte;
     .locals 1
 
-    const-string v0, "$this$toUByteOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0xa
 
@@ -222,9 +218,9 @@
 .method public static final toUByteOrNull(Ljava/lang/String;I)Lkotlin/UByte;
     .locals 1
 
-    const-string v0, "$this$toUByteOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 141
     invoke-static {p0, p1}, Lkotlin/text/UStringsKt;->toUIntOrNull(Ljava/lang/String;I)Lkotlin/UInt;
@@ -275,9 +271,9 @@
 .method public static final toUInt(Ljava/lang/String;)I
     .locals 1
 
-    const-string v0, "$this$toUInt"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 92
     invoke-static {p0}, Lkotlin/text/UStringsKt;->toUIntOrNull(Ljava/lang/String;)Lkotlin/UInt;
@@ -295,7 +291,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -303,9 +301,9 @@
 .method public static final toUInt(Ljava/lang/String;I)I
     .locals 1
 
-    const-string v0, "$this$toUInt"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 101
     invoke-static {p0, p1}, Lkotlin/text/UStringsKt;->toUIntOrNull(Ljava/lang/String;I)Lkotlin/UInt;
@@ -323,7 +321,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -331,9 +331,9 @@
 .method public static final toUIntOrNull(Ljava/lang/String;)Lkotlin/UInt;
     .locals 1
 
-    const-string v0, "$this$toUIntOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0xa
 
@@ -348,9 +348,9 @@
 .method public static final toUIntOrNull(Ljava/lang/String;I)Lkotlin/UInt;
     .locals 10
 
-    const-string v0, "$this$toUIntOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 185
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
@@ -378,9 +378,14 @@
 
     const/16 v5, 0x30
 
+    .line 194
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+
+    move-result v5
+
     const/4 v6, 0x1
 
-    if-ge v4, v5, :cond_2
+    if-gez v5, :cond_2
 
     if-eq v0, v6, :cond_1
 
@@ -492,9 +497,9 @@
 .method public static final toULong(Ljava/lang/String;)J
     .locals 2
 
-    const-string v0, "$this$toULong"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 109
     invoke-static {p0}, Lkotlin/text/UStringsKt;->toULongOrNull(Ljava/lang/String;)Lkotlin/ULong;
@@ -512,7 +517,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -520,9 +527,9 @@
 .method public static final toULong(Ljava/lang/String;I)J
     .locals 1
 
-    const-string v0, "$this$toULong"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 118
     invoke-static {p0, p1}, Lkotlin/text/UStringsKt;->toULongOrNull(Ljava/lang/String;I)Lkotlin/ULong;
@@ -540,7 +547,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -548,9 +557,9 @@
 .method public static final toULongOrNull(Ljava/lang/String;)Lkotlin/ULong;
     .locals 1
 
-    const-string v0, "$this$toULongOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0xa
 
@@ -569,9 +578,9 @@
 
     move/from16 v1, p1
 
-    const-string v2, "$this$toULongOrNull"
+    const-string v2, "<this>"
 
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 249
     invoke-static/range {p1 .. p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
@@ -599,9 +608,14 @@
 
     const/16 v8, 0x30
 
+    .line 258
+    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+
+    move-result v8
+
     const/4 v9, 0x1
 
-    if-ge v7, v8, :cond_3
+    if-gez v8, :cond_3
 
     if-eq v2, v9, :cond_2
 
@@ -737,9 +751,9 @@
 .method public static final toUShort(Ljava/lang/String;)S
     .locals 1
 
-    const-string v0, "$this$toUShort"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 75
     invoke-static {p0}, Lkotlin/text/UStringsKt;->toUShortOrNull(Ljava/lang/String;)Lkotlin/UShort;
@@ -757,7 +771,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -765,9 +781,9 @@
 .method public static final toUShort(Ljava/lang/String;I)S
     .locals 1
 
-    const-string v0, "$this$toUShort"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 84
     invoke-static {p0, p1}, Lkotlin/text/UStringsKt;->toUShortOrNull(Ljava/lang/String;I)Lkotlin/UShort;
@@ -785,7 +801,9 @@
     :cond_0
     invoke-static {p0}, Lkotlin/text/StringsKt;->numberFormatError(Ljava/lang/String;)Ljava/lang/Void;
 
-    const/4 p0, 0x0
+    new-instance p0, Lkotlin/KotlinNothingValueException;
+
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
 
     throw p0
 .end method
@@ -793,9 +811,9 @@
 .method public static final toUShortOrNull(Ljava/lang/String;)Lkotlin/UShort;
     .locals 1
 
-    const-string v0, "$this$toUShortOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0xa
 
@@ -810,9 +828,9 @@
 .method public static final toUShortOrNull(Ljava/lang/String;I)Lkotlin/UShort;
     .locals 1
 
-    const-string v0, "$this$toUShortOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 163
     invoke-static {p0, p1}, Lkotlin/text/UStringsKt;->toUIntOrNull(Ljava/lang/String;I)Lkotlin/UInt;

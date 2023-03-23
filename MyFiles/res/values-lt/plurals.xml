@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Negalima pasirinkti daugiau nei %d elementų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Negalima pasirinkti daugiau nei %d elemento.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Negalima pasirinkti daugiau nei %d elementų.</item>
+        <item quantity="many">Negalima pasirinkti daugiau nei %d elemento.</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Negalima perkelti %d failų į šiukšlinę</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Negalima perkelti %d failo į šiukšlinę</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Negalima perkelti %d failų į šiukšlinę</item>
+        <item quantity="many">Negalima perkelti %d failų į šiukšlinę</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d aplankų negalima perkelti į šiukšlinę</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aplanko negalima perkelti į šiukšlinę</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d aplankų negalima perkelti į šiukšlinę</item>
+        <item quantity="many">%d aplankų negalima perkelti į šiukšlinę</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d elementų negalima perkelti į šiukšlinę</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elemento negalima perkelti į šiukšlinę</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elementų negalima perkelti į šiukšlinę</item>
+        <item quantity="many">%d elementų negalima perkelti į šiukšlinę</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d pasirinktų failų bus ištrinta, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d pasirinktas failas bus ištrintas, nes jis saugomas debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d pasirinkti failai bus ištrinti, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="many">%d pasirinktų failų bus ištrinta, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d pasirinktų aplankų bus ištrinta, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d pasirinktas aplankas bus ištrintas, nes jis saugomas debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d pasirinkti aplankai bus ištrinti, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="many">%d pasirinktų aplankų bus ištrinta, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d pasirinktų elementų bus ištrinta, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d pasirinktas elementas bus ištrintas, nes jis saugomas debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d pasirinkti elementai bus ištrinti, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+        <item quantity="many">%d pasirinktų elementų bus ištrinta, nes jie saugomi debesyje arba USB atminties įrenginyje.</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Glaudinama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Glaudinamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Glaudinami %d failai…</item>
+        <item quantity="many">Glaudinama %d failų…</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Glaudinama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Glaudinamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Glaudinami %d failai…</item>
+        <item quantity="many">Glaudinama %d failų…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Glaudinama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Glaudinamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Glaudinami %d aplankai…</item>
+        <item quantity="many">Glaudinama %d aplankų…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Glaudinama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Glaudinamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Glaudinami %d aplankai…</item>
+        <item quantity="many">Glaudinama %d aplankų…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Glaudinama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Glaudinamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Glaudinami %d elementai…</item>
+        <item quantity="many">Glaudinama %d elementų…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Glaudinama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Glaudinamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Glaudinami %d elementai…</item>
+        <item quantity="many">Glaudinama %d elementų…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Kopijuojama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopijuojamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopijuojami %d failai…</item>
+        <item quantity="many">Kopijuojama %d failų…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Kopijuojama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopijuojamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopijuojami %d failai…</item>
+        <item quantity="many">Kopijuojama %d failų…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Kopijuojama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopijuojamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopijuojami %d aplankai…</item>
+        <item quantity="many">Kopijuojama %d aplankų…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Kopijuojama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopijuojamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopijuojami %d aplankai…</item>
+        <item quantity="many">Kopijuojama %d aplankų…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Kopijuojama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopijuojamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopijuojami %d elementai…</item>
+        <item quantity="many">Kopijuojama %d elementų…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Kopijuojama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopijuojamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopijuojami %d elementai…</item>
+        <item quantity="many">Kopijuojama %d elementų…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Trinti %d failų iš jūsų telefono?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinti %d failą iš jūsų telefono?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinti %d failus iš jūsų telefono?</item>
+        <item quantity="many">Trinti %d failų iš jūsų telefono?</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Trinti %d failų iš planš. kompiuterio?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinti %d failą iš planš. kompiuterio?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinti %d failus iš planš. kompiuterio?</item>
+        <item quantity="many">Trinti %d failų iš planš. kompiuterio?</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Trinti %d aplankų iš jūsų telefono?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinti %d aplanką iš jūsų telefono?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinti %d aplankus iš jūsų telefono?</item>
+        <item quantity="many">Trinti %d aplankų iš jūsų telefono?</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Trinti %d aplankų iš planš. kompiuterio?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinti %d aplanką iš planš. kompiuterio?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinti %d aplankus iš planš. kompiuterio?</item>
+        <item quantity="many">Trinti %d aplankų iš planš. kompiuterio?</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Trinti %d elementų iš jūsų telefono?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinti %d elementą iš jūsų telefono?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinti %d elementus iš jūsų telefono?</item>
+        <item quantity="many">Trinti %d elementų iš jūsų telefono?</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Trinti %d elementų iš planš. kompiuterio?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinti %d elementą iš planš. kompiuterio?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinti %d elementus iš planš. kompiuterio?</item>
+        <item quantity="many">Trinti %d elementų iš planš. kompiuterio?</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Trinama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinami %d failai…</item>
+        <item quantity="many">Trinama %d failų…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Trinama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinami %d aplankai…</item>
+        <item quantity="many">Trinama %d aplankų…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Trinama %d elem. iš šiukšlin…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinamas %d elem. iš šiukšl…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinami %d elem. iš šiukšlin…</item>
+        <item quantity="many">Trinama %d elem. iš šiukšlin…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Trinama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinami %d elementai…</item>
+        <item quantity="many">Trinama %d elementų…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Išskleidžiama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Išskleidžiamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Išskleidžiami %d failai…</item>
+        <item quantity="many">Išskleidžiama %d failų…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Išskleidžiama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Išskleidžiamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Išskleidžiami %d aplankai…</item>
+        <item quantity="many">Išskleidžiama %d aplankų…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Išskleidžiama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Išskleidžiamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Išskleidžiami %d elementai…</item>
+        <item quantity="many">Išskleidžiama %d elementų…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d failų taip pat bus perkelta į šiukšlinę %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d failas taip pat bus perkeltas į šiukšlinę %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d failai taip pat bus perkelti į šiukšlinę %2$s.</item>
+        <item quantity="many">%1$d failų taip pat bus perkelta į šiukšlinę %2$s.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Atkuriama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atkuriamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atkuriami %d failai…</item>
+        <item quantity="many">Atkuriama %d failų…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d aplankų taip pat bus perkelta į šiukšlinę %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d aplankas taip pat bus perkeltas į šiukšlinę %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d aplankai taip pat bus perkelti į šiukšlinę %2$s.</item>
+        <item quantity="many">%1$d aplankų taip pat bus perkelta į šiukšlinę %2$s.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Atkuriama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atkuriamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atkuriami %d aplankai…</item>
+        <item quantity="many">Atkuriama %d aplankų…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Vidinė saugykla pilna. Visam laikui ištrinti %d failų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vidinė saugykla pilna. Visam laikui ištrinti %d failą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vidinė saugykla pilna. Visam laikui ištrinti %d failus?</item>
+        <item quantity="many">Vidinė saugykla pilna. Visam laikui ištrinti %d failo?</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Vidinė saugykla pilna. Visam laikui ištrinti %d aplankų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vidinė saugykla pilna. Visam laikui ištrinti %d aplanką?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vidinė saugykla pilna. Visam laikui ištrinti %d aplankus?</item>
+        <item quantity="many">Vidinė saugykla pilna. Visam laikui ištrinti %d aplanko?</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Vidinė saugykla pilna. Visam laikui ištrinti %d elementų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vidinė saugykla pilna. Visam laikui ištrinti %d elementą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vidinė saugykla pilna. Visam laikui ištrinti %d elementus?</item>
+        <item quantity="many">Vidinė saugykla pilna. Visam laikui ištrinti %d elemento?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d failų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d failą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d failus?</item>
+        <item quantity="many">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d failo?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d aplankų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d aplanką?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d aplankus?</item>
+        <item quantity="many">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d aplanko?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d elementų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d elementą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d elementus?</item>
+        <item quantity="many">Jūsų vidinė atmintis ir SD kortelė pilna. Visam laikui ištrinti %d elemento?</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Atkuriama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atkuriamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atkuriami %d elementai…</item>
+        <item quantity="many">Atkuriama %d elementų…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d elementų taip pat bus perkelta į šiukšlinę %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elementas taip pat bus perkeltas į šiukšlinę %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d elementai taip pat bus perkelti į šiukšlinę %2$s.</item>
+        <item quantity="many">%1$d elementų taip pat bus perkelta į šiukšlinę %2$s.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Negalima atidaryti daugiau nei %d programos langų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Negalima atidaryti daugiau nei %d programos lango.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Negalima atidaryti daugiau nei %d programos langų.</item>
+        <item quantity="many">Negalima atidaryti daugiau nei %d programos langų.</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Perkelti %d failų į šiukšlinę?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkelti %d failą į šiukšlinę?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkelti %d failus į šiukšlinę?</item>
+        <item quantity="many">Perkelti %d failų į šiukšlinę?</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Perkelti %d failų į šiukšlinę?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkelti %d failą į šiukšlinę?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkelti %d failus į šiukšlinę?</item>
+        <item quantity="many">Perkelti %d failų į šiukšlinę?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Perkelti %d aplankų į šiukšlinę?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkelti %d aplanką į šiukšlinę?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkelti %d aplankus į šiukšlinę?</item>
+        <item quantity="many">Perkelti %d aplankų į šiukšlinę?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Perkelti %d aplankų į šiukšlinę?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkelti %d aplanką į šiukšlinę?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkelti %d aplankus į šiukšlinę?</item>
+        <item quantity="many">Perkelti %d aplankų į šiukšlinę?</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Perkelti %d elementų į šiukšlinę?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkelti %d elementą į šiukšlinę?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkelti %d elementus į šiukšlinę?</item>
+        <item quantity="many">Perkelti %d elemento į šiukšlinę?</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Perkelti %d elementų į šiukšlinę?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkelti %d elementą į šiukšlinę?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkelti %d elementus į šiukšlinę?</item>
+        <item quantity="many">Perkelti %d elementų į šiukšlinę?</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Perkeliama %d failų į šiukšlinę…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d failas į šiukšlinę…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d failai į šiukšlinę…</item>
+        <item quantity="many">Perkeliama %d failų į šiukšlinę…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Perkeliama %d aplankų į šiukšlinę…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d aplankas į šiukšlinę…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d aplankai į šiukšlinę…</item>
+        <item quantity="many">Perkeliama %d aplankų į šiukšlinę…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Perkeliama %d elementų į šiukšlinę…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d elementas į šiukšlinę…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d elementai į šiukšlinę…</item>
+        <item quantity="many">Perkeliama %d elementų į šiukšlinę…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Perkeliama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d failai…</item>
+        <item quantity="many">Perkeliama %d failų…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Perkeliama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d failai…</item>
+        <item quantity="many">Perkeliama %d failų…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Perkeliama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d aplankai…</item>
+        <item quantity="many">Perkeliama %d aplankų…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Perkeliama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d aplankai…</item>
+        <item quantity="many">Perkeliama %d aplankų…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Perkeliama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d elementai…</item>
+        <item quantity="many">Perkeliama %d elementų…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Perkeliama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Perkeliamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Perkeliami %d elementai…</item>
+        <item quantity="many">Perkeliama %d elementų…</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">Suglaudinta %d elementų</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Suglaudintas %d elementas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Suglaudinti %d elementai</item>
+        <item quantity="many">Suglaudinta %d elementų</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d elementų nukopijuota į %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elementas nukopijuotas į %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d elementai nukopijuoti į %2$s</item>
+        <item quantity="many">%1$d elementų nukopijuota į %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Trinti aplanką ir jame esančius (-ių) %d failus (-ų)?</item>
+        <item quantity="one">Trinti aplanką ir jame esantį failą?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Trinti %1$d aplankus (-ų) ir %2$d juose esančius (-ių) failus (-ų)?</item>
+        <item quantity="one">Trinti aplanką ir jame esantį failą?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">Ištrinta %d elementų</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ištrintas %d elementas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ištrinti %d elementai</item>
+        <item quantity="many">Ištrinta %d elementų</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Atsisiunčiama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atsisiunčiamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atsisiunčiami %d failai…</item>
+        <item quantity="many">Atsisiunčiama %d failų…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Atsisiunčiama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atsisiunčiamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atsisiunčiami %d aplankai…</item>
+        <item quantity="many">Atsisiunčiama %d aplankų…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Atsisiunčiama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atsisiunčiamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atsisiunčiami %d elementai…</item>
+        <item quantity="many">Atsisiunčiama %d elementų…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Aplankų bendrinti negalima. Aplankai tušti.</item>
+        <item quantity="one">Aplanko bendrinti negalima. Aplankas tuščias.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d failų bus ištrinta visam laikui.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d failas bus ištrintas visam laikui.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d failai bus ištrinti visam laikui.</item>
+        <item quantity="many">%d failų bus ištrinta visam laikui.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">Visam laikui bus ištrinta %d aplankų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Visam laikui bus ištrintas %d aplankas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Visam laikui bus ištrinti %d aplankai.</item>
+        <item quantity="many">Visam laikui bus ištrinta %d aplankų.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">Išskleista %d elementų</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Išskleistas %d elementas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Išskleisti %d elementai</item>
+        <item quantity="many">Išskleista %d elementų</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">Prie parankinių pridėti %d failų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Prie parankinių pridėtas %d failas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Prie parankinių pridėti %d failai.</item>
+        <item quantity="many">Prie parankinių pridėta %d failų.</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d failų pašalinta iš mėgstamiausiųjų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d failas pašalintas iš mėgstamiausiųjų.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d failai pašalinti iš mėgstamiausiųjų.</item>
+        <item quantity="many">%d failo pašalinta iš mėgstamiausiųjų.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">Prie parankinių pridėti %d aplankų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Prie parankinių pridėtas %d aplankas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Prie parankinių pridėti %d aplankai.</item>
+        <item quantity="many">Prie parankinių pridėta %d aplankų.</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d aplankų pašalinta iš mėgstamiausiųjų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aplankas pašalintas iš mėgstamiausiųjų.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d aplankai pašalinti iš mėgstamiausiųjų.</item>
+        <item quantity="many">%d aplanko pašalinta iš mėgstamiausiųjų.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">Prie parankinių pridėti %d elementų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Prie parankinių pridėtas %d elementas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Prie parankinių pridėti %d elementai.</item>
+        <item quantity="many">Prie parankinių pridėta %d elementų.</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d elementų pašalinta iš mėgstamiausiųjų.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementas pašalintas iš mėgstamiausiųjų.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elementai pašalinti iš mėgstamiausiųjų.</item>
+        <item quantity="many">%d elemento pašalinta iš mėgstamiausiųjų.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d element.</item>
+        <item quantity="one">1 element.</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d element.</item>
+        <item quantity="one">%d elementas</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d elementų nukopijuota į iškarpinę</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementas nukopijuotas į iškarpinę</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elementai nukopijuoti į iškarpinę</item>
+        <item quantity="many">%d elementų nukopijuota į iškarpinę</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d elementų perkelta į iškarpinę</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementas perkeltas į iškarpinę</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elementai perkelti į iškarpinę</item>
+        <item quantity="many">%d elementų perkelta į iškarpinę</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">Pasirinkta %d elementų</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pasirinktas %d elementas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pasirinkti %d elementai</item>
+        <item quantity="many">Pasirinkta %d elementų</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d elementų perkelta į %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d elementas perkeltas į %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d elementai perkelti į %2$s</item>
+        <item quantity="many">%1$d elementų perkelta į %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d elementų perkelta į šiukšlinę</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementas perkeltas į šiukšlinę</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elementai perkelti į šiukšlinę</item>
+        <item quantity="many">%d elementų perkelta į šiukšlinę</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">Parinkta: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Parinkta: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Parinkta: %d</item>
+        <item quantity="many">Parinkta: %d</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Jūsų SD kortelė pilna. Visam laikui ištrinti %d failų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jūsų SD kortelė pilna. Visam laikui ištrinti %d failą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Jūsų SD kortelė pilna. Visam laikui ištrinti %d failus?</item>
+        <item quantity="many">Jūsų SD kortelė pilna. Visam laikui ištrinti %d failo?</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Jūsų SD kortelė pilna. Visam laikui ištrinti %d aplankų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jūsų SD kortelė pilna. Visam laikui ištrinti %d aplanką?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Jūsų SD kortelė pilna. Visam laikui ištrinti %d aplankus?</item>
+        <item quantity="many">Jūsų SD kortelė pilna. Visam laikui ištrinti %d aplanko?</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Jūsų SD kortelė pilna. Visam laikui ištrinti %d elementų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jūsų SD kortelė pilna. Visam laikui ištrinti %d elementą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Jūsų SD kortelė pilna. Visam laikui ištrinti %d elementus?</item>
+        <item quantity="many">Jūsų SD kortelė pilna. Visam laikui ištrinti %d elemento?</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Šis failas bus ištrintas po %d d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Šis failas bus ištrintas po %d d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Šis failas bus ištrintas po %d d.</item>
+        <item quantity="many">Šis failas bus ištrintas po %d d.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Šis aplankas bus ištrintas po %d d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Šis aplankas bus ištrintas po %d d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Šis aplankas bus ištrintas po %d d.</item>
+        <item quantity="many">Šis aplankas bus ištrintas po %d d.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Visam laikui ištrinti %d failų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Visam laikui ištrinti %d failą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Visam laikui ištrinti %d failus?</item>
+        <item quantity="many">Visam laikui ištrinti %d failų?</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Trinama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinami %d failai…</item>
+        <item quantity="many">Trinama %d failų…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Atkuriama %d failų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atkuriamas %d failas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atkuriami %d failai…</item>
+        <item quantity="many">Atkuriama %d failų…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Visam laikui ištrinti %d aplankų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Visam laikui ištrinti %d aplanką?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Visam laikui ištrinti %d aplankus?</item>
+        <item quantity="many">Visam laikui ištrinti %d aplankų?</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Trinama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinama %d aplankai…</item>
+        <item quantity="many">Trinama %d aplankų…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Atkuriama %d aplankų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atkuriamas %d aplankas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atkuriami %d aplankai…</item>
+        <item quantity="many">Atkuriama %d aplankų…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Visam laikui ištrinti %d elementų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Visam laikui ištrinti %d elementą?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Visam laikui ištrinti %d elementus?</item>
+        <item quantity="many">Visam laikui ištrinti %d elementų?</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Trinama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trinamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trinami %d elementai…</item>
+        <item quantity="many">Trinama %d elementų…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Atkuriama %d elementų…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Atkuriamas %d elementas…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Atkuriami %d elementai…</item>
+        <item quantity="many">Atkuriama %d elementų…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Bus ištrinta po %d d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bus ištrinta po %d d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Bus ištrinta po %d d.</item>
+        <item quantity="many">Bus ištrinta po %d d.</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Pašalinti %d programų?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pašalinti %d programas?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Pašalinti %d programas?</item>
+        <item quantity="many">Pašalinti %d programų?</item>
+    </plurals>
+</resources>

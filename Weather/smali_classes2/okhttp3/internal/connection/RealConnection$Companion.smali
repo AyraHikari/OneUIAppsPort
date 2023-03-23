@@ -56,7 +56,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 747
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,7 +64,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 747
     invoke-direct {p0}, Lokhttp3/internal/connection/RealConnection$Companion;-><init>()V
 
     return-void
@@ -78,25 +76,25 @@
 
     const-string v0, "connectionPool"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "route"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "socket"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 758
+    .line 1
     new-instance v0, Lokhttp3/internal/connection/RealConnection;
 
     invoke-direct {v0, p1, p2}, Lokhttp3/internal/connection/RealConnection;-><init>(Lokhttp3/internal/connection/RealConnectionPool;Lokhttp3/Route;)V
 
-    .line 759
+    .line 2
     invoke-static {v0, p3}, Lokhttp3/internal/connection/RealConnection;->access$setSocket$p(Lokhttp3/internal/connection/RealConnection;Ljava/net/Socket;)V
 
-    .line 760
+    .line 3
     invoke-virtual {v0, p4, p5}, Lokhttp3/internal/connection/RealConnection;->setIdleAtNs$okhttp(J)V
 
     return-object v0

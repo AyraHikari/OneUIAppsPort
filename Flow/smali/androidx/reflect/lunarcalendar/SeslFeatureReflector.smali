@@ -19,6 +19,14 @@
 
 .method public static getSolarLunarConverter(Ldalvik/system/PathClassLoader;)Ljava/lang/Object;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pathClassLoader"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -52,6 +60,14 @@
 
 .method public static getSolarLunarTables(Ldalvik/system/PathClassLoader;)Ljava/lang/Object;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pathClassLoader"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

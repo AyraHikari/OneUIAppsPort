@@ -49,6 +49,20 @@
 
 .method private static accumField(IIZI)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "amt",
+            "suffix",
+            "always",
+            "zeropad"
+        }
+    .end annotation
 
     const/4 v0, 0x3
 
@@ -108,6 +122,18 @@
 
 .method public static formatDuration(JJLjava/io/PrintWriter;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "now",
+            "pw"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -135,6 +161,16 @@
 
 .method public static formatDuration(JLjava/io/PrintWriter;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "duration",
+            "pw"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -146,6 +182,18 @@
 
 .method public static formatDuration(JLjava/io/PrintWriter;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "duration",
+            "pw",
+            "fieldLen"
+        }
+    .end annotation
 
     .line 163
     sget-object v0, Landroidx/core/util/TimeUtils;->sFormatSync:Ljava/lang/Object;
@@ -186,6 +234,16 @@
 
 .method public static formatDuration(JLjava/lang/StringBuilder;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "duration",
+            "builder"
+        }
+    .end annotation
 
     .line 154
     sget-object v0, Landroidx/core/util/TimeUtils;->sFormatSync:Ljava/lang/Object;
@@ -222,6 +280,16 @@
 
 .method private static formatDurationLocked(JI)I
     .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "duration",
+            "fieldLen"
+        }
+    .end annotation
 
     move-wide/from16 v0, p0
 
@@ -628,6 +696,24 @@
 
 .method private static printField([CICIZI)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "formatStr",
+            "amt",
+            "suffix",
+            "pos",
+            "always",
+            "zeropad"
+        }
+    .end annotation
 
     if-nez p4, :cond_0
 

@@ -29,6 +29,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContentNotificationAlarmContentDao_Impl;Landroidx/room/RoomDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "database"
+        }
+    .end annotation
 
     .line 32
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContentNotificationAlarmContentDao_Impl$1;->this$0:Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContentNotificationAlarmContentDao_Impl;
@@ -42,6 +52,16 @@
 # virtual methods
 .method public bind(Landroidx/sqlite/db/SupportSQLiteStatement;Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stmt",
+            "value"
+        }
+    .end annotation
 
     .line 40
     iget v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;->uid:I
@@ -95,6 +115,16 @@
 
 .method public bridge synthetic bind(Landroidx/sqlite/db/SupportSQLiteStatement;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "stmt",
+            "value"
+        }
+    .end annotation
 
     .line 32
     check-cast p2, Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;

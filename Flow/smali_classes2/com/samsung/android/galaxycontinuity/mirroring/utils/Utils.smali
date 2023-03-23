@@ -37,7 +37,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 55
+    .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,13 +45,21 @@
 
 .method private static bitmapToInputStream(Landroid/graphics/Bitmap;)Ljava/io/InputStream;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bitmap"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] bitmapToInputStream"
 
-    .line 308
+    .line 307
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 310
+    .line 309
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
@@ -64,19 +72,19 @@
 
     mul-int/lit8 v0, v0, 0x4
 
-    .line 311
+    .line 310
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v1, v0}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
-    .line 312
+    .line 311
     sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v2, 0x64
 
     invoke-virtual {p0, v0, v2, v1}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 313
+    .line 312
     new-instance p0, Ljava/io/ByteArrayInputStream;
 
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -85,11 +93,11 @@
 
     invoke-direct {p0, v0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    .line 315
+    .line 314
     :try_start_0
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->flush()V
 
-    .line 316
+    .line 315
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -99,7 +107,7 @@
     :catch_0
     move-exception p0
 
-    .line 319
+    .line 318
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -108,13 +116,17 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -127,8 +139,16 @@
 
 .method public static checkSettingsString(Ljava/lang/String;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
 
-    .line 505
+    .line 471
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -139,13 +159,13 @@
 
     const/4 v1, 0x0
 
-    .line 507
+    .line 473
     :try_start_0
     invoke-static {v0, p0, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 508
+    .line 474
     invoke-static {v0, p0, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -154,7 +174,7 @@
 
     return p0
 
-    .line 510
+    .line 476
     :catch_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -164,9 +184,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -177,13 +201,23 @@
 
 .method public static deleteAllImg(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "folder"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] deleteAllImg"
 
-    .line 326
+    .line 325
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 328
+    .line 327
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -196,33 +230,39 @@
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string p0, "/"
+    move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "/"
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 329
+    .line 328
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    .line 330
+    .line 329
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 332
+    .line 331
     array-length p1, p0
 
     const/4 v0, 0x0
@@ -232,14 +272,14 @@
 
     aget-object v1, p0, v0
 
-    .line 333
+    .line 332
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 334
+    .line 333
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -248,13 +288,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -271,16 +315,24 @@
 
 .method public static drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] drawableToBitmap"
 
-    .line 294
+    .line 293
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 299
+    .line 298
     sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    .line 300
+    .line 299
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v1
@@ -293,12 +345,12 @@
 
     move-result-object v0
 
-    .line 301
+    .line 300
     new-instance v1, Landroid/graphics/Canvas;
 
     invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 302
+    .line 301
     invoke-virtual {v1}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v2
@@ -311,7 +363,7 @@
 
     invoke-virtual {p0, v4, v4, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 303
+    .line 302
     invoke-virtual {p0, v1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     return-object v0
@@ -322,15 +374,15 @@
 
     const/4 v0, 0x0
 
-    .line 380
+    .line 365
     :try_start_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x18
 
     if-le v1, v2, :cond_0
 
-    .line 381
+    .line 366
     const-class v1, Landroid/view/MotionEvent;
 
     const-string v2, "FLAG_FROM_WFD"
@@ -341,7 +393,7 @@
 
     const/4 v2, 0x0
 
-    .line 382
+    .line 367
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -359,7 +411,7 @@
     :catch_0
     move-exception v1
 
-    .line 385
+    .line 370
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0
@@ -369,8 +421,16 @@
 
 .method public static getHeightPixels(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 116
+    .line 117
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -381,7 +441,7 @@
 
     iget p0, p0, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    .line 117
+    .line 118
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -390,7 +450,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -403,8 +467,16 @@
 
 .method public static getOrientation(Landroid/content/Context;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 135
+    .line 136
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -420,10 +492,18 @@
 
 .method public static getRealDisplayHeight(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    const-string v0, "window"
+    const-string/jumbo v0, "window"
 
-    .line 193
+    .line 194
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -434,20 +514,20 @@
 
     if-eqz p0, :cond_0
 
-    .line 198
+    .line 199
     :try_start_0
     new-instance v1, Landroid/util/DisplayMetrics;
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
 
-    .line 199
+    .line 200
     invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object p0
 
     invoke-virtual {p0, v1}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 200
+    .line 201
     iget p0, v1, Landroid/util/DisplayMetrics;->heightPixels:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -459,10 +539,10 @@
     :catch_0
     move-exception p0
 
-    .line 203
+    .line 204
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 207
+    .line 208
     :cond_0
     :goto_0
     new-instance p0, Ljava/lang/StringBuilder;
@@ -473,7 +553,11 @@
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -486,10 +570,18 @@
 
 .method public static getRealDisplayWidth(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    const-string v0, "window"
+    const-string/jumbo v0, "window"
 
-    .line 214
+    .line 215
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -528,7 +620,7 @@
     .line 224
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 228
+    .line 227
     :cond_0
     :goto_0
     new-instance p0, Ljava/lang/StringBuilder;
@@ -539,7 +631,11 @@
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -552,10 +648,18 @@
 
 .method public static getRotationAngle(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    const-string v0, "window"
+    const-string/jumbo v0, "window"
 
-    .line 143
+    .line 144
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -566,7 +670,7 @@
 
     move-result-object p0
 
-    .line 144
+    .line 145
     invoke-virtual {p0}, Landroid/view/Display;->getRotation()I
 
     move-result p0
@@ -602,7 +706,7 @@
 
     const/16 v0, 0xb4
 
-    .line 154
+    .line 155
     :cond_3
     :goto_0
     new-instance p0, Ljava/lang/StringBuilder;
@@ -613,7 +717,11 @@
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -626,10 +734,22 @@
 
 .method public static getStringByLocal(Landroid/content/Context;ILjava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id",
+            "locale"
+        }
+    .end annotation
 
-    const-string v0, "vi"
+    const-string/jumbo v0, "vi"
 
-    .line 276
+    .line 275
     invoke-virtual {p2, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -654,20 +774,20 @@
 
     goto :goto_0
 
-    .line 287
+    .line 286
     :cond_0
     new-instance p0, Ljava/util/Locale;
 
     invoke-direct {p0, p2}, Ljava/util/Locale;-><init>(Ljava/lang/String;)V
 
-    .line 288
+    .line 287
     invoke-virtual {p0}, Ljava/util/Locale;->getDisplayLanguage()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 277
+    .line 276
     :cond_1
     :goto_0
     new-instance v0, Landroid/content/res/Configuration;
@@ -682,14 +802,14 @@
 
     invoke-direct {v0, v1}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
 
-    .line 278
+    .line 277
     new-instance v1, Ljava/util/Locale;
 
     invoke-direct {v1, p2}, Ljava/util/Locale;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/content/res/Configuration;->setLocale(Ljava/util/Locale;)V
 
-    .line 279
+    .line 278
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -698,15 +818,19 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 281
+    .line 280
     :try_start_0
     invoke-virtual {p0, v0}, Landroid/content/Context;->createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
 
@@ -724,7 +848,7 @@
 
     return-object p0
 
-    .line 284
+    .line 283
     :catch_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -739,15 +863,23 @@
 
 .method public static getTopClassName(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mContext"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] getTopClassName"
 
-    .line 342
+    .line 341
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const-string v0, "activity"
 
-    .line 345
+    .line 344
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -758,7 +890,7 @@
 
     const/4 v0, 0x1
 
-    .line 347
+    .line 346
     invoke-virtual {p0, v0}, Landroid/app/ActivityManager;->getRunningTasks(I)Ljava/util/List;
 
     move-result-object p0
@@ -767,7 +899,7 @@
 
     const/4 v0, 0x0
 
-    .line 350
+    .line 349
     :try_start_0
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -777,7 +909,7 @@
 
     iget-object p0, p0, Landroid/app/ActivityManager$RunningTaskInfo;->topActivity:Landroid/content/ComponentName;
 
-    .line 351
+    .line 350
     invoke-virtual {p0}, Landroid/content/ComponentName;->getClassName()Ljava/lang/String;
 
     move-result-object p0
@@ -800,8 +932,16 @@
 
 .method public static getWidthPixels(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 109
+    .line 110
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -812,7 +952,7 @@
 
     iget p0, p0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    .line 110
+    .line 111
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -821,7 +961,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -833,9 +977,17 @@
 .end method
 
 .method public static hasNavBar(Landroid/content/Context;)Z
-    .locals 8
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 422
+    .line 409
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -846,116 +998,25 @@
 
     const-string v3, "android"
 
-    .line 423
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result v1
+    move-result v0
 
-    const/4 v2, 0x1
+    if-eqz v0, :cond_0
 
-    if-eqz v1, :cond_3
-
-    .line 426
-    sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x10
-
-    const-string v4, ""
-
-    const/4 v5, 0x0
-
-    if-lt p0, v3, :cond_0
-
-    :try_start_0
-    const-string p0, "android.os.SystemProperties"
-
-    .line 428
-    invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    .line 411
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 
-    const-string v3, "get"
-
-    new-array v6, v2, [Ljava/lang/Class;
-
-    .line 429
-    const-class v7, Ljava/lang/String;
-
-    aput-object v7, v6, v5
-
-    invoke-virtual {p0, v3, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object p0
-
-    .line 430
-    invoke-virtual {p0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
-
-    const/4 v3, 0x0
-
-    new-array v6, v2, [Ljava/lang/Object;
-
-    const-string v7, "qemu.hw.mainkeys"
-
-    aput-object v7, v6, v5
-
-    .line 431
-    invoke-virtual {p0, v3, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-object v4, p0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    .line 435
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
-
-    .line 439
-    :cond_0
-    :goto_0
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getBoolean(I)Z
 
     move-result p0
 
-    const-string v0, "1"
+    goto :goto_0
 
-    .line 441
-    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    move v2, v5
-
-    goto :goto_1
-
-    :cond_1
-    const-string v0, "0"
-
-    .line 443
-    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    move v2, p0
-
-    goto :goto_1
-
-    .line 446
-    :cond_3
+    .line 413
+    :cond_0
     invoke-static {p0}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
 
     move-result-object p0
@@ -964,33 +1025,37 @@
 
     move-result p0
 
-    xor-int/2addr v2, p0
+    xor-int/lit8 p0, p0, 0x1
 
-    .line 449
-    :goto_1
-    new-instance p0, Ljava/lang/StringBuilder;
+    .line 415
+    :goto_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "[Mirroring] hasNavBar = "
+    const-string v1, "[Mirroring] hasNavBar = "
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    return v2
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return p0
 .end method
 
 .method public static isDexEnabled()Z
     .locals 3
 
-    .line 531
+    .line 497
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -1005,8 +1070,18 @@
 
     return v1
 
-    .line 535
+    .line 500
     :cond_0
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x19
+
+    if-ge v0, v2, :cond_1
+
+    return v1
+
+    .line 504
+    :cond_1
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -1020,9 +1095,9 @@
 
     check-cast v0, Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
-    .line 537
+    .line 506
     invoke-virtual {v0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->getDesktopModeState()Lcom/samsung/android/desktopmode/SemDesktopModeState;
 
     move-result-object v0
@@ -1030,34 +1105,52 @@
     iget v0, v0, Lcom/samsung/android/desktopmode/SemDesktopModeState;->enabled:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     const/4 v2, 0x4
 
-    if-ne v0, v2, :cond_1
+    if-ne v0, v2, :cond_2
 
     const/4 v1, 0x1
 
-    :cond_1
+    :cond_2
     return v1
+
+    :catchall_0
+    const-string v0, "No search method error"
+
+    .line 510
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+
+    goto :goto_0
 
     :catch_0
     move-exception v0
 
-    .line 539
+    .line 508
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
+    :goto_0
     return v1
 .end method
 
 .method public static isFreeForm(Landroid/app/Activity;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
-    .line 518
+    .line 484
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
-    const-string v1, "window"
+    const-string/jumbo v1, "window"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -1065,19 +1158,19 @@
 
     check-cast v0, Landroid/view/WindowManager;
 
-    .line 519
+    .line 485
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 521
+    .line 487
     invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getRectSize(Landroid/graphics/Rect;)V
 
-    .line 522
+    .line 488
     invoke-virtual {p0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object p0
@@ -1088,7 +1181,7 @@
 
     invoke-virtual {p0, v1}, Landroid/view/Display;->getRectSize(Landroid/graphics/Rect;)V
 
-    .line 525
+    .line 491
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p0
@@ -1101,7 +1194,7 @@
 
     move-result-object p0
 
-    .line 527
+    .line 493
     iget v0, v1, Landroid/graphics/Rect;->bottom:I
 
     iget v2, p0, Landroid/util/DisplayMetrics;->heightPixels:I
@@ -1132,7 +1225,7 @@
 .method public static isGoogleCastConnected()Z
     .locals 7
 
-    .line 559
+    .line 530
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -1147,7 +1240,7 @@
 
     const/4 v1, 0x4
 
-    .line 560
+    .line 531
     invoke-virtual {v0, v1}, Landroid/media/MediaRouter;->getSelectedRoute(I)Landroid/media/MediaRouter$RouteInfo;
 
     move-result-object v0
@@ -1156,22 +1249,22 @@
 
     const/4 v3, -0x2
 
-    .line 564
+    .line 535
     :try_start_0
     const-class v4, Landroid/media/MediaRouter$RouteInfo;
 
-    const-string v5, "semGetStatusCode"
+    const-string/jumbo v5, "semGetStatusCode"
 
     new-array v6, v2, [Ljava/lang/Class;
 
-    .line 565
+    .line 536
     invoke-virtual {v4, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v4
 
     new-array v5, v2, [Ljava/lang/Object;
 
-    .line 566
+    .line 537
     invoke-virtual {v4, v0, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -1182,7 +1275,7 @@
 
     move-result v3
 
-    .line 567
+    .line 538
     const-class v4, Landroid/hardware/usb/UsbManager;
 
     const-string v5, "SEM_STATUS_CONNECTED"
@@ -1193,7 +1286,7 @@
 
     const/4 v5, 0x0
 
-    .line 568
+    .line 539
     invoke-virtual {v4, v5}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -1229,13 +1322,13 @@
     :catch_3
     move-exception v4
 
-    .line 570
+    .line 541
     :goto_0
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const/4 v4, -0x1
 
-    .line 573
+    .line 544
     :goto_1
     invoke-virtual {v0}, Landroid/media/MediaRouter$RouteInfo;->getSupportedTypes()I
 
@@ -1245,7 +1338,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 574
+    .line 545
     invoke-virtual {v0}, Landroid/media/MediaRouter$RouteInfo;->semGetDeviceAddress()Ljava/lang/String;
 
     move-result-object v1
@@ -1254,7 +1347,7 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 576
+    .line 547
     invoke-virtual {v0}, Landroid/media/MediaRouter$RouteInfo;->getPresentationDisplay()Landroid/view/Display;
 
     move-result-object v1
@@ -1291,23 +1384,23 @@
 .end method
 
 .method public static isHdmiSwitchSet()Z
-    .locals 4
+    .locals 5
 
-    .line 398
+    .line 383
     new-instance v0, Ljava/io/File;
 
     const-string v1, "/sys/devices/virtual/switch/hdmi/state"
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 399
+    .line 384
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 400
+    .line 385
     new-instance v0, Ljava/io/File;
 
     const-string v1, "/sys/class/switch/hdmi/state"
@@ -1317,91 +1410,95 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 404
+    const/4 v2, 0x0
+
+    .line 390
     :try_start_0
-    new-instance v2, Ljava/util/Scanner;
+    new-instance v3, Ljava/util/Scanner;
 
-    const-string v3, "UTF-8"
+    const-string v4, "UTF-8"
 
-    invoke-direct {v2, v0, v3}, Ljava/util/Scanner;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v3, v0, v4}, Ljava/util/Scanner;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 405
-    invoke-virtual {v2}, Ljava/util/Scanner;->nextInt()I
+    .line 391
+    :try_start_1
+    invoke-virtual {v3}, Ljava/util/Scanner;->nextInt()I
 
     move-result v0
 
-    .line 406
-    invoke-virtual {v2}, Ljava/util/Scanner;->close()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .line 392
+    invoke-virtual {v3}, Ljava/util/Scanner;->close()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    if-lez v0, :cond_1
+    if-lez v0, :cond_2
 
     const/4 v0, 0x1
 
-    move v1, v0
+    move v2, v0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception v0
 
-    .line 412
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-object v1, v3
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    :goto_0
+    if-eqz v1, :cond_1
+
+    .line 399
+    invoke-virtual {v1}, Ljava/util/Scanner;->close()V
+
+    .line 400
+    :cond_1
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v3, "[Mirroring] isHdmiSwitchSet : Exception = "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 415
-    :cond_1
-    :goto_0
+    .line 403
+    :cond_2
+    :goto_1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "[Mirroring] isHdmiSwitchSet : Result = "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
-
-    return v1
-.end method
-
-.method public static isIntentAvailable(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 2
-
-    .line 361
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "[Mirroring] isIntentAvailable : action = "
+    const-string v1, "[Mirroring] isHdmiSwitchSet : Result = "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1409,46 +1506,21 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 363
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_0
-
-    .line 366
-    new-instance v1, Landroid/content/Intent;
-
-    invoke-direct {v1, p1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const/high16 p1, 0x10000
-
-    .line 367
-    invoke-virtual {p0, v1, p1}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    .line 368
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result p0
-
-    if-lez p0, :cond_0
-
-    const/4 v0, 0x1
-
-    :cond_0
-    return v0
+    return v2
 .end method
 
 .method public static isLandscape(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 126
+    .line 127
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->getOrientation(Landroid/content/Context;)I
 
     move-result p0
@@ -1471,7 +1543,7 @@
 .method public static isSupportedLengthField()Z
     .locals 3
 
-    .line 95
+    .line 96
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -1491,7 +1563,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 101
+    .line 102
     :goto_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1501,7 +1573,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1515,7 +1591,7 @@
 .method public static isWifiDisplayConnected()Z
     .locals 3
 
-    .line 545
+    .line 516
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -1530,7 +1606,7 @@
 
     return v1
 
-    .line 549
+    .line 520
     :cond_0
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -1545,7 +1621,7 @@
 
     check-cast v0, Landroid/hardware/display/DisplayManager;
 
-    .line 550
+    .line 521
     invoke-virtual {v0}, Landroid/hardware/display/DisplayManager;->semGetWifiDisplayStatus()Landroid/hardware/display/SemWifiDisplayStatus;
 
     move-result-object v0
@@ -1568,7 +1644,7 @@
     :catch_0
     move-exception v0
 
-    .line 552
+    .line 523
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return v1
@@ -1576,8 +1652,38 @@
 
 .method public static obtain(JJIIIIIIIIILjava/lang/String;)Landroid/view/KeyEvent;
     .locals 19
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "downTime",
+            "eventTime",
+            "action",
+            "code",
+            "repeat",
+            "metaState",
+            "deviceId",
+            "scancode",
+            "flags",
+            "displayId",
+            "source",
+            "characters"
+        }
+    .end annotation
 
-    .line 236
+    .line 235
     new-instance v1, Landroid/view/KeyEvent;
 
     move/from16 v0, p4
@@ -1595,7 +1701,7 @@
     :try_start_0
     const-string v6, "android.view.KeyEvent"
 
-    .line 238
+    .line 237
     invoke-static {v6}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v5
@@ -1604,7 +1710,7 @@
 
     new-array v7, v6, [Ljava/lang/Class;
 
-    .line 239
+    .line 238
     sget-object v8, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     aput-object v8, v7, v4
@@ -1675,14 +1781,14 @@
 
     const-string v8, "obtain"
 
-    .line 240
+    .line 239
     invoke-virtual {v5, v8, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v7
 
     new-array v6, v6, [Ljava/lang/Object;
 
-    .line 241
+    .line 240
     invoke-static/range {p0 .. p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v8
@@ -1766,12 +1872,12 @@
     :catch_0
     move-exception v0
 
-    .line 243
+    .line 242
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 246
+    .line 245
     :goto_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x18
 
@@ -1780,11 +1886,11 @@
     if-eqz v5, :cond_0
 
     :try_start_1
-    const-string v0, "semSetDisplayId"
+    const-string/jumbo v0, "semSetDisplayId"
 
     new-array v2, v3, [Ljava/lang/Class;
 
-    .line 249
+    .line 248
     sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     aput-object v6, v2, v4
@@ -1795,7 +1901,7 @@
 
     new-array v2, v3, [Ljava/lang/Object;
 
-    .line 250
+    .line 249
     invoke-static/range {p11 .. p11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -1823,11 +1929,11 @@
     :catch_3
     move-exception v0
 
-    .line 253
+    .line 252
     :goto_1
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 259
+    .line 258
     :cond_0
     :goto_2
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1838,7 +1944,11 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1851,10 +1961,22 @@
 
 .method public static setLayoutParams(Landroid/view/WindowManager$LayoutParams;II)Landroid/view/WindowManager$LayoutParams;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mParams",
+            "w",
+            "h"
+        }
+    .end annotation
 
     const/16 p0, 0x7d2
 
-    .line 456
+    .line 422
     :try_start_0
     const-class v0, Landroid/view/WindowManager$LayoutParams;
 
@@ -1866,7 +1988,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 458
+    .line 424
     invoke-virtual {v0, v0}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result p0
@@ -1876,7 +1998,7 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 465
+    .line 431
     :catch_0
     :cond_0
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
@@ -1889,13 +2011,13 @@
 
     const/16 p0, 0x33
 
-    .line 474
+    .line 440
     iput p0, v0, Landroid/view/WindowManager$LayoutParams;->gravity:I
 
-    .line 475
+    .line 441
     iput p1, v0, Landroid/view/WindowManager$LayoutParams;->width:I
 
-    .line 476
+    .line 442
     iput p2, v0, Landroid/view/WindowManager$LayoutParams;->height:I
 
     return-object v0
@@ -1903,8 +2025,16 @@
 
 .method public static setSourceConnectSetting(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 482
+    .line 448
     sget-boolean v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->isConnected:Z
 
     const/4 v1, 0x1
@@ -1915,13 +2045,13 @@
 
     return-void
 
-    .line 487
+    .line 453
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isMyFilesSupportSamsungFlow()Z
 
     move-result v0
 
-    const-string v2, "smartview_dnd_enabled"
+    const-string/jumbo v2, "smartview_dnd_enabled"
 
     if-eqz v0, :cond_1
 
@@ -1934,9 +2064,9 @@
     goto :goto_0
 
     :cond_1
-    const-string v2, "sidesync_source_connect"
+    const-string/jumbo v2, "sidesync_source_connect"
 
-    .line 493
+    .line 459
     :goto_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -1946,13 +2076,13 @@
 
     move-result-object v0
 
-    .line 495
+    .line 461
     :try_start_0
     invoke-static {v0, v2, p0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     const/4 v3, 0x0
 
-    .line 496
+    .line 462
     invoke-static {v0, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
@@ -1966,22 +2096,28 @@
     :cond_2
     move v1, v3
 
-    .line 497
+    .line 463
     :goto_1
     sput-boolean v1, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils;->isConnected:Z
 
-    .line 498
+    .line 464
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     const-string v1, " : "
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1996,7 +2132,7 @@
     :catch_0
     move-exception p0
 
-    .line 500
+    .line 466
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_2
@@ -2005,6 +2141,16 @@
 
 .method public static setSourcePresentationSetting(Landroid/content/Context;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "value"
+        }
+    .end annotation
 
     return-void
 .end method

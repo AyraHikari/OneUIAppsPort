@@ -28,6 +28,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/command/tablet/RecvHotspotControlCommand;ZLcom/samsung/android/galaxycontinuity/data/HotspotInfoData;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$connect",
+            "val$hotspotInfoData"
+        }
+    .end annotation
 
     .line 83
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/command/tablet/RecvHotspotControlCommand$2;->this$0:Lcom/samsung/android/galaxycontinuity/command/tablet/RecvHotspotControlCommand;
@@ -92,7 +104,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f100122
+    const v2, 0x7f11016b
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getString(I)Ljava/lang/String;
 

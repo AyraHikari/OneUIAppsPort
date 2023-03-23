@@ -22,18 +22,9 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nULongRange.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ULongRange.kt\nkotlin/ranges/ULongRange\n*L\n1#1,127:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
-        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 \u00172\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00030\u0002:\u0001\u0017B\u0018\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0006J\u001b\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u0003H\u0096\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0013\u0010\u000f\u001a\u00020\u000b2\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011H\u0096\u0002J\u0008\u0010\u0012\u001a\u00020\u0013H\u0016J\u0008\u0010\u0014\u001a\u00020\u000bH\u0016J\u0008\u0010\u0015\u001a\u00020\u0016H\u0016R\u0017\u0010\u0005\u001a\u00020\u00038VX\u0096\u0004\u00f8\u0001\u0000\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u0017\u0010\u0004\u001a\u00020\u00038VX\u0096\u0004\u00f8\u0001\u0000\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\u0008\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0018"
+        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 \u00172\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00030\u0002:\u0001\u0017B\u0018\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0006J\u001b\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u0003H\u0096\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0013\u0010\u000f\u001a\u00020\u000b2\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011H\u0096\u0002J\u0008\u0010\u0012\u001a\u00020\u0013H\u0016J\u0008\u0010\u0014\u001a\u00020\u000bH\u0016J\u0008\u0010\u0015\u001a\u00020\u0016H\u0016R\u001a\u0010\u0005\u001a\u00020\u00038VX\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u001a\u0010\u0004\u001a\u00020\u00038VX\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\u0008\u00f8\u0001\u0000\u0082\u0002\u0008\n\u0002\u0008\u0019\n\u0002\u0008!\u00a8\u0006\u0018"
     }
     d2 = {
         "Lkotlin/ranges/ULongRange;",
@@ -43,9 +34,9 @@
         "start",
         "endInclusive",
         "(JJLkotlin/jvm/internal/DefaultConstructorMarker;)V",
-        "getEndInclusive",
-        "()Lkotlin/ULong;",
-        "getStart",
+        "getEndInclusive-s-VKNKU",
+        "()J",
+        "getStart-s-VKNKU",
         "contains",
         "",
         "value",
@@ -65,9 +56,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -89,7 +81,7 @@
 
     sput-object v0, Lkotlin/ranges/ULongRange;->Companion:Lkotlin/ranges/ULongRange$Companion;
 
-    .line 38
+    .line 43
     new-instance v0, Lkotlin/ranges/ULongRange;
 
     const-wide/16 v3, -0x1
@@ -129,7 +121,6 @@
 .method public synthetic constructor <init>(JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 19
     invoke-direct {p0, p1, p2, p3, p4}, Lkotlin/ranges/ULongRange;-><init>(JJ)V
 
     return-void
@@ -138,7 +129,7 @@
 .method public static final synthetic access$getEMPTY$cp()Lkotlin/ranges/ULongRange;
     .locals 1
 
-    .line 19
+    .line 17
     sget-object v0, Lkotlin/ranges/ULongRange;->EMPTY:Lkotlin/ranges/ULongRange;
 
     return-object v0
@@ -149,7 +140,7 @@
 .method public bridge synthetic contains(Ljava/lang/Comparable;)Z
     .locals 2
 
-    .line 19
+    .line 17
     check-cast p1, Lkotlin/ULong;
 
     invoke-virtual {p1}, Lkotlin/ULong;->unbox-impl()J
@@ -167,7 +158,7 @@
     .locals 2
 
     .line 23
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v0
 
@@ -177,7 +168,7 @@
 
     if-gtz v0, :cond_0
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v0
 
@@ -201,7 +192,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
-    .line 28
+    .line 33
     instance-of v0, p1, Lkotlin/ranges/ULongRange;
 
     if-eqz v0, :cond_2
@@ -222,14 +213,15 @@
 
     if-nez v0, :cond_1
 
+    .line 34
     :cond_0
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v0
 
     check-cast p1, Lkotlin/ranges/ULongRange;
 
-    invoke-virtual {p1}, Lkotlin/ranges/ULongRange;->getFirst()J
+    invoke-virtual {p1}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v2
 
@@ -237,11 +229,11 @@
 
     if-nez v0, :cond_2
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v0
 
-    invoke-virtual {p1}, Lkotlin/ranges/ULongRange;->getLast()J
+    invoke-virtual {p1}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v2
 
@@ -262,51 +254,36 @@
 .end method
 
 .method public bridge synthetic getEndInclusive()Ljava/lang/Comparable;
-    .locals 1
+    .locals 2
 
-    .line 19
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getEndInclusive()Lkotlin/ULong;
+    .line 17
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getEndInclusive-s-VKNKU()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lkotlin/ULong;->box-impl(J)Lkotlin/ULong;
 
     move-result-object v0
-
-    check-cast v0, Ljava/lang/Comparable;
 
     return-object v0
 .end method
 
-.method public getEndInclusive()Lkotlin/ULong;
+.method public getEndInclusive-s-VKNKU()J
     .locals 2
 
     .line 21
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v0
 
-    invoke-static {v0, v1}, Lkotlin/ULong;->box-impl(J)Lkotlin/ULong;
-
-    move-result-object v0
-
-    return-object v0
+    return-wide v0
 .end method
 
 .method public bridge synthetic getStart()Ljava/lang/Comparable;
-    .locals 1
-
-    .line 19
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getStart()Lkotlin/ULong;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Comparable;
-
-    return-object v0
-.end method
-
-.method public getStart()Lkotlin/ULong;
     .locals 2
 
-    .line 20
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst()J
+    .line 17
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getStart-s-VKNKU()J
 
     move-result-wide v0
 
@@ -315,12 +292,23 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public getStart-s-VKNKU()J
+    .locals 2
+
+    .line 20
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
+
+    move-result-wide v0
+
+    return-wide v0
 .end method
 
 .method public hashCode()I
     .locals 7
 
-    .line 32
+    .line 37
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->isEmpty()Z
 
     move-result v0
@@ -332,11 +320,11 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v0
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v2
 
@@ -358,11 +346,11 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v1
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v5
 
@@ -389,12 +377,12 @@
 .method public isEmpty()Z
     .locals 4
 
-    .line 25
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst()J
+    .line 30
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v0
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v2
 
@@ -418,12 +406,12 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 34
+    .line 39
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst()J
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v1
 
@@ -431,13 +419,17 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ".."
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast()J
+    move-result-object v0
+
+    invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v1
 
@@ -445,7 +437,9 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

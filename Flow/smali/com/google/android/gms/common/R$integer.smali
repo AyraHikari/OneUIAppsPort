@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final google_play_services_version:I = 0x7f0a0006
+.field public static final google_play_services_version:I = 0x7f0b0006
 
 
 # direct methods

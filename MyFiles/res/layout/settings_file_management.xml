@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/settings_file_management_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sec.android.app.myfiles.external.ui.widget.halfmargin.MyFilesSwitch android:id="@id/trash_switch" android:tag="binding_1" app:switch_subText="@string/menu_trash_sub" app:switch_text="@string/menu_trash" style="@style/MyFilesSwitch" />
+    <ViewStub android:id="@id/allow_mobile_switch_stub" android:tag="binding_2" android:layout="@layout/settings_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/allow_mobile_data_view_stub" android:layout="@layout/settings_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sec.android.app.myfiles.external.ui.widget.halfmargin.MyFilesSwitch android:id="@id/show_hidden_switch" android:tag="binding_3" app:switch_text="@string/menu_show_hidden_files" style="@style/MyFilesSwitch" />
+    <ViewStub android:id="@id/customization_service_stub" android:tag="binding_4" android:layout="@layout/settings_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

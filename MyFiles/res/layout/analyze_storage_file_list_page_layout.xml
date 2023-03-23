@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/analyze_storage_file_list_page_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="@color/light_theme_background_color" android:paddingTop="@dimen/path_indicator_vertical_margin" android:paddingBottom="@dimen/path_indicator_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/analyze_storage_list_sub_header_title_text_size" android:textColor="@color/storage_analysis_list_sub_header_title_text_color" android:ellipsize="end" android:id="@id/sa_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="@dimen/analyze_storage_list_sub_header_title_margin_start" android:layout_marginEnd="@dimen/analyze_storage_list_sub_header_title_margin_end" android:defaultFocusHighlightEnabled="false" />
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@id/sa_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/path_indicator_height" android:dropDownVerticalOffset="@dimen/as_spinner_offset" android:textAlignment="viewEnd" android:layout_marginEnd="@dimen/analyze_storage_list_sub_header_spinner_margin_end" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/contents_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/loading_view_stub" android:tag="binding_1" android:layout="@layout/loading_container" android:inflatedId="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/empty_view" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/no_item" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

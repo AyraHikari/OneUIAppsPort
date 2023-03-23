@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:tag="layout/allow_mobile_data_page_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner">
+            <com.sec.android.app.myfiles.external.ui.widget.halfmargin.MyFilesSwitch android:id="@id/cloud_switch" android:tag="binding_1" app:switch_text="@string/cloud_storage_body" style="@style/MyFilesSwitch" />
+            <com.sec.android.app.myfiles.external.ui.widget.halfmargin.MyFilesSwitch android:id="@id/network_switch" android:tag="binding_2" app:switch_divider="false" app:switch_text="@string/network_storage_body" style="@style/MyFilesSwitch" />
+        </LinearLayout>
+        <View android:minHeight="@dimen/basic_round_page_bottom_blank_height" style="@style/BackgroundMarginView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

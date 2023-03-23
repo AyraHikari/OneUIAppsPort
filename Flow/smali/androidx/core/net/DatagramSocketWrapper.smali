@@ -14,6 +14,17 @@
 # direct methods
 .method constructor <init>(Ljava/net/DatagramSocket;Ljava/io/FileDescriptor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "fd"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;

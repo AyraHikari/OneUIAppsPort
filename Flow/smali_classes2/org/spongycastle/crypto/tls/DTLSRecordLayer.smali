@@ -873,8 +873,6 @@
 
     if-eqz v6, :cond_7
 
-    iget-object v6, v1, Lorg/spongycastle/crypto/tls/DTLSRecordLayer;->retransmitEpoch:Lorg/spongycastle/crypto/tls/DTLSEpoch;
-
     .line 190
     invoke-virtual {v6}, Lorg/spongycastle/crypto/tls/DTLSEpoch;->getEpoch()I
 
@@ -1044,8 +1042,6 @@
     if-eqz v0, :cond_c
 
     .line 295
-    iget-object v0, v1, Lorg/spongycastle/crypto/tls/DTLSRecordLayer;->retransmit:Lorg/spongycastle/crypto/tls/DTLSHandshakeRetransmit;
-
     array-length v5, v3
 
     const/4 v6, 0x0
@@ -1128,8 +1124,6 @@
     if-eqz v0, :cond_11
 
     .line 283
-    iget-object v0, v1, Lorg/spongycastle/crypto/tls/DTLSRecordLayer;->pendingEpoch:Lorg/spongycastle/crypto/tls/DTLSEpoch;
-
     iput-object v0, v1, Lorg/spongycastle/crypto/tls/DTLSRecordLayer;->readEpoch:Lorg/spongycastle/crypto/tls/DTLSEpoch;
 
     :cond_11

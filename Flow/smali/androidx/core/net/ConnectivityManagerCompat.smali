@@ -6,6 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/core/net/ConnectivityManagerCompat$Api24Impl;,
+        Landroidx/core/net/ConnectivityManagerCompat$Api16Impl;,
         Landroidx/core/net/ConnectivityManagerCompat$RestrictBackgroundStatus;
     }
 .end annotation
@@ -23,7 +25,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 164
+    .line 170
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,10 +33,20 @@
 
 .method public static getNetworkInfoFromBroadcast(Landroid/net/ConnectivityManager;Landroid/content/Intent;)Landroid/net/NetworkInfo;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cm",
+            "intent"
+        }
+    .end annotation
 
     const-string v0, "networkInfo"
 
-    .line 139
+    .line 145
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
@@ -43,7 +55,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 141
+    .line 147
     invoke-virtual {p1}, Landroid/net/NetworkInfo;->getType()I
 
     move-result p1
@@ -62,16 +74,24 @@
 
 .method public static getRestrictBackgroundStatus(Landroid/net/ConnectivityManager;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cm"
+        }
+    .end annotation
 
-    .line 157
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 163
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 158
-    invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getRestrictBackgroundStatus()I
+    .line 164
+    invoke-static {p0}, Landroidx/core/net/ConnectivityManagerCompat$Api24Impl;->getRestrictBackgroundStatus(Landroid/net/ConnectivityManager;)I
 
     move-result p0
 
@@ -85,22 +105,30 @@
 
 .method public static isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cm"
+        }
+    .end annotation
 
-    .line 99
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 104
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 100
-    invoke-virtual {p0}, Landroid/net/ConnectivityManager;->isActiveNetworkMetered()Z
+    .line 105
+    invoke-static {p0}, Landroidx/core/net/ConnectivityManagerCompat$Api16Impl;->isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
 
     move-result p0
 
     return p0
 
-    .line 102
+    .line 107
     :cond_0
     invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -112,7 +140,7 @@
 
     return v0
 
-    .line 108
+    .line 113
     :cond_1
     invoke-virtual {p0}, Landroid/net/NetworkInfo;->getType()I
 

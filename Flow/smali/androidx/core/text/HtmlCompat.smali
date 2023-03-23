@@ -3,6 +3,14 @@
 .source "HtmlCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/text/HtmlCompat$Api24Impl;
+    }
+.end annotation
+
+
 # static fields
 .field public static final FROM_HTML_MODE_COMPACT:I = 0x3f
 
@@ -31,7 +39,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 181
+    .line 183
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,22 +47,32 @@
 
 .method public static fromHtml(Ljava/lang/String;I)Landroid/text/Spanned;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "source",
+            "flags"
+        }
+    .end annotation
 
-    .line 146
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 149
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 147
-    invoke-static {p0, p1}, Landroid/text/Html;->fromHtml(Ljava/lang/String;I)Landroid/text/Spanned;
+    .line 150
+    invoke-static {p0, p1}, Landroidx/core/text/HtmlCompat$Api24Impl;->fromHtml(Ljava/lang/String;I)Landroid/text/Spanned;
 
     move-result-object p0
 
     return-object p0
 
-    .line 150
+    .line 152
     :cond_0
     invoke-static {p0}, Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
 
@@ -65,22 +83,36 @@
 
 .method public static fromHtml(Ljava/lang/String;ILandroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "source",
+            "flags",
+            "imageGetter",
+            "tagHandler"
+        }
+    .end annotation
 
-    .line 161
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 164
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 162
-    invoke-static {p0, p1, p2, p3}, Landroid/text/Html;->fromHtml(Ljava/lang/String;ILandroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;
+    .line 165
+    invoke-static {p0, p1, p2, p3}, Landroidx/core/text/HtmlCompat$Api24Impl;->fromHtml(Ljava/lang/String;ILandroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;
 
     move-result-object p0
 
     return-object p0
 
-    .line 165
+    .line 167
     :cond_0
     invoke-static {p0, p2, p3}, Landroid/text/Html;->fromHtml(Ljava/lang/String;Landroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;
 
@@ -91,22 +123,32 @@
 
 .method public static toHtml(Landroid/text/Spanned;I)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "text",
+            "options"
+        }
+    .end annotation
 
-    .line 174
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 177
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 175
-    invoke-static {p0, p1}, Landroid/text/Html;->toHtml(Landroid/text/Spanned;I)Ljava/lang/String;
+    .line 178
+    invoke-static {p0, p1}, Landroidx/core/text/HtmlCompat$Api24Impl;->toHtml(Landroid/text/Spanned;I)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 178
+    .line 180
     :cond_0
     invoke-static {p0}, Landroid/text/Html;->toHtml(Landroid/text/Spanned;)Ljava/lang/String;
 

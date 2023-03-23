@@ -209,14 +209,14 @@
 .method private cacheResponseAge()J
     .locals 9
 
-    .line 301
+    .line 298
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->servedDate:Ljava/util/Date;
 
     const-wide/16 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 302
+    .line 299
     iget-wide v3, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->receivedResponseMillis:J
 
     invoke-virtual {v0}, Ljava/util/Date;->getTime()J
@@ -229,7 +229,7 @@
 
     move-result-wide v1
 
-    .line 304
+    .line 301
     :cond_0
     iget v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->ageSeconds:I
 
@@ -237,7 +237,7 @@
 
     if-eq v0, v3, :cond_1
 
-    .line 305
+    .line 302
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     iget v3, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->ageSeconds:I
@@ -252,7 +252,7 @@
 
     move-result-wide v1
 
-    .line 307
+    .line 304
     :cond_1
     iget-wide v3, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->receivedResponseMillis:J
 
@@ -260,7 +260,7 @@
 
     sub-long v5, v3, v5
 
-    .line 308
+    .line 305
     iget-wide v7, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->nowMillis:J
 
     sub-long/2addr v7, v3
@@ -275,14 +275,14 @@
 .method private computeFreshnessLifetime()J
     .locals 7
 
-    .line 272
+    .line 269
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponse:Lokhttp3/Response;
 
     invoke-virtual {v0}, Lokhttp3/Response;->cacheControl()Lokhttp3/CacheControl;
 
     move-result-object v0
 
-    .line 273
+    .line 270
     invoke-virtual {v0}, Lokhttp3/CacheControl;->maxAgeSeconds()I
 
     move-result v1
@@ -291,7 +291,7 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 274
+    .line 271
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0}, Lokhttp3/CacheControl;->maxAgeSeconds()I
@@ -306,7 +306,7 @@
 
     return-wide v0
 
-    .line 275
+    .line 272
     :cond_0
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->expires:Ljava/util/Date;
 
@@ -314,23 +314,23 @@
 
     if-eqz v0, :cond_3
 
-    .line 276
+    .line 273
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->servedDate:Ljava/util/Date;
 
     if-eqz v0, :cond_1
 
-    .line 277
+    .line 274
     invoke-virtual {v0}, Ljava/util/Date;->getTime()J
 
     move-result-wide v3
 
     goto :goto_0
 
-    .line 278
+    .line 275
     :cond_1
     iget-wide v3, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->receivedResponseMillis:J
 
-    .line 279
+    .line 276
     :goto_0
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->expires:Ljava/util/Date;
 
@@ -349,7 +349,7 @@
     :cond_2
     return-wide v1
 
-    .line 281
+    .line 278
     :cond_3
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->lastModified:Ljava/util/Date;
 
@@ -357,7 +357,7 @@
 
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponse:Lokhttp3/Response;
 
-    .line 282
+    .line 279
     invoke-virtual {v0}, Lokhttp3/Response;->request()Lokhttp3/Request;
 
     move-result-object v0
@@ -372,23 +372,23 @@
 
     if-nez v0, :cond_5
 
-    .line 287
+    .line 284
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->servedDate:Ljava/util/Date;
 
     if-eqz v0, :cond_4
 
-    .line 288
+    .line 285
     invoke-virtual {v0}, Ljava/util/Date;->getTime()J
 
     move-result-wide v3
 
     goto :goto_1
 
-    .line 289
+    .line 286
     :cond_4
     iget-wide v3, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->sentRequestMillis:J
 
-    .line 290
+    .line 287
     :goto_1
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->lastModified:Ljava/util/Date;
 
@@ -404,7 +404,7 @@
 
     const-wide/16 v0, 0xa
 
-    .line 291
+    .line 288
     div-long v1, v3, v0
 
     :cond_5
@@ -491,7 +491,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_e
+    if-nez v2, :cond_d
 
     iget-object v2, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->request:Lokhttp3/Request;
 
@@ -511,43 +511,26 @@
 
     move-result-object v2
 
-    .line 208
-    invoke-virtual {v2}, Lokhttp3/CacheControl;->immutable()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_4
-
     .line 209
-    new-instance v0, Lokhttp3/internal/cache/CacheStrategy;
-
-    iget-object v2, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponse:Lokhttp3/Response;
-
-    invoke-direct {v0, v1, v2}, Lokhttp3/internal/cache/CacheStrategy;-><init>(Lokhttp3/Request;Lokhttp3/Response;)V
-
-    return-object v0
-
-    .line 212
-    :cond_4
     invoke-direct {p0}, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponseAge()J
 
     move-result-wide v3
 
-    .line 213
+    .line 210
     invoke-direct {p0}, Lokhttp3/internal/cache/CacheStrategy$Factory;->computeFreshnessLifetime()J
 
     move-result-wide v5
 
-    .line 215
+    .line 212
     invoke-virtual {v0}, Lokhttp3/CacheControl;->maxAgeSeconds()I
 
     move-result v7
 
     const/4 v8, -0x1
 
-    if-eq v7, v8, :cond_5
+    if-eq v7, v8, :cond_4
 
-    .line 216
+    .line 213
     sget-object v7, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0}, Lokhttp3/CacheControl;->maxAgeSeconds()I
@@ -564,17 +547,17 @@
 
     move-result-wide v5
 
-    .line 220
-    :cond_5
+    .line 217
+    :cond_4
     invoke-virtual {v0}, Lokhttp3/CacheControl;->minFreshSeconds()I
 
     move-result v7
 
     const-wide/16 v9, 0x0
 
-    if-eq v7, v8, :cond_6
+    if-eq v7, v8, :cond_5
 
-    .line 221
+    .line 218
     sget-object v7, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0}, Lokhttp3/CacheControl;->minFreshSeconds()I
@@ -589,24 +572,24 @@
 
     goto :goto_0
 
-    :cond_6
+    :cond_5
     move-wide v11, v9
 
-    .line 225
+    .line 222
     :goto_0
     invoke-virtual {v2}, Lokhttp3/CacheControl;->mustRevalidate()Z
 
     move-result v7
 
-    if-nez v7, :cond_7
+    if-nez v7, :cond_6
 
     invoke-virtual {v0}, Lokhttp3/CacheControl;->maxStaleSeconds()I
 
     move-result v7
 
-    if-eq v7, v8, :cond_7
+    if-eq v7, v8, :cond_6
 
-    .line 226
+    .line 223
     sget-object v7, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0}, Lokhttp3/CacheControl;->maxStaleSeconds()I
@@ -619,13 +602,13 @@
 
     move-result-wide v9
 
-    .line 229
-    :cond_7
+    .line 226
+    :cond_6
     invoke-virtual {v2}, Lokhttp3/CacheControl;->noCache()Z
 
     move-result v0
 
-    if-nez v0, :cond_a
+    if-nez v0, :cond_9
 
     add-long/2addr v11, v3
 
@@ -633,9 +616,9 @@
 
     cmp-long v0, v11, v9
 
-    if-gez v0, :cond_a
+    if-gez v0, :cond_9
 
-    .line 230
+    .line 227
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponse:Lokhttp3/Response;
 
     invoke-virtual {v0}, Lokhttp3/Response;->newBuilder()Lokhttp3/Response$Builder;
@@ -646,34 +629,34 @@
 
     const-string v5, "Warning"
 
-    if-ltz v2, :cond_8
+    if-ltz v2, :cond_7
 
     const-string v2, "110 HttpURLConnection \"Response is stale\""
 
-    .line 232
+    .line 229
     invoke-virtual {v0, v5, v2}, Lokhttp3/Response$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Response$Builder;
 
-    :cond_8
+    :cond_7
     const-wide/32 v6, 0x5265c00
 
     cmp-long v2, v3, v6
 
-    if-lez v2, :cond_9
+    if-lez v2, :cond_8
 
-    .line 235
+    .line 232
     invoke-direct {p0}, Lokhttp3/internal/cache/CacheStrategy$Factory;->isFreshnessLifetimeHeuristic()Z
 
     move-result v2
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_8
 
     const-string v2, "113 HttpURLConnection \"Heuristic expiration\""
 
-    .line 236
+    .line 233
     invoke-virtual {v0, v5, v2}, Lokhttp3/Response$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Response$Builder;
 
-    .line 238
-    :cond_9
+    .line 235
+    :cond_8
     new-instance v2, Lokhttp3/internal/cache/CacheStrategy;
 
     invoke-virtual {v0}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
@@ -684,39 +667,39 @@
 
     return-object v2
 
-    .line 245
-    :cond_a
+    .line 242
+    :cond_9
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->etag:Ljava/lang/String;
 
     const-string v2, "If-Modified-Since"
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_a
 
     const-string v2, "If-None-Match"
 
     goto :goto_1
 
-    .line 248
-    :cond_b
+    .line 245
+    :cond_a
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->lastModified:Ljava/util/Date;
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_b
 
-    .line 250
+    .line 247
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->lastModifiedString:Ljava/lang/String;
 
     goto :goto_1
 
-    .line 251
-    :cond_c
+    .line 248
+    :cond_b
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->servedDate:Ljava/util/Date;
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_c
 
-    .line 253
+    .line 250
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->servedDateString:Ljava/lang/String;
 
-    .line 258
+    .line 255
     :goto_1
     iget-object v1, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->request:Lokhttp3/Request;
 
@@ -728,19 +711,19 @@
 
     move-result-object v1
 
-    .line 259
+    .line 256
     sget-object v3, Lokhttp3/internal/Internal;->instance:Lokhttp3/internal/Internal;
 
     invoke-virtual {v3, v1, v2, v0}, Lokhttp3/internal/Internal;->addLenient(Lokhttp3/Headers$Builder;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 261
+    .line 258
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->request:Lokhttp3/Request;
 
     invoke-virtual {v0}, Lokhttp3/Request;->newBuilder()Lokhttp3/Request$Builder;
 
     move-result-object v0
 
-    .line 262
+    .line 259
     invoke-virtual {v1}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
 
     move-result-object v1
@@ -749,12 +732,12 @@
 
     move-result-object v0
 
-    .line 263
+    .line 260
     invoke-virtual {v0}, Lokhttp3/Request$Builder;->build()Lokhttp3/Request;
 
     move-result-object v0
 
-    .line 264
+    .line 261
     new-instance v1, Lokhttp3/internal/cache/CacheStrategy;
 
     iget-object v2, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponse:Lokhttp3/Response;
@@ -763,8 +746,8 @@
 
     return-object v1
 
-    .line 255
-    :cond_d
+    .line 252
+    :cond_c
     new-instance v0, Lokhttp3/internal/cache/CacheStrategy;
 
     iget-object v2, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->request:Lokhttp3/Request;
@@ -774,7 +757,7 @@
     return-object v0
 
     .line 204
-    :cond_e
+    :cond_d
     :goto_2
     new-instance v0, Lokhttp3/internal/cache/CacheStrategy;
 
@@ -790,7 +773,7 @@
 
     const-string v0, "If-Modified-Since"
 
-    .line 326
+    .line 323
     invoke-virtual {p0, v0}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -823,7 +806,7 @@
 .method private isFreshnessLifetimeHeuristic()Z
     .locals 2
 
-    .line 317
+    .line 314
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponse:Lokhttp3/Response;
 
     invoke-virtual {v0}, Lokhttp3/Response;->cacheControl()Lokhttp3/CacheControl;

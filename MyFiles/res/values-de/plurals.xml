@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Es können höchstens %d Elemente ausgewählt werden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Es kann höchstens %d Element ausgewählt werden.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d Dateien können nicht in den Papierkorb verschoben werden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei kann nicht in den Papierkorb verschoben werden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Verschieben von %d Ordnern in den Papierkorb nicht möglich</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Verschieben von %d Ordner in den Papierkorb nicht möglich</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Verschieben von %d Elementen in den Papierkorb nicht möglich</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Verschieben von %d Element in den Papierkorb nicht möglich</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d der ausgewählten Dateien werden gelöscht, da sie sich in der Cloud oder auf einem USB-Speichergerät befinden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d der ausgewählten Dateien wird gelöscht, da sie sich in der Cloud oder auf einem USB-Speichergerät befindet.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d der ausgewählten Ordner werden gelöscht, da sie sich in der Cloud oder auf einem USB-Speichergerät befinden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d der ausgewählten Ordner wird gelöscht, da er sich in der Cloud oder auf einem USB-Speichergerät befindet.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d der ausgewählten Elemente werden gelöscht, da sie sich in der Cloud oder auf einem USB-Speichergerät befinden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d der ausgewählten Elemente wird gelöscht, da es sich in der Cloud oder auf einem USB-Speichergerät befindet.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d Dateien werden komprimiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird komprimiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d Dateien werden komprimiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird komprimiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d Ordner werden komprimiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird komprimiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d Ordner werden komprimiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird komprimiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d Elemente werden komprimiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird komprimiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d Elemente werden komprimiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird komprimiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d Dateien werden kopiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird kopiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d Dateien werden kopiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird kopiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d Ordner werden kopiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird kopiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d Ordner werden kopiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird kopiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d Elemente werden kopiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird kopiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d Elemente werden kopiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird kopiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">%d Dateien auf Ihrem Telefon löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei auf Ihrem Telefon löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">%d Dateien auf Ihrem Tablet löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei auf Ihrem Tablet löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">%d Ordner auf Ihrem Telefon löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner auf Ihrem Telefon löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">%d Ordner auf Ihrem Tablet löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner auf Ihrem Tablet löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">%d Elemente auf Ihrem Telefon löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element auf Ihrem Telefon löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">%d Elemente auf Ihrem Tablet löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element auf Ihrem Tablet löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d Dateien werden gelöscht…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird gelöscht…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d Ordner werden gelöscht…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird gelöscht…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Lösche %d Papierkorbelemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lösche %d Papierkorbelement…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d Elemente werden gelöscht…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird gelöscht…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d Dateien werden extrahiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird extrahiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d Ordner werden extrahiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird extrahiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d Elemente werden extrahiert…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird extrahiert…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d Dateien werden ebenfalls in den Papierkorb in %2$s verschoben.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d Datei wird ebenfalls in den Papierkorb in %2$s verschoben.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Wiederherstellen von %d Dateien…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wiederherstellen von %d Datei…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d Ordner werden ebenfalls in den Papierkorb in %2$s verschoben.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d Ordner wird ebenfalls in den Papierkorb in %2$s verschoben.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d Ordner werden wiederherg…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird wiederherg…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Der interne Speicher ist belegt. %d Dateien endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der interne Speicher ist belegt. %d Datei endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Der interne Speicher ist belegt. %d Ordner endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der interne Speicher ist belegt. %d Ordner endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Der interne Speicher ist belegt. %d Elemente endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der interne Speicher ist belegt. %d Element endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Der interne Speicher und die SD-Karte sind belegt. %d Dateien endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der interne Speicher und die SD-Karte sind belegt. %d Datei endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Der interne Speicher und die SD-Karte sind belegt. %d Ordner endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der interne Speicher und die SD-Karte sind belegt. %d Ordner endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Der interne Speicher und die SD-Karte sind belegt. %d Elemente endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der interne Speicher und die SD-Karte sind belegt. %d Element endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d Elemente werden wiederherg…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird wiederherg…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d Elemente werden ebenfalls in den Papierkorb in %2$s verschoben.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d Element wird ebenfalls in den Papierkorb in %2$s verschoben.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Es können nicht mehr als %d App-Fenster geöffnet werden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Es kann nicht mehr als %d App-Fenster geöffnet werden.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d Dateien in den Papierkorb verschieben?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei in den Papierkorb verschieben?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d Dateien in den Papierkorb verschieben?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei in den Papierkorb verschieben?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d Ordner in den Papierkorb verschieben?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner in den Papierkorb verschieben?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d Ordner in den Papierkorb verschieben?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner in den Papierkorb verschieben?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d Elemente in den Papierkorb verschieben?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element in den Papierkorb verschieben?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d Elemente in den Papierkorb verschieben?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element in den Papierkorb verschieben?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d Dateien werden in Papierkorb verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird in den Papierkorb verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d Ordner werden in Papierkorb verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird in Papierkorb verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Verschiebe %d Elemente in den Papierkorb…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird in Papierkorb verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d Dateien werden verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d Dateien werden verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d Ordner werden verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d Ordner werden verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d Elemente werden verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d Elemente werden verschoben…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird verschoben…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d Elemente komprimiert</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element komprimiert</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d Elemente nach %2$s kopiert</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d Element nach %2$s kopiert</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Ordner und die %d Dateien darin löschen?</item>
+        <item quantity="one">Ordner und die Datei darin löschen?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d Ordner und %2$d Dateien darin löschen?</item>
+        <item quantity="one">Ordner und die Datei darin löschen?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d Elemente gelöscht</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element gelöscht</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d Dat. werden heruntergeladen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird heruntergeladen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d Ordn. werden heruntergeladen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird heruntergeladen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d Elem. werden heruntergeladen…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird heruntergeladen…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Ordner können nicht freigegeben werden. Ordner sind leer.</item>
+        <item quantity="one">Ordner kann nicht freigegeben werden. Ordner ist leer.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d Dateien werden endgültig gelöscht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird endgültig gelöscht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d Ordner werden endgültig gelöscht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird endgültig gelöscht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d Elemente extrahiert</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element extrahiert</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d Dateien zu Favoriten hinzugefügt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei zu Favoriten hinzugefügt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d Dateien aus den Favoriten entfernt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei aus den Favoriten entfernt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d Ordner zu Favoriten hinzugefügt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner zu Favoriten hinzugefügt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d Ordner aus den Favoriten entfernt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner aus den Favoriten entfernt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d Elemente zu Favoriten hinzugefügt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element zu Favoriten hinzugefügt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d Elemente aus den Favoriten entfernt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element aus den Favoriten entfernt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d Objekte</item>
+        <item quantity="one">1 Element</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d Objekte</item>
+        <item quantity="one">%d Elemente</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d Elemente in die Zwischenablage kopiert</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element in die Zwischenablage kopiert</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d Elemente in die Zwischenablage verschoben</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element in die Zwischenablage verschoben</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d Elemente ausgewählt</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element ausgewählt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d Elemente zu %2$s verschoben</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d Element zu %2$s verschoben</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d Elemente in den Papierkorb verschoben</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element in den Papierkorb verschoben</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d ausgewählt</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ausgewählt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Die SD-Karte ist belegt. %d Dateien endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Die SD-Karte ist belegt. %d Datei endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Die SD-Karte ist belegt. %d Ordner endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Die SD-Karte ist belegt. %d Ordner endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Die SD-Karte ist belegt. %d Elemente endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Die SD-Karte ist belegt. %d Element endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Diese Datei wird in %d Tagen gelöscht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Diese Datei wird in %d Tag gelöscht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Dieser Ordner wird in %d Tagen gelöscht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dieser Ordner wird in %d Tag gelöscht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d Dateien endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d Dateien werden gelöscht…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird gelöscht…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d Dateien werden wiederhergestellt…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Datei wird wiederhergestellt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d Ordner endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d Ordner werden gelöscht…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird gelöscht…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d Ordner werden wiederhergestellt…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Ordner wird wiederhergestellt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d Elemente endgültig löschen?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element endgültig löschen?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d Elemente werden gelöscht…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird gelöscht…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d Elemente werden wiederhergestellt…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Element wird wiederhergestellt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Löschung in %d Tagen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Löschung in %d Tag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d Apps deinstallieren?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d App deinstallieren?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

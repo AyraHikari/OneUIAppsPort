@@ -12,6 +12,14 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "viewGroup"
+        }
+    .end annotation
 
     .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,6 +44,18 @@
 
 .method public onNestedScrollAccepted(Landroid/view/View;Landroid/view/View;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "child",
+            "target",
+            "axes"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -47,6 +67,20 @@
 
 .method public onNestedScrollAccepted(Landroid/view/View;Landroid/view/View;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "child",
+            "target",
+            "axes",
+            "type"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 
@@ -67,6 +101,14 @@
 
 .method public onStopNestedScroll(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -78,6 +120,16 @@
 
 .method public onStopNestedScroll(Landroid/view/View;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "target",
+            "type"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 

@@ -92,7 +92,7 @@
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "wrong version for private key info"
+    const-string/jumbo v0, "wrong version for private key info"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -241,7 +241,7 @@
     :catch_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string v1, "unable to parse private key"
+    const-string/jumbo v1, "unable to parse private key"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

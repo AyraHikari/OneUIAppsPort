@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 1363
+    .line 1336
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -31,7 +31,7 @@
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
     .locals 2
 
-    .line 1365
+    .line 1338
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->consume()C
 
     move-result p2
@@ -52,7 +52,7 @@
 
     if-eq p2, v0, :cond_0
 
-    .line 1387
+    .line 1360
     iget-object p1, p1, Lorg/jsoup/parser/Tokeniser;->doctypePending:Lorg/jsoup/parser/Token$Doctype;
 
     iget-object p1, p1, Lorg/jsoup/parser/Token$Doctype;->publicIdentifier:Ljava/lang/StringBuilder;
@@ -61,45 +61,45 @@
 
     goto :goto_0
 
-    .line 1381
+    .line 1354
     :cond_0
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->eofError(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 1382
+    .line 1355
     iget-object p2, p1, Lorg/jsoup/parser/Tokeniser;->doctypePending:Lorg/jsoup/parser/Token$Doctype;
 
     iput-boolean v1, p2, Lorg/jsoup/parser/Token$Doctype;->forceQuirks:Z
 
-    .line 1383
+    .line 1356
     invoke-virtual {p1}, Lorg/jsoup/parser/Tokeniser;->emitDoctypePending()V
 
-    .line 1384
+    .line 1357
     sget-object p2, Lorg/jsoup/parser/TokeniserState$58;->Data:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_0
 
-    .line 1375
+    .line 1348
     :cond_1
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->error(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 1376
+    .line 1349
     iget-object p2, p1, Lorg/jsoup/parser/Tokeniser;->doctypePending:Lorg/jsoup/parser/Token$Doctype;
 
     iput-boolean v1, p2, Lorg/jsoup/parser/Token$Doctype;->forceQuirks:Z
 
-    .line 1377
+    .line 1350
     invoke-virtual {p1}, Lorg/jsoup/parser/Tokeniser;->emitDoctypePending()V
 
-    .line 1378
+    .line 1351
     sget-object p2, Lorg/jsoup/parser/TokeniserState$58;->Data:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_0
 
-    .line 1368
+    .line 1341
     :cond_2
     sget-object p2, Lorg/jsoup/parser/TokeniserState$58;->AfterDoctypePublicIdentifier:Lorg/jsoup/parser/TokeniserState;
 
@@ -107,11 +107,11 @@
 
     goto :goto_0
 
-    .line 1371
+    .line 1344
     :cond_3
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->error(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 1372
+    .line 1345
     iget-object p1, p1, Lorg/jsoup/parser/Tokeniser;->doctypePending:Lorg/jsoup/parser/Token$Doctype;
 
     iget-object p1, p1, Lorg/jsoup/parser/Token$Doctype;->publicIdentifier:Ljava/lang/StringBuilder;

@@ -20,6 +20,14 @@
 # direct methods
 .method constructor <init>(Landroidx/room/RoomDatabase;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 
     .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,6 +54,19 @@
 # virtual methods
 .method create([Ljava/lang/String;ZLjava/util/concurrent/Callable;)Landroidx/lifecycle/LiveData;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "tableNames",
+            "inTransaction",
+            "computeFunction"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -82,6 +103,14 @@
 
 .method onActive(Landroidx/lifecycle/LiveData;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "liveData"
+        }
+    .end annotation
 
     .line 53
     iget-object v0, p0, Landroidx/room/InvalidationLiveDataContainer;->mLiveDataSet:Ljava/util/Set;
@@ -93,6 +122,14 @@
 
 .method onInactive(Landroidx/lifecycle/LiveData;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "liveData"
+        }
+    .end annotation
 
     .line 57
     iget-object v0, p0, Landroidx/room/InvalidationLiveDataContainer;->mLiveDataSet:Ljava/util/Set;

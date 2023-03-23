@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/splash_screen_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/splash_icon_size" android:layout_height="@dimen/splash_icon_size" android:src="@mipmap/ic_launcher_my_files" />
+    <TextView android:textSize="@dimen/splash_text_size" android:textColor="@color/splash_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splash_text_margin_top" android:text="@string/app_name" style="@style/RobotoLight" />
+</LinearLayout>

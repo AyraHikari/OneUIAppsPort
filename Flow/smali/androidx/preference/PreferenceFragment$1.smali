@@ -22,7 +22,7 @@
 .method constructor <init>(Landroidx/preference/PreferenceFragment;)V
     .locals 0
 
-    .line 211
+    .line 166
     iput-object p1, p0, Landroidx/preference/PreferenceFragment$1;->this$0:Landroidx/preference/PreferenceFragment;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,7 +35,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 214
+    .line 169
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/4 v0, 0x1
@@ -44,7 +44,7 @@
 
     goto :goto_0
 
-    .line 216
+    .line 171
     :cond_0
     iget-object p1, p0, Landroidx/preference/PreferenceFragment$1;->this$0:Landroidx/preference/PreferenceFragment;
 

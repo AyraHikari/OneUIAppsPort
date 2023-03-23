@@ -34,6 +34,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 166
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker$4;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;
@@ -47,6 +55,14 @@
 # virtual methods
 .method public bridge synthetic onResult(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "useDbBuffer"
+        }
+    .end annotation
 
     .line 166
     check-cast p1, Ljava/lang/Boolean;
@@ -60,6 +76,14 @@
 
 .method public onResult(Ljava/lang/Boolean;)Ljava/lang/Void;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "useDbBuffer"
+        }
+    .end annotation
 
     .line 170
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z

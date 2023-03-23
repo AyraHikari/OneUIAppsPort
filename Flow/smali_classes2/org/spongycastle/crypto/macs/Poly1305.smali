@@ -151,7 +151,7 @@
 .end method
 
 .method private processBlock()V
-    .locals 18
+    .locals 19
 
     move-object/from16 v0, p0
 
@@ -254,19 +254,19 @@
     iput v8, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h0:I
 
     .line 213
-    iget v8, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h1:I
+    iget v12, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h1:I
 
-    int-to-long v12, v8
+    int-to-long v12, v12
 
-    const/16 v8, 0x20
+    const/16 v16, 0x20
 
-    shl-long v16, v6, v8
+    shl-long v17, v6, v16
 
-    or-long v1, v16, v1
+    or-long v1, v17, v1
 
-    const/16 v16, 0x1a
+    const/16 v17, 0x1a
 
-    ushr-long v1, v1, v16
+    ushr-long v1, v1, v17
 
     and-long/2addr v1, v14
 
@@ -281,7 +281,7 @@
 
     int-to-long v1, v1
 
-    shl-long v12, v10, v8
+    shl-long v12, v10, v16
 
     or-long/2addr v6, v12
 
@@ -302,13 +302,13 @@
 
     int-to-long v1, v1
 
-    shl-long v6, v4, v8
+    shl-long v6, v4, v16
 
     or-long/2addr v6, v10
 
-    const/16 v8, 0xe
+    const/16 v10, 0xe
 
-    ushr-long/2addr v6, v8
+    ushr-long/2addr v6, v10
 
     and-long/2addr v6, v14
 
@@ -345,11 +345,9 @@
 
     .line 223
     :cond_1
-    iget v1, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h0:I
+    iget v1, v0, Lorg/spongycastle/crypto/macs/Poly1305;->r0:I
 
-    iget v2, v0, Lorg/spongycastle/crypto/macs/Poly1305;->r0:I
-
-    invoke-static {v1, v2}, Lorg/spongycastle/crypto/macs/Poly1305;->mul32x32_64(II)J
+    invoke-static {v8, v1}, Lorg/spongycastle/crypto/macs/Poly1305;->mul32x32_64(II)J
 
     move-result-wide v1
 
@@ -598,7 +596,7 @@
     .line 230
     iput v11, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h0:I
 
-    ushr-long v1, v1, v16
+    ushr-long v1, v1, v17
 
     add-long/2addr v3, v1
 
@@ -609,7 +607,7 @@
     .line 231
     iput v1, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h1:I
 
-    ushr-long v1, v3, v16
+    ushr-long v1, v3, v17
 
     const-wide/16 v3, -0x1
 
@@ -624,7 +622,7 @@
     .line 232
     iput v1, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h2:I
 
-    ushr-long v1, v5, v16
+    ushr-long v1, v5, v17
 
     and-long/2addr v1, v3
 
@@ -637,7 +635,7 @@
     .line 233
     iput v1, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h3:I
 
-    ushr-long v1, v7, v16
+    ushr-long v1, v7, v17
 
     add-long/2addr v9, v1
 
@@ -648,7 +646,7 @@
     .line 234
     iput v1, v0, Lorg/spongycastle/crypto/macs/Poly1305;->h4:I
 
-    ushr-long v1, v9, v16
+    ushr-long v1, v9, v17
 
     int-to-long v3, v11
 
@@ -1200,6 +1198,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lorg/spongycastle/crypto/macs/Poly1305;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
     invoke-interface {v1}, Lorg/spongycastle/crypto/BlockCipher;->getAlgorithmName()Ljava/lang/String;
@@ -1207,6 +1207,8 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

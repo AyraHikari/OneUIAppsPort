@@ -1,0 +1,42 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: SecMyFiles2020.apk
+compressionType: false
+doNotCompress:
+- classes.dex
+- resources.arsc
+- lib/arm64-v8a/libDiagMonKey.so
+- lib/armeabi-v7a/libDiagMonKey.so
+- webp
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '30'
+  targetSdkVersion: '30'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  drive.v3.json: '8'
+  google-http-client.properties: '8'
+  play-services-auth-api-phone.properties: '8'
+  play-services-auth-base.properties: '8'
+  play-services-auth.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-tasks.properties: '8'
+  SEC-INF/buildConfirm.crt: '8'
+  SEC-INF/buildinfo.xml: '8'
+  com/google/api/client/googleapis/google-api-client.properties: '8'
+  com/google/api/client/googleapis/google.jks: '8'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0
+versionInfo:
+  versionCode: '1220404441'
+  versionName: 12.2.04.441

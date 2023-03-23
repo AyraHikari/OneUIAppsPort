@@ -60,6 +60,7 @@
     <string name="air_quality">Kvalitet vazduha</string>
     <string name="air_quality_next_tts">Kasnije dnevne prognoze kvaliteta vazduha</string>
     <string name="air_quality_previous_tts">Ranije dnevne prognoze kvaliteta vazduha</string>
+    <string name="alert_title">Upozorenje na loše vremenske prilike</string>
     <string name="all_added_cities">Svi dodati gradovi</string>
     <string name="allow">Dozvoli</string>
     <string name="allow_permission_in_settings">Da biste koristili ovu funkciju, morate da pružite dozvolu u okviru Podešavanja.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Akcija nije podržana.</string>
     <string name="apply_daylight_saving_time">Primeniti letnje računanje vremena?</string>
     <string name="as_possible_after_verification">Prijava je poslata. Ime grada će se promeniti u što kraćem roku nakon verifikacije.</string>
+    <string name="auto_refresh_on_screen_description">Automatski dobijajte osvežene informacije o vremenskim prilikama na svakih sat vremena. Kada je ovo uključeno, ne možete ručno da osvežavate.</string>
+    <string name="auto_refresh_on_the_go">Automatsko osvežavanje u hodu</string>
+    <string name="auto_refresh_on_the_go_advanced">Napredno</string>
+    <string name="auto_refresh_on_the_go_description">Dobijajte češća ažuriranja o vremenskim prilikama kada vozite automobil ili bicikl, trčite ili šetate. Kada je ovo uključeno, ne možete ručno da osvežavate.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Dobijajte češća ažuriranja o vremenskim prilikama kada vozite automobil ili bicikl, trčite ili šetate.</string>
     <string name="bottomsheet_action_expand_halfway">Проширите до пола</string>
     <string name="btn_report">Prijavi</string>
     <string name="button_finish">Završi</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Dvaput kucnite za više informacija.</string>
     <string name="china">Kina</string>
     <string name="cities_button">Gradovi</string>
+    <string name="city_added">Grad je dodat.</string>
     <string name="city_list_text">Gradovi</string>
     <string name="clear">Vedro</string>
     <string name="clear_text_end_icon_content_description">Обриши текст</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Informacije o lokaciji vašeg uređaja će se slati provajderu sadržaja kako bi vam se obezbedile informacije o lokalnim vremenskim prilikama.</string>
     <string name="contents_error_msg">Ova usluga privremeno nije dostupna. Pokušajte ponovo kasnije.</string>
     <string name="copy">Копирај</string>
-    <string name="copy_toast_msg">Линк је копиран у привремену меморију</string>
     <string name="correct_city_name">Ispravite ime grada</string>
     <string name="couldnt_find_location">Nije pronađena lokacija</string>
     <string name="cover_screen_top_sync_dialog_text">Želite li da podesite istu lokaciju na glavnom ekranu?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Stavka je ispuštena na poziciju %d.</string>
     <string name="dragndroplist_drag_start">Započeto je prevlačenje stavke na poziciju %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Stavka na poziciji %d ne može da se prevuče.</string>
+    <string name="drawer_tips">Saveti za uređaj %s</string>
     <string name="drawer_tips_message">Kucnite ovde da biste dodali ili izbrisali lokacije ili promenili njihov redosled. Možete i da dodate više vidžeta da biste prikazali različite lokacije na početnom ekranu.</string>
     <string name="drawer_tips_message_1">Kucnite na Upravljaj lokacijama na dnu ovog menija da biste dodavali i brisali lokacije i upravljali njima.</string>
     <string name="drawer_tips_message_2">Možete da dodate više od jednog vidžeta na početni ekran da biste istovremeno prikazali različite lokacije.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Напредно</string>
     <string name="exposed_dropdown_menu_content_description">Прикажи падајући мени</string>
     <string name="failed_to_send_report">Neuspešno slanje izveštaja</string>
-    <string name="fallback_menu_item_copy_link">Копирај линк</string>
-    <string name="fallback_menu_item_open_in_browser">Отвори у прегледачу</string>
-    <string name="fallback_menu_item_share_link">Дели линк</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Omiljena lokacija</string>
     <string name="feel_like_pd_minus_temp">Subjektivni osećaj ‑%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Video sa vrem. prognozom</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mi/č</string>
+    <string name="fri">Pet</string>
     <string name="general">Opšte</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Dobijajte personalizovan sadržaj na osnovu upotrebe telefona.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Dobijajte personalizovan sadržaj na osnovu upotrebe tableta.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">preuzimanje informacija o vremenskim prilikama, uključujući vašu trenutnu lokaciju iz aplikacije Vremenske prilike</string>
     <string name="go_to_website">Idi na sajt</string>
     <string name="goto_apps">Dostupna je nova dopuna. Instalirati je odmah?</string>
     <string name="goto_apps_later">Kasnije</string>
     <string name="goto_apps_now">Sada</string>
     <string name="goto_apps_update_title">Nova upozorenja o sadržaju</string>
     <string name="header_tts">Zaglavlje</string>
+    <string name="heavy">Mnogo</string>
     <string name="heavy_rain">Jaka kiša</string>
     <string name="heavy_rain_followed_by_intense_heat">Jaka kiša praćena velikim vrućinama</string>
     <string name="heavy_rain_followed_by_light_rain">Jaka kiša praćena velikim vrućinama</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Vidljivost</string>
     <string name="life_index_wind">Vetar</string>
     <string name="life_index_wind_force">Brzina vetra</string>
+    <string name="light">Malo</string>
     <string name="light_rain_followed_by_heavy_rain">Slaba kiša praćena jakom kišom</string>
     <string name="light_rain_with_some_heavy_rain">Slaba kiša sa povremeno jakom kišom</string>
     <string name="link_tts">Link</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Nema rezultata.</string>
     <string name="message_service_not_available">Usluga sada nije dostupna.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Pon</string>
     <string name="more">Još</string>
     <string name="more_cuntact_us">Kontaktirajte nas</string>
     <string name="more_information">Još</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Kucnite ovde da biste promenili podrazumevanu lokaciju za vremenske prilike i upravljali svim lokacijama.</string>
     <string name="new_version_available">Dostupna je nova verzija aplikacije %s.</string>
     <string name="new_version_is_available">Nova verzija je dostupna.</string>
+    <string name="news_menu_show_news">Prikaži vesti</string>
+    <string name="news_opt_in_banner_title_text">Pratite aktuelne događaje tako što ćete prikazivati vesti na vidžetu Vremenske prilike.</string>
+    <string name="news_opt_in_popup_desc_text">Budite u toku sa dešavanjima u svetu tako što ćete prikazivati najnovije naslove iz aplikacije %s na vidžetu Vremenske prilike.</string>
+    <string name="news_opt_in_popup_title_text">Pogledajte vesti i vremenske prilike na jednom vidžetu</string>
+    <string name="news_request_agree_text">Kucnite da biste dobili vesti iz aplikacije %s</string>
+    <string name="news_widget_bubble_text">Dobijajte vesti uz vremenske prilike.</string>
+    <string name="news_widget_dummy_title">Glavna priča za danas</string>
+    <string name="news_widget_new_dummy_title">5 stvari koje morate da znate ovog jutra</string>
+    <string name="news_widget_oobe_text">Kuc. ovde da biste dodali vesti.</string>
     <string name="next">Sledeći grad</string>
+    <string name="next_btn">Naredno</string>
     <string name="next_city">Kucnite dvaput za prikazivanje informacija o vremenskim prilikama za sledeći grad.</string>
     <string name="night_tts">Noć</string>
     <string name="no_application_available">Nema dostupnih aplikacija.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Nema informacija o vremenskim prilikama</string>
     <string name="not_in_use">Ne koristi se</string>
     <string name="not_now">Ne sada</string>
+    <string name="not_now_btn">Ne sada</string>
     <string name="not_selected">Nije izabrano</string>
     <string name="not_set">Није подешено</string>
     <string name="nothing_selected">Ništa nije izabrano.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Za najbržu i najtačniju detekciju lokacije, kucni na PODEŠAVANJA, a zatim podesi opciju Način lociranja na GPS, Wi-Fi i mobilne mreže.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Za najbržu i najtačniju detekciju lokacije, kucni na PODEŠAVANJA, a zatim podesi opciju Način lociranja na GPS i Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Za prikaz informacija o lokalnim vremenskim prilikama, uključite podešavanja za aplikaciju Lokacija i uverite se da je režim podešen na Izuzetna tačnost.</string>
+    <string name="notification_alert_channel_name">Upozorenje na loše vremenske prilike</string>
     <string name="notification_apps_update_channel_name">Obaveštenja o ažuriranjima</string>
     <string name="notification_auto_refresh_channel_name">Automatsko osvež. info. o vremenu</string>
     <string name="notification_dex_channel_name">Vremenske pril. u rež. Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Otvori aplik.</string>
     <string name="open_source_licences">Licence otvorenog koda</string>
     <string name="other_locations">Ostale lokacije</string>
+    <string name="partly_sunny">Delimično sunčano</string>
     <string name="password_toggle_content_description">Прикажи лозинку</string>
     <string name="paused">Pauzirano</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Резиме „%1$s“ је копиран у привремену меморију.</string>
     <string name="preview">Pregled vežbe %s</string>
     <string name="previous">Prethodni grad</string>
+    <string name="previous_btn">Prethodno</string>
     <string name="previous_city">Kucnite dvaput za prikazivanje informacija o vremenskim prilikama za prethodni grad.</string>
     <string name="privacy_policy">Politika privatnosti</string>
     <string name="probability_of_rain_text">Verovatnoća kiše</string>
     <string name="protect_your_content">Zaštitite svoj sadržaj</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar i mape</string>
     <string name="rain">Kiša</string>
     <string name="rain_followed_by_intense_heat">Kiša praćena velikim vrućinama</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Da biste ažurirali informacije o vremenskim prilikama, kucnite na PODEŠAVANJA, idite na Informacije o aplikaciji > Dozvole, a zatim dozvolite sledeće dozvole i pokušajte ponovo:</string>
     <string name="runtime_location_permission_title">Dozvolite dozvole</string>
     <string name="runtime_oem_grant_permission_desc">Aplikaciji %s je dozvoljeno da pristupi sledećem:</string>
+    <string name="sat">Sub</string>
     <string name="save_button">Sačuvaj</string>
     <string name="search_menu_title">Претражите</string>
     <string name="search_most_searched_for">Najtraženije</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Novi sadržaj je dostupan</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Još</string>
+    <string name="sesl_preferecne_badge_description">Novo obaveštenje</string>
     <string name="sesl_preferencecategory_added_title">Zaglavlje</string>
     <string name="sesl_search_hint">Pretraga</string>
     <string name="sesl_searchview_description_clear">Obriši polje pretrage</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Van mreže</string>
     <string name="st_view_less">Prikaži manje</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Isključeno</string>
+    <string name="status_on">Uključeno</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Ned</string>
     <string name="sunny">Sunčano</string>
     <string name="sunny_with_some_clouds">Sunčano i mestimično oblačno</string>
     <string name="sunny_with_some_heavy_rain">Sunčano sa mestimično jakom kišom</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Kucnite ovde za vraćanje podataka o vremenu sa starog uređaja.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Kucnite na opciju PONOVI da biste ponovo pronašli lokaciju na kojoj se nalazite.</string>
     <string name="tap_setting_message_edge_panel">Uključite Lokaciju da biste dobili lokalne vremenske prilike.</string>
+    <string name="tap_the_settings_icon">Kucni na ikonu podešavanja.</string>
     <string name="tap_to_get_the_weather">Kucnite da biste videli vremenske prilike</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Uslovi i odredbe</string>
     <string name="the_latest_version">Najnovija verzija je već instalirana.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">To će biti primenjeno i na obaveštenja i Kalendar.</string>
+    <string name="thu">Čet</string>
     <string name="tick_box_tts">Polje za potvrdu</string>
     <string name="ticked_tts">Obeleženo</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Svakog sata</string>
     <string name="title_select_locations">Izaberite lokacije</string>
     <string name="title_theme">Teme</string>
+    <string name="to_continue_agree_to_updated">Da biste nastavili, prihvatite naš ažurirani dokument %s.</string>
     <string name="to_get_local_weather_chn">"Da biste dobili lokalnu vremensku prognozu, vaša trenutna lokacija će biti poslata provajderu usluga vremenske prognoze. (Pogledajte provajderove %1$sUslove i odredbe%2$s i %3$sPolitiku privatnosti%4$s).
 Druge aplikacije i usluge na vašem uređaju mogu da pristupe dobijenim podacima o vremenu kako bi se vreme prikazalo u tim aplikacijama.
 Da biste stalno dobijali informacije o vremenu, Vreme će imati pristup vašoj lokaciji, čak i kada ne koristite aplikaciju."</string>
     <string name="today">Danas</string>
+    <string name="try_it_out_btn">Isprobajte</string>
+    <string name="tue">Uto</string>
+    <string name="turn_on_to_use_precise_location">Da biste koristili ovu funkciju, morate da dozvolite da %s uvek pristupa lokaciji i uključite Koristite preciznu lokaciju. Kucnite na Podešavanja i idite na Dozvole > Lokacija.</string>
     <string name="tw_title_weather_broadcast">Info poruka</string>
-    <string name="unable_to_check_for_updates">Nije moguće proveriti ima li ažuriranja. Nije uspostavljena veza sa mrežom.</string>
+    <string name="unable_to_check_for_updates">Proveravanje ažuriranja nije moguće. Pokušajte ponovo kasnije.</string>
     <string name="unable_to_receive_info_msg">Nemoguće primiti informacije</string>
     <string name="unticked_tts">Neobeleženo</string>
     <string name="unused">Neiskorišćeno</string>
     <string name="update">Ažuriraj</string>
     <string name="update_abb8">Ažuriraj</string>
     <string name="update_app">Ažuriraj aplikaciju</string>
+    <string name="updated_tile_chn">Ažurirano: %s</string>
     <string name="updated_tts">Dokument %s je ažuriran</string>
+    <string name="use_current_location">Koristi trenutnu lokaciju</string>
     <string name="use_current_location_agree_popup">"Da biste dobili lokalnu vremensku prognozu, trenutna lokacija će biti poslata provajderu usluga vremenske prognoze. (Pogledajte %1$spolitiku privatnosti%2$s provajdera.)
 Ostale aplikacije i usluge na uređaju mogu da pristupe primljenim podacima o vremenskim prilikama kako bi se u njima prikazale vremenske prilike."</string>
     <string name="use_current_location_and_background_agree_popup">"Da biste dobili lokalnu vremensku prognozu, vaša trenutna lokacija će biti poslata provajderu usluga vremenske prognoze. (Pogledajte provajderovu %1$sPolitiku privatnosti%2$s.)
@@ -746,9 +784,16 @@ Da biste stalno dobijali informacije o vremenu, Vreme će imati pristup vašoj l
 Možete isključiti opciju korišćenja vaše lokacije preko podešavanja aplikacije Vreme."</string>
     <string name="use_current_location_body_msg_chn">"Molimo da pažljivo pročitate pre korišćenja aplikacije „Vreme”:
 Ako želite znati vreme za vašu trenutnu lokaciju, trebate dozvoliti provajderu usluga treće strane da ima stalni (čak i kada ne koristite uslugu) pristup vašem uređaju i da dobije određene podatke, kako je navedeno ispod. Pažljivo i s razumevanjem pročitajte %1$sPolitiku privatnosti%2$s i %3$sUslove i odredbe%4$s provajdera usluga treće strane pre davanja takvog dopuštenja. Svoje dopuštenje možete povući tako što isključite „Lokacija” u meniju Podešavanja. Ostale aplikacije i usluge na uređaju mogu da pristupe primljenim podacima o vremenskim prilikama kako bi se u njima prikazale vremenske prilike."</string>
+    <string name="use_current_location_body_msg_kor">"Vaša trenutna lokacija će biti prikupljena i korišćena za pružanje nekih funkcija aplikacije Vremenske prilike kao što je preuzimanje informacija o lokalnim vremenskim prilikama.
+
+Da bi neprekidno pružala informacije o vremenskim prilikama, ova aplikacija će redovno obrađivati vašu lokaciju, čak i kada ne koristite aplikaciju. Ako nastavite, prihvatate skupljanje i obradu vaše lokacije u gorenavedene svrhe.
+
+Možete da prekinete ovo korišćenje i prikupljanje lokacije u podešavanjima aplikacije Vremenske prilike."</string>
     <string name="use_current_location_body_purpose">Svrha</string>
     <string name="use_current_location_body_purpose_content">Za pružanje informacija o vremenu za vašu trenutnu lokaciju</string>
     <string name="use_current_location_body_search_provider">Provajder usluga</string>
+    <string name="use_current_location_continue">Nastavi</string>
+    <string name="use_current_location_not_now">Ne sada</string>
     <string name="use_current_location_off_alert_popup">Informacije o trenutnoj lokaciji će biti uklonjene.</string>
     <string name="useful_informations">Životni saveti i drugi izveštaji</string>
     <string name="using_as">Korišćenje kao %s</string>
@@ -856,9 +901,11 @@ Ako želite znati vreme za vašu trenutnu lokaciju, trebate dozvoliti provajderu
     <string name="weather_tip">Saveti za vreme</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Sre</string>
     <string name="weekly_forecast">Dnevno</string>
     <string name="widget_background">Pozadina vidžeta</string>
     <string name="widget_empty_text">Kucnite za informacije o vremenskim prilikama</string>
+    <string name="widget_location">Naziv grada</string>
     <string name="widget_name_4x1">Vremenske prilike i Sat</string>
     <string name="widget_setting">Podešavanja</string>
     <string name="widget_setting_background_color">Boja pozadine</string>

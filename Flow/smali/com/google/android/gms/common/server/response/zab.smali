@@ -1,15 +1,16 @@
 .class final Lcom/google/android/gms/common/server/response/zab;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/common/server/response/FastParser$zaa;
+.implements Lcom/google/android/gms/common/server/response/zai;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/google/android/gms/common/server/response/FastParser$zaa<",
+        "Lcom/google/android/gms/common/server/response/zai<",
         "Ljava/lang/Long;",
         ">;"
     }
@@ -20,7 +21,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method public final synthetic zah(Lcom/google/android/gms/common/server/response/FastParser;Ljava/io/BufferedReader;)Ljava/lang/Object;
+.method public final synthetic zaa(Lcom/google/android/gms/common/server/response/FastParser;Ljava/io/BufferedReader;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -37,8 +37,8 @@
         }
     .end annotation
 
-    .line 3
-    invoke-static {p1, p2}, Lcom/google/android/gms/common/server/response/FastParser;->zab(Lcom/google/android/gms/common/server/response/FastParser;Ljava/io/BufferedReader;)J
+    .line 1
+    invoke-static {p1, p2}, Lcom/google/android/gms/common/server/response/FastParser;->zad(Lcom/google/android/gms/common/server/response/FastParser;Ljava/io/BufferedReader;)J
 
     move-result-wide p1
 

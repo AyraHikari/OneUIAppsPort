@@ -1263,7 +1263,7 @@
 .end method
 
 .method private createWorkingKey([B)[I
-    .locals 12
+    .locals 13
 
     const/16 v0, 0x20
 
@@ -1315,9 +1315,9 @@
     .line 257
     sget-object v11, Lorg/spongycastle/crypto/engines/SEEDEngine;->KC:[I
 
-    aget v11, v11, v1
+    aget v12, v11, v1
 
-    sub-int/2addr v10, v11
+    sub-int/2addr v10, v12
 
     invoke-direct {p0, v10}, Lorg/spongycastle/crypto/engines/SEEDEngine;->G(I)I
 
@@ -1330,8 +1330,6 @@
     sub-int v10, v6, v8
 
     .line 258
-    sget-object v11, Lorg/spongycastle/crypto/engines/SEEDEngine;->KC:[I
-
     aget v11, v11, v1
 
     add-int/2addr v10, v11

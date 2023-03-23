@@ -33,6 +33,7 @@
     <string name="air_quality">Ауа сапасы</string>
     <string name="air_quality_next_tts">Күнделікті ауа сапасының кейінгі болжамдары</string>
     <string name="air_quality_previous_tts">Күнделікті ауа сапасының бұрыңғы болжамдары</string>
+    <string name="alert_title">Ауыр ауа райын ескерту</string>
     <string name="all_added_cities">Барлық қосылған қалалар</string>
     <string name="allow">Рұқсат беру</string>
     <string name="allow_permission_in_settings">Осы мүмкіндікті пайдалану үшін, Параметрлер бөлімінде рұқсат беруіңіз керек.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Әрекет қолданылмайды</string>
     <string name="apply_daylight_saving_time">Жазғы уақытқа өтесіз бе?</string>
     <string name="as_possible_after_verification">Хабар жіберілді. Қаланың атауы растаудан кейін мүмкіндігінше тез арада өзгертіледі.</string>
+    <string name="auto_refresh_on_screen_description">Жаңартылған ауа райы ақпаратын әр сағат сайын алып тұрыңыз. Бұл қосулы кезде, қолмен жаңарта алмайсыз.</string>
+    <string name="auto_refresh_on_the_go">Автоматты жаңарту қозғалыста</string>
+    <string name="auto_refresh_on_the_go_advanced">Жетілдірілген</string>
+    <string name="auto_refresh_on_the_go_description">Көлік жүргізгенде, велосипедпен жүргенде, жүгіргенде немесе жаяу жүргенде жиі ауа райы жаңартуларын алыңыз. Бұл қосулы кезде қолмен жаңарту мүмкін емес.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Көлік жүргізгенде, велосипед айдағанда, жүгіргенде немесе жаяу жүргенде ауа райы жаңартуларын жиірек алып тұрыңыз.</string>
     <string name="btn_report">Хаб-у</string>
     <string name="button_finish">Аяқтау</string>
     <string name="button_tts">Түйме</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Қосымша ақпарат алу үшін, екі рет түртіңіз.</string>
     <string name="china">Қытай</string>
     <string name="cities_button">Қалалар</string>
+    <string name="city_added">Қала қосылды.</string>
     <string name="city_list_text">Қалалар</string>
     <string name="clear">Бұлтсыз</string>
     <string name="clear_then_cloudy">Күн ашық, сосын бұлтты</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Элемент %d күйіне сүйреп апарылды.</string>
     <string name="dragndroplist_drag_start">%d күйіндегі элементті сүйреу басталды.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d күйіндегі элементті сүйреу мүмкін емес.</string>
+    <string name="drawer_tips">%s құрылғысының кеңестері</string>
     <string name="drawer_tips_message">Орындарды қосу, жою және қайта реттеу үшін осы жерді түртіңіз. Сондай-ақ, Басты экранда әртүрлі орындарды көрсету үшін көптеген виджеттерді қосуыңызға да болады.</string>
     <string name="drawer_tips_message_1">Орындарды қосу, жою және ретін өзгерту үшін осы мәзірдің астындағы “Орындарды басқару” опциясын түртіңіз.</string>
     <string name="drawer_tips_message_2">Бастапқы экранға бірнеше виджет қосып, бір уақытта әр түрлі орындарды көрсетуге болады.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Болжам бейнесі</string>
     <string name="format_km_per_hour">%s км/сағ</string>
     <string name="format_m_per_hour">%s м/сағ</string>
+    <string name="fri">Жұм</string>
     <string name="general">Жалпы</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Телефонды қалай пайдаланатыныңыздың негізінде дараланған мазмұнды алыңыз.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Планшетіңізді қалай қолданатыныңыздың негізінде дараланған мазмұнды алыңыз.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">ауа райынан ауа райы туралы ақпаратты, соның ішінде ағымдағы орныңызды алу</string>
     <string name="go_to_website">Веб-сайтқа өту</string>
     <string name="goto_apps">Жаңа жаңарту қол жетімді. Қазір орнату керек пе?</string>
     <string name="goto_apps_later">Кейінірек</string>
     <string name="goto_apps_now">Қазір</string>
     <string name="goto_apps_update_title">Жаңа мазмұн ескертулері</string>
     <string name="header_tts">Тақырып</string>
+    <string name="heavy">Қатты</string>
     <string name="heavy_rain">Күшті жаңбыр</string>
     <string name="heavy_rain_followed_by_intense_heat">Қатты ыстықтан кейін көп жаңбыр</string>
     <string name="heavy_rain_followed_by_light_rain">Қатты ыстықтан кейін көп жаңбыр</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Көрініс</string>
     <string name="life_index_wind">Жел</string>
     <string name="life_index_wind_force">Жел жылдамдығы</string>
+    <string name="light">Жеңіл</string>
     <string name="light_rain_followed_by_heavy_rain">Көп жаңбырдан кейін жеңіл жаңбыр</string>
     <string name="light_rain_with_some_heavy_rain">Жеңіл жаңбыр және біраз көп жаңбыр</string>
     <string name="link_tts">Байланыстыру</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Нәтижелер табылмады.</string>
     <string name="message_service_not_available">Қызмет кәзіргі уақытта қатынаулы емес.</string>
     <string name="minus_tts">Минус</string>
+    <string name="mon">Дүй</string>
     <string name="more">Басқ</string>
     <string name="more_cuntact_us">Бізге хабарласыңыз</string>
     <string name="more_information">Тағы</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Әдепкі ауа райы орнын өзгертіп, барлық орындарды басқару үшін осы жерді түртіңіз.</string>
     <string name="new_version_available">Жаңа %s нұсқасы қолжетімді.</string>
     <string name="new_version_is_available">Жаңа нұсқа қол жетімді.</string>
+    <string name="news_menu_show_news">Жаңалықтарды көрсету</string>
+    <string name="news_opt_in_banner_title_text">Ауа райы виджетіндегі жаңалықтарды көрсету арқылы ағымдағы оқиғалардан хабардар болыңыз.</string>
+    <string name="news_opt_in_popup_desc_text">Ауа райы виджетінде %s соңғы тақырыптарын көрсету арқылы әлемнен хабардар болыңыз.</string>
+    <string name="news_opt_in_popup_title_text">Жаңалықтар мен ауа райын бір виджеттен қарау</string>
+    <string name="news_request_agree_text">%s қолданбасынан жаңалықтар алу үшін түрту</string>
+    <string name="news_widget_bubble_text">Ауа райы туралы жаңалықтар алыңыз.</string>
+    <string name="news_widget_dummy_title">Бүгінгі басты оқиға</string>
+    <string name="news_widget_new_dummy_title">Бүгін таңертең сіз білуіңіз қажет 5 нәрсе</string>
+    <string name="news_widget_oobe_text">Жаңа-ы қосу үшін осы жер түрт.</string>
     <string name="next">Келесі қала</string>
+    <string name="next_btn">Келесі</string>
     <string name="next_city">Келесі қалаға арналған ауа райы ақпаратын көру үшін, екі рет түртіңіз.</string>
     <string name="night_tts">Түнде</string>
     <string name="no_application_available">Қол жетімді бағдарламалар жоқ.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Ауа райы ақпараты жоқ</string>
     <string name="not_in_use">Қолданыста емес</string>
     <string name="not_now">Қазір емес</string>
+    <string name="not_now_btn">Кейін</string>
     <string name="not_selected">Таңдалмады</string>
     <string name="nothing_selected">Ештенке таңдалмады.</string>
     <string name="noti">Ескерту</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Орынды өте жылдам және нақтырақ анықтау үшін, ПАРАМЕТРЛЕР түймесін түртіп, “Геодеректер” әдісін GPS, Wi-Fi және ұялы байланыс желілеріне орнатыңыз.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Орынды өте жылдам және нақтырақ анықтау үшін, ПАРАМЕТРЛЕР түймесін түртіп, “Геодеректер” әдісін GPS және Wi-Fi желілеріне орнатыңыз.</string>
     <string name="notice_gps_trun_off_message_verizon">Жергілікті ауа райы туралы ақпаратты көру үшін “Орын параметрлерін” қосып, “Жоғары дәлдік” режимі қосулы екенін тексеріңіз.</string>
+    <string name="notification_alert_channel_name">Ауыр ауа райын ескерту</string>
     <string name="notification_apps_update_channel_name">Жаңарту ескертулері</string>
     <string name="notification_auto_refresh_channel_name">Ауа райын автоматты жаңарту</string>
     <string name="notification_dex_channel_name">Samsung DeX-гі ауа райы</string>
@@ -429,8 +454,8 @@
     <string name="notification_touch_widget_popup_content_for_one_hour_interval">Ауа-райы ақпараты сағат сайын автоматты түрде жаңартылады. Бұл қосымша ақыларға әкелуі мүмкін. Ауа-райы виджетінің параметрлерінде жаңарту аралығын өзгертуге болады</string>
     <string name="notification_updating">Жаңартылуда…</string>
     <string name="notifications">Хабарландырулар</string>
-    <string name="off_text">Өшірілген</string>
-    <string name="on_text">Қосылған</string>
+    <string name="off_text">Өшіру</string>
+    <string name="on_text">Қосу</string>
     <string name="only_support_in">Бұл қызметке тек %s елінде ғана қолдау көрсетіледі.</string>
     <string name="oobe_eula_description_permission_info">Орны: ағымдағы орынның ауа райы туралы ақпаратын іздеу үшін пайдаланылады.</string>
     <string name="oobe_eula_description_text">Келесі рұқсаттар міндетті емес. Қолданбаны онсыз пайдалана аласыз, бірақ кейбір функциялар шектелген болуы мүмкін.</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Қолданбаны ашу</string>
     <string name="open_source_licences">Ашық бастапқы коды бар лицензиялар</string>
     <string name="other_locations">Басқа орындар</string>
+    <string name="partly_sunny">Жартылай күн шуақты</string>
     <string name="paused">Уақытша тоқтатылған</string>
     <string name="pd_km">%.1f км</string>
     <string name="pd_km_h">%d км/с</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Жауын-шашын: %d мм</string>
     <string name="preview">%s алдын ала қарау</string>
     <string name="previous">Алдыңғы қала</string>
+    <string name="previous_btn">Алдыңғы</string>
     <string name="previous_city">Алдыңғы қалаға арналған ауа райы ақпаратын көру үшін, екі рет түртіңіз.</string>
     <string name="privacy_policy">Құпиялылық саясаты</string>
     <string name="probability_of_rain_text">Жаңбыр жауу ықт-ғы</string>
     <string name="protect_your_content">Мазмұнды қорғау</string>
+    <string name="ps_in">%s дюйм</string>
+    <string name="ps_mm">%s мм</string>
     <string name="radar">Радар және карталар</string>
     <string name="rain">Жаңбыр</string>
     <string name="rain_followed_by_intense_heat">Қатты ыстықтан кейін жаңбыр</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Ауа райы ақпаратын жаңарту үшін, ПАРАМЕТРЛЕР түймесін түртіп, Қолданба ақпараты > Рұқсаттар бөліміне өтіп, келесі рұқсаттарды беріңіз және әрекетті қайталаңыз:</string>
     <string name="runtime_location_permission_title">Рұқсаттарды беру</string>
     <string name="runtime_oem_grant_permission_desc">%s қолданбасының келесіге қатынасу рұқсаты бар:</string>
+    <string name="sat">Сен</string>
     <string name="save_button">Сақтау</string>
     <string name="search_most_searched_for">Көп ізделген</string>
     <string name="search_tab_cities">Қалалар</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Жаңа мазмұн қолжетімді</string>
     <string name="sesl_material_overflow_badge_text_n">Ж</string>
     <string name="sesl_more_item_label">Басқалар</string>
+    <string name="sesl_preferecne_badge_description">Жаңа хабарландыру</string>
     <string name="sesl_preferencecategory_added_title">Тақырып</string>
     <string name="sesl_search_hint">Іздеу</string>
     <string name="sesl_searchview_description_clear">Іздеу өрісін тазалау</string>
@@ -530,8 +561,8 @@
     <string name="sesl_searchview_description_voice">Дауыспен іздеу</string>
     <string name="sesl_switch_off">Өшірулі</string>
     <string name="sesl_switch_on">Қосулы</string>
-    <string name="sesl_switchbar_off_text">Өшірілген</string>
-    <string name="sesl_switchbar_on_text">Қосылған</string>
+    <string name="sesl_switchbar_off_text">Өшіру</string>
+    <string name="sesl_switchbar_on_text">Қосу</string>
     <string name="sesl_toolbar_collapse_description">Қайыру</string>
     <string name="set_default_location">Әдепкі орнын белгілеу</string>
     <string name="set_favorite">Таңдаулыны орнату</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Желі қосылымын тексеріп, әрекетті қайталаңыз.</string>
     <string name="st_offline">Офлайн</string>
     <string name="st_view_less">Азырақ көрсету</string>
+    <string name="status_off">Өшірулі</string>
+    <string name="status_on">Қосулы</string>
+    <string name="sun">Жек</string>
     <string name="sunny">Күн ашық</string>
     <string name="sunny_with_some_clouds">Күн шуақты және біраз бұлт</string>
     <string name="sunny_with_some_heavy_rain">Күн шуақты және біраз көп жаңбыр</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Ауа райы деректерін ескі құрылғыңыздан қалпына келтіру үшін осы жерді түртіңіз.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Орныңызды табуға қайтадан әрекет жасау үшін ҚАЙТАЛАУ түймесін түртіңіз.</string>
     <string name="tap_setting_message_edge_panel">Жергілікті ауа райын алу үшін “Геодеректер” функциясын қосыңыз.</string>
+    <string name="tap_the_settings_icon">Параметрлер белгішесін түртіңіз.</string>
     <string name="tap_to_get_the_weather">Ауа райы ақпаратын алу үшін түртіңіз</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Талаптар мен шарттар</string>
     <string name="the_latest_version">Соңғы нұсқасы бұрын орнатылып қойған.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Сонымен бірге бұл — хабарландырулар мен “Күнтізбе” қолданбасына қатысты болады.</string>
+    <string name="thu">Бей</string>
     <string name="tick_box_tts">Құсбелгі</string>
     <string name="ticked_tts">Белгіленген</string>
     <string name="time_am">ТД</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Сағат сайын</string>
     <string name="title_select_locations">Орындарды таңдау</string>
     <string name="title_theme">Тақырыптар</string>
+    <string name="to_continue_agree_to_updated">Жалғастыру үшін, біздің жаңартылған %s келісіңіз.</string>
     <string name="to_get_local_weather_chn">"Жергілікті ауа райын алу үшін ағымдағы орныңыз ауа райын болжау қызметтерін жеткізушіге жіберіледі. (Жеткізушінің %1$sШарттар және ережелер%2$s және %3$sҚұпиялылық саясат%4$s бөлімін қараңыз).
 Құрылғыңыздағы басқа қолданбалар мен қызметтер осы қолданбаларда ауа райын көрсету үшін алынған ауа райы деректеріне кіре алады.
 Ауа райы туралы ақпаратты тұрақты беру мақсатында, Ауа райы қолданбасы сіз қолданбаны пайдаланып жатпағанда да орныңызға кіреді."</string>
     <string name="today">Бүгін</string>
+    <string name="try_it_out_btn">Байқап көр</string>
+    <string name="tue">Сей</string>
+    <string name="turn_on_to_use_precise_location">Бұл мүмкіндікті пайдалану үшін %s қолданбасына геодеректерге үнемі кіруге рұқсат беріп, “Нақты орынды пайдалану” параметрін қосу керек. “Параметрлер” опциясын түртіп, “Рұқсаттар > Геодеректер” тармағына өтіңіз.</string>
     <string name="tw_title_weather_broadcast">Хабар тарату</string>
-    <string name="unable_to_check_for_updates">Жаңартуларды тексеру мүмкін емес. Желі қосылымы жоқ.</string>
+    <string name="unable_to_check_for_updates">Жаңартуларға тексеру мүмкін болмады. Әрекетті кейінірек қайталаңыз.</string>
     <string name="unable_to_receive_info_msg">Ақпарат алу мүмкін емес</string>
     <string name="unticked_tts">Белгіленбеген</string>
     <string name="unused">Пайдаланылмаған</string>
     <string name="update">Жаңарту</string>
     <string name="update_abb8">Жаңарту</string>
     <string name="update_app">Қолданбаны жаңарту</string>
+    <string name="updated_tile_chn">Жаңатылған: %s</string>
     <string name="updated_tts">%s жаңартылды</string>
+    <string name="use_current_location">Ағымдағы орынды пайдалану</string>
     <string name="use_current_location_agree_popup">"Жергілікті ауа райын алу үшін, ағымдағы орныңыз ауа райын болжау қызметтерін жеткізушіге жіберіледі. (Провайдердің %1$sқұпиялылық саясатын%2$s қараңыз.)
 Құрылғыдағы басқа қолданбалар мен қызметтер сол қолданбаларда ауа райын көрсету үшін алынған ауа райы деректеріне қол жеткізуі мүмкін."</string>
     <string name="use_current_location_and_background_agree_popup">"Жергілікті ауа райын алу үшін ағымдағы орныңыз ауа райын болжау қызметтерін жеткізушіге жіберіледі. (Жеткізушінің %1$sқұпиялық саясатын%2$s қараңыз.)
@@ -635,9 +677,16 @@
 Ауа райы қолданбасының параметрлеріне өту арқылы орныңызды пайдалануды өшіруге болады."</string>
     <string name="use_current_location_body_msg_chn">"«Ауа райы» қолданбасын пайдалану алдында мұқият оқып шығыңыз :
 Егер ағымдағы орныңыздың ауа райын білгіңіз келсе, үшінші тараптық қызмет жеткізушісіне құрылғыңызға үздіксіз қатынаса алуына және төмендегі тізімге сәйкес белгілі бір деректерді жинауына рұқсат етуіңіз керек (қызметті пайдаланып жатпаған кезде де). Мұндай рұқсатты беру алдында үшінші тараптық қызмет жеткізушісінің %1$sШарттары мен талаптары%2$s және %3$sҚұпиялық саясаты%4$s бөлімін мұқият оқып шығып, түсініп алыңыз. «Параметрлер» мәзірінен «Орын» опциясын өшіру арқылы рұқсатыңызды қайтаруға болады. Құрылғыңыздағы өзге қолданбалар мен қызметтер сол қолданбалар мен қызметтерде ауа райын көрсету үшін алынған ауа райы деректеріне қатынасуы мүмкін."</string>
+    <string name="use_current_location_body_msg_kor">"Ағымдағы орныңыз туралы ақпарат жиналады және жергілікті ауа райы ақпаратын алу сияқты Ауа райы қолданбасының кейбір мүмкіндіктерін қамтамасыз ету үшін пайдаланылады.
+
+Үздіксіз ауа райы ақпаратымен қамтамасыз ету үшін, қолданбаны пайдаланбаған кезде де, ол орныңызды жүйелі түрде өңдейді. Жалғастыру арқылы сіз жоғарыда көрсетілген мақсаттар үшін орныңыз туралы ақпаратты жинауға және өңдеуге келісесіз.
+
+Бұл орын туралы ақпаратты жинауды және пайдалануды Ауа райы қолданбасының параметрлерінде тоқтатуға болады."</string>
     <string name="use_current_location_body_purpose">Мақсаты</string>
     <string name="use_current_location_body_purpose_content">Ағымдағы орныңыз үшін ауа райы туралы ақпаратты қамтамасыз ету</string>
     <string name="use_current_location_body_search_provider">Қызмет жеткізушісі</string>
+    <string name="use_current_location_continue">Жалғастыру</string>
+    <string name="use_current_location_not_now">Кейін</string>
     <string name="use_current_location_off_alert_popup">Ағымдағы орын ақпараты жойылады.</string>
     <string name="useful_informations">Өмірлік кеңестер және басқа есептер</string>
     <string name="using_as">%s ретінде пайдалану</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">Ауа райы кеңестері</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Сәр</string>
     <string name="weekly_forecast">Күн сайын</string>
     <string name="widget_background">Виджет фоны</string>
     <string name="widget_empty_text">Ауа райы туралы ақпарат алу үшін түртіңіз</string>
+    <string name="widget_location">Қала аты</string>
     <string name="widget_name_4x1">Ауа райы және сағат</string>
     <string name="widget_setting">Параметрлер</string>
     <string name="widget_setting_background_color">Фонның түсі</string>

@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">%d உருப்படிகளை விட அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை விட அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d கோப்புகளைத் தேவையற்றவைக்கு நகர்த்த இயலாது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை தேவையற்றவைக்கு நகர்த்த இயலாது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d கோப்புறைகளை தேவையற்றவைக்கு நகர்த்த இயலாது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை தேவையற்றவைக்கு நகர்த்த இயலாது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d உருப்படிகளை தேவையற்றவைக்கு நகர்த்த இயலாது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியைத் தேவையற்றவைக்கு நகர்த்த இயலாது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">தேர்வு செய்யப்பட்டுள்ள கோப்புகளில் %d, கிளௌடு அல்லது USB சேமிப்பக சாதனத்தில் உள்ளதால் அவை நீக்கப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">தேர்வு செய்யப்பட்டுள்ள கோப்புகளில் %d, கிளௌடு அல்லது USB சேமிப்பக சாதனத்தில் உள்ளதால் அது நீக்கப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">தேர்வு செய்யப்பட்டுள்ள கோப்புறைகளில் %d, கிளௌடு அல்லது USB சேமிப்பக சாதனத்தில் உள்ளதால் அவை நீக்கப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">தேர்வு செய்யப்பட்டுள்ள கோப்புறைகளில் %d, கிளௌடு அல்லது USB சேமிப்பக சாதனத்தில் உள்ளதால் அது நீக்கப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">தேர்வு செய்யப்பட்டுள்ள உருப்படிகளில் %d, கிளௌடு அல்லது USB சேமிப்பக சாதனத்தில் உள்ளதால் அவை நீக்கப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">தேர்வு செய்யப்பட்டுள்ள உருப்படிகளில் %d, கிளௌடு அல்லது USB சேமிப்பக சாதனத்தில் உள்ளதால் அது நீக்கப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d கோப்புகளைச் சுருக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பைச் சுருக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d கோப்புகளைச் சுருக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பைச் சுருக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d கோப்புறைகளை சுருக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை சுருக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d கோப்புறைகளை சுருக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை சுருக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d உருப்படிகளை சுருக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை சுருக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d உருப்படிகளை சுருக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை சுருக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d கோப்புகளை நகலெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை நகலெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d கோப்புகளை நகலெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை நகலெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d கோப்புறைகளை நகலெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை நகலெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d கோப்புறைகளை நகலெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை நகலெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d உருப்படிகளை நகலெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை நகலெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d உருப்படிகளை நகலெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை நகலெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">ஃபோனிலிருந்து %d கோப்புகளை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ஃபோனிலிருந்து %d கோப்பை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">டேப்லெட்டிலிருந்து %d கோப்புகளை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">டேப்லெட்டிலிருந்து %d கோப்பை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">ஃபோனிலிருந்து %d கோப்புறைகளை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ஃபோனிலிருந்து %d கோப்புறையை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">டேப்லெட்டிலிருந்து %d கோப்புறைகளை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">டேப்லெட்டிலிருந்து %d கோப்புறையை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">ஃபோனிலிருந்து %d உருப்படிகளை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ஃபோனிலிருந்து %d உருப்படியை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">டேப்லெட்டிலிருந்து %d உருப்படிகளை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">டேப்லெட்டிலிருந்து %d உருப்படியை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d கோப்புகளை நீக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை நீக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d கோப்புறைகளை நீக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை நீக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">தேவையற்றவையிலிருந்து %d உருப்படிகளை நீக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">தேவையற்றவையிலிருந்து %d உருப்படியை நீக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d உருப்படிகளை நீக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை நீக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d கோப்புகளைப் பிரித்தெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை பிரித்தெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d கோப்புறைகளை பிரித்தெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை பிரித்தெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d உருப்படிகளை பிரித்தெடுக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை பிரித்தெடுக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d கோப்புகளும், %2$s-இல் உள்ள தேவையற்றவைக்கு நகர்த்தப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d கோப்பும், %2$s-இல் உள்ள தேவையற்றவைக்கு நகர்த்தப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d கோப்புகளை மீள்சேமிக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை மீள்சேமிக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d கோப்புறைகளும் %2$s-இல் தேவையற்றவைக்கு நகர்த்தப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d கோப்புறையும் %2$s-இல் தேவையற்றவைக்கு நகர்த்தப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d கோப்புறைகளை மீள்சேமிக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை மீள்சேமிக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">உங்கள் உள்ளக சேமிப்பகம் நிரம்பியுள்ளது. %d கோப்புகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் உள்ளக சேமிப்பகம் நிரம்பியுள்ளது. %d கோப்பை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">உங்கள் உள்ளக சேமிப்பகம் நிரம்பியுள்ளது. %d கோப்புறைகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் உள்ளக சேமிப்பகம் நிரம்பியுள்ளது. %d கோப்புறையை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">உங்கள் உள்ளக சேமிப்பகம் நிரம்பியுள்ளது. %d உருப்படிகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் உள்ளக சேமிப்பகம் நிரம்பியுள்ளது. %d உருப்படியை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">உங்கள் உள்ளக சேமிப்பகம் மற்றும் SD அட்டை நிரம்பியுள்ளது. %d கோப்புகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் உள்ளக சேமிப்பகம் மற்றும் SD அட்டை நிரம்பியுள்ளது. %d கோப்பை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">உங்கள் உள்ளக சேமிப்பகம் மற்றும் SD அட்டை நிரம்பியுள்ளது. %d கோப்புறைகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் உள்ளக சேமிப்பகம் மற்றும் SD அட்டை நிரம்பியுள்ளது. %d கோப்புறையை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">உங்கள் உள்ளக சேமிப்பகம் மற்றும் SD அட்டை நிரம்பியுள்ளது. %d உருப்படிகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் உள்ளக சேமிப்பகம் மற்றும் SD அட்டை நிரம்பியுள்ளது. %d உருப்படியை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d உருப்படிகளை மீள்சேமிக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை மீள்சேமிக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d உருப்படிகளும், %2$s-இல் உள்ள தேவையற்றவைக்கு நகர்த்தப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d உருப்படியும், %2$s-இல் உள்ள தேவையற்றவைக்கு நகர்த்தப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">%d பாப்-அப் விண்டோகளுக்கு மேல் திறக்க இயலாது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d பாப்-அப் விண்டோவிற்கு மேல் திறக்க இயலாது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d கோப்புகளைத் தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d கோப்புகளை தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d கோப்புறைகளைத் தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d கோப்புறைகளை தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d உருப்படிகளைத் தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியைத் தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d உருப்படிகளைத் தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை தேவையற்றவைக்கு நகர்த்தவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d கோப்புகளை தேவையற்றவைக்கு நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை தேவையற்றவைக்கு நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d கோப்புறைகளை தேவையற்றவைக்கு நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை தேவையற்றவைக்கு நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d உருப்படிகளைத் தேவையற்றவைக்கு நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை தேவையற்றவைக்கு நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d கோப்புகளை நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d கோப்புகளை நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d கோப்புறைகளை நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d கோப்புறைகளை நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d உருப்படிகளை நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d உருப்படிகளை நகர்த்துகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை நகர்த்துகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d உருப்படிகள் சுருக்கப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி சுருக்கப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d உருப்படிகள் %2$s-க்கு நகலெடுக்கப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d உருப்படி %2$s-க்கு நகலெடுக்கப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">கோப்புறை மற்றும் அதில் உள்ள %d கோப்புகளை நீக்கவா?</item>
+        <item quantity="one">கோப்புறை மற்றும் அதில் உள்ள கோப்பை நீக்கவா?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d கோப்புறைகள் மற்றும் அவற்றில் இருக்கும் %2$d கோப்புகளை நீக்கவா?</item>
+        <item quantity="one">கோப்புறை மற்றும் அதில் உள்ள கோப்பை நீக்கவா?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d உருப்படிகள் நீக்கப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி நீக்கப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d கோப்புகளை பதிவிறக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை பதிவிறக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d கோப்புறைகளை பதிவிறக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை பதிவிறக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d உருப்படிகளை பதிவிறக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை பதிவிறக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">கோப்புறைகளைப் பகிர இயலாது. காலி கோப்புறைகள்.</item>
+        <item quantity="one">கோப்புறையைப் பகிர இயலாது. காலி கோப்புறை.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d கோப்புகள் நிரந்தரமாக நீக்கப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பு நிரந்தரமாக நீக்கப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d கோப்புறைகள் நிரந்தரமாக நீக்கப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறை நிரந்தரமாக நீக்கப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d உருப்படிகள் பிரித்தெடுக்கப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி பிரித்தெடுக்கப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d கோப்புகள் பிடித்தவைகளில் சேர்க்கப்பட்டன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பு பிடித்தவைகளில் சேர்க்கப்பட்டது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d கோப்புகள் பிடித்தவையிலிருந்து அகற்றப்பட்டன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பு பிடித்தவையிலிருந்து அகற்றப்பட்டது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d கோப்புறைகள் பிடித்தவையில் சேர்க்கப்பட்டன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறை பிடித்தவையில் சேர்க்கப்பட்டது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d கோப்புறைகள் பிடித்தவையிலிருந்து அகற்றப்பட்டன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறை பிடித்தவையிலிருந்து அகற்றப்பட்டது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d உருப்படிகள் பிடித்தவைகளில் சேர்க்கப்பட்டன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி பிடித்தவைகளில் சேர்க்கப்பட்டது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d உருப்படிகள் பிடித்தவையிலிருந்து அகற்றப்பட்டன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி பிடித்தவையிலிருந்து அகற்றப்பட்டது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d உருப்படிகள்</item>
+        <item quantity="one">1 உருப்படி</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d உருப்படிகள்</item>
+        <item quantity="one">%d உருப்படி</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d உருப்படிகள் கிளிப்போர்டிற்கு நகலெடுக்கப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி கிளிப்போர்டிற்கு நகலெடுக்கப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d உருப்படிகள் கிளிப்போர்டிற்கு நகர்த்தப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி கிளிப்போர்டிற்கு நகர்த்தப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d உருப்படிகள் தேர்வுசெய்யப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி தேர்வுசெய்யப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d உருப்படிகள் %2$s-க்கு நகர்த்தப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d உருப்படி %2$s-க்கு நகர்த்தப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d உருப்படிகள் தேவையற்றவைக்கு நகர்த்தப்பட்டுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படி தேவையற்றவைக்கு நகர்த்தப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d தேர்வுசெய்யப்பட்டுள்ளது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d தேர்வுசெய்யப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">உங்கள் SD அட்டை நிரம்பியுள்ளது. %d கோப்புகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் SD அட்டை நிரம்பியுள்ளது. %d கோப்பை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">உங்கள் SD அட்டை நிரம்பியுள்ளது. %d கோப்புறைகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் SD அட்டை நிரம்பியுள்ளது. %d கோப்புறையை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">உங்கள் SD அட்டை நிரம்பியுள்ளது. %d உருப்படிகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் SD அட்டை நிரம்பியுள்ளது. %d கோப்பை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">இந்தக் கோப்பு %d நாட்களில் நீக்கப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இந்தக் கோப்பு %d நாளில் நீக்கப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">இந்தக் கோப்புறை %d நாட்களில் நீக்கப்படும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இந்தக் கோப்புறை %d நாளில் நீக்கப்படும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d கோப்புகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d கோப்புகளை நீக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை நீக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d கோப்புகளை மீள்சேமிக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பை மீள்சேமிக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d கோப்புறைகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d கோப்புறைகளை நீக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறைகளை நீக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d கோப்புறைகளை மீள்சேமிக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்புறையை மீள்சேமிக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d உருப்படிகளை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை நிரந்தரமாக நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d உருப்படிகளை நீக்குகிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை நீக்குகிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d உருப்படிகளை மீள்சேமிக்கிறது…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படியை மீள்சேமிக்கிறது…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d நாட்களில் நீக்கப்படும்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நாளில் நீக்கப்படும்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d பயன்பாடுகளை நிறுவல்நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d பயன்பாட்டை நிறுவல்நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

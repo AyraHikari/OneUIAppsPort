@@ -1,20 +1,20 @@
 .class final Lcom/google/android/gms/dynamic/zaf;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/dynamic/DeferredLifecycleHelper$zaa;
+.implements Lcom/google/android/gms/dynamic/zah;
 
 
 # instance fields
-.field private final synthetic zarj:Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;
+.field final synthetic zaa:Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/dynamic/zaf;->zarj:Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;
+    iput-object p1, p0, Lcom/google/android/gms/dynamic/zaf;->zaa:Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,7 +23,7 @@
 
 
 # virtual methods
-.method public final getState()I
+.method public final zaa()I
     .locals 1
 
     const/4 v0, 0x4
@@ -31,13 +31,13 @@
     return v0
 .end method
 
-.method public final zaa(Lcom/google/android/gms/dynamic/LifecycleDelegate;)V
+.method public final zab(Lcom/google/android/gms/dynamic/LifecycleDelegate;)V
     .locals 0
 
-    .line 3
-    iget-object p1, p0, Lcom/google/android/gms/dynamic/zaf;->zarj:Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;
+    .line 1
+    iget-object p1, p0, Lcom/google/android/gms/dynamic/zaf;->zaa:Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;
 
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;->zab(Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;)Lcom/google/android/gms/dynamic/LifecycleDelegate;
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;->zaa(Lcom/google/android/gms/dynamic/DeferredLifecycleHelper;)Lcom/google/android/gms/dynamic/LifecycleDelegate;
 
     move-result-object p1
 

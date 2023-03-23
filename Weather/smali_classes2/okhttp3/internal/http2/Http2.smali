@@ -117,17 +117,17 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 16
 
-    .line 21
+    .line 1
     new-instance v0, Lokhttp3/internal/http2/Http2;
 
     invoke-direct {v0}, Lokhttp3/internal/http2/Http2;-><init>()V
 
     sput-object v0, Lokhttp3/internal/http2/Http2;->INSTANCE:Lokhttp3/internal/http2/Http2;
 
-    .line 23
+    .line 2
     sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     const-string v1, "PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n"
@@ -158,19 +158,19 @@
 
     const-string v10, "CONTINUATION"
 
-    .line 51
+    .line 3
     filled-new-array/range {v1 .. v10}, [Ljava/lang/String;
 
     move-result-object v0
 
-    .line 49
+    .line 4
     sput-object v0, Lokhttp3/internal/http2/Http2;->FRAME_NAMES:[Ljava/lang/String;
 
     const/16 v0, 0x40
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 58
+    .line 5
     sput-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     const/16 v0, 0x100
@@ -188,14 +188,14 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    .line 60
+    .line 6
     invoke-static {v3}, Ljava/lang/Integer;->toBinaryString(I)Ljava/lang/String;
 
     move-result-object v5
 
     const-string v6, "Integer.toBinaryString(it)"
 
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     aput-object v5, v4, v2
 
@@ -215,7 +215,7 @@
 
     const/4 v11, 0x0
 
-    invoke-static/range {v6 .. v11}, Lkotlin/text/StringsKt;->replace$default(Ljava/lang/String;CCZILjava/lang/Object;)Ljava/lang/String;
+    invoke-static/range {v6 .. v11}, Lhl/t;->z(Ljava/lang/String;CCZILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -228,7 +228,7 @@
     :cond_0
     sput-object v1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
-    .line 64
+    .line 7
     sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     const-string v1, ""
@@ -237,7 +237,7 @@
 
     const-string v1, "END_STREAM"
 
-    .line 65
+    .line 8
     aput-object v1, v0, v4
 
     new-array v1, v4, [I
@@ -248,7 +248,7 @@
 
     const/16 v5, 0x8
 
-    .line 69
+    .line 9
     aput-object v3, v0, v5
 
     move v0, v2
@@ -258,17 +258,17 @@
 
     if-ge v0, v4, :cond_1
 
-    .line 70
+    .line 10
     aget v6, v1, v0
 
-    .line 71
+    .line 11
     sget-object v7, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     or-int/lit8 v8, v6, 0x8
 
     aget-object v6, v7, v6
 
-    invoke-static {v6, v3}, Lkotlin/jvm/internal/Intrinsics;->stringPlus(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v6, v3}, Loi/k;->o(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -278,7 +278,7 @@
 
     goto :goto_1
 
-    .line 74
+    .line 12
     :cond_1
     sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
@@ -292,21 +292,21 @@
 
     const-string v7, "PRIORITY"
 
-    .line 75
+    .line 13
     aput-object v7, v0, v6
 
     const/16 v6, 0x24
 
     const-string v7, "END_HEADERS|PRIORITY"
 
-    .line 76
+    .line 14
     aput-object v7, v0, v6
 
     const/4 v0, 0x3
 
     new-array v6, v0, [I
 
-    .line 77
+    .line 15
     fill-array-data v6, :array_0
 
     move v7, v2
@@ -314,7 +314,7 @@
     :goto_2
     if-ge v7, v0, :cond_3
 
-    .line 79
+    .line 16
     aget v8, v6, v7
 
     move v9, v2
@@ -322,10 +322,10 @@
     :goto_3
     if-ge v9, v4, :cond_2
 
-    .line 80
+    .line 17
     aget v10, v1, v9
 
-    .line 81
+    .line 18
     sget-object v11, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     or-int v12, v10, v8
@@ -338,19 +338,13 @@
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v13
-
     const-string v14, "|"
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v13
-
     aget-object v15, v11, v8
 
     invoke-virtual {v13, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v13
 
     invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -360,7 +354,7 @@
 
     or-int/2addr v12, v5
 
-    .line 83
+    .line 19
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -369,23 +363,15 @@
 
     invoke-virtual {v13, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v10
+    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aget-object v10, v11, v8
 
-    move-result-object v10
+    invoke-virtual {v13, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget-object v13, v11, v8
+    invoke-virtual {v13, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    invoke-virtual {v10, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v10
 
@@ -400,7 +386,7 @@
 
     goto :goto_2
 
-    .line 87
+    .line 20
     :cond_3
     sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
@@ -409,7 +395,7 @@
     :goto_4
     if-ge v2, v0, :cond_5
 
-    .line 88
+    .line 21
     sget-object v1, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     aget-object v3, v1, v2
@@ -430,6 +416,8 @@
     :cond_5
     return-void
 
+    nop
+
     :array_0
     .array-data 4
         0x4
@@ -441,7 +429,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -483,7 +470,7 @@
 
     if-eq p1, v0, :cond_6
 
-    .line 137
+    .line 1
     sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     array-length v1, v0
@@ -492,7 +479,7 @@
 
     aget-object v0, v0, p2
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v0}, Loi/k;->d(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -522,8 +509,8 @@
 
     const-string v3, "PUSH_PROMISE"
 
-    .line 141
-    invoke-static/range {v1 .. v6}, Lkotlin/text/StringsKt;->replace$default(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
+    .line 2
+    invoke-static/range {v1 .. v6}, Lhl/t;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -546,8 +533,8 @@
 
     const-string v3, "COMPRESSED"
 
-    .line 144
-    invoke-static/range {v1 .. v6}, Lkotlin/text/StringsKt;->replace$default(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
+    .line 3
+    invoke-static/range {v1 .. v6}, Lhl/t;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -564,7 +551,7 @@
 
     goto :goto_2
 
-    .line 134
+    .line 4
     :cond_5
     sget-object p1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
@@ -573,7 +560,7 @@
     :goto_2
     return-object p1
 
-    .line 135
+    .line 5
     :cond_6
     sget-object p1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
@@ -585,7 +572,6 @@
 .method public final formattedType$okhttp(I)Ljava/lang/String;
     .locals 2
 
-    .line 123
     sget-object v0, Lokhttp3/internal/http2/Http2;->FRAME_NAMES:[Ljava/lang/String;
 
     array-length v1, v0
@@ -622,12 +608,12 @@
 .method public final frameLog(ZIIII)Ljava/lang/String;
     .locals 2
 
-    .line 115
+    .line 1
     invoke-virtual {p0, p4}, Lokhttp3/internal/http2/Http2;->formattedType$okhttp(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 116
+    .line 2
     invoke-virtual {p0, p4, p5}, Lokhttp3/internal/http2/Http2;->formatFlags(II)Ljava/lang/String;
 
     move-result-object p4
@@ -652,7 +638,7 @@
 
     const/4 p1, 0x1
 
-    .line 119
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -677,7 +663,7 @@
 
     const-string p1, "%s 0x%08x %5d %-13s %s"
 
-    .line 118
+    .line 4
     invoke-static {p1, p5}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1

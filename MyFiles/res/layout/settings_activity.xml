@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:title="@string/myfiles_settings" style="@style/CollapsingToolbarLayoutStyle">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarStyle" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:contentInsetEnd="@dimen/action_bar_content_inset" app:contentInsetStart="@dimen/action_bar_content_inset" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <View android:id="@id/start_margin" android:background="@color/light_theme_background_color" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/settings_layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:id="@id/end_margin" android:background="@color/light_theme_background_color" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

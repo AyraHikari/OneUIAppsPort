@@ -1,11 +1,11 @@
 .class Lcom/google/android/material/bottomappbar/BottomAppBar$4;
-.super Lcom/google/android/material/floatingactionbutton/FloatingActionButton$OnVisibilityChangedListener;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "BottomAppBar.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/bottomappbar/BottomAppBar;->createFabDefaultXAnimation(ILjava/util/List;)V
+    value = Lcom/google/android/material/bottomappbar/BottomAppBar;->maybeAnimateModeChange(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,45 +17,46 @@
 # instance fields
 .field final synthetic this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-.field final synthetic val$targetMode:I
-
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar;I)V
+.method constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
     .locals 0
 
-    .line 515
+    .line 638
     iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$4;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    iput p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$4;->val$targetMode:I
-
-    invoke-direct {p0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$OnVisibilityChangedListener;-><init>()V
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onHidden(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
-    .locals 2
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
 
-    .line 518
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$4;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    .line 646
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$4;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    iget v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$4;->val$targetMode:I
+    invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1600(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
 
-    invoke-static {v0, v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$700(Lcom/google/android/material/bottomappbar/BottomAppBar;I)F
+    .line 647
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$4;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    move-result v0
+    const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setTranslationX(F)V
+    invoke-static {p1, v0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1702(Lcom/google/android/material/bottomappbar/BottomAppBar;Landroid/animation/Animator;)Landroid/animation/Animator;
 
-    .line 519
-    new-instance v0, Lcom/google/android/material/bottomappbar/BottomAppBar$4$1;
+    return-void
+.end method
 
-    invoke-direct {v0, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$4$1;-><init>(Lcom/google/android/material/bottomappbar/BottomAppBar$4;)V
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
 
-    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->show(Lcom/google/android/material/floatingactionbutton/FloatingActionButton$OnVisibilityChangedListener;)V
+    .line 641
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$4;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
+
+    invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1500(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
 
     return-void
 .end method

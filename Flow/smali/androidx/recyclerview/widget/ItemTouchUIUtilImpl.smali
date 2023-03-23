@@ -85,7 +85,7 @@
     .locals 2
 
     .line 75
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
@@ -136,7 +136,7 @@
     .locals 0
 
     .line 36
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 p6, 0x15
 

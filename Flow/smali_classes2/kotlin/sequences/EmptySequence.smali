@@ -9,11 +9,6 @@
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010(\n\u0002\u0008\u0002\u0008\u00c2\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00020\u0003B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00002\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J\u000f\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\u00020\tH\u0096\u0002J\u0010\u0010\n\u001a\u00020\u00002\u0006\u0010\u0006\u001a\u00020\u0007H\u0016\u00a8\u0006\u000b"
     }
@@ -34,9 +29,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -48,7 +44,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 42
     new-instance v0, Lkotlin/sequences/EmptySequence;
 
     invoke-direct {v0}, Lkotlin/sequences/EmptySequence;-><init>()V
@@ -61,7 +56,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 42
+    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,7 +67,7 @@
 .method public drop(I)Lkotlin/sequences/EmptySequence;
     .locals 0
 
-    .line 44
+    .line 46
     sget-object p1, Lkotlin/sequences/EmptySequence;->INSTANCE:Lkotlin/sequences/EmptySequence;
 
     return-object p1
@@ -81,7 +76,7 @@
 .method public bridge synthetic drop(I)Lkotlin/sequences/Sequence;
     .locals 0
 
-    .line 42
+    .line 44
     invoke-virtual {p0, p1}, Lkotlin/sequences/EmptySequence;->drop(I)Lkotlin/sequences/EmptySequence;
 
     move-result-object p1
@@ -94,7 +89,7 @@
 .method public iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 43
+    .line 45
     sget-object v0, Lkotlin/collections/EmptyIterator;->INSTANCE:Lkotlin/collections/EmptyIterator;
 
     check-cast v0, Ljava/util/Iterator;
@@ -105,7 +100,7 @@
 .method public take(I)Lkotlin/sequences/EmptySequence;
     .locals 0
 
-    .line 45
+    .line 47
     sget-object p1, Lkotlin/sequences/EmptySequence;->INSTANCE:Lkotlin/sequences/EmptySequence;
 
     return-object p1
@@ -114,7 +109,7 @@
 .method public bridge synthetic take(I)Lkotlin/sequences/Sequence;
     .locals 0
 
-    .line 42
+    .line 44
     invoke-virtual {p0, p1}, Lkotlin/sequences/EmptySequence;->take(I)Lkotlin/sequences/EmptySequence;
 
     move-result-object p1

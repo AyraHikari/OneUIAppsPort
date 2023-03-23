@@ -18,7 +18,13 @@
 
 .field public static final INDEX_FROM_PARENT_IS_DROPPED:Ljava/lang/String; = "ROOM_PARENT_INDEX_IS_DROPPED"
 
+.field public static final MISMATCHED_GETTER:Ljava/lang/String; = "ROOM_MISMATCHED_GETTER_TYPE"
+
+.field public static final MISMATCHED_SETTER:Ljava/lang/String; = "ROOM_MISMATCHED_SETTER_TYPE"
+
 .field public static final MISSING_INDEX_ON_FOREIGN_KEY_CHILD:Ljava/lang/String; = "ROOM_MISSING_FOREIGN_KEY_CHILD_INDEX"
+
+.field public static final MISSING_INDEX_ON_JUNCTION:Ljava/lang/String; = "MISSING_INDEX_ON_JUNCTION"
 
 .field public static final MISSING_JAVA_TMP_DIR:Ljava/lang/String; = "ROOM_MISSING_JAVA_TMP_DIR"
 
@@ -37,7 +43,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 140
+    .line 191
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -61,6 +61,14 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -68,7 +76,7 @@
     .line 43
     new-instance v7, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager$DatabaseHelper;
 
-    const-string v2, "shares.db"
+    const-string/jumbo v2, "shares.db"
 
     const/4 v3, 0x0
 
@@ -89,7 +97,7 @@
     .line 44
     new-instance v7, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager$DatabaseHelper;
 
-    const-string v2, "shares_childs.db"
+    const-string/jumbo v2, "shares_childs.db"
 
     const-string v4, "CREATE TABLE shareChilds (_id INTEGER PRIMARY KEY AUTOINCREMENT, share_id TEXT, parent_id TEXT, version INTEGER, type TEXT, device_name TEXT, device_type INTEGER, title TEXT, content TEXT, uri TEXT, time TEXT, thumb_path TEXT, is_received INTEGER, is_failed INTEGER, is_defer INTEGER, is_checked INTEGER, is_deleted INTEGER, is_video INTEGER, has_thumb INTEGER, is_sync_contents INTEGER, display_date TEXT, progress INTEGER, position INTEGER, file_length TEXT, is_sharing INTEGER, url_title TEXT, url_desc TEXT, url_thumb_path TEXT,  INTEGER DEFAULT 0);"
 
@@ -165,10 +173,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->sharedContentsDatabase:Lcom/samsung/android/galaxycontinuity/database/ShareDatabase;
 
-    .line 50
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/database/ShareDatabase;->init()V
-
-    .line 52
+    .line 51
     new-instance v0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->share_childs_databaseHelper:Lcom/samsung/android/galaxycontinuity/database/DatabaseManager$DatabaseHelper;
@@ -178,9 +183,6 @@
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->shareChildsDataBase:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     .line 53
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->init()V
-
-    .line 54
     new-instance v0, Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->notification_app_databaseHelper:Lcom/samsung/android/galaxycontinuity/database/DatabaseManager$DatabaseHelper;
@@ -195,7 +197,7 @@
 .method public static getDragAndDropDatabase()Lcom/samsung/android/galaxycontinuity/database/DragAndDropDatabase;
     .locals 1
 
-    .line 70
+    .line 69
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -209,8 +211,16 @@
 
 .method public static getDragAndDropDatabase(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/DragAndDropDatabase;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 90
+    .line 89
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;
 
     move-result-object p0
@@ -222,6 +232,14 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 34
     sget-object v0, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->lock:Ljava/lang/Object;
@@ -263,7 +281,7 @@
 .method public static getNotificationAlarmDatabase()Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase;
     .locals 1
 
-    .line 74
+    .line 73
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -277,8 +295,16 @@
 
 .method public static getNotificationAlarmDatabase(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 94
+    .line 93
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;
 
     move-result-object p0
@@ -291,7 +317,7 @@
 .method public static getNotificationAppDatabase()Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
     .locals 1
 
-    .line 66
+    .line 65
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -305,8 +331,16 @@
 
 .method private static getNotificationAppDatabase(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/NotificationAppDataBase;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 86
+    .line 85
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;
 
     move-result-object p0
@@ -319,7 +353,7 @@
 .method public static getShareChildsContentsDatabase()Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
     .locals 1
 
-    .line 62
+    .line 61
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -333,8 +367,16 @@
 
 .method private static getShareChildsContentsDatabase(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 82
+    .line 81
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;
 
     move-result-object p0
@@ -347,7 +389,7 @@
 .method public static getSharedContentsDatabase()Lcom/samsung/android/galaxycontinuity/database/ShareDatabase;
     .locals 1
 
-    .line 58
+    .line 57
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -361,8 +403,16 @@
 
 .method private static getSharedContentsDatabase(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/ShareDatabase;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 78
+    .line 77
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;
 
     move-result-object p0

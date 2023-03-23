@@ -140,7 +140,7 @@
 
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->mVertexShader:I
 
-    const-string v1, "uniform mat4 uMat;attribute vec4 aPos;attribute vec2 aUV;varying vec2 vUV;void main() {  gl_Position = uMat * aPos;  vUV = aUV;}"
+    const-string/jumbo v1, "uniform mat4 uMat;attribute vec4 aPos;attribute vec2 aUV;varying vec2 vUV;void main() {  gl_Position = uMat * aPos;  vUV = aUV;}"
 
     .line 72
     invoke-static {v0, v1}, Landroid/opengl/GLES20;->glShaderSource(ILjava/lang/String;)V
@@ -166,7 +166,7 @@
 
     if-nez v1, :cond_0
 
-    const-string v1, "vertex shader compile fail"
+    const-string/jumbo v1, "vertex shader compile fail"
 
     .line 77
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -234,7 +234,7 @@
     .line 91
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->mProgram:I
 
-    const-string v1, "uMat"
+    const-string/jumbo v1, "uMat"
 
     invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
 
@@ -267,7 +267,7 @@
     .line 94
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->mProgram:I
 
-    const-string v1, "uTexture"
+    const-string/jumbo v1, "uTexture"
 
     invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
 
@@ -327,6 +327,14 @@
 
 .method public render([F)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "viewmat"
+        }
+    .end annotation
 
     const/16 v0, 0x4100
 
@@ -428,6 +436,14 @@
 
 .method public setTexture(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "texture"
+        }
+    .end annotation
 
     .line 104
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->mTexture:I

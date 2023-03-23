@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Неможливо вибрати понад %d об’єкта.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо вибрати понад %d об’єкт.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо вибрати понад %d об’єкти.</item>
+        <item quantity="many">Неможливо вибрати понад %d об’єктів.</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Неможливо перемістити %d файлу до кошика</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо перемістити %d файл до кошика</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо перемістити %d файли до кошика</item>
+        <item quantity="many">Неможливо перемістити %d файлів до кошика</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Неможливо перемістити %d папки до кошика</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо перемістити %d папку до кошика</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо перемістити %d папки до кошика</item>
+        <item quantity="many">Неможливо перемістити %d папок до кошика</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Неможливо перемістити %d об’єкта до кошика</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо перемістити %d об’єкт до кошика</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо перемістити %d об’єкти до кошика</item>
+        <item quantity="many">Неможливо перемістити %d об’єктів до кошика</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d вибраного файлу буде видалено, оскільки він знаходиться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d вибраний файл буде видалено, оскільки він знаходиться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d вибраних файли буде видалено, оскільки вони знаходяться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="many">%d вибраних файлів буде видалено, оскільки вони знаходяться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d вибраної папки буде видалено, оскільки вона знаходиться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d вибрана папка буде видалена, оскільки вона знаходиться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d вибраних папки буде видалено, оскільки вони знаходяться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="many">%d вибраних папок буде видалено, оскільки вони знаходяться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d вибраного об’єкта буде видалено, оскільки він знаходиться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d вибраний об’єкт буде видалено, оскільки він знаходиться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d вибраних об’єкти буде видалено, оскільки вони знаходяться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+        <item quantity="many">%d вибраних об’єктів буде видалено, оскільки вони знаходяться в хмарному сховищі або на USB-пристрої для зберігання даних.</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Стискання %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Стискання %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Стискання %d файлів…</item>
+        <item quantity="many">Стискання %d файлів…</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Стискання %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Стискання %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Стискання %d файлів…</item>
+        <item quantity="many">Стискання %d файлів…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Стискання %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Стискання %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Стискання %d папок…</item>
+        <item quantity="many">Стискання %d папок…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Стискання %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Стискання %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Стискання %d папок…</item>
+        <item quantity="many">Стискання %d папок…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Стискання %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Стискання %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Стискання %d об’єктів…</item>
+        <item quantity="many">Стискання %d об’єктів…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Стискання %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Стискання %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Стискання %d об’єктів…</item>
+        <item quantity="many">Стискання %d об’єктів…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Копіювання %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Копіювання %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Копіювання %d файлів…</item>
+        <item quantity="many">Копіювання %d файлів…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Копіювання %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Копіювання %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Копіювання %d файлів…</item>
+        <item quantity="many">Копіювання %d файлів…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Копіювання %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Копіювання %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Копіювання %d папок…</item>
+        <item quantity="many">Копіювання %d папок…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Копіювання %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Копіювання %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Копіювання %d папок…</item>
+        <item quantity="many">Копіювання %d папок…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Копіювання %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Копіювання %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Копіювання %d об’єктів…</item>
+        <item quantity="many">Копіювання %d об’єктів…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Копіювання %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Копіювання %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Копіювання %d об’єктів…</item>
+        <item quantity="many">Копіювання %d об’єктів…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Видалити %d файлу з телефону?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d файл з телефону?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d файли з телефону?</item>
+        <item quantity="many">Видалити %d файлів з телефону?</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Видалити %d файлу з планшета?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d файл з планшета?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d файли з планшета?</item>
+        <item quantity="many">Видалити %d файлів з планшета?</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Видалити %d папки з телефону?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d папку з телефону?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d папки з телефону?</item>
+        <item quantity="many">Видалити %d папок з телефону?</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Видалити %d папки з планшета?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d папку з планшета?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d папки з планшета?</item>
+        <item quantity="many">Видалити %d папок з планшета?</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Видалити %d об’єкта з телефону?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d об’єкт з телефону?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d об’єкти з телефону?</item>
+        <item quantity="many">Видалити %d об’єктів з телефону?</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Видалити %d об’єкта з планшета?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d об’єкт з планшета?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d об’єкти з планшета?</item>
+        <item quantity="many">Видалити %d об’єктів із планшета?</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Видалення %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалення %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалення %d файлів…</item>
+        <item quantity="many">Видалення %d файлів…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Видалення %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалення %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалення %d папок…</item>
+        <item quantity="many">Видалення %d папок…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Видалення %d об’єкта з кошика</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалення %d об’єкта з кошика</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалення %d об’єктів з кошика</item>
+        <item quantity="many">Видалення %d об’єктів з кошика</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Видалення %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалення %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалення %d об’єктів…</item>
+        <item quantity="many">Видалення %d об’єктів…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Вилучення %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вилучення %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Вилучення %d файлів…</item>
+        <item quantity="many">Вилучення %d файлів…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Видобування %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видобування %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видобування %d папок…</item>
+        <item quantity="many">Видобування %d папок…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Видобування %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видобування %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видобування %d об’єктів…</item>
+        <item quantity="many">Видобування %d об’єктів…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d файлу також буде переміщено до кошика в %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d файл також буде переміщено до кошика в %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d файли також буде переміщено до кошика в %2$s.</item>
+        <item quantity="many">%1$d файлів також буде переміщено до кошика в %2$s.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Відновлення %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Відновлення %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Відновлення %d файлів…</item>
+        <item quantity="many">Відновлення %d файлів…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d папки також буде переміщено до кошика в %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d папку також буде переміщено до кошика в %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d папки також буде переміщено до кошика в %2$s.</item>
+        <item quantity="many">%1$d папок також буде переміщено до кошика в %2$s.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Відновлення %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Відновлення %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Відновлення %d папок…</item>
+        <item quantity="many">Відновлення %d папок…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Внутрішню пам’ять заповнено. Видалити %d файлу остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Внутрішню пам’ять заповнено. Видалити %d файл остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Внутрішню пам’ять заповнено. Видалити %d файли остаточно?</item>
+        <item quantity="many">Внутрішню пам’ять заповнено. Видалити %d файлів остаточно?</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Внутрішню пам’ять заповнено. Видалити %d папки остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Внутрішню пам’ять заповнено. Видалити %d папку остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Внутрішню пам’ять заповнено. Видалити %d папки остаточно?</item>
+        <item quantity="many">Внутрішню пам’ять заповнено. Видалити %d папок остаточно?</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Внутрішню пам’ять заповнено. Видалити %d об’єкта остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Внутрішню пам’ять заповнено. Видалити %d об’єкт остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Внутрішню пам’ять заповнено. Видалити %d об’єкти остаточно?</item>
+        <item quantity="many">Внутрішню пам’ять заповнено. Видалити %d об’єктів остаточно?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Внутрішню пам’ять і SD-карту заповнено. Видалити %d файлу остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Внутрішню пам’ять і SD-карту заповнено. Видалити %d файл остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Внутрішню пам’ять і SD-карту заповнено. Видалити %d файли остаточно?</item>
+        <item quantity="many">Внутрішню пам’ять і SD-карту заповнено. Видалити %d файлів остаточно?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Внутрішню пам’ять і SD-карту заповнено. Видалити %d папки остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Внутрішню пам’ять і SD-карту заповнено. Видалити %d папку остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Внутрішню пам’ять і SD-карту заповнено. Видалити %d папки остаточно?</item>
+        <item quantity="many">Внутрішню пам’ять і SD-карту заповнено. Видалити %d папок остаточно?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Внутрішню пам’ять і SD-карту заповнено. Видалити %d об’єкта остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Внутрішню пам’ять і SD-карту заповнено. Видалити %d об’єкт остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Внутрішню пам’ять і SD-карту заповнено. Видалити %d об’єкти остаточно?</item>
+        <item quantity="many">Внутрішню пам’ять і SD-карту заповнено. Видалити %d об’єктів остаточно?</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Відновлення %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Відновлення %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Відновлення %d об’єктів…</item>
+        <item quantity="many">Відновлення %d об’єктів…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d об’єкта також буде переміщено до кошика в %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d об’єкт також буде переміщено до кошика в %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d об’єкти також буде переміщено до кошика в %2$s.</item>
+        <item quantity="many">%1$d об’єктів також буде переміщено до кошика в %2$s.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Неможливо відкрити більше ніж %d вікна програм.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо відкрити більше ніж %d вікно програм.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо відкрити більше ніж %d вікна програм.</item>
+        <item quantity="many">Неможливо відкрити більше ніж %d вікон програм.</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Перемістити %d файлу до кошика?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Перемістити %d файл до кошика?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Перемістити %d файли до кошика?</item>
+        <item quantity="many">Перемістити %d файлів до кошика?</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Перемістити %d файлу до кошика?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Перемістити %d файл до кошика?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Перемістити %d файли до кошика?</item>
+        <item quantity="many">Перемістити %d файлів до кошика?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Перемістити %d папки до кошика?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Перемістити %d папку до кошика?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Перемістити %d папки до кошика?</item>
+        <item quantity="many">Перемістити %d папок до кошика?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Перемістити %d папки до кошика?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Перемістити %d папку до кошика?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Перемістити %d папки до кошика?</item>
+        <item quantity="many">Перемістити %d папок до кошика?</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Перемістити %d об’єкта до кошика?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Перемістити %d об’єкт до кошика?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Перемістити %d об’єкти до кошика?</item>
+        <item quantity="many">Перемістити %d об’єктів до кошика?</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Перемістити %d об’єкта до кошика?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Перемістити %d об’єкт до кошика?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Перемістити %d об’єкти до кошика?</item>
+        <item quantity="many">Перемістити %d об’єктів до кошика?</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Переміщення %d файлу до кошика…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d файлу до кошика…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d файлів до кошика…</item>
+        <item quantity="many">Переміщення %d файлів до кошика…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Переміщення %d папки до кошика…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d папки до кошика…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d папок до кошика…</item>
+        <item quantity="many">Переміщення %d папок до кошика…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Переміщення %d об’єкта до кошика…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d об’єкта до кошика…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d об’єктів до кошика…</item>
+        <item quantity="many">Переміщення %d об’єктів до кошика…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Переміщення %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d файлів…</item>
+        <item quantity="many">Переміщення %d файлів…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Переміщення %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d файлів…</item>
+        <item quantity="many">Переміщення %d файлів…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Переміщення %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d папок…</item>
+        <item quantity="many">Переміщення %d папок…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Переміщення %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d папок…</item>
+        <item quantity="many">Переміщення %d папок…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Переміщення %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d об’єктів…</item>
+        <item quantity="many">Переміщення %d об’єктів…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Переміщення %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Переміщення %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Переміщення %d об’єктів…</item>
+        <item quantity="many">Переміщення %d об’єктів…</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">Стиснуто %d об’єкта</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Стиснуто %d об’єкт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Стиснуто %d об’єкти</item>
+        <item quantity="many">Стиснуто %d об’єктів</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d об’єкта скопійовано до %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d об’єкт скопійовано до %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d об’єкти скопійовано до %2$s</item>
+        <item quantity="many">%1$d об’єктів скопійовано до %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Видалити папку з кількома файлами (%d)?</item>
+        <item quantity="one">Видалити папку з файлом?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Видалити кілька папок (%1$d) з файлами (%2$d)?</item>
+        <item quantity="one">Видалити папку з файлом?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">Видалено %d об’єкта</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалено %d об’єкт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалено %d об’єкти</item>
+        <item quantity="many">Видалено %d об’єктів</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Завантаження %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Завантаження %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Завантаження %d файлів…</item>
+        <item quantity="many">Завантаження %d файлів…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Завантаження %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Завантаження %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Завантаження %d папок…</item>
+        <item quantity="many">Завантаження %d папок…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Завантаження %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Завантаження %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Завантаження %d об’єктів…</item>
+        <item quantity="many">Завантаження %d об’єктів…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Неможливо надіслати порожні папки.</item>
+        <item quantity="one">Неможливо надіслати порожню папку.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d файлу буде видалено назавжди.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл буде видалено назавжди.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d файли буде видалено назавжди.</item>
+        <item quantity="many">%d файлів буде видалено назавжди.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d папки буде видалено без можливості відновлення.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d папку буде видалено без можливості відновлення.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d папки буде видалено без можливості відновлення.</item>
+        <item quantity="many">%d папок буде видалено без можливості відновлення.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">Видобуто %d об’єкта</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видобуто %d об’єкт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видобуто %d об’єкти</item>
+        <item quantity="many">Видобуто %d об’єктів</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d файлу додано до обраного.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл додано до обраного.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d файли додано до обраного.</item>
+        <item quantity="many">%d файлів додано до обраного.</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">З обраного видалено %d файлу.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">З обраного видалено %d файл.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">З обраного видалено %d файли.</item>
+        <item quantity="many">З обраного видалено %d файлів.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d папки додано до обраного.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d папку додано до обраного.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d папки додано до обраного.</item>
+        <item quantity="many">%d папок додано до обраного.</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">З обраного видалено %d папки.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">З обраного видалено %d папку.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">З обраного видалено %d папки.</item>
+        <item quantity="many">З обраного видалено %d папок.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d об’єкта додано до обраного.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d об’єкт додано до обраного.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d об’єкти додано до обраного.</item>
+        <item quantity="many">%d об’єктів додано до обраного.</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">З обраного видалено %d об’єкта.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">З обраного видалено %d об’єкт.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">З обраного видалено %d об’єкти.</item>
+        <item quantity="many">З обраного видалено %d об’єктів.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d об’єктів</item>
+        <item quantity="one">Об’єкт.: 1</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d об’єктів</item>
+        <item quantity="one">"%d об'єкт"</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d об’єкта скопійовано до буфера обміну</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d об’єкт скопійовано до буфера обміну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d об’єкти скопійовано до буфера обміну</item>
+        <item quantity="many">%d об’єктів скопійовано до буфера обміну</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d об’єкта переміщено до буфера обміну</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d об’єкт переміщено до буфера обміну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d об’єкти переміщено до буфера обміну</item>
+        <item quantity="many">%d об’єктів переміщено до буфера обміну</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">Вибрано %d об’єкта</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вибрано %d об’єкт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Вибрано %d об’єкти</item>
+        <item quantity="many">Вибрано %d об’єктів</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d об’єкта переміщено до %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d об’єкт переміщено до %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d об’єкти переміщено до %2$s</item>
+        <item quantity="many">%1$d об’єктів переміщено до %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d об’єкта переміщено до кошика</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d об’єкт переміщено до кошика</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d об’єкти переміщено до кошика</item>
+        <item quantity="many">%d об’єктів переміщено до кошика</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">Вибрано: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вибрано: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Вибрано: %d</item>
+        <item quantity="many">Вибрано: %d</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD-карту заповнено. Видалити %d файлу остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-карту заповнено. Видалити %d файл остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD-карту заповнено. Видалити %d файли остаточно?</item>
+        <item quantity="many">SD-карту заповнено. Видалити %d файлів остаточно?</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD-карту заповнено. Видалити %d папки остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-карту заповнено. Видалити %d папку остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD-карту заповнено. Видалити %d папки остаточно?</item>
+        <item quantity="many">SD-карту заповнено. Видалити %d папок остаточно?</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD-карту заповнено. Видалити %d об’єкта остаточно?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-карту заповнено. Видалити %d об’єкт остаточно?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD-карту заповнено. Видалити %d об’єкти остаточно?</item>
+        <item quantity="many">SD-карту заповнено. Видалити %d об’єктів остаточно?</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Цей файл буде видалено через %d дня.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Цей файл буде видалено через %d день.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Цей файл буде видалено через %d дні.</item>
+        <item quantity="many">Цей файл буде видалено через %d днів.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Цю папку буде видалено через %d дня.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Цю папку буде видалено через %d день.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Цю папку буде видалено через %d дні.</item>
+        <item quantity="many">Цю папку буде видалено через %d днів.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Остаточно видалити %d файлу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Остаточно видалити %d файл?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Остаточно видалити %d файли?</item>
+        <item quantity="many">Остаточно видалити %d файлів?</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Видалення %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалення %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалення %d файлів…</item>
+        <item quantity="many">Видалення %d файлів…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Відновлення %d файлу…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Відновлення %d файлу…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Відновлення %d файлів…</item>
+        <item quantity="many">Відновлення %d файлів…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Остаточно видалити %d папки?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Остаточно видалити %d папку?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Остаточно видалити %d папки?</item>
+        <item quantity="many">Остаточно видалити %d папок?</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Видалення %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалення %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалення %d папок…</item>
+        <item quantity="many">Видалення %d папок…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Відновлення %d папки…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Відновлення %d папки…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Відновлення %d папок…</item>
+        <item quantity="many">Відновлення %d папок…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Остаточно видалити %d об’єкта?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Остаточно видалити %d об’єкт?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Остаточно видалити %d об’єкти?</item>
+        <item quantity="many">Остаточно видалити %d об’єктів?</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Видалення %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалення %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалення %d об’єктів…</item>
+        <item quantity="many">Видалення %d об’єктів…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Відновлення %d об’єкта…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Відновлення %d об’єкта…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Відновлення %d об’єктів…</item>
+        <item quantity="many">Відновлення %d об’єктів…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Буде видалено через %d дня</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Буде видалено через %d день</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Буде видалено через %d дні</item>
+        <item quantity="many">Буде видалено через %d днів</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Видалити %d програми?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d програму?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d програми?</item>
+        <item quantity="many">Видалити %d програм?</item>
+    </plurals>
+</resources>

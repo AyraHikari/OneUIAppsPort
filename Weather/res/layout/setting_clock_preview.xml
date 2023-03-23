@@ -4,7 +4,5 @@
     <FrameLayout android:id="@id/widget_preview_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ImageView android:layout_gravity="center_vertical" android:id="@id/preview_background" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" />
         <include android:layout_gravity="center_vertical" android:id="@id/widget_preview_area" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" layout="@layout/widget_main_clock_4x1" />
-        <include android:layout_gravity="center_vertical" android:id="@id/empty_area" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" layout="@layout/widget_main_clock_4x1_empty" />
-        <include android:layout_gravity="center_vertical" android:id="@id/restore_area" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" layout="@layout/widget_main_clock_4x1_restore" />
     </FrameLayout>
 </FrameLayout>

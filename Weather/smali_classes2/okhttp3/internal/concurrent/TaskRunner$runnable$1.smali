@@ -16,24 +16,16 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskRunner.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskRunner.kt\nokhttp3/internal/concurrent/TaskRunner$runnable$1\n+ 2 TaskLogger.kt\nokhttp3/internal/concurrent/TaskLoggerKt\n*L\n1#1,314:1\n35#2,20:315\n*E\n*S KotlinDebug\n*F\n+ 1 TaskRunner.kt\nokhttp3/internal/concurrent/TaskRunner$runnable$1\n*L\n62#1,20:315\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0002\u001a\u00020\u0003H\u0016\u00a8\u0006\u0004"
+        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0003\u001a\u00020\u0002H\u0016\u00a8\u0006\u0004"
     }
     d2 = {
         "okhttp3/internal/concurrent/TaskRunner$runnable$1",
         "Ljava/lang/Runnable;",
+        "Lbi/x;",
         "run",
-        "",
         "okhttp"
     }
     k = 0x1
@@ -46,11 +38,11 @@
 
 
 # instance fields
-.field final synthetic this$0:Lokhttp3/internal/concurrent/TaskRunner;
+.field public final synthetic this$0:Lokhttp3/internal/concurrent/TaskRunner;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/concurrent/TaskRunner;)V
+.method public constructor <init>(Lokhttp3/internal/concurrent/TaskRunner;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -58,7 +50,6 @@
         }
     .end annotation
 
-    .line 55
     iput-object p1, p0, Lokhttp3/internal/concurrent/TaskRunner$runnable$1;->this$0:Lokhttp3/internal/concurrent/TaskRunner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -71,14 +62,14 @@
 .method public run()V
     .locals 8
 
-    .line 58
+    .line 1
     :cond_0
     :goto_0
     iget-object v0, p0, Lokhttp3/internal/concurrent/TaskRunner$runnable$1;->this$0:Lokhttp3/internal/concurrent/TaskRunner;
 
     monitor-enter v0
 
-    .line 59
+    .line 2
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/concurrent/TaskRunner$runnable$1;->this$0:Lokhttp3/internal/concurrent/TaskRunner;
 
@@ -88,21 +79,21 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 58
+    .line 3
     monitor-exit v0
 
     if-eqz v1, :cond_3
 
-    .line 62
+    .line 4
     invoke-virtual {v1}, Lokhttp3/internal/concurrent/Task;->getQueue$okhttp()Lokhttp3/internal/concurrent/TaskQueue;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v0}, Loi/k;->d(Ljava/lang/Object;)V
 
     const-wide/16 v2, -0x1
 
-    .line 316
+    .line 5
     sget-object v4, Lokhttp3/internal/concurrent/TaskRunner;->Companion:Lokhttp3/internal/concurrent/TaskRunner$Companion;
 
     invoke-virtual {v4}, Lokhttp3/internal/concurrent/TaskRunner$Companion;->getLogger()Ljava/util/logging/Logger;
@@ -117,7 +108,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 318
+    .line 6
     invoke-virtual {v0}, Lokhttp3/internal/concurrent/TaskQueue;->getTaskRunner$okhttp()Lokhttp3/internal/concurrent/TaskRunner;
 
     move-result-object v2
@@ -132,10 +123,10 @@
 
     const-string v5, "starting"
 
-    .line 319
+    .line 7
     invoke-static {v1, v0, v5}, Lokhttp3/internal/concurrent/TaskLoggerKt;->access$log(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;)V
 
-    .line 65
+    .line 8
     :cond_1
     :try_start_1
     iget-object v5, p0, Lokhttp3/internal/concurrent/TaskRunner$runnable$1;->this$0:Lokhttp3/internal/concurrent/TaskRunner;
@@ -144,15 +135,15 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 73
+    .line 9
     :try_start_2
-    sget-object v5, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    sget-object v5, Lbi/x;->a:Lbi/x;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     if-eqz v4, :cond_0
 
-    .line 329
+    .line 10
     invoke-virtual {v0}, Lokhttp3/internal/concurrent/TaskQueue;->getTaskRunner$okhttp()Lokhttp3/internal/concurrent/TaskRunner;
 
     move-result-object v4
@@ -167,7 +158,7 @@
 
     sub-long/2addr v4, v2
 
-    .line 331
+    .line 11
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -176,15 +167,11 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
-
     invoke-static {v4, v5}, Lokhttp3/internal/concurrent/TaskLoggerKt;->formatDuration(J)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -197,7 +184,7 @@
     :catchall_0
     move-exception v5
 
-    .line 70
+    .line 12
     :try_start_3
     iget-object v6, p0, Lokhttp3/internal/concurrent/TaskRunner$runnable$1;->this$0:Lokhttp3/internal/concurrent/TaskRunner;
 
@@ -205,11 +192,7 @@
 
     move-result-object v6
 
-    move-object v7, p0
-
-    check-cast v7, Ljava/lang/Runnable;
-
-    invoke-interface {v6, v7}, Lokhttp3/internal/concurrent/TaskRunner$Backend;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v6, p0}, Lokhttp3/internal/concurrent/TaskRunner$Backend;->execute(Ljava/lang/Runnable;)V
 
     throw v5
     :try_end_3
@@ -220,7 +203,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 329
+    .line 13
     invoke-virtual {v0}, Lokhttp3/internal/concurrent/TaskQueue;->getTaskRunner$okhttp()Lokhttp3/internal/concurrent/TaskRunner;
 
     move-result-object v4
@@ -235,7 +218,7 @@
 
     sub-long/2addr v6, v2
 
-    .line 333
+    .line 14
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -244,15 +227,11 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
-
     invoke-static {v6, v7}, Lokhttp3/internal/concurrent/TaskLoggerKt;->formatDuration(J)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -260,7 +239,7 @@
 
     invoke-static {v1, v0, v2}, Lokhttp3/internal/concurrent/TaskLoggerKt;->access$log(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;)V
 
-    .line 334
+    .line 15
     :cond_2
     throw v5
 
@@ -270,7 +249,7 @@
     :catchall_2
     move-exception v1
 
-    .line 58
+    .line 16
     monitor-exit v0
 
     throw v1

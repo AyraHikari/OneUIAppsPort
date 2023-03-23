@@ -74,6 +74,14 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyEvent"
+        }
+    .end annotation
 
     .line 63
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/InjectEventThread;->mHandler:Lcom/samsung/android/galaxycontinuity/mirroring/input/InjectEventThread$InjectEventHandler;
@@ -103,6 +111,16 @@
 
 .method public sendKeyEventDelayed(Landroid/view/KeyEvent;J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyEvent",
+            "delayMillis"
+        }
+    .end annotation
 
     .line 71
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/InjectEventThread;->mHandler:Lcom/samsung/android/galaxycontinuity/mirroring/input/InjectEventThread$InjectEventHandler;

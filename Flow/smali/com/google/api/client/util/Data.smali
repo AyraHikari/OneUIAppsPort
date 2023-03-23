@@ -43,7 +43,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 14
 
     .line 48
     new-instance v0, Ljava/lang/Boolean;
@@ -55,204 +55,158 @@
     sput-object v0, Lcom/google/api/client/util/Data;->NULL_BOOLEAN:Ljava/lang/Boolean;
 
     .line 51
-    new-instance v0, Ljava/lang/String;
+    new-instance v1, Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/String;-><init>()V
+    invoke-direct {v1}, Ljava/lang/String;-><init>()V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_STRING:Ljava/lang/String;
+    sput-object v1, Lcom/google/api/client/util/Data;->NULL_STRING:Ljava/lang/String;
 
     .line 54
-    new-instance v0, Ljava/lang/Character;
+    new-instance v2, Ljava/lang/Character;
 
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
-    invoke-direct {v0, v1}, Ljava/lang/Character;-><init>(C)V
+    invoke-direct {v2, v3}, Ljava/lang/Character;-><init>(C)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_CHARACTER:Ljava/lang/Character;
+    sput-object v2, Lcom/google/api/client/util/Data;->NULL_CHARACTER:Ljava/lang/Character;
 
     .line 57
-    new-instance v0, Ljava/lang/Byte;
+    new-instance v4, Ljava/lang/Byte;
 
-    invoke-direct {v0, v1}, Ljava/lang/Byte;-><init>(B)V
+    invoke-direct {v4, v3}, Ljava/lang/Byte;-><init>(B)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_BYTE:Ljava/lang/Byte;
+    sput-object v4, Lcom/google/api/client/util/Data;->NULL_BYTE:Ljava/lang/Byte;
 
     .line 60
-    new-instance v0, Ljava/lang/Short;
+    new-instance v5, Ljava/lang/Short;
 
-    invoke-direct {v0, v1}, Ljava/lang/Short;-><init>(S)V
+    invoke-direct {v5, v3}, Ljava/lang/Short;-><init>(S)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_SHORT:Ljava/lang/Short;
+    sput-object v5, Lcom/google/api/client/util/Data;->NULL_SHORT:Ljava/lang/Short;
 
     .line 63
-    new-instance v0, Ljava/lang/Integer;
+    new-instance v6, Ljava/lang/Integer;
 
-    invoke-direct {v0, v1}, Ljava/lang/Integer;-><init>(I)V
+    invoke-direct {v6, v3}, Ljava/lang/Integer;-><init>(I)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_INTEGER:Ljava/lang/Integer;
+    sput-object v6, Lcom/google/api/client/util/Data;->NULL_INTEGER:Ljava/lang/Integer;
 
     .line 66
-    new-instance v0, Ljava/lang/Float;
+    new-instance v3, Ljava/lang/Float;
 
-    const/4 v1, 0x0
+    const/4 v7, 0x0
 
-    invoke-direct {v0, v1}, Ljava/lang/Float;-><init>(F)V
+    invoke-direct {v3, v7}, Ljava/lang/Float;-><init>(F)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_FLOAT:Ljava/lang/Float;
+    sput-object v3, Lcom/google/api/client/util/Data;->NULL_FLOAT:Ljava/lang/Float;
 
     .line 69
-    new-instance v0, Ljava/lang/Long;
+    new-instance v7, Ljava/lang/Long;
 
-    const-wide/16 v1, 0x0
+    const-wide/16 v8, 0x0
 
-    invoke-direct {v0, v1, v2}, Ljava/lang/Long;-><init>(J)V
+    invoke-direct {v7, v8, v9}, Ljava/lang/Long;-><init>(J)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_LONG:Ljava/lang/Long;
+    sput-object v7, Lcom/google/api/client/util/Data;->NULL_LONG:Ljava/lang/Long;
 
     .line 72
-    new-instance v0, Ljava/lang/Double;
+    new-instance v10, Ljava/lang/Double;
 
-    const-wide/16 v3, 0x0
+    const-wide/16 v11, 0x0
 
-    invoke-direct {v0, v3, v4}, Ljava/lang/Double;-><init>(D)V
+    invoke-direct {v10, v11, v12}, Ljava/lang/Double;-><init>(D)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_DOUBLE:Ljava/lang/Double;
+    sput-object v10, Lcom/google/api/client/util/Data;->NULL_DOUBLE:Ljava/lang/Double;
 
     .line 75
-    new-instance v0, Ljava/math/BigInteger;
+    new-instance v11, Ljava/math/BigInteger;
 
-    const-string v3, "0"
+    const-string v12, "0"
 
-    invoke-direct {v0, v3}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;)V
+    invoke-direct {v11, v12}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_BIG_INTEGER:Ljava/math/BigInteger;
+    sput-object v11, Lcom/google/api/client/util/Data;->NULL_BIG_INTEGER:Ljava/math/BigInteger;
 
     .line 78
-    new-instance v0, Ljava/math/BigDecimal;
+    new-instance v13, Ljava/math/BigDecimal;
 
-    invoke-direct {v0, v3}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;)V
+    invoke-direct {v13, v12}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_BIG_DECIMAL:Ljava/math/BigDecimal;
+    sput-object v13, Lcom/google/api/client/util/Data;->NULL_BIG_DECIMAL:Ljava/math/BigDecimal;
 
     .line 81
-    new-instance v0, Lcom/google/api/client/util/DateTime;
+    new-instance v12, Lcom/google/api/client/util/DateTime;
 
-    invoke-direct {v0, v1, v2}, Lcom/google/api/client/util/DateTime;-><init>(J)V
+    invoke-direct {v12, v8, v9}, Lcom/google/api/client/util/DateTime;-><init>(J)V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_DATE_TIME:Lcom/google/api/client/util/DateTime;
+    sput-object v12, Lcom/google/api/client/util/Data;->NULL_DATE_TIME:Lcom/google/api/client/util/DateTime;
 
     .line 84
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+    new-instance v8, Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v8}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    sput-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    sput-object v8, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 88
-    const-class v1, Ljava/lang/Boolean;
+    const-class v9, Ljava/lang/Boolean;
 
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_BOOLEAN:Ljava/lang/Boolean;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v9, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 89
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/String;
 
-    const-class v1, Ljava/lang/String;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_STRING:Ljava/lang/String;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 90
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/Character;
 
-    const-class v1, Ljava/lang/Character;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_CHARACTER:Ljava/lang/Character;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 91
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/Byte;
 
-    const-class v1, Ljava/lang/Byte;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_BYTE:Ljava/lang/Byte;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v4}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 92
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/Short;
 
-    const-class v1, Ljava/lang/Short;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_SHORT:Ljava/lang/Short;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v5}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 93
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/Integer;
 
-    const-class v1, Ljava/lang/Integer;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_INTEGER:Ljava/lang/Integer;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v6}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 94
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/Float;
 
-    const-class v1, Ljava/lang/Float;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_FLOAT:Ljava/lang/Float;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v3}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 95
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/Long;
 
-    const-class v1, Ljava/lang/Long;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_LONG:Ljava/lang/Long;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v7}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 96
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/lang/Double;
 
-    const-class v1, Ljava/lang/Double;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_DOUBLE:Ljava/lang/Double;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v10}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 97
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/math/BigInteger;
 
-    const-class v1, Ljava/math/BigInteger;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_BIG_INTEGER:Ljava/math/BigInteger;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v11}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 98
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Ljava/math/BigDecimal;
 
-    const-class v1, Ljava/math/BigDecimal;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_BIG_DECIMAL:Ljava/math/BigDecimal;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v13}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 99
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
+    const-class v0, Lcom/google/api/client/util/DateTime;
 
-    const-class v1, Lcom/google/api/client/util/DateTime;
-
-    sget-object v2, Lcom/google/api/client/util/Data;->NULL_DATE_TIME:Lcom/google/api/client/util/DateTime;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v0, v12}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -1083,9 +1037,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1184,48 +1142,44 @@
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    if-nez v0, :cond_4
+    if-nez v1, :cond_4
 
     .line 113
-    sget-object v1, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
-
-    monitor-enter v1
+    monitor-enter v0
 
     .line 114
     :try_start_0
-    sget-object v0, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
-
     invoke-virtual {v0, p0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    if-nez v0, :cond_3
+    if-nez v1, :cond_3
 
     .line 116
     invoke-virtual {p0}, Ljava/lang/Class;->isArray()Z
 
-    move-result v0
+    move-result v1
 
     const/4 v2, 0x1
 
     const/4 v3, 0x0
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
-    move-object v0, p0
+    move-object v1, p0
 
     .line 121
     :cond_0
-    invoke-virtual {v0}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
-    move-result-object v0
+    move-result-object v1
 
     add-int/2addr v3, v2
 
     .line 123
-    invoke-virtual {v0}, Ljava/lang/Class;->isArray()Z
+    invoke-virtual {v1}, Ljava/lang/Class;->isArray()Z
 
     move-result v4
 
@@ -1234,9 +1188,9 @@
     .line 124
     new-array v2, v3, [I
 
-    invoke-static {v0, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    invoke-static {v1, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
     goto :goto_0
 
@@ -1244,20 +1198,20 @@
     :cond_1
     invoke-virtual {p0}, Ljava/lang/Class;->isEnum()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_2
+    if-eqz v1, :cond_2
 
     .line 127
     invoke-static {p0}, Lcom/google/api/client/util/ClassInfo;->of(Ljava/lang/Class;)Lcom/google/api/client/util/ClassInfo;
 
-    move-result-object v0
+    move-result-object v1
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v4}, Lcom/google/api/client/util/ClassInfo;->getFieldInfo(Ljava/lang/String;)Lcom/google/api/client/util/FieldInfo;
+    invoke-virtual {v1, v4}, Lcom/google/api/client/util/ClassInfo;->getFieldInfo(Ljava/lang/String;)Lcom/google/api/client/util/FieldInfo;
 
-    move-result-object v0
+    move-result-object v1
 
     const-string v4, "enum missing constant with @NullValue annotation: %s"
 
@@ -1266,12 +1220,12 @@
     aput-object p0, v2, v3
 
     .line 128
-    invoke-static {v0, v4, v2}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1, v4, v2}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 131
-    invoke-virtual {v0}, Lcom/google/api/client/util/FieldInfo;->enumValue()Ljava/lang/Enum;
+    invoke-virtual {v1}, Lcom/google/api/client/util/FieldInfo;->enumValue()Ljava/lang/Enum;
 
-    move-result-object v0
+    move-result-object v1
 
     goto :goto_0
 
@@ -1279,24 +1233,24 @@
     :cond_2
     invoke-static {p0}, Lcom/google/api/client/util/Types;->newInstance(Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 137
     :goto_0
     sget-object v2, Lcom/google/api/client/util/Data;->NULL_CACHE:Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-virtual {v2, p0, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 139
     :cond_3
-    monitor-exit v1
+    monitor-exit v0
 
     goto :goto_1
 
     :catchall_0
     move-exception p0
 
-    monitor-exit v1
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1304,7 +1258,7 @@
 
     :cond_4
     :goto_1
-    return-object v0
+    return-object v1
 .end method
 
 .method public static parsePrimitiveValue(Ljava/lang/reflect/Type;Ljava/lang/String;)Ljava/lang/Object;
@@ -1525,9 +1479,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1634,7 +1592,11 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

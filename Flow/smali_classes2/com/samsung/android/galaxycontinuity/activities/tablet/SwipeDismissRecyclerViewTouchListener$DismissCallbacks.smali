@@ -16,7 +16,25 @@
 
 # virtual methods
 .method public abstract canDismiss(I)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 .end method
 
 .method public abstract onDismiss(Landroidx/recyclerview/widget/RecyclerView;[I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listView",
+            "reverseSortedPositions"
+        }
+    .end annotation
 .end method

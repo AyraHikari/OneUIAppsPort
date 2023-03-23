@@ -40,16 +40,15 @@
 
 
 # static fields
-.field static final synthetic $$INSTANCE:Lokhttp3/internal/http/ExchangeCodec$Companion;
+.field public static final synthetic $$INSTANCE:Lokhttp3/internal/http/ExchangeCodec$Companion;
 
 .field public static final DISCARD_STREAM_TIMEOUT_MILLIS:I = 0x64
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 72
     new-instance v0, Lokhttp3/internal/http/ExchangeCodec$Companion;
 
     invoke-direct {v0}, Lokhttp3/internal/http/ExchangeCodec$Companion;-><init>()V
@@ -62,7 +61,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 72
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

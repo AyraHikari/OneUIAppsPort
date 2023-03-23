@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/widget_brief_box_4x1_minWidth" android:minHeight="@dimen/widget_brief_box_minHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/widget_current_weather_icon" android:layout_width="@dimen/widget_brief_box_weather_icon_size" android:layout_height="@dimen/widget_brief_box_weather_icon_size" android:src="@drawable/weather_ic_partlysunny" />
+        <TextView android:textSize="@dimen/widget_brief_box_current_temp_text_size" android:id="@id/widget_current_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23°" android:layout_marginStart="@dimen/widget_brief_box_weather_icon_temp_margin" style="@style/BriefWidget.TextAppearance.Temperature" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/widget_additional_info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_brief_box_additional_info_and_temp_margin">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widget_precipitation_area" android:layout_width="@dimen/widget_brief_box_additional_info_area_width" android:layout_height="wrap_content">
+                <ImageView android:id="@id/widget_precipitation_icon" android:layout_width="@dimen/widget_brief_box_weather_extra_icon_size" android:layout_height="@dimen/widget_brief_box_weather_extra_icon_size" />
+                <TextView android:textSize="@dimen/widget_brief_box_additional_info_text_size" android:id="@id/widget_precipitation_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="17%" android:textAlignment="center" style="@style/BriefWidget.TextAppearance" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widget_uv_area" android:layout_width="@dimen/widget_brief_box_additional_info_area_width" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_brief_box_additional_info_margin">
+                <ImageView android:id="@id/widget_uv_icon" android:layout_width="@dimen/widget_brief_box_weather_extra_icon_size" android:layout_height="@dimen/widget_brief_box_weather_extra_icon_size" />
+                <TextView android:textSize="@dimen/widget_brief_box_additional_info_text_size" android:id="@id/widget_uv_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Low" android:textAlignment="center" style="@style/BriefWidget.TextAppearance" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widget_sunrise_area" android:layout_width="@dimen/widget_brief_box_additional_info_area_width" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_brief_box_additional_info_margin">
+                <ImageView android:id="@id/widget_sunrise_icon" android:layout_width="@dimen/widget_brief_box_weather_extra_icon_size" android:layout_height="@dimen/widget_brief_box_weather_extra_icon_size" />
+                <TextView android:textSize="@dimen/widget_brief_box_additional_info_text_size" android:id="@id/widget_sunrise_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="06:46" android:textAlignment="center" style="@style/BriefWidget.TextAppearance" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

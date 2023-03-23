@@ -55,10 +55,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 59
     new-instance v0, Lokhttp3/internal/platform/ConscryptPlatform$DisabledHostnameVerifier;
 
     invoke-direct {v0}, Lokhttp3/internal/platform/ConscryptPlatform$DisabledHostnameVerifier;-><init>()V
@@ -71,7 +70,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

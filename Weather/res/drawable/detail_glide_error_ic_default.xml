@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:id="@id/default_icon" android:drawable="@drawable/ic_error_img" android:left="@dimen/detail_glide_error_icon_wh" android:top="@dimen/detail_glide_error_icon_wh" android:right="@dimen/detail_glide_error_icon_wh" android:bottom="@dimen/detail_glide_error_icon_wh" />
+</layer-list>

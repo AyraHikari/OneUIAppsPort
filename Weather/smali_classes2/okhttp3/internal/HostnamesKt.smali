@@ -44,7 +44,7 @@
 .method private static final containsInvalidHostnameAsciiCodes(Ljava/lang/String;)Z
     .locals 10
 
-    .line 65
+    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -56,15 +56,15 @@
     :goto_0
     if-ge v2, v0, :cond_3
 
-    .line 66
+    .line 2
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
 
     const/16 v3, 0x1f
 
-    .line 70
-    invoke-static {v4, v3}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+    .line 3
+    invoke-static {v4, v3}, Loi/k;->h(II)I
 
     move-result v3
 
@@ -74,7 +74,7 @@
 
     const/16 v3, 0x7f
 
-    invoke-static {v4, v3}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+    invoke-static {v4, v3}, Loi/k;->h(II)I
 
     move-result v3
 
@@ -83,11 +83,6 @@
     goto :goto_1
 
     :cond_0
-    const-string v3, " #%/:?@[\\]"
-
-    .line 76
-    check-cast v3, Ljava/lang/CharSequence;
-
     const/4 v5, 0x0
 
     const/4 v6, 0x0
@@ -96,7 +91,10 @@
 
     const/4 v8, 0x0
 
-    invoke-static/range {v3 .. v8}, Lkotlin/text/StringsKt;->indexOf$default(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
+    const-string v3, " #%/:?@[\\]"
+
+    .line 4
+    invoke-static/range {v3 .. v8}, Lhl/u;->V(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
 
     move-result v3
 
@@ -129,7 +127,7 @@
 
     if-ge p1, p2, :cond_8
 
-    .line 163
+    .line 1
     array-length v2, p3
 
     if-ne v0, v2, :cond_0
@@ -139,7 +137,7 @@
     :cond_0
     if-eq v0, p4, :cond_2
 
-    .line 167
+    .line 2
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -161,15 +159,15 @@
     :goto_1
     if-ge v2, p2, :cond_6
 
-    .line 175
+    .line 3
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
 
     const/16 v5, 0x30
 
-    .line 176
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+    .line 4
+    invoke-static {v4, v5}, Loi/k;->h(II)I
 
     move-result v6
 
@@ -177,7 +175,7 @@
 
     const/16 v6, 0x39
 
-    invoke-static {v4, v6}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
+    invoke-static {v4, v6}, Loi/k;->h(II)I
 
     move-result v6
 
@@ -223,7 +221,7 @@
 
     int-to-byte v1, v3
 
-    .line 186
+    .line 5
     aput-byte v1, p3, v0
 
     move v0, p1
@@ -294,8 +292,8 @@
 
     move-object/from16 v5, v17
 
-    .line 95
-    invoke-static/range {v0 .. v5}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;IZILjava/lang/Object;)Z
+    .line 1
+    invoke-static/range {v0 .. v5}, Lhl/t;->D(Ljava/lang/String;Ljava/lang/String;IZILjava/lang/Object;)Z
 
     move-result v0
 
@@ -336,8 +334,8 @@
 
     move v2, v12
 
-    .line 104
-    invoke-static/range {v0 .. v5}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;IZILjava/lang/Object;)Z
+    .line 2
+    invoke-static/range {v0 .. v5}, Lhl/t;->D(Ljava/lang/String;Ljava/lang/String;IZILjava/lang/Object;)Z
 
     move-result v0
 
@@ -360,8 +358,8 @@
 
     move v2, v12
 
-    .line 106
-    invoke-static/range {v0 .. v5}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;IZILjava/lang/Object;)Z
+    .line 3
+    invoke-static/range {v0 .. v5}, Lhl/t;->D(Ljava/lang/String;Ljava/lang/String;IZILjava/lang/Object;)Z
 
     move-result v0
 
@@ -369,7 +367,7 @@
 
     add-int/lit8 v0, v13, -0x2
 
-    .line 108
+    .line 4
     invoke-static {v6, v15, v7, v9, v0}, Lokhttp3/internal/HostnamesKt;->decodeIpv4Suffix(Ljava/lang/String;II[BI)Z
 
     move-result v0
@@ -398,7 +396,7 @@
     :goto_3
     if-ge v12, v7, :cond_9
 
-    .line 120
+    .line 5
     invoke-virtual {v6, v12}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -441,7 +439,7 @@
 
     int-to-byte v2, v2
 
-    .line 129
+    .line 6
     aput-byte v2, v9, v13
 
     add-int/lit8 v13, v1, 0x1
@@ -450,7 +448,7 @@
 
     int-to-byte v0, v0
 
-    .line 130
+    .line 7
     aput-byte v0, v9, v1
 
     goto/16 :goto_0
@@ -472,7 +470,7 @@
 
     rsub-int/lit8 v1, v0, 0x10
 
-    .line 144
+    .line 8
     invoke-static {v9, v14, v9, v1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     sub-int/2addr v8, v13
@@ -483,10 +481,10 @@
 
     int-to-byte v0, v0
 
-    .line 145
+    .line 9
     invoke-static {v9, v14, v8, v0}, Ljava/util/Arrays;->fill([BIIB)V
 
-    .line 148
+    .line 10
     :cond_e
     invoke-static {v9}, Ljava/net/InetAddress;->getByAddress([B)Ljava/net/InetAddress;
 
@@ -506,7 +504,7 @@
 
     move v3, v2
 
-    .line 202
+    .line 1
     :goto_0
     array-length v4, p0
 
@@ -519,7 +517,7 @@
     :goto_1
     if-ge v4, v5, :cond_0
 
-    .line 204
+    .line 2
     aget-byte v6, p0, v4
 
     if-nez v6, :cond_0
@@ -552,13 +550,13 @@
 
     goto :goto_0
 
-    .line 217
+    .line 3
     :cond_2
     new-instance v2, Lokio/Buffer;
 
     invoke-direct {v2}, Lokio/Buffer;-><init>()V
 
-    .line 219
+    .line 4
     :cond_3
     :goto_2
     array-length v4, p0
@@ -569,14 +567,14 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 221
+    .line 5
     invoke-virtual {v2, v4}, Lokio/Buffer;->writeByte(I)Lokio/Buffer;
 
     add-int/2addr v0, v3
 
     if-ne v0, v5, :cond_3
 
-    .line 223
+    .line 6
     invoke-virtual {v2, v4}, Lokio/Buffer;->writeByte(I)Lokio/Buffer;
 
     goto :goto_2
@@ -584,10 +582,10 @@
     :cond_4
     if-lez v0, :cond_5
 
-    .line 225
+    .line 7
     invoke-virtual {v2, v4}, Lokio/Buffer;->writeByte(I)Lokio/Buffer;
 
-    .line 226
+    .line 8
     :cond_5
     aget-byte v4, p0, v0
 
@@ -611,14 +609,14 @@
 
     int-to-long v6, v4
 
-    .line 227
+    .line 9
     invoke-virtual {v2, v6, v7}, Lokio/Buffer;->writeHexadecimalUnsignedLong(J)Lokio/Buffer;
 
     add-int/lit8 v0, v0, 0x2
 
     goto :goto_2
 
-    .line 231
+    .line 10
     :cond_6
     invoke-virtual {v2}, Lokio/Buffer;->readUtf8()Ljava/lang/String;
 
@@ -632,35 +630,29 @@
 
     const-string v0, "$this$toCanonicalHost"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 36
-    move-object v0, p0
+    const-string v0, ":"
 
-    check-cast v0, Ljava/lang/CharSequence;
+    const/4 v1, 0x0
 
-    const-string v1, ":"
+    const/4 v2, 0x2
 
-    check-cast v1, Ljava/lang/CharSequence;
+    const/4 v3, 0x0
 
-    const/4 v2, 0x0
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x0
-
-    invoke-static {v0, v1, v2, v3, v4}, Lkotlin/text/StringsKt;->contains$default(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    .line 1
+    invoke-static {p0, v0, v1, v2, v3}, Lhl/u;->J(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     move-result v0
 
-    const/4 v1, 0x1
+    const/4 v4, 0x1
 
     if-eqz v0, :cond_4
 
     const-string v0, "["
 
-    .line 38
-    invoke-static {p0, v0, v2, v3, v4}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    .line 2
+    invoke-static {p0, v0, v1, v2, v3}, Lhl/t;->E(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
     move-result v0
 
@@ -668,44 +660,44 @@
 
     const-string v0, "]"
 
-    invoke-static {p0, v0, v2, v3, v4}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    invoke-static {p0, v0, v1, v2, v3}, Lhl/t;->p(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 39
+    .line 3
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    sub-int/2addr v0, v1
+    sub-int/2addr v0, v4
 
-    invoke-static {p0, v1, v0}, Lokhttp3/internal/HostnamesKt;->decodeIpv6(Ljava/lang/String;II)Ljava/net/InetAddress;
+    invoke-static {p0, v4, v0}, Lokhttp3/internal/HostnamesKt;->decodeIpv6(Ljava/lang/String;II)Ljava/net/InetAddress;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 41
+    .line 4
     :cond_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    invoke-static {p0, v2, v0}, Lokhttp3/internal/HostnamesKt;->decodeIpv6(Ljava/lang/String;II)Ljava/net/InetAddress;
+    invoke-static {p0, v1, v0}, Lokhttp3/internal/HostnamesKt;->decodeIpv6(Ljava/lang/String;II)Ljava/net/InetAddress;
 
     move-result-object v0
 
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 43
+    .line 5
     invoke-virtual {v0}, Ljava/net/InetAddress;->getAddress()[B
 
     move-result-object v1
 
-    .line 44
+    .line 6
     array-length v2, v1
 
     const/16 v3, 0x10
@@ -714,7 +706,7 @@
 
     const-string p0, "address"
 
-    invoke-static {v1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, p0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v1}, Lokhttp3/internal/HostnamesKt;->inet6AddressToAscii([B)Ljava/lang/String;
 
@@ -722,7 +714,7 @@
 
     return-object p0
 
-    .line 45
+    .line 7
     :cond_1
     array-length v1, v1
 
@@ -736,7 +728,7 @@
 
     return-object p0
 
-    .line 46
+    .line 8
     :cond_2
     new-instance v0, Ljava/lang/AssertionError;
 
@@ -748,32 +740,24 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
-
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    const/16 p0, 0x27
 
-    const/16 v1, 0x27
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
-    check-cast v0, Ljava/lang/Throwable;
-
     throw v0
 
     :cond_3
-    return-object v4
+    return-object v3
 
-    .line 50
+    .line 9
     :cond_4
     :try_start_0
     invoke-static {p0}, Ljava/net/IDN;->toASCII(Ljava/lang/String;)Ljava/lang/String;
@@ -782,13 +766,13 @@
 
     const-string v0, "IDN.toASCII(host)"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const-string v3, "Locale.US"
+    const-string v2, "Locale.US"
 
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p0, :cond_8
 
@@ -798,27 +782,23 @@
 
     const-string v0, "(this as java.lang.String).toLowerCase(locale)"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 51
-    move-object v0, p0
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+    .line 10
+    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
     if-nez v0, :cond_5
 
-    move v2, v1
+    move v1, v4
 
     :cond_5
-    if-eqz v2, :cond_6
+    if-eqz v1, :cond_6
 
-    return-object v4
+    return-object v3
 
-    .line 54
+    .line 11
     :cond_6
     invoke-static {p0}, Lokhttp3/internal/HostnamesKt;->containsInvalidHostnameAsciiCodes(Ljava/lang/String;)Z
 
@@ -829,12 +809,12 @@
     goto :goto_1
 
     :cond_7
-    move-object v4, p0
+    move-object v3, p0
 
     :goto_1
-    return-object v4
+    return-object v3
 
-    .line 50
+    .line 12
     :cond_8
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -847,5 +827,5 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    return-object v4
+    return-object v3
 .end method

@@ -156,7 +156,7 @@
     .line 57
     sget-object v0, Lcom/samsung/android/sdk/scs/base/feature/FeatureStatusCache;->statusMap:Ljava/util/HashMap;
 
-    sget-object v1, Lcom/samsung/android/sdk/scs/base/feature/-$$Lambda$FeatureStatusCache$6xHTTLTThoC5VPjcV1h3eAjjn2I;->INSTANCE:Lcom/samsung/android/sdk/scs/base/feature/-$$Lambda$FeatureStatusCache$6xHTTLTThoC5VPjcV1h3eAjjn2I;
+    sget-object v1, Lcom/samsung/android/sdk/scs/base/feature/-$$Lambda$FeatureStatusCache$XZ-TMJ263mth1u3MEPo8WPiqsOM;->INSTANCE:Lcom/samsung/android/sdk/scs/base/feature/-$$Lambda$FeatureStatusCache$XZ-TMJ263mth1u3MEPo8WPiqsOM;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->replaceAll(Ljava/util/function/BiFunction;)V
 
@@ -220,19 +220,27 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "setStatus() : "
+    const-string/jumbo v1, "setStatus() : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " : "
+    move-result-object v0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p0
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v0, " : "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 

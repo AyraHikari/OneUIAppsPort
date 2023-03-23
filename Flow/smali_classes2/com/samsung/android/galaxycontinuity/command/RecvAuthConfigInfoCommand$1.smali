@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/command/RecvAuthConfigInfoCommand;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 44
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/command/RecvAuthConfigInfoCommand$1;->this$0:Lcom/samsung/android/galaxycontinuity/command/RecvAuthConfigInfoCommand;
@@ -34,6 +42,16 @@
 # virtual methods
 .method public notifyResult(Ljava/lang/String;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result"
+        }
+    .end annotation
 
     const-string v0, "AllowGearUnlock"
 
@@ -118,6 +136,18 @@
 
 .method public notifyResult(Ljava/lang/String;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result",
+            "checked"
+        }
+    .end annotation
 
     return-void
 .end method

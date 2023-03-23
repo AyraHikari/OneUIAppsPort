@@ -54,6 +54,16 @@
 
 .method public prepareCore(Landroid/view/Surface;Landroid/opengl/EGLContext;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "surface",
+            "sharedContext"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

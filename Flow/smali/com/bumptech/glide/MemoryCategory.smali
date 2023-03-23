@@ -29,7 +29,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 8
 
     .line 10
     new-instance v0, Lcom/bumptech/glide/MemoryCategory;
@@ -45,47 +45,43 @@
     sput-object v0, Lcom/bumptech/glide/MemoryCategory;->LOW:Lcom/bumptech/glide/MemoryCategory;
 
     .line 14
-    new-instance v0, Lcom/bumptech/glide/MemoryCategory;
+    new-instance v1, Lcom/bumptech/glide/MemoryCategory;
 
-    const-string v1, "NORMAL"
+    const-string v3, "NORMAL"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    const/high16 v4, 0x3f800000    # 1.0f
+    const/high16 v5, 0x3f800000    # 1.0f
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/bumptech/glide/MemoryCategory;-><init>(Ljava/lang/String;IF)V
+    invoke-direct {v1, v3, v4, v5}, Lcom/bumptech/glide/MemoryCategory;-><init>(Ljava/lang/String;IF)V
 
-    sput-object v0, Lcom/bumptech/glide/MemoryCategory;->NORMAL:Lcom/bumptech/glide/MemoryCategory;
+    sput-object v1, Lcom/bumptech/glide/MemoryCategory;->NORMAL:Lcom/bumptech/glide/MemoryCategory;
 
     .line 18
-    new-instance v0, Lcom/bumptech/glide/MemoryCategory;
+    new-instance v3, Lcom/bumptech/glide/MemoryCategory;
 
-    const-string v1, "HIGH"
+    const-string v5, "HIGH"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    const/high16 v5, 0x3fc00000    # 1.5f
+    const/high16 v7, 0x3fc00000    # 1.5f
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/bumptech/glide/MemoryCategory;-><init>(Ljava/lang/String;IF)V
+    invoke-direct {v3, v5, v6, v7}, Lcom/bumptech/glide/MemoryCategory;-><init>(Ljava/lang/String;IF)V
 
-    sput-object v0, Lcom/bumptech/glide/MemoryCategory;->HIGH:Lcom/bumptech/glide/MemoryCategory;
+    sput-object v3, Lcom/bumptech/glide/MemoryCategory;->HIGH:Lcom/bumptech/glide/MemoryCategory;
 
-    const/4 v1, 0x3
+    const/4 v5, 0x3
 
-    new-array v1, v1, [Lcom/bumptech/glide/MemoryCategory;
+    new-array v5, v5, [Lcom/bumptech/glide/MemoryCategory;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 6
-    sget-object v5, Lcom/bumptech/glide/MemoryCategory;->LOW:Lcom/bumptech/glide/MemoryCategory;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/bumptech/glide/MemoryCategory;->NORMAL:Lcom/bumptech/glide/MemoryCategory;
-
-    aput-object v2, v1, v3
-
-    aput-object v0, v1, v4
-
-    sput-object v1, Lcom/bumptech/glide/MemoryCategory;->$VALUES:[Lcom/bumptech/glide/MemoryCategory;
+    sput-object v5, Lcom/bumptech/glide/MemoryCategory;->$VALUES:[Lcom/bumptech/glide/MemoryCategory;
 
     return-void
 .end method

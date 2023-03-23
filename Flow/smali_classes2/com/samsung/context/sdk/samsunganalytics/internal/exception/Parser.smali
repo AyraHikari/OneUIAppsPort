@@ -23,6 +23,14 @@
 
 .method public static get(Lcom/samsung/context/sdk/samsunganalytics/internal/exception/Parser$Type;)Lcom/samsung/context/sdk/samsunganalytics/internal/exception/ExceptionParser;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 14
     sget-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/exception/Parser$Type;->FULL:Lcom/samsung/context/sdk/samsunganalytics/internal/exception/Parser$Type;

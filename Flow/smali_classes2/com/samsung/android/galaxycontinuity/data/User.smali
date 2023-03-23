@@ -19,6 +19,20 @@
 # direct methods
 .method public constructor <init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "serialNumberForUser",
+            "displayName",
+            "macAddr",
+            "gearMacAddr"
+        }
+    .end annotation
 
     .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -122,6 +136,14 @@
 
 .method public setMacAddr(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "macAddr"
+        }
+    .end annotation
 
     .line 52
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/data/User;->macAddr:Ljava/lang/String;

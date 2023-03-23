@@ -1,40 +1,44 @@
-.class public final Lcom/google/android/gms/location/zzz;
-.super Lcom/google/android/gms/internal/location/zza;
+.class public final synthetic Lcom/google/android/gms/location/zzz;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 # interfaces
-.implements Lcom/google/android/gms/location/zzx;
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
+
+
+# instance fields
+.field public final synthetic zza:Landroid/app/PendingIntent;
 
 
 # direct methods
-.method constructor <init>(Landroid/os/IBinder;)V
-    .locals 1
+.method public synthetic constructor <init>(Landroid/app/PendingIntent;)V
+    .locals 0
 
-    const-string v0, "com.google.android.gms.location.ILocationListener"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/location/zza;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    iput-object p1, p0, Lcom/google/android/gms/location/zzz;->zza:Landroid/app/PendingIntent;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLocationChanged(Landroid/location/Location;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
 
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/location/zza;->obtainAndWriteInterfaceToken()Landroid/os/Parcel;
+    iget-object v0, p0, Lcom/google/android/gms/location/zzz;->zza:Landroid/app/PendingIntent;
 
-    move-result-object v0
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    invoke-static {v0, p1}, Lcom/google/android/gms/internal/location/zzc;->zza(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    const/4 p1, 0x1
+    .line 1
+    new-instance v1, Lcom/google/android/gms/location/zzav;
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/location/zza;->transactOneway(ILandroid/os/Parcel;)V
+    invoke-direct {v1, p2}, Lcom/google/android/gms/location/zzav;-><init>(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+
+    .line 2
+    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/internal/location/zzbe;->zzA(Landroid/app/PendingIntent;Lcom/google/android/gms/internal/location/zzai;)V
 
     return-void
 .end method

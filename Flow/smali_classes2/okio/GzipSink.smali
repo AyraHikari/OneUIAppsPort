@@ -53,13 +53,11 @@
     iput-object p1, p0, Lokio/GzipSink;->sink:Lokio/BufferedSink;
 
     .line 60
-    new-instance v0, Lokio/DeflaterSink;
+    new-instance v1, Lokio/DeflaterSink;
 
-    iget-object v1, p0, Lokio/GzipSink;->deflater:Ljava/util/zip/Deflater;
+    invoke-direct {v1, p1, v0}, Lokio/DeflaterSink;-><init>(Lokio/BufferedSink;Ljava/util/zip/Deflater;)V
 
-    invoke-direct {v0, p1, v1}, Lokio/DeflaterSink;-><init>(Lokio/BufferedSink;Ljava/util/zip/Deflater;)V
-
-    iput-object v0, p0, Lokio/GzipSink;->deflaterSink:Lokio/DeflaterSink;
+    iput-object v1, p0, Lokio/GzipSink;->deflaterSink:Lokio/DeflaterSink;
 
     .line 62
     invoke-direct {p0}, Lokio/GzipSink;->writeHeader()V
@@ -70,7 +68,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "sink == null"
+    const-string/jumbo v0, "sink == null"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -290,7 +288,7 @@
     return-void
 .end method
 
-.method public deflater()Ljava/util/zip/Deflater;
+.method public final deflater()Ljava/util/zip/Deflater;
     .locals 1
 
     .line 118
@@ -369,9 +367,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 

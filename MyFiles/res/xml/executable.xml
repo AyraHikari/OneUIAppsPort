@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <command android:label="@string/view_recent_files" android:icon="@mipmap/ic_launcher_my_files" android:enabled="true" android:smallIcon="@drawable/shortcut_recent">
+        <extras-attr android:name="type" android:value="activity" />
+        <extras-attr android:name="action" android:value="samsung.myfiles.intent.action.EXECUTABLE_RECENT" />
+        <extras-attr android:name="packageName" android:value="com.sec.android.app.myfiles" />
+        <extras-attr android:name="componentName" android:value="com.sec.android.app.myfiles.external.ui.MainActivity" />
+        <extras-attr android:name="launchMode" android:value="newTask|singleTop" />
+    </command>
+</executable>

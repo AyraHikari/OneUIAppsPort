@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1441
+    .line 1438
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +44,7 @@
 .method synthetic constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$1;)V
     .locals 0
 
-    .line 1441
+    .line 1438
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;-><init>(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)V
 
     return-void
@@ -46,10 +54,18 @@
 # virtual methods
 .method public declared-synchronized onConnectionClosed(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 1514
+    .line 1505
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
@@ -71,7 +87,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 1515
+    .line 1506
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$900(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;
@@ -80,7 +96,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1516
+    .line 1507
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$900(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;
@@ -89,7 +105,7 @@
 
     invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;->showSelectDeviceFragment()V
 
-    .line 1519
+    .line 1510
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
@@ -97,7 +113,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$500(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;)V
 
-    .line 1522
+    .line 1513
     :cond_1
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->isDeviceTypeWearable()Z
 
@@ -105,14 +121,14 @@
 
     if-nez p1, :cond_2
 
-    .line 1523
+    .line 1514
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->countDownAuthMonitor()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1525
+    .line 1516
     :cond_2
     monitor-exit p0
 
@@ -127,101 +143,101 @@
 .end method
 
 .method public declared-synchronized onConnectionFailed(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
-    .locals 3
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     monitor-enter p0
 
     :try_start_0
-    const-string v0, "BTAuthenticationClient onConnectionFailed"
+    const-string p1, "BTAuthenticationClient onConnectionFailed"
+
+    .line 1445
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
+    .line 1447
+    new-instance p1, Landroid/content/Intent;
+
+    const-string v0, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_AUTH_DISCONNECTED"
+
+    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 1448
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
-
-    .line 1450
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_AUTH_DISCONNECTED"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 1451
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
-    move-result-object v1
-
-    const-string v2, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
-
-    invoke-virtual {v1, v0, v2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
-
-    .line 1453
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
-
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$800(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
-
     move-result-object v0
 
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_NONE:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    const-string v1, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
 
-    if-eq v0, v1, :cond_1
+    invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
+    .line 1450
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$800(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$800(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    move-result-object v0
+    move-result-object p1
 
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_COMPLETED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_NONE:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    if-eq v0, v1, :cond_1
+    if-eq p1, v0, :cond_1
 
-    .line 1454
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$900(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$800(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    move-result-object v0
+    move-result-object p1
 
-    if-eqz v0, :cond_0
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_COMPLETED:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
+
+    if-eq p1, v0, :cond_1
+
+    .line 1451
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$900(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 1452
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$900(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;->showSelectDeviceFragment()V
 
     .line 1455
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
+    :cond_0
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$900(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_NONE:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
 
-    move-result-object v0
-
-    invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$OnTabletSetupInteractionListener;->showSelectDeviceFragment()V
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$500(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;)V
 
     .line 1458
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
-
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;->ENROLLSTATE_NONE:Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;
-
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$500(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;Lcom/samsung/android/galaxycontinuity/auth/data/AuthData$ENROLLSTATE;)V
-
-    .line 1461
     :cond_1
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$1000(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)V
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$1000(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)V
 
-    .line 1463
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->isDeviceTypeWearable()Z
-
-    move-result p1
-
-    if-nez p1, :cond_2
-
-    .line 1464
+    .line 1459
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->countDownAuthMonitor()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1467
-    :cond_2
+    .line 1460
     monitor-exit p0
 
     return-void
@@ -236,28 +252,42 @@
 
 .method public onDataReceived(Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[BI)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "manager",
+            "socket",
+            "msg",
+            "bufferLen"
+        }
+    .end annotation
 
     const-string p1, "onDataReceived !!!!"
 
-    .line 1472
+    .line 1464
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1474
+    .line 1466
     invoke-static {p3}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
-    .line 1475
+    .line 1467
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getShort()S
 
     move-result p4
 
-    .line 1477
+    .line 1469
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getShort()S
 
     move-result p1
 
-    .line 1480
+    .line 1472
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
@@ -291,7 +321,7 @@
 
     goto :goto_0
 
-    .line 1502
+    .line 1494
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
@@ -299,7 +329,7 @@
 
     goto :goto_0
 
-    .line 1498
+    .line 1490
     :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
@@ -307,7 +337,7 @@
 
     goto :goto_0
 
-    .line 1488
+    .line 1480
     :cond_2
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
@@ -319,7 +349,7 @@
 
     goto :goto_0
 
-    .line 1484
+    .line 1476
     :cond_3
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$AuthClientListner;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
@@ -332,7 +362,7 @@
     :catch_0
     move-exception p1
 
-    .line 1507
+    .line 1499
     invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -345,10 +375,18 @@
 
 .method public declared-synchronized onSocketConnected(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 1444
+    .line 1441
     monitor-exit p0
 
     return-void

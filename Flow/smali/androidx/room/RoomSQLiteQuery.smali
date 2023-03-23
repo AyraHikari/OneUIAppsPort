@@ -68,6 +68,14 @@
 
 .method private constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capacity"
+        }
+    .end annotation
 
     .line 156
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -106,36 +114,41 @@
 .end method
 
 .method public static acquire(Ljava/lang/String;I)Landroidx/room/RoomSQLiteQuery;
-    .locals 4
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "query",
+            "argumentCount"
+        }
+    .end annotation
 
     .line 141
     sget-object v0, Landroidx/room/RoomSQLiteQuery;->sQueryPool:Ljava/util/TreeMap;
 
     monitor-enter v0
 
-    .line 142
-    :try_start_0
-    sget-object v1, Landroidx/room/RoomSQLiteQuery;->sQueryPool:Ljava/util/TreeMap;
-
     .line 143
+    :try_start_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v1, v2}, Ljava/util/TreeMap;->ceilingEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
+    invoke-virtual {v0, v1}, Ljava/util/TreeMap;->ceilingEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
     .line 145
-    sget-object v2, Landroidx/room/RoomSQLiteQuery;->sQueryPool:Ljava/util/TreeMap;
-
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v2, v3}, Ljava/util/TreeMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/TreeMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 146
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -182,6 +195,14 @@
 
 .method public static copyFrom(Landroidx/sqlite/db/SupportSQLiteQuery;)Landroidx/room/RoomSQLiteQuery;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supportSQLiteQuery"
+        }
+    .end annotation
 
     .line 89
     invoke-interface {p0}, Landroidx/sqlite/db/SupportSQLiteQuery;->getSql()Ljava/lang/String;
@@ -216,44 +237,40 @@
 
     invoke-virtual {v0}, Ljava/util/TreeMap;->size()I
 
-    move-result v0
+    move-result v1
 
-    const/16 v1, 0xf
+    const/16 v2, 0xf
 
-    if-le v0, v1, :cond_0
+    if-le v1, v2, :cond_0
 
     .line 190
-    sget-object v0, Landroidx/room/RoomSQLiteQuery;->sQueryPool:Ljava/util/TreeMap;
-
     invoke-virtual {v0}, Ljava/util/TreeMap;->size()I
 
-    move-result v0
+    move-result v1
 
-    add-int/lit8 v0, v0, -0xa
+    add-int/lit8 v1, v1, -0xa
 
     .line 191
-    sget-object v1, Landroidx/room/RoomSQLiteQuery;->sQueryPool:Ljava/util/TreeMap;
+    invoke-virtual {v0}, Ljava/util/TreeMap;->descendingKeySet()Ljava/util/NavigableSet;
 
-    invoke-virtual {v1}, Ljava/util/TreeMap;->descendingKeySet()Ljava/util/NavigableSet;
+    move-result-object v0
 
-    move-result-object v1
+    invoke-interface {v0}, Ljava/util/NavigableSet;->iterator()Ljava/util/Iterator;
 
-    invoke-interface {v1}, Ljava/util/NavigableSet;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
+    move-result-object v0
 
     :goto_0
-    add-int/lit8 v2, v0, -0x1
+    add-int/lit8 v2, v1, -0x1
 
-    if-lez v0, :cond_0
+    if-lez v1, :cond_0
 
     .line 193
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 194
-    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
+    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
-    move v0, v2
+    move v1, v2
 
     goto :goto_0
 
@@ -265,6 +282,16 @@
 # virtual methods
 .method public bindBlob(I[B)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 257
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery;->mBindingTypes:[I
@@ -283,6 +310,16 @@
 
 .method public bindDouble(ID)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 245
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery;->mBindingTypes:[I
@@ -301,6 +338,16 @@
 
 .method public bindLong(IJ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 239
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery;->mBindingTypes:[I
@@ -319,6 +366,14 @@
 
 .method public bindNull(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     .line 234
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery;->mBindingTypes:[I
@@ -332,6 +387,16 @@
 
 .method public bindString(ILjava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
     .line 251
     iget-object v0, p0, Landroidx/room/RoomSQLiteQuery;->mBindingTypes:[I
@@ -350,6 +415,14 @@
 
 .method public bindTo(Landroidx/sqlite/db/SupportSQLiteProgram;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "program"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -475,6 +548,14 @@
 
 .method public copyArgumentsFrom(Landroidx/room/RoomSQLiteQuery;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
     .line 272
     invoke-virtual {p1}, Landroidx/room/RoomSQLiteQuery;->getArgCount()I
@@ -543,6 +624,16 @@
 
 .method init(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "query",
+            "argCount"
+        }
+    .end annotation
 
     .line 170
     iput-object p1, p0, Landroidx/room/RoomSQLiteQuery;->mQuery:Ljava/lang/String;
@@ -554,7 +645,7 @@
 .end method
 
 .method public release()V
-    .locals 3
+    .locals 2
 
     .line 182
     sget-object v0, Landroidx/room/RoomSQLiteQuery;->sQueryPool:Ljava/util/TreeMap;
@@ -563,15 +654,13 @@
 
     .line 183
     :try_start_0
-    sget-object v1, Landroidx/room/RoomSQLiteQuery;->sQueryPool:Ljava/util/TreeMap;
+    iget v1, p0, Landroidx/room/RoomSQLiteQuery;->mCapacity:I
 
-    iget v2, p0, Landroidx/room/RoomSQLiteQuery;->mCapacity:I
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
-    move-result-object v2
-
-    invoke-virtual {v1, v2, p0}, Ljava/util/TreeMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0}, Ljava/util/TreeMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 184
     invoke-static {}, Landroidx/room/RoomSQLiteQuery;->prunePoolLocked()V

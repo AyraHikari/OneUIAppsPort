@@ -36,6 +36,17 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/ArrayList;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,6 +83,14 @@
 
 .method private getLayoutForViewType(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "viewType"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -79,7 +98,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const p1, 0x7f0c0058
+    const p1, 0x7f0d0054
 
     return p1
 
@@ -87,14 +106,14 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unsupported item view type given to SFChatListAdapter"
+    const-string/jumbo v0, "unsupported item view type given to SFChatListAdapter"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
     :cond_1
-    const p1, 0x7f0c0057
+    const p1, 0x7f0d0053
 
     return p1
 .end method
@@ -103,6 +122,14 @@
 # virtual methods
 .method public add(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -151,6 +178,14 @@
 
 .method public getItem(I)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 96
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListAdapter;->mChatList:Ljava/util/ArrayList;
@@ -179,6 +214,14 @@
 
 .method public getItemId(I)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 81
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListAdapter;->getItem(I)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -192,6 +235,14 @@
 
 .method public getItemViewType(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 32
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListAdapter;->getItem(I)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -215,6 +266,16 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 19
     check-cast p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;
@@ -226,6 +287,16 @@
 
 .method public onBindViewHolder(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 63
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;->getItem()Lcom/samsung/android/galaxycontinuity/activities/BindableNotificationListItem;
@@ -243,6 +314,16 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 19
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;
@@ -254,6 +335,16 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 54
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListAdapter;->mContext:Landroid/content/Context;
@@ -290,6 +381,14 @@
 
 .method public bridge synthetic onViewRecycled(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "holder"
+        }
+    .end annotation
 
     .line 19
     check-cast p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;
@@ -301,6 +400,14 @@
 
 .method public onViewRecycled(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "holder"
+        }
+    .end annotation
 
     .line 91
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListViewHolder;->getItem()Lcom/samsung/android/galaxycontinuity/activities/BindableNotificationListItem;

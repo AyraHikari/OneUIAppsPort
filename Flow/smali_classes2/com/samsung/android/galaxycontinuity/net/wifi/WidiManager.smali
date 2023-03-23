@@ -105,6 +105,8 @@
 
 .field private mhtWiDiThread:Landroid/os/HandlerThread;
 
+.field receiverForDialog:Landroid/content/BroadcastReceiver;
+
 .field private final stateLock:Ljava/lang/Object;
 
 .field final stopLock:Ljava/lang/Object;
@@ -122,83 +124,83 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 141
+    .line 145
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 109
+    .line 113
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_NONE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mReason:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     const/4 v0, 0x0
 
-    .line 112
+    .line 116
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pInfo:Landroid/net/wifi/p2p/WifiP2pInfo;
 
-    .line 113
+    .line 117
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pGroup:Landroid/net/wifi/p2p/WifiP2pGroup;
 
-    .line 114
+    .line 118
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     const-string v1, ""
 
-    .line 116
+    .line 120
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mTargetDeviceAddress:Ljava/lang/String;
 
-    .line 117
+    .line 121
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mThisDeviceAddress:Ljava/lang/String;
 
-    .line 120
+    .line 124
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mContext:Landroid/content/Context;
 
-    .line 122
+    .line 126
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiStateLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 123
+    .line 127
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_NONE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 124
+    .line 128
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
 
-    .line 125
+    .line 129
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mhtWiDiThread:Landroid/os/HandlerThread;
 
-    .line 126
+    .line 130
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiHandler:Landroid/os/Handler;
 
-    .line 127
+    .line 131
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stateLock:Ljava/lang/Object;
 
-    .line 128
+    .line 132
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->connectLock:Ljava/lang/Object;
 
-    .line 129
+    .line 133
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->deInitLock:Ljava/lang/Object;
 
-    .line 130
+    .line 134
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -207,17 +209,17 @@
 
     const/4 v0, 0x1
 
-    .line 131
+    .line 135
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pState:I
 
-    .line 193
+    .line 197
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
 
-    .line 237
+    .line 241
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -226,34 +228,41 @@
 
     const/4 v0, 0x0
 
-    .line 310
+    .line 315
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsSelfConnection:Z
 
-    .line 311
+    .line 316
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stopLock:Ljava/lang/Object;
 
-    .line 621
+    .line 629
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mExpectedP2pStates:Ljava/util/ArrayList;
 
-    .line 832
+    .line 720
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$7;
+
+    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$7;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->receiverForDialog:Landroid/content/BroadcastReceiver;
+
+    .line 892
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsAlreadyConnected:Z
 
-    .line 1097
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$15;
+    .line 1161
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$16;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$15;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$16;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->wifiP2pBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 142
+    .line 146
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$1;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$1;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
@@ -266,7 +275,7 @@
 .method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Landroid/net/wifi/p2p/WifiP2pGroup;
     .locals 0
 
-    .line 64
+    .line 68
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pGroup:Landroid/net/wifi/p2p/WifiP2pGroup;
 
     return-object p0
@@ -275,7 +284,7 @@
 .method static synthetic access$002(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/net/wifi/p2p/WifiP2pGroup;)Landroid/net/wifi/p2p/WifiP2pGroup;
     .locals 0
 
-    .line 64
+    .line 68
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pGroup:Landroid/net/wifi/p2p/WifiP2pGroup;
 
     return-object p1
@@ -284,7 +293,7 @@
 .method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/lang/String;)Z
     .locals 0
 
-    .line 64
+    .line 68
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->initAndDiscoverPeers(Ljava/lang/String;)Z
 
     move-result p0
@@ -292,49 +301,47 @@
     return p0
 .end method
 
-.method static synthetic access$1000(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Z
+.method static synthetic access$1002(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 64
-    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stop()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic access$1102(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    .line 64
+    .line 68
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mThisDeviceAddress:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic access$1202(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Z)Z
+.method static synthetic access$1100(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
     .locals 0
 
-    .line 64
+    .line 68
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->turnOnLocationSetting()V
+
+    return-void
+.end method
+
+.method static synthetic access$1200(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    .locals 0
+
+    .line 68
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->showTurnOnLocationSettingDialog()V
+
+    return-void
+.end method
+
+.method static synthetic access$1302(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Z)Z
+    .locals 0
+
+    .line 68
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsAlreadyConnected:Z
 
     return p1
 .end method
 
-.method static synthetic access$1300(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/content/Intent;)V
-    .locals 0
-
-    .line 64
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onDiscoveryChangedAction(Landroid/content/Intent;)V
-
-    return-void
-.end method
-
 .method static synthetic access$1400(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/content/Intent;)V
     .locals 0
 
-    .line 64
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onStateChangedAction(Landroid/content/Intent;)V
+    .line 68
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onDiscoveryChangedAction(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -342,8 +349,8 @@
 .method static synthetic access$1500(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/content/Intent;)V
     .locals 0
 
-    .line 64
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onPeersChangedAction(Landroid/content/Intent;)V
+    .line 68
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onStateChangedAction(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -351,8 +358,8 @@
 .method static synthetic access$1600(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/content/Intent;)V
     .locals 0
 
-    .line 64
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onConnectionChangedAction(Landroid/content/Intent;)V
+    .line 68
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onPeersChangedAction(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -360,26 +367,26 @@
 .method static synthetic access$1700(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/content/Intent;)V
     .locals 0
 
-    .line 64
+    .line 68
+    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onConnectionChangedAction(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
+.method static synthetic access$1800(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/content/Intent;)V
+    .locals 0
+
+    .line 68
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onRequestChangedAction(Landroid/content/Intent;)V
 
     return-void
 .end method
 
-.method static synthetic access$1800(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+.method static synthetic access$1900(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
     .locals 0
 
-    .line 64
+    .line 68
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-
-    return-object p0
-.end method
-
-.method static synthetic access$1900(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Landroid/net/wifi/p2p/WifiP2pManager;
-    .locals 0
-
-    .line 64
-    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     return-object p0
 .end method
@@ -387,7 +394,7 @@
 .method static synthetic access$200(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Z
     .locals 0
 
-    .line 64
+    .line 68
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->connectToMember()Z
 
     move-result p0
@@ -395,10 +402,19 @@
     return p0
 .end method
 
-.method static synthetic access$2000(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+.method static synthetic access$2000(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Landroid/net/wifi/p2p/WifiP2pManager;
     .locals 0
 
-    .line 64
+    .line 68
+    iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2100(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    .locals 0
+
+    .line 68
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stopPeerDiscovery()V
 
     return-void
@@ -407,7 +423,7 @@
 .method static synthetic access$300(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Landroid/net/wifi/p2p/WifiP2pInfo;
     .locals 0
 
-    .line 64
+    .line 68
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pInfo:Landroid/net/wifi/p2p/WifiP2pInfo;
 
     return-object p0
@@ -416,7 +432,7 @@
 .method static synthetic access$302(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/net/wifi/p2p/WifiP2pInfo;)Landroid/net/wifi/p2p/WifiP2pInfo;
     .locals 0
 
-    .line 64
+    .line 68
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pInfo:Landroid/net/wifi/p2p/WifiP2pInfo;
 
     return-object p1
@@ -425,7 +441,7 @@
 .method static synthetic access$400(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Landroid/net/wifi/p2p/WifiP2pInfo;)V
     .locals 0
 
-    .line 64
+    .line 68
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onWidiConnected(Landroid/net/wifi/p2p/WifiP2pInfo;)V
 
     return-void
@@ -434,25 +450,16 @@
 .method static synthetic access$500(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/lang/String;)V
     .locals 0
 
-    .line 64
-    invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onWidiConnectionFailed(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic access$600(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/lang/String;)V
-    .locals 0
-
-    .line 64
+    .line 68
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onWidiDiscoveryStarted(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Z
+.method static synthetic access$600(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Z
     .locals 0
 
-    .line 64
+    .line 68
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->connectToOwner()Z
 
     move-result p0
@@ -460,10 +467,10 @@
     return p0
 .end method
 
-.method static synthetic access$800(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+.method static synthetic access$700(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
     .locals 0
 
-    .line 64
+    .line 68
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result p0
@@ -471,13 +478,24 @@
     return p0
 .end method
 
-.method static synthetic access$900(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
+.method static synthetic access$800(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
     .locals 0
 
-    .line 64
+    .line 68
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
     return-void
+.end method
+
+.method static synthetic access$900(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)Z
+    .locals 0
+
+    .line 68
+    invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stop()Z
+
+    move-result p0
+
+    return p0
 .end method
 
 .method private cancelConnect()V
@@ -485,17 +503,17 @@
 
     const-string v0, "cancelConnect"
 
-    .line 1079
+    .line 1143
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 1081
+    .line 1145
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$14;
+    new-instance v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$15;
 
-    invoke-direct {v2, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$14;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    invoke-direct {v2, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$15;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/net/wifi/p2p/WifiP2pManager;->cancelConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
@@ -503,7 +521,7 @@
 
     new-array v0, v0, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1094
+    .line 1158
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECT_CANCELED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     const/4 v2, 0x0
@@ -519,19 +537,27 @@
 
 .method private commandExecute(Ljava/lang/Runnable;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runnable"
+        }
+    .end annotation
 
-    .line 240
+    .line 244
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->commandLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 241
+    .line 245
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mhtWiDiThread:Landroid/os/HandlerThread;
 
     if-nez v1, :cond_0
 
-    .line 242
+    .line 246
     new-instance v1, Landroid/os/HandlerThread;
 
     const-string v2, "htWiDiThread"
@@ -540,10 +566,10 @@
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mhtWiDiThread:Landroid/os/HandlerThread;
 
-    .line 243
+    .line 247
     invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
 
-    .line 244
+    .line 248
     new-instance v1, Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mhtWiDiThread:Landroid/os/HandlerThread;
@@ -556,13 +582,17 @@
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiHandler:Landroid/os/Handler;
 
-    .line 247
+    .line 251
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiHandler:Landroid/os/Handler;
 
+    if-eqz v1, :cond_1
+
+    .line 252
     invoke-virtual {v1, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 248
+    .line 253
+    :cond_1
     monitor-exit v0
 
     return-void
@@ -582,22 +612,22 @@
 
     const-string v0, "connect"
 
-    .line 989
+    .line 1053
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 990
+    .line 1054
     new-instance v0, Landroid/net/wifi/p2p/WifiP2pConfig;
 
     invoke-direct {v0}, Landroid/net/wifi/p2p/WifiP2pConfig;-><init>()V
 
-    .line 991
+    .line 1055
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v1, v1, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceAddress:Ljava/lang/String;
 
     iput-object v1, v0, Landroid/net/wifi/p2p/WifiP2pConfig;->deviceAddress:Ljava/lang/String;
 
-    .line 992
+    .line 1056
     iget-object v1, v0, Landroid/net/wifi/p2p/WifiP2pConfig;->wps:Landroid/net/wifi/WpsInfo;
 
     const/4 v2, 0x0
@@ -606,17 +636,17 @@
 
     const/16 v1, 0xf
 
-    .line 995
+    .line 1059
     iput v1, v0, Landroid/net/wifi/p2p/WifiP2pConfig;->groupOwnerIntent:I
 
-    .line 997
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 1061
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x1c
 
     if-le v1, v3, :cond_0
 
-    .line 998
+    .line 1062
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -631,25 +661,25 @@
 
     const-string v0, "No have permission : android.permission.ACCESS_FINE_LOCATION"
 
-    .line 999
+    .line 1063
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 1000
+    .line 1064
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
 
     return v2
 
-    .line 1003
+    .line 1067
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$12;
+    new-instance v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$13;
 
-    invoke-direct {v4, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$12;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    invoke-direct {v4, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$13;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
     invoke-virtual {v1, v3, v0, v4}, Landroid/net/wifi/p2p/WifiP2pManager;->connect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
@@ -659,7 +689,7 @@
 
     new-array v3, v3, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1017
+    .line 1081
     sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v4, v3, v2
@@ -682,10 +712,10 @@
 
     const-string v0, "Widi connect to phone"
 
-    .line 493
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 498
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 494
+    .line 499
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->connect()Z
 
     move-result v0
@@ -703,7 +733,7 @@
 
     new-array v0, v0, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 499
+    .line 504
     sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v4, v0, v1
@@ -726,7 +756,7 @@
 
     new-array v2, v5, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 504
+    .line 509
     sget-object v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v3, v2, v1
@@ -735,22 +765,30 @@
 
     move-result v2
 
-    .line 505
+    .line 510
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "timeout : "
+    const-string/jumbo v4, "timeout : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, ", result : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -773,10 +811,10 @@
 
     const-string v0, "Widi connect to pc/tablet"
 
-    .line 510
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 515
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 511
+    .line 516
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
@@ -785,7 +823,7 @@
 
     new-array v0, v0, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 514
+    .line 519
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     const/4 v2, 0x0
@@ -812,7 +850,7 @@
 
     new-array v1, v3, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 519
+    .line 524
     sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v4, v1, v2
@@ -821,22 +859,30 @@
 
     move-result v1
 
-    .line 520
+    .line 525
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "timeout : "
+    const-string/jumbo v5, "timeout : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     const-string v5, ", result : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -856,13 +902,21 @@
 
 .method private varargs containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "states"
+        }
+    .end annotation
 
-    .line 577
+    .line 585
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 578
+    .line 586
     :try_start_0
     array-length v1, p1
 
@@ -875,7 +929,7 @@
 
     aget-object v4, p1, v3
 
-    .line 579
+    .line 587
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -884,7 +938,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 580
+    .line 588
     monitor-exit v0
 
     const/4 p1, 0x1
@@ -896,7 +950,7 @@
 
     goto :goto_0
 
-    .line 582
+    .line 590
     :cond_1
     monitor-exit v0
 
@@ -915,13 +969,13 @@
 .method private createInstance()V
     .locals 4
 
-    .line 677
+    .line 685
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2p:Landroid/os/HandlerThread;
 
     if-nez v0, :cond_0
 
-    .line 678
+    .line 686
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "htWifiP2p"
@@ -930,14 +984,14 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2p:Landroid/os/HandlerThread;
 
-    .line 679
+    .line 687
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 682
+    .line 690
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mContext:Landroid/content/Context;
 
-    const-string v1, "wifip2p"
+    const-string/jumbo v1, "wifip2p"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -947,7 +1001,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    .line 683
+    .line 691
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2p:Landroid/os/HandlerThread;
@@ -973,7 +1027,7 @@
     :catch_0
     move-exception v0
 
-    .line 690
+    .line 698
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
@@ -985,10 +1039,10 @@
 
     const-string v0, "deInit"
 
-    .line 796
+    .line 856
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 798
+    .line 858
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2pBroadcastReceiver:Landroid/os/HandlerThread;
 
@@ -996,41 +1050,39 @@
 
     if-eqz v0, :cond_0
 
-    .line 799
+    .line 859
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->wifiP2pBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 801
+    .line 861
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2pBroadcastReceiver:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
-    .line 802
+    .line 862
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2pBroadcastReceiver:Landroid/os/HandlerThread;
 
-    .line 805
+    .line 865
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2p:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_1
 
-    .line 806
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2p:Landroid/os/HandlerThread;
-
+    .line 866
     invoke-virtual {v0}, Landroid/os/HandlerThread;->interrupt()V
 
-    .line 807
+    .line 867
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2p:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
-    .line 808
+    .line 868
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2p:Landroid/os/HandlerThread;
 
-    .line 811
+    .line 871
     :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
@@ -1048,7 +1100,7 @@
 
     move-result-object v0
 
-    .line 813
+    .line 873
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -1063,12 +1115,12 @@
 
     if-ne v0, v2, :cond_2
 
-    const-string v0, "wifi direct auto accept : off"
+    const-string/jumbo v0, "wifi direct auto accept : off"
 
-    .line 814
+    .line 874
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 815
+    .line 875
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
@@ -1077,22 +1129,22 @@
 
     invoke-virtual {v0, v2, v3, v1}, Landroid/net/wifi/p2p/WifiP2pManager;->semRequestNfcConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ZLandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
-    .line 818
+    .line 878
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     if-eqz v0, :cond_3
 
-    .line 819
+    .line 879
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    .line 821
+    .line 881
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_4
 
-    .line 822
+    .line 882
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -1102,10 +1154,10 @@
     :catch_0
     move-exception v0
 
-    .line 824
+    .line 884
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 827
+    .line 887
     :cond_4
     :goto_0
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_NONE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
@@ -1114,7 +1166,7 @@
 
     const-string v0, "deInit done"
 
-    .line 828
+    .line 888
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
     const/4 v0, 0x1
@@ -1127,10 +1179,10 @@
 
     const-string v0, "disconnect"
 
-    .line 1023
+    .line 1087
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1025
+    .line 1089
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_0
@@ -1139,11 +1191,11 @@
 
     if-nez v0, :cond_1
 
-    .line 1026
+    .line 1090
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->createInstance()V
 
-    .line 1028
+    .line 1092
     :cond_1
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->disconnectOrRemoveGroup()Z
 
@@ -1157,14 +1209,14 @@
 
     const-string v0, "disconnectOrRemoveGroup"
 
-    .line 1032
+    .line 1096
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1033
+    .line 1097
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     const/4 v2, 0x0
@@ -1205,7 +1257,7 @@
     :goto_0
     const-wide/16 v4, 0x5
 
-    .line 1036
+    .line 1100
     :try_start_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isConnecting()Z
 
@@ -1213,24 +1265,24 @@
 
     if-eqz v1, :cond_1
 
-    .line 1037
+    .line 1101
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->cancelConnect()V
 
-    .line 1041
+    .line 1105
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v7, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$13;
+    new-instance v7, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$14;
 
-    invoke-direct {v7, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$13;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    invoke-direct {v7, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$14;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
     invoke-virtual {v1, v6, v7}, Landroid/net/wifi/p2p/WifiP2pManager;->removeGroup(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
     new-array v1, v3, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1063
+    .line 1127
     sget-object v6, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_REMOVED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v6, v1, v2
@@ -1244,10 +1296,10 @@
     :catch_0
     move-exception v1
 
-    .line 1066
+    .line 1130
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 1067
+    .line 1131
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_REMOVED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
@@ -1257,7 +1309,7 @@
 
     new-array v0, v3, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1073
+    .line 1137
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v1, v0, v2
@@ -1273,282 +1325,285 @@
 .method private discoverPeers()Z
     .locals 8
 
-    const/4 v0, 0x0
+    const-string v0, "discoverPeers"
 
-    .line 874
+    const/4 v1, 0x0
+
+    .line 934
     :try_start_0
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
+
+    .line 936
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v3, 0x1c
+
+    if-le v2, v3, :cond_0
+
+    .line 937
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v2
+
+    const-string v3, "android.permission.ACCESS_FINE_LOCATION"
+
+    invoke-static {v2, v3}, Landroidx/core/app/ActivityCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const-string v0, "No have permission : android.permission.ACCESS_FINE_LOCATION"
+
+    .line 938
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+
+    .line 939
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
+
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
+
+    return v1
+
+    .line 943
+    :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
-    move-result v1
+    move-result v2
 
-    if-nez v1, :cond_0
+    const/16 v3, 0x1f
+
+    if-nez v2, :cond_1
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isSemAvailable(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isSemAvailable(Landroid/content/Context;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_1
 
-    const-string v1, "widi listen"
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
-    .line 875
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+    if-gt v2, v3, :cond_1
 
-    .line 876
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    const-string/jumbo v0, "widi listen"
+
+    .line 944
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
+    .line 946
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$9;
+    new-instance v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$10;
 
-    invoke-direct {v3, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$9;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    invoke-direct {v4, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$10;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
-    invoke-virtual {v1, v2, v3}, Landroid/net/wifi/p2p/WifiP2pManager;->semListen(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
+    invoke-virtual {v0, v2, v4}, Landroid/net/wifi/p2p/WifiP2pManager;->semListen(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
     goto :goto_0
 
-    :cond_0
-    const-string v1, "discoverPeers"
-
-    .line 892
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
-
-    .line 894
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x1c
-
-    if-le v1, v2, :cond_1
-
-    .line 895
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v1
-
-    const-string v2, "android.permission.ACCESS_FINE_LOCATION"
-
-    invoke-static {v1, v2}, Landroidx/core/app/ActivityCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    const-string v1, "No have permission : android.permission.ACCESS_FINE_LOCATION"
-
-    .line 896
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
-
-    .line 897
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
-
-    invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
-
-    return v0
-
-    .line 901
+    .line 962
     :cond_1
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
+
+    .line 964
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$10;
+    new-instance v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$11;
 
-    invoke-direct {v3, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$10;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    invoke-direct {v4, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$11;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
-    invoke-virtual {v1, v2, v3}, Landroid/net/wifi/p2p/WifiP2pManager;->discoverPeers(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
+    invoke-virtual {v0, v2, v4}, Landroid/net/wifi/p2p/WifiP2pManager;->discoverPeers(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 922
+    .line 984
     :goto_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
-    move-result v1
+    move-result v0
 
     const/4 v2, 0x2
 
-    const-wide/16 v3, 0xa
+    const-wide/16 v4, 0xa
 
-    const/4 v5, 0x1
+    const/4 v6, 0x1
 
-    if-eqz v1, :cond_3
+    if-eqz v0, :cond_3
 
-    new-array v1, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 923
+    .line 985
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER_SUCCESS:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v0
+    aput-object v2, v0, v1
 
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER_FAILURE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v5
+    aput-object v2, v0, v6
 
-    invoke-direct {p0, v3, v4, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+    invoke-direct {p0, v4, v5, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
-    new-array v1, v5, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-array v0, v6, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 926
+    .line 988
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER_SUCCESS:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v0
+    aput-object v2, v0, v1
 
-    invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
 
     return v0
 
-    .line 928
+    .line 990
     :cond_2
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_TIMEOUT:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_TIMEOUT:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
-    invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
 
-    return v0
+    return v1
 
-    .line 932
+    .line 994
     :cond_3
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
-    move-result-object v1
+    if-gt v0, v3, :cond_6
 
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isSemAvailable(Landroid/content/Context;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_6
-
-    .line 933
+    .line 995
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
-    move-result-object v1
+    move-result-object v0
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
-    move-result-object v6
+    move-result-object v3
 
-    invoke-virtual {v6}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getMainDeviceAddress()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getMainDeviceAddress()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v3
 
-    invoke-virtual {v1, v6}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getDeviceType(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    invoke-virtual {v0, v3}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getDeviceType(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    move-result-object v1
+    move-result-object v0
 
-    .line 934
-    sget-object v6, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    .line 996
+    sget-object v3, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    if-ne v1, v6, :cond_4
+    if-ne v0, v3, :cond_4
 
-    const-string v1, "wifi direct auto accept : on"
+    const-string/jumbo v0, "wifi direct auto accept : on"
 
-    .line 935
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 997
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 936
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    .line 999
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     const/4 v7, 0x0
 
-    invoke-virtual {v1, v6, v5, v7}, Landroid/net/wifi/p2p/WifiP2pManager;->semRequestNfcConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ZLandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
+    invoke-virtual {v0, v3, v6, v7}, Landroid/net/wifi/p2p/WifiP2pManager;->semRequestNfcConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ZLandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
     :cond_4
-    new-array v1, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 939
+    .line 1002
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_LISTEN:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v0
+    aput-object v2, v0, v1
 
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_LISTEN_FAILURE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v5
+    aput-object v2, v0, v6
 
-    invoke-direct {p0, v3, v4, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+    invoke-direct {p0, v4, v5, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_5
+    if-eqz v0, :cond_5
 
-    new-array v1, v5, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-array v0, v6, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 942
+    .line 1005
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_LISTEN:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v0
+    aput-object v2, v0, v1
 
-    invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
 
     return v0
 
-    .line 944
+    .line 1007
     :cond_5
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_TIMEOUT:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_TIMEOUT:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
-    invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
 
-    return v0
+    return v1
 
     :cond_6
-    new-array v1, v5, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-array v0, v6, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 948
+    .line 1012
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCOVERY:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v0
+    aput-object v2, v0, v1
 
-    invoke-direct {p0, v3, v4, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+    invoke-direct {p0, v4, v5, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_7
+    if-eqz v0, :cond_7
 
-    new-array v1, v5, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-array v0, v6, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 949
+    .line 1013
     sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCOVERY:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, v1, v0
+    aput-object v2, v0, v1
 
-    invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
 
     return v0
 
-    .line 951
+    .line 1015
     :cond_7
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_TIMEOUT:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_TIMEOUT:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
-    invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
 
-    return v0
+    return v1
 
     :catch_0
-    move-exception v1
+    move-exception v0
 
-    .line 916
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    .line 978
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 917
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
+    .line 979
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
-    invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
 
-    return v0
+    return v1
 .end method
 
 .method public static declared-synchronized getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
@@ -1558,20 +1613,20 @@
 
     monitor-enter v0
 
-    .line 136
+    .line 140
     :try_start_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->sInstance:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     if-nez v1, :cond_0
 
-    .line 137
+    .line 141
     new-instance v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;-><init>()V
 
     sput-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->sInstance:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
-    .line 138
+    .line 142
     :cond_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->sInstance:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
     :try_end_0
@@ -1594,10 +1649,10 @@
 
     const-string v0, "init"
 
-    .line 719
+    .line 779
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 721
+    .line 781
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->requestPermission()Z
 
     move-result v0
@@ -1615,7 +1670,7 @@
     :try_start_0
     new-array v0, v1, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 723
+    .line 783
     sget-object v6, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FAILED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v6, v0, v3
@@ -1626,7 +1681,7 @@
 
     invoke-direct {p0, v4, v5, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
-    .line 725
+    .line 785
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FAILED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
@@ -1642,53 +1697,53 @@
     :catch_0
     move-exception v0
 
-    .line 728
+    .line 788
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 729
+    .line 789
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
 
     return v3
 
-    .line 733
+    .line 793
     :cond_0
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
     :cond_1
-    const v0, 0x7f10007a
+    const v0, 0x7f11008a
 
-    .line 735
+    .line 795
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0, v3}, Lcom/samsung/android/galaxycontinuity/util/Utils;->showToastMessage(Ljava/lang/String;I)V
 
-    .line 738
+    .line 798
     :try_start_1
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->createInstance()V
 
-    .line 740
+    .line 800
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pState:I
 
     if-ne v0, v1, :cond_2
 
-    .line 741
+    .line 801
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
-    .line 743
+    .line 803
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2pBroadcastReceiver:Landroid/os/HandlerThread;
 
     if-nez v0, :cond_3
 
-    .line 744
+    .line 804
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v4, "htWifiP2pBroadcastReceiver"
@@ -1697,40 +1752,40 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2pBroadcastReceiver:Landroid/os/HandlerThread;
 
-    .line 745
+    .line 805
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 747
+    .line 807
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
     const-string v4, "android.net.wifi.p2p.STATE_CHANGED"
 
-    .line 748
+    .line 808
     invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v4, "android.net.wifi.p2p.PEERS_CHANGED"
 
-    .line 749
+    .line 809
     invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v4, "android.net.wifi.p2p.DISCOVERY_STATE_CHANGE"
 
-    .line 750
+    .line 810
     invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v4, "android.net.wifi.p2p.CONNECTION_STATE_CHANGE"
 
-    .line 751
+    .line 811
     invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v4, "android.net.wifi.p2p.REQUEST_STATE_CHANGE"
 
-    .line 752
+    .line 812
     invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 754
+    .line 814
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mContext:Landroid/content/Context;
 
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->wifiP2pBroadcastReceiver:Landroid/content/BroadcastReceiver;
@@ -1741,17 +1796,17 @@
 
     iget-object v8, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->htWifiP2pBroadcastReceiver:Landroid/os/HandlerThread;
 
-    .line 755
+    .line 815
     invoke-virtual {v8}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v8
 
     invoke-direct {v7, v8}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 754
+    .line 814
     invoke-virtual {v4, v5, v0, v6, v7}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 758
+    .line 818
     :cond_3
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isAlreadyWiDiNetwork()Z
 
@@ -1761,7 +1816,7 @@
 
     new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 759
+    .line 819
     sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_ALREADY_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v4, v0, v3
@@ -1770,12 +1825,12 @@
 
     invoke-direct {p0, v4, v5, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
-    .line 760
+    .line 820
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->disconnectOrRemoveGroup()Z
 
     new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 761
+    .line 821
     sget-object v6, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v6, v0, v3
@@ -1784,7 +1839,7 @@
 
     new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 762
+    .line 822
     sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v4, v0, v3
@@ -1794,7 +1849,7 @@
     :cond_4
     new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 765
+    .line 825
     sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_REMOVED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v4, v0, v3
@@ -1803,7 +1858,7 @@
 
     new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 766
+    .line 826
     sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECT_CANCELED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v4, v0, v3
@@ -1816,7 +1871,7 @@
 
     new-array v0, v0, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 771
+    .line 831
     sget-object v6, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v6, v0, v3
@@ -1837,17 +1892,17 @@
 
     const-string v0, "init done"
 
-    .line 775
+    .line 835
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 776
+    .line 836
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
     new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 777
+    .line 837
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CHANNEL_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v1, v0, v3
@@ -1858,7 +1913,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 778
+    .line 838
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_UNKNOWN:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
@@ -1871,10 +1926,10 @@
     :cond_6
     const-string v0, "init timeout"
 
-    .line 783
+    .line 843
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 784
+    .line 844
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_TIMEOUT:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
@@ -1888,13 +1943,13 @@
 
     const-string v1, "init failed"
 
-    .line 788
+    .line 848
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    .line 789
+    .line 849
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 790
+    .line 850
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
@@ -1904,10 +1959,18 @@
 
 .method private initAndDiscoverPeers(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targetDeviceAddress"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 451
+    .line 456
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
@@ -1923,12 +1986,12 @@
 
     const-string p1, "It is Tablet and target mac is empty"
 
-    .line 452
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 457
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     return v0
 
-    .line 457
+    .line 462
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->turnOffHotspot()Z
 
@@ -1936,7 +1999,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 458
+    .line 463
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WifiConnectionManager;
 
     move-result-object v1
@@ -1949,11 +2012,11 @@
 
     goto :goto_0
 
-    .line 463
+    .line 468
     :cond_1
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mTargetDeviceAddress:Ljava/lang/String;
 
-    .line 465
+    .line 470
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->init()Z
 
     move-result p1
@@ -1962,12 +2025,12 @@
 
     const-string p1, "Widi init failed"
 
-    .line 466
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 471
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     return v0
 
-    .line 470
+    .line 475
     :cond_2
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->discoverPeers()Z
 
@@ -1977,8 +2040,8 @@
 
     const-string p1, "Widi discovery failed"
 
-    .line 471
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 476
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     return v0
 
@@ -1991,7 +2054,7 @@
     :goto_0
     const-string p1, "Can not turn off hotspot or thurn on wifi"
 
-    .line 459
+    .line 464
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -2001,10 +2064,10 @@
     :catch_0
     move-exception p1
 
-    .line 475
+    .line 480
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 476
+    .line 481
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
@@ -2014,8 +2077,16 @@
 
 .method private isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 573
+    .line 581
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     if-ne v0, p1, :cond_0
@@ -2033,21 +2104,29 @@
 
 .method private onConnectionChangedAction(Landroid/content/Intent;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     :try_start_0
     const-string v0, "networkInfo"
 
-    .line 1215
+    .line 1279
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/net/NetworkInfo;
 
-    .line 1217
+    .line 1281
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
@@ -2055,69 +2134,109 @@
 
     goto/16 :goto_0
 
-    .line 1222
+    .line 1285
     :cond_0
-    invoke-virtual {p1}, Landroid/net/NetworkInfo;->isConnected()Z
+    invoke-virtual {p1}, Landroid/net/NetworkInfo;->getDetailedState()Landroid/net/NetworkInfo$DetailedState;
 
-    move-result p1
+    move-result-object v0
 
-    const/4 v0, 0x0
+    .line 1286
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x1
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-eqz p1, :cond_4
+    const-string v2, "DetailedState : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Landroid/net/NetworkInfo;->getDetailedState()Landroid/net/NetworkInfo$DetailedState;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/net/NetworkInfo$DetailedState;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
+    .line 1288
+    sget-object p1, Landroid/net/NetworkInfo$DetailedState;->CONNECTING:Landroid/net/NetworkInfo$DetailedState;
+
+    if-ne v0, p1, :cond_1
+
+    return-void
+
+    .line 1291
+    :cond_1
+    sget-object p1, Landroid/net/NetworkInfo$DetailedState;->CONNECTED:Landroid/net/NetworkInfo$DetailedState;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-ne v0, p1, :cond_5
 
     const-string p1, "Connected to p2p network. Requesting network details"
 
-    .line 1223
+    .line 1292
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    new-array p1, v1, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-array p1, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1224
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    .line 1293
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v1, p1, v0
+    aput-object v0, p1, v1
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_2
 
     return-void
 
-    .line 1227
-    :cond_1
+    .line 1296
+    :cond_2
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_3
 
     const-string p1, "prev state is not \'WIDI_STATE_CONNECTING\'"
 
-    .line 1228
+    .line 1297
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1229
+    .line 1298
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_ALREADY_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
     return-void
 
-    .line 1233
-    :cond_2
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 1302
+    :cond_3
+    sget p1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x1c
 
-    if-le p1, v0, :cond_3
+    if-le p1, v0, :cond_4
 
-    .line 1234
+    .line 1303
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
@@ -2128,126 +2247,130 @@
 
     move-result p1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_4
 
     const-string p1, "No have permission : android.permission.ACCESS_FINE_LOCATION"
 
-    .line 1235
+    .line 1304
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 1236
+    .line 1305
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;->REASON_EXCEPTION:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
 
     return-void
 
-    .line 1240
-    :cond_3
+    .line 1309
+    :cond_4
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$16;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$17;
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$16;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
+    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$17;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
     invoke-virtual {p1, v0, v1}, Landroid/net/wifi/p2p/WifiP2pManager;->requestGroupInfo(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$GroupInfoListener;)V
 
     goto/16 :goto_2
 
-    .line 1276
-    :cond_4
+    .line 1345
+    :cond_5
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Disconnected to p2p network. Requesting network details "
+    const-string v0, "Disconnected to p2p network. Requesting network details "
 
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    move-result-object p1
 
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     const/4 p1, 0x2
 
     new-array p1, p1, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1277
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    .line 1346
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, p1, v0
+    aput-object v0, p1, v1
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_ALREADY_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_ALREADY_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v2, p1, v1
+    aput-object v0, p1, v2
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_5
+    if-eqz p1, :cond_6
 
-    .line 1278
+    .line 1347
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
-    .line 1281
-    :cond_5
+    .line 1350
+    :cond_6
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_7
 
-    .line 1282
+    .line 1351
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECT_CANCELED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
     return-void
 
-    :cond_6
-    new-array p1, v1, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    :cond_7
+    new-array p1, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1286
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    .line 1355
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    aput-object v1, p1, v0
+    aput-object v0, p1, v1
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_a
+    if-eqz p1, :cond_b
 
-    .line 1287
+    .line 1356
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->onWidiConnectionClosed()V
 
-    const-string p1, "wifi direct abruptly ended"
+    const-string/jumbo p1, "wifi direct abruptly ended"
 
-    .line 1290
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 1359
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
-    .line 1291
+    .line 1360
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stopAsync(Ljava/lang/Runnable;)V
 
     goto :goto_2
 
-    .line 1218
-    :cond_7
+    .line 1282
+    :cond_8
     :goto_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -2259,27 +2382,31 @@
 
     const-string v1, ""
 
-    if-nez v0, :cond_8
+    if-nez v0, :cond_9
 
     :try_start_1
     const-string v0, "mWifiP2pManager == null "
 
     goto :goto_1
 
-    :cond_8
+    :cond_9
     move-object v0, v1
 
     :goto_1
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_a
 
     const-string v1, "mChannel == null"
 
-    :cond_9
+    :cond_a
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2294,18 +2421,26 @@
     :catch_0
     move-exception p1
 
-    .line 1295
+    .line 1364
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    :cond_a
+    :cond_b
     :goto_2
     return-void
 .end method
 
 .method private onDiscoveryChangedAction(Landroid/content/Intent;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
-    .line 1138
+    .line 1202
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
@@ -2319,7 +2454,7 @@
 
     new-array v0, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1139
+    .line 1203
     sget-object v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v3, v0, v1
@@ -2332,7 +2467,7 @@
 
     return-void
 
-    .line 1142
+    .line 1206
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pInfo:Landroid/net/wifi/p2p/WifiP2pInfo;
 
@@ -2359,7 +2494,7 @@
 
     const/4 v3, -0x1
 
-    .line 1146
+    .line 1210
     invoke-virtual {p1, v0, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p1
@@ -2368,7 +2503,7 @@
 
     if-ne p1, v0, :cond_3
 
-    .line 1149
+    .line 1213
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
@@ -2390,10 +2525,10 @@
     :cond_2
     const-string p1, "onDiscoveryChangedAction : WIFI_P2P_DISCOVERY_STARTED"
 
-    .line 1152
+    .line 1216
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1153
+    .line 1217
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCOVERY:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
@@ -2405,12 +2540,12 @@
 
     const-string p1, "onDiscoveryChangedAction : WIFI_P2P_DISCOVERY_STOPPED"
 
-    .line 1155
+    .line 1219
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     new-array p1, v2, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 1156
+    .line 1220
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCOVERY:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v0, p1, v1
@@ -2424,7 +2559,7 @@
     :catch_0
     move-exception p1
 
-    .line 1159
+    .line 1223
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_4
@@ -2434,10 +2569,18 @@
 
 .method private onPeersChangedAction(Landroid/content/Intent;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
-    .line 1180
+    .line 1244
     :try_start_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
@@ -2445,7 +2588,7 @@
 
     return-void
 
-    .line 1183
+    .line 1247
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
@@ -2453,7 +2596,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 1184
+    .line 1248
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->connectLock:Ljava/lang/Object;
 
     monitor-enter v0
@@ -2463,12 +2606,12 @@
     :try_start_1
     const-string v1, "onPeersChangedAction"
 
-    .line 1185
+    .line 1249
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    const-string v1, "wifiP2pDeviceList"
+    const-string/jumbo v1, "wifiP2pDeviceList"
 
-    .line 1188
+    .line 1252
     invoke-virtual {p1, v1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
@@ -2481,7 +2624,7 @@
 
     const/4 v2, 0x0
 
-    .line 1190
+    .line 1254
     sget-object v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER_SUCCESS:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     aput-object v3, v1, v2
@@ -2492,12 +2635,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 1191
+    .line 1255
     monitor-exit v0
 
     return-void
 
-    .line 1193
+    .line 1257
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2506,6 +2649,8 @@
     const-string v2, "find peer size : "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {p1}, Landroid/net/wifi/p2p/WifiP2pDeviceList;->getDeviceList()Ljava/util/Collection;
 
@@ -2517,13 +2662,15 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1195
+    .line 1259
     invoke-virtual {p1}, Landroid/net/wifi/p2p/WifiP2pDeviceList;->getDeviceList()Ljava/util/Collection;
 
     move-result-object v1
@@ -2545,7 +2692,7 @@
 
     check-cast v2, Landroid/net/wifi/p2p/WifiP2pDevice;
 
-    .line 1196
+    .line 1260
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2554,9 +2701,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     iget-object v4, v2, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2564,7 +2715,7 @@
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 1197
+    .line 1261
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2573,9 +2724,13 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     iget-object v4, v2, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceAddress:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2583,7 +2738,7 @@
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 1198
+    .line 1262
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2592,11 +2747,15 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     iget v2, v2, Landroid/net/wifi/p2p/WifiP2pDevice;->status:I
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2604,7 +2763,7 @@
 
     goto :goto_0
 
-    .line 1200
+    .line 1264
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mTargetDeviceAddress:Ljava/lang/String;
 
@@ -2616,17 +2775,17 @@
 
     if-eqz p1, :cond_3
 
-    .line 1202
+    .line 1266
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER_SUCCESS:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
 
     const-string p1, "WifiP2pDevice found"
 
-    .line 1203
+    .line 1267
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 1205
+    .line 1269
     :cond_3
     monitor-exit v0
 
@@ -2647,7 +2806,7 @@
     :catch_0
     move-exception p1
 
-    .line 1209
+    .line 1273
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_4
@@ -2657,8 +2816,16 @@
 
 .method private onRequestChangedAction(Landroid/content/Intent;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
-    .line 1118
+    .line 1182
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
@@ -2669,7 +2836,7 @@
 
     return-void
 
-    .line 1121
+    .line 1185
     :cond_0
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -2693,7 +2860,7 @@
 
     const/4 v0, 0x0
 
-    .line 1122
+    .line 1186
     :goto_0
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -2709,7 +2876,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 1123
+    .line 1187
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v1
@@ -2726,7 +2893,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 1124
+    .line 1188
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v2
@@ -2741,7 +2908,7 @@
 
     move-result v2
 
-    .line 1125
+    .line 1189
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2750,15 +2917,23 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, " : "
+    move-result-object v3
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v3, " : "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2766,7 +2941,7 @@
 
     if-nez v2, :cond_1
 
-    .line 1128
+    .line 1192
     sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECT_USER_CANCELED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
@@ -2782,17 +2957,25 @@
 
 .method private onStateChangedAction(Landroid/content/Intent;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
-    const-string v0, "wifi_p2p_state"
+    const-string/jumbo v0, "wifi_p2p_state"
 
     const/4 v1, -0x1
 
-    .line 1164
+    .line 1228
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p1
 
-    .line 1165
+    .line 1229
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2800,6 +2983,8 @@
     const-string v1, "onStateChangedAction : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const/4 v1, 0x2
 
@@ -2815,6 +3000,8 @@
     :goto_0
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -2823,10 +3010,10 @@
 
     if-ne p1, v1, :cond_1
 
-    .line 1168
+    .line 1232
     iput v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pState:I
 
-    .line 1169
+    .line 1233
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
@@ -2835,7 +3022,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 1170
+    .line 1234
     sget-object p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
@@ -2847,12 +3034,12 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 1173
+    .line 1237
     iput v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pState:I
 
     const-string p1, "mWifiP2pState == WifiP2pManager.WIFI_P2P_STATE_DISABLED"
 
-    .line 1174
+    .line 1238
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :cond_2
@@ -2862,13 +3049,21 @@
 
 .method private onWidiConnected(Landroid/net/wifi/p2p/WifiP2pInfo;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "info"
+        }
+    .end annotation
 
-    .line 210
+    .line 214
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 211
+    .line 215
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
 
@@ -2889,12 +3084,12 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
 
-    .line 212
+    .line 216
     invoke-interface {v2, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;->onWidiConnected(Landroid/net/wifi/p2p/WifiP2pInfo;)V
 
     goto :goto_0
 
-    .line 213
+    .line 217
     :cond_0
     monitor-exit v0
 
@@ -2913,12 +3108,12 @@
 .method private onWidiConnectionClosed()V
     .locals 3
 
-    .line 231
+    .line 235
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 232
+    .line 236
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
 
@@ -2939,12 +3134,12 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
 
-    .line 233
+    .line 237
     invoke-interface {v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;->onWidiConnectionClosed()V
 
     goto :goto_0
 
-    .line 234
+    .line 238
     :cond_0
     monitor-exit v0
 
@@ -2960,65 +3155,23 @@
     throw v1
 .end method
 
-.method private onWidiConnectionFailed(Ljava/lang/String;)V
-    .locals 3
-
-    .line 224
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 225
-    :try_start_0
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
-
-    .line 226
-    invoke-interface {v2, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;->onWidiConnectionFailed(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 227
-    :cond_0
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-.end method
-
 .method private onWidiDiscoveryStarted(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 217
+    .line 221
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 218
+    .line 222
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
 
@@ -3039,12 +3192,12 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
 
-    .line 219
+    .line 223
     invoke-interface {v2, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;->onWidiDiscoveryStarted(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 220
+    .line 224
     :cond_0
     monitor-exit v0
 
@@ -3062,13 +3215,21 @@
 
 .method private varargs removeState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "states"
+        }
+    .end annotation
 
-    .line 612
+    .line 620
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 613
+    .line 621
     :try_start_0
     array-length v1, p1
 
@@ -3079,7 +3240,7 @@
 
     aget-object v3, p1, v2
 
-    .line 614
+    .line 622
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -3088,7 +3249,11 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3096,14 +3261,12 @@
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 615
+    .line 623
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
 
     if-eqz v4, :cond_0
 
-    .line 616
-    iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
-
+    .line 624
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     :cond_0
@@ -3111,7 +3274,7 @@
 
     goto :goto_0
 
-    .line 618
+    .line 626
     :cond_1
     monitor-exit v0
 
@@ -3130,19 +3293,19 @@
 .method private requestPermission()Z
     .locals 5
 
-    .line 696
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 752
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-le v0, v1, :cond_0
 
-    .line 697
+    .line 753
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 698
+    .line 754
     new-instance v1, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
 
     const-string v2, "android.permission.ACCESS_FINE_LOCATION"
@@ -3153,19 +3316,19 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 700
+    .line 756
     new-instance v1, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;-><init>()V
 
-    .line 701
+    .line 757
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
 
-    new-instance v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$7;
+    new-instance v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$8;
 
-    invoke-direct {v4, p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$7;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;)V
+    invoke-direct {v4, p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$8;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;)V
 
     invoke-virtual {v1, v2, v0, v4}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;->request(Landroid/content/Context;Ljava/util/ArrayList;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$OnPermissionRequestListener;)V
 
@@ -3179,24 +3342,32 @@
 
 .method private setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 587
+    .line 595
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 588
+    .line 596
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     if-ne v1, p1, :cond_0
 
-    .line 589
+    .line 597
     monitor-exit v0
 
     return-void
 
-    .line 591
+    .line 599
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3206,15 +3377,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, ", current widi_state : "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3222,11 +3401,11 @@
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 592
+    .line 600
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 594
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$17;->$SwitchMap$com$samsung$android$galaxycontinuity$net$wifi$WidiManager$WIDI_STATE:[I
+    .line 602
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$18;->$SwitchMap$com$samsung$android$galaxycontinuity$net$wifi$WidiManager$WIDI_STATE:[I
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->ordinal()I
 
@@ -3240,13 +3419,13 @@
 
     goto :goto_0
 
-    .line 596
+    .line 604
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    .line 600
+    .line 608
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
 
@@ -3256,12 +3435,12 @@
 
     if-nez v1, :cond_2
 
-    .line 601
+    .line 609
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 603
+    .line 611
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mExpectedP2pStates:Ljava/util/ArrayList;
 
@@ -3271,17 +3450,15 @@
 
     if-eqz p1, :cond_3
 
-    .line 604
+    .line 612
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiStateLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz p1, :cond_3
 
-    .line 605
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiStateLatch:Ljava/util/concurrent/CountDownLatch;
-
+    .line 613
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 608
+    .line 616
     :cond_3
     monitor-exit v0
 
@@ -3297,19 +3474,61 @@
     throw p1
 .end method
 
+.method private showTurnOnLocationSettingDialog()V
+    .locals 5
+
+    .line 703
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string v1, "ACTION_DIALOG_RESULT"
+
+    .line 704
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 705
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->receiverForDialog:Landroid/content/BroadcastReceiver;
+
+    const-string v3, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v1, v2, v0, v3, v4}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
+    .line 707
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
+
+    move-result-object v0
+
+    const/16 v1, 0xb
+
+    const v2, 0x7f1100b0
+
+    const v3, 0x7f1100b3
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->showPermissionDialog(III)V
+
+    return-void
+.end method
+
 .method private declared-synchronized stop()Z
     .locals 1
 
     monitor-enter p0
 
-    .line 525
+    .line 530
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stopPeerDiscovery()V
 
-    .line 526
+    .line 531
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->disconnect()Z
 
-    .line 527
+    .line 532
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->deInit()Z
 
     move-result v0
@@ -3329,66 +3548,32 @@
 .end method
 
 .method private stopPeerDiscovery()V
-    .locals 5
+    .locals 3
 
-    .line 960
+    .line 1024
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 964
     :cond_0
     :try_start_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
+    const-string/jumbo v0, "stopPeerDiscovery"
 
-    move-result v0
+    .line 1029
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
-    if-eqz v0, :cond_1
+    .line 1031
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    const/4 v0, 0x1
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-array v1, v0, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    new-instance v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$12;
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCOVERY:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+    invoke-direct {v2, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$12;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
 
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-direct {p0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->containState([Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    const-string v1, "stopPeerDiscovery"
-
-    .line 965
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
-
-    .line 967
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
-
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-
-    new-instance v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$11;
-
-    invoke-direct {v4, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$11;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
-
-    invoke-virtual {v1, v2, v4}, Landroid/net/wifi/p2p/WifiP2pManager;->stopPeerDiscovery(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
-
-    const-wide/16 v1, 0x1e
-
-    new-array v0, v0, [Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
-
-    .line 981
-    sget-object v4, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_STOP_DISCOVERY:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
-
-    aput-object v4, v0, v3
-
-    invoke-direct {p0, v1, v2, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+    invoke-virtual {v0, v1, v2}, Landroid/net/wifi/p2p/WifiP2pManager;->stopPeerDiscovery(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3397,10 +3582,9 @@
     :catch_0
     move-exception v0
 
-    .line 984
+    .line 1048
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    :cond_1
     :goto_0
     return-void
 .end method
@@ -3408,7 +3592,7 @@
 .method private turnOffHotspot()Z
     .locals 5
 
-    .line 483
+    .line 488
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
 
     move-result-object v0
@@ -3444,7 +3628,7 @@
     :goto_0
     move v0, v2
 
-    .line 484
+    .line 489
     :goto_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3453,6 +3637,8 @@
     const-string v4, "Transfer hotspot is "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     if-eqz v0, :cond_2
 
@@ -3466,6 +3652,8 @@
     :goto_2
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
@@ -3474,7 +3662,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 486
+    .line 491
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/HotspotManager;
 
     move-result-object v0
@@ -3492,21 +3680,69 @@
     return v1
 .end method
 
+.method private turnOnLocationSetting()V
+    .locals 3
+
+    .line 711
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "location_mode"
+
+    const/4 v2, 0x3
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    const-wide/16 v0, 0x64
+
+    .line 714
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    .line 716
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    :goto_0
+    return-void
+.end method
+
 .method private varargs waitState(J[Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeoutSeconds",
+            "expectedP2pStates"
+        }
+    .end annotation
 
-    .line 624
+    .line 632
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 625
+    .line 633
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mExpectedP2pStates:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    .line 626
+    .line 634
     array-length v1, p3
 
     const/4 v2, 0x0
@@ -3518,18 +3754,24 @@
 
     aget-object v4, p3, v3
 
-    .line 627
+    .line 635
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v5, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     const-string v6, " wait state: "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3537,7 +3779,7 @@
 
     invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 628
+    .line 636
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mExpectedP2pStates:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -3546,7 +3788,7 @@
 
     goto :goto_0
 
-    .line 631
+    .line 639
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiStateList:Ljava/util/ArrayList;
 
@@ -3569,7 +3811,7 @@
 
     check-cast v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 632
+    .line 640
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mExpectedP2pStates:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -3578,12 +3820,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 633
+    .line 641
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mExpectedP2pStates:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
-    .line 634
+    .line 642
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3592,7 +3834,11 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3600,7 +3846,7 @@
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 635
+    .line 643
     monitor-exit v0
 
     return v4
@@ -3608,17 +3854,17 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 645
+    .line 653
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiStateLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 646
+    .line 654
     new-instance v1, Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {v1, v4}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiStateLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 647
+    .line 655
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3629,22 +3875,26 @@
 
     if-nez v0, :cond_3
 
-    .line 651
+    .line 659
     :try_start_1
     invoke-virtual {v1}, Ljava/util/concurrent/CountDownLatch;->await()V
 
-    .line 652
+    .line 660
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p2, "state changed : "
+    const-string/jumbo p2, "state changed : "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3654,7 +3904,7 @@
 
     return v4
 
-    .line 655
+    .line 663
     :cond_3
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -3664,18 +3914,22 @@
 
     if-eqz p1, :cond_4
 
-    .line 656
+    .line 664
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p2, "state changed : "
+    const-string/jumbo p2, "state changed : "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3685,7 +3939,7 @@
 
     return v4
 
-    .line 659
+    .line 667
     :cond_4
     array-length p1, p3
 
@@ -3696,18 +3950,22 @@
 
     aget-object v0, p3, p2
 
-    .line 660
+    .line 668
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "timeout: "
+    const-string/jumbo v3, "timeout: "
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3727,10 +3985,10 @@
 
     const-string p2, "interrupted exception"
 
-    .line 666
+    .line 674
     invoke-static {p2, p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 667
+    .line 675
     array-length p1, p3
 
     move p2, v2
@@ -3740,7 +3998,7 @@
 
     aget-object v0, p3, p2
 
-    .line 668
+    .line 676
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3749,9 +4007,13 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3767,7 +4029,7 @@
     :catchall_0
     move-exception p1
 
-    .line 647
+    .line 655
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -3780,15 +4042,23 @@
 # virtual methods
 .method public addWiDiListiner(Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "widiListener"
+        }
+    .end annotation
 
-    .line 196
+    .line 200
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     if-eqz p1, :cond_0
 
-    .line 197
+    .line 201
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
 
@@ -3798,12 +4068,12 @@
 
     if-nez v1, :cond_0
 
-    .line 198
+    .line 202
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 199
+    .line 203
     :cond_0
     monitor-exit v0
 
@@ -3829,12 +4099,12 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 358
+    .line 363
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getWFDMacAddress()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 359
+    .line 364
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -3843,7 +4113,7 @@
 
     const-wide/16 v1, 0x64
 
-    .line 361
+    .line 366
     :try_start_0
     invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -3854,7 +4124,7 @@
     :catch_0
     move-exception v1
 
-    .line 363
+    .line 368
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_1
@@ -3862,7 +4132,7 @@
 
     goto :goto_0
 
-    .line 368
+    .line 373
     :cond_0
     invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -3879,7 +4149,7 @@
 .method public getLastErrorReason()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
     .locals 1
 
-    .line 185
+    .line 189
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mReason:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     return-object v0
@@ -3890,12 +4160,12 @@
 
     const-string v0, ""
 
-    .line 376
+    .line 381
     :try_start_0
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mThisDeviceAddress:Ljava/lang/String;
 
-    .line 377
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 382
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1d
 
@@ -3903,12 +4173,12 @@
 
     if-lt v1, v2, :cond_1
 
-    .line 378
+    .line 383
     new-instance v1, Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {v1, v3}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    .line 379
+    .line 384
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v2
@@ -3923,12 +4193,12 @@
 
     const-string v1, "No have permission : android.permission.ACCESS_FINE_LOCATION"
 
-    .line 380
+    .line 385
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     return-object v0
 
-    .line 383
+    .line 388
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
@@ -3942,7 +4212,7 @@
 
     const-wide/16 v2, 0x3
 
-    .line 395
+    .line 400
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v1, v2, v3, v0}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
@@ -3953,12 +4223,12 @@
 
     const-string v0, "latch timeout"
 
-    .line 396
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    .line 401
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 399
+    .line 404
     :cond_1
     invoke-static {}, Ljava/net/NetworkInterface;->getNetworkInterfaces()Ljava/util/Enumeration;
 
@@ -3968,7 +4238,7 @@
 
     move-result-object v0
 
-    .line 400
+    .line 405
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -3986,7 +4256,7 @@
 
     check-cast v1, Ljava/net/NetworkInterface;
 
-    .line 402
+    .line 407
     invoke-virtual {v1}, Ljava/net/NetworkInterface;->getName()Ljava/lang/String;
 
     move-result-object v2
@@ -3999,7 +4269,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 403
+    .line 408
     invoke-virtual {v1}, Ljava/net/NetworkInterface;->getHardwareAddress()[B
 
     move-result-object v0
@@ -4010,7 +4280,7 @@
 
     return-object v0
 
-    .line 407
+    .line 412
     :cond_3
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -4020,7 +4290,7 @@
 
     move v4, v2
 
-    .line 408
+    .line 413
     :goto_0
     array-length v5, v0
 
@@ -4030,7 +4300,7 @@
 
     new-array v6, v3, [Ljava/lang/Object;
 
-    .line 409
+    .line 414
     aget-byte v7, v0, v4
 
     invoke-static {v7}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -4049,7 +4319,7 @@
 
     goto :goto_0
 
-    .line 412
+    .line 417
     :cond_4
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
 
@@ -4057,7 +4327,7 @@
 
     if-lez v0, :cond_5
 
-    .line 413
+    .line 418
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
 
     move-result v0
@@ -4066,7 +4336,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
 
-    .line 416
+    .line 421
     :cond_5
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4079,10 +4349,10 @@
     :catch_0
     move-exception v0
 
-    .line 422
+    .line 427
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 424
+    .line 429
     :cond_6
     :goto_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mThisDeviceAddress:Ljava/lang/String;
@@ -4093,7 +4363,7 @@
 .method public getWifiDirectIPAddress()Ljava/lang/String;
     .locals 4
 
-    .line 429
+    .line 434
     :try_start_0
     invoke-static {}, Ljava/net/NetworkInterface;->getNetworkInterfaces()Ljava/util/Enumeration;
 
@@ -4103,7 +4373,7 @@
 
     move-result-object v0
 
-    .line 430
+    .line 435
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -4121,7 +4391,7 @@
 
     check-cast v1, Ljava/net/NetworkInterface;
 
-    .line 431
+    .line 436
     invoke-virtual {v1}, Ljava/net/NetworkInterface;->getName()Ljava/lang/String;
 
     move-result-object v2
@@ -4134,12 +4404,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 432
+    .line 437
     invoke-virtual {v1}, Ljava/net/NetworkInterface;->getInetAddresses()Ljava/util/Enumeration;
 
     move-result-object v1
 
-    .line 433
+    .line 438
     :cond_1
     invoke-interface {v1}, Ljava/util/Enumeration;->hasMoreElements()Z
 
@@ -4147,19 +4417,19 @@
 
     if-eqz v2, :cond_0
 
-    .line 434
+    .line 439
     invoke-interface {v1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/net/InetAddress;
 
-    .line 435
+    .line 440
     instance-of v3, v2, Ljava/net/Inet4Address;
 
     if-eqz v3, :cond_1
 
-    .line 436
+    .line 441
     invoke-virtual {v2}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
 
     move-result-object v0
@@ -4171,16 +4441,16 @@
     :catch_0
     move-exception v0
 
-    .line 442
+    .line 447
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_2
     const-string v0, "Cannot find \'p2p-wlan0\' interface"
 
-    .line 445
+    .line 450
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 446
+    .line 451
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pInfo:Landroid/net/wifi/p2p/WifiP2pInfo;
 
     iget-object v0, v0, Landroid/net/wifi/p2p/WifiP2pInfo;->groupOwnerAddress:Ljava/net/InetAddress;
@@ -4197,11 +4467,11 @@
 
     const/4 v0, 0x0
 
-    .line 836
+    .line 896
     :try_start_0
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsAlreadyConnected:Z
 
-    .line 837
+    .line 897
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     move-result-object v1
@@ -4212,14 +4482,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 838
+    .line 898
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsAlreadyConnected:Z
 
     return v0
 
-    .line 840
+    .line 900
     :cond_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1e
 
@@ -4227,25 +4497,25 @@
 
     if-le v1, v2, :cond_1
 
-    .line 841
+    .line 901
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {v0, v3}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    .line 842
+    .line 902
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$8;
+    new-instance v3, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$9;
 
-    invoke-direct {v3, p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$8;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/util/concurrent/CountDownLatch;)V
+    invoke-direct {v3, p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$9;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/util/concurrent/CountDownLatch;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/net/wifi/p2p/WifiP2pManager;->requestNetworkInfo(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$NetworkInfoListener;)V
 
     const-wide/16 v1, 0x2
 
-    .line 849
+    .line 909
     sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0, v1, v2, v3}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
@@ -4254,14 +4524,14 @@
 
     if-nez v0, :cond_3
 
-    const-string v0, "timeout checking"
+    const-string/jumbo v0, "timeout checking"
 
-    .line 850
+    .line 910
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 853
+    .line 913
     :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -4275,7 +4545,7 @@
 
     check-cast v1, Landroid/net/ConnectivityManager;
 
-    .line 858
+    .line 918
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getAllNetworks()[Landroid/net/Network;
 
     move-result-object v2
@@ -4287,7 +4557,7 @@
 
     aget-object v5, v2, v0
 
-    .line 859
+    .line 919
     invoke-virtual {v1, v5}, Landroid/net/ConnectivityManager;->getNetworkInfo(Landroid/net/Network;)Landroid/net/NetworkInfo;
 
     move-result-object v6
@@ -4300,7 +4570,7 @@
 
     if-ne v6, v7, :cond_2
 
-    .line 860
+    .line 920
     invoke-virtual {v1, v5}, Landroid/net/ConnectivityManager;->getNetworkInfo(Landroid/net/Network;)Landroid/net/NetworkInfo;
 
     move-result-object v5
@@ -4313,10 +4583,10 @@
 
     const-string v5, "already widi connected"
 
-    .line 861
+    .line 921
     invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 862
+    .line 922
     iput-boolean v3, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsAlreadyConnected:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -4329,10 +4599,10 @@
     :catch_0
     move-exception v0
 
-    .line 867
+    .line 927
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 869
+    .line 929
     :cond_3
     :goto_1
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsAlreadyConnected:Z
@@ -4343,7 +4613,7 @@
 .method public isConnected()Z
     .locals 1
 
-    .line 557
+    .line 565
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
@@ -4368,9 +4638,32 @@
 .end method
 
 .method public isConnecting()Z
-    .locals 1
+    .locals 2
 
-    .line 544
+    .line 549
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Current status : "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiState:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
+    .line 550
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FAILED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
@@ -4381,7 +4674,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_PREPARE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 545
+    .line 551
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4390,7 +4683,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 546
+    .line 552
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4399,7 +4692,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_INITIALIZED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 547
+    .line 553
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4408,7 +4701,16 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_LISTEN:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 548
+    .line 554
+    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_LISTEN_FAILURE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+
+    .line 555
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4417,7 +4719,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_DISCOVERY:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 549
+    .line 556
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4426,7 +4728,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 550
+    .line 557
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4435,7 +4737,16 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER_SUCCESS:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 551
+    .line 558
+    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_FINDING_PEER_FAILURE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
+
+    .line 559
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4444,7 +4755,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECTING:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 552
+    .line 560
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4453,7 +4764,7 @@
 
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_CONNECT_USER_CANCELED:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
-    .line 553
+    .line 561
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->isState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)Z
 
     move-result v0
@@ -4476,17 +4787,83 @@
     return v0
 .end method
 
+.method public onWidiConnectionFailed(Ljava/lang/String;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
+
+    .line 228
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 229
+    :try_start_0
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;
+
+    .line 230
+    invoke-interface {v2, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;->onWidiConnectionFailed(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 231
+    :cond_0
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
 .method public removeWiDiListner(Lcom/samsung/android/galaxycontinuity/net/wifi/IWidiListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "widiListener"
+        }
+    .end annotation
 
-    .line 203
+    .line 207
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->listenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     if-eqz p1, :cond_0
 
-    .line 204
+    .line 208
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
 
@@ -4496,12 +4873,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 205
+    .line 209
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWidiListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 206
+    .line 210
     :cond_0
     monitor-exit v0
 
@@ -4522,10 +4899,10 @@
 
     const/4 v0, 0x1
 
-    .line 189
+    .line 193
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsSelfConnection:Z
 
-    .line 190
+    .line 194
     sget-object v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;->WIDI_STATE_PREPARE:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;
 
     invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->setState(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$WIDI_STATE;)V
@@ -4535,8 +4912,16 @@
 
 .method public setReason(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
-    .line 181
+    .line 185
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mReason:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$ERROR_REASON;
 
     return-void
@@ -4545,7 +4930,7 @@
 .method public startMemberAsync()V
     .locals 1
 
-    .line 275
+    .line 280
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$3;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$3;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
@@ -4557,8 +4942,16 @@
 
 .method public startOwnerAsync(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "targetDeviceAddress"
+        }
+    .end annotation
 
-    .line 255
+    .line 260
     new-instance v0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$2;
 
     invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$2;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;Ljava/lang/String;)V
@@ -4570,13 +4963,21 @@
 
 .method public stopAsync(Ljava/lang/Runnable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "disconnectedRunnable"
+        }
+    .end annotation
 
-    .line 314
+    .line 319
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->commandLock:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 315
+    .line 320
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiHandler:Landroid/os/Handler;
 
@@ -4588,50 +4989,50 @@
 
     if-eqz v0, :cond_1
 
-    .line 316
+    .line 321
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsSelfConnection:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "stop Async"
+    const-string/jumbo v0, "stop Async"
 
-    .line 317
+    .line 322
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 318
+    .line 323
     iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsSelfConnection:Z
 
-    .line 319
+    .line 324
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mWiDiHandler:Landroid/os/Handler;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 320
+    .line 325
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mhtWiDiThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->interrupt()V
 
     goto :goto_0
 
-    .line 322
+    .line 327
     :cond_0
     monitor-exit p1
 
     return-void
 
-    .line 325
+    .line 330
     :cond_1
     iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->mIsSelfConnection:Z
 
-    .line 327
+    .line 332
     :goto_0
     monitor-exit p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 329
+    .line 334
     new-instance p1, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$4;
 
     invoke-direct {p1, p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$4;-><init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
@@ -4640,7 +5041,7 @@
 
     const-string p1, "Request WiDi deinit"
 
-    .line 353
+    .line 358
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
     return-void
@@ -4648,7 +5049,7 @@
     :catchall_0
     move-exception v0
 
-    .line 327
+    .line 332
     :try_start_1
     monitor-exit p1
     :try_end_1

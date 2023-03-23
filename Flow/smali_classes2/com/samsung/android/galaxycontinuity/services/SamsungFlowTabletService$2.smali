@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 123
+    .line 120
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$2;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public requestEndSession()V
     .locals 1
 
-    .line 126
+    .line 123
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$2;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->access$000(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;)Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
@@ -47,7 +55,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->endSession()V
 
-    .line 127
+    .line 124
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$2;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->access$000(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;)Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;

@@ -2,6 +2,9 @@
 .super Ljava/lang/Object;
 .source "BottomNavigationView.java"
 
+# interfaces
+.implements Lcom/google/android/material/navigation/NavigationBarView$OnItemSelectedListener;
+
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -13,7 +16,5 @@
     name = "OnNavigationItemSelectedListener"
 .end annotation
 
-
-# virtual methods
-.method public abstract onNavigationItemSelected(Landroid/view/MenuItem;)Z
-.end method
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation

@@ -49,7 +49,7 @@
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "source == null"
+    const-string/jumbo p2, "source == null"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -258,7 +258,7 @@
     :cond_3
     new-instance p1, Ljava/io/EOFException;
 
-    const-string p2, "source exhausted prematurely"
+    const-string/jumbo p2, "source exhausted prematurely"
 
     invoke-direct {p1, p2}, Ljava/io/EOFException;-><init>(Ljava/lang/String;)V
 
@@ -325,9 +325,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -336,7 +340,7 @@
     throw p1
 .end method
 
-.method public refill()Z
+.method public final refill()Z
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {

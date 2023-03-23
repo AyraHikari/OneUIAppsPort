@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 116
+    .line 121
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +48,12 @@
 
     move-object/from16 v1, p0
 
-    const-string v0, "start video Play"
+    const-string/jumbo v0, "start video Play"
 
-    .line 119
+    .line 124
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 126
+    .line 131
     :try_start_0
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
@@ -57,7 +65,7 @@
 
     move-result-object v0
 
-    .line 127
+    .line 132
     new-instance v2, Ljava/io/DataInputStream;
 
     invoke-direct {v2, v0}, Ljava/io/DataInputStream;-><init>(Ljava/io/InputStream;)V
@@ -68,7 +76,7 @@
 
     move v4, v3
 
-    .line 137
+    .line 141
     :goto_0
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
@@ -89,7 +97,7 @@
     :goto_1
     if-ge v6, v0, :cond_0
 
-    .line 145
+    .line 149
     :try_start_1
     invoke-virtual {v2, v5, v6, v7}, Ljava/io/InputStream;->read([BII)I
 
@@ -110,12 +118,12 @@
 
     move-object v2, v0
 
-    .line 153
+    .line 157
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     goto/16 :goto_9
 
-    .line 158
+    .line 162
     :cond_0
     invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->byteArrayToLeInt([B)I
 
@@ -125,7 +133,7 @@
 
     if-gez v5, :cond_1
 
-    .line 161
+    .line 165
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -134,7 +142,11 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -142,7 +154,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 163
+    .line 167
     :try_start_2
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
@@ -159,16 +171,16 @@
     :catch_1
     move-exception v0
 
-    .line 165
+    .line 169
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     goto/16 :goto_9
 
-    .line 170
+    .line 174
     :cond_1
     new-array v0, v5, [B
 
-    .line 173
+    .line 177
     :try_start_3
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
@@ -187,7 +199,7 @@
     :goto_2
     if-ge v7, v5, :cond_2
 
-    .line 179
+    .line 183
     :try_start_4
     invoke-virtual {v2, v0, v7, v8}, Ljava/io/InputStream;->read([BII)I
 
@@ -211,7 +223,7 @@
     :cond_2
     if-eqz v6, :cond_3
 
-    .line 186
+    .line 190
     invoke-virtual {v6, v0}, Ljavax/crypto/Cipher;->update([B)[B
 
     move-result-object v0
@@ -224,15 +236,15 @@
     :try_start_5
     new-array v7, v6, [B
 
-    .line 191
+    .line 195
     invoke-static {v0, v3, v7, v3, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 192
+    .line 196
     invoke-static {v7}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->byteArrayToLeLong([B)J
 
     move-result-wide v7
 
-    .line 194
+    .line 198
     iget-object v9, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$200(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)Z
@@ -253,26 +265,26 @@
 
     goto/16 :goto_0
 
-    .line 198
+    .line 202
     :cond_4
     :try_start_6
     iget-object v9, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v9, v10}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$202(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;Z)Z
 
-    .line 201
+    .line 205
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;
 
     move-result-object v9
 
     invoke-virtual {v9, v10}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->setIsMirroringStarted(Z)V
 
-    .line 202
+    .line 206
     invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/manager/ExportedMirroringStateProvider;->notifyMirroringState(Z)V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
 
-    .line 206
+    .line 210
     :cond_5
     :try_start_7
     iget-object v9, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
@@ -283,7 +295,7 @@
 
     iget-wide v13, v9, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;->mFirstAudioTimeStamp:J
 
-    .line 208
+    .line 212
     iget-object v9, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
@@ -307,7 +319,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 209
+    .line 213
     :try_start_9
     iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
@@ -317,7 +329,7 @@
 
     iput-wide v7, v3, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;->mFirstVideoTimeStampMs:J
 
-    .line 210
+    .line 214
     iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
@@ -332,7 +344,7 @@
 
     iput-wide v10, v3, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;->mFirstVideoDiff:J
 
-    .line 211
+    .line 215
     iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
@@ -361,14 +373,14 @@
 
     if-eqz v3, :cond_7
 
-    .line 215
+    .line 219
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v9
 
     sub-long/2addr v9, v7
 
-    .line 217
+    .line 221
     iget-object v11, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v11}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$400(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)J
@@ -379,12 +391,12 @@
 
     if-gez v11, :cond_7
 
-    .line 218
+    .line 222
     iget-object v11, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v11, v9, v10}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$402(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;J)J
 
-    .line 219
+    .line 223
     iget-object v9, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
@@ -441,7 +453,7 @@
 
     if-lt v10, v9, :cond_8
 
-    .line 224
+    .line 228
     :try_start_a
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -451,11 +463,17 @@
 
     invoke-virtual {v9, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v9
+
     invoke-virtual {v9, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v9
 
     const-string v11, " bytes"
 
     invoke-virtual {v9, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
 
     invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -486,7 +504,7 @@
 
     add-int/lit8 v5, v5, -0x8
 
-    .line 230
+    .line 234
     :try_start_b
     new-array v9, v5, [B
     :try_end_b
@@ -494,7 +512,7 @@
 
     const/4 v11, 0x0
 
-    .line 231
+    .line 235
     :try_start_c
     invoke-static {v0, v6, v9, v11, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -504,7 +522,7 @@
 
     if-nez v0, :cond_9
 
-    .line 234
+    .line 238
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-virtual {v0, v9, v5, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->decodeData([BJ)V
@@ -514,7 +532,7 @@
     :cond_9
     if-nez v3, :cond_a
 
-    .line 236
+    .line 240
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -525,13 +543,11 @@
 
     goto :goto_8
 
-    .line 238
+    .line 242
     :cond_a
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
-    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
-
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabTimeStampRepository;
 
     move-result-object v3
 
@@ -591,7 +607,7 @@
 
     move v10, v4
 
-    .line 241
+    .line 245
     :goto_7
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
@@ -604,10 +620,10 @@
     :goto_9
     const-string v0, "VideoPlay thread is finished!!!"
 
-    .line 245
+    .line 249
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 247
+    .line 251
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/TabVideoEngine;->stopReadFrameBuffer()V
@@ -617,7 +633,7 @@
     :catch_9
     move-exception v0
 
-    .line 129
+    .line 134
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return-void

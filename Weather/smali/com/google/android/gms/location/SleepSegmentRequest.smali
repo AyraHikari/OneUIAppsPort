@@ -1,11 +1,9 @@
 .class public Lcom/google/android/gms/location/SleepSegmentRequest;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
-.source "com.google.android.gms:play-services-location@@18.0.0"
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # static fields
-.field public static final CLASSIFY_EVENTS_ONLY:I = 0x2
-
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -16,87 +14,48 @@
     .end annotation
 .end field
 
-.field public static final SEGMENT_AND_CLASSIFY_EVENTS:I = 0x0
-
-.field public static final SEGMENT_EVENTS_ONLY:I = 0x1
-
 
 # instance fields
-.field private final zza:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/location/zzbx;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final h:Ljava/util/List;
 
-.field private final zzb:I
+.field public final i:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/location/zzbw;
+    new-instance v0, Le5/k0;
 
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzbw;-><init>()V
+    invoke-direct {v0}, Le5/k0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/location/SleepSegmentRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public constructor <init>(I)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0, p1}, Lcom/google/android/gms/location/SleepSegmentRequest;-><init>(Ljava/util/List;I)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Ljava/util/List;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/location/zzbx;",
-            ">;I)V"
-        }
-    .end annotation
 
-    .line 2
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zza:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->h:Ljava/util/List;
 
-    iput p2, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zzb:I
+    iput p2, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->i:I
 
     return-void
-.end method
-
-.method public static getDefaultSleepSegmentRequest()Lcom/google/android/gms/location/SleepSegmentRequest;
-    .locals 3
-
-    new-instance v0, Lcom/google/android/gms/location/SleepSegmentRequest;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    .line 1
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/location/SleepSegmentRequest;-><init>(Ljava/util/List;I)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
+.method public D()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->i:I
+
+    return v0
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
@@ -120,20 +79,20 @@
     :cond_1
     check-cast p1, Lcom/google/android/gms/location/SleepSegmentRequest;
 
-    iget-object v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zza:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->h:Ljava/util/List;
 
     .line 3
-    iget-object v3, p1, Lcom/google/android/gms/location/SleepSegmentRequest;->zza:Ljava/util/List;
+    iget-object v3, p1, Lcom/google/android/gms/location/SleepSegmentRequest;->h:Ljava/util/List;
 
-    invoke-static {v1, v3}, Lcom/google/android/gms/common/internal/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lq4/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    iget v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zzb:I
+    iget v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->i:I
 
-    iget p1, p1, Lcom/google/android/gms/location/SleepSegmentRequest;->zzb:I
+    iget p1, p1, Lcom/google/android/gms/location/SleepSegmentRequest;->i:I
 
     if-ne v1, p1, :cond_2
 
@@ -143,14 +102,6 @@
     return v2
 .end method
 
-.method public getRequestedDataType()I
-    .locals 1
-
-    iget v0, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zzb:I
-
-    return v0
-.end method
-
 .method public hashCode()I
     .locals 3
 
@@ -158,15 +109,14 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zza:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->h:Ljava/util/List;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zzb:I
+    iget v1, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->i:I
 
-    .line 1
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -175,7 +125,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/Objects;->hashCode([Ljava/lang/Object;)I
+    invoke-static {v0}, Lq4/j;->b([Ljava/lang/Object;)I
 
     move-result v0
 
@@ -186,34 +136,34 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lq4/k;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lr4/b;->a(Landroid/os/Parcel;)I
 
     move-result p2
 
-    iget-object v0, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->zza:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/location/SleepSegmentRequest;->h:Ljava/util/List;
 
     const/4 v1, 0x1
 
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedList(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, v0, v2}, Lr4/b;->r(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/location/SleepSegmentRequest;->getRequestedDataType()I
+    invoke-virtual {p0}, Lcom/google/android/gms/location/SleepSegmentRequest;->D()I
 
     move-result v0
 
     const/4 v1, 0x2
 
     .line 5
-    invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v0}, Lr4/b;->h(Landroid/os/Parcel;II)V
 
     .line 6
-    invoke-static {p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Lr4/b;->b(Landroid/os/Parcel;I)V
 
     return-void
 .end method

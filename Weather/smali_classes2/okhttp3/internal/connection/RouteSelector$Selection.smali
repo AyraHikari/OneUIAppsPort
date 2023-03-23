@@ -75,9 +75,8 @@
 
     const-string v0, "routes"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 178
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
@@ -98,7 +97,6 @@
         }
     .end annotation
 
-    .line 178
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
 
     return-object v0
@@ -107,7 +105,6 @@
 .method public final hasNext()Z
     .locals 2
 
-    .line 181
     iget v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->nextRouteIndex:I
 
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
@@ -132,14 +129,14 @@
 .method public final next()Lokhttp3/Route;
     .locals 3
 
-    .line 184
+    .line 1
     invoke-virtual {p0}, Lokhttp3/internal/connection/RouteSelector$Selection;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 185
+    .line 2
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
 
     iget v1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->nextRouteIndex:I
@@ -156,13 +153,11 @@
 
     return-object v0
 
-    .line 184
+    .line 3
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 .end method

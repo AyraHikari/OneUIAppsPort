@@ -1,4 +1,4 @@
-.class final Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$6;
+.class Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$6;
 .super Landroid/util/IntProperty;
 .source "SeslRecyclerViewFastScroller.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -26,7 +26,7 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1736
+    .line 1781
     invoke-direct {p0, p1}, Landroid/util/IntProperty;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -37,7 +37,7 @@
 .method public get(Landroid/view/View;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1744
+    .line 1789
     invoke-virtual {p1}, Landroid/view/View;->getBottom()I
 
     move-result p1
@@ -52,7 +52,7 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1736
+    .line 1781
     check-cast p1, Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$6;->get(Landroid/view/View;)Ljava/lang/Integer;
@@ -65,7 +65,7 @@
 .method public setValue(Landroid/view/View;I)V
     .locals 0
 
-    .line 1739
+    .line 1784
     invoke-virtual {p1, p2}, Landroid/view/View;->setBottom(I)V
 
     return-void
@@ -74,7 +74,7 @@
 .method public bridge synthetic setValue(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1736
+    .line 1781
     check-cast p1, Landroid/view/View;
 
     invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/SeslRecyclerViewFastScroller$6;->setValue(Landroid/view/View;I)V

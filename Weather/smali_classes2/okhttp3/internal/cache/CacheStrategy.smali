@@ -56,7 +56,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/internal/cache/CacheStrategy$Companion;
@@ -73,7 +73,6 @@
 .method public constructor <init>(Lokhttp3/Request;Lokhttp3/Response;)V
     .locals 0
 
-    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/internal/cache/CacheStrategy;->networkRequest:Lokhttp3/Request;
@@ -88,7 +87,6 @@
 .method public final getCacheResponse()Lokhttp3/Response;
     .locals 1
 
-    .line 49
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy;->cacheResponse:Lokhttp3/Response;
 
     return-object v0
@@ -97,7 +95,6 @@
 .method public final getNetworkRequest()Lokhttp3/Request;
     .locals 1
 
-    .line 47
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy;->networkRequest:Lokhttp3/Request;
 
     return-object v0

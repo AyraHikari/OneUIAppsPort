@@ -129,7 +129,7 @@
     return-object p0
 
     :pswitch_0
-    const-string p0, "unknown_psk_identity"
+    const-string/jumbo p0, "unknown_psk_identity"
 
     return-object p0
 
@@ -144,7 +144,7 @@
     return-object p0
 
     :pswitch_3
-    const-string p0, "unrecognized_name"
+    const-string/jumbo p0, "unrecognized_name"
 
     return-object p0
 
@@ -154,7 +154,7 @@
     return-object p0
 
     :pswitch_5
-    const-string p0, "unsupported_extension"
+    const-string/jumbo p0, "unsupported_extension"
 
     return-object p0
 
@@ -174,7 +174,7 @@
     return-object p0
 
     :pswitch_9
-    const-string p0, "unknown_ca"
+    const-string/jumbo p0, "unknown_ca"
 
     return-object p0
 
@@ -199,7 +199,7 @@
     return-object p0
 
     :pswitch_e
-    const-string p0, "unsupported_certificate"
+    const-string/jumbo p0, "unsupported_certificate"
 
     return-object p0
 
@@ -249,7 +249,7 @@
     return-object p0
 
     :cond_3
-    const-string p0, "user_canceled"
+    const-string/jumbo p0, "user_canceled"
 
     return-object p0
 
@@ -274,7 +274,7 @@
     return-object p0
 
     :cond_8
-    const-string p0, "unexpected_message"
+    const-string/jumbo p0, "unexpected_message"
 
     return-object p0
 
@@ -282,8 +282,6 @@
     const-string p0, "close_notify"
 
     return-object p0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x14
@@ -333,17 +331,25 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "("
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p0, ")"
+    move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ")"
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 

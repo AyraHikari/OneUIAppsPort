@@ -29,13 +29,21 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
-    .line 284
+    .line 280
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const v0, 0x1020014
 
-    .line 285
+    .line 281
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -46,7 +54,7 @@
 
     const v0, 0x1020015
 
-    .line 286
+    .line 282
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -57,7 +65,7 @@
 
     const v0, 0x1020007
 
-    .line 287
+    .line 283
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -68,7 +76,7 @@
 
     const v0, 0x1020008
 
-    .line 288
+    .line 284
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -77,7 +85,7 @@
 
     iput-object v0, p0, Landroidx/appcompat/widget/SuggestionsAdapter$ChildViewCache;->mIcon2:Landroid/widget/ImageView;
 
-    .line 289
+    .line 285
     sget v0, Landroidx/appcompat/R$id;->edit_query:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

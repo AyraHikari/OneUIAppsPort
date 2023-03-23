@@ -4,12 +4,6 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/airbnb/lottie/model/animatable/AnimatableColorValue$Factory;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/airbnb/lottie/model/animatable/BaseAnimatableValue<",
@@ -21,31 +15,20 @@
 
 
 # direct methods
-.method private constructor <init>(Ljava/util/List;Ljava/lang/Integer;)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcom/airbnb/lottie/animation/Keyframe<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
             "Ljava/lang/Integer;",
-            ">;>;",
-            "Ljava/lang/Integer;",
-            ")V"
+            ">;>;)V"
         }
     .end annotation
 
-    .line 16
-    invoke-direct {p0, p1, p2}, Lcom/airbnb/lottie/model/animatable/BaseAnimatableValue;-><init>(Ljava/util/List;Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method synthetic constructor <init>(Ljava/util/List;Ljava/lang/Integer;Lcom/airbnb/lottie/model/animatable/AnimatableColorValue$1;)V
-    .locals 0
-
-    .line 14
-    invoke-direct {p0, p1, p2}, Lcom/airbnb/lottie/model/animatable/AnimatableColorValue;-><init>(Ljava/util/List;Ljava/lang/Integer;)V
+    .line 11
+    invoke-direct {p0, p1}, Lcom/airbnb/lottie/model/animatable/BaseAnimatableValue;-><init>(Ljava/util/List;)V
 
     return-void
 .end method
@@ -64,24 +47,7 @@
         }
     .end annotation
 
-    .line 20
-    invoke-virtual {p0}, Lcom/airbnb/lottie/model/animatable/AnimatableColorValue;->hasAnimation()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 21
-    new-instance v0, Lcom/airbnb/lottie/animation/keyframe/StaticKeyframeAnimation;
-
-    iget-object v1, p0, Lcom/airbnb/lottie/model/animatable/AnimatableColorValue;->initialValue:Ljava/lang/Object;
-
-    invoke-direct {v0, v1}, Lcom/airbnb/lottie/animation/keyframe/StaticKeyframeAnimation;-><init>(Ljava/lang/Object;)V
-
-    return-object v0
-
-    .line 23
-    :cond_0
+    .line 15
     new-instance v0, Lcom/airbnb/lottie/animation/keyframe/ColorKeyframeAnimation;
 
     iget-object v1, p0, Lcom/airbnb/lottie/model/animatable/AnimatableColorValue;->keyframes:Ljava/util/List;
@@ -91,27 +57,33 @@
     return-object v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public bridge synthetic getKeyframes()Ljava/util/List;
+    .locals 1
 
-    .line 27
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 9
+    invoke-super {p0}, Lcom/airbnb/lottie/model/animatable/BaseAnimatableValue;->getKeyframes()Ljava/util/List;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "AnimatableColorValue{initialValue="
+    return-object v0
+.end method
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public bridge synthetic isStatic()Z
+    .locals 1
 
-    iget-object v1, p0, Lcom/airbnb/lottie/model/animatable/AnimatableColorValue;->initialValue:Ljava/lang/Object;
+    .line 9
+    invoke-super {p0}, Lcom/airbnb/lottie/model/animatable/BaseAnimatableValue;->isStatic()Z
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result v0
 
-    const/16 v1, 0x7d
+    return v0
+.end method
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+.method public bridge synthetic toString()Ljava/lang/String;
+    .locals 1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 9
+    invoke-super {p0}, Lcom/airbnb/lottie/model/animatable/BaseAnimatableValue;->toString()Ljava/lang/String;
 
     move-result-object v0
 

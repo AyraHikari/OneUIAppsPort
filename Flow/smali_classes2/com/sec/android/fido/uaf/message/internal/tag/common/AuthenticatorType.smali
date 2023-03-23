@@ -27,9 +27,6 @@
 
     const/4 v0, 0x0
 
-    .line 49
-    sput-short v0, Lcom/sec/android/fido/uaf/message/internal/tag/common/AuthenticatorType;->sAuthenticatorType:S
-
     or-int/lit8 v0, v0, 0x1
 
     int-to-short v0, v0

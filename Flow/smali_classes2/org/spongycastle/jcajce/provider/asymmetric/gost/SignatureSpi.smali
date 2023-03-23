@@ -94,13 +94,15 @@
     if-eqz v0, :cond_1
 
     .line 110
-    iget-object v2, p0, Lorg/spongycastle/jcajce/provider/asymmetric/gost/SignatureSpi;->signer:Lorg/spongycastle/crypto/DSA;
+    iget-object v0, p0, Lorg/spongycastle/jcajce/provider/asymmetric/gost/SignatureSpi;->signer:Lorg/spongycastle/crypto/DSA;
 
-    new-instance v3, Lorg/spongycastle/crypto/params/ParametersWithRandom;
+    new-instance v2, Lorg/spongycastle/crypto/params/ParametersWithRandom;
 
-    invoke-direct {v3, p1, v0}, Lorg/spongycastle/crypto/params/ParametersWithRandom;-><init>(Lorg/spongycastle/crypto/CipherParameters;Ljava/security/SecureRandom;)V
+    iget-object v3, p0, Lorg/spongycastle/jcajce/provider/asymmetric/gost/SignatureSpi;->random:Ljava/security/SecureRandom;
 
-    invoke-interface {v2, v1, v3}, Lorg/spongycastle/crypto/DSA;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
+    invoke-direct {v2, p1, v3}, Lorg/spongycastle/crypto/params/ParametersWithRandom;-><init>(Lorg/spongycastle/crypto/CipherParameters;Ljava/security/SecureRandom;)V
+
+    invoke-interface {v0, v1, v2}, Lorg/spongycastle/crypto/DSA;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
     goto :goto_1
 

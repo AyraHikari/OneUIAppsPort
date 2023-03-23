@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 66
+    .line 64
     invoke-direct {p0}, Landroidx/core/view/accessibility/AccessibilityViewCommand$CommandArguments;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 .method public getExtendSelection()Z
     .locals 2
 
-    .line 90
+    .line 88
     iget-object v0, p0, Landroidx/core/view/accessibility/AccessibilityViewCommand$MoveAtGranularityArguments;->mBundle:Landroid/os/Bundle;
 
     const-string v1, "ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN"
@@ -44,7 +44,7 @@
 .method public getGranularity()I
     .locals 2
 
-    .line 82
+    .line 80
     iget-object v0, p0, Landroidx/core/view/accessibility/AccessibilityViewCommand$MoveAtGranularityArguments;->mBundle:Landroid/os/Bundle;
 
     const-string v1, "ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT"

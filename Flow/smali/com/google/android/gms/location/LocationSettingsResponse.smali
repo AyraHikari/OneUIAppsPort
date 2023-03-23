@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/location/LocationSettingsResponse;
 .super Lcom/google/android/gms/common/api/Response;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # annotations
@@ -16,7 +17,17 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/api/Response;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/google/android/gms/location/LocationSettingsResult;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/Response;-><init>(Lcom/google/android/gms/common/api/Result;)V
 
     return-void
 .end method
@@ -26,6 +37,7 @@
 .method public getLocationSettingsStates()Lcom/google/android/gms/location/LocationSettingsStates;
     .locals 1
 
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0

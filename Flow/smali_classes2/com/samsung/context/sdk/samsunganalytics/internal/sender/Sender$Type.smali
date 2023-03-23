@@ -34,7 +34,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 7
 
     .line 17
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
@@ -48,49 +48,56 @@
     sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->DLC:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
 
     .line 18
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
+    new-instance v1, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
 
-    const-string v1, "DLS"
+    const-string v3, "DLS"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->DLS:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
+    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->DLS:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
 
     .line 19
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
+    new-instance v3, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
 
-    const-string v1, "DMA"
+    const-string v5, "DMA"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->DMA:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
+    sput-object v3, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->DMA:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
 
-    const/4 v1, 0x3
+    const/4 v5, 0x3
 
-    new-array v1, v1, [Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
+    new-array v5, v5, [Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 16
-    sget-object v5, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->DLC:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->DLS:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
-
-    aput-object v2, v1, v3
-
-    aput-object v0, v1, v4
-
-    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
+    sput-object v5, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -105,6 +112,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 16
     const-class v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;

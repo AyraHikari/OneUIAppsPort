@@ -46,7 +46,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 16
 
     .line 109
     new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
@@ -60,133 +60,123 @@
     sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->px:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 110
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v1, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "em"
+    const-string v3, "em"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->em:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v1, Lcom/caverock/androidsvg/SVG$Unit;->em:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 111
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v3, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "ex"
+    const-string v5, "ex"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->ex:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v3, Lcom/caverock/androidsvg/SVG$Unit;->ex:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 112
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v5, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "in"
+    const-string v7, "in"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->in:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v5, Lcom/caverock/androidsvg/SVG$Unit;->in:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 113
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v7, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "cm"
+    const-string v9, "cm"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->cm:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v7, Lcom/caverock/androidsvg/SVG$Unit;->cm:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 114
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v9, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "mm"
+    const-string v11, "mm"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->mm:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v9, Lcom/caverock/androidsvg/SVG$Unit;->mm:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 115
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v11, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "pt"
+    const-string v13, "pt"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v13, v14}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->pt:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v11, Lcom/caverock/androidsvg/SVG$Unit;->pt:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 116
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v13, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "pc"
+    const-string v15, "pc"
 
-    const/4 v9, 0x7
+    const/4 v14, 0x7
 
-    invoke-direct {v0, v1, v9}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v13, v15, v14}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->pc:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v13, Lcom/caverock/androidsvg/SVG$Unit;->pc:Lcom/caverock/androidsvg/SVG$Unit;
 
     .line 117
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Unit;
+    new-instance v15, Lcom/caverock/androidsvg/SVG$Unit;
 
-    const-string v1, "percent"
+    const-string v14, "percent"
 
-    const/16 v10, 0x8
+    const/16 v12, 0x8
 
-    invoke-direct {v0, v1, v10}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v15, v14, v12}, Lcom/caverock/androidsvg/SVG$Unit;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Unit;->percent:Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v15, Lcom/caverock/androidsvg/SVG$Unit;->percent:Lcom/caverock/androidsvg/SVG$Unit;
 
-    const/16 v1, 0x9
+    const/16 v14, 0x9
 
-    new-array v1, v1, [Lcom/caverock/androidsvg/SVG$Unit;
+    new-array v14, v14, [Lcom/caverock/androidsvg/SVG$Unit;
+
+    aput-object v0, v14, v2
+
+    aput-object v1, v14, v4
+
+    aput-object v3, v14, v6
+
+    aput-object v5, v14, v8
+
+    aput-object v7, v14, v10
+
+    const/4 v0, 0x5
+
+    aput-object v9, v14, v0
+
+    const/4 v0, 0x6
+
+    aput-object v11, v14, v0
+
+    const/4 v0, 0x7
+
+    aput-object v13, v14, v0
+
+    aput-object v15, v14, v12
 
     .line 107
-    sget-object v11, Lcom/caverock/androidsvg/SVG$Unit;->px:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v11, v1, v2
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Unit;->em:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Unit;->ex:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Unit;->in:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Unit;->cm:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Unit;->mm:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v2, v1, v7
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Unit;->pt:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v2, v1, v8
-
-    sget-object v2, Lcom/caverock/androidsvg/SVG$Unit;->pc:Lcom/caverock/androidsvg/SVG$Unit;
-
-    aput-object v2, v1, v9
-
-    aput-object v0, v1, v10
-
-    sput-object v1, Lcom/caverock/androidsvg/SVG$Unit;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Unit;
+    sput-object v14, Lcom/caverock/androidsvg/SVG$Unit;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Unit;
 
     return-void
 .end method

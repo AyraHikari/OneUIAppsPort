@@ -122,6 +122,16 @@
 # virtual methods
 .method public addCache(ILandroid/graphics/Bitmap;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "bmp"
+        }
+    .end annotation
 
     .line 38
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;->removeCache(I)V
@@ -219,6 +229,14 @@
 
 .method public getCache(I)Landroid/graphics/Bitmap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
     .line 59
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;->cacheLock:Ljava/lang/Object;
@@ -276,6 +294,14 @@
 
 .method public removeCache(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
     .line 71
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;->cacheLock:Ljava/lang/Object;

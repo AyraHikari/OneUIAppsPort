@@ -23,14 +23,24 @@
 # direct methods
 .method constructor <init>(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "componentName",
+            "iBinder"
+        }
+    .end annotation
 
-    .line 737
+    .line 968
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 738
+    .line 969
     iput-object p1, p0, Landroidx/core/app/NotificationManagerCompat$ServiceConnectedEvent;->componentName:Landroid/content/ComponentName;
 
-    .line 739
+    .line 970
     iput-object p2, p0, Landroidx/core/app/NotificationManagerCompat$ServiceConnectedEvent;->iBinder:Landroid/os/IBinder;
 
     return-void

@@ -77,7 +77,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "sequence wrong size for a certificate"
+    const-string/jumbo v0, "sequence wrong size for a certificate"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

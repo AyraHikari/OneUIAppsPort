@@ -17,6 +17,16 @@
 # virtual methods
 .method public onDisabled(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     const-string p1, "onDisabled"
 
@@ -35,6 +45,18 @@
 
 .method public onPasswordChanged(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent",
+            "userHandle"
+        }
+    .end annotation
 
     const-string p1, "onPasswordChanged"
 
@@ -61,6 +83,16 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     const-string v0, "onReceive"
 

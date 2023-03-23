@@ -2,15 +2,20 @@
 <resources>
     <string name="Turn_on_Wi_Fi_Direct">Wi-Fi Direct aç</string>
     <string name="Wi_Fi_Direct_and_Mobile_hotspot_cannot_be_enabled_at_the_same_time.">Wi-Fi Direct bilen Mobil giriş nokadyny şol bir wagtda işledip bolmaýar. Mobil giriş nokady ýapylar.</string>
-    <string name="about">Samsung Flow hakynda</string>
+    <string name="about">Samsung Flow barada</string>
     <string name="add_app_from_phone">Telefondan programmany goş</string>
     <string name="add_your_bio_first_dialog_desc">Samsung Flow-a girmek üçin planşet biometrika ulanmak üçin, barmak yzlaryňyzy ýa-da göreçleriňizi planşetiňizde bellige alyp täzeden synanyşyň.</string>
     <string name="add_your_bio_first_dialog_title">Ilki bilen biometrikaňyzy goşuň</string>
+    <string name="advanced_features">Giňişleýin funksiýalar</string>
     <string name="alarm">Duýduryş sesi</string>
     <string name="all_apps">Ähli programmalar</string>
     <string name="allow_appear_on_top">Ýokarda görünmegine rugsat ber</string>
     <string name="allow_appear_on_top_desc">Açylýan penjireler ýa-da habarnamalar ýaly zatlary kompýuteriňizde ýa-da planşetiňizde ulanýan başga programmalaryňyzyň üstünde görkezmek üçin, Sazlamalarda Üstünde görünmek rugsadyny bermegiňiz gerek.</string>
+    <string name="allow_location_settings">Enjamlarda Ýerleşiş sazlamalaryna giriş ber</string>
     <string name="and_more">Ýene %1$s we %2$d</string>
+    <string name="app_info">Programma maglumaty</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">Goş</string>
     <string name="attach_image">Surat</string>
     <string name="attach_my_files">Faýllarym</string>
     <string name="attach_sound">Audio</string>
@@ -38,20 +43,29 @@
 Samsung Flow
 -da"</string>
     <string name="bluetooth_connection_failed_text">Telefonyňyzda Samsung Flow açykdygyna göz ýetiriň.</string>
+    <string name="bt_or_nfc_turned_on">Samsung Flow ulanmak üçin, %s açylar.</string>
+    <string name="btn_desc_cancel">Ýatyr</string>
+    <string name="btn_desc_failed">Ugruna bolmady</string>
+    <string name="can_not_use">%s ulanyp bolmaýar</string>
+    <string name="can_not_use_at_same_time">%1$s bilen %2$s bilelikde işledip bolmaýar. %3$s ýapylar.</string>
     <string name="cancel_all">Baryny aýyr</string>
     <string name="cant_share_files">Faýllary paýlaşyp bolmaýar</string>
     <string name="cant_use_mobile_hotspot_case_1">Tor bilen bir näsazlyk boldy. Telefonyňyzda Mobil giriş nokady barlap ýene synanyşyň.</string>
     <string name="cant_use_mobile_hotspot_case_2">Tor bilen bir näsazlyk boldy. Tarifiňiz Mobil giriş nokady goldaýandygyny görmek üçin, hyzmat üpjün edijiňiz bilen habarlaşyň.</string>
     <string name="cant_use_mobile_hotspot_title">Mobil giriş nokady ulanyp bolmaýar</string>
     <string name="cant_use_this_function_in_multi_window">Köp-penjireli görnüşde bu funksiýany ulanyp bolmaýar.</string>
-    <string name="chan_mkt">Marketing</string>
-    <string name="chan_ntc">Bildiriş</string>
+    <string name="change_location_settings">Ýerleşiş sazlamal. üýtget</string>
+    <string name="character_counter_content_description">%1$d / %2$d nyşan</string>
     <string name="checkbox_all">Ähli</string>
+    <string name="china_network_permission_popup_body">%s tor birikmelerini ulanyp bilsinmi?</string>
+    <string name="china_network_permission_popup_title">Tor birikmelerini ulan</string>
+    <string name="clipboard">Çalşyk buf</string>
     <string name="clipboard_off">Birigen enjamlaryň arasynda çalşyk buferi materialyny paýlaşmagy duruz</string>
     <string name="clipboard_on">Birigen enjamlaryň arasynda çalşyk buferi materialyny paýlaş</string>
     <string name="close_app">Programma ýap</string>
     <string name="confirm_pass_key_connecting_to_deivce">%s birigilýär…</string>
-    <string name="connect_help_desc0">Telefonyňyzda ýa-da sagadyňyzda Samsung Flow açyň.</string>
+    <string name="confirm_your_phone">Telefonyňyzda tassyklaň</string>
+    <string name="connect_help_desc0">Telefonyňyzda Samsung Flow açyň.</string>
     <string name="connect_help_desc1">Bluetooth ýa-da Wi-Fi iki enjam üçin açyk bolmaly.</string>
     <string name="connect_help_desc2">Eger Wi-Fi ýa-da LAN birikmeleri ulansaňyz, iki enjam hem şol bir tora birigendigine göz ýetiriň.</string>
     <string name="connect_help_desc4">Planşeti kompýuteriňize birikmäge synanyşmaň. Bu websaýt Samsung Flow tarapyndan goldanylmaýar.</string>
@@ -69,16 +83,18 @@ Samsung Flow
     <string name="connection_error_register_fail">Registration failed. Try again.</string>
     <string name="connection_failed">Birigip bolmady.</string>
     <string name="connection_goto_permission_setting">%s ulanmak üçin, Sazlamalar-a basyp, programma maglumaty > Rugsatlar-a baryň we aşakdaky rugsatlary beriň:</string>
+    <string name="connection_method_biometrics">Biometrika</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">Samsung Flow-da biometrika ulanmak üçin, Sazlamalarda biometrikaňyzy bellige almagyňyz gerek.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">Biometrika bellige alyň</string>
+    <string name="connection_method_biometrics_required_title">%s-de biometrikany ulanmak üçin, tassyklama gerek.</string>
+    <string name="connection_method_manual">El bilen</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">Samsung Pass bilen biometrikaňyz arkaly %s bilen awtomatik täzeden birigiň.</string>
-    <string name="connection_method_simple_connection">Ýönekeý birikme</string>
-    <string name="connection_method_simple_connection_desc">Telefonyňyzda tassyklamazdan, %s bilen awtomatik täzeden birigiň.</string>
-    <string name="connection_method_simple_connection_desc_tab">Planşetiňizde tassyklamazdan, %s bilen awtomatik täzeden birigiň.</string>
+    <string name="connection_method_simple_connection">Awto-birikme</string>
     <string name="connection_method_tablet_bio">Planşet biometrika</string>
-    <string name="connection_method_tablet_bio_desc">Planşetiňizde biometrikaňyz arkaly %s bilen awtomatik täzeden birigiň.</string>
     <string name="connection_request_noti_accept">Kabul et</string>
     <string name="connection_request_noti_desc">%s telefonyňyza birigip bilsinmi?</string>
     <string name="content_shared_via">%s arkaly paýlaşylýan material</string>
+    <string name="continue_apps_on_other_device">Proglara başga enjamda dowam et</string>
     <string name="copied_to_clipboard">Çalşyk buferine göçürildi.</string>
     <string name="copy_text">Kopýa metini</string>
     <string name="delete_lower">Öçür</string>
@@ -90,8 +106,11 @@ Samsung Flow
     <string name="device_not_secured_desc_for_bio">Planşetiňizde biometrika ulanmak üçin, siz telefonyňyzda ekran gulpy bellemeli.</string>
     <string name="device_not_secured_desc_for_watch">Sagadyňyzy ulanmak üçin, siz telefonyňyzda ekran gulpy bellemeli.</string>
     <string name="device_status_connected">Birikdi</string>
+    <string name="device_status_connected_with">%s bn birikdirildi</string>
+    <string name="device_status_disconnected">Birikmeden aýryldy.</string>
     <string name="device_status_registered">Bellige alyndy</string>
     <string name="device_storage">Enjam toplaýjysy</string>
+    <string name="dialog_allow">Rugsat ber</string>
     <string name="dialog_close">Ýap</string>
     <string name="dialog_deny">Ret et</string>
     <string name="dialog_desc_turn_off_mirroring">Smart View-ny ýapmalymy?</string>
@@ -99,6 +118,7 @@ Samsung Flow
     <string name="dialog_ok">OK</string>
     <string name="dialog_retry">Ýene synan</string>
     <string name="dismiss">Aýyr</string>
+    <string name="dragndroplist_drag_move">Häzir %d orunda</string>
     <string name="dragndroplist_drag_release">Madda %d orna oklandy.</string>
     <string name="dragndroplist_drag_start">%d orundaky maddanyň süýşürilmegi başlandy.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d orundaky maddany tutup süýşürip bolmaýar.</string>
@@ -118,41 +138,8 @@ Samsung Flow
     <string name="flow_main_device_not_secure_dialog_desc">Windows ekran gulpy ulanmak üçin, siz telefonyňyzda ekran gulpuny bellemeli.</string>
     <string name="flow_main_device_not_secure_dialog_title">Howpsuz ekran gulpuny belle</string>
     <string name="go_to_settings">Sazlamalara git</string>
-    <string name="help_clipboard_desc">"Çalşyk buferiňizdäki teksti, web-salgylary we suratlary birigen planşetiňiz ýa-da kompýuteriňiz bilen paýlaşyp bilersiňiz.
-
-Bu funksiýa zarýad ulanmagy köpeldip biler."</string>
-    <string name="help_clipboard_title">Çalşyk buferini ulanmak</string>
-    <string name="help_connecting_devices_desc_1">Samsung Flow ulanmagy arkaly kompýuteriňizi ýa-da planşetiňizi telefonyňyza (%s) birikdiriň.</string>
-    <string name="help_connecting_devices_desc_2">Enjamlaryň ikisinde hem Bluetooth açyk ýa-da şol bir tora birigen Wi-Fi ýa-da LAN birikmesiniň boldygyna göz ýetiriň.</string>
-    <string name="help_connecting_devices_desc_2_1">USB kabel ulanýan bolsaňyz, ony iki enjama-da dakyň we birigen enjamda Android 10 ýa-da täzesiniň gurnalandygyny barlaň.</string>
-    <string name="help_connecting_devices_desc_3">Samsung Flow iki enjamda açyp, kompýuteriňizde gurnaw ussadyny berjaý ediň.</string>
-    <string name="help_connecting_devices_desc_4">Goşmaça maglumat üçin www.samsung.com/samsungflow baryň.</string>
-    <string name="help_connecting_devices_desc_5">Minimum talaplar</string>
-    <string name="help_connecting_devices_desc_6">Windows-ly kompýuter ýa-da planşet: Windows 10 Döredijiler täzelemesi (v1703) we Iýun patç gurnawy (15063.413), Bluetooth (Bluetooth LE islege bagly), we Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Android planşeti: Android Marshmallow ýa-da täzesi. Goşmaça maglumat üçin KSS görüň.</string>
-    <string name="help_connecting_devices_title">Kompýuter/planşetler birigilýär</string>
     <string name="help_contact_us">Bize ýüz tut</string>
     <string name="help_install_samsung_flow_title">Enjamlary Samsung Flow bn birik</string>
-    <string name="help_mobile_hotspot_desc">Telefonyňyzda Mobil hotspoty açmak ýa-da ýapmak üçin, %s basyň. Ol Android 11 ýa-da täzesi bar bolan telefonlarda işlemeýär.</string>
-    <string name="help_mobile_hotspot_title">Mobil giriş nokadyny ulanmak</string>
-    <string name="help_noti_sync_desc">"Samsung Flow ulanyp, kompýuter ýa-da planşet birikdirilende telefonyňyzdan bildirişleri kompýuteriňizde ýa-da planşetiňizde görüň. Täze habarnamalary alnanda beýleki programmalardaky hatlara derrew jogap berip bilersiňiz.
-
-Bu funksiýa käbir hat ýazyşma programmalary üçin elýeterli bolman biler.
-
-Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flow-da habarnamalary dolandyryp bilersiňiz."</string>
-    <string name="help_noti_sync_title">Habarnamalary sinhronlamak</string>
-    <string name="help_sharing_contents_desc_1">Birigen enjamlaryň arasynda materiallary ýeňil paýlaşyp bilersiňiz.</string>
-    <string name="help_sharing_contents_desc_2">Telefon kompýutere ýa-da planşete</string>
-    <string name="help_sharing_contents_desc_3">Programmada brauzer ýaly paýlaşyk opsiýa tapyp Samsung Flow saýlaň.</string>
-    <string name="help_sharing_contents_desc_4">Faýllary saýlap olary paýlaşmak üçin, siz Flow taryhy tabynda %s hem basyp bilesiňiz.</string>
-    <string name="help_sharing_contents_desc_5">Kompýuter ýa-da planşet telefona</string>
-    <string name="help_sharing_contents_desc_6">Programmada brauzer ýaly paýlaşyk opsiýa tapyp Samsung Flow saýlaň.</string>
-    <string name="help_sharing_contents_desc_7">Faýllary saýlap olary paýlaşmak üçin, siz Flow taryhy tabynda %s hem basyp bilesiňiz ýa-da faýllary Samsung Flow-a süýräp taşlap bilersiňiz.</string>
-    <string name="help_sharing_contents_title">Material paýlaşylýar</string>
-    <string name="help_smart_view_desc">Planşetiňiziň ýa-da kompýuteriňiziň telefon ekranyny dublirlemek üçin, Smart View şekiljigini basyň.</string>
-    <string name="help_smart_view_desc_2">Smart View-ny ulanýarkaňyz, halanýan programmalary has çalt girer ýaly goşmak üçin, ýyldyz şekiljigini basyp bilersiňiz.</string>
-    <string name="help_smart_view_title">Smart View ulanmak</string>
-    <string name="help_using_multi_device_title">Köp snly kmpýuter/planştlr ulan</string>
     <string name="hotspot_description">Samsung Flow işläp durka mobil ýaýlym nokadyny ulanmak arkaly, birigen enjamy Mobil hotspot edip ulanyň.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">Mobil hotspot ulanmak üçin, Wi-Fi-y ýapmaly.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">Wi-Fi ýapmalymy?</string>
@@ -185,7 +172,11 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="menu_do_not_disturb">Bimaza etmäň</string>
     <string name="menu_enable_hotspot">Mobil hotspota birik</string>
     <string name="menu_favorites">Halanýanlar</string>
+    <string name="menu_favorites_add">Goş</string>
+    <string name="menu_favorites_remove">Aýyr</string>
     <string name="menu_full_screen">Doly görnüş</string>
+    <string name="menu_more">Has köp</string>
+    <string name="menu_phone_screen">Telefon ekrany</string>
     <string name="menu_resolution">Çözgüt</string>
     <string name="menu_resolution_option_high">Ýokary</string>
     <string name="menu_resolution_option_low">Pes</string>
@@ -231,6 +222,10 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="noti_desc_screenshot_saved">Skrinşotyňyzy görmek üçin, bu ýere basyň.</string>
     <string name="noti_title_screenshot_saved">Skrinşot ýazdyryldy</string>
     <string name="notices">Bildirişler</string>
+    <string name="notices_last_for_android6_desc">"Bu Android 6.0 (Marshmallow) üçin iň soňky täzeleme. Samsung Flow indi OU çäklendirmeleri sebäpli Android 6.0-ny goldamaýar.
+
+Android 6.0 ulanyjylary şonda-da täzeleme etmän Samsung Flow ulanyp bilerler."</string>
+    <string name="notices_last_for_android6_title">Android 6.0 (Marshmallow) üçin goldawyň soňy</string>
     <string name="notices_notice">Bildiriş</string>
     <string name="notices_update">Täzele</string>
     <string name="notices_update_include">Programma üpjünçiligi täzelemeleri şulary öz içine alyp bilýär:</string>
@@ -255,6 +250,8 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="option_connection_type_wifi">Wi-Fi ýa-da LAN</string>
     <string name="pc">Kompýuter</string>
     <string name="permissions">Rugsatlar</string>
+    <string name="permissions_all_files_access">Ähli faýllar girişi</string>
+    <string name="permissions_all_files_access_desc">Suratlar, media we faýllary geçirmek üçin ulanylýar.</string>
     <string name="permissions_appear_on_top_desc">Habarnamalary başga programmalaryň üstünde görkezmekde ulanylýar</string>
     <string name="permissions_appear_on_top_title">Habarnamalaryň başga programmalaryň üstünde görnüp bilmegi üçin, Samsung Flow-a Üstde görün-e giriş bermelimi?</string>
     <string name="permissions_call_log">Jaň žurnallary</string>
@@ -266,6 +263,8 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="permissions_location_desc">Bluetooth arkaly golaýdaky Galaxy enjamlara gözlemek üçin ulanylýar.</string>
     <string name="permissions_microphone">Mikrofon</string>
     <string name="permissions_microphone_desc">Ýokary ýygylykly audio almagy arkaly Galaxy enjamlary birikmek üçin ulanylýar.</string>
+    <string name="permissions_nearby_devices">Golaýdaky enjamlar</string>
+    <string name="permissions_nearby_devices_desc">Golaýdaky enjamlary tapmakda we bellige alnan enjamlary yzarlamakda ulanylýar</string>
     <string name="permissions_notification_access_desc">Birigen enjama habarnamalary ibermekde ulanylýar</string>
     <string name="permissions_phone">Telefon</string>
     <string name="permissions_phone_desc">Telefon belgiňizi tassyklamak üçin ulanylýar.</string>
@@ -273,11 +272,11 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="permissions_sms_desc">Tekst hatlary geçirmek üçin ulanylýar.</string>
     <string name="permissions_storage">Ammar</string>
     <string name="permissions_storage_desc">Suratlar, media we faýllary geçirmek üçin ulanylýar.</string>
-    <string name="permissions_title">%s üçin rugsatlar</string>
+    <string name="permissions_title">Samsung Flow şu rugsatlary ulanýar</string>
     <string name="phone">Telefon</string>
     <string name="press_enter_key_to_send">Enter klawişi bilen hatlar iber</string>
     <string name="processing">Işlenilýär…</string>
-    <string name="receiving_failed">Kabul ediş başa barmady.</string>
+    <string name="receiving_failed">Şu hat alynýarka, näsazlyk ýüze çykdy.</string>
     <string name="register_failed">Soňra täzeden synanyşyň.</string>
     <string name="resend">Täzeden iber</string>
     <string name="rooted_device">Enjamyňyz düýplendi. Howpsuzlyk sebäpli, rutinglenen enjamlarda %s ulanmak bolmaýar.</string>
@@ -295,11 +294,19 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="select_apps_for_shortcuts">Çykgytlar üçin programmalary saýla</string>
     <string name="select_items">Element saýla</string>
     <string name="send">Iber</string>
-    <string name="sending_failed">Iberip bolmady.</string>
-    <string name="sesl_action_bar_up_description">Ýokaryk git</string>
+    <string name="sending_failed">Şu hat iberilýärkä, näsazlyk ýüze çykdy.</string>
+    <string name="sesl_action_bar_up_description">Ýokaryk</string>
     <string name="sesl_action_menu_overflow_badge_description">Täze material elýeterli</string>
     <string name="sesl_action_menu_overflow_badge_text_n">T</string>
     <string name="sesl_action_menu_overflow_description">Goşmaça opsiýalar</string>
+    <string name="sesl_index_assistant_text">Süýşürmek üçin, iki barmak bilen ýokaryk ýa-da aşak syryň.</string>
+    <string name="sesl_index_scrollbar">Süýşüriş paneli</string>
+    <string name="sesl_index_section">Bölüm indeksi</string>
+    <string name="sesl_index_selected">Saýlanyldy</string>
+    <string name="sesl_material_badge_description">Täze material elýeterli</string>
+    <string name="sesl_material_overflow_badge_text_n">T</string>
+    <string name="sesl_more_item_label">Başgalar</string>
+    <string name="sesl_preferecne_badge_description">Täze habarnama</string>
     <string name="sesl_preferencecategory_added_title">Sözbaşy</string>
     <string name="sesl_search_hint">Gözleg</string>
     <string name="sesl_searchview_description_clear">Gözleg zolagy öçür</string>
@@ -309,6 +316,10 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="sesl_searchview_description_voice">Ses gözleme</string>
     <string name="sesl_switch_off">Ýapyk</string>
     <string name="sesl_switch_on">Açyk</string>
+    <string name="sesl_switchbar_off_text">Ýapyk</string>
+    <string name="sesl_switchbar_on_text">Aç</string>
+    <string name="sesl_toolbar_collapse_description">Düýrlemek</string>
+    <string name="set_screen_lock_title">Ekran gulpuny belläň</string>
     <string name="settings">Sazlamalar</string>
     <string name="settings_auto_hotspot_desc">Birigen enjam internete birigip bilmedik wagty, telefonyňyzy Internet giriş nokady edip ulanyň.</string>
     <string name="settings_deregister_confirm_dialog_desc">Geljekde bu enjamy birikdirmek üçin, siz ony ýene bellige almaly bolarsyňyz.</string>
@@ -319,12 +330,16 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="settings_gear_unlock_confirm_dialog_title">Gear hakykylyk-barlagyny açmalymy?</string>
     <string name="settings_manage_notifications_desc">Birigen enjamyňyza habarnama iberip bilýän programmalary saýlaň.</string>
     <string name="settings_manage_notifications_title">Saýlanan programma habarnamalar</string>
+    <string name="settings_send_message_desc">Send messages using the enter key on your keyboard.</string>
     <string name="settings_title_auto_bt_on">Awto Bluetooth</string>
     <string name="setup_complete_done">Tamam</string>
     <string name="setup_completed">%s gurnaw tamamlandy.</string>
+    <string name="setup_completed_phone">Telefonyňyz häzir %s bilen birigen.</string>
+    <string name="setup_completed_tablet">Planşetiňiz häzir %s bilen birigen.</string>
     <string name="setup_confirm_pin">Indiki %1$d sekundyň dowamynda %2$s bilen biriger ýaly, geçiş açaryň dogry bolanyny tassyklaň.</string>
     <string name="setup_enter_pin_on_pc">%s-ňyza PIN giriziň.</string>
     <string name="setup_preparing">Kompýuteriňizde ýa-da planşetiňizde Samsung Flow gurnawy başladyň.</string>
+    <string name="setup_preparing_detail">Sizde Samsung Flow gurnalgy däl bolsa, ony kompýuteriňizde Microsoft Store-dan we planşetiňizde Galaxy Store-dan ýa-da Google Play-den göçürip alyň.</string>
     <string name="setup_preparing_tab">Kompýuteriňizde Samsung Flow sazlawyny başladyň.</string>
     <string name="setup_tab_complete_title">Gurnaw tamamlandy</string>
     <string name="setup_tab_confirm_passkey_title">Enjamlaryňyzy birikdiriň</string>
@@ -343,6 +358,8 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="setupwizard_welcome_body">Programma hyzmaty üçin, aşakdaky rugsatlar gerek. Islege bagly rugsatlar üçin, hyzmatyň standart funksionallygy açylýar, ýöne oňa rugsat berilmeýär.</string>
     <string name="setupwizard_welcome_title">Programma rugsatlar</string>
     <string name="share">Paýlaş</string>
+    <string name="share_item_device_status_connected">Enjam birikdi</string>
+    <string name="share_item_device_status_disconnected">Enjam birikmesi kesildi</string>
     <string name="shortcut_list_desc">Planşetiňize birikdirmek üçin, telefonyňyzda programma saýlaň. Bu programmanyň çykgydy Öý ekranyňyza goşular.</string>
     <string name="snooze">Soňa goý</string>
     <string name="special_sensitive_optional_permissions">Ýörite gizlin häsiýetli islege bagly rugsatlar</string>
@@ -352,6 +369,8 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="tablet_bio_auth_confirm_title">Hakyklk brlg üçn Planşt biomtrka ulanmlmy?</string>
     <string name="tap_icon_to_try_iris_auth">Göz tanamaga ýene synanyşmak üçin, şekiljige bas</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">Samsung Flow üçin Smart View açyk bolýarka, Awto-aýla ulanyp bolmaýar.</string>
+    <string name="toast_msg_connected">Samsung Flow-yň %s birikmesi başlady.</string>
+    <string name="toast_msg_disconnected">Samsung Flow-yň %s birikmesi gutardy.</string>
     <string name="try_again">Täzeden synanyş</string>
     <string name="turn_on">Aç</string>
     <string name="turn_on_auto_run">Awto-işlet aç</string>
@@ -362,15 +381,20 @@ Goşmaça opsiýalar > Sazlamalar > Habarnamalary dolandyrmak arkaly Samsung Flo
     <string name="unsupported_file">Goldanylmadyk faýl.</string>
     <string name="update">Täzele</string>
     <string name="update_samsung_flow">%s birigip bolmaýar. Samsung Flow-y iň soňky wersiýa täzeläp synanyşyň.</string>
-    <string name="welcome_button_start">Başla</string>
+    <string name="verification_method">Tassyklama usuly</string>
     <string name="welcome_phone_button_agree">Ylalaş</string>
-    <string name="welcome_phone_desc">Samsung Flow ulanmagy arkaly kompýuteriňizi ýa-da planşetiňizi telefonyňyza birikdiriň.</string>
-    <string name="welcome_phone_desc_terms">Dowam etmek üçin, %s okap ylalaşyň.</string>
-    <string name="welcome_phone_title">%s üçin hoş geldiňiz</string>
+    <string name="welcome_phone_desc1">Telefonyňyz bilen oňa birikdirilen kompýuteriň ýa-da planşetiň arasynda resminamalary, suratlary, wideolary we beýlekileri paýlaşyň.</string>
+    <string name="welcome_phone_desc2">Kompýuteriňizde ýa-da planşetiňizde telefonyňyzdaky hatlary we habarnamalary barlaň we olara jogap beriň.</string>
+    <string name="welcome_phone_desc3">Kompýuteriňizde ýa-da planşetde telefon ekranyňyzy görüň we dolandyryň.</string>
+    <string name="welcome_phone_desc_terms">Dowam etmek bilen, %s bilen ylalaşýarsyňyz.</string>
+    <string name="welcome_phone_title1">Telefonyňyzy başga enjama birikdiriň</string>
+    <string name="welcome_phone_title2">Habarnamalaryňyzy sinhronlaň</string>
+    <string name="welcome_phone_title3">Telefon ekranyňyzy paýlaşyň</string>
     <string name="welcome_tab_desc2">Samsung Flow sazlamak üçin, telefonyňyzy taýýarlaň.</string>
     <string name="welcome_tab_desc3">Planşetiňizi Samsung Flow arkaly telefonyňyza ýa-da kompýuteriňize birikdiriň.</string>
     <string name="wifi_connection_failed_text">Telefonyňyzda Samsung Flow açyk bolmaly we şol tora birigen bolmaly.</string>
-    <string name="wifi_enable_warning_msg">Mobil hotspot işjeň wagty, Wi-Fi ýapylýar. Wi-Fi açmak üçin, Mobil hotspoty ýapyň.</string>
-    <string name="wifi_enable_warning_title">Mobil hotspoty ýapmalymy?</string>
+    <string name="wifi_enable_warning_msg">Wi-Fi Direct ulanmak üçin, Mobil hotspoty ýapmaly.</string>
+    <string name="wifi_enable_warning_title">Mobil hotspoty ýap</string>
+    <string name="you_can_turn_off">Bu funksiýany %s arkaly ýapyp bilersiňiz.</string>
     <string name="you_can_turn_off_this_permission">Bu rugsady Sazlamalar > Programmalar > Has köp menýusy > Ýörite giriş arkaly ýapyp bilersiňiz.</string>
 </resources>

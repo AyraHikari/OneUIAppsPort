@@ -42,7 +42,7 @@
     .locals 2
 
     .line 113
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1a
 
@@ -88,9 +88,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -101,6 +105,14 @@
 # virtual methods
 .method public getDeviceInfoBundle(Landroid/content/Context;)Landroid/os/Bundle;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "deviceInfo"
 
@@ -126,7 +138,7 @@
 
     move-result-object v0
 
-    const-string v2, "serviceClientVer"
+    const-string/jumbo v2, "serviceClientVer"
 
     .line 137
     invoke-virtual {p0, p1}, Lcom/sec/android/diagmonagent/log/provider/newPackageInformation;->getPackageVersion(Landroid/content/Context;)Ljava/lang/String;
@@ -144,6 +156,14 @@
 
 .method public getPackageName(Landroid/content/Context;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 44
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -155,6 +175,14 @@
 
 .method public getPackageVersion(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 74
     invoke-virtual {p0, p1}, Lcom/sec/android/diagmonagent/log/provider/newPackageInformation;->getPackageName(Landroid/content/Context;)Ljava/lang/String;
@@ -170,6 +198,16 @@
 
 .method public getPackageVersion(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName"
+        }
+    .end annotation
 
     .line 85
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -195,13 +233,21 @@
 
     :catch_0
     :cond_0
-    const-string p1, "unknown"
+    const-string/jumbo p1, "unknown"
 
     return-object p1
 .end method
 
 .method public getSimpleName(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 60
     invoke-virtual {p0, p1}, Lcom/sec/android/diagmonagent/log/provider/newPackageInformation;->getPackageName(Landroid/content/Context;)Ljava/lang/String;

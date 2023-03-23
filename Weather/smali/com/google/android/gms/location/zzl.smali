@@ -1,109 +1,159 @@
 .class public final Lcom/google/android/gms/location/zzl;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-location@@18.0.0"
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/location/ActivityTransition;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/google/android/gms/location/zzl;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field public final h:J
+
+.field public final i:Z
+
+.field public final j:Landroid/os/WorkSource;
+
+.field public final k:Ljava/lang/String;
+
+.field public final l:[I
+
+.field public final m:Z
+
+.field public final n:Ljava/lang/String;
+
+.field public final o:J
+
+.field public p:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Le5/o0;
+
+    invoke-direct {v0}, Le5/o0;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/location/zzl;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public constructor <init>(JZLandroid/os/WorkSource;Ljava/lang/String;[IZLjava/lang/String;JLjava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+
+    iput-wide p1, p0, Lcom/google/android/gms/location/zzl;->h:J
+
+    iput-boolean p3, p0, Lcom/google/android/gms/location/zzl;->i:Z
+
+    iput-object p4, p0, Lcom/google/android/gms/location/zzl;->j:Landroid/os/WorkSource;
+
+    iput-object p5, p0, Lcom/google/android/gms/location/zzl;->k:Ljava/lang/String;
+
+    iput-object p6, p0, Lcom/google/android/gms/location/zzl;->l:[I
+
+    iput-boolean p7, p0, Lcom/google/android/gms/location/zzl;->m:Z
+
+    iput-object p8, p0, Lcom/google/android/gms/location/zzl;->n:Ljava/lang/String;
+
+    iput-wide p9, p0, Lcom/google/android/gms/location/zzl;->o:J
+
+    iput-object p11, p0, Lcom/google/android/gms/location/zzl;->p:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 6
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lq4/k;->g(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    invoke-static {p1}, Lr4/b;->a(Landroid/os/Parcel;)I
 
     move-result v0
 
-    const/4 v1, 0x0
+    iget-wide v1, p0, Lcom/google/android/gms/location/zzl;->h:J
 
-    move v2, v1
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v3
-
-    if-ge v3, v0, :cond_2
+    const/4 v3, 0x1
 
     .line 3
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
+    invoke-static {p1, v3, v1, v2}, Lr4/b;->j(Landroid/os/Parcel;IJ)V
 
-    move-result v3
+    iget-boolean v1, p0, Lcom/google/android/gms/location/zzl;->i:Z
+
+    const/4 v2, 0x2
 
     .line 4
-    invoke-static {v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
+    invoke-static {p1, v2, v1}, Lr4/b;->c(Landroid/os/Parcel;IZ)V
 
-    move-result v4
+    iget-object v1, p0, Lcom/google/android/gms/location/zzl;->j:Landroid/os/WorkSource;
 
-    const/4 v5, 0x1
+    const/4 v2, 0x3
 
-    if-eq v4, v5, :cond_1
-
-    const/4 v5, 0x2
-
-    if-eq v4, v5, :cond_0
-
-    .line 7
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
-
-    goto :goto_0
+    const/4 v3, 0x0
 
     .line 5
-    :cond_0
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
+    invoke-static {p1, v2, v1, p2, v3}, Lr4/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
-    move-result v2
+    iget-object p2, p0, Lcom/google/android/gms/location/zzl;->k:Ljava/lang/String;
 
-    goto :goto_0
+    const/4 v1, 0x4
 
     .line 6
-    :cond_1
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
+    invoke-static {p1, v1, p2, v3}, Lr4/b;->n(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
-    move-result v1
+    iget-object p2, p0, Lcom/google/android/gms/location/zzl;->l:[I
 
-    goto :goto_0
+    const/4 v1, 0x5
+
+    .line 7
+    invoke-static {p1, v1, p2, v3}, Lr4/b;->i(Landroid/os/Parcel;I[IZ)V
+
+    iget-boolean p2, p0, Lcom/google/android/gms/location/zzl;->m:Z
+
+    const/4 v1, 0x6
 
     .line 8
-    :cond_2
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
+    invoke-static {p1, v1, p2}, Lr4/b;->c(Landroid/os/Parcel;IZ)V
+
+    iget-object p2, p0, Lcom/google/android/gms/location/zzl;->n:Ljava/lang/String;
+
+    const/4 v1, 0x7
 
     .line 9
-    new-instance p1, Lcom/google/android/gms/location/ActivityTransition;
+    invoke-static {p1, v1, p2, v3}, Lr4/b;->n(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
-    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/location/ActivityTransition;-><init>(II)V
+    iget-wide v1, p0, Lcom/google/android/gms/location/zzl;->o:J
 
-    return-object p1
-.end method
+    const/16 p2, 0x8
 
-.method public final bridge synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+    .line 10
+    invoke-static {p1, p2, v1, v2}, Lr4/b;->j(Landroid/os/Parcel;IJ)V
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/location/ActivityTransition;
+    iget-object p2, p0, Lcom/google/android/gms/location/zzl;->p:Ljava/lang/String;
 
-    return-object p1
+    const/16 v1, 0x9
+
+    .line 11
+    invoke-static {p1, v1, p2, v3}, Lr4/b;->n(Landroid/os/Parcel;ILjava/lang/String;Z)V
+
+    .line 12
+    invoke-static {p1, v0}, Lr4/b;->b(Landroid/os/Parcel;I)V
+
+    return-void
 .end method

@@ -21,8 +21,16 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 86
+    .line 84
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -39,18 +47,18 @@
 
     const-string v2, "pressure"
 
-    const-string v3, "tt"
+    const-string/jumbo v3, "tt"
 
-    const-string v4, "touchEventData"
+    const-string/jumbo v4, "touchEventData"
 
     const-string v5, "ControlServerThread finally"
 
     const-string v0, "ControlServerThread run()"
 
-    .line 90
+    .line 88
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 92
+    .line 90
     :goto_0
     :try_start_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -65,7 +73,7 @@
 
     const-string v0, ""
 
-    .line 97
+    .line 95
     iget-object v6, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
@@ -74,7 +82,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 98
+    .line 96
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;
@@ -88,26 +96,26 @@
     :cond_0
     if-eqz v0, :cond_c
 
-    .line 101
+    .line 99
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v6
 
     if-nez v6, :cond_c
 
-    .line 102
+    .line 100
     new-instance v6, Lorg/json/JSONObject;
 
     invoke-direct {v6, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     const-string v0, "MSG"
 
-    .line 103
+    .line 101
     invoke-virtual {v6, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 104
+    .line 102
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -116,7 +124,11 @@
 
     invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -126,7 +138,7 @@
 
     const-string v0, "TOUCH_EVENT"
 
-    .line 105
+    .line 103
     invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -135,9 +147,9 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const-string v8, "y"
+    const-string/jumbo v8, "y"
 
-    const-string v9, "x"
+    const-string/jumbo v9, "x"
 
     const-string v10, "eventType"
 
@@ -145,7 +157,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 106
+    .line 104
     :try_start_1
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
@@ -157,7 +169,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 107
+    .line 105
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -172,7 +184,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 109
+    .line 107
     iget-object v12, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     invoke-virtual {v12, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->handleTouchEvent(Lcom/samsung/android/galaxycontinuity/data/TouchEventData;)V
@@ -182,12 +194,12 @@
     :cond_1
     const-string v0, "Cannot parse TouchEventData"
 
-    .line 111
+    .line 109
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     goto/16 :goto_5
 
-    .line 113
+    .line 111
     :cond_2
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
@@ -197,7 +209,7 @@
 
     move-result v20
 
-    .line 114
+    .line 112
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -208,18 +220,18 @@
 
     move-result v15
 
-    .line 116
+    .line 114
     new-array v14, v15, [I
 
-    .line 117
+    .line 115
     new-array v13, v15, [I
 
-    .line 118
+    .line 116
     new-array v12, v15, [I
 
     move-object/from16 v21, v4
 
-    .line 119
+    .line 117
     new-array v4, v15, [I
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_5
@@ -228,7 +240,7 @@
 
     move-object/from16 v22, v5
 
-    .line 120
+    .line 118
     :try_start_2
     new-array v5, v15, [F
 
@@ -241,7 +253,7 @@
     :goto_1
     if-ge v10, v15, :cond_5
 
-    .line 123
+    .line 121
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -258,7 +270,11 @@
 
     invoke-virtual {v7, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v7
+
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -270,7 +286,7 @@
 
     aput v0, v14, v10
 
-    .line 124
+    .line 122
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -281,7 +297,11 @@
 
     invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v7
+
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -293,7 +313,7 @@
 
     aput v0, v13, v10
 
-    .line 125
+    .line 123
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -304,7 +324,11 @@
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v7
+
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -322,11 +346,11 @@
 
     const/4 v0, 0x1
 
-    .line 127
+    .line 125
     :try_start_3
     aput v0, v4, v10
 
-    .line 128
+    .line 126
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -337,7 +361,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 129
+    .line 127
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -348,7 +372,11 @@
 
     invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v7
+
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -360,7 +388,7 @@
 
     aput v0, v4, v10
 
-    .line 131
+    .line 129
     :cond_3
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
@@ -372,7 +400,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 132
+    .line 130
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -383,7 +411,11 @@
 
     invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v7
+
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -431,7 +463,7 @@
 
     move-object/from16 v27, v3
 
-    .line 134
+    .line 132
     :goto_2
     :try_start_5
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
@@ -458,7 +490,7 @@
 
     move/from16 v16, v15
 
-    .line 138
+    .line 136
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -471,7 +503,7 @@
 
     if-lt v0, v2, :cond_6
 
-    .line 139
+    .line 137
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     move-object v2, v12
@@ -522,17 +554,17 @@
 
     aput v23, v15, v23
 
-    .line 147
+    .line 145
     aget v12, v3, v0
 
     aput v12, v7, v23
 
-    .line 148
+    .line 146
     aget v12, v2, v0
 
     aput v12, v10, v23
 
-    .line 150
+    .line 148
     iget-object v12, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     const/4 v14, 0x1
@@ -573,14 +605,14 @@
 
     move-object/from16 v2, v25
 
-    .line 156
+    .line 154
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_b
 
-    .line 157
+    .line 155
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -591,7 +623,7 @@
 
     move-result v0
 
-    .line 158
+    .line 156
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -620,7 +652,7 @@
 
     goto :goto_7
 
-    .line 165
+    .line 163
     :cond_9
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
@@ -628,14 +660,14 @@
 
     goto :goto_8
 
-    .line 161
+    .line 159
     :cond_a
     :goto_7
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ScanCode;->getKeyByScancode(I)I
 
     move-result v0
 
-    .line 163
+    .line 161
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     invoke-static {v4, v0, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->access$100(Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;II)V
@@ -644,14 +676,14 @@
     :goto_8
     const-string v0, "MOUSE_EVENT"
 
-    .line 169
+    .line 167
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_d
 
-    .line 170
+    .line 168
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -662,7 +694,7 @@
 
     move-result v0
 
-    .line 171
+    .line 169
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -671,7 +703,7 @@
 
     move-result v2
 
-    .line 172
+    .line 170
     invoke-virtual {v6, v11}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -680,7 +712,7 @@
 
     move-result v3
 
-    .line 174
+    .line 172
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     invoke-static {v4, v0, v2, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->access$300(Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;III)V
@@ -698,7 +730,7 @@
 
     const-string v0, "json is empty!!!!!!!!! : "
 
-    .line 178
+    .line 176
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
     :try_end_5
     .catch Lorg/json/JSONException; {:try_start_5 .. :try_end_5} :catch_3
@@ -730,7 +762,7 @@
     :cond_e
     move-object/from16 v22, v5
 
-    .line 186
+    .line 184
     :goto_a
     invoke-static/range {v22 .. v22}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
@@ -748,7 +780,7 @@
 
     move-object/from16 v22, v5
 
-    .line 184
+    .line 182
     :goto_b
     :try_start_6
     new-instance v2, Ljava/lang/StringBuilder;
@@ -759,11 +791,15 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -778,7 +814,7 @@
 
     move-object/from16 v22, v5
 
-    .line 182
+    .line 180
     :goto_c
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -788,11 +824,15 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -807,10 +847,10 @@
     :goto_d
     const-string v0, "ControlServerThread is ended"
 
-    .line 189
+    .line 187
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 190
+    .line 188
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer$ControlServerThread;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/input/ControlTouchServer;->closeSocket()V
@@ -820,10 +860,10 @@
     :catchall_1
     move-exception v0
 
-    .line 186
+    .line 184
     :goto_e
     invoke-static/range {v22 .. v22}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 188
+    .line 186
     throw v0
 .end method

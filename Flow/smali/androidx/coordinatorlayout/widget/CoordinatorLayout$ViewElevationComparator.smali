@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2061
+    .line 2163
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,13 +40,23 @@
 # virtual methods
 .method public compare(Landroid/view/View;Landroid/view/View;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
-    .line 2064
+    .line 2166
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->getZ(Landroid/view/View;)F
 
     move-result p1
 
-    .line 2065
+    .line 2167
     invoke-static {p2}, Landroidx/core/view/ViewCompat;->getZ(Landroid/view/View;)F
 
     move-result p2
@@ -76,8 +86,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
-    .line 2061
+    .line 2163
     check-cast p1, Landroid/view/View;
 
     check-cast p2, Landroid/view/View;

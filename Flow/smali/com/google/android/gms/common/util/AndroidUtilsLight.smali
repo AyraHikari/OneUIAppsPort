@@ -1,9 +1,10 @@
 .class public Lcom/google/android/gms/common/util/AndroidUtilsLight;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # static fields
-.field private static volatile zzgf:I = -0x1
+.field private static volatile zza:I = -0x1
 
 
 # direct methods
@@ -16,31 +17,9 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method public static getDeviceProtectedStorageContext(Landroid/content/Context;)Landroid/content/Context;
-    .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 20
-    invoke-static {}, Lcom/google/android/gms/internal/common/zzg;->zzam()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 21
-    invoke-static {p0}, Lcom/google/android/gms/internal/common/zzg;->getDeviceProtectedStorageContext(Landroid/content/Context;)Landroid/content/Context;
-
-    move-result-object p0
-
-    :cond_0
-    return-object p0
 .end method
 
 .method public static getPackageCertificateHashBytes(Landroid/content/Context;Ljava/lang/String;)[B
@@ -51,7 +30,10 @@
         }
     .end annotation
 
-    .line 3
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/common/wrappers/Wrappers;->packageManager(Landroid/content/Context;)Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;
 
     move-result-object p0
@@ -62,10 +44,10 @@
 
     move-result-object p0
 
-    .line 5
+    .line 2
     iget-object p1, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
     iget-object p1, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -73,18 +55,21 @@
 
     const/4 v0, 0x1
 
-    if-ne p1, v0, :cond_0
+    if-ne p1, v0, :cond_1
 
     const-string p1, "SHA1"
 
-    .line 6
-    invoke-static {p1}, Lcom/google/android/gms/common/util/AndroidUtilsLight;->zzj(Ljava/lang/String;)Ljava/security/MessageDigest;
+    .line 3
+    invoke-static {p1}, Lcom/google/android/gms/common/util/AndroidUtilsLight;->zza(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
-    .line 8
+    goto :goto_0
+
+    .line 4
+    :cond_0
     iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
     const/4 v0, 0x0
@@ -101,13 +86,14 @@
 
     return-object p0
 
-    :cond_0
+    :cond_1
+    :goto_0
     const/4 p0, 0x0
 
     return-object p0
 .end method
 
-.method public static zzj(Ljava/lang/String;)Ljava/security/MessageDigest;
+.method public static zza(Ljava/lang/String;)Ljava/security/MessageDigest;
     .locals 2
 
     const/4 v0, 0x0
@@ -117,7 +103,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 12
+    .line 1
     :try_start_0
     invoke-static {p0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
@@ -125,12 +111,15 @@
     :try_end_0
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-eqz v1, :cond_0
+    if-nez v1, :cond_0
 
+    goto :goto_1
+
+    :cond_0
     return-object v1
 
     :catch_0
-    :cond_0
+    :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0

@@ -29,8 +29,18 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/widget/SeslProgressBar;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "name"
+        }
+    .end annotation
 
-    .line 2279
+    .line 2493
     iput-object p1, p0, Landroidx/appcompat/widget/SeslProgressBar$1;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     invoke-direct {p0, p2}, Landroid/util/FloatProperty;-><init>(Ljava/lang/String;)V
@@ -42,8 +52,16 @@
 # virtual methods
 .method public get(Landroidx/appcompat/widget/SeslProgressBar;)Ljava/lang/Float;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 2288
+    .line 2502
     invoke-static {p1}, Landroidx/appcompat/widget/SeslProgressBar;->access$800(Landroidx/appcompat/widget/SeslProgressBar;)F
 
     move-result p1
@@ -57,8 +75,16 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 2279
+    .line 2493
     check-cast p1, Landroidx/appcompat/widget/SeslProgressBar;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/SeslProgressBar$1;->get(Landroidx/appcompat/widget/SeslProgressBar;)Ljava/lang/Float;
@@ -70,13 +96,23 @@
 
 .method public setValue(Landroidx/appcompat/widget/SeslProgressBar;F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "object",
+            "value"
+        }
+    .end annotation
 
-    .line 2282
-    sget v0, Landroidx/appcompat/R$id;->progress:I
+    const v0, 0x102000d
 
+    .line 2496
     invoke-static {p1, v0, p2}, Landroidx/appcompat/widget/SeslProgressBar;->access$700(Landroidx/appcompat/widget/SeslProgressBar;IF)V
 
-    .line 2283
+    .line 2497
     invoke-static {p1, p2}, Landroidx/appcompat/widget/SeslProgressBar;->access$802(Landroidx/appcompat/widget/SeslProgressBar;F)F
 
     return-void
@@ -84,8 +120,18 @@
 
 .method public bridge synthetic setValue(Ljava/lang/Object;F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "object",
+            "value"
+        }
+    .end annotation
 
-    .line 2279
+    .line 2493
     check-cast p1, Landroidx/appcompat/widget/SeslProgressBar;
 
     invoke-virtual {p0, p1, p2}, Landroidx/appcompat/widget/SeslProgressBar$1;->setValue(Landroidx/appcompat/widget/SeslProgressBar;F)V

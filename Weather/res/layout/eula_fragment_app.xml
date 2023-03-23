@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/eula_fragment_app_0" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<FrameLayout android:tag="layout/eula_fragment_app_0" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.appbar.AppBarLayout android:theme="@style/Weather.Style.ActionBar" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Weather.Style.Appbar">
-        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" app:title="@string/menu_current_city_show" style="@style/Weather.Style.CollapsingToolbar">
-            <androidx.appcompat.widget.Toolbar android:theme="@style/Weather.Style.Toolbar" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" app:title="@string/menu_current_city_show" />
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-    <LinearLayout android:orientation="vertical" android:id="@id/use_current_location_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <androidx.appcompat.widget.SeslSwitchBar android:id="@id/use_current_location_switch" android:tag="binding_1" android:background="@drawable/common_bg" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Custom.SwitchBar" />
-        <com.samsung.android.weather.app.common.view.CustomLinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:roundMode="15" app:stroke="false">
-            <androidx.core.widget.NestedScrollView android:id="@id/use_current_location_description_scrollview" android:background="@color/wx_eula_description_background" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-                <FrameLayout android:id="@id/use_current_location_description_layout" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-            </androidx.core.widget.NestedScrollView>
-        </com.samsung.android.weather.app.common.view.CustomLinearLayout>
-    </LinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/Weather.Style.ActionBar" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Weather.Style.Appbar">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" app:title="@string/menu_current_city_show" style="@style/Weather.Style.CollapsingToolbar">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/Weather.Style.Toolbar" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" app:title="@string/menu_current_city_show" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/use_current_location_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.appcompat.widget.SeslSwitchBar android:id="@id/use_current_location_switch" android:tag="binding_1" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Custom.SwitchBar" />
+            <com.samsung.android.weather.app.common.view.CustomLinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:roundMode="15" app:stroke="false">
+                <com.samsung.android.weather.app.common.setting.eula.EulaNestedScrollView android:id="@id/use_current_location_description_scrollview" android:background="@color/wx_eula_description_background" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:id="@id/use_current_location_description_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dip" />
+                </com.samsung.android.weather.app.common.setting.eula.EulaNestedScrollView>
+            </com.samsung.android.weather.app.common.view.CustomLinearLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

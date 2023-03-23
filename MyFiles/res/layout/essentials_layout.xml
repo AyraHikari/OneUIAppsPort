@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/essentials_container" android:background="@drawable/sort_by_icon_background" android:paddingTop="@dimen/sort_by_list_sort_padding" android:paddingBottom="@dimen/sort_by_list_sort_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/sort_by_list_shape_padding" android:paddingEnd="@dimen/sort_by_list_shape_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sort_by_list_sort_text_size" android:textColor="@color/sort_by_text_color" android:id="@id/essentials_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/sort_by_list_sort_image_margin_end" />
+    <ImageView android:id="@id/essentials_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_icon" android:tint="@color/sort_by_text_color" />
+</LinearLayout>

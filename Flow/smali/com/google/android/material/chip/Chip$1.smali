@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/chip/Chip;)V
     .locals 0
 
-    .line 168
+    .line 174
     iput-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-direct {p0}, Lcom/google/android/material/resources/TextAppearanceFontCallback;-><init>()V
@@ -41,7 +41,7 @@
 .method public onFontRetrieved(Landroid/graphics/Typeface;Z)V
     .locals 0
 
-    .line 172
+    .line 178
     iget-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-static {p1}, Lcom/google/android/material/chip/Chip;->access$000(Lcom/google/android/material/chip/Chip;)Lcom/google/android/material/chip/ChipDrawable;
@@ -76,12 +76,12 @@
     :goto_0
     invoke-virtual {p1, p2}, Lcom/google/android/material/chip/Chip;->setText(Ljava/lang/CharSequence;)V
 
-    .line 173
+    .line 179
     iget-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-virtual {p1}, Lcom/google/android/material/chip/Chip;->requestLayout()V
 
-    .line 174
+    .line 180
     iget-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-virtual {p1}, Lcom/google/android/material/chip/Chip;->invalidate()V

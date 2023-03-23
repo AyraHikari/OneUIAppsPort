@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onInflate(Landroidx/appcompat/widget/ViewStubCompat;Landroid/view/View;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stub",
+            "inflated"
+        }
+    .end annotation
 .end method

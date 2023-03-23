@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/actionbar_add" android:id="@id/menu_add_network_storage_server" android:visible="false" android:title="" app:showAsAction="always|collapseActionView" />
+    <item android:id="@id/menu_edit" android:visible="false" android:title="@string/menu_edit" android:showAsAction="never" />
+    <item android:id="@id/menu_analyze_storage" android:visible="false" android:title="@string/menu_analyze_storage" android:showAsAction="never" />
+    <item android:id="@id/menu_settings" android:title="@string/menu_settings" android:showAsAction="never" />
+</menu>

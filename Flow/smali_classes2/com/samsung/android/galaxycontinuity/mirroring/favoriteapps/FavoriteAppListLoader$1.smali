@@ -26,6 +26,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/FavoriteAppListLoader;Ljava/lang/Boolean;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$autoSend"
+        }
+    .end annotation
 
     .line 140
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/FavoriteAppListLoader$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/favoriteapps/FavoriteAppListLoader;

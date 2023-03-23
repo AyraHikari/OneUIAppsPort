@@ -8,4 +8,12 @@
 .end method
 
 .method public abstract setWrappedDrawable(Landroid/graphics/drawable/Drawable;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 .end method

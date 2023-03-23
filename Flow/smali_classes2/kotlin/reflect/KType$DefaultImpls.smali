@@ -14,28 +14,24 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # direct methods
-.method public static synthetic arguments$annotations()V
+.method public static synthetic getArguments$annotations()V
     .locals 0
 
     return-void
 .end method
 
-.method public static synthetic classifier$annotations()V
+.method public static synthetic getClassifier$annotations()V
     .locals 0
 
     return-void

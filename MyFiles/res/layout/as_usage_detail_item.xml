@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/as_usage_detail_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginTop="@dimen/as_home_usage_detail_divider_margin_top" android:layout_marginBottom="@dimen/as_home_usage_detail_divider_margin_bottom" style="@style/ListDivider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_2" android:background="@drawable/as_home_usage_detail_ripple_background" android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/as_home_usage_detail_ripple_padding_horizontal" android:paddingEnd="@dimen/as_home_usage_detail_ripple_padding_end">
+        <View android:id="@id/detail_color" android:tag="binding_3" android:background="@drawable/as_home_usage_detail_item_background" android:layout_width="16.0dip" android:layout_height="8.0dip" android:layout_marginEnd="15.0dip" />
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/as_home_usage_detail_table_text_size" android:ellipsize="end" android:id="@id/detail_name" android:singleLine="true" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginEnd="@dimen/analyze_storage_usage_detail_text_margin" style="@style/SaUsageDetailName" />
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/as_home_usage_detail_table_text_size" android:id="@id/detail_size" style="@style/SaUsageDetailSize" />
+        <ImageView android:id="@id/use_usage_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_info_icon_btn" android:tint="@color/analyze_storage_app_info_btn_color" />
+        <ImageView android:id="@id/category_btn" android:tag="binding_4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/analyze_storage_category_btn" android:tint="@color/analyze_storage_category_btn_color" android:layout_marginStart="@dimen/as_home_usage_detail_category_btn_margin_start" />
+    </LinearLayout>
+</LinearLayout>

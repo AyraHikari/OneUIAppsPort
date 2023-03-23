@@ -33,6 +33,7 @@
     <string name="air_quality">Havo sifati</string>
     <string name="air_quality_next_tts">Havo sifati haqida kundalik kechki ma’lumotlar</string>
     <string name="air_quality_previous_tts">Havo sifati haqida kundalik ertalabki ma’lumotlar</string>
+    <string name="alert_title">Keskin ob-havo signali</string>
     <string name="all_added_cities">Barcha qo‘shilgan shaharlar</string>
     <string name="allow">Ruxsat berish</string>
     <string name="allow_permission_in_settings">Bu funksiyadan foydalanish uchun Parametrlarda ruxsatlarga ijozat berishingiz lozim.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Harakat qo‘llab-quvvatlanmaydi.</string>
     <string name="apply_daylight_saving_time">"Yozgi vaqt qo'llanilsinmi?"</string>
     <string name="as_possible_after_verification">Hisobot yuborildi. Shahar nomi tasdiqlangandan keyinoq o‘zgartiriladi.</string>
+    <string name="auto_refresh_on_screen_description">Ob-havo ma’lumotlarini har soatda avtomatik tarzda yangilang. Bu yoqilgan vaqtda qo‘lda yangilay olmaysiz.</string>
+    <string name="auto_refresh_on_the_go">Yoʻl-yoʻlakay avtomatik yangilash</string>
+    <string name="auto_refresh_on_the_go_advanced">Qo‘shimcha</string>
+    <string name="auto_refresh_on_the_go_description">Mashina, mototsiklni boshqarayotganingizda, yugurayotganingizda yoki yurayotganingizda ob-havo ma’lumotlarini kichikroq intervallarda oling. Bu yoqilgan vaqtda qo‘lda yangilashingiz mumkin.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Mashina boshqarayotganingizda, velosiped uchayotganingizda, yugurayotganingizda yoki yurayotganingizda ko‘proq ob-havo yangilanishlarini oling.</string>
     <string name="btn_report">His-t</string>
     <string name="button_finish">Tugatish</string>
     <string name="button_tts">Tugma</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Ko‘proq ma’lumot olish uchun ikki marta teging.</string>
     <string name="china">Xitoy</string>
     <string name="cities_button">Shaharlar</string>
+    <string name="city_added">Shahar qo‘shildi.</string>
     <string name="city_list_text">Shaharlar</string>
     <string name="clear">Toza</string>
     <string name="clear_then_cloudy">Ochiq havodan so‘ng bulutli havo</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Element %d holatga olib borib qo‘yildi.</string>
     <string name="dragndroplist_drag_start">Elementni %d holatiga tortib o‘tkazish boshlandi.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d holatidagi elementni tortib o‘tkazib bo‘lmaydi.</string>
+    <string name="drawer_tips">%s ta maslahat</string>
     <string name="drawer_tips_message">Joylashuvlarni qo‘shish, o‘chirish va tartibini o‘zgartirish uchun bu yerga teging. Asosiy ekranda turli joylashuvlarni ko‘rsatish uchun bir nechta vidjetlarni ham qo‘shishingiz mumkin.</string>
     <string name="drawer_tips_message_1">Joylashuvlarni qo‘shish, o‘chirish va tartibini o‘zgartirish uchun ushbu menyuning quyi qismidagi Joylashuvlarni boshqarishga teging.</string>
     <string name="drawer_tips_message_2">Bir vaqtning o‘zida turli xil joylashuvlarni ko‘rsatish uchun Asosiy ekranga bittadan ortiq vidjet qo‘shishingiz mumkin.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Ob-havo videosi</string>
     <string name="format_km_per_hour">%s km/s</string>
     <string name="format_m_per_hour">%s m/s</string>
+    <string name="fri">Ju</string>
     <string name="general">Umumiy</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Telefoningizdan qanday foydalanishingizga qarab moslashtirilgan tarkibni oling.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Planshetingizdan qanday foydalanishingizga qarab moslashtirilgan tarkibni oling.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">Ob-havo ilovasidan ob-havo ma’lumotlarini, jumladan, joriy joylashuvingizni oling</string>
     <string name="go_to_website">Veb-saytga o‘tish</string>
     <string name="goto_apps">Yangi yangilanish mavjud. Hozir o‘rnatilsinmi?</string>
     <string name="goto_apps_later">Keyinroq</string>
     <string name="goto_apps_now">Hozir</string>
     <string name="goto_apps_update_title">Yangi tarkib haqida signal</string>
     <string name="header_tts">Sarlavha</string>
+    <string name="heavy">Kuchli</string>
     <string name="heavy_rain">Jala yomg‘ir</string>
     <string name="heavy_rain_followed_by_intense_heat">Kuchli yomg‘irdan so‘ng harorat ko‘tariladi</string>
     <string name="heavy_rain_followed_by_light_rain">Kuchli yomg‘irdan so‘ng harorat ko‘tariladi</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Ko‘rinish</string>
     <string name="life_index_wind">Shamol</string>
     <string name="life_index_wind_force">Shamol tezligi</string>
+    <string name="light">Siyrak</string>
     <string name="light_rain_followed_by_heavy_rain">Yengil yomg‘irdan so‘ng kuchli yomg‘ir yog‘adi</string>
     <string name="light_rain_with_some_heavy_rain">Yengil yomg‘ir, vaqti-vaqti bilan kuchli yomg‘ir yog‘adi</string>
     <string name="link_tts">Havola</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Natijalar topilmadi.</string>
     <string name="message_service_not_available">Xizmatidan hozir foydalanib bo‘lmaydi.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Du</string>
     <string name="more">Yana</string>
     <string name="more_cuntact_us">Bog‘lanish</string>
     <string name="more_information">Ko‘proq</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Birlamchi ob-havo joylashuvini o‘zgartirish va barcha joylashuvlaringizni boshqarish uchun bu yerga teging.</string>
     <string name="new_version_available">%s’ning yangi versiyasi mavjud.</string>
     <string name="new_version_is_available">Yangi versiya mavjud.</string>
+    <string name="news_menu_show_news">Yangiliklarni ko‘rsatish</string>
+    <string name="news_opt_in_banner_title_text">Ob-havo vidjetida yangiliklarni ko‘rsatish orqali joriy hodisalardan xabardor bo‘ling.</string>
+    <string name="news_opt_in_popup_desc_text">Ob-havo vidjetidagi %s’dan so‘nggi sarlavhalarni ko‘rsatish orqali dunyo bilan hamnafas bo‘ling.</string>
+    <string name="news_opt_in_popup_title_text">Yangiliklar va ob-havoni bitta vidjetni ko‘ring</string>
+    <string name="news_request_agree_text">%s’dan yangiliklarni olish uchun teging</string>
+    <string name="news_widget_bubble_text">Ob-havo yangiliklarini oling.</string>
+    <string name="news_widget_dummy_title">Bugunning sara hikoyasi</string>
+    <string name="news_widget_new_dummy_title">Bugun ertalab bilishingiz zarur bo‘lgan 5 ta narsa</string>
+    <string name="news_widget_oobe_text">Yangilik qo‘shish u-n teging.</string>
     <string name="next">Keyingi shahar</string>
+    <string name="next_btn">Keyingi</string>
     <string name="next_city">Keyingi shahar ob-havo ma’lumotlarini ko‘rib chiqish uchun ikki marta teging.</string>
     <string name="night_tts">Tun</string>
     <string name="no_application_available">Ilovalar mavjud emas.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Ob-havo ma’lumoti yo‘q</string>
     <string name="not_in_use">Ishlatilmayapti</string>
     <string name="not_now">Hozir emas</string>
+    <string name="not_now_btn">Hozir emas</string>
     <string name="not_selected">Tanlanmagan</string>
     <string name="nothing_selected">Hech narsa tanlanmagan.</string>
     <string name="noti">Eslatma</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Joylashuvni tez va aniq aniqlash uchun PARAMETRLAR tugmasiga teging, so‘ngra Joylashuvni tanish usulini GPS, Wi-Fi va mobil tarmoqlarga qo‘ying.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Joylashuvni tez va aniq aniqlash uchun PARAMETRLAR tugmasiga teging, so‘ngra Joylashuvni tanish usulini GPS va Wi-Fi tarmoqqa qo‘ying.</string>
     <string name="notice_gps_trun_off_message_verizon">Mahalliy ob-havo ma’lumotlarini ko‘rish uchun joylashuv parametrlarini yoqing va rejim yuqori aniqlikka sozlanganiga ishonch hosil qiling.</string>
+    <string name="notification_alert_channel_name">Keskin ob-havo signali</string>
     <string name="notification_apps_update_channel_name">Yangilash bildirishnomalari</string>
     <string name="notification_auto_refresh_channel_name">Ob-havo avtomatik yangilanishi</string>
     <string name="notification_dex_channel_name">Samsung DeX’da ob-havo</string>
@@ -429,7 +454,7 @@
     <string name="notification_touch_widget_popup_content_for_one_hour_interval">Ob-havo ma’lumoti har soatda avtomatik ravishda yangilanadi. Buning uchun qo‘shimcha to‘lov olinishi mumkin. Ob-havo vidjeti parametrlarida yangilash intervalini o‘zgartirishingiz mumkin</string>
     <string name="notification_updating">Yangilanmoqda…</string>
     <string name="notifications">Bildirishnomalar</string>
-    <string name="off_text">O‘chir-gan</string>
+    <string name="off_text">O‘ch</string>
     <string name="on_text">Yoq.</string>
     <string name="only_support_in">Bu xizmat faqat %s’da qo‘llab-quvvatlanadi.</string>
     <string name="oobe_eula_description_permission_info">Joylashuv: Joriy joylashuv uchun ob-havo ma’lumotlarini qidirish uchun foydalaniladi.</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Ilovani ochish</string>
     <string name="open_source_licences">Ochiq manba litsenziyalari</string>
     <string name="other_locations">Boshqa joylashuvlar</string>
+    <string name="partly_sunny">Ba’zi joylarda quyosh</string>
     <string name="paused">To‘xtatilgan</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/s</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Yog‘ingarchilik: %d mm</string>
     <string name="preview">%s ko‘rib chiqilishi</string>
     <string name="previous">Avvalgi shahar</string>
+    <string name="previous_btn">Avvalgi</string>
     <string name="previous_city">Avvalgi shahar ob-havo ma’lumotlarini ko‘rib chiqish uchun ikki marta teging.</string>
     <string name="privacy_policy">Maxfiylik siyosati</string>
     <string name="probability_of_rain_text">Yomg‘ir ehtimoli</string>
     <string name="protect_your_content">Tarkibni himoya qilish</string>
+    <string name="ps_in">%s dyuym</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar va xaritalar</string>
     <string name="rain">Yomg‘ir</string>
     <string name="rain_followed_by_intense_heat">Yomg‘irdan so‘ng harorat ko‘tariladi</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Ob-havo ma’lumotini yangilash uchun PARAMETRLAR tugmasiga teging, Ilova ma’lumoti > Ruxsatlar menyusiga o‘ting, so‘ngra quyidagi ruxsatlarga ijozat bering va qayta urinib ko‘ring:</string>
     <string name="runtime_location_permission_title">Ruxsatlarga ijozat berish</string>
     <string name="runtime_oem_grant_permission_desc">%s ilovasiga quyidagilarga kirishga ruxsat berilgan:</string>
+    <string name="sat">Shan</string>
     <string name="save_button">Saqlash</string>
     <string name="search_most_searched_for">Eng ko‘p qidirilgan:</string>
     <string name="search_tab_cities">Shaharlar</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Yangi tarkib mavjud</string>
     <string name="sesl_material_overflow_badge_text_n">Y</string>
     <string name="sesl_more_item_label">Ko‘proq</string>
+    <string name="sesl_preferecne_badge_description">Yangi bildirishnoma</string>
     <string name="sesl_preferencecategory_added_title">Sarlavha</string>
     <string name="sesl_search_hint">Qidirish</string>
     <string name="sesl_searchview_description_clear">Qidirish maydonini tozalash</string>
@@ -530,7 +561,7 @@
     <string name="sesl_searchview_description_voice">Ovozli qidirish</string>
     <string name="sesl_switch_off">O‘chirilgan</string>
     <string name="sesl_switch_on">Yoqilgan</string>
-    <string name="sesl_switchbar_off_text">O‘chir-gan</string>
+    <string name="sesl_switchbar_off_text">O‘ch</string>
     <string name="sesl_switchbar_on_text">Yoq.</string>
     <string name="sesl_toolbar_collapse_description">O‘rash</string>
     <string name="set_default_location">Birlamchi joylashuv o‘rnat.</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Tarmoq ulanishini tekshiring va qayta urinib ko‘ring.</string>
     <string name="st_offline">Oflayn</string>
     <string name="st_view_less">Kamroq ko‘rish</string>
+    <string name="status_off">O‘ch</string>
+    <string name="status_on">Yoqilgan</string>
+    <string name="sun">Yak</string>
     <string name="sunny">Quyoshli</string>
     <string name="sunny_with_some_clouds">Quyosh chiqadi, havo vaqti-vaqti bilan bulutli bo‘ladi</string>
     <string name="sunny_with_some_heavy_rain">Quyosh chiqadi, vaqti-vaqti bilan kuchli yomg‘ir yog‘adi</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Eski qurilmangizdan ob-havoni tiklash uchun bu yerga teging.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Joylashuvni yana topishga urinish uchun QAYTA URINISH tugmasiga teging.</string>
     <string name="tap_setting_message_edge_panel">Mahalliy ob-havoga ega bo‘lish uchun Joylashuvni yoqing.</string>
+    <string name="tap_the_settings_icon">Parametrlar ikonachasiga teging.</string>
     <string name="tap_to_get_the_weather">Ob-havoni bilish uchun teging</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Talab va shartlar</string>
     <string name="the_latest_version">So‘nggi versiya oldinroq o‘rnatilgan.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">U bildirishnomalar va Kalendarga ham qo‘llaniladi.</string>
+    <string name="thu">Pay</string>
     <string name="tick_box_tts">Katakcha</string>
     <string name="ticked_tts">Belgi qo‘yilgan</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Har soat</string>
     <string name="title_select_locations">Joylashuvlarni tanlash</string>
     <string name="title_theme">Mavzular</string>
+    <string name="to_continue_agree_to_updated">Davom etish uchun bizning yangilangan %s’imizga rozilik bering.</string>
     <string name="to_get_local_weather_chn">"Ob-havo ma’lumotini olish uchun ayni paytdagi joylashuv haqidagi ma’lumotingiz ob-havo xizmati ta’minotchisiga yuboriladi. (Ta’minotchining %1$sTalab va shartlari%2$s hamda %3$sMaxfiylik siyosati%4$s ga qarang).
 Qurilmangizdagi boshqa ilovalar va xizmatlar ob-havoni ushbu ilovalarda ko‘rsatish uchun olingan ob-havo ma’lumotlariga kirishi mumkin.
 Sizni ob-havo ma’lumotlari bilan davomli ravishda ta’minlab turish uchun “Ob-havo” ilovasi siz ilovadan foydalanmayotgan paytingiz ham joylashuvingiz haqida ma’lumot olib turadi."</string>
     <string name="today">Bugun</string>
+    <string name="try_it_out_btn">Uni sinash</string>
+    <string name="tue">Se</string>
+    <string name="turn_on_to_use_precise_location">Bu funksiyadan foydalanish uchun %s’ga joylashuvingizga har doim kirish va Aniq joylashuvdan foydalanishni ham yoqishingiz zarur. Sozlamalarga teging, Ruxsatlar > Joylashuvga o‘ting.</string>
     <string name="tw_title_weather_broadcast">Eshittirish</string>
-    <string name="unable_to_check_for_updates">Yangilashlar mavjudligini tekshirib bo‘lmaydi. Tarmoq ulanishi yo‘q.</string>
+    <string name="unable_to_check_for_updates">Yangilashlarni tekshirib bo‘lmadi. Keyinroq qayta urinib ko‘ring.</string>
     <string name="unable_to_receive_info_msg">Ma’lumotni olib bo‘lmaydi</string>
     <string name="unticked_tts">Belgi olib tashlangan</string>
     <string name="unused">Ishlatilmaydigan</string>
     <string name="update">Yangilash</string>
     <string name="update_abb8">Yangilash</string>
     <string name="update_app">Ilovani yangilash</string>
+    <string name="updated_tile_chn">Yangilangan: %s</string>
     <string name="updated_tts">%s yangilandi</string>
+    <string name="use_current_location">Joriy joylashuvni ishlat</string>
     <string name="use_current_location_agree_popup">"Ob-havo ma’lumotini olish uchun ayni paytdagi joylashuvingiz haqidagi axborot ob-havo xizmati provayderiga yuboriladi. (Provayderning %1$smaxfiylik siyosatiga%2$s qarang.)
 Qurilmangizdagi boshqa ilova va xizmatlar ham o‘zida ob-havo ma’lumotini ko‘rsatish uchun mazkur olingan ob-havo ma’lumotidan foydalanishi mumkin."</string>
     <string name="use_current_location_and_background_agree_popup">"Ob-havo ma’lumotini olish uchun ayni paytdagi joylashuvi haqidagi ma’lumotingiz ob-havo xizmati ta’minotchisiga yuboriladi. (Ta’minotchining %1$sMaxfiylik siyosati%2$sga qarang.)
@@ -635,9 +677,16 @@ Sizni ob-havo ma’lumotlari bilan davomli ravishda ta’minlab turish uchun “
 Ob-havo ilovasi parametrlariga o‘tish orqali joylashuvingizdan foydalanishni o‘chirib qo‘yishingiz mumkin."</string>
     <string name="use_current_location_body_msg_chn">"“Ob-havo”dan foydalanishdan oldin diqqat bilan o‘qib chiqing :
 Agar hozirgi joylashuvingiuz haqidagi ob-havo ma’lumotini bilmoqchi bo‘lsangiz, uchinchi tomon xizmat ta’minotchisiga qurilmagingizga (hatto xizmatdan foydalanmayotgan paytingizda ham) davomli tarzda kirishiga va quyida ro‘yxati keltirilgan ma’lumotlarni olishiga ruxsat berishingiz kerak bo‘ladi. Bunday ruxsat berisdan oldin Uchinchi tomon xizmat ta’minotchisining %1$sTalab va shartlari%2$s hamda %3$sMaxfiylik siyosati%4$sni diqqat bilab o‘qib chiqing va tushinib oling. Parametrlar menyusidagi “Joylashuv” parametrini o‘chirish bilan ruxsatingizni bekor qilishingiz mumkin. Qurilmangizdagi boshqa ilovalar va xizmatlar hatto siz ilovadan foydalanmayotgan vaqtingizda ham o‘sha ilovalarda ob-havo ma’lumotlarini ko‘rsatish uchun chiqarib olingan ob-havo ma’lumotlaridan foydalanishi mumkin."</string>
+    <string name="use_current_location_body_msg_kor">"Mahalliy ob-havo axborotini olish kabi ayrim Ob-havo ilovasi funksiyalarini taqdim etish uchun joriy joylashuv axborotingiz olinadi va foydalaniladi.
+
+Ob-havo axborotini muntazam ravishda taqdim etish uchun ushbu ilova joylashuv axborotingizni hatto ilovadan foydalanmayotganingizda ham doimiy ravishda qayta ishlaydi. Siz davom etish orqali joylashuv axborotingizning yuqoridagi maqsadlarda olinishi va qayta ishlanishiga rozilik berasiz.
+
+Joylashuv axborotining olinishi va qayta ishlanishini Ob-havo ilovasi sozlamalarida toʻxtatishingiz mumkin."</string>
     <string name="use_current_location_body_purpose">Maqsad</string>
     <string name="use_current_location_body_purpose_content">Joriy joylashuvingiz uchun ob-havo ma’lumotini berish</string>
     <string name="use_current_location_body_search_provider">Xizmat ta’minotchisi</string>
+    <string name="use_current_location_continue">Davom ettirish</string>
+    <string name="use_current_location_not_now">Hozir emas</string>
     <string name="use_current_location_off_alert_popup">Joriy joylashuv ma’lumoti olib tashlanadi.</string>
     <string name="useful_informations">Maishiy maslahatlar va boshqa hisobotlar</string>
     <string name="using_as">%s sifatida boshqarish</string>
@@ -743,9 +792,11 @@ Agar hozirgi joylashuvingiuz haqidagi ob-havo ma’lumotini bilmoqchi bo‘lsang
     <string name="weather_tip">Ob-havo maslahatlari</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Chor</string>
     <string name="weekly_forecast">Kundalik</string>
     <string name="widget_background">Vidjet foni</string>
     <string name="widget_empty_text">Ob-havo ma’lumoti uchun teging</string>
+    <string name="widget_location">Shahar nomi</string>
     <string name="widget_name_4x1">Ob-havo va Soat</string>
     <string name="widget_setting">Parametrlar</string>
     <string name="widget_setting_background_color">Fon rangi</string>

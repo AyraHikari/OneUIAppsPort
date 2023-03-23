@@ -26,7 +26,7 @@
     <string name="abc_search_hint">সন্ধান কৰক…</string>
     <string name="abc_searchview_description_clear">সন্ধান কৰা প্ৰশ্ন মচক</string>
     <string name="abc_searchview_description_query">সন্ধান কৰা প্ৰশ্ন</string>
-    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_search">সন্ধান কৰক</string>
     <string name="abc_searchview_description_submit">প্ৰশ্ন দাখিল কৰক</string>
     <string name="abc_searchview_description_voice">কণ্ঠধ্বনিৰ দ্বাৰা সন্ধান</string>
     <string name="abc_shareactionprovider_share_with">ইয়াৰ জৰিয়তে শ্বেয়াৰ কৰক</string>
@@ -48,9 +48,9 @@
     <string name="add_to_your_home_and_apps_screen">আপোনাৰ গৃহ আৰু এপ্প্‌ স্ক্ৰীণসমূহত %s যোগ কৰক।</string>
     <string name="add_to_your_home_screen">আপোনাৰ গৃহ স্ক্ৰীণত %s যোগ কৰক।</string>
     <string name="add_weather_to_the_apps_screen">%s এপ্প্‌ স্ক্ৰীণত যোগ কৰক।</string>
-    <string name="add_weather_to_the_home_screen">%s গৃহ স্ক্ৰীণত যোগ কৰক।</string>
+    <string name="add_weather_to_the_home_screen">%s হোম স্ক্ৰীণত যোগ কৰক।</string>
     <string name="added_to_app_screen">%s এপ্প্‌সমূহৰ স্ক্ৰীণত যোগ কৰা হৈছে।</string>
-    <string name="added_to_home_screen">%s গৃহ স্ক্ৰীণত যোগ হৈছে।</string>
+    <string name="added_to_home_screen">%s হোম স্ক্ৰীণত যোগ হৈছে।</string>
     <string name="ads_settings_ads">বিজ্ঞাপনসমূহ</string>
     <string name="ads_settings_privacy_notice">বিজ্ঞাপনসমূহৰ গোপনীয়তা জাননী</string>
     <string name="ads_settings_privacy_settings">বিজ্ঞাপনসমূহৰ গোপনীয়তা ছেটিংছ</string>
@@ -60,6 +60,7 @@
     <string name="air_quality">বায়ুৰ গুণমান</string>
     <string name="air_quality_next_tts">পাছৰ দৈনিক বায়ুৰ গুণমানৰ আগজাননীসমূহ</string>
     <string name="air_quality_previous_tts">পূৰ্বৰ দৈনিক বায়ুৰ গুণমানৰ আগজাননীসমূহ</string>
+    <string name="alert_title">গম্ভীৰ বতৰৰ এলাৰ্ট</string>
     <string name="all_added_cities">যোগ হোৱা সকলো চহৰ</string>
     <string name="allow">অনুমতি</string>
     <string name="allow_permission_in_settings">এই সুবিধাটো ব্যৱহাৰ কৰিবলৈ, আপুনি ছেটিংছত অনুমতি প্ৰদান কৰাৰ প্ৰয়োজন।</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">কার্য সমর্থিত নহয়৷</string>
     <string name="apply_daylight_saving_time">দিনৰ পোহৰ সংৰক্ষণ সময় প্ৰয়োগ কৰিবনে?</string>
     <string name="as_possible_after_verification">"ৰিপ'ৰ্ট প্ৰেৰণ হৈছে। সত্যাপনৰ পিছত চহৰৰ নাম অতি সোনকালে পৰিৱৰ্তন কৰা হ'ব।"</string>
+    <string name="auto_refresh_on_screen_description">প্ৰতি ঘণ্টাত স্বয়ংক্ৰিয়ভাৱে সতেজ বতৰৰ তথ্য লাভ কৰক। এইটো অন থকাৰ সময়ত আপুনি মেনুৱেলভাৱে সতেজ কৰিব নোৱাৰে।</string>
+    <string name="auto_refresh_on_the_go">যাত্ৰা পথত স্বয়ং সতেজ কৰক</string>
+    <string name="auto_refresh_on_the_go_advanced">উন্নত</string>
+    <string name="auto_refresh_on_the_go_description">আপুনি ড্ৰাইভ কৰি থাকোতে, বাইক চলাই থাকোতে, দৌৰি থাকোতে বা খোজ কাঢ়ি থাকোতে অতি সঘনাই বতৰৰ আপডেটসমূহ লাভ কৰক। এইটো অন থকাৰ সময়ত আপুনি মেনুৱেলভাৱে সতেজ কৰিব নোৱাৰে।</string>
+    <string name="auto_refresh_on_the_go_simple_description">আপুনি ড্ৰাইভ কৰি থাকোতে, বাইক চলাই থাকোতে, দৌৰি থাকোতে বা খোজ কাঢ়ি থাকোতে অতি সঘনাই বতৰৰ আপডেটসমূহ লাভ কৰক।</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="btn_report">"ৰিপ'ৰ্ট"</string>
     <string name="button_finish">সমাপ্ত</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">অধিক তথ্যৰ বাবে দুবাৰ টিপক।</string>
     <string name="china">চীনা</string>
     <string name="cities_button">চহৰসমূহ</string>
+    <string name="city_added">চহৰ যোগ হৈছে।</string>
     <string name="city_list_text">চহৰসমূহ</string>
     <string name="clear">ফৰকাল</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
@@ -115,23 +122,22 @@
     <string name="common_google_play_services_install_text">%1$s Google প্লে সেৱাৰ অবিহনে নচলে, যিটো আপোনাৰ ডিভাইচত নাই।</string>
     <string name="common_google_play_services_install_title">Google প্লে সেৱালাভ কৰক</string>
     <string name="common_google_play_services_notification_channel_name">Google প্লে সেৱাসমূহৰ উপলব্ধতা</string>
-    <string name="common_google_play_services_notification_ticker">Google Playৰ সেৱা সম্পৰ্কীয় আসোঁৱাহ</string>
+    <string name="common_google_play_services_notification_ticker">Google Playৰ সেৱা সম্পৰ্কীয় আসোঁৱাহ</string>
     <string name="common_google_play_services_unknown_issue">Google প্লে সেৱাত %1$s ত সমস্যা হৈ আছে। আকৌ চেষ্টা কৰক।</string>
     <string name="common_google_play_services_unsupported_text">%1$s Google প্লে সেৱাৰ অবিহনে নচলে, যিবোৰ আপোনাৰ ডিভাইচত চলিব নোৱাৰে।</string>
     <string name="common_google_play_services_update_button">আপডে’ট কৰক</string>
     <string name="common_google_play_services_update_text">আপুনি Google Play সেৱাবোৰ আপডে’ট নকৰালৈকে %1$s নচলিব।</string>
     <string name="common_google_play_services_update_title">Google Play সেৱা আপডে’ট কৰক</string>
     <string name="common_google_play_services_updating_text">বৰ্তমান আপডে’ট হৈ থকা Google Play সেৱাসমূহৰ অবিহনে %1$s নচলিব৷</string>
-    <string name="common_google_play_services_wear_update_text">Google Play সেৱাসমূহৰ নতুন সংস্কৰণৰ প্ৰয়োজন৷ এইটো শীঘ্ৰেই নিজে-নিজে আপডে’ট হ’ব৷</string>
+    <string name="common_google_play_services_wear_update_text">Google Play সেৱাসমূহৰ নতুন সংস্কৰণৰ প্ৰয়োজন৷ এইটো শীঘ্ৰেই নিজে-নিজে আপডে’ট হ’ব৷</string>
     <string name="common_open_on_phone">"ফ'নত খোলক"</string>
     <string name="common_signin_button_text">ছাইন ইন কৰক</string>
-    <string name="common_signin_button_text_long">Googleৰ জৰিয়তে ছাইন ইন কৰক</string>
+    <string name="common_signin_button_text_long">Googleৰ জৰিয়তে ছাইন ইন কৰক</string>
     <string name="connect_to_network_to_view_local_weather_forecasts">বতৰৰ তথ্য দৰ্শন কৰিবলৈ এটা নেটৱৰ্কত সংযোগ কৰক।</string>
     <string name="connecting_via_mobile_network_incur_addtional_charges">"আপোনাৰ পৰিশোধ পদ্ধতিৰ প্লেনৰ ওপৰত নিৰ্ভৰ কৰি ম'বাইল নেটৱৰ্কৰ মাধ্যমেদি সংযোগ কৰাৰ ফলত অতিৰিক্ত ধন ভৰিব লাগিব পাৰে৷"</string>
     <string name="content_provider_mgs_legalphrase">আপোনাৰ ডিভাইচৰ অৱস্থান তথ্য সামগ্ৰী প্ৰদানকাৰীলৈ প্ৰেৰণ কৰা হ’ব যাতে আপোনাক স্থানীয় বতৰৰ তথ্য প্ৰদান কৰিব পৰা যায়৷</string>
     <string name="contents_error_msg">সেৱাটো অস্থায়ীভাৱে উপলব্ধ নহয়। অনুগ্ৰহ কৰি পিছত পুনঃচেষ্টা কৰক।</string>
     <string name="copy">প্ৰতিলিপি কৰক</string>
-    <string name="copy_toast_msg">লিংক ক্লিপব’ৰ্ডত প্ৰতিলিপি কৰা হ’ল</string>
     <string name="correct_city_name">চহৰ নাম শুদ্ধ কৰক</string>
     <string name="couldnt_find_location">"অৱস্থান বিচাৰিব পৰা নগ'ল"</string>
     <string name="cover_screen_top_sync_dialog_text">মূল স্ক্ৰীণত একে অৱস্থান ছেট কৰিবনে?</string>
@@ -141,8 +147,8 @@
     <string name="current_location_only">কেৱল সাম্প্ৰতিক অৱস্থান</string>
     <string name="current_tmep_tts">সাম্প্ৰতিক তাপমাত্ৰা</string>
     <string name="current_weather">শেহতীয়া বতৰ</string>
-    <string name="customise_your_device">আপোনাৰ ডিভাইচ অনুকূলন কৰক</string>
-    <string name="customization_service">অনুকূলন সেৱা</string>
+    <string name="customise_your_device">"আপোনাৰ ডিভাইচ কাষ্ট'মাইজ কৰক"</string>
+    <string name="customization_service">"কাষ্ট'মাইজেশ্বন সেৱা"</string>
     <string name="customization_service_description">আপোনাৰ দৈনিক ব্যৱহাৰৰ আৰ্হিৰ ওপৰত ভিত্তি কৰি আপোনাৰ অৱস্থানৰ বাবে আপ-টু-ডেট বতৰৰ অধিসূচনাসমূহ লাভ কৰক।</string>
     <string name="customization_service_improve_your_experience">অনুকূলন সেৱাই সমৰ্থিত এপ্প্‌সমূহ আৰু সেৱাসমূহত আপোনাৰ সমল ব্যক্তিগত কৰি আপোনাৰ অভিজ্ঞতা উন্নত কৰে।</string>
     <string name="daily_next_tts">পিছৰ দৈনিক আগজাননীসমূহ</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">অৱস্থান %d-ত আইটেম ৰখা হৈছে৷</string>
     <string name="dragndroplist_drag_start">অৱস্থান %d-ত আইটেম টানি অনা আৰম্ভ কৰিছে৷</string>
     <string name="dragndroplist_item_cannot_be_dragged">অৱস্থান %d-ৰ থকা আইটেম টানি আনিব নোৱাৰে৷</string>
+    <string name="drawer_tips">%s আভাস</string>
     <string name="drawer_tips_message">অৱস্থানসমূহ যোগ, বিলোপ আৰু পুনঃক্ৰম কৰিবলৈ ইয়াত টিপক। আপুনি হোম স্ক্ৰীণত বেলেগ বেলেগ অৱস্থানসমূহ দেখুৱাবলৈ একাধিক ৱিজেটো যোগ কৰিব পাৰে।</string>
     <string name="drawer_tips_message_1">অৱস্থানসমূহ যোগ, বিলোপ আৰু পুনঃক্ৰম কৰিবলৈ এই মেনুৰ তলত “অৱস্থানসমূহ পৰিচালনা কৰক” টিপক।</string>
     <string name="drawer_tips_message_2">আপুনি একে সময়ত দুটা বেলেগ অৱস্থান দেখুৱাবলৈ গৃহ স্ক্ৰীণত এটাতকৈ বেছি ৱিজেট যোগ কৰিব পাৰে।</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">উন্নত</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="failed_to_send_report">"ৰিপ'ৰ্ট প্ৰেৰণ কৰাত বিফল"</string>
-    <string name="fallback_menu_item_copy_link">লিংক প্ৰতিলিপি কৰক</string>
-    <string name="fallback_menu_item_open_in_browser">ব্ৰাউজাৰত খোলক</string>
-    <string name="fallback_menu_item_share_link">লিংক শ্বেয়াৰ কৰক</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">প্ৰিয় অৱস্থান</string>
     <string name="feel_like_pd_minus_temp">-%d°ৰ দৰে অনুভৱ কৰে</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">"আগজাননীৰ ভিডিঅ'"</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">শুক্ৰ</string>
     <string name="general">সাধাৰণ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">আপুনি আপোনাৰ ফোন কেনেকৈ ব্যৱহাৰ কৰে তাৰ ওপৰত ভিত্তি কৰি ব্যক্তিগতকৰণ সমল লাভ কৰক।</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">আপুনি আপোনাৰ টেবলেট কেনেকৈ ব্যৱহাৰ কৰে তাৰ ওপৰত ভিত্তি কৰি ব্যক্তিগতকৰণ সমল লাভ কৰক।</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">বতৰৰ পৰা আপোনাৰ সাম্প্ৰতিক অৱস্থানক অন্তৰ্ভুক্ত কৰি বতৰৰ তথ্য লাভ কৰক</string>
     <string name="go_to_website">ৱেবচাইটলৈ যাওক</string>
     <string name="goto_apps">নতুন আপডেট উপলভ্য৷ এতিয়া ইনষ্টল কৰিবনে?</string>
     <string name="goto_apps_later">পিছত</string>
     <string name="goto_apps_now">এতিয়া</string>
     <string name="goto_apps_update_title">নতুন সমলৰ সংকেত</string>
     <string name="header_tts">শীৰোশাৰী</string>
+    <string name="heavy">অধিক</string>
     <string name="heavy_rain">অতিপাত বৰষুণ</string>
     <string name="heavy_rain_followed_by_intense_heat">তীব্ৰ বৰষুণৰ পিছত তীব্ৰ গৰম</string>
     <string name="heavy_rain_followed_by_light_rain">তীব্ৰ বৰষুণৰ পিছত তীব্ৰ গৰম</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">দৃশ্যমানতা</string>
     <string name="life_index_wind">বতাহ</string>
     <string name="life_index_wind_force">বতাহৰ গতি</string>
+    <string name="light">লাইট</string>
     <string name="light_rain_followed_by_heavy_rain">লঘুভাৱে বৰষুণৰ পিছত তীব্ৰ বৰষুণ</string>
     <string name="light_rain_with_some_heavy_rain">কিছু তীব্ৰ বৰষুণৰ সৈতে লঘুভাৱে বৰষুণ</string>
     <string name="link_tts">লিংক</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">কোনো ফলাফল বিচাৰি নাপালে৷</string>
     <string name="message_service_not_available">এতিয়া সেৱা উপলভ্য নহয়৷</string>
     <string name="minus_tts">বিয়োগ</string>
+    <string name="mon">সোম</string>
     <string name="more">অধিক</string>
     <string name="more_cuntact_us">আমাৰ সৈতে সম্পৰ্ক কৰক</string>
     <string name="more_information">অধিক</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">"ডিফ'ল্ট বতৰৰ অৱস্থান পৰিৱৰ্তন কৰিবলৈ আৰু আপোনাৰ সকলো অৱস্থান পৰিচালনা কৰিবলৈ ইয়াত টিপক।"</string>
     <string name="new_version_available">%s-ৰ এটা নতুন সংস্কৰণ উপলব্ধ।</string>
     <string name="new_version_is_available">এটা নতুন সংস্কৰণ উপলভ্য৷</string>
+    <string name="news_menu_show_news">বাতৰি দেখুৱাওক</string>
+    <string name="news_opt_in_banner_title_text">বতৰ ৱিজেটত বাতৰি দেখুৱাই সাম্প্ৰতিক ইভেণ্টসমূহত আপ টু ডেট হৈ থাকক।</string>
+    <string name="news_opt_in_popup_desc_text">বতৰ ৱিজেটত %s-ৰ পৰা শেহতীয়া হেডলাইনসমূহ দেখুৱাই বিশ্বখনৰ সৈতে আপ টু ডেট হৈ থাকক।</string>
+    <string name="news_opt_in_popup_title_text">এখন ৱিজেটত বাতৰি আৰু বতৰ চাওক</string>
+    <string name="news_request_agree_text">%s-ৰ পৰা বাতৰি লাভ কৰিবলৈ টিপক</string>
+    <string name="news_widget_bubble_text">বতৰৰ সৈতে বাতৰি লাভ কৰক।</string>
+    <string name="news_widget_dummy_title">আজিৰ শীৰ্ষ গল্প</string>
+    <string name="news_widget_new_dummy_title">আজি ৰাতিপুৱা আপুনি জানিবলগীয়া 5 টা কথা</string>
+    <string name="news_widget_oobe_text">বাতৰি যোগ কৰিবলৈ ইয়াত টিপক।</string>
     <string name="next">পৰৱৰ্তী মহানগৰ</string>
+    <string name="next_btn">পৰৱৰ্তী</string>
     <string name="next_city">পৰৱৰ্তী চহৰৰ কাৰণে বতৰৰ তথ্য দৰ্শন কৰিবলৈ দুবাৰ টিপক৷</string>
     <string name="night_tts">ৰাতি</string>
     <string name="no_application_available">কোনো এপ্লিকেশ্বন উপলব্ধ নাই৷</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">কোনো বতৰৰ তথ্য নাই</string>
     <string name="not_in_use">ব্যৱহাৰত নাই</string>
     <string name="not_now">এতিয়া নহয়</string>
+    <string name="not_now_btn">এতিয়া নহয়</string>
     <string name="not_selected">চয়নিত নাই</string>
     <string name="not_set">ছেট কৰা হোৱা নাই</string>
     <string name="nothing_selected">একো চয়ন হোৱা নাই৷</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">"দ্ৰুততম আৰু প্ৰায় সঠিক অৱস্থান চিনাক্তকৰণৰ বাবে, “ছেটিংছ” টিপক, তাৰপিছত GPS আৰু Wi-Fi আৰু ম'বাইল নেটৱৰ্কৰ বাবে স্থাননিৰ্দ্ধাৰণৰ পদ্ধতি ছেট কৰক৷"</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">দ্ৰুততম আৰু প্ৰায় সঠিক অৱস্থান চিনাক্তকৰণৰ বাবে, “ছেটিংছ” টিপক, তাৰপিছত GPS আৰু Wi-Fi-ৰ বাবে স্থাননিৰ্দ্ধাৰণৰ পদ্ধতি ছেট কৰক৷</string>
     <string name="notice_gps_trun_off_message_verizon">"আপোনাৰ স্থানীয় বতৰৰ তথ্য দৰ্শন কৰিবলৈ, অৱস্থান ছেটিংছ অন কৰক আৰু ম'ডটো উচ্চ সঠিকতাত ছেট হৈ থকাটো নিশ্চিত কৰক।"</string>
+    <string name="notification_alert_channel_name">গম্ভীৰ বতৰৰ এলাৰ্ট</string>
     <string name="notification_apps_update_channel_name">অধিসূচনাসমূহ আপডেট কৰক</string>
     <string name="notification_auto_refresh_channel_name">বতৰ স্বয়ং সতেজ</string>
     <string name="notification_dex_channel_name">Samsung DeX-ত বতৰ</string>
@@ -544,6 +565,7 @@
     <string name="open_app">এপ্প্‌ খোলক</string>
     <string name="open_source_licences">মুক্ত উৎস লাইচেন্স</string>
     <string name="other_locations">অন্য অৱস্থানসমূহ</string>
+    <string name="partly_sunny">"আংশিকভাৱে ৰ'দালী"</string>
     <string name="password_toggle_content_description">পাছৱৰ্ড দেখুৱাওক</string>
     <string name="paused">বিৰতি দিছে</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">\"%1$s\" ক্লিপব’ৰ্ডত প্ৰতিলিপি কৰা হ’ল</string>
     <string name="preview">%s-ৰ পূৰ্বলোকন</string>
     <string name="previous">আগৰ মহানগৰ</string>
+    <string name="previous_btn">পূৰ্বৱৰ্তী</string>
     <string name="previous_city">পূৰ্বৱৰ্তী চহৰৰ কাৰণে বতৰৰ তথ্য দৰ্শন কৰিবলৈ দুবাৰ টিপক৷</string>
     <string name="privacy_policy">গোপনীয়তা নীতি</string>
     <string name="probability_of_rain_text">বৰষুণৰ সম্ভাৱনীয়তা</string>
     <string name="protect_your_content">আপোনাৰ সমল সুৰক্ষিত কৰক</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">ৰাডাৰ আৰু মেপসমূহ</string>
     <string name="rain">বৰষুণ</string>
     <string name="rain_followed_by_intense_heat">বৰষুণৰ পিছত গৰম</string>
@@ -603,8 +628,9 @@
     <string name="runtime_location_permission_desc">বতৰৰ তথ্য আপডেট কৰিবলৈ, “ছেটিংছ” টিপক, এপ্প্‌ তথ্য > অনুমতিলৈ যাওক, তাৰপিছত নিম্নলিখিত অনুমতি প্ৰদান কৰক আৰু পুনঃচেষ্টা কৰক:</string>
     <string name="runtime_location_permission_title">অনুমতি প্ৰদান কৰক</string>
     <string name="runtime_oem_grant_permission_desc">%s এপ্প্‌-এ নিম্নলিখিত প্ৰৱেশ কৰিবলৈ অনুমতি প্ৰদান কৰিছে:</string>
+    <string name="sat">শনি</string>
     <string name="save_button">সংৰক্ষণ কৰক</string>
-    <string name="search_menu_title">Search</string>
+    <string name="search_menu_title">সন্ধান</string>
     <string name="search_most_searched_for">অধিক অনুসন্ধান কৰাসমূহ</string>
     <string name="search_tab_cities">চহৰ</string>
     <string name="search_tab_themes">থীম</string>
@@ -613,7 +639,7 @@
     <string name="select_city">চহৰ চয়ন কৰক</string>
     <string name="select_content_size">সমলৰ আকাৰ চয়ন কৰক</string>
     <string name="select_dpi_description">আইকন, পাঠ আৰু নিয়ন্ত্ৰণৰ আকাৰ চয়ন কৰক।</string>
-    <string name="select_font_size_message">গৃহ স্ক্ৰীণত পাঠ, ক্ষিপ্ৰ ছেটিংছ পেনেল আৰু ডিভাইচৰ অন্য ক্ষেত্ৰৰ আকাৰত প্ৰভাৱ নপৰিব পাৰে।</string>
+    <string name="select_font_size_message">হোম স্ক্ৰীণত পাঠ, ক্ষিপ্ৰ ছেটিংছ পেনেল আৰু ডিভাইচৰ অন্য ক্ষেত্ৰৰ আকাৰত প্ৰভাৱ নপৰিব পাৰে।</string>
     <string name="select_location">স্থাননিৰ্দ্ধাৰণৰ পদ্ধতি পৰিৱৰ্তন কৰক</string>
     <string name="select_locations">অৱস্থানসমূহ চয়ন কৰক</string>
     <string name="selected">চয়নিত</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">নতুন সমল উপলব্ধ</string>
     <string name="sesl_material_overflow_badge_text_n">ন</string>
     <string name="sesl_more_item_label">অধিক</string>
+    <string name="sesl_preferecne_badge_description">নতুন অধিসূচনা</string>
     <string name="sesl_preferencecategory_added_title">শীৰোশাৰী</string>
     <string name="sesl_search_hint">অনুসন্ধান কৰক</string>
     <string name="sesl_searchview_description_clear">অনুসন্ধান ফিল্ড পৰিষ্কাৰ কৰক</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">অফলাইন</string>
     <string name="st_view_less">কম দৰ্শন কৰক</string>
     <string name="status_bar_notification_info_overflow">৯৯৯+</string>
+    <string name="status_off">অফ</string>
+    <string name="status_on">অন</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">ৰবি</string>
     <string name="sunny">উজ্জ্বল</string>
     <string name="sunny_with_some_clouds">অলপ ডাৱৰীয়াৰ সৈতে ফৰকাল</string>
     <string name="sunny_with_some_heavy_rain">"কিছু তীব্ৰ বৰষুণৰ সৈতে ৰ'দ"</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">আপোনাৰ পুৰণি ডিভাইচৰ পৰা বতৰৰ ডাটা পুনঃসংগ্ৰহ কৰিবলৈ ইয়াত টিপক।</string>
     <string name="tap_retry_to_try_to_find_your_location_again">আপোনাৰ অৱস্থান পুনঃ বিচাৰিবৰ বাবে চেষ্টা কৰিবলৈ “পুনঃচেষ্টা” টিপক।</string>
     <string name="tap_setting_message_edge_panel">স্থানীয় বতৰ প্ৰাপ্ত কৰিবলৈ অৱস্থান অন কৰক।</string>
+    <string name="tap_the_settings_icon">ছেটিংছ আইকন টিপক৷</string>
     <string name="tap_to_get_the_weather">বতৰ প্ৰাপ্ত কৰিবলৈ টিপক</string>
     <string name="temp_f_c">%d° ফাৰেনহাইট</string>
     <string name="temp_f_m">%d° চেলছিয়াচ</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">চুক্তি আৰু চৰ্ত</string>
     <string name="the_latest_version">শেহতীয়া সংস্কৰণ ইতিমধ্যে ইনষ্টল হৈছে৷</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">"এইটো অধিসূচনাসমূহ আৰু কেলেণ্ডাৰত প্ৰয়োগ কৰা হ'ব।"</string>
+    <string name="thu">বৃহ</string>
     <string name="tick_box_tts">চেকবক্স</string>
     <string name="ticked_tts">টিক হৈছে</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">প্ৰতি ঘণ্টা</string>
     <string name="title_select_locations">অৱস্থানসমূহ চয়ন কৰক</string>
     <string name="title_theme">থীম</string>
+    <string name="to_continue_agree_to_updated">অব্যাহত ৰাখিবলৈ, আমাৰ আপডেট কৰা %sৰ লগত সহমত হওক।</string>
     <string name="to_get_local_weather_chn">"স্থানীয় বতৰ প্ৰাপ্ত কৰিবলৈ, আপোনাৰ বৰ্তমান অৱস্থানক বতৰ সেৱা প্ৰদানকাৰীলৈ প্ৰেৰণ কৰা হ’ব৷ (অনুগ্ৰহ কৰি প্ৰদানকাৰীৰ %1$s চুক্তি আৰু চৰ্তসমূহ%2$s আৰু %3$sগোপনীয়তা নীতি%4$s)।
 আপোনাৰ ডিভাইচৰ অন্য এপ আৰু সেৱাসমূহে সেই এপ্প্সমূহত বতৰ প্ৰদৰ্শন কৰিবৰ বাবে পুনৰুদ্ধাৰ কৰা বতৰৰ তথ্যত প্ৰৱেশ কৰিব পাৰে।
 আপোনাক বতৰৰ তথ্য অবিৰতভাৱে প্ৰদান কৰিবৰ বাবে, বতৰে আপোনাৰ অৱস্থানত প্ৰৱেশ কৰিব লাগিব, তেতিয়াও যেতিয়া আপুনি এই এপটো ব্যৱহাৰ নকৰে।"</string>
     <string name="today">আজি</string>
+    <string name="try_it_out_btn">চেষ্টা কৰক</string>
+    <string name="tue">মঙ্গল</string>
+    <string name="turn_on_to_use_precise_location">এই সুবিধাটো ব্যৱহাৰ কৰিবলৈ, আপুনি সকলো সময়তে আপোনাৰ অৱস্থানত প্ৰৱেশ কৰিবলৈ আৰু সঠিক অৱস্থান ব্যৱহাৰ কৰক অন কৰিবলৈ %s-ক অনুমতি দিয়াৰ প্ৰয়োজন। “ছেটিংছ” টিপক, তাৰপিছত অনুমতি > অৱস্থানলৈ যাওক।</string>
     <string name="tw_title_weather_broadcast">"ব্ৰ'ডকাষ্ট"</string>
-    <string name="unable_to_check_for_updates">আপডেটৰ বাবে পৰীক্ষা কৰাত অক্ষম। ইয়াত কোনো নেটৱৰ্ক সংযোগ নাই।</string>
+    <string name="unable_to_check_for_updates">"আপডেটসমূহৰ বাবে পৰীক্ষা কৰিব পৰা নগ'ল। পিছত পুনঃচেষ্টা কৰক।"</string>
     <string name="unable_to_receive_info_msg">তথ্য প্ৰাপ্ত কৰাত অক্ষম</string>
     <string name="unticked_tts">চিহ্নিত নকৰা</string>
     <string name="unused">অব্যৱহৃত</string>
     <string name="update">আপডেট কৰক</string>
     <string name="update_abb8">আপডেট</string>
     <string name="update_app">এপ্প্‌ আপডেট কৰক</string>
+    <string name="updated_tile_chn">আপডেট হৈছে: %s</string>
     <string name="updated_tts">%s আপডেট হৈছে</string>
+    <string name="use_current_location">সাম্প্ৰতিক অৱস্থান ব্যৱহাৰ</string>
     <string name="use_current_location_agree_popup">"স্থানীয় বতৰৰ সংবাদ লাভ কৰিবলৈ, আপোনাৰ বৰ্তমান অৱস্থানক বতৰ সেৱা প্ৰদানকাৰীলৈ প্ৰেৰণ কৰা হ’ব৷ (অনুগ্ৰহ কৰি প্ৰদানকাৰীৰ %1$sগোপনীয়তা নীতি%2$s চাওক৷)
 আপোনাৰ ডিভাইচত অন্য এপ্প্‌ আৰু সেৱাসমূহে সেই এপ্প্‌সমূহত বতৰ দেখুৱাবলৈ পুনৰুদ্ধাৰ কৰা বতৰৰ ডাটাত প্ৰৱেশ কৰিবও পাৰে৷"</string>
     <string name="use_current_location_and_background_agree_popup">"স্থানীয় বতৰৰ সংবাদ লাভ কৰিবলৈ, আপোনাৰ বৰ্তমান অৱস্থানক বতৰ সেৱা প্ৰদানকাৰীলৈ প্ৰেৰণ কৰা হ’ব৷ (অনুগ্ৰহ কৰি প্ৰদানকাৰীৰ %1$sগোপনীয়তা পলিচি%2$s চাওক।)
@@ -746,9 +784,16 @@
 বতৰ এপ্প্ ছেটিংছলৈ গৈ আপুনি আপোনাৰ অৱস্থান ব্যৱহাৰ কৰাটো অফ কৰিব পাৰে।"</string>
     <string name="use_current_location_body_msg_chn">"অনুগ্ৰহ কৰি \"বতৰ\" ব্যৱহাৰ কৰাৰ আগতে সাৱধানতাৰে পঢ়ক :
 আপুনি যদি আপোনাৰ বৰ্তমানৰ অৱস্থানৰ বতৰ জানিব বিচাৰে, আপুনি তৃতীয় পক্ষ সেৱা প্ৰদানকাৰীক আপোনাৰ ডিভাইচলৈ অবিৰতভাৱে (তেতিয়াও যেতিয়া আপুনি সেৱাটো ব্যৱহাৰ কৰি থকা নাই) প্ৰৱেশ কৰিবলৈ আৰু তলত তালিকাভুক্ত কৰাৰ দৰে কিছুমান নিৰ্দিষ্ট ডাটা সংগ্ৰহ কৰিবলৈ অনুমতি প্ৰদান কৰিব লাগিব। অনুগ্ৰহ কৰি সাৱধানতাৰে পঢ়ক আৰু এনে অনুমতি প্ৰদান কৰাৰ আগতে তৃতীয় পক্ষ সেৱা প্ৰদানকাৰীৰ %1$s চুক্তি আৰু চৰ্তসমূ%2$s আৰু %3$sগোপনীয়তা নীতি%4$s বুজি লওক। আপুনি ছেটিংছ মেনুত \"অৱস্থান\"-ক অফ কৰি আপোনাৰ অনুমতিক প্ৰত্যাহাৰ কৰিব পাৰে। আপোনাৰ ডিভাইচত থকা অন্য এপ‌ আৰু সেৱাসমূহে সেই এপ‌ আৰু সেৱাসমূহত বতৰ দেখুৱাবলৈ পুনৰুদ্ধাৰ কৰা বতৰৰ ডাটাত প্ৰৱেশ কৰিব পাৰে।"</string>
+    <string name="use_current_location_body_msg_kor">"কিছুমান বতৰ এপ্প্‌ৰ সুবিধা প্ৰদান কৰিবলৈ আপোনাৰ সাম্প্ৰতিক অৱস্থান সংগ্ৰহ আৰু ব্যৱহাৰ কৰা হ'ব, যেনে আপোনাৰ স্থানীয় বতৰৰ তথ্য লাভ কৰা।
+
+একেৰাহে বতৰৰ তথ্য প্ৰদান কৰিবৰ কাৰণে, এই এপ্প্‌টোৱে নিয়মীয়াকৈ আপোনাৰ অৱস্থানৰ প্ৰক্ৰিয়া কৰিব, আনকি আপুনি এপ্প্‌টো ব্যৱহাৰ নকৰাৰ সময়তো। অব্যাহত ৰাখি, আপুনি ওপৰোক্ত উদ্দেশ্যৰ বাবে আপোনাৰ অৱস্থানৰ সংগ্ৰহ আৰু প্ৰক্ৰিয়াকৰণৰ লগত সহমত হয়।
+
+আপুনি বতৰ এপ্প্‌ ছেটিংছত এই অৱস্থান সংগ্ৰহ আৰু ব্যৱহাৰ বন্ধ কৰিব পাৰে।"</string>
     <string name="use_current_location_body_purpose">উদ্দেশ্য</string>
     <string name="use_current_location_body_purpose_content">আপোনাৰ বৰ্তমানৰ অৱস্থানৰ বাবে বতৰৰ তথ্য প্ৰদান কৰিবলৈ</string>
     <string name="use_current_location_body_search_provider">সেৱা প্ৰদানকাৰী</string>
+    <string name="use_current_location_continue">অব্যাহত ৰাখক</string>
+    <string name="use_current_location_not_now">এতিয়া নহয়</string>
     <string name="use_current_location_off_alert_popup">"সাম্প্ৰতিক অৱস্থান তথ্য আঁতৰোৱা হ'ব৷"</string>
     <string name="useful_informations">"জীৱনৰ আভাস আৰু অন্য ৰিপ'ৰ্টসমূহ"</string>
     <string name="using_as">%s-ৰ ৰূপত ব্যৱহাৰ কৰি আছে</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">বতৰৰ আভাসসমূহ</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">বুধ</string>
     <string name="weekly_forecast">দৈনিক</string>
     <string name="widget_background">ৱিজেটৰ পৃষ্ঠভূমি</string>
     <string name="widget_empty_text">বতৰৰ তথ্যৰ বাবে টিপক</string>
+    <string name="widget_location">মহানগৰৰ নাম</string>
     <string name="widget_name_4x1">বতৰ আৰু ঘড়ী</string>
     <string name="widget_setting">ছেটিংছ</string>
     <string name="widget_setting_background_color">পৃষ্ঠভূমিৰ ৰং</string>

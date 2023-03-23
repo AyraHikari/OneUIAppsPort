@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="end|bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_size" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/illust_icon_snow" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+    <FrameLayout android:gravity="bottom" android:id="@id/widget_illust_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/guide_size" android:layout_alignBottom="@id/guide_size" android:layout_alignStart="@id/guide_size" android:layout_alignEnd="@id/guide_size" />
+</RelativeLayout>

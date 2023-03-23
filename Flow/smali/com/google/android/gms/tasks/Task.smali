@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/tasks/Task;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-tasks@@18.0.1"
 
 
 # annotations
@@ -17,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
         }
     .end annotation
 
-    .line 7
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "addOnCanceledListener is not implemented."
@@ -60,7 +60,7 @@
         }
     .end annotation
 
-    .line 5
+    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "addOnCanceledListener is not implemented."
@@ -83,7 +83,7 @@
         }
     .end annotation
 
-    .line 6
+    .line 3
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "addOnCanceledListener is not implemented"
@@ -106,7 +106,7 @@
         }
     .end annotation
 
-    .line 4
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "addOnCompleteListener is not implemented"
@@ -251,7 +251,7 @@
         }
     .end annotation
 
-    .line 8
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "continueWith is not implemented"
@@ -276,7 +276,7 @@
         }
     .end annotation
 
-    .line 9
+    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "continueWith is not implemented"
@@ -302,7 +302,7 @@
         }
     .end annotation
 
-    .line 10
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "continueWithTask is not implemented"
@@ -329,7 +329,7 @@
         }
     .end annotation
 
-    .line 11
+    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "continueWithTask is not implemented"
@@ -391,7 +391,7 @@
         }
     .end annotation
 
-    .line 12
+    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "onSuccessTask is not implemented"
@@ -416,7 +416,7 @@
         }
     .end annotation
 
-    .line 13
+    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "onSuccessTask is not implemented"

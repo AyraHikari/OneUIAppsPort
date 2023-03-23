@@ -6,6 +6,14 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "itemView"
+        }
+    .end annotation
 
     .line 12
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V

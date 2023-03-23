@@ -13,11 +13,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0011\u0008\u0086\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011\u00a8\u0006\u0012"
     }
@@ -45,9 +40,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -86,192 +82,277 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method private static final synthetic $values()[Lkotlin/annotation/AnnotationTarget;
+    .locals 3
 
     const/16 v0, 0xf
 
     new-array v0, v0, [Lkotlin/annotation/AnnotationTarget;
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->CLASS:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "CLASS"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->ANNOTATION_CLASS:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->CLASS:Lkotlin/annotation/AnnotationTarget;
+    const/4 v2, 0x1
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->TYPE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "ANNOTATION_CLASS"
+    const/4 v2, 0x2
 
-    const/4 v3, 0x1
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->PROPERTY:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->ANNOTATION_CLASS:Lkotlin/annotation/AnnotationTarget;
+    const/4 v2, 0x3
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->FIELD:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "TYPE_PARAMETER"
+    const/4 v2, 0x4
 
-    const/4 v3, 0x2
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->LOCAL_VARIABLE:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->TYPE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
+    const/4 v2, 0x5
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->VALUE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "PROPERTY"
+    const/4 v2, 0x6
 
-    const/4 v3, 0x3
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->CONSTRUCTOR:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->PROPERTY:Lkotlin/annotation/AnnotationTarget;
+    const/4 v2, 0x7
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->FUNCTION:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "FIELD"
+    const/16 v2, 0x8
 
-    const/4 v3, 0x4
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->PROPERTY_GETTER:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->FIELD:Lkotlin/annotation/AnnotationTarget;
+    const/16 v2, 0x9
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->PROPERTY_SETTER:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "LOCAL_VARIABLE"
+    const/16 v2, 0xa
 
-    const/4 v3, 0x5
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->TYPE:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->LOCAL_VARIABLE:Lkotlin/annotation/AnnotationTarget;
+    const/16 v2, 0xb
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->EXPRESSION:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "VALUE_PARAMETER"
+    const/16 v2, 0xc
 
-    const/4 v3, 0x6
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->FILE:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->VALUE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
+    const/16 v2, 0xd
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sget-object v1, Lkotlin/annotation/AnnotationTarget;->TYPEALIAS:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "CONSTRUCTOR"
+    const/16 v2, 0xe
 
-    const/4 v3, 0x7
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    return-object v0
+.end method
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->CONSTRUCTOR:Lkotlin/annotation/AnnotationTarget;
+.method static constructor <clinit>()V
+    .locals 3
 
-    aput-object v1, v0, v3
+    .line 26
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    const-string v1, "CLASS"
 
-    const-string v2, "FUNCTION"
+    const/4 v2, 0x0
 
-    const/16 v3, 0x8
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->CLASS:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->FUNCTION:Lkotlin/annotation/AnnotationTarget;
+    .line 28
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    aput-object v1, v0, v3
+    const-string v1, "ANNOTATION_CLASS"
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    const/4 v2, 0x1
 
-    const-string v2, "PROPERTY_GETTER"
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    const/16 v3, 0x9
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->ANNOTATION_CLASS:Lkotlin/annotation/AnnotationTarget;
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    .line 30
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->PROPERTY_GETTER:Lkotlin/annotation/AnnotationTarget;
+    const-string v1, "TYPE_PARAMETER"
 
-    aput-object v1, v0, v3
+    const/4 v2, 0x2
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    const-string v2, "PROPERTY_SETTER"
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->TYPE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
 
-    const/16 v3, 0xa
+    .line 32
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    const-string v1, "PROPERTY"
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->PROPERTY_SETTER:Lkotlin/annotation/AnnotationTarget;
+    const/4 v2, 0x3
 
-    aput-object v1, v0, v3
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->PROPERTY:Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "TYPE"
+    .line 34
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    const/16 v3, 0xb
+    const-string v1, "FIELD"
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    const/4 v2, 0x4
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->TYPE:Lkotlin/annotation/AnnotationTarget;
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    aput-object v1, v0, v3
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->FIELD:Lkotlin/annotation/AnnotationTarget;
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    .line 36
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    const-string v2, "EXPRESSION"
+    const-string v1, "LOCAL_VARIABLE"
 
-    const/16 v3, 0xc
+    const/4 v2, 0x5
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->EXPRESSION:Lkotlin/annotation/AnnotationTarget;
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->LOCAL_VARIABLE:Lkotlin/annotation/AnnotationTarget;
 
-    aput-object v1, v0, v3
+    .line 38
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    const-string v1, "VALUE_PARAMETER"
 
-    const-string v2, "FILE"
+    const/4 v2, 0x6
 
-    const/16 v3, 0xd
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->VALUE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->FILE:Lkotlin/annotation/AnnotationTarget;
+    .line 40
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    aput-object v1, v0, v3
+    const-string v1, "CONSTRUCTOR"
 
-    new-instance v1, Lkotlin/annotation/AnnotationTarget;
+    const/4 v2, 0x7
 
-    const-string v2, "TYPEALIAS"
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
 
-    const/16 v3, 0xe
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->CONSTRUCTOR:Lkotlin/annotation/AnnotationTarget;
 
-    invoke-direct {v1, v2, v3}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+    .line 42
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    sput-object v1, Lkotlin/annotation/AnnotationTarget;->TYPEALIAS:Lkotlin/annotation/AnnotationTarget;
+    const-string v1, "FUNCTION"
 
-    aput-object v1, v0, v3
+    const/16 v2, 0x8
+
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->FUNCTION:Lkotlin/annotation/AnnotationTarget;
+
+    .line 44
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
+
+    const-string v1, "PROPERTY_GETTER"
+
+    const/16 v2, 0x9
+
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->PROPERTY_GETTER:Lkotlin/annotation/AnnotationTarget;
+
+    .line 46
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
+
+    const-string v1, "PROPERTY_SETTER"
+
+    const/16 v2, 0xa
+
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->PROPERTY_SETTER:Lkotlin/annotation/AnnotationTarget;
+
+    .line 48
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
+
+    const-string v1, "TYPE"
+
+    const/16 v2, 0xb
+
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->TYPE:Lkotlin/annotation/AnnotationTarget;
+
+    .line 50
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
+
+    const-string v1, "EXPRESSION"
+
+    const/16 v2, 0xc
+
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->EXPRESSION:Lkotlin/annotation/AnnotationTarget;
+
+    .line 52
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
+
+    const-string v1, "FILE"
+
+    const/16 v2, 0xd
+
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->FILE:Lkotlin/annotation/AnnotationTarget;
+
+    .line 54
+    new-instance v0, Lkotlin/annotation/AnnotationTarget;
+
+    const-string v1, "TYPEALIAS"
+
+    const/16 v2, 0xe
+
+    invoke-direct {v0, v1, v2}, Lkotlin/annotation/AnnotationTarget;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/annotation/AnnotationTarget;->TYPEALIAS:Lkotlin/annotation/AnnotationTarget;
+
+    invoke-static {}, Lkotlin/annotation/AnnotationTarget;->$values()[Lkotlin/annotation/AnnotationTarget;
+
+    move-result-object v0
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->$VALUES:[Lkotlin/annotation/AnnotationTarget;
 
@@ -311,7 +392,7 @@
 
     sget-object v0, Lkotlin/annotation/AnnotationTarget;->$VALUES:[Lkotlin/annotation/AnnotationTarget;
 
-    invoke-virtual {v0}, [Lkotlin/annotation/AnnotationTarget;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

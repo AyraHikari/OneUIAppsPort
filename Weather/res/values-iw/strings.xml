@@ -56,10 +56,11 @@
     <string name="ads_settings_privacy_settings">הגדרות הפרטיות של פרסומות</string>
     <string name="after_you_agree_to_all_of_the_above">לאחר שתסכים לכל האמור לעיל, הודעה זו לא תוצג עוד.</string>
     <string name="agree_to_all">הסכם לכל</string>
-    <string name="agree_txt">הסכם</string>
+    <string name="agree_txt">מסכים</string>
     <string name="air_quality">איכות האוויר</string>
     <string name="air_quality_next_tts">תחזיות איכות אוויר יומיות מאוחרות יותר</string>
     <string name="air_quality_previous_tts">תחזיות איכות אוויר יומיות מוקדמות יותר</string>
+    <string name="alert_title">התראת מזג אוויר חמורה</string>
     <string name="all_added_cities">כל הערים שנוספו</string>
     <string name="allow">אפשר</string>
     <string name="allow_permission_in_settings">"כדי להשתמש בתכונה זו עליך לאשר את ההרשאה המתאימה תחת 'הגדרות'."</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">הפעולה אינה נתמכת.</string>
     <string name="apply_daylight_saving_time">להחיל שעון קיץ?</string>
     <string name="as_possible_after_verification">הדוח נשלח. שם העיר ישתנה בהקדם האפשרי לאחר האימות.</string>
+    <string name="auto_refresh_on_screen_description">קבל מידע מעודכן על מזג האוויר באופן אוטומטי מדי שעה. כאשר אפשרות זו מופעלת, לא ניתן לרענן ידנית.</string>
+    <string name="auto_refresh_on_the_go">רענן אוטומטית מהדרך</string>
+    <string name="auto_refresh_on_the_go_advanced">מתקדם</string>
+    <string name="auto_refresh_on_the_go_description">קבל עדכוני תחזית תכופים יותר בזמן נהיגה, רכיבה על אפניים, ריצה או הליכה. כאשר פונקציה זו מופעלת, אינך יכול לבצע רענון ידני.</string>
+    <string name="auto_refresh_on_the_go_simple_description">קבל עדכוני תחזית תכופים יותר בזמן נהיגה, רכיבה על אופניים, ריצה או הליכה.</string>
     <string name="bottomsheet_action_expand_halfway">הרחבה עד האמצע</string>
     <string name="btn_report">דווח</string>
     <string name="button_finish">סיום</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">הקש הקשה כפולה כדי להציג מידע נוסף.</string>
     <string name="china">סין</string>
     <string name="cities_button">ערים</string>
+    <string name="city_added">נוספה עיר.</string>
     <string name="city_list_text">ערים</string>
     <string name="clear">נקה</string>
     <string name="clear_text_end_icon_content_description">מחיקת הטקסט</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">פרטי המיקום של המכשיר שלך יישלחו לספק התוכן כדי לקבל ממנו את תחזית מזג האוויר המקומית.</string>
     <string name="contents_error_msg">שירות זה אינו זמין כרגע. נסה שוב מאוחר יותר.</string>
     <string name="copy">העתקה</string>
-    <string name="copy_toast_msg">הקישור הועתק ללוח</string>
     <string name="correct_city_name">תיקון שם עיר</string>
     <string name="couldnt_find_location">לא ניתן לאתר מיקום</string>
     <string name="cover_screen_top_sync_dialog_text">להגדיר את אותו המיקום על המסך הראשי?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">הפריט שוחרר במיקום %d.</string>
     <string name="dragndroplist_drag_start">גרירת הפריט החלה במיקום %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">לא ניתן לגרור פריטים במיקום %d.</string>
+    <string name="drawer_tips">%s עצות</string>
     <string name="drawer_tips_message">הקש כאן כדי להוסיף, למחוק ולשנות את הסדר של מיקומים. תוכל גם להוסיף מספר יישומונים כדי להציג במסך הבית מספר מיקומים.</string>
     <string name="drawer_tips_message_1">"כדי להוסיף, למחוק או לשנות את הסדר של מיקומים, הקש על 'נהל מיקומים' בתחתית תפריט זה."</string>
     <string name="drawer_tips_message_2">כדי להציג מיקומים שונים במקביל, תוכל להוסיף יותר מיישומון אחד במסך הבית.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">מתקדם</string>
     <string name="exposed_dropdown_menu_content_description">הצגת התפריט הנפתח</string>
     <string name="failed_to_send_report">שליחת הדוח נכשלה</string>
-    <string name="fallback_menu_item_copy_link">להעתקת הקישור</string>
-    <string name="fallback_menu_item_open_in_browser">פתיחה בדפדפן</string>
-    <string name="fallback_menu_item_share_link">לשיתוף הקישור</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">מיקום מועדף</string>
     <string name="feel_like_pd_minus_temp">הרגשה כמו ‎-%d°‎‎</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">סרטון תחזית</string>
     <string name="format_km_per_hour">%s קמ\"ש</string>
     <string name="format_m_per_hour">%s מייל/שעה</string>
+    <string name="fri">"ו'"</string>
     <string name="general">כללי</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">קבל תוכן בהתאמה אישית בהתאם לדפוס השימוש שלך בטלפון.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">קבל תוכן בהתאמה אישית בהתאם לדפוס השימוש שלך בטאבלט.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">"קבל מידע על מזג האוויר, כולל המיקום הנוכחי שלך, מהיישום 'מזג אוויר'"</string>
     <string name="go_to_website">עבור אל האתר</string>
     <string name="goto_apps">עדכון חדש זמין. להתקין כעת?</string>
     <string name="goto_apps_later">מאוחר יותר</string>
     <string name="goto_apps_now">כעת</string>
     <string name="goto_apps_update_title">התראות תוכן חדש</string>
     <string name="header_tts">כותרת</string>
+    <string name="heavy">רבה</string>
     <string name="heavy_rain">גשם כבד</string>
     <string name="heavy_rain_followed_by_intense_heat">גשם כבד מלווה בחום כבד</string>
     <string name="heavy_rain_followed_by_light_rain">גשם כבד מלווה בחום כבד</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">נראות</string>
     <string name="life_index_wind">רוח</string>
     <string name="life_index_wind_force">מהירות הרוח</string>
+    <string name="light">קלה</string>
     <string name="light_rain_followed_by_heavy_rain">גשם קל ואחריו גשם כבד</string>
     <string name="light_rain_with_some_heavy_rain">גשם קל וגשם כבד מדי פעם</string>
     <string name="link_tts">קישור</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">לא נמצאו תוצאות.</string>
     <string name="message_service_not_available">השירות אינו זמין כעת.</string>
     <string name="minus_tts">מינוס</string>
+    <string name="mon">"ב'"</string>
     <string name="more">עוד</string>
     <string name="more_cuntact_us">צור קשר</string>
     <string name="more_information">עוד</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">הקש כאן כדי לשנות את מיקום ברירת המחדל של התחזית שאתה רואה ולנהל את כל המיקומים שלך.</string>
     <string name="new_version_available">גרסה חדשה של %s זמינה.</string>
     <string name="new_version_is_available">גרסה חדשה זמינה.</string>
+    <string name="news_menu_show_news">הצג חדשות</string>
+    <string name="news_opt_in_banner_title_text">"התעדכן באירועים אקטואליים על-ידי הצגת חדשות ביישומון 'מזג האוויר'."</string>
+    <string name="news_opt_in_popup_desc_text">"התעדכן במה שקורה ברחבי העולם על-ידי הצגת הכותרות האחרונות מ-%s ביישומון 'מזג האוויר."</string>
+    <string name="news_opt_in_popup_title_text">צפה בחדשות ובמזג האוויר ביישומון אחד</string>
+    <string name="news_request_agree_text">נסה לקבל חדשות מ-%s</string>
+    <string name="news_widget_bubble_text">לקבל חדשות עם מזג האוויר.</string>
+    <string name="news_widget_dummy_title">הסיפור העיקרי היום</string>
+    <string name="news_widget_new_dummy_title">5 דבריך שעליך לדעת הבוקר</string>
+    <string name="news_widget_oobe_text">הקש כאן כדי להוסיף חדשות.</string>
     <string name="next">העיר הבאה</string>
+    <string name="next_btn">הבא</string>
     <string name="next_city">הקש הקשה כפולה כדי להציג פרטי מזג אוויר עבור העיר הבאה.</string>
     <string name="night_tts">לילה</string>
     <string name="no_application_available">אין יישומים זמינים.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">אין פרטי תחזית</string>
     <string name="not_in_use">לא בשימוש</string>
     <string name="not_now">לא כעת</string>
+    <string name="not_now_btn">לא כעת</string>
     <string name="not_selected">לא נבחר</string>
     <string name="not_set">לא מוגדרת</string>
     <string name="nothing_selected">אין פריט נבחר.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">"כדי ליהנות מזיהוי המיקום המהיר והמדויק ביותר, הקש על 'הגדרות' ותחת 'שיטת איתור' בחר באפשרות 'GPS‏, Wi-Fi ורשתות סלולריות'."</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">"כדי ליהנות מזיהוי המיקום המהיר והמדויק ביותר, הקש על 'הגדרות' ותחת 'שיטת איתור' בחר באפשרות 'GPS ו-Wi-Fi'."</string>
     <string name="notice_gps_trun_off_message_verizon">"כדי להציג את התחזית המקומית, הפעל את הגדרוות 'מיקום' וודא שרמת הדיוק היא 'גבוהה'."</string>
+    <string name="notification_alert_channel_name">התראת מזג אוויר חמורה</string>
     <string name="notification_apps_update_channel_name">התראות עדכון</string>
     <string name="notification_auto_refresh_channel_name">"רענון אוטומטי של 'מזג אוויר'"</string>
     <string name="notification_dex_channel_name">"'תחזית' ב-Samsung DeX"</string>
@@ -544,6 +565,7 @@
     <string name="open_app">פתח יישום</string>
     <string name="open_source_licences">רישיונות קוד פתוח</string>
     <string name="other_locations">מיקומים אחרים</string>
+    <string name="partly_sunny">מעונן חלקית</string>
     <string name="password_toggle_content_description">הצגת סיסמה</string>
     <string name="paused">מושהה</string>
     <string name="pd_km">%.1f ק״מ</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">\"%1$s\" הועתק ללוח.</string>
     <string name="preview">תצוגה מקדימה של %s</string>
     <string name="previous">העיר הקודמת</string>
+    <string name="previous_btn">הקודם</string>
     <string name="previous_city">הקש הקשה כפולה כדי להציג פרטי מזג אוויר עבור העיר הקודמת.</string>
     <string name="privacy_policy">מדיניות פרטיות</string>
     <string name="probability_of_rain_text">הסתברות לגשם</string>
     <string name="protect_your_content">הגנה על התוכן שלך</string>
+    <string name="ps_in">"%s אינץ'"</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">רדאר ומפות</string>
     <string name="rain">גשם</string>
     <string name="rain_followed_by_intense_heat">גשם מלווה בחום כבד</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">"כדי לעדכן את פרטי התחזית, הקש על 'הגדרות' ועבור אל 'פרטי יישומים' > 'הרשאות'; כעת אשר את ההרשאות הבאות ונסה שוב:"</string>
     <string name="runtime_location_permission_title">אישור הרשאות</string>
     <string name="runtime_oem_grant_permission_desc">היישום %s מורשה לגשת לפריטים הבאים:</string>
+    <string name="sat">"ש'"</string>
     <string name="save_button">שמור</string>
     <string name="search_menu_title">חיפוש</string>
     <string name="search_most_searched_for">הכי נפוצים בחיפוש</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">תוכן חדש זמין</string>
     <string name="sesl_material_overflow_badge_text_n">ח</string>
     <string name="sesl_more_item_label">עוד</string>
+    <string name="sesl_preferecne_badge_description">התראה חדשה</string>
     <string name="sesl_preferencecategory_added_title">כותרת</string>
     <string name="sesl_search_hint">חיפוש</string>
     <string name="sesl_searchview_description_clear">נקה שדה חיפוש</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">לא מקוון</string>
     <string name="st_view_less">הצג פחות</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">כבוי</string>
+    <string name="status_on">מופעל</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">"א'"</string>
     <string name="sunny">שמש</string>
     <string name="sunny_with_some_clouds">שטוף שמש עם כמה עננים</string>
     <string name="sunny_with_some_heavy_rain">שטוף שמש מלווה בגשם כבד מדי פעם</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">הקש כאן כדי לשחזר נתוני תחזית מהמכשיר הישן.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">"הקש על 'נסה שוב' כדי לנסות לאתר את המיקום שלך שוב."</string>
     <string name="tap_setting_message_edge_panel">"כדי לקבל תחזית מקומית, הפעל את 'מיקום'."</string>
+    <string name="tap_the_settings_icon">הקש על סמל ההגדרות.</string>
     <string name="tap_to_get_the_weather">הקש כדי לקבל פרטי תחזית</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">תנאים והתניות</string>
     <string name="the_latest_version">הגרסה העדכנית ביותר כבר מותקנת.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">"הדבר יחול גם על התראות ועל 'לוח שנה'."</string>
+    <string name="thu">"ה'"</string>
     <string name="tick_box_tts">תיבת סימון</string>
     <string name="ticked_tts">מסומנת</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">מדי שעה</string>
     <string name="title_select_locations">בחירת מיקומים</string>
     <string name="title_theme">ערכות נושא</string>
+    <string name="to_continue_agree_to_updated">כדי להמשיך, הסכם לאמור ב%s המעודכנים שלנו.</string>
     <string name="to_get_local_weather_chn">"כדי לקבל את תחזית מזג האוויר המקומית, המיקום שלך יישלח לספק שירותי מזג האוויר (אנא עיין %1$sבתנאים וההתניות%2$s ו%3$sבמדיניות הפרטיות%4$s של הספק).
 ייתכן שתתאפשר גישה ליישומים ולשירותים נוספים במכשירך לנתוני מזג האוויר שהתקבלו כדי להציג את מזג האוויר ביישומים אלה.
 כדי לספק לך מידע מתמשך על מזג האוויר, Weather יכולה לגשת למיקומך גם כאשר אינך משתמש ביישום."</string>
     <string name="today">היום</string>
+    <string name="try_it_out_btn">נסה זאת</string>
+    <string name="tue">"ג'"</string>
+    <string name="turn_on_to_use_precise_location">"כדי להשתמש בתכונה זו, עליך לאפשר ל-%s לגשת למיקום שלך בכל עת ולהפעיל את האפשרות 'השתמש במיקום מדויק'. הקש על 'הגדרות' ולאחר מכן עבור אל 'הרשאות' > 'מיקום'."</string>
     <string name="tw_title_weather_broadcast">שדר</string>
-    <string name="unable_to_check_for_updates">לא ניתן לבדוק אם יש עדכונים. אין חיבור לרשת.</string>
+    <string name="unable_to_check_for_updates">לא ניתן לבדוק זמינות עדכונים. נסה שוב מאוחר יותר.</string>
     <string name="unable_to_receive_info_msg">לא ניתן לקבל מידע</string>
     <string name="unticked_tts">לא מסומן</string>
     <string name="unused">לא בשימוש</string>
     <string name="update">עדכן</string>
     <string name="update_abb8">עדכן</string>
     <string name="update_app">עדכון של יישום</string>
+    <string name="updated_tile_chn">עודכן: %s</string>
     <string name="updated_tts">ה%s עודכן</string>
+    <string name="use_current_location">השתמש במיקום נוכחי</string>
     <string name="use_current_location_agree_popup">"כדי לקבל את תחזית מזג האוויר המקומית, המיקום שלך יישלח לספק שירותי מזג האוויר. (עיין ב%1$sמדיניות הפרטיות%2$s של הספק.)
 ייתכן שאפליקציות ושירותים אחרים במכשיר שלך עשויים לגשת לנתוני מזג האוויר שאוחזרו כדי להציג את מזג האוויר באפליקציות אלה."</string>
     <string name="use_current_location_and_background_agree_popup">"כדי לקבל את תחזית מזג האוויר המקומית, המיקום שלך יישלח לספק שירותי מזג האוויר. (אנא עיין במדיניות%1$sמדיניות הפרטיות שלהם%2$s.)
@@ -746,9 +784,16 @@
 תוכל לכבות את השימוש במיקום שלך באמצעות מעבר להגדרות היישום ״מזג אוויר״."</string>
     <string name="use_current_location_body_msg_chn">"אנא קרא בעיון לפני השימוש ב-Weather:‏
 אם ברצונך לדעת מהו מזג האוויר במיקום הנוכחי שלך, עליך לאפשר לספק שירות חיצוני לקבל גישה מתמשכת (גם כאשר אינך משתמש בשירות) למכשיר שלך וכן להשיג נתונים מסוימים, כפי שמפורט להלן. אנא קרא בעיון וודא שהבנת את %1$sהתנאים וההתניות%2$s וכן את %3$sמדיניות הפרטיות%4$s של ספק השירות החיצוני לפני מתן הרשאה זו. תוכל לבטל את הרשאתך על ידי כיבוי אפשרות המיקום שבתפריט ההגדרות. ייתכן שיישומים ושירותים אחרים במכשיר שלך עשויים לקבל גישה לנתוני מזג האוויר שאוחזרו כדי להציג את תחזית מזג האוויר ביישומים ובשירותים אלה."</string>
+    <string name="use_current_location_body_msg_kor">"המיקום הנוכחי שלך ייאסף ונשתמש בו כדי לספק חלק מתכונות היישום 'מזג אוויר', למשל צפייה במזג האוויר המקומי שלך.
+
+כדי לספק פרטי מזג אוויר מתמשכים, יישום זה יעבד באופן שוטף את המיקום שלך, גם כשאינך משתמש ביישום. אם תמשיך, המשמעות היא שאתה מסכים לאיסוף ולעיבוד של המיקום שלך למטרות שלעיל.
+
+תוכל להפסיק את איסוף המיקום והשימוש בו בהגדרות היישום 'מזג אוויר'."</string>
     <string name="use_current_location_body_purpose">מטרת השימוש</string>
     <string name="use_current_location_body_purpose_content">כדי לספק מידע על מזג האוויר במיקום הנוכחי שלך</string>
     <string name="use_current_location_body_search_provider">ספק שירות</string>
+    <string name="use_current_location_continue">המשך</string>
+    <string name="use_current_location_not_now">לא כעת</string>
     <string name="use_current_location_off_alert_popup">פרטי המיקום הנוכחי יוסרו.</string>
     <string name="useful_informations">עצות לחיים ודוחות אחרים</string>
     <string name="using_as">משתמש כ-%s</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">עצות בנושא מזג אוויר</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">"ד'"</string>
     <string name="weekly_forecast">יומי</string>
     <string name="widget_background">רקע היישומון</string>
     <string name="widget_empty_text">הקש לקבלת פרטי תחזית</string>
+    <string name="widget_location">שם עיר</string>
     <string name="widget_name_4x1">מזג אוויר ושעון</string>
     <string name="widget_setting">הגדרות</string>
     <string name="widget_setting_background_color">צבע רקע</string>

@@ -7,10 +7,6 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBasicTrustRootIndex.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicTrustRootIndex.kt\nokhttp3/internal/tls/BasicTrustRootIndex\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,56:1\n256#2,2:57\n355#3,7:59\n*E\n*S KotlinDebug\n*F\n+ 1 BasicTrustRootIndex.kt\nokhttp3/internal/tls/BasicTrustRootIndex\n*L\n37#1,2:57\n28#1,7:59\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -70,19 +66,17 @@
 
     const-string v0, "caCerts"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 22
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 26
+    .line 2
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    check-cast v0, Ljava/util/Map;
-
-    .line 27
+    .line 3
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -92,44 +86,42 @@
 
     aget-object v3, p1, v2
 
-    .line 28
+    .line 4
     invoke-virtual {v3}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
 
     move-result-object v4
 
     const-string v5, "caCert.subjectX500Principal"
 
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 59
+    .line 5
     invoke-interface {v0, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
     if-nez v5, :cond_0
 
-    .line 28
+    .line 6
     new-instance v5, Ljava/util/LinkedHashSet;
 
     invoke-direct {v5}, Ljava/util/LinkedHashSet;-><init>()V
 
-    check-cast v5, Ljava/util/Set;
-
-    .line 62
+    .line 7
     invoke-interface {v0, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 60
+    .line 8
     :cond_0
     check-cast v5, Ljava/util/Set;
 
-    .line 28
+    .line 9
     invoke-interface {v5, v3}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 30
+    .line 10
     :cond_1
     iput-object v0, p0, Lokhttp3/internal/tls/BasicTrustRootIndex;->subjectToCaCerts:Ljava/util/Map;
 
@@ -141,12 +133,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 49
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/internal/tls/BasicTrustRootIndex;
-
-    if-eq p1, v0, :cond_1
+    if-eq p1, p0, :cond_1
 
     instance-of v0, p1, Lokhttp3/internal/tls/BasicTrustRootIndex;
 
@@ -158,7 +145,7 @@
 
     iget-object v0, p0, Lokhttp3/internal/tls/BasicTrustRootIndex;->subjectToCaCerts:Ljava/util/Map;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -184,14 +171,14 @@
 
     const-string v0, "cert"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 34
+    .line 1
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getIssuerX500Principal()Ljavax/security/auth/x500/X500Principal;
 
     move-result-object v0
 
-    .line 35
+    .line 2
     iget-object v1, p0, Lokhttp3/internal/tls/BasicTrustRootIndex;->subjectToCaCerts:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -204,10 +191,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 37
-    check-cast v0, Ljava/lang/Iterable;
-
-    .line 57
+    .line 3
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -227,7 +211,7 @@
 
     check-cast v3, Ljava/security/cert/X509Certificate;
 
-    .line 39
+    .line 4
     :try_start_0
     invoke-virtual {v3}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
 
@@ -249,7 +233,7 @@
 
     move-object v1, v2
 
-    .line 58
+    .line 5
     :cond_1
     check-cast v1, Ljava/security/cert/X509Certificate;
 
@@ -260,7 +244,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 53
     iget-object v0, p0, Lokhttp3/internal/tls/BasicTrustRootIndex;->subjectToCaCerts:Ljava/util/Map;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I

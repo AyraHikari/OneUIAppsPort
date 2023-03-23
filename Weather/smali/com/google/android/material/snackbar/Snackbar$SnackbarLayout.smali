@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;
-.super Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;
+.super Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;
 .source "Snackbar.java"
 
 
@@ -15,59 +15,45 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 0
-
-    .line 531
-    invoke-direct {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;-><init>(Landroid/content/Context;)V
-
-    const p1, 0x106000d
-
-    .line 533
-    invoke-virtual {p0, p1}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->setBackgroundColor(I)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 538
-    invoke-direct {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const p1, 0x106000d
 
-    .line 540
-    invoke-virtual {p0, p1}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->setBackgroundColor(I)V
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->setBackgroundColor(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected onMeasure(II)V
+.method public onMeasure(II)V
     .locals 7
 
-    .line 546
-    invoke-super {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->onMeasure(II)V
+    .line 1
+    invoke-super {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;->onMeasure(II)V
 
-    .line 551
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getChildCount()I
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getChildCount()I
 
     move-result v0
 
-    .line 552
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getMeasuredWidth()I
+    .line 3
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getMeasuredWidth()I
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getPaddingLeft()I
 
     move-result v2
 
     sub-int/2addr v1, v2
 
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getPaddingRight()I
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getPaddingRight()I
 
     move-result v2
 
@@ -78,12 +64,12 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 554
-    invoke-virtual {p0, v2}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getChildAt(I)Landroid/view/View;
+    .line 4
+    invoke-virtual {p0, v2}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 555
+    .line 5
     invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v4
@@ -96,12 +82,12 @@
 
     const/high16 v4, 0x40000000    # 2.0f
 
-    .line 557
+    .line 6
     invoke-static {v1, v4}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v5
 
-    .line 558
+    .line 7
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v6
@@ -110,10 +96,10 @@
 
     move-result v4
 
-    .line 556
+    .line 8
     invoke-virtual {v3, v5, v4}, Landroid/view/View;->measure(II)V
 
-    .line 562
+    .line 9
     :cond_0
     invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -125,31 +111,31 @@
 
     if-ne v4, v5, :cond_1
 
-    .line 563
+    .line 10
     invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v4
 
     check-cast v4, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 564
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getMeasuredHeight()I
+    .line 11
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getMeasuredHeight()I
 
     move-result v5
 
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getPaddingBottom()I
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getPaddingBottom()I
 
     move-result v6
 
     sub-int/2addr v5, v6
 
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getPaddingTop()I
 
     move-result v6
 
     sub-int/2addr v5, v6
 
-    .line 565
+    .line 12
     invoke-virtual {v3}, Landroid/view/View;->getHeight()I
 
     move-result v3
@@ -164,8 +150,8 @@
 
     if-le v3, v5, :cond_1
 
-    .line 566
-    invoke-super {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->onMeasure(II)V
+    .line 13
+    invoke-super {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;->onMeasure(II)V
 
     :cond_1
     add-int/lit8 v2, v2, 0x1
@@ -179,8 +165,7 @@
 .method public bridge synthetic setBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 528
-    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
@@ -188,8 +173,7 @@
 .method public bridge synthetic setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 528
-    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
@@ -197,8 +181,7 @@
 .method public bridge synthetic setBackgroundTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 528
-    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
+    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
 .end method
@@ -206,8 +189,7 @@
 .method public bridge synthetic setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 0
 
-    .line 528
-    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
+    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;->setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     return-void
 .end method
@@ -215,8 +197,7 @@
 .method public bridge synthetic setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
 
-    .line 528
-    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$v;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method

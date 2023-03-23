@@ -3,11 +3,19 @@
 .source "BuildCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/os/BuildCompat$PrereleaseSdkCheck;
+    }
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 26
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,8 +26,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 39
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 76
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
@@ -41,8 +49,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 52
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 90
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x19
 
@@ -64,8 +72,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 65
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 104
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1a
 
@@ -87,8 +95,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 78
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 118
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1b
 
@@ -110,8 +118,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 91
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 132
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
@@ -128,49 +136,264 @@
     return v0
 .end method
 
-.method public static isAtLeastQ()Z
-    .locals 4
+.method protected static isAtLeastPreReleaseCodename(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "codename",
+            "buildCodename"
+        }
+    .end annotation
 
-    .line 104
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+    const-string v0, "REL"
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    .line 54
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    .line 60
+    :cond_0
+    sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 61
+    sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 62
+    invoke-virtual {p1, p0}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
+
+    move-result p0
+
+    if-ltz p0, :cond_1
 
     const/4 v1, 0x1
 
-    const/4 v2, 0x0
+    :cond_1
+    return v1
+.end method
 
-    if-ne v0, v1, :cond_0
+.method public static isAtLeastQ()Z
+    .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+    .line 146
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
-    .line 105
-    invoke-virtual {v0, v2}, Ljava/lang/String;->charAt(I)C
+    const/16 v1, 0x1d
 
-    move-result v0
+    if-lt v0, v1, :cond_0
 
-    const/16 v3, 0x51
-
-    if-lt v0, v3, :cond_0
-
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
-
-    .line 106
-    invoke-virtual {v0, v2}, Ljava/lang/String;->charAt(I)C
-
-    move-result v0
-
-    const/16 v3, 0x5a
-
-    if-gt v0, v3, :cond_0
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_0
-    move v1, v2
+    const/4 v0, 0x0
 
     :goto_0
-    return v1
+    return v0
+.end method
+
+.method public static isAtLeastR()Z
+    .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 160
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public static isAtLeastS()Z
+    .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 176
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1f
+
+    if-ge v0, v1, :cond_1
+
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_0
+
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    const-string v1, "S"
+
+    .line 177
+    invoke-static {v1, v0}, Landroidx/core/os/BuildCompat;->isAtLeastPreReleaseCodename(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    return v0
+.end method
+
+.method public static isAtLeastSv2()Z
+    .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 193
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x20
+
+    if-ge v0, v1, :cond_1
+
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1f
+
+    if-lt v0, v1, :cond_0
+
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    const-string v1, "Sv2"
+
+    .line 194
+    invoke-static {v1, v0}, Landroidx/core/os/BuildCompat;->isAtLeastPreReleaseCodename(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    return v0
+.end method
+
+.method public static isAtLeastT()Z
+    .locals 2
+
+    .line 209
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x21
+
+    if-ge v0, v1, :cond_1
+
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x20
+
+    if-lt v0, v1, :cond_0
+
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    const-string v1, "Tiramisu"
+
+    .line 211
+    invoke-static {v1, v0}, Landroidx/core/os/BuildCompat;->isAtLeastPreReleaseCodename(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    return v0
+.end method
+
+.method public static isAtLeastU()Z
+    .locals 2
+
+    .line 226
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x21
+
+    if-lt v0, v1, :cond_0
+
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    const-string v1, "UpsideDownCake"
+
+    .line 227
+    invoke-static {v1, v0}, Landroidx/core/os/BuildCompat;->isAtLeastPreReleaseCodename(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
 .end method

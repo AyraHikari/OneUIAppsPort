@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/about_my_files_n_badge_bg_color" />
+            <corners android:radius="@dimen/app_update_new_badge_size" />
+        </shape>
+    </item>
+</layer-list>

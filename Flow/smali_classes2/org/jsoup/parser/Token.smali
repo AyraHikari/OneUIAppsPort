@@ -7,13 +7,14 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lorg/jsoup/parser/Token$TokenType;,
-        Lorg/jsoup/parser/Token$EOF;,
-        Lorg/jsoup/parser/Token$Character;,
-        Lorg/jsoup/parser/Token$Comment;,
-        Lorg/jsoup/parser/Token$EndTag;,
+        Lorg/jsoup/parser/Token$Doctype;,
         Lorg/jsoup/parser/Token$StartTag;,
-        Lorg/jsoup/parser/Token$Tag;,
-        Lorg/jsoup/parser/Token$Doctype;
+        Lorg/jsoup/parser/Token$EndTag;,
+        Lorg/jsoup/parser/Token$Comment;,
+        Lorg/jsoup/parser/Token$CData;,
+        Lorg/jsoup/parser/Token$Character;,
+        Lorg/jsoup/parser/Token$EOF;,
+        Lorg/jsoup/parser/Token$Tag;
     }
 .end annotation
 
@@ -64,7 +65,7 @@
 .method final asCharacter()Lorg/jsoup/parser/Token$Character;
     .locals 1
 
-    .line 322
+    .line 405
     move-object v0, p0
 
     check-cast v0, Lorg/jsoup/parser/Token$Character;
@@ -75,7 +76,7 @@
 .method final asComment()Lorg/jsoup/parser/Token$Comment;
     .locals 1
 
-    .line 314
+    .line 393
     move-object v0, p0
 
     check-cast v0, Lorg/jsoup/parser/Token$Comment;
@@ -86,7 +87,7 @@
 .method final asDoctype()Lorg/jsoup/parser/Token$Doctype;
     .locals 1
 
-    .line 290
+    .line 369
     move-object v0, p0
 
     check-cast v0, Lorg/jsoup/parser/Token$Doctype;
@@ -97,7 +98,7 @@
 .method final asEndTag()Lorg/jsoup/parser/Token$EndTag;
     .locals 1
 
-    .line 306
+    .line 385
     move-object v0, p0
 
     check-cast v0, Lorg/jsoup/parser/Token$EndTag;
@@ -108,7 +109,7 @@
 .method final asStartTag()Lorg/jsoup/parser/Token$StartTag;
     .locals 1
 
-    .line 298
+    .line 377
     move-object v0, p0
 
     check-cast v0, Lorg/jsoup/parser/Token$StartTag;
@@ -116,10 +117,19 @@
     return-object v0
 .end method
 
+.method final isCData()Z
+    .locals 1
+
+    .line 401
+    instance-of v0, p0, Lorg/jsoup/parser/Token$CData;
+
+    return v0
+.end method
+
 .method final isCharacter()Z
     .locals 2
 
-    .line 318
+    .line 397
     iget-object v0, p0, Lorg/jsoup/parser/Token;->type:Lorg/jsoup/parser/Token$TokenType;
 
     sget-object v1, Lorg/jsoup/parser/Token$TokenType;->Character:Lorg/jsoup/parser/Token$TokenType;
@@ -140,7 +150,7 @@
 .method final isComment()Z
     .locals 2
 
-    .line 310
+    .line 389
     iget-object v0, p0, Lorg/jsoup/parser/Token;->type:Lorg/jsoup/parser/Token$TokenType;
 
     sget-object v1, Lorg/jsoup/parser/Token$TokenType;->Comment:Lorg/jsoup/parser/Token$TokenType;
@@ -161,7 +171,7 @@
 .method final isDoctype()Z
     .locals 2
 
-    .line 286
+    .line 365
     iget-object v0, p0, Lorg/jsoup/parser/Token;->type:Lorg/jsoup/parser/Token$TokenType;
 
     sget-object v1, Lorg/jsoup/parser/Token$TokenType;->Doctype:Lorg/jsoup/parser/Token$TokenType;
@@ -182,7 +192,7 @@
 .method final isEOF()Z
     .locals 2
 
-    .line 326
+    .line 409
     iget-object v0, p0, Lorg/jsoup/parser/Token;->type:Lorg/jsoup/parser/Token$TokenType;
 
     sget-object v1, Lorg/jsoup/parser/Token$TokenType;->EOF:Lorg/jsoup/parser/Token$TokenType;
@@ -203,7 +213,7 @@
 .method final isEndTag()Z
     .locals 2
 
-    .line 302
+    .line 381
     iget-object v0, p0, Lorg/jsoup/parser/Token;->type:Lorg/jsoup/parser/Token$TokenType;
 
     sget-object v1, Lorg/jsoup/parser/Token$TokenType;->EndTag:Lorg/jsoup/parser/Token$TokenType;
@@ -224,7 +234,7 @@
 .method final isStartTag()Z
     .locals 2
 
-    .line 294
+    .line 373
     iget-object v0, p0, Lorg/jsoup/parser/Token;->type:Lorg/jsoup/parser/Token$TokenType;
 
     sget-object v1, Lorg/jsoup/parser/Token$TokenType;->StartTag:Lorg/jsoup/parser/Token$TokenType;

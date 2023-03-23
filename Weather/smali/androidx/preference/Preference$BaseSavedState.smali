@@ -27,13 +27,12 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 2368
-    new-instance v0, Landroidx/preference/Preference$BaseSavedState$1;
+    new-instance v0, Landroidx/preference/Preference$BaseSavedState$a;
 
-    invoke-direct {v0}, Landroidx/preference/Preference$BaseSavedState$1;-><init>()V
+    invoke-direct {v0}, Landroidx/preference/Preference$BaseSavedState$a;-><init>()V
 
     sput-object v0, Landroidx/preference/Preference$BaseSavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -43,7 +42,7 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
 
-    .line 2382
+    .line 1
     invoke-direct {p0, p1}, Landroid/view/AbsSavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -52,7 +51,7 @@
 .method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 2386
+    .line 2
     invoke-direct {p0, p1}, Landroid/view/AbsSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void

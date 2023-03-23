@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract dataReceived(Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 .end method

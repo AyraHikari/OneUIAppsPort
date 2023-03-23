@@ -138,6 +138,16 @@
 
 .method public onNotificationPosted(Landroid/service/notification/StatusBarNotification;Landroid/service/notification/NotificationListenerService$RankingMap;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "sbn",
+            "map"
+        }
+    .end annotation
 
     .line 57
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationListener;->mNotiParserThreadHandler:Landroid/os/Handler;
@@ -165,6 +175,14 @@
 
 .method public onNotificationRemoved(Landroid/service/notification/StatusBarNotification;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "sbn"
+        }
+    .end annotation
 
     .line 71
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationListener;->mNotiParserThreadHandler:Landroid/os/Handler;
@@ -192,6 +210,18 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "intent",
+            "flags",
+            "startId"
+        }
+    .end annotation
 
     .line 25
     invoke-super {p0, p1, p2, p3}, Landroid/service/notification/NotificationListenerService;->onStartCommand(Landroid/content/Intent;II)I

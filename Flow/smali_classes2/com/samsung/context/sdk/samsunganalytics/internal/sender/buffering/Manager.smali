@@ -18,6 +18,16 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "useDatabase"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -29,6 +39,18 @@
 
 .method private constructor <init>(Landroid/content/Context;ZI)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "useDatabase",
+            "queueSize"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -58,6 +80,16 @@
 
 .method private constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/DBOpenHelper;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dbOpenHelper",
+            "queueSize"
+        }
+    .end annotation
 
     .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -86,6 +118,16 @@
 
 .method public static getInstance(Landroid/content/Context;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "configuration"
+        }
+    .end annotation
 
     .line 62
     sget-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;->instance:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;
@@ -127,7 +169,7 @@
 
     move-result-object v2
 
-    const-string v4, "rtb"
+    const-string/jumbo v4, "rtb"
 
     .line 68
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -207,6 +249,18 @@
 
 .method public static getInstance(Landroid/content/Context;Ljava/lang/Boolean;I)Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "useDatabase",
+            "queueSize"
+        }
+    .end annotation
 
     .line 49
     sget-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;->instance:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;
@@ -369,6 +423,14 @@
 
 .method public enableDatabaseBuffering(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 89
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/database/DbManager;
@@ -382,6 +444,14 @@
 
 .method public enableDatabaseBuffering(Lcom/samsung/context/sdk/samsunganalytics/DBOpenHelper;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dbOpenHelper"
+        }
+    .end annotation
 
     .line 93
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/database/DbManager;
@@ -395,6 +465,14 @@
 
 .method public enableDatabaseBuffering(Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/database/DbManager;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dbManager"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -433,6 +511,15 @@
 
 .method public get(I)Ljava/util/Queue;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "limit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -496,6 +583,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-boolean v1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;->useDatabase:Z
 
     if-eqz v1, :cond_2
@@ -510,9 +599,13 @@
     :goto_1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "("
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-interface {p1}, Ljava/util/Queue;->size()I
 
@@ -520,9 +613,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ")"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -564,6 +661,18 @@
 
 .method public insert(JLjava/lang/String;Lcom/samsung/context/sdk/samsunganalytics/internal/sender/LogType;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "timestamp",
+            "log",
+            "logType"
+        }
+    .end annotation
 
     .line 121
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/SimpleLog;
@@ -578,6 +687,14 @@
 
 .method public insert(Lcom/samsung/context/sdk/samsunganalytics/internal/sender/SimpleLog;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "simpleLog"
+        }
+    .end annotation
 
     .line 114
     iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;->useDatabase:Z
@@ -640,6 +757,14 @@
 
 .method public remove(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_id"
+        }
+    .end annotation
 
     .line 162
     iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/buffering/Manager;->useDatabase:Z
@@ -657,6 +782,15 @@
 
 .method public remove(Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ids"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -1,5 +1,5 @@
 .class public Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
-.super Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;
+.super Landroidx/appcompat/widget/c;
 .source "SearchView.java"
 
 
@@ -15,34 +15,35 @@
 
 
 # instance fields
-.field private mForceNotCallShowSoftInput:Z
+.field public k:I
 
-.field private mHasPendingShowSoftInputRequest:Z
+.field public l:Landroidx/appcompat/widget/SearchView;
 
-.field final mRunShowSoftInputIfNecessary:Ljava/lang/Runnable;
+.field public m:Z
 
-.field private mSearchView:Landroidx/appcompat/widget/SearchView;
+.field public final n:Ljava/lang/Runnable;
 
-.field private mThreshold:I
+.field public o:Z
+
+.field public p:Landroidx/appcompat/widget/SearchView$l;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 2074
-    invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
-    .line 2078
-    sget v0, Landroidx/appcompat/R$attr;->autoCompleteTextViewStyle:I
+    .line 1
+    sget v0, Lc/a;->autoCompleteTextViewStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -51,23 +52,40 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyle"
+        }
+    .end annotation
 
-    .line 2082
-    invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .line 2
+    invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/c;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 2062
-    new-instance p1, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$1;
+    .line 3
+    new-instance p1, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;
 
-    invoke-direct {p1, p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$1;-><init>(Landroidx/appcompat/widget/SearchView$SearchAutoComplete;)V
+    invoke-direct {p1, p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;-><init>(Landroidx/appcompat/widget/SearchView$SearchAutoComplete;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mRunShowSoftInputIfNecessary:Ljava/lang/Runnable;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->n:Ljava/lang/Runnable;
 
-    .line 2083
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getThreshold()I
+    const/4 p1, 0x0
+
+    .line 4
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->p:Landroidx/appcompat/widget/SearchView$l;
+
+    .line 5
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getThreshold()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mThreshold:I
+    iput p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->k:I
 
     return-void
 .end method
@@ -75,8 +93,8 @@
 .method private getSearchViewTextMinWidthDp()I
     .locals 4
 
-    .line 2180
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getResources()Landroid/content/res/Resources;
+    .line 1
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -84,10 +102,10 @@
 
     move-result-object v0
 
-    .line 2181
+    .line 2
     iget v1, v0, Landroid/content/res/Configuration;->screenWidthDp:I
 
-    .line 2182
+    .line 3
     iget v2, v0, Landroid/content/res/Configuration;->screenHeightDp:I
 
     const/16 v3, 0x3c0
@@ -98,7 +116,7 @@
 
     if-lt v2, v3, :cond_0
 
-    .line 2184
+    .line 4
     iget v0, v0, Landroid/content/res/Configuration;->orientation:I
 
     const/4 v3, 0x2
@@ -138,40 +156,11 @@
 
 
 # virtual methods
-.method public enoughToFilter()Z
-    .locals 1
-
-    .line 2163
-    iget v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mThreshold:I
-
-    if-lez v0, :cond_1
-
-    invoke-super {p0}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;->enoughToFilter()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    return v0
-.end method
-
-.method ensureImeVisible()V
+.method public b()V
     .locals 2
 
-    .line 2241
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 1
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1d
 
@@ -179,11 +168,11 @@
 
     const/4 v0, 0x1
 
-    .line 2242
-    invoke-virtual {p0, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->setInputMethodMode(I)V
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/widget/AutoCompleteTextView;->setInputMethodMode(I)V
 
-    .line 2243
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getFilter()Landroid/widget/Filter;
+    .line 3
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getFilter()Landroid/widget/Filter;
 
     move-result-object v0
 
@@ -195,27 +184,26 @@
 
     if-eqz v0, :cond_1
 
-    .line 2244
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->showDropDown()V
+    .line 4
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->showDropDown()V
 
     goto :goto_0
 
-    .line 2247
+    .line 5
     :cond_0
-    sget-object v0, Landroidx/appcompat/widget/SearchView;->PRE_API_29_HIDDEN_METHOD_INVOKER:Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;
+    sget-object v0, Landroidx/appcompat/widget/SearchView;->F0:Landroidx/appcompat/widget/SearchView$o;
 
-    invoke-virtual {v0, p0}, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->ensureImeVisible(Landroid/widget/AutoCompleteTextView;)V
+    invoke-virtual {v0, p0}, Landroidx/appcompat/widget/SearchView$o;->c(Landroid/widget/AutoCompleteTextView;)V
 
     :cond_1
     :goto_0
     return-void
 .end method
 
-.method isEmpty()Z
+.method public c()Z
     .locals 1
 
-    .line 2108
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getText()Landroid/text/Editable;
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
@@ -236,41 +224,114 @@
     return v0
 .end method
 
-.method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
-    .locals 1
+.method public d()V
+    .locals 2
 
-    .line 2199
-    invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+    .line 1
+    iget-boolean v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->o:Z
 
-    move-result-object p1
+    if-nez v0, :cond_0
 
-    .line 2200
-    iget-boolean v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mHasPendingShowSoftInputRequest:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->m:Z
 
     if-eqz v0, :cond_0
 
-    .line 2201
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mRunShowSoftInputIfNecessary:Ljava/lang/Runnable;
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getContext()Landroid/content/Context;
 
-    invoke-virtual {p0, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->removeCallbacks(Ljava/lang/Runnable;)Z
+    move-result-object v0
 
-    .line 2202
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mRunShowSoftInputIfNecessary:Ljava/lang/Runnable;
+    const-string v1, "input_method"
 
-    invoke-virtual {p0, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
+
+    const/4 v1, 0x0
+
+    .line 3
+    invoke-virtual {v0, p0, v1}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
+
+    .line 4
+    iput-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->m:Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public enoughToFilter()Z
+    .locals 1
+
+    iget v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->k:I
+
+    if-lez v0, :cond_1
+
+    invoke-super {p0}, Landroid/widget/AutoCompleteTextView;->enoughToFilter()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    return v0
+.end method
+
+.method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "editorInfo"
+        }
+    .end annotation
+
+    .line 1
+    invoke-super {p0, p1}, Landroidx/appcompat/widget/c;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+
+    move-result-object p1
+
+    .line 2
+    iget-boolean v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->m:Z
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->n:Ljava/lang/Runnable;
+
+    invoke-virtual {p0, v0}, Landroid/widget/AutoCompleteTextView;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    .line 4
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->n:Ljava/lang/Runnable;
+
+    invoke-virtual {p0, v0}, Landroid/widget/AutoCompleteTextView;->post(Ljava/lang/Runnable;)Z
 
     :cond_0
     return-object p1
 .end method
 
-.method protected onFinishInflate()V
+.method public onFinishInflate()V
     .locals 3
 
-    .line 2088
-    invoke-super {p0}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;->onFinishInflate()V
+    .line 1
+    invoke-super {p0}, Landroid/widget/AutoCompleteTextView;->onFinishInflate()V
 
-    .line 2089
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getResources()Landroid/content/res/Resources;
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -278,7 +339,7 @@
 
     move-result-object v0
 
-    .line 2091
+    .line 3
     invoke-direct {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getSearchViewTextMinWidthDp()I
 
     move-result v1
@@ -287,37 +348,92 @@
 
     const/4 v2, 0x1
 
-    .line 2090
+    .line 4
     invoke-static {v2, v1, v0}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
 
     move-result v0
 
     float-to-int v0, v0
 
-    invoke-virtual {p0, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->setMinWidth(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/AutoCompleteTextView;->setMinWidth(I)V
 
     return-void
 .end method
 
-.method protected onFocusChanged(ZILandroid/graphics/Rect;)V
+.method public onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "focused",
+            "direction",
+            "previouslyFocusedRect"
+        }
+    .end annotation
 
-    .line 2153
-    invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;->onFocusChanged(ZILandroid/graphics/Rect;)V
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Landroid/widget/AutoCompleteTextView;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
-    .line 2154
-    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mSearchView:Landroidx/appcompat/widget/SearchView;
+    .line 2
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->l:Landroidx/appcompat/widget/SearchView;
 
-    invoke-virtual {p1}, Landroidx/appcompat/widget/SearchView;->onTextFocusChanged()V
+    invoke-virtual {p1}, Landroidx/appcompat/widget/SearchView;->a0()V
 
     return-void
 .end method
 
 .method public onKeyPreIme(ILandroid/view/KeyEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
-    .line 2173
-    invoke-super {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;->onKeyPreIme(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/widget/AutoCompleteTextView;->onKeyPreIme(ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public onPrivateIMECommand(Ljava/lang/String;Landroid/os/Bundle;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "action",
+            "data"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->p:Landroidx/appcompat/widget/SearchView$l;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/SearchView$l;->a(Ljava/lang/String;Landroid/os/Bundle;)Z
+
+    move-result p1
+
+    return p1
+
+    .line 3
+    :cond_0
+    invoke-super {p0, p1, p2}, Landroid/widget/AutoCompleteTextView;->onPrivateIMECommand(Ljava/lang/String;Landroid/os/Bundle;)Z
 
     move-result p1
 
@@ -326,22 +442,30 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hasWindowFocus"
+        }
+    .end annotation
 
-    .line 2135
-    invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;->onWindowFocusChanged(Z)V
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/AutoCompleteTextView;->onWindowFocusChanged(Z)V
 
     if-eqz p1, :cond_0
 
-    .line 2137
-    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mSearchView:Landroidx/appcompat/widget/SearchView;
+    .line 2
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->l:Landroidx/appcompat/widget/SearchView;
 
-    invoke-virtual {p1}, Landroidx/appcompat/widget/SearchView;->hasFocus()Z
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->hasFocus()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getVisibility()I
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getVisibility()I
 
     move-result p1
 
@@ -349,22 +473,22 @@
 
     const/4 p1, 0x1
 
-    .line 2142
-    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mHasPendingShowSoftInputRequest:Z
+    .line 3
+    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->m:Z
 
-    .line 2145
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getContext()Landroid/content/Context;
+    .line 4
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    invoke-static {p1}, Landroidx/appcompat/widget/SearchView;->isLandscapeMode(Landroid/content/Context;)Z
+    invoke-static {p1}, Landroidx/appcompat/widget/SearchView;->N(Landroid/content/Context;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 2146
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->ensureImeVisible()V
+    .line 5
+    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->b()V
 
     :cond_0
     return-void
@@ -376,17 +500,33 @@
     return-void
 .end method
 
-.method protected replaceText(Ljava/lang/CharSequence;)V
+.method public replaceText(Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "text"
+        }
+    .end annotation
 
     return-void
 .end method
 
-.method setImeVisibility(Z)V
+.method public setImeVisibility(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "visible"
+        }
+    .end annotation
 
-    .line 2218
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getContext()Landroid/content/Context;
+    .line 1
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -402,16 +542,16 @@
 
     if-nez p1, :cond_0
 
-    .line 2220
-    iput-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mHasPendingShowSoftInputRequest:Z
+    .line 2
+    iput-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->m:Z
 
-    .line 2221
-    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mRunShowSoftInputIfNecessary:Ljava/lang/Runnable;
+    .line 3
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->n:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, p1}, Landroid/widget/AutoCompleteTextView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 2222
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getWindowToken()Landroid/os/IBinder;
+    .line 4
+    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object p1
 
@@ -419,7 +559,7 @@
 
     return-void
 
-    .line 2226
+    .line 5
     :cond_0
     invoke-virtual {v0, p0}, Landroid/view/inputmethod/InputMethodManager;->isActive(Landroid/view/View;)Z
 
@@ -427,15 +567,15 @@
 
     if-eqz p1, :cond_1
 
-    .line 2229
-    iput-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mHasPendingShowSoftInputRequest:Z
+    .line 6
+    iput-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->m:Z
 
-    .line 2230
-    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mRunShowSoftInputIfNecessary:Ljava/lang/Runnable;
+    .line 7
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->n:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, p1}, Landroid/widget/AutoCompleteTextView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 2231
+    .line 8
     invoke-virtual {v0, p0, v1}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
     return-void
@@ -443,75 +583,60 @@
     :cond_1
     const/4 p1, 0x1
 
-    .line 2237
-    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mHasPendingShowSoftInputRequest:Z
+    .line 9
+    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->m:Z
 
     return-void
 .end method
 
-.method setNotCallShowSoftInput(Z)V
+.method public setNotCallShowSoftInput(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bSet"
+        }
+    .end annotation
 
-    .line 2253
-    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mForceNotCallShowSoftInput:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->o:Z
 
     return-void
 .end method
 
-.method setSearchView(Landroidx/appcompat/widget/SearchView;)V
+.method public setSearchView(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "searchView"
+        }
+    .end annotation
 
-    .line 2095
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mSearchView:Landroidx/appcompat/widget/SearchView;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->l:Landroidx/appcompat/widget/SearchView;
 
     return-void
 .end method
 
 .method public setThreshold(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "threshold"
+        }
+    .end annotation
 
-    .line 2100
-    invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;->setThreshold(I)V
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/AutoCompleteTextView;->setThreshold(I)V
 
-    .line 2101
-    iput p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mThreshold:I
+    .line 2
+    iput p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->k:I
 
-    return-void
-.end method
-
-.method showSoftInputIfNecessary()V
-    .locals 2
-
-    .line 2208
-    iget-boolean v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mForceNotCallShowSoftInput:Z
-
-    if-nez v0, :cond_0
-
-    iget-boolean v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mHasPendingShowSoftInputRequest:Z
-
-    if-eqz v0, :cond_0
-
-    .line 2210
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "input_method"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
-
-    const/4 v1, 0x0
-
-    .line 2211
-    invoke-virtual {v0, p0, v1}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
-
-    .line 2212
-    iput-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mHasPendingShowSoftInputRequest:Z
-
-    :cond_0
     return-void
 .end method

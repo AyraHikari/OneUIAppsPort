@@ -8,14 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow ထဲတြင္ ကြန္ပ်ဴတာ သုိ႔မဟုတ္ တက္ဘလက္ %d လံုးအထိ မွတ္ပံုတင္ၿပီး စီမံပါ။
-
-တစ္ႀကိမ္လွ်င္ သင့္ဖုန္းႏွင့္ ကြန္ပ်ဴတာ သုိ႔မဟုတ္ တက္ဘလက္ တစ္လံုးကုိသာ ခ်ိတ္ဆက္ႏုိင္သည္။ မွတ္ပံုတင္ထားေသာ ကြန္ပ်ဴတာ သုိ႔မဟုတ္ တက္ဘလက္ႏွစ္ခုစလံုးက သင့္ဖုန္းႏွင့္ ခ်ိတ္ဆက္ရန္ ႀကိဳးစားသည့္အခါ သင္က တစ္ခုကုိ ေရြးခ်ယ္ရမည္။"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

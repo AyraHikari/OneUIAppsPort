@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 2043
+    .line 2240
     new-instance v0, Landroidx/appcompat/widget/SeslProgressBar$SavedState$1;
 
     invoke-direct {v0}, Landroidx/appcompat/widget/SeslProgressBar$SavedState$1;-><init>()V
@@ -48,18 +48,26 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
-    .line 2031
+    .line 2228
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 2032
+    .line 2229
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/widget/SeslProgressBar$SavedState;->progress:I
 
-    .line 2033
+    .line 2230
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -72,7 +80,7 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroidx/appcompat/widget/SeslProgressBar$1;)V
     .locals 0
 
-    .line 2016
+    .line 2213
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/SeslProgressBar$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -80,8 +88,16 @@
 
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "superState"
+        }
+    .end annotation
 
-    .line 2024
+    .line 2221
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -91,16 +107,26 @@
 # virtual methods
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "out",
+            "flags"
+        }
+    .end annotation
 
-    .line 2038
+    .line 2235
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 2039
+    .line 2236
     iget p2, p0, Landroidx/appcompat/widget/SeslProgressBar$SavedState;->progress:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2040
+    .line 2237
     iget p2, p0, Landroidx/appcompat/widget/SeslProgressBar$SavedState;->secondaryProgress:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

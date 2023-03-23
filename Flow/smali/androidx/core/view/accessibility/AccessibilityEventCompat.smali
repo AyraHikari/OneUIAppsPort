@@ -3,6 +3,16 @@
 .source "AccessibilityEventCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/view/accessibility/AccessibilityEventCompat$Api16Impl;,
+        Landroidx/core/view/accessibility/AccessibilityEventCompat$Api19Impl;,
+        Landroidx/core/view/accessibility/AccessibilityEventCompat$ContentChangeType;
+    }
+.end annotation
+
+
 # static fields
 .field public static final CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION:I = 0x4
 
@@ -11,6 +21,8 @@
 .field public static final CONTENT_CHANGE_TYPE_PANE_DISAPPEARED:I = 0x20
 
 .field public static final CONTENT_CHANGE_TYPE_PANE_TITLE:I = 0x8
+
+.field public static final CONTENT_CHANGE_TYPE_STATE_DESCRIPTION:I = 0x40
 
 .field public static final CONTENT_CHANGE_TYPE_SUBTREE:I = 0x1
 
@@ -82,7 +94,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 215
+    .line 250
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -90,10 +102,21 @@
 
 .method public static appendRecord(Landroid/view/accessibility/AccessibilityEvent;Landroidx/core/view/accessibility/AccessibilityRecordCompat;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "record"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 243
+    .line 279
     invoke-virtual {p1}, Landroidx/core/view/accessibility/AccessibilityRecordCompat;->getImpl()Ljava/lang/Object;
 
     move-result-object p1
@@ -107,10 +130,19 @@
 
 .method public static asRecord(Landroid/view/accessibility/AccessibilityEvent;)Landroidx/core/view/accessibility/AccessibilityRecordCompat;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 276
+    .line 314
     new-instance v0, Landroidx/core/view/accessibility/AccessibilityRecordCompat;
 
     invoke-direct {v0, p0}, Landroidx/core/view/accessibility/AccessibilityRecordCompat;-><init>(Ljava/lang/Object;)V
@@ -120,16 +152,24 @@
 
 .method public static getAction(Landroid/view/accessibility/AccessibilityEvent;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 369
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 410
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 370
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityEvent;->getAction()I
+    .line 411
+    invoke-static {p0}, Landroidx/core/view/accessibility/AccessibilityEventCompat$Api16Impl;->getAction(Landroid/view/accessibility/AccessibilityEvent;)I
 
     move-result p0
 
@@ -143,16 +183,24 @@
 
 .method public static getContentChangeTypes(Landroid/view/accessibility/AccessibilityEvent;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 307
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 348
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 308
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityEvent;->getContentChangeTypes()I
+    .line 349
+    invoke-static {p0}, Landroidx/core/view/accessibility/AccessibilityEventCompat$Api19Impl;->getContentChangeTypes(Landroid/view/accessibility/AccessibilityEvent;)I
 
     move-result p0
 
@@ -166,16 +214,24 @@
 
 .method public static getMovementGranularity(Landroid/view/accessibility/AccessibilityEvent;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 333
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 374
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 334
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityEvent;->getMovementGranularity()I
+    .line 375
+    invoke-static {p0}, Landroidx/core/view/accessibility/AccessibilityEventCompat$Api16Impl;->getMovementGranularity(Landroid/view/accessibility/AccessibilityEvent;)I
 
     move-result p0
 
@@ -189,10 +245,21 @@
 
 .method public static getRecord(Landroid/view/accessibility/AccessibilityEvent;I)Landroidx/core/view/accessibility/AccessibilityRecordCompat;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "index"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 256
+    .line 293
     new-instance v0, Landroidx/core/view/accessibility/AccessibilityRecordCompat;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityEvent;->getRecord(I)Landroid/view/accessibility/AccessibilityRecord;
@@ -206,10 +273,19 @@
 
 .method public static getRecordCount(Landroid/view/accessibility/AccessibilityEvent;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 228
+    .line 263
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityEvent;->getRecordCount()I
 
     move-result p0
@@ -219,16 +295,26 @@
 
 .method public static setAction(Landroid/view/accessibility/AccessibilityEvent;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "action"
+        }
+    .end annotation
 
-    .line 358
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 399
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 359
-    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityEvent;->setAction(I)V
+    .line 400
+    invoke-static {p0, p1}, Landroidx/core/view/accessibility/AccessibilityEventCompat$Api16Impl;->setAction(Landroid/view/accessibility/AccessibilityEvent;I)V
 
     :cond_0
     return-void
@@ -236,16 +322,26 @@
 
 .method public static setContentChangeTypes(Landroid/view/accessibility/AccessibilityEvent;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "changeTypes"
+        }
+    .end annotation
 
-    .line 288
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 327
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 289
-    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityEvent;->setContentChangeTypes(I)V
+    .line 328
+    invoke-static {p0, p1}, Landroidx/core/view/accessibility/AccessibilityEventCompat$Api19Impl;->setContentChangeTypes(Landroid/view/accessibility/AccessibilityEvent;I)V
 
     :cond_0
     return-void
@@ -253,16 +349,26 @@
 
 .method public static setMovementGranularity(Landroid/view/accessibility/AccessibilityEvent;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "granularity"
+        }
+    .end annotation
 
-    .line 322
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 363
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 323
-    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityEvent;->setMovementGranularity(I)V
+    .line 364
+    invoke-static {p0, p1}, Landroidx/core/view/accessibility/AccessibilityEventCompat$Api16Impl;->setMovementGranularity(Landroid/view/accessibility/AccessibilityEvent;I)V
 
     :cond_0
     return-void

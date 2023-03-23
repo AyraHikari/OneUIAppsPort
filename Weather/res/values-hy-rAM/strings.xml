@@ -33,6 +33,7 @@
     <string name="air_quality">Օդի որակը</string>
     <string name="air_quality_next_tts">Օդի որակի վերաբերյալ ավելի ուշ կատարված ամենօրյա կանխատեսումներ</string>
     <string name="air_quality_previous_tts">Օդի որակի վերաբերյալ ավելի վաղ կատարված ամենօրյա կանխատեսումներ</string>
+    <string name="alert_title">Խիստ եղանակի մասին զգուշացում</string>
     <string name="all_added_cities">Բոլոր ավելացված քաղաքները</string>
     <string name="allow">Թույլ տալ</string>
     <string name="allow_permission_in_settings">Այս գործառական հնարավորությունն օգտագործելու համար հարկավոր է թույլտվություն տալ Դրվածքներում:</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Գործողությունը չի ապահովվում:</string>
     <string name="apply_daylight_saving_time">Կիրառե՞լ ամառային ժամանակը</string>
     <string name="as_possible_after_verification">Հաղորդումն ուղարկվեց: Քաղաքի անվանումը կփոխվի ստուգումից հետո հնարավորինս շուտ:</string>
+    <string name="auto_refresh_on_screen_description">Ամեն ժամ ինքնաբերաբար ստացեք եղանակի թարմացված տեսություն: Երբ սա միացված է, հնարավոր չէ թարմացնել ձեռքով:</string>
+    <string name="auto_refresh_on_the_go">Ինքնանորացնել հընթացս</string>
+    <string name="auto_refresh_on_the_go_advanced">Ընդլայնված</string>
+    <string name="auto_refresh_on_the_go_description">Ստացեք եղանակի տեսության ավելի հաճախակի թարմացումներ, երբ մեքենա կամ հեծանիվ եք վարում, վազում կամ քայլում եք: Երբ սա միացված է, հնարավոր չէ նորացնել ձեռքով:</string>
+    <string name="auto_refresh_on_the_go_simple_description">Ստացեք եղանակի տեսության ավելի հաճախակի թարմացումներ, երբ մեքենա կամ հեծանիվ եք վարում, վազում կամ քայլում եք:</string>
     <string name="btn_report">Հղրդել</string>
     <string name="button_finish">Վերջ</string>
     <string name="button_tts">Կոճակ</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Լրացուցիչ տեղեկությունների համար կրկնակի թակեք:</string>
     <string name="china">Չինաստան</string>
     <string name="cities_button">Քաղաքներ</string>
+    <string name="city_added">Քաղաքն ավելացվեց:</string>
     <string name="city_list_text">Քաղաքներ</string>
     <string name="clear">Պարզ</string>
     <string name="clear_then_cloudy">Պարզկա, հետո՝ ամպամած</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Միույթը գցված է %d դիրքում։</string>
     <string name="dragndroplist_drag_start">Սկսված է միույթի քաշումը %d դիրք։</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d դիրքի միույթը անհնար է քաշել։</string>
+    <string name="drawer_tips">Խորհուրդներ %s-ի վերաբերյալ</string>
     <string name="drawer_tips_message">Թակեք այստեղ՝ տեղեր ավելացնելու, վերացնելու և վերադասավորելու համար: Նաև կարող եք ավելացնել մեկից ավելի պատկերագրեր՝ Հիմնական էկրանում տարբեր տեղեր ցույց տալու համար:</string>
     <string name="drawer_tips_message_1">Այս ընտրացանկի ներքևում թակեք «Կառավարել տեղերը»՝ տեղեր ավելացնելու, վերացնելու և վերադասավորելու համար:</string>
     <string name="drawer_tips_message_2">Կարող եք մեկից ավելի պատկերագրեր ավելացնել Հիմնական էկրանում՝ տարբեր տեղեր միաժամանակ ցույց տալու համար:</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Եղանակի տեսանյութ</string>
     <string name="format_km_per_hour">%s կմ/ժ</string>
     <string name="format_m_per_hour">%s մղոն/ժ</string>
+    <string name="fri">Ուրբ</string>
     <string name="general">Ընդհանուր</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Ստացեք անհատականացված բովանդակություն՝ ըստ այն բանի, թե ինչպես եք օգտագործում Ձեր հեռախոսը:</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Ստացեք անհատականացված բովանդակություն՝ ըստ այն բանի, թե ինչպես եք օգտագործում Ձեր պլանշետը:</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">«Եղանակ» ծրագրից ստանալ եղանակի տեսություն, ներառյալ Ձեր ընթացիկ տեղի համար</string>
     <string name="go_to_website">Գնալ կայք</string>
     <string name="goto_apps">Մատչելի է նոր թարմացում. տեղադրե՞լ հիմա:</string>
     <string name="goto_apps_later">Ավելի ուշ</string>
     <string name="goto_apps_now">Այժմ</string>
     <string name="goto_apps_update_title">Նոր բովանդակության զգուշացումներ</string>
     <string name="header_tts">Խորագիր</string>
+    <string name="heavy">Ուժեղ</string>
     <string name="heavy_rain">Հորդառատ անձրև</string>
     <string name="heavy_rain_followed_by_intense_heat">Հորդառատ անձրև, հետո՝ սաստիկ շոգ</string>
     <string name="heavy_rain_followed_by_light_rain">Հորդառատ անձրև, հետո՝ սաստիկ շոգ</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Տեսանելիություն</string>
     <string name="life_index_wind">Քամի</string>
     <string name="life_index_wind_force">Քամու արագություն</string>
+    <string name="light">Թեթև</string>
     <string name="light_rain_followed_by_heavy_rain">Թեթև անձրև, հետո՝ հորդառատ անձրև</string>
     <string name="light_rain_with_some_heavy_rain">Թեթև անձրև՝ մի քիչ հորդառատ անձրևով</string>
     <string name="link_tts">Հղում</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Արդյունքներ չեն գտնվել:</string>
     <string name="message_service_not_available">Ծառայությունն այժմ անհասանելի է:</string>
     <string name="minus_tts">Մինուս</string>
+    <string name="mon">Երկ</string>
     <string name="more">Ավել</string>
     <string name="more_cuntact_us">Դիմեք մեզ</string>
     <string name="more_information">Ավելին</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Թակեք այստեղ՝ եղանակի տեսության կանխադրված վայրը փոխելու և Ձեր բոլոր վայրերը կառավարելու համար:</string>
     <string name="new_version_available">Մատչելի է %s-ի նոր վարկած:</string>
     <string name="new_version_is_available">Նոր վարկած է մատչելի:</string>
+    <string name="news_menu_show_news">Ցույց տալ նորություններ</string>
+    <string name="news_opt_in_banner_title_text">Միշտ տեղեկացված եղեք ընթացիկ իրադարձությունների մասին՝ նորություններ ցույց տալով «Եղանակ» պատկերագրում:</string>
+    <string name="news_opt_in_popup_desc_text">Միշտ տեղեկացված եղեք աշխարհի անցուդարձին՝ %s-ի ամենավերջին լուրերի համառոտ շարադրանքը ցույց տալով «Եղանակ» պատկերագրում:</string>
+    <string name="news_opt_in_popup_title_text">Նորություններն ու եղանակի տեսությունը դիտեք մեկ պատկերագրում</string>
+    <string name="news_request_agree_text">Թակեք՝ %s-ից նորություններ ստանալու համար</string>
+    <string name="news_widget_bubble_text">Ստացեք նորություններ եղանակի տեսության հետ միասին:</string>
+    <string name="news_widget_dummy_title">Այսօրվա լավագույն պատմությունը</string>
+    <string name="news_widget_new_dummy_title">5 բան, որ հարկավոր է իմանալ այս առավոտյան</string>
+    <string name="news_widget_oobe_text">Թակեք այստեղ՝ նոր. ավելցնելու:</string>
     <string name="next">Հաջորդ քաղաքը</string>
+    <string name="next_btn">Հաջորդ</string>
     <string name="next_city">Կրկնակի թակեք, որպեսզի դիտեք հաջորդ քաղաքի եղանակի տեսությունը:</string>
     <string name="night_tts">Գիշեր</string>
     <string name="no_application_available">Մատչելի ծրագրեր չկան:</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Եղանակի տեսություն չկա</string>
     <string name="not_in_use">Չի օգտագործվում</string>
     <string name="not_now">Ոչ հիմա</string>
+    <string name="not_now_btn">Ոչ հիմա</string>
     <string name="not_selected">Չի ընտրվել</string>
     <string name="nothing_selected">Ոչինչ ընտրված չէ:</string>
     <string name="noti">Նշում</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Տեղի ամենաարագ և առավել ճշգրիտ հայտնաբերման համար թակեք ԴՐՎԱԾՔՆԵՐ և Տեղորոշման եղանակը դրեք GPS, Wi-Fi և շարժական կապի ցանցեր:</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Տեղի ամենաարագ և առավել ճշգրիտ հայտնաբերման համար թակեք ԴՐՎԱԾՔՆԵՐ և Տեղորոշման եղանակը դրեք GPS և Wi-Fi:</string>
     <string name="notice_gps_trun_off_message_verizon">Տեղական եղանակի տեսությունը դիտելու համար միացրեք Տեղի դրվածքները և համոզվեք, որ ռեժիմը դրված է «Բարձր ճշտություն»:</string>
+    <string name="notification_alert_channel_name">Խիստ եղանակի մասին զգուշացում</string>
     <string name="notification_apps_update_channel_name">Թարմացման մասին ծանուցումներ</string>
     <string name="notification_auto_refresh_channel_name">Եղանակի տեսության ինքնանորացում</string>
     <string name="notification_dex_channel_name">Եղանակը՝ Samsung DeX-ում</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Բացել ծրագիր</string>
     <string name="open_source_licences">Բաց սկզբնական կոդով լիցենզիաներ</string>
     <string name="other_locations">Այլ տեղեր</string>
+    <string name="partly_sunny">Մասամբ արևոտ</string>
     <string name="paused">Ընդմիջված</string>
     <string name="pd_km">%.1f կմ</string>
     <string name="pd_km_h">%d կմ/ժ</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Տեղումներ՝ %d մմ</string>
     <string name="preview">%s-ի նախադիտում</string>
     <string name="previous">Նախորդ քաղաքը</string>
+    <string name="previous_btn">Նախորդ</string>
     <string name="previous_city">Կրկնակի թակեք, որպեսզի դիտեք նախորդ քաղաքի եղանակի տեսությունը:</string>
     <string name="privacy_policy">Գաղտնիության քաղաքականություն</string>
     <string name="probability_of_rain_text">Անձրևի հավանական.</string>
     <string name="protect_your_content">Պաշտպանեք Ձեր բովանդակ.</string>
+    <string name="ps_in">%s դյույմ</string>
+    <string name="ps_mm">%s մմ</string>
     <string name="radar">Ռադիոտեղորոշիչ և քարտեզներ</string>
     <string name="rain">Անձրև</string>
     <string name="rain_followed_by_intense_heat">Անձրև, հետո՝ սաստիկ շոգ</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Եղանակի տեսությունը թարմացնելու համար թակեք ԴՐՎԱԾՔՆԵՐ, գնացեք Ծրագրի տեղեկություններ > Թույլտվություններ, հետո տվեք հետևյալ թույլտվությունները և նորից փորձեք՝</string>
     <string name="runtime_location_permission_title">Տալ թույլտվություններ</string>
     <string name="runtime_oem_grant_permission_desc">%s ծրագրին տրված է հետևյալ տարրերը մուտք գործելու թույլտվություն՝</string>
+    <string name="sat">Շբթ</string>
     <string name="save_button">Պահպանել</string>
     <string name="search_most_searched_for">Ամենաշատ որոնվող</string>
     <string name="search_tab_cities">Քաղաքներ</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Նոր բովանդակություն կա</string>
     <string name="sesl_material_overflow_badge_text_n">Ն</string>
     <string name="sesl_more_item_label">Ավելին</string>
+    <string name="sesl_preferecne_badge_description">Նոր ծանուցում</string>
     <string name="sesl_preferencecategory_added_title">Գլխագիր</string>
     <string name="sesl_search_hint">Որոնել</string>
     <string name="sesl_searchview_description_clear">Մաքրել որոնման դաշտը</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Ստուգեք Ձեր ցանցային միացումը և նորից փորձեք:</string>
     <string name="st_offline">Ցանցից դրս</string>
     <string name="st_view_less">Դիտել ավելի քիչ</string>
+    <string name="status_off">Անջատել</string>
+    <string name="status_on">Միացնել</string>
+    <string name="sun">Կիր</string>
     <string name="sunny">Արևոտ</string>
     <string name="sunny_with_some_clouds">Արևոտ՝ մի քիչ ամպամած</string>
     <string name="sunny_with_some_heavy_rain">Արևոտ՝ մի քիչ հորդառատ անձրևով</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Թակեք այստեղ՝ Ձեր հին սարքից եղանակի տվյալները վերականգնելու համար:</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Թակեք ՆՈՐԻՑ ՓՈՐՁԵԼ, որպեսզի նորից փորձեք գտնել Ձեր տեղը:</string>
     <string name="tap_setting_message_edge_panel">Միացրեք Տեղորոշումը՝ տեղական եղանակի տեսությունը ստանալու համար:</string>
+    <string name="tap_the_settings_icon">Թակեք դրվածքների պատկերակը:</string>
     <string name="tap_to_get_the_weather">Թակեք՝ եղանակի տեսությունը ստանալու համար</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Դրույթներ և պայմաններ</string>
     <string name="the_latest_version">Ամենավերջին վարկածն արդեն տեղադրված է:</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Սա կկիրառվի նաև ծանուցումների և Օրացույցի նկատմամբ:</string>
+    <string name="thu">Հնգ</string>
     <string name="tick_box_tts">Նշման վանդակ</string>
     <string name="ticked_tts">Նշված</string>
     <string name="time_am">ԿԱ</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Ամեն ժամ</string>
     <string name="title_select_locations">Ընտրել վայրեր</string>
     <string name="title_theme">Թեմաներ</string>
+    <string name="to_continue_agree_to_updated">Շարունակելու համար ընդունեք մեր թարմացված %s-ը:</string>
     <string name="to_get_local_weather_chn">"Տեղական եղանակի տեսությունը ստանալու համար ձեր գտնվելու վայրի մասին տվյալները կուղարկվեն օդերևութաբանական ծառայությունների մատակարարին։ (Խնդրում ենք կարդալ մատակարարի %1$sՊայմանները և դրույթները%2$s և %3$sԳաղտնիության քաղաքականությունը%4$s):
 Եղանակային որոնման տվյալները կարող են հասանելի լինել Ձեր սարքի այլ ծրագրերին և ծառայություններին` այդ ծրագրերում եղանակը ցույց տալու համար:
 Եղանակի տեղեկատվությունը ձեզ շարունակաբար տրամադրելու համար եղանակին հասանելի կլինի ձեր գտնվելու վայրը, նույնիսկ այն դեպքում, երբ Դուք չեք օգտագործում ծրագիրը:"</string>
     <string name="today">Այսօր</string>
+    <string name="try_it_out_btn">Փորձեք այն</string>
+    <string name="tue">Երք</string>
+    <string name="turn_on_to_use_precise_location">Այս գործառական հնարավորությունն օգտագործելու համար հարկավոր է %s-ին թույլ տալ միշտ օգտվել Ձեր տեղի մասին տեղեկատվությունից և միացնել «Օգտագործել ճշգրիտ տեղը»: Թակեք «Դրվածքներ», հետո գնացեք Թույլտվություններ > Տեղ:</string>
     <string name="tw_title_weather_broadcast">Հեռարձակում</string>
-    <string name="unable_to_check_for_updates">Անհնար է ստուգել թարմացումների առկայությունը: Ցանցային միացում չկա:</string>
+    <string name="unable_to_check_for_updates">Չհաջողվեց ստուգել թարմացումների առկայությունը: Ավելի ուշ նորից փորձեք:</string>
     <string name="unable_to_receive_info_msg">Անհնար է ստանալ տեղեկ.</string>
     <string name="unticked_tts">Նշումը հանված</string>
     <string name="unused">Չօգտագործված</string>
     <string name="update">Թարմացնել</string>
     <string name="update_abb8">Թարմացնել</string>
     <string name="update_app">Թարմացնել ծրագիրը</string>
+    <string name="updated_tile_chn">Թարմացվել է՝ %s</string>
     <string name="updated_tts">%s-ը թարմացվեց</string>
+    <string name="use_current_location">Օգտագործեք ներկա տեղը</string>
     <string name="use_current_location_agree_popup">"Տեղական եղանակի տեսությունը ստանալու համար ձեր ընթացիկ տեղի մասին տվյալները կուղարկվեն օդերևութաբանական ծառայությունների մատակարարին։ (Կարդացեք մատակարարի %1$sգաղտնիության քաղաքականությունը%2$s։)
 Ձեր սարքի մյուս ծրագրերին և ծառայություններին կարող են հասանելի լինել եղանակային տվյալները՝ եղանակի տեսությունն այդ ծրագրերում ցույց տալու համար։"</string>
     <string name="use_current_location_and_background_agree_popup">"Տեղական եղանակի տեսությունը ստանալու համար ձեր գտնվելու վայրի մասին տվյալները կուղարկվեն օդերևութաբանական ծառայությունների մատակարարին։ (Խնդրում ենք կարդալ մատակարարի %1$sԳաղտնիության քաղաքականությունը՝%2$s:)
@@ -635,9 +677,16 @@
 Կարող եք անջատել Ձեր տեղի օգտագործումը` անցնելով Եղանակ ծրագրի դրվածքները:"</string>
     <string name="use_current_location_body_msg_chn">"Խնդրում ենք ուշադիր կարդալ՝ նախքան «Եղանակ»-ը օգտագործելը.
 եթե ցանկանում եք իմանալ Ձեր ներկա գտնվելու տեղի եղանակը, ապա անհրաժեշտ կլինի, որ երրորդ կողմի ծառայություններ մատուցողն ունենա Ձեր սարքի շարունակական մատչում, (նույնիսկ այն ժամանակ, երբ Դուք ծառայությունը չեք օգտագործում) և ձեռք բերի որոշակի տվյալներ, ինչպես նշված է ստորև: Խնդրում ենք ուշադիր կարդալ և հասկանալ երրորդ կողմի ծառայություններ մատուցողի%1$sՊայմանները և դրույթները%2$s և %3$sԳաղտնիության քաղաքականությունը՝ %4$sնախքան նման թույլտվության տրամադրումը: Կարող եք հետ կանչել Ձեր թույլտվությունը՝ «Դրվածքներ» ընտրացանկում հետ կանչելով «Տեղ»-ը: Ձեր սարքի այլ ծրագրեր և ծառայություններ կարող են մատչել առբերված եղանակային տվյալներին՝ եղանակի տեսությունն այդ ծրագրերում և ծառայություններում ցույց տալու համար։"</string>
+    <string name="use_current_location_body_msg_kor">"Ձեր ընթացիկ տեղի տվյալները կհավաքվեն ու կօգտագործվեն «Եղանակ» ծրագրի որոշ գործառական հնարավորություններ տրամադրելու համար, ինչպիսին է տեղական եղանակի տեսությունը:
+
+Եղանակի անընդհատ տեսություն տրամադրելու համար այս ծրագիրը կանոնավորապես կմշակի Ձեր տեղի տվյալները, նույնիսկ երբ չեք օգտվում ծրագրից: Շարունակելով՝ Դուք համաձայնում եք Ձեր տեղի տվյալների հավաքմանն ու մշակմանը վերը նշված նպատակներով:
+
+Կարող եք տեղի տվյալների հավաքումն ու օգտագործումը դադարեցնել «Եղանակ» ծրագրի դրվածքներում:"</string>
     <string name="use_current_location_body_purpose">Նպատակ</string>
     <string name="use_current_location_body_purpose_content">Ձեր ներկա գտնվելու վայրի եղանակի մասին տեղեկություններ տրամադրելու համար</string>
     <string name="use_current_location_body_search_provider">Ծառայության մատակարար</string>
+    <string name="use_current_location_continue">Շարունակել</string>
+    <string name="use_current_location_not_now">Ոչ հիմա</string>
     <string name="use_current_location_off_alert_popup">Տեղի մասին ընթացիկ տեղեկատվությունը կհեռացվի:</string>
     <string name="useful_informations">Կյանքի խորհուրդներ և այլ զեկույցներ</string>
     <string name="using_as">Օգտագործում որպես %s</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">Եղանակի հուշումներ</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd:</string>
+    <string name="wed">Չրք</string>
     <string name="weekly_forecast">Օրական</string>
     <string name="widget_background">Պատկերագրի ետնապատկեր</string>
     <string name="widget_empty_text">Թակել եղանակի տեսության համար</string>
+    <string name="widget_location">Քաղաքի անվանում</string>
     <string name="widget_name_4x1">Եղանակ և Ժամացույց</string>
     <string name="widget_setting">Դրվածքներ</string>
     <string name="widget_setting_background_color">Ֆոնային գույն</string>

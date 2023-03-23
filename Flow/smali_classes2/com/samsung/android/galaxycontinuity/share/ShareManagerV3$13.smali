@@ -3,12 +3,12 @@
 .source "ShareManagerV3.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/samsung/android/galaxycontinuity/net/wifi/ISocketListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->onSendCompleted(Ljava/lang/String;ZI)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,21 +20,21 @@
 # instance fields
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-.field final synthetic val$isSuccess:Z
-
-.field final synthetic val$remainCnt:I
-
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;IZ)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2111
+    .line 2727
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
-
-    iput p2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->val$remainCnt:I
-
-    iput-boolean p3, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->val$isSuccess:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,82 +43,198 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onConnected(Ljava/net/Socket;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
-    .line 2114
+    const-string v0, "Socket connected"
+
+    .line 2730
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    .line 2731
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$1800(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$3900(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     move-result-object v0
 
-    monitor-enter v0
+    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->start(Ljava/net/Socket;)Z
 
-    .line 2115
-    :try_start_0
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+    .line 2732
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-    iget v2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->val$remainCnt:I
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    invoke-static {v1, v2}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$1202(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;I)I
+    const-string v1, "Socket onConnected"
 
-    .line 2116
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-static {p1, v1, v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$200(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 2118
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+    return-void
+.end method
 
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_RECEIVING:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+.method public onConnectionFailed(Ljava/lang/Exception;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ex"
+        }
+    .end annotation
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$600(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/Object;)Z
+    .line 2742
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-    move-result v0
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_NONE:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    if-nez v0, :cond_0
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$800(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
 
     return-void
 
-    .line 2121
     :cond_0
-    iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->val$isSuccess:Z
+    const-string p1, "Socket failed"
 
-    if-eqz v0, :cond_1
+    .line 2744
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 2122
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+    .line 2745
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-    const-string v1, "onSendCompleted"
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_CONNECTION_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_RECEIVED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
+    const-string v1, "Socket onConnectionFailed"
 
-    invoke-static {v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$200(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {p1, v1, v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$200(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/String;Ljava/lang/Object;)V
 
-    goto :goto_0
-
-    .line 2124
-    :cond_1
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
-
-    const-string v1, "onSendCompleted"
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;->SOCKET_DATA_TRANSFER_FAILED:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SOCKET_STATE;
-
-    invoke-static {v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$200(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/String;Ljava/lang/Object;)V
-
-    :goto_0
     return-void
+.end method
 
-    :catchall_0
-    move-exception v1
+.method public onDataReceived(Ljava/net/Socket;J)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "dataLength"
+        }
+    .end annotation
 
-    .line 2116
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    const-string p1, "data received"
 
-    throw v1
+    .line 2756
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onDataReceiving(JJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedLength",
+            "totalReceivedLength"
+        }
+    .end annotation
+
+    .line 2750
+    iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+
+    invoke-static {p3}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$900(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
+
+    move-result-object p4
+
+    invoke-static {p3, p4, p1, p2}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$4000(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;J)V
+
+    return-void
+.end method
+
+.method public onDataSending(JJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sentLength",
+            "totalSentLength"
+        }
+    .end annotation
+
+    .line 2761
+    iget-object p3, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$13;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+
+    invoke-static {p3}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$900(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
+
+    move-result-object p4
+
+    invoke-static {p3, p4, p1, p2}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$4000(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;J)V
+
+    return-void
+.end method
+
+.method public onDataSent(Ljava/net/Socket;J)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "dataLength"
+        }
+    .end annotation
+
+    const-string p1, "onDataSent"
+
+    .line 2766
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onDataTransferFailed()V
+    .locals 1
+
+    const-string v0, "onDataTransferFailed"
+
+    .line 2772
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onDisconnected(Ljava/net/Socket;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
+
+    return-void
 .end method

@@ -125,6 +125,14 @@
 
 .method private executeRunnable(Ljava/lang/Runnable;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
     .line 83
     new-instance v0, Ljava/lang/StringBuilder;
@@ -135,6 +143,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
@@ -144,6 +154,8 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -158,8 +170,6 @@
     if-eqz v0, :cond_2
 
     .line 86
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->mCommandThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
-
     invoke-virtual {v0}, Ljava/util/concurrent/ThreadPoolExecutor;->isShutdown()Z
 
     move-result v0
@@ -205,8 +215,6 @@
     .line 90
     new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    sget v2, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->NUMBER_OF_CORES:I
-
     sget v3, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->NUMBER_OF_CORES:I
 
     const-wide/16 v4, 0x2
@@ -216,6 +224,8 @@
     iget-object v7, p0, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->mCommandWorkQueue:Ljava/util/concurrent/BlockingQueue;
 
     move-object v1, v0
+
+    move v2, v3
 
     invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
@@ -282,6 +292,16 @@
 
 .method private pushCommandAndClsss(Ljava/lang/String;Ljava/lang/Class;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cmd",
+            "cls"
+        }
+    .end annotation
 
     .line 47
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->mCommandMap:Ljava/util/Map;
@@ -305,6 +325,17 @@
 # virtual methods
 .method public varargs declared-synchronized execute(Ljava/lang/Class;[Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "commandClass",
+            "args"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -392,6 +423,14 @@
 
 .method public declared-synchronized requestCommandExecute(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowMessage"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -423,9 +462,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ".command."
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     .line 65
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
@@ -450,14 +493,18 @@
     goto :goto_0
 
     :cond_1
-    const-string v2, "tablet."
+    const-string/jumbo v2, "tablet."
 
     :goto_0
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->CMD:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

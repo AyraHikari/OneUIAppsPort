@@ -5,29 +5,27 @@
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0018\u00002\u00060\u0001j\u0002`\u0002B\u000f\u0008\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0005J\u000e\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u0004R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u001e\u0010\t\u001a\u00020\u00042\u0006\u0010\u0008\u001a\u00020\u0004@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0007\u00a8\u0006\u000e"
+        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0018\u00002\u00060\u0001j\u0002`\u0002B\u0011\u0008\u0000\u0012\u0006\u0010\u000c\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u000e\u0010\u000fJ\u000e\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0003R$\u0010\u0008\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u00038\u0006@BX\u0086\u000e\u00a2\u0006\u000c\n\u0004\u0008\u0008\u0010\t\u001a\u0004\u0008\n\u0010\u000bR\u0017\u0010\u000c\u001a\u00020\u00038\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010\t\u001a\u0004\u0008\r\u0010\u000b\u00a8\u0006\u0010"
     }
     d2 = {
         "Lokhttp3/internal/connection/RouteException;",
         "Ljava/lang/RuntimeException;",
         "Lkotlin/RuntimeException;",
-        "firstConnectException",
         "Ljava/io/IOException;",
-        "(Ljava/io/IOException;)V",
-        "getFirstConnectException",
-        "()Ljava/io/IOException;",
+        "e",
+        "Lbi/x;",
+        "addConnectException",
         "<set-?>",
         "lastConnectException",
+        "Ljava/io/IOException;",
         "getLastConnectException",
-        "addConnectException",
-        "",
-        "e",
+        "()Ljava/io/IOException;",
+        "firstConnectException",
+        "getFirstConnectException",
+        "<init>",
+        "(Ljava/io/IOException;)V",
         "okhttp"
     }
     k = 0x1
@@ -51,18 +49,14 @@
 
     const-string v0, "firstConnectException"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 25
-    move-object v0, p1
-
-    check-cast v0, Ljava/lang/Throwable;
-
-    invoke-direct {p0, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+    .line 1
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     iput-object p1, p0, Lokhttp3/internal/connection/RouteException;->firstConnectException:Ljava/io/IOException;
 
-    .line 26
+    .line 2
     iput-object p1, p0, Lokhttp3/internal/connection/RouteException;->lastConnectException:Ljava/io/IOException;
 
     return-void
@@ -71,24 +65,18 @@
 
 # virtual methods
 .method public final addConnectException(Ljava/io/IOException;)V
-    .locals 2
+    .locals 1
 
     const-string v0, "e"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
+    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->firstConnectException:Ljava/io/IOException;
 
-    check-cast v0, Ljava/lang/Throwable;
+    invoke-static {v0, p1}, Lbi/a;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
-    move-object v1, p1
-
-    check-cast v1, Ljava/lang/Throwable;
-
-    invoke-static {v0, v1}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-
-    .line 31
+    .line 2
     iput-object p1, p0, Lokhttp3/internal/connection/RouteException;->lastConnectException:Ljava/io/IOException;
 
     return-void
@@ -97,7 +85,6 @@
 .method public final getFirstConnectException()Ljava/io/IOException;
     .locals 1
 
-    .line 24
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->firstConnectException:Ljava/io/IOException;
 
     return-object v0
@@ -106,7 +93,6 @@
 .method public final getLastConnectException()Ljava/io/IOException;
     .locals 1
 
-    .line 26
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->lastConnectException:Ljava/io/IOException;
 
     return-object v0

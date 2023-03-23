@@ -42,7 +42,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
     .line 11
     new-instance v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
@@ -56,58 +56,52 @@
     sput-object v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->UNKNOWN:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
     .line 12
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    new-instance v1, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
-    const-string v1, "IMAGE"
+    const-string v3, "IMAGE"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3, v3}, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v3, v4, v4}, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->IMAGE:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    sput-object v1, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->IMAGE:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
     .line 13
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    new-instance v3, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
-    const-string v1, "TEXT"
+    const-string v5, "TEXT"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4, v4}, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v3, v5, v6, v6}, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->TEXT:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    sput-object v3, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->TEXT:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
     .line 14
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    new-instance v5, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
-    const-string v1, "OUTER_BLOCK"
+    const-string v7, "OUTER_BLOCK"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5, v5}, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v5, v7, v8, v8}, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->OUTER_BLOCK:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    sput-object v5, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->OUTER_BLOCK:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    new-array v7, v7, [Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 10
-    sget-object v6, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->UNKNOWN:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
-
-    aput-object v6, v1, v2
-
-    sget-object v6, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->IMAGE:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
-
-    aput-object v6, v1, v3
-
-    sget-object v3, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->TEXT:Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
-
-    aput-object v3, v1, v4
-
-    aput-object v0, v1, v5
-
-    sput-object v1, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->$VALUES:[Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
+    sput-object v7, Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;->$VALUES:[Lcom/samsung/android/sdk/scs/ai/image/BoundaryType;
 
     .line 19
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;

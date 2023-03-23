@@ -243,37 +243,20 @@
     :cond_0
     iput-object v0, p0, Lcom/bumptech/glide/GenericRequestBuilder;->loadProvider:Lcom/bumptech/glide/provider/ChildLoadProvider;
 
-    if-eqz p1, :cond_3
-
-    if-eqz p2, :cond_2
-
-    if-eqz p3, :cond_1
-
-    goto :goto_0
-
-    .line 110
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "LoadProvider must not be null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_2
-    :goto_0
-    return-void
+    const-string p4, "Context can\'t be null"
 
     .line 107
-    :cond_3
-    new-instance p1, Ljava/lang/NullPointerException;
+    invoke-static {p1, p4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    const-string p2, "Context can\'t be null"
+    if-eqz p2, :cond_1
 
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    const-string p1, "LoadProvider must not be null"
 
-    throw p1
+    .line 110
+    invoke-static {p3, p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    :cond_1
+    return-void
 .end method
 
 .method constructor <init>(Lcom/bumptech/glide/provider/LoadProvider;Ljava/lang/Class;Lcom/bumptech/glide/GenericRequestBuilder;)V
@@ -765,22 +748,15 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "Animation factory must not be null!"
+
+    .line 418
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 420
     iput-object p1, p0, Lcom/bumptech/glide/GenericRequestBuilder;->animationFactory:Lcom/bumptech/glide/request/animation/GlideAnimationFactory;
 
     return-object p0
-
-    .line 418
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "Animation factory must not be null!"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public animate(Lcom/bumptech/glide/request/animation/ViewPropertyAnimation$Animator;)Lcom/bumptech/glide/GenericRequestBuilder;
@@ -866,8 +842,6 @@
     iget-object v1, p0, Lcom/bumptech/glide/GenericRequestBuilder;->loadProvider:Lcom/bumptech/glide/provider/ChildLoadProvider;
 
     if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/bumptech/glide/GenericRequestBuilder;->loadProvider:Lcom/bumptech/glide/provider/ChildLoadProvider;
 
     invoke-virtual {v1}, Lcom/bumptech/glide/provider/ChildLoadProvider;->clone()Lcom/bumptech/glide/provider/ChildLoadProvider;
 
@@ -1496,22 +1470,15 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "Signature must not be null"
+
+    .line 588
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 590
     iput-object p1, p0, Lcom/bumptech/glide/GenericRequestBuilder;->signature:Lcom/bumptech/glide/load/Key;
 
     return-object p0
-
-    .line 588
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "Signature must not be null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public sizeMultiplier(F)Lcom/bumptech/glide/GenericRequestBuilder;

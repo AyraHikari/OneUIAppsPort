@@ -36,37 +36,43 @@
 
 # direct methods
 .method constructor <init>(I)V
-    .locals 3
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tableCount"
+        }
+    .end annotation
 
-    .line 744
+    .line 802
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 745
+    .line 803
     new-array v0, p1, [J
 
     iput-object v0, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTableObservers:[J
 
-    .line 746
+    .line 804
     new-array v1, p1, [Z
 
     iput-object v1, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStates:[Z
 
-    .line 747
+    .line 805
     new-array p1, p1, [I
 
     iput-object p1, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStateChanges:[I
 
-    const-wide/16 v1, 0x0
+    const-wide/16 v2, 0x0
 
-    .line 748
-    invoke-static {v0, v1, v2}, Ljava/util/Arrays;->fill([JJ)V
+    .line 806
+    invoke-static {v0, v2, v3}, Ljava/util/Arrays;->fill([JJ)V
 
-    .line 749
-    iget-object p1, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStates:[Z
+    const/4 p1, 0x0
 
-    const/4 v0, 0x0
-
-    invoke-static {p1, v0}, Ljava/util/Arrays;->fill([ZZ)V
+    .line 807
+    invoke-static {v1, p1}, Ljava/util/Arrays;->fill([ZZ)V
 
     return-void
 .end method
@@ -76,10 +82,10 @@
 .method getTablesToSync()[I
     .locals 9
 
-    .line 796
+    .line 865
     monitor-enter p0
 
-    .line 797
+    .line 866
     :try_start_0
     iget-boolean v0, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mNeedsSync:Z
 
@@ -91,7 +97,7 @@
 
     goto :goto_4
 
-    .line 800
+    .line 869
     :cond_0
     iget-object v0, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTableObservers:[J
 
@@ -106,7 +112,7 @@
 
     if-ge v2, v0, :cond_4
 
-    .line 802
+    .line 871
     iget-object v4, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTableObservers:[J
 
     aget-wide v5, v4, v2
@@ -124,16 +130,16 @@
     :cond_1
     move v4, v1
 
-    .line 803
+    .line 872
     :goto_1
     iget-object v5, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStates:[Z
 
-    aget-boolean v5, v5, v2
+    aget-boolean v6, v5, v2
 
-    if-eq v4, v5, :cond_3
+    if-eq v4, v6, :cond_3
 
-    .line 804
-    iget-object v5, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStateChanges:[I
+    .line 873
+    iget-object v6, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStateChanges:[I
 
     if-eqz v4, :cond_2
 
@@ -143,34 +149,32 @@
     const/4 v3, 0x2
 
     :goto_2
-    aput v3, v5, v2
+    aput v3, v6, v2
 
     goto :goto_3
 
-    .line 806
+    .line 875
     :cond_3
     iget-object v3, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStateChanges:[I
 
     aput v1, v3, v2
 
-    .line 808
+    .line 877
     :goto_3
-    iget-object v3, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStates:[Z
-
-    aput-boolean v4, v3, v2
+    aput-boolean v4, v5, v2
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 810
+    .line 879
     :cond_4
     iput-boolean v3, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mPendingSync:Z
 
-    .line 811
+    .line 880
     iput-boolean v1, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mNeedsSync:Z
 
-    .line 812
+    .line 881
     iget-object v0, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStateChanges:[I
 
     monitor-exit p0
@@ -181,7 +185,7 @@
     :goto_4
     const/4 v0, 0x0
 
-    .line 798
+    .line 867
     monitor-exit p0
 
     return-object v0
@@ -189,7 +193,7 @@
     :catchall_0
     move-exception v0
 
-    .line 813
+    .line 882
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -199,11 +203,19 @@
 
 .method varargs onAdded([I)Z
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tableIds"
+        }
+    .end annotation
 
-    .line 757
+    .line 815
     monitor-enter p0
 
-    .line 758
+    .line 816
     :try_start_0
     array-length v0, p1
 
@@ -216,18 +228,16 @@
 
     aget v3, p1, v1
 
-    .line 759
+    .line 817
     iget-object v4, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTableObservers:[J
 
     aget-wide v5, v4, v3
-
-    .line 760
-    iget-object v4, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTableObservers:[J
 
     const-wide/16 v7, 0x1
 
     add-long/2addr v7, v5
 
+    .line 818
     aput-wide v7, v4, v3
 
     const-wide/16 v3, 0x0
@@ -238,7 +248,7 @@
 
     if-nez v3, :cond_0
 
-    .line 762
+    .line 820
     iput-boolean v4, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mNeedsSync:Z
 
     move v2, v4
@@ -248,7 +258,7 @@
 
     goto :goto_0
 
-    .line 766
+    .line 824
     :cond_1
     monitor-exit p0
 
@@ -266,11 +276,19 @@
 
 .method varargs onRemoved([I)Z
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tableIds"
+        }
+    .end annotation
 
-    .line 775
+    .line 833
     monitor-enter p0
 
-    .line 776
+    .line 834
     :try_start_0
     array-length v0, p1
 
@@ -283,18 +301,16 @@
 
     aget v3, p1, v1
 
-    .line 777
+    .line 835
     iget-object v4, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTableObservers:[J
 
     aget-wide v5, v4, v3
-
-    .line 778
-    iget-object v4, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTableObservers:[J
 
     const-wide/16 v7, 0x1
 
     sub-long v9, v5, v7
 
+    .line 836
     aput-wide v9, v4, v3
 
     cmp-long v3, v5, v7
@@ -303,7 +319,7 @@
 
     if-nez v3, :cond_0
 
-    .line 780
+    .line 838
     iput-boolean v4, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mNeedsSync:Z
 
     move v2, v4
@@ -313,7 +329,7 @@
 
     goto :goto_0
 
-    .line 784
+    .line 842
     :cond_1
     monitor-exit p0
 
@@ -332,16 +348,50 @@
 .method onSyncCompleted()V
     .locals 1
 
-    .line 821
+    .line 890
     monitor-enter p0
 
     const/4 v0, 0x0
 
-    .line 822
+    .line 891
     :try_start_0
     iput-boolean v0, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mPendingSync:Z
 
-    .line 823
+    .line 892
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method resetTriggerState()V
+    .locals 2
+
+    .line 851
+    monitor-enter p0
+
+    .line 852
+    :try_start_0
+    iget-object v0, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mTriggerStates:[Z
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Ljava/util/Arrays;->fill([ZZ)V
+
+    const/4 v0, 0x1
+
+    .line 853
+    iput-boolean v0, p0, Landroidx/room/InvalidationTracker$ObservedTableTracker;->mNeedsSync:Z
+
+    .line 854
     monitor-exit p0
 
     return-void

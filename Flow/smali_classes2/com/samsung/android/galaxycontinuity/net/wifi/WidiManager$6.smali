@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 683
+    .line 691
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager$6;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +48,7 @@
 
     const-string v0, "channel disconnected."
 
-    .line 686
+    .line 694
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
     return-void

@@ -51,7 +51,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 992
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +59,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 992
     invoke-direct {p0}, Lokhttp3/internal/http2/Http2Connection$Companion;-><init>()V
 
     return-void
@@ -71,7 +69,6 @@
 .method public final getDEFAULT_SETTINGS()Lokhttp3/internal/http2/Settings;
     .locals 1
 
-    .line 995
     invoke-static {}, Lokhttp3/internal/http2/Http2Connection;->access$getDEFAULT_SETTINGS$cp()Lokhttp3/internal/http2/Settings;
 
     move-result-object v0

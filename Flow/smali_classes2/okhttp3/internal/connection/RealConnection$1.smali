@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/internal/connection/RealConnection;->newWebSocketStreams(Lokhttp3/internal/connection/StreamAllocation;)Lokhttp3/internal/ws/RealWebSocket$Streams;
+    value = Lokhttp3/internal/connection/RealConnection;->newWebSocketStreams(Lokhttp3/internal/connection/Exchange;)Lokhttp3/internal/ws/RealWebSocket$Streams;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,17 +17,17 @@
 # instance fields
 .field final synthetic this$0:Lokhttp3/internal/connection/RealConnection;
 
-.field final synthetic val$streamAllocation:Lokhttp3/internal/connection/StreamAllocation;
+.field final synthetic val$exchange:Lokhttp3/internal/connection/Exchange;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/connection/RealConnection;ZLokio/BufferedSource;Lokio/BufferedSink;Lokhttp3/internal/connection/StreamAllocation;)V
+.method constructor <init>(Lokhttp3/internal/connection/RealConnection;ZLokio/BufferedSource;Lokio/BufferedSink;Lokhttp3/internal/connection/Exchange;)V
     .locals 0
 
-    .line 495
+    .line 556
     iput-object p1, p0, Lokhttp3/internal/connection/RealConnection$1;->this$0:Lokhttp3/internal/connection/RealConnection;
 
-    iput-object p5, p0, Lokhttp3/internal/connection/RealConnection$1;->val$streamAllocation:Lokhttp3/internal/connection/StreamAllocation;
+    iput-object p5, p0, Lokhttp3/internal/connection/RealConnection$1;->val$exchange:Lokhttp3/internal/connection/Exchange;
 
     invoke-direct {p0, p2, p3, p4}, Lokhttp3/internal/ws/RealWebSocket$Streams;-><init>(ZLokio/BufferedSource;Lokio/BufferedSink;)V
 
@@ -44,20 +44,18 @@
         }
     .end annotation
 
-    .line 497
-    iget-object v0, p0, Lokhttp3/internal/connection/RealConnection$1;->val$streamAllocation:Lokhttp3/internal/connection/StreamAllocation;
+    .line 558
+    iget-object v0, p0, Lokhttp3/internal/connection/RealConnection$1;->val$exchange:Lokhttp3/internal/connection/Exchange;
 
-    invoke-virtual {v0}, Lokhttp3/internal/connection/StreamAllocation;->codec()Lokhttp3/internal/http/HttpCodec;
+    const-wide/16 v1, -0x1
 
-    move-result-object v2
+    const/4 v3, 0x1
 
-    const/4 v1, 0x1
-
-    const-wide/16 v3, -0x1
+    const/4 v4, 0x1
 
     const/4 v5, 0x0
 
-    invoke-virtual/range {v0 .. v5}, Lokhttp3/internal/connection/StreamAllocation;->streamFinished(ZLokhttp3/internal/http/HttpCodec;JLjava/io/IOException;)V
+    invoke-virtual/range {v0 .. v5}, Lokhttp3/internal/connection/Exchange;->bodyComplete(JZZLjava/io/IOException;)Ljava/io/IOException;
 
     return-void
 .end method

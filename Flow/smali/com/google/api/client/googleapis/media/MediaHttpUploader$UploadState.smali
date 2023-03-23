@@ -38,7 +38,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 11
 
     .line 113
     new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
@@ -52,73 +52,65 @@
     sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->NOT_STARTED:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
     .line 116
-    new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    new-instance v1, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
-    const-string v1, "INITIATION_STARTED"
+    const-string v3, "INITIATION_STARTED"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->INITIATION_STARTED:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    sput-object v1, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->INITIATION_STARTED:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
     .line 119
-    new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    new-instance v3, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
-    const-string v1, "INITIATION_COMPLETE"
+    const-string v5, "INITIATION_COMPLETE"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->INITIATION_COMPLETE:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    sput-object v3, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->INITIATION_COMPLETE:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
     .line 122
-    new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    new-instance v5, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
-    const-string v1, "MEDIA_IN_PROGRESS"
+    const-string v7, "MEDIA_IN_PROGRESS"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->MEDIA_IN_PROGRESS:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    sput-object v5, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->MEDIA_IN_PROGRESS:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
     .line 125
-    new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    new-instance v7, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
-    const-string v1, "MEDIA_COMPLETE"
+    const-string v9, "MEDIA_COMPLETE"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->MEDIA_COMPLETE:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    sput-object v7, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->MEDIA_COMPLETE:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
-    const/4 v1, 0x5
+    const/4 v9, 0x5
 
-    new-array v1, v1, [Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    new-array v9, v9, [Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+
+    aput-object v0, v9, v2
+
+    aput-object v1, v9, v4
+
+    aput-object v3, v9, v6
+
+    aput-object v5, v9, v8
+
+    aput-object v7, v9, v10
 
     .line 111
-    sget-object v7, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->NOT_STARTED:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
-
-    aput-object v7, v1, v2
-
-    sget-object v2, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->INITIATION_STARTED:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->INITIATION_COMPLETE:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->MEDIA_IN_PROGRESS:Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
-
-    aput-object v2, v1, v5
-
-    aput-object v0, v1, v6
-
-    sput-object v1, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->$VALUES:[Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
+    sput-object v9, Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;->$VALUES:[Lcom/google/api/client/googleapis/media/MediaHttpUploader$UploadState;
 
     return-void
 .end method

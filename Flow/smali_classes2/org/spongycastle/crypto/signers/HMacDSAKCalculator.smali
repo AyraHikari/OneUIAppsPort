@@ -59,9 +59,7 @@
     iput-object p1, p0, Lorg/spongycastle/crypto/signers/HMacDSAKCalculator;->V:[B
 
     .line 35
-    iget-object p1, p0, Lorg/spongycastle/crypto/signers/HMacDSAKCalculator;->hMac:Lorg/spongycastle/crypto/macs/HMac;
-
-    invoke-virtual {p1}, Lorg/spongycastle/crypto/macs/HMac;->getMacSize()I
+    invoke-virtual {v0}, Lorg/spongycastle/crypto/macs/HMac;->getMacSize()I
 
     move-result p1
 

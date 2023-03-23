@@ -1,33 +1,32 @@
 .class public Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;
-.super Landroidx/databinding/DataBinderMapper;
+.super Landroidx/databinding/e;
 .source "DataBinderMapperImpl.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$InnerLayoutIdLookup;,
-        Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$InnerBrLookup;
+        Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$b;,
+        Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$a;
     }
 .end annotation
 
 
 # static fields
-.field private static final INTERNAL_LAYOUT_ID_LOOKUP:Landroid/util/SparseIntArray;
+.field public static final a:Landroid/util/SparseIntArray;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    .line 19
     new-instance v0, Landroid/util/SparseIntArray;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Landroid/util/SparseIntArray;-><init>(I)V
 
-    sput-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->INTERNAL_LAYOUT_ID_LOOKUP:Landroid/util/SparseIntArray;
+    sput-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->a:Landroid/util/SparseIntArray;
 
     return-void
 .end method
@@ -35,8 +34,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 18
-    invoke-direct {p0}, Landroidx/databinding/DataBinderMapper;-><init>()V
+    invoke-direct {p0}, Landroidx/databinding/e;-><init>()V
 
     return-void
 .end method
@@ -49,12 +47,11 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Landroidx/databinding/DataBinderMapper;",
+            "Landroidx/databinding/e;",
             ">;"
         }
     .end annotation
 
-    .line 67
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -67,8 +64,7 @@
 .method public convertBrIdToString(I)Ljava/lang/String;
     .locals 1
 
-    .line 61
-    sget-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$InnerBrLookup;->sKeys:Landroid/util/SparseArray;
+    sget-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$a;->a:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -79,11 +75,11 @@
     return-object p1
 .end method
 
-.method public getDataBinder(Landroidx/databinding/DataBindingComponent;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
+.method public getDataBinder(Landroidx/databinding/f;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
     .locals 0
 
-    .line 23
-    sget-object p1, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->INTERNAL_LAYOUT_ID_LOOKUP:Landroid/util/SparseIntArray;
+    .line 1
+    sget-object p1, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->a:Landroid/util/SparseIntArray;
 
     invoke-virtual {p1, p3}, Landroid/util/SparseIntArray;->get(I)I
 
@@ -91,7 +87,7 @@
 
     if-lez p1, :cond_1
 
-    .line 25
+    .line 2
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object p1
@@ -100,7 +96,7 @@
 
     goto :goto_0
 
-    .line 27
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -117,23 +113,23 @@
     return-object p1
 .end method
 
-.method public getDataBinder(Landroidx/databinding/DataBindingComponent;[Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
+.method public getDataBinder(Landroidx/databinding/f;[Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
     .locals 1
 
     const/4 p1, 0x0
 
     if-eqz p2, :cond_2
 
-    .line 35
+    .line 4
     array-length v0, p2
 
     if-nez v0, :cond_0
 
     goto :goto_0
 
-    .line 38
+    .line 5
     :cond_0
-    sget-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->INTERNAL_LAYOUT_ID_LOOKUP:Landroid/util/SparseIntArray;
+    sget-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->a:Landroid/util/SparseIntArray;
 
     invoke-virtual {v0, p3}, Landroid/util/SparseIntArray;->get(I)I
 
@@ -143,7 +139,7 @@
 
     const/4 p3, 0x0
 
-    .line 40
+    .line 6
     aget-object p2, p2, p3
 
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
@@ -154,7 +150,7 @@
 
     goto :goto_0
 
-    .line 42
+    .line 7
     :cond_1
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -178,9 +174,9 @@
 
     return v0
 
-    .line 55
+    .line 1
     :cond_0
-    sget-object v1, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$InnerLayoutIdLookup;->sKeys:Ljava/util/HashMap;
+    sget-object v1, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl$b;->a:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -192,7 +188,7 @@
 
     goto :goto_0
 
-    .line 56
+    .line 2
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 

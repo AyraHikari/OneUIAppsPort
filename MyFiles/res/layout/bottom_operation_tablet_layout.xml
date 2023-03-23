@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/bottom_operation_tablet_layout_0" android:background="@color/bottom_selection_layout_background" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_layout_height_tablet"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/selected_file_info_container" android:layout_width="@dimen/bottom_selected_file_info_min_size_tablet" android:layout_height="fill_parent" layout="@layout/bottom_selected_file_info_layout" />
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:background="@color/bottom_selection_layout_background" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_layout_height_tablet">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_layout_height_tablet" android:minWidth="@dimen/bottom_operation_text_min_width_tablet" android:layout_marginEnd="@dimen/bottom_selection_button_margin">
+            <FrameLayout android:id="@id/operation_cancel_container" android:layout_width="wrap_content" style="@style/BottomOpTextButtonTabletContainer">
+                <TextView android:textSize="@dimen/bottom_operation_text_size_tablet" android:id="@id/operation_cancel" android:text="@string/button_cancel" style="@style/BottomOpTextButtonTablet" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_layout_height_tablet" android:minWidth="@dimen/bottom_operation_text_min_width_tablet" android:layout_marginEnd="@dimen/bottom_selection_button_margin">
+            <FrameLayout android:id="@id/operation_done_container" android:layout_width="wrap_content" style="@style/BottomOpTextButtonTabletContainer">
+                <TextView android:textSize="@dimen/bottom_operation_text_size_tablet" android:id="@id/operation_done" android:text="@string/button_done" style="@style/BottomOpTextButtonTablet" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

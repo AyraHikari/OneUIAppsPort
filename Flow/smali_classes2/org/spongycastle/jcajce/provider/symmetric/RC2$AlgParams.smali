@@ -639,15 +639,17 @@
 
     .line 332
     :cond_0
-    new-instance v0, Lorg/spongycastle/asn1/pkcs/RC2CBCParameter;
+    new-instance p1, Lorg/spongycastle/asn1/pkcs/RC2CBCParameter;
+
+    iget v0, p0, Lorg/spongycastle/jcajce/provider/symmetric/RC2$AlgParams;->parameterVersion:I
 
     invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/symmetric/RC2$AlgParams;->engineGetEncoded()[B
 
     move-result-object v1
 
-    invoke-direct {v0, p1, v1}, Lorg/spongycastle/asn1/pkcs/RC2CBCParameter;-><init>(I[B)V
+    invoke-direct {p1, v0, v1}, Lorg/spongycastle/asn1/pkcs/RC2CBCParameter;-><init>(I[B)V
 
-    invoke-virtual {v0}, Lorg/spongycastle/asn1/pkcs/RC2CBCParameter;->getEncoded()[B
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/pkcs/RC2CBCParameter;->getEncoded()[B
 
     move-result-object p1
 
@@ -931,7 +933,7 @@
     :cond_2
     new-instance p1, Ljava/security/spec/InvalidParameterSpecException;
 
-    const-string v0, "unknown parameter spec passed to RC2 parameters object."
+    const-string/jumbo v0, "unknown parameter spec passed to RC2 parameters object."
 
     invoke-direct {p1, v0}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
 

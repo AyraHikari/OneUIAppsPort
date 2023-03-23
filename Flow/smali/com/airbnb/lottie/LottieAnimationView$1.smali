@@ -3,7 +3,7 @@
 .source "LottieAnimationView.java"
 
 # interfaces
-.implements Lcom/airbnb/lottie/OnCompositionLoadedListener;
+.implements Lcom/airbnb/lottie/LottieListener;
 
 
 # annotations
@@ -16,6 +16,15 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/airbnb/lottie/LottieListener<",
+        "Lcom/airbnb/lottie/LottieComposition;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
 .field final synthetic this$0:Lcom/airbnb/lottie/LottieAnimationView;
@@ -25,7 +34,7 @@
 .method constructor <init>(Lcom/airbnb/lottie/LottieAnimationView;)V
     .locals 0
 
-    .line 68
+    .line 64
     iput-object p1, p0, Lcom/airbnb/lottie/LottieAnimationView$1;->this$0:Lcom/airbnb/lottie/LottieAnimationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,23 +44,24 @@
 
 
 # virtual methods
-.method public onCompositionLoaded(Lcom/airbnb/lottie/LottieComposition;)V
+.method public onResult(Lcom/airbnb/lottie/LottieComposition;)V
     .locals 1
 
-    if-eqz p1, :cond_0
-
-    .line 71
+    .line 66
     iget-object v0, p0, Lcom/airbnb/lottie/LottieAnimationView$1;->this$0:Lcom/airbnb/lottie/LottieAnimationView;
 
     invoke-virtual {v0, p1}, Lcom/airbnb/lottie/LottieAnimationView;->setComposition(Lcom/airbnb/lottie/LottieComposition;)V
 
-    .line 73
-    :cond_0
-    iget-object p1, p0, Lcom/airbnb/lottie/LottieAnimationView$1;->this$0:Lcom/airbnb/lottie/LottieAnimationView;
+    return-void
+.end method
 
-    const/4 v0, 0x0
+.method public bridge synthetic onResult(Ljava/lang/Object;)V
+    .locals 0
 
-    invoke-static {p1, v0}, Lcom/airbnb/lottie/LottieAnimationView;->access$002(Lcom/airbnb/lottie/LottieAnimationView;Lcom/airbnb/lottie/Cancellable;)Lcom/airbnb/lottie/Cancellable;
+    .line 64
+    check-cast p1, Lcom/airbnb/lottie/LottieComposition;
+
+    invoke-virtual {p0, p1}, Lcom/airbnb/lottie/LottieAnimationView$1;->onResult(Lcom/airbnb/lottie/LottieComposition;)V
 
     return-void
 .end method

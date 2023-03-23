@@ -16,15 +16,47 @@
 
 # virtual methods
 .method public abstract delete(Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationAlarmContent"
+        }
+    .end annotation
 .end method
 
 .method public abstract deleteByFlowkey(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowKey"
+        }
+    .end annotation
 .end method
 
 .method public abstract deleteByPackageName(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "packageName"
+        }
+    .end annotation
 .end method
 
 .method public abstract findByFlowKey(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowKey"
+        }
+    .end annotation
 .end method
 
 .method public abstract getAllData()Ljava/util/List;
@@ -39,4 +71,12 @@
 .end method
 
 .method public abstract insert(Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationAlarmContent"
+        }
+    .end annotation
 .end method

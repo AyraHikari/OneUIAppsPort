@@ -7,8 +7,6 @@
     <item type="id" name="about_weather_lower_layout" />
     <item type="id" name="about_weather_open_source_licences_button_land" />
     <item type="id" name="about_weather_open_source_license_button" />
-    <item type="id" name="about_weather_privacy_notice_button" />
-    <item type="id" name="about_weather_privacy_notice_button_land" />
     <item type="id" name="about_weather_progress_bar" />
     <item type="id" name="about_weather_terms_and_conditions_button" />
     <item type="id" name="about_weather_terms_and_conditions_button_land" />
@@ -48,7 +46,6 @@
     <item type="id" name="accessibility_custom_action_8" />
     <item type="id" name="accessibility_custom_action_9" />
     <item type="id" name="action_about_to_licence" />
-    <item type="id" name="action_about_to_permission" />
     <item type="id" name="action_app_info" />
     <item type="id" name="action_bar" />
     <item type="id" name="action_bar_activity_content" />
@@ -65,17 +62,19 @@
     <item type="id" name="action_detail_to_search" />
     <item type="id" name="action_detail_to_setting" />
     <item type="id" name="action_divider" />
+    <item type="id" name="action_global_to_auto_refresh_on_the_go" />
+    <item type="id" name="action_global_to_deeplink" />
     <item type="id" name="action_global_to_detail" />
     <item type="id" name="action_global_to_eula" />
     <item type="id" name="action_global_to_get_current" />
+    <item type="id" name="action_global_to_history" />
     <item type="id" name="action_global_to_location" />
-    <item type="id" name="action_global_to_refresh" />
     <item type="id" name="action_global_to_search" />
     <item type="id" name="action_global_to_setting" />
     <item type="id" name="action_image" />
     <item type="id" name="action_location_to_helpFragment" />
     <item type="id" name="action_location_to_search" />
-    <item type="id" name="action_main_to_refresh" />
+    <item type="id" name="action_main_to_deeplink" />
     <item type="id" name="action_menu_divider" />
     <item type="id" name="action_menu_presenter" />
     <item type="id" name="action_mode_bar" />
@@ -84,9 +83,14 @@
     <item type="id" name="action_search_to_location" />
     <item type="id" name="action_settings_to_about" />
     <item type="id" name="action_settings_to_eula" />
+    <item type="id" name="action_settings_to_history" />
+    <item type="id" name="action_settings_to_permission" />
+    <item type="id" name="action_settings_to_refresh_on_the_go" />
     <item type="id" name="action_text" />
     <item type="id" name="actions" />
     <item type="id" name="activity_chooser_view_content" />
+    <item type="id" name="additional_space" />
+    <item type="id" name="agree" />
     <item type="id" name="air_fine_dust_graph" />
     <item type="id" name="air_fine_dust_graph_base" />
     <item type="id" name="air_item_container" />
@@ -94,22 +98,25 @@
     <item type="id" name="air_ultra_fine_dust_graph" />
     <item type="id" name="air_ultra_fine_dust_graph_base" />
     <item type="id" name="alertTitle" />
+    <item type="id" name="alert_content" />
+    <item type="id" name="alert_icon" />
+    <item type="id" name="alert_title" />
+    <item type="id" name="androidx_window_activity_scope" />
     <item type="id" name="app_bar" />
     <item type="id" name="app_permission" />
-    <item type="id" name="app_permissions_button" />
-    <item type="id" name="app_permissions_button_land" />
+    <item type="id" name="auto_refresh_on_the_go_container" />
+    <item type="id" name="auto_refresh_on_the_go_setting" />
+    <item type="id" name="auto_refresh_on_the_go_switch" />
+    <item type="id" name="auto_refresh_on_the_go_switch_description_scrollview" />
     <item type="id" name="background" />
     <item type="id" name="badge" />
+    <item type="id" name="badge_frame" />
     <item type="id" name="badge_guide" />
+    <item type="id" name="bar" />
     <item type="id" name="body" />
     <item type="id" name="bottom_area" />
     <item type="id" name="bottom_bar_overlay" />
     <item type="id" name="bottom_overflow" />
-    <item type="id" name="browser_actions_header_text" />
-    <item type="id" name="browser_actions_menu_item_icon" />
-    <item type="id" name="browser_actions_menu_item_text" />
-    <item type="id" name="browser_actions_menu_items" />
-    <item type="id" name="browser_actions_menu_view" />
     <item type="id" name="buttonBarLayout" />
     <item type="id" name="buttonPanel" />
     <item type="id" name="cancel_button" />
@@ -138,24 +145,20 @@
     <item type="id" name="common_alert_bg" />
     <item type="id" name="confirm_button" />
     <item type="id" name="constraintToolbar" />
-    <item type="id" name="contact_us" />
-    <item type="id" name="contact_us_icon" />
-    <item type="id" name="contact_us_layout" />
     <item type="id" name="container" />
     <item type="id" name="content" />
     <item type="id" name="contentPanel" />
+    <item type="id" name="content_area" />
     <item type="id" name="content_fragment" />
     <item type="id" name="content_layout" />
     <item type="id" name="coordinator" />
     <item type="id" name="coordinator_layout" />
-    <item type="id" name="cover_widget_app_title" />
     <item type="id" name="cover_widget_description" />
+    <item type="id" name="cover_widget_touch_area" />
     <item type="id" name="cp_logo" />
     <item type="id" name="cp_text" />
     <item type="id" name="cp_view_layout" />
     <item type="id" name="current_city_area" />
-    <item type="id" name="current_high_low_temp_divider" />
-    <item type="id" name="current_high_low_temp_divider_bg" />
     <item type="id" name="customPanel" />
     <item type="id" name="daily_container" />
     <item type="id" name="daily_day_text" />
@@ -169,7 +172,9 @@
     <item type="id" name="date" />
     <item type="id" name="date_picker_actions" />
     <item type="id" name="decor_content_parent" />
+    <item type="id" name="deeplink" />
     <item type="id" name="default_activity_button" />
+    <item type="id" name="default_icon" />
     <item type="id" name="description" />
     <item type="id" name="design_bottom_sheet" />
     <item type="id" name="design_menu_item_action_area" />
@@ -182,28 +187,20 @@
     <item type="id" name="dev_options_container_layout" />
     <item type="id" name="dev_options_on" />
     <item type="id" name="dialog_button" />
+    <item type="id" name="disagree" />
     <item type="id" name="divider" />
     <item type="id" name="drawer_bg" />
     <item type="id" name="drawer_container" />
     <item type="id" name="drawer_layout" />
     <item type="id" name="drawer_layout_container" />
+    <item type="id" name="drawer_navigation_layout" />
     <item type="id" name="edge_air_icon" />
-    <item type="id" name="edge_city_list_area" />
-    <item type="id" name="edge_city_list_divider" />
     <item type="id" name="edge_default_image" />
     <item type="id" name="edge_default_text" />
-    <item type="id" name="edge_help_update_button" />
-    <item type="id" name="edge_help_update_layout" />
-    <item type="id" name="edge_help_update_progress" />
-    <item type="id" name="edge_help_update_time" />
     <item type="id" name="edge_over_loading" />
     <item type="id" name="edge_panel" />
     <item type="id" name="edge_panel_error_text" />
     <item type="id" name="edge_setting_button" />
-    <item type="id" name="edge_setting_button_layout" />
-    <item type="id" name="edge_weather_alert_container" />
-    <item type="id" name="edge_weather_alert_desc" />
-    <item type="id" name="edge_weather_alert_icon" />
     <item type="id" name="edge_weather_current_icon" />
     <item type="id" name="edge_weather_current_temp" />
     <item type="id" name="edge_weather_current_temp_high" />
@@ -228,7 +225,10 @@
     <item type="id" name="edit_query" />
     <item type="id" name="edittext_container" />
     <item type="id" name="empty_area" />
+    <item type="id" name="end_current" />
+    <item type="id" name="end_current_normal" />
     <item type="id" name="end_illust" />
+    <item type="id" name="end_normal" />
     <item type="id" name="error_area" />
     <item type="id" name="eula" />
     <item type="id" name="eula_description" />
@@ -244,6 +244,7 @@
     <item type="id" name="face_widget_location_area" />
     <item type="id" name="face_widget_refresh_area" />
     <item type="id" name="face_widget_refresh_icon" />
+    <item type="id" name="face_widget_refresh_icon_touch_area" />
     <item type="id" name="face_widget_refresh_progress" />
     <item type="id" name="face_widget_refresh_progress_wallpaper" />
     <item type="id" name="face_widget_temp_text" />
@@ -253,6 +254,7 @@
     <item type="id" name="favorite_title" />
     <item type="id" name="favorite_title_icon" />
     <item type="id" name="favorite_title_layout" />
+    <item type="id" name="favorite_title_tts_container" />
     <item type="id" name="feels_like_temp" />
     <item type="id" name="flexible_left" />
     <item type="id" name="flexible_right" />
@@ -261,8 +263,17 @@
     <item type="id" name="get_current" />
     <item type="id" name="ghost_view" />
     <item type="id" name="ghost_view_holder" />
+    <item type="id" name="gl_cityName" />
+    <item type="id" name="gl_precipGraphBarTop" />
+    <item type="id" name="gl_precipGraphBegin" />
     <item type="id" name="glide_custom_view_target_tag" />
+    <item type="id" name="global_auto_refresh_on_the_go_setting" />
     <item type="id" name="gradient_bg" />
+    <item type="id" name="graphFill" />
+    <item type="id" name="graphLine1" />
+    <item type="id" name="graphLine2" />
+    <item type="id" name="graphLine3" />
+    <item type="id" name="graphLine4" />
     <item type="id" name="graph_view" />
     <item type="id" name="group_divider" />
     <item type="id" name="guide_size" />
@@ -273,12 +284,31 @@
     <item type="id" name="help" />
     <item type="id" name="help_container" />
     <item type="id" name="help_favorite_location_description" />
-    <item type="id" name="help_flexible_left" />
-    <item type="id" name="help_flexible_right" />
+    <item type="id" name="high_low_collapse_temp" />
     <item type="id" name="high_low_temp" />
     <item type="id" name="high_temp_view" />
     <item type="id" name="high_temp_view_bg" />
+    <item type="id" name="history" />
+    <item type="id" name="history_container" />
+    <item type="id" name="history_description" />
+    <item type="id" name="history_description_layout" />
+    <item type="id" name="history_description_scrollview" />
     <item type="id" name="home" />
+    <item type="id" name="hourly_area_0" />
+    <item type="id" name="hourly_area_1" />
+    <item type="id" name="hourly_area_2" />
+    <item type="id" name="hourly_container" />
+    <item type="id" name="hourly_divider" />
+    <item type="id" name="hourly_narrative" />
+    <item type="id" name="hourly_temp_0" />
+    <item type="id" name="hourly_temp_1" />
+    <item type="id" name="hourly_temp_2" />
+    <item type="id" name="hourly_time_0" />
+    <item type="id" name="hourly_time_1" />
+    <item type="id" name="hourly_time_2" />
+    <item type="id" name="hourly_weather_0" />
+    <item type="id" name="hourly_weather_1" />
+    <item type="id" name="hourly_weather_2" />
     <item type="id" name="how_to_use" />
     <item type="id" name="how_to_use_app_desc1" />
     <item type="id" name="how_to_use_app_desc2" />
@@ -294,21 +324,23 @@
     <item type="id" name="how_to_use_widget_desc4" />
     <item type="id" name="how_to_use_widget_desc5" />
     <item type="id" name="how_to_use_widget_desc6" />
+    <item type="id" name="ic_news_cancel" />
     <item type="id" name="icon" />
     <item type="id" name="icon_frame" />
     <item type="id" name="icon_group" />
     <item type="id" name="illust_icon" />
     <item type="id" name="image" />
     <item type="id" name="image_layout" />
-    <item type="id" name="index_updated_refresh_area" />
-    <item type="id" name="index_weather_text_area" />
     <item type="id" name="indicator" />
     <item type="id" name="info" />
     <item type="id" name="insightIndicator" />
     <item type="id" name="insight_view_item_container" />
-    <item type="id" name="item" />
     <item type="id" name="item_touch_helper_previous_elevation" />
+    <item type="id" name="iv_icon" />
+    <item type="id" name="iv_sunrise" />
+    <item type="id" name="iv_sunset" />
     <item type="id" name="last_update_text" />
+    <item type="id" name="layout_news_area" />
     <item type="id" name="license_description" />
     <item type="id" name="life_contents_text" />
     <item type="id" name="life_contents_thumbnail" />
@@ -317,8 +349,10 @@
     <item type="id" name="line1" />
     <item type="id" name="line3" />
     <item type="id" name="list_item" />
+    <item type="id" name="ll_radar_title" />
     <item type="id" name="loc_current_ic" />
     <item type="id" name="loc_item_layout" />
+    <item type="id" name="loc_item_layout_tts_container" />
     <item type="id" name="loc_name" />
     <item type="id" name="loc_temp" />
     <item type="id" name="loc_weather_icon" />
@@ -397,6 +431,7 @@
     <item type="id" name="low_temp_view_bg" />
     <item type="id" name="lower_land_content_layout" />
     <item type="id" name="lyt_image" />
+    <item type="id" name="lyt_precip_items" />
     <item type="id" name="lyt_rain" />
     <item type="id" name="lyt_temp" />
     <item type="id" name="main" />
@@ -483,12 +518,34 @@
     <item type="id" name="nav_host_fragment_container" />
     <item type="id" name="navigation" />
     <item type="id" name="navigation_badge" />
+    <item type="id" name="navigation_bar_item_active_indicator_view" />
+    <item type="id" name="navigation_bar_item_icon_container" />
     <item type="id" name="navigation_bar_item_icon_view" />
     <item type="id" name="navigation_bar_item_labels_group" />
     <item type="id" name="navigation_bar_item_large_label_view" />
     <item type="id" name="navigation_bar_item_small_label_view" />
     <item type="id" name="navigation_header_container" />
     <item type="id" name="navigation_layout" />
+    <item type="id" name="news_adapter_view_flipper" />
+    <item type="id" name="news_area" />
+    <item type="id" name="news_bubble_text" />
+    <item type="id" name="news_cancel_btn" />
+    <item type="id" name="news_click_progress" />
+    <item type="id" name="news_content" />
+    <item type="id" name="news_dummy_layout" />
+    <item type="id" name="news_next_btn" />
+    <item type="id" name="news_oobe" />
+    <item type="id" name="news_oobe_area" />
+    <item type="id" name="news_opt_in_popup_desc" />
+    <item type="id" name="news_prev_btn" />
+    <item type="id" name="news_publisher_text" />
+    <item type="id" name="news_request_agree_btn" />
+    <item type="id" name="news_start_btn" />
+    <item type="id" name="news_title_text" />
+    <item type="id" name="news_trigger_area" />
+    <item type="id" name="news_trigger_not_now" />
+    <item type="id" name="news_trigger_text" />
+    <item type="id" name="news_trigger_try" />
     <item type="id" name="night_mode_switch_view" />
     <item type="id" name="notification_background" />
     <item type="id" name="notification_main_column" />
@@ -504,6 +561,7 @@
     <item type="id" name="others_title" />
     <item type="id" name="others_title_icon" />
     <item type="id" name="others_title_string" />
+    <item type="id" name="others_title_tts_container" />
     <item type="id" name="pager" />
     <item type="id" name="parentPanel" />
     <item type="id" name="parent_matrix" />
@@ -512,11 +570,15 @@
     <item type="id" name="particulars_index_view_deco_item_layout" />
     <item type="id" name="particulars_index_view_deco_item_title" />
     <item type="id" name="particulars_index_view_deco_item_value" />
+    <item type="id" name="permission_container" />
+    <item type="id" name="permission_contents" />
+    <item type="id" name="permission_desc" />
     <item type="id" name="permission_description" />
     <item type="id" name="permission_icon" />
     <item type="id" name="permission_message" />
     <item type="id" name="permission_name" />
     <item type="id" name="permission_popup_listview" />
+    <item type="id" name="physical_activity_setting_img_land" />
     <item type="id" name="pm10_graph_layout" />
     <item type="id" name="pm10_layout" />
     <item type="id" name="pm10_text" />
@@ -527,6 +589,9 @@
     <item type="id" name="pm25_title" />
     <item type="id" name="precipitation_icon" />
     <item type="id" name="precipitation_value" />
+    <item type="id" name="preferences_detail" />
+    <item type="id" name="preferences_header" />
+    <item type="id" name="preferences_sliding_pane_layout" />
     <item type="id" name="pressed" />
     <item type="id" name="preview_background" />
     <item type="id" name="preview_background_dim" />
@@ -547,11 +612,12 @@
     <item type="id" name="rail_icon_divider_2" />
     <item type="id" name="rail_icon_layer" />
     <item type="id" name="recycler_view" />
-    <item type="id" name="refresh" />
     <item type="id" name="refresh_progress_area" />
     <item type="id" name="report_wrong_city" />
     <item type="id" name="report_wrong_city_icon" />
     <item type="id" name="report_wrong_city_layout" />
+    <item type="id" name="report_wrong_city_tts_container" />
+    <item type="id" name="request_agree_layout" />
     <item type="id" name="restore_area" />
     <item type="id" name="right_icon" />
     <item type="id" name="right_side" />
@@ -630,11 +696,14 @@
     <item type="id" name="settings_nav" />
     <item type="id" name="settings_parent" />
     <item type="id" name="shortcut" />
+    <item type="id" name="show_news_switch_view" />
     <item type="id" name="sliding_container" />
+    <item type="id" name="sliding_pane_detail_container" />
+    <item type="id" name="sliding_pane_layout" />
     <item type="id" name="sliding_panel_layout" />
     <item type="id" name="smartthings_container" />
     <item type="id" name="snackbar_action" />
-    <item type="id" name="snackbar_layout" />
+    <item type="id" name="snackbar_content_layout" />
     <item type="id" name="snackbar_text" />
     <item type="id" name="space" />
     <item type="id" name="spacer" />
@@ -673,7 +742,10 @@
     <item type="id" name="st_ultra_fine_dust_value" />
     <item type="id" name="st_ultra_fine_dust_value_layout" />
     <item type="id" name="st_ultra_fine_dust_value_level" />
+    <item type="id" name="start_current" />
+    <item type="id" name="start_current_normal" />
     <item type="id" name="start_illust" />
+    <item type="id" name="start_normal" />
     <item type="id" name="status" />
     <item type="id" name="status_view_container" />
     <item type="id" name="sub_menu_title" />
@@ -681,6 +753,7 @@
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
     <item type="id" name="summary" />
+    <item type="id" name="sun" />
     <item type="id" name="sun_tts_container" />
     <item type="id" name="sunrise_container" />
     <item type="id" name="sunrise_img" />
@@ -691,6 +764,10 @@
     <item type="id" name="sunset_title" />
     <item type="id" name="sunset_value" />
     <item type="id" name="swipe_refresh" />
+    <item type="id" name="switch_divider_large" />
+    <item type="id" name="switch_divider_normal" />
+    <item type="id" name="switch_widget" />
+    <item type="id" name="switchid" />
     <item type="id" name="tag_accessibility_actions" />
     <item type="id" name="tag_accessibility_clickable_spans" />
     <item type="id" name="tag_accessibility_heading" />
@@ -727,17 +804,17 @@
     <item type="id" name="theme_bg" />
     <item type="id" name="thumbnail_1st" />
     <item type="id" name="thumbnail_1st_image_layout" />
-    <item type="id" name="thumbnail_1st_layout" />
     <item type="id" name="thumbnail_1st_title" />
     <item type="id" name="thumbnail_2nd" />
     <item type="id" name="thumbnail_2nd_image_layout" />
-    <item type="id" name="thumbnail_2nd_layout" />
     <item type="id" name="thumbnail_2nd_title" />
     <item type="id" name="time" />
     <item type="id" name="time_area" />
     <item type="id" name="title" />
     <item type="id" name="titleDividerNoCustom" />
+    <item type="id" name="title_area" />
     <item type="id" name="title_container" />
+    <item type="id" name="title_frame" />
     <item type="id" name="title_layout" />
     <item type="id" name="title_parent" />
     <item type="id" name="title_space" />
@@ -747,21 +824,38 @@
     <item type="id" name="toolbar_layout" />
     <item type="id" name="topPanel" />
     <item type="id" name="touch_outside" />
+    <item type="id" name="transition_current" />
+    <item type="id" name="transition_current_normal" />
     <item type="id" name="transition_current_scene" />
+    <item type="id" name="transition_illust" />
     <item type="id" name="transition_layout_save" />
+    <item type="id" name="transition_normal" />
     <item type="id" name="transition_position" />
     <item type="id" name="transition_scene_layoutid_cache" />
     <item type="id" name="transition_transform" />
+    <item type="id" name="tv_amount" />
     <item type="id" name="tv_high" />
     <item type="id" name="tv_insight_content" />
+    <item type="id" name="tv_insight_content_contentOnly" />
     <item type="id" name="tv_insight_delta" />
     <item type="id" name="tv_insight_source" />
     <item type="id" name="tv_insight_title" />
     <item type="id" name="tv_low" />
+    <item type="id" name="tv_radar_insight" />
     <item type="id" name="tv_radar_title" />
+    <item type="id" name="tv_rain_heavy" />
+    <item type="id" name="tv_rain_light" />
+    <item type="id" name="tv_sunrise_label" />
+    <item type="id" name="tv_sunrise_value" />
+    <item type="id" name="tv_sunset_label" />
+    <item type="id" name="tv_sunset_value" />
+    <item type="id" name="tv_time" />
+    <item type="id" name="tv_title" />
+    <item type="id" name="tv_value" />
     <item type="id" name="unchecked" />
     <item type="id" name="unpressed" />
     <item type="id" name="up" />
+    <item type="id" name="update_area" />
     <item type="id" name="update_card" />
     <item type="id" name="update_tip_card_layout" />
     <item type="id" name="update_tip_card_msg" />
@@ -782,7 +876,9 @@
     <item type="id" name="value_guideLine" />
     <item type="id" name="video_error_msg" />
     <item type="id" name="view_offset_helper" />
+    <item type="id" name="view_transition" />
     <item type="id" name="view_tree_lifecycle_owner" />
+    <item type="id" name="view_tree_on_back_pressed_dispatcher_owner" />
     <item type="id" name="view_tree_saved_state_registry_owner" />
     <item type="id" name="view_tree_view_model_store_owner" />
     <item type="id" name="visible_removing_fragment_view_tag" />
@@ -793,6 +889,8 @@
     <item type="id" name="weather_icon_animation_area" />
     <item type="id" name="weather_icon_progress" />
     <item type="id" name="weather_icon_progress_whitebg" />
+    <item type="id" name="weather_info_area" />
+    <item type="id" name="weather_narrative" />
     <item type="id" name="weather_shape" />
     <item type="id" name="weather_temp" />
     <item type="id" name="widget_additional_info_layout" />
@@ -812,13 +910,9 @@
     <item type="id" name="widget_current_additional_first" />
     <item type="id" name="widget_current_additional_first_title" />
     <item type="id" name="widget_current_additional_first_title_bg" />
-    <item type="id" name="widget_current_additional_first_value" />
-    <item type="id" name="widget_current_additional_first_value_bg" />
     <item type="id" name="widget_current_additional_info" />
     <item type="id" name="widget_current_additional_second_title" />
     <item type="id" name="widget_current_additional_second_title_bg" />
-    <item type="id" name="widget_current_additional_second_value" />
-    <item type="id" name="widget_current_additional_second_value_bg" />
     <item type="id" name="widget_current_area" />
     <item type="id" name="widget_current_city_area" />
     <item type="id" name="widget_current_city_name" />
@@ -826,13 +920,17 @@
     <item type="id" name="widget_current_temp" />
     <item type="id" name="widget_current_temp_bg" />
     <item type="id" name="widget_current_weather_area" />
-    <item type="id" name="widget_current_weather_city_area" />
     <item type="id" name="widget_current_weather_icon" />
     <item type="id" name="widget_current_weather_icon_animation" />
+    <item type="id" name="widget_current_weather_illust_icon" />
     <item type="id" name="widget_current_weather_info" />
+    <item type="id" name="widget_current_weather_text" />
+    <item type="id" name="widget_current_weather_text_area" />
+    <item type="id" name="widget_current_weather_text_bg" />
     <item type="id" name="widget_date" />
     <item type="id" name="widget_date_bg" />
     <item type="id" name="widget_date_layout" />
+    <item type="id" name="widget_divider" />
     <item type="id" name="widget_empty_icon" />
     <item type="id" name="widget_empty_layout" />
     <item type="id" name="widget_empty_text" />
@@ -872,10 +970,14 @@
     <item type="id" name="widget_forecast_weather_two_start_padding" />
     <item type="id" name="widget_forecast_weather_two_text" />
     <item type="id" name="widget_forecast_weather_two_text_bg" />
-    <item type="id" name="widget_high_low_temp_layout" />
+    <item type="id" name="widget_frame" />
+    <item type="id" name="widget_illust_area" />
     <item type="id" name="widget_info_area" />
     <item type="id" name="widget_location_area" />
     <item type="id" name="widget_main_layout" />
+    <item type="id" name="widget_precipitation_area" />
+    <item type="id" name="widget_precipitation_icon" />
+    <item type="id" name="widget_precipitation_text" />
     <item type="id" name="widget_preview" />
     <item type="id" name="widget_preview_area" />
     <item type="id" name="widget_preview_container" />
@@ -901,6 +1003,7 @@
     <item type="id" name="widget_setting_icon_touch_area" />
     <item type="id" name="widget_setting_middle_guideline" />
     <item type="id" name="widget_setting_nav" />
+    <item type="id" name="widget_setting_news_mode_layout" />
     <item type="id" name="widget_setting_night_mode_layout" />
     <item type="id" name="widget_setting_radio_label" />
     <item type="id" name="widget_setting_seek_bar" />
@@ -913,6 +1016,9 @@
     <item type="id" name="widget_setting_toolbar" />
     <item type="id" name="widget_setting_top_area" />
     <item type="id" name="widget_settings_area" />
+    <item type="id" name="widget_sunrise_area" />
+    <item type="id" name="widget_sunrise_icon" />
+    <item type="id" name="widget_sunrise_text" />
     <item type="id" name="widget_time" />
     <item type="id" name="widget_time_bg" />
     <item type="id" name="widget_time_layout" />
@@ -920,6 +1026,10 @@
     <item type="id" name="widget_update_layout" />
     <item type="id" name="widget_update_text" />
     <item type="id" name="widget_update_text_bg" />
+    <item type="id" name="widget_uv_area" />
+    <item type="id" name="widget_uv_icon" />
+    <item type="id" name="widget_uv_text" />
+    <item type="id" name="widget_weather_desc" />
     <item type="id" name="wind_image" />
     <item type="id" name="wind_layout" />
     <item type="id" name="wind_text" />

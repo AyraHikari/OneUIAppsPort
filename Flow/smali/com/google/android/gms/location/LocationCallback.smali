@@ -1,5 +1,6 @@
-.class public Lcom/google/android/gms/location/LocationCallback;
+.class public abstract Lcom/google/android/gms/location/LocationCallback;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # direct methods

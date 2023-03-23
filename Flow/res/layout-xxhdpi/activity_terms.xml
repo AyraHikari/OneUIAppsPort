@@ -4,7 +4,7 @@
     <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
         <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
             <WebView android:id="@id/terms_web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-            <ProgressBar android:layout_gravity="center" android:id="@id/terms_web_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.DeviceDefault.ProgressBar" />
+            <androidx.appcompat.widget.SeslProgressBar android:layout_gravity="center" android:id="@id/terms_web_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.DeviceDefault.ProgressBar" />
         </FrameLayout>
         <ScrollView android:id="@id/terms_desc_layout_korean" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/layout_desc_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LayoutDesc">

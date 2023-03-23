@@ -100,7 +100,7 @@
 
     move-result-object v1
 
-    const-string v2, "threadlocalecimplicitlyca"
+    const-string/jumbo v2, "threadlocalecimplicitlyca"
 
     .line 71
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -128,7 +128,7 @@
     goto :goto_0
 
     :cond_2
-    const-string v2, "threadlocaldhdefaultparams"
+    const-string/jumbo v2, "threadlocaldhdefaultparams"
 
     .line 79
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -178,7 +178,7 @@
     :cond_6
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown permissions passed to mask"
+    const-string/jumbo v0, "unknown permissions passed to mask"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

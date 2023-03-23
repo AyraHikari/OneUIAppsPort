@@ -21,6 +21,16 @@
 # direct methods
 .method constructor <init>(Landroidx/room/RoomTrackingLiveData;[Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "tables"
+        }
+    .end annotation
 
     .line 139
     iput-object p1, p0, Landroidx/room/RoomTrackingLiveData$3;->this$0:Landroidx/room/RoomTrackingLiveData;
@@ -34,6 +44,15 @@
 # virtual methods
 .method public onInvalidated(Ljava/util/Set;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tables"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 780
+    .line 800
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager$5;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +46,12 @@
 .method public run()V
     .locals 6
 
-    .line 783
+    .line 803
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 785
+    .line 805
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager$5;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;
 
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;->access$200(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;)Ljava/lang/Object;
@@ -52,7 +60,7 @@
 
     monitor-enter v1
 
-    .line 786
+    .line 806
     :try_start_0
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager$5;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;
 
@@ -77,14 +85,14 @@
 
     check-cast v3, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    .line 787
+    .line 807
     iget-object v4, v3, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->icon:Landroidx/databinding/ObservableField;
 
     const/4 v5, 0x0
 
     invoke-virtual {v4, v5}, Landroidx/databinding/ObservableField;->set(Ljava/lang/Object;)V
 
-    .line 788
+    .line 808
     invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->toJson()Ljava/lang/String;
 
     move-result-object v3
@@ -93,22 +101,22 @@
 
     goto :goto_0
 
-    .line 790
+    .line 810
     :cond_0
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 792
+    .line 812
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager$5;->this$0:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;
 
     const-string v2, "notificationAppFilterList.xml"
 
     invoke-static {v1, v0, v2}, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;->access$400(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterManager;Ljava/util/ArrayList;Ljava/lang/String;)V
 
-    const-string v0, "saved filter list"
+    const-string/jumbo v0, "saved filter list"
 
-    .line 793
+    .line 813
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-void
@@ -116,7 +124,7 @@
     :catchall_0
     move-exception v0
 
-    .line 790
+    .line 810
     :try_start_1
     monitor-exit v1
     :try_end_1

@@ -1,4 +1,4 @@
-.class final Landroidx/viewpager/widget/ViewPager$1;
+.class Landroidx/viewpager/widget/ViewPager$1;
 .super Ljava/lang/Object;
 .source "ViewPager.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -40,6 +40,16 @@
 # virtual methods
 .method public compare(Landroidx/viewpager/widget/ViewPager$ItemInfo;Landroidx/viewpager/widget/ViewPager$ItemInfo;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
     .line 162
     iget p1, p1, Landroidx/viewpager/widget/ViewPager$ItemInfo;->position:I
@@ -53,6 +63,16 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
     .line 159
     check-cast p1, Landroidx/viewpager/widget/ViewPager$ItemInfo;

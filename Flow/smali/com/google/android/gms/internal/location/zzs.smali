@@ -1,51 +1,81 @@
 .class final Lcom/google/android/gms/internal/location/zzs;
-.super Lcom/google/android/gms/internal/location/zzab;
+.super Lcom/google/android/gms/internal/location/zzw;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # instance fields
-.field private final synthetic zzcm:Lcom/google/android/gms/location/LocationCallback;
+.field final synthetic zza:Lcom/google/android/gms/location/LocationRequest;
+
+.field final synthetic zzb:Lcom/google/android/gms/location/LocationListener;
+
+.field final synthetic zzc:Landroid/os/Looper;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/internal/location/zzq;Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/LocationCallback;)V
+.method constructor <init>(Lcom/google/android/gms/internal/location/zzz;Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/LocationRequest;Lcom/google/android/gms/location/LocationListener;Landroid/os/Looper;)V
     .locals 0
 
-    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzs;->zzcm:Lcom/google/android/gms/location/LocationCallback;
+    .line 1
+    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzs;->zza:Lcom/google/android/gms/location/LocationRequest;
 
-    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzab;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    iput-object p4, p0, Lcom/google/android/gms/internal/location/zzs;->zzb:Lcom/google/android/gms/location/LocationListener;
+
+    iput-object p5, p0, Lcom/google/android/gms/internal/location/zzs;->zzc:Landroid/os/Looper;
+
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzw;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
-    .locals 2
+.method protected final bridge synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    check-cast p1, Lcom/google/android/gms/internal/location/zzaz;
+    .line 1
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzs;->zzcm:Lcom/google/android/gms/location/LocationCallback;
+    new-instance v0, Lcom/google/android/gms/internal/location/zzx;
 
-    const-class v1, Lcom/google/android/gms/location/LocationCallback;
+    .line 2
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/location/zzx;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/location/zzs;->zza:Lcom/google/android/gms/location/LocationRequest;
+
+    const/4 v2, 0x0
+
+    .line 3
+    invoke-static {v2, v1}, Lcom/google/android/gms/internal/location/zzbf;->zzc(Ljava/lang/String;Lcom/google/android/gms/location/LocationRequest;)Lcom/google/android/gms/internal/location/zzbf;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/api/internal/ListenerHolders;->createListenerKey(Ljava/lang/Object;Ljava/lang/String;)Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+    iget-object v2, p0, Lcom/google/android/gms/internal/location/zzs;->zzb:Lcom/google/android/gms/location/LocationListener;
 
-    move-result-object v0
+    iget-object v3, p0, Lcom/google/android/gms/internal/location/zzs;->zzc:Landroid/os/Looper;
 
-    new-instance v1, Lcom/google/android/gms/internal/location/zzac;
+    .line 4
+    invoke-static {v3}, Lcom/google/android/gms/internal/location/zzbn;->zza(Landroid/os/Looper;)Landroid/os/Looper;
 
-    invoke-direct {v1, p0}, Lcom/google/android/gms/internal/location/zzac;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
+    move-result-object v3
 
-    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/internal/location/zzaz;->zzb(Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;Lcom/google/android/gms/internal/location/zzaj;)V
+    const-class v4, Lcom/google/android/gms/location/LocationListener;
+
+    invoke-virtual {v4}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 5
+    invoke-static {v2, v3, v4}, Lcom/google/android/gms/common/api/internal/ListenerHolders;->createListenerHolder(Ljava/lang/Object;Landroid/os/Looper;Ljava/lang/String;)Lcom/google/android/gms/common/api/internal/ListenerHolder;
+
+    move-result-object v2
+
+    .line 6
+    invoke-virtual {p1, v1, v2, v0}, Lcom/google/android/gms/internal/location/zzbe;->zzC(Lcom/google/android/gms/internal/location/zzbf;Lcom/google/android/gms/common/api/internal/ListenerHolder;Lcom/google/android/gms/internal/location/zzai;)V
 
     return-void
 .end method

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="22.0dip" android:autoMirrored="true" android:viewportWidth="22.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/sesl_spinner_icon_color_disabled_light" android:pathData="M10.545,14.59L6.811,9.572C6.532,9.198 6.799,8.667 7.265,8.667L14.734,8.667C15.201,8.667 15.468,9.198 15.189,9.572L11.455,14.59C11.228,14.895 10.772,14.895 10.545,14.59" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

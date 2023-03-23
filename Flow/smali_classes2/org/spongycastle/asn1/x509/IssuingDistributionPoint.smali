@@ -94,7 +94,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown tag in IssuingDistributionPoint"
+    const-string/jumbo v0, "unknown tag in IssuingDistributionPoint"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -362,7 +362,7 @@
 
     if-eqz p1, :cond_0
 
-    const-string p1, "true"
+    const-string/jumbo p1, "true"
 
     goto :goto_0
 

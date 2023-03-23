@@ -35,16 +35,18 @@
 
 .field isAnimating:Z
 
-.field isLooping:Z
-
 .field progress:F
+
+.field repeatCount:I
+
+.field repeatMode:I
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 761
+    .line 914
     new-instance v0, Lcom/airbnb/lottie/LottieAnimationView$SavedState$1;
 
     invoke-direct {v0}, Lcom/airbnb/lottie/LottieAnimationView$SavedState$1;-><init>()V
@@ -55,64 +57,62 @@
 .end method
 
 .method private constructor <init>(Landroid/os/Parcel;)V
-    .locals 3
+    .locals 2
 
-    .line 743
+    .line 894
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 744
+    .line 895
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->animationName:Ljava/lang/String;
 
-    .line 745
+    .line 896
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->progress:F
 
-    .line 746
+    .line 897
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
-
-    if-ne v0, v2, :cond_0
-
-    move v0, v2
+    if-ne v0, v1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    move v0, v1
+    const/4 v1, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->isAnimating:Z
+    iput-boolean v1, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->isAnimating:Z
 
-    .line 747
+    .line 898
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->imageAssetsFolder:Ljava/lang/String;
+
+    .line 899
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    if-ne v0, v2, :cond_1
+    iput v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->repeatMode:I
 
-    move v1, v2
+    .line 900
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    :cond_1
-    iput-boolean v1, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->isLooping:Z
+    move-result p1
 
-    .line 748
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->imageAssetsFolder:Ljava/lang/String;
+    iput p1, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->repeatCount:I
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/airbnb/lottie/LottieAnimationView$1;)V
     .locals 0
 
-    .line 730
+    .line 880
     invoke-direct {p0, p1}, Lcom/airbnb/lottie/LottieAnimationView$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -129,7 +129,7 @@
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 739
+    .line 890
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -140,33 +140,38 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 753
+    .line 905
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 754
+    .line 906
     iget-object p2, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->animationName:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 755
+    .line 907
     iget p2, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->progress:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 756
+    .line 908
     iget-boolean p2, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->isAnimating:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 757
-    iget-boolean p2, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->isLooping:Z
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 758
+    .line 909
     iget-object p2, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->imageAssetsFolder:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 910
+    iget p2, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->repeatMode:I
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 911
+    iget p2, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->repeatCount:I
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
 .end method

@@ -184,7 +184,7 @@
     .locals 2
 
     .line 78
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
@@ -409,7 +409,7 @@
 .end method
 
 .method public static sha1BytesToHex([B)Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 43
     sget-object v0, Lcom/bumptech/glide/util/Util;->SHA_1_CHARS:[C
@@ -418,9 +418,7 @@
 
     .line 44
     :try_start_0
-    sget-object v1, Lcom/bumptech/glide/util/Util;->SHA_1_CHARS:[C
-
-    invoke-static {p0, v1}, Lcom/bumptech/glide/util/Util;->bytesToHex([B[C)Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/bumptech/glide/util/Util;->bytesToHex([B[C)Ljava/lang/String;
 
     move-result-object p0
 
@@ -440,7 +438,7 @@
 .end method
 
 .method public static sha256BytesToHex([B)Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 34
     sget-object v0, Lcom/bumptech/glide/util/Util;->SHA_256_CHARS:[C
@@ -449,9 +447,7 @@
 
     .line 35
     :try_start_0
-    sget-object v1, Lcom/bumptech/glide/util/Util;->SHA_256_CHARS:[C
-
-    invoke-static {p0, v1}, Lcom/bumptech/glide/util/Util;->bytesToHex([B[C)Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/bumptech/glide/util/Util;->bytesToHex([B[C)Ljava/lang/String;
 
     move-result-object p0
 

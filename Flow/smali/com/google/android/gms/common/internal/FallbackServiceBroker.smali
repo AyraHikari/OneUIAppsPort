@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/internal/FallbackServiceBroker;
 .super Lcom/google/android/gms/common/internal/IGmsServiceBroker$Stub;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # direct methods

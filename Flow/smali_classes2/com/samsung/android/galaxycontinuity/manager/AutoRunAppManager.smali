@@ -131,6 +131,14 @@
 
 .method private static getAppUid(Ljava/lang/String;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pkgName"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -193,6 +201,16 @@
 
 .method public static isAppAutoRunOn(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 14
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "pkgName"
+        }
+    .end annotation
 
     .line 43
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/manager/AutoRunAppManager;->getAppUid(Ljava/lang/String;)I
@@ -209,7 +227,7 @@
 
     .line 49
     :cond_0
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x1c
 
@@ -293,41 +311,33 @@
     :catchall_0
     move-exception p1
 
+    if-eqz p0, :cond_3
+
     .line 50
     :try_start_3
-    throw p1
+    invoke-interface {p0}, Landroid/database/Cursor;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    :catchall_1
-    move-exception v0
-
-    if-eqz p0, :cond_3
-
-    .line 56
-    :try_start_4
-    invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
     goto :goto_0
 
-    :catchall_2
+    :catchall_1
     move-exception p0
 
-    :try_start_5
+    :try_start_4
     invoke-virtual {p1, p0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :cond_3
     :goto_0
-    throw v0
+    throw p1
 
     :cond_4
     if-eqz p0, :cond_f
 
+    .line 56
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
     goto/16 :goto_3
 
@@ -341,7 +351,7 @@
 
     .line 61
     :cond_5
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x1d
 
@@ -350,7 +360,7 @@
     if-gt v2, v3, :cond_a
 
     .line 62
-    :try_start_6
+    :try_start_5
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
@@ -380,13 +390,13 @@
     invoke-virtual/range {v8 .. v13}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p0
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_1
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_1
 
     if-eqz p0, :cond_9
 
     .line 65
-    :try_start_7
+    :try_start_6
     invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result p1
@@ -397,8 +407,8 @@
     invoke-interface {p0, v6}, Landroid/database/Cursor;->getInt(I)I
 
     move-result p1
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     if-nez p1, :cond_6
 
@@ -408,52 +418,44 @@
     if-eqz p0, :cond_7
 
     .line 68
-    :try_start_8
+    :try_start_7
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_1
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_1
 
     :cond_7
     return v6
 
-    :catchall_3
+    :catchall_2
     move-exception p1
-
-    .line 62
-    :try_start_9
-    throw p1
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_4
-
-    :catchall_4
-    move-exception v0
 
     if-eqz p0, :cond_8
 
-    .line 68
-    :try_start_a
+    .line 62
+    :try_start_8
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_5
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_3
 
     goto :goto_1
 
-    :catchall_5
+    :catchall_3
     move-exception p0
 
-    :try_start_b
+    :try_start_9
     invoke-virtual {p1, p0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :cond_8
     :goto_1
-    throw v0
+    throw p1
 
     :cond_9
     if-eqz p0, :cond_f
 
+    .line 68
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_b
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_1
+    :try_end_9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_1
 
     goto :goto_3
 
@@ -467,7 +469,7 @@
 
     .line 74
     :cond_a
-    :try_start_c
+    :try_start_a
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p0
@@ -499,13 +501,13 @@
     invoke-virtual/range {v7 .. v12}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p0
-    :try_end_c
-    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_2
+    :try_end_a
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_2
 
     if-eqz p0, :cond_e
 
     .line 78
-    :try_start_d
+    :try_start_b
     invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result p1
@@ -516,8 +518,8 @@
     invoke-interface {p0, v6}, Landroid/database/Cursor;->getInt(I)I
 
     move-result p1
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_6
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_4
 
     if-nez p1, :cond_b
 
@@ -527,52 +529,44 @@
     if-eqz p0, :cond_c
 
     .line 81
-    :try_start_e
+    :try_start_c
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_e
-    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_2
+    :try_end_c
+    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_2
 
     :cond_c
     return v6
 
-    :catchall_6
+    :catchall_4
     move-exception p1
-
-    .line 74
-    :try_start_f
-    throw p1
-    :try_end_f
-    .catchall {:try_start_f .. :try_end_f} :catchall_7
-
-    :catchall_7
-    move-exception v0
 
     if-eqz p0, :cond_d
 
-    .line 81
-    :try_start_10
+    .line 74
+    :try_start_d
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_8
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_5
 
     goto :goto_2
 
-    :catchall_8
+    :catchall_5
     move-exception p0
 
-    :try_start_11
+    :try_start_e
     invoke-virtual {p1, p0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :cond_d
     :goto_2
-    throw v0
+    throw p1
 
     :cond_e
     if-eqz p0, :cond_f
 
+    .line 81
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
-    :try_end_11
-    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_2
+    :try_end_e
+    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_2
 
     goto :goto_3
 
@@ -594,6 +588,18 @@
 
 .method public static setAppAutoRun(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "pkgName",
+            "autoRunOn"
+        }
+    .end annotation
 
     .line 114
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/manager/AutoRunAppManager;->getAppUid(Ljava/lang/String;)I
@@ -613,7 +619,7 @@
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
     .line 123
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x1c
 
@@ -661,7 +667,7 @@
 
     .line 127
     :cond_1
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x1d
 
@@ -712,7 +718,7 @@
     .line 134
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string p1, "uid"
+    const-string/jumbo p1, "uid"
 
     .line 135
     invoke-virtual {v1, p1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V

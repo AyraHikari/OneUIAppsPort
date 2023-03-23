@@ -65,11 +65,6 @@
 .end method
 
 .method public abstract proceed(Lokhttp3/Request;)Lokhttp3/Response;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 .end method
 
 .method public abstract readTimeoutMillis()I

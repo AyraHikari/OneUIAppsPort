@@ -402,7 +402,7 @@
 .end method
 
 .method private camelliaF2([I[II)V
-    .locals 8
+    .locals 9
 
     const/4 v0, 0x0
 
@@ -481,35 +481,35 @@
     and-int/lit16 v7, v6, 0xff
 
     .line 220
-    aget-byte v3, v3, v7
-
-    and-int/lit16 v3, v3, 0xff
-
-    ushr-int/lit8 v7, v6, 0x8
+    aget-byte v7, v3, v7
 
     and-int/lit16 v7, v7, 0xff
+
+    ushr-int/lit8 v8, v6, 0x8
+
+    and-int/lit16 v8, v8, 0xff
 
     .line 221
-    invoke-direct {p0, v7}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox4(I)I
+    invoke-direct {p0, v8}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox4(I)I
 
-    move-result v7
+    move-result v8
 
-    shl-int/2addr v7, v4
+    shl-int/2addr v8, v4
 
-    or-int/2addr v3, v7
+    or-int/2addr v7, v8
 
-    ushr-int/lit8 v7, v6, 0x10
+    ushr-int/lit8 v8, v6, 0x10
 
-    and-int/lit16 v7, v7, 0xff
+    and-int/lit16 v8, v8, 0xff
 
     .line 222
-    invoke-direct {p0, v7}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox3(I)I
+    invoke-direct {p0, v8}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox3(I)I
 
-    move-result v7
+    move-result v8
 
-    shl-int/2addr v7, v5
+    shl-int/2addr v8, v5
 
-    or-int/2addr v3, v7
+    or-int/2addr v7, v8
 
     ushr-int/lit8 v6, v6, 0x18
 
@@ -522,127 +522,125 @@
 
     shl-int/lit8 v6, v6, 0x18
 
-    or-int/2addr v3, v6
+    or-int/2addr v6, v7
 
     .line 225
-    invoke-static {v3, v4}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->leftRotate(II)I
+    invoke-static {v6, v4}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->leftRotate(II)I
 
-    move-result v3
+    move-result v6
 
-    xor-int/2addr v1, v3
+    xor-int/2addr v1, v6
 
     .line 227
-    invoke-static {v3, v4}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->leftRotate(II)I
+    invoke-static {v6, v4}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->leftRotate(II)I
 
-    move-result v3
+    move-result v6
 
-    xor-int/2addr v3, v1
+    xor-int/2addr v6, v1
 
     .line 228
     invoke-static {v1, v4}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->rightRotate(II)I
 
     move-result v1
 
-    xor-int/2addr v1, v3
+    xor-int/2addr v1, v6
 
-    const/4 v6, 0x2
+    const/4 v7, 0x2
 
     .line 229
-    aget v7, p1, v6
+    aget v8, p1, v7
 
-    invoke-static {v3, v5}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->leftRotate(II)I
+    invoke-static {v6, v5}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->leftRotate(II)I
 
-    move-result v3
+    move-result v6
 
-    xor-int/2addr v3, v1
+    xor-int/2addr v6, v1
 
-    xor-int/2addr v3, v7
+    xor-int/2addr v6, v8
 
-    aput v3, p1, v6
+    aput v6, p1, v7
 
-    const/4 v3, 0x3
+    const/4 v6, 0x3
 
     .line 230
-    aget v7, p1, v3
+    aget v8, p1, v6
 
     invoke-static {v1, v4}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->leftRotate(II)I
 
     move-result v1
 
-    xor-int/2addr v1, v7
+    xor-int/2addr v1, v8
 
-    aput v1, p1, v3
+    aput v1, p1, v6
 
     .line 232
-    aget v1, p1, v6
+    aget v1, p1, v7
 
-    add-int/lit8 v6, p3, 0x2
+    add-int/lit8 v7, p3, 0x2
 
-    aget v6, p2, v6
+    aget v7, p2, v7
 
-    xor-int/2addr v1, v6
+    xor-int/2addr v1, v7
 
-    and-int/lit16 v6, v1, 0xff
+    and-int/lit16 v7, v1, 0xff
 
     .line 233
-    invoke-direct {p0, v6}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox4(I)I
+    invoke-direct {p0, v7}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox4(I)I
 
-    move-result v6
+    move-result v7
 
-    ushr-int/lit8 v7, v1, 0x8
+    ushr-int/lit8 v8, v1, 0x8
 
-    and-int/lit16 v7, v7, 0xff
+    and-int/lit16 v8, v8, 0xff
 
     .line 234
-    invoke-direct {p0, v7}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox3(I)I
+    invoke-direct {p0, v8}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox3(I)I
 
-    move-result v7
+    move-result v8
 
-    shl-int/2addr v7, v4
+    shl-int/2addr v8, v4
 
-    or-int/2addr v6, v7
+    or-int/2addr v7, v8
 
-    ushr-int/lit8 v7, v1, 0x10
+    ushr-int/lit8 v8, v1, 0x10
 
-    and-int/lit16 v7, v7, 0xff
+    and-int/lit16 v8, v8, 0xff
 
     .line 235
-    invoke-direct {p0, v7}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox2(I)I
+    invoke-direct {p0, v8}, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->sbox2(I)I
 
-    move-result v7
+    move-result v8
 
-    shl-int/2addr v7, v5
+    shl-int/2addr v8, v5
 
-    or-int/2addr v6, v7
-
-    .line 236
-    sget-object v7, Lorg/spongycastle/crypto/engines/CamelliaLightEngine;->SBOX1:[B
+    or-int/2addr v7, v8
 
     ushr-int/lit8 v1, v1, 0x18
 
     and-int/lit16 v1, v1, 0xff
 
-    aget-byte v1, v7, v1
+    .line 236
+    aget-byte v1, v3, v1
 
     and-int/lit16 v1, v1, 0xff
 
     shl-int/lit8 v1, v1, 0x18
 
-    or-int/2addr v1, v6
+    or-int/2addr v1, v7
 
     .line 238
-    aget v6, p1, v3
+    aget v7, p1, v6
 
-    add-int/2addr p3, v3
+    add-int/2addr p3, v6
 
     aget p2, p2, p3
 
-    xor-int/2addr p2, v6
+    xor-int/2addr p2, v7
 
     and-int/lit16 p3, p2, 0xff
 
     .line 239
-    aget-byte p3, v7, p3
+    aget-byte p3, v3, p3
 
     and-int/lit16 p3, p3, 0xff
 

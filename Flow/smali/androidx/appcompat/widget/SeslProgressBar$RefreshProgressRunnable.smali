@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Landroidx/appcompat/widget/SeslProgressBar;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1302
+    .line 1473
     iput-object p1, p0, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +44,7 @@
 .method synthetic constructor <init>(Landroidx/appcompat/widget/SeslProgressBar;Landroidx/appcompat/widget/SeslProgressBar$1;)V
     .locals 0
 
-    .line 1302
+    .line 1473
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;-><init>(Landroidx/appcompat/widget/SeslProgressBar;)V
 
     return-void
@@ -47,12 +55,12 @@
 .method public run()V
     .locals 11
 
-    .line 1305
+    .line 1476
     iget-object v0, p0, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     monitor-enter v0
 
-    .line 1306
+    .line 1477
     :try_start_0
     iget-object v1, p0, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
@@ -71,7 +79,7 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 1308
+    .line 1479
     iget-object v4, p0, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     invoke-static {v4}, Landroidx/appcompat/widget/SeslProgressBar;->access$100(Landroidx/appcompat/widget/SeslProgressBar;)Ljava/util/ArrayList;
@@ -84,7 +92,7 @@
 
     check-cast v4, Landroidx/appcompat/widget/SeslProgressBar$RefreshData;
 
-    .line 1309
+    .line 1480
     iget-object v5, p0, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     iget v6, v4, Landroidx/appcompat/widget/SeslProgressBar$RefreshData;->id:I
@@ -99,14 +107,14 @@
 
     invoke-static/range {v5 .. v10}, Landroidx/appcompat/widget/SeslProgressBar;->access$200(Landroidx/appcompat/widget/SeslProgressBar;IIZZZ)V
 
-    .line 1310
+    .line 1481
     invoke-virtual {v4}, Landroidx/appcompat/widget/SeslProgressBar$RefreshData;->recycle()V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 1312
+    .line 1483
     :cond_0
     iget-object v1, p0, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
@@ -116,12 +124,12 @@
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    .line 1313
+    .line 1484
     iget-object v1, p0, Landroidx/appcompat/widget/SeslProgressBar$RefreshProgressRunnable;->this$0:Landroidx/appcompat/widget/SeslProgressBar;
 
     invoke-static {v1, v2}, Landroidx/appcompat/widget/SeslProgressBar;->access$302(Landroidx/appcompat/widget/SeslProgressBar;Z)Z
 
-    .line 1314
+    .line 1485
     monitor-exit v0
 
     return-void

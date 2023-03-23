@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;Landroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$intent"
+        }
+    .end annotation
 
-    .line 93
+    .line 102
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1$1;->val$intent:Landroid/content/Intent;
@@ -40,71 +50,38 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 2
 
-    .line 96
+    .line 105
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1$1;->val$intent:Landroid/content/Intent;
 
     invoke-virtual {v0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 98
+    .line 107
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_NOTI_CONNECTED"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    const v2, -0x724b53a3
+    if-nez v1, :cond_0
 
-    const/4 v3, 0x1
-
-    if-eq v1, v2, :cond_1
-
-    const v2, -0x5091f7b9
-
-    if-eq v1, v2, :cond_0
-
-    goto :goto_0
-
-    :cond_0
     const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_NOTI_DISCONNECTED"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-nez v0, :cond_0
 
-    move v0, v3
+    goto :goto_0
 
-    goto :goto_1
-
-    :cond_1
-    const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_NOTI_CONNECTED"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_2
-    :goto_0
-    const/4 v0, -0x1
-
-    :goto_1
-    if-eqz v0, :cond_3
-
-    if-eq v0, v3, :cond_3
-
-    goto :goto_2
-
-    .line 101
-    :cond_3
+    .line 110
+    :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
@@ -113,9 +90,9 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_1
 
-    .line 102
+    .line 111
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity;
@@ -126,7 +103,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/DeviceManagementActivity$DeviceListAdapter;->notifyDataSetChanged()V
 
-    :cond_4
-    :goto_2
+    :cond_1
+    :goto_0
     return-void
 .end method

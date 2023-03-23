@@ -150,9 +150,9 @@
 
     if-eq v1, v3, :cond_1
 
-    array-length v0, v0
+    array-length v1, v0
 
-    if-ne v0, v2, :cond_0
+    if-ne v1, v2, :cond_0
 
     goto :goto_0
 
@@ -169,15 +169,13 @@
     .line 76
     :cond_1
     :goto_0
-    iget-object v0, p0, Lorg/spongycastle/crypto/engines/HC256Engine;->iv:[B
+    iget-object v1, p0, Lorg/spongycastle/crypto/engines/HC256Engine;->iv:[B
 
-    array-length v0, v0
+    array-length v1, v1
 
-    if-lt v0, v2, :cond_8
+    if-lt v1, v2, :cond_8
 
     .line 82
-    iget-object v0, p0, Lorg/spongycastle/crypto/engines/HC256Engine;->key:[B
-
     array-length v1, v0
 
     const/4 v4, 0x0
@@ -758,6 +756,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     .line 176
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -769,7 +769,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -868,9 +870,13 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     const-string p3, " not initialised"
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

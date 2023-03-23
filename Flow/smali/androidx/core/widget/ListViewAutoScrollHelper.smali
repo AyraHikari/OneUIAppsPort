@@ -10,6 +10,14 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/ListView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
     .line 33
     invoke-direct {p0, p1}, Landroidx/core/widget/AutoScrollHelper;-><init>(Landroid/view/View;)V
@@ -24,6 +32,14 @@
 # virtual methods
 .method public canTargetScrollHorizontally(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "direction"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -32,6 +48,14 @@
 
 .method public canTargetScrollVertically(I)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "direction"
+        }
+    .end annotation
 
     .line 51
     iget-object v0, p0, Landroidx/core/widget/ListViewAutoScrollHelper;->mTarget:Landroid/widget/ListView;
@@ -114,6 +138,16 @@
 
 .method public scrollTargetBy(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "deltaX",
+            "deltaY"
+        }
+    .end annotation
 
     .line 40
     iget-object p1, p0, Landroidx/core/widget/ListViewAutoScrollHelper;->mTarget:Landroid/widget/ListView;

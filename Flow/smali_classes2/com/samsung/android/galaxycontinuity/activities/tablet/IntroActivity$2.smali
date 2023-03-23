@@ -26,6 +26,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;Landroid/widget/RelativeLayout;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$mainLayout"
+        }
+    .end annotation
 
     .line 85
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/IntroActivity;
@@ -41,6 +51,30 @@
 # virtual methods
 .method public onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "left",
+            "top",
+            "right",
+            "bottom",
+            "oldLeft",
+            "oldTop",
+            "oldRight",
+            "oldBottom"
+        }
+    .end annotation
 
     if-ne p2, p6, :cond_0
 

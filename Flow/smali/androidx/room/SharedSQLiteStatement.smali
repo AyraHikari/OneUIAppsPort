@@ -14,6 +14,14 @@
 # direct methods
 .method public constructor <init>(Landroidx/room/RoomDatabase;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "database"
+        }
+    .end annotation
 
     .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,6 +61,14 @@
 
 .method private getStmt(Z)Landroidx/sqlite/db/SupportSQLiteStatement;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canUseCached"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -126,6 +142,14 @@
 
 .method public release(Landroidx/sqlite/db/SupportSQLiteStatement;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "statement"
+        }
+    .end annotation
 
     .line 96
     iget-object v0, p0, Landroidx/room/SharedSQLiteStatement;->mStmt:Landroidx/sqlite/db/SupportSQLiteStatement;

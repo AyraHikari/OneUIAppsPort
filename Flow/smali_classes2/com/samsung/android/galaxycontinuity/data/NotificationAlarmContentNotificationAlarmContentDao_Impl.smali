@@ -37,6 +37,14 @@
 # direct methods
 .method public constructor <init>(Landroidx/room/RoomDatabase;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "__db"
+        }
+    .end annotation
 
     .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -79,6 +87,14 @@
 # virtual methods
 .method public delete(Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "notificationAlarmContent"
+        }
+    .end annotation
 
     .line 94
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContentNotificationAlarmContentDao_Impl;->__db:Landroidx/room/RoomDatabase;
@@ -123,6 +139,14 @@
 
 .method public deleteByFlowkey(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "flowKey"
+        }
+    .end annotation
 
     .line 126
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContentNotificationAlarmContentDao_Impl;->__db:Landroidx/room/RoomDatabase;
@@ -197,6 +221,14 @@
 
 .method public deleteByPackageName(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "packageName"
+        }
+    .end annotation
 
     .line 106
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContentNotificationAlarmContentDao_Impl;->__db:Landroidx/room/RoomDatabase;
@@ -271,6 +303,14 @@
 
 .method public findByFlowKey(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "flowKey"
+        }
+    .end annotation
 
     const-string v0, "SELECT * FROM NotificationAlarmContent WHERE _flow_key = ? LIMIT 1"
 
@@ -310,7 +350,7 @@
     move-result-object p1
 
     :try_start_0
-    const-string v1, "uid"
+    const-string/jumbo v1, "uid"
 
     .line 183
     invoke-static {p1, v1}, Landroidx/room/util/CursorUtil;->getColumnIndexOrThrow(Landroid/database/Cursor;Ljava/lang/String;)I
@@ -423,7 +463,7 @@
     move-result-object v1
 
     :try_start_0
-    const-string v2, "uid"
+    const-string/jumbo v2, "uid"
 
     .line 151
     invoke-static {v1, v2}, Landroidx/room/util/CursorUtil;->getColumnIndexOrThrow(Landroid/database/Cursor;Ljava/lang/String;)I
@@ -518,6 +558,14 @@
 
 .method public insert(Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "notificationAlarmContent"
+        }
+    .end annotation
 
     .line 82
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/NotificationAlarmContentNotificationAlarmContentDao_Impl;->__db:Landroidx/room/RoomDatabase;

@@ -104,6 +104,14 @@
 
 .method public enableFastReady(Z)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enableFastReady"
+        }
+    .end annotation
 
     .line 159
     iput-boolean p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->enableFastReady:Z
@@ -113,6 +121,14 @@
 
 .method public enableUseInAppLogging(Lcom/samsung/context/sdk/samsunganalytics/UserAgreement;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "userAgreementImpl"
+        }
+    .end annotation
 
     .line 69
     invoke-virtual {p0, p1}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->setUserAgreement(Lcom/samsung/context/sdk/samsunganalytics/UserAgreement;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
@@ -273,6 +289,14 @@
 
 .method public setAlwaysRunningApp(Z)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "alwaysRunningApp"
+        }
+    .end annotation
 
     .line 139
     iput-boolean p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->isAlwaysRunningApp:Z
@@ -282,6 +306,14 @@
 
 .method public setAuidType(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "auidType"
+        }
+    .end annotation
 
     .line 197
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->auidType:I
@@ -291,6 +323,14 @@
 
 .method public setDbOpenHelper(Lcom/samsung/context/sdk/samsunganalytics/DBOpenHelper;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dbOpenHelper"
+        }
+    .end annotation
 
     .line 182
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->dbOpenHelper:Lcom/samsung/context/sdk/samsunganalytics/DBOpenHelper;
@@ -300,6 +340,14 @@
 
 .method public setDeviceId(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceId"
+        }
+    .end annotation
 
     .line 54
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->deviceId:Ljava/lang/String;
@@ -309,6 +357,14 @@
 
 .method public setNetworkTimeoutInMilliSeconds(I)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "networkTimeoutInMilliSeconds"
+        }
+    .end annotation
 
     .line 168
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->networkTimeoutInMilliSeconds:I
@@ -318,6 +374,14 @@
 
 .method public setOverrideIp(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "overrideIp"
+        }
+    .end annotation
 
     .line 125
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->overrideIp:Ljava/lang/String;
@@ -327,6 +391,14 @@
 
 .method public setQueueSize(I)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "queueSize"
+        }
+    .end annotation
 
     .line 177
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->queueSize:I
@@ -336,6 +408,14 @@
 
 .method protected setRestrictedNetworkType(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "restrictedNetworkType"
+        }
+    .end annotation
 
     .line 207
     iput p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->restrictedNetworkType:I
@@ -345,6 +425,14 @@
 
 .method public setTrackingId(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "trackingId"
+        }
+    .end annotation
 
     .line 45
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->trackingId:Ljava/lang/String;
@@ -354,6 +442,14 @@
 
 .method public setUseAnonymizeIp(Z)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "useAnonymizeIp"
+        }
+    .end annotation
 
     .line 98
     iput-boolean p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->useAnonymizeIp:Z
@@ -363,6 +459,14 @@
 
 .method public setUserAgreement(Lcom/samsung/context/sdk/samsunganalytics/UserAgreement;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "userAgreement"
+        }
+    .end annotation
 
     .line 107
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->userAgreement:Lcom/samsung/context/sdk/samsunganalytics/UserAgreement;
@@ -372,6 +476,15 @@
 
 .method public setUserId(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "userId"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -383,6 +496,14 @@
 
 .method public setVersion(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "version"
+        }
+    .end annotation
 
     .line 116
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->version:Ljava/lang/String;

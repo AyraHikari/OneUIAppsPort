@@ -40,7 +40,7 @@
     <string name="common_google_play_services_notification_channel_name">Достапност на услугите на Google Play</string>
     <string name="common_google_play_services_notification_ticker">Грешка на услугите на Google Play</string>
     <string name="common_google_play_services_unknown_issue">%1$s има проблеми со услугите на Google Play. Обидете се повторно.</string>
-    <string name="common_google_play_services_unsupported_text">%1$s нема да работи без услугите на Google Play, што не се поддржани од уредов.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s нема да се извршува без услугите на Google Play, што не се подржани од уредов.</string>
     <string name="common_google_play_services_update_button">Ажурирај</string>
     <string name="common_google_play_services_update_text">%1$s нема да се извршува ако не ги ажурирате услугите на Google Play.</string>
     <string name="common_google_play_services_update_title">Ажурирај ги услугите на Google Play</string>
@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Најави се</string>
     <string name="common_signin_button_text_long">Најави се со Google</string>
     <string name="copy">Копирај</string>
-    <string name="copy_toast_msg">Линкот е копиран во привремена меморија</string>
     <string name="error_icon_content_description">Грешка</string>
     <string name="expand_button_title">Напредни</string>
     <string name="exposed_dropdown_menu_content_description">Прикажи паѓачко мени</string>
-    <string name="fallback_menu_item_copy_link">Копирај го линкот</string>
-    <string name="fallback_menu_item_open_in_browser">Отвори во прелистувач</string>
-    <string name="fallback_menu_item_share_link">Сподели линк</string>
     <string name="icon_content_description">Икона за дијалог</string>
     <string name="item_view_role_description">Картичка</string>
     <string name="material_clock_toggle_content_description">Изберете претпладне или попладне</string>

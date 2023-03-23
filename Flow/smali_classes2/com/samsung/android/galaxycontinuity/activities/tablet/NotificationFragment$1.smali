@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 105
+    .line 106
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,13 +45,21 @@
 # virtual methods
 .method public onAdded(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
     const-string v0, "added to noti adapter"
 
-    .line 108
+    .line 109
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 109
+    .line 110
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -56,7 +72,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 110
+    .line 111
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -71,7 +87,7 @@
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->add(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
-    .line 111
+    .line 112
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -84,7 +100,7 @@
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
 
-    .line 114
+    .line 115
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
@@ -94,7 +110,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 115
+    .line 116
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;
@@ -105,7 +121,7 @@
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->add(Ljava/lang/String;)V
 
-    .line 116
+    .line 117
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;
@@ -114,7 +130,7 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->notifyDataSetChanged()V
 
-    .line 119
+    .line 120
     :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
@@ -126,7 +142,7 @@
 .method public onCleared()V
     .locals 2
 
-    .line 141
+    .line 142
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -139,7 +155,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 142
+    .line 143
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -154,7 +170,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->clearAll()V
 
-    .line 143
+    .line 144
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -167,7 +183,7 @@
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
 
-    .line 146
+    .line 147
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
@@ -177,7 +193,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 147
+    .line 148
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;
@@ -186,7 +202,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->clear()V
 
-    .line 148
+    .line 149
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;
@@ -195,7 +211,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->notifyDataSetChanged()V
 
-    .line 151
+    .line 152
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
@@ -214,13 +230,21 @@
 
 .method public onRemoved(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
     const-string v0, "removed from noti adapter"
 
-    .line 124
+    .line 125
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 125
+    .line 126
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -233,7 +257,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 126
+    .line 127
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -248,7 +272,7 @@
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->remove(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
-    .line 127
+    .line 128
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Landroidx/recyclerview/widget/RecyclerView;
@@ -261,7 +285,7 @@
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
 
-    .line 130
+    .line 131
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
@@ -273,7 +297,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 132
+    .line 133
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
     move-result-object v0
@@ -286,7 +310,7 @@
 
     if-nez v0, :cond_1
 
-    .line 133
+    .line 134
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;->access$100(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;
@@ -297,7 +321,7 @@
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFCategoryAdapter;->remove(Ljava/lang/String;)V
 
-    .line 136
+    .line 137
     :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationFragment;
 

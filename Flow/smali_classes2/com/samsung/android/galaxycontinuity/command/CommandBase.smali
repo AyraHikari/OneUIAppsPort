@@ -13,6 +13,16 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/content/Context;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "args"
+        }
+    .end annotation
 
     .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -58,6 +68,14 @@
 # virtual methods
 .method public queueMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 32
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/tablet/FlowMessageQueueManager;->getInstance()Lcom/samsung/android/galaxycontinuity/services/tablet/FlowMessageQueueManager;

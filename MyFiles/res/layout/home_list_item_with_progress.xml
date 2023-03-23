@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/home_list_item_container" android:tag="layout/home_list_item_with_progress_0" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/basic_list_item_one_line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/home_list_item_thumbnail" android:layout_width="@dimen/home_list_item_icon_width" android:layout_height="@dimen/home_list_item_icon_height" android:layout_marginStart="@dimen/home_list_item_icon_margin_start" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="@dimen/home_list_item_divider_height" android:layout_marginStart="@dimen/home_list_item_divider_margin_start" android:layout_marginEnd="@dimen/home_list_item_divider_margin_end" style="@style/ListDivider" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/home_list_item_text_size" android:textColor="@color/home_list_item_text1" android:ellipsize="end" android:id="@id/home_list_item_text" android:paddingTop="@dimen/basic_list_item_text_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/home_list_item_text_margin_start" android:layout_marginEnd="@dimen/home_list_item_text_margin_end" />
+                <TextView android:textSize="@dimen/home_list_item_file_size_text_size" android:textColor="@color/home_list_item_text2" android:id="@id/home_list_item_text_second" android:tag="binding_1" android:paddingBottom="@dimen/basic_list_item_text_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale" android:layout_marginStart="@dimen/home_list_item_text_margin_start" android:layout_marginEnd="@dimen/home_list_item_text_margin_end" />
+            </LinearLayout>
+            <ViewStub android:layout_gravity="center_vertical" android:id="@id/progress_in_list_stub" android:tag="binding_2" android:layout="@layout/home_list_progress" android:inflatedId="@id/progress_in_list" android:layout_width="@dimen/home_list_item_progress_width" android:layout_height="@dimen/home_list_item_progress_width" android:layout_marginEnd="@dimen/home_list_item_text_margin_end" />
+            <ViewStub android:layout_gravity="center_vertical" android:id="@id/app_update_badge_stub" android:layout="@layout/n_badge_stub" android:inflatedId="@id/app_update_badge" android:layout_width="@dimen/app_update_new_badge_size" android:layout_height="@dimen/app_update_new_badge_size" android:layout_marginEnd="@dimen/home_list_item_text_margin_end" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

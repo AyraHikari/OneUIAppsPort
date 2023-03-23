@@ -51,12 +51,12 @@
         }
     .end annotation
 
-    .line 251
+    .line 250
     iget-boolean v0, p0, Lokhttp3/internal/ws/WebSocketWriter$FrameSink;->closed:Z
 
     if-nez v0, :cond_0
 
-    .line 253
+    .line 252
     iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter$FrameSink;->this$0:Lokhttp3/internal/ws/WebSocketWriter;
 
     iget v2, p0, Lokhttp3/internal/ws/WebSocketWriter$FrameSink;->formatOpcode:I
@@ -75,10 +75,10 @@
 
     const/4 v0, 0x1
 
-    .line 254
+    .line 253
     iput-boolean v0, p0, Lokhttp3/internal/ws/WebSocketWriter$FrameSink;->closed:Z
 
-    .line 255
+    .line 254
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter$FrameSink;->this$0:Lokhttp3/internal/ws/WebSocketWriter;
 
     const/4 v1, 0x0
@@ -87,7 +87,7 @@
 
     return-void
 
-    .line 251
+    .line 250
     :cond_0
     new-instance v0, Ljava/io/IOException;
 

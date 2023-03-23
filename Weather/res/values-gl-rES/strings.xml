@@ -33,6 +33,7 @@
     <string name="air_quality">Calidade do aire</string>
     <string name="air_quality_next_tts">Previsións diarias da calidade do aire posteriores</string>
     <string name="air_quality_previous_tts">Previsións diarias da calidade do aire anteriores</string>
+    <string name="alert_title">Alerta meteorolóxica extrema</string>
     <string name="all_added_cities">Todas as cidades engadidas</string>
     <string name="allow">Permitir</string>
     <string name="allow_permission_in_settings">Para usar esta función, concede permiso en Axustes.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Acción non admitida</string>
     <string name="apply_daylight_saving_time">Aplicar horario de verán?</string>
     <string name="as_possible_after_verification">Informe enviado. O nome da cidade cambiarase o antes posible unha vez efectuada a verificación.</string>
+    <string name="auto_refresh_on_screen_description">Recibe información do tempo actualizada cada hora automaticamente. Cando está activado, non podes actualizar manualmente.</string>
+    <string name="auto_refresh_on_the_go">Actualización automática desde calquera lugar</string>
+    <string name="auto_refresh_on_the_go_advanced">Avanzadas</string>
+    <string name="auto_refresh_on_the_go_description">Recibe actualizacións do tempo máis frecuentes mentres estás conducindo, andando en bicicleta, correndo ou camiñando. Cando está activado, non podes actualizar manualmente.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Recibe actualizacións do tempo máis frecuentes mentres estás conducindo, andando en bicicleta, correndo ou camiñando.</string>
     <string name="btn_report">Informe</string>
     <string name="button_finish">Finalizar</string>
     <string name="button_tts">Botón</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Toca dúas veces para obter máis información.</string>
     <string name="china">China</string>
     <string name="cities_button">Cidades</string>
+    <string name="city_added">Cidade engadida.</string>
     <string name="city_list_text">Cidades</string>
     <string name="clear">Despexado</string>
     <string name="clear_then_cloudy">Despexado e, a continuación, nubrado</string>
@@ -111,7 +118,7 @@
     <string name="deny">Denegar</string>
     <string name="detail">Detalles</string>
     <string name="dialog_Entire_cities_deleted">Eliminaranse todas as cidades e a información meteorolóxica non se amosará no widget</string>
-    <string name="dialog_apps_icon_message">A icona do widget meteorolóxico engadirase á lista de aplicacións.</string>
+    <string name="dialog_apps_icon_message">A icona do widget do tempo engadirase á lista de aplicacións.</string>
     <string name="dialog_cancel_button">Cancelar</string>
     <string name="dialog_cities_deleted">Eliminaranse %d cidades</string>
     <string name="dialog_connect_button">Conectar</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Elemento soltado na posición %d.</string>
     <string name="dragndroplist_drag_start">Comezouse a arrastrar o elemento da posición %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">O elemento da posición %d non se pode arrastrar.</string>
+    <string name="drawer_tips">Consellos de %s</string>
     <string name="drawer_tips_message">Pulsa aquí para engadir, borrar e reordenar as localizacións. Tamén podes engadir varios widgets para amosar localizacións diferentes na pantalla Inicio.</string>
     <string name="drawer_tips_message_1">Pulsa Xestionar localizacións na parte inferior deste menú para engadir, eliminar ou reordenar as localizacións.</string>
     <string name="drawer_tips_message_2">Podes engadir máis dun widget á pantalla Inicio para amosar localizacións diferentes á vez.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Vídeo de previsión</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Ven</string>
     <string name="general">Xeral</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Recibe contido personalizado en función de como usas o teléfono.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Recibe contido personalizado en función de como usas a tableta.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">obter a información meteorolóxica, incluída a túa localización actual, de Tempo</string>
     <string name="go_to_website">Ir ao sitio web</string>
     <string name="goto_apps">Hai unha nova actualización dispoñible. Desexas instalala agora?</string>
     <string name="goto_apps_later">Despois</string>
     <string name="goto_apps_now">Agora</string>
     <string name="goto_apps_update_title">Alertas de contido novo</string>
     <string name="header_tts">Cabeceira</string>
+    <string name="heavy">Forte</string>
     <string name="heavy_rain">Choiva forte</string>
     <string name="heavy_rain_followed_by_intense_heat">Chuvia forte seguida de calor intenso</string>
     <string name="heavy_rain_followed_by_light_rain">Chuvia forte seguida de calor intenso</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Visibilidade</string>
     <string name="life_index_wind">Vento</string>
     <string name="life_index_wind_force">Velocidade do vento</string>
+    <string name="light">Suave</string>
     <string name="light_rain_followed_by_heavy_rain">Chuvia lixeira seguida de chuvias fortes</string>
     <string name="light_rain_with_some_heavy_rain">Chuvia lixeira con algunhas chuvias fortes</string>
     <string name="link_tts">Ligazón</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Non se atopou ningún result.</string>
     <string name="message_service_not_available">O servizo non está dispoñible neste momento</string>
     <string name="minus_tts">Menos</string>
+    <string name="mon">Lun</string>
     <string name="more">Máis</string>
     <string name="more_cuntact_us">Contacta connosco</string>
     <string name="more_information">Máis</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Pulsa aquí para modificar a localización do tempo predeterminada e xestiona todas as túas localizacións.</string>
     <string name="new_version_available">Hai unha nova versión de %s dispoñible.</string>
     <string name="new_version_is_available">Hai unha nova versión dispoñible</string>
+    <string name="news_menu_show_news">Amosar noticias</string>
+    <string name="news_opt_in_banner_title_text">Mantente ao día sobre os eventos actuais mostrando as novas no widget Tempo.</string>
+    <string name="news_opt_in_popup_desc_text">Mantente ao día sobre as novas mundiais amosando os titulares máis recentes de %s no widget Tempo.</string>
+    <string name="news_opt_in_popup_title_text">Consulta as novas e o tempo nun único widget</string>
+    <string name="news_request_agree_text">Pulsa para obter novas de %s</string>
+    <string name="news_widget_bubble_text">Recibe novas co tempo.</string>
+    <string name="news_widget_dummy_title">A mellor historia de hoxe</string>
+    <string name="news_widget_new_dummy_title">5 cousas que tes que saber esta mañá</string>
+    <string name="news_widget_oobe_text">Pulsa aquí para engadir noticias.</string>
     <string name="next">Seguinte cidade</string>
+    <string name="next_btn">Seguinte</string>
     <string name="next_city">Toca dúas veces para ver información meteorolóxica da seguinte cidade.</string>
     <string name="night_tts">Noite</string>
     <string name="no_application_available">Non hai ningunha aplicación dispoñible</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Ningunha información meteorolóxica</string>
     <string name="not_in_use">Sen usar</string>
     <string name="not_now">Agora non</string>
+    <string name="not_now_btn">Agora non</string>
     <string name="not_selected">Non seleccionado</string>
     <string name="nothing_selected">Non se seleccionou nada</string>
     <string name="noti">Aviso</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Para obter unha detección da localización máis precisa e rápida, toca AXUSTES e, a continuación, define o Método de localización en GPS, Wi-Fi e redes móbiles.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Para obter unha detección da localización máis precisa e rápida, toca AXUSTES e, a continuación, define o Método de localización en GPS e Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Para ver a túa información meteorolóxica local, activa os axustes de Localización e asegúrate de que o modo estea definido en Alta precisión.</string>
+    <string name="notification_alert_channel_name">Alerta meteorolóxica extrema</string>
     <string name="notification_apps_update_channel_name">Notificacións de actualizacións</string>
     <string name="notification_auto_refresh_channel_name">Actualización automática do tempo</string>
     <string name="notification_dex_channel_name">Tempo en Samsung DeX</string>
@@ -425,8 +450,8 @@
     <string name="notification_panel_channel_name">Notificación en curso</string>
     <string name="notification_panel_location_off">Activa Localización para ver a previsión meteorolóxica local.</string>
     <string name="notification_refresh_channel_name">Actualización do tempo</string>
-    <string name="notification_touch_widget_popup_content">A información meteorolóxica actualízase automaticamente cada %d horas. É posible que isto provoque a aplicación de tarifas adicionais. Podes cambiar o intervalo de actualización nos axustes do widget de información meteorolóxica.</string>
-    <string name="notification_touch_widget_popup_content_for_one_hour_interval">A información meteorolóxica actualízase automaticamente cada hora. É posible que isto provoque a aplicación de tarifas adicionais. Podes cambiar o intervalo de actualización nos axustes do widget de información meteorolóxica.</string>
+    <string name="notification_touch_widget_popup_content">A información meteorolóxica actualízase automaticamente cada %d horas. É posible que isto provoque a aplicación de tarifas adicionais. Podes cambiar o intervalo de actualización nos axustes do widget do tempo.</string>
+    <string name="notification_touch_widget_popup_content_for_one_hour_interval">A información meteorolóxica actualízase automaticamente cada hora. É posible que isto provoque a aplicación de tarifas adicionais. Podes cambiar o intervalo de actualización nos axustes do widget do tempo.</string>
     <string name="notification_updating">Actualización en curso…</string>
     <string name="notifications">Notificacións</string>
     <string name="off_text">Desactivado</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Abrir app</string>
     <string name="open_source_licences">Licenzas de código aberto</string>
     <string name="other_locations">Outras localizacións</string>
+    <string name="partly_sunny">Parcialmente solleiro</string>
     <string name="paused">En pausa</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Precipitacións: %d mm</string>
     <string name="preview">Vista previa de %s</string>
     <string name="previous">Cidade anterior</string>
+    <string name="previous_btn">Anterior</string>
     <string name="previous_city">Toca dúas veces para ver información meteorolóxica da cidade anterior.</string>
     <string name="privacy_policy">Política de privacidade</string>
     <string name="probability_of_rain_text">Probabilidade choiva</string>
     <string name="protect_your_content">Protexe o teu contido</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar e mapas</string>
     <string name="rain">Choiva</string>
     <string name="rain_followed_by_intense_heat">Chuvia seguida de calor intenso</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Para actualizar a información meteorolóxica, toca AXUSTES, vai a Información da aplicación > Permisos e, a continuación, concede os seguintes permisos e téntao outra vez:</string>
     <string name="runtime_location_permission_title">Dar permisos</string>
     <string name="runtime_oem_grant_permission_desc">A aplicación %s ten permiso para acceder ao seguinte:</string>
+    <string name="sat">Sáb</string>
     <string name="save_button">Gardar</string>
     <string name="search_most_searched_for">Máis buscados</string>
     <string name="search_tab_cities">Cidades</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Novo contido dispoñible</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Máis</string>
+    <string name="sesl_preferecne_badge_description">Nova notificación</string>
     <string name="sesl_preferencecategory_added_title">Cabeceira</string>
     <string name="sesl_search_hint">Buscar</string>
     <string name="sesl_searchview_description_clear">Borrar campo de busca</string>
@@ -530,8 +561,8 @@
     <string name="sesl_searchview_description_voice">Busca de voz</string>
     <string name="sesl_switch_off">Desactivado</string>
     <string name="sesl_switch_on">Activado</string>
-    <string name="sesl_switchbar_off_text">Desactiv.</string>
-    <string name="sesl_switchbar_on_text">Activar</string>
+    <string name="sesl_switchbar_off_text">Desactivado</string>
+    <string name="sesl_switchbar_on_text">Activado</string>
     <string name="sesl_toolbar_collapse_description">Contraer</string>
     <string name="set_default_location">Definir posición predeterminada</string>
     <string name="set_favorite">Definir favorita</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Comproba a túa conexión de rede e téntao outra vez.</string>
     <string name="st_offline">Fóra liña</string>
     <string name="st_view_less">Ver menos</string>
+    <string name="status_off">Desactivado</string>
+    <string name="status_on">Activado</string>
+    <string name="sun">Dom</string>
     <string name="sunny">Solleiro</string>
     <string name="sunny_with_some_clouds">Solleiro con algunhas nubes</string>
     <string name="sunny_with_some_heavy_rain">Solleiro con algunhas chuvias fortes</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Pulsa aquí para restaurar os datos da información meteorolóxica do teu dispositivo vello.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Toca REINTENTAR para tentar volver atopar a túa localización.</string>
     <string name="tap_setting_message_edge_panel">Activa Localización para obter a información meteorolóxica local.</string>
+    <string name="tap_the_settings_icon">Toca a icona Axustes.</string>
     <string name="tap_to_get_the_weather">Pulsa para ver o tempo</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Termos e condicións</string>
     <string name="the_latest_version">A versión máis recente xa está instalada.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Isto tamén se aplicará ás notificacións e a Calendario.</string>
+    <string name="thu">Xov</string>
     <string name="tick_box_tts">Caixa de verificación</string>
     <string name="ticked_tts">Marcado</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Cada hora</string>
     <string name="title_select_locations">Seleccionar localizacións</string>
     <string name="title_theme">Temas</string>
+    <string name="to_continue_agree_to_updated">Para continuar, acepta a última versión dos nosos %s.</string>
     <string name="to_get_local_weather_chn">"Para obter o tempo local, enviarase a túa localización actual ao provedor de servizos meteorolóxicos. (Consulta os %1$sTermos e condicións%2$s do provedor e a %3$sPolítica de privacidade%4$s).
 É posible que outras aplicacións e servizos do dispositivo accedan aos datos de información meteorolóxica recuperados para mostrar o tempo nesas aplicacións.
 Para ofrecerche información meteorolóxica continuada, a aplicación Tempo terá acceso á túa localización, mesmo cando non esteas a utilizala."</string>
     <string name="today">Hoxe</string>
+    <string name="try_it_out_btn">Próbao</string>
+    <string name="tue">Mar</string>
+    <string name="turn_on_to_use_precise_location">Para usar esta función, permite que %s acceda sempre á túa localización e activa Usar localización precisa. Pulsa Axustes e, a continuación vai a Permisos > Localización.</string>
     <string name="tw_title_weather_broadcast">Emisión</string>
-    <string name="unable_to_check_for_updates">Non se pode consultar se hai actualizacións. Non hai ningunha conexión de rede.</string>
+    <string name="unable_to_check_for_updates">Non se puideron buscar actualizacións. Téntao máis tarde.</string>
     <string name="unable_to_receive_info_msg">Non se pode recibir info.</string>
     <string name="unticked_tts">Desmarcado</string>
     <string name="unused">Non usada</string>
     <string name="update">Actualizar</string>
     <string name="update_abb8">Actualizar</string>
     <string name="update_app">Actualizar aplicación</string>
+    <string name="updated_tile_chn">Actualizado: %s</string>
     <string name="updated_tts">%s actualizado</string>
+    <string name="use_current_location">Usar localización actual</string>
     <string name="use_current_location_agree_popup">"Para obter o tempo local, enviarase a túa localización actual ao provedor de servizos de información meteorolóxica. (Consulta a %1$spolítica de privacidade%2$s do provedor).
 É posible que outras aplicacións e servizos do dispositivo accedan aos datos de información meteorolóxica recuperados para mostrar o tempo nesas aplicacións."</string>
     <string name="use_current_location_and_background_agree_popup">"Para obter o tempo local, enviarase a túa localización actual ao provedor de servizos de información meteorolóxica. (Consulta a %1$spolítica de privacidade%2$s do provedor).
@@ -635,9 +677,16 @@ Para ofrecerche información meteorolóxica continuada, a aplicación Meteoroló
 Podes desactivar a localización entrando nos axustes da aplicación do Tempo."</string>
     <string name="use_current_location_body_msg_chn">"Le con atención antes de usar “Tempo”:
 Se queres coñecer o tempo da túa localización actual, tes que permitir que o provedor de servizos de terceiros teña acceso continuo (mesmo cando non estás usando o servizo) ao teu dispositivo e acceder a certos datos, tal como se enumeran máis abaixo. Le con atención e comprende os %1$sTermos e condicións%2$s e a %3$sPolítica de Privacidade%4$s do provedor de servizos de terceiros antes de conceder o devandito permiso. Podes retirar o teu permiso apagando “Localización” no menú de Axustes. Outras aplicacións e servizos do dispositivo poden acceder aos datos de información meteorolóxica recuperados para amosalos nesas aplicacións e servizos."</string>
+    <string name="use_current_location_body_msg_kor">"Recompilarase a túa localización actual e usarase para achegar algunhas das funcións da aplicación Tempo, como obter o tempo local.
+
+Para poder achegarche información do tempo constante, esta aplicación procesará a túa localización periodicamente, mesmo cando non a uses. Se continúas, aceptas á recompilación e ao procesamento da túa localización para os fins descritos anteriormente.
+
+Podes deter a recompilación e o uso desta localización nos axustes da aplicación Tempo."</string>
     <string name="use_current_location_body_purpose">Obxectivo</string>
     <string name="use_current_location_body_purpose_content">Fornecer información meteorolóxica da túa localización actual</string>
     <string name="use_current_location_body_search_provider">Provedor de servizos</string>
+    <string name="use_current_location_continue">Continuar</string>
+    <string name="use_current_location_not_now">Agora non</string>
     <string name="use_current_location_off_alert_popup">Eliminarase a información da localización actual.</string>
     <string name="useful_informations">Consellos sobre estilo de vida e outros informes</string>
     <string name="using_as">Usando como %s</string>
@@ -743,9 +792,11 @@ Se queres coñecer o tempo da túa localización actual, tes que permitir que o 
     <string name="weather_tip">Consellos meteorolóxicos</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Mér</string>
     <string name="weekly_forecast">Diariamente</string>
     <string name="widget_background">Fondo de widget</string>
     <string name="widget_empty_text">Pulsa para obter información meteorolóxica</string>
+    <string name="widget_location">Nome de cidade</string>
     <string name="widget_name_4x1">Tempo e reloxo</string>
     <string name="widget_setting">Axustes</string>
     <string name="widget_setting_background_color">Cor de fondo</string>

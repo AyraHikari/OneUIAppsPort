@@ -269,6 +269,17 @@
 
 .method public constructor <init>(Landroid/service/notification/StatusBarNotification;Z)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sbn",
+            "isReplyEnable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -812,7 +823,7 @@
     :cond_d
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "title is empty or text is empty"
+    const-string/jumbo p2, "title is empty or text is empty"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -821,6 +832,16 @@
 
 .method private getCharSequenceFromBundle(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bundle",
+            "key"
+        }
+    .end annotation
 
     .line 154
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
@@ -841,8 +862,6 @@
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
-
-    check-cast p1, [Ljava/lang/CharSequence;
 
     check-cast p1, [Ljava/lang/CharSequence;
 
@@ -870,11 +889,15 @@
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v2, "\n"
+    move-result-object v2
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, "\n"
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -892,6 +915,16 @@
 
 .method private getStringFromBundle(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bundle",
+            "key"
+        }
+    .end annotation
 
     .line 145
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z

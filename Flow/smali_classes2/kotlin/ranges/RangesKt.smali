@@ -4,11 +4,6 @@
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "kotlin/ranges/RangesKt__RangesKt",
         "kotlin/ranges/RangesKt___RangesKt"
@@ -16,10 +11,10 @@
     k = 0x4
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
-    xi = 0x1
+    xi = 0x31
 .end annotation
 
 
@@ -27,6 +22,7 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Lkotlin/ranges/RangesKt___RangesKt;-><init>()V
 
     return-void

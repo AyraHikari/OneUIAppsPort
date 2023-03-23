@@ -19,4 +19,12 @@
 .end method
 
 .method public abstract setDropDownViewTheme(Landroid/content/res/Resources$Theme;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "theme"
+        }
+    .end annotation
 .end method

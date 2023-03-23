@@ -83,7 +83,7 @@
     .line 58
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->isRunning:Z
 
-    .line 404
+    .line 408
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mIsNotiConnected:Z
 
     .line 68
@@ -182,12 +182,12 @@
 .method private acquireWifiLock()V
     .locals 3
 
-    .line 386
+    .line 390
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     if-nez v0, :cond_0
 
-    .line 387
+    .line 391
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -196,7 +196,7 @@
 
     move-result-object v0
 
-    const-string v1, "wifi"
+    const-string/jumbo v1, "wifi"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -210,14 +210,14 @@
 
     const-string v2, "WIFI_WAKE_LOCK"
 
-    .line 388
+    .line 392
     invoke-virtual {v0, v1, v2}, Landroid/net/wifi/WifiManager;->createWifiLock(ILjava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiLock:Landroid/net/wifi/WifiManager$WifiLock;
 
-    .line 391
+    .line 395
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiLock:Landroid/net/wifi/WifiManager$WifiLock;
 
@@ -229,14 +229,14 @@
 
     if-nez v0, :cond_1
 
-    .line 392
+    .line 396
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiLock:Landroid/net/wifi/WifiManager$WifiLock;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager$WifiLock;->acquire()V
 
     const-string v0, "acquireWifiLock"
 
-    .line 393
+    .line 397
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :cond_1
@@ -246,14 +246,14 @@
 .method private disableOngoingNoti()V
     .locals 3
 
-    .line 575
+    .line 579
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_DISABLE_ONGOING_NOTI"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 576
+    .line 580
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -267,6 +267,14 @@
 
 .method private isDeviceConnected(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bluetoothDevice"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -320,6 +328,14 @@
 
 .method private declared-synchronized isDeviceConnected(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hostAddress"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -328,8 +344,6 @@
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;
 
     if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;->isConnected()Z
 
@@ -383,6 +397,14 @@
 
 .method private isDeviceTypePhone(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -418,6 +440,14 @@
 
 .method private isDisconnectedAndOver30Min(J)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionDisconnectedTimeMillis"
+        }
+    .end annotation
 
     const-wide/16 v0, -0x1
 
@@ -429,7 +459,7 @@
 
     return v1
 
-    .line 564
+    .line 568
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -439,12 +469,12 @@
 
     const-wide/16 p1, 0x3e8
 
-    .line 568
+    .line 572
     div-long/2addr v2, p1
 
     const-wide/16 p1, 0x3c
 
-    .line 569
+    .line 573
     div-long/2addr v2, p1
 
     const-wide/16 p1, 0x1e
@@ -462,7 +492,7 @@
 .method private isSessionAlive()Z
     .locals 1
 
-    .line 555
+    .line 559
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -483,7 +513,7 @@
 .method private releaseWifiLock()V
     .locals 1
 
-    .line 398
+    .line 402
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiLock:Landroid/net/wifi/WifiManager$WifiLock;
 
     if-eqz v0, :cond_0
@@ -494,14 +524,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 399
+    .line 403
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiLock:Landroid/net/wifi/WifiManager$WifiLock;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager$WifiLock;->release()V
 
     const-string v0, "releaseWifiLock"
 
-    .line 400
+    .line 404
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :cond_0
@@ -543,35 +573,35 @@
 
     const-string v0, "Session Ends"
 
-    .line 365
+    .line 369
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 366
+    .line 370
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->isRunning:Z
 
-    .line 368
+    .line 372
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mSendMessageHandlerThread:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_0
 
-    .line 369
+    .line 373
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
     const/4 v0, 0x0
 
-    .line 370
+    .line 374
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mSendMessageHandlerThread:Landroid/os/HandlerThread;
 
-    .line 373
+    .line 377
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->stopAllCommunication()V
 
-    .line 375
+    .line 379
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->removeImageCacheDir()V
 
-    .line 377
+    .line 381
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->disableOngoingNoti()V
 
     return-void
@@ -587,8 +617,6 @@
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mBtNotiGearClient:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;
 
     if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mBtNotiGearClient:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;
 
     .line 292
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;->isConnected()Z
@@ -663,8 +691,6 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mBtNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;
-
     .line 277
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;->isConnected()Z
 
@@ -715,8 +741,6 @@
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;
 
     if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;
 
     .line 285
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;->isConnected()Z
@@ -778,6 +802,14 @@
 
 .method public searchDeviceViaWiFi(Ljava/lang/String;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "enrolledPhoneID"
+        }
+    .end annotation
 
     .line 142
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
@@ -848,6 +880,14 @@
 
 .method public sendMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowMessage"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -859,6 +899,16 @@
 
 .method public sendMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;[B)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "flowMessage",
+            "extraBytes"
+        }
+    .end annotation
 
     .line 322
     monitor-enter p0
@@ -912,8 +962,37 @@
 
     iput-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
-    .line 333
+    .line 334
     :cond_1
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isBTConnectPermissionNeeded()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 335
+    iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
+
+    new-instance v2, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
+
+    const/4 v3, 0x0
+
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getDeviceUniqueID()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v2, v3, v4}, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
+
+    goto :goto_1
+
+    .line 337
+    :cond_2
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     new-instance v2, Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
@@ -938,46 +1017,47 @@
 
     iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->remoteDeviceData:Lcom/samsung/android/galaxycontinuity/data/RemoteDeviceData;
 
-    if-eqz v0, :cond_4
+    :goto_1
+    if-eqz v0, :cond_5
 
-    .line 335
+    .line 339
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiClient;->isConnected()Z
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
-    .line 336
+    .line 340
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->toBytes()[B
 
     move-result-object v1
 
-    .line 338
+    .line 342
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->toJson()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 339
+    .line 343
     invoke-static {}, Landroid/os/Debug;->isDebuggerConnected()Z
 
     move-result v2
 
-    if-nez v2, :cond_2
+    if-nez v2, :cond_3
 
-    .line 340
+    .line 344
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->sanitizePrivacyLog(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    :cond_2
-    if-eqz v1, :cond_4
+    :cond_3
+    if-eqz v1, :cond_5
 
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_4
 
-    .line 345
+    .line 349
     array-length v2, v1
 
-    .line 346
+    .line 350
     array-length v3, p2
 
     add-int/2addr v3, v2
@@ -986,55 +1066,59 @@
 
     const/4 v5, 0x0
 
-    .line 347
+    .line 351
     invoke-static {v1, v5, v4, v5, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 348
+    .line 352
     array-length v1, p2
 
     invoke-static {p2, v5, v4, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 350
+    .line 354
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/Utils;->convertIntToBytes(I)[B
 
     move-result-object p2
 
     const/4 v1, 0x4
 
-    .line 352
+    .line 356
     invoke-static {p2, v5, v4, v5, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 354
+    .line 358
     invoke-virtual {v0, v4}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiClient;->sendMessage([B)V
 
-    .line 355
+    .line 359
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, " { hasExtras }"
+    move-result-object p1
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p2, " { hasExtras }"
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    goto :goto_1
+    goto :goto_2
 
-    .line 357
-    :cond_3
+    .line 361
+    :cond_4
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiClient;->sendMessage([B)V
 
-    .line 358
+    .line 362
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    :cond_4
-    :goto_1
+    :cond_5
+    :goto_2
     return-void
 
     :catchall_0
@@ -1051,8 +1135,16 @@
 
 .method public setSessionChangedListener(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$ISessionChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 580
+    .line 584
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mEndSessionRequestListener:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$ISessionChangedListener;
 
     return-void
@@ -1392,6 +1484,16 @@
 
 .method public startService(Ljava/lang/String;I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "hostAddress",
+            "notiPortNumber"
+        }
+    .end annotation
 
     .line 192
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->isDeviceConnected(Ljava/lang/String;)Z
@@ -1436,8 +1538,6 @@
 
     .line 201
     :cond_1
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;
-
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;->getHostAddress()Ljava/lang/String;
 
     move-result-object v0
@@ -1528,6 +1628,14 @@
 
 .method public startService(Landroid/bluetooth/BluetoothDevice;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bluetoothDevice"
+        }
+    .end annotation
 
     .line 221
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->isDeviceConnected(Landroid/bluetooth/BluetoothDevice;)Z
@@ -1648,8 +1756,6 @@
     if-eqz v0, :cond_0
 
     .line 300
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mWifiNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;
-
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WiFiClient;->stopCommunication()V
 
     .line 302
@@ -1662,8 +1768,6 @@
     if-eqz v0, :cond_1
 
     .line 306
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mBtNotiPhoneClient:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;
-
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;->stopCommunication()V
 
     .line 308
@@ -1676,8 +1780,6 @@
     if-eqz v0, :cond_2
 
     .line 312
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;->mBtNotiGearClient:Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;
-
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/bluetooth/BTClient;->stopCommunication()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

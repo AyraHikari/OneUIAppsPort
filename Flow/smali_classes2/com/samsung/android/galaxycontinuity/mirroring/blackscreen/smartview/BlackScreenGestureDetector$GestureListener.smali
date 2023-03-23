@@ -22,7 +22,23 @@
 .end method
 
 .method public abstract onSwipeUp(F)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distance"
+        }
+    .end annotation
 .end method
 
 .method public abstract onSwiping(F)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distance"
+        }
+    .end annotation
 .end method

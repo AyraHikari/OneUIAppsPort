@@ -147,6 +147,14 @@
 
 .method public static isHardwareKeyboardAvailable(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 99
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -204,6 +212,16 @@
 
 .method public static sendKeyEvent(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "motion",
+            "key"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -235,6 +253,14 @@
 
 .method public static setKeyboardAttachedStatusInTab(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isKeyboardAttachedInTab"
+        }
+    .end annotation
 
     .line 103
     sput-boolean p0, Lcom/samsung/android/galaxycontinuity/mirroring/input/InputDeviceManager;->sIsKeyboardAttachedOnTab:Z
@@ -244,6 +270,16 @@
 
 .method public static setPSSKeyboardState(Landroid/content/Context;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mContext",
+            "state"
+        }
+    .end annotation
 
     .line 89
     new-instance v0, Ljava/lang/StringBuilder;
@@ -254,7 +290,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

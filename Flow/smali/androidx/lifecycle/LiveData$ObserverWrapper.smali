@@ -42,17 +42,17 @@
         }
     .end annotation
 
-    .line 395
+    .line 446
     iput-object p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, -0x1
 
-    .line 393
+    .line 444
     iput p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mLastVersion:I
 
-    .line 396
+    .line 447
     iput-object p2, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mObserver:Landroidx/lifecycle/Observer;
 
     return-void
@@ -61,96 +61,45 @@
 
 # virtual methods
 .method activeStateChanged(Z)V
-    .locals 4
+    .locals 1
 
-    .line 409
+    .line 460
     iget-boolean v0, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mActive:Z
 
     if-ne p1, v0, :cond_0
 
     return-void
 
-    .line 414
+    .line 465
     :cond_0
     iput-boolean p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mActive:Z
 
-    .line 415
-    iget-object p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
+    .line 466
+    iget-object v0, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
 
-    iget p1, p1, Landroidx/lifecycle/LiveData;->mActiveCount:I
+    if-eqz p1, :cond_1
 
-    const/4 v0, 0x1
-
-    if-nez p1, :cond_1
-
-    move p1, v0
+    const/4 p1, 0x1
 
     goto :goto_0
 
     :cond_1
-    const/4 p1, 0x0
+    const/4 p1, -0x1
 
-    .line 416
     :goto_0
-    iget-object v1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
+    invoke-virtual {v0, p1}, Landroidx/lifecycle/LiveData;->changeActiveCounter(I)V
 
-    iget v2, v1, Landroidx/lifecycle/LiveData;->mActiveCount:I
-
-    iget-boolean v3, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mActive:Z
-
-    if-eqz v3, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, -0x1
-
-    :goto_1
-    add-int/2addr v2, v0
-
-    iput v2, v1, Landroidx/lifecycle/LiveData;->mActiveCount:I
-
-    if-eqz p1, :cond_3
-
-    .line 417
+    .line 467
     iget-boolean p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mActive:Z
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_2
 
-    .line 418
-    iget-object p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
-
-    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->onActive()V
-
-    .line 420
-    :cond_3
-    iget-object p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
-
-    iget p1, p1, Landroidx/lifecycle/LiveData;->mActiveCount:I
-
-    if-nez p1, :cond_4
-
-    iget-boolean p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mActive:Z
-
-    if-nez p1, :cond_4
-
-    .line 421
-    iget-object p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
-
-    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->onInactive()V
-
-    .line 423
-    :cond_4
-    iget-boolean p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->mActive:Z
-
-    if-eqz p1, :cond_5
-
-    .line 424
+    .line 468
     iget-object p1, p0, Landroidx/lifecycle/LiveData$ObserverWrapper;->this$0:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {p1, p0}, Landroidx/lifecycle/LiveData;->dispatchingValue(Landroidx/lifecycle/LiveData$ObserverWrapper;)V
 
-    :cond_5
+    :cond_2
     return-void
 .end method
 

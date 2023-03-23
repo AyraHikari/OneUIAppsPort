@@ -13,11 +13,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0006\u0008\u0087\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006\u00a8\u0006\u0007"
     }
@@ -34,9 +29,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -53,60 +49,90 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method private static final synthetic $values()[Lkotlin/contracts/InvocationKind;
+    .locals 3
 
     const/4 v0, 0x4
 
     new-array v0, v0, [Lkotlin/contracts/InvocationKind;
 
-    new-instance v1, Lkotlin/contracts/InvocationKind;
+    sget-object v1, Lkotlin/contracts/InvocationKind;->AT_MOST_ONCE:Lkotlin/contracts/InvocationKind;
 
-    const-string v2, "AT_MOST_ONCE"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/contracts/InvocationKind;->AT_LEAST_ONCE:Lkotlin/contracts/InvocationKind;
 
-    sput-object v1, Lkotlin/contracts/InvocationKind;->AT_MOST_ONCE:Lkotlin/contracts/InvocationKind;
+    const/4 v2, 0x1
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/contracts/InvocationKind;
+    sget-object v1, Lkotlin/contracts/InvocationKind;->EXACTLY_ONCE:Lkotlin/contracts/InvocationKind;
 
-    const-string v2, "AT_LEAST_ONCE"
+    const/4 v2, 0x2
 
-    const/4 v3, 0x1
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/contracts/InvocationKind;->UNKNOWN:Lkotlin/contracts/InvocationKind;
 
-    sput-object v1, Lkotlin/contracts/InvocationKind;->AT_LEAST_ONCE:Lkotlin/contracts/InvocationKind;
+    const/4 v2, 0x3
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/contracts/InvocationKind;
+    return-object v0
+.end method
 
-    const-string v2, "EXACTLY_ONCE"
+.method static constructor <clinit>()V
+    .locals 3
 
-    const/4 v3, 0x2
+    .line 101
+    new-instance v0, Lkotlin/contracts/InvocationKind;
 
-    invoke-direct {v1, v2, v3}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
+    const-string v1, "AT_MOST_ONCE"
 
-    sput-object v1, Lkotlin/contracts/InvocationKind;->EXACTLY_ONCE:Lkotlin/contracts/InvocationKind;
+    const/4 v2, 0x0
 
-    aput-object v1, v0, v3
+    invoke-direct {v0, v1, v2}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
 
-    new-instance v1, Lkotlin/contracts/InvocationKind;
+    sput-object v0, Lkotlin/contracts/InvocationKind;->AT_MOST_ONCE:Lkotlin/contracts/InvocationKind;
 
-    const-string v2, "UNKNOWN"
+    .line 108
+    new-instance v0, Lkotlin/contracts/InvocationKind;
 
-    const/4 v3, 0x3
+    const-string v1, "AT_LEAST_ONCE"
 
-    invoke-direct {v1, v2, v3}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
+    const/4 v2, 0x1
 
-    sput-object v1, Lkotlin/contracts/InvocationKind;->UNKNOWN:Lkotlin/contracts/InvocationKind;
+    invoke-direct {v0, v1, v2}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
 
-    aput-object v1, v0, v3
+    sput-object v0, Lkotlin/contracts/InvocationKind;->AT_LEAST_ONCE:Lkotlin/contracts/InvocationKind;
+
+    .line 115
+    new-instance v0, Lkotlin/contracts/InvocationKind;
+
+    const-string v1, "EXACTLY_ONCE"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/contracts/InvocationKind;->EXACTLY_ONCE:Lkotlin/contracts/InvocationKind;
+
+    .line 122
+    new-instance v0, Lkotlin/contracts/InvocationKind;
+
+    const-string v1, "UNKNOWN"
+
+    const/4 v2, 0x3
+
+    invoke-direct {v0, v1, v2}, Lkotlin/contracts/InvocationKind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/contracts/InvocationKind;->UNKNOWN:Lkotlin/contracts/InvocationKind;
+
+    invoke-static {}, Lkotlin/contracts/InvocationKind;->$values()[Lkotlin/contracts/InvocationKind;
+
+    move-result-object v0
 
     sput-object v0, Lkotlin/contracts/InvocationKind;->$VALUES:[Lkotlin/contracts/InvocationKind;
 
@@ -121,7 +147,7 @@
         }
     .end annotation
 
-    .line 98
+    .line 93
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -146,7 +172,7 @@
 
     sget-object v0, Lkotlin/contracts/InvocationKind;->$VALUES:[Lkotlin/contracts/InvocationKind;
 
-    invoke-virtual {v0}, [Lkotlin/contracts/InvocationKind;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -1,23 +1,32 @@
 .class final Lcom/google/android/gms/internal/base/zah;
 .super Landroid/graphics/drawable/Drawable$ConstantState;
+.source "com.google.android.gms:play-services-base@@18.0.1"
+
+
+# instance fields
+.field zaa:I
+
+.field zab:I
 
 
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method constructor <init>(Lcom/google/android/gms/internal/base/zah;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
-    return-void
-.end method
+    if-eqz p1, :cond_0
 
-.method synthetic constructor <init>(Lcom/google/android/gms/internal/base/zaf;)V
-    .locals 0
+    iget v0, p1, Lcom/google/android/gms/internal/base/zah;->zaa:I
 
-    .line 4
-    invoke-direct {p0}, Lcom/google/android/gms/internal/base/zah;-><init>()V
+    iput v0, p0, Lcom/google/android/gms/internal/base/zah;->zaa:I
 
+    iget p1, p1, Lcom/google/android/gms/internal/base/zah;->zab:I
+
+    iput p1, p0, Lcom/google/android/gms/internal/base/zah;->zab:I
+
+    :cond_0
     return-void
 .end method
 
@@ -26,7 +35,7 @@
 .method public final getChangingConfigurations()I
     .locals 1
 
-    const/4 v0, 0x0
+    iget v0, p0, Lcom/google/android/gms/internal/base/zah;->zaa:I
 
     return v0
 .end method
@@ -34,10 +43,10 @@
 .method public final newDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 2
-    invoke-static {}, Lcom/google/android/gms/internal/base/zag;->zacg()Lcom/google/android/gms/internal/base/zag;
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/base/zai;
 
-    move-result-object v0
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/base/zai;-><init>(Lcom/google/android/gms/internal/base/zah;)V
 
     return-object v0
 .end method

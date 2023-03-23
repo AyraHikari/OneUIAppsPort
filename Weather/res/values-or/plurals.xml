@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="cant_add_more_than_location">
-        <item quantity="other">%dଟି ଅବସ୍ଥାନରୁ ଅଧିକ ଯୋଡି ପାରିବେ ନାହିଁ। ଏହା ଯୋଡିବାକୁ କିଛି ଅବସ୍ଥାନ ବିଲୋପ କରନ୍ତୁ।</item>
+        <item quantity="other">%dଟି ଲୋକେସନରୁ ଅଧିକ ଯୋଡି ପାରିବେ ନାହିଁ। ଏହା ଯୋଡିବାକୁ କିଛି ଲୋକେସନ୍ ଡିଲିଟ୍ କରନ୍ତୁ।</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%dଟି ଅବସ୍ଥାନରୁ ଅଧିକ ଯୋଡି ପାରିବେ ନାହିଁ। ଏହା ଯୋଡିବାକୁ କିଛି ଅବସ୍ଥାନ ବିଲୋପ କରନ୍ତୁ।</item>
+        <item quantity="one">%dଟି ଲୋକେସନରୁ ଅଧିକ ଯୋଡି ପାରିବେ ନାହିଁ। ଏହା ଯୋଡିବାକୁ କିଛି ଲୋକେସନ୍ ଡିଲିଟ୍ କରନ୍ତୁ।</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>

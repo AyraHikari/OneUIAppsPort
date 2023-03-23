@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/network_server_list_page_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/file_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/expire_notify_stub" android:layout="@layout/trash_expire_notify" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/recycler_view" android:tag="binding_1" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/empty_view" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/no_server_item" />
+        </LinearLayout>
+        <ViewStub android:id="@id/loading_view_stub" android:tag="binding_3" android:layout="@layout/loading_container" android:inflatedId="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ViewStub android:id="@id/bottom_text_box_stub" android:tag="binding_4" android:visibility="gone" android:layout="@layout/bottom_text_box_layout" android:inflatedId="@id/bottom_text_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/rootView" android:layout_width="73.0dip" android:layout_height="fill_parent"
+<RelativeLayout android:id="@id/rootView" android:layout_width="66.0dip" android:layout_height="fill_parent" android:layout_marginEnd="7.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/icon" android:layout_width="73.0dip" android:layout_height="73.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" />
-    <ImageView android:id="@id/remove" android:background="@drawable/fail_ic_bg" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/smart_view_delete_button" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/icon" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginTop="8.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" android:layout_marginStart="8.0dip" />
+    <ImageView android:id="@id/remove" android:background="@drawable/fail_ic_bg" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/smart_view_delete_button" android:scaleType="fitCenter" android:contentDescription="@string/menu_favorites_remove" />
 </RelativeLayout>

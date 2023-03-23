@@ -1,75 +1,49 @@
 .class final Lcom/google/android/gms/tasks/zza;
-.super Lcom/google/android/gms/tasks/CancellationToken;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-tasks@@18.0.1"
+
+# interfaces
+.implements Lcom/google/android/gms/tasks/OnSuccessListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/android/gms/tasks/OnSuccessListener<",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field private final zza:Lcom/google/android/gms/tasks/zzu;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/gms/tasks/zzu<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic zza:Lcom/google/android/gms/tasks/OnTokenCanceledListener;
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 1
+.method constructor <init>(Lcom/google/android/gms/tasks/zzb;Lcom/google/android/gms/tasks/OnTokenCanceledListener;)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/tasks/CancellationToken;-><init>()V
+    iput-object p2, p0, Lcom/google/android/gms/tasks/zza;->zza:Lcom/google/android/gms/tasks/OnTokenCanceledListener;
 
-    .line 2
-    new-instance v0, Lcom/google/android/gms/tasks/zzu;
-
-    invoke-direct {v0}, Lcom/google/android/gms/tasks/zzu;-><init>()V
-
-    iput-object v0, p0, Lcom/google/android/gms/tasks/zza;->zza:Lcom/google/android/gms/tasks/zzu;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final cancel()V
-    .locals 2
+.method public final bridge synthetic onSuccess(Ljava/lang/Object;)V
+    .locals 0
 
-    .line 6
-    iget-object v0, p0, Lcom/google/android/gms/tasks/zza;->zza:Lcom/google/android/gms/tasks/zzu;
+    .line 1
+    check-cast p1, Ljava/lang/Void;
 
-    const/4 v1, 0x0
+    iget-object p1, p0, Lcom/google/android/gms/tasks/zza;->zza:Lcom/google/android/gms/tasks/OnTokenCanceledListener;
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/tasks/zzu;->trySetResult(Ljava/lang/Object;)Z
+    .line 2
+    invoke-interface {p1}, Lcom/google/android/gms/tasks/OnTokenCanceledListener;->onCanceled()V
 
     return-void
-.end method
-
-.method public final isCancellationRequested()Z
-    .locals 1
-
-    .line 3
-    iget-object v0, p0, Lcom/google/android/gms/tasks/zza;->zza:Lcom/google/android/gms/tasks/zzu;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/tasks/Task;->isComplete()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final onCanceledRequested(Lcom/google/android/gms/tasks/OnTokenCanceledListener;)Lcom/google/android/gms/tasks/CancellationToken;
-    .locals 2
-
-    .line 4
-    iget-object v0, p0, Lcom/google/android/gms/tasks/zza;->zza:Lcom/google/android/gms/tasks/zzu;
-
-    new-instance v1, Lcom/google/android/gms/tasks/zzb;
-
-    invoke-direct {v1, p0, p1}, Lcom/google/android/gms/tasks/zzb;-><init>(Lcom/google/android/gms/tasks/zza;Lcom/google/android/gms/tasks/OnTokenCanceledListener;)V
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
-
-    return-object p0
 .end method

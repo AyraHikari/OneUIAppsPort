@@ -107,6 +107,14 @@
 
 .method public createSessionKey(Ljava/lang/String;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     .line 108
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mPhoneKeyBytes:[B
@@ -175,9 +183,9 @@
     :goto_1
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mTabKeyBytes:[B
 
-    array-length v2, v2
+    array-length v5, v2
 
-    if-ge v1, v2, :cond_2
+    if-ge v1, v5, :cond_2
 
     const-string v2, "mTabKeyBytes %d : %d"
 
@@ -213,8 +221,6 @@
     .line 128
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mPhoneKeyBytes:[B
-
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mTabKeyBytes:[B
 
     invoke-static {v1, v2}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->genHMACSHA256([B[B)[B
 
@@ -254,7 +260,7 @@
 
     if-ge p1, v1, :cond_4
 
-    const-string v1, "sessionKey %d : %d"
+    const-string/jumbo v1, "sessionKey %d : %d"
 
     new-array v2, v3, [Ljava/lang/Object;
 
@@ -299,13 +305,17 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -341,6 +351,16 @@
 
 .method public decryptData(Ljava/lang/String;[B)[B
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "address",
+            "bytes"
+        }
+    .end annotation
 
     .line 270
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
@@ -461,6 +481,14 @@
 
 .method public decryptData([B)[B
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     .line 306
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mSessionKey:[B
@@ -589,6 +617,16 @@
 
 .method public encryptData(Ljava/lang/String;[B)[B
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "deviceID",
+            "bytes"
+        }
+    .end annotation
 
     .line 166
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
@@ -709,6 +747,14 @@
 
 .method public encryptData([B)[B
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     .line 203
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mSessionKey:[B
@@ -945,7 +991,7 @@
 
     if-nez v0, :cond_0
 
-    const-string v0, "sessionKey is null"
+    const-string/jumbo v0, "sessionKey is null"
 
     .line 342
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -1132,6 +1178,14 @@
 
 .method public getEncryptedPhoneKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "authKeyName"
+        }
+    .end annotation
 
     .line 94
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mPhoneKeyBytes:[B
@@ -1167,6 +1221,14 @@
 
 .method public getEncryptedTabKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "authKeyName"
+        }
+    .end annotation
 
     .line 101
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mTabKeyBytes:[B
@@ -1230,6 +1292,16 @@
 
 .method public setPhoneKey(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authKeyName",
+            "encryptedPhoneKey"
+        }
+    .end annotation
 
     .line 74
     invoke-static {p2}, Lcom/samsung/android/authfw/pass/sdk/util/StringUtils;->isEmpty(Ljava/lang/String;)Z
@@ -1270,6 +1342,14 @@
 
 .method public setSessionKey([B)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionKey"
+        }
+    .end annotation
 
     .line 64
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mSessionKey:[B
@@ -1311,7 +1391,7 @@
 
     aput-object v2, v1, v3
 
-    const-string v2, "sessionKey %d : %d"
+    const-string/jumbo v2, "sessionKey %d : %d"
 
     invoke-static {v2, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1329,6 +1409,16 @@
 
 .method public setTabKey(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authKeyName",
+            "encryptedTabKey"
+        }
+    .end annotation
 
     .line 84
     invoke-static {p2}, Lcom/samsung/android/authfw/pass/sdk/util/StringUtils;->isEmpty(Ljava/lang/String;)Z
@@ -1369,6 +1459,16 @@
 
 .method public updateData(Ljavax/crypto/Cipher;[B)[B
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cipher",
+            "bytes"
+        }
+    .end annotation
 
     .line 154
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->mSessionKey:[B

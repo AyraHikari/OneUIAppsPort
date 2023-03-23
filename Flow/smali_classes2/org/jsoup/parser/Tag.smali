@@ -2,6 +2,9 @@
 .super Ljava/lang/Object;
 .source "Tag.java"
 
+# interfaces
+.implements Ljava/lang/Cloneable;
+
 
 # static fields
 .field private static final blockTags:[Ljava/lang/String;
@@ -31,10 +34,6 @@
 
 
 # instance fields
-.field private canContainBlock:Z
-
-.field private canContainInline:Z
-
 .field private empty:Z
 
 .field private formList:Z
@@ -45,6 +44,8 @@
 
 .field private isBlock:Z
 
+.field private normalName:Ljava/lang/String;
+
 .field private preserveWhitespace:Z
 
 .field private selfClosing:Z
@@ -54,9 +55,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 66
+    .locals 67
 
-    .line 14
+    .line 15
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -71,23 +72,23 @@
 
     const-string v4, "frameset"
 
-    const-string v5, "script"
+    const-string/jumbo v5, "script"
 
     const-string v6, "noscript"
 
-    const-string v7, "style"
+    const-string/jumbo v7, "style"
 
     const-string v8, "meta"
 
     const-string v9, "link"
 
-    const-string v10, "title"
+    const-string/jumbo v10, "title"
 
     const-string v11, "frame"
 
     const-string v12, "noframes"
 
-    const-string v13, "section"
+    const-string/jumbo v13, "section"
 
     const-string v14, "nav"
 
@@ -113,7 +114,7 @@
 
     const-string v25, "h6"
 
-    const-string v26, "ul"
+    const-string/jumbo v26, "ul"
 
     const-string v27, "ol"
 
@@ -139,59 +140,59 @@
 
     const-string v38, "del"
 
-    const-string v39, "s"
+    const-string v39, "dl"
 
-    const-string v40, "dl"
+    const-string v40, "dt"
 
-    const-string v41, "dt"
+    const-string v41, "dd"
 
-    const-string v42, "dd"
+    const-string v42, "li"
 
-    const-string v43, "li"
+    const-string/jumbo v43, "table"
 
-    const-string v44, "table"
+    const-string v44, "caption"
 
-    const-string v45, "caption"
+    const-string/jumbo v45, "thead"
 
-    const-string v46, "thead"
+    const-string/jumbo v46, "tfoot"
 
-    const-string v47, "tfoot"
+    const-string/jumbo v47, "tbody"
 
-    const-string v48, "tbody"
+    const-string v48, "colgroup"
 
-    const-string v49, "colgroup"
+    const-string v49, "col"
 
-    const-string v50, "col"
+    const-string/jumbo v50, "tr"
 
-    const-string v51, "tr"
+    const-string/jumbo v51, "th"
 
-    const-string v52, "th"
+    const-string/jumbo v52, "td"
 
-    const-string v53, "td"
+    const-string/jumbo v53, "video"
 
-    const-string v54, "video"
+    const-string v54, "audio"
 
-    const-string v55, "audio"
+    const-string v55, "canvas"
 
-    const-string v56, "canvas"
+    const-string v56, "details"
 
-    const-string v57, "details"
+    const-string v57, "menu"
 
-    const-string v58, "menu"
+    const-string v58, "plaintext"
 
-    const-string v59, "plaintext"
+    const-string/jumbo v59, "template"
 
-    const-string v60, "template"
+    const-string v60, "article"
 
-    const-string v61, "article"
+    const-string v61, "main"
 
-    const-string v62, "main"
+    const-string/jumbo v62, "svg"
 
-    const-string v63, "svg"
+    const-string v63, "math"
 
-    const-string v64, "math"
+    const-string v64, "center"
 
-    .line 221
+    .line 234
     filled-new-array/range {v1 .. v64}, [Ljava/lang/String;
 
     move-result-object v0
@@ -204,47 +205,47 @@
 
     const-string v3, "font"
 
-    const-string v4, "tt"
+    const-string/jumbo v4, "tt"
 
     const-string v5, "i"
 
     const-string v6, "b"
 
-    const-string v7, "u"
+    const-string/jumbo v7, "u"
 
     const-string v8, "big"
 
-    const-string v9, "small"
+    const-string/jumbo v9, "small"
 
     const-string v10, "em"
 
-    const-string v11, "strong"
+    const-string/jumbo v11, "strong"
 
     const-string v12, "dfn"
 
     const-string v13, "code"
 
-    const-string v14, "samp"
+    const-string/jumbo v14, "samp"
 
     const-string v15, "kbd"
 
-    const-string v16, "var"
+    const-string/jumbo v16, "var"
 
     const-string v17, "cite"
 
     const-string v18, "abbr"
 
-    const-string v19, "time"
+    const-string/jumbo v19, "time"
 
     const-string v20, "acronym"
 
     const-string v21, "mark"
 
-    const-string v22, "ruby"
+    const-string/jumbo v22, "ruby"
 
-    const-string v23, "rt"
+    const-string/jumbo v23, "rt"
 
-    const-string v24, "rp"
+    const-string/jumbo v24, "rp"
 
     const-string v25, "a"
 
@@ -252,15 +253,15 @@
 
     const-string v27, "br"
 
-    const-string v28, "wbr"
+    const-string/jumbo v28, "wbr"
 
     const-string v29, "map"
 
     const-string v30, "q"
 
-    const-string v31, "sub"
+    const-string/jumbo v31, "sub"
 
-    const-string v32, "sup"
+    const-string/jumbo v32, "sup"
 
     const-string v33, "bdo"
 
@@ -268,13 +269,13 @@
 
     const-string v35, "embed"
 
-    const-string v36, "span"
+    const-string/jumbo v36, "span"
 
     const-string v37, "input"
 
-    const-string v38, "select"
+    const-string/jumbo v38, "select"
 
-    const-string v39, "textarea"
+    const-string/jumbo v39, "textarea"
 
     const-string v40, "label"
 
@@ -300,11 +301,11 @@
 
     const-string v51, "param"
 
-    const-string v52, "source"
+    const-string/jumbo v52, "source"
 
-    const-string v53, "track"
+    const-string/jumbo v53, "track"
 
-    const-string v54, "summary"
+    const-string/jumbo v54, "summary"
 
     const-string v55, "command"
 
@@ -320,16 +321,18 @@
 
     const-string v61, "param"
 
-    const-string v62, "source"
+    const-string/jumbo v62, "source"
 
-    const-string v63, "track"
+    const-string/jumbo v63, "track"
 
     const-string v64, "data"
 
     const-string v65, "bdi"
 
-    .line 229
-    filled-new-array/range {v1 .. v65}, [Ljava/lang/String;
+    const-string/jumbo v66, "s"
+
+    .line 242
+    filled-new-array/range {v1 .. v66}, [Ljava/lang/String;
 
     move-result-object v1
 
@@ -347,7 +350,7 @@
 
     const-string v7, "br"
 
-    const-string v8, "wbr"
+    const-string/jumbo v8, "wbr"
 
     const-string v9, "embed"
 
@@ -373,18 +376,18 @@
 
     const-string v20, "param"
 
-    const-string v21, "source"
+    const-string/jumbo v21, "source"
 
-    const-string v22, "track"
+    const-string/jumbo v22, "track"
 
-    .line 237
+    .line 250
     filled-new-array/range {v2 .. v22}, [Ljava/lang/String;
 
     move-result-object v1
 
     sput-object v1, Lorg/jsoup/parser/Tag;->emptyTags:[Ljava/lang/String;
 
-    const-string v2, "title"
+    const-string/jumbo v2, "title"
 
     const-string v3, "a"
 
@@ -408,21 +411,21 @@
 
     const-string v13, "li"
 
-    const-string v14, "th"
+    const-string/jumbo v14, "th"
 
-    const-string v15, "td"
+    const-string/jumbo v15, "td"
 
-    const-string v16, "script"
+    const-string/jumbo v16, "script"
 
-    const-string v17, "style"
+    const-string/jumbo v17, "style"
 
     const-string v18, "ins"
 
     const-string v19, "del"
 
-    const-string v20, "s"
+    const-string/jumbo v20, "s"
 
-    .line 241
+    .line 255
     filled-new-array/range {v2 .. v20}, [Ljava/lang/String;
 
     move-result-object v1
@@ -433,11 +436,11 @@
 
     const-string v2, "plaintext"
 
-    const-string v3, "title"
+    const-string/jumbo v3, "title"
 
-    const-string v4, "textarea"
+    const-string/jumbo v4, "textarea"
 
-    .line 245
+    .line 259
     filled-new-array {v1, v2, v3, v4}, [Ljava/lang/String;
 
     move-result-object v1
@@ -456,11 +459,11 @@
 
     const-string v10, "output"
 
-    const-string v11, "select"
+    const-string/jumbo v11, "select"
 
-    const-string v12, "textarea"
+    const-string/jumbo v12, "textarea"
 
-    .line 250
+    .line 264
     filled-new-array/range {v5 .. v12}, [Ljava/lang/String;
 
     move-result-object v1
@@ -473,16 +476,16 @@
 
     const-string v3, "object"
 
-    const-string v5, "select"
+    const-string/jumbo v5, "select"
 
-    .line 253
+    .line 267
     filled-new-array {v1, v2, v3, v5, v4}, [Ljava/lang/String;
 
     move-result-object v1
 
     sput-object v1, Lorg/jsoup/parser/Tag;->formSubmitTags:[Ljava/lang/String;
 
-    .line 259
+    .line 273
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -494,19 +497,19 @@
 
     aget-object v4, v0, v3
 
-    .line 260
+    .line 274
     new-instance v5, Lorg/jsoup/parser/Tag;
 
     invoke-direct {v5, v4}, Lorg/jsoup/parser/Tag;-><init>(Ljava/lang/String;)V
 
-    .line 261
+    .line 275
     invoke-static {v5}, Lorg/jsoup/parser/Tag;->register(Lorg/jsoup/parser/Tag;)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 263
+    .line 277
     :cond_0
     sget-object v0, Lorg/jsoup/parser/Tag;->inlineTags:[Ljava/lang/String;
 
@@ -519,28 +522,25 @@
 
     aget-object v4, v0, v3
 
-    .line 264
+    .line 278
     new-instance v5, Lorg/jsoup/parser/Tag;
 
     invoke-direct {v5, v4}, Lorg/jsoup/parser/Tag;-><init>(Ljava/lang/String;)V
 
-    .line 265
+    .line 279
     iput-boolean v2, v5, Lorg/jsoup/parser/Tag;->isBlock:Z
 
-    .line 266
-    iput-boolean v2, v5, Lorg/jsoup/parser/Tag;->canContainBlock:Z
-
-    .line 267
+    .line 280
     iput-boolean v2, v5, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
 
-    .line 268
+    .line 281
     invoke-static {v5}, Lorg/jsoup/parser/Tag;->register(Lorg/jsoup/parser/Tag;)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 272
+    .line 285
     :cond_1
     sget-object v0, Lorg/jsoup/parser/Tag;->emptyTags:[Ljava/lang/String;
 
@@ -555,7 +555,7 @@
 
     aget-object v5, v0, v3
 
-    .line 273
+    .line 286
     sget-object v6, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     invoke-interface {v6, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -564,23 +564,17 @@
 
     check-cast v5, Lorg/jsoup/parser/Tag;
 
-    .line 274
+    .line 287
     invoke-static {v5}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 275
-    iput-boolean v2, v5, Lorg/jsoup/parser/Tag;->canContainBlock:Z
-
-    .line 276
-    iput-boolean v2, v5, Lorg/jsoup/parser/Tag;->canContainInline:Z
-
-    .line 277
+    .line 288
     iput-boolean v4, v5, Lorg/jsoup/parser/Tag;->empty:Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 280
+    .line 291
     :cond_2
     sget-object v0, Lorg/jsoup/parser/Tag;->formatAsInlineTags:[Ljava/lang/String;
 
@@ -593,7 +587,7 @@
 
     aget-object v5, v0, v3
 
-    .line 281
+    .line 292
     sget-object v6, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     invoke-interface {v6, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -602,17 +596,17 @@
 
     check-cast v5, Lorg/jsoup/parser/Tag;
 
-    .line 282
+    .line 293
     invoke-static {v5}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 283
+    .line 294
     iput-boolean v2, v5, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_3
 
-    .line 286
+    .line 297
     :cond_3
     sget-object v0, Lorg/jsoup/parser/Tag;->preserveWhitespaceTags:[Ljava/lang/String;
 
@@ -625,7 +619,7 @@
 
     aget-object v5, v0, v3
 
-    .line 287
+    .line 298
     sget-object v6, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     invoke-interface {v6, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -634,17 +628,17 @@
 
     check-cast v5, Lorg/jsoup/parser/Tag;
 
-    .line 288
+    .line 299
     invoke-static {v5}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 289
+    .line 300
     iput-boolean v4, v5, Lorg/jsoup/parser/Tag;->preserveWhitespace:Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_4
 
-    .line 292
+    .line 303
     :cond_4
     sget-object v0, Lorg/jsoup/parser/Tag;->formListedTags:[Ljava/lang/String;
 
@@ -657,7 +651,7 @@
 
     aget-object v5, v0, v3
 
-    .line 293
+    .line 304
     sget-object v6, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     invoke-interface {v6, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -666,17 +660,17 @@
 
     check-cast v5, Lorg/jsoup/parser/Tag;
 
-    .line 294
+    .line 305
     invoke-static {v5}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 295
+    .line 306
     iput-boolean v4, v5, Lorg/jsoup/parser/Tag;->formList:Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_5
 
-    .line 298
+    .line 309
     :cond_5
     sget-object v0, Lorg/jsoup/parser/Tag;->formSubmitTags:[Ljava/lang/String;
 
@@ -687,7 +681,7 @@
 
     aget-object v3, v0, v2
 
-    .line 299
+    .line 310
     sget-object v5, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     invoke-interface {v5, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -696,10 +690,10 @@
 
     check-cast v3, Lorg/jsoup/parser/Tag;
 
-    .line 300
+    .line 311
     invoke-static {v3}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 301
+    .line 312
     iput-boolean v4, v3, Lorg/jsoup/parser/Tag;->formSubmit:Z
 
     add-int/lit8 v2, v2, 0x1
@@ -718,17 +712,11 @@
 
     const/4 v0, 0x1
 
-    .line 17
+    .line 19
     iput-boolean v0, p0, Lorg/jsoup/parser/Tag;->isBlock:Z
 
-    .line 18
-    iput-boolean v0, p0, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
-
-    .line 19
-    iput-boolean v0, p0, Lorg/jsoup/parser/Tag;->canContainBlock:Z
-
     .line 20
-    iput-boolean v0, p0, Lorg/jsoup/parser/Tag;->canContainInline:Z
+    iput-boolean v0, p0, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
 
     const/4 v0, 0x0
 
@@ -748,11 +736,14 @@
     iput-boolean v0, p0, Lorg/jsoup/parser/Tag;->formSubmit:Z
 
     .line 28
-    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    iput-object p1, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
+
+    .line 29
+    invoke-static {p1}, Lorg/jsoup/internal/Normalizer;->lowerCase(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
+    iput-object p1, p0, Lorg/jsoup/parser/Tag;->normalName:Ljava/lang/String;
 
     return-void
 .end method
@@ -760,7 +751,7 @@
 .method public static isKnownTag(Ljava/lang/String;)Z
     .locals 1
 
-    .line 147
+    .line 155
     sget-object v0, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -773,7 +764,7 @@
 .method private static register(Lorg/jsoup/parser/Tag;)V
     .locals 2
 
-    .line 306
+    .line 317
     sget-object v0, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     iget-object v1, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
@@ -786,71 +777,141 @@
 .method public static valueOf(Ljava/lang/String;)Lorg/jsoup/parser/Tag;
     .locals 1
 
-    .line 50
-    invoke-static {p0}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
+    .line 91
+    sget-object v0, Lorg/jsoup/parser/ParseSettings;->preserveCase:Lorg/jsoup/parser/ParseSettings;
 
-    .line 51
-    sget-object v0, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
-
-    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lorg/jsoup/parser/Tag;
-
-    if-nez v0, :cond_0
-
-    .line 54
-    invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-static {p0, v0}, Lorg/jsoup/parser/Tag;->valueOf(Ljava/lang/String;Lorg/jsoup/parser/ParseSettings;)Lorg/jsoup/parser/Tag;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    return-object p0
+.end method
 
-    move-result-object p0
-
-    .line 55
-    invoke-static {p0}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
-
-    .line 56
-    sget-object v0, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
-
-    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lorg/jsoup/parser/Tag;
-
-    if-nez v0, :cond_0
+.method public static valueOf(Ljava/lang/String;Lorg/jsoup/parser/ParseSettings;)Lorg/jsoup/parser/Tag;
+    .locals 2
 
     .line 60
-    new-instance v0, Lorg/jsoup/parser/Tag;
+    invoke-static {p0}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    invoke-direct {v0, p0}, Lorg/jsoup/parser/Tag;-><init>(Ljava/lang/String;)V
+    .line 61
+    sget-object v0, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
+
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/jsoup/parser/Tag;
+
+    if-nez v1, :cond_2
+
+    .line 64
+    invoke-virtual {p1, p0}, Lorg/jsoup/parser/ParseSettings;->normalizeTag(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 65
+    invoke-static {p0}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
+
+    .line 66
+    invoke-static {p0}, Lorg/jsoup/internal/Normalizer;->lowerCase(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 67
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/jsoup/parser/Tag;
+
+    if-nez v0, :cond_0
+
+    .line 71
+    new-instance v1, Lorg/jsoup/parser/Tag;
+
+    invoke-direct {v1, p0}, Lorg/jsoup/parser/Tag;-><init>(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
-    .line 61
-    iput-boolean p0, v0, Lorg/jsoup/parser/Tag;->isBlock:Z
+    .line 72
+    iput-boolean p0, v1, Lorg/jsoup/parser/Tag;->isBlock:Z
 
-    const/4 p0, 0x1
+    goto :goto_0
 
-    .line 62
-    iput-boolean p0, v0, Lorg/jsoup/parser/Tag;->canContainBlock:Z
-
+    .line 73
     :cond_0
-    return-object v0
+    invoke-virtual {p1}, Lorg/jsoup/parser/ParseSettings;->preserveTagCase()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    .line 74
+    invoke-virtual {v0}, Lorg/jsoup/parser/Tag;->clone()Lorg/jsoup/parser/Tag;
+
+    move-result-object v1
+
+    .line 75
+    iput-object p0, v1, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
+
+    goto :goto_0
+
+    :cond_1
+    move-object v1, v0
+
+    :cond_2
+    :goto_0
+    return-object v1
 .end method
 
 
 # virtual methods
-.method public canContainBlock()Z
+.method protected bridge synthetic clone()Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/CloneNotSupportedException;
+        }
+    .end annotation
 
-    .line 92
-    iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->canContainBlock:Z
+    .line 14
+    invoke-virtual {p0}, Lorg/jsoup/parser/Tag;->clone()Lorg/jsoup/parser/Tag;
 
-    return v0
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected clone()Lorg/jsoup/parser/Tag;
+    .locals 2
+
+    .line 226
+    :try_start_0
+    invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/jsoup/parser/Tag;
+    :try_end_0
+    .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 228
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -862,7 +923,7 @@
 
     return v0
 
-    .line 183
+    .line 191
     :cond_0
     instance-of v1, p1, Lorg/jsoup/parser/Tag;
 
@@ -872,11 +933,11 @@
 
     return v2
 
-    .line 185
+    .line 193
     :cond_1
     check-cast p1, Lorg/jsoup/parser/Tag;
 
-    .line 187
+    .line 195
     iget-object v1, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
 
     iget-object v3, p1, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
@@ -889,97 +950,77 @@
 
     return v2
 
-    .line 188
+    .line 196
     :cond_2
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->canContainBlock:Z
+    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->empty:Z
 
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->canContainBlock:Z
+    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->empty:Z
 
     if-eq v1, v3, :cond_3
 
     return v2
 
-    .line 189
+    .line 197
     :cond_3
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->canContainInline:Z
+    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
 
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->canContainInline:Z
+    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
 
     if-eq v1, v3, :cond_4
 
     return v2
 
-    .line 190
+    .line 198
     :cond_4
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->empty:Z
+    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->isBlock:Z
 
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->empty:Z
+    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->isBlock:Z
 
     if-eq v1, v3, :cond_5
 
     return v2
 
-    .line 191
+    .line 199
     :cond_5
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
+    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->preserveWhitespace:Z
 
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
+    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->preserveWhitespace:Z
 
     if-eq v1, v3, :cond_6
 
     return v2
 
-    .line 192
+    .line 200
     :cond_6
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->isBlock:Z
+    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->selfClosing:Z
 
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->isBlock:Z
+    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->selfClosing:Z
 
     if-eq v1, v3, :cond_7
 
     return v2
 
-    .line 193
+    .line 201
     :cond_7
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->preserveWhitespace:Z
+    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formList:Z
 
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->preserveWhitespace:Z
+    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->formList:Z
 
     if-eq v1, v3, :cond_8
 
     return v2
 
-    .line 194
+    .line 202
     :cond_8
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->selfClosing:Z
-
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->selfClosing:Z
-
-    if-eq v1, v3, :cond_9
-
-    return v2
-
-    .line 195
-    :cond_9
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formList:Z
-
-    iget-boolean v3, p1, Lorg/jsoup/parser/Tag;->formList:Z
-
-    if-eq v1, v3, :cond_a
-
-    return v2
-
-    .line 196
-    :cond_a
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formSubmit:Z
 
     iget-boolean p1, p1, Lorg/jsoup/parser/Tag;->formSubmit:Z
 
-    if-ne v1, p1, :cond_b
+    if-ne v1, p1, :cond_9
 
     goto :goto_0
 
-    :cond_b
+    :cond_9
     move v0, v2
 
     :goto_0
@@ -989,7 +1030,7 @@
 .method public formatAsBlock()Z
     .locals 1
 
-    .line 83
+    .line 109
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
 
     return v0
@@ -998,7 +1039,7 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 37
+    .line 38
     iget-object v0, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
 
     return-object v0
@@ -1007,7 +1048,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 201
+    .line 207
     iget-object v0, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -1016,63 +1057,49 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 202
+    .line 208
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->isBlock:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 203
+    .line 209
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formatAsBlock:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 204
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->canContainBlock:Z
-
-    add-int/2addr v0, v1
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 205
-    iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->canContainInline:Z
-
-    add-int/2addr v0, v1
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 206
+    .line 210
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->empty:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 207
+    .line 211
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->selfClosing:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 208
+    .line 212
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->preserveWhitespace:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 209
+    .line 213
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formList:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 210
+    .line 214
     iget-boolean v1, p0, Lorg/jsoup/parser/Tag;->formSubmit:Z
 
     add-int/2addr v0, v1
@@ -1083,41 +1110,16 @@
 .method public isBlock()Z
     .locals 1
 
-    .line 74
+    .line 100
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->isBlock:Z
 
-    return v0
-.end method
-
-.method public isData()Z
-    .locals 1
-
-    .line 110
-    iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->canContainInline:Z
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0}, Lorg/jsoup/parser/Tag;->isEmpty()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     return v0
 .end method
 
 .method public isEmpty()Z
     .locals 1
 
-    .line 119
+    .line 127
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->empty:Z
 
     return v0
@@ -1126,7 +1128,7 @@
 .method public isFormListed()Z
     .locals 1
 
-    .line 164
+    .line 172
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->formList:Z
 
     return v0
@@ -1135,7 +1137,7 @@
 .method public isFormSubmittable()Z
     .locals 1
 
-    .line 172
+    .line 180
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->formSubmit:Z
 
     return v0
@@ -1144,7 +1146,7 @@
 .method public isInline()Z
     .locals 1
 
-    .line 101
+    .line 118
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->isBlock:Z
 
     xor-int/lit8 v0, v0, 0x1
@@ -1155,7 +1157,7 @@
 .method public isKnownTag()Z
     .locals 2
 
-    .line 137
+    .line 145
     sget-object v0, Lorg/jsoup/parser/Tag;->tags:Ljava/util/Map;
 
     iget-object v1, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
@@ -1170,7 +1172,7 @@
 .method public isSelfClosing()Z
     .locals 1
 
-    .line 128
+    .line 136
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->empty:Z
 
     if-nez v0, :cond_1
@@ -1194,10 +1196,19 @@
     return v0
 .end method
 
+.method public normalName()Ljava/lang/String;
+    .locals 1
+
+    .line 46
+    iget-object v0, p0, Lorg/jsoup/parser/Tag;->normalName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public preserveWhitespace()Z
     .locals 1
 
-    .line 156
+    .line 164
     iget-boolean v0, p0, Lorg/jsoup/parser/Tag;->preserveWhitespace:Z
 
     return v0
@@ -1208,7 +1219,7 @@
 
     const/4 v0, 0x1
 
-    .line 176
+    .line 184
     iput-boolean v0, p0, Lorg/jsoup/parser/Tag;->selfClosing:Z
 
     return-object p0
@@ -1217,7 +1228,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 216
+    .line 220
     iget-object v0, p0, Lorg/jsoup/parser/Tag;->tagName:Ljava/lang/String;
 
     return-object v0

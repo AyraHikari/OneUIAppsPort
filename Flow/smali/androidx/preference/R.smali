@@ -6,6 +6,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Landroidx/preference/R$anim;,
+        Landroidx/preference/R$animator;,
         Landroidx/preference/R$attr;,
         Landroidx/preference/R$bool;,
         Landroidx/preference/R$color;,

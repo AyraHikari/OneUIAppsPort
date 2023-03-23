@@ -8,20 +8,10 @@
         <item quantity="few">Prie failų perkėlimo sąrašo pridėta failų: %d.</item>
         <item quantity="many">Prie failų perkėlimo sąrašo pridėta failų: %d.</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Registruokite ir tvarkykite iki %d kompiuterių ar planšetinių kompiuterių „Samsung Flow“.
-
-Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Registruokite ir tvarkykite iki %d kompiuterio ar planšetinio kompiuterio „Samsung Flow“.
-
-Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">"Registruokite ir tvarkykite iki %d kompiuterių ar planšetinių kompiuterių „Samsung Flow“.
-
-Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
-        <item quantity="many">"Registruokite ir tvarkykite iki %d kompiuterio ar planšetinio kompiuterio „Samsung Flow“.
-
-Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d naujų pranešimų</item>
+        <item quantity="one">%d naujas pranešimas</item>
+        <item quantity="few">%d nauji pranešimai</item>
+        <item quantity="many">%d naujo pranešimo</item>
     </plurals>
 </resources>

@@ -91,23 +91,23 @@
 
     const-string v0, "_id"
 
-    const-string v1, "share_id"
+    const-string/jumbo v1, "share_id"
 
     const-string v2, "parent_id"
 
-    const-string v3, "version"
+    const-string/jumbo v3, "version"
 
-    const-string v4, "type"
+    const-string/jumbo v4, "type"
 
-    const-string v5, "title"
+    const-string/jumbo v5, "title"
 
     const-string v6, "content"
 
-    const-string v7, "uri"
+    const-string/jumbo v7, "uri"
 
-    const-string v8, "time"
+    const-string/jumbo v8, "time"
 
-    const-string v9, "thumb_path"
+    const-string/jumbo v9, "thumb_path"
 
     const-string v10, "is_received"
 
@@ -139,11 +139,11 @@
 
     const-string v24, "is_sharing"
 
-    const-string v25, "url_title"
+    const-string/jumbo v25, "url_title"
 
-    const-string v26, "url_desc"
+    const-string/jumbo v26, "url_desc"
 
-    const-string v27, "url_thumb_path"
+    const-string/jumbo v27, "url_thumb_path"
 
     .line 86
     filled-new-array/range {v0 .. v27}, [Ljava/lang/String;
@@ -166,6 +166,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/sqlite/SQLiteOpenHelper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "databaseHelper"
+        }
+    .end annotation
 
     .line 126
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/database/Database;-><init>(Landroid/content/Context;Landroid/database/sqlite/SQLiteOpenHelper;)V
@@ -184,13 +194,21 @@
 # virtual methods
 .method public deleteChildContents(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "parentItem"
+        }
+    .end annotation
 
-    .line 396
+    .line 391
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 397
+    .line 392
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -198,7 +216,7 @@
 
     move-result-object v1
 
-    const-string v2, "shareChilds"
+    const-string/jumbo v2, "shareChilds"
 
     const-string v3, "parent_id = ?"
 
@@ -208,7 +226,7 @@
 
     const/4 v5, 0x0
 
-    .line 398
+    .line 393
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->share_id:Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -219,10 +237,10 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 399
+    .line 394
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 400
+    .line 395
     monitor-exit v0
 
     return-void
@@ -239,13 +257,21 @@
 
 .method public getChildItem(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "shareId"
+        }
+    .end annotation
 
-    .line 192
+    .line 184
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 193
+    .line 185
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -254,6 +280,8 @@
     const-string v2, "SELECT "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     sget-object v2, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->SHARE_CHILD_CONTENTS_PROJECTION:[Ljava/lang/String;
 
@@ -265,37 +293,53 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, " FROM "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, "shareChilds"
+    move-result-object v1
+
+    const-string/jumbo v2, "shareChilds"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, " WHERE "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, "share_id"
+    move-result-object v1
+
+    const-string/jumbo v2, "share_id"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, " = \'"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, "\'"
+    move-result-object v1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 195
+    const-string v1, "\'"
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 187
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -304,7 +348,7 @@
 
     const/4 v2, 0x0
 
-    .line 196
+    .line 188
     invoke-virtual {v1, p1, v2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
@@ -313,7 +357,7 @@
 
     if-eqz p1, :cond_6
 
-    .line 198
+    .line 190
     :try_start_1
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -321,7 +365,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 199
+    .line 191
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->getShareChildsContentsDatabase()Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     move-result-object v3
@@ -330,7 +374,7 @@
 
     move-result-object v3
 
-    .line 200
+    .line 192
     invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->getCurrent()Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 
     move-result-object v3
@@ -342,11 +386,11 @@
 
     if-eqz p1, :cond_0
 
-    .line 217
+    .line 209
     :try_start_2
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    .line 218
+    .line 210
     :cond_0
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -356,7 +400,7 @@
 
     return-object v2
 
-    .line 204
+    .line 196
     :cond_1
     :try_start_3
     iget-object v2, v3, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isSharing:Landroidx/databinding/ObservableBoolean;
@@ -367,7 +411,7 @@
 
     const-string v2, "LOAD_FAIL"
 
-    .line 206
+    .line 198
     iget-object v4, v3, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v4}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -380,7 +424,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 207
+    .line 199
     iget-object v2, v3, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
 
     const-string v4, ""
@@ -390,7 +434,7 @@
     :cond_2
     const-string v2, "LOAD_FAIL"
 
-    .line 209
+    .line 201
     iget-object v4, v3, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v4}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -407,7 +451,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 210
+    .line 202
     iget-object v2, v3, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v2}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -447,7 +491,7 @@
 
     move-object v2, v5
 
-    .line 214
+    .line 206
     :goto_0
     :try_start_4
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
@@ -456,11 +500,11 @@
 
     if-eqz p1, :cond_4
 
-    .line 217
+    .line 209
     :try_start_5
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    .line 218
+    .line 210
     :cond_4
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -469,30 +513,30 @@
     :goto_1
     if-eqz p1, :cond_5
 
-    .line 217
+    .line 209
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    .line 218
+    .line 210
     :cond_5
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 219
+    .line 211
     throw v2
 
     :cond_6
     :goto_2
     if-eqz p1, :cond_7
 
-    .line 217
+    .line 209
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    .line 218
+    .line 210
     :cond_7
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     move-object v3, v2
 
-    .line 220
+    .line 212
     :goto_3
     monitor-exit v0
 
@@ -510,6 +554,15 @@
 
 .method public getChildList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parentID"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -521,12 +574,12 @@
         }
     .end annotation
 
-    .line 138
+    .line 130
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 140
+    .line 132
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -535,13 +588,13 @@
 
     return-object v0
 
-    .line 143
+    .line 135
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 144
+    .line 136
     :try_start_0
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -549,7 +602,7 @@
 
     move-result-object v2
 
-    .line 146
+    .line 138
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -557,6 +610,8 @@
     const-string v4, "SELECT "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     sget-object v4, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->SHARE_CHILD_CONTENTS_PROJECTION:[Ljava/lang/String;
 
@@ -568,39 +623,55 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, " FROM "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v4, "shareChilds"
+    move-result-object v3
+
+    const-string/jumbo v4, "shareChilds"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, " WHERE "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     const-string v4, "parent_id"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     const-string v4, " = \'"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, "\'"
+    move-result-object v3
 
     invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    const-string v3, "\'"
+
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     const/4 v3, 0x0
 
-    .line 149
+    .line 141
     invoke-virtual {v2, p1, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
@@ -609,7 +680,7 @@
 
     if-eqz p1, :cond_5
 
-    .line 151
+    .line 143
     :try_start_1
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -617,7 +688,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 152
+    .line 144
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/database/DatabaseManager;->getShareChildsContentsDatabase()Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     move-result-object v3
@@ -626,7 +697,7 @@
 
     move-result-object v3
 
-    .line 153
+    .line 145
     invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->getCurrent()Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 
     move-result-object v4
@@ -636,7 +707,7 @@
 
     const-string v5, "LOAD_FAIL"
 
-    .line 156
+    .line 148
     iget-object v6, v4, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v6}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -649,7 +720,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 157
+    .line 149
     iget-object v5, v4, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
 
     const-string v6, ""
@@ -659,7 +730,7 @@
     :cond_1
     const-string v5, "LOAD_FAIL"
 
-    .line 159
+    .line 151
     iget-object v6, v4, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v6}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -676,7 +747,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 160
+    .line 152
     iget-object v5, v4, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -689,11 +760,11 @@
 
     iput-object v6, v5, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->urlThumbPath:Ljava/lang/String;
 
-    .line 162
+    .line 154
     :cond_2
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 163
+    .line 155
     invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->getNext()Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 
     move-result-object v4
@@ -711,7 +782,7 @@
     :catch_0
     move-exception v3
 
-    .line 167
+    .line 159
     :try_start_2
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_2
@@ -719,11 +790,11 @@
 
     if-eqz p1, :cond_3
 
-    .line 170
+    .line 162
     :try_start_3
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    .line 171
+    .line 163
     :cond_3
     :goto_1
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
@@ -733,25 +804,25 @@
     :goto_2
     if-eqz p1, :cond_4
 
-    .line 170
+    .line 162
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    .line 171
+    .line 163
     :cond_4
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 172
+    .line 164
     throw v0
 
     :cond_5
     if-eqz p1, :cond_3
 
-    .line 170
+    .line 162
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
 
-    .line 173
+    .line 165
     :goto_3
     monitor-exit v1
 
@@ -770,12 +841,12 @@
 .method public getItemCount()I
     .locals 11
 
-    .line 355
+    .line 350
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 356
+    .line 351
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -788,11 +859,11 @@
     const/4 v10, 0x0
 
     :try_start_1
-    const-string v3, "shareChilds"
+    const-string/jumbo v3, "shareChilds"
 
     const-string v2, "COUNT(*)"
 
-    .line 359
+    .line 354
     filled-new-array {v2}, [Ljava/lang/String;
 
     move-result-object v4
@@ -817,14 +888,14 @@
 
     if-eqz v10, :cond_0
 
-    .line 362
+    .line 357
     invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 363
+    .line 358
     invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
@@ -834,15 +905,15 @@
     :cond_0
     if-eqz v10, :cond_1
 
-    .line 366
+    .line 361
     :try_start_2
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 367
+    .line 362
     :cond_1
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 369
+    .line 364
     monitor-exit v0
 
     return v2
@@ -852,20 +923,20 @@
 
     if-eqz v10, :cond_2
 
-    .line 366
+    .line 361
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 367
+    .line 362
     :cond_2
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 368
+    .line 363
     throw v2
 
     :catchall_1
     move-exception v1
 
-    .line 369
+    .line 364
     monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
@@ -873,137 +944,307 @@
     throw v1
 .end method
 
-.method public init()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public insertChildContents(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
-    .locals 6
-
-    const-string v0, "device_type"
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
     return-void
 
-    .line 238
+    .line 230
     :cond_0
-    new-instance v1, Landroid/content/ContentValues;
+    new-instance v0, Landroid/content/ContentValues;
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->SHARE_CHILD_CONTENTS_PROJECTION:[Ljava/lang/String;
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->SHARE_CHILD_CONTENTS_PROJECTION:[Ljava/lang/String;
 
-    array-length v2, v2
+    array-length v1, v1
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    sub-int/2addr v2, v3
+    sub-int/2addr v1, v2
 
-    invoke-direct {v1, v2}, Landroid/content/ContentValues;-><init>(I)V
+    invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(I)V
 
-    .line 239
-    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->share_id:Ljava/lang/String;
+    const-string/jumbo v1, "share_id"
 
-    const-string v4, "share_id"
+    .line 231
+    iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->share_id:Ljava/lang/String;
 
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 240
-    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->parent_id:Ljava/lang/String;
+    const-string v1, "parent_id"
 
-    const-string v4, "parent_id"
+    .line 232
+    iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->parent_id:Ljava/lang/String;
 
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 241
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string/jumbo v1, "version"
 
-    move-result-object v2
+    .line 233
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const-string v4, "version"
+    move-result-object v3
 
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 242
+    const-string/jumbo v1, "type"
+
+    .line 234
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getType()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string v4, "type"
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    const-string/jumbo v1, "title"
 
-    .line 243
+    .line 235
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getTitle()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v3
 
-    const-string v4, ""
+    if-eqz v3, :cond_1
 
-    if-eqz v2, :cond_1
-
-    move-object v2, v4
+    const-string v3, ""
 
     goto :goto_0
 
     :cond_1
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getTitle()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
     :goto_0
-    const-string v5, "title"
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v5, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, "content"
 
-    .line 244
+    .line 236
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getContent()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string v5, "content"
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v5, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    const-string/jumbo v1, "uri"
 
-    .line 245
+    .line 237
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getUriPath()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_2
+    if-eqz v3, :cond_2
+
+    const-string v3, ""
 
     goto :goto_1
 
     :cond_2
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getUriPath()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
     :goto_1
-    const-string v2, "uri"
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    const-string/jumbo v1, "time"
 
-    .line 246
+    .line 238
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getTime()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "thumb_path"
+
+    .line 239
+    iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
+
+    invoke-virtual {v3}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v1, "is_received"
+
+    .line 240
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsLeft()Z
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "device_name"
+
+    .line 241
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getDeviceName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    :try_start_0
+    const-string v1, "device_type"
+
+    .line 243
+    iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->devicetype:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+
+    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->getValue()I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    :try_end_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_2
+
+    :catch_0
+    move-exception v1
+
+    const-string v3, "device_type"
+
+    .line 245
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    const-string v4, "time"
+    invoke-virtual {v0, v3, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    .line 246
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 247
-    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
+    :goto_2
+    const-string v1, "is_failed"
+
+    .line 248
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isFailed:Landroidx/databinding/ObservableBoolean;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableBoolean;->get()Z
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "is_defer"
+
+    .line 249
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsDeferd()Z
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "is_checked"
+
+    .line 250
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isChecked:Landroidx/databinding/ObservableBoolean;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableBoolean;->get()Z
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "is_deleted"
+
+    .line 251
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isDeleted:Landroidx/databinding/ObservableBoolean;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableBoolean;->get()Z
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "is_video"
+
+    .line 252
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsVideo()Z
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "has_thumb"
+
+    .line 253
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->hasThumb:Landroidx/databinding/ObservableBoolean;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableBoolean;->get()Z
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "is_sync_contents"
+
+    const/4 v2, 0x0
+
+    .line 254
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "display_date"
+
+    .line 255
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->displayDate:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v2}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
 
@@ -1011,305 +1252,181 @@
 
     check-cast v2, Ljava/lang/String;
 
-    const-string v4, "thumb_path"
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 248
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsLeft()Z
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    const-string v4, "is_received"
-
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 249
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getDeviceName()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v4, "device_name"
-
-    invoke-virtual {v1, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 251
-    :try_start_0
-    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->devicetype:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
-
-    invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->getValue()I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v0, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-    :try_end_0
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_2
-
-    :catch_0
-    move-exception v2
-
-    .line 253
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 254
-    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    const-string v1, "progress"
 
     .line 256
-    :goto_2
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isFailed:Landroidx/databinding/ObservableBoolean;
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->progress:Landroidx/databinding/ObservableInt;
 
-    invoke-virtual {v0}, Landroidx/databinding/ObservableBoolean;->get()Z
+    invoke-virtual {v2}, Landroidx/databinding/ObservableInt;->get()I
 
-    move-result v0
+    move-result v2
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v2
 
-    const-string v2, "is_failed"
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    const-string v1, "position"
 
     .line 257
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsDeferd()Z
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->position:Landroidx/databinding/ObservableInt;
 
-    move-result v0
+    invoke-virtual {v2}, Landroidx/databinding/ObservableInt;->get()I
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result v2
 
-    move-result-object v0
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const-string v2, "is_defer"
+    move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v1, "file_length"
 
     .line 258
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isChecked:Landroidx/databinding/ObservableBoolean;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableBoolean;->get()Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "is_checked"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 259
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isDeleted:Landroidx/databinding/ObservableBoolean;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableBoolean;->get()Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "is_deleted"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 260
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsVideo()Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "is_video"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 261
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->hasThumb:Landroidx/databinding/ObservableBoolean;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableBoolean;->get()Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "has_thumb"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    const/4 v0, 0x0
-
-    .line 262
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "is_sync_contents"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 263
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->displayDate:Landroidx/databinding/ObservableField;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    const-string v2, "display_date"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 264
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->progress:Landroidx/databinding/ObservableInt;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableInt;->get()I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "progress"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 265
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->position:Landroidx/databinding/ObservableInt;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableInt;->get()I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "position"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 266
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getFileLength()J
 
     move-result-wide v2
 
     invoke-static {v2, v3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    const-string v2, "file_length"
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, "is_sharing"
+
+    .line 259
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isSharing:Landroidx/databinding/ObservableBoolean;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableBoolean;->get()Z
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string/jumbo v1, "url_title"
+
+    .line 260
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->title:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "url_desc"
+
+    .line 261
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->desc:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "url_thumb_path"
+
+    .line 262
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
+
+    invoke-virtual {v2}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->urlThumbPath:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 264
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->DB_LOCK:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 266
+    :try_start_1
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
+
+    invoke-virtual {v2}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "shareChilds"
+
+    const/4 v4, 0x0
 
     .line 267
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isSharing:Landroidx/databinding/ObservableBoolean;
+    invoke-virtual {v2, v3, v4, v0}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
-    invoke-virtual {v0}, Landroidx/databinding/ObservableBoolean;->get()Z
+    move-result-wide v3
 
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v2, "is_sharing"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    iput-wide v3, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->id:J
 
     .line 268
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
+    invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    invoke-virtual {v0}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
+    goto :goto_3
 
-    move-result-object v0
+    :catchall_0
+    move-exception p1
 
-    check-cast v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
+    goto :goto_4
 
-    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->title:Ljava/lang/String;
-
-    const-string v2, "url_title"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 269
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
-
-    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->desc:Ljava/lang/String;
-
-    const-string v2, "url_desc"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    :catch_1
+    move-exception p1
 
     .line 270
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
-
-    invoke-virtual {v0}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
-
-    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->urlThumbPath:Ljava/lang/String;
-
-    const-string v2, "url_thumb_path"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    :try_start_2
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     .line 272
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
-
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
-
-    move-result-object v0
-
-    const/4 v2, 0x0
-
-    const-string v3, "shareChilds"
-
-    .line 273
-    invoke-virtual {v0, v3, v2, v1}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
-
-    move-result-wide v1
-
-    iput-wide v1, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->id:J
-
-    .line 274
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+    :goto_3
+    monitor-exit v1
 
     return-void
+
+    :goto_4
+    monitor-exit v1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p1
 .end method
 
 .method public readerFor(Landroid/database/Cursor;)Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cursor"
+        }
+    .end annotation
 
-    .line 430
+    .line 425
     new-instance v0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;
 
     invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;-><init>(Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;Landroid/database/Cursor;)V
@@ -1319,13 +1436,21 @@
 
 .method public removeChildContent(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "child"
+        }
+    .end annotation
 
-    .line 405
+    .line 400
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 406
+    .line 401
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -1333,9 +1458,9 @@
 
     move-result-object v1
 
-    const-string v2, "shareChilds"
+    const-string/jumbo v2, "shareChilds"
 
-    const-string v3, "share_id = ?"
+    const-string/jumbo v3, "share_id = ?"
 
     const/4 v4, 0x1
 
@@ -1343,7 +1468,7 @@
 
     const/4 v5, 0x0
 
-    .line 407
+    .line 402
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->share_id:Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -1354,10 +1479,10 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 408
+    .line 403
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 409
+    .line 404
     monitor-exit v0
 
     return-void
@@ -1374,12 +1499,22 @@
 
 .method public varargs updateChildContents(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;[Ljava/lang/String;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "item",
+            "targets"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
     return-void
 
-    .line 284
+    .line 279
     :cond_0
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1387,7 +1522,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(I)V
 
-    .line 286
+    .line 281
     array-length v1, p2
 
     const/4 v2, 0x0
@@ -1401,18 +1536,18 @@
 
     aget-object v5, p2, v3
 
-    const-string v6, "share_id"
+    const-string/jumbo v6, "share_id"
 
-    .line 287
+    .line 282
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
     if-eqz v6, :cond_1
 
-    const-string v4, "share_id"
+    const-string/jumbo v4, "share_id"
 
-    .line 288
+    .line 283
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->share_id:Ljava/lang/String;
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
@@ -1422,7 +1557,7 @@
     :cond_1
     const-string v6, "parent_id"
 
-    .line 289
+    .line 284
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
@@ -1431,7 +1566,7 @@
 
     const-string v4, "parent_id"
 
-    .line 290
+    .line 285
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->parent_id:Ljava/lang/String;
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
@@ -1439,18 +1574,18 @@
     goto/16 :goto_3
 
     :cond_2
-    const-string v6, "version"
+    const-string/jumbo v6, "version"
 
-    .line 291
+    .line 286
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
-    const-string v5, "version"
+    const-string/jumbo v5, "version"
 
-    .line 292
+    .line 287
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -1460,18 +1595,18 @@
     goto/16 :goto_3
 
     :cond_3
-    const-string v4, "type"
+    const-string/jumbo v4, "type"
 
-    .line 293
+    .line 288
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    const-string v4, "type"
+    const-string/jumbo v4, "type"
 
-    .line 294
+    .line 289
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getType()Ljava/lang/String;
 
     move-result-object v5
@@ -1481,18 +1616,18 @@
     goto/16 :goto_3
 
     :cond_4
-    const-string v4, "title"
+    const-string/jumbo v4, "title"
 
-    .line 295
+    .line 290
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_6
 
-    const-string v4, "title"
+    const-string/jumbo v4, "title"
 
-    .line 296
+    .line 291
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getTitle()Ljava/lang/String;
 
     move-result-object v5
@@ -1520,7 +1655,7 @@
     :cond_6
     const-string v4, "content"
 
-    .line 297
+    .line 292
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1529,7 +1664,7 @@
 
     const-string v4, "content"
 
-    .line 298
+    .line 293
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getContent()Ljava/lang/String;
 
     move-result-object v5
@@ -1539,18 +1674,18 @@
     goto/16 :goto_3
 
     :cond_7
-    const-string v4, "uri"
+    const-string/jumbo v4, "uri"
 
-    .line 299
+    .line 294
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_9
 
-    const-string v4, "uri"
+    const-string/jumbo v4, "uri"
 
-    .line 300
+    .line 295
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getUriPath()Ljava/lang/String;
 
     move-result-object v5
@@ -1576,18 +1711,18 @@
     goto/16 :goto_3
 
     :cond_9
-    const-string v4, "time"
+    const-string/jumbo v4, "time"
 
-    .line 301
+    .line 296
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_a
 
-    const-string v4, "time"
+    const-string/jumbo v4, "time"
 
-    .line 302
+    .line 297
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getTime()Ljava/lang/String;
 
     move-result-object v5
@@ -1597,18 +1732,18 @@
     goto/16 :goto_3
 
     :cond_a
-    const-string v4, "thumb_path"
+    const-string/jumbo v4, "thumb_path"
 
-    .line 303
+    .line 298
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_b
 
-    const-string v4, "thumb_path"
+    const-string/jumbo v4, "thumb_path"
 
-    .line 304
+    .line 299
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -1624,7 +1759,7 @@
     :cond_b
     const-string v4, "is_received"
 
-    .line 305
+    .line 300
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1633,7 +1768,7 @@
 
     const-string v4, "is_received"
 
-    .line 306
+    .line 301
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsLeft()Z
 
     move-result v5
@@ -1649,7 +1784,7 @@
     :cond_c
     const-string v4, "device_name"
 
-    .line 307
+    .line 302
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1658,7 +1793,7 @@
 
     const-string v4, "device_name"
 
-    .line 308
+    .line 303
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getDeviceName()Ljava/lang/String;
 
     move-result-object v5
@@ -1670,7 +1805,7 @@
     :cond_d
     const-string v4, "is_failed"
 
-    .line 309
+    .line 304
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1679,7 +1814,7 @@
 
     const-string v4, "is_failed"
 
-    .line 310
+    .line 305
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isFailed:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -1697,7 +1832,7 @@
     :cond_e
     const-string v4, "is_defer"
 
-    .line 311
+    .line 306
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1706,7 +1841,7 @@
 
     const-string v4, "is_defer"
 
-    .line 312
+    .line 307
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsDeferd()Z
 
     move-result v5
@@ -1722,7 +1857,7 @@
     :cond_f
     const-string v4, "is_checked"
 
-    .line 313
+    .line 308
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1731,7 +1866,7 @@
 
     const-string v4, "is_checked"
 
-    .line 314
+    .line 309
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -1749,7 +1884,7 @@
     :cond_10
     const-string v4, "is_deleted"
 
-    .line 315
+    .line 310
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1758,7 +1893,7 @@
 
     const-string v4, "is_deleted"
 
-    .line 316
+    .line 311
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isDeleted:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -1776,7 +1911,7 @@
     :cond_11
     const-string v4, "has_thumb"
 
-    .line 317
+    .line 312
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1785,7 +1920,7 @@
 
     const-string v4, "has_thumb"
 
-    .line 318
+    .line 313
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->hasThumb:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -1803,7 +1938,7 @@
     :cond_12
     const-string v4, "is_sync_contents"
 
-    .line 319
+    .line 314
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1812,7 +1947,7 @@
 
     const-string v4, "is_sync_contents"
 
-    .line 320
+    .line 315
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
@@ -1824,7 +1959,7 @@
     :cond_13
     const-string v4, "display_date"
 
-    .line 321
+    .line 316
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1833,7 +1968,7 @@
 
     const-string v4, "display_date"
 
-    .line 322
+    .line 317
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->displayDate:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -1849,7 +1984,7 @@
     :cond_14
     const-string v4, "progress"
 
-    .line 323
+    .line 318
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1858,7 +1993,7 @@
 
     const-string v4, "progress"
 
-    .line 324
+    .line 319
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->progress:Landroidx/databinding/ObservableInt;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableInt;->get()I
@@ -1876,7 +2011,7 @@
     :cond_15
     const-string v4, "position"
 
-    .line 325
+    .line 320
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1885,7 +2020,7 @@
 
     const-string v4, "position"
 
-    .line 326
+    .line 321
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->position:Landroidx/databinding/ObservableInt;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableInt;->get()I
@@ -1903,7 +2038,7 @@
     :cond_16
     const-string v4, "file_length"
 
-    .line 327
+    .line 322
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1912,7 +2047,7 @@
 
     const-string v4, "file_length"
 
-    .line 328
+    .line 323
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getFileLength()J
 
     move-result-wide v5
@@ -1928,7 +2063,7 @@
     :cond_17
     const-string v4, "is_sharing"
 
-    .line 329
+    .line 324
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1937,7 +2072,7 @@
 
     const-string v4, "is_sharing"
 
-    .line 330
+    .line 325
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isSharing:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -1953,18 +2088,18 @@
     goto/16 :goto_3
 
     :cond_18
-    const-string v4, "url_title"
+    const-string/jumbo v4, "url_title"
 
-    .line 331
+    .line 326
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_19
 
-    const-string v4, "url_title"
+    const-string/jumbo v4, "url_title"
 
-    .line 332
+    .line 327
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -1980,18 +2115,18 @@
     goto :goto_3
 
     :cond_19
-    const-string v4, "url_desc"
+    const-string/jumbo v4, "url_desc"
 
-    .line 333
+    .line 328
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1a
 
-    const-string v4, "url_desc"
+    const-string/jumbo v4, "url_desc"
 
-    .line 334
+    .line 329
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -2007,18 +2142,18 @@
     goto :goto_3
 
     :cond_1a
-    const-string v4, "url_thumb_path"
+    const-string/jumbo v4, "url_thumb_path"
 
-    .line 335
+    .line 330
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1b
 
-    const-string v4, "url_thumb_path"
+    const-string/jumbo v4, "url_thumb_path"
 
-    .line 336
+    .line 331
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v5}, Landroidx/databinding/ObservableField;->get()Ljava/lang/Object;
@@ -2036,7 +2171,7 @@
     :cond_1b
     const-string v4, "is_video"
 
-    .line 337
+    .line 332
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -2045,7 +2180,7 @@
 
     const-string v4, "is_video"
 
-    .line 338
+    .line 333
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getIsVideo()Z
 
     move-result v5
@@ -2061,7 +2196,7 @@
     :cond_1c
     const-string v4, "device_type"
 
-    .line 339
+    .line 334
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -2070,7 +2205,7 @@
 
     const-string v4, "device_type"
 
-    .line 340
+    .line 335
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->devicetype:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     invoke-virtual {v5}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->getValue()I
@@ -2089,13 +2224,13 @@
 
     goto/16 :goto_0
 
-    .line 344
+    .line 339
     :cond_1e
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->DB_LOCK:Ljava/lang/Object;
 
     monitor-enter p2
 
-    .line 345
+    .line 340
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->databaseHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
@@ -2103,13 +2238,13 @@
 
     move-result-object v1
 
-    const-string v3, "shareChilds"
+    const-string/jumbo v3, "shareChilds"
 
-    const-string v5, "share_id = ?"
+    const-string/jumbo v5, "share_id = ?"
 
     new-array v4, v4, [Ljava/lang/String;
 
-    .line 346
+    .line 341
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -2118,11 +2253,15 @@
 
     invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, ""
+    move-result-object p1
 
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, ""
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2130,10 +2269,10 @@
 
     invoke-virtual {v1, v3, v0, v5, v4}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 347
+    .line 342
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 348
+    .line 343
     monitor-exit p2
 
     return-void

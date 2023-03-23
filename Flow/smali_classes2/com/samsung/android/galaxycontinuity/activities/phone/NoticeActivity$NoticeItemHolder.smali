@@ -25,16 +25,28 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/NoticeActivity;Landroid/view/View;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "v",
+            "viewType"
+        }
+    .end annotation
 
-    .line 126
+    .line 195
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NoticeActivity$NoticeItemHolder;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NoticeActivity;
 
-    .line 127
+    .line 196
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
-    const p1, 0x7f09013d
+    const p1, 0x7f0a01cb
 
-    .line 129
+    .line 198
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -43,9 +55,9 @@
 
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NoticeActivity$NoticeItemHolder;->title:Landroid/widget/TextView;
 
-    const p1, 0x7f090138
+    const p1, 0x7f0a01c6
 
-    .line 130
+    .line 199
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1

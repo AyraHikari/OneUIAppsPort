@@ -33,7 +33,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
     .line 8
     new-instance v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
@@ -49,56 +49,50 @@
     sput-object v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->ALL:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
     .line 10
-    new-instance v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    new-instance v1, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
-    const-string v1, "NONE"
+    const-string v4, "NONE"
 
-    invoke-direct {v0, v1, v3, v2, v2}, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;-><init>(Ljava/lang/String;IZZ)V
+    invoke-direct {v1, v4, v3, v2, v2}, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;-><init>(Ljava/lang/String;IZZ)V
 
-    sput-object v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->NONE:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    sput-object v1, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->NONE:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
     .line 12
-    new-instance v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    new-instance v4, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
-    const-string v1, "SOURCE"
+    const-string v5, "SOURCE"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4, v3, v2}, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;-><init>(Ljava/lang/String;IZZ)V
+    invoke-direct {v4, v5, v6, v3, v2}, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;-><init>(Ljava/lang/String;IZZ)V
 
-    sput-object v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->SOURCE:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    sput-object v4, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->SOURCE:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
     .line 14
-    new-instance v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    new-instance v5, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
-    const-string v1, "RESULT"
+    const-string v7, "RESULT"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5, v2, v3}, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;-><init>(Ljava/lang/String;IZZ)V
+    invoke-direct {v5, v7, v8, v2, v3}, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;-><init>(Ljava/lang/String;IZZ)V
 
-    sput-object v0, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->RESULT:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    sput-object v5, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->RESULT:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    new-array v7, v7, [Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v3
+
+    aput-object v4, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 6
-    sget-object v6, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->ALL:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
-
-    aput-object v6, v1, v2
-
-    sget-object v2, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->NONE:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->SOURCE:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
-
-    aput-object v2, v1, v4
-
-    aput-object v0, v1, v5
-
-    sput-object v1, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->$VALUES:[Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
+    sput-object v7, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->$VALUES:[Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 
     return-void
 .end method

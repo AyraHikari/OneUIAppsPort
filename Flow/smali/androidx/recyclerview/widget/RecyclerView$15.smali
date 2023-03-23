@@ -3,12 +3,12 @@
 .source "RecyclerView.java"
 
 # interfaces
-.implements Landroid/animation/Animator$AnimatorListener;
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroidx/recyclerview/widget/RecyclerView;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/recyclerview/widget/RecyclerView;->initGoToTop(ZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
-    .line 6184
+    .line 15709
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$15;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,68 +35,31 @@
 
 
 # virtual methods
-.method public onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 6202
-    iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$15;->this$0:Landroidx/recyclerview/widget/RecyclerView;
+    .line 15713
+    :try_start_0
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$15;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
-    const/4 v0, 0x0
+    invoke-static {v0}, Landroidx/recyclerview/widget/RecyclerView;->access$6600(Landroidx/recyclerview/widget/RecyclerView;)Landroid/widget/ImageView;
 
-    invoke-static {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->access$4902(Landroidx/recyclerview/widget/RecyclerView;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
+    move-result-object v0
 
-    .line 6203
-    iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$15;->this$0:Landroidx/recyclerview/widget/RecyclerView;
-
-    const/4 v0, 0x0
-
-    invoke-static {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->access$5002(Landroidx/recyclerview/widget/RecyclerView;Z)Z
-
-    .line 6204
-    iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$15;->this$0:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-static {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->access$5102(Landroidx/recyclerview/widget/RecyclerView;Z)Z
-
-    .line 6205
-    iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$15;->this$0:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getItemAnimator()Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 6206
-    instance-of v0, p1, Landroidx/recyclerview/widget/DefaultItemAnimator;
+    check-cast p1, Ljava/lang/Float;
 
-    if-eqz v0, :cond_0
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
 
-    .line 6207
-    check-cast p1, Landroidx/recyclerview/widget/DefaultItemAnimator;
+    move-result p1
 
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;->clearPendingAnimFlag()V
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setAlpha(F)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6209
-    :cond_0
-    iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$15;->this$0:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->invalidate()V
-
-    return-void
-.end method
-
-.method public onAnimationRepeat(Landroid/animation/Animator;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/animation/Animator;)V
-    .locals 0
-
+    :catch_0
     return-void
 .end method

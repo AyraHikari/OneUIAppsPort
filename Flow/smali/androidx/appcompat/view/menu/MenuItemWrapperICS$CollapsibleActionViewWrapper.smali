@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "actionView"
+        }
+    .end annotation
 
     .line 512
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;

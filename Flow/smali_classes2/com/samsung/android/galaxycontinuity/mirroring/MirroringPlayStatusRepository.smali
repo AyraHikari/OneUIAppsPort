@@ -24,6 +24,14 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -125,6 +133,14 @@
 
 .method public setIsMirroringPlayed(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isPlayed"
+        }
+    .end annotation
 
     .line 46
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->mIsMirroringPlayed:Z
@@ -134,6 +150,14 @@
 
 .method public setIsMirroringStarted(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isStarted"
+        }
+    .end annotation
 
     .line 37
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlayStatusRepository;->mIsMirroringStarted:Z

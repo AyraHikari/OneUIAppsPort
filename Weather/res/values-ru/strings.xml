@@ -60,6 +60,7 @@
     <string name="air_quality">Качество воздуха</string>
     <string name="air_quality_next_tts">Более поздние ежедневные прогнозы качества воздуха</string>
     <string name="air_quality_previous_tts">Более ранние ежедневные прогнозы качества воздуха</string>
+    <string name="alert_title">Оповещение о сложных погодных условиях</string>
     <string name="all_added_cities">Все добавленные города</string>
     <string name="allow">Разрешить</string>
     <string name="allow_permission_in_settings">Для использования этой функции предоставьте разрешение в меню “Настройки”.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Действие не поддерживается.</string>
     <string name="apply_daylight_saving_time">Применить летнее время?</string>
     <string name="as_possible_after_verification">Сообщение отправлено. Название города будет изменено в кратчайшие сроки сразу после проверки.</string>
+    <string name="auto_refresh_on_screen_description">Автоматическое обновление прогноза погоды каждый час. Если эта опция включена, вы не сможете обновлять прогноз вручную.</string>
+    <string name="auto_refresh_on_the_go">Автоматическое обновление на ходу</string>
+    <string name="auto_refresh_on_the_go_advanced">Дополнительно</string>
+    <string name="auto_refresh_on_the_go_description">Чаще получайте прогноз погоды, если вы за рулем, катаетесь на велосипеде, бегаете или просто гуляете. Если эта функция включена, то вы не сможете вручную обновлять информацию о прогнозе погоды.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Получайте обновления прогноза погоды чаще, когда вы за рулем, катаетесь на велосипеде, бегаете или просто прогуливаетесь.</string>
     <string name="bottomsheet_action_expand_halfway">Развернуть наполовину</string>
     <string name="btn_report">Сообщ.</string>
     <string name="button_finish">Готово</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Дважды коснитесь для получения дополнительной информации.</string>
     <string name="china">Китай</string>
     <string name="cities_button">Города</string>
+    <string name="city_added">Город добавлен.</string>
     <string name="city_list_text">Города</string>
     <string name="clear">Ясно</string>
     <string name="clear_text_end_icon_content_description">Очистить текстовое поле</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Информация о местоположении вашего устройства будет отправляться поставщику содержимого для получения информации о местной погоде.</string>
     <string name="contents_error_msg">Эта служба временно недоступна. Повторите попытку позже.</string>
     <string name="copy">Копировать</string>
-    <string name="copy_toast_msg">Ссылка скопирована в буфер обмена.</string>
     <string name="correct_city_name">Правильное название города</string>
     <string name="couldnt_find_location">Не удалось определить местоположение</string>
     <string name="cover_screen_top_sync_dialog_text">Установить то же местоположение на главном экране?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Элемент перетащен в позицию %d.</string>
     <string name="dragndroplist_drag_start">Началось перетаскивание элемента в позицию %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Перетащить элемент из позиции %d невозможно.</string>
+    <string name="drawer_tips">Советы %s</string>
     <string name="drawer_tips_message">Коснитесь здесь, чтобы добавить, удалить и переупорядочить места. Можно также добавить несколько виджетов для отображения различных мест на главном экране.</string>
     <string name="drawer_tips_message_1">Коснитесь пункта “Управление местоположением” в нижней части этого меню, чтобы добавить, удалить или переупорядочить их.</string>
     <string name="drawer_tips_message_2">Вы можете одновременно просматривать прогноз для различных местоположений, добавив несколько виджетов на главный экран.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Дополнительно</string>
     <string name="exposed_dropdown_menu_content_description">Показать раскрывающееся меню</string>
     <string name="failed_to_send_report">Сбой отправки отчета</string>
-    <string name="fallback_menu_item_copy_link">Копировать ссылку</string>
-    <string name="fallback_menu_item_open_in_browser">Открыть в браузере</string>
-    <string name="fallback_menu_item_share_link">Отправить ссылку</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Избранное место</string>
     <string name="feel_like_pd_minus_temp">Ощущается как -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Видеопрогноз</string>
     <string name="format_km_per_hour">%s км/ч</string>
     <string name="format_m_per_hour">%s миль/час</string>
+    <string name="fri">Пт</string>
     <string name="general">Общие</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Получайте персонализированное содержимое с учетом характера использования телефона.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Получайте персонализированное содержимое на основании того, как вы пользуетесь планшетом.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">Получать информацию о погоде, в частности геоданные, из приложения “Погода”</string>
     <string name="go_to_website">На веб-сайт</string>
     <string name="goto_apps">Доступно обновление. Установить сейчас?</string>
     <string name="goto_apps_later">Позже</string>
     <string name="goto_apps_now">Сейчас</string>
     <string name="goto_apps_update_title">Уведомления о новом содержимом</string>
     <string name="header_tts">Заголовок</string>
+    <string name="heavy">Большое</string>
     <string name="heavy_rain">Сильный дождь</string>
     <string name="heavy_rain_followed_by_intense_heat">Сильный дождь, затем сильная жара</string>
     <string name="heavy_rain_followed_by_light_rain">Сильный дождь, затем сильная жара</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Видимость</string>
     <string name="life_index_wind">Ветер</string>
     <string name="life_index_wind_force">Скорость ветра</string>
+    <string name="light">Небольшое</string>
     <string name="light_rain_followed_by_heavy_rain">Легкий дождь, затем сильный дождь</string>
     <string name="light_rain_with_some_heavy_rain">Легкий дождь, периодически сильный</string>
     <string name="link_tts">Ссылка</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Ничего не найдено.</string>
     <string name="message_service_not_available">Услуга недоступна.</string>
     <string name="minus_tts">Минус</string>
+    <string name="mon">Пн</string>
     <string name="more">Еще</string>
     <string name="more_cuntact_us">Свяжитесь с нами</string>
     <string name="more_information">Еще</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Коснитесь, чтобы изменить место для прогноза погоды, заданное по умолчанию, а также настроить все ваши места.</string>
     <string name="new_version_available">Доступна новая версия приложения %s.</string>
     <string name="new_version_is_available">Доступна новая версия.</string>
+    <string name="news_menu_show_news">Показывать новости</string>
+    <string name="news_opt_in_banner_title_text">Будьте в курсе последних событий, просматривая новости в виджете “Погода”.</string>
+    <string name="news_opt_in_popup_desc_text">Будьте в курсе последних событий в мире, просматривая заголовки статей от %s в виджете “Погода”.</string>
+    <string name="news_opt_in_popup_title_text">Новости и прогноз погоды в одном виджете</string>
+    <string name="news_request_agree_text">Коснитесь, чтобы получить новости от приложения %s</string>
+    <string name="news_widget_bubble_text">Получать новости вместе с прогнозом погоды.</string>
+    <string name="news_widget_dummy_title">Самая популярная история за сегодня</string>
+    <string name="news_widget_new_dummy_title">5 главных новостей этого утра</string>
+    <string name="news_widget_oobe_text">Коснитесь для добав. новостей.</string>
     <string name="next">Следующий город</string>
+    <string name="next_btn">Далее</string>
     <string name="next_city">Коснитесь дважды, чтобы отобразить сведения о погоде для следующего города.</string>
     <string name="night_tts">Ночь</string>
     <string name="no_application_available">Нет доступных приложений.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Информация о погоде не найдена</string>
     <string name="not_in_use">Не используется</string>
     <string name="not_now">Не сейчас</string>
+    <string name="not_now_btn">Позже</string>
     <string name="not_selected">Не выбрано</string>
     <string name="not_set">Не указано</string>
     <string name="nothing_selected">Ничего не выбрано.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Для быстрого и точного определения геоданных коснитесь НАСТРОЙКИ, а потом установите параметр “Метод обнаружения” для GPS, Wi-Fi и мобильных сетей.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Для быстрого и точного определения геоданных коснитесь НАСТРОЙКИ, а потом установите параметр “Метод обнаружения” для GPS и Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Чтобы просматривать местный прогноз погоды, включите настройки определения местоположения и установите режим “Высокая точность”.</string>
+    <string name="notification_alert_channel_name">Оповещение о сложных погодных условиях</string>
     <string name="notification_apps_update_channel_name">Уведомления об обновлениях</string>
     <string name="notification_auto_refresh_channel_name">Автообновление прогноза погоды</string>
     <string name="notification_dex_channel_name">Погода в Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Открыть прил.</string>
     <string name="open_source_licences">Лицензии открытого ПО</string>
     <string name="other_locations">Другие места</string>
+    <string name="partly_sunny">Местами солнечно</string>
     <string name="password_toggle_content_description">Показать пароль</string>
     <string name="paused">Приостановлено</string>
     <string name="pd_km">%.1f км</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Текст \"%1$s\" скопирован в буфер обмена</string>
     <string name="preview">Предпросмотр %s</string>
     <string name="previous">Предыдущий город</string>
+    <string name="previous_btn">Назад</string>
     <string name="previous_city">Коснитесь дважды, чтобы отобразить сведения о погоде для предыдущего города.</string>
     <string name="privacy_policy">Политика конфиденциальности</string>
     <string name="probability_of_rain_text">Вероятность дождя</string>
     <string name="protect_your_content">Защита содержимого</string>
+    <string name="ps_in">Дюймов: %s</string>
+    <string name="ps_mm">%s мм</string>
     <string name="radar">Метеорологические карты</string>
     <string name="rain">Дождь</string>
     <string name="rain_followed_by_intense_heat">Дождь, затем сильная жара</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Для обновления информации о погоде коснитесь кнопки НАСТРОЙКИ и перейдите в раздел “Информация о приложении” > “Разрешения”, а затем повторите попытку, предоставив следующие разрешения:</string>
     <string name="runtime_location_permission_title">Предоставление разрешений</string>
     <string name="runtime_oem_grant_permission_desc">Приложение %s имеет разрешение на доступ к следующему:</string>
+    <string name="sat">Сб</string>
     <string name="save_button">Соxранить</string>
     <string name="search_menu_title">Поиск</string>
     <string name="search_most_searched_for">Самые популярные</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Доступно новое содержимое</string>
     <string name="sesl_material_overflow_badge_text_n">Н</string>
     <string name="sesl_more_item_label">Опции</string>
+    <string name="sesl_preferecne_badge_description">Новое оповещение</string>
     <string name="sesl_preferencecategory_added_title">Заголовок</string>
     <string name="sesl_search_hint">Поиск</string>
     <string name="sesl_searchview_description_clear">Очистить поле поиска</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Не в сети</string>
     <string name="st_view_less">Свернуть</string>
     <string name="status_bar_notification_info_overflow">>999</string>
+    <string name="status_off">Выключено</string>
+    <string name="status_on">Включено</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Вс</string>
     <string name="sunny">Солнечно</string>
     <string name="sunny_with_some_clouds">Солнечно с облаками</string>
     <string name="sunny_with_some_heavy_rain">Солнечно с сильным дождем</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Чтобы восстановить данные о погоде с предыдущего устройства, коснитесь здесь.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Чтобы повторить попытку поиска текущего местоположения, коснитесь кнопки ПОВТОР.</string>
     <string name="tap_setting_message_edge_panel">Чтобы получить местные данные о погоде, включите определение местоположения.</string>
+    <string name="tap_the_settings_icon">Нажмите значок “Параметры”.</string>
     <string name="tap_to_get_the_weather">Коснитесь для просмотра прогноза погоды</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Условия использования</string>
     <string name="the_latest_version">Последняя версия уже установлена.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Изменения также будут применены к уведомлениям и “Календарю”.</string>
+    <string name="thu">Чт</string>
     <string name="tick_box_tts">Флажок</string>
     <string name="ticked_tts">Флажок установлен</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Ежечасный</string>
     <string name="title_select_locations">Выбор мест</string>
     <string name="title_theme">Темы</string>
+    <string name="to_continue_agree_to_updated">Чтобы продолжить, примите условия, изложенные в обновленном документе %s.</string>
     <string name="to_get_local_weather_chn">"Чтобы получить местную погоду, текущее местоположение будет отправлено поставщику метеорологических услуг. (См. %1$sУсловия пользования%2$s и. %3$sПолитику конфиденциальности%4$s провайдера).
 Другие приложения и службы на вашем устройстве могут получать доступ к полученным данным о погоде и показывать погоду в этих приложениях.
 Чтобы в дальнейшем предоставлять вам информацию о погоде, у службы Погода будет доступ к вашему местоположению, даже когда вы не используете приложение."</string>
     <string name="today">Сегодня</string>
+    <string name="try_it_out_btn">Попробовать</string>
+    <string name="tue">Вт</string>
+    <string name="turn_on_to_use_precise_location">Чтобы воспользоваться этой функцией, предоставьте приложению “%s” разрешение на постоянный доступ к вашим геоданным и включение параметра “Использовать точное местоположение”. Для этого коснитесь пункта “Настройки” и перейдите в раздел “Разрешения” > “Местоположение”.</string>
     <string name="tw_title_weather_broadcast">Текущая погода</string>
-    <string name="unable_to_check_for_updates">Невозможно проверить наличие обновлений. Нет подключения к сети.</string>
+    <string name="unable_to_check_for_updates">Не удалось проверить наличие обновлений. Повторите попытку позже.</string>
     <string name="unable_to_receive_info_msg">Невозможно получить данные</string>
     <string name="unticked_tts">Не выбран</string>
     <string name="unused">Не использовано</string>
     <string name="update">Обновить</string>
     <string name="update_abb8">Обновить</string>
     <string name="update_app">Обновление приложения</string>
+    <string name="updated_tile_chn">Обновлено: %s</string>
     <string name="updated_tts">%s обновлено</string>
+    <string name="use_current_location">Текущее местоположение</string>
     <string name="use_current_location_agree_popup">"Чтобы получить сведения о местной погоде, данные текущего местоположения отправляются поставщику метеорологических услуг. (См. %1$sполитику конфиденциальности%2$s поставщика.)
 Другие приложения и службы на устройстве могут использовать и отображать полученные сведения о погоде."</string>
     <string name="use_current_location_and_background_agree_popup">"Чтобы получить местную погоду, текущее местоположение будет отправлено поставщику метеорологических услуг. (См. %1$sПолитику конфиденциальности%2$s провайдера.)
@@ -746,9 +784,16 @@
 Вы можете выключить использование данных о местоположении в настройках приложения «Погода»."</string>
     <string name="use_current_location_body_msg_chn">"Пожалуйста, внимательно прочтите перед использованием приложения «Погода»:
 Если вы хотите знать погоду в вашем текущем местоположении, вам необходимо разрешить стороннему поставщику услуг постоянный (даже когда вы не используете сервис) доступ к вашему устройству, а также разрешить получать некоторые данные, как указано ниже. Пожалуйста, внимательно прочитайте %1$sУсловия и положения%2$s и %3$sПолитику конфиденциальности%4$s стороннего поставщика услуг перед тем, как предоставлять такое согласие. Вы можете отозвать свое согласие, отключив «Местоположение» в меню настроек. Другие приложения и службы на вашем устройстве могут получать доступ к указанным метеорологическим данным для показа погоды в этих приложениях и службах."</string>
+    <string name="use_current_location_body_msg_kor">"Приложение соберет ваши геоданные и использует их для предоставления некоторых функций приложения “Погода”, например для отображения местного прогноза погоды.
+
+Для постоянного обновления прогнозов приложение будет регулярно обрабатывать ваши геоданные, даже если оно не активно. Продолжая, вы соглашаетесь на сбор и обработку ваших геоданных для указанных выше целей.
+
+Остановить сбор и обработку геоданных можно в меню настроек приложения “Погода”."</string>
     <string name="use_current_location_body_purpose">Цель</string>
     <string name="use_current_location_body_purpose_content">Предоставлять информацию о погоде в вашем текущем местоположении</string>
     <string name="use_current_location_body_search_provider">Поставщик услуг</string>
+    <string name="use_current_location_continue">Продолжить</string>
+    <string name="use_current_location_not_now">Позже</string>
     <string name="use_current_location_off_alert_popup">Информация о текущем местоположении будет удалена.</string>
     <string name="useful_informations">Советы и отчеты</string>
     <string name="using_as">Учетная запись %s</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">Советы о погоде</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Ср</string>
     <string name="weekly_forecast">Ежедневный</string>
     <string name="widget_background">Фон виджета</string>
     <string name="widget_empty_text">Коснитесь, чтобы посмотреть информацию о погоде</string>
+    <string name="widget_location">Название города</string>
     <string name="widget_name_4x1">Погода и часы</string>
     <string name="widget_setting">Настройки</string>
     <string name="widget_setting_background_color">Цвет фона</string>

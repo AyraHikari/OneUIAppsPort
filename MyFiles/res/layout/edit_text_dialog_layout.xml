@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/edit_text_dialog_top_margin" android:paddingBottom="@dimen/edit_text_dialog_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/edit_text_dialog_start_margin" android:paddingEnd="@dimen/edit_text_dialog_end_margin">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/text_input_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="@dimen/editText_padding_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/edit_text_unit" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CustomTextInputLayoutStyle">
+                <com.sec.android.app.myfiles.external.ui.widget.EditTextEx android:textSize="@dimen/basic_edit_text_size" android:id="@id/text_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textSize="@dimen/basic_edit_unit_text_size" android:textColor="@color/edit_unit_text_color" android:gravity="center" android:id="@id/edit_text_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/edit_unit_text_margin_start" app:layout_constraintEnd_toStartOf="@id/edit_text_unit_spinner" app:layout_constraintStart_toEndOf="@id/text_input_wrapper" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatSpinner android:textSize="@dimen/basic_edit_unit_text_size" android:textColor="@color/edit_unit_text_color" android:gravity="center" android:id="@id/edit_text_unit_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dropDownVerticalOffset="@dimen/editText_unit_spinner_offset" android:layout_marginStart="@dimen/edit_unit_text_margin_start" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/edit_text_unit" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ViewStub android:id="@id/edit_text_compress_stub" android:layout="@layout/edit_text_compress_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

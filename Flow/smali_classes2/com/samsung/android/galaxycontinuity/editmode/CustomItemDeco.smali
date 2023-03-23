@@ -38,6 +38,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;-><init>()V
@@ -62,9 +70,7 @@
     .line 46
     new-instance v1, Landroidx/appcompat/util/SeslSubheaderRoundedCorner;
 
-    const/4 v2, 0x0
-
-    invoke-direct {v1, p1, v2}, Landroidx/appcompat/util/SeslSubheaderRoundedCorner;-><init>(Landroid/content/Context;Z)V
+    invoke-direct {v1, p1}, Landroidx/appcompat/util/SeslSubheaderRoundedCorner;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/editmode/CustomItemDeco;->mSeslListRoundedCorner:Landroidx/appcompat/util/SeslSubheaderRoundedCorner;
 
@@ -78,7 +84,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f030229
+    const v3, 0x7f0403a6
 
     invoke-virtual {v2, v3, v1, v0}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
@@ -112,6 +118,18 @@
 # virtual methods
 .method public onDraw(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "c",
+            "parent",
+            "state"
+        }
+    .end annotation
 
     .line 68
     invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;->onDraw(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
@@ -121,6 +139,18 @@
 
 .method public seslOnDispatchDraw(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "c",
+            "parent",
+            "state"
+        }
+    .end annotation
 
     .line 73
     invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;->seslOnDispatchDraw(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
@@ -245,6 +275,14 @@
 
 .method public setListCorners(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "corners"
+        }
+    .end annotation
 
     .line 57
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/editmode/CustomItemDeco;->mSeslListRoundedCorner:Landroidx/appcompat/util/SeslSubheaderRoundedCorner;

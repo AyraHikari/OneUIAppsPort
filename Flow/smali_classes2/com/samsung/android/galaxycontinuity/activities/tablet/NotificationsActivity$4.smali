@@ -3,7 +3,7 @@
 .source "NotificationsActivity.java"
 
 # interfaces
-.implements Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 401
+    .line 420
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,42 +43,51 @@
 
 
 # virtual methods
-.method public onTabReselected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
-    .locals 0
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
-    return-void
-.end method
+    const-string p1, "2001"
 
-.method public onTabSelected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
-    .locals 2
+    .line 423
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->insertSAEventLog(Ljava/lang/String;)V
 
-    .line 404
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
+    .line 424
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
-    invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$Tab;->getPosition()I
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;)Lcom/samsung/android/galaxycontinuity/manager/CustomViewPager;
 
-    move-result v1
+    move-result-object p1
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->access$202(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;I)I
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/manager/CustomViewPager;->getAdapter()Landroidx/viewpager/widget/PagerAdapter;
 
-    .line 405
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
+    move-result-object p1
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;)Lcom/samsung/android/galaxycontinuity/manager/CustomViewPager;
+    check-cast p1, Lcom/samsung/android/galaxycontinuity/manager/TabPagerAdapter;
 
-    move-result-object v0
+    const/4 v0, 0x0
 
-    invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$Tab;->getPosition()I
+    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/manager/TabPagerAdapter;->getFragment(I)Landroidx/fragment/app/Fragment;
 
-    move-result p1
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/CustomViewPager;->setCurrentItem(I)V
+    check-cast p1, Lcom/samsung/android/galaxycontinuity/activities/SharedFragment;
 
-    return-void
-.end method
+    if-eqz p1, :cond_0
 
-.method public onTabUnselected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
-    .locals 0
+    .line 426
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/SharedFragment;->removeSelectedItems()V
 
+    .line 427
+    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/SharedFragment;->setMultiSelectionMode(Z)V
+
+    :cond_0
     return-void
 .end method

@@ -35,6 +35,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "config"
+        }
+    .end annotation
 
     .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -59,6 +69,14 @@
 
 .method public static setFirstTry(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "firstTry"
+        }
+    .end annotation
 
     .line 34
     sput-boolean p0, Lcom/samsung/context/sdk/samsunganalytics/internal/setting/BuildClient;->firstTry:Z
@@ -106,13 +124,13 @@
 
     move-result-object v3
 
-    const-string v4, "ts"
+    const-string/jumbo v4, "ts"
 
     invoke-interface {v0, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v3, "t"
+    const-string/jumbo v3, "t"
 
-    const-string v4, "st"
+    const-string/jumbo v4, "st"
 
     .line 51
     invoke-interface {v0, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -141,7 +159,7 @@
 
     check-cast v8, Ljava/lang/String;
 
-    const-string v9, "sti"
+    const-string/jumbo v9, "sti"
 
     .line 56
     invoke-interface {v0, v9, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -203,7 +221,7 @@
 
     move-result-object v0
 
-    const-string v2, "status_sent_date"
+    const-string/jumbo v2, "status_sent_date"
 
     invoke-interface {v0, v2, v6, v7}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 

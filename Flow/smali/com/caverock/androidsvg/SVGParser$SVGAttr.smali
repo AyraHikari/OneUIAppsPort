@@ -1207,536 +1207,538 @@
 
     sput-object v0, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->UNSUPPORTED:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v1, 0x5c
+    const/16 v0, 0x5c
 
-    new-array v1, v1, [Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    new-array v0, v0, [Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
     .line 187
-    sget-object v15, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->CLASS:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->CLASS:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v15, v1, v2
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clip:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clip:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v3
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clip_path:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clip_path:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v4
+    aput-object v1, v0, v4
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clipPathUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clipPathUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v5
+    aput-object v1, v0, v5
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clip_rule:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->clip_rule:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v6
+    aput-object v1, v0, v6
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->color:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->color:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v7
+    aput-object v1, v0, v7
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->cx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->cx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v8
+    aput-object v1, v0, v8
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->cy:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->cy:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v9
+    aput-object v1, v0, v9
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->direction:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->direction:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v10
+    aput-object v1, v0, v10
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->dx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->dx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v11
+    aput-object v1, v0, v11
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->dy:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->dy:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v12
+    aput-object v1, v0, v12
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v13
+    aput-object v1, v0, v13
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fy:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fy:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    aput-object v2, v1, v14
+    aput-object v1, v0, v14
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->d:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->d:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0xd
+    const/16 v2, 0xd
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->display:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->display:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0xe
+    const/16 v2, 0xe
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fill:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fill:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0xf
+    const/16 v2, 0xf
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fill_rule:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fill_rule:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x10
+    const/16 v2, 0x10
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fill_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->fill_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x11
+    const/16 v2, 0x11
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x12
+    const/16 v2, 0x12
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_family:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_family:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x13
+    const/16 v2, 0x13
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_size:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_size:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x14
+    const/16 v2, 0x14
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_weight:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_weight:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x15
+    const/16 v2, 0x15
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_style:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->font_style:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x16
+    const/16 v2, 0x16
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->gradientTransform:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->gradientTransform:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x17
+    const/16 v2, 0x17
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->gradientUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->gradientUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x18
+    const/16 v2, 0x18
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->height:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->height:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x19
+    const/16 v2, 0x19
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->href:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->href:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x1a
+    const/16 v2, 0x1a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->id:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->id:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x1b
+    const/16 v2, 0x1b
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x1c
+    const/16 v2, 0x1c
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker_start:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker_start:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x1d
+    const/16 v2, 0x1d
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker_mid:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker_mid:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x1e
+    const/16 v2, 0x1e
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker_end:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->marker_end:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x1f
+    const/16 v2, 0x1f
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->markerHeight:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->markerHeight:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x20
+    const/16 v2, 0x20
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->markerUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->markerUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x21
+    const/16 v2, 0x21
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->markerWidth:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->markerWidth:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x22
+    const/16 v2, 0x22
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->mask:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->mask:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x23
+    const/16 v2, 0x23
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->maskContentUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->maskContentUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x24
+    const/16 v2, 0x24
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->maskUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->maskUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x25
+    const/16 v2, 0x25
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->media:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->media:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x26
+    const/16 v2, 0x26
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->offset:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->offset:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x27
+    const/16 v2, 0x27
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x28
+    const/16 v2, 0x28
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->orient:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->orient:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x29
+    const/16 v2, 0x29
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->overflow:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->overflow:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x2a
+    const/16 v2, 0x2a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->pathLength:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->pathLength:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x2b
+    const/16 v2, 0x2b
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->patternContentUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->patternContentUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x2c
+    const/16 v2, 0x2c
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->patternTransform:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->patternTransform:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x2d
+    const/16 v2, 0x2d
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->patternUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->patternUnits:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x2e
+    const/16 v2, 0x2e
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->points:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->points:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x2f
+    const/16 v2, 0x2f
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->preserveAspectRatio:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->preserveAspectRatio:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x30
+    const/16 v2, 0x30
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->r:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->r:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x31
+    const/16 v2, 0x31
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->refX:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->refX:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x32
+    const/16 v2, 0x32
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->refY:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->refY:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x33
+    const/16 v2, 0x33
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredFeatures:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredFeatures:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x34
+    const/16 v2, 0x34
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredExtensions:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredExtensions:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x35
+    const/16 v2, 0x35
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredFormats:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredFormats:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x36
+    const/16 v2, 0x36
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredFonts:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->requiredFonts:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x37
+    const/16 v2, 0x37
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->rx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->rx:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x38
+    const/16 v2, 0x38
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->ry:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->ry:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x39
+    const/16 v2, 0x39
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->solid_color:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->solid_color:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x3a
+    const/16 v2, 0x3a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->solid_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->solid_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x3b
+    const/16 v2, 0x3b
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->spreadMethod:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->spreadMethod:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x3c
+    const/16 v2, 0x3c
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->startOffset:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->startOffset:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x3d
+    const/16 v2, 0x3d
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stop_color:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stop_color:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x3e
+    const/16 v2, 0x3e
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stop_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stop_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x3f
+    const/16 v2, 0x3f
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x40
+    const/16 v2, 0x40
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_dasharray:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_dasharray:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x41
+    const/16 v2, 0x41
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_dashoffset:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_dashoffset:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x42
+    const/16 v2, 0x42
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_linecap:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_linecap:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x43
+    const/16 v2, 0x43
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_linejoin:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_linejoin:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x44
+    const/16 v2, 0x44
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_miterlimit:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_miterlimit:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x45
+    const/16 v2, 0x45
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x46
+    const/16 v2, 0x46
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_width:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->stroke_width:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x47
+    const/16 v2, 0x47
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->style:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->style:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x48
+    const/16 v2, 0x48
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->systemLanguage:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->systemLanguage:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x49
+    const/16 v2, 0x49
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->text_anchor:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->text_anchor:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x4a
+    const/16 v2, 0x4a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->text_decoration:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->text_decoration:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x4b
+    const/16 v2, 0x4b
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->transform:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->transform:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x4c
+    const/16 v2, 0x4c
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->type:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->type:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x4d
+    const/16 v2, 0x4d
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->vector_effect:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->vector_effect:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x4e
+    const/16 v2, 0x4e
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->version:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->version:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x4f
+    const/16 v2, 0x4f
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->viewBox:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->viewBox:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x50
+    const/16 v2, 0x50
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->width:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->width:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x51
+    const/16 v2, 0x51
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->x:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->x:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x52
+    const/16 v2, 0x52
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->y:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->y:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x53
+    const/16 v2, 0x53
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->x1:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->x1:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x54
+    const/16 v2, 0x54
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->y1:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->y1:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x55
+    const/16 v2, 0x55
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->x2:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->x2:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x56
+    const/16 v2, 0x56
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->y2:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->y2:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x57
+    const/16 v2, 0x57
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->viewport_fill:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->viewport_fill:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x58
+    const/16 v2, 0x58
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->viewport_fill_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->viewport_fill_opacity:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x59
+    const/16 v2, 0x59
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
 
-    sget-object v2, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->visibility:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->visibility:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
-    const/16 v3, 0x5a
+    const/16 v2, 0x5a
 
-    aput-object v2, v1, v3
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->UNSUPPORTED:Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
     const/16 v2, 0x5b
 
-    aput-object v0, v1, v2
+    aput-object v1, v0, v2
 
-    sput-object v1, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVGParser$SVGAttr;
+    sput-object v0, Lcom/caverock/androidsvg/SVGParser$SVGAttr;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVGParser$SVGAttr;
 
     return-void
 .end method

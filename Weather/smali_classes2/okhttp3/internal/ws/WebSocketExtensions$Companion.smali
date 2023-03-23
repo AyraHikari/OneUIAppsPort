@@ -47,7 +47,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 90
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -56,7 +55,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 90
     invoke-direct {p0}, Lokhttp3/internal/ws/WebSocketExtensions$Companion;-><init>()V
 
     return-void
@@ -66,49 +64,37 @@
 # virtual methods
 .method public final parse(Lokhttp3/Headers;)Lokhttp3/internal/ws/WebSocketExtensions;
     .locals 20
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     move-object/from16 v0, p1
 
     const-string v1, "responseHeaders"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v1, 0x0
-
-    .line 99
-    move-object v2, v1
-
-    check-cast v2, Ljava/lang/Integer;
-
-    .line 106
+    .line 1
     invoke-virtual/range {p1 .. p1}, Lokhttp3/Headers;->size()I
 
-    move-result v3
+    move-result v1
 
-    move-object v7, v2
-
-    move-object v9, v7
-
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
     const/4 v6, 0x0
 
+    const/4 v7, 0x0
+
     const/4 v8, 0x0
+
+    const/4 v9, 0x0
 
     const/4 v10, 0x0
 
     const/4 v11, 0x0
 
     :goto_0
-    if-ge v2, v3, :cond_13
+    if-ge v4, v1, :cond_13
 
-    .line 107
-    invoke-virtual {v0, v2}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
+    .line 2
+    invoke-virtual {v0, v4}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -116,23 +102,23 @@
 
     const/4 v13, 0x1
 
-    invoke-static {v5, v12, v13}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v5, v12, v13}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    goto/16 :goto_9
+    goto/16 :goto_8
 
-    .line 110
+    .line 3
     :cond_0
-    invoke-virtual {v0, v2}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
+    invoke-virtual {v0, v4}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v5
 
     const/4 v12, 0x0
 
-    .line 114
+    .line 4
     :goto_1
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
@@ -152,33 +138,33 @@
 
     move/from16 v16, v12
 
-    .line 115
+    .line 5
     invoke-static/range {v14 .. v19}, Lokhttp3/internal/Util;->delimiterOffset$default(Ljava/lang/String;CIIILjava/lang/Object;)I
 
     move-result v14
 
     const/16 v15, 0x3b
 
-    .line 116
+    .line 6
     invoke-static {v5, v15, v12, v14}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;CII)I
 
-    move-result v1
+    move-result v2
 
-    .line 117
-    invoke-static {v5, v12, v1}, Lokhttp3/internal/Util;->trimSubstring(Ljava/lang/String;II)Ljava/lang/String;
+    .line 7
+    invoke-static {v5, v12, v2}, Lokhttp3/internal/Util;->trimSubstring(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v12
 
-    add-int/2addr v1, v13
+    add-int/2addr v2, v13
 
-    const-string v4, "permessage-deflate"
+    const-string v3, "permessage-deflate"
 
-    .line 121
-    invoke-static {v12, v4, v13}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    .line 8
+    invoke-static {v12, v3, v13}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_11
+    if-eqz v3, :cond_11
 
     if-eqz v6, :cond_1
 
@@ -186,39 +172,37 @@
 
     :cond_1
     :goto_2
-    if-ge v1, v14, :cond_10
+    if-ge v2, v14, :cond_10
 
-    .line 127
-    invoke-static {v5, v15, v1, v14}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;CII)I
+    .line 9
+    invoke-static {v5, v15, v2, v14}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;CII)I
 
-    move-result v4
+    move-result v3
 
     const/16 v6, 0x3d
 
-    .line 128
-    invoke-static {v5, v6, v1, v4}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;CII)I
+    .line 10
+    invoke-static {v5, v6, v2, v3}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;CII)I
 
     move-result v6
 
-    .line 129
-    invoke-static {v5, v1, v6}, Lokhttp3/internal/Util;->trimSubstring(Ljava/lang/String;II)Ljava/lang/String;
+    .line 11
+    invoke-static {v5, v2, v6}, Lokhttp3/internal/Util;->trimSubstring(Ljava/lang/String;II)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    if-ge v6, v4, :cond_2
+    if-ge v6, v3, :cond_2
 
     add-int/lit8 v6, v6, 0x1
 
-    .line 131
-    invoke-static {v5, v6, v4}, Lokhttp3/internal/Util;->trimSubstring(Ljava/lang/String;II)Ljava/lang/String;
+    .line 12
+    invoke-static {v5, v6, v3}, Lokhttp3/internal/Util;->trimSubstring(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v6
 
     const-string v12, "\""
 
-    check-cast v12, Ljava/lang/CharSequence;
-
-    invoke-static {v6, v12}, Lkotlin/text/StringsKt;->removeSurrounding(Ljava/lang/String;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-static {v6, v12}, Lhl/u;->o0(Ljava/lang/String;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -228,12 +212,12 @@
     const/4 v6, 0x0
 
     :goto_3
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     const-string v12, "client_max_window_bits"
 
-    .line 137
-    invoke-static {v1, v12, v13}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    .line 13
+    invoke-static {v2, v12, v13}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v12
 
@@ -246,28 +230,28 @@
     :cond_3
     if-eqz v6, :cond_4
 
-    .line 139
-    invoke-static {v6}, Lkotlin/text/StringsKt;->toIntOrNull(Ljava/lang/String;)Ljava/lang/Integer;
+    .line 14
+    invoke-static {v6}, Lhl/s;->k(Ljava/lang/String;)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v2
+
+    move-object v7, v2
 
     goto :goto_4
 
     :cond_4
-    const/4 v1, 0x0
+    const/4 v7, 0x0
 
     :goto_4
-    move-object v7, v1
-
-    if-nez v1, :cond_f
+    if-nez v7, :cond_f
 
     goto :goto_6
 
     :cond_5
     const-string v12, "client_no_context_takeover"
 
-    .line 142
-    invoke-static {v1, v12, v13}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    .line 15
+    invoke-static {v2, v12, v13}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v12
 
@@ -290,8 +274,8 @@
     :cond_8
     const-string v12, "server_max_window_bits"
 
-    .line 147
-    invoke-static {v1, v12, v13}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    .line 16
+    invoke-static {v2, v12, v13}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v12
 
@@ -304,32 +288,32 @@
     :cond_9
     if-eqz v6, :cond_a
 
-    .line 149
-    invoke-static {v6}, Lkotlin/text/StringsKt;->toIntOrNull(Ljava/lang/String;)Ljava/lang/Integer;
+    .line 17
+    invoke-static {v6}, Lhl/s;->k(Ljava/lang/String;)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v2
+
+    move-object v9, v2
 
     goto :goto_5
 
     :cond_a
-    const/4 v1, 0x0
+    const/4 v9, 0x0
 
     :goto_5
-    move-object v9, v1
-
-    if-nez v1, :cond_f
+    if-nez v9, :cond_f
 
     goto :goto_6
 
     :cond_b
     const-string v12, "server_no_context_takeover"
 
-    .line 152
-    invoke-static {v1, v12, v13}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    .line 18
+    invoke-static {v2, v12, v13}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_e
+    if-eqz v2, :cond_e
 
     if-eqz v10, :cond_c
 
@@ -351,36 +335,31 @@
 
     :cond_f
     :goto_7
-    move v1, v4
+    move v2, v3
 
     goto :goto_2
 
     :cond_10
-    move v12, v1
+    move v12, v2
 
     move v6, v13
 
-    goto :goto_8
+    goto/16 :goto_1
 
     :cond_11
-    move v12, v1
+    move v12, v2
 
     move v11, v13
-
-    :goto_8
-    const/4 v1, 0x0
 
     goto/16 :goto_1
 
     :cond_12
-    :goto_9
-    add-int/lit8 v2, v2, 0x1
-
-    const/4 v1, 0x0
+    :goto_8
+    add-int/lit8 v4, v4, 0x1
 
     goto/16 :goto_0
 
-    .line 171
+    .line 19
     :cond_13
     new-instance v0, Lokhttp3/internal/ws/WebSocketExtensions;
 

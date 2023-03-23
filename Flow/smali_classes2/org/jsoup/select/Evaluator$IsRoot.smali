@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 549
+    .line 584
     invoke-direct {p0}, Lorg/jsoup/select/Evaluator;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 .method public matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
     .locals 2
 
-    .line 552
+    .line 587
     instance-of v0, p1, Lorg/jsoup/nodes/Document;
 
     const/4 v1, 0x0

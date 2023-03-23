@@ -35,6 +35,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;Ljava/net/Socket;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "socket"
+        }
+    .end annotation
 
     .line 165
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
@@ -104,6 +114,16 @@
 
 .method private write([BI)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "len"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -116,8 +136,6 @@
     if-eqz p1, :cond_0
 
     .line 338
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStream:Ljava/io/DataOutputStream;
-
     invoke-virtual {v1, p1, v0, p2}, Ljava/io/DataOutputStream;->write([BII)V
 
     .line 339
@@ -127,14 +145,12 @@
 
     return p2
 
-    .line 343
     :cond_0
-    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStream:Ljava/io/DataOutputStream;
-
-    if-nez p2, :cond_1
+    if-nez v1, :cond_1
 
     const-string p2, "mOutputStream is null"
 
+    .line 343
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     :cond_1
@@ -152,7 +168,7 @@
     :catch_0
     move-exception p1
 
-    const-string p2, "write and flush failed"
+    const-string/jumbo p2, "write and flush failed"
 
     .line 347
     invoke-static {p2, p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -184,8 +200,6 @@
     if-eqz v0, :cond_0
 
     .line 357
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mInputStream:Ljava/io/DataInputStream;
-
     invoke-virtual {v0}, Ljava/io/DataInputStream;->close()V
 
     :cond_0
@@ -200,8 +214,6 @@
     if-eqz v1, :cond_1
 
     .line 361
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStream:Ljava/io/DataOutputStream;
-
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->flush()V
 
     .line 362
@@ -232,6 +244,18 @@
 
 .method read(Ljava/io/OutputStream;JJ)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "outputStream",
+            "offset",
+            "outputStreamSize"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -324,7 +348,7 @@
 .end method
 
 .method public run()V
-    .locals 13
+    .locals 14
 
     .line 184
     :cond_0
@@ -343,7 +367,7 @@
     if-eqz v0, :cond_1
 
     :try_start_0
-    const-string v0, "wait read"
+    const-string/jumbo v0, "wait read"
 
     .line 189
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -437,19 +461,15 @@
 
     if-lez v4, :cond_4
 
-    iget-wide v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStreamSize:J
-
     goto :goto_2
 
     :cond_4
-    iget-wide v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStreamSize:J
+    const-wide/16 v6, 0x64
 
-    const-wide/16 v8, 0x64
-
-    div-long/2addr v6, v8
+    div-long/2addr v8, v6
 
     :goto_2
-    long-to-int v4, v6
+    long-to-int v4, v8
 
     :goto_3
     if-ge v5, v4, :cond_5
@@ -469,7 +489,11 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -486,9 +510,13 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     iget-wide v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStreamSize:J
 
     invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -586,16 +614,13 @@
     .line 243
     iget-wide v8, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStreamSize:J
 
-    sub-long/2addr v8, v2
+    sub-long v10, v8, v2
 
-    int-to-long v10, v4
+    int-to-long v12, v4
 
-    cmp-long v8, v8, v10
+    cmp-long v10, v10, v12
 
-    if-gez v8, :cond_6
-
-    .line 244
-    iget-wide v8, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$ReadThread;->mOutputStreamSize:J
+    if-gez v10, :cond_6
 
     sub-long/2addr v8, v2
 
@@ -705,6 +730,8 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-wide/high16 v2, 0x4059000000000000L    # 100.0
 
     mul-double/2addr v4, v2
@@ -719,9 +746,13 @@
 
     invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, "MB/s"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -878,6 +909,19 @@
 
 .method setArgument(Ljava/io/OutputStream;JJ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "stream",
+            "offset",
+            "streamSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -903,11 +947,15 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "set read information : "
+    const-string/jumbo v1, "set read information : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

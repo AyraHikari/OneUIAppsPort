@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/path_indicator_height" android:importantForAccessibility="no" style="@style/NavigationItemView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/list_subtitle_tab_arrow" android:layout_width="@dimen/path_indicator_arrow_size" android:layout_height="@dimen/path_indicator_arrow_size" android:src="@drawable/path_indicator_arrow" android:tint="@color/navigation_view_subtitle_arrow_color" />
+    <FrameLayout android:id="@id/list_subtitle_tab_item_container" android:background="@drawable/navigation_path_btn_background" android:padding="@dimen/path_indicator_frame_around" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textColor="@color/navigation_view_item_text" android:gravity="center" android:id="@id/list_subtitle_tab_item" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+</LinearLayout>

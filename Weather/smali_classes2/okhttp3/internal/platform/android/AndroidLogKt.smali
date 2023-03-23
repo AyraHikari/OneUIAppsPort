@@ -34,7 +34,6 @@
 .method public static final synthetic access$getAndroidLevel$p(Ljava/util/logging/LogRecord;)I
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lokhttp3/internal/platform/android/AndroidLogKt;->getAndroidLevel(Ljava/util/logging/LogRecord;)I
 
     move-result p0
@@ -45,7 +44,7 @@
 .method private static final getAndroidLevel(Ljava/util/logging/LogRecord;)I
     .locals 2
 
-    .line 32
+    .line 1
     invoke-virtual {p0}, Ljava/util/logging/LogRecord;->getLevel()Ljava/util/logging/Level;
 
     move-result-object v0
@@ -66,7 +65,7 @@
 
     goto :goto_0
 
-    .line 33
+    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/util/logging/LogRecord;->getLevel()Ljava/util/logging/Level;
 

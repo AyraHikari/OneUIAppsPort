@@ -12,6 +12,14 @@
 # direct methods
 .method constructor <init>(Landroid/widget/TextView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "textView"
+        }
+    .end annotation
 
     .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -73,6 +81,14 @@
 
 .method public setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "textClassifier"
+        }
+    .end annotation
 
     .line 51
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextClassifierHelper;->mTextClassifier:Landroid/view/textclassifier/TextClassifier;

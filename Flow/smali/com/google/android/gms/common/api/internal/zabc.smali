@@ -1,57 +1,78 @@
 .class final Lcom/google/android/gms/common/api/internal/zabc;
-.super Lcom/google/android/gms/common/api/internal/zabr;
+.super Lcom/google/android/gms/internal/base/zaq;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # instance fields
-.field private zahm:Ljava/lang/ref/WeakReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/ref/WeakReference<",
-            "Lcom/google/android/gms/common/api/internal/zaaw;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic zaa:Lcom/google/android/gms/common/api/internal/zabe;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/zaaw;)V
-    .locals 1
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/zabe;Landroid/os/Looper;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/internal/zabr;-><init>()V
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zabc;->zaa:Lcom/google/android/gms/common/api/internal/zabe;
 
-    .line 2
-    new-instance v0, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object v0, p0, Lcom/google/android/gms/common/api/internal/zabc;->zahm:Ljava/lang/ref/WeakReference;
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/base/zaq;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final zas()V
-    .locals 1
+.method public final handleMessage(Landroid/os/Message;)V
+    .locals 2
+
+    .line 1
+    iget v0, p1, Landroid/os/Message;->what:I
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zabc;->zahm:Ljava/lang/ref/WeakReference;
+    iget p1, p1, Landroid/os/Message;->what:I
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    const/16 v1, 0x1f
 
-    check-cast v0, Lcom/google/android/gms/common/api/internal/zaaw;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    if-nez v0, :cond_0
+    const-string v1, "Unknown message id: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "GoogleApiClientImpl"
+
+    invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 7
     :cond_0
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/zaaw;->zaa(Lcom/google/android/gms/common/api/internal/zaaw;)V
+    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zabc;->zaa:Lcom/google/android/gms/common/api/internal/zabe;
+
+    .line 2
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zabe;->zai(Lcom/google/android/gms/common/api/internal/zabe;)V
+
+    return-void
+
+    :cond_1
+    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zabc;->zaa:Lcom/google/android/gms/common/api/internal/zabe;
+
+    .line 3
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zabe;->zaj(Lcom/google/android/gms/common/api/internal/zabe;)V
 
     return-void
 .end method

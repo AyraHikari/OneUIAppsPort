@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">%d-с илүү зүйл сонгох боломжгүй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү зүйл сонгох боломжгүй.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d файлыг Хогийн сав руу зөөх боломжгүй</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг Хогийн сав руу зөөх боломжгүй</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d хавтсыг Хогийн сав руу зөөх боломжгүй</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг Хогийн сав руу зөөх боломжгүй</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d зүйлийг Хогийн сав руу зөөх боломжгүй</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг Хогийн сав руу зөөх боломжгүй</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Сонгосон файлын %d нь үүл эсвэл USB санах ойн төхөөрөмж дээр байгаа тул устах болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сонгосон файлын %d нь үүл эсвэл USB санах ойн төхөөрөмж дээр байгаа тул устах болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Сонгосон хавтасны %d нь үүл эсвэл USB санах ойн төхөөрөмж дээр байгаа тул устах болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сонгосон хавтасны %d нь үүл эсвэл USB санах ойн төхөөрөмж дээр байгаа тул устах болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Сонгосон зүйлийн %d нь үүл эсвэл USB санах ойн төхөөрөмж дээр байгаа тул устах болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сонгосон зүйлийн %d нь үүл эсвэл USB санах ойн төхөөрөмж дээр байгаа тул устах болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d файл шахаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл шахаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d файл шахаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл шахаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d хавтас шахаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас шахаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d хавтас шахаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас шахаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d зүйл шахаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл шахаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d зүйл шахаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл шахаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d файл хуулж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл хуулж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d файл хуулж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл хуулж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d хавтас хуулж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас хуулж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d хавтас хуулж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас хуулж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d зүйл хуулж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл хуулж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d зүйл хуулж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл хуулж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Таны утаснаас %d файл устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны утаснаас %d файл устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Таблетаасаа %d файл устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таблетаасаа %d файл устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Таны утаснаас %d хавтас устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны утаснаас %d хавтас устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Таблетаасаа %d хавтас устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таблетаасаа %d хавтас устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Таны утаснаас %d зүйл устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны утаснаас %d зүйл устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Таблетаасаа %d зүйл устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таблетаасаа %d зүйл устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d файл устгаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл устгаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d хавтас устгаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас устгаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d зүйл Хог.н сав.с устж б.н…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл Хог.н сав.с устж б.н…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d зүйл устгаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл устгаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d файл задалж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл задалж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d хавтас задалж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас задалж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d зүйл задалж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл задалж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d файлыг мөн %2$s доторх Хогийн сав руу зөөх болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d файлыг мөн %2$s доторх Хогийн сав руу зөөх болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d файл сэргээж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл сэргээж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d хавтсыг мөн %2$s-д Хогийн сав руу зөөх болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d хавтсыг мөн %2$s-д Хогийн сав руу зөөх болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d хавтас сэргээж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас сэргээж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Таны дотоод санах ой дүүрсэн. %d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дотоод санах ой дүүрсэн. %d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Таны дотоод санах ой дүүрсэн. %d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дотоод санах ой дүүрсэн. %d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Таны дотоод санах ой дүүрсэн. %d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дотоод санах ой дүүрсэн. %d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Таны дотоод санах ой ба SD карт дүүрсэн. %d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дотоод санах ой ба SD карт дүүрсэн. %d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Таны дотоод санах ой ба SD карт дүүрсэн. %d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дотоод санах ой ба SD карт дүүрсэн. %d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Таны дотоод санах ой ба SD карт дүүрсэн. %d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дотоод санах ой ба SD карт дүүрсэн. %d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d зүйл сэргээж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл сэргээж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d зүйлийг мөн %2$s доторх Хогийн сав руу зөөх болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d зүйлийг мөн %2$s доторх Хогийн сав руу зөөх болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">%d-с их хэрэглүүрийн цонх нээх боломжгүй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с их хэрэглүүрийн цонх нээх боломжгүй.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Хогийн сав руу %d файлыг зөөх үү?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Хогийн сав руу %d файлыг зөөх үү?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d файлыг Хогийн сав руу зөөх үү?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг Хогийн сав руу зөөх үү?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Хогийн сав руу %d хавтсыг зөөх үү?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Хогийн сав руу %d хавтсыг зөөх үү?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d хавтсыг Хогийн сав руу зөөх үү?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг Хогийн сав руу зөөх үү?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Хогийн сав руу %d зүйлийг зөөх үү?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Хогийн сав руу %d зүйлийг зөөх үү?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Хогийн сав руу %d зүйлийг зөөх үү?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Хогийн сав руу %d зүйлийг зөөх үү?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d файлыг Хогийн сав руу зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг Хогийн сав руу зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d хавтсыг Хогийн сав руу зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг Хогийн сав руу зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d зүйлийг Хогийн сав руу зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг Хогийн сав руу зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d файл зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d файл зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d хавтас зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d хавтас зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d зүйл зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d зүйл зөөж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл зөөж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d зүйлийг шахсан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг шахсан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d зүйлийг %2$s руу хууллаа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d зүйлийг %2$s руу хууллаа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Хавтас болон доторх %d файлыг устгах уу?</item>
+        <item quantity="one">Хавтас болон доторх файлыг устгах уу?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d хавтас болон доторх %2$d файлыг устгах уу?</item>
+        <item quantity="one">Хавтас болон доторх файлыг устгах уу?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d зүйлийг устгасан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг устгасан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d файлыг татаж авч байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг татаж авч байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d хавтсыг татаж авч байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг татаж авч байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d зүйлийг татаж авч байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг татаж авч байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Хавтаснууд хуваалцах боломжгүй. Хавтаснууд хоосон.</item>
+        <item quantity="one">Хавтсыг хуваалцах боломжгүй. Хавтас хоосон.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d файлыг бүрмөсөн устгасан.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг бүрмөсөн устгасан.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d хавтсыг бүрмөсөн устгана.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг бүрмөсөн устгана.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d зүйлийг задалсан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг задалсан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d файлыг Дуртай зүйлд нэмлээ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг Дуртай зүйлд нэмлээ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d файлыг Дуртай зүйлсээс арилгасан.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг Дуртай зүйлсээс арилгасан.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d хавтсыг Дуртай зүйлд нэмлээ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг Дуртай зүйлд нэмлээ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d хавтсыг Дуртай зүйлсээс арилгасан.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг Дуртай зүйлсээс арилгасан.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d зүйлийг Дуртай зүйлд нэмлээ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг Дуртай зүйлд нэмлээ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d зүйлийг Дуртай зүйлсээс арилгасан.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг Дуртай зүйлсээс арилгасан.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d зүйл</item>
+        <item quantity="one">1 зүйл</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d зүйл</item>
+        <item quantity="one">%d зүйл</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d зүйлийг түр санах ой руу хуулсан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг түр санах ой руу хуулсан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d зүйлийг түр санах ой руу зөөсөн</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг түр санах ой руу зөөсөн</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d зүйлс сонгогдсон</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлс сонгогдсон</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d зүйл %2$s руу зөөсөн</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d зүйл %2$s руу зөөсөн</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d зүйл Хогийн сав руу зөөсөн</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл Хогийн сав руу зөөсөн</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d сонгогдсон</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d сонгогдсон</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Таны SD карт дүүрсэн. %d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны SD карт дүүрсэн. %d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Таны SD карт дүүрсэн. %d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны SD карт дүүрсэн. %d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Таны SD карт дүүрсэн. %d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны SD карт дүүрсэн. %d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Энэ файлыг %d өдрийн дараа устгах болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Энэ файлыг %d өдрийн дараа устгах болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Энэ хавтсыг %d өдрийн дараа устгах болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Энэ хавтсыг %d өдрийн дараа устгах болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d файл устгаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл устгаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d файл сэргээж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файл сэргээж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтсыг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d хавтас устгаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас устгаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d хавтас сэргээж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хавтас сэргээж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйлийг бүрмөсөн устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d зүйл устгаж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл устгаж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d зүйл сэргээж байна…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d зүйл сэргээж байна…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d өдрийн дараа устгана</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d өдрийн дараа устгана</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d хэрэглүүрийг устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хэрэглүүрийг устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

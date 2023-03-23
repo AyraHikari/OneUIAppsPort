@@ -1,101 +1,120 @@
 .class public final Lcom/google/android/gms/signin/internal/zag;
-.super Lcom/google/android/gms/internal/base/zaa;
+.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/signin/internal/zaf;
+.implements Lcom/google/android/gms/common/api/Result;
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/google/android/gms/signin/internal/zag;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final zaa:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final zab:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Landroid/os/IBinder;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "com.google.android.gms.signin.internal.ISignInService"
+    new-instance v0, Lcom/google/android/gms/signin/internal/zah;
+
+    invoke-direct {v0}, Lcom/google/android/gms/signin/internal/zah;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/signin/internal/zag;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/signin/internal/zag;->zaa:Ljava/util/List;
+
+    iput-object p2, p0, Lcom/google/android/gms/signin/internal/zag;->zab:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final zaa(Lcom/google/android/gms/common/internal/IAccountAccessor;IZ)V
+.method public final getStatus()Lcom/google/android/gms/common/api/Status;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 7
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zaa;->zaa()Landroid/os/Parcel;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zag;->zab:Ljava/lang/String;
 
-    move-result-object v0
+    if-eqz v0, :cond_0
 
-    .line 8
-    invoke-static {v0, p1}, Lcom/google/android/gms/internal/base/zac;->zaa(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->RESULT_SUCCESS:Lcom/google/android/gms/common/api/Status;
 
-    .line 9
-    invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
+    return-object v0
 
-    .line 10
-    invoke-static {v0, p3}, Lcom/google/android/gms/internal/base/zac;->writeBoolean(Landroid/os/Parcel;Z)V
+    .line 2
+    :cond_0
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->RESULT_CANCELED:Lcom/google/android/gms/common/api/Status;
 
-    const/16 p1, 0x9
-
-    .line 11
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;->zab(ILandroid/os/Parcel;)V
-
-    return-void
+    return-object v0
 .end method
 
-.method public final zaa(Lcom/google/android/gms/signin/internal/zah;Lcom/google/android/gms/signin/internal/zad;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 3
 
-    .line 13
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zaa;->zaa()Landroid/os/Parcel;
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
 
-    move-result-object v0
+    move-result p2
 
-    .line 14
-    invoke-static {v0, p1}, Lcom/google/android/gms/internal/base/zac;->zaa(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zag;->zaa:Ljava/util/List;
 
-    .line 15
-    invoke-static {v0, p2}, Lcom/google/android/gms/internal/base/zac;->zaa(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    const/4 v1, 0x1
 
-    const/16 p1, 0xc
+    const/4 v2, 0x0
 
-    .line 16
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;->zab(ILandroid/os/Parcel;)V
+    .line 2
+    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeStringList(Landroid/os/Parcel;ILjava/util/List;Z)V
 
-    return-void
-.end method
+    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zag;->zab:Ljava/lang/String;
 
-.method public final zam(I)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+    const/4 v1, 0x2
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zaa;->zaa()Landroid/os/Parcel;
-
-    move-result-object v0
+    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeString(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 p1, 0x7
-
-    .line 5
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;->zab(ILandroid/os/Parcel;)V
+    invoke-static {p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
 
     return-void
 .end method

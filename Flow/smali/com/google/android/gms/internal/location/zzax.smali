@@ -1,88 +1,44 @@
 .class final Lcom/google/android/gms/internal/location/zzax;
-.super Lcom/google/android/gms/location/zzy;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
+
+# interfaces
+.implements Lcom/google/android/gms/common/api/internal/ListenerHolder$Notifier;
 
 
 # instance fields
-.field private final zzda:Lcom/google/android/gms/common/api/internal/ListenerHolder;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/gms/common/api/internal/ListenerHolder<",
-            "Lcom/google/android/gms/location/LocationListener;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic zza:Lcom/google/android/gms/location/LocationAvailability;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/ListenerHolder;)V
+.method constructor <init>(Lcom/google/android/gms/internal/location/zzay;Lcom/google/android/gms/location/LocationAvailability;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/api/internal/ListenerHolder<",
-            "Lcom/google/android/gms/location/LocationListener;",
-            ">;)V"
-        }
-    .end annotation
 
-    invoke-direct {p0}, Lcom/google/android/gms/location/zzy;-><init>()V
+    iput-object p2, p0, Lcom/google/android/gms/internal/location/zzax;->zza:Lcom/google/android/gms/location/LocationAvailability;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzax;->zzda:Lcom/google/android/gms/common/api/internal/ListenerHolder;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized onLocationChanged(Landroid/location/Location;)V
-    .locals 2
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzax;->zzda:Lcom/google/android/gms/common/api/internal/ListenerHolder;
-
-    new-instance v1, Lcom/google/android/gms/internal/location/zzay;
-
-    invoke-direct {v1, p0, p1}, Lcom/google/android/gms/internal/location/zzay;-><init>(Lcom/google/android/gms/internal/location/zzax;Landroid/location/Location;)V
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/common/api/internal/ListenerHolder;->notifyListener(Lcom/google/android/gms/common/api/internal/ListenerHolder$Notifier;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public final declared-synchronized release()V
+.method public final synthetic notifyListener(Ljava/lang/Object;)V
     .locals 1
 
-    monitor-enter p0
+    .line 1
+    check-cast p1, Lcom/google/android/gms/location/LocationCallback;
 
-    :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzax;->zzda:Lcom/google/android/gms/common/api/internal/ListenerHolder;
+    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzax;->zza:Lcom/google/android/gms/location/LocationAvailability;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/ListenerHolder;->clear()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
+    .line 2
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/location/LocationCallback;->onLocationAvailability(Lcom/google/android/gms/location/LocationAvailability;)V
 
     return-void
+.end method
 
-    :catchall_0
-    move-exception v0
+.method public final onNotifyListenerFailed()V
+    .locals 0
 
-    monitor-exit p0
-
-    throw v0
+    return-void
 .end method

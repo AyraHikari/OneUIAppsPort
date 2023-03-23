@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_actionbar_marginBottom">8.0dip</dimen>
+    <item type="dimen" name="setting_preview_xx2_area_width">0.65</item>
+    <dimen name="setting_preview_xx2_bg_height">182.0dip</dimen>
+</resources>

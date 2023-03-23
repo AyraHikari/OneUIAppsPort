@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/appindexing/AppIndexApi$AppIndexingLink;
 .super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # annotations
@@ -28,16 +29,13 @@
 .method public constructor <init>(Landroid/net/Uri;Landroid/net/Uri;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/android/gms/appindexing/AppIndexApi$AppIndexingLink;->appIndexingUrl:Landroid/net/Uri;
 
-    .line 3
     iput-object p2, p0, Lcom/google/android/gms/appindexing/AppIndexApi$AppIndexingLink;->webUrl:Landroid/net/Uri;
 
-    .line 4
+    .line 1
     invoke-virtual {p3}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -52,7 +50,7 @@
 
     const/4 v0, 0x0
 
-    .line 6
+    .line 2
     invoke-direct {p0, p1, v0, p2}, Lcom/google/android/gms/appindexing/AppIndexApi$AppIndexingLink;-><init>(Landroid/net/Uri;Landroid/net/Uri;Landroid/view/View;)V
 
     return-void

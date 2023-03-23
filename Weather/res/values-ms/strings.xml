@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Log masuk</string>
     <string name="common_signin_button_text_long">Log masuk dengan Google</string>
     <string name="copy">Salin</string>
-    <string name="copy_toast_msg">Pautan disalin ke papan keratan</string>
     <string name="error_icon_content_description">Ralat</string>
     <string name="expand_button_title">Terperinci</string>
     <string name="exposed_dropdown_menu_content_description">Tunjukkan menu lungsur</string>
-    <string name="fallback_menu_item_copy_link">Salin pautan</string>
-    <string name="fallback_menu_item_open_in_browser">Buka dalam penyemak imbas</string>
-    <string name="fallback_menu_item_share_link">Kongsi pautan</string>
     <string name="icon_content_description">Ikon Dialog</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Pilih AM atau PM</string>

@@ -100,6 +100,16 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cmd",
+            "body"
+        }
+    .end annotation
 
     .line 114
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -155,6 +165,16 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cmd",
+            "result"
+        }
+    .end annotation
 
     .line 85
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -210,6 +230,18 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cmd",
+            "result",
+            "version"
+        }
+    .end annotation
 
     .line 92
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -261,6 +293,18 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_type",
+            "_msg",
+            "_param"
+        }
+    .end annotation
 
     .line 105
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -508,6 +552,16 @@
 
 .method public toBytes(Ljava/lang/String;Z)[B
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "address",
+            "isEncriptionNeed"
+        }
+    .end annotation
 
     .line 140
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->toJson()Ljava/lang/String;

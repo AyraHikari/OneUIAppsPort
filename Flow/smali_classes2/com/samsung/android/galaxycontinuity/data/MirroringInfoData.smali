@@ -28,6 +28,14 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cmdType"
+        }
+    .end annotation
 
     .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,6 +48,20 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cmdType",
+            "hostName",
+            "mainPortNum",
+            "version"
+        }
+    .end annotation
 
     .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

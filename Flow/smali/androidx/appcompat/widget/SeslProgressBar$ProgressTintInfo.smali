@@ -52,7 +52,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2179
+    .line 2378
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +61,7 @@
 .method synthetic constructor <init>(Landroidx/appcompat/widget/SeslProgressBar$1;)V
     .locals 0
 
-    .line 2179
+    .line 2378
     invoke-direct {p0}, Landroidx/appcompat/widget/SeslProgressBar$ProgressTintInfo;-><init>()V
 
     return-void

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_main_layout" android:background="@color/col_0_000000" android:layout_width="@dimen/widget_news_popup_dialog_image_width" android:layout_height="@dimen/widget_news_popup_dialog_image_height" android:layout_marginVertical="@dimen/widget_news_dialog_margin_preview"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/preview_background" android:background="@drawable/widget_bg_news" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/widget_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/widget_2x1_start_end_padding">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center" android:id="@id/temperature_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/city_name_area">
+                    <ImageView android:id="@id/widget_current_weather_icon" android:background="@drawable/ic_partly_sunny" android:layout_width="@dimen/news_widget_2x2_weather_icon_size" android:layout_height="@dimen/news_widget_2x2_weather_icon_size" android:layout_marginEnd="@dimen/news_widget_2x2_weather_icon_marginEnd" />
+                    <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Temperature" android:textSize="@dimen/news_widget_2x2_temperature_text_size" android:textColor="#fffafafa" android:ellipsize="end" android:id="@id/widget_current_temp_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23°" android:maxLines="1" android:includeFontPadding="false" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/city_name_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/news_widget_2x2_city_name_marginTop">
+                    <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.CityName" android:textSize="@dimen/news_widget_2x2_city_name_text_size" android:textColor="#fffafafa" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/widget_current_city_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_location" android:maxLines="1" android:includeFontPadding="false" />
+                </LinearLayout>
+                <LinearLayout android:gravity="end|center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/widget_update_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/news_widget_2x2_updated_text_marginTop">
+                    <TextClock android:textSize="@dimen/news_widget_2x2_updated_text_size" android:textColor="#fffafafa" android:ellipsize="end" android:layout_gravity="end" android:id="@id/widget_update_text_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="12:45 AM" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="@dimen/widget_2x2_updated_text_marginEnd" style="@style/WeatherWidget.TextAppearance.LastUpdate" />
+                    <ImageView android:id="@id/widget_refresh_icon" android:layout_width="@dimen/news_widget_2x2_refresh_progress_size" android:layout_height="@dimen/news_widget_2x2_refresh_progress_size" android:src="@drawable/weather_widget_4x4_ic_updated_mtrl_no_theme" android:scaleType="fitXY" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/widget_divider" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="0.2" android:layout_marginHorizontal="@dimen/news_widget_2x2_divider_marginHorizontal" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:orientation="horizontal" android:id="@id/news_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+                <include android:id="@id/news_dummy_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/news_layout" />
+                <include layout="@layout/widget_news_arrow_previous" />
+                <include layout="@layout/widget_news_arrow_next" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

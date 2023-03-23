@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1453
+    .line 1424
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$7;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 4
 
-    .line 1457
+    .line 1428
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource$7;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;->REQUEST_BY_PC:Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;
@@ -47,7 +55,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v0, v2, v1, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$2100(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;Z)V
+    invoke-static {v0, v2, v1, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->access$2000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/mirroring/utils/Utils$CONTROL_REQUESTOR;Z)V
 
     return-void
 .end method

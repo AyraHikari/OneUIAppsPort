@@ -1,44 +1,44 @@
 .class public Landroidx/work/impl/foreground/SystemForegroundService;
-.super Landroidx/lifecycle/LifecycleService;
+.super Landroidx/lifecycle/a0;
 .source "SystemForegroundService.java"
 
 # interfaces
-.implements Landroidx/work/impl/foreground/SystemForegroundDispatcher$Callback;
+.implements Landroidx/work/impl/foreground/a$b;
 
 
 # static fields
-.field private static final TAG:Ljava/lang/String;
+.field public static final m:Ljava/lang/String;
 
-.field private static sForegroundService:Landroidx/work/impl/foreground/SystemForegroundService;
+.field public static n:Landroidx/work/impl/foreground/SystemForegroundService;
 
 
 # instance fields
-.field mDispatcher:Landroidx/work/impl/foreground/SystemForegroundDispatcher;
+.field public i:Landroid/os/Handler;
 
-.field private mHandler:Landroid/os/Handler;
+.field public j:Z
 
-.field private mIsShutdown:Z
+.field public k:Landroidx/work/impl/foreground/a;
 
-.field mNotificationManager:Landroid/app/NotificationManager;
+.field public l:Landroid/app/NotificationManager;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     const-string v0, "SystemFgService"
 
-    .line 42
-    invoke-static {v0}, Landroidx/work/Logger;->tagWithPrefix(Ljava/lang/String;)Ljava/lang/String;
+    .line 1
+    invoke-static {v0}, Lj2/n;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Landroidx/work/impl/foreground/SystemForegroundService;->TAG:Ljava/lang/String;
+    sput-object v0, Landroidx/work/impl/foreground/SystemForegroundService;->m:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    .line 45
-    sput-object v0, Landroidx/work/impl/foreground/SystemForegroundService;->sForegroundService:Landroidx/work/impl/foreground/SystemForegroundService;
+    .line 2
+    sput-object v0, Landroidx/work/impl/foreground/SystemForegroundService;->n:Landroidx/work/impl/foreground/SystemForegroundService;
 
     return-void
 .end method
@@ -46,93 +46,40 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 39
-    invoke-direct {p0}, Landroidx/lifecycle/LifecycleService;-><init>()V
-
-    return-void
-.end method
-
-.method public static getInstance()Landroidx/work/impl/foreground/SystemForegroundService;
-    .locals 1
-
-    .line 157
-    sget-object v0, Landroidx/work/impl/foreground/SystemForegroundService;->sForegroundService:Landroidx/work/impl/foreground/SystemForegroundService;
-
-    return-object v0
-.end method
-
-.method private initializeDispatcher()V
-    .locals 2
-
-    .line 93
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mHandler:Landroid/os/Handler;
-
-    .line 95
-    invoke-virtual {p0}, Landroidx/work/impl/foreground/SystemForegroundService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "notification"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/NotificationManager;
-
-    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mNotificationManager:Landroid/app/NotificationManager;
-
-    .line 96
-    new-instance v0, Landroidx/work/impl/foreground/SystemForegroundDispatcher;
-
-    invoke-virtual {p0}, Landroidx/work/impl/foreground/SystemForegroundService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroidx/work/impl/foreground/SystemForegroundDispatcher;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mDispatcher:Landroidx/work/impl/foreground/SystemForegroundDispatcher;
-
-    .line 97
-    invoke-virtual {v0, p0}, Landroidx/work/impl/foreground/SystemForegroundDispatcher;->setCallback(Landroidx/work/impl/foreground/SystemForegroundDispatcher$Callback;)V
+    invoke-direct {p0}, Landroidx/lifecycle/a0;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public cancelNotification(I)V
+.method public d(IILandroid/app/Notification;)V
     .locals 2
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
+            0x10,
+            0x10,
             0x10
         }
         names = {
-            "notificationId"
+            "notificationId",
+            "notificationType",
+            "notification"
         }
     .end annotation
 
-    .line 144
-    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->i:Landroid/os/Handler;
 
-    new-instance v1, Landroidx/work/impl/foreground/SystemForegroundService$3;
+    new-instance v1, Landroidx/work/impl/foreground/SystemForegroundService$a;
 
-    invoke-direct {v1, p0, p1}, Landroidx/work/impl/foreground/SystemForegroundService$3;-><init>(Landroidx/work/impl/foreground/SystemForegroundService;I)V
+    invoke-direct {v1, p0, p1, p3, p2}, Landroidx/work/impl/foreground/SystemForegroundService$a;-><init>(Landroidx/work/impl/foreground/SystemForegroundService;ILandroid/app/Notification;I)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method
 
-.method public notify(ILandroid/app/Notification;)V
+.method public e(ILandroid/app/Notification;)V
     .locals 2
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
@@ -145,14 +92,81 @@
         }
     .end annotation
 
-    .line 134
-    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->i:Landroid/os/Handler;
 
-    new-instance v1, Landroidx/work/impl/foreground/SystemForegroundService$2;
+    new-instance v1, Landroidx/work/impl/foreground/SystemForegroundService$b;
 
-    invoke-direct {v1, p0, p1, p2}, Landroidx/work/impl/foreground/SystemForegroundService$2;-><init>(Landroidx/work/impl/foreground/SystemForegroundService;ILandroid/app/Notification;)V
+    invoke-direct {v1, p0, p1, p2}, Landroidx/work/impl/foreground/SystemForegroundService$b;-><init>(Landroidx/work/impl/foreground/SystemForegroundService;ILandroid/app/Notification;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public f(I)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "notificationId"
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->i:Landroid/os/Handler;
+
+    new-instance v1, Landroidx/work/impl/foreground/SystemForegroundService$c;
+
+    invoke-direct {v1, p0, p1}, Landroidx/work/impl/foreground/SystemForegroundService$c;-><init>(Landroidx/work/impl/foreground/SystemForegroundService;I)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public final g()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->i:Landroid/os/Handler;
+
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "notification"
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/NotificationManager;
+
+    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->l:Landroid/app/NotificationManager;
+
+    .line 3
+    new-instance v0, Landroidx/work/impl/foreground/a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroidx/work/impl/foreground/a;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->k:Landroidx/work/impl/foreground/a;
+
+    .line 4
+    invoke-virtual {v0, p0}, Landroidx/work/impl/foreground/a;->m(Landroidx/work/impl/foreground/a$b;)V
 
     return-void
 .end method
@@ -160,14 +174,14 @@
 .method public onCreate()V
     .locals 0
 
-    .line 57
-    invoke-super {p0}, Landroidx/lifecycle/LifecycleService;->onCreate()V
+    .line 1
+    invoke-super {p0}, Landroidx/lifecycle/a0;->onCreate()V
 
-    .line 58
-    sput-object p0, Landroidx/work/impl/foreground/SystemForegroundService;->sForegroundService:Landroidx/work/impl/foreground/SystemForegroundService;
+    .line 2
+    sput-object p0, Landroidx/work/impl/foreground/SystemForegroundService;->n:Landroidx/work/impl/foreground/SystemForegroundService;
 
-    .line 59
-    invoke-direct {p0}, Landroidx/work/impl/foreground/SystemForegroundService;->initializeDispatcher()V
+    .line 3
+    invoke-virtual {p0}, Landroidx/work/impl/foreground/SystemForegroundService;->g()V
 
     return-void
 .end method
@@ -175,13 +189,13 @@
 .method public onDestroy()V
     .locals 1
 
-    .line 87
-    invoke-super {p0}, Landroidx/lifecycle/LifecycleService;->onDestroy()V
+    .line 1
+    invoke-super {p0}, Landroidx/lifecycle/a0;->onDestroy()V
 
-    .line 88
-    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mDispatcher:Landroidx/work/impl/foreground/SystemForegroundDispatcher;
+    .line 2
+    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->k:Landroidx/work/impl/foreground/a;
 
-    invoke-virtual {v0}, Landroidx/work/impl/foreground/SystemForegroundDispatcher;->onDestroy()V
+    invoke-virtual {v0}, Landroidx/work/impl/foreground/a;->k()V
 
     return-void
 .end method
@@ -201,20 +215,20 @@
         }
     .end annotation
 
-    .line 64
-    invoke-super {p0, p1, p2, p3}, Landroidx/lifecycle/LifecycleService;->onStartCommand(Landroid/content/Intent;II)I
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Landroidx/lifecycle/a0;->onStartCommand(Landroid/content/Intent;II)I
 
-    .line 65
-    iget-boolean p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mIsShutdown:Z
+    .line 2
+    iget-boolean p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->j:Z
 
     if-eqz p2, :cond_0
 
-    .line 66
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 3
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object p2
 
-    sget-object p3, Landroidx/work/impl/foreground/SystemForegroundService;->TAG:Ljava/lang/String;
+    sget-object p3, Landroidx/work/impl/foreground/SystemForegroundService;->m:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -222,26 +236,26 @@
 
     const-string v2, "Re-initializing SystemForegroundService after a request to shut-down."
 
-    invoke-virtual {p2, p3, v2, v1}, Landroidx/work/Logger;->info(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {p2, p3, v2, v1}, Lj2/n;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 70
-    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mDispatcher:Landroidx/work/impl/foreground/SystemForegroundDispatcher;
+    .line 4
+    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->k:Landroidx/work/impl/foreground/a;
 
-    invoke-virtual {p2}, Landroidx/work/impl/foreground/SystemForegroundDispatcher;->onDestroy()V
+    invoke-virtual {p2}, Landroidx/work/impl/foreground/a;->k()V
 
-    .line 72
-    invoke-direct {p0}, Landroidx/work/impl/foreground/SystemForegroundService;->initializeDispatcher()V
+    .line 5
+    invoke-virtual {p0}, Landroidx/work/impl/foreground/SystemForegroundService;->g()V
 
-    .line 74
-    iput-boolean v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mIsShutdown:Z
+    .line 6
+    iput-boolean v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->j:Z
 
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 78
-    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mDispatcher:Landroidx/work/impl/foreground/SystemForegroundDispatcher;
+    .line 7
+    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->k:Landroidx/work/impl/foreground/a;
 
-    invoke-virtual {p2, p1}, Landroidx/work/impl/foreground/SystemForegroundDispatcher;->onStartCommand(Landroid/content/Intent;)V
+    invoke-virtual {p2, p1}, Landroidx/work/impl/foreground/a;->l(Landroid/content/Intent;)V
 
     :cond_1
     const/4 p1, 0x3
@@ -249,47 +263,20 @@
     return p1
 .end method
 
-.method public startForeground(IILandroid/app/Notification;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10,
-            0x10,
-            0x10
-        }
-        names = {
-            "notificationId",
-            "notificationType",
-            "notification"
-        }
-    .end annotation
-
-    .line 120
-    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mHandler:Landroid/os/Handler;
-
-    new-instance v1, Landroidx/work/impl/foreground/SystemForegroundService$1;
-
-    invoke-direct {v1, p0, p1, p3, p2}, Landroidx/work/impl/foreground/SystemForegroundService$1;-><init>(Landroidx/work/impl/foreground/SystemForegroundService;ILandroid/app/Notification;I)V
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    return-void
-.end method
-
 .method public stop()V
     .locals 5
 
     const/4 v0, 0x1
 
-    .line 103
-    iput-boolean v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->mIsShutdown:Z
+    .line 1
+    iput-boolean v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->j:Z
 
-    .line 104
-    invoke-static {}, Landroidx/work/Logger;->get()Landroidx/work/Logger;
+    .line 2
+    invoke-static {}, Lj2/n;->c()Lj2/n;
 
     move-result-object v1
 
-    sget-object v2, Landroidx/work/impl/foreground/SystemForegroundService;->TAG:Ljava/lang/String;
+    sget-object v2, Landroidx/work/impl/foreground/SystemForegroundService;->m:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -297,26 +284,18 @@
 
     const-string v4, "All commands completed."
 
-    invoke-virtual {v1, v2, v4, v3}, Landroidx/work/Logger;->debug(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v2, v4, v3}, Lj2/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    .line 107
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/app/Service;->stopForeground(Z)V
 
-    const/16 v2, 0x1a
-
-    if-lt v1, v2, :cond_0
-
-    .line 108
-    invoke-virtual {p0, v0}, Landroidx/work/impl/foreground/SystemForegroundService;->stopForeground(Z)V
-
-    :cond_0
     const/4 v0, 0x0
 
-    .line 110
-    sput-object v0, Landroidx/work/impl/foreground/SystemForegroundService;->sForegroundService:Landroidx/work/impl/foreground/SystemForegroundService;
+    .line 4
+    sput-object v0, Landroidx/work/impl/foreground/SystemForegroundService;->n:Landroidx/work/impl/foreground/SystemForegroundService;
 
-    .line 111
-    invoke-virtual {p0}, Landroidx/work/impl/foreground/SystemForegroundService;->stopSelf()V
+    .line 5
+    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
 
     return-void
 .end method

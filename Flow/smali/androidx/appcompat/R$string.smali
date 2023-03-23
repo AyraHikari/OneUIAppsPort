@@ -14,121 +14,147 @@
 
 
 # static fields
-.field public static final abc_action_bar_home_description:I = 0x7f100002
+.field public static final abc_action_bar_home_description:I = 0x7f110002
 
-.field public static final abc_action_bar_up_description:I = 0x7f100003
+.field public static final abc_action_bar_up_description:I = 0x7f110003
 
-.field public static final abc_action_menu_overflow_description:I = 0x7f100004
+.field public static final abc_action_menu_overflow_description:I = 0x7f110004
 
-.field public static final abc_action_mode_done:I = 0x7f100005
+.field public static final abc_action_mode_done:I = 0x7f110005
 
-.field public static final abc_activity_chooser_view_see_all:I = 0x7f100006
+.field public static final abc_activity_chooser_view_see_all:I = 0x7f110006
 
-.field public static final abc_activitychooserview_choose_application:I = 0x7f100007
+.field public static final abc_activitychooserview_choose_application:I = 0x7f110007
 
-.field public static final abc_capital_off:I = 0x7f100008
+.field public static final abc_capital_off:I = 0x7f110008
 
-.field public static final abc_capital_on:I = 0x7f100009
+.field public static final abc_capital_on:I = 0x7f110009
 
-.field public static final abc_menu_alt_shortcut_label:I = 0x7f10000a
+.field public static final abc_menu_alt_shortcut_label:I = 0x7f11000a
 
-.field public static final abc_menu_ctrl_shortcut_label:I = 0x7f10000b
+.field public static final abc_menu_ctrl_shortcut_label:I = 0x7f11000b
 
-.field public static final abc_menu_delete_shortcut_label:I = 0x7f10000c
+.field public static final abc_menu_delete_shortcut_label:I = 0x7f11000c
 
-.field public static final abc_menu_enter_shortcut_label:I = 0x7f10000d
+.field public static final abc_menu_enter_shortcut_label:I = 0x7f11000d
 
-.field public static final abc_menu_function_shortcut_label:I = 0x7f10000e
+.field public static final abc_menu_function_shortcut_label:I = 0x7f11000e
 
-.field public static final abc_menu_meta_shortcut_label:I = 0x7f10000f
+.field public static final abc_menu_meta_shortcut_label:I = 0x7f11000f
 
-.field public static final abc_menu_shift_shortcut_label:I = 0x7f100010
+.field public static final abc_menu_shift_shortcut_label:I = 0x7f110010
 
-.field public static final abc_menu_space_shortcut_label:I = 0x7f100011
+.field public static final abc_menu_space_shortcut_label:I = 0x7f110011
 
-.field public static final abc_menu_sym_shortcut_label:I = 0x7f100012
+.field public static final abc_menu_sym_shortcut_label:I = 0x7f110012
 
-.field public static final abc_prepend_shortcut_label:I = 0x7f100013
+.field public static final abc_prepend_shortcut_label:I = 0x7f110013
 
-.field public static final abc_search_hint:I = 0x7f100014
+.field public static final abc_search_hint:I = 0x7f110014
 
-.field public static final abc_searchview_description_clear:I = 0x7f100015
+.field public static final abc_searchview_description_clear:I = 0x7f110015
 
-.field public static final abc_searchview_description_query:I = 0x7f100016
+.field public static final abc_searchview_description_query:I = 0x7f110016
 
-.field public static final abc_searchview_description_search:I = 0x7f100017
+.field public static final abc_searchview_description_search:I = 0x7f110017
 
-.field public static final abc_searchview_description_submit:I = 0x7f100018
+.field public static final abc_searchview_description_submit:I = 0x7f110018
 
-.field public static final abc_searchview_description_voice:I = 0x7f100019
+.field public static final abc_searchview_description_voice:I = 0x7f110019
 
-.field public static final abc_shareactionprovider_share_with:I = 0x7f10001a
+.field public static final abc_shareactionprovider_share_with:I = 0x7f11001a
 
-.field public static final abc_shareactionprovider_share_with_application:I = 0x7f10001b
+.field public static final abc_shareactionprovider_share_with_application:I = 0x7f11001b
 
-.field public static final abc_toolbar_collapse_description:I = 0x7f10001c
+.field public static final abc_toolbar_collapse_description:I = 0x7f11001c
 
-.field public static final search_menu_title:I = 0x7f10017a
+.field public static final androidx_startup:I = 0x7f11002b
 
-.field public static final sesl_action_bar_home_description:I = 0x7f10017f
+.field public static final dragndroplist_drag_release:I = 0x7f1100ba
 
-.field public static final sesl_action_bar_home_description_format:I = 0x7f100180
+.field public static final dragndroplist_drag_start:I = 0x7f1100bb
 
-.field public static final sesl_action_bar_home_subtitle_description_format:I = 0x7f100181
+.field public static final dragndroplist_item_cannot_be_dragged:I = 0x7f1100bc
 
-.field public static final sesl_action_bar_up_description:I = 0x7f100182
+.field public static final search_menu_title:I = 0x7f1101eb
 
-.field public static final sesl_action_menu_overflow_badge_description:I = 0x7f100183
+.field public static final sesl_action_bar_home_description:I = 0x7f1101f0
 
-.field public static final sesl_action_menu_overflow_badge_text_n:I = 0x7f100184
+.field public static final sesl_action_bar_home_description_format:I = 0x7f1101f1
 
-.field public static final sesl_action_menu_overflow_description:I = 0x7f100185
+.field public static final sesl_action_bar_home_subtitle_description_format:I = 0x7f1101f2
 
-.field public static final sesl_action_mode_done:I = 0x7f100186
+.field public static final sesl_action_bar_up_description:I = 0x7f1101f3
 
-.field public static final sesl_activity_chooser_view_see_all:I = 0x7f100187
+.field public static final sesl_action_menu_overflow_badge_description:I = 0x7f1101f4
 
-.field public static final sesl_activitychooserview_choose_application:I = 0x7f100188
+.field public static final sesl_action_menu_overflow_badge_text_n:I = 0x7f1101f5
 
-.field public static final sesl_capital_off:I = 0x7f10018a
+.field public static final sesl_action_menu_overflow_description:I = 0x7f1101f6
 
-.field public static final sesl_capital_on:I = 0x7f10018b
+.field public static final sesl_action_mode_done:I = 0x7f1101f7
 
-.field public static final sesl_font_family_condensed:I = 0x7f10018c
+.field public static final sesl_activity_chooser_view_see_all:I = 0x7f1101f8
 
-.field public static final sesl_font_family_regular:I = 0x7f10018d
+.field public static final sesl_activitychooserview_choose_application:I = 0x7f1101f9
 
-.field public static final sesl_more_item_label:I = 0x7f10018e
+.field public static final sesl_capital_off:I = 0x7f1101fc
 
-.field public static final sesl_preferencecategory_added_title:I = 0x7f100191
+.field public static final sesl_capital_on:I = 0x7f1101fd
 
-.field public static final sesl_search_hint:I = 0x7f100192
+.field public static final sesl_font_family_bold:I = 0x7f1101fe
 
-.field public static final sesl_search_menu_title:I = 0x7f100193
+.field public static final sesl_font_family_light:I = 0x7f1101ff
 
-.field public static final sesl_searchview_description_clear:I = 0x7f100194
+.field public static final sesl_font_family_medium:I = 0x7f110200
 
-.field public static final sesl_searchview_description_query:I = 0x7f100195
+.field public static final sesl_font_family_regular:I = 0x7f110201
 
-.field public static final sesl_searchview_description_search:I = 0x7f100196
+.field public static final sesl_index_assistant_text:I = 0x7f110203
 
-.field public static final sesl_searchview_description_submit:I = 0x7f100197
+.field public static final sesl_index_scrollbar:I = 0x7f110204
 
-.field public static final sesl_searchview_description_voice:I = 0x7f100198
+.field public static final sesl_index_section:I = 0x7f110205
 
-.field public static final sesl_shareactionprovider_share_with:I = 0x7f100199
+.field public static final sesl_index_selected:I = 0x7f110206
 
-.field public static final sesl_shareactionprovider_share_with_application:I = 0x7f10019a
+.field public static final sesl_more_item_label:I = 0x7f110209
 
-.field public static final sesl_switch:I = 0x7f10019b
+.field public static final sesl_preferecne_badge_description:I = 0x7f11020a
 
-.field public static final sesl_switch_off:I = 0x7f10019c
+.field public static final sesl_preferencecategory_added_title:I = 0x7f11020d
 
-.field public static final sesl_switch_on:I = 0x7f10019d
+.field public static final sesl_search_hint:I = 0x7f11020e
 
-.field public static final sesl_toolbar_collapse_description:I = 0x7f10019e
+.field public static final sesl_search_menu_title:I = 0x7f11020f
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f1001c9
+.field public static final sesl_searchview_description_clear:I = 0x7f110210
+
+.field public static final sesl_searchview_description_query:I = 0x7f110211
+
+.field public static final sesl_searchview_description_search:I = 0x7f110212
+
+.field public static final sesl_searchview_description_submit:I = 0x7f110213
+
+.field public static final sesl_searchview_description_voice:I = 0x7f110214
+
+.field public static final sesl_shareactionprovider_share_with:I = 0x7f110215
+
+.field public static final sesl_shareactionprovider_share_with_application:I = 0x7f110216
+
+.field public static final sesl_switch_off:I = 0x7f110217
+
+.field public static final sesl_switch_on:I = 0x7f110218
+
+.field public static final sesl_switchbar_off_text:I = 0x7f110219
+
+.field public static final sesl_switchbar_on_text:I = 0x7f11021a
+
+.field public static final sesl_text_style_medium:I = 0x7f11021b
+
+.field public static final sesl_toolbar_collapse_description:I = 0x7f11021c
+
+.field public static final status_bar_notification_info_overflow:I = 0x7f11024e
 
 
 # direct methods

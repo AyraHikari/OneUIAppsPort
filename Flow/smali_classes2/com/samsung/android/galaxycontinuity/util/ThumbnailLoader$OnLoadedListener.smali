@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onLoaded(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 .end method

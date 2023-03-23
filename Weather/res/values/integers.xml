@@ -13,6 +13,7 @@
     <integer name="aesthetic_vertical_percent_update_time_nx1_land">38</integer>
     <integer name="aesthetic_vertical_percent_update_time_nx2_land">17</integer>
     <integer name="app_bar_elevation_anim_duration">150</integer>
+    <item type="integer" name="auto_refresh_on_go_img_width">0.453</item>
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="config_navAnimTime">150</integer>
@@ -26,6 +27,21 @@
     <integer name="edge_selected_max_length">25</integer>
     <integer name="google_play_services_version">12451000</integer>
     <integer name="hide_password_duration">320</integer>
+    <integer name="m3_btn_anim_delay_ms">100</integer>
+    <integer name="m3_btn_anim_duration_ms">100</integer>
+    <integer name="m3_card_anim_delay_ms">75</integer>
+    <integer name="m3_card_anim_duration_ms">120</integer>
+    <integer name="m3_chip_anim_duration">100</integer>
+    <integer name="m3_sys_motion_duration_long1">500</integer>
+    <integer name="m3_sys_motion_duration_long2">600</integer>
+    <integer name="m3_sys_motion_duration_medium1">300</integer>
+    <integer name="m3_sys_motion_duration_medium2">400</integer>
+    <integer name="m3_sys_motion_duration_short1">100</integer>
+    <integer name="m3_sys_motion_duration_short2">200</integer>
+    <integer name="m3_sys_motion_path">0</integer>
+    <integer name="m3_sys_shape_large_corner_family">0</integer>
+    <integer name="m3_sys_shape_medium_corner_family">0</integer>
+    <integer name="m3_sys_shape_small_corner_family">0</integer>
     <integer name="material_motion_duration_long_1">300</integer>
     <integer name="material_motion_duration_long_2">350</integer>
     <integer name="material_motion_duration_medium_1">200</integer>
@@ -44,7 +60,12 @@
     <integer name="mtrl_card_anim_duration_ms">120</integer>
     <integer name="mtrl_chip_anim_duration">100</integer>
     <integer name="mtrl_tab_indicator_anim_duration_ms">250</integer>
+    <integer name="mtrl_view_gone">2</integer>
+    <integer name="mtrl_view_invisible">1</integer>
+    <integer name="mtrl_view_visible">0</integer>
     <integer name="opacity_60">153</integer>
+    <integer name="preferences_detail_pane_weight">1</integer>
+    <integer name="preferences_header_pane_weight">0</integer>
     <integer name="sesl_config_activityDefaultDur">220</integer>
     <integer name="sesl_config_activityShortDur">150</integer>
     <integer name="sesl_config_tooltipAnimTime">150</integer>

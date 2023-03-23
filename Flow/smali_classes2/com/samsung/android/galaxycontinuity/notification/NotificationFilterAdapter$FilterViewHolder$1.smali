@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
     .line 165
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 168
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder$1;->this$1:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;
@@ -90,9 +106,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, " check"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

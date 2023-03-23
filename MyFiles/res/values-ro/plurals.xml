@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Nu se pot selecta mai mult de %d elemente.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate selecta mai mult de %d element.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot selecta mai mult de %d elemente.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Nu se pot muta %d fișiere în Coșul de gunoi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate muta %d fișier în Coșul de gunoi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot muta %d fișiere în Coșul de gunoi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Nu se pot muta %d foldere în Coșul de gunoi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate muta %d folder în Coșul de gunoi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot muta %d foldere în Coșul de gunoi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Nu se pot muta %d elemente în Coșul de gunoi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate muta %d element în Coșul de gunoi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot muta %d elemente în Coșul de gunoi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d dintre fișierele selectate vor fi șterse, deoarece acestea se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dintre fișierele selectate va fi șters, deoarece se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dintre fișierele selectate vor fi șterse, deoarece acestea se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d dintre folderele selectate vor fi șterse, deoarece acestea se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dintre folderele selectate va fi șters, deoarece se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dintre folderele selectate vor fi șterse, deoarece acestea se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d dintre elementele selectate vor fi șterse, deoarece acestea se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dintre elementele selectate va fi șters, deoarece se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dintre elementele selectate vor fi șterse, deoarece acestea se află pe cloud sau pe un dispozitiv de stocare USB.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Se comprimă %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se comprimă %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se comprimă %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Se comprimă %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se comprimă %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se comprimă %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Se comprimă %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se comprimă %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se comprimă %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Se comprimă %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se comprimă %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se comprimă %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Se comprimă %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se comprimă %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se comprimă %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Se comprimă %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se comprimă %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se comprimă %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Se copiază %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se copiază %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se copiază %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Se copiază %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se copiază %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se copiază %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Se copiază %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se copiază %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se copiază %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Se copiază %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se copiază %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se copiază %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Se copiază %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se copiază %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se copiază %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Se copiază %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se copiază %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se copiază %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Ștergeți %d fișiere din telefon?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d fișier din telefon?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d fișiere din telefon?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Ștergeți %d fișiere de pe tabletă?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d fișier de pe tabletă?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d fișiere de pe tabletă?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Ștergeți %d foldere din telefon?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d folder din telefon?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d foldere din telefon?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Ștergeți %d foldere de pe tabletă?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d folder de pe tabletă?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d foldere de pe tabletă?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Ștergeți %d elemente din telefon?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d element din telefon?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d elemente din telefon?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Ștergeți %d elemente de pe tabletă?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d element de pe tabletă?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d elemente de pe tabletă?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Se șterg %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se șterge %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se șterg %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Se șterg %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se șterge %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se șterg %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Șt. %d elemente din Coș gunoi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Șt. %d element din Coș gunoi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Șt. %d elemente din Coș gunoi…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Se șterg %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se șterge %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se șterg %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Se extrag %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se extrage %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se extrag %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Se extrag %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se extrage %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se extrag %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Se extrag %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se extrage %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se extrag %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d fișiere vor fi, de asemenea, mutate în Coșul de gunoi în %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d fișier va fi, de asemenea, mutat în Coșul de gunoi în %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d fișiere vor fi, de asemenea, mutate în Coșul de gunoi în %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Se restabilesc %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se restabilește %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se restabilesc %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d foldere vor fi, de asemenea, mutate în Coșul de gunoi în %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d folder va fi, de asemenea, mutat în Coșul de gunoi în %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d foldere vor fi, de asemenea, mutate în Coșul de gunoi în %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Se restabilesc %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se restabilește %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se restabilesc %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Spațiul intern de stocare este plin. Ștergeți definitiv %d fișiere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Spațiul intern de stocare este plin. Ștergeți definitiv %d fișier?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Spațiul intern de stocare este plin. Ștergeți definitiv %d fișiere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Spațiul intern de stocare este plin. Ștergeți definitiv %d foldere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Spațiul intern de stocare este plin. Ștergeți definitiv %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Spațiul intern de stocare este plin. Ștergeți definitiv %d foldere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Spațiul intern de stocare este plin. Ștergeți definitiv %d elemente?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Spațiul intern de stocare este plin. Ștergeți definitiv %d element?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Spațiul intern de stocare este plin. Ștergeți definitiv %d elemente?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d fișiere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d fișier?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d fișiere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d foldere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d foldere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d elemente?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d element?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Spațiul intern de stocare și cadrul SD sunt pline. Ștergeți definitiv %d elemente?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Se restabilesc %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se restabilește %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se restabilesc %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d elemente vor fi, de asemenea, mutate în Coșul de gunoi în %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d element va fi, de asemenea, mutat în Coșul de gunoi în %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d elemente vor fi, de asemenea, mutate în Coșul de gunoi în %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Nu se pot deschide mai mult de %d ferestre ale aplicației.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate deschide mai mult de %d fereastră a aplicației.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot deschide mai mult de %d ferestre ale aplicației.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Mutați %d fișiere în Coșul de gunoi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mutați %d fișier în Coșul de gunoi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Mutați %d fișiere în Coșul de gunoi?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Mutați %d fișiere în Coșul de gunoi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mutați %d fișier în Coșul de gunoi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Mutați %d fișiere în Coșul de gunoi?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Mutați %d foldere în Coșul de gunoi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mutați %d folder în Coșul de gunoi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Mutați %d foldere în Coșul de gunoi?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Mutați %d foldere în Coșul de gunoi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mutați %d folder în Coșul de gunoi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Mutați %d foldere în Coșul de gunoi?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Mutați %d elemente în Coșul de gunoi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mutați %d element în Coșul de gunoi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Mutați %d elemente în Coșul de gunoi?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Mutați %d elemente în Coșul de gunoi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mutați %d element în Coșul de gunoi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Mutați %d elemente în Coșul de gunoi?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d fișiere se mută în Coșul de gunoi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fișier se mută în Coșul de gunoi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d fișiere se mută în Coșul de gunoi…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d foldere se mută în Coșul de gunoi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d folder se mută în Coșul de gunoi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d foldere se mută în Coșul de gunoi…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d elemente se mută în Coșul de gunoi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element se mută în Coșul de gunoi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente se mută în Coșul de gunoi…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Se mută %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se mută %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se mută %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Se mută %d fișiere….</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se mută %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se mută %d fișiere….</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Se mută %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se mută %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se mută %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Se mută %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se mută %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se mută %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Se mută %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se mută %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se mută %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Se mută %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se mută %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se mută %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d elemente comprimate</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element comprimat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente comprimate</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d elemente copiate în %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d element copiat în %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d elemente copiate în %2$s</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Ștergeți folderul și %d fișiere din acesta?</item>
+        <item quantity="one">Ștergeți folderul și fișierul din acesta?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Ștergeți %1$d foldere și cele %2$d fișiere din acestea?</item>
+        <item quantity="one">Ștergeți folderul și fișierul din acesta?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d elemente șterse</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element șters</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente șterse</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Se descarcă %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se descarcă %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se descarcă %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Se descarcă %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se descarcă %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se descarcă %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Se descarcă %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se descarcă %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se descarcă %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Nu se pot partaja folderele. Acestea sunt goale.</item>
+        <item quantity="one">Nu se poate partaja folderul. Acesta este gol.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d fișiere vor fi șterse definitiv.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fișier va fi șters definitiv.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d fișiere vor fi șterse definitiv.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d foldere vor fi șterse definitiv.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d folder va fi șters definitiv.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d foldere vor fi șterse definitiv.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d elemente extrase</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element extras</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente extrase</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d fișiere adăugate la Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fișier adăugat la Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d fișiere adăugate la Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d fișiere eliminate din Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fișier eliminat din Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d fișiere eliminate din Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d foldere adăugate la Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d folder adăugat la Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d foldere adăugate la Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d foldere eliminate din Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d folder eliminat din Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d foldere eliminate din Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d elemente adăugate la Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element adăugat la Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente adăugate la Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d elemente eliminate din Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element eliminat din Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente eliminate din Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d elemente</item>
+        <item quantity="one">1 element</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d elemente</item>
+        <item quantity="one">%d element</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d elemente copiate în clipboard</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element copiat în clipboard</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente copiate în clipboard</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d elemente mutate în clipboard</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element mutat în clipboard</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente mutate în clipboard</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d elemente selectate</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element selectat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente selectate</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d elemente mutate în %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d element mutat în %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d elemente mutate în %2$s</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d elemente mutate în Coșul de gunoi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element mutat în Coșul de gunoi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d elemente mutate în Coșul de gunoi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">S-au selectat %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">S-a selectat %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">S-au selectat %d</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Cardul SD este plin. Ștergeți definitiv %d fișiere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Cardul SD este plin. Ștergeți definitiv %d fișier?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Cardul SD este plin. Ștergeți definitiv %d fișiere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Cardul SD este plin. Ștergeți definitiv %d foldere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Cardul SD este plin. Ștergeți definitiv %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Cardul SD este plin. Ștergeți definitiv %d foldere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Cardul SD este plin. Ștergeți definitiv %d elemente?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Cardul SD este plin. Ștergeți definitiv %d element?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Cardul SD este plin. Ștergeți definitiv %d elemente?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Acest fișier va fi șters peste %d zile.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Acest fișier va fi șters peste %d zi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Acest fișier va fi șters peste %d zile.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Acest folder va fi șters peste %d zile.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Acest folder va fi șters peste %d zi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Acest folder va fi șters peste %d zile.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Ștergeți definitiv %d fișiere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți definitiv %d fișier?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți definitiv %d fișiere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Se șterg %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se șterge %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se șterg %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Se restabilesc %d fișiere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se restabilește %d fișier…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se restabilesc %d fișiere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Ștergeți definitiv %d foldere?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți definitiv %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți definitiv %d foldere?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Se șterg %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se șterg %d foldere…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se șterg %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Se restabilesc %d foldere…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se restabilește %d folder…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se restabilesc %d foldere…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Ștergeți definitiv %d elemente?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți definitiv %d element?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți definitiv %d elemente?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Se șterg %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se șterge %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se șterg %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Se restabilesc %d elemente…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Se restabilește %d element…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Se restabilesc %d elemente…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Ștergere peste %d zile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergere peste %d zi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergere peste %d zile</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Dezinstalați %d aplicații?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dezinstalați %d aplicație?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Dezinstalați %d aplicații?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

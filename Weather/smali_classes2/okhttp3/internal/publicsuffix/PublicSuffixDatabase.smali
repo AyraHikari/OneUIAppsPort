@@ -11,36 +11,36 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0005\u0018\u0000 \u00152\u00020\u0001:\u0001\u0015B\u0005\u00a2\u0006\u0002\u0010\u0002J\u001c\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000b2\u000c\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000bH\u0002J\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000c2\u0006\u0010\u000f\u001a\u00020\u000cJ\u0008\u0010\u0010\u001a\u00020\u0011H\u0002J\u0008\u0010\u0012\u001a\u00020\u0011H\u0002J\u0016\u0010\u0013\u001a\u00020\u00112\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0006J\u0016\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000b2\u0006\u0010\u000f\u001a\u00020\u000cH\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0016"
+        "\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0012\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u0000 \u00192\u00020\u0001:\u0001\u0019B\u0007\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J\u0016\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u001c\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00042\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0004H\u0002J\u0008\u0010\t\u001a\u00020\u0008H\u0002J\u0008\u0010\n\u001a\u00020\u0008H\u0002J\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0003\u001a\u00020\u0002J\u0016\u0010\u000f\u001a\u00020\u00082\u0006\u0010\r\u001a\u00020\u000c2\u0006\u0010\u000e\u001a\u00020\u000cR\u0014\u0010\u0011\u001a\u00020\u00108\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0011\u0010\u0012R\u0014\u0010\u0014\u001a\u00020\u00138\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0014\u0010\u0015R\u0016\u0010\r\u001a\u00020\u000c8\u0002@\u0002X\u0082.\u00a2\u0006\u0006\n\u0004\u0008\r\u0010\u0016R\u0016\u0010\u000e\u001a\u00020\u000c8\u0002@\u0002X\u0082.\u00a2\u0006\u0006\n\u0004\u0008\u000e\u0010\u0016\u00a8\u0006\u001a"
     }
     d2 = {
         "Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;",
         "",
-        "()V",
-        "listRead",
-        "Ljava/util/concurrent/atomic/AtomicBoolean;",
-        "publicSuffixExceptionListBytes",
+        "",
+        "domain",
+        "",
+        "splitDomain",
+        "domainLabels",
+        "findMatchingRule",
+        "Lbi/x;",
+        "readTheListUninterruptibly",
+        "readTheList",
+        "getEffectiveTldPlusOne",
         "",
         "publicSuffixListBytes",
+        "publicSuffixExceptionListBytes",
+        "setListBytes",
+        "Ljava/util/concurrent/atomic/AtomicBoolean;",
+        "listRead",
+        "Ljava/util/concurrent/atomic/AtomicBoolean;",
+        "Ljava/util/concurrent/CountDownLatch;",
         "readCompleteLatch",
         "Ljava/util/concurrent/CountDownLatch;",
-        "findMatchingRule",
-        "",
-        "",
-        "domainLabels",
-        "getEffectiveTldPlusOne",
-        "domain",
-        "readTheList",
-        "",
-        "readTheListUninterruptibly",
-        "setListBytes",
-        "splitDomain",
+        "[B",
+        "<init>",
+        "()V",
         "Companion",
         "okhttp"
     }
@@ -86,7 +86,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     new-instance v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
@@ -109,19 +109,19 @@
 
     aput-byte v1, v0, v2
 
-    .line 242
+    .line 1
     sput-object v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->WILDCARD_LABEL:[B
 
     const-string v0, "*"
 
-    .line 243
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+    .line 2
+    invoke-static {v0}, Lci/p;->d(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     sput-object v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->PREVAILING_RULE:Ljava/util/List;
 
-    .line 247
+    .line 3
     new-instance v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
 
     invoke-direct {v0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;-><init>()V
@@ -134,10 +134,10 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 35
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
+    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -146,7 +146,7 @@
 
     iput-object v0, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->listRead:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 41
+    .line 3
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
     const/4 v1, 0x1
@@ -161,7 +161,6 @@
 .method public static final synthetic access$getInstance$cp()Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
     .locals 1
 
-    .line 35
     sget-object v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->instance:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
 
     return-object v0
@@ -170,14 +169,13 @@
 .method public static final synthetic access$getPublicSuffixListBytes$p(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;)[B
     .locals 1
 
-    .line 35
     iget-object p0, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
 
     if-nez p0, :cond_0
 
     const-string v0, "publicSuffixListBytes"
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v0}, Loi/k;->w(Ljava/lang/String;)V
 
     :cond_0
     return-object p0
@@ -186,14 +184,13 @@
 .method public static final synthetic access$setPublicSuffixListBytes$p(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;[B)V
     .locals 0
 
-    .line 35
     iput-object p1, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
 
     return-void
 .end method
 
 .method private final findMatchingRule(Ljava/util/List;)Ljava/util/List;
-    .locals 11
+    .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -206,429 +203,392 @@
         }
     .end annotation
 
-    .line 100
-    iget-object v0, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->listRead:Ljava/util/concurrent/atomic/AtomicBoolean;
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    .line 1
+    iget-object v1, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->listRead:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    move-result v0
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
-    const/4 v1, 0x0
+    move-result v1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    if-nez v0, :cond_0
+    const/4 v3, 0x1
 
-    iget-object v0, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->listRead:Ljava/util/concurrent/atomic/AtomicBoolean;
+    if-nez v1, :cond_0
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    iget-object v1, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->listRead:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    move-result v0
+    invoke-virtual {v1, v2, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
-    if-eqz v0, :cond_0
+    move-result v1
 
-    .line 101
-    invoke-direct {p0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->readTheListUninterruptibly()V
+    if-eqz v1, :cond_0
+
+    .line 2
+    invoke-direct/range {p0 .. p0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->readTheListUninterruptibly()V
 
     goto :goto_0
 
-    .line 104
+    .line 3
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->readCompleteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v1, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->readCompleteLatch:Ljava/util/concurrent/CountDownLatch;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
+    invoke-virtual {v1}, Ljava/util/concurrent/CountDownLatch;->await()V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 106
+    .line 4
     :catch_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
+    invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 110
+    .line 5
     :goto_0
-    move-object v0, p0
+    iget-object v1, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
 
-    check-cast v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
+    if-eqz v1, :cond_1
 
-    iget-object v0, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
-
-    if-eqz v0, :cond_1
-
-    move v0, v2
+    move v1, v3
 
     goto :goto_1
 
     :cond_1
-    move v0, v1
+    move v1, v2
 
     :goto_1
-    if-eqz v0, :cond_11
+    if-eqz v1, :cond_11
 
-    .line 115
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    .line 6
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
-    move-result v0
+    move-result v1
 
-    new-array v3, v0, [[B
+    new-array v4, v1, [[B
 
-    move v4, v1
+    move v5, v2
 
     :goto_2
-    if-ge v4, v0, :cond_2
+    if-ge v5, v1, :cond_2
 
-    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-object/from16 v6, p1
 
-    move-result-object v5
+    invoke-interface {v6, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    check-cast v5, Ljava/lang/String;
+    move-result-object v7
 
-    sget-object v6, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
+    check-cast v7, Ljava/lang/String;
 
-    const-string v7, "UTF_8"
+    sget-object v8, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v9, "UTF_8"
 
-    const-string v7, "null cannot be cast to non-null type java.lang.String"
+    invoke-static {v8, v9}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v5, v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    const-string v9, "null cannot be cast to non-null type java.lang.String"
 
-    invoke-virtual {v5, v6}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+    invoke-static {v7, v9}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v5
+    invoke-virtual {v7, v8}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
-    const-string v6, "(this as java.lang.String).getBytes(charset)"
+    move-result-object v7
 
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v8, "(this as java.lang.String).getBytes(charset)"
 
-    aput-object v5, v3, v4
+    invoke-static {v7, v8}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    add-int/lit8 v4, v4, 0x1
+    aput-object v7, v4, v5
+
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_2
 
     :cond_2
-    check-cast v3, [[B
-
-    const/4 p1, 0x0
-
-    .line 119
-    check-cast p1, Ljava/lang/String;
-
-    .line 120
-    array-length v0, v3
-
-    move v4, v1
+    move v5, v2
 
     :goto_3
-    const-string v5, "publicSuffixListBytes"
+    const-string v6, "publicSuffixListBytes"
 
-    if-ge v4, v0, :cond_5
+    const/4 v7, 0x0
 
-    .line 121
-    sget-object v6, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
+    if-ge v5, v1, :cond_5
 
-    iget-object v7, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
+    .line 7
+    sget-object v8, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
 
-    if-nez v7, :cond_3
+    iget-object v9, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    if-nez v9, :cond_3
+
+    invoke-static {v6}, Loi/k;->w(Ljava/lang/String;)V
 
     :cond_3
-    invoke-static {v6, v7, v3, v4}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->access$binarySearch(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;[B[[BI)Ljava/lang/String;
+    invoke-static {v8, v9, v4, v5}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->access$binarySearch(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;[B[[BI)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v8
 
-    if-eqz v6, :cond_4
+    if-eqz v8, :cond_4
 
     goto :goto_4
 
     :cond_4
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_3
 
     :cond_5
-    move-object v6, p1
+    move-object v8, v7
 
-    .line 134
     :goto_4
-    move-object v0, v3
+    if-le v1, v3, :cond_8
 
-    check-cast v0, [Ljava/lang/Object;
+    .line 8
+    invoke-virtual {v4}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    array-length v4, v0
+    move-result-object v5
 
-    if-le v4, v2, :cond_8
+    check-cast v5, [[B
 
-    .line 135
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 9
+    array-length v9, v5
 
-    move-result-object v4
+    sub-int/2addr v9, v3
 
-    check-cast v4, [[B
-
-    .line 136
-    move-object v7, v4
-
-    check-cast v7, [Ljava/lang/Object;
-
-    array-length v7, v7
-
-    sub-int/2addr v7, v2
-
-    move v8, v1
+    move v10, v2
 
     :goto_5
-    if-ge v8, v7, :cond_8
+    if-ge v10, v9, :cond_8
 
-    .line 137
-    sget-object v9, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->WILDCARD_LABEL:[B
+    .line 10
+    sget-object v11, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->WILDCARD_LABEL:[B
 
-    aput-object v9, v4, v8
+    aput-object v11, v5, v10
 
-    .line 138
-    sget-object v9, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
+    .line 11
+    sget-object v11, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
 
-    iget-object v10, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
+    iget-object v12, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
 
-    if-nez v10, :cond_6
+    if-nez v12, :cond_6
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v6}, Loi/k;->w(Ljava/lang/String;)V
 
     :cond_6
-    invoke-static {v9, v10, v4, v8}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->access$binarySearch(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;[B[[BI)Ljava/lang/String;
+    invoke-static {v11, v12, v5, v10}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->access$binarySearch(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;[B[[BI)Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v11
 
-    if-eqz v9, :cond_7
+    if-eqz v11, :cond_7
+
+    move-object v5, v11
 
     goto :goto_6
 
     :cond_7
-    add-int/lit8 v8, v8, 0x1
+    add-int/lit8 v10, v10, 0x1
 
     goto :goto_5
 
     :cond_8
-    move-object v9, p1
+    move-object v5, v7
 
     :goto_6
-    if-eqz v9, :cond_b
+    if-eqz v5, :cond_b
 
-    .line 149
-    array-length v0, v0
+    sub-int/2addr v1, v3
 
-    sub-int/2addr v0, v2
-
-    move v4, v1
+    move v6, v2
 
     :goto_7
-    if-ge v4, v0, :cond_b
+    if-ge v6, v1, :cond_b
 
-    .line 150
-    sget-object v5, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
+    .line 12
+    sget-object v9, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
 
-    iget-object v7, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixExceptionListBytes:[B
+    iget-object v10, v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixExceptionListBytes:[B
 
-    if-nez v7, :cond_9
+    if-nez v10, :cond_9
 
-    const-string v8, "publicSuffixExceptionListBytes"
+    const-string v11, "publicSuffixExceptionListBytes"
 
-    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v11}, Loi/k;->w(Ljava/lang/String;)V
 
     :cond_9
-    invoke-static {v5, v7, v3, v4}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->access$binarySearch(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;[B[[BI)Ljava/lang/String;
+    invoke-static {v9, v10, v4, v6}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->access$binarySearch(Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;[B[[BI)Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v9
 
-    if-eqz v5, :cond_a
+    if-eqz v9, :cond_a
 
-    move-object p1, v5
+    move-object v7, v9
 
     goto :goto_8
 
     :cond_a
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v6, v6, 0x1
 
     goto :goto_7
 
     :cond_b
     :goto_8
-    const/16 v0, 0x2e
+    const/16 v1, 0x2e
 
-    if-eqz p1, :cond_c
+    if-eqz v7, :cond_c
 
-    .line 161
-    new-instance v3, Ljava/lang/StringBuilder;
+    .line 13
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/16 v4, 0x21
+    const/16 v5, 0x21
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v8
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-array v9, v3, [C
 
-    move-result-object p1
+    aput-char v1, v9, v2
 
-    .line 162
-    move-object v3, p1
+    const/4 v10, 0x0
 
-    check-cast v3, Ljava/lang/CharSequence;
+    const/4 v11, 0x0
 
-    new-array v4, v2, [C
+    const/4 v12, 0x6
 
-    aput-char v0, v4, v1
+    const/4 v13, 0x0
 
-    const/4 v5, 0x0
+    .line 14
+    invoke-static/range {v8 .. v13}, Lhl/u;->u0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
 
-    const/4 v6, 0x0
+    move-result-object v1
 
-    const/4 v7, 0x6
-
-    const/4 v8, 0x0
-
-    invoke-static/range {v3 .. v8}, Lkotlin/text/StringsKt;->split$default(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
-
-    move-result-object p1
-
-    return-object p1
+    return-object v1
 
     :cond_c
-    if-nez v6, :cond_d
+    if-nez v8, :cond_d
 
-    if-nez v9, :cond_d
+    if-nez v5, :cond_d
 
-    .line 164
-    sget-object p1, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->PREVAILING_RULE:Ljava/util/List;
+    .line 15
+    sget-object v1, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->PREVAILING_RULE:Ljava/util/List;
 
-    return-object p1
+    return-object v1
 
     :cond_d
-    if-eqz v6, :cond_e
+    if-eqz v8, :cond_e
 
-    .line 167
-    move-object v3, v6
+    new-array v7, v3, [C
 
-    check-cast v3, Ljava/lang/CharSequence;
+    aput-char v1, v7, v2
 
-    new-array v4, v2, [C
+    const/4 v4, 0x0
 
-    aput-char v0, v4, v1
+    const/4 v9, 0x0
 
-    const/4 v5, 0x0
+    const/4 v10, 0x6
 
-    const/4 v6, 0x0
+    const/4 v11, 0x0
 
-    const/4 v7, 0x6
+    move-object v6, v8
 
-    const/4 v8, 0x0
+    move v8, v4
 
-    invoke-static/range {v3 .. v8}, Lkotlin/text/StringsKt;->split$default(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
+    .line 16
+    invoke-static/range {v6 .. v11}, Lhl/u;->u0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
 
-    move-result-object p1
+    move-result-object v4
 
-    if-eqz p1, :cond_e
+    if-eqz v4, :cond_e
 
     goto :goto_9
 
     :cond_e
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
-    move-result-object p1
+    move-result-object v4
 
     :goto_9
-    if-eqz v9, :cond_f
+    if-eqz v5, :cond_f
 
-    .line 168
-    move-object v3, v9
+    new-array v12, v3, [C
 
-    check-cast v3, Ljava/lang/CharSequence;
+    aput-char v1, v12, v2
 
-    new-array v4, v2, [C
+    const/4 v13, 0x0
 
-    aput-char v0, v4, v1
+    const/4 v14, 0x0
 
-    const/4 v5, 0x0
+    const/4 v15, 0x6
 
-    const/4 v6, 0x0
+    const/16 v16, 0x0
 
-    const/4 v7, 0x6
+    move-object v11, v5
 
-    const/4 v8, 0x0
+    .line 17
+    invoke-static/range {v11 .. v16}, Lhl/u;->u0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
 
-    invoke-static/range {v3 .. v8}, Lkotlin/text/StringsKt;->split$default(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
+    move-result-object v1
 
-    move-result-object v0
-
-    if-eqz v0, :cond_f
+    if-eqz v1, :cond_f
 
     goto :goto_a
 
     :cond_f
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 170
+    .line 18
     :goto_a
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v2
 
-    if-le v1, v2, :cond_10
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    if-le v2, v3, :cond_10
 
     goto :goto_b
 
     :cond_10
-    move-object p1, v0
+    move-object v4, v1
 
     :goto_b
-    return-object p1
+    return-object v4
 
-    .line 110
+    .line 19
     :cond_11
-    new-instance p1, Ljava/lang/IllegalStateException;
+    new-instance v1, Ljava/lang/IllegalStateException;
 
-    const-string v0, "Unable to load publicsuffixes.gz resource from the classpath."
+    const-string v2, "Unable to load publicsuffixes.gz resource from the classpath."
 
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
-    throw p1
+    throw v1
 .end method
 
 .method private final readTheList()V
-    .locals 6
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .locals 5
 
-    .line 210
+    .line 1
     const-class v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
 
     const-string v1, "publicsuffixes.gz"
@@ -639,7 +599,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 212
+    .line 2
     new-instance v1, Lokio/GzipSource;
 
     invoke-static {v0}, Lokio/Okio;->source(Ljava/io/InputStream;)Lokio/Source;
@@ -648,78 +608,65 @@
 
     invoke-direct {v1, v0}, Lokio/GzipSource;-><init>(Lokio/Source;)V
 
-    check-cast v1, Lokio/Source;
-
     invoke-static {v1}, Lokio/Okio;->buffer(Lokio/Source;)Lokio/BufferedSource;
 
     move-result-object v0
 
-    check-cast v0, Ljava/io/Closeable;
-
     const/4 v1, 0x0
 
-    check-cast v1, Ljava/lang/Throwable;
-
+    .line 3
     :try_start_0
-    move-object v2, v0
+    invoke-interface {v0}, Lokio/BufferedSource;->readInt()I
 
-    check-cast v2, Lokio/BufferedSource;
+    move-result v2
 
-    .line 213
-    invoke-interface {v2}, Lokio/BufferedSource;->readInt()I
+    int-to-long v2, v2
+
+    .line 4
+    invoke-interface {v0, v2, v3}, Lokio/BufferedSource;->readByteArray(J)[B
+
+    move-result-object v2
+
+    .line 5
+    invoke-interface {v0}, Lokio/BufferedSource;->readInt()I
 
     move-result v3
 
     int-to-long v3, v3
 
-    .line 214
-    invoke-interface {v2, v3, v4}, Lokio/BufferedSource;->readByteArray(J)[B
+    .line 6
+    invoke-interface {v0, v3, v4}, Lokio/BufferedSource;->readByteArray(J)[B
 
     move-result-object v3
 
-    .line 216
-    invoke-interface {v2}, Lokio/BufferedSource;->readInt()I
-
-    move-result v4
-
-    int-to-long v4, v4
-
-    .line 217
-    invoke-interface {v2, v4, v5}, Lokio/BufferedSource;->readByteArray(J)[B
-
-    move-result-object v2
-
-    .line 218
-    sget-object v4, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    .line 7
+    sget-object v4, Lbi/x;->a:Lbi/x;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 212
-    invoke-static {v0, v1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    .line 8
+    invoke-static {v0, v1}, Lli/a;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
-    .line 220
+    .line 9
     monitor-enter p0
 
-    .line 221
+    .line 10
     :try_start_1
-    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v2}, Loi/k;->d(Ljava/lang/Object;)V
 
-    iput-object v3, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
+    iput-object v2, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
 
-    .line 222
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    .line 11
+    invoke-static {v3}, Loi/k;->d(Ljava/lang/Object;)V
 
-    iput-object v2, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixExceptionListBytes:[B
-
-    .line 223
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    iput-object v3, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixExceptionListBytes:[B
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 220
+    .line 12
     monitor-exit p0
 
-    .line 225
+    .line 13
     iget-object v0, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->readCompleteLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -729,7 +676,7 @@
     :catchall_0
     move-exception v0
 
-    .line 220
+    .line 14
     monitor-exit p0
 
     throw v0
@@ -737,7 +684,7 @@
     :catchall_1
     move-exception v1
 
-    .line 212
+    .line 15
     :try_start_2
     throw v1
     :try_end_2
@@ -746,7 +693,7 @@
     :catchall_2
     move-exception v2
 
-    invoke-static {v0, v1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1}, Lli/a;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     throw v2
 
@@ -759,7 +706,7 @@
 
     const/4 v0, 0x0
 
-    .line 187
+    .line 1
     :goto_0
     :try_start_0
     invoke-direct {p0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->readTheList()V
@@ -770,7 +717,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 199
+    .line 2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -788,7 +735,7 @@
     :catch_0
     move-exception v1
 
-    .line 193
+    .line 3
     :try_start_1
     sget-object v2, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
@@ -800,15 +747,13 @@
 
     const/4 v4, 0x5
 
-    check-cast v1, Ljava/lang/Throwable;
-
     invoke-virtual {v2, v3, v4, v1}, Lokhttp3/internal/platform/Platform;->log(Ljava/lang/String;ILjava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eqz v0, :cond_1
 
-    .line 199
+    .line 4
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -818,7 +763,7 @@
     :cond_1
     return-void
 
-    .line 190
+    .line 5
     :catch_1
     :try_start_2
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
@@ -832,7 +777,7 @@
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 199
+    .line 6
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -844,7 +789,7 @@
 .end method
 
 .method private final splitDomain(Ljava/lang/String;)Ljava/util/List;
-    .locals 6
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -856,33 +801,33 @@
         }
     .end annotation
 
-    .line 89
-    move-object v0, p1
+    const/4 v0, 0x1
 
-    check-cast v0, Ljava/lang/CharSequence;
+    new-array v2, v0, [C
 
-    const/4 p1, 0x1
-
-    new-array v1, p1, [C
-
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     const/16 v3, 0x2e
 
-    aput-char v3, v1, v2
+    aput-char v3, v2, v1
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x6
+    const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    const/4 v5, 0x6
 
-    invoke-static/range {v0 .. v5}, Lkotlin/text/StringsKt;->split$default(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
+    const/4 v6, 0x0
 
-    move-result-object v0
+    move-object v1, p1
 
-    .line 91
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
+    .line 1
+    invoke-static/range {v1 .. v6}, Lhl/u;->u0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 2
+    invoke-static {p1}, Lci/y;->g0(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -890,21 +835,19 @@
 
     const-string v2, ""
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 93
-    invoke-static {v0, p1}, Lkotlin/collections/CollectionsKt;->dropLast(Ljava/util/List;I)Ljava/util/List;
+    .line 3
+    invoke-static {p1, v0}, Lci/y;->P(Ljava/util/List;I)Ljava/util/List;
 
     move-result-object p1
 
-    return-object p1
-
     :cond_0
-    return-object v0
+    return-object p1
 .end method
 
 
@@ -914,28 +857,28 @@
 
     const-string v0, "domain"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 69
+    .line 1
     invoke-static {p1}, Ljava/net/IDN;->toUnicode(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "unicodeDomain"
 
-    .line 70
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0, v0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->splitDomain(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 72
+    .line 3
     invoke-direct {p0, v0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->findMatchingRule(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 73
+    .line 4
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -966,7 +909,7 @@
 
     return-object p1
 
-    .line 77
+    .line 5
     :cond_0
     invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -980,7 +923,7 @@
 
     if-ne v2, v4, :cond_1
 
-    .line 79
+    .line 6
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -991,7 +934,7 @@
 
     goto :goto_0
 
-    .line 82
+    .line 7
     :cond_1
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1006,26 +949,18 @@
     :goto_0
     sub-int/2addr v0, v1
 
-    .line 85
+    .line 8
     invoke-direct {p0, p1}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->splitDomain(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p1
 
-    check-cast p1, Ljava/lang/Iterable;
-
-    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->asSequence(Ljava/lang/Iterable;)Lkotlin/sequences/Sequence;
+    invoke-static {p1}, Lci/y;->L(Ljava/lang/Iterable;)Lgl/h;
 
     move-result-object p1
 
-    invoke-static {p1, v0}, Lkotlin/sequences/SequencesKt;->drop(Lkotlin/sequences/Sequence;I)Lkotlin/sequences/Sequence;
+    invoke-static {p1, v0}, Lgl/o;->m(Lgl/h;I)Lgl/h;
 
     move-result-object v1
-
-    const-string p1, "."
-
-    move-object v2, p1
-
-    check-cast v2, Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -1041,7 +976,9 @@
 
     const/4 v9, 0x0
 
-    invoke-static/range {v1 .. v9}, Lkotlin/sequences/SequencesKt;->joinToString$default(Lkotlin/sequences/Sequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
+    const-string v2, "."
+
+    invoke-static/range {v1 .. v9}, Lgl/o;->u(Lgl/h;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lni/l;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1053,26 +990,26 @@
 
     const-string v0, "publicSuffixListBytes"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "publicSuffixExceptionListBytes"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 233
+    .line 1
     iput-object p1, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixListBytes:[B
 
-    .line 234
+    .line 2
     iput-object p2, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->publicSuffixExceptionListBytes:[B
 
-    .line 235
+    .line 3
     iget-object p1, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->listRead:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 p2, 0x1
 
     invoke-virtual {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 236
+    .line 4
     iget-object p1, p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->readCompleteLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V

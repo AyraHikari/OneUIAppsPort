@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/location/ActivityTransitionResult;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # static fields
@@ -15,24 +16,18 @@
 
 
 # instance fields
-.field private final zzn:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/location/ActivityTransitionEvent;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final zza:Ljava/util/List;
+
+.field private zzb:Landroid/os/Bundle;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/location/zzg;
+    new-instance v0, Lcom/google/android/gms/location/zzs;
 
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzg;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/location/zzs;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/location/ActivityTransitionResult;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -50,12 +45,19 @@
         }
     .end annotation
 
+    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zzb:Landroid/os/Bundle;
 
     const-string v0, "transitionEvents list can\'t be null."
 
+    .line 2
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 3
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -66,6 +68,7 @@
 
     move v1, v0
 
+    .line 4
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -73,6 +76,7 @@
 
     if-ge v1, v2, :cond_1
 
+    .line 5
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -85,6 +89,7 @@
 
     add-int/lit8 v4, v1, -0x1
 
+    .line 6
     invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -106,6 +111,7 @@
     :cond_0
     const/4 v2, 0x0
 
+    .line 7
     :goto_1
     invoke-static {v2}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(Z)V
 
@@ -113,12 +119,24 @@
 
     goto :goto_0
 
+    .line 8
     :cond_1
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zzn:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zza:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;Landroid/os/Bundle;)V
+    .locals 0
+
+    .line 9
+    invoke-direct {p0, p1}, Lcom/google/android/gms/location/ActivityTransitionResult;-><init>(Ljava/util/List;)V
+
+    iput-object p2, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zzb:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -126,6 +144,7 @@
 .method public static extractResult(Landroid/content/Intent;)Lcom/google/android/gms/location/ActivityTransitionResult;
     .locals 2
 
+    .line 1
     invoke-static {p0}, Lcom/google/android/gms/location/ActivityTransitionResult;->hasResult(Landroid/content/Intent;)Z
 
     move-result v0
@@ -141,6 +160,7 @@
 
     const-string v1, "com.google.android.location.internal.EXTRA_ACTIVITY_TRANSITION_RESULT"
 
+    .line 2
     invoke-static {p0, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelableSerializer;->deserializeFromIntentExtra(Landroid/content/Intent;Ljava/lang/String;Landroid/os/Parcelable$Creator;)Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable;
 
     move-result-object p0
@@ -162,6 +182,7 @@
     :cond_0
     const-string v0, "com.google.android.location.internal.EXTRA_ACTIVITY_TRANSITION_RESULT"
 
+    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
 
     move-result p0
@@ -183,6 +204,7 @@
     :cond_0
     if-eqz p1, :cond_2
 
+    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -196,11 +218,11 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zzn:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zza:Ljava/util/List;
 
     check-cast p1, Lcom/google/android/gms/location/ActivityTransitionResult;
 
-    iget-object p1, p1, Lcom/google/android/gms/location/ActivityTransitionResult;->zzn:Ljava/util/List;
+    iget-object p1, p1, Lcom/google/android/gms/location/ActivityTransitionResult;->zza:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -226,7 +248,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zzn:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zza:Ljava/util/List;
 
     return-object v0
 .end method
@@ -234,7 +256,8 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zzn:Ljava/util/List;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zza:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->hashCode()I
 
@@ -246,10 +269,15 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
 
     move-result p2
 
+    .line 3
     invoke-virtual {p0}, Lcom/google/android/gms/location/ActivityTransitionResult;->getTransitionEvents()Ljava/util/List;
 
     move-result-object v0
@@ -258,8 +286,17 @@
 
     const/4 v2, 0x0
 
+    .line 4
     invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedList(Landroid/os/Parcel;ILjava/util/List;Z)V
 
+    iget-object v0, p0, Lcom/google/android/gms/location/ActivityTransitionResult;->zzb:Landroid/os/Bundle;
+
+    const/4 v1, 0x2
+
+    .line 5
+    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBundle(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
+
+    .line 6
     invoke-static {p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
 
     return-void

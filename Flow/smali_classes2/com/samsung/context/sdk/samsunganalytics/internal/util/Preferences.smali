@@ -33,6 +33,14 @@
 
 .method public static getPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "SamsungAnalyticsPrefs"
 

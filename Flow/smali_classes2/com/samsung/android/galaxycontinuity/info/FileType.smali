@@ -172,7 +172,7 @@
 
 .field public static LAST_ARCHIVE_FILE_TYPE:I = 0x0
 
-.field private static LAST_AUDIO_FILE_TYPE:I = 0x0
+.field private static LAST_AUDIO_FILE_TYPE:I = 0x64
 
 .field public static LAST_CERTIFICATE_FILE_TYPE:I = 0x0
 
@@ -180,7 +180,7 @@
 
 .field private static LAST_DRM_FILE_TYPE:I = 0x0
 
-.field private static LAST_IMAGE_FILE_TYPE:I = 0x0
+.field private static LAST_IMAGE_FILE_TYPE:I = 0xa
 
 .field private static LAST_INSTALL_FILE_TYPE:I = 0x0
 
@@ -795,131 +795,167 @@
 
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->M4A:I
 
+    .line 66
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
     add-int/lit8 v1, v0, 0x1
 
-    .line 66
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->WAV:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 67
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->AMR:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->AMR:I
+
     .line 68
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->AWB:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 69
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->WMA:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->WMA:I
+
     .line 70
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->OGG:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 71
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->OGA:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->OGA:I
+
     .line 72
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->AAC:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 73
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GA:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GA:I
+
     .line 74
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->FLAC:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 75
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PYA:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PYA:I
+
     .line 76
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MP4_A:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 77
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->MP4_AUDIO:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MP4_AUDIO:I
+
     .line 78
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GP_AUDIO:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 79
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3G2_AUDIO:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3G2_AUDIO:I
+
     .line 80
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ASF_AUDIO:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 81
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GPP_AUDIO:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GPP_AUDIO:I
+
     .line 82
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->QCP:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 83
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
 
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->MKA:I
+    add-int/lit8 v1, v0, 0x1
+
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_AUDIO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MKA:I
 
     .line 84
     sget-boolean v0, Lcom/samsung/android/galaxycontinuity/info/AppFeatures;->DSD_ENABLED:Z
@@ -989,82 +1025,104 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MID:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 92
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->MID_A:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MID_A:I
+
     .line 93
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MIDI:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 94
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->XMF:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XMF:I
+
     .line 95
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MXMF:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 96
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->RTX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->RTX:I
+
     .line 97
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->RTL:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 98
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->OTA:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->OTA:I
+
     .line 99
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SMF:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 100
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->IMY:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->IMY:I
+
     .line 101
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SPM:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 102
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
 
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SPMID:I
+    add-int/lit8 v1, v0, 0x1
+
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_MIDI_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SPMID:I
 
     const/16 v0, 0xb4
 
@@ -1080,16 +1138,20 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->M3U:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 108
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_PLAYLIST_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PLS:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_PLAYLIST_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_PLAYLIST_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PLS:I
+
     .line 109
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_PLAYLIST_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_PLAYLIST_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->WPL:I
@@ -1108,198 +1170,254 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MP4:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 115
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->M4V:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->M4V:I
+
     .line 116
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GP:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 117
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GPP:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GPP:I
+
     .line 118
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3GPP2:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 119
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3G2:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->_3G2:I
+
     .line 120
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->WMV:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 121
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->MPG:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MPG:I
+
     .line 122
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MPEG:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 123
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ASF:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ASF:I
+
     .line 124
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->AVI:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 125
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->DIVX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DIVX:I
+
     .line 126
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->FLV:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 127
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->MKV:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MKV:I
+
     .line 128
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MOV:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 129
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PYV:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PYV:I
+
     .line 130
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SKM:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 131
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->K3G:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->K3G:I
+
     .line 132
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->AK3G:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 133
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->WEBM:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->WEBM:I
+
     .line 134
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->RM:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 135
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->RMVB:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->RMVB:I
+
     .line 136
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SDP:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 137
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->TS:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->TS:I
+
     .line 138
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MTS:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 139
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->M2TS:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->M2TS:I
+
     .line 140
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->M2T:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 141
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->TRP:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->TRP:I
+
     .line 142
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_VIDEO_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->TP:I
@@ -1318,282 +1436,362 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SPD:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 148
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SNB:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SNB:I
+
     .line 149
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->HWP:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 150
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->HWPX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->HWPX:I
+
     .line 151
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->HWT:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 152
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->GUL:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->GUL:I
+
     .line 153
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ASC:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 154
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPS:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPS:I
+
     .line 155
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->CSV:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 156
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PDF:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PDF:I
+
     .line 157
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->RTF:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 158
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOC:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOC:I
+
     .line 159
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOCX:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 160
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOCM:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOCM:I
+
     .line 161
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOT:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 162
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOTX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DOTX:I
+
     .line 163
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->HWDT:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 164
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLS:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLS:I
+
     .line 165
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLSX:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 166
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLT:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLT:I
+
     .line 167
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLTX:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 168
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLSM:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLSM:I
+
     .line 169
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPT:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 170
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPTX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPTX:I
+
     .line 171
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPTM:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 172
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->POT:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->POT:I
+
     .line 173
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->POTX:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 174
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPSX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PPSX:I
+
     .line 175
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->TXT:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 176
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->HTM:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->HTM:I
+
     .line 177
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->HTML:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 178
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->MEMO:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->MEMO:I
+
     .line 179
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XML:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 180
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SDOC:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SDOC:I
+
     .line 181
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SHOW:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 182
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLSB:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLSB:I
+
     .line 183
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XLTM:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 184
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->CELL:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->CELL:I
+
     .line 185
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->HCDT:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 186
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PRN:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PRN:I
+
     .line 187
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DOCUMENT_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->TSV:I
@@ -1612,12 +1810,14 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->APK:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 192
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_INSTALL_FILE_TYPE:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_INSTALL_FILE_TYPE:I
 
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->WGT:I
+    add-int/lit8 v1, v0, 0x1
+
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_INSTALL_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->WGT:I
 
     const/16 v0, 0x19a
 
@@ -1647,16 +1847,20 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DCF:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 201
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DRM_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SM4:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DRM_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DRM_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SM4:I
+
     .line 202
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DRM_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_DRM_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ODF:I
@@ -1675,40 +1879,50 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->P12:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 208
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->PFX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PFX:I
+
     .line 209
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->CRT:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 210
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->DER:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->DER:I
+
     .line 211
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PEM:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 212
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
 
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->CER:I
+    add-int/lit8 v1, v0, 0x1
+
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LAST_CERTIFICATE_FILE_TYPE:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->CER:I
 
     const/16 v0, 0x1f4
 
@@ -1724,184 +1938,236 @@
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->EPUB:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 218
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ACSM:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ACSM:I
+
     .line 221
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SWF:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 222
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SVG:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SVG:I
+
     .line 225
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->JAD:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 226
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->JAR:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->JAR:I
+
     .line 228
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ICS:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 229
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->VCS:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->VCS:I
+
     .line 230
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->VCF:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 231
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->VNT:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->VNT:I
+
     .line 232
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->VTS:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 233
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->XHTML:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->XHTML:I
+
     .line 234
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->EML:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 235
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SASF:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SASF:I
+
     .line 238
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SSF:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 239
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SFF:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SFF:I
+
     .line 240
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SCC:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 241
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->SCC_SCRAP:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SCC_SCRAP:I
+
     .line 242
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->SOL:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 244
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->FILE_3D_CAPTURE_TYPE:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->FILE_3D_CAPTURE_TYPE:I
+
     .line 247
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ENC:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 248
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->LOC:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LOC:I
+
     .line 251
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LA:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 254
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->GPX:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->GPX:I
+
     .line 257
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PAGES:I
 
-    add-int/lit8 v0, v1, 0x1
-
     .line 258
-    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
-
-    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->KEY:I
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     add-int/lit8 v1, v0, 0x1
 
+    sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->KEY:I
+
     .line 259
+    sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
+
+    add-int/lit8 v1, v0, 0x1
+
     sput v1, Lcom/samsung/android/galaxycontinuity/info/FileType;->ETC_FILE_INDEX:I
 
     sput v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->NUMBERS:I
@@ -2012,6 +2278,14 @@
 
 .method public static is3DCaptureFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     .line 314
     sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->FILE_3D_CAPTURE_TYPE:I
@@ -2031,6 +2305,14 @@
 
 .method public static isApkFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     .line 286
     sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->APK:I
@@ -2050,6 +2332,14 @@
 
 .method public static isArchiveFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0x19a
 
@@ -2073,6 +2363,14 @@
 
 .method public static isAudioFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0x64
 
@@ -2106,6 +2404,14 @@
 
 .method public static isDocumentFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0x12c
 
@@ -2129,6 +2435,14 @@
 
 .method public static isDrmFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0x1a4
 
@@ -2152,6 +2466,14 @@
 
 .method public static isEncryptionFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     .line 298
     sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->ENC:I
@@ -2179,6 +2501,14 @@
 
 .method public static isImageFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0xa
 
@@ -2202,6 +2532,14 @@
 
 .method public static isInstallFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0x190
 
@@ -2225,6 +2563,14 @@
 
 .method public static isMIDFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0x96
 
@@ -2248,6 +2594,14 @@
 
 .method public static isPlayListFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0xb4
 
@@ -2271,6 +2625,14 @@
 
 .method public static isPlayReadyType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     .line 306
     sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PYA:I
@@ -2306,6 +2668,14 @@
 
 .method public static isVideoFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     const/16 v0, 0xc8
 
@@ -2329,6 +2699,14 @@
 
 .method public static isiWorksFileType(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     .line 318
     sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->PAGES:I
@@ -2360,6 +2738,14 @@
 
 .method public static needFileUriForIntentStream(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileType"
+        }
+    .end annotation
 
     .line 322
     sget v0, Lcom/samsung/android/galaxycontinuity/info/FileType;->LA:I

@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Увайсцi</string>
     <string name="common_signin_button_text_long">Увайсці праз Google</string>
     <string name="copy">Капіраваць</string>
-    <string name="copy_toast_msg">Спасылка скапіравана ў буфер абмену</string>
     <string name="error_icon_content_description">Памылка</string>
     <string name="expand_button_title">Пашыраныя налады</string>
     <string name="exposed_dropdown_menu_content_description">Паказаць выпадное меню</string>
-    <string name="fallback_menu_item_copy_link">Скапіраваць спасылку</string>
-    <string name="fallback_menu_item_open_in_browser">Адкрыць у браўзеры</string>
-    <string name="fallback_menu_item_share_link">Абагуліць спасылку</string>
     <string name="icon_content_description">Значок дыялогавага акна</string>
     <string name="item_view_role_description">Укладка</string>
     <string name="material_clock_toggle_content_description">Выберыце AM (да паўдня) або PM (пасля паўдня)</string>

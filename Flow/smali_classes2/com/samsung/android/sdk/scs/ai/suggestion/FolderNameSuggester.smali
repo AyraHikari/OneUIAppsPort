@@ -52,7 +52,7 @@
 
     const-string v0, "FolderNameSuggester"
 
-    const-string v1, "suggest() executed"
+    const-string/jumbo v1, "suggest() executed"
 
     .line 53
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I

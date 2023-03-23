@@ -13,10 +13,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$execute$1\n+ 2 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection$ReaderRunnable\n+ 3 Util.kt\nokhttp3/internal/Util\n*L\n1#1,218:1\n688#2,5:219\n693#2,2:226\n695#2,2:231\n395#3,2:224\n397#3,3:228\n*E\n*S KotlinDebug\n*F\n+ 1 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection$ReaderRunnable\n*L\n692#1,2:224\n692#1,3:228\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -44,21 +40,21 @@
 
 
 # instance fields
-.field final synthetic $cancelable:Z
+.field public final synthetic $cancelable:Z
 
-.field final synthetic $headerBlock$inlined:Ljava/util/List;
+.field public final synthetic $headerBlock$inlined:Ljava/util/List;
 
-.field final synthetic $inFinished$inlined:Z
+.field public final synthetic $inFinished$inlined:Z
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $newStream$inlined:Lokhttp3/internal/http2/Http2Stream;
+.field public final synthetic $newStream$inlined:Lokhttp3/internal/http2/Http2Stream;
 
-.field final synthetic $stream$inlined:Lokhttp3/internal/http2/Http2Stream;
+.field public final synthetic $stream$inlined:Lokhttp3/internal/http2/Http2Stream;
 
-.field final synthetic $streamId$inlined:I
+.field public final synthetic $streamId$inlined:I
 
-.field final synthetic this$0:Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;
+.field public final synthetic this$0:Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;
 
 
 # direct methods
@@ -81,7 +77,6 @@
 
     iput-boolean p10, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$headers$$inlined$synchronized$lambda$1;->$inFinished$inlined:Z
 
-    .line 96
     invoke-direct {p0, p3, p4}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;Z)V
 
     return-void
@@ -90,9 +85,9 @@
 
 # virtual methods
 .method public runOnce()J
-    .locals 5
+    .locals 4
 
-    .line 220
+    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$headers$$inlined$synchronized$lambda$1;->this$0:Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;
 
@@ -113,7 +108,7 @@
     :catch_0
     move-exception v0
 
-    .line 222
+    .line 2
     sget-object v1, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
     invoke-virtual {v1}, Lokhttp3/internal/platform/Platform$Companion;->get()Lokhttp3/internal/platform/Platform;
@@ -128,8 +123,6 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
-
     iget-object v3, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$headers$$inlined$synchronized$lambda$1;->this$0:Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;
 
     iget-object v3, v3, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable;->this$0:Lokhttp3/internal/http2/Http2Connection;
@@ -140,21 +133,15 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
-
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v3, 0x4
 
-    move-object v4, v0
+    invoke-virtual {v1, v2, v3, v0}, Lokhttp3/internal/platform/Platform;->log(Ljava/lang/String;ILjava/lang/Throwable;)V
 
-    check-cast v4, Ljava/lang/Throwable;
-
-    invoke-virtual {v1, v2, v3, v4}, Lokhttp3/internal/platform/Platform;->log(Ljava/lang/String;ILjava/lang/Throwable;)V
-
-    .line 226
+    .line 3
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$headers$$inlined$synchronized$lambda$1;->$newStream$inlined:Lokhttp3/internal/http2/Http2Stream;
 

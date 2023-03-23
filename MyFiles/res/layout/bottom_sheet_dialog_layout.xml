@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/bottom_sheet_dialog_padding_top" android:paddingBottom="@dimen/bottom_sheet_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/storage_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

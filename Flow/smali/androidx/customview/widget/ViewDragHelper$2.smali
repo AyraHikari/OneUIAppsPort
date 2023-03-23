@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/customview/widget/ViewDragHelper;)V
     .locals 0
 
-    .line 343
+    .line 345
     iput-object p1, p0, Landroidx/customview/widget/ViewDragHelper$2;->this$0:Landroidx/customview/widget/ViewDragHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 346
+    .line 348
     iget-object v0, p0, Landroidx/customview/widget/ViewDragHelper$2;->this$0:Landroidx/customview/widget/ViewDragHelper;
 
     const/4 v1, 0x0

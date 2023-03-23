@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Registrieren und verwalten Sie bis zu %d Computer oder Tablets in Samsung Flow.
-
-Nur ein Computer oder Tablet kann gleichzeitig mit Ihrem Telefon verbunden sein. Sie müssen eines der Geräte auswählen, wenn beide Geräte registriert sind und versuchen eine Verbindung mit Ihrem Telefon herzustellen."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Registrieren und verwalten Sie bis zu %d Computer oder Tablet in Samsung Flow.
-
-Nur ein Computer oder Tablet kann gleichzeitig mit Ihrem Telefon verbunden sein. Sie müssen eines der Geräte auswählen, wenn beide Geräte registriert sind und versuchen eine Verbindung mit Ihrem Telefon herzustellen."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d neue Benachrichtigungen</item>
+        <item quantity="one">%d neue Benachrichtigung</item>
     </plurals>
 </resources>

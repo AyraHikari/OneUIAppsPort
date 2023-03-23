@@ -1811,7 +1811,7 @@
 
     if-eqz p1, :cond_0
 
-    const-string v1, "server finished"
+    const-string/jumbo v1, "server finished"
 
     goto :goto_0
 
@@ -2968,9 +2968,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     const-string v0, " client didn\'t provide credentials"
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

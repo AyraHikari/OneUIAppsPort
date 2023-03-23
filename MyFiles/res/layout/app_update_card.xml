@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/inline_cue_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/inline_cue_padding_start" android:paddingEnd="@dimen/inline_cue_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/inline_cue_text_size" android:textColor="@color/tip_card_text" android:id="@id/inline_cue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/inline_cue_text_margin_top" android:layout_marginBottom="@dimen/inline_cue_text_margin_bottom" android:text="@string/switch_to_one_drive_text_body" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/inline_cue_text_btn_margin_bottom">
+        <TextView android:textSize="@dimen/inline_cue_text_btn_text_size" android:textColor="@color/tip_card_btn_text" android:id="@id/inline_cue_not_now_btn" android:minHeight="@dimen/inline_cue_text_btn_min_height" android:text="@string/not_now" android:layout_marginEnd="@dimen/inline_cue_text_btn_margin_end" style="@style/TextButton" />
+        <TextView android:textSize="@dimen/inline_cue_text_btn_text_size" android:textColor="@color/tip_card_btn_text" android:id="@id/inline_cue_text_btn" android:minHeight="@dimen/inline_cue_text_btn_min_height" android:text="@string/about_page_update" style="@style/TextButton" />
+    </LinearLayout>
+</LinearLayout>

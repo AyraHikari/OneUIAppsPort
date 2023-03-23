@@ -1,58 +1,161 @@
-.class final Lcom/google/android/gms/location/zzn;
-.super Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
+.class public final Lcom/google/android/gms/location/zzn;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/api/internal/RegisterListenerMethod<",
-        "Lcom/google/android/gms/internal/location/zzaz;",
-        "Lcom/google/android/gms/location/LocationCallback;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final synthetic zzy:Lcom/google/android/gms/internal/location/zzbd;
-
-.field private final synthetic zzz:Lcom/google/android/gms/common/api/internal/ListenerHolder;
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/location/FusedLocationProviderClient;Lcom/google/android/gms/common/api/internal/ListenerHolder;Lcom/google/android/gms/internal/location/zzbd;Lcom/google/android/gms/common/api/internal/ListenerHolder;)V
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p3, p0, Lcom/google/android/gms/location/zzn;->zzy:Lcom/google/android/gms/internal/location/zzbd;
-
-    iput-object p4, p0, Lcom/google/android/gms/location/zzn;->zzz:Lcom/google/android/gms/common/api/internal/ListenerHolder;
-
-    invoke-direct {p0, p2}, Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;-><init>(Lcom/google/android/gms/common/api/internal/ListenerHolder;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic registerListener(Lcom/google/android/gms/common/api/Api$AnyClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 13
 
-    check-cast p1, Lcom/google/android/gms/internal/location/zzaz;
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
 
-    new-instance v0, Lcom/google/android/gms/location/FusedLocationProviderClient$zza;
+    move-result v0
 
-    invoke-direct {v0, p2}, Lcom/google/android/gms/location/FusedLocationProviderClient$zza;-><init>(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+    const-wide/16 v1, 0x0
 
-    iget-object p2, p0, Lcom/google/android/gms/location/zzn;->zzy:Lcom/google/android/gms/internal/location/zzbd;
+    const/4 v3, 0x0
 
-    iget-object v1, p0, Lcom/google/android/gms/location/zzn;->zzz:Lcom/google/android/gms/common/api/internal/ListenerHolder;
+    const/4 v4, 0x0
 
-    invoke-virtual {p1, p2, v1, v0}, Lcom/google/android/gms/internal/location/zzaz;->zza(Lcom/google/android/gms/internal/location/zzbd;Lcom/google/android/gms/common/api/internal/ListenerHolder;Lcom/google/android/gms/internal/location/zzaj;)V
+    move-wide v7, v1
 
-    return-void
+    move-wide v9, v7
+
+    move-object v6, v3
+
+    move-object v12, v6
+
+    move v11, v4
+
+    .line 2
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v1
+
+    if-ge v1, v0, :cond_5
+
+    .line 3
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
+
+    move-result v1
+
+    .line 4
+    invoke-static {v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    if-eq v2, v3, :cond_4
+
+    const/4 v3, 0x2
+
+    if-eq v2, v3, :cond_3
+
+    const/4 v3, 0x3
+
+    if-eq v2, v3, :cond_2
+
+    const/4 v3, 0x4
+
+    if-eq v2, v3, :cond_1
+
+    const/4 v3, 0x5
+
+    if-eq v2, v3, :cond_0
+
+    .line 11
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createBundle(Landroid/os/Parcel;I)Landroid/os/Bundle;
+
+    move-result-object v1
+
+    move-object v12, v1
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
+
+    move-result v1
+
+    move v11, v1
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readLong(Landroid/os/Parcel;I)J
+
+    move-result-wide v1
+
+    move-wide v9, v1
+
+    goto :goto_0
+
+    .line 8
+    :cond_3
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readLong(Landroid/os/Parcel;I)J
+
+    move-result-wide v1
+
+    move-wide v7, v1
+
+    goto :goto_0
+
+    .line 9
+    :cond_4
+    sget-object v2, Lcom/google/android/gms/location/DetectedActivity;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 10
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createTypedList(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    move-object v6, v1
+
+    goto :goto_0
+
+    .line 12
+    :cond_5
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
+
+    .line 13
+    new-instance p1, Lcom/google/android/gms/location/ActivityRecognitionResult;
+
+    move-object v5, p1
+
+    invoke-direct/range {v5 .. v12}, Lcom/google/android/gms/location/ActivityRecognitionResult;-><init>(Ljava/util/List;JJILandroid/os/Bundle;)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [Lcom/google/android/gms/location/ActivityRecognitionResult;
+
+    return-object p1
 .end method

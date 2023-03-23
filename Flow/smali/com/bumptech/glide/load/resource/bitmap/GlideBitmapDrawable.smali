@@ -52,7 +52,10 @@
 
     iput-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/GlideBitmapDrawable;->destRect:Landroid/graphics/Rect;
 
-    if-eqz p2, :cond_2
+    const-string v0, "BitmapState must not be null"
+
+    .line 33
+    invoke-static {p2, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 36
     iput-object p2, p0, Lcom/bumptech/glide/load/resource/bitmap/GlideBitmapDrawable;->state:Lcom/bumptech/glide/load/resource/bitmap/GlideBitmapDrawable$BitmapState;
@@ -100,16 +103,6 @@
     iput p1, p0, Lcom/bumptech/glide/load/resource/bitmap/GlideBitmapDrawable;->height:I
 
     return-void
-
-    .line 33
-    :cond_2
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "BitmapState must not be null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 

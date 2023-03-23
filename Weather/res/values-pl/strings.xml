@@ -60,6 +60,7 @@
     <string name="air_quality">Jakość powietrza</string>
     <string name="air_quality_next_tts">Późniejsze prognozy dzienne dotyczące jakości powietrza</string>
     <string name="air_quality_previous_tts">Wcześniejsze prognozy dzienne dotyczące jakości powietrza</string>
+    <string name="alert_title">Alert o bardzo trudnych warunkach pogodowych</string>
     <string name="all_added_cities">Wszystkie dodane miasta</string>
     <string name="allow">Zezwól</string>
     <string name="allow_permission_in_settings">Aby używać tej funkcji, musisz zezwolić na uprawnienia w Ustawieniach.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Nieobsługiwana akcja.</string>
     <string name="apply_daylight_saving_time">Zastosować czas letni?</string>
     <string name="as_possible_after_verification">Wysłano raport. Nazwa miasta zostanie zmieniona jak najszybciej po weryfikacji.</string>
+    <string name="auto_refresh_on_screen_description">Odświeżanie informacji o pogodzie automatycznie co godzinę. Gdy ta opcja jest włączona, nie można odświeżać ręcznie.</string>
+    <string name="auto_refresh_on_the_go">Odświeżaj automatycznie z dowolnego miejsca</string>
+    <string name="auto_refresh_on_the_go_advanced">Zaawansowane</string>
+    <string name="auto_refresh_on_the_go_description">Otrzymuj częściej aktualizacje pogody, gdy prowadzisz samochód, jedziesz na rowerze, biegasz lub spacerujesz. Gdy ta opcja jest włączona, nie można odświeżać ręcznie.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Otrzymuj częściej aktualizacje pogody, gdy prowadzisz samochód, jedziesz na rowerze, biegasz lub spacerujesz.</string>
     <string name="bottomsheet_action_expand_halfway">Rozwiń do połowy</string>
     <string name="btn_report">Raport</string>
     <string name="button_finish">Zakończ</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Dotknij dwukrotnie, aby uzyskać więcej informacji.</string>
     <string name="china">Chiny</string>
     <string name="cities_button">Miasta</string>
+    <string name="city_added">Dodano miasto.</string>
     <string name="city_list_text">Miasta</string>
     <string name="clear">Bezchmurnie</string>
     <string name="clear_text_end_icon_content_description">Wyczyść tekst</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Informacje o lokalizacji urządzenia będą wysyłane do dostawcy treści w celu dostarczania użytkownikowi lokalnych informacji o pogodzie.</string>
     <string name="contents_error_msg">Ta usługa jest czasowo niedostępna. Spróbuj ponownie później.</string>
     <string name="copy">Kopiuj</string>
-    <string name="copy_toast_msg">Link skopiowany do schowka</string>
     <string name="correct_city_name">Prawidłowa nazwa miasta</string>
     <string name="couldnt_find_location">Błąd znajdowania lokalizacji</string>
     <string name="cover_screen_top_sync_dialog_text">Ustawić tę samą lokalizację na ekranie głównym?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Upuszczono element w położenie %d.</string>
     <string name="dragndroplist_drag_start">Rozpoczęto przeciąganie elementu znajdującego się w położeniu %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Nie można przeciągnąć elementu znajdującego się w położeniu %d.</string>
+    <string name="drawer_tips">%s — wskazówki</string>
     <string name="drawer_tips_message">Dotknij tutaj, aby dodawać i usuwać lokalizacje lub zmieniać ich kolejność. Możesz także dodać kilka widgetów, aby pokazywały różne lokalizacje na Ekranie startowym.</string>
     <string name="drawer_tips_message_1">Dotknij opcji Zarządzaj lokalizacjami w dolnej części tego menu, aby dodawać, usuwać i zmieniać kolejność lokalizacji.</string>
     <string name="drawer_tips_message_2">Możesz dodać do ekranu głównego kilka widżetów, aby wyświetlać różne lokalizacje w tym samym czasie.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Zaawansowane</string>
     <string name="exposed_dropdown_menu_content_description">Pokaż menu</string>
     <string name="failed_to_send_report">Nie można wysłać raportu</string>
-    <string name="fallback_menu_item_copy_link">Kopiuj link</string>
-    <string name="fallback_menu_item_open_in_browser">Otwórz w przeglądarce</string>
-    <string name="fallback_menu_item_share_link">Udostępnij link</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Ulubiona lokalizacja</string>
     <string name="feel_like_pd_minus_temp">Odczucie -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Film wideo z prognozą</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mil/h</string>
+    <string name="fri">Pt</string>
     <string name="general">Ogólne</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Otrzymuj spersonalizowaną zawartość w oparciu o sposób używania telefonu.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Otrzymuj spersonalizowaną zawartość w oparciu o sposób używania tabletu.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">uzyskaj informacje o pogodzie, w tym o bieżącej lokalizacji, z serwisu Pogoda</string>
     <string name="go_to_website">Do witryny WWW</string>
     <string name="goto_apps">Dostępna jest nowa aktualizacja. Zainstalować teraz?</string>
     <string name="goto_apps_later">Później</string>
     <string name="goto_apps_now">Teraz</string>
     <string name="goto_apps_update_title">Alerty o nowej zawartości</string>
     <string name="header_tts">Nagłówek</string>
+    <string name="heavy">Duża</string>
     <string name="heavy_rain">Silne opady deszczu</string>
     <string name="heavy_rain_followed_by_intense_heat">Opady ulewnego deszczu, a następnie duże upały</string>
     <string name="heavy_rain_followed_by_light_rain">Opady ulewnego deszczu, a następnie duże upały</string>
@@ -249,7 +256,7 @@
     <string name="heavy_rain_with_some_snow">Opady ulewnego deszczu, z opadami śniegu</string>
     <string name="heavy_rain_with_sunny_intervals">Opady ulewnego deszczu, z przejaśnieniami</string>
     <string name="help">Pomoc</string>
-    <string name="help_favorite_location_msg">Ulubiona lokalizacja będzie używana do podawania informacji o pogodzie w powiadomieniach, kalendarzu, aplikacji Always On Display i innych połączonych usługach. Możesz zmienić ulubioną lokalizację, przechodząc do listy swoich lokalizacji.</string>
+    <string name="help_favorite_location_msg">Ulubiona lokalizacja będzie używana do podawania informacji o pogodzie w powiadomieniach, kalendarzu, funkcji Always On Display i innych połączonych usługach. Możesz zmienić ulubioną lokalizację, przechodząc do listy swoich lokalizacji.</string>
     <string name="help_favorite_location_without_aod_and_calendar_msg">Ulubiona lokalizacja będzie używana do podawania informacji o pogodzie w powiadomieniach. Możesz zmienić ulubioną lokalizację, przechodząc do listy swoich lokalizacji.</string>
     <string name="help_favorite_location_without_aod_msg">Ulubiona lokalizacja będzie używana do podawania informacji o pogodzie w powiadomieniach, kalendarzu i innych połączonych usługach. Możesz zmienić ulubioną lokalizację, przechodząc do listy swoich lokalizacji.</string>
     <string name="high_accuracy">GPS, Wi-Fi i sieci komórkowe</string>
@@ -266,7 +273,7 @@
     <string name="how_to_add_delete_set_location_as_favorite">Dodawanie, usuwanie i ustawianie lokalizacji w ulubionych.</string>
     <string name="how_to_add_hold_a_blank">Aby dodać widget Pogoda do ekranu startowego:</string>
     <string name="how_to_change_the_location_appearance">Aby zmienić lokalizację lub miejsce wyświetlania widgetu, naciśnij i przytrzymaj, a następnie wybierz Ustawienia.</string>
-    <string name="how_to_favorite_location_used_in_location">Twoja ulubiona lokalizacja jest używana w powiadomieniach, kalendarzu i aplikacji Always On Display.</string>
+    <string name="how_to_favorite_location_used_in_location">Twoja ulubiona lokalizacja jest używana w powiadomieniach, kalendarzu i funkcji Always On Display.</string>
     <string name="how_to_press_and_hold_space">Naciśnij i przytrzymaj puste miejsce na ekranie startowym, a następnie naciśnij Widgety.</string>
     <string name="how_to_press_and_hold_widget">Naciśnij i przytrzymaj widget, aby go wybrać.</string>
     <string name="how_to_search_or_swipe">Wyszukaj lub przeciągnij palcem, aby znaleźć Pogodę.</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Widoczność</string>
     <string name="life_index_wind">Wiatr</string>
     <string name="life_index_wind_force">Prędkość wiatru</string>
+    <string name="light">Mała</string>
     <string name="light_rain_followed_by_heavy_rain">Niewielie opady deszczu, a następnie opady ulewnego deszczu</string>
     <string name="light_rain_with_some_heavy_rain">Niewielkie opady deszczu, z opadami ulewnego deszczu</string>
     <string name="link_tts">Łącze</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Nie znaleziono wyników.</string>
     <string name="message_service_not_available">Usługa jest teraz niedostępna.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Pn</string>
     <string name="more">Więcej</string>
     <string name="more_cuntact_us">Kontakt z nami</string>
     <string name="more_information">Więcej</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Dotknij tutaj, aby zmienić domyślną lokalizację dla prognozy pogody i zarządzać wszystkimi lokalizacjami.</string>
     <string name="new_version_available">Dostępna jest nowa wersja aplikacji %s.</string>
     <string name="new_version_is_available">Dostępna jest nowa wersja.</string>
+    <string name="news_menu_show_news">Wyświetl wiadomości</string>
+    <string name="news_opt_in_banner_title_text">Bądź na bieżąco z aktualnymi wydarzeniami, pokazując wiadomości na widgecie Pogoda.</string>
+    <string name="news_opt_in_popup_desc_text">Bądź na bieżąco z aktualnymi wydarzeniami z %s, pokazując wiadomości na widgecie Pogoda.</string>
+    <string name="news_opt_in_popup_title_text">Zobacz wiadomości i pogodę na jednym widgecie</string>
+    <string name="news_request_agree_text">Dotknij, aby otrzymać wiadomości od %s</string>
+    <string name="news_widget_bubble_text">Informacje o pogodzie.</string>
+    <string name="news_widget_dummy_title">Dzisiejszy główny temat</string>
+    <string name="news_widget_new_dummy_title">5 rzeczy, które musisz wiedzieć dziś rano</string>
+    <string name="news_widget_oobe_text">Dotknij tutaj, aby dodać wiad.</string>
     <string name="next">Następne miasto</string>
+    <string name="next_btn">Dalej</string>
     <string name="next_city">Dotknij dwukrotnie, aby wyświetlić informacje o pogodzie dla następnego miasta.</string>
     <string name="night_tts">Noc</string>
     <string name="no_application_available">Brak dostępnych aplikacji.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Brak informacji o pogodzie</string>
     <string name="not_in_use">Nie jest w użyciu</string>
     <string name="not_now">Nie teraz</string>
+    <string name="not_now_btn">Nie teraz</string>
     <string name="not_selected">Niewybrany</string>
     <string name="not_set">Nie ustawiono</string>
     <string name="nothing_selected">Niczego nie zaznaczono.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">W celu uzyskania najszybszego i najdokładniejszego wykrywania lokalizacji dotknij opcji USTAWIENIA, a następnie ustaw Metodę lokalizowania na GPS, Wi-Fi i sieci komórkowe.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">W celu uzyskania najszybszego i najdokładniejszego wykrywania lokalizacji dotknij opcji USTAWIENIA, a następnie ustaw Metodę lokalizowania na GPS i Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Aby wyświetlić lokalne informacje o pogodzie, włącz ustawienia lokalizacji i upewnij się, że wybrano tryb Wysoka dokładność.</string>
+    <string name="notification_alert_channel_name">Alert o bardzo trudnych warunkach pogodowych</string>
     <string name="notification_apps_update_channel_name">Powiadomienia o aktualizacji</string>
     <string name="notification_auto_refresh_channel_name">Autom. odśw. inform. o pogodz.</string>
     <string name="notification_dex_channel_name">Pogoda w Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Otwórz aplik.</string>
     <string name="open_source_licences">Licencje open source</string>
     <string name="other_locations">Inne lokalizacje</string>
+    <string name="partly_sunny">Przejaśnienia</string>
     <string name="password_toggle_content_description">Pokaż hasło</string>
     <string name="paused">Wstrzymano</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Skopiowano „%1$s” do schowka.</string>
     <string name="preview">Podgląd ćwiczenia %s</string>
     <string name="previous">Poprz. miasto</string>
+    <string name="previous_btn">Wstecz</string>
     <string name="previous_city">Dotknij dwukrotnie, aby wyświetlić informacje o pogodzie dla poprzedniego miasta.</string>
     <string name="privacy_policy">Polityka prywatności</string>
     <string name="probability_of_rain_text">Prawdopodob. deszczu</string>
     <string name="protect_your_content">Ochrona zawartości</string>
+    <string name="ps_in">%s cale</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar i mapy</string>
     <string name="rain">Deszcz</string>
     <string name="rain_followed_by_intense_heat">Opady deszczu, a następnie duże upały</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Aby zaktualizować informacje o pogodzie, dotknij opcji USTAWIENIA, przejdź do menu Informacje o aplikacji > Uprawnienia, a następnie zezwól na poniższe uprawnienia i spróbuj ponownie:</string>
     <string name="runtime_location_permission_title">Zezwalanie na uprawnienia</string>
     <string name="runtime_oem_grant_permission_desc">Aplikacja %s ma uprawnienie dostępu do następujących elementów:</string>
+    <string name="sat">So</string>
     <string name="save_button">Zapisz</string>
     <string name="search_menu_title">Szukaj</string>
     <string name="search_most_searched_for">Najczęściej wyszukiwane</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Dostępna nowa zawartość</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Więcej</string>
+    <string name="sesl_preferecne_badge_description">Nowe powiadomienie</string>
     <string name="sesl_preferencecategory_added_title">Nagłówek</string>
     <string name="sesl_search_hint">Szukaj</string>
     <string name="sesl_searchview_description_clear">Wyczyść pole wyszukiwania</string>
@@ -637,14 +664,14 @@
     <string name="sesl_searchview_description_search">Szukaj</string>
     <string name="sesl_searchview_description_submit">Wyślij zapytanie</string>
     <string name="sesl_searchview_description_voice">Wyszukiwanie głosowe</string>
-    <string name="sesl_switch_off">Wyłączono</string>
-    <string name="sesl_switch_on">Włączono</string>
-    <string name="sesl_switchbar_off_text">Wyłączony</string>
-    <string name="sesl_switchbar_on_text">Włączony</string>
+    <string name="sesl_switch_off">Wyłączone</string>
+    <string name="sesl_switch_on">Włączone</string>
+    <string name="sesl_switchbar_off_text">Wyłączone</string>
+    <string name="sesl_switchbar_on_text">Włączone</string>
     <string name="sesl_toolbar_collapse_description">Zwiń</string>
     <string name="set_default_location">Ustaw lokalizację domyślną</string>
     <string name="set_favorite">Ustaw ulubioną</string>
-    <string name="set_favorite_location_confirm_dialog_msg">Miejsce %s zostanie ustawione jako Twoja ulubiona lokalizacja. To ustawienie będzie stosowane także w powiadomieniach, Kalendarzu i aplikacji Always On Display.</string>
+    <string name="set_favorite_location_confirm_dialog_msg">Miejsce %s zostanie ustawione jako Twoja ulubiona lokalizacja. To ustawienie będzie stosowane także w powiadomieniach, Kalendarzu i funkcji Always On Display.</string>
     <string name="set_font_size">Ustaw rozmiar czcionki</string>
     <string name="set_font_size_large">Duża</string>
     <string name="set_font_size_medium">Średni</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Brak dost.</string>
     <string name="st_view_less">Wyświetl mniej</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Wyłączony</string>
+    <string name="status_on">Włączony</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Nd</string>
     <string name="sunny">Słońce</string>
     <string name="sunny_with_some_clouds">Słonecznie, z niewielkim zachmurzeniem</string>
     <string name="sunny_with_some_heavy_rain">Słonecznie, z opadami ulewnego deszczu</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Dotknij tutaj, aby przywrócić dane o pogodzie ze starego urządzenia.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Dotknij przycisku PONÓW, aby spróbować ponownie znaleźć swoją lokalizację.</string>
     <string name="tap_setting_message_edge_panel">Włącz Lokalizację, aby mieć dostęp do informacji o lokalnej pogodzie.</string>
+    <string name="tap_the_settings_icon">Dotknij ikony ustawień.</string>
     <string name="tap_to_get_the_weather">Dotknij, aby wyświetlić informacje o pogodzie</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Zasady i warunki</string>
     <string name="the_latest_version">Najnowsza wersja jest już zainstalowana.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">To ustawienie zostanie również zastosowane w powiadomieniach i Kalendarzu.</string>
+    <string name="thu">Cz</string>
     <string name="tick_box_tts">Pole wyboru</string>
     <string name="ticked_tts">Zaznaczony</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Na godzinę</string>
     <string name="title_select_locations">Wybór lokalizacji</string>
     <string name="title_theme">Tematy</string>
+    <string name="to_continue_agree_to_updated">Aby kontynuować, zaakceptuj zaktualizowane %s.</string>
     <string name="to_get_local_weather_chn">"W celu uzyskania lokalnych informacji o pogodzie dane o lokalizacji urządzenia zostaną wysłane do dostawcy usług. Należy zapoznać się z %1$sZasadami i warunkami%2$s oraz %3$sPolityką prywatności%4$s dostawcy usług.
 Inne aplikacje i usługi na urządzeniu mogą uzyskiwać dostęp do pobranych informacji o pogodzie, aby wyświetlać takie informacje w ramach takich aplikacji.
 Aby dostarczać aktualnych informacji o pogodzie, aplikacja Pogoda będzie uzyskiwać dostęp do danych o lokalizacji urządzenia nawet wtedy, gdy użytkownik nie korzysta z aplikacji."</string>
     <string name="today">Dzisiaj</string>
+    <string name="try_it_out_btn">Wypróbuj</string>
+    <string name="tue">Wt</string>
+    <string name="turn_on_to_use_precise_location">Aby korzystać z tej funkcji, musisz zezwolić aplikacji %s na dostęp do Twojej lokalizacji przez cały czas i włączyć opcję Użyj dokładnej lokalizacji. Dotknij opcji Ustawienia, a następnie przejdź do Uprawnienia > Lokalizacja.</string>
     <string name="tw_title_weather_broadcast">Wiad. grupowa</string>
-    <string name="unable_to_check_for_updates">Nie można wyszukać aktualizacji. Brak połączenia sieciowego.</string>
+    <string name="unable_to_check_for_updates">Błąd sprawdzania aplikacji. Spróbuj ponownie później.</string>
     <string name="unable_to_receive_info_msg">Nie można odebrać informacji</string>
     <string name="unticked_tts">Niezaznaczone</string>
     <string name="unused">Nie używano</string>
     <string name="update">Aktualizuj</string>
     <string name="update_abb8">Aktualizuj</string>
     <string name="update_app">Aktualizuj aplikację</string>
+    <string name="updated_tile_chn">Zaktualizowano: %s</string>
     <string name="updated_tts">Zaktualizowano dokument %s</string>
+    <string name="use_current_location">Użyj bieżącej lokalizacji</string>
     <string name="use_current_location_agree_popup">"W celu uzyskania lokalnych informacji o pogodzie dane o lokalizacji urządzenia zostaną wysłane do dostawcy usług. (Należy zapoznać się z %1$spolityką prywatności%2$s dostawcy).
 Z uzyskanych informacji o pogodzie mogą korzystać pozostałe aplikacje i usługi zainstalowane na urządzeniu."</string>
     <string name="use_current_location_and_background_agree_popup">"W celu uzyskania lokalnych informacji o pogodzie dane o lokalizacji urządzenia zostaną wysłane do dostawcy usług. Należy zapoznać się z %1$sPolityką prywatności%2$s dostawcy usług.
@@ -746,9 +784,16 @@ Aby dostarczać aktualnych informacji o pogodzie, aplikacja Pogoda będzie uzysk
 Opcję tę można wyłączyć, przechodząc do ustawień aplikacji Pogoda."</string>
     <string name="use_current_location_body_msg_chn">"Należy uważnie przeczytać przed korzystaniem z aplikacji „Pogoda”:
 Jeżeli Użytkownik chce znać warunki pogodowe w swojej bieżącej lokalizacji, musi wyrazić zgodę na ciągły dostęp zewnętrznego dostawcy usług do swojego urządzenia oraz pobieranie określonych danych, wymienionych poniżej, nawet gdy Użytkownik nie korzysta z usługi. Przed wyrażeniem takiej zgody należy uważnie przeczytać i zrozumieć %1$sZasady i warunki%2$s oraz %3$sPolitykę prywatności%4$s zewnętrznego dostawcy usług. Użytkownik może wycofać swoją zgodę, wyłączając „Lokalizację” w menu „Ustawienia”. Uzyskane informacje o pogodzie mogą być wykorzystywane przez pozostałe aplikacje i usługi zainstalowane na urządzeniu w celu wyświetlania takich informacji w tych aplikacjach."</string>
+    <string name="use_current_location_body_msg_kor">"Informacje o bieżącej lokalizacji będą gromadzone i używane w celu dostarczania niektórych funkcji aplikacji Pogoda, takich jak lokalna prognoza pogody.
+
+Aby stale dostarczać informacje o pogodzie, aplikacja będzie regularnie przetwarzać lokalizację, nawet gdy nie korzystasz z aplikacji. Kontynuując, wyrażasz zgodę na gromadzenie i przetwarzanie informacji o lokalizacji w określonych powyżej celach.
+
+Możesz wstrzymać gromadzenie i używanie informacji o lokalizacji w ustawieniach aplikacji Pogoda."</string>
     <string name="use_current_location_body_purpose">Cel</string>
     <string name="use_current_location_body_purpose_content">Dostarczanie informacji o pogodzie w aktualnej lokalizacji Użytkownika</string>
     <string name="use_current_location_body_search_provider">Dostawca usług</string>
+    <string name="use_current_location_continue">Kontynuuj</string>
+    <string name="use_current_location_not_now">Nie teraz</string>
     <string name="use_current_location_off_alert_popup">Informacje o bieżącej lokalizacji zostaną usunięte.</string>
     <string name="useful_informations">Wskazówki życiowe i inne raporty</string>
     <string name="using_as">Użycie jako %s</string>
@@ -856,9 +901,11 @@ Jeżeli Użytkownik chce znać warunki pogodowe w swojej bieżącej lokalizacji,
     <string name="weather_tip">Wskazówki dot. pogody</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Śr</string>
     <string name="weekly_forecast">Na dzień</string>
     <string name="widget_background">Tło widgetu</string>
     <string name="widget_empty_text">Dotknij, by wyświetlić pogodę</string>
+    <string name="widget_location">Nazwa miasta</string>
     <string name="widget_name_4x1">Pogoda i zegar</string>
     <string name="widget_setting">Ustawienia</string>
     <string name="widget_setting_background_color">Kolor tła</string>

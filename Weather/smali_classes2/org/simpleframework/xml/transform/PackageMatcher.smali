@@ -10,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,28 +18,28 @@
 .method private matchEnum(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 1
 
-    .line 104
+    .line 1
     invoke-virtual {p1}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 107
+    .line 2
     invoke-virtual {v0}, Ljava/lang/Class;->isEnum()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 108
+    .line 3
     new-instance v0, Lorg/simpleframework/xml/transform/EnumTransform;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/transform/EnumTransform;-><init>(Ljava/lang/Class;)V
 
     return-object v0
 
-    .line 110
+    .line 4
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Class;->isEnum()Z
 
@@ -48,7 +47,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 111
+    .line 5
     new-instance v0, Lorg/simpleframework/xml/transform/EnumTransform;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/transform/EnumTransform;-><init>(Ljava/lang/Class;)V
@@ -63,18 +62,13 @@
 
 .method private matchFile(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 255
+    .line 1
     const-class v0, Ljava/io/File;
 
     if-ne p1, v0, :cond_0
 
-    .line 256
+    .line 2
     new-instance p1, Lorg/simpleframework/xml/transform/FileTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/FileTransform;-><init>()V
@@ -89,135 +83,130 @@
 
 .method private matchLanguage(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 129
+    .line 1
     const-class v0, Ljava/lang/Boolean;
 
     if-ne p1, v0, :cond_0
 
-    .line 130
+    .line 2
     new-instance p1, Lorg/simpleframework/xml/transform/BooleanTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/BooleanTransform;-><init>()V
 
     return-object p1
 
-    .line 132
+    .line 3
     :cond_0
     const-class v0, Ljava/lang/Integer;
 
     if-ne p1, v0, :cond_1
 
-    .line 133
+    .line 4
     new-instance p1, Lorg/simpleframework/xml/transform/IntegerTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/IntegerTransform;-><init>()V
 
     return-object p1
 
-    .line 135
+    .line 5
     :cond_1
     const-class v0, Ljava/lang/Long;
 
     if-ne p1, v0, :cond_2
 
-    .line 136
+    .line 6
     new-instance p1, Lorg/simpleframework/xml/transform/LongTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/LongTransform;-><init>()V
 
     return-object p1
 
-    .line 138
+    .line 7
     :cond_2
     const-class v0, Ljava/lang/Double;
 
     if-ne p1, v0, :cond_3
 
-    .line 139
+    .line 8
     new-instance p1, Lorg/simpleframework/xml/transform/DoubleTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/DoubleTransform;-><init>()V
 
     return-object p1
 
-    .line 141
+    .line 9
     :cond_3
     const-class v0, Ljava/lang/Float;
 
     if-ne p1, v0, :cond_4
 
-    .line 142
+    .line 10
     new-instance p1, Lorg/simpleframework/xml/transform/FloatTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/FloatTransform;-><init>()V
 
     return-object p1
 
-    .line 144
+    .line 11
     :cond_4
     const-class v0, Ljava/lang/Short;
 
     if-ne p1, v0, :cond_5
 
-    .line 145
+    .line 12
     new-instance p1, Lorg/simpleframework/xml/transform/ShortTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/ShortTransform;-><init>()V
 
     return-object p1
 
-    .line 147
+    .line 13
     :cond_5
     const-class v0, Ljava/lang/Byte;
 
     if-ne p1, v0, :cond_6
 
-    .line 148
+    .line 14
     new-instance p1, Lorg/simpleframework/xml/transform/ByteTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/ByteTransform;-><init>()V
 
     return-object p1
 
-    .line 150
+    .line 15
     :cond_6
     const-class v0, Ljava/lang/Character;
 
     if-ne p1, v0, :cond_7
 
-    .line 151
+    .line 16
     new-instance p1, Lorg/simpleframework/xml/transform/CharacterTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/CharacterTransform;-><init>()V
 
     return-object p1
 
-    .line 153
+    .line 17
     :cond_7
     const-class v0, Ljava/lang/String;
 
     if-ne p1, v0, :cond_8
 
-    .line 154
+    .line 18
     new-instance p1, Lorg/simpleframework/xml/transform/StringTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/StringTransform;-><init>()V
 
     return-object p1
 
-    .line 156
+    .line 19
     :cond_8
     const-class v0, Ljava/lang/Class;
 
     if-ne p1, v0, :cond_9
 
-    .line 157
+    .line 20
     new-instance p1, Lorg/simpleframework/xml/transform/ClassTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/ClassTransform;-><init>()V
@@ -232,31 +221,26 @@
 
 .method private matchMath(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 174
+    .line 1
     const-class v0, Ljava/math/BigDecimal;
 
     if-ne p1, v0, :cond_0
 
-    .line 175
+    .line 2
     new-instance p1, Lorg/simpleframework/xml/transform/BigDecimalTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/BigDecimalTransform;-><init>()V
 
     return-object p1
 
-    .line 177
+    .line 3
     :cond_0
     const-class v0, Ljava/math/BigInteger;
 
     if-ne p1, v0, :cond_1
 
-    .line 178
+    .line 4
     new-instance p1, Lorg/simpleframework/xml/transform/BigIntegerTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/BigIntegerTransform;-><init>()V
@@ -271,44 +255,39 @@
 
 .method private matchSQL(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 231
+    .line 1
     const-class v0, Ljava/sql/Time;
 
     if-ne p1, v0, :cond_0
 
-    .line 232
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/transform/DateTransform;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/transform/DateTransform;-><init>(Ljava/lang/Class;)V
 
     return-object v0
 
-    .line 234
+    .line 3
     :cond_0
     const-class v0, Ljava/sql/Date;
 
     if-ne p1, v0, :cond_1
 
-    .line 235
+    .line 4
     new-instance v0, Lorg/simpleframework/xml/transform/DateTransform;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/transform/DateTransform;-><init>(Ljava/lang/Class;)V
 
     return-object v0
 
-    .line 237
+    .line 5
     :cond_1
     const-class v0, Ljava/sql/Timestamp;
 
     if-ne p1, v0, :cond_2
 
-    .line 238
+    .line 6
     new-instance v0, Lorg/simpleframework/xml/transform/DateTransform;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/transform/DateTransform;-><init>(Ljava/lang/Class;)V
@@ -323,18 +302,13 @@
 
 .method private matchURL(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 273
+    .line 1
     const-class v0, Ljava/net/URL;
 
     if-ne p1, v0, :cond_0
 
-    .line 274
+    .line 2
     new-instance p1, Lorg/simpleframework/xml/transform/URLTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/URLTransform;-><init>()V
@@ -349,96 +323,91 @@
 
 .method private matchUtility(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 195
+    .line 1
     const-class v0, Ljava/util/Date;
 
     if-ne p1, v0, :cond_0
 
-    .line 196
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/transform/DateTransform;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/transform/DateTransform;-><init>(Ljava/lang/Class;)V
 
     return-object v0
 
-    .line 198
+    .line 3
     :cond_0
     const-class v0, Ljava/util/Locale;
 
     if-ne p1, v0, :cond_1
 
-    .line 199
+    .line 4
     new-instance p1, Lorg/simpleframework/xml/transform/LocaleTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/LocaleTransform;-><init>()V
 
     return-object p1
 
-    .line 201
+    .line 5
     :cond_1
     const-class v0, Ljava/util/Currency;
 
     if-ne p1, v0, :cond_2
 
-    .line 202
+    .line 6
     new-instance p1, Lorg/simpleframework/xml/transform/CurrencyTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/CurrencyTransform;-><init>()V
 
     return-object p1
 
-    .line 204
+    .line 7
     :cond_2
     const-class v0, Ljava/util/GregorianCalendar;
 
     if-ne p1, v0, :cond_3
 
-    .line 205
+    .line 8
     new-instance p1, Lorg/simpleframework/xml/transform/GregorianCalendarTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/GregorianCalendarTransform;-><init>()V
 
     return-object p1
 
-    .line 207
+    .line 9
     :cond_3
     const-class v0, Ljava/util/TimeZone;
 
     if-ne p1, v0, :cond_4
 
-    .line 208
+    .line 10
     new-instance p1, Lorg/simpleframework/xml/transform/TimeZoneTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/TimeZoneTransform;-><init>()V
 
     return-object p1
 
-    .line 210
+    .line 11
     :cond_4
     const-class v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     if-ne p1, v0, :cond_5
 
-    .line 211
+    .line 12
     new-instance p1, Lorg/simpleframework/xml/transform/AtomicIntegerTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/AtomicIntegerTransform;-><init>()V
 
     return-object p1
 
-    .line 213
+    .line 13
     :cond_5
     const-class v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     if-ne p1, v0, :cond_6
 
-    .line 214
+    .line 14
     new-instance p1, Lorg/simpleframework/xml/transform/AtomicLongTransform;
 
     invoke-direct {p1}, Lorg/simpleframework/xml/transform/AtomicLongTransform;-><init>()V
@@ -455,27 +424,22 @@
 # virtual methods
 .method public match(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 71
+    .line 1
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "java.lang"
 
-    .line 73
+    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 74
+    .line 3
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/transform/PackageMatcher;->matchLanguage(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
 
     move-result-object p1
@@ -485,14 +449,14 @@
     :cond_0
     const-string v1, "java.util"
 
-    .line 76
+    .line 4
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 77
+    .line 5
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/transform/PackageMatcher;->matchUtility(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
 
     move-result-object p1
@@ -502,14 +466,14 @@
     :cond_1
     const-string v1, "java.net"
 
-    .line 79
+    .line 6
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 80
+    .line 7
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/transform/PackageMatcher;->matchURL(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
 
     move-result-object p1
@@ -519,14 +483,14 @@
     :cond_2
     const-string v1, "java.io"
 
-    .line 82
+    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
-    .line 83
+    .line 9
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/transform/PackageMatcher;->matchFile(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
 
     move-result-object p1
@@ -536,14 +500,14 @@
     :cond_3
     const-string v1, "java.sql"
 
-    .line 85
+    .line 10
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 86
+    .line 11
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/transform/PackageMatcher;->matchSQL(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
 
     move-result-object p1
@@ -553,21 +517,21 @@
     :cond_4
     const-string v1, "java.math"
 
-    .line 88
+    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 89
+    .line 13
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/transform/PackageMatcher;->matchMath(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
 
     move-result-object p1
 
     return-object p1
 
-    .line 91
+    .line 14
     :cond_5
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/transform/PackageMatcher;->matchEnum(Ljava/lang/Class;)Lorg/simpleframework/xml/transform/Transform;
 

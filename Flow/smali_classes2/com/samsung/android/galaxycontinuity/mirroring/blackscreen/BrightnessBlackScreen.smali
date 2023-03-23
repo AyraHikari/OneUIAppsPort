@@ -10,6 +10,14 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 14
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/BlackScreen;-><init>(Landroid/content/Context;)V
@@ -19,6 +27,16 @@
 
 .method private getInt(Ljava/lang/String;I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 91
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/BrightnessBlackScreen;->mContext:Landroid/content/Context;
@@ -71,9 +89,9 @@
 .method private restoreBrightnessSettingValue()V
     .locals 5
 
-    const-string v0, "screen_brightness_mode"
+    const-string/jumbo v0, "screen_brightness_mode"
 
-    const-string v1, "screen_brightness"
+    const-string/jumbo v1, "screen_brightness"
 
     .line 51
     :try_start_0
@@ -170,6 +188,16 @@
 
 .method private setInt(Ljava/lang/String;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 95
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/blackscreen/BrightnessBlackScreen;->mContext:Landroid/content/Context;
@@ -198,6 +226,14 @@
 
 .method private setOriginalBrightness(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "setting"
+        }
+    .end annotation
 
     const-string v0, "PREF_ORIGINAL_BRIGHTNESS"
 
@@ -209,6 +245,14 @@
 
 .method private setOriginalBrightnessMode(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "setting"
+        }
+    .end annotation
 
     const-string v0, "PREF_ORIGINAL_BRIGHTNESS_MODE"
 
@@ -252,9 +296,9 @@
 .method public showBlackScreen()V
     .locals 6
 
-    const-string v0, "screen_brightness_mode"
+    const-string/jumbo v0, "screen_brightness_mode"
 
-    const-string v1, "screen_brightness"
+    const-string/jumbo v1, "screen_brightness"
 
     const-string v2, "[BrightnessBlackScreen] showBlackScreen"
 
@@ -320,9 +364,13 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -337,7 +385,11 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

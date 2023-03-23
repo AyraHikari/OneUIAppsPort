@@ -15,20 +15,32 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "interpolator"
+        }
+    .end annotation
 
     .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 57
-    new-instance v0, Landroid/widget/OverScroller;
-
     if-eqz p2, :cond_0
+
+    .line 58
+    new-instance v0, Landroid/widget/OverScroller;
 
     invoke-direct {v0, p1, p2}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
 
     goto :goto_0
 
     :cond_0
+    new-instance v0, Landroid/widget/OverScroller;
+
     invoke-direct {v0, p1}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;)V
 
     :goto_0
@@ -39,6 +51,15 @@
 
 .method public static create(Landroid/content/Context;)Landroidx/core/widget/ScrollerCompat;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -54,6 +75,17 @@
 
 .method public static create(Landroid/content/Context;Landroid/view/animation/Interpolator;)Landroidx/core/widget/ScrollerCompat;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "interpolator"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -97,6 +129,29 @@
 
 .method public fling(IIIIIIII)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startX",
+            "startY",
+            "velocityX",
+            "velocityY",
+            "minX",
+            "maxX",
+            "minY",
+            "maxY"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -128,6 +183,33 @@
 
 .method public fling(IIIIIIIIII)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startX",
+            "startY",
+            "velocityX",
+            "velocityY",
+            "minX",
+            "maxX",
+            "minY",
+            "maxY",
+            "overX",
+            "overY"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -268,6 +350,19 @@
 
 .method public notifyHorizontalEdgeReached(III)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startX",
+            "finalX",
+            "overX"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -281,6 +376,19 @@
 
 .method public notifyVerticalEdgeReached(III)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startY",
+            "finalY",
+            "overY"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -294,6 +402,25 @@
 
 .method public springBack(IIIIII)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startX",
+            "startY",
+            "minX",
+            "maxX",
+            "minY",
+            "maxY"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -321,6 +448,21 @@
 
 .method public startScroll(IIII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startX",
+            "startY",
+            "dx",
+            "dy"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -334,6 +476,23 @@
 
 .method public startScroll(IIIII)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "startX",
+            "startY",
+            "dx",
+            "dy",
+            "duration"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

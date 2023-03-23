@@ -41,16 +41,10 @@
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
-    .line 60
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 61
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/transform/DateFactory;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/transform/DateFactory;-><init>(Ljava/lang/Class;)V
@@ -64,13 +58,8 @@
 # virtual methods
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 44
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/DateTransform;->read(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p1
@@ -88,21 +77,15 @@
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
     monitor-enter p0
 
-    .line 75
+    .line 2
     :try_start_0
     invoke-static {p1}, Lorg/simpleframework/xml/transform/DateType;->getDate(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p1
 
-    .line 76
+    .line 3
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
 
     move-result-wide v0
@@ -111,7 +94,7 @@
 
     move-result-object p1
 
-    .line 78
+    .line 4
     iget-object v0, p0, Lorg/simpleframework/xml/transform/DateTransform;->factory:Lorg/simpleframework/xml/transform/DateFactory;
 
     const/4 v1, 0x1
@@ -142,13 +125,8 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 44
+    .line 1
     check-cast p1, Ljava/util/Date;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/DateTransform;->write(Ljava/util/Date;)Ljava/lang/String;
@@ -167,15 +145,9 @@
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
     monitor-enter p0
 
-    .line 92
+    .line 2
     :try_start_0
     invoke-static {p1}, Lorg/simpleframework/xml/transform/DateType;->getText(Ljava/util/Date;)Ljava/lang/String;
 

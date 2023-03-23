@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 27
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    .line 87
+    .line 88
     new-instance v0, Landroidx/recyclerview/widget/MessageThreadUtil$2;
 
     invoke-direct {v0, p0, p1}, Landroidx/recyclerview/widget/MessageThreadUtil$2;-><init>(Landroidx/recyclerview/widget/MessageThreadUtil;Landroidx/recyclerview/widget/ThreadUtil$BackgroundCallback;)V
@@ -70,7 +70,7 @@
         }
     .end annotation
 
-    .line 31
+    .line 30
     new-instance v0, Landroidx/recyclerview/widget/MessageThreadUtil$1;
 
     invoke-direct {v0, p0, p1}, Landroidx/recyclerview/widget/MessageThreadUtil$1;-><init>(Landroidx/recyclerview/widget/MessageThreadUtil;Landroidx/recyclerview/widget/ThreadUtil$MainThreadCallback;)V

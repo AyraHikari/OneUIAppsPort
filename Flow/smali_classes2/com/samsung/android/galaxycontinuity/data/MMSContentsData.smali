@@ -19,6 +19,18 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "AttachedFile",
+            "AttachedFileType",
+            "AttachedName"
+        }
+    .end annotation
 
     .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,6 +60,14 @@
 
 .method public setContentsHashCode(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hashCode"
+        }
+    .end annotation
 
     .line 18
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I

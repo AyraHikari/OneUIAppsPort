@@ -34,7 +34,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 7
 
     .line 65
     new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
@@ -48,43 +48,39 @@
     sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->NOT_STARTED:Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
 
     .line 68
-    new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
+    new-instance v1, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
 
-    const-string v1, "MEDIA_IN_PROGRESS"
+    const-string v3, "MEDIA_IN_PROGRESS"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->MEDIA_IN_PROGRESS:Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
+    sput-object v1, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->MEDIA_IN_PROGRESS:Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
 
     .line 71
-    new-instance v0, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
+    new-instance v3, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
 
-    const-string v1, "MEDIA_COMPLETE"
+    const-string v5, "MEDIA_COMPLETE"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->MEDIA_COMPLETE:Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
+    sput-object v3, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->MEDIA_COMPLETE:Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
 
-    const/4 v1, 0x3
+    const/4 v5, 0x3
 
-    new-array v1, v1, [Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
+    new-array v5, v5, [Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 63
-    sget-object v5, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->NOT_STARTED:Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
-
-    aput-object v5, v1, v2
-
-    sget-object v2, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->MEDIA_IN_PROGRESS:Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
-
-    aput-object v2, v1, v3
-
-    aput-object v0, v1, v4
-
-    sput-object v1, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->$VALUES:[Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
+    sput-object v5, Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;->$VALUES:[Lcom/google/api/client/googleapis/media/MediaHttpDownloader$DownloadState;
 
     return-void
 .end method

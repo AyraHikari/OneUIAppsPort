@@ -3,14 +3,6 @@
 .source "AppCompatCompoundButtonHelper.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/appcompat/widget/AppCompatCompoundButtonHelper$DirectSetButtonDrawableInterface;
-    }
-.end annotation
-
-
 # instance fields
 .field private mButtonTintList:Landroid/content/res/ColorStateList;
 
@@ -28,27 +20,35 @@
 # direct methods
 .method constructor <init>(Landroid/widget/CompoundButton;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 52
+    .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 38
+    .line 39
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintList:Landroid/content/res/ColorStateList;
 
-    .line 39
+    .line 40
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintMode:Landroid/graphics/PorterDuff$Mode;
 
     const/4 v0, 0x0
 
-    .line 40
+    .line 41
     iput-boolean v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mHasButtonTint:Z
 
-    .line 41
+    .line 42
     iput-boolean v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mHasButtonTintMode:Z
 
-    .line 53
+    .line 47
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
     return-void
@@ -59,7 +59,7 @@
 .method applyButtonTint()V
     .locals 2
 
-    .line 130
+    .line 127
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
     invoke-static {v0}, Landroidx/core/widget/CompoundButtonCompat;->getButtonDrawable(Landroid/widget/CompoundButton;)Landroid/graphics/drawable/Drawable;
@@ -68,7 +68,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 132
+    .line 129
     iget-boolean v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mHasButtonTint:Z
 
     if-nez v1, :cond_0
@@ -77,39 +77,39 @@
 
     if-eqz v1, :cond_4
 
-    .line 133
+    .line 130
     :cond_0
     invoke-static {v0}, Landroidx/core/graphics/drawable/DrawableCompat;->wrap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 134
+    .line 131
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 135
+    .line 132
     iget-boolean v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mHasButtonTint:Z
 
     if-eqz v1, :cond_1
 
-    .line 136
+    .line 133
     iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintList:Landroid/content/res/ColorStateList;
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/DrawableCompat;->setTintList(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
-    .line 138
+    .line 135
     :cond_1
     iget-boolean v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mHasButtonTintMode:Z
 
     if-eqz v1, :cond_2
 
-    .line 139
+    .line 136
     iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintMode:Landroid/graphics/PorterDuff$Mode;
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/DrawableCompat;->setTintMode(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 143
+    .line 140
     :cond_2
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->isStateful()Z
 
@@ -117,7 +117,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 144
+    .line 141
     iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
     invoke-virtual {v1}, Landroid/widget/CompoundButton;->getDrawableState()[I
@@ -126,7 +126,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 146
+    .line 143
     :cond_3
     iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
@@ -138,15 +138,23 @@
 
 .method getCompoundPaddingLeft(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "superValue"
+        }
+    .end annotation
 
-    .line 151
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 148
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-ge v0, v1, :cond_0
 
-    .line 154
+    .line 151
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
     invoke-static {v0}, Landroidx/core/widget/CompoundButtonCompat;->getButtonDrawable(Landroid/widget/CompoundButton;)Landroid/graphics/drawable/Drawable;
@@ -155,7 +163,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 156
+    .line 153
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v0
@@ -169,7 +177,7 @@
 .method getSupportButtonTintList()Landroid/content/res/ColorStateList;
     .locals 1
 
-    .line 105
+    .line 102
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintList:Landroid/content/res/ColorStateList;
 
     return-object v0
@@ -178,18 +186,29 @@
 .method getSupportButtonTintMode()Landroid/graphics/PorterDuff$Mode;
     .locals 1
 
-    .line 116
+    .line 113
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintMode:Landroid/graphics/PorterDuff$Mode;
 
     return-object v0
 .end method
 
 .method loadFromAttributes(Landroid/util/AttributeSet;I)V
-    .locals 3
+    .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "attrs",
+            "defStyleAttr"
+        }
+    .end annotation
 
-    .line 57
+    .line 51
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
+    .line 52
     invoke-virtual {v0}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -198,182 +217,201 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p1, v1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-static {v0, p1, v1, p2, v2}, Landroidx/appcompat/widget/TintTypedArray;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III)Landroidx/appcompat/widget/TintTypedArray;
 
-    move-result-object p1
+    move-result-object v0
 
-    .line 61
+    .line 54
+    iget-object v3, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
+
+    invoke-virtual {v3}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    sget-object v5, Landroidx/appcompat/R$styleable;->CompoundButton:[I
+
+    .line 55
+    invoke-virtual {v0}, Landroidx/appcompat/widget/TintTypedArray;->getWrappedTypeArray()Landroid/content/res/TypedArray;
+
+    move-result-object v7
+
+    const/4 v9, 0x0
+
+    move-object v6, p1
+
+    move v8, p2
+
+    .line 54
+    invoke-static/range {v3 .. v9}, Landroidx/core/view/ViewCompat;->saveAttributeDataForStyleable(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+
+    .line 58
     :try_start_0
-    sget p2, Landroidx/appcompat/R$styleable;->CompoundButton_buttonCompat:I
+    sget p1, Landroidx/appcompat/R$styleable;->CompoundButton_buttonCompat:I
 
-    invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/TintTypedArray;->hasValue(I)Z
 
-    move-result p2
+    move-result p1
 
-    if-eqz p2, :cond_0
+    if-eqz p1, :cond_0
 
-    .line 62
-    sget p2, Landroidx/appcompat/R$styleable;->CompoundButton_buttonCompat:I
+    .line 59
+    sget p1, Landroidx/appcompat/R$styleable;->CompoundButton_buttonCompat:I
 
-    invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {v0, p1, v2}, Landroidx/appcompat/widget/TintTypedArray;->getResourceId(II)I
 
-    move-result p2
+    move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-eqz p2, :cond_0
+    if-eqz p1, :cond_0
 
-    .line 65
+    .line 62
     :try_start_1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
+    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
-
-    .line 66
-    invoke-virtual {v1}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
+    .line 63
+    invoke-virtual {p2}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1, p2}, Landroidx/appcompat/content/res/AppCompatResources;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v1, p1}, Landroidx/appcompat/content/res/AppCompatResources;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
-    move-result-object p2
+    move-result-object p1
 
-    .line 65
-    invoke-virtual {v0, p2}, Landroid/widget/CompoundButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
+    .line 62
+    invoke-virtual {p2, p1}, Landroid/widget/CompoundButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
     :try_end_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    const/4 p2, 0x1
+    const/4 p1, 0x1
 
     goto :goto_0
 
     :catch_0
     :cond_0
-    move p2, v2
+    move p1, v2
 
     :goto_0
-    if-nez p2, :cond_1
+    if-nez p1, :cond_1
 
-    .line 74
+    .line 71
     :try_start_2
-    sget p2, Landroidx/appcompat/R$styleable;->CompoundButton_android_button:I
+    sget p1, Landroidx/appcompat/R$styleable;->CompoundButton_android_button:I
 
-    invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/TintTypedArray;->hasValue(I)Z
 
-    move-result p2
+    move-result p1
 
-    if-eqz p2, :cond_1
+    if-eqz p1, :cond_1
+
+    .line 72
+    sget p1, Landroidx/appcompat/R$styleable;->CompoundButton_android_button:I
+
+    invoke-virtual {v0, p1, v2}, Landroidx/appcompat/widget/TintTypedArray;->getResourceId(II)I
+
+    move-result p1
+
+    if-eqz p1, :cond_1
 
     .line 75
-    sget p2, Landroidx/appcompat/R$styleable;->CompoundButton_android_button:I
+    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
-    invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
-
-    move-result p2
-
-    if-eqz p2, :cond_1
-
-    .line 78
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
-
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
-
-    .line 79
-    invoke-virtual {v1}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
+    .line 76
+    invoke-virtual {p2}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1, p2}, Landroidx/appcompat/content/res/AppCompatResources;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v1, p1}, Landroidx/appcompat/content/res/AppCompatResources;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object p1
+
+    .line 75
+    invoke-virtual {p2, p1}, Landroid/widget/CompoundButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 79
+    :cond_1
+    sget p1, Landroidx/appcompat/R$styleable;->CompoundButton_buttonTint:I
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/TintTypedArray;->hasValue(I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    .line 80
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
+
+    sget p2, Landroidx/appcompat/R$styleable;->CompoundButton_buttonTint:I
+
+    .line 81
+    invoke-virtual {v0, p2}, Landroidx/appcompat/widget/TintTypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
-    .line 78
-    invoke-virtual {v0, p2}, Landroid/widget/CompoundButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
-
-    .line 82
-    :cond_1
-    sget p2, Landroidx/appcompat/R$styleable;->CompoundButton_buttonTint:I
-
-    invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2
+    .line 80
+    invoke-static {p1, p2}, Landroidx/core/widget/CompoundButtonCompat;->setButtonTintList(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
 
     .line 83
-    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
+    :cond_2
+    sget p1, Landroidx/appcompat/R$styleable;->CompoundButton_buttonTintMode:I
 
-    sget v0, Landroidx/appcompat/R$styleable;->CompoundButton_buttonTint:I
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/TintTypedArray;->hasValue(I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
 
     .line 84
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
 
-    move-result-object v0
-
-    .line 83
-    invoke-static {p2, v0}, Landroidx/core/widget/CompoundButtonCompat;->setButtonTintList(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
-
-    .line 86
-    :cond_2
     sget p2, Landroidx/appcompat/R$styleable;->CompoundButton_buttonTintMode:I
-
-    invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_3
-
-    .line 87
-    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mView:Landroid/widget/CompoundButton;
-
-    sget v0, Landroidx/appcompat/R$styleable;->CompoundButton_buttonTintMode:I
 
     const/4 v1, -0x1
 
-    .line 89
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
+    .line 86
+    invoke-virtual {v0, p2, v1}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
-    move-result v0
+    move-result p2
 
     const/4 v1, 0x0
 
-    .line 88
-    invoke-static {v0, v1}, Landroidx/appcompat/widget/DrawableUtils;->parseTintMode(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    .line 85
+    invoke-static {p2, v1}, Landroidx/appcompat/widget/DrawableUtils;->parseTintMode(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
-    move-result-object v0
+    move-result-object p2
 
-    .line 87
-    invoke-static {p2, v0}, Landroidx/core/widget/CompoundButtonCompat;->setButtonTintMode(Landroid/widget/CompoundButton;Landroid/graphics/PorterDuff$Mode;)V
+    .line 84
+    invoke-static {p1, p2}, Landroidx/core/widget/CompoundButtonCompat;->setButtonTintMode(Landroid/widget/CompoundButton;Landroid/graphics/PorterDuff$Mode;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 93
+    .line 90
     :cond_3
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/TintTypedArray;->recycle()V
 
     return-void
 
     :catchall_0
-    move-exception p2
+    move-exception p1
 
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/TintTypedArray;->recycle()V
 
-    .line 94
-    throw p2
+    .line 91
+    throw p1
 .end method
 
 .method onSetButtonDrawable()V
     .locals 1
 
-    .line 120
+    .line 117
     iget-boolean v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mSkipNextApply:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 121
+    .line 118
     iput-boolean v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mSkipNextApply:Z
 
     return-void
@@ -381,10 +419,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 125
+    .line 122
     iput-boolean v0, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mSkipNextApply:Z
 
-    .line 126
+    .line 123
     invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->applyButtonTint()V
 
     return-void
@@ -392,16 +430,24 @@
 
 .method setSupportButtonTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tint"
+        }
+    .end annotation
 
-    .line 98
+    .line 95
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintList:Landroid/content/res/ColorStateList;
 
     const/4 p1, 0x1
 
-    .line 99
+    .line 96
     iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mHasButtonTint:Z
 
-    .line 101
+    .line 98
     invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->applyButtonTint()V
 
     return-void
@@ -409,16 +455,24 @@
 
 .method setSupportButtonTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tintMode"
+        }
+    .end annotation
 
-    .line 109
+    .line 106
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mButtonTintMode:Landroid/graphics/PorterDuff$Mode;
 
     const/4 p1, 0x1
 
-    .line 110
+    .line 107
     iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->mHasButtonTintMode:Z
 
-    .line 112
+    .line 109
     invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatCompoundButtonHelper;->applyButtonTint()V
 
     return-void

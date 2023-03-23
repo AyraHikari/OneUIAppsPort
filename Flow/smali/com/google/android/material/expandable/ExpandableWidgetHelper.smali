@@ -15,7 +15,7 @@
 .method public constructor <init>(Lcom/google/android/material/expandable/ExpandableWidget;)V
     .locals 1
 
-    .line 41
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
@@ -26,7 +26,7 @@
     .line 37
     iput v0, p0, Lcom/google/android/material/expandable/ExpandableWidgetHelper;->expandedComponentIdHint:I
 
-    .line 42
+    .line 41
     check-cast p1, Landroid/view/View;
 
     iput-object p1, p0, Lcom/google/android/material/expandable/ExpandableWidgetHelper;->widget:Landroid/view/View;
@@ -74,7 +74,7 @@
 .method public isExpanded()Z
     .locals 1
 
-    .line 57
+    .line 56
     iget-boolean v0, p0, Lcom/google/android/material/expandable/ExpandableWidgetHelper;->expanded:Z
 
     return v0
@@ -143,15 +143,15 @@
 .method public setExpanded(Z)Z
     .locals 1
 
-    .line 47
+    .line 46
     iget-boolean v0, p0, Lcom/google/android/material/expandable/ExpandableWidgetHelper;->expanded:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 48
+    .line 47
     iput-boolean p1, p0, Lcom/google/android/material/expandable/ExpandableWidgetHelper;->expanded:Z
 
-    .line 49
+    .line 48
     invoke-direct {p0}, Lcom/google/android/material/expandable/ExpandableWidgetHelper;->dispatchExpandedStateChanged()V
 
     const/4 p1, 0x1

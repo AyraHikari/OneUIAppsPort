@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 81
+    .line 83
     invoke-direct {p0}, Lorg/jsoup/select/CombiningEvaluator;-><init>()V
 
     return-void
@@ -69,17 +69,30 @@
     return-void
 .end method
 
+.method varargs constructor <init>([Lorg/jsoup/select/Evaluator;)V
+    .locals 0
+
+    .line 80
+    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lorg/jsoup/select/CombiningEvaluator$Or;-><init>(Ljava/util/Collection;)V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public add(Lorg/jsoup/select/Evaluator;)V
     .locals 1
 
-    .line 85
+    .line 87
     iget-object v0, p0, Lorg/jsoup/select/CombiningEvaluator$Or;->evaluators:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 86
+    .line 88
     invoke-virtual {p0}, Lorg/jsoup/select/CombiningEvaluator$Or;->updateNumEvaluators()V
 
     return-void
@@ -92,13 +105,13 @@
 
     move v1, v0
 
-    .line 91
+    .line 93
     :goto_0
     iget v2, p0, Lorg/jsoup/select/CombiningEvaluator$Or;->num:I
 
     if-ge v1, v2, :cond_1
 
-    .line 92
+    .line 94
     iget-object v2, p0, Lorg/jsoup/select/CombiningEvaluator$Or;->evaluators:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -107,7 +120,7 @@
 
     check-cast v2, Lorg/jsoup/select/Evaluator;
 
-    .line 93
+    .line 95
     invoke-virtual {v2, p1, p2}, Lorg/jsoup/select/Evaluator;->matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
 
     move-result v2
@@ -128,22 +141,14 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    const/4 v0, 0x1
+    .line 103
+    iget-object v0, p0, Lorg/jsoup/select/CombiningEvaluator$Or;->evaluators:Ljava/util/ArrayList;
 
-    new-array v0, v0, [Ljava/lang/Object;
+    const-string v1, ", "
 
-    .line 101
-    iget-object v1, p0, Lorg/jsoup/select/CombiningEvaluator$Or;->evaluators:Ljava/util/ArrayList;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    const-string v1, ":or%s"
-
-    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lorg/jsoup/internal/StringUtil;->join(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

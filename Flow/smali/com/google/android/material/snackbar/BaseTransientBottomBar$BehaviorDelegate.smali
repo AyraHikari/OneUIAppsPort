@@ -29,22 +29,22 @@
         }
     .end annotation
 
-    .line 1034
+    .line 1407
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const v0, 0x3dcccccd    # 0.1f
 
-    .line 1035
+    .line 1408
     invoke-virtual {p1, v0}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->setStartAlphaSwipeDistance(F)V
 
     const v0, 0x3f19999a    # 0.6f
 
-    .line 1036
+    .line 1409
     invoke-virtual {p1, v0}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->setEndAlphaSwipeDistance(F)V
 
     const/4 v0, 0x0
 
-    .line 1037
+    .line 1410
     invoke-virtual {p1, v0}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->setSwipeDirection(I)V
 
     return-void
@@ -55,7 +55,7 @@
 .method public canSwipeDismissView(Landroid/view/View;)Z
     .locals 0
 
-    .line 1045
+    .line 1419
     instance-of p1, p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;
 
     return p1
@@ -64,7 +64,7 @@
 .method public onInterceptTouchEvent(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 1
 
-    .line 1049
+    .line 1424
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -81,7 +81,7 @@
 
     goto :goto_0
 
-    .line 1059
+    .line 1434
     :cond_0
     invoke-static {}, Lcom/google/android/material/snackbar/SnackbarManager;->getInstance()Lcom/google/android/material/snackbar/SnackbarManager;
 
@@ -93,7 +93,7 @@
 
     goto :goto_0
 
-    .line 1053
+    .line 1428
     :cond_1
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getX()F
 
@@ -113,7 +113,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 1054
+    .line 1429
     invoke-static {}, Lcom/google/android/material/snackbar/SnackbarManager;->getInstance()Lcom/google/android/material/snackbar/SnackbarManager;
 
     move-result-object p1
@@ -137,7 +137,7 @@
         }
     .end annotation
 
-    .line 1041
+    .line 1415
     iget-object p1, p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->managerCallback:Lcom/google/android/material/snackbar/SnackbarManager$Callback;
 
     iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$BehaviorDelegate;->managerCallback:Lcom/google/android/material/snackbar/SnackbarManager$Callback;

@@ -2,15 +2,13 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/fragment_help_0" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Weather.Style.Appbar">
-        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:title="@string/favorite_location" style="@style/Weather.Style.CollapsingToolbar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:title="@string/favorite_location" style="@style/Weather.Style.CollapsingToolbar">
             <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" app:title="@string/favorite_location" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <View android:layout_gravity="end" android:id="@id/help_flexible_left" android:background="@color/col_common_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
         <androidx.core.widget.NestedScrollView android:id="@id/help_container" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <TextView android:textSize="16.0sp" android:textColor="@color/col_help_description_text_color" android:id="@id/help_favorite_location_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_favorite_location_msg" android:lineSpacingExtra="4.0sp" android:fontFamily="@string/font_roboto_regular" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
         </androidx.core.widget.NestedScrollView>
-        <View android:layout_gravity="end" android:id="@id/help_flexible_right" android:background="@color/col_common_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
     </FrameLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

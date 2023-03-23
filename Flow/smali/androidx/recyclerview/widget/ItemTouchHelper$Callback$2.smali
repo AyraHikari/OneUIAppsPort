@@ -1,4 +1,4 @@
-.class final Landroidx/recyclerview/widget/ItemTouchHelper$Callback$2;
+.class Landroidx/recyclerview/widget/ItemTouchHelper$Callback$2;
 .super Ljava/lang/Object;
 .source "ItemTouchHelper.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1449
+    .line 1601
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

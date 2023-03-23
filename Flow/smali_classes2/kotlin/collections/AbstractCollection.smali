@@ -21,15 +21,10 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAbstractCollection.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AbstractCollection.kt\nkotlin/collections/AbstractCollection\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,42:1\n1556#2,3:43\n1535#2,3:46\n*E\n*S KotlinDebug\n*F\n+ 1 AbstractCollection.kt\nkotlin/collections/AbstractCollection\n*L\n19#1,3:43\n22#1,3:46\n*E\n"
+    value = "SMAP\nAbstractCollection.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AbstractCollection.kt\nkotlin/collections/AbstractCollection\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,42:1\n1741#2,3:43\n1720#2,3:46\n*S KotlinDebug\n*F\n+ 1 AbstractCollection.kt\nkotlin/collections/AbstractCollection\n*L\n19#1:43,3\n22#1:46,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u00006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010(\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0000\u0008\'\u0018\u0000*\u0006\u0008\u0000\u0010\u0001 \u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B\u0007\u0008\u0004\u00a2\u0006\u0002\u0010\u0003J\u0016\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u000bJ\u0016\u0010\u000c\u001a\u00020\t2\u000c\u0010\r\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002H\u0016J\u0008\u0010\u000e\u001a\u00020\tH\u0016J\u000f\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0010H\u00a6\u0002J\u0015\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u0012H\u0015\u00a2\u0006\u0002\u0010\u0014J\'\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u0002H\u00150\u0012\"\u0004\u0008\u0001\u0010\u00152\u000c\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u0002H\u00150\u0012H\u0014\u00a2\u0006\u0002\u0010\u0017J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016R\u0012\u0010\u0004\u001a\u00020\u0005X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\u001a"
     }
@@ -65,9 +60,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -75,7 +71,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 15
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -133,55 +129,65 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)Z"
+        }
+    .end annotation
 
-    .line 43
-    instance-of v0, p0, Ljava/util/Collection;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
+    .line 19
     move-object v0, p0
 
-    check-cast v0, Ljava/util/Collection;
+    check-cast v0, Ljava/lang/Iterable;
 
-    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+    .line 43
+    instance-of v1, v0, Ljava/util/Collection;
 
-    move-result v0
+    const/4 v2, 0x0
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
+
+    move-object v1, v0
+
+    check-cast v1, Ljava/util/Collection;
+
+    invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     goto :goto_0
 
     .line 44
     :cond_0
-    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
     :cond_1
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 19
-    invoke-static {v2, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     :cond_2
     :goto_0
-    return v1
+    return v2
 .end method
 
 .method public containsAll(Ljava/util/Collection;)Z
@@ -198,7 +204,7 @@
 
     const-string v0, "elements"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 22
     check-cast p1, Ljava/lang/Iterable;
@@ -340,7 +346,7 @@
 .method public final bridge size()I
     .locals 1
 
-    .line 15
+    .line 14
     invoke-virtual {p0}, Lkotlin/collections/AbstractCollection;->getSize()I
 
     move-result v0
@@ -375,7 +381,7 @@
 
     const-string v0, "array"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 40
     move-object v0, p0
@@ -386,61 +392,46 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
-
     return-object p1
-
-    :cond_0
-    new-instance p1, Lkotlin/TypeCastException;
-
-    const-string v0, "null cannot be cast to non-null type kotlin.Array<T>"
-
-    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 10
-
-    const-string v0, ", "
+    .locals 9
 
     .line 26
-    move-object v2, v0
+    move-object v0, p0
+
+    check-cast v0, Ljava/lang/Iterable;
+
+    const-string v1, ", "
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    const-string v2, "["
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    const-string v0, "["
-
-    move-object v3, v0
+    const-string v3, "]"
 
     check-cast v3, Ljava/lang/CharSequence;
 
-    const-string v0, "]"
+    new-instance v4, Lkotlin/collections/AbstractCollection$toString$1;
 
-    move-object v4, v0
+    invoke-direct {v4, p0}, Lkotlin/collections/AbstractCollection$toString$1;-><init>(Lkotlin/collections/AbstractCollection;)V
 
-    check-cast v4, Ljava/lang/CharSequence;
+    move-object v6, v4
 
-    new-instance v0, Lkotlin/collections/AbstractCollection$toString$1;
+    check-cast v6, Lkotlin/jvm/functions/Function1;
 
-    invoke-direct {v0, p0}, Lkotlin/collections/AbstractCollection$toString$1;-><init>(Lkotlin/collections/AbstractCollection;)V
-
-    move-object v7, v0
-
-    check-cast v7, Lkotlin/jvm/functions/Function1;
+    const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    const/16 v7, 0x18
 
-    const/16 v8, 0x18
+    const/4 v8, 0x0
 
-    const/4 v9, 0x0
-
-    move-object v1, p0
-
-    invoke-static/range {v1 .. v9}, Lkotlin/collections/CollectionsKt;->joinToString$default(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static/range {v0 .. v8}, Lkotlin/collections/CollectionsKt;->joinToString$default(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 

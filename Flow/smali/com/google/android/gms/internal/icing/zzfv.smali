@@ -1,48 +1,46 @@
-.class final Lcom/google/android/gms/internal/icing/zzfv;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/gms/internal/icing/zzfv;
+.super Lcom/google/android/gms/internal/icing/zzcx;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 # interfaces
-.implements Ljava/lang/Iterable;
+.implements Lcom/google/android/gms/internal/icing/zzef;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Ljava/lang/Iterable<",
-        "Ljava/lang/Object;",
-        ">;"
+        "Lcom/google/android/gms/internal/icing/zzcx<",
+        "Lcom/google/android/gms/internal/icing/zzfw;",
+        "Lcom/google/android/gms/internal/icing/zzfv;",
+        ">;",
+        "Lcom/google/android/gms/internal/icing/zzef;"
     }
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 0
+.method private constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lcom/google/android/gms/internal/icing/zzfw;->zze()Lcom/google/android/gms/internal/icing/zzfw;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/icing/zzcx;-><init>(Lcom/google/android/gms/internal/icing/zzda;)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final iterator()Ljava/util/Iterator;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
+.method synthetic constructor <init>(Lcom/google/android/gms/internal/icing/zzfu;)V
+    .locals 0
 
     .line 2
-    invoke-static {}, Lcom/google/android/gms/internal/icing/zzft;->zzdl()Ljava/util/Iterator;
+    invoke-static {}, Lcom/google/android/gms/internal/icing/zzfw;->zze()Lcom/google/android/gms/internal/icing/zzfw;
 
-    move-result-object v0
+    move-result-object p1
 
-    return-object v0
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/icing/zzcx;-><init>(Lcom/google/android/gms/internal/icing/zzda;)V
+
+    return-void
 .end method

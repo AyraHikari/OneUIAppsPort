@@ -1,52 +1,35 @@
-.class public Lcom/google/android/gms/internal/base/zap;
-.super Landroid/os/Handler;
+.class public final Lcom/google/android/gms/internal/base/zap;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # static fields
-.field private static volatile zarr:Lcom/google/android/gms/internal/base/zaq;
+.field private static final zaa:Lcom/google/android/gms/internal/base/zam;
+
+.field private static volatile zab:Lcom/google/android/gms/internal/base/zam;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 0
+    .locals 2
+
+    new-instance v0, Lcom/google/android/gms/internal/base/zao;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/base/zao;-><init>(Lcom/google/android/gms/internal/base/zan;)V
+
+    sput-object v0, Lcom/google/android/gms/internal/base/zap;->zaa:Lcom/google/android/gms/internal/base/zam;
+
+    sput-object v0, Lcom/google/android/gms/internal/base/zap;->zab:Lcom/google/android/gms/internal/base/zam;
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 0
+.method public static zaa()Lcom/google/android/gms/internal/base/zam;
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+    sget-object v0, Lcom/google/android/gms/internal/base/zap;->zab:Lcom/google/android/gms/internal/base/zam;
 
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Looper;)V
-    .locals 0
-
-    .line 3
-    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
-    .locals 0
-
-    .line 5
-    invoke-direct {p0, p1, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final dispatchMessage(Landroid/os/Message;)V
-    .locals 0
-
-    .line 8
-    invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
-
-    return-void
+    return-object v0
 .end method

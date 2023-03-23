@@ -1,12 +1,13 @@
 .class final Lcom/google/android/gms/search/zzb;
 .super Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/android/gms/common/api/Api$AbstractClientBuilder<",
-        "Lcom/google/android/gms/internal/icing/zzap;",
+        "Lcom/google/android/gms/internal/icing/zzav;",
         "Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;",
         ">;"
     }
@@ -25,13 +26,16 @@
 
 
 # virtual methods
-.method public final synthetic buildClient(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
+.method public final bridge synthetic buildClient(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
     .locals 0
 
-    .line 3
-    new-instance p2, Lcom/google/android/gms/internal/icing/zzap;
+    .line 1
+    check-cast p4, Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;
 
-    invoke-direct {p2, p1, p5, p6, p3}, Lcom/google/android/gms/internal/icing/zzap;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;Lcom/google/android/gms/common/internal/ClientSettings;)V
+    .line 2
+    new-instance p2, Lcom/google/android/gms/internal/icing/zzav;
+
+    invoke-direct {p2, p1, p5, p6, p3}, Lcom/google/android/gms/internal/icing/zzav;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;Lcom/google/android/gms/common/internal/ClientSettings;)V
 
     return-object p2
 .end method

@@ -25,15 +25,36 @@
 # instance fields
 .field private final fabContentRect:Landroid/graphics/Rect;
 
+.field private final fabLayoutListener:Landroid/view/View$OnLayoutChangeListener;
+
+.field private originalBottomMargin:I
+
+.field private viewRef:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Lcom/google/android/material/bottomappbar/BottomAppBar;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method public constructor <init>()V
     .locals 1
 
-    .line 811
+    .line 1139
     invoke-direct {p0}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;-><init>()V
 
-    .line 812
+    .line 1076
+    new-instance v0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$1;
+
+    invoke-direct {v0, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$1;-><init>(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)V
+
+    iput-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabLayoutListener:Landroid/view/View$OnLayoutChangeListener;
+
+    .line 1140
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -46,10 +67,17 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 816
+    .line 1144
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 817
+    .line 1076
+    new-instance p1, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$1;
+
+    invoke-direct {p1, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$1;-><init>(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)V
+
+    iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabLayoutListener:Landroid/view/View$OnLayoutChangeListener;
+
+    .line 1145
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
@@ -59,12 +87,39 @@
     return-void
 .end method
 
+.method static synthetic access$2400(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)Ljava/lang/ref/WeakReference;
+    .locals 0
+
+    .line 1068
+    iget-object p0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->viewRef:Ljava/lang/ref/WeakReference;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2500(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)Landroid/graphics/Rect;
+    .locals 0
+
+    .line 1068
+    iget-object p0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabContentRect:Landroid/graphics/Rect;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2600(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)I
+    .locals 0
+
+    .line 1068
+    iget p0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->originalBottomMargin:I
+
+    return p0
+.end method
+
 
 # virtual methods
 .method public bridge synthetic onLayoutChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
     .locals 0
 
-    .line 807
+    .line 1068
     check-cast p2, Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->onLayoutChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/bottomappbar/BottomAppBar;I)Z
@@ -77,22 +132,29 @@
 .method public onLayoutChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/bottomappbar/BottomAppBar;I)Z
     .locals 3
 
-    .line 823
-    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1000(Lcom/google/android/material/bottomappbar/BottomAppBar;)Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+    .line 1151
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->viewRef:Ljava/lang/ref/WeakReference;
+
+    .line 1153
+    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$3100(Lcom/google/android/material/bottomappbar/BottomAppBar;)Landroid/view/View;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_3
 
-    .line 824
+    .line 1154
     invoke-static {v0}, Landroidx/core/view/ViewCompat;->isLaidOut(Landroid/view/View;)Z
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_3
 
-    .line 828
-    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    .line 1158
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
@@ -100,34 +162,65 @@
 
     const/16 v2, 0x31
 
-    .line 829
+    .line 1159
     iput v2, v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->anchorGravity:I
 
-    .line 832
-    invoke-static {p2, v0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1200(Lcom/google/android/material/bottomappbar/BottomAppBar;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
+    .line 1163
+    iget v1, v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->bottomMargin:I
 
-    .line 835
-    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabContentRect:Landroid/graphics/Rect;
+    iput v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->originalBottomMargin:I
 
-    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getMeasuredContentRect(Landroid/graphics/Rect;)V
+    .line 1165
+    instance-of v1, v0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
-    .line 836
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabContentRect:Landroid/graphics/Rect;
+    if-eqz v1, :cond_2
 
-    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
+    .line 1166
+    check-cast v0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
-    move-result v0
+    .line 1171
+    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getShowMotionSpec()Lcom/google/android/material/animation/MotionSpec;
 
-    invoke-virtual {p2, v0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->setFabDiameter(I)V
+    move-result-object v1
 
-    .line 839
+    if-nez v1, :cond_0
+
+    .line 1172
+    sget v1, Lcom/google/android/material/R$animator;->mtrl_fab_show_motion_spec:I
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setShowMotionSpecResource(I)V
+
+    .line 1174
+    :cond_0
+    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getHideMotionSpec()Lcom/google/android/material/animation/MotionSpec;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    .line 1175
+    sget v1, Lcom/google/android/material/R$animator;->mtrl_fab_hide_motion_spec:I
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setHideMotionSpecResource(I)V
+
+    .line 1179
+    :cond_1
+    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabLayoutListener:Landroid/view/View$OnLayoutChangeListener;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
+    .line 1182
+    invoke-static {p2, v0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$3200(Lcom/google/android/material/bottomappbar/BottomAppBar;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
+
+    .line 1186
+    :cond_2
     invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1300(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
 
-    .line 843
-    :cond_0
+    .line 1190
+    :cond_3
     invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->onLayoutChild(Landroid/view/View;I)V
 
-    .line 844
+    .line 1191
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;->onLayoutChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
 
     move-result p1
@@ -138,7 +231,7 @@
 .method public bridge synthetic onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
     .locals 0
 
-    .line 807
+    .line 1068
     check-cast p2, Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-virtual/range {p0 .. p6}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/bottomappbar/BottomAppBar;Landroid/view/View;Landroid/view/View;II)Z
@@ -151,14 +244,14 @@
 .method public onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/bottomappbar/BottomAppBar;Landroid/view/View;Landroid/view/View;II)Z
     .locals 1
 
-    .line 856
+    .line 1203
     invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->getHideOnScroll()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 857
+    .line 1204
     invoke-super/range {p0 .. p6}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;->onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
 
     move-result p1
@@ -174,144 +267,4 @@
 
     :goto_0
     return p1
-.end method
-
-.method public bridge synthetic slideDown(Landroid/view/View;)V
-    .locals 0
-
-    .line 807
-    check-cast p1, Lcom/google/android/material/bottomappbar/BottomAppBar;
-
-    invoke-virtual {p0, p1}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->slideDown(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
-
-    return-void
-.end method
-
-.method public slideDown(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
-    .locals 2
-
-    .line 876
-    invoke-super {p0, p1}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;->slideDown(Landroid/view/View;)V
-
-    .line 877
-    invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1000(Lcom/google/android/material/bottomappbar/BottomAppBar;)Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 879
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabContentRect:Landroid/graphics/Rect;
-
-    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getContentRect(Landroid/graphics/Rect;)Z
-
-    .line 880
-    invoke-virtual {p1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getMeasuredHeight()I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->fabContentRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
-
-    move-result v1
-
-    sub-int/2addr v0, v1
-
-    int-to-float v0, v0
-
-    .line 882
-    invoke-virtual {p1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->clearAnimation()V
-
-    .line 883
-    invoke-virtual {p1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v1
-
-    .line 884
-    invoke-virtual {p1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getPaddingBottom()I
-
-    move-result p1
-
-    neg-int p1, p1
-
-    int-to-float p1, p1
-
-    add-float/2addr p1, v0
-
-    invoke-virtual {v1, p1}, Landroid/view/ViewPropertyAnimator;->translationY(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    sget-object v0, Lcom/google/android/material/animation/AnimationUtils;->FAST_OUT_LINEAR_IN_INTERPOLATOR:Landroid/animation/TimeInterpolator;
-
-    .line 885
-    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    const-wide/16 v0, 0xaf
-
-    .line 886
-    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    :cond_0
-    return-void
-.end method
-
-.method public bridge synthetic slideUp(Landroid/view/View;)V
-    .locals 0
-
-    .line 807
-    check-cast p1, Lcom/google/android/material/bottomappbar/BottomAppBar;
-
-    invoke-virtual {p0, p1}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->slideUp(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
-
-    return-void
-.end method
-
-.method public slideUp(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
-    .locals 2
-
-    .line 863
-    invoke-super {p0, p1}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;->slideUp(Landroid/view/View;)V
-
-    .line 864
-    invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1000(Lcom/google/android/material/bottomappbar/BottomAppBar;)Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 866
-    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->clearAnimation()V
-
-    .line 867
-    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v0
-
-    .line 868
-    invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1400(Lcom/google/android/material/bottomappbar/BottomAppBar;)F
-
-    move-result p1
-
-    invoke-virtual {v0, p1}, Landroid/view/ViewPropertyAnimator;->translationY(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    sget-object v0, Lcom/google/android/material/animation/AnimationUtils;->LINEAR_OUT_SLOW_IN_INTERPOLATOR:Landroid/animation/TimeInterpolator;
-
-    .line 869
-    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    const-wide/16 v0, 0xe1
-
-    .line 870
-    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    :cond_0
-    return-void
 .end method

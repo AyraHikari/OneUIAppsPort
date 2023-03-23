@@ -8,20 +8,10 @@
         <item quantity="few">%d soubory byly přidány do seznamu přenosu souborů.</item>
         <item quantity="many">%d souborů bylo přidáno do seznamu přenosu souborů.</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Do aplikace Samsung Flow můžete zaregistrovat a spravovat v ní až %d počítačů nebo tabletů.
-
-K telefonu lze v jednom okamžiku připojit jen jeden počítač nebo tablet. Pokud se k telefonu pokouší připojit registrované počítače i tablety, budete muset zvolit jeden."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Do aplikace Samsung Flow můžete zaregistrovat a spravovat v ní až %d počítač nebo tablet.
-
-K telefonu lze v jednom okamžiku připojit jen jeden počítač nebo tablet. Pokud se k telefonu pokouší připojit registrované počítače i tablety, budete muset zvolit jeden."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">"Do aplikace Samsung Flow můžete zaregistrovat a spravovat v ní až %d počítače nebo tablety.
-
-K telefonu lze v jednom okamžiku připojit jen jeden počítač nebo tablet. Pokud se k telefonu pokouší připojit registrované počítače i tablety, budete muset zvolit jeden."</item>
-        <item quantity="many">"Do aplikace Samsung Flow můžete zaregistrovat a spravovat v ní až %d počítačů nebo tabletů.
-
-K telefonu lze v jednom okamžiku připojit jen jeden počítač nebo tablet. Pokud se k telefonu pokouší připojit registrované počítače i tablety, budete muset zvolit jeden."</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nových oznámení</item>
+        <item quantity="one">%d nové oznámení</item>
+        <item quantity="few">%d nová oznámení</item>
+        <item quantity="many">%d nového oznámení</item>
     </plurals>
 </resources>

@@ -91,6 +91,14 @@
 
 .method public setGearConnected(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 
     .line 33
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/session/TabNotiSessionRepository;->mIsGearConnected:Z
@@ -100,6 +108,14 @@
 
 .method public setPhoneConnected(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 
     .line 25
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/session/TabNotiSessionRepository;->mIsPhoneConnected:Z

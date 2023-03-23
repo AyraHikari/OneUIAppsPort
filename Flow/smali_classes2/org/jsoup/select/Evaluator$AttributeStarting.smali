@@ -22,10 +22,17 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 126
+    .line 153
     invoke-direct {p0}, Lorg/jsoup/select/Evaluator;-><init>()V
 
-    .line 127
+    .line 154
+    invoke-static {p1}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
+
+    .line 155
+    invoke-static {p1}, Lorg/jsoup/internal/Normalizer;->lowerCase(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
     iput-object p1, p0, Lorg/jsoup/select/Evaluator$AttributeStarting;->keyPrefix:Ljava/lang/String;
 
     return-void
@@ -36,7 +43,7 @@
 .method public matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
     .locals 1
 
-    .line 132
+    .line 160
     invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->attributes()Lorg/jsoup/nodes/Attributes;
 
     move-result-object p1
@@ -45,7 +52,7 @@
 
     move-result-object p1
 
-    .line 133
+    .line 161
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -63,8 +70,12 @@
 
     check-cast p2, Lorg/jsoup/nodes/Attribute;
 
-    .line 134
+    .line 162
     invoke-virtual {p2}, Lorg/jsoup/nodes/Attribute;->getKey()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p2}, Lorg/jsoup/internal/Normalizer;->lowerCase(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -93,7 +104,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 142
+    .line 170
     iget-object v1, p0, Lorg/jsoup/select/Evaluator$AttributeStarting;->keyPrefix:Ljava/lang/String;
 
     const/4 v2, 0x0

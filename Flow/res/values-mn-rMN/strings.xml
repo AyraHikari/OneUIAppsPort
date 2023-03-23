@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">Утаснаас хэрэглүүр нэмэх</string>
     <string name="add_your_bio_first_dialog_desc">Samsung Flow-д нэвтрэхдээ таблетын биометрийг ашиглахын тулд таблет дээрээ хурууны хээ эсвэл солонгон бүрхэвчээ бүртгүүлээд дахин оролд.</string>
     <string name="add_your_bio_first_dialog_title">Эхлээд биометрээ нэм</string>
+    <string name="advanced_features">Дэвшилтэт функцүүд</string>
     <string name="alarm">Сэрүүлэг</string>
     <string name="all_apps">Бүх хэрэглүүр</string>
     <string name="allow_appear_on_top">Дээд хэсэгт харагдахыг зөвшөөр</string>
     <string name="allow_appear_on_top_desc">Компьютер эсвэл таблет дээрээ ашиглаж байгаа бусад хэрэглүүрийнхээ дээд талд жижиг цонх эсвэл мэдэгдэл зэрэг зүйлсийг харуулахын тулд та Тохиргоо дотроос Дээд талд харагдах зөвшөөрлийг зөвшөөрөх хэрэгтэй.</string>
+    <string name="allow_location_settings">Төхөөрөмжүүд дээр Байршлын тохиргоонд хандалт өгөх</string>
     <string name="and_more">Дахиад %1$s ба %2$d</string>
+    <string name="app_info">Хэрэглүүрийн мэдээлэл</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">Хавсаргах</string>
     <string name="attach_image">Зураг</string>
     <string name="attach_my_files">Миний файлууд</string>
     <string name="attach_sound">Аудио</string>
@@ -38,20 +43,29 @@
 дээрээ
 Smart View"</string>
     <string name="bluetooth_connection_failed_text">Утсан дээрээ Samsung Flow асаалттай байгаа эсэхийг шалгана уу.</string>
+    <string name="bt_or_nfc_turned_on">Samsung Flow-г ашиглахдаа %s-г асаана.</string>
+    <string name="btn_desc_cancel">Цуцлах</string>
+    <string name="btn_desc_failed">Амжлтгүй</string>
+    <string name="can_not_use">%s-г ашиглах боломжгүй</string>
+    <string name="can_not_use_at_same_time">%1$s ба %2$s нэгэн зэрэг идэвхижиж чадахгүй. %3$s идэвхигүй болно.</string>
     <string name="cancel_all">Бүгдийг цуцлах</string>
     <string name="cant_share_files">Файлуудыг хуваалцах боломжгүй</string>
     <string name="cant_use_mobile_hotspot_case_1">Сүлжээнд ямар нэгэн алдаа гарлаа. Утсан дээрх Мобайл хотспотыг шалгаад дахин оролд.</string>
     <string name="cant_use_mobile_hotspot_case_2">Сүлжээнд ямар нэгэн алдаа гарлаа. Үйлчилгээ үзүүлэгчтэйгээ холбоо барьж таны багц Мобайл хотспотыг дэмждэг эсэхийг шалгаарай.</string>
     <string name="cant_use_mobile_hotspot_title">Мобайл хотспот ашиглах боломжгүй</string>
     <string name="cant_use_this_function_in_multi_window">Олон цонхны харагдац дээр энэ функцийг ашиглах боломжгүй.</string>
-    <string name="chan_mkt">Маркетинг</string>
-    <string name="chan_ntc">Мэдэгдэл</string>
+    <string name="change_location_settings">Байршлын тохиргоог өөрчил</string>
+    <string name="character_counter_content_description">%2$d тэмдэгтээс %1$d</string>
     <string name="checkbox_all">Бүгд</string>
+    <string name="china_network_permission_popup_body">Сүлжээний холболтуудыг ашиглахыг %s-д зөвшөөрөх үү?</string>
+    <string name="china_network_permission_popup_title">Сүлжээний холболтууд ашиглах</string>
+    <string name="clipboard">Санах ой</string>
     <string name="clipboard_off">Холбогдсон төхөөрөмжүүд дундаас түр санах ойн контентыг хуваалцахыг зогсоох</string>
     <string name="clipboard_on">Холбогдсон төхөөрөмжүүд дундаас түр санах ойн контентыг хуваалцана уу</string>
     <string name="close_app">Хэрэглүүрийг хаах</string>
     <string name="confirm_pass_key_connecting_to_deivce">%s-д холбогдож байна…</string>
-    <string name="connect_help_desc0">Утас эсвэл цаг дээрээ Samsung Flow-г асаа.</string>
+    <string name="confirm_your_phone">Утсан дээр баталгаажуул</string>
+    <string name="connect_help_desc0">Утсан дээрээ Samsung Flow-г асаа.</string>
     <string name="connect_help_desc1">Хоёр төхөөрөмжийн хоёуланд Bluetooth эсвэл Wi-Fi ассан эсэхийг шалга.</string>
     <string name="connect_help_desc2">Хэрэв Wi-Fi эсвэл LAN холболтуудыг ашиглаж байгаа бол хоёр төхөөрөмж хоёулаа ижил сүлжээнд холбогдсон эсэхийг шалгана уу.</string>
     <string name="connect_help_desc4">Та таблетаа компьютерт холбох гэж оролдоогүй эсэхийг шалга. Энэ нь Samsung Flow-р дэмжигдээгүй.</string>
@@ -69,16 +83,18 @@ Smart View"</string>
     <string name="connection_error_register_fail">Бүртгэл амжилтгүй болсон. Дахин оролд.</string>
     <string name="connection_failed">Холбогдож чадсангүй.</string>
     <string name="connection_goto_permission_setting">%s-г ашиглахын тулд Тохиргоог товшиж, Хэрэглүүрийн мэдээлэл > Зөвшөөрөл рүү очоод дараах зөвшөөрлүүдийг олго:</string>
+    <string name="connection_method_biometrics">Биометр</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">Samsung Flow-д биометрик ашиглахын тулд та Тохиргоо дотор биометрикээ бүртгүүлэх хэрэгтэй.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">Биометрик бүртгүүлэх</string>
+    <string name="connection_method_biometrics_required_title">%s дээр биометр ашиглан баталгаажуулалт шаардлагатай.</string>
+    <string name="connection_method_manual">Гараар</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">Samsung Pass ашиглан биометрикээрээ %s-д автоматаар дахин холбогд.</string>
-    <string name="connection_method_simple_connection">Энгийн холболт</string>
-    <string name="connection_method_simple_connection_desc">Утсан дээрээ баталгаажуулахгүйгээр %s-д автоматаар дахин холбогд.</string>
-    <string name="connection_method_simple_connection_desc_tab">Таблет дээрээ баталгаажуулахгүйгээр %s-д автоматаар дахин холбогд.</string>
+    <string name="connection_method_simple_connection">Автомат холболт</string>
     <string name="connection_method_tablet_bio">Таблетын биометр</string>
-    <string name="connection_method_tablet_bio_desc">Таблет дээрээ биометрикээрээ %s-д автоматаар дахин холбогд.</string>
     <string name="connection_request_noti_accept">Хүлээн ав</string>
     <string name="connection_request_noti_desc">%s-г таны утсанд холбохыг зөвшөөрөх үү?</string>
     <string name="content_shared_via">%s-р контентыг хуваалцсан</string>
+    <string name="continue_apps_on_other_device">Бусд төхөөрмжд хэрглүр үрглжлүл</string>
     <string name="copied_to_clipboard">Түр санах ой руу хуулсан.</string>
     <string name="copy_text">Текстийг хуулах</string>
     <string name="delete_lower">Устгах</string>
@@ -90,8 +106,11 @@ Smart View"</string>
     <string name="device_not_secured_desc_for_bio">Таблет дээрээ биометрээ ашиглахын тулд та утсан дээрээ дэлгэцийн түгжээ тохируулах хэрэгтэй.</string>
     <string name="device_not_secured_desc_for_watch">Цаг дээрээ биометрээ ашиглахын тулд та утсан дээрээ дэлгэцийн түгжээ тохируулах хэрэгтэй.</string>
     <string name="device_status_connected">Холбогдсон</string>
+    <string name="device_status_connected_with">%s-д холбогдлоо</string>
+    <string name="device_status_disconnected">Салгагдсан.</string>
     <string name="device_status_registered">Бүртгүүлсэн</string>
     <string name="device_storage">Төхөөрөмжийн санах ой</string>
+    <string name="dialog_allow">Зөвшөөр</string>
     <string name="dialog_close">Хаах</string>
     <string name="dialog_deny">Татгалзах</string>
     <string name="dialog_desc_turn_off_mirroring">Smart View-г унтраах уу?</string>
@@ -99,6 +118,7 @@ Smart View"</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_retry">Дахин оролд</string>
     <string name="dismiss">Болих</string>
+    <string name="dragndroplist_drag_move">Одоо %d байрлалд</string>
     <string name="dragndroplist_drag_release">Зүйлийг байршил %d-д тавьсан.</string>
     <string name="dragndroplist_drag_start">Зүйлийг байршил %d-д чирж эхэллээ.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Байршил %d дахь зүйлийг чирэх боломжгүй.</string>
@@ -118,41 +138,8 @@ Smart View"</string>
     <string name="flow_main_device_not_secure_dialog_desc">Windows дэлгэцийн түгжээ тайлахыг ашиглахын тулд та утсандаа дэлгэцийн түгжээ тохируулах шаардлагатай.</string>
     <string name="flow_main_device_not_secure_dialog_title">Дэлгэцийн найдвартай түгжээг тохируул</string>
     <string name="go_to_settings">Тохиргоо руу оч</string>
-    <string name="help_clipboard_desc">"Та холбогдсон таблет эсвэл компьютероороо түр санах ойд текст, веб хаяг ба зураг хуваалцах боломжтой.
-
-Энэ функц таны зайн хэрэглээг нэмэгдүүлж болно."</string>
-    <string name="help_clipboard_title">Түр санах ой ашиглах</string>
-    <string name="help_connecting_devices_desc_1">Samsung Flow ашиглан компьютер эсвэл таблетаа утсандаа (%s) холбоно уу.</string>
-    <string name="help_connecting_devices_desc_2">Хоёр төхөөрөмж хоёул Bluetooth-ээ асаасан эсвэл ижил сүлжээнд Wi-Fi буюу LAN-р холбогдсон эсэхийг нягтал.</string>
-    <string name="help_connecting_devices_desc_2_1">Хэрэв та USB кабель ашиглаж байгаа бол хоёр төхөөрөмжийн хоёуланд холбогдсон ба тухайн төхөөрөмжүүдэд Android 10 эсвэл түүнээс дээш хувилбарыг суулгасан эсэхийг шалгана уу.</string>
-    <string name="help_connecting_devices_desc_3">Хоёр төхөөрөмж дээрх Samsung Flow-г нээж, дараа нь компьютераас тохируулах цонхыг дагана уу.</string>
-    <string name="help_connecting_devices_desc_4">Дэлгэрэнгүй мэдээллийг www.samsung.com/samsungflow хаягаар орж үзнэ үү.</string>
-    <string name="help_connecting_devices_desc_5">Хамгийн бага шаардлагууд</string>
-    <string name="help_connecting_devices_desc_6">Windows компьютер эсвэл таблет: Windows 10 Creators Update (v1703), Зургадугаар сарын хэсэг засвар (15063.413), Bluetooth (Bluetooth LE нэмэлт) болон Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Android таблет: Android Marshmallow эсвэл түүнээс дээш. Дэлгэрэнгүй мэдээллийг Тогтмол Тавигдах Асуултаас үзнэ үү.</string>
-    <string name="help_connecting_devices_title">Ком.д/таб.д руу холбож байна</string>
     <string name="help_contact_us">Бидэнтэй холбоо барих</string>
     <string name="help_install_samsung_flow_title">Samsung Flow-р төхөөрөмж холбо</string>
-    <string name="help_mobile_hotspot_desc">%s-г товшиж утсан дээрээ Мобайл хотспотыг асааж унтраана уу. Энэ нь Android 11 эсвэл түүнээс дээш системтэй утсанд ажиллахгүй.</string>
-    <string name="help_mobile_hotspot_title">Мобайл хотспот ашиглах</string>
-    <string name="help_noti_sync_desc">"Samsung Flow ашиглаж компьютер эсвэл таблетдаа холбогдсон үедээ компьютер эсвэл таблет дээрээс утасныхаа мэдэгдлүүдээ харах. Шинэ мэдэгдэл хүлээж авах үед та бусад хэрэглүүрээс зурваст шууд хариулах боломжтой.
-
-Энэ функц зарим зурвасын хэрэглүүрүүдэд боломжгүй байж магадгүй.
-
-Та мэдэгдлүүдийг Илүү их сонголтууд > Тохиргоо > Мэдэгдлүүдийг удирдах руу очиж Samsung Flow дотроос хянах боломжтой."</string>
-    <string name="help_noti_sync_title">Мэдэгдлийг синхрончлох</string>
-    <string name="help_sharing_contents_desc_1">Та холбогдсон төхөөрөмжүүдийн хооронд контентыг хялбар хуваалцах боломжтой.</string>
-    <string name="help_sharing_contents_desc_2">Утсыг компьютер эсвэл таблетад</string>
-    <string name="help_sharing_contents_desc_3">Хэрэглүүр дотроос вэб хөтөч гэх мэт хуваалцах сонголтыг олж Samsung Flow-г сонгоно уу.</string>
-    <string name="help_sharing_contents_desc_4">Та мөн Flow түүх таб дээрээс %s-г товшиж файлууд сонгож, хуваалцах боломжтой.</string>
-    <string name="help_sharing_contents_desc_5">Компьютер эсвэл таблетыг утсанд</string>
-    <string name="help_sharing_contents_desc_6">Хэрэглүүр дотроос вэб хөтөч гэх мэт хуваалцах сонголтыг олж Samsung Flow-г сонгоно уу.</string>
-    <string name="help_sharing_contents_desc_7">Та мөн Flow түүх таб дээрээс %s-г товшиж файлууд сонгож, хуваалцах эсвэл файлуудыг Samsung Flow рүү чирээд орхих боломжтой.</string>
-    <string name="help_sharing_contents_title">Контент хуваалцаж байна</string>
-    <string name="help_smart_view_desc">Smart View дүрсийг товшиж таблет эсвэл компьютер дээрээ утасныхаа дэлгэцийг хувилна уу.</string>
-    <string name="help_smart_view_desc_2">Smart View-г ашиглах үед та од дүрсийг товшиж дуртай хэрэглүүрүүдээ түргэн хандахад нэмэх боломжтой.</string>
-    <string name="help_smart_view_title">Smart View ашиглах</string>
-    <string name="help_using_multi_device_title">Хэд хэдэн ком.д/таб.дыг ашиглах</string>
     <string name="hotspot_description">Samsung Flow ажиллаж байхад Мобайл Хотспот ашиглан холбогдсон төхөөрөмжийг Интернет хандалтын цэг болгон ашигла.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">Мобайл Хотспот ашиглахын тулд Wi-Fi-г унтраах хэрэгтэй.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">Wi-Fi унтраах уу?</string>
@@ -185,7 +172,11 @@ Smart View"</string>
     <string name="menu_do_not_disturb">Бүү саад бол</string>
     <string name="menu_enable_hotspot">Мобайл Хотспотод холбогд</string>
     <string name="menu_favorites">Дуртай зүйлс</string>
+    <string name="menu_favorites_add">Нэмэх</string>
+    <string name="menu_favorites_remove">Арилгах</string>
     <string name="menu_full_screen">Бүрэн харагдац</string>
+    <string name="menu_more">Илүү их</string>
+    <string name="menu_phone_screen">Утасны дэлгэц</string>
     <string name="menu_resolution">Нягтрал</string>
     <string name="menu_resolution_option_high">Өндөр</string>
     <string name="menu_resolution_option_low">Бага</string>
@@ -231,6 +222,10 @@ Smart View"</string>
     <string name="noti_desc_screenshot_saved">Энд товшиж дэлгэцийн зургаа харна уу.</string>
     <string name="noti_title_screenshot_saved">Дэлгэцийн зураг хадгалсан</string>
     <string name="notices">Мэдэгдлүүд</string>
+    <string name="notices_last_for_android6_desc">"Энэ нь Android 6.0-н хамгийн сүүлийн шинэчлэл (Marshmallow). Үйлдлийн системийн хязгаарлалтаас болж Samsung Flow цаашдаа Android 6.0-г дэмжихгүй.
+
+Android 6.0-н хэрэглэгчид Samsung Flow-г шинэчлэхгүйгээр ашиглах боломжтой."</string>
+    <string name="notices_last_for_android6_title">Android 6.0-н үйлчилгээний төгсгөл (Marshmallow)</string>
     <string name="notices_notice">Мэдэгдэл</string>
     <string name="notices_update">Шинэчлэх</string>
     <string name="notices_update_include">Програм хангамжийн шинэчлэл багтаах боломжтой:</string>
@@ -255,6 +250,8 @@ Smart View"</string>
     <string name="option_connection_type_wifi">Wi-Fi эсвэл LAN</string>
     <string name="pc">Компьютер</string>
     <string name="permissions">Зөвшөөрөл</string>
+    <string name="permissions_all_files_access">Бүх файлуудын хандалт</string>
+    <string name="permissions_all_files_access_desc">Зургууд, медиа болон файлуудыг шилжүүлэхэд ашигласан.</string>
     <string name="permissions_appear_on_top_desc">Бусад хэрэглүүрүүдийн дээд талд мэдэгдлүүд харуулахад ашиглагддаг</string>
     <string name="permissions_appear_on_top_title">Samsung Flow-г Дээд талд харагдахад хандахыг зөвшөөрснөөр мэдэгдлүүд бусад хэрэглүүрүүдийн дээд талд харагдах боломжтой юу?</string>
     <string name="permissions_call_log">Дуудлагын бүртгэлүүд</string>
@@ -266,6 +263,8 @@ Smart View"</string>
     <string name="permissions_location_desc">Bluetooth ашиглан ойролцоох Galaxy төхөөрөмжүүдийг хайхад ашиглана.</string>
     <string name="permissions_microphone">Микрофон</string>
     <string name="permissions_microphone_desc">Өндөр давтамжтай аудио хүлээн авах замаар Galaxy төхөөрөмжүүдийг холбоход ашигласан.</string>
+    <string name="permissions_nearby_devices">Ойролцоох төхөөрөмжүүд</string>
+    <string name="permissions_nearby_devices_desc">Ойролцоо төхөөрөмжүүдийг олох ба бүртгэгдсэн төхөөрөмжүүдийг хянахад ашиглагддаг</string>
     <string name="permissions_notification_access_desc">Холбогдсон төхөөрөмжид мэдэгдлүүд илгээхэд ашиглагддаг</string>
     <string name="permissions_phone">Утас</string>
     <string name="permissions_phone_desc">Таны утасны дугаарыг бататгахад ашигладаг.</string>
@@ -273,11 +272,11 @@ Smart View"</string>
     <string name="permissions_sms_desc">Бичвэрт зурвасуудыг шилжүүлэхэд ашигласан.</string>
     <string name="permissions_storage">Санах ой</string>
     <string name="permissions_storage_desc">Зургууд, медиа болон файлуудыг шилжүүлэхэд ашигласан.</string>
-    <string name="permissions_title">%s-н зөвшөөрлүүд</string>
+    <string name="permissions_title">Samsung Flow эдгээр зөвшөөрлийг ашиглана</string>
     <string name="phone">Утас</string>
     <string name="press_enter_key_to_send">Enter товчлуураар зурвас илгээх</string>
     <string name="processing">Боловсруулж байна…</string>
-    <string name="receiving_failed">Хүлээн авах амжилтгүй боллоо.</string>
+    <string name="receiving_failed">Энэ зурвасыг хүлээж авч байхдаа ямар нэгэн алдаа гарсан.</string>
     <string name="register_failed">Дараа дахин оролд.</string>
     <string name="resend">Дахин илгээх</string>
     <string name="rooted_device">Таны төхөөрөмжийг задалсан байна. Аюулгүй байдлын үүднээс %s-г задалсан төхөөрөмж дээр ашиглах боломжгүй.</string>
@@ -295,11 +294,19 @@ Smart View"</string>
     <string name="select_apps_for_shortcuts">Холбоосуудад хэрэглүүрүүд сонгох</string>
     <string name="select_items">Зүйлсийг сонго</string>
     <string name="send">Илгээ</string>
-    <string name="sending_failed">Илгээж чадсангүй.</string>
-    <string name="sesl_action_bar_up_description">Чиглүүл</string>
+    <string name="sending_failed">Энэ зурвасыг илгээж байхдаа ямар нэгэн алдаа гарсан.</string>
+    <string name="sesl_action_bar_up_description">Удирдаж дээшлүүлэх</string>
     <string name="sesl_action_menu_overflow_badge_description">Шинэ контент гарлаа</string>
     <string name="sesl_action_menu_overflow_badge_text_n">Ш</string>
     <string name="sesl_action_menu_overflow_description">Өөр сонголтууд</string>
+    <string name="sesl_index_assistant_text">Гүйлгэхийн тулд хоёр хуруугаараа дээш эсвэл доош шударна уу.</string>
+    <string name="sesl_index_scrollbar">Гүйлгэх мөр</string>
+    <string name="sesl_index_section">Бүлгийн индекс</string>
+    <string name="sesl_index_selected">Сонгосон</string>
+    <string name="sesl_material_badge_description">Шинэ контент гарлаа</string>
+    <string name="sesl_material_overflow_badge_text_n">Ш</string>
+    <string name="sesl_more_item_label">Бусад</string>
+    <string name="sesl_preferecne_badge_description">Шинэ мэдэгдэл</string>
     <string name="sesl_preferencecategory_added_title">Толгой хэсэг</string>
     <string name="sesl_search_hint">Хайх</string>
     <string name="sesl_searchview_description_clear">Хайлтын талбарыг цэвэрлэх</string>
@@ -309,6 +316,10 @@ Smart View"</string>
     <string name="sesl_searchview_description_voice">Дуу хоолойгоор хайх</string>
     <string name="sesl_switch_off">Идэвхгүй</string>
     <string name="sesl_switch_on">Идэвхтэй</string>
+    <string name="sesl_switchbar_off_text">Идэвхгүй</string>
+    <string name="sesl_switchbar_on_text">Идэвхтэй</string>
+    <string name="sesl_toolbar_collapse_description">Хураах</string>
+    <string name="set_screen_lock_title">Дэлгэцийн түгжээ тохируулах</string>
     <string name="settings">Тохиргоо</string>
     <string name="settings_auto_hotspot_desc">Төхөөрөмж интернетэд холбогдох боломжгүй үед утсаа интернет хандалтын цэг болгон ашигла.</string>
     <string name="settings_deregister_confirm_dialog_desc">Цаашид энэ төхөөрөмжиийг холбохын тулд та үүнийг дахин бүртгэх шаардлагатай.</string>
@@ -319,12 +330,16 @@ Smart View"</string>
     <string name="settings_gear_unlock_confirm_dialog_title">Gear баталгаажуулалтыг асаах уу?</string>
     <string name="settings_manage_notifications_desc">Аль хэрэглүүр таны холбогдсон төхөөрөмж рүү мэдэгдэл илгээх боломжтойг сонгоно уу.</string>
     <string name="settings_manage_notifications_title">Сонгосон хэрэглүүр.н мэдэгдлүүд</string>
+    <string name="settings_send_message_desc">Send messages using the enter key on your keyboard.</string>
     <string name="settings_title_auto_bt_on">Авто Bluetooth</string>
     <string name="setup_complete_done">Дууслаа</string>
     <string name="setup_completed">%s тохиргоо дууссан.</string>
+    <string name="setup_completed_phone">Таны утас одоо %s-тай холбогдсон.</string>
+    <string name="setup_completed_tablet">Таны таблет одоо %s-тай холбогдсон.</string>
     <string name="setup_confirm_pin">%2$s-д холбогдохын тулд түлхүүрийг дараагийн %1$d секундэд зөв эсэхийг бататгана уу.</string>
     <string name="setup_enter_pin_on_pc">%s дээрээ PIN-ээ оруулна уу.</string>
     <string name="setup_preparing">Компьютер эсвэл таблет дээрээ Samsung Flow тохиргоог эхлүүлнэ үү.</string>
+    <string name="setup_preparing_detail">Хэрэв танд Samsung Flow суулгаагүй бол компьютер дээрээ Microsoft Store, таблет дээрээ Galaxy Store эсвэл Google Play-с татаж аваарай.</string>
     <string name="setup_preparing_tab">Компьютер дээрээ Samsung Flow-н тохиргоог эхлүүлнэ үү</string>
     <string name="setup_tab_complete_title">Тохируулж дууссан</string>
     <string name="setup_tab_confirm_passkey_title">Төхөөрөмжүүдээ холбо</string>
@@ -343,6 +358,8 @@ Smart View"</string>
     <string name="setupwizard_welcome_body">Хэрэглүүрийн үйлчилгээнд дараах зөвшөөрөл шаардлагатай. Сонголтот зөвшөөрлүүдийг хувьд, үйлчилгээний өгөгдмөл ажиллагаанууд асаалттай боловч зөвшөөрөгдөөгүй байдаг.</string>
     <string name="setupwizard_welcome_title">Хэрэглүүрийн зөвшөөрлүүд</string>
     <string name="share">Хуваалц</string>
+    <string name="share_item_device_status_connected">Төхөөрөмж холбогдсон</string>
+    <string name="share_item_device_status_disconnected">Төхөөрөмж салгагдсан</string>
     <string name="shortcut_list_desc">Утсан дээрээ хэрэглүүр сонгоод таблеттайгаа холбогдох. Энэ хэрэглүүрийн файлын холбоосыг таны Эх дэлгэцэд нэмэх болно.</string>
     <string name="snooze">Давталт</string>
     <string name="special_sensitive_optional_permissions">Тусгай нууцлалтай сонголтын зөвшөөрөл</string>
@@ -352,6 +369,8 @@ Smart View"</string>
     <string name="tablet_bio_auth_confirm_title">Баталгаа.д Таблетын биометрик ашиглах уу?</string>
     <string name="tap_icon_to_try_iris_auth">Дүрсийг товшиж солонгон бүрхэвч танилтыг дахин оролд</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">Samsung Flow-д Smart View-г асаасан байхад Автоматаар эргүүлэхийг ашиглах боломжгүй.</string>
+    <string name="toast_msg_connected">Samsung Flow-г %s-д холбож эхэллээ.</string>
+    <string name="toast_msg_disconnected">%s-н Samsung Flow холболтыг тасалсан.</string>
     <string name="try_again">Дахин оролд</string>
     <string name="turn_on">Асаах</string>
     <string name="turn_on_auto_run">Автоматаар ажиллуулахыг асаах</string>
@@ -362,15 +381,20 @@ Smart View"</string>
     <string name="unsupported_file">Дэмжигдэхгүй файл</string>
     <string name="update">Шинэчлэх</string>
     <string name="update_samsung_flow">%s-д холбогдох боломжгүй. Samsung Flow-г сүүлийн хувилбар руу шинэчлээд дахин оролдоно уу.</string>
-    <string name="welcome_button_start">Эхлүүлэх</string>
+    <string name="verification_method">Баталгаажуулах арга</string>
     <string name="welcome_phone_button_agree">Зөвшөөрнө</string>
-    <string name="welcome_phone_desc">Samsung Flow ашиглан компьютер эсвэл таблетаа утастайгаа холбоорой.</string>
-    <string name="welcome_phone_desc_terms">Үргэлжлүүлэхийн тулд %s-г уншиж зөвшөөрнө үү.</string>
-    <string name="welcome_phone_title">%s-д тавтай морил</string>
+    <string name="welcome_phone_desc1">Таны утас болон түүнтэй холбогдсон компьютер эсвэл таблет хооронд бичиг баримт, зураг, видео ба бусад зүйлс хуваалцаарай.</string>
+    <string name="welcome_phone_desc2">Утасныхаа зурвас, компьютер эсвэл таблет дээрх мэдэгдлүүдийг шалгаж хариулаарай.</string>
+    <string name="welcome_phone_desc3">Компьютер эсвэл таблет дээрээ утасныхаа дэлгэцийг үзэж, хянах.</string>
+    <string name="welcome_phone_desc_terms">Үргэлжлүүлснээр та %s-г зөвшөөрнө.</string>
+    <string name="welcome_phone_title1">Утсаа өөр төхөөрөмжтэй холбох</string>
+    <string name="welcome_phone_title2">Мэдэгдлүүдээ синхрончлох</string>
+    <string name="welcome_phone_title3">Утасныхаа дэлгэцийг хуваалцах</string>
     <string name="welcome_tab_desc2">Samsung Flow тохируулахад утсаа бэлэн болгоорой.</string>
     <string name="welcome_tab_desc3">Samsung Flow ашиглан таблетаа утас эсвэл компьютертэйгээ холбоорой.</string>
     <string name="wifi_connection_failed_text">Утсан дээрээ Samsung Flow асаалттай байгаа ба ижил сүлжээнд холбогдсон эсэхийг шалгана уу.</string>
-    <string name="wifi_enable_warning_msg">Мобайл хотспот идэвхтэй үед Wi-Fi унтарсан. Wi-Fi-г асаахын тулд Мобайл хотспотыг унтраана уу.</string>
-    <string name="wifi_enable_warning_title">Мобайл Хотспотыг унтраах уу?</string>
+    <string name="wifi_enable_warning_msg">Wi-Fi Direct ашиглахын Мобайл Хотспотыг унтраах хэрэгтэй.</string>
+    <string name="wifi_enable_warning_title">Мобайл Хотспотыг унтраах</string>
+    <string name="you_can_turn_off">Та энэ функцийг %s дотор унтраах боломжтой.</string>
     <string name="you_can_turn_off_this_permission">Та энэ зөвшөөрлийг Тохиргоо > Хэрэглүүрүүд > Илүү их цэс > Тусгай хандалт дотроос унтраах боломжтой.</string>
 </resources>

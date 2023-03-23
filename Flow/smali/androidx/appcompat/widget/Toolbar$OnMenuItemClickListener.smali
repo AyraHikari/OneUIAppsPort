@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onMenuItemClick(Landroid/view/MenuItem;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 .end method

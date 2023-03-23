@@ -5,17 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Utils.kt\nkotlin/io/FilesKt__UtilsKt\n+ 2 _Sequences.kt\nkotlin/sequences/SequencesKt___SequencesKt\n*L\n1#1,437:1\n1084#2,3:438\n*E\n*S KotlinDebug\n*F\n+ 1 Utils.kt\nkotlin/io/FilesKt__UtilsKt\n*L\n311#1,3:438\n*E\n"
+    value = "SMAP\nUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Utils.kt\nkotlin/io/FilesKt__UtilsKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Sequences.kt\nkotlin/sequences/SequencesKt___SequencesKt\n*L\n1#1,473:1\n1#2:474\n1261#3,3:475\n*S KotlinDebug\n*F\n+ 1 Utils.kt\nkotlin/io/FilesKt__UtilsKt\n*L\n347#1:475,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
-        "\u0000<\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u001a(\u0010\t\u001a\u00020\u00022\u0008\u0008\u0002\u0010\n\u001a\u00020\u00012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u0002\u001a(\u0010\r\u001a\u00020\u00022\u0008\u0008\u0002\u0010\n\u001a\u00020\u00012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u0002\u001a8\u0010\u000e\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u000f2\u001a\u0008\u0002\u0010\u0012\u001a\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u00150\u0013\u001a&\u0010\u0016\u001a\u00020\u0002*\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u0018\u001a\n\u0010\u0019\u001a\u00020\u000f*\u00020\u0002\u001a\u0012\u0010\u001a\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0002\u001a\u0012\u0010\u001a\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0001\u001a\n\u0010\u001c\u001a\u00020\u0002*\u00020\u0002\u001a\u001d\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u001d*\u0008\u0012\u0004\u0012\u00020\u00020\u001dH\u0002\u00a2\u0006\u0002\u0008\u001e\u001a\u0011\u0010\u001c\u001a\u00020\u001f*\u00020\u001fH\u0002\u00a2\u0006\u0002\u0008\u001e\u001a\u0012\u0010 \u001a\u00020\u0002*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u0014\u0010\"\u001a\u0004\u0018\u00010\u0002*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u0012\u0010#\u001a\u00020\u0002*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u0012\u0010$\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0002\u001a\u0012\u0010$\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0001\u001a\u0012\u0010&\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0002\u001a\u0012\u0010&\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0001\u001a\u0012\u0010\'\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0002\u001a\u0012\u0010\'\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0001\u001a\u0012\u0010(\u001a\u00020\u0001*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u001b\u0010)\u001a\u0004\u0018\u00010\u0001*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002H\u0002\u00a2\u0006\u0002\u0008*\"\u0015\u0010\u0000\u001a\u00020\u0001*\u00020\u00028F\u00a2\u0006\u0006\u001a\u0004\u0008\u0003\u0010\u0004\"\u0015\u0010\u0005\u001a\u00020\u0001*\u00020\u00028F\u00a2\u0006\u0006\u001a\u0004\u0008\u0006\u0010\u0004\"\u0015\u0010\u0007\u001a\u00020\u0001*\u00020\u00028F\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\u0004\u00a8\u0006+"
+        "\u0000<\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u001a*\u0010\t\u001a\u00020\u00022\u0008\u0008\u0002\u0010\n\u001a\u00020\u00012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u0002H\u0007\u001a*\u0010\r\u001a\u00020\u00022\u0008\u0008\u0002\u0010\n\u001a\u00020\u00012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u0002H\u0007\u001a8\u0010\u000e\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u000f2\u001a\u0008\u0002\u0010\u0012\u001a\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u00150\u0013\u001a&\u0010\u0016\u001a\u00020\u0002*\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u0018\u001a\n\u0010\u0019\u001a\u00020\u000f*\u00020\u0002\u001a\u0012\u0010\u001a\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0002\u001a\u0012\u0010\u001a\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0001\u001a\n\u0010\u001c\u001a\u00020\u0002*\u00020\u0002\u001a\u001d\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u001d*\u0008\u0012\u0004\u0012\u00020\u00020\u001dH\u0002\u00a2\u0006\u0002\u0008\u001e\u001a\u0011\u0010\u001c\u001a\u00020\u001f*\u00020\u001fH\u0002\u00a2\u0006\u0002\u0008\u001e\u001a\u0012\u0010 \u001a\u00020\u0002*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u0014\u0010\"\u001a\u0004\u0018\u00010\u0002*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u0012\u0010#\u001a\u00020\u0002*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u0012\u0010$\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0002\u001a\u0012\u0010$\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0001\u001a\u0012\u0010&\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0002\u001a\u0012\u0010&\u001a\u00020\u0002*\u00020\u00022\u0006\u0010%\u001a\u00020\u0001\u001a\u0012\u0010\'\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0002\u001a\u0012\u0010\'\u001a\u00020\u000f*\u00020\u00022\u0006\u0010\u001b\u001a\u00020\u0001\u001a\u0012\u0010(\u001a\u00020\u0001*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002\u001a\u001b\u0010)\u001a\u0004\u0018\u00010\u0001*\u00020\u00022\u0006\u0010!\u001a\u00020\u0002H\u0002\u00a2\u0006\u0002\u0008*\"\u0015\u0010\u0000\u001a\u00020\u0001*\u00020\u00028F\u00a2\u0006\u0006\u001a\u0004\u0008\u0003\u0010\u0004\"\u0015\u0010\u0005\u001a\u00020\u0001*\u00020\u00028F\u00a2\u0006\u0006\u001a\u0004\u0008\u0006\u0010\u0004\"\u0015\u0010\u0007\u001a\u00020\u0001*\u00020\u00028F\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\u0004\u00a8\u0006+"
     }
     d2 = {
         "extension",
@@ -66,10 +61,10 @@
     k = 0x5
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
-    xi = 0x1
+    xi = 0x31
     xs = "kotlin/io/FilesKt"
 .end annotation
 
@@ -102,19 +97,19 @@
         }
     .end annotation
 
-    const-string v0, "$this$copyRecursively"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "target"
+    const-string/jumbo v0, "target"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "onError"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 257
+    .line 293
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -125,7 +120,7 @@
 
     if-nez v0, :cond_1
 
-    .line 258
+    .line 294
     new-instance p1, Lkotlin/io/NoSuchFileException;
 
     const/4 v5, 0x0
@@ -146,8 +141,7 @@
 
     move-result-object p0
 
-    check-cast p0, Lkotlin/io/OnErrorAction;
-
+    .line 295
     sget-object p1, Lkotlin/io/OnErrorAction;->TERMINATE:Lkotlin/io/OnErrorAction;
 
     if-eq p0, p1, :cond_0
@@ -160,7 +154,7 @@
     :goto_0
     return v1
 
-    .line 263
+    .line 299
     :cond_1
     :try_start_0
     invoke-static {p0}, Lkotlin/io/FilesKt;->walkTopDown(Ljava/io/File;)Lkotlin/io/FileTreeWalk;
@@ -195,14 +189,14 @@
 
     check-cast v3, Ljava/io/File;
 
-    .line 264
+    .line 300
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v4
 
     if-nez v4, :cond_3
 
-    .line 265
+    .line 301
     new-instance v10, Lkotlin/io/NoSuchFileException;
 
     const/4 v6, 0x0
@@ -223,26 +217,25 @@
 
     move-result-object v3
 
-    check-cast v3, Lkotlin/io/OnErrorAction;
-
+    .line 302
     sget-object v4, Lkotlin/io/OnErrorAction;->TERMINATE:Lkotlin/io/OnErrorAction;
 
     if-ne v3, v4, :cond_2
 
     return v2
 
-    .line 269
+    .line 305
     :cond_3
     invoke-static {v3, p0}, Lkotlin/io/FilesKt;->toRelativeString(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 270
+    .line 306
     new-instance v5, Ljava/io/File;
 
     invoke-direct {v5, p1, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 271
+    .line 307
     invoke-virtual {v5}, Ljava/io/File;->exists()Z
 
     move-result v4
@@ -269,7 +262,7 @@
 
     goto :goto_3
 
-    .line 273
+    .line 309
     :cond_5
     invoke-virtual {v5}, Ljava/io/File;->isDirectory()Z
 
@@ -277,7 +270,7 @@
 
     if-eqz v4, :cond_6
 
-    .line 274
+    .line 310
     invoke-static {v5}, Lkotlin/io/FilesKt;->deleteRecursively(Ljava/io/File;)Z
 
     move-result v4
@@ -286,7 +279,7 @@
 
     goto :goto_2
 
-    .line 276
+    .line 312
     :cond_6
     invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
@@ -302,7 +295,7 @@
     :goto_3
     if-eqz v4, :cond_8
 
-    .line 280
+    .line 316
     new-instance v4, Lkotlin/io/FileAlreadyExistsException;
 
     const-string v6, "The destination file already exists."
@@ -313,15 +306,14 @@
 
     move-result-object v3
 
-    check-cast v3, Lkotlin/io/OnErrorAction;
-
+    .line 318
     sget-object v4, Lkotlin/io/OnErrorAction;->TERMINATE:Lkotlin/io/OnErrorAction;
 
     if-ne v3, v4, :cond_2
 
     return v2
 
-    .line 289
+    .line 325
     :cond_8
     invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
 
@@ -329,7 +321,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 290
+    .line 326
     invoke-virtual {v5}, Ljava/io/File;->mkdirs()Z
 
     goto :goto_1
@@ -345,7 +337,7 @@
 
     move v6, p2
 
-    .line 292
+    .line 328
     invoke-static/range {v4 .. v9}, Lkotlin/io/FilesKt;->copyTo$default(Ljava/io/File;Ljava/io/File;ZIILjava/lang/Object;)Ljava/io/File;
 
     move-result-object v4
@@ -362,7 +354,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 293
+    .line 329
     new-instance v4, Ljava/io/IOException;
 
     const-string v5, "Source file wasn\'t copied completely, length of destination file differs."
@@ -372,8 +364,6 @@
     invoke-interface {p3, v3, v4}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
-
-    check-cast v3, Lkotlin/io/OnErrorAction;
 
     sget-object v4, Lkotlin/io/OnErrorAction;->TERMINATE:Lkotlin/io/OnErrorAction;
     :try_end_0
@@ -404,11 +394,12 @@
 
     if-eqz p4, :cond_1
 
-    .line 255
+    .line 291
     sget-object p3, Lkotlin/io/FilesKt__UtilsKt$copyRecursively$1;->INSTANCE:Lkotlin/io/FilesKt__UtilsKt$copyRecursively$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function2;
 
+    .line 288
     :cond_1
     invoke-static {p0, p1, p2, p3}, Lkotlin/io/FilesKt;->copyRecursively(Ljava/io/File;Ljava/io/File;ZLkotlin/jvm/functions/Function2;)Z
 
@@ -420,22 +411,22 @@
 .method public static final copyTo(Ljava/io/File;Ljava/io/File;ZI)Ljava/io/File;
     .locals 6
 
-    const-string v0, "$this$copyTo"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "target"
+    const-string/jumbo v0, "target"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 182
+    .line 218
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
-    .line 186
+    .line 222
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -444,7 +435,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 189
+    .line 225
     invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
     move-result p2
@@ -453,7 +444,7 @@
 
     goto :goto_0
 
-    .line 190
+    .line 226
     :cond_0
     new-instance p2, Lkotlin/io/FileAlreadyExistsException;
 
@@ -461,11 +452,9 @@
 
     invoke-direct {p2, p0, p1, p3}, Lkotlin/io/FileAlreadyExistsException;-><init>(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 
-    .line 188
+    .line 224
     :cond_1
     new-instance p2, Lkotlin/io/FileAlreadyExistsException;
 
@@ -473,11 +462,9 @@
 
     invoke-direct {p2, p0, p1, p3}, Lkotlin/io/FileAlreadyExistsException;-><init>(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 
-    .line 193
+    .line 229
     :cond_2
     :goto_0
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
@@ -486,7 +473,7 @@
 
     if-eqz p2, :cond_4
 
-    .line 194
+    .line 230
     invoke-virtual {p1}, Ljava/io/File;->mkdirs()Z
 
     move-result p2
@@ -495,7 +482,7 @@
 
     goto :goto_1
 
-    .line 195
+    .line 231
     :cond_3
     new-instance p2, Lkotlin/io/FileSystemException;
 
@@ -503,11 +490,9 @@
 
     invoke-direct {p2, p0, p1, p3}, Lkotlin/io/FileSystemException;-><init>(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)V
 
-    check-cast p2, Ljava/lang/Throwable;
-
     throw p2
 
-    .line 197
+    .line 233
     :cond_4
     invoke-virtual {p1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -517,58 +502,52 @@
 
     invoke-virtual {p2}, Ljava/io/File;->mkdirs()Z
 
-    .line 199
     :cond_5
     new-instance p2, Ljava/io/FileInputStream;
 
+    .line 235
     invoke-direct {p2, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
     check-cast p2, Ljava/io/Closeable;
 
-    const/4 p0, 0x0
-
-    move-object v0, p0
-
-    check-cast v0, Ljava/lang/Throwable;
-
     :try_start_0
-    move-object v1, p2
+    move-object p0, p2
 
-    check-cast v1, Ljava/io/FileInputStream;
+    check-cast p0, Ljava/io/FileInputStream;
 
-    .line 200
-    new-instance v2, Ljava/io/FileOutputStream;
+    new-instance v0, Ljava/io/FileOutputStream;
 
-    invoke-direct {v2, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    .line 236
+    invoke-direct {v0, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    check-cast v2, Ljava/io/Closeable;
-
-    check-cast p0, Ljava/lang/Throwable;
+    check-cast v0, Ljava/io/Closeable;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     :try_start_1
-    move-object v3, v2
+    move-object v1, v0
 
-    check-cast v3, Ljava/io/FileOutputStream;
+    check-cast v1, Ljava/io/FileOutputStream;
 
-    .line 201
-    check-cast v1, Ljava/io/InputStream;
+    .line 237
+    check-cast p0, Ljava/io/InputStream;
 
-    check-cast v3, Ljava/io/OutputStream;
+    check-cast v1, Ljava/io/OutputStream;
 
-    invoke-static {v1, v3, p3}, Lkotlin/io/ByteStreamsKt;->copyTo(Ljava/io/InputStream;Ljava/io/OutputStream;I)J
+    invoke-static {p0, v1, p3}, Lkotlin/io/ByteStreamsKt;->copyTo(Ljava/io/InputStream;Ljava/io/OutputStream;I)J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 200
+    const/4 p0, 0x0
+
+    .line 236
     :try_start_2
-    invoke-static {v2, p0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 199
-    invoke-static {p2, v0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    .line 235
+    invoke-static {p2, p0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     :goto_1
     return-object p1
@@ -576,7 +555,7 @@
     :catchall_0
     move-exception p0
 
-    .line 200
+    .line 236
     :try_start_3
     throw p0
     :try_end_3
@@ -586,7 +565,7 @@
     move-exception p1
 
     :try_start_4
-    invoke-static {v2, p0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     throw p1
     :try_end_4
@@ -595,7 +574,7 @@
     :catchall_2
     move-exception p0
 
-    .line 199
+    .line 235
     :try_start_5
     throw p0
     :try_end_5
@@ -608,7 +587,7 @@
 
     throw p1
 
-    .line 183
+    .line 219
     :cond_6
     new-instance p1, Lkotlin/io/NoSuchFileException;
 
@@ -625,8 +604,6 @@
     move-object v1, p0
 
     invoke-direct/range {v0 .. v5}, Lkotlin/io/NoSuchFileException;-><init>(Ljava/io/File;Ljava/io/File;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    check-cast p1, Ljava/lang/Throwable;
 
     throw p1
 .end method
@@ -647,7 +624,7 @@
 
     const/16 p3, 0x2000
 
-    .line 181
+    .line 217
     :cond_1
     invoke-static {p0, p1, p2, p3}, Lkotlin/io/FilesKt;->copyTo(Ljava/io/File;Ljava/io/File;ZI)Ljava/io/File;
 
@@ -658,20 +635,23 @@
 
 .method public static final createTempDir(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
     .locals 1
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Avoid creating temporary directories in the default temp location with this function due to too wide permissions on the newly created directory. Use kotlin.io.path.createTempDirectory instead."
+    .end annotation
 
     const-string v0, "prefix"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 27
+    .line 45
     invoke-static {p0, p1, p2}, Ljava/io/File;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
 
     move-result-object p0
 
-    .line 28
+    .line 46
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
-    .line 29
+    .line 47
     invoke-virtual {p0}, Ljava/io/File;->mkdir()Z
 
     move-result p1
@@ -680,12 +660,12 @@
 
     const-string p1, "dir"
 
-    .line 30
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 48
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 
-    .line 32
+    .line 50
     :cond_0
     new-instance p1, Ljava/io/IOException;
 
@@ -697,19 +677,23 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/16 p0, 0x2e
+    move-result-object p0
 
-    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 p2, 0x2e
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-direct {p1, p0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    check-cast p1, Ljava/lang/Throwable;
 
     throw p1
 .end method
@@ -721,7 +705,7 @@
 
     if-eqz p4, :cond_0
 
-    const-string p0, "tmp"
+    const-string/jumbo p0, "tmp"
 
     :cond_0
     and-int/lit8 p4, p3, 0x2
@@ -730,10 +714,7 @@
 
     if-eqz p4, :cond_1
 
-    .line 26
     move-object p1, v0
-
-    check-cast p1, Ljava/lang/String;
 
     :cond_1
     and-int/lit8 p3, p3, 0x4
@@ -742,8 +723,7 @@
 
     move-object p2, v0
 
-    check-cast p2, Ljava/io/File;
-
+    .line 44
     :cond_2
     invoke-static {p0, p1, p2}, Lkotlin/io/FilesKt;->createTempDir(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
 
@@ -754,19 +734,22 @@
 
 .method public static final createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
     .locals 1
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Avoid creating temporary files in the default temp location with this function due to too wide permissions on the newly created file. Use kotlin.io.path.createTempFile instead or resort to java.io.File.createTempFile."
+    .end annotation
 
     const-string v0, "prefix"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 49
+    .line 85
     invoke-static {p0, p1, p2}, Ljava/io/File;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
 
     move-result-object p0
 
-    const-string p1, "File.createTempFile(prefix, suffix, directory)"
+    const-string p1, "createTempFile(prefix, suffix, directory)"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -778,7 +761,7 @@
 
     if-eqz p4, :cond_0
 
-    const-string p0, "tmp"
+    const-string/jumbo p0, "tmp"
 
     :cond_0
     and-int/lit8 p4, p3, 0x2
@@ -787,10 +770,7 @@
 
     if-eqz p4, :cond_1
 
-    .line 48
     move-object p1, v0
-
-    check-cast p1, Ljava/lang/String;
 
     :cond_1
     and-int/lit8 p3, p3, 0x4
@@ -799,8 +779,7 @@
 
     move-object p2, v0
 
-    check-cast p2, Ljava/io/File;
-
+    .line 84
     :cond_2
     invoke-static {p0, p1, p2}, Lkotlin/io/FilesKt;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
 
@@ -812,18 +791,18 @@
 .method public static final deleteRecursively(Ljava/io/File;)Z
     .locals 4
 
-    const-string v0, "$this$deleteRecursively"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 311
+    .line 347
     invoke-static {p0}, Lkotlin/io/FilesKt;->walkBottomUp(Ljava/io/File;)Lkotlin/io/FileTreeWalk;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/sequences/Sequence;
 
-    .line 439
+    .line 476
     invoke-interface {p0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -846,7 +825,7 @@
 
     check-cast v2, Ljava/io/File;
 
-    .line 311
+    .line 347
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
     move-result v3
@@ -876,39 +855,39 @@
 .method public static final endsWith(Ljava/io/File;Ljava/io/File;)Z
     .locals 3
 
-    const-string v0, "$this$endsWith"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 348
+    .line 384
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object v0
 
-    .line 349
+    .line 385
     invoke-static {p1}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object v1
 
-    .line 350
+    .line 386
     invoke-virtual {v1}, Lkotlin/io/FilePathComponents;->isRooted()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 351
+    .line 387
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
     return p0
 
-    .line 352
+    .line 388
     :cond_0
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getSize()I
 
@@ -926,7 +905,7 @@
 
     goto :goto_0
 
-    .line 354
+    .line 390
     :cond_1
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -955,15 +934,15 @@
 .method public static final endsWith(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
 
-    const-string v0, "$this$endsWith"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 365
+    .line 401
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -978,18 +957,18 @@
 .method public static final getExtension(Ljava/io/File;)Ljava/lang/String;
     .locals 2
 
-    const-string v0, "$this$extension"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 56
+    .line 92
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p0
 
     const-string v0, "name"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0x2e
 
@@ -1005,11 +984,11 @@
 .method public static final getInvariantSeparatorsPath(Ljava/io/File;)Ljava/lang/String;
     .locals 9
 
-    const-string v0, "$this$invariantSeparatorsPath"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 63
+    .line 99
     sget-char v0, Ljava/io/File;->separatorChar:C
 
     const-string v1, "path"
@@ -1022,7 +1001,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-char v4, Ljava/io/File;->separatorChar:C
 
@@ -1045,7 +1024,7 @@
 
     move-result-object p0
 
-    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     return-object p0
@@ -1054,18 +1033,18 @@
 .method public static final getNameWithoutExtension(Ljava/io/File;)Ljava/lang/String;
     .locals 3
 
-    const-string v0, "$this$nameWithoutExtension"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 69
+    .line 105
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p0
 
     const-string v0, "name"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "."
 
@@ -1083,11 +1062,11 @@
 .method public static final normalize(Ljava/io/File;)Ljava/io/File;
     .locals 10
 
-    const-string v0, "$this$normalize"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 374
+    .line 410
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
@@ -1110,9 +1089,9 @@
 
     sget-object p0, Ljava/io/File;->separator:Ljava/lang/String;
 
-    const-string v2, "File.separator"
+    const-string/jumbo v2, "separator"
 
-    invoke-static {p0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     move-object v2, p0
 
@@ -1144,7 +1123,7 @@
 .end method
 
 .method private static final normalize$FilesKt__UtilsKt(Ljava/util/List;)Ljava/util/List;
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1158,7 +1137,7 @@
         }
     .end annotation
 
-    .line 380
+    .line 416
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1169,17 +1148,18 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 381
+    .line 417
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
+    :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_3
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1187,45 +1167,34 @@
 
     check-cast v1, Ljava/io/File;
 
-    .line 382
+    .line 418
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    if-nez v2, :cond_0
+    const-string v3, "."
 
-    goto :goto_1
-
-    :cond_0
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+    .line 419
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
-    const/16 v4, 0x2e
+    if-nez v3, :cond_0
 
-    if-eq v3, v4, :cond_3
-
-    const/16 v4, 0x5c0
-
-    if-eq v3, v4, :cond_1
-
-    goto :goto_1
-
-    :cond_1
     const-string v3, ".."
 
-    .line 384
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 420
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_2
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v2
 
-    if-nez v2, :cond_2
+    if-nez v2, :cond_1
 
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
 
@@ -1241,9 +1210,7 @@
 
     move-result v2
 
-    xor-int/lit8 v2, v2, 0x1
-
-    if-eqz v2, :cond_2
+    if-nez v2, :cond_1
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1255,38 +1222,25 @@
 
     goto :goto_0
 
+    :cond_1
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 421
     :cond_2
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     :cond_3
-    const-string v3, "."
-
-    .line 383
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_4
-
-    goto :goto_0
-
-    .line 385
-    :cond_4
-    :goto_1
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    :cond_5
     return-object v0
 .end method
 
 .method private static final normalize$FilesKt__UtilsKt(Lkotlin/io/FilePathComponents;)Lkotlin/io/FilePathComponents;
     .locals 2
 
-    .line 377
+    .line 413
     new-instance v0, Lkotlin/io/FilePathComponents;
 
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
@@ -1309,15 +1263,15 @@
 .method public static final relativeTo(Ljava/io/File;Ljava/io/File;)Ljava/io/File;
     .locals 1
 
-    const-string v0, "$this$relativeTo"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "base"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 92
+    .line 128
     new-instance v0, Ljava/io/File;
 
     invoke-static {p0, p1}, Lkotlin/io/FilesKt;->toRelativeString(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
@@ -1332,15 +1286,15 @@
 .method public static final relativeToOrNull(Ljava/io/File;Ljava/io/File;)Ljava/io/File;
     .locals 1
 
-    const-string v0, "$this$relativeToOrNull"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "base"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 112
+    .line 148
     invoke-static {p0, p1}, Lkotlin/io/FilesKt__UtilsKt;->toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p0
@@ -1363,15 +1317,15 @@
 .method public static final relativeToOrSelf(Ljava/io/File;Ljava/io/File;)Ljava/io/File;
     .locals 1
 
-    const-string v0, "$this$relativeToOrSelf"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "base"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 102
+    .line 138
     invoke-static {p0, p1}, Lkotlin/io/FilesKt__UtilsKt;->toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p1
@@ -1389,15 +1343,15 @@
 .method public static final resolve(Ljava/io/File;Ljava/io/File;)Ljava/io/File;
     .locals 5
 
-    const-string v0, "$this$resolve"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "relative"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 401
+    .line 437
     invoke-static {p1}, Lkotlin/io/FilesKt;->isRooted(Ljava/io/File;)Z
 
     move-result v0
@@ -1406,17 +1360,17 @@
 
     return-object p1
 
-    .line 403
+    .line 439
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    const-string v0, "this.toString()"
+    const-string/jumbo v0, "this.toString()"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 404
+    .line 440
     move-object v0, p0
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -1462,13 +1416,19 @@
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-char p0, Ljava/io/File;->separatorChar:C
+    move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    sget-char v1, Ljava/io/File;->separatorChar:C
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1486,9 +1446,13 @@
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object p0
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1501,15 +1465,15 @@
 .method public static final resolve(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
     .locals 1
 
-    const-string v0, "$this$resolve"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "relative"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 414
+    .line 450
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1524,20 +1488,20 @@
 .method public static final resolveSibling(Ljava/io/File;Ljava/io/File;)Ljava/io/File;
     .locals 2
 
-    const-string v0, "$this$resolveSibling"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "relative"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 424
+    .line 460
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
 
-    .line 425
+    .line 461
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v0
@@ -1565,7 +1529,7 @@
 
     move-result-object v0
 
-    .line 426
+    .line 462
     :goto_0
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
 
@@ -1585,15 +1549,15 @@
 .method public static final resolveSibling(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
     .locals 1
 
-    const-string v0, "$this$resolveSibling"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "relative"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 436
+    .line 472
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1608,25 +1572,25 @@
 .method public static final startsWith(Ljava/io/File;Ljava/io/File;)Z
     .locals 3
 
-    const-string v0, "$this$startsWith"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 321
+    .line 357
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
 
-    .line 322
+    .line 358
     invoke-static {p1}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p1
 
-    .line 323
+    .line 359
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
 
     move-result-object v0
@@ -1639,15 +1603,13 @@
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
-
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
     return v1
 
-    .line 325
+    .line 361
     :cond_0
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSize()I
 
@@ -1661,7 +1623,7 @@
 
     goto :goto_0
 
-    .line 326
+    .line 362
     :cond_1
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -1690,15 +1652,15 @@
 .method public static final startsWith(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
 
-    const-string v0, "$this$startsWith"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 336
+    .line 372
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1713,15 +1675,15 @@
 .method public static final toRelativeString(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
     .locals 3
 
-    const-string v0, "$this$toRelativeString"
+    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "base"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 81
+    .line 117
     invoke-static {p0, p1}, Lkotlin/io/FilesKt__UtilsKt;->toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v0
@@ -1737,29 +1699,37 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "this and base files have different roots: "
+    const-string/jumbo v2, "this and base files have different roots: "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string p0, " and "
+    move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " and "
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 p0, 0x2e
+    move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    const/16 p1, 0x2e
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 .end method
@@ -1767,7 +1737,7 @@
 .method private static final toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
     .locals 17
 
-    .line 117
+    .line 153
     invoke-static/range {p0 .. p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object v0
@@ -1776,7 +1746,7 @@
 
     move-result-object v0
 
-    .line 118
+    .line 154
     invoke-static/range {p1 .. p1}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object v1
@@ -1785,7 +1755,7 @@
 
     move-result-object v1
 
-    .line 119
+    .line 155
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
 
     move-result-object v2
@@ -1798,28 +1768,26 @@
 
     move-result v2
 
-    xor-int/lit8 v2, v2, 0x1
-
     const/4 v3, 0x0
 
-    if-eqz v2, :cond_0
+    if-nez v2, :cond_0
 
     return-object v3
 
-    .line 123
+    .line 159
     :cond_0
     invoke-virtual {v1}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v2
 
-    .line 124
+    .line 160
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v4
 
     const/4 v5, 0x0
 
-    .line 128
+    .line 164
     invoke-static {v4, v2}, Ljava/lang/Math;->min(II)I
 
     move-result v6
@@ -1827,7 +1795,7 @@
     :goto_0
     if-ge v5, v6, :cond_1
 
-    .line 129
+    .line 165
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
     move-result-object v7
@@ -1836,8 +1804,6 @@
 
     move-result-object v7
 
-    check-cast v7, Ljava/io/File;
-
     invoke-virtual {v1}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
     move-result-object v8
@@ -1845,8 +1811,6 @@
     invoke-interface {v8, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
-
-    check-cast v8, Ljava/io/File;
 
     invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1858,7 +1822,7 @@
 
     goto :goto_0
 
-    .line 135
+    .line 171
     :cond_1
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -1866,9 +1830,9 @@
 
     add-int/lit8 v7, v2, -0x1
 
-    if-lt v7, v5, :cond_4
+    if-gt v5, v7, :cond_4
 
-    .line 137
+    .line 173
     :goto_1
     invoke-virtual {v1}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -1894,13 +1858,13 @@
 
     return-object v3
 
-    .line 141
+    .line 177
     :cond_2
     invoke-virtual {v6, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     if-eq v7, v5, :cond_3
 
-    .line 144
+    .line 180
     sget-char v8, Ljava/io/File;->separatorChar:C
 
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -1917,12 +1881,12 @@
 
     if-ge v5, v2, :cond_5
 
-    .line 152
+    .line 188
     sget-char v1, Ljava/io/File;->separatorChar:C
 
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 154
+    .line 190
     :cond_5
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -1944,9 +1908,9 @@
 
     sget-object v0, Ljava/io/File;->separator:Ljava/lang/String;
 
-    const-string v1, "File.separator"
+    const-string/jumbo v1, "separator"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     move-object v9, v0
 
@@ -1968,7 +1932,7 @@
 
     invoke-static/range {v7 .. v16}, Lkotlin/collections/CollectionsKt;->joinTo$default(Ljava/lang/Iterable;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/Appendable;
 
-    .line 157
+    .line 193
     :cond_6
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

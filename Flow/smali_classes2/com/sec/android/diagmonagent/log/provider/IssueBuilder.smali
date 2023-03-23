@@ -123,6 +123,14 @@
 
 .method public setDescription(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "description"
+        }
+    .end annotation
 
     .line 57
     iput-object p1, p0, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->mDescription:Ljava/lang/String;
@@ -132,6 +140,14 @@
 
 .method public setEventId(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "eventId"
+        }
+    .end annotation
 
     const-string v0, "/"
 
@@ -153,9 +169,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -173,6 +193,14 @@
 
 .method public setRelayClient(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "relayClient"
+        }
+    .end annotation
 
     .line 66
     iput-object p1, p0, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->mRelayClient:Ljava/lang/String;
@@ -182,6 +210,14 @@
 
 .method public setRelayClientVer(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "relayClientVer"
+        }
+    .end annotation
 
     .line 75
     iput-object p1, p0, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->mRelayVer:Ljava/lang/String;
@@ -191,6 +227,14 @@
 
 .method public setResultCode(Ljava/lang/String;)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resultCode"
+        }
+    .end annotation
 
     .line 17
     iput-object p1, p0, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->mResultCode:Ljava/lang/String;
@@ -200,6 +244,14 @@
 
 .method public setUiMode(Z)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     .line 26
     iput-boolean p1, p0, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->mUiMode:Z
@@ -209,6 +261,14 @@
 
 .method public setWifiOnly(Z)Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "wifiOnly"
+        }
+    .end annotation
 
     .line 35
     iput-boolean p1, p0, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->mWifiOnly:Z

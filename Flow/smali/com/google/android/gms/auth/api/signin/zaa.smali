@@ -1,28 +1,29 @@
-.class final synthetic Lcom/google/android/gms/auth/api/signin/zaa;
+.class public final synthetic Lcom/google/android/gms/auth/api/signin/zaa;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
 .implements Ljava/util/Comparator;
 
 
 # static fields
-.field static final zaq:Ljava/util/Comparator;
+.field public static final synthetic zaa:Lcom/google/android/gms/auth/api/signin/zaa;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method static synthetic constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lcom/google/android/gms/auth/api/signin/zaa;
 
     invoke-direct {v0}, Lcom/google/android/gms/auth/api/signin/zaa;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/auth/api/signin/zaa;->zaq:Ljava/util/Comparator;
+    sput-object v0, Lcom/google/android/gms/auth/api/signin/zaa;->zaa:Lcom/google/android/gms/auth/api/signin/zaa;
 
     return-void
 .end method
 
-.method private constructor <init>()V
+.method private synthetic constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,13 +34,24 @@
 
 # virtual methods
 .method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+    .locals 1
 
     check-cast p1, Lcom/google/android/gms/common/api/Scope;
 
     check-cast p2, Lcom/google/android/gms/common/api/Scope;
 
-    invoke-static {p1, p2}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->zaa(Lcom/google/android/gms/common/api/Scope;Lcom/google/android/gms/common/api/Scope;)I
+    sget-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 1
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Scope;->getScopeUri()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p2}, Lcom/google/android/gms/common/api/Scope;->getScopeUri()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 
     move-result p1
 

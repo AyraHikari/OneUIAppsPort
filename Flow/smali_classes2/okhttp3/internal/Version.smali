@@ -16,7 +16,7 @@
 .method public static userAgent()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "okhttp/3.10.0"
+    const-string v0, "okhttp/3.14.1"
 
     return-object v0
 .end method

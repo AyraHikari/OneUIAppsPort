@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,13 +30,8 @@
 # virtual methods
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 45
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/AtomicIntegerTransform;->read(Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicInteger;
 
     move-result-object p1
@@ -48,12 +42,12 @@
 .method public read(Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicInteger;
     .locals 1
 
-    .line 58
+    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object p1
 
-    .line 59
+    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
@@ -67,13 +61,8 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 45
+    .line 1
     check-cast p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/AtomicIntegerTransform;->write(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/lang/String;
@@ -86,7 +75,7 @@
 .method public write(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/lang/String;
     .locals 0
 
-    .line 73
+    .line 2
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->toString()Ljava/lang/String;
 
     move-result-object p1

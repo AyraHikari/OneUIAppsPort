@@ -81,6 +81,16 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "event"
+        }
+    .end annotation
 
     move-object/from16 v1, p0
 
@@ -130,11 +140,15 @@
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual/range {p2 .. p2}, Landroid/view/DragEvent;->getResult()Z
 
     move-result v4
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -262,7 +276,7 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
     :cond_1
-    const v6, 0x7f1001db
+    const v6, 0x7f110260
 
     .line 82
     :try_start_3
@@ -468,7 +482,7 @@
 
     const-class v5, Lcom/samsung/android/galaxycontinuity/command/ShareCommand;
 
-    const/4 v7, 0x4
+    const/4 v7, 0x5
 
     new-array v7, v7, [Ljava/lang/Object;
 
@@ -485,6 +499,10 @@
     aput-object v8, v7, v4
 
     const/4 v4, 0x3
+
+    aput-object v8, v7, v4
+
+    const/4 v4, 0x4
 
     aput-object v8, v7, v4
 
@@ -540,6 +558,8 @@
 
     :goto_3
     return v2
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

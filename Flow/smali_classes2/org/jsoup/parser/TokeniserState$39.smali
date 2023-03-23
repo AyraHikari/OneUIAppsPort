@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 813
+    .line 778
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -31,36 +31,34 @@
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
     .locals 2
 
-    .line 815
-    invoke-static {}, Lorg/jsoup/parser/TokeniserState;->access$600()[C
-
-    move-result-object v0
+    .line 780
+    sget-object v0, Lorg/jsoup/parser/TokeniserState$39;->attributeSingleValueCharsSorted:[C
 
     invoke-virtual {p2, v0}, Lorg/jsoup/parser/CharacterReader;->consumeToAnySorted([C)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 816
+    .line 781
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 817
+    .line 782
     iget-object v1, p1, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
 
     invoke-virtual {v1, v0}, Lorg/jsoup/parser/Token$Tag;->appendAttributeValue(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 819
+    .line 784
     :cond_0
     iget-object v0, p1, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
 
     invoke-virtual {v0}, Lorg/jsoup/parser/Token$Tag;->setEmptyAttributeValue()V
 
-    .line 821
+    .line 786
     :goto_0
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->consume()C
 
@@ -80,9 +78,14 @@
 
     if-eq p2, v0, :cond_1
 
+    .line 807
+    iget-object p1, p1, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
+
+    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Token$Tag;->appendAttributeValue(C)V
+
     goto :goto_1
 
-    .line 824
+    .line 789
     :cond_1
     sget-object p2, Lorg/jsoup/parser/TokeniserState$39;->AfterAttributeValue_quoted:Lorg/jsoup/parser/TokeniserState;
 
@@ -90,7 +93,7 @@
 
     goto :goto_1
 
-    .line 827
+    .line 792
     :cond_2
     invoke-static {v0}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
@@ -98,20 +101,20 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p1, p2, v0}, Lorg/jsoup/parser/Tokeniser;->consumeCharacterReference(Ljava/lang/Character;Z)[C
+    invoke-virtual {p1, p2, v0}, Lorg/jsoup/parser/Tokeniser;->consumeCharacterReference(Ljava/lang/Character;Z)[I
 
     move-result-object p2
 
     if-eqz p2, :cond_3
 
-    .line 829
+    .line 794
     iget-object p1, p1, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
 
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Token$Tag;->appendAttributeValue([C)V
+    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Token$Tag;->appendAttributeValue([I)V
 
     goto :goto_1
 
-    .line 831
+    .line 796
     :cond_3
     iget-object p1, p1, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
 
@@ -119,22 +122,22 @@
 
     goto :goto_1
 
-    .line 838
+    .line 803
     :cond_4
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->eofError(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 839
+    .line 804
     sget-object p2, Lorg/jsoup/parser/TokeniserState$39;->Data:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_1
 
-    .line 834
+    .line 799
     :cond_5
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->error(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 835
+    .line 800
     iget-object p1, p1, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
 
     const p2, 0xfffd

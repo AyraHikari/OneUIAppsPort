@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Registra i gestiona fins a %d ordinadors o tablets a Samsung Flow.
-
-Només es pot connectar un ordinador o una tablet al teu telèfon simultàniament. Hauràs de triar-ne un quan els ordinadors o les tablets registrats intentin connectar-se al teu telèfon."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Registra i gestiona fins a %d ordinador o tablet a Samsung Flow.
-
-Només es pot connectar un ordinador o una tablet al teu telèfon simultàniament. Hauràs de triar-ne un quan els ordinadors o les tablets registrats intentin connectar-se al teu telèfon."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notificacions noves</item>
+        <item quantity="one">%d notificació nova</item>
     </plurals>
 </resources>

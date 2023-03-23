@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,13 +30,8 @@
 # virtual methods
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 44
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/BigIntegerTransform;->read(Ljava/lang/String;)Ljava/math/BigInteger;
 
     move-result-object p1
@@ -48,7 +42,7 @@
 .method public read(Ljava/lang/String;)Ljava/math/BigInteger;
     .locals 1
 
-    .line 57
+    .line 2
     new-instance v0, Ljava/math/BigInteger;
 
     invoke-direct {v0, p1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;)V
@@ -58,13 +52,8 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 44
+    .line 1
     check-cast p1, Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/BigIntegerTransform;->write(Ljava/math/BigInteger;)Ljava/lang/String;
@@ -77,7 +66,7 @@
 .method public write(Ljava/math/BigInteger;)Ljava/lang/String;
     .locals 0
 
-    .line 71
+    .line 2
     invoke-virtual {p1}, Ljava/math/BigInteger;->toString()Ljava/lang/String;
 
     move-result-object p1

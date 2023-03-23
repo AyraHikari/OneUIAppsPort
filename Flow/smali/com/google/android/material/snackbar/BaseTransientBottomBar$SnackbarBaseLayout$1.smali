@@ -1,4 +1,4 @@
-.class final Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout$1;
+.class Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout$1;
 .super Ljava/lang/Object;
 .source "BaseTransientBottomBar.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 904
+    .line 1142
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,9 +30,41 @@
 
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 0
+    .locals 2
 
-    const/4 p1, 0x1
+    .line 1146
+    instance-of v0, p1, Landroid/view/ViewGroup;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_1
+
+    .line 1147
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v0
+
+    .line 1148
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result p2
+
+    .line 1149
+    check-cast p1, Landroid/view/ViewGroup;
+
+    invoke-static {p1, v0, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->findChildUnder(Landroid/view/ViewGroup;FF)Landroid/view/View;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    return v1
+
+    :cond_0
+    const/4 p1, 0x0
 
     return p1
+
+    :cond_1
+    return v1
 .end method

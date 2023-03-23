@@ -13745,7 +13745,7 @@
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setUnderlineText(Z)V
 
     .line 2190
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x11
 

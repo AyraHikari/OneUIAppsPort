@@ -81,7 +81,7 @@
     :cond_3
     const/4 v1, 0x3
 
-    const-string v2, "unknown digest scheme for PBE encryption."
+    const-string/jumbo v2, "unknown digest scheme for PBE encryption."
 
     const/4 v3, 0x2
 

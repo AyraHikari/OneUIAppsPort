@@ -15,11 +15,21 @@
 
 
 # static fields
-.field public static final ERROR:Ljava/lang/String; = "error"
+.field public static final CALLER_PACKAGE:Ljava/lang/String; = "caller_package"
 
-.field public static final IS_FINAL:Ljava/lang/String; = "final"
+.field public static final CONNECTION_TYPE:Ljava/lang/String; = "connection_type"
+
+.field public static final ENABLED_PARTIAL:Ljava/lang/String; = "enabled_partial"
+
+.field public static final ERROR_CODE:Ljava/lang/String; = "error_code"
+
+.field public static final ERROR_MESSAGE:Ljava/lang/String; = "error_message"
 
 .field public static final LOCALE:Ljava/lang/String; = "locale"
+
+.field public static final META_SUPPORTED_LOCAL_LOCALES:Ljava/lang/String; = "local_supported_locales"
+
+.field public static final META_SUPPORTED_NETWORK_LOCALES:Ljava/lang/String; = "network_supported_locales"
 
 .field public static final RESULT:Ljava/lang/String; = "result"
 
@@ -28,7 +38,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 12
+    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

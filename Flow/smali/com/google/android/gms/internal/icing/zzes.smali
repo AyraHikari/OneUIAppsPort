@@ -1,86 +1,134 @@
 .class final Lcom/google/android/gms/internal/icing/zzes;
-.super Ljava/lang/Object;
-
-
-# static fields
-.field private static final zzmc:Lcom/google/android/gms/internal/icing/zzeq;
-
-.field private static final zzmd:Lcom/google/android/gms/internal/icing/zzeq;
+.super Lcom/google/android/gms/internal/icing/zzez;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method constructor <init>(I)V
     .locals 1
 
-    .line 7
-    invoke-static {}, Lcom/google/android/gms/internal/icing/zzes;->zzcn()Lcom/google/android/gms/internal/icing/zzeq;
+    const/4 v0, 0x0
 
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/gms/internal/icing/zzes;->zzmc:Lcom/google/android/gms/internal/icing/zzeq;
-
-    .line 8
-    new-instance v0, Lcom/google/android/gms/internal/icing/zzet;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/icing/zzet;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/internal/icing/zzes;->zzmd:Lcom/google/android/gms/internal/icing/zzeq;
+    .line 1
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/icing/zzez;-><init>(ILcom/google/android/gms/internal/icing/zzes;)V
 
     return-void
 .end method
 
-.method static zzcl()Lcom/google/android/gms/internal/icing/zzeq;
-    .locals 1
 
-    .line 1
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzes;->zzmc:Lcom/google/android/gms/internal/icing/zzeq;
-
-    return-object v0
-.end method
-
-.method static zzcm()Lcom/google/android/gms/internal/icing/zzeq;
-    .locals 1
-
-    .line 2
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzes;->zzmd:Lcom/google/android/gms/internal/icing/zzeq;
-
-    return-object v0
-.end method
-
-.method private static zzcn()Lcom/google/android/gms/internal/icing/zzeq;
+# virtual methods
+.method public final zza()V
     .locals 3
 
-    :try_start_0
-    const-string v0, "com.google.protobuf.MapFieldSchemaFull"
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzez;->zzb()Z
 
-    .line 3
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    move-result v0
 
-    move-result-object v0
+    if-nez v0, :cond_3
 
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Class;
-
-    .line 4
-    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v0
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/android/gms/internal/icing/zzeq;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
     const/4 v0, 0x0
 
-    return-object v0
+    .line 1
+    :goto_0
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzez;->zzc()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_1
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/icing/zzez;->zzd(I)Ljava/util/Map$Entry;
+
+    move-result-object v1
+
+    .line 3
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/gms/internal/icing/zzct;
+
+    invoke-interface {v2}, Lcom/google/android/gms/internal/icing/zzct;->zzc()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 4
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/List;
+
+    .line 5
+    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/Map$Entry;->setValue(Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzez;->zze()Ljava/lang/Iterable;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_2
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .line 7
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/gms/internal/icing/zzct;
+
+    invoke-interface {v2}, Lcom/google/android/gms/internal/icing/zzct;->zzc()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 8
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/List;
+
+    .line 9
+    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/Map$Entry;->setValue(Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    .line 10
+    :cond_3
+    invoke-super {p0}, Lcom/google/android/gms/internal/icing/zzez;->zza()V
+
+    return-void
 .end method

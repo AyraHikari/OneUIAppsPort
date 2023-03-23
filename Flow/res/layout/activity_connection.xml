@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">> <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
-    <FrameLayout android:id="@id/activity_main_panel" android:background="@drawable/bg_top_rounded_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" android:layout_centerHorizontal="true" />
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/activity_main_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
 </RelativeLayout>

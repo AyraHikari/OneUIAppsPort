@@ -22,6 +22,14 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "base"
+        }
+    .end annotation
 
     .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -68,6 +76,16 @@
 
 .method private static addHeader([BI)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "size"
+        }
+    .end annotation
 
     shr-int/lit8 v0, p1, 0x18
 
@@ -108,13 +126,26 @@
 
 .method private write([BII)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "offset",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 258
+    .line 267
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mOutputStream:Ljava/io/DataOutputStream;
 
@@ -122,26 +153,22 @@
 
     if-eqz p1, :cond_0
 
-    .line 259
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mOutputStream:Ljava/io/DataOutputStream;
-
+    .line 268
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/DataOutputStream;->write([BII)V
 
-    .line 260
+    .line 269
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mOutputStream:Ljava/io/DataOutputStream;
 
     invoke-virtual {p1}, Ljava/io/DataOutputStream;->flush()V
 
     return p3
 
-    .line 264
     :cond_0
-    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mOutputStream:Ljava/io/DataOutputStream;
-
-    if-nez p2, :cond_1
+    if-nez v0, :cond_1
 
     const-string p2, "mOutputStream is null"
 
+    .line 273
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     :cond_1
@@ -149,7 +176,7 @@
 
     const-string p1, "bytes is null"
 
-    .line 265
+    .line 274
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -162,12 +189,12 @@
     :catch_0
     move-exception p1
 
-    const-string p2, "write and flush failed"
+    const-string/jumbo p2, "write and flush failed"
 
-    .line 268
+    .line 277
     invoke-static {p2, p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 269
+    .line 278
     throw p1
 .end method
 
@@ -175,6 +202,16 @@
 # virtual methods
 .method public connectToHost(Ljava/lang/String;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "hostname",
+            "port"
+        }
+    .end annotation
 
     .line 43
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mSocketBase:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
@@ -277,30 +314,31 @@
         }
     .end annotation
 
-    .line 163
+    const/4 v0, 0x0
+
+    .line 164
+    :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->isSessionKeyAvailable()Z
+    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->isSessionKeyAvailable()Z
 
-    move-result v0
+    move-result v1
 
-    const/4 v1, 0x0
+    if-eqz v1, :cond_4
 
-    if-eqz v0, :cond_4
+    const/4 v1, 0x4
 
-    const/4 v0, 0x4
-
-    new-array v2, v0, [B
+    new-array v2, v1, [B
 
     const/4 v3, 0x0
 
-    move v5, v0
+    move v5, v1
 
     move v4, v3
 
-    .line 168
+    .line 169
     :goto_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->isConnected()Z
 
@@ -322,22 +360,26 @@
 
     goto :goto_0
 
-    .line 173
+    .line 174
     :cond_0
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils;->byteArrayToLeInt([B)I
 
     move-result v2
 
-    .line 175
+    .line 176
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "start receive byte array : "
+    const-string/jumbo v5, "start receive byte array : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -347,156 +389,191 @@
 
     if-gtz v2, :cond_1
 
-    return-object v1
+    return-object v0
 
-    .line 180
+    .line 181
     :cond_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
-    move-result v1
+    move-result v4
 
-    if-eqz v1, :cond_2
+    if-eqz v4, :cond_2
 
-    sub-int/2addr v2, v0
+    sub-int/2addr v2, v1
 
-    .line 181
-    new-array v0, v2, [B
+    .line 182
+    new-array v1, v2, [B
 
     goto :goto_1
 
-    .line 183
+    .line 184
     :cond_2
-    new-array v0, v2, [B
+    new-array v1, v2, [B
 
-    .line 186
+    .line 187
     :goto_1
-    array-length v1, v0
+    array-length v2, v1
 
-    .line 189
+    .line 190
     :goto_2
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->isConnected()Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_3
+    if-eqz v4, :cond_3
 
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mInputStream:Ljava/io/DataInputStream;
+    iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mInputStream:Ljava/io/DataInputStream;
 
-    invoke-virtual {v2, v0, v3, v1}, Ljava/io/DataInputStream;->read([BII)I
+    invoke-virtual {v4, v1, v3, v2}, Ljava/io/DataInputStream;->read([BII)I
 
-    move-result v2
+    move-result v4
 
-    if-ge v2, v1, :cond_3
+    if-ge v4, v2, :cond_3
 
-    add-int/2addr v3, v2
+    add-int/2addr v3, v4
 
-    sub-int/2addr v1, v2
+    sub-int/2addr v2, v4
 
     goto :goto_2
 
-    .line 194
+    .line 195
     :cond_3
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, v0}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->encryptData([B)[B
+    invoke-virtual {v2, v1}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->encryptData([B)[B
 
     move-result-object v0
-
-    return-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_4
-    return-object v1
+    return-object v0
+
+    :catch_0
+    move-exception v1
+
+    .line 202
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+
+    return-object v0
 .end method
 
 .method public receiveDataString()Ljava/lang/String;
     .locals 4
 
-    .line 205
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mBufferReader:Ljava/io/BufferedReader;
-
-    const-string v1, ""
-
-    if-eqz v0, :cond_2
-
-    .line 207
-    :try_start_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->isSessionKeyAvailable()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 208
-    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->receiveDataByteArray()[B
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
+    const-string v0, ""
 
     .line 211
+    :try_start_0
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mBufferReader:Ljava/io/BufferedReader;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+
+    if-eqz v1, :cond_2
+
+    .line 213
+    :try_start_1
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->isSessionKeyAvailable()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 214
+    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->receiveDataByteArray()[B
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 217
     new-instance v2, Ljava/lang/String;
 
     sget-object v3, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
-    invoke-direct {v2, v0, v3}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+    invoke-direct {v2, v1, v3}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
-    move-object v1, v2
+    move-object v0, v2
 
     :cond_0
-    return-object v1
+    return-object v0
 
-    .line 215
+    .line 221
     :cond_1
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mBufferReader:Ljava/io/BufferedReader;
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mBufferReader:Ljava/io/BufferedReader;
 
-    invoke-virtual {v0}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     move-result-object v0
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
 
     return-object v0
 
     :catch_0
-    move-exception v0
+    move-exception v1
 
-    .line 223
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    .line 229
+    :try_start_2
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
     :catch_1
-    move-exception v0
+    move-exception v1
 
-    .line 218
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    .line 224
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    .line 220
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mBufferReader:Ljava/io/BufferedReader;
+    .line 226
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mBufferReader:Ljava/io/BufferedReader;
 
-    .line 221
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mSocketBase:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    .line 227
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mSocketBase:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mSocket:Ljava/net/Socket;
 
-    invoke-virtual {v0, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->disconnected(Ljava/net/Socket;)V
+    invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->disconnected(Ljava/net/Socket;)V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
+
+    goto :goto_0
+
+    :catch_2
+    move-exception v1
+
+    .line 233
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_2
     :goto_0
-    return-object v1
+    return-object v0
 .end method
 
 .method public sendData([BII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "offset",
+            "leng"
+        }
+    .end annotation
 
     .line 159
     invoke-virtual {p0, p1, p2, p3}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->sendNativeData([BII)V
@@ -506,6 +583,20 @@
 
 .method public sendData([BIIZ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "offset",
+            "leng",
+            "bAddHeader"
+        }
+    .end annotation
 
     .line 133
     :try_start_0
@@ -517,7 +608,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -609,15 +704,27 @@
 
 .method public sendNativeData([BII)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "data",
+            "offset",
+            "leng"
+        }
+    .end annotation
 
-    .line 230
+    .line 239
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mWriteThreadHandler:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 234
+    .line 243
     :cond_0
     new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket$1;
 
@@ -630,6 +737,14 @@
 
 .method public setSocket(Ljava/net/Socket;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 88
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mSocket:Ljava/net/Socket;
@@ -752,8 +867,6 @@
     if-eqz v1, :cond_0
 
     .line 67
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/MirroringSocket;->mSocket:Ljava/net/Socket;
-
     invoke-virtual {v1}, Ljava/net/Socket;->close()V
 
     .line 68

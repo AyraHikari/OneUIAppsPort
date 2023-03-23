@@ -30,7 +30,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 146
+    .line 144
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,16 +39,16 @@
 .method public constructor <init>(FFF)V
     .locals 0
 
-    .line 148
+    .line 146
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 149
+    .line 147
     iput p1, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerX:F
 
-    .line 150
+    .line 148
     iput p2, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerY:F
 
-    .line 151
+    .line 149
     iput p3, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->radius:F
 
     return-void
@@ -57,7 +57,7 @@
 .method synthetic constructor <init>(Lcom/google/android/material/circularreveal/CircularRevealWidget$1;)V
     .locals 0
 
-    .line 134
+    .line 132
     invoke-direct {p0}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;-><init>()V
 
     return-void
@@ -66,7 +66,7 @@
 .method public constructor <init>(Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;)V
     .locals 2
 
-    .line 155
+    .line 153
     iget v0, p1, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerX:F
 
     iget v1, p1, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerY:F
@@ -83,7 +83,7 @@
 .method public isInvalid()Z
     .locals 2
 
-    .line 173
+    .line 171
     iget v0, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->radius:F
 
     const v1, 0x7f7fffff    # Float.MAX_VALUE
@@ -106,13 +106,13 @@
 .method public set(FFF)V
     .locals 0
 
-    .line 159
+    .line 157
     iput p1, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerX:F
 
-    .line 160
+    .line 158
     iput p2, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerY:F
 
-    .line 161
+    .line 159
     iput p3, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->radius:F
 
     return-void
@@ -121,7 +121,7 @@
 .method public set(Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;)V
     .locals 2
 
-    .line 165
+    .line 163
     iget v0, p1, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerX:F
 
     iget v1, p1, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerY:F

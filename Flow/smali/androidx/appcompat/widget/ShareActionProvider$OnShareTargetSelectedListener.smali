@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onShareTargetSelected(Landroidx/appcompat/widget/ShareActionProvider;Landroid/content/Intent;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "source",
+            "intent"
+        }
+    .end annotation
 .end method

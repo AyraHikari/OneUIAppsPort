@@ -30,6 +30,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "maxSize"
+        }
+    .end annotation
 
     .line 20
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/manager/ThumbCacheManager;
@@ -43,6 +53,16 @@
 # virtual methods
 .method protected sizeOf(Ljava/lang/Integer;Landroid/graphics/Bitmap;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "bitmap"
+        }
+    .end annotation
 
     .line 23
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->isRecycled()Z
@@ -68,6 +88,16 @@
 
 .method protected bridge synthetic sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "bitmap"
+        }
+    .end annotation
 
     .line 20
     check-cast p1, Ljava/lang/Integer;

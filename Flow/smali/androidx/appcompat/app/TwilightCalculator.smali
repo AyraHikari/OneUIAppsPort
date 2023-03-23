@@ -71,6 +71,18 @@
 # virtual methods
 .method public calculateTwilight(JDD)V
     .locals 15
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "latitude",
+            "longitude"
+        }
+    .end annotation
 
     move-object v0, p0
 

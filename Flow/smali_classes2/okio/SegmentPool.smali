@@ -25,7 +25,7 @@
 .end method
 
 .method static recycle(Lokio/Segment;)V
-    .locals 7
+    .locals 9
 
     .line 52
     iget-object v0, p0, Lokio/Segment;->next:Lokio/Segment;
@@ -55,24 +55,22 @@
 
     const-wide/16 v3, 0x2000
 
-    add-long/2addr v1, v3
+    add-long v5, v1, v3
 
-    const-wide/32 v5, 0x10000
+    const-wide/32 v7, 0x10000
 
-    cmp-long v1, v1, v5
+    cmp-long v5, v5, v7
 
-    if-lez v1, :cond_1
+    if-lez v5, :cond_1
 
     monitor-exit v0
 
     return-void
 
-    .line 56
     :cond_1
-    sget-wide v1, Lokio/SegmentPool;->byteCount:J
-
     add-long/2addr v1, v3
 
+    .line 56
     sput-wide v1, Lokio/SegmentPool;->byteCount:J
 
     .line 57
@@ -126,9 +124,6 @@
     sget-object v1, Lokio/SegmentPool;->next:Lokio/Segment;
 
     if-eqz v1, :cond_0
-
-    .line 41
-    sget-object v1, Lokio/SegmentPool;->next:Lokio/Segment;
 
     .line 42
     iget-object v2, v1, Lokio/Segment;->next:Lokio/Segment;

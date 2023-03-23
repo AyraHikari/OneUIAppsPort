@@ -71,7 +71,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown tag in POPOPrivKey"
+    const-string/jumbo v0, "unknown tag in POPOPrivKey"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

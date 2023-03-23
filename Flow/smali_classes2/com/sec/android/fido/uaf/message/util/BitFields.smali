@@ -84,7 +84,7 @@
     goto :goto_0
 
     :cond_1
-    const-string p0, "|"
+    const-string/jumbo p0, "|"
 
     .line 25
     invoke-static {p0}, Lcom/google/common/base/Joiner;->on(Ljava/lang/String;)Lcom/google/common/base/Joiner;

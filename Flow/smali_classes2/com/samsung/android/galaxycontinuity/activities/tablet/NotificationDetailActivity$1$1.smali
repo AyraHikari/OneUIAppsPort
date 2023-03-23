@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
     .line 64
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
@@ -36,30 +44,9 @@
 
 # virtual methods
 .method public run()V
-    .locals 9
+    .locals 10
 
     .line 66
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
-
-    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;
-
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v1, -0x1
-
-    const/4 v2, 0x1
-
-    if-ne v0, v2, :cond_0
-
-    .line 67
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->val$mainLayout:Landroid/widget/RelativeLayout;
@@ -71,87 +58,135 @@
     check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
 
     .line 68
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->width:I
-
-    .line 69
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
-
-    iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->val$mainLayout:Landroid/widget/RelativeLayout;
-
-    invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    goto :goto_1
-
-    .line 71
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
-
-    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->val$mainLayout:Landroid/widget/RelativeLayout;
-
-    invoke-virtual {v0}, Landroid/widget/RelativeLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
-
-    .line 73
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v1
+
+    .line 69
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;
+
+    invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->getResources()Landroid/content/res/Resources;
+
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+    invoke-virtual {v2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v2
 
-    .line 75
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
+    iget v2, v2, Landroid/content/res/Configuration;->orientation:I
 
-    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;
+    const/4 v3, -0x1
 
-    invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->getWindow()Landroid/view/Window;
+    const/4 v4, 0x1
 
-    move-result-object v3
+    if-ne v2, v4, :cond_1
 
-    invoke-virtual {v3}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    .line 70
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
 
-    move-result-object v3
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;
 
-    invoke-virtual {v3}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->getWindow()Landroid/view/Window;
 
-    move-result v3
+    move-result-object v2
 
-    int-to-double v3, v3
+    invoke-virtual {v2}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
-    iget v5, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+    move-result-object v2
 
-    int-to-double v5, v5
+    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
-    const-wide/high16 v7, 0x3fe8000000000000L    # 0.75
+    move-result v2
 
-    mul-double/2addr v5, v7
+    int-to-double v4, v2
 
-    cmpg-double v3, v3, v5
+    iget v2, v1, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    if-gtz v3, :cond_1
+    int-to-double v6, v2
 
-    .line 76
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->width:I
+    const-wide v8, 0x3feccccccccccccdL    # 0.9
+
+    mul-double/2addr v6, v8
+
+    cmpg-double v2, v4, v6
+
+    if-gtz v2, :cond_0
+
+    .line 71
+    iput v3, v0, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
     goto :goto_0
 
-    .line 78
-    :cond_1
-    iget v1, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+    .line 73
+    :cond_0
+    iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
 
     int-to-double v1, v1
 
-    mul-double/2addr v1, v7
+    mul-double/2addr v1, v8
 
     double-to-int v1, v1
 
     iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 81
+    goto :goto_0
+
+    .line 76
+    :cond_1
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;
+
+    invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
+
+    move-result v2
+
+    int-to-double v4, v2
+
+    iget v2, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    int-to-double v6, v2
+
+    const-wide/high16 v8, 0x3fe8000000000000L    # 0.75
+
+    mul-double/2addr v6, v8
+
+    cmpg-double v2, v4, v6
+
+    if-gtz v2, :cond_2
+
+    .line 77
+    iput v3, v0, Landroid/widget/RelativeLayout$LayoutParams;->width:I
+
+    goto :goto_0
+
+    .line 79
+    :cond_2
+    iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    int-to-double v1, v1
+
+    mul-double/2addr v1, v8
+
+    double-to-int v1, v1
+
+    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->width:I
+
+    .line 82
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationDetailActivity$1;
 
@@ -159,6 +194,5 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    :goto_1
     return-void
 .end method

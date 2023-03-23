@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/folder_badge_icon_stub" android:layout="@layout/folder_badge_icon_stub" android:inflatedId="@id/folder_badge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/icon_layout" app:layout_constraintEnd_toEndOf="@id/icon_layout" />
+    <ImageView android:id="@id/thumbnail_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/hide_mask_stub" android:layout="@layout/thumbnail_hide_mask" android:inflatedId="@id/hide_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/play_icon_stub" android:layout="@layout/list_item_play_icon_stub_common" android:inflatedId="@id/play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</merge>

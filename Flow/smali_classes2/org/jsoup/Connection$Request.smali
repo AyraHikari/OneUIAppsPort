@@ -77,14 +77,29 @@
 .method public abstract postDataCharset(Ljava/lang/String;)Lorg/jsoup/Connection$Request;
 .end method
 
+.method public abstract proxy()Ljava/net/Proxy;
+.end method
+
+.method public abstract proxy(Ljava/lang/String;I)Lorg/jsoup/Connection$Request;
+.end method
+
+.method public abstract proxy(Ljava/net/Proxy;)Lorg/jsoup/Connection$Request;
+.end method
+
+.method public abstract requestBody()Ljava/lang/String;
+.end method
+
+.method public abstract requestBody(Ljava/lang/String;)Lorg/jsoup/Connection$Request;
+.end method
+
+.method public abstract sslSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
+.end method
+
+.method public abstract sslSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
+.end method
+
 .method public abstract timeout()I
 .end method
 
 .method public abstract timeout(I)Lorg/jsoup/Connection$Request;
-.end method
-
-.method public abstract validateTLSCertificates(Z)V
-.end method
-
-.method public abstract validateTLSCertificates()Z
 .end method

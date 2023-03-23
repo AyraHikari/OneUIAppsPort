@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->sendContentsAsync(Ljava/util/ArrayList;)V
+    value = Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->sendContentsAsync(Ljava/util/ArrayList;Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,15 +22,31 @@
 
 .field final synthetic val$contentsItems:Ljava/util/ArrayList;
 
+.field final synthetic val$requestView:Landroid/content/Context;
+
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/util/ArrayList;Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$contentsItems",
+            "val$requestView"
+        }
+    .end annotation
 
-    .line 357
+    .line 362
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
+
+    iput-object p3, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$requestView:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,14 +56,16 @@
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 12
 
-    .line 360
+    .line 365
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$000(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/util/ArrayList;)Z
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$requestView:Landroid/content/Context;
+
+    invoke-static {v0, v1, v2}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$000(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/util/ArrayList;Landroid/content/Context;)Z
 
     move-result v0
 
@@ -55,7 +73,7 @@
 
     return-void
 
-    .line 363
+    .line 368
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
@@ -65,69 +83,49 @@
 
     move-result v0
 
-    if-lez v0, :cond_2
+    if-lez v0, :cond_3
 
-    .line 366
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
+    .line 371
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$requestView:Landroid/content/Context;
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    const/4 v2, 0x1
 
-    move-result v0
+    new-array v3, v2, [Ljava/lang/Object;
 
-    const/4 v1, 0x1
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    new-array v2, v1, [Ljava/lang/Object;
+    move-result-object v4
 
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
+    const/4 v5, 0x0
 
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+    aput-object v4, v3, v5
 
-    move-result v3
+    const/high16 v4, 0x7f100000
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v4, v0, v3}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
-    const/4 v4, 0x0
+    const/4 v6, -0x1
 
-    aput-object v3, v2, v4
+    invoke-static {v1, v3, v6}, Lcom/samsung/android/galaxycontinuity/util/Utils;->showSnackBartMessage(Landroid/content/Context;Ljava/lang/String;I)V
 
-    const/high16 v3, 0x7f0f0000
+    new-array v1, v2, [Ljava/lang/Object;
 
-    invoke-static {v3, v0, v2}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+    .line 372
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-static {v0, v4}, Lcom/samsung/android/galaxycontinuity/util/Utils;->showToastMessage(Ljava/lang/String;I)V
+    aput-object v2, v1, v5
 
-    .line 367
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
-
-    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
-
-    move-result v5
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    aput-object v5, v2, v4
-
-    invoke-static {v3, v0, v2}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v4, v0, v1}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 369
+    .line 374
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -146,29 +144,71 @@
 
     if-nez v0, :cond_1
 
-    .line 370
+    .line 375
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;->SHARE_START:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
+    sget-object v1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;->SHARE_START:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
 
-    const-string v3, "sendContentsAsync"
+    const-string/jumbo v2, "sendContentsAsync"
 
-    invoke-static {v0, v3, v2}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$200(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v0, v2, v1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$200(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 372
+    .line 377
     :cond_1
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_2
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v8, v1
+
+    check-cast v8, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
+
+    .line 378
+    invoke-virtual {v8}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getType()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->isFileType(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 379
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
     new-instance v2, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
 
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$contentsItems:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-    const/4 v5, 0x0
+    const/4 v9, 0x1
 
-    invoke-direct {v2, v0, v3, v1, v5}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;-><init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/util/ArrayList;ZLcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;)V
+    iget-object v10, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;->val$requestView:Landroid/content/Context;
 
-    invoke-virtual {v0, v2, v4}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->commandExecute(Ljava/lang/Runnable;Z)V
+    const/4 v11, 0x0
 
-    :cond_2
+    move-object v6, v2
+
+    invoke-direct/range {v6 .. v11}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;-><init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;ZLandroid/content/Context;Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$1;)V
+
+    invoke-virtual {v1, v2, v5}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->commandExecute(Ljava/lang/Runnable;Z)V
+
+    goto :goto_0
+
+    :cond_3
     return-void
 .end method

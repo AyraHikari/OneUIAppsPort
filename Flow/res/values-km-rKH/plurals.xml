@@ -8,14 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"ចុះឈ្មោះ​និង​គ្រប់គ្រង​កុំព្យូទ័រ​ឬ​ថេប្លិត​ដល់​ទៅ %d ក្នុង Samsung Flow។
-
-កុំព្យូទ័រ​ឬ​ថេប្លិត​មួយ​ប៉ុណ្ណោះ​ដែល​អាច​ភ្ជាប់​ទៅ​ទូរសព្ទ​របស់​អ្នក​ក្នុង​ពេល​តែ​មួយ។ អ្នក​នឹង​ត្រូវ​ជ្រើស​មួយ នៅពេល​កុំព្យូទ័រ​ឬ​ថេប្លិត​ដែល​បាន​ចុះបញ្ជី​ព្យាយាម​ភ្ជាប់​ទៅ​ទូរសព្ទ​របស់​អ្នក។"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

@@ -34,6 +34,14 @@
 
 .method public static fromJson(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/TouchEventData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "json"
+        }
+    .end annotation
 
     .line 21
     const-class v0, Lcom/samsung/android/galaxycontinuity/data/TouchEventData;

@@ -23,6 +23,24 @@
 # direct methods
 .method public constructor <init>(ZLjava/lang/String;ZZZZ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_isGearAvailable",
+            "_gearMACAddress",
+            "_isBioAuthAvailable",
+            "_isDynamicLockAvailable",
+            "_isGearPopupNeed",
+            "_isBioAuthRegistered"
+        }
+    .end annotation
 
     .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

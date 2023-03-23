@@ -42,6 +42,18 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/io/File;Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "lockDir",
+            "processLock"
+        }
+    .end annotation
 
     .line 69
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,11 +67,15 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, ".lck"
+    move-result-object p1
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, ".lck"
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -85,7 +101,15 @@
 .end method
 
 .method private static getThreadLock(Ljava/lang/String;)Ljava/util/concurrent/locks/Lock;
-    .locals 3
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 103
     sget-object v0, Landroidx/room/util/CopyLock;->sThreadLocks:Ljava/util/Map;
@@ -94,9 +118,7 @@
 
     .line 104
     :try_start_0
-    sget-object v1, Landroidx/room/util/CopyLock;->sThreadLocks:Ljava/util/Map;
-
-    invoke-interface {v1, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -110,9 +132,7 @@
     invoke-direct {v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
     .line 107
-    sget-object v2, Landroidx/room/util/CopyLock;->sThreadLocks:Ljava/util/Map;
-
-    invoke-interface {v2, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 109
     :cond_0

@@ -14,17 +14,13 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -38,7 +34,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 87
+    .line 85
     sget-object p2, Lkotlin/contracts/InvocationKind;->UNKNOWN:Lkotlin/contracts/InvocationKind;
 
     :cond_0
@@ -48,7 +44,6 @@
 
     return-object p0
 
-    .line 0
     :cond_1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 

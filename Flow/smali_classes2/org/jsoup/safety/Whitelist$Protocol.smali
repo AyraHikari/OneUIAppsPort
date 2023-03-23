@@ -18,7 +18,7 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 593
+    .line 602
     invoke-direct {p0, p1}, Lorg/jsoup/safety/Whitelist$TypedValue;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -27,7 +27,7 @@
 .method static valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$Protocol;
     .locals 1
 
-    .line 597
+    .line 606
     new-instance v0, Lorg/jsoup/safety/Whitelist$Protocol;
 
     invoke-direct {v0, p0}, Lorg/jsoup/safety/Whitelist$Protocol;-><init>(Ljava/lang/String;)V

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/group_header_layout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_group_header_text_size" android:textStyle="bold" android:textColor="@color/basic_subtitle_text_color" android:gravity="center_vertical" android:id="@id/title" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/home_recent_file_header_height" android:maxLines="1" android:paddingStart="@dimen/grid_item_group_header_padding_start" android:paddingEnd="@dimen/expandable_group_header_text_padding_end" />
+</LinearLayout>

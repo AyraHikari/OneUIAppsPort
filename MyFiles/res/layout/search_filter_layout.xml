@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/search_filter_layout_header" android:background="@color/light_theme_background_color" android:paddingTop="@dimen/search_filter_header_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:background="@drawable/expandable_list_group_header_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/search_filter_header_height" android:text="@string/search_filter_header" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/SubHeader_GroupingCase" />
+        <ImageView android:id="@id/search_filter_layout_header_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_expand_close" android:tint="@color/search_group_indicator_color" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/search_history_item_header_padding_end" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/search_filter_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/rounded_corner">
+        <LinearLayout android:orientation="vertical" android:id="@id/search_filter_expanded_layout" android:paddingTop="@dimen/search_filter_layout_padding_top" android:paddingBottom="@dimen/search_filter_layout_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_filter_time" android:maxLines="1" style="@style/SearchFilterHeader" />
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_filter_item_list_padding_bottom" android:layout_marginStart="@dimen/search_filter_layout_padding_side" android:layout_marginEnd="@dimen/search_filter_layout_padding_side" app:flexDirection="row" app:flexWrap="wrap">
+                <include android:id="@id/filter_time_yesterday" layout="@layout/search_filter_item_layout" />
+                <include android:id="@id/filter_time_7days" layout="@layout/search_filter_item_layout" />
+                <include android:id="@id/filter_time_30days" layout="@layout/search_filter_item_layout" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/search_filter_type_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_filter_content_types" android:maxLines="1" style="@style/SearchFilterHeader" />
+                <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_filter_item_list_padding_bottom" android:layout_marginStart="@dimen/search_filter_layout_padding_side" android:layout_marginEnd="@dimen/search_filter_layout_padding_side" app:flexDirection="row" app:flexWrap="wrap">
+                    <include android:id="@id/filter_content_images" layout="@layout/search_filter_item_layout" />
+                    <include android:id="@id/filter_content_videos" layout="@layout/search_filter_item_layout" />
+                    <include android:id="@id/filter_content_audio" layout="@layout/search_filter_item_layout" />
+                    <include android:id="@id/filter_content_documents" layout="@layout/search_filter_item_layout" />
+                    <include android:id="@id/filter_content_apks" layout="@layout/search_filter_item_layout" />
+                    <include android:id="@id/filter_content_compressed" layout="@layout/search_filter_item_layout" />
+                </com.google.android.flexbox.FlexboxLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/file_type_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/search_filter_header_file_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_filter_format" android:maxLines="1" style="@style/SearchFilterHeader" />
+                    <com.sec.android.app.myfiles.external.ui.pages.filelist.search.FileTypeRecyclerView android:id="@id/search_filter_file_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/search_filter_layout_padding_side" android:paddingEnd="@dimen/search_filter_layout_padding_side" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_filter_collapsed_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_filter_layout_collapsed_view_height" android:paddingStart="@dimen/search_filter_layout_collapsed_view_padding_side" android:paddingEnd="@dimen/search_filter_layout_collapsed_view_padding_side">
+            <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/search_filter_header_text_size" android:textColor="@color/search_filter_item_text_color" android:id="@id/search_filter_collapsed_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/search_filter_item_collapsed_text_height" android:layout_marginEnd="@dimen/search_filter_item_collapsed_text_margin_side" style="@style/RobotoMedium" />
+            <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/search_filter_header_text_size" android:textColor="@color/search_filter_item_text_color" android:id="@id/search_filter_collapsed_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/search_filter_item_collapsed_text_height" android:layout_marginEnd="@dimen/search_filter_item_collapsed_text_margin_side" style="@style/RobotoMedium" />
+            <com.sec.android.app.myfiles.external.ui.widget.LimitedTextView android:textSize="@dimen/search_filter_header_text_size" android:textColor="@color/search_filter_item_text_color" android:id="@id/search_filter_collapsed_file_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/search_filter_item_collapsed_text_height" style="@style/RobotoMedium" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/SubHeader_HasText" />
+</LinearLayout>

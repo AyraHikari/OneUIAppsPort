@@ -58,7 +58,17 @@
 
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;Landroid/content/res/Resources;)V
-    .locals 5
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bitmap",
+            "r"
+        }
+    .end annotation
 
     .line 311
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
@@ -84,82 +94,82 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapRect:Landroid/graphics/RectF;
 
-    const/16 v0, 0x8
+    const/16 v1, 0x8
 
-    new-array v1, v0, [F
+    new-array v2, v1, [F
 
     .line 296
-    fill-array-data v1, :array_0
+    fill-array-data v2, :array_0
 
-    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mRadii:[F
+    iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mRadii:[F
 
-    new-array v0, v0, [F
+    new-array v1, v1, [F
 
     .line 297
-    fill-array-data v0, :array_1
+    fill-array-data v1, :array_1
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderRadii:[F
-
-    const/4 v0, 0x0
-
-    .line 299
-    iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mOval:Z
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderRadii:[F
 
     const/4 v1, 0x0
 
-    .line 301
-    iput v1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderWidth:F
+    .line 299
+    iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mOval:Z
 
-    const/high16 v2, -0x1000000
+    const/4 v2, 0x0
+
+    .line 301
+    iput v2, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderWidth:F
+
+    const/high16 v3, -0x1000000
 
     .line 302
-    invoke-static {v2}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+    invoke-static {v3}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
+    iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
 
     .line 305
-    sget-object v3, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
+    sget-object v4, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
-    iput-object v3, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mScaleType:Landroid/widget/ImageView$ScaleType;
+    iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mScaleType:Landroid/widget/ImageView$ScaleType;
 
     .line 307
-    new-instance v3, Landroid/graphics/Path;
+    new-instance v4, Landroid/graphics/Path;
 
-    invoke-direct {v3}, Landroid/graphics/Path;-><init>()V
+    invoke-direct {v4}, Landroid/graphics/Path;-><init>()V
 
-    iput-object v3, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mPath:Landroid/graphics/Path;
+    iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mPath:Landroid/graphics/Path;
 
     .line 309
-    iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBoundsConfigured:Z
+    iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBoundsConfigured:Z
 
     .line 312
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmap:Landroid/graphics/Bitmap;
 
     .line 313
-    new-instance v0, Landroid/graphics/BitmapShader;
-
-    sget-object v3, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+    new-instance v1, Landroid/graphics/BitmapShader;
 
     sget-object v4, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
-    invoke-direct {v0, p1, v3, v4}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
+    sget-object v5, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapShader:Landroid/graphics/BitmapShader;
+    invoke-direct {v1, p1, v4, v5}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
+
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapShader:Landroid/graphics/BitmapShader;
 
     if-eqz p1, :cond_0
 
     .line 316
     invoke-virtual {p2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {p1, v0}, Landroid/graphics/Bitmap;->getScaledWidth(Landroid/util/DisplayMetrics;)I
+    invoke-virtual {p1, v1}, Landroid/graphics/Bitmap;->getScaledWidth(Landroid/util/DisplayMetrics;)I
 
-    move-result v0
+    move-result v1
 
-    iput v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapWidth:I
+    iput v1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapWidth:I
 
     .line 317
     invoke-virtual {p2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
@@ -184,17 +194,15 @@
 
     .line 322
     :goto_0
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapRect:Landroid/graphics/RectF;
+    iget p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapWidth:I
 
-    iget p2, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapWidth:I
+    int-to-float p1, p1
+
+    iget p2, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapHeight:I
 
     int-to-float p2, p2
 
-    iget v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapHeight:I
-
-    int-to-float v0, v0
-
-    invoke-virtual {p1, v1, v1, p2, v0}, Landroid/graphics/RectF;->set(FFFF)V
+    invoke-virtual {v0, v2, v2, p1, p2}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 324
     new-instance p1, Landroid/graphics/Paint;
@@ -211,8 +219,6 @@
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 326
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapPaint:Landroid/graphics/Paint;
-
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapShader:Landroid/graphics/BitmapShader;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
@@ -230,23 +236,19 @@
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 330
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderPaint:Landroid/graphics/Paint;
-
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->getState()[I
 
     move-result-object v0
 
-    invoke-virtual {p2, v0, v2}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+    invoke-virtual {p2, v0, v3}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result p2
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 331
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderPaint:Landroid/graphics/Paint;
-
     iget p2, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderWidth:F
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
@@ -280,6 +282,14 @@
 
 .method private applyScaleToRadii(Landroid/graphics/Matrix;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "m"
+        }
+    .end annotation
 
     const/16 v0, 0x9
 
@@ -319,6 +329,14 @@
 
 .method private configureBounds(Landroid/graphics/Canvas;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 411
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getClipBounds()Landroid/graphics/Rect;
@@ -465,6 +483,14 @@
 
 .method public static drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -555,6 +581,16 @@
 
 .method public static fromBitmap(Landroid/graphics/Bitmap;Landroid/content/res/Resources;)Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bitmap",
+            "r"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -573,6 +609,16 @@
 
 .method public static fromDrawable(Landroid/graphics/drawable/Drawable;Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "drawable",
+            "r"
+        }
+    .end annotation
 
     if-eqz p0, :cond_4
 
@@ -682,6 +728,14 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 453
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
@@ -959,6 +1013,14 @@
 
 .method protected onStateChange([I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     .line 397
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
@@ -998,6 +1060,14 @@
 
 .method public setAlpha(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "alpha"
+        }
+    .end annotation
 
     .line 512
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapPaint:Landroid/graphics/Paint;
@@ -1012,6 +1082,14 @@
 
 .method public setBorderColor(Landroid/content/res/ColorStateList;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "colors"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -1061,6 +1139,14 @@
 
 .method public setBorderWidth(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "width"
+        }
+    .end annotation
 
     .line 543
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBorderWidth:F
@@ -1075,6 +1161,14 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cf"
+        }
+    .end annotation
 
     .line 518
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapPaint:Landroid/graphics/Paint;
@@ -1089,6 +1183,14 @@
 
 .method public setCornerRadii([F)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "radii"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -1137,6 +1239,14 @@
 
 .method public setFilterBitmap(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "filter"
+        }
+    .end annotation
 
     .line 524
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mBitmapPaint:Landroid/graphics/Paint;
@@ -1151,6 +1261,14 @@
 
 .method public setOval(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "oval"
+        }
+    .end annotation
 
     .line 572
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/customcontrols/AspectRatioImageView$SelectableRoundedCornerDrawable;->mOval:Z
@@ -1160,6 +1278,14 @@
 
 .method public setScaleType(Landroid/widget/ImageView$ScaleType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleType"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 

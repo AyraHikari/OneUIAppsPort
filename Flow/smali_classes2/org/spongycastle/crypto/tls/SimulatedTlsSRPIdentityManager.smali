@@ -33,7 +33,7 @@
 
     sput-object v0, Lorg/spongycastle/crypto/tls/SimulatedTlsSRPIdentityManager;->PREFIX_PASSWORD:[B
 
-    const-string v0, "salt"
+    const-string/jumbo v0, "salt"
 
     .line 20
     invoke-static {v0}, Lorg/spongycastle/util/Strings;->toByteArray(Ljava/lang/String;)[B

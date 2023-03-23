@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onDragStart(Landroid/view/View;Landroidx/core/view/DragStartHelper;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "helper"
+        }
+    .end annotation
 .end method

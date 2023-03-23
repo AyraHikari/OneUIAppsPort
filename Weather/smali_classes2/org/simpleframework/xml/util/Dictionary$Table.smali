@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "Table"
 .end annotation
 
@@ -29,7 +29,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 145
     invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
 
     return-void

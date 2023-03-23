@@ -16,6 +16,19 @@
 
 # virtual methods
 .method public abstract sort(Landroid/content/Intent;Ljava/util/List;Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "intent",
+            "activities",
+            "historicalRecords"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Meld aan</string>
     <string name="common_signin_button_text_long">Meld aan met Google</string>
     <string name="copy">Kopieer</string>
-    <string name="copy_toast_msg">Skakel is na knipbord gekopieer</string>
     <string name="error_icon_content_description">Fout</string>
     <string name="expand_button_title">Gevorderd</string>
     <string name="exposed_dropdown_menu_content_description">Wys aftrekkieslys</string>
-    <string name="fallback_menu_item_copy_link">Kopieer skakel</string>
-    <string name="fallback_menu_item_open_in_browser">Maak in blaaier oop</string>
-    <string name="fallback_menu_item_share_link">Deel skakel</string>
     <string name="icon_content_description">Dialoogikoon</string>
     <string name="item_view_role_description">Oortjie</string>
     <string name="material_clock_toggle_content_description">Kies vm. of nm.</string>

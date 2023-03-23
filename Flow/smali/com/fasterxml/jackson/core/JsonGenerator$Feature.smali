@@ -48,7 +48,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 10
+    .locals 15
 
     .line 51
     new-instance v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
@@ -64,101 +64,89 @@
     sput-object v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->AUTO_CLOSE_TARGET:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
     .line 63
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    new-instance v1, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
-    const-string v1, "AUTO_CLOSE_JSON_CONTENT"
+    const-string v4, "AUTO_CLOSE_JSON_CONTENT"
 
-    invoke-direct {v0, v1, v3, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v1, v4, v3, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->AUTO_CLOSE_JSON_CONTENT:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    sput-object v1, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->AUTO_CLOSE_JSON_CONTENT:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
     .line 74
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    new-instance v4, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
-    const-string v1, "QUOTE_FIELD_NAMES"
+    const-string v5, "QUOTE_FIELD_NAMES"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v4, v5, v6, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->QUOTE_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    sput-object v4, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->QUOTE_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
     .line 88
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    new-instance v5, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
-    const-string v1, "QUOTE_NON_NUMERIC_NUMBERS"
+    const-string v7, "QUOTE_NON_NUMERIC_NUMBERS"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v5, v7, v8, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->QUOTE_NON_NUMERIC_NUMBERS:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    sput-object v5, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->QUOTE_NON_NUMERIC_NUMBERS:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
     .line 105
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    new-instance v7, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
-    const-string v1, "WRITE_NUMBERS_AS_STRINGS"
+    const-string v9, "WRITE_NUMBERS_AS_STRINGS"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6, v2}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v7, v9, v10, v2}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->WRITE_NUMBERS_AS_STRINGS:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    sput-object v7, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->WRITE_NUMBERS_AS_STRINGS:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
     .line 118
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    new-instance v9, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
-    const-string v1, "FLUSH_PASSED_TO_STREAM"
+    const-string v11, "FLUSH_PASSED_TO_STREAM"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v9, v11, v12, v3}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->FLUSH_PASSED_TO_STREAM:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    sput-object v9, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->FLUSH_PASSED_TO_STREAM:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
     .line 129
-    new-instance v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    new-instance v11, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
-    const-string v1, "ESCAPE_NON_ASCII"
+    const-string v13, "ESCAPE_NON_ASCII"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8, v2}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v11, v13, v14, v2}, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->ESCAPE_NON_ASCII:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    sput-object v11, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->ESCAPE_NON_ASCII:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
-    const/4 v1, 0x7
+    const/4 v13, 0x7
 
-    new-array v1, v1, [Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    new-array v13, v13, [Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+
+    aput-object v0, v13, v2
+
+    aput-object v1, v13, v3
+
+    aput-object v4, v13, v6
+
+    aput-object v5, v13, v8
+
+    aput-object v7, v13, v10
+
+    aput-object v9, v13, v12
+
+    aput-object v11, v13, v14
 
     .line 37
-    sget-object v9, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->AUTO_CLOSE_TARGET:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
-
-    aput-object v9, v1, v2
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->AUTO_CLOSE_JSON_CONTENT:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->QUOTE_FIELD_NAMES:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->QUOTE_NON_NUMERIC_NUMBERS:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->WRITE_NUMBERS_AS_STRINGS:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->FLUSH_PASSED_TO_STREAM:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
-
-    aput-object v2, v1, v7
-
-    aput-object v0, v1, v8
-
-    sput-object v1, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->$VALUES:[Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+    sput-object v13, Lcom/fasterxml/jackson/core/JsonGenerator$Feature;->$VALUES:[Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
 
     return-void
 .end method

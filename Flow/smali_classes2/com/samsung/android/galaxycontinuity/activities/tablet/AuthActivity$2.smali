@@ -3,12 +3,12 @@
 .source "AuthActivity.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$OnPermissionRequestListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->grantPermission()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,13 +20,27 @@
 # instance fields
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
+.field final synthetic val$requester:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
+
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$requester"
+        }
+    .end annotation
 
-    .line 220
+    .line 292
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
+
+    iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$2;->val$requester:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,42 +49,59 @@
 
 
 # virtual methods
-.method public run()V
+.method public onResult(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isGranted"
+        }
+    .end annotation
 
-    .line 224
-    :try_start_0
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
+    .line 295
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$2;->val$requester:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
 
-    move-result-object v0
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;->close()V
 
-    const-class v1, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
+    .line 297
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getService(Ljava/lang/Class;)Landroid/app/Service;
+    sget-object v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->REQUIRED_PERMISSIONS:[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
 
-    move-result-object v0
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;->notHasCompulsaryPermissions(Landroid/content/Context;[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;)Z
 
-    .line 226
-    instance-of v1, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
+    move-result p1
 
-    if-eqz v1, :cond_0
+    if-eqz p1, :cond_0
 
-    .line 227
-    check-cast v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
+    .line 298
+    new-instance p1, Landroid/content/Intent;
 
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;->startAllSubServices()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    const-string v0, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_OFF_CHECK"
 
-    goto :goto_0
+    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    :catch_0
-    move-exception v0
+    .line 299
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
-    .line 231
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+    const-string v1, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
 
+    invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+
+    .line 301
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
+
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->finishAndRemoveTask()V
+
+    return-void
+
+    .line 304
     :cond_0
-    :goto_0
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$2;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)V
+
     return-void
 .end method

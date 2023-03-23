@@ -44,7 +44,7 @@
 
     const/16 v0, 0xa
 
-    .line 49
+    .line 1
     invoke-direct {p0, v0}, Lorg/simpleframework/xml/util/WeakCache;-><init>(I)V
 
     return-void
@@ -53,10 +53,10 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 60
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 61
+    .line 3
     new-instance v0, Lorg/simpleframework/xml/util/WeakCache$SegmentList;
 
     invoke-direct {v0, p0, p1}, Lorg/simpleframework/xml/util/WeakCache$SegmentList;-><init>(Lorg/simpleframework/xml/util/WeakCache;I)V
@@ -78,7 +78,6 @@
         }
     .end annotation
 
-    .line 136
     iget-object v0, p0, Lorg/simpleframework/xml/util/WeakCache;->list:Lorg/simpleframework/xml/util/WeakCache$SegmentList;
 
     invoke-virtual {v0, p1}, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->get(Ljava/lang/Object;)Lorg/simpleframework/xml/util/WeakCache$Segment;
@@ -100,7 +99,6 @@
         }
     .end annotation
 
-    .line 84
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/util/WeakCache;->map(Ljava/lang/Object;)Lorg/simpleframework/xml/util/WeakCache$Segment;
 
     move-result-object v0
@@ -113,7 +111,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 123
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/util/WeakCache;->map(Ljava/lang/Object;)Lorg/simpleframework/xml/util/WeakCache$Segment;
 
     move-result-object v0
@@ -135,7 +132,6 @@
         }
     .end annotation
 
-    .line 110
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/util/WeakCache;->map(Ljava/lang/Object;)Lorg/simpleframework/xml/util/WeakCache$Segment;
 
     move-result-object v0
@@ -150,7 +146,7 @@
 .method public isEmpty()Z
     .locals 2
 
-    .line 65
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/util/WeakCache;->list:Lorg/simpleframework/xml/util/WeakCache$SegmentList;
 
     invoke-virtual {v0}, Lorg/simpleframework/xml/util/WeakCache$SegmentList;->iterator()Ljava/util/Iterator;
@@ -170,8 +166,8 @@
 
     check-cast v1, Lorg/simpleframework/xml/util/WeakCache$Segment;
 
-    .line 66
-    invoke-virtual {v1}, Lorg/simpleframework/xml/util/WeakCache$Segment;->isEmpty()Z
+    .line 2
+    invoke-virtual {v1}, Ljava/util/WeakHashMap;->isEmpty()Z
 
     move-result v1
 
@@ -197,7 +193,6 @@
         }
     .end annotation
 
-    .line 97
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/util/WeakCache;->map(Ljava/lang/Object;)Lorg/simpleframework/xml/util/WeakCache$Segment;
 
     move-result-object v0

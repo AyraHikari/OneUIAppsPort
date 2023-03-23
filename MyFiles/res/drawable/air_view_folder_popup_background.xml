@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/air_view_folder_popup_background_radius" />
+    <solid android:color="@color/air_view_background" />
+    <stroke android:width="@dimen/air_view_popup_background_stroke_width" android:color="@color/air_view_background_border" />
+</shape>

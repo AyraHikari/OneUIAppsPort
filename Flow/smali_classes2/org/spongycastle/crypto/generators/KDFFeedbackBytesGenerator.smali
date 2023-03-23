@@ -170,8 +170,6 @@
     .line 158
     :cond_2
     :goto_1
-    iget-object v3, p0, Lorg/spongycastle/crypto/generators/KDFFeedbackBytesGenerator;->ios:[B
-
     array-length v4, v3
 
     sub-int/2addr v4, v6
@@ -184,8 +182,6 @@
 
     .line 161
     :cond_3
-    iget-object v3, p0, Lorg/spongycastle/crypto/generators/KDFFeedbackBytesGenerator;->ios:[B
-
     array-length v4, v3
 
     sub-int/2addr v4, v5
@@ -198,8 +194,6 @@
 
     .line 164
     :cond_4
-    iget-object v3, p0, Lorg/spongycastle/crypto/generators/KDFFeedbackBytesGenerator;->ios:[B
-
     array-length v4, v3
 
     sub-int/2addr v4, v2
@@ -348,13 +342,19 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     iget p3, p0, Lorg/spongycastle/crypto/generators/KDFFeedbackBytesGenerator;->maxSizeExcl:I
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     const-string p3, " bytes"
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

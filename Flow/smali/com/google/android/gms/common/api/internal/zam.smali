@@ -1,11 +1,12 @@
 .class final Lcom/google/android/gms/common/api/internal/zam;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # instance fields
-.field private final zadh:I
+.field private final zaa:I
 
-.field private final zadi:Lcom/google/android/gms/common/ConnectionResult;
+.field private final zab:Lcom/google/android/gms/common/ConnectionResult;
 
 
 # direct methods
@@ -15,34 +16,29 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zam;->zadi:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zam;->zab:Lcom/google/android/gms/common/ConnectionResult;
 
-    .line 4
-    iput p2, p0, Lcom/google/android/gms/common/api/internal/zam;->zadh:I
+    iput p2, p0, Lcom/google/android/gms/common/api/internal/zam;->zaa:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method final getConnectionResult()Lcom/google/android/gms/common/ConnectionResult;
+.method final zaa()I
     .locals 1
 
-    .line 7
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zam;->zadi:Lcom/google/android/gms/common/ConnectionResult;
-
-    return-object v0
-.end method
-
-.method final zar()I
-    .locals 1
-
-    .line 6
-    iget v0, p0, Lcom/google/android/gms/common/api/internal/zam;->zadh:I
+    iget v0, p0, Lcom/google/android/gms/common/api/internal/zam;->zaa:I
 
     return v0
+.end method
+
+.method final zab()Lcom/google/android/gms/common/ConnectionResult;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zam;->zab:Lcom/google/android/gms/common/ConnectionResult;
+
+    return-object v0
 .end method

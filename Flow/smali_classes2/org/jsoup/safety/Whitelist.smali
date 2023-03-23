@@ -6,11 +6,11 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lorg/jsoup/safety/Whitelist$TypedValue;,
-        Lorg/jsoup/safety/Whitelist$Protocol;,
-        Lorg/jsoup/safety/Whitelist$AttributeValue;,
+        Lorg/jsoup/safety/Whitelist$TagName;,
         Lorg/jsoup/safety/Whitelist$AttributeKey;,
-        Lorg/jsoup/safety/Whitelist$TagName;
+        Lorg/jsoup/safety/Whitelist$AttributeValue;,
+        Lorg/jsoup/safety/Whitelist$Protocol;,
+        Lorg/jsoup/safety/Whitelist$TypedValue;
     }
 .end annotation
 
@@ -72,31 +72,31 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 190
+    .line 192
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 191
+    .line 193
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
 
-    .line 192
+    .line 194
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
-    .line 193
+    .line 195
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lorg/jsoup/safety/Whitelist;->enforcedAttributes:Ljava/util/Map;
 
-    .line 194
+    .line 196
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -105,7 +105,7 @@
 
     const/4 v0, 0x0
 
-    .line 195
+    .line 197
     iput-boolean v0, p0, Lorg/jsoup/safety/Whitelist;->preserveRelativeLinks:Z
 
     return-void
@@ -114,7 +114,7 @@
 .method public static basic()Lorg/jsoup/safety/Whitelist;
     .locals 25
 
-    .line 108
+    .line 110
     new-instance v0, Lorg/jsoup/safety/Whitelist;
 
     invoke-direct {v0}, Lorg/jsoup/safety/Whitelist;-><init>()V
@@ -151,27 +151,27 @@
 
     const-string v16, "q"
 
-    const-string v17, "small"
+    const-string/jumbo v17, "small"
 
-    const-string v18, "span"
+    const-string/jumbo v18, "span"
 
-    const-string v19, "strike"
+    const-string/jumbo v19, "strike"
 
-    const-string v20, "strong"
+    const-string/jumbo v20, "strong"
 
-    const-string v21, "sub"
+    const-string/jumbo v21, "sub"
 
-    const-string v22, "sup"
+    const-string/jumbo v22, "sup"
 
-    const-string v23, "u"
+    const-string/jumbo v23, "u"
 
-    const-string v24, "ul"
+    const-string/jumbo v24, "ul"
 
     filled-new-array/range {v1 .. v24}, [Ljava/lang/String;
 
     move-result-object v1
 
-    .line 109
+    .line 111
     invoke-virtual {v0, v1}, Lorg/jsoup/safety/Whitelist;->addTags([Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -184,7 +184,7 @@
 
     const-string v3, "a"
 
-    .line 114
+    .line 116
     invoke-virtual {v0, v3, v2}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -197,7 +197,7 @@
 
     const-string v5, "blockquote"
 
-    .line 115
+    .line 117
     invoke-virtual {v0, v5, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -208,7 +208,7 @@
 
     const-string v6, "q"
 
-    .line 116
+    .line 118
     invoke-virtual {v0, v6, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -225,7 +225,7 @@
 
     move-result-object v4
 
-    .line 118
+    .line 120
     invoke-virtual {v0, v3, v1, v4}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -234,7 +234,7 @@
 
     move-result-object v1
 
-    .line 119
+    .line 121
     invoke-virtual {v0, v5, v2, v1}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -243,7 +243,7 @@
 
     move-result-object v1
 
-    .line 120
+    .line 122
     invoke-virtual {v0, v2, v2, v1}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -252,7 +252,7 @@
 
     const-string v2, "nofollow"
 
-    .line 122
+    .line 124
     invoke-virtual {v0, v3, v1, v2}, Lorg/jsoup/safety/Whitelist;->addEnforcedAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -263,7 +263,7 @@
 .method public static basicWithImages()Lorg/jsoup/safety/Whitelist;
     .locals 8
 
-    .line 134
+    .line 136
     invoke-static {}, Lorg/jsoup/safety/Whitelist;->basic()Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -274,7 +274,7 @@
 
     move-result-object v2
 
-    .line 135
+    .line 137
     invoke-virtual {v0, v2}, Lorg/jsoup/safety/Whitelist;->addTags([Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -285,17 +285,17 @@
 
     const-string v4, "height"
 
-    const-string v5, "src"
+    const-string/jumbo v5, "src"
 
-    const-string v6, "title"
+    const-string/jumbo v6, "title"
 
-    const-string v7, "width"
+    const-string/jumbo v7, "width"
 
     filled-new-array/range {v2 .. v7}, [Ljava/lang/String;
 
     move-result-object v2
 
-    .line 136
+    .line 138
     invoke-virtual {v0, v1, v2}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -308,9 +308,9 @@
 
     move-result-object v2
 
-    const-string v3, "src"
+    const-string/jumbo v3, "src"
 
-    .line 137
+    .line 139
     invoke-virtual {v0, v1, v3, v2}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -323,7 +323,7 @@
 
     const-string v0, "#"
 
-    .line 544
+    .line 553
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -352,7 +352,7 @@
 .method public static none()Lorg/jsoup/safety/Whitelist;
     .locals 1
 
-    .line 77
+    .line 79
     new-instance v0, Lorg/jsoup/safety/Whitelist;
 
     invoke-direct {v0}, Lorg/jsoup/safety/Whitelist;-><init>()V
@@ -363,7 +363,7 @@
 .method public static relaxed()Lorg/jsoup/safety/Whitelist;
     .locals 43
 
-    .line 152
+    .line 154
     new-instance v0, Lorg/jsoup/safety/Whitelist;
 
     invoke-direct {v0}, Lorg/jsoup/safety/Whitelist;-><init>()V
@@ -422,48 +422,48 @@
 
     const-string v27, "q"
 
-    const-string v28, "small"
+    const-string/jumbo v28, "small"
 
-    const-string v29, "span"
+    const-string/jumbo v29, "span"
 
-    const-string v30, "strike"
+    const-string/jumbo v30, "strike"
 
-    const-string v31, "strong"
+    const-string/jumbo v31, "strong"
 
-    const-string v32, "sub"
+    const-string/jumbo v32, "sub"
 
-    const-string v33, "sup"
+    const-string/jumbo v33, "sup"
 
-    const-string v34, "table"
+    const-string/jumbo v34, "table"
 
-    const-string v35, "tbody"
+    const-string/jumbo v35, "tbody"
 
-    const-string v36, "td"
+    const-string/jumbo v36, "td"
 
-    const-string v37, "tfoot"
+    const-string/jumbo v37, "tfoot"
 
-    const-string v38, "th"
+    const-string/jumbo v38, "th"
 
-    const-string v39, "thead"
+    const-string/jumbo v39, "thead"
 
-    const-string v40, "tr"
+    const-string/jumbo v40, "tr"
 
-    const-string v41, "u"
+    const-string/jumbo v41, "u"
 
-    const-string v42, "ul"
+    const-string/jumbo v42, "ul"
 
     filled-new-array/range {v1 .. v42}, [Ljava/lang/String;
 
     move-result-object v1
 
-    .line 153
+    .line 155
     invoke-virtual {v0, v1}, Lorg/jsoup/safety/Whitelist;->addTags([Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
 
     const-string v1, "href"
 
-    const-string v2, "title"
+    const-string/jumbo v2, "title"
 
     filled-new-array {v1, v2}, [Ljava/lang/String;
 
@@ -471,7 +471,7 @@
 
     const-string v3, "a"
 
-    .line 160
+    .line 162
     invoke-virtual {v0, v3, v2}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -484,14 +484,14 @@
 
     const-string v5, "blockquote"
 
-    .line 161
+    .line 163
     invoke-virtual {v0, v5, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
 
-    const-string v4, "span"
+    const-string/jumbo v4, "span"
 
-    const-string v6, "width"
+    const-string/jumbo v6, "width"
 
     filled-new-array {v4, v6}, [Ljava/lang/String;
 
@@ -499,7 +499,7 @@
 
     const-string v8, "col"
 
-    .line 162
+    .line 164
     invoke-virtual {v0, v8, v7}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -510,7 +510,7 @@
 
     const-string v7, "colgroup"
 
-    .line 163
+    .line 165
     invoke-virtual {v0, v7, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -521,11 +521,11 @@
 
     const-string v9, "height"
 
-    const-string v10, "src"
+    const-string/jumbo v10, "src"
 
-    const-string v11, "title"
+    const-string/jumbo v11, "title"
 
-    const-string v12, "width"
+    const-string/jumbo v12, "width"
 
     filled-new-array/range {v7 .. v12}, [Ljava/lang/String;
 
@@ -533,14 +533,14 @@
 
     const-string v7, "img"
 
-    .line 164
+    .line 166
     invoke-virtual {v0, v7, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
 
-    const-string v4, "start"
+    const-string/jumbo v4, "start"
 
-    const-string v8, "type"
+    const-string/jumbo v8, "type"
 
     filled-new-array {v4, v8}, [Ljava/lang/String;
 
@@ -548,7 +548,7 @@
 
     const-string v9, "ol"
 
-    .line 165
+    .line 167
     invoke-virtual {v0, v9, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -559,20 +559,20 @@
 
     const-string v9, "q"
 
-    .line 166
+    .line 168
     invoke-virtual {v0, v9, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
 
-    const-string v4, "summary"
+    const-string/jumbo v4, "summary"
 
     filled-new-array {v4, v6}, [Ljava/lang/String;
 
     move-result-object v4
 
-    const-string v10, "table"
+    const-string/jumbo v10, "table"
 
-    .line 167
+    .line 169
     invoke-virtual {v0, v10, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -583,15 +583,15 @@
 
     const-string v11, "colspan"
 
-    const-string v12, "rowspan"
+    const-string/jumbo v12, "rowspan"
 
     filled-new-array {v4, v10, v11, v12, v6}, [Ljava/lang/String;
 
     move-result-object v4
 
-    const-string v6, "td"
+    const-string/jumbo v6, "td"
 
-    .line 168
+    .line 170
     invoke-virtual {v0, v6, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -602,19 +602,19 @@
 
     const-string v12, "colspan"
 
-    const-string v13, "rowspan"
+    const-string/jumbo v13, "rowspan"
 
-    const-string v14, "scope"
+    const-string/jumbo v14, "scope"
 
-    const-string v15, "width"
+    const-string/jumbo v15, "width"
 
     filled-new-array/range {v10 .. v15}, [Ljava/lang/String;
 
     move-result-object v4
 
-    const-string v6, "th"
+    const-string/jumbo v6, "th"
 
-    .line 169
+    .line 171
     invoke-virtual {v0, v6, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -623,9 +623,9 @@
 
     move-result-object v4
 
-    const-string v6, "ul"
+    const-string/jumbo v6, "ul"
 
-    .line 172
+    .line 174
     invoke-virtual {v0, v6, v4}, Lorg/jsoup/safety/Whitelist;->addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -642,7 +642,7 @@
 
     move-result-object v4
 
-    .line 174
+    .line 176
     invoke-virtual {v0, v3, v1, v4}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -651,7 +651,7 @@
 
     move-result-object v1
 
-    .line 175
+    .line 177
     invoke-virtual {v0, v5, v2, v1}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -660,7 +660,7 @@
 
     move-result-object v1
 
-    .line 176
+    .line 178
     invoke-virtual {v0, v2, v2, v1}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -669,9 +669,9 @@
 
     move-result-object v1
 
-    const-string v3, "src"
+    const-string/jumbo v3, "src"
 
-    .line 177
+    .line 179
     invoke-virtual {v0, v7, v3, v1}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -680,7 +680,7 @@
 
     move-result-object v1
 
-    .line 178
+    .line 180
     invoke-virtual {v0, v9, v2, v1}, Lorg/jsoup/safety/Whitelist;->addProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -691,7 +691,7 @@
 .method public static simpleText()Lorg/jsoup/safety/Whitelist;
     .locals 6
 
-    .line 87
+    .line 89
     new-instance v0, Lorg/jsoup/safety/Whitelist;
 
     invoke-direct {v0}, Lorg/jsoup/safety/Whitelist;-><init>()V
@@ -702,15 +702,15 @@
 
     const-string v3, "i"
 
-    const-string v4, "strong"
+    const-string/jumbo v4, "strong"
 
-    const-string v5, "u"
+    const-string/jumbo v5, "u"
 
     filled-new-array {v1, v2, v3, v4, v5}, [Ljava/lang/String;
 
     move-result-object v1
 
-    .line 88
+    .line 90
     invoke-virtual {v0, v1}, Lorg/jsoup/safety/Whitelist;->addTags([Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
 
     move-result-object v0
@@ -731,7 +731,7 @@
         }
     .end annotation
 
-    .line 517
+    .line 526
     invoke-virtual {p2}, Lorg/jsoup/nodes/Attribute;->getKey()Ljava/lang/String;
 
     move-result-object v0
@@ -740,28 +740,28 @@
 
     move-result-object p1
 
-    .line 518
+    .line 527
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 519
+    .line 528
     invoke-virtual {p2}, Lorg/jsoup/nodes/Attribute;->getValue()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 520
+    .line 529
     :cond_0
     iget-boolean v0, p0, Lorg/jsoup/safety/Whitelist;->preserveRelativeLinks:Z
 
     if-nez v0, :cond_1
 
-    .line 521
+    .line 530
     invoke-virtual {p2, p1}, Lorg/jsoup/nodes/Attribute;->setValue(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 523
+    .line 532
     :cond_1
     invoke-interface {p3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -780,14 +780,14 @@
 
     check-cast p3, Lorg/jsoup/safety/Whitelist$Protocol;
 
-    .line 524
+    .line 533
     invoke-virtual {p3}, Lorg/jsoup/safety/Whitelist$Protocol;->toString()Ljava/lang/String;
 
     move-result-object p3
 
     const-string v0, "#"
 
-    .line 526
+    .line 535
     invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -796,7 +796,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 527
+    .line 536
     invoke-direct {p0, p1}, Lorg/jsoup/safety/Whitelist;->isValidAnchor(Ljava/lang/String;)Z
 
     move-result p3
@@ -805,7 +805,7 @@
 
     return v1
 
-    .line 534
+    .line 543
     :cond_3
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -813,16 +813,20 @@
 
     invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p3, ":"
+    move-result-object p3
 
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ":"
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
-    .line 536
-    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p3
+
+    .line 545
+    invoke-static {p1}, Lorg/jsoup/internal/Normalizer;->lowerCase(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -845,13 +849,13 @@
 .method public varargs addAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
     .locals 4
 
-    .line 252
+    .line 254
     invoke-static {p1}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 253
+    .line 255
     invoke-static {p2}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 254
+    .line 256
     array-length v0, p2
 
     const/4 v1, 0x0
@@ -866,47 +870,37 @@
     move v0, v1
 
     :goto_0
-    const-string v2, "No attributes supplied."
+    const-string v2, "No attribute names supplied."
 
     invoke-static {v0, v2}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
 
-    .line 256
+    .line 258
     invoke-static {p1}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
 
     move-result-object p1
 
-    .line 257
-    iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
-
-    invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 258
+    .line 259
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 259
-    :cond_1
+    .line 260
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 260
+    .line 261
     array-length v2, p2
 
     :goto_1
-    if-ge v1, v2, :cond_2
+    if-ge v1, v2, :cond_1
 
     aget-object v3, p2, v1
 
-    .line 261
+    .line 262
     invoke-static {v3}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 262
+    .line 263
     invoke-static {v3}, Lorg/jsoup/safety/Whitelist$AttributeKey;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$AttributeKey;
 
     move-result-object v3
@@ -917,17 +911,17 @@
 
     goto :goto_1
 
-    .line 264
-    :cond_2
+    .line 265
+    :cond_1
     iget-object p2, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {p2, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result p2
 
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_2
 
-    .line 265
+    .line 266
     iget-object p2, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -936,13 +930,13 @@
 
     check-cast p1, Ljava/util/Set;
 
-    .line 266
+    .line 267
     invoke-interface {p1, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
     goto :goto_2
 
-    .line 268
-    :cond_3
+    .line 269
+    :cond_2
     iget-object p2, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {p2, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -954,28 +948,19 @@
 .method public addEnforcedAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
     .locals 1
 
-    .line 331
+    .line 332
     invoke-static {p1}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 332
+    .line 333
     invoke-static {p2}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 333
+    .line 334
     invoke-static {p3}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 335
+    .line 336
     invoke-static {p1}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
 
     move-result-object p1
-
-    .line 336
-    iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
-
-    invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
 
     .line 337
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
@@ -983,7 +968,6 @@
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 338
-    :cond_0
     invoke-static {p2}, Lorg/jsoup/safety/Whitelist$AttributeKey;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$AttributeKey;
 
     move-result-object p2
@@ -1000,7 +984,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     .line 342
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->enforcedAttributes:Ljava/util/Map;
@@ -1016,7 +1000,7 @@
     goto :goto_0
 
     .line 344
-    :cond_1
+    :cond_0
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -1149,10 +1133,10 @@
 .method public varargs addTags([Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
     .locals 4
 
-    .line 205
+    .line 207
     invoke-static {p1}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 207
+    .line 209
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -1162,10 +1146,10 @@
 
     aget-object v2, p1, v1
 
-    .line 208
+    .line 210
     invoke-static {v2}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 209
+    .line 211
     iget-object v3, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
 
     invoke-static {v2}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
@@ -1185,17 +1169,17 @@
 .method getEnforcedAttributes(Ljava/lang/String;)Lorg/jsoup/nodes/Attributes;
     .locals 3
 
-    .line 548
+    .line 557
     new-instance v0, Lorg/jsoup/nodes/Attributes;
 
     invoke-direct {v0}, Lorg/jsoup/nodes/Attributes;-><init>()V
 
-    .line 549
+    .line 558
     invoke-static {p1}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
 
     move-result-object p1
 
-    .line 550
+    .line 559
     iget-object v1, p0, Lorg/jsoup/safety/Whitelist;->enforcedAttributes:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -1204,7 +1188,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 551
+    .line 560
     iget-object v1, p0, Lorg/jsoup/safety/Whitelist;->enforcedAttributes:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1213,7 +1197,7 @@
 
     check-cast p1, Ljava/util/Map;
 
-    .line 552
+    .line 561
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -1235,7 +1219,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 553
+    .line 562
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -1256,7 +1240,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v2, v1}, Lorg/jsoup/nodes/Attributes;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Lorg/jsoup/nodes/Attributes;->put(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Attributes;
 
     goto :goto_0
 
@@ -1267,12 +1251,12 @@
 .method protected isSafeAttribute(Ljava/lang/String;Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Attribute;)Z
     .locals 5
 
-    .line 496
+    .line 497
     invoke-static {p1}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
 
     move-result-object v0
 
-    .line 497
+    .line 498
     invoke-virtual {p3}, Lorg/jsoup/nodes/Attribute;->getKey()Ljava/lang/String;
 
     move-result-object v1
@@ -1280,19 +1264,6 @@
     invoke-static {v1}, Lorg/jsoup/safety/Whitelist$AttributeKey;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$AttributeKey;
 
     move-result-object v1
-
-    .line 499
-    iget-object v2, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
-
-    invoke-interface {v2, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x1
-
-    if-eqz v2, :cond_3
 
     .line 500
     iget-object v2, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
@@ -1303,13 +1274,20 @@
 
     check-cast v2, Ljava/util/Set;
 
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    if-eqz v2, :cond_3
+
+    .line 501
     invoke-interface {v2, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 501
+    .line 502
     iget-object p1, p0, Lorg/jsoup/safety/Whitelist;->protocols:Ljava/util/Map;
 
     invoke-interface {p1, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -1318,7 +1296,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 502
+    .line 503
     iget-object p1, p0, Lorg/jsoup/safety/Whitelist;->protocols:Ljava/util/Map;
 
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1327,7 +1305,7 @@
 
     check-cast p1, Ljava/util/Map;
 
-    .line 504
+    .line 505
     invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1355,32 +1333,76 @@
     :cond_2
     return v4
 
+    .line 511
     :cond_3
+    iget-object v1, p0, Lorg/jsoup/safety/Whitelist;->enforcedAttributes:Ljava/util/Map;
+
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map;
+
+    if-eqz v0, :cond_4
+
+    .line 513
+    invoke-virtual {p0, p1}, Lorg/jsoup/safety/Whitelist;->getEnforcedAttributes(Ljava/lang/String;)Lorg/jsoup/nodes/Attributes;
+
+    move-result-object v0
+
+    .line 514
+    invoke-virtual {p3}, Lorg/jsoup/nodes/Attribute;->getKey()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 515
+    invoke-virtual {v0, v1}, Lorg/jsoup/nodes/Attributes;->hasKeyIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    .line 516
+    invoke-virtual {v0, v1}, Lorg/jsoup/nodes/Attributes;->getIgnoreCase(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p3}, Lorg/jsoup/nodes/Attribute;->getValue()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_4
     const-string v0, ":all"
 
-    .line 511
+    .line 520
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-nez p1, :cond_4
+    if-nez p1, :cond_5
 
     invoke-virtual {p0, v0, p2, p3}, Lorg/jsoup/safety/Whitelist;->isSafeAttribute(Ljava/lang/String;Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Attribute;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_5
 
     move v3, v4
 
-    :cond_4
+    :cond_5
     return v3
 .end method
 
 .method protected isSafeTag(Ljava/lang/String;)Z
     .locals 1
 
-    .line 485
+    .line 486
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
 
     invoke-static {p1}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
@@ -1406,13 +1428,13 @@
 .method public varargs removeAttributes(Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
     .locals 5
 
-    .line 289
+    .line 290
     invoke-static {p1}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 290
+    .line 291
     invoke-static {p2}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 291
+    .line 292
     array-length v0, p2
 
     const/4 v1, 0x0
@@ -1427,21 +1449,21 @@
     move v0, v1
 
     :goto_0
-    const-string v2, "No attributes supplied."
+    const-string v2, "No attribute names supplied."
 
     invoke-static {v0, v2}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
 
-    .line 293
+    .line 294
     invoke-static {p1}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
 
     move-result-object v0
 
-    .line 294
+    .line 295
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    .line 295
+    .line 296
     array-length v3, p2
 
     :goto_1
@@ -1449,10 +1471,10 @@
 
     aget-object v4, p2, v1
 
-    .line 296
+    .line 297
     invoke-static {v4}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 297
+    .line 298
     invoke-static {v4}, Lorg/jsoup/safety/Whitelist$AttributeKey;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$AttributeKey;
 
     move-result-object v4
@@ -1463,7 +1485,7 @@
 
     goto :goto_1
 
-    .line 299
+    .line 300
     :cond_1
     iget-object p2, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
 
@@ -1481,7 +1503,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 300
+    .line 301
     iget-object p2, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1490,17 +1512,17 @@
 
     check-cast p2, Ljava/util/Set;
 
-    .line 301
+    .line 302
     invoke-interface {p2, v2}, Ljava/util/Set;->removeAll(Ljava/util/Collection;)Z
 
-    .line 303
+    .line 304
     invoke-interface {p2}, Ljava/util/Set;->isEmpty()Z
 
     move-result p2
 
     if-eqz p2, :cond_2
 
-    .line 304
+    .line 305
     iget-object p2, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {p2, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1508,14 +1530,14 @@
     :cond_2
     const-string p2, ":all"
 
-    .line 306
+    .line 307
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 307
+    .line 308
     iget-object p1, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -1540,7 +1562,7 @@
 
     check-cast p2, Lorg/jsoup/safety/Whitelist$TagName;
 
-    .line 308
+    .line 309
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1549,17 +1571,17 @@
 
     check-cast v0, Ljava/util/Set;
 
-    .line 309
+    .line 310
     invoke-interface {v0, v2}, Ljava/util/Set;->removeAll(Ljava/util/Collection;)Z
 
-    .line 311
+    .line 312
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 312
+    .line 313
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1637,35 +1659,37 @@
 .method public varargs removeProtocols(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
     .locals 5
 
-    .line 452
+    .line 453
     invoke-static {p1}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 453
+    .line 454
     invoke-static {p2}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 454
+    .line 455
     invoke-static {p3}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 456
+    .line 457
     invoke-static {p1}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
 
     move-result-object p1
 
-    .line 457
+    .line 458
     invoke-static {p2}, Lorg/jsoup/safety/Whitelist$AttributeKey;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$AttributeKey;
 
     move-result-object p2
 
-    .line 459
+    .line 462
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->protocols:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    const-string v1, "Cannot remove a protocol that is not set."
 
-    .line 460
+    invoke-static {v0, v1}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
+
+    .line 463
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist;->protocols:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1674,21 +1698,21 @@
 
     check-cast v0, Ljava/util/Map;
 
-    .line 461
+    .line 464
     invoke-interface {v0, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_1
+    invoke-static {v2, v1}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
 
-    .line 462
+    .line 466
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Set;
 
-    .line 463
+    .line 467
     array-length v2, p3
 
     const/4 v3, 0x0
@@ -1698,22 +1722,21 @@
 
     aget-object v4, p3, v3
 
-    .line 464
+    .line 468
     invoke-static {v4}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 465
+    .line 469
     invoke-static {v4}, Lorg/jsoup/safety/Whitelist$Protocol;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$Protocol;
 
     move-result-object v4
 
-    .line 466
     invoke-interface {v1, v4}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 469
+    .line 472
     :cond_0
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
@@ -1721,17 +1744,17 @@
 
     if-eqz p3, :cond_1
 
-    .line 470
+    .line 473
     invoke-interface {v0, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 471
+    .line 474
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 472
+    .line 475
     iget-object p2, p0, Lorg/jsoup/safety/Whitelist;->protocols:Ljava/util/Map;
 
     invoke-interface {p2, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1743,10 +1766,10 @@
 .method public varargs removeTags([Ljava/lang/String;)Lorg/jsoup/safety/Whitelist;
     .locals 4
 
-    .line 221
+    .line 223
     invoke-static {p1}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 223
+    .line 225
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -1756,15 +1779,15 @@
 
     aget-object v2, p1, v1
 
-    .line 224
+    .line 226
     invoke-static {v2}, Lorg/jsoup/helper/Validate;->notEmpty(Ljava/lang/String;)V
 
-    .line 225
+    .line 227
     invoke-static {v2}, Lorg/jsoup/safety/Whitelist$TagName;->valueOf(Ljava/lang/String;)Lorg/jsoup/safety/Whitelist$TagName;
 
     move-result-object v2
 
-    .line 227
+    .line 229
     iget-object v3, p0, Lorg/jsoup/safety/Whitelist;->tagNames:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
@@ -1773,17 +1796,17 @@
 
     if-eqz v3, :cond_0
 
-    .line 228
+    .line 230
     iget-object v3, p0, Lorg/jsoup/safety/Whitelist;->attributes:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 229
+    .line 231
     iget-object v3, p0, Lorg/jsoup/safety/Whitelist;->enforcedAttributes:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 230
+    .line 232
     iget-object v3, p0, Lorg/jsoup/safety/Whitelist;->protocols:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;

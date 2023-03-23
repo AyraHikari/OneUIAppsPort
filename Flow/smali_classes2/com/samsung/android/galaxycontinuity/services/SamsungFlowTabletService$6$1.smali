@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 430
+    .line 479
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6$1;->this$1:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;
 
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/util/MessageDialogResultReceiver;-><init>()V
@@ -34,20 +42,30 @@
 # virtual methods
 .method public notifyResult(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result"
+        }
+    .end annotation
 
     const-string p2, "RegisterFail"
 
-    .line 433
+    .line 482
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 434
+    .line 483
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/activities/MessageDialogActivity;->removeResultReceiver(Lcom/samsung/android/galaxycontinuity/util/MessageDialogResultReceiver;)V
 
-    .line 436
+    .line 485
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6$1;->this$1:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$6;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
@@ -64,6 +82,18 @@
 
 .method public notifyResult(Ljava/lang/String;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result",
+            "checked"
+        }
+    .end annotation
 
     return-void
 .end method

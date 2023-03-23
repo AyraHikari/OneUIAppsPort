@@ -2,6 +2,9 @@
 .super Ljava/lang/Object;
 .source "SupportSQLiteOpenHelper.java"
 
+# interfaces
+.implements Ljava/io/Closeable;
+
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;

@@ -3,14 +3,6 @@
 .source "Font.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/airbnb/lottie/model/Font$Factory;
-    }
-.end annotation
-
-
 # instance fields
 .field private final ascent:F
 
@@ -22,22 +14,22 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;F)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;F)V
     .locals 0
 
-    .line 12
+    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
+    .line 16
     iput-object p1, p0, Lcom/airbnb/lottie/model/Font;->family:Ljava/lang/String;
 
-    .line 14
+    .line 17
     iput-object p2, p0, Lcom/airbnb/lottie/model/Font;->name:Ljava/lang/String;
 
-    .line 15
+    .line 18
     iput-object p3, p0, Lcom/airbnb/lottie/model/Font;->style:Ljava/lang/String;
 
-    .line 16
+    .line 19
     iput p4, p0, Lcom/airbnb/lottie/model/Font;->ascent:F
 
     return-void
@@ -48,7 +40,7 @@
 .method getAscent()F
     .locals 1
 
-    .line 32
+    .line 35
     iget v0, p0, Lcom/airbnb/lottie/model/Font;->ascent:F
 
     return v0
@@ -57,7 +49,7 @@
 .method public getFamily()Ljava/lang/String;
     .locals 1
 
-    .line 20
+    .line 23
     iget-object v0, p0, Lcom/airbnb/lottie/model/Font;->family:Ljava/lang/String;
 
     return-object v0
@@ -66,7 +58,7 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 24
+    .line 27
     iget-object v0, p0, Lcom/airbnb/lottie/model/Font;->name:Ljava/lang/String;
 
     return-object v0
@@ -75,7 +67,7 @@
 .method public getStyle()Ljava/lang/String;
     .locals 1
 
-    .line 28
+    .line 31
     iget-object v0, p0, Lcom/airbnb/lottie/model/Font;->style:Ljava/lang/String;
 
     return-object v0

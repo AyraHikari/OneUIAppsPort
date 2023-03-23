@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 519
+    .line 502
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,22 +45,30 @@
 # virtual methods
 .method public onDeviceFound(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
-    .line 522
+    .line 505
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->mSearchDeviceCDLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz p1, :cond_0
 
-    .line 523
+    .line 506
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->mSearchDeviceCDLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 524
+    .line 507
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     const/4 v0, 0x0

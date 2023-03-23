@@ -1,63 +1,46 @@
 .class final Lcom/google/android/gms/internal/location/zzl;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/google/android/gms/internal/location/zzbj;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/android/gms/internal/location/zzbj<",
-        "Lcom/google/android/gms/internal/location/zzao;",
-        ">;"
-    }
-.end annotation
+.super Lcom/google/android/gms/internal/location/zzw;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # instance fields
-.field private final synthetic zzcc:Lcom/google/android/gms/internal/location/zzk;
+.field final synthetic zza:Landroid/app/PendingIntent;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/internal/location/zzk;)V
+.method constructor <init>(Lcom/google/android/gms/internal/location/zzz;Lcom/google/android/gms/common/api/GoogleApiClient;Landroid/app/PendingIntent;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzl;->zzcc:Lcom/google/android/gms/internal/location/zzk;
+    .line 1
+    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzl;->zza:Landroid/app/PendingIntent;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzw;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final checkConnected()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzl;->zzcc:Lcom/google/android/gms/internal/location/zzk;
-
-    invoke-static {v0}, Lcom/google/android/gms/internal/location/zzk;->zza(Lcom/google/android/gms/internal/location/zzk;)V
-
-    return-void
-.end method
-
-.method public final synthetic getService()Landroid/os/IInterface;
-    .locals 1
+.method protected final bridge synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Landroid/os/DeadObjectException;
+            Landroid/os/RemoteException;
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzl;->zzcc:Lcom/google/android/gms/internal/location/zzk;
+    .line 1
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/location/zzk;->getService()Landroid/os/IInterface;
+    new-instance v0, Lcom/google/android/gms/internal/location/zzx;
 
-    move-result-object v0
+    .line 2
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/location/zzx;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
 
-    check-cast v0, Lcom/google/android/gms/internal/location/zzao;
+    iget-object v1, p0, Lcom/google/android/gms/internal/location/zzl;->zza:Landroid/app/PendingIntent;
 
-    return-object v0
+    .line 3
+    invoke-virtual {p1, v1, v0}, Lcom/google/android/gms/internal/location/zzbe;->zzA(Landroid/app/PendingIntent;Lcom/google/android/gms/internal/location/zzai;)V
+
+    return-void
 .end method

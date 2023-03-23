@@ -43,6 +43,14 @@
 
 .method private constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lookForRtl"
+        }
+    .end annotation
 
     .line 231
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -57,6 +65,18 @@
 # virtual methods
 .method public checkRtl(Ljava/lang/CharSequence;II)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cs",
+            "start",
+            "count"
+        }
+    .end annotation
 
     add-int/2addr p3, p2
 

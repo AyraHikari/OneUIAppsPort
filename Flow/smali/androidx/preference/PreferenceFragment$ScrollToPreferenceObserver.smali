@@ -16,6 +16,13 @@
 
 # instance fields
 .field private final mAdapter:Landroidx/recyclerview/widget/RecyclerView$Adapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/recyclerview/widget/RecyclerView$Adapter<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 .field private final mKey:Ljava/lang/String;
 
@@ -27,20 +34,31 @@
 # direct methods
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView$Adapter;Landroidx/recyclerview/widget/RecyclerView;Landroidx/preference/Preference;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/recyclerview/widget/RecyclerView$Adapter<",
+            "*>;",
+            "Landroidx/recyclerview/widget/RecyclerView;",
+            "Landroidx/preference/Preference;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
-    .line 901
+    .line 933
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;-><init>()V
 
-    .line 902
+    .line 934
     iput-object p1, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mAdapter:Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
-    .line 903
+    .line 935
     iput-object p2, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mList:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 904
+    .line 936
     iput-object p3, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mPreference:Landroidx/preference/Preference;
 
-    .line 905
+    .line 937
     iput-object p4, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mKey:Ljava/lang/String;
 
     return-void
@@ -49,29 +67,29 @@
 .method private scrollToPreference()V
     .locals 2
 
-    .line 909
+    .line 941
     iget-object v0, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mAdapter:Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
     invoke-virtual {v0, p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;)V
 
-    .line 911
+    .line 943
     iget-object v0, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mPreference:Landroidx/preference/Preference;
 
     if-eqz v0, :cond_0
 
-    .line 912
+    .line 944
     iget-object v1, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mAdapter:Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
     check-cast v1, Landroidx/preference/PreferenceGroup$PreferencePositionCallback;
 
-    .line 913
+    .line 945
     invoke-interface {v1, v0}, Landroidx/preference/PreferenceGroup$PreferencePositionCallback;->getPreferenceAdapterPosition(Landroidx/preference/Preference;)I
 
     move-result v0
 
     goto :goto_0
 
-    .line 915
+    .line 947
     :cond_0
     iget-object v0, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mAdapter:Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
@@ -79,7 +97,7 @@
 
     iget-object v1, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mKey:Ljava/lang/String;
 
-    .line 916
+    .line 948
     invoke-interface {v0, v1}, Landroidx/preference/PreferenceGroup$PreferencePositionCallback;->getPreferenceAdapterPosition(Ljava/lang/String;)I
 
     move-result v0
@@ -89,7 +107,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 919
+    .line 951
     iget-object v1, p0, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->mList:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->scrollToPosition(I)V
@@ -103,7 +121,7 @@
 .method public onChanged()V
     .locals 0
 
-    .line 925
+    .line 957
     invoke-direct {p0}, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->scrollToPreference()V
 
     return-void
@@ -112,7 +130,7 @@
 .method public onItemRangeChanged(II)V
     .locals 0
 
-    .line 930
+    .line 962
     invoke-direct {p0}, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->scrollToPreference()V
 
     return-void
@@ -121,7 +139,7 @@
 .method public onItemRangeChanged(IILjava/lang/Object;)V
     .locals 0
 
-    .line 935
+    .line 967
     invoke-direct {p0}, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->scrollToPreference()V
 
     return-void
@@ -130,7 +148,7 @@
 .method public onItemRangeInserted(II)V
     .locals 0
 
-    .line 940
+    .line 972
     invoke-direct {p0}, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->scrollToPreference()V
 
     return-void
@@ -139,7 +157,7 @@
 .method public onItemRangeMoved(III)V
     .locals 0
 
-    .line 950
+    .line 982
     invoke-direct {p0}, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->scrollToPreference()V
 
     return-void
@@ -148,7 +166,7 @@
 .method public onItemRangeRemoved(II)V
     .locals 0
 
-    .line 945
+    .line 977
     invoke-direct {p0}, Landroidx/preference/PreferenceFragment$ScrollToPreferenceObserver;->scrollToPreference()V
 
     return-void

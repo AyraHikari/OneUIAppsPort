@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/widget_empty_margin_horizontal_scaledown">
+            <ImageView android:layout_gravity="center" android:id="@id/widget_empty_icon" android:layout_width="@dimen/widget_empty_icon_size_scaledown" android:layout_height="@dimen/widget_empty_icon_size_scaledown" android:scaleType="fitCenter" />
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error.BlackShadow" android:ellipsize="end" android:gravity="center" android:id="@id/widget_empty_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/widget_empty_text_height_scaledown" android:text="@string/widget_empty_text" android:maxLines="3" android:includeFontPadding="false" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/widget_empty_text_min_size_scaledown" android:autoSizeMaxTextSize="@dimen/widget_empty_text_max_size_scaledown" />
+                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error" android:ellipsize="end" android:gravity="center" android:id="@id/widget_empty_text_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/widget_empty_text_height_scaledown" android:text="@string/widget_empty_text" android:maxLines="3" android:includeFontPadding="false" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/widget_empty_text_min_size_scaledown" android:autoSizeMaxTextSize="@dimen/widget_empty_text_max_size_scaledown" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

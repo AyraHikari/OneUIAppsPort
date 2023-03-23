@@ -128,7 +128,7 @@
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "signing requires private key"
+    const-string/jumbo p2, "signing requires private key"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -151,7 +151,7 @@
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "verification requires public key"
+    const-string/jumbo p2, "verification requires public key"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

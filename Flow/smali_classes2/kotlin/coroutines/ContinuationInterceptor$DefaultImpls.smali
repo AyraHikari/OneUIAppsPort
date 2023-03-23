@@ -14,17 +14,13 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -47,8 +43,9 @@
 
     const-string v0, "operation"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 20
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1, p2}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->fold(Lkotlin/coroutines/CoroutineContext$Element;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
@@ -73,14 +70,14 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 55
     instance-of v0, p1, Lkotlin/coroutines/AbstractCoroutineContextKey;
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     .line 57
     check-cast p1, Lkotlin/coroutines/AbstractCoroutineContextKey;
@@ -93,7 +90,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
@@ -103,42 +100,24 @@
 
     instance-of p1, p0, Lkotlin/coroutines/CoroutineContext$Element;
 
-    if-nez p1, :cond_0
+    if-eqz p1, :cond_0
 
-    goto :goto_0
-
-    :cond_0
     move-object v1, p0
 
-    :cond_1
-    :goto_0
+    :cond_0
     return-object v1
 
     .line 60
-    :cond_2
+    :cond_1
     sget-object v0, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
 
-    if-ne v0, p1, :cond_4
-
-    if-eqz p0, :cond_3
+    if-ne v0, p1, :cond_2
 
     move-object v1, p0
 
     check-cast v1, Lkotlin/coroutines/CoroutineContext$Element;
 
-    goto :goto_1
-
-    :cond_3
-    new-instance p0, Lkotlin/TypeCastException;
-
-    const-string p1, "null cannot be cast to non-null type E"
-
-    invoke-direct {p0, p1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    :cond_4
-    :goto_1
+    :cond_2
     return-object v1
 .end method
 
@@ -156,7 +135,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 67
     instance-of v0, p1, Lkotlin/coroutines/AbstractCoroutineContextKey;
@@ -212,8 +191,9 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 20
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->plus(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
@@ -236,7 +216,7 @@
 
     const-string p0, "continuation"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

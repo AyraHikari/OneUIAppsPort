@@ -47,7 +47,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 288
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -56,7 +55,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 288
     invoke-direct {p0}, Lokhttp3/internal/cache/CacheStrategy$Companion;-><init>()V
 
     return-void
@@ -69,13 +67,13 @@
 
     const-string v0, "response"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "request"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 293
+    .line 1
     invoke-virtual {p1}, Lokhttp3/Response;->code()I
 
     move-result v0
@@ -134,7 +132,7 @@
 
     const/4 v3, 0x0
 
-    .line 313
+    .line 2
     invoke-static {p1, v1, v3, v0, v3}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -175,7 +173,7 @@
 
     return v2
 
-    .line 328
+    .line 3
     :cond_1
     :pswitch_1
     invoke-virtual {p1}, Lokhttp3/Response;->cacheControl()Lokhttp3/CacheControl;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/auto_refresh_on_the_go_setting_0" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/Weather.Style.ActionBar" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Weather.Style.Appbar">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" app:title="@string/auto_refresh_on_the_go" style="@style/Weather.Style.CollapsingToolbar">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/Weather.Style.Toolbar" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" app:title="@string/auto_refresh_on_the_go" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/auto_refresh_on_the_go_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.appcompat.widget.SeslSwitchBar android:id="@id/auto_refresh_on_the_go_switch" android:tag="binding_1" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Custom.SwitchBar" />
+            <androidx.core.widget.NestedScrollView android:id="@id/auto_refresh_on_the_go_switch_description_scrollview" android:background="@color/wx_eula_description_background" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/auto_refresh_on_the_go_setting_contents" />
+                    </FrameLayout>
+                    <FrameLayout android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/auto_refresh_on_the_go_setting_contents_land" />
+                    </FrameLayout>
+                </FrameLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

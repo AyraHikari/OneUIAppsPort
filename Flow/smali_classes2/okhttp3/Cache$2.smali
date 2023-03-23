@@ -56,14 +56,12 @@
         }
     .end annotation
 
-    .line 328
+    .line 331
     iput-object p1, p0, Lokhttp3/Cache$2;->this$0:Lokhttp3/Cache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 329
-    iget-object p1, p0, Lokhttp3/Cache$2;->this$0:Lokhttp3/Cache;
-
+    .line 332
     iget-object p1, p1, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-virtual {p1}, Lokhttp3/internal/cache/DiskLruCache;->snapshots()Ljava/util/Iterator;
@@ -78,9 +76,9 @@
 
 # virtual methods
 .method public hasNext()Z
-    .locals 4
+    .locals 5
 
-    .line 335
+    .line 338
     iget-object v0, p0, Lokhttp3/Cache$2;->nextUrl:Ljava/lang/String;
 
     const/4 v1, 0x1
@@ -92,20 +90,21 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 337
+    .line 340
     iput-boolean v0, p0, Lokhttp3/Cache$2;->canRemove:Z
 
-    .line 338
-    :goto_0
+    .line 341
+    :catch_0
     iget-object v2, p0, Lokhttp3/Cache$2;->delegate:Ljava/util/Iterator;
 
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_4
 
-    .line 339
+    .line 342
+    :try_start_0
     iget-object v2, p0, Lokhttp3/Cache$2;->delegate:Ljava/util/Iterator;
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -113,9 +112,11 @@
     move-result-object v2
 
     check-cast v2, Lokhttp3/internal/cache/DiskLruCache$Snapshot;
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 341
-    :try_start_0
+    .line 343
+    :try_start_1
     invoke-virtual {v2, v0}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->getSource(I)Lokio/Source;
 
     move-result-object v3
@@ -124,41 +125,75 @@
 
     move-result-object v3
 
-    .line 342
+    .line 344
     invoke-interface {v3}, Lokio/BufferedSource;->readUtf8LineStrict()Ljava/lang/String;
 
     move-result-object v3
 
     iput-object v3, p0, Lokhttp3/Cache$2;->nextUrl:Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 348
+    if-eqz v2, :cond_1
+
+    .line 346
+    :try_start_2
     invoke-virtual {v2}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->close()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
+    :cond_1
     return v1
 
     :catchall_0
-    move-exception v0
+    move-exception v3
 
+    .line 342
+    :try_start_3
+    throw v3
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    :catchall_1
+    move-exception v4
+
+    if-eqz v2, :cond_3
+
+    if-eqz v3, :cond_2
+
+    .line 346
+    :try_start_4
     invoke-virtual {v2}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->close()V
-
-    throw v0
-
-    :catch_0
-    invoke-virtual {v2}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->close()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     goto :goto_0
 
-    :cond_1
+    :catchall_2
+    move-exception v2
+
+    :try_start_5
+    invoke-virtual {v3, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {v2}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->close()V
+
+    :cond_3
+    :goto_0
+    throw v4
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
+
+    :cond_4
     return v0
 .end method
 
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 328
+    .line 331
     invoke-virtual {p0}, Lokhttp3/Cache$2;->next()Ljava/lang/String;
 
     move-result-object v0

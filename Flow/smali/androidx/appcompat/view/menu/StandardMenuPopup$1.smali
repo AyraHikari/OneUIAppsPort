@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/view/menu/StandardMenuPopup;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 72
+    .line 80
     iput-object p1, p0, Landroidx/appcompat/view/menu/StandardMenuPopup$1;->this$0:Landroidx/appcompat/view/menu/StandardMenuPopup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public onGlobalLayout()V
     .locals 1
 
-    .line 78
+    .line 86
     iget-object v0, p0, Landroidx/appcompat/view/menu/StandardMenuPopup$1;->this$0:Landroidx/appcompat/view/menu/StandardMenuPopup;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/StandardMenuPopup;->isShowing()Z
@@ -47,14 +55,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 79
+    .line 87
     iget-object v0, p0, Landroidx/appcompat/view/menu/StandardMenuPopup$1;->this$0:Landroidx/appcompat/view/menu/StandardMenuPopup;
 
     iget-object v0, v0, Landroidx/appcompat/view/menu/StandardMenuPopup;->mShownAnchorView:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
-    .line 80
+    .line 88
     invoke-virtual {v0}, Landroid/view/View;->isShown()Z
 
     move-result v0
@@ -63,7 +71,7 @@
 
     goto :goto_0
 
-    .line 84
+    .line 92
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/view/menu/StandardMenuPopup$1;->this$0:Landroidx/appcompat/view/menu/StandardMenuPopup;
 
@@ -73,7 +81,7 @@
 
     goto :goto_1
 
-    .line 81
+    .line 89
     :cond_1
     :goto_0
     iget-object v0, p0, Landroidx/appcompat/view/menu/StandardMenuPopup$1;->this$0:Landroidx/appcompat/view/menu/StandardMenuPopup;

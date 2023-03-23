@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
-    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="m3_sys_typescale_body_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_body_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_body_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_display_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_display_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_display_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_headline_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_headline_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_headline_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_label_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_label_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_label_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_title_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_title_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_title_small_text_all_caps">false</bool>
     <bool name="sesl_action_bar_text_item_mode">false</bool>
     <bool name="sesl_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="sesl_config_desktop_mode">false</bool>
     <bool name="sesl_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <bool name="sesl_material_desktop_mode">false</bool>
     <bool name="sesl_seekbar_sliding_animation">true</bool>
     <bool name="split_mode_enabled">false</bool>
 </resources>

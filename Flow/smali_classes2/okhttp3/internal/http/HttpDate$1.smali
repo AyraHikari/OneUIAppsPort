@@ -1,4 +1,4 @@
-.class final Lokhttp3/internal/http/HttpDate$1;
+.class Lokhttp3/internal/http/HttpDate$1;
 .super Ljava/lang/ThreadLocal;
 .source "HttpDate.java"
 

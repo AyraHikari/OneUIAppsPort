@@ -25,6 +25,14 @@
 # direct methods
 .method constructor <init>(Landroid/app/Activity;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     .line 101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

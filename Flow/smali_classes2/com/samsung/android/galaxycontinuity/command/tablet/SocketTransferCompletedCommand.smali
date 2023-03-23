@@ -16,26 +16,36 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/content/Context;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "args"
+        }
+    .end annotation
 
-    .line 25
+    .line 26
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/command/CommandBase;-><init>(Landroid/content/Context;[Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 
-    .line 19
+    .line 20
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/command/tablet/SocketTransferCompletedCommand;->isSuccess:Z
 
-    .line 22
+    .line 23
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/command/tablet/SocketTransferCompletedCommand;->isSend:Z
 
     if-eqz p2, :cond_0
 
-    .line 27
+    .line 28
     aget-object v0, p2, p1
 
     if-eqz v0, :cond_0
 
-    .line 28
+    .line 29
     aget-object p1, p2, p1
 
     check-cast p1, Ljava/lang/Boolean;
@@ -51,12 +61,12 @@
 
     const/4 p1, 0x1
 
-    .line 30
+    .line 31
     aget-object v0, p2, p1
 
     if-eqz v0, :cond_1
 
-    .line 31
+    .line 32
     aget-object p1, p2, p1
 
     check-cast p1, Ljava/lang/Boolean;
@@ -72,12 +82,12 @@
 
     const/4 p1, 0x2
 
-    .line 33
+    .line 34
     aget-object v0, p2, p1
 
     if-eqz v0, :cond_2
 
-    .line 34
+    .line 35
     aget-object p1, p2, p1
 
     check-cast p1, Ljava/lang/String;
@@ -89,12 +99,12 @@
 
     const/4 p1, 0x3
 
-    .line 36
+    .line 37
     aget-object v0, p2, p1
 
     if-eqz v0, :cond_3
 
-    .line 37
+    .line 38
     aget-object p1, p2, p1
 
     check-cast p1, Ljava/lang/Integer;
@@ -112,7 +122,7 @@
 .method private createFlowMessage()Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
     .locals 7
 
-    .line 52
+    .line 54
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     const/4 v1, 0x1
@@ -137,7 +147,7 @@
 
     invoke-direct {v0, v1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;-><init>([Ljava/lang/Object;)V
 
-    .line 53
+    .line 55
     new-instance v1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     const-string v2, "RecvSocketTransferCompletedCommand"
@@ -152,24 +162,29 @@
 .method public run()V
     .locals 2
 
-    .line 43
+    const-string v0, "Run SocketTransferCompletedCommand"
+
+    .line 44
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
+    .line 45
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/command/tablet/SocketTransferCompletedCommand;->createFlowMessage()Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     move-result-object v0
 
-    .line 45
+    .line 47
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 46
+    .line 48
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/command/tablet/SocketTransferCompletedCommand;->queueMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
 
     goto :goto_0
 
-    .line 48
+    .line 50
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager;
 

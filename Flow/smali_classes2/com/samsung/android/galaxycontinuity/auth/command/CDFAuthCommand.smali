@@ -34,6 +34,18 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedData",
+            "device",
+            "notiWiFiPortNumber"
+        }
+    .end annotation
 
     const-string v0, "deviceType"
 
@@ -292,7 +304,7 @@
 .method private createErrorResponseData()V
     .locals 4
 
-    .line 393
+    .line 389
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthResult:I
 
     const-string v1, "AuthCDFResponse"
@@ -307,7 +319,7 @@
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
-    .line 394
+    .line 390
     invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
 
     move-result v3
@@ -322,12 +334,12 @@
 
     move-result-object v0
 
-    .line 395
+    .line 391
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;->build()Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;
 
     move-result-object v0
 
-    .line 397
+    .line 393
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->toJson()Ljava/lang/String;
 
     move-result-object v0
@@ -345,15 +357,23 @@
 
 .method private updateFidoUsedIfWindowsAppUpdated(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
-    .line 412
+    .line 408
     iget-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->FIDOUsed:Z
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 413
+    .line 409
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isWindows()Z
 
     move-result v0
@@ -372,10 +392,10 @@
 
     const/4 v0, 0x0
 
-    .line 414
+    .line 410
     iput-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->FIDOUsed:Z
 
-    .line 415
+    .line 411
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v0
@@ -388,8 +408,16 @@
 
 .method private waitTillDeviceUnlockedAndCheckError(Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cdfAuthRequestBody"
+        }
+    .end annotation
 
-    .line 376
+    .line 372
     :try_start_0
     new-instance p1, Ljava/util/concurrent/CountDownLatch;
 
@@ -399,7 +427,7 @@
 
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mUnlockCDLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 377
+    .line 373
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mUnlockCDLatch:Ljava/util/concurrent/CountDownLatch;
 
     const-wide/16 v1, 0x1e
@@ -412,18 +440,18 @@
 
     if-nez p1, :cond_0
 
-    .line 378
+    .line 374
     iput v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthResult:I
 
     const p1, -0x7ffefffd    # -9.184E-41f
 
-    .line 379
+    .line 375
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthErrorCode:I
 
-    .line 380
+    .line 376
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->createErrorResponseData()V
 
-    .line 382
+    .line 378
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object p1
@@ -437,7 +465,7 @@
     :catch_0
     move-exception p1
 
-    .line 387
+    .line 383
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_0
@@ -451,12 +479,12 @@
 .method public cancelAuthentication()V
     .locals 1
 
-    .line 421
+    .line 417
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuth:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator;
 
     if-eqz v0, :cond_0
 
-    .line 422
+    .line 418
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuth:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator;->cancelAuthentication()V
@@ -464,15 +492,15 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 425
+    .line 421
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mIsCanceled:Z
 
-    .line 427
+    .line 423
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mUnlockCDLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_1
 
-    .line 428
+    .line 424
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mUnlockCDLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -486,7 +514,7 @@
 
     move-object/from16 v1, p0
 
-    const-string v0, "started"
+    const-string/jumbo v0, "started"
 
     .line 128
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -799,93 +827,17 @@
     iput-object v0, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->DeviceName:Ljava/lang/String;
 
     .line 196
-    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
-
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_b
-
-    .line 197
     iget-boolean v0, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isSamsungPassUsed:Z
 
-    if-eqz v0, :cond_a
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;
-
-    move-result-object v0
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v8
-
-    invoke-virtual {v0, v8}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->isSamsungPassSupported(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_a
-
-    move v0, v6
-
-    goto :goto_3
-
-    :cond_a
-    move v0, v2
-
-    :goto_3
     iput-boolean v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mIsUseSamsungPass:Z
 
-    goto :goto_5
-
-    .line 199
-    :cond_b
-    iget-boolean v0, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isSamsungPassUsed:Z
-
-    if-eqz v0, :cond_c
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;
-
-    move-result-object v0
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
-
-    move-result-object v8
-
-    invoke-virtual {v0, v8}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->isSamsungPassSupported(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_c
-
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/SamsungPassServiceManager;->isSamsungPassAvailable()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_c
-
-    move v0, v6
-
-    goto :goto_4
-
-    :cond_c
-    move v0, v2
-
-    :goto_4
-    iput-boolean v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mIsUseSamsungPass:Z
-
-    .line 202
-    :goto_5
+    .line 198
     iput-boolean v6, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mIsAuthenticating:Z
 
-    .line 204
+    .line 200
     invoke-direct {v1, v7}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->updateFidoUsedIfWindowsAppUpdated(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)V
 
-    .line 206
+    .line 202
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     iget-object v8, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->description:Ljava/lang/String;
@@ -900,32 +852,32 @@
 
     const-string v0, "getProperAuthenticator returned"
 
-    .line 208
+    .line 204
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 211
+    .line 207
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
 
     move-result v0
 
-    if-nez v0, :cond_d
+    if-nez v0, :cond_a
 
-    .line 212
+    .line 208
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isDeviceLocked()Z
 
     move-result v0
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_a
 
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuth:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator;
 
     instance-of v0, v0, Lcom/samsung/android/galaxycontinuity/auth/authenticator/SimpleAuthenticator;
 
-    if-nez v0, :cond_d
+    if-nez v0, :cond_a
 
-    .line 213
+    .line 209
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v0
@@ -938,18 +890,18 @@
 
     move v0, v6
 
-    goto :goto_6
+    goto :goto_3
 
-    :cond_d
+    :cond_a
     move v0, v2
 
-    .line 217
-    :goto_6
+    .line 213
+    :goto_3
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isDeviceLocked()Z
 
     move-result v8
 
-    if-eqz v8, :cond_e
+    if-eqz v8, :cond_b
 
     iget-object v8, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
@@ -957,16 +909,16 @@
 
     move-result v8
 
-    if-eqz v8, :cond_e
+    if-eqz v8, :cond_b
 
-    .line 218
+    .line 214
     iget-object v8, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-direct {v1, v8}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->waitTillDeviceUnlockedAndCheckError(Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_e
+    if-eqz v8, :cond_b
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -974,23 +926,23 @@
 
     return-object v0
 
-    :cond_e
-    if-eqz v0, :cond_f
+    :cond_b
+    if-eqz v0, :cond_c
 
-    .line 222
+    .line 218
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->deleteAuthRequestNoti()V
 
-    .line 225
-    :cond_f
+    .line 221
+    :cond_c
     iget-boolean v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mIsCanceled:Z
 
-    if-eqz v0, :cond_10
+    if-eqz v0, :cond_d
 
-    .line 226
+    .line 222
     invoke-static {v6, v5}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->newBuilder(ILjava/lang/String;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;
 
     move-result-object v0
@@ -1001,7 +953,7 @@
 
     iget-object v5, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
-    .line 227
+    .line 223
     invoke-virtual {v5}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
 
     move-result v5
@@ -1016,12 +968,12 @@
 
     move-result-object v0
 
-    .line 228
+    .line 224
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;->build()Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;
 
     move-result-object v0
 
-    .line 230
+    .line 226
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->toJson()Ljava/lang/String;
 
     move-result-object v0
@@ -1032,34 +984,34 @@
 
     iput-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mResponseByteArray:[B
 
-    .line 231
+    .line 227
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     return-object v0
 
-    .line 235
-    :cond_10
+    .line 231
+    :cond_d
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mDeviceID:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/samsung/android/authfw/pass/sdk/util/StringUtils;->isEmpty(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_11
+    if-eqz v0, :cond_e
 
-    .line 236
+    .line 232
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mSocket:Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;
 
     move-result-object v0
 
-    goto :goto_7
+    goto :goto_4
 
-    .line 239
-    :cond_11
+    .line 235
+    :cond_e
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;
 
     move-result-object v0
@@ -1070,22 +1022,22 @@
 
     invoke-virtual {v0, v8, v9}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->replaceKeyName(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 241
+    .line 237
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mDeviceID:Ljava/lang/String;
 
-    :goto_7
+    :goto_4
     move-object v8, v0
 
-    .line 244
+    .line 240
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
 
     move-result v0
 
-    if-eqz v0, :cond_12
+    if-eqz v0, :cond_f
 
-    .line 246
+    .line 242
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;
 
@@ -1095,86 +1047,86 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_8
+    goto :goto_5
 
     :catch_0
     move-exception v0
 
-    .line 248
+    .line 244
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 255
-    :cond_12
-    :goto_8
+    .line 251
+    :cond_f
+    :goto_5
     iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuth:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator;->executeAuthentication()Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
     move-result-object v0
 
-    .line 256
+    .line 252
     iput-boolean v2, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mIsAuthenticating:Z
 
-    .line 258
+    .line 254
     sget-object v9, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_CANCELED:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    if-ne v0, v9, :cond_13
+    if-ne v0, v9, :cond_10
 
     const/4 v0, 0x2
 
-    .line 259
+    .line 255
     iput v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthResult:I
 
-    .line 260
+    .line 256
     iput v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthErrorCode:I
 
-    .line 261
+    .line 257
     invoke-direct/range {p0 .. p0}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->createErrorResponseData()V
 
-    .line 262
+    .line 258
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     return-object v0
 
-    .line 265
-    :cond_13
+    .line 261
+    :cond_10
     sget-object v9, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_NONE:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    if-ne v0, v9, :cond_14
+    if-ne v0, v9, :cond_11
 
     const/4 v0, 0x3
 
-    .line 266
+    .line 262
     iput v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthResult:I
 
     return-object v3
 
-    .line 270
-    :cond_14
+    .line 266
+    :cond_11
     sget-object v9, Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;->AUTH_RESULT_SUCCESS:Lcom/samsung/android/galaxycontinuity/auth/authenticator/Authenticator$AuthResult;
 
-    if-eq v0, v9, :cond_15
+    if-eq v0, v9, :cond_12
 
-    .line 271
+    .line 267
     iput v6, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthResult:I
 
-    .line 272
+    .line 268
     iput v6, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthErrorCode:I
 
-    .line 273
+    .line 269
     invoke-direct/range {p0 .. p0}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->createErrorResponseData()V
 
-    .line 275
+    .line 271
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     return-object v0
 
-    .line 280
-    :cond_15
+    .line 276
+    :cond_12
     :try_start_1
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;
 
@@ -1184,7 +1136,7 @@
 
     move-result-object v0
 
-    .line 281
+    .line 277
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -1193,11 +1145,15 @@
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v9
+
     invoke-static {v0, v2}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object v10
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
 
     invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1205,7 +1161,7 @@
 
     invoke-static {v9}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
 
-    .line 282
+    .line 278
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;
 
     move-result-object v9
@@ -1214,7 +1170,7 @@
 
     move-result-object v9
 
-    .line 283
+    .line 279
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -1223,11 +1179,48 @@
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v10
+
     invoke-static {v9, v2}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object v11
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
+
+    .line 281
+    iget-object v10, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
+
+    invoke-virtual {v10}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getDkNonce()Ljava/lang/String;
+
+    move-result-object v10
+
+    .line 282
+    invoke-static {v10, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    move-result-object v11
+
+    .line 283
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v13, "DkNonce : "
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v10
 
     invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1238,45 +1231,16 @@
     .line 285
     iget-object v10, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
-    invoke-virtual {v10}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getDkNonce()Ljava/lang/String;
+    invoke-virtual {v10}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getSkNonce()Ljava/lang/String;
 
     move-result-object v10
 
     .line 286
     invoke-static {v10, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
-    move-result-object v11
-
-    .line 287
-    new-instance v12, Ljava/lang/StringBuilder;
-
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v13, "DkNonce : "
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v12, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
-
-    .line 289
-    iget-object v10, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
-
-    invoke-virtual {v10}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getSkNonce()Ljava/lang/String;
-
-    move-result-object v10
-
-    .line 290
-    invoke-static {v10, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
-
     move-result-object v12
 
-    .line 291
+    .line 287
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -1285,27 +1249,31 @@
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v13
+
     invoke-virtual {v13, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v10
 
     invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
 
-    .line 293
+    .line 289
     iget-object v10, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-virtual {v10}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getSrvNonce()Ljava/lang/String;
 
     move-result-object v10
 
-    .line 294
+    .line 290
     invoke-static {v10, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v13
 
-    .line 295
+    .line 291
     new-instance v14, Ljava/lang/StringBuilder;
 
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
@@ -1314,27 +1282,31 @@
 
     invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v14
+
     invoke-virtual {v14, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v10
 
     invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
 
-    .line 297
+    .line 293
     iget-object v10, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-virtual {v10}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getSrvHMAC()Ljava/lang/String;
 
     move-result-object v10
 
-    .line 298
+    .line 294
     invoke-static {v10, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v14
 
-    .line 299
+    .line 295
     new-instance v15, Ljava/lang/StringBuilder;
 
     invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
@@ -1343,9 +1315,13 @@
 
     invoke-virtual {v15, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v15, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1357,23 +1333,23 @@
 
     const/16 v10, 0x20
 
-    .line 302
+    .line 298
     invoke-static {v13, v2, v4, v2, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 303
+    .line 299
     invoke-static {v11, v2, v4, v10, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     const/16 v13, 0x40
 
-    .line 304
+    .line 300
     invoke-static {v12, v2, v4, v13, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 306
+    .line 302
     invoke-static {v0, v4}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->genHMACSHA256([B[B)[B
 
     move-result-object v4
 
-    .line 308
+    .line 304
     new-instance v15, Ljava/lang/StringBuilder;
 
     invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
@@ -1382,31 +1358,35 @@
 
     invoke-virtual {v15, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v10
+
     invoke-static {v4, v2}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v10, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v10
 
-    invoke-virtual {v15, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v10
 
     invoke-static {v10}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
 
-    if-eqz v4, :cond_1a
+    if-eqz v4, :cond_17
 
-    .line 310
+    .line 306
     invoke-static {v4, v14}, Ljava/util/Arrays;->equals([B[B)Z
 
     move-result v4
 
-    if-nez v4, :cond_16
+    if-nez v4, :cond_13
 
-    goto/16 :goto_b
+    goto/16 :goto_8
 
-    .line 318
-    :cond_16
+    .line 314
+    :cond_13
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v4
@@ -1419,7 +1399,7 @@
 
     invoke-virtual {v4, v10}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setAuthSuccessAddress(Ljava/lang/String;)V
 
-    .line 319
+    .line 315
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mSocket:Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
 
     invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;
@@ -1428,75 +1408,75 @@
 
     iput-object v4, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->lastAddress:Ljava/lang/String;
 
-    .line 320
+    .line 316
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mSocket:Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
 
     invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->isBluetoothSocket()Z
 
     move-result v4
 
-    if-eqz v4, :cond_17
+    if-eqz v4, :cond_14
 
-    .line 321
+    .line 317
     sget-object v4, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$CONNECTIONTYPE;->BLUETOOTH:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$CONNECTIONTYPE;
 
     iput-object v4, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->lastConnectionType:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$CONNECTIONTYPE;
 
-    goto :goto_9
+    goto :goto_6
 
-    .line 323
-    :cond_17
+    .line 319
+    :cond_14
     sget-object v4, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$CONNECTIONTYPE;->WIFI:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$CONNECTIONTYPE;
 
     iput-object v4, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->lastConnectionType:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$CONNECTIONTYPE;
 
-    .line 326
-    :goto_9
+    .line 322
+    :goto_6
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
 
     move-result v4
 
-    if-eqz v4, :cond_18
+    if-eqz v4, :cond_15
 
-    .line 327
+    .line 323
     iput-boolean v6, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->IsEnrollComplted:Z
 
-    .line 328
+    .line 324
     iget v4, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mVersion:I
 
     iput v4, v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->ProtocolVersion:I
 
-    .line 329
+    .line 325
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v4
 
     invoke-virtual {v4, v7}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->insert(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)J
 
-    goto :goto_a
+    goto :goto_7
 
-    .line 331
-    :cond_18
+    .line 327
+    :cond_15
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v4
 
     invoke-virtual {v4, v7}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->update(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)Z
 
-    .line 335
-    :goto_a
+    .line 331
+    :goto_7
     invoke-static {v9, v11}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->genHMACSHA256([B[B)[B
 
     move-result-object v4
 
-    .line 336
+    .line 332
     invoke-static {v4, v2}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 337
+    .line 333
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -1505,7 +1485,11 @@
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v9
+
     invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
 
     invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1517,13 +1501,13 @@
 
     const/16 v10, 0x20
 
-    .line 340
+    .line 336
     invoke-static {v4, v2, v9, v2, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 341
+    .line 337
     invoke-static {v12, v2, v9, v10, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 343
+    .line 339
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1532,11 +1516,15 @@
 
     invoke-virtual {v4, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-static {v9, v2}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object v10
 
     invoke-virtual {v4, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1544,17 +1532,17 @@
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
 
-    .line 345
+    .line 341
     invoke-static {v0, v9}, Lcom/samsung/android/galaxycontinuity/auth/util/EncryptionUtil;->genHMACSHA256([B[B)[B
 
     move-result-object v0
 
-    .line 346
+    .line 342
     invoke-static {v0, v2}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 347
+    .line 343
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1563,7 +1551,11 @@
 
     invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1571,14 +1563,14 @@
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->cr(Ljava/lang/String;)V
 
-    .line 349
+    .line 345
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object v4
 
     invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->clearSessionKeyInfo()V
 
-    .line 350
+    .line 346
     iget-object v4, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getSessionKey()Ljava/lang/String;
@@ -1589,16 +1581,16 @@
 
     move-result v4
 
-    if-nez v4, :cond_19
+    if-nez v4, :cond_16
 
-    .line 351
+    .line 347
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object v4
 
     invoke-virtual {v4}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->generatePhoneKey()V
 
-    .line 353
+    .line 349
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object v4
@@ -1611,7 +1603,7 @@
 
     invoke-virtual {v4, v8, v9}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->setTabKey(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 355
+    .line 351
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object v4
@@ -1624,11 +1616,11 @@
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->createSessionKey(Ljava/lang/String;)V
 
-    .line 358
-    :cond_19
+    .line 354
+    :cond_16
     iput v2, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthResult:I
 
-    .line 359
+    .line 355
     invoke-static {v2, v5}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->newBuilder(ILjava/lang/String;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;
 
     move-result-object v2
@@ -1637,7 +1629,7 @@
 
     iget-object v5, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
-    .line 360
+    .line 356
     invoke-virtual {v5}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
 
     move-result v19
@@ -1674,7 +1666,7 @@
 
     move-result-object v0
 
-    .line 362
+    .line 358
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->toJson()Ljava/lang/String;
 
     move-result-object v0
@@ -1687,32 +1679,32 @@
 
     iput-object v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mResponseByteArray:[B
 
-    .line 364
+    .line 360
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     return-object v0
 
-    :cond_1a
-    :goto_b
+    :cond_17
+    :goto_8
     const-string v0, "Verifying HMAC is failed!!!"
 
-    .line 311
+    .line 307
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 312
+    .line 308
     iput v6, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthResult:I
 
     const v0, -0x7ffefffc
 
-    .line 313
+    .line 309
     iput v0, v1, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mAuthErrorCode:I
 
-    .line 314
+    .line 310
     invoke-direct/range {p0 .. p0}, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->createErrorResponseData()V
 
-    .line 316
+    .line 312
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -1724,12 +1716,12 @@
     :catch_1
     move-exception v0
 
-    .line 367
+    .line 363
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const-string v0, "REQUEST_ENROLL_CREATE_PIN_TAG ended"
 
-    .line 369
+    .line 365
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-object v3
@@ -1769,7 +1761,7 @@
 .method public getDeviceID()Ljava/lang/String;
     .locals 1
 
-    .line 405
+    .line 401
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mDeviceID:Ljava/lang/String;
 
     return-object v0
@@ -1778,7 +1770,7 @@
 .method public isEnrollRequest()Z
     .locals 1
 
-    .line 401
+    .line 397
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/CDFAuthCommand;->mCDFAuthRequestBody:Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->getIsEnrollRequest()Z
@@ -1790,6 +1782,14 @@
 
 .method public setIsCanceled(Ljava/lang/Boolean;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isCanceled"
+        }
+    .end annotation
 
     .line 124
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z

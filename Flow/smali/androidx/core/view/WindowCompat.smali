@@ -3,6 +3,16 @@
 .source "WindowCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/view/WindowCompat$Api28Impl;,
+        Landroidx/core/view/WindowCompat$Api30Impl;,
+        Landroidx/core/view/WindowCompat$Api16Impl;
+    }
+.end annotation
+
+
 # static fields
 .field public static final FEATURE_ACTION_BAR:I = 0x8
 
@@ -15,14 +25,46 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 65
+    .line 69
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method public static getInsetsController(Landroid/view/Window;Landroid/view/View;)Landroidx/core/view/WindowInsetsControllerCompat;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "window",
+            "view"
+        }
+    .end annotation
+
+    .line 135
+    new-instance v0, Landroidx/core/view/WindowInsetsControllerCompat;
+
+    invoke-direct {v0, p0, p1}, Landroidx/core/view/WindowInsetsControllerCompat;-><init>(Landroid/view/Window;Landroid/view/View;)V
+
+    return-object v0
+.end method
+
 .method public static requireViewById(Landroid/view/Window;I)Landroid/view/View;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "window",
+            "id"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -33,21 +75,23 @@
         }
     .end annotation
 
-    .line 85
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 89
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_0
 
-    .line 86
-    invoke-virtual {p0, p1}, Landroid/view/Window;->requireViewById(I)Landroid/view/View;
+    .line 90
+    invoke-static {p0, p1}, Landroidx/core/view/WindowCompat$Api28Impl;->requireViewById(Landroid/view/Window;I)Ljava/lang/Object;
 
     move-result-object p0
 
+    check-cast p0, Landroid/view/View;
+
     return-object p0
 
-    .line 89
+    .line 93
     :cond_0
     invoke-virtual {p0, p1}, Landroid/view/Window;->findViewById(I)Landroid/view/View;
 
@@ -57,7 +101,7 @@
 
     return-object p0
 
-    .line 91
+    .line 95
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -66,4 +110,45 @@
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
+.end method
+
+.method public static setDecorFitsSystemWindows(Landroid/view/Window;Z)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "window",
+            "decorFitsSystemWindows"
+        }
+    .end annotation
+
+    .line 118
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_0
+
+    .line 119
+    invoke-static {p0, p1}, Landroidx/core/view/WindowCompat$Api30Impl;->setDecorFitsSystemWindows(Landroid/view/Window;Z)V
+
+    goto :goto_0
+
+    .line 120
+    :cond_0
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x10
+
+    if-lt v0, v1, :cond_1
+
+    .line 121
+    invoke-static {p0, p1}, Landroidx/core/view/WindowCompat$Api16Impl;->setDecorFitsSystemWindows(Landroid/view/Window;Z)V
+
+    :cond_1
+    :goto_0
+    return-void
 .end method

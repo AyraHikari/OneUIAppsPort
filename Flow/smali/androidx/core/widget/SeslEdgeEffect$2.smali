@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Landroidx/core/widget/SeslEdgeEffect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 291
+    .line 330
     iput-object p1, p0, Landroidx/core/widget/SeslEdgeEffect$2;->this$0:Landroidx/core/widget/SeslEdgeEffect;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +46,14 @@
 .method public run()V
     .locals 4
 
-    .line 294
+    .line 333
     iget-object v0, p0, Landroidx/core/widget/SeslEdgeEffect$2;->this$0:Landroidx/core/widget/SeslEdgeEffect;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Landroidx/core/widget/SeslEdgeEffect;->access$002(Landroidx/core/widget/SeslEdgeEffect;Z)Z
 
-    .line 295
+    .line 334
     iget-object v0, p0, Landroidx/core/widget/SeslEdgeEffect$2;->this$0:Landroidx/core/widget/SeslEdgeEffect;
 
     invoke-static {v0}, Landroidx/core/widget/SeslEdgeEffect;->access$100(Landroidx/core/widget/SeslEdgeEffect;)F
@@ -60,7 +68,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroidx/core/widget/SeslEdgeEffect;->onPull(FF)V
 
-    .line 296
+    .line 335
     iget-object v0, p0, Landroidx/core/widget/SeslEdgeEffect$2;->this$0:Landroidx/core/widget/SeslEdgeEffect;
 
     invoke-static {v0}, Landroidx/core/widget/SeslEdgeEffect;->access$300(Landroidx/core/widget/SeslEdgeEffect;)Landroid/os/Handler;

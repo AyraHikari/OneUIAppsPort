@@ -1,11 +1,14 @@
 .class Landroidx/fragment/app/FragmentTransitionCompat21$4;
-.super Landroid/transition/Transition$EpicenterCallback;
+.super Ljava/lang/Object;
 .source "FragmentTransitionCompat21.java"
+
+# interfaces
+.implements Landroid/transition/Transition$TransitionListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/FragmentTransitionCompat21;->setEpicenter(Ljava/lang/Object;Landroid/graphics/Rect;)V
+    value = Landroidx/fragment/app/FragmentTransitionCompat21;->setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Landroidx/core/os/CancellationSignal;Ljava/lang/Runnable;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,50 +20,106 @@
 # instance fields
 .field final synthetic this$0:Landroidx/fragment/app/FragmentTransitionCompat21;
 
-.field final synthetic val$epicenter:Landroid/graphics/Rect;
+.field final synthetic val$transitionCompleteRunnable:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/FragmentTransitionCompat21;Landroid/graphics/Rect;)V
+.method constructor <init>(Landroidx/fragment/app/FragmentTransitionCompat21;Ljava/lang/Runnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$transitionCompleteRunnable"
+        }
+    .end annotation
 
-    .line 306
+    .line 271
     iput-object p1, p0, Landroidx/fragment/app/FragmentTransitionCompat21$4;->this$0:Landroidx/fragment/app/FragmentTransitionCompat21;
 
-    iput-object p2, p0, Landroidx/fragment/app/FragmentTransitionCompat21$4;->val$epicenter:Landroid/graphics/Rect;
+    iput-object p2, p0, Landroidx/fragment/app/FragmentTransitionCompat21$4;->val$transitionCompleteRunnable:Ljava/lang/Runnable;
 
-    invoke-direct {p0}, Landroid/transition/Transition$EpicenterCallback;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onGetEpicenter(Landroid/transition/Transition;)Landroid/graphics/Rect;
+.method public onTransitionCancel(Landroid/transition/Transition;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "transition"
+        }
+    .end annotation
 
-    .line 309
-    iget-object p1, p0, Landroidx/fragment/app/FragmentTransitionCompat21$4;->val$epicenter:Landroid/graphics/Rect;
+    return-void
+.end method
 
-    if-eqz p1, :cond_1
+.method public onTransitionEnd(Landroid/transition/Transition;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "transition"
+        }
+    .end annotation
 
-    invoke-virtual {p1}, Landroid/graphics/Rect;->isEmpty()Z
+    .line 277
+    iget-object p1, p0, Landroidx/fragment/app/FragmentTransitionCompat21$4;->val$transitionCompleteRunnable:Ljava/lang/Runnable;
 
-    move-result p1
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    if-eqz p1, :cond_0
+    return-void
+.end method
 
-    goto :goto_0
+.method public onTransitionPause(Landroid/transition/Transition;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "transition"
+        }
+    .end annotation
 
-    .line 312
-    :cond_0
-    iget-object p1, p0, Landroidx/fragment/app/FragmentTransitionCompat21$4;->val$epicenter:Landroid/graphics/Rect;
+    return-void
+.end method
 
-    return-object p1
+.method public onTransitionResume(Landroid/transition/Transition;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "transition"
+        }
+    .end annotation
 
-    :cond_1
-    :goto_0
-    const/4 p1, 0x0
+    return-void
+.end method
 
-    return-object p1
+.method public onTransitionStart(Landroid/transition/Transition;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "transition"
+        }
+    .end annotation
+
+    return-void
 .end method

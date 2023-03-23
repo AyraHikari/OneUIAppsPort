@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Ní féidir níos mó ná %d mír a roghnú.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d mhír a roghnú.</item>
+        <item quantity="two">Ní féidir níos mó ná %d mhír a roghnú.</item>
+        <item quantity="few">Ní féidir níos mó ná %d mhír a roghnú.</item>
+        <item quantity="many">Ní féidir níos mó ná %d mír a roghnú.</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Ní féidir %d comhad a bhogadh chuig an mBruscar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir %d chomhad a bhogadh chuig an mBruscar</item>
+        <item quantity="two">Ní féidir %d chomhad a bhogadh chuig an mBruscar</item>
+        <item quantity="few">Ní féidir %d chomhad a bhogadh chuig an mBruscar</item>
+        <item quantity="many">Ní féidir %d gcomhad a bhogadh chuig an mBruscar</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Ní féidir %d fillteán a bhogadh chuig an mBruscar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir %d fhillteán a bhogadh chuig an mBruscar</item>
+        <item quantity="two">Ní féidir %d fhillteán a bhogadh chuig an mBruscar</item>
+        <item quantity="few">Ní féidir %d fhillteán a bhogadh chuig an mBruscar</item>
+        <item quantity="many">Ní féidir %d bhfillteán a bhogadh chuig an mBruscar</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Ní féidir %d mír a bhogadh chuig an mBruscar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir %d mhír a bhogadh chuig an mBruscar</item>
+        <item quantity="two">Ní féidir %d mhír a bhogadh chuig an mBruscar</item>
+        <item quantity="few">Ní féidir %d mhír a bhogadh chuig an mBruscar</item>
+        <item quantity="many">Ní féidir %d mír a bhogadh chuig an mBruscar</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Scriosfar %d ceann de na comhaid roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scriosfar %d cheann de na comhaid roghnaithe mar go bhfuil sé sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="two">Scriosfar %d cheann de na comhaid roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="few">Scriosfar %d cinn de na comhaid roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="many">Scriosfar %d gcinn de na comhaid roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Scriosfar %d ceann de na fillteáin roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scriosfar %d cheann de na fillteáin roghnaithe mar go bhfuil sé sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="two">Scriosfar %d cheann de na fillteáin roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="few">Scriosfar %d cinn de na fillteáin roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="many">Scriosfar %d gcinn de na fillteáin roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Scriosfar %d ceann de na míreanna roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scriosfar %d cheann de na míreanna roghnaithe mar go bhfuil sé sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="two">Scriosfar %d cheann de na míreanna roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="few">Scriosfar %d cinn de na míreanna roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+        <item quantity="many">Scriosfar %d gcinn de na míreanna roghnaithe mar go bhfuil siad sa néal nó ar ghléas stórais USB.</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d comhad á gcomhbhrú…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á chomhbhrú…</item>
+        <item quantity="two">%d chomhad á gcomhbhrú…</item>
+        <item quantity="few">%d chomhad á gcomhbhrú…</item>
+        <item quantity="many">%d gcomhad á gcomhbhrú…</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d comhad á gcomhbhrú…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á chomhbhrú…</item>
+        <item quantity="two">%d chomhad á gcomhbhrú…</item>
+        <item quantity="few">%d chomhad á gcomhbhrú…</item>
+        <item quantity="many">%d gcomhad á gcomhbhrú…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d fillteán á gcomhbhrú…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á chomhbhrú…</item>
+        <item quantity="two">%d fhillteán á gcomhbhrú…</item>
+        <item quantity="few">%d fhillteán á gcomhbhrú…</item>
+        <item quantity="many">%d bhfillteán á gcomhbhrú…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d físeán á gcomhbhrú…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhíseán á chomhbhrú…</item>
+        <item quantity="two">%d fhíseán á gcomhbhrú…</item>
+        <item quantity="few">%d fhíseán á gcomhbhrú…</item>
+        <item quantity="many">%d bhfíseán á gcomhbhrú…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d mír á gcomhbhrú…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á comhbhrú…</item>
+        <item quantity="two">%d mhír á gcomhbhrú…</item>
+        <item quantity="few">%d mhír á gcomhbhrú…</item>
+        <item quantity="many">%d mír á gcomhbhrú…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d mír á gcomhbhrú…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á comhbhrú…</item>
+        <item quantity="two">%d mhír á gcomhbhrú…</item>
+        <item quantity="few">%d mhír á gcomhbhrú…</item>
+        <item quantity="many">%d mír á gcomhbhrú…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d comhad á gcóipeáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á chóipeáil…</item>
+        <item quantity="two">%d chomhad á gcóipeáil…</item>
+        <item quantity="few">%d chomhad á gcóipeáil…</item>
+        <item quantity="many">%d gcomhad á gcóipeáil…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d comhad á gcóipeáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á chóipeáil…</item>
+        <item quantity="two">%d chomhad á gcóipeáil…</item>
+        <item quantity="few">%d chomhad á gcóipeáil…</item>
+        <item quantity="many">%d gcomhad á gcóipeáil…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d fillteán á gcóipeáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á chóipeáil…</item>
+        <item quantity="two">%d fhillteán á gcóipeáil…</item>
+        <item quantity="few">%d fhillteán á gcóipeáil…</item>
+        <item quantity="many">%d bhfillteán á gcóipeáil…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d fillteán á gcóipeáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á chóipeáil…</item>
+        <item quantity="two">%d fhillteán á gcóipeáil…</item>
+        <item quantity="few">%d fhillteán á gcóipeáil…</item>
+        <item quantity="many">%d bhfillteán á gcóipeáil…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d mír á gcóipeáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á cóipeáil…</item>
+        <item quantity="two">%d mhír á gcóipeáil…</item>
+        <item quantity="few">%d mhír á gcóipeáil…</item>
+        <item quantity="many">%d mír á gcóipeáil…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d mír á gcóipeáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á cóipeáil…</item>
+        <item quantity="two">%d mhír á gcóipeáil…</item>
+        <item quantity="few">%d mhír á gcóipeáil…</item>
+        <item quantity="many">%d mír á gcóipeáil…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">"Scrios %d comhad ó d'fhón?"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Scrios %d chomhad ó d'fhón?"</item>
+        <item quantity="two">"Scrios %d chomhad ó d'fhón?"</item>
+        <item quantity="few">"Scrios %d chomhad ó d'fhón?"</item>
+        <item quantity="many">"Scrios %d gcomhad ó d'fhón?"</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Scrios %d comhad ó do tháibléad?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d chomhad ó do tháibléad?</item>
+        <item quantity="two">Scrios %d chomhad ó do tháibléad?</item>
+        <item quantity="few">Scrios %d chomhad ó do tháibléad?</item>
+        <item quantity="many">Scrios %d gcomhad ó do tháibléad?</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">"Scrios %d fillteán ó d'fhón?"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Scrios %d fhillteán ó d'fhón?"</item>
+        <item quantity="two">"Scrios %d fhillteán ó d'fhón?"</item>
+        <item quantity="few">"Scrios %d fhillteán ó d'fhón?"</item>
+        <item quantity="many">"Scrios %d bhfillteán ó d'fhón?"</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Scrios %d fillteán ó do tháibléad?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d fhillteán ó do tháibléad?</item>
+        <item quantity="two">Scrios %d fhillteán ó do tháibléad?</item>
+        <item quantity="few">Scrios %d fhillteán ó do tháibléad?</item>
+        <item quantity="many">Scrios %d bhfillteán ó do tháibléad?</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">"Scrios %d mír ó d'fhón?"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Scrios %d mhír ó d'fhón?"</item>
+        <item quantity="two">"Scrios %d mhír ó d'fhón?"</item>
+        <item quantity="few">"Scrios %d mhír ó d'fhón?"</item>
+        <item quantity="many">"Scrios %d mír ó d'fhón?"</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Scrios %d mír ó do tháibléad?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d mhír ó do tháibléad?</item>
+        <item quantity="two">Scrios %d mhír ó do tháibléad?</item>
+        <item quantity="few">Scrios %d mhír ó do tháibléad?</item>
+        <item quantity="many">Scrios %d mír ó do tháibléad?</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d comhad á scriosadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á scriosadh…</item>
+        <item quantity="two">%d chomhad á scriosadh…</item>
+        <item quantity="few">%d chomhad á scriosadh…</item>
+        <item quantity="many">%d gcomhad á scriosadh…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d fillteán á scriosadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á scriosadh…</item>
+        <item quantity="two">%d fhillteán á scriosadh…</item>
+        <item quantity="few">%d fhillteán á scriosadh…</item>
+        <item quantity="many">%d bhfillteán á scriosadh…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d mír á scriosadh ón mBruscar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á scriosadh ón mBruscar…</item>
+        <item quantity="two">%d mhír á scriosadh ón mBruscar…</item>
+        <item quantity="few">%d mhír á scriosadh ón mBruscar…</item>
+        <item quantity="many">%d mír á scriosadh ón mBruscar…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d mír á scriosadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á scriosadh…</item>
+        <item quantity="two">%d mhír á scriosadh…</item>
+        <item quantity="few">%d mhír á scriosadh…</item>
+        <item quantity="many">%d mír á scriosadh…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d comhad á n-asbhaint…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á asbhaint…</item>
+        <item quantity="two">%d chomhad á n-asbhaint…</item>
+        <item quantity="few">%d chomhad á n-asbhaint…</item>
+        <item quantity="many">%d gcomhad á n-asbhaint…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d fillteán á n-asbhaint…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á asbhaint…</item>
+        <item quantity="two">%d fhillteán á n-asbhaint…</item>
+        <item quantity="few">%d fhillteán á n-asbhaint…</item>
+        <item quantity="many">%d bhfillteán á n-asbhaint…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d mír á n-asbhaint…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á hasbhaint…</item>
+        <item quantity="two">%d mhír á n-asbhaint…</item>
+        <item quantity="few">%d mhír á n-asbhaint…</item>
+        <item quantity="many">%d mír á n-asbhaint…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">Bogfar %1$d comhad chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bogfar %1$d chomhad chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="two">Bogfar %1$d chomhad chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="few">Bogfar %1$d chomhad chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="many">Bogfar %1$d gcomhad chuig an mBruscar in %2$s freisin.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d comhad á n-aischur…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á aischur…</item>
+        <item quantity="two">%d chomhad á n-aischur…</item>
+        <item quantity="few">%d chomhad á n-aischur…</item>
+        <item quantity="many">%d gcomhad á n-aischur…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">Bogfar %1$d fillteán chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bogfar %1$d fhillteán chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="two">Bogfar %1$d fhillteán chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="few">Bogfar %1$d fhillteán chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="many">Bogfar %1$d bhfillteán chuig an mBruscar in %2$s freisin.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d fillteán á n-aischur…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á aischur…</item>
+        <item quantity="two">%d fhillteán á n-aischur…</item>
+        <item quantity="few">%d fhillteán á n-aischur…</item>
+        <item quantity="many">%d bhfillteán á n-aischur…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Tá do stóras inmheánach lán. Scrios %d comhad go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do stóras inmheánach lán. Scrios %d chomhad go buan?</item>
+        <item quantity="two">Tá do stóras inmheánach lán. Scrios %d chomhad go buan?</item>
+        <item quantity="few">Tá do stóras inmheánach lán. Scrios %d chomhad go buan?</item>
+        <item quantity="many">Tá do stóras inmheánach lán. Scrios %d gcomhad go buan?</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Tá do stóras inmheánach lán. Scrios %d fillteán go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do stóras inmheánach lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="two">Tá do stóras inmheánach lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="few">Tá do stóras inmheánach lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="many">Tá do stóras inmheánach lán. Scrios %d bhfillteán go buan?</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Tá do stóras inmheánach lán. Scrios %d mír go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do stóras inmheánach lán. Scrios %d mhír go buan?</item>
+        <item quantity="two">Tá do stóras inmheánach lán. Scrios %d mhír go buan?</item>
+        <item quantity="few">Tá do stóras inmheánach lán. Scrios %d mhír go buan?</item>
+        <item quantity="many">Tá do stóras inmheánach lán. Scrios %d mír go buan?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d comhad go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d chomhad go buan?</item>
+        <item quantity="two">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d chomhad go buan?</item>
+        <item quantity="few">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d chomhad go buan?</item>
+        <item quantity="many">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d gcomhad go buan?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d fillteán go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="two">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="few">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="many">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d bhfillteán go buan?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d mír go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d mhír go buan?</item>
+        <item quantity="two">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d mhír go buan?</item>
+        <item quantity="few">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d mhír go buan?</item>
+        <item quantity="many">Tá do stóras inmheánach agus do chárta SD lán. Scrios %d mír go buan?</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d mír á n-aischur…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á haischur…</item>
+        <item quantity="two">%d mhír á n-aischur…</item>
+        <item quantity="few">%d mhír á n-aischur…</item>
+        <item quantity="many">%d mír á n-aischur…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">Bogfar %1$d mír chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bogfar %1$d mhír chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="two">Bogfar %1$d mhír chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="few">Bogfar %1$d mhír chuig an mBruscar in %2$s freisin.</item>
+        <item quantity="many">Bogfar %1$d mír chuig an mBruscar in %2$s freisin.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Ní féidir níos mó ná %d fuinneog feidhmchláir a oscailt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d fhuinneog feidhmchláir a oscailt.</item>
+        <item quantity="two">Ní féidir níos mó ná %d fhuinneog feidhmchláir a oscailt.</item>
+        <item quantity="few">Ní féidir níos mó ná %d fhuinneog feidhmchláir a oscailt.</item>
+        <item quantity="many">Ní féidir níos mó ná %d bhfuinneog feidhmchláir a oscailt.</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Bog %d comhad chuig an mBruscar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bog %d chomhad chuig an mBruscar?</item>
+        <item quantity="two">Bog %d chomhad chuig an mBruscar?</item>
+        <item quantity="few">Bog %d chomhad chuig an mBruscar?</item>
+        <item quantity="many">Bog %d gcomhad chuig an mBruscar?</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Bog %d comhad chuig an mBruscar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bog %d chomhad chuig an mBruscar?</item>
+        <item quantity="two">Bog %d chomhad chuig an mBruscar?</item>
+        <item quantity="few">Bog %d chomhad chuig an mBruscar?</item>
+        <item quantity="many">Bog %d gcomhad chuig an mBruscar?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Bog %d fillteán chuig an mBruscar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bog %d fhillteán chuig an mBruscar?</item>
+        <item quantity="two">Bog %d fhillteán chuig an mBruscar?</item>
+        <item quantity="few">Bog %d fhillteán chuig an mBruscar?</item>
+        <item quantity="many">Bog %d bhfillteán chuig an mBruscar?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Bog %d fillteán chuig an mBruscar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bog %d fhillteán chuig an mBruscar?</item>
+        <item quantity="two">Bog %d fhillteán chuig an mBruscar?</item>
+        <item quantity="few">Bog %d fhillteán chuig an mBruscar?</item>
+        <item quantity="many">Bog %d bhfillteán chuig an mBruscar?</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Bog %d mír chuig an mBruscar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bog %d mhír chuig an mBruscar?</item>
+        <item quantity="two">Bog %d mhír chuig an mBruscar?</item>
+        <item quantity="few">Bog %d mhír chuig an mBruscar?</item>
+        <item quantity="many">Bog %d mír chuig an mBruscar?</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Bog %d mír chuig an mBruscar?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bog %d mhír chuig an mBruscar?</item>
+        <item quantity="two">Bog %d mhír chuig an mBruscar?</item>
+        <item quantity="few">Bog %d mhír chuig an mBruscar?</item>
+        <item quantity="many">Bog %d mír chuig an mBruscar?</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d comhad á mbogadh chuig an mBruscar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á bhogadh chuig an mBruscar…</item>
+        <item quantity="two">%d chomhad á mbogadh chuig an mBruscar…</item>
+        <item quantity="few">%d chomhad á mbogadh chuig an mBruscar…</item>
+        <item quantity="many">%d gcomhad á mbogadh chuig an mBruscar…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d fillteán á mbogadh chuig an mBruscar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á bhogadh chuig an mBruscar…</item>
+        <item quantity="two">%d fhillteán á mbogadh chuig an mBruscar…</item>
+        <item quantity="few">%d fhillteán á mbogadh chuig an mBruscar…</item>
+        <item quantity="many">%d bhfillteán á mbogadh chuig an mBruscar…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d mír á mbogadh chuig an mBruscar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á bogadh chuig an mBruscar…</item>
+        <item quantity="two">%d mhír á mbogadh chuig an mBruscar…</item>
+        <item quantity="few">%d mhír á mbogadh chuig an mBruscar…</item>
+        <item quantity="many">%d mír á mbogadh chuig an mBruscar…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d comhad á mbogadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á bhogadh…</item>
+        <item quantity="two">%d chomhad á mbogadh…</item>
+        <item quantity="few">%d chomhad á mbogadh…</item>
+        <item quantity="many">%d gcomhad á mbogadh…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d comhad á mbogadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á bhogadh…</item>
+        <item quantity="two">%d chomhad á mbogadh…</item>
+        <item quantity="few">%d chomhad á mbogadh…</item>
+        <item quantity="many">%d gcomhad á mbogadh…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d fillteán á mbogadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á bhogadh…</item>
+        <item quantity="two">%d fhillteán á mbogadh…</item>
+        <item quantity="few">%d fhillteán á mbogadh…</item>
+        <item quantity="many">%d bhfillteán á mbogadh…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d fillteán á mbogadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á bhogadh…</item>
+        <item quantity="two">%d fhillteán á mbogadh…</item>
+        <item quantity="few">%d fhillteán á mbogadh…</item>
+        <item quantity="many">%d bhfillteán á mbogadh…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d mír á mbogadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á bogadh…</item>
+        <item quantity="two">%d mhír á mbogadh…</item>
+        <item quantity="few">%d mhír á mbogadh…</item>
+        <item quantity="many">%d mír á mbogadh…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d mír á mbogadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á bogadh…</item>
+        <item quantity="two">%d mhír á mbogadh…</item>
+        <item quantity="few">%d mhír á mbogadh…</item>
+        <item quantity="many">%d mír á mbogadh…</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d mír comhbhrúite</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír comhbhrúite</item>
+        <item quantity="two">%d mhír comhbhrúite</item>
+        <item quantity="few">%d mhír comhbhrúite</item>
+        <item quantity="many">%d mír comhbhrúite</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d mír cóipeáilte chuig %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d mhír cóipeáilte chuig %2$s</item>
+        <item quantity="two">%1$d mhír cóipeáilte chuig %2$s</item>
+        <item quantity="few">%1$d mhír cóipeáilte chuig %2$s</item>
+        <item quantity="many">%1$d mír cóipeáilte chuig %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Scrios an fillteán agus na %d comhad atá ann?</item>
+        <item quantity="one">Scrios an fillteán agus an comhad atá ann?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Scrios %1$d fillteán agus na %2$d comhad atá iontu?</item>
+        <item quantity="one">Scrios an fillteán agus an comhad atá ann?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d mír scriosta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír scriosta</item>
+        <item quantity="two">%d mhír scriosta</item>
+        <item quantity="few">%d mhír scriosta</item>
+        <item quantity="many">%d mír scriosta</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d comhad á n-íoslódáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á íoslódáil…</item>
+        <item quantity="two">%d chomhad á n-íoslódáil…</item>
+        <item quantity="few">%d chomhad á n-íoslódáil…</item>
+        <item quantity="many">%d gcomhad á n-íoslódáil…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d fillteán á n-íoslódáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á íoslódáil…</item>
+        <item quantity="two">%d fhillteán á n-íoslódáil…</item>
+        <item quantity="few">%d fhillteán á n-íoslódáil…</item>
+        <item quantity="many">%d bhfillteán á n-íoslódáil…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d mír á n-íoslódáil…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á híoslódáil…</item>
+        <item quantity="two">%d mhír á n-íoslódáil…</item>
+        <item quantity="few">%d mhír á n-íoslódáil…</item>
+        <item quantity="many">%d mír á n-íoslódáil…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Ní féidir fillteáin a chomhroinnt. Tá na fillteáin folamh.</item>
+        <item quantity="one">Ní féidir an fillteán a chomhroinnt. Tá an fillteán folamh.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">Scriosfar %d comhad go buan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scriosfar %d chomhad go buan.</item>
+        <item quantity="two">Scriosfar %d chomhad go buan.</item>
+        <item quantity="few">Scriosfar %d chomhad go buan.</item>
+        <item quantity="many">Scriosfar %d gcomhad go buan.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">Scriosfar %d fillteán go buan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scriosfar %d fhillteán go buan.</item>
+        <item quantity="two">Scriosfar %d fhillteán go buan.</item>
+        <item quantity="few">Scriosfar %d fhillteán go buan.</item>
+        <item quantity="many">Scriosfar %d bhfillteán go buan.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d mír asbhainte</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír asbhainte</item>
+        <item quantity="two">%d mhír asbhainte</item>
+        <item quantity="few">%d mhír asbhainte</item>
+        <item quantity="many">%d mír asbhainte</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d comhad curtha le Ceanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad curtha le Ceanáin.</item>
+        <item quantity="two">%d chomhad curtha le Ceanáin.</item>
+        <item quantity="few">%d chomhad curtha le Ceanáin.</item>
+        <item quantity="many">%d gcomhad curtha le Ceanáin.</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d comhad bainte ó Cheanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad bainte ó Cheanáin.</item>
+        <item quantity="two">%d chomhad bainte ó Cheanáin.</item>
+        <item quantity="few">%d chomhad bainte ó Cheanáin.</item>
+        <item quantity="many">%d gcomhad bainte ó Cheanáin.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d fillteán curtha le Ceanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán curtha le Ceanáin.</item>
+        <item quantity="two">%d fhillteán curtha le Ceanáin.</item>
+        <item quantity="few">%d fhillteán curtha le Ceanáin.</item>
+        <item quantity="many">%d bhfillteán curtha le Ceanáin.</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d fillteán bainte ó Cheanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán bainte ó Cheanáin.</item>
+        <item quantity="two">%d fhillteán bainte ó Cheanáin.</item>
+        <item quantity="few">%d fhillteán bainte ó Cheanáin.</item>
+        <item quantity="many">%d bhfillteán bainte ó Cheanáin.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d mír curtha le Ceanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír curtha le Ceanáin.</item>
+        <item quantity="two">%d mhír curtha le Ceanáin.</item>
+        <item quantity="few">%d mhír curtha le Ceanáin.</item>
+        <item quantity="many">%d mír curtha le Ceanáin.</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d mír bainte ó Cheanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír bainte ó Cheanáin.</item>
+        <item quantity="two">%d mhír bainte ó Cheanáin.</item>
+        <item quantity="few">%d mhír bainte ó Cheanáin.</item>
+        <item quantity="many">%d mír bainte ó Cheanáin.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d mír</item>
+        <item quantity="one">1 mhír</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d mír</item>
+        <item quantity="one">%d mír</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d mír cóipeáilte chuig an ngearrthaisce</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír cóipeáilte chuig an ngearrthaisce</item>
+        <item quantity="two">%d mhír cóipeáilte chuig an ngearrthaisce</item>
+        <item quantity="few">%d mhír cóipeáilte chuig an ngearrthaisce</item>
+        <item quantity="many">%d mír cóipeáilte chuig an ngearrthaisce</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d mír bogtha chuig an ngearrthaisce</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír bogtha chuig an ngearrthaisce</item>
+        <item quantity="two">%d mhír bogtha chuig an ngearrthaisce</item>
+        <item quantity="few">%d mhír bogtha chuig an ngearrthaisce</item>
+        <item quantity="many">%d mír bogtha chuig an ngearrthaisce</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d mír roghnaithe</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír roghnaithe</item>
+        <item quantity="two">%d mhír roghnaithe</item>
+        <item quantity="few">%d mhír roghnaithe</item>
+        <item quantity="many">%d mír roghnaithe</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d mír bogtha chuig %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d mhír bogtha chuig %2$s</item>
+        <item quantity="two">%1$d mhír bogtha chuig %2$s</item>
+        <item quantity="few">%1$d mhír bogtha chuig %2$s</item>
+        <item quantity="many">%1$d mír bogtha chuig %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d mír bogtha chuig an mBruscar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír bogtha chuig an mBruscar</item>
+        <item quantity="two">%d mhír bogtha chuig an mBruscar</item>
+        <item quantity="few">%d mhír bogtha chuig an mBruscar</item>
+        <item quantity="many">%d mír bogtha chuig an mBruscar</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d roghnaithe</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d roghnaithe</item>
+        <item quantity="two">%d roghnaithe</item>
+        <item quantity="few">%d roghnaithe</item>
+        <item quantity="many">%d roghnaithe</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Tá do chárta SD lán. Scrios %d comhad go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do chárta SD lán. Scrios %d chomhad go buan?</item>
+        <item quantity="two">Tá do chárta SD lán. Scrios %d chomhad go buan?</item>
+        <item quantity="few">Tá do chárta SD lán. Scrios %d chomhad go buan?</item>
+        <item quantity="many">Tá do chárta SD lán. Scrios %d gcomhad go buan?</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Tá do chárta SD lán. Scrios %d fillteán go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do chárta SD lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="two">Tá do chárta SD lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="few">Tá do chárta SD lán. Scrios %d fhillteán go buan?</item>
+        <item quantity="many">Tá do chárta SD lán. Scrios %d bhfillteán go buan?</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Tá do chárta SD lán. Scrios %d mír go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá do chárta SD lán. Scrios %d mhír go buan?</item>
+        <item quantity="two">Tá do chárta SD lán. Scrios %d mhír go buan?</item>
+        <item quantity="few">Tá do chárta SD lán. Scrios %d mhír go buan?</item>
+        <item quantity="many">Tá do chárta SD lán. Scrios %d mír go buan?</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Scriosfar an comhad seo i gceann %d lá.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scriosfar an comhad seo i gceann %d lae.</item>
+        <item quantity="two">Scriosfar an comhad seo i gceann %d lá.</item>
+        <item quantity="few">Scriosfar an comhad seo i gceann %d lá.</item>
+        <item quantity="many">Scriosfar an comhad seo i gceann %d lá.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Scriosfar an fillteán seo i gceann %d lá.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scriosfar an fillteán seo i gceann %d lae.</item>
+        <item quantity="two">Scriosfar an fillteán seo i gceann %d lá.</item>
+        <item quantity="few">Scriosfar an fillteán seo i gceann %d lá.</item>
+        <item quantity="many">Scriosfar an fillteán seo i gceann %d lá.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Scrios %d comhad go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d chomhad go buan?</item>
+        <item quantity="two">Scrios %d chomhad go buan?</item>
+        <item quantity="few">Scrios %d chomhad go buan?</item>
+        <item quantity="many">Scrios %d gcomhad go buan?</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d comhad á scriosadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á scriosadh…</item>
+        <item quantity="two">%d chomhad á scriosadh…</item>
+        <item quantity="few">%d chomhad á scriosadh…</item>
+        <item quantity="many">%d gcomhad á scriosadh…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d comhad á n-aischur…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chomhad á aischur…</item>
+        <item quantity="two">%d chomhad á n-aischur…</item>
+        <item quantity="few">%d chomhad á n-aischur…</item>
+        <item quantity="many">%d gcomhad á n-aischur…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Scrios %d fillteán go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d fhillteán go buan?</item>
+        <item quantity="two">Scrios %d fhillteán go buan?</item>
+        <item quantity="few">Scrios %d fhillteán go buan?</item>
+        <item quantity="many">Scrios %d bhfillteán go buan?</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d fillteán á scriosadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á scriosadh…</item>
+        <item quantity="two">%d fhillteán á scriosadh…</item>
+        <item quantity="few">%d fhillteán á scriosadh…</item>
+        <item quantity="many">%d bhfillteán á scriosadh…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d fillteán á n-aischur…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fhillteán á aischur…</item>
+        <item quantity="two">%d fhillteán á n-aischur…</item>
+        <item quantity="few">%d fhillteán á n-aischur…</item>
+        <item quantity="many">%d bhfillteán á n-aischur…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Scrios %d mír go buan?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d mhír go buan?</item>
+        <item quantity="two">Scrios %d mhír go buan?</item>
+        <item quantity="few">Scrios %d mhír go buan?</item>
+        <item quantity="many">Scrios %d mír go buan?</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d mír á scriosadh…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á scriosadh…</item>
+        <item quantity="two">%d mhír á scriosadh…</item>
+        <item quantity="few">%d mhír á scriosadh…</item>
+        <item quantity="many">%d mír á scriosadh…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d mír á n-aischur…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhír á haischur…</item>
+        <item quantity="two">%d mhír á n-aischur…</item>
+        <item quantity="few">%d mhír á n-aischur…</item>
+        <item quantity="many">%d mír á n-aischur…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Le scriosadh i gceann %d lá</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Le scriosadh i gceann %d lae</item>
+        <item quantity="two">Le scriosadh i gceann %d lá</item>
+        <item quantity="few">Le scriosadh i gceann %d lá</item>
+        <item quantity="many">Le scriosadh i gceann %d lá</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Díshuiteáil %d feidhmchlár?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Díshuiteáil %d fheidhmchlár?</item>
+        <item quantity="two">Díshuiteáil %d fheidhmchlár?</item>
+        <item quantity="few">Díshuiteáil %d fheidhmchlár?</item>
+        <item quantity="many">Díshuiteáil %d bhfeidhmchlár?</item>
+    </plurals>
+</resources>

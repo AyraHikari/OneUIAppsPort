@@ -8,14 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"ลงทะเบียนและจัดการคอมพิวเจอร์หรือแท็บเล็ต %d เครื่องใน Samsung Flow
-
-สามารถเชื่อมต่อคอมพิวเตอร์หรือแท็บเล็ตกับโทรศัพท์ได้เพียงเครื่องเดียวในแต่ละครั้ง คุณจะต้องเลือกหนึ่งเครื่องเมื่อทั้งคอมพิวเตอร์หรือแท็บเล็ตที่ลงทะเบียนไว้พยายามเชื่อมต่อกับโทรศัพท์ของคุณ"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">การแจ้งเตือนใหม่ %d รายการ</item>
+        <item quantity="one">การแจ้งเตือนใหม่ %d รายการ</item>
     </plurals>
 </resources>

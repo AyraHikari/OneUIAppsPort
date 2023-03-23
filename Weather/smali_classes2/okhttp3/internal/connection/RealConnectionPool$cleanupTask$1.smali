@@ -39,11 +39,11 @@
 
 
 # instance fields
-.field final synthetic this$0:Lokhttp3/internal/connection/RealConnectionPool;
+.field public final synthetic this$0:Lokhttp3/internal/connection/RealConnectionPool;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/connection/RealConnectionPool;Ljava/lang/String;)V
+.method public constructor <init>(Lokhttp3/internal/connection/RealConnectionPool;Ljava/lang/String;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -53,7 +53,6 @@
         }
     .end annotation
 
-    .line 43
     iput-object p1, p0, Lokhttp3/internal/connection/RealConnectionPool$cleanupTask$1;->this$0:Lokhttp3/internal/connection/RealConnectionPool;
 
     const/4 p1, 0x0
@@ -72,7 +71,6 @@
 .method public runOnce()J
     .locals 3
 
-    .line 44
     iget-object v0, p0, Lokhttp3/internal/connection/RealConnectionPool$cleanupTask$1;->this$0:Lokhttp3/internal/connection/RealConnectionPool;
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J

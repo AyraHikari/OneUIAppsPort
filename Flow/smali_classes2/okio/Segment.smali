@@ -78,7 +78,7 @@
 
 
 # virtual methods
-.method public compact()V
+.method public final compact()V
     .locals 4
 
     .line 151
@@ -110,15 +110,15 @@
 
     if-eqz v3, :cond_1
 
-    const/4 v0, 0x0
+    const/4 v3, 0x0
 
     goto :goto_0
 
     :cond_1
-    iget v0, v0, Lokio/Segment;->pos:I
+    iget v3, v0, Lokio/Segment;->pos:I
 
     :goto_0
-    add-int/2addr v2, v0
+    add-int/2addr v2, v3
 
     if-le v1, v2, :cond_2
 
@@ -126,8 +126,6 @@
 
     .line 156
     :cond_2
-    iget-object v0, p0, Lokio/Segment;->prev:Lokio/Segment;
-
     invoke-virtual {p0, v0, v1}, Lokio/Segment;->writeTo(Lokio/Segment;I)V
 
     .line 157
@@ -147,7 +145,7 @@
     throw v0
 .end method
 
-.method public pop()Lokio/Segment;
+.method public final pop()Lokio/Segment;
     .locals 4
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
@@ -159,23 +157,23 @@
 
     if-eq v0, p0, :cond_0
 
+    move-object v2, v0
+
     goto :goto_0
 
     :cond_0
-    move-object v0, v1
+    move-object v2, v1
 
     .line 97
     :goto_0
-    iget-object v2, p0, Lokio/Segment;->prev:Lokio/Segment;
+    iget-object v3, p0, Lokio/Segment;->prev:Lokio/Segment;
 
-    iget-object v3, p0, Lokio/Segment;->next:Lokio/Segment;
-
-    iput-object v3, v2, Lokio/Segment;->next:Lokio/Segment;
+    iput-object v0, v3, Lokio/Segment;->next:Lokio/Segment;
 
     .line 98
-    iget-object v3, p0, Lokio/Segment;->next:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->next:Lokio/Segment;
 
-    iput-object v2, v3, Lokio/Segment;->prev:Lokio/Segment;
+    iput-object v3, v0, Lokio/Segment;->prev:Lokio/Segment;
 
     .line 99
     iput-object v1, p0, Lokio/Segment;->next:Lokio/Segment;
@@ -183,10 +181,10 @@
     .line 100
     iput-object v1, p0, Lokio/Segment;->prev:Lokio/Segment;
 
-    return-object v0
+    return-object v2
 .end method
 
-.method public push(Lokio/Segment;)Lokio/Segment;
+.method public final push(Lokio/Segment;)Lokio/Segment;
     .locals 1
 
     .line 109
@@ -208,7 +206,7 @@
     return-object p1
 .end method
 
-.method sharedCopy()Lokio/Segment;
+.method final sharedCopy()Lokio/Segment;
     .locals 7
 
     const/4 v0, 0x1
@@ -236,7 +234,7 @@
     return-object v0
 .end method
 
-.method public split(I)Lokio/Segment;
+.method public final split(I)Lokio/Segment;
     .locals 5
 
     if-lez p1, :cond_1
@@ -309,7 +307,7 @@
     throw p1
 .end method
 
-.method unsharedCopy()Lokio/Segment;
+.method final unsharedCopy()Lokio/Segment;
     .locals 7
 
     .line 88
@@ -340,7 +338,7 @@
     return-object v6
 .end method
 
-.method public writeTo(Lokio/Segment;I)V
+.method public final writeTo(Lokio/Segment;I)V
     .locals 4
 
     .line 163

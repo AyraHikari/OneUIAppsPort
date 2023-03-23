@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/appindexing/Action;
 .super Lcom/google/android/gms/appindexing/Thing;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # annotations
@@ -48,20 +49,11 @@
 
 
 # direct methods
-.method private constructor <init>(Landroid/os/Bundle;)V
+.method synthetic constructor <init>(Landroid/os/Bundle;Lcom/google/android/gms/appindexing/zza;)V
     .locals 0
 
     .line 1
     invoke-direct {p0, p1}, Lcom/google/android/gms/appindexing/Thing;-><init>(Landroid/os/Bundle;)V
-
-    return-void
-.end method
-
-.method synthetic constructor <init>(Landroid/os/Bundle;Lcom/google/android/gms/appindexing/zza;)V
-    .locals 0
-
-    .line 12
-    invoke-direct {p0, p1}, Lcom/google/android/gms/appindexing/Action;-><init>(Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -71,7 +63,7 @@
 
     const/4 v0, 0x0
 
-    .line 11
+    .line 1
     invoke-static {p0, p1, v0, p2}, Lcom/google/android/gms/appindexing/Action;->newAction(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;)Lcom/google/android/gms/appindexing/Action;
 
     move-result-object p0
@@ -82,19 +74,17 @@
 .method public static newAction(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;)Lcom/google/android/gms/appindexing/Action;
     .locals 1
 
-    .line 3
     new-instance v0, Lcom/google/android/gms/appindexing/Action$Builder;
 
+    .line 2
     invoke-direct {v0, p0}, Lcom/google/android/gms/appindexing/Action$Builder;-><init>(Ljava/lang/String;)V
 
     new-instance p0, Lcom/google/android/gms/appindexing/Thing$Builder;
 
     invoke-direct {p0}, Lcom/google/android/gms/appindexing/Thing$Builder;-><init>()V
 
-    .line 4
+    .line 3
     invoke-virtual {p0, p1}, Lcom/google/android/gms/appindexing/Thing$Builder;->setName(Ljava/lang/String;)Lcom/google/android/gms/appindexing/Thing$Builder;
-
-    move-result-object p0
 
     if-nez p2, :cond_0
 
@@ -102,7 +92,7 @@
 
     goto :goto_0
 
-    .line 5
+    .line 4
     :cond_0
     invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -111,29 +101,20 @@
     :goto_0
     invoke-virtual {p0, p1}, Lcom/google/android/gms/appindexing/Thing$Builder;->setId(Ljava/lang/String;)Lcom/google/android/gms/appindexing/Thing$Builder;
 
+    .line 5
+    invoke-virtual {p0, p3}, Lcom/google/android/gms/appindexing/Thing$Builder;->setUrl(Landroid/net/Uri;)Lcom/google/android/gms/appindexing/Thing$Builder;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/appindexing/Thing$Builder;->build()Lcom/google/android/gms/appindexing/Thing;
+
     move-result-object p0
 
     .line 6
-    invoke-virtual {p0, p3}, Lcom/google/android/gms/appindexing/Thing$Builder;->setUrl(Landroid/net/Uri;)Lcom/google/android/gms/appindexing/Thing$Builder;
-
-    move-result-object p0
-
-    .line 7
-    invoke-virtual {p0}, Lcom/google/android/gms/appindexing/Thing$Builder;->build()Lcom/google/android/gms/appindexing/Thing;
-
-    move-result-object p0
-
-    .line 8
     invoke-virtual {v0, p0}, Lcom/google/android/gms/appindexing/Action$Builder;->setObject(Lcom/google/android/gms/appindexing/Thing;)Lcom/google/android/gms/appindexing/Action$Builder;
 
-    move-result-object p0
-
-    .line 9
-    invoke-virtual {p0}, Lcom/google/android/gms/appindexing/Thing$Builder;->build()Lcom/google/android/gms/appindexing/Thing;
+    .line 7
+    invoke-virtual {v0}, Lcom/google/android/gms/appindexing/Action$Builder;->build()Lcom/google/android/gms/appindexing/Action;
 
     move-result-object p0
-
-    check-cast p0, Lcom/google/android/gms/appindexing/Action;
 
     return-object p0
 .end method

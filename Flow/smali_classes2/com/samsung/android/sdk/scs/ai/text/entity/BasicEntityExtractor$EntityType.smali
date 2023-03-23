@@ -46,9 +46,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 16
 
-    .line 289
+    .line 291
     new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
     const-string v1, "DATE_TIME"
@@ -59,134 +59,124 @@
 
     sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->DATE_TIME:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 293
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 295
+    new-instance v1, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "DATE_TIME_NUMERAL"
+    const-string v3, "DATE_TIME_NUMERAL"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->DATE_TIME_NUMERAL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v1, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->DATE_TIME_NUMERAL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 297
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 299
+    new-instance v3, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "PHONE_NUMBER"
+    const-string v5, "PHONE_NUMBER"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->PHONE_NUMBER:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v3, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->PHONE_NUMBER:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 301
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 303
+    new-instance v5, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "EMAIL_ADDRESS"
+    const-string v7, "EMAIL_ADDRESS"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->EMAIL_ADDRESS:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v5, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->EMAIL_ADDRESS:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 305
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 307
+    new-instance v7, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "URL"
+    const-string v9, "URL"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->URL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v7, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->URL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 309
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 311
+    new-instance v9, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "MAP_ADDRESS"
+    const-string v11, "MAP_ADDRESS"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->MAP_ADDRESS:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v9, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->MAP_ADDRESS:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 313
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 315
+    new-instance v11, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "MAP_ADDRESS_POI"
+    const-string v13, "MAP_ADDRESS_POI"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v13, v14}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->MAP_ADDRESS_POI:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v11, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->MAP_ADDRESS_POI:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 317
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 319
+    new-instance v13, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "BANK_ACCOUNT"
+    const-string v15, "BANK_ACCOUNT"
 
-    const/4 v9, 0x7
+    const/4 v14, 0x7
 
-    invoke-direct {v0, v1, v9}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v13, v15, v14}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->BANK_ACCOUNT:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v13, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->BANK_ACCOUNT:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 321
-    new-instance v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 323
+    new-instance v15, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const-string v1, "VERIFICATION_CODE"
+    const-string v14, "VERIFICATION_CODE"
 
-    const/16 v10, 0x8
+    const/16 v12, 0x8
 
-    invoke-direct {v0, v1, v10}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v15, v14, v12}, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->VERIFICATION_CODE:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    sput-object v15, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->VERIFICATION_CODE:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    const/16 v1, 0x9
+    const/16 v14, 0x9
 
-    new-array v1, v1, [Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    new-array v14, v14, [Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
-    .line 285
-    sget-object v11, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->DATE_TIME:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    aput-object v0, v14, v2
 
-    aput-object v11, v1, v2
+    aput-object v1, v14, v4
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->DATE_TIME_NUMERAL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    aput-object v3, v14, v6
 
-    aput-object v2, v1, v3
+    aput-object v5, v14, v8
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->PHONE_NUMBER:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    aput-object v7, v14, v10
 
-    aput-object v2, v1, v4
+    const/4 v0, 0x5
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->EMAIL_ADDRESS:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    aput-object v9, v14, v0
 
-    aput-object v2, v1, v5
+    const/4 v0, 0x6
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->URL:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    aput-object v11, v14, v0
 
-    aput-object v2, v1, v6
+    const/4 v0, 0x7
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->MAP_ADDRESS:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    aput-object v13, v14, v0
 
-    aput-object v2, v1, v7
+    aput-object v15, v14, v12
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->MAP_ADDRESS_POI:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
-
-    aput-object v2, v1, v8
-
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->BANK_ACCOUNT:Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
-
-    aput-object v2, v1, v9
-
-    aput-object v0, v1, v10
-
-    sput-object v1, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->$VALUES:[Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
+    .line 287
+    sput-object v14, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->$VALUES:[Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
     return-void
 .end method
@@ -199,7 +189,7 @@
         }
     .end annotation
 
-    .line 323
+    .line 325
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -208,7 +198,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
     .locals 1
 
-    .line 285
+    .line 287
     const-class v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -223,7 +213,7 @@
 .method public static values()[Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
     .locals 1
 
-    .line 285
+    .line 287
     sget-object v0, Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->$VALUES:[Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;
 
     invoke-virtual {v0}, [Lcom/samsung/android/sdk/scs/ai/text/entity/BasicEntityExtractor$EntityType;->clone()Ljava/lang/Object;

@@ -8,20 +8,10 @@
         <item quantity="few">N/A</item>
         <item quantity="many">%d קבצים נוספו לרשימת העברת הקבצים.</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"רשום ונהל עד %d מחשבים או מכשירי טאבלט ב-Samsung Flow‏.
-
-ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"רשום ונהל עד %d מחשב או טאבלט ב-Samsung Flow‏.
-
-ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
-        <item quantity="two">"רשום ונהל עד %d מחשבים או מכשירי טאבלט ב-Samsung Flow‏.
-
-ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">"רשום ונהל עד %d מחשבים או מכשירי טאבלט ב-Samsung Flow‏.
-
-ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d התראות חדשות</item>
+        <item quantity="one">התראה חדשה אחת (%d)</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="many">%d התראות חדשות</item>
     </plurals>
 </resources>

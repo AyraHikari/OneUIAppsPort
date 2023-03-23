@@ -22,11 +22,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0005\u0008\u0086\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005\u00a8\u0006\u0006"
     }
@@ -42,9 +37,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -59,48 +55,73 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method private static final synthetic $values()[Lkotlin/reflect/KParameter$Kind;
+    .locals 3
 
     const/4 v0, 0x3
 
     new-array v0, v0, [Lkotlin/reflect/KParameter$Kind;
 
-    new-instance v1, Lkotlin/reflect/KParameter$Kind;
+    sget-object v1, Lkotlin/reflect/KParameter$Kind;->INSTANCE:Lkotlin/reflect/KParameter$Kind;
 
-    const-string v2, "INSTANCE"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/reflect/KParameter$Kind;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/reflect/KParameter$Kind;->EXTENSION_RECEIVER:Lkotlin/reflect/KParameter$Kind;
 
-    sput-object v1, Lkotlin/reflect/KParameter$Kind;->INSTANCE:Lkotlin/reflect/KParameter$Kind;
+    const/4 v2, 0x1
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/reflect/KParameter$Kind;
+    sget-object v1, Lkotlin/reflect/KParameter$Kind;->VALUE:Lkotlin/reflect/KParameter$Kind;
 
-    const-string v2, "EXTENSION_RECEIVER"
+    const/4 v2, 0x2
 
-    const/4 v3, 0x1
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/reflect/KParameter$Kind;-><init>(Ljava/lang/String;I)V
+    return-object v0
+.end method
 
-    sput-object v1, Lkotlin/reflect/KParameter$Kind;->EXTENSION_RECEIVER:Lkotlin/reflect/KParameter$Kind;
+.method static constructor <clinit>()V
+    .locals 3
 
-    aput-object v1, v0, v3
+    .line 55
+    new-instance v0, Lkotlin/reflect/KParameter$Kind;
 
-    new-instance v1, Lkotlin/reflect/KParameter$Kind;
+    const-string v1, "INSTANCE"
 
-    const-string v2, "VALUE"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x2
+    invoke-direct {v0, v1, v2}, Lkotlin/reflect/KParameter$Kind;-><init>(Ljava/lang/String;I)V
 
-    invoke-direct {v1, v2, v3}, Lkotlin/reflect/KParameter$Kind;-><init>(Ljava/lang/String;I)V
+    sput-object v0, Lkotlin/reflect/KParameter$Kind;->INSTANCE:Lkotlin/reflect/KParameter$Kind;
 
-    sput-object v1, Lkotlin/reflect/KParameter$Kind;->VALUE:Lkotlin/reflect/KParameter$Kind;
+    .line 58
+    new-instance v0, Lkotlin/reflect/KParameter$Kind;
 
-    aput-object v1, v0, v3
+    const-string v1, "EXTENSION_RECEIVER"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Lkotlin/reflect/KParameter$Kind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/reflect/KParameter$Kind;->EXTENSION_RECEIVER:Lkotlin/reflect/KParameter$Kind;
+
+    .line 61
+    new-instance v0, Lkotlin/reflect/KParameter$Kind;
+
+    const-string v1, "VALUE"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Lkotlin/reflect/KParameter$Kind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/reflect/KParameter$Kind;->VALUE:Lkotlin/reflect/KParameter$Kind;
+
+    invoke-static {}, Lkotlin/reflect/KParameter$Kind;->$values()[Lkotlin/reflect/KParameter$Kind;
+
+    move-result-object v0
 
     sput-object v0, Lkotlin/reflect/KParameter$Kind;->$VALUES:[Lkotlin/reflect/KParameter$Kind;
 
@@ -140,7 +161,7 @@
 
     sget-object v0, Lkotlin/reflect/KParameter$Kind;->$VALUES:[Lkotlin/reflect/KParameter$Kind;
 
-    invoke-virtual {v0}, [Lkotlin/reflect/KParameter$Kind;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

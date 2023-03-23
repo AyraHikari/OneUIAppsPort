@@ -1,80 +1,46 @@
-.class final Lcom/google/android/gms/location/zze;
+.class public final synthetic Lcom/google/android/gms/location/zze;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/google/android/gms/location/ActivityTransition;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic zza:Landroid/app/PendingIntent;
 
 
 # direct methods
-.method constructor <init>()V
+.method public synthetic constructor <init>(Landroid/app/PendingIntent;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/location/zze;->zza:Landroid/app/PendingIntent;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 4
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
 
-    check-cast p1, Lcom/google/android/gms/location/ActivityTransition;
+    iget-object v0, p0, Lcom/google/android/gms/location/zze;->zza:Landroid/app/PendingIntent;
 
-    check-cast p2, Lcom/google/android/gms/location/ActivityTransition;
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/location/ActivityTransition;->getActivityType()I
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    move-result v0
+    sget v1, Lcom/google/android/gms/location/ActivityRecognitionClient;->zza:I
 
-    invoke-virtual {p2}, Lcom/google/android/gms/location/ActivityTransition;->getActivityType()I
-
-    move-result v1
-
-    const/4 v2, -0x1
-
-    const/4 v3, 0x1
-
-    if-eq v0, v1, :cond_1
-
-    if-ge v0, v1, :cond_0
-
-    return v2
-
-    :cond_0
-    return v3
-
-    :cond_1
-    invoke-virtual {p1}, Lcom/google/android/gms/location/ActivityTransition;->getTransitionType()I
-
-    move-result p1
-
-    invoke-virtual {p2}, Lcom/google/android/gms/location/ActivityTransition;->getTransitionType()I
-
-    move-result p2
-
-    if-ne p1, p2, :cond_2
+    .line 1
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/internal/location/zzbe;->zzv(Landroid/app/PendingIntent;)V
 
     const/4 p1, 0x0
 
-    return p1
+    .line 2
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
 
-    :cond_2
-    if-ge p1, p2, :cond_3
-
-    return v2
-
-    :cond_3
-    return v3
+    return-void
 .end method

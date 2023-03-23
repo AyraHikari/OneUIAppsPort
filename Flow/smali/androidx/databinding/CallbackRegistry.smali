@@ -1029,8 +1029,6 @@
     if-eqz p1, :cond_1
 
     .line 95
-    iget-object p1, p0, Landroidx/databinding/CallbackRegistry;->mRemainderRemoved:[J
-
     array-length p1, p1
 
     add-int/lit8 p1, p1, -0x1
@@ -1075,8 +1073,6 @@
     const/4 p1, 0x0
 
     .line 104
-    iget-wide v0, p0, Landroidx/databinding/CallbackRegistry;->mFirst64Removed:J
-
     invoke-direct {p0, p1, v0, v1}, Landroidx/databinding/CallbackRegistry;->removeRemovedCallbacks(IJ)V
 
     .line 105

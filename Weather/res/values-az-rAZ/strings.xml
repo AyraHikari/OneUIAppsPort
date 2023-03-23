@@ -33,6 +33,7 @@
     <string name="air_quality">Havanın keyfiyyəti</string>
     <string name="air_quality_next_tts">Daha gec günlük hava keyfiyyəti proqnozları</string>
     <string name="air_quality_previous_tts">Daha erkən günlük hava keyfiyyəti proqnozları</string>
+    <string name="alert_title">Kəskin hava şəraiti haqqında xəbərdarlıq</string>
     <string name="all_added_cities">Bütün əlavə edilən şəhərlər</string>
     <string name="allow">İcazə ver</string>
     <string name="allow_permission_in_settings">Bu funksiyadan istifadə etmək üçün Parametrlərdə icazə verməlisiniz.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Əməliyyat dəstəklənmir.</string>
     <string name="apply_daylight_saving_time">Yay vaxtı tətbiq edilsin?</string>
     <string name="as_possible_after_verification">Hesabat göndərildi. Şəhərin adı təsdiqdən sonra mümkün qədər tez dəyişəcək.</string>
+    <string name="auto_refresh_on_screen_description">Yenilənmiş hava məlumatlarını hər saat avtomatik əldə edin. Bu seçim yanılı olduqda əl ilə yeniləyə bilməyəcəksiniz.</string>
+    <string name="auto_refresh_on_the_go">Yolda olarkən avtomatik yenilə</string>
+    <string name="auto_refresh_on_the_go_advanced">Təkmil</string>
+    <string name="auto_refresh_on_the_go_description">Avtomobil idarə edərkən, velosiped sürərkən, qaçarkən və ya gəzərkən daha tez-tez hava yeniləmələri əldə edin. Bu funksiya yanılı olduqda əl ilə yeniləyə bilməzsiniz.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Avtomobil idarə edərkən, velosiped sürərkən, qaçarkən və ya yeriyərkən hava haqqında daha tez-tez yeniləmələr əldə edin.</string>
     <string name="btn_report">Hesabt</string>
     <string name="button_finish">Bitir</string>
     <string name="button_tts">Düymə</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Ətraflı məlumat almaq üçün iki dəfə vur.</string>
     <string name="china">Çin</string>
     <string name="cities_button">Şəhərlər</string>
+    <string name="city_added">Şəhər əlavə edildi.</string>
     <string name="city_list_text">Şəhərlər</string>
     <string name="clear">Aydın</string>
     <string name="clear_then_cloudy">Aydın və buludlu</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Element %d mövqeyinə gətirilmişdir.</string>
     <string name="dragndroplist_drag_start">%d mövqeyindəki elementi dartmağa başlayır.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d mövqedəki element dartıla bilməz.</string>
+    <string name="drawer_tips">%s məsləhət</string>
     <string name="drawer_tips_message">Məkanları əlavə etmək, silmək və sırasını dəyişmək üçün bura vurun. Həmçinin Əsas ekranda müxtəlif məkanlar göstərmək üçün bir neçə vidjet əlavə edə bilərsiniz.</string>
     <string name="drawer_tips_message_1">Məkanlar əlavə etmək, onları silmək və ya sırasını dəyişmək üçün bu menyunun aşağısındakı Məkanları idarə et seçiminə vurun.</string>
     <string name="drawer_tips_message_2">Eyni anda müxtəlif məkanların göstərilməsi üçün Əsas ekrana birdən çox vidjet əlavə edə bilərsiniz.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Proqnoz videosu</string>
     <string name="format_km_per_hour">%s km/s</string>
     <string name="format_m_per_hour">%s m/s</string>
+    <string name="fri">Cümə</string>
     <string name="general">Ümumi</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Telefonunuzdan istifadə qaydasına əsaslanan fərdiləşdirilmiş məzmun əldə edin.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Tabletinizdən istifadə qaydasına əsaslanan fərdiləşdirilmiş məzmun əldə edin.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">cari məkanınız üzrə məlumatlar da daxil olmaqla Hava proqramından hava məlumatları əldə edin</string>
     <string name="go_to_website">Vebsayta keç</string>
     <string name="goto_apps">Yeniləmə mövcuddur. İndi quraşdırılsın?</string>
     <string name="goto_apps_later">Daha sonra</string>
     <string name="goto_apps_now">İndi</string>
     <string name="goto_apps_update_title">Yeni məzmun xəbərdarlıqları</string>
     <string name="header_tts">Başlıq</string>
+    <string name="heavy">Çox</string>
     <string name="heavy_rain">Leysan</string>
     <string name="heavy_rain_followed_by_intense_heat">Güclü yağışlı, ardından şiddətli isti</string>
     <string name="heavy_rain_followed_by_light_rain">Güclü yağışlı, ardından şiddətli isti</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Görünüş</string>
     <string name="life_index_wind">Külək</string>
     <string name="life_index_wind_force">Küləyn sürəti</string>
+    <string name="light">Az</string>
     <string name="light_rain_followed_by_heavy_rain">Çiskin yağış, ardından güclü yağış</string>
     <string name="light_rain_with_some_heavy_rain">Zəif yağış, ardından qismən güclü yağış</string>
     <string name="link_tts">Keçid</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Nəticə tapılmadı.</string>
     <string name="message_service_not_available">Xidmət indi mövcud deyil.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">B.e</string>
     <string name="more">Dvmı</string>
     <string name="more_cuntact_us">Bizimlə əlaqə</string>
     <string name="more_information">Daha çox</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Havanın göstərildiyi standart yeri dəyişmək və bütün yerlərinizi idarə etmək üçün bura vurun.</string>
     <string name="new_version_available">%s yeni versiyası mövcuddur.</string>
     <string name="new_version_is_available">Yeni versiya movcuddur.</string>
+    <string name="news_menu_show_news">Xəbərləri göstərin</string>
+    <string name="news_opt_in_banner_title_text">Hava vidjetində xəbərlər göstərməklə cari hadisələrdən xəbərdar olun.</string>
+    <string name="news_opt_in_popup_desc_text">Hava vidjetində %s proqramından ən son başlıqları göstərməklə dünyadan xəbərdar olun.</string>
+    <string name="news_opt_in_popup_title_text">Xəbərlərə və hava məlumatlarına bir vidjetdə baxın</string>
+    <string name="news_request_agree_text">%s proqramından xəbərlər əldə etmək üçün vurun</string>
+    <string name="news_widget_bubble_text">Hava xəbərlərini əldə edin.</string>
+    <string name="news_widget_dummy_title">Bu günün ən populyar xəbəri</string>
+    <string name="news_widget_new_dummy_title">Bu səhər bilməli olduğunuz 5 şey</string>
+    <string name="news_widget_oobe_text">Xəbər əlavə etmək üçün vurun.</string>
     <string name="next">Növbəti şəhər</string>
+    <string name="next_btn">Növbəti</string>
     <string name="next_city">Növbəti şəhərin hava məlumatına baxmaq üçün iki dəfə vur.</string>
     <string name="night_tts">Gecə</string>
     <string name="no_application_available">Proqram yoxdur.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Hava məlumatı yoxdur</string>
     <string name="not_in_use">İstifadə edilmir</string>
     <string name="not_now">İndi deyil</string>
+    <string name="not_now_btn">İndi yox</string>
     <string name="not_selected">Seçilməyib</string>
     <string name="nothing_selected">He nə seçilməmişdir.</string>
     <string name="noti">Qeyd</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Ən tez və daha dəqiq yer aşkarlaması üçün PARAMETRLƏR vurun və Yer aşkarlama metodunu GPS, Wi-Fi və mobil şəbəkələr kimi qurun.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Ən tez və daha dəqiq yer aşkarlaması üçün PARAMETRLƏR vurun və Yer aşkarlama metodunu GPS və Wi-Fi kimi qurun.</string>
     <string name="notice_gps_trun_off_message_verizon">Yerli hava məlumatınıza baxmaq üçün Məkan parametrlərini yandırın və rejimin Yüksək dəqiqliyə təyin edildiyindən əmin olun.</string>
+    <string name="notification_alert_channel_name">Kəskin hava şəraiti haqqında xəbərdarlıq</string>
     <string name="notification_apps_update_channel_name">Bildirişləri yenilə</string>
     <string name="notification_auto_refresh_channel_name">Havanın avtomatik təzələnməsi</string>
     <string name="notification_dex_channel_name">Samsung DeX-də hava</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Proqramı aç</string>
     <string name="open_source_licences">Açıq mənbə lisenziyaları</string>
     <string name="other_locations">Digər yerlər</string>
+    <string name="partly_sunny">Qismən günəşli</string>
     <string name="paused">Fasilə verildi</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/s</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Çöküntü: %d mm</string>
     <string name="preview">%s icmal</string>
     <string name="previous">Əvvəlki şəhər</string>
+    <string name="previous_btn">Əvvəlki</string>
     <string name="previous_city">Əvvəlki şəhərin hava məlumatına baxmaq üçün iki dəfə vur.</string>
     <string name="privacy_policy">Məxfilik Siyasəti</string>
     <string name="probability_of_rain_text">Yağış ehtimalı</string>
     <string name="protect_your_content">Məzmunu qoruyun</string>
+    <string name="ps_in">%s düym</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar və xəritələr</string>
     <string name="rain">Yağış</string>
     <string name="rain_followed_by_intense_heat">Yağışlı, ardından şiddətli isti</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Hava məlumatını yeniləmək üçün PARAMETRLƏR vurun, Proqram məlumatı > İcazələr seçin və aşağıdakı icazələri verib yenidən cəhd edin:</string>
     <string name="runtime_location_permission_title">İcazələr ver</string>
     <string name="runtime_oem_grant_permission_desc">%s proqramına aşağıdakılara daxil olmaq icazəsi verilir:</string>
+    <string name="sat">Şən</string>
     <string name="save_button">Yaddaşa yaz</string>
     <string name="search_most_searched_for">Daha çox seçilənlər</string>
     <string name="search_tab_cities">Şəhərlər</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Yeni məzmun mövcuddur</string>
     <string name="sesl_material_overflow_badge_text_n">Yn</string>
     <string name="sesl_more_item_label">Daha çox</string>
+    <string name="sesl_preferecne_badge_description">Yeni bildiriş</string>
     <string name="sesl_preferencecategory_added_title">Başlıq</string>
     <string name="sesl_search_hint">Axtar</string>
     <string name="sesl_searchview_description_clear">Axtarış sahəsini sil</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Şəbəkə bağlantısını yoxla və yenidən cəhd et.</string>
     <string name="st_offline">Oflayn</string>
     <string name="st_view_less">Daha azına bax</string>
+    <string name="status_off">Sön</string>
+    <string name="status_on">Yan</string>
+    <string name="sun">B.</string>
     <string name="sunny">Günəşli</string>
     <string name="sunny_with_some_clouds">Günəşli, qismən buludlu</string>
     <string name="sunny_with_some_heavy_rain">Günəşli, qismən güclü yağışlı</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Köhnə cihazdan hava məlumatını bərpa etmək üçün bura vurun.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Yerinizi yenidən tapmaq üçün TƏKRARLA vurun.</string>
     <string name="tap_setting_message_edge_panel">Yerli hava proqnozu üçün Yer aşkarlamasını yandırın.</string>
+    <string name="tap_the_settings_icon">Parametrlər nişanına vurun.</string>
     <string name="tap_to_get_the_weather">Hava proqnozuna baxmaq üçün vurun</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Şərtlər və Qaydalar</string>
     <string name="the_latest_version">Ən son versiya artıq quraşdırılmışdır.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Bu, bildirişlər və Təqvimə də tətbiq ediləcək.</string>
+    <string name="thu">C.A.</string>
     <string name="tick_box_tts">Yoxlama xanası</string>
     <string name="ticked_tts">Qeyd edilmiş</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Hər saat</string>
     <string name="title_select_locations">Yerlər seçin</string>
     <string name="title_theme">Mövzular</string>
+    <string name="to_continue_agree_to_updated">Davam etmək üçün yenilənmiş %s ilə razılaşın.</string>
     <string name="to_get_local_weather_chn">"Yerli hava proqnozunu əldə etmək üçün hazırkı yeriniz hava xidmətləri təchizatçısına göndəriləcək. (Təchizatçının %1$sŞərtlər və Qaydalarına%2$s, eləcə də %3$sMəxfilik Siyasətinə%4$s baxın).
 Cihazınızda olan digər proqramlar və xidmətlər hava haqqında məlumatı bu proqramlarda göstərmək üçün həmin hava məlumatına çıxış imkanı əldə edə bilər.
 Sizi daim hava haqqında məlumat ilə təmin etmək üçün Hava xidməti proqramdan istifadə etmədiyiniz halda belə, yerinizə çıxış imkanı əldə edəcək."</string>
     <string name="today">Bu gün</string>
+    <string name="try_it_out_btn">Sına</string>
+    <string name="tue">Ç.A.</string>
+    <string name="turn_on_to_use_precise_location">Bu funksiyadan istifadə etmək üçün %s proqramının hər zaman məkanınıza daxil olmasına icazə verməli və Dəqiq məkandan istifadəni yandırmalısınız. Parametrlər üzərinə vurun, sonra İcazələr > Məkan bölməsinə keçin.</string>
     <string name="tw_title_weather_broadcast">Yayım</string>
-    <string name="unable_to_check_for_updates">Yeniləmələri yoxlamaq olmadı. Şəbəkə bağlantısı yoxdur.</string>
+    <string name="unable_to_check_for_updates">Yeniləmələri yoxlamaq olmadı. Daha sonra yenidən cəhd edin.</string>
     <string name="unable_to_receive_info_msg">Məlumat almaq mümkün deyil</string>
     <string name="unticked_tts">Qeyd silindi</string>
     <string name="unused">İstifadə edilməyən</string>
     <string name="update">Yenilə</string>
     <string name="update_abb8">Yenilə</string>
     <string name="update_app">Proqramı yenilə</string>
+    <string name="updated_tile_chn">Yenilənib: %s</string>
     <string name="updated_tts">%s yeniləndi</string>
+    <string name="use_current_location">Cari yerdən istifadə et</string>
     <string name="use_current_location_agree_popup">"Yerli hava məlumatını əldə etmək üçün cari yeriniz hava xidmətləri provayderinə göndəriləcəkdir. (Lütfən, təminatçının %1$sməxfilik siyasəti%2$s-nə baxın.)
 Cihazınızdakı digər proqramlar və xidmətlər həmin proqramlarda havanı göstərmək üçün yüklənilmiş hava məlumatlarına daxil ola bilər."</string>
     <string name="use_current_location_and_background_agree_popup">"Yerli hava proqnozunu əldə etmək üçün hazırkı yeriniz hava xidmətləri təchizatçısına göndəriləcək. (Təchizatçının %1$sMəxfilik Siyasətinə%2$s baxın).
@@ -635,9 +677,16 @@ Sizi daim hava haqqında məlumat ilə təmin etmək üçün Hava xidməti proqr
 Hava proqramının parametrlərinə daxil olaraq məkan məlumatlarından istifadəni söndürə bilərsiniz."</string>
     <string name="use_current_location_body_msg_chn">"“Hava” xidmətindən istifadə etməmişdən əvvəl diqqətlə oxuyun :
 Cari məkanınızın hava məlumatlarını öyrənmək istəyirsinizsə, üçüncü tərəf xidmət təchizatçısına cihazınıza davamlı (xidmətdən istifadə etmədiyiniz zaman daxil olmaqla) giriş imkanı və aşağıda qeyd edilən qaydada müəyyən verilənləri əldə etmək üçün icazə verməli olacaqsınız. Belə icazəni verməmişdən əvvəl üçüncü tərəf xidmət təchizatçısının %1$sŞərtlər və Qaydalarını%2$s, eləcə də %3$sMəxfilik Siyasətini%4$s diqqətlə oxuyun və anlayın. Parametrlər menyusunda “Məkan” seçimini söndürərək icazənizi geri çəkə bilərsiniz. Cihazınızdakı digər proqramlar və xidmətlər həmin proqramlarda və xidmətlərdə havanı göstərmək üçün yüklənmiş hava məlumatlarına giriş imkanı əldə edə bilər."</string>
+    <string name="use_current_location_body_msg_kor">"Cari məkan məlumatlarınız toplanacaq və yerli hava məlumatlarını əldə etmək kimi bəzi Hava proqramı funksiyalarını təmin etmək üçün istifadə olunacaq.
+
+Davamlı hava məlumatları təmin etmək üçün bu proqram hətta siz proqramdan istifadə etmədiyiniz zaman belə müntəzəm olaraq məkan məlumatlarınızı emal edəcək. Davam etməklə siz yuxarıdakı məqsədlər üçün məkan məlumatlarınızın toplanması və emalı ilə razılaşırsınız.
+
+Bu məkan məlumatlarının toplanması və istifadəsini Hava proqramı parametrlərində dayandıra bilərsiniz."</string>
     <string name="use_current_location_body_purpose">Məqsəd</string>
     <string name="use_current_location_body_purpose_content">Cari məkanınız üçün hava məlumatlarını təqdim etmək üçün</string>
     <string name="use_current_location_body_search_provider">Xidmət Təchizatçısı</string>
+    <string name="use_current_location_continue">Davam et</string>
+    <string name="use_current_location_not_now">İndi yox</string>
     <string name="use_current_location_off_alert_popup">Cari məkan məlumatı silinəcək.</string>
     <string name="useful_informations">Həyat məsləhətləri və başqa hesabatlar</string>
     <string name="using_as">%s kimi istifadə</string>
@@ -743,9 +792,11 @@ Cari məkanınızın hava məlumatlarını öyrənmək istəyirsinizsə, üçün
     <string name="weather_tip">Hava ipucları</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Çərş.</string>
     <string name="weekly_forecast">Gündəlik</string>
     <string name="widget_background">Vidjet fonu</string>
     <string name="widget_empty_text">Hava məlumatı üçün vurun</string>
+    <string name="widget_location">Şəhər adı</string>
     <string name="widget_name_4x1">Hava və Saat</string>
     <string name="widget_setting">Parametrlər</string>
     <string name="widget_setting_background_color">Fon rəngi</string>

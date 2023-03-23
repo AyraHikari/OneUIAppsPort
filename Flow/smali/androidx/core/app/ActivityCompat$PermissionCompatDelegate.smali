@@ -16,7 +16,33 @@
 
 # virtual methods
 .method public abstract onActivityResult(Landroid/app/Activity;IILandroid/content/Intent;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 .end method
 
 .method public abstract requestPermissions(Landroid/app/Activity;[Ljava/lang/String;I)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "permissions",
+            "requestCode"
+        }
+    .end annotation
 .end method

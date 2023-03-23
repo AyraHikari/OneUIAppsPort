@@ -36,17 +36,17 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 1627
+    .line 1786
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     const/4 p1, 0x0
 
-    .line 1604
+    .line 1760
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     const/high16 p1, 0x3f000000    # 0.5f
 
-    .line 1605
+    .line 1761
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
     return-void
@@ -55,17 +55,17 @@
 .method public constructor <init>(III)V
     .locals 0
 
-    .line 1631
+    .line 1790
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
 
     const/4 p1, 0x0
 
-    .line 1604
+    .line 1760
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     const/high16 p1, 0x3f000000    # 0.5f
 
-    .line 1605
+    .line 1761
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
     return-void
@@ -74,49 +74,49 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
-    .line 1611
+    .line 1768
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v0, 0x0
 
-    .line 1604
+    .line 1760
     iput v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     const/high16 v1, 0x3f000000    # 0.5f
 
-    .line 1605
+    .line 1761
     iput v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
-    .line 1613
+    .line 1770
     sget-object v2, Lcom/google/android/material/R$styleable;->CollapsingToolbarLayout_Layout:[I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 1614
+    .line 1771
     sget p2, Lcom/google/android/material/R$styleable;->CollapsingToolbarLayout_Layout_layout_collapseMode:I
 
-    .line 1615
+    .line 1772
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
     iput p2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
-    .line 1617
+    .line 1774
     sget p2, Lcom/google/android/material/R$styleable;->CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier:I
 
-    .line 1618
+    .line 1775
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result p2
 
-    .line 1617
+    .line 1774
     invoke-virtual {p0, p2}, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->setParallaxMultiplier(F)V
 
-    .line 1621
-    sget p2, Lcom/google/android/material/R$styleable;->CollapsingToolbarLayout_Layout_layout_isTitleCustom:I
+    .line 1779
+    sget p2, Lcom/google/android/material/R$styleable;->CollapsingToolbarLayout_Layout_isCustomTitle:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -124,7 +124,7 @@
 
     iput-boolean p2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->isTitleCustom:Z
 
-    .line 1623
+    .line 1782
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -133,17 +133,17 @@
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
 
-    .line 1635
+    .line 1794
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     const/4 p1, 0x0
 
-    .line 1604
+    .line 1760
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     const/high16 p1, 0x3f000000    # 0.5f
 
-    .line 1605
+    .line 1761
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
     return-void
@@ -152,17 +152,17 @@
 .method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
     .locals 0
 
-    .line 1639
+    .line 1798
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     const/4 p1, 0x0
 
-    .line 1604
+    .line 1760
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     const/high16 p1, 0x3f000000    # 0.5f
 
-    .line 1605
+    .line 1761
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
     return-void
@@ -171,17 +171,17 @@
 .method public constructor <init>(Landroid/widget/FrameLayout$LayoutParams;)V
     .locals 0
 
-    .line 1645
+    .line 1804
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(Landroid/widget/FrameLayout$LayoutParams;)V
 
     const/4 p1, 0x0
 
-    .line 1604
+    .line 1760
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     const/high16 p1, 0x3f000000    # 0.5f
 
-    .line 1605
+    .line 1761
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
     return-void
@@ -192,7 +192,7 @@
 .method public getCollapseMode()I
     .locals 1
 
-    .line 1666
+    .line 1825
     iget v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     return v0
@@ -201,25 +201,38 @@
 .method public getParallaxMultiplier()F
     .locals 1
 
-    .line 1704
+    .line 1847
     iget v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
     return v0
 .end method
 
-.method public getTitleIsCustom()Z
+.method public seslIsTitleCustom()Z
     .locals 1
 
-    .line 1681
+    .line 1862
     iget-boolean v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->isTitleCustom:Z
 
     return v0
 .end method
 
+.method public seslSetIsTitleCustom(Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 1855
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    iput-boolean p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->isTitleCustom:Z
+
+    return-void
+.end method
+
 .method public setCollapseMode(I)V
     .locals 0
 
-    .line 1655
+    .line 1814
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     return-void
@@ -228,21 +241,8 @@
 .method public setParallaxMultiplier(F)V
     .locals 0
 
-    .line 1694
+    .line 1837
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
-
-    return-void
-.end method
-
-.method public setTitleIsCustom(Ljava/lang/Boolean;)V
-    .locals 0
-
-    .line 1675
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p1
-
-    iput-boolean p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->isTitleCustom:Z
 
     return-void
 .end method

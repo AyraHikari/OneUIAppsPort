@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_main_layout" android:background="@color/col_0_000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:background="@drawable/widget_bg_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/widget_forecast_3x2_main_height_land">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleX="0.9" android:scaleY="0.9">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/widget_current_city_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.CityName" android:textSize="@dimen/widget_forecast_3x2_current_city_name_size_land" android:textColor="@color/col_widget_preview_font" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/widget_current_city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_location" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/widget_current_weather_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/widget_current_weather_icon" android:layout_width="@dimen/widget_forecast_3x2_current_weather_icon_size_land" android:layout_height="@dimen/widget_forecast_3x2_current_weather_icon_size_land" android:src="@drawable/ic_partly_sunny" />
+                            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Temperature" android:textSize="@dimen/widget_forecast_3x2_current_weather_temp_size_land" android:textColor="@color/col_widget_preview_font" android:gravity="start|center" android:id="@id/widget_current_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23°" android:layout_marginStart="@dimen/widget_forecast_3x2_current_weather_temp_marginStart_land" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="end" android:layout_gravity="center" android:id="@id/widget_forecast_weather_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_forecast_3x2_forecast_container_marginStart">
+                            <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/widget_forecast_weather_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.AdditionalInfo" android:textSize="@dimen/widget_forecast_3x2_forecast_text_size_land" android:textColor="@color/col_widget_preview_font" android:id="@id/widget_forecast_weather_one_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mon" />
+                                <ImageView android:id="@id/widget_forecast_weather_one_image" android:layout_width="@dimen/widget_forecast_3x2_forecast_icon_size_land" android:layout_height="@dimen/widget_forecast_3x2_forecast_icon_size_land" android:src="@drawable/ic_sunny_whitebg" android:scaleType="fitXY" android:layout_marginStart="@dimen/widget_forecast_3x2_forecast_icon_marginStart_land" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/widget_forecast_weather_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_forecast_3x2_forecast_marginStart_land">
+                                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.AdditionalInfo" android:textSize="@dimen/widget_forecast_3x2_forecast_text_size_land" android:textColor="@color/col_widget_preview_font" android:id="@id/widget_forecast_weather_two_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tue" />
+                                <ImageView android:id="@id/widget_forecast_weather_two_image" android:layout_width="@dimen/widget_forecast_3x2_forecast_icon_size_land" android:layout_height="@dimen/widget_forecast_3x2_forecast_icon_size_land" android:src="@drawable/ic_cloudy" android:scaleType="fitXY" android:layout_marginStart="@dimen/widget_forecast_3x2_forecast_icon_marginStart_land" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/widget_forecast_weather_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_forecast_3x2_forecast_marginStart_land">
+                                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.AdditionalInfo" android:textSize="@dimen/widget_forecast_3x2_forecast_text_size_land" android:textColor="@color/col_widget_preview_font" android:id="@id/widget_forecast_weather_three_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wed" />
+                                <ImageView android:id="@id/widget_forecast_weather_three_image" android:layout_width="@dimen/widget_forecast_3x2_forecast_icon_size_land" android:layout_height="@dimen/widget_forecast_3x2_forecast_icon_size_land" android:src="@drawable/ic_rain" android:scaleType="fitXY" android:layout_marginStart="@dimen/widget_forecast_3x2_forecast_icon_marginStart_land" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

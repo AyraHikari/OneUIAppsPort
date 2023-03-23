@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/util/MediaScannerWrapper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 26
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/MediaScannerWrapper$1;->this$0:Lcom/samsung/android/galaxycontinuity/util/MediaScannerWrapper;
@@ -37,6 +45,18 @@
 # virtual methods
 .method public onCompleted(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;Ljava/lang/String;Landroid/net/Uri;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedContentsItem",
+            "path",
+            "uri"
+        }
+    .end annotation
 
     return-void
 .end method

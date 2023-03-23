@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_sync" android:title="@string/menu_sync" android:showAsAction="never" />
+    <item android:id="@id/menu_edit" android:visible="false" android:title="@string/menu_edit" android:showAsAction="never" />
+    <item android:id="@id/menu_share" android:visible="false" android:title="@string/menu_share" android:showAsAction="never" />
+    <item android:id="@id/menu_view_list_type" android:visible="false" android:title="@string/menu_view" android:showAsAction="never" />
+    <item android:id="@id/menu_create_folder" android:title="@string/menu_create_folder" android:showAsAction="never" />
+    <item android:id="@id/menu_analyze_storage" android:visible="false" android:title="@string/menu_analyze_storage" android:showAsAction="never" />
+    <item android:id="@id/menu_settings" android:title="@string/menu_settings" android:showAsAction="never" />
+</menu>

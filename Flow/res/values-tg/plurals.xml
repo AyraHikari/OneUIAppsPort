@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Дар Samsung Flow то %d компютер ё планшетро қайд ва идора кунед.
-
-Ба телефони шумо якбора танҳо як компютер ё планшет пайваст кардан мумкин аст. Вақте ки ҳар ду компютер ё планшет мехоҳанд ба телефонатон пайваст шаванд, шумо бояд якеи онҳоро интихоб кунед."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Дар Samsung Flow то %d компютер ё планшетро қайд ва идора кунед.
-
-Ба телефони шумо якбора танҳо як компютер ё планшет пайваст кардан мумкин аст. Вақте ки ҳар ду компютер ё планшет мехоҳанд ба телефонатон пайваст шаванд, шумо бояд якеи онҳоро интихоб кунед."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

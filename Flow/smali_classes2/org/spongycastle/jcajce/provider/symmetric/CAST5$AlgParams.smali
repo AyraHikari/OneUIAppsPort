@@ -277,7 +277,7 @@
     :cond_0
     new-instance p1, Ljava/security/spec/InvalidParameterSpecException;
 
-    const-string v0, "unknown parameter spec passed to CAST5 parameters object."
+    const-string/jumbo v0, "unknown parameter spec passed to CAST5 parameters object."
 
     invoke-direct {p1, v0}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
 

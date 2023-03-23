@@ -611,13 +611,11 @@
 
     .line 263
     :goto_0
-    iget v0, p0, Lcom/bumptech/glide/gifencoder/LZWEncoder;->cur_bits:I
+    iget v0, p0, Lcom/bumptech/glide/gifencoder/LZWEncoder;->n_bits:I
 
-    iget v1, p0, Lcom/bumptech/glide/gifencoder/LZWEncoder;->n_bits:I
+    add-int/2addr v2, v0
 
-    add-int/2addr v0, v1
-
-    iput v0, p0, Lcom/bumptech/glide/gifencoder/LZWEncoder;->cur_bits:I
+    iput v2, p0, Lcom/bumptech/glide/gifencoder/LZWEncoder;->cur_bits:I
 
     .line 265
     :goto_1

@@ -87,6 +87,16 @@
 
 .method protected setContactCrc([BI)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "pos"
+        }
+    .end annotation
 
     .line 74
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData$Data;->mContactCrc:[B
@@ -102,6 +112,16 @@
 
 .method protected setContactHash([BI)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "pos"
+        }
+    .end annotation
 
     .line 70
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData$Data;->mContactHash:[B
@@ -117,6 +137,14 @@
 
 .method protected setDeviceCategory(B)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "category"
+        }
+    .end annotation
 
     .line 66
     iput-byte p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData$Data;->mDeviceCategory:B
@@ -126,6 +154,16 @@
 
 .method protected setDeviceId([BI)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "pos"
+        }
+    .end annotation
 
     .line 78
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData$Data;->mDeviceId:[B

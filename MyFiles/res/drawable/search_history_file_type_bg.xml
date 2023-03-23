@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_selected="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/search_filter_item_bg_radius" />
+                    <solid android:color="@color/search_filter_item_bg_color" />
+                </shape>
+            </item>
+            <item android:state_selected="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/search_filter_item_bg_radius" />
+                    <stroke android:width="@dimen/search_filter_item_bg_stroke_selected" android:color="@color/search_filter_item_bg_color_selected" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

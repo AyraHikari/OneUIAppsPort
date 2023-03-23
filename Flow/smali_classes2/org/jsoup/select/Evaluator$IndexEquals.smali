@@ -18,7 +18,7 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 351
+    .line 386
     invoke-direct {p0, p1}, Lorg/jsoup/select/Evaluator$IndexEvaluator;-><init>(I)V
 
     return-void
@@ -29,12 +29,8 @@
 .method public matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
     .locals 0
 
-    .line 356
-    invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->elementSiblingIndex()Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    .line 391
+    invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->elementSiblingIndex()I
 
     move-result p1
 
@@ -60,7 +56,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 361
+    .line 396
     iget v1, p0, Lorg/jsoup/select/Evaluator$IndexEquals;->index:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

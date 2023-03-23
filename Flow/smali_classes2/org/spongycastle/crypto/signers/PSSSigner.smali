@@ -828,9 +828,7 @@
     .line 277
     iget-object v1, p0, Lorg/spongycastle/crypto/signers/PSSSigner;->block:[B
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/signers/PSSSigner;->block:[B
-
-    array-length v2, v2
+    array-length v2, v1
 
     array-length v3, p1
 

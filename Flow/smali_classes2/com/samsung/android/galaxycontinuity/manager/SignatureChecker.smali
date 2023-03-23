@@ -15,6 +15,14 @@
 
 .method public static checkSignatureAllow(Ljava/lang/String;)Z
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pkgName"
+        }
+    .end annotation
 
     .line 32
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -99,6 +107,14 @@
 
 .method private static getSignatures(Ljava/lang/String;)[Landroid/content/pm/Signature;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pkgName"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -133,7 +149,7 @@
 
     .line 25
     :goto_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1c
 

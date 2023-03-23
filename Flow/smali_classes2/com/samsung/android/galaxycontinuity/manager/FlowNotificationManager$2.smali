@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 492
+    .line 494
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager$2;->this$0:Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +46,12 @@
 .method public run()V
     .locals 3
 
-    const-string v0, "sendCurrentStatusBarNoti"
+    const-string/jumbo v0, "sendCurrentStatusBarNoti"
 
-    .line 495
+    .line 497
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 496
+    .line 498
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager$2;->this$0:Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->access$900(Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;)Ljava/util/List;
@@ -67,14 +75,14 @@
 
     check-cast v1, Landroid/service/notification/StatusBarNotification;
 
-    .line 497
+    .line 499
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager$2;->this$0:Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     invoke-virtual {v2, v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->notificationPosted(Landroid/service/notification/StatusBarNotification;)V
 
     const-wide/16 v1, 0x3c
 
-    .line 501
+    .line 503
     :try_start_0
     invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -85,7 +93,7 @@
     :catch_0
     move-exception v1
 
-    .line 503
+    .line 505
     invoke-virtual {v1}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     goto :goto_0

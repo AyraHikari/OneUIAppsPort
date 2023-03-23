@@ -3,38 +3,31 @@
 .source "SeslMenuDivider.java"
 
 
-# static fields
-.field private static final CIRCLE_INTERVAL:F = 3.0f
-
-.field private static final DIAMETER_SIZE:F = 1.5f
-
-
 # instance fields
-.field private final mDiameter:I
+.field public final h:I
 
-.field private final mInterval:I
+.field public final i:I
 
-.field private mPaint:Landroid/graphics/Paint;
+.field public j:Landroid/graphics/Paint;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 26
-    invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/SeslMenuDivider;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 31
+    .line 1
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/SeslMenuDivider;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -42,11 +35,23 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyleAttr"
+        }
+    .end annotation
 
-    .line 35
+    .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 37
+    .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
@@ -59,66 +64,66 @@
 
     const/high16 v0, 0x3fc00000    # 1.5f
 
-    .line 38
+    .line 4
     invoke-static {p3, v0, p2}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
 
     move-result v0
 
     float-to-int v0, v0
 
-    iput v0, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mDiameter:I
+    iput v0, p0, Landroidx/appcompat/widget/SeslMenuDivider;->i:I
 
     const/high16 v0, 0x40400000    # 3.0f
 
-    .line 39
+    .line 5
     invoke-static {p3, v0, p2}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
 
     move-result p2
 
     float-to-int p2, p2
 
-    iput p2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mInterval:I
+    iput p2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->h:I
 
-    .line 41
+    .line 6
     new-instance p2, Landroid/graphics/Paint;
 
     invoke-direct {p2}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object p2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mPaint:Landroid/graphics/Paint;
+    iput-object p2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->j:Landroid/graphics/Paint;
 
-    .line 42
+    .line 7
     invoke-virtual {p2, p3}, Landroid/graphics/Paint;->setFlags(I)V
 
-    .line 43
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SeslMenuDivider;->getResources()Landroid/content/res/Resources;
+    .line 8
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
 
-    .line 44
-    invoke-static {p1}, Landroidx/appcompat/util/SeslMisc;->isLightTheme(Landroid/content/Context;)Z
+    .line 9
+    invoke-static {p1}, Li/a;->a(Landroid/content/Context;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    sget p1, Landroidx/appcompat/R$color;->sesl_popup_menu_divider_color_light:I
+    sget p1, Lc/c;->sesl_popup_menu_divider_color_light:I
 
     goto :goto_0
 
-    .line 45
+    .line 10
     :cond_0
-    sget p1, Landroidx/appcompat/R$color;->sesl_popup_menu_divider_color_dark:I
+    sget p1, Lc/c;->sesl_popup_menu_divider_color_dark:I
 
     :goto_0
     const/4 p3, 0x0
 
-    .line 43
-    invoke-virtual {p2, p1, p3}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
+    .line 11
+    invoke-static {p2, p1, p3}, Le0/f;->d(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
 
     move-result p1
 
-    .line 46
-    iget-object p2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mPaint:Landroid/graphics/Paint;
+    .line 12
+    iget-object p2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->j:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -127,40 +132,48 @@
 
 
 # virtual methods
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
-    .line 51
+    .line 1
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 53
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SeslMenuDivider;->getWidth()I
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
     move-result v0
 
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SeslMenuDivider;->getPaddingStart()I
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingStart()I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SeslMenuDivider;->getPaddingEnd()I
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingEnd()I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    .line 54
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SeslMenuDivider;->getHeight()I
+    .line 3
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getHeight()I
 
     move-result v1
 
-    .line 56
-    iget v2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mDiameter:I
+    .line 4
+    iget v2, p0, Landroidx/appcompat/widget/SeslMenuDivider;->i:I
 
     sub-int v3, v0, v2
 
-    iget v4, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mInterval:I
+    iget v4, p0, Landroidx/appcompat/widget/SeslMenuDivider;->h:I
 
     add-int/2addr v4, v2
 
@@ -182,19 +195,19 @@
 
     float-to-int v2, v2
 
-    .line 59
-    invoke-virtual {p0}, Landroidx/appcompat/widget/SeslMenuDivider;->getPaddingStart()I
+    .line 5
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingStart()I
 
     move-result v6
 
     add-int/2addr v2, v6
 
-    .line 60
-    iget v6, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mDiameter:I
+    .line 6
+    iget v6, p0, Landroidx/appcompat/widget/SeslMenuDivider;->i:I
 
     sub-int/2addr v0, v6
 
-    iget v7, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mInterval:I
+    iget v7, p0, Landroidx/appcompat/widget/SeslMenuDivider;->h:I
 
     add-int/2addr v7, v6
 
@@ -202,7 +215,7 @@
 
     sub-int/2addr v0, v7
 
-    .line 61
+    .line 7
     rem-int/lit8 v6, v6, 0x2
 
     if-eqz v6, :cond_0
@@ -214,10 +227,10 @@
 
     if-lez v4, :cond_1
 
-    .line 69
+    .line 8
     div-int v7, v0, v4
 
-    .line 70
+    .line 9
     rem-int/2addr v0, v4
 
     goto :goto_0
@@ -237,25 +250,25 @@
 
     int-to-float v8, v8
 
-    .line 75
+    .line 10
     div-int/lit8 v9, v1, 0x2
 
     int-to-float v9, v9
 
-    iget v10, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mDiameter:I
+    iget v10, p0, Landroidx/appcompat/widget/SeslMenuDivider;->i:I
 
     int-to-float v10, v10
 
     div-float/2addr v10, v5
 
-    iget-object v11, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mPaint:Landroid/graphics/Paint;
+    iget-object v11, p0, Landroidx/appcompat/widget/SeslMenuDivider;->j:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v8, v9, v10, v11}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 76
-    iget v8, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mDiameter:I
+    .line 11
+    iget v8, p0, Landroidx/appcompat/widget/SeslMenuDivider;->i:I
 
-    iget v9, p0, Landroidx/appcompat/widget/SeslMenuDivider;->mInterval:I
+    iget v9, p0, Landroidx/appcompat/widget/SeslMenuDivider;->h:I
 
     add-int/2addr v8, v9
 

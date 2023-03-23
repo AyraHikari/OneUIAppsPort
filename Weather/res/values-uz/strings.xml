@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Kirish</string>
     <string name="common_signin_button_text_long">Google orqali kirish</string>
     <string name="copy">Nusxa olish</string>
-    <string name="copy_toast_msg">Havoladan vaqtinchalik xotiraga nusxa olindi</string>
     <string name="error_icon_content_description">Xato</string>
     <string name="expand_button_title">Kengaytirilgan</string>
     <string name="exposed_dropdown_menu_content_description">Pastga ochiluvchi menyuni ochish</string>
-    <string name="fallback_menu_item_copy_link">Havoladan nusxa olish</string>
-    <string name="fallback_menu_item_open_in_browser">Brauzerda ochish</string>
-    <string name="fallback_menu_item_share_link">Havolani ulashish</string>
     <string name="icon_content_description">Muloqot ikonkasi</string>
     <string name="item_view_role_description">Tab : Varaq</string>
     <string name="material_clock_toggle_content_description">Tushdan oldin yoki keyinligini tanlang</string>

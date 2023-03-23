@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract setActivityChooserModel(Landroidx/appcompat/widget/ActivityChooserModel;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataModel"
+        }
+    .end annotation
 .end method

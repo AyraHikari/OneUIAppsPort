@@ -21,6 +21,14 @@
 # virtual methods
 .method public parse(Lorg/json/JSONObject;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const-string v0, "deviceScreenState"
 
@@ -48,9 +56,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/command/source/ChangeBlackScreenCommand;->state:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -82,6 +94,14 @@
 
 .method public run(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 35
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/command/source/ChangeBlackScreenCommand;->state:Ljava/lang/String;
@@ -148,9 +168,11 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 42
     :goto_0
-    invoke-virtual {p1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    const-string v1, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
+
+    .line 42
+    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
     return-void
 .end method

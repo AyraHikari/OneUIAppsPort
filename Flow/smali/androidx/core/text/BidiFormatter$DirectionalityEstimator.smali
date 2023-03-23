@@ -67,6 +67,16 @@
 
 .method constructor <init>(Ljava/lang/CharSequence;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "text",
+            "isHtml"
+        }
+    .end annotation
 
     .line 628
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -89,6 +99,14 @@
 
 .method private static getCachedDirectionality(C)B
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     const/16 v0, 0x700
 
@@ -244,11 +262,8 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 913
-    :cond_3
-    iget-char v1, p0, Landroidx/core/text/BidiFormatter$DirectionalityEstimator;->lastChar:C
-
     .line 914
+    :cond_3
     :goto_0
     iget v2, p0, Landroidx/core/text/BidiFormatter$DirectionalityEstimator;->charIndex:I
 
@@ -327,11 +342,8 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 881
-    :cond_2
-    iget-char v1, p0, Landroidx/core/text/BidiFormatter$DirectionalityEstimator;->lastChar:C
-
     .line 882
+    :cond_2
     :goto_0
     iget v2, p0, Landroidx/core/text/BidiFormatter$DirectionalityEstimator;->charIndex:I
 

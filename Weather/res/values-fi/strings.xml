@@ -60,6 +60,7 @@
     <string name="air_quality">Ilmanlaatu</string>
     <string name="air_quality_next_tts">Myöhemmät päivittäiset ilmanlaatuennusteet</string>
     <string name="air_quality_previous_tts">Aikaisemmat päivittäiset ilmanlaatuennusteet</string>
+    <string name="alert_title">Rajun sään hälytys</string>
     <string name="all_added_cities">Kaikki lisätyt kaupungit</string>
     <string name="allow">Salli</string>
     <string name="allow_permission_in_settings">Jos haluat käyttää tätä toimintoa, sinun on myönnettävä käyttöoikeudet Asetukset-kohdassa.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Toimintoa ei tueta.</string>
     <string name="apply_daylight_saving_time">Otetaanko kesäaika käyttöön?</string>
     <string name="as_possible_after_verification">Ilmoitus lähetetty. Kaupungin nimi muutetaan mahdollisimman pian tarkistuksen jälkeen.</string>
+    <string name="auto_refresh_on_screen_description">Vastaanota päivitetyt säätiedot automaattisesti tunnin välein. Kun tämä toiminto on käytössä, et voi päivittää manuaalisesti.</string>
+    <string name="auto_refresh_on_the_go">Automaattinen päivitys liikkuessa</string>
+    <string name="auto_refresh_on_the_go_advanced">Lisäasetukset</string>
+    <string name="auto_refresh_on_the_go_description">Vastaanota sääpäivityksiä useammin ajon, pyöräilyn, juoksun tai kävelyn aikana. Kun tämä toiminto on käytössä, et voi päivittää manuaalisesti.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Vastaanota sääpäivityksiä useammin ajon, pyöräilyn, juoksun tai kävelyn aikana.</string>
     <string name="bottomsheet_action_expand_halfway">Laajenna puoliväliin</string>
     <string name="btn_report">Ilmoita</string>
     <string name="button_finish">Valmis</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Lisätietoja saat kaksoisnapauttamalla.</string>
     <string name="china">Kiina</string>
     <string name="cities_button">Kaupungit</string>
+    <string name="city_added">Kaupunki lisätty.</string>
     <string name="city_list_text">Kaupungit</string>
     <string name="clear">Kirkasta</string>
     <string name="clear_text_end_icon_content_description">Tyhjennä teksti</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Laitteesi sijaintitiedot lähetetään sisällöntarjoajalle, jotta saat paikallisia säätietoja.</string>
     <string name="contents_error_msg">Tämä palvelu ei väliaikaisesti ole käytettävissä. Yritä myöhemmin uudelleen.</string>
     <string name="copy">Kopioi</string>
-    <string name="copy_toast_msg">Linkki kopioitu leikepöydälle</string>
     <string name="correct_city_name">Oikea kaupungin nimi</string>
     <string name="couldnt_find_location">Sijaintia ei löytynyt</string>
     <string name="cover_screen_top_sync_dialog_text">Asetetaanko sama sijainti päänäyttöön?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Kohde pudotettu sijaintiin %d.</string>
     <string name="dragndroplist_drag_start">Sijainnissa %d olevan kohteen vetäminen on aloitettu.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Sijainnissa %d olevaa kohdetta ei voi vetää.</string>
+    <string name="drawer_tips">Laitteeseen %s liittyviä vihjeitä</string>
     <string name="drawer_tips_message">Voit lisätä, poistaa ja järjestellä sijainteja napauttamalla tätä. Voit myös lisätä useita pienoisohjelmia näyttääksesi eri sijainnit alkunäytössä.</string>
     <string name="drawer_tips_message_1">Napauta tämän valikon alaosassa Sijaintien hallinta, jos haluat lisätä, poistaa ja järjestellä sijainteja.</string>
     <string name="drawer_tips_message_2">Voit lisätä alkunäyttöön useita pienoisohjelmia, jos haluat näyttää eri sijainteja samaan aikaan.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Lisäasetukset</string>
     <string name="exposed_dropdown_menu_content_description">Näytä avattava valikko</string>
     <string name="failed_to_send_report">Raportin lähetys epäonnistui</string>
-    <string name="fallback_menu_item_copy_link">Kopioi linkki</string>
-    <string name="fallback_menu_item_open_in_browser">Avaa selaimessa</string>
-    <string name="fallback_menu_item_share_link">Jaa linkki</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Suosikkisijainti</string>
     <string name="feel_like_pd_minus_temp">Tuntuu kuin -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Ennustevideo</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">pe</string>
     <string name="general">Yleiset</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Hanki puhelimen käyttöön perustuvia yksilöllisiä sisältöjä.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Hanki tablet-laitteen käyttöön perustuvia yksilöllisiä sisältöjä.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">hakea säätiedot, muun muassa nykyisen sijaintisi, Sää-sovelluksesta</string>
     <string name="go_to_website">Siirry sivustoon</string>
     <string name="goto_apps">Uusi päivitys saatavilla. Asennetaanko nyt?</string>
     <string name="goto_apps_later">Myöhemmin</string>
     <string name="goto_apps_now">Nyt</string>
     <string name="goto_apps_update_title">Uutta sisältöä koskevat hälytykset</string>
     <string name="header_tts">Otsikko</string>
+    <string name="heavy">Raskas</string>
     <string name="heavy_rain">Voimakasta sadetta</string>
     <string name="heavy_rain_followed_by_intense_heat">Voimakasta sadetta, sen jälkeen erittäin lämmintä</string>
     <string name="heavy_rain_followed_by_light_rain">Voimakasta sadetta, sen jälkeen erittäin lämmintä</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Näkyvyys</string>
     <string name="life_index_wind">Tuuli</string>
     <string name="life_index_wind_force">Tuulen nopeus</string>
+    <string name="light">Kevyt</string>
     <string name="light_rain_followed_by_heavy_rain">Kevyttä sadetta, joka voimistuu</string>
     <string name="light_rain_with_some_heavy_rain">Kevyttä, ajoittain voimakasta sadetta</string>
     <string name="link_tts">Linkki</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Tuloksia ei löytynyt.</string>
     <string name="message_service_not_available">Palvelu ei ole käytettävissä juuri nyt.</string>
     <string name="minus_tts">Miinus</string>
+    <string name="mon">ma</string>
     <string name="more">Lisää</string>
     <string name="more_cuntact_us">Ota meihin yhteyttä</string>
     <string name="more_information">Lisää</string>
@@ -482,7 +491,7 @@
     <string name="mtrl_picker_invalid_format_use">Käytä muotoa %1$s</string>
     <string name="mtrl_picker_invalid_range">Virheellinen alue</string>
     <string name="mtrl_picker_navigate_to_year_description">Siirry vuoteen %1$s</string>
-    <string name="mtrl_picker_out_of_range">Katvealueella: %1$s</string>
+    <string name="mtrl_picker_out_of_range">Aikavälin ulkop.: %1$s</string>
     <string name="mtrl_picker_range_header_only_end_selected">Alkamispäivä – %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s – päättymispäivä</string>
     <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Napauta tätä, jos haluat vaihtaa sään oletussijainnin ja hallita kaikkia sijainteja.</string>
     <string name="new_version_available">Sovelluksesta %s on saatavilla uusi versio.</string>
     <string name="new_version_is_available">Uusi versio saatavilla</string>
+    <string name="news_menu_show_news">Näytä uutiset</string>
+    <string name="news_opt_in_banner_title_text">Seuraa ajankohtaisia tapahtumia näyttämällä uutiset Sää-pienoisohjelmassa.</string>
+    <string name="news_opt_in_popup_desc_text">Seuraa maailman tapahtumia näyttämällä sovelluksen %s viimeisimmät uutisaiheet Sää-pienoisohjelmassa.</string>
+    <string name="news_opt_in_popup_title_text">Katso uutiset ja sää yhdestä pienoisohjelmasta</string>
+    <string name="news_request_agree_text">Napauta, jos haluat saada uutisia henkilöltä %s</string>
+    <string name="news_widget_bubble_text">Vastaanota uutisia sään mukana.</string>
+    <string name="news_widget_dummy_title">Päivän huippujuttu</string>
+    <string name="news_widget_new_dummy_title">Viisi asiaa, jotka sinun on tiedettävä tänä aamuna</string>
+    <string name="news_widget_oobe_text">Lisää uutiset napauttamalla tätä.</string>
     <string name="next">Seur. kaupunki</string>
+    <string name="next_btn">Seuraava</string>
     <string name="next_city">Näytä seuraavan kaupungin säätiedot kaksoisnapauttamalla.</string>
     <string name="night_tts">Yöllä</string>
     <string name="no_application_available">Sovelluksia ei ole käytettävissä.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Säätietoja ei ole</string>
     <string name="not_in_use">Ei ole käytössä</string>
     <string name="not_now">Ei nyt</string>
+    <string name="not_now_btn">Ei nyt</string>
     <string name="not_selected">Ei ole valittu</string>
     <string name="not_set">Ei asetettu</string>
     <string name="nothing_selected">Mitään ei valittu.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Voit varmistaa sijainnin nopeimman ja tarkimman mahdollisen tunnistuksen napauttamalla ASETUKSET ja asettamalla Paikannustapa-asetukseksi GPS-, Wi-Fi- ja matkapuhelinverkot.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Voit varmistaa sijainnin nopeimman ja tarkimman mahdollisen tunnistuksen napauttamalla ASETUKSET ja asettamalla Paikannustapa-asetukseksi GPS ja Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Jos haluat tarkastella paikallisia säätietoja, ota Sijaintiasetukset-toiminto käyttöön ja varmista, että tilaksi on asetettu Suuri tarkkuus.</string>
+    <string name="notification_alert_channel_name">Rajun sään hälytys</string>
     <string name="notification_apps_update_channel_name">Päivitysilmoitukset</string>
     <string name="notification_auto_refresh_channel_name">Sään automaattinen päivitys</string>
     <string name="notification_dex_channel_name">Sää Samsung DeX:ssä</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Avaa sovellus</string>
     <string name="open_source_licences">Avoimen lähdekoodin käyttöoikeudet</string>
     <string name="other_locations">Muut sijainnit</string>
+    <string name="partly_sunny">Osittain aurinkoista</string>
     <string name="password_toggle_content_description">Näytä salasana</string>
     <string name="paused">Keskeytetty</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">%1$s kopioitiin leikepöydälle.</string>
     <string name="preview">%s: esikatselu</string>
     <string name="previous">Edell. kaupunki</string>
+    <string name="previous_btn">Edellinen</string>
     <string name="previous_city">Näytä edellisen kaupungin säätiedot kaksoisnapauttamalla.</string>
     <string name="privacy_policy">Tietosuojakäytäntö</string>
     <string name="probability_of_rain_text">Sateen todennäk.</string>
     <string name="protect_your_content">Suojaa sisältöäsi</string>
+    <string name="ps_in">%s tuumaa</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Tutka ja kartat</string>
     <string name="rain">Sade</string>
     <string name="rain_followed_by_intense_heat">Sadetta, sen jälkeen erittäin lämmintä</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Jos haluat päivittää säätiedot, napauta ASETUKSET, valitse Sovelluksen tiedot > Käyttöoikeudet, myönnä seuraavat oikeudet ja yritä uudelleen:</string>
     <string name="runtime_location_permission_title">Myönnä käyttöoikeudet</string>
     <string name="runtime_oem_grant_permission_desc">Sovellus %s voi käyttää seuraavia:</string>
+    <string name="sat">la</string>
     <string name="save_button">Tallenna</string>
     <string name="search_menu_title">Haku</string>
     <string name="search_most_searched_for">Haetuimmat</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Uutta sisältöä saatavilla</string>
     <string name="sesl_material_overflow_badge_text_n">U</string>
     <string name="sesl_more_item_label">Lisää</string>
+    <string name="sesl_preferecne_badge_description">Uusi ilmoitus</string>
     <string name="sesl_preferencecategory_added_title">Otsikko</string>
     <string name="sesl_search_hint">Hae</string>
     <string name="sesl_searchview_description_clear">Tyhjennä hakukenttä</string>
@@ -639,8 +666,8 @@
     <string name="sesl_searchview_description_voice">Puhehaku</string>
     <string name="sesl_switch_off">Ei käytössä</string>
     <string name="sesl_switch_on">Käytössä</string>
-    <string name="sesl_switchbar_off_text">Pois päältä</string>
-    <string name="sesl_switchbar_on_text">Päällä</string>
+    <string name="sesl_switchbar_off_text">Ei käytössä</string>
+    <string name="sesl_switchbar_on_text">Käytössä</string>
     <string name="sesl_toolbar_collapse_description">Kutista</string>
     <string name="set_default_location">Aseta oletussijainti.</string>
     <string name="set_favorite">Aseta suosikki</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Näytä vähemmän</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Ei käytössä</string>
+    <string name="status_on">Käytössä</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">su</string>
     <string name="sunny">Aurinkoinen</string>
     <string name="sunny_with_some_clouds">Aurinkoista, jonkin verran pilvistä</string>
     <string name="sunny_with_some_heavy_rain">Aurinkoista, jonkin verran voimakasta sadetta</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Napauta tätä, jos haluat palauttaa säätiedot vanhasta laitteesta.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Yritä etsiä sijaintisi uudelleen napauttamalla YRITÄ UUDELLEEN.</string>
     <string name="tap_setting_message_edge_panel">Ota Sijainti-toiminto paikallisen sään hakemiseksi käyttöön.</string>
+    <string name="tap_the_settings_icon">Napauta asetuskuvaketta.</string>
     <string name="tap_to_get_the_weather">Katso sää napauttamalla</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Käyttöehdot</string>
     <string name="the_latest_version">Uusin versio on jo asennettu.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Tätä käytetään myös ilmoituksissa ja Kalenterissa.</string>
+    <string name="thu">to</string>
     <string name="tick_box_tts">Valintaruutu</string>
     <string name="ticked_tts">Valittu</string>
     <string name="time_am">AP</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Tunti</string>
     <string name="title_select_locations">Valitse sijainnit</string>
     <string name="title_theme">Teemat</string>
+    <string name="to_continue_agree_to_updated">Hyväksy päivitetty %s-asiakirja ennen jatkamista.</string>
     <string name="to_get_local_weather_chn">"Jotta saisit paikalliset säätiedot, tämänhetkinen sijaintisi lähetetään sääpalveluiden toimittajalle. (Katso palvelun toimittajan %1$skäyttöehdot%2$s ja %3$stietosuojakäytäntö%4$s).
 Muut laitteesi sovellukset ja palvelut saattavat käyttää haettuja säätietoja näyttääkseen säätiedot kyseisissä sovelluksissa.
 Tarjotaksemme sinulle jatkuvia säätietoja Sää-sovelluksella on pääsy sijaintitietoihisi myös silloin, kun et käytä sovellusta."</string>
     <string name="today">Tänään</string>
+    <string name="try_it_out_btn">Kokeile</string>
+    <string name="tue">ti</string>
+    <string name="turn_on_to_use_precise_location">Jos haluat käyttää tätä toimintoa, sinun on sallittava, että %s voi aina käyttää sijaintiasi, ja otettava Käytä tarkkaa sijaintia -toiminto käyttöön. Napauta Asetukset ja valitse sitten Käyttöoikeudet > Sijainti.</string>
     <string name="tw_title_weather_broadcast">Lähetys</string>
-    <string name="unable_to_check_for_updates">Päivityksiä ei voi hakea. Verkkoyhteyttä ei ole.</string>
+    <string name="unable_to_check_for_updates">Päivitysten tarkistaminen epäonnistui. Yritä myöhemmin uudelleen.</string>
     <string name="unable_to_receive_info_msg">Tietoja ei voi vastaanottaa</string>
     <string name="unticked_tts">Valinta poistettu</string>
     <string name="unused">Käyttämättä</string>
     <string name="update">Päivitä</string>
     <string name="update_abb8">Päivitä</string>
     <string name="update_app">Päivitä sovellus</string>
+    <string name="updated_tile_chn">Päivitetty: %s</string>
     <string name="updated_tts">%s päivitetty</string>
+    <string name="use_current_location">Käytä nykyistä sijaintia</string>
     <string name="use_current_location_agree_popup">"Jotta saisit paikalliset säätiedot, senhetkinen sijaintisi lähetetään sääpalveluiden toimittajalle. (Katso toimittajan %1$stietosuojakäytäntö%2$s.)
 Muut laitteessasi olevat sovellukset tai palvelut voivat käyttää haettuja säätietoja esittääkseen sään kyseisissä sovelluksissa."</string>
     <string name="use_current_location_and_background_agree_popup">"Jotta saisit paikalliset säätiedot, tämänhetkinen sijaintisi lähetetään sääpalveluiden toimittajalle. (Katso palvelun toimittajan %1$stietosuojakäytäntö%2$s.)
@@ -746,9 +784,16 @@ Tarjotaksemme sinulle jatkuvia säätietoja Sää-sovelluksella on pääsy sijai
 Voit poistaa sijaintisi käytön käytöstä Sääsovelluksen asetuksista."</string>
     <string name="use_current_location_body_msg_chn">"Lue huolellisesti ennen ”Sää”-sovelluksen käyttöä:
 Jos haluat tietää nykyisen sijaintisi sään, sinun täytyy sallia kolmannen osapuolen palveluntarjoajalle jatkuva (myös silloin, kun et käytä palvelua) pääsy laitteeseesi ja antaa kyseiselle palveluntarjoajalle lupa hankkia tiettyjä tietoja, jotka on lueteltu alla. Lue huolellisesti kolmannen osapuolen palveluntarjoajan %1$skäyttöehdot%2$s ja %3$stietosuojakäytäntö%4$s ja varmista, että ymmärrät ne, ennen kuin annat nämä käyttöoikeudet. Voit peruuttaa antamasi käyttöoikeudet poistamalla ”Sijainti”-toiminnon käytöstä Asetukset-valikossa. Muut laitteessasi olevat sovellukset ja palvelut saattavat käyttää haettuja säätietoja sään näyttämiseen kyseisissä sovelluksissa ja palveluissa."</string>
+    <string name="use_current_location_body_msg_kor">"Nykyinen sijaintisi kerätään, ja sitä käytetään joidenkin Sää-sovelluksen toimintojen, kuten paikallisen sään, tarjoamiseen.
+
+Jos haluat tarjota jatkuvia säätietoja, tämä sovellus käsittelee sijaintisi säännöllisesti myös silloin, kun et käytä sovellusta. Jatkamalla hyväksyt sijaintisi keräämisen ja käsittelyn edellä mainittuihin tarkoituksiin.
+
+Voit lopettaa tämän sijainnin keräämisen ja käytön Sää-sovelluksen asetuksissa."</string>
     <string name="use_current_location_body_purpose">Tarkoitus</string>
     <string name="use_current_location_body_purpose_content">Tarjota säätietoja nykyisestä sijainnistasi</string>
     <string name="use_current_location_body_search_provider">Palveluntarjoaja</string>
+    <string name="use_current_location_continue">Jatka</string>
+    <string name="use_current_location_not_now">Ei nyt</string>
     <string name="use_current_location_off_alert_popup">Nykyiset sijaintitiedot poistetaan.</string>
     <string name="useful_informations">Elämään liittyviä vihjeitä ja muita raportteja</string>
     <string name="using_as">Käytetään käyttäjänä %s</string>
@@ -856,9 +901,11 @@ Jos haluat tietää nykyisen sijaintisi sään, sinun täytyy sallia kolmannen o
     <string name="weather_tip">Säävihjeet</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">ke</string>
     <string name="weekly_forecast">Päivittäin</string>
     <string name="widget_background">Pienoisohjelman tausta</string>
     <string name="widget_empty_text">Näytä säätiedot napauttamalla</string>
+    <string name="widget_location">Kaupungin nimi</string>
     <string name="widget_name_4x1">Sää ja kello</string>
     <string name="widget_setting">Asetukset</string>
     <string name="widget_setting_background_color">Taustaväri</string>

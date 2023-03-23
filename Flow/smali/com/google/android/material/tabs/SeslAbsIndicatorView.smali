@@ -1,17 +1,13 @@
-.class public abstract Lcom/google/android/material/tabs/SeslAbsIndicatorView;
+.class abstract Lcom/google/android/material/tabs/SeslAbsIndicatorView;
 .super Landroid/view/View;
 .source "SeslAbsIndicatorView.java"
-
-
-# instance fields
-.field mIndicatorColor:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 20
+    .line 21
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -20,7 +16,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 24
+    .line 25
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -29,7 +25,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 28
+    .line 29
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -38,7 +34,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 0
 
-    .line 32
+    .line 33
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
@@ -55,19 +51,10 @@
 .method abstract onShow()V
 .end method
 
-.method public setClick()V
-    .locals 0
-
-    .line 42
-    invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->startPressAndReleaseEffect()V
-
-    return-void
-.end method
-
 .method public setHide()V
     .locals 0
 
-    .line 57
+    .line 58
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->onHide()V
 
     return-void
@@ -76,7 +63,7 @@
 .method public setPressed()V
     .locals 0
 
-    .line 47
+    .line 44
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->startPressEffect()V
 
     return-void
@@ -85,7 +72,7 @@
 .method public setReleased()V
     .locals 0
 
-    .line 52
+    .line 51
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->startReleaseEffect()V
 
     return-void
@@ -93,9 +80,6 @@
 
 .method public setSelectedIndicatorColor(I)V
     .locals 0
-
-    .line 36
-    iput p1, p0, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->mIndicatorColor:I
 
     .line 37
     invoke-virtual {p0, p1}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->onSetSelectedIndicatorColor(I)V
@@ -106,13 +90,10 @@
 .method public setShow()V
     .locals 0
 
-    .line 62
+    .line 65
     invoke-virtual {p0}, Lcom/google/android/material/tabs/SeslAbsIndicatorView;->onShow()V
 
     return-void
-.end method
-
-.method abstract startPressAndReleaseEffect()V
 .end method
 
 .method abstract startPressEffect()V

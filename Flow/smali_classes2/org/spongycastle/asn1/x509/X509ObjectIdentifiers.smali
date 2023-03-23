@@ -47,7 +47,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 4
 
     .line 9
     new-instance v0, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
@@ -219,24 +219,22 @@
     .line 61
     invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_pe:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_pe:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     .line 68
-    new-instance v0, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v2, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    const-string v2, "2.5.29"
+    const-string v3, "2.5.29"
 
-    invoke-direct {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_ce:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    .line 71
-    sget-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_pkix:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_ce:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "48"
 
+    .line 71
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     move-result-object v0
@@ -248,17 +246,15 @@
     .line 73
     invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->intern()Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->intern()Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_ad_caIssuers:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_ad_caIssuers:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     .line 75
-    sget-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_ad:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
     invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     move-result-object v0
@@ -273,9 +269,7 @@
     sput-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->ocspAccessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     .line 80
-    sget-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_ad_caIssuers:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
-
-    sput-object v0, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->crlAccessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sput-object v2, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->crlAccessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     return-void
 .end method

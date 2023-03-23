@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onAdapterChanged(Landroidx/viewpager/widget/ViewPager;Landroidx/viewpager/widget/PagerAdapter;Landroidx/viewpager/widget/PagerAdapter;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "viewPager",
+            "oldAdapter",
+            "newAdapter"
+        }
+    .end annotation
 .end method

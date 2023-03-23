@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/location/SettingsClient;
 .super Lcom/google/android/gms/common/api/GoogleApi;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # annotations
@@ -12,19 +13,22 @@
 .end annotation
 
 
+# static fields
+.field public static final synthetic zza:I
+
+
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 3
 
+    .line 1
     sget-object v0, Lcom/google/android/gms/location/LocationServices;->API:Lcom/google/android/gms/common/api/Api;
 
-    new-instance v1, Lcom/google/android/gms/common/api/internal/ApiExceptionMapper;
+    sget-object v1, Lcom/google/android/gms/common/api/Api$ApiOptions;->NO_OPTIONS:Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;
 
-    invoke-direct {v1}, Lcom/google/android/gms/common/api/internal/ApiExceptionMapper;-><init>()V
+    sget-object v2, Lcom/google/android/gms/common/api/GoogleApi$Settings;->DEFAULT_SETTINGS:Lcom/google/android/gms/common/api/GoogleApi$Settings;
 
-    const/4 v2, 0x0
-
-    invoke-direct {p0, p1, v0, v2, v1}, Lcom/google/android/gms/common/api/GoogleApi;-><init>(Landroid/app/Activity;Lcom/google/android/gms/common/api/Api;Lcom/google/android/gms/common/api/Api$ApiOptions;Lcom/google/android/gms/common/api/internal/StatusExceptionMapper;)V
+    invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/android/gms/common/api/GoogleApi;-><init>(Landroid/app/Activity;Lcom/google/android/gms/common/api/Api;Lcom/google/android/gms/common/api/Api$ApiOptions;Lcom/google/android/gms/common/api/GoogleApi$Settings;)V
 
     return-void
 .end method
@@ -32,15 +36,14 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
+    .line 2
     sget-object v0, Lcom/google/android/gms/location/LocationServices;->API:Lcom/google/android/gms/common/api/Api;
 
-    new-instance v1, Lcom/google/android/gms/common/api/internal/ApiExceptionMapper;
+    sget-object v1, Lcom/google/android/gms/common/api/Api$ApiOptions;->NO_OPTIONS:Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;
 
-    invoke-direct {v1}, Lcom/google/android/gms/common/api/internal/ApiExceptionMapper;-><init>()V
+    sget-object v2, Lcom/google/android/gms/common/api/GoogleApi$Settings;->DEFAULT_SETTINGS:Lcom/google/android/gms/common/api/GoogleApi$Settings;
 
-    const/4 v2, 0x0
-
-    invoke-direct {p0, p1, v0, v2, v1}, Lcom/google/android/gms/common/api/GoogleApi;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/Api;Lcom/google/android/gms/common/api/Api$ApiOptions;Lcom/google/android/gms/common/api/internal/StatusExceptionMapper;)V
+    invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/android/gms/common/api/GoogleApi;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/Api;Lcom/google/android/gms/common/api/Api$ApiOptions;Lcom/google/android/gms/common/api/GoogleApi$Settings;)V
 
     return-void
 .end method
@@ -60,21 +63,34 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/google/android/gms/location/LocationServices;->SettingsApi:Lcom/google/android/gms/location/SettingsApi;
+    .line 1
+    invoke-static {}, Lcom/google/android/gms/common/api/internal/TaskApiCall;->builder()Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;
 
-    invoke-virtual {p0}, Lcom/google/android/gms/location/SettingsClient;->asGoogleApiClient()Lcom/google/android/gms/common/api/GoogleApiClient;
+    move-result-object v0
 
-    move-result-object v1
+    new-instance v1, Lcom/google/android/gms/location/zzbz;
 
-    invoke-interface {v0, v1, p1}, Lcom/google/android/gms/location/SettingsApi;->checkLocationSettings(Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/LocationSettingsRequest;)Lcom/google/android/gms/common/api/PendingResult;
+    invoke-direct {v1, p1}, Lcom/google/android/gms/location/zzbz;-><init>(Lcom/google/android/gms/location/LocationSettingsRequest;)V
+
+    .line 2
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;->run(Lcom/google/android/gms/common/api/internal/RemoteCall;)Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;
 
     move-result-object p1
 
-    new-instance v0, Lcom/google/android/gms/location/LocationSettingsResponse;
+    const/16 v0, 0x97a
 
-    invoke-direct {v0}, Lcom/google/android/gms/location/LocationSettingsResponse;-><init>()V
+    .line 3
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;->setMethodKey(I)Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/PendingResultUtil;->toResponseTask(Lcom/google/android/gms/common/api/PendingResult;Lcom/google/android/gms/common/api/Response;)Lcom/google/android/gms/tasks/Task;
+    move-result-object p1
+
+    .line 4
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;->build()Lcom/google/android/gms/common/api/internal/TaskApiCall;
+
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/location/SettingsClient;->doRead(Lcom/google/android/gms/common/api/internal/TaskApiCall;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 

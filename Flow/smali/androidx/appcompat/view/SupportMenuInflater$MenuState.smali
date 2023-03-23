@@ -101,24 +101,34 @@
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/view/SupportMenuInflater;Landroid/view/Menu;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x10
+        }
+        names = {
+            "this$0",
+            "menu"
+        }
+    .end annotation
 
-    .line 348
+    .line 349
     iput-object p1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 336
+    .line 337
     iput-object p1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintList:Landroid/content/res/ColorStateList;
 
-    .line 337
+    .line 338
     iput-object p1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintMode:Landroid/graphics/PorterDuff$Mode;
 
-    .line 349
+    .line 350
     iput-object p2, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->menu:Landroid/view/Menu;
 
-    .line 351
+    .line 352
     invoke-virtual {p0}, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->resetGroup()V
 
     return-void
@@ -126,6 +136,14 @@
 
 .method private getShortcut(Ljava/lang/String;)C
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "shortcutString"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -133,7 +151,7 @@
 
     return v0
 
-    .line 460
+    .line 462
     :cond_0
     invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
 
@@ -143,7 +161,20 @@
 .end method
 
 .method private newInstance(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "className",
+            "constructorSignature",
+            "arguments"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -158,31 +189,33 @@
         }
     .end annotation
 
-    .line 548
-    :try_start_0
-    iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
-
-    iget-object v0, v0, Landroidx/appcompat/view/SupportMenuInflater;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
+    const/4 v0, 0x0
 
     .line 549
+    :try_start_0
+    iget-object v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
+
+    iget-object v1, v1, Landroidx/appcompat/view/SupportMenuInflater;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v1
+
+    invoke-static {p1, v0, v1}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    .line 550
     invoke-virtual {v0, p2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object p2
 
     const/4 v0, 0x1
 
-    .line 550
+    .line 551
     invoke-virtual {p2, v0}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
 
-    .line 551
+    .line 552
     invoke-virtual {p2, p3}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -194,7 +227,7 @@
     :catch_0
     move-exception p2
 
-    .line 553
+    .line 554
     new-instance p3, Ljava/lang/StringBuilder;
 
     invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
@@ -203,9 +236,13 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p3
+
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -220,8 +257,16 @@
 
 .method private setItem(Landroid/view/MenuItem;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
-    .line 465
+    .line 467
     iget-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemChecked:Z
 
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setChecked(Z)Landroid/view/MenuItem;
@@ -230,14 +275,14 @@
 
     iget-boolean v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemVisible:Z
 
-    .line 466
+    .line 468
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     move-result-object v0
 
     iget-boolean v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemEnabled:Z
 
-    .line 467
+    .line 469
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
     move-result-object v0
@@ -257,7 +302,7 @@
     :cond_0
     move v1, v2
 
-    .line 468
+    .line 470
     :goto_0
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setCheckable(Z)Landroid/view/MenuItem;
 
@@ -265,31 +310,31 @@
 
     iget-object v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemTitleCondensed:Ljava/lang/CharSequence;
 
-    .line 469
+    .line 471
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setTitleCondensed(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     move-result-object v0
 
     iget v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconResId:I
 
-    .line 470
+    .line 472
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    .line 472
+    .line 474
     iget v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemShowAsAction:I
 
     if-ltz v0, :cond_1
 
-    .line 473
+    .line 475
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    .line 476
+    .line 478
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemListenerMethodName:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
-    .line 477
+    .line 479
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
 
     iget-object v0, v0, Landroidx/appcompat/view/SupportMenuInflater;->mContext:Landroid/content/Context;
@@ -300,12 +345,12 @@
 
     if-nez v0, :cond_2
 
-    .line 481
+    .line 483
     new-instance v0, Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;
 
     iget-object v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
 
-    .line 482
+    .line 484
     invoke-virtual {v1}, Landroidx/appcompat/view/SupportMenuInflater;->getRealOwner()Ljava/lang/Object;
 
     move-result-object v1
@@ -314,12 +359,12 @@
 
     invoke-direct {v0, v1, v4}, Landroidx/appcompat/view/SupportMenuInflater$InflatedOnMenuItemClickListener;-><init>(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 481
+    .line 483
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
 
     goto :goto_1
 
-    .line 478
+    .line 480
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -329,28 +374,21 @@
 
     throw p1
 
-    .line 485
+    .line 487
     :cond_3
     :goto_1
+    iget v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemCheckable:I
+
+    const/4 v1, 0x2
+
+    if-lt v0, v1, :cond_5
+
+    .line 488
     instance-of v0, p1, Landroidx/appcompat/view/menu/MenuItemImpl;
 
     if-eqz v0, :cond_4
 
-    move-object v1, p1
-
-    check-cast v1, Landroidx/appcompat/view/menu/MenuItemImpl;
-
-    .line 486
-    :cond_4
-    iget v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemCheckable:I
-
-    const/4 v4, 0x2
-
-    if-lt v1, v4, :cond_6
-
-    if-eqz v0, :cond_5
-
-    .line 488
+    .line 489
     move-object v0, p1
 
     check-cast v0, Landroidx/appcompat/view/menu/MenuItemImpl;
@@ -359,27 +397,27 @@
 
     goto :goto_2
 
-    .line 489
-    :cond_5
+    .line 490
+    :cond_4
     instance-of v0, p1, Landroidx/appcompat/view/menu/MenuItemWrapperICS;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
-    .line 490
+    .line 491
     move-object v0, p1
 
     check-cast v0, Landroidx/appcompat/view/menu/MenuItemWrapperICS;
 
     invoke-virtual {v0, v3}, Landroidx/appcompat/view/menu/MenuItemWrapperICS;->setExclusiveCheckable(Z)V
 
-    .line 495
-    :cond_6
+    .line 496
+    :cond_5
     :goto_2
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewClassName:Ljava/lang/String;
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_6
 
-    .line 496
+    .line 497
     sget-object v1, Landroidx/appcompat/view/SupportMenuInflater;->ACTION_VIEW_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 
     iget-object v2, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
@@ -392,85 +430,85 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 498
+    .line 499
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setActionView(Landroid/view/View;)Landroid/view/MenuItem;
 
     move v2, v3
 
-    .line 501
-    :cond_7
+    .line 502
+    :cond_6
     iget v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewLayout:I
 
-    if-lez v0, :cond_9
+    if-lez v0, :cond_8
 
-    if-nez v2, :cond_8
+    if-nez v2, :cond_7
 
-    .line 503
+    .line 504
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setActionView(I)Landroid/view/MenuItem;
 
     goto :goto_3
 
-    :cond_8
+    :cond_7
     const-string v0, "SupportMenuInflater"
 
     const-string v1, "Ignoring attribute \'itemActionViewLayout\'. Action view already specified."
 
-    .line 506
+    .line 507
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 510
-    :cond_9
+    .line 511
+    :cond_8
     :goto_3
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionProvider:Landroidx/core/view/ActionProvider;
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_9
 
-    .line 511
+    .line 512
     invoke-static {p1, v0}, Landroidx/core/view/MenuItemCompat;->setActionProvider(Landroid/view/MenuItem;Landroidx/core/view/ActionProvider;)Landroid/view/MenuItem;
 
-    .line 514
-    :cond_a
+    .line 515
+    :cond_9
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemContentDescription:Ljava/lang/CharSequence;
 
     invoke-static {p1, v0}, Landroidx/core/view/MenuItemCompat;->setContentDescription(Landroid/view/MenuItem;Ljava/lang/CharSequence;)V
 
-    .line 515
+    .line 516
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemTooltipText:Ljava/lang/CharSequence;
 
     invoke-static {p1, v0}, Landroidx/core/view/MenuItemCompat;->setTooltipText(Landroid/view/MenuItem;Ljava/lang/CharSequence;)V
 
-    .line 516
+    .line 517
     iget-char v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAlphabeticShortcut:C
 
     iget v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAlphabeticModifiers:I
 
     invoke-static {p1, v0, v1}, Landroidx/core/view/MenuItemCompat;->setAlphabeticShortcut(Landroid/view/MenuItem;CI)V
 
-    .line 518
+    .line 519
     iget-char v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemNumericShortcut:C
 
     iget v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemNumericModifiers:I
 
     invoke-static {p1, v0, v1}, Landroidx/core/view/MenuItemCompat;->setNumericShortcut(Landroid/view/MenuItem;CI)V
 
-    .line 520
+    .line 521
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintMode:Landroid/graphics/PorterDuff$Mode;
+
+    if-eqz v0, :cond_a
+
+    .line 522
+    invoke-static {p1, v0}, Landroidx/core/view/MenuItemCompat;->setIconTintMode(Landroid/view/MenuItem;Landroid/graphics/PorterDuff$Mode;)V
+
+    .line 524
+    :cond_a
+    iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintList:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_b
 
-    .line 521
-    invoke-static {p1, v0}, Landroidx/core/view/MenuItemCompat;->setIconTintMode(Landroid/view/MenuItem;Landroid/graphics/PorterDuff$Mode;)V
-
-    .line 523
-    :cond_b
-    iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintList:Landroid/content/res/ColorStateList;
-
-    if-eqz v0, :cond_c
-
-    .line 524
+    .line 525
     invoke-static {p1, v0}, Landroidx/core/view/MenuItemCompat;->setIconTintList(Landroid/view/MenuItem;Landroid/content/res/ColorStateList;)V
 
-    :cond_c
+    :cond_b
     return-void
 .end method
 
@@ -481,10 +519,10 @@
 
     const/4 v0, 0x1
 
-    .line 529
+    .line 530
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAdded:Z
 
-    .line 530
+    .line 531
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->menu:Landroid/view/Menu;
 
     iget v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupId:I
@@ -509,10 +547,10 @@
 
     const/4 v0, 0x1
 
-    .line 534
+    .line 535
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAdded:Z
 
-    .line 535
+    .line 536
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->menu:Landroid/view/Menu;
 
     iget v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupId:I
@@ -527,7 +565,7 @@
 
     move-result-object v0
 
-    .line 536
+    .line 537
     invoke-interface {v0}, Landroid/view/SubMenu;->getItem()Landroid/view/MenuItem;
 
     move-result-object v1
@@ -540,7 +578,7 @@
 .method public hasAddedItem()Z
     .locals 1
 
-    .line 541
+    .line 542
     iget-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAdded:Z
 
     return v0
@@ -548,8 +586,16 @@
 
 .method public readGroup(Landroid/util/AttributeSet;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "attrs"
+        }
+    .end annotation
 
-    .line 367
+    .line 368
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
 
     iget-object v0, v0, Landroidx/appcompat/view/SupportMenuInflater;->mContext:Landroid/content/Context;
@@ -560,7 +606,7 @@
 
     move-result-object p1
 
-    .line 369
+    .line 370
     sget v0, Landroidx/appcompat/R$styleable;->MenuGroup_android_id:I
 
     const/4 v1, 0x0
@@ -571,7 +617,7 @@
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupId:I
 
-    .line 370
+    .line 371
     sget v0, Landroidx/appcompat/R$styleable;->MenuGroup_android_menuCategory:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -580,7 +626,7 @@
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupCategory:I
 
-    .line 372
+    .line 373
     sget v0, Landroidx/appcompat/R$styleable;->MenuGroup_android_orderInCategory:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -589,7 +635,7 @@
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupOrder:I
 
-    .line 373
+    .line 374
     sget v0, Landroidx/appcompat/R$styleable;->MenuGroup_android_checkableBehavior:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -598,7 +644,7 @@
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupCheckable:I
 
-    .line 375
+    .line 376
     sget v0, Landroidx/appcompat/R$styleable;->MenuGroup_android_visible:I
 
     const/4 v1, 0x1
@@ -609,7 +655,7 @@
 
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupVisible:Z
 
-    .line 376
+    .line 377
     sget v0, Landroidx/appcompat/R$styleable;->MenuGroup_android_enabled:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -618,7 +664,7 @@
 
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupEnabled:Z
 
-    .line 378
+    .line 379
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -626,44 +672,52 @@
 
 .method public readItem(Landroid/util/AttributeSet;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "attrs"
+        }
+    .end annotation
 
-    .line 385
+    .line 386
     iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
 
     iget-object v0, v0, Landroidx/appcompat/view/SupportMenuInflater;->mContext:Landroid/content/Context;
 
     sget-object v1, Landroidx/appcompat/R$styleable;->MenuItem:[I
 
-    invoke-virtual {v0, p1, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+    invoke-static {v0, p1, v1}, Landroidx/appcompat/widget/TintTypedArray;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[I)Landroidx/appcompat/widget/TintTypedArray;
 
     move-result-object p1
 
-    .line 388
+    .line 390
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_id:I
 
     const/4 v1, 0x0
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/widget/TintTypedArray;->getResourceId(II)I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemId:I
 
-    .line 389
+    .line 391
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_menuCategory:I
 
     iget v2, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupCategory:I
 
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p1, v0, v2}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v0
 
-    .line 390
+    .line 392
     sget v2, Landroidx/appcompat/R$styleable;->MenuItem_android_orderInCategory:I
 
     iget v3, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupOrder:I
 
-    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p1, v2, v3}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v2
 
@@ -677,41 +731,41 @@
 
     or-int/2addr v0, v2
 
-    .line 391
+    .line 393
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemCategoryOrder:I
 
-    .line 393
+    .line 395
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_title:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemTitle:Ljava/lang/CharSequence;
 
-    .line 394
+    .line 396
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_titleCondensed:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemTitleCondensed:Ljava/lang/CharSequence;
 
-    .line 395
+    .line 397
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_icon:I
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/widget/TintTypedArray;->getResourceId(II)I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconResId:I
 
-    .line 396
+    .line 398
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_alphabeticShortcut:I
 
-    .line 397
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    .line 399
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -721,23 +775,23 @@
 
     iput-char v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAlphabeticShortcut:C
 
-    .line 398
+    .line 400
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_alphabeticModifiers:I
 
     const/16 v2, 0x1000
 
-    .line 399
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getInt(II)I
+    .line 401
+    invoke-virtual {p1, v0, v2}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAlphabeticModifiers:I
 
-    .line 400
+    .line 402
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_numericShortcut:I
 
-    .line 401
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    .line 403
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -747,29 +801,29 @@
 
     iput-char v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemNumericShortcut:C
 
-    .line 402
+    .line 404
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_numericModifiers:I
 
-    .line 403
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getInt(II)I
+    .line 405
+    invoke-virtual {p1, v0, v2}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemNumericModifiers:I
 
-    .line 404
+    .line 406
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_checkable:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->hasValue(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 406
+    .line 408
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_checkable:I
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/widget/TintTypedArray;->getBoolean(IZ)Z
 
     move-result v0
 
@@ -777,86 +831,86 @@
 
     goto :goto_0
 
-    .line 410
+    .line 412
     :cond_0
     iget v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupCheckable:I
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemCheckable:I
 
-    .line 412
+    .line 414
     :goto_0
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_checked:I
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/widget/TintTypedArray;->getBoolean(IZ)Z
 
     move-result v0
 
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemChecked:Z
 
-    .line 413
+    .line 415
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_visible:I
 
     iget-boolean v2, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupVisible:Z
 
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {p1, v0, v2}, Landroidx/appcompat/widget/TintTypedArray;->getBoolean(IZ)Z
 
     move-result v0
 
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemVisible:Z
 
-    .line 414
+    .line 416
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_enabled:I
 
     iget-boolean v2, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupEnabled:Z
 
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {p1, v0, v2}, Landroidx/appcompat/widget/TintTypedArray;->getBoolean(IZ)Z
 
     move-result v0
 
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemEnabled:Z
 
-    .line 415
+    .line 417
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_showAsAction:I
 
     const/4 v2, -0x1
 
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p1, v0, v2}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemShowAsAction:I
 
-    .line 416
+    .line 418
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_android_onClick:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemListenerMethodName:Ljava/lang/String;
 
-    .line 417
+    .line 419
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_actionLayout:I
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/widget/TintTypedArray;->getResourceId(II)I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewLayout:I
 
-    .line 418
+    .line 420
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_actionViewClass:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewClassName:Ljava/lang/String;
 
-    .line 419
+    .line 421
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_actionProviderClass:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -864,37 +918,35 @@
 
     if-eqz v0, :cond_1
 
-    const/4 v0, 0x1
+    const/4 v3, 0x1
 
     goto :goto_1
 
     :cond_1
-    move v0, v1
+    move v3, v1
 
     :goto_1
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    if-eqz v0, :cond_2
+    if-eqz v3, :cond_2
 
-    .line 422
-    iget v4, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewLayout:I
+    .line 424
+    iget v5, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewLayout:I
 
-    if-nez v4, :cond_2
+    if-nez v5, :cond_2
 
-    iget-object v4, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewClassName:Ljava/lang/String;
+    iget-object v5, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionViewClassName:Ljava/lang/String;
 
-    if-nez v4, :cond_2
+    if-nez v5, :cond_2
 
-    .line 423
-    iget-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionProviderClassName:Ljava/lang/String;
-
-    sget-object v4, Landroidx/appcompat/view/SupportMenuInflater;->ACTION_PROVIDER_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
+    .line 425
+    sget-object v3, Landroidx/appcompat/view/SupportMenuInflater;->ACTION_PROVIDER_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 
     iget-object v5, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->this$0:Landroidx/appcompat/view/SupportMenuInflater;
 
     iget-object v5, v5, Landroidx/appcompat/view/SupportMenuInflater;->mActionProviderConstructorArguments:[Ljava/lang/Object;
 
-    invoke-direct {p0, v0, v4, v5}, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->newInstance(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {p0, v0, v3, v5}, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->newInstance(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -905,51 +957,51 @@
     goto :goto_2
 
     :cond_2
-    if-eqz v0, :cond_3
+    if-eqz v3, :cond_3
 
     const-string v0, "SupportMenuInflater"
 
-    const-string v4, "Ignoring attribute \'actionProviderClass\'. Action view already specified."
+    const-string v3, "Ignoring attribute \'actionProviderClass\'. Action view already specified."
 
-    .line 428
-    invoke-static {v0, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    .line 430
+    invoke-static {v0, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 431
+    .line 433
     :cond_3
-    iput-object v3, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionProvider:Landroidx/core/view/ActionProvider;
+    iput-object v4, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemActionProvider:Landroidx/core/view/ActionProvider;
 
-    .line 434
+    .line 436
     :goto_2
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_contentDescription:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemContentDescription:Ljava/lang/CharSequence;
 
-    .line 435
+    .line 437
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_tooltipText:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemTooltipText:Ljava/lang/CharSequence;
 
-    .line 436
+    .line 438
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_iconTintMode:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->hasValue(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 437
+    .line 439
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_iconTintMode:I
 
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p1, v0, v2}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v0
 
@@ -963,24 +1015,24 @@
 
     goto :goto_3
 
-    .line 442
-    :cond_4
-    iput-object v3, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintMode:Landroid/graphics/PorterDuff$Mode;
-
     .line 444
+    :cond_4
+    iput-object v4, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintMode:Landroid/graphics/PorterDuff$Mode;
+
+    .line 446
     :goto_3
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_iconTint:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->hasValue(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 445
+    .line 447
     sget v0, Landroidx/appcompat/R$styleable;->MenuItem_iconTint:I
 
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
@@ -988,15 +1040,15 @@
 
     goto :goto_4
 
-    .line 448
+    .line 450
     :cond_5
-    iput-object v3, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintList:Landroid/content/res/ColorStateList;
-
-    .line 451
-    :goto_4
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+    iput-object v4, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemIconTintList:Landroid/content/res/ColorStateList;
 
     .line 453
+    :goto_4
+    invoke-virtual {p1}, Landroidx/appcompat/widget/TintTypedArray;->recycle()V
+
+    .line 455
     iput-boolean v1, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->itemAdded:Z
 
     return-void
@@ -1007,24 +1059,24 @@
 
     const/4 v0, 0x0
 
-    .line 355
+    .line 356
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupId:I
 
-    .line 356
+    .line 357
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupCategory:I
 
-    .line 357
+    .line 358
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupOrder:I
 
-    .line 358
+    .line 359
     iput v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupCheckable:I
 
     const/4 v0, 0x1
 
-    .line 359
+    .line 360
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupVisible:Z
 
-    .line 360
+    .line 361
     iput-boolean v0, p0, Landroidx/appcompat/view/SupportMenuInflater$MenuState;->groupEnabled:Z
 
     return-void

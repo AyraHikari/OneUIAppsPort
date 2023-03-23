@@ -33,6 +33,7 @@
     <string name="air_quality">Calidad del aire</string>
     <string name="air_quality_next_tts">Siguientes previsiones de la calidad del aire diarias</string>
     <string name="air_quality_previous_tts">Previsiones de la calidad del aire diarias anteriores</string>
+    <string name="alert_title">Alerta de condiciones climáticas extremas</string>
     <string name="all_added_cities">Todas las ciudades añadidas</string>
     <string name="allow">Permitir</string>
     <string name="allow_permission_in_settings">Ve a Ajustes y concede el permiso para usar esta función.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Acción no admitida.</string>
     <string name="apply_daylight_saving_time">¿Aplicar horario de verano?</string>
     <string name="as_possible_after_verification">Se ha enviado el informe. Se cambiará el nombre de la ciudad lo antes posible una vez se haya realizado la verificación.</string>
+    <string name="auto_refresh_on_screen_description">Recibe información del tiempo actualizada automáticamente cada hora. Cuando esta función está activada, no se puede actualizar manualmente.</string>
+    <string name="auto_refresh_on_the_go">Actualizar automáticamente sobre la marcha</string>
+    <string name="auto_refresh_on_the_go_advanced">Avanzado</string>
+    <string name="auto_refresh_on_the_go_description">Recibe información del tiempo con más frecuencia mientras conduces, vas en bici, corres o caminas. Cuando esta función está activada, no se puede actualizar manualmente.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Recibe información del tiempo con más frecuencia mientras conduces, vas en bici, corres o caminas.</string>
     <string name="btn_report">Avisar</string>
     <string name="button_finish">Finalizar</string>
     <string name="button_tts">Botón</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Pulsa dos veces para obtener más información.</string>
     <string name="china">China</string>
     <string name="cities_button">Ciudades</string>
+    <string name="city_added">Se ha añadido la ciudad.</string>
     <string name="city_list_text">Ciudades</string>
     <string name="clear">Despejado</string>
     <string name="clear_then_cloudy">Despejado y luego nublado</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Elemento soltado en la posición %d.</string>
     <string name="dragndroplist_drag_start">Se ha comenzado a mover el elemento en la posición %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">El elemento en la posición %d no puede moverse.</string>
+    <string name="drawer_tips">Consejos de %s</string>
     <string name="drawer_tips_message">Pulsa aquí para añadir, eliminar y reordenar las ubicaciones. También puedes añadir varios widgets para mostrar diferentes ubicaciones en la pantalla Inicio.</string>
     <string name="drawer_tips_message_1">Pulsa Administrar ubicaciones en la parte inferior de este menú para añadir, eliminar y reordenar ubicaciones.</string>
     <string name="drawer_tips_message_2">Añade más de un widget en la pantalla Inicio para mostrar diferentes ubicaciones al mismo tiempo.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Vídeo del tiempo</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Vie.</string>
     <string name="general">General</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Recibe contenidos personalizados en función de tus patrones de uso del teléfono.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Recibe contenidos personalizados en función de tus patrones de uso de la tableta.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">obtener información del tiempo, incluida tu ubicación actual, de El tiempo</string>
     <string name="go_to_website">Ir al sitio web</string>
     <string name="goto_apps">Nueva actualización disponible. ¿Instalar ahora?</string>
     <string name="goto_apps_later">Más tarde</string>
     <string name="goto_apps_now">Ahora</string>
     <string name="goto_apps_update_title">Alertas de contenido nuevo</string>
     <string name="header_tts">Encabezado</string>
+    <string name="heavy">Fuerte</string>
     <string name="heavy_rain">Lluvia fuerte</string>
     <string name="heavy_rain_followed_by_intense_heat">Lluvia fuerte seguida de calor intenso</string>
     <string name="heavy_rain_followed_by_light_rain">Lluvia fuerte seguida de calor intenso</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Visibilidad</string>
     <string name="life_index_wind">Viento</string>
     <string name="life_index_wind_force">Velocidad del viento</string>
+    <string name="light">Ligera</string>
     <string name="light_rain_followed_by_heavy_rain">Llovizna seguida de lluvia fuerte</string>
     <string name="light_rain_with_some_heavy_rain">Llovizna con alguna lluvia fuerte</string>
     <string name="link_tts">Vínculo</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Ningún resultado encontrado.</string>
     <string name="message_service_not_available">El servicio no está disponible en este momento.</string>
     <string name="minus_tts">Menos</string>
+    <string name="mon">Lun.</string>
     <string name="more">Más</string>
     <string name="more_cuntact_us">Contáctanos</string>
     <string name="more_information">Más</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Pulsa aquí para cambiar la ubicación del tiempo predeterminada y administrar todas tus ubicaciones.</string>
     <string name="new_version_available">Hay una nueva versión de %s disponible.</string>
     <string name="new_version_is_available">Hay una nueva versión disponible.</string>
+    <string name="news_menu_show_news">Mostrar noticias</string>
+    <string name="news_opt_in_banner_title_text">Mantente al día de la actualidad mostrando las noticias en el widget El tiempo.</string>
+    <string name="news_opt_in_popup_desc_text">Mantente al día de que pasa en el mundo mostrando los titulares más recientes de %s en el widget El tiempo.</string>
+    <string name="news_opt_in_popup_title_text">Consulta las noticias y el tiempo en un solo widget</string>
+    <string name="news_request_agree_text">Pulsa para obtener noticias de %s</string>
+    <string name="news_widget_bubble_text">Recibe noticias con la información del tiempo.</string>
+    <string name="news_widget_dummy_title">Noticia principal de hoy</string>
+    <string name="news_widget_new_dummy_title">Las 5 cosas que necesitas saber esta mañana</string>
+    <string name="news_widget_oobe_text">Pulsa aquí para añadir noticias.</string>
     <string name="next">Siguiente ciudad</string>
+    <string name="next_btn">Siguiente</string>
     <string name="next_city">Pulsa dos veces para ver la información meteorológica de la siguiente ciudad.</string>
     <string name="night_tts">Noche</string>
     <string name="no_application_available">No hay aplicaciones disponibles.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">No hay información meteorológica</string>
     <string name="not_in_use">No se usa</string>
     <string name="not_now">Ahora no</string>
+    <string name="not_now_btn">Ahora no</string>
     <string name="not_selected">Sin seleccionar</string>
     <string name="nothing_selected">No se ha seleccionado nada.</string>
     <string name="noti">Aviso</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Para una detección de ubicación más rápida y precisa, ve a AJUSTES y, a continuación, establece el método de ubicación como GPS, Wi-Fi y redes móviles.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Para una detección de ubicación más rápida y precisa, ve a AJUSTES y, a continuación, establece el método de ubicación como GPS y Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Para ver la información meteorológica local, activa los ajustes de ubicación y asegúrate de que el modo está establecido en Precisión alta.</string>
+    <string name="notification_alert_channel_name">Alerta de condiciones climáticas extremas</string>
     <string name="notification_apps_update_channel_name">Actualizar notificaciones</string>
     <string name="notification_auto_refresh_channel_name">Actualización automática El tiempo</string>
     <string name="notification_dex_channel_name">El tiempo en Samsung DeX</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Abrir app</string>
     <string name="open_source_licences">Licencias de código abierto</string>
     <string name="other_locations">Otras ubicaciones</string>
+    <string name="partly_sunny">Parcialmente soleado</string>
     <string name="paused">Pausado</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Precipitaciones: %d mm</string>
     <string name="preview">Vista previa de %s</string>
     <string name="previous">Ciudad anterior</string>
+    <string name="previous_btn">Anterior</string>
     <string name="previous_city">Pulsa dos veces para ver la información meteorológica de la ciudad anterior.</string>
     <string name="privacy_policy">Política de privacidad</string>
     <string name="probability_of_rain_text">Probabilidad lluvia</string>
     <string name="protect_your_content">Proteger tu contenido</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar y mapas</string>
     <string name="rain">Lluvia</string>
     <string name="rain_followed_by_intense_heat">Lluvia seguida de calor intenso</string>
@@ -481,7 +510,7 @@
     <string name="removed_to_home_screen">%s se ha eliminado de la pantalla Inicio.</string>
     <string name="reorder_tts">Reordenar</string>
     <string name="report_incorrect_name">Informar sobre nombre incorrecto</string>
-    <string name="report_wrong_location">Ubicación incorrecta</string>
+    <string name="report_wrong_location">Reportar ubicación errónea</string>
     <string name="restore_fail_for_different_service_provider">No se ha podido restaurar la información del tiempo. La información del tiempo anterior estaba establecida para un país distinto con un proveedor de servicios diferente.</string>
     <string name="restore_weather_data">Pulsa aquí para restaurar los datos del tiempo.</string>
     <string name="restore_weather_data_max_cities">Se ha superado el número máximo de ciudades (%1$d). Selecciona un máximo de %2$d ciudades y, a continuación, pulsa HECHO.</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Para actualizar la información meteorológica, pulsa AJUSTES, ve a Información de la aplicación > Permisos y, a continuación, concede los siguientes permisos e inténtalo de nuevo:</string>
     <string name="runtime_location_permission_title">Conceder permisos</string>
     <string name="runtime_oem_grant_permission_desc">Se ha concedido permiso a la aplicación %s para acceder a:</string>
+    <string name="sat">Sáb.</string>
     <string name="save_button">Guardar</string>
     <string name="search_most_searched_for">Las más buscadas</string>
     <string name="search_tab_cities">Ciudades</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Contenido nuevo disponible</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Más</string>
+    <string name="sesl_preferecne_badge_description">Nueva notificación</string>
     <string name="sesl_preferencecategory_added_title">Encabezado</string>
     <string name="sesl_search_hint">Buscar</string>
     <string name="sesl_searchview_description_clear">Borrar campo de búsqueda</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Comprueba tu conexión de red e inténtalo de nuevo.</string>
     <string name="st_offline">Sin conexión</string>
     <string name="st_view_less">Ver menos</string>
+    <string name="status_off">Desactivado</string>
+    <string name="status_on">Activado</string>
+    <string name="sun">Dom.</string>
     <string name="sunny">Soleado</string>
     <string name="sunny_with_some_clouds">Soleado con algunas nubes</string>
     <string name="sunny_with_some_heavy_rain">Soleado con algunas lluvias fuertes</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Pulsa aquí para restaurar los datos del tiempo del dispositivo anterior.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Pulsa REINTENTAR para buscar de nuevo tu ubicación.</string>
     <string name="tap_setting_message_edge_panel">Activa Ubicación para obtener el tiempo local.</string>
+    <string name="tap_the_settings_icon">Pulsa el icono de ajustes.</string>
     <string name="tap_to_get_the_weather">Pulsa para consultar el tiempo</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Términos y condiciones</string>
     <string name="the_latest_version">La última versión ya está instalada.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Esto también se aplicará a las notificaciones y a Calendario.</string>
+    <string name="thu">Jue.</string>
     <string name="tick_box_tts">Casilla de verificación</string>
     <string name="ticked_tts">Marcado</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Por hora</string>
     <string name="title_select_locations">Seleccionar ubicaciones</string>
     <string name="title_theme">Temas</string>
+    <string name="to_continue_agree_to_updated">Acepta el documento de %s actualizado para continuar.</string>
     <string name="to_get_local_weather_chn">"Para consultar el tiempo local, su ubicación actual se enviará al proveedor de servicios meteorológicos. (Consulte los %1$sTérminos y condiciones%2$s y la %3$sPolítica de privacidad%4$s del proveedor).
 Otras aplicaciones y servicios de su dispositivo pueden acceder a los datos meteorológicos obtenidos para mostrar el tiempo en ellas.
 Con el fin de proporcionarle información meteorológica continua, la Aplicación Meteorológica tendrá acceso a su ubicación, incluso cuando no la esté utilizando."</string>
     <string name="today">Hoy</string>
+    <string name="try_it_out_btn">Probar</string>
+    <string name="tue">Mar.</string>
+    <string name="turn_on_to_use_precise_location">Para usar esta función, permite a %s acceder siempre a tu ubicación y activa Usar ubicación exacta. Para ello, pulsa Ajustes y luego ve a Permisos > Ubicación.</string>
     <string name="tw_title_weather_broadcast">Difusión</string>
-    <string name="unable_to_check_for_updates">No se puede comprobar si hay actualizaciones disponibles. No hay conexión de red.</string>
+    <string name="unable_to_check_for_updates">No se han podido buscar actualizaciones. Por favor, inténtalo de nuevo más tarde.</string>
     <string name="unable_to_receive_info_msg">Imposible recibir información</string>
     <string name="unticked_tts">Desmarcado</string>
     <string name="unused">Sin usar</string>
     <string name="update">Actualizar</string>
     <string name="update_abb8">Actualizar</string>
     <string name="update_app">Actualizar aplicación</string>
+    <string name="updated_tile_chn">Actualizado: %s</string>
     <string name="updated_tts">%s se ha actualizado</string>
+    <string name="use_current_location">Usar ubicación actual</string>
     <string name="use_current_location_agree_popup">"Para consultar el tiempo local, su ubicación actual se enviará al proveedor de servicios meteorológicos. Consulte la %1$spolítica de privacidad %2$s del proveedor.
 Es posible que otras aplicaciones y servicios del dispositivo puedan acceder a la información meteorológica obtenida para mostrarla."</string>
     <string name="use_current_location_and_background_agree_popup">"Para consultar el tiempo local, su ubicación actual se enviará al proveedor de servicios meteorológicos. (Consulte la %1$sPolítica de privacidad%2$s del proveedor.)
@@ -635,9 +677,16 @@ Con el fin de proporcionarle información meteorológica continua, la Aplicació
 Puedes desactivar el uso de tu ubicación entrando en los ajustes de la aplicación del Tiempo."</string>
     <string name="use_current_location_body_msg_chn">"Leer detenidamente antes de utilizar “Tiempo”:
 Si quiere conocer el tiempo de su ubicación actual, deberá permitir al proveedor de servicios externo acceder de forma continua (incluso cuando no esté utilizando el servicio) a su dispositivo y recopilar ciertos datos, como se describe a continuación. Lea detenidamente y comprenda los %1$stérminos y condiciones%2$s y la %3$spolítica de privacidad%4$s del proveedor de servicios externo antes de permitir el acceso. Puede retirar su permiso desactivando la “Ubicación” en el menú Ajustes. Es posible que otras aplicaciones y servicios de tu dispositivo puedan acceder a la información meteorológica obtenida para mostrar el tiempo en esas aplicaciones y servicios."</string>
-    <string name="use_current_location_body_purpose">Fin</string>
+    <string name="use_current_location_body_msg_kor">"Se recopilará tu ubicación actual y se utilizará para proporcionar algunas de las funciones de la aplicación El tiempo, como por ejemplo, obtener información sobre el tiempo local.
+
+Esta aplicación procesará de forma frecuente tu ubicación, incluso si no la estás usando, para proporcionar información del tiempo de forma continua. Al continuar, aceptas la recopilación y el procesamiento de tu ubicación para los fines anteriormente mencionados.
+
+Si quieres, puedes detener la recopilación y el uso de la ubicación en los ajustes de la aplicación El tiempo."</string>
+    <string name="use_current_location_body_purpose">Propósito</string>
     <string name="use_current_location_body_purpose_content">Para proporcionar información meteorológica de tu ubicación actual</string>
     <string name="use_current_location_body_search_provider">Proveedor de servicios</string>
+    <string name="use_current_location_continue">Continuar</string>
+    <string name="use_current_location_not_now">Ahora no</string>
     <string name="use_current_location_off_alert_popup">Se eliminará la información de ubicación actual.</string>
     <string name="useful_informations">Consejos sobre calidad de vida y otros informes</string>
     <string name="using_as">Usar como %s</string>
@@ -743,9 +792,11 @@ Si quiere conocer el tiempo de su ubicación actual, deberá permitir al proveed
     <string name="weather_tip">Consejos sobre el tiempo</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Mié.</string>
     <string name="weekly_forecast">Diario</string>
     <string name="widget_background">Fondo de pantalla del widget</string>
     <string name="widget_empty_text">Pulsa para ver el tiempo</string>
+    <string name="widget_location">Nombre de la ciudad</string>
     <string name="widget_name_4x1">El tiempo y Reloj</string>
     <string name="widget_setting">Ajustes</string>
     <string name="widget_setting_background_color">Color de fondo</string>

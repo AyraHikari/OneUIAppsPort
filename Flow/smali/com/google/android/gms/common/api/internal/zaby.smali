@@ -1,39 +1,34 @@
-.class final synthetic Lcom/google/android/gms/common/api/internal/zaby;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/gms/common/api/internal/zaby;
+.super Lcom/google/android/gms/internal/base/zaa;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
-
-
-# instance fields
-.field private final zakf:Lcom/google/android/gms/common/util/BiConsumer;
+.implements Lcom/google/android/gms/common/api/internal/IStatusCallback;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/util/BiConsumer;)V
-    .locals 0
+.method constructor <init>(Landroid/os/IBinder;)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "com.google.android.gms.common.api.internal.IStatusCallback"
 
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zaby;->zakf:Lcom/google/android/gms/common/util/BiConsumer;
+    .line 1
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 1
+.method public final onResult(Lcom/google/android/gms/common/api/Status;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaby;->zakf:Lcom/google/android/gms/common/util/BiConsumer;
+    const/4 p1, 0x0
 
-    check-cast p1, Lcom/google/android/gms/common/api/Api$AnyClient;
-
-    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
-
-    .line 2
-    invoke-interface {v0, p1, p2}, Lcom/google/android/gms/common/util/BiConsumer;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-void
+    throw p1
 .end method

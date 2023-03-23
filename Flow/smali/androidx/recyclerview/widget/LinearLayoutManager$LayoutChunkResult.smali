@@ -28,7 +28,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 2486
+    .line 2647
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,16 +41,16 @@
 
     const/4 v0, 0x0
 
-    .line 2493
+    .line 2654
     iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$LayoutChunkResult;->mConsumed:I
 
-    .line 2494
+    .line 2655
     iput-boolean v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$LayoutChunkResult;->mFinished:Z
 
-    .line 2495
+    .line 2656
     iput-boolean v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$LayoutChunkResult;->mIgnoreConsumed:Z
 
-    .line 2496
+    .line 2657
     iput-boolean v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$LayoutChunkResult;->mFocusable:Z
 
     return-void

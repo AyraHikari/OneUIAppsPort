@@ -33,6 +33,7 @@
     <string name="air_quality">বায়ুর মান</string>
     <string name="air_quality_next_tts">বায়ুর মানের পরের দৈনিক পূর্বাভাষ</string>
     <string name="air_quality_previous_tts">বায়ুর মানের আগের দৈনিক পূর্বাভাষ</string>
+    <string name="alert_title">খারাপ আবহাওয়া সম্পর্কে অ্যালার্ট</string>
     <string name="all_added_cities">যোগ করা সব শহর</string>
     <string name="allow">অনুমতি দিন</string>
     <string name="allow_permission_in_settings">এই ফিচার ব্যবহারের জন্য, আপনাকে সেটিংসে অনুমতি দিতে হবে৷</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">ক্রিয়া সমর্থিত নয়।</string>
     <string name="apply_daylight_saving_time">দিবালোক সংরক্ষণ সময় প্রয়োগ করবেন?</string>
     <string name="as_possible_after_verification">রিপোর্ট পাঠানো হয়েছে৷ যাচাইকরণের পর যত দ্রত সম্ভব শহরের নাম পরিবর্তন করা হবে৷</string>
+    <string name="auto_refresh_on_screen_description">প্রতি ঘণ্টায় স্বয়ংক্রিয়ভাবে রিফ্রেশ করা আবহাওয়ার তথ্য নিন। এটি চালু থাকলে, আপনি ম্যানুয়ালি রিফ্রেশ করতে পারবেন না।</string>
+    <string name="auto_refresh_on_the_go">চলার পথে অটো রিফ্রেশ করুন</string>
+    <string name="auto_refresh_on_the_go_advanced">উচ্চতর</string>
+    <string name="auto_refresh_on_the_go_description">আপনি গাড়ি চালানো, বাইক চালানো, দৌড়ানো, বা হাঁটার সময় আরো ঘন ঘন আবহাওয়ার আপডেট নিন৷ এটি চালু থাকলে, আপনি ম্যানুয়ালি রিফ্রেশ করতে পারবেন না।</string>
+    <string name="auto_refresh_on_the_go_simple_description">আপনি গাড়ি চালানো, বাইক চালানো, দৌড়ানো, বা হাঁটার সময় আরো ঘন ঘন আবহাওয়ার আপডেট নিন৷</string>
     <string name="btn_report">রিপোর্ট</string>
     <string name="button_finish">সমাপ্ত করুন</string>
     <string name="button_tts">বোতাম</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">আরো তথ্যের জন্য দু’বার ট্যাপ করুন।</string>
     <string name="china">চীন</string>
     <string name="cities_button">শহরগুলো</string>
+    <string name="city_added">শহর যোগ করা হয়েছে৷</string>
     <string name="city_list_text">শহরগুলো</string>
     <string name="clear">পরিষ্কার করুন</string>
     <string name="clear_then_cloudy">পরিষ্কার তারপর মেঘলা</string>
@@ -130,8 +137,8 @@
     <string name="discard_button">পরিত্যাগ করুন</string>
     <string name="display_scaling_mode_condensed">ছোট</string>
     <string name="display_scaling_mode_standard">বড়</string>
-    <string name="done_button">সম্পন্ন</string>
-    <string name="done_tts">সম্পন্ন</string>
+    <string name="done_button">শেষ</string>
+    <string name="done_tts">শেষ</string>
     <string name="double_tab_to_deselect_all_tts">নির্বাচন মুক্ত করার জন্য দুবার ট্যাপ করুন।</string>
     <string name="double_tab_to_select_all_tts">সকল নির্বাচন করতে দুবার ট্যাপ করুন।</string>
     <string name="double_tap_and_hold_then_drag_to_reorder">দু’বার ট্যাপ করে ধরে রাখুন, তারপর পুনরায় সাজাতে টেনে আনুন।</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">%d অবস্থানে আইটেম ছাড়া হয়েছে।</string>
     <string name="dragndroplist_drag_start">%d অবস্থানে আইটেম টানা শুরু হয়েছে।</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d অবস্থানের আইটেম টেনে আনা যাবে না।</string>
+    <string name="drawer_tips">%s সংক্রান্ত পরামর্শ</string>
     <string name="drawer_tips_message">অবস্থানগুলো যোগ করতে, মুছতে, ও পুনর্বিন্যাস করতে এখানে ট্যাপ করুন। এছাড়াও আপনি হোম স্ক্রিনে বিভিন্ন অবস্থান দেখাতে একাধিক উইজেট যোগ করতে পারেন।</string>
     <string name="drawer_tips_message_1">অবস্থানগুলো যোগ করতে, মুছতে, ও পুনর্বিন্যাস করতে এই মেনুর নিচে ‘অবস্থান ব্যবস্থাপনা’ অপশনে ট্যাপ করুন।</string>
     <string name="drawer_tips_message_2">একই সময়ে বিভিন্ন অবস্থান দেখানোর জন্য আপনি হোম স্ক্রিনে একাধিক উইজেট যোগ করতে পারেন।</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">পূর্বাভাষের ভিডিও</string>
     <string name="format_km_per_hour">%s কিমি/ঘ</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">শুক্র</string>
     <string name="general">সাধারণ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">আপনি কিভাবে আপনার ফোন ব্যবহার করেন তার ভিত্তিতে স্বকীয় কন্টেন্ট নিন৷</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">আপনি কিভাবে আপনার ট্যাবলেট ব্যবহার করেন তার ভিত্তিতে স্বকীয় কন্টেন্ট নিন৷</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">আবহাওয়া থেকে আপনার বর্তমান অবস্থান সহ আবহাওয়ার তথ্য পাওয়ার</string>
     <string name="go_to_website">ওয়েবসাইটে যান</string>
     <string name="goto_apps">নতুন আপডেট পাওয়া যাচ্ছে। এখন ইনস্টল করবেন?</string>
     <string name="goto_apps_later">পরে</string>
     <string name="goto_apps_now">এখন</string>
     <string name="goto_apps_update_title">নতুন সামগ্রীর সতর্কতাসমূহ</string>
     <string name="header_tts">শিরোনাম</string>
+    <string name="heavy">ভারী</string>
     <string name="heavy_rain">ভারী বৃষ্টিপাত</string>
     <string name="heavy_rain_followed_by_intense_heat">বৃষ্টির পর গরম হাওয়া</string>
     <string name="heavy_rain_followed_by_light_rain">বৃষ্টির পর গরম হাওয়া</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">দৃষ্টিগ্রাহ্যতা</string>
     <string name="life_index_wind">বায়ু</string>
     <string name="life_index_wind_force">বাতাসের গতি</string>
+    <string name="light">হালকা</string>
     <string name="light_rain_followed_by_heavy_rain">ভারী বৃষ্টির পর হালকা বৃষ্টি</string>
     <string name="light_rain_with_some_heavy_rain">কিছুটা ভারী বৃষ্টিসহ হালকা বৃষ্টি</string>
     <string name="link_tts">লিংক</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">কোনো ফলাফল পাওয়া যায়নি।</string>
     <string name="message_service_not_available">পরিষেবা বর্তমানে ব্যবহারযোগ্য নয়।</string>
     <string name="minus_tts">বিয়োগ</string>
+    <string name="mon">সোম</string>
     <string name="more">আরও</string>
     <string name="more_cuntact_us">আমাদের সাথে যোগাযোগ করুন</string>
     <string name="more_information">আরো</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">আবহাওয়ার ডিফল্ট অবস্থান পরিবর্তন করতে এবং আপনার সব অবস্থান ব্যবস্থাপনা করতে এখানে ট্যাপ করুন।</string>
     <string name="new_version_available">%s-এর একটি নতুন সংস্করণ আছে।</string>
     <string name="new_version_is_available">একটি নতুন সংস্করণ পাওয়া যাচ্ছে।</string>
+    <string name="news_menu_show_news">সংবাদ দেখান</string>
+    <string name="news_opt_in_banner_title_text">আবহাওয়া উইজেটে খবর দেখিয়ে বর্তমান ইভেন্টগুলো সম্পর্কে হালনাগাদ থাকুন।</string>
+    <string name="news_opt_in_popup_desc_text">আবহাওয়া উইজেটে %s থেকে সর্বশেষ শিরোনাম দেখিয়ে বিশ্বের সাথে হালনাগাদ থাকুন।</string>
+    <string name="news_opt_in_popup_title_text">একটি উইজেটে খবর ও আবহাওয়া দেখুন</string>
+    <string name="news_request_agree_text">%s থেকে সংবাদ পেতে ট্যাপ করুন</string>
+    <string name="news_widget_bubble_text">আবহাওয়ার সাথে সংবাদ নিন৷</string>
+    <string name="news_widget_dummy_title">আজকের শীর্ষ গল্প</string>
+    <string name="news_widget_new_dummy_title">আজ সকালে আপনার যে 5টি জিনিস জানা প্রয়োজন</string>
+    <string name="news_widget_oobe_text">সংবাদ যোগ করতে এখানে ট্যাপ করুন৷</string>
     <string name="next">Next city</string>
+    <string name="next_btn">পরবর্তী</string>
     <string name="next_city">পরবর্তী শহরের আবহাওয়ার তথ্য দেখতে দু’বার ট্যাপ করুন।</string>
     <string name="night_tts">রাত</string>
     <string name="no_application_available">কোনো অ্যাপ্লিকেশন সুলভ নয়।</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">আবহাওয়ার কোনো তথ্য নেই</string>
     <string name="not_in_use">ব্যবহৃত হচ্ছে না</string>
     <string name="not_now">এখন নয়</string>
+    <string name="not_now_btn">এখন নয়</string>
     <string name="not_selected">নির্বাচিত নয়</string>
     <string name="nothing_selected">কিছুই নির্বাচিত নেই।</string>
     <string name="noti">বিজ্ঞপ্তি</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">দ্রুততম সময়ে ও সবচেয়ে নিখুঁতভাবে অবস্থান নির্ণয় করার জন্য, ‘সেটিংস’-এ ট্যাপ করুন, তারপর শনাক্তকরণ পদ্ধতি হিসেবে ‘GPS, ওয়াই-ফাই, ও মোবাইল নেটওয়ার্ক’ নির্বাচন করুন৷</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">দ্রুততম সময়ে ও সবচেয়ে নিখুঁতভাবে অবস্থান নির্ণয় করার জন্য, ‘সেটিংস’-এ ট্যাপ করুন, তারপর শনাক্তকরণ পদ্ধতি হিসেবে ‘GPS ও ওয়াই-ফাই’ নির্বাচন করুন৷</string>
     <string name="notice_gps_trun_off_message_verizon">আপনার স্থানীয় আবহাওয়ার তথ্য দেখতে, অবস্থানের সেটিংসে চালু করুন এবং নিশ্চিত করুন যে মোডটি উচ্চ নির্ভুলতায় সেট করা হয়েছে৷</string>
+    <string name="notification_alert_channel_name">খারাপ আবহাওয়া সম্পর্কে অ্যালার্ট</string>
     <string name="notification_apps_update_channel_name">আপডেট সংক্রান্ত বিজ্ঞপ্তি</string>
     <string name="notification_auto_refresh_channel_name">আবহাওয়া অটো রিফ্রেশ</string>
     <string name="notification_dex_channel_name">Samsung DeX-এ আবহাওয়া</string>
@@ -438,6 +463,7 @@
     <string name="open_app">অ্যাপ খুলুন</string>
     <string name="open_source_licences">ওপেন সোর্স লাইসেন্স</string>
     <string name="other_locations">অন্যান্য অবস্থান</string>
+    <string name="partly_sunny">আংশিক রৌদ্রোজ্জ্বল</string>
     <string name="paused">থেমে আছে</string>
     <string name="pd_km">%.1f কিমি</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">শিশিরপাত: %d mm</string>
     <string name="preview">%s প্রিভিউ</string>
     <string name="previous">Previous city</string>
+    <string name="previous_btn">পূর্ববর্তী</string>
     <string name="previous_city">পূর্ববর্তী শহরের আবহাওয়ার তথ্য দেখতে দু’বার ট্যাপ করুন।</string>
     <string name="privacy_policy">গোপনীয়তার নীতিমালা</string>
     <string name="probability_of_rain_text">বৃষ্টির সম্ভাবনা</string>
     <string name="protect_your_content">আপনার কন্টেন্ট সুরক্ষিত রাখুন</string>
+    <string name="ps_in">%s ইঞ্চি</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">রাডার ও ম্যাপ</string>
     <string name="rain">বৃষ্টি</string>
     <string name="rain_followed_by_intense_heat">বৃষ্টির পর তীব্র গরম</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">আবহাওয়া তথ্য আপডেট করতে, ‘সেটিংস’ ট্যাপ করুন, ‘অ্যাপের তথ্য > অনুমতি’-তে যান, তারপর নিম্নলিখিত অনুমতিগুলো দিয়ে আবার চেষ্টা করুন:</string>
     <string name="runtime_location_permission_title">অনুমতি দিন</string>
     <string name="runtime_oem_grant_permission_desc">%s অ্যাপকে নিম্নলিখিতগুলো অ্যাক্সেস করার জন্য অনুমতি দেয়া হয়েছে:</string>
+    <string name="sat">শনি</string>
     <string name="save_button">সংরক্ষণ</string>
     <string name="search_most_searched_for">সবচেয়ে বেশি অনুসন্ধান করা হয়েছে</string>
     <string name="search_tab_cities">শহর</string>
@@ -510,10 +540,10 @@
     <string name="selected">নির্বাচিত</string>
     <string name="sending">পাঠানো হচ্ছে…</string>
     <string name="service_is_not_available_temporarily">পরিষেবা অস্থায়ীভাবে ব্যবহারযোগ্য নয়।</string>
-    <string name="sesl_action_bar_up_description">উপরে চালনা করুন</string>
+    <string name="sesl_action_bar_up_description">উপরে যান</string>
     <string name="sesl_action_menu_overflow_badge_description">নতুন কন্টেন্ট আছে</string>
     <string name="sesl_action_menu_overflow_badge_text_n">ন</string>
-    <string name="sesl_action_menu_overflow_description">আরও বিকল্প</string>
+    <string name="sesl_action_menu_overflow_description">আরো অপশন</string>
     <string name="sesl_index_assistant_text">স্ক্রল করতে দুই আঙুল দিয়ে উপরের বা নিচের দিকে সোয়াইপ করুন৷</string>
     <string name="sesl_index_scrollbar">স্ক্রল বার</string>
     <string name="sesl_index_section">বিভাগের সূচিপত্র</string>
@@ -521,11 +551,12 @@
     <string name="sesl_material_badge_description">নতুন কন্টেন্ট আছে</string>
     <string name="sesl_material_overflow_badge_text_n">ন</string>
     <string name="sesl_more_item_label">আরও</string>
+    <string name="sesl_preferecne_badge_description">নতুন বিজ্ঞপ্তি</string>
     <string name="sesl_preferencecategory_added_title">শিরোনাম</string>
-    <string name="sesl_search_hint">অনুসন্ধান করুন</string>
+    <string name="sesl_search_hint">অনুসন্ধান</string>
     <string name="sesl_searchview_description_clear">অনুসন্ধানের ঘরটি খালি করুন</string>
     <string name="sesl_searchview_description_query">অনুসন্ধান জিজ্ঞাসা</string>
-    <string name="sesl_searchview_description_search">অনুসন্ধান করুন</string>
+    <string name="sesl_searchview_description_search">অনুসন্ধান</string>
     <string name="sesl_searchview_description_submit">জিজ্ঞাসা উপস্থাপন করুন</string>
     <string name="sesl_searchview_description_voice">ভয়েস অনুসন্ধান</string>
     <string name="sesl_switch_off">বন্ধ আছে</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">আপনার নেটওয়ার্ক সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।</string>
     <string name="st_offline">অফলাইন</string>
     <string name="st_view_less">কম দেখুন</string>
+    <string name="status_off">বন্ধ</string>
+    <string name="status_on">চালু</string>
+    <string name="sun">রবি</string>
     <string name="sunny">রৌদ্রোজ্জ্বল</string>
     <string name="sunny_with_some_clouds">কিছু মেঘসহ রোদ</string>
     <string name="sunny_with_some_heavy_rain">কিছুটা ভারী বৃষ্টিসহ রোদ</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">আপনার পুরাতন ডিভাইস থেকে আবহাওয়ার ডাটা পুনবর্হাল করতে এখানে ট্যাপ করুন৷</string>
     <string name="tap_retry_to_try_to_find_your_location_again">আবার অবস্থান আবার খুঁজতে ‘পুনঃচেষ্টা’ অপশনে ট্যাপ করুন।</string>
     <string name="tap_setting_message_edge_panel">স্থানীয় আবহাওয়া দেখতে ‘অবস্থান’ চালু করুন৷</string>
+    <string name="tap_the_settings_icon">সেটিংস আইকনটিতে ট্যাপ করুন।</string>
     <string name="tap_to_get_the_weather">আবহাওয়ার তথ্য জানতে ট্যাপ করুন</string>
     <string name="temp_f_c">%d°ফা</string>
     <string name="temp_f_m">%d°সে</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">শর্ত ও নিয়মাবলি</string>
     <string name="the_latest_version">সর্বশেষ সংস্করণ ইতিমধ্যে ইনস্টল করা হয়েছে৷</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">বিজ্ঞপ্তি ও ক্যালেন্ডারেও এটি প্রয়োগ করা হবে৷</string>
+    <string name="thu">বৃহ</string>
     <string name="tick_box_tts">চেকবক্স</string>
     <string name="ticked_tts">টিকযুক্ত</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">প্রতি ঘণ্টায়</string>
     <string name="title_select_locations">অবস্থানগুলো নির্বাচন করুন</string>
     <string name="title_theme">থিম</string>
+    <string name="to_continue_agree_to_updated">অব্যাহত রাখতে, আমাদের আপডেটকৃত %s-এর সাথে সম্মতি দিন৷</string>
     <string name="to_get_local_weather_chn">"আপনি যাতে স্থানীয় আবহাওয়া সম্পর্কিত তথ্য পেতে পারেন, সেই জন্য আপনার বর্তমান অবস্থানটি আবহাওয়া পরিষেবা প্রদানকারীর নিকট পাঠানো হবে। (অনুগ্রহ করে প্রদানকারীর গোপনীয়তা %1$sবিধি ও শর্তাবলি%2$s এবং %3$sগোপনীয়তা নীতি%4$s দেখুন।)
 আপনার ডিভাইসটিতে থাকা অন্যান্য অ্যাপ এবং পরিষেবাগুলো সেই সব অ্যাপগুলোতে আবহাওয়া দেখানোর জন্য আপনাকে সরবরাহকৃত আবহাওয়া সম্পর্কিত তথ্যে অ্যাক্সেস লাভ করতে পারে।
 আপনাকে সবসময় আবহাওয়ার তথ্য প্রদানের জন্য আপনি অ্যাপটি ব্যবহার না করলেও আবহাওয়া আপনার অবস্থান সম্পর্কে তথ্য পাবে।"</string>
     <string name="today">আজ</string>
+    <string name="try_it_out_btn">এটি ব্যবহার করে দেখুন</string>
+    <string name="tue">মঙ্গল</string>
+    <string name="turn_on_to_use_precise_location">এই ফিচার ব্যবহারের জন্য, আপনি %s-কে সবসময় আপনার ফোনের অবস্থান অ্যাক্সেস করার জন্য অনুমতি দিতে হবে এবং ‘নিখুঁত অবস্থান ব্যবহার করুন’ অপশনটি চালু করতে হবে। ‘সেটিংস’-এ ট্যাপ করুন, তারপর ‘অনুমতি > অবস্থান’-এ যান৷</string>
     <string name="tw_title_weather_broadcast">ব্রডকাস্ট</string>
-    <string name="unable_to_check_for_updates">আপডেট পরীক্ষা করতে অক্ষম৷ কোনো নেটওয়ার্ক সংযোগ নেই।</string>
+    <string name="unable_to_check_for_updates">আপডেট চেক করা যায়নি৷ পরে আবার চেষ্টা করুন৷</string>
     <string name="unable_to_receive_info_msg">তথ্য গ্রহণ সম্ভব নয়</string>
     <string name="unticked_tts">টিকযুক্ত নয়</string>
     <string name="unused">অব্যবহৃত</string>
     <string name="update">আপডেট</string>
     <string name="update_abb8">আপডেট</string>
     <string name="update_app">অ্যাপ আপডেট করুন</string>
+    <string name="updated_tile_chn">আপডেট করা হয়েছে: %s</string>
     <string name="updated_tts">%s আপডেট হয়েছে</string>
+    <string name="use_current_location">বর্তমান অবস্থান ব্যবহার করুন</string>
     <string name="use_current_location_agree_popup">"স্থানীয় আবহাওয়ার তথ্য পেতে, আপনার বর্তমান অবস্থান আবহাওয়া পরিষেবা প্রদানকারীর কাছে পাঠানো হবে৷ (অনুগ্রহ করে প্রোভাইডারের %1$sগোপনীয়তার নীতিমালা%2$s দেখুন৷)
 আপনার ডিভাইসে থাকা অন্যান্য অ্যাপ ও পরিষেবাগুলো সেইসব অ্যাপে আবহাওয়ার তথ্য দেখানোর জন্য আবহাওয়ার সংগৃহীত ডাটা ব্যবহার করতে পারে।"</string>
     <string name="use_current_location_and_background_agree_popup">"আপনি যাতে স্থানীয় আবহাওয়া সম্পর্কিত তথ্য পেতে পারেন, সেই জন্য আপনার বর্তমান অবস্থানটি আবহাওয়া পরিষেবা প্রদানকারীর নিকট পাঠানো হবে। (অনুগ্রহ করে আবহাওয়া সম্পর্কিত তথ্য প্রদানকারীর গোপনীয়তা %1$sগোপনীয়তা নীতি%2$s দেখুন।)
@@ -635,9 +677,16 @@
 আবহাওয়া অ্যাপ এর সেটিংসে গিয়ে আপনি আপনার অবস্থানের ব্যবহার বন্ধ করে দিতে পারেন।"</string>
     <string name="use_current_location_body_msg_chn">"\"আবহাওয়া\" ব্যবহার করার আগে অনুগ্রহ করে মনোযোগ সহকারে পড়ুন :
 আপনি যদি আপনার বর্তমান অবস্থানের আবহাওয়াটি জানতে চান তাহলে আপনাকে তৃতীয় পক্ষের পরিষেবা সরবরাহকারীকে আপনার ডিভাইসটিতে নিরবিচ্ছিন্ন (এমনকি আপনি যখন পরিষেবাটি ব্যবহার করছেন না তখনও) অ্যাক্সেস পাওয়ার এবং যেমনটি নিচে তালিকাভুক্ত রয়েছে সেই অনুযায়ী নির্দিষ্ট তথ্য প্রাপ্ত করার অনুমতি প্রদান করতে হবে। এই ধরণের অনুমতি প্রদান করার আগে অনুগ্রহ করে তৃতীয় পক্ষের পরিষেবা সরবরাহকারীর %1$sশর্তাবলী%2$s ও %3$sগোপনীয়তা নীতিটি%4$s মনোযোগ সহকারে পড়ুন ও বুঝে নিন। আপনি সেটিংস মেনুতে \"অবস্থান\" বন্ধ করে দিয়ে আপনার অনুমতিটি প্রত্যাহার করতে পারেন। আপনার ডিভাইসটিতে থাকা অন্যান্য অ্যাপ ও পরিষেবাগুলি ঐ সমস্ত অ্যাপ এবং পরিষেবাগুলিতে আবহাওয়া দেখানোর জন্য পুনরুদ্ধার করা আবহাওয়ার তথ্য ব্যবহার করতে পারে।"</string>
+    <string name="use_current_location_body_msg_kor">"আপনার স্থানীয় আবহাওয়ার মতো আবহাওয়া অ্যাপের কিছু ফিচার প্রদানের জন্য আপনার বর্তমান অবস্থান সংগ্রহ ও ব্যবহার করা হবে।
+
+আবহাওয়ার তথ্য ক্রমাগতভাবে প্রদান করার জন্য, আপনি এই অ্যাপ ব্যবহার না করার সময়েও এই অ্যাপ নিয়মিতভাবে আপনার অবস্থান প্রক্রিয়া করবে। এগিয়ে যাওয়ার মাধ্যমে, আপনি উপরে উল্লিখিত উদ্দেশ্যে আপনার অবস্থান সংগ্রহ ও প্রক্রিয়াকরণের জন্য সম্মতি দিচ্ছেন৷
+
+আপনি আবহাওয়া অ্যাপের সেটিংসে এই অবস্থান সংগ্রহ ও ব্যবহার করা বন্ধ করতে পারেন৷"</string>
     <string name="use_current_location_body_purpose">উদ্দেশ্য</string>
     <string name="use_current_location_body_purpose_content">আপনার বর্তমান অবস্থানের জন্য আবহাওয়ার তথ্য প্রদান করতে</string>
     <string name="use_current_location_body_search_provider">পরিষেবা সরবরাহকারী</string>
+    <string name="use_current_location_continue">এগিয়ে যান</string>
+    <string name="use_current_location_not_now">এখন নয়</string>
     <string name="use_current_location_off_alert_popup">বর্তমান অবস্থান তথ্য অপসারিত হবে।</string>
     <string name="useful_informations">জীবনের জন্য পরামর্শ ও অন্যান্য রিপোর্ট</string>
     <string name="using_as">%s হিসেবে ব্যবহার করা</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">আবহাওয়া সংক্রান্ত পরামর্শ</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">বুধ</string>
     <string name="weekly_forecast">দৈনিক</string>
     <string name="widget_background">উইজেটের পটভূমি</string>
     <string name="widget_empty_text">আবহাওয়ার তথ্যের জন্য ট্যাপ করুন</string>
+    <string name="widget_location">শহরের নাম</string>
     <string name="widget_name_4x1">আবহাওয়া ও ঘড়ি</string>
     <string name="widget_setting">সেটিংস</string>
     <string name="widget_setting_background_color">ব্যাকগ্রাউন্ডের রং</string>

@@ -22,7 +22,7 @@
 .method constructor <init>(Lokio/Buffer;)V
     .locals 0
 
-    .line 117
+    .line 125
     iput-object p1, p0, Lokio/Buffer$2;->this$0:Lokio/Buffer;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
@@ -35,7 +35,7 @@
 .method public available()I
     .locals 4
 
-    .line 128
+    .line 136
     iget-object v0, p0, Lokio/Buffer$2;->this$0:Lokio/Buffer;
 
     iget-wide v0, v0, Lokio/Buffer;->size:J
@@ -60,7 +60,7 @@
 .method public read()I
     .locals 4
 
-    .line 119
+    .line 127
     iget-object v0, p0, Lokio/Buffer$2;->this$0:Lokio/Buffer;
 
     iget-wide v0, v0, Lokio/Buffer;->size:J
@@ -90,7 +90,7 @@
 .method public read([BII)I
     .locals 1
 
-    .line 124
+    .line 132
     iget-object v0, p0, Lokio/Buffer$2;->this$0:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->read([BII)I
@@ -103,7 +103,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 135
+    .line 143
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -112,9 +112,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ".inputStream()"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

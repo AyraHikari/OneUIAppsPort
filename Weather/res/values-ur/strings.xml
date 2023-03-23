@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">سائن ان کریں</string>
     <string name="common_signin_button_text_long">‏Google کے ساتھ سائن ان کریں</string>
     <string name="copy">کاپی کریں</string>
-    <string name="copy_toast_msg">لنک کلپ بورڈ پر کاپی ہو گیا</string>
     <string name="error_icon_content_description">خرابی</string>
     <string name="expand_button_title">جدید ترین</string>
     <string name="exposed_dropdown_menu_content_description">ڈراپ ڈاؤن مینو دکھائیں</string>
-    <string name="fallback_menu_item_copy_link">لنک کاپی کریں</string>
-    <string name="fallback_menu_item_open_in_browser">براؤزر میں کھولیں</string>
-    <string name="fallback_menu_item_share_link">لنک کا اشتراک کریں</string>
     <string name="icon_content_description">ڈائیلاگ کا آئیکن</string>
     <string name="item_view_role_description">ٹیب</string>
     <string name="material_clock_toggle_content_description">AM یا PM منتخب کریں</string>

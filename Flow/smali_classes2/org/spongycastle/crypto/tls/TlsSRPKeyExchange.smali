@@ -192,7 +192,7 @@
     .line 40
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unsupported key exchange algorithm"
+    const-string/jumbo v0, "unsupported key exchange algorithm"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -218,8 +218,6 @@
     const/4 p0, 0x0
 
     return-object p0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x15
@@ -286,8 +284,6 @@
     iget-object v0, p0, Lorg/spongycastle/crypto/tls/TlsSRPKeyExchange;->srpServer:Lorg/spongycastle/crypto/agreement/srp/SRP6Server;
 
     if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lorg/spongycastle/crypto/tls/TlsSRPKeyExchange;->srpServer:Lorg/spongycastle/crypto/agreement/srp/SRP6Server;
 
     iget-object v1, p0, Lorg/spongycastle/crypto/tls/TlsSRPKeyExchange;->srpPeerCredentials:Ljava/math/BigInteger;
 

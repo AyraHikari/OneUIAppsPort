@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 79
+    .line 69
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -29,77 +29,12 @@
 
 # virtual methods
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
-    .locals 2
+    .locals 1
 
-    .line 81
-    invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->current()C
+    .line 71
+    sget-object v0, Lorg/jsoup/parser/TokeniserState$5;->RawtextLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
-    move-result v0
+    invoke-static {p1, p2, p0, v0}, Lorg/jsoup/parser/TokeniserState;->access$200(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
 
-    if-eqz v0, :cond_2
-
-    const/16 v1, 0x3c
-
-    if-eq v0, v1, :cond_1
-
-    const v1, 0xffff
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [C
-
-    .line 94
-    fill-array-data v0, :array_0
-
-    invoke-virtual {p2, v0}, Lorg/jsoup/parser/CharacterReader;->consumeToAny([C)Ljava/lang/String;
-
-    move-result-object p2
-
-    .line 95
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 91
-    :cond_0
-    new-instance p2, Lorg/jsoup/parser/Token$EOF;
-
-    invoke-direct {p2}, Lorg/jsoup/parser/Token$EOF;-><init>()V
-
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(Lorg/jsoup/parser/Token;)V
-
-    goto :goto_0
-
-    .line 83
-    :cond_1
-    sget-object p2, Lorg/jsoup/parser/TokeniserState$5;->RawtextLessthanSign:Lorg/jsoup/parser/TokeniserState;
-
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->advanceTransition(Lorg/jsoup/parser/TokeniserState;)V
-
-    goto :goto_0
-
-    .line 86
-    :cond_2
-    invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->error(Lorg/jsoup/parser/TokeniserState;)V
-
-    .line 87
-    invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->advance()V
-
-    const p2, 0xfffd
-
-    .line 88
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
-
-    :goto_0
     return-void
-
-    nop
-
-    :array_0
-    .array-data 2
-        0x3cs
-        0x0s
-    .end array-data
 .end method

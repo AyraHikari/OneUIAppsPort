@@ -21,7 +21,7 @@
     <string name="abc_search_hint">തിരയുക…</string>
     <string name="abc_searchview_description_clear">ചോദ്യം മായ്‌ക്കുക</string>
     <string name="abc_searchview_description_query">ചോദ്യം തിരയുക</string>
-    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_search">തിരയുക</string>
     <string name="abc_searchview_description_submit">ചോദ്യം സമർപ്പിക്കുക</string>
     <string name="abc_searchview_description_voice">സംസാരത്തിലൂടെ തിരയുക</string>
     <string name="abc_shareactionprovider_share_with">ഇനിപ്പറയുന്നതുമായി പങ്കിടുക</string>
@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">സൈൻ ഇൻ ചെയ്യുക</string>
     <string name="common_signin_button_text_long">Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക</string>
     <string name="copy">പകർത്തുക</string>
-    <string name="copy_toast_msg">ക്ലിപ്പ്‌ബോർഡിലേക്ക് ലിങ്ക് പകർത്തി</string>
     <string name="error_icon_content_description">പിശക്</string>
     <string name="expand_button_title">വിപുലമായത്</string>
     <string name="exposed_dropdown_menu_content_description">ഡ്രോപ്പ്‌ ഡൗൺ മെനു കാണിക്കുക</string>
-    <string name="fallback_menu_item_copy_link">ലിങ്ക് പകർത്തുക</string>
-    <string name="fallback_menu_item_open_in_browser">ബ്രൗസറിൽ തുറക്കുക</string>
-    <string name="fallback_menu_item_share_link">ലിങ്ക് പങ്കിടുക</string>
     <string name="icon_content_description">ഡയലോഗ് ഐക്കൺ</string>
     <string name="item_view_role_description">ടാബ്</string>
     <string name="material_clock_toggle_content_description">AM അല്ലെങ്കിൽ PM തിരഞ്ഞെടുക്കുക</string>
@@ -109,7 +105,7 @@
     <string name="not_set">സജ്ജീകരിച്ചിട്ടില്ല</string>
     <string name="password_toggle_content_description">പാസ്‌വേഡ് കാണിക്കുക</string>
     <string name="preference_copied">\"%1$s\" ക്ലിപ്‌ബോർഡിലേക്ക് പകർത്തി.</string>
-    <string name="search_menu_title">Search</string>
+    <string name="search_menu_title">തിരയുക</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="v7_preference_off">ഓഫാണ്</string>

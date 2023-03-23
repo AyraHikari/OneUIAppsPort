@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/location/LocationRequest;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 # interfaces
 .implements Lcom/google/android/gms/common/internal/ReflectedParcelable;
@@ -17,39 +18,53 @@
 .end field
 
 .field public static final PRIORITY_BALANCED_POWER_ACCURACY:I = 0x66
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 .field public static final PRIORITY_HIGH_ACCURACY:I = 0x64
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 .field public static final PRIORITY_LOW_POWER:I = 0x68
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 .field public static final PRIORITY_NO_POWER:I = 0x69
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 
 # instance fields
-.field private priority:I
+.field zza:I
 
-.field private zzaf:J
+.field zzb:J
 
-.field private zzaw:J
+.field zzc:J
 
-.field private zzax:J
+.field zzd:Z
 
-.field private zzay:Z
+.field zze:J
 
-.field private zzaz:F
+.field zzf:I
 
-.field private zzba:J
+.field zzg:F
 
-.field private zzx:I
+.field zzh:J
+
+.field zzi:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/location/zzab;
+    new-instance v0, Lcom/google/android/gms/location/zzbo;
 
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzab;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/location/zzbo;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/location/LocationRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -57,278 +72,261 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 14
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+    const/16 v1, 0x66
 
-    const/16 v0, 0x66
+    const-wide/32 v2, 0x36ee80
 
-    iput v0, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    const-wide/32 v4, 0x927c0
 
-    const-wide/32 v0, 0x36ee80
+    const/4 v6, 0x0
 
-    iput-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    const-wide v7, 0x7fffffffffffffffL
 
-    const-wide/32 v0, 0x927c0
+    const v9, 0x7fffffff
 
-    iput-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    const/4 v10, 0x0
 
-    const/4 v0, 0x0
+    const-wide/16 v11, 0x0
 
-    iput-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    const/4 v13, 0x0
 
-    const-wide v0, 0x7fffffffffffffffL
+    move-object v0, p0
 
-    iput-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
-
-    const v0, 0x7fffffff
-
-    iput v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
-
-    const-wide/16 v0, 0x0
-
-    iput-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    .line 1
+    invoke-direct/range {v0 .. v13}, Lcom/google/android/gms/location/LocationRequest;-><init>(IJJZJIFJZ)V
 
     return-void
 .end method
 
-.method constructor <init>(IJJZJIFJ)V
+.method constructor <init>(IJJZJIFJZ)V
     .locals 0
 
+    .line 2
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
-    iput-wide p2, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iput-wide p2, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
-    iput-wide p4, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    iput-wide p4, p0, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
-    iput-boolean p6, p0, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    iput-boolean p6, p0, Lcom/google/android/gms/location/LocationRequest;->zzd:Z
 
-    iput-wide p7, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iput-wide p7, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
-    iput p9, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
+    iput p9, p0, Lcom/google/android/gms/location/LocationRequest;->zzf:I
 
-    iput p10, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iput p10, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
-    iput-wide p11, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    iput-wide p11, p0, Lcom/google/android/gms/location/LocationRequest;->zzh:J
+
+    iput-boolean p13, p0, Lcom/google/android/gms/location/LocationRequest;->zzi:Z
 
     return-void
 .end method
 
 .method public static create()Lcom/google/android/gms/location/LocationRequest;
-    .locals 1
+    .locals 15
 
-    new-instance v0, Lcom/google/android/gms/location/LocationRequest;
+    .line 1
+    new-instance v14, Lcom/google/android/gms/location/LocationRequest;
 
-    invoke-direct {v0}, Lcom/google/android/gms/location/LocationRequest;-><init>()V
+    const/16 v1, 0x66
 
-    return-object v0
-.end method
+    const-wide/32 v2, 0x36ee80
 
-.method private static zza(J)V
-    .locals 3
+    const-wide/32 v4, 0x927c0
 
-    const-wide/16 v0, 0x0
+    const/4 v6, 0x0
 
-    cmp-long v0, p0, v0
+    const-wide v7, 0x7fffffffffffffffL
 
-    if-ltz v0, :cond_0
+    const v9, 0x7fffffff
 
-    return-void
+    const/4 v10, 0x0
 
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    const-wide/16 v11, 0x0
 
-    const/16 v1, 0x26
+    const/4 v13, 0x1
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-object v0, v14
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct/range {v0 .. v13}, Lcom/google/android/gms/location/LocationRequest;-><init>(IJJZJIFJZ)V
 
-    const-string v1, "invalid interval: "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return-object v14
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public equals(Ljava/lang/Object;)Z
+    .locals 6
 
-    const/4 v0, 0x1
+    .line 1
+    instance-of v0, p1, Lcom/google/android/gms/location/LocationRequest;
 
-    if-ne p0, p1, :cond_0
+    const/4 v1, 0x0
 
-    return v0
+    if-eqz v0, :cond_0
 
-    :cond_0
-    instance-of v1, p1, Lcom/google/android/gms/location/LocationRequest;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    return v2
-
-    :cond_1
+    .line 2
     check-cast p1, Lcom/google/android/gms/location/LocationRequest;
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
-    iget v3, p1, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    .line 3
+    iget v2, p1, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
-    if-ne v1, v3, :cond_2
+    if-ne v0, v2, :cond_0
 
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v2, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
-    iget-wide v5, p1, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v4, p1, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
-    cmp-long v1, v3, v5
+    cmp-long v0, v2, v4
 
-    if-nez v1, :cond_2
+    if-nez v0, :cond_0
 
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    iget-wide v2, p0, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
-    iget-wide v5, p1, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    iget-wide v4, p1, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
-    cmp-long v1, v3, v5
+    cmp-long v0, v2, v4
 
-    if-nez v1, :cond_2
+    if-nez v0, :cond_0
 
-    iget-boolean v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzd:Z
 
-    iget-boolean v3, p1, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    iget-boolean v2, p1, Lcom/google/android/gms/location/LocationRequest;->zzd:Z
 
-    if-ne v1, v3, :cond_2
+    if-ne v0, v2, :cond_0
 
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iget-wide v2, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
-    iget-wide v5, p1, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iget-wide v4, p1, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
-    cmp-long v1, v3, v5
+    cmp-long v0, v2, v4
 
-    if-nez v1, :cond_2
+    if-nez v0, :cond_0
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzf:I
 
-    iget v3, p1, Lcom/google/android/gms/location/LocationRequest;->zzx:I
+    iget v2, p1, Lcom/google/android/gms/location/LocationRequest;->zzf:I
 
-    if-ne v1, v3, :cond_2
+    if-ne v0, v2, :cond_0
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
-    iget v3, p1, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iget v2, p1, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
-    cmpl-float v1, v1, v3
+    cmpl-float v0, v0, v2
 
-    if-nez v1, :cond_2
+    if-nez v0, :cond_0
 
     invoke-virtual {p0}, Lcom/google/android/gms/location/LocationRequest;->getMaxWaitTime()J
 
-    move-result-wide v3
+    move-result-wide v2
 
+    .line 4
     invoke-virtual {p1}, Lcom/google/android/gms/location/LocationRequest;->getMaxWaitTime()J
 
-    move-result-wide v5
+    move-result-wide v4
 
-    cmp-long p1, v3, v5
+    cmp-long v0, v2, v4
 
-    if-nez p1, :cond_2
+    if-nez v0, :cond_0
 
-    return v0
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzi:Z
 
-    :cond_2
-    return v2
+    iget-boolean p1, p1, Lcom/google/android/gms/location/LocationRequest;->zzi:Z
+
+    if-ne v0, p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    return v1
 .end method
 
-.method public final getExpirationTime()J
+.method public getExpirationTime()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
     return-wide v0
 .end method
 
-.method public final getFastestInterval()J
+.method public getFastestInterval()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
     return-wide v0
 .end method
 
-.method public final getInterval()J
+.method public getInterval()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
     return-wide v0
 .end method
 
-.method public final getMaxWaitTime()J
+.method public getMaxWaitTime()J
     .locals 5
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzh:J
 
-    iget-wide v2, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v2, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
     cmp-long v4, v0, v2
 
     if-gez v4, :cond_0
 
-    move-wide v0, v2
+    return-wide v2
 
     :cond_0
     return-wide v0
 .end method
 
-.method public final getNumUpdates()I
+.method public getNumUpdates()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzf:I
 
     return v0
 .end method
 
-.method public final getPriority()I
+.method public getPriority()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
     return v0
 .end method
 
-.method public final getSmallestDisplacement()F
+.method public getSmallestDisplacement()F
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
     return v0
 .end method
 
-.method public final hashCode()I
+.method public hashCode()I
     .locals 3
 
     const/4 v0, 0x4
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    .line 1
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -338,7 +336,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -348,7 +346,7 @@
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -358,7 +356,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    iget-wide v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzh:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -375,17 +373,26 @@
     return v0
 .end method
 
-.method public final isFastestIntervalExplicitlySet()Z
+.method public isFastestIntervalExplicitlySet()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzd:Z
 
     return v0
 .end method
 
-.method public final setExpirationDuration(J)Lcom/google/android/gms/location/LocationRequest;
+.method public isWaitForAccurateLocation()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzi:Z
+
+    return v0
+.end method
+
+.method public setExpirationDuration(J)Lcom/google/android/gms/location/LocationRequest;
     .locals 6
 
+    .line 1
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
@@ -398,34 +405,32 @@
 
     if-lez v4, :cond_0
 
-    iput-wide v2, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
-
     goto :goto_0
 
     :cond_0
-    add-long/2addr p1, v0
-
-    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    add-long v2, p1, v0
 
     :goto_0
-    iget-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iput-wide v2, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
-    const-wide/16 v0, 0x0
+    const-wide/16 p1, 0x0
 
-    cmp-long p1, p1, v0
+    cmp-long v0, v2, p1
 
-    if-gez p1, :cond_1
+    if-gez v0, :cond_1
 
-    iput-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
     :cond_1
     return-object p0
 .end method
 
-.method public final setExpirationTime(J)Lcom/google/android/gms/location/LocationRequest;
+.method public setExpirationTime(J)Lcom/google/android/gms/location/LocationRequest;
     .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
     const-wide/16 v0, 0x0
 
@@ -433,36 +438,93 @@
 
     if-gez p1, :cond_0
 
-    iput-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iput-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
     :cond_0
     return-object p0
 .end method
 
-.method public final setFastestInterval(J)Lcom/google/android/gms/location/LocationRequest;
-    .locals 1
+.method public setFastestInterval(J)Lcom/google/android/gms/location/LocationRequest;
+    .locals 5
 
-    invoke-static {p1, p2}, Lcom/google/android/gms/location/LocationRequest;->zza(J)V
+    const-wide/16 v0, 0x0
 
-    const/4 v0, 0x1
+    cmp-long v0, p1, v0
 
-    iput-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    const/4 v1, 0x0
 
-    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    const/4 v2, 0x1
+
+    if-ltz v0, :cond_0
+
+    move v0, v2
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v1
+
+    :goto_0
+    new-array v3, v2, [Ljava/lang/Object;
+
+    .line 1
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v4
+
+    aput-object v4, v3, v1
+
+    const-string v1, "illegal fastest interval: %d"
+
+    .line 2
+    invoke-static {v0, v1, v3}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+
+    iput-boolean v2, p0, Lcom/google/android/gms/location/LocationRequest;->zzd:Z
+
+    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
     return-object p0
 .end method
 
-.method public final setInterval(J)Lcom/google/android/gms/location/LocationRequest;
-    .locals 2
+.method public setInterval(J)Lcom/google/android/gms/location/LocationRequest;
+    .locals 4
 
-    invoke-static {p1, p2}, Lcom/google/android/gms/location/LocationRequest;->zza(J)V
+    const-wide/16 v0, 0x0
 
-    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    cmp-long v0, p1, v0
 
-    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    const/4 v1, 0x1
 
-    if-nez v0, :cond_0
+    const/4 v2, 0x0
+
+    if-ltz v0, :cond_0
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v2
+
+    :goto_0
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 1
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    const-string v2, "illegal interval: %d"
+
+    invoke-static {v0, v2, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+
+    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
+
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzd:Z
+
+    if-nez v0, :cond_1
 
     long-to-double p1, p1
 
@@ -472,107 +534,143 @@
 
     double-to-long p1, p1
 
-    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
-    :cond_0
+    :cond_1
     return-object p0
 .end method
 
-.method public final setMaxWaitTime(J)Lcom/google/android/gms/location/LocationRequest;
-    .locals 0
+.method public setMaxWaitTime(J)Lcom/google/android/gms/location/LocationRequest;
+    .locals 4
 
-    invoke-static {p1, p2}, Lcom/google/android/gms/location/LocationRequest;->zza(J)V
+    const-wide/16 v0, 0x0
 
-    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    cmp-long v0, p1, v0
 
-    return-object p0
-.end method
+    const/4 v1, 0x1
 
-.method public final setNumUpdates(I)Lcom/google/android/gms/location/LocationRequest;
-    .locals 3
+    const/4 v2, 0x0
 
-    if-lez p1, :cond_0
+    if-ltz v0, :cond_0
 
-    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
-
-    return-object p0
-
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const/16 v1, 0x1f
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "invalid numUpdates: "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public final setPriority(I)Lcom/google/android/gms/location/LocationRequest;
-    .locals 3
-
-    const/16 v0, 0x64
-
-    if-eq p1, v0, :cond_1
-
-    const/16 v0, 0x66
-
-    if-eq p1, v0, :cond_1
-
-    const/16 v0, 0x68
-
-    if-eq p1, v0, :cond_1
-
-    const/16 v0, 0x69
-
-    if-ne p1, v0, :cond_0
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
+    move v0, v2
+
+    :goto_0
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 1
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    const-string v2, "illegal max wait time: %d"
+
+    .line 2
+    invoke-static {v0, v2, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+
+    iput-wide p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzh:J
+
+    return-object p0
+.end method
+
+.method public setNumUpdates(I)Lcom/google/android/gms/location/LocationRequest;
+    .locals 3
+
+    if-lez p1, :cond_0
+
+    .line 1
+    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzf:I
+
+    return-object p0
+
+    :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const/16 v1, 0x1c
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const/16 v2, 0x1f
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v1, "invalid quality: "
+    const-string v2, "invalid numUpdates: "
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
+.end method
+
+.method public setPriority(I)Lcom/google/android/gms/location/LocationRequest;
+    .locals 4
+
+    const/16 v0, 0x69
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    const/16 v3, 0x64
+
+    if-eq p1, v3, :cond_1
+
+    const/16 v3, 0x66
+
+    if-eq p1, v3, :cond_1
+
+    const/16 v3, 0x68
+
+    if-eq p1, v3, :cond_1
+
+    if-ne p1, v0, :cond_0
+
+    move p1, v0
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v1
+
+    goto :goto_1
 
     :cond_1
     :goto_0
-    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    move v0, v2
+
+    :goto_1
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 1
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v1
+
+    const-string v1, "illegal priority: %d"
+
+    .line 2
+    invoke-static {v0, v1, v2}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+
+    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
     return-object p0
 .end method
 
-.method public final setSmallestDisplacement(F)Lcom/google/android/gms/location/LocationRequest;
+.method public setSmallestDisplacement(F)Lcom/google/android/gms/location/LocationRequest;
     .locals 3
 
     const/4 v0, 0x0
@@ -581,26 +679,27 @@
 
     if-ltz v0, :cond_0
 
-    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    .line 1
+    iput p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
     return-object p0
 
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const/16 v1, 0x25
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const/16 v2, 0x25
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v1, "invalid displacement: "
+    const-string v2, "invalid displacement: "
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -609,18 +708,28 @@
     throw v0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public setWaitForAccurateLocation(Z)Lcom/google/android/gms/location/LocationRequest;
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/google/android/gms/location/LocationRequest;->zzi:Z
+
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
     .locals 7
 
+    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "Request["
 
+    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
     const/16 v2, 0x64
 
@@ -663,7 +772,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
     const-string v2, "ms"
 
@@ -671,10 +780,12 @@
 
     const-string v1, " requested="
 
+    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
+    .line 4
     invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -682,17 +793,19 @@
     :cond_4
     const-string v1, " fastest="
 
+    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
+    .line 6
     invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzh:J
 
-    iget-wide v5, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v5, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
     cmp-long v1, v3, v5
 
@@ -700,16 +813,18 @@
 
     const-string v1, " maxWait="
 
+    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzh:J
 
+    .line 8
     invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_5
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
     const/4 v3, 0x0
 
@@ -719,10 +834,12 @@
 
     const-string v1, " smallestDisplacement="
 
+    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
+    .line 10
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     const-string v1, "m"
@@ -730,7 +847,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_6
-    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iget-wide v3, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
     const-wide v5, 0x7fffffffffffffffL
 
@@ -738,22 +855,25 @@
 
     if-eqz v1, :cond_7
 
+    .line 11
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v5
 
-    sub-long/2addr v3, v5
-
     const-string v1, " expireIn="
 
+    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    sub-long/2addr v3, v5
+
+    .line 13
     invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_7
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzf:I
 
     const v2, 0x7fffffff
 
@@ -761,15 +881,17 @@
 
     const-string v1, " num="
 
+    .line 14
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
+    iget v1, p0, Lcom/google/android/gms/location/LocationRequest;->zzf:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     :cond_8
     const/16 v1, 0x5d
 
+    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -779,61 +901,78 @@
     return-object v0
 .end method
 
-.method public final writeToParcel(Landroid/os/Parcel;I)V
+.method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
+    .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
 
     move-result p2
 
-    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->priority:I
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zza:I
 
     const/4 v1, 0x1
 
+    .line 2
     invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaw:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzb:J
 
     const/4 v2, 0x2
 
+    .line 3
     invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeLong(Landroid/os/Parcel;IJ)V
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzax:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzc:J
 
     const/4 v2, 0x3
 
+    .line 4
     invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeLong(Landroid/os/Parcel;IJ)V
 
-    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzay:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzd:Z
 
     const/4 v1, 0x4
 
+    .line 5
     invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBoolean(Landroid/os/Parcel;IZ)V
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaf:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zze:J
 
     const/4 v2, 0x5
 
+    .line 6
     invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeLong(Landroid/os/Parcel;IJ)V
 
-    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzx:I
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzf:I
 
     const/4 v1, 0x6
 
+    .line 7
     invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
 
-    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzaz:F
+    iget v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzg:F
 
     const/4 v1, 0x7
 
+    .line 8
     invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeFloat(Landroid/os/Parcel;IF)V
 
-    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzba:J
+    iget-wide v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzh:J
 
     const/16 v2, 0x8
 
+    .line 9
     invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeLong(Landroid/os/Parcel;IJ)V
 
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationRequest;->zzi:Z
+
+    const/16 v1, 0x9
+
+    .line 10
+    invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBoolean(Landroid/os/Parcel;IZ)V
+
+    .line 11
     invoke-static {p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
 
     return-void

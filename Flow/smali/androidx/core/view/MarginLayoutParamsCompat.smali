@@ -3,11 +3,19 @@
 .source "MarginLayoutParamsCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;
+    }
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 166
+    .line 172
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,9 +23,17 @@
 
 .method public static getLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lp"
+        }
+    .end annotation
 
-    .line 127
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 132
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
 
@@ -25,8 +41,8 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 128
-    invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getLayoutDirection()I
+    .line 133
+    invoke-static {p0}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->getLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;)I
 
     move-result p0
 
@@ -53,22 +69,30 @@
 
 .method public static getMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lp"
+        }
+    .end annotation
 
-    .line 61
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 66
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 62
-    invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginEnd()I
+    .line 67
+    invoke-static {p0}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->getMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;)I
 
     move-result p0
 
     return p0
 
-    .line 64
+    .line 69
     :cond_0
     iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
@@ -77,22 +101,30 @@
 
 .method public static getMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lp"
+        }
+    .end annotation
 
-    .line 42
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 47
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 43
-    invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginStart()I
+    .line 48
+    invoke-static {p0}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->getMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;)I
 
     move-result p0
 
     return p0
 
-    .line 45
+    .line 50
     :cond_0
     iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -101,16 +133,24 @@
 
 .method public static isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lp"
+        }
+    .end annotation
 
-    .line 112
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 117
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 113
-    invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->isMarginRelative()Z
+    .line 118
+    invoke-static {p0}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z
 
     move-result p0
 
@@ -124,16 +164,26 @@
 
 .method public static resolveLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lp",
+            "layoutDirection"
+        }
+    .end annotation
 
-    .line 161
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 167
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 162
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->resolveLayoutDirection(I)V
+    .line 168
+    invoke-static {p0, p1}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->resolveLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
 
     :cond_0
     return-void
@@ -141,16 +191,26 @@
 
 .method public static setLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lp",
+            "layoutDirection"
+        }
+    .end annotation
 
-    .line 150
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 156
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 151
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setLayoutDirection(I)V
+    .line 157
+    invoke-static {p0, p1}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->setLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
 
     :cond_0
     return-void
@@ -158,20 +218,30 @@
 
 .method public static setMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lp",
+            "marginEnd"
+        }
+    .end annotation
 
-    .line 99
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 104
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 100
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+    .line 105
+    invoke-static {p0, p1}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->setMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;I)V
 
     goto :goto_0
 
-    .line 102
+    .line 107
     :cond_0
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
@@ -181,20 +251,30 @@
 
 .method public static setMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lp",
+            "marginStart"
+        }
+    .end annotation
 
-    .line 80
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 85
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 81
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+    .line 86
+    invoke-static {p0, p1}, Landroidx/core/view/MarginLayoutParamsCompat$Api17Impl;->setMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;I)V
 
     goto :goto_0
 
-    .line 83
+    .line 88
     :cond_0
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 

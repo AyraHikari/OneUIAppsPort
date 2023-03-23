@@ -1,35 +1,43 @@
-.class final Lcom/google/android/gms/common/api/internal/zabj;
+.class public final Lcom/google/android/gms/common/api/internal/zabj;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
-# instance fields
-.field private final synthetic zaiy:Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;
+# static fields
+.field private static final zaa:Ljava/util/concurrent/ExecutorService;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zabj;->zaiy:Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;
+    invoke-static {}, Lcom/google/android/gms/internal/base/zap;->zaa()Lcom/google/android/gms/internal/base/zam;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
+
+    new-instance v1, Lcom/google/android/gms/common/util/concurrent/NumberedThreadFactory;
+
+    const-string v2, "GAC_Executor"
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/common/util/concurrent/NumberedThreadFactory;-><init>(Ljava/lang/String;)V
+
+    const/4 v2, 0x2
+
+    .line 2
+    invoke-interface {v0, v2, v1, v2}, Lcom/google/android/gms/internal/base/zam;->zac(ILjava/util/concurrent/ThreadFactory;I)Ljava/util/concurrent/ExecutorService;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/common/api/internal/zabj;->zaa:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final run()V
+.method public static zaa()Ljava/util/concurrent/ExecutorService;
     .locals 1
 
-    .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zabj;->zaiy:Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;
+    sget-object v0, Lcom/google/android/gms/common/api/internal/zabj;->zaa:Ljava/util/concurrent/ExecutorService;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;->zae(Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;)V
-
-    return-void
+    return-object v0
 .end method

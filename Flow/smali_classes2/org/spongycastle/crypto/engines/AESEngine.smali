@@ -1305,60 +1305,54 @@
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v13, v13, v15
+    aget v15, v13, v15
 
-    invoke-static {v13, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v13
+    move-result v15
 
-    xor-int/2addr v13, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v14, v15
 
     shr-int/lit8 v15, v5, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v13, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v14, v15
 
     shr-int/lit8 v15, v3, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v13, v14
+    xor-int/2addr v14, v15
 
-    aget-object v14, p1, v7
+    aget-object v15, p1, v7
 
-    aget v14, v14, v4
+    aget v15, v15, v4
 
-    xor-int/2addr v13, v14
-
-    .line 597
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v14, v15
 
     and-int/lit16 v15, v3, 0xff
 
-    aget v15, v14, v15
+    .line 597
+    aget v15, v13, v15
 
     shr-int/lit8 v4, v1, 0x8
 
     and-int/lit16 v4, v4, 0xff
 
-    aget v4, v14, v4
+    aget v4, v13, v4
 
     invoke-static {v4, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1366,52 +1360,46 @@
 
     xor-int/2addr v4, v15
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
     shr-int/lit8 v15, v2, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v4, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v4, v15
 
     shr-int/lit8 v15, v5, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v4, v14
+    xor-int/2addr v4, v15
 
-    aget-object v14, p1, v7
+    aget-object v15, p1, v7
 
-    aget v14, v14, v6
+    aget v15, v15, v6
 
-    xor-int/2addr v4, v14
-
-    .line 598
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v4, v15
 
     and-int/lit16 v15, v5, 0xff
 
-    aget v15, v14, v15
+    .line 598
+    aget v15, v13, v15
 
     shr-int/lit8 v6, v3, 0x8
 
     and-int/lit16 v6, v6, 0xff
 
-    aget v6, v14, v6
+    aget v6, v13, v6
 
     invoke-static {v6, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1419,52 +1407,46 @@
 
     xor-int/2addr v6, v15
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
     shr-int/lit8 v15, v1, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v6, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v6, v15
 
     shr-int/lit8 v15, v2, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v6, v14
+    xor-int/2addr v6, v15
 
-    aget-object v14, p1, v7
+    aget-object v15, p1, v7
 
-    aget v14, v14, v8
+    aget v15, v15, v8
 
-    xor-int/2addr v6, v14
-
-    .line 599
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v6, v15
 
     and-int/lit16 v2, v2, 0xff
 
-    aget v2, v14, v2
+    .line 599
+    aget v2, v13, v2
 
     shr-int/lit8 v5, v5, 0x8
 
     and-int/lit16 v5, v5, 0xff
 
-    aget v5, v14, v5
+    aget v5, v13, v5
 
     invoke-static {v5, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1472,13 +1454,11 @@
 
     xor-int/2addr v2, v5
 
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
     shr-int/lit8 v3, v3, 0x10
 
     and-int/lit16 v3, v3, 0xff
 
-    aget v3, v5, v3
+    aget v3, v13, v3
 
     invoke-static {v3, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1486,13 +1466,11 @@
 
     xor-int/2addr v2, v3
 
-    sget-object v3, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
     shr-int/lit8 v1, v1, 0x18
 
     and-int/lit16 v1, v1, 0xff
 
-    aget v1, v3, v1
+    aget v1, v13, v1
 
     invoke-static {v1, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1508,32 +1486,28 @@
 
     xor-int/2addr v1, v3
 
+    and-int/lit16 v3, v14, 0xff
+
     .line 600
-    sget-object v3, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    aget v3, v13, v3
 
-    and-int/lit16 v5, v13, 0xff
+    shr-int/lit8 v5, v1, 0x8
 
-    aget v5, v3, v5
+    and-int/lit16 v5, v5, 0xff
 
-    shr-int/lit8 v7, v1, 0x8
+    aget v5, v13, v5
 
-    and-int/lit16 v7, v7, 0xff
+    invoke-static {v5, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    aget v3, v3, v7
-
-    invoke-static {v3, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v3
+    move-result v5
 
     xor-int/2addr v3, v5
 
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v5, v6, 0x10
 
-    shr-int/lit8 v7, v6, 0x10
+    and-int/lit16 v5, v5, 0xff
 
-    and-int/lit16 v7, v7, 0xff
-
-    aget v5, v5, v7
+    aget v5, v13, v5
 
     invoke-static {v5, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1541,13 +1515,11 @@
 
     xor-int/2addr v3, v5
 
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v5, v4, 0x18
 
-    shr-int/lit8 v7, v4, 0x18
+    and-int/lit16 v5, v5, 0xff
 
-    and-int/lit16 v7, v7, 0xff
-
-    aget v5, v5, v7
+    aget v5, v13, v5
 
     invoke-static {v5, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1563,32 +1535,28 @@
 
     xor-int/2addr v3, v5
 
+    and-int/lit16 v5, v4, 0xff
+
     .line 601
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    aget v5, v13, v5
 
-    and-int/lit16 v7, v4, 0xff
+    shr-int/lit8 v7, v14, 0x8
 
-    aget v7, v5, v7
+    and-int/lit16 v7, v7, 0xff
 
-    shr-int/lit8 v14, v13, 0x8
+    aget v7, v13, v7
 
-    and-int/lit16 v14, v14, 0xff
+    invoke-static {v7, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    aget v5, v5, v14
-
-    invoke-static {v5, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v5
+    move-result v7
 
     xor-int/2addr v5, v7
 
-    sget-object v7, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v7, v1, 0x10
 
-    shr-int/lit8 v14, v1, 0x10
+    and-int/lit16 v7, v7, 0xff
 
-    and-int/lit16 v14, v14, 0xff
-
-    aget v7, v7, v14
+    aget v7, v13, v7
 
     invoke-static {v7, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1596,13 +1564,11 @@
 
     xor-int/2addr v5, v7
 
-    sget-object v7, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v7, v6, 0x18
 
-    shr-int/lit8 v14, v6, 0x18
+    and-int/lit16 v7, v7, 0xff
 
-    and-int/lit16 v14, v14, 0xff
-
-    aget v7, v7, v14
+    aget v7, v13, v7
 
     invoke-static {v7, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1612,77 +1578,69 @@
 
     aget-object v7, p1, v2
 
-    const/4 v14, 0x1
+    const/4 v15, 0x1
 
-    aget v7, v7, v14
+    aget v7, v7, v15
 
     xor-int/2addr v5, v7
 
+    and-int/lit16 v7, v6, 0xff
+
     .line 602
-    sget-object v7, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
-    and-int/lit16 v14, v6, 0xff
-
-    aget v14, v7, v14
+    aget v7, v13, v7
 
     shr-int/lit8 v15, v4, 0x8
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v7, v7, v15
+    aget v15, v13, v15
 
-    invoke-static {v7, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v7
+    move-result v15
 
-    xor-int/2addr v7, v14
+    xor-int/2addr v7, v15
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
-    shr-int/lit8 v15, v13, 0x10
+    shr-int/lit8 v15, v14, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v7, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v7, v15
 
     shr-int/lit8 v15, v1, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v13, v15
 
-    invoke-static {v14, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v7, v14
+    xor-int/2addr v7, v15
 
-    aget-object v14, p1, v2
+    aget-object v15, p1, v2
 
-    aget v14, v14, v8
+    aget v15, v15, v8
 
-    xor-int/2addr v7, v14
-
-    .line 603
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v7, v15
 
     and-int/lit16 v1, v1, 0xff
 
-    aget v1, v14, v1
+    .line 603
+    aget v1, v13, v1
 
     shr-int/2addr v6, v12
 
     and-int/lit16 v6, v6, 0xff
 
-    aget v6, v14, v6
+    aget v6, v13, v6
 
     invoke-static {v6, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1690,13 +1648,11 @@
 
     xor-int/2addr v1, v6
 
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
     shr-int/2addr v4, v9
 
     and-int/lit16 v4, v4, 0xff
 
-    aget v4, v6, v4
+    aget v4, v13, v4
 
     invoke-static {v4, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1704,13 +1660,11 @@
 
     xor-int/2addr v1, v4
 
-    sget-object v4, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v4, v14, 0x18
 
-    shr-int/lit8 v6, v13, 0x18
+    and-int/lit16 v4, v4, 0xff
 
-    and-int/lit16 v6, v6, 0xff
-
-    aget v4, v4, v6
+    aget v4, v13, v4
 
     invoke-static {v4, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1752,76 +1706,19 @@
 
     and-int/lit16 v13, v13, 0xff
 
-    aget v4, v4, v13
+    aget v13, v4, v13
 
-    invoke-static {v4, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v13, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v4
+    move-result v13
 
-    xor-int/2addr v4, v6
-
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    xor-int/2addr v6, v13
 
     shr-int/lit8 v13, v5, 0x10
 
     and-int/lit16 v13, v13, 0xff
 
-    aget v6, v6, v13
-
-    invoke-static {v6, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v6
-
-    xor-int/2addr v4, v6
-
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
-    shr-int/lit8 v13, v3, 0x18
-
-    and-int/lit16 v13, v13, 0xff
-
-    aget v6, v6, v13
-
-    invoke-static {v6, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v6
-
-    xor-int/2addr v4, v6
-
-    aget-object v6, p1, v7
-
-    const/4 v13, 0x0
-
-    aget v6, v6, v13
-
-    xor-int/2addr v4, v6
-
-    .line 607
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
-    and-int/lit16 v13, v3, 0xff
-
-    aget v13, v6, v13
-
-    shr-int/lit8 v14, v1, 0x8
-
-    and-int/lit16 v14, v14, 0xff
-
-    aget v6, v6, v14
-
-    invoke-static {v6, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v6
-
-    xor-int/2addr v6, v13
-
-    sget-object v13, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
-    shr-int/lit8 v14, v2, 0x10
-
-    and-int/lit16 v14, v14, 0xff
-
-    aget v13, v13, v14
+    aget v13, v4, v13
 
     invoke-static {v13, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1829,13 +1726,11 @@
 
     xor-int/2addr v6, v13
 
-    sget-object v13, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v13, v3, 0x18
 
-    shr-int/lit8 v14, v5, 0x18
+    and-int/lit16 v13, v13, 0xff
 
-    and-int/lit16 v14, v14, 0xff
-
-    aget v13, v13, v14
+    aget v13, v4, v13
 
     invoke-static {v13, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1845,38 +1740,34 @@
 
     aget-object v13, p1, v7
 
-    const/4 v14, 0x1
+    const/4 v14, 0x0
 
     aget v13, v13, v14
 
     xor-int/2addr v6, v13
 
-    .line 608
-    sget-object v13, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    and-int/lit16 v13, v3, 0xff
 
-    and-int/lit16 v14, v5, 0xff
+    .line 607
+    aget v13, v4, v13
 
-    aget v14, v13, v14
+    shr-int/lit8 v14, v1, 0x8
 
-    shr-int/lit8 v15, v3, 0x8
+    and-int/lit16 v14, v14, 0xff
 
-    and-int/lit16 v15, v15, 0xff
+    aget v14, v4, v14
 
-    aget v13, v13, v15
+    invoke-static {v14, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    invoke-static {v13, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v13
+    move-result v14
 
     xor-int/2addr v13, v14
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v14, v2, 0x10
 
-    shr-int/lit8 v15, v1, 0x10
+    and-int/lit16 v14, v14, 0xff
 
-    and-int/lit16 v15, v15, 0xff
-
-    aget v14, v14, v15
+    aget v14, v4, v14
 
     invoke-static {v14, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1884,13 +1775,11 @@
 
     xor-int/2addr v13, v14
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    shr-int/lit8 v14, v5, 0x18
 
-    shr-int/lit8 v15, v2, 0x18
+    and-int/lit16 v14, v14, 0xff
 
-    and-int/lit16 v15, v15, 0xff
-
-    aget v14, v14, v15
+    aget v14, v4, v14
 
     invoke-static {v14, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1900,22 +1789,69 @@
 
     aget-object v14, p1, v7
 
-    aget v14, v14, v8
+    const/4 v15, 0x1
+
+    aget v14, v14, v15
 
     xor-int/2addr v13, v14
 
-    .line 609
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
+    and-int/lit16 v14, v5, 0xff
+
+    .line 608
+    aget v14, v4, v14
+
+    shr-int/lit8 v15, v3, 0x8
+
+    and-int/lit16 v15, v15, 0xff
+
+    aget v15, v4, v15
+
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+
+    move-result v15
+
+    xor-int/2addr v14, v15
+
+    shr-int/lit8 v15, v1, 0x10
+
+    and-int/lit16 v15, v15, 0xff
+
+    aget v15, v4, v15
+
+    invoke-static {v15, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+
+    move-result v15
+
+    xor-int/2addr v14, v15
+
+    shr-int/lit8 v15, v2, 0x18
+
+    and-int/lit16 v15, v15, 0xff
+
+    aget v15, v4, v15
+
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+
+    move-result v15
+
+    xor-int/2addr v14, v15
+
+    aget-object v15, p1, v7
+
+    aget v15, v15, v8
+
+    xor-int/2addr v14, v15
 
     and-int/lit16 v2, v2, 0xff
 
-    aget v2, v14, v2
+    .line 609
+    aget v2, v4, v2
 
     shr-int/2addr v5, v12
 
     and-int/lit16 v5, v5, 0xff
 
-    aget v5, v14, v5
+    aget v5, v4, v5
 
     invoke-static {v5, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1923,13 +1859,11 @@
 
     xor-int/2addr v2, v5
 
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
     shr-int/2addr v3, v9
 
     and-int/lit16 v3, v3, 0xff
 
-    aget v3, v5, v3
+    aget v3, v4, v3
 
     invoke-static {v3, v9}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1937,13 +1871,11 @@
 
     xor-int/2addr v2, v3
 
-    sget-object v3, Lorg/spongycastle/crypto/engines/AESEngine;->Tinv0:[I
-
     shr-int/2addr v1, v11
 
     and-int/lit16 v1, v1, 0xff
 
-    aget v1, v3, v1
+    aget v1, v4, v1
 
     invoke-static {v1, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -1960,157 +1892,157 @@
     .line 613
     sget-object v2, Lorg/spongycastle/crypto/engines/AESEngine;->Si:[B
 
-    and-int/lit16 v3, v4, 0xff
+    and-int/lit16 v3, v6, 0xff
 
     aget-byte v3, v2, v3
 
     and-int/lit16 v3, v3, 0xff
 
-    shr-int/lit8 v5, v1, 0x8
+    shr-int/lit8 v4, v1, 0x8
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v5, v2, v5
+    aget-byte v4, v2, v4
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    shl-int/2addr v5, v12
+    shl-int/2addr v4, v12
+
+    xor-int/2addr v3, v4
+
+    shr-int/lit8 v4, v14, 0x10
+
+    and-int/lit16 v4, v4, 0xff
+
+    aget-byte v4, v2, v4
+
+    and-int/lit16 v4, v4, 0xff
+
+    shl-int/2addr v4, v9
+
+    xor-int/2addr v3, v4
+
+    shr-int/lit8 v4, v13, 0x18
+
+    and-int/lit16 v4, v4, 0xff
+
+    aget-byte v4, v2, v4
+
+    shl-int/2addr v4, v11
+
+    xor-int/2addr v3, v4
+
+    const/4 v4, 0x0
+
+    aget-object v5, p1, v4
+
+    aget v5, v5, v4
 
     xor-int/2addr v3, v5
-
-    shr-int/lit8 v5, v13, 0x10
-
-    and-int/lit16 v5, v5, 0xff
-
-    aget-byte v5, v2, v5
-
-    and-int/lit16 v5, v5, 0xff
-
-    shl-int/2addr v5, v9
-
-    xor-int/2addr v3, v5
-
-    shr-int/lit8 v5, v6, 0x18
-
-    and-int/lit16 v5, v5, 0xff
-
-    aget-byte v5, v2, v5
-
-    shl-int/2addr v5, v11
-
-    xor-int/2addr v3, v5
-
-    const/4 v5, 0x0
-
-    aget-object v7, p1, v5
-
-    aget v7, v7, v5
-
-    xor-int/2addr v3, v7
 
     iput v3, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C0:I
 
-    and-int/lit16 v3, v6, 0xff
+    and-int/lit16 v3, v13, 0xff
 
     .line 614
     aget-byte v3, v2, v3
 
     and-int/lit16 v3, v3, 0xff
 
-    shr-int/lit8 v5, v4, 0x8
+    shr-int/lit8 v4, v6, 0x8
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v5, v2, v5
+    aget-byte v4, v2, v4
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    shl-int/2addr v5, v12
+    shl-int/2addr v4, v12
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
-    shr-int/lit8 v5, v1, 0x10
+    shr-int/lit8 v4, v1, 0x10
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v5, v2, v5
+    aget-byte v4, v2, v4
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    shl-int/2addr v5, v9
+    shl-int/2addr v4, v9
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
-    shr-int/lit8 v5, v13, 0x18
+    shr-int/lit8 v4, v14, 0x18
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v5, v2, v5
+    aget-byte v4, v2, v4
 
-    shl-int/2addr v5, v11
+    shl-int/2addr v4, v11
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    aget-object v7, p1, v5
+    aget-object v5, p1, v4
 
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    aget v5, v7, v5
+    aget v4, v5, v4
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
     iput v3, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C1:I
 
-    and-int/lit16 v3, v13, 0xff
+    and-int/lit16 v3, v14, 0xff
 
     .line 615
     aget-byte v3, v2, v3
 
     and-int/lit16 v3, v3, 0xff
 
-    shr-int/lit8 v5, v6, 0x8
+    shr-int/lit8 v4, v13, 0x8
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v5, v2, v5
+    aget-byte v4, v2, v4
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    shl-int/2addr v5, v12
+    shl-int/2addr v4, v12
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
-    shr-int/lit8 v5, v4, 0x10
+    shr-int/lit8 v4, v6, 0x10
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v5, v2, v5
+    aget-byte v4, v2, v4
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    shl-int/2addr v5, v9
+    shl-int/2addr v4, v9
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
-    shr-int/lit8 v5, v1, 0x18
+    shr-int/lit8 v4, v1, 0x18
 
-    and-int/lit16 v5, v5, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v5, v2, v5
+    aget-byte v4, v2, v4
 
-    shl-int/2addr v5, v11
+    shl-int/2addr v4, v11
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    aget-object v7, p1, v5
+    aget-object v5, p1, v4
 
-    aget v5, v7, v8
+    aget v4, v5, v8
 
-    xor-int/2addr v3, v5
+    xor-int/2addr v3, v4
 
     iput v3, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C2:I
 
@@ -2121,7 +2053,7 @@
 
     and-int/lit16 v1, v1, 0xff
 
-    shr-int/lit8 v3, v13, 0x8
+    shr-int/lit8 v3, v14, 0x8
 
     and-int/lit16 v3, v3, 0xff
 
@@ -2133,7 +2065,7 @@
 
     xor-int/2addr v1, v3
 
-    shr-int/lit8 v3, v6, 0x10
+    shr-int/lit8 v3, v13, 0x10
 
     and-int/lit16 v3, v3, 0xff
 
@@ -2145,7 +2077,7 @@
 
     xor-int/2addr v1, v3
 
-    shr-int/lit8 v3, v4, 0x18
+    shr-int/lit8 v3, v6, 0x18
 
     and-int/lit16 v3, v3, 0xff
 
@@ -2244,60 +2176,54 @@
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v10, v10, v15
+    aget v15, v10, v15
 
-    invoke-static {v10, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v10
+    move-result v15
 
-    xor-int/2addr v10, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v14, v15
 
     shr-int/lit8 v15, v4, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v10, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v14, v15
 
     shr-int/lit8 v15, v6, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v10, v14
+    xor-int/2addr v14, v15
 
-    aget-object v14, p1, v8
+    aget-object v15, p1, v8
 
-    aget v14, v14, v2
+    aget v15, v15, v2
 
-    xor-int/2addr v10, v14
-
-    .line 565
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v14, v15
 
     and-int/lit16 v15, v3, 0xff
 
-    aget v15, v14, v15
+    .line 565
+    aget v15, v10, v15
 
     shr-int/lit8 v2, v4, 0x8
 
     and-int/lit16 v2, v2, 0xff
 
-    aget v2, v14, v2
+    aget v2, v10, v2
 
     invoke-static {v2, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2305,52 +2231,46 @@
 
     xor-int/2addr v2, v15
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
     shr-int/lit8 v15, v6, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v2, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v2, v15
 
     shr-int/lit8 v15, v1, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v2, v14
+    xor-int/2addr v2, v15
 
-    aget-object v14, p1, v8
+    aget-object v15, p1, v8
 
-    aget v14, v14, v5
+    aget v15, v15, v5
 
-    xor-int/2addr v2, v14
-
-    .line 566
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v2, v15
 
     and-int/lit16 v15, v4, 0xff
 
-    aget v15, v14, v15
+    .line 566
+    aget v15, v10, v15
 
     shr-int/lit8 v5, v6, 0x8
 
     and-int/lit16 v5, v5, 0xff
 
-    aget v5, v14, v5
+    aget v5, v10, v5
 
     invoke-static {v5, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2358,52 +2278,46 @@
 
     xor-int/2addr v5, v15
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
     shr-int/lit8 v15, v1, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v5, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v5, v15
 
     shr-int/lit8 v15, v3, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v5, v14
+    xor-int/2addr v5, v15
 
-    aget-object v14, p1, v8
+    aget-object v15, p1, v8
 
-    aget v14, v14, v7
+    aget v15, v15, v7
 
-    xor-int/2addr v5, v14
-
-    .line 567
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v5, v15
 
     and-int/lit16 v6, v6, 0xff
 
-    aget v6, v14, v6
+    .line 567
+    aget v6, v10, v6
 
     shr-int/lit8 v1, v1, 0x8
 
     and-int/lit16 v1, v1, 0xff
 
-    aget v1, v14, v1
+    aget v1, v10, v1
 
     invoke-static {v1, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2411,13 +2325,11 @@
 
     xor-int/2addr v1, v6
 
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
     shr-int/lit8 v3, v3, 0x10
 
     and-int/lit16 v3, v3, 0xff
 
-    aget v3, v6, v3
+    aget v3, v10, v3
 
     invoke-static {v3, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2425,13 +2337,11 @@
 
     xor-int/2addr v1, v3
 
-    sget-object v3, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v3, v4, 0x18
 
-    shr-int/lit8 v4, v4, 0x18
+    and-int/lit16 v3, v3, 0xff
 
-    and-int/lit16 v4, v4, 0xff
-
-    aget v3, v3, v4
+    aget v3, v10, v3
 
     invoke-static {v3, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2447,32 +2357,28 @@
 
     xor-int/2addr v1, v4
 
+    and-int/lit16 v4, v14, 0xff
+
     .line 568
-    sget-object v4, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    aget v4, v10, v4
 
-    and-int/lit16 v6, v10, 0xff
+    shr-int/lit8 v6, v2, 0x8
 
-    aget v6, v4, v6
+    and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v2, 0x8
+    aget v6, v10, v6
 
-    and-int/lit16 v8, v8, 0xff
+    invoke-static {v6, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    aget v4, v4, v8
-
-    invoke-static {v4, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v4
+    move-result v6
 
     xor-int/2addr v4, v6
 
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v6, v5, 0x10
 
-    shr-int/lit8 v8, v5, 0x10
+    and-int/lit16 v6, v6, 0xff
 
-    and-int/lit16 v8, v8, 0xff
-
-    aget v6, v6, v8
+    aget v6, v10, v6
 
     invoke-static {v6, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2480,13 +2386,11 @@
 
     xor-int/2addr v4, v6
 
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v6, v1, 0x18
 
-    shr-int/lit8 v8, v1, 0x18
+    and-int/lit16 v6, v6, 0xff
 
-    and-int/lit16 v8, v8, 0xff
-
-    aget v6, v6, v8
+    aget v6, v10, v6
 
     invoke-static {v6, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2502,32 +2406,28 @@
 
     xor-int/2addr v4, v6
 
+    and-int/lit16 v6, v2, 0xff
+
     .line 569
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    aget v6, v10, v6
 
-    and-int/lit16 v8, v2, 0xff
+    shr-int/lit8 v8, v5, 0x8
 
-    aget v8, v6, v8
+    and-int/lit16 v8, v8, 0xff
 
-    shr-int/lit8 v14, v5, 0x8
+    aget v8, v10, v8
 
-    and-int/lit16 v14, v14, 0xff
+    invoke-static {v8, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    aget v6, v6, v14
-
-    invoke-static {v6, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v6
+    move-result v8
 
     xor-int/2addr v6, v8
 
-    sget-object v8, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v8, v1, 0x10
 
-    shr-int/lit8 v14, v1, 0x10
+    and-int/lit16 v8, v8, 0xff
 
-    and-int/lit16 v14, v14, 0xff
-
-    aget v8, v8, v14
+    aget v8, v10, v8
 
     invoke-static {v8, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2535,13 +2435,11 @@
 
     xor-int/2addr v6, v8
 
-    sget-object v8, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v8, v14, 0x18
 
-    shr-int/lit8 v14, v10, 0x18
+    and-int/lit16 v8, v8, 0xff
 
-    and-int/lit16 v14, v14, 0xff
-
-    aget v8, v8, v14
+    aget v8, v10, v8
 
     invoke-static {v8, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2551,85 +2449,75 @@
 
     aget-object v8, p1, v3
 
-    const/4 v14, 0x1
+    const/4 v15, 0x1
 
-    aget v8, v8, v14
+    aget v8, v8, v15
 
     xor-int/2addr v6, v8
 
+    and-int/lit16 v8, v5, 0xff
+
     .line 570
-    sget-object v8, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
-    and-int/lit16 v14, v5, 0xff
-
-    aget v14, v8, v14
+    aget v8, v10, v8
 
     shr-int/lit8 v15, v1, 0x8
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v8, v8, v15
+    aget v15, v10, v15
 
-    invoke-static {v8, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v8
+    move-result v15
 
-    xor-int/2addr v8, v14
+    xor-int/2addr v8, v15
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
-    shr-int/lit8 v15, v10, 0x10
+    shr-int/lit8 v15, v14, 0x10
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v8, v14
-
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v8, v15
 
     shr-int/lit8 v15, v2, 0x18
 
     and-int/lit16 v15, v15, 0xff
 
-    aget v14, v14, v15
+    aget v15, v10, v15
 
-    invoke-static {v14, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v15, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v14
+    move-result v15
 
-    xor-int/2addr v8, v14
+    xor-int/2addr v8, v15
 
-    aget-object v14, p1, v3
+    aget-object v15, p1, v3
 
-    aget v14, v14, v7
+    aget v15, v15, v7
 
-    xor-int/2addr v8, v14
-
-    .line 571
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v8, v15
 
     and-int/lit16 v1, v1, 0xff
 
-    aget v1, v14, v1
+    .line 571
+    aget v1, v10, v1
 
-    shr-int/2addr v10, v13
+    shr-int/2addr v14, v13
 
-    and-int/lit16 v10, v10, 0xff
+    and-int/lit16 v14, v14, 0xff
 
-    aget v10, v14, v10
+    aget v14, v10, v14
 
-    invoke-static {v10, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v14, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v10
+    move-result v14
 
-    xor-int/2addr v1, v10
-
-    sget-object v10, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v1, v14
 
     shr-int/2addr v2, v11
 
@@ -2643,13 +2531,11 @@
 
     xor-int/2addr v1, v2
 
-    sget-object v2, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v2, v5, 0x18
 
-    shr-int/2addr v5, v12
+    and-int/lit16 v2, v2, 0xff
 
-    and-int/lit16 v5, v5, 0xff
-
-    aget v2, v2, v5
+    aget v2, v10, v2
 
     invoke-static {v2, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2693,76 +2579,19 @@
 
     and-int/lit16 v10, v10, 0xff
 
-    aget v2, v2, v10
+    aget v10, v2, v10
 
-    invoke-static {v2, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    invoke-static {v10, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    move-result v2
+    move-result v10
 
-    xor-int/2addr v2, v5
-
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    xor-int/2addr v5, v10
 
     shr-int/lit8 v10, v4, 0x10
 
     and-int/lit16 v10, v10, 0xff
 
-    aget v5, v5, v10
-
-    invoke-static {v5, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v5
-
-    xor-int/2addr v2, v5
-
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
-    shr-int/lit8 v10, v6, 0x18
-
-    and-int/lit16 v10, v10, 0xff
-
-    aget v5, v5, v10
-
-    invoke-static {v5, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v5
-
-    xor-int/2addr v2, v5
-
-    aget-object v5, p1, v8
-
-    const/4 v10, 0x0
-
-    aget v5, v5, v10
-
-    xor-int/2addr v2, v5
-
-    .line 575
-    sget-object v5, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
-    and-int/lit16 v10, v3, 0xff
-
-    aget v10, v5, v10
-
-    shr-int/lit8 v14, v4, 0x8
-
-    and-int/lit16 v14, v14, 0xff
-
-    aget v5, v5, v14
-
-    invoke-static {v5, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v5
-
-    xor-int/2addr v5, v10
-
-    sget-object v10, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
-    shr-int/lit8 v14, v6, 0x10
-
-    and-int/lit16 v14, v14, 0xff
-
-    aget v10, v10, v14
+    aget v10, v2, v10
 
     invoke-static {v10, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2770,13 +2599,11 @@
 
     xor-int/2addr v5, v10
 
-    sget-object v10, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v10, v6, 0x18
 
-    shr-int/lit8 v14, v1, 0x18
+    and-int/lit16 v10, v10, 0xff
 
-    and-int/lit16 v14, v14, 0xff
-
-    aget v10, v10, v14
+    aget v10, v2, v10
 
     invoke-static {v10, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2786,38 +2613,34 @@
 
     aget-object v10, p1, v8
 
-    const/4 v14, 0x1
+    const/4 v14, 0x0
 
     aget v10, v10, v14
 
     xor-int/2addr v5, v10
 
-    .line 576
-    sget-object v10, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    and-int/lit16 v10, v3, 0xff
 
-    and-int/lit16 v14, v4, 0xff
+    .line 575
+    aget v10, v2, v10
 
-    aget v14, v10, v14
+    shr-int/lit8 v14, v4, 0x8
 
-    shr-int/lit8 v15, v6, 0x8
+    and-int/lit16 v14, v14, 0xff
 
-    and-int/lit16 v15, v15, 0xff
+    aget v14, v2, v14
 
-    aget v10, v10, v15
+    invoke-static {v14, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    invoke-static {v10, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
-
-    move-result v10
+    move-result v14
 
     xor-int/2addr v10, v14
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v14, v6, 0x10
 
-    shr-int/lit8 v15, v1, 0x10
+    and-int/lit16 v14, v14, 0xff
 
-    and-int/lit16 v15, v15, 0xff
-
-    aget v14, v14, v15
+    aget v14, v2, v14
 
     invoke-static {v14, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2825,13 +2648,11 @@
 
     xor-int/2addr v10, v14
 
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v14, v1, 0x18
 
-    shr-int/lit8 v15, v3, 0x18
+    and-int/lit16 v14, v14, 0xff
 
-    and-int/lit16 v15, v15, 0xff
-
-    aget v14, v14, v15
+    aget v14, v2, v14
 
     invoke-static {v14, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2841,22 +2662,69 @@
 
     aget-object v14, p1, v8
 
-    aget v14, v14, v7
+    const/4 v15, 0x1
+
+    aget v14, v14, v15
 
     xor-int/2addr v10, v14
 
-    .line 577
-    sget-object v14, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    and-int/lit16 v14, v4, 0xff
+
+    .line 576
+    aget v14, v2, v14
+
+    shr-int/lit8 v15, v6, 0x8
+
+    and-int/lit16 v15, v15, 0xff
+
+    aget v15, v2, v15
+
+    invoke-static {v15, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+
+    move-result v15
+
+    xor-int/2addr v14, v15
+
+    shr-int/lit8 v15, v1, 0x10
+
+    and-int/lit16 v15, v15, 0xff
+
+    aget v15, v2, v15
+
+    invoke-static {v15, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+
+    move-result v15
+
+    xor-int/2addr v14, v15
+
+    shr-int/lit8 v15, v3, 0x18
+
+    and-int/lit16 v15, v15, 0xff
+
+    aget v15, v2, v15
+
+    invoke-static {v15, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+
+    move-result v15
+
+    xor-int/2addr v14, v15
+
+    aget-object v15, p1, v8
+
+    aget v15, v15, v7
+
+    xor-int/2addr v14, v15
 
     and-int/lit16 v6, v6, 0xff
 
-    aget v6, v14, v6
+    .line 577
+    aget v6, v2, v6
 
     shr-int/2addr v1, v13
 
     and-int/lit16 v1, v1, 0xff
 
-    aget v1, v14, v1
+    aget v1, v2, v1
 
     invoke-static {v1, v12}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2864,13 +2732,11 @@
 
     xor-int/2addr v1, v6
 
-    sget-object v6, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
-
     shr-int/2addr v3, v11
 
     and-int/lit16 v3, v3, 0xff
 
-    aget v3, v6, v3
+    aget v3, v2, v3
 
     invoke-static {v3, v11}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
@@ -2878,223 +2744,221 @@
 
     xor-int/2addr v1, v3
 
-    sget-object v3, Lorg/spongycastle/crypto/engines/AESEngine;->T0:[I
+    shr-int/lit8 v3, v4, 0x18
 
-    shr-int/2addr v4, v12
+    and-int/lit16 v3, v3, 0xff
 
-    and-int/lit16 v4, v4, 0xff
+    aget v2, v2, v3
 
-    aget v3, v3, v4
+    invoke-static {v2, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
 
-    invoke-static {v3, v13}, Lorg/spongycastle/crypto/engines/AESEngine;->shift(II)I
+    move-result v2
 
-    move-result v3
+    xor-int/2addr v1, v2
+
+    add-int/lit8 v2, v8, 0x1
+
+    aget-object v3, p1, v8
+
+    aget v3, v3, v9
 
     xor-int/2addr v1, v3
 
-    add-int/lit8 v3, v8, 0x1
-
-    aget-object v4, p1, v8
-
-    aget v4, v4, v9
-
-    xor-int/2addr v1, v4
-
     .line 581
-    sget-object v4, Lorg/spongycastle/crypto/engines/AESEngine;->S:[B
+    sget-object v3, Lorg/spongycastle/crypto/engines/AESEngine;->S:[B
 
-    and-int/lit16 v6, v2, 0xff
+    and-int/lit16 v4, v5, 0xff
 
-    aget-byte v6, v4, v6
+    aget-byte v4, v3, v4
+
+    and-int/lit16 v4, v4, 0xff
+
+    shr-int/lit8 v6, v10, 0x8
 
     and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v5, 0x8
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    and-int/lit16 v6, v6, 0xff
 
-    aget-byte v8, v4, v8
+    shl-int/2addr v6, v13
 
-    and-int/lit16 v8, v8, 0xff
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v13
+    shr-int/lit8 v6, v14, 0x10
 
-    xor-int/2addr v6, v8
+    and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v10, 0x10
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    and-int/lit16 v6, v6, 0xff
 
-    aget-byte v8, v4, v8
+    shl-int/2addr v6, v11
 
-    and-int/lit16 v8, v8, 0xff
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v11
+    shr-int/lit8 v6, v1, 0x18
 
-    xor-int/2addr v6, v8
+    and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v1, 0x18
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    shl-int/2addr v6, v12
 
-    aget-byte v8, v4, v8
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v12
+    aget-object v6, p1, v2
 
-    xor-int/2addr v6, v8
+    const/4 v8, 0x0
 
-    aget-object v8, p1, v3
+    aget v6, v6, v8
 
-    const/4 v14, 0x0
+    xor-int/2addr v4, v6
 
-    aget v8, v8, v14
+    iput v4, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C0:I
 
-    xor-int/2addr v6, v8
-
-    iput v6, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C0:I
-
-    and-int/lit16 v6, v5, 0xff
+    and-int/lit16 v4, v10, 0xff
 
     .line 582
-    aget-byte v6, v4, v6
+    aget-byte v4, v3, v4
+
+    and-int/lit16 v4, v4, 0xff
+
+    shr-int/lit8 v6, v14, 0x8
 
     and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v10, 0x8
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    and-int/lit16 v6, v6, 0xff
 
-    aget-byte v8, v4, v8
+    shl-int/2addr v6, v13
 
-    and-int/lit16 v8, v8, 0xff
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v13
+    shr-int/lit8 v6, v1, 0x10
 
-    xor-int/2addr v6, v8
+    and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v1, 0x10
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    and-int/lit16 v6, v6, 0xff
 
-    aget-byte v8, v4, v8
+    shl-int/2addr v6, v11
 
-    and-int/lit16 v8, v8, 0xff
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v11
+    shr-int/lit8 v6, v5, 0x18
 
-    xor-int/2addr v6, v8
+    and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v2, 0x18
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    shl-int/2addr v6, v12
 
-    aget-byte v8, v4, v8
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v12
+    aget-object v6, p1, v2
 
-    xor-int/2addr v6, v8
+    const/4 v8, 0x1
 
-    aget-object v8, p1, v3
+    aget v6, v6, v8
 
-    const/4 v14, 0x1
+    xor-int/2addr v4, v6
 
-    aget v8, v8, v14
+    iput v4, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C1:I
 
-    xor-int/2addr v6, v8
-
-    iput v6, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C1:I
-
-    and-int/lit16 v6, v10, 0xff
+    and-int/lit16 v4, v14, 0xff
 
     .line 583
-    aget-byte v6, v4, v6
+    aget-byte v4, v3, v4
+
+    and-int/lit16 v4, v4, 0xff
+
+    shr-int/lit8 v6, v1, 0x8
 
     and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v1, 0x8
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    and-int/lit16 v6, v6, 0xff
 
-    aget-byte v8, v4, v8
+    shl-int/2addr v6, v13
 
-    and-int/lit16 v8, v8, 0xff
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v13
+    shr-int/lit8 v6, v5, 0x10
 
-    xor-int/2addr v6, v8
+    and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v2, 0x10
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    and-int/lit16 v6, v6, 0xff
 
-    aget-byte v8, v4, v8
+    shl-int/2addr v6, v11
 
-    and-int/lit16 v8, v8, 0xff
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v11
+    shr-int/lit8 v6, v10, 0x18
 
-    xor-int/2addr v6, v8
+    and-int/lit16 v6, v6, 0xff
 
-    shr-int/lit8 v8, v5, 0x18
+    aget-byte v6, v3, v6
 
-    and-int/lit16 v8, v8, 0xff
+    shl-int/2addr v6, v12
 
-    aget-byte v8, v4, v8
+    xor-int/2addr v4, v6
 
-    shl-int/2addr v8, v12
+    aget-object v6, p1, v2
 
-    xor-int/2addr v6, v8
+    aget v6, v6, v7
 
-    aget-object v8, p1, v3
+    xor-int/2addr v4, v6
 
-    aget v7, v8, v7
-
-    xor-int/2addr v6, v7
-
-    iput v6, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C2:I
+    iput v4, v0, Lorg/spongycastle/crypto/engines/AESEngine;->C2:I
 
     and-int/lit16 v1, v1, 0xff
 
     .line 584
-    aget-byte v1, v4, v1
+    aget-byte v1, v3, v1
 
     and-int/lit16 v1, v1, 0xff
 
-    shr-int/2addr v2, v13
+    shr-int/lit8 v4, v5, 0x8
 
-    and-int/lit16 v2, v2, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v2, v4, v2
+    aget-byte v4, v3, v4
 
-    and-int/lit16 v2, v2, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    shl-int/2addr v2, v13
+    shl-int/2addr v4, v13
 
-    xor-int/2addr v1, v2
+    xor-int/2addr v1, v4
 
-    shr-int/lit8 v2, v5, 0x10
+    shr-int/lit8 v4, v10, 0x10
 
-    and-int/lit16 v2, v2, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v2, v4, v2
+    aget-byte v4, v3, v4
 
-    and-int/lit16 v2, v2, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    shl-int/2addr v2, v11
+    shl-int/2addr v4, v11
 
-    xor-int/2addr v1, v2
+    xor-int/2addr v1, v4
 
-    shr-int/lit8 v2, v10, 0x18
+    shr-int/lit8 v4, v14, 0x18
 
-    and-int/lit16 v2, v2, 0xff
+    and-int/lit16 v4, v4, 0xff
 
-    aget-byte v2, v4, v2
+    aget-byte v3, v3, v4
 
-    shl-int/2addr v2, v12
+    shl-int/2addr v3, v12
 
-    xor-int/2addr v1, v2
+    xor-int/2addr v1, v3
 
-    aget-object v2, p1, v3
+    aget-object v2, p1, v2
 
     aget v2, v2, v9
 
@@ -4336,6 +4200,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p2
@@ -4346,7 +4212,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 

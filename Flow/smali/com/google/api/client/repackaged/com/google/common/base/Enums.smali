@@ -80,9 +80,7 @@
 
     .line 156
     :try_start_0
-    sget-object v1, Lcom/google/api/client/repackaged/com/google/common/base/Enums;->enumConstantCache:Ljava/util/Map;
-
-    invoke-interface {v1, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 

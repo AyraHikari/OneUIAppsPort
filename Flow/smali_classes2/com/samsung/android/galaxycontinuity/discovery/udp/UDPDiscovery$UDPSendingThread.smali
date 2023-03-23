@@ -29,6 +29,18 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;ILcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "UDPPortNumber",
+            "data"
+        }
+    .end annotation
 
     .line 142
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPSendingThread;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;
@@ -143,6 +155,14 @@
 
 .method private setExpiredTime(Ljava/util/Calendar;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expiredTime"
+        }
+    .end annotation
 
     .line 198
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPSendingThread;->broadcastExpiredTime:Ljava/util/Calendar;
@@ -255,9 +275,11 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "sending UDP message: "
+    const-string/jumbo v5, "sending UDP message: "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPSendingThread;->data:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
@@ -267,13 +289,15 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    const-string v4, "sending UDP message"
+    const-string/jumbo v4, "sending UDP message"
 
     .line 172
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -314,13 +338,17 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v5
+
     invoke-virtual {v4}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -357,7 +385,7 @@
     :try_end_3
     .catch Ljava/lang/InterruptedException; {:try_start_3 .. :try_end_3} :catch_2
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :catch_2
     move-exception v3

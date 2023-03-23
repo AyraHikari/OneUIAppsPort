@@ -13,11 +13,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0006\u0008\u0082\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006\u00a8\u0006\u0007"
     }
@@ -34,9 +29,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -53,60 +49,90 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method private static final synthetic $values()[Lkotlin/collections/State;
+    .locals 3
 
     const/4 v0, 0x4
 
     new-array v0, v0, [Lkotlin/collections/State;
 
-    new-instance v1, Lkotlin/collections/State;
+    sget-object v1, Lkotlin/collections/State;->Ready:Lkotlin/collections/State;
 
-    const-string v2, "Ready"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/collections/State;->NotReady:Lkotlin/collections/State;
 
-    sput-object v1, Lkotlin/collections/State;->Ready:Lkotlin/collections/State;
+    const/4 v2, 0x1
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/collections/State;
+    sget-object v1, Lkotlin/collections/State;->Done:Lkotlin/collections/State;
 
-    const-string v2, "NotReady"
+    const/4 v2, 0x2
 
-    const/4 v3, 0x1
+    aput-object v1, v0, v2
 
-    invoke-direct {v1, v2, v3}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lkotlin/collections/State;->Failed:Lkotlin/collections/State;
 
-    sput-object v1, Lkotlin/collections/State;->NotReady:Lkotlin/collections/State;
+    const/4 v2, 0x3
 
-    aput-object v1, v0, v3
+    aput-object v1, v0, v2
 
-    new-instance v1, Lkotlin/collections/State;
+    return-object v0
+.end method
 
-    const-string v2, "Done"
+.method static constructor <clinit>()V
+    .locals 3
 
-    const/4 v3, 0x2
+    .line 10
+    new-instance v0, Lkotlin/collections/State;
 
-    invoke-direct {v1, v2, v3}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
+    const-string v1, "Ready"
 
-    sput-object v1, Lkotlin/collections/State;->Done:Lkotlin/collections/State;
+    const/4 v2, 0x0
 
-    aput-object v1, v0, v3
+    invoke-direct {v0, v1, v2}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
 
-    new-instance v1, Lkotlin/collections/State;
+    sput-object v0, Lkotlin/collections/State;->Ready:Lkotlin/collections/State;
 
-    const-string v2, "Failed"
+    .line 11
+    new-instance v0, Lkotlin/collections/State;
 
-    const/4 v3, 0x3
+    const-string v1, "NotReady"
 
-    invoke-direct {v1, v2, v3}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
+    const/4 v2, 0x1
 
-    sput-object v1, Lkotlin/collections/State;->Failed:Lkotlin/collections/State;
+    invoke-direct {v0, v1, v2}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
 
-    aput-object v1, v0, v3
+    sput-object v0, Lkotlin/collections/State;->NotReady:Lkotlin/collections/State;
+
+    .line 12
+    new-instance v0, Lkotlin/collections/State;
+
+    const-string v1, "Done"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/collections/State;->Done:Lkotlin/collections/State;
+
+    .line 13
+    new-instance v0, Lkotlin/collections/State;
+
+    const-string v1, "Failed"
+
+    const/4 v2, 0x3
+
+    invoke-direct {v0, v1, v2}, Lkotlin/collections/State;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lkotlin/collections/State;->Failed:Lkotlin/collections/State;
+
+    invoke-static {}, Lkotlin/collections/State;->$values()[Lkotlin/collections/State;
+
+    move-result-object v0
 
     sput-object v0, Lkotlin/collections/State;->$VALUES:[Lkotlin/collections/State;
 
@@ -146,7 +172,7 @@
 
     sget-object v0, Lkotlin/collections/State;->$VALUES:[Lkotlin/collections/State;
 
-    invoke-virtual {v0}, [Lkotlin/collections/State;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

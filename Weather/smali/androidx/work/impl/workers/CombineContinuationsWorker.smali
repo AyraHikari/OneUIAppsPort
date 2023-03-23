@@ -17,7 +17,6 @@
         }
     .end annotation
 
-    .line 36
     invoke-direct {p0, p1, p2}, Landroidx/work/Worker;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
 
     return-void
@@ -25,15 +24,14 @@
 
 
 # virtual methods
-.method public doWork()Landroidx/work/ListenableWorker$Result;
+.method public s()Landroidx/work/ListenableWorker$a;
     .locals 1
 
-    .line 41
-    invoke-virtual {p0}, Landroidx/work/impl/workers/CombineContinuationsWorker;->getInputData()Landroidx/work/Data;
+    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->g()Landroidx/work/b;
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/work/ListenableWorker$Result;->success(Landroidx/work/Data;)Landroidx/work/ListenableWorker$Result;
+    invoke-static {v0}, Landroidx/work/ListenableWorker$a;->d(Landroidx/work/b;)Landroidx/work/ListenableWorker$a;
 
     move-result-object v0
 

@@ -7,10 +7,6 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nOkHostnameVerifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OkHostnameVerifier.kt\nokhttp3/internal/tls/OkHostnameVerifier\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,187:1\n1691#2,3:188\n1691#2,3:191\n*E\n*S KotlinDebug\n*F\n+ 1 OkHostnameVerifier.kt\nokhttp3/internal/tls/OkHostnameVerifier\n*L\n57#1,3:188\n65#1,3:191\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -64,10 +60,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 34
     new-instance v0, Lokhttp3/internal/tls/OkHostnameVerifier;
 
     invoke-direct {v0}, Lokhttp3/internal/tls/OkHostnameVerifier;-><init>()V
@@ -80,7 +75,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -99,22 +93,20 @@
         }
     .end annotation
 
-    .line 173
+    .line 1
     :try_start_0
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getSubjectAlternativeNames()Ljava/util/Collection;
 
     move-result-object p1
 
-    if-eqz p1, :cond_5
+    if-eqz p1, :cond_4
 
-    .line 174
+    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v0, Ljava/util/List;
-
-    .line 175
+    .line 3
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -125,7 +117,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_3
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -135,7 +127,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 176
+    .line 4
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v2
@@ -149,7 +141,7 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 177
+    .line 5
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -158,7 +150,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -170,7 +162,7 @@
 
     goto :goto_0
 
-    .line 178
+    .line 6
     :cond_2
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -178,9 +170,7 @@
 
     if-eqz v1, :cond_0
 
-    if-eqz v1, :cond_3
-
-    .line 179
+    .line 7
     check-cast v1, Ljava/lang/String;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -188,20 +178,11 @@
     goto :goto_0
 
     :cond_3
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "null cannot be cast to non-null type kotlin.String"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_4
     return-object v0
 
-    .line 173
-    :cond_5
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    .line 8
+    :cond_4
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
     move-result-object p1
     :try_end_0
@@ -209,9 +190,9 @@
 
     return-object p1
 
-    .line 183
+    .line 9
     :catch_0
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+    invoke-static {}, Lci/q;->i()Ljava/util/List;
 
     move-result-object p1
 
@@ -219,24 +200,16 @@
 .end method
 
 .method private final verifyHostname(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 16
+    .locals 12
 
-    move-object/from16 v0, p1
+    const/4 v0, 0x1
 
-    move-object/from16 v1, p2
+    const/4 v1, 0x0
 
-    .line 81
-    move-object v2, v0
+    if-eqz p1, :cond_1
 
-    check-cast v2, Ljava/lang/CharSequence;
-
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
+    .line 6
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
 
@@ -245,306 +218,286 @@
     goto :goto_0
 
     :cond_0
-    move v2, v4
+    move v2, v1
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    move v2, v3
+    move v2, v0
 
     :goto_1
     if-nez v2, :cond_e
 
     const-string v2, "."
 
-    const/4 v5, 0x2
+    const/4 v3, 0x2
 
-    const/4 v6, 0x0
+    const/4 v4, 0x0
 
-    .line 82
-    invoke-static {v0, v2, v4, v5, v6}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    .line 7
+    invoke-static {p1, v2, v1, v3, v4}, Lhl/t;->E(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    move-result v7
+    move-result v5
 
-    if-nez v7, :cond_e
+    if-nez v5, :cond_e
 
-    const-string v7, ".."
+    const-string v5, ".."
 
-    .line 83
-    invoke-static {v0, v7, v4, v5, v6}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    .line 8
+    invoke-static {p1, v5, v1, v3, v4}, Lhl/t;->p(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    move-result v8
+    move-result v6
 
-    if-eqz v8, :cond_2
+    if-eqz v6, :cond_2
 
     goto/16 :goto_4
 
-    .line 87
     :cond_2
-    move-object v8, v1
+    if-eqz p2, :cond_4
 
-    check-cast v8, Ljava/lang/CharSequence;
+    .line 9
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
-    if-eqz v8, :cond_4
+    move-result v6
 
-    invoke-interface {v8}, Ljava/lang/CharSequence;->length()I
-
-    move-result v8
-
-    if-nez v8, :cond_3
+    if-nez v6, :cond_3
 
     goto :goto_2
 
     :cond_3
-    move v8, v4
+    move v6, v1
 
     goto :goto_3
 
     :cond_4
     :goto_2
-    move v8, v3
+    move v6, v0
 
     :goto_3
-    if-nez v8, :cond_e
+    if-nez v6, :cond_e
 
-    .line 88
-    invoke-static {v1, v2, v4, v5, v6}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    .line 10
+    invoke-static {p2, v2, v1, v3, v4}, Lhl/t;->E(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    move-result v8
+    move-result v6
 
-    if-nez v8, :cond_e
+    if-nez v6, :cond_e
 
-    .line 89
-    invoke-static {v1, v7, v4, v5, v6}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    .line 11
+    invoke-static {p2, v5, v1, v3, v4}, Lhl/t;->p(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_5
+    if-eqz v5, :cond_5
 
     goto/16 :goto_4
 
-    .line 103
+    .line 12
     :cond_5
-    invoke-static {v0, v2, v4, v5, v6}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    invoke-static {p1, v2, v1, v3, v4}, Lhl/t;->p(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    move-result v7
+    move-result v5
 
-    if-nez v7, :cond_6
+    if-nez v5, :cond_6
 
-    .line 104
-    new-instance v7, Ljava/lang/StringBuilder;
+    .line 13
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 106
     :cond_6
-    invoke-static {v1, v2, v4, v5, v6}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    move-object v5, p1
 
-    move-result v7
+    .line 14
+    invoke-static {p2, v2, v1, v3, v4}, Lhl/t;->p(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    if-nez v7, :cond_7
+    move-result p1
 
-    .line 107
-    new-instance v7, Ljava/lang/StringBuilder;
+    if-nez p1, :cond_7
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    .line 15
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v1
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object v1
-
-    .line 111
+    .line 16
     :cond_7
-    sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
+    sget-object p1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const-string v7, "Locale.US"
+    const-string v2, "Locale.US"
 
-    invoke-static {v2, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v7, "null cannot be cast to non-null type java.lang.String"
+    const-string v2, "null cannot be cast to non-null type java.lang.String"
 
-    invoke-static {v1, v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p2, v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+    invoke-virtual {p2, p1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    const-string v2, "(this as java.lang.String).toLowerCase(locale)"
+    const-string p2, "(this as java.lang.String).toLowerCase(locale)"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 114
-    move-object v8, v1
+    const-string p2, "*"
 
-    check-cast v8, Ljava/lang/CharSequence;
+    .line 17
+    invoke-static {p1, p2, v1, v3, v4}, Lhl/u;->J(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
-    const-string v2, "*"
+    move-result p2
 
-    check-cast v2, Ljava/lang/CharSequence;
+    if-nez p2, :cond_8
 
-    invoke-static {v8, v2, v4, v5, v6}, Lkotlin/text/StringsKt;->contains$default(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    .line 18
+    invoke-static {v5, p1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_8
+    const-string p2, "*."
+
+    .line 19
+    invoke-static {p1, p2, v1, v3, v4}, Lhl/t;->E(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_8
+    if-eqz v2, :cond_e
 
-    .line 116
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const/16 v7, 0x2a
 
-    move-result v0
+    const/4 v8, 0x1
 
-    return v0
+    const/4 v9, 0x0
 
-    :cond_8
-    const-string v2, "*."
-
-    .line 131
-    invoke-static {v1, v2, v4, v5, v6}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_e
-
-    const/16 v9, 0x2a
-
-    const/4 v10, 0x1
+    const/4 v10, 0x4
 
     const/4 v11, 0x0
 
-    const/4 v12, 0x4
+    move-object v6, p1
 
-    const/4 v13, 0x0
+    invoke-static/range {v6 .. v11}, Lhl/u;->V(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
 
-    invoke-static/range {v8 .. v13}, Lkotlin/text/StringsKt;->indexOf$default(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
+    move-result v2
 
-    move-result v8
+    const/4 v11, -0x1
 
-    const/4 v9, -0x1
-
-    if-eq v8, v9, :cond_9
+    if-eq v2, v11, :cond_9
 
     goto :goto_4
 
-    .line 140
+    .line 20
     :cond_9
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
 
-    move-result v8
+    move-result v2
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
-    move-result v10
+    move-result v6
 
-    if-ge v8, v10, :cond_a
+    if-ge v2, v6, :cond_a
 
-    return v4
+    return v1
 
-    .line 144
+    .line 21
     :cond_a
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, p1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result p2
 
-    if-eqz v2, :cond_b
+    if-eqz p2, :cond_b
 
-    return v4
+    return v1
 
-    .line 149
+    .line 22
     :cond_b
-    invoke-static {v1, v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    invoke-virtual {v1, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    const-string p2, "(this as java.lang.String).substring(startIndex)"
 
-    const-string v2, "(this as java.lang.String).substring(startIndex)"
+    invoke-static {p1, p2}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 23
+    invoke-static {v5, p1, v1, v3, v4}, Lhl/t;->p(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    .line 150
-    invoke-static {v0, v1, v4, v5, v6}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    move-result p2
 
-    move-result v2
+    if-nez p2, :cond_c
 
-    if-nez v2, :cond_c
+    return v1
 
-    return v4
-
-    .line 155
+    .line 24
     :cond_c
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
 
-    move-result v2
+    move-result p2
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
-    move-result v1
+    move-result p1
 
-    sub-int/2addr v2, v1
+    sub-int/2addr p2, p1
 
-    if-lez v2, :cond_d
+    if-lez p2, :cond_d
 
-    .line 157
-    move-object v10, v0
+    const/16 v6, 0x2e
 
-    check-cast v10, Ljava/lang/CharSequence;
+    add-int/lit8 v7, p2, -0x1
 
-    const/16 v11, 0x2e
+    const/4 v8, 0x0
 
-    add-int/lit8 v12, v2, -0x1
+    const/4 v9, 0x4
 
-    const/4 v13, 0x0
+    const/4 v10, 0x0
 
-    const/4 v14, 0x4
+    .line 25
+    invoke-static/range {v5 .. v10}, Lhl/u;->a0(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
 
-    const/4 v15, 0x0
+    move-result p1
 
-    invoke-static/range {v10 .. v15}, Lkotlin/text/StringsKt;->lastIndexOf$default(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
+    if-eq p1, v11, :cond_d
 
-    move-result v0
-
-    if-eq v0, v9, :cond_d
-
-    return v4
+    return v1
 
     :cond_d
-    return v3
+    return v0
 
     :cond_e
     :goto_4
-    return v4
+    return v1
 .end method
 
 .method private final verifyHostname(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
     .locals 3
 
-    .line 64
+    .line 1
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v1, "Locale.US"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "null cannot be cast to non-null type java.lang.String"
 
@@ -556,29 +509,23 @@
 
     const-string v0, "(this as java.lang.String).toLowerCase(locale)"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x2
 
-    .line 65
+    .line 2
     invoke-direct {p0, p2, v0}, Lokhttp3/internal/tls/OkHostnameVerifier;->getSubjectAltNames(Ljava/security/cert/X509Certificate;I)Ljava/util/List;
 
     move-result-object p2
 
-    check-cast p2, Ljava/lang/Iterable;
-
-    .line 191
+    .line 3
     instance-of v0, p2, Ljava/util/Collection;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    move-object v0, p2
-
-    check-cast v0, Ljava/util/Collection;
-
-    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {p2}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
@@ -586,7 +533,7 @@
 
     goto :goto_0
 
-    .line 192
+    .line 4
     :cond_0
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -605,7 +552,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 66
+    .line 5
     sget-object v2, Lokhttp3/internal/tls/OkHostnameVerifier;->INSTANCE:Lokhttp3/internal/tls/OkHostnameVerifier;
 
     invoke-direct {v2, p1, v0}, Lokhttp3/internal/tls/OkHostnameVerifier;->verifyHostname(Ljava/lang/String;Ljava/lang/String;)Z
@@ -624,32 +571,26 @@
 .method private final verifyIpAddress(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
     .locals 2
 
-    .line 55
+    .line 1
     invoke-static {p1}, Lokhttp3/internal/HostnamesKt;->toCanonicalHost(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     const/4 v0, 0x7
 
-    .line 57
+    .line 2
     invoke-direct {p0, p2, v0}, Lokhttp3/internal/tls/OkHostnameVerifier;->getSubjectAltNames(Ljava/security/cert/X509Certificate;I)Ljava/util/List;
 
     move-result-object p2
 
-    check-cast p2, Ljava/lang/Iterable;
-
-    .line 188
+    .line 3
     instance-of v0, p2, Ljava/util/Collection;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    move-object v0, p2
-
-    check-cast v0, Ljava/util/Collection;
-
-    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {p2}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
@@ -657,7 +598,7 @@
 
     goto :goto_0
 
-    .line 189
+    .line 4
     :cond_0
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -676,12 +617,12 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 58
+    .line 5
     invoke-static {v0}, Lokhttp3/internal/HostnamesKt;->toCanonicalHost(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -711,28 +652,24 @@
 
     const-string v0, "certificate"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x7
 
-    .line 166
+    .line 1
     invoke-direct {p0, p1, v0}, Lokhttp3/internal/tls/OkHostnameVerifier;->getSubjectAltNames(Ljava/security/cert/X509Certificate;I)Ljava/util/List;
 
     move-result-object v0
 
     const/4 v1, 0x2
 
-    .line 167
+    .line 2
     invoke-direct {p0, p1, v1}, Lokhttp3/internal/tls/OkHostnameVerifier;->getSubjectAltNames(Ljava/security/cert/X509Certificate;I)Ljava/util/List;
 
     move-result-object p1
 
-    .line 168
-    check-cast v0, Ljava/util/Collection;
-
-    check-cast p1, Ljava/lang/Iterable;
-
-    invoke-static {v0, p1}, Lkotlin/collections/CollectionsKt;->plus(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    .line 3
+    invoke-static {v0, p1}, Lci/y;->p0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p1
 
@@ -744,13 +681,13 @@
 
     const-string v0, "host"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "certificate"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 48
+    .line 2
     invoke-static {p1}, Lokhttp3/internal/Util;->canParseAsIpAddress(Ljava/lang/String;)Z
 
     move-result v0
@@ -763,7 +700,7 @@
 
     goto :goto_0
 
-    .line 49
+    .line 3
     :cond_0
     invoke-direct {p0, p1, p2}, Lokhttp3/internal/tls/OkHostnameVerifier;->verifyHostname(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
 
@@ -778,15 +715,15 @@
 
     const-string v0, "host"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "session"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 40
+    .line 1
     :try_start_0
     invoke-interface {p2}, Ljavax/net/ssl/SSLSession;->getPeerCertificates()[Ljava/security/cert/Certificate;
 

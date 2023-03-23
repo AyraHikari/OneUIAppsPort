@@ -3,12 +3,12 @@
 .source "ShareManagerV3.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/samsung/android/content/clipboard/SemClipboardManager$OnAddClipResultListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->onNotify(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
+    value = Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->copyTextToClipboard(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,17 +20,21 @@
 # instance fields
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-.field final synthetic val$item:Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
-
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1820
+    .line 1999
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$7;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
-
-    iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$7;->val$item:Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,40 +43,32 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onFailure(I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
-    .line 1823
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$7;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+    const-string p1, "Failed copy text from FlowHistory"
 
-    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$3100(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)Ljava/util/ArrayList;
+    .line 2007
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    move-result-object v0
+    return-void
+.end method
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+.method public onSuccess()V
+    .locals 1
 
-    move-result-object v0
+    const-string v0, "copied text from FlowHistory"
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    .line 2002
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/samsung/android/galaxycontinuity/activities/SharedFragment$IUpdateListener;
-
-    .line 1824
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$7;->val$item:Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
-
-    invoke-interface {v1, v2}, Lcom/samsung/android/galaxycontinuity/activities/SharedFragment$IUpdateListener;->onNotify(Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;)V
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method

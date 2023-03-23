@@ -1,12 +1,12 @@
 .class public final Lcom/google/android/gms/common/util/PlatformVersion;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,17 +37,39 @@
 .end method
 
 .method public static isAtLeastIceCreamSandwichMR1()Z
-    .locals 1
+    .locals 2
+
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0xf
+
+    if-lt v0, v1, :cond_0
 
     const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
 
     return v0
 .end method
 
 .method public static isAtLeastJellyBean()Z
-    .locals 1
+    .locals 2
+
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x10
+
+    if-lt v0, v1, :cond_0
 
     const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
 
     return v0
 .end method
@@ -55,8 +77,7 @@
 .method public static isAtLeastJellyBeanMR1()Z
     .locals 2
 
-    .line 8
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
@@ -75,8 +96,7 @@
 .method public static isAtLeastJellyBeanMR2()Z
     .locals 2
 
-    .line 9
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
@@ -95,8 +115,7 @@
 .method public static isAtLeastKitKat()Z
     .locals 2
 
-    .line 10
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
@@ -115,8 +134,7 @@
 .method public static isAtLeastKitKatWatch()Z
     .locals 2
 
-    .line 11
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x14
 
@@ -135,8 +153,7 @@
 .method public static isAtLeastLollipop()Z
     .locals 2
 
-    .line 12
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
@@ -155,8 +172,7 @@
 .method public static isAtLeastLollipopMR1()Z
     .locals 2
 
-    .line 13
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x16
 
@@ -175,8 +191,7 @@
 .method public static isAtLeastM()Z
     .locals 2
 
-    .line 14
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
@@ -195,8 +210,7 @@
 .method public static isAtLeastN()Z
     .locals 2
 
-    .line 15
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
@@ -215,8 +229,7 @@
 .method public static isAtLeastO()Z
     .locals 2
 
-    .line 16
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1a
 
@@ -235,8 +248,7 @@
 .method public static isAtLeastP()Z
     .locals 2
 
-    .line 17
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
@@ -253,74 +265,145 @@
 .end method
 
 .method public static isAtLeastQ()Z
+    .locals 2
+
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public static isAtLeastR()Z
+    .locals 2
+
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public static isAtLeastS()Z
     .locals 4
 
-    .line 18
-    invoke-static {}, Landroidx/core/os/BuildCompat;->isAtLeastQ()Z
-
-    move-result v0
+    .line 1
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x1
 
-    if-nez v0, :cond_2
+    const/16 v2, 0x1f
 
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+    if-lt v0, v2, :cond_0
 
-    const-string v2, "REL"
-
-    .line 19
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x1d
-
-    if-ge v0, v2, :cond_2
+    return v1
 
     :cond_0
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
-
-    .line 20
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-static {}, Lcom/google/android/gms/common/util/PlatformVersion;->isAtLeastR()Z
 
     move-result v0
 
     const/4 v2, 0x0
 
-    if-ne v0, v1, :cond_1
+    if-nez v0, :cond_1
 
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+    return v2
 
-    .line 21
+    :cond_1
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_2
+
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    .line 2
     invoke-virtual {v0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
 
-    const/16 v3, 0x51
+    const/16 v3, 0x53
 
-    if-lt v0, v3, :cond_1
+    if-lt v0, v3, :cond_2
 
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
 
-    .line 22
+    .line 3
     invoke-virtual {v0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
 
     const/16 v3, 0x5a
 
-    if-gt v0, v3, :cond_1
+    if-gt v0, v3, :cond_2
 
-    goto :goto_0
-
-    :cond_1
-    return v2
+    return v1
 
     :cond_2
-    :goto_0
+    return v2
+.end method
+
+.method public static isAtLeastT()Z
+    .locals 3
+
+    .line 1
+    invoke-static {}, Lcom/google/android/gms/common/util/PlatformVersion;->isAtLeastS()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    .line 2
+    invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v0
+
+    const/16 v2, 0x54
+
+    if-lt v0, v2, :cond_1
+
+    sget-object v0, Layra/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v0
+
+    const/16 v2, 0x5a
+
+    if-gt v0, v2, :cond_1
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_1
     return v1
 .end method

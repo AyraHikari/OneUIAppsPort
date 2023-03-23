@@ -28,6 +28,18 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/util/ExtukManager;Landroid/content/Context;Lcom/samsung/android/galaxycontinuity/util/ExtukManager$ExtukListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context",
+            "listener"
+        }
+    .end annotation
 
     .line 98
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/ExtukManager$ExtukConnection;->this$0:Lcom/samsung/android/galaxycontinuity/util/ExtukManager;
@@ -56,6 +68,16 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "service"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -111,6 +133,14 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     return-void
 .end method

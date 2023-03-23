@@ -175,7 +175,7 @@
     move v1, v0
 
     :goto_1
-    const-string v3, "|PADDED"
+    const-string/jumbo v3, "|PADDED"
 
     if-ge v1, v5, :cond_1
 
@@ -191,15 +191,17 @@
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v11, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
-
-    aget-object v7, v11, v7
+    aget-object v7, v8, v7
 
     invoke-virtual {v10, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v7
 
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -263,21 +265,23 @@
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v14, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
-
-    aget-object v14, v14, v10
+    aget-object v14, v11, v10
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
 
     const/16 v14, 0x7c
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    sget-object v15, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
+    move-result-object v13
 
-    aget-object v15, v15, v8
+    aget-object v15, v11, v8
 
     invoke-virtual {v13, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
 
     invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -285,32 +289,34 @@
 
     aput-object v13, v11, v12
 
-    .line 95
-    sget-object v11, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
-
     or-int/2addr v12, v6
 
+    .line 95
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v15, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
-
-    aget-object v10, v15, v10
+    aget-object v10, v11, v10
 
     invoke-virtual {v13, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v10
 
-    sget-object v10, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
+    invoke-virtual {v10, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    aget-object v10, v10, v8
+    move-result-object v10
 
-    invoke-virtual {v13, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aget-object v13, v11, v8
 
-    invoke-virtual {v13, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v10
+
+    invoke-virtual {v10, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v10
 

@@ -37,6 +37,14 @@
 
 .method static getCompatibilityInfo(Landroid/content/res/Resources;)Ljava/lang/Object;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resources"
+        }
+    .end annotation
 
     .line 26
     sget-object v0, Landroidx/reflect/content/res/SeslResourcesReflector;->mClass:Ljava/lang/Class;

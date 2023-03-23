@@ -9,7 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/sec/android/diagmonagent/sa/IDMAInterface$Stub;
+        Lcom/sec/android/diagmonagent/sa/IDMAInterface$Stub;,
+        Lcom/sec/android/diagmonagent/sa/IDMAInterface$Default;
     }
 .end annotation
 
@@ -24,6 +25,21 @@
 .end method
 
 .method public abstract sendCommon(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "tcType",
+            "tid",
+            "data",
+            "did"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -32,6 +48,23 @@
 .end method
 
 .method public abstract sendLog(ILjava/lang/String;Ljava/lang/String;JLjava/lang/String;)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "tcType",
+            "tid",
+            "logType",
+            "timeStamp",
+            "body"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

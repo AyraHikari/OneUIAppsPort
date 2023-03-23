@@ -1,29 +1,94 @@
 .class public Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # instance fields
-.field protected final mLifecycleFragment:Lcom/google/android/gms/common/api/internal/LifecycleFragment;
+.field public final h:Lo4/i;
 
 
 # direct methods
-.method protected constructor <init>(Lcom/google/android/gms/common/api/internal/LifecycleFragment;)V
+.method public constructor <init>(Lo4/i;)V
     .locals 0
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->mLifecycleFragment:Lcom/google/android/gms/common/api/internal/LifecycleFragment;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->h:Lo4/i;
 
     return-void
 .end method
 
-.method private static getChimeraLifecycleFragmentImpl(Lcom/google/android/gms/common/api/internal/LifecycleActivity;)Lcom/google/android/gms/common/api/internal/LifecycleFragment;
+.method public static c(Landroid/app/Activity;)Lo4/i;
+    .locals 1
+
+    new-instance v0, Lo4/h;
+
+    invoke-direct {v0, p0}, Lo4/h;-><init>(Landroid/app/Activity;)V
+
+    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->d(Lo4/h;)Lo4/i;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static d(Lo4/h;)Lo4/i;
     .locals 1
 
     .line 1
+    invoke-virtual {p0}, Lo4/h;->d()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Lo4/h;->b()Landroidx/fragment/app/f;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lo4/n1;->e2(Landroidx/fragment/app/f;)Lo4/n1;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lo4/h;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    invoke-virtual {p0}, Lo4/h;->a()Landroid/app/Activity;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lo4/l1;->d(Landroid/app/Activity;)Lo4/l1;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 5
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Can\'t get fragment for unexpected activity."
+
+    .line 6
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method private static getChimeraLifecycleFragmentImpl(Lo4/h;)Lo4/i;
+    .locals 1
+    .annotation build Landroidx/annotation/Keep;
+    .end annotation
+
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string v0, "Method not available in SDK."
@@ -33,141 +98,65 @@
     throw p0
 .end method
 
-.method public static getFragment(Landroid/app/Activity;)Lcom/google/android/gms/common/api/internal/LifecycleFragment;
-    .locals 1
-
-    .line 8
-    new-instance v0, Lcom/google/android/gms/common/api/internal/LifecycleActivity;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/common/api/internal/LifecycleActivity;-><init>(Landroid/app/Activity;)V
-
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->getFragment(Lcom/google/android/gms/common/api/internal/LifecycleActivity;)Lcom/google/android/gms/common/api/internal/LifecycleFragment;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static getFragment(Landroid/content/ContextWrapper;)Lcom/google/android/gms/common/api/internal/LifecycleFragment;
-    .locals 0
-
-    .line 9
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p0
-.end method
-
-.method protected static getFragment(Lcom/google/android/gms/common/api/internal/LifecycleActivity;)Lcom/google/android/gms/common/api/internal/LifecycleFragment;
-    .locals 1
-
-    .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->isSupport()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->asFragmentActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/google/android/gms/common/api/internal/zzc;->zza(Landroidx/fragment/app/FragmentActivity;)Lcom/google/android/gms/common/api/internal/zzc;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 4
-    :cond_0
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->zza()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->asActivity()Landroid/app/Activity;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/google/android/gms/common/api/internal/zzb;->zza(Landroid/app/Activity;)Lcom/google/android/gms/common/api/internal/zzb;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 7
-    :cond_1
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "Can\'t get fragment for unexpected activity."
-
-    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
 
 # virtual methods
-.method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+.method public a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 0
 
     return-void
 .end method
 
-.method public getActivity()Landroid/app/Activity;
+.method public b()Landroid/app/Activity;
     .locals 1
 
-    .line 13
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->mLifecycleFragment:Lcom/google/android/gms/common/api/internal/LifecycleFragment;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->h:Lo4/i;
 
-    invoke-interface {v0}, Lcom/google/android/gms/common/api/internal/LifecycleFragment;->getLifecycleActivity()Landroid/app/Activity;
+    invoke-interface {v0}, Lo4/i;->h()Landroid/app/Activity;
 
     move-result-object v0
+
+    invoke-static {v0}, Lq4/k;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method public onActivityResult(IILandroid/content/Intent;)V
+.method public e(IILandroid/content/Intent;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onCreate(Landroid/os/Bundle;)V
+.method public f(Landroid/os/Bundle;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onDestroy()V
+.method public g()V
     .locals 0
 
     return-void
 .end method
 
-.method public onResume()V
+.method public h()V
     .locals 0
 
     return-void
 .end method
 
-.method public onSaveInstanceState(Landroid/os/Bundle;)V
+.method public i(Landroid/os/Bundle;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onStart()V
+.method public j()V
     .locals 0
 
     return-void
 .end method
 
-.method public onStop()V
+.method public k()V
     .locals 0
 
     return-void

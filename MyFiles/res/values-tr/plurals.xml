@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">En fazla %d öge seçilebilir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d öge seçilebilir.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">"%d dosya Çöp Kutusu'na taşınamıyor"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d dosya Çöp Kutusu'na taşınamıyor"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">"%d klasör Çöp Kutusu'na taşınamıyor"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d klasör Çöp Kutusu'na taşınamıyor"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">"%d öge Çöp Kutusu'na taşınamıyor"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d öge Çöp Kutusu'na taşınamıyor"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">"Seçilen dosyalardan %d tanesi, cloud'da veya USB depolama cihazında bulunduğu için silinecek."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Seçilen dosyalardan %d tanesi, cloud'da veya USB depolama cihazında bulunduğu için silinecek."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">"Seçilen klasörlerden %d tanesi, cloud'da veya USB depolama cihazında bulunduğu için silinecek."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Seçilen klasörlerden %d tanesi, cloud'da veya USB depolama cihazında bulunduğu için silinecek."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">"Seçilen ögelerden %d tanesi, cloud'da veya USB depolama cihazında bulunduğu için silinecek."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Seçilen ögelerden %d tanesi, cloud'da veya USB depolama cihazında bulunduğu için silinecek."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d dosya sıkıştırılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya sıkıştırılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d dosya sıkıştırılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya sıkıştırılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d klasör sıkıştırılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör sıkıştırılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d klasör sıkıştırılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör sıkıştırılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d öge sıkıştırılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge sıkıştırılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d öge sıkıştırılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge sıkıştırılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d dosya kopyalanıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya kopyalanıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d dosya kopyalanıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya kopyalanıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d klasör kopyalanıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör kopyalanıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d klasör kopyalanıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör kopyalanıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d öge kopyalanıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge kopyalanıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d öge kopyalanıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge kopyalanıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">%d dosya telefonunuzdan silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya telefonunuzdan silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">%d dosya tabletinizden silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya tabletinizden silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">%d klasör telefonunuzdan silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör telefonunuzdan silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">%d klasör tabletinizden silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör tabletinizden silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">%d öge telefonunuzdan silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge telefonunuzdan silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">%d öge tabletinizden silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge tabletinizden silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d dosya siliniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya siliniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d klasör siliniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör siliniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Çöp kutsndn %d öge siliniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Çöp kutsndn %d öge siliniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d öge siliniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge siliniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d dosya çıkarılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya çıkarılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d klasör çıkartılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör çıkartılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d öge çıkartılıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge çıkartılıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d dosya da %2$s içindeki Çöp kutusuna taşınacak.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d dosya da %2$s içindeki Çöp kutusuna taşınacak.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d dosya geri yükleniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya geri yükleniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d klasör aynı zamanda %2$s içindeki Çöp kutusuna taşınacak.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d klasör aynı zamanda %2$s içindeki Çöp kutusuna taşınacak.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d klasör geri yükleniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör geri yükleniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Dahili depolama alanınız dolu. %d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dahili depolama alanınız dolu. %d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Dahili depolama alanınız dolu. %d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dahili depolama alanınız dolu. %d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Dahili depolama alanınız dolu. %d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dahili depolama alanınız dolu. %d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Dahili depolama alanınız ve SD kartınız dolu. %d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dahili depolama alanınız ve SD kartınız dolu. %d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Dahili depolama alanınız ve SD kartınız dolu. %d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dahili depolama alanınız ve SD kartınız dolu. %d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Dahili depolama alanınız ve SD kartınız dolu. %d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dahili depolama alanınız ve SD kartınız dolu. %d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d öge geri yükleniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge geri yükleniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d öge de %2$s içindeki Çöp kutusuna taşınacak.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d öge de %2$s içindeki Çöp kutusuna taşınacak.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">En fazla %d uygulama penceresi açılabilir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d uygulama penceresi açılabilir.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">"%d dosya Çöp kutusu'na taşınsın mı?"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d dosya Çöp kutusu'na taşınsın mı?"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d dosya Çöp kutusuna taşınsın mı?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya Çöp kutusuna taşınsın mı?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">"%d klasör Çöp kutusu'na taşınsın mı?"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d klasör Çöp kutusu'na taşınsın mı?"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d klasör Çöp kutusuna taşınsın mı?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör Çöp kutusuna taşınsın mı?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">"%d öge Çöp Kutusu'na taşınsın mı?"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d öge Çöp Kutusu'na taşınsın mı?"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">"%d öge Çöp kutusu'na taşınsın mı?"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d öge Çöp kutusu'na taşınsın mı?"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d dosya Çöp kutusuna taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya Çöp kutusuna taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d klasör Çöp kutusuna taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör Çöp kutusuna taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d öge Çöp kutusuna taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge Çöp kutusuna taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d dosya taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d dosya taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d klasör taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d klasör taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d öge taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d öge taşınıyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge taşınıyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d öge sıkıştırıldı</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge sıkıştırıldı</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d öge %2$s konumuna kopyalandı</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d öge %2$s konumuna kopyalandı</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Klasör ve içindeki %d dosya silinsin mi?</item>
+        <item quantity="one">Klasör ve içindeki dosya silinsin mi?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d klasör ve içindeki %2$d dosya silinsin mi?</item>
+        <item quantity="one">Klasör ve içindeki dosya silinsin mi?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d öge silindi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge silindi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d dosya indiriliyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya indiriliyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d klasör indiriliyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör indiriliyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d öge indiriliyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge indiriliyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Klasör paylaşılamıyor. Klasörler boş.</item>
+        <item quantity="one">Klasör paylaşılamıyor. Klasör boş.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d dosya kalıcı olarak silinecek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya kalıcı olarak silinecek.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d klasör kalıcı olarak silinecek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör kalıcı olarak silinecek.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d öge çıkartıldı</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge çıkartıldı</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">"%d dosya Favoriler'e eklendi."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d dosya Favoriler'e eklendi."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">"%d dosya Favoriler'den kaldırıldı."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d dosya Favoriler'den kaldırıldı."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">"%d klasör Favoriler'e eklendi."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d klasör Favoriler'e eklendi."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">"%d klasör Favoriler'den kaldırıldı."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d klasör Favoriler'den kaldırıldı."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">"%d öge Favoriler'e eklendi."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d öge Favoriler'e eklendi."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">"%d öge Favoriler'den kaldırıldı."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d öge Favoriler'den kaldırıldı."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d öge</item>
+        <item quantity="one">1 öge</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d öge</item>
+        <item quantity="one">%d öge</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d öge panoya kopyalandı</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge panoya kopyalandı</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d öge panoya taşındı</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge panoya taşındı</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d öge seçildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge seçildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d öge %2$s konumuna taşındı</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d öge %2$s konumuna taşındı</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d öge Çöp kutusuna taşındı</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge Çöp kutusuna taşındı</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d seçili</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seçili</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD kartınız dolu. %d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartınız dolu. %d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD kartınız dolu. %d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartınız dolu. %d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD kartınız dolu. %d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartınız dolu. %d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Bu dosya %d gün sonra silinecek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bu dosya %d gün sonra silinecek.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Bu klasör %d gün sonra silinecek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bu klasör %d gün sonra silinecek.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d dosya siliniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya siliniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d dosya geri yükleniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosya geri yükleniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d klasör siliniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör siliniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d klasör geri yükleniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klasör geri yükleniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge kalıcı olarak silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d öge siliniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge siliniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d öge geri yükleniyor…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d öge geri yükleniyor…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d gün sonra silinecek</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d gün sonra silinecek</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d uygulama kaldırılsın mı?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uygulama kaldırılsın mı?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -141,6 +141,14 @@
 
 .method private buildAdvertiseSettings(I)Landroid/bluetooth/le/AdvertiseSettings;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeoutmilisec"
+        }
+    .end annotation
 
     .line 75
     new-instance v0, Landroid/bluetooth/le/AdvertiseSettings$Builder;
@@ -170,6 +178,14 @@
 
 .method public static hash(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     const/16 v0, 0xf
 
@@ -265,6 +281,14 @@
 
 .method public startAdvertising(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeoutmilisec"
+        }
+    .end annotation
 
     const-string v0, "Service: Starting Advertising"
 
@@ -334,15 +358,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/BLEAdvertiser;->mAdvertiseCallback:Landroid/bluetooth/le/AdvertiseCallback;
-
-    if-eqz v0, :cond_0
-
-    .line 66
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/BLEAdvertiser;->mBluetoothLeAdvertiser:Landroid/bluetooth/le/BluetoothLeAdvertiser;
-
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/BLEAdvertiser;->mAdvertiseCallback:Landroid/bluetooth/le/AdvertiseCallback;
 
+    if-eqz v1, :cond_0
+
+    .line 66
     invoke-virtual {v0, v1}, Landroid/bluetooth/le/BluetoothLeAdvertiser;->stopAdvertising(Landroid/bluetooth/le/AdvertiseCallback;)V
 
     const/4 v0, 0x0

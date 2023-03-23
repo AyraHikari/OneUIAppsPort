@@ -10,6 +10,16 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "receivedData",
+            "device"
+        }
+    .end annotation
 
     .line 19
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/auth/command/AuthCommand;-><init>()V
@@ -209,56 +219,24 @@
 
     if-nez v1, :cond_2
 
-    const-string v1, "UpdateInfoBody"
-
     .line 57
-    invoke-static {v2, v1}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->newBuilder(ILjava/lang/String;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;
+    iput-boolean v2, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isAllowConnectionBio:Z
+
+    .line 58
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;
 
     move-result-object v1
 
-    new-instance v2, Lcom/samsung/android/galaxycontinuity/auth/data/UpdateInfoBody;
-
-    iget-boolean v0, v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice;->isAllowConnectionBio:Z
-
-    invoke-direct {v2, v0}, Lcom/samsung/android/galaxycontinuity/auth/data/UpdateInfoBody;-><init>(Z)V
-
-    .line 58
-    invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/auth/data/UpdateInfoBody;->toJson()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;->setBody(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;
-
-    move-result-object v0
+    invoke-virtual {v1, v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowDeviceDBHelper;->update(Lcom/samsung/android/galaxycontinuity/data/FlowDevice;)Z
 
     .line 59
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;->build()Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;
-
-    move-result-object v0
-
-    .line 61
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->toJson()Ljava/lang/String;
-
-    move-result-object v0
-
-    const/16 v1, 0x180
-
-    invoke-virtual {p0, v0, v1}, Lcom/samsung/android/galaxycontinuity/auth/command/UpdateInfoCommand;->makeResponseData(Ljava/lang/String;S)[B
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/UpdateInfoCommand;->mResponseByteArray:[B
-
-    const/4 v0, 0x1
-
-    .line 62
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     return-object v0
 
-    .line 64
+    .line 61
     :cond_2
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -266,7 +244,7 @@
 
     return-object v0
 
-    .line 68
+    .line 65
     :cond_3
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -278,7 +256,7 @@
 .method public getAddress()Ljava/lang/String;
     .locals 1
 
-    .line 75
+    .line 72
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/auth/command/UpdateInfoCommand;->mSocket:Lcom/samsung/android/galaxycontinuity/net/FlowSocket;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->getAddress()Ljava/lang/String;

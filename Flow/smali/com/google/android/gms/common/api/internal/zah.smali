@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/common/api/internal/zah;
 .super Lcom/google/android/gms/common/api/internal/zad;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -13,7 +14,7 @@
 
 
 # instance fields
-.field private final zact:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+.field public final zab:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey<",
@@ -42,108 +43,42 @@
     .line 1
     invoke-direct {p0, v0, p2}, Lcom/google/android/gms/common/api/internal/zad;-><init>(ILcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zah;->zact:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zah;->zab:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic zaa(Lcom/google/android/gms/common/api/Status;)V
-    .locals 0
-
-    .line 16
-    invoke-super {p0, p1}, Lcom/google/android/gms/common/api/internal/zad;->zaa(Lcom/google/android/gms/common/api/Status;)V
-
-    return-void
-.end method
-
-.method public final bridge synthetic zaa(Lcom/google/android/gms/common/api/internal/zaab;Z)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final bridge synthetic zaa(Ljava/lang/RuntimeException;)V
-    .locals 0
-
-    .line 15
-    invoke-super {p0, p1}, Lcom/google/android/gms/common/api/internal/zad;->zaa(Ljava/lang/RuntimeException;)V
-
-    return-void
-.end method
-
-.method public final zab(Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;)[Lcom/google/android/gms/common/Feature;
+.method public final zaa(Lcom/google/android/gms/common/api/internal/zabq;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa<",
-            "*>;)[",
-            "Lcom/google/android/gms/common/Feature;"
-        }
-    .end annotation
-
-    .line 10
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;->zabk()Ljava/util/Map;
-
-    move-result-object p1
-
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zah;->zact:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
-
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/common/api/internal/zabw;
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 11
-    :cond_0
-    iget-object p1, p1, Lcom/google/android/gms/common/api/internal/zabw;->zajx:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
-
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;->getRequiredFeatures()[Lcom/google/android/gms/common/Feature;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final zac(Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa<",
+            "Lcom/google/android/gms/common/api/internal/zabq<",
             "*>;)Z"
         }
     .end annotation
 
-    .line 12
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;->zabk()Ljava/util/Map;
+    .line 1
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/zabq;->zah()Ljava/util/Map;
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zah;->zact:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zah;->zab:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
 
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lcom/google/android/gms/common/api/internal/zabw;
+    check-cast p1, Lcom/google/android/gms/common/api/internal/zaci;
 
     if-eqz p1, :cond_0
 
-    .line 13
-    iget-object p1, p1, Lcom/google/android/gms/common/api/internal/zabw;->zajx:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
+    iget-object p1, p1, Lcom/google/android/gms/common/api/internal/zaci;->zaa:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;->shouldAutoResolveMissingFeatures()Z
+    .line 2
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;->zab()Z
 
     move-result p1
 
@@ -159,12 +94,53 @@
     return p1
 .end method
 
-.method public final zad(Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;)V
+.method public final zab(Lcom/google/android/gms/common/api/internal/zabq;)[Lcom/google/android/gms/common/Feature;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/internal/zabq<",
+            "*>;)[",
+            "Lcom/google/android/gms/common/Feature;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/zabq;->zah()Ljava/util/Map;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zah;->zab:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+
+    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/internal/zaci;
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_0
+    iget-object p1, p1, Lcom/google/android/gms/common/api/internal/zaci;->zaa:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
+
+    .line 2
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;->getRequiredFeatures()[Lcom/google/android/gms/common/Feature;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final zac(Lcom/google/android/gms/common/api/internal/zabq;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa<",
+            "Lcom/google/android/gms/common/api/internal/zabq<",
             "*>;)V"
         }
     .end annotation
@@ -175,50 +151,56 @@
         }
     .end annotation
 
-    .line 4
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;->zabk()Ljava/util/Map;
+    .line 1
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/zabq;->zah()Ljava/util/Map;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zah;->zact:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/internal/zah;->zab:Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/common/api/internal/zabw;
+    check-cast v0, Lcom/google/android/gms/common/api/internal/zaci;
 
     if-eqz v0, :cond_0
 
-    .line 6
-    iget-object v1, v0, Lcom/google/android/gms/common/api/internal/zabw;->zajy:Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
+    iget-object v1, v0, Lcom/google/android/gms/common/api/internal/zaci;->zab:Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/GoogleApiManager$zaa;->zaab()Lcom/google/android/gms/common/api/Api$Client;
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/zabq;->zaf()Lcom/google/android/gms/common/api/Api$Client;
 
     move-result-object p1
 
-    iget-object v2, p0, Lcom/google/android/gms/common/api/internal/zah;->zacn:Lcom/google/android/gms/tasks/TaskCompletionSource;
+    iget-object v2, p0, Lcom/google/android/gms/common/api/internal/zah;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
+    .line 2
     invoke-virtual {v1, p1, v2}, Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;->unregisterListener(Lcom/google/android/gms/common/api/Api$AnyClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    .line 7
-    iget-object p1, v0, Lcom/google/android/gms/common/api/internal/zabw;->zajx:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
+    iget-object p1, v0, Lcom/google/android/gms/common/api/internal/zaci;->zaa:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
 
+    .line 3
     invoke-virtual {p1}, Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;->clearListener()V
 
     return-void
 
-    .line 8
     :cond_0
-    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zah;->zacn:Lcom/google/android/gms/tasks/TaskCompletionSource;
+    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zah;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     const/4 v0, 0x0
 
+    .line 4
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->trySetResult(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public final bridge synthetic zag(Lcom/google/android/gms/common/api/internal/zaad;Z)V
+    .locals 0
 
     return-void
 .end method

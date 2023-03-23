@@ -33,6 +33,7 @@
     <string name="air_quality">Сифати ҳаво</string>
     <string name="air_quality_next_tts">Пешгӯии ҳаррӯзаи дертари сифати ҳаво</string>
     <string name="air_quality_previous_tts">Пешгӯии ҳаррӯзаи барвақттари сифати ҳаво</string>
+    <string name="alert_title">Ҳушдор оиди шароити хатарноки обу ҳаво</string>
     <string name="all_added_cities">Ҳамаи шаҳрҳои иловашуда</string>
     <string name="allow">Иҷозат ддн</string>
     <string name="allow_permission_in_settings">Барои ин хусусиятро истифода бурдан, шумо бояд дар Танзимот иҷозат диҳед.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Амал дастгирӣ намешавад.</string>
     <string name="apply_daylight_saving_time">Вақти тобистониро татбиқ мекунед?</string>
     <string name="as_possible_after_verification">Гузориш фиристода шуд. Номи шаҳр дарҳол баъди санҷиш тағйир дода мешавад.</string>
+    <string name="auto_refresh_on_screen_description">Ҳар соат дар бораи вазъи обу ҳаво маълумоти нав гиред. Агар ин фурӯзон бошад, шумо ба таври дастӣ нав карда наметавонед.</string>
+    <string name="auto_refresh_on_the_go">Навкунии худкор дар ҳаракат</string>
+    <string name="auto_refresh_on_the_go_advanced">Иловагӣ</string>
+    <string name="auto_refresh_on_the_go_description">Ҳангоми мошин ва дучарх рондан, давидан ва роҳ гаштан маълумоти обу ҳаво мунтазамтар нав карда мешавад. Агар ин фурӯзон бошад, шумо ба таври дастӣ нав карда наметавонед.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Ҳангоми мошин ва дучарх рондан, давидан ва роҳ гаштан маълумоти обу ҳаво мунтазамтар нав карда мешавад.</string>
     <string name="btn_report">Гзориш</string>
     <string name="button_finish">Хотима</string>
     <string name="button_tts">Тугма</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Барои дидани маълумоти бештар, ду бор зарба занед.</string>
     <string name="china">Чин</string>
     <string name="cities_button">Шаҳрҳо</string>
+    <string name="city_added">Шаҳр илова карда шуд.</string>
     <string name="city_list_text">Шаҳрҳо</string>
     <string name="clear">Соф</string>
     <string name="clear_then_cloudy">Аввал соф, баъд абрнок</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Объект ба навбати%d партофта шуд.</string>
     <string name="dragndroplist_drag_start">Объект дар навбати %d кашонида мешавад.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Объект дар навбати %d кашонида шуда наметавонад.</string>
+    <string name="drawer_tips">%s маслиҳат</string>
     <string name="drawer_tips_message">Барои макон илова ё нест кардан ё тартиби онҳоро тағйир додан, инҷо зарба занед. Шумо инчунин метавонед якчанд видҷет илова кунед, ва онҳо дар экрани Асосӣ маконҳои мухталифро нишон медиҳанд.</string>
     <string name="drawer_tips_message_1">Барои макон илова ё нест кардан ё тартиби маконҳоро тағйир додан, дар поёни ин меню “Маконҳоро идора кардан”-ро зарба занед.</string>
     <string name="drawer_tips_message_2">Шумо метавонед ба экрани асосӣ якчанд видҷет илова карда, якбора якчанд маконро бинед.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Видеои пешгӯӣ</string>
     <string name="format_km_per_hour">%s км/с</string>
     <string name="format_m_per_hour">%s мил/с</string>
+    <string name="fri">Ҷум</string>
     <string name="general">Умумӣ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Дар асоси тарзи истифодаи телефон муҳтавои шахсишуда гиред.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Дар асоси тарзи истифодаи планшет муҳтавои шахсишуда гиред.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">аз Обу ҳаво дар бораи вазъи обу ҳаво маълумот гирифтан, аз ҷумла макони ҷории шуморо</string>
     <string name="go_to_website">Ба сайт гузаштан</string>
     <string name="goto_apps">Навсозии нав дастрас аст. Ҳозир насб мекунед?</string>
     <string name="goto_apps_later">Баъдтар</string>
     <string name="goto_apps_now">Ҳозир</string>
     <string name="goto_apps_update_title">Ҳушдорҳои мӯҳтавои нав</string>
     <string name="header_tts">Сарлавҳа</string>
+    <string name="heavy">Вазнин</string>
     <string name="heavy_rain">Борони сахт</string>
     <string name="heavy_rain_followed_by_intense_heat">Аввал борони сахт, баъд гармии сахт</string>
     <string name="heavy_rain_followed_by_light_rain">Аввал борони сахт, баъд гармии сахт</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Намоёнӣ</string>
     <string name="life_index_wind">Шамол</string>
     <string name="life_index_wind_force">Суръати шамол</string>
+    <string name="light">Сабук</string>
     <string name="light_rain_followed_by_heavy_rain">Аввал борони суст, баъд борони сахт</string>
     <string name="light_rain_with_some_heavy_rain">Борони суст бо андак борони сахт</string>
     <string name="link_tts">Пайванд</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Ягон натиҷа ёфт нашуд.</string>
     <string name="message_service_not_available">Хизматрасонӣ алҳол дастрас нест.</string>
     <string name="minus_tts">Тарҳ</string>
+    <string name="mon">Душ</string>
     <string name="more">Бештар</string>
     <string name="more_cuntact_us">Тамос бо мо</string>
     <string name="more_information">Бештар</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Барои макони пешфарзи обу ҳаворо иваз кардан ва ҳамаи маконҳои худро идора кардан, инҷо зарба занед.</string>
     <string name="new_version_available">Версияи нави %s дастрас аст.</string>
     <string name="new_version_is_available">Версияи нав дастрас аст</string>
+    <string name="news_menu_show_news">Хабарҳоро нишон додан</string>
+    <string name="news_opt_in_banner_title_text">Ахборро дар видҷети Обу ҳаво дида, аз таҳаввулоти ҷорӣ бохабар бошед.</string>
+    <string name="news_opt_in_popup_desc_text">Сархатҳои навтарини %s дар видҷети Обу ҳаво нишон дода мешаванд, то шумо аз хабарҳои дунё огоҳ бошед.</string>
+    <string name="news_opt_in_popup_title_text">Ахбор ва вазъи обу ҳаворо дар як видҷет бинед</string>
+    <string name="news_request_agree_text">Барои аз %s хабар гирифтан, зарба занед</string>
+    <string name="news_widget_bubble_text">Ҳамроҳи пешгӯии обу ҳаво хабарҳои навро фаҳмед.</string>
+    <string name="news_widget_dummy_title">Саргузашти беҳтарини имрӯз</string>
+    <string name="news_widget_new_dummy_title">5 чизе, ки шумо бояд ин субҳ бидонед</string>
+    <string name="news_widget_oobe_text">Барои хабар илова к, инҷо з.з.</string>
     <string name="next">Шаҳри навбатӣ</string>
+    <string name="next_btn">Навбатӣ</string>
     <string name="next_city">Барои дидани маълумоти обу ҳаво барои шаҳри навбатӣ, ду маротиба зарба занед.</string>
     <string name="night_tts">Шаб</string>
     <string name="no_application_available">Ягон барнома дастрас нест.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Ягон маълумоти обуҳаво нест</string>
     <string name="not_in_use">Истифода намешавад</string>
     <string name="not_now">Ҳоло не</string>
+    <string name="not_now_btn">Ҳоло не</string>
     <string name="not_selected">Интихоб нашудааст</string>
     <string name="nothing_selected">Ҳеҷ чиз интихоб нашудааст</string>
     <string name="noti">Огоҳинома</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Барои муайянкунии зуд ва дақиқи макон, ТАНЗИМОТро зарба занед, пас Усули муайянкунии маконро ба GPS, Wi-Fi ва шабакаҳои мобилӣ гузоред.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Барои муайянкунии зуд ва дақиқи макон, ТАНЗИМОТро зарба занед, пас Усули муайянкунии маконро ба GPS ва Wi-Fi гузоред.</string>
     <string name="notice_gps_trun_off_message_verizon">Барои дидани маълумоти обу ҳавои маҳаллӣ, танзимоти маконро фурӯзон кунед ва боварӣ ҳосил кунед, ки реҷа ба дақиқии баланд танзим шудааст.</string>
+    <string name="notification_alert_channel_name">Ҳушдор оиди шароити хатарноки обу ҳаво</string>
     <string name="notification_apps_update_channel_name">Огоҳиҳо оиди навсозиҳо</string>
     <string name="notification_auto_refresh_channel_name">Навкунии худкори обу ҳаво</string>
     <string name="notification_dex_channel_name">Обу ҳаво дар Samsung DeX</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Куш-ни барнома</string>
     <string name="open_source_licences">Иҷозатномаҳои манбаи кушод</string>
     <string name="other_locations">Ҷойгиршавиҳои дигар</string>
+    <string name="partly_sunny">Қисман офтобӣ</string>
     <string name="paused">Таваққуф дода шуд</string>
     <string name="pd_km">%.1f км</string>
     <string name="pd_km_h">%d км/соат</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Боришот: %d мм</string>
     <string name="preview">%s пешнамоиш</string>
     <string name="previous">Шаҳри қаблӣ</string>
+    <string name="previous_btn">Қаблӣ</string>
     <string name="previous_city">Барои дидани маълумоти обу ҳаво барои шаҳри қаблӣ, ду маротиба зарба занед.</string>
     <string name="privacy_policy">Сиёсати махфият</string>
     <string name="probability_of_rain_text">Имконпазирии борон</string>
     <string name="protect_your_content">Муҳтаворо муҳофизат к-д</string>
+    <string name="ps_in">%s дюйм</string>
+    <string name="ps_mm">%s мм</string>
     <string name="radar">Радар ва харитаҳо</string>
     <string name="rain">Борон</string>
     <string name="rain_followed_by_intense_heat">Аввал борон, баъд гармии сахт</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Барои маълумоти обу ҳаворо таҷдид кардан, ТАНЗИМОТ-ро зарба зада, ба Маълумоти барнома > Иҷозатҳо гузашта, иҷозатҳои зеринро бидиҳед ва кӯшишро такрор кунед:</string>
     <string name="runtime_location_permission_title">Иҷозат додани иҷозатҳо</string>
     <string name="runtime_oem_grant_permission_desc">Барномаи %s барои дастрасии зерин иҷозат дода шудааст:</string>
+    <string name="sat">Шанб</string>
     <string name="save_button">Захира кардан</string>
     <string name="search_most_searched_for">Беш аз ҳам инро ҷустуҷӯ кард</string>
     <string name="search_tab_cities">Шаҳрҳо</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Муҳтавои нав дастрас аст</string>
     <string name="sesl_material_overflow_badge_text_n">Н</string>
     <string name="sesl_more_item_label">Бештар</string>
+    <string name="sesl_preferecne_badge_description">Огоҳии нав</string>
     <string name="sesl_preferencecategory_added_title">Унвон</string>
     <string name="sesl_search_hint">Ҷустуҷӯ</string>
     <string name="sesl_searchview_description_clear">Майдони ҷустуҷӯро тоза кардан</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Пайвасти шабакавии худро тафтиш карда, кӯшишро такрор кунед.</string>
     <string name="st_offline">Офлайн</string>
     <string name="st_view_less">Камтар дидан</string>
+    <string name="status_off">Хомӯш</string>
+    <string name="status_on">Фурӯзон</string>
+    <string name="sun">Яш</string>
     <string name="sunny">Офтоб</string>
     <string name="sunny_with_some_clouds">Офтоб бо андак абрнокӣ</string>
     <string name="sunny_with_some_heavy_rain">Офтоб бо андак борони сахт</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Барои иттилооти обу ҳаворо аз дастгоҳи куҳнаи худ барқарор кардан, инҷо зарба занед.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Барои макони худро такроран ёфтан, ТАКРОР КАРДАН-ро зарба занед.</string>
     <string name="tap_setting_message_edge_panel">Барои пешгӯии обу ҳавои маҳаллиро дидан, Муайянкунии маконро фурӯзон кунед.</string>
+    <string name="tap_the_settings_icon">Нишони танзимотро зарба занед.</string>
     <string name="tap_to_get_the_weather">Барои обу ҳаворо фаҳмидан, зарба занед</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Шартҳо</string>
     <string name="the_latest_version">Версияи охирин аллакай насб шудааст.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Ин аз ҷумла ба огоҳиҳо ва Тақвим татбиқ карда мешавад.</string>
+    <string name="thu">Панҷш</string>
     <string name="tick_box_tts">Байрақча</string>
     <string name="ticked_tts">Ишорашуда</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Соатбайъ</string>
     <string name="title_select_locations">Макон интихоб кунед</string>
     <string name="title_theme">Мавзуъҳо</string>
+    <string name="to_continue_agree_to_updated">Барои давом додан, ба %s-и нави мо розӣ шавед.</string>
     <string name="to_get_local_weather_chn">"Барои обуҳавои маҳаллиро гирифтан, макони ҷории шумо ба таҳвилгари хизматрасониҳои обу ҳаво фиристода мешавад. (Лутфан ба %1$sШарту шароит%2$s ва %3$sСиёсати махфияти таҳвилгар нигаред%4$s.)
 Замима ва хизматрасониҳои дигар дар дастгоҳи шумо метавонанд ба маълумоти обуҳавоӣ барои нишон додани обу ҳаво дар он замимаҳо дастрасӣ пайдо кунанд.
 Барои пешниҳод намудани иттилооти пайдарҳами обуҳавоӣ, Обу ҳаво ба макони шумо дастрасӣ пайдо кунад, ҳатто шумо замимаро истифода набаред ҳам."</string>
     <string name="today">Имрӯз</string>
+    <string name="try_it_out_btn">Биозмоед</string>
+    <string name="tue">Сеш</string>
+    <string name="turn_on_to_use_precise_location">Барои ин хусусиятро истифода бурдан, шумо бояд ба %s барои макони шуморо ҳамеша дастрас кардан иҷозат диҳед ва “Макони дақиқро истифода бурдан”-ро фурӯзон кунед. “Танзимот”-ро зарба зада, ба Иҷозатҳо > Муайянкунии макон гузаред.</string>
     <string name="tw_title_weather_broadcast">Пахши барномаҳо</string>
-    <string name="unable_to_check_for_updates">Тафтиши навсозиҳо ғайриимкон аст. Пайвасти шабакавӣ нест.</string>
+    <string name="unable_to_check_for_updates">Тафтиши навсозиҳо барор наёфт. Кӯшишро дертар такрор кунед.</string>
     <string name="unable_to_receive_info_msg">Маълумотро гирифта наметавонад</string>
     <string name="unticked_tts">Беишора</string>
     <string name="unused">Нолозим</string>
     <string name="update">Навсозӣ кардан</string>
     <string name="update_abb8">Навсозӣ</string>
     <string name="update_app">Навсозии барнома</string>
+    <string name="updated_tile_chn">Санаи навкунӣ: %s</string>
     <string name="updated_tts">%s тағйир дода шуд</string>
+    <string name="use_current_location">Истифодаи макони ҷорӣ</string>
     <string name="use_current_location_agree_popup">"Барои дар бораи обуҳавои маҳаллӣ маълумот гирифтан, макони ҷории шумо ба таҳвилгари хизматрасониҳои обу ҳаво фиристода мешавад. (Лутфан, %1$sСиёсати махфияти%2$s таҳвилгари хизматрасониҳоро аз назар гузаронед.)
 Барнома ва хидматҳои дигар дар дастгоҳи шумо метавонанд иттилооти гирифташудаи обуҳаворо дастрас кунанд, то дар ин барномаҳо оиди обу ҳаво маълумот нишон дода шавад."</string>
     <string name="use_current_location_and_background_agree_popup">"Барои дар бораи обуҳавои маҳаллӣ маълумот гирифтан, макони ҷории шумо ба таҳвилгари хизматрасониҳои обу ҳаво фиристода мешавад. (Лутфан %1$sсиёсати махфияти%2$s таҳвилгар нигаред.)
@@ -635,9 +677,16 @@
 Шумо метавонед истифодаи макони худро тавассути гузариш ба танзимоти барномаи Обуҳаво ғайрифаъол кунед."</string>
     <string name="use_current_location_body_msg_chn">"Лутфан, қабл аз истифодабарии “Обуҳаво” бодиққат хонед:
 Агар шумо обу ҳаворо дар макони ҷойгиршавии шумо донистан хоҳед, ба шумо додани иҷозат ба таҳвилгари ҷонибии хизматрасонӣ доштани дастрасии доимӣ (ҳатто шумо аз хизматрасонӣ истифода набаред ҳам) ба дастгоҳи шумо ва гирифтани маълумотҳои муайяни дар поён нишондодашуда лозим аст. Лутфан бодиққат хонед ва %1$sШартҳо ва Шароитҳо%2$s ва %3$sСиёсати Махфияти%4$s таҳвилгари ҷониби сеюмро фаҳмед. ШУмо иҷозати худро бо хомӯшкунии “Макон” дар менюи Танзимот бекор карда метавонед. Барнома ва хидматҳои дигар дар дастгоҳи шумо метавонанд иттилооти гирифташудаи обуҳаворо дастрас кунанд, то дар ин барномаҳо ва хизматрасониҳо оиди обу ҳаво маълумот нишон дода шавад."</string>
+    <string name="use_current_location_body_msg_kor">"Макони ҷории шумо барои таъмин кардани баъзе хусусиятҳои барномаи Обу ҳаво, ба мисли гирифтани маълумот оиди обу ҳаво дар макони ҷории шумо, ҷамъ карда ва истифода бурда мешавад.
+
+Барои оид ба обу ҳаво маълумоти муосир пешниҳод кардан, ин барнома макони шуморо мунтазам дастрас мекунад, ҳатто ҳангоми барномаро истифода набурданатон. Давом дода, шумо розигии худро барои ҷамъоварӣ ва коркарди маълумот оиди макони худ барои мақсади дар боло овардашуда изҳор мекунед.
+
+Шумо метавонед ҷамъоварӣ ва истифодаи маконро дар танзимоти барномаи Weather қатъ кунед."</string>
     <string name="use_current_location_body_purpose">Мақсад</string>
     <string name="use_current_location_body_purpose_content">Барои таҳвили иттилооти обуҳаво барои макони ҷории шумо</string>
     <string name="use_current_location_body_search_provider">Таҳвилгари хизматрасониҳо</string>
+    <string name="use_current_location_continue">Идома додан</string>
+    <string name="use_current_location_not_now">Ҳоло не</string>
     <string name="use_current_location_off_alert_popup">Маълумоти макони ҷорӣ хориҷ карда мешавад.</string>
     <string name="useful_informations">Маслиҳатҳои рӯзгорӣ ва гузоришҳои дигар</string>
     <string name="using_as">Ҳамчун %s истифода бурда мешавад</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">Маслиҳатҳо оиди обуҳаво</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Чорш</string>
     <string name="weekly_forecast">Ҳар рӯз</string>
     <string name="widget_background">Пасзаминаи видҷет</string>
     <string name="widget_empty_text">Барои оиди обу ҳаво маълумот дидан, зарба занед</string>
+    <string name="widget_location">Номи шаҳр</string>
     <string name="widget_name_4x1">Обу ҳаво ва Соат</string>
     <string name="widget_setting">Танзимот</string>
     <string name="widget_setting_background_color">Ранги пасзамина</string>

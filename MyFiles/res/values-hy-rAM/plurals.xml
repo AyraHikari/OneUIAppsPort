@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Հնարավոր չէ ընտրել %d տարրից ավելի:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ընտրել %d տարրից ավելի:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Հնարավոր չէ %d ֆայլ տեղափոխել Աղբարկղ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ %d ֆայլ տեղափոխել Աղբարկղ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Հնարավոր չէ %d պանակ տեղափոխել Աղբարկղ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ %d պանակ տեղափոխել Աղբարկղ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Հնարավոր չէ %d տարր տեղափոխել Աղբարկղ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ %d տարր տեղափոխել Աղբարկղ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Ընտրված ֆայլերից %d-ը կվերացվեն, որովհետև դրանք ամպային պահոցում կամ USB հիշասարքում է:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընտրված ֆայլերից %d-ը կվերացվի, որովհետև այն ամպային պահոցում կամ USB հիշասարքում է:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Ընտրված պանակներից %d-ը կվերացվեն, որովհետև դրանք ամպային պահոցում կամ USB հիշասարքում է:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընտրված պանակներից %d-ը կվերացվի, որովհետև այն ամպային պահոցում կամ USB հիշասարքում է:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Ընտրված տարրերից %d-ը կվերացվեն, որովհետև դրանք ամպային պահոցում կամ USB հիշասարքում է:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընտրված տարրերից %d-ը կվերացվի, որովհետև այն ամպային պահոցում կամ USB հիշասարքում է:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d ֆայլի խտացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի խտացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d ֆայլի խտացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի խտացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d պանակի խտացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի խտացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d պանակի խտացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի խտացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d տարրի խտացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի խտացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d տարրի խտացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի խտացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d ֆայլի պատճենում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի պատճենում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d ֆայլի պատճենում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի պատճենում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d պանակի պատճենում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի պատճենում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d պանակի պատճենում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի պատճենում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d տարրի պատճենում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի պատճենում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d տարրի պատճենում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի պատճենում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">%d ֆայլ վերացնե՞լ հեռախոսից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլ վերացնե՞լ հեռախոսից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">%d ֆայլ վերացնե՞լ պլանշետից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլ վերացնե՞լ պլանշետից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">%d պանակ վերացնե՞լ հեռախոսից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակ վերացնե՞լ հեռախոսից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">%d պանակ վերացնե՞լ պլանշետից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակ վերացնե՞լ պլանշետից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">%d տարր վերացնե՞լ հեռախոսից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր վերացնե՞լ հեռախոսից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">%d տարր վերացնե՞լ պլանշետից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր վերացնե՞լ պլանշետից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d ֆայլի վերացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի վերացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d պանակի վերացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի վերացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">%d տարրի վերացում Աղբարկղից…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի վերացում Աղբարկղից…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d տարրի վերացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի վերացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d ֆայլի արտաքաղում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի արտաքաղում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d պանակի արտաքաղում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի արտաքաղում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d տարրի արտաքաղում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի արտաքաղում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d ֆայլ նույնպես Աղբարկղ կտեղափոխվի %2$s-ում:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ֆայլ նույնպես Աղբարկղ կտեղափոխվի %2$s-ում:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d ֆայլի վերականգնում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի վերականգնում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d պանակ նույնպես Աղբարկղ կտեղափոխվի %2$s-ում:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d պանակ նույնպես Աղբարկղ կտեղափոխվի %2$s-ում:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d պանակի վերականգնում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի վերականգնում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Ձեր ներքին պահոցը լիքն է. ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր ներքին պահոցը լիքն է. ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Ձեր ներքին պահոցը լիքն է. ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր ներքին պահոցը լիքն է. ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Ձեր ներքին պահոցը լիքն է. ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր ներքին պահոցը լիքն է. ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Ձեր ներքին պահոցն ու SD քարտը լիքն են. ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր ներքին պահոցն ու SD քարտը լիքն են. ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Ձեր ներքին պահոցն ու SD քարտը լիքն են. ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր ներքին պահոցն ու SD քարտը լիքն են. ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Ձեր ներքին պահոցն ու SD քարտը լիքն են. ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր ներքին պահոցն ու SD քարտը լիքն են. ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d տարրի վերականգնում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի վերականգնում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d տարր նույնպես Աղբարկղ կտեղափոխվի %2$s-ում:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d տարր նույնպես Աղբարկղ կտեղափոխվի %2$s-ում:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Հնարավոր չէ բացել ծրագրի %d-ից ավելի պատուհաններ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ բացել ծրագրի %d-ից ավելի պատուհան:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d ֆայլ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d ֆայլ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d պանակ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d պանակ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակ տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d տարր տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d տարր տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր տեղափոխե՞լ Աղբարկղ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d ֆայլի տեղափոխում Աղբարկղ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի տեղափոխում Աղբարկղ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d պանակի տեղափոխում Աղբարկղ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի տեղափոխում Աղբարկղ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d տարրի տեղափոխում Աղբարկղ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի տեղափոխում Աղբարկղ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d ֆայլի տեղափոխում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի տեղափոխում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d ֆայլի տեղափոխում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի տեղափոխում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d պանակի տեղափոխում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի տեղափոխում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d պանակի տեղափոխում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի տեղափոխում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d տարրի տեղափոխում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի տեղափոխում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d տարրի տեղափոխում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի տեղափոխում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">Խտացվեց %d տարր</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Խտացվեց %d տարր</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d տարր պատճենվեց %2$s-ում</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d տարր պատճենվեց %2$s-ում</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Վերացնե՞լ պանակն ու պանակի %d ֆայլերը:</item>
+        <item quantity="one">Վերացնե՞լ պանակն ու պանակի ֆայլը:</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Վերացնե՞լ %1$d պանակ և պանակների %2$d ֆայլեր:</item>
+        <item quantity="one">Վերացնե՞լ պանակն ու պանակի ֆայլը:</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">Վերացվեց %d տարր</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Վերացվեց %d տարր</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Ներբեռնվում է %d ֆայլ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ներբեռնվում է %d ֆայլ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Ներբեռնվում է %d պանակ…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ներբեռնվում է %d պանակ…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Ներբեռնվում է %d տարր…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ներբեռնվում է %d տարր…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Հնարավոր չէ համօգտագործել պանակները: Պանակները դատարկ են:</item>
+        <item quantity="one">Հնարավոր չէ համօգտագործել պանակը: Պանակը դատարկ է:</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d ֆայլ ընդմիշտ կվերացվի:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլ ընդմիշտ կվերացվի:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d պանակ ընդմիշտ կվերացվի:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակ ընդմիշտ կվերացվի:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">Արտաքաղվեց %d տարր</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Արտաքաղվեց %d տարր</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d ֆայլ ավելացվել է Սիրվածներին:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլ ավելացվել է Սիրվածներին:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d ֆայլ հեռացվեց Սիրվածներից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլ հեռացվեց Սիրվածներից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d պանակ ավելացվել է Սիրվածներին:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակ ավելացվել է Սիրվածներին:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d պանակ հեռացվեց Սիրվածներից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակ հեռացվեց Սիրվածներից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d տարր ավելացվել է Սիրվածներին:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր ավելացվել է Սիրվածներին:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d տարր հեռացվեց Սիրվածներից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր հեռացվեց Սիրվածներից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d տարր</item>
+        <item quantity="one">1 տարր</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d տարր</item>
+        <item quantity="one">%d տարր</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d տարր պատճենվեց գզրոցում</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր պատճենվեց գզրոցում</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d տարր տեղափոխվեց գզրոց</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր տեղափոխվեց գզրոց</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d տարր է ընտրվել</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր է ընտրվել</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d տարր տեղափոխվեց %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d տարր տեղափոխվեց %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d տարր տեղափոխվեց Աղբարկղ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարր տեղափոխվեց Աղբարկղ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d ընտրված</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ընտրված</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Ձեր SD քարտը լիքն է. ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր SD քարտը լիքն է. ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Ձեր SD քարտը լիքն է. ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր SD քարտը լիքն է. ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Ձեր SD քարտը լիքն է. ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր SD քարտը լիքն է. ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Այս ֆայլը կվերացվի %d օրից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Այս ֆայլը կվերացվի %d օրից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Այս պանակը կվերացվի %d օրից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Այս պանակը կվերացվի %d օրից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընդմիշտ վերացնե՞լ %d ֆայլ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d ֆայլի վերացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի վերացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d ֆայլի վերականգնում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ֆայլի վերականգնում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընդմիշտ վերացնե՞լ %d պանակ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d պանակի վերացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի վերացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d պանակի վերականգնում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d պանակի վերականգնում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընդմիշտ վերացնե՞լ %d տարր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d տարրի վերացում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի վերացում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d տարրի վերականգնում…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d տարրի վերականգնում…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Կվերացվի %d օրից</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Կվերացվի %d օրից</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Ապատեղադրե՞լ %d ծրագիր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ապատեղադրե՞լ %d ծրագիր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

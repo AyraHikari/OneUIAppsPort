@@ -1,6 +1,6 @@
 .class public Lcom/google/android/gms/common/internal/ClientIdentity;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # static fields
@@ -16,19 +16,18 @@
 
 
 # instance fields
-.field private final zaa:I
+.field public final h:I
 
-.field private final zab:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 19
-    new-instance v0, Lcom/google/android/gms/common/internal/zaa;
+    new-instance v0, Lq4/p;
 
-    invoke-direct {v0}, Lcom/google/android/gms/common/internal/zaa;-><init>()V
+    invoke-direct {v0}, Lq4/p;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/internal/ClientIdentity;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -38,21 +37,18 @@
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    .line 2
-    iput p1, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zaa:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->h:I
 
-    .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zab:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->i:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -61,7 +57,7 @@
 
     return v0
 
-    .line 8
+    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/android/gms/common/internal/ClientIdentity;
 
@@ -71,22 +67,22 @@
 
     return v2
 
-    .line 10
+    .line 2
     :cond_1
     check-cast p1, Lcom/google/android/gms/common/internal/ClientIdentity;
 
-    .line 11
-    iget v1, p1, Lcom/google/android/gms/common/internal/ClientIdentity;->zaa:I
+    .line 3
+    iget v1, p1, Lcom/google/android/gms/common/internal/ClientIdentity;->h:I
 
-    iget v3, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zaa:I
+    iget v3, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->h:I
 
     if-ne v1, v3, :cond_2
 
-    iget-object p1, p1, Lcom/google/android/gms/common/internal/ClientIdentity;->zab:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/common/internal/ClientIdentity;->i:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zab:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->i:Ljava/lang/String;
 
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Lq4/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -98,22 +94,20 @@
     return v2
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
-    .line 5
-    iget v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zaa:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->h:I
 
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 4
 
-    .line 12
-    iget v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zaa:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->h:I
 
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zab:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->i:Ljava/lang/String;
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -123,59 +117,53 @@
 
     move-result v2
 
-    add-int/lit8 v2, v2, 0xc
-
     new-instance v3, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v2, v2, 0xc
 
     invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    const-string v0, ":"
 
-    const-string v2, ":"
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
-    .line 14
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
+    .line 1
+    invoke-static {p1}, Lr4/b;->a(Landroid/os/Parcel;)I
 
     move-result p2
 
-    .line 15
-    iget v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zaa:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->h:I
 
     const/4 v1, 0x1
 
-    invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
+    .line 2
+    invoke-static {p1, v1, v0}, Lr4/b;->h(Landroid/os/Parcel;II)V
 
-    .line 16
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->zab:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->i:Ljava/lang/String;
 
     const/4 v1, 0x2
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeString(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    .line 3
+    invoke-static {p1, v1, v0, v2}, Lr4/b;->n(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
-    .line 17
-    invoke-static {p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+    .line 4
+    invoke-static {p1, p2}, Lr4/b;->b(Landroid/os/Parcel;I)V
 
     return-void
 .end method

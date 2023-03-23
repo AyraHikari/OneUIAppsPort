@@ -1,4 +1,4 @@
-.class final Landroidx/lifecycle/Transformations$2;
+.class Landroidx/lifecycle/Transformations$2;
 .super Ljava/lang/Object;
 .source "Transformations.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -44,7 +44,7 @@
 .method constructor <init>(Landroidx/arch/core/util/Function;Landroidx/lifecycle/MediatorLiveData;)V
     .locals 0
 
-    .line 136
+    .line 138
     iput-object p1, p0, Landroidx/lifecycle/Transformations$2;->val$switchMapFunction:Landroidx/arch/core/util/Function;
 
     iput-object p2, p0, Landroidx/lifecycle/Transformations$2;->val$result:Landroidx/lifecycle/MediatorLiveData;
@@ -64,7 +64,7 @@
         }
     .end annotation
 
-    .line 141
+    .line 143
     iget-object v0, p0, Landroidx/lifecycle/Transformations$2;->val$switchMapFunction:Landroidx/arch/core/util/Function;
 
     invoke-interface {v0, p1}, Landroidx/arch/core/util/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -73,7 +73,7 @@
 
     check-cast p1, Landroidx/lifecycle/LiveData;
 
-    .line 142
+    .line 144
     iget-object v0, p0, Landroidx/lifecycle/Transformations$2;->mSource:Landroidx/lifecycle/LiveData;
 
     if-ne v0, p1, :cond_0
@@ -83,18 +83,18 @@
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 146
+    .line 148
     iget-object v1, p0, Landroidx/lifecycle/Transformations$2;->val$result:Landroidx/lifecycle/MediatorLiveData;
 
     invoke-virtual {v1, v0}, Landroidx/lifecycle/MediatorLiveData;->removeSource(Landroidx/lifecycle/LiveData;)V
 
-    .line 148
+    .line 150
     :cond_1
     iput-object p1, p0, Landroidx/lifecycle/Transformations$2;->mSource:Landroidx/lifecycle/LiveData;
 
     if-eqz p1, :cond_2
 
-    .line 150
+    .line 152
     iget-object v0, p0, Landroidx/lifecycle/Transformations$2;->val$result:Landroidx/lifecycle/MediatorLiveData;
 
     new-instance v1, Landroidx/lifecycle/Transformations$2$1;

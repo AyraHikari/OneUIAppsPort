@@ -24,13 +24,13 @@
 .method constructor <init>(Lorg/jsoup/nodes/Element;I)V
     .locals 0
 
-    .line 149
+    .line 169
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 150
+    .line 170
     iput-object p1, p0, Lorg/jsoup/safety/Cleaner$ElementMeta;->el:Lorg/jsoup/nodes/Element;
 
-    .line 151
+    .line 171
     iput p2, p0, Lorg/jsoup/safety/Cleaner$ElementMeta;->numAttribsDiscarded:I
 
     return-void

@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">Иловаи барнома аз телефон</string>
     <string name="add_your_bio_first_dialog_desc">Барои иттилооти биометрии дохилии планшетро барои ба Samsung Flow ворид шудан истифода бурдан, изҳои ангуштон ё инабияҳои худро дар планшет қайд карда, кӯшишро такрор кунед.</string>
     <string name="add_your_bio_first_dialog_title">Аввал иттилооти биометрии худро илова к-д</string>
+    <string name="advanced_features">Хусусиятҳои вусъатёфта</string>
     <string name="alarm">Ҳушдор</string>
     <string name="all_apps">Ҳамаи барномаҳо</string>
     <string name="allow_appear_on_top">Иҷозати дар боло ншн дд шдн дҳд</string>
     <string name="allow_appear_on_top_desc">Барои он, ки равзанаҳои зоҳиршаванда ё огоҳиҳо аз болои дигар барномаҳое, ки шумо дар компютер ё планшет истифода мебаред, нишон дода шаванд, шумо бояд дар Танзимот иҷозати “Дар боло нишон дода шудан”-ро бидиҳед.</string>
+    <string name="allow_location_settings">Ба тнзмти Муайянкунии макон дар дастгоҳҳо иҷозати дастрасӣ дҳд</string>
     <string name="and_more">%1$s ва %2$d дигарон</string>
+    <string name="app_info">Маълумот оиди барнома</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">Зам кардан</string>
     <string name="attach_image">Тасвир</string>
     <string name="attach_my_files">Файлҳои ман</string>
     <string name="attach_sound">Аудио</string>
@@ -38,20 +43,29 @@
 дар
 Samsung Flow"</string>
     <string name="bluetooth_connection_failed_text">Samsung Flow бояд дар телефон фурӯзон бошад.</string>
+    <string name="bt_or_nfc_turned_on">Барои Samsung Flow-ро истифода бурдан, %s фурӯзон карда мешавад.</string>
+    <string name="btn_desc_cancel">Бекор кардан</string>
+    <string name="btn_desc_failed">Иҷронашуда</string>
+    <string name="can_not_use">Истифодаи %s ғайриимкон аст</string>
+    <string name="can_not_use_at_same_time">%1$s ва %2$s дар як вақт фаъол карда намешаванд. %3$s ғайрифаъол мешавад.</string>
     <string name="cancel_all">Бекор кардани ҳама</string>
     <string name="cant_share_files">Мубодилаи файлҳо ғайриимкон аст</string>
     <string name="cant_use_mobile_hotspot_case_1">Шабака ба хатогие дучор шуд. Дар телефон Нуқтаи дастрасии мобилиро тафтиш карда, кӯшишро такрор кунед.</string>
     <string name="cant_use_mobile_hotspot_case_2">Шабака ба хатогие дучор шуд. Барои оиди дастгирии Нуқтаи дастрасии мобилӣ дар нақшаи тарофавии худ маълумот гирифтан, ба таҳвилгари хизматрасониҳои худ муроҷиат кунед.</string>
     <string name="cant_use_mobile_hotspot_title">Истиф Нуқтаи дастрасии моб ғайриимкон аст</string>
     <string name="cant_use_this_function_in_multi_window">Истифодаи ин функсия дар намуди Серравзана ғайриимкон аст.</string>
-    <string name="chan_mkt">Маркетингӣ</string>
-    <string name="chan_ntc">Тавзеҳ</string>
+    <string name="change_location_settings">Иваз к. танзимоти Макон</string>
+    <string name="character_counter_content_description">%1$d аз %2$d аломат</string>
     <string name="checkbox_all">Ҳама</string>
+    <string name="china_network_permission_popup_body">Ба %s барои истифодаи пайвастҳои шабакавӣ иҷозат медиҳед?</string>
+    <string name="china_network_permission_popup_title">Истифодаи пайвастагиҳои шабака</string>
+    <string name="clipboard">Клипборд</string>
     <string name="clipboard_off">Мубодилаи муҳтавои ҳофизаи муваққатиро байни дастгоҳҳои пайваста қатъ кардан</string>
     <string name="clipboard_on">Муҳтавои ҳофизаи муваққатиро байни дастгоҳҳои пайваста мубодила кардан</string>
     <string name="close_app">Барномаро пӯшидан</string>
     <string name="confirm_pass_key_connecting_to_deivce">Ба %s пайваст мешавем…</string>
-    <string name="connect_help_desc0">Дар телефон ё соати худ Samsung Flow-ро фурӯзон кунед.</string>
+    <string name="confirm_your_phone">Дар телефон тасдиқ кунед</string>
+    <string name="connect_help_desc0">Дар телефон Samsung Flow-ро фурӯзон кунед.</string>
     <string name="connect_help_desc1">Мутмаин шавед, ки дар ҳарду дастгоҳ Bluetooth ё Wi-Fi фурӯзон аст.</string>
     <string name="connect_help_desc2">Агар пайвастҳои Wi-Fi ё LAN истифода баред, ҳар дуи дастгоҳҳо ба як шабака пайваст мешаванд.</string>
     <string name="connect_help_desc4">Мутмаин шавед, ки ба компютери худ планшет пайваст накарда истодаед. Samsung Flow инро дастгирӣ намекунад.</string>
@@ -69,16 +83,18 @@ Samsung Flow"</string>
     <string name="connection_error_register_fail">Registration failed. Try again.</string>
     <string name="connection_failed">Пайвастшавӣ барор наёфт.</string>
     <string name="connection_goto_permission_setting">Барои %s-ро истифода бурдан, Танзимотро зарба зада, ба Маълумоти барнома > Иҷозатҳо гузашта, иҷозатҳои зеринро бидиҳед:</string>
+    <string name="connection_method_biometrics">Иттилооти биометрӣ</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">Барои дар Samsung Flow иттилооти биометриро истифода бурдан, шумо бояд иттилооти биометрии худро дар Танзимот қайд кунед.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">Қайдкунии иттилооти биометрӣ</string>
+    <string name="connection_method_biometrics_required_title">Барои дар %s иттилооти биометрӣ истифода бурдан, аз санҷиш гузаштан лозим аст.</string>
+    <string name="connection_method_manual">Дастӣ</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">Бо истифодаи Samsung Pass бо иттилооти биометрии худ ба %s дубора пайваст шавед.</string>
-    <string name="connection_method_simple_connection">Пайвасти сода</string>
-    <string name="connection_method_simple_connection_desc">Барои дубора ба %s пайваст шудан дар телефон тасдиқкунӣ талаб карда намешавад.</string>
-    <string name="connection_method_simple_connection_desc_tab">Барои дубора ба %s пайваст шудан дар планшет тасдиқкунӣ талаб карда намешавад.</string>
+    <string name="connection_method_simple_connection">Пайвасти худкор</string>
     <string name="connection_method_tablet_bio">Иттилооти биометрӣ аз планшет</string>
-    <string name="connection_method_tablet_bio_desc">Бо истифодаи иттилооти биометрии худ дар планшет ба %s дубора пайваст шавед.</string>
     <string name="connection_request_noti_accept">Қабул к-н</string>
     <string name="connection_request_noti_desc">Ба %s барои ба телефони шумо пайваст шудан иҷозат медиҳед?</string>
     <string name="content_shared_via">Муҳтаво тавас. %s мубодила шуд</string>
+    <string name="continue_apps_on_other_device">Давоми брнмҳо дар дгр дастгоҳҳо</string>
     <string name="copied_to_clipboard">Ба ҳофизаи муваққатӣ нусха гирифта шуд.</string>
     <string name="copy_text">Гирифтани нусхаи матн</string>
     <string name="delete_lower">Нест к-н</string>
@@ -90,8 +106,11 @@ Samsung Flow"</string>
     <string name="device_not_secured_desc_for_bio">Барои дар планшет иттилооти биометриро истифода бурдан, бояд дар телефон банди экран танзим кунед.</string>
     <string name="device_not_secured_desc_for_watch">Барои соатро истифода бурдан, бояд дар телефон банди экран танзим кунед.</string>
     <string name="device_status_connected">Пайваст шуд</string>
+    <string name="device_status_connected_with">Бо %s пайваст шуд.</string>
+    <string name="device_status_disconnected">Пайваст нест.</string>
     <string name="device_status_registered">Қайдшуда</string>
     <string name="device_storage">Захирагоҳи дастгоҳ</string>
+    <string name="dialog_allow">Иҷозат ддн</string>
     <string name="dialog_close">Пӯшидан</string>
     <string name="dialog_deny">Рад кардан</string>
     <string name="dialog_desc_turn_off_mirroring">Smart View-ро хомӯш кунем?</string>
@@ -99,6 +118,7 @@ Samsung Flow"</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_retry">Такрор</string>
     <string name="dismiss">Пӯшидан</string>
+    <string name="dragndroplist_drag_move">Ҳоло дар мавқеи %d</string>
     <string name="dragndroplist_drag_release">Объект ба навбати%d партофта шуд.</string>
     <string name="dragndroplist_drag_start">Объект дар навбати %d кашонида мешавад.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Объект дар навбати %d кашонида шуда наметавонад.</string>
@@ -118,41 +138,8 @@ Samsung Flow"</string>
     <string name="flow_main_device_not_secure_dialog_desc">Барои озодкунии экрани Windows-ро истифода бурдан, бояд дар телефон банди экран танзим кунед.</string>
     <string name="flow_main_device_not_secure_dialog_title">Танзими банди эмини экран</string>
     <string name="go_to_settings">Ба Танзимот</string>
-    <string name="help_clipboard_desc">"Шумо метавонед матн, веб-суроғаҳо ва тасвирҳои дохили ҳофизаи муваққатиро бо планшет ё компютери пайваста мубодила кунед.
-
-Ин функсия метавонад истеъмоли барқи батареяро зиёд кунад."</string>
-    <string name="help_clipboard_title">Истифода б-ни ҳофизаи муваққатӣ</string>
-    <string name="help_connecting_devices_desc_1">Компютер ё планшети худро бо истифодаи Samsung Flow ба телефонатон (%s) пайваст кунед.</string>
-    <string name="help_connecting_devices_desc_2">Мутмаин шавед, ки дар ҳар ду дастгоҳҳо Bluetooth фурӯзон аст ё онҳо ба як шабака тавассути Wi-Fi ё LAN пайваст карда шудаанд.</string>
-    <string name="help_connecting_devices_desc_2_1">Агар сими USB истифода баред, он бояд ба ҳарду дастгоҳҳо пайваста бошад ва дар дастгоҳи пайвастшуда бояд Android 10 ё навтар насб шуда бошад.</string>
-    <string name="help_connecting_devices_desc_3">Дар ҳар ду дастгоҳҳо Samsung Flow-ро кушода, устоди танзимро дар компютер иҷро кунед.</string>
-    <string name="help_connecting_devices_desc_4">Барои маълумоти бештар гирифтан, ба www.samsung.com/samsungflow гузаред.</string>
-    <string name="help_connecting_devices_desc_5">Талаботи ҳадди ақал</string>
-    <string name="help_connecting_devices_desc_6">Компютер ё планшети Windows: Windows 10 Creators Update (v1703) ва патчи июн (15063.413), Bluetooth (Bluetooth LE ихтиёрӣ) ва Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Планшети Android: Android Marshmallow ё навтар. Барои тафсилоти бештар гирифтан, ба Саволҳои роиҷ нигаред.</string>
-    <string name="help_connecting_devices_title">Пайваст ба комп-ҳо ва плнштҳо</string>
     <string name="help_contact_us">Тамос бо мо</string>
     <string name="help_install_samsung_flow_title">Пйвст к. дстгҳо бо Samsung Flow</string>
-    <string name="help_mobile_hotspot_desc">%s-ро зарба зада, Нуқтаи дастрасии мобилиро дар телефони худ фурӯзон ё хомӯш кунед. Ин дар дастгоҳҳои дорои Android 11 ё навтар кор намекунад.</string>
-    <string name="help_mobile_hotspot_title">Истифодаи нуқтаи гарми мобилӣ</string>
-    <string name="help_noti_sync_desc">"Вақте ки компютер ё планшети худро бо истифодаи Samsung Flow пайваст мекунед, огоҳиҳои телефон дар компютер ё планшети шумо нишон дода мешаванд. Вақте ки огоҳиҳои нав гирифта мешаванд, шумо метавонед ба паёмҳо аз барномаҳои дигар посухҳои зуд нависед.
-
-Ин функсия метавонад дар баъзе барномаҳои паёмнависӣ дастнорас бошад.
-
-Шумо метавонед дар Samsung Flow ба Имконоти бештар > Танзимот > Идора кардани огоҳиҳо гузашта, огоҳиҳоро идора кунед."</string>
-    <string name="help_noti_sync_title">Ҳамоҳангсозии огоҳиҳо</string>
-    <string name="help_sharing_contents_desc_1">Мубодилаи муҳтаво байни дастгоҳҳои пайваста осон аст.</string>
-    <string name="help_sharing_contents_desc_2">Аз телефон ба компютер ё планшет</string>
-    <string name="help_sharing_contents_desc_3">Дар барномаи дилхоҳ, ба мисли браузер, имкони мубодиларо ёфта, Samsung Flow-ро интихоб кунед.</string>
-    <string name="help_sharing_contents_desc_4">Шумо инчунин метавонед %s-ро дар варақаи таърихи Flow зарба зада, файлҳоро барои мубодила кардан интихоб кунед.</string>
-    <string name="help_sharing_contents_desc_5">Аз компютер ё планшет ба телефон</string>
-    <string name="help_sharing_contents_desc_6">Дар барномаи дилхоҳ, ба мисли браузер, имкони мубодиларо ёфта, Samsung Flow-ро интихоб кунед.</string>
-    <string name="help_sharing_contents_desc_7">Шумо инчунин метавонед %s-ро дар варақаи таърихи Flow зарба зада, онҳоро барои мубодила интихоб кунед ё файлҳоро бевосита ба Samsung Flow кашонда партоед.</string>
-    <string name="help_sharing_contents_title">Мубодилаи муҳтаво</string>
-    <string name="help_smart_view_desc">Барои экрани телефони худро дар планшет ё компютер инъикос кунондан, нишонаи Smart View-ро зарба занед.</string>
-    <string name="help_smart_view_desc_2">Ҳангоми истифода бурдани Smart View, шумо метавонед нишонаи ситораро зарба зада, барномаҳои писандидаро барои дастрасии зудтар илова кунед.</string>
-    <string name="help_smart_view_title">Истифодаи Smart View</string>
-    <string name="help_using_multi_device_title">Истифодаи якчанд комп ё планшет</string>
     <string name="hotspot_description">Ҳангоми фаъол будани Samsung Flow Нуқтаи дастрасии мобилиро истифода бурда, дастгоҳи пайвастшударо ҳамчун нуқтаи дастрасӣ ба интернет истифода баред.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">Барои Нуқтаи дастрасии мобилиро истифода бурдан, Wi-Fi бояд хомӯш карда шавад.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">Wi-Fi-ро хомӯш мекунед?</string>
@@ -185,7 +172,11 @@ Samsung Flow"</string>
     <string name="menu_do_not_disturb">Халал нарасонед</string>
     <string name="menu_enable_hotspot">Ба Нқт дстрс моб пйвст ш</string>
     <string name="menu_favorites">Писандидаҳо</string>
+    <string name="menu_favorites_add">Илова к-н</string>
+    <string name="menu_favorites_remove">Нест кардан</string>
     <string name="menu_full_screen">Намуди пурра</string>
+    <string name="menu_more">Бештар</string>
+    <string name="menu_phone_screen">Экрани телефон</string>
     <string name="menu_resolution">Возеҳӣ</string>
     <string name="menu_resolution_option_high">Баланд</string>
     <string name="menu_resolution_option_low">Паст</string>
@@ -231,6 +222,10 @@ Samsung Flow"</string>
     <string name="noti_desc_screenshot_saved">Барои акси экранро дидан, инҷо зарба занед.</string>
     <string name="noti_title_screenshot_saved">Акси экран захира карда шуд</string>
     <string name="notices">Огоҳиҳо</string>
+    <string name="notices_last_for_android6_desc">"Ин охирин навсозии барои Android 6.0 (Marshmallow) пешбинишуда мебошад. Бинобар маҳдудиятҳои СО, Samsung Flow дигар Android 6.0-ро дастгирӣ намекунад.
+
+Корбарони Android 6.0 метавонанд Samsung Flow-ро бидуни навсозӣ истифода бурдан гиранд."</string>
+    <string name="notices_last_for_android6_title">Қатъи дастгирӣ барои Android 6.0 (Marshmallow)</string>
     <string name="notices_notice">Огоҳинома</string>
     <string name="notices_update">Навсозӣ</string>
     <string name="notices_update_include">Навсозиҳои нармафзор метавонанд инҳоро дар бар гиранд:</string>
@@ -255,6 +250,8 @@ Samsung Flow"</string>
     <string name="option_connection_type_wifi">Wi-Fi ё LAN</string>
     <string name="pc">Компютер</string>
     <string name="permissions">Иҷозатҳо</string>
+    <string name="permissions_all_files_access">Дастрасӣ ба ҳамаи файлҳо</string>
+    <string name="permissions_all_files_access_desc">Барои интиқол додани тасвирҳо, медиа ва файлҳо истифода бурда мешавад.</string>
     <string name="permissions_appear_on_top_desc">Барои аз болои дигар барномаҳо огоҳӣ нишон додан истифода бурда мешавад</string>
     <string name="permissions_appear_on_top_title">Ба Samsung Flow барои дастрас кардани “Дар боло нишон дода шудан” бо мақсади аз болои дигар барномаҳо нишон дода шуданаш иҷозат медиҳед?</string>
     <string name="permissions_call_log">Дафтарҳои қайди зангҳо</string>
@@ -266,6 +263,8 @@ Samsung Flow"</string>
     <string name="permissions_location_desc">Барои дар атрофи наздик бо истифодаи Bluetooth дастгоҳҳои Galaxy ҷӯстан истифода бурда мешавад.</string>
     <string name="permissions_microphone">Микрофон</string>
     <string name="permissions_microphone_desc">Барои пайваст кардани дастгоҳҳои Galaxy бо сигнали аудиоии чандомадҳои баланд истифода бурда мешавад.</string>
+    <string name="permissions_nearby_devices">Дастгоҳҳои наздик</string>
+    <string name="permissions_nearby_devices_desc">Барои дар атрофи наздик дастгоҳ кофтан ва дастгоҳҳои қайдшударо пайгирӣ кардан истифода бурда мешавад</string>
     <string name="permissions_notification_access_desc">Барои ба дастгоҳи пайвастшуда огоҳӣ фиристодан истифода бурда мешавад</string>
     <string name="permissions_phone">Телефон</string>
     <string name="permissions_phone_desc">Барои тафтиш кардани рақами телефонии шумо истифода бурда мешавад.</string>
@@ -273,11 +272,11 @@ Samsung Flow"</string>
     <string name="permissions_sms_desc">Барои интиқол додани паёмҳои матнӣ истифода бурда мешавад.</string>
     <string name="permissions_storage">Захирагоҳ</string>
     <string name="permissions_storage_desc">Барои интиқол додани тасвирҳо, медиа ва файлҳо истифода бурда мешавад.</string>
-    <string name="permissions_title">Иҷозатҳо барои %s</string>
+    <string name="permissions_title">Samsung Flow ин иҷозатҳоро истифода мебарад</string>
     <string name="phone">Телефон</string>
     <string name="press_enter_key_to_send">Паёмҳоро бо т. Enter фиристодан</string>
     <string name="processing">Коркард…</string>
-    <string name="receiving_failed">Гирифтан иҷро нашуд.</string>
+    <string name="receiving_failed">Ҳангоми гирифтани ин паём хатогие ба миён омад.</string>
     <string name="register_failed">Кӯшишро дертар такрор кунед.</string>
     <string name="resend">Ирсоли дубора</string>
     <string name="rooted_device">Дастгоҳи шумо рут карда шудааст. Бо мақсади таъмини амният, истифодаи %s дар дастгоҳҳои рутшуда ғайриимкон аст.</string>
@@ -295,11 +294,19 @@ Samsung Flow"</string>
     <string name="select_apps_for_shortcuts">Интих барномаҳоро барои эҷод к-и миёнбурҳо</string>
     <string name="select_items">Интихоби ҷузъҳо</string>
     <string name="send">Фир-н</string>
-    <string name="sending_failed">Ирсолкунӣ барор наёфт.</string>
+    <string name="sending_failed">Ҳангоми фиристодани ин паём хатогие ба миён омад.</string>
     <string name="sesl_action_bar_up_description">Паймоиш ба боло</string>
     <string name="sesl_action_menu_overflow_badge_description">Муҳтавои нав дастрас аст</string>
     <string name="sesl_action_menu_overflow_badge_text_n">Н</string>
     <string name="sesl_action_menu_overflow_description">Имконоти бештар</string>
+    <string name="sesl_index_assistant_text">Барои варақ задан, бо ду ангушт ба боло ё поён бимолед.</string>
+    <string name="sesl_index_scrollbar">Навори ҳаракат</string>
+    <string name="sesl_index_section">Мундариҷаи қисмат</string>
+    <string name="sesl_index_selected">Интихоб шуд</string>
+    <string name="sesl_material_badge_description">Муҳтавои нав дастрас аст</string>
+    <string name="sesl_material_overflow_badge_text_n">Н</string>
+    <string name="sesl_more_item_label">Бештар</string>
+    <string name="sesl_preferecne_badge_description">Огоҳии нав</string>
     <string name="sesl_preferencecategory_added_title">Унвон</string>
     <string name="sesl_search_hint">Ҷустуҷӯ</string>
     <string name="sesl_searchview_description_clear">Майдони ҷустуҷӯро тоза кардан</string>
@@ -309,6 +316,10 @@ Samsung Flow"</string>
     <string name="sesl_searchview_description_voice">Ҷустуҷӯи овозӣ</string>
     <string name="sesl_switch_off">Хомӯш</string>
     <string name="sesl_switch_on">Фурӯзон</string>
+    <string name="sesl_switchbar_off_text">Хомӯш</string>
+    <string name="sesl_switchbar_on_text">Фурӯзон</string>
+    <string name="sesl_toolbar_collapse_description">Печонидан</string>
+    <string name="set_screen_lock_title">Банди экран танзим кунед</string>
     <string name="settings">Танзимот</string>
     <string name="settings_auto_hotspot_desc">Агар дастгоҳи пайвастшуда ба интернет пайваст шуда натавонад, телефони худро ҳамчун нуқтаи дастрасӣ ба интернет истифода баред.</string>
     <string name="settings_deregister_confirm_dialog_desc">Барои ба ин дастгоҳ дар оянда пайваст шудан, бояд онро аз нав қайд кунед.</string>
@@ -319,12 +330,16 @@ Samsung Flow"</string>
     <string name="settings_gear_unlock_confirm_dialog_title">Санҷиши шахсият бо Gear-ро фурӯзон кунем?</string>
     <string name="settings_manage_notifications_desc">Барномаҳоеро интихоб кунед, ки метавонанд ба дастгоҳи пайвастшуда огоҳӣ фиристанд.</string>
     <string name="settings_manage_notifications_title">Огоҳиҳои интихобшудаи барномаҳо</string>
+    <string name="settings_send_message_desc">Send messages using the enter key on your keyboard.</string>
     <string name="settings_title_auto_bt_on">Bluetooth-и худкор</string>
     <string name="setup_complete_done">Иҷро шуд</string>
     <string name="setup_completed">Танзимкунии %s ба анҷом расид.</string>
+    <string name="setup_completed_phone">Телефони шумо ҳоло ба %s пайваста аст.</string>
+    <string name="setup_completed_tablet">Планшети шумо ҳоло ба %s пайваста аст.</string>
     <string name="setup_confirm_pin">Барои ба %2$s пайваст шудан, давоми %1$d сонияи оянда дуруст будани рамзро тафтиш кунед.</string>
     <string name="setup_enter_pin_on_pc">Дар %s-и худ PIN-ро дохил кунед.</string>
     <string name="setup_preparing">Дар компютер ё планшет танзимкунии Samsung Flow-ро ба кор дароред.</string>
+    <string name="setup_preparing_detail">Агар Samsung Flow-ро насб накарда бошед, онро дар компютер аз Microsoft Store ва дар планшет аз Galaxy Store ё Google Play насб кунед.</string>
     <string name="setup_preparing_tab">Дар компютер танзимкунии Samsung Flow-ро ба кор дароред</string>
     <string name="setup_tab_complete_title">Танзим анҷом ёфт</string>
     <string name="setup_tab_confirm_passkey_title">Дастгоҳҳои худро пайваст кунед</string>
@@ -343,6 +358,8 @@ Samsung Flow"</string>
     <string name="setupwizard_welcome_body">Барои кори хидмати барнома иҷозатҳои зерин лозиманд. Барои иҷозатҳои ихтиёрӣ, функсияҳои пешфарзи хидмат фурӯзон карда мешаванд, аммо иҷозат дода намешаванд.</string>
     <string name="setupwizard_welcome_title">Иҷозатҳои барнома</string>
     <string name="share">Мубодила</string>
+    <string name="share_item_device_status_connected">Дастгоҳ пайваст карда шуд</string>
+    <string name="share_item_device_status_disconnected">Дастгоҳ ҷудо шуд</string>
     <string name="shortcut_list_desc">Барномаеро дар телефон барои ба планшет пайваст кардан интихоб кунед. Миёнбур ба ин барнома ба экрани Асосӣ илова карда мешавад.</string>
     <string name="snooze">Монондан</string>
     <string name="special_sensitive_optional_permissions">Иҷозатҳои махсуси ихтиёрӣ барои маълумоти ҳассос</string>
@@ -352,6 +369,8 @@ Samsung Flow"</string>
     <string name="tablet_bio_auth_confirm_title">Итт биом плнштро барои снҷш шхст истиф б?</string>
     <string name="tap_icon_to_try_iris_auth">Барои шинохтагирии инабияҳоро бори дигар кӯшиш кардан, ин нишонаро з.з.</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">Истифодаи Даврзанонии худкор ҳангоми фурӯзон будани Smart View барои Samsung Flow ғайриимкон аст.</string>
+    <string name="toast_msg_connected">Пайвасти Samsung Flow ба %s оғоз шуд.</string>
+    <string name="toast_msg_disconnected">Пайвасти Samsung Flow ба %s анҷом ёфт.</string>
     <string name="try_again">Такрор кардан</string>
     <string name="turn_on">Фурӯзон кардан</string>
     <string name="turn_on_auto_run">Фурӯзон кардани Иҷрои худкор</string>
@@ -362,15 +381,20 @@ Samsung Flow"</string>
     <string name="unsupported_file">Файли дастгиринашаванда.</string>
     <string name="update">Навсозӣ к-н</string>
     <string name="update_samsung_flow">Пайваст ба %s ғайриимкон аст. Samsung Flow-ро то версияи охирин навсозӣ карда, кӯшишро такрор кунед.</string>
-    <string name="welcome_button_start">Оғоз кардан</string>
+    <string name="verification_method">Усули санҷиш</string>
     <string name="welcome_phone_button_agree">Розиам</string>
-    <string name="welcome_phone_desc">Компютер ё планшети худро бо истифодаи Samsung Flow ба телефонатон пайваст кунед.</string>
-    <string name="welcome_phone_desc_terms">Барои давом додан, %s-ро хонед ва ба он розӣ шавед.</string>
-    <string name="welcome_phone_title">Марҳабо ба %s</string>
+    <string name="welcome_phone_desc1">Ҳуҷҷат, сурат, видео ва дигар маводҳоро байни телефон ва компютер ё планшети пайваст шудааш мубодила кунед.</string>
+    <string name="welcome_phone_desc2">Паёмҳо ва огоҳиҳои телефони худро дар компютер ё планшети худ аз назар гузаронед ва ба онҳо ҷавоб диҳед.</string>
+    <string name="welcome_phone_desc3">Экрани телефони худро дар компютер ё планшети худ намоиш диҳед ва идора кунед.</string>
+    <string name="welcome_phone_desc_terms">Идома дода, шумо ба %s розӣ мешавед.</string>
+    <string name="welcome_phone_title1">Телефони худро ба дастгоҳи дигар пайваст кунед</string>
+    <string name="welcome_phone_title2">Огоҳиҳои худро ҳамоҳанг созед</string>
+    <string name="welcome_phone_title3">Экрани телефони худро мубодила кунед</string>
     <string name="welcome_tab_desc2">Телефони худро барои танзим кардани Samsung Flow тайёр кунед.</string>
     <string name="welcome_tab_desc3">Планшети худро ба телефон ё компютери худ бо истифодаи Samsung Flow пайваст кунед.</string>
     <string name="wifi_connection_failed_text">Дар телефон бояд Samsung Flow фурӯзон бошад ва он бояд ба ҳамон шабака пайваста бошад.</string>
-    <string name="wifi_enable_warning_msg">Ҳангоми фаъол будани Нуқтаи дастрасии мобилӣ, Wi-Fi хомӯш карда мешавад. Барои Wi-Fi-ро фурӯзон кардан, Нуқтаи дастрасии мобилиро хомӯш кунед.</string>
-    <string name="wifi_enable_warning_title">Нуқтаи дастрасии мобилиро хомӯш кунем?</string>
+    <string name="wifi_enable_warning_msg">Барои Wi-Fi Direct-ро истифода бурдан, Нуқтаи дастрасии мобилӣ бояд хомӯш карда шавад.</string>
+    <string name="wifi_enable_warning_title">Хомӯш кардани Нуқтаи дастрасии мобилӣ</string>
+    <string name="you_can_turn_off">Шумо метавонед ин функсияро дар %s хомӯш кунед.</string>
     <string name="you_can_turn_off_this_permission">Шумо метавонед ин иҷозатро дар Танзимот > Барномаҳо > менюи Бештар > Дастрасии махсус хомӯш кунед.</string>
 </resources>

@@ -47,10 +47,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 32
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -61,7 +60,7 @@
 .method public bridge synthetic initialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 32
+    .line 1
     invoke-virtual {p0}, Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;->initialValue()Ljava/text/DateFormat;
 
     move-result-object v0
@@ -69,10 +68,10 @@
     return-object v0
 .end method
 
-.method protected initialValue()Ljava/text/DateFormat;
+.method public initialValue()Ljava/text/DateFormat;
     .locals 3
 
-    .line 35
+    .line 2
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -83,16 +82,13 @@
 
     const/4 v1, 0x0
 
-    .line 36
+    .line 3
     invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->setLenient(Z)V
 
-    .line 37
+    .line 4
     sget-object v1, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
 
     invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
-
-    .line 35
-    check-cast v0, Ljava/text/DateFormat;
 
     return-object v0
 .end method

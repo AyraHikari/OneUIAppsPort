@@ -9,6 +9,8 @@
 
 # virtual methods
 .method public abstract buffer()Lokio/Buffer;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 .end method
 
 .method public abstract exhausted()Z
@@ -17,6 +19,9 @@
             Ljava/io/IOException;
         }
     .end annotation
+.end method
+
+.method public abstract getBuffer()Lokio/Buffer;
 .end method
 
 .method public abstract indexOf(B)J
@@ -76,6 +81,9 @@
 .end method
 
 .method public abstract inputStream()Ljava/io/InputStream;
+.end method
+
+.method public abstract peek()Lokio/BufferedSource;
 .end method
 
 .method public abstract rangeEquals(JLokio/ByteString;)Z

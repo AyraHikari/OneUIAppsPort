@@ -68,7 +68,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/phrase/-$$Lambda$1fItRLjCUymglcKhkxvNGD0_M7g;->INSTANCE:Lcom/samsung/android/sdk/scs/ai/text/phrase/-$$Lambda$1fItRLjCUymglcKhkxvNGD0_M7g;
+    sget-object v2, Lcom/samsung/android/sdk/scs/ai/text/phrase/-$$Lambda$KeyPhraseExtractor$-tyXSJp6yIHZkhd2CSpn4WX993I;->INSTANCE:Lcom/samsung/android/sdk/scs/ai/text/phrase/-$$Lambda$KeyPhraseExtractor$-tyXSJp6yIHZkhd2CSpn4WX993I;
 
     invoke-static {v1, v2}, Ljava/util/stream/Collectors;->collectingAndThen(Ljava/util/stream/Collector;Ljava/util/function/Function;)Ljava/util/stream/Collector;
 
@@ -115,6 +115,16 @@
     iput-object v0, p0, Lcom/samsung/android/sdk/scs/ai/text/phrase/KeyPhraseExtractor;->mServiceExecutor:Lcom/samsung/android/sdk/scs/ai/text/TextServiceExecutor;
 
     return-void
+.end method
+
+.method public static synthetic lambda$-tyXSJp6yIHZkhd2CSpn4WX993I(Ljava/util/Set;)Ljava/util/Set;
+    .locals 0
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 
@@ -326,7 +336,7 @@
     goto :goto_0
 
     :cond_1
-    const-string p2, "resultCode"
+    const-string/jumbo p2, "resultCode"
 
     .line 105
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -335,7 +345,7 @@
 
     if-ne p2, v1, :cond_2
 
-    const-string p2, "textSupportedBoolean"
+    const-string/jumbo p2, "textSupportedBoolean"
 
     .line 107
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
@@ -353,11 +363,15 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "unexpected resultCode!!! resultCode: "
+    const-string/jumbo v0, "unexpected resultCode!!! resultCode: "
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

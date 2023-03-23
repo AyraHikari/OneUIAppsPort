@@ -44,7 +44,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 16
 
     .line 42
     new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
@@ -58,118 +58,106 @@
     sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->PENDING:Lcom/bumptech/glide/request/GenericRequest$Status;
 
     .line 44
-    new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-instance v1, Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const-string v1, "RUNNING"
+    const-string v3, "RUNNING"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->RUNNING:Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v1, Lcom/bumptech/glide/request/GenericRequest$Status;->RUNNING:Lcom/bumptech/glide/request/GenericRequest$Status;
 
     .line 46
-    new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-instance v3, Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const-string v1, "WAITING_FOR_SIZE"
+    const-string v5, "WAITING_FOR_SIZE"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->WAITING_FOR_SIZE:Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v3, Lcom/bumptech/glide/request/GenericRequest$Status;->WAITING_FOR_SIZE:Lcom/bumptech/glide/request/GenericRequest$Status;
 
     .line 48
-    new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-instance v5, Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const-string v1, "COMPLETE"
+    const-string v7, "COMPLETE"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->COMPLETE:Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v5, Lcom/bumptech/glide/request/GenericRequest$Status;->COMPLETE:Lcom/bumptech/glide/request/GenericRequest$Status;
 
     .line 50
-    new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-instance v7, Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const-string v1, "FAILED"
+    const-string v9, "FAILED"
 
-    const/4 v6, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v6}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->FAILED:Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v7, Lcom/bumptech/glide/request/GenericRequest$Status;->FAILED:Lcom/bumptech/glide/request/GenericRequest$Status;
 
     .line 52
-    new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-instance v9, Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const-string v1, "CANCELLED"
+    const-string v11, "CANCELLED"
 
-    const/4 v7, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v7}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->CANCELLED:Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v9, Lcom/bumptech/glide/request/GenericRequest$Status;->CANCELLED:Lcom/bumptech/glide/request/GenericRequest$Status;
 
     .line 54
-    new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-instance v11, Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const-string v1, "CLEARED"
+    const-string v13, "CLEARED"
 
-    const/4 v8, 0x6
+    const/4 v14, 0x6
 
-    invoke-direct {v0, v1, v8}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v13, v14}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->CLEARED:Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v11, Lcom/bumptech/glide/request/GenericRequest$Status;->CLEARED:Lcom/bumptech/glide/request/GenericRequest$Status;
 
     .line 56
-    new-instance v0, Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-instance v13, Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const-string v1, "PAUSED"
+    const-string v15, "PAUSED"
 
-    const/4 v9, 0x7
+    const/4 v14, 0x7
 
-    invoke-direct {v0, v1, v9}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v13, v15, v14}, Lcom/bumptech/glide/request/GenericRequest$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/bumptech/glide/request/GenericRequest$Status;->PAUSED:Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v13, Lcom/bumptech/glide/request/GenericRequest$Status;->PAUSED:Lcom/bumptech/glide/request/GenericRequest$Status;
 
-    const/16 v1, 0x8
+    const/16 v15, 0x8
 
-    new-array v1, v1, [Lcom/bumptech/glide/request/GenericRequest$Status;
+    new-array v15, v15, [Lcom/bumptech/glide/request/GenericRequest$Status;
+
+    aput-object v0, v15, v2
+
+    aput-object v1, v15, v4
+
+    aput-object v3, v15, v6
+
+    aput-object v5, v15, v8
+
+    aput-object v7, v15, v10
+
+    aput-object v9, v15, v12
+
+    const/4 v0, 0x6
+
+    aput-object v11, v15, v0
+
+    aput-object v13, v15, v14
 
     .line 40
-    sget-object v10, Lcom/bumptech/glide/request/GenericRequest$Status;->PENDING:Lcom/bumptech/glide/request/GenericRequest$Status;
-
-    aput-object v10, v1, v2
-
-    sget-object v2, Lcom/bumptech/glide/request/GenericRequest$Status;->RUNNING:Lcom/bumptech/glide/request/GenericRequest$Status;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/bumptech/glide/request/GenericRequest$Status;->WAITING_FOR_SIZE:Lcom/bumptech/glide/request/GenericRequest$Status;
-
-    aput-object v2, v1, v4
-
-    sget-object v2, Lcom/bumptech/glide/request/GenericRequest$Status;->COMPLETE:Lcom/bumptech/glide/request/GenericRequest$Status;
-
-    aput-object v2, v1, v5
-
-    sget-object v2, Lcom/bumptech/glide/request/GenericRequest$Status;->FAILED:Lcom/bumptech/glide/request/GenericRequest$Status;
-
-    aput-object v2, v1, v6
-
-    sget-object v2, Lcom/bumptech/glide/request/GenericRequest$Status;->CANCELLED:Lcom/bumptech/glide/request/GenericRequest$Status;
-
-    aput-object v2, v1, v7
-
-    sget-object v2, Lcom/bumptech/glide/request/GenericRequest$Status;->CLEARED:Lcom/bumptech/glide/request/GenericRequest$Status;
-
-    aput-object v2, v1, v8
-
-    aput-object v0, v1, v9
-
-    sput-object v1, Lcom/bumptech/glide/request/GenericRequest$Status;->$VALUES:[Lcom/bumptech/glide/request/GenericRequest$Status;
+    sput-object v15, Lcom/bumptech/glide/request/GenericRequest$Status;->$VALUES:[Lcom/bumptech/glide/request/GenericRequest$Status;
 
     return-void
 .end method

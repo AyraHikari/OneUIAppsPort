@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +31,7 @@
 .method public read(Ljava/lang/String;)Ljava/io/File;
     .locals 1
 
-    .line 57
+    .line 2
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -42,13 +41,8 @@
 
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 44
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/FileTransform;->read(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object p1
@@ -59,7 +53,7 @@
 .method public write(Ljava/io/File;)Ljava/lang/String;
     .locals 0
 
-    .line 71
+    .line 2
     invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p1
@@ -69,13 +63,8 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 44
+    .line 1
     check-cast p1, Ljava/io/File;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/FileTransform;->write(Ljava/io/File;)Ljava/lang/String;

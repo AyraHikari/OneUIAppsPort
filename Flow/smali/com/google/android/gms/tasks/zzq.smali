@@ -1,5 +1,6 @@
 .class interface abstract Lcom/google/android/gms/tasks/zzq;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-tasks@@18.0.1"
 
 
 # annotations
@@ -14,10 +15,10 @@
 
 
 # virtual methods
-.method public abstract cancel()V
+.method public abstract zzc()V
 .end method
 
-.method public abstract onComplete(Lcom/google/android/gms/tasks/Task;)V
+.method public abstract zzd(Lcom/google/android/gms/tasks/Task;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

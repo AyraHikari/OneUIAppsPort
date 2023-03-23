@@ -62,17 +62,16 @@
 
     const-string v0, "address"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "proxy"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "socketAddress"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
@@ -88,16 +87,7 @@
 # virtual methods
 .method public final -deprecated_address()Lokhttp3/Address;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "address"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 51
     iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     return-object v0
@@ -105,16 +95,7 @@
 
 .method public final -deprecated_proxy()Ljava/net/Proxy;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "proxy"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 58
     iget-object v0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
     return-object v0
@@ -122,16 +103,7 @@
 
 .method public final -deprecated_socketAddress()Ljava/net/InetSocketAddress;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "socketAddress"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 65
     iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     return-object v0
@@ -140,7 +112,6 @@
 .method public final address()Lokhttp3/Address;
     .locals 1
 
-    .line 35
     iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     return-object v0
@@ -149,7 +120,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 76
     instance-of v0, p1, Lokhttp3/Route;
 
     if-eqz v0, :cond_0
@@ -160,7 +130,7 @@
 
     iget-object v1, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -170,7 +140,7 @@
 
     iget-object v1, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -180,7 +150,7 @@
 
     iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -200,7 +170,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 84
+    .line 1
     iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     invoke-virtual {v0}, Lokhttp3/Address;->hashCode()I
@@ -213,7 +183,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 85
+    .line 2
     iget-object v0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
     invoke-virtual {v0}, Ljava/net/Proxy;->hashCode()I
@@ -224,7 +194,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 86
+    .line 3
     iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     invoke-virtual {v0}, Ljava/net/InetSocketAddress;->hashCode()I
@@ -239,7 +209,6 @@
 .method public final proxy()Ljava/net/Proxy;
     .locals 1
 
-    .line 42
     iget-object v0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
     return-object v0
@@ -248,7 +217,6 @@
 .method public final requiresTunnel()Z
     .locals 2
 
-    .line 73
     iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     invoke-virtual {v0}, Lokhttp3/Address;->sslSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
@@ -281,7 +249,6 @@
 .method public final socketAddress()Ljava/net/InetSocketAddress;
     .locals 1
 
-    .line 43
     iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     return-object v0
@@ -290,7 +257,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 90
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -299,19 +265,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     iget-object v1, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
     const/16 v1, 0x7d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

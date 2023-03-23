@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x1
     name = "Sequence"
 .end annotation
 
@@ -28,20 +28,20 @@
 # instance fields
 .field private cursor:I
 
-.field final synthetic this$1:Lorg/simpleframework/xml/util/Resolver$Stack;
+.field public final synthetic this$1:Lorg/simpleframework/xml/util/Resolver$Stack;
 
 
 # direct methods
 .method public constructor <init>(Lorg/simpleframework/xml/util/Resolver$Stack;)V
     .locals 0
 
-    .line 376
+    .line 1
     iput-object p1, p0, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->this$1:Lorg/simpleframework/xml/util/Resolver$Stack;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 377
-    invoke-virtual {p1}, Lorg/simpleframework/xml/util/Resolver$Stack;->size()I
+    .line 2
+    invoke-virtual {p1}, Ljava/util/LinkedList;->size()I
 
     move-result p1
 
@@ -55,7 +55,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 402
     iget v0, p0, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->cursor:I
 
     if-lez v0, :cond_0
@@ -74,7 +73,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 364
+    .line 1
     invoke-virtual {p0}, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->next()Lorg/simpleframework/xml/util/Match;
 
     move-result-object v0
@@ -90,14 +89,14 @@
         }
     .end annotation
 
-    .line 388
+    .line 2
     invoke-virtual {p0}, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 389
+    .line 3
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->this$1:Lorg/simpleframework/xml/util/Resolver$Stack;
 
     iget v1, p0, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->cursor:I
@@ -106,7 +105,7 @@
 
     iput v1, p0, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->cursor:I
 
-    invoke-virtual {v0, v1}, Lorg/simpleframework/xml/util/Resolver$Stack;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/LinkedList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -123,7 +122,6 @@
 .method public remove()V
     .locals 2
 
-    .line 411
     iget-object v0, p0, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->this$1:Lorg/simpleframework/xml/util/Resolver$Stack;
 
     iget v1, p0, Lorg/simpleframework/xml/util/Resolver$Stack$Sequence;->cursor:I

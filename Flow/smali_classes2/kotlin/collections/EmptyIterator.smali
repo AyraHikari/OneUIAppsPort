@@ -9,11 +9,6 @@
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010*\n\u0002\u0010\u0001\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0003\u0008\u00c0\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0003J\t\u0010\u0004\u001a\u00020\u0005H\u0096\u0002J\u0008\u0010\u0006\u001a\u00020\u0005H\u0016J\t\u0010\u0007\u001a\u00020\u0002H\u0096\u0002J\u0008\u0010\u0008\u001a\u00020\tH\u0016J\u0008\u0010\n\u001a\u00020\u0002H\u0016J\u0008\u0010\u000b\u001a\u00020\tH\u0016\u00a8\u0006\u000c"
     }
@@ -35,9 +30,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -49,7 +45,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 14
     new-instance v0, Lkotlin/collections/EmptyIterator;
 
     invoke-direct {v0}, Lkotlin/collections/EmptyIterator;-><init>()V
@@ -62,7 +57,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 14
+    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,7 +65,7 @@
 
 
 # virtual methods
-.method public synthetic add(Ljava/lang/Object;)V
+.method public bridge synthetic add(Ljava/lang/Object;)V
     .locals 1
 
     new-instance p1, Ljava/lang/UnsupportedOperationException;
@@ -113,7 +108,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 14
+    .line 15
     invoke-virtual {p0}, Lkotlin/collections/EmptyIterator;->next()Ljava/lang/Void;
 
     move-result-object v0
@@ -124,12 +119,10 @@
 .method public next()Ljava/lang/Void;
     .locals 1
 
-    .line 19
+    .line 20
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 .end method
@@ -145,7 +138,7 @@
 .method public bridge synthetic previous()Ljava/lang/Object;
     .locals 1
 
-    .line 14
+    .line 15
     invoke-virtual {p0}, Lkotlin/collections/EmptyIterator;->previous()Ljava/lang/Void;
 
     move-result-object v0
@@ -156,12 +149,10 @@
 .method public previous()Ljava/lang/Void;
     .locals 1
 
-    .line 20
+    .line 21
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 .end method
@@ -186,7 +177,7 @@
     throw v0
 .end method
 
-.method public synthetic set(Ljava/lang/Object;)V
+.method public bridge synthetic set(Ljava/lang/Object;)V
     .locals 1
 
     new-instance p1, Ljava/lang/UnsupportedOperationException;

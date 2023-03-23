@@ -28,8 +28,20 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$top",
+            "val$bottom"
+        }
+    .end annotation
 
-    .line 699
+    .line 736
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$6;->this$0:Landroidx/appcompat/app/AlertController;
 
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$6;->val$top:Landroid/view/View;
@@ -46,7 +58,7 @@
 .method public run()V
     .locals 3
 
-    .line 702
+    .line 739
     iget-object v0, p0, Landroidx/appcompat/app/AlertController$6;->this$0:Landroidx/appcompat/app/AlertController;
 
     iget-object v0, v0, Landroidx/appcompat/app/AlertController;->mListView:Landroid/widget/ListView;

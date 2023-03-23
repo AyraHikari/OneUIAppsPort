@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 125
+    .line 126
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onWidiConnected(Landroid/net/wifi/p2p/WifiP2pInfo;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "wifiP2pInfo"
+        }
+    .end annotation
 
-    .line 133
+    .line 134
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$IPlayerCallback;
@@ -47,7 +63,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 134
+    .line 135
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$IPlayerCallback;
@@ -65,12 +81,12 @@
 .method public onWidiConnectionClosed()V
     .locals 2
 
-    .line 149
+    .line 150
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->finishAll()V
 
-    .line 151
+    .line 152
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object v0
@@ -79,7 +95,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stopAsync(Ljava/lang/Runnable;)V
 
-    .line 153
+    .line 154
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$IPlayerCallback;
@@ -88,7 +104,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 154
+    .line 155
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$IPlayerCallback;
@@ -105,13 +121,21 @@
 
 .method public onWidiConnectionFailed(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceAddress"
+        }
+    .end annotation
 
-    .line 139
+    .line 140
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->finishAll()V
 
-    .line 141
+    .line 142
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->getInstance()Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;
 
     move-result-object p1
@@ -120,7 +144,7 @@
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/WidiManager;->stopAsync(Ljava/lang/Runnable;)V
 
-    .line 143
+    .line 144
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$IPlayerCallback;
@@ -129,7 +153,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 144
+    .line 145
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$1;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->access$000(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)Lcom/samsung/android/galaxycontinuity/activities/tablet/MirroringActivity$IPlayerCallback;
@@ -146,6 +170,14 @@
 
 .method public onWidiDiscoveryStarted(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceAddress"
+        }
+    .end annotation
 
     return-void
 .end method

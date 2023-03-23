@@ -6,7 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;
+        Landroidx/core/app/BundleCompat$Api18Impl;,
+        Landroidx/core/app/BundleCompat$BeforeApi18Impl;
     }
 .end annotation
 
@@ -15,7 +16,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 94
+    .line 98
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,24 +24,34 @@
 
 .method public static getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bundle",
+            "key"
+        }
+    .end annotation
 
-    .line 105
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 109
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
     if-lt v0, v1, :cond_0
 
-    .line 106
-    invoke-virtual {p0, p1}, Landroid/os/Bundle;->getBinder(Ljava/lang/String;)Landroid/os/IBinder;
+    .line 110
+    invoke-static {p0, p1}, Landroidx/core/app/BundleCompat$Api18Impl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object p0
 
     return-object p0
 
-    .line 108
+    .line 112
     :cond_0
-    invoke-static {p0, p1}, Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+    invoke-static {p0, p1}, Landroidx/core/app/BundleCompat$BeforeApi18Impl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object p0
 
@@ -49,22 +60,34 @@
 
 .method public static putBinder(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bundle",
+            "key",
+            "binder"
+        }
+    .end annotation
 
-    .line 121
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 125
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
     if-lt v0, v1, :cond_0
 
-    .line 122
-    invoke-virtual {p0, p1, p2}, Landroid/os/Bundle;->putBinder(Ljava/lang/String;Landroid/os/IBinder;)V
+    .line 126
+    invoke-static {p0, p1, p2}, Landroidx/core/app/BundleCompat$Api18Impl;->putBinder(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
 
     goto :goto_0
 
-    .line 124
+    .line 128
     :cond_0
-    invoke-static {p0, p1, p2}, Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->putBinder(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
+    invoke-static {p0, p1, p2}, Landroidx/core/app/BundleCompat$BeforeApi18Impl;->putBinder(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
 
     :goto_0
     return-void

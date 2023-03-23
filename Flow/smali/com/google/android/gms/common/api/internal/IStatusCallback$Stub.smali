@@ -1,5 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/api/internal/IStatusCallback$Stub;
 .super Lcom/google/android/gms/internal/base/zab;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
 .implements Lcom/google/android/gms/common/api/internal/IStatusCallback;
@@ -13,12 +14,6 @@
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x409
     name = "Stub"
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/google/android/gms/common/api/internal/IStatusCallback$Stub$zaa;
-    }
 .end annotation
 
 
@@ -46,33 +41,32 @@
     :cond_0
     const-string v0, "com.google.android.gms.common.api.internal.IStatusCallback"
 
-    .line 5
+    .line 1
     invoke-interface {p0, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
     move-result-object v0
 
-    .line 6
+    .line 2
     instance-of v1, v0, Lcom/google/android/gms/common/api/internal/IStatusCallback;
 
     if-eqz v1, :cond_1
 
-    .line 7
+    .line 3
     check-cast v0, Lcom/google/android/gms/common/api/internal/IStatusCallback;
 
     return-object v0
 
-    .line 8
     :cond_1
-    new-instance v0, Lcom/google/android/gms/common/api/internal/IStatusCallback$Stub$zaa;
+    new-instance v0, Lcom/google/android/gms/common/api/internal/zaby;
 
-    invoke-direct {v0, p0}, Lcom/google/android/gms/common/api/internal/IStatusCallback$Stub$zaa;-><init>(Landroid/os/IBinder;)V
+    invoke-direct {v0, p0}, Lcom/google/android/gms/common/api/internal/zaby;-><init>(Landroid/os/IBinder;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method protected dispatchTransaction(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method protected final zaa(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -84,7 +78,7 @@
 
     if-ne p1, p3, :cond_0
 
-    .line 10
+    .line 1
     sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-static {p2, p1}, Lcom/google/android/gms/internal/base/zac;->zaa(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
@@ -93,7 +87,7 @@
 
     check-cast p1, Lcom/google/android/gms/common/api/Status;
 
-    .line 11
+    .line 2
     invoke-virtual {p0, p1}, Lcom/google/android/gms/common/api/internal/IStatusCallback$Stub;->onResult(Lcom/google/android/gms/common/api/Status;)V
 
     return p3

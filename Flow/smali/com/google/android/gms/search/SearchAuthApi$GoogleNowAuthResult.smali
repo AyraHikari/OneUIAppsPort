@@ -1,5 +1,6 @@
 .class public interface abstract Lcom/google/android/gms/search/SearchAuthApi$GoogleNowAuthResult;
 .super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 # interfaces
 .implements Lcom/google/android/gms/common/api/Result;

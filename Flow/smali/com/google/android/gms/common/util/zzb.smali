@@ -1,30 +1,29 @@
 .class public final Lcom/google/android/gms/common/util/zzb;
 .super Ljava/lang/Object;
-
-
-# static fields
-.field private static zzgx:Ljava/util/regex/Pattern;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
+.method public static zza()Z
+    .locals 2
 
-    return-void
-.end method
+    .line 1
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-.method public static zzc(I)I
-    .locals 1
+    move-result-object v0
 
-    const/4 v0, -0x1
+    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
-    if-ne p0, v0, :cond_0
+    move-result-object v1
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
 
     return v0
 
-    .line 3
     :cond_0
-    div-int/lit16 p0, p0, 0x3e8
+    const/4 v0, 0x0
 
-    return p0
+    return v0
 .end method

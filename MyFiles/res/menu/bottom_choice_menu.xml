@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/bottom_menu_move" android:id="@id/menu_move" android:title="@string/menu_move" android:iconTint="@color/color_primary" app:contentDescription="@string/menu_move" app:showAsAction="always" />
+    <item android:icon="@drawable/bottom_menu_copy" android:id="@id/menu_copy" android:title="@string/menu_copy" app:contentDescription="@string/menu_copy" app:showAsAction="always" />
+    <item android:icon="@drawable/bottom_menu_share" android:id="@id/menu_share" android:title="@string/menu_share" app:contentDescription="@string/menu_share" app:showAsAction="always" />
+    <item android:icon="@drawable/bottom_menu_delete" android:id="@id/menu_delete" android:title="@string/menu_delete" app:contentDescription="@string/menu_delete" app:showAsAction="always" />
+    <item android:id="@id/menu_details" android:title="@string/menu_details" app:contentDescription="@string/menu_details" app:showAsAction="never" />
+    <item android:id="@id/menu_open_with" android:title="@string/menu_open_with" app:contentDescription="@string/menu_open_with" app:showAsAction="never" />
+    <item android:id="@id/menu_open_in_new_window" android:title="@string/menu_open_in_new_window" app:contentDescription="@string/menu_open_in_new_window" app:showAsAction="never" />
+    <item android:id="@id/menu_rename" android:title="@string/menu_rename" app:contentDescription="@string/menu_rename" app:showAsAction="never" />
+    <item android:id="@id/menu_add_to_home_screen" android:visible="false" android:title="@string/menu_add_to_home_screen" app:contentDescription="@string/menu_add_to_home_screen" app:showAsAction="never" />
+    <item android:id="@id/menu_compress" android:visible="false" android:title="@string/menu_compress" app:showAsAction="never" />
+    <item android:id="@id/menu_extract" android:visible="false" android:title="@string/menu_extract" app:showAsAction="never" />
+    <item android:id="@id/menu_extract_to_current_folder" android:visible="false" android:title="@string/menu_extract_to_current_folder" app:showAsAction="never" />
+    <item android:id="@id/menu_move_to_secure_folder" android:visible="false" android:title="@string/menu_move_to_secure_folder_ps" app:showAsAction="never" />
+    <item android:id="@id/menu_move_to_knox" android:visible="false" android:title="@string/menu_move" app:showAsAction="never" />
+    <item android:id="@id/menu_move_to_workspace" android:visible="false" android:title="@string/menu_move_to_ps" app:showAsAction="never" />
+    <item android:id="@id/menu_move_to_personal" android:visible="false" android:title="@string/menu_move_to_personal_mode" app:showAsAction="never" />
+    <item android:id="@id/menu_move_out_of_secure_folder" android:visible="false" android:title="@string/menu_move_out_of_secure_folder_ps" app:showAsAction="never" />
+    <item android:id="@id/menu_show_in_folder" android:visible="false" android:title="@string/menu_show_in_folder" app:showAsAction="never" />
+</menu>

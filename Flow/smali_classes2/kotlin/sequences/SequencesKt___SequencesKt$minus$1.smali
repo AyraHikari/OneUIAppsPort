@@ -25,11 +25,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010(\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00028\u00000\u0001J\u000f\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0003H\u0096\u0002\u00a8\u0006\u0004"
     }
@@ -43,16 +38,30 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
 .field final synthetic $element:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
 
 .field final synthetic $this_minus:Lkotlin/sequences/Sequence;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/sequences/Sequence<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -62,17 +71,15 @@
         value = {
             "(",
             "Lkotlin/sequences/Sequence<",
-            "+TT;>;",
-            "Ljava/lang/Object;",
-            ")V"
+            "+TT;>;TT;)V"
         }
     .end annotation
 
-    .line 1610
     iput-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;->$this_minus:Lkotlin/sequences/Sequence;
 
     iput-object p2, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;->$element:Ljava/lang/Object;
 
+    .line 2429
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -81,7 +88,7 @@
 
 # virtual methods
 .method public iterator()Ljava/util/Iterator;
-    .locals 3
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -90,21 +97,19 @@
         }
     .end annotation
 
-    .line 1612
+    .line 2431
     new-instance v0, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     invoke-direct {v0}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
-    const/4 v1, 0x0
-
-    iput-boolean v1, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
-
-    .line 1613
+    .line 2432
     iget-object v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;->$this_minus:Lkotlin/sequences/Sequence;
 
     new-instance v2, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1$iterator$1;
 
-    invoke-direct {v2, p0, v0}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1$iterator$1;-><init>(Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;Lkotlin/jvm/internal/Ref$BooleanRef;)V
+    iget-object v3, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;->$element:Ljava/lang/Object;
+
+    invoke-direct {v2, v0, v3}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1$iterator$1;-><init>(Lkotlin/jvm/internal/Ref$BooleanRef;Ljava/lang/Object;)V
 
     check-cast v2, Lkotlin/jvm/functions/Function1;
 

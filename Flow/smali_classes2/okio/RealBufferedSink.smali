@@ -28,22 +28,15 @@
 
     iput-object v0, p0, Lokio/RealBufferedSink;->buffer:Lokio/Buffer;
 
-    if-eqz p1, :cond_0
+    const-string/jumbo v0, "sink == null"
+
+    .line 30
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 31
     iput-object p1, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
 
     return-void
-
-    .line 30
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "sink == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
@@ -92,9 +85,7 @@
 
     iget-object v2, p0, Lokio/RealBufferedSink;->buffer:Lokio/Buffer;
 
-    iget-object v3, p0, Lokio/RealBufferedSink;->buffer:Lokio/Buffer;
-
-    iget-wide v3, v3, Lokio/Buffer;->size:J
+    iget-wide v3, v2, Lokio/Buffer;->size:J
 
     invoke-interface {v1, v2, v3, v4}, Lokio/Sink;->write(Lokio/Buffer;J)V
     :try_end_0
@@ -333,13 +324,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ")"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -615,7 +612,7 @@
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "source == null"
+    const-string/jumbo v0, "source == null"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

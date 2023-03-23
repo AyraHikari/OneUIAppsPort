@@ -1,81 +1,123 @@
-.class public abstract Lcom/google/android/gms/internal/icing/zzao;
-.super Lcom/google/android/gms/internal/icing/zza;
+.class public final Lcom/google/android/gms/internal/icing/zzao;
+.super Lcom/google/android/gms/internal/icing/zzcx;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 # interfaces
-.implements Lcom/google/android/gms/internal/icing/zzam;
+.implements Lcom/google/android/gms/internal/icing/zzef;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/internal/icing/zzcx<",
+        "Lcom/google/android/gms/internal/icing/zzap;",
+        "Lcom/google/android/gms/internal/icing/zzao;",
+        ">;",
+        "Lcom/google/android/gms/internal/icing/zzef;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>()V
+.method private constructor <init>()V
     .locals 1
 
-    const-string v0, "com.google.android.gms.search.internal.ISearchAuthCallbacks"
-
     .line 1
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/icing/zza;-><init>(Ljava/lang/String;)V
+    invoke-static {}, Lcom/google/android/gms/internal/icing/zzap;->zzb()Lcom/google/android/gms/internal/icing/zzap;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/icing/zzcx;-><init>(Lcom/google/android/gms/internal/icing/zzda;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/google/android/gms/internal/icing/zzam;)V
+    .locals 0
+
+    .line 2
+    invoke-static {}, Lcom/google/android/gms/internal/icing/zzap;->zzb()Lcom/google/android/gms/internal/icing/zzap;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/icing/zzcx;-><init>(Lcom/google/android/gms/internal/icing/zzda;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final dispatchTransaction(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final zza(Ljava/lang/String;)Lcom/google/android/gms/internal/icing/zzao;
+    .locals 1
 
-    const/4 p3, 0x1
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzcx;->zzb:Z
 
-    if-eq p1, p3, :cond_1
+    if-eqz v0, :cond_0
 
-    const/4 p4, 0x2
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzcx;->zzg()V
 
-    if-eq p1, p4, :cond_0
+    const/4 v0, 0x0
 
-    const/4 p1, 0x0
+    iput-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzcx;->zzb:Z
 
-    return p1
-
-    .line 8
     :cond_0
-    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzao;->zza:Lcom/google/android/gms/internal/icing/zzda;
 
-    invoke-static {p2, p1}, Lcom/google/android/gms/internal/icing/zzd;->zza(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    .line 2
+    check-cast v0, Lcom/google/android/gms/internal/icing/zzap;
 
-    move-result-object p1
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/icing/zzap;->zzc(Lcom/google/android/gms/internal/icing/zzap;Ljava/lang/String;)V
 
-    check-cast p1, Lcom/google/android/gms/common/api/Status;
+    return-object p0
+.end method
 
-    .line 9
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/icing/zzao;->zzb(Lcom/google/android/gms/common/api/Status;)V
+.method public final zzb(Ljava/lang/String;)Lcom/google/android/gms/internal/icing/zzao;
+    .locals 1
 
-    goto :goto_0
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzcx;->zzb:Z
 
-    .line 4
-    :cond_1
-    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+    if-eqz v0, :cond_0
 
-    invoke-static {p2, p1}, Lcom/google/android/gms/internal/icing/zzd;->zza(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzcx;->zzg()V
 
-    move-result-object p1
+    const/4 v0, 0x0
 
-    check-cast p1, Lcom/google/android/gms/common/api/Status;
+    iput-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzcx;->zzb:Z
 
-    .line 5
-    sget-object p4, Lcom/google/android/gms/search/GoogleNowAuthState;->CREATOR:Landroid/os/Parcelable$Creator;
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzao;->zza:Lcom/google/android/gms/internal/icing/zzda;
 
-    invoke-static {p2, p4}, Lcom/google/android/gms/internal/icing/zzd;->zza(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    .line 2
+    check-cast v0, Lcom/google/android/gms/internal/icing/zzap;
 
-    move-result-object p2
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/icing/zzap;->zzd(Lcom/google/android/gms/internal/icing/zzap;Ljava/lang/String;)V
 
-    check-cast p2, Lcom/google/android/gms/search/GoogleNowAuthState;
+    return-object p0
+.end method
 
-    .line 6
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/icing/zzao;->zza(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/search/GoogleNowAuthState;)V
+.method public final zzc(I)Lcom/google/android/gms/internal/icing/zzao;
+    .locals 1
 
-    :goto_0
-    return p3
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzcx;->zzb:Z
+
+    if-eqz v0, :cond_0
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzcx;->zzg()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzcx;->zzb:Z
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzao;->zza:Lcom/google/android/gms/internal/icing/zzda;
+
+    .line 2
+    check-cast v0, Lcom/google/android/gms/internal/icing/zzap;
+
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/icing/zzap;->zze(Lcom/google/android/gms/internal/icing/zzap;I)V
+
+    return-object p0
 .end method

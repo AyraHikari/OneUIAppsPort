@@ -126,7 +126,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "when l value specified, it may not be less than m value"
+    const-string/jumbo p2, "when l value specified, it may not be less than m value"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -136,7 +136,7 @@
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "when l value specified, it must satisfy 2^(l-1) <= p"
+    const-string/jumbo p2, "when l value specified, it must satisfy 2^(l-1) <= p"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

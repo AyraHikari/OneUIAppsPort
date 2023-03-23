@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field private layerRenderTimes:Ljava/util/Map;
+.field private final layerRenderTimes:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -314,7 +314,7 @@
     :cond_1
     invoke-virtual {v0, p2}, Lcom/airbnb/lottie/utils/MeanCalculator;->add(F)V
 
-    const-string v0, "root"
+    const-string v0, "__container"
 
     .line 55
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

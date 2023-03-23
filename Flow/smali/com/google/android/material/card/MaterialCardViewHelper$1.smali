@@ -1,11 +1,11 @@
 .class Lcom/google/android/material/card/MaterialCardViewHelper$1;
-.super Landroid/view/ViewOutlineProvider;
+.super Landroid/graphics/drawable/InsetDrawable;
 .source "MaterialCardViewHelper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/card/MaterialCardViewHelper;->createOutlineProvider(Landroid/view/View;)V
+    value = Lcom/google/android/material/card/MaterialCardViewHelper;->insetDrawable(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,64 +19,51 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/card/MaterialCardViewHelper;)V
-    .locals 0
+.method constructor <init>(Lcom/google/android/material/card/MaterialCardViewHelper;Landroid/graphics/drawable/Drawable;IIII)V
+    .locals 6
 
-    .line 272
+    .line 506
     iput-object p1, p0, Lcom/google/android/material/card/MaterialCardViewHelper$1;->this$0:Lcom/google/android/material/card/MaterialCardViewHelper;
 
-    invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
+    move-object v0, p0
+
+    move-object v1, p2
+
+    move v2, p3
+
+    move v3, p4
+
+    move v4, p5
+
+    move v5, p6
+
+    invoke-direct/range {v0 .. v5}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;IIII)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
-    .locals 3
+.method public getMinimumHeight()I
+    .locals 1
 
-    .line 275
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardViewHelper$1;->this$0:Lcom/google/android/material/card/MaterialCardViewHelper;
+    const/4 v0, -0x1
 
-    invoke-static {v0}, Lcom/google/android/material/card/MaterialCardViewHelper;->access$000(Lcom/google/android/material/card/MaterialCardViewHelper;)Landroid/graphics/Rect;
+    return v0
+.end method
 
-    move-result-object v0
+.method public getMinimumWidth()I
+    .locals 1
 
-    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
+    const/4 v0, -0x1
 
-    move-result v1
+    return v0
+.end method
 
-    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+.method public getPadding(Landroid/graphics/Rect;)Z
+    .locals 0
 
-    move-result p1
+    const/4 p1, 0x0
 
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v2, v2, v1, p1}, Landroid/graphics/Rect;->set(IIII)V
-
-    .line 276
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardViewHelper$1;->this$0:Lcom/google/android/material/card/MaterialCardViewHelper;
-
-    invoke-static {p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->access$100(Lcom/google/android/material/card/MaterialCardViewHelper;)Lcom/google/android/material/shape/MaterialShapeDrawable;
-
-    move-result-object p1
-
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardViewHelper$1;->this$0:Lcom/google/android/material/card/MaterialCardViewHelper;
-
-    invoke-static {v0}, Lcom/google/android/material/card/MaterialCardViewHelper;->access$000(Lcom/google/android/material/card/MaterialCardViewHelper;)Landroid/graphics/Rect;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setBounds(Landroid/graphics/Rect;)V
-
-    .line 277
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardViewHelper$1;->this$0:Lcom/google/android/material/card/MaterialCardViewHelper;
-
-    invoke-static {p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->access$100(Lcom/google/android/material/card/MaterialCardViewHelper;)Lcom/google/android/material/shape/MaterialShapeDrawable;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->getOutline(Landroid/graphics/Outline;)V
-
-    return-void
+    return p1
 .end method

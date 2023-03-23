@@ -43,6 +43,14 @@
 # direct methods
 .method public constructor <init>(Landroidx/room/RoomDatabase;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "__db"
+        }
+    .end annotation
 
     .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -78,6 +86,14 @@
 # virtual methods
 .method public delete(Lcom/samsung/android/galaxycontinuity/data/DragContent;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "dragContent"
+        }
+    .end annotation
 
     .line 129
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/DragContentDragContentDao_Impl;->__db:Landroidx/room/RoomDatabase;
@@ -126,6 +142,14 @@
 
 .method public findById(I)Lcom/samsung/android/galaxycontinuity/data/DragContent;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
     const-string v0, "SELECT * FROM DragContent WHERE uid IN (?)"
 
@@ -158,7 +182,7 @@
     move-result-object p1
 
     :try_start_0
-    const-string v1, "uid"
+    const-string/jumbo v1, "uid"
 
     .line 164
     invoke-static {p1, v1}, Landroidx/room/util/CursorUtil;->getColumnIndexOrThrow(Landroid/database/Cursor;Ljava/lang/String;)I
@@ -280,6 +304,14 @@
 
 .method public insert(Lcom/samsung/android/galaxycontinuity/data/DragContent;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "dragContent"
+        }
+    .end annotation
 
     .line 116
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/DragContentDragContentDao_Impl;->__db:Landroidx/room/RoomDatabase;
@@ -326,6 +358,14 @@
 
 .method public rowQuery(Landroidx/sqlite/db/SupportSQLiteQuery;)Landroid/database/Cursor;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "query"
+        }
+    .end annotation
 
     .line 192
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/DragContentDragContentDao_Impl;->__db:Landroidx/room/RoomDatabase;
@@ -339,6 +379,14 @@
 
 .method public update(Lcom/samsung/android/galaxycontinuity/data/DragContent;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "dragContent"
+        }
+    .end annotation
 
     .line 143
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/DragContentDragContentDao_Impl;->__db:Landroidx/room/RoomDatabase;

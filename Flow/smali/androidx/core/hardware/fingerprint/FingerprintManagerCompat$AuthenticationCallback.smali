@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 267
+    .line 242
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,6 +28,16 @@
 # virtual methods
 .method public onAuthenticationError(ILjava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "errMsgId",
+            "errString"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -40,12 +50,30 @@
 
 .method public onAuthenticationHelp(ILjava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "helpMsgId",
+            "helpString"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onAuthenticationSucceeded(Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$AuthenticationResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     return-void
 .end method

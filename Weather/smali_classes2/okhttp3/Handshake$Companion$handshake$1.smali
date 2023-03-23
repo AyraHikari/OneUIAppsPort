@@ -1,9 +1,9 @@
 .class final Lokhttp3/Handshake$Companion$handshake$1;
-.super Lkotlin/jvm/internal/Lambda;
+.super Loi/m;
 .source "Handshake.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lni/a;
 
 
 # annotations
@@ -12,14 +12,14 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function0<",
+        "Loi/m;",
+        "Lni/a<",
         "Ljava/util/List<",
         "+",
         "Ljava/security/cert/Certificate;",
@@ -52,18 +52,18 @@
 
 
 # instance fields
-.field final synthetic $peerCertificatesCopy:Ljava/util/List;
+.field public final synthetic $peerCertificatesCopy:Ljava/util/List;
 
 
 # direct methods
-.method constructor <init>(Ljava/util/List;)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
     iput-object p1, p0, Lokhttp3/Handshake$Companion$handshake$1;->$peerCertificatesCopy:Ljava/util/List;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    invoke-direct {p0, p1}, Loi/m;-><init>(I)V
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 143
+    .line 1
     invoke-virtual {p0}, Lokhttp3/Handshake$Companion$handshake$1;->invoke()Ljava/util/List;
 
     move-result-object v0
@@ -92,7 +92,7 @@
         }
     .end annotation
 
-    .line 167
+    .line 2
     iget-object v0, p0, Lokhttp3/Handshake$Companion$handshake$1;->$peerCertificatesCopy:Ljava/util/List;
 
     return-object v0

@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/search/SearchAuth$StatusCodes;
 .super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # annotations
@@ -29,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

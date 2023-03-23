@@ -46,8 +46,6 @@
     invoke-direct {p0}, Lcom/google/api/client/repackaged/com/google/common/base/AbstractIterator;-><init>()V
 
     .line 223
-    iget-object p1, p0, Lcom/google/api/client/repackaged/com/google/common/base/Optional$1$1;->this$0:Lcom/google/api/client/repackaged/com/google/common/base/Optional$1;
-
     iget-object p1, p1, Lcom/google/api/client/repackaged/com/google/common/base/Optional$1;->val$optionals:Ljava/lang/Iterable;
 
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;

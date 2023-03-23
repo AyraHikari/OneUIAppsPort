@@ -50,6 +50,17 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/ArrayList;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "iAppList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -102,7 +113,7 @@
 
     new-instance p2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
-    const v0, 0x7f100025
+    const v0, 0x7f110026
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
 
@@ -134,6 +145,14 @@
 # virtual methods
 .method public add(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "app"
+        }
+    .end annotation
 
     .line 108
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;->mAppList:Ljava/util/List;
@@ -244,6 +263,14 @@
 
 .method public getItem(I)Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 40
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;->mAppList:Ljava/util/List;
@@ -272,6 +299,14 @@
 
 .method public getItemId(I)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     int-to-long v0, p1
 
@@ -280,6 +315,14 @@
 
 .method public getItemViewType(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -288,6 +331,16 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "filterViewHolder",
+            "position"
+        }
+    .end annotation
 
     .line 26
     check-cast p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;
@@ -299,6 +352,16 @@
 
 .method public onBindViewHolder(Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "filterViewHolder",
+            "position"
+        }
+    .end annotation
 
     .line 65
     :try_start_0
@@ -464,6 +527,16 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "viewGroup",
+            "viewType"
+        }
+    .end annotation
 
     .line 26
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;
@@ -475,11 +548,21 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter$FilterViewHolder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "viewGroup",
+            "viewType"
+        }
+    .end annotation
 
     .line 50
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;->layoutInflater:Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0c006b
+    const v0, 0x7f0d008d
 
     const/4 v1, 0x0
 
@@ -509,6 +592,14 @@
 
 .method public remove(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "app"
+        }
+    .end annotation
 
     .line 114
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;->mAppList:Ljava/util/List;
@@ -530,6 +621,14 @@
 
 .method public setEnabled(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
     .line 141
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;->isEnabled:Z

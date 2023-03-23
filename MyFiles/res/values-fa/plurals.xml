@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">انتخاب بیشتر از %d مورد ممکن نیست.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">انتخاب بیشتر از %d مورد ممکن نیست.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">انتقال %d فایل به سطل زباله ممکن نیست</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">انتقال %d فایل به سطل زباله ممکن نیست</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">انتقال %d پوشه به ”سطل زباله“ ممکن نیست</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">انتقال %d پوشه به ”سطل زباله“ ممکن نیست</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">انتقال %d مورد به ”سطل زباله“ ممکن نیست</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">انتقال %d مورد به ”سطل زباله“ ممکن نیست</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d فایل از فایل‌های انتخابی حذف خواهد شد چون در cloud یا یک دستگاه ذخیره USB قرار دارند.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل از فایل‌های انتخابی حذف خواهد شد چون در cloud یا یک دستگاه ذخیره USB قرار دارد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d پوشه از پوشه‌های انتخابی حذف خواهد شد چون در cloud یا یک دستگاه ذخیره USB قرار دارند.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه از پوشه‌های انتخابی حذف خواهد شد چون در cloud یا یک دستگاه ذخیره USB قرار دارد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d مورد از موارد انتخابی حذف خواهد شد چون در cloud یا یک دستگاه ذخیره USB قرار دارند.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد از موارد انتخابی حذف خواهد شد چون در cloud یا یک دستگاه ذخیره USB قرار دارد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">در حال فشرده‌سازی %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال فشرده سازی %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">در حال فشرده‌سازی %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال فشرده‌سازی %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">در حال فشرده‌سازی %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال فشرده‌سازی %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">در حال فشرده‌سازی %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال فشرده‌سازی %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">در حال فشرده‌سازی %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال فشرده‌سازی %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">در حال فشرده‌سازی %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال فشرده‌سازی %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">در حال کپی کردن %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال کپی کردن %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">در حال کپی کردن %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال کپی کردن %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">در حال کپی کردن %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال کپی کردن %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">در حال کپی کردن %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال کپی کردن %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">در حال کپی کردن %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال کپی کردن %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">در حال کپی کردن %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال کپی کردن %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">%d فایل از تلفن شما حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل از تلفن شما حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">%d فایل از تبلت شما حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل از تبلت شما حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">%d پوشه از تلفن شما حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه از تلفن شما حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">%d پوشه از تبلت شما حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه از تبلت شما حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">%d مورد از تلفن شما حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد از تلفن شما حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">%d مورد از تبلت شما حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد از تبلت شما حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">در حال حذف %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال حذف %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">در حال حذف %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال حذف %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">حذف %d مورد از سطل زباله…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">حذف %d مورد از سطل زباله…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">در حال حذف %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال حذف %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">در حال استخراج %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال استخراج %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">در حال استخراج %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال استخراج %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">در حال استخراج %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال استخراج %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d فایل نیز به سطل زباله در %2$s منتقل می‌شود.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d فایل نیز به سطل زباله در %2$s منتقل می‌شود.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">در حال بازیابی %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال بازیابی %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d پوشه نیز به سطل زباله در %2$s منتقل خواهد شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d پوشه نیز به سطل زباله در %2$s منتقل خواهد شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">در حال بازیابی %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال بازیابی %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">محل ذخیره داخلی شما پر است. این %d فایل به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">محل ذخیره داخلی شما پر است. این %d فایل به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">محل ذخیره داخلی شما پر است. این %d پوشه به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">محل ذخیره داخلی شما پر است. این %d پوشه به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">محل ذخیره داخلی شما پر است. این %d مورد به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">محل ذخیره داخلی شما پر است. این %d مورد به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">محل ذخیره داخلی و کارت حافظه شما پر هستند. این %d فایل به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">محل ذخیره داخلی و کارت حافظه شما پر هستند. این %d فایل به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">محل ذخیره داخلی و کارت حافظه شما پر هستند. این %d پوشه به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">محل ذخیره داخلی و کارت حافظه شما پر هستند. این %d پوشه به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">محل ذخیره داخلی و کارت حافظه شما پر هستند. این %d مورد به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">محل ذخیره داخلی و کارت حافظه شما پر هستند. این %d مورد به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">در حال بازیابی %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال بازیابی %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d مورد نیز به سطل زباله در %2$s منتقل می‌شود.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d مورد نیز به سطل زباله در %2$s منتقل می‌شود.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">باز کردن بیشتر از %d پنجره برنامه ممکن نیست.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">باز کردن بیشتر از %d پنجره برنامه ممکن نیست.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d فایل به سطل زباله منتقل شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل به سطل زباله منتقل شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d فایل به سطل زباله منتقل شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل به سطل زباله منتقل شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d پوشه به سطل زباله منتقل شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه به سطل زباله منتقل شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d پوشه به سطل زباله منتقل شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه به سطل زباله منتقل شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d مورد به سطل زباله منتقل شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد به سطل زباله منتقل شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d مورد به سطل زباله منتقل شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد به سطل زباله منتقل شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">در حال انتقال %d فایل به سطل زباله…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d فایل به سطل زباله…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">در حال انتقال %d پوشه به سطل زباله…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d پوشه به سطل زباله…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">در حال انتقال %d مورد به سطل زباله…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d مورد به سطل زباله…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">در حال انتقال %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">در حال انتقال %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">در حال انتقال %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">در حال انتقال %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">در حال انتقال %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">در حال انتقال %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال انتقال %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d مورد فشرده شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد فشرده شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d مورد در %2$s کپی شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d مورد در %2$s کپی شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">پوشه و %d فایل موجود در آن حذف شود؟</item>
+        <item quantity="one">پوشه و فایل موجود در آن حذف شود؟</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d پوشه و %2$d فایل موجود در آن‌ها حذف شود؟</item>
+        <item quantity="one">پوشه و فایل موجود در آن حذف شود؟</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d مورد حذف شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد حذف شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">در حال دانلود %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال دانلود %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">در حال دانلود %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال دانلود %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">در حال دانلود %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال دانلود %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">اشتراک‌گذاری پوشه‌ها ممکن نیست. پوشه‌ها خالی است.</item>
+        <item quantity="one">اشتراک‌گذاری پوشه ممکن نیست. پوشه خالی است.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d فایل برای همیشه حذف خواهند شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل برای همیشه حذف خواهد شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d پوشه برای همیشه حذف خواهد شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه برای همیشه حذف خواهد شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d مورد استخراج شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد استخراج شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d فایل به موارد دلخواه اضافه شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل به موارد دلخواه اضافه شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d فایل از ”موارد دلخواه“ حذف شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل از ”موارد دلخواه“ حذف شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d پوشه به موارد دلخواه اضافه شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه به موارد دلخواه اضافه شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d پوشه از ”موارد دلخواه“ حذف شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه از ”موارد دلخواه“ حذف شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d مورد به موارد دلخواه اضافه شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد به موارد دلخواه اضافه شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d مورد از ”موارد دلخواه“ حذف شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد از ”موارد دلخواه“ حذف شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d مورد</item>
+        <item quantity="one">1 مورد</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d مورد</item>
+        <item quantity="one">%d مورد</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d مورد در کلیپ‌بورد کپی شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد در کلیپ‌بورد کپی شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d مورد به کلیپ‌بورد منتقل شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد به کلیپ‌بورد منتقل شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d مورد انتخاب شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد انتخاب شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d مورد به %2$s منتقل شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d مورد به %2$s منتقل شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d مورد به سطل زباله منتقل شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد به سطل زباله منتقل شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d مورد انتخاب شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد انتخاب شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">کارت حافظه داخلی شما پر است. این %d فایل به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">کارت حافظه داخلی شما پر است. این %d فایل به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">کارت حافظه داخلی شما پر است. این %d پوشه به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">کارت حافظه داخلی شما پر است. این %d پوشه به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">کارت حافظه داخلی شما پر است. این %d مورد به‌طور دائمی حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">کارت حافظه داخلی شما پر است. این %d مورد به‌طور دائمی حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">این فایل ظرف %d روز حذف خواهد شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">این فایل ظرف %d روز حذف خواهد شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">این پوشه ظرف %d روز حذف خواهد شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">این پوشه ظرف %d روز حذف خواهد شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d فایل برای همیشه حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل برای همیشه حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">در حال حذف %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال حذف %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">در حال بازیابی %d فایل…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال بازیابی %d فایل…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d پوشه برای همیشه حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشه برای همیشه حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">در حال حذف %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال حذف %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">در حال بازیابی %d پوشه…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال بازیابی %d پوشه…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d مورد برای همیشه حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد برای همیشه حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">در حال حذف %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال حذف %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">در حال بازیابی %d مورد…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">در حال بازیابی %d مورد…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">ظرف %d روز حذف می‌شود</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ظرف %d روز حذف می‌شود</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">نصب %d برنامه حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">نصب %d برنامه حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

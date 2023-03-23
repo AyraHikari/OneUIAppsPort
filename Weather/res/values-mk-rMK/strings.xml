@@ -33,6 +33,7 @@
     <string name="air_quality">Квалитет на воздухот</string>
     <string name="air_quality_next_tts">Подоцнежни дневни прогнози за квалитетот на воздухот</string>
     <string name="air_quality_previous_tts">Претходни дневни прогнози за квалитетот на воздухот</string>
+    <string name="alert_title">Предупредувања за временски непогоди</string>
     <string name="all_added_cities">Сите додадени градови</string>
     <string name="allow">Дозволи</string>
     <string name="allow_permission_in_settings">За да ја користите оваа функција, треба да овозможите дозволи во Поставувањата.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Дејството не е поддржано.</string>
     <string name="apply_daylight_saving_time">Примени летно сметање на времето?</string>
     <string name="as_possible_after_verification">Извештајот е пратен. Името на градот ќе се смени колку е можно побрзо по потврдата.</string>
+    <string name="auto_refresh_on_screen_description">Автоматски добивајте обновени информации за временските услови на секој час. Кога е ова вклучено, не можете рачно да обновувате.</string>
+    <string name="auto_refresh_on_the_go">Автоматско обновување во тек</string>
+    <string name="auto_refresh_on_the_go_advanced">Напредно</string>
+    <string name="auto_refresh_on_the_go_description">Добивајте почести ажурирања за временските услови кога возите моторно возило, велосипед, трчате или пешачите. Кога ова е вклучено, не можете рачно да обновувате.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Добивајте почести ажурирања за временските услови кога возите моторно возило, велосипед, трчате или пешачите.</string>
     <string name="btn_report">Приј.</string>
     <string name="button_finish">Заврши</string>
     <string name="button_tts">Копче</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Допрете двапати за повеќе информации.</string>
     <string name="china">Кина</string>
     <string name="cities_button">Градови</string>
+    <string name="city_added">Градот е додаден.</string>
     <string name="city_list_text">Градови</string>
     <string name="clear">Ведро</string>
     <string name="clear_then_cloudy">Ведро, па облачно</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Ставката е одвлечена на положба %d.</string>
     <string name="dragndroplist_drag_start">Почна да се влече ставката на положба %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Ставката на положба %d не може да се одвлече.</string>
+    <string name="drawer_tips">Совети за %s</string>
     <string name="drawer_tips_message">Допрете тука за да додадете, избришете и прередите локации. Исто така можете да додавате повеќе виџети за да прикажете различни локации на Почетниот екран.</string>
     <string name="drawer_tips_message_1">Допрете Управувај локации на долниот дел од ова мени за да додавате, бришете и прередувате локации.</string>
     <string name="drawer_tips_message_2">Можете да додадете повеќе од еден виџет на Почетниот екран за да се прикажат различни локации истовремено.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Видео со прогноза</string>
     <string name="format_km_per_hour">%s км/ч</string>
     <string name="format_m_per_hour">%s м/ч</string>
+    <string name="fri">Пет</string>
     <string name="general">Општо</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Добијте персонализирана содржина врз основа на тоа како го користите телефонот.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Добијте персонализирана содржина врз основа на тоа како го користите таблетот.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">да добив информации за временските услови, вклучително и Вашата моментална локација, од Временски услови</string>
     <string name="go_to_website">Оди на интернет-страница</string>
     <string name="goto_apps">Достапно е ново ажурирање. Да се инсталира сега?</string>
     <string name="goto_apps_later">Подоцна</string>
     <string name="goto_apps_now">Веднаш</string>
     <string name="goto_apps_update_title">Аларми за нови содржини</string>
     <string name="header_tts">Заглавје</string>
+    <string name="heavy">Тешко</string>
     <string name="heavy_rain">Силен дожд</string>
     <string name="heavy_rain_followed_by_intense_heat">Силен дожд следен од голема жештина</string>
     <string name="heavy_rain_followed_by_light_rain">Силен дожд следен од голема жештина</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Видливост</string>
     <string name="life_index_wind">Ветар</string>
     <string name="life_index_wind_force">Брзина на ветрот</string>
+    <string name="light">Светло</string>
     <string name="light_rain_followed_by_heavy_rain">Слаб дожд следен со силен дожд</string>
     <string name="light_rain_with_some_heavy_rain">Слаб дожд со местимичен силен дожд</string>
     <string name="link_tts">Врска</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Нема резултати.</string>
     <string name="message_service_not_available">Услугата не е достапна сега.</string>
     <string name="minus_tts">Минус</string>
+    <string name="mon">Пон</string>
     <string name="more">Уште</string>
     <string name="more_cuntact_us">Контактирајте со нас</string>
     <string name="more_information">Повеќе</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Допрете тука за да ја смените стандардната локација за временска прогноза и управувајте со сите Ваши локации.</string>
     <string name="new_version_available">Достапна е нова верзија на %s.</string>
     <string name="new_version_is_available">Достапна е нова верзија.</string>
+    <string name="news_menu_show_news">Прикажи вести</string>
+    <string name="news_opt_in_banner_title_text">Бидете во тек со тековните настани прикажувајќи вести на виџетот Временски услови.</string>
+    <string name="news_opt_in_popup_desc_text">Бидете во тек со светот прикажувајќи ги најновите наслови од %s на виџетот Временски услови.</string>
+    <string name="news_opt_in_popup_title_text">Видете ги вестите и временските услови во еден виџет</string>
+    <string name="news_request_agree_text">Допрете за да добивате вести од %s</string>
+    <string name="news_widget_bubble_text">Добијте вести со времето.</string>
+    <string name="news_widget_dummy_title">Денешната врвна приказна</string>
+    <string name="news_widget_new_dummy_title">5 работи што треба да ги знаете утрово</string>
+    <string name="news_widget_oobe_text">Доп. тука за да додад. вести.</string>
     <string name="next">Следен град</string>
+    <string name="next_btn">Следно</string>
     <string name="next_city">Допрете двапати за да ги видите информациите за времето за следниот град.</string>
     <string name="night_tts">Ноќ</string>
     <string name="no_application_available">Не се достапни апликации.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Нема информации за времето</string>
     <string name="not_in_use">Не е во употреба</string>
     <string name="not_now">Не сега</string>
+    <string name="not_now_btn">Не сега</string>
     <string name="not_selected">Не е одбрано</string>
     <string name="nothing_selected">Не е избрано ништо.</string>
     <string name="noti">Известување</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">За најбрзо и најпрецизно откривање локација, допрете ПОСТАВУВАЊА, па поставете го Начинот за лоцирање како GPS, Wi-Fi и мобилни мрежи.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">За најбрзо и најпрецизно откривање локација, допрете ПОСТАВУВАЊА, па поставете го Начинот за лоцирање како GPS и Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">За да ги видите локалните информации за времето, вклучете поставувања за Локации и осигурете се дека режимот е поставен на Голема прецизност.</string>
+    <string name="notification_alert_channel_name">Предупредувања за временски непогоди</string>
     <string name="notification_apps_update_channel_name">Ажурирај известувања</string>
     <string name="notification_auto_refresh_channel_name">Авт. обнов. на временски услови</string>
     <string name="notification_dex_channel_name">Времен. прогноза во Samsung DeX</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Отвори аплик.</string>
     <string name="open_source_licences">Лиценци за отворен код</string>
     <string name="other_locations">Други локации</string>
+    <string name="partly_sunny">Делумно сончево</string>
     <string name="paused">Паузирано</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d км/ч</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Врнежи: %d mm</string>
     <string name="preview">Преглед на %s</string>
     <string name="previous">Претходен град</string>
+    <string name="previous_btn">Претходно</string>
     <string name="previous_city">Допрете двапати за да ги видите информациите за времето за претходниот град.</string>
     <string name="privacy_policy">Полиса за приватност</string>
     <string name="probability_of_rain_text">Веројатност за дожд</string>
     <string name="protect_your_content">Заштитете ја содржината</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Радар и карти</string>
     <string name="rain">Дожд</string>
     <string name="rain_followed_by_intense_heat">Дожд следен од голема жештина</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">За да ги ажурирате временските информации, допрете ПОСТАВУВАЊА, одете во Информации за апликација > Дозволи, а потоа овозможете ги следниве дозволи и обидете се повторно:</string>
     <string name="runtime_location_permission_title">Овозможи дозволи</string>
     <string name="runtime_oem_grant_permission_desc">На апликацијата %s ѝ е овозможена дозвола за да пристапи до следното:</string>
+    <string name="sat">Саб</string>
     <string name="save_button">Зачувај</string>
     <string name="search_most_searched_for">Најпребарувани</string>
     <string name="search_tab_cities">Градови</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Достапна е нова содржина</string>
     <string name="sesl_material_overflow_badge_text_n">Н</string>
     <string name="sesl_more_item_label">Повеќе</string>
+    <string name="sesl_preferecne_badge_description">Ново известување</string>
     <string name="sesl_preferencecategory_added_title">Заглавје</string>
     <string name="sesl_search_hint">Пребарување</string>
     <string name="sesl_searchview_description_clear">Избриши поле за пребарување</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Проверете го мрежното поврзување и обидете се повторно.</string>
     <string name="st_offline">Офлајн</string>
     <string name="st_view_less">Види помалку</string>
+    <string name="status_off">Исклучено</string>
+    <string name="status_on">Вклучено</string>
+    <string name="sun">Нед</string>
     <string name="sunny">Сончево</string>
     <string name="sunny_with_some_clouds">Сончево со мала облачност</string>
     <string name="sunny_with_some_heavy_rain">Сончево со местимичен силен дожд</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Допрете тука за да ги вратите податоците за временските услови од стариот уред.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Допрете ПОВТОРНО за да се обидете повторно да ја најдете Вашата локација.</string>
     <string name="tap_setting_message_edge_panel">Вклучете Локација за да ја добиете локалната временска прогноза.</string>
+    <string name="tap_the_settings_icon">Допрете ја иконата за поставувања.</string>
     <string name="tap_to_get_the_weather">Допрете за да ги добиете временските услови</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Одредби и услови</string>
     <string name="the_latest_version">Најновата верзија веќе е инсталирана.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Ова исто така ќе се примени на известувањата и на Календарот.</string>
+    <string name="thu">Чет</string>
     <string name="tick_box_tts">Поле за штиклирање</string>
     <string name="ticked_tts">Штиклирано</string>
     <string name="time_am">АМ</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Секој час</string>
     <string name="title_select_locations">Бирање локации</string>
     <string name="title_theme">Тематика</string>
+    <string name="to_continue_agree_to_updated">За да продолжите, согласете се со нашите ажурирани %s.</string>
     <string name="to_get_local_weather_chn">"За да добивате информации за локалната временска прогноза, вашата тековна локација ќе се испрати на операторот на услуги за временска прогноза. (Ве молиме видете во %1$sОдредби и услови%2$s и %3$sПолиса за приватност%4$s на операторот).
 Другите апликации и услуги на вашиот уред може да пристапат до добиените податоци за временската прогноза за да ги покажат временските услови во тие апликации.
 За да ви овозможиме постојани информации за временските услови, Време ќе има пристап до вашата локација, дури и кога не ја користите апликацијата."</string>
     <string name="today">Денес</string>
+    <string name="try_it_out_btn">Испробајте</string>
+    <string name="tue">Вто</string>
+    <string name="turn_on_to_use_precise_location">За да ја користите оваа функција, треба да овозможите %s да пристапува до Вашата локација цело време и да вклучува Користи прецизна локација. Допрете Поставувања, а потоа одете во Дозволи > Локација.</string>
     <string name="tw_title_weather_broadcast">Емитувај</string>
-    <string name="unable_to_check_for_updates">Не може да се провери за ажурирања. Нема мрежно поврзување.</string>
+    <string name="unable_to_check_for_updates">Не може да се провери за ажурирања. Обидете се повторно подоцна.</string>
     <string name="unable_to_receive_info_msg">Не може да се примат информ.</string>
     <string name="unticked_tts">Отштиклирано</string>
     <string name="unused">Неупотребено</string>
     <string name="update">Ажурирај</string>
     <string name="update_abb8">Ажурирај</string>
     <string name="update_app">Ажурирајте апликација</string>
+    <string name="updated_tile_chn">Ажурирано: %s</string>
     <string name="updated_tts">%s е ажурирано</string>
+    <string name="use_current_location">Користи момент. локација</string>
     <string name="use_current_location_agree_popup">"За да добивате информации за локалната временска прогноза, вашата тековна локација ќе се испрати на операторот на услуги за временска прогноза. (Погледнете ја %1$sполисата за приватност%2$s на операторот.)
 Другите апликации и услуги на вашиот уред ќе можат да пристапат до добиените податоци за временската прогноза за да ги прикажуваат во тие апликации."</string>
     <string name="use_current_location_and_background_agree_popup">"За да добивате информации за локалната временска прогноза, вашата тековна локација ќе се испрати на операторот на услуги за временска прогноза. (Ве молиме видете ја политиката на %1$sПолиса за приватност%2$s.)
@@ -635,9 +677,16 @@
 Можете да го исклучите користењето на вашата локација така што ќе отидете во поставките на апликацијата Време."</string>
     <string name="use_current_location_body_msg_chn">"Прочитајте внимателно пред да ја користите „Време“:
 Ако сакате да ја знаете временската прогноза за вашата локација, ќе треба да дозволите оператор - трето лице да има континуиран пристап (дури и кога не ја користите услугата) до вашиот уред и стекнување одредени податоци, како што е наведено подолу. Внимателно прочитајте и разберете ги %1$sОдредбите и условите%2$s и %3$sПолисата за приватност%4$s на операторот - трето лице пред да дадете таква согласност. Можете да ја повлечете вашата согласност со исклучување на „Локација“ во менито Поставувања. Другите апликации и услуги на вашиот уред можат да пристапат до вчитаните податоци за временската прогноза за да ја прикажуваат временската прогноза во тие апликации и услуги."</string>
+    <string name="use_current_location_body_msg_kor">"Вашата тековна локација ќе се собира и користи за да се обезбедат некои функции на апликацијата Време, како што е добивање на Вашето локално време.
+
+За да обезбеди постојани информации за времето, оваа апликација редовно ќе ја обработува Вашата локација, дури и кога не ја користите апликацијата. Ако продолжите, се согласувате со собирањето и обработувањето на Вашата локација за горенаведените цели.
+
+Можете да ги сопрете собирањето и користењето на оваа локација во поставувањата за апликацијата Време."</string>
     <string name="use_current_location_body_purpose">Намена</string>
     <string name="use_current_location_body_purpose_content">За обезбедување информации за време за вашата сегашна локација</string>
     <string name="use_current_location_body_search_provider">Оператор</string>
+    <string name="use_current_location_continue">Продолжи</string>
+    <string name="use_current_location_not_now">Не сега</string>
     <string name="use_current_location_off_alert_popup">Ќе се отстранат моменталните информации за локацијата.</string>
     <string name="useful_informations">Животни совети и други извештаи</string>
     <string name="using_as">Користење како %s</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">Совети за време</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Сре</string>
     <string name="weekly_forecast">Дневно</string>
     <string name="widget_background">Заднина на виџет</string>
     <string name="widget_empty_text">Допрете за временски информации</string>
+    <string name="widget_location">Име на град</string>
     <string name="widget_name_4x1">Време и часовник</string>
     <string name="widget_setting">Поставувања</string>
     <string name="widget_setting_background_color">Боја на заднината</string>

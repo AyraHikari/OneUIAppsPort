@@ -25,8 +25,16 @@
 
 .method private getCmasServiceCategoryString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 721
+    .line 719
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -35,7 +43,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -47,19 +59,19 @@
 
     const-string v0, "Presidential"
 
-    .line 724
+    .line 722
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 725
+    .line 723
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
 
-    const v0, 0x7f10005b
+    const v0, 0x7f110069
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getString(I)Ljava/lang/String;
 
@@ -70,19 +82,19 @@
     :cond_0
     const-string v0, "Extreme"
 
-    .line 726
+    .line 724
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 727
+    .line 725
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
 
-    const v0, 0x7f10005a
+    const v0, 0x7f110068
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getString(I)Ljava/lang/String;
 
@@ -93,19 +105,19 @@
     :cond_1
     const-string v0, "Severe"
 
-    .line 728
+    .line 726
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 729
+    .line 727
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
 
-    const v0, 0x7f10005c
+    const v0, 0x7f11006a
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getString(I)Ljava/lang/String;
 
@@ -116,19 +128,19 @@
     :cond_2
     const-string v0, "Amber"
 
-    .line 730
+    .line 728
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 731
+    .line 729
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
 
-    const v0, 0x7f100058
+    const v0, 0x7f110066
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getString(I)Ljava/lang/String;
 
@@ -139,19 +151,19 @@
     :cond_3
     const-string v0, "CMASALL"
 
-    .line 732
+    .line 730
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 733
+    .line 731
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
 
-    const v0, 0x7f100059
+    const v0, 0x7f110067
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getString(I)Ljava/lang/String;
 
@@ -162,7 +174,7 @@
     :cond_4
     const-string p1, "none"
 
-    .line 736
+    .line 734
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -172,7 +184,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -223,6 +239,14 @@
 
 .method private getMMSAttachedFile(Ljava/lang/String;)[B
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "partID"
+        }
+    .end annotation
 
     .line 524
     new-instance v0, Ljava/lang/StringBuilder;
@@ -233,9 +257,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -411,6 +439,14 @@
 
 .method private getMMSMessage(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "partID"
+        }
+    .end annotation
 
     .line 550
     new-instance v0, Ljava/lang/StringBuilder;
@@ -421,9 +457,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -589,6 +629,15 @@
 
 .method private parseMMSContents(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 20
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msgID"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -638,7 +687,7 @@
 
     const-string v18, "_data"
 
-    const-string v19, "text"
+    const-string/jumbo v19, "text"
 
     .line 441
     filled-new-array/range {v12 .. v19}, [Ljava/lang/String;
@@ -673,11 +722,15 @@
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-interface {v4}, Landroid/database/Cursor;->getCount()I
 
     move-result v5
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -720,15 +773,21 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "| type : "
+    const-string/jumbo v7, "| type : "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     const-string v7, " |"
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -745,7 +804,7 @@
 
     if-nez v6, :cond_8
 
-    const-string v6, "text/plain"
+    const-string/jumbo v6, "text/plain"
 
     .line 464
     invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -765,9 +824,9 @@
 
     move-result-object v6
 
-    const-string v7, "|mms result length : "
+    const-string/jumbo v7, "|mms result length : "
 
-    const-string v8, "|"
+    const-string/jumbo v8, "|"
 
     if-eqz v6, :cond_2
 
@@ -776,9 +835,11 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v12, "|mms data length : "
+    const-string/jumbo v12, "|mms data length : "
 
     invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
 
     invoke-virtual {v6}, Ljava/lang/String;->length()I
 
@@ -786,9 +847,13 @@
 
     invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v9, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v6
 
@@ -805,6 +870,8 @@
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     if-nez v0, :cond_1
 
@@ -824,7 +891,11 @@
     :goto_0
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -835,7 +906,7 @@
     goto :goto_1
 
     :cond_2
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     .line 474
     invoke-interface {v4, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -853,13 +924,19 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v7
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v6
+
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -905,13 +982,19 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "| name : "
+    const-string/jumbo v9, "| name : "
 
     invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1020,13 +1103,19 @@
 
     invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v8
+
     const-string v9, "."
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v8
+
     invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v8
 
@@ -1042,13 +1131,19 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "| filename : "
+    const-string/jumbo v9, "| filename : "
 
     invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1081,7 +1176,15 @@
 .end method
 
 .method private parseMMSImage(Ljava/lang/String;)[B
-    .locals 8
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msgID"
+        }
+    .end annotation
 
     .line 410
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1092,18 +1195,22 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v5
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
 
     const-string p1, "content://mms/part"
 
     .line 411
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object v3
+    move-result-object v1
 
     .line 412
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -1112,15 +1219,15 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v0
+
+    const/4 v2, 0x0
 
     const/4 v4, 0x0
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    const/4 v7, 0x0
-
-    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
 
@@ -1232,9 +1339,17 @@
 .end method
 
 .method private parseMMSMessage(Ljava/lang/String;)Ljava/lang/String;
-    .locals 9
+    .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msgID"
+        }
+    .end annotation
 
-    const-string v0, "|"
+    const-string/jumbo v0, "|"
 
     .line 361
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1245,18 +1360,22 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v6
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
 
     const-string p1, "content://mms/part"
 
     .line 362
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 363
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -1265,15 +1384,15 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v1
+
+    const/4 v3, 0x0
 
     const/4 v5, 0x0
 
-    const/4 v7, 0x0
+    const/4 v6, 0x0
 
-    const/4 v8, 0x0
-
-    invoke-virtual/range {v3 .. v8}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
 
@@ -1287,9 +1406,11 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "|mms count : "
+    const-string/jumbo v3, "|mms count : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-interface {p1}, Landroid/database/Cursor;->getCount()I
 
@@ -1297,7 +1418,11 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1363,13 +1488,19 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "|mms type : "
+    const-string/jumbo v5, "|mms type : "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1377,7 +1508,7 @@
 
     invoke-static {v4}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    const-string v4, "text/plain"
+    const-string/jumbo v4, "text/plain"
 
     .line 378
     invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1400,7 +1531,7 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    const-string v4, "|mms result length : "
+    const-string/jumbo v4, "|mms result length : "
 
     if-eqz v3, :cond_4
 
@@ -1410,9 +1541,11 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "|mms data length : "
+    const-string/jumbo v6, "|mms data length : "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
 
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
@@ -1420,9 +1553,13 @@
 
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1439,6 +1576,8 @@
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     if-nez v1, :cond_3
 
@@ -1458,9 +1597,13 @@
     :goto_0
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1469,7 +1612,7 @@
     goto :goto_1
 
     :cond_4
-    const-string v2, "text"
+    const-string/jumbo v2, "text"
 
     .line 388
     invoke-interface {p1, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -1487,15 +1630,21 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1514,7 +1663,7 @@
     goto :goto_1
 
     :cond_6
-    const-string v0, "the cursor is null!!!"
+    const-string/jumbo v0, "the cursor is null!!!"
 
     .line 396
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
@@ -1567,6 +1716,14 @@
 
 .method private parseMMSNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msgID"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -1657,7 +1814,7 @@
 .method getLastMessageUnread()Lcom/samsung/android/galaxycontinuity/data/MessageData;
     .locals 6
 
-    const-string v0, "sms"
+    const-string/jumbo v0, "sms"
 
     const-string v1, ""
 
@@ -1720,6 +1877,16 @@
 
 .method public getLastMessageUnread(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/MessageData;
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "msgType",
+            "phoneNumber"
+        }
+    .end annotation
 
     const-string v0, "mms"
 
@@ -1732,11 +1899,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, "/inbox"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1803,7 +1976,11 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1820,56 +1997,27 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 665
     :goto_0
-    :try_start_1
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
+    if-eqz v1, :cond_8
 
     .line 666
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, ">>>>>>>>>>>>>>>>>>> count : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-interface {v1}, Landroid/database/Cursor;->getCount()I
-
-    move-result v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
-
-    :cond_1
-    if-eqz v1, :cond_9
-
-    .line 669
+    :try_start_1
     invoke-interface {v1}, Landroid/database/Cursor;->getCount()I
 
     move-result v3
 
-    if-lez v3, :cond_7
+    if-lez v3, :cond_6
 
-    .line 670
+    .line 667
     invoke-interface {v1}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v3
 
-    if-eqz v3, :cond_7
+    if-eqz v3, :cond_6
 
     const-string v3, "_id"
 
-    .line 671
+    .line 668
     invoke-interface {v1, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v3
@@ -1880,7 +2028,7 @@
 
     const-string v3, "date"
 
-    .line 672
+    .line 669
     invoke-interface {v1, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v3
@@ -1893,7 +2041,7 @@
 
     move-result-object v3
 
-    .line 674
+    .line 671
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1903,20 +2051,45 @@
 
     const-string v5, ""
 
-    if-eqz v4, :cond_2
+    if-eqz v4, :cond_1
 
-    .line 675
+    .line 672
     :try_start_2
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, ">>>>>>>>>>>>>>>>>>> count : "
+
+    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-interface {v1}, Landroid/database/Cursor;->getCount()I
+
+    move-result v4
+
+    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
+
+    .line 673
     invoke-direct {p0, v9}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->parseMMSNumber(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 676
+    .line 674
     invoke-direct {p0, v9}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->parseMMSMessage(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 677
+    .line 675
     invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v6
@@ -1929,7 +2102,7 @@
 
     move-result-object v3
 
-    .line 678
+    .line 676
     invoke-direct {p0, v9}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->parseMMSImage(Ljava/lang/String;)[B
 
     move-result-object v6
@@ -1946,19 +2119,19 @@
 
     goto :goto_1
 
-    :cond_2
-    const-string v4, "sms"
+    :cond_1
+    const-string/jumbo v4, "sms"
 
-    .line 679
+    .line 677
     invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_2
 
     const-string p2, "address"
 
-    .line 680
+    .line 678
     invoke-interface {v1, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result p2
@@ -1969,7 +2142,7 @@
 
     const-string v4, "body"
 
-    .line 681
+    .line 679
     invoke-interface {v1, v4}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v4
@@ -1986,14 +2159,14 @@
 
     goto :goto_1
 
-    :cond_3
+    :cond_2
     move-object v11, v3
 
     move-object v10, v5
 
     move-object v12, v10
 
-    .line 685
+    .line 683
     :goto_1
     invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->getCmasServiceCategoryString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2001,24 +2174,24 @@
 
     const-string v4, "none"
 
-    .line 686
+    .line 684
     invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_4
 
-    .line 687
+    .line 685
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/manager/ContactHelper;->getContactInfoData(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;
 
     move-result-object v3
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_3
 
-    .line 689
+    .line 687
     iget-object v4, v3, Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;->DisplayName:Ljava/lang/String;
 
-    .line 690
+    .line 688
     iget-object v5, v3, Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;->Photo:Ljava/lang/String;
 
     move-object v3, v5
@@ -2027,7 +2200,7 @@
 
     goto :goto_2
 
-    :cond_4
+    :cond_3
     move-object v3, v5
 
     :goto_2
@@ -2037,23 +2210,23 @@
 
     goto :goto_3
 
-    :cond_5
+    :cond_4
     move-object v6, v3
 
     move-object v7, v5
 
-    .line 696
+    .line 694
     :goto_3
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p2
 
-    if-eqz p2, :cond_6
+    if-eqz p2, :cond_5
 
     move-object v5, v6
 
-    .line 699
-    :cond_6
+    .line 697
+    :cond_5
     new-instance p2, Lcom/samsung/android/galaxycontinuity/data/MessageData;
 
     move-object v4, p2
@@ -2062,37 +2235,47 @@
 
     invoke-direct/range {v4 .. v12}, Lcom/samsung/android/galaxycontinuity/data/MessageData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V
 
-    .line 701
+    .line 699
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
-    .line 702
+    .line 700
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, ">>>> "
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ">>>> "
 
-    iget-object p1, p2, Lcom/samsung/android/galaxycontinuity/data/MessageData;->MsgText:Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    const-string p1, "- tick : "
+    iget-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/MessageData;->MsgText:Ljava/lang/String;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p2, Lcom/samsung/android/galaxycontinuity/data/MessageData;->Date:Ljava/lang/Long;
+    move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v0, "- tick : "
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    iget-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/MessageData;->Date:Ljava/lang/Long;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2100,11 +2283,11 @@
 
     goto :goto_4
 
-    :cond_7
+    :cond_6
     move-object p2, v2
 
-    .line 707
-    :cond_8
+    .line 705
+    :cond_7
     :goto_4
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
     :try_end_2
@@ -2113,43 +2296,46 @@
 
     move-object v2, p2
 
-    :cond_9
-    if-eqz v1, :cond_a
-
-    .line 714
-    invoke-interface {v1}, Landroid/database/Cursor;->close()V
-
-    :cond_a
-    return-object v2
+    goto :goto_5
 
     :catch_0
     move-exception p1
 
-    goto :goto_5
+    goto :goto_6
+
+    :cond_8
+    :goto_5
+    if-eqz v1, :cond_9
+
+    .line 712
+    invoke-interface {v1}, Landroid/database/Cursor;->close()V
+
+    :cond_9
+    return-object v2
 
     :catchall_0
     move-exception p1
 
-    goto :goto_6
+    goto :goto_7
 
     :catch_1
     move-exception p1
 
     move-object v1, v2
 
-    .line 711
-    :goto_5
+    .line 709
+    :goto_6
     :try_start_3
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_a
 
-    .line 714
+    .line 712
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    :cond_b
+    :cond_a
     return-object v2
 
     :catchall_1
@@ -2157,20 +2343,28 @@
 
     move-object v2, v1
 
-    :goto_6
-    if-eqz v2, :cond_c
+    :goto_7
+    if-eqz v2, :cond_b
 
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
-    .line 715
-    :cond_c
+    .line 713
+    :cond_b
     throw p1
 .end method
 
 .method getLastMessgeUnread(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/MessageData;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "phoneNumber"
+        }
+    .end annotation
 
-    const-string v0, "sms"
+    const-string/jumbo v0, "sms"
 
     .line 326
     invoke-virtual {p0, v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->getLastMessageUnread(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/MessageData;
@@ -2231,8 +2425,16 @@
 
 .method getMessage(J)Lcom/samsung/android/galaxycontinuity/data/MessageData;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "receiveDate"
+        }
+    .end annotation
 
-    const-string v0, "sms"
+    const-string/jumbo v0, "sms"
 
     .line 94
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->getMessage(Ljava/lang/String;J)Lcom/samsung/android/galaxycontinuity/data/MessageData;
@@ -2263,8 +2465,16 @@
 
 .method getMessage(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/MessageData;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msgID"
+        }
+    .end annotation
 
-    const-string v0, "sms"
+    const-string/jumbo v0, "sms"
 
     .line 198
     invoke-virtual {p0, v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->getMessage(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/MessageData;
@@ -2295,6 +2505,16 @@
 
 .method public getMessage(Ljava/lang/String;J)Lcom/samsung/android/galaxycontinuity/data/MessageData;
     .locals 33
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "msgType",
+            "receiveDate"
+        }
+    .end annotation
 
     move-object/from16 v1, p0
 
@@ -2309,11 +2529,17 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v2, "/inbox"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2383,7 +2609,7 @@
 
     const/4 v14, 0x2
 
-    const-string v15, "sms"
+    const-string/jumbo v15, "sms"
 
     const/16 v24, 0x1
 
@@ -2415,6 +2641,8 @@
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v14, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_4
@@ -2430,7 +2658,9 @@
     :try_start_2
     invoke-virtual {v14, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2441,6 +2671,8 @@
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_3
@@ -2451,6 +2683,8 @@
 
     :try_start_3
     invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2550,6 +2784,8 @@
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
@@ -2565,6 +2801,8 @@
     :try_start_6
     invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -2577,11 +2815,15 @@
 
     invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-wide/16 v3, 0x3e8
 
     add-long v5, v16, v3
 
     invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2664,11 +2906,15 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-interface {v6}, Landroid/database/Cursor;->getCount()I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3333,6 +3579,16 @@
 
 .method public getMessage(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/MessageData;
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "msgType",
+            "msgID"
+        }
+    .end annotation
 
     .line 588
     new-instance v0, Ljava/lang/StringBuilder;
@@ -3343,13 +3599,21 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, "/inbox/"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3507,7 +3771,7 @@
     goto :goto_1
 
     :cond_1
-    const-string v5, "sms"
+    const-string/jumbo v5, "sms"
 
     .line 608
     invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -3748,6 +4012,17 @@
 
 .method getUnreadMessage(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 19
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "msgType",
+            "phoneNumber"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3778,11 +4053,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     const-string v3, "/inbox"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3791,7 +4072,7 @@
     const/4 v3, 0x0
 
     :try_start_0
-    const-string v4, "sms"
+    const-string/jumbo v4, "sms"
 
     .line 252
     invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -3829,13 +4110,19 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     move-object/from16 v4, p2
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v8, "\'"
 
     invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4305,38 +4592,30 @@
     :catchall_0
     move-exception v1
 
+    if-eqz v0, :cond_2
+
     .line 230
     :try_start_1
-    throw v1
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    :catchall_1
-    move-exception v2
-
-    if-eqz v0, :cond_2
-
-    .line 234
-    :try_start_2
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
     goto :goto_1
 
-    :catchall_2
+    :catchall_1
     move-exception v0
 
     invoke-virtual {v1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :cond_2
     :goto_1
-    throw v2
+    throw v1
 
     :cond_3
     :goto_2
     if-eqz v0, :cond_4
 
+    .line 234
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     :cond_4
@@ -4354,7 +4633,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4367,6 +4650,18 @@
 
 .method public markMessageAsRead(Ljava/lang/String;[ILjava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "msgType",
+            "msgId",
+            "packageName"
+        }
+    .end annotation
 
     .line 80
     new-instance v0, Ljava/lang/StringBuilder;
@@ -4377,17 +4672,25 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ", "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-static {p2}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4415,7 +4718,7 @@
     .line 84
     invoke-virtual {v0, p3, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[I)Landroid/content/Intent;
 
-    const-string p2, "sms"
+    const-string/jumbo p2, "sms"
 
     .line 85
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -4470,8 +4773,16 @@
 
 .method public markMessageAsReadUsingPhoneNumber(Ljava/lang/String;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "phoneNumber"
+        }
+    .end annotation
 
-    const-string v0, "sms"
+    const-string/jumbo v0, "sms"
 
     .line 68
     invoke-virtual {p0, v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/MessageHelper;->getUnreadMessage(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
@@ -4536,6 +4847,16 @@
 
 .method public sendSMSMessage(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "number",
+            "body"
+        }
+    .end annotation
 
     if-eqz p2, :cond_0
 
@@ -4565,7 +4886,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4582,7 +4907,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

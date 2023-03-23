@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/item_container" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/basic_drawer_rail_item_margin_vertical" android:layout_marginBottom="@dimen/basic_drawer_rail_item_margin_vertical" android:minHeight="@dimen/drawer_list_2line_item_height" android:layout_marginStart="@dimen/drawer_list_item_margin_start" android:layout_marginEnd="@dimen/drawer_list_item_margin_end">
+        <View android:id="@id/background" android:background="@drawable/drawer_list_item_background" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/icon" android:layout_width="@dimen/basic_drawer_list_item_icon_size" android:layout_height="@dimen/basic_drawer_list_item_icon_size" android:alpha="0.0" android:layout_marginStart="@dimen/drawer_list_item_icon_margin_start" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/drawer_list_item_text_margin_start">
+                <TextView android:textSize="@dimen/drawer_list_item_text_size" android:textColor="@color/drawer_list_item_text1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="@dimen/drawer_list_item_sub_text_size" android:textColor="@color/drawer_list_item_text2" android:ellipsize="end" android:id="@id/sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+            <ViewStub android:layout_gravity="center_vertical" android:id="@id/progress_in_list_stub" android:layout="@layout/home_list_progress" android:inflatedId="@id/progress_in_list" android:layout_width="@dimen/home_list_item_progress_width" android:layout_height="@dimen/home_list_item_progress_width" android:layout_marginEnd="@dimen/home_list_item_text_margin_end" />
+            <ViewStub android:layout_gravity="center_vertical" android:id="@id/app_update_badge_stub" android:layout="@layout/n_badge_stub" android:inflatedId="@id/app_update_badge" android:layout_width="@dimen/app_update_new_badge_size" android:layout_height="@dimen/app_update_new_badge_size" android:layout_marginEnd="@dimen/basic_drawer_badge_margin_end" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@id/divider" android:background="@drawable/subheader_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/basic_drawer_list_divider_height" android:layout_marginStart="@dimen/drawer_list_item_margin_start" android:layout_marginEnd="@dimen/drawer_list_item_margin_end" />
+</LinearLayout>

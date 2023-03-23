@@ -49,7 +49,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     new-instance v0, Lokhttp3/Authenticator$Companion;
@@ -60,23 +60,19 @@
 
     sput-object v0, Lokhttp3/Authenticator;->Companion:Lokhttp3/Authenticator$Companion;
 
-    .line 130
+    .line 1
     new-instance v0, Lokhttp3/Authenticator$Companion$AuthenticatorNone;
 
     invoke-direct {v0}, Lokhttp3/Authenticator$Companion$AuthenticatorNone;-><init>()V
 
-    check-cast v0, Lokhttp3/Authenticator;
-
     sput-object v0, Lokhttp3/Authenticator;->NONE:Lokhttp3/Authenticator;
 
-    .line 137
+    .line 2
     new-instance v0, Lokhttp3/internal/authenticator/JavaNetAuthenticator;
 
     const/4 v2, 0x1
 
     invoke-direct {v0, v1, v2, v1}, Lokhttp3/internal/authenticator/JavaNetAuthenticator;-><init>(Lokhttp3/Dns;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    check-cast v0, Lokhttp3/Authenticator;
 
     sput-object v0, Lokhttp3/Authenticator;->JAVA_NET_AUTHENTICATOR:Lokhttp3/Authenticator;
 
@@ -86,9 +82,4 @@
 
 # virtual methods
 .method public abstract authenticate(Lokhttp3/Route;Lokhttp3/Response;)Lokhttp3/Request;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 .end method

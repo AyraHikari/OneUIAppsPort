@@ -23,13 +23,23 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;Landroid/database/Cursor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "cursor"
+        }
+    .end annotation
 
-    .line 436
+    .line 431
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 437
+    .line 432
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
     return-void
@@ -40,7 +50,7 @@
 .method public getCurrent()Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
     .locals 10
 
-    .line 447
+    .line 442
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_3
@@ -53,7 +63,7 @@
 
     goto/16 :goto_0
 
-    .line 450
+    .line 445
     :cond_0
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 
@@ -61,7 +71,7 @@
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v3, "type"
+    const-string/jumbo v3, "type"
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
@@ -71,9 +81,9 @@
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v4, "title"
+    const-string/jumbo v4, "title"
 
-    .line 451
+    .line 446
     invoke-virtual {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -82,9 +92,9 @@
 
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v5, "uri"
+    const-string/jumbo v5, "uri"
 
-    .line 452
+    .line 447
     invoke-virtual {v1, v4, v5}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -93,9 +103,9 @@
 
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v6, "time"
+    const-string/jumbo v6, "time"
 
-    .line 453
+    .line 448
     invoke-virtual {v1, v5, v6}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
@@ -106,7 +116,7 @@
 
     const-string v7, "content"
 
-    .line 454
+    .line 449
     invoke-virtual {v1, v6, v7}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
@@ -117,7 +127,7 @@
 
     const-string v8, "is_received"
 
-    .line 455
+    .line 450
     invoke-virtual {v1, v7, v8}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getBoolean(Landroid/database/Cursor;Ljava/lang/String;)Z
 
     move-result v7
@@ -128,7 +138,7 @@
 
     const-string v9, "device_name"
 
-    .line 456
+    .line 451
     invoke-virtual {v1, v8, v9}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
@@ -137,7 +147,7 @@
 
     invoke-direct/range {v1 .. v8}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 
-    .line 458
+    .line 453
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -152,12 +162,12 @@
 
     iput-wide v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->id:J
 
-    .line 459
+    .line 454
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v3, "share_id"
+    const-string/jumbo v3, "share_id"
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
@@ -165,7 +175,7 @@
 
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->share_id:Ljava/lang/String;
 
-    .line 460
+    .line 455
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -178,7 +188,7 @@
 
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->parent_id:Ljava/lang/String;
 
-    .line 461
+    .line 456
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -199,7 +209,7 @@
 
     iput-wide v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->fileLength:J
 
-    .line 462
+    .line 457
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isFailed:Landroidx/databinding/ObservableBoolean;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -214,7 +224,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 463
+    .line 458
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -229,7 +239,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 464
+    .line 459
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->progress:Landroidx/databinding/ObservableInt;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -244,14 +254,14 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableInt;->set(I)V
 
-    .line 465
+    .line 460
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->thumbPath:Landroidx/databinding/ObservableField;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v4, "thumb_path"
+    const-string/jumbo v4, "thumb_path"
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
@@ -259,7 +269,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableField;->set(Ljava/lang/Object;)V
 
-    .line 466
+    .line 461
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->displayDate:Landroidx/databinding/ObservableField;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -274,7 +284,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableField;->set(Ljava/lang/Object;)V
 
-    .line 467
+    .line 462
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isDeferd:Landroidx/databinding/ObservableBoolean;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -289,7 +299,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 468
+    .line 463
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isDeleted:Landroidx/databinding/ObservableBoolean;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -304,14 +314,14 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 469
+    .line 464
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isSyncContents:Landroidx/databinding/ObservableBoolean;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 470
+    .line 465
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->isSharing:Landroidx/databinding/ObservableBoolean;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -326,7 +336,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 471
+    .line 466
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->hasThumb:Landroidx/databinding/ObservableBoolean;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
@@ -341,7 +351,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableBoolean;->set(Z)V
 
-    .line 472
+    .line 467
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -354,7 +364,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->setIsVideo(Z)V
 
-    .line 473
+    .line 468
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
@@ -369,15 +379,15 @@
 
     move-result-object v1
 
-    .line 474
+    .line 469
     sget-object v2, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_UNKNOWN:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     if-eq v1, v2, :cond_1
 
-    .line 475
+    .line 470
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->devicetype:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    .line 478
+    .line 473
     :cond_1
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->position:Landroidx/databinding/ObservableInt;
 
@@ -393,7 +403,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/databinding/ObservableInt;->set(I)V
 
-    .line 480
+    .line 475
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getType()Ljava/lang/String;
 
     move-result-object v1
@@ -404,17 +414,17 @@
 
     if-eqz v1, :cond_2
 
-    .line 481
+    .line 476
     new-instance v1, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;-><init>()V
 
-    .line 482
+    .line 477
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v4, "url_title"
+    const-string/jumbo v4, "url_title"
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
@@ -422,12 +432,12 @@
 
     iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->title:Ljava/lang/String;
 
-    .line 483
+    .line 478
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v4, "url_desc"
+    const-string/jumbo v4, "url_desc"
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
@@ -435,12 +445,12 @@
 
     iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->desc:Ljava/lang/String;
 
-    .line 484
+    .line 479
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->this$0:Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
-    const-string v4, "url_thumb_path"
+    const-string/jumbo v4, "url_thumb_path"
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase;->getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
 
@@ -448,7 +458,7 @@
 
     iput-object v2, v1, Lcom/samsung/android/galaxycontinuity/data/UrlInfoData;->urlThumbPath:Ljava/lang/String;
 
-    .line 485
+    .line 480
     iget-object v2, v0, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->urlInfoData:Landroidx/databinding/ObservableField;
 
     invoke-virtual {v2, v1}, Landroidx/databinding/ObservableField;->set(Ljava/lang/Object;)V
@@ -466,7 +476,7 @@
 .method public getNext()Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
     .locals 1
 
-    .line 441
+    .line 436
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->cursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_1
@@ -479,7 +489,7 @@
 
     goto :goto_0
 
-    .line 443
+    .line 438
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/database/ShareChildsDataBase$Reader;->getCurrent()Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;
 

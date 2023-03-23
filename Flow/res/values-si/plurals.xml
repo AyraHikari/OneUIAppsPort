@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow තුළ පරිගණක හෝ ටැබ්ලට් %dක් දක්වා ලියාපදිංචි කර කළමනාකරණය කරන්න.
-
-ඔබේ දුරකථනයට එකවර සම්බන්ධ කළ හැක්කේ එක් පරිගණකයක් හෝ ටැබ්ලටයක් පමණි. ලියාපදිංචි පරිගණක හෝ ටැබ්ලට් යන දෙකම ඔබේ දුරකථනයට සම්බන්ධ වීමට උත්සාහ කරන විට ඔබට එකක් තෝරා ගැනීමට සිදු වනු ඇත."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flow තුළ %d පරිගණකයක් හෝ ටැබ්ලටයක් දක්වා ලියාපදිංචි කර කළමනාකරණය කරන්න.
-
-ඔබේ දුරකථනයට එකවර සම්බන්ධ කළ හැක්කේ එක් පරිගණකයක් හෝ ටැබ්ලටයක් පමණි. ලියාපදිංචි පරිගණක හෝ ටැබ්ලට් යන දෙකම ඔබේ දුරකථනයට සම්බන්ධ වීමට උත්සාහ කරන විට ඔබට එකක් තෝරා ගැනීමට සිදු වනු ඇත."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">නව දැනුම්දීම් %dක්</item>
+        <item quantity="one">නව දැනුම්දීම් %dක්</item>
     </plurals>
 </resources>

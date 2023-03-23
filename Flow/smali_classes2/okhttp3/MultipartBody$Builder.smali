@@ -34,7 +34,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 285
+    .line 288
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
     move-result-object v0
@@ -51,22 +51,22 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 288
+    .line 291
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 281
+    .line 284
     sget-object v0, Lokhttp3/MultipartBody;->MIXED:Lokhttp3/MediaType;
 
     iput-object v0, p0, Lokhttp3/MultipartBody$Builder;->type:Lokhttp3/MediaType;
 
-    .line 282
+    .line 285
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lokhttp3/MultipartBody$Builder;->parts:Ljava/util/List;
 
-    .line 289
+    .line 292
     invoke-static {p1}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object p1
@@ -81,7 +81,7 @@
 .method public addFormDataPart(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/MultipartBody$Builder;
     .locals 0
 
-    .line 319
+    .line 322
     invoke-static {p1, p2}, Lokhttp3/MultipartBody$Part;->createFormData(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/MultipartBody$Part;
 
     move-result-object p1
@@ -100,7 +100,7 @@
         .end annotation
     .end param
 
-    .line 324
+    .line 327
     invoke-static {p1, p2, p3}, Lokhttp3/MultipartBody$Part;->createFormData(Ljava/lang/String;Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Part;
 
     move-result-object p1
@@ -119,7 +119,7 @@
         .end annotation
     .end param
 
-    .line 314
+    .line 317
     invoke-static {p1, p2}, Lokhttp3/MultipartBody$Part;->create(Lokhttp3/Headers;Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Part;
 
     move-result-object p1
@@ -134,30 +134,23 @@
 .method public addPart(Lokhttp3/MultipartBody$Part;)Lokhttp3/MultipartBody$Builder;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "part == null"
 
-    .line 330
+    .line 332
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 333
     iget-object v0, p0, Lokhttp3/MultipartBody$Builder;->parts:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-object p0
-
-    .line 329
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "part == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public addPart(Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Builder;
     .locals 0
 
-    .line 309
+    .line 312
     invoke-static {p1}, Lokhttp3/MultipartBody$Part;->create(Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Part;
 
     move-result-object p1
@@ -172,7 +165,7 @@
 .method public build()Lokhttp3/MultipartBody;
     .locals 4
 
-    .line 336
+    .line 339
     iget-object v0, p0, Lokhttp3/MultipartBody$Builder;->parts:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
@@ -181,7 +174,7 @@
 
     if-nez v0, :cond_0
 
-    .line 339
+    .line 342
     new-instance v0, Lokhttp3/MultipartBody;
 
     iget-object v1, p0, Lokhttp3/MultipartBody$Builder;->boundary:Lokio/ByteString;
@@ -194,7 +187,7 @@
 
     return-object v0
 
-    .line 337
+    .line 340
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -208,9 +201,12 @@
 .method public setType(Lokhttp3/MediaType;)Lokhttp3/MultipartBody$Builder;
     .locals 3
 
-    if-eqz p1, :cond_1
+    const-string/jumbo v0, "type == null"
 
-    .line 300
+    .line 301
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 303
     invoke-virtual {p1}, Lokhttp3/MediaType;->type()Ljava/lang/String;
 
     move-result-object v0
@@ -223,12 +219,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 303
+    .line 306
     iput-object p1, p0, Lokhttp3/MultipartBody$Builder;->type:Lokhttp3/MediaType;
 
     return-object p0
 
-    .line 301
+    .line 304
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -240,23 +236,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
-
-    .line 298
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "type == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method

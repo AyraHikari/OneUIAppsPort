@@ -176,7 +176,7 @@
     :catch_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string v1, "unable to encode signature"
+    const-string/jumbo v1, "unable to encode signature"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

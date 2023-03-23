@@ -58,7 +58,10 @@
     .line 111
     invoke-direct {p0}, Lorg/spongycastle/asn1/ASN1Primitive;-><init>()V
 
-    if-eqz p1, :cond_3
+    const-string v0, "data cannot be null"
+
+    .line 114
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 116
     array-length v0, p1
@@ -73,7 +76,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "zero length data with non-zero pad bits"
+    const-string/jumbo p2, "zero length data with non-zero pad bits"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -106,16 +109,6 @@
     const-string p2, "pad bits cannot be greater than 7 or less than 0"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 114
-    :cond_3
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "data cannot be null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
@@ -234,7 +227,7 @@
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "truncated BIT STRING detected"
+    const-string/jumbo p1, "truncated BIT STRING detected"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -537,13 +530,11 @@
 
     and-int/lit8 v4, v4, 0xf
 
-    aget-char v3, v3, v4
+    aget-char v4, v3, v4
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
     .line 154
-    sget-object v3, Lorg/spongycastle/asn1/ASN1BitString;->table:[C
-
     aget-byte v4, v1, v2
 
     and-int/lit8 v4, v4, 0xf
@@ -578,11 +569,15 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

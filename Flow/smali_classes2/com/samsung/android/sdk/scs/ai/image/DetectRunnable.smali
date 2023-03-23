@@ -174,12 +174,10 @@
 
     if-eqz v2, :cond_1
 
-    const-string v2, "uri"
+    const-string/jumbo v3, "uri"
 
     .line 65
-    iget-object v3, p0, Lcom/samsung/android/sdk/scs/ai/image/DetectRunnable;->mUri:Landroid/net/Uri;
-
-    invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+    invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     goto :goto_0
 
@@ -217,7 +215,7 @@
 
     const/4 v2, 0x5
 
-    const-string v3, "retBundle is null"
+    const-string/jumbo v3, "retBundle is null"
 
     invoke-direct {v1, v2, v3}, Lcom/samsung/android/sdk/scs/base/ResultException;-><init>(ILjava/lang/String;)V
 
@@ -235,7 +233,7 @@
 
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
 
-    const-string v2, "resultCode"
+    const-string/jumbo v2, "resultCode"
 
     .line 79
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -255,7 +253,11 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

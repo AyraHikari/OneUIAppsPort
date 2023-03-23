@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:start="@dimen/action_bar_back_btn_layout_start">
+        <bitmap android:src="@drawable/actionbar_back" android:tint="@color/actionbar_icon_back_color" android:height="@dimen/action_bar_back_btn_size" android:width="@dimen/action_bar_back_btn_size" android:autoMirrored="true" />
+    </item>
+</layer-list>

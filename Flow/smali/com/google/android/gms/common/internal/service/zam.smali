@@ -1,44 +1,52 @@
-.class public final Lcom/google/android/gms/common/internal/service/zam;
-.super Lcom/google/android/gms/internal/base/zaa;
+.class public final synthetic Lcom/google/android/gms/common/internal/service/zam;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/common/internal/service/zal;
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
+
+
+# instance fields
+.field public final synthetic zaa:Lcom/google/android/gms/common/internal/TelemetryData;
 
 
 # direct methods
-.method constructor <init>(Landroid/os/IBinder;)V
-    .locals 1
+.method public synthetic constructor <init>(Lcom/google/android/gms/common/internal/TelemetryData;)V
+    .locals 0
 
-    const-string v0, "com.google.android.gms.common.internal.service.ICommonService"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/service/zam;->zaa:Lcom/google/android/gms/common/internal/TelemetryData;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final zaa(Lcom/google/android/gms/common/internal/service/zaj;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
 
-    .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zaa;->zaa()Landroid/os/Parcel;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/service/zam;->zaa:Lcom/google/android/gms/common/internal/TelemetryData;
 
-    move-result-object v0
+    check-cast p1, Lcom/google/android/gms/common/internal/service/zap;
 
-    .line 4
-    invoke-static {v0, p1}, Lcom/google/android/gms/internal/base/zac;->zaa(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    check-cast p2, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    const/4 p1, 0x1
+    sget v1, Lcom/google/android/gms/common/internal/service/zao;->zab:I
 
-    .line 5
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/base/zaa;->zac(ILandroid/os/Parcel;)V
+    .line 1
+    invoke-virtual {p1}, Lcom/google/android/gms/common/internal/service/zap;->getService()Landroid/os/IInterface;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/internal/service/zai;
+
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/internal/service/zai;->zae(Lcom/google/android/gms/common/internal/TelemetryData;)V
+
+    const/4 p1, 0x0
+
+    .line 2
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
 
     return-void
 .end method

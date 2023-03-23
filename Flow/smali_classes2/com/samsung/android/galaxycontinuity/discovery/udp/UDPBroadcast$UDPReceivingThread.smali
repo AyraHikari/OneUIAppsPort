@@ -31,6 +31,18 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;ILcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPBroadcastReceivedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "port",
+            "listener"
+        }
+    .end annotation
 
     .line 218
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;
@@ -94,8 +106,6 @@
     if-eqz v0, :cond_0
 
     .line 302
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->socket:Ljava/net/DatagramSocket;
-
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -209,7 +219,11 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -240,8 +254,6 @@
     if-eqz v0, :cond_1
 
     .line 254
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->listener:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPBroadcastReceivedListener;
-
     invoke-interface {v2, v0}, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPBroadcastReceivedListener;->dataReceived(Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
 
     .line 256
@@ -313,9 +325,11 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "sending message - mAuthPortNumber : "
+    const-string/jumbo v2, "sending message - mAuthPortNumber : "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;
 
@@ -325,9 +339,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v2, ", mNotiPortNumber : "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;
 
@@ -336,6 +354,8 @@
     move-result v2
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -362,13 +382,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -404,8 +428,6 @@
     if-eqz v0, :cond_2
 
     .line 281
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->socket:Ljava/net/DatagramSocket;
-
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->close()V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
@@ -422,7 +444,7 @@
 
     .line 277
     :try_start_6
-    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
@@ -433,8 +455,6 @@
     if-eqz v0, :cond_2
 
     .line 281
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->socket:Ljava/net/DatagramSocket;
-
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->close()V
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_3
@@ -464,8 +484,6 @@
     if-eqz v1, :cond_3
 
     .line 281
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->socket:Ljava/net/DatagramSocket;
-
     invoke-virtual {v1}, Ljava/net/DatagramSocket;->close()V
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_4
@@ -526,6 +544,14 @@
 
 .method public setListener(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPBroadcastReceivedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 226
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->listener:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPBroadcastReceivedListener;

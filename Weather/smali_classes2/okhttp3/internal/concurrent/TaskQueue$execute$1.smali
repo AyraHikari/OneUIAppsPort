@@ -5,16 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/internal/concurrent/TaskQueue;->execute(Ljava/lang/String;JZLkotlin/jvm/functions/Function0;)V
+    value = Lokhttp3/internal/concurrent/TaskQueue;->execute(Ljava/lang/String;JZLni/a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
     name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$execute$1\n*L\n1#1,218:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -43,19 +39,18 @@
 
 
 # instance fields
-.field final synthetic $block:Lkotlin/jvm/functions/Function0;
+.field public final synthetic $block:Lni/a;
 
-.field final synthetic $cancelable:Z
+.field public final synthetic $cancelable:Z
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function0;Ljava/lang/String;ZLjava/lang/String;Z)V
+.method public constructor <init>(Lni/a;Ljava/lang/String;ZLjava/lang/String;Z)V
     .locals 0
 
-    .line 96
-    iput-object p1, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lkotlin/jvm/functions/Function0;
+    iput-object p1, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lni/a;
 
     iput-object p2, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$name:Ljava/lang/String;
 
@@ -71,10 +66,9 @@
 .method public runOnce()J
     .locals 2
 
-    .line 98
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lkotlin/jvm/functions/Function0;
+    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lni/a;
 
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {v0}, Lni/a;->invoke()Ljava/lang/Object;
 
     const-wide/16 v0, -0x1
 

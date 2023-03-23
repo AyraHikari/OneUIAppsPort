@@ -40,34 +40,45 @@
 
     sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;->GET:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
 
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
+    new-instance v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
 
-    const-string v1, "POST"
+    const-string v3, "POST"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3, v1}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v3, v4, v3}, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;->POST:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
+    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;->POST:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
+    new-array v3, v3, [Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 3
-    sget-object v4, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;->GET:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
+    sput-object v3, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;->$VALUES:[Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "method"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -87,6 +98,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 3
     const-class v0, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/HttpMethod;

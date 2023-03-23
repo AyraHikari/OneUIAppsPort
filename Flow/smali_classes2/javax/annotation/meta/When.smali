@@ -27,7 +27,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
     .line 15
     new-instance v0, Ljavax/annotation/meta/When;
@@ -41,58 +41,52 @@
     sput-object v0, Ljavax/annotation/meta/When;->ALWAYS:Ljavax/annotation/meta/When;
 
     .line 17
-    new-instance v0, Ljavax/annotation/meta/When;
+    new-instance v1, Ljavax/annotation/meta/When;
 
-    const-string v1, "UNKNOWN"
+    const-string v3, "UNKNOWN"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Ljavax/annotation/meta/When;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Ljavax/annotation/meta/When;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljavax/annotation/meta/When;->UNKNOWN:Ljavax/annotation/meta/When;
+    sput-object v1, Ljavax/annotation/meta/When;->UNKNOWN:Ljavax/annotation/meta/When;
 
     .line 19
-    new-instance v0, Ljavax/annotation/meta/When;
+    new-instance v3, Ljavax/annotation/meta/When;
 
-    const-string v1, "MAYBE"
+    const-string v5, "MAYBE"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Ljavax/annotation/meta/When;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Ljavax/annotation/meta/When;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljavax/annotation/meta/When;->MAYBE:Ljavax/annotation/meta/When;
+    sput-object v3, Ljavax/annotation/meta/When;->MAYBE:Ljavax/annotation/meta/When;
 
     .line 21
-    new-instance v0, Ljavax/annotation/meta/When;
+    new-instance v5, Ljavax/annotation/meta/When;
 
-    const-string v1, "NEVER"
+    const-string v7, "NEVER"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Ljavax/annotation/meta/When;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Ljavax/annotation/meta/When;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljavax/annotation/meta/When;->NEVER:Ljavax/annotation/meta/When;
+    sput-object v5, Ljavax/annotation/meta/When;->NEVER:Ljavax/annotation/meta/When;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Ljavax/annotation/meta/When;
+    new-array v7, v7, [Ljavax/annotation/meta/When;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 13
-    sget-object v6, Ljavax/annotation/meta/When;->ALWAYS:Ljavax/annotation/meta/When;
-
-    aput-object v6, v1, v2
-
-    sget-object v2, Ljavax/annotation/meta/When;->UNKNOWN:Ljavax/annotation/meta/When;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Ljavax/annotation/meta/When;->MAYBE:Ljavax/annotation/meta/When;
-
-    aput-object v2, v1, v4
-
-    aput-object v0, v1, v5
-
-    sput-object v1, Ljavax/annotation/meta/When;->$VALUES:[Ljavax/annotation/meta/When;
+    sput-object v7, Ljavax/annotation/meta/When;->$VALUES:[Ljavax/annotation/meta/When;
 
     return-void
 .end method

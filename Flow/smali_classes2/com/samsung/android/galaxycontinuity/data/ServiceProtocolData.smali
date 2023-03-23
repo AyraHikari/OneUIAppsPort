@@ -38,15 +38,15 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 26
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "_samsungflowauth._tcp"
 
-    .line 27
+    .line 28
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->protocolName:Ljava/lang/String;
 
-    .line 28
+    .line 29
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -57,7 +57,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceID:Ljava/lang/String;
 
-    .line 29
+    .line 30
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isTablet()Z
 
     move-result v0
@@ -87,6 +87,14 @@
 
 .method public static convertFromNsdServiceInfo(Landroid/net/nsd/NsdServiceInfo;)Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "info"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -94,13 +102,13 @@
 
     return-object p0
 
-    .line 37
+    .line 38
     :cond_0
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     invoke-direct {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;-><init>()V
 
-    .line 38
+    .line 39
     invoke-virtual {p0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v1
@@ -121,7 +129,7 @@
 
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceID:Ljava/lang/String;
 
-    .line 39
+    .line 40
     invoke-virtual {p0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v1
@@ -144,21 +152,21 @@
 
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceName:Ljava/lang/String;
 
-    .line 40
+    .line 41
     invoke-virtual {p0}, Landroid/net/nsd/NsdServiceInfo;->getPort()I
 
     move-result v1
 
     iput v1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->portNumber:I
 
-    .line 41
+    .line 42
     invoke-virtual {p0}, Landroid/net/nsd/NsdServiceInfo;->getHost()Ljava/net/InetAddress;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 42
+    .line 43
     invoke-virtual {p0}, Landroid/net/nsd/NsdServiceInfo;->getHost()Ljava/net/InetAddress;
 
     move-result-object v1
@@ -169,7 +177,7 @@
 
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceIP:Ljava/lang/String;
 
-    .line 44
+    .line 45
     :cond_1
     invoke-virtual {p0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
@@ -188,18 +196,26 @@
 
 .method public static createRequestData(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceIDToFind"
+        }
+    .end annotation
 
-    .line 49
+    .line 50
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     invoke-direct {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 50
+    .line 51
     iput v1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->requestType:I
 
-    .line 51
+    .line 52
     iput-object p0, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceIDToFind:Ljava/lang/String;
 
     return-object v0
@@ -207,35 +223,43 @@
 
 .method public static createResponseData(Ljava/lang/String;II)Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "deviceIP",
+            "authPortNumber",
+            "notiPortNumber"
+        }
+    .end annotation
 
-    .line 56
+    .line 57
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     invoke-direct {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;-><init>()V
 
     const/4 v1, 0x2
 
-    .line 57
+    .line 58
     iput v1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->requestType:I
 
-    .line 58
-    invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/bluetooth/BluetoothAdapter;->getName()Ljava/lang/String;
+    .line 59
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getDeviceCustomName()Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceName:Ljava/lang/String;
 
-    .line 59
+    .line 60
     iput-object p0, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceIP:Ljava/lang/String;
 
-    .line 60
+    .line 61
     iput p1, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->portNumber:I
 
-    .line 61
+    .line 62
     iput p2, v0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->notiPortNumber:I
 
     return-object v0
@@ -246,7 +270,7 @@
 .method public getDeviceID()Ljava/lang/String;
     .locals 1
 
-    .line 84
+    .line 85
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceID:Ljava/lang/String;
 
     return-object v0
@@ -255,7 +279,7 @@
 .method public getDeviceIDToFind()Ljava/lang/String;
     .locals 1
 
-    .line 88
+    .line 89
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceIDToFind:Ljava/lang/String;
 
     return-object v0
@@ -264,7 +288,7 @@
 .method public getDeviceIP()Ljava/lang/String;
     .locals 1
 
-    .line 96
+    .line 97
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceIP:Ljava/lang/String;
 
     return-object v0
@@ -273,7 +297,7 @@
 .method public getDeviceName()Ljava/lang/String;
     .locals 1
 
-    .line 92
+    .line 93
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceName:Ljava/lang/String;
 
     return-object v0
@@ -282,7 +306,7 @@
 .method public getDeviceType()Ljava/lang/String;
     .locals 1
 
-    .line 108
+    .line 109
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceType:Ljava/lang/String;
 
     return-object v0
@@ -291,7 +315,7 @@
 .method public getNotiPortNumber()I
     .locals 1
 
-    .line 120
+    .line 121
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->notiPortNumber:I
 
     if-nez v0, :cond_0
@@ -305,7 +329,7 @@
 .method public getPortNumber()I
     .locals 1
 
-    .line 112
+    .line 113
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->portNumber:I
 
     return v0
@@ -314,7 +338,7 @@
 .method public getProtocolName()Ljava/lang/String;
     .locals 1
 
-    .line 80
+    .line 81
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->protocolName:Ljava/lang/String;
 
     return-object v0
@@ -323,7 +347,7 @@
 .method public getRequestType()I
     .locals 1
 
-    .line 76
+    .line 77
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->requestType:I
 
     return v0
@@ -331,8 +355,16 @@
 
 .method public setDeviceIP(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "IPAddress"
+        }
+    .end annotation
 
-    .line 100
+    .line 101
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->deviceIP:Ljava/lang/String;
 
     return-void
@@ -340,8 +372,16 @@
 
 .method public setNotiPortNumber(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notiPortNumber"
+        }
+    .end annotation
 
-    .line 116
+    .line 117
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->notiPortNumber:I
 
     return-void
@@ -349,8 +389,16 @@
 
 .method public setPortNumber(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "portNumber"
+        }
+    .end annotation
 
-    .line 104
+    .line 105
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->portNumber:I
 
     return-void
@@ -359,7 +407,7 @@
 .method public toJson()Ljava/lang/String;
     .locals 1
 
-    .line 72
+    .line 73
     invoke-static {p0}, Lcom/sec/android/fido/uaf/message/util/GsonHelper;->toJson(Lcom/sec/android/fido/uaf/message/Message;)Ljava/lang/String;
 
     move-result-object v0

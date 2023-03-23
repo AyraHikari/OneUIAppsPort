@@ -45,6 +45,19 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "resource",
+            "objects"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -79,6 +92,18 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     if-eqz p2, :cond_1
 
@@ -114,7 +139,7 @@
 
     check-cast p2, Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0c005c
+    const v0, 0x7f0d0058
 
     const/4 v1, 0x0
 
@@ -128,7 +153,7 @@
 
     invoke-direct {p3}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$PermissionListAdapter$ViewHolder;-><init>()V
 
-    const v0, 0x7f090121
+    const v0, 0x7f0a01a6
 
     .line 566
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -166,7 +191,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setMinimumHeight(I)V
 
     :goto_1
-    const v0, 0x7f09026c
+    const v0, 0x7f0a039a
 
     .line 573
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -177,7 +202,7 @@
 
     iput-object v0, p3, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$PermissionListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
-    const v0, 0x7f090110
+    const v0, 0x7f0a0191
 
     .line 574
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -217,7 +242,7 @@
     invoke-virtual {p1}, Ljava/lang/IndexOutOfBoundsException;->printStackTrace()V
 
     :goto_3
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_a
 
     .line 591
     :try_start_1
@@ -242,11 +267,11 @@
     move-result-object v2
 
     .line 595
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v3, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v4, 0x1c
 
-    if-le v3, v4, :cond_7
+    if-le v3, v4, :cond_9
 
     const-string v3, "android.permission.READ_EXTERNAL_STORAGE"
 
@@ -303,14 +328,14 @@
     .line 602
     invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v3
 
-    if-eqz v0, :cond_7
+    if-eqz v3, :cond_7
 
-    const-string v0, "android.permission-group.CONTACTS"
+    const-string v2, "android.permission-group.CONTACTS"
 
     .line 603
-    invoke-virtual {p1, v0, v1}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
+    invoke-virtual {p1, v2, v1}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
 
     move-result-object v2
 
@@ -318,10 +343,10 @@
 
     :cond_5
     :goto_4
-    const-string v0, "android.permission-group.LOCATION"
+    const-string v2, "android.permission-group.LOCATION"
 
     .line 601
-    invoke-virtual {p1, v0, v1}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
+    invoke-virtual {p1, v2, v1}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
 
     move-result-object v2
 
@@ -329,16 +354,50 @@
 
     :cond_6
     :goto_5
-    const-string v0, "android.permission-group.STORAGE"
+    const-string v2, "android.permission-group.STORAGE"
 
     .line 598
+    invoke-virtual {p1, v2, v1}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
+
+    move-result-object v2
+
+    .line 606
+    :cond_7
+    :goto_6
+    sget v3, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v4, 0x1e
+
+    if-le v3, v4, :cond_9
+
+    const-string v3, "android.permission.BLUETOOTH_SCAN"
+
+    .line 607
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_8
+
+    const-string v3, "android.permission.BLUETOOTH_CONNECT"
+
+    .line 608
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_9
+
+    :cond_8
+    const-string v0, "android.permission-group.NEARBY_DEVICES"
+
+    .line 609
     invoke-virtual {p1, v0, v1}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
 
     move-result-object v2
 
-    .line 607
-    :cond_7
-    :goto_6
+    .line 614
+    :cond_9
     iget-object v0, p3, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$PermissionListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
     invoke-virtual {v2, p1}, Landroid/content/pm/PermissionGroupInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
@@ -351,15 +410,15 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 609
+    .line 616
     invoke-virtual {v2, p1}, Landroid/content/pm/PermissionGroupInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
-    .line 611
+    .line 618
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$PermissionListAdapter;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0500b2
+    const v1, 0x7f060255
 
     invoke-static {v0, v1}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
 
@@ -367,7 +426,7 @@
 
     invoke-static {p1, v0}, Landroidx/core/graphics/drawable/DrawableCompat;->setTint(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 613
+    .line 620
     iget-object p3, p3, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$PermissionListAdapter$ViewHolder;->image:Landroid/widget/ImageView;
 
     invoke-virtual {p3, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
@@ -379,10 +438,10 @@
     :catch_1
     move-exception p1
 
-    .line 616
+    .line 623
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    :cond_8
+    :cond_a
     :goto_7
     return-object p2
 .end method

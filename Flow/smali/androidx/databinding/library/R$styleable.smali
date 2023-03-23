@@ -16,11 +16,15 @@
 # static fields
 .field public static final ColorStateListItem:[I
 
-.field public static final ColorStateListItem_alpha:I = 0x2
+.field public static final ColorStateListItem_alpha:I = 0x3
 
 .field public static final ColorStateListItem_android_alpha:I = 0x1
 
 .field public static final ColorStateListItem_android_color:I = 0x0
+
+.field public static final ColorStateListItem_android_lStar:I = 0x2
+
+.field public static final ColorStateListItem_lStar:I = 0x4
 
 .field public static final CoordinatorLayout:[I
 
@@ -80,6 +84,8 @@
 
 .field public static final FontFamily_fontProviderQuery:I = 0x5
 
+.field public static final FontFamily_fontProviderSystemFontFamily:I = 0x6
+
 .field public static final GradientColor:[I
 
 .field public static final GradientColorItem:[I
@@ -115,9 +121,9 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 3
 
-    const/4 v0, 0x3
+    const/4 v0, 0x5
 
     new-array v0, v0, [I
 
@@ -135,13 +141,11 @@
 
     const/4 v1, 0x7
 
-    new-array v1, v1, [I
+    new-array v2, v1, [I
 
-    fill-array-data v1, :array_2
+    fill-array-data v2, :array_2
 
-    sput-object v1, Landroidx/databinding/library/R$styleable;->CoordinatorLayout_Layout:[I
-
-    const/4 v1, 0x6
+    sput-object v2, Landroidx/databinding/library/R$styleable;->CoordinatorLayout_Layout:[I
 
     new-array v1, v1, [I
 
@@ -173,38 +177,43 @@
 
     return-void
 
+    nop
+
     :array_0
     .array-data 4
         0x10101a5
         0x101031f
-        0x7f03002d
+        0x1010647
+        0x7f040034
+        0x7f04025b
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f030176
-        0x7f030275
+        0x7f04025a
+        0x7f040424
     .end array-data
 
     :array_2
     .array-data 4
         0x10100b3
-        0x7f03017b
-        0x7f03017c
-        0x7f03017d
-        0x7f0301a9
-        0x7f0301b2
-        0x7f0301b4
+        0x7f040264
+        0x7f040265
+        0x7f040266
+        0x7f040297
+        0x7f0402a1
+        0x7f0402a2
     .end array-data
 
     :array_3
     .array-data 4
-        0x7f030131
-        0x7f030132
-        0x7f030133
-        0x7f030134
-        0x7f030135
-        0x7f030136
+        0x7f0401ea
+        0x7f0401eb
+        0x7f0401ec
+        0x7f0401ed
+        0x7f0401ee
+        0x7f0401ef
+        0x7f0401f0
     .end array-data
 
     :array_4
@@ -214,11 +223,11 @@
         0x101053f
         0x101056f
         0x1010570
-        0x7f03012f
-        0x7f030137
-        0x7f030138
-        0x7f030139
-        0x7f0302e8
+        0x7f0401e8
+        0x7f0401f1
+        0x7f0401f2
+        0x7f0401f3
+        0x7f0404ee
     .end array-data
 
     :array_5

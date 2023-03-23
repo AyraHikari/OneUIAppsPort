@@ -9,14 +9,14 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0xa
     name = "Dataset"
 .end annotation
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lorg/jsoup/nodes/Attributes$Dataset$DatasetIterator;,
-        Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;
+        Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;,
+        Lorg/jsoup/nodes/Attributes$Dataset$DatasetIterator;
     }
 .end annotation
 
@@ -31,45 +31,38 @@
 
 
 # instance fields
-.field final synthetic this$0:Lorg/jsoup/nodes/Attributes;
+.field private final attributes:Lorg/jsoup/nodes/Attributes;
 
 
 # direct methods
 .method private constructor <init>(Lorg/jsoup/nodes/Attributes;)V
-    .locals 2
+    .locals 0
 
-    .line 215
-    iput-object p1, p0, Lorg/jsoup/nodes/Attributes$Dataset;->this$0:Lorg/jsoup/nodes/Attributes;
-
+    .line 462
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
-    .line 216
-    invoke-static {p1}, Lorg/jsoup/nodes/Attributes;->access$100(Lorg/jsoup/nodes/Attributes;)Ljava/util/LinkedHashMap;
+    .line 463
+    iput-object p1, p0, Lorg/jsoup/nodes/Attributes$Dataset;->attributes:Lorg/jsoup/nodes/Attributes;
 
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    .line 217
-    new-instance v0, Ljava/util/LinkedHashMap;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
-
-    invoke-static {p1, v0}, Lorg/jsoup/nodes/Attributes;->access$102(Lorg/jsoup/nodes/Attributes;Ljava/util/LinkedHashMap;)Ljava/util/LinkedHashMap;
-
-    :cond_0
     return-void
 .end method
 
 .method synthetic constructor <init>(Lorg/jsoup/nodes/Attributes;Lorg/jsoup/nodes/Attributes$1;)V
     .locals 0
 
-    .line 213
+    .line 459
     invoke-direct {p0, p1}, Lorg/jsoup/nodes/Attributes$Dataset;-><init>(Lorg/jsoup/nodes/Attributes;)V
 
     return-void
+.end method
+
+.method static synthetic access$700(Lorg/jsoup/nodes/Attributes$Dataset;)Lorg/jsoup/nodes/Attributes;
+    .locals 0
+
+    .line 459
+    iget-object p0, p0, Lorg/jsoup/nodes/Attributes$Dataset;->attributes:Lorg/jsoup/nodes/Attributes;
+
+    return-object p0
 .end method
 
 
@@ -87,7 +80,7 @@
         }
     .end annotation
 
-    .line 222
+    .line 468
     new-instance v0, Lorg/jsoup/nodes/Attributes$Dataset$EntrySet;
 
     const/4 v1, 0x0
@@ -100,7 +93,7 @@
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 213
+    .line 459
     check-cast p1, Ljava/lang/String;
 
     check-cast p2, Ljava/lang/String;
@@ -115,13 +108,13 @@
 .method public put(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 227
-    invoke-static {p1}, Lorg/jsoup/nodes/Attributes;->access$300(Ljava/lang/String;)Ljava/lang/String;
+    .line 473
+    invoke-static {p1}, Lorg/jsoup/nodes/Attributes;->access$500(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 228
-    iget-object v0, p0, Lorg/jsoup/nodes/Attributes$Dataset;->this$0:Lorg/jsoup/nodes/Attributes;
+    .line 474
+    iget-object v0, p0, Lorg/jsoup/nodes/Attributes$Dataset;->attributes:Lorg/jsoup/nodes/Attributes;
 
     invoke-virtual {v0, p1}, Lorg/jsoup/nodes/Attributes;->hasKey(Ljava/lang/String;)Z
 
@@ -129,19 +122,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/jsoup/nodes/Attributes$Dataset;->this$0:Lorg/jsoup/nodes/Attributes;
+    iget-object v0, p0, Lorg/jsoup/nodes/Attributes$Dataset;->attributes:Lorg/jsoup/nodes/Attributes;
 
-    invoke-static {v0}, Lorg/jsoup/nodes/Attributes;->access$100(Lorg/jsoup/nodes/Attributes;)Ljava/util/LinkedHashMap;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lorg/jsoup/nodes/Attribute;
-
-    invoke-virtual {v0}, Lorg/jsoup/nodes/Attribute;->getValue()Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lorg/jsoup/nodes/Attributes;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -150,20 +133,11 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 229
+    .line 475
     :goto_0
-    new-instance v1, Lorg/jsoup/nodes/Attribute;
+    iget-object v1, p0, Lorg/jsoup/nodes/Attributes$Dataset;->attributes:Lorg/jsoup/nodes/Attributes;
 
-    invoke-direct {v1, p1, p2}, Lorg/jsoup/nodes/Attribute;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 230
-    iget-object p2, p0, Lorg/jsoup/nodes/Attributes$Dataset;->this$0:Lorg/jsoup/nodes/Attributes;
-
-    invoke-static {p2}, Lorg/jsoup/nodes/Attributes;->access$100(Lorg/jsoup/nodes/Attributes;)Ljava/util/LinkedHashMap;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1, v1}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, p2}, Lorg/jsoup/nodes/Attributes;->put(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Attributes;
 
     return-object v0
 .end method

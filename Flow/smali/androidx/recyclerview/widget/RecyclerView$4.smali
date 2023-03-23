@@ -1,9 +1,9 @@
-.class final Landroidx/recyclerview/widget/RecyclerView$4;
+.class Landroidx/recyclerview/widget/RecyclerView$4;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 
 # interfaces
-.implements Landroid/view/animation/Interpolator;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -12,16 +12,22 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Landroidx/recyclerview/widget/RecyclerView;
+
+
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
-    .line 1049
+    .line 744
+    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$4;->this$0:Landroidx/recyclerview/widget/RecyclerView;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,22 +35,13 @@
 
 
 # virtual methods
-.method public getInterpolation(F)F
-    .locals 2
+.method public run()V
+    .locals 1
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    .line 747
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$4;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
-    sub-float/2addr p1, v0
+    invoke-static {v0}, Landroidx/recyclerview/widget/RecyclerView;->access$400(Landroidx/recyclerview/widget/RecyclerView;)V
 
-    mul-float v1, p1, p1
-
-    mul-float/2addr v1, p1
-
-    mul-float/2addr v1, p1
-
-    mul-float/2addr v1, p1
-
-    add-float/2addr v1, v0
-
-    return v1
+    return-void
 .end method

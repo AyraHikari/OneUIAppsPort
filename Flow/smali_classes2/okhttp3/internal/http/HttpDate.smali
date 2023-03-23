@@ -108,7 +108,7 @@
 .end method
 
 .method public static parse(Ljava/lang/String;)Ljava/util/Date;
-    .locals 9
+    .locals 10
 
     .line 76
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -163,9 +163,7 @@
 
     .line 88
     :try_start_0
-    sget-object v4, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
-
-    array-length v4, v4
+    array-length v4, v3
 
     move v5, v2
 
@@ -175,37 +173,35 @@
     .line 89
     sget-object v6, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMATS:[Ljava/text/DateFormat;
 
-    aget-object v6, v6, v5
+    aget-object v7, v6, v5
 
-    if-nez v6, :cond_2
+    if-nez v7, :cond_2
 
     .line 91
-    new-instance v6, Ljava/text/SimpleDateFormat;
+    new-instance v7, Ljava/text/SimpleDateFormat;
 
-    sget-object v7, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
+    sget-object v8, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
 
-    aget-object v7, v7, v5
+    aget-object v8, v8, v5
 
-    sget-object v8, Ljava/util/Locale;->US:Ljava/util/Locale;
+    sget-object v9, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    invoke-direct {v6, v7, v8}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+    invoke-direct {v7, v8, v9}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
     .line 94
-    sget-object v7, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
+    sget-object v8, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
 
-    invoke-virtual {v6, v7}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v7, v8}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 95
-    sget-object v7, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMATS:[Ljava/text/DateFormat;
-
-    aput-object v6, v7, v5
+    aput-object v7, v6, v5
 
     .line 97
     :cond_2
     invoke-virtual {v0, v2}, Ljava/text/ParsePosition;->setIndex(I)V
 
     .line 98
-    invoke-virtual {v6, p0, v0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
+    invoke-virtual {v7, p0, v0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
 
     move-result-object v6
 

@@ -21,11 +21,11 @@
     return-void
 .end method
 
-.method public getBounds(Landroid/graphics/RectF;Landroid/graphics/Matrix;)V
+.method public getBounds(Landroid/graphics/RectF;Landroid/graphics/Matrix;Z)V
     .locals 0
 
     .line 19
-    invoke-super {p0, p1, p2}, Lcom/airbnb/lottie/model/layer/BaseLayer;->getBounds(Landroid/graphics/RectF;Landroid/graphics/Matrix;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/airbnb/lottie/model/layer/BaseLayer;->getBounds(Landroid/graphics/RectF;Landroid/graphics/Matrix;Z)V
 
     const/4 p2, 0x0
 

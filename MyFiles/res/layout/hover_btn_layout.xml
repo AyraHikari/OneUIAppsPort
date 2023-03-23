@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/HoverBtnLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/air_button_share_via" android:src="@drawable/hover_share" android:contentDescription="@string/menu_share" android:layout_marginEnd="@dimen/air_button_between_space" style="@style/HoverBtn" />
+    <ImageButton android:id="@id/air_button_delete_via" android:src="@drawable/hover_delete" android:contentDescription="@string/menu_delete" style="@style/HoverBtn" />
+</LinearLayout>

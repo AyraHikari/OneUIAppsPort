@@ -3,6 +3,14 @@
 .source "CallManager.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/samsung/android/galaxycontinuity/manager/CallManager$CallStateListener;
+    }
+.end annotation
+
+
 # static fields
 .field private static final ACCEPT:Ljava/lang/String; = "Accept"
 
@@ -10,6 +18,10 @@
 
 
 # instance fields
+.field private callStateListener:Lcom/samsung/android/galaxycontinuity/manager/CallManager$CallStateListener;
+
+.field private isInitialized:Z
+
 .field phoneStateListener:Landroid/telephony/PhoneStateListener;
 
 .field private sLastState:Ljava/lang/String;
@@ -23,22 +35,56 @@
 .end method
 
 .method private constructor <init>()V
-    .locals 1
+    .locals 3
 
-    .line 34
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 25
+    .line 32
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_IDLE:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->sLastState:Ljava/lang/String;
 
-    .line 132
+    const/4 v0, 0x0
+
+    .line 34
+    iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->isInitialized:Z
+
+    .line 163
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x1f
+
+    if-ge v0, v2, :cond_0
+
     new-instance v0, Lcom/samsung/android/galaxycontinuity/manager/CallManager$1;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/manager/CallManager$1;-><init>(Lcom/samsung/android/galaxycontinuity/manager/CallManager;)V
 
+    goto :goto_0
+
+    :cond_0
+    move-object v0, v1
+
+    .line 218
+    :goto_0
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->phoneStateListener:Landroid/telephony/PhoneStateListener;
+
+    .line 220
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
+
+    if-lt v0, v2, :cond_1
+
+    .line 221
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/manager/CallManager$2;
+
+    invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/manager/CallManager$2;-><init>(Lcom/samsung/android/galaxycontinuity/manager/CallManager;)V
+
+    .line 275
+    :cond_1
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->callStateListener:Lcom/samsung/android/galaxycontinuity/manager/CallManager$CallStateListener;
 
     return-void
 .end method
@@ -48,10 +94,10 @@
 
     const-string v0, "Accept Call"
 
-    .line 75
+    .line 106
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 78
+    .line 109
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->getTelephonyService()Lcom/android/internal/telephony/ITelephony;
 
@@ -59,7 +105,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 80
+    .line 111
     invoke-interface {v0}, Lcom/android/internal/telephony/ITelephony;->answerRingingCall()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -72,7 +118,7 @@
     :catch_0
     move-exception v0
 
-    .line 83
+    .line 114
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const/4 v0, 0x0
@@ -83,7 +129,7 @@
 .method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/manager/CallManager;)Ljava/lang/String;
     .locals 0
 
-    .line 22
+    .line 29
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->sLastState:Ljava/lang/String;
 
     return-object p0
@@ -92,7 +138,7 @@
 .method static synthetic access$002(Lcom/samsung/android/galaxycontinuity/manager/CallManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 22
+    .line 29
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->sLastState:Ljava/lang/String;
 
     return-object p1
@@ -101,7 +147,7 @@
 .method static synthetic access$100(Lcom/samsung/android/galaxycontinuity/manager/CallManager;)Ljava/lang/Boolean;
     .locals 0
 
-    .line 22
+    .line 29
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->isVideoCall()Ljava/lang/Boolean;
 
     move-result-object p0
@@ -116,20 +162,20 @@
 
     monitor-enter v0
 
-    .line 29
+    .line 37
     :try_start_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 
     if-nez v1, :cond_0
 
-    .line 30
+    .line 38
     new-instance v1, Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/manager/CallManager;-><init>()V
 
     sput-object v1, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 
-    .line 31
+    .line 39
     :cond_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
     :try_end_0
@@ -152,10 +198,10 @@
 
     const-string v0, "Get TelephonyService"
 
-    .line 53
+    .line 84
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 56
+    .line 87
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -169,7 +215,7 @@
 
     check-cast v0, Landroid/telephony/TelephonyManager;
 
-    .line 59
+    .line 90
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
@@ -188,19 +234,19 @@
 
     new-array v4, v3, [Ljava/lang/Class;
 
-    .line 60
+    .line 91
     invoke-virtual {v1, v2, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    .line 61
+    .line 92
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     new-array v2, v3, [Ljava/lang/Object;
 
-    .line 62
+    .line 93
     invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -214,7 +260,7 @@
     :catch_0
     move-exception v0
 
-    .line 64
+    .line 95
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const/4 v0, 0x0
@@ -227,7 +273,7 @@
 
     const/4 v0, 0x0
 
-    .line 105
+    .line 136
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
@@ -243,20 +289,20 @@
 
     if-nez v1, :cond_0
 
-    .line 108
+    .line 139
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     return-object v0
 
-    .line 110
+    .line 141
     :cond_0
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
 
-    const-string v3, "semIsVideoCall"
+    const-string/jumbo v3, "semIsVideoCall"
 
     new-array v4, v0, [Ljava/lang/Class;
 
@@ -266,12 +312,12 @@
 
     new-array v3, v0, [Ljava/lang/Object;
 
-    .line 112
+    .line 143
     invoke-virtual {v2, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 113
+    .line 144
     instance-of v2, v1, Ljava/lang/Boolean;
 
     if-eqz v2, :cond_1
@@ -315,11 +361,11 @@
     :catch_2
     move-exception v1
 
-    .line 115
+    .line 146
     :goto_1
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 118
+    .line 149
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -332,10 +378,10 @@
 
     const-string v0, "Reject Call"
 
-    .line 89
+    .line 120
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 92
+    .line 123
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->getTelephonyService()Lcom/android/internal/telephony/ITelephony;
 
@@ -343,7 +389,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 94
+    .line 125
     invoke-interface {v0}, Lcom/android/internal/telephony/ITelephony;->endCall()Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -356,7 +402,7 @@
     :catch_0
     move-exception v0
 
-    .line 97
+    .line 128
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const/4 v0, 0x0
@@ -368,10 +414,18 @@
 # virtual methods
 .method public acceptOrRejectCall(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     const-string v0, "Accept"
 
-    .line 71
+    .line 102
     invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p1
@@ -394,9 +448,9 @@
 .end method
 
 .method public deInit()V
-    .locals 3
+    .locals 4
 
-    .line 45
+    .line 65
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -409,20 +463,65 @@
 
     check-cast v0, Landroid/telephony/TelephonyManager;
 
-    .line 46
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->phoneStateListener:Landroid/telephony/PhoneStateListener;
+    .line 66
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/4 v2, 0x0
 
+    const/16 v3, 0x1f
+
+    if-lt v1, v3, :cond_0
+
+    .line 67
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v1
+
+    const-string v3, "android.permission.READ_PHONE_STATE"
+
+    invoke-static {v1, v3}, Landroidx/core/app/ActivityCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 68
+    iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->isInitialized:Z
+
+    .line 69
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->callStateListener:Lcom/samsung/android/galaxycontinuity/manager/CallManager$CallStateListener;
+
+    invoke-virtual {v0, v1}, Landroid/telephony/TelephonyManager;->unregisterTelephonyCallback(Landroid/telephony/TelephonyCallback;)V
+
+    goto :goto_0
+
+    .line 72
+    :cond_0
+    iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->isInitialized:Z
+
+    .line 73
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->phoneStateListener:Landroid/telephony/PhoneStateListener;
+
     invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
+    :cond_1
+    :goto_0
     return-void
 .end method
 
-.method public init()V
-    .locals 3
+.method public getInitializeStatus()Z
+    .locals 1
 
-    .line 39
+    .line 78
+    iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->isInitialized:Z
+
+    return v0
+.end method
+
+.method public init()V
+    .locals 4
+
+    .line 46
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -435,12 +534,58 @@
 
     check-cast v0, Landroid/telephony/TelephonyManager;
 
-    .line 40
+    .line 47
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
+
+    const/4 v2, 0x1
+
+    const/16 v3, 0x1f
+
+    if-lt v1, v3, :cond_0
+
+    .line 48
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v1
+
+    const-string v3, "android.permission.READ_PHONE_STATE"
+
+    invoke-static {v1, v3}, Landroidx/core/app/ActivityCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 49
+    iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->isInitialized:Z
+
+    .line 50
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getMainExecutor()Ljava/util/concurrent/Executor;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->callStateListener:Lcom/samsung/android/galaxycontinuity/manager/CallManager$CallStateListener;
+
+    invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->registerTelephonyCallback(Ljava/util/concurrent/Executor;Landroid/telephony/TelephonyCallback;)V
+
+    goto :goto_0
+
+    .line 53
+    :cond_0
+    iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->isInitialized:Z
+
+    .line 54
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->phoneStateListener:Landroid/telephony/PhoneStateListener;
 
     const/16 v2, 0x20
 
     invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
+    :cond_1
+    :goto_0
     return-void
 .end method

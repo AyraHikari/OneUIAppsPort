@@ -11,9 +11,8 @@
     <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
     <dimen name="list_item_padding_top">15.0dip</dimen>
     <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
-    <dimen name="mtrl_toolbar_default_height">64.0dip</dimen>
     <dimen name="samsung_pass_auth_dialog_button_area_height">48.0dip</dimen>
     <dimen name="samsung_pass_auth_dialog_margin_bottom">24.0dip</dimen>
     <dimen name="samsung_pass_auth_dialog_margin_top">32.0dip</dimen>
-    <dimen name="sesl_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
 </resources>

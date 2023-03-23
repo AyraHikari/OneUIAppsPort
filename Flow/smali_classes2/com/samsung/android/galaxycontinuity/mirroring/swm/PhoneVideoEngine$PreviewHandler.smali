@@ -30,11 +30,21 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;Landroid/os/Looper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "looper"
+        }
+    .end annotation
 
-    .line 554
+    .line 601
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    .line 555
+    .line 602
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -45,7 +55,7 @@
 
     monitor-enter p0
 
-    .line 670
+    .line 717
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -55,7 +65,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 671
+    .line 718
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/graphics/SurfaceTexture;
@@ -64,7 +74,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 672
+    .line 719
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/graphics/SurfaceTexture;
@@ -73,12 +83,12 @@
 
     invoke-virtual {v0}, Landroid/graphics/SurfaceTexture;->updateTexImage()V
 
-    .line 674
+    .line 721
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 677
+    .line 724
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1600(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)J
@@ -111,13 +121,13 @@
 
     if-nez v0, :cond_5
 
-    .line 679
+    .line 726
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
     if-eqz v0, :cond_3
 
-    .line 680
+    .line 727
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$2100(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)I
@@ -136,7 +146,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 681
+    .line 728
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;->getInstance()Lcom/samsung/android/galaxycontinuity/services/subfeature/ControlTower;
 
     move-result-object v0
@@ -147,7 +157,7 @@
 
     if-nez v0, :cond_1
 
-    .line 682
+    .line 729
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mViewMatRotated:[F
@@ -156,7 +166,7 @@
 
     goto :goto_0
 
-    .line 684
+    .line 731
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
@@ -166,7 +176,7 @@
 
     goto :goto_0
 
-    .line 687
+    .line 734
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
@@ -174,7 +184,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->render([F)V
 
-    .line 691
+    .line 738
     :cond_3
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
@@ -185,7 +195,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 692
+    .line 739
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$700(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;
@@ -194,7 +204,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;->swapBuffers()V
 
-    .line 694
+    .line 741
     :cond_4
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -218,7 +228,7 @@
     :catch_0
     move-exception v0
 
-    .line 702
+    .line 749
     :try_start_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -228,19 +238,23 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v0}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 703
+    .line 750
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->stopEncode()V
@@ -250,7 +264,7 @@
     :catch_1
     move-exception v0
 
-    .line 699
+    .line 746
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -259,26 +273,30 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v0}, Ljava/lang/NullPointerException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 700
+    .line 747
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->stopEncode()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 705
+    .line 752
     :cond_5
     :goto_1
     monitor-exit p0
@@ -295,8 +313,16 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
-    .line 560
+    .line 607
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
@@ -313,13 +339,13 @@
 
     goto/16 :goto_1
 
-    .line 650
+    .line 697
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->RenderFrameByCondition()V
 
     goto/16 :goto_1
 
-    .line 644
+    .line 691
     :cond_1
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->RenderFrameByCondition()V
 
@@ -328,15 +354,15 @@
     :cond_2
     const-string v0, "[VideoEngine] handleMessage : LIMITED_FPS = start Video Engine"
 
-    .line 564
+    .line 611
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 566
+    .line 613
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$600(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)V
 
-    .line 573
+    .line 620
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -346,7 +372,7 @@
 
     invoke-static {v0, v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$702(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;
 
-    .line 574
+    .line 621
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$700(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;
@@ -363,7 +389,7 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;->prepareCore(Landroid/view/Surface;Landroid/opengl/EGLContext;)V
 
-    .line 575
+    .line 622
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$700(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;
@@ -372,7 +398,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;->makeCurrent()V
 
-    .line 577
+    .line 624
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$900(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)I
@@ -381,7 +407,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 580
+    .line 627
     :try_start_1
     new-instance v2, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
@@ -389,10 +415,10 @@
 
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
-    .line 581
+    .line 628
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->prepareRenderer()V
 
-    .line 582
+    .line 629
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->setTexture(I)V
@@ -405,23 +431,23 @@
     :try_start_2
     new-array v3, v2, [F
 
-    .line 588
+    .line 635
     iput-object v3, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mViewMat:[F
 
     const/4 v4, 0x0
 
-    .line 589
+    .line 636
     invoke-static {v3, v4}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
     new-array v2, v2, [F
 
-    .line 591
+    .line 638
     iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mViewMatRotated:[F
 
-    .line 592
+    .line 639
     invoke-static {v2, v4}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 593
+    .line 640
     iget-object v5, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mViewMatRotated:[F
 
     const/4 v6, 0x0
@@ -436,7 +462,7 @@
 
     invoke-static/range {v5 .. v10}, Landroid/opengl/Matrix;->setRotateM([FIFFFF)V
 
-    .line 595
+    .line 642
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     new-instance v3, Landroid/graphics/SurfaceTexture;
@@ -445,7 +471,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1002(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;Landroid/graphics/SurfaceTexture;)Landroid/graphics/SurfaceTexture;
 
-    .line 596
+    .line 643
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/graphics/SurfaceTexture;
@@ -466,7 +492,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/SurfaceTexture;->setDefaultBufferSize(II)V
 
-    .line 598
+    .line 645
     new-instance v9, Landroid/view/Surface;
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
@@ -477,7 +503,7 @@
 
     invoke-direct {v9, v0}, Landroid/view/Surface;-><init>(Landroid/graphics/SurfaceTexture;)V
 
-    .line 599
+    .line 646
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/graphics/SurfaceTexture;
@@ -486,7 +512,7 @@
 
     invoke-virtual {v0, p0}, Landroid/graphics/SurfaceTexture;->setOnFrameAvailableListener(Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;)V
 
-    .line 601
+    .line 648
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1500(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/hardware/display/DisplayManager;
@@ -497,7 +523,7 @@
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
-    .line 602
+    .line 649
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1100(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)I
 
     move-result v6
@@ -516,14 +542,14 @@
 
     const/16 v10, 0x10
 
-    .line 601
+    .line 648
     invoke-virtual/range {v4 .. v10}, Landroid/hardware/display/DisplayManager;->createVirtualDisplay(Ljava/lang/String;IIILandroid/view/Surface;I)Landroid/hardware/display/VirtualDisplay;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1302(Landroid/hardware/display/VirtualDisplay;)Landroid/hardware/display/VirtualDisplay;
 
-    .line 605
+    .line 652
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     const-wide/16 v2, 0x0
@@ -535,7 +561,7 @@
     :catch_0
     move-exception v0
 
-    .line 584
+    .line 631
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
@@ -545,10 +571,10 @@
     :catch_1
     move-exception v0
 
-    .line 607
+    .line 654
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 610
+    .line 657
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -556,10 +582,10 @@
 
     const-string v0, "VideoEngine initialized"
 
-    .line 611
+    .line 658
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 612
+    .line 659
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1800(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/util/concurrent/CountDownLatch;
@@ -568,7 +594,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 613
+    .line 660
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1800(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Ljava/util/concurrent/CountDownLatch;
@@ -577,7 +603,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 619
+    .line 666
     :cond_3
     new-instance v0, Ljava/lang/Thread;
 
@@ -589,13 +615,13 @@
 
     const-string v1, "VideoEngine_msgHandler_requestRender_thread"
 
-    .line 637
+    .line 684
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 638
+    .line 685
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 657
+    .line 704
     :goto_1
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
@@ -604,15 +630,23 @@
 
 .method public onFrameAvailable(Landroid/graphics/SurfaceTexture;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     const/4 p1, 0x2
 
-    .line 662
+    .line 709
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object p1
 
-    .line 663
+    .line 710
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->sendMessage(Landroid/os/Message;)Z
 
     return-void
@@ -623,10 +657,10 @@
 
     const-string v0, "[VideoEngine] release"
 
-    .line 708
+    .line 755
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 710
+    .line 757
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/graphics/SurfaceTexture;
@@ -637,7 +671,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 711
+    .line 758
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1000(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Landroid/graphics/SurfaceTexture;
@@ -646,12 +680,12 @@
 
     invoke-virtual {v0}, Landroid/graphics/SurfaceTexture;->release()V
 
-    .line 712
+    .line 759
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$1002(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;Landroid/graphics/SurfaceTexture;)Landroid/graphics/SurfaceTexture;
 
-    .line 715
+    .line 762
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
@@ -661,7 +695,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 716
+    .line 763
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$700(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;
@@ -670,21 +704,21 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;->release()V
 
-    .line 717
+    .line 764
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;
 
     invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;->access$702(Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine;Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;)Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLCore;
 
-    .line 720
+    .line 767
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
     if-eqz v0, :cond_2
 
-    .line 721
+    .line 768
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;->release()V
 
-    .line 722
+    .line 769
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/swm/PhoneVideoEngine$PreviewHandler;->mRender:Lcom/samsung/android/galaxycontinuity/mirroring/swm/GLRender;
 
     :cond_2

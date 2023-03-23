@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 235
+    .line 202
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -31,7 +31,7 @@
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
     .locals 2
 
-    .line 237
+    .line 204
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->matchesLetter()Z
 
     move-result v0
@@ -40,36 +40,28 @@
 
     const/4 v0, 0x0
 
-    .line 238
+    .line 205
     invoke-virtual {p1, v0}, Lorg/jsoup/parser/Tokeniser;->createTagPending(Z)Lorg/jsoup/parser/Token$Tag;
 
-    .line 239
+    .line 206
     iget-object v0, p1, Lorg/jsoup/parser/Tokeniser;->tagPending:Lorg/jsoup/parser/Token$Tag;
 
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->current()C
 
     move-result v1
 
-    invoke-static {v1}, Ljava/lang/Character;->toLowerCase(C)C
-
-    move-result v1
-
     invoke-virtual {v0, v1}, Lorg/jsoup/parser/Token$Tag;->appendTagName(C)V
 
-    .line 240
+    .line 207
     iget-object v0, p1, Lorg/jsoup/parser/Tokeniser;->dataBuffer:Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->current()C
 
     move-result p2
 
-    invoke-static {p2}, Ljava/lang/Character;->toLowerCase(C)C
-
-    move-result p2
-
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 241
+    .line 208
     sget-object p2, Lorg/jsoup/parser/TokeniserState$12;->RCDATAEndTagName:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->advanceTransition(Lorg/jsoup/parser/TokeniserState;)V
@@ -79,10 +71,10 @@
     :cond_0
     const-string p2, "</"
 
-    .line 243
+    .line 210
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
 
-    .line 244
+    .line 211
     sget-object p2, Lorg/jsoup/parser/TokeniserState$12;->Rcdata:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V

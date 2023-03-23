@@ -18,10 +18,10 @@
 .method public constructor <init>(Lorg/jsoup/select/Evaluator;)V
     .locals 0
 
-    .line 76
+    .line 78
     invoke-direct {p0}, Lorg/jsoup/select/StructuralEvaluator;-><init>()V
 
-    .line 77
+    .line 79
     iput-object p1, p0, Lorg/jsoup/select/StructuralEvaluator$ImmediateParent;->evaluator:Lorg/jsoup/select/Evaluator;
 
     return-void
@@ -38,7 +38,7 @@
 
     return v0
 
-    .line 84
+    .line 86
     :cond_0
     invoke-virtual {p2}, Lorg/jsoup/nodes/Element;->parent()Lorg/jsoup/nodes/Element;
 
@@ -46,7 +46,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 85
+    .line 87
     iget-object v1, p0, Lorg/jsoup/select/StructuralEvaluator$ImmediateParent;->evaluator:Lorg/jsoup/select/Evaluator;
 
     invoke-virtual {v1, p1, p2}, Lorg/jsoup/select/Evaluator;->matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
@@ -68,7 +68,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 90
+    .line 92
     iget-object v1, p0, Lorg/jsoup/select/StructuralEvaluator$ImmediateParent;->evaluator:Lorg/jsoup/select/Evaluator;
 
     const/4 v2, 0x0

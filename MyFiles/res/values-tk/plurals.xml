@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">%d elementden köp saýlap bolmaýar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementden köp saýlap bolmaýar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">%d faýly Zibile geçirip bolmaýar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýly Zibile geçirip bolmaýar</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d bukjany Zibile geçirip bolmaýar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukjany Zibile geçirip bolmaýar</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d zady Zibile geçirip bolmaýar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d zady Zibile geçirip bolmaýar</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Saýlanan faýllaryň %d sany pozular, sebäbi olar bulutda ýa-da USB saklawhana enjamda.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Saýlanan faýllaryň %d sany pozular, sebäbi ol bulutda ýa-da USB saklawhana enjamda.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Saýlanan bukjalaryň %d sany pozular, sebäbi olar bulutda ýa-da USB saklawhana enjamda.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Saýlanan bukjalaryň %d sany pozular, sebäbi ol bulutda ýa-da USB saklawhana enjamda.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Saýlanan elementleriň %d sany pozular, sebäbi olar bulutda ýa-da USB saklawhana enjamda.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Saýlanan elementleriň %d sany pozular, sebäbi ol bulutda ýa-da USB saklawhana enjamda.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d faýl gysylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl gysylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d faýl gysylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl gysylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d bukja gysylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja gysylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d bukja gysylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja gysylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d element gysylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element gysylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d element gysylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element gysylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d faýl göçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl göçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d faýl göçürilip alynýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl göçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d bukja göçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja göçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d bukja göçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja göçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d element göçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element göçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d element göçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element göçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">%d faýly telefonyňyzdan pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýly telefonyňyzdan pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">%d faýly planşetiňizden pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýly planşetiňizden pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">%d bukja telefonyňyzdan pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja telefonyňyzdan pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">%d bukja planşetiňizden pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja planşetiňizden pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">%d element telefonyňyzdan pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementi telefonyňyzdan pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">%d elementi planşetiňizden pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementi planşetiňizden pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d faýl öçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl öçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d bukja öçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja öçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Zibilden %d element öçürilýr…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zibilden %d element öçürilýr…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d element öçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element öçürilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d faýl çykarylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl çykarylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d bukja çykarylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja çykarylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d element çykarylýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element çykarylýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d faýl hem %2$s-da Zibil-e geçiriler.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d faýl hem %2$s-da Zibil-e geçiriler.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d faýl dikeldilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl dikeldilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d bukja hem %2$s-da Zibil-e geçiriler.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d bukja hem %2$s-da Zibil-e geçiriler.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d bukja dikeldilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja dikeldilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Içerki toplaýjyňyz doly. %d faýly hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Içerki toplaýjyňyz doly. %d faýly hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Içerki toplaýjyňyz doly. %d bukja hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Içerki toplaýjyňyz doly. %d bukja hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Içerki toplaýjyňyz doly. %d elementi hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Içerki toplaýjyňyz doly. %d elementi hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Içerki toplaýjyňyz we SD kartaňyz doly. %d faýly hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Içerki toplaýjyňyz we SD kartaňyz doly. %d faýly hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Içerki toplaýjyňyz we SD kartaňyz doly. %d bukja hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Içerki toplaýjyňyz we SD kartaňyz doly. %d bukja hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Içerki toplaýjyňyz we SD kartaňyz doly. %d elementi hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Içerki toplaýjyňyz we SD kartaňyz doly. %d elementi hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d element dikeldilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element dikeldilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d element hem %2$s-da Zibil-e geçiriler.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d element hem %2$s-da Zibil-e geçiriler.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">%d programma penjiresinden köp açyp bolmaýar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d programma penjiresinden köp açyp bolmaýar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d faýly Zibile geçirmelimi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýly Zibile geçirmelimi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d faýly Zibile geçirmelimi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl Zibile geçirmelimi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d bukja Zibile geçirmelimi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja Zibile geçirmelimi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d bukja Zibile geçirmelimi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja Zibile geçirmelimi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d elementi Zibile geçirmelimi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementi Zibile geçirmelimi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d element Zibile geçirmelimi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element Zibile geçirmelimi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d faýly Zibile geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýly Zibile geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d bukja Zibile geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja Zibile geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d element Zibile geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element Zibile geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d faýl geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d faýl geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d bukja geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d bukja geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d element geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d element geçirilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element geçirilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d element gysyldy</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element gysyldy</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d element %2$s içine göçürildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d element %2$s içine göçürildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Bukjany we içindäki %d faýly öçürmelimi?</item>
+        <item quantity="one">Bukjany we içindäki faýly öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d bukjany we içindäki %2$d faýly öçürmelimi?</item>
+        <item quantity="one">Bukjany we içindäki faýly öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d element pozuldy</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element pozuldy</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d faýl göçürilip alynýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl göçürilip alynýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d bukja göçürilip alynýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja göçürilip alynýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d element göçürilip alynýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element göçürilip alynýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Bukjalary paýlaşyp bolmaýar. Bukjalar boş.</item>
+        <item quantity="one">Bukja paýlaşyp bolmaýar. Bukja boş.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d faýl hemişelik öçüriler.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl hemişelik öçüriler.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d bukja hemişelik öçüriler.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja hemişelik öçüriler.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d element çykaryldy</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element çykaryldy</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d faýl Halanýanlara goşuldy.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl Halanýanlara goşuldy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d faýl Halanýanlardan aýryldy.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl Halanýanlardan aýryldy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d bukja Halanýanlara goşuldy.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja Halanýanlara goşuldy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d bukja Halanýanlardan aýryldy.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja Halanýanlardan aýryldy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d element Halanýanlara goşuldy.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element Halanýanlara goşuldy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d zat Halanýanlardan aýryldy.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d zat Halanýanlardan aýryldy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d zat</item>
+        <item quantity="one">1 zat</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d zat</item>
+        <item quantity="one">%d zat</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d element çalşyk buferine göçürildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element çalşyk buferine göçürildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d element çalşyk buferine geçirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element çalşyk buferine geçirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d element saýlandy</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element saýlanyldy</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d element %2$s içine geçirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d element %2$s içine geçirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d element Zibile geçirildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element Zibile geçirildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d saýlanyldy</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d saýlanyldy</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD kartaňyz doly. %d faýly hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartaňyz doly. %d faýly hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD kartaňyz doly. %d bukja hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartaňyz doly. %d bukja hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD kartaňyz doly. %d elementi hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartaňyz doly. %d elementi hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Bu faýl %d günden pozular.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bu faýl %d günden pozular.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Bu bukja %d günden pozular.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bu bukja %d günden pozular.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d faýly hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýly hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d faýly pozulýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl pozulýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d faýl dikeldilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl dikeldilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d bukja hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d bukja pozulýar…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja pozulýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d bukja dikeldilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d bukja dikeldilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d elementi hemişelik pozmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d elementi hemişelik pozmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d element öçürilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element pozulýar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d element dikeldilýär…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d element dikeldilýär…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d günden pozular</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d günden pozular</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d programmany gurnawdan aýyrmalymy?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d programmany gurnawdan aýyrmalymy?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

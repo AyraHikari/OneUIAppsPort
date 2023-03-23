@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 462
+    .line 421
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -31,30 +31,26 @@
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
     .locals 2
 
-    .line 464
+    .line 423
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->matchesLetter()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 465
+    .line 424
     invoke-virtual {p1}, Lorg/jsoup/parser/Tokeniser;->createTempBuffer()V
 
-    .line 466
+    .line 425
     iget-object v0, p1, Lorg/jsoup/parser/Tokeniser;->dataBuffer:Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->current()C
 
     move-result v1
 
-    invoke-static {v1}, Ljava/lang/Character;->toLowerCase(C)C
-
-    move-result v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 467
+    .line 426
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -63,19 +59,23 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->current()C
 
     move-result p2
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
 
-    .line 468
+    .line 427
     sget-object p2, Lorg/jsoup/parser/TokeniserState$25;->ScriptDataDoubleEscapeStart:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->advanceTransition(Lorg/jsoup/parser/TokeniserState;)V
@@ -85,17 +85,17 @@
     :cond_0
     const/16 v0, 0x2f
 
-    .line 469
+    .line 428
     invoke-virtual {p2, v0}, Lorg/jsoup/parser/CharacterReader;->matches(C)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 470
+    .line 429
     invoke-virtual {p1}, Lorg/jsoup/parser/Tokeniser;->createTempBuffer()V
 
-    .line 471
+    .line 430
     sget-object p2, Lorg/jsoup/parser/TokeniserState$25;->ScriptDataEscapedEndTagOpen:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->advanceTransition(Lorg/jsoup/parser/TokeniserState;)V
@@ -105,10 +105,10 @@
     :cond_1
     const/16 p2, 0x3c
 
-    .line 473
+    .line 432
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
-    .line 474
+    .line 433
     sget-object p2, Lorg/jsoup/parser/TokeniserState$25;->ScriptDataEscaped:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V

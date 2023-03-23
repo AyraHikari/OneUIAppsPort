@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">"Can't select more than %d items."</item>
+        <item quantity="zero">"Can't select more than %d items."</item>
+        <item quantity="one">"Can't select more than %d item."</item>
+        <item quantity="two">"Can't select more than %d items."</item>
+        <item quantity="few">"Can't select more than %d items."</item>
+        <item quantity="many">"Can't select more than %d items."</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">"Can't move %d files to the Trash"</item>
+        <item quantity="zero">"Can't move %d files to the Trash"</item>
+        <item quantity="one">"Can't move %d file to the Trash"</item>
+        <item quantity="two">"Can't move %d files to the Trash"</item>
+        <item quantity="few">"Can't move %d files to the Trash"</item>
+        <item quantity="many">"Can't move %d files to the Trash"</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">"Can't move %d folders to the Trash"</item>
+        <item quantity="zero">"Can't move %d folders to the Trash"</item>
+        <item quantity="one">"Can't move %d folder to the Trash"</item>
+        <item quantity="two">"Can't move %d folders to the Trash"</item>
+        <item quantity="few">"Can't move %d folders to the Trash"</item>
+        <item quantity="many">"Can't move %d folders to the Trash"</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">"Can't move %d items to the Trash"</item>
+        <item quantity="zero">"Can't move %d items to the Trash"</item>
+        <item quantity="one">"Can't move %d item to the Trash"</item>
+        <item quantity="two">"Can't move %d items to the Trash"</item>
+        <item quantity="few">"Can't move %d items to the Trash"</item>
+        <item quantity="many">"Can't move %d items to the Trash"</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">"%d of the selected files will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="zero">"%d of the selected files will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="one">"%d of the selected files will be deleted because it's on the cloud or a USB storage device."</item>
+        <item quantity="two">"%d of the selected files will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="few">"%d of the selected files will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="many">"%d of the selected files will be deleted because they're on the cloud or a USB storage device."</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">"%d of the selected folders will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="zero">"%d of the selected folders will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="one">"%d of the selected folders will be deleted because it's on the cloud or a USB storage device."</item>
+        <item quantity="two">"%d of the selected folders will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="few">"%d of the selected folders will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="many">"%d of the selected folders will be deleted because they're on the cloud or a USB storage device."</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">"%d of the selected items will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="zero">"%d of the selected items will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="two">"%d of the selected items will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="few">"%d of the selected items will be deleted because they're on the cloud or a USB storage device."</item>
+        <item quantity="many">"%d of the selected items will be deleted because they're on the cloud or a USB storage device."</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Compressing %d files…</item>
+        <item quantity="zero">Compressing %d files…</item>
+        <item quantity="one">Compressing %d file…</item>
+        <item quantity="two">Compressing %d files…</item>
+        <item quantity="few">Compressing %d files…</item>
+        <item quantity="many">Compressing %d files…</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Compressing %d files…</item>
+        <item quantity="zero">Compressing %d files…</item>
+        <item quantity="one">Compressing %d file…</item>
+        <item quantity="two">Compressing %d files…</item>
+        <item quantity="few">Compressing %d files…</item>
+        <item quantity="many">Compressing %d files…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Compressing %d folders…</item>
+        <item quantity="zero">Compressing %d folders…</item>
+        <item quantity="one">Compressing %d folder…</item>
+        <item quantity="two">Compressing %d folders…</item>
+        <item quantity="few">Compressing %d folders…</item>
+        <item quantity="many">Compressing %d folders…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Compressing %d folders…</item>
+        <item quantity="zero">Compressing %d folders…</item>
+        <item quantity="one">Compressing %d folder…</item>
+        <item quantity="two">Compressing %d folders…</item>
+        <item quantity="few">Compressing %d folders…</item>
+        <item quantity="many">Compressing %d folders…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Compressing %d items…</item>
+        <item quantity="zero">Compressing %d items…</item>
+        <item quantity="one">Compressing %d item…</item>
+        <item quantity="two">Compressing %d items…</item>
+        <item quantity="few">Compressing %d items…</item>
+        <item quantity="many">Compressing %d items…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Compressing %d items…</item>
+        <item quantity="zero">Compressing %d items…</item>
+        <item quantity="one">Compressing %d item…</item>
+        <item quantity="two">Compressing %d items…</item>
+        <item quantity="few">Compressing %d items…</item>
+        <item quantity="many">Compressing %d items…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Copying %d files…</item>
+        <item quantity="zero">Copying %d files…</item>
+        <item quantity="one">Copying %d file…</item>
+        <item quantity="two">Copying %d files…</item>
+        <item quantity="few">Copying %d files…</item>
+        <item quantity="many">Copying %d files…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Copying %d files…</item>
+        <item quantity="zero">Copying %d files…</item>
+        <item quantity="one">Copying %d file…</item>
+        <item quantity="two">Copying %d files…</item>
+        <item quantity="few">Copying %d files…</item>
+        <item quantity="many">Copying %d files…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Copying %d folders…</item>
+        <item quantity="zero">Copying %d folders…</item>
+        <item quantity="one">Copying %d folder…</item>
+        <item quantity="two">Copying %d folders…</item>
+        <item quantity="few">Copying %d folders…</item>
+        <item quantity="many">Copying %d folders…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Copying %d folders…</item>
+        <item quantity="zero">Copying %d folders…</item>
+        <item quantity="one">Copying %d folder…</item>
+        <item quantity="two">Copying %d folders…</item>
+        <item quantity="few">Copying %d folders…</item>
+        <item quantity="many">Copying %d folders…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Copying %d items…</item>
+        <item quantity="zero">Copying %d items…</item>
+        <item quantity="two">Copying %d items…</item>
+        <item quantity="few">Copying %d items…</item>
+        <item quantity="many">Copying %d items…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Copying %d items…</item>
+        <item quantity="zero">Copying %d items…</item>
+        <item quantity="two">Copying %d items…</item>
+        <item quantity="few">Copying %d items…</item>
+        <item quantity="many">Copying %d items…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Delete %d files from your phone?</item>
+        <item quantity="zero">Delete %d files from your phone?</item>
+        <item quantity="one">Delete %d file from your phone?</item>
+        <item quantity="two">Delete %d files from your phone?</item>
+        <item quantity="few">Delete %d files from your phone?</item>
+        <item quantity="many">Delete %d files from your phone?</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Delete %d files from your tablet?</item>
+        <item quantity="zero">Delete %d files from your tablet?</item>
+        <item quantity="one">Delete %d file from your tablet?</item>
+        <item quantity="two">Delete %d files from your tablet?</item>
+        <item quantity="few">Delete %d files from your tablet?</item>
+        <item quantity="many">Delete %d files from your tablet?</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Delete %d folders from your phone?</item>
+        <item quantity="zero">Delete %d folders from your phone?</item>
+        <item quantity="one">Delete %d folder from your phone?</item>
+        <item quantity="two">Delete %d folders from your phone?</item>
+        <item quantity="few">Delete %d folders from your phone?</item>
+        <item quantity="many">Delete %d folders from your phone?</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Delete %d folders from your tablet?</item>
+        <item quantity="zero">Delete %d folders from your tablet?</item>
+        <item quantity="one">Delete %d folder from your tablet?</item>
+        <item quantity="two">Delete %d folders from your tablet?</item>
+        <item quantity="few">Delete %d folders from your tablet?</item>
+        <item quantity="many">Delete %d folders from your tablet?</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Delete %d items from your phone?</item>
+        <item quantity="zero">Delete %d items from your phone?</item>
+        <item quantity="two">Delete %d items from your phone?</item>
+        <item quantity="few">Delete %d items from your phone?</item>
+        <item quantity="many">Delete %d items from your phone?</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Delete %d items from your tablet?</item>
+        <item quantity="zero">Delete %d items from your tablet?</item>
+        <item quantity="two">Delete %d items from your tablet?</item>
+        <item quantity="few">Delete %d items from your tablet?</item>
+        <item quantity="many">Delete %d items from your tablet?</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Deleting %d files…</item>
+        <item quantity="zero">Deleting %d files…</item>
+        <item quantity="one">Deleting %d file…</item>
+        <item quantity="two">Deleting %d files…</item>
+        <item quantity="few">Deleting %d files…</item>
+        <item quantity="many">Deleting %d files…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Deleting %d folders…</item>
+        <item quantity="zero">Deleting %d folders…</item>
+        <item quantity="one">Deleting %d folder…</item>
+        <item quantity="two">Deleting %d folders…</item>
+        <item quantity="few">Deleting %d folders…</item>
+        <item quantity="many">Deleting %d folders…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Deleting %d items from Trash…</item>
+        <item quantity="zero">Deleting %d items from Trash…</item>
+        <item quantity="one">Deleting %d item from Trash…</item>
+        <item quantity="two">Deleting %d items from Trash…</item>
+        <item quantity="few">Deleting %d items from Trash…</item>
+        <item quantity="many">Deleting %d items from Trash…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Deleting %d items…</item>
+        <item quantity="zero">Deleting %d items…</item>
+        <item quantity="one">Deleting %d item…</item>
+        <item quantity="two">Deleting %d items…</item>
+        <item quantity="few">Deleting %d items…</item>
+        <item quantity="many">Deleting %d items…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Extracting %d files…</item>
+        <item quantity="zero">Extracting %d files…</item>
+        <item quantity="one">Extracting %d file…</item>
+        <item quantity="two">Extracting %d files…</item>
+        <item quantity="few">Extracting %d files…</item>
+        <item quantity="many">Extracting %d files…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Extracting %d folders…</item>
+        <item quantity="zero">Extracting %d folders…</item>
+        <item quantity="one">Extracting %d folder…</item>
+        <item quantity="two">Extracting %d folders…</item>
+        <item quantity="few">Extracting %d folders…</item>
+        <item quantity="many">Extracting %d folders…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Extracting %d items…</item>
+        <item quantity="zero">Extracting %d items…</item>
+        <item quantity="two">Extracting %d items…</item>
+        <item quantity="few">Extracting %d items…</item>
+        <item quantity="many">Extracting %d items…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d files will also be moved to the Trash in %2$s.</item>
+        <item quantity="zero">%1$d files will also be moved to the Trash in %2$s.</item>
+        <item quantity="one">%1$d file will also be moved to the Trash in %2$s.</item>
+        <item quantity="two">%1$d files will also be moved to the Trash in %2$s.</item>
+        <item quantity="few">%1$d files will also be moved to the Trash in %2$s.</item>
+        <item quantity="many">%1$d files will also be moved to the Trash in %2$s.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Restoring %d files…</item>
+        <item quantity="zero">Restoring %d files…</item>
+        <item quantity="one">Restoring %d file…</item>
+        <item quantity="two">Restoring %d files…</item>
+        <item quantity="few">Restoring %d files…</item>
+        <item quantity="many">Restoring %d files…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d folders will also be moved to the Trash in %2$s.</item>
+        <item quantity="zero">%1$d folders will also be moved to the Trash in %2$s.</item>
+        <item quantity="one">%1$d folder will also be moved to the Trash in %2$s.</item>
+        <item quantity="two">%1$d folders will also be moved to the Trash in %2$s.</item>
+        <item quantity="few">%1$d folders will also be moved to the Trash in %2$s.</item>
+        <item quantity="many">%1$d folders will also be moved to the Trash in %2$s.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Restoring %d folders…</item>
+        <item quantity="zero">Restoring %d folders…</item>
+        <item quantity="one">Restoring %d folder…</item>
+        <item quantity="two">Restoring %d folders…</item>
+        <item quantity="few">Restoring %d folders…</item>
+        <item quantity="many">Restoring %d folders…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Your internal storage is full. Permanently delete %d files?</item>
+        <item quantity="zero">Your internal storage is full. Permanently delete %d files?</item>
+        <item quantity="one">Your internal storage is full. Permanently delete %d file?</item>
+        <item quantity="two">Your internal storage is full. Permanently delete %d files?</item>
+        <item quantity="few">Your internal storage is full. Permanently delete %d files?</item>
+        <item quantity="many">Your internal storage is full. Permanently delete %d files?</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Your internal storage is full. Permanently delete %d folders?</item>
+        <item quantity="zero">Your internal storage is full. Permanently delete %d folders?</item>
+        <item quantity="one">Your internal storage is full. Permanently delete %d folder?</item>
+        <item quantity="two">Your internal storage is full. Permanently delete %d folders?</item>
+        <item quantity="few">Your internal storage is full. Permanently delete %d folders?</item>
+        <item quantity="many">Your internal storage is full. Permanently delete %d folders?</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Your internal storage is full. Permanently delete %d items?</item>
+        <item quantity="zero">Your internal storage is full. Permanently delete %d items?</item>
+        <item quantity="one">Your internal storage is full. Permanently delete %d item?</item>
+        <item quantity="two">Your internal storage is full. Permanently delete %d items?</item>
+        <item quantity="few">Your internal storage is full. Permanently delete %d items?</item>
+        <item quantity="many">Your internal storage is full. Permanently delete %d items?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Your internal storage and SD card are full. Permanently delete %d files?</item>
+        <item quantity="zero">Your internal storage and SD card are full. Permanently delete %d files?</item>
+        <item quantity="one">Your internal storage and SD card are full. Permanently delete %d file?</item>
+        <item quantity="two">Your internal storage and SD card are full. Permanently delete %d files?</item>
+        <item quantity="few">Your internal storage and SD card are full. Permanently delete %d files?</item>
+        <item quantity="many">Your internal storage and SD card are full. Permanently delete %d files?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Your internal storage and SD card are full. Permanently delete %d folders?</item>
+        <item quantity="zero">Your internal storage and SD card are full. Permanently delete %d folders?</item>
+        <item quantity="one">Your internal storage and SD card are full. Permanently delete %d folder?</item>
+        <item quantity="two">Your internal storage and SD card are full. Permanently delete %d folders?</item>
+        <item quantity="few">Your internal storage and SD card are full. Permanently delete %d folders?</item>
+        <item quantity="many">Your internal storage and SD card are full. Permanently delete %d folders?</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Your internal storage and SD card is full. Permanently delete %d items?</item>
+        <item quantity="zero">Your internal storage and SD card is full. Permanently delete %d items?</item>
+        <item quantity="one">Your internal storage and SD card are full. Permanently delete %d item?</item>
+        <item quantity="two">Your internal storage and SD card is full. Permanently delete %d items?</item>
+        <item quantity="few">Your internal storage and SD card is full. Permanently delete %d items?</item>
+        <item quantity="many">Your internal storage and SD card is full. Permanently delete %d items?</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Restoring %d items…</item>
+        <item quantity="zero">Restoring %d items…</item>
+        <item quantity="two">Restoring %d items…</item>
+        <item quantity="few">Restoring %d items…</item>
+        <item quantity="many">Restoring %d items…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d items will also be moved to the Trash in %2$s.</item>
+        <item quantity="zero">%1$d items will also be moved to the Trash in %2$s.</item>
+        <item quantity="two">%1$d items will also be moved to the Trash in %2$s.</item>
+        <item quantity="few">%1$d items will also be moved to the Trash in %2$s.</item>
+        <item quantity="many">%1$d items will also be moved to the Trash in %2$s.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">"Can't open more than %d app windows."</item>
+        <item quantity="zero">"Can't open more than %d app windows."</item>
+        <item quantity="one">"Can't open more than %d app window."</item>
+        <item quantity="two">"Can't open more than %d app windows."</item>
+        <item quantity="few">"Can't open more than %d app windows."</item>
+        <item quantity="many">"Can't open more than %d app windows."</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Move %d files to the Trash?</item>
+        <item quantity="zero">Move %d files to the Trash?</item>
+        <item quantity="one">Move %d file to the Trash?</item>
+        <item quantity="two">Move %d files to the Trash?</item>
+        <item quantity="few">Move %d files to the Trash?</item>
+        <item quantity="many">Move %d files to the Trash?</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Move %d files to the Trash?</item>
+        <item quantity="zero">Move %d files to the Trash?</item>
+        <item quantity="one">Move %d file to the Trash?</item>
+        <item quantity="two">Move %d files to the Trash?</item>
+        <item quantity="few">Move %d files to the Trash?</item>
+        <item quantity="many">Move %d files to the Trash?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Move %d folders to the Trash?</item>
+        <item quantity="zero">Move %d folders to the Trash?</item>
+        <item quantity="one">Move %d folder to the Trash?</item>
+        <item quantity="two">Move %d folders to the Trash?</item>
+        <item quantity="few">Move %d folders to the Trash?</item>
+        <item quantity="many">Move %d folders to the Trash?</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Move %d folders to the Trash?</item>
+        <item quantity="zero">Move %d folders to the Trash?</item>
+        <item quantity="one">Move %d folder to the Trash?</item>
+        <item quantity="two">Move %d folders to the Trash?</item>
+        <item quantity="few">Move %d folders to the Trash?</item>
+        <item quantity="many">Move %d folders to the Trash?</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Move %d items to the Trash?</item>
+        <item quantity="zero">Move %d items to the Trash?</item>
+        <item quantity="two">Move %d items to the Trash?</item>
+        <item quantity="few">Move %d items to the Trash?</item>
+        <item quantity="many">Move %d items to the Trash?</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Move %d items to the Trash?</item>
+        <item quantity="zero">Move %d items to the Trash?</item>
+        <item quantity="one">Move %d item to the Trash?</item>
+        <item quantity="two">Move %d items to the Trash?</item>
+        <item quantity="few">Move %d items to the Trash?</item>
+        <item quantity="many">Move %d items to the Trash?</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Moving %d files to the Trash…</item>
+        <item quantity="zero">Moving %d files to the Trash…</item>
+        <item quantity="one">Moving %d file to the Trash…</item>
+        <item quantity="two">Moving %d files to the Trash…</item>
+        <item quantity="few">Moving %d files to the Trash…</item>
+        <item quantity="many">Moving %d files to the Trash…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Moving %d folders to the Trash…</item>
+        <item quantity="zero">Moving %d folders to the Trash…</item>
+        <item quantity="one">Moving %d folder to the Trash…</item>
+        <item quantity="two">Moving %d folders to the Trash…</item>
+        <item quantity="few">Moving %d folders to the Trash…</item>
+        <item quantity="many">Moving %d folders to the Trash…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Moving %d items to the Trash…</item>
+        <item quantity="zero">Moving %d items to the Trash…</item>
+        <item quantity="two">Moving %d items to the Trash…</item>
+        <item quantity="few">Moving %d items to the Trash…</item>
+        <item quantity="many">Moving %d items to the Trash…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Moving %d files…</item>
+        <item quantity="zero">Moving %d files…</item>
+        <item quantity="one">Moving %d file…</item>
+        <item quantity="two">Moving %d files…</item>
+        <item quantity="few">Moving %d files…</item>
+        <item quantity="many">Moving %d files…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Moving %d files…</item>
+        <item quantity="zero">Moving %d files…</item>
+        <item quantity="one">Moving %d file…</item>
+        <item quantity="two">Moving %d files…</item>
+        <item quantity="few">Moving %d files…</item>
+        <item quantity="many">Moving %d files…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Moving %d folders…</item>
+        <item quantity="zero">Moving %d folders…</item>
+        <item quantity="one">Moving %d folder…</item>
+        <item quantity="two">Moving %d folders…</item>
+        <item quantity="few">Moving %d folders…</item>
+        <item quantity="many">Moving %d folders…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Moving %d folders…</item>
+        <item quantity="zero">Moving %d folders…</item>
+        <item quantity="one">Moving %d folder…</item>
+        <item quantity="two">Moving %d folders…</item>
+        <item quantity="few">Moving %d folders…</item>
+        <item quantity="many">Moving %d folders…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Moving %d items…</item>
+        <item quantity="zero">Moving %d items…</item>
+        <item quantity="two">Moving %d items…</item>
+        <item quantity="few">Moving %d items…</item>
+        <item quantity="many">Moving %d items…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Moving %d items…</item>
+        <item quantity="zero">Moving %d items…</item>
+        <item quantity="two">Moving %d items…</item>
+        <item quantity="few">Moving %d items…</item>
+        <item quantity="many">Moving %d items…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d items compressed</item>
+        <item quantity="zero">%d items compressed</item>
+        <item quantity="one">%d item compressed</item>
+        <item quantity="two">%d items compressed</item>
+        <item quantity="few">%d items compressed</item>
+        <item quantity="many">%d items compressed</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d items copied to %2$s</item>
+        <item quantity="zero">%1$d items copied to %2$s</item>
+        <item quantity="one">%1$d item copied to %2$s</item>
+        <item quantity="two">%1$d items copied to %2$s</item>
+        <item quantity="few">%1$d items copied to %2$s</item>
+        <item quantity="many">%1$d items copied to %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Delete folder and the %d files in it?</item>
+        <item quantity="one">Delete folder and the file in it?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Delete %1$d folders and the %2$d files in them?</item>
+        <item quantity="one">Delete folder and the file in it?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d items deleted</item>
+        <item quantity="zero">%d items deleted</item>
+        <item quantity="one">%d item deleted</item>
+        <item quantity="two">%d items deleted</item>
+        <item quantity="few">%d items deleted</item>
+        <item quantity="many">%d items deleted</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Downloading %d files…</item>
+        <item quantity="zero">Downloading %d files…</item>
+        <item quantity="one">Downloading %d file…</item>
+        <item quantity="two">Downloading %d files…</item>
+        <item quantity="few">Downloading %d files…</item>
+        <item quantity="many">Downloading %d files…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Downloading %d folders…</item>
+        <item quantity="zero">Downloading %d folders…</item>
+        <item quantity="one">Downloading %d folder…</item>
+        <item quantity="two">Downloading %d folders…</item>
+        <item quantity="few">Downloading %d folders…</item>
+        <item quantity="many">Downloading %d folders…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Downloading %d items…</item>
+        <item quantity="zero">Downloading %d items…</item>
+        <item quantity="one">Downloading %d item…</item>
+        <item quantity="two">Downloading %d items…</item>
+        <item quantity="few">Downloading %d items…</item>
+        <item quantity="many">Downloading %d items…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">"Can't share folders. Folders empty."</item>
+        <item quantity="one">"Can't share folder. Folder empty."</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d files will be permanently deleted.</item>
+        <item quantity="zero">%d files will be permanently deleted.</item>
+        <item quantity="one">%d file will be permanently deleted.</item>
+        <item quantity="two">%d files will be permanently deleted.</item>
+        <item quantity="few">%d files will be permanently deleted.</item>
+        <item quantity="many">%d files will be permanently deleted.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d folders will be permanently deleted.</item>
+        <item quantity="zero">%d folders will be permanently deleted.</item>
+        <item quantity="one">%d folder will be permanently deleted.</item>
+        <item quantity="two">%d folders will be permanently deleted.</item>
+        <item quantity="few">%d folders will be permanently deleted.</item>
+        <item quantity="many">%d folders will be permanently deleted.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d items extracted</item>
+        <item quantity="zero">%d items extracted</item>
+        <item quantity="one">%d item extracted</item>
+        <item quantity="two">%d items extracted</item>
+        <item quantity="few">%d items extracted</item>
+        <item quantity="many">%d items extracted</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d files added to Favorites.</item>
+        <item quantity="zero">%d files added to Favorites.</item>
+        <item quantity="one">%d file added to Favorites.</item>
+        <item quantity="two">%d files added to Favorites.</item>
+        <item quantity="few">%d files added to Favorites.</item>
+        <item quantity="many">%d files added to Favorites.</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d files removed from Favorites.</item>
+        <item quantity="zero">%d files removed from Favorites.</item>
+        <item quantity="one">%d file removed from Favorites.</item>
+        <item quantity="two">%d files removed from Favorites.</item>
+        <item quantity="few">%d files removed from Favorites.</item>
+        <item quantity="many">%d files removed from Favorites.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d folders added to Favorites.</item>
+        <item quantity="zero">%d folders added to Favorites.</item>
+        <item quantity="one">%d folder added to Favorites.</item>
+        <item quantity="two">%d folders added to Favorites.</item>
+        <item quantity="few">%d folders added to Favorites.</item>
+        <item quantity="many">%d folders added to Favorites.</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d folders removed from Favorites.</item>
+        <item quantity="zero">%d folders removed from Favorites.</item>
+        <item quantity="one">%d folder removed from Favorites.</item>
+        <item quantity="two">%d folders removed from Favorites.</item>
+        <item quantity="few">%d folders removed from Favorites.</item>
+        <item quantity="many">%d folders removed from Favorites.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d items added to Favorites.</item>
+        <item quantity="zero">%d items added to Favorites.</item>
+        <item quantity="two">%d items added to Favorites.</item>
+        <item quantity="few">%d items added to Favorites.</item>
+        <item quantity="many">%d items added to Favorites.</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d items removed from Favorites.</item>
+        <item quantity="zero">%d items removed from Favorites.</item>
+        <item quantity="one">%d item removed from Favorites.</item>
+        <item quantity="two">%d items removed from Favorites.</item>
+        <item quantity="few">%d items removed from Favorites.</item>
+        <item quantity="many">%d items removed from Favorites.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d items</item>
+        <item quantity="one">1 item</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d items</item>
+        <item quantity="one">%d item</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d items copied to clipboard</item>
+        <item quantity="zero">%d items copied to clipboard</item>
+        <item quantity="one">%d item copied to clipboard</item>
+        <item quantity="two">%d items copied to clipboard</item>
+        <item quantity="few">%d items copied to clipboard</item>
+        <item quantity="many">%d items copied to clipboard</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d items moved to clipboard</item>
+        <item quantity="zero">%d items moved to clipboard</item>
+        <item quantity="one">%d item moved to clipboard</item>
+        <item quantity="two">%d items moved to clipboard</item>
+        <item quantity="few">%d items moved to clipboard</item>
+        <item quantity="many">%d items moved to clipboard</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d item selected</item>
+        <item quantity="zero">%d items selected</item>
+        <item quantity="one">%d item selected</item>
+        <item quantity="two">%d item selected</item>
+        <item quantity="few">%d item selected</item>
+        <item quantity="many">%d item selected</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d items moved to %2$s</item>
+        <item quantity="zero">%1$d items moved to %2$s</item>
+        <item quantity="one">%1$d item moved to %2$s</item>
+        <item quantity="two">%1$d items moved to %2$s</item>
+        <item quantity="few">%1$d items moved to %2$s</item>
+        <item quantity="many">%1$d items moved to %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d items moved to Trash</item>
+        <item quantity="zero">%d items moved to Trash</item>
+        <item quantity="one">%d item moved to Trash</item>
+        <item quantity="two">%d items moved to Trash</item>
+        <item quantity="few">%d items moved to Trash</item>
+        <item quantity="many">%d items moved to Trash</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d selected</item>
+        <item quantity="zero">%d selected</item>
+        <item quantity="one">%d selected</item>
+        <item quantity="two">%d selected</item>
+        <item quantity="few">%d selected</item>
+        <item quantity="many">%d selected</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Your SD card is full. Permanently delete %d files?</item>
+        <item quantity="zero">Your SD card is full. Permanently delete %d files?</item>
+        <item quantity="one">Your SD card is full. Permanently delete %d file?</item>
+        <item quantity="two">Your SD card is full. Permanently delete %d files?</item>
+        <item quantity="few">Your SD card is full. Permanently delete %d files?</item>
+        <item quantity="many">Your SD card is full. Permanently delete %d files?</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Your SD card is full. Permanently delete %d folders?</item>
+        <item quantity="zero">Your SD card is full. Permanently delete %d folders?</item>
+        <item quantity="one">Your SD card is full. Permanently delete %d folder?</item>
+        <item quantity="two">Your SD card is full. Permanently delete %d folders?</item>
+        <item quantity="few">Your SD card is full. Permanently delete %d folders?</item>
+        <item quantity="many">Your SD card is full. Permanently delete %d folders?</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Your SD card is full. Permanently delete %d items?</item>
+        <item quantity="zero">Your SD card is full. Permanently delete %d items?</item>
+        <item quantity="one">Your SD card is full. Permanently delete %d item?</item>
+        <item quantity="two">Your SD card is full. Permanently delete %d items?</item>
+        <item quantity="few">Your SD card is full. Permanently delete %d items?</item>
+        <item quantity="many">Your SD card is full. Permanently delete %d items?</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">This file will be deleted in %d days.</item>
+        <item quantity="zero">This file will be deleted in %d days.</item>
+        <item quantity="one">This file will be deleted in %d day.</item>
+        <item quantity="two">This file will be deleted in %d days.</item>
+        <item quantity="few">This file will be deleted in %d days.</item>
+        <item quantity="many">This file will be deleted in %d days.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">This folder will be deleted in %d days.</item>
+        <item quantity="zero">This folder will be deleted in %d days.</item>
+        <item quantity="one">This folder will be deleted in %d day.</item>
+        <item quantity="two">This folder will be deleted in %d days.</item>
+        <item quantity="few">This folder will be deleted in %d days.</item>
+        <item quantity="many">This folder will be deleted in %d days.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Permanently delete %d files?</item>
+        <item quantity="zero">Permanently delete %d files?</item>
+        <item quantity="one">Permanently delete %d file?</item>
+        <item quantity="two">Permanently delete %d files?</item>
+        <item quantity="few">Permanently delete %d files?</item>
+        <item quantity="many">Permanently delete %d files?</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Deleting %d files…</item>
+        <item quantity="zero">Deleting %d files…</item>
+        <item quantity="one">Deleting %d file…</item>
+        <item quantity="two">Deleting %d files…</item>
+        <item quantity="few">Deleting %d files…</item>
+        <item quantity="many">Deleting %d files…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Restoring %d files…</item>
+        <item quantity="zero">Restoring %d files…</item>
+        <item quantity="one">Restoring %d file…</item>
+        <item quantity="two">Restoring %d files…</item>
+        <item quantity="few">Restoring %d files…</item>
+        <item quantity="many">Restoring %d files…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Permanently delete %d folders?</item>
+        <item quantity="zero">Permanently delete %d folders?</item>
+        <item quantity="one">Permanently delete %d folder?</item>
+        <item quantity="two">Permanently delete %d folders?</item>
+        <item quantity="few">Permanently delete %d folders?</item>
+        <item quantity="many">Permanently delete %d folders?</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Deleting %d folders…</item>
+        <item quantity="zero">Deleting %d folders…</item>
+        <item quantity="one">Deleting %d folder…</item>
+        <item quantity="two">Deleting %d folders…</item>
+        <item quantity="few">Deleting %d folders…</item>
+        <item quantity="many">Deleting %d folders…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Restoring %d folders…</item>
+        <item quantity="zero">Restoring %d folders…</item>
+        <item quantity="one">Restoring %d folder…</item>
+        <item quantity="two">Restoring %d folders…</item>
+        <item quantity="few">Restoring %d folders…</item>
+        <item quantity="many">Restoring %d folders…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Permanently delete %d items?</item>
+        <item quantity="zero">Permanently delete %d items?</item>
+        <item quantity="two">Permanently delete %d items?</item>
+        <item quantity="few">Permanently delete %d items?</item>
+        <item quantity="many">Permanently delete %d items?</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Deleting %d items…</item>
+        <item quantity="zero">Deleting %d items…</item>
+        <item quantity="two">Deleting %d items…</item>
+        <item quantity="few">Deleting %d items…</item>
+        <item quantity="many">Deleting %d items…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Restoring %d items…</item>
+        <item quantity="zero">Restoring %d items…</item>
+        <item quantity="two">Restoring %d items…</item>
+        <item quantity="few">Restoring %d items…</item>
+        <item quantity="many">Restoring %d items…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Deleting in %d days</item>
+        <item quantity="zero">Deleting in %d days</item>
+        <item quantity="one">Deleting in %d day</item>
+        <item quantity="two">Deleting in %d days</item>
+        <item quantity="few">Deleting in %d days</item>
+        <item quantity="many">Deleting in %d days</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Uninstall %d apps?</item>
+        <item quantity="zero">Uninstall %d apps?</item>
+        <item quantity="one">Uninstall %d app?</item>
+        <item quantity="two">Uninstall %d apps?</item>
+        <item quantity="few">Uninstall %d apps?</item>
+        <item quantity="many">Uninstall %d apps?</item>
+    </plurals>
+</resources>

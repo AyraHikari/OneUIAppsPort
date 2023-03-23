@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/common/server/response/zam;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # static fields
@@ -15,11 +16,11 @@
 
 
 # instance fields
-.field private final versionCode:I
+.field final zaa:I
 
-.field final zaqz:Ljava/lang/String;
+.field final zab:Ljava/lang/String;
 
-.field final zara:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
+.field final zac:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/server/response/FastJsonResponse$Field<",
@@ -33,10 +34,9 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 18
-    new-instance v0, Lcom/google/android/gms/common/server/response/zaj;
+    new-instance v0, Lcom/google/android/gms/common/server/response/zak;
 
-    invoke-direct {v0}, Lcom/google/android/gms/common/server/response/zaj;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/common/server/response/zak;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/server/response/zam;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -57,14 +57,11 @@
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    .line 2
-    iput p1, p0, Lcom/google/android/gms/common/server/response/zam;->versionCode:I
+    iput p1, p0, Lcom/google/android/gms/common/server/response/zam;->zaa:I
 
-    .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/server/response/zam;->zaqz:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/server/response/zam;->zab:Ljava/lang/String;
 
-    .line 4
-    iput-object p3, p0, Lcom/google/android/gms/common/server/response/zam;->zara:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
+    iput-object p3, p0, Lcom/google/android/gms/common/server/response/zam;->zac:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     return-void
 .end method
@@ -80,19 +77,16 @@
         }
     .end annotation
 
-    .line 6
+    .line 2
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 7
-    iput v0, p0, Lcom/google/android/gms/common/server/response/zam;->versionCode:I
+    iput v0, p0, Lcom/google/android/gms/common/server/response/zam;->zaa:I
 
-    .line 8
-    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zam;->zaqz:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zam;->zab:Ljava/lang/String;
 
-    .line 9
-    iput-object p2, p0, Lcom/google/android/gms/common/server/response/zam;->zara:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
+    iput-object p2, p0, Lcom/google/android/gms/common/server/response/zam;->zac:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     return-void
 .end method
@@ -102,35 +96,35 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
-    .line 12
+    .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
 
     move-result v0
 
-    .line 13
-    iget v1, p0, Lcom/google/android/gms/common/server/response/zam;->versionCode:I
+    iget v1, p0, Lcom/google/android/gms/common/server/response/zam;->zaa:I
 
     const/4 v2, 0x1
 
+    .line 2
     invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
 
-    .line 14
-    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zam;->zaqz:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zam;->zab:Ljava/lang/String;
 
     const/4 v2, 0x2
 
     const/4 v3, 0x0
 
+    .line 3
     invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeString(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
-    .line 15
-    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zam;->zara:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
+    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zam;->zac:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     const/4 v2, 0x3
 
+    .line 4
     invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
-    .line 16
+    .line 5
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
 
     return-void

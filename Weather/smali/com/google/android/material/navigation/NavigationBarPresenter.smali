@@ -1,299 +1,165 @@
 .class public Lcom/google/android/material/navigation/NavigationBarPresenter;
-.super Landroidx/appcompat/view/menu/BaseMenuPresenter;
+.super Landroidx/appcompat/view/menu/a;
 .source "NavigationBarPresenter.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;,
-        Lcom/google/android/material/navigation/NavigationBarPresenter$PopupPresenterCallback;,
-        Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;,
+        Lcom/google/android/material/navigation/NavigationBarPresenter$d;,
+        Lcom/google/android/material/navigation/NavigationBarPresenter$f;,
+        Lcom/google/android/material/navigation/NavigationBarPresenter$e;,
         Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;
     }
 .end annotation
 
 
-# static fields
-.field private static final ANIM_UPDATE_DELAY:I = 0xb4
-
-.field private static final ANIM_UPDATE_DURATION:I = 0x190
-
-.field private static final MSG_UPDATE_ANIMATION:I = 0x64
-
-
 # instance fields
-.field private id:I
+.field public A:Lcom/google/android/material/navigation/NavigationBarPresenter$e;
 
-.field private mAnimationHandler:Landroid/os/Handler;
+.field public r:Landroidx/appcompat/view/menu/d;
 
-.field private mContext:Landroid/content/Context;
+.field public s:Lcom/google/android/material/navigation/c;
 
-.field private mOverflowPopup:Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;
+.field public t:Z
 
-.field private final mPopupPresenterCallback:Lcom/google/android/material/navigation/NavigationBarPresenter$PopupPresenterCallback;
+.field public u:I
 
-.field private mPostedOpenRunnable:Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+.field public v:Landroid/content/Context;
 
-.field private mSetAnim:Z
+.field public w:Z
 
-.field private menu:Landroidx/appcompat/view/menu/MenuBuilder;
+.field public x:Landroid/os/Handler;
 
-.field private menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+.field public y:Lcom/google/android/material/navigation/NavigationBarPresenter$d;
 
-.field private updateSuspended:Z
+.field public final z:Lcom/google/android/material/navigation/NavigationBarPresenter$f;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 77
-    sget v0, Landroidx/appcompat/R$layout;->sesl_action_menu_layout:I
+    .line 1
+    sget v0, Lc/g;->sesl_action_menu_layout:I
 
-    sget v1, Landroidx/appcompat/R$layout;->sesl_action_menu_item_layout:I
+    sget v1, Lc/g;->sesl_action_menu_item_layout:I
 
-    invoke-direct {p0, p1, v0, v1}, Landroidx/appcompat/view/menu/BaseMenuPresenter;-><init>(Landroid/content/Context;II)V
+    invoke-direct {p0, p1, v0, v1}, Landroidx/appcompat/view/menu/a;-><init>(Landroid/content/Context;II)V
 
     const/4 p1, 0x0
 
-    .line 66
-    iput-boolean p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->updateSuspended:Z
+    .line 2
+    iput-boolean p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->t:Z
 
-    .line 71
-    iput-boolean p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mSetAnim:Z
+    .line 3
+    iput-boolean p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->w:Z
 
-    .line 102
-    new-instance p1, Lcom/google/android/material/navigation/NavigationBarPresenter$1;
+    .line 4
+    new-instance p1, Lcom/google/android/material/navigation/NavigationBarPresenter$a;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
 
-    invoke-direct {p1, p0, v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$1;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Landroid/os/Looper;)V
+    invoke-direct {p1, p0, v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$a;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Landroid/os/Looper;)V
 
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mAnimationHandler:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->x:Landroid/os/Handler;
 
-    .line 292
-    new-instance p1, Lcom/google/android/material/navigation/NavigationBarPresenter$PopupPresenterCallback;
+    .line 5
+    new-instance p1, Lcom/google/android/material/navigation/NavigationBarPresenter$f;
 
-    invoke-direct {p1, p0}, Lcom/google/android/material/navigation/NavigationBarPresenter$PopupPresenterCallback;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;)V
+    invoke-direct {p1, p0}, Lcom/google/android/material/navigation/NavigationBarPresenter$f;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;)V
 
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPopupPresenterCallback:Lcom/google/android/material/navigation/NavigationBarPresenter$PopupPresenterCallback;
-
-    return-void
-.end method
-
-.method static synthetic access$000(Lcom/google/android/material/navigation/NavigationBarPresenter;)V
-    .locals 0
-
-    .line 63
-    invoke-direct {p0}, Lcom/google/android/material/navigation/NavigationBarPresenter;->updateMenuViewWithAnimate()V
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->z:Lcom/google/android/material/navigation/NavigationBarPresenter$f;
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/google/android/material/navigation/NavigationBarPresenter;)Lcom/google/android/material/navigation/NavigationBarMenuView;
+.method public static synthetic u(Lcom/google/android/material/navigation/NavigationBarPresenter;)V
     .locals 0
 
-    .line 63
-    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+    invoke-virtual {p0}, Lcom/google/android/material/navigation/NavigationBarPresenter;->F()V
+
+    return-void
+.end method
+
+.method public static synthetic v(Lcom/google/android/material/navigation/NavigationBarPresenter;)Lcom/google/android/material/navigation/c;
+    .locals 0
+
+    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
     return-object p0
 .end method
 
-.method static synthetic access$400(Lcom/google/android/material/navigation/NavigationBarPresenter;)Lcom/google/android/material/navigation/NavigationBarPresenter$PopupPresenterCallback;
+.method public static synthetic w(Lcom/google/android/material/navigation/NavigationBarPresenter;)Lcom/google/android/material/navigation/NavigationBarPresenter$f;
     .locals 0
 
-    .line 63
-    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPopupPresenterCallback:Lcom/google/android/material/navigation/NavigationBarPresenter$PopupPresenterCallback;
+    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->z:Lcom/google/android/material/navigation/NavigationBarPresenter$f;
 
     return-object p0
 .end method
 
-.method static synthetic access$500(Lcom/google/android/material/navigation/NavigationBarPresenter;)Landroidx/appcompat/view/menu/MenuBuilder;
+.method public static synthetic x(Lcom/google/android/material/navigation/NavigationBarPresenter;)Landroidx/appcompat/view/menu/d;
     .locals 0
 
-    .line 63
-    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menu:Landroidx/appcompat/view/menu/MenuBuilder;
+    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->r:Landroidx/appcompat/view/menu/d;
 
     return-object p0
 .end method
 
-.method static synthetic access$602(Lcom/google/android/material/navigation/NavigationBarPresenter;Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;)Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;
+.method public static synthetic y(Lcom/google/android/material/navigation/NavigationBarPresenter;Lcom/google/android/material/navigation/NavigationBarPresenter$e;)Lcom/google/android/material/navigation/NavigationBarPresenter$e;
     .locals 0
 
-    .line 63
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mOverflowPopup:Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->A:Lcom/google/android/material/navigation/NavigationBarPresenter$e;
 
     return-object p1
 .end method
 
-.method static synthetic access$702(Lcom/google/android/material/navigation/NavigationBarPresenter;Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;)Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+.method public static synthetic z(Lcom/google/android/material/navigation/NavigationBarPresenter;Lcom/google/android/material/navigation/NavigationBarPresenter$d;)Lcom/google/android/material/navigation/NavigationBarPresenter$d;
     .locals 0
 
-    .line 63
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPostedOpenRunnable:Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->y:Lcom/google/android/material/navigation/NavigationBarPresenter$d;
 
     return-object p1
-.end method
-
-.method private updateMenuViewWithAnimate()V
-    .locals 5
-
-    .line 142
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 143
-    :cond_0
-    new-instance v0, Landroid/view/animation/PathInterpolator;
-
-    const v1, 0x3ea8f5c3    # 0.33f
-
-    const/4 v2, 0x0
-
-    const v3, 0x3dcccccd    # 0.1f
-
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    invoke-direct {v0, v1, v2, v3, v4}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
-
-    .line 145
-    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    const/4 v2, 0x1
-
-    new-array v2, v2, [F
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->getHeight()I
-
-    move-result v4
-
-    int-to-float v4, v4
-
-    aput v4, v2, v3
-
-    const-string v3, "y"
-
-    invoke-static {v1, v3, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x190
-
-    .line 146
-    invoke-virtual {v1, v2, v3}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
-
-    .line 147
-    invoke-virtual {v1, v0}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
-
-    .line 148
-    invoke-virtual {v1}, Landroid/animation/ObjectAnimator;->start()V
-
-    .line 149
-    new-instance v2, Lcom/google/android/material/navigation/NavigationBarPresenter$3;
-
-    invoke-direct {v2, p0, v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$3;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Landroid/view/animation/Interpolator;)V
-
-    invoke-virtual {v1, v2}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
-    return-void
 .end method
 
 
 # virtual methods
-.method public bindItemView(Landroidx/appcompat/view/menu/MenuItemImpl;Landroidx/appcompat/view/menu/MenuView$ItemView;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public collapseItemActionView(Landroidx/appcompat/view/menu/MenuBuilder;Landroidx/appcompat/view/menu/MenuItemImpl;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public expandItemActionView(Landroidx/appcompat/view/menu/MenuBuilder;Landroidx/appcompat/view/menu/MenuItemImpl;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public flagActionItems()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public getId()I
-    .locals 1
-
-    .line 200
-    iget v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->id:I
-
-    return v0
-.end method
-
-.method public getMenuView(Landroid/view/ViewGroup;)Landroidx/appcompat/view/menu/MenuView;
-    .locals 0
-
-    .line 95
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    return-object p1
-.end method
-
-.method hideOverflowMenu()Z
+.method public A()Z
     .locals 3
 
-    .line 318
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPostedOpenRunnable:Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->y:Lcom/google/android/material/navigation/NavigationBarPresenter$d;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
+    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->p:Landroidx/appcompat/view/menu/i;
 
-    if-eqz v0, :cond_0
+    if-eqz v2, :cond_0
 
-    .line 319
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
+    .line 2
+    check-cast v2, Landroid/view/View;
 
-    check-cast v0, Landroid/view/View;
-
-    iget-object v2, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPostedOpenRunnable:Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v2, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     const/4 v0, 0x0
 
-    .line 320
-    iput-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPostedOpenRunnable:Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+    .line 3
+    iput-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->y:Lcom/google/android/material/navigation/NavigationBarPresenter$d;
 
     return v1
 
-    .line 323
+    .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mOverflowPopup:Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->A:Lcom/google/android/material/navigation/NavigationBarPresenter$e;
 
     if-eqz v0, :cond_1
 
-    .line 325
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/MenuPopupHelper;->dismiss()V
+    .line 5
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/g;->b()V
 
     return v1
 
@@ -303,32 +169,14 @@
     return v0
 .end method
 
-.method public initForMenu(Landroid/content/Context;Landroidx/appcompat/view/menu/MenuBuilder;)V
+.method public B()Z
     .locals 1
 
-    .line 87
-    iput-object p2, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menu:Landroidx/appcompat/view/menu/MenuBuilder;
-
-    .line 88
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    invoke-virtual {v0, p2}, Lcom/google/android/material/navigation/NavigationBarMenuView;->initialize(Landroidx/appcompat/view/menu/MenuBuilder;)V
-
-    .line 89
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mContext:Landroid/content/Context;
-
-    return-void
-.end method
-
-.method isOverflowMenuShowing()Z
-    .locals 1
-
-    .line 289
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mOverflowPopup:Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->A:Lcom/google/android/material/navigation/NavigationBarPresenter$e;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;->isShowing()Z
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/g;->d()Z
 
     move-result v0
 
@@ -345,142 +193,27 @@
     return v0
 .end method
 
-.method public onCloseMenu(Landroidx/appcompat/view/menu/MenuBuilder;Z)V
+.method public C(Lcom/google/android/material/navigation/c;)V
     .locals 0
+
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
     return-void
 .end method
 
-.method public onRestoreInstanceState(Landroid/os/Parcelable;)V
-    .locals 2
-
-    .line 215
-    instance-of v0, p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;
-
-    if-eqz v0, :cond_0
-
-    .line 216
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    check-cast p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;
-
-    iget v1, p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->selectedItemId:I
-
-    invoke-virtual {v0, v1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->tryRestoreSelectedItemId(I)V
-
-    .line 217
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    .line 219
-    invoke-virtual {v0}, Lcom/google/android/material/navigation/NavigationBarMenuView;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    iget-object p1, p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->badgeSavedStates:Lcom/google/android/material/internal/ParcelableSparseArray;
-
-    .line 218
-    invoke-static {v0, p1}, Lcom/google/android/material/badge/BadgeUtils;->createBadgeDrawablesFromSavedStates(Landroid/content/Context;Lcom/google/android/material/internal/ParcelableSparseArray;)Landroid/util/SparseArray;
-
-    move-result-object p1
-
-    .line 220
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    invoke-virtual {v0, p1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->setBadgeDrawables(Landroid/util/SparseArray;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public onSaveInstanceState()Landroid/os/Parcelable;
-    .locals 2
-
-    .line 206
-    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;
-
-    invoke-direct {v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;-><init>()V
-
-    .line 207
-    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    invoke-virtual {v1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->getSelectedItemId()I
-
-    move-result v1
-
-    iput v1, v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->selectedItemId:I
-
-    .line 208
-    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    .line 209
-    invoke-virtual {v1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->getBadgeDrawables()Landroid/util/SparseArray;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/google/android/material/badge/BadgeUtils;->createParcelableBadgeStates(Landroid/util/SparseArray;)Lcom/google/android/material/internal/ParcelableSparseArray;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->badgeSavedStates:Lcom/google/android/material/internal/ParcelableSparseArray;
-
-    return-object v0
-.end method
-
-.method public onSubMenuSelected(Landroidx/appcompat/view/menu/SubMenuBuilder;)Z
+.method public D(Z)V
     .locals 0
 
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method setAnimationEnable(Z)V
-    .locals 0
-
-    .line 99
-    iput-boolean p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mSetAnim:Z
+    iput-boolean p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->t:Z
 
     return-void
 .end method
 
-.method public setCallback(Landroidx/appcompat/view/menu/MenuPresenter$Callback;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public setId(I)V
-    .locals 0
-
-    .line 195
-    iput p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->id:I
-
-    return-void
-.end method
-
-.method public setMenuView(Lcom/google/android/material/navigation/NavigationBarMenuView;)V
-    .locals 0
-
-    .line 82
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
-
-    return-void
-.end method
-
-.method public setUpdateSuspended(Z)V
-    .locals 0
-
-    .line 225
-    iput-boolean p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->updateSuspended:Z
-
-    return-void
-.end method
-
-.method showOverflowMenu(Landroidx/appcompat/view/menu/MenuBuilder;)Z
+.method public E(Landroidx/appcompat/view/menu/d;)Z
     .locals 8
 
-    .line 270
-    invoke-virtual {p0}, Lcom/google/android/material/navigation/NavigationBarPresenter;->isOverflowMenuShowing()Z
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/material/navigation/NavigationBarPresenter;->B()Z
 
     move-result v0
 
@@ -488,16 +221,16 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPostedOpenRunnable:Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->y:Lcom/google/android/material/navigation/NavigationBarPresenter$d;
 
     if-nez v0, :cond_0
 
-    .line 271
-    invoke-virtual {p1}, Landroidx/appcompat/view/menu/MenuBuilder;->getNonActionItems()Ljava/util/ArrayList;
+    .line 2
+    invoke-virtual {p1}, Landroidx/appcompat/view/menu/d;->B()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -507,14 +240,14 @@
 
     if-nez v0, :cond_0
 
-    .line 272
-    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;
+    .line 3
+    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$e;
 
-    iget-object v3, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->v:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
-    iget-object v5, v1, Lcom/google/android/material/navigation/NavigationBarMenuView;->mOverflowButton:Lcom/google/android/material/navigation/NavigationBarItemView;
+    iget-object v5, v1, Lcom/google/android/material/navigation/c;->O:Lcom/google/android/material/navigation/a;
 
     const/4 v6, 0x1
 
@@ -526,27 +259,27 @@
 
     move-object v4, p1
 
-    invoke-direct/range {v1 .. v7}, Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Landroid/content/Context;Landroidx/appcompat/view/menu/MenuBuilder;Landroid/view/View;ZLcom/google/android/material/navigation/NavigationBarPresenter$1;)V
+    invoke-direct/range {v1 .. v7}, Lcom/google/android/material/navigation/NavigationBarPresenter$e;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Landroid/content/Context;Landroidx/appcompat/view/menu/d;Landroid/view/View;ZLcom/google/android/material/navigation/NavigationBarPresenter$a;)V
 
-    .line 274
-    iput-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mOverflowPopup:Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;
+    .line 4
+    iput-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->A:Lcom/google/android/material/navigation/NavigationBarPresenter$e;
 
-    .line 275
-    new-instance p1, Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+    .line 5
+    new-instance p1, Lcom/google/android/material/navigation/NavigationBarPresenter$d;
 
     const/4 v1, 0x0
 
-    invoke-direct {p1, p0, v0, v1}, Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Lcom/google/android/material/navigation/NavigationBarPresenter$OverflowPopup;Lcom/google/android/material/navigation/NavigationBarPresenter$1;)V
+    invoke-direct {p1, p0, v0, v1}, Lcom/google/android/material/navigation/NavigationBarPresenter$d;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Lcom/google/android/material/navigation/NavigationBarPresenter$e;Lcom/google/android/material/navigation/NavigationBarPresenter$a;)V
 
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mPostedOpenRunnable:Lcom/google/android/material/navigation/NavigationBarPresenter$OpenOverflowRunnable;
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->y:Lcom/google/android/material/navigation/NavigationBarPresenter$d;
 
-    .line 277
-    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+    .line 6
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
 
-    .line 281
-    invoke-super {p0, v1}, Landroidx/appcompat/view/menu/BaseMenuPresenter;->onSubMenuSelected(Landroidx/appcompat/view/menu/SubMenuBuilder;)Z
+    .line 7
+    invoke-super {p0, v1}, Landroidx/appcompat/view/menu/a;->m(Landroidx/appcompat/view/menu/k;)Z
 
     const/4 p1, 0x1
 
@@ -558,26 +291,114 @@
     return p1
 .end method
 
-.method public updateMenuView(Z)V
+.method public final F()V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    new-instance v0, Landroid/view/animation/PathInterpolator;
+
+    const v1, 0x3ea8f5c3    # 0.33f
+
+    const/4 v2, 0x0
+
+    const v3, 0x3dcccccd    # 0.1f
+
+    const/high16 v4, 0x3f800000    # 1.0f
+
+    invoke-direct {v0, v1, v2, v3, v4}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
+
+    .line 3
+    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [F
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1}, Landroid/view/ViewGroup;->getHeight()I
+
+    move-result v4
+
+    int-to-float v4, v4
+
+    aput v4, v2, v3
+
+    const-string v3, "y"
+
+    invoke-static {v1, v3, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
+
+    move-result-object v1
+
+    const-wide/16 v2, 0x190
+
+    .line 4
+    invoke-virtual {v1, v2, v3}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+
+    .line 5
+    invoke-virtual {v1, v0}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    .line 6
+    invoke-virtual {v1}, Landroid/animation/ObjectAnimator;->start()V
+
+    .line 7
+    new-instance v2, Lcom/google/android/material/navigation/NavigationBarPresenter$c;
+
+    invoke-direct {v2, p0, v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$c;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;Landroid/view/animation/Interpolator;)V
+
+    invoke-virtual {v1, v2}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    return-void
+.end method
+
+.method public a()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->u:I
+
+    return v0
+.end method
+
+.method public c(Landroidx/appcompat/view/menu/f;Landroidx/appcompat/view/menu/i$a;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public d(Landroidx/appcompat/view/menu/d;Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public e(Z)V
     .locals 3
 
-    .line 113
-    iget-boolean v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->updateSuspended:Z
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->t:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 117
+    .line 2
     :cond_0
-    iget-boolean v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mSetAnim:Z
+    iget-boolean v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->w:Z
 
     if-eqz v0, :cond_3
 
     if-eqz p1, :cond_2
 
-    .line 119
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mAnimationHandler:Landroid/os/Handler;
+    .line 3
+    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->x:Landroid/os/Handler;
 
     const/16 v0, 0x64
 
@@ -587,49 +408,181 @@
 
     if-eqz p1, :cond_1
 
-    .line 120
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mAnimationHandler:Landroid/os/Handler;
+    .line 4
+    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->x:Landroid/os/Handler;
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 122
+    .line 5
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->mAnimationHandler:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->x:Landroid/os/Handler;
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     goto :goto_0
 
-    .line 124
+    .line 6
     :cond_2
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
-    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$2;
+    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$b;
 
-    invoke-direct {v0, p0}, Lcom/google/android/material/navigation/NavigationBarPresenter$2;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;)V
+    invoke-direct {v0, p0}, Lcom/google/android/material/navigation/NavigationBarPresenter$b;-><init>(Lcom/google/android/material/navigation/NavigationBarPresenter;)V
 
     const-wide/16 v1, 0xb4
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/google/android/material/navigation/NavigationBarMenuView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p1, v0, v1, v2}, Landroid/view/ViewGroup;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_0
 
     :cond_3
     if-eqz p1, :cond_4
 
-    .line 133
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+    .line 7
+    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
-    invoke-virtual {p1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->buildMenuView()V
+    invoke-virtual {p1}, Lcom/google/android/material/navigation/c;->g()V
 
     goto :goto_0
 
-    .line 135
+    .line 8
     :cond_4
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->menuView:Lcom/google/android/material/navigation/NavigationBarMenuView;
+    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
 
-    invoke-virtual {p1}, Lcom/google/android/material/navigation/NavigationBarMenuView;->updateMenuView()V
+    invoke-virtual {p1}, Lcom/google/android/material/navigation/c;->C()V
 
     :goto_0
+    return-void
+.end method
+
+.method public f()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public g(Landroidx/appcompat/view/menu/d;Landroidx/appcompat/view/menu/f;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public h(Landroidx/appcompat/view/menu/d;Landroidx/appcompat/view/menu/f;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public j(Landroid/content/Context;Landroidx/appcompat/view/menu/d;)V
+    .locals 1
+
+    .line 1
+    iput-object p2, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->r:Landroidx/appcompat/view/menu/d;
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    invoke-virtual {v0, p2}, Lcom/google/android/material/navigation/c;->b(Landroidx/appcompat/view/menu/d;)V
+
+    .line 3
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->v:Landroid/content/Context;
+
+    return-void
+.end method
+
+.method public k(Landroid/os/Parcelable;)V
+    .locals 2
+
+    .line 1
+    instance-of v0, p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    check-cast p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;
+
+    iget v1, p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->h:I
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/navigation/c;->z(I)V
+
+    .line 3
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    .line 4
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iget-object p1, p1, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->i:Lcom/google/android/material/internal/ParcelableSparseArray;
+
+    .line 5
+    invoke-static {v0, p1}, Lcom/google/android/material/badge/a;->b(Landroid/content/Context;Lcom/google/android/material/internal/ParcelableSparseArray;)Landroid/util/SparseArray;
+
+    move-result-object p1
+
+    .line 6
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    invoke-virtual {v0, p1}, Lcom/google/android/material/navigation/c;->setBadgeDrawables(Landroid/util/SparseArray;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public m(Landroidx/appcompat/view/menu/k;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public n()Landroid/os/Parcelable;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;
+
+    invoke-direct {v0}, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;-><init>()V
+
+    .line 2
+    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    invoke-virtual {v1}, Lcom/google/android/material/navigation/c;->getSelectedItemId()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->h:I
+
+    .line 3
+    iget-object v1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->s:Lcom/google/android/material/navigation/c;
+
+    .line 4
+    invoke-virtual {v1}, Lcom/google/android/material/navigation/c;->getBadgeDrawables()Landroid/util/SparseArray;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/google/android/material/badge/a;->c(Landroid/util/SparseArray;)Lcom/google/android/material/internal/ParcelableSparseArray;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/google/android/material/navigation/NavigationBarPresenter$SavedState;->i:Lcom/google/android/material/internal/ParcelableSparseArray;
+
+    return-object v0
+.end method
+
+.method public s(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/google/android/material/navigation/NavigationBarPresenter;->u:I
+
     return-void
 .end method

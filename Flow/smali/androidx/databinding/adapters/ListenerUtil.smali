@@ -53,7 +53,7 @@
     .end annotation
 
     .line 99
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xe
 
@@ -74,9 +74,7 @@
 
     .line 104
     :try_start_0
-    sget-object v1, Landroidx/databinding/adapters/ListenerUtil;->sListeners:Landroid/util/SparseArray;
-
-    invoke-virtual {v1, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -128,7 +126,7 @@
 .end method
 
 .method public static trackListener(Landroid/view/View;Ljava/lang/Object;I)Ljava/lang/Object;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -140,7 +138,7 @@
     .end annotation
 
     .line 61
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xe
 
@@ -164,9 +162,7 @@
 
     .line 67
     :try_start_0
-    sget-object v1, Landroidx/databinding/adapters/ListenerUtil;->sListeners:Landroid/util/SparseArray;
-
-    invoke-virtual {v1, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -180,9 +176,7 @@
     invoke-direct {v1}, Ljava/util/WeakHashMap;-><init>()V
 
     .line 70
-    sget-object v2, Landroidx/databinding/adapters/ListenerUtil;->sListeners:Landroid/util/SparseArray;
-
-    invoke-virtual {v2, p2, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-virtual {v0, p2, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     :cond_1
     if-nez p1, :cond_2

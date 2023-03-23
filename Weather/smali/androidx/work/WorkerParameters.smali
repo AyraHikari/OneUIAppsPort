@@ -6,27 +6,17 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroidx/work/WorkerParameters$RuntimeExtras;
+        Landroidx/work/WorkerParameters$a;
     }
 .end annotation
 
 
 # instance fields
-.field private mBackgroundExecutor:Ljava/util/concurrent/Executor;
+.field public a:Ljava/util/UUID;
 
-.field private mForegroundUpdater:Landroidx/work/ForegroundUpdater;
+.field public b:Landroidx/work/b;
 
-.field private mId:Ljava/util/UUID;
-
-.field private mInputData:Landroidx/work/Data;
-
-.field private mProgressUpdater:Landroidx/work/ProgressUpdater;
-
-.field private mRunAttemptCount:I
-
-.field private mRuntimeExtras:Landroidx/work/WorkerParameters$RuntimeExtras;
-
-.field private mTags:Ljava/util/Set;
+.field public c:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -36,13 +26,23 @@
     .end annotation
 .end field
 
-.field private mWorkTaskExecutor:Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+.field public d:Landroidx/work/WorkerParameters$a;
 
-.field private mWorkerFactory:Landroidx/work/WorkerFactory;
+.field public e:I
+
+.field public f:Ljava/util/concurrent/Executor;
+
+.field public g:Lv2/a;
+
+.field public h:Lj2/a0;
+
+.field public i:Lj2/t;
+
+.field public j:Lj2/i;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/UUID;Landroidx/work/Data;Ljava/util/Collection;Landroidx/work/WorkerParameters$RuntimeExtras;ILjava/util/concurrent/Executor;Landroidx/work/impl/utils/taskexecutor/TaskExecutor;Landroidx/work/WorkerFactory;Landroidx/work/ProgressUpdater;Landroidx/work/ForegroundUpdater;)V
+.method public constructor <init>(Ljava/util/UUID;Landroidx/work/b;Ljava/util/Collection;Landroidx/work/WorkerParameters$a;ILjava/util/concurrent/Executor;Lv2/a;Lj2/a0;Lj2/t;Lj2/i;)V
     .locals 0
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
@@ -75,206 +75,115 @@
         value = {
             "(",
             "Ljava/util/UUID;",
-            "Landroidx/work/Data;",
+            "Landroidx/work/b;",
             "Ljava/util/Collection<",
             "Ljava/lang/String;",
             ">;",
-            "Landroidx/work/WorkerParameters$RuntimeExtras;",
+            "Landroidx/work/WorkerParameters$a;",
             "I",
             "Ljava/util/concurrent/Executor;",
-            "Landroidx/work/impl/utils/taskexecutor/TaskExecutor;",
-            "Landroidx/work/WorkerFactory;",
-            "Landroidx/work/ProgressUpdater;",
-            "Landroidx/work/ForegroundUpdater;",
+            "Lv2/a;",
+            "Lj2/a0;",
+            "Lj2/t;",
+            "Lj2/i;",
             ")V"
         }
     .end annotation
 
-    .line 68
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 69
-    iput-object p1, p0, Landroidx/work/WorkerParameters;->mId:Ljava/util/UUID;
+    .line 2
+    iput-object p1, p0, Landroidx/work/WorkerParameters;->a:Ljava/util/UUID;
 
-    .line 70
-    iput-object p2, p0, Landroidx/work/WorkerParameters;->mInputData:Landroidx/work/Data;
+    .line 3
+    iput-object p2, p0, Landroidx/work/WorkerParameters;->b:Landroidx/work/b;
 
-    .line 71
+    .line 4
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1, p3}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    iput-object p1, p0, Landroidx/work/WorkerParameters;->mTags:Ljava/util/Set;
+    iput-object p1, p0, Landroidx/work/WorkerParameters;->c:Ljava/util/Set;
 
-    .line 72
-    iput-object p4, p0, Landroidx/work/WorkerParameters;->mRuntimeExtras:Landroidx/work/WorkerParameters$RuntimeExtras;
+    .line 5
+    iput-object p4, p0, Landroidx/work/WorkerParameters;->d:Landroidx/work/WorkerParameters$a;
 
-    .line 73
-    iput p5, p0, Landroidx/work/WorkerParameters;->mRunAttemptCount:I
+    .line 6
+    iput p5, p0, Landroidx/work/WorkerParameters;->e:I
 
-    .line 74
-    iput-object p6, p0, Landroidx/work/WorkerParameters;->mBackgroundExecutor:Ljava/util/concurrent/Executor;
+    .line 7
+    iput-object p6, p0, Landroidx/work/WorkerParameters;->f:Ljava/util/concurrent/Executor;
 
-    .line 75
-    iput-object p7, p0, Landroidx/work/WorkerParameters;->mWorkTaskExecutor:Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+    .line 8
+    iput-object p7, p0, Landroidx/work/WorkerParameters;->g:Lv2/a;
 
-    .line 76
-    iput-object p8, p0, Landroidx/work/WorkerParameters;->mWorkerFactory:Landroidx/work/WorkerFactory;
+    .line 9
+    iput-object p8, p0, Landroidx/work/WorkerParameters;->h:Lj2/a0;
 
-    .line 77
-    iput-object p9, p0, Landroidx/work/WorkerParameters;->mProgressUpdater:Landroidx/work/ProgressUpdater;
+    .line 10
+    iput-object p9, p0, Landroidx/work/WorkerParameters;->i:Lj2/t;
 
-    .line 78
-    iput-object p10, p0, Landroidx/work/WorkerParameters;->mForegroundUpdater:Landroidx/work/ForegroundUpdater;
+    .line 11
+    iput-object p10, p0, Landroidx/work/WorkerParameters;->j:Lj2/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getBackgroundExecutor()Ljava/util/concurrent/Executor;
+.method public a()Ljava/util/concurrent/Executor;
     .locals 1
 
-    .line 162
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mBackgroundExecutor:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Landroidx/work/WorkerParameters;->f:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method
 
-.method public getForegroundUpdater()Landroidx/work/ForegroundUpdater;
+.method public b()Lj2/i;
     .locals 1
 
-    .line 194
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mForegroundUpdater:Landroidx/work/ForegroundUpdater;
+    iget-object v0, p0, Landroidx/work/WorkerParameters;->j:Lj2/i;
 
     return-object v0
 .end method
 
-.method public getId()Ljava/util/UUID;
+.method public c()Ljava/util/UUID;
     .locals 1
 
-    .line 87
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mId:Ljava/util/UUID;
+    iget-object v0, p0, Landroidx/work/WorkerParameters;->a:Ljava/util/UUID;
 
     return-object v0
 .end method
 
-.method public getInputData()Landroidx/work/Data;
+.method public d()Landroidx/work/b;
     .locals 1
 
-    .line 98
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mInputData:Landroidx/work/Data;
+    iget-object v0, p0, Landroidx/work/WorkerParameters;->b:Landroidx/work/b;
 
     return-object v0
 .end method
 
-.method public getNetwork()Landroid/net/Network;
+.method public e()I
     .locals 1
 
-    .line 143
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mRuntimeExtras:Landroidx/work/WorkerParameters$RuntimeExtras;
-
-    iget-object v0, v0, Landroidx/work/WorkerParameters$RuntimeExtras;->network:Landroid/net/Network;
-
-    return-object v0
-.end method
-
-.method public getProgressUpdater()Landroidx/work/ProgressUpdater;
-    .locals 1
-
-    .line 186
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mProgressUpdater:Landroidx/work/ProgressUpdater;
-
-    return-object v0
-.end method
-
-.method public getRunAttemptCount()I
-    .locals 1
-
-    .line 154
-    iget v0, p0, Landroidx/work/WorkerParameters;->mRunAttemptCount:I
+    iget v0, p0, Landroidx/work/WorkerParameters;->e:I
 
     return v0
 .end method
 
-.method public getRuntimeExtras()Landroidx/work/WorkerParameters$RuntimeExtras;
+.method public f()Lv2/a;
     .locals 1
 
-    .line 202
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mRuntimeExtras:Landroidx/work/WorkerParameters$RuntimeExtras;
+    iget-object v0, p0, Landroidx/work/WorkerParameters;->g:Lv2/a;
 
     return-object v0
 .end method
 
-.method public getTags()Ljava/util/Set;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .line 108
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mTags:Ljava/util/Set;
-
-    return-object v0
-.end method
-
-.method public getTaskExecutor()Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+.method public g()Lj2/a0;
     .locals 1
 
-    .line 170
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mWorkTaskExecutor:Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
-
-    return-object v0
-.end method
-
-.method public getTriggeredContentAuthorities()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .line 132
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mRuntimeExtras:Landroidx/work/WorkerParameters$RuntimeExtras;
-
-    iget-object v0, v0, Landroidx/work/WorkerParameters$RuntimeExtras;->triggeredContentAuthorities:Ljava/util/List;
-
-    return-object v0
-.end method
-
-.method public getTriggeredContentUris()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Landroid/net/Uri;",
-            ">;"
-        }
-    .end annotation
-
-    .line 120
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mRuntimeExtras:Landroidx/work/WorkerParameters$RuntimeExtras;
-
-    iget-object v0, v0, Landroidx/work/WorkerParameters$RuntimeExtras;->triggeredContentUris:Ljava/util/List;
-
-    return-object v0
-.end method
-
-.method public getWorkerFactory()Landroidx/work/WorkerFactory;
-    .locals 1
-
-    .line 178
-    iget-object v0, p0, Landroidx/work/WorkerParameters;->mWorkerFactory:Landroidx/work/WorkerFactory;
+    iget-object v0, p0, Landroidx/work/WorkerParameters;->h:Lj2/a0;
 
     return-object v0
 .end method

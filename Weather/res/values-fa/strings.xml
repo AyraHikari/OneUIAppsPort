@@ -60,6 +60,7 @@
     <string name="air_quality">کیفیت هوا</string>
     <string name="air_quality_next_tts">پیش‌بینی کیفیت هوای روزانه بعد</string>
     <string name="air_quality_previous_tts">پیش‌بینی کیفیت هوای روزانه قبل</string>
+    <string name="alert_title">هشدار وضع هوای نامساعد</string>
     <string name="all_added_cities">همه شهرهای اضافه شده</string>
     <string name="allow">اجازه دادن</string>
     <string name="allow_permission_in_settings">برای استفاده از این ویژگی، باید در تنظیمات به مجوزها اجازه دهید.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">عملکرد پشتیبانی نمی‌شود.</string>
     <string name="apply_daylight_saving_time">درخواست ساعت تابستانی؟</string>
     <string name="as_possible_after_verification">گزارش ارسال شد. نام شهر به محض تأیید، تغییر خواهد کرد.</string>
+    <string name="auto_refresh_on_screen_description">هر ساعت به‌طور خودکار اطلاعات جدید وضع هوا را دریافت کنید. وقتی این گزینه روشن باشد، نمی‌توانید به‌صورت دستی نوسازی کنید.</string>
+    <string name="auto_refresh_on_the_go">نوسازی خودکار در حرکت</string>
+    <string name="auto_refresh_on_the_go_advanced">پیشرفته</string>
+    <string name="auto_refresh_on_the_go_description">به‌روزرسانی‌های مکرر وضع هوا را در هنگام رانندگی، دوچرخه‌سواری، دویدن یا پیاده‌روی دریافت کنید. وقتی این گزینه روشن است، نمی‌توانید به‌صورت دستی نوسازی کنید.</string>
+    <string name="auto_refresh_on_the_go_simple_description">زمانی که در حال رانندگی، دوچرخه‌سواری، دویدن یا پیاده‌روی هستید، از به‌روزرسانی‌های مداوم وضع هوا بهره‌مند شوید.</string>
     <string name="bottomsheet_action_expand_halfway">گسترده کردن تا نیمه</string>
     <string name="btn_report">گزارش</string>
     <string name="button_finish">اتمام</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">برای اطلاعات بیشتر دو بار ضربه بزنید.</string>
     <string name="china">چین</string>
     <string name="cities_button">شهرها</string>
+    <string name="city_added">شهر اضافه شد.</string>
     <string name="city_list_text">شهرها</string>
     <string name="clear">صاف</string>
     <string name="clear_text_end_icon_content_description">پاک کردن نوشتار</string>
@@ -109,20 +116,20 @@
     <string name="comma">،</string>
     <string name="comments">نظرات</string>
     <string name="common_google_play_services_enable_button">فعال کردن</string>
-    <string name="common_google_play_services_enable_text">‏تا وقتی سرویس‌های Google Play را فعال نکنید، %1$s کار نمی‌کند.</string>
-    <string name="common_google_play_services_enable_title">‏‫فعال کردن سرویس‌های Google Play</string>
+    <string name="common_google_play_services_enable_text">‏تا وقتی «خدمات Google Play» را فعال نکنید، %1$s کار نمی‌کند.</string>
+    <string name="common_google_play_services_enable_title">‏‫فعال کردن «خدمات Google Play»</string>
     <string name="common_google_play_services_install_button">نصب</string>
     <string name="common_google_play_services_install_text">‏%1$s بدون خدمات Google Play که در دستگاه شما وجود ندارد اجرا نمی‌شود.</string>
-    <string name="common_google_play_services_install_title">‏دریافت سرویس‌های Google Play</string>
-    <string name="common_google_play_services_notification_channel_name">‏قابلیت دسترسی خدمات Google Play</string>
+    <string name="common_google_play_services_install_title">‏دریافت «خدمات Google Play»</string>
+    <string name="common_google_play_services_notification_channel_name">‏دردسترس بودن خدمات Google Play</string>
     <string name="common_google_play_services_notification_ticker">‏خطا در خدمات Google Play</string>
     <string name="common_google_play_services_unknown_issue">‏%1$s برای استفاده از خدمات Google Play با مشکل روبرو است. لطفاً دوباره امتحان کنید.</string>
     <string name="common_google_play_services_unsupported_text">‏%1$s بدون خدمات Google Play که در دستگاه شما پشتیبانی نمی‌شود، اجرا نخواهد شد.</string>
     <string name="common_google_play_services_update_button">به‌روزرسانی</string>
-    <string name="common_google_play_services_update_text">‏تاز مانی که سرویس‌های Google Play را به‌روزرسانی نکنید، %1$s اجرا نمی‌شود.</string>
-    <string name="common_google_play_services_update_title">‏‫به‌روزرسانی سرویس‌های Google Play</string>
-    <string name="common_google_play_services_updating_text">‏%1$s بدون سرویس‌های Google Play که درحال حاضر درحال به‌روزرسانی هستند، کار نمی‌کند.</string>
-    <string name="common_google_play_services_wear_update_text">‏نسخه جدید سرویس‌های Google Play نیاز است. به‌زودی به‌طور خودکار به‌روزرسانی می‌شود.</string>
+    <string name="common_google_play_services_update_text">‏تاز مانی که «خدمات Google Play» را به‌روزرسانی نکنید، %1$s اجرا نمی‌شود.</string>
+    <string name="common_google_play_services_update_title">‏‫به‌روزرسانی «خدمات Google Play»</string>
+    <string name="common_google_play_services_updating_text">‏%1$s بدون «خدمات Google Play» که درحال حاضر درحال به‌روزرسانی هستند، کار نمی‌کند.</string>
+    <string name="common_google_play_services_wear_update_text">‏نسخه جدید «خدمات Google Play» نیاز است. به‌زودی به‌طور خودکار به‌روزرسانی می‌شود.</string>
     <string name="common_open_on_phone">باز کردن در تلفن</string>
     <string name="common_signin_button_text">ورود به سیستم</string>
     <string name="common_signin_button_text_long">‏ورود به سیستم با Google‎</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">برای دریافت اطلاعات آب و هوای محلی، اطلاعات مکانی دستگاه شما به ارائه‌دهنده محتوا ارسال می‌شود.</string>
     <string name="contents_error_msg">این سرویس موقتا در دسترس نیست. لطفاً بعداً دوباره امتحان کنید.</string>
     <string name="copy">کپی</string>
-    <string name="copy_toast_msg">پیوند در بریده‌دان کپی شد</string>
     <string name="correct_city_name">نام شهر را تصحیح کنید</string>
     <string name="couldnt_find_location">مکان پیدا نشد</string>
     <string name="cover_screen_top_sync_dialog_text">همان مکان روی صفحه اصلی تنظیم شود؟</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">مورد در وضعیت ‎%d رها شد.</string>
     <string name="dragndroplist_drag_start">مورد به وضعیت ‎%d کشیده می‌شود.</string>
     <string name="dragndroplist_item_cannot_be_dragged">کشیدن موردی که در وضعیت ‎%d قرار دارد ممکن نیست.</string>
+    <string name="drawer_tips">%s نکته</string>
     <string name="drawer_tips_message">برای افزودن، حذف و تغییر ترتیب مکان‌ها، اینجا ضربه بزنید. همچنین می‌توانید برای نمایش مکان‌های مختلف در صفحه اصلی، چند ویجت اضافه کنید.</string>
     <string name="drawer_tips_message_1">روی &lt;مدیریت مکان‌ها> در پایین این منو ضربه زده و مکان‌ها را اضافه و حذف کنید و ترتیب آنها را تغییر دهید.</string>
     <string name="drawer_tips_message_2">می‌توانید بیشتر از یک ویجت به صفحه اصلی اضافه کنید تا همزمان مکان‌های مختلف نشان داده شود.</string>
@@ -214,10 +221,7 @@
     <string name="expand_button_title">پیشرفته</string>
     <string name="exposed_dropdown_menu_content_description">نمایش منوی کرکره‌ای</string>
     <string name="failed_to_send_report">ارسال گزارش ناموفق بود</string>
-    <string name="fallback_menu_item_copy_link">کپی پیوند</string>
-    <string name="fallback_menu_item_open_in_browser">بازکردن در مرورگر</string>
-    <string name="fallback_menu_item_share_link">هم‌رسانی پیوند</string>
-    <string name="farenheit">فارنهایت</string>
+    <string name="farenheit">درجه فارنهایت</string>
     <string name="favorite_location">مکان دلخواه</string>
     <string name="feel_like_pd_minus_temp">دمای محسوس ‎%d‎° -‎‎</string>
     <string name="feel_like_pd_temp">دمای محسوس °%d</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">ویدیوی پیش‌بینی وضع هوا</string>
     <string name="format_km_per_hour">%s کیلومتر/ساعت</string>
     <string name="format_m_per_hour">%s مایل/ساعت</string>
+    <string name="fri">ج</string>
     <string name="general">عمومی</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">بر اساس نحوه استفاده‌تان از تلفن، محتوای شخصی شده دریافت نمایید.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">بر اساس نحوه استفاده از تبلت خود، محتوای سفارشی شده دریافت کنید.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">از اطلاعات وضع هوا، اعم از اطلاعات مکان فعلی خود، در ”وضع هوا“ مطلع شوید</string>
     <string name="go_to_website">رفتن به وب‌سایت</string>
     <string name="goto_apps">به روز رسانی جدیدی موجود است. اکنون نصب شود؟</string>
     <string name="goto_apps_later">بعدا</string>
     <string name="goto_apps_now">اکنون</string>
     <string name="goto_apps_update_title">هشدارهای محتوای جدید</string>
     <string name="header_tts">عنوان</string>
+    <string name="heavy">سنگین</string>
     <string name="heavy_rain">باران شدید</string>
     <string name="heavy_rain_followed_by_intense_heat">باران سنگین و در ادامه گرمای شدید</string>
     <string name="heavy_rain_followed_by_light_rain">باران سنگین و در ادامه گرمای شدید</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">قابلیت مشاهده</string>
     <string name="life_index_wind">باد</string>
     <string name="life_index_wind_force">سرعت باد</string>
+    <string name="light">سبک</string>
     <string name="light_rain_followed_by_heavy_rain">باران اندک و در باران سنگین</string>
     <string name="light_rain_with_some_heavy_rain">باران اندک همراه با باران سنگین</string>
     <string name="link_tts">لینک</string>
@@ -437,7 +445,7 @@
     <string name="menu_current_city_show">استفاده از موقعیت فعلی</string>
     <string name="menu_delete_title">حذف</string>
     <string name="menu_details_share">اشتراک‌گذاری</string>
-    <string name="menu_edit_title">تصحيح</string>
+    <string name="menu_edit_title">ویرایش</string>
     <string name="menu_search_title">جستجو</string>
     <string name="menu_settings_calendar">تقویم</string>
     <string name="menu_settings_edge_screen">صفحه کنار دستگاه</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">نتیجه‌ای یافت نشد.</string>
     <string name="message_service_not_available">اکنون خدمات موجود نیست.</string>
     <string name="minus_tts">تفریق</string>
+    <string name="mon">۲ش</string>
     <string name="more">بیشتر</string>
     <string name="more_cuntact_us">تماس با ما</string>
     <string name="more_information">بیشتر</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">برای تغییر مکان وضع هوای پیش‌فرض و مدیریت همه مکان‌های خود، اینجا ضربه بزنید.</string>
     <string name="new_version_available">نسخه جدیدی از ‎%s در دسترس است.</string>
     <string name="new_version_is_available">یک نسخه جدید موجود است.</string>
+    <string name="news_menu_show_news">نمایش اخبار</string>
+    <string name="news_opt_in_banner_title_text">با نمایش اخبار در ویجت ”وضع هوا“ از رویدادهای جاری مطلع باشید.</string>
+    <string name="news_opt_in_popup_desc_text">با نمایش جدیدترین عناوین خبری %s در ویجت ”وضع هوا“ از آخرین اخبار جهان مطلع باشید.</string>
+    <string name="news_opt_in_popup_title_text">اخبار و وضع هوا را در یک ویجت مشاهده کنید</string>
+    <string name="news_request_agree_text">برای دریافت اخبار از %s ضربه بزنید</string>
+    <string name="news_widget_bubble_text">از وضع هوا خبر دریافت کنید.</string>
+    <string name="news_widget_dummy_title">برترین داستان امروز</string>
+    <string name="news_widget_new_dummy_title">۵ نکته‌ای که امروز صبح باید بدانید</string>
+    <string name="news_widget_oobe_text">جهت افزودن اخبار، اینجا بزنید.</string>
     <string name="next">شهر بعدی</string>
+    <string name="next_btn">بعدی</string>
     <string name="next_city">برای مشاهده اطلاعات وضع هوای شهر بعدی دو بار ضربه بزنید.</string>
     <string name="night_tts">شب</string>
     <string name="no_application_available">برنامه‌ای در دسترس نیست.</string>
@@ -516,14 +535,16 @@
     <string name="no_weather_information">اطلاعات وضع هوا وجود ندارد</string>
     <string name="not_in_use">مورد استفاده نیست</string>
     <string name="not_now">اکنون خیر</string>
+    <string name="not_now_btn">حالا نه</string>
     <string name="not_selected">انتخاب نشده است</string>
-    <string name="not_set">تنظیم نشده است</string>
+    <string name="not_set">تنظیم نشده</string>
     <string name="nothing_selected">انتخابی صورت نگرفته است.</string>
     <string name="noti">اطلاعیه</string>
     <string name="noti_today_forecast">پیش‌بینی هوای امروز</string>
     <string name="notice_accurate_location_detection_msg_no_path">برای شناسایی سریع و دقیق مکان، روی &lt;تنظیمات> ضربه بزنید، سپس روش مکان‌یابی را روی &lt;GPS>،‏ &lt;Wi-Fi> و &lt;شبکه تلفن همراه> تنظیم نمایید.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">برای شناسایی سریع و دقیق مکان، روی &lt;تنظیمات> ضربه بزنید، سپس روش مکان‌یابی را روی &lt;GPS> و &lt;Wi-Fi> تنظیم نمایید.</string>
     <string name="notice_gps_trun_off_message_verizon">برای مشاهده اطلاعات آب و هوای محلی خود، تنظیمات مکان را روشن کرده و اطمینان حاصل کنید که حالت روی دقت بالا تنظیم شده باشد.</string>
+    <string name="notification_alert_channel_name">هشدار وضع هوای نامساعد</string>
     <string name="notification_apps_update_channel_name">اعلان‌های به‌روزرسانی</string>
     <string name="notification_auto_refresh_channel_name">نوسازی خودکار وضع هوا</string>
     <string name="notification_dex_channel_name">وضع هوا در Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">بازکردن برنامه</string>
     <string name="open_source_licences">مجوزهای منبع آزاد</string>
     <string name="other_locations">مکان‌های دیگر</string>
+    <string name="partly_sunny">قسمتی آفتابی</string>
     <string name="password_toggle_content_description">نمایش گذرواژه</string>
     <string name="paused">متوقف شد</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">«%1$s» در بریده‌دان کپی شد.</string>
     <string name="preview">پیش‌نمایش %s</string>
     <string name="previous">شهر قبلی</string>
+    <string name="previous_btn">قبلی</string>
     <string name="previous_city">برای مشاهده اطلاعات وضع هوای شهر قبلی دو بار ضربه بزنید.</string>
     <string name="privacy_policy">سیاست حفظ حریم خصوصی</string>
     <string name="probability_of_rain_text">احتمال باران</string>
     <string name="protect_your_content">محافظت از محتوا</string>
+    <string name="ps_in">%s اینچ</string>
+    <string name="ps_mm">%s م‌م</string>
     <string name="radar">رادار و نقشه‌ها</string>
     <string name="rain">باران</string>
     <string name="rain_followed_by_intense_heat">بارانی و در ادامه گرمای شدید</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">برای به‌روزرسانی اطلاعات آب و هوا، روی &lt;تنظیمات> ضربه بزنید، به اطلاعات برنامه > مجوزها بروید، سپس به مجوزهای زیر اجازه دهید و دوباره امتحان کنید:</string>
     <string name="runtime_location_permission_title">اجازه به مجوزها</string>
     <string name="runtime_oem_grant_permission_desc">برنامه %s مجاز به دسترسی به موارد زیر است:</string>
+    <string name="sat">ش</string>
     <string name="save_button">ثبت</string>
     <string name="search_menu_title">جستجو</string>
     <string name="search_most_searched_for">بیشترین جستجو برای</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">محتوای جدید در دسترس است</string>
     <string name="sesl_material_overflow_badge_text_n">ج</string>
     <string name="sesl_more_item_label">بیشتر</string>
+    <string name="sesl_preferecne_badge_description">اعلان جدید</string>
     <string name="sesl_preferencecategory_added_title">عنوان</string>
     <string name="sesl_search_hint">جستجو</string>
     <string name="sesl_searchview_description_clear">پاک کردن فیلد جستجو</string>
@@ -644,7 +671,7 @@
     <string name="sesl_toolbar_collapse_description">کوچک کردن</string>
     <string name="set_default_location">تنظیم مکان پیش فرض</string>
     <string name="set_favorite">تنظیم مورد دلخواه</string>
-    <string name="set_favorite_location_confirm_dialog_msg">%s به عنوان مکان دلخواه شما تنظیم می‌شود. بر روی اعلان‌ها، تقویم و Always On Display نیز اعمال می‌شود.</string>
+    <string name="set_favorite_location_confirm_dialog_msg">%s به‌عنوان مکان دلخواه شما تنظیم می‌شود. بر روی اعلان‌ها، تقویم و Always On Display نیز اعمال می‌شود.</string>
     <string name="set_font_size">تنظیم اندازه قلم</string>
     <string name="set_font_size_large">بزرگ</string>
     <string name="set_font_size_medium">معمولی</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">آفلاین</string>
     <string name="st_view_less">مشاهده کمتر</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">خاموش</string>
+    <string name="status_on">روشن</string>
     <string name="summary_collapsed_preference_list">%1$s، %2$s</string>
+    <string name="sun">۱ش</string>
     <string name="sunny">آفتابی</string>
     <string name="sunny_with_some_clouds">آفتابی همراه با کمی ابر</string>
     <string name="sunny_with_some_heavy_rain">آفتابی همراه با باران سنگین</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">اینجا ضربه بزنید و اطلاعات وضع هوا را از دستگاه قدیمی خود بازیابی کنید.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">برای تلاش مجدد جهت پیدا کردن مکانتان روی &lt;تلاش مجدد> ضربه بزنید.</string>
     <string name="tap_setting_message_edge_panel">برای دریافت وضع هوای محلی، مکان را روشن کنید.</string>
+    <string name="tap_the_settings_icon">روی نماد تنظیمات ضربه بزنید.</string>
     <string name="tap_to_get_the_weather">برای دریافت وضع هوا ضربه بزنید</string>
     <string name="temp_f_c">%d درجه فارنهایت</string>
     <string name="temp_f_m">%d درجه سانتیگراد</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">شرایط و ضوابط</string>
     <string name="the_latest_version">جدیدترین نسخه از قبل نصب شده است.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">این مورد بر روی اعلان‌ها و تقویم نیز اعمال خواهد شد.</string>
+    <string name="thu">۵ش</string>
     <string name="tick_box_tts">کادر انتخاب</string>
     <string name="ticked_tts">انتخاب شد</string>
     <string name="time_am">ق.ظ</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">ساعتی</string>
     <string name="title_select_locations">انتخاب مکان‌ها</string>
     <string name="title_theme">طرح زمینه</string>
+    <string name="to_continue_agree_to_updated">برای ادامه، با %s به‌روزرسانی‌شده ما موافقت کنید.</string>
     <string name="to_get_local_weather_chn">"برای دریافت وضعیت آب و هوای محلی، مکان کنونی شما به ارائه‌ دهنده سرویس وضعیت آب‌ و هوا ارسال خواهد شد. (لطفا به %1$sشرایط و ضوابط%2$s و %3$sسیاست حفظ حریم خصوصی%4$s ارائه دهنده رجوع کنید.)
 برنامه ها و خدمات دیگر موجود در دستگاه شما ممکن است به داده آب و هوای دریافت شده دسترسی پیدا کنند تا وضعیت آب و هوا در آن برنامه ها نیز نمایش داده شود.
 برای اینکه اطلاعات آب و هوا به صورت دائم برای شما فراهم شود، برنامه آب و هوا دائما به مکان شما دسترسی خواهد داشت، حتی زمانی که از این برنامه استفاده نمی کنید."</string>
     <string name="today">امروز</string>
+    <string name="try_it_out_btn">آن را امتحان کنید</string>
+    <string name="tue">۳ش</string>
+    <string name="turn_on_to_use_precise_location">برای استفاده از این ویژگی، باید به %s اجازه دهید همیشه به موقعیت مکانی شما دسترسی داشته باشد و ”استفاده از مکان دقیق“ را روشن کنید. روی ”تنظیمات“ ضربه بزنید، سپس به ”مجوزها > مکان“ بروید.</string>
     <string name="tw_title_weather_broadcast">پخش</string>
-    <string name="unable_to_check_for_updates">بررسی نسخه‌های به‌روز ممکن نیست. هیچ اتصال شبکه‌ای وجود ندارد.</string>
+    <string name="unable_to_check_for_updates">موارد به‌روز بررسی نشد. بعداً دوباره امتحان کنید.</string>
     <string name="unable_to_receive_info_msg">دریافت اطلاعات ممکن نیست</string>
     <string name="unticked_tts">تیک حذف شد</string>
     <string name="unused">بلااستفاده</string>
     <string name="update">به روز رسانی</string>
     <string name="update_abb8">به‌روزرسانی</string>
     <string name="update_app">به‌روزرسانی برنامه</string>
+    <string name="updated_tile_chn">به روزآوری شد: %s</string>
     <string name="updated_tts">%s به‌روز شد</string>
+    <string name="use_current_location">استفاده از موقعیت فعلی</string>
     <string name="use_current_location_agree_popup">"برای دریافت وضعیت هوای محلی، مکان کنونی شما به ارائه‌دهنده سرویس وضعیت آب‌وهوا ارسال خواهد شد. (لطفاً به %1$sسیاست حفظ حریم خصوصی%2$s ارائه‌دهنده مراجعه کنید.)
 سایر برنامه‌ها و سرویس‌های روی این دستگاه ممکن است به داده‌های بازیابی‌شده آب‌وهوا دسترسی پیدا کنند تا وضعیت هوا در این برنامه‌ها نشان داده شود."</string>
     <string name="use_current_location_and_background_agree_popup">"برای دریافت وضعیت آب و هوای محلی، مکان کنونی شما به ارائه‌ دهنده سرویس وضعیت آب‌ و هوا ارسال خواهد شد. (لطفا به %1$sسیاست حفظ حریم خصوصی%2$s ارائه دهنده رجوع کنید.)
@@ -746,9 +784,16 @@
 شما می‌توانید قابلیت استفاده از موقعیت مکانی خود را از قسمت تنظیمات برنامه هوا غیرفعال کنید."</string>
     <string name="use_current_location_body_msg_chn">"لطفاً قبل از استفاده \"از وضع هوا\" با دقت مطالعه کنید:
 اگر مایلید از وضع آب و هوای مکان فعلی خود مطلع شوید، لازم است که به شخص سومی اجازه‌ی دسترسی(حتی زمانی که از این خدمات استفاده نمی‌کنید)مداوم به دستگاه خود بدهید تا بتواند اطلاعات خاصی را بدست بیاورد، که به ترتیب زیر است. لطفاً %1$sشرایط و ضوابط%2$s و %3$sسیاست حفظ حریم خصوصی%4$s ارائه دهنده سرویس شخص ثالث را قبل از اعطای چنین اجازه‌ای با دقت مطالعه کنید تا از آن مطلع شوید. می‌توانید با خاموش کردن \"مکان\" در منوی تنظیمات اعطای این اجازه را لغو کنید. سایر برنامه‌ها و خدمات روی این دستگاه ممکن است به اطلاعات بازیابی‌شده وضع هوا دسترسی پیدا کنند تا وضع هوا در این برنامه‌ها و خدمات نشان داده شود."</string>
+    <string name="use_current_location_body_msg_kor">"مکان فعلی شما جمع‌آوری و از آن برای ارائه برخی از ویژگی‌های برنامه ”وضع هوا“، مانند دریافت وضع هوای محلی شما، استفاده خواهد شد.
+
+به‌منظور ارائه مداوم اطلاعات وضع هوا، این برنامه حتی زمانی که از آن استفاده نمی‌کنید، به‌طور مرتب مکان شما را پردازش خواهد کرد. با ادامه دادن، با جمع‌آوری و پردازش اطلاعات مکان خود برای اهداف بالا موافقت می‌کنید.
+
+می‌توانید در تنظیمات برنامه ”وضع هوا“، این جمع‌آوری اطلاعات مکان و استفاده از آن را متوقف کنید."</string>
     <string name="use_current_location_body_purpose">هدف</string>
     <string name="use_current_location_body_purpose_content">جهت ارائه اطلاعات وضع هوا برای مکان فعلی</string>
     <string name="use_current_location_body_search_provider">ارائه دهنده سرویس</string>
+    <string name="use_current_location_continue">ادامه</string>
+    <string name="use_current_location_not_now">حالا نه</string>
     <string name="use_current_location_off_alert_popup">اطلاعات مکان فعلی حذف خواهد شد.</string>
     <string name="useful_informations">نکات زندگی و گزارشات دیگر</string>
     <string name="using_as">استفاده به‌عنوان %s</string>
@@ -856,9 +901,11 @@
     <string name="weather_tip">نکات وضع هوا</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.‎</string>
+    <string name="wed">۴ش</string>
     <string name="weekly_forecast">روزانه</string>
     <string name="widget_background">پس‌زمینه ویجت</string>
     <string name="widget_empty_text">ضربه برای اطلاعات وضع هوا</string>
+    <string name="widget_location">نام شهر</string>
     <string name="widget_name_4x1">وضع هوا و ساعت</string>
     <string name="widget_setting">تنظیمات</string>
     <string name="widget_setting_background_color">رنگ پس‌زمینه</string>

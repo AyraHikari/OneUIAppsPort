@@ -29,6 +29,18 @@
 # direct methods
 .method private constructor <init>(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;ILcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "UDPPortNumber",
+            "data"
+        }
+    .end annotation
 
     .line 144
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPSendingThread;->this$0:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;
@@ -154,6 +166,14 @@
 
 .method private setExpiredTime(Ljava/util/Calendar;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expiredTime"
+        }
+    .end annotation
 
     .line 196
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPSendingThread;->broadcastExpiredTime:Ljava/util/Calendar;
@@ -303,9 +323,11 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "sending UDP message : "
+    const-string/jumbo v4, "sending UDP message : "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     iget-object v4, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPSendingThread;->data:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
@@ -315,13 +337,15 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    const-string v3, "sending UDP message"
+    const-string/jumbo v3, "sending UDP message"
 
     .line 178
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -342,31 +366,22 @@
 
     .line 171
     :try_start_3
-    throw v3
+    invoke-virtual {v2}, Ljava/net/DatagramSocket;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    :catchall_1
-    move-exception v4
-
-    .line 180
-    :try_start_4
-    invoke-virtual {v2}, Ljava/net/DatagramSocket;->close()V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
     goto :goto_1
 
-    :catchall_2
+    :catchall_1
     move-exception v2
 
-    :try_start_5
+    :try_start_4
     invoke-virtual {v3, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     :goto_1
-    throw v4
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
+    throw v3
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
     :catch_0
     move-exception v2
@@ -380,13 +395,17 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -397,10 +416,10 @@
     const-wide/16 v2, 0xfa0
 
     .line 186
-    :try_start_6
+    :try_start_5
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_6
-    .catch Ljava/lang/InterruptedException; {:try_start_6 .. :try_end_6} :catch_1
+    :try_end_5
+    .catch Ljava/lang/InterruptedException; {:try_start_5 .. :try_end_5} :catch_1
 
     goto/16 :goto_0
 

@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">فون سے ایپس شامل کریں</string>
     <string name="add_your_bio_first_dialog_desc">‏Samsung Flow میں سائن ان کرنے کے واسطے ٹیبلیٹ بایومیٹرکس استعمال کرنے کے لیے، اپنے ٹیبلیٹ پر اپنی فنگرپرنٹس یا آئریسز رجسٹر کریں اور دوبارہ کوشش کریں۔</string>
     <string name="add_your_bio_first_dialog_title">اپنا بایومیٹرکس پہلے شامل کریں</string>
+    <string name="advanced_features">اعلی فیچرز</string>
     <string name="alarm">الارم</string>
     <string name="all_apps">تمام ایپلیکیشنز</string>
     <string name="allow_appear_on_top">’اوپر ظاہر ہو‘ کی اجازت دیں</string>
     <string name="allow_appear_on_top_desc">اپنے کمپیوٹر یا ٹیبلیٹ پر آپ کی زیر استعمال دیگر ایپس کے اوپری حصے پر پاپ اپس یا نوٹیفکیشنز جیسی چیزیں دکھانے کیلئے، آپ کو سیٹنگز میں ’اوپر کی طرف ظاہر ہوں‘ اجازت دینی ہوگی۔</string>
+    <string name="allow_location_settings">آلات پر مقام کی سیٹنگز تک رسائی کی اجازت دیں</string>
     <string name="and_more">%1$s اور %2$d مذید</string>
+    <string name="app_info">ایپ کی معلومات</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">منسلک</string>
     <string name="attach_image">تصویر</string>
     <string name="attach_my_files">میری فائلز</string>
     <string name="attach_sound">آڈیو</string>
@@ -38,20 +43,29 @@
 آن
 Smart View"</string>
     <string name="bluetooth_connection_failed_text">یقینی بنائیں کہ آپ کے فون نے Samsung Flow کو آن کردیا ہے۔</string>
+    <string name="bt_or_nfc_turned_on">‏Samsung Flow استعمال کرنے کے لیے، %s آن کردیا جائے گا۔.</string>
+    <string name="btn_desc_cancel">منسوخ کریں</string>
+    <string name="btn_desc_failed">ناکام</string>
+    <string name="can_not_use">%s کا استعمال نہیں کرسکتے</string>
+    <string name="can_not_use_at_same_time">%1$s اور %2$s ایک ہی وقت میں نہیں اہل نہیں کیے جا سکتے ہیں۔ %3$s غیر فعال کر دیا جائے گا۔</string>
     <string name="cancel_all">تمام منسوخ</string>
     <string name="cant_share_files">فائلز کا اشتراک نہیں کیا جا سکتا</string>
     <string name="cant_use_mobile_hotspot_case_1">نیٹ ورک کے ساتھ کچھ غلطی ہوگئی۔ اپنے فون پر موبائل ہاٹ اسپاٹ چیک کریں اور دوبارہ کوشش کریں۔</string>
     <string name="cant_use_mobile_hotspot_case_2">نیٹ ورک کے ساتھ کچھ غلطی ہوگئی۔ کیا آپ کا پلان موبائل ہاٹ اسپاٹ کے لیے معاون ہے یہ دیکھنے کے لیے اپنے خدمت فراہم کنندہ سے رابطہ کریں۔</string>
     <string name="cant_use_mobile_hotspot_title">موبائل ہاٹ اسپاٹ استعمال نہیں کیا جاسکتا</string>
     <string name="cant_use_this_function_in_multi_window">ملٹی ونڈو منظر میں یہ فنکشن نہیں چلا سکتے ہیں۔</string>
-    <string name="chan_mkt">قانونی</string>
-    <string name="chan_ntc">نوٹس</string>
+    <string name="change_location_settings">مقام کی سیٹنگز تبدیل کریں</string>
+    <string name="character_counter_content_description">%2$d حروف میں سے %1$d باقی</string>
     <string name="checkbox_all">تمام</string>
+    <string name="china_network_permission_popup_body">%s کو نیٹ ورک کنیکشنز استعمال کرنے کی اجازت دیں؟</string>
+    <string name="china_network_permission_popup_title">نیٹ ورک کنکشنز استعمال کریں</string>
+    <string name="clipboard">کلپ بورڈ</string>
     <string name="clipboard_off">مربوط آلات پر کلپ بورڈ کے مواد کا اشتراک کرنا بند کریں</string>
     <string name="clipboard_on">مربوط آلات پر کلپ بورڈ کے مواد کا اشتراک کریں</string>
     <string name="close_app">ایپ بند کریں</string>
     <string name="confirm_pass_key_connecting_to_deivce">%s سے متصل کررہا ہے…</string>
-    <string name="connect_help_desc0">اپنے فون یا گھڑی پر Samsung Flow آن کریں۔</string>
+    <string name="confirm_your_phone">اپنے فون پر تصدیق کریں</string>
+    <string name="connect_help_desc0">اپنے فون پر Samsung Flow آن کریں۔</string>
     <string name="connect_help_desc1">یقینی بنائيں کہ بلیوٹوتھ یا Wi-Fi دونوں آلات کے لیے آن ہیں۔</string>
     <string name="connect_help_desc2">اگر آپ Wi-Fi یا LAN کنیکشنز استعمال کررہے ہیں، تو یقینی بنائيں کہ دونوں آلات ایک ہی نیٹ ورک سے مربوط ہیں۔</string>
     <string name="connect_help_desc4">یقینی بنائیں کہ آپ ٹیبلیٹ کو اپنے کمپیوٹر سے مربوط کرنے کی کوشش نہیں کررہے ہیں۔ یہ Samsung Flow کے ذریعے تعاون یافتہ نہیں ہے۔</string>
@@ -69,16 +83,18 @@ Smart View"</string>
     <string name="connection_error_register_fail">رجسٹریشن ناکام ہوگئی۔ دوبارہ کوشش کریں۔</string>
     <string name="connection_failed">مربوط نہ ہوسکا۔</string>
     <string name="connection_goto_permission_setting">%s استعمال کرنے کے لیے، [سیٹنگز] پر تھپکی دیں، ایپلیکیشن معلومات > اجازتوں پر جائیں، پھر درج ذیل اجازتوں کی اجازت دیں:</string>
+    <string name="connection_method_biometrics">بایو میٹرکس</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">‏Samsung Flow میں بایومیٹرکس استعمال کرنے کیلئے، آپ کو سیٹنگز میں اپنا بایومیٹرک رجسٹر کرنا ہوگا۔</string>
+    <string name="connection_method_biometrics_no_enrolled_title">بایومیٹرکس رجسٹر کریں</string>
+    <string name="connection_method_biometrics_required_title">%s میں بایومیٹرکس کا استعمال کرنے کیلئے توثیق کی ضرورت ہے۔</string>
+    <string name="connection_method_manual">دستی</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">‏Samsung Pass کا استعمال کر کے اپنے بایومیٹرکس کے ساتھ %s سے خودکار طور پر دوبارہ منسلک ہوں۔</string>
-    <string name="connection_method_simple_connection">سادہ کنکشن</string>
-    <string name="connection_method_simple_connection_desc">اپنے فون پر تصدیق کئے بغیر %s سے خودکار طور پر دوبارہ منسلک ہوں۔</string>
-    <string name="connection_method_simple_connection_desc_tab">اپنے ٹیبلیٹ پر تصدیق کئے بغیر %s سے خودکار طور پر دوبارہ منسلک ہوں۔</string>
+    <string name="connection_method_simple_connection">خودکار کنکشن</string>
     <string name="connection_method_tablet_bio">ٹیبلیٹ بایومیٹرکس</string>
-    <string name="connection_method_tablet_bio_desc">اپنے ٹیبلیٹ پر اپنے بایومیٹرکس کے ساتھ %s سے خودکار طور پر دوبارہ منسلک ہوں۔</string>
     <string name="connection_request_noti_accept">قبول کریں</string>
     <string name="connection_request_noti_desc">%s کو اپنے فون سے مربوط ہونے کی اجازت دیں؟</string>
     <string name="content_shared_via">%s کے ذریعے اشتراک کردہ مواد</string>
+    <string name="continue_apps_on_other_device">دیگر آلات پر ایپس جاری رکھیں</string>
     <string name="copied_to_clipboard">کلپ بورڈ پر کاپی ہوگیا۔</string>
     <string name="copy_text">ٹیکسٹ کاپی کریں</string>
     <string name="delete_lower">حذف کریں</string>
@@ -90,8 +106,11 @@ Smart View"</string>
     <string name="device_not_secured_desc_for_bio">اپنے ٹیبلیٹ پر بایومیٹرکس استعمال کرنے کے لیے، آپ کو اپنے فون پر اسکرین لاک سیٹ کرنے کی ضرورت ہے۔</string>
     <string name="device_not_secured_desc_for_watch">اپنی گھڑی استعمال کرنے کے لیے، آپ کو اپنے فون پر اسکرین لاک سیٹ کرنے کی ضرورت ہے۔</string>
     <string name="device_status_connected">مربوط</string>
+    <string name="device_status_connected_with">%s کے ساتھ متصل ہوگیا۔</string>
+    <string name="device_status_disconnected">غیر منسلک ہو گیا۔</string>
     <string name="device_status_registered">رجسٹر ہو گیا</string>
     <string name="device_storage">آلے کا ذخیرہ</string>
+    <string name="dialog_allow">اجازت دیں</string>
     <string name="dialog_close">بند کریں</string>
     <string name="dialog_deny">انکار کریں</string>
     <string name="dialog_desc_turn_off_mirroring">‏Smart View آف کریں؟</string>
@@ -99,6 +118,7 @@ Smart View"</string>
     <string name="dialog_ok">ٹھیک ہے</string>
     <string name="dialog_retry">دوبارہ کوشش کریں</string>
     <string name="dismiss">برخاست کریں</string>
+    <string name="dragndroplist_drag_move">اب %d پوزیشن پر ہے</string>
     <string name="dragndroplist_drag_release">آئٹم کو پوزیشن %d پر ڈالا گیا۔</string>
     <string name="dragndroplist_drag_start">پوزیشن %d سے کارڈ کو گھسیٹنا شروع کیا۔</string>
     <string name="dragndroplist_item_cannot_be_dragged">آئٹم پوزیشن %d کو گھسیٹا نہیں جاسکتا۔</string>
@@ -118,41 +138,8 @@ Smart View"</string>
     <string name="flow_main_device_not_secure_dialog_desc">ونڈوز اسکرین انلاک استعمال کرنے کے لیے، آپ کو اپنے فون پر اسکرین لاک سیٹ کرنے کی ضرورت ہے۔</string>
     <string name="flow_main_device_not_secure_dialog_title">محفوظ اسکرین لاک سیٹ کریں</string>
     <string name="go_to_settings">سیٹنگز پر جائیں</string>
-    <string name="help_clipboard_desc">"آپ اپنے مربوط ٹیبلیٹ یا کمپیوٹرکے ذریعہ اپنے کلپ بورڈ پر متن، ویب پتے، اور تصاویر شیئر کرسکتے ہیں۔
-
-اس فنکشن سے آپ کی بیٹری کا استعمال بڑھ سکتی ہے۔"</string>
-    <string name="help_clipboard_title">کلپ بورڈ کا استعمال کرنا</string>
-    <string name="help_connecting_devices_desc_1">‏Samsung Flow استعمال کرتے ہوئے اپنے کمپیوٹر یا ٹیبلیٹ کو اپنے فون (%s) سے جوڑیں۔</string>
-    <string name="help_connecting_devices_desc_2">یقینی بنائیں کہ ایک ہی نیٹ ورک کے لیے دونوں آلات میں بلیوٹوتھ آن ہیں یا Wi-Fi ہے یا LAN کنیکشن ہے۔</string>
-    <string name="help_connecting_devices_desc_2_1">اگر آپ USB کیبل استعمال کررہے ہیں، تو یقینی بنائيں کہ یہ دونوں آلات اورAndroid 10 یا اس سے اعلی ورژن سے مربوط ہے اور وہ مربوط آلہ پر نصب شدہ ہے۔</string>
-    <string name="help_connecting_devices_desc_3">‏Samsung Flow دونوں آلات میں کھولیں، پھر اپنے کمپیوٹر پر سیٹ اپ ویزارڈ کی پیروی کریں۔</string>
-    <string name="help_connecting_devices_desc_4">مزید معلومات کے لیے، www.samsung.com/samsungflow ملاحظہ کریں۔</string>
-    <string name="help_connecting_devices_desc_5">کم سے کم ضروریات</string>
-    <string name="help_connecting_devices_desc_6">‏Windows کمپیوٹر یا ٹیبلیٹ: Windows 10 تخلیق کار اپ ڈیٹ (v1703) اور جون کا پیچ بلڈ (15063.413)، بلیوٹوتھ (بلیوٹوتھ LE اختیاری ہے)، اور Wi-Fi Direct۔</string>
-    <string name="help_connecting_devices_desc_7">‏Android ٹیبلیٹ: Android Marshmallow یا اعلی ترین۔ مزید تفصیلات کے لیے FAQ دیکھیں۔</string>
-    <string name="help_connecting_devices_title">آپ کے PC/ٹیبلیٹس سے جڑرہا ہے</string>
     <string name="help_contact_us">ہم سے رابطہ کریں</string>
     <string name="help_install_samsung_flow_title">‏Samsung Flow کے ذریعہ آلات جوڑیں</string>
-    <string name="help_mobile_hotspot_desc">اپنے فون پر موبائل ہاٹ اسپاٹ آن یا آف کرنے کیلئے %s پر تھپتھپائیں۔ یہ Android 11 یا اس سے اعلی ورژن چلانے والے فونز کے ساتھ کام نہیں کرتا ہے۔</string>
-    <string name="help_mobile_hotspot_title">موبائل ہاٹ اسپاٹ استعمال کرنا</string>
-    <string name="help_noti_sync_desc">"‏Samsung Flow کا استعمال کر کے کمپیوٹر یا ٹیبلیٹ منسلک کرنے پر، اپنے فون کی نوٹیفکیشنز کو اپنے کمپیوٹر یا ٹیبلیٹ پر دیکھیں۔ نئے نوٹیفکیشنز موصول ہونے پر، آپ دیگر ایپس سے پیغامات کا فوری طور پر جواب دے سکتے ہیں۔
-
-ممکن ہے پیغام رسانی کی کچھ ایپس کیلئے یہ فنکشن دستیاب نہ ہو۔
-
-آپ مزید اختیارات > سیٹنگز > نوٹیفکیشنز کا نظم کریں پر جا کر Samsung Flow نوٹیفکیشنز کا نظم کر سکتے ہیں۔"</string>
-    <string name="help_noti_sync_title">نوٹیفکیشنز مطابقت پذیر کرنا</string>
-    <string name="help_sharing_contents_desc_1">آپ مربوط آلات کے درمیان آسانی سے مواد شیئر کرسکتے ہیں۔</string>
-    <string name="help_sharing_contents_desc_2">فون سے کمپیوٹر یا ٹیبلیٹ میں</string>
-    <string name="help_sharing_contents_desc_3">براؤزر جیسے کسی ایپلیکیشن میں شیئرنگ اختیار ڈھونڈیں، پھر Samsung Flow منتخب کریں۔</string>
-    <string name="help_sharing_contents_desc_4">آپ فائلیں منتخب کرنے اور انہیں شیئر کرنے کے لیے Flow کی ہسٹری ٹیب میں %s پر تھپکی بھی دے سکتے ہیں۔</string>
-    <string name="help_sharing_contents_desc_5">کمپیوٹر یا ٹیبلیٹ سے فون تک</string>
-    <string name="help_sharing_contents_desc_6">براؤزر جیسے کسی ایپلیکیشن میں شیئرنگ اختیار ڈھونڈیں، پھر Samsung Flow منتخب کریں۔</string>
-    <string name="help_sharing_contents_desc_7">آپ فائلیں منتخب کرنے اور انہیں شیئر کرنے کے لیے Flow کی ہسٹری ٹیب میں %s پر تھپکی بھی دے سکتے ہیں، یا Samsung Flow میں فائلیں گھسیٹ کر ڈراپ بھی کرسکتے ہیں۔</string>
-    <string name="help_sharing_contents_title">مواد شیئر کرنا</string>
-    <string name="help_smart_view_desc">اپنے ٹیبلیٹ یا کمپیوٹر پر اپنی فون اسکرین کو مرر کرنے کیلئے، Smart View آئیکن پر تھپتھپائیں۔</string>
-    <string name="help_smart_view_desc_2">‏Smart View کا استعمال کرتے وقت، آپ فوری رسائی کی خاطر پسندیدہ ایپس شامل کرنے کیلئے اسٹار آئیکن پر تھپتھپا سکتے ہیں۔</string>
-    <string name="help_smart_view_title">‏Smart View استعمال کرکے</string>
-    <string name="help_using_multi_device_title">کثیرتعداد PC/ٹیبلیٹس زیر استعمال ہے</string>
     <string name="hotspot_description">‏Samsung Flow چلتے وقت موبائل ہاٹ اسپاٹ استعمال کر کے ایک جڑے ہوئے آلہ کو کسی انٹرنیٹ رسائی پوائنٹ کے طور پر استعمال کریں۔</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">موبائل ہاٹ اسپاٹ استعمال کرنے کے لیے، Wi-Fi کو آ‌ف کیے جانے کی ضرورت ہے۔</string>
     <string name="hotspot_warning_dialog_title_wifi_off">‏Wi-Fi آف کریں؟</string>
@@ -185,7 +172,11 @@ Smart View"</string>
     <string name="menu_do_not_disturb">پریشان نہ کریں</string>
     <string name="menu_enable_hotspot">موبائل ہاٹ اسپاٹ سے مربوط کریں</string>
     <string name="menu_favorites">پسندیدگان</string>
+    <string name="menu_favorites_add">شامل کریں</string>
+    <string name="menu_favorites_remove">ہٹائیں</string>
     <string name="menu_full_screen">مکمل منظر</string>
+    <string name="menu_more">مزید</string>
+    <string name="menu_phone_screen">فون کی اسکرین</string>
     <string name="menu_resolution">جزیات کاری</string>
     <string name="menu_resolution_option_high">زیادہ</string>
     <string name="menu_resolution_option_low">کم</string>
@@ -221,7 +212,7 @@ Smart View"</string>
     <string name="no_registered_pc">کوئی رجسٹر کردہ PC/ٹیبلیٹ نہیں</string>
     <string name="no_shared_contents">کوئی شیئر کردہ مواد نہیں</string>
     <string name="no_shared_contents_desc">آپ اپنے فون سے اپنے منسلک آلے پر فائلوں یا پیغامات کا اشتراک کر سکتے ہیں۔</string>
-    <string name="not_enough_storage">زیادہ اسٹوریج نہیں ہے</string>
+    <string name="not_enough_storage">زیادہ اسٹوریج نہیں ہے</string>
     <string name="noti_button_reply">جواب دیں</string>
     <string name="noti_channel_name_authentication">مجاذ</string>
     <string name="noti_channel_name_incomingcall">ان کمنگ کال</string>
@@ -231,6 +222,10 @@ Smart View"</string>
     <string name="noti_desc_screenshot_saved">اپنا اسکرین شاٹ دیکھنے کے لیے یہاں تھپکی دیں۔</string>
     <string name="noti_title_screenshot_saved">سکرین شاٹ کو محفوظ ہوگيا</string>
     <string name="notices">نوٹسز</string>
+    <string name="notices_last_for_android6_desc">"یہ Android 6.0 (مارش میلو) کیلئے آخری اپ ڈیٹ ہے۔ OS کی حدود کی وجہ سے Samsung Flow اب Android 6.0 کو مزید سپورٹ نہیں کر رہا ہے۔
+
+اپ ڈیٹ کئے بغیر، Android 6.0 کے صارفین اب بھی Samsung Flow کا استعمال کر سکتے ہیں۔"</string>
+    <string name="notices_last_for_android6_title">‏Android 6.0 (مارش میلو) کیلئے سپورٹ کا اختتام</string>
     <string name="notices_notice">نوٹس</string>
     <string name="notices_update">اپ ڈیٹ کریں</string>
     <string name="notices_update_include">سافٹ ویئر اپ ڈیٹس میں یہ چیزیں شامل ہو سکتی ہیں:</string>
@@ -255,6 +250,8 @@ Smart View"</string>
     <string name="option_connection_type_wifi">‏Wi-Fi یا LAN</string>
     <string name="pc">PC</string>
     <string name="permissions">اجازتیں</string>
+    <string name="permissions_all_files_access">تمام فائلز تک رسائی</string>
+    <string name="permissions_all_files_access_desc">تصویریں، میڈیا، اور فائلیں منتقل کرنے کے لیے استعمال کیا گیا۔</string>
     <string name="permissions_appear_on_top_desc">دیگر ایپس کے اوپری حصے پر نوٹیفکیشنز دکھانے کیلئے استعمال کیا جاتا ہے</string>
     <string name="permissions_appear_on_top_title">‏Samsung Flow کو ’اوپر دکھائی دے‘ تک رسائی کی اجازت دیں تاکہ نوٹیفکیشنز کو دیگر ایپس کے اوپری حصے میں دکھایا جا سکے؟</string>
     <string name="permissions_call_log">کال لاگز</string>
@@ -266,6 +263,8 @@ Smart View"</string>
     <string name="permissions_location_desc">بلیوٹوتھ کے ذریعے قریبی Galaxy آلات تلاش کرنے کے لیے استعمال کیا گیا ہے۔</string>
     <string name="permissions_microphone">مائیکروفون</string>
     <string name="permissions_microphone_desc">اعلی فریکوئنسی آڈیو وصول کرکے Galaxy آلات کو جوڑنے کے لیے استعمال کیا گیا۔</string>
+    <string name="permissions_nearby_devices">قريبی آلات</string>
+    <string name="permissions_nearby_devices_desc">قریبی آلات تلاش کرنے اور رجسٹرڈ آلات کو ٹریک کرنے کیلئے استعمال کیا جاتا ہے</string>
     <string name="permissions_notification_access_desc">منسلک آلے پر نوٹیفکیشنز بھیجنے کیلئے استعمال کیا جاتا ہے</string>
     <string name="permissions_phone">فون</string>
     <string name="permissions_phone_desc">پ کے فون نمبر کی توثیق کرنے کے لیے استعمال کیا گيا۔</string>
@@ -273,11 +272,11 @@ Smart View"</string>
     <string name="permissions_sms_desc">متنی پیغامات منتقل کرنے کے لیے استعمال کیا گیا۔</string>
     <string name="permissions_storage">ذخیرہ</string>
     <string name="permissions_storage_desc">تصویریں، میڈیا، اور فائلیں منتقل کرنے کے لیے استعمال کیا گیا۔</string>
-    <string name="permissions_title">%s کیلئے اجازتیں</string>
+    <string name="permissions_title">‏Samsung Flow ان اجازتوں کا استعمال کرتا ہے</string>
     <string name="phone">فون</string>
     <string name="press_enter_key_to_send">‏Enter کلید سے پیغامات بھیجیں</string>
     <string name="processing">پروسیسنگ</string>
-    <string name="receiving_failed">وصول کرنے فیل۔</string>
+    <string name="receiving_failed">یہ پیغام موصول ہونے کے دوران کچھ گڑبڑ ہو گئی۔</string>
     <string name="register_failed">بعد میں دوبارہ کوشش کریں۔</string>
     <string name="resend">پھر سے بھیجیں</string>
     <string name="rooted_device">آپ کے آلہ کو روٹ کر دیا گیا ہے۔ %s کو سیکیورٹی وجوہات سے روٹ کردہ ڈیوائسز پر استعمال نہیں کیا جا سکتا ہے۔</string>
@@ -295,11 +294,19 @@ Smart View"</string>
     <string name="select_apps_for_shortcuts">شارٹ کٹس کے لیے اپلیکیشنز منتخب کریں</string>
     <string name="select_items">اشیاء منتخب کریں</string>
     <string name="send">بھیجیں</string>
-    <string name="sending_failed">بھیجنا ناکام ہوگیا۔</string>
-    <string name="sesl_action_bar_up_description">اوپر نیویگیٹ کریں</string>
+    <string name="sending_failed">یہ پیغام بھیجنے کے دوران کچھ گڑبڑ ہو گئی۔</string>
+    <string name="sesl_action_bar_up_description">اوپر کی طرف نیویگیٹ کریں</string>
     <string name="sesl_action_menu_overflow_badge_description">نیا مواد دستیاب ہے</string>
     <string name="sesl_action_menu_overflow_badge_text_n">N</string>
     <string name="sesl_action_menu_overflow_description">مزيد اختیارات</string>
+    <string name="sesl_index_assistant_text">اسکرول کرنے کیلئے دو انگلیوں کی مدد سے اوپر یا نیچے سوائپ کریں۔</string>
+    <string name="sesl_index_scrollbar">اسکرول بار</string>
+    <string name="sesl_index_section">سیکشن انڈیکس</string>
+    <string name="sesl_index_selected">منتخب شدہ</string>
+    <string name="sesl_material_badge_description">نیا مواد دستیاب ہے</string>
+    <string name="sesl_material_overflow_badge_text_n">N</string>
+    <string name="sesl_more_item_label">مزید</string>
+    <string name="sesl_preferecne_badge_description">نیا نوٹیفکیشن</string>
     <string name="sesl_preferencecategory_added_title">ہیڈر</string>
     <string name="sesl_search_hint">تلاش کریں</string>
     <string name="sesl_searchview_description_clear">تلاش فیلڈ صاف کریں</string>
@@ -309,6 +316,10 @@ Smart View"</string>
     <string name="sesl_searchview_description_voice">آواز کے ذریعے تلاش</string>
     <string name="sesl_switch_off">آف</string>
     <string name="sesl_switch_on">آن</string>
+    <string name="sesl_switchbar_off_text">آف</string>
+    <string name="sesl_switchbar_on_text">آن</string>
+    <string name="sesl_toolbar_collapse_description">ڈھیر کریں</string>
+    <string name="set_screen_lock_title">اسکرین لاک سیٹ کریں</string>
     <string name="settings">سیٹنگز</string>
     <string name="settings_auto_hotspot_desc">مربوط آلہ کا انٹرنیٹ سے جوڑنے سے قاصر ہونے پر ایک انٹرنیٹ رسائی پوائنٹ کے طورپر اپنے فون کو استعمال کریں۔</string>
     <string name="settings_deregister_confirm_dialog_desc">مستقل میں اس آلہ سے جوڑنے کے لیے، آپ کو اسے دوبارہ رجسٹر کرنے کی ضرورت ہوگی۔</string>
@@ -319,12 +330,16 @@ Smart View"</string>
     <string name="settings_gear_unlock_confirm_dialog_title">گیئر کی توثیق کاری آن کریں؟</string>
     <string name="settings_manage_notifications_desc">منتخب کریں کہ کون سی ایپس آپ کے منسلک آلے پر نوٹیفکیشنز بھیج سکتی ہیں۔</string>
     <string name="settings_manage_notifications_title">منتخب کردہ ایپ نوٹیفکیشنز</string>
+    <string name="settings_send_message_desc">اپنے کیی بورڈ پر اینٹر کی استعمال کر کے پیغامات بھیجیں</string>
     <string name="settings_title_auto_bt_on">خودکار بلیوٹوتھ</string>
     <string name="setup_complete_done">ہو گیا</string>
     <string name="setup_completed">%s سیٹ اپ مکمل ہے۔</string>
+    <string name="setup_completed_phone">ابھی آپ کا فون %s سے منسلک ہے۔</string>
+    <string name="setup_completed_tablet">ابھی آپ کا ٹیبلیٹ %s سے منسلک ہے۔</string>
     <string name="setup_confirm_pin">اس بات کی تصدیق کریں کہ پاس کیی صحیح ہے جسے اگلے %1$d سیکنڈز میں %2$s سے جڑنا ہے۔</string>
     <string name="setup_enter_pin_on_pc">اپنے %s پر اپنا پن درج کریں۔</string>
     <string name="setup_preparing">اپنے کمپیوٹر یا ٹیبلیٹ پر Samsung Flow کا سیٹ اپ شروع کریں۔</string>
+    <string name="setup_preparing_detail">اگر آپ کے پاس Samsung Flow انسٹال نہیں ہے، تو اسے اپنے کمپیوٹر پر Microsoft Store سے اور اپنے ٹیبلیٹ پر Galaxy Store یا Google Play سے ڈاؤن لوڈ کریں۔</string>
     <string name="setup_preparing_tab">اپنے کمپیوٹر پر Samsung Flow کا سیٹ اپ شروع کریں</string>
     <string name="setup_tab_complete_title">سیٹ اپ مکمل کریں</string>
     <string name="setup_tab_confirm_passkey_title">اپنے آلات سے جوڑیں</string>
@@ -343,6 +358,8 @@ Smart View"</string>
     <string name="setupwizard_welcome_body">ایپلیکیشن سروس کے لیے مندرجہ ذیل اجازتیں درکار ہیں۔ اختیاری اجازتوں کے لیے، خدمت کی ڈیفالٹ فنکشنلیٹی آن ہے، لیکن اجازت یافتہ نہیں ہے۔</string>
     <string name="setupwizard_welcome_title">ایپلیکیشن کی اجازتیں</string>
     <string name="share">شیئر کریں</string>
+    <string name="share_item_device_status_connected">آلہ منسلک ہو گیا</string>
+    <string name="share_item_device_status_disconnected">آلہ منقطع ہوگیا</string>
     <string name="shortcut_list_desc">اپنے ٹیبلیٹ سے منسلک ہونے کیلئے، اپنے فون پر ایک ایپ منتخب کریں۔ اس ایپ کا ایک شارٹ کٹ آپ کی ہوم اسکرین میں شامل کیا جائے گا۔</string>
     <string name="snooze">سنوز کریں</string>
     <string name="special_sensitive_optional_permissions">خصوصی حساس اختیاری اجازتیں</string>
@@ -352,6 +369,8 @@ Smart View"</string>
     <string name="tablet_bio_auth_confirm_title">توثیق کاری کے لیے ٹیبلیٹ بایومیٹرکس استعمال کریں؟</string>
     <string name="tap_icon_to_try_iris_auth">دوبارہ آئریس کی پہچان کی کوشش کرنے کے لیے شبیہ پر تھپکی دیں</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">‏Smart View کو Samsung Flow کے لیے آن کیے جانے پر خودکار گھمائیں استعمال نہیں کیا جاسکتا۔</string>
+    <string name="toast_msg_connected">‏Samsung Flow کنکشن %s کے لیے شروع ہوا ہے۔</string>
+    <string name="toast_msg_disconnected">‏Samsung Flow کا کنکشن %s میں ختم ہوگیا۔</string>
     <string name="try_again">دوبارہ کوشش کریں</string>
     <string name="turn_on">آن کریں</string>
     <string name="turn_on_auto_run">خودکار چلائیں کو آن کریں</string>
@@ -362,15 +381,20 @@ Smart View"</string>
     <string name="unsupported_file">غیر سہولت یافتہ فائل۔</string>
     <string name="update">اپ ڈیٹ</string>
     <string name="update_samsung_flow">%s سے جوڑنے سے قاصر۔ Samsung Flow کو تازہ تر ورزن میں اپ ڈیٹ کریں اور دوبارہ کوشش کریں۔</string>
-    <string name="welcome_button_start">شروع کریں</string>
+    <string name="verification_method">توثیق کا طریقہ</string>
     <string name="welcome_phone_button_agree">متفق ہوں</string>
-    <string name="welcome_phone_desc">اپنا کمپیوٹر یا ٹیبلیٹ Samsung Flow استعمال کرکے اپنے فون سے مربوط کریں۔</string>
-    <string name="welcome_phone_desc_terms">جاری رکھنے کے لیے، %s کو پڑھ کر اتفاق کریں۔</string>
-    <string name="welcome_phone_title">‏%s میں خوش آمدید</string>
+    <string name="welcome_phone_desc1">اپنے فون اور اس سے منسلک کمپیوٹر یا ٹیبلیٹ کے درمیان دستاویزات، تصاویر اور ویڈیوز وغیرہ کا اشتراک کریں۔</string>
+    <string name="welcome_phone_desc2">اپنے کمپیوٹر یا ٹیبلیٹ پر اپنے فون کے پیغامات اور نوٹیفکیشنز چیک کریں اور ان کے جواب دیں۔</string>
+    <string name="welcome_phone_desc3">اپنے کمپیوٹر یا ٹیبلیٹ پر اپنے فون کی اسکرین دیکھیں اور اسے کنٹرول کریں۔</string>
+    <string name="welcome_phone_desc_terms">جاری رکھ کر، آپ %s سے اتفاق کرتے ہیں۔</string>
+    <string name="welcome_phone_title1">اپنا فون دوسرے آلے سے منسلک کریں</string>
+    <string name="welcome_phone_title2">اپنی نوٹیفکیشنز سنک کریں</string>
+    <string name="welcome_phone_title3">اپنے فون کی اسکرین کا اشتراک کریں</string>
     <string name="welcome_tab_desc2">‏Samsung Flow سیٹ اپ کرنے کے لیے اپنا فون تیار رکھیں۔</string>
     <string name="welcome_tab_desc3">‏Samsung Flow کا استعمال کر کے اپنے ٹیبلیٹ کو اپنے فون یا کمپیوٹر سے منسلک کریں۔</string>
     <string name="wifi_connection_failed_text">یقینی بنائیں آپ کے فون میں Samsung Flow آن ہے اور ایک ہی نیٹ ورک سے مربوط ہے۔</string>
-    <string name="wifi_enable_warning_msg">موبائل ہاٹ اسپاٹ فعال ہونے پر Wi-Fi آف ہوجاتا ہے۔ Wi-Fi آن کرنے کے لیے، براہ کرم موبائل ہاٹ اسپاٹ آف کریں۔</string>
-    <string name="wifi_enable_warning_title">موبائل ہاٹ اسپاٹ آف کریں؟</string>
+    <string name="wifi_enable_warning_msg">‏Wi-Fi Direct استعمال کرنے کے لیے، موبائل ہاٹ اسپاٹ کو آف کیے جانے کی ضرورت ہے۔</string>
+    <string name="wifi_enable_warning_title">موبائل ہاٹ اسپاٹ آف کریں</string>
+    <string name="you_can_turn_off">آپ %s میں اس فنکشن کو آف کر سکتے ہیں۔</string>
     <string name="you_can_turn_off_this_permission">آپ سیٹنگز > ایپس > مزید مینو > خاص رسائی میں اس اجازت کو آف کر سکتے ہیں۔</string>
 </resources>

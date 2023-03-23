@@ -3,6 +3,14 @@
 .source "GravityCompat.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/view/GravityCompat$Api17Impl;
+    }
+.end annotation
+
+
 # static fields
 .field public static final END:I = 0x800005
 
@@ -17,7 +25,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 153
+    .line 158
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,20 +33,42 @@
 
 .method public static apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "gravity",
+            "w",
+            "h",
+            "container",
+            "xAdj",
+            "yAdj",
+            "outRect",
+            "layoutDirection"
+        }
+    .end annotation
 
-    .line 98
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 102
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 99
-    invoke-static/range {p0 .. p7}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
+    .line 103
+    invoke-static/range {p0 .. p7}, Landroidx/core/view/GravityCompat$Api17Impl;->apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
 
     goto :goto_0
 
-    .line 101
+    .line 105
     :cond_0
     invoke-static/range {p0 .. p6}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;)V
 
@@ -48,20 +78,38 @@
 
 .method public static apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "gravity",
+            "w",
+            "h",
+            "container",
+            "outRect",
+            "layoutDirection"
+        }
+    .end annotation
 
-    .line 64
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 68
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 65
-    invoke-static/range {p0 .. p5}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
+    .line 69
+    invoke-static/range {p0 .. p5}, Landroidx/core/view/GravityCompat$Api17Impl;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
 
     goto :goto_0
 
-    .line 67
+    .line 71
     :cond_0
     invoke-static {p0, p1, p2, p3, p4}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
 
@@ -71,20 +119,34 @@
 
 .method public static applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "gravity",
+            "display",
+            "inoutObj",
+            "layoutDirection"
+        }
+    .end annotation
 
-    .line 126
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 131
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 127
-    invoke-static {p0, p1, p2, p3}, Landroid/view/Gravity;->applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
+    .line 132
+    invoke-static {p0, p1, p2, p3}, Landroidx/core/view/GravityCompat$Api17Impl;->applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
 
     goto :goto_0
 
-    .line 129
+    .line 134
     :cond_0
     invoke-static {p0, p1, p2}, Landroid/view/Gravity;->applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V
 
@@ -94,15 +156,25 @@
 
 .method public static getAbsoluteGravity(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "gravity",
+            "layoutDirection"
+        }
+    .end annotation
 
-    .line 145
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 150
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 146
+    .line 151
     invoke-static {p0, p1}, Landroid/view/Gravity;->getAbsoluteGravity(II)I
 
     move-result p0

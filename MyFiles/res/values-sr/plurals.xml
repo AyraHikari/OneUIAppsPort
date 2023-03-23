@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Možete da izaberete najviše %d stavki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Možete da izaberete najviše %d stavku.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Možete da izaberete najviše %d stavke.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Premeštanje %d fajlova u Smeće nije moguće</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d fajla u Smeće nije moguće</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d fajla u Smeće nije moguće</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Premeštanje %d foldera u Smeće nije moguće</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d foldera u Smeće nije moguće</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d foldera u Smeće nije moguće</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Premeštanje %d stavki u Smeće nije moguće</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d stavke u Smeće nije moguće</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d stavke u Smeće nije moguće</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">Biće izbrisano %d od izabranih fajlova jer se nalaze na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Biće izbrisan %d od izabranih fajlova jer se nalazi na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Biće izbrisana %d od izabranih fajlova jer se nalaze na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">Biće izbrisano %d od izabranih foldera jer se nalaze na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Biće izbrisan %d od izabranih foldera jer se nalazi na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Biće izbrisana %d od izabranih foldera jer se nalaze na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">Biće izbrisano %d od izabranih stavki jer se nalaze na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Biće izbrisana %d od izabranih stavki jer se nalazi na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Biće izbrisane %d od izabranih stavki jer se nalaze na oblaku ili na USB memorijskom uređaju.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Komprimovanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimovanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimovanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Komprimovanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimovanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimovanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Komprimovanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimovanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimovanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Komprimovanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimovanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimovanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Komprimovanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimovanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimovanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Komprimovanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komprimovanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Komprimovanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Kopiranje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiranje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiranje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Kopiranje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiranje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiranje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Kopiranje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiranje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiranje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Kopiranje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiranje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiranje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Kopiranje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiranje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiranje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Kopiranje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kopiranje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Kopiranje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Izbrisati %d fajlova sa telefona?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrisati %d fajl sa telefona?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izbrisati %d fajla sa telefona?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Izbrisati %d fajlova sa tableta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrisati %d fajl sa tableta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izbrisati %d fajla sa tableta?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Izbrisati %d foldera sa telefona?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrisati %d folder sa telefona?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izbrisati %d foldera sa telefona?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Izbrisati %d foldera sa tableta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrisati %d folder sa tableta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izbrisati %d foldera sa tableta?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Izbrisati %d stavki sa telefona?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrisati %d stavku sa telefona?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izbrisati %d stavke sa telefona?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Izbrisati %d stavki sa tableta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrisati %d stavku sa tableta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izbrisati %d stavke sa tableta?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Brisanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Brisanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Brisanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Brisanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Brisanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Brisanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Brisanje %d stavki iz Smeća…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Brisanje %d stavke iz Smeća…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Brisanje %d stavke iz Smeća…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Brisanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Brisanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Brisanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Izdvajanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izdvajanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izdvajanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Izdvajanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izdvajanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izdvajanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Izdvajanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izdvajanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izdvajanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">Fajlovi (%1$d) će biti premešteni u Smeće i na lokaciji %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fajl (%1$d) će biti premešten u Smeće i na lokaciji %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Fajlovi (%1$d) će biti premešteni u Smeće i na lokaciji %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Vraćanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vraćanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vraćanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">Folderi (%1$d) će biti premešteni u Smeće i na lokaciji %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Folder (%1$d) će biti premešten u Smeće i na lokaciji %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Folderi (%1$d) će biti premešteni u Smeće i na lokaciji %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Vraćanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vraćanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vraćanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Interna memorija je puna. Želite li da zauvek izbrišete %d fajlova?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interna memorija je puna. Želite li da zauvek izbrišete %d fajl?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interna memorija je puna. Želite li da zauvek izbrišete %d fajla?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Interna memorija je puna. Želite li da zauvek izbrišete %d foldera?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interna memorija je puna. Želite li da zauvek izbrišete %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interna memorija je puna. Želite li da zauvek izbrišete %d foldera?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Interna memorija je puna. Želite li da zauvek izbrišete %d stavki?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interna memorija je puna. Želite li da zauvek izbrišete %d stavku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interna memorija je puna. Želite li da zauvek izbrišete %d stavke?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d fajlova?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d fajl?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d fajla?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d foldera?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d foldera?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d stavki?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d stavku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Interna memorija i SD kartica su pune. Želite li da zauvek izbrišete %d stavke?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Vraćanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vraćanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vraćanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">Stavke (%1$d) će biti premeštene u Smeće i na lokaciji %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Stavka (%1$d) će biti premeštena u Smeće i na lokaciji %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Stavke (%1$d) će biti premeštene u Smeće i na lokaciji %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Ne možete da otvorite više od %d prozora aplikacija.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ne možete da otvorite više od %d prozora aplikacije.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ne možete da otvorite više od %d prozora aplikacija.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Želite li da premestite %d fajlova u Smeće?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Želite li da premestite %d fajl u Smeće?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Želite li da premestite %d fajla u Smeće?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Premestiti %d fajlova u Smeće?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premestiti %d fajl u Smeće?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premestiti %d fajla u Smeće?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Želite li da premestite %d foldera u Smeće?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Želite li da premestite %d folder u Smeće?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Želite li da premestite %d foldera u Smeće?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Premestiti %d foldera u Smeće?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premestiti %d folder u Smeće?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premestiti %d foldera u Smeće?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Želite li da premestite %d stavki u Smeće?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Želite li da premestite %d stavku u Smeće?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Želite li da premestite %d stavke u Smeće?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Želite li da premestite %d stavki u Smeće?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Želite li da premestite %d stavku u Smeće?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Želite li da premestite %d stavke u Smeće?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Premeštanje %d fajlova u Smeće…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d fajla u Smeće…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d fajla u Smeće…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Premeštanje %d foldera u Smeće…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d foldera u Smeće…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d foldera u Smeće…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Premeštanje %d stavki u Smeće…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d stavke u Smeće…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d stavke u Smeće…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Premeštanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Premeštanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Premeštanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Premeštanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Premeštanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Premeštanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Premeštanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Premeštanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d stavki je komprimovano</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je komprimovana</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su komprimovane</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d stavki je kopirano na lokaciju %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d stavka je kopirana na lokaciju %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d stavke su kopirane na lokaciju %2$s</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Izbrisati folder i sledeći broj fajlova u njemu: %d?</item>
+        <item quantity="one">Izbrisati folder i fajl u njemu?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Izbrisati %1$d foldera i sledeći broj fajlova u njima: %2$d?</item>
+        <item quantity="one">Izbrisati folder i fajl u njemu?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d stavki je izbrisano</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je izbrisana</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su izbrisane</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Preuzimanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Preuzimanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Preuzimanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Preuzimanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Preuzimanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Preuzimanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Preuzimanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Preuzimanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Preuzimanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Nije moguće deliti foldere. Folderi su prazni.</item>
+        <item quantity="one">Nije moguće deliti folder. Folder je prazan.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">Trajno će se izbrisati %d fajlova.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trajno će se izbrisati %d fajl.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trajno će se izbrisati %d fajla.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">Trajno će se izbrisati %d foldera.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trajno će se izbrisati %d folder.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trajno će se izbrisati %d foldera.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d stavki je izdvojeno</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je izdvojena</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su izdvojene</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d fajlova je dodato u Omiljene.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fajl je dodat u Omiljene.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d fajla su dodata u Omiljene.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">Fajlovi (%d) su uklonjeni iz Omiljenih.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fajl (%d) je uklonjen iz Omiljenih.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Fajlovi (%d) su uklonjeni iz Omiljenih.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d foldera je dodato u Omiljene.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d folder je dodat u Omiljene.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d foldera su dodata u Omiljene.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">Folderi (%d) su uklonjeni iz Omiljenih.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Folder (%d) je uklonjen iz Omiljenih.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Folderi (%d) su uklonjeni iz Omiljenih.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d stavki je dodato u Omiljene.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je dodata u Omiljene.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su dodate u Omiljene.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">Stavke (%d) su uklonjene iz Omiljenih.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Stavka (%d) je uklonjena iz Omiljenih.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Stavke (%d) su uklonjene iz Omiljenih.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d stavki</item>
+        <item quantity="one">1 stavka</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d stavki</item>
+        <item quantity="one">%d stavka</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d stavki je kopirano u privremenu memoriju</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je kopirana u privremenu memoriju</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su kopirane u privremenu memoriju</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d stavki je premešteno u privremenu memoriju</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je premeštena u privremenu memoriju</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su premeštene u privremenu memoriju</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d stavki je izabrano</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je izabrana</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su izabrane</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d stavki je premešteno na lokaciju %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d stavka je premeštena na lokaciju %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$d stavke su premeštene na lokaciju %2$s</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d stavki je premešteno u Smeće</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d stavka je premeštena u Smeće</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d stavke su premeštene u Smeće</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">Izabrano: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izabrano: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izabrano: %d</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD kartica je puna. Želite li da zauvek izbrišete %d fajlova?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartica je puna. Želite li da zauvek izbrišete %d fajl?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD kartica je puna. Želite li da zauvek izbrišete %d fajla?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD kartica je puna. Želite li da zauvek izbrišete %d foldera?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartica je puna. Želite li da zauvek izbrišete %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD kartica je puna. Želite li da zauvek izbrišete %d foldera?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD kartica je puna. Želite li da zauvek izbrišete %d stavki?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD kartica je puna. Želite li da zauvek izbrišete %d stavku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">SD kartica je puna. Želite li da zauvek izbrišete %d stavke?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Ovaj fajl će biti izbrisan za %d dana.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ovaj fajl će biti izbrisan za %d dan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ovaj fajl će biti izbrisan za %d dana.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Ovaj folder će biti izbrisan za %d dana.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ovaj folder će biti izbrisan za %d dan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ovaj folder će biti izbrisan za %d dana.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Trajno izbrisati %d fajlova?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trajno izbrisati %d fajl?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trajno izbrisati %d fajla?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Brisanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Brisanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Brisanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Vraćanje %d fajlova…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vraćanje %d fajla…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vraćanje %d fajla…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Trajno izbrisati %d foldera?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trajno izbrisati %d folder?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trajno izbrisati %d foldera?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Brisanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Brisanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Brisanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Vraćanje %d foldera…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vraćanje %d foldera…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vraćanje %d foldera…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Trajno izbrisati %d stavki?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trajno izbrisati %d stavku?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trajno izbrisati %d stavke?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Brisanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Brisanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Brisanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Vraćanje %d stavki…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vraćanje %d stavke…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vraćanje %d stavke…</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Briše se za %d dana</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Briše se za %d dan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Briše se za %d dana</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Želite li da deinstalirate %d aplikacija?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Želite li da deinstalirate %d aplikaciju?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Želite li da deinstalirate %d aplikacije?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/file_grid_item_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/thumbnail_border"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/recent_apk_thumbnail_stub" android:layout="@layout/home_recent_apk_grid_thumbnail" android:inflatedId="@id/apk_grid_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/grid_thumbnail_stub" android:layout="@layout/home_recent_grid_thumbnail" android:inflatedId="@id/grid_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

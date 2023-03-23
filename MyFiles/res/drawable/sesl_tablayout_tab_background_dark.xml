@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/sesl_tablayout_maintab_touch_background_dark" />
+    <item android:drawable="@drawable/sesl_tablayout_maintab_touch_background_dark" android:state_hovered="true" />
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="26.0dip" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 431
+    .line 390
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -31,24 +31,24 @@
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
     .locals 1
 
-    .line 433
+    .line 392
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 434
+    .line 393
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->eofError(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 435
+    .line 394
     sget-object p2, Lorg/jsoup/parser/TokeniserState$24;->Data:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     return-void
 
-    .line 439
+    .line 398
     :cond_0
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->consume()C
 
@@ -68,28 +68,28 @@
 
     if-eq p2, v0, :cond_1
 
-    .line 457
+    .line 416
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
-    .line 458
+    .line 417
     sget-object p2, Lorg/jsoup/parser/TokeniserState$24;->ScriptDataEscaped:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_0
 
-    .line 448
+    .line 407
     :cond_1
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
-    .line 449
+    .line 408
     sget-object p2, Lorg/jsoup/parser/TokeniserState$24;->ScriptData:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_0
 
-    .line 445
+    .line 404
     :cond_2
     sget-object p2, Lorg/jsoup/parser/TokeniserState$24;->ScriptDataEscapedLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
@@ -97,22 +97,22 @@
 
     goto :goto_0
 
-    .line 442
+    .line 401
     :cond_3
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
     goto :goto_0
 
-    .line 452
+    .line 411
     :cond_4
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->error(Lorg/jsoup/parser/TokeniserState;)V
 
     const p2, 0xfffd
 
-    .line 453
+    .line 412
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
-    .line 454
+    .line 413
     sget-object p2, Lorg/jsoup/parser/TokeniserState$24;->ScriptDataEscaped:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V

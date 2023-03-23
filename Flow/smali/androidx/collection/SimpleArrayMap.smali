@@ -149,34 +149,27 @@
 
     if-eqz v4, :cond_0
 
-    .line 168
-    sget-object p1, Landroidx/collection/SimpleArrayMap;->mTwiceBaseCache:[Ljava/lang/Object;
-
     .line 169
-    iput-object p1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
+    iput-object v4, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     .line 170
-    aget-object v4, p1, v2
+    aget-object p1, v4, v2
 
-    check-cast v4, [Ljava/lang/Object;
+    check-cast p1, [Ljava/lang/Object;
 
-    check-cast v4, [Ljava/lang/Object;
-
-    sput-object v4, Landroidx/collection/SimpleArrayMap;->mTwiceBaseCache:[Ljava/lang/Object;
+    sput-object p1, Landroidx/collection/SimpleArrayMap;->mTwiceBaseCache:[Ljava/lang/Object;
 
     .line 171
-    aget-object v4, p1, v3
+    aget-object p1, v4, v3
 
-    check-cast v4, [I
+    check-cast p1, [I
 
-    check-cast v4, [I
-
-    iput-object v4, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
+    iput-object p1, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
     .line 172
-    aput-object v1, p1, v3
+    aput-object v1, v4, v3
 
-    aput-object v1, p1, v2
+    aput-object v1, v4, v2
 
     .line 173
     sget p1, Landroidx/collection/SimpleArrayMap;->mTwiceBaseCacheSize:I
@@ -219,34 +212,27 @@
 
     if-eqz v4, :cond_2
 
-    .line 182
-    sget-object p1, Landroidx/collection/SimpleArrayMap;->mBaseCache:[Ljava/lang/Object;
-
     .line 183
-    iput-object p1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
+    iput-object v4, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     .line 184
-    aget-object v4, p1, v2
+    aget-object p1, v4, v2
 
-    check-cast v4, [Ljava/lang/Object;
+    check-cast p1, [Ljava/lang/Object;
 
-    check-cast v4, [Ljava/lang/Object;
-
-    sput-object v4, Landroidx/collection/SimpleArrayMap;->mBaseCache:[Ljava/lang/Object;
+    sput-object p1, Landroidx/collection/SimpleArrayMap;->mBaseCache:[Ljava/lang/Object;
 
     .line 185
-    aget-object v4, p1, v3
+    aget-object p1, v4, v3
 
-    check-cast v4, [I
+    check-cast p1, [I
 
-    check-cast v4, [I
-
-    iput-object v4, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
+    iput-object p1, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
     .line 186
-    aput-object v1, p1, v3
+    aput-object v1, v4, v3
 
-    aput-object v1, p1, v2
+    aput-object v1, v4, v2
 
     .line 187
     sget p1, Landroidx/collection/SimpleArrayMap;->mBaseCacheSize:I
@@ -624,51 +610,51 @@
 
     return v0
 
-    .line 684
     :cond_0
-    instance-of v1, p1, Landroidx/collection/SimpleArrayMap;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    .line 687
+    :try_start_0
+    instance-of v2, p1, Landroidx/collection/SimpleArrayMap;
 
-    if-eqz v1, :cond_6
+    if-eqz v2, :cond_6
 
-    .line 685
+    .line 688
     check-cast p1, Landroidx/collection/SimpleArrayMap;
 
-    .line 686
+    .line 689
     invoke-virtual {p0}, Landroidx/collection/SimpleArrayMap;->size()I
 
-    move-result v1
+    move-result v2
 
     invoke-virtual {p1}, Landroidx/collection/SimpleArrayMap;->size()I
 
     move-result v3
 
-    if-eq v1, v3, :cond_1
+    if-eq v2, v3, :cond_1
 
-    return v2
+    return v1
 
     :cond_1
-    move v1, v2
+    move v2, v1
 
-    .line 691
+    .line 693
     :goto_0
-    :try_start_0
     iget v3, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
-    if-ge v1, v3, :cond_5
+    if-ge v2, v3, :cond_5
 
-    .line 692
-    invoke-virtual {p0, v1}, Landroidx/collection/SimpleArrayMap;->keyAt(I)Ljava/lang/Object;
+    .line 694
+    invoke-virtual {p0, v2}, Landroidx/collection/SimpleArrayMap;->keyAt(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 693
-    invoke-virtual {p0, v1}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
+    .line 695
+    invoke-virtual {p0, v2}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 694
+    .line 697
     invoke-virtual {p1, v3}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
@@ -677,7 +663,7 @@
 
     if-nez v5, :cond_2
 
-    .line 696
+    .line 699
     invoke-virtual {p1, v3}, Landroidx/collection/SimpleArrayMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v3
@@ -685,75 +671,68 @@
     if-nez v3, :cond_4
 
     :cond_2
-    return v2
+    return v1
 
-    .line 699
+    .line 702
     :cond_3
     invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
-    :try_end_0
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-nez v3, :cond_4
 
-    return v2
+    return v1
 
     :cond_4
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
     :cond_5
     return v0
 
-    :catch_0
-    return v2
-
-    .line 709
+    .line 707
     :cond_6
-    instance-of v1, p1, Ljava/util/Map;
+    instance-of v2, p1, Ljava/util/Map;
 
-    if-eqz v1, :cond_c
+    if-eqz v2, :cond_c
 
-    .line 710
+    .line 708
     check-cast p1, Ljava/util/Map;
 
-    .line 711
+    .line 709
     invoke-virtual {p0}, Landroidx/collection/SimpleArrayMap;->size()I
 
-    move-result v1
+    move-result v2
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
 
     move-result v3
 
-    if-eq v1, v3, :cond_7
+    if-eq v2, v3, :cond_7
 
-    return v2
+    return v1
 
     :cond_7
-    move v1, v2
+    move v2, v1
 
-    .line 716
+    .line 713
     :goto_1
-    :try_start_1
     iget v3, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
-    if-ge v1, v3, :cond_b
+    if-ge v2, v3, :cond_b
 
-    .line 717
-    invoke-virtual {p0, v1}, Landroidx/collection/SimpleArrayMap;->keyAt(I)Ljava/lang/Object;
+    .line 714
+    invoke-virtual {p0, v2}, Landroidx/collection/SimpleArrayMap;->keyAt(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 718
-    invoke-virtual {p0, v1}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
+    .line 715
+    invoke-virtual {p0, v2}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 719
+    .line 716
     invoke-interface {p1, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
@@ -762,7 +741,7 @@
 
     if-nez v5, :cond_8
 
-    .line 721
+    .line 718
     invoke-interface {p1, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v3
@@ -770,32 +749,32 @@
     if-nez v3, :cond_a
 
     :cond_8
-    return v2
+    return v1
 
-    .line 724
+    .line 721
     :cond_9
     invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
-    :try_end_1
-    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/ClassCastException; {:try_start_1 .. :try_end_1} :catch_1
+    :try_end_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-nez v3, :cond_a
 
-    return v2
+    return v1
 
     :cond_a
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
     :cond_b
     return v0
 
-    :catch_1
+    :catch_0
     :cond_c
-    return v2
+    return v1
 .end method
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -828,14 +807,14 @@
         }
     .end annotation
 
-    .line 380
+    .line 381
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfKey(Ljava/lang/Object;)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 381
+    .line 382
     iget-object p2, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1
@@ -851,13 +830,13 @@
 .method public hashCode()I
     .locals 9
 
-    .line 743
+    .line 738
     iget-object v0, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
-    .line 744
+    .line 739
     iget-object v1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
-    .line 746
+    .line 741
     iget v2, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     const/4 v3, 0x1
@@ -871,10 +850,10 @@
     :goto_0
     if-ge v5, v2, :cond_1
 
-    .line 747
+    .line 742
     aget-object v7, v1, v3
 
-    .line 748
+    .line 743
     aget v8, v0, v5
 
     if-nez v7, :cond_0
@@ -1209,7 +1188,7 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 419
+    .line 423
     iget v0, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     if-gtz v0, :cond_0
@@ -1233,7 +1212,7 @@
         }
     .end annotation
 
-    .line 390
+    .line 392
     iget-object v0, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1
@@ -1251,14 +1230,14 @@
         }
     .end annotation
 
-    .line 432
+    .line 437
     iget v0, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     const/4 v1, 0x0
 
     if-nez p1, :cond_0
 
-    .line 437
+    .line 442
     invoke-virtual {p0}, Landroidx/collection/SimpleArrayMap;->indexOfNull()I
 
     move-result v2
@@ -1267,13 +1246,13 @@
 
     goto :goto_0
 
-    .line 439
+    .line 444
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result v2
 
-    .line 440
+    .line 445
     invoke-virtual {p0, p1, v2}, Landroidx/collection/SimpleArrayMap;->indexOf(Ljava/lang/Object;I)I
 
     move-result v3
@@ -1291,12 +1270,12 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 444
+    .line 449
     iget-object v0, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     aget-object v1, v0, p1
 
-    .line 445
+    .line 450
     aput-object p2, v0, p1
 
     return-object v1
@@ -1304,72 +1283,69 @@
     :cond_1
     not-int v2, v2
 
-    .line 450
+    .line 455
     iget-object v4, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
-    array-length v4, v4
+    array-length v5, v4
 
-    if-lt v0, v4, :cond_6
+    if-lt v0, v5, :cond_6
 
-    const/4 v4, 0x4
+    const/4 v5, 0x4
 
-    const/16 v5, 0x8
+    const/16 v6, 0x8
 
-    if-lt v0, v5, :cond_2
+    if-lt v0, v6, :cond_2
 
-    shr-int/lit8 v4, v0, 0x1
+    shr-int/lit8 v5, v0, 0x1
 
-    add-int/2addr v4, v0
+    add-int/2addr v5, v0
 
     goto :goto_1
 
     :cond_2
-    if-lt v0, v4, :cond_3
+    if-lt v0, v5, :cond_3
 
-    move v4, v5
+    move v5, v6
 
-    .line 456
+    .line 462
     :cond_3
     :goto_1
-    iget-object v5, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
-
-    .line 457
     iget-object v6, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
-    .line 458
-    invoke-direct {p0, v4}, Landroidx/collection/SimpleArrayMap;->allocArrays(I)V
+    .line 463
+    invoke-direct {p0, v5}, Landroidx/collection/SimpleArrayMap;->allocArrays(I)V
 
-    .line 460
-    iget v4, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
+    .line 465
+    iget v5, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
-    if-ne v0, v4, :cond_5
+    if-ne v0, v5, :cond_5
 
-    .line 464
-    iget-object v4, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
+    .line 469
+    iget-object v5, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
-    array-length v7, v4
+    array-length v7, v5
 
     if-lez v7, :cond_4
 
-    .line 466
-    array-length v7, v5
+    .line 471
+    array-length v7, v4
 
-    invoke-static {v5, v1, v4, v1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v4, v1, v5, v1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 467
-    iget-object v4, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
+    .line 472
+    iget-object v5, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     array-length v7, v6
 
-    invoke-static {v6, v1, v4, v1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v6, v1, v5, v1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 470
+    .line 475
     :cond_4
-    invoke-static {v5, v6, v0}, Landroidx/collection/SimpleArrayMap;->freeArrays([I[Ljava/lang/Object;I)V
+    invoke-static {v4, v6, v0}, Landroidx/collection/SimpleArrayMap;->freeArrays([I[Ljava/lang/Object;I)V
 
     goto :goto_2
 
-    .line 461
+    .line 466
     :cond_5
     new-instance p1, Ljava/util/ConcurrentModificationException;
 
@@ -1381,7 +1357,7 @@
     :goto_2
     if-ge v2, v0, :cond_7
 
-    .line 476
+    .line 481
     iget-object v1, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
     add-int/lit8 v4, v2, 0x1
@@ -1390,7 +1366,7 @@
 
     invoke-static {v1, v2, v1, v4, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 477
+    .line 482
     iget-object v1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     shl-int/lit8 v5, v2, 0x1
@@ -1405,7 +1381,7 @@
 
     invoke-static {v1, v5, v1, v4, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 481
+    .line 486
     :cond_7
     iget v1, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
@@ -1417,10 +1393,10 @@
 
     if-ge v2, v4, :cond_8
 
-    .line 486
+    .line 491
     aput v3, v0, v2
 
-    .line 487
+    .line 492
     iget-object v0, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     shl-int/lit8 v2, v2, 0x1
@@ -1429,19 +1405,19 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 488
+    .line 493
     aput-object p2, v0, v2
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 489
+    .line 494
     iput v1, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     const/4 p1, 0x0
 
     return-object p1
 
-    .line 482
+    .line 487
     :cond_8
     new-instance p1, Ljava/util/ConcurrentModificationException;
 
@@ -1460,17 +1436,17 @@
         }
     .end annotation
 
-    .line 498
+    .line 503
     iget v0, p1, Landroidx/collection/SimpleArrayMap;->mSize:I
 
-    .line 499
+    .line 504
     iget v1, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     add-int/2addr v1, v0
 
     invoke-virtual {p0, v1}, Landroidx/collection/SimpleArrayMap;->ensureCapacity(I)V
 
-    .line 500
+    .line 505
     iget v1, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     const/4 v2, 0x0
@@ -1479,14 +1455,14 @@
 
     if-lez v0, :cond_1
 
-    .line 502
+    .line 507
     iget-object v1, p1, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
     iget-object v3, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
     invoke-static {v1, v2, v3, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 503
+    .line 508
     iget-object p1, p1, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     iget-object v1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
@@ -1495,7 +1471,7 @@
 
     invoke-static {p1, v2, v1, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 504
+    .line 509
     iput v0, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     goto :goto_1
@@ -1504,7 +1480,7 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 508
+    .line 513
     invoke-virtual {p1, v2}, Landroidx/collection/SimpleArrayMap;->keyAt(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1532,14 +1508,14 @@
         }
     .end annotation
 
-    .line 523
+    .line 528
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 525
+    .line 530
     invoke-virtual {p0, p1, p2}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1558,14 +1534,14 @@
         }
     .end annotation
 
-    .line 538
+    .line 543
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfKey(Ljava/lang/Object;)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 540
+    .line 545
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->removeAt(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -1581,14 +1557,14 @@
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
 
-    .line 553
+    .line 558
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfKey(Ljava/lang/Object;)I
 
     move-result p1
 
     if-ltz p1, :cond_1
 
-    .line 555
+    .line 560
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -1597,14 +1573,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 556
+    .line 561
     invoke-virtual {p2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 557
+    .line 562
     :cond_0
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->removeAt(I)Ljava/lang/Object;
 
@@ -1626,7 +1602,7 @@
         }
     .end annotation
 
-    .line 570
+    .line 576
     iget-object v0, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     shl-int/lit8 v1, p1, 0x1
@@ -1635,36 +1611,22 @@
 
     aget-object v2, v0, v2
 
-    .line 571
+    .line 577
     iget v3, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
-    const/4 v5, 0x1
+    if-gt v3, v4, :cond_0
 
-    if-gt v3, v5, :cond_0
-
-    .line 576
-    iget-object p1, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
-
-    invoke-static {p1, v0, v3}, Landroidx/collection/SimpleArrayMap;->freeArrays([I[Ljava/lang/Object;I)V
-
-    .line 577
-    sget-object p1, Landroidx/collection/ContainerHelpers;->EMPTY_INTS:[I
-
-    iput-object p1, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
-
-    .line 578
-    sget-object p1, Landroidx/collection/ContainerHelpers;->EMPTY_OBJECTS:[Ljava/lang/Object;
-
-    iput-object p1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
+    .line 581
+    invoke-virtual {p0}, Landroidx/collection/SimpleArrayMap;->clear()V
 
     goto :goto_1
 
     :cond_0
-    add-int/lit8 v0, v3, -0x1
+    add-int/lit8 v5, v3, -0x1
 
-    .line 582
+    .line 584
     iget-object v6, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
     array-length v7, v6
@@ -1673,69 +1635,65 @@
 
     if-le v7, v8, :cond_4
 
-    array-length v6, v6
+    array-length v7, v6
 
-    div-int/lit8 v6, v6, 0x3
+    div-int/lit8 v7, v7, 0x3
 
-    if-ge v3, v6, :cond_4
+    if-ge v3, v7, :cond_4
 
     if-le v3, v8, :cond_1
 
-    shr-int/lit8 v6, v3, 0x1
+    shr-int/lit8 v7, v3, 0x1
 
-    add-int v8, v3, v6
-
-    .line 590
-    :cond_1
-    iget-object v6, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
-
-    .line 591
-    iget-object v7, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
-
-    .line 592
-    invoke-direct {p0, v8}, Landroidx/collection/SimpleArrayMap;->allocArrays(I)V
+    add-int v8, v3, v7
 
     .line 594
-    iget v8, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
+    :cond_1
+    invoke-direct {p0, v8}, Landroidx/collection/SimpleArrayMap;->allocArrays(I)V
 
-    if-ne v3, v8, :cond_3
+    .line 596
+    iget v7, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
+
+    if-ne v3, v7, :cond_3
 
     if-lez p1, :cond_2
 
-    .line 600
-    iget-object v8, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
+    .line 602
+    iget-object v7, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
-    invoke-static {v6, v4, v8, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    const/4 v8, 0x0
 
-    .line 601
-    iget-object v8, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
+    invoke-static {v6, v8, v7, v8, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    invoke-static {v7, v4, v8, v4, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    .line 603
+    iget-object v7, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
+
+    invoke-static {v0, v8, v7, v8, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_2
-    if-ge p1, v0, :cond_6
+    if-ge p1, v5, :cond_6
 
-    add-int/lit8 v4, p1, 0x1
+    add-int/lit8 v7, p1, 0x1
 
-    .line 606
+    .line 608
     iget-object v8, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
 
-    sub-int v9, v0, p1
+    sub-int v9, v5, p1
 
-    invoke-static {v6, v4, v8, p1, v9}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v6, v7, v8, p1, v9}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    shl-int/lit8 p1, v4, 0x1
+    shl-int/lit8 p1, v7, 0x1
 
-    .line 607
-    iget-object v4, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
+    .line 609
+    iget-object v6, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
-    shl-int/lit8 v5, v9, 0x1
+    shl-int/lit8 v4, v9, 0x1
 
-    invoke-static {v7, p1, v4, v1, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, p1, v6, v1, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_0
 
-    .line 595
+    .line 597
     :cond_3
     new-instance p1, Ljava/util/ConcurrentModificationException;
 
@@ -1744,57 +1702,53 @@
     throw p1
 
     :cond_4
-    if-ge p1, v0, :cond_5
+    if-ge p1, v5, :cond_5
 
-    .line 614
-    iget-object v4, p0, Landroidx/collection/SimpleArrayMap;->mHashes:[I
+    add-int/lit8 v0, p1, 0x1
 
-    add-int/lit8 v6, p1, 0x1
+    sub-int v7, v5, p1
 
-    sub-int v7, v0, p1
+    .line 616
+    invoke-static {v6, v0, v6, p1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    invoke-static {v4, v6, v4, p1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 615
+    .line 617
     iget-object p1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
-    shl-int/lit8 v4, v6, 0x1
+    shl-int/2addr v0, v4
 
     shl-int/lit8 v6, v7, 0x1
 
-    invoke-static {p1, v4, p1, v1, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p1, v0, p1, v1, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 618
+    .line 620
     :cond_5
     iget-object p1, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
-    shl-int/lit8 v1, v0, 0x1
+    shl-int/lit8 v0, v5, 0x1
 
-    const/4 v4, 0x0
+    const/4 v1, 0x0
 
-    aput-object v4, p1, v1
+    aput-object v1, p1, v0
 
-    add-int/2addr v1, v5
+    add-int/2addr v0, v4
 
-    .line 619
-    aput-object v4, p1, v1
+    .line 621
+    aput-object v1, p1, v0
 
+    .line 623
     :cond_6
     :goto_0
-    move v4, v0
-
-    .line 622
-    :goto_1
     iget p1, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     if-ne v3, p1, :cond_7
 
-    .line 625
-    iput v4, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
+    .line 626
+    iput v5, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
+    :goto_1
     return-object v2
 
-    .line 623
+    .line 624
     :cond_7
     new-instance p1, Ljava/util/ConcurrentModificationException;
 
@@ -1811,14 +1765,14 @@
         }
     .end annotation
 
-    .line 637
+    .line 639
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfKey(Ljava/lang/Object;)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 639
+    .line 641
     invoke-virtual {p0, p1, p2}, Landroidx/collection/SimpleArrayMap;->setValueAt(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1839,14 +1793,14 @@
         }
     .end annotation
 
-    .line 653
+    .line 655
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfKey(Ljava/lang/Object;)I
 
     move-result p1
 
     if-ltz p1, :cond_1
 
-    .line 655
+    .line 657
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -1855,14 +1809,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 656
+    .line 658
     invoke-virtual {p2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 657
+    .line 659
     :cond_0
     invoke-virtual {p0, p1, p3}, Landroidx/collection/SimpleArrayMap;->setValueAt(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -1888,12 +1842,12 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 410
+    .line 414
     iget-object v0, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     aget-object v1, v0, p1
 
-    .line 411
+    .line 415
     aput-object p2, v0, p1
 
     return-object v1
@@ -1902,7 +1856,7 @@
 .method public size()I
     .locals 1
 
-    .line 668
+    .line 670
     iget v0, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
     return v0
@@ -1911,7 +1865,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 762
+    .line 757
     invoke-virtual {p0}, Landroidx/collection/SimpleArrayMap;->isEmpty()Z
 
     move-result v0
@@ -1922,7 +1876,7 @@
 
     return-object v0
 
-    .line 766
+    .line 761
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1934,12 +1888,12 @@
 
     const/16 v1, 0x7b
 
-    .line 767
+    .line 762
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
-    .line 768
+    .line 763
     :goto_0
     iget v2, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
@@ -1949,10 +1903,10 @@
 
     const-string v2, ", "
 
-    .line 770
+    .line 765
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 772
+    .line 767
     :cond_1
     invoke-virtual {p0, v1}, Landroidx/collection/SimpleArrayMap;->keyAt(I)Ljava/lang/Object;
 
@@ -1962,34 +1916,34 @@
 
     if-eq v2, p0, :cond_2
 
-    .line 774
+    .line 769
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 776
+    .line 771
     :cond_2
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_1
     const/16 v2, 0x3d
 
-    .line 778
+    .line 773
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 779
+    .line 774
     invoke-virtual {p0, v1}, Landroidx/collection/SimpleArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v2
 
     if-eq v2, p0, :cond_3
 
-    .line 781
+    .line 776
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     goto :goto_2
 
-    .line 783
+    .line 778
     :cond_3
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2001,10 +1955,10 @@
     :cond_4
     const/16 v1, 0x7d
 
-    .line 786
+    .line 781
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 787
+    .line 782
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -2020,7 +1974,7 @@
         }
     .end annotation
 
-    .line 399
+    .line 402
     iget-object v0, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1

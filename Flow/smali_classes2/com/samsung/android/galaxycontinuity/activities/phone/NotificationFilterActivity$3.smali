@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$isAllow"
+        }
+    .end annotation
 
-    .line 219
+    .line 288
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     iput-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->val$isAllow:Z
@@ -42,7 +52,7 @@
 .method public run()V
     .locals 3
 
-    .line 222
+    .line 291
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;
@@ -55,12 +65,12 @@
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
 
-    .line 223
+    .line 292
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->val$isAllow:Z
 
     if-eqz v0, :cond_0
 
-    .line 224
+    .line 293
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;
@@ -69,11 +79,11 @@
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;->permissionTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f100141
+    const v1, 0x7f1101af
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 225
+    .line 294
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;
@@ -86,7 +96,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setEnabled(Z)V
 
-    .line 226
+    .line 295
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;
@@ -99,7 +109,7 @@
 
     invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->setAlpha(F)V
 
-    .line 227
+    .line 296
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->notificationFilterAdapter:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;
@@ -108,7 +118,7 @@
 
     goto :goto_0
 
-    .line 229
+    .line 298
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
@@ -118,11 +128,11 @@
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;->permissionTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f100140
+    const v1, 0x7f1101ae
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 230
+    .line 299
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;
@@ -135,7 +145,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setEnabled(Z)V
 
-    .line 231
+    .line 300
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;)Lcom/samsung/android/galaxycontinuity/databinding/ActivityNotificationFilterBinding;
@@ -148,7 +158,7 @@
 
     invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->setAlpha(F)V
 
-    .line 232
+    .line 301
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;->notificationFilterAdapter:Lcom/samsung/android/galaxycontinuity/notification/NotificationFilterAdapter;

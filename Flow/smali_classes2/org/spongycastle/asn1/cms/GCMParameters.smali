@@ -152,7 +152,7 @@
 .end method
 
 .method public toASN1Primitive()Lorg/spongycastle/asn1/ASN1Primitive;
-    .locals 5
+    .locals 4
 
     .line 91
     new-instance v0, Lorg/spongycastle/asn1/ASN1EncodableVector;
@@ -176,13 +176,15 @@
     if-eq v1, v2, :cond_0
 
     .line 97
-    new-instance v2, Lorg/spongycastle/asn1/ASN1Integer;
+    new-instance v1, Lorg/spongycastle/asn1/ASN1Integer;
 
-    int-to-long v3, v1
+    iget v2, p0, Lorg/spongycastle/asn1/cms/GCMParameters;->icvLen:I
 
-    invoke-direct {v2, v3, v4}, Lorg/spongycastle/asn1/ASN1Integer;-><init>(J)V
+    int-to-long v2, v2
 
-    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
+    invoke-direct {v1, v2, v3}, Lorg/spongycastle/asn1/ASN1Integer;-><init>(J)V
+
+    invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
 
     .line 100
     :cond_0

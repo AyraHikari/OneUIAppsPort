@@ -7,12 +7,6 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/airbnb/lottie/model/animatable/AnimatablePathValue$ValueFactory;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
@@ -25,233 +19,64 @@
 
 
 # instance fields
-.field private initialPoint:Landroid/graphics/PointF;
-
 .field private final keyframes:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/airbnb/lottie/animation/keyframe/PathKeyframe;",
-            ">;"
+            "Lcom/airbnb/lottie/value/Keyframe<",
+            "Landroid/graphics/PointF;",
+            ">;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 2
-
-    .line 37
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 31
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
-
-    .line 38
-    new-instance v0, Landroid/graphics/PointF;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1, v1}, Landroid/graphics/PointF;-><init>(FF)V
-
-    iput-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->initialPoint:Landroid/graphics/PointF;
-
-    return-void
-.end method
-
-.method constructor <init>(Ljava/lang/Object;Lcom/airbnb/lottie/LottieComposition;)V
-    .locals 4
-
-    .line 41
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 31
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
-
-    .line 42
-    invoke-direct {p0, p1}, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->hasKeyframes(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 43
-    check-cast p1, Lorg/json/JSONArray;
-
-    .line 44
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, v0, :cond_0
-
-    .line 46
-    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v2
-
-    .line 48
-    invoke-static {}, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue$ValueFactory;->access$000()Lcom/airbnb/lottie/model/animatable/AnimatableValue$Factory;
-
-    move-result-object v3
-
-    .line 47
-    invoke-static {v2, p2, v3}, Lcom/airbnb/lottie/animation/keyframe/PathKeyframe$Factory;->newInstance(Lorg/json/JSONObject;Lcom/airbnb/lottie/LottieComposition;Lcom/airbnb/lottie/model/animatable/AnimatableValue$Factory;)Lcom/airbnb/lottie/animation/keyframe/PathKeyframe;
-
-    move-result-object v2
-
-    .line 49
-    iget-object v3, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 51
-    :cond_0
-    iget-object p1, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
-
-    invoke-static {p1}, Lcom/airbnb/lottie/animation/Keyframe;->setEndFrames(Ljava/util/List;)V
-
-    goto :goto_1
-
-    .line 53
-    :cond_1
-    check-cast p1, Lorg/json/JSONArray;
-
-    invoke-virtual {p2}, Lcom/airbnb/lottie/LottieComposition;->getDpScale()F
-
-    move-result p2
-
-    invoke-static {p1, p2}, Lcom/airbnb/lottie/utils/JsonUtils;->pointFromJsonArray(Lorg/json/JSONArray;F)Landroid/graphics/PointF;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->initialPoint:Landroid/graphics/PointF;
-
-    :goto_1
-    return-void
-.end method
-
-.method public static createAnimatablePathOrSplitDimensionPath(Lorg/json/JSONObject;Lcom/airbnb/lottie/LottieComposition;)Lcom/airbnb/lottie/model/animatable/AnimatableValue;
+.method public constructor <init>()V
     .locals 3
+
+    .line 19
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 20
+    new-instance v0, Lcom/airbnb/lottie/value/Keyframe;
+
+    new-instance v1, Landroid/graphics/PointF;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v2, v2}, Landroid/graphics/PointF;-><init>(FF)V
+
+    invoke-direct {v0, v1}, Lcom/airbnb/lottie/value/Keyframe;-><init>(Ljava/lang/Object;)V
+
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lorg/json/JSONObject;",
-            "Lcom/airbnb/lottie/LottieComposition;",
-            ")",
-            "Lcom/airbnb/lottie/model/animatable/AnimatableValue<",
+            "Ljava/util/List<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
             "Landroid/graphics/PointF;",
-            "Landroid/graphics/PointF;",
-            ">;"
+            ">;>;)V"
         }
     .end annotation
 
-    const-string v0, "k"
-
-    .line 22
-    invoke-virtual {p0, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
     .line 23
-    new-instance v1, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {p0, v0}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+    .line 24
+    iput-object p1, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
 
-    move-result-object p0
-
-    invoke-direct {v1, p0, p1}, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;-><init>(Ljava/lang/Object;Lcom/airbnb/lottie/LottieComposition;)V
-
-    return-object v1
-
-    .line 25
-    :cond_0
-    new-instance v0, Lcom/airbnb/lottie/model/animatable/AnimatableSplitDimensionPathValue;
-
-    const-string v1, "x"
-
-    .line 26
-    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v1
-
-    invoke-static {v1, p1}, Lcom/airbnb/lottie/model/animatable/AnimatableFloatValue$Factory;->newInstance(Lorg/json/JSONObject;Lcom/airbnb/lottie/LottieComposition;)Lcom/airbnb/lottie/model/animatable/AnimatableFloatValue;
-
-    move-result-object v1
-
-    const-string v2, "y"
-
-    .line 27
-    invoke-virtual {p0, v2}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object p0
-
-    invoke-static {p0, p1}, Lcom/airbnb/lottie/model/animatable/AnimatableFloatValue$Factory;->newInstance(Lorg/json/JSONObject;Lcom/airbnb/lottie/LottieComposition;)Lcom/airbnb/lottie/model/animatable/AnimatableFloatValue;
-
-    move-result-object p0
-
-    invoke-direct {v0, v1, p0}, Lcom/airbnb/lottie/model/animatable/AnimatableSplitDimensionPathValue;-><init>(Lcom/airbnb/lottie/model/animatable/AnimatableFloatValue;Lcom/airbnb/lottie/model/animatable/AnimatableFloatValue;)V
-
-    return-object v0
-.end method
-
-.method private hasKeyframes(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 58
-    instance-of v0, p1, Lorg/json/JSONArray;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 62
-    :cond_0
-    check-cast p1, Lorg/json/JSONArray;
-
-    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->opt(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    .line 63
-    instance-of v0, p1, Lorg/json/JSONObject;
-
-    if-eqz v0, :cond_1
-
-    check-cast p1, Lorg/json/JSONObject;
-
-    const-string v0, "t"
-
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    const/4 v1, 0x1
-
-    :cond_1
-    return v1
+    return-void
 .end method
 
 
@@ -268,23 +93,33 @@
         }
     .end annotation
 
-    .line 68
-    invoke-virtual {p0}, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->hasAnimation()Z
+    .line 39
+    iget-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
+
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/airbnb/lottie/value/Keyframe;
+
+    invoke-virtual {v0}, Lcom/airbnb/lottie/value/Keyframe;->isStatic()Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 69
-    new-instance v0, Lcom/airbnb/lottie/animation/keyframe/StaticKeyframeAnimation;
+    .line 40
+    new-instance v0, Lcom/airbnb/lottie/animation/keyframe/PointKeyframeAnimation;
 
-    iget-object v1, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->initialPoint:Landroid/graphics/PointF;
+    iget-object v1, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
 
-    invoke-direct {v0, v1}, Lcom/airbnb/lottie/animation/keyframe/StaticKeyframeAnimation;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, v1}, Lcom/airbnb/lottie/animation/keyframe/PointKeyframeAnimation;-><init>(Ljava/util/List;)V
 
     return-object v0
 
-    .line 72
+    .line 42
     :cond_0
     new-instance v0, Lcom/airbnb/lottie/animation/keyframe/PathKeyframeAnimation;
 
@@ -295,40 +130,56 @@
     return-object v0
 .end method
 
-.method public hasAnimation()Z
+.method public getKeyframes()Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
+            "Landroid/graphics/PointF;",
+            ">;>;"
+        }
+    .end annotation
 
-    .line 77
+    .line 29
     iget-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
 
-    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+    return-object v0
+.end method
+
+.method public isStatic()Z
+    .locals 3
+
+    .line 34
+    iget-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    const/4 v1, 0x0
 
-    return v0
-.end method
+    const/4 v2, 0x1
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+    if-ne v0, v2, :cond_0
 
-    .line 82
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->keyframes:Ljava/util/List;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "initialPoint="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/airbnb/lottie/model/animatable/AnimatablePathValue;->initialPoint:Landroid/graphics/PointF;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
+    check-cast v0, Lcom/airbnb/lottie/value/Keyframe;
+
+    invoke-virtual {v0}, Lcom/airbnb/lottie/value/Keyframe;->isStatic()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    move v1, v2
+
+    :cond_0
+    return v1
 .end method

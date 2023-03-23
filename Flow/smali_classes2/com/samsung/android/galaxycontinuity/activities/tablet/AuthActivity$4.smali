@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 355
+    .line 367
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onAuthFailed(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -44,12 +60,12 @@
 .method public onAuthSuccess()V
     .locals 3
 
-    .line 358
+    .line 370
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     monitor-enter v0
 
-    .line 359
+    .line 371
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
@@ -59,12 +75,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 360
+    .line 372
     monitor-exit v0
 
     return-void
 
-    .line 362
+    .line 374
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
@@ -72,19 +88,12 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->access$502(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;Z)Z
 
-    .line 363
+    .line 375
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 366
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SMPManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SMPManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/SMPManager;->deInit()V
-
-    .line 368
+    .line 376
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
@@ -95,15 +104,15 @@
 
     const v1, 0x10008000
 
-    .line 369
+    .line 377
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 370
+    .line 378
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 372
+    .line 380
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->finish()V
@@ -113,7 +122,7 @@
     :catchall_0
     move-exception v1
 
-    .line 363
+    .line 375
     :try_start_1
     monitor-exit v0
     :try_end_1

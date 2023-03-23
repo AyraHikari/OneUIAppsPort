@@ -5,7 +5,6 @@
         <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/bottom_area" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="@integer/edge_content_area_bias">
             <include layout="@layout/edge_panel_weather_area" />
             <include layout="@layout/edge_panel_temp_area" />
-            <include layout="@layout/edge_panel_alert_area" />
         </LinearLayout>
         <LinearLayout android:id="@id/bottom_area" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
             <include layout="@layout/edge_panel_index_area" />

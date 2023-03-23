@@ -13,10 +13,6 @@
     name = "Builder"
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nConnectionSpec.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ConnectionSpec.kt\nokhttp3/ConnectionSpec$Builder\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,350:1\n1#2:351\n11208#3:352\n11543#3,3:353\n11208#3:358\n11543#3,3:359\n37#4,2:356\n37#4,2:362\n*E\n*S KotlinDebug\n*F\n+ 1 ConnectionSpec.kt\nokhttp3/ConnectionSpec$Builder\n*L\n225#1:352\n225#1,3:353\n244#1:358\n244#1,3:359\n225#1,2:356\n244#1,2:362\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -87,9 +83,9 @@
 
     const-string v0, "connectionSpec"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 212
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     invoke-virtual {p1}, Lokhttp3/ConnectionSpec;->isTls()Z
@@ -98,21 +94,21 @@
 
     iput-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    .line 213
+    .line 3
     invoke-static {p1}, Lokhttp3/ConnectionSpec;->access$getCipherSuitesAsString$p(Lokhttp3/ConnectionSpec;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
 
-    .line 214
+    .line 4
     invoke-static {p1}, Lokhttp3/ConnectionSpec;->access$getTlsVersionsAsString$p(Lokhttp3/ConnectionSpec;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
-    .line 215
+    .line 5
     invoke-virtual {p1}, Lokhttp3/ConnectionSpec;->supportsTlsExtensions()Z
 
     move-result p1
@@ -125,7 +121,7 @@
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 208
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
@@ -138,26 +134,19 @@
 .method public final allEnabledCipherSuites()Lokhttp3/ConnectionSpec$Builder;
     .locals 2
 
-    .line 218
-    move-object v0, p0
+    .line 1
+    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    check-cast v0, Lokhttp3/ConnectionSpec$Builder;
+    if-eqz v0, :cond_0
 
-    .line 219
-    iget-boolean v1, v0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    const/4 v0, 0x0
 
-    if-eqz v1, :cond_0
+    .line 2
+    iput-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    return-object p0
 
-    .line 220
-    check-cast v1, [Ljava/lang/String;
-
-    iput-object v1, v0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
-
-    return-object v0
-
-    .line 219
+    .line 3
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -169,34 +158,25 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast v0, Ljava/lang/Throwable;
-
     throw v0
 .end method
 
 .method public final allEnabledTlsVersions()Lokhttp3/ConnectionSpec$Builder;
     .locals 2
 
-    .line 236
-    move-object v0, p0
+    .line 1
+    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    check-cast v0, Lokhttp3/ConnectionSpec$Builder;
+    if-eqz v0, :cond_0
 
-    .line 237
-    iget-boolean v1, v0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    const/4 v0, 0x0
 
-    if-eqz v1, :cond_0
+    .line 2
+    iput-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
-    const/4 v1, 0x0
+    return-object p0
 
-    .line 238
-    check-cast v1, [Ljava/lang/String;
-
-    iput-object v1, v0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
-
-    return-object v0
-
-    .line 237
+    .line 3
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -208,87 +188,80 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast v0, Ljava/lang/Throwable;
-
     throw v0
 .end method
 
 .method public final build()Lokhttp3/ConnectionSpec;
     .locals 5
 
-    .line 263
+    .line 1
     new-instance v0, Lokhttp3/ConnectionSpec;
 
-    .line 264
+    .line 2
     iget-boolean v1, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    .line 265
+    .line 3
     iget-boolean v2, p0, Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
 
-    .line 266
+    .line 4
     iget-object v3, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
 
-    .line 267
+    .line 5
     iget-object v4, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
-    .line 263
+    .line 6
     invoke-direct {v0, v1, v2, v3, v4}, Lokhttp3/ConnectionSpec;-><init>(ZZ[Ljava/lang/String;[Ljava/lang/String;)V
 
     return-object v0
 .end method
 
 .method public final varargs cipherSuites([Ljava/lang/String;)Lokhttp3/ConnectionSpec$Builder;
-    .locals 3
+    .locals 2
 
     const-string v0, "cipherSuites"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 229
-    move-object v0, p0
+    .line 9
+    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    check-cast v0, Lokhttp3/ConnectionSpec$Builder;
+    if-eqz v0, :cond_2
 
-    .line 230
-    iget-boolean v1, v0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    .line 10
+    array-length v0, p1
 
-    if-eqz v1, :cond_2
+    const/4 v1, 0x1
 
-    .line 231
-    array-length v1, p1
+    if-nez v0, :cond_0
 
-    const/4 v2, 0x1
-
-    if-nez v1, :cond_0
-
-    move v1, v2
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    xor-int/2addr v1, v2
+    xor-int/2addr v0, v1
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    .line 233
+    .line 11
     invoke-virtual {p1}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object p1
 
-    const-string v1, "null cannot be cast to non-null type kotlin.Array<kotlin.String>"
+    const-string v0, "null cannot be cast to non-null type kotlin.Array<kotlin.String>"
 
-    invoke-static {p1, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
-    iput-object p1, v0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
+    iput-object p1, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
 
-    return-object v0
+    return-object p0
 
-    .line 231
+    .line 12
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -300,11 +273,9 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 
-    .line 230
+    .line 13
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -316,97 +287,82 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method public final varargs cipherSuites([Lokhttp3/CipherSuite;)Lokhttp3/ConnectionSpec$Builder;
-    .locals 6
+    .locals 5
 
     const-string v0, "cipherSuites"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 223
-    move-object v0, p0
+    .line 1
+    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    check-cast v0, Lokhttp3/ConnectionSpec$Builder;
+    if-eqz v0, :cond_1
 
-    .line 224
-    iget-boolean v1, v0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
 
-    if-eqz v1, :cond_1
+    array-length v1, p1
 
-    .line 352
-    new-instance v1, Ljava/util/ArrayList;
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    array-length v2, p1
+    .line 3
+    array-length v1, p1
 
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    const/4 v2, 0x0
 
-    check-cast v1, Ljava/util/Collection;
-
-    .line 353
-    array-length v2, p1
-
-    const/4 v3, 0x0
-
-    move v4, v3
+    move v3, v2
 
     :goto_0
-    if-ge v4, v2, :cond_0
+    if-ge v3, v1, :cond_0
 
-    aget-object v5, p1, v4
+    aget-object v4, p1, v3
 
-    .line 225
-    invoke-virtual {v5}, Lokhttp3/CipherSuite;->javaName()Ljava/lang/String;
+    .line 4
+    invoke-virtual {v4}, Lokhttp3/CipherSuite;->javaName()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-interface {v1, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 355
     :cond_0
-    check-cast v1, Ljava/util/List;
+    new-array p1, v2, [Ljava/lang/String;
 
-    .line 352
-    check-cast v1, Ljava/util/Collection;
-
-    new-array p1, v3, [Ljava/lang/String;
-
-    .line 357
-    invoke-interface {v1, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    .line 5
+    invoke-interface {v0, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
 
-    const-string v1, "null cannot be cast to non-null type kotlin.Array<T>"
+    const-string v0, "null cannot be cast to non-null type kotlin.Array<T>"
 
-    invoke-static {p1, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 225
+    .line 6
     check-cast p1, [Ljava/lang/String;
 
-    .line 226
-    array-length v1, p1
+    .line 7
+    array-length v0, p1
 
-    invoke-static {p1, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, [Ljava/lang/String;
 
-    invoke-virtual {v0, p1}, Lokhttp3/ConnectionSpec$Builder;->cipherSuites([Ljava/lang/String;)Lokhttp3/ConnectionSpec$Builder;
+    invoke-virtual {p0, p1}, Lokhttp3/ConnectionSpec$Builder;->cipherSuites([Ljava/lang/String;)Lokhttp3/ConnectionSpec$Builder;
 
     move-result-object p1
 
     return-object p1
 
-    .line 224
+    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -418,15 +374,12 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method public final getCipherSuites$okhttp()[Ljava/lang/String;
     .locals 1
 
-    .line 203
     iget-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
 
     return-object v0
@@ -435,7 +388,6 @@
 .method public final getSupportsTlsExtensions$okhttp()Z
     .locals 1
 
-    .line 205
     iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
 
     return v0
@@ -444,7 +396,6 @@
 .method public final getTls$okhttp()Z
     .locals 1
 
-    .line 202
     iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
     return v0
@@ -453,7 +404,6 @@
 .method public final getTlsVersions$okhttp()[Ljava/lang/String;
     .locals 1
 
-    .line 204
     iget-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
     return-object v0
@@ -462,7 +412,6 @@
 .method public final setCipherSuites$okhttp([Ljava/lang/String;)V
     .locals 0
 
-    .line 203
     iput-object p1, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
 
     return-void
@@ -471,7 +420,6 @@
 .method public final setSupportsTlsExtensions$okhttp(Z)V
     .locals 0
 
-    .line 205
     iput-boolean p1, p0, Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
 
     return-void
@@ -480,7 +428,6 @@
 .method public final setTls$okhttp(Z)V
     .locals 0
 
-    .line 202
     iput-boolean p1, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
     return-void
@@ -489,34 +436,25 @@
 .method public final setTlsVersions$okhttp([Ljava/lang/String;)V
     .locals 0
 
-    .line 204
     iput-object p1, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
     return-void
 .end method
 
 .method public final supportsTlsExtensions(Z)Lokhttp3/ConnectionSpec$Builder;
-    .locals 2
-    .annotation runtime Lkotlin/Deprecated;
-        message = "since OkHttp 3.13 all TLS-connections are expected to support TLS extensions.\nIn a future release setting this to true will be unnecessary and setting it to false\nwill have no effect."
-    .end annotation
+    .locals 1
 
-    .line 258
-    move-object v0, p0
+    .line 1
+    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    check-cast v0, Lokhttp3/ConnectionSpec$Builder;
+    if-eqz v0, :cond_0
 
-    .line 259
-    iget-boolean v1, v0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    .line 2
+    iput-boolean p1, p0, Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
 
-    if-eqz v1, :cond_0
+    return-object p0
 
-    .line 260
-    iput-boolean p1, v0, Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
-
-    return-object v0
-
-    .line 259
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -528,63 +466,56 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method public final varargs tlsVersions([Ljava/lang/String;)Lokhttp3/ConnectionSpec$Builder;
-    .locals 3
+    .locals 2
 
     const-string v0, "tlsVersions"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 248
-    move-object v0, p0
+    .line 9
+    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    check-cast v0, Lokhttp3/ConnectionSpec$Builder;
+    if-eqz v0, :cond_2
 
-    .line 249
-    iget-boolean v1, v0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    .line 10
+    array-length v0, p1
 
-    if-eqz v1, :cond_2
+    const/4 v1, 0x1
 
-    .line 250
-    array-length v1, p1
+    if-nez v0, :cond_0
 
-    const/4 v2, 0x1
-
-    if-nez v1, :cond_0
-
-    move v1, v2
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    xor-int/2addr v1, v2
+    xor-int/2addr v0, v1
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    .line 252
+    .line 11
     invoke-virtual {p1}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object p1
 
-    const-string v1, "null cannot be cast to non-null type kotlin.Array<kotlin.String>"
+    const-string v0, "null cannot be cast to non-null type kotlin.Array<kotlin.String>"
 
-    invoke-static {p1, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
-    iput-object p1, v0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
+    iput-object p1, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
-    return-object v0
+    return-object p0
 
-    .line 250
+    .line 12
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -596,11 +527,9 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 
-    .line 249
+    .line 13
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -612,97 +541,82 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 .end method
 
 .method public final varargs tlsVersions([Lokhttp3/TlsVersion;)Lokhttp3/ConnectionSpec$Builder;
-    .locals 6
+    .locals 5
 
     const-string v0, "tlsVersions"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 241
-    move-object v0, p0
+    .line 1
+    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
-    check-cast v0, Lokhttp3/ConnectionSpec$Builder;
+    if-eqz v0, :cond_1
 
-    .line 242
-    iget-boolean v1, v0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
 
-    if-eqz v1, :cond_1
+    array-length v1, p1
 
-    .line 358
-    new-instance v1, Ljava/util/ArrayList;
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    array-length v2, p1
+    .line 3
+    array-length v1, p1
 
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    const/4 v2, 0x0
 
-    check-cast v1, Ljava/util/Collection;
-
-    .line 359
-    array-length v2, p1
-
-    const/4 v3, 0x0
-
-    move v4, v3
+    move v3, v2
 
     :goto_0
-    if-ge v4, v2, :cond_0
+    if-ge v3, v1, :cond_0
 
-    aget-object v5, p1, v4
+    aget-object v4, p1, v3
 
-    .line 244
-    invoke-virtual {v5}, Lokhttp3/TlsVersion;->javaName()Ljava/lang/String;
+    .line 4
+    invoke-virtual {v4}, Lokhttp3/TlsVersion;->javaName()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-interface {v1, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 361
     :cond_0
-    check-cast v1, Ljava/util/List;
+    new-array p1, v2, [Ljava/lang/String;
 
-    .line 358
-    check-cast v1, Ljava/util/Collection;
-
-    new-array p1, v3, [Ljava/lang/String;
-
-    .line 363
-    invoke-interface {v1, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    .line 5
+    invoke-interface {v0, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
 
-    const-string v1, "null cannot be cast to non-null type kotlin.Array<T>"
+    const-string v0, "null cannot be cast to non-null type kotlin.Array<T>"
 
-    invoke-static {p1, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 244
+    .line 6
     check-cast p1, [Ljava/lang/String;
 
-    .line 245
-    array-length v1, p1
+    .line 7
+    array-length v0, p1
 
-    invoke-static {p1, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, [Ljava/lang/String;
 
-    invoke-virtual {v0, p1}, Lokhttp3/ConnectionSpec$Builder;->tlsVersions([Ljava/lang/String;)Lokhttp3/ConnectionSpec$Builder;
+    invoke-virtual {p0, p1}, Lokhttp3/ConnectionSpec$Builder;->tlsVersions([Ljava/lang/String;)Lokhttp3/ConnectionSpec$Builder;
 
     move-result-object p1
 
     return-object p1
 
-    .line 242
+    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -713,8 +627,6 @@
     move-result-object v0
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p1, Ljava/lang/Throwable;
 
     throw p1
 .end method

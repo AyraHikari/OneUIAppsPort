@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bitmap android:src="@drawable/orc_ic_plus_spr" android:tint="@color/attach_plus_bg_color" android:tintMode="src_in"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<vector android:height="24.0dip" android:width="24.0dip" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/received_bubble_text_color" android:pathData="M12.8269,11.1728L12.8269,4.1391C12.8269,3.6829 12.4567,3.3127 12.0006,3.3127C11.5444,3.3127 11.1742,3.6829 11.1742,4.1391L11.1742,11.1728L4.1252,11.1728C3.6691,11.1728 3.2989,11.543 3.2989,11.9991C3.2989,12.4553 3.6691,12.8255 4.1252,12.8255L11.1742,12.8255L11.1742,19.8609C11.1742,20.3171 11.5444,20.6873 12.0006,20.6873C12.4567,20.6873 12.8269,20.3171 12.8269,19.8609L12.8269,12.8255L19.8748,12.8255C20.3309,12.8255 20.7011,12.4553 20.7011,11.9991C20.7011,11.543 20.3309,11.1728 19.8748,11.1728L12.8269,11.1728Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

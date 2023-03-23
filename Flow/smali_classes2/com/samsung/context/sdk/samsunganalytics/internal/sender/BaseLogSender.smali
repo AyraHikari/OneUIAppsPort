@@ -32,6 +32,16 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "configuration"
+        }
+    .end annotation
 
     .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -81,6 +91,14 @@
 # virtual methods
 .method public controlSender(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "action"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -89,6 +107,15 @@
 
 .method protected getLogType(Ljava/util/Map;)Lcom/samsung/context/sdk/samsunganalytics/internal/sender/LogType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "log"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -100,7 +127,7 @@
         }
     .end annotation
 
-    const-string v0, "t"
+    const-string/jumbo v0, "t"
 
     .line 86
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -118,6 +145,15 @@
 
 .method protected insert(Ljava/util/Map;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "log"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -133,7 +169,7 @@
 
     new-instance v7, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/SimpleLog;
 
-    const-string v1, "t"
+    const-string/jumbo v1, "t"
 
     .line 81
     invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -144,7 +180,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    const-string v1, "ts"
+    const-string/jumbo v1, "ts"
 
     invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -184,6 +220,15 @@
 
 .method protected makeBodyString(Ljava/util/Map;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "logs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -209,6 +254,15 @@
 
 .method protected setCommonParamToLog(Ljava/util/Map;)Ljava/util/Map;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "log"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -346,7 +400,7 @@
 
     move-result-object v0
 
-    const-string v1, "uv"
+    const-string/jumbo v1, "uv"
 
     invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -383,14 +437,14 @@
 
     move-result-object v0
 
-    const-string v1, "tid"
+    const-string/jumbo v1, "tid"
 
     invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2
-    const-string v0, "v"
+    const-string/jumbo v0, "v"
 
-    const-string v1, "2.01.007"
+    const-string v1, "2.01.008"
 
     .line 63
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -402,7 +456,7 @@
 
     move-result-object v0
 
-    const-string v1, "tz"
+    const-string/jumbo v1, "tz"
 
     invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

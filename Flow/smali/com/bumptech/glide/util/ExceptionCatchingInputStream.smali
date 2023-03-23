@@ -47,7 +47,7 @@
 .end method
 
 .method static clearQueue()V
-    .locals 1
+    .locals 2
 
     .line 35
     :goto_0
@@ -55,13 +55,11 @@
 
     invoke-interface {v0}, Ljava/util/Queue;->isEmpty()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
     .line 36
-    sget-object v0, Lcom/bumptech/glide/util/ExceptionCatchingInputStream;->QUEUE:Ljava/util/Queue;
-
     invoke-interface {v0}, Ljava/util/Queue;->remove()Ljava/lang/Object;
 
     goto :goto_0
@@ -80,9 +78,7 @@
 
     .line 24
     :try_start_0
-    sget-object v1, Lcom/bumptech/glide/util/ExceptionCatchingInputStream;->QUEUE:Ljava/util/Queue;
-
-    invoke-interface {v1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -301,9 +297,7 @@
 
     .line 129
     :try_start_0
-    sget-object v1, Lcom/bumptech/glide/util/ExceptionCatchingInputStream;->QUEUE:Ljava/util/Queue;
-
-    invoke-interface {v1, p0}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
+    invoke-interface {v0, p0}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
     .line 130
     monitor-exit v0

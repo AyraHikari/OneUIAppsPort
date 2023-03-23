@@ -32,7 +32,10 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "argument to getParameterSpec must not be null"
+
+    .line 37
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 40
     invoke-virtual {p0, p1}, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi;->localEngineGetParameterSpec(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
@@ -40,16 +43,6 @@
     move-result-object p1
 
     return-object p1
-
-    .line 37
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "argument to getParameterSpec must not be null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method protected isASN1FormatString(Ljava/lang/String;)Z

@@ -6,64 +6,28 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lorg/jsoup/nodes/Entities$CoreCharset;,
-        Lorg/jsoup/nodes/Entities$EscapeMode;
+        Lorg/jsoup/nodes/Entities$EscapeMode;,
+        Lorg/jsoup/nodes/Entities$CoreCharset;
     }
 .end annotation
 
 
 # static fields
-.field private static final base:Ljava/util/Map;
+.field private static final DefaultOutput:Lorg/jsoup/nodes/Document$OutputSettings;
+
+.field private static final codeDelims:[C
+
+.field static final codepointRadix:I = 0x24
+
+.field private static final empty:I = -0x1
+
+.field private static final emptyName:Ljava/lang/String; = ""
+
+.field private static final multipoints:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Map<",
+            "Ljava/util/HashMap<",
             "Ljava/lang/String;",
-            "Ljava/lang/Character;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final baseByVal:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/Character;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final full:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Character;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final fullByVal:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/Character;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final xhtmlArray:[[Ljava/lang/Object;
-
-.field private static final xhtmlByVal:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/Character;",
             "Ljava/lang/String;",
             ">;"
         }
@@ -73,213 +37,125 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 1
 
-    const/4 v0, 0x4
+    const/4 v0, 0x2
 
-    new-array v0, v0, [[Ljava/lang/Object;
+    new-array v0, v0, [C
 
-    const/4 v1, 0x2
+    .line 25
+    fill-array-data v0, :array_0
 
-    new-array v2, v1, [Ljava/lang/Object;
+    sput-object v0, Lorg/jsoup/nodes/Entities;->codeDelims:[C
 
-    const-string v3, "quot"
-
-    const/4 v4, 0x0
-
-    aput-object v3, v2, v4
-
-    const/16 v3, 0x22
-
-    .line 212
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    const/4 v5, 0x1
-
-    aput-object v3, v2, v5
-
-    aput-object v2, v0, v4
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    const-string v3, "amp"
-
-    aput-object v3, v2, v4
-
-    const/16 v3, 0x26
-
-    .line 213
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    aput-object v3, v2, v5
-
-    aput-object v2, v0, v5
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    const-string v3, "lt"
-
-    aput-object v3, v2, v4
-
-    const/16 v3, 0x3c
-
-    .line 214
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    aput-object v3, v2, v5
-
-    aput-object v2, v0, v1
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const-string v2, "gt"
-
-    aput-object v2, v1, v4
-
-    const/16 v2, 0x3e
-
-    .line 215
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v1, v5
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    sput-object v0, Lorg/jsoup/nodes/Entities;->xhtmlArray:[[Ljava/lang/Object;
-
-    .line 219
+    .line 26
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/jsoup/nodes/Entities;->xhtmlByVal:Ljava/util/Map;
+    sput-object v0, Lorg/jsoup/nodes/Entities;->multipoints:Ljava/util/HashMap;
 
-    const-string v0, "entities-base.properties"
+    .line 27
+    new-instance v0, Lorg/jsoup/nodes/Document$OutputSettings;
 
-    .line 220
-    invoke-static {v0}, Lorg/jsoup/nodes/Entities;->loadEntities(Ljava/lang/String;)Ljava/util/Map;
+    invoke-direct {v0}, Lorg/jsoup/nodes/Document$OutputSettings;-><init>()V
 
-    move-result-object v0
+    sput-object v0, Lorg/jsoup/nodes/Entities;->DefaultOutput:Lorg/jsoup/nodes/Document$OutputSettings;
 
-    sput-object v0, Lorg/jsoup/nodes/Entities;->base:Ljava/util/Map;
-
-    .line 221
-    invoke-static {v0}, Lorg/jsoup/nodes/Entities;->toCharacterKey(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    sput-object v0, Lorg/jsoup/nodes/Entities;->baseByVal:Ljava/util/Map;
-
-    const-string v0, "entities-full.properties"
-
-    .line 222
-    invoke-static {v0}, Lorg/jsoup/nodes/Entities;->loadEntities(Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object v0
-
-    sput-object v0, Lorg/jsoup/nodes/Entities;->full:Ljava/util/Map;
-
-    .line 223
-    invoke-static {v0}, Lorg/jsoup/nodes/Entities;->toCharacterKey(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    sput-object v0, Lorg/jsoup/nodes/Entities;->fullByVal:Ljava/util/Map;
-
-    .line 225
-    sget-object v0, Lorg/jsoup/nodes/Entities;->xhtmlArray:[[Ljava/lang/Object;
-
-    array-length v1, v0
-
-    move v2, v4
-
-    :goto_0
-    if-ge v2, v1, :cond_0
-
-    aget-object v3, v0, v2
-
-    .line 226
-    aget-object v6, v3, v5
-
-    check-cast v6, Ljava/lang/Integer;
-
-    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
-
-    move-result v6
-
-    int-to-char v6, v6
-
-    invoke-static {v6}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
-
-    move-result-object v6
-
-    .line 227
-    sget-object v7, Lorg/jsoup/nodes/Entities;->xhtmlByVal:Ljava/util/Map;
-
-    aget-object v3, v3, v4
-
-    check-cast v3, Ljava/lang/String;
-
-    invoke-interface {v7, v6, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
     return-void
+
+    nop
+
+    :array_0
+    .array-data 2
+        0x2cs
+        0x3bs
+    .end array-data
 .end method
 
 .method private constructor <init>()V
     .locals 0
 
-    .line 42
+    .line 76
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic access$000()Ljava/util/Map;
-    .locals 1
+.method static synthetic access$000(Lorg/jsoup/nodes/Entities$EscapeMode;Ljava/lang/String;I)V
+    .locals 0
 
-    .line 16
-    sget-object v0, Lorg/jsoup/nodes/Entities;->xhtmlByVal:Ljava/util/Map;
+    .line 21
+    invoke-static {p0, p1, p2}, Lorg/jsoup/nodes/Entities;->load(Lorg/jsoup/nodes/Entities$EscapeMode;Ljava/lang/String;I)V
 
-    return-object v0
+    return-void
 .end method
 
-.method static synthetic access$100()Ljava/util/Map;
-    .locals 1
+.method private static appendEncoded(Ljava/lang/Appendable;Lorg/jsoup/nodes/Entities$EscapeMode;I)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    .line 16
-    sget-object v0, Lorg/jsoup/nodes/Entities;->baseByVal:Ljava/util/Map;
+    .line 238
+    invoke-virtual {p1, p2}, Lorg/jsoup/nodes/Entities$EscapeMode;->nameForCodepoint(I)Ljava/lang/String;
 
-    return-object v0
-.end method
+    move-result-object p1
 
-.method static synthetic access$200()Ljava/util/Map;
-    .locals 1
+    const-string v0, ""
 
-    .line 16
-    sget-object v0, Lorg/jsoup/nodes/Entities;->fullByVal:Ljava/util/Map;
+    .line 239
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    return-object v0
+    move-result v0
+
+    const/16 v1, 0x3b
+
+    if-nez v0, :cond_0
+
+    const/16 p2, 0x26
+
+    .line 240
+    invoke-interface {p0, p2}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
+
+    move-result-object p0
+
+    invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    move-result-object p0
+
+    invoke-interface {p0, v1}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "&#x"
+
+    .line 242
+    invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    move-result-object p0
+
+    invoke-static {p2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    move-result-object p0
+
+    invoke-interface {p0, v1}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
+
+    :goto_0
+    return-void
 .end method
 
 .method private static canEncode(Lorg/jsoup/nodes/Entities$CoreCharset;CLjava/nio/charset/CharsetEncoder;)Z
     .locals 2
 
-    .line 187
+    .line 281
     sget-object v0, Lorg/jsoup/nodes/Entities$1;->$SwitchMap$org$jsoup$nodes$Entities$CoreCharset:[I
 
     invoke-virtual {p0}, Lorg/jsoup/nodes/Entities$CoreCharset;->ordinal()I
@@ -296,7 +172,7 @@
 
     if-eq p0, v1, :cond_0
 
-    .line 193
+    .line 287
     invoke-virtual {p2, p1}, Ljava/nio/charset/CharsetEncoder;->canEncode(C)Z
 
     move-result p0
@@ -320,19 +196,90 @@
     return v0
 .end method
 
-.method static escape(Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;)Ljava/lang/String;
+.method public static codepointsForName(Ljava/lang/String;[I)I
+    .locals 3
+
+    .line 117
+    sget-object v0, Lorg/jsoup/nodes/Entities;->multipoints:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_0
+
+    .line 119
+    invoke-virtual {v0, v2}, Ljava/lang/String;->codePointAt(I)I
+
+    move-result p0
+
+    aput p0, p1, v2
+
+    .line 120
+    invoke-virtual {v0, v1}, Ljava/lang/String;->codePointAt(I)I
+
+    move-result p0
+
+    aput p0, p1, v1
+
+    const/4 p0, 0x2
+
+    return p0
+
+    .line 123
+    :cond_0
+    sget-object v0, Lorg/jsoup/nodes/Entities$EscapeMode;->extended:Lorg/jsoup/nodes/Entities$EscapeMode;
+
+    invoke-virtual {v0, p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->codepointForName(Ljava/lang/String;)I
+
+    move-result p0
+
+    const/4 v0, -0x1
+
+    if-eq p0, v0, :cond_1
+
+    .line 125
+    aput p0, p1, v2
+
+    return v1
+
+    :cond_1
+    return v2
+.end method
+
+.method public static escape(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .line 158
+    sget-object v0, Lorg/jsoup/nodes/Entities;->DefaultOutput:Lorg/jsoup/nodes/Document$OutputSettings;
+
+    invoke-static {p0, v0}, Lorg/jsoup/nodes/Entities;->escape(Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static escape(Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;)Ljava/lang/String;
     .locals 7
 
-    .line 73
-    new-instance v6, Ljava/lang/StringBuilder;
+    if-nez p0, :cond_0
 
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
+    const-string p0, ""
 
-    move-result v0
+    return-object p0
 
-    mul-int/lit8 v0, v0, 0x2
+    .line 141
+    :cond_0
+    invoke-static {}, Lorg/jsoup/internal/StringUtil;->borrowBuilder()Ljava/lang/StringBuilder;
 
-    invoke-direct {v6, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+    move-result-object v6
 
     const/4 v3, 0x0
 
@@ -346,340 +293,324 @@
 
     move-object v2, p1
 
-    .line 74
-    invoke-static/range {v0 .. v5}, Lorg/jsoup/nodes/Entities;->escape(Ljava/lang/StringBuilder;Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;ZZZ)V
+    .line 143
+    :try_start_0
+    invoke-static/range {v0 .. v5}, Lorg/jsoup/nodes/Entities;->escape(Ljava/lang/Appendable;Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;ZZZ)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 75
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 147
+    invoke-static {v6}, Lorg/jsoup/internal/StringUtil;->releaseBuilder(Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 145
+    new-instance p1, Lorg/jsoup/SerializationException;
+
+    invoke-direct {p1, p0}, Lorg/jsoup/SerializationException;-><init>(Ljava/lang/Throwable;)V
+
+    throw p1
 .end method
 
-.method static escape(Ljava/lang/StringBuilder;Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;ZZZ)V
-    .locals 16
+.method static escape(Ljava/lang/Appendable;Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;ZZZ)V
+    .locals 10
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    move-object/from16 v0, p0
+    .line 167
+    invoke-virtual {p2}, Lorg/jsoup/nodes/Document$OutputSettings;->escapeMode()Lorg/jsoup/nodes/Entities$EscapeMode;
 
-    .line 84
-    invoke-virtual/range {p2 .. p2}, Lorg/jsoup/nodes/Document$OutputSettings;->escapeMode()Lorg/jsoup/nodes/Entities$EscapeMode;
+    move-result-object v0
+
+    .line 168
+    invoke-virtual {p2}, Lorg/jsoup/nodes/Document$OutputSettings;->encoder()Ljava/nio/charset/CharsetEncoder;
 
     move-result-object v1
 
-    .line 85
-    invoke-virtual/range {p2 .. p2}, Lorg/jsoup/nodes/Document$OutputSettings;->encoder()Ljava/nio/charset/CharsetEncoder;
+    .line 169
+    iget-object p2, p2, Lorg/jsoup/nodes/Document$OutputSettings;->coreCharset:Lorg/jsoup/nodes/Entities$CoreCharset;
 
-    move-result-object v2
+    .line 170
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
-    .line 86
-    invoke-virtual {v2}, Ljava/nio/charset/CharsetEncoder;->charset()Ljava/nio/charset/Charset;
+    move-result v2
 
-    move-result-object v3
+    const/4 v3, 0x0
 
-    invoke-virtual {v3}, Ljava/nio/charset/Charset;->name()Ljava/lang/String;
+    move v4, v3
 
-    move-result-object v3
+    move v5, v4
 
-    invoke-static {v3}, Lorg/jsoup/nodes/Entities$CoreCharset;->access$300(Ljava/lang/String;)Lorg/jsoup/nodes/Entities$CoreCharset;
-
-    move-result-object v3
-
-    .line 87
-    invoke-virtual {v1}, Lorg/jsoup/nodes/Entities$EscapeMode;->getMap()Ljava/util/Map;
-
-    move-result-object v4
-
-    .line 88
-    invoke-virtual/range {p1 .. p1}, Ljava/lang/String;->length()I
-
-    move-result v5
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
+    move v6, v5
 
     :goto_0
-    if-ge v7, v5, :cond_13
+    if-ge v4, v2, :cond_12
 
-    move-object/from16 v10, p1
+    .line 174
+    invoke-virtual {p1, v4}, Ljava/lang/String;->codePointAt(I)I
 
-    .line 92
-    invoke-virtual {v10, v7}, Ljava/lang/String;->codePointAt(I)I
+    move-result v7
 
-    move-result v11
-
-    const/4 v12, 0x1
+    const/4 v8, 0x1
 
     if-eqz p4, :cond_3
 
-    .line 95
-    invoke-static {v11}, Lorg/jsoup/helper/StringUtil;->isWhitespace(I)Z
+    .line 177
+    invoke-static {v7}, Lorg/jsoup/internal/StringUtil;->isWhitespace(I)Z
 
-    move-result v13
+    move-result v9
 
-    if-eqz v13, :cond_2
+    if-eqz v9, :cond_2
 
     if-eqz p5, :cond_0
 
-    if-eqz v8, :cond_12
+    if-eqz v5, :cond_11
 
     :cond_0
-    if-eqz v9, :cond_1
+    if-eqz v6, :cond_1
 
     goto/16 :goto_2
 
     :cond_1
-    const/16 v9, 0x20
+    const/16 v6, 0x20
 
-    .line 98
-    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 180
+    invoke-interface {p0, v6}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
-    move v9, v12
+    move v6, v8
 
     goto/16 :goto_2
 
     :cond_2
-    move v8, v12
+    move v6, v3
 
-    const/4 v9, 0x0
+    move v5, v8
 
     :cond_3
-    const/high16 v12, 0x10000
+    const/high16 v8, 0x10000
 
-    const-string v13, "&#x"
+    if-ge v7, v8, :cond_f
 
-    const/16 v14, 0x3b
+    int-to-char v8, v7
 
-    if-ge v11, v12, :cond_10
+    const/16 v9, 0x22
 
-    int-to-char v12, v11
+    if-eq v8, v9, :cond_d
 
-    const/16 v15, 0x22
+    const/16 v9, 0x26
 
-    if-eq v12, v15, :cond_e
+    if-eq v8, v9, :cond_c
 
-    const/16 v15, 0x26
+    const/16 v9, 0x3c
 
-    if-eq v12, v15, :cond_d
+    if-eq v8, v9, :cond_9
 
-    const/16 v6, 0x3c
+    const/16 v9, 0x3e
 
-    if-eq v12, v6, :cond_a
+    if-eq v8, v9, :cond_7
 
-    const/16 v6, 0x3e
+    const/16 v9, 0xa0
 
-    if-eq v12, v6, :cond_8
+    if-eq v8, v9, :cond_5
 
-    const/16 v6, 0xa0
+    .line 222
+    invoke-static {p2, v8, v1}, Lorg/jsoup/nodes/Entities;->canEncode(Lorg/jsoup/nodes/Entities$CoreCharset;CLjava/nio/charset/CharsetEncoder;)Z
 
-    if-eq v12, v6, :cond_6
+    move-result v9
 
-    .line 140
-    invoke-static {v3, v12, v2}, Lorg/jsoup/nodes/Entities;->canEncode(Lorg/jsoup/nodes/Entities$CoreCharset;CLjava/nio/charset/CharsetEncoder;)Z
+    if-eqz v9, :cond_4
 
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    .line 141
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    goto/16 :goto_2
-
-    .line 142
-    :cond_4
-    invoke-static {v12}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
-
-    move-result-object v6
-
-    invoke-interface {v4, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_5
-
-    .line 143
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-static {v12}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
-
-    move-result-object v6
-
-    invoke-interface {v4, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/String;
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    goto/16 :goto_2
-
-    .line 145
-    :cond_5
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-static {v11}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 223
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
     goto :goto_2
 
-    .line 115
+    .line 225
+    :cond_4
+    invoke-static {p0, v0, v7}, Lorg/jsoup/nodes/Entities;->appendEncoded(Ljava/lang/Appendable;Lorg/jsoup/nodes/Entities$EscapeMode;I)V
+
+    goto :goto_2
+
+    .line 197
+    :cond_5
+    sget-object v8, Lorg/jsoup/nodes/Entities$EscapeMode;->xhtml:Lorg/jsoup/nodes/Entities$EscapeMode;
+
+    if-eq v0, v8, :cond_6
+
+    const-string v8, "&nbsp;"
+
+    .line 198
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    goto :goto_2
+
     :cond_6
-    sget-object v6, Lorg/jsoup/nodes/Entities$EscapeMode;->xhtml:Lorg/jsoup/nodes/Entities$EscapeMode;
+    const-string v8, "&#xa0;"
 
-    if-eq v1, v6, :cond_7
-
-    const-string v6, "&nbsp;"
-
-    .line 116
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 200
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     goto :goto_2
 
     :cond_7
-    const-string v6, "&#xa0;"
+    if-nez p3, :cond_8
 
-    .line 118
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v8, "&gt;"
+
+    .line 211
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     goto :goto_2
 
+    .line 213
     :cond_8
-    if-nez p3, :cond_9
-
-    const-string v6, "&gt;"
-
-    .line 129
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
     goto :goto_2
 
-    .line 131
     :cond_9
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    if-eqz p3, :cond_b
 
-    goto :goto_2
+    .line 204
+    sget-object v9, Lorg/jsoup/nodes/Entities$EscapeMode;->xhtml:Lorg/jsoup/nodes/Entities$EscapeMode;
 
-    :cond_a
-    if-eqz p3, :cond_c
-
-    .line 122
-    sget-object v6, Lorg/jsoup/nodes/Entities$EscapeMode;->xhtml:Lorg/jsoup/nodes/Entities$EscapeMode;
-
-    if-ne v1, v6, :cond_b
+    if-ne v0, v9, :cond_a
 
     goto :goto_1
 
-    .line 125
+    .line 207
+    :cond_a
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
+
+    goto :goto_2
+
     :cond_b
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    :goto_1
+    const-string v8, "&lt;"
+
+    .line 205
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     goto :goto_2
 
     :cond_c
-    :goto_1
-    const-string v6, "&lt;"
+    const-string v8, "&amp;"
 
-    .line 123
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 194
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     goto :goto_2
 
     :cond_d
-    const-string v6, "&amp;"
+    if-eqz p3, :cond_e
 
-    .line 112
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v8, "&quot;"
+
+    .line 217
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     goto :goto_2
 
+    .line 219
     :cond_e
-    if-eqz p3, :cond_f
-
-    const-string v6, "&quot;"
-
-    .line 135
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
     goto :goto_2
 
-    .line 137
+    .line 228
     :cond_f
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/String;
+
+    invoke-static {v7}, Ljava/lang/Character;->toChars(I)[C
+
+    move-result-object v9
+
+    invoke-direct {v8, v9}, Ljava/lang/String;-><init>([C)V
+
+    .line 229
+    invoke-virtual {v1, v8}, Ljava/nio/charset/CharsetEncoder;->canEncode(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_10
+
+    .line 230
+    invoke-interface {p0, v8}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     goto :goto_2
 
-    .line 148
+    .line 232
     :cond_10
-    new-instance v6, Ljava/lang/String;
+    invoke-static {p0, v0, v7}, Lorg/jsoup/nodes/Entities;->appendEncoded(Ljava/lang/Appendable;Lorg/jsoup/nodes/Entities$EscapeMode;I)V
 
-    invoke-static {v11}, Ljava/lang/Character;->toChars(I)[C
-
-    move-result-object v12
-
-    invoke-direct {v6, v12}, Ljava/lang/String;-><init>([C)V
-
-    .line 149
-    invoke-virtual {v2, v6}, Ljava/nio/charset/CharsetEncoder;->canEncode(Ljava/lang/CharSequence;)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_11
-
-    .line 150
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_2
-
-    .line 152
+    .line 173
     :cond_11
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-static {v11}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 91
-    :cond_12
     :goto_2
-    invoke-static {v11}, Ljava/lang/Character;->charCount(I)I
+    invoke-static {v7}, Ljava/lang/Character;->charCount(I)I
 
-    move-result v6
+    move-result v7
 
-    add-int/2addr v7, v6
+    add-int/2addr v4, v7
 
     goto/16 :goto_0
 
-    :cond_13
+    :cond_12
     return-void
 .end method
 
-.method public static getCharacterByName(Ljava/lang/String;)Ljava/lang/Character;
-    .locals 1
+.method public static getByName(Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
 
-    .line 69
-    sget-object v0, Lorg/jsoup/nodes/Entities;->full:Ljava/util/Map;
+    .line 107
+    sget-object v0, Lorg/jsoup/nodes/Entities;->multipoints:Ljava/util/HashMap;
 
-    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v0
 
-    check-cast p0, Ljava/lang/Character;
+    check-cast v0, Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    .line 110
+    :cond_0
+    sget-object v0, Lorg/jsoup/nodes/Entities$EscapeMode;->extended:Lorg/jsoup/nodes/Entities$EscapeMode;
+
+    invoke-virtual {v0, p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->codepointForName(Ljava/lang/String;)I
+
+    move-result p0
+
+    const/4 v0, -0x1
+
+    if-eq p0, v0, :cond_1
+
+    .line 112
+    new-instance v0, Ljava/lang/String;
+
+    const/4 v1, 0x1
+
+    new-array v2, v1, [I
+
+    const/4 v3, 0x0
+
+    aput p0, v2, v3
+
+    invoke-direct {v0, v2, v3, v1}, Ljava/lang/String;-><init>([III)V
+
+    return-object v0
+
+    :cond_1
+    const-string p0, ""
 
     return-object p0
 .end method
@@ -687,253 +618,239 @@
 .method public static isBaseNamedEntity(Ljava/lang/String;)Z
     .locals 1
 
-    .line 60
-    sget-object v0, Lorg/jsoup/nodes/Entities;->base:Ljava/util/Map;
+    .line 97
+    sget-object v0, Lorg/jsoup/nodes/Entities$EscapeMode;->base:Lorg/jsoup/nodes/Entities$EscapeMode;
 
-    invoke-interface {v0, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->codepointForName(Ljava/lang/String;)I
 
     move-result p0
 
+    const/4 v0, -0x1
+
+    if-eq p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
 .end method
 
 .method public static isNamedEntity(Ljava/lang/String;)Z
     .locals 1
 
-    .line 50
-    sget-object v0, Lorg/jsoup/nodes/Entities;->full:Ljava/util/Map;
+    .line 86
+    sget-object v0, Lorg/jsoup/nodes/Entities$EscapeMode;->extended:Lorg/jsoup/nodes/Entities$EscapeMode;
 
-    invoke-interface {v0, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->codepointForName(Ljava/lang/String;)I
 
     move-result p0
 
+    const/4 v0, -0x1
+
+    if-eq p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
 .end method
 
-.method private static loadEntities(Ljava/lang/String;)Ljava/util/Map;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Character;",
-            ">;"
-        }
-    .end annotation
+.method private static load(Lorg/jsoup/nodes/Entities$EscapeMode;Ljava/lang/String;I)V
+    .locals 10
 
-    .line 232
-    new-instance v0, Ljava/util/Properties;
+    .line 304
+    new-array v0, p2, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/util/Properties;-><init>()V
+    invoke-static {p0, v0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$102(Lorg/jsoup/nodes/Entities$EscapeMode;[Ljava/lang/String;)[Ljava/lang/String;
 
-    .line 233
-    new-instance v1, Ljava/util/HashMap;
+    .line 305
+    new-array v0, p2, [I
 
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+    invoke-static {p0, v0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$202(Lorg/jsoup/nodes/Entities$EscapeMode;[I)[I
 
-    .line 235
-    :try_start_0
-    const-class v2, Lorg/jsoup/nodes/Entities;
+    .line 306
+    new-array v0, p2, [I
 
-    invoke-virtual {v2, p0}, Ljava/lang/Class;->getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
+    invoke-static {p0, v0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$302(Lorg/jsoup/nodes/Entities$EscapeMode;[I)[I
 
-    move-result-object v2
+    .line 307
+    new-array v0, p2, [Ljava/lang/String;
 
-    .line 236
-    invoke-virtual {v0, v2}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
+    invoke-static {p0, v0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$402(Lorg/jsoup/nodes/Entities$EscapeMode;[Ljava/lang/String;)[Ljava/lang/String;
 
-    .line 237
-    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 310
+    new-instance v0, Lorg/jsoup/parser/CharacterReader;
 
-    .line 242
-    invoke-virtual {v0}, Ljava/util/Properties;->entrySet()Ljava/util/Set;
+    invoke-direct {v0, p1}, Lorg/jsoup/parser/CharacterReader;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    const/4 p1, 0x0
 
-    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    move v1, p1
 
-    move-result-object p0
-
+    .line 312
     :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map$Entry;
-
-    .line 243
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    const/16 v3, 0x10
-
-    invoke-static {v2, v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
+    invoke-virtual {v0}, Lorg/jsoup/parser/CharacterReader;->isEmpty()Z
 
     move-result v2
 
-    int-to-char v2, v2
+    const/4 v3, 0x1
 
-    invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    if-nez v2, :cond_2
 
-    move-result-object v2
+    const/16 v2, 0x3d
 
-    .line 244
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    .line 245
-    invoke-interface {v1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    :cond_0
-    return-object v1
-
-    :catch_0
-    move-exception v0
-
-    .line 239
-    new-instance v1, Ljava/util/MissingResourceException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Error loading entities resource: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v2, "Entities"
-
-    invoke-direct {v1, v0, v2, p0}, Ljava/util/MissingResourceException;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    throw v1
-.end method
-
-.method private static toCharacterKey(Ljava/util/Map;)Ljava/util/Map;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Character;",
-            ">;)",
-            "Ljava/util/Map<",
-            "Ljava/lang/Character;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .line 251
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    .line 252
-    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object p0
-
-    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :cond_0
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map$Entry;
-
-    .line 253
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    .line 315
+    invoke-virtual {v0, v2}, Lorg/jsoup/parser/CharacterReader;->consumeTo(C)Ljava/lang/String;
 
     move-result-object v2
 
-    check-cast v2, Ljava/lang/Character;
+    .line 316
+    invoke-virtual {v0}, Lorg/jsoup/parser/CharacterReader;->advance()V
 
-    .line 254
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    .line 317
+    sget-object v4, Lorg/jsoup/nodes/Entities;->codeDelims:[C
 
-    move-result-object v1
+    invoke-virtual {v0, v4}, Lorg/jsoup/parser/CharacterReader;->consumeToAny([C)Ljava/lang/String;
 
-    check-cast v1, Ljava/lang/String;
+    move-result-object v4
 
-    .line 256
-    invoke-interface {v0, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    const/16 v5, 0x24
 
-    move-result v3
+    invoke-static {v4, v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
 
-    if-eqz v3, :cond_1
+    move-result v4
 
-    .line 258
-    invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    .line 318
+    invoke-virtual {v0}, Lorg/jsoup/parser/CharacterReader;->current()C
 
-    move-result-object v3
+    move-result v6
 
-    invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 319
+    invoke-virtual {v0}, Lorg/jsoup/parser/CharacterReader;->advance()V
 
-    move-result v3
+    const/16 v7, 0x2c
 
-    if-eqz v3, :cond_0
+    const/4 v8, -0x1
 
-    .line 259
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-ne v6, v7, :cond_0
 
-    goto :goto_0
+    const/16 v6, 0x3b
 
-    .line 261
+    .line 322
+    invoke-virtual {v0, v6}, Lorg/jsoup/parser/CharacterReader;->consumeTo(C)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v6, v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
+
+    move-result v6
+
+    .line 323
+    invoke-virtual {v0}, Lorg/jsoup/parser/CharacterReader;->advance()V
+
+    goto :goto_1
+
+    :cond_0
+    move v6, v8
+
+    :goto_1
+    const/16 v7, 0x26
+
+    .line 327
+    invoke-virtual {v0, v7}, Lorg/jsoup/parser/CharacterReader;->consumeTo(C)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 328
+    invoke-static {v7, v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
+
+    move-result v5
+
+    .line 329
+    invoke-virtual {v0}, Lorg/jsoup/parser/CharacterReader;->advance()V
+
+    .line 331
+    invoke-static {p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$100(Lorg/jsoup/nodes/Entities$EscapeMode;)[Ljava/lang/String;
+
+    move-result-object v7
+
+    aput-object v2, v7, v1
+
+    .line 332
+    invoke-static {p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$200(Lorg/jsoup/nodes/Entities$EscapeMode;)[I
+
+    move-result-object v7
+
+    aput v4, v7, v1
+
+    .line 333
+    invoke-static {p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$300(Lorg/jsoup/nodes/Entities$EscapeMode;)[I
+
+    move-result-object v7
+
+    aput v4, v7, v5
+
+    .line 334
+    invoke-static {p0}, Lorg/jsoup/nodes/Entities$EscapeMode;->access$400(Lorg/jsoup/nodes/Entities$EscapeMode;)[Ljava/lang/String;
+
+    move-result-object v7
+
+    aput-object v2, v7, v5
+
+    if-eq v6, v8, :cond_1
+
+    .line 337
+    sget-object v5, Lorg/jsoup/nodes/Entities;->multipoints:Ljava/util/HashMap;
+
+    new-instance v7, Ljava/lang/String;
+
+    const/4 v8, 0x2
+
+    new-array v9, v8, [I
+
+    aput v4, v9, p1
+
+    aput v6, v9, v3
+
+    invoke-direct {v7, v9, p1, v8}, Ljava/lang/String;-><init>([III)V
+
+    invoke-virtual {v5, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     :cond_1
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
     :cond_2
-    return-object v0
+    if-ne v1, p2, :cond_3
+
+    move p1, v3
+
+    :cond_3
+    const-string p0, "Unexpected count of entities loaded"
+
+    .line 342
+    invoke-static {p1, p0}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
+
+    return-void
 .end method
 
-.method static unescape(Ljava/lang/String;)Ljava/lang/String;
+.method public static unescape(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 158
+    .line 252
     invoke-static {p0, v0}, Lorg/jsoup/nodes/Entities;->unescape(Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object p0
@@ -944,7 +861,7 @@
 .method static unescape(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 0
 
-    .line 168
+    .line 263
     invoke-static {p0, p1}, Lorg/jsoup/parser/Parser;->unescapeEntities(Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object p0

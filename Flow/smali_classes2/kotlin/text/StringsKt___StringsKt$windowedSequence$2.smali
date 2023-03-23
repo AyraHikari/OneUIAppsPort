@@ -26,11 +26,6 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u000c\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0002\u0010\u0000\u001a\u0002H\u0001\"\u0004\u0008\u0000\u0010\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
@@ -45,9 +40,10 @@
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -57,15 +53,33 @@
 .field final synthetic $this_windowedSequence:Ljava/lang/CharSequence;
 
 .field final synthetic $transform:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Ljava/lang/CharSequence;",
+            "TR;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/CharSequence;ILkotlin/jvm/functions/Function1;)V
+.method constructor <init>(ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/CharSequence;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/CharSequence;",
+            "+TR;>;)V"
+        }
+    .end annotation
 
-    iput-object p1, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$this_windowedSequence:Ljava/lang/CharSequence;
+    iput p1, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$size:I
 
-    iput p2, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$size:I
+    iput-object p2, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$this_windowedSequence:Ljava/lang/CharSequence;
 
     iput-object p3, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$transform:Lkotlin/jvm/functions/Function1;
 
@@ -86,14 +100,14 @@
         }
     .end annotation
 
-    .line 1620
+    .line 2312
     iget v0, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$size:I
 
     add-int/2addr v0, p1
 
     if-ltz v0, :cond_0
 
-    .line 1621
+    .line 2313
     iget-object v1, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$this_windowedSequence:Ljava/lang/CharSequence;
 
     invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
@@ -109,7 +123,7 @@
 
     move-result v0
 
-    .line 1622
+    .line 2314
     :cond_1
     iget-object v1, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$transform:Lkotlin/jvm/functions/Function1;
 
@@ -129,6 +143,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
+    .line 2311
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

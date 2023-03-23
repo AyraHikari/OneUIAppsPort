@@ -1,10 +1,9 @@
 .class public Landroidx/databinding/ObservableParcelable;
-.super Landroidx/databinding/ObservableField;
+.super Landroidx/databinding/j;
 .source "ObservableParcelable.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Ljava/io/Serializable;
 
 
 # annotations
@@ -13,10 +12,9 @@
         "<T::",
         "Landroid/os/Parcelable;",
         ">",
-        "Landroidx/databinding/ObservableField<",
+        "Landroidx/databinding/j<",
         "TT;>;",
-        "Landroid/os/Parcelable;",
-        "Ljava/io/Serializable;"
+        "Landroid/os/Parcelable;"
     }
 .end annotation
 
@@ -32,17 +30,14 @@
     .end annotation
 .end field
 
-.field static final serialVersionUID:J = 0x1L
-
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 68
-    new-instance v0, Landroidx/databinding/ObservableParcelable$1;
+    new-instance v0, Landroidx/databinding/ObservableParcelable$a;
 
-    invoke-direct {v0}, Landroidx/databinding/ObservableParcelable$1;-><init>()V
+    invoke-direct {v0}, Landroidx/databinding/ObservableParcelable$a;-><init>()V
 
     sput-object v0, Landroidx/databinding/ObservableParcelable;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -52,8 +47,8 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 55
-    invoke-direct {p0}, Landroidx/databinding/ObservableField;-><init>()V
+    .line 2
+    invoke-direct {p0}, Landroidx/databinding/j;-><init>()V
 
     return-void
 .end method
@@ -66,8 +61,8 @@
         }
     .end annotation
 
-    .line 48
-    invoke-direct {p0, p1}, Landroidx/databinding/ObservableField;-><init>(Ljava/lang/Object;)V
+    .line 1
+    invoke-direct {p0, p1}, Landroidx/databinding/j;-><init>(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -85,8 +80,7 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 65
-    invoke-virtual {p0}, Landroidx/databinding/ObservableParcelable;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroidx/databinding/j;->o()Ljava/lang/Object;
 
     move-result-object p2
 

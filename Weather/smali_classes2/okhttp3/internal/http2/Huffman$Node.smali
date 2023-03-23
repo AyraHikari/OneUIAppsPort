@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
+    accessFlags = 0x19
     name = "Node"
 .end annotation
 
@@ -62,7 +62,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 193
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x100
@@ -73,10 +73,10 @@
 
     const/4 v0, 0x0
 
-    .line 194
+    .line 2
     iput v0, p0, Lokhttp3/internal/http2/Huffman$Node;->symbol:I
 
-    .line 195
+    .line 3
     iput v0, p0, Lokhttp3/internal/http2/Huffman$Node;->terminalBitCount:I
 
     return-void
@@ -85,16 +85,14 @@
 .method public constructor <init>(II)V
     .locals 1
 
-    .line 200
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    check-cast v0, [Lokhttp3/internal/http2/Huffman$Node;
-
     iput-object v0, p0, Lokhttp3/internal/http2/Huffman$Node;->children:[Lokhttp3/internal/http2/Huffman$Node;
 
-    .line 201
+    .line 5
     iput p1, p0, Lokhttp3/internal/http2/Huffman$Node;->symbol:I
 
     and-int/lit8 p1, p2, 0x7
@@ -103,7 +101,7 @@
 
     const/16 p1, 0x8
 
-    .line 203
+    .line 6
     :cond_0
     iput p1, p0, Lokhttp3/internal/http2/Huffman$Node;->terminalBitCount:I
 
@@ -115,7 +113,6 @@
 .method public final getChildren()[Lokhttp3/internal/http2/Huffman$Node;
     .locals 1
 
-    .line 183
     iget-object v0, p0, Lokhttp3/internal/http2/Huffman$Node;->children:[Lokhttp3/internal/http2/Huffman$Node;
 
     return-object v0
@@ -124,7 +121,6 @@
 .method public final getSymbol()I
     .locals 1
 
-    .line 186
     iget v0, p0, Lokhttp3/internal/http2/Huffman$Node;->symbol:I
 
     return v0
@@ -133,7 +129,6 @@
 .method public final getTerminalBitCount()I
     .locals 1
 
-    .line 189
     iget v0, p0, Lokhttp3/internal/http2/Huffman$Node;->terminalBitCount:I
 
     return v0

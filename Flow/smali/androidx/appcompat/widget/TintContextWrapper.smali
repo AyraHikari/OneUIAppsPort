@@ -131,7 +131,7 @@
 
     .line 85
     :cond_0
-    sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x15
 
@@ -183,8 +183,6 @@
 
     .line 52
     :cond_0
-    sget-object v1, Landroidx/appcompat/widget/TintContextWrapper;->sCache:Ljava/util/ArrayList;
-
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v1

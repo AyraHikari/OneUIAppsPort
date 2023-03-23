@@ -447,9 +447,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, "/CCM"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -669,6 +673,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p2
@@ -679,7 +685,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -783,21 +791,21 @@
     .line 248
     iget-object v0, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->nonce:[B
 
-    array-length v0, v0
+    array-length v1, v0
 
-    rsub-int/lit8 v0, v0, 0xf
+    rsub-int/lit8 v1, v1, 0xf
 
-    const/4 v1, 0x4
+    const/4 v2, 0x4
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    if-ge v0, v1, :cond_1
+    if-ge v1, v2, :cond_1
 
-    mul-int/lit8 v1, v0, 0x8
+    mul-int/lit8 v2, v1, 0x8
 
-    shl-int v1, v2, v1
+    shl-int v2, v3, v2
 
-    if-ge p3, v1, :cond_0
+    if-ge p3, v2, :cond_0
 
     goto :goto_0
 
@@ -814,45 +822,43 @@
     .line 259
     :cond_1
     :goto_0
-    iget v1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->blockSize:I
+    iget v2, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->blockSize:I
 
-    new-array v1, v1, [B
+    new-array v2, v2, [B
 
-    sub-int/2addr v0, v2
+    sub-int/2addr v1, v3
 
-    and-int/lit8 v0, v0, 0x7
+    and-int/lit8 v1, v1, 0x7
 
-    int-to-byte v0, v0
+    int-to-byte v1, v1
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
     .line 260
-    aput-byte v0, v1, v3
+    aput-byte v1, v2, v4
 
     .line 261
-    iget-object v0, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->nonce:[B
+    array-length v1, v0
 
-    array-length v4, v0
-
-    invoke-static {v0, v3, v1, v2, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v4, v2, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 263
     new-instance v0, Lorg/spongycastle/crypto/modes/SICBlockCipher;
 
-    iget-object v2, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
+    iget-object v1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->cipher:Lorg/spongycastle/crypto/BlockCipher;
 
-    invoke-direct {v0, v2}, Lorg/spongycastle/crypto/modes/SICBlockCipher;-><init>(Lorg/spongycastle/crypto/BlockCipher;)V
+    invoke-direct {v0, v1}, Lorg/spongycastle/crypto/modes/SICBlockCipher;-><init>(Lorg/spongycastle/crypto/BlockCipher;)V
 
     .line 264
-    iget-boolean v2, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->forEncryption:Z
+    iget-boolean v1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->forEncryption:Z
 
-    new-instance v4, Lorg/spongycastle/crypto/params/ParametersWithIV;
+    new-instance v3, Lorg/spongycastle/crypto/params/ParametersWithIV;
 
     iget-object v5, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->keyParam:Lorg/spongycastle/crypto/CipherParameters;
 
-    invoke-direct {v4, v5, v1}, Lorg/spongycastle/crypto/params/ParametersWithIV;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
+    invoke-direct {v3, v5, v2}, Lorg/spongycastle/crypto/params/ParametersWithIV;-><init>(Lorg/spongycastle/crypto/CipherParameters;[B)V
 
-    invoke-interface {v0, v2, v4}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
+    invoke-interface {v0, v1, v3}, Lorg/spongycastle/crypto/BlockCipher;->init(ZLorg/spongycastle/crypto/CipherParameters;)V
 
     .line 270
     iget-boolean v1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->forEncryption:Z
@@ -867,11 +873,11 @@
     add-int/2addr v1, p3
 
     .line 273
-    array-length v4, p4
+    array-length v3, p4
 
     add-int v5, v1, p5
 
-    if-lt v4, v5, :cond_3
+    if-lt v3, v5, :cond_3
 
     .line 278
     iget-object v2, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
@@ -884,11 +890,11 @@
     new-array v2, v2, [B
 
     .line 282
-    iget-object v4, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
+    iget-object v3, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
 
-    invoke-interface {v0, v4, v3, v2, v3}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, v3, v4, v2, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
-    move v4, p2
+    move v3, p2
 
     move v5, p5
 
@@ -900,17 +906,17 @@
 
     sub-int v8, v6, v7
 
-    if-ge v4, v8, :cond_2
+    if-ge v3, v8, :cond_2
 
     .line 286
-    invoke-interface {v0, p1, v4, p4, v5}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, p1, v3, p4, v5}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     .line 287
     iget v6, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->blockSize:I
 
     add-int/2addr v5, v6
 
-    add-int/2addr v4, v6
+    add-int/2addr v3, v6
 
     goto :goto_1
 
@@ -918,23 +924,23 @@
     :cond_2
     new-array p2, v7, [B
 
-    sub-int/2addr v6, v4
+    sub-int/2addr v6, v3
 
     .line 293
-    invoke-static {p1, v4, p2, v3, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p1, v3, p2, v4, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 295
-    invoke-interface {v0, p2, v3, p2, v3}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, p2, v4, p2, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     .line 297
-    invoke-static {p2, v3, p4, v5, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p2, v4, p4, v5, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr p5, p3
 
     .line 299
     iget p1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macSize:I
 
-    invoke-static {v2, v3, p4, p5, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v2, v4, p4, p5, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_4
 
@@ -955,36 +961,36 @@
     sub-int/2addr p3, v1
 
     .line 308
-    array-length v4, p4
+    array-length v3, p4
 
     add-int v5, p3, p5
 
-    if-lt v4, v5, :cond_8
+    if-lt v3, v5, :cond_8
 
     add-int v2, p2, p3
 
     .line 313
-    iget-object v4, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
+    iget-object v3, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
 
-    invoke-static {p1, v2, v4, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p1, v2, v3, v4, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 315
     iget-object v1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
 
-    invoke-interface {v0, v1, v3, v1, v3}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, v1, v4, v1, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     .line 317
     iget v1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macSize:I
 
     :goto_2
-    iget-object v4, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
+    iget-object v3, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->macBlock:[B
 
-    array-length v5, v4
+    array-length v5, v3
 
     if-eq v1, v5, :cond_5
 
     .line 319
-    aput-byte v3, v4, v1
+    aput-byte v4, v3, v1
 
     add-int/lit8 v1, v1, 0x1
 
@@ -993,7 +999,7 @@
     :cond_5
     move v1, p2
 
-    move v4, p5
+    move v3, p5
 
     .line 322
     :goto_3
@@ -1004,12 +1010,12 @@
     if-ge v1, v6, :cond_6
 
     .line 324
-    invoke-interface {v0, p1, v1, p4, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, p1, v1, p4, v3}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     .line 325
     iget v5, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->blockSize:I
 
-    add-int/2addr v4, v5
+    add-int/2addr v3, v5
 
     add-int/2addr v1, v5
 
@@ -1024,13 +1030,13 @@
     sub-int p2, p3, p2
 
     .line 331
-    invoke-static {p1, v1, v2, v3, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p1, v1, v2, v4, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 333
-    invoke-interface {v0, v2, v3, v2, v3}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
+    invoke-interface {v0, v2, v4, v2, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     .line 335
-    invoke-static {v2, v3, p4, v4, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v2, v4, p4, v3, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 337
     iget p1, p0, Lorg/spongycastle/crypto/modes/CCMBlockCipher;->blockSize:I

@@ -41,7 +41,7 @@
     <string name="common_google_play_services_notification_ticker">កំហុស​​សេវាកម្ម​ Google កម្សាន្ត</string>
     <string name="common_google_play_services_unknown_issue">%1$s កំពុងមានបញ្ហាជាមួយសេវាកម្មរបស់ Google Play ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។</string>
     <string name="common_google_play_services_unsupported_text">%1$s នឹងមិនដំណើរការដោយគ្មានសេវាកម្មរបស់ Google Play ដែលឧបករណ៍របស់អ្នកមិនគាំទ្រនោះទេ។</string>
-    <string name="common_google_play_services_update_button">ធ្វើ​បច្ចុប្បន្នភាព</string>
+    <string name="common_google_play_services_update_button">ធ្វើបច្ចុប្បន្នភាព</string>
     <string name="common_google_play_services_update_text">%1$s នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកធ្វើបច្ចុប្បន្នភាពសេវាកម្ម Google Play។</string>
     <string name="common_google_play_services_update_title">អាប់ដេតសេវាកម្ម Google Play</string>
     <string name="common_google_play_services_updating_text">%1$s នឹងមិនដំណើរការទេ បើមិនមានសេវាកម្ម Google Play ដោយសារតែវាកំពុងអាប់ដេត។</string>
@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">ចូល</string>
     <string name="common_signin_button_text_long">ចូលដោយប្រើ Google</string>
     <string name="copy">ចម្លង</string>
-    <string name="copy_toast_msg">បាន​ចម្លង​តំណ​ទៅឃ្លីបបត</string>
     <string name="error_icon_content_description">បញ្ហា</string>
     <string name="expand_button_title">កម្រិតខ្ពស់</string>
     <string name="exposed_dropdown_menu_content_description">បង្ហាញ​ម៉ឺនុយ​ធ្លាក់ចុះ</string>
-    <string name="fallback_menu_item_copy_link">ចម្លង​តំណ</string>
-    <string name="fallback_menu_item_open_in_browser">បើក​នៅក្នុង​កម្មវិធី​រុករកតាម​អ៊ីនធឺណិត</string>
-    <string name="fallback_menu_item_share_link">តំណចែករំលែក</string>
     <string name="icon_content_description">រូប​ប្រអប់បញ្ចូល</string>
     <string name="item_view_role_description">ផ្ទាំង</string>
     <string name="material_clock_toggle_content_description">ជ្រើសរើស AM ឬ PM</string>

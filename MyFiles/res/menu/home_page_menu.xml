@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/actionbar_search" android:id="@id/menu_search" android:title="@string/menu_search" app:showAsAction="always|collapseActionView" />
+    <item android:id="@id/menu_verizon_cloud" android:visible="false" android:title="@string/menu_verizon_cloud" android:showAsAction="never" />
+    <item android:id="@id/menu_att_cloud" android:visible="false" android:title="@string/menu_att_cloud" android:showAsAction="never" />
+    <item android:id="@id/menu_clear_recent_files" android:visible="false" android:title="@string/menu_clear_recent_files" android:showAsAction="never" />
+    <item android:id="@id/menu_analyze_storage" android:visible="false" android:title="@string/menu_analyze_storage" android:showAsAction="never" />
+    <item android:id="@id/menu_trash" android:visible="false" android:title="@string/menu_trash" android:showAsAction="never" />
+    <item android:id="@id/menu_settings" android:title="@string/menu_settings" android:showAsAction="never" />
+    <item android:id="@id/menu_contact_us" android:visible="false" android:title="@string/menu_contact_us" android:showAsAction="never" />
+    <item android:id="@id/menu_manage_home" android:visible="false" android:title="Manage home screen" android:showAsAction="never" />
+    <item android:id="@id/menu_developer_options" android:visible="false" android:title="Developer Options" android:showAsAction="never" />
+</menu>

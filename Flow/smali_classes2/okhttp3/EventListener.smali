@@ -19,7 +19,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 59
+    .line 53
     new-instance v0, Lokhttp3/EventListener$1;
 
     invoke-direct {v0}, Lokhttp3/EventListener$1;-><init>()V
@@ -32,7 +32,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 58
+    .line 52
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,12 +41,18 @@
 .method static factory(Lokhttp3/EventListener;)Lokhttp3/EventListener$Factory;
     .locals 1
 
-    .line 63
-    new-instance v0, Lokhttp3/EventListener$2;
+    .line 57
+    new-instance v0, Lokhttp3/-$$Lambda$EventListener$OXICzLQ3RHlsN3BZyIksLMm-GlQ;
 
-    invoke-direct {v0, p0}, Lokhttp3/EventListener$2;-><init>(Lokhttp3/EventListener;)V
+    invoke-direct {v0, p0}, Lokhttp3/-$$Lambda$EventListener$OXICzLQ3RHlsN3BZyIksLMm-GlQ;-><init>(Lokhttp3/EventListener;)V
 
     return-object v0
+.end method
+
+.method static synthetic lambda$factory$0(Lokhttp3/EventListener;Lokhttp3/Call;)Lokhttp3/EventListener;
+    .locals 0
+
+    return-object p0
 .end method
 
 
@@ -141,6 +147,12 @@
     return-void
 .end method
 
+.method public requestFailed(Lokhttp3/Call;Ljava/io/IOException;)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public requestHeadersEnd(Lokhttp3/Call;Lokhttp3/Request;)V
     .locals 0
 
@@ -160,6 +172,12 @@
 .end method
 
 .method public responseBodyStart(Lokhttp3/Call;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public responseFailed(Lokhttp3/Call;Ljava/io/IOException;)V
     .locals 0
 
     return-void

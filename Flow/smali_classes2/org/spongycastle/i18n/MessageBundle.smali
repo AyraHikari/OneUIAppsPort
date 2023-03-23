@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    const-string v1, "title"
+    const-string/jumbo v1, "title"
 
     invoke-virtual {p0, v1, p1, v0}, Lorg/spongycastle/i18n/MessageBundle;->getEntry(Ljava/lang/String;Ljava/util/Locale;Ljava/util/TimeZone;)Ljava/lang/String;
 
@@ -98,7 +98,7 @@
         }
     .end annotation
 
-    const-string v0, "title"
+    const-string/jumbo v0, "title"
 
     .line 78
     invoke-virtual {p0, v0, p1, p2}, Lorg/spongycastle/i18n/MessageBundle;->getEntry(Ljava/lang/String;Ljava/util/Locale;Ljava/util/TimeZone;)Ljava/lang/String;

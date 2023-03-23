@@ -59,11 +59,11 @@
     iput-object v0, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->headerNames:Ljava/util/ArrayList;
 
     .line 33
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->headerValues:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->headerValues:Ljava/util/ArrayList;
 
     .line 36
     iput-object p1, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->connection:Ljava/net/HttpURLConnection;
@@ -71,30 +71,24 @@
     .line 37
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
-    move-result v0
+    move-result v2
 
-    const/4 v1, -0x1
+    const/4 v3, -0x1
 
-    if-ne v0, v1, :cond_0
+    if-ne v2, v3, :cond_0
 
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
     .line 38
     :cond_0
-    iput v0, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->responseCode:I
+    iput v2, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->responseCode:I
 
     .line 39
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    iput-object v0, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->responseMessage:Ljava/lang/String;
-
-    .line 40
-    iget-object v0, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->headerNames:Ljava/util/ArrayList;
-
-    .line 41
-    iget-object v1, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->headerValues:Ljava/util/ArrayList;
+    iput-object v2, p0, Lcom/google/api/client/http/javanet/NetHttpResponse;->responseMessage:Ljava/lang/String;
 
     .line 42
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;

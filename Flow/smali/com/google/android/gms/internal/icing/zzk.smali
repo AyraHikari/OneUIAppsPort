@@ -1,5 +1,6 @@
 .class public final Lcom/google/android/gms/internal/icing/zzk;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # static fields
@@ -13,19 +14,19 @@
     .end annotation
 .end field
 
-.field private static final zzo:I
+.field public static final zza:I
 
-.field private static final zzp:Lcom/google/android/gms/internal/icing/zzt;
+.field private static final zzf:Lcom/google/android/gms/internal/icing/zzs;
 
 
 # instance fields
-.field private final zzq:Ljava/lang/String;
+.field public final zzb:Ljava/lang/String;
 
-.field private final zzr:Lcom/google/android/gms/internal/icing/zzt;
+.field final zzc:Lcom/google/android/gms/internal/icing/zzs;
 
-.field public final zzs:I
+.field public final zzd:I
 
-.field private final zzt:[B
+.field public final zze:[B
 
 
 # direct methods
@@ -34,222 +35,173 @@
 
     const-string v0, "-1"
 
-    .line 36
+    .line 1
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v0
 
-    sput v0, Lcom/google/android/gms/internal/icing/zzk;->zzo:I
+    sput v0, Lcom/google/android/gms/internal/icing/zzk;->zza:I
 
-    .line 37
-    new-instance v0, Lcom/google/android/gms/internal/icing/zzn;
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzl;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/icing/zzn;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/internal/icing/zzl;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/icing/zzk;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    .line 38
-    new-instance v0, Lcom/google/android/gms/internal/icing/zzs;
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzr;
 
     const-string v1, "SsbContext"
 
-    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/icing/zzs;-><init>(Ljava/lang/String;)V
+    .line 2
+    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/icing/zzr;-><init>(Ljava/lang/String;)V
 
     const/4 v1, 0x1
 
-    .line 39
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/icing/zzs;->zzb(Z)Lcom/google/android/gms/internal/icing/zzs;
-
-    move-result-object v0
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/icing/zzr;->zzb(Z)Lcom/google/android/gms/internal/icing/zzr;
 
     const-string v1, "blob"
 
-    .line 40
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/icing/zzs;->zzc(Ljava/lang/String;)Lcom/google/android/gms/internal/icing/zzs;
+    .line 4
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/icing/zzr;->zza(Ljava/lang/String;)Lcom/google/android/gms/internal/icing/zzr;
+
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/icing/zzr;->zze()Lcom/google/android/gms/internal/icing/zzs;
 
     move-result-object v0
 
-    .line 41
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/icing/zzs;->zzc()Lcom/google/android/gms/internal/icing/zzt;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/gms/internal/icing/zzk;->zzp:Lcom/google/android/gms/internal/icing/zzt;
+    sput-object v0, Lcom/google/android/gms/internal/icing/zzk;->zzf:Lcom/google/android/gms/internal/icing/zzs;
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzt;)V
-    .locals 2
-
-    .line 20
-    sget v0, Lcom/google/android/gms/internal/icing/zzk;->zzo:I
-
-    const/4 v1, 0x0
-
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/google/android/gms/internal/icing/zzk;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzt;I[B)V
-
-    return-void
-.end method
-
-.method constructor <init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzt;I[B)V
-    .locals 4
+.method constructor <init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzs;I[B)V
+    .locals 5
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    .line 2
-    sget v0, Lcom/google/android/gms/internal/icing/zzk;->zzo:I
+    sget v0, Lcom/google/android/gms/internal/icing/zzk;->zza:I
+
+    const/4 v1, 0x1
 
     if-eq p3, v0, :cond_1
 
-    .line 3
+    .line 2
     invoke-static {p3}, Lcom/google/android/gms/internal/icing/zzq;->zza(I)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    if-eqz v0, :cond_0
+    if-eqz v2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
+    const/4 v1, 0x0
 
     :cond_1
     :goto_0
-    const/4 v0, 0x1
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    :goto_1
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/16 v3, 0x20
 
-    const/16 v2, 0x20
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    const-string v4, "Invalid section type "
 
-    const-string v3, "Invalid section type "
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    .line 3
+    invoke-static {v1, v2}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzb:Ljava/lang/String;
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/icing/zzk;->zzc:Lcom/google/android/gms/internal/icing/zzs;
+
+    iput p3, p0, Lcom/google/android/gms/internal/icing/zzk;->zzd:I
+
+    iput-object p4, p0, Lcom/google/android/gms/internal/icing/zzk;->zze:[B
+
+    const/4 p2, 0x0
+
+    if-eq p3, v0, :cond_2
 
     .line 4
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/Object;)V
-
-    .line 5
-    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzq:Ljava/lang/String;
-
-    .line 6
-    iput-object p2, p0, Lcom/google/android/gms/internal/icing/zzk;->zzr:Lcom/google/android/gms/internal/icing/zzt;
-
-    .line 7
-    iput p3, p0, Lcom/google/android/gms/internal/icing/zzk;->zzs:I
-
-    .line 8
-    iput-object p4, p0, Lcom/google/android/gms/internal/icing/zzk;->zzt:[B
-
-    .line 10
-    sget p1, Lcom/google/android/gms/internal/icing/zzk;->zzo:I
-
-    if-eq p3, p1, :cond_2
-
-    .line 11
     invoke-static {p3}, Lcom/google/android/gms/internal/icing/zzq;->zza(I)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    if-nez p1, :cond_2
+    if-nez v0, :cond_2
 
-    .line 12
-    iget p1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzs:I
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    .line 5
+    invoke-direct {p1, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-direct {p2, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    goto :goto_1
 
-    goto :goto_2
-
-    .line 13
     :cond_2
-    iget-object p1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzq:Ljava/lang/String;
-
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzt:[B
+    if-eqz p4, :cond_3
 
-    if-eqz p1, :cond_3
-
-    const-string p1, "Both content and blobContent set"
-
-    goto :goto_2
+    const-string p2, "Both content and blobContent set"
 
     :cond_3
-    const/4 p1, 0x0
-
-    :goto_2
-    if-nez p1, :cond_4
+    :goto_1
+    if-nez p2, :cond_4
 
     return-void
 
-    .line 18
     :cond_4
-    new-instance p2, Ljava/lang/IllegalArgumentException;
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    .line 6
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    throw p2
+    throw p1
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzt;Ljava/lang/String;)V
-    .locals 1
-
-    .line 22
-    invoke-static {p3}, Lcom/google/android/gms/internal/icing/zzq;->zzb(Ljava/lang/String;)I
-
-    move-result p3
-
-    const/4 v0, 0x0
-
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/gms/internal/icing/zzk;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzt;I[B)V
-
-    return-void
-.end method
-
-.method public constructor <init>([BLcom/google/android/gms/internal/icing/zzt;)V
+.method public constructor <init>([BLcom/google/android/gms/internal/icing/zzs;)V
     .locals 2
 
-    .line 24
-    sget v0, Lcom/google/android/gms/internal/icing/zzk;->zzo:I
+    sget v0, Lcom/google/android/gms/internal/icing/zzk;->zza:I
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, v1, p2, v0, p1}, Lcom/google/android/gms/internal/icing/zzk;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzt;I[B)V
+    .line 7
+    invoke-direct {p0, v1, p2, v0, p1}, Lcom/google/android/gms/internal/icing/zzk;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzs;I[B)V
 
     return-void
 .end method
 
 .method public static zza([B)Lcom/google/android/gms/internal/icing/zzk;
-    .locals 2
+    .locals 4
 
-    .line 26
     new-instance v0, Lcom/google/android/gms/internal/icing/zzk;
 
-    sget-object v1, Lcom/google/android/gms/internal/icing/zzk;->zzp:Lcom/google/android/gms/internal/icing/zzt;
+    sget-object v1, Lcom/google/android/gms/internal/icing/zzk;->zzf:Lcom/google/android/gms/internal/icing/zzs;
 
-    invoke-direct {v0, p0, v1}, Lcom/google/android/gms/internal/icing/zzk;-><init>([BLcom/google/android/gms/internal/icing/zzt;)V
+    sget v2, Lcom/google/android/gms/internal/icing/zzk;->zza:I
+
+    const/4 v3, 0x0
+
+    .line 1
+    invoke-direct {v0, v3, v1, v2, p0}, Lcom/google/android/gms/internal/icing/zzk;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/icing/zzs;I[B)V
 
     return-object v0
 .end method
@@ -259,42 +211,42 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
-    .line 28
+    .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
 
     move-result v0
 
-    .line 29
-    iget-object v1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzb:Ljava/lang/String;
 
     const/4 v2, 0x1
 
     const/4 v3, 0x0
 
+    .line 2
     invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeString(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
-    .line 30
-    iget-object v1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzr:Lcom/google/android/gms/internal/icing/zzt;
+    iget-object v1, p0, Lcom/google/android/gms/internal/icing/zzk;->zzc:Lcom/google/android/gms/internal/icing/zzs;
 
     const/4 v2, 0x3
 
+    .line 3
     invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
-    .line 31
-    iget p2, p0, Lcom/google/android/gms/internal/icing/zzk;->zzs:I
+    iget p2, p0, Lcom/google/android/gms/internal/icing/zzk;->zzd:I
 
     const/4 v1, 0x4
 
+    .line 4
     invoke-static {p1, v1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
 
-    .line 32
-    iget-object p2, p0, Lcom/google/android/gms/internal/icing/zzk;->zzt:[B
+    iget-object p2, p0, Lcom/google/android/gms/internal/icing/zzk;->zze:[B
 
     const/4 v1, 0x5
 
+    .line 5
     invoke-static {p1, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeByteArray(Landroid/os/Parcel;I[BZ)V
 
-    .line 33
+    .line 6
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
 
     return-void

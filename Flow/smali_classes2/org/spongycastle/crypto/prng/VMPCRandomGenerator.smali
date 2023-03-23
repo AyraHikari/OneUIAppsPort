@@ -420,85 +420,63 @@
 
     iget-byte v2, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->s:B
 
-    iget-object v3, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
+    iget-byte v3, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->n:B
 
-    iget-byte v4, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->n:B
+    and-int/lit16 v4, v3, 0xff
 
-    and-int/lit16 v4, v4, 0xff
+    aget-byte v4, v1, v4
 
-    aget-byte v3, v3, v4
-
-    add-int/2addr v2, v3
+    add-int/2addr v2, v4
 
     and-int/lit16 v2, v2, 0xff
 
-    aget-byte v1, v1, v2
+    aget-byte v2, v1, v2
 
-    iput-byte v1, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->s:B
+    iput-byte v2, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->s:B
+
+    and-int/lit16 v4, v2, 0xff
 
     .line 119
-    iget-object v2, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
-
-    iget-object v3, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
-
-    iget-object v4, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
-
-    and-int/lit16 v5, v1, 0xff
-
-    aget-byte v4, v4, v5
+    aget-byte v4, v1, v4
 
     and-int/lit16 v4, v4, 0xff
 
-    aget-byte v3, v3, v4
+    aget-byte v4, v1, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    and-int/lit16 v4, v4, 0xff
+
+    aget-byte v4, v1, v4
+
+    aput-byte v4, p1, p2
+
+    and-int/lit16 v4, v3, 0xff
+
+    .line 120
+    aget-byte v4, v1, v4
+
+    and-int/lit16 v5, v3, 0xff
+
+    and-int/lit16 v6, v2, 0xff
+
+    .line 121
+    aget-byte v6, v1, v6
+
+    aput-byte v6, v1, v5
+
+    and-int/lit16 v2, v2, 0xff
+
+    .line 122
+    aput-byte v4, v1, v2
 
     add-int/lit8 v3, v3, 0x1
 
-    and-int/lit16 v3, v3, 0xff
-
-    aget-byte v2, v2, v3
-
-    aput-byte v2, p1, p2
-
-    .line 120
-    iget-object v2, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
-
-    iget-byte v3, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->n:B
-
-    and-int/lit16 v3, v3, 0xff
-
-    aget-byte v2, v2, v3
-
-    .line 121
-    iget-object v3, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
-
-    iget-byte v4, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->n:B
-
-    and-int/lit16 v4, v4, 0xff
-
-    iget-object v5, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
-
-    and-int/lit16 v6, v1, 0xff
-
-    aget-byte v5, v5, v6
-
-    aput-byte v5, v3, v4
-
-    .line 122
-    iget-object v3, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->P:[B
-
-    and-int/lit16 v1, v1, 0xff
-
-    aput-byte v2, v3, v1
-
-    .line 123
-    iget-byte v1, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->n:B
-
-    add-int/lit8 v1, v1, 0x1
-
-    and-int/lit16 v1, v1, 0xff
+    and-int/lit16 v1, v3, 0xff
 
     int-to-byte v1, v1
 
+    .line 123
     iput-byte v1, p0, Lorg/spongycastle/crypto/prng/VMPCRandomGenerator;->n:B
 
     add-int/lit8 p2, p2, 0x1

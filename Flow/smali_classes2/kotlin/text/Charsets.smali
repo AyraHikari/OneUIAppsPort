@@ -4,16 +4,7 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCharsets.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Charsets.kt\nkotlin/text/Charsets\n*L\n1#1,100:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0010\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0010\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u00020\u00048\u0006X\u0087\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u00020\u00048\u0006X\u0087\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u00020\u00048\u0006X\u0087\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0008\u001a\u00020\u00048\u0006X\u0087\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\t\u001a\u00020\u00048G\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u000bR\u0011\u0010\u000c\u001a\u00020\u00048G\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000bR\u0011\u0010\u000e\u001a\u00020\u00048G\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u000bR\u0010\u0010\u0010\u001a\u00020\u00048\u0006X\u0087\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0014"
     }
@@ -43,9 +34,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -75,7 +67,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 24
     new-instance v0, Lkotlin/text/Charsets;
 
     invoke-direct {v0}, Lkotlin/text/Charsets;-><init>()V
@@ -89,9 +80,9 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"UTF-8\")"
+    const-string v1, "forName(\"UTF-8\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
@@ -102,9 +93,9 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"UTF-16\")"
+    const-string v1, "forName(\"UTF-16\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_16:Ljava/nio/charset/Charset;
 
@@ -115,9 +106,9 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"UTF-16BE\")"
+    const-string v1, "forName(\"UTF-16BE\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_16BE:Ljava/nio/charset/Charset;
 
@@ -128,9 +119,9 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"UTF-16LE\")"
+    const-string v1, "forName(\"UTF-16LE\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_16LE:Ljava/nio/charset/Charset;
 
@@ -141,9 +132,9 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"US-ASCII\")"
+    const-string v1, "forName(\"US-ASCII\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lkotlin/text/Charsets;->US_ASCII:Ljava/nio/charset/Charset;
 
@@ -154,9 +145,9 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"ISO-8859-1\")"
+    const-string v1, "forName(\"ISO-8859-1\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lkotlin/text/Charsets;->ISO_8859_1:Ljava/nio/charset/Charset;
 
@@ -180,11 +171,8 @@
     .line 68
     sget-object v0, Lkotlin/text/Charsets;->utf_32:Ljava/nio/charset/Charset;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    goto :goto_0
-
-    :cond_0
     move-object v0, p0
 
     check-cast v0, Lkotlin/text/Charsets;
@@ -196,14 +184,14 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"UTF-32\")"
+    const-string v1, "forName(\"UTF-32\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 70
     sput-object v0, Lkotlin/text/Charsets;->utf_32:Ljava/nio/charset/Charset;
 
-    :goto_0
+    :cond_0
     return-object v0
 .end method
 
@@ -213,11 +201,8 @@
     .line 92
     sget-object v0, Lkotlin/text/Charsets;->utf_32be:Ljava/nio/charset/Charset;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    goto :goto_0
-
-    :cond_0
     move-object v0, p0
 
     check-cast v0, Lkotlin/text/Charsets;
@@ -229,14 +214,14 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"UTF-32BE\")"
+    const-string v1, "forName(\"UTF-32BE\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 94
     sput-object v0, Lkotlin/text/Charsets;->utf_32be:Ljava/nio/charset/Charset;
 
-    :goto_0
+    :cond_0
     return-object v0
 .end method
 
@@ -246,11 +231,8 @@
     .line 80
     sget-object v0, Lkotlin/text/Charsets;->utf_32le:Ljava/nio/charset/Charset;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    goto :goto_0
-
-    :cond_0
     move-object v0, p0
 
     check-cast v0, Lkotlin/text/Charsets;
@@ -262,13 +244,13 @@
 
     move-result-object v0
 
-    const-string v1, "Charset.forName(\"UTF-32LE\")"
+    const-string v1, "forName(\"UTF-32LE\")"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 82
     sput-object v0, Lkotlin/text/Charsets;->utf_32le:Ljava/nio/charset/Charset;
 
-    :goto_0
+    :cond_0
     return-object v0
 .end method

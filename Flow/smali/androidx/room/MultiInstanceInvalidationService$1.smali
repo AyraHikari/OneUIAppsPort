@@ -29,6 +29,14 @@
 # direct methods
 .method constructor <init>(Landroidx/room/MultiInstanceInvalidationService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 52
     iput-object p1, p0, Landroidx/room/MultiInstanceInvalidationService$1;->this$0:Landroidx/room/MultiInstanceInvalidationService;
@@ -42,6 +50,16 @@
 # virtual methods
 .method public bridge synthetic onCallbackDied(Landroid/os/IInterface;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "callback",
+            "cookie"
+        }
+    .end annotation
 
     .line 52
     check-cast p1, Landroidx/room/IMultiInstanceInvalidationCallback;
@@ -53,6 +71,16 @@
 
 .method public onCallbackDied(Landroidx/room/IMultiInstanceInvalidationCallback;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "callback",
+            "cookie"
+        }
+    .end annotation
 
     .line 56
     iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService$1;->this$0:Landroidx/room/MultiInstanceInvalidationService;

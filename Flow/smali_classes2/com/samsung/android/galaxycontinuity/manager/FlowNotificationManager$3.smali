@@ -33,8 +33,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 538
+    .line 540
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager$3;->this$0:Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,6 +54,16 @@
 # virtual methods
 .method public compare(Landroid/service/notification/StatusBarNotification;Landroid/service/notification/StatusBarNotification;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -55,7 +73,7 @@
 
     goto :goto_0
 
-    .line 542
+    .line 544
     :cond_0
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
@@ -75,7 +93,7 @@
 
     return v0
 
-    .line 544
+    .line 546
     :cond_1
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
@@ -109,8 +127,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
-    .line 538
+    .line 540
     check-cast p1, Landroid/service/notification/StatusBarNotification;
 
     check-cast p2, Landroid/service/notification/StatusBarNotification;

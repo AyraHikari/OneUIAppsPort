@@ -46,28 +46,26 @@
     sput-object v0, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;->None:Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
 
     .line 1060
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
+    new-instance v1, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
 
-    const-string v1, "NonScalingStroke"
+    const-string v3, "NonScalingStroke"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;->NonScalingStroke:Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
+    sput-object v1, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;->NonScalingStroke:Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
+    new-array v3, v3, [Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 1057
-    sget-object v4, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;->None:Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
+    sput-object v3, Lcom/caverock/androidsvg/SVG$Style$VectorEffect;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Style$VectorEffect;
 
     return-void
 .end method

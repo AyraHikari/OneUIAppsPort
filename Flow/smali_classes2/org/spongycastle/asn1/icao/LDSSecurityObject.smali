@@ -259,7 +259,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "wrong size in DataGroupHashValues : not in (2..16)"
+    const-string/jumbo v0, "wrong size in DataGroupHashValues : not in (2..16)"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

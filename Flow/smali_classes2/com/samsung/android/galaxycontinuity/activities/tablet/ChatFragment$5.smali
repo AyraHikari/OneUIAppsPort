@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 211
+    .line 213
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
-    .line 223
+    .line 225
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$500(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/EditText;
@@ -57,24 +73,24 @@
 
     move-result-object p1
 
-    .line 224
+    .line 226
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result p1
 
     if-gtz p1, :cond_0
 
-    .line 226
+    .line 228
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     iget-boolean v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->isSendBtnEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 227
+    .line 229
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/Button;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/ImageButton;
 
     move-result-object p1
 
@@ -82,31 +98,35 @@
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->sendBtn_inactive:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 228
+    .line 230
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/Button;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/ImageButton;
 
     move-result-object p1
 
-    const v0, -0x66a67301
+    const v0, 0x7f06002a
 
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setTextColor(I)V
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getColor(I)I
 
-    .line 229
+    move-result v0
+
+    invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setColorFilter(I)V
+
+    .line 231
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/Button;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/ImageButton;
 
     move-result-object p1
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setClickable(Z)V
+    invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setClickable(Z)V
 
-    .line 230
+    .line 232
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     iput-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->isSendBtnEnabled:Z
@@ -116,17 +136,17 @@
     :cond_0
     if-lez p1, :cond_1
 
-    .line 232
+    .line 234
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     iget-boolean p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->isSendBtnEnabled:Z
 
     if-nez p1, :cond_1
 
-    .line 233
+    .line 235
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/Button;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/ImageButton;
 
     move-result-object p1
 
@@ -134,31 +154,35 @@
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->sendBtn_active:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 234
+    .line 236
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/Button;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/ImageButton;
 
     move-result-object p1
 
-    const v0, -0xa67301
+    const v0, 0x7f060029
 
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setTextColor(I)V
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getColor(I)I
 
-    .line 235
+    move-result v0
+
+    invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setColorFilter(I)V
+
+    .line 237
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/Button;
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$600(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Landroid/widget/ImageButton;
 
     move-result-object p1
 
     const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setClickable(Z)V
+    invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setClickable(Z)V
 
-    .line 236
+    .line 238
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     iput-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->isSendBtnEnabled:Z
@@ -170,12 +194,40 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "s",
+            "start",
+            "count",
+            "after"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "s",
+            "start",
+            "before",
+            "count"
+        }
+    .end annotation
 
     return-void
 .end method

@@ -99,7 +99,10 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "argument to getParameterSpec must not be null"
+
+    .line 28
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 31
     invoke-virtual {p0, p1}, Lorg/spongycastle/jcajce/provider/asymmetric/dsa/AlgorithmParametersSpi;->localEngineGetParameterSpec(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
@@ -107,16 +110,6 @@
     move-result-object p1
 
     return-object p1
-
-    .line 28
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "argument to getParameterSpec must not be null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method protected engineInit(Ljava/security/spec/AlgorithmParameterSpec;)V
@@ -248,9 +241,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -326,7 +323,7 @@
     :cond_0
     new-instance p1, Ljava/security/spec/InvalidParameterSpecException;
 
-    const-string v0, "unknown parameter spec passed to DSA parameters object."
+    const-string/jumbo v0, "unknown parameter spec passed to DSA parameters object."
 
     invoke-direct {p1, v0}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
 

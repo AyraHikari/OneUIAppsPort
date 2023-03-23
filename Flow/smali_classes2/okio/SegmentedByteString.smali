@@ -66,7 +66,7 @@
     :cond_0
     new-instance p1, Ljava/lang/AssertionError;
 
-    const-string p2, "s.limit == s.pos"
+    const-string/jumbo p2, "s.limit == s.pos"
 
     invoke-direct {p1, p2}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 

@@ -28,8 +28,20 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$resultCode",
+            "val$errorCode"
+        }
+    .end annotation
 
-    .line 382
+    .line 384
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     iput p2, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$1;->val$resultCode:I
@@ -46,7 +58,7 @@
 .method public run()V
     .locals 4
 
-    .line 385
+    .line 387
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$100(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Ljava/util/Hashtable;
@@ -71,14 +83,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 387
+    .line 389
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiClient;->isConnected()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 388
+    .line 390
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$1;->val$resultCode:I
 
     const-string v2, "PINConfirm"
@@ -93,7 +105,7 @@
 
     invoke-direct {v2, v3}, Lcom/samsung/android/galaxycontinuity/auth/data/ConfirmPINBody;-><init>(I)V
 
-    .line 389
+    .line 391
     invoke-virtual {v2}, Lcom/samsung/android/galaxycontinuity/auth/data/ConfirmPINBody;->toJson()Ljava/lang/String;
 
     move-result-object v2
@@ -104,7 +116,7 @@
 
     const/16 v2, 0xc
 
-    .line 390
+    .line 392
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -113,12 +125,12 @@
 
     move-result-object v1
 
-    .line 391
+    .line 393
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload$Builder;->build()Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;
 
     move-result-object v1
 
-    .line 393
+    .line 395
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/auth/data/AuthPayload;->toJson()Ljava/lang/String;
@@ -131,7 +143,7 @@
 
     move-result-object v1
 
-    .line 395
+    .line 397
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/net/AuthNotiClient;->sendMessage([B)V
 
     :cond_0

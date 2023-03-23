@@ -26,7 +26,7 @@
     if-nez v0, :cond_1
 
     .line 10
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1d
 

@@ -11,8 +11,8 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 39
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 44
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1b
 
@@ -49,6 +49,21 @@
 .end method
 
 .method public abstract setAutoSizeTextTypeUniformWithConfiguration(IIII)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "autoSizeMinTextSize",
+            "autoSizeMaxTextSize",
+            "autoSizeStepGranularity",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -57,6 +72,17 @@
 .end method
 
 .method public abstract setAutoSizeTextTypeUniformWithPresetSizes([II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "presetSizes",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -65,4 +91,12 @@
 .end method
 
 .method public abstract setAutoSizeTextTypeWithDefaults(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "autoSizeTextType"
+        }
+    .end annotation
 .end method

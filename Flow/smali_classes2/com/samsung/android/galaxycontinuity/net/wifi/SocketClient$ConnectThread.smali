@@ -31,6 +31,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient;Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "hostname",
+            "port"
+        }
+    .end annotation
 
     .line 67
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient$ConnectThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient;
@@ -99,8 +111,6 @@
     if-eqz v0, :cond_0
 
     .line 109
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient$ConnectThread;->mSocket:Ljava/net/Socket;
-
     invoke-virtual {v0}, Ljava/net/Socket;->close()V
 
     const/4 v0, 0x0
@@ -136,13 +146,19 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v2, " try connect to "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient$ConnectThread;->mPort:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -203,13 +219,17 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "socket connection failed : "
+    const-string/jumbo v3, "socket connection failed : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     iget v3, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketClient$ConnectThread;->mPort:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

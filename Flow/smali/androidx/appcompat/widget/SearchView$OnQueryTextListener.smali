@@ -16,7 +16,23 @@
 
 # virtual methods
 .method public abstract onQueryTextChange(Ljava/lang/String;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newText"
+        }
+    .end annotation
 .end method
 
 .method public abstract onQueryTextSubmit(Ljava/lang/String;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "query"
+        }
+    .end annotation
 .end method

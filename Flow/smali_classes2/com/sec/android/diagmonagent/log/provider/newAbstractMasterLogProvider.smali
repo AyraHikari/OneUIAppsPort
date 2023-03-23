@@ -43,6 +43,15 @@
 
 .method private makeAuthorityListBundle(Ljava/util/List;)Landroid/os/Bundle;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "authorityList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -87,6 +96,16 @@
 
 .method private makeBundle(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 283
     new-instance v0, Landroid/os/Bundle;
@@ -101,6 +120,16 @@
 
 .method private makeBundle(Ljava/lang/String;Z)Landroid/os/Bundle;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 277
     new-instance v0, Landroid/os/Bundle;
@@ -117,6 +146,18 @@
 # virtual methods
 .method public call(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "method",
+            "arg",
+            "extras"
+        }
+    .end annotation
 
     .line 344
     invoke-virtual {p0}, Lcom/sec/android/diagmonagent/log/provider/newAbstractMasterLogProvider;->enforceSelfOrSystem()V
@@ -190,7 +231,7 @@
     .line 239
     sget-object v0, Lcom/sec/android/diagmonagent/log/provider/newAbstractMasterLogProvider;->data:Landroid/os/Bundle;
 
-    const-string v1, "tryRegistering"
+    const-string/jumbo v1, "tryRegistering"
 
     const/4 v2, 0x1
 
@@ -235,7 +276,7 @@
 
     move-result-object v1
 
-    const-string v3, "serviceName"
+    const-string/jumbo v3, "serviceName"
 
     invoke-direct {p0, v3, v1}, Lcom/sec/android/diagmonagent/log/provider/newAbstractMasterLogProvider;->makeBundle(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
@@ -276,7 +317,7 @@
 
     move-result v1
 
-    const-string v3, "uploadWifionly"
+    const-string/jumbo v3, "uploadWifionly"
 
     invoke-direct {p0, v3, v1}, Lcom/sec/android/diagmonagent/log/provider/newAbstractMasterLogProvider;->makeBundle(Ljava/lang/String;Z)Landroid/os/Bundle;
 
@@ -291,7 +332,7 @@
 
     move-result v1
 
-    const-string v3, "supportPush"
+    const-string/jumbo v3, "supportPush"
 
     invoke-direct {p0, v3, v1}, Lcom/sec/android/diagmonagent/log/provider/newAbstractMasterLogProvider;->makeBundle(Ljava/lang/String;Z)Landroid/os/Bundle;
 
@@ -349,6 +390,14 @@
 
 .method public setConfiguration(Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "config"
+        }
+    .end annotation
 
     .line 262
     sget-object v0, Lcom/sec/android/diagmonagent/log/provider/newAbstractMasterLogProvider;->data:Landroid/os/Bundle;
@@ -372,7 +421,7 @@
 
     move-result-object v1
 
-    const-string v2, "serviceName"
+    const-string/jumbo v2, "serviceName"
 
     invoke-direct {p0, v2, v1}, Lcom/sec/android/diagmonagent/log/provider/newAbstractMasterLogProvider;->makeBundle(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 

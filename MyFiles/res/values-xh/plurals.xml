@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">"Can't share folders. Folders empty."</item>
+        <item quantity="one">"Can't share folder. Folder empty."</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d izinto</item>
+        <item quantity="one">%d iayithem</item>
+    </plurals>
+</resources>

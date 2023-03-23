@@ -773,9 +773,6 @@
 
     if-eqz v5, :cond_3
 
-    .line 159
-    iget-object v5, p0, Lorg/spongycastle/crypto/tls/DTLSReliableHandshake;->previousInboundFlight:Ljava/util/Hashtable;
-
     .line 160
     invoke-static {v13}, Lorg/spongycastle/util/Integers;->valueOf(I)Ljava/lang/Integer;
 

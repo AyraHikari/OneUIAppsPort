@@ -29,6 +29,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/data/DragContentDragContentDao_Impl;Landroidx/room/RoomDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "database"
+        }
+    .end annotation
 
     .line 64
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/data/DragContentDragContentDao_Impl$2;->this$0:Lcom/samsung/android/galaxycontinuity/data/DragContentDragContentDao_Impl;
@@ -42,6 +52,16 @@
 # virtual methods
 .method public bind(Landroidx/sqlite/db/SupportSQLiteStatement;Lcom/samsung/android/galaxycontinuity/data/DragContent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stmt",
+            "value"
+        }
+    .end annotation
 
     .line 72
     iget p2, p2, Lcom/samsung/android/galaxycontinuity/data/DragContent;->uid:I
@@ -57,6 +77,16 @@
 
 .method public bridge synthetic bind(Landroidx/sqlite/db/SupportSQLiteStatement;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "stmt",
+            "value"
+        }
+    .end annotation
 
     .line 64
     check-cast p2, Lcom/samsung/android/galaxycontinuity/data/DragContent;

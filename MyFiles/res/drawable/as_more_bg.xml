@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/sa_grid_more_text_bg" />
+            <corners android:radius="@dimen/recent_grid_more_text_bg_radius" />
+            <stroke android:width="@dimen/recent_grid_more_text_bg_stroke" android:color="@color/sa_grid_more_text" />
+        </shape>
+    </item>
+</layer-list>

@@ -131,12 +131,12 @@
 .method public setValue(Lcom/sec/android/fido/uaf/message/tag/uafv1tlv/SignedData;Lcom/sec/android/fido/uaf/message/tag/Signature;)Lcom/sec/android/fido/uaf/message/tag/uafv1tlv/AuthAssertion;
     .locals 1
 
-    const-string v0, "signedData is NULL"
+    const-string/jumbo v0, "signedData is NULL"
 
     .line 52
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "signature is NULL"
+    const-string/jumbo v0, "signature is NULL"
 
     .line 53
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

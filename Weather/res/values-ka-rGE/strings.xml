@@ -33,6 +33,7 @@
     <string name="air_quality">ჰაერის ხარისხი</string>
     <string name="air_quality_next_tts">ჰარის ხარისხის შემდგომი ყოველდღიური პროგნოზები</string>
     <string name="air_quality_previous_tts">ჰარის ხარისხის ადრინდელი ყოველდღიური პროგნოზები</string>
+    <string name="alert_title">გაფრთხილება ცუდი ამინდის შესახებ</string>
     <string name="all_added_cities">ყველა დამატებული ქალაქი</string>
     <string name="allow">ნებართვის მიცემა</string>
     <string name="allow_permission_in_settings">ამ ფუნქციის გამოსაყენებლად, პარამეტრებში უნდა მისცეთ ნებართვა.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">მოქმედება გაუთვალისწინებელია.</string>
     <string name="apply_daylight_saving_time">გამოვიყენო ზაფხულის დროზე გადასვლა?</string>
     <string name="as_possible_after_verification">მოხსენება გაიგზავნა. ქალაქის სახელი რაც შეიძლება მალე შეიცვლება დამოწმების შემდეგ.</string>
+    <string name="auto_refresh_on_screen_description">ამინდის ინფორმაცია ავტომატურად განაახლეთ საათში ერთხელ. როდესაც ეს ჩართულია, ხელით განახლება შეუძლებელია.</string>
+    <string name="auto_refresh_on_the_go">ავტომატური განახლება გზადაგზა</string>
+    <string name="auto_refresh_on_the_go_advanced">გაუმჯობესებული</string>
+    <string name="auto_refresh_on_the_go_description">უფრო ხშირად მიიღეთ ამინდის განახლებული ინფორმაცია, როცა მართავთ ავტომობილს, მოტოციკლს, დარბიხართ ან დადიხართ. როდესაც ეს ჩართულია, ხელით განახლება შეუძლებელია.</string>
+    <string name="auto_refresh_on_the_go_simple_description">უფრო ხშირად მიიღეთ ამინდის განახლებული ინფორმაცია, როცა მართავთ ავტომობილს, მოტოციკლს, დარბიხართ ან დადიხართ.</string>
     <string name="btn_report">მხსნბ.</string>
     <string name="button_finish">დასრულება</string>
     <string name="button_tts">ღილაკი</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">დამატებითი ინფორმაციისთვის, შეეხეთ ორჯერ.</string>
     <string name="china">ჩინეთი</string>
     <string name="cities_button">ქალაქები</string>
+    <string name="city_added">ქალაქი დაემატა.</string>
     <string name="city_list_text">ქალაქები</string>
     <string name="clear">უღრუბლო</string>
     <string name="clear_then_cloudy">მოწმენდილ ამინდს შეცვლის ღრუბლიანი</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">ელემენტი გადასულია პოზიცია %d-ში.</string>
     <string name="dragndroplist_drag_start">დაწყებულია ელემენტის გადატანა პოზიცია %d-ში.</string>
     <string name="dragndroplist_item_cannot_be_dragged">პოზიცია %d-ში მყოფი ელემენტის გადატანა შეუძლებელია.</string>
+    <string name="drawer_tips">%s მინიშნება</string>
     <string name="drawer_tips_message">შეეხეთ აქ, რომ დაამატოთ, წაშალოთ და სხვანაირად დაალაგოთ ლოკაციები. ასევე შეგიძლიათ დაამატოთ რამდენიმე ვიჯეტი, რომ სხვადასხვა ლოკაცია გამოჩნდეს საწყის ეკრანზე.</string>
     <string name="drawer_tips_message_1">ამ მენიუს ქვემოთ შეეხეთ „ლოკაციების მართვას“, რომ დაამატოთ, წაშალოთ და ხელახლა დაალაგოთ ლოკაციები.</string>
     <string name="drawer_tips_message_2">საწყის ეკრანზე შეგიძლიათ დაამატოთ ერთზე მეტი ვიჯეტი, რომ ერთდროულად გამოჩნდეს სხვადასხვა ლოკაცია.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">ამინდის პროგნოზის ვიდეო</string>
     <string name="format_km_per_hour">%s კმ/სთ</string>
     <string name="format_m_per_hour">%s მ/სთ</string>
+    <string name="fri">პარ.</string>
     <string name="general">ზოგადი</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">მიიღეთ პერსონალიზირებული მასალა, თქვენი ტელეფონის გამოყენების მიხედვით.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">მიიღეთ პერსონალიზირებული მასალა, თქვენი პლანშეტის გამოყენების მიხედვით.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">ამინდის აპლიკაციიდან მიიღეთ ამინდის ინფორმაცია, თქვენი მიმდინარე ლოკაციის დართვით</string>
     <string name="go_to_website">ვებსაიტზე გადასვლა</string>
     <string name="goto_apps">გვაქვს ახალი განახლება. დაინსტალირდეს ახლა?</string>
     <string name="goto_apps_later">მოგვიანებით</string>
     <string name="goto_apps_now">ახლა</string>
     <string name="goto_apps_update_title">ახალი მასალის სიგნალები</string>
     <string name="header_tts">თავსართი</string>
+    <string name="heavy">მკაცრი</string>
     <string name="heavy_rain">ძლიერი წვიმა</string>
     <string name="heavy_rain_followed_by_intense_heat">ძლიერ წვიმას შეცვლის ძლიერი სიცხე</string>
     <string name="heavy_rain_followed_by_light_rain">ძლიერ წვიმას შეცვლის ძლიერი სიცხე</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">ხილვადობა</string>
     <string name="life_index_wind">ქარი</string>
     <string name="life_index_wind_force">ქარის სიჩქარე</string>
+    <string name="light">სასიამოვნო</string>
     <string name="light_rain_followed_by_heavy_rain">ჟუჟუნა წვიმას შეცვლის ძლიერი წვიმა</string>
     <string name="light_rain_with_some_heavy_rain">ჟუჟუნა და ძლიერი წვიმა მონაცვლეობით</string>
     <string name="link_tts">ბმული</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">შედეგები არ მოიძებნა.</string>
     <string name="message_service_not_available">მომსახურება არ არის ახლა.</string>
     <string name="minus_tts">მინუსი</string>
+    <string name="mon">ორშ.</string>
     <string name="more">სხვა</string>
     <string name="more_cuntact_us">დაგვიკავშირდით</string>
     <string name="more_information">სხვა</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">შეეხეთ აქ, რომ შეცვალოთ ნაგულისხმევი ლოკაცია ამინდისთვის და მართოთ ყველა თქვენი ლოკაცია.</string>
     <string name="new_version_available">გამოვიდა %s-ის ახალი ვერსია.</string>
     <string name="new_version_is_available">გამოვიდა ახალი ვერსია.</string>
+    <string name="news_menu_show_news">სიახლეების ჩვენება</string>
+    <string name="news_opt_in_banner_title_text">ამინდის ვიჯეტში გამოაჩინეთ ახალი ამბები, რომ არ გამოტოვოთ მიმდინარე სიახლეები.</string>
+    <string name="news_opt_in_popup_desc_text">ამინდის ვიჯეტში გამოაჩინეთ %s-ის უახლესი რუბრიკები, რომ არ გამოგრჩეთ მსოფლიოს ამბები.</string>
+    <string name="news_opt_in_popup_title_text">სიახლეები და ახალი ამბები ნახეთ ერთ ვიჯეტში</string>
+    <string name="news_request_agree_text">შეეხეთ, რომ ახალი ამბები მიიღოთ წყაროდან: %s</string>
+    <string name="news_widget_bubble_text">მიიღეთ სიახლეები ამინდის ინფორმაციით.</string>
+    <string name="news_widget_dummy_title">დღევანდელი მთავარი ამბავი</string>
+    <string name="news_widget_new_dummy_title">5 რამ, რაც უნდა იცოდეთ ამ დილით</string>
+    <string name="news_widget_oobe_text">შეეხე სიახლეების დასამატებლად.</string>
     <string name="next">შემდეგი ქალაქი</string>
+    <string name="next_btn">შემდეგი</string>
     <string name="next_city">შემდეგი ქალაქის ამინდის სანახავად, შეეხეთ ორჯერ.</string>
     <string name="night_tts">ღამე</string>
     <string name="no_application_available">პროგრამები არ არის.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">ამინდის ინფორმაცია არ არის</string>
     <string name="not_in_use">არ არის გამოყენებული</string>
     <string name="not_now">ახლა არა</string>
+    <string name="not_now_btn">ახლა არა</string>
     <string name="not_selected">არ არის არჩეული</string>
     <string name="nothing_selected">არაფერია არჩეული.</string>
     <string name="noti">შენიშვნა</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">ლოკაციის უსწრაფესი და უზუსტესი დადგენისთვის, შეეხეთ „პარამეტრებს“, შემდეგ კი ლოკაციის მეთოდისთვის აირჩიეთ GPS, Wi-Fi და მობილური ქსელები.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">ლოკაციის უსწრაფესი და უზუსტესი დადგენისთვის, შეეხეთ „პარამეტრებს“, შემდეგ კი ლოკაციის მეთოდისთვის აირჩიეთ GPS და Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">ადგილობრივი ამინდის ინფორმაციის სანახავად ჩართეთ ლოკაციის პარამეტრები და დარწმუნდით, რეჟიმი დაყენებულია მაღალი სიზუსტით.</string>
+    <string name="notification_alert_channel_name">გაფრთხილება ცუდი ამინდის შესახებ</string>
     <string name="notification_apps_update_channel_name">განახლების შეტყობინებები</string>
     <string name="notification_auto_refresh_channel_name">ამინდის ავტომატური განახლება</string>
     <string name="notification_dex_channel_name">ამინდის პროგნოზი Samsung DeX-ში</string>
@@ -438,6 +463,7 @@
     <string name="open_app">აპის გახსნა</string>
     <string name="open_source_licences">ღია წყაროს ლიცენზიები</string>
     <string name="other_locations">სხვა ლოკაციები</string>
+    <string name="partly_sunny">ნაწილობრივ მზიანი</string>
     <string name="paused">დაპაუზდა</string>
     <string name="pd_km">%.1f კმ</string>
     <string name="pd_km_h">%dკმ/სთ</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">ნალექი: %d მმ</string>
     <string name="preview">%s-ს გადახედვა</string>
     <string name="previous">წინა ქალაქი</string>
+    <string name="previous_btn">წინა</string>
     <string name="previous_city">წინა ქალაქის ამინდის სანახავად, შეეხეთ ორჯერ.</string>
     <string name="privacy_policy">კონფიდენციალურობის დებულება</string>
     <string name="probability_of_rain_text">წვიმის ალბათობა</string>
     <string name="protect_your_content">მასალის დაცვა</string>
+    <string name="ps_in">%s–ში</string>
+    <string name="ps_mm">%s მმ</string>
     <string name="radar">რადარი და რუკები</string>
     <string name="rain">წვიმა</string>
     <string name="rain_followed_by_intense_heat">წვიმას შეცვლის ძლიერი სიცხე</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">ამინდის ინფორმაციის გასაახლებლად, შეეხეთ პარამეტრებს, გახსენით აპლიკაციის ინფორმაცია > ნებართვები, შემდეგ კი დართეთ ნებართვები და ისევ სცადეთ:</string>
     <string name="runtime_location_permission_title">ნებართვების მიცემა</string>
     <string name="runtime_oem_grant_permission_desc">აპი %s ფლობს შემდეგზე წვდომის ნებართვას:</string>
+    <string name="sat">შაბ.</string>
     <string name="save_button">შენახვა</string>
     <string name="search_most_searched_for">ყველაზე ხშირად მოძებნილია</string>
     <string name="search_tab_cities">ქალაქი</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">გამოვიდა ახალი მასალა</string>
     <string name="sesl_material_overflow_badge_text_n">ა</string>
     <string name="sesl_more_item_label">სხვა</string>
+    <string name="sesl_preferecne_badge_description">ახალი შეტყობინება</string>
     <string name="sesl_preferencecategory_added_title">თავსართი</string>
     <string name="sesl_search_hint">ძებნა</string>
     <string name="sesl_searchview_description_clear">საძიებო ველის გასუფთავება</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">შეამოწმეთ კავშირი ქსელთან და ისევ სცადეთ.</string>
     <string name="st_offline">უინტერნეტო</string>
     <string name="st_view_less">იხილეთ ნაკლები</string>
+    <string name="status_off">გამორთული</string>
+    <string name="status_on">ჩართული</string>
+    <string name="sun">კვ.</string>
     <string name="sunny">მზიანი</string>
     <string name="sunny_with_some_clouds">მზიანი მცირე მოღრუბლულობით</string>
     <string name="sunny_with_some_heavy_rain">მზიანი, ზოგჯერ ძლიერი წვიმა</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">ძველი მოწყობილობიდან ამინდის მონაცემთა აღსადგენად, შეეხეთ აქ.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">თქვენი ლოკაციის პოვნის მცდელობის გასამეორებლად, შეეხეთ „თავიდან ცდა“-ს.</string>
     <string name="tap_setting_message_edge_panel">ჩართეთ ლოკაცია, ადგილობრივი ამინდის სანახავად.</string>
+    <string name="tap_the_settings_icon">შეეხეთ პარამეტრების ნიშანს.</string>
     <string name="tap_to_get_the_weather">შეეხეთ ამინდის გასაგებად</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">წესები და პირობები</string>
     <string name="the_latest_version">უახლესი ვერსია უკვე დაინსტალირებულია.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">ეს ასევე გამოიყენება შეტყობინებებსა და კალენდარში.</string>
+    <string name="thu">ხუთ.</string>
     <string name="tick_box_tts">მოსანიშნი უჯრა</string>
     <string name="ticked_tts">მონიშნულია</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">საათებით</string>
     <string name="title_select_locations">აირჩიეთ ლოკაციები</string>
     <string name="title_theme">თემები</string>
+    <string name="to_continue_agree_to_updated">რომ განაგრძოთ, განაცხადეთ, რომ თქვენთვის მისაღებია ჩვენი განახლებული %s.</string>
     <string name="to_get_local_weather_chn">"ადგილობრივ ამინდზე ინფორმაციის მისაღებად, თქვენი მიმდინარე ლოკაცია გაეგზავნება ამინდის სერვისების მომწოდებელს. (იხილეთ მომწოდებლის %1$sპირობები და დებულებები%2$s და %3$sკონფიდენციალურობის პოლიტიკა%4$s).
 თქვენს მოწყობილობაზე არსებულ სხვა აპებსა და სერვისებს შეიძლება ჰქონდეთ ამინდის მიღებულ მონაცემებზე წვდომა ამ აპებში ამინდის საჩვენებლად.
 იმისათვის, რომ მუდმივად მოგაწოდოთ ინფორმაცია ამინდის შესახებ, ამინდს ექნება წვდომა თქვენს ლოკაციაზე, მაშინაც კი, როდესაც არ იყენებთ აპს."</string>
     <string name="today">დღეს</string>
+    <string name="try_it_out_btn">მოსინჯეთ</string>
+    <string name="tue">სამ.</string>
+    <string name="turn_on_to_use_precise_location">ეს ფუნქცია რომ გამოიყენოთ, %s-ს ყოველთვის უნდა მისცეთ წვდომა თქვენს ლოკაციაზე და უნდა ჩართოთ ზუსტი ლოკაციის გამოყენება. შეეხეთ „პარამეტრებს“ და გახსენით „ნებართვები“ > „ლოკაცია“.</string>
     <string name="tw_title_weather_broadcast">გადაცემა</string>
-    <string name="unable_to_check_for_updates">განახლებების ნახვა შეუძლებელია. ქსელთან კავშირი არ არის.</string>
+    <string name="unable_to_check_for_updates">განახლებები ვერ შემოწმდა. მოგვიანებით სცადეთ.</string>
     <string name="unable_to_receive_info_msg">ინფორმაციის მიღება შეუძლებელია</string>
     <string name="unticked_tts">მონიშვნა მოიხსნა</string>
     <string name="unused">გამოუყენებელი</string>
     <string name="update">განახლება</string>
     <string name="update_abb8">განახლება</string>
     <string name="update_app">აპლიკაციის განახლება</string>
+    <string name="updated_tile_chn">განახლდა: %s</string>
     <string name="updated_tts">%s განახლდა</string>
+    <string name="use_current_location">მიმდინარე ლოკაციით</string>
     <string name="use_current_location_agree_popup">"ადგილობრივი ამინდის შესახებ ინფორმაციის მისაღებად, ინფორმაცია თქვენი მიმდინარე ლოკაციის შესახებ გაეგზავნება ამინდის სერვისების მომწოდებელს. (გთხოვთ, იხილოთ მომწოდებლის %1$sკონფიდენციალურობის დებულება%2$s.)
 თქვენს მოწყობილობაში სხვა აპლიკაციებმა და სერვისებმა შეიძლება განახორციელოს წვდომა მიღებულ ამინდის მონაცემებზე, რომ ამ აპლიკაციებში გამოჩნდეს ინფორმაცია ამინდის შესახებ."</string>
     <string name="use_current_location_and_background_agree_popup">"ადგილობრივ ამინდზე ინფორმაციის მისაღებად, თქვენი მიმდინარე ლოკაცია გაეგზავნება ამინდის სერვისების მომწოდებელს. (იხილეთ მომწოდებლის %1$sკონფიდენციალურობის პოლიტიკა%2$s.)
@@ -635,9 +677,16 @@
 შეგიძლიათ გამორთოთ ლოკაციის გამოყენება ამინდის აპლიკაციის პარამეტრებიდან."</string>
     <string name="use_current_location_body_msg_chn">"ყურადღებით წაიკითხეთ „ამინდის“ გამოყენებამდე:
 თუ გსურთ მიმდინარე ლოკაციის ამინდის გაგება, მესამე მხარის მომსახურების პროვაიდერს უნდა მისცეთ ნებართვა უწყვეტი (მაშინაც კი, როდესაც არ იყენებთ მომსახურებას) წვდომა ჰქონდეს თქვენს მოწყობილობაზე და მიიღოს ქვემოთ მოცემული მონაცემები. ყურადღებით წაიკითხეთ და გაიგეთ მესამე მხარის სერვისის პროვაიდერის %1$sწესები და პირობები%2$s და %3$sკონფიდენციალურობის პოლიტიკა%4$s ასეთი ნებართვის გაცემამდე. შესაძლებელია ნებართვის გაუქმება პარამეტრების მენიუში „ლოკაციის“ გამორთვით. სხვა აპლიკაციებმა და სერვისებმა თქვენს მოწყობილობაში შეიძლება წვდომა განახორციელონ მიღებული ამინდის მონაცემებზე რათა ამ აპლიკაციებში გამოჩნდეს ინფორმაცია ამინდის შესახებ."</string>
+    <string name="use_current_location_body_msg_kor">"თქვენი მიმდინარე ლოკაციის ინფორმაციის მიღება და გამოყენება მოხდება ამინდის აპლიკაციის ზოგიერთი ფუნქციის უზრუნველსაყოფად, როგორიცაა თქვენი ადგილობრივი ამინდის პროგნოზის მოწოდება.
+
+ამინდის ინფორმაციის უწყვეტად მოსაწოდებლად ეს აპლიკაცია რეგულარულად დაამუშავებს ლოკაციის ინფორმაციას, მაშინაც კი, როცა ამ აპლიკაციას არ იყენებთ. თუ განაგრძობთ, დაეთანხმებით თქვენი ლოკაციის ინფორმაციის მიღებასა და დამუშავებას ზემონახსენები მიზნებისთვის.
+
+ლოკაციის ამ ინფორმაციის მიღება და დამუშავება შეგიძლიათ შეწყვიტოთ ამინდის აპლიკაციის პარამეტრებში."</string>
     <string name="use_current_location_body_purpose">მიზანი</string>
     <string name="use_current_location_body_purpose_content">მიმდინარე ლოკაციის მიხედვით ამინდის ინფორმაციის მიწოდება</string>
     <string name="use_current_location_body_search_provider">სერვისის მომწოდებელი</string>
+    <string name="use_current_location_continue">გაგრძელება</string>
+    <string name="use_current_location_not_now">ახლა არა</string>
     <string name="use_current_location_off_alert_popup">მიმდინარე ადგილის ინფორმაცია წაიშლება.</string>
     <string name="useful_informations">მითითებები ცხოვრების შესახებ და სხვა მოხსენებები</string>
     <string name="using_as">%s-ად გამოყენება</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">ამინდის მითითებები</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">ოთხ.</string>
     <string name="weekly_forecast">ყოველდღე</string>
     <string name="widget_background">ვიჯეტის ფონი</string>
     <string name="widget_empty_text">შეეხეთ, რომ ნახოთ ამინდის ინფორმაცია</string>
+    <string name="widget_location">ქალაქის სახელი</string>
     <string name="widget_name_4x1">ამინდი და საათი</string>
     <string name="widget_setting">პარამეტრები</string>
     <string name="widget_setting_background_color">ფონის ფერი</string>

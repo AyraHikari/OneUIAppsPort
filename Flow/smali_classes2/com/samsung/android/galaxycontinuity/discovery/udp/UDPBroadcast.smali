@@ -49,6 +49,16 @@
 
 .method public constructor <init>(II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authPortNum",
+            "notiPortNum"
+        }
+    .end annotation
 
     .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -160,7 +170,7 @@
 
     if-nez v1, :cond_0
 
-    const-string v1, "startServiceBroadcast"
+    const-string/jumbo v1, "startServiceBroadcast"
 
     .line 99
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -209,7 +219,7 @@
     :cond_1
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->stopServiceBroadcast()V
 
-    const-string v1, "startServiceBroadcast"
+    const-string/jumbo v1, "startServiceBroadcast"
 
     .line 107
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -333,6 +343,14 @@
 
 .method public setBroadcastInfoUpdateNeeded(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isNeeded"
+        }
+    .end annotation
 
     .line 135
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->isBroadcastInfoUpdateNeeded:Z
@@ -342,6 +360,16 @@
 
 .method public setPortNumber(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authPortNum",
+            "notiPortNum"
+        }
+    .end annotation
 
     .line 52
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->mAuthPortNum:I
@@ -361,13 +389,21 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, ", notiPortNum : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -393,21 +429,29 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "start UDP broadcast - mAuthPortNum : "
+    const-string/jumbo v1, "start UDP broadcast - mAuthPortNum : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->mAuthPortNum:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, ", notiPortNum : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->mNotiPortNum:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -455,8 +499,6 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->mPhoneReceivingThread:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;
-
     iget-boolean v1, v1, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->isRunning:Z
 
     if-nez v1, :cond_1
@@ -502,7 +544,7 @@
 .method public stopBroadcast()V
     .locals 1
 
-    const-string v0, "stopBroadcast"
+    const-string/jumbo v0, "stopBroadcast"
 
     .line 60
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -519,7 +561,7 @@
 .method public stopPhoneListen()V
     .locals 2
 
-    const-string v0, "stopPhoneListen"
+    const-string/jumbo v0, "stopPhoneListen"
 
     .line 85
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -536,8 +578,6 @@
     if-eqz v1, :cond_0
 
     .line 88
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->mPhoneReceivingThread:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;
-
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;->access$100(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPReceivingThread;)V
 
     .line 89
@@ -569,7 +609,7 @@
 .method public stopServiceBroadcast()V
     .locals 2
 
-    const-string v0, "stopServiceBroadcast"
+    const-string/jumbo v0, "stopServiceBroadcast"
 
     .line 122
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -586,8 +626,6 @@
     if-eqz v1, :cond_0
 
     .line 125
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast;->mServiceBroadcastThread:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPSendingThread;
-
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPSendingThread;->access$500(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPBroadcast$UDPSendingThread;)V
 
     .line 126

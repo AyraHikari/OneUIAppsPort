@@ -25,12 +25,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 58
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "_"
 
-    .line 59
+    .line 2
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -42,15 +42,10 @@
 
 .method private read([Ljava/lang/String;)Ljava/util/Locale;
     .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
     const-string v0, ""
 
-    .line 92
+    .line 6
     filled-new-array {v0, v0, v0}, [Ljava/lang/String;
 
     move-result-object v0
@@ -64,12 +59,12 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 95
+    .line 7
     array-length v3, p1
 
     if-ge v2, v3, :cond_0
 
-    .line 96
+    .line 8
     aget-object v3, p1, v2
 
     aput-object v3, v0, v2
@@ -79,7 +74,7 @@
 
     goto :goto_0
 
-    .line 99
+    .line 9
     :cond_1
     new-instance p1, Ljava/util/Locale;
 
@@ -102,13 +97,8 @@
 # virtual methods
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 45
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/LocaleTransform;->read(Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object p1
@@ -118,34 +108,29 @@
 
 .method public read(Ljava/lang/String;)Ljava/util/Locale;
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 73
+    .line 2
     iget-object v0, p0, Lorg/simpleframework/xml/transform/LocaleTransform;->pattern:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->split(Ljava/lang/CharSequence;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 75
+    .line 3
     array-length v1, v0
 
     const/4 v2, 0x1
 
     if-lt v1, v2, :cond_0
 
-    .line 78
+    .line 4
     invoke-direct {p0, v0}, Lorg/simpleframework/xml/transform/LocaleTransform;->read([Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object p1
 
     return-object p1
 
-    .line 76
+    .line 5
     :cond_0
     new-instance v0, Lorg/simpleframework/xml/transform/InvalidFormatException;
 
@@ -164,13 +149,8 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 45
+    .line 1
     check-cast p1, Ljava/util/Locale;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/LocaleTransform;->write(Ljava/util/Locale;)Ljava/lang/String;
@@ -183,7 +163,7 @@
 .method public write(Ljava/util/Locale;)Ljava/lang/String;
     .locals 0
 
-    .line 113
+    .line 2
     invoke-virtual {p1}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
     move-result-object p1

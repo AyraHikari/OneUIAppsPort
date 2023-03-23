@@ -96,7 +96,7 @@
 
     const-string p3, "ScsApi@ServiceExecutor"
 
-    const-string p4, "use activity context"
+    const-string/jumbo p4, "use activity context"
 
     .line 144
     invoke-static {p3, p4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -105,7 +105,7 @@
     iput-object p1, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mContext:Landroid/content/Context;
 
     .line 147
-    sget p4, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p4, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 p5, 0x1d
 
@@ -206,7 +206,7 @@
 
     const-string p3, "ScsApi@ServiceExecutor"
 
-    const-string p4, "use application context"
+    const-string/jumbo p4, "use application context"
 
     .line 132
     invoke-static {p3, p4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -309,15 +309,15 @@
 .method protected afterExecute(Ljava/lang/Runnable;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 236
+    .line 239
     invoke-super {p0, p1, p2}, Ljava/util/concurrent/ThreadPoolExecutor;->afterExecute(Ljava/lang/Runnable;Ljava/lang/Throwable;)V
 
-    .line 237
+    .line 240
     iget-object p1, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mTaskCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndDecrement()I
 
-    .line 238
+    .line 241
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -326,9 +326,13 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object p2, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mTaskCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -347,22 +351,43 @@
     .line 202
     invoke-super {p0, p1, p2}, Ljava/util/concurrent/ThreadPoolExecutor;->beforeExecute(Ljava/lang/Thread;Ljava/lang/Runnable;)V
 
-    .line 203
-    instance-of v0, p2, Lcom/samsung/android/sdk/scs/base/tasks/TaskRunnable;
+    .line 204
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "task >> "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
 
     const-string v1, "ScsApi@ServiceExecutor"
 
+    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 206
+    instance-of v0, p2, Lcom/samsung/android/sdk/scs/base/tasks/TaskRunnable;
+
     if-eqz v0, :cond_0
 
-    .line 204
+    .line 207
     check-cast p2, Lcom/samsung/android/sdk/scs/base/tasks/TaskRunnable;
 
-    .line 205
+    .line 208
     invoke-virtual {p2}, Lcom/samsung/android/sdk/scs/base/tasks/TaskRunnable;->getFeatureName()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 206
+    .line 209
     invoke-static {p2}, Lcom/samsung/android/sdk/scs/base/feature/FeatureStatusCache;->getStatus(Ljava/lang/String;)I
 
     move-result v0
@@ -371,14 +396,14 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 207
+    .line 210
     iget-object v0, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mContext:Landroid/content/Context;
 
     invoke-static {v0, p2}, Lcom/samsung/android/sdk/scs/base/feature/Feature;->checkFeature(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v0
 
-    .line 208
+    .line 211
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -387,15 +412,23 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p2, ". status: "
+    move-result-object v2
 
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v2, ". status: "
+
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -406,17 +439,17 @@
     :cond_0
     const-string p2, "Unexpected runnable!!!!"
 
-    .line 211
+    .line 214
     invoke-static {v1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 214
+    .line 217
     :cond_1
     :goto_0
     iget-object p2, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mConnectionLock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p2}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 216
+    .line 219
     :try_start_0
     iget-boolean p2, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mIsConnected:Z
 
@@ -424,10 +457,10 @@
 
     const-string p2, "beforeExecute() : not connected, try to connect"
 
-    .line 217
+    .line 220
     invoke-static {v1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 218
+    .line 221
     iget-object p2, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->getServiceIntent()Landroid/content/Intent;
@@ -440,23 +473,23 @@
 
     const-string p2, "beforeExecute() : before wait"
 
-    .line 219
+    .line 222
     invoke-static {v1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 220
+    .line 223
     iget-object p2, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mConnectionCondition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Condition;->await()V
 
     const-string p2, "beforeExecute() : after wait"
 
-    .line 221
+    .line 224
     invoke-static {v1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 227
+    .line 230
     :cond_2
     :goto_1
     iget-object p1, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mConnectionLock:Ljava/util/concurrent/locks/ReentrantLock;
@@ -473,24 +506,24 @@
     :catch_0
     move-exception p2
 
-    .line 224
+    .line 227
     :try_start_1
     invoke-virtual {p2}, Ljava/lang/InterruptedException;->printStackTrace()V
 
-    .line 225
+    .line 228
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_1
 
-    .line 230
+    .line 233
     :goto_2
     iget-object p1, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mTaskCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
-    .line 231
+    .line 234
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -499,9 +532,13 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object p2, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mTaskCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -511,13 +548,13 @@
 
     return-void
 
-    .line 227
+    .line 230
     :goto_3
     iget-object p2, p0, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->mConnectionLock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 228
+    .line 231
     throw p1
 .end method
 
@@ -597,10 +634,10 @@
 
     const-string v0, "onActivityDestroyed"
 
-    .line 244
+    .line 247
     invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 245
+    .line 248
     invoke-virtual {p0}, Lcom/samsung/android/sdk/scs/base/connection/ServiceExecutor;->deInit()V
 
     return-void
@@ -632,14 +669,6 @@
 
 .method public onActivityStopped(Landroid/app/Activity;)V
     .locals 0
-
-    return-void
-.end method
-
-.method public synthetic onError()V
-    .locals 0
-
-    invoke-static {p0}, Lcom/samsung/android/sdk/scs/base/connection/InternalServiceConnectionListener$-CC;->$default$onError(Lcom/samsung/android/sdk/scs/base/connection/InternalServiceConnectionListener;)V
 
     return-void
 .end method

@@ -35,6 +35,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;Ljava/net/Socket;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "socket"
+        }
+    .end annotation
 
     .line 380
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
@@ -104,6 +114,19 @@
 
 .method private setArgument(Ljava/io/InputStream;JJ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "stream",
+            "offset",
+            "streamSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -124,11 +147,15 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "set read information : "
+    const-string/jumbo v1, "set read information : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -154,6 +181,17 @@
 
 .method private write([BI)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -171,8 +209,6 @@
     if-eqz p1, :cond_0
 
     .line 558
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mOutputStream:Ljava/io/DataOutputStream;
-
     invoke-virtual {v0, p1, v1, p2}, Ljava/io/DataOutputStream;->write([BII)V
 
     .line 559
@@ -182,14 +218,12 @@
 
     return p2
 
-    .line 563
     :cond_0
-    iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mOutputStream:Ljava/io/DataOutputStream;
-
-    if-nez p2, :cond_1
+    if-nez v0, :cond_1
 
     const-string p2, "mOutputStream is null"
 
+    .line 563
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     :cond_1
@@ -208,7 +242,7 @@
     :catch_0
     move-exception p1
 
-    const-string p2, "write and flush failed"
+    const-string/jumbo p2, "write and flush failed"
 
     .line 567
     invoke-static {p2, p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -229,8 +263,6 @@
     if-eqz v0, :cond_0
 
     .line 576
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mOutputStream:Ljava/io/DataOutputStream;
-
     invoke-virtual {v0}, Ljava/io/DataOutputStream;->flush()V
 
     .line 577
@@ -250,8 +282,6 @@
     if-eqz v1, :cond_1
 
     .line 582
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStream:Ljava/io/DataInputStream;
-
     invoke-virtual {v1}, Ljava/io/DataInputStream;->close()V
 
     .line 583
@@ -281,32 +311,34 @@
 .end method
 
 .method public run()V
-    .locals 15
+    .locals 16
+
+    move-object/from16 v1, p0
 
     .line 398
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->isInterrupted()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->isInterrupted()Z
 
     move-result v0
 
     if-nez v0, :cond_13
 
     .line 401
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_1
 
     :try_start_0
-    const-string v0, "wait write"
+    const-string/jumbo v0, "wait write"
 
     .line 403
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     .line 404
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
     :try_end_0
@@ -315,14 +347,14 @@
     const/4 v0, 0x0
 
     .line 410
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
 
     .line 411
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
-    invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+    invoke-direct {v0, v2}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
 
     goto :goto_1
 
@@ -343,15 +375,15 @@
 
     .line 417
     :try_start_1
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStream:Ljava/io/DataInputStream;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStream:Ljava/io/DataInputStream;
 
     if-eqz v0, :cond_f
 
-    iget-wide v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v3, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    const-wide/16 v4, 0x0
+    const-wide/16 v5, 0x0
 
-    cmp-long v0, v2, v4
+    cmp-long v0, v3, v5
 
     if-nez v0, :cond_2
 
@@ -368,170 +400,175 @@
     move-result-object v0
 
     .line 424
-    iget-wide v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mOffset:J
+    iget-wide v3, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mOffset:J
 
-    const-wide/32 v4, 0x400000
+    const-wide/32 v5, 0x400000
 
     .line 425
-    iget-wide v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v7, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    cmp-long v4, v4, v6
+    cmp-long v5, v5, v7
 
-    if-lez v4, :cond_3
-
-    iget-wide v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    if-lez v5, :cond_3
 
     goto :goto_2
 
     :cond_3
-    iget-wide v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    const-wide/16 v5, 0x64
 
-    const-wide/16 v6, 0x64
-
-    div-long/2addr v4, v6
+    div-long/2addr v7, v5
 
     :goto_2
-    long-to-int v4, v4
+    long-to-int v5, v7
 
     :goto_3
-    const/high16 v5, 0x400000
+    const/high16 v6, 0x400000
 
-    if-ge v5, v4, :cond_4
+    if-ge v6, v5, :cond_4
 
     .line 428
-    div-int/lit8 v4, v4, 0xa
+    div-int/lit8 v5, v5, 0xa
 
     goto :goto_3
 
     .line 430
     :cond_4
-    iget-object v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mSocket:Ljava/net/Socket;
+    iget-object v7, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mSocket:Ljava/net/Socket;
 
-    invoke-virtual {v6, v5}, Ljava/net/Socket;->setSendBufferSize(I)V
+    invoke-virtual {v7, v6}, Ljava/net/Socket;->setSendBufferSize(I)V
 
     .line 432
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "buffer size : "
+    const-string v7, "buffer size : "
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v6
 
-    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     .line 433
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "File size : "
+    const-string v7, "File size : "
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v6, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    move-result-object v6
 
-    invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-wide v7, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v6
 
-    invoke-static {v5}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v6}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     .line 435
-    new-array v5, v4, [B
+    new-array v6, v5, [B
 
     .line 436
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v6}, Ljava/util/Calendar;->getTimeInMillis()J
+    invoke-virtual {v7}, Ljava/util/Calendar;->getTimeInMillis()J
 
-    move-result-wide v6
+    move-result-wide v7
 
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    move v9, v4
+    move v10, v5
 
-    move v10, v8
+    move v11, v9
 
     .line 440
     :goto_4
-    iget-wide v11, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v12, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    cmp-long v11, v2, v11
+    cmp-long v12, v3, v12
 
-    if-gez v11, :cond_d
+    if-gez v12, :cond_d
 
     .line 441
-    iget-object v11, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStream:Ljava/io/DataInputStream;
+    iget-object v12, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStream:Ljava/io/DataInputStream;
 
-    invoke-virtual {v11, v5, v8, v9}, Ljava/io/DataInputStream;->read([BII)I
+    invoke-virtual {v12, v6, v9, v10}, Ljava/io/DataInputStream;->read([BII)I
 
-    move-result v9
+    move-result v10
 
-    if-gtz v9, :cond_7
+    if-gtz v10, :cond_7
 
-    add-int/lit8 v10, v10, 0x1
+    add-int/lit8 v11, v11, 0x1
 
-    const/4 v9, 0x5
+    const/4 v10, 0x5
 
-    if-le v10, v9, :cond_5
+    if-le v11, v10, :cond_5
 
     goto :goto_7
 
     :cond_5
-    const-wide/16 v11, 0x5
+    const-wide/16 v12, 0x5
 
     .line 446
-    invoke-static {v11, v12}, Ljava/lang/Thread;->sleep(J)V
+    invoke-static {v12, v13}, Ljava/lang/Thread;->sleep(J)V
 
     .line 447
-    iget-wide v11, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v12, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    sub-long/2addr v11, v2
+    sub-long v14, v12, v3
 
-    int-to-long v13, v4
+    int-to-long v9, v5
 
-    cmp-long v9, v11, v13
+    cmp-long v9, v14, v9
 
     if-gez v9, :cond_6
 
-    .line 448
-    iget-wide v11, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    sub-long/2addr v12, v3
 
-    :goto_5
-    sub-long/2addr v11, v2
+    long-to-int v10, v12
 
-    long-to-int v9, v11
-
-    goto :goto_4
+    goto :goto_5
 
     :cond_6
-    move v9, v4
+    move v10, v5
+
+    :goto_5
+    const/4 v9, 0x0
 
     goto :goto_4
 
     :cond_7
     if-eqz v0, :cond_a
 
+    const/4 v9, 0x0
+
     .line 459
-    invoke-virtual {v0, v5, v8, v9}, Ljavax/crypto/Cipher;->update([BII)[B
+    invoke-virtual {v0, v6, v9, v10}, Ljavax/crypto/Cipher;->update([BII)[B
 
-    move-result-object v11
+    move-result-object v12
 
-    if-nez v11, :cond_9
+    if-nez v12, :cond_9
 
     .line 461
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$000(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
     :try_end_1
@@ -541,7 +578,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 502
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_8
 
@@ -554,25 +591,27 @@
     .line 464
     :cond_9
     :try_start_2
-    array-length v12, v11
+    array-length v13, v12
 
     goto :goto_6
 
     :cond_a
-    move-object v11, v5
+    const/4 v9, 0x0
 
-    move v12, v9
+    move-object v12, v6
+
+    move v13, v10
 
     .line 467
     :goto_6
-    invoke-direct {p0, v11, v12}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->write([BI)I
+    invoke-direct {v1, v12, v13}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->write([BI)I
 
-    move-result v11
+    move-result v12
 
-    if-nez v11, :cond_c
+    if-nez v12, :cond_c
 
     .line 468
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$000(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
     :try_end_2
@@ -582,7 +621,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 502
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_b
 
@@ -593,40 +632,43 @@
     return-void
 
     :cond_c
-    int-to-long v11, v9
+    int-to-long v12, v10
 
-    add-long/2addr v2, v11
+    add-long/2addr v3, v12
 
     .line 474
     :try_start_3
-    iget-object v9, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    iget-object v10, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
-    iget-wide v13, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v14, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    invoke-static {v9, v11, v12, v13, v14}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$300(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;JJ)V
+    invoke-static {v10, v12, v13, v14, v15}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$300(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;JJ)V
 
     .line 476
-    iget-wide v11, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v12, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    sub-long/2addr v11, v2
+    sub-long v14, v12, v3
 
-    int-to-long v13, v4
+    int-to-long v9, v5
 
-    cmp-long v9, v11, v13
+    cmp-long v9, v14, v9
 
     if-gez v9, :cond_6
 
-    .line 477
-    iget-wide v11, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    sub-long/2addr v12, v3
+
+    long-to-int v9, v12
+
+    move v10, v9
 
     goto :goto_5
 
     .line 482
     :cond_d
     :goto_7
-    iget-wide v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v5, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    cmp-long v0, v2, v4
+    cmp-long v0, v3, v5
 
     if-nez v0, :cond_e
 
@@ -637,55 +679,61 @@
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    sub-long/2addr v2, v6
+    sub-long/2addr v3, v7
 
-    long-to-double v2, v2
+    long-to-double v3, v3
 
-    const-wide v4, 0x408f400000000000L    # 1000.0
+    const-wide v5, 0x408f400000000000L    # 1000.0
 
-    div-double/2addr v2, v4
+    div-double/2addr v3, v5
 
     .line 485
-    iget-wide v4, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v5, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    long-to-double v4, v4
+    long-to-double v5, v5
 
-    const-wide/high16 v6, 0x4090000000000000L    # 1024.0
+    const-wide/high16 v7, 0x4090000000000000L    # 1024.0
 
-    div-double/2addr v4, v6
+    div-double/2addr v5, v7
 
-    div-double/2addr v4, v6
+    div-double/2addr v5, v7
 
-    div-double/2addr v4, v2
+    div-double/2addr v5, v3
 
     .line 486
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Transfer speed : "
+    const-string v3, "Transfer speed : "
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-wide/high16 v2, 0x4059000000000000L    # 100.0
+    move-result-object v0
 
-    mul-double/2addr v4, v2
+    const-wide/high16 v3, 0x4059000000000000L    # 100.0
 
-    invoke-static {v4, v5}, Ljava/lang/Math;->round(D)J
+    mul-double/2addr v5, v3
 
-    move-result-wide v4
+    invoke-static {v5, v6}, Ljava/lang/Math;->round(D)J
 
-    long-to-double v4, v4
+    move-result-wide v5
 
-    div-double/2addr v4, v2
+    long-to-double v5, v5
 
-    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    div-double/2addr v5, v3
 
-    const-string v2, "MB/s"
+    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
+
+    const-string v3, "MB/s"
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -694,13 +742,13 @@
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
     .line 487
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mSocket:Ljava/net/Socket;
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mSocket:Ljava/net/Socket;
 
-    iget-wide v3, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    iget-wide v4, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
 
-    invoke-static {v0, v2, v3, v4}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$400(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;Ljava/net/Socket;J)V
+    invoke-static {v0, v3, v4, v5}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$400(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;Ljava/net/Socket;J)V
 
     goto :goto_8
 
@@ -710,19 +758,27 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "Not equals size, offset : "
+    const-string v5, "Not equals size, offset : "
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    const-string v2, ", file size : "
+    invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    iget-wide v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+    const-string v3, ", file size : "
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-wide v3, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mInputStreamSize:J
+
+    invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -731,7 +787,7 @@
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
     .line 491
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$000(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
     :try_end_3
@@ -742,7 +798,7 @@
 
     .line 502
     :goto_8
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_0
 
@@ -762,7 +818,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 502
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_10
 
@@ -791,14 +847,14 @@
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     .line 500
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$000(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 502
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_0
 
@@ -813,42 +869,42 @@
 
     .line 494
     :try_start_6
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
 
-    if-nez v2, :cond_11
+    if-nez v3, :cond_11
 
     .line 495
-    new-instance v2, Ljava/util/concurrent/CountDownLatch;
+    new-instance v3, Ljava/util/concurrent/CountDownLatch;
 
-    invoke-direct {v2, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+    invoke-direct {v3, v2}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
+    iput-object v3, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteCountDownLatch:Ljava/util/concurrent/CountDownLatch;
 
     .line 496
     :cond_11
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     .line 497
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->this$0:Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;->access$000(Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
     .line 502
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_0
 
     goto :goto_b
 
     :goto_c
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
+    iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/net/wifi/SocketBase$WriteThread;->mWriteLatch:Ljava/util/concurrent/CountDownLatch;
 
-    if-eqz v1, :cond_12
+    if-eqz v2, :cond_12
 
     .line 503
-    invoke-virtual {v1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+    invoke-virtual {v2}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     .line 505
     :cond_12
@@ -860,6 +916,18 @@
 
 .method write(Ljava/io/InputStream;JJ)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "inputStream",
+            "offset",
+            "inputStreamSize"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

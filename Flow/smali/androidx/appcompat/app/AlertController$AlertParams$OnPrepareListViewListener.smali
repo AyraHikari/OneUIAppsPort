@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onPrepareListView(Landroid/widget/ListView;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listView"
+        }
+    .end annotation
 .end method

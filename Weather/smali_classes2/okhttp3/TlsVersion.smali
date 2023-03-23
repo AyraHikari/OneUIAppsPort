@@ -73,7 +73,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     const/4 v0, 0x5
@@ -88,7 +88,7 @@
 
     const-string v4, "TLSv1.3"
 
-    .line 25
+    .line 1
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/TlsVersion;->TLS_1_3:Lokhttp3/TlsVersion;
@@ -103,7 +103,7 @@
 
     const-string v4, "TLSv1.2"
 
-    .line 26
+    .line 2
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/TlsVersion;->TLS_1_2:Lokhttp3/TlsVersion;
@@ -118,7 +118,7 @@
 
     const-string v4, "TLSv1.1"
 
-    .line 27
+    .line 3
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/TlsVersion;->TLS_1_1:Lokhttp3/TlsVersion;
@@ -133,7 +133,7 @@
 
     const-string v4, "TLSv1"
 
-    .line 28
+    .line 4
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/TlsVersion;->TLS_1_0:Lokhttp3/TlsVersion;
@@ -148,7 +148,7 @@
 
     const-string v4, "SSLv3"
 
-    .line 29
+    .line 5
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/TlsVersion;->SSL_3_0:Lokhttp3/TlsVersion;
@@ -178,7 +178,6 @@
         }
     .end annotation
 
-    .line 22
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput-object p3, p0, Lokhttp3/TlsVersion;->javaName:Ljava/lang/String;
@@ -188,8 +187,6 @@
 
 .method public static final forJavaName(Ljava/lang/String;)Lokhttp3/TlsVersion;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/TlsVersion;->Companion:Lokhttp3/TlsVersion$Companion;
 
@@ -232,16 +229,7 @@
 # virtual methods
 .method public final -deprecated_javaName()Ljava/lang/String;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "javaName"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 36
     iget-object v0, p0, Lokhttp3/TlsVersion;->javaName:Ljava/lang/String;
 
     return-object v0
@@ -250,7 +238,6 @@
 .method public final javaName()Ljava/lang/String;
     .locals 1
 
-    .line 23
     iget-object v0, p0, Lokhttp3/TlsVersion;->javaName:Ljava/lang/String;
 
     return-object v0

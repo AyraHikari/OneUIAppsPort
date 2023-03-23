@@ -25,31 +25,31 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 40
+    .line 41
     invoke-direct {p0}, Landroidx/appcompat/app/AppCompatActivity;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 42
+    .line 43
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvSender:Landroid/widget/TextView;
 
-    .line 43
+    .line 44
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvPhoneNumber:Landroid/widget/TextView;
 
-    .line 44
+    .line 45
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
     const-string v0, ""
 
-    .line 47
+    .line 48
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->mFlowKey:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    .line 191
+    .line 192
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->isBroadcastReceiverResistered:Z
 
-    .line 215
+    .line 216
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$3;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$3;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;)V
@@ -62,7 +62,7 @@
 .method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;)Landroid/widget/ImageButton;
     .locals 0
 
-    .line 40
+    .line 41
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
     return-object p0
@@ -71,34 +71,23 @@
 .method private initView()V
     .locals 2
 
-    const v0, 0x7f090047
+    const v0, 0x7f0a0057
 
-    .line 127
+    .line 128
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    .line 129
+    .line 130
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$1;
 
     invoke-direct {v1, p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;Landroid/widget/RelativeLayout;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    const v0, 0x7f090267
-
-    .line 160
-    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvSender:Landroid/widget/TextView;
-
-    const v0, 0x7f090266
+    const v0, 0x7f0a0395
 
     .line 161
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->findViewById(I)Landroid/view/View;
@@ -107,11 +96,22 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvPhoneNumber:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvSender:Landroid/widget/TextView;
 
-    const v0, 0x7f09004d
+    const v0, 0x7f0a0394
 
     .line 162
+    invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvPhoneNumber:Landroid/widget/TextView;
+
+    const v0, 0x7f0a005d
+
+    .line 163
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -120,31 +120,31 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
-    .line 164
+    .line 165
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     iget-boolean v0, v0, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isReplyEnable:Z
 
     if-eqz v0, :cond_1
 
-    .line 165
+    .line 166
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 166
+    .line 167
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     iget-boolean v0, v0, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isAlarmOff:Z
 
     if-eqz v0, :cond_0
 
-    .line 167
+    .line 168
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
-    const v1, 0x7f07007e
+    const v1, 0x7f080096
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -154,11 +154,11 @@
 
     goto :goto_0
 
-    .line 169
+    .line 170
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
-    const v1, 0x7f07007f
+    const v1, 0x7f080097
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -168,7 +168,7 @@
 
     goto :goto_0
 
-    .line 171
+    .line 172
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
@@ -176,7 +176,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 174
+    .line 175
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->ibAlarm:Landroid/widget/ImageButton;
 
@@ -186,7 +186,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 188
+    .line 189
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->registerBroadcastReceiver()V
 
     return-void
@@ -195,14 +195,14 @@
 .method private registerBroadcastReceiver()V
     .locals 3
 
-    .line 194
+    .line 195
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->isBroadcastReceiverResistered:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 197
+    .line 198
     :cond_0
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -210,10 +210,10 @@
 
     const-string v1, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_NOTI_DISCONNECTED"
 
-    .line 198
+    .line 199
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 200
+    .line 201
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v1
@@ -224,7 +224,7 @@
 
     const/4 v0, 0x1
 
-    .line 202
+    .line 203
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->isBroadcastReceiverResistered:Z
 
     return-void
@@ -234,30 +234,38 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-
-    .line 51
-    invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
-
-    const p1, 0x7f0c000c
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 52
+    invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
+
+    const p1, 0x7f0d000b
+
+    .line 53
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->setContentView(I)V
 
-    .line 54
+    .line 55
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
     const-string v0, "FlowKey"
 
-    .line 55
+    .line 56
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->mFlowKey:Ljava/lang/String;
 
-    .line 57
+    .line 58
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
     move-result-object p1
@@ -270,7 +278,7 @@
 
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 58
+    .line 59
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->initView()V
 
     return-void
@@ -279,10 +287,10 @@
 .method public onDestroy()V
     .locals 2
 
-    .line 122
+    .line 123
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onDestroy()V
 
-    .line 123
+    .line 124
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
@@ -296,11 +304,19 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-
-    .line 63
-    invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 64
+    invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V
+
+    .line 65
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->setIntent(Landroid/content/Intent;)V
 
     return-void
@@ -308,8 +324,16 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
-    .line 207
+    .line 208
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v0
@@ -318,14 +342,14 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 212
+    .line 213
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result p1
 
     return p1
 
-    .line 209
+    .line 210
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->onBackPressed()V
 
@@ -337,15 +361,15 @@
 .method protected onResume()V
     .locals 5
 
-    .line 74
+    .line 75
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onResume()V
 
-    .line 76
+    .line 77
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     if-nez v0, :cond_0
 
-    .line 77
+    .line 78
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -354,9 +378,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->mFlowKey:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -364,7 +392,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 78
+    .line 79
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->finish()V
 
     return-void
@@ -372,10 +400,10 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 81
+    .line 82
     iput v1, v0, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
 
-    .line 82
+    .line 83
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->sender:Ljava/lang/String;
@@ -397,95 +425,93 @@
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->sender:Ljava/lang/String;
 
-    .line 83
+    .line 84
     :goto_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
-    move-result-object v1
+    move-result-object v2
 
-    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    iget-wide v2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->id:J
+    iget-wide v3, v3, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->id:J
 
-    long-to-int v2, v2
+    long-to-int v3, v3
 
-    invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->discardDeviceNotificationEvent(I)V
-
-    .line 85
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
-
-    iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->phoneNumber:Ljava/lang/String;
-
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
-
-    iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->phoneNumber:Ljava/lang/String;
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
+    invoke-virtual {v2, v3}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->discardDeviceNotificationEvent(I)V
 
     .line 86
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvPhoneNumber:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
+
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->phoneNumber:Ljava/lang/String;
+
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->phoneNumber:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 88
-    :cond_2
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
+    move-result v2
 
-    iget-boolean v1, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isSuccessGettingMessage:Z
+    if-nez v2, :cond_2
 
-    const/4 v2, 0x1
+    .line 87
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvPhoneNumber:Landroid/widget/TextView;
 
-    if-nez v1, :cond_3
+    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    const v1, 0x7f100120
+    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->phoneNumber:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 89
-    invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getString(I)Ljava/lang/String;
+    :cond_2
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    move-result-object v1
+    iget-boolean v2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isSuccessGettingMessage:Z
 
-    invoke-static {v1, v2}, Lcom/samsung/android/galaxycontinuity/util/Utils;->showToastMessage(Ljava/lang/String;I)V
+    if-nez v2, :cond_3
 
-    .line 92
+    const v2, 0x7f110169
+
+    .line 90
+    invoke-virtual {p0, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {p0, v2, v1}, Lcom/samsung/android/galaxycontinuity/util/Utils;->showSnackBartMessage(Landroid/content/Context;Ljava/lang/String;I)V
+
+    .line 93
     :cond_3
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->tvSender:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 94
+    .line 95
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v0
 
-    .line 95
+    .line 96
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->getFragments()Ljava/util/List;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    .line 98
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
-
-    move-result-object v3
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 99
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
+
+    move-result-object v2
+
+    .line 100
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -493,67 +519,69 @@
     :goto_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_4
+    if-eqz v3, :cond_4
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    check-cast v4, Landroidx/fragment/app/Fragment;
-
-    .line 100
-    invoke-virtual {v3, v4}, Landroidx/fragment/app/FragmentTransaction;->remove(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    check-cast v3, Landroidx/fragment/app/Fragment;
 
     .line 101
-    invoke-virtual {v3}, Landroidx/fragment/app/FragmentTransaction;->commit()I
+    invoke-virtual {v2, v3}, Landroidx/fragment/app/FragmentTransaction;->remove(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+
+    .line 102
+    invoke-virtual {v2}, Landroidx/fragment/app/FragmentTransaction;->commit()I
 
     goto :goto_1
 
-    .line 105
+    .line 106
     :cond_4
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v0
 
-    .line 106
+    .line 107
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->chatFragment:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
-    .line 107
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
-
-    iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
-
-    invoke-virtual {v1, v3}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->setFlowKey(Ljava/lang/String;)V
-
-    const v1, 0x7f09008e
-
     .line 108
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->chatFragment:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    const-string v4, "chatFragment"
+    iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v3, v4}, Landroidx/fragment/app/FragmentTransaction;->add(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
+    invoke-virtual {v1, v2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->setFlowKey(Ljava/lang/String;)V
+
+    const v1, 0x7f0a00bd
 
     .line 109
+    iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->chatFragment:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
+
+    const-string v3, "chatFragment"
+
+    invoke-virtual {v0, v1, v2, v3}, Landroidx/fragment/app/FragmentTransaction;->add(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
+
+    .line 110
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commit()I
 
-    .line 111
+    .line 112
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
 
     move-result-object v0
 
     if-eqz v0, :cond_5
 
-    .line 114
-    invoke-virtual {v0, v2}, Landroidx/appcompat/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
+    const/4 v1, 0x1
 
     .line 115
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
+
+    .line 116
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatActivity;->data:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->applicationName:Ljava/lang/String;
@@ -566,8 +594,16 @@
 
 .method public onSupportActionModeStarted(Landroidx/appcompat/view/ActionMode;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
-    .line 69
+    .line 70
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onSupportActionModeStarted(Landroidx/appcompat/view/ActionMode;)V
 
     return-void

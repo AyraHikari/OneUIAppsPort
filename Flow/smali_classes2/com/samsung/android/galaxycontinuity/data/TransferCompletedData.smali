@@ -15,6 +15,16 @@
 # direct methods
 .method public constructor <init>(ZI)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "_isSuccess",
+            "_index"
+        }
+    .end annotation
 
     .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

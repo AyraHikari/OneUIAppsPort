@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/api/DataBufferResponse;
 .super Lcom/google/android/gms/common/api/Response;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
 .implements Lcom/google/android/gms/common/data/DataBuffer;
@@ -49,10 +50,10 @@
 
 
 # virtual methods
-.method public close()V
+.method public final close()V
     .locals 1
 
-    .line 7
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0
@@ -64,7 +65,7 @@
     return-void
 .end method
 
-.method public get(I)Ljava/lang/Object;
+.method public final get(I)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -72,7 +73,7 @@
         }
     .end annotation
 
-    .line 5
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0
@@ -86,10 +87,10 @@
     return-object p1
 .end method
 
-.method public getCount()I
+.method public final getCount()I
     .locals 1
 
-    .line 4
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0
@@ -103,10 +104,10 @@
     return v0
 .end method
 
-.method public getMetadata()Landroid/os/Bundle;
+.method public final getMetadata()Landroid/os/Bundle;
     .locals 1
 
-    .line 6
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0
@@ -120,10 +121,10 @@
     return-object v0
 .end method
 
-.method public isClosed()Z
+.method public final isClosed()Z
     .locals 1
 
-    .line 9
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0
@@ -137,7 +138,7 @@
     return v0
 .end method
 
-.method public iterator()Ljava/util/Iterator;
+.method public final iterator()Ljava/util/Iterator;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -147,7 +148,7 @@
         }
     .end annotation
 
-    .line 10
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0
@@ -161,10 +162,10 @@
     return-object v0
 .end method
 
-.method public release()V
+.method public final release()V
     .locals 1
 
-    .line 12
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0
@@ -176,7 +177,7 @@
     return-void
 .end method
 
-.method public singleRefIterator()Ljava/util/Iterator;
+.method public final singleRefIterator()Ljava/util/Iterator;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -186,7 +187,7 @@
         }
     .end annotation
 
-    .line 11
+    .line 1
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/DataBufferResponse;->getResult()Lcom/google/android/gms/common/api/Result;
 
     move-result-object v0

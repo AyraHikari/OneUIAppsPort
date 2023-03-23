@@ -1,74 +1,115 @@
-.class final Landroidx/loader/content/ModernAsyncTask$1;
+.class Landroidx/loader/content/ModernAsyncTask$1;
 .super Ljava/lang/Object;
 .source "ModernAsyncTask.java"
 
 # interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
+.implements Ljava/util/concurrent/Callable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroidx/loader/content/ModernAsyncTask;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/loader/content/ModernAsyncTask;-><init>()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable<",
+        "TResult;>;"
+    }
 .end annotation
 
 
 # instance fields
-.field private final mCount:Ljava/util/concurrent/atomic/AtomicInteger;
+.field final synthetic this$0:Landroidx/loader/content/ModernAsyncTask;
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 2
+.method constructor <init>(Landroidx/loader/content/ModernAsyncTask;)V
+    .locals 0
 
-    .line 60
+    .line 89
+    iput-object p1, p0, Landroidx/loader/content/ModernAsyncTask$1;->this$0:Landroidx/loader/content/ModernAsyncTask;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 61
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
-
-    iput-object v0, p0, Landroidx/loader/content/ModernAsyncTask$1;->mCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 3
+.method public call()Ljava/lang/Object;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TResult;"
+        }
+    .end annotation
 
-    .line 65
-    new-instance v0, Ljava/lang/Thread;
+    .line 92
+    iget-object v0, p0, Landroidx/loader/content/ModernAsyncTask$1;->this$0:Landroidx/loader/content/ModernAsyncTask;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-object v0, v0, Landroidx/loader/content/ModernAsyncTask;->mTaskInvoked:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const/4 v1, 0x1
 
-    const-string v2, "ModernAsyncTask #"
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 v0, 0xa
 
-    iget-object v2, p0, Landroidx/loader/content/ModernAsyncTask$1;->mCount:Ljava/util/concurrent/atomic/AtomicInteger;
+    const/4 v2, 0x0
 
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+    .line 95
+    :try_start_0
+    invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
-    move-result v2
+    .line 96
+    iget-object v0, p0, Landroidx/loader/content/ModernAsyncTask$1;->this$0:Landroidx/loader/content/ModernAsyncTask;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Landroidx/loader/content/ModernAsyncTask;->doInBackground()Ljava/lang/Object;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    .line 97
+    invoke-static {}, Landroid/os/Binder;->flushPendingCommands()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+    .line 102
+    iget-object v0, p0, Landroidx/loader/content/ModernAsyncTask$1;->this$0:Landroidx/loader/content/ModernAsyncTask;
 
-    return-object v0
+    invoke-virtual {v0, v2}, Landroidx/loader/content/ModernAsyncTask;->postResult(Ljava/lang/Object;)V
+
+    return-object v2
+
+    :catchall_0
+    move-exception v0
+
+    .line 99
+    :try_start_1
+    iget-object v3, p0, Landroidx/loader/content/ModernAsyncTask$1;->this$0:Landroidx/loader/content/ModernAsyncTask;
+
+    iget-object v3, v3, Landroidx/loader/content/ModernAsyncTask;->mCancelled:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v3, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 100
+    throw v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    :catchall_1
+    move-exception v0
+
+    .line 102
+    iget-object v1, p0, Landroidx/loader/content/ModernAsyncTask$1;->this$0:Landroidx/loader/content/ModernAsyncTask;
+
+    invoke-virtual {v1, v2}, Landroidx/loader/content/ModernAsyncTask;->postResult(Ljava/lang/Object;)V
+
+    throw v0
 .end method

@@ -10,8 +10,6 @@
 
 .field public static final CD_KEY_AUTO_BLUETOOTH_SETTINGS:Ljava/lang/String; = "Setting value"
 
-.field public static final CD_KEY_BIO_AUTH_DIALOG_CONFIRM:Ljava/lang/String; = "BIO Auth Dialog Confirm"
-
 .field public static final CD_KEY_CDF_ENROLL_DEVICE_TYPE:Ljava/lang/String; = "Device Type"
 
 .field public static final CD_KEY_CDF_ENROLL_UNLOCK_OPTION:Ljava/lang/String; = "Unlock Enabled"
@@ -42,8 +40,6 @@
 
 .field public static final CD_KEY_ONGOING_NOTI_BUTTON:Ljava/lang/String; = "Ongoing Noti Button"
 
-.field public static final CD_KEY_SAMSUNG_PASS_SETTING:Ljava/lang/String; = "Samsung Pass Setting"
-
 .field public static final CD_KEY_SELECTED_APP:Ljava/lang/String; = "Category"
 
 .field public static final CD_KEY_SELECT_NOTI_STATE:Ljava/lang/String; = "Selected"
@@ -56,13 +52,17 @@
 
 .field public static final CD_KEY_SIMPLE_UNLOCK_RESULT:Ljava/lang/String; = "Simple Unlock Result"
 
-.field public static final CD_KEY_SIMPLE_UNLOCK_SETTING:Ljava/lang/String; = "Simple Unlock Setting"
-
 .field public static final CD_KEY_SMART_VIEW_RESOLUTION:Ljava/lang/String; = "Smart View Resolution"
 
 .field public static final CD_KEY_SMART_VIEW_ROTATE:Ljava/lang/String; = "Orientation"
 
-.field public static final CD_KEY_TABLET_BIO_AUTH_SETTING:Ljava/lang/String; = "Tablet Bio Auth Setting"
+.field public static final CD_KEY_VERIFICATION_METHOD:Ljava/lang/String; = "Verification method"
+
+.field public static final DETAIL_CONNECTION_PHONE_TO_PC:Ljava/lang/String; = "1"
+
+.field public static final DETAIL_CONNECTION_PHONE_TO_TAB:Ljava/lang/String; = "0"
+
+.field public static final DETAIL_CONNECTION_TAB_TO_PC:Ljava/lang/String; = "2"
 
 .field public static final DETAIL_DEVICE_TYPE_PHONE:Ljava/lang/String; = "PHONE"
 
@@ -114,8 +114,6 @@
 
 .field public static final EVENT_HELP_7:Ljava/lang/String; = "5007"
 
-.field public static final EVENT_HELP_8:Ljava/lang/String; = "5009"
-
 .field public static final EVENT_HELP_9:Ljava/lang/String; = "5011"
 
 .field public static final EVENT_HELP_BACK:Ljava/lang/String; = "5008"
@@ -127,6 +125,10 @@
 .field public static final EVENT_MAIN_ATTACH_SHEET_SELECTED:Ljava/lang/String; = "2015"
 
 .field public static final EVENT_MAIN_COULDNOT_REGISTER:Ljava/lang/String; = "1054"
+
+.field public static final EVENT_MAIN_SHARED_ADD_APP_FROM_PHONE:Ljava/lang/String; = "2016"
+
+.field public static final EVENT_MAIN_SHARED_ADD_APP_FROM_PHONE_ADDED:Ljava/lang/String; = "2027"
 
 .field public static final EVENT_MAIN_SHARED_AUTH_SIMPLE_UNLOCK:Ljava/lang/String; = "6006"
 
@@ -176,8 +178,6 @@
 
 .field public static final EVENT_MANAGENOTI_ONE_APP:Ljava/lang/String; = "4011"
 
-.field public static final EVENT_MANAGE_DEVICE_BIOAUTH_CONFIRM_POPUP:Ljava/lang/String; = "4056"
-
 .field public static final EVENT_MANAGE_DEVICE_DEREGISTER:Ljava/lang/String; = "4052"
 
 .field public static final EVENT_MANAGE_DEVICE_DEREGISTER_POPUP:Ljava/lang/String; = "4058"
@@ -190,17 +190,9 @@
 
 .field public static final EVENT_MANAGE_DEVICE_RENAME_POPUP:Ljava/lang/String; = "4057"
 
-.field public static final EVENT_MANAGE_DEVICE_SAMSUNGPASS:Ljava/lang/String; = "4054"
-
 .field public static final EVENT_MANAGE_DEVICE_SELECT_DEVICE:Ljava/lang/String; = "4050"
 
-.field public static final EVENT_MANAGE_DEVICE_SIMPLEUNLOCK:Ljava/lang/String; = "4053"
-
-.field public static final EVENT_MANAGE_DEVICE_TABLETBIOAUTH:Ljava/lang/String; = "4061"
-
-.field public static final EVENT_MANAGE_DEVICE_TABLETBIOAUTH_OFF:Ljava/lang/String; = "0"
-
-.field public static final EVENT_MANAGE_DEVICE_TABLETBIOAUTH_ON:Ljava/lang/String; = "1"
+.field public static final EVENT_MANAGE_DEVICE_VERIFICATION_METHOD:Ljava/lang/String; = "4053"
 
 .field public static final EVENT_NOTI_PANEL_TURN_OFF_CONNECTED:Ljava/lang/String; = "7090"
 
@@ -270,6 +262,8 @@
 
 .field public static final EVENT_SET_SECURE_LOCK_POPUP_OK:Ljava/lang/String; = "1"
 
+.field public static final EVENT_USING_SMART_VIEW_AS_SHORTCUT:Ljava/lang/String; = "5009"
+
 .field public static final EVENT_WELCOME_START:Ljava/lang/String; = "1001"
 
 .field public static final PARAM_AUTH_FAIL:Ljava/lang/String; = "1"
@@ -308,9 +302,9 @@
 
 .field public static final PARAM_MAIN_SHARED_CONTACT_US_MUSE:Ljava/lang/String; = "1"
 
-.field public static final PARAM_MANAGE_DEVICE_BIOAUTH_CONFIRM_POPUP_CANCEL:Ljava/lang/String; = "0"
+.field public static final PARAM_MANAGE_DEVICE_AUTO:Ljava/lang/String; = "1"
 
-.field public static final PARAM_MANAGE_DEVICE_BIOAUTH_CONFIRM_POPUP_OK:Ljava/lang/String; = "1"
+.field public static final PARAM_MANAGE_DEVICE_BIOMETRICS:Ljava/lang/String; = "2"
 
 .field public static final PARAM_MANAGE_DEVICE_DEREGISTER_POPUP_CANCEL:Ljava/lang/String; = "0"
 
@@ -324,17 +318,11 @@
 
 .field public static final PARAM_MANAGE_DEVICE_GEARAUTH_POPUP_OK:Ljava/lang/String; = "1"
 
+.field public static final PARAM_MANAGE_DEVICE_MANUAL:Ljava/lang/String; = "0"
+
 .field public static final PARAM_MANAGE_DEVICE_RENAME_POPUP_CANCEL:Ljava/lang/String; = "0"
 
 .field public static final PARAM_MANAGE_DEVICE_RENAME_POPUP_OK:Ljava/lang/String; = "1"
-
-.field public static final PARAM_MANAGE_DEVICE_SAMSUNGPASS_OFF:Ljava/lang/String; = "0"
-
-.field public static final PARAM_MANAGE_DEVICE_SAMSUNGPASS_ON:Ljava/lang/String; = "1"
-
-.field public static final PARAM_MANAGE_DEVICE_SIMPLEUNLOCK_OFF:Ljava/lang/String; = "0"
-
-.field public static final PARAM_MANAGE_DEVICE_SIMPLEUNLOCK_ON:Ljava/lang/String; = "1"
 
 .field public static final PARAM_MANAGE_NOTI_SELECT_OFF:Ljava/lang/String; = "0"
 
@@ -427,8 +415,16 @@
 
 .method public static init(Landroid/app/Application;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "application"
+        }
+    .end annotation
 
-    .line 273
+    .line 265
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
     move-result v0
@@ -439,7 +435,7 @@
 
     return-void
 
-    .line 290
+    .line 282
     :cond_0
     new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
@@ -453,27 +449,27 @@
 
     const-string v1, "4.0"
 
-    .line 291
+    .line 283
     invoke-virtual {v0, v1}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->setVersion(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
     move-result-object v0
 
-    .line 292
+    .line 284
     invoke-virtual {v0}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->enableAutoDeviceId()Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
     move-result-object v0
 
-    .line 290
+    .line 282
     invoke-static {p0, v0}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->setConfiguration(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
 
-    .line 294
+    .line 286
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
     move-result-object p0
 
     invoke-virtual {p0}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->enableUncaughtExceptionLogging()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
-    .line 296
+    .line 288
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -481,6 +477,8 @@
     const-string v0, "init: setSAConfiguration ExceptionLogging: "
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
@@ -492,6 +490,8 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    move-result-object p0
+
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -500,7 +500,7 @@
 
     const-string p0, "init: setSAConfiguration"
 
-    .line 298
+    .line 290
     invoke-static {p0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     return-void
@@ -508,21 +508,29 @@
 
 .method public static insertSAEventLog(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 347
+    .line 339
     sget-boolean v0, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->sIsTablet:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 350
+    .line 342
     :cond_0
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 351
+    .line 343
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isTablet()Z
 
     move-result v1
@@ -541,7 +549,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 354
+    .line 346
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
     move-result-object v1
@@ -571,21 +579,31 @@
 
 .method public static insertSAEventLog(Ljava/lang/String;J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "value"
+        }
+    .end annotation
 
-    .line 328
+    .line 320
     sget-boolean v0, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->sIsTablet:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 331
+    .line 323
     :cond_0
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 332
+    .line 324
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isTablet()Z
 
     move-result v1
@@ -604,7 +622,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 334
+    .line 326
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
     move-result-object v1
@@ -638,6 +656,17 @@
 
 .method public static insertSAEventLog(Ljava/lang/String;Ljava/util/HashMap;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "details"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -649,14 +678,14 @@
         }
     .end annotation
 
-    .line 338
+    .line 330
     sget-boolean v0, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->sIsTablet:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 341
+    .line 333
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isTablet()Z
 
@@ -676,7 +705,7 @@
 
     invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 343
+    .line 335
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
     move-result-object v0
@@ -706,6 +735,19 @@
 
 .method public static insertSAEventLog(Ljava/lang/String;Ljava/util/HashMap;J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "details",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -717,14 +759,14 @@
         }
     .end annotation
 
-    .line 319
+    .line 311
     sget-boolean v0, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->sIsTablet:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 322
+    .line 314
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isTablet()Z
 
@@ -744,7 +786,7 @@
 
     invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 324
+    .line 316
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
     move-result-object v0
@@ -778,15 +820,23 @@
 
 .method public static insertSAScreenLog(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "screenID"
+        }
+    .end annotation
 
-    .line 303
+    .line 295
     sget-boolean v0, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->sIsTablet:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 306
+    .line 298
     :cond_0
     sget-object v0, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->latestPage:Ljava/lang/String;
 
@@ -800,16 +850,16 @@
 
     return-void
 
-    .line 310
+    .line 302
     :cond_1
     sput-object p0, Lcom/samsung/android/galaxycontinuity/util/SamsungAnalyticsUtils;->latestPage:Ljava/lang/String;
 
-    .line 312
+    .line 304
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 313
+    .line 305
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isTablet()Z
 
     move-result v1
@@ -828,7 +878,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 315
+    .line 307
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
     move-result-object v1

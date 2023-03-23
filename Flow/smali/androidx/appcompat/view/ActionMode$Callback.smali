@@ -16,13 +16,51 @@
 
 # virtual methods
 .method public abstract onActionItemClicked(Landroidx/appcompat/view/ActionMode;Landroid/view/MenuItem;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "item"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCreateActionMode(Landroidx/appcompat/view/ActionMode;Landroid/view/Menu;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "menu"
+        }
+    .end annotation
 .end method
 
 .method public abstract onDestroyActionMode(Landroidx/appcompat/view/ActionMode;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 .end method
 
 .method public abstract onPrepareActionMode(Landroidx/appcompat/view/ActionMode;Landroid/view/Menu;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "menu"
+        }
+    .end annotation
 .end method

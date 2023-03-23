@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/api/internal/RegistrationMethods;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # annotations
@@ -21,7 +22,7 @@
 
 
 # instance fields
-.field public final zajz:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
+.field public final register:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/internal/RegisterListenerMethod<",
@@ -32,7 +33,7 @@
     .end annotation
 .end field
 
-.field public final zaka:Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
+.field public final zaa:Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod<",
@@ -42,42 +43,21 @@
         }
     .end annotation
 .end field
+
+.field public final zab:Ljava/lang/Runnable;
 
 
 # direct methods
-.method private constructor <init>(Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;)V
+.method synthetic constructor <init>(Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;Ljava/lang/Runnable;Lcom/google/android/gms/common/api/internal/zacn;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/api/internal/RegisterListenerMethod<",
-            "TA;T",
-            "L;",
-            ">;",
-            "Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod<",
-            "TA;T",
-            "L;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/RegistrationMethods;->zajz:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/RegistrationMethods;->register:Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;
 
-    .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/api/internal/RegistrationMethods;->zaka:Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
+    iput-object p2, p0, Lcom/google/android/gms/common/api/internal/RegistrationMethods;->zaa:Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;
 
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;Lcom/google/android/gms/common/api/internal/zabx;)V
-    .locals 0
-
-    .line 6
-    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/common/api/internal/RegistrationMethods;-><init>(Lcom/google/android/gms/common/api/internal/RegisterListenerMethod;Lcom/google/android/gms/common/api/internal/UnregisterListenerMethod;)V
+    iput-object p3, p0, Lcom/google/android/gms/common/api/internal/RegistrationMethods;->zab:Ljava/lang/Runnable;
 
     return-void
 .end method
@@ -97,12 +77,11 @@
         }
     .end annotation
 
-    .line 5
     new-instance v0, Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;-><init>(Lcom/google/android/gms/common/api/internal/zabx;)V
+    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/internal/RegistrationMethods$Builder;-><init>(Lcom/google/android/gms/common/api/internal/zacm;)V
 
     return-object v0
 .end method

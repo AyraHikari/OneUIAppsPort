@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "algorithm"
+        }
+    .end annotation
 
     .line 114
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,6 +44,18 @@
 
 .method private doCheck(Ljava/lang/CharSequence;II)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cs",
+            "start",
+            "count"
+        }
+    .end annotation
 
     .line 140
     iget-object v0, p0, Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;->mAlgorithm:Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
@@ -73,6 +93,18 @@
 
 .method public isRtl(Ljava/lang/CharSequence;II)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cs",
+            "start",
+            "count"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -120,6 +152,18 @@
 
 .method public isRtl([CII)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "start",
+            "count"
+        }
+    .end annotation
 
     .line 125
     invoke-static {p1}, Ljava/nio/CharBuffer;->wrap([C)Ljava/nio/CharBuffer;

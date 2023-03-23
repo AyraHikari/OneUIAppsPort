@@ -1,4 +1,4 @@
-.class final Landroidx/viewpager/widget/ViewPager$2;
+.class Landroidx/viewpager/widget/ViewPager$2;
 .super Ljava/lang/Object;
 .source "ViewPager.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -31,6 +31,14 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
     const/high16 v0, 0x3f800000    # 1.0f
 

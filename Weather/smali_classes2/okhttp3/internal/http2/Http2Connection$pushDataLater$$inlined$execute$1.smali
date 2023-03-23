@@ -13,10 +13,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTaskQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TaskQueue.kt\nokhttp3/internal/concurrent/TaskQueue$execute$1\n+ 2 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection\n+ 3 Util.kt\nokhttp3/internal/Util\n*L\n1#1,218:1\n939#2:219\n940#2,8:222\n948#2:233\n395#3,2:220\n397#3,3:230\n*E\n*S KotlinDebug\n*F\n+ 1 Http2Connection.kt\nokhttp3/internal/http2/Http2Connection\n*L\n939#1,2:220\n939#1,3:230\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -43,19 +39,19 @@
 
 
 # instance fields
-.field final synthetic $buffer$inlined:Lokio/Buffer;
+.field public final synthetic $buffer$inlined:Lokio/Buffer;
 
-.field final synthetic $byteCount$inlined:I
+.field public final synthetic $byteCount$inlined:I
 
-.field final synthetic $cancelable:Z
+.field public final synthetic $cancelable:Z
 
-.field final synthetic $inFinished$inlined:Z
+.field public final synthetic $inFinished$inlined:Z
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $streamId$inlined:I
+.field public final synthetic $streamId$inlined:I
 
-.field final synthetic this$0:Lokhttp3/internal/http2/Http2Connection;
+.field public final synthetic this$0:Lokhttp3/internal/http2/Http2Connection;
 
 
 # direct methods
@@ -76,7 +72,6 @@
 
     iput-boolean p9, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->$inFinished$inlined:Z
 
-    .line 96
     invoke-direct {p0, p3, p4}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;Z)V
 
     return-void
@@ -87,7 +82,7 @@
 .method public runOnce()J
     .locals 5
 
-    .line 222
+    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -99,8 +94,6 @@
 
     iget-object v2, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->$buffer$inlined:Lokio/Buffer;
 
-    check-cast v2, Lokio/BufferedSource;
-
     iget v3, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->$byteCount$inlined:I
 
     iget-boolean v4, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->$inFinished$inlined:Z
@@ -111,7 +104,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 223
+    .line 2
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     invoke-virtual {v1}, Lokhttp3/internal/http2/Http2Connection;->getWriter()Lokhttp3/internal/http2/Http2Writer;
@@ -127,12 +120,12 @@
     :cond_0
     if-nez v0, :cond_1
 
-    .line 224
+    .line 3
     iget-boolean v0, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->$inFinished$inlined:Z
 
     if-eqz v0, :cond_2
 
-    .line 225
+    .line 4
     :cond_1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -140,7 +133,7 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 226
+    .line 5
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$pushDataLater$$inlined$execute$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -158,7 +151,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 225
+    .line 6
     :try_start_2
     monitor-exit v0
 

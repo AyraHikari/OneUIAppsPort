@@ -23,13 +23,8 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
-        "\u0000j\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0000\n\u0002\u0010\t\n\u0002\u0008\t\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0010\u000b\n\u0002\u0010\u0000\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0010\u0005\n\u0002\u0008\u0003\n\u0002\u0010\u0006\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0008\n\u0002\u0010\n\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u000e\u0008\u0087@\u0018\u0000 m2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001mB\u0014\u0008\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001b\u0010\u0008\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u0000H\u0097\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0014\u0010\u0015J\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J\u0013\u0010\u0019\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001a\u0010\u0005J\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001e\u0010\u001fJ\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008 \u0010\u000bJ\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008!\u0010\"J\u0013\u0010#\u001a\u00020$2\u0008\u0010\t\u001a\u0004\u0018\u00010%H\u00d6\u0003J\t\u0010&\u001a\u00020\rH\u00d6\u0001J\u0013\u0010\'\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008(\u0010\u0005J\u0013\u0010)\u001a\u00020\u0000H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008*\u0010\u0005J\u001b\u0010+\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008,\u0010\u001dJ\u001b\u0010+\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010\u001fJ\u001b\u0010+\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008.\u0010\u000bJ\u001b\u0010+\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008/\u0010\"J\u001b\u00100\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u00081\u0010\u000bJ\u001b\u00102\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00083\u0010\u001dJ\u001b\u00102\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00084\u0010\u001fJ\u001b\u00102\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u0010\u000bJ\u001b\u00102\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00086\u0010\"J\u001b\u00107\u001a\u0002082\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00089\u0010:J\u001b\u0010;\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010\u001dJ\u001b\u0010;\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008=\u0010\u001fJ\u001b\u0010;\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008>\u0010\u000bJ\u001b\u0010;\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008?\u0010\"J\u001b\u0010@\u001a\u00020\u00002\u0006\u0010A\u001a\u00020\rH\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008B\u0010\u001fJ\u001b\u0010C\u001a\u00020\u00002\u0006\u0010A\u001a\u00020\rH\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008D\u0010\u001fJ\u001b\u0010E\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008F\u0010\u001dJ\u001b\u0010E\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008G\u0010\u001fJ\u001b\u0010E\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008H\u0010\u000bJ\u001b\u0010E\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008I\u0010\"J\u0010\u0010J\u001a\u00020KH\u0087\u0008\u00a2\u0006\u0004\u0008L\u0010MJ\u0010\u0010N\u001a\u00020OH\u0087\u0008\u00a2\u0006\u0004\u0008P\u0010QJ\u0010\u0010R\u001a\u00020SH\u0087\u0008\u00a2\u0006\u0004\u0008T\u0010UJ\u0010\u0010V\u001a\u00020\rH\u0087\u0008\u00a2\u0006\u0004\u0008W\u0010XJ\u0010\u0010Y\u001a\u00020\u0003H\u0087\u0008\u00a2\u0006\u0004\u0008Z\u0010\u0005J\u0010\u0010[\u001a\u00020\\H\u0087\u0008\u00a2\u0006\u0004\u0008]\u0010^J\u000f\u0010_\u001a\u00020`H\u0016\u00a2\u0006\u0004\u0008a\u0010bJ\u0013\u0010c\u001a\u00020\u000eH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008d\u0010MJ\u0013\u0010e\u001a\u00020\u0011H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008f\u0010XJ\u0013\u0010g\u001a\u00020\u0000H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008h\u0010\u0005J\u0013\u0010i\u001a\u00020\u0016H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008j\u0010^J\u001b\u0010k\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008l\u0010\u000bR\u0016\u0010\u0002\u001a\u00020\u00038\u0000X\u0081\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0006\u0010\u0007\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006n"
+        "\u0000j\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0000\n\u0002\u0010\t\n\u0002\u0008\t\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0010\u000b\n\u0002\u0010\u0000\n\u0002\u0008\"\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0010\u0005\n\u0002\u0008\u0003\n\u0002\u0010\u0006\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0007\n\u0002\u0010\n\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u000e\u0008\u0087@\u0018\u0000 |2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001|B\u0014\u0008\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001b\u0010\u0008\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u0000H\u0097\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0014\u0010\u0015J\u001b\u0010\u000c\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J\u0016\u0010\u0019\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u001a\u0010\u0005J\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001e\u0010\u001fJ\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008 \u0010\u000bJ\u001b\u0010\u001b\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008!\u0010\"J\u001a\u0010#\u001a\u00020$2\u0008\u0010\t\u001a\u0004\u0018\u00010%H\u00d6\u0003\u00a2\u0006\u0004\u0008&\u0010\'J\u001b\u0010(\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008)\u0010\u001dJ\u001b\u0010(\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008*\u0010\u001fJ\u001b\u0010(\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010\u000bJ\u001b\u0010(\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008,\u0010\"J\u0010\u0010-\u001a\u00020\rH\u00d6\u0001\u00a2\u0006\u0004\u0008.\u0010/J\u0016\u00100\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00081\u0010\u0005J\u0016\u00102\u001a\u00020\u0000H\u0087\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00083\u0010\u0005J\u001b\u00104\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u0010\u001dJ\u001b\u00104\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00086\u0010\u001fJ\u001b\u00104\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00087\u0010\u000bJ\u001b\u00104\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u00088\u0010\"J\u001b\u00109\u001a\u00020\u000e2\u0006\u0010\t\u001a\u00020\u000eH\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008:\u0010;J\u001b\u00109\u001a\u00020\u00112\u0006\u0010\t\u001a\u00020\u0011H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010\u0013J\u001b\u00109\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008=\u0010\u000bJ\u001b\u00109\u001a\u00020\u00162\u0006\u0010\t\u001a\u00020\u0016H\u0087\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008>\u0010?J\u001b\u0010@\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008A\u0010\u000bJ\u001b\u0010B\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008C\u0010\u001dJ\u001b\u0010B\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008D\u0010\u001fJ\u001b\u0010B\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008E\u0010\u000bJ\u001b\u0010B\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008F\u0010\"J\u001b\u0010G\u001a\u00020H2\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008I\u0010JJ\u001b\u0010K\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008L\u0010\u001dJ\u001b\u0010K\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008M\u0010\u001fJ\u001b\u0010K\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008N\u0010\u000bJ\u001b\u0010K\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008O\u0010\"J\u001e\u0010P\u001a\u00020\u00002\u0006\u0010Q\u001a\u00020\rH\u0087\u000c\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008R\u0010\u001fJ\u001e\u0010S\u001a\u00020\u00002\u0006\u0010Q\u001a\u00020\rH\u0087\u000c\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008T\u0010\u001fJ\u001b\u0010U\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u000eH\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008V\u0010\u001dJ\u001b\u0010U\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0011H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008W\u0010\u001fJ\u001b\u0010U\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008X\u0010\u000bJ\u001b\u0010U\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0016H\u0087\n\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008Y\u0010\"J\u0010\u0010Z\u001a\u00020[H\u0087\u0008\u00a2\u0006\u0004\u0008\\\u0010]J\u0010\u0010^\u001a\u00020_H\u0087\u0008\u00a2\u0006\u0004\u0008`\u0010aJ\u0010\u0010b\u001a\u00020cH\u0087\u0008\u00a2\u0006\u0004\u0008d\u0010eJ\u0010\u0010f\u001a\u00020\rH\u0087\u0008\u00a2\u0006\u0004\u0008g\u0010/J\u0010\u0010h\u001a\u00020\u0003H\u0087\u0008\u00a2\u0006\u0004\u0008i\u0010\u0005J\u0010\u0010j\u001a\u00020kH\u0087\u0008\u00a2\u0006\u0004\u0008l\u0010mJ\u000f\u0010n\u001a\u00020oH\u0016\u00a2\u0006\u0004\u0008p\u0010qJ\u0016\u0010r\u001a\u00020\u000eH\u0087\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008s\u0010]J\u0016\u0010t\u001a\u00020\u0011H\u0087\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008u\u0010/J\u0016\u0010v\u001a\u00020\u0000H\u0087\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008w\u0010\u0005J\u0016\u0010x\u001a\u00020\u0016H\u0087\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008y\u0010mJ\u001b\u0010z\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0000H\u0087\u000c\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008{\u0010\u000bR\u0016\u0010\u0002\u001a\u00020\u00038\u0000X\u0081\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0006\u0010\u0007\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00f8\u0001\u0000\u0082\u0002\u0008\n\u0002\u0008\u0019\n\u0002\u0008!\u00a8\u0006}"
     }
     d2 = {
         "Lkotlin/ULong;",
@@ -38,7 +33,7 @@
         "",
         "constructor-impl",
         "(J)J",
-        "data$annotations",
+        "getData$annotations",
         "()V",
         "and",
         "other",
@@ -58,7 +53,7 @@
         "compareTo-xj2QHRw",
         "(JS)I",
         "dec",
-        "dec-impl",
+        "dec-s-VKNKU",
         "div",
         "div-7apg3OU",
         "(JB)J",
@@ -70,16 +65,32 @@
         "equals",
         "",
         "",
+        "equals-impl",
+        "(JLjava/lang/Object;)Z",
+        "floorDiv",
+        "floorDiv-7apg3OU",
+        "floorDiv-WZ4Q5Ns",
+        "floorDiv-VKZWuLQ",
+        "floorDiv-xj2QHRw",
         "hashCode",
+        "hashCode-impl",
+        "(J)I",
         "inc",
-        "inc-impl",
+        "inc-s-VKNKU",
         "inv",
-        "inv-impl",
+        "inv-s-VKNKU",
         "minus",
         "minus-7apg3OU",
         "minus-WZ4Q5Ns",
         "minus-VKZWuLQ",
         "minus-xj2QHRw",
+        "mod",
+        "mod-7apg3OU",
+        "(JB)B",
+        "mod-WZ4Q5Ns",
+        "mod-VKZWuLQ",
+        "mod-xj2QHRw",
+        "(JS)S",
         "or",
         "or-VKZWuLQ",
         "plus",
@@ -98,9 +109,9 @@
         "rem-xj2QHRw",
         "shl",
         "bitCount",
-        "shl-impl",
+        "shl-s-VKNKU",
         "shr",
-        "shr-impl",
+        "shr-s-VKNKU",
         "times",
         "times-7apg3OU",
         "times-WZ4Q5Ns",
@@ -120,7 +131,6 @@
         "(J)F",
         "toInt",
         "toInt-impl",
-        "(J)I",
         "toLong",
         "toLong-impl",
         "toShort",
@@ -132,13 +142,13 @@
         "toString-impl",
         "(J)Ljava/lang/String;",
         "toUByte",
-        "toUByte-impl",
+        "toUByte-w2LRezQ",
         "toUInt",
-        "toUInt-impl",
+        "toUInt-pVg5ArA",
         "toULong",
-        "toULong-impl",
+        "toULong-s-VKNKU",
         "toUShort",
-        "toUShort-impl",
+        "toUShort-Mh2AYeg",
         "xor",
         "xor-VKZWuLQ",
         "Companion",
@@ -147,9 +157,13 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/jvm/JvmInline;
 .end annotation
 
 
@@ -187,7 +201,7 @@
 .method private synthetic constructor <init>(J)V
     .locals 0
 
-    .line 15
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lkotlin/ULong;->data:J
@@ -200,7 +214,7 @@
 
     and-long/2addr p0, p2
 
-    .line 156
+    .line 260
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -227,7 +241,7 @@
 
     and-long/2addr v0, v2
 
-    .line 45
+    .line 46
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -242,10 +256,12 @@
 .method private compareTo-VKZWuLQ(J)I
     .locals 2
 
-    .line 1
-    iget-wide v0, p0, Lkotlin/ULong;->data:J
+    invoke-virtual {p0}, Lkotlin/ULong;->unbox-impl()J
 
-    invoke-static {v0, v1, p1, p2}, Lkotlin/ULong;->compareTo-VKZWuLQ(JJ)I
+    move-result-wide v0
+
+    .line 71
+    invoke-static {v0, v1, p1, p2}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result p1
 
@@ -255,7 +271,7 @@
 .method private static compareTo-VKZWuLQ(JJ)I
     .locals 0
 
-    .line 70
+    .line 71
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result p0
@@ -272,7 +288,7 @@
 
     and-long/2addr v0, v2
 
-    .line 61
+    .line 62
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -293,7 +309,7 @@
 
     and-long/2addr v0, v2
 
-    .line 53
+    .line 54
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -311,20 +327,14 @@
     return-wide p0
 .end method
 
-.method public static synthetic data$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method private static final dec-impl(J)J
+.method private static final dec-s-VKNKU(J)J
     .locals 2
 
     const-wide/16 v0, -0x1
 
     add-long/2addr p0, v0
 
-    .line 142
+    .line 234
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -341,7 +351,7 @@
 
     and-long/2addr v0, v2
 
-    .line 113
+    .line 114
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -356,7 +366,7 @@
 .method private static final div-VKZWuLQ(JJ)J
     .locals 0
 
-    .line 122
+    .line 123
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongDivide-eb3DHEI(JJ)J
 
     move-result-wide p0
@@ -373,7 +383,7 @@
 
     and-long/2addr v0, v2
 
-    .line 119
+    .line 120
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -394,7 +404,7 @@
 
     and-long/2addr v0, v2
 
-    .line 116
+    .line 117
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -407,28 +417,31 @@
 .end method
 
 .method public static equals-impl(JLjava/lang/Object;)Z
-    .locals 2
+    .locals 4
 
     instance-of v0, p2, Lkotlin/ULong;
 
-    if-eqz v0, :cond_0
+    const/4 v1, 0x0
 
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
     check-cast p2, Lkotlin/ULong;
 
     invoke-virtual {p2}, Lkotlin/ULong;->unbox-impl()J
 
-    move-result-wide v0
+    move-result-wide v2
 
-    cmp-long p0, p0, v0
+    cmp-long p0, p0, v2
 
-    if-nez p0, :cond_0
+    if-eqz p0, :cond_1
 
+    return v1
+
+    :cond_1
     const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
 
     return p0
 .end method
@@ -451,6 +464,86 @@
     return p0
 .end method
 
+.method private static final floorDiv-7apg3OU(JB)J
+    .locals 4
+
+    int-to-long v0, p2
+
+    const-wide/16 v2, 0xff
+
+    and-long/2addr v0, v2
+
+    .line 160
+    invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
+
+    move-result-wide v0
+
+    invoke-static {p0, p1, v0, v1}, Lkotlin/UnsignedKt;->ulongDivide-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final floorDiv-VKZWuLQ(JJ)J
+    .locals 0
+
+    .line 181
+    invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongDivide-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final floorDiv-WZ4Q5Ns(JI)J
+    .locals 4
+
+    int-to-long v0, p2
+
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr v0, v2
+
+    .line 174
+    invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
+
+    move-result-wide v0
+
+    invoke-static {p0, p1, v0, v1}, Lkotlin/UnsignedKt;->ulongDivide-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final floorDiv-xj2QHRw(JS)J
+    .locals 4
+
+    int-to-long v0, p2
+
+    const-wide/32 v2, 0xffff
+
+    and-long/2addr v0, v2
+
+    .line 167
+    invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
+
+    move-result-wide v0
+
+    invoke-static {p0, p1, v0, v1}, Lkotlin/UnsignedKt;->ulongDivide-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static synthetic getData$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public static hashCode-impl(J)I
     .locals 2
 
@@ -465,14 +558,14 @@
     return p0
 .end method
 
-.method private static final inc-impl(J)J
+.method private static final inc-s-VKNKU(J)J
     .locals 2
 
     const-wide/16 v0, 0x1
 
     add-long/2addr p0, v0
 
-    .line 139
+    .line 226
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -480,12 +573,12 @@
     return-wide p0
 .end method
 
-.method private static final inv-impl(J)J
+.method private static final inv-s-VKNKU(J)J
     .locals 0
 
     not-long p0, p0
 
-    .line 165
+    .line 269
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -502,7 +595,7 @@
 
     and-long/2addr v0, v2
 
-    .line 87
+    .line 88
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -521,7 +614,7 @@
 
     sub-long/2addr p0, p2
 
-    .line 96
+    .line 97
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -538,7 +631,7 @@
 
     and-long/2addr v0, v2
 
-    .line 93
+    .line 94
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -561,7 +654,7 @@
 
     and-long/2addr v0, v2
 
-    .line 90
+    .line 91
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -575,12 +668,108 @@
     return-wide p0
 .end method
 
+.method private static final mod-7apg3OU(JB)B
+    .locals 4
+
+    int-to-long v0, p2
+
+    const-wide/16 v2, 0xff
+
+    and-long/2addr v0, v2
+
+    .line 191
+    invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
+
+    move-result-wide v0
+
+    invoke-static {p0, p1, v0, v1}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    long-to-int p0, p0
+
+    int-to-byte p0, p0
+
+    invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static final mod-VKZWuLQ(JJ)J
+    .locals 0
+
+    .line 218
+    invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final mod-WZ4Q5Ns(JI)I
+    .locals 4
+
+    int-to-long v0, p2
+
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr v0, v2
+
+    .line 209
+    invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
+
+    move-result-wide v0
+
+    invoke-static {p0, p1, v0, v1}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static final mod-xj2QHRw(JS)S
+    .locals 4
+
+    int-to-long v0, p2
+
+    const-wide/32 v2, 0xffff
+
+    and-long/2addr v0, v2
+
+    .line 200
+    invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
+
+    move-result-wide v0
+
+    invoke-static {p0, p1, v0, v1}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
+
+    move-result-wide p0
+
+    long-to-int p0, p0
+
+    int-to-short p0, p0
+
+    invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
+
+    move-result p0
+
+    return p0
+.end method
+
 .method private static final or-VKZWuLQ(JJ)J
     .locals 0
 
     or-long/2addr p0, p2
 
-    .line 159
+    .line 263
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -597,7 +786,7 @@
 
     and-long/2addr v0, v2
 
-    .line 74
+    .line 75
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -616,7 +805,7 @@
 
     add-long/2addr p0, p2
 
-    .line 83
+    .line 84
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -633,7 +822,7 @@
 
     and-long/2addr v0, v2
 
-    .line 80
+    .line 81
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -656,7 +845,7 @@
 
     and-long/2addr v0, v2
 
-    .line 77
+    .line 78
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -673,7 +862,7 @@
 .method private static final rangeTo-VKZWuLQ(JJ)Lkotlin/ranges/ULongRange;
     .locals 7
 
-    .line 146
+    .line 238
     new-instance v6, Lkotlin/ranges/ULongRange;
 
     const/4 v5, 0x0
@@ -698,7 +887,7 @@
 
     and-long/2addr v0, v2
 
-    .line 126
+    .line 131
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -713,7 +902,7 @@
 .method private static final rem-VKZWuLQ(JJ)J
     .locals 0
 
-    .line 135
+    .line 152
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
 
     move-result-wide p0
@@ -730,7 +919,7 @@
 
     and-long/2addr v0, v2
 
-    .line 132
+    .line 145
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -751,7 +940,7 @@
 
     and-long/2addr v0, v2
 
-    .line 129
+    .line 138
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -763,12 +952,12 @@
     return-wide p0
 .end method
 
-.method private static final shl-impl(JI)J
+.method private static final shl-s-VKNKU(JI)J
     .locals 0
 
     shl-long/2addr p0, p2
 
-    .line 150
+    .line 247
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -776,12 +965,12 @@
     return-wide p0
 .end method
 
-.method private static final shr-impl(JI)J
+.method private static final shr-s-VKNKU(JI)J
     .locals 0
 
     ushr-long/2addr p0, p2
 
-    .line 153
+    .line 256
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -798,7 +987,7 @@
 
     and-long/2addr v0, v2
 
-    .line 100
+    .line 101
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -817,7 +1006,7 @@
 
     mul-long/2addr p0, p2
 
-    .line 109
+    .line 110
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -834,7 +1023,7 @@
 
     and-long/2addr v0, v2
 
-    .line 106
+    .line 107
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -857,7 +1046,7 @@
 
     and-long/2addr v0, v2
 
-    .line 103
+    .line 104
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -884,7 +1073,7 @@
 .method private static final toDouble-impl(J)D
     .locals 0
 
-    .line 262
+    .line 366
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
     move-result-wide p0
@@ -895,7 +1084,7 @@
 .method private static final toFloat-impl(J)F
     .locals 0
 
-    .line 253
+    .line 357
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
     move-result-wide p0
@@ -932,7 +1121,7 @@
 .method public static toString-impl(J)Ljava/lang/String;
     .locals 0
 
-    .line 264
+    .line 368
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->ulongToString(J)Ljava/lang/String;
 
     move-result-object p0
@@ -940,14 +1129,14 @@
     return-object p0
 .end method
 
-.method private static final toUByte-impl(J)B
+.method private static final toUByte-w2LRezQ(J)B
     .locals 0
 
     long-to-int p0, p0
 
     int-to-byte p0, p0
 
-    .line 220
+    .line 324
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
 
     move-result p0
@@ -955,12 +1144,12 @@
     return p0
 .end method
 
-.method private static final toUInt-impl(J)I
+.method private static final toUInt-pVg5ArA(J)I
     .locals 0
 
     long-to-int p0, p0
 
-    .line 240
+    .line 344
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -968,20 +1157,20 @@
     return p0
 .end method
 
-.method private static final toULong-impl(J)J
+.method private static final toULong-s-VKNKU(J)J
     .locals 0
 
     return-wide p0
 .end method
 
-.method private static final toUShort-impl(J)S
+.method private static final toUShort-Mh2AYeg(J)S
     .locals 0
 
     long-to-int p0, p0
 
     int-to-short p0, p0
 
-    .line 230
+    .line 334
     invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
 
     move-result p0
@@ -994,7 +1183,7 @@
 
     xor-long/2addr p0, p2
 
-    .line 162
+    .line 266
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -1005,16 +1194,20 @@
 
 # virtual methods
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
-    .locals 2
+    .locals 4
 
-    .line 15
+    .line 13
     check-cast p1, Lkotlin/ULong;
 
     invoke-virtual {p1}, Lkotlin/ULong;->unbox-impl()J
 
     move-result-wide v0
 
-    invoke-direct {p0, v0, v1}, Lkotlin/ULong;->compareTo-VKZWuLQ(J)I
+    invoke-virtual {p0}, Lkotlin/ULong;->unbox-impl()J
+
+    move-result-wide v2
+
+    invoke-static {v2, v3, v0, v1}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result p1
 
@@ -1024,7 +1217,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lkotlin/ULong;->data:J
 
     invoke-static {v0, v1, p1}, Lkotlin/ULong;->equals-impl(JLjava/lang/Object;)Z
@@ -1037,7 +1229,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lkotlin/ULong;->data:J
 
     invoke-static {v0, v1}, Lkotlin/ULong;->hashCode-impl(J)I
@@ -1050,7 +1241,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
+    .line 368
     iget-wide v0, p0, Lkotlin/ULong;->data:J
 
     invoke-static {v0, v1}, Lkotlin/ULong;->toString-impl(J)Ljava/lang/String;

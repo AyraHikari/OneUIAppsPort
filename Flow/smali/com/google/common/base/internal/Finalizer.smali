@@ -320,11 +320,9 @@
 
     if-eqz p1, :cond_0
 
-    .line 92
-    sget-object p1, Lcom/google/common/base/internal/Finalizer;->inheritableThreadLocals:Ljava/lang/reflect/Field;
-
     const/4 p2, 0x0
 
+    .line 92
     invoke-virtual {p1, p0, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

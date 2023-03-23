@@ -26,6 +26,16 @@
 
 .method public static issueReport(Landroid/content/Context;Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cxt",
+            "isb"
+        }
+    .end annotation
 
     .line 125
     invoke-static {p0, p1}, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->access$000(Landroid/content/Context;Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;)Z

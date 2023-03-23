@@ -1,50 +1,14 @@
-.class public final Lcom/google/android/gms/internal/icing/zzeb;
-.super Lcom/google/android/gms/internal/icing/zzef;
-
-
-# direct methods
-.method public static zzcb()Lcom/google/android/gms/internal/icing/zzex;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
-.end method
+.class interface abstract Lcom/google/android/gms/internal/icing/zzeb;
+.super Ljava/lang/Object;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 3
-    new-instance p1, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw p1
+.method public abstract zza()Z
 .end method
 
-.method public final hashCode()I
-    .locals 1
-
-    .line 2
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
+.method public abstract zzb()Lcom/google/android/gms/internal/icing/zzee;
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 4
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
+.method public abstract zzc()I
 .end method

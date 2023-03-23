@@ -8,18 +8,9 @@
         <item quantity="few">%d fișiere adăugate în lista fișierelor transferate.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Înregistrați și gestionați până la %d computere sau tablete în serviciul Samsung Flow.
-
-La telefonul dvs. se poate conecta doar un computer sau o tabletă concomitent. Va trebui să alegeți unul dintre dispozitive atunci când ambele computere sau tablete înregistrate încearcă să se conecteze la telefon."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Înregistrați și gestionați până la %d computer sau tabletă în serviciul Samsung Flow.
-
-La telefonul dvs. se poate conecta doar un computer sau o tabletă concomitent. Va trebui să alegeți unul dintre dispozitive atunci când ambele computere sau tablete înregistrate încearcă să se conecteze la telefon."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">"Înregistrați și gestionați până la %d computere sau tablete în serviciul Samsung Flow.
-
-La telefonul dvs. se poate conecta doar un computer sau o tabletă concomitent. Va trebui să alegeți unul dintre dispozitive atunci când ambele computere sau tablete înregistrate încearcă să se conecteze la telefon."</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d de notificări noi</item>
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
     </plurals>
 </resources>

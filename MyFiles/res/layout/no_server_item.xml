@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/no_network_scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/add_server_btn" android:background="@drawable/network_add_server_btn_bg" android:paddingTop="@dimen/home_analyze_storage_btn_contents_padding_vertical" android:paddingBottom="@dimen/home_analyze_storage_btn_contents_padding_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" android:paddingStart="@dimen/home_analyze_storage_btn_contents_padding_horizontal" android:paddingEnd="@dimen/home_analyze_storage_btn_contents_padding_horizontal">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_add_icon" android:scaleType="centerInside" android:tint="@color/contained_button_text_color" android:layout_marginEnd="@dimen/network_add_server_icon_margin_end" />
+                <TextView android:textSize="@dimen/network_add_server_btn_text_size" android:textColor="@color/contained_button_text_color" android:ellipsize="end" android:id="@id/add_server_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/RobotoMedium" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <TextView android:textSize="@dimen/no_item_sub_text_size" android:textColor="@color/no_item_sub_text" android:gravity="center" android:id="@id/add_server_btn_sub_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/network_layout_margin_top" android:layout_weight="0.75" style="@style/RobotoRegular" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

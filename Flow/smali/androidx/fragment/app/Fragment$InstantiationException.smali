@@ -17,8 +17,18 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "msg",
+            "cause"
+        }
+    .end annotation
 
-    .line 392
+    .line 530
     invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void

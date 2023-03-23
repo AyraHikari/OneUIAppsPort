@@ -19,6 +19,14 @@
 
 .method private clearSavedHapticFeedbackValue(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "SamsungFlowPreference"
 
@@ -49,6 +57,14 @@
 
 .method private getSavedHapticFeedbackValue(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "SamsungFlowPreference"
 
@@ -73,6 +89,14 @@
 
 .method private saveUserSettingValue(Landroid/content/Context;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 33
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -96,7 +120,11 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -141,6 +169,14 @@
 # virtual methods
 .method declared-synchronized restoreHapticFeedBack(Landroid/content/Context;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -184,11 +220,19 @@
 
 .method declared-synchronized turnOffHapticFeedBack(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     monitor-enter p0
 
     :try_start_0
-    const-string v0, "vibrate level => 0"
+    const-string/jumbo v0, "vibrate level => 0"
 
     .line 13
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V

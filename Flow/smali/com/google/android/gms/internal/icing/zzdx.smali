@@ -1,38 +1,16 @@
-.class public interface abstract Lcom/google/android/gms/internal/icing/zzdx;
+.class public final Lcom/google/android/gms/internal/icing/zzdx;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/util/List;
-.implements Ljava/util/RandomAccess;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/List<",
-        "TE;>;",
-        "Ljava/util/RandomAccess;"
+        "Ljava/lang/Object;"
     }
 .end annotation
-
-
-# virtual methods
-.method public abstract zzag()Z
-.end method
-
-.method public abstract zzah()V
-.end method
-
-.method public abstract zzj(I)Lcom/google/android/gms/internal/icing/zzdx;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)",
-            "Lcom/google/android/gms/internal/icing/zzdx<",
-            "TE;>;"
-        }
-    .end annotation
-.end method

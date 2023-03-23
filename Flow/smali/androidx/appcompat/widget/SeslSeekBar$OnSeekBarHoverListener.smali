@@ -16,10 +16,40 @@
 
 # virtual methods
 .method public abstract onHoverChanged(Landroidx/appcompat/widget/SeslSeekBar;IZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "seekBar",
+            "hoverLevel",
+            "fromUser"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStartTrackingHover(Landroidx/appcompat/widget/SeslSeekBar;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "seekBar",
+            "hoverLevel"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStopTrackingHover(Landroidx/appcompat/widget/SeslSeekBar;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "seekBar"
+        }
+    .end annotation
 .end method

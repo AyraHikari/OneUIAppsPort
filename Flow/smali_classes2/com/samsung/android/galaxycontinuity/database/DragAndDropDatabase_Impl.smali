@@ -233,6 +233,14 @@
 
 .method protected createOpenHelper(Landroidx/room/DatabaseConfiguration;)Landroidx/sqlite/db/SupportSQLiteOpenHelper;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "configuration"
+        }
+    .end annotation
 
     .line 32
     new-instance v0, Landroidx/room/RoomOpenHelper;

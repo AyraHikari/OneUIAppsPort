@@ -1,22 +1,13 @@
 .class final Lcom/google/android/gms/location/zza;
 .super Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/api/Api$AbstractClientBuilder<",
-        "Lcom/google/android/gms/internal/location/zzaz;",
-        "Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;",
-        ">;"
-    }
-.end annotation
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # direct methods
 .method constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;-><init>()V
 
     return-void
@@ -24,24 +15,30 @@
 
 
 # virtual methods
-.method public final synthetic buildClient(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
-    .locals 6
+.method public final bridge synthetic buildClient(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Ljava/lang/Object;Lcom/google/android/gms/common/api/internal/ConnectionCallbacks;Lcom/google/android/gms/common/api/internal/OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
+    .locals 7
 
-    new-instance p3, Lcom/google/android/gms/internal/location/zzaz;
+    .line 1
+    check-cast p4, Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;
 
-    const-string v5, "activity_recognition"
+    .line 2
+    new-instance p4, Lcom/google/android/gms/internal/location/zzbe;
 
-    move-object v0, p3
+    const-string v6, "activity_recognition"
+
+    move-object v0, p4
 
     move-object v1, p1
 
     move-object v2, p2
 
-    move-object v3, p5
+    move-object v3, p3
 
-    move-object v4, p6
+    move-object v4, p5
 
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/internal/location/zzaz;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;Ljava/lang/String;)V
+    move-object v5, p6
 
-    return-object p3
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/internal/location/zzbe;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/ClientSettings;Lcom/google/android/gms/common/api/internal/ConnectionCallbacks;Lcom/google/android/gms/common/api/internal/OnConnectionFailedListener;Ljava/lang/String;)V
+
+    return-object p4
 .end method

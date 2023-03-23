@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
     .line 486
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1$3;->this$1:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;
@@ -37,6 +45,16 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "which"
+        }
+    .end annotation
 
     .line 490
     new-instance p1, Ljava/util/HashMap;

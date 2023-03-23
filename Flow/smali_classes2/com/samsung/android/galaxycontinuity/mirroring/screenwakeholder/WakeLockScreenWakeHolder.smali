@@ -40,6 +40,14 @@
 # virtual methods
 .method public holdScreen(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] holdScreen"
 
@@ -74,13 +82,11 @@
 
     if-eqz p1, :cond_1
 
-    .line 27
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/WakeLockScreenWakeHolder;->mPowerManager:Landroid/os/PowerManager;
-
     const v0, 0x10000006
 
     const-string v1, "WAKELOCKSCEENWAKEHOLDER"
 
+    .line 27
     invoke-virtual {p1, v0, v1}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object p1
@@ -146,13 +152,17 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p1}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -165,6 +175,14 @@
 
 .method public releaseScreen(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] releaseScreen"
 
@@ -219,8 +237,6 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/WakeLockScreenWakeHolder;->mHoldScreenWakeLock:Landroid/os/PowerManager$WakeLock;
-
     invoke-virtual {p1}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
     move-result p1
@@ -272,6 +288,14 @@
 
 .method public turnScreenOn(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] turnScreenOn"
 

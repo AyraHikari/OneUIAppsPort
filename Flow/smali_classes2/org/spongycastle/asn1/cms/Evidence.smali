@@ -82,7 +82,7 @@
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown object in getInstance"
+    const-string/jumbo v0, "unknown object in getInstance"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

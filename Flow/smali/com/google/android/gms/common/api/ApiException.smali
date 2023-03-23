@@ -1,21 +1,25 @@
 .class public Lcom/google/android/gms/common/api/ApiException;
 .super Ljava/lang/Exception;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # instance fields
 .field protected final mStatus:Lcom/google/android/gms/common/api/Status;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/gms/common/api/Status;)V
     .locals 4
 
-    .line 2
+    .line 1
     invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->getStatusCode()I
 
     move-result v0
 
-    .line 3
+    .line 2
     invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->getStatusMessage()Ljava/lang/String;
 
     move-result-object v1
@@ -40,9 +44,9 @@
 
     move-result v2
 
-    add-int/lit8 v2, v2, 0xd
-
     new-instance v3, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v2, v2, 0xd
 
     invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
@@ -58,10 +62,9 @@
 
     move-result-object v0
 
-    .line 4
+    .line 3
     invoke-direct {p0, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    .line 5
     iput-object p1, p0, Lcom/google/android/gms/common/api/ApiException;->mStatus:Lcom/google/android/gms/common/api/Status;
 
     return-void
@@ -69,10 +72,18 @@
 
 
 # virtual methods
+.method public getStatus()Lcom/google/android/gms/common/api/Status;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/ApiException;->mStatus:Lcom/google/android/gms/common/api/Status;
+
+    return-object v0
+.end method
+
 .method public getStatusCode()I
     .locals 1
 
-    .line 7
+    .line 1
     iget-object v0, p0, Lcom/google/android/gms/common/api/ApiException;->mStatus:Lcom/google/android/gms/common/api/Status;
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/Status;->getStatusCode()I
@@ -87,7 +98,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 8
+    .line 1
     iget-object v0, p0, Lcom/google/android/gms/common/api/ApiException;->mStatus:Lcom/google/android/gms/common/api/Status;
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/Status;->getStatusMessage()Ljava/lang/String;

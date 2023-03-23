@@ -7,11 +7,8 @@
 
 
 # virtual methods
-.method public abstract addColorFilter(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/ColorFilter;)V
-.end method
-
 .method public abstract draw(Landroid/graphics/Canvas;Landroid/graphics/Matrix;I)V
 .end method
 
-.method public abstract getBounds(Landroid/graphics/RectF;Landroid/graphics/Matrix;)V
+.method public abstract getBounds(Landroid/graphics/RectF;Landroid/graphics/Matrix;Z)V
 .end method

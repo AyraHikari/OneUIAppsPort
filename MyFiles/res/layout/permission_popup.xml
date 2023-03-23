@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/request_permission_popup_padding" android:paddingEnd="@dimen/request_permission_popup_padding">
+        <TextView android:textSize="@dimen/request_permission_popup_text_size" android:textColor="@color/dialog_body_text_color" android:id="@id/request_permission_msg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/request_permission_popup_padding" android:text="@string/unable_to_open_ps_tap_settings_then_allow_the_following_permissions_and_try_again" android:lineSpacingExtra="@dimen/request_permission_popup_text_linespace" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/request_permission_popup_permission_top_padding" android:layout_marginBottom="@dimen/request_permission_popup_permission_bottom_padding">
+            <RelativeLayout android:id="@id/request_permission_rationale_image_layout" android:layout_width="@dimen/request_permission_popup_permission_img_layout_size" android:layout_height="@dimen/request_permission_popup_permission_height">
+                <ImageView android:id="@id/request_permission_rationale_image" android:layout_width="@dimen/request_permission_popup_permission_img_size" android:layout_height="@dimen/request_permission_popup_permission_img_size" android:tint="@color/request_permission_popup_image_background_color" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/request_permission_popup_permission_text_size" android:textColor="@color/dialog_body_text_color" android:gravity="center_vertical" android:id="@id/request_permission_rationale_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/request_permission_popup_permission_text_padding" android:layout_toEndOf="@id/request_permission_rationale_image_layout" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

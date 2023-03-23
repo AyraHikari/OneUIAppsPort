@@ -34,6 +34,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/DLCLogSender;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 22
     iput-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/DLCLogSender$1;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/DLCLogSender;
@@ -47,6 +55,14 @@
 # virtual methods
 .method public bridge synthetic onResult(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "param"
+        }
+    .end annotation
 
     .line 22
     check-cast p1, Ljava/lang/Void;
@@ -60,6 +76,14 @@
 
 .method public onResult(Ljava/lang/Void;)Ljava/lang/Void;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "param"
+        }
+    .end annotation
 
     .line 25
     iget-object p1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/DLCLogSender$1;->this$0:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/DLCLogSender;

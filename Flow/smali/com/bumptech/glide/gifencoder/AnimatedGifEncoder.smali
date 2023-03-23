@@ -118,25 +118,27 @@
     .line 311
     iget-object v0, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->pixels:[B
 
-    array-length v1, v0
+    array-length v0, v0
 
     .line 312
-    div-int/lit8 v2, v1, 0x3
+    div-int/lit8 v1, v0, 0x3
 
     .line 313
-    new-array v3, v2, [B
+    new-array v2, v1, [B
 
-    iput-object v3, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->indexedPixels:[B
+    iput-object v2, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->indexedPixels:[B
 
     .line 314
-    new-instance v3, Lcom/bumptech/glide/gifencoder/NeuQuant;
+    new-instance v2, Lcom/bumptech/glide/gifencoder/NeuQuant;
+
+    iget-object v3, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->pixels:[B
 
     iget v4, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->sample:I
 
-    invoke-direct {v3, v0, v1, v4}, Lcom/bumptech/glide/gifencoder/NeuQuant;-><init>([BII)V
+    invoke-direct {v2, v3, v0, v4}, Lcom/bumptech/glide/gifencoder/NeuQuant;-><init>([BII)V
 
     .line 316
-    invoke-virtual {v3}, Lcom/bumptech/glide/gifencoder/NeuQuant;->process()[B
+    invoke-virtual {v2}, Lcom/bumptech/glide/gifencoder/NeuQuant;->process()[B
 
     move-result-object v0
 
@@ -144,7 +146,7 @@
 
     const/4 v0, 0x0
 
-    move v1, v0
+    move v3, v0
 
     .line 318
     :goto_0
@@ -152,17 +154,17 @@
 
     array-length v5, v4
 
-    if-ge v1, v5, :cond_0
+    if-ge v3, v5, :cond_0
 
     .line 319
-    aget-byte v5, v4, v1
+    aget-byte v5, v4, v3
 
-    add-int/lit8 v6, v1, 0x2
+    add-int/lit8 v6, v3, 0x2
 
     .line 320
     aget-byte v7, v4, v6
 
-    aput-byte v7, v4, v1
+    aput-byte v7, v4, v3
 
     .line 321
     aput-byte v5, v4, v6
@@ -170,21 +172,21 @@
     .line 322
     iget-object v4, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->usedEntry:[Z
 
-    div-int/lit8 v5, v1, 0x3
+    div-int/lit8 v5, v3, 0x3
 
     aput-boolean v0, v4, v5
 
-    add-int/lit8 v1, v1, 0x3
+    add-int/lit8 v3, v3, 0x3
 
     goto :goto_0
 
     :cond_0
-    move v1, v0
+    move v3, v0
 
-    move v4, v1
+    move v4, v3
 
     :goto_1
-    if-ge v1, v2, :cond_1
+    if-ge v3, v1, :cond_1
 
     .line 327
     iget-object v5, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->pixels:[B
@@ -207,7 +209,7 @@
 
     and-int/lit16 v5, v5, 0xff
 
-    invoke-virtual {v3, v4, v6, v5}, Lcom/bumptech/glide/gifencoder/NeuQuant;->map(III)I
+    invoke-virtual {v2, v4, v6, v5}, Lcom/bumptech/glide/gifencoder/NeuQuant;->map(III)I
 
     move-result v4
 
@@ -223,9 +225,9 @@
 
     int-to-byte v4, v4
 
-    aput-byte v4, v5, v1
+    aput-byte v4, v5, v3
 
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     move v4, v8
 
@@ -409,14 +411,12 @@
 
     if-ne v7, v0, :cond_0
 
-    iget v0, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->height:I
+    iget v1, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->height:I
 
-    if-eq v8, v0, :cond_1
+    if-eq v8, v1, :cond_1
 
     .line 379
     :cond_0
-    iget v0, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->width:I
-
     iget v1, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->height:I
 
     sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
@@ -570,11 +570,17 @@
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, "% transparent pixels"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1264,20 +1270,17 @@
     .line 258
     iput p2, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->height:I
 
-    const/4 p2, 0x1
+    const/4 v0, 0x1
 
-    if-ge p1, p2, :cond_1
+    if-ge p1, v0, :cond_1
 
     const/16 p1, 0x140
 
     .line 260
     iput p1, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->width:I
 
-    .line 261
     :cond_1
-    iget p1, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->height:I
-
-    if-ge p1, p2, :cond_2
+    if-ge p2, v0, :cond_2
 
     const/16 p1, 0xf0
 
@@ -1286,7 +1289,7 @@
 
     .line 263
     :cond_2
-    iput-boolean p2, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->sizeSet:Z
+    iput-boolean v0, p0, Lcom/bumptech/glide/gifencoder/AnimatedGifEncoder;->sizeSet:Z
 
     return-void
 .end method

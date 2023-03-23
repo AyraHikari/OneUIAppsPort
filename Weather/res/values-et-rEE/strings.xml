@@ -33,6 +33,7 @@
     <string name="air_quality">Õhukvaliteet</string>
     <string name="air_quality_next_tts">Hilisemad igapäevased õhukvaliteedi ennustused</string>
     <string name="air_quality_previous_tts">Varasemad igapäevased õhukvaliteedi ennustused</string>
+    <string name="alert_title">Ohtliku ilma hoiatus</string>
     <string name="all_added_cities">Kõik lisatud linnad</string>
     <string name="allow">Luba</string>
     <string name="allow_permission_in_settings">Selle funktsiooni kasutamiseks peate seadetes vajalikud load andma.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Toimingut ei toetata.</string>
     <string name="apply_daylight_saving_time">Rakenda suveaeg?</string>
     <string name="as_possible_after_verification">Aruanne on saadetud. Linna nime muudetakse pärast kinnitamist esimesel võimalusel.</string>
+    <string name="auto_refresh_on_screen_description">Hankige uuendatud ilmateavet iga tund automaatselt. Kui see on sisse lülitatud, ei saa te käsitsi värskendada.</string>
+    <string name="auto_refresh_on_the_go">Automaatne värskendamine liikumisel</string>
+    <string name="auto_refresh_on_the_go_advanced">Täiustatud</string>
+    <string name="auto_refresh_on_the_go_description">Hankige autoga sõites, jalgrattaga sõites, joostes või kõndides sagedamini ilmateateid. Kui see on sisse lülitatud, ei saa te käsitsi värskendada.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Hankige autoga sõites, jalgrattaga sõites, joostes või kõndides sagedamini ilmateateid.</string>
     <string name="btn_report">Aruan.</string>
     <string name="button_finish">Lõpeta</string>
     <string name="button_tts">Nupp</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Lisateabe saamiseks toksake kaks korda.</string>
     <string name="china">Hiina</string>
     <string name="cities_button">Linnad</string>
+    <string name="city_added">Linn on lisatud.</string>
     <string name="city_list_text">Linnad</string>
     <string name="clear">Tühjenda</string>
     <string name="clear_then_cloudy">Selge, hiljem pilves</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Üksus on lohistatud asukohta %d.</string>
     <string name="dragndroplist_drag_start">Alustati üksuse lohistamist asukohas %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Üksust asukohas %d ei saa lohistada.</string>
+    <string name="drawer_tips">Seadme %s näpunäited</string>
     <string name="drawer_tips_message">Toksake siia, et asukohti lisada, kustutada ja ümber järjestada. Samuti saate lisada mitu vidinat, et kuvada avaekraanil erinevaid asukohti.</string>
     <string name="drawer_tips_message_1">Toksake selle menüü alaosas valikut Asukohtade haldamine, et asukohti lisada, kustutada ja ümber järjestada.</string>
     <string name="drawer_tips_message_2">Saate lisada avaekraanile üle ühe vidina, et kuvada samal ajal erinevaid asukohti.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Ilmaennustuse video</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s miili/h</string>
+    <string name="fri">R</string>
     <string name="general">Üldine</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Saate isikupärastatud sisu vastavalt sellele, kuidas oma telefoni kasutate.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Saate isikupärastatud sisu vastavalt sellele, kuidas oma tahvelseadet kasutate.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">hankige ilmateavet, sealhulgas teie praegust asukohta, teenusest Weather</string>
     <string name="go_to_website">Ava veebisait</string>
     <string name="goto_apps">Uus värskendus on saadaval. Kas installida kohe?</string>
     <string name="goto_apps_later">Hiljem</string>
     <string name="goto_apps_now">Praegu</string>
     <string name="goto_apps_update_title">Uue sisu märguanded</string>
     <string name="header_tts">Päis</string>
+    <string name="heavy">Tugev</string>
     <string name="heavy_rain">Tugev sadu</string>
     <string name="heavy_rain_followed_by_intense_heat">Tugev sadu, hiljem kuumalaine</string>
     <string name="heavy_rain_followed_by_light_rain">Tugev sadu, hiljem kuumalaine</string>
@@ -210,7 +221,7 @@
     <string name="how_to_add_delete_set_location_as_favorite">Lisage või kustutage koht või lisage see oma lemmikuks.</string>
     <string name="how_to_add_hold_a_blank">Selleks, et lisada ilmavidin avaekraanile:</string>
     <string name="how_to_change_the_location_appearance">Vidina asukoha või välimuse muutmiseks vajutage ja hoidke, seejärel toksake valikut Seaded.</string>
-    <string name="how_to_favorite_location_used_in_location">Teie lemmikasukohta kasutatakse teavitustes, kalendris ja Always On Displayl.</string>
+    <string name="how_to_favorite_location_used_in_location">Teie lemmikasukohta kasutatakse teavitustes, kalendris ja Always On Display’l.</string>
     <string name="how_to_press_and_hold_space">Vajutage ja hoidke avaekraanil tühja kohta, seejärel toksake valikut Vidinad.</string>
     <string name="how_to_press_and_hold_widget">Vajutage ja hoidke vidinat, et see valida.</string>
     <string name="how_to_search_or_swipe">Otsige või libistage, et leida Ilm.</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Nähtavus</string>
     <string name="life_index_wind">Tuul</string>
     <string name="life_index_wind_force">Tuulekiirus</string>
+    <string name="light">Kerge</string>
     <string name="light_rain_followed_by_heavy_rain">Kerge vihm, hiljem tugev sadu</string>
     <string name="light_rain_with_some_heavy_rain">Kerge vihm tugevamate sajuhoogudega</string>
     <string name="link_tts">Link</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Tulemusi ei leitud.</string>
     <string name="message_service_not_available">Teenus ei ole praegu saadaval.</string>
     <string name="minus_tts">Miinus</string>
+    <string name="mon">E</string>
     <string name="more">Veel</string>
     <string name="more_cuntact_us">Võtke meiega ühendust</string>
     <string name="more_information">Veel</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Toksake siia, et muuta vaikimisi ilmateate asukohta ja hallata kõiki oma asukohtasid.</string>
     <string name="new_version_available">Saadaval on rakenduse %s uus versioon.</string>
     <string name="new_version_is_available">Uus versioon on saadaval.</string>
+    <string name="news_menu_show_news">Näita uudiseid</string>
+    <string name="news_opt_in_banner_title_text">Saate püsida jooksvate sündmustega kursis, näidates uudiseid ilmateate vidina kaudu.</string>
+    <string name="news_opt_in_popup_desc_text">Püsige maailmaga kursis, näidates %s uusimaid pealkirju ilmateate vidina abil.</string>
+    <string name="news_opt_in_popup_title_text">Vaadake uudiseid ja ilmateateid ühes vidinas</string>
+    <string name="news_request_agree_text">Puudutage, et saada uudiseid teenusest %s</string>
+    <string name="news_widget_bubble_text">Hankige uudiseid ilmaga.</string>
+    <string name="news_widget_dummy_title">Tänased põhilood</string>
+    <string name="news_widget_new_dummy_title">5 asja, mida peate täna hommikul teadma</string>
+    <string name="news_widget_oobe_text">Toksake siia uudiste lisam.</string>
     <string name="next">Järgmine linn</string>
+    <string name="next_btn">Järgmine</string>
     <string name="next_city">Toksake kaks korda järgmise linna ilmateate kuvamiseks.</string>
     <string name="night_tts">Öö</string>
     <string name="no_application_available">Rakendusi pole saadaval.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Ilmateavet pole</string>
     <string name="not_in_use">Pole kasutusel</string>
     <string name="not_now">Hiljem</string>
+    <string name="not_now_btn">Hiljem</string>
     <string name="not_selected">Pole valitud</string>
     <string name="nothing_selected">Valik tegemata.</string>
     <string name="noti">Teavitus</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Kiireima ja täpseima asukoha tuvastamise jaoks toksake valikut SEADED, seejärel valige asukoha määramise viisiks GPS, Wi-Fi ja mobiilsidevõrgud.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Kiireima ja täpseima asukoha tuvastamise jaoks toksake valikut SEADED, seejärel valige asukoha määramise viisiks GPS ja Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Kohaliku ilmateate vaatamiseks lülitage sisse asukohaseaded ja veenduge, et režiimiks on määratud Suur täpsus.</string>
+    <string name="notification_alert_channel_name">Ohtliku ilma hoiatus</string>
     <string name="notification_apps_update_channel_name">Värskenduse teavitused</string>
     <string name="notification_auto_refresh_channel_name">Ilmateate autom. värskendamine</string>
     <string name="notification_dex_channel_name">Ilm Samsung DeX-is</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Ava rakendus</string>
     <string name="open_source_licences">Avatud lähtekoodi litsentsid</string>
     <string name="other_locations">Muud asukohad</string>
+    <string name="partly_sunny">Paiguti päikeseline</string>
     <string name="paused">Peatatud</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Sademed: %d mm</string>
     <string name="preview">Treeningu %s eelv.</string>
     <string name="previous">Eelmine linn</string>
+    <string name="previous_btn">Eelmine</string>
     <string name="previous_city">Toksake kaks korda eelmise linna ilmateate kuvamiseks.</string>
     <string name="privacy_policy">Privaatsusavaldus</string>
     <string name="probability_of_rain_text">Vihma tõenäosus</string>
     <string name="protect_your_content">Sisu kaitsmine</string>
+    <string name="ps_in">%s tolli</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar ja kaardid</string>
     <string name="rain">Vihm</string>
     <string name="rain_followed_by_intense_heat">Kerge vihm, hiljem kuumalaine</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Ilmateate värskendamiseks toksake valikut SEADED, avage Rakenduste teave > Õigused, seejärel kinnitage järgmised load ja proovige uuesti:</string>
     <string name="runtime_location_permission_title">Õiguste andmine</string>
     <string name="runtime_oem_grant_permission_desc">Rakendusel %s on luba juurde pääseda järgmisele:</string>
+    <string name="sat">L</string>
     <string name="save_button">Salvesta</string>
     <string name="search_most_searched_for">Enim otsitud:</string>
     <string name="search_tab_cities">Linnad</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Uus sisu on saadaval</string>
     <string name="sesl_material_overflow_badge_text_n">U</string>
     <string name="sesl_more_item_label">Veel</string>
+    <string name="sesl_preferecne_badge_description">Uus teavitus</string>
     <string name="sesl_preferencecategory_added_title">Päis</string>
     <string name="sesl_search_hint">Otsi</string>
     <string name="sesl_searchview_description_clear">Tühjenda otsinguväli</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Kontrollige oma võrguühendust ja proovige uuesti.</string>
     <string name="st_offline">Inaktiivne</string>
     <string name="st_view_less">Kuva vähem</string>
+    <string name="status_off">Väljas</string>
+    <string name="status_on">Sees</string>
+    <string name="sun">P</string>
     <string name="sunny">Päikeseline</string>
     <string name="sunny_with_some_clouds">Päikeseline vahelduva pilvisusega</string>
     <string name="sunny_with_some_heavy_rain">Päikeseline vahelduva tugeva sajuga</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Toksake siia, et taastada ilmaandmed vanast seadmest.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Toksake käsku PROOVI UUESTI, et üritada taas oma asukoht leida.</string>
     <string name="tap_setting_message_edge_panel">Kohaliku ilmateate nägemiseks lülitage asukoht sisse.</string>
+    <string name="tap_the_settings_icon">Toksake seadete ikooni.</string>
     <string name="tap_to_get_the_weather">Toksake ilmateate jaoks</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Tingimused</string>
     <string name="the_latest_version">Uusim versioon on juba installitud.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Samuti rakendatakse seda teavituste ja kalendri puhul.</string>
+    <string name="thu">N</string>
     <string name="tick_box_tts">Märkeruut</string>
     <string name="ticked_tts">Märgistatud</string>
     <string name="time_am">EL</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Iga tund</string>
     <string name="title_select_locations">Asukohtade valimine</string>
     <string name="title_theme">Teemad</string>
+    <string name="to_continue_agree_to_updated">Jätkamiseks nõustuge meie värskendatud dokumendiga %s.</string>
     <string name="to_get_local_weather_chn">"Kohalike ilmaandmete saamiseks saadetakse teie praegune asukoht ilmateenuse pakkujale. (Vt teenusepakkuja %1$stingimusi%2$s ja %3$sprivaatsusavaldust%4$s.)
 Teie seadme teised rakendused ja teenused võivad saada juurdepääsu laaditud ilmaandmetele ilma kuvamiseks neis rakendustes.
 Teile ilmaandmete edasiseks pakkumiseks saab Ilm juurdepääsu teie asukohale ka sel ajal, kui te rakendust ei kasuta."</string>
     <string name="today">Täna</string>
+    <string name="try_it_out_btn">Proovi</string>
+    <string name="tue">T</string>
+    <string name="turn_on_to_use_precise_location">Selle funktsiooni kasutamiseks peab %s saama püsiva juurdepääsu teie asukohale ja lülitama sisse funktsiooni Kasuta täpset asukohta. Toksake valikut Seaded, seejärel valige Load > Asukoht.</string>
     <string name="tw_title_weather_broadcast">Kärjeteated</string>
-    <string name="unable_to_check_for_updates">Värskendusi ei saa kontrollida. Võrguühendus puudub.</string>
+    <string name="unable_to_check_for_updates">Värskenduste kontrollimine nurjus. Proovige hiljem uuesti.</string>
     <string name="unable_to_receive_info_msg">Teavet ei saa vastu võtta</string>
     <string name="unticked_tts">Pole märgistatud</string>
     <string name="unused">Kasutamata</string>
     <string name="update">Värskenda</string>
     <string name="update_abb8">Värskenda</string>
     <string name="update_app">Rakenduse värskendamine</string>
+    <string name="updated_tile_chn">Värskendatud: %s</string>
     <string name="updated_tts">%s on värskendatud</string>
+    <string name="use_current_location">Kasuta praegust asukohta</string>
     <string name="use_current_location_agree_popup">"Kohaliku ilmateabe saamiseks saadetakse teie praegune asukoht ilmateenuse pakkujale. (Vaadake pakkuja %1$sprivaatsusavaldust%2$s.)
 Seadmes olevad teised rakendused ja teenused võivad saadud ilmaandmetele juurde pääseda ja neid oma rakendustes näidata."</string>
     <string name="use_current_location_and_background_agree_popup">"Kohalike ilmaandmete saamiseks saadetakse teie praegune asukoht ilmateenuse pakkujale. (Vt teenusepakkuja %1$sprivaatsusavaldust%2$s.)
@@ -635,9 +677,16 @@ Teile ilmaandmete edasiseks pakkumiseks saab Ilm juurdepääsu teie asukohale ka
 Saate oma asukoha kasutamise välja lülitada Ilma rakenduse seadetes."</string>
     <string name="use_current_location_body_msg_chn">"Lugege hoolikalt läbi enne „Ilm“ rakenduse kasutamist:
 Kui soovite teavet oma praeguses asukohas valitseva ilma kohta, peate andma kolmandast isikust teenusepakkuja püsijuurdepääsu (isegi kui te teenust parasjagu ei kasuta) oma seadmele ning loa allpool loetletud teabe hankimiseks. Enne vastava loa andmist, lugege kolmandast isikust teenusepakkuja %1$stingimused%2$s ja %3$sprivaatsusavaldus%4$s hoolikalt läbi ja tehke need endale selgeks. Võite loa igal ajal tagasi võtta, lülitades välja seadete alt „Asukoht“. Seadmes olevad teised rakendused ja teenused võivad saadud ilmaandmetele juurde pääseda ja ilmateadet oma rakendustes ja teenustes näidata."</string>
+    <string name="use_current_location_body_msg_kor">"Teie asukohateavet kogutakse ja kasutatakse ilmateaterakenduse teatud funktsioonide pakkumiseks, nt kohaliku ilmateate esitamiseks.
+
+Ilmateate esitamiseks peab rakendus regulaarselt asukohateavet töötlema, ka siis, kui te rakendust ei kasuta. Jätkamisel nõustute asukohateabe kogumisega ülalpool mainitud eesmärkide täitmiseks.
+
+Asukohateabe esitamise saate keelata ilmateaterakenduse seadetes."</string>
     <string name="use_current_location_body_purpose">Otstarve</string>
     <string name="use_current_location_body_purpose_content">Asukohapõhise ilmastikuteabe esitamiseks</string>
     <string name="use_current_location_body_search_provider">Teenusepakkuja</string>
+    <string name="use_current_location_continue">Jätka</string>
+    <string name="use_current_location_not_now">Hiljem</string>
     <string name="use_current_location_off_alert_popup">Praegune asukohateave eemaldatakse.</string>
     <string name="useful_informations">Elulised näpunäited ja muud aruanded</string>
     <string name="using_as">Kasutamine üksusena %s</string>
@@ -743,9 +792,11 @@ Kui soovite teavet oma praeguses asukohas valitseva ilma kohta, peate andma kolm
     <string name="weather_tip">Ilma näpunäited</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">K</string>
     <string name="weekly_forecast">Iga päev</string>
     <string name="widget_background">Vidina taust</string>
     <string name="widget_empty_text">Toksake ilmateateks</string>
+    <string name="widget_location">Linna nimi</string>
     <string name="widget_name_4x1">Ilm ja Kell</string>
     <string name="widget_setting">Seaded</string>
     <string name="widget_setting_background_color">Taustavärv</string>

@@ -115,6 +115,7 @@
 
     invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
+    .line 109
     throw v0
 
     :cond_3

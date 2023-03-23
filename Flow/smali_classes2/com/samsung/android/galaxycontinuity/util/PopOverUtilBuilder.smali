@@ -73,6 +73,14 @@
 
 .method private constructor <init>(Landroid/app/ActivityOptions;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "opts"
+        }
+    .end annotation
 
     .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -121,6 +129,14 @@
 
 .method public static getBuilder(Landroid/app/ActivityOptions;)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "opts"
+        }
+    .end annotation
 
     .line 33
     new-instance v0, Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
@@ -132,6 +148,14 @@
 
 .method private static getEnableSupportSplitMode(Landroid/content/Context;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 83
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -161,9 +185,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget v1, v1, Landroid/content/res/Configuration;->smallestScreenWidthDp:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -171,7 +199,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    const v0, 0x7f040008
+    const v0, 0x7f050015
 
     .line 90
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getBoolean(I)Z
@@ -250,6 +278,14 @@
 
 .method public static isPopOverSupport(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 97
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/Utils;->isMoreThanOneUI_2_5()Z
@@ -332,6 +368,14 @@
 
 .method public setPopOverAnchor(I)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "anchor"
+        }
+    .end annotation
 
     .line 72
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;->anchorPosition:[I
@@ -350,6 +394,16 @@
 
 .method public setPopOverAnchor(II)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "anchor",
+            "mode"
+        }
+    .end annotation
 
     .line 78
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;->anchorPosition:[I
@@ -361,6 +415,16 @@
 
 .method public setPopOverMargin(Landroid/graphics/Point;I)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "margin",
+            "mode"
+        }
+    .end annotation
 
     .line 67
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;->margin:[Landroid/graphics/Point;
@@ -372,6 +436,14 @@
 
 .method public setPopOverReservedPosition(I)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 62
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;->reservedPosition:I
@@ -381,6 +453,14 @@
 
 .method public setPopOverReservedPositionEnabled(Z)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
     .line 57
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;->reservedPositionEnabled:Z
@@ -390,6 +470,16 @@
 
 .method public setPopOverSize(II)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -409,6 +499,18 @@
 
 .method public setPopOverSize(III)Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height",
+            "mode"
+        }
+    .end annotation
 
     .line 51
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/PopOverUtilBuilder;->width:[I

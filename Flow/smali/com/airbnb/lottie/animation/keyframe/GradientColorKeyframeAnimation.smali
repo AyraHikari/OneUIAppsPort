@@ -24,8 +24,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "+",
-            "Lcom/airbnb/lottie/animation/Keyframe<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
             "Lcom/airbnb/lottie/model/content/GradientColor;",
             ">;>;)V"
         }
@@ -41,9 +40,9 @@
 
     move-result-object p1
 
-    check-cast p1, Lcom/airbnb/lottie/animation/Keyframe;
+    check-cast p1, Lcom/airbnb/lottie/value/Keyframe;
 
-    iget-object p1, p1, Lcom/airbnb/lottie/animation/Keyframe;->startValue:Ljava/lang/Object;
+    iget-object p1, p1, Lcom/airbnb/lottie/value/Keyframe;->startValue:Ljava/lang/Object;
 
     check-cast p1, Lcom/airbnb/lottie/model/content/GradientColor;
 
@@ -74,12 +73,12 @@
 
 
 # virtual methods
-.method getValue(Lcom/airbnb/lottie/animation/Keyframe;F)Lcom/airbnb/lottie/model/content/GradientColor;
+.method getValue(Lcom/airbnb/lottie/value/Keyframe;F)Lcom/airbnb/lottie/model/content/GradientColor;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/airbnb/lottie/animation/Keyframe<",
+            "Lcom/airbnb/lottie/value/Keyframe<",
             "Lcom/airbnb/lottie/model/content/GradientColor;",
             ">;F)",
             "Lcom/airbnb/lottie/model/content/GradientColor;"
@@ -89,11 +88,11 @@
     .line 19
     iget-object v0, p0, Lcom/airbnb/lottie/animation/keyframe/GradientColorKeyframeAnimation;->gradientColor:Lcom/airbnb/lottie/model/content/GradientColor;
 
-    iget-object v1, p1, Lcom/airbnb/lottie/animation/Keyframe;->startValue:Ljava/lang/Object;
+    iget-object v1, p1, Lcom/airbnb/lottie/value/Keyframe;->startValue:Ljava/lang/Object;
 
     check-cast v1, Lcom/airbnb/lottie/model/content/GradientColor;
 
-    iget-object p1, p1, Lcom/airbnb/lottie/animation/Keyframe;->endValue:Ljava/lang/Object;
+    iget-object p1, p1, Lcom/airbnb/lottie/value/Keyframe;->endValue:Ljava/lang/Object;
 
     check-cast p1, Lcom/airbnb/lottie/model/content/GradientColor;
 
@@ -105,11 +104,11 @@
     return-object p1
 .end method
 
-.method bridge synthetic getValue(Lcom/airbnb/lottie/animation/Keyframe;F)Ljava/lang/Object;
+.method bridge synthetic getValue(Lcom/airbnb/lottie/value/Keyframe;F)Ljava/lang/Object;
     .locals 0
 
     .line 8
-    invoke-virtual {p0, p1, p2}, Lcom/airbnb/lottie/animation/keyframe/GradientColorKeyframeAnimation;->getValue(Lcom/airbnb/lottie/animation/Keyframe;F)Lcom/airbnb/lottie/model/content/GradientColor;
+    invoke-virtual {p0, p1, p2}, Lcom/airbnb/lottie/animation/keyframe/GradientColorKeyframeAnimation;->getValue(Lcom/airbnb/lottie/value/Keyframe;F)Lcom/airbnb/lottie/model/content/GradientColor;
 
     move-result-object p1
 

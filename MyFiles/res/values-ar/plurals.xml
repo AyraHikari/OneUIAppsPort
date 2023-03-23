@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">يتعذر تحديد أكثر من %d عنصر.</item>
+        <item quantity="zero">يتعذر تحديد أكثر من %d عنصر.</item>
+        <item quantity="one">يتعذر تحديد أكثر من عنصر واحد.</item>
+        <item quantity="two">يتعذر تحديد أكثر من عنصرين.</item>
+        <item quantity="few">يتعذر تحديد أكثر من %d عناصر.</item>
+        <item quantity="many">يتعذر تحديد أكثر من %d عنصراً.</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">يتعذر نقل %d ملف إلى سلة المحذوفات</item>
+        <item quantity="zero">يتعذر نقل %d ملف إلى سلة المحذوفات</item>
+        <item quantity="one">يتعذر نقل ملف واحد إلى سلة المحذوفات</item>
+        <item quantity="two">يتعذر نقل ملفين إلى سلة المحذوفات</item>
+        <item quantity="few">يتعذر نقل %d ملفات إلى سلة المحذوفات</item>
+        <item quantity="many">يتعذر نقل %d ملفاً إلى سلة المحذوفات</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">يتعذر نقل %d مجلد إلى سلة المحذوفات</item>
+        <item quantity="zero">يتعذر نقل %d مجلد إلى سلة المحذوفات</item>
+        <item quantity="one">يتعذر نقل مجلد واحد إلى سلة المحذوفات</item>
+        <item quantity="two">يتعذر نقل مجلدين إلى سلة المحذوفات</item>
+        <item quantity="few">يتعذر نقل %d مجلدات إلى سلة المحذوفات</item>
+        <item quantity="many">يتعذر نقل %d مجلداً إلى سلة المحذوفات</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">يتعذر نقل %d عنصر إلى سلة المحذوفات</item>
+        <item quantity="zero">يتعذر نقل %d عنصر إلى سلة المحذوفات</item>
+        <item quantity="one">يتعذر نقل عنصر واحد إلى سلة المحذوفات</item>
+        <item quantity="two">يتعذر نقل عنصرين إلى سلة المحذوفات</item>
+        <item quantity="few">يتعذر نقل %d عناصر إلى سلة المحذوفات</item>
+        <item quantity="many">يتعذر نقل %d عنصراً إلى سلة المحذوفات</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">سيتم حذف %d ملف محدد لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="zero">سيتم حذف %d ملف محدد لأنه موجود على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="one">سيتم حذف ملف واحد محدد لأنه موجود على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="two">سيتم حذف ملفَين محددَين لأنهما موجودان على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="few">سيتم حذف %d ملفات محددة لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="many">سيتم حذف %d ملفاً محدداً لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">سيتم حذف %d مجلد محدد لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="zero">سيتم حذف %d مجلد محدد لأنه موجود على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="one">سيتم حذف مجلد واحد محدد لأنه موجود على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="two">سيتم حذف مجلدَين محددَين لأنهما موجودان على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="few">سيتم حذف %d مجلدات محددة لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="many">سيتم حذف %d مجلداً محدداً لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">سيتم حذف %d عنصر محدد لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="zero">سيتم حذف %d عنصر محدد لأنه موجود على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="one">سيتم حذف عنصر واحد محدد لأنه موجود على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="two">سيتم حذف عنصرَين محددَين لأنهما موجودان على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="few">سيتم حذف %d عناصر محددة لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+        <item quantity="many">سيتم حذف %d عنصراً محدداً لأنها موجودة على السحابة أو على جهاز تخزين USB.</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">جارٍ ضغط %d ملف…</item>
+        <item quantity="zero">جارٍ ضغط %d ملف…</item>
+        <item quantity="one">جارٍ ضغط ملف واحد…</item>
+        <item quantity="two">جارٍ ضغط ملفَين…</item>
+        <item quantity="few">جارٍ ضغط %d ملفات…</item>
+        <item quantity="many">جارٍ ضغط %d ملفاً…</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">جارٍ ضغط %d ملف…</item>
+        <item quantity="zero">جارٍ ضغط %d ملف…</item>
+        <item quantity="one">جارٍ ضغط ملف واحد…</item>
+        <item quantity="two">جارٍ ضغط ملفَين…</item>
+        <item quantity="few">جارٍ ضغط %d ملفات…</item>
+        <item quantity="many">جارٍ ضغط %d ملفاً…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">جارٍ ضغط %d مجلد…</item>
+        <item quantity="zero">جارٍ ضغط %d مجلد…</item>
+        <item quantity="one">جارٍ ضغط مجلد واحد…</item>
+        <item quantity="two">جارٍ ضغط مجلدَين…</item>
+        <item quantity="few">جارٍ ضغط %d مجلدات…</item>
+        <item quantity="many">جارٍ ضغط %d مجلداً…</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">جارٍ ضغط %d مجلد…</item>
+        <item quantity="zero">جارٍ ضغط %d مجلد…</item>
+        <item quantity="one">جارٍ ضغط مجلد واحد…</item>
+        <item quantity="two">جارٍ ضغط مجلدَين…</item>
+        <item quantity="few">جارٍ ضغط %d مجلدات…</item>
+        <item quantity="many">جارٍ ضغط %d مجلداً…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">جارٍ ضغط %d عنصر…</item>
+        <item quantity="zero">جارٍ ضغط %d عنصر…</item>
+        <item quantity="one">جارٍ ضغط عنصر واحد…</item>
+        <item quantity="two">جارٍ ضغط عنصرَين…</item>
+        <item quantity="few">جارٍ ضغط %d عناصر…</item>
+        <item quantity="many">جارٍ ضغط %d عنصراً…</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">جارٍ ضغط %d عنصر…</item>
+        <item quantity="zero">جارٍ ضغط %d عنصر…</item>
+        <item quantity="one">جارٍ ضغط عنصر واحد…</item>
+        <item quantity="two">جارٍ ضغط عنصرَين…</item>
+        <item quantity="few">جارٍ ضغط %d عناصر…</item>
+        <item quantity="many">جارٍ ضغط %d عنصراً…</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">جارٍ نسخ %d ملف…</item>
+        <item quantity="zero">جارٍ نسخ %d ملف…</item>
+        <item quantity="one">جارٍ نسخ ملف واحد…</item>
+        <item quantity="two">جارٍ نسخ ملفَين…</item>
+        <item quantity="few">جارٍ نسخ %d ملفات…</item>
+        <item quantity="many">جارٍ نسخ %d ملفاً…</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">جارٍ نسخ %d ملف…</item>
+        <item quantity="zero">جارٍ نسخ %d ملف…</item>
+        <item quantity="one">جارٍ نسخ ملف واحد…</item>
+        <item quantity="two">جارٍ نسخ ملفَين…</item>
+        <item quantity="few">جارٍ نسخ %d ملفات…</item>
+        <item quantity="many">جارٍ نسخ %d ملفاً…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">جارٍ نسخ %d مجلد…</item>
+        <item quantity="zero">جارٍ نسخ %d مجلد…</item>
+        <item quantity="one">جارٍ نسخ مجلد واحد…</item>
+        <item quantity="two">جارٍ نسخ مجلدَين…</item>
+        <item quantity="few">جارٍ نسخ %d مجلدات…</item>
+        <item quantity="many">جارٍ نسخ %d مجلداً…</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">جارٍ نسخ %d مجلد…</item>
+        <item quantity="zero">جارٍ نسخ %d مجلد…</item>
+        <item quantity="one">جارٍ نسخ مجلد واحد…</item>
+        <item quantity="two">جارٍ نسخ مجلدَين…</item>
+        <item quantity="few">جارٍ نسخ %d مجلدات…</item>
+        <item quantity="many">جارٍ نسخ %d مجلداً…</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">جارٍ نسخ %d عنصر…</item>
+        <item quantity="zero">جارٍ نسخ %d عنصر…</item>
+        <item quantity="one">جارٍ نسخ عنصر واحد…</item>
+        <item quantity="two">جارٍ نسخ عنصرَين…</item>
+        <item quantity="few">جارٍ نسخ %d عناصر…</item>
+        <item quantity="many">جارٍ نسخ %d عنصراً…</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">جارٍ نسخ %d عنصر…</item>
+        <item quantity="zero">جارٍ نسخ %d عنصر…</item>
+        <item quantity="one">جارٍ نسخ عنصر واحد…</item>
+        <item quantity="two">جارٍ نسخ عنصرَين…</item>
+        <item quantity="few">جارٍ نسخ %d عناصر…</item>
+        <item quantity="many">جارٍ نسخ %d عنصراً…</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">أتريد حذف %d ملف من هاتفك؟</item>
+        <item quantity="zero">أتريد حذف %d ملف من هاتفك؟</item>
+        <item quantity="one">أتريد حذف ملف واحد من هاتفك؟</item>
+        <item quantity="two">أتريد حذف ملفَين من هاتفك؟</item>
+        <item quantity="few">أتريد حذف %d ملفات من هاتفك؟</item>
+        <item quantity="many">أتريد حذف %d ملفاً من هاتفك؟</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">أتريد حذف %d ملف من جهازك اللوحي؟</item>
+        <item quantity="zero">أتريد حذف %d ملف من جهازك اللوحي؟</item>
+        <item quantity="one">أتريد حذف ملف واحد من جهازك اللوحي؟</item>
+        <item quantity="two">أتريد حذف ملفَين من جهازك اللوحي؟</item>
+        <item quantity="few">أتريد حذف %d ملفات من جهازك اللوحي؟</item>
+        <item quantity="many">أتريد حذف %d ملفاً من جهازك اللوحي؟</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">أتريد حذف %d مجلد من هاتفك؟</item>
+        <item quantity="zero">أتريد حذف %d مجلد من هاتفك؟</item>
+        <item quantity="one">أتريد حذف مجلد واحد من هاتفك؟</item>
+        <item quantity="two">أتريد حذف مجلدَين من هاتفك؟</item>
+        <item quantity="few">أتريد حذف %d مجلدات من هاتفك؟</item>
+        <item quantity="many">أتريد حذف %d مجلداً من هاتفك؟</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">أتريد حذف %d مجلد من جهازك اللوحي؟</item>
+        <item quantity="zero">أتريد حذف %d مجلد من جهازك اللوحي؟</item>
+        <item quantity="one">أتريد حذف مجلد واحد من جهازك اللوحي؟</item>
+        <item quantity="two">أتريد حذف مجلدَين من جهازك اللوحي؟</item>
+        <item quantity="few">أتريد حذف %d مجلدات من جهازك اللوحي؟</item>
+        <item quantity="many">أتريد حذف %d مجلداً من جهازك اللوحي؟</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">أتريد حذف %d عنصر من هاتفك؟</item>
+        <item quantity="zero">أتريد حذف %d عنصر من هاتفك؟</item>
+        <item quantity="one">أتريد حذف عنصر واحد من هاتفك؟</item>
+        <item quantity="two">أتريد حذف عنصرَين من هاتفك؟</item>
+        <item quantity="few">أتريد حذف %d عناصر من هاتفك؟</item>
+        <item quantity="many">أتريد حذف %d عنصراً من هاتفك؟</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">أتريد حذف %d عنصر من جهازك اللوحي؟</item>
+        <item quantity="zero">أتريد حذف %d عنصر من جهازك اللوحي؟</item>
+        <item quantity="one">أتريد حذف عنصر واحد من جهازك اللوحي؟</item>
+        <item quantity="two">أتريد حذف عنصرَين من جهازك اللوحي؟</item>
+        <item quantity="few">أتريد حذف %d عناصر من جهازك اللوحي؟</item>
+        <item quantity="many">أتريد حذف %d عنصراً من جهازك اللوحي؟</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">جارٍ حذف %d ملف…</item>
+        <item quantity="zero">جارٍ حذف %d ملف…</item>
+        <item quantity="one">جارٍ حذف ملف واحد…</item>
+        <item quantity="two">جارٍ حذف ملفَين…</item>
+        <item quantity="few">جارٍ حذف %d ملفات…</item>
+        <item quantity="many">جارٍ حذف %d ملفاً…</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">جارٍ حذف %d مجلد…</item>
+        <item quantity="zero">جارٍ حذف %d مجلد…</item>
+        <item quantity="one">جارٍ حذف مجلد واحد…</item>
+        <item quantity="two">جارٍ حذف مجلدَين…</item>
+        <item quantity="few">جارٍ حذف %d مجلدات…</item>
+        <item quantity="many">جارٍ حذف %d مجلداً…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">جارٍ حذف %d عنصر من سلة المحذوفات…</item>
+        <item quantity="zero">جارٍ حذف %d عنصر من سلة المحذوفات…</item>
+        <item quantity="one">جارٍ حذف عنصر واحد من سلة المحذوفات…</item>
+        <item quantity="two">جارٍ حذف عنصرَين من سلة المحذوفات…</item>
+        <item quantity="few">جارٍ حذف %d عناصر من سلة المحذوفات…</item>
+        <item quantity="many">جارٍ حذف %d عنصراً من سلة المحذوفات…</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">جارٍ حذف %d عنصر…</item>
+        <item quantity="zero">جارٍ حذف %d عنصر…</item>
+        <item quantity="one">جارٍ حذف عنصر واحد…</item>
+        <item quantity="two">جارٍ حذف عنصرَين…</item>
+        <item quantity="few">جارٍ حذف %d عناصر…</item>
+        <item quantity="many">جارٍ حذف %d عنصراً…</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">جارٍ استخراج %d ملف…</item>
+        <item quantity="zero">جارٍ استخراج %d ملف…</item>
+        <item quantity="one">جارٍ استخراج ملف واحد…</item>
+        <item quantity="two">جارٍ استخراج ملفَين…</item>
+        <item quantity="few">جارٍ استخراج %d ملفات…</item>
+        <item quantity="many">جارٍ استخراج %d ملفاً…</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">جارٍ استخراج %d مجلد…</item>
+        <item quantity="zero">جارٍ استخراج %d مجلد…</item>
+        <item quantity="one">جارٍ استخراج مجلد واحد…</item>
+        <item quantity="two">جارٍ استخراج مجلدَين…</item>
+        <item quantity="few">جارٍ استخراج %d مجلدات…</item>
+        <item quantity="many">جارٍ استخراج %d مجلداً…</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">جارٍ استخراج %d عنصر…</item>
+        <item quantity="zero">جارٍ استخراج %d عنصر…</item>
+        <item quantity="one">جارٍ استخراج عنصر واحد…</item>
+        <item quantity="two">جارٍ استخراج عنصرَين…</item>
+        <item quantity="few">جارٍ استخراج %d عناصر…</item>
+        <item quantity="many">جارٍ استخراج %d عنصراً…</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">سيتم أيضاً نقل %1$d ملف إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="zero">سيتم أيضاً نقل %1$d ملف إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="one">سيتم أيضاً نقل ملف واحد إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="two">سيتم أيضاً نقل ملفَين إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="few">سيتم أيضاً نقل %1$d ملفات إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="many">سيتم أيضاً نقل %1$d ملفاً إلى سلة المحذوفات في %2$s.</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">عملية استعادة %d ملف جارية…</item>
+        <item quantity="zero">عملية استعادة %d ملف جارية…</item>
+        <item quantity="one">عملية استعادة ملف واحد جارية…</item>
+        <item quantity="two">عملية استعادة ملفَين جارية…</item>
+        <item quantity="few">عملية استعادة %d ملفات جارية…</item>
+        <item quantity="many">عملية استعادة %d ملفاً جارية…</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">سيتم أيضاً نقل %1$d ملف إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="zero">سيتم أيضاً نقل %1$d ملف إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="one">سيتم أيضاً نقل ملف واحد إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="two">سيتم أيضاً نقل ملفَين إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="few">سيتم أيضاً نقل %1$d ملفات إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="many">سيتم أيضاً نقل %1$d ملفاً إلى سلة المحذوفات في %2$s.</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">عملية استعادة %d مجلد جارية…</item>
+        <item quantity="zero">عملية استعادة %d مجلد جارية…</item>
+        <item quantity="one">عملية استعادة مجلد واحد جارية…</item>
+        <item quantity="two">عملية استعادة مجلدَين جارية…</item>
+        <item quantity="few">عملية استعادة %d مجلدات جارية…</item>
+        <item quantity="many">عملية استعادة %d مجلداً جارية…</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d ملف نهائياً؟</item>
+        <item quantity="zero">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d ملف نهائياً؟</item>
+        <item quantity="one">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف ملف واحد نهائياً؟</item>
+        <item quantity="two">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف ملفين نهائياً؟</item>
+        <item quantity="few">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d ملفات نهائياً؟</item>
+        <item quantity="many">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d ملفاً نهائياً؟</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="zero">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="one">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف مجلد واحد نهائياً؟</item>
+        <item quantity="two">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف مجلدين نهائياً؟</item>
+        <item quantity="few">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d مجلدات نهائياً؟</item>
+        <item quantity="many">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d مجلداً نهائياً؟</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="zero">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="one">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف عنصر واحد نهائياً؟</item>
+        <item quantity="two">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف عنصرين نهائياً؟</item>
+        <item quantity="few">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d عناصر نهائياً؟</item>
+        <item quantity="many">وحدة التخزين الداخلية لديك ممتلئة. هل تريد حذف %d عنصراً نهائياً؟</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d ملف نهائياً؟</item>
+        <item quantity="zero">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d ملف نهائياً؟</item>
+        <item quantity="one">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف ملف واحد نهائياً؟</item>
+        <item quantity="two">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف ملفين نهائياً؟</item>
+        <item quantity="few">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d ملفات نهائياً؟</item>
+        <item quantity="many">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d ملفاً نهائياً؟</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="zero">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="one">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف مجلد واحد نهائياً؟</item>
+        <item quantity="two">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف مجلدين نهائياً؟</item>
+        <item quantity="few">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d مجلدات نهائياً؟</item>
+        <item quantity="many">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d مجلداً نهائياً؟</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="zero">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="one">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف عنصر واحد نهائياً؟</item>
+        <item quantity="two">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف عنصرين نهائياً؟</item>
+        <item quantity="few">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d عناصر نهائياً؟</item>
+        <item quantity="many">وحدة التخزين الداخلية وبطاقة SD لديك ممتلئتان. هل تريد حذف %d عنصراً نهائياً؟</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">عملية استعادة %d عنصر جارية…</item>
+        <item quantity="zero">عملية استعادة %d عنصر جارية…</item>
+        <item quantity="one">عملية استعادة عنصر واحد جارية…</item>
+        <item quantity="two">عملية استعادة عنصرَين جارية…</item>
+        <item quantity="few">عملية استعادة %d عناصر جارية…</item>
+        <item quantity="many">عملية استعادة %d عنصراً جارية…</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">سيتم أيضاً نقل %1$d عنصر إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="zero">سيتم أيضاً نقل %1$d عنصر إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="one">سيتم أيضاً نقل عنصر واحد إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="two">سيتم أيضاً نقل عنصرَين إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="few">سيتم أيضاً نقل %1$d عناصر إلى سلة المحذوفات في %2$s.</item>
+        <item quantity="many">سيتم أيضاً نقل %1$d عنصراً إلى سلة المحذوفات في %2$s.</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">يتعذر فتح أكثر من %d إطار للتطبيقات.</item>
+        <item quantity="zero">يتعذر فتح أكثر من %d إطار للتطبيقات.</item>
+        <item quantity="one">يتعذر فتح أكثر من إطار واحد للتطبيقات.</item>
+        <item quantity="two">يتعذر فتح أكثر من إطارَين للتطبيقات.</item>
+        <item quantity="few">يتعذر فتح أكثر من %d إطارات للتطبيقات.</item>
+        <item quantity="many">يتعذر فتح أكثر من %d إطاراً للتطبيقات.</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">أتريد نقل %d ملف إلى سلة المحذوفات؟</item>
+        <item quantity="zero">أتريد نقل %d ملف إلى سلة المحذوفات؟</item>
+        <item quantity="one">أتريد نقل ملف واحد إلى سلة المحذوفات؟</item>
+        <item quantity="two">أتريد نقل ملفين إلى سلة المحذوفات؟</item>
+        <item quantity="few">أتريد نقل %d ملفات إلى سلة المحذوفات؟</item>
+        <item quantity="many">أتريد نقل %d صورة إلى سلة المحذوفات؟</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">أتريد نقل %d ملف إلى سلة المحذوفات؟</item>
+        <item quantity="zero">أتريد نقل %d ملف إلى سلة المحذوفات؟</item>
+        <item quantity="one">أتريد نقل ملف واحد إلى سلة المحذوفات؟</item>
+        <item quantity="two">أتريد نقل ملفَين إلى سلة المحذوفات؟</item>
+        <item quantity="few">أتريد نقل %d ملفات إلى سلة المحذوفات؟</item>
+        <item quantity="many">أتريد نقل %d ملفاً إلى سلة المحذوفات؟</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">أتريد نقل %d مجلد إلى سلة المحذوفات؟</item>
+        <item quantity="zero">أتريد نقل %d مجلد إلى سلة المحذوفات؟</item>
+        <item quantity="one">أتريد نقل مجلد واحد إلى سلة المحذوفات؟</item>
+        <item quantity="two">أتريد نقل مجلدين إلى سلة المحذوفات؟</item>
+        <item quantity="few">أتريد نقل %d مجلدات إلى سلة المحذوفات؟</item>
+        <item quantity="many">أتريد نقل %d مجلداً إلى سلة المحذوفات؟</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">أتريد نقل %d مجلد إلى سلة المحذوفات؟</item>
+        <item quantity="zero">أتريد نقل %d مجلد إلى سلة المحذوفات؟</item>
+        <item quantity="one">أتريد نقل مجلد واحد إلى سلة المحذوفات؟</item>
+        <item quantity="two">أتريد نقل مجلدَين إلى سلة المحذوفات؟</item>
+        <item quantity="few">أتريد نقل %d مجلدات إلى سلة المحذوفات؟</item>
+        <item quantity="many">أتريد نقل %d مجلداً إلى سلة المحذوفات؟</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">هل تريد نقل %d عنصر إلى سلة المحذوفات؟</item>
+        <item quantity="zero">هل تريد نقل %d عنصر إلى سلة المحذوفات؟</item>
+        <item quantity="one">هل تريد نقل عنصر واحد إلى سلة المحذوفات؟</item>
+        <item quantity="two">هل تريد نقل عنصرَين إلى سلة المحذوفات؟</item>
+        <item quantity="few">هل تريد نقل %d عناصر إلى سلة المحذوفات؟</item>
+        <item quantity="many">هل تريد نقل %d عنصراً إلى سلة المحذوفات؟</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">أتريد نقل %d عنصر إلى سلة المحذوفات؟</item>
+        <item quantity="zero">أتريد نقل %d عنصر إلى سلة المحذوفات؟</item>
+        <item quantity="one">أتريد نقل عنصر واحد إلى سلة المحذوفات؟</item>
+        <item quantity="two">أتريد نقل عنصرين إلى سلة المحذوفات؟</item>
+        <item quantity="few">أتريد نقل %d عناصر إلى سلة المحذوفات؟</item>
+        <item quantity="many">أتريد نقل %d عنصراً إلى سلة المحذوفات؟</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">جارٍ نقل %d ملف إلى سلة المحذوفات…</item>
+        <item quantity="zero">جارٍ نقل %d ملف إلى سلة المحذوفات…</item>
+        <item quantity="one">جارٍ نقل ملف واحد إلى سلة المحذوفات…</item>
+        <item quantity="two">جارٍ نقل ملفَين إلى سلة المحذوفات…</item>
+        <item quantity="few">جارٍ نقل %d ملفات إلى سلة المحذوفات…</item>
+        <item quantity="many">جارٍ نقل %d ملفاً إلى سلة المحذوفات…</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">جارٍ نقل %d مجلد إلى سلة المحذوفات…</item>
+        <item quantity="zero">جارٍ نقل %d مجلد إلى سلة المحذوفات…</item>
+        <item quantity="one">جارٍ نقل مجلد واحد إلى سلة المحذوفات…</item>
+        <item quantity="two">جارٍ نقل مجلدَين إلى سلة المحذوفات…</item>
+        <item quantity="few">جارٍ نقل %d مجلدات إلى سلة المحذوفات…</item>
+        <item quantity="many">جارٍ نقل %d مجلداً إلى سلة المحذوفات…</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">جارٍ نقل %d عنصر إلى سلة المحذوفات…</item>
+        <item quantity="zero">جارٍ نقل %d عنصر إلى سلة المحذوفات…</item>
+        <item quantity="one">جارٍ نقل عنصر واحد إلى سلة المحذوفات…</item>
+        <item quantity="two">جارٍ نقل عنصرَين إلى سلة المحذوفات…</item>
+        <item quantity="few">جارٍ نقل %d عناصر إلى سلة المحذوفات…</item>
+        <item quantity="many">جارٍ نقل %d عنصراً إلى سلة المحذوفات…</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">جارٍ نقل %d ملف…</item>
+        <item quantity="zero">جارٍ نقل %d ملف…</item>
+        <item quantity="one">جارٍ نقل ملف واحد…</item>
+        <item quantity="two">جارٍ نقل ملفَين…</item>
+        <item quantity="few">جارٍ نقل %d ملفات…</item>
+        <item quantity="many">جارٍ نقل %d ملفاً…</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">جارٍ نقل %d ملف…</item>
+        <item quantity="zero">جارٍ نقل %d ملف…</item>
+        <item quantity="one">جارٍ نقل ملف واحد…</item>
+        <item quantity="two">جارٍ نقل ملفَين…</item>
+        <item quantity="few">جارٍ نقل %d ملفات…</item>
+        <item quantity="many">جارٍ نقل %d ملفاً…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">جارٍ نقل %d مجلد…</item>
+        <item quantity="zero">جارٍ نقل %d مجلد…</item>
+        <item quantity="one">جارٍ نقل مجلد واحد…</item>
+        <item quantity="two">جارٍ نقل مجلدَين…</item>
+        <item quantity="few">جارٍ نقل %d مجلدات…</item>
+        <item quantity="many">جارٍ نقل %d مجلداً…</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">جارٍ نقل %d مجلد…</item>
+        <item quantity="zero">جارٍ نقل %d مجلد…</item>
+        <item quantity="one">جارٍ نقل مجلد واحد…</item>
+        <item quantity="two">جارٍ نقل مجلدَين…</item>
+        <item quantity="few">جارٍ نقل %d مجلدات…</item>
+        <item quantity="many">جارٍ نقل %d مجلداً…</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">جارٍ نقل %d عنصر…</item>
+        <item quantity="zero">جارٍ نقل %d عنصر…</item>
+        <item quantity="one">جارٍ نقل عنصر واحد…</item>
+        <item quantity="two">جارٍ نقل عنصرَين…</item>
+        <item quantity="few">جارٍ نقل %d عناصر…</item>
+        <item quantity="many">جارٍ نقل %d عنصراً…</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">جارٍ نقل %d عنصر…</item>
+        <item quantity="zero">جارٍ نقل %d عنصر…</item>
+        <item quantity="one">جارٍ نقل عنصر واحد…</item>
+        <item quantity="two">جارٍ نقل عنصرَين…</item>
+        <item quantity="few">جارٍ نقل %d عناصر…</item>
+        <item quantity="many">جارٍ نقل %d عنصراً…</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">تم ضغط %d عنصر</item>
+        <item quantity="zero">تم ضغط %d عنصر</item>
+        <item quantity="one">تم ضغط عنصر واحد</item>
+        <item quantity="two">تم ضغط عنصرَين</item>
+        <item quantity="few">تم ضغط %d عناصر</item>
+        <item quantity="many">تم ضغط %d عنصراً</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">تم نسخ %1$d عنصر إلى %2$s</item>
+        <item quantity="zero">تم نسخ %1$d عنصر إلى %2$s</item>
+        <item quantity="one">تم نسخ عنصر واحد إلى %2$s</item>
+        <item quantity="two">تم نسخ عنصرَين إلى %2$s</item>
+        <item quantity="few">تم نسخ %1$d عناصر إلى %2$s</item>
+        <item quantity="many">تم نسخ %1$d عنصراً إلى %2$s</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">هل تريد حذف المجلد و%d من الملفات الموجودة داخله؟</item>
+        <item quantity="one">هل تريد حذف المجلد والملف الموجود داخله؟</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">هل تريد حذف %1$d من المجلدات و%2$d من الملفات الموجودة داخلها؟</item>
+        <item quantity="one">هل تريد حذف المجلد والملف الموجود داخله؟</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">تم حذف %d عنصر</item>
+        <item quantity="zero">تم حذف %d عنصر</item>
+        <item quantity="one">تم حذف عنصر واحد</item>
+        <item quantity="two">تم حذف عنصرَين</item>
+        <item quantity="few">تم حذف %d عناصر</item>
+        <item quantity="many">تم حذف %d عنصراً</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">جارٍ تنزيل %d ملف…</item>
+        <item quantity="zero">جارٍ تنزيل %d ملف…</item>
+        <item quantity="one">جارٍ تنزيل ملف واحد…</item>
+        <item quantity="two">جارٍ تنزيل ملفَين…</item>
+        <item quantity="few">جارٍ تنزيل %d ملفات…</item>
+        <item quantity="many">جارٍ تنزيل %d ملفاً…</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">جارٍ تنزيل %d مجلد…</item>
+        <item quantity="zero">جارٍ تنزيل %d مجلد…</item>
+        <item quantity="one">جارٍ تنزيل مجلد واحد…</item>
+        <item quantity="two">جارٍ تنزيل مجلدَين…</item>
+        <item quantity="few">جارٍ تنزيل %d مجلدات…</item>
+        <item quantity="many">جارٍ تنزيل %d مجلداً…</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">جارٍ تنزيل %d عنصر…</item>
+        <item quantity="zero">جارٍ تنزيل %d عنصر…</item>
+        <item quantity="one">جارٍ تنزيل عنصر واحد…</item>
+        <item quantity="two">جارٍ تنزيل عنصرَين…</item>
+        <item quantity="few">جارٍ تنزيل %d عناصر…</item>
+        <item quantity="many">جارٍ تنزيل %d عنصراً…</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">تتعذر مشاركة المجلدات. المجلدات فارغة.</item>
+        <item quantity="one">تتعذر مشاركة المجلد. المجلد فارغ.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">سيتم حذف %d ملف بشكلٍ دائم.</item>
+        <item quantity="zero">سيتم حذف %d ملف بشكلٍ دائم.</item>
+        <item quantity="one">سيتم حذف ملف واحد بشكلٍ دائم.</item>
+        <item quantity="two">سيتم حذف ملفَين بشكلٍ دائم.</item>
+        <item quantity="few">سيتم حذف %d ملفات بشكلٍ دائم.</item>
+        <item quantity="many">سيتم حذف %d ملفاً بشكلٍ دائم.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">سيتم حذف %d مجلد بشكلٍ دائم.</item>
+        <item quantity="zero">سيتم حذف %d مجلد بشكلٍ دائم.</item>
+        <item quantity="one">سيتم حذف مجلد واحد بشكلٍ دائم.</item>
+        <item quantity="two">سيتم حذف مجلدَين بشكلٍ دائم.</item>
+        <item quantity="few">سيتم حذف %d مجلدات بشكلٍ دائم.</item>
+        <item quantity="many">سيتم حذف %d مجلداً بشكلٍ دائم.</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">تم استخراج %d عنصر</item>
+        <item quantity="zero">تم استخراج %d عنصر</item>
+        <item quantity="one">تم استخراج عنصر واحد</item>
+        <item quantity="two">تم استخراج عنصرَين</item>
+        <item quantity="few">تم استخراج %d عناصر</item>
+        <item quantity="many">تم استخراج %d عنصراً</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">تمت إضافة %d ملف إلى المفضلة.</item>
+        <item quantity="zero">تمت إضافة %d ملف إلى المفضلة.</item>
+        <item quantity="one">تمت إضافة ملف واحد إلى المفضلة.</item>
+        <item quantity="two">تمت إضافة ملفَين إلى المفضلة.</item>
+        <item quantity="few">تمت إضافة %d ملفات إلى المفضلة.</item>
+        <item quantity="many">تمت إضافة %d ملفاً إلى المفضلة.</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">تمت إزالة %d ملف من المفضلة.</item>
+        <item quantity="zero">تمت إزالة %d ملف من المفضلة.</item>
+        <item quantity="one">تمت إزالة ملف واحد من المفضلة.</item>
+        <item quantity="two">تمت إزالة ملفين من المفضلة.</item>
+        <item quantity="few">تمت إزالة %d ملفات من المفضلة.</item>
+        <item quantity="many">تمت إزالة %d ملفاً من المفضلة.</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">تمت إضافة %d مجلد إلى المفضلة.</item>
+        <item quantity="zero">تمت إضافة %d مجلد إلى المفضلة.</item>
+        <item quantity="one">تمت إضافة مجلد واحد إلى المفضلة.</item>
+        <item quantity="two">تمت إضافة مجلدَين إلى المفضلة.</item>
+        <item quantity="few">تمت إضافة %d مجلدات إلى المفضلة.</item>
+        <item quantity="many">تمت إضافة %d مجلداً إلى المفضلة.</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">تمت إزالة %d مجلد من المفضلة.</item>
+        <item quantity="zero">تمت إزالة %d مجلد من المفضلة.</item>
+        <item quantity="one">تمت إزالة مجلد واحد من المفضلة.</item>
+        <item quantity="two">تمت إزالة مجلدين من المفضلة.</item>
+        <item quantity="few">تمت إزالة %d مجلدات من المفضلة.</item>
+        <item quantity="many">تمت إزالة %d مجلداً من المفضلة.</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">تمت إضافة %d عنصر إلى المفضلة.</item>
+        <item quantity="zero">تمت إضافة %d عنصر إلى المفضلة.</item>
+        <item quantity="one">تمت إضافة عنصر واحد إلى المفضلة.</item>
+        <item quantity="two">تمت إضافة عنصرَين إلى المفضلة.</item>
+        <item quantity="few">تمت إضافة %d عناصر إلى المفضلة.</item>
+        <item quantity="many">تمت إضافة %d عنصراً إلى المفضلة.</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">تمت إزالة %d عنصر من المفضلة.</item>
+        <item quantity="zero">تمت إزالة %d عنصر من المفضلة.</item>
+        <item quantity="one">تمت إزالة عنصر واحد من المفضلة.</item>
+        <item quantity="two">تمت إزالة عنصرين من المفضلة.</item>
+        <item quantity="few">تمت إزالة %d عناصر من المفضلة.</item>
+        <item quantity="many">تمت إزالة %d عنصراً من المفضلة.</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d من العناصر</item>
+        <item quantity="one">عنصر واحد</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d من العناصر</item>
+        <item quantity="one">%d عنصر</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">تم نسخ %d عنصر إلى الحافظة</item>
+        <item quantity="zero">تم نسخ %d عنصر إلى الحافظة</item>
+        <item quantity="one">تم نسخ عنصر واحد إلى الحافظة</item>
+        <item quantity="two">تم نسخ عنصرَين إلى الحافظة</item>
+        <item quantity="few">تم نسخ %d عناصر إلى الحافظة</item>
+        <item quantity="many">تم نسخ %d عنصراً إلى الحافظة</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">تم نقل %d عنصر إلى الحافظة</item>
+        <item quantity="zero">تم نقل %d عنصر إلى الحافظة</item>
+        <item quantity="one">تم نقل عنصر واحد إلى الحافظة</item>
+        <item quantity="two">تم نقل عنصرَين إلى الحافظة</item>
+        <item quantity="few">تم نقل %d عناصر إلى الحافظة</item>
+        <item quantity="many">تم نقل %d عنصراً إلى الحافظة</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d عنصر محدد</item>
+        <item quantity="zero">%d عنصر محدد</item>
+        <item quantity="one">عنصر واحد محدد</item>
+        <item quantity="two">عنصران محددان</item>
+        <item quantity="few">%d عناصر محددة</item>
+        <item quantity="many">%d عنصراً محدداً</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">تم نقل %1$d عنصر إلى %2$s</item>
+        <item quantity="zero">تم نقل %1$d عنصر إلى %2$s</item>
+        <item quantity="one">تم نقل عنصر واحد إلى %2$s</item>
+        <item quantity="two">تم نقل عنصرَين إلى %2$s</item>
+        <item quantity="few">تم نقل %1$d عناصر إلى %2$s</item>
+        <item quantity="many">تم نقل %1$d عنصراً إلى %2$s</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">تم نقل %d عنصر إلى سلة المحذوفات</item>
+        <item quantity="zero">تم نقل %d عنصر إلى سلة المحذوفات</item>
+        <item quantity="one">تم نقل عنصر واحد إلى سلة المحذوفات</item>
+        <item quantity="two">تم نقل عنصرَين إلى سلة المحذوفات</item>
+        <item quantity="few">تم نقل %d عناصر إلى سلة المحذوفات</item>
+        <item quantity="many">تم نقل %d عنصراً إلى سلة المحذوفات</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">تم تحديد %d</item>
+        <item quantity="zero">تم تحديد %d</item>
+        <item quantity="one">تم تحديد %d</item>
+        <item quantity="two">تم تحديد %d</item>
+        <item quantity="few">تم تحديد %d</item>
+        <item quantity="many">تم تحديد %d</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">بطاقة SD لديك ممتلئة. هل تريد حذف %d ملف نهائياً؟</item>
+        <item quantity="zero">بطاقة SD لديك ممتلئة. هل تريد حذف %d ملف نهائياً؟</item>
+        <item quantity="one">بطاقة SD لديك ممتلئة. هل تريد حذف ملف واحد نهائياً؟</item>
+        <item quantity="two">بطاقة SD لديك ممتلئة. هل تريد حذف ملفين نهائياً؟</item>
+        <item quantity="few">بطاقة SD لديك ممتلئة. هل تريد حذف %d ملفات نهائياً؟</item>
+        <item quantity="many">بطاقة SD لديك ممتلئة. هل تريد حذف %d ملفاً نهائياً؟</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">بطاقة SD لديك ممتلئة. هل تريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="zero">بطاقة SD لديك ممتلئة. هل تريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="one">بطاقة SD لديك ممتلئة. هل تريد حذف مجلد واحد نهائياً؟</item>
+        <item quantity="two">بطاقة SD لديك ممتلئة. هل تريد حذف مجلدين نهائياً؟</item>
+        <item quantity="few">بطاقة SD لديك ممتلئة. هل تريد حذف %d مجلدات نهائياً؟</item>
+        <item quantity="many">بطاقة SD لديك ممتلئة. هل تريد حذف %d مجلداً نهائياً؟</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">بطاقة SD لديك ممتلئة. هل تريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="zero">بطاقة SD لديك ممتلئة. هل تريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="one">بطاقة SD لديك ممتلئة. هل تريد حذف عنصر واحد نهائياً؟</item>
+        <item quantity="two">بطاقة SD لديك ممتلئة. هل تريد حذف عنصرين نهائياً؟</item>
+        <item quantity="few">بطاقة SD لديك ممتلئة. هل تريد حذف %d عناصر نهائياً؟</item>
+        <item quantity="many">بطاقة SD لديك ممتلئة. هل تريد حذف %d عنصراً نهائياً؟</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">سيتم حذف هذا الملف خلال %d يوم.</item>
+        <item quantity="zero">سيتم حذف هذا الملف خلال %d يوم.</item>
+        <item quantity="one">سيتم حذف هذا الملف خلال يوم واحد.</item>
+        <item quantity="two">سيتم حذف هذا الملف خلال يومين.</item>
+        <item quantity="few">سيتم حذف هذا الملف خلال %d أيام.</item>
+        <item quantity="many">سيتم حذف هذا الملف خلال %d يوماً.</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">سيتم حذف هذا المجلد خلال %d يوم.</item>
+        <item quantity="zero">سيتم حذف هذا المجلد خلال %d يوم.</item>
+        <item quantity="one">سيتم حذف هذا المجلد خلال يوم واحد.</item>
+        <item quantity="two">سيتم حذف هذا المجلد خلال يومين.</item>
+        <item quantity="few">سيتم حذف هذا المجلد خلال %d أيام.</item>
+        <item quantity="many">سيتم حذف هذا المجلد خلال %d يوماً.</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">أتريد حذف %d ملف نهائياً؟</item>
+        <item quantity="zero">أتريد حذف %d ملف نهائياً؟</item>
+        <item quantity="one">أتريد حذف ملف واحد نهائياً؟</item>
+        <item quantity="two">أتريد حذف ملفَين نهائياً؟</item>
+        <item quantity="few">أتريد حذف %d ملفات نهائياً؟</item>
+        <item quantity="many">أتريد حذف %d ملفاً نهائياً؟</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">جارٍ حذف %d ملف…</item>
+        <item quantity="zero">جارٍ حذف %d ملف…</item>
+        <item quantity="one">جارٍ حذف ملف واحد…</item>
+        <item quantity="two">جارٍ حذف ملفَين…</item>
+        <item quantity="few">جارٍ حذف %d ملفات…</item>
+        <item quantity="many">جارٍ حذف %d ملفاً…</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">عملية استعادة %d ملف جارية…</item>
+        <item quantity="zero">عملية استعادة %d ملف جارية…</item>
+        <item quantity="one">عملية استعادة ملف واحد جارية…</item>
+        <item quantity="two">عملية استعادة ملفَين جارية…</item>
+        <item quantity="few">عملية استعادة %d ملفات جارية…</item>
+        <item quantity="many">عملية استعادة %d ملفاً جارية…</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">أتريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="zero">أتريد حذف %d مجلد نهائياً؟</item>
+        <item quantity="one">أتريد حذف مجلد واحد نهائياً؟</item>
+        <item quantity="two">أتريد حذف مجلدَين نهائياً؟</item>
+        <item quantity="few">أتريد حذف %d مجلدات نهائياً؟</item>
+        <item quantity="many">أتريد حذف %d مجلداً نهائياً؟</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">جارٍ حذف %d مجلد…</item>
+        <item quantity="zero">جارٍ حذف %d مجلد…</item>
+        <item quantity="one">جارٍ حذف مجلد واحد…</item>
+        <item quantity="two">جارٍ حذف مجلدَين…</item>
+        <item quantity="few">جارٍ حذف %d مجلدات…</item>
+        <item quantity="many">جارٍ حذف %d مجلداً…</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">عملية استعادة %d مجلد جارية…</item>
+        <item quantity="zero">عملية استعادة %d مجلد جارية…</item>
+        <item quantity="one">عملية استعادة مجلد واحد جارية…</item>
+        <item quantity="two">عملية استعادة مجلدَين جارية…</item>
+        <item quantity="few">عملية استعادة %d مجلدات جارية…</item>
+        <item quantity="many">عملية استعادة %d مجلداً جارية…</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">أتريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="zero">أتريد حذف %d عنصر نهائياً؟</item>
+        <item quantity="one">أتريد حذف عنصر واحد نهائياً؟</item>
+        <item quantity="two">أتريد حذف عنصرَين نهائياً؟</item>
+        <item quantity="few">أتريد حذف %d عناصر نهائياً؟</item>
+        <item quantity="many">أتريد حذف %d عنصراً نهائياً؟</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">جارٍ حذف %d عنصر…</item>
+        <item quantity="zero">جارٍ حذف %d عنصر…</item>
+        <item quantity="one">جارٍ حذف عنصر واحد…</item>
+        <item quantity="two">جارٍ حذف عنصرَين…</item>
+        <item quantity="few">جارٍ حذف %d عناصر…</item>
+        <item quantity="many">جارٍ حذف %d عنصراً…</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">عملية استعادة %d عنصر جارية…</item>
+        <item quantity="zero">عملية استعادة %d عنصر جارية…</item>
+        <item quantity="one">عملية استعادة عنصر واحد جارية…</item>
+        <item quantity="two">عملية استعادة عنصرَين جارية…</item>
+        <item quantity="few">عملية استعادة %d عناصر جارية…</item>
+        <item quantity="many">عملية استعادة %d عنصراً جارية…</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">سيتم الحذف خلال %d يوم</item>
+        <item quantity="zero">سيتم الحذف خلال %d يوم</item>
+        <item quantity="one">سيتم الحذف خلال يوم واحد</item>
+        <item quantity="two">سيتم الحذف خلال يومين</item>
+        <item quantity="few">سيتم الحذف خلال %d أيام</item>
+        <item quantity="many">سيتم الحذف خلال %d يوماً</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">هل تريد إلغاء تثبيت %d تطبيق؟</item>
+        <item quantity="zero">هل تريد إلغاء تثبيت %d تطبيق؟</item>
+        <item quantity="one">هل تريد إلغاء تثبيت تطبيق واحد؟</item>
+        <item quantity="two">هل تريد إلغاء تثبيت تطبيقَين؟</item>
+        <item quantity="few">هل تريد إلغاء تثبيت %d تطبيقات؟</item>
+        <item quantity="many">هل تريد إلغاء تثبيت %d تطبيقاً؟</item>
+    </plurals>
+</resources>

@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Нэвтрэх</string>
     <string name="common_signin_button_text_long">Google-р нэвтрэх:</string>
     <string name="copy">Хуулах</string>
-    <string name="copy_toast_msg">Холбоосыг түр санах ойд хуулсан</string>
     <string name="error_icon_content_description">Алдаа</string>
     <string name="expand_button_title">Дэлгэрэнгүй</string>
     <string name="exposed_dropdown_menu_content_description">Доош унадаг цэсийг харуулах</string>
-    <string name="fallback_menu_item_copy_link">Холбоосыг хуулах</string>
-    <string name="fallback_menu_item_open_in_browser">Хөтчид нээх</string>
-    <string name="fallback_menu_item_share_link">Холбоосыг хуваалцах</string>
     <string name="icon_content_description">Харилцах цонхны дүрс тэмдэг</string>
     <string name="item_view_role_description">Таб</string>
     <string name="material_clock_toggle_content_description">ҮӨ эсвэл ҮХ сонгоно уу</string>

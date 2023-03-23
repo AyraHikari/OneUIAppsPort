@@ -61,7 +61,6 @@
 .method public constructor <init>(ILokio/ByteString;J)V
     .locals 0
 
-    .line 605
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->code:I
@@ -78,7 +77,6 @@
 .method public final getCancelAfterCloseMillis()J
     .locals 2
 
-    .line 608
     iget-wide v0, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->cancelAfterCloseMillis:J
 
     return-wide v0
@@ -87,7 +85,6 @@
 .method public final getCode()I
     .locals 1
 
-    .line 606
     iget v0, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->code:I
 
     return v0
@@ -96,7 +93,6 @@
 .method public final getReason()Lokio/ByteString;
     .locals 1
 
-    .line 607
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->reason:Lokio/ByteString;
 
     return-object v0

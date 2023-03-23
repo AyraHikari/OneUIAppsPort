@@ -97,6 +97,14 @@
 
 .method private startRequestBroadcast(Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceIDToFind"
+        }
+    .end annotation
 
     .line 97
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;->mThreadLock:Ljava/lang/Object;
@@ -184,6 +192,14 @@
 
 .method private startTabListen(Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPBroadcastReceivedListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 89
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;->mTabReceivingThread:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPReceivingThread;
@@ -227,11 +243,9 @@
 
     if-eqz v1, :cond_0
 
-    .line 127
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;->mRequestBroadcastThread:Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPSendingThread;
-
     const/4 v2, 0x0
 
+    .line 127
     iput-boolean v2, v1, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery$UDPSendingThread;->isRunning:Z
 
     .line 128
@@ -268,7 +282,7 @@
 .method private stopTabListen()V
     .locals 2
 
-    const-string v0, "stopTabListen"
+    const-string/jumbo v0, "stopTabListen"
 
     .line 114
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
@@ -319,6 +333,14 @@
 
 .method public setDeviceDiscoverListener(Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 85
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;->mDeviceListener:Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;
@@ -328,6 +350,14 @@
 
 .method public setDeviceIDToFind(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceID"
+        }
+    .end annotation
 
     .line 80
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPDiscovery;->mDeviceIDToFind:Ljava/lang/String;

@@ -21,11 +21,27 @@
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;Landroidx/appcompat/view/menu/MenuBuilder;Landroid/view/View;Z)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context",
+            "menu",
+            "anchorView",
+            "overflowOnly"
+        }
+    .end annotation
 
-    .line 1068
+    .line 1055
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowPopup;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
-    .line 1069
+    .line 1056
     sget v5, Landroidx/appcompat/R$attr;->actionOverflowMenuStyle:I
 
     move-object v0, p0
@@ -42,10 +58,10 @@
 
     const p2, 0x800005
 
-    .line 1070
+    .line 1057
     invoke-virtual {p0, p2}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowPopup;->setGravity(I)V
 
-    .line 1071
+    .line 1058
     iget-object p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->mPopupPresenterCallback:Landroidx/appcompat/widget/ActionMenuPresenter$PopupPresenterCallback;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowPopup;->setPresenterCallback(Landroidx/appcompat/view/menu/MenuPresenter$Callback;)V
@@ -58,7 +74,7 @@
 .method protected onDismiss()V
     .locals 2
 
-    .line 1076
+    .line 1063
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowPopup;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     invoke-static {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->access$400(Landroidx/appcompat/widget/ActionMenuPresenter;)Landroidx/appcompat/view/menu/MenuBuilder;
@@ -67,7 +83,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1077
+    .line 1064
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowPopup;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     invoke-static {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->access$500(Landroidx/appcompat/widget/ActionMenuPresenter;)Landroidx/appcompat/view/menu/MenuBuilder;
@@ -76,7 +92,7 @@
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/MenuBuilder;->close()V
 
-    .line 1079
+    .line 1066
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowPopup;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
@@ -84,7 +100,7 @@
 
     iput-object v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->mOverflowPopup:Landroidx/appcompat/widget/ActionMenuPresenter$OverflowPopup;
 
-    .line 1081
+    .line 1068
     invoke-super {p0}, Landroidx/appcompat/view/menu/MenuPopupHelper;->onDismiss()V
 
     return-void

@@ -1,124 +1,528 @@
-.class final synthetic Lcom/google/android/gms/internal/icing/zzdn;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/gms/internal/icing/zzdn;
+.super Lcom/google/android/gms/internal/icing/zzbt;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
+
+# interfaces
+.implements Ljava/util/RandomAccess;
+.implements Lcom/google/android/gms/internal/icing/zzdo;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/internal/icing/zzbt<",
+        "Ljava/lang/String;",
+        ">;",
+        "Ljava/util/RandomAccess;",
+        "Lcom/google/android/gms/internal/icing/zzdo;"
+    }
+.end annotation
 
 
 # static fields
-.field static final synthetic zzjr:[I
+.field public static final zza:Lcom/google/android/gms/internal/icing/zzdo;
 
-.field static final synthetic zzjs:[I
+.field private static final zzb:Lcom/google/android/gms/internal/icing/zzdn;
+
+
+# instance fields
+.field private final zzc:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 2
+
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzdn;
+
+    const/16 v1, 0xa
 
     .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/icing/zzdy;->values()[Lcom/google/android/gms/internal/icing/zzdy;
+    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/icing/zzdn;-><init>(I)V
+
+    sput-object v0, Lcom/google/android/gms/internal/icing/zzdn;->zzb:Lcom/google/android/gms/internal/icing/zzdn;
+
+    .line 2
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/icing/zzbt;->zzb()V
+
+    sput-object v0, Lcom/google/android/gms/internal/icing/zzdn;->zza:Lcom/google/android/gms/internal/icing/zzdo;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/16 v0, 0xa
+
+    .line 1
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/icing/zzdn;-><init>(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(I)V
+    .locals 1
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 3
+    invoke-direct {p0}, Lcom/google/android/gms/internal/icing/zzbt;-><init>()V
+
+    iput-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/util/ArrayList;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 4
+    invoke-direct {p0}, Lcom/google/android/gms/internal/icing/zzbt;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    return-void
+.end method
+
+.method private static zzj(Ljava/lang/Object;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    instance-of v0, p0, Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    check-cast p0, Ljava/lang/String;
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    instance-of v0, p0, Lcom/google/android/gms/internal/icing/zzcf;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    check-cast p0, Lcom/google/android/gms/internal/icing/zzcf;
+
+    .line 5
+    sget-object v0, Lcom/google/android/gms/internal/icing/zzdh;->zza:Ljava/nio/charset/Charset;
+
+    .line 4
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/icing/zzcf;->zzk(Ljava/nio/charset/Charset;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 6
+    :cond_1
+    check-cast p0, [B
+
+    invoke-static {p0}, Lcom/google/android/gms/internal/icing/zzdh;->zzd([B)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic add(ILjava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    check-cast p2, Ljava/lang/String;
+
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzbt;->zzc()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 3
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 4
+    iget p1, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    return-void
+.end method
+
+.method public final addAll(ILjava/util/Collection;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/util/Collection<",
+            "+",
+            "Ljava/lang/String;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzbt;->zzc()V
+
+    .line 2
+    instance-of v0, p2, Lcom/google/android/gms/internal/icing/zzdo;
+
+    if-eqz v0, :cond_0
+
+    check-cast p2, Lcom/google/android/gms/internal/icing/zzdo;
+
+    invoke-interface {p2}, Lcom/google/android/gms/internal/icing/zzdo;->zzh()Ljava/util/List;
+
+    move-result-object p2
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 3
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
+
+    move-result p1
+
+    .line 4
+    iget p2, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    add-int/lit8 p2, p2, 0x1
+
+    iput p2, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    return p1
+.end method
+
+.method public final addAll(Ljava/util/Collection;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "+",
+            "Ljava/lang/String;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .line 5
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzdn;->size()I
+
+    move-result v0
+
+    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/internal/icing/zzbt;->addAll(ILjava/util/Collection;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final clear()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzbt;->zzc()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 2
+    invoke-interface {v0}, Ljava/util/List;->clear()V
+
+    .line 3
+    iget v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    return-void
+.end method
+
+.method public final bridge synthetic get(I)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/icing/zzdn;->zzd(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final bridge synthetic remove(I)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzbt;->zzc()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 2
+    invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 3
+    iget v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
+
+    .line 4
+    invoke-static {p1}, Lcom/google/android/gms/internal/icing/zzdn;->zzj(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p2, Ljava/lang/String;
+
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzbt;->zzc()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 3
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 4
+    invoke-static {p1}, Lcom/google/android/gms/internal/icing/zzdn;->zzj(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final size()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 1
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final zzd(I)Ljava/lang/String;
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 1
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    array-length v0, v0
+    .line 2
+    instance-of v1, v0, Ljava/lang/String;
 
-    new-array v0, v0, [I
+    if-eqz v1, :cond_0
 
-    sput-object v0, Lcom/google/android/gms/internal/icing/zzdn;->zzjs:[I
+    .line 3
+    check-cast v0, Ljava/lang/String;
 
-    const/4 v1, 0x1
+    return-object v0
 
-    :try_start_0
-    sget-object v2, Lcom/google/android/gms/internal/icing/zzdy;->zzlc:Lcom/google/android/gms/internal/icing/zzdy;
+    .line 4
+    :cond_0
+    instance-of v1, v0, Lcom/google/android/gms/internal/icing/zzcf;
 
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/icing/zzdy;->ordinal()I
+    if-eqz v1, :cond_2
 
-    move-result v2
+    .line 5
+    check-cast v0, Lcom/google/android/gms/internal/icing/zzcf;
 
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .line 6
+    sget-object v1, Lcom/google/android/gms/internal/icing/zzdh;->zza:Ljava/nio/charset/Charset;
 
-    :catch_0
-    const/4 v0, 0x2
+    .line 7
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/icing/zzcf;->zzk(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
-    :try_start_1
-    sget-object v2, Lcom/google/android/gms/internal/icing/zzdn;->zzjs:[I
+    move-result-object v1
 
-    sget-object v3, Lcom/google/android/gms/internal/icing/zzdy;->zzle:Lcom/google/android/gms/internal/icing/zzdy;
+    .line 8
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/icing/zzcf;->zzh()Z
 
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/icing/zzdy;->ordinal()I
+    move-result v0
 
-    move-result v3
+    if-eqz v0, :cond_1
 
-    aput v0, v2, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
 
-    :catch_1
-    const/4 v2, 0x3
+    .line 9
+    invoke-interface {v0, p1, v1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
-    :try_start_2
-    sget-object v3, Lcom/google/android/gms/internal/icing/zzdn;->zzjs:[I
+    :cond_1
+    return-object v1
 
-    sget-object v4, Lcom/google/android/gms/internal/icing/zzdy;->zzlb:Lcom/google/android/gms/internal/icing/zzdy;
+    .line 10
+    :cond_2
+    check-cast v0, [B
 
-    invoke-virtual {v4}, Lcom/google/android/gms/internal/icing/zzdy;->ordinal()I
+    .line 11
+    invoke-static {v0}, Lcom/google/android/gms/internal/icing/zzdh;->zzd([B)Ljava/lang/String;
 
-    move-result v4
+    move-result-object v1
 
-    aput v2, v3, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 12
+    invoke-static {v0}, Lcom/google/android/gms/internal/icing/zzdh;->zzc([B)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 13
+    invoke-interface {v0, p1, v1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
+
+    :cond_3
+    return-object v1
+.end method
+
+.method public final bridge synthetic zze(I)Lcom/google/android/gms/internal/icing/zzdg;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzdn;->size()I
+
+    move-result v0
+
+    if-lt p1, v0, :cond_0
 
     .line 2
-    :catch_2
-    invoke-static {}, Lcom/google/android/gms/internal/icing/zzdm;->values()[Lcom/google/android/gms/internal/icing/zzdm;
+    new-instance v0, Ljava/util/ArrayList;
 
-    move-result-object v3
+    .line 3
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(I)V
 
-    array-length v3, v3
+    iget-object p1, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
 
-    new-array v3, v3, [I
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    sput-object v3, Lcom/google/android/gms/internal/icing/zzdn;->zzjr:[I
+    new-instance p1, Lcom/google/android/gms/internal/icing/zzdn;
 
-    :try_start_3
-    sget-object v4, Lcom/google/android/gms/internal/icing/zzdm;->zzjo:Lcom/google/android/gms/internal/icing/zzdm;
+    .line 5
+    invoke-direct {p1, v0}, Lcom/google/android/gms/internal/icing/zzdn;-><init>(Ljava/util/ArrayList;)V
 
-    invoke-virtual {v4}, Lcom/google/android/gms/internal/icing/zzdm;->ordinal()I
+    return-object p1
 
-    move-result v4
+    .line 1
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    aput v1, v3, v4
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    .line 2
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
 
-    :catch_3
-    :try_start_4
-    sget-object v1, Lcom/google/android/gms/internal/icing/zzdn;->zzjr:[I
+    throw p1
+.end method
 
-    sget-object v3, Lcom/google/android/gms/internal/icing/zzdm;->zzjm:Lcom/google/android/gms/internal/icing/zzdm;
+.method public final zzf(Lcom/google/android/gms/internal/icing/zzcf;)V
+    .locals 1
 
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/icing/zzdm;->ordinal()I
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzbt;->zzc()V
 
-    move-result v3
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
 
-    aput v0, v1, v3
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    .line 2
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    :catch_4
-    :try_start_5
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzdn;->zzjr:[I
+    .line 3
+    iget p1, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
 
-    sget-object v1, Lcom/google/android/gms/internal/icing/zzdm;->zzjl:Lcom/google/android/gms/internal/icing/zzdm;
+    add-int/lit8 p1, p1, 0x1
 
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/icing/zzdm;->ordinal()I
+    iput p1, p0, Lcom/google/android/gms/internal/icing/zzdn;->modCount:I
 
-    move-result v1
-
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
     return-void
+.end method
+
+.method public final zzg(I)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 1
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final zzh()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "*>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzdn;->zzc:Ljava/util/List;
+
+    .line 1
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final zzi()Lcom/google/android/gms/internal/icing/zzdo;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/icing/zzbt;->zza()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzfi;
+
+    .line 1
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/icing/zzfi;-><init>(Lcom/google/android/gms/internal/icing/zzdo;)V
+
+    return-object v0
+
+    :cond_0
+    return-object p0
 .end method

@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;
 .super Ljava/lang/RuntimeException;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # annotations
@@ -34,9 +35,9 @@
 
     move-result v1
 
-    add-int/lit8 v1, v1, 0x29
-
     new-instance v2, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v1, v1, 0x29
 
     invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 

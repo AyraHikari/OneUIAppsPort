@@ -1413,7 +1413,7 @@
 .end method
 
 .method protected generateWorkingKey(Z[B)[I
-    .locals 12
+    .locals 13
 
     const/16 v0, 0x20
 
@@ -1573,29 +1573,27 @@
     .line 366
     sget-object v10, Lorg/spongycastle/crypto/engines/DESEngine;->pc2:[B
 
-    aget-byte v10, v10, v9
+    aget-byte v11, v10, v9
 
-    aget-boolean v10, v4, v10
+    aget-boolean v11, v4, v11
 
-    if-eqz v10, :cond_7
+    if-eqz v11, :cond_7
 
     .line 368
-    aget v10, v1, v6
+    aget v11, v1, v6
 
-    sget-object v11, Lorg/spongycastle/crypto/engines/DESEngine;->bigbyte:[I
+    sget-object v12, Lorg/spongycastle/crypto/engines/DESEngine;->bigbyte:[I
 
-    aget v11, v11, v9
+    aget v12, v12, v9
 
-    or-int/2addr v10, v11
+    or-int/2addr v11, v12
 
-    aput v10, v1, v6
+    aput v11, v1, v6
 
-    .line 371
     :cond_7
-    sget-object v10, Lorg/spongycastle/crypto/engines/DESEngine;->pc2:[B
-
     add-int/lit8 v11, v9, 0x18
 
+    .line 371
     aget-byte v10, v10, v11
 
     aget-boolean v10, v4, v10
@@ -1768,6 +1766,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p2
@@ -1778,7 +1778,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 

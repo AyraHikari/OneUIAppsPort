@@ -25,10 +25,10 @@
 .method public constructor <init>(Ljava/lang/Class;)V
     .locals 0
 
-    .line 43
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 44
+    .line 2
     iput-object p1, p0, Lorg/simpleframework/xml/transform/EnumTransform;->type:Ljava/lang/Class;
 
     return-void
@@ -38,13 +38,8 @@
 # virtual methods
 .method public read(Ljava/lang/String;)Ljava/lang/Enum;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 58
+    .line 2
     iget-object v0, p0, Lorg/simpleframework/xml/transform/EnumTransform;->type:Ljava/lang/Class;
 
     invoke-static {v0, p1}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -56,13 +51,8 @@
 
 .method public bridge synthetic read(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 29
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/EnumTransform;->read(Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object p1
@@ -72,13 +62,8 @@
 
 .method public write(Ljava/lang/Enum;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 72
+    .line 2
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     move-result-object p1
@@ -88,13 +73,8 @@
 
 .method public bridge synthetic write(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 29
+    .line 1
     check-cast p1, Ljava/lang/Enum;
 
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/transform/EnumTransform;->write(Ljava/lang/Enum;)Ljava/lang/String;

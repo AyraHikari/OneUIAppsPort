@@ -1,4 +1,4 @@
-.class final Lcom/google/android/material/navigation/NavigationView$SavedState$1;
+.class Lcom/google/android/material/navigation/NavigationView$SavedState$1;
 .super Ljava/lang/Object;
 .source "NavigationView.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 578
+    .line 999
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/navigation/NavigationView$SavedState;
     .locals 2
 
-    .line 586
+    .line 1009
     new-instance v0, Lcom/google/android/material/navigation/NavigationView$SavedState;
 
     const/4 v1, 0x0
@@ -54,7 +54,7 @@
 .method public createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Lcom/google/android/material/navigation/NavigationView$SavedState;
     .locals 1
 
-    .line 581
+    .line 1003
     new-instance v0, Lcom/google/android/material/navigation/NavigationView$SavedState;
 
     invoke-direct {v0, p1, p2}, Lcom/google/android/material/navigation/NavigationView$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
@@ -65,7 +65,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 578
+    .line 999
     invoke-virtual {p0, p1}, Lcom/google/android/material/navigation/NavigationView$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/navigation/NavigationView$SavedState;
 
     move-result-object p1
@@ -76,7 +76,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 0
 
-    .line 578
+    .line 999
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/navigation/NavigationView$SavedState$1;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Lcom/google/android/material/navigation/NavigationView$SavedState;
 
     move-result-object p1
@@ -87,7 +87,7 @@
 .method public newArray(I)[Lcom/google/android/material/navigation/NavigationView$SavedState;
     .locals 0
 
-    .line 591
+    .line 1015
     new-array p1, p1, [Lcom/google/android/material/navigation/NavigationView$SavedState;
 
     return-object p1
@@ -96,7 +96,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 578
+    .line 999
     invoke-virtual {p0, p1}, Lcom/google/android/material/navigation/NavigationView$SavedState$1;->newArray(I)[Lcom/google/android/material/navigation/NavigationView$SavedState;
 
     move-result-object p1

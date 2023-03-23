@@ -21,8 +21,18 @@
 # direct methods
 .method constructor <init>(Landroidx/appcompat/widget/PopupMenu;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "src"
+        }
+    .end annotation
 
-    .line 175
+    .line 183
     iput-object p1, p0, Landroidx/appcompat/widget/PopupMenu$3;->this$0:Landroidx/appcompat/widget/PopupMenu;
 
     invoke-direct {p0, p2}, Landroidx/appcompat/widget/ForwardingListener;-><init>(Landroid/view/View;)V
@@ -35,7 +45,7 @@
 .method public getPopup()Landroidx/appcompat/view/menu/ShowableListMenu;
     .locals 1
 
-    .line 191
+    .line 199
     iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu$3;->this$0:Landroidx/appcompat/widget/PopupMenu;
 
     iget-object v0, v0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/MenuPopupHelper;
@@ -50,7 +60,7 @@
 .method protected onForwardingStarted()Z
     .locals 1
 
-    .line 178
+    .line 186
     iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu$3;->this$0:Landroidx/appcompat/widget/PopupMenu;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/PopupMenu;->show()V
@@ -63,7 +73,7 @@
 .method protected onForwardingStopped()Z
     .locals 1
 
-    .line 184
+    .line 192
     iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu$3;->this$0:Landroidx/appcompat/widget/PopupMenu;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/PopupMenu;->dismiss()V

@@ -55,7 +55,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 4
 
     .line 26
     new-instance v0, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
@@ -67,304 +67,266 @@
     sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     .line 31
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
-    sget-object v1, Lorg/spongycastle/asn1/x509/Extension;->extendedKeyUsage:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    sget-object v2, Lorg/spongycastle/asn1/x509/Extension;->extendedKeyUsage:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    const-string v2, "0"
+    const-string v3, "0"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v2, v3}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->anyExtendedKeyUsage:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->anyExtendedKeyUsage:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 36
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "1"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_serverAuth:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_serverAuth:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 40
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "2"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_clientAuth:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_clientAuth:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 44
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "3"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_codeSigning:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_codeSigning:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 48
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "4"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_emailProtection:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_emailProtection:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 52
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "5"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecEndSystem:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecEndSystem:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 56
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "6"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecTunnel:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecTunnel:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 60
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "7"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecUser:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecUser:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 64
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "8"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_timeStamping:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_timeStamping:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 68
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "9"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_OCSPSigning:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_OCSPSigning:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 72
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "10"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_dvcs:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_dvcs:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 76
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "11"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_sbgpCertAAServerAuth:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_sbgpCertAAServerAuth:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 80
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "12"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_scvp_responder:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_scvp_responder:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 84
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "13"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_eapOverPPP:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_eapOverPPP:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 88
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "14"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_eapOverLAN:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_eapOverLAN:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 92
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "15"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_scvpServer:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_scvpServer:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 96
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "16"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_scvpClient:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_scvpClient:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 100
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "17"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecIKE:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_ipsecIKE:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 104
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "18"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v2}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_capwapAC:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_capwapAC:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 108
-    new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;
-
-    sget-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    new-instance v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     const-string v2, "19"
 
-    invoke-virtual {v1, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    invoke-virtual {v0, v2}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->branch(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
+    invoke-direct {v1, v0}, Lorg/spongycastle/asn1/x509/KeyPurposeId;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;)V
 
-    sput-object v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_capwapWTP:Lorg/spongycastle/asn1/x509/KeyPurposeId;
+    sput-object v1, Lorg/spongycastle/asn1/x509/KeyPurposeId;->id_kp_capwapWTP:Lorg/spongycastle/asn1/x509/KeyPurposeId;
 
     .line 116
     new-instance v0, Lorg/spongycastle/asn1/x509/KeyPurposeId;

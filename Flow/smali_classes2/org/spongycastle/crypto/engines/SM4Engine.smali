@@ -785,9 +785,9 @@
 
     sget-object v8, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
 
-    aget v8, v8, v4
+    aget v9, v8, v4
 
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v9
 
     invoke-direct {p0, v3}, Lorg/spongycastle/crypto/engines/SM4Engine;->T_ap(I)I
 
@@ -802,19 +802,17 @@
 
     aget v3, p2, v7
 
-    aget v8, p2, v5
+    aget v9, p2, v5
 
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v9
 
-    aget v8, v1, v4
+    aget v9, v1, v4
 
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v9
 
-    sget-object v8, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
+    aget v9, v8, v6
 
-    aget v8, v8, v6
-
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v9
 
     invoke-direct {p0, v3}, Lorg/spongycastle/crypto/engines/SM4Engine;->T_ap(I)I
 
@@ -829,19 +827,17 @@
 
     aget v3, p2, v5
 
-    aget v8, v1, v4
+    aget v9, v1, v4
 
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v9
 
-    aget v8, v1, v6
+    aget v9, v1, v6
 
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v9
 
-    sget-object v8, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
+    aget v9, v8, v7
 
-    aget v8, v8, v7
-
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v9
 
     invoke-direct {p0, v3}, Lorg/spongycastle/crypto/engines/SM4Engine;->T_ap(I)I
 
@@ -864,9 +860,7 @@
 
     xor-int/2addr p2, v3
 
-    sget-object v3, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
-
-    aget v3, v3, v5
+    aget v3, v8, v5
 
     xor-int/2addr p2, v3
 
@@ -936,9 +930,9 @@
 
     sget-object v2, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
 
-    aget v2, v2, v4
+    aget v3, v2, v4
 
-    xor-int/2addr v0, v2
+    xor-int/2addr v0, v3
 
     invoke-direct {p0, v0}, Lorg/spongycastle/crypto/engines/SM4Engine;->T_ap(I)I
 
@@ -953,48 +947,17 @@
     .line 126
     aget p1, p2, v6
 
-    aget v2, p2, v7
+    aget v3, p2, v7
 
-    aget v3, p2, v5
+    aget v4, p2, v5
 
-    xor-int/2addr v2, v3
-
-    aget v3, v1, v0
-
-    xor-int/2addr v2, v3
-
-    sget-object v3, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
-
-    aget v3, v3, v6
-
-    xor-int/2addr v2, v3
-
-    invoke-direct {p0, v2}, Lorg/spongycastle/crypto/engines/SM4Engine;->T_ap(I)I
-
-    move-result v2
-
-    xor-int/2addr p1, v2
-
-    const/16 v2, 0x1e
-
-    aput p1, v1, v2
-
-    .line 127
-    aget p1, p2, v7
-
-    aget v3, p2, v5
+    xor-int/2addr v3, v4
 
     aget v4, v1, v0
 
     xor-int/2addr v3, v4
 
-    aget v4, v1, v2
-
-    xor-int/2addr v3, v4
-
-    sget-object v4, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
-
-    aget v4, v4, v7
+    aget v4, v2, v6
 
     xor-int/2addr v3, v4
 
@@ -1004,9 +967,36 @@
 
     xor-int/2addr p1, v3
 
-    const/16 v3, 0x1d
+    const/16 v3, 0x1e
 
     aput p1, v1, v3
+
+    .line 127
+    aget p1, p2, v7
+
+    aget v4, p2, v5
+
+    aget v6, v1, v0
+
+    xor-int/2addr v4, v6
+
+    aget v6, v1, v3
+
+    xor-int/2addr v4, v6
+
+    aget v6, v2, v7
+
+    xor-int/2addr v4, v6
+
+    invoke-direct {p0, v4}, Lorg/spongycastle/crypto/engines/SM4Engine;->T_ap(I)I
+
+    move-result v4
+
+    xor-int/2addr p1, v4
+
+    const/16 v4, 0x1d
+
+    aput p1, v1, v4
 
     const/16 p1, 0x1c
 
@@ -1015,15 +1005,13 @@
 
     aget v0, v1, v0
 
-    aget v2, v1, v2
+    aget v3, v1, v3
 
-    xor-int/2addr v0, v2
+    xor-int/2addr v0, v3
 
-    aget v2, v1, v3
+    aget v3, v1, v4
 
-    xor-int/2addr v0, v2
-
-    sget-object v2, Lorg/spongycastle/crypto/engines/SM4Engine;->CK:[I
+    xor-int/2addr v0, v3
 
     aget v2, v2, v5
 
@@ -1231,6 +1219,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p2
@@ -1241,7 +1231,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/air_view_btn_ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_text_color" />
+            <corners android:radius="@dimen/button_shape_radius" />
+            <padding android:left="@dimen/button_shape_padding_horizontal" android:top="@dimen/button_shape_padding_top" android:right="@dimen/button_shape_padding_horizontal" android:bottom="@dimen/button_shape_padding_bottom" />
+        </shape>
+    </item>
+</ripple>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:layout_width="fill_parent" android:layout_height="58.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/cover_widget_app_title" android:background="@drawable/coverwidget_ripple" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginHorizontal="12.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="6.0dip">
-        <ImageView android:layout_width="@dimen/widget_cover_title_icon_size" android:layout_height="@dimen/widget_cover_title_icon_size" android:src="@mipmap/weather_launcher_icon" />
-        <TextView android:textSize="24.0dip" android:textColor="@color/col_FAFAFA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weather" android:alpha="0.6" android:layout_marginStart="14.0dip" />
-    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="6.0dip">
+        <LinearLayout android:gravity="start|center" android:id="@id/city_name_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="24.0dip" android:gravity="start" android:id="@id/widget_current_city_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CoverWidget.TextAppearance.CityName" />
+        </LinearLayout>
+    </RelativeLayout>
 </FrameLayout>

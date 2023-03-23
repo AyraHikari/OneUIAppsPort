@@ -1,4 +1,4 @@
-.class final Lcom/google/android/material/stateful/ExtendableSavedState$1;
+.class Lcom/google/android/material/stateful/ExtendableSavedState$1;
 .super Ljava/lang/Object;
 .source "ExtendableSavedState.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 90
+    .line 92
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/stateful/ExtendableSavedState;
     .locals 2
 
-    .line 99
+    .line 103
     new-instance v0, Lcom/google/android/material/stateful/ExtendableSavedState;
 
     const/4 v1, 0x0
@@ -54,7 +54,7 @@
 .method public createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Lcom/google/android/material/stateful/ExtendableSavedState;
     .locals 2
 
-    .line 94
+    .line 97
     new-instance v0, Lcom/google/android/material/stateful/ExtendableSavedState;
 
     const/4 v1, 0x0
@@ -67,7 +67,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 90
+    .line 92
     invoke-virtual {p0, p1}, Lcom/google/android/material/stateful/ExtendableSavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/stateful/ExtendableSavedState;
 
     move-result-object p1
@@ -78,7 +78,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 0
 
-    .line 90
+    .line 92
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/stateful/ExtendableSavedState$1;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Lcom/google/android/material/stateful/ExtendableSavedState;
 
     move-result-object p1
@@ -89,7 +89,7 @@
 .method public newArray(I)[Lcom/google/android/material/stateful/ExtendableSavedState;
     .locals 0
 
-    .line 104
+    .line 109
     new-array p1, p1, [Lcom/google/android/material/stateful/ExtendableSavedState;
 
     return-object p1
@@ -98,7 +98,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 90
+    .line 92
     invoke-virtual {p0, p1}, Lcom/google/android/material/stateful/ExtendableSavedState$1;->newArray(I)[Lcom/google/android/material/stateful/ExtendableSavedState;
 
     move-result-object p1

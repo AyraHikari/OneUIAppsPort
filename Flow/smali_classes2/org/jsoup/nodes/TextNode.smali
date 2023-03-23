@@ -1,80 +1,41 @@
 .class public Lorg/jsoup/nodes/TextNode;
-.super Lorg/jsoup/nodes/Node;
+.super Lorg/jsoup/nodes/LeafNode;
 .source "TextNode.java"
 
 
-# static fields
-.field private static final TEXT_KEY:Ljava/lang/String; = "text"
-
-
-# instance fields
-.field text:Ljava/lang/String;
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 26
-    invoke-direct {p0}, Lorg/jsoup/nodes/Node;-><init>()V
+    .line 19
+    invoke-direct {p0}, Lorg/jsoup/nodes/LeafNode;-><init>()V
 
-    .line 27
-    iput-object p2, p0, Lorg/jsoup/nodes/TextNode;->baseUri:Ljava/lang/String;
-
-    .line 28
-    iput-object p1, p0, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
+    .line 20
+    iput-object p1, p0, Lorg/jsoup/nodes/TextNode;->value:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static createFromEncoded(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/TextNode;
+.method public static createFromEncoded(Ljava/lang/String;)Lorg/jsoup/nodes/TextNode;
     .locals 1
 
-    .line 115
+    .line 111
     invoke-static {p0}, Lorg/jsoup/nodes/Entities;->unescape(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 116
+    .line 112
     new-instance v0, Lorg/jsoup/nodes/TextNode;
 
-    invoke-direct {v0, p0, p1}, Lorg/jsoup/nodes/TextNode;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Lorg/jsoup/nodes/TextNode;-><init>(Ljava/lang/String;)V
 
     return-object v0
-.end method
-
-.method private ensureAttributes()V
-    .locals 3
-
-    .line 134
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    if-nez v0, :cond_0
-
-    .line 135
-    new-instance v0, Lorg/jsoup/nodes/Attributes;
-
-    invoke-direct {v0}, Lorg/jsoup/nodes/Attributes;-><init>()V
-
-    iput-object v0, p0, Lorg/jsoup/nodes/TextNode;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    .line 136
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    iget-object v1, p0, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
-
-    const-string v2, "text"
-
-    invoke-virtual {v0, v2, v1}, Lorg/jsoup/nodes/Attributes;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    return-void
 .end method
 
 .method static lastCharIsWhitespace(Ljava/lang/StringBuilder;)Z
     .locals 2
 
-    .line 129
+    .line 125
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v0
@@ -109,8 +70,8 @@
 .method static normaliseWhitespace(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 120
-    invoke-static {p0}, Lorg/jsoup/helper/StringUtil;->normaliseWhitespace(Ljava/lang/String;)Ljava/lang/String;
+    .line 116
+    invoke-static {p0}, Lorg/jsoup/internal/StringUtil;->normaliseWhitespace(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -124,7 +85,7 @@
 
     const-string v1, ""
 
-    .line 125
+    .line 121
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -134,214 +95,143 @@
 
 
 # virtual methods
-.method public absUrl(Ljava/lang/String;)Ljava/lang/String;
+.method public bridge synthetic absUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 172
-    invoke-direct {p0}, Lorg/jsoup/nodes/TextNode;->ensureAttributes()V
-
-    .line 173
-    invoke-super {p0, p1}, Lorg/jsoup/nodes/Node;->absUrl(Ljava/lang/String;)Ljava/lang/String;
+    .line 12
+    invoke-super {p0, p1}, Lorg/jsoup/nodes/LeafNode;->absUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public attr(Ljava/lang/String;)Ljava/lang/String;
+.method public bridge synthetic attr(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 142
-    invoke-direct {p0}, Lorg/jsoup/nodes/TextNode;->ensureAttributes()V
-
-    .line 143
-    invoke-super {p0, p1}, Lorg/jsoup/nodes/Node;->attr(Ljava/lang/String;)Ljava/lang/String;
+    .line 12
+    invoke-super {p0, p1}, Lorg/jsoup/nodes/LeafNode;->attr(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public attr(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Node;
+.method public bridge synthetic attr(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Node;
     .locals 0
 
-    .line 154
-    invoke-direct {p0}, Lorg/jsoup/nodes/TextNode;->ensureAttributes()V
-
-    .line 155
-    invoke-super {p0, p1, p2}, Lorg/jsoup/nodes/Node;->attr(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Node;
+    .line 12
+    invoke-super {p0, p1, p2}, Lorg/jsoup/nodes/LeafNode;->attr(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Node;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public attributes()Lorg/jsoup/nodes/Attributes;
+.method public bridge synthetic baseUri()Ljava/lang/String;
     .locals 1
 
-    .line 148
-    invoke-direct {p0}, Lorg/jsoup/nodes/TextNode;->ensureAttributes()V
-
-    .line 149
-    invoke-super {p0}, Lorg/jsoup/nodes/Node;->attributes()Lorg/jsoup/nodes/Attributes;
+    .line 12
+    invoke-super {p0}, Lorg/jsoup/nodes/LeafNode;->baseUri()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public bridge synthetic childNodeSize()I
+    .locals 1
 
-    const/4 v0, 0x1
+    .line 12
+    invoke-super {p0}, Lorg/jsoup/nodes/LeafNode;->childNodeSize()I
 
-    if-ne p0, p1, :cond_0
+    move-result v0
 
     return v0
+.end method
 
-    :cond_0
-    const/4 v1, 0x0
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/CloneNotSupportedException;
+        }
+    .end annotation
 
-    if-eqz p1, :cond_6
+    .line 12
+    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->clone()Lorg/jsoup/nodes/TextNode;
 
-    .line 179
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v0
 
-    move-result-object v2
+    return-object v0
+.end method
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public bridge synthetic clone()Lorg/jsoup/nodes/Node;
+    .locals 1
 
-    move-result-object v3
+    .line 12
+    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->clone()Lorg/jsoup/nodes/TextNode;
 
-    if-eq v2, v3, :cond_1
+    move-result-object v0
 
-    goto :goto_2
+    return-object v0
+.end method
 
-    .line 180
-    :cond_1
-    invoke-super {p0, p1}, Lorg/jsoup/nodes/Node;->equals(Ljava/lang/Object;)Z
+.method public clone()Lorg/jsoup/nodes/TextNode;
+    .locals 1
 
-    move-result v2
+    .line 102
+    invoke-super {p0}, Lorg/jsoup/nodes/LeafNode;->clone()Lorg/jsoup/nodes/Node;
 
-    if-nez v2, :cond_2
+    move-result-object v0
 
-    return v1
+    check-cast v0, Lorg/jsoup/nodes/TextNode;
 
-    .line 182
-    :cond_2
-    check-cast p1, Lorg/jsoup/nodes/TextNode;
+    return-object v0
+.end method
 
-    .line 184
-    iget-object v2, p0, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
+.method public bridge synthetic empty()Lorg/jsoup/nodes/Node;
+    .locals 1
 
-    iget-object p1, p1, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
+    .line 12
+    invoke-super {p0}, Lorg/jsoup/nodes/LeafNode;->empty()Lorg/jsoup/nodes/Node;
 
-    if-eqz v2, :cond_3
+    move-result-object v0
 
-    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_5
-
-    goto :goto_0
-
-    :cond_3
-    if-nez p1, :cond_4
-
-    goto :goto_1
-
-    :cond_4
-    :goto_0
-    move v0, v1
-
-    :cond_5
-    :goto_1
-    return v0
-
-    :cond_6
-    :goto_2
-    return v1
+    return-object v0
 .end method
 
 .method public getWholeText()Ljava/lang/String;
-    .locals 2
+    .locals 1
 
-    .line 61
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    const-string v1, "text"
-
-    invoke-virtual {v0, v1}, Lorg/jsoup/nodes/Attributes;->get(Ljava/lang/String;)Ljava/lang/String;
+    .line 51
+    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->coreValue()Ljava/lang/String;
 
     move-result-object v0
 
-    :goto_0
     return-object v0
 .end method
 
-.method public hasAttr(Ljava/lang/String;)Z
+.method public bridge synthetic hasAttr(Ljava/lang/String;)Z
     .locals 0
 
-    .line 160
-    invoke-direct {p0}, Lorg/jsoup/nodes/TextNode;->ensureAttributes()V
-
-    .line 161
-    invoke-super {p0, p1}, Lorg/jsoup/nodes/Node;->hasAttr(Ljava/lang/String;)Z
+    .line 12
+    invoke-super {p0, p1}, Lorg/jsoup/nodes/LeafNode;->hasAttr(Ljava/lang/String;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public hashCode()I
-    .locals 2
-
-    .line 189
-    invoke-super {p0}, Lorg/jsoup/nodes/Node;->hashCode()I
-
-    move-result v0
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 190
-    iget-object v1, p0, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    move-result v1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
 .method public isBlank()Z
     .locals 1
 
-    .line 69
-    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->getWholeText()Ljava/lang/String;
+    .line 59
+    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->coreValue()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/jsoup/helper/StringUtil;->isBlank(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/jsoup/internal/StringUtil;->isBlank(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -356,144 +246,149 @@
     return-object v0
 .end method
 
-.method outerHtmlHead(Ljava/lang/StringBuilder;ILorg/jsoup/nodes/Document$OutputSettings;)V
-    .locals 6
+.method outerHtmlHead(Ljava/lang/Appendable;ILorg/jsoup/nodes/Document$OutputSettings;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    .line 93
+    .line 84
     invoke-virtual {p3}, Lorg/jsoup/nodes/Document$OutputSettings;->prettyPrint()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
+    .line 85
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->siblingIndex()I
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->parentNode:Lorg/jsoup/nodes/Node;
+    iget-object v1, p0, Lorg/jsoup/nodes/TextNode;->parentNode:Lorg/jsoup/nodes/Node;
 
-    instance-of v0, v0, Lorg/jsoup/nodes/Element;
+    instance-of v1, v1, Lorg/jsoup/nodes/Element;
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->parentNode:Lorg/jsoup/nodes/Node;
+    iget-object v1, p0, Lorg/jsoup/nodes/TextNode;->parentNode:Lorg/jsoup/nodes/Node;
 
-    check-cast v0, Lorg/jsoup/nodes/Element;
+    check-cast v1, Lorg/jsoup/nodes/Element;
 
-    invoke-virtual {v0}, Lorg/jsoup/nodes/Element;->tag()Lorg/jsoup/parser/Tag;
+    invoke-virtual {v1}, Lorg/jsoup/nodes/Element;->tag()Lorg/jsoup/parser/Tag;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Lorg/jsoup/parser/Tag;->formatAsBlock()Z
+    invoke-virtual {v1}, Lorg/jsoup/parser/Tag;->formatAsBlock()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->isBlank()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     :cond_0
     invoke-virtual {p3}, Lorg/jsoup/nodes/Document$OutputSettings;->outline()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_2
+    if-eqz v1, :cond_2
 
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->siblingNodes()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
-    move-result v0
+    move-result v1
 
-    if-lez v0, :cond_2
+    if-lez v1, :cond_2
 
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->isBlank()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_2
+    if-nez v1, :cond_2
 
-    .line 94
+    .line 86
     :cond_1
-    invoke-virtual {p0, p1, p2, p3}, Lorg/jsoup/nodes/TextNode;->indent(Ljava/lang/StringBuilder;ILorg/jsoup/nodes/Document$OutputSettings;)V
+    invoke-virtual {p0, p1, p2, p3}, Lorg/jsoup/nodes/TextNode;->indent(Ljava/lang/Appendable;ILorg/jsoup/nodes/Document$OutputSettings;)V
 
-    .line 96
     :cond_2
-    invoke-virtual {p3}, Lorg/jsoup/nodes/Document$OutputSettings;->prettyPrint()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_3
-
-    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->parent()Lorg/jsoup/nodes/Node;
-
-    move-result-object p2
-
-    instance-of p2, p2, Lorg/jsoup/nodes/Element;
-
-    if-eqz p2, :cond_3
-
-    .line 97
-    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->parent()Lorg/jsoup/nodes/Node;
-
-    move-result-object p2
-
-    invoke-static {p2}, Lorg/jsoup/nodes/Element;->preserveWhitespace(Lorg/jsoup/nodes/Node;)Z
-
-    move-result p2
-
-    if-nez p2, :cond_3
-
     const/4 p2, 0x1
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_3
+
+    .line 88
+    iget-object v2, p0, Lorg/jsoup/nodes/TextNode;->parentNode:Lorg/jsoup/nodes/Node;
+
+    invoke-static {v2}, Lorg/jsoup/nodes/Element;->preserveWhitespace(Lorg/jsoup/nodes/Node;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    move v7, p2
 
     goto :goto_0
 
     :cond_3
-    const/4 p2, 0x0
+    move v7, v1
 
     :goto_0
-    move v4, p2
+    if-eqz v0, :cond_4
 
-    .line 98
-    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->getWholeText()Ljava/lang/String;
+    .line 89
+    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->parentNode:Lorg/jsoup/nodes/Node;
 
-    move-result-object v1
+    instance-of v0, v0, Lorg/jsoup/nodes/Document;
 
-    const/4 v3, 0x0
+    if-eqz v0, :cond_4
 
-    const/4 v5, 0x0
+    move v8, p2
 
-    move-object v0, p1
+    goto :goto_1
 
-    move-object v2, p3
+    :cond_4
+    move v8, v1
 
-    invoke-static/range {v0 .. v5}, Lorg/jsoup/nodes/Entities;->escape(Ljava/lang/StringBuilder;Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;ZZZ)V
+    .line 90
+    :goto_1
+    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->coreValue()Ljava/lang/String;
+
+    move-result-object v4
+
+    const/4 v6, 0x0
+
+    move-object v3, p1
+
+    move-object v5, p3
+
+    invoke-static/range {v3 .. v8}, Lorg/jsoup/nodes/Entities;->escape(Ljava/lang/Appendable;Ljava/lang/String;Lorg/jsoup/nodes/Document$OutputSettings;ZZZ)V
 
     return-void
 .end method
 
-.method outerHtmlTail(Ljava/lang/StringBuilder;ILorg/jsoup/nodes/Document$OutputSettings;)V
+.method outerHtmlTail(Ljava/lang/Appendable;ILorg/jsoup/nodes/Document$OutputSettings;)V
     .locals 0
 
     return-void
 .end method
 
-.method public removeAttr(Ljava/lang/String;)Lorg/jsoup/nodes/Node;
+.method public bridge synthetic removeAttr(Ljava/lang/String;)Lorg/jsoup/nodes/Node;
     .locals 0
 
-    .line 166
-    invoke-direct {p0}, Lorg/jsoup/nodes/TextNode;->ensureAttributes()V
-
-    .line 167
-    invoke-super {p0, p1}, Lorg/jsoup/nodes/Node;->removeAttr(Ljava/lang/String;)Lorg/jsoup/nodes/Node;
+    .line 12
+    invoke-super {p0, p1}, Lorg/jsoup/nodes/LeafNode;->removeAttr(Ljava/lang/String;)Lorg/jsoup/nodes/Node;
 
     move-result-object p1
 
@@ -501,86 +396,77 @@
 .end method
 
 .method public splitText(I)Lorg/jsoup/nodes/TextNode;
-    .locals 4
+    .locals 5
 
-    const/4 v0, 0x1
+    .line 69
+    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->coreValue()Ljava/lang/String;
 
-    const/4 v1, 0x0
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     if-ltz p1, :cond_0
 
-    move v2, v0
+    move v3, v1
 
     goto :goto_0
 
     :cond_0
-    move v2, v1
+    move v3, v2
 
     :goto_0
-    const-string v3, "Split offset must be not be negative"
+    const-string v4, "Split offset must be not be negative"
 
-    .line 79
-    invoke-static {v2, v3}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
+    .line 70
+    invoke-static {v3, v4}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
 
-    .line 80
-    iget-object v2, p0, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
+    .line 71
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    move-result v3
 
-    move-result v2
+    if-ge p1, v3, :cond_1
 
-    if-ge p1, v2, :cond_1
-
-    move v2, v0
+    move v3, v1
 
     goto :goto_1
 
     :cond_1
-    move v2, v1
+    move v3, v2
 
     :goto_1
-    const-string v3, "Split offset must not be greater than current text length"
+    const-string v4, "Split offset must not be greater than current text length"
 
-    invoke-static {v2, v3}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
+    invoke-static {v3, v4}, Lorg/jsoup/helper/Validate;->isTrue(ZLjava/lang/String;)V
 
-    .line 82
-    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->getWholeText()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1, p1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 83
-    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->getWholeText()Ljava/lang/String;
+    .line 73
+    invoke-virtual {v0, v2, p1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v3, p1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    .line 74
+    invoke-virtual {v0, p1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 84
-    invoke-virtual {p0, v2}, Lorg/jsoup/nodes/TextNode;->text(Ljava/lang/String;)Lorg/jsoup/nodes/TextNode;
+    .line 75
+    invoke-virtual {p0, v3}, Lorg/jsoup/nodes/TextNode;->text(Ljava/lang/String;)Lorg/jsoup/nodes/TextNode;
 
-    .line 85
-    new-instance v2, Lorg/jsoup/nodes/TextNode;
+    .line 76
+    new-instance v0, Lorg/jsoup/nodes/TextNode;
 
-    invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->baseUri()Ljava/lang/String;
+    invoke-direct {v0, p1}, Lorg/jsoup/nodes/TextNode;-><init>(Ljava/lang/String;)V
 
-    move-result-object v3
-
-    invoke-direct {v2, p1, v3}, Lorg/jsoup/nodes/TextNode;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 86
+    .line 77
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->parent()Lorg/jsoup/nodes/Node;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    .line 87
+    .line 78
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->parent()Lorg/jsoup/nodes/Node;
 
     move-result-object p1
@@ -589,27 +475,27 @@
 
     move-result v3
 
-    add-int/2addr v3, v0
+    add-int/2addr v3, v1
 
-    new-array v0, v0, [Lorg/jsoup/nodes/Node;
+    new-array v1, v1, [Lorg/jsoup/nodes/Node;
 
-    aput-object v2, v0, v1
+    aput-object v0, v1, v2
 
-    invoke-virtual {p1, v3, v0}, Lorg/jsoup/nodes/Node;->addChildren(I[Lorg/jsoup/nodes/Node;)V
+    invoke-virtual {p1, v3, v1}, Lorg/jsoup/nodes/Node;->addChildren(I[Lorg/jsoup/nodes/Node;)V
 
     :cond_2
-    return-object v2
+    return-object v0
 .end method
 
 .method public text()Ljava/lang/String;
     .locals 1
 
-    .line 41
+    .line 33
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->getWholeText()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/jsoup/nodes/TextNode;->normaliseWhitespace(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lorg/jsoup/internal/StringUtil;->normaliseWhitespace(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -617,31 +503,18 @@
 .end method
 
 .method public text(Ljava/lang/String;)Lorg/jsoup/nodes/TextNode;
-    .locals 2
+    .locals 0
 
-    .line 50
-    iput-object p1, p0, Lorg/jsoup/nodes/TextNode;->text:Ljava/lang/String;
+    .line 42
+    invoke-virtual {p0, p1}, Lorg/jsoup/nodes/TextNode;->coreValue(Ljava/lang/String;)V
 
-    .line 51
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    if-eqz v0, :cond_0
-
-    .line 52
-    iget-object v0, p0, Lorg/jsoup/nodes/TextNode;->attributes:Lorg/jsoup/nodes/Attributes;
-
-    const-string v1, "text"
-
-    invoke-virtual {v0, v1, p1}, Lorg/jsoup/nodes/Attributes;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
     return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 105
+    .line 97
     invoke-virtual {p0}, Lorg/jsoup/nodes/TextNode;->outerHtml()Ljava/lang/String;
 
     move-result-object v0

@@ -39,6 +39,14 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "src"
+        }
+    .end annotation
 
     .line 68
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -129,6 +137,14 @@
 
 .method private onTouchForwarded(Landroid/view/MotionEvent;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "srcEvent"
+        }
+    .end annotation
 
     .line 259
     iget-object v0, p0, Landroidx/appcompat/widget/ForwardingListener;->mSrc:Landroid/view/View;
@@ -226,6 +242,14 @@
 
 .method private onTouchObserved(Landroid/view/MotionEvent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "srcEvent"
+        }
+    .end annotation
 
     .line 170
     iget-object v0, p0, Landroidx/appcompat/widget/ForwardingListener;->mSrc:Landroid/view/View;
@@ -369,6 +393,20 @@
 
 .method private static pointInView(Landroid/view/View;FFF)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "localX",
+            "localY",
+            "slop"
+        }
+    .end annotation
 
     neg-float v0, p3
 
@@ -431,6 +469,16 @@
 
 .method private toGlobalMotionEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "event"
+        }
+    .end annotation
 
     .line 309
     iget-object v0, p0, Landroidx/appcompat/widget/ForwardingListener;->mTmpLocation:[I
@@ -458,6 +506,16 @@
 
 .method private toLocalMotionEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "event"
+        }
+    .end annotation
 
     .line 298
     iget-object v0, p0, Landroidx/appcompat/widget/ForwardingListener;->mTmpLocation:[I
@@ -624,6 +682,16 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "event"
+        }
+    .end annotation
 
     .line 94
     iget-boolean p1, p0, Landroidx/appcompat/widget/ForwardingListener;->mForwarding:Z
@@ -733,12 +801,28 @@
 
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 

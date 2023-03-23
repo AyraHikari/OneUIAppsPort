@@ -1,12 +1,12 @@
 .class public final Lcom/google/android/gms/location/LocationSettingsRequest;
 .super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
-.source "com.google.android.gms:play-services-location@@18.0.0"
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/android/gms/location/LocationSettingsRequest$Builder;
+        Lcom/google/android/gms/location/LocationSettingsRequest$a;
     }
 .end annotation
 
@@ -24,59 +24,36 @@
 
 
 # instance fields
-.field private final zza:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/location/LocationRequest;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final h:Ljava/util/List;
 
-.field private final zzb:Z
+.field public final i:Z
 
-.field private final zzc:Z
-
-.field private zzd:Lcom/google/android/gms/location/zzbj;
+.field public final j:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/location/zzbl;
+    new-instance v0, Le5/a0;
 
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzbl;-><init>()V
+    invoke-direct {v0}, Le5/a0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/location/LocationSettingsRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(Ljava/util/List;ZZLcom/google/android/gms/location/zzbj;)V
+.method public constructor <init>(Ljava/util/List;ZZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/location/LocationRequest;",
-            ">;ZZ",
-            "Lcom/google/android/gms/location/zzbj;",
-            ")V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zza:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->h:Ljava/util/List;
 
-    iput-boolean p2, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zzb:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->i:Z
 
-    iput-boolean p3, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zzc:Z
-
-    iput-object p4, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zzd:Lcom/google/android/gms/location/zzbj;
+    iput-boolean p3, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->j:Z
 
     return-void
 .end method
@@ -84,50 +61,43 @@
 
 # virtual methods
 .method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
+    .locals 3
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lr4/b;->a(Landroid/os/Parcel;)I
 
-    move-result v0
+    move-result p2
 
-    iget-object v1, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zza:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->h:Ljava/util/List;
 
     .line 2
-    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v0
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 3
-    invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedList(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, v0, v2}, Lr4/b;->r(Landroid/os/Parcel;ILjava/util/List;Z)V
 
-    iget-boolean v1, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zzb:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->i:Z
 
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
     .line 4
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBoolean(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v1, v0}, Lr4/b;->c(Landroid/os/Parcel;IZ)V
 
-    iget-boolean v1, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zzc:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->j:Z
 
-    const/4 v2, 0x3
+    const/4 v1, 0x3
 
     .line 5
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBoolean(Landroid/os/Parcel;IZ)V
-
-    iget-object v1, p0, Lcom/google/android/gms/location/LocationSettingsRequest;->zzd:Lcom/google/android/gms/location/zzbj;
-
-    const/4 v2, 0x5
+    invoke-static {p1, v1, v0}, Lr4/b;->c(Landroid/os/Parcel;IZ)V
 
     .line 6
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
-
-    .line 7
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Lr4/b;->b(Landroid/os/Parcel;I)V
 
     return-void
 .end method

@@ -74,13 +74,11 @@
     iput-object p1, p0, Lokio/GzipSource;->source:Lokio/BufferedSource;
 
     .line 64
-    new-instance v0, Lokio/InflaterSource;
+    new-instance v1, Lokio/InflaterSource;
 
-    iget-object v1, p0, Lokio/GzipSource;->inflater:Ljava/util/zip/Inflater;
+    invoke-direct {v1, p1, v0}, Lokio/InflaterSource;-><init>(Lokio/BufferedSource;Ljava/util/zip/Inflater;)V
 
-    invoke-direct {v0, p1, v1}, Lokio/InflaterSource;-><init>(Lokio/BufferedSource;Ljava/util/zip/Inflater;)V
-
-    iput-object v0, p0, Lokio/GzipSource;->inflaterSource:Lokio/InflaterSource;
+    iput-object v1, p0, Lokio/GzipSource;->inflaterSource:Lokio/InflaterSource;
 
     return-void
 
@@ -88,7 +86,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "source == null"
+    const-string/jumbo v0, "source == null"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -729,9 +727,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 

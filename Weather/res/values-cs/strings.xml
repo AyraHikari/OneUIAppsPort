@@ -60,6 +60,7 @@
     <string name="air_quality">Kvalita ovzduší</string>
     <string name="air_quality_next_tts">Pozdější denní předpovědi kvality vzduchu</string>
     <string name="air_quality_previous_tts">Dřívější denní předpovědi kvality vzduchu</string>
+    <string name="alert_title">Závažné upozornění na počasí</string>
     <string name="all_added_cities">Všechna přidaná města</string>
     <string name="allow">Povolit</string>
     <string name="allow_permission_in_settings">Abyste mohli použít tuto funkci, musíte povolit oprávnění v Nastavení.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Akce není podporována.</string>
     <string name="apply_daylight_saving_time">Chcete použít letní čas?</string>
     <string name="as_possible_after_verification">Zpráva byla odeslána. Název města se změní po ověření co nejdříve.</string>
+    <string name="auto_refresh_on_screen_description">Informace o počasí jsou automaticky aktualizovány každou hodinu. Pokud je tato funkce zapnutá, nelze provést aktualizaci ručně.</string>
+    <string name="auto_refresh_on_the_go">Automatická aktualizace při pohybu</string>
+    <string name="auto_refresh_on_the_go_advanced">Rozšířené</string>
+    <string name="auto_refresh_on_the_go_description">Získáte častější aktualizace informací o počasí když řídíte auto, jedete na kole, běžíte nebo jdete. Pokud je tato funkce zapnutá, nelze provést aktualizaci ručně.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Získáte častější aktualizace informací o počasí když řídíte auto, jedete na kole, běžíte nebo jdete.</string>
     <string name="bottomsheet_action_expand_halfway">Rozbalit napůl</string>
     <string name="btn_report">Nahl.</string>
     <string name="button_finish">Dokončit</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Poklepáním zobrazíte další informace.</string>
     <string name="china">Čína</string>
     <string name="cities_button">Města</string>
+    <string name="city_added">Město bylo přidáno.</string>
     <string name="city_list_text">Města</string>
     <string name="clear">Jasno</string>
     <string name="clear_text_end_icon_content_description">Vymazat text</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Informace o poloze tohoto zařízení budou zasílány poskytovateli obsahu, aby vám mohly být poskytovány místní informace o počasí.</string>
     <string name="contents_error_msg">Služba je dočasně nedostupná. Opakujte akci později.</string>
     <string name="copy">Kopírovat</string>
-    <string name="copy_toast_msg">Odkaz zkopírován do schránky</string>
     <string name="correct_city_name">Opravte název města</string>
     <string name="couldnt_find_location">Místo nelze najít</string>
     <string name="cover_screen_top_sync_dialog_text">Nastavit stejnou polohu na hlavní obrazovce?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Položka byla přetažena na pozici %d.</string>
     <string name="dragndroplist_drag_start">Bylo zahájeno přetažení položky na pozici %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Položku na pozici %d není možné přetáhnout.</string>
+    <string name="drawer_tips">Tipy pro %s</string>
     <string name="drawer_tips_message">Klepněte sem, pokud chcete přidat místa, odstranit je nebo změnit jejich pořadí. Můžete také přidat více pomůcek, které budou na Domovské obrazovce ukazovat různá místa.</string>
     <string name="drawer_tips_message_1">Po klepnutí na tlačítko Správa míst na dolním konci tohoto menu můžete přidávat místa, odstraňovat je a měnit jejich uspořádání.</string>
     <string name="drawer_tips_message_2">Na Domovskou obrazovku můžete přidat více než jednu pomůcku, aby se současně zobrazovala různá místa.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Rozšířená nastavení</string>
     <string name="exposed_dropdown_menu_content_description">Zobrazit rozbalovací nabídku</string>
     <string name="failed_to_send_report">Zprávu nelze odeslat</string>
-    <string name="fallback_menu_item_copy_link">Kopírovat odkaz</string>
-    <string name="fallback_menu_item_open_in_browser">Otevřít v prohlížeči</string>
-    <string name="fallback_menu_item_share_link">Sdílet odkaz</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Oblíbené místo</string>
     <string name="feel_like_pd_minus_temp">Pocitová -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Video s předpovědí</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mi/h</string>
+    <string name="fri">Pá</string>
     <string name="general">Obecné</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Dostávejte přizpůsobený obsah na základě způsobu použití telefonu.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Dostávejte přizpůsobený obsah na základě způsobu použití tabletu.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">získávat informace o počasí, včetně vaší aktuální polohy, z Počasí</string>
     <string name="go_to_website">Přejít na web</string>
     <string name="goto_apps">Nová aktualizace je k dispozici. Nainstalovat?</string>
     <string name="goto_apps_later">Později</string>
     <string name="goto_apps_now">Nyní</string>
     <string name="goto_apps_update_title">Upozornění na nový obsah</string>
     <string name="header_tts">Záhlaví</string>
+    <string name="heavy">Silné</string>
     <string name="heavy_rain">Silný déšť</string>
     <string name="heavy_rain_followed_by_intense_heat">Silný déšť, postupně intenzivní horko</string>
     <string name="heavy_rain_followed_by_light_rain">Silný déšť, postupně intenzivní horko</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Viditelnost</string>
     <string name="life_index_wind">Vítr</string>
     <string name="life_index_wind_force">Rychlost větru</string>
+    <string name="light">Slabé</string>
     <string name="light_rain_followed_by_heavy_rain">Slabý déšť, postupně silný déšť</string>
     <string name="light_rain_with_some_heavy_rain">Slabý déšť, místy silný déšť</string>
     <string name="link_tts">Odkaz</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Žádné výsledky.</string>
     <string name="message_service_not_available">Služba je nedostupná.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Po</string>
     <string name="more">Více</string>
     <string name="more_cuntact_us">Kontaktujte nás</string>
     <string name="more_information">Další</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Klepnutím sem změníte výchozí místo pro počasí a můžete spravovat všechna místa.</string>
     <string name="new_version_available">K dispozici je nová verze %s.</string>
     <string name="new_version_is_available">K dispozici je nová verze.</string>
+    <string name="news_menu_show_news">Zobrazit zprávy</string>
+    <string name="news_opt_in_banner_title_text">Mějte přehled o aktuálních událostech zobrazením zpráv v pomůcce Počasí.</string>
+    <string name="news_opt_in_popup_desc_text">Mějte přehled o světovém dění zobrazením nejnovějších hlavních zpráv z %s v pomůcce Počasí.</string>
+    <string name="news_opt_in_popup_title_text">Zobrazení zpráv a počasí v jedné pomůcce</string>
+    <string name="news_request_agree_text">Klepnutím získáte zprávy z aplikace %s</string>
+    <string name="news_widget_bubble_text">Dostávejte zprávy s počasím.</string>
+    <string name="news_widget_dummy_title">Dnešní nejlepší příběh</string>
+    <string name="news_widget_new_dummy_title">5 věcí, které potřebujete dnes ráno vědět</string>
+    <string name="news_widget_oobe_text">Klepnutím sem přidejte zprávy.</string>
     <string name="next">Další město</string>
+    <string name="next_btn">Další</string>
     <string name="next_city">Poklepáním zobrazíte informace o počasí pro další město.</string>
     <string name="night_tts">Noc</string>
     <string name="no_application_available">Nejsou k dispozici žádné aplikace.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Žádné informace o počasí</string>
     <string name="not_in_use">Nepoužívá se</string>
     <string name="not_now">Teď ne</string>
+    <string name="not_now_btn">Teď ne</string>
     <string name="not_selected">Nevybráno</string>
     <string name="not_set">Nenastaveno</string>
     <string name="nothing_selected">Není nic vybráno.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Pro nejrychlejší a nejpřesnější zjišťování polohy klepněte na NASTAVENÍ a nastavte Metodu zjišťování polohy na GPS, Wi-Fi a mobilní sítě.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Pro nejrychlejší a nejpřesnější zjišťování polohy klepněte na NASTAVENÍ a nastavte Metodu zjišťování polohy na GPS a Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Chcete-li zobrazit místní informace o počasí, zapněte nastavení Zjišťování polohy a zkontrolujte, zda je nastavený režim Vysoká přesnost.</string>
+    <string name="notification_alert_channel_name">Závažné upozornění na počasí</string>
     <string name="notification_apps_update_channel_name">Oznamování aktualizací</string>
     <string name="notification_auto_refresh_channel_name">Autom. akt. informací o počasí</string>
     <string name="notification_dex_channel_name">Počasí v Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Spustit aplik.</string>
     <string name="open_source_licences">Licence Open source</string>
     <string name="other_locations">Jiná místa</string>
+    <string name="partly_sunny">Částečně slunečno</string>
     <string name="password_toggle_content_description">Zobrazit heslo</string>
     <string name="paused">Pozastaveno</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">Položka %1$s byla zkopírována do schránky.</string>
     <string name="preview">Náhled %s</string>
     <string name="previous">Předchozí město</string>
+    <string name="previous_btn">Předchozí</string>
     <string name="previous_city">Poklepáním zobrazíte informace o počasí pro předchozí město.</string>
     <string name="privacy_policy">Zásady ochrany osobních údajů</string>
     <string name="probability_of_rain_text">Pravděp. deště</string>
     <string name="protect_your_content">Chraňte svůj obsah</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar a mapy</string>
     <string name="rain">Déšť</string>
     <string name="rain_followed_by_intense_heat">Déšť, postupně intenzivní horko</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Chcete-li aktualizovat informace o počasí, klepněte na NASTAVENÍ, přejděte na Informace o aplikaci > Oprávnění a potom povolte následující oprávnění a opakujte akci:</string>
     <string name="runtime_location_permission_title">Povolit oprávnění</string>
     <string name="runtime_oem_grant_permission_desc">Aplikace %s má oprávnění pro přístup k následujícím položkám:</string>
+    <string name="sat">So</string>
     <string name="save_button">Uložit</string>
     <string name="search_menu_title">Hledat</string>
     <string name="search_most_searched_for">Nejčastěji hledaná města</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">K dispozici je nový obsah</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Další</string>
+    <string name="sesl_preferecne_badge_description">Nové oznámení</string>
     <string name="sesl_preferencecategory_added_title">Záhlaví</string>
     <string name="sesl_search_hint">Hledat</string>
     <string name="sesl_searchview_description_clear">Vymazat pole Hledat</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Zobrazit méně</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Vypnuto</string>
+    <string name="status_on">Zapnuto</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Ne</string>
     <string name="sunny">Slunečno</string>
     <string name="sunny_with_some_clouds">Slunečno, místy oblačno</string>
     <string name="sunny_with_some_heavy_rain">Slunečno, místy silný déšť</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Klepnutím sem obnovíte údaje o počasí ze starého zařízení.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Klepnutím na tlačítko OPAKOVAT znovu vyhledáte svou polohu.</string>
     <string name="tap_setting_message_edge_panel">Zapněte Zjišťování polohy, abyste získali místní předpověď počasí.</string>
+    <string name="tap_the_settings_icon">Klepněte na ikonu nastavení.</string>
     <string name="tap_to_get_the_weather">Klepnutím zjistíte počasí</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Smluvní podmínky</string>
     <string name="the_latest_version">Je nainstalována nejnovější verze.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Použije se rovněž pro oznámení a Kalendář.</string>
+    <string name="thu">Čt</string>
     <string name="tick_box_tts">Zaškrtávací políčko</string>
     <string name="ticked_tts">Zaškrtnuto</string>
     <string name="time_am">dop.</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Hodinová</string>
     <string name="title_select_locations">Vybrat místa</string>
     <string name="title_theme">Motivy</string>
+    <string name="to_continue_agree_to_updated">Chcete-li pokračovat, musíte souhlasit s aktualizovaným dokumentem %s.</string>
     <string name="to_get_local_weather_chn">"Abyste získali informace o místním počasí, poskytovateli služeb týkajících se informací o počasí budou zaslány údaje o vaší aktuální poloze. (Seznamte se prosím se %1$ssmluvními podmínkami%2$s a %3$szásadami ochrany osobních údajů%4$s poskytovatele.)
 Jiné aplikace a služby ve vašem zařízení mohou přistupovat k získaným údajům o počasí, aby zobrazovaly počasí v těchto aplikacích.
 Aby bylo možné poskytovat vám nepřetržité informace o počasí bude mít Počasí přístup k vaší poloze, i když aplikaci nepoužíváte."</string>
     <string name="today">Dnes</string>
+    <string name="try_it_out_btn">Vyzkoušet</string>
+    <string name="tue">Út</string>
+    <string name="turn_on_to_use_precise_location">Chcete-li použít tuto funkci, musíte trvale povolit aplikaci %s přístup k informacím o poloze a zapnout možnost Použít přesnou polohu. Klepněte na ikonu Nastavení, a potom přejděte do menu Oprávnění > Zjišťování polohy.</string>
     <string name="tw_title_weather_broadcast">Vysílání</string>
-    <string name="unable_to_check_for_updates">Nebylo možné zkontrolovat aktualizace. Připojení k síti není k dispozici.</string>
+    <string name="unable_to_check_for_updates">Aktualizace se nepodařilo zkontrolovat. Opakujte akci později.</string>
     <string name="unable_to_receive_info_msg">Nelze přijímat informace</string>
     <string name="unticked_tts">Nezaškrtnuto</string>
     <string name="unused">Nepoužito</string>
     <string name="update">Aktualizovat</string>
     <string name="update_abb8">Aktualizovat</string>
     <string name="update_app">Aktualizace aplikace</string>
+    <string name="updated_tile_chn">Aktualizováno: %s</string>
     <string name="updated_tts">Dokument %s byl aktualizován</string>
+    <string name="use_current_location">Použít aktuální polohu</string>
     <string name="use_current_location_agree_popup">"Abyste získali informace o místním počasí, poskytovateli informací o počasí budou zaslány údaje o vaší aktuální poloze. (Přečtěte si %1$szásady ochrany osobních údajů%2$s poskytovatele.)
 Načtená data počasí mohou použít další aplikace a služby v zařízení, aby se informace o počasí zobrazily v těchto aplikacích."</string>
     <string name="use_current_location_and_background_agree_popup">"Abyste získali informace o místním počasí, poskytovateli služeb týkajících se informací o počasí budou zaslány údaje o vaší aktuální poloze. (Seznamte se prosím se %1$sZásady ochrany osobních údajů%2$s poskytovatele.)
@@ -746,14 +784,21 @@ Aby bylo možné poskytovat vám nepřetržité informace o počasí bude mít P
 Používání vaší polohy můžete vypnout v nastavení aplikace Počasí."</string>
     <string name="use_current_location_body_msg_chn">"Před použitím aplikace „Počasí“ si prosím pozorně přečtěte:
 Pokud chcete znát počasí ve své aktuální poloze, budete muset povolit poskytovateli služeb třetí strany nepřetržitý (i pokud tuto službu nepoužíváte) přístup k vašemu zařízení a získat určité údaje, jak je uvedeno níže. Přečtěte si prosím pozorně a porozumějte %1$ssmluvním podmínkám%2$s a %3$szásadám ochrany osobních údajů%4$s poskytovatele služeb třetí strany. Svůj souhlas můžete odvolat vypnutím možnosti „Zjišťování polohy“ v nabídce Nastavení. K získaným údajům o počasí mohou mít přístup i další aplikace a služby ve vašem zařízení za účelem zobrazení počasí v těchto aplikacích a zařízeních."</string>
+    <string name="use_current_location_body_msg_kor">"Informace o vaší aktuální poloze budou shromažďovány a používány některými funkcemi aplikace Počasí, například k získávání místní předpovědi počasí.
+
+Aby mohla aplikace nepřetržitě poskytovat informace o počasí, bude pravidelně zpracovávat informace o vaší poloze, i když aplikaci právě nepoužíváte. Pokračováním potvrdíte souhlas se shromažďováním a zpracováním informací o vaší poloze k výše uvedeným účelům.
+
+Toto shromažďování a používání informací o poloze můžete zastavit v nastavení aplikace Počasí."</string>
     <string name="use_current_location_body_purpose">Účel</string>
     <string name="use_current_location_body_purpose_content">Poskytnutí informací o počasí pro vaši aktuální polohu</string>
     <string name="use_current_location_body_search_provider">Poskytovatel služeb</string>
+    <string name="use_current_location_continue">Pokračovat</string>
+    <string name="use_current_location_not_now">Teď ne</string>
     <string name="use_current_location_off_alert_popup">Informace o aktuální poloze budou odebrány.</string>
     <string name="useful_informations">Tipy pro život a další zprávy</string>
     <string name="using_as">Používá se jako %s</string>
-    <string name="v7_preference_off">Vypnutí</string>
-    <string name="v7_preference_on">ZAP</string>
+    <string name="v7_preference_off">Vypnuto</string>
+    <string name="v7_preference_on">Zapnuto</string>
     <string name="values_are_not_available_in_other_countries">Hodnoty %s nejsou v jiných zemích k dispozici.</string>
     <string name="version_name">Verze %s</string>
     <string name="videos">Videa</string>
@@ -856,9 +901,11 @@ Pokud chcete znát počasí ve své aktuální poloze, budete muset povolit posk
     <string name="weather_tip">Tipy o počasí</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">St</string>
     <string name="weekly_forecast">Denní</string>
     <string name="widget_background">Pozadí pomůcky</string>
     <string name="widget_empty_text">Klepnutím zobrazíte informace o počasí</string>
+    <string name="widget_location">Název města</string>
     <string name="widget_name_4x1">Počasí a Hodiny</string>
     <string name="widget_setting">Nastavení</string>
     <string name="widget_setting_background_color">Barva pozadí</string>

@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 140
+    .line 142
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;-><init>()V
@@ -34,10 +42,20 @@
 # virtual methods
 .method public onItemRangeInserted(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "positionStart",
+            "itemCount"
+        }
+    .end annotation
 
     if-ltz p1, :cond_2
 
-    .line 143
+    .line 145
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;->access$400(Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFChatListAdapter;
@@ -52,7 +70,7 @@
 
     goto :goto_0
 
-    .line 146
+    .line 148
     :cond_0
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 
@@ -64,7 +82,7 @@
 
     move-result-object p1
 
-    .line 148
+    .line 150
     iget-boolean p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isReceived:Z
 
     if-eqz p1, :cond_1
@@ -77,7 +95,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 149
+    .line 151
     :cond_1
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment$4;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/ChatFragment;
 

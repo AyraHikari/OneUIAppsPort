@@ -40,7 +40,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 10
 
     .line 16
     new-instance v0, Lorg/spongycastle/crypto/util/DERMacData$Type;
@@ -56,64 +56,58 @@
     sput-object v0, Lorg/spongycastle/crypto/util/DERMacData$Type;->UNILATERALU:Lorg/spongycastle/crypto/util/DERMacData$Type;
 
     .line 17
-    new-instance v0, Lorg/spongycastle/crypto/util/DERMacData$Type;
+    new-instance v1, Lorg/spongycastle/crypto/util/DERMacData$Type;
 
-    const-string v1, "UNILATERALV"
+    const-string v3, "UNILATERALV"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    const-string v4, "KC_1_V"
+    const-string v5, "KC_1_V"
 
-    invoke-direct {v0, v1, v3, v4}, Lorg/spongycastle/crypto/util/DERMacData$Type;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v3, v4, v5}, Lorg/spongycastle/crypto/util/DERMacData$Type;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lorg/spongycastle/crypto/util/DERMacData$Type;->UNILATERALV:Lorg/spongycastle/crypto/util/DERMacData$Type;
+    sput-object v1, Lorg/spongycastle/crypto/util/DERMacData$Type;->UNILATERALV:Lorg/spongycastle/crypto/util/DERMacData$Type;
 
     .line 18
-    new-instance v0, Lorg/spongycastle/crypto/util/DERMacData$Type;
+    new-instance v3, Lorg/spongycastle/crypto/util/DERMacData$Type;
 
-    const-string v1, "BILATERALU"
+    const-string v5, "BILATERALU"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    const-string v5, "KC_2_U"
+    const-string v7, "KC_2_U"
 
-    invoke-direct {v0, v1, v4, v5}, Lorg/spongycastle/crypto/util/DERMacData$Type;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v3, v5, v6, v7}, Lorg/spongycastle/crypto/util/DERMacData$Type;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lorg/spongycastle/crypto/util/DERMacData$Type;->BILATERALU:Lorg/spongycastle/crypto/util/DERMacData$Type;
+    sput-object v3, Lorg/spongycastle/crypto/util/DERMacData$Type;->BILATERALU:Lorg/spongycastle/crypto/util/DERMacData$Type;
 
     .line 19
-    new-instance v0, Lorg/spongycastle/crypto/util/DERMacData$Type;
+    new-instance v5, Lorg/spongycastle/crypto/util/DERMacData$Type;
 
-    const-string v1, "BILATERALV"
+    const-string v7, "BILATERALV"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    const-string v6, "KC_2_V"
+    const-string v9, "KC_2_V"
 
-    invoke-direct {v0, v1, v5, v6}, Lorg/spongycastle/crypto/util/DERMacData$Type;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v5, v7, v8, v9}, Lorg/spongycastle/crypto/util/DERMacData$Type;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lorg/spongycastle/crypto/util/DERMacData$Type;->BILATERALV:Lorg/spongycastle/crypto/util/DERMacData$Type;
+    sput-object v5, Lorg/spongycastle/crypto/util/DERMacData$Type;->BILATERALV:Lorg/spongycastle/crypto/util/DERMacData$Type;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Lorg/spongycastle/crypto/util/DERMacData$Type;
+    new-array v7, v7, [Lorg/spongycastle/crypto/util/DERMacData$Type;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 14
-    sget-object v6, Lorg/spongycastle/crypto/util/DERMacData$Type;->UNILATERALU:Lorg/spongycastle/crypto/util/DERMacData$Type;
-
-    aput-object v6, v1, v2
-
-    sget-object v2, Lorg/spongycastle/crypto/util/DERMacData$Type;->UNILATERALV:Lorg/spongycastle/crypto/util/DERMacData$Type;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lorg/spongycastle/crypto/util/DERMacData$Type;->BILATERALU:Lorg/spongycastle/crypto/util/DERMacData$Type;
-
-    aput-object v2, v1, v4
-
-    aput-object v0, v1, v5
-
-    sput-object v1, Lorg/spongycastle/crypto/util/DERMacData$Type;->$VALUES:[Lorg/spongycastle/crypto/util/DERMacData$Type;
+    sput-object v7, Lorg/spongycastle/crypto/util/DERMacData$Type;->$VALUES:[Lorg/spongycastle/crypto/util/DERMacData$Type;
 
     return-void
 .end method

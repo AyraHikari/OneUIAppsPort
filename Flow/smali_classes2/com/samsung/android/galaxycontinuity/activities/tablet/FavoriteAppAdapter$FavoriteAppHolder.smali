@@ -31,16 +31,26 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;Landroid/view/View;)V
     .locals 2
-
-    .line 185
-    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "v"
+        }
+    .end annotation
 
     .line 186
+    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
+
+    .line 187
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
-    const v0, 0x7f0901d3
+    const v0, 0x7f0a02bd
 
-    .line 188
+    .line 189
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -49,9 +59,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->rootView:Landroid/widget/RelativeLayout;
 
-    const v0, 0x7f090105
+    const v0, 0x7f0a0183
 
-    .line 189
+    .line 190
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -60,16 +70,16 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->icon:Landroid/widget/ImageView;
 
-    .line 191
+    .line 192
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;->favoriteViewType:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$TYPE;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$TYPE;->UNSELECTED:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$TYPE;
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f0901f0
+    const v0, 0x7f0a02e2
 
-    .line 192
+    .line 193
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -78,9 +88,9 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->checkBox:Landroid/widget/ImageView;
 
-    const v0, 0x7f090124
+    const v0, 0x7f0a01ab
 
-    .line 193
+    .line 194
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -92,9 +102,9 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0901ca
+    const v0, 0x7f0a02af
 
-    .line 195
+    .line 196
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -105,14 +115,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 197
+    .line 198
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;
 
     invoke-direct {v0, p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;)V
 
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 219
+    .line 220
     :cond_1
     :goto_0
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->rootView:Landroid/widget/RelativeLayout;
@@ -123,7 +133,7 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 257
+    .line 258
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder;->rootView:Landroid/widget/RelativeLayout;
 
     new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$FavoriteAppHolder$3;

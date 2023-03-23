@@ -15,6 +15,16 @@
 
 .method public static buildShortClassTag(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cls",
+            "out"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 

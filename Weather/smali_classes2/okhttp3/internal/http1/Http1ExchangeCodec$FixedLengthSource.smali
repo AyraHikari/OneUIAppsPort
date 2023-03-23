@@ -9,36 +9,30 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x12
+    accessFlags = 0x11
     name = "FixedLengthSource"
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nHttp1ExchangeCodec.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Http1ExchangeCodec.kt\nokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,497:1\n1#2:498\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0082\u0004\u0018\u00002\u00060\u0001R\u00020\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0005J\u0008\u0010\u0006\u001a\u00020\u0007H\u0016J\u0018\u0010\u0008\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000c"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0082\u0004\u0018\u00002\u00060\u0001R\u00020\u0002B\u000f\u0012\u0006\u0010\n\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0018\u0010\u0007\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u0008\u0010\t\u001a\u00020\u0008H\u0016R\u0016\u0010\n\u001a\u00020\u00058\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\n\u0010\u000b\u00a8\u0006\u000e"
     }
     d2 = {
         "Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;",
         "Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;",
         "Lokhttp3/internal/http1/Http1ExchangeCodec;",
-        "bytesRemaining",
-        "",
-        "(Lokhttp3/internal/http1/Http1ExchangeCodec;J)V",
-        "close",
-        "",
-        "read",
-        "sink",
         "Lokio/Buffer;",
+        "sink",
+        "",
         "byteCount",
+        "read",
+        "Lbi/x;",
+        "close",
+        "bytesRemaining",
+        "J",
+        "<init>",
+        "(Lokhttp3/internal/http1/Http1ExchangeCodec;J)V",
         "okhttp"
     }
     k = 0x1
@@ -53,7 +47,7 @@
 # instance fields
 .field private bytesRemaining:J
 
-.field final synthetic this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
+.field public final synthetic this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
 
 # direct methods
@@ -65,10 +59,10 @@
         }
     .end annotation
 
-    .line 354
+    .line 1
     iput-object p1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
-    .line 355
+    .line 2
     invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;-><init>(Lokhttp3/internal/http1/Http1ExchangeCodec;)V
 
     iput-wide p2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->bytesRemaining:J
@@ -79,8 +73,8 @@
 
     if-nez p1, :cond_0
 
-    .line 359
-    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->responseBodyComplete()V
+    .line 3
+    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->responseBodyComplete()V
 
     :cond_0
     return-void
@@ -91,8 +85,8 @@
 .method public close()V
     .locals 4
 
-    .line 384
-    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->getClosed()Z
+    .line 1
+    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->getClosed()Z
 
     move-result v0
 
@@ -100,7 +94,7 @@
 
     return-void
 
-    .line 387
+    .line 2
     :cond_0
     iget-wide v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->bytesRemaining:J
 
@@ -120,7 +114,7 @@
 
     if-nez v0, :cond_1
 
-    .line 388
+    .line 3
     iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
     invoke-virtual {v0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
@@ -129,14 +123,14 @@
 
     invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnection;->noNewExchanges$okhttp()V
 
-    .line 389
-    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->responseBodyComplete()V
+    .line 4
+    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->responseBodyComplete()V
 
     :cond_1
     const/4 v0, 0x1
 
-    .line 392
-    invoke-virtual {p0, v0}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->setClosed(Z)V
+    .line 5
+    invoke-virtual {p0, v0}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->setClosed(Z)V
 
     return-void
 .end method
@@ -146,7 +140,7 @@
 
     const-string v0, "sink"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-wide/16 v0, 0x0
 
@@ -166,8 +160,8 @@
     :goto_0
     if-eqz v2, :cond_5
 
-    .line 365
-    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->getClosed()Z
+    .line 1
+    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->getClosed()Z
 
     move-result v2
 
@@ -175,7 +169,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 366
+    .line 2
     iget-wide v2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->bytesRemaining:J
 
     cmp-long v4, v2, v0
@@ -186,7 +180,7 @@
 
     return-wide v5
 
-    .line 368
+    .line 3
     :cond_1
     invoke-static {v2, v3, p2, p3}, Ljava/lang/Math;->min(JJ)J
 
@@ -200,7 +194,7 @@
 
     if-eqz p3, :cond_3
 
-    .line 376
+    .line 4
     iget-wide v2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->bytesRemaining:J
 
     sub-long/2addr v2, p1
@@ -211,13 +205,13 @@
 
     if-nez p3, :cond_2
 
-    .line 378
-    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->responseBodyComplete()V
+    .line 5
+    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->responseBodyComplete()V
 
     :cond_2
     return-wide p1
 
-    .line 370
+    .line 6
     :cond_3
     iget-object p1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
@@ -227,22 +221,20 @@
 
     invoke-virtual {p1}, Lokhttp3/internal/connection/RealConnection;->noNewExchanges$okhttp()V
 
-    .line 371
+    .line 7
     new-instance p1, Ljava/net/ProtocolException;
 
     const-string p2, "unexpected end of stream"
 
     invoke-direct {p1, p2}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
-    .line 372
-    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$FixedLengthSource;->responseBodyComplete()V
+    .line 8
+    invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->responseBodyComplete()V
 
-    .line 373
-    check-cast p1, Ljava/lang/Throwable;
-
+    .line 9
     throw p1
 
-    .line 365
+    .line 10
     :cond_4
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -254,11 +246,9 @@
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Ljava/lang/Throwable;
-
     throw p1
 
-    .line 364
+    .line 11
     :cond_5
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -268,11 +258,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
     invoke-virtual {p1, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -285,8 +271,6 @@
     move-result-object p1
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p2, Ljava/lang/Throwable;
 
     throw p2
 .end method

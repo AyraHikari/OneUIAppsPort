@@ -33,8 +33,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1094
+    .line 1093
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay$4;->this$0:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,6 +54,16 @@
 # virtual methods
 .method public compare(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -53,7 +71,7 @@
 
     goto :goto_0
 
-    .line 1098
+    .line 1097
     :cond_0
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->label:Landroidx/databinding/ObservableField;
 
@@ -86,8 +104,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
-    .line 1094
+    .line 1093
     check-cast p1, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;
 
     check-cast p2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;

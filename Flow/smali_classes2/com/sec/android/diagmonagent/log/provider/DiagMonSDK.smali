@@ -54,6 +54,14 @@
 
 .method protected static configChecker(Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "configuration"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -114,6 +122,16 @@
 
 .method public static customIssueReport(Landroid/content/Context;Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cxt",
+            "isb"
+        }
+    .end annotation
 
     .line 71
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getConfiguration()Lcom/samsung/context/sdk/samsunganalytics/Configuration;
@@ -148,7 +166,7 @@
     :cond_0
     sget-object v0, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->TAG:Ljava/lang/String;
 
-    const-string v1, "uncaughtException condition is ok"
+    const-string/jumbo v1, "uncaughtException condition is ok"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -192,6 +210,16 @@
 
 .method private static issueReport(Landroid/content/Context;Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cxt",
+            "isb"
+        }
+    .end annotation
 
     .line 84
     sget-object v0, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->instance:Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;
@@ -247,6 +275,8 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     sget-object v3, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->config:Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;
 
     invoke-virtual {v3}, Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;->getAgree()Z
@@ -254,6 +284,8 @@
     move-result v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -277,7 +309,7 @@
     .line 97
     sget-object p0, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->TAG:Ljava/lang/String;
 
-    const-string p1, "serviceId is empty"
+    const-string/jumbo p1, "serviceId is empty"
 
     invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -291,9 +323,11 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "serviceId is ok - "
+    const-string/jumbo v3, "serviceId is ok - "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     sget-object v3, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->config:Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;
 
@@ -302,6 +336,8 @@
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -345,6 +381,8 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     sget-object v4, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;->config:Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;
 
     invoke-virtual {v4}, Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;->getLogList()Ljava/util/List;
@@ -356,6 +394,8 @@
     move-result v4
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -395,11 +435,15 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {p1}, Lcom/sec/android/diagmonagent/log/provider/IssueBuilder;->getResultCode()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -428,6 +472,14 @@
 
 .method public static setConfiguration(Lcom/sec/android/diagmonagent/log/provider/DiagMonConfig;)Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "configuration"
+        }
+    .end annotation
 
     .line 29
     const-class v0, Lcom/sec/android/diagmonagent/log/provider/DiagMonSDK;

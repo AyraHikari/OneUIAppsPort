@@ -4,7 +4,7 @@
     <string name="abc_action_bar_up_description">वर नेव्‍हिगेट करा</string>
     <string name="abc_action_menu_overflow_description">आणखी पर्याय</string>
     <string name="abc_action_mode_done">पूर्ण झाले</string>
-    <string name="abc_activity_chooser_view_see_all">सर्व पाहा</string>
+    <string name="abc_activity_chooser_view_see_all">सर्व पहा</string>
     <string name="abc_activitychooserview_choose_application">अ‍ॅप निवडा</string>
     <string name="abc_capital_off">बंद</string>
     <string name="abc_capital_on">सुरू</string>
@@ -21,7 +21,7 @@
     <string name="abc_search_hint">शोधा…</string>
     <string name="abc_searchview_description_clear">क्‍वेरी साफ करा</string>
     <string name="abc_searchview_description_query">शोध क्वेरी</string>
-    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_search">शोधा</string>
     <string name="abc_searchview_description_submit">क्वेरी सबमिट करा</string>
     <string name="abc_searchview_description_voice">व्हॉइस शोध</string>
     <string name="abc_shareactionprovider_share_with">यांच्यासोबत शेअर करा</string>
@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">साइन इन करा</string>
     <string name="common_signin_button_text_long">Google सह साइन इन करा</string>
     <string name="copy">कॉपी करा</string>
-    <string name="copy_toast_msg">लिंक क्लिपबोर्डवर कॉपी केली</string>
     <string name="error_icon_content_description">एरर</string>
     <string name="expand_button_title">प्रगत</string>
     <string name="exposed_dropdown_menu_content_description">ड्रॉपडाउन मेनू दाखवा</string>
-    <string name="fallback_menu_item_copy_link">लिंक कॉपी करा</string>
-    <string name="fallback_menu_item_open_in_browser">ब्राउझरमध्ये उघडा</string>
-    <string name="fallback_menu_item_share_link">लिंक शेअर करा</string>
     <string name="icon_content_description">डायलॉग आयकन</string>
     <string name="item_view_role_description">टॅब</string>
     <string name="material_clock_toggle_content_description">AM किंवा PM निवडा</string>
@@ -109,9 +105,9 @@
     <string name="not_set">सेट केलेले नाही</string>
     <string name="password_toggle_content_description">पासवर्ड दाखवा</string>
     <string name="preference_copied">\"%1$s\" क्लिपबोर्डवर कॉपी केली.</string>
-    <string name="search_menu_title">Search</string>
+    <string name="search_menu_title">शोध</string>
     <string name="status_bar_notification_info_overflow">९९९+</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="v7_preference_off">बंद</string>
-    <string name="v7_preference_on">चालू</string>
+    <string name="v7_preference_on">सुरू</string>
 </resources>

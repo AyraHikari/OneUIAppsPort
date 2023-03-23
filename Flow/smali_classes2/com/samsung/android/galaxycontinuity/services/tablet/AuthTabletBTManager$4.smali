@@ -32,8 +32,24 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$lastConnectionType",
+            "val$enrolledDevice",
+            "val$unlockMethod",
+            "val$enrolledPhoneID"
+        }
+    .end annotation
 
-    .line 585
+    .line 568
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->val$lastConnectionType:Ljava/lang/String;
@@ -54,7 +70,7 @@
 .method public run()V
     .locals 7
 
-    .line 588
+    .line 571
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->val$lastConnectionType:Ljava/lang/String;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;->WIFI:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
@@ -69,7 +85,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 589
+    .line 572
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->access$400(Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;)Lcom/samsung/android/galaxycontinuity/discovery/DeviceDiscoveryMediator;
@@ -83,17 +99,17 @@
     :cond_0
     const-string v0, "!!!!!!!!!!!!!!!!!!!!!!!!!!silent sendCDFAuthRequest to Phone!!!!!!!!!!!!!!!!!!!!!!"
 
-    .line 592
+    .line 575
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;)V
 
-    .line 595
+    .line 578
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->val$unlockMethod:I
 
     sget v1, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->UNLOCK_METHOD_GEAR:I
 
     if-ne v0, v1, :cond_1
 
-    .line 596
+    .line 579
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
 
     move-result-object v0
@@ -110,7 +126,7 @@
     :goto_0
     move-object v6, v0
 
-    .line 599
+    .line 582
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->val$unlockMethod:I
 
     sget v1, Lcom/samsung/android/galaxycontinuity/auth/data/CDFAuthRequestBody;->UNLOCK_METHOD_GEAR:I
@@ -123,7 +139,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 601
+    .line 584
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
@@ -143,12 +159,12 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 604
+    .line 587
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->val$enrolledPhoneID:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/discovery/FoundDeviceRepository;->removeDevice(Ljava/lang/String;)V
 
-    .line 606
+    .line 589
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager$4;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/services/tablet/AuthTabletBTManager;->countDownAuthMonitor()V

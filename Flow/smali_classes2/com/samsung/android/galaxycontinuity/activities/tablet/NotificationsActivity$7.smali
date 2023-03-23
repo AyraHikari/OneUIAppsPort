@@ -1,11 +1,14 @@
 .class Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source "NotificationsActivity.java"
+
+# interfaces
+.implements Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$OnPermissionRequestListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->grantPermission()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,85 +20,119 @@
 # instance fields
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
+.field final synthetic val$requester:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
+
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;)V
+.method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$requester"
+        }
+    .end annotation
 
-    .line 520
+    .line 582
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;->val$requester:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
+.method public onResult(Z)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isGranted"
+        }
+    .end annotation
 
-    .line 523
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    .line 585
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;->val$requester:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;
 
-    move-result-object p1
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Requester;->close()V
 
-    const-string v0, "ACTION_DIALOG_RESULT"
+    .line 587
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->REQUIRED_PERMISSIONS:[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;
+
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper;->notHasCompulsaryPermissions(Landroid/content/Context;[Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$Permission;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 524
-    sget-object p1, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_RESULT:Ljava/lang/String;
+    .line 588
+    new-instance p1, Landroid/content/Intent;
 
-    const/4 v0, 0x0
+    const-string v0, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_OFF_CHECK"
 
-    invoke-virtual {p2, p1, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 589
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
+
+    const-string v1, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
+
+    invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+
+    .line 591
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
+
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->finishAndRemoveTask()V
+
+    goto :goto_0
+
+    .line 593
+    :cond_0
+    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->needToRequestAutoRun()Z
 
     move-result p1
 
-    .line 525
-    sget-object v1, Lcom/samsung/android/galaxycontinuity/activities/phone/CustomDialogActivity;->DIALOG_TYPE:Ljava/lang/String;
+    if-eqz p1, :cond_1
 
-    const/4 v2, -0x1
-
-    invoke-virtual {p2, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result p2
-
-    const/16 v1, 0x8
-
-    if-ne p2, v1, :cond_0
-
-    .line 528
-    invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v0}, Lcom/samsung/android/galaxycontinuity/manager/SettingsManager;->setNeedToRequestAutoRun(Z)V
-
-    if-ne p1, v2, :cond_0
-
-    .line 531
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
-    move-result-object p2
+    move-result-object v0
 
-    invoke-virtual {p2}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getPackageName()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object v0
 
-    const/4 v0, 0x1
+    invoke-static {p1, v0}, Lcom/samsung/android/galaxycontinuity/manager/AutoRunAppManager;->isAppAutoRunOn(Landroid/content/Context;Ljava/lang/String;)Z
 
-    invoke-static {p1, p2, v0}, Lcom/samsung/android/galaxycontinuity/manager/AutoRunAppManager;->setAppAutoRun(Landroid/content/Context;Ljava/lang/String;Z)V
+    move-result p1
 
-    :cond_0
+    if-nez p1, :cond_1
+
+    .line 594
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$7;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->access$700(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;)V
+
+    :cond_1
+    :goto_0
     return-void
 .end method

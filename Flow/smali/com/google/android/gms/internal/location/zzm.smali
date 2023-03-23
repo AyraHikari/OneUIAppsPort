@@ -1,191 +1,57 @@
-.class public final Lcom/google/android/gms/internal/location/zzm;
-.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
-
-
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lcom/google/android/gms/internal/location/zzm;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field static final zzcd:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/common/internal/ClientIdentity;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field static final zzce:Lcom/google/android/gms/location/zzj;
+.class final Lcom/google/android/gms/internal/location/zzm;
+.super Lcom/google/android/gms/internal/location/zzw;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # instance fields
-.field private tag:Ljava/lang/String;
-
-.field private zzcf:Lcom/google/android/gms/location/zzj;
-
-.field private zzm:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/common/internal/ClientIdentity;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic zza:Lcom/google/android/gms/location/LocationCallback;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/gms/internal/location/zzm;->zzcd:Ljava/util/List;
-
-    new-instance v0, Lcom/google/android/gms/location/zzj;
-
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzj;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/internal/location/zzm;->zzce:Lcom/google/android/gms/location/zzj;
-
-    new-instance v0, Lcom/google/android/gms/internal/location/zzn;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/location/zzn;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/internal/location/zzm;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method constructor <init>(Lcom/google/android/gms/location/zzj;Ljava/util/List;Ljava/lang/String;)V
+.method constructor <init>(Lcom/google/android/gms/internal/location/zzz;Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/LocationCallback;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/location/zzj;",
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/common/internal/ClientIdentity;",
-            ">;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+    .line 1
+    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzm;->zza:Lcom/google/android/gms/location/LocationCallback;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzm;->zzcf:Lcom/google/android/gms/location/zzj;
-
-    iput-object p2, p0, Lcom/google/android/gms/internal/location/zzm;->zzm:Ljava/util/List;
-
-    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzm;->tag:Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzw;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method protected final bridge synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    instance-of v0, p1, Lcom/google/android/gms/internal/location/zzm;
+    .line 1
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    const/4 v1, 0x0
+    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzm;->zza:Lcom/google/android/gms/location/LocationCallback;
 
-    if-nez v0, :cond_0
+    const-class v1, Lcom/google/android/gms/location/LocationCallback;
 
-    return v1
+    .line 2
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    :cond_0
-    check-cast p1, Lcom/google/android/gms/internal/location/zzm;
+    move-result-object v1
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzm;->zzcf:Lcom/google/android/gms/location/zzj;
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/api/internal/ListenerHolders;->createListenerKey(Ljava/lang/Object;Ljava/lang/String;)Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;
 
-    iget-object v2, p1, Lcom/google/android/gms/internal/location/zzm;->zzcf:Lcom/google/android/gms/location/zzj;
+    move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    new-instance v1, Lcom/google/android/gms/internal/location/zzx;
 
-    move-result v0
+    .line 3
+    invoke-direct {v1, p0}, Lcom/google/android/gms/internal/location/zzx;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
 
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzm;->zzm:Ljava/util/List;
-
-    iget-object v2, p1, Lcom/google/android/gms/internal/location/zzm;->zzm:Ljava/util/List;
-
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzm;->tag:Ljava/lang/String;
-
-    iget-object p1, p1, Lcom/google/android/gms/internal/location/zzm;->tag:Ljava/lang/String;
-
-    invoke-static {v0, p1}, Lcom/google/android/gms/common/internal/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_1
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzm;->zzcf:Lcom/google/android/gms/location/zzj;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/location/zzj;->hashCode()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
-
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/google/android/gms/internal/location/zzm;->zzcf:Lcom/google/android/gms/location/zzj;
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
-
-    iget-object p2, p0, Lcom/google/android/gms/internal/location/zzm;->zzm:Ljava/util/List;
-
-    const/4 v1, 0x2
-
-    invoke-static {p1, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedList(Landroid/os/Parcel;ILjava/util/List;Z)V
-
-    iget-object p2, p0, Lcom/google/android/gms/internal/location/zzm;->tag:Ljava/lang/String;
-
-    const/4 v1, 0x3
-
-    invoke-static {p1, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeString(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+    .line 4
+    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/internal/location/zzbe;->zzy(Lcom/google/android/gms/common/api/internal/ListenerHolder$ListenerKey;Lcom/google/android/gms/internal/location/zzai;)V
 
     return-void
 .end method

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/widget_restore_layout" android:paddingBottom="@dimen/widget_cover_layout_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<FrameLayout android:id="@id/widget_restore_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/widget_cover_layout_margin_width"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/cover_widget_title_layout" />
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/widget_cover_layout_margin_width">
-        <TextView android:id="@id/cover_widget_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_weather_data" style="@style/CoverWidget.TextAppearance.ripple" />
-    </FrameLayout>
-</LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/cover_widget_touch_area" android:background="@drawable/cover_widget_ripple" android:padding="@dimen/widget_cover_layout_margin_width" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/widget_cover_title_icon_size" android:layout_height="@dimen/widget_cover_title_icon_size" android:src="@drawable/ic_cover_widget_no_item" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/restore_weather_data" style="@style/CoverWidget.TextAppearance" />
+    </LinearLayout>
+</FrameLayout>

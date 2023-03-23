@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout android:tag="layout/detail_index_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+<com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout android:tag="layout/detail_index_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="horizontal" android:id="@id/detail_index_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" />
-</com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout>
+</com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout>

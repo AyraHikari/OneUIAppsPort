@@ -25,6 +25,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 111
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -88,6 +96,14 @@
 
 .method public setDropDownViewTheme(Landroid/content/res/Resources$Theme;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "theme"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 

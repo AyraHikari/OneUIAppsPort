@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">S’mund të përzgjidhen më shumë se %d objekte.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">S’mund të përzgjidhet më shumë se %d objekt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Nuk mund të çoj %d skedarë te Koshi i mbeturinave</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nuk mund të çoj %d skedar te Koshi i mbeturinave</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Nuk mund t’i çoj %d dosje te Koshi i mbeturinave</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nuk mund ta çoj %d dosje te Koshi i mbeturinave</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Nuk mund t’i çoj %d objekte te Koshi i mbeturinave</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nuk mund ta çoj %d objekt te Koshi i mbeturinave</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d nga skedarët e përzgjedhur do të hiqen, sepse janë në re ose në një pajisje magazinë USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nga skedarët e përzgjedhur do të hiqet, sepse është në re ose në një pajisje magazinë USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d nga dosjet e përzgjedhura do të hiqen, sepse janë në re ose në një pajisje magazinë USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nga dosjet e përzgjedhura do të hiqet, sepse është në re ose në një pajisje magazinë USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d nga objektet e përzgjedhura do të hiqen, sepse janë në re ose në një pajisje magazinë USB.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nga objektet e përzgjedhura do të hiqet, sepse është në re ose në një pajisje magazinë USB.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Duke ngjeshur %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ngjeshur %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Duke ngjeshur %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ngjeshur %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Duke ngjeshur %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ngjeshur %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Duke ngjeshur %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ngjeshur %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Duke ngjeshur %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ngjeshur %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Duke ngjeshur %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ngjeshur %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Duke kopjuar %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke kopjuar %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Duke kopjuar %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke kopjuar %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Duke kopjuar %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke kopjuar %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Duke kopjuar %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke kopjuar %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Duke kopjuar %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke kopjuar %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Duke kopjuar %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke kopjuar %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Të hiqen %d skedarë nga telefoni?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet %d skedar nga telefoni?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Të hiqen %d skedarë nga tableta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet %d skedar nga tableta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Të hiqen %d dosje nga telefoni?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet %d dosje nga telefoni?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Të hiqen %d dosje nga tableta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet %d dosje nga tableta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Të hiqen %d objekte nga telefoni?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet %d objekt nga telefoni?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Të hiqen %d objekte nga tableta?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet %d objekt nga tableta?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Duke hequr %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke hequr %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Duke hequr %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke hequr %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Duke hequr %d gjëra nga Koshi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke hequr %d gjë nga Koshi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Duke hequr %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke hequr %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Duke ekstraktuar %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ekstraktuar %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Duke ekstraktuar %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ekstraktuar %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Duke ekstraktuar %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke ekstraktuar %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">Edhe %1$d skedarë do të çohen te Koshi i mbeturinave në %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Edhe %1$d skedar do të çohet te Koshi i mbeturinave në %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Duke restauruar %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke restauruar %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">Edhe %1$d dosje do të çohen te Koshi i mbeturinave në %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Edhe %1$d dosje do të çohet te Koshi i mbeturinave në %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Duke restauruar %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke restauruar %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Magazina jote e brendshme është plot. Do të heqësh përfundimisht %d skedarë?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magazina jote e brendshme është plot. Do të heqësh përfundimisht %d skedar?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Magazina jote e brendshme është plot. Do të heqësh përfundimisht %d dosje?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magazina jote e brendshme është plot. Do të heqësh përfundimisht %d dosje?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Magazina jote e brendshme është plot. Do të heqësh përfundimisht %d objekte?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magazina jote e brendshme është plot. Do të heqësh përfundimisht %d objekt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Magazina jote e brendshme dhe karta SD janë plot. Do të heqësh përfundimisht %d skedarë?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magazina jote e brendshme dhe karta SD janë plot. Do të heqësh përfundimisht %d skedar?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Magazina jote e brendshme dhe karta SD janë plot. Do të heqësh përfundimisht %d dosje?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magazina jote e brendshme dhe karta SD janë plot. Do të heqësh përfundimisht %d dosje?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Magazina jote e brendshme dhe karta SD janë plot. Do të heqësh përfundimisht %d objekte?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magazina jote e brendshme dhe karta SD janë plot. Do të heqësh përfundimisht %d objekt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Duke restauruar %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke restauruar %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">Edhe %1$d objekte do të çohen te Koshi i mbeturinave në %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Edhe %1$d objekt do të çohet te Koshi i mbeturinave në %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Nuk mund të hapen më shumë se %d dritare app-esh.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nuk mund të hapet më shumë se %d dritare app-i.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Të çohen %d skedarë te Koshi i mbeturinave?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të çohet %d skedar te Koshi i mbeturinave?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Të çohen %d skedarë te Koshi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të çohet %d skedar te Koshi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Të çohen %d dosje te Koshi i mbeturinave?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të çohet %d dosje te Koshi i mbeturinave?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Të çohen %d dosje te Koshi i mbeturinave?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të çohet %d dosje te Koshi i mbeturinave?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Të çohen %d objekte te Koshi i mbeturinave?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të çohet %d objekt te Koshi i mbeturinave?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Të çohen %d objekte te Koshi i mbeturinave?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të çohet %d objekt te Koshi i mbeturinave?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Duke çuar %d skedarë te Koshi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke çuar %d skedar te Koshi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Duke çuar %d dosje te Koshi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke çuar %d dosje te Koshi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Duke çuar %d objekte te Koshi…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke çuar %d objekt te Koshi…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Duke zhvendosur %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke zhvendosur %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Duke zhvendosur %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke zhvendosur %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Duke zhvendosur %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke zhvendosur %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Duke zhvendosur %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke zhvendosur %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Duke zhvendosur %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke zhvendosur %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Duke zhvendosur %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke zhvendosur %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d objekte u ngjeshën</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u ngjesh</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d objekte u kopjuan te %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d objekt u kopjua te %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Ta heq dosjen dhe %d skedarët që përmban?</item>
+        <item quantity="one">Ta heq dosjen dhe skedarin që përmban?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Të heq %1$d dosje dhe %2$d skedarë që gjenden në to?</item>
+        <item quantity="one">Ta heq dosjen dhe skedarin që përmban?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d objekte u hoqën</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u hoq</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Duke shkarkuar %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke shkarkuar %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Duke shkarkuar %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke shkarkuar %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Duke shkarkuar %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke shkarkuar %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">S’mund të përbashkoj dosjet. Dosjet janë bosh.</item>
+        <item quantity="one">S’mund të përbashkoj dosjen. Dosja është bosh.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d skedarë do të hiqen përfundimisht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d skedar do të hiqet përfundimisht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d dosje do të hiqen përfundimisht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosje do të hiqet përfundimisht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d objekte u ekstraktuan</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u ekstraktua</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d skedarë u shtuan tek Të preferuarat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d skedar u shtua tek Të preferuarat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d skedarë u hoqën nga Të preferuarat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d skedar u hoq nga Të preferuarat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d dosje u shtuan tek Të preferuarat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosje u shtua tek Të preferuarat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d dosje u hoqën nga Të preferuarat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dosje u hoq nga Të preferuarat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d objekte u shtuan tek Të preferuarat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u shtua tek Të preferuarat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d objekte u hoqën nga Të preferuarat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u hoq nga Të preferuarat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d objekte</item>
+        <item quantity="one">1 artikull</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d objekte</item>
+        <item quantity="one">%d artikull</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d objekte u kopjuan te kujtesa e fragmenteve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u kopjua te kujtesa e fragmenteve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d objekte u çuan te kujtesa e fragmenteve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u çua te kujtesa e fragmenteve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d objekte janë përzgjedhur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt është përzgjedhur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d objekte u çuan te %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d objekt u çua te %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d objekte u çuan te Koshi i mbeturinave</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objekt u çua te Koshi i mbeturinave</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d janë përzgjedhur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d është përzgjedhur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">Karta jote SD është plot. Do të heqësh përfundimisht %d skedarë?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karta jote SD është plot. Do të heqësh përfundimisht %d skedar?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">Karta jote SD është plot. Do të heqësh përfundimisht %d dosje?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karta jote SD është plot. Do të heqësh përfundimisht %d dosje?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">Karta jote SD është plot. Do të heqësh përfundimisht %d objekte?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karta jote SD është plot. Do të heqësh përfundimisht %d objekt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Ky skedar do të hiqet pas %d ditësh.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ky skedar do të hiqet pas %d dite.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Kjo dosje do të hiqet pas %d ditësh.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kjo dosje do të hiqet pas %d dite.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Të hiqen përfundimisht %d skedarë?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet përfundimisht %d skedar?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Duke hequr %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke hequr %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Duke restauruar %d skedarë…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke restauruar %d skedar…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Të hiqen përfundimisht %d dosje?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet përfundimisht %d dosje?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Duke hequr %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke hequr %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Duke restauruar %d dosje…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke restauruar %d dosje…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Të hiqen përfundimisht %d objekte?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet përfundimisht %d objekt?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Duke hequr %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke hequr %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Duke restauruar %d objekte…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duke restauruar %d objekt…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Do të hiqet pas %d ditësh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Do të hiqet pas %d dite</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Të çinstalohen %d app-e?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të çinstalohet %d app?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

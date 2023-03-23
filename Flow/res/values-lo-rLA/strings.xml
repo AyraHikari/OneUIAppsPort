@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">ເພີ່ມແອັບຈາກໂທລະສັບ</string>
     <string name="add_your_bio_first_dialog_desc">ເພື່ອໃຊ້ໄບໂອແມັດທຣິກຂອງແທັບເລັດໃນການລົງຊື່ເຂົ້າໃຊ້ Samsung Flow, ລົງທະບຽນລາຍນິ້ວມື ຫຼື ມ່ານຕາຂອງທ່ານໃນແທັບເລັດຂອງທ່ານ ແລະ ລອງໃໝ່ອີກ.</string>
     <string name="add_your_bio_first_dialog_title">ເພີ່ມໄບໂອແມັດທຣິກຂອງທ່ານກ່ອນ</string>
+    <string name="advanced_features">ຄຸນສົມບັດຂັ້ນສູງ</string>
     <string name="alarm">ໂມງປຸກ</string>
     <string name="all_apps">ແອັບທັງໝົດ</string>
     <string name="allow_appear_on_top">ອະນຸຍາດໃຫ້ປະກົດຂຶ້ນຢູ່ເທິງສຸດ</string>
     <string name="allow_appear_on_top_desc">ເພື່ອສະແດງສິ່ງຕ່າງໆເຊັ່ນ ປັອບອັບ ຫຼື ການແຈ້ງເຕືອນທີ່ດ້ານເທິງຂອງແອັບອື່ນທີ່ທ່ານກຳລັງໃຊ້ໃນຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານ, ທ່ານຈຳເປັນຕ້ອອະນຸຍາດໃຫ້ປະກົດຢູ່ໃນການອະນຸຍາດເທິງສຸດໃນການຕັ້ງຄ່າ.</string>
+    <string name="allow_location_settings">ອະນຸຍາດໃຫ້ເຂົ້າໃຊ້ການຕັ້ງຄ່າຈຸດທີ່ຕັ້ງໃນອຸປະກອນ</string>
     <string name="and_more">%1$s ແລະ %2$d ຕື່ມອີກ</string>
+    <string name="app_info">ຂໍ້ມູນແອັບ</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">ຄັດຕິດ</string>
     <string name="attach_image">ຮູບ</string>
     <string name="attach_my_files">ໄຟລ໌ຂອງຂ້ອຍ</string>
     <string name="attach_sound">ສຽງ</string>
@@ -38,20 +43,29 @@
 ໃນ
 Samsung Flow"</string>
     <string name="bluetooth_connection_failed_text">ກວດເບິ່ງໃຫ້ແນ່ໃຈວ່າໂທລະສັບຂອງທ່ານໄດ້ເປີດ Samsung Flow.</string>
+    <string name="bt_or_nfc_turned_on">%s ຈະຖືກເປີດ, ເພື່ອໃຊ້ Samsung Flow.</string>
+    <string name="btn_desc_cancel">ຍົກ​ເລີກ</string>
+    <string name="btn_desc_failed">ບໍ່ສໍາເລັດ</string>
+    <string name="can_not_use">ບໍ່ສາມາດໃຊ້ %s ໄດ້</string>
+    <string name="can_not_use_at_same_time">%1$s ແລະ %2$s ບໍ່​ສາ​ມາດ​ເປີດ​ໃຊ້​ງານ​ໃນ​ເວ​ລາ​ດຽວ​ກັນ​ໄດ້. %3$s ຈະ​ຖືກປິດ​ໃຊ້​ງານ.</string>
     <string name="cancel_all">ຍົກເລີກທັງໝົດ</string>
     <string name="cant_share_files">ບໍ່ສາມາດແຊຣ໌ໄຟລ໌ໄດ້</string>
     <string name="cant_use_mobile_hotspot_case_1">ມີບາງສິ່ງບາງຢ່າງຜິດພາດກັບເຄືອຂ່າຍ. ກວດເບິ່ງຮັອດສະປັອດມືຖືໃນໂທລະສັບຂອງທ່ານ ແລະລອງໃໝ່ອີກ.</string>
     <string name="cant_use_mobile_hotspot_case_2">ມີບາງສິ່ງບາງຢ່າງຜິດພາດກັບເຄືອຂ່າຍ. ຕິດຕໍ່ຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ ເພື່ອເບິ່ງວ່າແຜນຂອງທ່ານຮອງຮັບຮັອດສະປັອດມືຖືຫຼືບໍ່.</string>
     <string name="cant_use_mobile_hotspot_title">ບໍ່ສາມາດໃຊ້ຮັອດສະປັອດມືຖືໄດ້</string>
     <string name="cant_use_this_function_in_multi_window">ບໍ່ສາມາດໃຊ້ຟັງຄ໌ຊັນນີ້ໃນມຸມມອງມັລຕິວິນໂດໄດ້.</string>
-    <string name="chan_mkt">ການຕະຫຼາດ</string>
-    <string name="chan_ntc">ແຈ້ງການ</string>
+    <string name="change_location_settings">ປ່ຽນແປງການຕັ້ງຄ່າຈຸດທີ່ຕັ້ງ</string>
+    <string name="character_counter_content_description">%1$d ຈາກ %2$d ຕົວອັກສອນ</string>
     <string name="checkbox_all">ທັງໝົດ</string>
+    <string name="china_network_permission_popup_body">ອະນຸຍາດໃຫ້ %s ໃຊ້ການເຊື່ອມຕໍ່ເຄືອຂ່າຍບໍ?</string>
+    <string name="china_network_permission_popup_title">ໃຊ້ການເຊື່ອມຕໍ່ເຄືອຂ່າຍ</string>
+    <string name="clipboard">ຄລິບບອດ</string>
     <string name="clipboard_off">ຢຸດແຊຣ໌ເນື້ອໃນຄລິບບອດລະຫວ່າງອຸປະກອນທີ່ຖືກເຊື່ອມຕໍ່</string>
     <string name="clipboard_on">ແຊຣ໌ເນື້ອໃນຄລິບບອດລະຫວ່າງອຸປະກອນທີ່ຖືກເຊື່ອມຕໍ່</string>
     <string name="close_app">ປິດແອັບ</string>
     <string name="confirm_pass_key_connecting_to_deivce">ກຳລັງເຊື່ອມຕໍ່ກັບ %s…</string>
-    <string name="connect_help_desc0">ເປີດ Samsung Flow ໃນໂທລະສັບ ຫຼື ໂມງຂອງທ່ານ.</string>
+    <string name="confirm_your_phone">ຢືນຢັນໃນໂທລະສັບຂອງທ່ານ</string>
+    <string name="connect_help_desc0">ເປີດ Samsung Flow ໃນໂທລະສັບຂອງທ່ານ.</string>
     <string name="connect_help_desc1">ເບິ່ງໃຫ້ແນ່ໃຈວ່າບລູທູດ ຫຼື Wi-Fi ເປີດຢູ່ໃນທັງສອງອຸປະກອນ.</string>
     <string name="connect_help_desc2">ຖ້າໃຊ້ການເຊື່ອມຕໍ່ Wi-Fi ຫຼື LAN, ກວດເບິ່ງໃຫ້ແນ່ໃຈວ່າອຸປະກອນທັງສອງຖືກເຊື່ອມຕໍ່ກັບເຄືອຂ່າຍດຽວກັນ.</string>
     <string name="connect_help_desc4">ຮັບປະກັນວ່າທ່ານບໍ່ໄດ້ພະຍາຍາມເຊື່ອມຕໍ່ແທັບເລັດກັບຄອມພິວເຕີຂອງທ່ານ. ແອັບນີ້ບໍ່ຖືກຮອງຮັບໂດຍ Samsung Flow.</string>
@@ -69,16 +83,18 @@ Samsung Flow"</string>
     <string name="connection_error_register_fail">ການລົງທະບຽນບໍ່ສໍາເລັດ. ລອງໃໝ່ອີກ.</string>
     <string name="connection_failed">ບໍ່ສາມາດເຊື່ອມຕໍ່ໄດ້.</string>
     <string name="connection_goto_permission_setting">ເພື່ອໃຊ້ %s, ແຕະ ການຕັ້ງຄ່າ, ໄປທີ່ຂໍ້ມູນແອັບ > ການອະນຸຍາດ, ຈາກນັ້ນອະນຸຍາດການອະນຸຍາດຕໍ່ໄປນີ້:</string>
+    <string name="connection_method_biometrics">ໄບໂອແມັດທຣິກ</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">ເພື່ອໃຊ້ໄບໂອແມັດທຣິກສຳລັບ Samsung Flow, ທ່ານຈຳເປັນຕ້ອງລົງທະບຽນໄບໂອແມັດທຣິກຂອງທ່ານໃນການຕັ້ງຄ່າ.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">ລົງທະບຽນໄບໂອແມັດທຣິກ</string>
+    <string name="connection_method_biometrics_required_title">ຈຳເປັນຕ້ອງມີການກວດສອບເພື່ອໃຊ້ໄບໂອແມັດທຣິກໃນ %s.</string>
+    <string name="connection_method_manual">ກຳນົດເອງ</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">ເຊື່ອມຕໍ່ກັບ %s ຄືນໃໝ່ໂດຍອັດຕະໂນມັດດ້ວຍໃບໂອແມັດທຣິກຂອງທ່ານໂດຍໃຊ້ Samsung Pass.</string>
-    <string name="connection_method_simple_connection">ການເຊື່ອມຕໍ່ທີ່ງ່າຍ</string>
-    <string name="connection_method_simple_connection_desc">ເຊື່ອມຕໍ່ກັບ %s ຄືນໃໝ່ໂດຍອັດຕະໂນມັດໂດຍບໍ່ຕ້ອງຢືນຢັນໃນໂທລະສັບຂອງທ່ານ.</string>
-    <string name="connection_method_simple_connection_desc_tab">ເຊື່ອມຕໍ່ກັບ %s ຄືນໃໝ່ໂດຍອັດຕະໂນມັດໂດຍບໍ່ຕ້ອງຢືນຢັນໃນແທັບເລັດຂອງທ່ານ.</string>
+    <string name="connection_method_simple_connection">ການເຊື່ອມຕໍ່ອັດຕະໂນມັດ</string>
     <string name="connection_method_tablet_bio">ໄບໂອແມັດທຣິກຂອງແທັບເລັດ</string>
-    <string name="connection_method_tablet_bio_desc">ເຊື່ອມຕໍ່ກັບ %s ຄືນໃໝ່ໂດຍອັດຕະໂນມັດດ້ວຍໃບໂອແມັດທຣິກຂອງທ່ານໃນແທັບເລັດຂອງທ່ານ.</string>
     <string name="connection_request_noti_accept">ຍອມຮັບ</string>
     <string name="connection_request_noti_desc">ອະນຸຍາດໃຫ້ %s ເຊື່ອມຕໍ່ກັບໂທລະສັບຂອງທ່ານບໍ?</string>
     <string name="content_shared_via">ເນື້ອໃນທີ່ຖືກແຊຣ໌ຜ່ານ %s</string>
+    <string name="continue_apps_on_other_device">ສືບຕໍ່ແອັບໃນອຸປະກອນອື່ນ</string>
     <string name="copied_to_clipboard">ກັອບປີ້ໃສ່ຄລິບບອດແລ້ວ.</string>
     <string name="copy_text">ກັອບປີ້ຂໍ້ຄວາມ</string>
     <string name="delete_lower">ລຶບ</string>
@@ -90,8 +106,11 @@ Samsung Flow"</string>
     <string name="device_not_secured_desc_for_bio">ເພື່ອໃຊ້ໄບໂອແມັດທຣິກໃນແທັບເລັດຂອງທ່ານ, ທ່ານຈຳເປັນຕ້ອງຕັ້ງການລັອກໜ້າຈໍໃນໂທລະສັບຂອງທ່ານ.</string>
     <string name="device_not_secured_desc_for_watch">ເພື່ອໃຊ້ໂມງຂອງທ່ານ, ທ່ານຈຳເປັນຕ້ອງຕັ້ງການລັອກໜ້າຈໍໃນໂທລະສັບຂອງທ່ານ.</string>
     <string name="device_status_connected">ເຊື່ອມຕໍ່ແລ້ວ</string>
+    <string name="device_status_connected_with">ໄດ້ເຊື່ອມຕໍ່ກັບ %s.</string>
+    <string name="device_status_disconnected">ຕັດການເຊື່ອມຕໍ່ແລ້ວ.</string>
     <string name="device_status_registered">ລົງທະບຽນແລ້ວ</string>
     <string name="device_storage">ບ່ອນເກັບຂໍ້ມູນອຸປະກອນ</string>
+    <string name="dialog_allow">ອະນຸຍາດ</string>
     <string name="dialog_close">ປິດ</string>
     <string name="dialog_deny">ປະຕິເສດ</string>
     <string name="dialog_desc_turn_off_mirroring">ປິດ Smart View ບໍ?</string>
@@ -99,6 +118,7 @@ Samsung Flow"</string>
     <string name="dialog_ok">ຕົກລົງ</string>
     <string name="dialog_retry">ລອງ​ໃໝ່ອີກ</string>
     <string name="dismiss">ປ່ອຍໄປ</string>
+    <string name="dragndroplist_drag_move">ຕອນນີ້ຢູ່ທີ່ຕຳແໜ່ງ %d</string>
     <string name="dragndroplist_drag_release">ລາຍການຕົກລົງໄປສູ່ຕໍາແໜ່ງ %d.</string>
     <string name="dragndroplist_drag_start">ເລີ່ມຕົ້ນລາກລາຍການຢູ່ທີ່ຕໍາແໜ່ງ %d ແລ້ວ.</string>
     <string name="dragndroplist_item_cannot_be_dragged">ລາຍການຢູ່ທີ່ຕໍາແໜ່ງ %d ບໍ່ສາມາດລາກໄປໄດ້.</string>
@@ -118,42 +138,9 @@ Samsung Flow"</string>
     <string name="flow_main_device_not_secure_dialog_desc">ເພື່ອໃຊ້ການປົດລັອກໜ້າຈໍ Windows, ທ່ານຈຳເປັນຕ້ອງຕັ້ງການລັອກໜ້າຈໍໃນໂທລະສັບຂອງທ່ານ.</string>
     <string name="flow_main_device_not_secure_dialog_title">ຕັ້ງການລັອກໜ້າຈໍທີ່ປອດໄພ</string>
     <string name="go_to_settings">ໄປຫາການຕັ້ງຄ່າ</string>
-    <string name="help_clipboard_desc">"ທ່ານສາມາດແຊຣ໌ຂໍ້ຄວາມ, ທີ່ຢູ່ເວັບ, ແລະ ຮູບໃນຄລິບບອດຂອງທ່ານດ້ວຍແທັບເລັດ ຫຼື ຄອມພິວເຕີທີ່ຖືກເຊື່ອມຕໍ່ແລ້ວຂອງທ່ານ.
-
-ຟັງຄ໌ຊັນນີ້ອາດຈະເພີ່ມການນຳໃຊ້ແບັດເຕີຣີຂອງທ່ານ."</string>
-    <string name="help_clipboard_title">ການໃຊ້ຄລິບບອດ</string>
-    <string name="help_connecting_devices_desc_1">ເຊື່ອມຕໍ່ຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານກັບໂທລະສັບຂອງທ່ານ (%s) ໂດຍໃຊ້ Samsung Flow.</string>
-    <string name="help_connecting_devices_desc_2">ເບິ່ງໃຫ້ແນ່ໃຈວ່າອຸປະກອນທັງສອງໄດ້ເປິດບລູທູດ ຫຼື ມີການເຊື່ອມຕໍ່ Wi-Fi ຫຼື LAN ກັບເຄືອຂ່າຍດຽວກັນ.</string>
-    <string name="help_connecting_devices_desc_2_1">ຖ້າທ່ານກຳລັງໃຊ້ສາຍ USB, ໃຫ້ແນ່ໃຈວ່າມັນຖືກເຊື່ອມຕໍ່ກັບອຸປະກອນທັງສອງແລ້ວ ແລະ Android 10 ຫຼື ສູງກວ່າຖືກຕິດຕັ້ງໃນອຸປະກອນທີ່ຖືກເຊື່ອມຕໍ່ແລ້ວ.</string>
-    <string name="help_connecting_devices_desc_3">ເປີດ Samsung Flow ໃນອຸປະກອນທັງສອງ, ຈາກນັ້ນປະຕິບັດຕາມຕົວຊ່ວຍຕັ້ງໃນຄອມພິວເຕີຂອງທ່ານ.</string>
-    <string name="help_connecting_devices_desc_4">ສຳລັບຂໍ້ມູນເພີ່ມເຕີມ, ເຂົ້າເບິ່ງ www.samsung.com/samsungflow.</string>
-    <string name="help_connecting_devices_desc_5">ຂໍ້ກຳນົດຕ່ຳສຸດ</string>
-    <string name="help_connecting_devices_desc_6">ຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງ Windows: ການອັບເດດຜູ້ສ້າງ Windows 10 (v1703) ແລະ ການສ້າງໂປຣແກຣມແກ້ໄຂໃນເດືອນມິຖຸນາ (15063.413), ບລູທູດ (ບລູທູດ LE ເປັນພຽງຕົວເລືອກ), ແລະ Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">ອຸປະກອນແອນດຣອຍ: Android Marshmallow ຫຼື ສູງກວ່ານັ້ນ. ເບິ່ງຄຳຖາມທີ່ຖາມເລື້ອຍໆສຳລັບລາຍລະອຽດເພີ່ມເຕີມ.</string>
-    <string name="help_connecting_devices_title">ການເຊື່ອມຕໍ່ກັບ PC/ແທັບເລັດຂອງທ່ານ</string>
     <string name="help_contact_us">ຕິດຕໍ່ພວກເຮົາ</string>
     <string name="help_install_samsung_flow_title">ເຊື່ອມຕໍ່ອຸປະກອນດ້ວຍ Samsung Flow</string>
-    <string name="help_mobile_hotspot_desc">ແຕະ %s ເພື່ອເປີດ ຫຼື ປິດ ຮັອດສະປັອດມືຖືໃນໂທລະສັບຂອງທ່ານ. ສິ່ງນີ້ໃຊ້ບໍ່ໄດ້ກັບໂທລະສັບທີ່ເປີດໃຊ້ Android 11 ຂຶ້ນໄປ.</string>
-    <string name="help_mobile_hotspot_title">ການໃຊ້ຮັອດສະປັອດມືຖື</string>
-    <string name="help_noti_sync_desc">"ເບິ່ງການແຈ້ງເຕືອນຈາກໂທລະສັບຂອງທ່ານໃນຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານ ເມື່ອທ່ານເຊື່ອມຕໍ່ຄອມພິວເຕີ ຫຼື ແທັບເລັດໂດຍໃຊ້ Samsung Flow. ທ່ານສາມາດຕອບກັບຂໍ້ຄວາມຈາກແອັບອື່ນໄດ້ທັນທີ ເມື່ອໄດ້ຮັບການແຈ້ງເຕືອນໃໝ່.
-
-ຟັງຄ໌ຊັນນີ້ອາດຈະບໍ່ມີຢູ່ສຳລັບບາງແອັບສົ່ງຂໍ້ຄວາມ.
-
-ທ່ານສາມາດຈັດການການແຈ້ງເຕືອນໃນ Samsung Flow ໂດຍການໄປທີ່ປຸ່ມຕົວເລືອກເພີ່ມເຕີມ > ການຕັ້ງຄ່າ > ຈັດການການແຈ້ງເຕືອນ."</string>
-    <string name="help_noti_sync_title">ການຊິງຄ໌ການແຈ້ງເຕືອນ</string>
-    <string name="help_sharing_contents_desc_1">ທ່ານສາມາດແຊຣ໌ເນື້ອໃນລະຫວ່າງອຸປະກອນທີ່ຖືກເຊື່ອມຕໍ່ໄດ້ຢ່າງງ່າຍດາຍ.</string>
-    <string name="help_sharing_contents_desc_2">ໂທລະສັບຫາຄອມພິວເຕີ ຫຼື ແທັບເລັດ</string>
-    <string name="help_sharing_contents_desc_3">ຊອກຫາຕົວເລືອກການແຊຣ໌ໃນແອັບ, ເຊັ່ນ ບຣາວເຊີ, ຈາກນັ້ນເລືອກ Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_4">ນອກຈາກນີ້ ທ່ານຍັງສາມາດແຕະ %s ໃນແຖບປະຫວັດການໄຫຼວຽນ ເພື່ອເລືອກໄຟລ໌ ແລະ ແຊຣ໌ພວກມັນ.</string>
-    <string name="help_sharing_contents_desc_5">ຄອມພິວເຕີ ຫຼື ແທັບເລັດຫາໂທລະສັບ</string>
-    <string name="help_sharing_contents_desc_6">ຊອກຫາຕົວເລືອກການແຊຣ໌ໃນແອັບ, ເຊັ່ນ ບຣາວເຊີ, ຈາກນັ້ນເລືອກ Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_7">ນອກຈາກນີ້ ທ່ານຍັງສາມາດແຕະ %s ໃນແຖບປະຫວັດການໄຫຼວຽນ ເພື່ອເລືອກໄຟລ໌ ແລະ ແຊຣ໌ພວກມັນ, ຫຼື ລາກໄຟລ໌ລົງໃສ່ Samsung Flow.</string>
-    <string name="help_sharing_contents_title">ການແຊຣ໌ເນື້ອໃນ</string>
-    <string name="help_smart_view_desc">ແຕະໄອຄອນ Smart View ເພື່ອສາຍພາບໜ້າຈໍໂທລະສັບຂອງທ່ານໃນແທັບເລັດ ຫຼື ຄອມພິວເຕີຂອງທ່ານ.</string>
-    <string name="help_smart_view_desc_2">ໃນຂະນະທີ່ໃຊ້ Smart View, ທ່ານສາມາດແຕະໄອຄອນຮູບດາວເພື່ອເພີ່ມແອັບທີ່ມັກເພື່ອການເຂົ້າໃຊ້ທີ່ໄວຂຶ້ນ.</string>
-    <string name="help_smart_view_title">ການນຳໃຊ້ Smart View</string>
-    <string name="help_using_multi_device_title">ການໃຊ້ PC/ແທັບເລັດແບບຫຼາຍເຄື່ອງ</string>
-    <string name="hotspot_description">ໃຊ້​ອຸ​ປະ​ກອນ​ທີ່​ເຊື່ອມ​ຕໍ່​ແລ້ວ​ເປັນ​ຈຸດເຊື່ອມຕໍ່​ອິນ​ເຕີ​ເນັດ​ໂດຍ​ການ​ໃຊ້​ຮັອດ​ສະ​ປັອດ​ມື​ຖື ໃນ​ຂະ​ນະທີ່ Samsung Flow ກຳ​ລັງ​ແລ່ນຢູ່.</string>
+    <string name="hotspot_description">ໃຊ້ອຸປະກອນທີ່ເຊື່ອມຕໍ່ແລ້ວເປັນຈຸດເຊື່ອມຕໍ່ອິນເຕີເນັດໂດຍການໃຊ້ຮັອດສະປັອດມືຖື ໃນຂະນະທີ່ Samsung Flow ກຳລັງແລ່ນຢູ່.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">ເພື່ອໃຊ້ຮັອດສະປັອດມືຖື, ຈຳເປັນຕ້ອງໄດ້ປິດ Wi-Fi.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">ປິດ Wi-Fi ບໍ?</string>
     <string name="hotspot_warning_password_empty">ອຸປະກອນໃດໜຶ່ງສາມາດເຊື່ອມຕໍ່ກັບຮັອດສະປັອດມືຖືຂອງໂທລະສັບຂອງທ່ານໂດຍບໍ່ຕ້ອງມີການປ້ອນລະຫັດຜ່ານເຂົ້າ.</string>
@@ -185,7 +172,11 @@ Samsung Flow"</string>
     <string name="menu_do_not_disturb">ຫ້າມລົບກວນ</string>
     <string name="menu_enable_hotspot">ເຊື່ອມ​ຕໍ່​ກັບຮັອດສະປັອດມືຖື</string>
     <string name="menu_favorites">ລາຍການທີ່ມັກ</string>
+    <string name="menu_favorites_add">​ເພີ່​ມ</string>
+    <string name="menu_favorites_remove">ເອົາ​ອອກ​ໄປ</string>
     <string name="menu_full_screen">ເບິ່ງເຕັມຈໍ</string>
+    <string name="menu_more">ເພີ່ມເຕີມ</string>
+    <string name="menu_phone_screen">ໜ້າຈໍໂທລະສັບ</string>
     <string name="menu_resolution">ຄວາມລະອຽດ</string>
     <string name="menu_resolution_option_high">ສູງ</string>
     <string name="menu_resolution_option_low">ຕ່ຳ</string>
@@ -231,6 +222,10 @@ Samsung Flow"</string>
     <string name="noti_desc_screenshot_saved">ແຕະທີ່ນີ້ ເພື່ອເບິ່ງຮູບຖ່າຍໜ້າຈໍຂອງທ່ານ.</string>
     <string name="noti_title_screenshot_saved">ບັນທຶກຮູບຖ່າຍໜ້າຈໍແລ້ວ</string>
     <string name="notices">ແຈ້ງການ</string>
+    <string name="notices_last_for_android6_desc">"ນີ້ແມ່ນການອັບເດດຫຼ້າສຸດສຳລັບ Android 6.0 (Marshmallow). Samsung Flow ບໍ່ຮອງຮັບ Android 6.0 ອີກຕໍ່ໄປເນື່ອງຈາກຂໍ້ຈຳກັດ OS.
+
+ຜູ້ໃຊ້ Android 6.0 ຍັງສາມາດໃຊ້ Samsung Flow ໂດຍບໍ່ຕ້ອງອັບເດດ."</string>
+    <string name="notices_last_for_android6_title">ສິ້ນສຸດການຮອງຮັບສຳລັບ Android 6.0 (Marshmallow)</string>
     <string name="notices_notice">ແຈ້ງການ</string>
     <string name="notices_update">ອັບເດດ</string>
     <string name="notices_update_include">ການອັບເດດຊອບແວສາມາດລວມມີ:</string>
@@ -255,6 +250,8 @@ Samsung Flow"</string>
     <string name="option_connection_type_wifi">Wi-Fi ຫຼື LAN</string>
     <string name="pc">PC</string>
     <string name="permissions">ສິດ</string>
+    <string name="permissions_all_files_access">ການເຂົ້າໃຊ້ໄຟລ໌ທັງໝົດ</string>
+    <string name="permissions_all_files_access_desc">ທີ່ໃຊ້ເພື່ອໂອນຮູບ, ມີເດຍ, ແລະ ໄຟລ໌.</string>
     <string name="permissions_appear_on_top_desc">ຖືກໃຊ້ເພື່ອສະແດງການແຈ້ງເຕືອນຢູ່ເທິງແອັບອື່ນ</string>
     <string name="permissions_appear_on_top_title">ອະນຸຍາດໃຫ້ Samsung Flow ເຂົ້າເຖິງ ປະກົດຂຶ້ນຢູ່ສ່ວນເທິງ ເພື່ອໃຫ້ສາມາດສະແດງການແຈ້ງເຕືອນຢູ່ສ່ວນເທິງແອັບອື່ນບໍ?</string>
     <string name="permissions_call_log">ບັນທຶກການໂທ</string>
@@ -266,6 +263,8 @@ Samsung Flow"</string>
     <string name="permissions_location_desc">ທີ່ໃຊ້ເພື່ອຊອກຫາອຸປະກອນ Galaxy ໃກ້ຄຽງ ໂດຍໃຊ້ບລູທູດ.</string>
     <string name="permissions_microphone">ໄມໂຄຣໂຟນ</string>
     <string name="permissions_microphone_desc">ທີ່ໃຊ້ເພື່ອເຊື່ອມຕໍ່ອຸປະກອນ Galaxy ໂດຍການຮັບສຽງທີ່ມີຄວາມຖີ່ສູງ.</string>
+    <string name="permissions_nearby_devices">ອຸປະກອນໃກ້ຄຽງ</string>
+    <string name="permissions_nearby_devices_desc">ຖືກໃຊ້ເພື່ອຊອກຫາອຸປະກອນໃກ້ຄຽງ ແລະ ຕິດຕາມອຸປະກອນທີ່ລົງທະບຽນແລ້ວ</string>
     <string name="permissions_notification_access_desc">ຖືກໃຊ້ເພື່ອສົ່ງການແຈ້ງເຕືອນຫາອຸປະກອນທີ່ເຊື່ອມຕໍ່</string>
     <string name="permissions_phone">ໂທລະສັບ</string>
     <string name="permissions_phone_desc">ທີ່ໃຊ້ເພື່ອຢືນຢັນເບີໂທລະສັບຂອງທ່ານ.</string>
@@ -273,11 +272,11 @@ Samsung Flow"</string>
     <string name="permissions_sms_desc">ທີ່ໃຊ້ເພື່ອໂອນຂໍ້ຄວາມຕົວອັກສອນ.</string>
     <string name="permissions_storage">ບ່ອນເກັບຂໍ້ມູນ</string>
     <string name="permissions_storage_desc">ທີ່ໃຊ້ເພື່ອໂອນຮູບ, ມີເດຍ, ແລະ ໄຟລ໌.</string>
-    <string name="permissions_title">ການອະນຸຍາດສຳລັບ %s</string>
+    <string name="permissions_title">Samsung Flow ໃຊ້ການອະນຸຍາດເຫຼົ່ານີ້</string>
     <string name="phone">ໂທລະສັບ</string>
     <string name="press_enter_key_to_send">ສົ່ງຂໍ້ຄວາມດ້ວຍປຸ່ມປ້ອນເຂົ້າ</string>
     <string name="processing">ກຳລັງ​ປະມວນ​ຜົນ…</string>
-    <string name="receiving_failed">ການຮັບບໍ່ສໍາເລັດ.</string>
+    <string name="receiving_failed">ມີບາງສິ່ງບາງຢ່າງຜິດພາດໃນຂະນະທີ່ກຳລັງຮັບຂໍ້ຄວາມນີ້.</string>
     <string name="register_failed">ລອງໃໝ່ພາຍຫຼັງ.</string>
     <string name="resend">ສົ່ງໃໝ່</string>
     <string name="rooted_device">ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ໄດ້​ຖືກ​ຝັງ​ຮາກ​ແລ້ວ. %s ບໍ່​ສາ​ມາດ​ນຳ​ໃຊ້​ອຸ​ປະ​ກອນ​ທີ່​ຝັງ​ຮາກ​ແລ້ວ​ສຳ​ລັບ​ເຫດ​ຜົນ​ຄວາມ​ປອດ​ໄພ.</string>
@@ -295,11 +294,19 @@ Samsung Flow"</string>
     <string name="select_apps_for_shortcuts">ເລືອກແອັບສໍາລັບເມນູລັດ</string>
     <string name="select_items">ເລືອກ​ລາຍ​ການ</string>
     <string name="send">ສົ່ງ</string>
-    <string name="sending_failed">ການສົ່ງ​ບໍ່ສຳເລັດ.</string>
-    <string name="sesl_action_bar_up_description">ກຳ​ນົດ​ທິດ​ທາງ​ຂຶ້ນ</string>
+    <string name="sending_failed">ມີບາງສິ່ງບາງຢ່າງຜິດພາດໃນຂະນະທີ່ກຳລັງສົ່ງຂໍ້ຄວາມນີ້.</string>
+    <string name="sesl_action_bar_up_description">ກວດນໍາທາງຂຶ້ນໄປ</string>
     <string name="sesl_action_menu_overflow_badge_description">ເນື້ອໃນໃໝ່ມີຢູ່</string>
     <string name="sesl_action_menu_overflow_badge_text_n">N</string>
     <string name="sesl_action_menu_overflow_description">ຕົວເລືອກເພີ່ມເຕີມ</string>
+    <string name="sesl_index_assistant_text">ຮູດຂຶ້ນເທິງ ຫຼື ລົງລຸ່ມດ້ວຍມືສອງນິ້ວເພື່ອເລື່ອນ.</string>
+    <string name="sesl_index_scrollbar">ແຖບເລື່ອນ</string>
+    <string name="sesl_index_section">ດັດຊະນີພາກສ່ວນ</string>
+    <string name="sesl_index_selected">ເລືອກແລ້ວ</string>
+    <string name="sesl_material_badge_description">ເນື້ອໃນໃໝ່ມີຢູ່</string>
+    <string name="sesl_material_overflow_badge_text_n">N</string>
+    <string name="sesl_more_item_label">ເພີ່ມເຕີມ</string>
+    <string name="sesl_preferecne_badge_description">ການແຈ້ງເຕືອນໃໝ່</string>
     <string name="sesl_preferencecategory_added_title">ສ່ວນຫົວ</string>
     <string name="sesl_search_hint">ຄົ້ນຫາ</string>
     <string name="sesl_searchview_description_clear">ລຶບຊ່ອງຊອກຫາ</string>
@@ -309,6 +316,10 @@ Samsung Flow"</string>
     <string name="sesl_searchview_description_voice">ຄົ້ນຫາດ້ວຍສຽງ</string>
     <string name="sesl_switch_off">ປິດ</string>
     <string name="sesl_switch_on">ເປີດ</string>
+    <string name="sesl_switchbar_off_text">ປິດ</string>
+    <string name="sesl_switchbar_on_text">ເປີດ</string>
+    <string name="sesl_toolbar_collapse_description">ຫຍໍ້ລົງ</string>
+    <string name="set_screen_lock_title">ຕັ້ງລັອກໜ້າຈໍ</string>
     <string name="settings">ການຕັ້ງຄ່າ</string>
     <string name="settings_auto_hotspot_desc">ໃຊ້ໂທລະສັບຂອງທ່ານເປັນຈຸດເຊື່ອມຕໍ່ອິນເຕີເນັດໃນຂະນະທີ່ອຸປະກອນທີ່ຖືກເຊື່ອມຕໍ່ບໍ່ສາມາດເຊື່ອມຕໍ່ອິນເຕີເນັດໄດ້.</string>
     <string name="settings_deregister_confirm_dialog_desc">ເພື່ອເຊື່ອມຕໍ່ກັບອຸປະກອນນີ້ໃນອະນາຄົດ, ທ່ານຈະຕ້ອງໄດ້ລົງທະບຽນມັນອີກຄັ້ງ.</string>
@@ -319,12 +330,16 @@ Samsung Flow"</string>
     <string name="settings_gear_unlock_confirm_dialog_title">ເປີດການຮັບຮອງເກຍບໍ?</string>
     <string name="settings_manage_notifications_desc">ເລືອກແອັບທີ່ສາມາດສົ່ງການແຈ້ງເຕືອນຫາອຸປະກອນທີ່ເຊື່ອມຕໍ່ຂອງທ່ານ.</string>
     <string name="settings_manage_notifications_title">ການແຈ້ງເຕືອນແອັບທີ່ເລືອກ</string>
+    <string name="settings_send_message_desc">ສົ່ງຂໍ້ຄວາມດ້ວຍການໃຊ້ປຸ່ມເອັນເທີຢູ່ໃນຄີບອດຂອງທ່ານ.</string>
     <string name="settings_title_auto_bt_on">ບລູທູດອັດຕະໂນມັດ</string>
     <string name="setup_complete_done">ສໍາເລັດ</string>
     <string name="setup_completed">ຕັ້ງ %s ສໍາເລັດແລ້ວ.</string>
+    <string name="setup_completed_phone">ດຽວນີ້ ໂທລະສັບຂອງທ່ານຖືກເຊື່ອມຕໍ່ກັບ %s ແລ້ວ.</string>
+    <string name="setup_completed_tablet">ດຽວນີ້ ແທັບເລັດຂອງທ່ານຖືກເຊື່ອມຕໍ່ກັບ %s ແລ້ວ.</string>
     <string name="setup_confirm_pin">ຢືນຢັນລະຫັດຜ່ານແມ່ນຖືກຕ້ອງພາຍໃນ %1$d ວິນາທີຖັດໄປ ເພື່ອເຊື່ອມຕໍ່ກັບ %2$s.</string>
     <string name="setup_enter_pin_on_pc">ປ້ອນ PIN ຂອງທ່ານໃນ %s ຂອງທ່ານເຂົ້າ.</string>
     <string name="setup_preparing">ເລີ່ມຕົ້ນຕັ້ງ Samsung Flow ໃນຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານ.</string>
+    <string name="setup_preparing_detail">ຖ້າທ່ານບໍ່ໄດ້ຕິດຕັ້ງ Samsung Flow, ໃຫ້ດາວໂຫຼດມັນຈາກ Microsoft Store ໃນຄອມພິວເຕີຂອງທ່ານ ແລະ Galaxy Store ຫຼື Google Play ໃນແທັບເລັດຂອງທ່ານ.</string>
     <string name="setup_preparing_tab">ເລີ່ມຕົ້ນການຕັ້ງ Samsung Flow ໃນຄອມພິວເຕີຂອງທ່ານ</string>
     <string name="setup_tab_complete_title">ຕັ້ງສໍາເລັດແລ້ວ</string>
     <string name="setup_tab_confirm_passkey_title">ເຊື່ອມຕໍ່ອຸປະກອນຂອງທ່ານ</string>
@@ -343,6 +358,8 @@ Samsung Flow"</string>
     <string name="setupwizard_welcome_body">ຈຳເປັນຕ້ອງມີການອະນຸຍາດຕໍ່ໄປນີ້ສຳລັບການບໍລິການຂອງແອັບ. ສຳລັບການອະນຸຍາດທີ່ເລືອກໄດ້, ຟັງຄ໌ຊັນໃຊ້ງານມາດຕະຖານຂອງການບໍລິການຖືກເປີດຢູ່, ແຕ່ບໍ່ຖືກອະນຸຍາດ.</string>
     <string name="setupwizard_welcome_title">ການອະນຸຍາດແອັບ</string>
     <string name="share">ແຊຣ໌</string>
+    <string name="share_item_device_status_connected">ເຊື່ອມຕໍ່ອຸປະກອນແລ້ວ</string>
+    <string name="share_item_device_status_disconnected">ຕັດເຊື່ອມຕໍ່ອຸປະກອນແລ້ວ</string>
     <string name="shortcut_list_desc">ເລືອກແອັບໃນໂທລະສັບຂອງທ່ານເພື່ອເຊື່ອມຕໍ່ກັບແທັບເລັດຂອງທ່ານ. ທາງລັດຫາແອັບນີ້ຈະຖືກເພີ່ມໃສ່ໜ້າຈໍຫຼັກຂອງທ່ານ.</string>
     <string name="snooze">ເລື່ອນແຈ້ງເຕືອນ</string>
     <string name="special_sensitive_optional_permissions">ການອະນຸຍາດທີ່ເລືອກໄດ້ທີ່ລະອຽດອ່ອນພິເສດ</string>
@@ -352,6 +369,8 @@ Samsung Flow"</string>
     <string name="tablet_bio_auth_confirm_title">ໃຊ້ໄບໂອແມັດທຣິກຂອງແທັບເລັດສຳລັບການຮັບຮອງບໍ?</string>
     <string name="tap_icon_to_try_iris_auth">ແຕະໄອຄອນເພື່ອລອງການຈົດຈຳມ່ານຕາອີກຄັ້ງ</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">ບໍ່ສາມາດໃຊ້ໝູນອັດຕະໂນມັດໃນຂະນະ Smart View ຖືກເປີດສຳລັບ Samsung Flow.</string>
+    <string name="toast_msg_connected">ເລີ່ມຕົ້ນການເຊື່ອມຕໍ່ Samsung Flow ກັບ%s ແລ້ວ.</string>
+    <string name="toast_msg_disconnected">ສິ້ນສຸດການເຊື່ອມຕໍ່ Samsung Flow ກັບ %s ແລ້ວ.</string>
     <string name="try_again">ລອງໃໝ່ອີກ</string>
     <string name="turn_on">ເປີດ</string>
     <string name="turn_on_auto_run">ເປີດແລ່ນອັດຕະໂນມັດ</string>
@@ -362,15 +381,20 @@ Samsung Flow"</string>
     <string name="unsupported_file">ໄຟລ໌ບໍ່ຮອງຮັບ.</string>
     <string name="update">ອັບເດດ</string>
     <string name="update_samsung_flow">ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບ %s. ອັບເດດ Samsung Flow ເປັນລຸ້ນຫຼ້າສຸດ ແລະລອງໃໝ່ອີກ.</string>
-    <string name="welcome_button_start">ເລີ່ມຕົ້ນ</string>
+    <string name="verification_method">ວິທີການກວດສອບ</string>
     <string name="welcome_phone_button_agree">ເຫັນດີນຳ</string>
-    <string name="welcome_phone_desc">ເຊື່ອມຕໍ່ຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານກັບໂທລະສັບຂອງທ່ານໂດຍໃຊ້ Samsung Flow.</string>
-    <string name="welcome_phone_desc_terms">ເພື່ອສືບຕໍ່, ອ່ານ ແລະ ເຫັນດີນຳ %s.</string>
-    <string name="welcome_phone_title">ຍິນດີຕ້ອນຮັບສູ່ %s</string>
+    <string name="welcome_phone_desc1">ແຊຣ໌ເອກະສານ, ຮູບ, ວິດີໂອ ແລະ ອື່ນໆລະຫວ່າງໂທລະສັບ ແລະ ຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານທີ່ມັນເຊື່ອມຕໍ່.</string>
+    <string name="welcome_phone_desc2">ກວດເບິ່ງ ແລະ ຕອບກັບຂໍ້ຄວາມ ແລະ ການແຈ້ງເຕືອນຂອງໂທລະສັບຂອງທ່ານໃນຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານ.</string>
+    <string name="welcome_phone_desc3">ເບິ່ງ ແລະ ຄວບຄຸມໜ້າຈໍໂທລະສັບຂອງທ່ານໃນຄອມພິວເຕີ ຫຼື ແທັບເລັດຂອງທ່ານ.</string>
+    <string name="welcome_phone_desc_terms">ໂດຍການສືບຕໍ່, ທ່ານເຫັນດີນຳ %s.</string>
+    <string name="welcome_phone_title1">ເຊື່ອມຕໍ່ໂທລະສັບຂອງທ່ານກັບອຸປະກອນອື່ນ</string>
+    <string name="welcome_phone_title2">ຊິງຄ໌ການແຈ້ງເຕືອນຂອງທ່ານ</string>
+    <string name="welcome_phone_title3">ແຊຣ໌ໜ້າຈໍໂທລະສັບຂອງທ່ານ</string>
     <string name="welcome_tab_desc2">ກຽມໂທລະສັບຂອງທ່ານໃຫ້ພ້ອມ ເພື່ອຕັ້ງ Samsung Flow.</string>
     <string name="welcome_tab_desc3">ເຊື່ອມຕໍ່ແທັບເລັດຂອງທ່ານກັບໂທລະສັບ ຫຼື ຄອມພິວເຕີຂອງທ່ານໂດຍໃຊ້ Samsung Flow.</string>
     <string name="wifi_connection_failed_text">ກວດເບິ່ງໃຫ້ແນ່ໃຈວ່າໂທລະສັບຂອງທ່ານໄດ້ເປີດ Samsung Flow ແລະ ຖືກເຊື່ອມຕໍ່ກັບເຄືອຂ່າຍດຽວກັນ.</string>
-    <string name="wifi_enable_warning_msg">Wi-Fi ຖືກປິດ ເມື່ອຮັອດສະປັອດມືຖືຖືກເປີດໃຊ້ງານຢູ່. ເພື່ອເປີດ Wi-Fi, ກະລຸນາປິດຮັອດສະປັອດມືຖື.</string>
-    <string name="wifi_enable_warning_title">ປິດຮັອດສະປັອດມືຖືບໍ?</string>
+    <string name="wifi_enable_warning_msg">ເພື່ອໃຊ້ Wi-Fi Direct, ຈຳເປັນຕ້ອງໄດ້ປິດຮັອດສະປັອດມື​ຖື.</string>
+    <string name="wifi_enable_warning_title">ປິດຮັອດສະປັອດມືຖື</string>
+    <string name="you_can_turn_off">ທ່ານສາມາດປິດຟັງຄ໌ຊັນນີ້ໃນ %s.</string>
     <string name="you_can_turn_off_this_permission">ທ່ານສາມາດປິດການອະນຸຍາດນີ້ໃນ ການຕັ້ງຄ່າ > ແອັບ > ເມນູເພີ່ມເຕີມ > ການເຂົ້າເຖິງພິເສດ.</string>
 </resources>

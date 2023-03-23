@@ -686,7 +686,7 @@
 .end method
 
 .method protected processBlock()V
-    .locals 34
+    .locals 35
 
     move-object/from16 v7, p0
 
@@ -788,11 +788,11 @@
 
     move-wide v11, v0
 
-    move-wide/from16 v32, v8
+    move-wide/from16 v33, v8
 
     move-wide/from16 v8, v17
 
-    move-wide/from16 v17, v32
+    move-wide/from16 v17, v33
 
     :goto_1
     const/16 v0, 0xa
@@ -822,15 +822,15 @@
 
     add-long v24, v24, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    sget-object v29, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
 
-    aget-wide v1, v0, v23
+    aget-wide v0, v29, v23
 
-    add-long v24, v24, v1
+    add-long v24, v24, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
-    add-int/lit8 v29, v23, 0x1
+    add-int/lit8 v30, v23, 0x1
 
     aget-wide v1, v0, v23
 
@@ -851,7 +851,7 @@
 
     move-wide v3, v13
 
-    move-wide/from16 v30, v5
+    move-wide/from16 v31, v5
 
     move-wide v5, v15
 
@@ -863,7 +863,7 @@
 
     add-long v11, v11, v19
 
-    move-wide/from16 v5, v30
+    move-wide/from16 v5, v31
 
     .line 287
     invoke-direct {v7, v5, v6}, Lorg/spongycastle/crypto/digests/LongDigest;->Sum1(J)J
@@ -886,17 +886,15 @@
 
     add-long v19, v19, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    aget-wide v0, v29, v30
 
-    aget-wide v1, v0, v29
-
-    add-long v19, v19, v1
+    add-long v19, v19, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
-    add-int/lit8 v25, v29, 0x1
+    add-int/lit8 v25, v30, 0x1
 
-    aget-wide v1, v0, v29
+    aget-wide v1, v0, v30
 
     add-long v19, v19, v1
 
@@ -952,11 +950,9 @@
 
     add-long/2addr v15, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    aget-wide v0, v29, v25
 
-    aget-wide v1, v0, v25
-
-    add-long/2addr v15, v1
+    add-long/2addr v15, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
@@ -1014,11 +1010,9 @@
 
     add-long/2addr v15, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    aget-wide v0, v29, v12
 
-    aget-wide v1, v0, v12
-
-    add-long/2addr v15, v1
+    add-long/2addr v15, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
@@ -1076,11 +1070,9 @@
 
     add-long/2addr v15, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    aget-wide v0, v29, v25
 
-    aget-wide v1, v0, v25
-
-    add-long/2addr v15, v1
+    add-long/2addr v15, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
@@ -1142,11 +1134,9 @@
 
     add-long/2addr v15, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    aget-wide v0, v29, v12
 
-    aget-wide v1, v0, v12
-
-    add-long/2addr v15, v1
+    add-long/2addr v15, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
@@ -1204,11 +1194,9 @@
 
     add-long/2addr v15, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    aget-wide v0, v29, v25
 
-    aget-wide v1, v0, v25
-
-    add-long/2addr v15, v1
+    add-long/2addr v15, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 
@@ -1270,11 +1258,9 @@
 
     add-long/2addr v15, v0
 
-    sget-object v0, Lorg/spongycastle/crypto/digests/LongDigest;->K:[J
+    aget-wide v0, v29, v12
 
-    aget-wide v1, v0, v12
-
-    add-long/2addr v15, v1
+    add-long/2addr v15, v0
 
     iget-object v0, v7, Lorg/spongycastle/crypto/digests/LongDigest;->W:[J
 

@@ -59,7 +59,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "wrong size in numeric code : not in (1..999)"
+    const-string/jumbo v0, "wrong size in numeric code : not in (1..999)"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -107,7 +107,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "wrong size in alphabetic code : max size is 3"
+    const-string/jumbo v0, "wrong size in alphabetic code : max size is 3"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -179,7 +179,7 @@
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unknown object in getInstance"
+    const-string/jumbo v0, "unknown object in getInstance"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

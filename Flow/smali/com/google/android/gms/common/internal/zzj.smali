@@ -1,106 +1,110 @@
-.class public abstract Lcom/google/android/gms/common/internal/zzj;
-.super Lcom/google/android/gms/internal/common/zzb;
+.class public final Lcom/google/android/gms/common/internal/zzj;
+.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
-# interfaces
-.implements Lcom/google/android/gms/common/internal/zzi;
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/google/android/gms/common/internal/zzj;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field zza:Landroid/os/Bundle;
+
+.field zzb:[Lcom/google/android/gms/common/Feature;
+
+.field zzc:I
+
+.field zzd:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "com.google.android.gms.common.internal.ICertData"
+    new-instance v0, Lcom/google/android/gms/common/internal/zzk;
 
-    .line 1
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/common/zzb;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0}, Lcom/google/android/gms/common/internal/zzk;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/common/internal/zzj;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public static zzb(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/zzi;
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
 
-    if-nez p0, :cond_0
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    const/4 p0, 0x0
+    return-void
+.end method
 
-    return-object p0
+.method constructor <init>(Landroid/os/Bundle;[Lcom/google/android/gms/common/Feature;ILcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;)V
+    .locals 0
 
-    :cond_0
-    const-string v0, "com.google.android.gms.common.internal.ICertData"
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    .line 5
-    invoke-interface {p0, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzj;->zza:Landroid/os/Bundle;
 
-    move-result-object v0
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/zzj;->zzb:[Lcom/google/android/gms/common/Feature;
 
-    .line 6
-    instance-of v1, v0, Lcom/google/android/gms/common/internal/zzi;
+    iput p3, p0, Lcom/google/android/gms/common/internal/zzj;->zzc:I
 
-    if-eqz v1, :cond_1
+    iput-object p4, p0, Lcom/google/android/gms/common/internal/zzj;->zzd:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
-    .line 7
-    check-cast v0, Lcom/google/android/gms/common/internal/zzi;
-
-    return-object v0
-
-    .line 8
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/common/internal/zzk;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/common/internal/zzk;-><init>(Landroid/os/IBinder;)V
-
-    return-object v0
+    return-void
 .end method
 
 
 # virtual methods
-.method protected final zza(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
 
-    const/4 p2, 0x1
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
 
-    if-eq p1, p2, :cond_1
+    move-result v0
 
-    const/4 p4, 0x2
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zza:Landroid/os/Bundle;
 
-    if-eq p1, p4, :cond_0
+    const/4 v2, 0x1
 
-    const/4 p1, 0x0
+    const/4 v3, 0x0
 
-    return p1
+    .line 2
+    invoke-static {p1, v2, v1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBundle(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
 
-    .line 14
-    :cond_0
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/zzj;->zzc()I
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzb:[Lcom/google/android/gms/common/Feature;
 
-    move-result p1
+    const/4 v2, 0x2
 
-    .line 15
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+    .line 3
+    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeTypedArray(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
 
-    .line 16
-    invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeInt(I)V
+    iget v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzc:I
 
-    goto :goto_0
+    const/4 v2, 0x3
 
-    .line 10
-    :cond_1
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/zzj;->zzb()Lcom/google/android/gms/dynamic/IObjectWrapper;
+    .line 4
+    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeInt(Landroid/os/Parcel;II)V
 
-    move-result-object p1
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzd:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
-    .line 11
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+    const/4 v2, 0x4
 
-    .line 12
-    invoke-static {p3, p1}, Lcom/google/android/gms/internal/common/zzc;->zza(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    .line 5
+    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
-    :goto_0
-    return p2
+    .line 6
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+
+    return-void
 .end method

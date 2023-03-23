@@ -596,7 +596,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "retry-after"
+    const-string/jumbo v2, "retry-after"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -606,7 +606,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "server"
+    const-string/jumbo v2, "server"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -616,7 +616,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "set-cookie"
+    const-string/jumbo v2, "set-cookie"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -626,7 +626,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "strict-transport-security"
+    const-string/jumbo v2, "strict-transport-security"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -636,7 +636,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "transfer-encoding"
+    const-string/jumbo v2, "transfer-encoding"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -646,7 +646,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "user-agent"
+    const-string/jumbo v2, "user-agent"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -656,7 +656,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "vary"
+    const-string/jumbo v2, "vary"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -666,7 +666,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "via"
+    const-string/jumbo v2, "via"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -676,7 +676,7 @@
 
     new-instance v1, Lokhttp3/internal/http2/Header;
 
-    const-string v2, "www-authenticate"
+    const-string/jumbo v2, "www-authenticate"
 
     invoke-direct {v1, v2, v3}, Lokhttp3/internal/http2/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -750,13 +750,17 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {p0}, Lokio/ByteString;->utf8()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -806,19 +810,17 @@
     if-ge v1, v3, :cond_1
 
     .line 359
-    aget-object v2, v2, v1
+    aget-object v3, v2, v1
 
-    iget-object v2, v2, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
+    iget-object v3, v3, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
-    invoke-interface {v0, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-interface {v0, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_0
+    if-nez v3, :cond_0
 
     .line 360
-    sget-object v2, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
-
     aget-object v2, v2, v1
 
     iget-object v2, v2, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;

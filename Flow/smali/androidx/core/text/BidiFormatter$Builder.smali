@@ -45,6 +45,14 @@
 
 .method public constructor <init>(Ljava/util/Locale;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "locale"
+        }
+    .end annotation
 
     .line 157
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -61,6 +69,14 @@
 
 .method public constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rtlContext"
+        }
+    .end annotation
 
     .line 148
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -73,6 +89,14 @@
 
 .method private static getDefaultInstanceFromContext(Z)Landroidx/core/text/BidiFormatter;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isRtlContext"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -90,6 +114,14 @@
 
 .method private initialize(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isRtlContext"
+        }
+    .end annotation
 
     .line 167
     iput-boolean p1, p0, Landroidx/core/text/BidiFormatter$Builder;->mIsRtlContext:Z
@@ -151,6 +183,14 @@
 
 .method public setTextDirectionHeuristic(Landroidx/core/text/TextDirectionHeuristicCompat;)Landroidx/core/text/BidiFormatter$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "heuristic"
+        }
+    .end annotation
 
     .line 193
     iput-object p1, p0, Landroidx/core/text/BidiFormatter$Builder;->mTextDirectionHeuristicCompat:Landroidx/core/text/TextDirectionHeuristicCompat;
@@ -160,6 +200,14 @@
 
 .method public stereoReset(Z)Landroidx/core/text/BidiFormatter$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stereoReset"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 

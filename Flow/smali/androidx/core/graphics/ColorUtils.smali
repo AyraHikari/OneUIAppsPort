@@ -3,6 +3,14 @@
 .source "ColorUtils.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/graphics/ColorUtils$Api26Impl;
+    }
+.end annotation
+
+
 # static fields
 .field private static final MIN_ALPHA_SEARCH_MAX_ITERATIONS:I = 0xa
 
@@ -32,7 +40,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 45
+    .line 46
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -45,7 +53,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 47
+    .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,20 +61,28 @@
 
 .method public static HSLToColor([F)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hsl"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 306
+    .line 319
     aget v1, p0, v0
 
     const/4 v2, 0x1
 
-    .line 307
+    .line 320
     aget v2, p0, v2
 
     const/4 v3, 0x2
 
-    .line 308
+    .line 321
     aget p0, p0, v3
 
     const/high16 v3, 0x40000000    # 2.0f
@@ -77,7 +93,7 @@
 
     sub-float/2addr v4, v5
 
-    .line 310
+    .line 323
     invoke-static {v4}, Ljava/lang/Math;->abs(F)F
 
     move-result v4
@@ -100,7 +116,7 @@
 
     sub-float/2addr v2, v5
 
-    .line 312
+    .line 325
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v2
@@ -111,7 +127,7 @@
 
     float-to-int v1, v1
 
-    .line 314
+    .line 327
     div-int/lit8 v1, v1, 0x3c
 
     const/high16 v2, 0x437f0000    # 255.0f
@@ -131,14 +147,14 @@
 
     mul-float/2addr v4, v2
 
-    .line 346
+    .line 359
     invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result v1
 
     mul-float v3, p0, v2
 
-    .line 347
+    .line 360
     invoke-static {v3}, Ljava/lang/Math;->round(F)I
 
     move-result v3
@@ -147,7 +163,7 @@
 
     mul-float/2addr v5, v2
 
-    .line 348
+    .line 361
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -159,14 +175,14 @@
 
     mul-float/2addr v5, v2
 
-    .line 340
+    .line 353
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
     move-result v1
 
     mul-float v3, p0, v2
 
-    .line 341
+    .line 354
     invoke-static {v3}, Ljava/lang/Math;->round(F)I
 
     move-result v3
@@ -175,7 +191,7 @@
 
     mul-float/2addr v4, v2
 
-    .line 342
+    .line 355
     invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -185,7 +201,7 @@
     :pswitch_2
     mul-float v1, p0, v2
 
-    .line 335
+    .line 348
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v1
@@ -194,7 +210,7 @@
 
     mul-float/2addr v5, v2
 
-    .line 336
+    .line 349
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
     move-result v3
@@ -203,7 +219,7 @@
 
     mul-float/2addr v4, v2
 
-    .line 337
+    .line 350
     invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -213,7 +229,7 @@
     :pswitch_3
     mul-float v1, p0, v2
 
-    .line 330
+    .line 343
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v1
@@ -222,7 +238,7 @@
 
     mul-float/2addr v4, v2
 
-    .line 331
+    .line 344
     invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result v3
@@ -231,7 +247,7 @@
 
     mul-float/2addr v5, v2
 
-    .line 332
+    .line 345
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -243,7 +259,7 @@
 
     mul-float/2addr v5, v2
 
-    .line 325
+    .line 338
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
     move-result v1
@@ -252,14 +268,14 @@
 
     mul-float/2addr v4, v2
 
-    .line 326
+    .line 339
     invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result v3
 
     mul-float/2addr p0, v2
 
-    .line 327
+    .line 340
     invoke-static {p0}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -271,7 +287,7 @@
 
     mul-float/2addr v4, v2
 
-    .line 320
+    .line 333
     invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result v1
@@ -280,14 +296,14 @@
 
     mul-float/2addr v5, v2
 
-    .line 321
+    .line 334
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
     move-result v3
 
     mul-float/2addr p0, v2
 
-    .line 322
+    .line 335
     invoke-static {p0}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -295,22 +311,22 @@
     :goto_0
     const/16 v2, 0xff
 
-    .line 352
+    .line 365
     invoke-static {v1, v0, v2}, Landroidx/core/graphics/ColorUtils;->constrain(III)I
 
     move-result v1
 
-    .line 353
+    .line 366
     invoke-static {v3, v0, v2}, Landroidx/core/graphics/ColorUtils;->constrain(III)I
 
     move-result v3
 
-    .line 354
+    .line 367
     invoke-static {p0, v0, v2}, Landroidx/core/graphics/ColorUtils;->constrain(III)I
 
     move-result p0
 
-    .line 356
+    .line 369
     invoke-static {v1, v3, p0}, Landroid/graphics/Color;->rgb(III)I
 
     move-result p0
@@ -333,8 +349,20 @@
 
 .method public static LABToColor(DDD)I
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "l",
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 570
+    .line 583
     invoke-static {}, Landroidx/core/graphics/ColorUtils;->getTempDouble3Array()[D
 
     move-result-object v7
@@ -347,12 +375,12 @@
 
     move-object v6, v7
 
-    .line 571
+    .line 584
     invoke-static/range {v0 .. v6}, Landroidx/core/graphics/ColorUtils;->LABToXYZ(DDD[D)V
 
     const/4 p0, 0x0
 
-    .line 572
+    .line 585
     aget-wide v0, v7, p0
 
     const/4 p0, 0x1
@@ -372,6 +400,20 @@
 
 .method public static LABToXYZ(DDD[D)V
     .locals 19
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x0
+        }
+        names = {
+            "l",
+            "a",
+            "b",
+            "outXyz"
+        }
+    .end annotation
 
     const-wide/high16 v0, 0x4030000000000000L    # 16.0
 
@@ -395,7 +437,7 @@
 
     const-wide/high16 v10, 0x4008000000000000L    # 3.0
 
-    .line 517
+    .line 530
     invoke-static {v6, v7, v10, v11}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v12
@@ -424,7 +466,7 @@
 
     if-lez v6, :cond_1
 
-    .line 519
+    .line 532
     invoke-static {v2, v3, v10, v11}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v2
@@ -434,7 +476,7 @@
     :cond_1
     div-double v2, p0, v17
 
-    .line 521
+    .line 534
     :goto_1
     invoke-static {v8, v9, v10, v11}, Ljava/lang/Math;->pow(DD)D
 
@@ -460,7 +502,7 @@
 
     mul-double/2addr v12, v4
 
-    .line 524
+    .line 537
     aput-wide v12, p6, v0
 
     const/4 v0, 0x1
@@ -469,7 +511,7 @@
 
     mul-double/2addr v2, v4
 
-    .line 525
+    .line 538
     aput-wide v2, p6, v0
 
     const/4 v0, 0x2
@@ -478,7 +520,7 @@
 
     mul-double/2addr v6, v1
 
-    .line 526
+    .line 539
     aput-wide v6, p6, v0
 
     return-void
@@ -486,6 +528,20 @@
 
 .method public static RGBToHSL(III[F)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "r",
+            "g",
+            "b",
+            "outHsl"
+        }
+    .end annotation
 
     int-to-float p0, p0
 
@@ -501,7 +557,7 @@
 
     div-float/2addr p2, v0
 
-    .line 245
+    .line 258
     invoke-static {p1, p2}, Ljava/lang/Math;->max(FF)F
 
     move-result v0
@@ -510,7 +566,7 @@
 
     move-result v0
 
-    .line 246
+    .line 259
     invoke-static {p1, p2}, Ljava/lang/Math;->min(FF)F
 
     move-result v1
@@ -583,7 +639,7 @@
 
     sub-float/2addr v4, v5
 
-    .line 264
+    .line 277
     invoke-static {v4}, Ljava/lang/Math;->abs(F)F
 
     move-result p0
@@ -610,7 +666,7 @@
     :cond_3
     const/4 p2, 0x0
 
-    .line 272
+    .line 285
     invoke-static {p1, v6, p0}, Landroidx/core/graphics/ColorUtils;->constrain(FFF)F
 
     move-result p0
@@ -619,7 +675,7 @@
 
     const/4 p0, 0x1
 
-    .line 273
+    .line 286
     invoke-static {v2, v6, v5}, Landroidx/core/graphics/ColorUtils;->constrain(FFF)F
 
     move-result p1
@@ -628,7 +684,7 @@
 
     const/4 p0, 0x2
 
-    .line 274
+    .line 287
     invoke-static {v3, v6, v5}, Landroidx/core/graphics/ColorUtils;->constrain(FFF)F
 
     move-result p1
@@ -640,13 +696,27 @@
 
 .method public static RGBToLAB(III[D)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "r",
+            "g",
+            "b",
+            "outLab"
+        }
+    .end annotation
 
-    .line 399
+    .line 412
     invoke-static {p0, p1, p2, p3}, Landroidx/core/graphics/ColorUtils;->RGBToXYZ(III[D)V
 
     const/4 p0, 0x0
 
-    .line 401
+    .line 414
     aget-wide v0, p3, p0
 
     const/4 p0, 0x1
@@ -666,10 +736,24 @@
 
 .method public static RGBToXYZ(III[D)V
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "r",
+            "g",
+            "b",
+            "outXyz"
+        }
+    .end annotation
 
     move-object/from16 v0, p3
 
-    .line 444
+    .line 457
     array-length v1, v0
 
     const/4 v2, 0x3
@@ -707,7 +791,7 @@
 
     div-double/2addr v1, v12
 
-    .line 449
+    .line 462
     invoke-static {v1, v2, v10, v11}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v1
@@ -734,7 +818,7 @@
 
     const-wide v12, 0x4003333333333333L    # 2.4
 
-    .line 451
+    .line 464
     invoke-static {v10, v11, v12, v13}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v10
@@ -763,7 +847,7 @@
 
     const-wide v3, 0x4003333333333333L    # 2.4
 
-    .line 453
+    .line 466
     invoke-static {v12, v13, v3, v4}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v12
@@ -791,7 +875,7 @@
 
     mul-double/2addr v4, v6
 
-    .line 455
+    .line 468
     aput-wide v4, v0, v3
 
     const/4 v3, 0x1
@@ -814,7 +898,7 @@
 
     mul-double/2addr v4, v6
 
-    .line 456
+    .line 469
     aput-wide v4, v0, v3
 
     const/4 v3, 0x2
@@ -837,12 +921,12 @@
 
     mul-double/2addr v1, v6
 
-    .line 457
+    .line 470
     aput-wide v1, v0, v3
 
     return-void
 
-    .line 445
+    .line 458
     :cond_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -855,6 +939,18 @@
 
 .method public static XYZToColor(DDD)I
     .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "y",
+            "z"
+        }
+    .end annotation
 
     const-wide v0, 0x4009ecbfb15b573fL    # 3.2406
 
@@ -926,7 +1022,7 @@
 
     if-lez v8, :cond_0
 
-    .line 548
+    .line 561
     invoke-static {v0, v1, v11, v12}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v0
@@ -945,7 +1041,7 @@
 
     if-lez v8, :cond_1
 
-    .line 549
+    .line 562
     invoke-static {v4, v5, v11, v12}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v4
@@ -964,7 +1060,7 @@
 
     if-lez v2, :cond_2
 
-    .line 550
+    .line 563
     invoke-static {v6, v7, v11, v12}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v2
@@ -983,7 +1079,7 @@
 
     mul-double/2addr v0, v6
 
-    .line 553
+    .line 566
     invoke-static {v0, v1}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v0
@@ -1000,7 +1096,7 @@
 
     mul-double/2addr v4, v6
 
-    .line 554
+    .line 567
     invoke-static {v4, v5}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v4
@@ -1013,7 +1109,7 @@
 
     mul-double/2addr v2, v6
 
-    .line 555
+    .line 568
     invoke-static {v2, v3}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v2
@@ -1024,7 +1120,7 @@
 
     move-result v1
 
-    .line 552
+    .line 565
     invoke-static {v0, v4, v1}, Landroid/graphics/Color;->rgb(III)I
 
     move-result v0
@@ -1034,8 +1130,22 @@
 
 .method public static XYZToLAB(DDD[D)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "y",
+            "z",
+            "outLab"
+        }
+    .end annotation
 
-    .line 481
+    .line 494
     array-length v0, p6
 
     const/4 v1, 0x3
@@ -1046,7 +1156,7 @@
 
     div-double/2addr p0, v0
 
-    .line 484
+    .line 497
     invoke-static {p0, p1}, Landroidx/core/graphics/ColorUtils;->pivotXyzComponent(D)D
 
     move-result-wide p0
@@ -1055,7 +1165,7 @@
 
     div-double/2addr p2, v0
 
-    .line 485
+    .line 498
     invoke-static {p2, p3}, Landroidx/core/graphics/ColorUtils;->pivotXyzComponent(D)D
 
     move-result-wide p2
@@ -1064,7 +1174,7 @@
 
     div-double/2addr p4, v0
 
-    .line 486
+    .line 499
     invoke-static {p4, p5}, Landroidx/core/graphics/ColorUtils;->pivotXyzComponent(D)D
 
     move-result-wide p4
@@ -1081,7 +1191,7 @@
 
     sub-double/2addr v3, v5
 
-    .line 487
+    .line 500
     invoke-static {v1, v2, v3, v4}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide v1
@@ -1096,7 +1206,7 @@
 
     mul-double/2addr p0, v1
 
-    .line 488
+    .line 501
     aput-wide p0, p6, v0
 
     const/4 p0, 0x2
@@ -1107,12 +1217,12 @@
 
     mul-double/2addr p2, v0
 
-    .line 489
+    .line 502
     aput-wide p2, p6, p0
 
     return-void
 
-    .line 482
+    .line 495
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1125,12 +1235,24 @@
 
 .method public static blendARGB(IIF)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "color1",
+            "color2",
+            "ratio"
+        }
+    .end annotation
 
     const/high16 v0, 0x3f800000    # 1.0f
 
     sub-float/2addr v0, p2
 
-    .line 612
+    .line 629
     invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v1
@@ -1149,7 +1271,7 @@
 
     add-float/2addr v1, v2
 
-    .line 613
+    .line 630
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v2
@@ -1168,7 +1290,7 @@
 
     add-float/2addr v2, v3
 
-    .line 614
+    .line 631
     invoke-static {p0}, Landroid/graphics/Color;->green(I)I
 
     move-result v3
@@ -1187,7 +1309,7 @@
 
     add-float/2addr v3, v4
 
-    .line 615
+    .line 632
     invoke-static {p0}, Landroid/graphics/Color;->blue(I)I
 
     move-result p0
@@ -1214,7 +1336,7 @@
 
     float-to-int p0, p0
 
-    .line 616
+    .line 633
     invoke-static {p1, p2, v0, p0}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result p0
@@ -1224,8 +1346,22 @@
 
 .method public static blendHSL([F[FF[F)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "hsl1",
+            "hsl2",
+            "ratio",
+            "outResult"
+        }
+    .end annotation
 
-    .line 633
+    .line 651
     array-length v0, p3
 
     const/4 v1, 0x3
@@ -1238,7 +1374,7 @@
 
     const/4 v1, 0x0
 
-    .line 638
+    .line 656
     aget v2, p0, v1
 
     aget v3, p1, v1
@@ -1251,7 +1387,7 @@
 
     const/4 v1, 0x1
 
-    .line 639
+    .line 657
     aget v2, p0, v1
 
     mul-float/2addr v2, v0
@@ -1266,7 +1402,7 @@
 
     const/4 v1, 0x2
 
-    .line 640
+    .line 658
     aget p0, p0, v1
 
     mul-float/2addr p0, v0
@@ -1281,7 +1417,7 @@
 
     return-void
 
-    .line 634
+    .line 652
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1294,8 +1430,22 @@
 
 .method public static blendLAB([D[DD[D)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "lab1",
+            "lab2",
+            "ratio",
+            "outResult"
+        }
+    .end annotation
 
-    .line 656
+    .line 675
     array-length v0, p4
 
     const/4 v1, 0x3
@@ -1308,7 +1458,7 @@
 
     const/4 v2, 0x0
 
-    .line 660
+    .line 679
     aget-wide v3, p0, v2
 
     mul-double/2addr v3, v0
@@ -1323,7 +1473,7 @@
 
     const/4 v2, 0x1
 
-    .line 661
+    .line 680
     aget-wide v3, p0, v2
 
     mul-double/2addr v3, v0
@@ -1338,7 +1488,7 @@
 
     const/4 v2, 0x2
 
-    .line 662
+    .line 681
     aget-wide v3, p0, v2
 
     mul-double/2addr v3, v0
@@ -1353,7 +1503,7 @@
 
     return-void
 
-    .line 657
+    .line 676
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1366,8 +1516,18 @@
 
 .method public static calculateContrast(II)D
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "foreground",
+            "background"
+        }
+    .end annotation
 
-    .line 159
+    .line 172
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
@@ -1376,19 +1536,19 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 163
+    .line 176
     invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
 
     if-ge v0, v1, :cond_0
 
-    .line 165
+    .line 178
     invoke-static {p0, p1}, Landroidx/core/graphics/ColorUtils;->compositeColors(II)I
 
     move-result p0
 
-    .line 168
+    .line 181
     :cond_0
     invoke-static {p0}, Landroidx/core/graphics/ColorUtils;->calculateLuminance(I)D
 
@@ -1398,14 +1558,14 @@
 
     add-double/2addr v0, v2
 
-    .line 169
+    .line 182
     invoke-static {p1}, Landroidx/core/graphics/ColorUtils;->calculateLuminance(I)D
 
     move-result-wide p0
 
     add-double/2addr p0, v2
 
-    .line 172
+    .line 185
     invoke-static {v0, v1, p0, p1}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide v2
@@ -1418,7 +1578,7 @@
 
     return-wide v2
 
-    .line 160
+    .line 173
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1430,14 +1590,18 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 161
+    move-result-object v0
+
+    .line 174
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1448,18 +1612,26 @@
 
 .method public static calculateLuminance(I)D
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "color"
+        }
+    .end annotation
 
-    .line 145
+    .line 158
     invoke-static {}, Landroidx/core/graphics/ColorUtils;->getTempDouble3Array()[D
 
     move-result-object v0
 
-    .line 146
+    .line 159
     invoke-static {p0, v0}, Landroidx/core/graphics/ColorUtils;->colorToXYZ(I[D)V
 
     const/4 p0, 0x1
 
-    .line 148
+    .line 161
     aget-wide v1, v0, p0
 
     const-wide/high16 v3, 0x4059000000000000L    # 100.0
@@ -1471,8 +1643,20 @@
 
 .method public static calculateMinimumAlpha(IIF)I
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "foreground",
+            "background",
+            "minContrastRatio"
+        }
+    .end annotation
 
-    .line 187
+    .line 200
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
@@ -1481,12 +1665,12 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 193
+    .line 206
     invoke-static {p0, v1}, Landroidx/core/graphics/ColorUtils;->setAlphaComponent(II)I
 
     move-result v0
 
-    .line 194
+    .line 207
     invoke-static {v0, p1}, Landroidx/core/graphics/ColorUtils;->calculateContrast(II)D
 
     move-result-wide v2
@@ -1519,15 +1703,15 @@
 
     add-int v2, v0, v1
 
-    .line 207
+    .line 220
     div-int/lit8 v2, v2, 0x2
 
-    .line 209
+    .line 222
     invoke-static {p0, v2}, Landroidx/core/graphics/ColorUtils;->setAlphaComponent(II)I
 
     move-result v3
 
-    .line 210
+    .line 223
     invoke-static {v3, p1}, Landroidx/core/graphics/ColorUtils;->calculateContrast(II)D
 
     move-result-wide v6
@@ -1551,7 +1735,7 @@
     :cond_2
     return v1
 
-    .line 188
+    .line 201
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1563,14 +1747,18 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 189
+    move-result-object p2
+
+    .line 202
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1581,10 +1769,22 @@
 
 .method static circularInterpolate(FFF)F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "f"
+        }
+    .end annotation
 
     sub-float v0, p1, p0
 
-    .line 667
+    .line 686
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -1623,8 +1823,18 @@
 
 .method public static colorToHSL(I[F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "color",
+            "outHsl"
+        }
+    .end annotation
 
-    .line 289
+    .line 302
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -1644,8 +1854,18 @@
 
 .method public static colorToLAB(I[D)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "color",
+            "outLab"
+        }
+    .end annotation
 
-    .line 378
+    .line 391
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -1665,8 +1885,18 @@
 
 .method public static colorToXYZ(I[D)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "color",
+            "outXyz"
+        }
+    .end annotation
 
-    .line 421
+    .line 434
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -1686,6 +1916,16 @@
 
 .method private static compositeAlpha(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "foregroundAlpha",
+            "backgroundAlpha"
+        }
+    .end annotation
 
     rsub-int p1, p1, 0xff
 
@@ -1693,7 +1933,7 @@
 
     mul-int/2addr p1, p0
 
-    .line 131
+    .line 144
     div-int/lit16 p1, p1, 0xff
 
     rsub-int p0, p1, 0xff
@@ -1703,68 +1943,78 @@
 
 .method public static compositeColors(II)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "foreground",
+            "background"
+        }
+    .end annotation
 
-    .line 53
+    .line 54
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
 
-    .line 54
+    .line 55
     invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v1
 
-    .line 55
+    .line 56
     invoke-static {v1, v0}, Landroidx/core/graphics/ColorUtils;->compositeAlpha(II)I
 
     move-result v2
 
-    .line 57
+    .line 58
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v3
 
-    .line 58
+    .line 59
     invoke-static {p1}, Landroid/graphics/Color;->red(I)I
 
     move-result v4
 
-    .line 57
+    .line 58
     invoke-static {v3, v1, v4, v0, v2}, Landroidx/core/graphics/ColorUtils;->compositeComponent(IIIII)I
 
     move-result v3
 
-    .line 59
+    .line 60
     invoke-static {p0}, Landroid/graphics/Color;->green(I)I
 
     move-result v4
 
-    .line 60
+    .line 61
     invoke-static {p1}, Landroid/graphics/Color;->green(I)I
 
     move-result v5
 
-    .line 59
+    .line 60
     invoke-static {v4, v1, v5, v0, v2}, Landroidx/core/graphics/ColorUtils;->compositeComponent(IIIII)I
 
     move-result v4
 
-    .line 61
+    .line 62
     invoke-static {p0}, Landroid/graphics/Color;->blue(I)I
 
     move-result p0
 
-    .line 62
+    .line 63
     invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
 
     move-result p1
 
-    .line 61
+    .line 62
     invoke-static {p0, v1, p1, v0, v2}, Landroidx/core/graphics/ColorUtils;->compositeComponent(IIIII)I
 
     move-result p0
 
-    .line 64
+    .line 65
     invoke-static {v2, v3, v4, p0}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result p0
@@ -1773,188 +2023,44 @@
 .end method
 
 .method public static compositeColors(Landroid/graphics/Color;Landroid/graphics/Color;)Landroid/graphics/Color;
-    .locals 7
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "foreground",
+            "background"
+        }
+    .end annotation
 
-    .line 92
-    invoke-virtual {p0}, Landroid/graphics/Color;->getModel()Landroid/graphics/ColorSpace$Model;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Landroid/graphics/Color;->getModel()Landroid/graphics/ColorSpace$Model;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 98
-    invoke-virtual {p1}, Landroid/graphics/Color;->getColorSpace()Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Landroid/graphics/Color;->getColorSpace()Landroid/graphics/ColorSpace;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 100
-    :cond_0
-    invoke-virtual {p1}, Landroid/graphics/Color;->getColorSpace()Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Landroid/graphics/Color;->convert(Landroid/graphics/ColorSpace;)Landroid/graphics/Color;
-
-    move-result-object p0
-
-    .line 102
-    :goto_0
-    invoke-virtual {p0}, Landroid/graphics/Color;->getComponents()[F
-
-    move-result-object v0
-
-    .line 103
-    invoke-virtual {p1}, Landroid/graphics/Color;->getComponents()[F
-
-    move-result-object v1
-
-    .line 105
-    invoke-virtual {p0}, Landroid/graphics/Color;->alpha()F
-
-    move-result p0
-
-    .line 107
-    invoke-virtual {p1}, Landroid/graphics/Color;->alpha()F
-
-    move-result v2
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    sub-float/2addr v3, p0
-
-    mul-float/2addr v2, v3
-
-    .line 111
-    invoke-virtual {p1}, Landroid/graphics/Color;->getComponentCount()I
-
-    move-result v3
-
-    add-int/lit8 v3, v3, -0x1
-
-    add-float v4, p0, v2
-
-    .line 114
-    aput v4, v1, v3
-
-    .line 117
-    aget v4, v1, v3
-
-    const/4 v5, 0x0
-
-    cmpl-float v4, v4, v5
-
-    if-lez v4, :cond_1
-
-    .line 118
-    aget v4, v1, v3
-
-    div-float/2addr p0, v4
-
-    .line 119
-    aget v4, v1, v3
-
-    div-float/2addr v2, v4
-
-    :cond_1
-    const/4 v4, 0x0
-
-    :goto_1
-    if-ge v4, v3, :cond_2
-
-    .line 124
-    aget v5, v0, v4
-
-    mul-float/2addr v5, p0
-
-    aget v6, v1, v4
-
-    mul-float/2addr v6, v2
-
-    add-float/2addr v5, v6
-
-    aput v5, v1, v4
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_1
-
-    .line 127
-    :cond_2
-    invoke-virtual {p1}, Landroid/graphics/Color;->getColorSpace()Landroid/graphics/ColorSpace;
-
-    move-result-object p0
-
-    invoke-static {v1, p0}, Landroid/graphics/Color;->valueOf([FLandroid/graphics/ColorSpace;)Landroid/graphics/Color;
+    .line 93
+    invoke-static {p0, p1}, Landroidx/core/graphics/ColorUtils$Api26Impl;->compositeColors(Landroid/graphics/Color;Landroid/graphics/Color;)Landroid/graphics/Color;
 
     move-result-object p0
 
     return-object p0
-
-    .line 93
-    :cond_3
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Color models must match ("
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 94
-    invoke-virtual {p0}, Landroid/graphics/Color;->getModel()Landroid/graphics/ColorSpace$Model;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string p0, " vs. "
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 95
-    invoke-virtual {p1}, Landroid/graphics/Color;->getModel()Landroid/graphics/ColorSpace$Model;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string p0, ")"
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method private static compositeComponent(IIIII)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fgC",
+            "fgA",
+            "bgC",
+            "bgA",
+            "a"
+        }
+    .end annotation
 
     if-nez p4, :cond_0
 
@@ -1977,7 +2083,7 @@
 
     mul-int/lit16 p4, p4, 0xff
 
-    .line 136
+    .line 149
     div-int/2addr p0, p4
 
     return p0
@@ -1985,52 +2091,80 @@
 
 .method private static constrain(FFF)F
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "amount",
+            "low",
+            "high"
+        }
+    .end annotation
 
     cmpg-float v0, p0, p1
 
     if-gez v0, :cond_0
 
-    move p0, p1
-
     goto :goto_0
 
+    .line 600
     :cond_0
-    cmpl-float p1, p0, p2
+    invoke-static {p0, p2}, Ljava/lang/Math;->min(FF)F
 
-    if-lez p1, :cond_1
+    move-result p1
 
-    move p0, p2
-
-    :cond_1
     :goto_0
-    return p0
+    return p1
 .end method
 
 .method private static constrain(III)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "amount",
+            "low",
+            "high"
+        }
+    .end annotation
 
     if-ge p0, p1, :cond_0
 
-    move p0, p1
-
     goto :goto_0
 
+    .line 605
     :cond_0
-    if-le p0, p2, :cond_1
+    invoke-static {p0, p2}, Ljava/lang/Math;->min(II)I
 
-    move p0, p2
+    move-result p1
 
-    :cond_1
     :goto_0
-    return p0
+    return p1
 .end method
 
 .method public static distanceEuclidean([D[D)D
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "labX",
+            "labY"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 579
+    .line 593
     aget-wide v1, p0, v0
 
     aget-wide v3, p1, v0
@@ -2051,7 +2185,7 @@
 
     sub-double/2addr v5, v7
 
-    .line 580
+    .line 594
     invoke-static {v5, v6, v3, v4}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v5
@@ -2066,14 +2200,14 @@
 
     sub-double/2addr v5, p0
 
-    .line 581
+    .line 595
     invoke-static {v5, v6, v3, v4}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p0
 
     add-double/2addr v0, p0
 
-    .line 579
+    .line 593
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p0
@@ -2084,32 +2218,38 @@
 .method private static getTempDouble3Array()[D
     .locals 2
 
-    .line 678
+    .line 697
     sget-object v0, Landroidx/core/graphics/ColorUtils;->TEMP_ARRAY:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, [D
+    check-cast v1, [D
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
-    const/4 v0, 0x3
+    const/4 v1, 0x3
 
-    new-array v0, v0, [D
+    new-array v1, v1, [D
 
-    .line 681
-    sget-object v1, Landroidx/core/graphics/ColorUtils;->TEMP_ARRAY:Ljava/lang/ThreadLocal;
-
-    invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
+    .line 700
+    invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
     :cond_0
-    return-object v0
+    return-object v1
 .end method
 
 .method private static pivotXyzComponent(D)D
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "component"
+        }
+    .end annotation
 
     const-wide v0, 0x3f82231832fcac8eL    # 0.008856
 
@@ -2119,7 +2259,7 @@
 
     const-wide v0, 0x3fd5555555555555L    # 0.3333333333333333
 
-    .line 594
+    .line 610
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p0
@@ -2145,6 +2285,16 @@
 
 .method public static setAlphaComponent(II)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "color",
+            "alpha"
+        }
+    .end annotation
 
     if-ltz p1, :cond_0
 
@@ -2162,7 +2312,7 @@
 
     return p0
 
-    .line 366
+    .line 379
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

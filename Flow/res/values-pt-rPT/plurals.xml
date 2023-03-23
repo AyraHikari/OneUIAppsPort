@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Registe e gira até %d computadores ou tablets no Samsung Flow.
-
-Só pode ser ligado um computador ou tablet ao seu telefone de cada vez. Terá de escolher um quando ambos os computadores ou tablets registados se tentarem ligar ao seu telefone."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Registe e gira até %d computador ou tablet no Samsung Flow.
-
-Só pode ser ligado um computador ou tablet ao seu telefone de cada vez. Terá de escolher um quando ambos os computadores ou tablets registados se tentarem ligar ao seu telefone."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novas notificações</item>
+        <item quantity="one">%d nova notificação</item>
     </plurals>
 </resources>

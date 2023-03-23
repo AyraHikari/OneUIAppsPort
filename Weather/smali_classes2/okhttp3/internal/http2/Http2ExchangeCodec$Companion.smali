@@ -63,7 +63,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 125
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,7 +71,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 125
     invoke-direct {p0}, Lokhttp3/internal/http2/Http2ExchangeCodec$Companion;-><init>()V
 
     return-void
@@ -95,14 +93,14 @@
 
     const-string v0, "request"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 160
+    .line 1
     invoke-virtual {p1}, Lokhttp3/Request;->headers()Lokhttp3/Headers;
 
     move-result-object v0
 
-    .line 161
+    .line 2
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Lokhttp3/Headers;->size()I
@@ -113,7 +111,7 @@
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 162
+    .line 3
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_METHOD:Lokio/ByteString;
@@ -126,7 +124,7 @@
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 163
+    .line 4
     new-instance v2, Lokhttp3/internal/http2/Header;
 
     sget-object v3, Lokhttp3/internal/http2/Header;->TARGET_PATH:Lokio/ByteString;
@@ -147,14 +145,14 @@
 
     const-string v2, "Host"
 
-    .line 164
+    .line 5
     invoke-virtual {p1, v2}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    .line 166
+    .line 6
     new-instance v3, Lokhttp3/internal/http2/Header;
 
     sget-object v4, Lokhttp3/internal/http2/Header;->TARGET_AUTHORITY:Lokio/ByteString;
@@ -163,7 +161,7 @@
 
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 168
+    .line 7
     :cond_0
     new-instance v2, Lokhttp3/internal/http2/Header;
 
@@ -183,7 +181,7 @@
 
     const/4 p1, 0x0
 
-    .line 170
+    .line 8
     invoke-virtual {v0}, Lokhttp3/Headers;->size()I
 
     move-result v2
@@ -191,7 +189,7 @@
     :goto_0
     if-ge p1, v2, :cond_3
 
-    .line 172
+    .line 9
     invoke-virtual {v0, p1}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v3
@@ -200,7 +198,7 @@
 
     const-string v5, "Locale.US"
 
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "null cannot be cast to non-null type java.lang.String"
 
@@ -212,9 +210,9 @@
 
     const-string v4, "(this as java.lang.String).toLowerCase(locale)"
 
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 173
+    .line 10
     invoke-static {}, Lokhttp3/internal/http2/Http2ExchangeCodec;->access$getHTTP_2_SKIPPED_REQUEST_HEADERS$cp()Ljava/util/List;
 
     move-result-object v4
@@ -227,26 +225,26 @@
 
     const-string v4, "te"
 
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 174
+    .line 11
     invoke-virtual {v0, p1}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v4
 
     const-string v5, "trailers"
 
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 175
+    .line 12
     :cond_1
     new-instance v4, Lokhttp3/internal/http2/Header;
 
@@ -263,10 +261,7 @@
 
     goto :goto_0
 
-    .line 178
     :cond_3
-    check-cast v1, Ljava/util/List;
-
     return-object v1
 .end method
 
@@ -275,53 +270,50 @@
 
     const-string v0, "headerBlock"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "protocol"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    .line 1
+    new-instance v0, Lokhttp3/Headers$Builder;
 
-    .line 183
-    check-cast v0, Lokhttp3/internal/http/StatusLine;
+    invoke-direct {v0}, Lokhttp3/Headers$Builder;-><init>()V
 
-    .line 184
-    new-instance v1, Lokhttp3/Headers$Builder;
-
-    invoke-direct {v1}, Lokhttp3/Headers$Builder;-><init>()V
-
-    .line 185
+    .line 2
     invoke-virtual {p1}, Lokhttp3/Headers;->size()I
 
-    move-result v2
+    move-result v1
+
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
     :goto_0
-    if-ge v3, v2, :cond_2
+    if-ge v3, v1, :cond_2
 
-    .line 186
+    .line 3
     invoke-virtual {p1, v3}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 187
+    .line 4
     invoke-virtual {p1, v3}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v5
 
     const-string v6, ":status"
 
-    .line 188
-    invoke-static {v4, v6}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 5
+    invoke-static {v4, v6}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    .line 189
-    sget-object v0, Lokhttp3/internal/http/StatusLine;->Companion:Lokhttp3/internal/http/StatusLine$Companion;
+    .line 6
+    sget-object v2, Lokhttp3/internal/http/StatusLine;->Companion:Lokhttp3/internal/http/StatusLine$Companion;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -331,23 +323,19 @@
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
-
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v0, v4}, Lokhttp3/internal/http/StatusLine$Companion;->parse(Ljava/lang/String;)Lokhttp3/internal/http/StatusLine;
+    invoke-virtual {v2, v4}, Lokhttp3/internal/http/StatusLine$Companion;->parse(Ljava/lang/String;)Lokhttp3/internal/http/StatusLine;
 
-    move-result-object v0
+    move-result-object v2
 
     goto :goto_1
 
-    .line 190
+    .line 7
     :cond_0
     invoke-static {}, Lokhttp3/internal/http2/Http2ExchangeCodec;->access$getHTTP_2_SKIPPED_RESPONSE_HEADERS$cp()Ljava/util/List;
 
@@ -359,8 +347,8 @@
 
     if-nez v6, :cond_1
 
-    .line 191
-    invoke-virtual {v1, v4, v5}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    .line 8
+    invoke-virtual {v0, v4, v5}, Lokhttp3/Headers$Builder;->addLenient$okhttp(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
     :cond_1
     :goto_1
@@ -369,34 +357,34 @@
     goto :goto_0
 
     :cond_2
-    if-eqz v0, :cond_3
+    if-eqz v2, :cond_3
 
-    .line 196
+    .line 9
     new-instance p1, Lokhttp3/Response$Builder;
 
     invoke-direct {p1}, Lokhttp3/Response$Builder;-><init>()V
 
-    .line 197
+    .line 10
     invoke-virtual {p1, p2}, Lokhttp3/Response$Builder;->protocol(Lokhttp3/Protocol;)Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 198
-    iget p2, v0, Lokhttp3/internal/http/StatusLine;->code:I
+    .line 11
+    iget p2, v2, Lokhttp3/internal/http/StatusLine;->code:I
 
     invoke-virtual {p1, p2}, Lokhttp3/Response$Builder;->code(I)Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 199
-    iget-object p2, v0, Lokhttp3/internal/http/StatusLine;->message:Ljava/lang/String;
+    .line 12
+    iget-object p2, v2, Lokhttp3/internal/http/StatusLine;->message:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Lokhttp3/Response$Builder;->message(Ljava/lang/String;)Lokhttp3/Response$Builder;
 
     move-result-object p1
 
-    .line 200
-    invoke-virtual {v1}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
+    .line 13
+    invoke-virtual {v0}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
 
     move-result-object p2
 
@@ -406,15 +394,13 @@
 
     return-object p1
 
-    .line 194
+    .line 14
     :cond_3
     new-instance p1, Ljava/net/ProtocolException;
 
     const-string p2, "Expected \':status\' header not present"
 
     invoke-direct {p1, p2}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
-
-    check-cast p1, Ljava/lang/Throwable;
 
     throw p1
 .end method

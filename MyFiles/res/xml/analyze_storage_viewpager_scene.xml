@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:autoTransition="none" motion:constraintSetEnd="@id/end" motion:constraintSetStart="@id/start" motion:layoutDuringTransition="honorRequest">
+        <KeyFrameSet>
+            <KeyPosition motion:framePosition="50" motion:keyPositionType="parentRelative" motion:motionTarget="@id/as_usage_summary_container" motion:percentY="0.0" />
+            <KeyPosition motion:framePosition="0" motion:keyPositionType="parentRelative" motion:motionTarget="@id/as_usage_summary_container" motion:percentY="0.0" />
+            <KeyAttribute android:alpha="0.0" motion:framePosition="50" motion:motionTarget="@id/as_usage_detail_item" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@id/start" />
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:id="@id/as_usage_summary_container" android:paddingTop="@dimen/as_home_storage_name_padding_top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/as_home_storage_name_padding_horizontal_tablet" motion:layout_constraintEnd_toStartOf="@id/as_usage_progress_container" motion:layout_constraintHorizontal_weight="0.45" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/as_usage_progress_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/as_home_usage_rate_container_padding_bottom" android:paddingStart="@dimen/as_home_storage_name_padding_horizontal_tablet" android:layout_marginEnd="@dimen/as_home_storage_name_padding_horizontal" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintHorizontal_weight="0.55" motion:layout_constraintStart_toEndOf="@id/as_usage_summary_container" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/as_usage_detail_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/as_name_detail_padding_top_land" android:stretchMode="columnWidth" android:layout_marginStart="@dimen/as_home_usage_detail_padding_start_land" motion:layout_constraintBottom_toTopOf="@id/view" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toBottomOf="@id/as_usage_summary_container" />
+    </ConstraintSet>
+</MotionScene>

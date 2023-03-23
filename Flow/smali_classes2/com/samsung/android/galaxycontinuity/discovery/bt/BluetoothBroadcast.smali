@@ -29,6 +29,14 @@
 
 .method private setDiscoverable(Z)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enable"
+        }
+    .end annotation
 
     const/16 v0, 0x17
 
@@ -55,7 +63,7 @@
     :try_start_0
     const-class v1, Landroid/bluetooth/BluetoothAdapter;
 
-    const-string v2, "setScanMode"
+    const-string/jumbo v2, "setScanMode"
 
     const/4 v3, 0x1
 
@@ -94,7 +102,7 @@
     :catch_0
     move-exception p1
 
-    const-string v1, "setScanMode() failed"
+    const-string/jumbo v1, "setScanMode() failed"
 
     .line 44
     invoke-static {v1, p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -164,7 +172,7 @@
 .method public stopBroadcast()V
     .locals 1
 
-    const-string v0, "stopBroadcast"
+    const-string/jumbo v0, "stopBroadcast"
 
     .line 24
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V

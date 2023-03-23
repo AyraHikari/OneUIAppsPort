@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1057
+    .line 1463
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,18 +28,42 @@
 # virtual methods
 .method public onCreate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "db"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onDestructiveMigration(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "db"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onOpen(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "db"
+        }
+    .end annotation
 
     return-void
 .end method

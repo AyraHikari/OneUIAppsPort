@@ -22,10 +22,10 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 82
+    .line 109
     invoke-direct {p0}, Lorg/jsoup/select/Evaluator;-><init>()V
 
-    .line 83
+    .line 110
     iput-object p1, p0, Lorg/jsoup/select/Evaluator$Class;->className:Ljava/lang/String;
 
     return-void
@@ -36,7 +36,7 @@
 .method public matches(Lorg/jsoup/nodes/Element;Lorg/jsoup/nodes/Element;)Z
     .locals 0
 
-    .line 88
+    .line 115
     iget-object p1, p0, Lorg/jsoup/select/Evaluator$Class;->className:Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Lorg/jsoup/nodes/Element;->hasClass(Ljava/lang/String;)Z
@@ -53,7 +53,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 93
+    .line 120
     iget-object v1, p0, Lorg/jsoup/select/Evaluator$Class;->className:Ljava/lang/String;
 
     const/4 v2, 0x0

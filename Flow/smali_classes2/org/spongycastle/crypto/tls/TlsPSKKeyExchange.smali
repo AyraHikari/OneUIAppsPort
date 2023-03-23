@@ -82,7 +82,7 @@
     .line 65
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "unsupported key exchange algorithm"
+    const-string/jumbo p2, "unsupported key exchange algorithm"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -109,6 +109,8 @@
     iput-object p8, p0, Lorg/spongycastle/crypto/tls/TlsPSKKeyExchange;->serverECPointFormats:[S
 
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0xd

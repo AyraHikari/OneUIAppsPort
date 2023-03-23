@@ -96,24 +96,24 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 81
+    .line 82
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 68
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mCategoryList:Ljava/util/ArrayList;
 
     .line 69
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mCategoryList:Ljava/util/ArrayList;
 
     .line 70
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
+
+    .line 71
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -122,10 +122,10 @@
 
     const/4 v0, 0x0
 
-    .line 72
+    .line 73
     iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->updateDialogDisplayed:Z
 
-    .line 368
+    .line 360
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -134,10 +134,10 @@
 
     const/4 v0, 0x0
 
-    .line 369
+    .line 361
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatUpdateListener:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
-    .line 446
+    .line 438
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -154,7 +154,7 @@
 .method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;)V
     .locals 0
 
-    .line 42
+    .line 43
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->removeAllMessages()V
 
     return-void
@@ -162,18 +162,28 @@
 
 .method private createFlowMessageV2([BLjava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rawMessage",
+            "address"
+        }
+    .end annotation
 
     const-string v0, "deviceType"
 
-    const-string v1, "BODY"
+    const-string v1, "RESULT"
 
-    const-string v2, "RESULT"
+    const-string v2, "CMD"
 
-    const-string v3, "CMD"
+    const-string v3, "VERSION"
 
-    const-string v4, "VERSION"
+    const-string v4, "BODY"
 
-    .line 95
+    .line 96
     new-instance v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     invoke-direct {v5}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>()V
@@ -182,7 +192,7 @@
 
     const/4 v7, 0x4
 
-    .line 101
+    .line 102
     :try_start_0
     invoke-static {p1, v6, v7}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getbytes([BII)[B
 
@@ -194,19 +204,19 @@
 
     const/16 v7, 0xa
 
-    .line 103
+    .line 104
     invoke-static {p1, v7, v6}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getbytes([BII)[B
 
     move-result-object p1
 
-    .line 105
+    .line 106
     invoke-static {p2}, Lcom/samsung/android/authfw/pass/sdk/util/StringUtils;->isEmpty(Ljava/lang/String;)Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    .line 106
+    .line 107
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object p2
@@ -217,7 +227,7 @@
 
     goto :goto_0
 
-    .line 108
+    .line 109
     :cond_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
@@ -227,7 +237,7 @@
 
     move-result-object p1
 
-    .line 110
+    .line 111
     :goto_0
     new-instance p2, Ljava/lang/String;
 
@@ -241,70 +251,76 @@
     :try_end_0
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 117
+    .line 118
     :try_start_1
     new-instance p1, Lorg/json/JSONObject;
 
     invoke-direct {p1, p2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 119
-    invoke-virtual {p1, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+    .line 120
+    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 120
-    invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
+    .line 121
+    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result p2
 
     iput p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->VERSION:I
 
-    .line 122
+    .line 123
     :cond_1
-    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+    invoke-virtual {p1, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_2
 
-    .line 123
-    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    .line 124
+    invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
     iput-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->CMD:Ljava/lang/String;
 
-    .line 125
+    .line 126
     :cond_2
-    invoke-virtual {p1, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_3
 
-    .line 126
-    invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    .line 127
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
     iput-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->RESULT:Ljava/lang/String;
 
-    .line 128
+    .line 129
     :cond_3
-    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+    invoke-virtual {p1, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_4
 
-    .line 129
-    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-virtual {p1, v4}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p2
 
+    if-eqz p2, :cond_4
+
     .line 130
+    invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object p2
+
+    .line 131
     invoke-virtual {p2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -319,7 +335,7 @@
 
     iput-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
-    .line 133
+    .line 134
     :cond_4
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -327,7 +343,7 @@
 
     if-eqz p2, :cond_5
 
-    .line 134
+    .line 135
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result p1
@@ -336,7 +352,7 @@
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 142
+    .line 143
     :cond_5
     :try_start_2
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
@@ -349,10 +365,10 @@
 
     if-eqz p1, :cond_8
 
-    .line 143
+    .line 144
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->createImageCacheDir()V
 
-    .line 145
+    .line 146
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -369,7 +385,7 @@
 
     move-result-object p1
 
-    .line 148
+    .line 149
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -378,7 +394,7 @@
 
     iput-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->icon:Ljava/lang/String;
 
-    .line 149
+    .line 150
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -387,7 +403,7 @@
 
     iput p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->iconHashCode:I
 
-    .line 151
+    .line 152
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -404,7 +420,7 @@
 
     move-result-object p1
 
-    .line 154
+    .line 155
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -413,7 +429,7 @@
 
     iput-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->attachImage:Ljava/lang/String;
 
-    .line 155
+    .line 156
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -422,7 +438,7 @@
 
     iput p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->attachImageHashCode:I
 
-    .line 157
+    .line 158
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -431,7 +447,7 @@
 
     if-eqz p1, :cond_7
 
-    .line 158
+    .line 159
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -456,10 +472,10 @@
 
     check-cast p2, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;
 
-    .line 159
+    .line 160
     iget-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsType:Ljava/lang/String;
 
-    const-string v1, "text/plain"
+    const-string/jumbo v1, "text/plain"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -467,24 +483,24 @@
 
     if-nez v0, :cond_6
 
-    .line 160
+    .line 161
     invoke-direct {p0, p2}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->saveData(Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;)Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$SFImage;
 
     move-result-object v0
 
-    .line 161
+    .line 162
     iget-object v1, v0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$SFImage;->data:Ljava/lang/String;
 
     iput-object v1, p2, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsString:Ljava/lang/String;
 
-    .line 162
+    .line 163
     iget v0, v0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$SFImage;->dataHashCode:I
 
     iput v0, p2, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
 
     goto :goto_1
 
-    .line 167
+    .line 168
     :cond_7
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
@@ -502,7 +518,7 @@
 
     move-result-object p1
 
-    .line 170
+    .line 171
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -511,7 +527,7 @@
 
     iput-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->largeIcon:Ljava/lang/String;
 
-    .line 171
+    .line 172
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -520,7 +536,7 @@
 
     iput p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->largeIconHashCode:I
 
-    .line 173
+    .line 174
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -537,7 +553,7 @@
 
     move-result-object p1
 
-    .line 176
+    .line 177
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -546,7 +562,7 @@
 
     iput-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->smallIcon:Ljava/lang/String;
 
-    .line 177
+    .line 178
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -555,7 +571,7 @@
 
     iput p1, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->smallIconHashCode:I
 
-    .line 179
+    .line 180
     iget-object p1, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -572,7 +588,7 @@
 
     move-result-object p1
 
-    .line 182
+    .line 183
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -581,7 +597,7 @@
 
     iput-object v0, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->wearableExtenderBackground:Ljava/lang/String;
 
-    .line 183
+    .line 184
     iget-object p2, v5, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -597,7 +613,7 @@
     :catch_0
     move-exception p1
 
-    .line 187
+    .line 188
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_8
@@ -607,7 +623,7 @@
     :catch_1
     move-exception p1
 
-    .line 137
+    .line 138
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return-object v5
@@ -615,38 +631,10 @@
     :catch_2
     move-exception p1
 
-    .line 112
+    .line 113
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     return-object v5
-.end method
-
-.method private getExtensionFromFileName(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
-
-    const-string v0, "."
-
-    .line 223
-    invoke-virtual {p1, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_0
-
-    .line 227
-    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    goto :goto_0
-
-    :cond_0
-    const-string p1, ""
-
-    :goto_0
-    return-object p1
 .end method
 
 .method public static declared-synchronized getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
@@ -656,20 +644,20 @@
 
     monitor-enter v0
 
-    .line 76
+    .line 77
     :try_start_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
     if-nez v1, :cond_0
 
-    .line 77
+    .line 78
     new-instance v1, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
     invoke-direct {v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;-><init>()V
 
     sput-object v1, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
 
-    .line 78
+    .line 79
     :cond_0
     sget-object v1, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->sInstance:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;
     :try_end_0
@@ -689,6 +677,17 @@
 
 .method private getProtocolVersion([BLjava/lang/String;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rawMessage",
+            "address"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/ProtocolException;
@@ -701,7 +700,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 277
+    .line 269
     :try_start_0
     array-length v2, p1
 
@@ -709,7 +708,7 @@
 
     goto :goto_0
 
-    .line 278
+    .line 270
     :cond_0
     new-instance p1, Ljava/security/InvalidParameterException;
 
@@ -725,7 +724,7 @@
 
     const/4 v3, 0x4
 
-    .line 280
+    .line 272
     invoke-static {p1, v2, v3}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getbytes([BII)[B
 
     move-result-object v2
@@ -734,19 +733,19 @@
 
     move-result v2
 
-    .line 282
+    .line 274
     invoke-static {p1, v0, v2}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getbytes([BII)[B
 
     move-result-object p1
 
-    .line 284
+    .line 276
     invoke-static {p2}, Lcom/samsung/android/authfw/pass/sdk/util/StringUtils;->isEmpty(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 285
+    .line 277
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
     move-result-object p2
@@ -757,7 +756,7 @@
 
     goto :goto_1
 
-    .line 287
+    .line 279
     :cond_2
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;->getInstance()Lcom/samsung/android/galaxycontinuity/auth/util/SessionKeyManager;
 
@@ -767,7 +766,7 @@
 
     move-result-object p1
 
-    .line 290
+    .line 282
     :goto_1
     new-instance p2, Ljava/lang/String;
 
@@ -779,7 +778,7 @@
 
     invoke-direct {p2, p1, v0, v2, v3}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
-    .line 292
+    .line 284
     new-instance p1, Lorg/json/JSONObject;
 
     invoke-direct {p1, p2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
@@ -789,7 +788,7 @@
     :try_start_1
     const-string p2, "VERSION"
 
-    .line 295
+    .line 287
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v1
@@ -803,7 +802,7 @@
     :try_start_2
     const-string p1, "VERSION is not support"
 
-    .line 297
+    .line 289
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->w(Ljava/lang/String;)V
 
     :goto_2
@@ -817,7 +816,7 @@
 
     goto :goto_3
 
-    .line 303
+    .line 295
     :cond_3
     new-instance p1, Ljava/net/ProtocolException;
 
@@ -827,7 +826,7 @@
 
     throw p1
 
-    .line 301
+    .line 293
     :cond_4
     new-instance p1, Ljava/net/ProtocolException;
 
@@ -842,7 +841,7 @@
     :catch_1
     move-exception p1
 
-    .line 306
+    .line 298
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_3
@@ -854,7 +853,7 @@
 
     monitor-enter p0
 
-    .line 634
+    .line 626
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
@@ -862,28 +861,28 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->discardAll()V
 
-    .line 636
+    .line 628
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mCategoryList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 638
+    .line 630
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 639
+    .line 631
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onClearedNotification()V
 
-    .line 641
+    .line 633
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 642
+    .line 634
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onClearedChat()V
 
-    .line 643
+    .line 635
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object v0
@@ -898,7 +897,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 644
+    .line 636
     monitor-exit p0
 
     return-void
@@ -913,13 +912,21 @@
 
 .method private saveData(Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;)Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$SFImage;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataItem"
+        }
+    .end annotation
 
-    .line 234
+    .line 226
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->getImageCacheDirPath()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 235
+    .line 227
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsString:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -928,12 +935,12 @@
 
     if-nez v1, :cond_2
 
-    .line 236
+    .line 228
     iget v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
 
     if-nez v1, :cond_0
 
-    .line 237
+    .line 229
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v1
@@ -946,7 +953,7 @@
 
     iput v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
 
-    .line 240
+    .line 232
     :cond_0
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsString:Ljava/lang/String;
 
@@ -956,32 +963,38 @@
 
     move-result-object v1
 
-    .line 242
+    .line 234
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
+    move-result-object v0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v2, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
 
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsFileName:Ljava/lang/String;
-
-    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getExtensionFromFileName(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsFileName:Ljava/lang/String;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getExtensionFromFileName(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsString:Ljava/lang/String;
 
-    .line 244
+    .line 236
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -990,9 +1003,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsString:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1002,7 +1019,7 @@
 
     const/4 v0, 0x0
 
-    .line 247
+    .line 239
     :try_start_0
     new-instance v2, Ljava/io/File;
 
@@ -1010,7 +1027,7 @@
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 248
+    .line 240
     new-instance v3, Ljava/io/BufferedOutputStream;
 
     new-instance v4, Ljava/io/FileOutputStream;
@@ -1022,20 +1039,20 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 249
+    .line 241
     :try_start_1
     invoke-virtual {v3, v1}, Ljava/io/BufferedOutputStream;->write([B)V
 
-    .line 250
+    .line 242
     invoke-virtual {v3}, Ljava/io/BufferedOutputStream;->flush()V
 
-    .line 251
+    .line 243
     invoke-virtual {v3}, Ljava/io/BufferedOutputStream;->close()V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 257
+    .line 249
     :try_start_2
     invoke-virtual {v3}, Ljava/io/BufferedOutputStream;->close()V
     :try_end_2
@@ -1060,7 +1077,7 @@
 
     move-object v0, v1
 
-    .line 253
+    .line 245
     :goto_0
     :try_start_3
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
@@ -1069,7 +1086,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 257
+    .line 249
     :try_start_4
     invoke-virtual {v3}, Ljava/io/BufferedOutputStream;->close()V
     :try_end_4
@@ -1080,7 +1097,7 @@
     :catch_2
     move-exception v0
 
-    .line 259
+    .line 251
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_3
@@ -1093,7 +1110,7 @@
     :goto_1
     if-eqz v0, :cond_1
 
-    .line 257
+    .line 249
     :try_start_5
     invoke-virtual {v0}, Ljava/io/BufferedOutputStream;->close()V
     :try_end_5
@@ -1104,46 +1121,52 @@
     :catch_3
     move-exception v0
 
-    .line 259
+    .line 251
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 261
+    .line 253
     :cond_1
     :goto_2
     throw p1
 
-    .line 264
+    .line 256
     :cond_2
     iget v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
 
     if-eqz v1, :cond_3
 
-    .line 265
+    .line 257
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsHashCode:I
 
-    iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsFileName:Ljava/lang/String;
-
-    invoke-direct {p0, v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getExtensionFromFileName(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsFileName:Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FileUtil;->getExtensionFromFileName(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsString:Ljava/lang/String;
 
-    .line 267
+    .line 259
     :cond_3
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1153,9 +1176,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;->mContentsString:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1163,7 +1190,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 269
+    .line 261
     :cond_4
     :goto_3
     new-instance v0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$SFImage;
@@ -1179,20 +1206,30 @@
 
 .method private saveImage(Ljava/lang/String;I)Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$SFImage;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "imageData",
+            "imageHashCode"
+        }
+    .end annotation
 
-    .line 204
+    .line 205
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->getImageCacheDirPath()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 205
+    .line 206
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 206
+    .line 207
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->base64ToBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -1201,7 +1238,7 @@
 
     if-nez p2, :cond_0
 
-    .line 209
+    .line 210
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object p2
@@ -1210,7 +1247,7 @@
 
     move-result p2
 
-    .line 211
+    .line 212
     :cond_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -1218,16 +1255,20 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 212
+    .line 213
     invoke-static {v1, p1}, Lcom/samsung/android/galaxycontinuity/util/ImageUtil;->saveBitmapToPath(Landroid/graphics/Bitmap;Ljava/lang/String;)Z
 
-    .line 213
+    .line 214
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
 
     goto :goto_0
@@ -1235,20 +1276,24 @@
     :cond_1
     if-eqz p2, :cond_2
 
-    .line 217
+    .line 218
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 219
+    .line 220
     :cond_2
     :goto_0
     new-instance v0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$SFImage;
@@ -1260,20 +1305,28 @@
 
 .method private updateCategory(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notificationData"
+        }
+    .end annotation
 
-    const-string v0, "update category"
+    const-string/jumbo v0, "update category"
 
-    .line 497
+    .line 489
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 498
+    .line 490
     iget-boolean v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
     if-eqz v0, :cond_3
 
     const/4 v0, 0x0
 
-    .line 501
+    .line 493
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1294,7 +1347,7 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 502
+    .line 494
     iget-object v2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->applicationName:Ljava/lang/String;
 
     iget-object v3, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->applicationName:Ljava/lang/String;
@@ -1316,7 +1369,7 @@
 
     return-void
 
-    .line 509
+    .line 501
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mCategoryList:Ljava/util/ArrayList;
 
@@ -1326,7 +1379,7 @@
 
     goto :goto_1
 
-    .line 511
+    .line 503
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mCategoryList:Ljava/util/ArrayList;
 
@@ -1338,7 +1391,7 @@
 
     if-nez v0, :cond_4
 
-    .line 512
+    .line 504
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mCategoryList:Ljava/util/ArrayList;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->applicationName:Ljava/lang/String;
@@ -1352,14 +1405,24 @@
 
 .method private updateChat(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "notificationData",
+            "byUser"
+        }
+    .end annotation
 
     :try_start_0
-    const-string v0, "update chat"
+    const-string/jumbo v0, "update chat"
 
-    .line 520
+    .line 512
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 521
+    .line 513
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->attachImage:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -1368,7 +1431,7 @@
 
     if-nez v0, :cond_1
 
-    .line 522
+    .line 514
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;
 
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->attachImage:Ljava/lang/String;
@@ -1379,25 +1442,25 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/samsung/android/galaxycontinuity/data/MMSContentsData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 523
+    .line 515
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->MMSContentsData:Ljava/util/ArrayList;
 
     if-nez v1, :cond_0
 
-    .line 524
+    .line 516
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->MMSContentsData:Ljava/util/ArrayList;
 
-    .line 526
+    .line 518
     :cond_0
     iget-object v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->MMSContentsData:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 529
+    .line 521
     :cond_1
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
@@ -1405,7 +1468,7 @@
 
     move-result-object v0
 
-    .line 531
+    .line 523
     iget-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
     const/4 v2, -0x1
@@ -1416,19 +1479,19 @@
 
     if-eqz p2, :cond_2
 
-    .line 532
+    .line 524
     iget-object p2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
     invoke-virtual {p0, p2, v2}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getChatList(Ljava/lang/String;I)Ljava/util/ArrayList;
 
     move-result-object p2
 
-    .line 533
+    .line 525
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
 
-    .line 534
+    .line 526
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
@@ -1439,28 +1502,28 @@
 
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 536
+    .line 528
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onClearedChat()V
 
-    .line 537
+    .line 529
     invoke-virtual {p0, p1, v3}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onUpdateNotification(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
 
     goto/16 :goto_2
 
-    .line 538
+    .line 530
     :cond_2
     iget-boolean p2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
     if-nez p2, :cond_9
 
-    .line 539
+    .line 531
     iget-object p2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
     invoke-virtual {p0, p2, v2}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getChatList(Ljava/lang/String;I)Ljava/util/ArrayList;
 
     move-result-object p2
 
-    .line 541
+    .line 533
     invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1478,7 +1541,7 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 542
+    .line 534
     iget-wide v4, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
 
     iget-wide v6, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
@@ -1487,7 +1550,7 @@
 
     if-nez v4, :cond_3
 
-    .line 543
+    .line 535
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1496,17 +1559,25 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object p2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->applicationName:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     const-string p2, " ,  text : "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object p2, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1519,17 +1590,17 @@
     :cond_4
     const/4 v1, 0x1
 
-    .line 548
+    .line 540
     iput-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displayTime:Z
 
-    .line 550
+    .line 542
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
     if-lez v2, :cond_7
 
-    .line 551
+    .line 543
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -1542,7 +1613,7 @@
 
     check-cast p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 553
+    .line 545
     iget-wide v4, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
 
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -1571,26 +1642,26 @@
 
     iget-object v4, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->sender:Ljava/lang/String;
 
-    .line 554
+    .line 546
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_5
 
-    .line 556
+    .line 548
     iput-boolean v3, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displayTime:Z
 
-    .line 557
+    .line 549
     iput-boolean v3, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displaySender:Z
 
     goto :goto_0
 
-    .line 559
+    .line 551
     :cond_5
     iput-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displaySender:Z
 
-    .line 562
+    .line 554
     :goto_0
     iget-wide v4, p2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
 
@@ -1610,25 +1681,25 @@
 
     if-eqz p2, :cond_6
 
-    .line 563
+    .line 555
     iput-boolean v3, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displayDate:Z
 
     goto :goto_1
 
-    .line 565
+    .line 557
     :cond_6
     iput-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displayDate:Z
 
     goto :goto_1
 
-    .line 568
+    .line 560
     :cond_7
     iput-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displayDate:Z
 
-    .line 569
+    .line 561
     iput-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->displaySender:Z
 
-    .line 572
+    .line 564
     :goto_1
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatList:Ljava/util/ArrayList;
 
@@ -1636,12 +1707,12 @@
 
     if-eqz v0, :cond_8
 
-    .line 575
+    .line 567
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 576
+    .line 568
     iget p2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
 
     iget v0, v0, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
@@ -1650,7 +1721,7 @@
 
     iput p2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
 
-    .line 577
+    .line 569
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1659,13 +1730,19 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     const-string v0, " count : "
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     iget v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->count:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1673,16 +1750,16 @@
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 580
+    .line 572
     :cond_8
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 582
+    .line 574
     invoke-virtual {p0, p1, v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onUpdateChat(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
 
-    .line 583
+    .line 575
     invoke-virtual {p0, p1, v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onUpdateNotification(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -1692,7 +1769,7 @@
     :catch_0
     move-exception p1
 
-    .line 586
+    .line 578
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_9
@@ -1704,8 +1781,16 @@
 # virtual methods
 .method public addNotificationUpdateListener(Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 372
+    .line 364
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationUpdateListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -1714,7 +1799,7 @@
 
     if-nez v0, :cond_0
 
-    .line 373
+    .line 365
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationUpdateListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -1725,6 +1810,14 @@
 
 .method byteArrayToHex([B)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -1732,13 +1825,13 @@
 
     return-object p1
 
-    .line 315
+    .line 307
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 316
+    .line 308
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -1748,19 +1841,19 @@
 
     aget-byte v3, p1, v2
 
-    .line 317
+    .line 309
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 318
+    .line 310
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 320
+    .line 312
     :cond_1
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1770,9 +1863,13 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v4
+
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1783,7 +1880,7 @@
 
     goto :goto_0
 
-    .line 322
+    .line 314
     :cond_2
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1794,12 +1891,20 @@
 
 .method public checkSessionExpired([B)Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "rawMessage"
+        }
+    .end annotation
 
     const/16 v0, 0xa
 
     if-eqz p1, :cond_1
 
-    .line 330
+    .line 322
     :try_start_0
     array-length v1, p1
 
@@ -1807,7 +1912,7 @@
 
     goto :goto_0
 
-    .line 331
+    .line 323
     :cond_0
     new-instance p1, Ljava/security/InvalidParameterException;
 
@@ -1823,7 +1928,7 @@
 
     const/4 v2, 0x4
 
-    .line 333
+    .line 325
     invoke-static {p1, v1, v2}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getbytes([BII)[B
 
     move-result-object v1
@@ -1832,12 +1937,12 @@
 
     move-result v1
 
-    .line 335
+    .line 327
     invoke-static {p1, v0, v1}, Lcom/samsung/android/galaxycontinuity/util/Utils;->getbytes([BII)[B
 
     move-result-object p1
 
-    .line 337
+    .line 329
     new-instance v0, Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -1848,7 +1953,7 @@
 
     invoke-direct {v0, p1, v1, v2, v3}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
-    .line 338
+    .line 330
     const-class p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     invoke-static {v0, p1}, Lcom/sec/android/fido/uaf/message/util/GsonHelper;->fromJson(Ljava/lang/String;Ljava/lang/Class;)Lcom/sec/android/fido/uaf/message/Message;
@@ -1864,7 +1969,7 @@
     :catch_0
     move-exception p1
 
-    .line 340
+    .line 332
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     const/4 p1, 0x0
@@ -1874,13 +1979,21 @@
 
 .method public createFlowMessage(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowMessage"
+        }
+    .end annotation
 
-    .line 85
+    .line 86
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     invoke-direct {v0}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>()V
 
-    .line 87
+    .line 88
     :try_start_0
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->clone()Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
@@ -1893,7 +2006,7 @@
     :catch_0
     move-exception p1
 
-    .line 89
+    .line 90
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_0
@@ -1902,8 +2015,18 @@
 
 .method public createFlowMessage([BLjava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "rawMessage",
+            "address"
+        }
+    .end annotation
 
-    .line 347
+    .line 339
     :try_start_0
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getProtocolVersion([BLjava/lang/String;)I
 
@@ -1913,14 +2036,14 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 350
+    .line 342
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->createFlowMessageV2([BLjava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     move-result-object p1
 
     return-object p1
 
-    .line 352
+    .line 344
     :cond_0
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->checkSessionExpired([B)Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
@@ -1933,10 +2056,10 @@
     :catch_0
     move-exception p1
 
-    .line 354
+    .line 346
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 355
+    .line 347
     invoke-virtual {p1}, Ljava/net/ProtocolException;->getMessage()Ljava/lang/String;
 
     move-result-object p2
@@ -1961,13 +2084,13 @@
 
     if-eqz p2, :cond_2
 
-    .line 356
+    .line 348
     :cond_1
     iget-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->updateDialogDisplayed:Z
 
     if-nez p2, :cond_2
 
-    .line 357
+    .line 349
     new-instance p2, Landroid/content/Intent;
 
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
@@ -1980,10 +2103,10 @@
 
     const/high16 v0, 0x10000000
 
-    .line 358
+    .line 350
     invoke-virtual {p2, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 359
+    .line 351
     invoke-virtual {p1}, Ljava/net/ProtocolException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -1992,7 +2115,7 @@
 
     invoke-virtual {p2, v0, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 360
+    .line 352
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p1
@@ -2001,7 +2124,7 @@
 
     const/4 p1, 0x1
 
-    .line 361
+    .line 353
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->updateDialogDisplayed:Z
 
     :cond_2
@@ -2021,7 +2144,7 @@
         }
     .end annotation
 
-    .line 417
+    .line 409
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mCategoryList:Ljava/util/ArrayList;
 
     return-object v0
@@ -2029,6 +2152,17 @@
 
 .method public getChatList(Ljava/lang/String;I)Ljava/util/ArrayList;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "flowKey",
+            "limit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2040,12 +2174,12 @@
         }
     .end annotation
 
-    .line 404
+    .line 396
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 405
+    .line 397
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -2065,7 +2199,7 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 406
+    .line 398
     iget-object v3, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2074,14 +2208,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 407
+    .line 399
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v2, -0x1
 
     if-eq p2, v2, :cond_0
 
-    .line 408
+    .line 400
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -2094,8 +2228,16 @@
 
 .method public getNotificationData(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowKey"
+        }
+    .end annotation
 
-    .line 439
+    .line 431
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -2115,7 +2257,7 @@
 
     check-cast v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 440
+    .line 432
     iget-object v2, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
     invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2143,7 +2285,7 @@
         }
     .end annotation
 
-    .line 390
+    .line 382
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     return-object v0
@@ -2151,6 +2293,17 @@
 
 .method public getUnreadChatList(Ljava/lang/String;I)Ljava/util/ArrayList;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "flowKey",
+            "limit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2162,22 +2315,22 @@
         }
     .end annotation
 
-    .line 421
+    .line 413
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 422
+    .line 414
     new-instance v1, Ljava/util/ArrayList;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatList:Ljava/util/ArrayList;
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 423
+    .line 415
     invoke-static {v1}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
 
-    .line 425
+    .line 417
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -2195,7 +2348,7 @@
 
     check-cast v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 426
+    .line 418
     iget-boolean v3, v2, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->unRead:Z
 
     if-eqz v3, :cond_0
@@ -2208,21 +2361,21 @@
 
     if-eqz v3, :cond_0
 
-    .line 427
+    .line 419
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v2, -0x1
 
     if-eq p2, v2, :cond_0
 
-    .line 428
+    .line 420
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
     if-lt v2, p2, :cond_0
 
-    .line 433
+    .line 425
     :cond_1
     invoke-static {v0}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
 
@@ -2231,8 +2384,16 @@
 
 .method public isNotiOfAppExist(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appName"
+        }
+    .end annotation
 
-    .line 394
+    .line 386
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -2252,7 +2413,7 @@
 
     check-cast v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
-    .line 395
+    .line 387
     iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->applicationName:Ljava/lang/String;
 
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2274,12 +2435,12 @@
 .method public onClearedChat()V
     .locals 1
 
-    .line 611
+    .line 603
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatUpdateListener:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
     if-eqz v0, :cond_0
 
-    .line 612
+    .line 604
     invoke-interface {v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;->onCleared()V
 
     :cond_0
@@ -2289,7 +2450,7 @@
 .method public onClearedNotification()V
     .locals 2
 
-    .line 616
+    .line 608
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationUpdateListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -2309,7 +2470,7 @@
 
     check-cast v1, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
-    .line 617
+    .line 609
     invoke-interface {v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;->onCleared()V
 
     goto :goto_0
@@ -2320,26 +2481,36 @@
 
 .method public onUpdateChat(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "data",
+            "isAdd"
+        }
+    .end annotation
 
     if-eqz p2, :cond_0
 
-    .line 602
+    .line 594
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatUpdateListener:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
     if-eqz p2, :cond_1
 
-    .line 603
+    .line 595
     invoke-interface {p2, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;->onAdded(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
     goto :goto_0
 
-    .line 605
+    .line 597
     :cond_0
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatUpdateListener:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
     if-eqz p2, :cond_1
 
-    .line 606
+    .line 598
     invoke-interface {p2, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;->onRemoved(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
     :cond_1
@@ -2349,10 +2520,20 @@
 
 .method public onUpdateNotification(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "data",
+            "isAdd"
+        }
+    .end annotation
 
     if-eqz p2, :cond_0
 
-    .line 592
+    .line 584
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationUpdateListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -2372,12 +2553,12 @@
 
     check-cast v0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
-    .line 593
+    .line 585
     invoke-interface {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;->onAdded(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
     goto :goto_0
 
-    .line 595
+    .line 587
     :cond_0
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationUpdateListenerList:Ljava/util/ArrayList;
 
@@ -2398,7 +2579,7 @@
 
     check-cast v0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
-    .line 596
+    .line 588
     invoke-interface {v0, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;->onRemoved(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
     goto :goto_1
@@ -2409,10 +2590,18 @@
 
 .method public removeAllMessages(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runInMainLooper"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 622
+    .line 614
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mUiHandler:Landroid/os/Handler;
 
     new-instance v0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$2;
@@ -2423,7 +2612,7 @@
 
     goto :goto_0
 
-    .line 629
+    .line 621
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->removeAllMessages()V
 
@@ -2436,7 +2625,7 @@
 
     const/4 v0, 0x0
 
-    .line 386
+    .line 378
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatUpdateListener:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
     return-void
@@ -2444,8 +2633,16 @@
 
 .method public removeNotificationUpdateListener(Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 377
+    .line 369
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationUpdateListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -2454,7 +2651,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 378
+    .line 370
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationUpdateListenerList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -2465,8 +2662,16 @@
 
 .method public sendRegisterNotificationAlarmToPhone(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
-    .line 656
+    .line 648
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
@@ -2485,7 +2690,7 @@
 
     invoke-direct {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
 
-    .line 658
+    .line 650
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p1
@@ -2503,8 +2708,16 @@
 
 .method public sendRemoveMessageToPhone(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
-    .line 647
+    .line 639
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
@@ -2523,7 +2736,7 @@
 
     invoke-direct {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;-><init>(Ljava/lang/String;Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;)V
 
-    .line 648
+    .line 640
     iget-object p1, v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -2532,14 +2745,14 @@
 
     iput v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->type:I
 
-    .line 649
+    .line 641
     iget-object p1, v0, Lcom/samsung/android/galaxycontinuity/data/FlowMessage;->BODY:Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;
 
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/data/FlowMessageBody;->notificationData:Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     iput-boolean v2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
-    .line 652
+    .line 644
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p1
@@ -2557,8 +2770,16 @@
 
 .method public setChatUpdateListener(Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 382
+    .line 374
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mChatUpdateListener:Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$IUpdateListener;
 
     return-void
@@ -2566,8 +2787,16 @@
 
 .method public updateNotification(Lcom/samsung/android/galaxycontinuity/data/FlowMessage;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "flowMessage"
+        }
+    .end annotation
 
-    .line 449
+    .line 441
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mUiHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager$1;
@@ -2581,30 +2810,40 @@
 
 .method public updateNotification(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "notificationData",
+            "byUser"
+        }
+    .end annotation
 
-    const-string v0, "update notification"
+    const-string/jumbo v0, "update notification"
 
-    .line 461
+    .line 453
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 462
+    .line 454
     invoke-direct {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->updateCategory(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
-    .line 464
+    .line 456
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->flowKey:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->getNotificationData(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
 
     move-result-object v0
 
-    .line 466
+    .line 458
     iget-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
     if-eqz v1, :cond_1
 
     if-eqz v0, :cond_0
 
-    .line 468
+    .line 460
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowNotificationManager;
 
     move-result-object v1
@@ -2618,10 +2857,10 @@
     :cond_0
     if-eqz p2, :cond_2
 
-    .line 471
+    .line 463
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->sendRemoveMessageToPhone(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
 
-    .line 472
+    .line 464
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -2631,7 +2870,7 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 475
+    .line 467
     iget-wide v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
 
     iget-wide v3, v0, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->ticks:J
@@ -2642,19 +2881,19 @@
 
     return-void
 
-    .line 479
+    .line 471
     :cond_2
     :goto_0
     iget-boolean v1, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isChat:Z
 
     if-eqz v1, :cond_3
 
-    .line 480
+    .line 472
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->updateChat(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
 
     goto :goto_1
 
-    .line 482
+    .line 474
     :cond_3
     iget-boolean p2, p1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->isRemoved:Z
 
@@ -2662,7 +2901,7 @@
 
     if-eqz p2, :cond_4
 
-    .line 483
+    .line 475
     invoke-virtual {p0, p1, v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onUpdateNotification(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
 
     goto :goto_1
@@ -2670,15 +2909,15 @@
     :cond_4
     if-eqz v0, :cond_5
 
-    .line 486
+    .line 478
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 487
+    .line 479
     invoke-virtual {p0, v0, v1}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onUpdateNotification(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
 
-    .line 490
+    .line 482
     :cond_5
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->mNotificationList:Ljava/util/ArrayList;
 
@@ -2686,7 +2925,7 @@
 
     const/4 p2, 0x1
 
-    .line 491
+    .line 483
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/manager/FlowMessageManager;->onUpdateNotification(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
 
     :goto_1

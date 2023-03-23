@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/manager/CallManager;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 132
+    .line 163
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
@@ -34,11 +42,21 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "state",
+            "phoneNumber"
+        }
+    .end annotation
 
-    .line 135
+    .line 166
     invoke-super {p0, p1, p2}, Landroid/telephony/PhoneStateListener;->onCallStateChanged(ILjava/lang/String;)V
 
-    .line 136
+    .line 167
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_IDLE:Ljava/lang/String;
 
     const/4 v1, 0x1
@@ -53,23 +71,23 @@
 
     goto :goto_0
 
-    .line 148
+    .line 179
     :cond_0
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_OFFHOOK:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 145
+    .line 176
     :cond_1
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_RINGING:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 151
+    .line 182
     :cond_2
     sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_IDLE:Ljava/lang/String;
 
-    .line 155
+    .line 186
     :goto_0
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 
@@ -85,7 +103,7 @@
 
     return-void
 
-    .line 158
+    .line 189
     :cond_3
     :try_start_0
     new-instance p1, Ljava/lang/StringBuilder;
@@ -96,6 +114,8 @@
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->access$000(Lcom/samsung/android/galaxycontinuity/manager/CallManager;)Ljava/lang/String;
@@ -104,11 +124,17 @@
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     const-string v2, " ==> "
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -116,7 +142,7 @@
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 160
+    .line 191
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/manager/CallManager;->access$100(Lcom/samsung/android/galaxycontinuity/manager/CallManager;)Ljava/lang/Boolean;
@@ -127,12 +153,12 @@
 
     move-result v3
 
-    .line 162
+    .line 193
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/manager/ContactHelper;->getContactInfoData(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;
 
     move-result-object p1
 
-    .line 164
+    .line 195
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     move-result-object v2
@@ -145,14 +171,14 @@
 
     if-eqz p1, :cond_4
 
-    .line 167
+    .line 198
     :try_start_1
     iget-object p2, p1, Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;->DisplayName:Ljava/lang/String;
 
-    .line 168
+    .line 199
     iget-object v4, p1, Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;->Number:Ljava/lang/String;
 
-    .line 169
+    .line 200
     iget-object v5, p1, Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;->Type:Ljava/lang/String;
 
     move-object v8, v5
@@ -170,7 +196,7 @@
 
     move-object v8, v4
 
-    .line 172
+    .line 203
     :goto_1
     sget-object p2, Landroid/telephony/TelephonyManager;->EXTRA_STATE_RINGING:Ljava/lang/String;
 
@@ -180,7 +206,7 @@
 
     if-eqz p2, :cond_6
 
-    .line 173
+    .line 204
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -189,7 +215,11 @@
 
     invoke-virtual {p2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -197,7 +227,7 @@
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 174
+    .line 205
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -206,7 +236,11 @@
 
     invoke-virtual {p2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -214,7 +248,7 @@
 
     invoke-static {p2}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 175
+    .line 206
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -223,7 +257,11 @@
 
     invoke-virtual {p2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -235,7 +273,7 @@
 
     goto :goto_2
 
-    .line 176
+    .line 207
     :cond_5
     iget-object v2, p1, Lcom/samsung/android/galaxycontinuity/data/ContactInfoData;->Photo:Ljava/lang/String;
 
@@ -243,7 +281,7 @@
     :goto_2
     move-object v7, v2
 
-    .line 179
+    .line 210
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/command/CommandManager;->getInstance()Lcom/samsung/android/galaxycontinuity/command/CommandManager;
 
     move-result-object p1
@@ -273,10 +311,10 @@
     :catch_0
     move-exception p1
 
-    .line 182
+    .line 213
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 184
+    .line 215
     :goto_3
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/manager/CallManager$1;->this$0:Lcom/samsung/android/galaxycontinuity/manager/CallManager;
 

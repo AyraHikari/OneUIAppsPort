@@ -1,4 +1,4 @@
-.class final Lokhttp3/internal/http2/PushObserver$1;
+.class Lokhttp3/internal/http2/PushObserver$1;
 .super Ljava/lang/Object;
 .source "PushObserver.java"
 

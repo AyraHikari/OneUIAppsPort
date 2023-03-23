@@ -180,6 +180,14 @@
 
 .method public static decrypt([B)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sourced"
+        }
+    .end annotation
 
     .line 39
     sget-object v0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPUtil;->key:[B
@@ -320,6 +328,14 @@
 
 .method public static encrypt(Ljava/lang/String;)[B
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "plainText"
+        }
+    .end annotation
 
     .line 21
     sget-object v0, Lcom/samsung/android/galaxycontinuity/discovery/udp/UDPUtil;->key:[B
@@ -458,6 +474,14 @@
 
 .method public static getBroadcastIP(Ljava/net/InetAddress;)Ljava/net/InetAddress;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "inetAddr"
+        }
+    .end annotation
 
     .line 97
     :try_start_0
@@ -519,13 +543,17 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 

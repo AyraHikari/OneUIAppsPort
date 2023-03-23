@@ -16,7 +16,29 @@
 
 # virtual methods
 .method public abstract notifyResult(Ljava/lang/String;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result"
+        }
+    .end annotation
 .end method
 
 .method public abstract notifyResult(Ljava/lang/String;IZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result",
+            "checked"
+        }
+    .end annotation
 .end method

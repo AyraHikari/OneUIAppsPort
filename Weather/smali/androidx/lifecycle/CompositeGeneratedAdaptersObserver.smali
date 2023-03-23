@@ -3,38 +3,38 @@
 .source "CompositeGeneratedAdaptersObserver.java"
 
 # interfaces
-.implements Landroidx/lifecycle/LifecycleEventObserver;
+.implements Landroidx/lifecycle/t;
 
 
 # instance fields
-.field private final mGeneratedAdapters:[Landroidx/lifecycle/GeneratedAdapter;
+.field public final h:[Landroidx/lifecycle/m;
 
 
 # direct methods
-.method constructor <init>([Landroidx/lifecycle/GeneratedAdapter;)V
+.method public constructor <init>([Landroidx/lifecycle/m;)V
     .locals 0
 
-    .line 26
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
-    iput-object p1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->mGeneratedAdapters:[Landroidx/lifecycle/GeneratedAdapter;
+    .line 2
+    iput-object p1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->h:[Landroidx/lifecycle/m;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onStateChanged(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+.method public g(Landroidx/lifecycle/w;Landroidx/lifecycle/o$b;)V
     .locals 6
 
-    .line 32
-    new-instance v0, Landroidx/lifecycle/MethodCallsLogger;
+    .line 1
+    new-instance v0, Landroidx/lifecycle/f0;
 
-    invoke-direct {v0}, Landroidx/lifecycle/MethodCallsLogger;-><init>()V
+    invoke-direct {v0}, Landroidx/lifecycle/f0;-><init>()V
 
-    .line 33
-    iget-object v1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->mGeneratedAdapters:[Landroidx/lifecycle/GeneratedAdapter;
+    .line 2
+    iget-object v1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->h:[Landroidx/lifecycle/m;
 
     array-length v2, v1
 
@@ -47,16 +47,16 @@
 
     aget-object v5, v1, v4
 
-    .line 34
-    invoke-interface {v5, p1, p2, v3, v0}, Landroidx/lifecycle/GeneratedAdapter;->callMethods(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;ZLandroidx/lifecycle/MethodCallsLogger;)V
+    .line 3
+    invoke-interface {v5, p1, p2, v3, v0}, Landroidx/lifecycle/m;->a(Landroidx/lifecycle/w;Landroidx/lifecycle/o$b;ZLandroidx/lifecycle/f0;)V
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 36
+    .line 4
     :cond_0
-    iget-object v1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->mGeneratedAdapters:[Landroidx/lifecycle/GeneratedAdapter;
+    iget-object v1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->h:[Landroidx/lifecycle/m;
 
     array-length v2, v1
 
@@ -67,8 +67,8 @@
 
     const/4 v5, 0x1
 
-    .line 37
-    invoke-interface {v4, p1, p2, v5, v0}, Landroidx/lifecycle/GeneratedAdapter;->callMethods(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;ZLandroidx/lifecycle/MethodCallsLogger;)V
+    .line 5
+    invoke-interface {v4, p1, p2, v5, v0}, Landroidx/lifecycle/m;->a(Landroidx/lifecycle/w;Landroidx/lifecycle/o$b;ZLandroidx/lifecycle/f0;)V
 
     add-int/lit8 v3, v3, 0x1
 

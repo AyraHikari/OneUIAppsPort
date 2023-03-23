@@ -46,34 +46,43 @@
     sput-object v0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;->WIFI:Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
 
     .line 24
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
 
-    const-string v1, "BLUETOOTH"
+    const-string v3, "BLUETOOTH"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;->BLUETOOTH:Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;->BLUETOOTH:Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
+    new-array v3, v3, [Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 22
-    sget-object v4, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;->WIFI:Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -88,6 +97,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 22
     const-class v0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket$CONNECTIONTYPE;

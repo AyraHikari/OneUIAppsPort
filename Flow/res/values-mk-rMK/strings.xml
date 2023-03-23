@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">Додавање апликација од телефон</string>
     <string name="add_your_bio_first_dialog_desc">За да користите биометрија на таблет за да се најавите на Samsung Flow, регистрирајте ги Вашите отпечатоци од прст или зеници на таблетот и обидете се повторно.</string>
     <string name="add_your_bio_first_dialog_title">Додавање прво на Вашата биометрија</string>
+    <string name="advanced_features">Напредни функции</string>
     <string name="alarm">Аларм</string>
     <string name="all_apps">Сите апликации</string>
     <string name="allow_appear_on_top">Дозволете да се Појави најгоре</string>
     <string name="allow_appear_on_top_desc">За да прикажете работи како што се појавни прозорци или известувања врз други апликации што ги користите на Вашиот компјутер или таблет, треба да овозможите Појави на најгорната дозвола во Поставувања.</string>
+    <string name="allow_location_settings">Дозволете пристап до Поставувањата за локација на уредите</string>
     <string name="and_more">%1$s и уште %2$d</string>
+    <string name="app_info">Информации за апликации</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">Приложување</string>
     <string name="attach_image">Слика</string>
     <string name="attach_my_files">Мои датотеки</string>
     <string name="attach_sound">Звук</string>
@@ -38,20 +43,29 @@
 на
 Samsung Flow"</string>
     <string name="bluetooth_connection_failed_text">Осигурете се дека на телефонот е вклучено Samsung Flow.</string>
+    <string name="bt_or_nfc_turned_on">За да го користите Samsung Flow, %s ќе се вклучи.</string>
+    <string name="btn_desc_cancel">Откажи</string>
+    <string name="btn_desc_failed">Неусп.</string>
+    <string name="can_not_use">Не може да се користи %s</string>
+    <string name="can_not_use_at_same_time">%1$s и %2$s не може да се вклучени истовремено. %3$s ќе се исклучи.</string>
     <string name="cancel_all">Откажи сè</string>
     <string name="cant_share_files">Не може да се споделуваат датотеки</string>
     <string name="cant_use_mobile_hotspot_case_1">Нешто тргна наопаку со мрежата. Проверете го Мобилен хотспот на Вашиот телефон и обидете се повторно.</string>
     <string name="cant_use_mobile_hotspot_case_2">Нешто тргна наопаку со мрежата. Контактирајте со операторот за да видите дали Вашиот пакет поддржува Мобилен хотспот.</string>
     <string name="cant_use_mobile_hotspot_title">Не може да се користи Мобилен хотспот</string>
-    <string name="cant_use_this_function_in_multi_window">Не може да се користи оваа функција во Прегледот за повеќе прозорци.</string>
-    <string name="chan_mkt">Маркетинг</string>
-    <string name="chan_ntc">Напомена</string>
+    <string name="cant_use_this_function_in_multi_window">Не може да се користи оваа функција во прегледот на Повеќе прозорци.</string>
+    <string name="change_location_settings">Смени пост. за Локација</string>
+    <string name="character_counter_content_description">%1$d од %2$d знаци</string>
     <string name="checkbox_all">Сите</string>
+    <string name="china_network_permission_popup_body">Да се дозволи %s да користи мрежни поврзувања?</string>
+    <string name="china_network_permission_popup_title">Користење мрежни поврзувања</string>
+    <string name="clipboard">Подлога</string>
     <string name="clipboard_off">Престанете да споделувате содржина на посредна меморија помеѓу поврзаните уреди</string>
     <string name="clipboard_on">Сподели содржина на посредна меморија помеѓу поврзаните уреди</string>
     <string name="close_app">Затвори апликација</string>
     <string name="confirm_pass_key_connecting_to_deivce">Се поврзува со %s…</string>
-    <string name="connect_help_desc0">Вклучете Samsung Flow на телефонот или часовникот.</string>
+    <string name="confirm_your_phone">Потврди на телефонот</string>
+    <string name="connect_help_desc0">Вклучете Samsung Flow на телефонот.</string>
     <string name="connect_help_desc1">Осигурете се дека е вклучено Bluetooth или Wi-Fi и за двата уреда.</string>
     <string name="connect_help_desc2">Ако користите поврзувања Wi-Fi или LAN, осигурете се дека и двата уреда се поврзани на истата мрежа.</string>
     <string name="connect_help_desc4">Осигурете се дека не се обдувате да поврзете таблет со компјутерот. Ова не е поддржано од Samsung Flow.</string>
@@ -69,16 +83,18 @@ Samsung Flow"</string>
     <string name="connection_error_register_fail">Неуспешна регистрација. Обидете се повторно.</string>
     <string name="connection_failed">Не може да се поврзе.</string>
     <string name="connection_goto_permission_setting">За да користите %s, допрете Поставувања, одете во Информации за апликација > Дозволи, а потоа овозможете ги следниве дозволи:</string>
+    <string name="connection_method_biometrics">Биометрија</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">За да користите биометрија во Samsung Flow, треба да ја регистрирате Вашата биометрија во Поставувања.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">Регистрирање биометрија</string>
+    <string name="connection_method_biometrics_required_title">Потребна е потврда за да користите биометрија во %s.</string>
+    <string name="connection_method_manual">Рачно</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">Повторно поврзете се со %s автоматски со Вашата биометрија, користејќи Samsung Pass.</string>
-    <string name="connection_method_simple_connection">Едноставно поврзување</string>
-    <string name="connection_method_simple_connection_desc">Повторно поврзете се со %s автоматски без да го потврдите Вашиот телефон.</string>
-    <string name="connection_method_simple_connection_desc_tab">Повторно поврзете се со %s автоматски без да го потврдите Вашиот таблет.</string>
+    <string name="connection_method_simple_connection">Автоматско поврзување</string>
     <string name="connection_method_tablet_bio">Биометрија на таблет</string>
-    <string name="connection_method_tablet_bio_desc">Повторно поврзете се со %s автоматски со Вашата биометрија на Вашиот таблет.</string>
     <string name="connection_request_noti_accept">Прифати</string>
     <string name="connection_request_noti_desc">Да се дозволи %s да се поврзе со телефонот?</string>
     <string name="content_shared_via">Содржина споделена преку %s</string>
+    <string name="continue_apps_on_other_device">Прод. апликации на други уреди</string>
     <string name="copied_to_clipboard">Ископирано во посредната меморија.</string>
     <string name="copy_text">Копирај текст</string>
     <string name="delete_lower">Избриши</string>
@@ -90,8 +106,11 @@ Samsung Flow"</string>
     <string name="device_not_secured_desc_for_bio">За да користите биометрија на Вашиот таблет, треба да поставите заклучување на екранот на Вашиот телефон.</string>
     <string name="device_not_secured_desc_for_watch">За да го користите Вашиот часовник, треба да поставите заклучување на екранот на телефонот.</string>
     <string name="device_status_connected">Поврзано</string>
+    <string name="device_status_connected_with">Поврзано со %s.</string>
+    <string name="device_status_disconnected">Врската е прекината.</string>
     <string name="device_status_registered">Регистрирано</string>
     <string name="device_storage">Меморија на уредот</string>
+    <string name="dialog_allow">Дозволи</string>
     <string name="dialog_close">Затвори</string>
     <string name="dialog_deny">Отфрли</string>
     <string name="dialog_desc_turn_off_mirroring">Да се исклучи Smart View?</string>
@@ -99,6 +118,7 @@ Samsung Flow"</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_retry">Повторен обид</string>
     <string name="dismiss">Поништи</string>
+    <string name="dragndroplist_drag_move">Сега го положбата %d</string>
     <string name="dragndroplist_drag_release">Ставката е одвлечена на положба %d.</string>
     <string name="dragndroplist_drag_start">Почна да се влече ставката на положба %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Ставката на положба %d не може да се одвлече.</string>
@@ -118,41 +138,8 @@ Samsung Flow"</string>
     <string name="flow_main_device_not_secure_dialog_desc">За да користите отклучување на екранот на Windows треба да поставите заклучување на екранот на телефонот.</string>
     <string name="flow_main_device_not_secure_dialog_title">Поставете безбедно заклучување на екранот</string>
     <string name="go_to_settings">Оди во Постав.</string>
-    <string name="help_clipboard_desc">"Можете да споделувате текст, интернет-адреси и слики на посредната меморија со Вашиот поврзан таблет или компјутер.
-
-Оваа функција може да го зголеми користењето на батеријата."</string>
-    <string name="help_clipboard_title">Користење посредна меморија</string>
-    <string name="help_connecting_devices_desc_1">Поврзете го компјутерот или таблетот на телефонот (%s) со Samsung Flow.</string>
-    <string name="help_connecting_devices_desc_2">Осигурете се дека и двата уреда имаат вклучен Bluetooth или имате поврзување Wi-Fi или LAN на истата мрежа.</string>
-    <string name="help_connecting_devices_desc_2_1">Ако користите кабел USB, осигурете се дека е поврзан и на двата уреда и дека е инсталиран Android 10 или понов на поврзаниот уред.</string>
-    <string name="help_connecting_devices_desc_3">Отворете Samsung Flow на двата уреда, а потоа следете го помошникот за поставување на компјутерот.</string>
-    <string name="help_connecting_devices_desc_4">За повеќе информации, посетете го www.samsung.com/samsungflow.</string>
-    <string name="help_connecting_devices_desc_5">Минимални барања</string>
-    <string name="help_connecting_devices_desc_6">Windows компјутер или таблет: Windows 10 Creators ажурирање (v1703) и јунската верзија на закрпата (15063.413), Bluetooth (Bluetooth LE е опционално) и Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Android таблет: Android Marshmallow или поново. Видете ги ЧПП за повеќе детали.</string>
-    <string name="help_connecting_devices_title">Поврз. со Вашите компјут./таб.</string>
     <string name="help_contact_us">Контактирајте со нас</string>
     <string name="help_install_samsung_flow_title">Поврзете уреди со Samsung Flow</string>
-    <string name="help_mobile_hotspot_desc">Допрете %s за да вклучувате или исклучувате Мобилен хотспот на Вашиот телефон. Ова не функционира со телефони што работат на Android 11 или понова верзија.</string>
-    <string name="help_mobile_hotspot_title">Користење на Мобилен хотспот</string>
-    <string name="help_noti_sync_desc">"Видете ги известувањата од Вашиот телефон на компјутер или таблет кога ќе го поврзете компјутерот или таблетот со користење на Samsung Flow. Веднаш можете да одговарате на пораки од други апликации кога примате нови известувања.
-
-Оваа функција може да не биде достапна за некои апликации за размена на пораки.
-
-Можете да управувате со известувањата во Samsung Flow одејќи во Повеќе опции > Поставувања > Управувајте со известувањата."</string>
-    <string name="help_noti_sync_title">Се синхронизираат известувањ.</string>
-    <string name="help_sharing_contents_desc_1">Лесно можете да споделувате содржина помеѓу поврзаните уреди.</string>
-    <string name="help_sharing_contents_desc_2">Телефон до компјутер или таблет</string>
-    <string name="help_sharing_contents_desc_3">Најдете ја опцијата за споделување во апликација, како што е прегледник, а потоа изберете Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_4">Исто така можете да допрете на %s во картичката Историја на проток за да изберете датотеки и да ги споделите.</string>
-    <string name="help_sharing_contents_desc_5">Компјутер или таблет до телефон</string>
-    <string name="help_sharing_contents_desc_6">Најдете ја опцијата за споделување во апликација, како што е прегледник, а потоа изберете Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_7">Исто така можете да допрете на %s во картичката Историја на проток за да изберете датотеки и да ги споделите или да повлекувате и испуштате датотеки во Samsung Flow.</string>
-    <string name="help_sharing_contents_title">Споделување содржини</string>
-    <string name="help_smart_view_desc">Допрете на иконата на Smart View за да го одразите екранот на телефонот на Вашиот таблет или компјутер.</string>
-    <string name="help_smart_view_desc_2">Додека користите Smart View, можете да допрете на иконата со ѕвезда за да ги додадете омилените апликации за побрз пристап.</string>
-    <string name="help_smart_view_title">Со користење Smart View</string>
-    <string name="help_using_multi_device_title">Корист. пов. компјутери/таблети</string>
     <string name="hotspot_description">Користете поврзан уред како пристапна точка за Интернет користејќи Мобилен хотспот додека работи Samsung Flow.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">За да користите Мобилен хотспот, Wi-Fi треба да се исклучи.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">Да се исклучи Wi-Fi?</string>
@@ -185,7 +172,11 @@ Samsung Flow"</string>
     <string name="menu_do_not_disturb">Не вознемирувај</string>
     <string name="menu_enable_hotspot">Пов.се на Мобилен хотспот</string>
     <string name="menu_favorites">Омилени</string>
+    <string name="menu_favorites_add">Додај</string>
+    <string name="menu_favorites_remove">Отстрани</string>
     <string name="menu_full_screen">Целосен преглед</string>
+    <string name="menu_more">Повеќе</string>
+    <string name="menu_phone_screen">Екран на телефонот</string>
     <string name="menu_resolution">Резолуција</string>
     <string name="menu_resolution_option_high">Високо</string>
     <string name="menu_resolution_option_low">Ниско</string>
@@ -231,6 +222,10 @@ Samsung Flow"</string>
     <string name="noti_desc_screenshot_saved">Допрете тука за да ја видите Вашата екранска снимка.</string>
     <string name="noti_title_screenshot_saved">Екранската снимка е зачувана</string>
     <string name="notices">Напомени</string>
+    <string name="notices_last_for_android6_desc">"Ова е најновото ажурирање за Android 6.0 (Marshmallow). Samsung Flow повеќе не поддржува Android 6.0 поради ограничувања на оперативниот систем.
+
+Корисниците на Android 6.0 сѐ уште можат да користат Samsung Flow без ажурирање."</string>
+    <string name="notices_last_for_android6_title">Крај на поддршката за Android 6.0 (Marshmallow)</string>
     <string name="notices_notice">Напомена</string>
     <string name="notices_update">Ажурирај</string>
     <string name="notices_update_include">Ажурирањата на софтверот можат да го вклучуваат следново:</string>
@@ -255,6 +250,8 @@ Samsung Flow"</string>
     <string name="option_connection_type_wifi">Wi-Fi или LAN</string>
     <string name="pc">Компјутер</string>
     <string name="permissions">Дозволи</string>
+    <string name="permissions_all_files_access">Пристап до сите датотеки</string>
+    <string name="permissions_all_files_access_desc">Се користи за префрлање слики, медиуми и датотеки.</string>
     <string name="permissions_appear_on_top_desc">Се користи за да се прикажат известувања врз други апликации</string>
     <string name="permissions_appear_on_top_title">Да се дозволи Samsung Flow да пристапи до Појави се на врвот за да може да се прикажат известувања врз други апликации?</string>
     <string name="permissions_call_log">Дневници на повици</string>
@@ -266,6 +263,8 @@ Samsung Flow"</string>
     <string name="permissions_location_desc">Се користи за пребарување уреди Galaxy во близина со користење на Bluetooth.</string>
     <string name="permissions_microphone">Микрофон</string>
     <string name="permissions_microphone_desc">Се користи за поврзување уреди Galaxy со добивање на аудио со висока фреквенција.</string>
+    <string name="permissions_nearby_devices">Уреди во близина</string>
+    <string name="permissions_nearby_devices_desc">Се користи за да се најдат уреди во близина и да се следат регистрирани уреди</string>
     <string name="permissions_notification_access_desc">Се користи за да се испратат известувања до поврзаниот уред</string>
     <string name="permissions_phone">Телефон</string>
     <string name="permissions_phone_desc">Се користи за потврдување на Вашиот телефонски број.</string>
@@ -273,11 +272,11 @@ Samsung Flow"</string>
     <string name="permissions_sms_desc">Се користи за префрлање текстуални пораки.</string>
     <string name="permissions_storage">Меморија</string>
     <string name="permissions_storage_desc">Се користи за префрлање слики, медиуми и датотеки.</string>
-    <string name="permissions_title">Дозволи за %s</string>
+    <string name="permissions_title">Samsung Flow ги користи овие дозволи</string>
     <string name="phone">Телефон</string>
     <string name="press_enter_key_to_send">Испрат. пораки со Внесете клуч</string>
     <string name="processing">Обработување…</string>
-    <string name="receiving_failed">Неуспешно примање.</string>
+    <string name="receiving_failed">Нешто тргна наопаку додека ја примавте оваа порака.</string>
     <string name="register_failed">Обидете се повторно подоцна.</string>
     <string name="resend">Прати повторно</string>
     <string name="rooted_device">Вашиот уред е рутиран. %s не може да се користи на рутирани уреди поради безбедносни причини.</string>
@@ -295,11 +294,19 @@ Samsung Flow"</string>
     <string name="select_apps_for_shortcuts">Бирање апликации за кратенки</string>
     <string name="select_items">Изберете ставки</string>
     <string name="send">Прати</string>
-    <string name="sending_failed">Неуспешно праќање.</string>
-    <string name="sesl_action_bar_up_description">Движи се нагоре</string>
+    <string name="sending_failed">Нешто тргна наопаку додека ја испраќавте оваа порака.</string>
+    <string name="sesl_action_bar_up_description">Навигација нагоре</string>
     <string name="sesl_action_menu_overflow_badge_description">Достапна е нова содржина</string>
     <string name="sesl_action_menu_overflow_badge_text_n">Н</string>
     <string name="sesl_action_menu_overflow_description">Повеќе опции</string>
+    <string name="sesl_index_assistant_text">Поминете нагоре или надолу со два прста за да листате.</string>
+    <string name="sesl_index_scrollbar">Лента за листање</string>
+    <string name="sesl_index_section">Индекс на дел</string>
+    <string name="sesl_index_selected">Избрано</string>
+    <string name="sesl_material_badge_description">Достапна е нова содржина</string>
+    <string name="sesl_material_overflow_badge_text_n">Н</string>
+    <string name="sesl_more_item_label">Повеќе</string>
+    <string name="sesl_preferecne_badge_description">Ново известување</string>
     <string name="sesl_preferencecategory_added_title">Заглавје</string>
     <string name="sesl_search_hint">Пребарување</string>
     <string name="sesl_searchview_description_clear">Избриши поле за пребарување</string>
@@ -309,6 +316,10 @@ Samsung Flow"</string>
     <string name="sesl_searchview_description_voice">Говорно пребарување</string>
     <string name="sesl_switch_off">Исклучено</string>
     <string name="sesl_switch_on">Вклучено</string>
+    <string name="sesl_switchbar_off_text">Исклучено</string>
+    <string name="sesl_switchbar_on_text">Вклучено</string>
+    <string name="sesl_toolbar_collapse_description">Собери</string>
+    <string name="set_screen_lock_title">Поставување заклучување на екранот</string>
     <string name="settings">Поставувања</string>
     <string name="settings_auto_hotspot_desc">Користете го Вашиот телефон како пристапна точка за интернет додека поврзаниот уред не може да се поврзе на интернет.</string>
     <string name="settings_deregister_confirm_dialog_desc">За да се поврзете на овој уред во иднина, ќе треба повторно да го регистрирате.</string>
@@ -319,12 +330,16 @@ Samsung Flow"</string>
     <string name="settings_gear_unlock_confirm_dialog_title">Да се вклучи потврдата на Gear?</string>
     <string name="settings_manage_notifications_desc">Изберете кои апликации може да праќаат известувања на Вашиот поврзан уред.</string>
     <string name="settings_manage_notifications_title">Известув. за избрана апликација</string>
+    <string name="settings_send_message_desc">Праќајте пораки со копчето за внесување на тастатурата.</string>
     <string name="settings_title_auto_bt_on">Автоматски Bluetooth</string>
     <string name="setup_complete_done">Готово</string>
     <string name="setup_completed">Поставувањето на %s е завршено.</string>
+    <string name="setup_completed_phone">Вашиот телефон сега е поврзан со %s.</string>
+    <string name="setup_completed_tablet">Вашиот таблет сега е поврзан со %s.</string>
     <string name="setup_confirm_pin">Потврдете дека шифрата е точна во следните неколку %1$d секунди за да се поврзете со %2$s.</string>
     <string name="setup_enter_pin_on_pc">Внесете го Вашиот PIN на %s.</string>
     <string name="setup_preparing">Вклучете го поставувањето на Samsung Flow на компјутерот или таблетот.</string>
+    <string name="setup_preparing_detail">Ако не Ви е инсталиран Samsung Flow, преземете го од Microsoft Store на компјутер и од Galaxy Store или Google Play на таблет.</string>
     <string name="setup_preparing_tab">Вклучете го поставувањето на Samsung Flow на компјутерот</string>
     <string name="setup_tab_complete_title">Поставувањето е завршено</string>
     <string name="setup_tab_confirm_passkey_title">Поврзете ги Вашите уреди</string>
@@ -343,6 +358,8 @@ Samsung Flow"</string>
     <string name="setupwizard_welcome_body">Следниве дозволи се потребни за услугата за апликации. За опционални дозволи се вклучува основната функционалност на услугата, но не се дозволува.</string>
     <string name="setupwizard_welcome_title">Дозволи за апликации</string>
     <string name="share">Сподели</string>
+    <string name="share_item_device_status_connected">Уредот е поврзан</string>
+    <string name="share_item_device_status_disconnected">Уредот е откачен</string>
     <string name="shortcut_list_desc">Изберете апликација на Вашиот телефон за да се поврзете со Вашиот таблет. Ќе се додаде кратенка за оваа апликација на Вашиот Почетен екран.</string>
     <string name="snooze">Паузирај</string>
     <string name="special_sensitive_optional_permissions">Специјални чувствителни опционални дозволи</string>
@@ -352,6 +369,8 @@ Samsung Flow"</string>
     <string name="tablet_bio_auth_confirm_title">Да се корист.биомет. на Таблет за потврда?</string>
     <string name="tap_icon_to_try_iris_auth">Допрете на иконата за повторно да се обидете со препознавање зеници</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">Не може да се користи Автоматско вртење додека е вклучено Smart View за Samsung Flow.</string>
+    <string name="toast_msg_connected">Поврзувањето на Samsung Flow со %s започна.</string>
+    <string name="toast_msg_disconnected">Поврзувањето на Samsung Flow со %s заврши.</string>
     <string name="try_again">Обиди се повторно</string>
     <string name="turn_on">Вклучи</string>
     <string name="turn_on_auto_run">Вклучи Автоматско пуштање</string>
@@ -362,15 +381,20 @@ Samsung Flow"</string>
     <string name="unsupported_file">Неподдржан фајл.</string>
     <string name="update">Ажурирај</string>
     <string name="update_samsung_flow">Не може да се поврзе со %s. Ажурирајте го Samsung Flow на најновата верзија и обидете се повторно.</string>
-    <string name="welcome_button_start">Почни</string>
+    <string name="verification_method">Метод за потврда</string>
     <string name="welcome_phone_button_agree">Добро</string>
-    <string name="welcome_phone_desc">Поврзете го компјутерот или таблетот на телефонот со Samsung Flow.</string>
-    <string name="welcome_phone_desc_terms">За да продолжите, прочитајте и согласете се со %s.</string>
-    <string name="welcome_phone_title">Добре дојдовте во %s</string>
+    <string name="welcome_phone_desc1">Споделувајте документи, слики, видеа и друго помеѓу Вашиот телефон и компјутерот или таблетот на којшто е поврзан.</string>
+    <string name="welcome_phone_desc2">Проверете ги и одговорете на пораките и известувањата на телефонот на Вашиот компјутер или таблет.</string>
+    <string name="welcome_phone_desc3">Прегледувајте го и контролирајте го екранот на телефонот на Вашиот компјутер или таблет.</string>
+    <string name="welcome_phone_desc_terms">Ако продолжите, се согласувате со %s.</string>
+    <string name="welcome_phone_title1">Поврзете го телефонот со друг уред</string>
+    <string name="welcome_phone_title2">Синхронизирање на Вашите известувања</string>
+    <string name="welcome_phone_title3">Споделување на екранот на Вашиот телефон</string>
     <string name="welcome_tab_desc2">Подгответе го телефонот за да поставите Samsung Flow.</string>
     <string name="welcome_tab_desc3">Поврзете го таблетот со Вашиот телефон или компјутер со Samsung Flow.</string>
     <string name="wifi_connection_failed_text">Осигурете се дека не телефонот е вклучено Samsung Flow и дека е поврзан на истата мрежа.</string>
-    <string name="wifi_enable_warning_msg">Wi-Fi е исклучен кога е активен Мобилен хотспот. За да вклучите Wi-Fi, исклучете Мобилен хотспот.</string>
-    <string name="wifi_enable_warning_title">Да се исклучи Мобилен хотспот?</string>
+    <string name="wifi_enable_warning_msg">За да користите Wi-Fi Direct, Мобилен хотспот треба да се исклучи.</string>
+    <string name="wifi_enable_warning_title">Исклучување Мобилен хотспот</string>
+    <string name="you_can_turn_off">Можете да ја исклучите оваа функција во %s.</string>
     <string name="you_can_turn_off_this_permission">Можете да ја исклучите оваа дозвола во Поставувања > Апликации > Мени за повеќе > Посебен пристап.</string>
 </resources>

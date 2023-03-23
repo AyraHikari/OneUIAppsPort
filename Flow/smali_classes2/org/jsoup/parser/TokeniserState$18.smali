@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 339
+    .line 305
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -29,38 +29,14 @@
 
 # virtual methods
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
-    .locals 0
+    .locals 2
 
-    .line 341
-    invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->matchesLetter()Z
+    .line 307
+    sget-object v0, Lorg/jsoup/parser/TokeniserState$18;->ScriptDataEndTagName:Lorg/jsoup/parser/TokeniserState;
 
-    move-result p2
+    sget-object v1, Lorg/jsoup/parser/TokeniserState$18;->ScriptData:Lorg/jsoup/parser/TokeniserState;
 
-    if-eqz p2, :cond_0
+    invoke-static {p1, p2, v0, v1}, Lorg/jsoup/parser/TokeniserState;->access$400(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;Lorg/jsoup/parser/TokeniserState;Lorg/jsoup/parser/TokeniserState;)V
 
-    const/4 p2, 0x0
-
-    .line 342
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->createTagPending(Z)Lorg/jsoup/parser/Token$Tag;
-
-    .line 343
-    sget-object p2, Lorg/jsoup/parser/TokeniserState$18;->ScriptDataEndTagName:Lorg/jsoup/parser/TokeniserState;
-
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
-
-    goto :goto_0
-
-    :cond_0
-    const-string p2, "</"
-
-    .line 345
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
-
-    .line 346
-    sget-object p2, Lorg/jsoup/parser/TokeniserState$18;->ScriptData:Lorg/jsoup/parser/TokeniserState;
-
-    invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->transition(Lorg/jsoup/parser/TokeniserState;)V
-
-    :goto_0
     return-void
 .end method

@@ -23,6 +23,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/command/tablet/RecvHotspotControlCommand;Lcom/samsung/android/galaxycontinuity/data/HotspotInfoData;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$hotspotInfoData"
+        }
+    .end annotation
 
     .line 42
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/command/tablet/RecvHotspotControlCommand$1;->this$0:Lcom/samsung/android/galaxycontinuity/command/tablet/RecvHotspotControlCommand;
@@ -38,6 +48,16 @@
 # virtual methods
 .method public notifyResult(Ljava/lang/String;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result"
+        }
+    .end annotation
 
     const-string v0, "HotspotPWEmpty"
 
@@ -91,6 +111,18 @@
 
 .method public notifyResult(Ljava/lang/String;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "result",
+            "checked"
+        }
+    .end annotation
 
     return-void
 .end method

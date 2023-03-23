@@ -46,6 +46,16 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/galaxycontinuity/activities/tablet/SwipeDismissRecyclerViewTouchListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "listener"
+        }
+    .end annotation
 
     .line 32
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
@@ -81,7 +91,7 @@
     .line 33
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f100053
+    const p1, 0x7f11005d
 
     .line 34
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
@@ -98,6 +108,14 @@
 
 .method private getNotificationData(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flowKey"
+        }
+    .end annotation
 
     .line 132
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mNotiLock:Ljava/lang/Object;
@@ -161,6 +179,14 @@
 # virtual methods
 .method public add(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -180,7 +206,7 @@
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mFilterIndex:Ljava/lang/String;
 
-    const v2, 0x7f100053
+    const v2, 0x7f11005d
 
     .line 60
     invoke-static {v2}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
@@ -261,6 +287,14 @@
 
 .method public checkAllItems(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "checked"
+        }
+    .end annotation
 
     .line 179
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mNotiLock:Ljava/lang/Object;
@@ -468,6 +502,14 @@
 
 .method public getItem(I)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 122
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mNotificationList:Ljava/util/ArrayList;
@@ -496,6 +538,14 @@
 
 .method public getItemId(I)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 127
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->getItem(I)Lcom/samsung/android/galaxycontinuity/data/NotificationData;
@@ -537,6 +587,16 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 25
     check-cast p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;
@@ -548,6 +608,16 @@
 
 .method public onBindViewHolder(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 98
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;->getItem()Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;
@@ -605,6 +675,16 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 25
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;
@@ -616,6 +696,16 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 89
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mContext:Landroid/content/Context;
@@ -635,7 +725,7 @@
 
     check-cast p2, Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0c006c
+    const v0, 0x7f0d008e
 
     const/4 v1, 0x0
 
@@ -655,6 +745,14 @@
 
 .method public bridge synthetic onViewRecycled(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "holder"
+        }
+    .end annotation
 
     .line 25
     check-cast p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;
@@ -666,6 +764,14 @@
 
 .method public onViewRecycled(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "holder"
+        }
+    .end annotation
 
     .line 113
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationViewHolder;->getItem()Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;
@@ -679,6 +785,14 @@
 
 .method public remove(Lcom/samsung/android/galaxycontinuity/data/NotificationData;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -718,6 +832,14 @@
 
 .method public setCategoryFilter(Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "filter"
+        }
+    .end annotation
 
     .line 39
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mFilterIndex:Ljava/lang/String;
@@ -733,7 +855,7 @@
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    const v0, 0x7f100053
+    const v0, 0x7f11005d
 
     .line 41
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/ResourceUtil;->getString(I)Ljava/lang/String;
@@ -809,9 +931,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     iget-object v3, v1, Lcom/samsung/android/galaxycontinuity/data/NotificationData;->text:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -837,6 +963,16 @@
 
 .method public setItemChecked(Lcom/samsung/android/galaxycontinuity/data/NotificationData;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "item",
+            "isChecked"
+        }
+    .end annotation
 
     .line 172
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->mNotiLock:Ljava/lang/Object;
@@ -877,6 +1013,14 @@
 
 .method public setOnCheckBoxTouchListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 108
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFNotificationAdapter;->listener:Landroid/widget/CompoundButton$OnCheckedChangeListener;

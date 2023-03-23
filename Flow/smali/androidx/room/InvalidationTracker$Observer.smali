@@ -21,11 +21,21 @@
 # direct methods
 .method protected varargs constructor <init>(Ljava/lang/String;[Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "firstTable",
+            "rest"
+        }
+    .end annotation
 
-    .line 687
+    .line 745
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 688
+    .line 746
     array-length v0, p2
 
     add-int/lit8 v0, v0, 0x1
@@ -38,7 +48,7 @@
 
     iput-object v0, p0, Landroidx/room/InvalidationTracker$Observer;->mTables:[Ljava/lang/String;
 
-    .line 689
+    .line 747
     array-length p2, p2
 
     aput-object p1, v0, p2
@@ -48,11 +58,19 @@
 
 .method public constructor <init>([Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tables"
+        }
+    .end annotation
 
-    .line 697
+    .line 755
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 699
+    .line 757
     array-length v0, p1
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -77,6 +95,15 @@
 .end method
 
 .method public abstract onInvalidated(Ljava/util/Set;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tables"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

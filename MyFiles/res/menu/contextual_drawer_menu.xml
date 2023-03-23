@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_clear_recent_files" android:visible="false" android:title="@string/menu_clear_recent_files" android:showAsAction="never" />
+    <item android:id="@id/menu_move" android:visible="false" android:title="@string/menu_move" android:showAsAction="never" />
+    <item android:id="@id/menu_copy" android:visible="false" android:title="@string/menu_copy" android:showAsAction="never" />
+    <item android:id="@id/menu_delete" android:visible="false" android:title="@string/menu_delete" android:showAsAction="never" />
+    <item android:id="@id/menu_details" android:visible="false" android:title="@string/menu_details" android:showAsAction="never" />
+    <item android:id="@id/menu_rename" android:visible="false" android:title="@string/menu_rename" android:showAsAction="never" />
+    <item android:id="@id/menu_create_folder" android:visible="false" android:title="@string/menu_create_folder" android:showAsAction="never" />
+    <item android:id="@id/menu_add_to_home_screen" android:visible="false" android:title="@string/menu_add_to_home_screen" android:showAsAction="never" />
+    <item android:id="@id/menu_move_to_secure_folder" android:visible="false" android:title="@string/menu_move_to_secure_folder_ps" android:showAsAction="never" />
+    <item android:id="@id/menu_move_to_knox" android:visible="false" android:title="@string/menu_move" android:showAsAction="never" />
+    <item android:id="@id/menu_move_to_workspace" android:visible="false" android:title="@string/menu_move_to_ps" android:showAsAction="never" />
+    <item android:id="@id/menu_move_to_personal" android:visible="false" android:title="@string/menu_move_to_personal_mode" android:showAsAction="never" />
+    <item android:id="@id/menu_move_out_of_secure_folder" android:visible="false" android:title="@string/menu_move_out_of_secure_folder_ps" android:showAsAction="never" />
+</menu>

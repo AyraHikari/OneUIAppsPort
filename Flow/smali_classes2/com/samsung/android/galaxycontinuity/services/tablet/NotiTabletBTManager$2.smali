@@ -26,6 +26,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$searchDeviceCDLatch"
+        }
+    .end annotation
 
     .line 146
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$2;->this$0:Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager;
@@ -41,6 +51,14 @@
 # virtual methods
 .method public onDeviceFound(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     .line 149
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/tablet/NotiTabletBTManager$2;->val$searchDeviceCDLatch:Ljava/util/concurrent/CountDownLatch;

@@ -85,8 +85,6 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lorg/spongycastle/crypto/tls/TlsSessionImpl;->sessionParameters:Lorg/spongycastle/crypto/tls/SessionParameters;
-
     invoke-virtual {v0}, Lorg/spongycastle/crypto/tls/SessionParameters;->copy()Lorg/spongycastle/crypto/tls/SessionParameters;
 
     move-result-object v0
@@ -141,8 +139,6 @@
     if-eqz v0, :cond_0
 
     .line 39
-    iget-object v0, p0, Lorg/spongycastle/crypto/tls/TlsSessionImpl;->sessionParameters:Lorg/spongycastle/crypto/tls/SessionParameters;
-
     invoke-virtual {v0}, Lorg/spongycastle/crypto/tls/SessionParameters;->clear()V
 
     const/4 v0, 0x0

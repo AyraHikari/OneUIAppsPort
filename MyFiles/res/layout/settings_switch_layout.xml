@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.myfiles.external.ui.widget.halfmargin.MyFilesSwitch android:id="@id/allow_mobile_switch" android:tag="layout/settings_switch_layout_0" style="@style/MyFilesSwitch"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

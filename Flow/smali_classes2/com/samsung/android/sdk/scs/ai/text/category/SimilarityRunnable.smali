@@ -102,14 +102,14 @@
     .line 71
     iget-object v2, p0, Lcom/samsung/android/sdk/scs/ai/text/category/SimilarityRunnable;->mSourceText:Ljava/lang/String;
 
-    const-string v3, "sourceString"
+    const-string/jumbo v3, "sourceString"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 72
     iget-object v2, p0, Lcom/samsung/android/sdk/scs/ai/text/category/SimilarityRunnable;->mTargetTextList:Ljava/util/ArrayList;
 
-    const-string v3, "targetStringList"
+    const-string/jumbo v3, "targetStringList"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
@@ -154,7 +154,7 @@
     return-void
 
     :cond_0
-    const-string v2, "resultCode"
+    const-string/jumbo v2, "resultCode"
 
     .line 85
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -172,11 +172,15 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "unexpected resultCode!!! resultCode: "
+    const-string/jumbo v3, "unexpected resultCode!!! resultCode: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -217,14 +221,14 @@
     return-void
 
     :cond_2
-    const-string v2, "similarityArray"
+    const-string/jumbo v2, "similarityArray"
 
     .line 96
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getBooleanArray(Ljava/lang/String;)[Z
 
     move-result-object v2
 
-    const-string v3, "similarityScoreArray"
+    const-string/jumbo v3, "similarityScoreArray"
 
     .line 97
     invoke-virtual {v0, v3}, Landroid/os/Bundle;->getDoubleArray(Ljava/lang/String;)[D
@@ -251,21 +255,29 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "unexpected size!!! : "
+    const-string/jumbo v5, "unexpected size!!! : "
 
     invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     const-string v3, " vs "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     array-length v0, v0
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -336,23 +348,31 @@
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v3
+
     invoke-static {v2}, Ljava/util/Arrays;->toString([Z)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, ", similarityScoreList: "
+    move-result-object v2
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, ", similarityScoreList: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-static {v0}, Ljava/util/Arrays;->toString([D)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

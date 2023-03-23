@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Registrate e gestite fino a %d computer o tablet in Samsung Flow.
-
-Potete connettere allo smartphone un solo computer o tablet alla volta. Quando entrambi i computer o tablet registrati tentano di connettersi allo smartphone, dovrete scegliere uno dei due."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Registrate e gestite fino a %d computer o tablet in Samsung Flow.
-
-Potete connettere allo smartphone un solo computer o tablet alla volta. Quando entrambi i computer o tablet registrati tentano di connettersi allo smartphone, dovrete scegliere uno dei due."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nuove notifiche</item>
+        <item quantity="one">%d nuova notifica</item>
     </plurals>
 </resources>

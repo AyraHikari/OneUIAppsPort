@@ -7,6 +7,12 @@
 
 
 # annotations
+.annotation build Landroid/annotation/SuppressLint;
+    value = {
+        "BanParcelableUsage, ParcelClassLoader"
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Landroidx/fragment/app/Fragment;
 .end annotation
@@ -30,53 +36,70 @@
 
 
 # instance fields
-.field final mState:Landroid/os/Bundle;
+.field public final h:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 500
-    new-instance v0, Landroidx/fragment/app/Fragment$SavedState$1;
+    new-instance v0, Landroidx/fragment/app/Fragment$SavedState$a;
 
-    invoke-direct {v0}, Landroidx/fragment/app/Fragment$SavedState$1;-><init>()V
+    invoke-direct {v0}, Landroidx/fragment/app/Fragment$SavedState$a;-><init>()V
 
     sput-object v0, Landroidx/fragment/app/Fragment$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Bundle;)V
+.method public constructor <init>(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 478
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 479
-    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->mState:Landroid/os/Bundle;
+    .line 2
+    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->h:Landroid/os/Bundle;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
+.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "in",
+            "loader"
+        }
+    .end annotation
 
-    .line 482
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 483
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readBundle()Landroid/os/Bundle;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->mState:Landroid/os/Bundle;
+    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->h:Landroid/os/Bundle;
 
     if-eqz p2, :cond_0
 
     if-eqz p1, :cond_0
 
-    .line 485
+    .line 5
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
 
     :cond_0
@@ -95,9 +118,18 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
-    .line 496
-    iget-object p2, p0, Landroidx/fragment/app/Fragment$SavedState;->mState:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment$SavedState;->h:Landroid/os/Bundle;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
 

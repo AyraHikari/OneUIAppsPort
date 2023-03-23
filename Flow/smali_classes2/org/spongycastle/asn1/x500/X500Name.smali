@@ -267,22 +267,15 @@
 .method public static setDefaultStyle(Lorg/spongycastle/asn1/x500/X500NameStyle;)V
     .locals 1
 
-    if-eqz p0, :cond_0
+    const-string v0, "cannot set style to null"
+
+    .line 315
+    invoke-static {p0, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 318
     sput-object p0, Lorg/spongycastle/asn1/x500/X500Name;->defaultStyle:Lorg/spongycastle/asn1/x500/X500NameStyle;
 
     return-void
-
-    .line 315
-    :cond_0
-    new-instance p0, Ljava/lang/NullPointerException;
-
-    const-string v0, "cannot set style to null"
-
-    invoke-direct {p0, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p0
 .end method
 
 

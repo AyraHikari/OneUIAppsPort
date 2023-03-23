@@ -14,19 +14,15 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0002\u001a\u00020\u0003H\u0016\u00a8\u0006\u0004"
+        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0003\u001a\u00020\u0002H\u0016\u00a8\u0006\u0004"
     }
     d2 = {
         "okhttp3/Cache$RealCacheRequest$1",
         "Lokio/ForwardingSink;",
+        "Lbi/x;",
         "close",
-        "",
         "okhttp"
     }
     k = 0x1
@@ -39,11 +35,11 @@
 
 
 # instance fields
-.field final synthetic this$0:Lokhttp3/Cache$RealCacheRequest;
+.field public final synthetic this$0:Lokhttp3/Cache$RealCacheRequest;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/Cache$RealCacheRequest;Lokio/Sink;)V
+.method public constructor <init>(Lokhttp3/Cache$RealCacheRequest;Lokio/Sink;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -53,7 +49,6 @@
         }
     .end annotation
 
-    .line 397
     iput-object p1, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$0:Lokhttp3/Cache$RealCacheRequest;
 
     invoke-direct {p0, p2}, Lokio/ForwardingSink;-><init>(Lokio/Sink;)V
@@ -65,20 +60,15 @@
 # virtual methods
 .method public close()V
     .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    .line 400
+    .line 1
     iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$0:Lokhttp3/Cache$RealCacheRequest;
 
     iget-object v0, v0, Lokhttp3/Cache$RealCacheRequest;->this$0:Lokhttp3/Cache;
 
     monitor-enter v0
 
-    .line 401
+    .line 2
     :try_start_0
     iget-object v1, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$0:Lokhttp3/Cache$RealCacheRequest;
 
@@ -94,7 +84,7 @@
 
     return-void
 
-    .line 402
+    .line 3
     :cond_0
     :try_start_1
     iget-object v1, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$0:Lokhttp3/Cache$RealCacheRequest;
@@ -103,7 +93,7 @@
 
     invoke-virtual {v1, v2}, Lokhttp3/Cache$RealCacheRequest;->setDone(Z)V
 
-    .line 403
+    .line 4
     iget-object v1, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$0:Lokhttp3/Cache$RealCacheRequest;
 
     iget-object v1, v1, Lokhttp3/Cache$RealCacheRequest;->this$0:Lokhttp3/Cache;
@@ -118,13 +108,13 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 400
+    .line 5
     monitor-exit v0
 
-    .line 405
+    .line 6
     invoke-super {p0}, Lokio/ForwardingSink;->close()V
 
-    .line 406
+    .line 7
     iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$0:Lokhttp3/Cache$RealCacheRequest;
 
     invoke-static {v0}, Lokhttp3/Cache$RealCacheRequest;->access$getEditor$p(Lokhttp3/Cache$RealCacheRequest;)Lokhttp3/internal/cache/DiskLruCache$Editor;
@@ -138,7 +128,7 @@
     :catchall_0
     move-exception v1
 
-    .line 400
+    .line 8
     monitor-exit v0
 
     throw v1

@@ -1,83 +1,114 @@
-.class final Lcom/google/android/gms/location/zzp;
-.super Lcom/google/android/gms/internal/location/zzak;
+.class public final Lcom/google/android/gms/location/zzp;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
-
-# instance fields
-.field private final synthetic zzab:Lcom/google/android/gms/tasks/TaskCompletionSource;
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/location/FusedLocationProviderClient;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p2, p0, Lcom/google/android/gms/location/zzp;->zzab:Lcom/google/android/gms/tasks/TaskCompletionSource;
-
-    invoke-direct {p0}, Lcom/google/android/gms/internal/location/zzak;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final zza(Lcom/google/android/gms/internal/location/zzad;)V
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 8
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/location/zzad;->getStatus()Lcom/google/android/gms/common/api/Status;
-
-    move-result-object p1
-
-    if-nez p1, :cond_0
-
-    iget-object p1, p0, Lcom/google/android/gms/location/zzp;->zzab:Lcom/google/android/gms/tasks/TaskCompletionSource;
-
-    new-instance v0, Lcom/google/android/gms/common/api/ApiException;
-
-    new-instance v1, Lcom/google/android/gms/common/api/Status;
-
-    const/16 v2, 0x8
-
-    const-string v3, "Got null status from location service"
-
-    invoke-direct {v1, v2, v3}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/ApiException;-><init>(Lcom/google/android/gms/common/api/Status;)V
-
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->trySetException(Ljava/lang/Exception;)Z
-
-    return-void
-
-    :cond_0
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->getStatusCode()I
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
 
     move-result v0
 
-    if-nez v0, :cond_1
+    const/4 v1, 0x0
 
-    iget-object p1, p0, Lcom/google/android/gms/location/zzp;->zzab:Lcom/google/android/gms/tasks/TaskCompletionSource;
+    const-wide/16 v2, 0x0
 
-    const/4 v0, 0x1
+    move-wide v3, v2
 
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move v2, v1
 
-    move-result-object v0
+    .line 2
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
+    move-result v5
 
-    return-void
+    if-ge v5, v0, :cond_3
 
+    .line 3
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
+
+    move-result v5
+
+    .line 4
+    invoke-static {v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
+
+    move-result v6
+
+    const/4 v7, 0x1
+
+    if-eq v6, v7, :cond_2
+
+    const/4 v7, 0x2
+
+    if-eq v6, v7, :cond_1
+
+    const/4 v7, 0x3
+
+    if-eq v6, v7, :cond_0
+
+    .line 8
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readLong(Landroid/os/Parcel;I)J
+
+    move-result-wide v3
+
+    goto :goto_0
+
+    .line 6
     :cond_1
-    iget-object v0, p0, Lcom/google/android/gms/location/zzp;->zzab:Lcom/google/android/gms/tasks/TaskCompletionSource;
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/ApiExceptionUtil;->fromStatus(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/ApiException;
+    move-result v2
 
-    move-result-object p1
+    goto :goto_0
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->trySetException(Ljava/lang/Exception;)Z
+    .line 7
+    :cond_2
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readInt(Landroid/os/Parcel;I)I
 
-    return-void
+    move-result v1
+
+    goto :goto_0
+
+    .line 9
+    :cond_3
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
+
+    .line 10
+    new-instance p1, Lcom/google/android/gms/location/ActivityTransitionEvent;
+
+    invoke-direct {p1, v1, v2, v3, v4}, Lcom/google/android/gms/location/ActivityTransitionEvent;-><init>(IIJ)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [Lcom/google/android/gms/location/ActivityTransitionEvent;
+
+    return-object p1
 .end method

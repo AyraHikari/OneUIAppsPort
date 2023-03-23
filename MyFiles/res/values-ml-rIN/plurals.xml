@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">%d-ൽ കൂടുതൽ ഇനങ്ങൾ തിരഞ്ഞെടുക്കാനാവില്ല.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ൽ കൂടുതൽ ഇനം തിരഞ്ഞെടുക്കാനാവില്ല.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">ട്രാഷിലേക്ക് %d ഫയലുകൾ നീക്കാനാവില്ല</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ട്രാഷിലേക്ക് %d ഫയൽ നീക്കാനാവില്ല</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">%d ഫോൾഡറുകളെ ട്രാഷിലേക്ക് നീക്കാനാവില്ല</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറിനെ ട്രാഷിലേക്ക് നീക്കാനാവില്ല</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">%d ഇനങ്ങളെ ട്രാഷിലേക്ക് നീക്കാനാവില്ല</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ട്രാഷിലേക്ക് നീക്കാനാവില്ല</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">തിരഞ്ഞെടുത്ത ഫയലുകളിൽ %d എണ്ണം ക്ലൗഡിലോ ഒരു USB സംഭരണ ഉപകരണത്തിലോ ആയതിനാൽ അവ ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">തിരഞ്ഞെടുത്ത ഫയലുകളിൽ %d എണ്ണം ക്ലൗഡിലോ ഒരു USB സംഭരണ ഉപകരണത്തിലോ ആയതിനാൽ അത് ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">തിരഞ്ഞെടുത്ത ഫോൾഡറുകളിൽ %d എണ്ണം ക്ലൗഡിലോ ഒരു USB സംഭരണ ഉപകരണത്തിലോ ആയതിനാൽ അവ ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">തിരഞ്ഞെടുത്ത ഫോൾഡറുകളിൽ %d എണ്ണം ക്ലൗഡിലോ ഒരു USB സംഭരണ ഉപകരണത്തിലോ ആയതിനാൽ അത് ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">തിരഞ്ഞെടുത്ത ഇനങ്ങളിൽ %d എണ്ണം ക്ലൗഡിലോ ഒരു USB സംഭരണ ഉപകരണത്തിലോ ആയതിനാൽ അവ ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">തിരഞ്ഞെടുത്ത ഇനങ്ങളിൽ %d എണ്ണം ക്ലൗഡിലോ ഒരു USB സംഭരണ ഉപകരണത്തിലോ ആയതിനാൽ അത് ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">%d ഫയലുകൾ കം‌പ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ കം‌പ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">%d ഫയലുകൾ കം‌പ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ കം‌പ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">%d ഫോൾഡറുകൾ കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">%d ഫോൾഡറുകൾ കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">%d ഇനങ്ങൾ കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">%d ഇനങ്ങൾ കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d വീഡിയോ കംപ്രസ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">%d ഫയലുകൾ പകർത്തുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ പകർത്തുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">%d ഫയലുകൾ പകർത്തുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ പകർത്തുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">%d ഫോൾഡറുകൾ പകർത്തുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ പകർത്തുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">%d ഫോൾഡറുകൾ പകർത്തുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ പകർത്തുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">%d ഇനങ്ങൾ പകർത്തുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം പകർത്തുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">%d ഇനങ്ങൾ പകർത്തുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം പകർത്തുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">നിങ്ങളുടെ ഫോണിൽ നിന്ന് %d ഫയലുകളെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ഫോണിൽ നിന്ന് %d ഫയലിനെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">നിങ്ങളുടെ ടാബ്‌ലറ്റിൽ നിന്ന് %d ഫയലുകളെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ടാബ്‌ലറ്റിൽ നിന്ന് %d ഫയലിനെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">നിങ്ങളുടെ ഫോണിൽ നിന്ന് %d ഫോൾഡറുകളെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ഫോണിൽ നിന്ന് %d ഫോൾഡറിനെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">നിങ്ങളുടെ ടാബ്‌ലറ്റിൽ നിന്ന് %d ഫോൾഡറുകളെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ടാബ്‌ലറ്റിൽ നിന്ന് %d ഫോൾഡറിനെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">നിങ്ങളുടെ ഫോണിൽ നിന്ന് %d ഇനങ്ങളെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ഫോണിൽ നിന്ന് %d ഇനത്തെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">നിങ്ങളുടെ ടാബ്‌ലറ്റിൽ നിന്ന് %d ഇനങ്ങളെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ടാബ്‌ലറ്റിൽ നിന്ന് %d ഇനത്തെ ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">%d ഫയലുകൾ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">%d ഫോൾഡറുകൾ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">ട്രാഷിൽ നിന്ന് %d ഇനങ്ങൾ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ട്രാഷിൽ നിന്ന് %d ഇനം ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">%d ഇനങ്ങൾ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">%d ഫയലുകൾ എക്സ്ട്രാക്റ്റ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ എക്സ്ട്രാക്റ്റ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">%d ഫോൾഡറുകൾ വേർതിരിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ വേർതിരിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">%d ഇനങ്ങൾ വേർതിരിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം വേർതിരിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$s-ലെ ട്രാഷിലേക്ക് %1$d ഫയലുകളും നീക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s-ലെ ട്രാഷിലേക്ക് %1$d ഫയലും നീക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">%d ഫയലുകൾ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയല്‍ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$s-ലെ ട്രാഷിലേക്ക് %1$d ഫോൾഡറുകളും നീക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s-ലെ ട്രാഷിലേക്ക് %1$d ഫോൾഡറും നീക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">%d ഫോൾഡറുകൾ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">നിങ്ങളുടെ ആന്തരിക സംഭരണം നിറഞ്ഞു. %d ഫയലുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ആന്തരിക സംഭരണം നിറഞ്ഞു. %d ഫയലിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">നിങ്ങളുടെ ആന്തരിക സംഭരണം നിറഞ്ഞു. %d ഫോൾഡറുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ആന്തരിക സംഭരണം നിറഞ്ഞു. %d ഫോൾഡറിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">നിങ്ങളുടെ ആന്തരിക സംഭരണം നിറഞ്ഞു. %d ഇനങ്ങളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ആന്തരിക സംഭരണം നിറഞ്ഞു. %d ഇനത്തെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">നിങ്ങളുടെ ആന്തരിക സംഭരണവും SD കാർഡും നിറഞ്ഞു. %d ഫയലുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ആന്തരിക സംഭരണവും SD കാർഡും നിറഞ്ഞു. %d ഫയലിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">നിങ്ങളുടെ ആന്തരിക സംഭരണവും SD കാർഡും നിറഞ്ഞു. %d ഫോൾഡറുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ആന്തരിക സംഭരണവും SD കാർഡും നിറഞ്ഞു. %d ഫോൾഡറിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">നിങ്ങളുടെ ആന്തരിക സംഭരണവും SD കാർഡും നിറഞ്ഞു. %d ഇനങ്ങളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ ആന്തരിക സംഭരണവും SD കാർഡും നിറഞ്ഞു. %d ഇനത്തെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">%d ഇനങ്ങൾ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%2$s-ലെ ട്രാഷിലേക്ക് %1$d ഇനങ്ങളും നീക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s-ലെ ട്രാഷിലേക്ക് %1$d ഇനവും നീക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">%d-ൽ കൂടുതൽ ആപ്പ് വിൻഡോയിൽ തുറക്കാനാവില്ല.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ൽ കൂടുതൽ ആപ്പ് വിൻഡോയിൽ തുറക്കാനാവില്ല.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">%d ഫയലുകളെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയലിനെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">%d ഫയലുകളെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയലിനെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">%d ഫോൾഡറുകളെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറിനെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">%d ഫോൾഡറുകളെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറിനെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">%d ഇനങ്ങളെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">%d ഇനങ്ങളെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ട്രാഷിലേക്ക് നീക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">%d ഫയലുകളെ ട്രാഷിലേക്ക് നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയലിനെ ട്രാഷിലേക്ക് നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">%d ഫോൾഡറുകളെ ട്രാഷിലേക്ക് നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറിനെ ട്രാഷിലേക്ക് നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">%d ഇനങ്ങളെ ട്രാഷിലേക്ക് നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ട്രാഷിലേക്ക് നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">%d ഫയലുകളെ നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയലിനെ നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">%d ഫയലുകൾ നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">%d ഫോൾഡറുകളെ നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറിനെ നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">%d ഫോൾഡറുകൾ നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">%d ഇനങ്ങളെ നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">%d ഇനങ്ങളെ നീക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം നീക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d ഇനങ്ങളെ കം‌പ്രസ് ചെയ്തു</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ കം‌പ്രസ് ചെയ്തു</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d ഇനങ്ങളെ %2$s-ലേക്ക് പകർത്തി</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ഇനത്തെ %2$s-ലേക്ക് പകർത്തി</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">ഫോൾഡറും അതിലെ %d ഫയലുകളെയും ഇല്ലാതാക്കണോ?</item>
+        <item quantity="one">ഫോൾഡറും അതിലെ ഫയലും ഇല്ലാതാക്കണോ?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">%1$d ഫോൾഡറുകളെയും അവയിലെ %2$d ഫയലുകളെയും ഇല്ലാതാക്കണോ?</item>
+        <item quantity="one">ഫോൾഡറും അതിലെ ഫയലും ഇല്ലാതാക്കണോ?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d ഇനങ്ങളെ ഇല്ലാതാക്കി</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ഇല്ലാതാക്കി</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">%d ഫയലുകൾ ഡൗൺലോഡ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ ഡൗൺലോഡ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">%d ഫോൾഡറുകൾ ഡൗൺലോഡ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ ഡൗൺലോഡ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">%d ഇനങ്ങൾ ഡൗൺലോഡ് ചെയ്യുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം ഡൗൺലോഡ് ചെയ്യുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">ഫോൾഡറുകൾ പങ്കിടാനാവില്ല. ഫോൾഡറുകൾ ശുന്യമാണ്.</item>
+        <item quantity="one">ഫോൾഡർ പങ്കിടാനാവില്ല. ഫോള്‍ഡര്‍ ശുന്യമാണ്.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d ഫയലുകൾ ശാശ്വതമായി ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ ശാശ്വതമായി ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d ഫോൾഡറുകൾ ശാശ്വതമായി ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ ശാശ്വതമായി ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d ഇനങ്ങളെ എക്സ്ട്രാക്റ്റ് ചെയ്തു</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ എക്സ്ട്രാക്റ്റ് ചെയ്തു</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d ഫയലുകളെ പ്രിയപ്പെട്ടവയിൽ ചേർത്തു.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയലിനെ പ്രിയപ്പെട്ടവയിൽ ചേർത്തു.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">പ്രിയപ്പെട്ടവ എന്നതിൽ നിന്ന് %d ഫയലുകളെ നീക്കംചെയ്തു.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">പ്രിയപ്പെട്ടവ എന്നതിൽ നിന്ന് %d ഫയലിനെ നീക്കംചെയ്തു.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d ഫോൾഡറുകളെ പ്രിയപ്പെട്ടവയിൽ ചേർത്തു.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറിനെ പ്രിയപ്പെട്ടവയിൽ ചേർത്തു.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">പ്രിയപ്പെട്ടവ എന്നതിൽ നിന്ന് %d ഫോൾഡറുകളെ നീക്കംചെയ്തു.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">പ്രിയപ്പെട്ടവ എന്നതിൽ നിന്ന് %d ഫോൾഡറിനെ നീക്കംചെയ്തു.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d ഇനങ്ങളെ പ്രിയപ്പെട്ടവയിൽ ചേർത്തു.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ പ്രിയപ്പെട്ടവയിൽ ചേർത്തു.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">പ്രിയപ്പെട്ടവ എന്നതിൽ നിന്ന് %d ഇനങ്ങളെ നീക്കംചെയ്തു.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">പ്രിയപ്പെട്ടവ എന്നതിൽ നിന്ന് %d ഇനത്തെ നീക്കംചെയ്തു.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d ഇനങ്ങള്‍</item>
+        <item quantity="one">1 ഇനം</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d ഇനങ്ങള്‍</item>
+        <item quantity="one">%d ഇനം</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d ഇനങ്ങളെ ക്ലിപ്ബോർഡിലേക്ക് പകർത്തി</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ക്ലിപ്ബോർഡിലേക്ക് പകർത്തി</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d ഇനങ്ങളെ ക്ലിപ്ബോർഡിലേക്ക് നീക്കി</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ക്ലിപ്ബോർഡിലേക്ക് നീക്കി</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d ഇനങ്ങൾ തിരഞ്ഞെടുത്തു</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം തിരഞ്ഞെടുത്തു</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d ഇനങ്ങളെ %2$s-ലേക്ക് നീക്കി</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d ഇനത്തെ %2$s-ലേക്ക് നീക്കി</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d ഇനങ്ങളെ ട്രാഷിലേക്ക് നീക്കി</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ട്രാഷിലേക്ക് നീക്കി</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d തിരഞ്ഞെടുത്തു</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d തിരഞ്ഞെടുത്തു</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">നിങ്ങളുടെ SD കാർഡ് നിറഞ്ഞു. %d ഫയലുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ SD കാർഡ് നിറഞ്ഞു. %d ഫയലിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">നിങ്ങളുടെ SD കാർഡ് നിറഞ്ഞു. %d ഫോൾഡറുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ SD കാർഡ് നിറഞ്ഞു. %d ഫോൾഡറിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">നിങ്ങളുടെ SD കാർഡ് നിറഞ്ഞു. %d ഇനങ്ങളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">നിങ്ങളുടെ SD കാർഡ് നിറഞ്ഞു. %d ഇനത്തെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">%d ദിവസത്തിന് ശേഷം ഈ ഫയൽ ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ദിവസത്തിന് ശേഷം ഈ ഫയൽ ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">%d ദിവസത്തിന് ശേഷം ഈ ഫോൾഡർ ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ദിവസത്തിന് ശേഷം ഈ ഫോൾഡർ ഇല്ലാതാക്കപ്പെടും.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">%d ഫയലുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയലിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">%d ഫയലുകളെ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയലിനെ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">%d ഫയലുകൾ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫയൽ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">%d ഫോൾഡറുകളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറിനെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">%d ഫോൾഡറുകളെ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡറുകളെ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">%d ഫോൾഡറുകൾ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഫോൾഡർ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">%d ഇനങ്ങളെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ശാശ്വതമായി ഇല്ലാതാക്കണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">%d ഇനങ്ങളെ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനത്തെ ഇല്ലാതാക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">%d ഇനങ്ങൾ പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ഇനം പുനഃസ്ഥാപിക്കുന്നു…</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">%d ദിവസത്തിന് ശേഷം ഇല്ലാതാക്കുന്നു</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ദിവസത്തിന് ശേഷം ഇല്ലാതാക്കുന്നു</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">%d ആപ്പ് അൺഇൻസ്റ്റാൾ ചെയ്യണോ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ആപ്പ് അൺഇൻസ്റ്റാൾ ചെയ്യണോ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

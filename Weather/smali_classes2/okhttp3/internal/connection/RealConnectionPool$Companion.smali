@@ -45,7 +45,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 246
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +53,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 246
     invoke-direct {p0}, Lokhttp3/internal/connection/RealConnectionPool$Companion;-><init>()V
 
     return-void
@@ -67,9 +65,8 @@
 
     const-string v0, "connectionPool"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 247
     invoke-virtual {p1}, Lokhttp3/ConnectionPool;->getDelegate$okhttp()Lokhttp3/internal/connection/RealConnectionPool;
 
     move-result-object p1

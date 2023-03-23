@@ -16,7 +16,7 @@
 
 
 # virtual methods
-.method public abstract onError(I)V
+.method public abstract onError(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

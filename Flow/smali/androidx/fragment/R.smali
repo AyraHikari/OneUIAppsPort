@@ -5,12 +5,15 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/fragment/R$anim;,
+        Landroidx/fragment/R$animator;,
         Landroidx/fragment/R$attr;,
         Landroidx/fragment/R$color;,
         Landroidx/fragment/R$dimen;,
         Landroidx/fragment/R$drawable;,
         Landroidx/fragment/R$id;,
         Landroidx/fragment/R$integer;,
+        Landroidx/fragment/R$interpolator;,
         Landroidx/fragment/R$layout;,
         Landroidx/fragment/R$string;,
         Landroidx/fragment/R$style;,

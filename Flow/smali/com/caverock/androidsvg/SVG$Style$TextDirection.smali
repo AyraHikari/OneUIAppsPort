@@ -46,28 +46,26 @@
     sput-object v0, Lcom/caverock/androidsvg/SVG$Style$TextDirection;->LTR:Lcom/caverock/androidsvg/SVG$Style$TextDirection;
 
     .line 1054
-    new-instance v0, Lcom/caverock/androidsvg/SVG$Style$TextDirection;
+    new-instance v1, Lcom/caverock/androidsvg/SVG$Style$TextDirection;
 
-    const-string v1, "RTL"
+    const-string v3, "RTL"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/caverock/androidsvg/SVG$Style$TextDirection;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/caverock/androidsvg/SVG$Style$TextDirection;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/caverock/androidsvg/SVG$Style$TextDirection;->RTL:Lcom/caverock/androidsvg/SVG$Style$TextDirection;
+    sput-object v1, Lcom/caverock/androidsvg/SVG$Style$TextDirection;->RTL:Lcom/caverock/androidsvg/SVG$Style$TextDirection;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/caverock/androidsvg/SVG$Style$TextDirection;
+    new-array v3, v3, [Lcom/caverock/androidsvg/SVG$Style$TextDirection;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 1051
-    sget-object v4, Lcom/caverock/androidsvg/SVG$Style$TextDirection;->LTR:Lcom/caverock/androidsvg/SVG$Style$TextDirection;
-
-    aput-object v4, v1, v2
-
-    aput-object v0, v1, v3
-
-    sput-object v1, Lcom/caverock/androidsvg/SVG$Style$TextDirection;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Style$TextDirection;
+    sput-object v3, Lcom/caverock/androidsvg/SVG$Style$TextDirection;->ENUM$VALUES:[Lcom/caverock/androidsvg/SVG$Style$TextDirection;
 
     return-void
 .end method

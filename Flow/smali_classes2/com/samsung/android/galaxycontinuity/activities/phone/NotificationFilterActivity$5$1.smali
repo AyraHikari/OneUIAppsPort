@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$isChecked"
+        }
+    .end annotation
 
-    .line 265
+    .line 334
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5;
 
     iput-boolean p2, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5$1;->val$isChecked:Z
@@ -42,7 +52,7 @@
 .method public run()V
     .locals 3
 
-    .line 268
+    .line 337
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity;
@@ -67,7 +77,7 @@
 
     return-void
 
-    .line 271
+    .line 340
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5$1;->this$1:Lcom/samsung/android/galaxycontinuity/activities/phone/NotificationFilterActivity$5;
 

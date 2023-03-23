@@ -1,95 +1,100 @@
 .class final Lcom/google/android/gms/internal/location/zzba;
-.super Lcom/google/android/gms/internal/location/zzan;
+.super Lcom/google/android/gms/internal/location/zzaj;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # instance fields
-.field private zzdf:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder<",
-            "Lcom/google/android/gms/common/api/Status;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final zza:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder<",
-            "Lcom/google/android/gms/common/api/Status;",
-            ">;)V"
-        }
-    .end annotation
+    .locals 2
 
-    invoke-direct {p0}, Lcom/google/android/gms/internal/location/zzan;-><init>()V
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/internal/location/zzaj;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzba;->zzdf:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
+    if-eqz p1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    const-string v1, "listener can\'t be null."
+
+    .line 2
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkArgument(ZLjava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzba;->zza:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
+
+    return-void
+.end method
+
+.method private final zze(I)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzba;->zza:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
+
+    new-instance v1, Lcom/google/android/gms/common/api/Status;
+
+    sget v2, Lcom/google/android/gms/location/GeofenceStatusCodes;->GEOFENCE_NOT_AVAILABLE:I
+
+    const/16 v2, 0xd
+
+    if-eqz p1, :cond_1
+
+    const/16 v3, 0x3e8
+
+    if-lt p1, v3, :cond_0
+
+    const/16 v3, 0x3ee
+
+    if-ge p1, v3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move p1, v2
+
+    :cond_1
+    :goto_0
+    invoke-direct {v1, p1}, Lcom/google/android/gms/common/api/Status;-><init>(I)V
+
+    invoke-interface {v0, v1}, Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;->setResult(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final zza(ILandroid/app/PendingIntent;)V
-    .locals 0
-
-    const-string p1, "LocationClientImpl"
-
-    const-string p2, "Unexpected call to onRemoveGeofencesByPendingIntentResult"
-
-    invoke-static {p1, p2}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-.end method
-
-.method public final zza(I[Ljava/lang/String;)V
-    .locals 0
-
-    iget-object p2, p0, Lcom/google/android/gms/internal/location/zzba;->zzdf:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
-
-    if-nez p2, :cond_0
-
-    const-string p1, "LocationClientImpl"
-
-    const-string p2, "onAddGeofenceResult called multiple times"
-
-    invoke-static {p1, p2}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
-    invoke-static {p1}, Lcom/google/android/gms/location/LocationStatusCodes;->zzc(I)I
-
-    move-result p1
-
-    invoke-static {p1}, Lcom/google/android/gms/location/LocationStatusCodes;->zzd(I)Lcom/google/android/gms/common/api/Status;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/google/android/gms/internal/location/zzba;->zzdf:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
-
-    invoke-interface {p2, p1}, Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;->setResult(Ljava/lang/Object;)V
-
-    const/4 p1, 0x0
-
-    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzba;->zzdf:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
-
-    return-void
-.end method
-
 .method public final zzb(I[Ljava/lang/String;)V
     .locals 0
 
-    const-string p1, "LocationClientImpl"
+    .line 1
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/location/zzba;->zze(I)V
 
-    const-string p2, "Unexpected call to onRemoveGeofencesByRequestIdsResult"
+    return-void
+.end method
 
-    invoke-static {p1, p2}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
+.method public final zzc(ILandroid/app/PendingIntent;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/location/zzba;->zze(I)V
+
+    return-void
+.end method
+
+.method public final zzd(I[Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/location/zzba;->zze(I)V
 
     return-void
 .end method

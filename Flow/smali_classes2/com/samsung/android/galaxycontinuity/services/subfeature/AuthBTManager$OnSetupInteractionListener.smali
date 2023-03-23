@@ -29,15 +29,63 @@
 .end method
 
 .method public abstract setDeviceType(Ljava/lang/String;Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "deviceType",
+            "isUnlockEnabled"
+        }
+    .end annotation
 .end method
 
 .method public abstract showAuthCompletedFragment(III)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "authResult",
+            "errorCode",
+            "majorDeviceClass"
+        }
+    .end annotation
 .end method
 
 .method public abstract showPINInputOnPCFragment(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "remoteDeviceName"
+        }
+    .end annotation
 .end method
 
 .method public abstract showPasskeyConfirmFragement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "generatedPIN",
+            "remoteDeviceName",
+            "MACAddress",
+            "deviceID",
+            "majorDeviceClass",
+            "manufacturerType"
+        }
+    .end annotation
 .end method
 
 .method public abstract showPrepareFragment()V

@@ -39,8 +39,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 43
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/teletrust/TeleTrusTObjectIdentifiers;->ripemd160:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "RIPEMD160"
@@ -48,8 +46,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 44
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/teletrust/TeleTrusTObjectIdentifiers;->ripemd256:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "RIPEMD256"
@@ -57,8 +53,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 46
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/x509/X509ObjectIdentifiers;->id_SHA1:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "SHA-1"
@@ -66,8 +60,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 47
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/nist/NISTObjectIdentifiers;->id_sha224:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "SHA-224"
@@ -75,8 +67,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/nist/NISTObjectIdentifiers;->id_sha256:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "SHA-256"
@@ -84,8 +74,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 49
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/nist/NISTObjectIdentifiers;->id_sha384:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "SHA-384"
@@ -93,8 +81,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 50
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/nist/NISTObjectIdentifiers;->id_sha512:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "SHA-512"
@@ -102,8 +88,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 51
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/nist/NISTObjectIdentifiers;->id_sha512_224:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "SHA-512/224"
@@ -111,8 +95,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 52
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/nist/NISTObjectIdentifiers;->id_sha512_256:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "SHA-512/256"
@@ -120,8 +102,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 54
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->md2:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "MD2"
@@ -129,8 +109,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 55
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->md4:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "MD4"
@@ -138,8 +116,6 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 56
-    sget-object v0, Lorg/spongycastle/crypto/signers/RSADigestSigner;->oidMap:Ljava/util/Hashtable;
-
     sget-object v1, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->md5:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
 
     const-string v2, "MD5"
@@ -288,15 +264,19 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "unable to encode signature: "
+    const-string/jumbo v3, "unable to encode signature: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -333,9 +313,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "withRSA"
+    move-result-object v0
+
+    const-string/jumbo v1, "withRSA"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -390,7 +374,7 @@
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "signing requires private key"
+    const-string/jumbo p2, "signing requires private key"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -413,7 +397,7 @@
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string p2, "verification requires public key"
+    const-string/jumbo p2, "verification requires public key"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

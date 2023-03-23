@@ -16,7 +16,23 @@
 
 # virtual methods
 .method public abstract onItemClick(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 .end method
 
 .method public abstract onItemLongPress(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationListItem;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 .end method

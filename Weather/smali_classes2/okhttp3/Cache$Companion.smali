@@ -13,10 +13,6 @@
     name = "Companion"
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Cache.kt\nokhttp3/Cache$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,783:1\n2418#2,3:784\n*E\n*S KotlinDebug\n*F\n+ 1 Cache.kt\nokhttp3/Cache$Companion\n*L\n724#1,3:784\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -72,7 +68,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 692
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -81,7 +76,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 692
     invoke-direct {p0}, Lokhttp3/Cache$Companion;-><init>()V
 
     return-void
@@ -100,24 +94,21 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    .line 736
-    check-cast v0, Ljava/util/Set;
-
-    .line 737
+    .line 1
     invoke-virtual {p1}, Lokhttp3/Headers;->size()I
 
-    move-result v1
+    move-result v0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    move v3, v2
+    move v3, v1
 
     :goto_0
-    if-ge v3, v1, :cond_3
+    if-ge v3, v0, :cond_3
 
-    .line 738
+    .line 2
     invoke-virtual {p1, v3}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v4
@@ -126,7 +117,7 @@
 
     const/4 v6, 0x1
 
-    invoke-static {v5, v4, v6}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v5, v4, v6}, Lhl/t;->q(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v4
 
@@ -134,38 +125,31 @@
 
     goto :goto_2
 
-    .line 742
+    .line 3
     :cond_0
     invoke-virtual {p1, v3}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
+    move-result-object v7
+
+    if-nez v2, :cond_1
+
+    .line 4
+    new-instance v2, Ljava/util/TreeSet;
+
+    sget-object v4, Loi/g0;->a:Loi/g0;
+
+    invoke-static {v4}, Lhl/t;->s(Loi/g0;)Ljava/util/Comparator;
+
     move-result-object v4
 
-    if-nez v0, :cond_1
+    invoke-direct {v2, v4}, Ljava/util/TreeSet;-><init>(Ljava/util/Comparator;)V
 
-    .line 744
-    new-instance v0, Ljava/util/TreeSet;
-
-    sget-object v5, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
-
-    invoke-static {v5}, Lkotlin/text/StringsKt;->getCASE_INSENSITIVE_ORDER(Lkotlin/jvm/internal/StringCompanionObject;)Ljava/util/Comparator;
-
-    move-result-object v5
-
-    invoke-direct {v0, v5}, Ljava/util/TreeSet;-><init>(Ljava/util/Comparator;)V
-
-    check-cast v0, Ljava/util/Set;
-
-    .line 746
     :cond_1
-    move-object v7, v4
-
-    check-cast v7, Ljava/lang/CharSequence;
-
     new-array v8, v6, [C
 
     const/16 v4, 0x2c
 
-    aput-char v4, v8, v2
+    aput-char v4, v8, v1
 
     const/4 v9, 0x0
 
@@ -175,7 +159,8 @@
 
     const/4 v12, 0x0
 
-    invoke-static/range {v7 .. v12}, Lkotlin/text/StringsKt;->split$default(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
+    .line 5
+    invoke-static/range {v7 .. v12}, Lhl/u;->u0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
@@ -198,12 +183,10 @@
 
     const-string v6, "null cannot be cast to non-null type kotlin.CharSequence"
 
-    .line 747
+    .line 6
     invoke-static {v5, v6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    check-cast v5, Ljava/lang/CharSequence;
-
-    invoke-static {v5}, Lkotlin/text/StringsKt;->trim(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v5}, Lhl/u;->O0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -211,7 +194,7 @@
 
     move-result-object v5
 
-    invoke-interface {v0, v5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    invoke-interface {v2, v5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -222,33 +205,29 @@
     goto :goto_0
 
     :cond_3
-    if-eqz v0, :cond_4
+    if-eqz v2, :cond_4
 
     goto :goto_3
 
-    .line 750
+    .line 7
     :cond_4
-    invoke-static {}, Lkotlin/collections/SetsKt;->emptySet()Ljava/util/Set;
+    invoke-static {}, Lci/q0;->b()Ljava/util/Set;
 
-    move-result-object v0
+    move-result-object v2
 
     :goto_3
-    return-object v0
+    return-object v2
 .end method
 
 .method private final varyHeaders(Lokhttp3/Headers;Lokhttp3/Headers;)Lokhttp3/Headers;
     .locals 5
 
-    .line 769
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Cache$Companion;
-
-    invoke-direct {v0, p2}, Lokhttp3/Cache$Companion;->varyFields(Lokhttp3/Headers;)Ljava/util/Set;
+    .line 4
+    invoke-direct {p0, p2}, Lokhttp3/Cache$Companion;->varyFields(Lokhttp3/Headers;)Ljava/util/Set;
 
     move-result-object p2
 
-    .line 770
+    .line 5
     invoke-interface {p2}, Ljava/util/Set;->isEmpty()Z
 
     move-result v0
@@ -259,7 +238,7 @@
 
     return-object p1
 
-    .line 772
+    .line 6
     :cond_0
     new-instance v0, Lokhttp3/Headers$Builder;
 
@@ -267,7 +246,7 @@
 
     const/4 v1, 0x0
 
-    .line 773
+    .line 7
     invoke-virtual {p1}, Lokhttp3/Headers;->size()I
 
     move-result v2
@@ -275,19 +254,19 @@
     :goto_0
     if-ge v1, v2, :cond_2
 
-    .line 774
+    .line 8
     invoke-virtual {p1, v1}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 775
+    .line 9
     invoke-interface {p2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 776
+    .line 10
     invoke-virtual {p1, v1}, Lokhttp3/Headers;->value(I)Ljava/lang/String;
 
     move-result-object v4
@@ -299,7 +278,7 @@
 
     goto :goto_0
 
-    .line 779
+    .line 11
     :cond_2
     invoke-virtual {v0}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
 
@@ -315,18 +294,13 @@
 
     const-string v0, "$this$hasVaryAll"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 730
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Cache$Companion;
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Lokhttp3/Response;->headers()Lokhttp3/Headers;
 
     move-result-object p1
 
-    invoke-direct {v0, p1}, Lokhttp3/Cache$Companion;->varyFields(Lokhttp3/Headers;)Ljava/util/Set;
+    invoke-direct {p0, p1}, Lokhttp3/Cache$Companion;->varyFields(Lokhttp3/Headers;)Ljava/util/Set;
 
     move-result-object p1
 
@@ -341,14 +315,11 @@
 
 .method public final key(Lokhttp3/HttpUrl;)Ljava/lang/String;
     .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     const-string v0, "url"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 699
     sget-object v0, Lokio/ByteString;->Companion:Lokio/ByteString$Companion;
 
     invoke-virtual {p1}, Lokhttp3/HttpUrl;->toString()Ljava/lang/String;
@@ -372,23 +343,18 @@
 
 .method public final readInt$okhttp(Lokio/BufferedSource;)I
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 704
+    .line 1
     :try_start_0
     invoke-interface {p1}, Lokio/BufferedSource;->readDecimalLong()J
 
     move-result-wide v0
 
-    .line 705
+    .line 2
     invoke-interface {p1}, Lokio/BufferedSource;->readUtf8LineStrict()Ljava/lang/String;
 
     move-result-object p1
@@ -407,12 +373,8 @@
 
     if-gtz v2, :cond_1
 
-    .line 706
-    move-object v2, p1
-
-    check-cast v2, Ljava/lang/CharSequence;
-
-    invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
+    .line 3
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
 
@@ -432,7 +394,7 @@
 
     return p1
 
-    .line 707
+    .line 4
     :cond_1
     new-instance v2, Ljava/io/IOException;
 
@@ -444,29 +406,19 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
-
     invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 p1, 0x22
 
-    move-result-object p1
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    const/16 v0, 0x22
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v2, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    check-cast v2, Ljava/lang/Throwable;
 
     throw v2
     :try_end_0
@@ -475,7 +427,7 @@
     :catch_0
     move-exception p1
 
-    .line 711
+    .line 5
     new-instance v0, Ljava/io/IOException;
 
     invoke-virtual {p1}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
@@ -484,24 +436,22 @@
 
     invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    check-cast v0, Ljava/lang/Throwable;
-
     throw v0
 .end method
 
 .method public final varyHeaders(Lokhttp3/Response;)Lokhttp3/Headers;
-    .locals 2
+    .locals 1
 
     const-string v0, "$this$varyHeaders"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 759
+    .line 1
     invoke-virtual {p1}, Lokhttp3/Response;->networkResponse()Lokhttp3/Response;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v0}, Loi/k;->d(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Lokhttp3/Response;->request()Lokhttp3/Request;
 
@@ -511,17 +461,13 @@
 
     move-result-object v0
 
-    .line 760
+    .line 2
     invoke-virtual {p1}, Lokhttp3/Response;->headers()Lokhttp3/Headers;
 
     move-result-object p1
 
-    .line 761
-    move-object v1, p0
-
-    check-cast v1, Lokhttp3/Cache$Companion;
-
-    invoke-direct {v1, v0, p1}, Lokhttp3/Cache$Companion;->varyHeaders(Lokhttp3/Headers;Lokhttp3/Headers;)Lokhttp3/Headers;
+    .line 3
+    invoke-direct {p0, v0, p1}, Lokhttp3/Cache$Companion;->varyHeaders(Lokhttp3/Headers;Lokhttp3/Headers;)Lokhttp3/Headers;
 
     move-result-object p1
 
@@ -533,43 +479,33 @@
 
     const-string v0, "cachedResponse"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "cachedRequest"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "newRequest"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 724
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/Cache$Companion;
-
+    .line 1
     invoke-virtual {p1}, Lokhttp3/Response;->headers()Lokhttp3/Headers;
 
     move-result-object p1
 
-    invoke-direct {v0, p1}, Lokhttp3/Cache$Companion;->varyFields(Lokhttp3/Headers;)Ljava/util/Set;
+    invoke-direct {p0, p1}, Lokhttp3/Cache$Companion;->varyFields(Lokhttp3/Headers;)Ljava/util/Set;
 
     move-result-object p1
 
-    check-cast p1, Ljava/lang/Iterable;
-
-    .line 784
+    .line 2
     instance-of v0, p1, Ljava/util/Collection;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    move-object v0, p1
-
-    check-cast v0, Ljava/util/Collection;
-
-    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
@@ -577,7 +513,7 @@
 
     goto :goto_0
 
-    .line 785
+    .line 3
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -596,7 +532,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 725
+    .line 4
     invoke-virtual {p2, v0}, Lokhttp3/Headers;->values(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v2
@@ -605,7 +541,7 @@
 
     move-result-object v0
 
-    invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v0}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

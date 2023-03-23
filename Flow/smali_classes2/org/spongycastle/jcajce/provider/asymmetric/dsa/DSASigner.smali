@@ -178,11 +178,13 @@
     if-eqz v0, :cond_0
 
     .line 106
-    new-instance v1, Lorg/spongycastle/crypto/params/ParametersWithRandom;
+    new-instance v0, Lorg/spongycastle/crypto/params/ParametersWithRandom;
 
-    invoke-direct {v1, p1, v0}, Lorg/spongycastle/crypto/params/ParametersWithRandom;-><init>(Lorg/spongycastle/crypto/CipherParameters;Ljava/security/SecureRandom;)V
+    iget-object v1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/dsa/DSASigner;->random:Ljava/security/SecureRandom;
 
-    move-object p1, v1
+    invoke-direct {v0, p1, v1}, Lorg/spongycastle/crypto/params/ParametersWithRandom;-><init>(Lorg/spongycastle/crypto/CipherParameters;Ljava/security/SecureRandom;)V
+
+    move-object p1, v0
 
     .line 109
     :cond_0

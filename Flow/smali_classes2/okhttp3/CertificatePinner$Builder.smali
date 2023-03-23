@@ -48,7 +48,10 @@
 .method public varargs add(Ljava/lang/String;[Ljava/lang/String;)Lokhttp3/CertificatePinner$Builder;
     .locals 5
 
-    if-eqz p1, :cond_1
+    const-string v0, "pattern == null"
+
+    .line 331
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 333
     array-length v0, p2
@@ -75,16 +78,6 @@
 
     :cond_0
     return-object p0
-
-    .line 331
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "pattern == null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public build()Lokhttp3/CertificatePinner;

@@ -3,7 +3,7 @@
 .source "NotificationsActivity.java"
 
 # interfaces
-.implements Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$IClipSyncStateListener;
+.implements Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$IShareStateListener;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field mainHandler:Landroid/os/Handler;
+.field private mState:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
 
 .field final synthetic this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
@@ -26,52 +26,60 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1228
+    .line 1424
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x0
+    .line 1425
+    sget-object p1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;->SHARE_NONE:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
 
-    .line 1229
-    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->mainHandler:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->mState:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onStateChanged(Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;)V
-    .locals 2
+.method public onStateChanged(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 1233
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->mainHandler:Landroid/os/Handler;
+    .line 1429
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->mState:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
 
-    if-nez v0, :cond_0
+    if-ne p1, v0, :cond_0
 
-    .line 1234
-    new-instance v0, Landroid/os/Handler;
+    return-void
 
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
-
-    invoke-virtual {v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->mainHandler:Landroid/os/Handler;
-
-    .line 1236
+    .line 1432
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->mainHandler:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->mState:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
 
-    new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14$1;
+    .line 1434
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;
 
-    invoke-direct {v1, p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;Lcom/samsung/android/galaxycontinuity/clipboard/ClipboardSyncManager$SYNC_STATE;)V
+    new-instance v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14$1;
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-direct {v0, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity$14;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/NotificationsActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     return-void
 .end method

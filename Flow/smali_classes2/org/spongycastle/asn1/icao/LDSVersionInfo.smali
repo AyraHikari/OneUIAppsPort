@@ -80,7 +80,7 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "sequence wrong size for LDSVersionInfo"
+    const-string/jumbo v0, "sequence wrong size for LDSVersionInfo"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

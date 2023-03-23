@@ -3,12 +3,12 @@
 .source "Fragment.java"
 
 # interfaces
-.implements Landroidx/lifecycle/GenericLifecycleObserver;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/Fragment;->initLifecycle()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/fragment/app/Fragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Landroidx/fragment/app/Fragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 418
+    .line 273
     iput-object p1, p0, Landroidx/fragment/app/Fragment$1;->this$0:Landroidx/fragment/app/Fragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,28 +43,13 @@
 
 
 # virtual methods
-.method public onStateChanged(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
-    .locals 0
+.method public run()V
+    .locals 1
 
-    .line 421
-    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
+    .line 276
+    iget-object v0, p0, Landroidx/fragment/app/Fragment$1;->this$0:Landroidx/fragment/app/Fragment;
 
-    if-ne p2, p1, :cond_0
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->startPostponedEnterTransition()V
 
-    .line 422
-    iget-object p1, p0, Landroidx/fragment/app/Fragment$1;->this$0:Landroidx/fragment/app/Fragment;
-
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;
-
-    if-eqz p1, :cond_0
-
-    .line 423
-    iget-object p1, p0, Landroidx/fragment/app/Fragment$1;->this$0:Landroidx/fragment/app/Fragment;
-
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;
-
-    invoke-virtual {p1}, Landroid/view/View;->cancelPendingInputEvents()V
-
-    :cond_0
     return-void
 .end method

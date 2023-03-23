@@ -3,11 +3,19 @@
 .source "PathUtils.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/graphics/PathUtils$Api26Impl;
+    }
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 82
+    .line 83
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,6 +23,15 @@
 
 .method public static flatten(Landroid/graphics/Path;)Ljava/util/Collection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -28,7 +45,7 @@
 
     const/high16 v0, 0x3f000000    # 0.5f
 
-    .line 43
+    .line 44
     invoke-static {p0, v0}, Landroidx/core/graphics/PathUtils;->flatten(Landroid/graphics/Path;F)Ljava/util/Collection;
 
     move-result-object p0
@@ -38,6 +55,17 @@
 
 .method public static flatten(Landroid/graphics/Path;F)Ljava/util/Collection;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "path",
+            "error"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,17 +77,17 @@
         }
     .end annotation
 
-    .line 60
-    invoke-virtual {p0, p1}, Landroid/graphics/Path;->approximate(F)[F
+    .line 61
+    invoke-static {p0, p1}, Landroidx/core/graphics/PathUtils$Api26Impl;->approximate(Landroid/graphics/Path;F)[F
 
     move-result-object p0
 
-    .line 61
+    .line 62
     array-length p1, p0
 
     div-int/lit8 p1, p1, 0x3
 
-    .line 62
+    .line 63
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(I)V
@@ -75,30 +103,30 @@
 
     mul-int/lit8 v3, v3, 0x3
 
-    .line 67
+    .line 68
     aget v4, p0, v2
 
     add-int/lit8 v5, v2, 0x1
 
-    .line 68
+    .line 69
     aget v5, p0, v5
 
     add-int/lit8 v2, v2, 0x2
 
-    .line 69
+    .line 70
     aget v2, p0, v2
 
-    .line 71
+    .line 72
     aget v6, p0, v3
 
     add-int/lit8 v7, v3, 0x1
 
-    .line 72
+    .line 73
     aget v7, p0, v7
 
     add-int/lit8 v3, v3, 0x2
 
-    .line 73
+    .line 74
     aget v3, p0, v3
 
     cmpl-float v8, v4, v6
@@ -113,7 +141,7 @@
 
     if-eqz v8, :cond_1
 
-    .line 76
+    .line 77
     :cond_0
     new-instance v8, Landroidx/core/graphics/PathSegment;
 

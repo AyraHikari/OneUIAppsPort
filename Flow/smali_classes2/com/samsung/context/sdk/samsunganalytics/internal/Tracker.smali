@@ -40,6 +40,16 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "application",
+            "configuration"
+        }
+    .end annotation
 
     .line 73
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,6 +75,7 @@
 
     if-eqz v0, :cond_0
 
+    .line 78
     sget-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;->CUSTOM_TERMS:Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;
 
     goto :goto_0
@@ -225,9 +236,11 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p2, "Tracker start:2.01.007"
+    const-string p2, "Tracker start:2.01.008"
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     sget-object p2, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;->sdkPolicy:Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;
 
@@ -240,6 +253,8 @@
     move-result-object p2
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -346,6 +361,14 @@
 
 .method private compareCFVersion(Ljava/lang/String;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "CF_PKG"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -669,7 +692,7 @@
     .line 161
     sget-object v1, Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;->DLS_DIR:Lcom/samsung/context/sdk/samsunganalytics/internal/connection/Directory;
 
-    const-string v2, "uri"
+    const-string/jumbo v2, "uri"
 
     invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -808,6 +831,8 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     sget-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;->sdkPolicy:Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;
 
     invoke-virtual {v2}, Lcom/samsung/context/sdk/samsunganalytics/internal/policy/PolicyType;->getSenderType()Lcom/samsung/context/sdk/samsunganalytics/internal/sender/Sender$Type;
@@ -815,6 +840,8 @@
     move-result-object v2
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1013,6 +1040,15 @@
 
 .method private saveSettingLog(Ljava/util/Map;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "log"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1023,7 +1059,7 @@
         }
     .end annotation
 
-    const-string v0, "t"
+    const-string/jumbo v0, "t"
 
     .line 294
     invoke-interface {p1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1178,7 +1214,7 @@
 
     if-nez v0, :cond_0
 
-    const-string v0, "user do not agree setting"
+    const-string/jumbo v0, "user do not agree setting"
 
     .line 440
     invoke-static {v0}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Debug;->LogD(Ljava/lang/String;)V
@@ -1197,7 +1233,7 @@
 
     const-wide/16 v2, 0x0
 
-    const-string v4, "status_sent_date"
+    const-string/jumbo v4, "status_sent_date"
 
     invoke-interface {v1, v4, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
@@ -1221,7 +1257,7 @@
     return-void
 
     :cond_1
-    const-string v0, "send setting"
+    const-string/jumbo v0, "send setting"
 
     .line 449
     invoke-static {v0}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Debug;->LogD(Ljava/lang/String;)V
@@ -1292,6 +1328,16 @@
 
 .method private setDeviceId(Ljava/lang/String;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "did",
+            "auidType"
+        }
+    .end annotation
 
     .line 340
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/Tracker;->application:Landroid/app/Application;
@@ -1345,6 +1391,14 @@
 # virtual methods
 .method public changeUserAgreementState(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isAgree"
+        }
+    .end annotation
 
     if-nez p1, :cond_2
 
@@ -1391,7 +1445,7 @@
 
     move-result-object v1
 
-    const-string v2, "tid"
+    const-string/jumbo v2, "tid"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -1511,6 +1565,18 @@
 
 .method public enableUncaughtExceptionLogging(Ljava/lang/String;ZZ)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "serviceID",
+            "wifiOnly",
+            "useDiagnostic"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -1591,6 +1657,15 @@
 
 .method public registerSettingPref(Ljava/util/Map;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1660,6 +1735,17 @@
 
 .method public sendLog(Ljava/util/Map;Z)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "log",
+            "isSync"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1677,7 +1763,7 @@
 
     if-nez v0, :cond_0
 
-    const-string p1, "user do not agree"
+    const-string/jumbo p1, "user do not agree"
 
     .line 266
     invoke-static {p1}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Debug;->LogD(Ljava/lang/String;)V
@@ -1722,7 +1808,7 @@
     return p1
 
     :cond_3
-    const-string v0, "t"
+    const-string/jumbo v0, "t"
 
     .line 278
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout android:tag="layout/detail_insight_view_holder_0" android:layout_width="fill_parent" android:layout_height="@dimen/insight_card_height"
+<com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout android:tag="layout/detail_insight_view_holder_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rvInsights" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rvInsights" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/insightIndicator" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/insight_page_indicator_dot_size" android:layout_marginBottom="@dimen/insight_indicator_margin_bottom" app:layout_constraintBottom_toBottomOf="parent" />
-</com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout>
+</com.sec.android.daemonapp.app.detail.view.DetailCardConstraintLayout>

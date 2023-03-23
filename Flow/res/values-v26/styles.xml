@@ -3,9 +3,9 @@
     <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat" />
     <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light" />
     <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar" />
-    <style name="Widget.Material.AppBarLayout" parent="@android:style/Widget">
-        <item name="android:paddingBottom">@dimen/sesl_material_extended_appbar_bottom_padding</item>
-        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:paddingBottom">@dimen/sesl_extended_appbar_bottom_padding</item>
+        <item name="android:stateListAnimator">@animator/sesl_appbar_state_list_animator</item>
         <item name="android:touchscreenBlocksFocus">false</item>
         <item name="android:keyboardNavigationCluster">true</item>
     </style>

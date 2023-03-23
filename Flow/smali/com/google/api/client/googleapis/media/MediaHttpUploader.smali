@@ -864,7 +864,7 @@
 .end method
 
 .method private setContentAndHeadersOnCurrentRequest()V
-    .locals 7
+    .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -976,35 +976,32 @@
 
     if-nez v1, :cond_2
 
-    add-int/lit8 v1, v0, 0x1
+    add-int/lit8 v3, v0, 0x1
 
     goto :goto_1
 
     :cond_2
-    move v1, v0
+    move v3, v0
 
     :goto_1
-    add-int/lit8 v3, v0, 0x1
+    add-int/lit8 v4, v0, 0x1
 
     .line 603
-    new-array v3, v3, [B
+    new-array v4, v4, [B
 
-    iput-object v3, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->currentRequestContentBuffer:[B
+    iput-object v4, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->currentRequestContentBuffer:[B
 
-    .line 604
-    iget-object v4, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->cachedByte:Ljava/lang/Byte;
-
-    if-eqz v4, :cond_3
+    if-eqz v1, :cond_3
 
     .line 605
-    invoke-virtual {v4}, Ljava/lang/Byte;->byteValue()B
+    invoke-virtual {v1}, Ljava/lang/Byte;->byteValue()B
 
-    move-result v4
+    move-result v1
 
-    aput-byte v4, v3, v2
+    aput-byte v1, v4, v2
 
     :cond_3
-    move v3, v2
+    move v1, v2
 
     goto :goto_2
 
@@ -1042,6 +1039,12 @@
     :cond_5
     sub-int v1, v0, v3
 
+    move v7, v3
+
+    move v3, v1
+
+    move v1, v7
+
     .line 629
     :goto_2
     iget-object v4, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->contentInputStream:Ljava/io/InputStream;
@@ -1050,27 +1053,27 @@
 
     add-int/lit8 v6, v0, 0x1
 
-    sub-int/2addr v6, v1
+    sub-int/2addr v6, v3
 
-    invoke-static {v4, v5, v6, v1}, Lcom/google/api/client/util/ByteStreams;->read(Ljava/io/InputStream;[BII)I
+    invoke-static {v4, v5, v6, v3}, Lcom/google/api/client/util/ByteStreams;->read(Ljava/io/InputStream;[BII)I
 
     move-result v4
 
-    if-ge v4, v1, :cond_8
+    if-ge v4, v3, :cond_8
 
     .line 634
     invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
 
     move-result v0
 
-    add-int/2addr v3, v0
+    add-int/2addr v1, v0
 
     .line 635
     iget-object v0, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->cachedByte:Ljava/lang/Byte;
 
     if-eqz v0, :cond_6
 
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     const/4 v0, 0x0
 
@@ -1081,29 +1084,29 @@
     :cond_6
     iget-object v0, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->mediaContentLengthStr:Ljava/lang/String;
 
-    const-string v1, "*"
+    const-string v3, "*"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
     .line 643
-    iget-wide v0, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->totalBytesServerReceived:J
+    iget-wide v3, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->totalBytesServerReceived:J
 
-    int-to-long v4, v3
+    int-to-long v5, v1
 
-    add-long/2addr v0, v4
+    add-long/2addr v3, v5
 
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+    invoke-static {v3, v4}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->mediaContentLengthStr:Ljava/lang/String;
 
     :cond_7
-    move v0, v3
+    move v0, v1
 
     goto :goto_3
 
@@ -1168,9 +1171,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget-object v2, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->mediaContentLengthStr:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1196,13 +1203,19 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     iget-wide v3, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->totalBytesServerReceived:J
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    move-result-object v2
+
     const-string v3, "-"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     iget-wide v3, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->totalBytesServerReceived:J
 
@@ -1216,15 +1229,21 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string v0, "/"
+    move-result-object v0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "/"
 
-    iget-object v0, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->mediaContentLengthStr:Ljava/lang/String;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->mediaContentLengthStr:Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1455,9 +1474,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     iget-object v2, p0, Lcom/google/api/client/googleapis/media/MediaHttpUploader;->mediaContentLengthStr:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

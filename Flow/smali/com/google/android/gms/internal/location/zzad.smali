@@ -1,87 +1,63 @@
-.class public final Lcom/google/android/gms/internal/location/zzad;
-.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
-
-# interfaces
-.implements Lcom/google/android/gms/common/api/Result;
-
-
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lcom/google/android/gms/internal/location/zzad;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final zzcr:Lcom/google/android/gms/internal/location/zzad;
+.class final Lcom/google/android/gms/internal/location/zzad;
+.super Lcom/google/android/gms/internal/location/zzae;
+.source "com.google.android.gms:play-services-location@@20.0.0"
 
 
 # instance fields
-.field private final zzbl:Lcom/google/android/gms/common/api/Status;
+.field final synthetic zza:Lcom/google/android/gms/location/zzbx;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    new-instance v0, Lcom/google/android/gms/internal/location/zzad;
-
-    sget-object v1, Lcom/google/android/gms/common/api/Status;->RESULT_SUCCESS:Lcom/google/android/gms/common/api/Status;
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/location/zzad;-><init>(Lcom/google/android/gms/common/api/Status;)V
-
-    sput-object v0, Lcom/google/android/gms/internal/location/zzad;->zzcr:Lcom/google/android/gms/internal/location/zzad;
-
-    new-instance v0, Lcom/google/android/gms/internal/location/zzae;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/location/zzae;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/internal/location/zzad;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/google/android/gms/common/api/Status;)V
+.method constructor <init>(Lcom/google/android/gms/internal/location/zzaf;Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/zzbx;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+    .line 1
+    iput-object p3, p0, Lcom/google/android/gms/internal/location/zzad;->zza:Lcom/google/android/gms/location/zzbx;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzad;->zzbl:Lcom/google/android/gms/common/api/Status;
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/location/zzae;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getStatus()Lcom/google/android/gms/common/api/Status;
-    .locals 1
+.method protected final synthetic doExecute(Lcom/google/android/gms/common/api/Api$AnyClient;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzad;->zzbl:Lcom/google/android/gms/common/api/Status;
+    .line 1
+    check-cast p1, Lcom/google/android/gms/internal/location/zzbe;
 
-    return-object v0
-.end method
+    iget-object v0, p0, Lcom/google/android/gms/internal/location/zzad;->zza:Lcom/google/android/gms/location/zzbx;
 
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
+    const-string v1, "removeGeofencingRequest can\'t be null."
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
+    .line 2
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v0
+    const-string v1, "ResultHolder not provided."
 
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/location/zzad;->getStatus()Lcom/google/android/gms/common/api/Status;
+    .line 3
+    invoke-static {p0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    new-instance v1, Lcom/google/android/gms/internal/location/zzba;
 
-    const/4 v2, 0x1
+    .line 4
+    invoke-direct {v1, p0}, Lcom/google/android/gms/internal/location/zzba;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
 
-    const/4 v3, 0x0
+    .line 5
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/location/zzbe;->getService()Landroid/os/IInterface;
 
-    invoke-static {p1, v2, v1, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeParcelable(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    move-result-object p1
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->finishObjectHeader(Landroid/os/Parcel;I)V
+    .line 6
+    check-cast p1, Lcom/google/android/gms/internal/location/zzam;
+
+    invoke-interface {p1, v0, v1}, Lcom/google/android/gms/internal/location/zzam;->zzm(Lcom/google/android/gms/location/zzbx;Lcom/google/android/gms/internal/location/zzak;)V
 
     return-void
 .end method

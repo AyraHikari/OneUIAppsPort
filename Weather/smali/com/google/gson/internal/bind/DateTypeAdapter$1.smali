@@ -3,7 +3,7 @@
 .source "DateTypeAdapter.java"
 
 # interfaces
-.implements Lcom/google/gson/TypeAdapterFactory;
+.implements Lcom/google/gson/t;
 
 
 # annotations
@@ -12,16 +12,15 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public create(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
+.method public b(Lcom/google/gson/Gson;Ll6/a;)Lcom/google/gson/TypeAdapter;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,15 +36,14 @@
             "Ljava/lang/Object;",
             ">(",
             "Lcom/google/gson/Gson;",
-            "Lcom/google/gson/reflect/TypeToken<",
+            "Ll6/a<",
             "TT;>;)",
             "Lcom/google/gson/TypeAdapter<",
             "TT;>;"
         }
     .end annotation
 
-    .line 50
-    invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
+    invoke-virtual {p2}, Ll6/a;->c()Ljava/lang/Class;
 
     move-result-object p1
 

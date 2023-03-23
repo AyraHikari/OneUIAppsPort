@@ -60,6 +60,7 @@
     <string name="air_quality">Luftkvalitet</string>
     <string name="air_quality_next_tts">Senare dagliga luftkvalitetsprognoser</string>
     <string name="air_quality_previous_tts">Tidigare dagliga luftkvalitetsprognoser</string>
+    <string name="alert_title">Varning om svåra väderförhållanden</string>
     <string name="all_added_cities">Alla tillagda orter</string>
     <string name="allow">Tillåt</string>
     <string name="allow_permission_in_settings">Om du vill använda denna funktion måste du tillåta behörigheten i Inställningar.</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">Åtgärden stöds inte.</string>
     <string name="apply_daylight_saving_time">Använd sommartid?</string>
     <string name="as_possible_after_verification">Rapporten har skickats. Ortsnamnet ändras så snart som möjligt efter verifiering.</string>
+    <string name="auto_refresh_on_screen_description">Få uppdaterad väderinformation automatiskt varje timme. När funktionen är på kan du inte uppdatera manuellt.</string>
+    <string name="auto_refresh_on_the_go">Uppdatera automatiskt när du är på väg</string>
+    <string name="auto_refresh_on_the_go_advanced">Avancerat</string>
+    <string name="auto_refresh_on_the_go_description">Få väderuppdateringar oftare när du kör, cyklar, springer eller går. När detta är på kan du inte uppdatera manuellt.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Få väderuppdateringar oftare när du kör, cyklar, springer eller går.</string>
     <string name="bottomsheet_action_expand_halfway">Utöka till hälften</string>
     <string name="btn_report">Rapp.</string>
     <string name="button_finish">Avsluta</string>
@@ -84,6 +90,7 @@
     <string name="checkdeteal_tts">Dubbeltryck om du vill ha mer information.</string>
     <string name="china">Kina</string>
     <string name="cities_button">Orter</string>
+    <string name="city_added">Orten har lagts till.</string>
     <string name="city_list_text">Orter</string>
     <string name="clear">Klart</string>
     <string name="clear_text_end_icon_content_description">Rensa text</string>
@@ -131,7 +138,6 @@
     <string name="content_provider_mgs_legalphrase">Platsinformationen för din enhet skickas till innehållsleverantören så att du kan ta emot lokal väderinformation.</string>
     <string name="contents_error_msg">Tjänsten är inte tillgänglig för tillfället. Försök igen senare.</string>
     <string name="copy">Kopiera</string>
-    <string name="copy_toast_msg">Länk kopierad till Urklipp</string>
     <string name="correct_city_name">Rätt ortsnamn</string>
     <string name="couldnt_find_location">Det gick inte att hitta platsen</string>
     <string name="cover_screen_top_sync_dialog_text">Ange samma plats på huvudskärmen?</string>
@@ -191,6 +197,7 @@
     <string name="dragndroplist_drag_release">Objekt släppt till läge %d.</string>
     <string name="dragndroplist_drag_start">Började dra objekt i läge %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Objekt i läge %d kan inte dras.</string>
+    <string name="drawer_tips">Tips om %s</string>
     <string name="drawer_tips_message">Tryck här om du vill lägga till, radera och ordna om platser. Du kan också lägga till flera widgetar om du vill visa olika platser på hemskärmen.</string>
     <string name="drawer_tips_message_1">Tryck på Hantera platser längts ned på menyn när du vill lägga till, radera och ordna om platser.</string>
     <string name="drawer_tips_message_2">Du kan lägga till fler än en widget på hemskärmen när du vill visa olika platser samtidigt.</string>
@@ -214,9 +221,6 @@
     <string name="expand_button_title">Avancerat</string>
     <string name="exposed_dropdown_menu_content_description">Visa rullgardinsmenyn</string>
     <string name="failed_to_send_report">Rapporten gick inte att skicka</string>
-    <string name="fallback_menu_item_copy_link">Kopiera länk</string>
-    <string name="fallback_menu_item_open_in_browser">Öppna i webbläsaren</string>
-    <string name="fallback_menu_item_share_link">Dela länk</string>
     <string name="farenheit">°F</string>
     <string name="favorite_location">Favoritplats</string>
     <string name="feel_like_pd_minus_temp">Känns som -%d°</string>
@@ -228,15 +232,18 @@
     <string name="forecast_video">Prognosvideo</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">Fre</string>
     <string name="general">Allmänt</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Få personligt innehåll utifrån hur du använder telefonen.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Få personligt innehåll utifrån hur du använder surfplattan.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">hämta väderinformation, inklusive din aktuella plats, från Väder</string>
     <string name="go_to_website">Besök webbplats</string>
     <string name="goto_apps">Det finns en ny uppdatering tillgänglig. Installera nu?</string>
     <string name="goto_apps_later">Senare</string>
     <string name="goto_apps_now">Nu</string>
     <string name="goto_apps_update_title">Varningar för nytt innehåll</string>
     <string name="header_tts">Sidhuvud</string>
+    <string name="heavy">Kraftig</string>
     <string name="heavy_rain">Kraftigt regn</string>
     <string name="heavy_rain_followed_by_intense_heat">Kraftigt regn följt av hög värme</string>
     <string name="heavy_rain_followed_by_light_rain">Kraftigt regn följt av hög värme</string>
@@ -396,6 +403,7 @@
     <string name="life_index_visibility">Synlighet</string>
     <string name="life_index_wind">Vind</string>
     <string name="life_index_wind_force">Vindhastighet</string>
+    <string name="light">Lätt</string>
     <string name="light_rain_followed_by_heavy_rain">Lägg regn följt av kraftigt regn</string>
     <string name="light_rain_with_some_heavy_rain">Lätt regn med inslag av kraftiga regnskurar</string>
     <string name="link_tts">Länk</string>
@@ -463,6 +471,7 @@
     <string name="message_no_search_result_z">Inga resultat hittades.</string>
     <string name="message_service_not_available">Tjänsten är inte tillgänglig för tillfället.</string>
     <string name="minus_tts">Minus</string>
+    <string name="mon">Mån</string>
     <string name="more">Mer</string>
     <string name="more_cuntact_us">Kontakta oss</string>
     <string name="more_information">Mer</string>
@@ -507,7 +516,17 @@
     <string name="navigation_drawer_tips_message">Tryck här när du vill ändra standardplatsen för väder och hantera alla dina platser.</string>
     <string name="new_version_available">Det finns en ny version av %s.</string>
     <string name="new_version_is_available">En ny version är tillgänglig.</string>
+    <string name="news_menu_show_news">Visa nyheter</string>
+    <string name="news_opt_in_banner_title_text">Håll koll på aktuella händelser genom att visa nyheter i väderwidgeten.</string>
+    <string name="news_opt_in_popup_desc_text">Håll koll på vad som händer i världen genom att visa de senaste rubrikerna från %s i väderwidgeten.</string>
+    <string name="news_opt_in_popup_title_text">Se nyheter och väder i samma widget</string>
+    <string name="news_request_agree_text">Tryck för att få nyheter från %s</string>
+    <string name="news_widget_bubble_text">Få nyheter och väder.</string>
+    <string name="news_widget_dummy_title">Dagens rubriker</string>
+    <string name="news_widget_new_dummy_title">Fem saker du behöver veta den här morgonen</string>
+    <string name="news_widget_oobe_text">Tryck och lägg till nyheter.</string>
     <string name="next">Nästa ort</string>
+    <string name="next_btn">Nästa</string>
     <string name="next_city">Dubbeltryck när du vill visa väderinformation för nästa ort.</string>
     <string name="night_tts">Natt</string>
     <string name="no_application_available">Inga tillgängliga appar.</string>
@@ -516,6 +535,7 @@
     <string name="no_weather_information">Ingen väderinformation</string>
     <string name="not_in_use">Används inte</string>
     <string name="not_now">Inte nu</string>
+    <string name="not_now_btn">Inte nu</string>
     <string name="not_selected">Inte vald</string>
     <string name="not_set">Inte angett</string>
     <string name="nothing_selected">Inget markerat.</string>
@@ -524,6 +544,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Platser identifieras snabbast och mest exakt om du trycker på INSTÄLLNINGAR och sedan väljer lokaliseringsmetoden GPS, Wi-Fi och mobilnät.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Platser identifieras snabbast och mest exakt om du trycker på INSTÄLLNINGAR och sedan väljer lokaliseringsmetoden GPS och Wi-Fi.</string>
     <string name="notice_gps_trun_off_message_verizon">Visa information om det lokala väderläget genom att slå på Platsinställningarna och se till att läget är inställt på Hög precision.</string>
+    <string name="notification_alert_channel_name">Varning om svåra väderförhållanden</string>
     <string name="notification_apps_update_channel_name">Uppdatera meddelanden</string>
     <string name="notification_auto_refresh_channel_name">Uppdatera vädret automatiskt</string>
     <string name="notification_dex_channel_name">Väder i Samsung DeX</string>
@@ -544,6 +565,7 @@
     <string name="open_app">Öppna appen</string>
     <string name="open_source_licences">Licenser för öppen källkod</string>
     <string name="other_locations">Andra platser</string>
+    <string name="partly_sunny">Delvis soligt</string>
     <string name="password_toggle_content_description">Visa lösenord</string>
     <string name="paused">Pausat</string>
     <string name="pd_km">%.1f km</string>
@@ -562,10 +584,13 @@
     <string name="preference_copied">%1$s har kopierats till Urklipp.</string>
     <string name="preview">Förhandsgranska %s</string>
     <string name="previous">Föregående ort</string>
+    <string name="previous_btn">Föregående</string>
     <string name="previous_city">Dubbeltryck när du vill visa väderinformation för föregående ort.</string>
     <string name="privacy_policy">Sekretesspolicy</string>
     <string name="probability_of_rain_text">Sannolikhet för regn</string>
     <string name="protect_your_content">Skydda ditt innehåll</string>
+    <string name="ps_in">%s tum</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radar och kartor</string>
     <string name="rain">Regn</string>
     <string name="rain_followed_by_intense_heat">Regn följt av hög värme</string>
@@ -603,6 +628,7 @@
     <string name="runtime_location_permission_desc">Uppdatera väderinformationen genom att trycka på INSTÄLLNINGAR, öppna Appinformation > Behörigheter och sedan tillåta de följande behörigheterna innan du försöker igen:</string>
     <string name="runtime_location_permission_title">Tillåt behörigheter</string>
     <string name="runtime_oem_grant_permission_desc">Appen %s har behörighet att komma åt det följande:</string>
+    <string name="sat">Lör</string>
     <string name="save_button">Spara</string>
     <string name="search_menu_title">Sök</string>
     <string name="search_most_searched_for">Mest sökt</string>
@@ -630,6 +656,7 @@
     <string name="sesl_material_badge_description">Det finns nytt innehåll</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">Mer</string>
+    <string name="sesl_preferecne_badge_description">Ny avisering</string>
     <string name="sesl_preferencecategory_added_title">Sidhuvud</string>
     <string name="sesl_search_hint">Sök</string>
     <string name="sesl_searchview_description_clear">Rensa sökfältet</string>
@@ -695,7 +722,10 @@
     <string name="st_offline">Offline</string>
     <string name="st_view_less">Visa mindre</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_off">Av</string>
+    <string name="status_on">På</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="sun">Sön</string>
     <string name="sunny">Solsken</string>
     <string name="sunny_with_some_clouds">Soligt med växlande molnighet</string>
     <string name="sunny_with_some_heavy_rain">Soligt med spridda kraftiga regnskurar</string>
@@ -708,6 +738,7 @@
     <string name="tap_here_to_restore_the_weather">Tryck här om du vill återställa väderdata från den gamla enheten.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Tryck på FÖRSÖK IGEN och försök hitta din plats igen.</string>
     <string name="tap_setting_message_edge_panel">Slå på Plats om du vill ha lokal väderinformation.</string>
+    <string name="tap_the_settings_icon">Tryck på ikonen för inställningar.</string>
     <string name="tap_to_get_the_weather">Tryck för att få veta vädret</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
@@ -715,6 +746,7 @@
     <string name="terms_and_conditions">Villkor</string>
     <string name="the_latest_version">Den senaste versionen är redan installerad.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Detta tillämpas även på aviseringar och Kalender.</string>
+    <string name="thu">Tor</string>
     <string name="tick_box_tts">Kryssruta</string>
     <string name="ticked_tts">Markerad</string>
     <string name="time_am">AM</string>
@@ -722,19 +754,25 @@
     <string name="times_forecast">Varje timme</string>
     <string name="title_select_locations">Välj platser</string>
     <string name="title_theme">Teman</string>
+    <string name="to_continue_agree_to_updated">Acceptera våra uppdaterade %s.</string>
     <string name="to_get_local_weather_chn">"Din aktuella plats skickas till leverantören av vädertjänster för att hämta lokalt väder. (Vänligen se leverantörens %1$svillkor%2$s och %3$ssekretesspolicy%4$s).
 Andra appar och tjänster på din enhet kan komma åt den hämtade väderdatan för att visa vädret i dessa appar.
 För att förse dig med fortsatt väderinformation har Väder tillgång till din plats, även om du inte använder appen."</string>
     <string name="today">Idag</string>
+    <string name="try_it_out_btn">Prova får du se</string>
+    <string name="tue">Tis</string>
+    <string name="turn_on_to_use_precise_location">Om du vill använda den här funktionen måste du tillåta %s att använda din position hela tiden och slå på Använd exakt position. Tryck på Inställningar och gå sedan till Behörigheter > Plats.</string>
     <string name="tw_title_weather_broadcast">Sändning</string>
-    <string name="unable_to_check_for_updates">Det går inte att söka efter uppdateringar. Du är inte ansluten till något nätverk.</string>
+    <string name="unable_to_check_for_updates">Det gick inte att söka efter uppdateringar. Försök igen senare.</string>
     <string name="unable_to_receive_info_msg">Det går inte att ta emot info</string>
     <string name="unticked_tts">Omarkerad</string>
     <string name="unused">Oanvänt</string>
     <string name="update">Uppdatera</string>
     <string name="update_abb8">Uppdatera</string>
     <string name="update_app">Uppdatera appen</string>
+    <string name="updated_tile_chn">Uppdaterad: %s</string>
     <string name="updated_tts">%s har uppdaterats</string>
+    <string name="use_current_location">Använd aktuell plats</string>
     <string name="use_current_location_agree_popup">"Din aktuella plats skickas till leverantören av vädertjänster för att hämta lokalt väder. (Se leverantörens %1$ssekretesspolicy%2$s.)
 Andra appar och tjänster på din enhet kan få åtkomst till hämtade väderdata, så att vädret kan visas i dessa appar."</string>
     <string name="use_current_location_and_background_agree_popup">"Din aktuella plats skickas till leverantören av vädertjänster för att hämta lokalt väder. (Vänligen se leverantörens %1$sintegritetspolicy%2$s.)
@@ -746,9 +784,16 @@ För att förse dig med fortsatt väderinformation har Väder tillgång till din
 Du kan stänga av användningen av din plats genom att gå till inställningarna för Väder-appen."</string>
     <string name="use_current_location_body_msg_chn">"Läs detta noggrant innan du använder ”Väder”:
 Om du vill veta vädret på din nuvarande plats, måste du tillåta att tredje parts tjänsteleverantör har kontinuerlig åtkomst till din enhet (även när du inte använder tjänsten) för att hämta vissa uppgifter, enligt listan nedan. Läs den tredje partens tjänsteleverantörs %1$sVillkor%2$s och %3$sSekretesspolicy%4$s noggrant för att bli insatt i dem, innan du ger sådant tillstånd. Du kan återkalla ditt tillstånd genom att stänga av ”Plats” i inställningsmenyn. Andra appar och tjänster på din enhet kan få åtkomst till hämtade väderdata, så att vädret kan visas i dessa appar och tjänster."</string>
+    <string name="use_current_location_body_msg_kor">"Din aktuella plats samlas in och används så att appen Väder ska kunna erbjuda vissa funktioner, t.ex. det lokala vädret.
+
+För att ge dig väderinformation kontinuerligt använder appen regelbundet din position, även om du inte använder appen. Om du går vidare samtycker du till att samla in och behandla din position för ovan nämnda syften.
+
+Du kan stoppa insamlingen av platsuppgifter och användning i inställningarna för appen Väder."</string>
     <string name="use_current_location_body_purpose">Ändamål</string>
     <string name="use_current_location_body_purpose_content">För att tillhandahålla väderinformation för din aktuella plats</string>
     <string name="use_current_location_body_search_provider">Tjänsteleverantör</string>
+    <string name="use_current_location_continue">Fortsätt</string>
+    <string name="use_current_location_not_now">Inte nu</string>
     <string name="use_current_location_off_alert_popup">Aktuell platsinformation kommer att tas bort.</string>
     <string name="useful_informations">Livstips och andra rapporter</string>
     <string name="using_as">Använder som %s</string>
@@ -856,9 +901,11 @@ Om du vill veta vädret på din nuvarande plats, måste du tillåta att tredje p
     <string name="weather_tip">Vädertips</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Ons</string>
     <string name="weekly_forecast">Dagligen</string>
     <string name="widget_background">Widgetbakgrund</string>
     <string name="widget_empty_text">Tryck för väderinfo</string>
+    <string name="widget_location">Ortsnamn</string>
     <string name="widget_name_4x1">Väder och Klocka</string>
     <string name="widget_setting">Inställningar</string>
     <string name="widget_setting_background_color">Bakgrundsfärg</string>

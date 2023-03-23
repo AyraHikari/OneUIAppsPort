@@ -33,6 +33,7 @@
     <string name="air_quality">‌അന്തരീക്ഷ മേന്മ</string>
     <string name="air_quality_next_tts">പിന്നീടുള്ള പ്രതിദിന അന്തരീക്ഷ മേന്മ പ്രവചനങ്ങൾ</string>
     <string name="air_quality_previous_tts">നേരത്തേയുള്ള പ്രതിദിന അന്തരീക്ഷ മേന്മ പ്രവചനങ്ങൾ</string>
+    <string name="alert_title">പ്രതികൂല കാലാവസ്ഥാ സൂചന</string>
     <string name="all_added_cities">ചേർത്ത എല്ലാ നഗരങ്ങളും</string>
     <string name="allow">അനുവദിക്കുക</string>
     <string name="allow_permission_in_settings">ഈ സവിശേഷത ഉപയോഗിക്കുന്നതിന്, ക്രമീകരണങ്ങൾ എന്നതിൽ നിങ്ങൾ അനുമതി നൽകേണ്ടതാണ്.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">പ്രവര്‍ത്തനം പിന്തുണയ്ക്കുന്നില്ല.</string>
     <string name="apply_daylight_saving_time">പകല്‍ സേവനസമയം പ്രയോഗിക്കണോ?</string>
     <string name="as_possible_after_verification">റിപ്പോര്‍ട്ട് അയച്ചു. പരിശോധിച്ചുറപ്പിക്കലിന് ശേഷം എത്രയും വേഗം നഗര പേര് മാറ്റപ്പെടും.</string>
+    <string name="auto_refresh_on_screen_description">ഓരോ മണിക്കൂറും ഓട്ടോമാറ്റിക്കായി കാലാവസ്ഥ വിവരം പുതുക്കിയെടുക്കുക. ഇത് ഓൺ ചെയ്തിരിക്കുമ്പോൾ, നിങ്ങൾക്ക് കരകൃതമായി പുതുക്കിയെടുക്കാനാവില്ല.</string>
+    <string name="auto_refresh_on_the_go">സ്വയം പുതുക്കിയെടുക്കൽ തിരക്കിലാണ്</string>
+    <string name="auto_refresh_on_the_go_advanced">നൂതനമായത്</string>
+    <string name="auto_refresh_on_the_go_description">നിങ്ങൾ ഡ്രൈവ് ചെയ്യുകയോ ബൈക്കോടിക്കുകയോ ഓടുകയോ നടക്കുകയോ ചെയ്യുമ്പോൾ കാലാവസ്ഥ അപ്ഡേറ്റുകൾ കൂടുതൽ തവണ ലഭ്യമാക്കുക. ഇത് ഓൺ ചെയ്തിരിക്കുമ്പോൾ, നിങ്ങൾക്ക് കരകൃതമായി പുതുക്കിയെടുക്കാനാവില്ല.</string>
+    <string name="auto_refresh_on_the_go_simple_description">നിങ്ങൾ ഡ്രൈവ് ചെയ്യുകയോ ബൈക്കോടിക്കുകയോ ഓടുകയോ നടക്കുകയോ ചെയ്യുമ്പോൾ കാലാവസ്ഥ അപ്ഡേറ്റുകൾ കൂടുതൽ തവണ ലഭ്യമാക്കുക.</string>
     <string name="btn_report">റിപ്പോർട്ട്</string>
     <string name="button_finish">പൂര്‍ത്തിയാക്കുക</string>
     <string name="button_tts">ബട്ടണ്‍</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">കൂടുതൽ വിവങ്ങൾക്ക് രണ്ടുതവണ സ്പർശിക്കുക.</string>
     <string name="china">ചൈന</string>
     <string name="cities_button">നഗരങ്ങള്‍</string>
+    <string name="city_added">നഗരം ചേർക്കപ്പെട്ടു.</string>
     <string name="city_list_text">നഗരങ്ങള്‍</string>
     <string name="clear">തെളിഞ്ഞത്</string>
     <string name="clear_then_cloudy">തെളിഞ്ഞ ആകാശം പിന്നീട് മേഘാവൃതം</string>
@@ -130,8 +137,8 @@
     <string name="discard_button">ഒഴിവാക്കുക</string>
     <string name="display_scaling_mode_condensed">ചെറുത്</string>
     <string name="display_scaling_mode_standard">വലുത്</string>
-    <string name="done_button">ചെയ്തു</string>
-    <string name="done_tts">ചെയ്തു</string>
+    <string name="done_button">പൂർത്തിയായി</string>
+    <string name="done_tts">പൂർത്തിയായി</string>
     <string name="double_tab_to_deselect_all_tts">തിരഞ്ഞെടുപ്പ് ഇല്ലാതാക്കുന്നതിന് രണ്ടുതവണ സ്പർശിക്കുക.</string>
     <string name="double_tab_to_select_all_tts">എല്ലാം തിരഞ്ഞെടുക്കുന്നതിന് രണ്ടുതവണ ടാപ്പുചെയ്യുക.</string>
     <string name="double_tap_and_hold_then_drag_to_reorder">രണ്ടുതവണ സ്പർശിച്ചുപിടിക്കുക, തുടർന്ന് ക്രമം മാറ്റുന്നതിനായി ഇഴയ്ക്കുക.</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">ഇനത്തെ സ്ഥാനം %d-ലേക്ക് ഇട്ടു.</string>
     <string name="dragndroplist_drag_start">സ്ഥാനം %d-ലെ ഇനത്തെ ഇഴയ്ക്കാനാരംഭിച്ചു.</string>
     <string name="dragndroplist_item_cannot_be_dragged">സ്ഥാനം %d-ലെ ഇനത്തെ ഇഴയ്ക്കാനാവില്ല.</string>
+    <string name="drawer_tips">%s വിവരശകലങ്ങൾ</string>
     <string name="drawer_tips_message">ലൊക്കേഷനുകൾ ചേർക്കാനും ഇല്ലാതാക്കാനും അവയുടെ ക്രമം മാറ്റാനും ഇവിടെ സ്പർശിക്കുക. ഹോം സ്ക്രീനിൽ വ്യത്യസ്ത ലൊക്കേഷനുകൾ കാണിക്കുന്നതിന് നിരവധി വിജറ്റുകളും നിങ്ങൾക്ക് ചേർക്കാവുന്നതാണ്.</string>
     <string name="drawer_tips_message_1">ലൊക്കേഷനുകൾ ചേർക്കാനും ഇല്ലാതാക്കാനും റെക്കോർഡ് ചെയ്യാനും ഈ മെനുവിന്‍റെ താഴെയുള്ള “ലൊക്കേഷനുകൾ മാനേജ് ചെയ്യുക” എന്നതിൽ സ്പർശിക്കുക.</string>
     <string name="drawer_tips_message_2">ഒരേ സമയം വ്യത്യസ്ത ലൊക്കേഷനുകൾ കാണിക്കാൻ ഹോം സ്ക്രീനിൽ ഒന്നിലധികം വിജറ്റുകൾ നിങ്ങൾക്ക് ചേർക്കാവുന്നതാണ്.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">പ്രവചന വീഡിയോ</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">വെ.</string>
     <string name="general">പൊതുവായത്</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">നിങ്ങളുടെ ഫോൺ നിങ്ങൾ ഉപയോഗിക്കുന്ന രീതിയുടെ അടിസ്ഥാനത്തിൽ വ്യക്തിഗതമാക്കിയ ഉള്ളടക്കം ലഭ്യമാക്കുക.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">നിങ്ങളുടെ ടാബ്‌ലറ്റ് നിങ്ങൾ ഉപയോഗിക്കുന്ന രീതിയുടെ അടിസ്ഥാനത്തിൽ വ്യക്തിഗതമാക്കിയ ഉള്ളടക്കം ലഭ്യമാക്കുക.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">കാലാവസ്ഥ എന്നതിൽ നിന്ന് നിങ്ങളുടെ നിലവിലെ ലൊക്കേഷൻ ഉൾപ്പെടെയുള്ള കാലാവസ്ഥാ വിവരങ്ങൾ ലഭ്യമാക്കുക</string>
     <string name="go_to_website">വെബ്‌സൈറ്റിലേക്ക് പോവുക</string>
     <string name="goto_apps">പുതിയ‌ അപ്‌ഡേറ്റ് ലഭ്യമാണ്. ഇപ്പോള്‍ ഇന്‍സ്റ്റാള്‍ചെയ്യണമോ?</string>
     <string name="goto_apps_later">പിന്നീട്</string>
     <string name="goto_apps_now">ഇപ്പോള്‍</string>
     <string name="goto_apps_update_title">പുതിയ ഉള്ളടക്ക അലേര്‍ട്ടുകള്‍</string>
     <string name="header_tts">ശീർഷകം</string>
+    <string name="heavy">കനത്തത്</string>
     <string name="heavy_rain">കനത്ത മഴ</string>
     <string name="heavy_rain_followed_by_intense_heat">കനത്ത ചൂടിനുശേഷം കനത്ത മഴ</string>
     <string name="heavy_rain_followed_by_light_rain">കനത്ത ചൂടിനുശേഷം കനത്ത മഴ</string>
@@ -193,7 +204,7 @@
     <string name="heavy_rain_with_some_snow">അല്പം മഞ്ഞ് വീഴ്ചയോടുകൂടിയ കനത്ത മഴ</string>
     <string name="heavy_rain_with_sunny_intervals">ഇടയ്ക്കിടെ തെളിഞ്ഞ ആകാശത്തോടുകൂടിയ കനത്ത മഴ</string>
     <string name="help">സഹായം</string>
-    <string name="help_favorite_location_msg">അറിയിപ്പുകൾ, കലണ്ടർ, Always On Display, മറ്റ് ബന്ധിത സേവനങ്ങൾ എന്നിവയിൽ കാലാവസ്ഥാ വിവരങ്ങൾ ലഭ്യമാക്കാൻ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ ഉപയോഗിക്കപ്പെടും. നിങ്ങളുടെ ലൊക്കേഷൻ പട്ടികയിൽ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ നിങ്ങൾക്ക് മാറ്റാവുന്നതാണ്.</string>
+    <string name="help_favorite_location_msg">അറിയിപ്പുകൾ, കലണ്ടർ, Always On Display, മറ്റ് ബന്ധിത സേവനങ്ങൾ എന്നിവയിൽ കാലാവസ്ഥാ വിവരങ്ങൾ ലഭ്യമാക്കാൻ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ ഉപയോഗിക്കപ്പെടും. നിങ്ങളുടെ ലൊക്കേഷൻ ലിസ്‌റ്റിൽ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ നിങ്ങൾക്ക് മാറ്റാവുന്നതാണ്.</string>
     <string name="help_favorite_location_without_aod_and_calendar_msg">അറിയിപ്പുകളിൽ കാലാവസ്ഥാ വിവരങ്ങൾ ലഭ്യമാക്കാൻ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ ഉപയോഗിക്കപ്പെടും. നിങ്ങളുടെ ലൊക്കേഷൻ പട്ടികയിൽ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ നിങ്ങൾക്ക് മാറ്റാവുന്നതാണ്.</string>
     <string name="help_favorite_location_without_aod_msg">അറിയിപ്പുകൾ, കലണ്ടർ, മറ്റ് ബന്ധിത സേവനങ്ങൾ എന്നിവയിൽ കാലാവസ്ഥാ വിവരങ്ങൾ ലഭ്യമാക്കാൻ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ ഉപയോഗിക്കപ്പെടും. നിങ്ങളുടെ ലൊക്കേഷൻ പട്ടികയിൽ നിങ്ങളുടെ പ്രിയപ്പെട്ട ലൊക്കേഷൻ നിങ്ങൾക്ക് മാറ്റാവുന്നതാണ്.</string>
     <string name="high_accuracy">GPS, Wi-Fi, മൊബൈല്‍ നെറ്റ്‌വര്‍ക്കുകൾ</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">ദൃശ്യത</string>
     <string name="life_index_wind">കാറ്റ്</string>
     <string name="life_index_wind_force">കാറ്റിന്‍റെ വേഗത</string>
+    <string name="light">നേരിയത്</string>
     <string name="light_rain_followed_by_heavy_rain">കനത്ത മഴയ്ക്ക് ശേഷം ചെറിയ മഴ</string>
     <string name="light_rain_with_some_heavy_rain">അല്പം കനത്ത മഴയോടുകൂടിയ ചെറിയ മഴ</string>
     <string name="link_tts">ലിങ്ക്</string>
@@ -362,13 +374,13 @@
     <string name="map_tips_title">വിവരശകലം</string>
     <string name="map_upcast">ഭൂപടം</string>
     <string name="max_item_saved_message">%d നഗരങ്ങളുടെ പരമാവധി എണ്ണം സേവ് ചെയ്തു.</string>
-    <string name="menu_add_title">ചേര്‍ക്കു.</string>
+    <string name="menu_add_title">ചേർക്കുക</string>
     <string name="menu_change_orders_tts">ക്രമം മാറ്റുക</string>
     <string name="menu_current_city_show">നിലവിലെ സ്ഥാനം ഉപയോഗിക്കുക</string>
     <string name="menu_delete_title">ഇല്ലാതാക്കുക</string>
     <string name="menu_details_share">പങ്കിടുക</string>
     <string name="menu_edit_title">എഡിറ്റ്</string>
-    <string name="menu_search_title">തിരച്ചില്‍</string>
+    <string name="menu_search_title">തിരയുക</string>
     <string name="menu_settings_calendar">കലണ്ടര്‍</string>
     <string name="menu_settings_edge_screen">Edge സ്ക്രീൻ</string>
     <string name="menu_settings_informationtext1">സ്രോതസ്: Weather center, Korea Environment Corporation, Weathernews Inc.</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">ഫലങ്ങളൊന്നും കണ്ടില്ല.</string>
     <string name="message_service_not_available">സേവനം ഇപ്പോള്‍ ലഭ്യമല്ല.</string>
     <string name="minus_tts">മൈനസ്</string>
+    <string name="mon">തിങ്ക</string>
     <string name="more">കൂടുതല്‍</string>
     <string name="more_cuntact_us">ഞങ്ങളെ ബന്ധപ്പെടുക</string>
     <string name="more_information">കൂടുതൽ</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">ഡിഫോൾട്ട് കാലാവസ്ഥ ലൊക്കേഷൻ മാറ്റാനും നിങ്ങളുടെ ലൊക്കേഷനുകൾ സകലതും മാനേജ് ചെയ്യാനും ഇവിടെ സ്പർശിക്കുക.</string>
     <string name="new_version_available">%s-ന്‍റെ ഒരു പുതിയ പതിപ്പ് ലഭ്യമാണ്.</string>
     <string name="new_version_is_available">ഒരു പുതിയ പതിപ്പ് ലഭ്യമാണ്.</string>
+    <string name="news_menu_show_news">വാർത്തകൾ കാണിക്കുക</string>
+    <string name="news_opt_in_banner_title_text">കാലാവസ്ഥാ വിജറ്റിൽ വാർത്തകൾ കാണിച്ചുകൊണ്ട് നിലവിലെ ഇവന്‍റുകളിൽ കാലികമായിരിക്കുക.</string>
+    <string name="news_opt_in_popup_desc_text">കാലാവസ്ഥാ വിജറ്റിൽ %s എന്നതിൽ നിന്നുള്ള ഏറ്റവും പുതിയ തലക്കെട്ടുകൾ കാണിച്ചുകൊണ്ട് ലോകത്തിനൊപ്പം കാലികമായിരിക്കുക.</string>
+    <string name="news_opt_in_popup_title_text">വാർത്തകളും കാലാവസ്ഥയും ഒരു വിജറ്റിൽ തന്നെ കാണൂ</string>
+    <string name="news_request_agree_text">%s എന്നതിൽ നിന്ന് വാർത്തകൾ ലഭിക്കാൻ സ്പർശിക്കുക</string>
+    <string name="news_widget_bubble_text">കാലാവസ്ഥയ്‌ക്കൊപ്പം വാർത്തകൾ നേടൂ.</string>
+    <string name="news_widget_dummy_title">ഇന്നത്തെ മുൻനിര സ്‌റ്റോറി</string>
+    <string name="news_widget_new_dummy_title">ഈ പ്രഭാതത്തിൽ നിങ്ങൾ അറിയേണ്ട 5 കാര്യങ്ങൾ</string>
+    <string name="news_widget_oobe_text">വാർത്തകൾ ചേർക്കുന്നതിന് ഇവിടെ സ്പർശിക്കുക.</string>
     <string name="next">അടുത്ത നഗരം</string>
+    <string name="next_btn">അടുത്തത്</string>
     <string name="next_city">അടുത്ത നഗരത്തിന്‍റെ കാലാവസ്ഥാ വിവരങ്ങൾ കാണാൻ രണ്ടുതവണ സ്പർശിക്കുക.</string>
     <string name="night_tts">രാത്രി</string>
     <string name="no_application_available">ആപ്ലിക്കേഷനുകള്‍ ഒന്നും ലഭ്യമല്ല.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">കാലാവസ്ഥാ വിവരങ്ങൾ ഒന്നുമില്ല</string>
     <string name="not_in_use">ഉപയോഗത്തിലില്ല</string>
     <string name="not_now">ഇപ്പോള്‍ വേണ്ട</string>
+    <string name="not_now_btn">ഇപ്പോള്‍ വേണ്ട</string>
     <string name="not_selected">തിരഞ്ഞെടുത്തില്ല</string>
     <string name="nothing_selected">ഒന്നും തിരഞ്ഞെടുത്തില്ല.</string>
     <string name="noti">അറിയിപ്പ്</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">വേഗത്തിലുള്ളതും കൂടുതൽ കൃത്യവുമായ ലൊക്കേഷൻ തിരിച്ചറിയലിന് “ക്രമീകരണങ്ങൾ” എന്നതിൽ സ്പർശിക്കുക, GPS-ലേക്കും Wi-Fi-യിലേക്കും മൊബൈൽ നെറ്റ്‌വർക്കുകളിലേക്കും ലൊക്കേറ്റിംഗ് രീതി ക്രമീകരിക്കുക.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">വേഗത്തിലുള്ളതും കൂടുതൽ കൃത്യവുമായ ലൊക്കേഷൻ തിരിച്ചറിയലിന് “ക്രമീകരണങ്ങൾ” എന്നതിൽ സ്പർശിക്കുക, GPS-ലേക്കും Wi-Fi-യിലേക്കും ലൊക്കേറ്റിംഗ് രീതി ക്രമീകരിക്കുക.</string>
     <string name="notice_gps_trun_off_message_verizon">നിങ്ങളുടെ പ്രാദേശിക കാലാവസ്ഥാ വിവരങ്ങൾ കാണാൻ, ലൊക്കേഷൻ ക്രമീകരണങ്ങൾ ഓണാക്കുക, ഉയർന്ന കൃത്യതയിലേക്ക് മോഡ് ക്രമീകരിക്കുന്നത് തീർച്ചപ്പെടുത്തുക.</string>
+    <string name="notification_alert_channel_name">പ്രതികൂല കാലാവസ്ഥാ സൂചന</string>
     <string name="notification_apps_update_channel_name">അറിയിപ്പുകൾ അപ്ഡേറ്റ് ചെയ്യുക</string>
     <string name="notification_auto_refresh_channel_name">കാലാവസ്ഥ സ്വയം പുതുക്കിയെടുക്കൽ</string>
     <string name="notification_dex_channel_name">കാലാവസ്ഥ Samsung DeX-ൽ</string>
@@ -438,6 +463,7 @@
     <string name="open_app">ആപ്ലി. തുറക്കുക</string>
     <string name="open_source_licences">ഓപ്പൺ സോഴ്സ് ലൈസൻസുകൾ</string>
     <string name="other_locations">മറ്റ് ലൊക്കേഷനുകൾ</string>
+    <string name="partly_sunny">ഭാഗികമായി പ്രസന്നം</string>
     <string name="paused">തൽ‍ക്കാലം നിർ‍ത്തി</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">ജലപാതം: %d mm</string>
     <string name="preview">%s പ്രിവ്യൂ</string>
     <string name="previous">മുമ്പത്തെ നഗരം</string>
+    <string name="previous_btn">മുമ്പത്തേത്</string>
     <string name="previous_city">മുമ്പത്തെ നഗരത്തിന്‍റെ കാലാവസ്ഥാ വിവരങ്ങൾ കാണാൻ രണ്ടുതവണ സ്പർശിക്കുക.</string>
     <string name="privacy_policy">സ്വകാര്യതാ നയം</string>
     <string name="probability_of_rain_text">മഴയ്ക്ക് സാധ്യത</string>
     <string name="protect_your_content">നിങ്ങളുടെ ഉള്ളടക്കം പരിരക്ഷിക്കുക</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">റഡാറും ഭൂപടങ്ങളും</string>
     <string name="rain">മഴ</string>
     <string name="rain_followed_by_intense_heat">കനത്ത ചൂടിനുശേഷം മഴ</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">കാലാവസ്ഥാ വിവരങ്ങൾ അപ്ഡേറ്റ് ചെയ്യുന്നതിന്, “ക്രമീകരണങ്ങൾ” എന്നതിൽ സ്പർശിക്കുക, ആപ്ലിക്കേഷൻ വിവരം > അനുമതികൾ എന്നിവയിലേക്ക് പോവുക, തുടർന്ന് ഇനിപ്പറയുന്ന അനുമതികൾ അനുവദിച്ച ശേഷം വീണ്ടും ശ്രമിക്കുക:</string>
     <string name="runtime_location_permission_title">അനുമതികൾ അനുവദിക്കുക</string>
     <string name="runtime_oem_grant_permission_desc">ഇനിപ്പറയുന്നത് ആക്സസ് ചെയ്യാൻ %s ആപ്പിന് അനുമതി നൽകിയിരിക്കുന്നു:</string>
+    <string name="sat">ശ.</string>
     <string name="save_button">സംരക്ഷിക്കുക</string>
     <string name="search_most_searched_for">കൂടുതലായി തിരഞ്ഞവ</string>
     <string name="search_tab_cities">നഗരങ്ങൾ</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">പുതിയ ഉള്ളടക്കം ലഭ്യം</string>
     <string name="sesl_material_overflow_badge_text_n">N</string>
     <string name="sesl_more_item_label">കൂടുതല്‍</string>
+    <string name="sesl_preferecne_badge_description">പുതിയ അറിയിപ്പ്</string>
     <string name="sesl_preferencecategory_added_title">ശീർഷകം</string>
     <string name="sesl_search_hint">തിരയുക</string>
     <string name="sesl_searchview_description_clear">തിരയൽ ഫീൽഡ് മായ്ക്കുക</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">നിങ്ങളുടെ നെറ്റ്‍വര്‍ക്ക് കണക്ഷന്‍ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.</string>
     <string name="st_offline">ഓഫ്‌ലൈൻ</string>
     <string name="st_view_less">കുറവ് കാണുക</string>
+    <string name="status_off">ഓഫ്</string>
+    <string name="status_on">ഓൺ</string>
+    <string name="sun">ഞാ</string>
     <string name="sunny">സൂര്യപ്രകാശമുള്ള</string>
     <string name="sunny_with_some_clouds">അല്പം മേഘാവൃതമായ തെളിഞ്ഞ ആകാശം</string>
     <string name="sunny_with_some_heavy_rain">കനത്തമഴയോടുകൂടിയ തെളിഞ്ഞ ആകാശം</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">നിങ്ങളുടെ പഴയ ഉപകരണത്തിൽ നിന്ന് കാലാവസ്ഥ ഡാറ്റ പുനഃസ്ഥാപിക്കുന്നതിന് ഇവിടെ സ്പർശിക്കുക.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">വീണ്ടും നിങ്ങളുടെ ലൊക്കേഷൻ കണ്ടെത്താൻ ശ്രമിക്കുന്നതിന് “വീണ്ടും ശ്രമിക്കുക” എന്നതിൽ സ്പർശിക്കുക.</string>
     <string name="tap_setting_message_edge_panel">പ്രാദേശിക കാലാവസ്ഥ ലഭിക്കുന്നതിന് ലൊക്കേഷൻ ഓൺ ചെയ്യുക.</string>
+    <string name="tap_the_settings_icon">ക്രമീകരണങ്ങളുടെ ഐക്കണിൽ സ്പർശിക്കുക.</string>
     <string name="tap_to_get_the_weather">കാലാവസ്ഥ ലഭിക്കാൻ സ്പർശിക്കുക</string>
     <string name="temp_f_c">%d°ഫാരൻഹീറ്റ്</string>
     <string name="temp_f_m">%d°സെൽഷ്യസ്</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">വ്യവസ്ഥകളും നിബന്ധനകളും</string>
     <string name="the_latest_version">ഏറ്റവും പുതിയ പതിപ്പ് നേരത്തേതന്നെ ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ട്.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">അറിയിപ്പുകൾ, കലണ്ടർ എന്നിവയ്ക്ക് കൂടി അത് ബാധകമാക്കപ്പെടും.</string>
+    <string name="thu">വ്യാ.</string>
     <string name="tick_box_tts">ചെക്ക്ബോക്സ്</string>
     <string name="ticked_tts">ടിക്കുചെയ്തത്</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">ഓരോ മണിക്കൂറിലും</string>
     <string name="title_select_locations">ലൊക്കേഷനുകൾ തിരഞ്ഞെടുക്കുക</string>
     <string name="title_theme">തീമുകൾ</string>
+    <string name="to_continue_agree_to_updated">തുടരുന്നതിന്, അപ്ഡേറ്റ് ചെയ്ത ഞങ്ങളുടെ %s സമ്മതിക്കുക.</string>
     <string name="to_get_local_weather_chn">"പ്രാദേശിക കാലാവസ്ഥ ലഭിക്കുന്നതിന്, കാലാവസ്ഥാ സേവന ദാതാവിലേക്ക് നിങ്ങളുടെ നിലവിലെ ലൊക്കേഷൻ അയയ്ക്കപ്പെടും. (ദാതാവിന്റെ %1$sവ്യവസ്ഥകളും നിബന്ധനകളും%2$s %3$sസ്വകാര്യതാ നയവും%4$s കാണുക).
 ആപ്പുകളിൽ കാലാവസ്ഥ കാണിക്കുന്നതിന്, നിങ്ങളുടെ ഉപകരണത്തിലെ മറ്റ് ആപ്പുകളും സേവനങ്ങളും, വീണ്ടെടുക്കപ്പെട്ട കാലാവസ്ഥാ ഡാറ്റയിലേക്ക് പ്രവേശിച്ചേക്കാം.
 കാലാവസ്ഥാ വിവരങ്ങൾ തുടർച്ചയായി നിങ്ങൾക്ക് നൽകുന്നതിന്, നിങ്ങൾ ആപ്പ് ഉപയോഗിക്കാത്തപ്പോൾ പോലും, കാലാവസ്ഥയ്ക്ക് നിങ്ങളുടെ ലൊക്കേഷനിലേക്ക് ആക്‌സസ് ഉണ്ടായിരിക്കും."</string>
     <string name="today">ഇന്ന്</string>
+    <string name="try_it_out_btn">അത് പരീക്ഷിച്ചറിയുക</string>
+    <string name="tue">ചൊ</string>
+    <string name="turn_on_to_use_precise_location">ഈ സവിശേഷത ഉപയോഗിക്കുന്നതിന്, നിങ്ങളുടെ ലോക്കേഷൻ സദാസമയവും ആക്സസ് ചെയ്യാനും കൃത്യമായ ലൊക്കേഷൻ ഓൺ ചെയ്യാനും നിങ്ങൾ %s-നെ അനുവദിക്കേണ്ടതാണ്. “ക്രമീകരണങ്ങൾ” എന്നതിൽ സ്പർശിക്കുക, തുടർന്ന് അനുമതികൾ > ലൊക്കേഷൻ എന്നതിലേക്ക് പോവുക.</string>
     <string name="tw_title_weather_broadcast">പ്രക്ഷേപണം</string>
-    <string name="unable_to_check_for_updates">അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കാനാവില്ല. നെറ്റ്‌വർക്ക് കണക്ഷൻ ഒന്നുമില്ല.</string>
+    <string name="unable_to_check_for_updates">‌അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കാനായില്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</string>
     <string name="unable_to_receive_info_msg">വിവരം സ്വീകരിക്കാനാവില്ല</string>
     <string name="unticked_tts">അണ്‍‌ടിക്കുചെയ്തു</string>
     <string name="unused">ഉപയോഗിക്കാത്തവ</string>
-    <string name="update">അപ്‌ഡേറ്റ്</string>
+    <string name="update">അപ്‌ഡേറ്റ് ചെയ്യുക</string>
     <string name="update_abb8">അപ്‌ഡേറ്റ് ചെയ്യുക</string>
     <string name="update_app">ആപ്ലിക്കേഷൻ അപ്ഡേറ്റ് ചെയ്യുക</string>
+    <string name="updated_tile_chn">അപ്‌ഡേറ്റ് ചെയ്‌തത്: %s</string>
     <string name="updated_tts">%s അപ്ഡേറ്റ് ചെയ്തു</string>
+    <string name="use_current_location">നിലവിലെ സ്ഥാനം ഉപയോഗിക്കുക</string>
     <string name="use_current_location_agree_popup">"പ്രാദേശിക കാലാവസ്ഥ ലഭിക്കുന്നതിന്, കാലാവസ്ഥാ സേവന ദാതാവിലേക്ക് നിങ്ങളുടെ നിലവിലെ ലൊക്കേഷൻ അയയ്ക്കപ്പെടും. (ദാതാവിന്‍റെ %1$sസ്വകാര്യതാ നയം%2$s കാണുക.)
 നിങ്ങളുടെ ഉപകരണത്തിലെ മറ്റ് ആപ്‌സും സേവനങ്ങളും, അത്തരം ആപ്‌സിൽ കാലാവസ്ഥ കാണിക്കുന്നതിന്, വീണ്ടെടുത്ത കാലാവസ്ഥാ ഡാറ്റ ആക്സസ്സ് ചെയ്തേക്കാം."</string>
     <string name="use_current_location_and_background_agree_popup">"പ്രാദേശിക കാലാവസ്ഥ ലഭിക്കുന്നതിന്, കാലാവസ്ഥാ സേവന ദാതാവിലേക്ക് നിങ്ങളുടെ നിലവിലെ ലൊക്കേഷൻ അയയ്ക്കപ്പെടും. (ദാതാവിന്റെ %1$sസ്വകാര്യതാ നയം%2$s കാണുക.)
@@ -635,9 +677,16 @@
 കാലാവസ്ഥാ ആപ്ലിക്കേഷൻ ക്രമീകരണങ്ങളിലേക്ക് പോയി നിങ്ങളുടെ ലൊക്കേഷന്റെ ഉപയോഗം ഓഫ് ചെയ്യാവുന്നതാണ്."</string>
     <string name="use_current_location_body_msg_chn">"“കാലാവസ്ഥ” ഉപയോഗിക്കുന്നതിന് മുമ്പ് ദയവായി ശ്രദ്ധാപൂർവ്വം വായിക്കുക :
 നിങ്ങളുടെ നിലവിലെ ലൊക്കേഷന്റെ കാലാവസ്ഥ അറിയണമെങ്കിൽ, നിങ്ങളുടെ ഉപകരണത്തിലേക്ക് തുടർച്ചയായി (നിങ്ങൾ സേവനം ഉപയോഗിക്കാത്തപ്പോൾ പോലും) ആക്‌സസ് നേടുന്നതിനും താഴെ ലിസ്‌റ്റ് ചെയ്‌തിരിക്കുന്നത് പോലെയുള്ള നിശ്ചിത ഡാറ്റ കരസ്ഥമാക്കുന്നതിനും മൂന്നാം കക്ഷി സേവന ദാതാവിനെ അനുവദിക്കേണ്ടതുണ്ട്. അത്തരം അനുമതി നൽകുന്നതിന് മുമ്പ് ദയവായി മൂന്നാം കക്ഷി സേവന ദാതാവിന്റെ %1$sവ്യവസ്ഥകളും നിബന്ധനകളും%2$s %3$sസ്വകാര്യതാ നയവും%4$s ശ്രദ്ധാപൂർവ്വം വായിച്ച് മനസ്സിലാക്കുക. ക്രമീകരണ മെനുവിലെ “ലൊക്കേഷൻ” ഓഫാക്കിക്കൊണ്ട് നിങ്ങൾക്ക് അനുമതി പിൻവലിക്കാവുന്നതാണ്. നിങ്ങളുടെ ഉപകരണത്തിലെ മറ്റ് ആപ്ലിക്കേഷനുകളും സേവനങ്ങളും, അത്തരം ആപ്പുകളിലും സേവനങ്ങളിലും കാലാവസ്ഥ കാണിക്കുന്നതിന്, വീണ്ടെടുത്ത കാലാവസ്ഥാ ഡാറ്റ ആക്സസ് ചെയ്തേക്കാം."</string>
+    <string name="use_current_location_body_msg_kor">"കാലാവസ്ഥ ആപ്പ് സവിശേഷതകളിലെ നിങ്ങളുടെ പ്രാദേശിക കാലാവസ്ഥ ലഭ്യമാക്കുന്നത് പോലുള്ള ചിലത് പ്രദാനം ചെയ്യുന്നതിന് നിങ്ങളുടെ നിലവിലെ ലൊക്കേഷൻ ശേഖരിച്ച് ഉപയോഗിക്കും.
+
+കാലാവസ്ഥാ വിവരം തുടർച്ചയായി പ്രദാനം ചെയ്യുന്നതിന്, ഈ ആപ്പ് നിങ്ങൾ ഉപയോഗിക്കാത്തപ്പോൾ പോലും അത് പതിവായി നിങ്ങളുടെ ലൊക്കേഷൻ പ്രോസസ് ചെയ്യും. തുടരുന്നതുവഴി, മേൽപ്പറഞ്ഞ ലക്ഷ്യങ്ങൾക്ക് വേണ്ടി നിങ്ങളുടെ ലൊക്കേഷൻ ശേഖരിച്ച് പ്രോസസ് ചെയ്യാൻ നിങ്ങൾ സമ്മതിക്കുകയാണ്.
+
+കാലാവസ്ഥാ ആപ്പ് ക്രമീകരണങ്ങളിൽ ഈ ലൊക്കേഷൻ ശേഖരണവും ഉപയോഗവും നിങ്ങൾക്ക് നിർത്താവുന്നതാണ്."</string>
     <string name="use_current_location_body_purpose">ഉദ്ദേശ്യം</string>
     <string name="use_current_location_body_purpose_content">നിങ്ങളുടെ നിലവിലെ ലൊക്കേഷന്റെ കാലാവസ്ഥാ വിവരങ്ങൾ നൽകുന്നതിന്</string>
     <string name="use_current_location_body_search_provider">സേവന ദാതാവ്</string>
+    <string name="use_current_location_continue">തുടരുക</string>
+    <string name="use_current_location_not_now">ഇപ്പോള്‍ വേണ്ട</string>
     <string name="use_current_location_off_alert_popup">നിലവിലെ ലൊക്കേഷൻ വിവരങ്ങൾ നീക്കംചെയ്യപ്പെടും.</string>
     <string name="useful_informations">ജീവിത വിവരശകലങ്ങളും മറ്റ് റിപ്പോർട്ടുകളും</string>
     <string name="using_as">%s ആയി ഉപയോഗിക്കൽ</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">കാലാവസ്ഥാ വിവരശകലങ്ങൾ</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">ബു.</string>
     <string name="weekly_forecast">ദിവസവും</string>
     <string name="widget_background">വിജറ്റ് പശ്ചാത്തലം</string>
     <string name="widget_empty_text">കാലാവസ്ഥാ വിവരത്തിന് സ്പർശിക്കുക</string>
+    <string name="widget_location">നഗര പേര്</string>
     <string name="widget_name_4x1">കാലാവസ്ഥയും ക്ലോക്കും</string>
     <string name="widget_setting">ക്രമീകരണങ്ങൾ</string>
     <string name="widget_setting_background_color">പശ്ചാത്തല നിറം</string>

@@ -106,6 +106,18 @@
 
 .method msgReceived(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[BI)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "buffer",
+            "bufferLen"
+        }
+    .end annotation
 
     .line 418
     new-instance v0, Ljava/lang/Thread;
@@ -129,6 +141,14 @@
 
 .method public runConnectionClosedThread(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 404
     new-instance v0, Ljava/lang/Thread;
@@ -152,6 +172,14 @@
 
 .method public runConnectionFailedThread(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 410
     new-instance v0, Ljava/lang/Thread;
@@ -174,10 +202,28 @@
 .end method
 
 .method public abstract sendResponse(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;[B)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "socket",
+            "array"
+        }
+    .end annotation
 .end method
 
 .method public setSocketListener(Lcom/samsung/android/galaxycontinuity/net/IAuthNotiSocketListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 61
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;->btSocketListener:Lcom/samsung/android/galaxycontinuity/net/IAuthNotiSocketListener;
@@ -187,6 +233,14 @@
 
 .method protected setState(Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     .line 42
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;->mState:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
@@ -202,19 +256,29 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " : prev state : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager;->mState:Lcom/samsung/android/galaxycontinuity/net/AuthNotiSocketManager$ConnectionState;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " current state : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -230,4 +294,12 @@
 .end method
 
 .method public abstract socketConnected(Lcom/samsung/android/galaxycontinuity/net/FlowSocket;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 .end method

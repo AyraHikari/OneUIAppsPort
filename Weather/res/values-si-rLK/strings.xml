@@ -33,6 +33,7 @@
     <string name="air_quality">වායු ගුණත්වය</string>
     <string name="air_quality_next_tts">පසුකාලීන දිනපතා වායු ගුණත්ව පුරෝකථන</string>
     <string name="air_quality_previous_tts">වේලාසන දිනපතා වායු ගුණත්ව පුරෝකථන</string>
+    <string name="alert_title">දැඩි කාලගුණ ඇඟවුම</string>
     <string name="all_added_cities">එක් කළ නගර සියල්ල</string>
     <string name="allow">ඉඩ දෙන්න</string>
     <string name="allow_permission_in_settings">මෙම විශේෂාංගය භාවිතයට, ඔබට සැකසුම් තුළ අවසරයට ඉඩ දීමට අවශ්‍යයි.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">ක්‍රියාවට සහාය නොදක්වයි.</string>
     <string name="apply_daylight_saving_time">දිවා ආලෝක සුරැකුම යොදන්නද?</string>
     <string name="as_possible_after_verification">වාර්තාව යැවිණි. නගරයේ නම සත්‍යාපනයෙන් පසුව හැකි ඉක්මනින් වෙනස් වනු ඇත.</string>
+    <string name="auto_refresh_on_screen_description">සෑම පැයකම ස්වයංක්‍රීයව නැවුම් කළ කාලගුණ තතු ලබා ගන්න. මෙය ක්‍රියාත්මක වන විට, ඔබට හස්තීයව නැවුම් කළ නොහැක.</string>
+    <string name="auto_refresh_on_the_go">යන ගමන් ස්වයංව නැවුම් කරන්න</string>
+    <string name="auto_refresh_on_the_go_advanced">උසස්</string>
+    <string name="auto_refresh_on_the_go_description">ඔබ රිය පදවන විට, බයිසිකල් පදින විට, දුවන විට, හෝ ඇවිදින විට වඩාත් නිරන්තර කාලගුණ යාවත්කාල ලබා ගන්න. මෙය ක්‍රියාත්මක වන විට, ඔබට හස්තීයව නැවුම් කළ නොහැක.</string>
+    <string name="auto_refresh_on_the_go_simple_description">ඔබ රිය පදවන විට, බයිසිකල් පදින විට, දුවන විට, හෝ ඇවිදින විට වඩාත් නිරන්තර කාලගුණ යාවත්කාලීන ලබා ගන්න.</string>
     <string name="btn_report">වාර්ත.</string>
     <string name="button_finish">නිම කරන්න</string>
     <string name="button_tts">බොත්තම</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">වැඩිදුර තොරතුරු සඳහා දෙවරක් තට්ටු කරන්න.</string>
     <string name="china">චීනය</string>
     <string name="cities_button">නගර</string>
+    <string name="city_added">නගරය එක් කෙරිණි.</string>
     <string name="city_list_text">නගර</string>
     <string name="clear">මකන්න</string>
     <string name="clear_then_cloudy">පැහැදිලි අහස පසුව වලාකුළු</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">පිහිටීම %d තුළට අයිතමය අදින ලදී.</string>
     <string name="dragndroplist_drag_start">පිහිටීම් %d අසල අයිතමය ඇදීම අරඹන ලදී.</string>
     <string name="dragndroplist_item_cannot_be_dragged">පිහිටීම් %d අයිතමය ඇදිය නොහැක.</string>
+    <string name="drawer_tips">%s ඉඟි</string>
     <string name="drawer_tips_message">පිහිටීම් එක් කිරීමට, මැකීමට සහ යළි පෙළගැස්වීමට මෙතැන තට්ටු කරන්න. මුල් තිරයෙහි විවිධ පිහිටීම් පෙන්වීමට ඔබට විජෙට්ටු කිහිපයකුත් එක් කළ හැකිය.</string>
     <string name="drawer_tips_message_1">පිහිටීම් එක් කිරීමට, මැකීමට සහ යළි පෙළගැස්වීමට මෙම මෙනුවේ පහළින් “පිහිටීම් කළමනාකරණය” තට්ටු කරන්න.</string>
     <string name="drawer_tips_message_2">එකවර විවිධ පිහිටීම් පෙන්වීමට ඔබට මුල් තිරයට එක් විජෙට්ටුවකට වඩා එක් කළ හැක.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">පුරෝකථන වීඩියෝව</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">සිකු</string>
     <string name="general">පොදු</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">ඔබ ඔබේ දුරකථනය භාවිතා කරන ආකාරය මත පදනම්ව පුද්ගලාරෝපිත අන්තර්ගතය ලබා ගන්න.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">ඔබ ඔබේ ටැබ්ලටය භාවිතා කරන ආකාරය මත පදනම්ව පුද්ගලාරෝපිත අන්තර්ගතය ලබා ගන්න.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">කාලගුණය වෙතින්, ඔබේ වත්මන් පිහිටීම ඇතුළුව, කාලගුණ තොරතුරු ලබා ගන්න</string>
     <string name="go_to_website">වෙබ් අඩවියට යන්න</string>
     <string name="goto_apps">නව යාවත්කාලීනයක් පවතී. දැන්ම ස්ථාපනය කරන්නද?</string>
     <string name="goto_apps_later">පසුව</string>
     <string name="goto_apps_now">දැන්</string>
     <string name="goto_apps_update_title">නව අන්තර්ගත සංඥා</string>
     <string name="header_tts">ශීර්ෂකය</string>
+    <string name="heavy">අධික</string>
     <string name="heavy_rain">තද වැස්ස</string>
     <string name="heavy_rain_followed_by_intense_heat">අධික උණුසුමකට පසුව තද වැසි</string>
     <string name="heavy_rain_followed_by_light_rain">අධික උණුසුමකට පසුව තද වැසි</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">දෘශ්‍යතාව</string>
     <string name="life_index_wind">සුළඟ</string>
     <string name="life_index_wind_force">සුළං වේගය</string>
+    <string name="light">සැහැල්ලු</string>
     <string name="light_rain_followed_by_heavy_rain">මඳ වැසි වලින් පසු තද වැසි</string>
     <string name="light_rain_with_some_heavy_rain">මඳ වැසි සමඟ තද වැසි මඳක්</string>
     <string name="link_tts">සබැඳිය</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">ප්‍රතිඵල කිසිවක් හමු නොවිණි.</string>
     <string name="message_service_not_available">සේවාව දැන් නොමැත.</string>
     <string name="minus_tts">ඍණ</string>
+    <string name="mon">සඳු</string>
     <string name="more">තවත්</string>
     <string name="more_cuntact_us">අපව අමතන්න</string>
     <string name="more_information">වැඩිදුර</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">පෙරනිමි කාලගුණ පිහිටීම වෙනස් කිරීමට සහ ඔබේ සියලුම පිහිටීම කළමනාකරණයට මෙතැන තට්ටු කරන්න.</string>
     <string name="new_version_available">%s හි නව අනුවාදයක් ලද හැක.</string>
     <string name="new_version_is_available">නව අනුවාදයක් තිබේ.</string>
+    <string name="news_menu_show_news">පුවත් පෙන්වන්න</string>
+    <string name="news_opt_in_banner_title_text">කාලගුණ විජෙට්ටුව මත පුවත් පෙන්වීමෙන් වත්මන් සිදුවීම් පිළිබඳව යාවත්කාලීනව සිටින්න.</string>
+    <string name="news_opt_in_popup_desc_text">කාලගුණ විජෙට්ටුව මත %s වෙතින් නවතම සිරස්තල පෙන්වීමෙන් ලෝකය සමග යාවත්කාලීනව සිටින්න.</string>
+    <string name="news_opt_in_popup_title_text">එක් විජෙට්ටුවකින් පුවත් සහ කාලගුණය බැලීම</string>
+    <string name="news_request_agree_text">%s වෙතින් පුවත් ලබා ගැනීමට තට්ටු කරන්න</string>
+    <string name="news_widget_bubble_text">කාලගුණය සමග පුවත් ලබා ගන්න.</string>
+    <string name="news_widget_dummy_title">අද ප්‍රමුඛ කතන්දරය</string>
+    <string name="news_widget_new_dummy_title">මෙම උදෑසන ඔබ දැන ගැනීමට අවශ්‍ය කරුණු 5</string>
+    <string name="news_widget_oobe_text">පුවත් එක් කිරීමට මෙහි තට්ටු ක.</string>
     <string name="next">මීළඟ නගරය</string>
+    <string name="next_btn">ඊළඟ</string>
     <string name="next_city">ඊළඟ නගරය සඳහා කාලගුණ තොරතුරු බැලීමට දෙවරක් තට්ටු කරන්න.</string>
     <string name="night_tts">රාත්‍රිය</string>
     <string name="no_application_available">යෙදුම් නොමැත.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">කාලගුණ තොරතුරු නැත</string>
     <string name="not_in_use">භාවිතයේ නැත</string>
     <string name="not_now">දැන් නොවේ</string>
+    <string name="not_now_btn">දැන් නොවේ</string>
     <string name="not_selected">තෝරා නොගැනිණි</string>
     <string name="nothing_selected">කිසිවක් තෝරා නොමැත.</string>
     <string name="noti">දැන්වීම</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">වේගවත්ම හා වඩාත්ම නිවැරදි පිහිටීම අනාවරණය කර ගැනීමට, “සැකසුම්” තට්ටු කරන්න, අනතුරුව GPS, Wi-Fi සහ ජංගම ජාල වෙත ස්ථානගත කිරීමේ ක්‍රමය පිහිටුවන්න.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">වේගවත්ම හා වඩාත්ම නිවැරදි පිහිටීම අනාවරණය කර ගැනීමට, “සැකසුම්” තට්ටු කරන්න, අනතුරුව GPS සහ Wi-Fi වෙත ස්ථානගත කිරීමේ ක්‍රමය පිහිටුවන්න.</string>
     <string name="notice_gps_trun_off_message_verizon">ඔබේ දේශීය කාලගුණ තොරතුරු බැලීමට, පිහිටීම් සැකසුම් ක්‍රියාත්මක කර ප්‍රකාරය ඉහළ නිරවද්‍යතාව වෙත සකසා ඇති බව සහතික කර ගන්න.</string>
+    <string name="notification_alert_channel_name">දැඩි කාලගුණ ඇඟවුම</string>
     <string name="notification_apps_update_channel_name">දැනුම්දීම් යාවත්කාලය</string>
     <string name="notification_auto_refresh_channel_name">කාලගුණය ස්වයං නැවුම් කිරීම</string>
     <string name="notification_dex_channel_name">Samsung DeX තුළ කාලගුණය</string>
@@ -429,8 +454,8 @@
     <string name="notification_touch_widget_popup_content_for_one_hour_interval">කාලගුණ තොරතුරු සෑම පැයකටම වරක් ස්වයංක්‍රීයව යාවත්කාලීන වෙයි. මේ සඳහා අමතර ගාස්තු අය වීමට ඉඩ ඇත. ඔබට කාලගුණ විජෙට්ටු සැකසුම් තුළ අලුත් කිරීමේ කාලච්ඡේදය වෙනස් කළ හැක.</string>
     <string name="notification_updating">යාවත්කාල කරමින්…</string>
     <string name="notifications">දැනුම්දීම්</string>
-    <string name="off_text">අක්‍රියයි</string>
-    <string name="on_text">සක්‍රියයි</string>
+    <string name="off_text">ක්‍රියාවිරහිතයි</string>
+    <string name="on_text">ක්‍රියාත්මකයි</string>
     <string name="only_support_in">මෙම සේවාව සහාය දක්වන්නේ %s තුළ පමණි.</string>
     <string name="oobe_eula_description_permission_info">පිහිටීම: වත්මන් පිහිටීම සඳහා කාලගුණ තොරතුරු සෙවීමට භාවිතා කරයි.</string>
     <string name="oobe_eula_description_text">පහත අවසරය විකල්පමය වේ. ඔබට එය නොමැතිව යෙදුම භාවිතා කළ හැකි නමුත්, සමහර ක්‍රියාදාම සීමිත විය හැක.</string>
@@ -438,6 +463,7 @@
     <string name="open_app">යෙදුම විවෘත කර.</string>
     <string name="open_source_licences">විවෘත මූලාශ්‍ර බලපත්‍ර</string>
     <string name="other_locations">වෙනත් පිහිටීම්</string>
+    <string name="partly_sunny">අඩවශයෙන් හිරු එළිය සහිත</string>
     <string name="paused">විරාමයි</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">සහභාගිත්වය: %d mm</string>
     <string name="preview">%s පෙරදසුන</string>
     <string name="previous">පෙර නගරය</string>
+    <string name="previous_btn">පෙර</string>
     <string name="previous_city">පෙර නගරය සඳහා කාලගුණ තොරතුරු බැලීමට දෙවරක් තට්ටු කරන්න.</string>
     <string name="privacy_policy">රහස්‍යතා ප්‍රතිපත්තිය</string>
     <string name="probability_of_rain_text">වර්ෂාපතනයේ සම්භාවි.</string>
     <string name="protect_your_content">ඔබේ අන්තර්ගතය ආරක්ෂණය</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">රේඩාර් සහ සිතියම්</string>
     <string name="rain">වර්ෂාව</string>
     <string name="rain_followed_by_intense_heat">වැස්සට පසුව අධික උණුසුම</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">කාලගුණ තොරතුරු යාවත්කාල කිරීමට, “සැකසුම්” තට්ටු කර, යෙදුම් තතු > අවසර වෙත යන්න, එවිට පහත අවසරවලට ඉඩ දී නැවත උත්සාහ කරන්න:</string>
     <string name="runtime_location_permission_title">අවසරවලට ඉඩ දීම</string>
     <string name="runtime_oem_grant_permission_desc">%s යෙදුම පහත ඒවාට ප්‍රවේශ වීමට අවසරය දී ඇත:</string>
+    <string name="sat">සෙන</string>
     <string name="save_button">සුරකින්න</string>
     <string name="search_most_searched_for">වඩාත්ම සෙවුවේ</string>
     <string name="search_tab_cities">නගර</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">නව අන්තර්ගතය ඇත</string>
     <string name="sesl_material_overflow_badge_text_n">න</string>
     <string name="sesl_more_item_label">තවත්</string>
+    <string name="sesl_preferecne_badge_description">නව දැනුම්දීම</string>
     <string name="sesl_preferencecategory_added_title">ශීර්ෂකය</string>
     <string name="sesl_search_hint">සොයන්න</string>
     <string name="sesl_searchview_description_clear">සෙවුම් ක්ෂේත්‍රය හිස් කරන්න</string>
@@ -530,8 +561,8 @@
     <string name="sesl_searchview_description_voice">කටහඬින් සෙවුම</string>
     <string name="sesl_switch_off">ක්‍රියා විරහිතයි</string>
     <string name="sesl_switch_on">ක්‍රියාත්මකයි</string>
-    <string name="sesl_switchbar_off_text">අක්‍රියයි</string>
-    <string name="sesl_switchbar_on_text">සක්‍රියයි</string>
+    <string name="sesl_switchbar_off_text">ක්‍රියාවිරහිතයි</string>
+    <string name="sesl_switchbar_on_text">ක්‍රියාත්මකයි</string>
     <string name="sesl_toolbar_collapse_description">හකුළන්න</string>
     <string name="set_default_location">පෙරනිමි පිහිටීම පිහිටුවන්න</string>
     <string name="set_favorite">ප්‍රියතමය සකසන්න</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">ඔබේ ජාල සබැඳුම පිරික්සා නැවත උත්සාහ කරන්න.</string>
     <string name="st_offline">නොබැඳි</string>
     <string name="st_view_less">අඩුවෙන් බලන්න</string>
+    <string name="status_off">ක්‍රියා විරහිතයි</string>
+    <string name="status_on">ක්‍රියාත්මකයි</string>
+    <string name="sun">ඉරි</string>
     <string name="sunny">ආලෝකමත්</string>
     <string name="sunny_with_some_clouds">මඳක් වලාකුළු සමඟ අව්ව</string>
     <string name="sunny_with_some_heavy_rain">තද වැසි මඳක් සමඟ අව්ව</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">ඔබේ පැරණි උපාංගයෙන් කාලගුණ දත්ත ප්‍රතිසාධනයට මෙතැන තට්ටු කරන්න.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">නැවත ඔබේ පිහිටීම සොයා ගැනීමට උත්සාහ කිරීමට “යළි උත්සාහ කරන්න” තට්ටු කරන්න.</string>
     <string name="tap_setting_message_edge_panel">දේශීය කාලගුණය ලබා ගැනීමට පිහිටීම ක්‍රියාත්මක කරන්න.</string>
+    <string name="tap_the_settings_icon">සැකසුම් අයිකනය තට්ටු කරන්න.</string>
     <string name="tap_to_get_the_weather">කාලගුණය ලබා ගැනීමට තට්ටු කරන්න</string>
     <string name="temp_f_c">%d°ෆැරන්හයිට්</string>
     <string name="temp_f_m">%d°සෙල්සියස්</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">නියම හා කොන්දේසි</string>
     <string name="the_latest_version">නවතම අනුවාදය දැනටමත් ස්ථාපිතයි.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">මෙය දැනුම්දීම් සහ දින දසුනටත් අදාළ වනු ඇත.</string>
+    <string name="thu">බ්‍ර</string>
     <string name="tick_box_tts">සලකුණු කොටුව</string>
     <string name="ticked_tts">ලකුණු කෙරිණ</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">පැයට වරක්</string>
     <string name="title_select_locations">පිහිටීම් තේරීම</string>
     <string name="title_theme">තේමා</string>
+    <string name="to_continue_agree_to_updated">ඉදිරියට යාමට, අපගේ යාවත්කාලීන කළ %s වෙත එකඟ වන්න.</string>
     <string name="to_get_local_weather_chn">"දේශීය කාලගුණය ලබාගැනීම සඳහා, ඔබගේ වර්තමාන පිහිටීම කාලගුණ සේවා සැපයුම්කරු වෙත යැවෙනු ඇත. (කරුණාකර සැපයුම්කරුගේ %1$s නියම සහ කොන්දේසි%2$s සහ%3$s රහස්‍යතා ප්‍රතිපත්තිය බලන්න%4$s).
 ඔබේ උපාංගයේ ඇති වෙනත් යෙදුම් හා සේවා එම යෙදුම්වල ඇති කාලගුණය පෙන්වීමට සොයා නැවත ලබාගත් කාලගුණ දත්ත වෙත ප්‍රවේශ විය හැක.
 ඔබට අඛණ්ඩව කාලගුණ තොරතුරු සැපයීම සඳහා, ඔබ විසින් යෙදුම භාවිතා නොකරන විට ද කාලගුණය වෙත ඔබේ පිහිටීම සඳහා ප්‍රවේශය ලැබෙනු ඇත."</string>
     <string name="today">අද</string>
+    <string name="try_it_out_btn">එය උත්සාහ කරන්න</string>
+    <string name="tue">අඟ</string>
+    <string name="turn_on_to_use_precise_location">මෙම විශේෂාංගය භාවිතය සඳහා, ඔබට %s හට සෑම වේලාවකම ඔබේ පිහිටීමට ප්‍රවේශයට ඉඩ දී නිශ්චිත පිහිටීම භාවිතය ක්‍රියාත්මක කිරීමට අවශ්‍ය වේ. “සැකසුම්” තට්ටු කර, ඉන්පසු අවසර > පිහිටීම වෙත යන්න.</string>
     <string name="tw_title_weather_broadcast">විකාශනය</string>
-    <string name="unable_to_check_for_updates">යාවත්කාල සඳහා පිරික්සිය නොහැකිය. ජාල සබැඳුමක් නැත.</string>
+    <string name="unable_to_check_for_updates">යාවත්කාල සඳහා පිරික්සිය නොහැකි විය. පසුව නැවත උත්සාහ කරන්න.</string>
     <string name="unable_to_receive_info_msg">තතු ලැබිය නොහැක</string>
     <string name="unticked_tts">හරි ඉවත් කළ</string>
     <string name="unused">භාවිතා නොකළ</string>
     <string name="update">යාවත්කාලය</string>
     <string name="update_abb8">යාවත්කාලය</string>
     <string name="update_app">යෙදුම යාවත්කාලය</string>
+    <string name="updated_tile_chn">යාවත් වූ: %s</string>
     <string name="updated_tts">%s යාවත්කාලයි</string>
+    <string name="use_current_location">වත්මන් පිහිටීම භාවිතා කර</string>
     <string name="use_current_location_agree_popup">"දේශීය කාලගුණය ලබාගැනීමට, ඔබගේ වර්තමාන පිහිටුම කාලගුණ සේවා සැපයුම්කරු වෙත යැවෙනු ඇත. (කරුණාකර සැපයුම්කරුගේ %1$sපෞද්ගලිකත්ව ප්‍රතිපත්තිය%2$s බලන්න.)
 ඔබගේ උපාංගයේ ඇති අනෙකුත් යෙදුම් සහ සේවා එම යෙදුම්වල කාලගුණය පෙන්වීමට නැවත ලබාගත් කාලගුණ දත්ත වෙත ප්‍රවේශ විය හැකිය."</string>
     <string name="use_current_location_and_background_agree_popup">"දේශීය කාලගුණය ලබාගැනීම සඳහා, ඔබගේ වර්තමාන පිහිටීම කාලගුණ සේවා සැපයුම්කරු වෙත යැවෙනු ඇත. (කරුණාකර සැපයුම්කරුගේ %1$sරහස්‍යතා ප්‍රතිපත්තිය%2$s බලන්න.)
@@ -635,9 +677,16 @@
 කාලගුණ යෙදුම් සැකසීම් වෙත ගොස් ඔබට ඔබගේ පිහිටීම භාවිතා කිරීම ක්‍රියා විරහිත කළ හැකිය."</string>
     <string name="use_current_location_body_msg_chn">"කරුණාකර “කාලගුණය” භාවිතා කිරීමට පෙර ප්‍රවේසමෙන් කියවන්න :
 ඔබට ඔබේ වත්මන් පිහිටුමේ කාලගුණය දැනගැනීමට අවශ්‍ය නම් ඔබේ තෙවැනි පාර්ශ්වීය සේවා සැපයුම්කරු වෙත ඔබේ උපාංගය වෙත නිරතුරුව (ඔබ සේවාව භාවිතා නොකරන විට පවා) ප්‍රවේශ වී පහතින් දක්වා ඇති පරිදි යම් යම් දත්ත ලබා ගැනීමට අවසර ලබා දිය යුතුය. කරුණාකර එබඳු ප්‍රවේශයක් ලබා දීමට පෙර තෙවන පාර්ශවීය සේවා සැපයුම්කරුගේ %1$sනියම සහ කොන්දේසි%2$s සහ %3$sරහස්‍යතා ප්‍රතිපත්තිය%4$s සැලකිල්ලෙන් කියවා තේරුම් ගන්න. සැකසුම් මෙනුව තුළ “පිහිටීම” ක්‍රියා විරහිත කිරීමෙන් ඔබට ඔබ ලබා දුන් අවසරය ඉවත් කරගත හැක. ඔබේ උපාංගයේ ඇති වෙනත් යෙදුම් හා සේවාවන් එම යෙදුම්වල සහ සේවාවල කාලගුණය පෙන්වීමට නැවත ලබාගත් කාලගුණ දත්ත වෙත ප්‍රවේශ වීමට ඉඩ ඇත."</string>
+    <string name="use_current_location_body_msg_kor">"ඔබේ වත්මන් පිහිටීම එකතු කර ඔබේ දේශීය කාලගුණය ලබා ගැනීම වැනි, කාලගුණ යෙදුම් විශේෂාංග කිහිපයක් සැපයීමට භාවිතා කරනු ඇත.
+
+අඛණ්ඩ කාලගුණ තතු සැපයීම සඳහා, මෙම යෙදුම ඔබ යෙදුම භාවිතා නොකරන විට පවා, ඔබේ පිහිටීම නිතිපතා සකසනු ඇත. ඉදිරියට යාමෙන්, ඔබ ඉහත අරමුණු සඳහා ඔබේ පිහිටීම එකතු කිරීමට සහ සැකසීමට එකඟ වේ.
+
+ඔබට කාලගුණ යෙදුම් සැකසුම් තුළ මෙම පිහිටීම එකතු කිරීම සහ භාවිතය නැවැත්විය හැක."</string>
     <string name="use_current_location_body_purpose">අරමුණ</string>
     <string name="use_current_location_body_purpose_content">ඔබේ වත්මන් පිහිටීම සඳහා කාලගුණ තොරතුරු සැපයීමට</string>
     <string name="use_current_location_body_search_provider">සේවා සැපයුම්කරු</string>
+    <string name="use_current_location_continue">ඉදිරියට යන්න</string>
+    <string name="use_current_location_not_now">දැන් නොවේ</string>
     <string name="use_current_location_off_alert_popup">වත්මන් පිහිටීම් තොරතුරු ඉවත් කෙරෙනු ඇත.</string>
     <string name="useful_informations">ජීවිත ඉඟි සහ වෙනත් වාර්තා</string>
     <string name="using_as">%s ලෙස භාවිතා කරමින්</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">කාලගුණ ඉඟි</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">බදා</string>
     <string name="weekly_forecast">දිනපතා</string>
     <string name="widget_background">විජෙට්ටු පසුබිම</string>
     <string name="widget_empty_text">කාලගුණ තතු සඳහා තට්ටු කරන්න</string>
+    <string name="widget_location">නගරයේ නම</string>
     <string name="widget_name_4x1">කාලගුණය සහ ඔරලෝසුව</string>
     <string name="widget_setting">සැකසුම්</string>
     <string name="widget_setting_background_color">පසුබිම් වර්ණය</string>

@@ -67,7 +67,7 @@
 
 # virtual methods
 .method public build()Lorg/spongycastle/asn1/dvcs/DVCSCertInfo;
-    .locals 6
+    .locals 5
 
     .line 67
     new-instance v0, Lorg/spongycastle/asn1/ASN1EncodableVector;
@@ -82,13 +82,15 @@
     if-eq v1, v2, :cond_0
 
     .line 71
-    new-instance v3, Lorg/spongycastle/asn1/ASN1Integer;
+    new-instance v1, Lorg/spongycastle/asn1/ASN1Integer;
 
-    int-to-long v4, v1
+    iget v3, p0, Lorg/spongycastle/asn1/dvcs/DVCSCertInfoBuilder;->version:I
 
-    invoke-direct {v3, v4, v5}, Lorg/spongycastle/asn1/ASN1Integer;-><init>(J)V
+    int-to-long v3, v3
 
-    invoke-virtual {v0, v3}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
+    invoke-direct {v1, v3, v4}, Lorg/spongycastle/asn1/ASN1Integer;-><init>(J)V
+
+    invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
 
     .line 73
     :cond_0

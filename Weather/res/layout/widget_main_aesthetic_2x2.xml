@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/widget_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<FrameLayout android:id="@id/widget_main_layout" android:nextFocusUp="@id/widget_refresh_icon_touch_area" android:nextFocusDown="@id/widget_refresh_icon_touch_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
-    <FrameLayout android:id="@id/widget_background_dim" android:background="@drawable/widget_bg_gradient_dim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/widget_background_dim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <include layout="@layout/widget_main_aesthetic_weather_illust_view" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/widget_current_weather_illust_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitEnd" android:adjustViewBounds="true" />
     <RelativeLayout android:id="@id/weather_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="100.0" android:layout_weight="76.0">
-                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="21.0">
-                    <TextView android:id="@id/widget_current_temp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:autoSizeTextType="uniform" style="@style/AestheticWidget.TextAppearance.Temperature" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.4" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="100.0" android:layout_weight="79.9">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.8">
+                    <TextView android:gravity="start|center" android:id="@id/widget_current_temp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAlignment="viewStart" android:autoSizeTextType="uniform" style="@style/AestheticWidget.TextAppearance.Temperature" />
                 </FrameLayout>
-                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="22.2" />
-                <RelativeLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="23.4">
+                <LinearLayout android:orientation="vertical" android:id="@id/widget_current_weather_text_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.7">
+                    <TextView android:gravity="start|center" android:id="@id/widget_current_weather_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAlignment="viewStart" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/weather_update_text_min_size_2x2" style="@style/AestheticWidget.TextAppearance" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="11.0" />
+                <FrameLayout android:id="@id/additional_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.6" />
+                <RelativeLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="23.9">
                     <include layout="@layout/widget_main_aesthetic_weather_animation_view_fitend" />
                     <ImageView android:id="@id/widget_current_weather_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitEnd" android:adjustViewBounds="true" />
                 </RelativeLayout>
-                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
-                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.4">
-                    <TextView android:gravity="end|center" android:id="@id/widget_current_city_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAlignment="viewEnd" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/weather_city_text_min_size_2x2" style="@style/AestheticWidget.TextAppearance" />
+                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.6">
+                    <TextView android:gravity="end|center" android:id="@id/widget_current_city_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAlignment="viewEnd" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/weather_city_text_min_size_2x2" style="@style/AestheticWidget.TextAppearance" />
                 </LinearLayout>
-                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.5">
-                    <TextView android:gravity="end|center" android:id="@id/widget_update_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAlignment="viewEnd" android:layout_marginEnd="@dimen/aesthetic_weather_update_text_margin_end_2x2" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/weather_update_text_min_size_2x2" style="@style/AestheticWidget.TextAppearance" />
-                    <include layout="@layout/widget_main_aesthetic_refresh_progress" />
+                <LinearLayout android:orientation="vertical" android:id="@id/widget_update_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="8.6" android:layout_weight="8.6">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.9" />
+                    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.7">
+                        <TextView android:gravity="end|center" android:id="@id/widget_update_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAlignment="viewEnd" android:layout_marginEnd="@dimen/aesthetic_weather_update_text_margin_end_2x2" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/weather_update_text_min_size_2x2" style="@style/AestheticWidget.TextAppearance" />
+                        <include layout="@layout/widget_main_aesthetic_refresh_progress" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-        <Button android:id="@id/widget_refresh_icon_touch_area" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/aesthetic_weather_refresh_touch_size" android:layout_height="@dimen/aesthetic_weather_refresh_touch_size" android:layout_alignParentBottom="true" android:contentDescription="@string/refresh_button" android:layout_alignParentEnd="true" />
+        <LinearLayout android:gravity="end|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+            <include android:layout_width="@dimen/aesthetic_weather_refresh_touch_size" android:layout_height="@dimen/aesthetic_weather_refresh_touch_size" layout="@layout/widget_refresh_touch_area" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+        </LinearLayout>
     </RelativeLayout>
     <include android:id="@id/error_area" android:visibility="gone" layout="@layout/widget_aesthetic_error_nx2" />
 </FrameLayout>

@@ -34,12 +34,12 @@
 .method constructor <init>(Landroidx/recyclerview/widget/StaggeredGridLayoutManager;)V
     .locals 0
 
-    .line 3300
+    .line 3322
     iput-object p1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->this$0:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3301
+    .line 3323
     invoke-virtual {p0}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->reset()V
 
     return-void
@@ -50,7 +50,7 @@
 .method assignCoordinateFromPadding()V
     .locals 1
 
-    .line 3327
+    .line 3349
     iget-boolean v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mLayoutFromEnd:Z
 
     if-eqz v0, :cond_0
@@ -65,12 +65,12 @@
 
     goto :goto_0
 
+    .line 3350
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->this$0:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
     iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->mPrimaryOrientation:Landroidx/recyclerview/widget/OrientationHelper;
 
-    .line 3328
     invoke-virtual {v0}, Landroidx/recyclerview/widget/OrientationHelper;->getStartAfterPadding()I
 
     move-result v0
@@ -84,12 +84,12 @@
 .method assignCoordinateFromPadding(I)V
     .locals 1
 
-    .line 3332
+    .line 3354
     iget-boolean v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mLayoutFromEnd:Z
 
     if-eqz v0, :cond_0
 
-    .line 3333
+    .line 3355
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->this$0:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
     iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->mPrimaryOrientation:Landroidx/recyclerview/widget/OrientationHelper;
@@ -104,7 +104,7 @@
 
     goto :goto_0
 
-    .line 3335
+    .line 3357
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->this$0:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
@@ -127,31 +127,31 @@
 
     const/4 v0, -0x1
 
-    .line 3305
+    .line 3327
     iput v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mPosition:I
 
     const/high16 v1, -0x80000000
 
-    .line 3306
+    .line 3328
     iput v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mOffset:I
 
     const/4 v1, 0x0
 
-    .line 3307
+    .line 3329
     iput-boolean v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mLayoutFromEnd:Z
 
-    .line 3308
+    .line 3330
     iput-boolean v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mInvalidateOffsets:Z
 
-    .line 3309
+    .line 3331
     iput-boolean v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mValid:Z
 
-    .line 3310
+    .line 3332
     iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mSpanReferenceLines:[I
 
     if-eqz v1, :cond_0
 
-    .line 3311
+    .line 3333
     invoke-static {v1, v0}, Ljava/util/Arrays;->fill([II)V
 
     :cond_0
@@ -161,10 +161,10 @@
 .method saveSpanReferenceLines([Landroidx/recyclerview/widget/StaggeredGridLayoutManager$Span;)V
     .locals 5
 
-    .line 3316
+    .line 3338
     array-length v0, p1
 
-    .line 3317
+    .line 3339
     iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mSpanReferenceLines:[I
 
     if-eqz v1, :cond_0
@@ -173,7 +173,7 @@
 
     if-ge v1, v0, :cond_1
 
-    .line 3318
+    .line 3340
     :cond_0
     iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->this$0:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
@@ -191,7 +191,7 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 3322
+    .line 3344
     iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$AnchorInfo;->mSpanReferenceLines:[I
 
     aget-object v3, p1, v1

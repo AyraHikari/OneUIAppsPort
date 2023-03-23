@@ -1,5 +1,5 @@
 .class public Landroidx/databinding/ObservableBoolean;
-.super Landroidx/databinding/BaseObservableField;
+.super Landroidx/databinding/b;
 .source "ObservableBoolean.java"
 
 # interfaces
@@ -18,21 +18,18 @@
     .end annotation
 .end field
 
-.field static final serialVersionUID:J = 0x1L
-
 
 # instance fields
-.field private mValue:Z
+.field public i:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 101
-    new-instance v0, Landroidx/databinding/ObservableBoolean$1;
+    new-instance v0, Landroidx/databinding/ObservableBoolean$a;
 
-    invoke-direct {v0}, Landroidx/databinding/ObservableBoolean$1;-><init>()V
+    invoke-direct {v0}, Landroidx/databinding/ObservableBoolean$a;-><init>()V
 
     sput-object v0, Landroidx/databinding/ObservableBoolean;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -42,8 +39,8 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 59
-    invoke-direct {p0}, Landroidx/databinding/BaseObservableField;-><init>()V
+    .line 3
+    invoke-direct {p0}, Landroidx/databinding/b;-><init>()V
 
     return-void
 .end method
@@ -51,20 +48,11 @@
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 52
-    invoke-direct {p0}, Landroidx/databinding/BaseObservableField;-><init>()V
+    .line 1
+    invoke-direct {p0}, Landroidx/databinding/b;-><init>()V
 
-    .line 53
-    iput-boolean p1, p0, Landroidx/databinding/ObservableBoolean;->mValue:Z
-
-    return-void
-.end method
-
-.method public varargs constructor <init>([Landroidx/databinding/Observable;)V
-    .locals 0
-
-    .line 70
-    invoke-direct {p0, p1}, Landroidx/databinding/BaseObservableField;-><init>([Landroidx/databinding/Observable;)V
+    .line 2
+    iput-boolean p1, p0, Landroidx/databinding/ObservableBoolean;->i:Z
 
     return-void
 .end method
@@ -79,28 +67,27 @@
     return v0
 .end method
 
-.method public get()Z
+.method public o()Z
     .locals 1
 
-    .line 77
-    iget-boolean v0, p0, Landroidx/databinding/ObservableBoolean;->mValue:Z
+    iget-boolean v0, p0, Landroidx/databinding/ObservableBoolean;->i:Z
 
     return v0
 .end method
 
-.method public set(Z)V
+.method public r(Z)V
     .locals 1
 
-    .line 85
-    iget-boolean v0, p0, Landroidx/databinding/ObservableBoolean;->mValue:Z
+    .line 1
+    iget-boolean v0, p0, Landroidx/databinding/ObservableBoolean;->i:Z
 
     if-eq p1, v0, :cond_0
 
-    .line 86
-    iput-boolean p1, p0, Landroidx/databinding/ObservableBoolean;->mValue:Z
+    .line 2
+    iput-boolean p1, p0, Landroidx/databinding/ObservableBoolean;->i:Z
 
-    .line 87
-    invoke-virtual {p0}, Landroidx/databinding/ObservableBoolean;->notifyChange()V
+    .line 3
+    invoke-virtual {p0}, Landroidx/databinding/a;->m()V
 
     :cond_0
     return-void
@@ -109,8 +96,7 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 98
-    iget-boolean p2, p0, Landroidx/databinding/ObservableBoolean;->mValue:Z
+    iget-boolean p2, p0, Landroidx/databinding/ObservableBoolean;->i:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

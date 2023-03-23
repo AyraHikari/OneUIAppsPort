@@ -50,9 +50,8 @@
 
     const-string v0, "source"
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 31
     invoke-direct {p0}, Lokhttp3/ResponseBody;-><init>()V
 
     iput-object p1, p0, Lokhttp3/internal/http/RealResponseBody;->contentTypeString:Ljava/lang/String;
@@ -69,7 +68,6 @@
 .method public contentLength()J
     .locals 2
 
-    .line 33
     iget-wide v0, p0, Lokhttp3/internal/http/RealResponseBody;->contentLength:J
 
     return-wide v0
@@ -78,7 +76,6 @@
 .method public contentType()Lokhttp3/MediaType;
     .locals 2
 
-    .line 35
     iget-object v0, p0, Lokhttp3/internal/http/RealResponseBody;->contentTypeString:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -101,7 +98,6 @@
 .method public source()Lokio/BufferedSource;
     .locals 1
 
-    .line 37
     iget-object v0, p0, Lokhttp3/internal/http/RealResponseBody;->source:Lokio/BufferedSource;
 
     return-object v0

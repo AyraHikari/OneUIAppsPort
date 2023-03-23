@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroidx/recyclerview/widget/RecyclerView;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/recyclerview/widget/RecyclerView;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
-    .line 3778
+    .line 15477
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$13;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,14 +36,12 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
-    .line 3781
+    .line 15480
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$13;->this$0:Landroidx/recyclerview/widget/RecyclerView;
 
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->access$4000(Landroidx/recyclerview/widget/RecyclerView;I)V
+    invoke-static {v0}, Landroidx/recyclerview/widget/RecyclerView;->access$6500(Landroidx/recyclerview/widget/RecyclerView;)V
 
     return-void
 .end method

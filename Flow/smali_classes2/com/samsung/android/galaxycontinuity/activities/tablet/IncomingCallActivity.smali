@@ -35,7 +35,7 @@
 .method private initView()V
     .locals 1
 
-    const v0, 0x7f090083
+    const v0, 0x7f0a00ad
 
     .line 71
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->findViewById(I)Landroid/view/View;
@@ -46,7 +46,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->mCallerNameText:Landroid/widget/TextView;
 
-    const v0, 0x7f090084
+    const v0, 0x7f0a00ae
 
     .line 72
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->findViewById(I)Landroid/view/View;
@@ -57,7 +57,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->mCallerNumberText:Landroid/widget/TextView;
 
-    const v0, 0x7f090082
+    const v0, 0x7f0a00ac
 
     .line 73
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->findViewById(I)Landroid/view/View;
@@ -68,7 +68,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->mCallerImage:Landroid/widget/ImageView;
 
-    const v0, 0x7f0900b5
+    const v0, 0x7f0a00fd
 
     .line 74
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->findViewById(I)Landroid/view/View;
@@ -163,13 +163,19 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " "
+    move-result-object v1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " "
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -306,6 +312,14 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 34
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
@@ -313,7 +327,7 @@
     .line 35
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->registerBroadcastReceiver()V
 
-    const p1, 0x7f0c0014
+    const p1, 0x7f0d0012
 
     .line 37
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/IncomingCallActivity;->setContentView(I)V

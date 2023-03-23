@@ -29,7 +29,23 @@
 .end method
 
 .method public abstract parse(Lorg/json/JSONObject;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 .end method
 
 .method public abstract run(Landroid/content/Context;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 .end method

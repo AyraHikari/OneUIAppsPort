@@ -46,7 +46,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,7 +54,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 65
     invoke-direct {p0}, Lokhttp3/internal/platform/Jdk9Platform$Companion;-><init>()V
 
     return-void
@@ -66,12 +64,7 @@
 .method public final buildIfSupported()Lokhttp3/internal/platform/Jdk9Platform;
     .locals 1
 
-    .line 86
-    move-object v0, p0
-
-    check-cast v0, Lokhttp3/internal/platform/Jdk9Platform$Companion;
-
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Jdk9Platform$Companion;->isAvailable()Z
+    invoke-virtual {p0}, Lokhttp3/internal/platform/Jdk9Platform$Companion;->isAvailable()Z
 
     move-result v0
 
@@ -93,7 +86,6 @@
 .method public final isAvailable()Z
     .locals 1
 
-    .line 66
     invoke-static {}, Lokhttp3/internal/platform/Jdk9Platform;->access$isAvailable$cp()Z
 
     move-result v0

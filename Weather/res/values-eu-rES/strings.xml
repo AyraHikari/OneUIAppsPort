@@ -33,6 +33,7 @@
     <string name="air_quality">Airearen kalitatea</string>
     <string name="air_quality_next_tts">Geroago egindako aire kalitatearen eguneko iragarpenak</string>
     <string name="air_quality_previous_tts">Lehendik egindako aire kalitatearen eguneko iragarpenak</string>
+    <string name="alert_title">Eguraldi alerta larria</string>
     <string name="all_added_cities">Gehitutako hiri guztiak</string>
     <string name="allow">Baimendu</string>
     <string name="allow_permission_in_settings">Eginbide hau erabiltzeko, baimena eman behar duzu Ezarpenak atalean.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Ekintza ez da onartzen</string>
     <string name="apply_daylight_saving_time">Udako ordutegia aplikatu?</string>
     <string name="as_possible_after_verification">Bidali da txostena. Egiaztatu ondoren, hiriaren izena ahal bezain laster aldatuko da.</string>
+    <string name="auto_refresh_on_screen_description">Jaso automatikoki eguraldiari buruzko informazio eguneratua orduero. Aktibatuta dagoenean, ezin da eskuz eguneratu.</string>
+    <string name="auto_refresh_on_the_go">Freskatu automatikoki mugitu ahala</string>
+    <string name="auto_refresh_on_the_go_advanced">Aurreratua</string>
+    <string name="auto_refresh_on_the_go_description">Lortu eguraldi iragarpenak maizago gidatzen ari zarenean edo bizikletaz, korrika edo oinez zoazenean. Aktibatuta dagoenean, ezingo duzu eskuz freskatu.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Jaso eguraldi iragarpenak maizago gidatzen ari zarenean edo bizikletaz, korrika edo oinez zoazenean.</string>
     <string name="btn_report">Salatu</string>
     <string name="button_finish">Bukatu</string>
     <string name="button_tts">Botoia</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Informazio gehiago lortzeko, ukitu bi aldiz.</string>
     <string name="china">Txina</string>
     <string name="cities_button">Hiriak</string>
+    <string name="city_added">Gehitu da hiria.</string>
     <string name="city_list_text">Hiriak</string>
     <string name="clear">Garbitu</string>
     <string name="clear_then_cloudy">Oskarbi, eta ondoren hodeitsu</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Elementua %d posizioan utzi da.</string>
     <string name="dragndroplist_drag_start">Elementua %d posiziora arrastatzen hasi da.</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d posizioko elementua ezin da arrastatu.</string>
+    <string name="drawer_tips">%s aholkuak</string>
     <string name="drawer_tips_message">Ukitu hemen kokapenak gehitu, ezabatu edo berriz ordenatzeko. Widget bat baino gehiago ere gehi ditzakezu Pantaila nagusian kokapen desberdinak erakusteko.</string>
     <string name="drawer_tips_message_1">Kokapenak gehitzeko, ezabatzeko eta ordenatzeko, ukitu menu honen goialdean dagoen Kudeatu kokapenak aukera.</string>
     <string name="drawer_tips_message_2">Hainbat kokapen aldi berean erakusteko, gehitu widget bat baino gehiago Pantaila nagusian.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Iragarpen bideoa</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s m/h</string>
+    <string name="fri">Osl.</string>
     <string name="general">Orokorra</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Lortu eduki pertsonalizatua telefonoa erabiltzeko duzun moduan oinarrituta.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Lortu eduki pertsonalizatua tableta erabiltzeko duzun moduan oinarrituta.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">Eguraldia aplikazioko eguraldiari buruzko informazioa (kokapena barne) lortzeko</string>
     <string name="go_to_website">Joan webgunera</string>
     <string name="goto_apps">Eguneraketa berria erabilgarri. Instalatu orain?</string>
     <string name="goto_apps_later">Geroago</string>
     <string name="goto_apps_now">Orain</string>
     <string name="goto_apps_update_title">Eduki berriaren alertak</string>
     <string name="header_tts">Goiburua</string>
+    <string name="heavy">Ugaria</string>
     <string name="heavy_rain">Euri jasa</string>
     <string name="heavy_rain_followed_by_intense_heat">Euri jasa, eta ondoren bero handia</string>
     <string name="heavy_rain_followed_by_light_rain">Euri jasa, eta ondoren bero handia</string>
@@ -339,6 +350,7 @@ maziorik ez"</string>
     <string name="life_index_visibility">Ikusgaitasuna</string>
     <string name="life_index_wind">Haizea</string>
     <string name="life_index_wind_force">Haizearen abiadura</string>
+    <string name="light">Arina</string>
     <string name="light_rain_followed_by_heavy_rain">Zirimiria, eta ondoren euri jasa</string>
     <string name="light_rain_with_some_heavy_rain">Zirimiria eta euri jasa</string>
     <string name="link_tts">Estekatu</string>
@@ -394,6 +406,7 @@ maziorik ez"</string>
     <string name="message_no_search_result_z">Ez da emaitzarik aurkitu.</string>
     <string name="message_service_not_available">Zerbitzu hau orain ez dago eskuragarri</string>
     <string name="minus_tts">Ken</string>
+    <string name="mon">Asl.</string>
     <string name="more">Geh.</string>
     <string name="more_cuntact_us">Jarri harremanetan</string>
     <string name="more_information">Gehiago</string>
@@ -402,8 +415,18 @@ maziorik ez"</string>
     <string name="navigation_drawer">Erakutsi nabigazio menua</string>
     <string name="navigation_drawer_tips_message">Ukitu hau eguraldirako kokapen lehenetsia aldatzeko eta kokapen guztiak kudeatzeko.</string>
     <string name="new_version_available">%s bertsio berri bat dago eskuragarri.</string>
-    <string name="new_version_is_available">Bertsio berria dago erabilgarri</string>
+    <string name="new_version_is_available">Bertsio berri bat dago erabilgarri.</string>
+    <string name="news_menu_show_news">Erakutsi albisteak</string>
+    <string name="news_opt_in_banner_title_text">Izan azken gertaeren berri Eguraldia widgetean albisteak bistaratuta.</string>
+    <string name="news_opt_in_popup_desc_text">Izan munduko azken albisteen berri Eguraldia widgetean %s zerbitzuko titular berrienak bistaratuta.</string>
+    <string name="news_opt_in_popup_title_text">Ikusi albisteak eta eguraldia widget bakar batean</string>
+    <string name="news_request_agree_text">Ukitu honi buruzko albisteak lortzeko: %s</string>
+    <string name="news_widget_bubble_text">Jaso albisteak eguraldiarekin batera.</string>
+    <string name="news_widget_dummy_title">Gaurko istorio nagusia</string>
+    <string name="news_widget_new_dummy_title">Gaur goizean jakin beharreko bost gauzak</string>
+    <string name="news_widget_oobe_text">Ukitu hau albisteak gehitzeko.</string>
     <string name="next">Hurrengo hiria</string>
+    <string name="next_btn">Hurrengoa</string>
     <string name="next_city">Ukitu bi aldiz hurrengo hiriaren eguraldi informazioa ikusteko.</string>
     <string name="night_tts">Gaua</string>
     <string name="no_application_available">Ez dago aplikaziorik erabilgarri</string>
@@ -412,6 +435,7 @@ maziorik ez"</string>
     <string name="no_weather_information">Ez dago eguraldiaren informaziorik</string>
     <string name="not_in_use">Ez da erabiltzen ari</string>
     <string name="not_now">Orain ez</string>
+    <string name="not_now_btn">Orain ez</string>
     <string name="not_selected">Ez da hautatu</string>
     <string name="nothing_selected">Ez da ezer aukeratu</string>
     <string name="noti">Oharra</string>
@@ -419,6 +443,7 @@ maziorik ez"</string>
     <string name="notice_accurate_location_detection_msg_no_path">Kokapen hautematea azkarragoa eta zehatzagoa izan dadin, ukitu EZARPENAK, eta ezarri Kokapen metodoa GPS, Wi-Fi eta sare mugikorrak gisa.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Kokapen hautematea azkarragoa eta zehatzagoa izan dadin, ukitu EZARPENAK, eta ezarri Kokapen metodoa GPS eta Wi-Fi gisa.</string>
     <string name="notice_gps_trun_off_message_verizon">Zauden tokiko eguraldi informazioa ikusteko, aktibatu Kokapen ezarpenak eta ziurtatu Zehaztasun handia modua ezarri dela.</string>
+    <string name="notification_alert_channel_name">Eguraldi alerta larria</string>
     <string name="notification_apps_update_channel_name">Eguneratu jakinarazpenak</string>
     <string name="notification_auto_refresh_channel_name">Eguraldia auto. freskatzea</string>
     <string name="notification_dex_channel_name">Eguraldia Samsung DeX-en</string>
@@ -430,8 +455,8 @@ maziorik ez"</string>
     <string name="notification_touch_widget_popup_content_for_one_hour_interval">Eguraldi informazioa automatikoki eguneratzen da orduro. Baliteke kostu osagarriak eragitea. Freskatzeko tartea alda dezakezu eguraldi widgetaren ezarpenetan.</string>
     <string name="notification_updating">Eguneratzen…</string>
     <string name="notifications">Jakinarazpenak</string>
-    <string name="off_text">Desaktibatu</string>
-    <string name="on_text">Aktibatu</string>
+    <string name="off_text">Desaktibatuta</string>
+    <string name="on_text">Aktibatuta</string>
     <string name="only_support_in">Zerbitzu hau herrialde honetan bakarrik onartzen da: %s.</string>
     <string name="oobe_eula_description_permission_info">Kokapena: unean uneko kokapenaren eguraldiari buruzko informazioa bilatzeko.</string>
     <string name="oobe_eula_description_text">Baimen hau aukerakoa da. Hura gabe erabil dezakezu aplikazioa, baina baliteke funtzio batzuk mugatuta egotea.</string>
@@ -439,6 +464,7 @@ maziorik ez"</string>
     <string name="open_app">Ireki aplik.</string>
     <string name="open_source_licences">Iturburu irekiko lizentziak</string>
     <string name="other_locations">Beste kokapen batzuk</string>
+    <string name="partly_sunny">Eguzkitsua neurri batean</string>
     <string name="paused">Pausatuta</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -455,10 +481,13 @@ maziorik ez"</string>
     <string name="precipitation_pd_mm">Prezipitazioak: %d mm</string>
     <string name="preview">%s aurrebista</string>
     <string name="previous">Aurreko hiria</string>
+    <string name="previous_btn">Aurrekoa</string>
     <string name="previous_city">Ukitu bi aldiz aurreko hiriaren eguraldi informazioa ikusteko.</string>
     <string name="privacy_policy">Pribatutasun politika</string>
     <string name="probability_of_rain_text">Euri probabilitatea</string>
     <string name="protect_your_content">Babestu zure edukia</string>
+    <string name="ps_in">%s hazbete</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">Radarra eta mapak</string>
     <string name="rain">Euria</string>
     <string name="rain_followed_by_intense_heat">Euria, eta ondoren bero handia</string>
@@ -496,6 +525,7 @@ maziorik ez"</string>
     <string name="runtime_location_permission_desc">Eguraldiaren informazioa eguneratzeko, ukitu EZARPENAK, joan Aplikazioaren informazioa > Baimenak aukerara, eman baimen hauek eta saiatu berriz:</string>
     <string name="runtime_location_permission_title">Eman baimenak</string>
     <string name="runtime_oem_grant_permission_desc">%s aplikazioari hauetan sartzeko baimena eman zaio:</string>
+    <string name="sat">Lar.</string>
     <string name="save_button">Gorde</string>
     <string name="search_most_searched_for">Gehien bilatutakoak</string>
     <string name="search_tab_cities">Hiriak</string>
@@ -522,6 +552,7 @@ maziorik ez"</string>
     <string name="sesl_material_badge_description">Eduki berria dago erabilgarri</string>
     <string name="sesl_material_overflow_badge_text_n">B</string>
     <string name="sesl_more_item_label">Gehiago</string>
+    <string name="sesl_preferecne_badge_description">Jakinarazpen berria</string>
     <string name="sesl_preferencecategory_added_title">Goiburua</string>
     <string name="sesl_search_hint">Bilatu</string>
     <string name="sesl_searchview_description_clear">Garbitu bilaketa eremua</string>
@@ -532,7 +563,7 @@ maziorik ez"</string>
     <string name="sesl_switch_off">Desaktibatuta</string>
     <string name="sesl_switch_on">Aktibatuta</string>
     <string name="sesl_switchbar_off_text">Desaktibatuta</string>
-    <string name="sesl_switchbar_on_text">Aktibatu</string>
+    <string name="sesl_switchbar_on_text">Aktibatuta</string>
     <string name="sesl_toolbar_collapse_description">Tolestu</string>
     <string name="set_default_location">Ezarri lehenetsitako kokapena</string>
     <string name="set_favorite">Ezarri gogokoa</string>
@@ -586,6 +617,9 @@ maziorik ez"</string>
     <string name="st_no_network_desc">Egiaztatu sare konexioa eta saiatu berriz.</string>
     <string name="st_offline">Deskonekt.</string>
     <string name="st_view_less">Ikusi gutxiago</string>
+    <string name="status_off">Desaktibatuta</string>
+    <string name="status_on">Aktibatuta</string>
+    <string name="sun">Iga.</string>
     <string name="sunny">Eguzkitsu</string>
     <string name="sunny_with_some_clouds">Eguzkitsua, hodeirik gabe</string>
     <string name="sunny_with_some_heavy_rain">Eguzkia eta euri jasa</string>
@@ -598,13 +632,15 @@ maziorik ez"</string>
     <string name="tap_here_to_restore_the_weather">Ukitu hemen, gailu zaharreko eguraldiari buruzko datuak leheneratzeko.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">Zure kokapena berriz bilatzeko, ukitu SAIATU BERRIZ.</string>
     <string name="tap_setting_message_edge_panel">Aktibatu Kokapena eguraldi nazionala lortzeko.</string>
+    <string name="tap_the_settings_icon">Ukitu ezarpenen ikonoa.</string>
     <string name="tap_to_get_the_weather">Ukitu eguraldia lortzeko</string>
     <string name="temp_f_c">%d °F</string>
     <string name="temp_f_m">%d °C</string>
     <string name="ten_minute_forecast">10 minutuko iragarpena</string>
     <string name="terms_and_conditions">Zehaztapenak eta baldintzak</string>
-    <string name="the_latest_version">Azken bertsioa jada instalatu da.</string>
+    <string name="the_latest_version">Azken bertsioa instalatuta dago jada.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Jakinarazpenetan eta Egutegia aplikazioan ere aplikatuko da.</string>
+    <string name="thu">Osg.</string>
     <string name="tick_box_tts">Kontrol laukia</string>
     <string name="ticked_tts">Markatuta</string>
     <string name="time_am">AM</string>
@@ -612,19 +648,25 @@ maziorik ez"</string>
     <string name="times_forecast">Orduro</string>
     <string name="title_select_locations">Hautatu kokapenak</string>
     <string name="title_theme">Gaiak</string>
+    <string name="to_continue_agree_to_updated">Aurrera egiteko, onartu eguneratutako %s.</string>
     <string name="to_get_local_weather_chn">"Tokiko eguraldiari buruzko informazioa izan dezazun, zure kokapena jakinaraziko zaio eguraldi zerbitzuen hornitzaileari. (Ikusi hornitzailearen %1$sZehaztapenak eta Baldintzak%2$s eta %3$sPribatutasun Politika%4$s).
 Baliteke gailuko beste aplikazio eta zerbitzu batzuek berreskuratutako eguraldiari buruzko datuak atzitzea eguraldia erakusteko aplikazio horietan.
 Eguraldiari buruzko informazio etengabea emateko, Eguradia aplikazioak zure kokapena atzitu beharko du, baita ez zarenean aplikazioa erabiltzen ari ere."</string>
     <string name="today">Gaur</string>
+    <string name="try_it_out_btn">Proba ezazu</string>
+    <string name="tue">Asr.</string>
+    <string name="turn_on_to_use_precise_location">Eginbide hau erabiltzeko, kokapena beti atzitzeko baimena eman behar diozu %s aplikazioari, eta Erabili kokapen zehatza aktibatu. Horretarako, joan Ezarpenak > Baimenak > Kokapena atalera.</string>
     <string name="tw_title_weather_broadcast">Igorri</string>
-    <string name="unable_to_check_for_updates">Ezin da bilatu eguneraketarik. Ez dago sare konexiorik.</string>
+    <string name="unable_to_check_for_updates">Ezin izan da bilatu eguneraketarik. Saiatu berriz geroago.</string>
     <string name="unable_to_receive_info_msg">Ezin da informaziorik jaso</string>
     <string name="unticked_tts">Markatu gabea</string>
     <string name="unused">Erabiltzen ez direnak</string>
     <string name="update">Eguneratu</string>
     <string name="update_abb8">Eguneratu</string>
     <string name="update_app">Eguneratu aplikazioa</string>
+    <string name="updated_tile_chn">Eguneratuta: %s</string>
     <string name="updated_tts">Eguneratu da %s</string>
+    <string name="use_current_location">Erabili oraingo kokapena</string>
     <string name="use_current_location_agree_popup">"Tokiko eguraldiari buruzko informazioa izateko, eguraldi zerbitzuen hornitzaileari zure kokapena jakinaraziko zaio. (Ikusi hornitzailearen %1$spribatutasun politika%2$s).
 Baliteke gailuko beste aplikazio eta zerbitzu batzuek bildutako eguraldi datuak atzitzea eguraldiaren berri emateko."</string>
     <string name="use_current_location_and_background_agree_popup">"Tokiko eguraldiari buruzko informazioa izateko, zure kokapena jakinaraziko zaio eguraldi zerbitzuen hornitzaileari. (Ikusi hornitzailearen %1$sPribatutasun politika%2$s.)
@@ -636,9 +678,16 @@ Eguraldiari buruzko informazio etengabea emateko, Eguradia aplikazioak zure koka
 Zure kokapenaren erabilera desaktibatu dezakezu Eguraldia aplikazioaren ezarpenak atalean."</string>
     <string name="use_current_location_body_msg_chn">"Mesedez, irakur ezazu arretaz, “Eguraldia” erabiltzen hasi baino lehen:
 Orain zauden lekuan zein eguraldi egingo duen jakin nahi baduzu, hirugarrenen zerbitzu hornitzaile bati eman beharko diozu zure gailura sartzeko eta bertan zenbait datu biltzeko baimena (baita zerbitzua erabiltzen ari ez bazara ere), beherago zerrendatzen den moduan. Irakurri arretaz eta ulertu hirugarrenen zerbitzuen hornitzaile-aren %1$sBaldintzak%2$s eta %3$sPribatutasun Politika%4$s, halako baimena eman baino lehen. Zure baimena kendu ahal duzu, Ezarpenen menuan “Kokapena” desgaituta. Baliteke zure gailuko beste aplikazio eta zerbitzu batzuek bildutako eguraldiko datuak eskuratzea, aplikazio eta zerbitzu horietan eguraldiaren berri emateko."</string>
+    <string name="use_current_location_body_msg_kor">"Oraingo kokapena bilduko da, eta Eguraldia aplikazioaren eginbide batzuk eskaintzeko erabiliko; esaterako, tokiko eguraldia.
+
+Eguraldiari buruzko informazioa etengabe eskaintzeko, aplikazioak maiz prozesatuko du zure kokapena, aplikazioa erabiltzen ari ez zarenean ere. Aurrera eginez gero, onartu egingo duzu zure kokapena bilduko eta prozesatuko dela arestian aipatutako helburuetarako.
+
+Kokapena biltzeari eta erabiltzeari uzteko, joan Eguraldia aplikazioaren ezarpenetara."</string>
     <string name="use_current_location_body_purpose">Helburua</string>
     <string name="use_current_location_body_purpose_content">Orain zauden lekuko eguraldiaren informazioa emateko</string>
     <string name="use_current_location_body_search_provider">Zerbitzu hornitzaileak</string>
+    <string name="use_current_location_continue">Jarraitu</string>
+    <string name="use_current_location_not_now">Orain ez</string>
     <string name="use_current_location_off_alert_popup">Uneko kokapenaren informazioa kenduko da.</string>
     <string name="useful_informations">Bizimoduari buruzko aholkuak eta bestelako txostenak</string>
     <string name="using_as">%s gisa erabiltzea</string>
@@ -744,9 +793,11 @@ Orain zauden lekuan zein eguraldi egingo duen jakin nahi baduzu, hirugarrenen ze
     <string name="weather_tip">Eguraldi aholkuak</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Asz.</string>
     <string name="weekly_forecast">Egunero</string>
     <string name="widget_background">Widgetaren atzealdea</string>
     <string name="widget_empty_text">Ukitu eguraldiaren informazio ikusteko</string>
+    <string name="widget_location">Hiriaren izena</string>
     <string name="widget_name_4x1">Eguraldia eta Erlojua</string>
     <string name="widget_setting">Ezarpenak</string>
     <string name="widget_setting_background_color">Atzealdeko kolorea</string>

@@ -1757,7 +1757,7 @@
 
     move-result-object v3
 
-    const-string v4, "server finished"
+    const-string/jumbo v4, "server finished"
 
     .line 270
     invoke-static {v0, v4, v3}, Lorg/spongycastle/crypto/tls/TlsUtils;->calculateVerifyData(Lorg/spongycastle/crypto/tls/TlsContext;Ljava/lang/String;[B)[B

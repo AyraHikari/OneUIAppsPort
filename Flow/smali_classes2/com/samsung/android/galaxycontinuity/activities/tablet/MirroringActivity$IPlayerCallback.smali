@@ -16,24 +16,72 @@
 
 # virtual methods
 .method public abstract onBlackScreenStatusChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isBlackscreenOn"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCallStateChanged(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callState"
+        }
+    .end annotation
 .end method
 
 .method public abstract onFail(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 .end method
 
 .method public abstract onFavoriteAdded(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "favoriteApp"
+        }
+    .end annotation
 .end method
 
 .method public abstract onFavoriteCreated()V
 .end method
 
 .method public abstract onFavoriteRemoved(Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "favoriteApp"
+        }
+    .end annotation
 .end method
 
 .method public abstract onMirroringStateChanged(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 .end method
 
 .method public abstract onNaviBarStateChanged()V
@@ -46,9 +94,30 @@
 .end method
 
 .method public abstract onScreenStateChanged(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "screenState"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStartDragReceived(Ljava/util/ArrayList;Ljava/lang/String;Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fileList",
+            "thumbnail",
+            "isPull"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -62,7 +131,23 @@
 .end method
 
 .method public abstract onUserConsentStateChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isGranted"
+        }
+    .end annotation
 .end method
 
 .method public abstract onWiDiStatusChanged(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 .end method

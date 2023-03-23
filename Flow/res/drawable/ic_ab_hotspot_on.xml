@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bitmap android:src="@drawable/ic_ab_hotspot" android:tint="@color/app_color_primary" android:tintMode="src_in"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<vector android:tint="@color/btn_new_bg_color" android:height="24.0dip" android:width="24.0dip" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff010101" android:pathData="M9.2217,15.828C9.5637,15.486 9.5637,14.932 9.2217,14.591C8.8807,14.249 8.3257,14.249 7.9847,14.591C7.6427,14.932 7.6427,15.486 7.9847,15.828C8.3257,16.17 8.8807,16.17 9.2217,15.828" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M16.5,20.25L7.5,20.25C6.12,20.25 5,19.131 5,17.75L5,6.25C5,4.869 6.12,3.75 7.5,3.75L16.5,3.75C17.881,3.75 19,4.869 19,6.25L19,17.75C19,19.131 17.881,20.25 16.5,20.25ZM12.1689,15.2716C12.1689,13.2676 10.5439,11.6436 8.5409,11.6436M15.5103,15.2716C15.5103,11.4226 12.3903,8.3026 8.5413,8.3026" android:strokeColor="#ff010101" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="evenOdd" />
+</vector>

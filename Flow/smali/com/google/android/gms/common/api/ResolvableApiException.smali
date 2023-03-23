@@ -1,5 +1,6 @@
 .class public Lcom/google/android/gms/common/api/ResolvableApiException;
 .super Lcom/google/android/gms/common/api/ApiException;
+.source "com.google.android.gms:play-services-basement@@18.0.0"
 
 
 # direct methods
@@ -17,8 +18,10 @@
 .method public getResolution()Landroid/app/PendingIntent;
     .locals 1
 
-    .line 5
-    iget-object v0, p0, Lcom/google/android/gms/common/api/ResolvableApiException;->mStatus:Lcom/google/android/gms/common/api/Status;
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/ApiException;->getStatus()Lcom/google/android/gms/common/api/Status;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/Status;->getResolution()Landroid/app/PendingIntent;
 
@@ -35,8 +38,10 @@
         }
     .end annotation
 
-    .line 3
-    iget-object v0, p0, Lcom/google/android/gms/common/api/ResolvableApiException;->mStatus:Lcom/google/android/gms/common/api/Status;
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/ApiException;->getStatus()Lcom/google/android/gms/common/api/Status;
+
+    move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/common/api/Status;->startResolutionForResult(Landroid/app/Activity;I)V
 

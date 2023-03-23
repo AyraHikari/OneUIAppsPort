@@ -1,6 +1,6 @@
 .class public abstract Lcom/google/android/gms/common/server/response/FastSafeParcelableJsonResponse;
 .super Lcom/google/android/gms/common/server/response/FastJsonResponse;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
 .implements Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable;
@@ -10,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;-><init>()V
 
     return-void
@@ -18,12 +17,28 @@
 
 
 # virtual methods
+.method public c(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
 .method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
 
     return v0
+.end method
+
+.method public e(Ljava/lang/String;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -42,7 +57,7 @@
 
     return v1
 
-    .line 20
+    .line 1
     :cond_1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -56,12 +71,12 @@
 
     return v0
 
-    .line 22
+    .line 2
     :cond_2
     check-cast p1, Lcom/google/android/gms/common/server/response/FastJsonResponse;
 
-    .line 23
-    invoke-virtual {p0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->getFieldMappings()Ljava/util/Map;
+    .line 3
+    invoke-virtual {p0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->a()Ljava/util/Map;
 
     move-result-object v2
 
@@ -86,30 +101,30 @@
 
     check-cast v3, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
-    .line 24
-    invoke-virtual {p0, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->isFieldSet(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
+    .line 4
+    invoke-virtual {p0, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->d(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
 
     move-result v4
 
     if-eqz v4, :cond_5
 
-    .line 25
-    invoke-virtual {p1, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->isFieldSet(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
+    .line 5
+    invoke-virtual {p1, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->d(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 26
-    invoke-virtual {p0, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->getFieldValue(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
+    .line 6
+    invoke-virtual {p0, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->b(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
 
     move-result-object v4
 
-    invoke-virtual {p1, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->getFieldValue(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
+    invoke-virtual {p1, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->b(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
 
     move-result-object v3
 
-    invoke-static {v4, v3}, Lcom/google/android/gms/common/internal/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v3}, Lq4/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -118,9 +133,9 @@
     :cond_4
     return v0
 
-    .line 29
+    .line 7
     :cond_5
-    invoke-virtual {p1, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->isFieldSet(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
+    invoke-virtual {p1, v3}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->d(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
 
     move-result v3
 
@@ -132,19 +147,11 @@
     return v1
 .end method
 
-.method public getValueObject(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
 .method public hashCode()I
     .locals 4
 
-    .line 11
-    invoke-virtual {p0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->getFieldMappings()Ljava/util/Map;
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->a()Ljava/util/Map;
 
     move-result-object v0
 
@@ -172,8 +179,8 @@
 
     check-cast v2, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
-    .line 12
-    invoke-virtual {p0, v2}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->isFieldSet(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
+    .line 2
+    invoke-virtual {p0, v2}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->d(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
 
     move-result v3
 
@@ -181,12 +188,12 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 13
-    invoke-virtual {p0, v2}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->getFieldValue(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
+    .line 3
+    invoke-virtual {p0, v2}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->b(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2}, Lq4/k;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -200,36 +207,4 @@
 
     :cond_1
     return v1
-.end method
-
-.method public isPrimitiveFieldSet(Ljava/lang/String;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public toByteArray()[B
-    .locals 2
-
-    .line 4
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    .line 5
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/common/server/response/FastSafeParcelableJsonResponse;->writeToParcel(Landroid/os/Parcel;I)V
-
-    .line 6
-    invoke-virtual {v0}, Landroid/os/Parcel;->marshall()[B
-
-    move-result-object v1
-
-    .line 7
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    return-object v1
 .end method

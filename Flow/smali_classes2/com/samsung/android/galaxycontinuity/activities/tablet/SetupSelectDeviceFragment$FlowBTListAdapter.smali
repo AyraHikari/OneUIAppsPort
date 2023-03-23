@@ -35,6 +35,21 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;Landroid/content/Context;ILjava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context",
+            "resource",
+            "objects"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,10 +61,10 @@
         }
     .end annotation
 
-    .line 670
+    .line 781
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
-    .line 671
+    .line 782
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
     return-void
@@ -60,7 +75,7 @@
 .method clearSelection()V
     .locals 2
 
-    .line 687
+    .line 798
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -71,7 +86,7 @@
 
     return-void
 
-    .line 691
+    .line 802
     :cond_0
     new-instance v0, Landroid/os/Handler;
 
@@ -87,7 +102,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 692
+    .line 803
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$1;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;)V
@@ -100,7 +115,7 @@
 .method public getCount()I
     .locals 1
 
-    .line 677
+    .line 788
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;->mSearchedDevices:Ljava/util/ArrayList;
@@ -114,8 +129,16 @@
 
 .method public getItem(I)Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
-    .line 683
+    .line 794
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;->mSearchedDevices:Ljava/util/ArrayList;
@@ -131,8 +154,16 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
-    .line 658
+    .line 769
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->getItem(I)Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
 
     move-result-object p1
@@ -142,12 +173,24 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
     if-eqz p2, :cond_1
 
-    .line 724
+    .line 835
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
@@ -156,7 +199,7 @@
 
     goto :goto_0
 
-    .line 747
+    .line 858
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -166,7 +209,7 @@
 
     goto :goto_1
 
-    .line 725
+    .line 836
     :cond_1
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
@@ -179,7 +222,7 @@
 
     return-object p2
 
-    .line 728
+    .line 839
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
@@ -197,9 +240,9 @@
 
     if-eqz v1, :cond_3
 
-    const p2, 0x7f0c0056
+    const p2, 0x7f0d0052
 
-    .line 730
+    .line 841
     invoke-virtual {v1, p2, p3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p2
@@ -209,15 +252,15 @@
 
     return-object p3
 
-    .line 736
+    .line 847
     :cond_4
     new-instance p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;
 
     invoke-direct {p3, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;)V
 
-    const v1, 0x7f09026b
+    const v1, 0x7f0a0399
 
-    .line 738
+    .line 849
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -226,9 +269,9 @@
 
     iput-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
-    const v1, 0x7f09026a
+    const v1, 0x7f0a0398
 
-    .line 740
+    .line 851
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -237,9 +280,9 @@
 
     iput-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->txtConnected:Landroid/widget/TextView;
 
-    const v1, 0x7f0900c6
+    const v1, 0x7f0a0117
 
-    .line 741
+    .line 852
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -248,9 +291,9 @@
 
     iput-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->deviceIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f09006c
+    const v1, 0x7f0a008c
 
-    .line 742
+    .line 853
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -259,9 +302,9 @@
 
     iput-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->bluetoothIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f090293
+    const v1, 0x7f0a03c9
 
-    .line 743
+    .line 854
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -270,13 +313,13 @@
 
     iput-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->wifiIcon:Landroid/widget/ImageView;
 
-    .line 745
+    .line 856
     invoke-virtual {p2, p3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     :goto_1
     const/4 v1, 0x0
 
-    .line 753
+    .line 864
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->getItem(I)Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;
 
@@ -289,7 +332,7 @@
     :catch_0
     move-exception p1
 
-    .line 755
+    .line 866
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     move-object p1, v1
@@ -297,14 +340,14 @@
     :goto_2
     if-eqz p1, :cond_7
 
-    .line 759
+    .line 870
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getDeviceName()Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_6
 
-    .line 761
+    .line 872
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
     move-result v3
@@ -313,7 +356,7 @@
 
     goto :goto_3
 
-    .line 764
+    .line 875
     :cond_5
     iget-object v3, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
@@ -321,14 +364,14 @@
 
     goto :goto_4
 
-    .line 762
+    .line 873
     :cond_6
     :goto_3
     iget-object v2, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
-    const v4, 0x7f10007d
+    const v4, 0x7f11008d
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;->getString(I)Ljava/lang/String;
 
@@ -340,7 +383,7 @@
     :goto_4
     if-eqz p1, :cond_8
 
-    .line 768
+    .line 879
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getMajorDeviceClass()I
 
     move-result v2
@@ -349,7 +392,7 @@
 
     if-ne v2, v3, :cond_8
 
-    .line 769
+    .line 880
     iget-object v2, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->deviceIcon:Landroid/widget/ImageView;
 
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
@@ -358,7 +401,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f070071
+    const v4, 0x7f080085
 
     invoke-virtual {v3, v4, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -368,7 +411,7 @@
 
     goto :goto_5
 
-    .line 771
+    .line 882
     :cond_8
     iget-object v2, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->deviceIcon:Landroid/widget/ImageView;
 
@@ -378,7 +421,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f070073
+    const v4, 0x7f0800b6
 
     invoke-virtual {v3, v4, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -386,7 +429,7 @@
 
     invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 774
+    .line 885
     :goto_5
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
@@ -396,7 +439,7 @@
 
     if-eqz v1, :cond_9
 
-    .line 775
+    .line 886
     iget-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->deviceIcon:Landroid/widget/ImageView;
 
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
@@ -405,7 +448,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f050009
+    const v3, 0x7f0603de
 
     invoke-static {v2, v3}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
 
@@ -418,21 +461,21 @@
     :cond_9
     if-eqz p1, :cond_a
 
-    .line 778
+    .line 889
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getIsEnrolled()Z
 
     move-result v1
 
     if-eqz v1, :cond_a
 
-    .line 779
+    .line 890
     iget-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->txtConnected:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto :goto_6
 
-    .line 781
+    .line 892
     :cond_a
     iget-object v1, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->txtConnected:Landroid/widget/TextView;
 
@@ -445,21 +488,21 @@
 
     if-eqz p1, :cond_b
 
-    .line 784
+    .line 895
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->isWiFiConnectionAvailable()Z
 
     move-result v2
 
     if-eqz v2, :cond_b
 
-    .line 785
+    .line 896
     iget-object v2, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->wifiIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_7
 
-    .line 787
+    .line 898
     :cond_b
     iget-object v2, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->wifiIcon:Landroid/widget/ImageView;
 
@@ -468,21 +511,21 @@
     :goto_7
     if-eqz p1, :cond_c
 
-    .line 790
+    .line 901
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->isBTConnectionAvailable()Z
 
     move-result v2
 
     if-eqz v2, :cond_c
 
-    .line 791
+    .line 902
     iget-object p3, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->bluetoothIcon:Landroid/widget/ImageView;
 
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_8
 
-    .line 793
+    .line 904
     :cond_c
     iget-object p3, p3, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter$ViewHolder;->bluetoothIcon:Landroid/widget/ImageView;
 
@@ -491,7 +534,7 @@
     :goto_8
     if-eqz p1, :cond_d
 
-    .line 796
+    .line 907
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getIsSelected()Z
 
     move-result p1
@@ -500,7 +543,7 @@
 
     const-string p1, "#4C42acd3"
 
-    .line 797
+    .line 908
     invoke-static {p1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result p1
@@ -509,7 +552,7 @@
 
     goto :goto_9
 
-    .line 799
+    .line 910
     :cond_d
     invoke-virtual {p2, v0}, Landroid/view/View;->setBackgroundColor(I)V
 
@@ -519,8 +562,16 @@
 
 .method setSelection(Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "phoneDevice"
+        }
+    .end annotation
 
-    .line 708
+    .line 819
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment$FlowBTListAdapter;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SetupSelectDeviceFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;

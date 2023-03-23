@@ -6,11 +6,16 @@
     <string name="add_app_from_phone">Przidanie aplikacyji z mobilniŏka</string>
     <string name="add_your_bio_first_dialog_desc">Coby logować sie do Samsung Flow bez użycie biōmetryje, zaregistruj ôdciski palcōw abo tynczōwka na tablecie i sprōbuj jeszcze rŏz.</string>
     <string name="add_your_bio_first_dialog_title">Nojprzōd dodŏwanie biōmetryje</string>
+    <string name="advanced_features">Rozszyrzōne fōnkcyje</string>
     <string name="alarm">Alarm</string>
     <string name="all_apps">Wszyjske aplikacyje</string>
     <string name="allow_appear_on_top">Zezwól na Wyświetlanie na wierzchu</string>
     <string name="allow_appear_on_top_desc">Aby wyświetlać wyskakujące okienka lub powiadomienia na wierzchu innych aplikacji, z których korzystasz na komputerze lub tablecie, musisz włączyć w Ustawieniach uprawnienie Wyświetlanie na wierzchu.</string>
+    <string name="allow_location_settings">Zezwól na dostęp do ustawień lokalizacji na urządzeniach</string>
     <string name="and_more">%1$s i %2$d wiyncyj</string>
+    <string name="app_info">Informacje o aplikacji</string>
+    <string name="app_name">Samsung Flow</string>
+    <string name="attach">Dociepowanie</string>
     <string name="attach_image">Ôbrŏz</string>
     <string name="attach_my_files">Moje pliki</string>
     <string name="attach_sound">Audio</string>
@@ -38,20 +43,29 @@
 w
 Samsung Flow"</string>
     <string name="bluetooth_connection_failed_text">Bydź zicher, co na telefōnie załōnczōno je aplikacyjo Samsung Flow.</string>
+    <string name="bt_or_nfc_turned_on">Funkcyjŏ %s ôstanie załōnczōnŏ coby dozwolić na używanie Samsung Flow.</string>
+    <string name="btn_desc_cancel">Pociep</string>
+    <string name="btn_desc_failed">feler</string>
+    <string name="can_not_use">Niy idzie użyć karty %s</string>
+    <string name="can_not_use_at_same_time">Fōnkcyje %1$s i %2$s niy mogōm być załōnczōne bez jedyn czas. Fōnkcyjŏ %3$s ôstanie wyłōczōnŏ.</string>
     <string name="cancel_all">Wyciep wszyjske</string>
     <string name="cant_share_files">Niy idzie udostympnić plikōw</string>
     <string name="cant_use_mobile_hotspot_case_1">Zaszeł feler, kery tykŏ neca. Badnij na Router Wi-Fi w telefōnie i sprōbuj jeszcze rŏz.</string>
     <string name="cant_use_mobile_hotspot_case_2">Zaszeł feler, kery tykŏ neca. Pogŏdej z ôperatōrym, coby ôbejrzeć eli Twōj plan ôbsuguje Router Wi-Fi.</string>
     <string name="cant_use_mobile_hotspot_title">Niy idzie użyć Routera Wi-Fi</string>
     <string name="cant_use_this_function_in_multi_window">Niy idzie używać tyj fōnkcyji we widoku Wiela ôkyn.</string>
-    <string name="chan_mkt">Marketing</string>
-    <string name="chan_ntc">Pozōr!</string>
+    <string name="change_location_settings">Zamiyń naszt. Lokalizacyji</string>
+    <string name="character_counter_content_description">%1$d z %2$d znakōw</string>
     <string name="checkbox_all">Wszyjske</string>
+    <string name="china_network_permission_popup_body">Przizwŏlić %s na używanie zepniyńć necowych?</string>
+    <string name="china_network_permission_popup_title">Używŏ połōnczyń necowych</string>
+    <string name="clipboard">Skrytka</string>
     <string name="clipboard_off">Sztopnij udostympniać zawartość skrytki na pożyniōnych maszinach</string>
     <string name="clipboard_on">Udostympniej zawartość skrytki na pożyniōnych maszinach</string>
     <string name="close_app">Zawrzij aplikacyjŏ</string>
     <string name="confirm_pass_key_connecting_to_deivce">Pożyniynie z maszinōm %s…</string>
-    <string name="connect_help_desc0">Załōncz Samsung Flow w telefōnie abo zygarku.</string>
+    <string name="confirm_your_phone">Potwierdź na telefonie</string>
+    <string name="connect_help_desc0">Załōncz Samsung Flow w mobilniŏku.</string>
     <string name="connect_help_desc1">Wejrzij sie, iże fōnkcyje Bluetooth i Wi-Fi sōm załōnczōne na ôbōch maszinach.</string>
     <string name="connect_help_desc2">Eli używŏsz zepniyńć Wi-Fi abo LAN, bydź zicher, co ôbie masziny sōm zepniynte z jednakim necym.</string>
     <string name="connect_help_desc4">Wejrzij sie, iże niy prōbujesz pożynić tablet z kōmputerym. To niyma ôbsugowane bez Samsung Flow.</string>
@@ -69,16 +83,18 @@ Samsung Flow"</string>
     <string name="connection_error_register_fail">Rejestracja nie powiodła się. Ponów próbę.</string>
     <string name="connection_failed">Feler zepniyńcio.</string>
     <string name="connection_goto_permission_setting">Coby użyć fōnkcyji %s, tyknij ôpcyjo SZTALOWANIE, przelyź do menu Informacyje ô aplikacyji > Dozwŏlynia, a potym przizwōl na niżyj dane dozwŏlynia:</string>
+    <string name="connection_method_biometrics">Biometria</string>
+    <string name="connection_method_biometrics_no_enrolled_desc">Aby korzystać z biometrii w aplikacji Samsung Flow, musisz zarejestrować swoje dane biometryczne w Ustawieniach.</string>
+    <string name="connection_method_biometrics_no_enrolled_title">Registracyjo danych biōmetrycznych</string>
+    <string name="connection_method_biometrics_required_title">Weryfikacja jest wymagana do użycia danych biometrycznych w %s.</string>
+    <string name="connection_method_manual">Ręcznie</string>
     <string name="connection_method_samsung_pass">Samsung Pass</string>
-    <string name="connection_method_samsung_pass_desc">Automatycznie połącz ponownie z urządzeniem %s za pomocą biometrii przy użyciu Samsung Pass.</string>
-    <string name="connection_method_simple_connection">Proste łączenie</string>
-    <string name="connection_method_simple_connection_desc">Automatycznie połącz ponownie z urządzeniem %s bez potwierdzania na telefonie.</string>
-    <string name="connection_method_simple_connection_desc_tab">Automatycznie połącz ponownie z urządzeniem %s bez potwierdzania na tablecie.</string>
+    <string name="connection_method_simple_connection">Połączenie automatyczne</string>
     <string name="connection_method_tablet_bio">Biōmetrjo na tablecie</string>
-    <string name="connection_method_tablet_bio_desc">Automatycznie połącz ponownie z urządzeniem %s za pomocą biometrii na tablecie.</string>
     <string name="connection_request_noti_accept">Dej zgoda</string>
     <string name="connection_request_noti_desc">Dozwōlić %s na pożyniynie sie z telefōnym?</string>
     <string name="content_shared_via">Zawartość udostympniōnŏ bez %s</string>
+    <string name="continue_apps_on_other_device">Kōntyn.roboty na inkszych masz.</string>
     <string name="copied_to_clipboard">Skopiowano do Kamerlika.</string>
     <string name="copy_text">Kopiuj tekst</string>
     <string name="delete_lower">Wyciep</string>
@@ -90,8 +106,11 @@ Samsung Flow"</string>
     <string name="device_not_secured_desc_for_bio">Coby używać biōmetryje w tablecie, trza nastawić blokada ekranu w telefōnie.</string>
     <string name="device_not_secured_desc_for_watch">Coby używać zygarka, trza nastawić blokada ekranu w telefōnie.</string>
     <string name="device_status_connected">Połōnczono</string>
+    <string name="device_status_connected_with">Połōnczōno z %s.</string>
+    <string name="device_status_disconnected">Ôdłōnczōne.</string>
     <string name="device_status_registered">Zaregistrowano</string>
     <string name="device_storage">Pamiyńc masziny</string>
+    <string name="dialog_allow">Przizwōl</string>
     <string name="dialog_close">Zawrzij</string>
     <string name="dialog_deny">Ôdkoż</string>
     <string name="dialog_desc_turn_off_mirroring">Wyłōnczyć fōnkcjŏ Smart View?</string>
@@ -99,6 +118,7 @@ Samsung Flow"</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_retry">Dej drugi rŏz</string>
     <string name="dismiss">Ôdciep</string>
+    <string name="dragndroplist_drag_move">Teraz na pozycji %d</string>
     <string name="dragndroplist_drag_release">Ôstawiŏnŏ elemynt w położyniu %d.</string>
     <string name="dragndroplist_drag_start">Zaczyntŏ przeciōnganie elemyntu kery je w położyniu %d.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Niy idzie przeciōngnōnć elemyntu kery je w położyniu %d.</string>
@@ -118,41 +138,8 @@ Samsung Flow"</string>
     <string name="flow_main_device_not_secure_dialog_desc">Coby używać ôdblokniyńciŏ ekranu Windows, trza nastawić blokada ekranu w telefōnie.</string>
     <string name="flow_main_device_not_secure_dialog_title">Sztalowanie bezpiecznyj blokady ekranu.</string>
     <string name="go_to_settings">Idź do Sztalow.</string>
-    <string name="help_clipboard_desc">"Możesz udostympniać tekst, adresy www i ôbrŏzki w skrytce na pożyniōnych tabletach abo kōmputerach.
-
-Ta fōnkcyjŏ może zwielgszyć spotrzebowanie bateryje."</string>
-    <string name="help_clipboard_title">Używanie skrytki</string>
-    <string name="help_connecting_devices_desc_1">Pożyń kōmputer abo tablet ze telefōnym (%s) bez użycie Samsung Flow.</string>
-    <string name="help_connecting_devices_desc_2">Bydź zicher, co ôbie masziny majōm załōnczōnō fōnkcyjo Bluetooth abo majōm zepniyńcie Wi-Fi abo LAN z jednakim necym.</string>
-    <string name="help_connecting_devices_desc_2_1">Jak używŏsz lice USB, wejrzij eli je podepniyntŏ do ôbōch maszin, a na pożyniōnyj maszinie je zainsztalowany systym Android 10 abo nowszy.</string>
-    <string name="help_connecting_devices_desc_3">Ôdewrzij Samsung Flow na ôbuch maszinach, a potym idź dalij podug kryatōra nastŏwianiŏ na kōmputerze.</string>
-    <string name="help_connecting_devices_desc_4">Coby dostać wiyncyj info przelyź na www.samsung.com/samsungflow.</string>
-    <string name="help_connecting_devices_desc_5">Minimalne wymŏgania</string>
-    <string name="help_connecting_devices_desc_6">Kōmputer abo tablet z systymym Windows: systym Windows 10 z aktualizacyjōm Creators (v1703) i czyrwcowōm kōmpilacyjōm z poprŏwkami (15063.413), Bluetooth (ôpcjōnalnie Bluetooth LE) a tyż Wi-Fi Direct.</string>
-    <string name="help_connecting_devices_desc_7">Tablet z systymym Android: systym Android Marshmallow abo nowszy. Ôbejrz FAQ, coby dostać wiyncyj info.</string>
-    <string name="help_connecting_devices_title">Pożyniynie ze kōmput./tabletami</string>
     <string name="help_contact_us">Skōntaktuj się z nami</string>
     <string name="help_install_samsung_flow_title">Łōnczynie maszin bez Samsung Flow</string>
-    <string name="help_mobile_hotspot_desc">Dotknij %s, aby włączyć lub wyłączyć Router Wi-Fi w telefonie. Ta funkcja nie działa w telefonach z systemem Android 11 lub nowszym.</string>
-    <string name="help_mobile_hotspot_title">Używanie routera Wi-Fi</string>
-    <string name="help_noti_sync_desc">"Pokazuje nowiny z telefōnu na tablecie abo kōmputerze po pożyniyniu ônych za pōmocōm Samsung Flow. Możesz zarŏzki ôdpadać na wiadōmości z inkszych aplikacyjōw po dostaniu nowych nowin.
-
-Ta fōnkcyjŏ może niy być dostympnŏ kej sie trefiōm niykere aplikacyje do posyłaniŏ wiadōmości.
-
-Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpcyjōw > Sztalowanie > Reskyruj nowinami."</string>
-    <string name="help_noti_sync_title">Synchrōnizowanie nowin</string>
-    <string name="help_sharing_contents_desc_1">Możesz letko udostympniać zawartość miyndzy pożyniōnymi maszinami.</string>
-    <string name="help_sharing_contents_desc_2">Z telefōnu na kōmputer abo tablet</string>
-    <string name="help_sharing_contents_desc_3">Znojdź ôpcyjŏ udostympnianiŏ w aplikacyji takij jak przeglōndarka, a potym ôbier Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_4">Możesz tyż tyknōńć ikōny %s na karcie Historyjŏ przepływaniŏ, coby ôbrać pliki i je udostympnić.</string>
-    <string name="help_sharing_contents_desc_5">Z kōmputera abo tabletu na telefōn</string>
-    <string name="help_sharing_contents_desc_6">Znojdź ôpcyjŏ udostympnianiŏ w aplikacyji takij jak przeglōndarka, a potym ôbier Samsung Flow.</string>
-    <string name="help_sharing_contents_desc_7">Możesz tyż tyknōńć ikōny %s na karcie Historyjŏ przepływaniŏ, coby ôbrać pliki i je udostympnić, abo przeciōngnōńć i wciepnōńć do Samsung Flow.</string>
-    <string name="help_sharing_contents_title">Podŏwanie treści</string>
-    <string name="help_smart_view_desc">Dotknij ikony Smart View, aby wyświetlić obraz lustrzany ekranu telefonu na ekranie tabletu lub komputera.</string>
-    <string name="help_smart_view_desc_2">Kiedy używasz Smart View, możesz dotknąć ikony gwiazdki, aby dodać ulubione i mieć do nich szybszy dostęp.</string>
-    <string name="help_smart_view_title">Używanie fōnkcyji Smart View</string>
-    <string name="help_using_multi_device_title">Używanie wiela kōmput./tabletōw</string>
     <string name="hotspot_description">Użyj przipniyntyj masziny za pōnkt dostympu do Internecu, bez użycie fōnkcyji Router Wi-Fi, kej sztartniynto je aplikacyjo Samsung Flow.</string>
     <string name="hotspot_warning_dialog_msg_wifi_off">Coby używać Routera Wi-Fi, trza wyłōnczyć fōnkcyjo Wi-Fi.</string>
     <string name="hotspot_warning_dialog_title_wifi_off">Wyłōnczyć fōnkcyjo Wi-Fi?</string>
@@ -185,7 +172,11 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="menu_do_not_disturb">Niy zawŏdzej</string>
     <string name="menu_enable_hotspot">Zepnij z Routerym Wi-Fi</string>
     <string name="menu_favorites">Nojrŏdsze</string>
+    <string name="menu_favorites_add">Przidej</string>
+    <string name="menu_favorites_remove">Wyciep</string>
     <string name="menu_full_screen">Fol widok</string>
+    <string name="menu_more">Więcej</string>
+    <string name="menu_phone_screen">Ekran mobilniŏka</string>
     <string name="menu_resolution">Rozdzielczość</string>
     <string name="menu_resolution_option_high">Wielgŏ</string>
     <string name="menu_resolution_option_low">Małŏ</string>
@@ -231,6 +222,10 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="noti_desc_screenshot_saved">Tyknij tukej coby ôbejrzeć screenshot.</string>
     <string name="noti_title_screenshot_saved">Zachowano screenshot</string>
     <string name="notices">Informacyje</string>
+    <string name="notices_last_for_android6_desc">"To ostatnia aktualizacja dla systemu Android 6.0 (Marshmallow). Aplikacja Samsung Flow nie obsługuje już systemu operacyjnego Android 6.0 z powodu jego ograniczeń.
+
+Użytkownicy systemu Android 6.0 nadal mogą korzystać z aplikacji Samsung Flow bez możliwości przeprowadzenia aktualizacji."</string>
+    <string name="notices_last_for_android6_title">Koniec wsparcia dla systemu Android 6.0 (Marshmallow)</string>
     <string name="notices_notice">Pozōr</string>
     <string name="notices_update">Uaktualniej</string>
     <string name="notices_update_include">Aktualizacje oprogramowania mogą obejmować:</string>
@@ -255,6 +250,8 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="option_connection_type_wifi">Wi-Fi abo LAN</string>
     <string name="pc">Kōmputyr</string>
     <string name="permissions">Pozwolynia</string>
+    <string name="permissions_all_files_access">Dostymp do wszyjskich plikōw</string>
+    <string name="permissions_all_files_access_desc">Używane do posyłaniŏ ôbrŏzkōw, mediōw i plikōw.</string>
     <string name="permissions_appear_on_top_desc">Używane do wyświetlania powiadomień nad innymi aplikacjami</string>
     <string name="permissions_appear_on_top_title">Zezwolić aplikacji Samsung Flow na dostęp do funkcji Wyświetlanie na wierzchu, aby powiadomienia były pokazywane nad innymi aplikacjami?</string>
     <string name="permissions_call_log">Spisy gŏdek</string>
@@ -266,6 +263,8 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="permissions_location_desc">Wyszukowanie po blisku maszin Galaxy bez użycie Bluetooth.</string>
     <string name="permissions_microphone">Mikrofōn</string>
     <string name="permissions_microphone_desc">Używane do pożyniyniŏ maszin Galaxy bez ôdbiōr klangu ô wielgij czynstotliwości.</string>
+    <string name="permissions_nearby_devices">Urządzenia w pobliżu</string>
+    <string name="permissions_nearby_devices_desc">Służy do znajdowania urządzeń w pobliżu i śledzenia zarejestrowanych urządzeń</string>
     <string name="permissions_notification_access_desc">Służy do wysyłania powiadomień do podłączonego urządzenia</string>
     <string name="permissions_phone">Telefon</string>
     <string name="permissions_phone_desc">Suży do przituplowaniŏ nōmeru telefōnu.</string>
@@ -273,11 +272,11 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="permissions_sms_desc">Używane do posyłaniŏ smsōw.</string>
     <string name="permissions_storage">Pamięć</string>
     <string name="permissions_storage_desc">Używane do posyłaniŏ ôbrŏzkōw, mediōw i plikōw.</string>
-    <string name="permissions_title">Przizwōlynie dlŏ aplikacyje %s</string>
+    <string name="permissions_title">Funkcja Samsung Flow korzysta z tych uprawnień</string>
     <string name="phone">Mobilniŏk</string>
     <string name="press_enter_key_to_send">Posyłej wiadōmości Ynterym</string>
     <string name="processing">Przerobiōm…</string>
-    <string name="receiving_failed">Feler ôdbieraniŏ</string>
+    <string name="receiving_failed">Wystąpił błąd podczas odbierania tej wiadomości.</string>
     <string name="register_failed">Badnij zajś potym.</string>
     <string name="resend">Wyśl. ponownie</string>
     <string name="rooted_device">Maszina zrootowano. Skuli bezpieczyństwa niy idzie używać %s na zrootowanych maszinach.</string>
@@ -295,11 +294,19 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="select_apps_for_shortcuts">Ôbier aplikacyje do skrōtōw</string>
     <string name="select_items">Ôbiyranie elymyntōw</string>
     <string name="send">Pośl.</string>
-    <string name="sending_failed">Feler posyłanio.</string>
-    <string name="sesl_action_bar_up_description">Keruj ku wiyrchu</string>
+    <string name="sending_failed">Wystąpił błąd podczas wysyłania tej wiadomości.</string>
+    <string name="sesl_action_bar_up_description">Mŏsz za mało pamiyńci systymowyh. Plik je za wielgi</string>
     <string name="sesl_action_menu_overflow_badge_description">Dostympnŏ nowŏ zawartość</string>
     <string name="sesl_action_menu_overflow_badge_text_n">N</string>
     <string name="sesl_action_menu_overflow_description">Wiyncyj ôpcyji</string>
+    <string name="sesl_index_assistant_text">Przeciągnij w górę lub w dół dwoma palcami, aby przewinąć.</string>
+    <string name="sesl_index_scrollbar">Pasek przewijania</string>
+    <string name="sesl_index_section">Indeks sekcji</string>
+    <string name="sesl_index_selected">Ôbrano</string>
+    <string name="sesl_material_badge_description">Dostympnŏ nowŏ zawartość</string>
+    <string name="sesl_material_overflow_badge_text_n">N</string>
+    <string name="sesl_more_item_label">Wiyncy</string>
+    <string name="sesl_preferecne_badge_description">Nowŏ nowina</string>
     <string name="sesl_preferencecategory_added_title">Nagłówek</string>
     <string name="sesl_search_hint">Sznupej</string>
     <string name="sesl_searchview_description_clear">Wypucuj plac sznupanio</string>
@@ -309,6 +316,10 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="sesl_searchview_description_voice">Szukaniy głosym</string>
     <string name="sesl_switch_off">Wyłōnczōno</string>
     <string name="sesl_switch_on">Załōnczōno</string>
+    <string name="sesl_switchbar_off_text">Wył.</string>
+    <string name="sesl_switchbar_on_text">Wł.</string>
+    <string name="sesl_toolbar_collapse_description">Swiń</string>
+    <string name="set_screen_lock_title">Sztalowanie blokniyńcio ekranu</string>
     <string name="settings">Ustawienia</string>
     <string name="settings_auto_hotspot_desc">Użyj telefōnu jako pōnkty dostympu do Internetu, kej pożyniōnŏ maszina niy je pożyniōno do Interneca.</string>
     <string name="settings_deregister_confirm_dialog_desc">Coby pożynić z tōm maszinōm w prziszłości, trza bydzie zaregistrować jōm zajś.</string>
@@ -319,12 +330,16 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="settings_gear_unlock_confirm_dialog_title">Załōnczyć przituplowanie Gear?</string>
     <string name="settings_manage_notifications_desc">Wybierz aplikacje, które mogą wysyłać powiadomienia do podłączonego urządzenia.</string>
     <string name="settings_manage_notifications_title">Wybrane powiadomienia aplikacji</string>
+    <string name="settings_send_message_desc">Wysyłaj wiadomości, korzystając z klawisza Enter na klawiaturze.</string>
     <string name="settings_title_auto_bt_on">Fōnkcyjŏ Bluetooth z autōmatu</string>
     <string name="setup_complete_done">Fertich</string>
     <string name="setup_completed">Nastŏwianie masziny %s je fertich.</string>
+    <string name="setup_completed_phone">Telefon jest teraz połączony z %s.</string>
+    <string name="setup_completed_tablet">Tablet jest teraz połączony z %s.</string>
     <string name="setup_confirm_pin">Przitupluj co klucz dostympu je doporzōndku, bez %1$d sek. coby napoczōńć pożyniynie z maszinōm %2$s.</string>
     <string name="setup_enter_pin_on_pc">Podej PIN na maszinie %s.</string>
     <string name="setup_preparing">Sztartnij rychtowanie Samsung Flow na kōmputerze abo tablecie.</string>
+    <string name="setup_preparing_detail">Jeśli nie masz zainstalowanej aplikacji Samsung Flow, pobierz ją ze sklepu Microsoft Store na komputerze i Galaxy Store lub Google Play na tablecie.</string>
     <string name="setup_preparing_tab">Uruchom konfigurację Samsung Flow na komputerze</string>
     <string name="setup_tab_complete_title">Fertich rychtowanio</string>
     <string name="setup_tab_confirm_passkey_title">Pożyniynie maszin</string>
@@ -343,6 +358,8 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="setupwizard_welcome_body">Serwis aplikacyjo potrzebuje dalij podanych dozwŏlyń. Przi dozwŏlyniach do ôbranio dōmyślno fōnkcjonalnoś serwisu je załōnczōno, ale niyma przizwolōno.</string>
     <string name="setupwizard_welcome_title">Uprŏwniynia aplikacyji</string>
     <string name="share">Podej</string>
+    <string name="share_item_device_status_connected">Podepniynto maszina</string>
+    <string name="share_item_device_status_disconnected">Maszina ôdepniynto</string>
     <string name="shortcut_list_desc">Ôbier aplikacyjo na mobilniŏku, coby zepnōńć z tabletym. Skrōt do tyj aplikacyji bydzie dany na ekran sztartowy.</string>
     <string name="snooze">Drzimoły</string>
     <string name="special_sensitive_optional_permissions">Opcjonalne uprawnienia dotyczące danych wrażliwych</string>
@@ -352,6 +369,8 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="tablet_bio_auth_confirm_title">Użyć Biometrji na tablecie do autoryz.?</string>
     <string name="tap_icon_to_try_iris_auth">Tyknij ikōny, coby jeszcze rŏz spōbować rozpoznać tynczōwka</string>
     <string name="toast_auto_rotation_not_work_during_smart_view">Niy idzie używać Autōmatycznego ôbrŏcaniŏ, kej funkcyjŏ Smart View je załōnczōnŏ dlŏ Samsung Flow.</string>
+    <string name="toast_msg_connected">Sztartło pożyniynie aplikacyji Samsung Flow z maszinōm %s.</string>
+    <string name="toast_msg_disconnected">Skōńczōne pożyniynie Samsung Flow z maszinōw %s.</string>
     <string name="try_again">Drugo prōba</string>
     <string name="turn_on">Załōncz</string>
     <string name="turn_on_auto_run">Załōnczanie Autōmatycznego sztartniyńcio</string>
@@ -362,15 +381,20 @@ Możesz reskyrować nowinami w Samsung Flow, bez przejście do menu Wiyncyj ôpc
     <string name="unsupported_file">Nieôbsugiwany plik.</string>
     <string name="update">Zeaktualizuj</string>
     <string name="update_samsung_flow">Niy idzie zepnōńć z %s. Uaktualnij aplikacyjo Samsung Flow do nojnowszyj zorty i badnij drugi rŏz.</string>
-    <string name="welcome_button_start">Sztart</string>
+    <string name="verification_method">Metoda weryfikacji</string>
     <string name="welcome_phone_button_agree">Przitupluj</string>
-    <string name="welcome_phone_desc">Podepnij kōmputer abo tablet do telefōnu bez użycie Samsung Flow.</string>
-    <string name="welcome_phone_desc_terms">Coby iijś dalij przeczytej i dej zgoda na dokumynt %s.</string>
-    <string name="welcome_phone_title">Witōmy w aplikacyji %s</string>
+    <string name="welcome_phone_desc1">Udostępnianie dokumentów, obrazów, wideo itd. pomiędzy telefonem a komputerem lub tabletem, z którym połączony jest telefon.</string>
+    <string name="welcome_phone_desc2">Możesz odczytywać wiadomości i powiadomienia na komputerze lub tablecie.</string>
+    <string name="welcome_phone_desc3">Wyświetlaj ekran telefonu i steruj nim na komputerze lub tablecie.</string>
+    <string name="welcome_phone_desc_terms">Robiynie dalij ôznaczo zgoda na %s.</string>
+    <string name="welcome_phone_title1">Połączenie telefonu z innym urządzeniem</string>
+    <string name="welcome_phone_title2">Synchronizacja powiadomień</string>
+    <string name="welcome_phone_title3">Udostępnianie ekranu telefonu</string>
     <string name="welcome_tab_desc2">Naszykuj telefōn do nastawiania usugi Samsung Flow.</string>
     <string name="welcome_tab_desc3">Połącz tablet z telefonem lub komputerem przy użyciu Samsung Flow.</string>
     <string name="wifi_connection_failed_text">Bydź zicher, co na telefōnie załōnczōno je aplikacyjo Samsung Flow i je ôn zepniynty z jednakim necym.</string>
-    <string name="wifi_enable_warning_msg">Nec Wi-Fi je wyłōnczōny, kej fōnkcyjŏ Mobile Hotspot je aktywnŏ. Coby załōnczyć nec Wi-Fi, wyłōncz fōnkcyjŏ Mobile Hotspot.</string>
-    <string name="wifi_enable_warning_title">Wyłōnczyć router Wi-Fi?</string>
+    <string name="wifi_enable_warning_msg">Coby używać Wi-Fi Direct, trza wyłōnczyć router Wi-Fi.</string>
+    <string name="wifi_enable_warning_title">Wyłōncz Router Wi-Fi</string>
+    <string name="you_can_turn_off">Możesz wyłączyć tę funkcję w menu %s.</string>
     <string name="you_can_turn_off_this_permission">Możesz wyłączyć to uprawnienie w menu Ustawienia > Aplikacje > Menu Więcej > Dostęp specjalny.</string>
 </resources>

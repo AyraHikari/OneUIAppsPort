@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/tabs/TabLayout$TabView;)V
     .locals 0
 
-    .line 2453
+    .line 2654
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$TabView$1;->this$1:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

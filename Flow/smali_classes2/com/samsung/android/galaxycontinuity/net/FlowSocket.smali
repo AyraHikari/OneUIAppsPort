@@ -28,6 +28,14 @@
 # direct methods
 .method public constructor <init>(Landroid/bluetooth/BluetoothSocket;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -56,6 +64,14 @@
 
 .method public constructor <init>(Ljava/net/Socket;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "socket"
+        }
+    .end annotation
 
     .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -93,19 +109,17 @@
 
 # virtual methods
 .method public close()V
-    .locals 1
+    .locals 2
 
     .line 55
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
 
-    instance-of v0, v0, Ljava/net/Socket;
+    instance-of v1, v0, Ljava/net/Socket;
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     .line 56
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
-
     check-cast v0, Ljava/net/Socket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->close()V
@@ -114,15 +128,11 @@
 
     .line 57
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
+    instance-of v1, v0, Landroid/bluetooth/BluetoothSocket;
 
-    instance-of v0, v0, Landroid/bluetooth/BluetoothSocket;
-
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     .line 58
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
-
     check-cast v0, Landroid/bluetooth/BluetoothSocket;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket;->close()V
@@ -192,14 +202,14 @@
 .method public getDeviceName()Ljava/lang/String;
     .locals 2
 
-    .line 126
+    .line 132
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
 
     instance-of v1, v0, Landroid/bluetooth/BluetoothSocket;
 
     if-eqz v1, :cond_0
 
-    .line 127
+    .line 133
     check-cast v0, Landroid/bluetooth/BluetoothSocket;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket;->getRemoteDevice()Landroid/bluetooth/BluetoothDevice;
@@ -212,13 +222,13 @@
 
     return-object v0
 
-    .line 130
+    .line 136
     :cond_0
     instance-of v0, v0, Ljava/net/Socket;
 
     if-eqz v0, :cond_1
 
-    .line 131
+    .line 137
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mDeviceName:Ljava/lang/String;
 
     return-object v0
@@ -253,14 +263,14 @@
 .method public getMajorDeviceClass()I
     .locals 2
 
-    .line 138
+    .line 144
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
 
     instance-of v1, v0, Landroid/bluetooth/BluetoothSocket;
 
     if-eqz v1, :cond_0
 
-    .line 139
+    .line 145
     check-cast v0, Landroid/bluetooth/BluetoothSocket;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket;->getRemoteDevice()Landroid/bluetooth/BluetoothDevice;
@@ -370,79 +380,102 @@
 .method public isDeviceTypePhone()Z
     .locals 3
 
-    .line 100
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
-
-    instance-of v1, v0, Landroid/bluetooth/BluetoothSocket;
-
-    const/4 v2, 0x1
-
-    if-eqz v1, :cond_1
+    const/4 v0, 0x1
 
     .line 101
-    check-cast v0, Landroid/bluetooth/BluetoothSocket;
+    :try_start_0
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
 
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket;->getRemoteDevice()Landroid/bluetooth/BluetoothDevice;
+    instance-of v2, v1, Landroid/bluetooth/BluetoothSocket;
 
-    move-result-object v0
+    if-eqz v2, :cond_1
 
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
+    .line 102
+    check-cast v1, Landroid/bluetooth/BluetoothSocket;
 
-    move-result-object v0
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothSocket;->getRemoteDevice()Landroid/bluetooth/BluetoothDevice;
 
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
+    move-result-object v1
 
-    move-result v0
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
 
-    const/16 v1, 0x200
+    move-result-object v1
 
-    if-ne v0, v1, :cond_0
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
+
+    move-result v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/16 v2, 0x200
+
+    if-ne v1, v2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+
+    :catch_0
+    move-exception v1
+
+    .line 105
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_1
-    :goto_0
-    return v2
+    return v0
 .end method
 
 .method public isDeviceTypeWearable()Z
     .locals 3
 
-    .line 109
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
+    const/4 v0, 0x0
 
-    instance-of v1, v0, Landroid/bluetooth/BluetoothSocket;
+    .line 113
+    :try_start_0
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
 
-    const/4 v2, 0x0
+    instance-of v2, v1, Landroid/bluetooth/BluetoothSocket;
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_1
 
-    .line 110
-    check-cast v0, Landroid/bluetooth/BluetoothSocket;
+    .line 114
+    check-cast v1, Landroid/bluetooth/BluetoothSocket;
 
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket;->getRemoteDevice()Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothSocket;->getRemoteDevice()Landroid/bluetooth/BluetoothDevice;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
 
-    move-result v0
+    move-result v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/16 v1, 0x700
+    const/16 v2, 0x700
 
-    if-ne v0, v1, :cond_0
+    if-ne v1, v2, :cond_0
 
-    const/4 v2, 0x1
+    const/4 v0, 0x1
 
     :cond_0
-    return v2
+    return v0
+
+    :catch_0
+    move-exception v1
+
+    .line 117
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
+
+    :cond_1
+    return v0
 .end method
 
 .method public isWiFiSocket()Z
@@ -468,6 +501,14 @@
 
 .method public setAddress(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     .line 42
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mAddress:Ljava/lang/String;
@@ -477,8 +518,16 @@
 
 .method public setDeviceID(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceID"
+        }
+    .end annotation
 
-    .line 122
+    .line 128
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mDeviceID:Ljava/lang/String;
 
     return-void
@@ -486,27 +535,41 @@
 
 .method public setDeviceName(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceName"
+        }
+    .end annotation
 
-    .line 118
+    .line 124
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mDeviceName:Ljava/lang/String;
 
     return-void
 .end method
 
 .method public write([B)V
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageBytes"
+        }
+    .end annotation
 
-    .line 148
+    .line 154
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
 
-    instance-of v0, v0, Landroid/bluetooth/BluetoothSocket;
+    instance-of v1, v0, Landroid/bluetooth/BluetoothSocket;
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    .line 149
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
-
+    .line 155
     check-cast v0, Landroid/bluetooth/BluetoothSocket;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket;->getOutputStream()Ljava/io/OutputStream;
@@ -517,17 +580,13 @@
 
     goto :goto_0
 
-    .line 150
+    .line 156
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
+    instance-of v1, v0, Ljava/net/Socket;
 
-    instance-of v0, v0, Ljava/net/Socket;
+    if-eqz v1, :cond_1
 
-    if-eqz v0, :cond_1
-
-    .line 151
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/FlowSocket;->mSocket:Ljava/lang/Object;
-
+    .line 157
     check-cast v0, Ljava/net/Socket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getOutputStream()Ljava/io/OutputStream;
@@ -543,7 +602,7 @@
     :catch_0
     move-exception p1
 
-    .line 154
+    .line 160
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :cond_1

@@ -27,6 +27,9 @@
 .method public abstract getHorizontalOffset()I
 .end method
 
+.method public abstract getHorizontalOriginalOffset()I
+.end method
+
 .method public abstract getVerticalOffset()I
 .end method
 
@@ -34,19 +37,80 @@
 .end method
 
 .method public abstract setAdapter(Landroid/widget/ListAdapter;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "adapter"
+        }
+    .end annotation
 .end method
 
 .method public abstract setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bg"
+        }
+    .end annotation
 .end method
 
 .method public abstract setHorizontalOffset(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "px"
+        }
+    .end annotation
+.end method
+
+.method public abstract setHorizontalOriginalOffset(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "px"
+        }
+    .end annotation
 .end method
 
 .method public abstract setPromptText(Ljava/lang/CharSequence;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hintText"
+        }
+    .end annotation
 .end method
 
 .method public abstract setVerticalOffset(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "px"
+        }
+    .end annotation
 .end method
 
 .method public abstract show(II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "textDirection",
+            "textAlignment"
+        }
+    .end annotation
 .end method

@@ -21,8 +21,16 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 179
+    .line 187
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService$LocalBinder;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
@@ -35,7 +43,7 @@
 .method public getService()Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
     .locals 1
 
-    .line 182
+    .line 190
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService$LocalBinder;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowPhoneService;
 
     return-object v0

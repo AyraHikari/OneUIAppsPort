@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 93
+    .line 90
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$1;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public onConnectionFailed()V
     .locals 2
 
-    .line 112
+    .line 109
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$1;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->mPhoneThreadHandler:Landroid/os/Handler;
@@ -55,7 +63,7 @@
 .method public onDeviceSearchFailed()V
     .locals 2
 
-    .line 101
+    .line 98
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$1;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->mPhoneThreadHandler:Landroid/os/Handler;
@@ -71,8 +79,16 @@
 
 .method public onSessionExpired(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appTerminationNeed"
+        }
+    .end annotation
 
-    .line 96
+    .line 93
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService$1;->this$0:Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->stopNotificationSession(Z)V

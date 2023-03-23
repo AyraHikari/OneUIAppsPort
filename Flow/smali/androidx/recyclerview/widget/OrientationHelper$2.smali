@@ -1,4 +1,4 @@
-.class final Landroidx/recyclerview/widget/OrientationHelper$2;
+.class Landroidx/recyclerview/widget/OrientationHelper$2;
 .super Landroidx/recyclerview/widget/OrientationHelper;
 .source "OrientationHelper.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 

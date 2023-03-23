@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Magrehistro at pamahalaan ang hanggang %d computer o tablet sa Samsung Flow.
-
-Isang computer o tablet lang ang maaaring ikonekta sa telepono mo sa bawat pagkakataon. Kailangan mong pumili ng isa kapag sinusubok kumonekta ng dalawang nakarehistrong computer o tablet sa telepono mo."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Magrehistro at pamahalaan ang hanggang %d computer o tablet sa Samsung Flow.
-
-Isang computer o tablet lang ang maaaring ikonekta sa telepono mo sa bawat pagkakataon. Kailangan mong pumili ng isa kapag sinusubok kumonekta ng dalawang nakarehistrong computer o tablet sa telepono mo."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d na bagong notification</item>
+        <item quantity="one">%d bagong notification</item>
     </plurals>
 </resources>

@@ -69,6 +69,72 @@
     return p0
 .end method
 
+.method public static floorMod(FI)F
+    .locals 3
+
+    int-to-float v0, p1
+
+    div-float v1, p0, v0
+
+    float-to-int v1, v1
+
+    .line 84
+    invoke-static {p0}, Ljava/lang/Math;->signum(F)F
+
+    move-result v2
+
+    mul-float/2addr v2, v0
+
+    const/4 v0, 0x0
+
+    cmpg-float v0, v2, v0
+
+    if-gez v0, :cond_0
+
+    mul-int v0, v1, p1
+
+    int-to-float v0, v0
+
+    cmpl-float v0, v0, p0
+
+    if-eqz v0, :cond_0
+
+    add-int/lit8 v1, v1, -0x1
+
+    :cond_0
+    mul-int/2addr v1, p1
+
+    int-to-float p1, v1
+
+    sub-float/2addr p0, p1
+
+    return p0
+.end method
+
+.method public static floorMod(II)I
+    .locals 2
+
+    .line 95
+    div-int v0, p0, p1
+
+    xor-int v1, p0, p1
+
+    if-gez v1, :cond_0
+
+    mul-int v1, v0, p1
+
+    if-eq v1, p0, :cond_0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :cond_0
+    mul-int/2addr v0, p1
+
+    sub-int/2addr p0, v0
+
+    return p0
+.end method
+
 .method public static geq(FFF)Z
     .locals 0
 

@@ -60,6 +60,7 @@
     <string name="air_quality">ਹਵਾ ਗੁਣਵੱਤਾ</string>
     <string name="air_quality_next_tts">ਬਾਅਦ ਵਿੱਚ ਰੋਜ਼ਾਨਾ ਹਵਾ ਦੀ ਗੁਣਵੱਤਾ ਦਾ ਪੂਰਵ-ਅਨੁਮਾਨ</string>
     <string name="air_quality_previous_tts">ਪਹਿਲਾਂ ਵਾਲੀ ਰੋਜ਼ਾਨਾ ਹਵਾ ਦੀ ਗੁਣਵੱਤਾ ਦਾ ਪੂਰਵ-ਅਨੁਮਾਨ</string>
+    <string name="alert_title">ਗੰਭੀਰ ਮੌਸਮ ਸਚੇਤ</string>
     <string name="all_added_cities">ਸਾਰੇ ਜੋੜੇ ਗਏ ਸ਼ਹਿਰ</string>
     <string name="allow">ਆਗਿਆ ਦਿਉ</string>
     <string name="allow_permission_in_settings">ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ ਸੈੱਟਿੰਗਸ ਵਿੱਚ ਅਨੁਮਤੀਆਂ ਨੂੰ ਆਗਿਆ ਦੇਣ ਦੀ ਲੋੜ ਹੈ।</string>
@@ -73,6 +74,11 @@
     <string name="application_not_support_restricted">ਕਾਰਜ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।</string>
     <string name="apply_daylight_saving_time">ਕੀ ਡੇਲਾਈਟ ਸੇਵਿੰਗ ਸਮਾਂ ਲਾਗੂ ਕਰਨਾ ਹੈ?</string>
     <string name="as_possible_after_verification">ਰਿਪੋਰਟ ਭੇਜੀ ਗਈ। ਤਸਦੀਕ ਤੋਂ ਬਾਅਦ ਸ਼ਹਿਰ ਦਾ ਨਾਂ ਜਲਦੀ ਤੋਂ ਜਲਦੀ ਬਦਲ ਦਿੱਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="auto_refresh_on_screen_description">ਹਰ ਘੰਟੇ ਸਵੈਚਲਿਤ ਹੀ ਰਿਫ੍ਰੈਸ਼ ਕੀਤੀ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ। ਜਦੋਂ ਇਹ ਚਾਲੂ ਹੁੰਦਾ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਮੈਨੁਅਲੀ ਰਿਫ੍ਰੈਸ਼ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="auto_refresh_on_the_go">ਚਲਦੇ ਸਮੇਂ ਸਵੈ ਰਿਫ੍ਰੈਸ਼ ਕਰੋ</string>
+    <string name="auto_refresh_on_the_go_advanced">ਉੱਨਤ</string>
+    <string name="auto_refresh_on_the_go_description">ਜਦੋਂ ਤੁਸੀਂ ਡ੍ਰਾਈਵਿੰਗ ਕਰ ਰਹੇ ਹੋ, ਬਾਈਕ ਚਲਾ ਰਹੇ ਹੋ, ਭੱਜ ਰਹੇ ਹੋ, ਜਾਂ ਚੱਲ ਰਹੇ ਹੋਵੋ ਤਾਂ ਮੌਸਮ ਦੇ ਅਕਸਰ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਕਰੋ। ਜਦੋਂ ਇਹ ਚਾਲੂ ਹੁੰਦਾ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਮੈਨੁਅਲੀ ਰਿਫ੍ਰੈਸ਼ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="auto_refresh_on_the_go_simple_description">ਜਦੋਂ ਤੁਸੀਂ ਡ੍ਰਾਈਵਿੰਗ ਕਰ ਰਹੇ ਹੋ, ਬਾਈਕ ਚਲਾ ਰਹੇ ਹੋ, ਭੱਜ ਰਹੇ ਹੋ, ਜਾਂ ਚੱਲ ਰਹੇ ਹੋਵੋ ਤਾਂ ਮੌਸਮ ਦੇ ਅਕਸਰ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਕਰੋ।</string>
     <string name="btn_report">ਰਿਪੋਰਟ ਕਰੋ</string>
     <string name="button_finish">ਸਮਾਪਤ</string>
     <string name="button_tts">ਬਟਨ</string>
@@ -82,6 +88,7 @@
     <string name="checkdeteal_tts">ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਦੋ ਵਾਰ ਟੈਪ ਕਰੋ।</string>
     <string name="china">ਚੀਨ</string>
     <string name="cities_button">ਸ਼ਹਿਰ</string>
+    <string name="city_added">ਸ਼ਹਿਰ ਜੋੜਿਆ ਗਿਆ।</string>
     <string name="city_list_text">ਸ਼ਹਿਰ</string>
     <string name="clear">ਸਾਫ਼</string>
     <string name="clear_then_cloudy">ਸਾਫ਼ ਫਿਰ ਬੱਦਲਵਾਈ</string>
@@ -168,6 +175,7 @@
     <string name="dragndroplist_drag_release">ਸਥਾਨ %d ਤੇ ਆਈਟਮ ਡ੍ਰੌਪ ਕੀਤੀ ਗਈ।</string>
     <string name="dragndroplist_drag_start">ਸਥਾਨ %d ਤੋਂ ਆਈਟਮ ਨੂੰ ਡ੍ਰੈਗ ਕਰਨਾ ਅਰੰਭ ਕੀਤਾ ਗਿਆ।</string>
     <string name="dragndroplist_item_cannot_be_dragged">%d ਸਥਾਨ ਤੇ ਆਈਟਮ ਡ੍ਰੈਗ ਨਹੀਂ ਹੋ ਸਕਦੀ ਹੈ।</string>
+    <string name="drawer_tips">%s ਯੁਕਤੀਆਂ</string>
     <string name="drawer_tips_message">ਸਥਾਨ ਜੋੜਨ, ਮਿਟਾਉਣ, ਅਤੇ ਪੁਨਰ ਕ੍ਰਮ ਦੇਣ ਲਈ ਇੱਥੇ ਟੈਪ ਕਰੋ। ਤੁਸੀਂ ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਵੱਖਰੇ ਸਥਾਨ ਦਿਖਾਉਣ ਲਈ ਅਨੇਕ ਵਿੱਜੇਟਸ ਵੀ ਜੋੜ ਸਕਦੇ ਹੋ।</string>
     <string name="drawer_tips_message_1">ਸਥਾਨਾਂ ਨੂੰ ਜੋੜਨ, ਮਿਟਾਉਣ, ਅਤੇ ਪੁਨਰਕ੍ਰਮ ਦੇਣ ਲਈ ਇਸ ਮੀਨੂੰ ਦੇ ਹੇਠਾਂ “ਸਥਾਨ ਪ੍ਰਬੰਧਿਤ ਕਰੋ” ਤੇ ਟੈਪ ਕਰੋ।</string>
     <string name="drawer_tips_message_2">ਤੁਸੀਂ ਇੱਕੋ ਸਮੇਂ ਵੱਖਰੇ ਸਥਾਨ ਦਿਖਾਉਣ ਲਈ ਹੋਮ ਸਕ੍ਰੀਨ ਵਿੱਚ ਇੱਕ ਤੋਂ ਜ਼ਿਆਦਾ ਵਿੱਜੇਟ ਨੂੰ ਜੋੜ ਸਕਦੇ ਹੋ।</string>
@@ -199,15 +207,18 @@
     <string name="forecast_video">ਪੂਰਵ-ਅਨੁਮਾਨ ਵੀਡਿਓ</string>
     <string name="format_km_per_hour">%s km/h</string>
     <string name="format_m_per_hour">%s mph</string>
+    <string name="fri">ਸ਼ੁੱਕ</string>
     <string name="general">ਆਮ</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">ਤੁਸੀਂ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਕਿਵੇਂ ਵਰਤਦੇ ਹੋ ਉਸ ਦੇ ਆਧਾਰ ਤੇ ਵਿਅਕਤੀਗਤ ਸਮੱਗਰੀ ਪ੍ਰਾਪਤ ਕਰੋ।</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">ਤੁਸੀਂ ਆਪਣੇ ਟੈਬਲੇਟ ਨੂੰ ਕਿਵੇਂ ਵਰਤਦੇ ਹੋ ਉਸ ਦੇ ਆਧਾਰ ਤੇ ਵਿਅਕਤੀਗਤ ਸਮੱਗਰੀ ਪ੍ਰਾਪਤ ਕਰੋ।</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">ਮੌਸਮ ਤੋਂ ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਸਥਾਨ ਸਮੇਤ, ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ</string>
     <string name="go_to_website">ਵੈੱਬਸਾਈਟ ਤੇ ਜਾਉ</string>
     <string name="goto_apps">ਨਵਾਂ ਅਪਡੇਟ ਉਪਲਬਧ ਹੈ। ਹੁਣ ਸਥਾਪਿਤ ਕਰੀਏ?</string>
     <string name="goto_apps_later">ਬਾਅਦ ਵਿੱਚ</string>
     <string name="goto_apps_now">ਹੁਣ</string>
     <string name="goto_apps_update_title">ਨਵੀਂ ਸਮੱਗਰੀ ਸਚੇਤ</string>
     <string name="header_tts">ਹੈਡਰ</string>
+    <string name="heavy">ਜ਼ਿਆਦਾ</string>
     <string name="heavy_rain">ਭਾਰੀ ਮੀਂਹ ਪੈਣਾ</string>
     <string name="heavy_rain_followed_by_intense_heat">ਭਾਰੀ ਵਰਖਾ ਮਗਰੋਂ ਜ਼ਿਆਦਾ ਗਰਮੀ</string>
     <string name="heavy_rain_followed_by_light_rain">ਭਾਰੀ ਵਰਖਾ ਮਗਰੋਂ ਜ਼ਿਆਦਾ ਗਰਮੀ</string>
@@ -220,7 +231,7 @@
     <string name="heavy_rain_with_some_snow">ਕੁਝ ਬਰਫ਼ ਨਾਲ ਭਾਰੀ ਵਰਖਾ</string>
     <string name="heavy_rain_with_sunny_intervals">ਧੁੱਪ ਵਾਲੇ ਅੰਤਰਾਲਾਂ ਨਾਲ ਭਾਰੀ ਵਰਖਾ</string>
     <string name="help">ਮਦਦ</string>
-    <string name="help_favorite_location_msg">ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਸੂਚਨਾਵਾਂ, ਕੈਲੇਂਡਰ, Always On Display, ਅਤੇ ਹੋਰ ਕਨੈਕਟ ਕੀਤੀਆਂ ਗਈਆਂ ਸੇਵਾਵਾਂ ਵਿੱਚ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਆਪਣੀ ਸਥਾਨ ਸੂਚੀ ਵਿੱਚ ਆਪਣੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
+    <string name="help_favorite_location_msg">ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਸੂਚਨਾਵਾਂ, ਕਲੰਡਰ, Always On Display, ਅਤੇ ਹੋਰ ਕਨੈਕਟ ਕੀਤੀਆਂ ਗਈਆਂ ਸੇਵਾਵਾਂ ਵਿੱਚ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਆਪਣੀ ਸਥਾਨ ਸੂਚੀ ਵਿੱਚ ਆਪਣੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
     <string name="help_favorite_location_without_aod_and_calendar_msg">ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਸੂਚਨਾਵਾਂ ਵਿੱਚ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਆਪਣੀ ਸਥਾਨ ਸੂਚੀ ਵਿੱਚ ਆਪਣੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
     <string name="help_favorite_location_without_aod_msg">ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਸੂਚਨਾਵਾਂ, ਕੈਲੇਂਡਰ, ਅਤੇ ਹੋਰ ਕਨੈਕਟ ਕੀਤੀਆਂ ਗਈਆਂ ਸੇਵਾਵਾਂ ਵਿੱਚ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਆਪਣੀ ਸਥਾਨ ਸੂਚੀ ਵਿੱਚ ਆਪਣੇ ਮਨਪਸੰਦ ਸਥਾਨ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
     <string name="high_accuracy">GPS, Wi-Fi, ਅਤੇ ਮੋਬਾਈਲ ਨੈੱਟਵਰਕਸ</string>
@@ -237,7 +248,7 @@
     <string name="how_to_add_delete_set_location_as_favorite">ਆਪਣੀ ਮਨਪਸੰਦ ਦੇ ਕੋਈ ਸਥਾਨ ਜੋੜੋ, ਮਿਟਾਉ, ਜਾਂ ਸੈੱਟ ਕਰੋ।</string>
     <string name="how_to_add_hold_a_blank">ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਮੌਸਮ ਵਿੱਜੇਟ ਜੋੜਨ ਲਈ:</string>
     <string name="how_to_change_the_location_appearance">ਵਿੱਜੇਟ ਦਾ ਸਥਾਨ ਜਾਂ ਦਿੱਖ ਬਦਲਣ ਲਈ, ਦਬਾ ਕੇ ਰੱਖੋ, ਫਿਰ “ਸੈੱਟਿੰਗਸ” ਤੇ ਟੈਪ ਕਰੋ।</string>
-    <string name="how_to_favorite_location_used_in_location">ਤੁਹਾਡਾ ਮਨਪਸੰਦ ਸਥਾਨ ਸੂਚਨਾਵਾਂ, ਕੈਲੇਂਡਰ, ਅਤੇ Always On Display ਵਿੱਚ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।</string>
+    <string name="how_to_favorite_location_used_in_location">ਤੁਹਾਡਾ ਮਨਪਸੰਦ ਸਥਾਨ ਸੂਚਨਾਵਾਂ, ਕਲੰਡਰ, ਅਤੇ Always On Display ਵਿੱਚ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।</string>
     <string name="how_to_press_and_hold_space">ਹੋਮ ਸਕ੍ਰੀਨ ਦੇ ਖਾਲੀ ਖੇਤਰ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ, ਫਿਰ “ਵਿੱਜੇਟਸ” ਤੇ ਟੈਪ ਕਰੋ।</string>
     <string name="how_to_press_and_hold_widget">ਇਸ ਦੀ ਚੋਣ ਕਰਨ ਲਈ ਵਿੱਜੇਟ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ।</string>
     <string name="how_to_search_or_swipe">ਮੌਸਮ ਨੂੰ ਲੱਭਣ ਲਈ ਖੋਜ ਕਰੋ ਜਾਂ ਸਵਾਈਪ ਕਰੋ।</string>
@@ -365,6 +376,7 @@
     <string name="life_index_visibility">ਦ੍ਰਿਸ਼ਮਾਨਤਾ</string>
     <string name="life_index_wind">ਵਿੰਡ</string>
     <string name="life_index_wind_force">ਹਵਾ ਦੀ ਗਤੀ</string>
+    <string name="light">ਹਲਕਾ</string>
     <string name="light_rain_followed_by_heavy_rain">ਹਲਕੀ ਵਰਖਾ ਮਗਰੋਂ ਭਾਰੀ ਵਰਖਾ</string>
     <string name="light_rain_with_some_heavy_rain">ਕੁਝ ਭਾਰੀ ਵਰਖਾ ਨਾਲ ਹਲਕੀ ਵਰਖਾ</string>
     <string name="link_tts">ਲਿੰਕ</string>
@@ -420,6 +432,7 @@
     <string name="message_no_search_result_z">ਕੋਈ ਪਰਿਣਾਮ ਨਹੀਂ ਮਿਲਿਆ।</string>
     <string name="message_service_not_available">ਸੇਵਾ ਹੁਣੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।</string>
     <string name="minus_tts">ਘਟਾਓ</string>
+    <string name="mon">ਸੋਮ</string>
     <string name="more">ਹੋਰ</string>
     <string name="more_cuntact_us">ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</string>
     <string name="more_information">ਹੋਰ</string>
@@ -429,7 +442,17 @@
     <string name="navigation_drawer_tips_message">ਡਿਫਾੱਲਟ ਮੌਸਮ ਸਥਾਨ ਨੂੰ ਬਦਲਣ ਅਤੇ ਆਪਣੇ ਸਾਰੇ ਸਥਾਨ ਪ੍ਰਬੰਧਿਤ ਕਰਨ ਲਈ ਇੱਥੇ ਟੈਪ ਕਰੋ।</string>
     <string name="new_version_available">%s ਦਾ ਇੱਕ ਨਵਾਂ ਸੰਸਕਰਣ ਉਪਲਬਧ ਹੈ।</string>
     <string name="new_version_is_available">ਇੱਕ ਨਵਾਂ ਸੰਸਕਰਣ ਉਪਲਬਧ ਹੈ।</string>
+    <string name="news_menu_show_news">ਖ਼ਬਰਾਂ ਦਿਖਾਓ</string>
+    <string name="news_opt_in_banner_title_text">"ਮੌਸਮ ਵਿਜੇਟ 'ਤੇ ਖ਼ਬਰਾਂ ਦਿਖਾ ਕੇ ਮੌਜੂਦਾ ਇਵੈਂਟਾਂ 'ਤੇ ਅਪ ਟੂ ਡੇਟ ਰਹੋ।"</string>
+    <string name="news_opt_in_popup_desc_text">"ਮੌਸਮ ਵਿਜੇਟ 'ਤੇ %s ਤੋਂ ਨਵੀਨਤਮ ਸੁਰਖੀਆਂ ਦਿਖਾ ਕੇ ਦੁਨੀਆ ਨਾਲ ਅੱਪ ਟੂ ਡੇਟ ਰਹੋ।"</string>
+    <string name="news_opt_in_popup_title_text">ਇੱਕ ਵਿਜੇਟ ਵਿੱਚ ਖ਼ਬਰਾਂ ਅਤੇ ਮੌਸਮ ਦੇਖੋ</string>
+    <string name="news_request_agree_text">%s ਤੋਂ ਖ਼ਬਰਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="news_widget_bubble_text">ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਦੇ ਨਾਲ-ਨਾਲ ਖ਼ਬਰਾਂ ਸੁਣੋ।</string>
+    <string name="news_widget_dummy_title">ਅੱਜ ਦੀ ਪ੍ਰਮੁੱਖ ਕਹਾਣੀ</string>
+    <string name="news_widget_new_dummy_title">5 ਚੀਜ਼ਾਂ ਜੋ ਤੁਹਾਨੂੰ ਅੱਜ ਸਵੇਰੇ ਜਾਣਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ</string>
+    <string name="news_widget_oobe_text">ਖ਼ਬਰਾਂ ਜੋੜਨ ਲਈ ਇੱਥੇ ਟੈਪ ਕਰੋ।</string>
     <string name="next">ਅਗਲਾ ਸ਼ਹਿਰ</string>
+    <string name="next_btn">ਅੱਗੇ</string>
     <string name="next_city">ਅਗਲੇ ਸ਼ਹਿਰ ਲਈ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਦੇਖਣ ਲਈ ਦੋ ਵਾਰ ਟੈਪ ਕਰੋ।</string>
     <string name="night_tts">ਰਾਤ</string>
     <string name="no_application_available">ਕੋਈ ਅਨੁਪ੍ਰਯੋਗ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।</string>
@@ -438,6 +461,7 @@
     <string name="no_weather_information">ਕੋਈ ਮੌਸਮ ਜਾਣਕਾਰੀ ਨਹੀਂ</string>
     <string name="not_in_use">ਵਰਤੋਂ ਵਿੱਚ ਨਹੀਂ ਹੈ</string>
     <string name="not_now">ਹੁਣੇ ਨਹੀਂ</string>
+    <string name="not_now_btn">ਹੁਣ ਨਹੀਂ</string>
     <string name="not_selected">ਚੁਣਿਆ ਨਹੀਂ ਗਿਆ</string>
     <string name="nothing_selected">ਕੁਝ ਚੁਣਿਆ ਨਹੀਂ ਗਿਆ।</string>
     <string name="noti">ਸੂਚਨਾ</string>
@@ -445,6 +469,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">ਸਭ ਤੋਂ ਤੇਜ਼ ਅਤੇ ਸਭ ਤੋਂ ਸਟੀਕ ਸਥਾਨ ਦਾ ਪਤਾ ਲਗਾਉਣ ਲਈ, “ਸੈੱਟਿੰਗਸ” ਤੇ ਟੈਪ ਕਰੋ, ਫਿਰ ਸਥਾਨ ਲੱਭਣ ਦੀ ਵਿਧੀ ਨੂੰ GPS, Wi-Fi ਅਤੇ ਮੋਬਾਈਲ ਨੈੱਟਵਰਕਸ ਤੇ ਸੈੱਟ ਕਰੋ।</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">ਸਭ ਤੋਂ ਤੇਜ਼ ਅਤੇ ਸਭ ਤੋਂ ਸਟੀਕ ਸਥਾਨ ਦਾ ਪਤਾ ਲਗਾਉਣ ਲਈ, “ਸੈੱਟਿੰਗਸ” ਤੇ ਟੈਪ ਕਰੋ, ਫਿਰ ਸਥਾਨ ਲੱਭਣ ਦੀ ਵਿਧੀ ਨੂੰ GPS ਅਤੇ Wi-Fi ਤੇ ਸੈੱਟ ਕਰੋ।</string>
     <string name="notice_gps_trun_off_message_verizon">ਆਪਣੀ ਸਥਾਨਕ ਮੌਸਮ ਜਾਣਕਾਰੀ ਦੇਖਣ ਲਈ, ਸਥਾਨ ਸੈੱਟਿੰਗਸ ਨੂੰ ਚਾਲੂ ਕਰੋ ਅਤੇ ਯਕੀਨੀ ਬਣਾਉ ਕਿ ਮੋਡ ਨੂੰ ਉੱਚ ਸਟੀਕਤਾ ਤੇ ਸੈੱਟ ਕੀਤਾ ਗਿਆ ਹੋਵੇ।</string>
+    <string name="notification_alert_channel_name">ਗੰਭੀਰ ਮੌਸਮ ਸਚੇਤ</string>
     <string name="notification_apps_update_channel_name">ਅਪਡੇਟ ਸੂਚਨਾਵਾਂ</string>
     <string name="notification_auto_refresh_channel_name">ਮੌਸਮ ਸਵੈ ਰਿਫ੍ਰੈਸ਼</string>
     <string name="notification_dex_channel_name">Samsung DeX ਵਿੱਚ ਮੌਸਮ</string>
@@ -465,6 +490,7 @@
     <string name="open_app">ਐਪ ਖੋਲ੍ਹੋ</string>
     <string name="open_source_licences">ਓਪਨ ਸੋਰਸ ਲਾਈਸੰਸਿਸ</string>
     <string name="other_locations">ਹੋਰ ਸਥਾਨ</string>
+    <string name="partly_sunny">ਆਂਸ਼ਿਕ ਚਮਕਦਾਰ</string>
     <string name="paused">ਵਿਰਾਮ ਕੀਤਾ ਗਿਆ</string>
     <string name="pd_km">%.1f km</string>
     <string name="pd_km_h">%d km/h</string>
@@ -481,10 +507,13 @@
     <string name="precipitation_pd_mm">ਮੀਂਹ ਤੇ ਬਰਫ਼: %d mm</string>
     <string name="preview">%s ਪੂਰਵ-ਦਰਸ਼ਨ</string>
     <string name="previous">ਪਿਛਲਾ ਸ਼ਹਿਰ</string>
+    <string name="previous_btn">ਪਿੱਛੇ</string>
     <string name="previous_city">ਪਿਛਲੇ ਸ਼ਹਿਰ ਲਈ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਦੇਖਣ ਲਈ ਦੋ ਵਾਰ ਟੈਪ ਕਰੋ।</string>
     <string name="privacy_policy">ਗੋਪਨਿਯਤਾ ਨੀਤੀ</string>
     <string name="probability_of_rain_text">ਵਰਖਾ ਦੀ ਸੰਭਾਵਨਾ</string>
     <string name="protect_your_content">ਆਪਣੀ ਸਮੱਗਰੀ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
+    <string name="ps_in">%s in</string>
+    <string name="ps_mm">%s mm</string>
     <string name="radar">ਰਾਡਾਰ ਅਤੇ ਮੈਪਸ</string>
     <string name="rain">ਵਰਖਾ</string>
     <string name="rain_followed_by_intense_heat">ਵਰਖਾ ਮਗਰੋਂ ਜ਼ਿਆਦਾ ਗਰਮੀ</string>
@@ -522,6 +551,7 @@
     <string name="runtime_location_permission_desc">ਮੌਸਮ ਜਾਣਕਾਰੀ ਨੂੰ ਅਪਡੇਟ ਕਰਨ, “ਸੈੱਟਿੰਗਸ” ਤੇ ਟੈਪ ਕਰੋ, ਐਪ ਜਾਣਕਾਰੀ > ਅਨੁਮਤੀਆਂ ਤੇ ਜਾਉ, ਫਿਰ ਨਿਮਨਲਿਖਤ ਅਨੁਮਤੀਆਂ ਨੂੰ ਆਗਿਆ ਦਿਉ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ:</string>
     <string name="runtime_location_permission_title">ਅਨੁਮਤੀਆਂ ਦੀ ਆਗਿਆ ਦਿਉ</string>
     <string name="runtime_oem_grant_permission_desc">%s ਐਪ ਨੂੰ ਨਿਮਨਲਿਖਤ ਨੂੰ ਐਕਸੈੱਸ ਕਰਨ ਦੀ ਅਨੁਮਤੀ ਪ੍ਰਾਪਤ ਹੈ:</string>
+    <string name="sat">ਸ਼ਨੀ</string>
     <string name="save_button">ਸੇਵ ਕਰੋ</string>
     <string name="search_menu_title">ਖੋਜ</string>
     <string name="search_most_searched_for">ਇਸ ਲਈ ਸਭ ਤੋਂ ਜ਼ਿਆਦਾ ਖੋਜ ਕੀਤੀ ਗਈ</string>
@@ -549,6 +579,7 @@
     <string name="sesl_material_badge_description">ਨਵੀਂ ਸਮੱਗਰੀ ਉਪਲਬਧ ਹੈ</string>
     <string name="sesl_material_overflow_badge_text_n">ਨਵ.</string>
     <string name="sesl_more_item_label">ਹੋਰ</string>
+    <string name="sesl_preferecne_badge_description">ਨਵੀਂ ਸੂਚਨਾ</string>
     <string name="sesl_preferencecategory_added_title">ਹੈਡਰ</string>
     <string name="sesl_search_hint">ਖੋਜੋ</string>
     <string name="sesl_searchview_description_clear">ਖੋਜ ਖੇਤਰ ਸਾਫ਼ ਕਰੋ</string>
@@ -563,7 +594,7 @@
     <string name="sesl_toolbar_collapse_description">ਸੰਕੁਚਿਤ ਕਰੋ</string>
     <string name="set_default_location">ਡਿਫਾੱਲਟ ਸਥਾਨ ਸੈੱਟ ਕਰੋ</string>
     <string name="set_favorite">ਮਨਪਸੰਦ ਸੈੱਟ ਕਰੋ</string>
-    <string name="set_favorite_location_confirm_dialog_msg">%s ਨੂੰ ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਸਥਾਨ ਵਜੋਂ ਸੈੱਟ ਕੀਤਾ ਜਾਵੇਗਾ। ਇਸ ਨੂੰ ਸੂਚਨਾਵਾਂ, ਕੈਲੇਂਡਰ, ਅਤੇ Always On Display ਲਈ ਵੀ ਲਾਗੂ ਕੀਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="set_favorite_location_confirm_dialog_msg">%s ਨੂੰ ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਸਥਾਨ ਵਜੋਂ ਸੈੱਟ ਕੀਤਾ ਜਾਵੇਗਾ। ਇਸ ਨੂੰ ਸੂਚਨਾਵਾਂ, ਕਲੰਡਰ, ਅਤੇ Always On Display ਲਈ ਵੀ ਲਾਗੂ ਕੀਤਾ ਜਾਵੇਗਾ।</string>
     <string name="set_font_size">ਫੌਂਟ ਆਕਾਰ ਸੈੱਟ ਕਰੋ</string>
     <string name="set_font_size_large">ਵੱਡਾ</string>
     <string name="set_font_size_medium">ਮੱਧਮ</string>
@@ -613,6 +644,9 @@
     <string name="st_no_network_desc">ਆਪਣੇ ਨੈੱਟਵਰਕ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="st_offline">ਔਫਲਾਈਨ</string>
     <string name="st_view_less">ਘੱਟ ਦੇਖੋ</string>
+    <string name="status_off">ਬੰਦ</string>
+    <string name="status_on">ਚਾਲੂ</string>
+    <string name="sun">ਐਤ</string>
     <string name="sunny">ਰੋਸ਼ਨ</string>
     <string name="sunny_with_some_clouds">ਕੁਝ ਬੱਦਲਾਂ ਨਾਲ ਧੁੱਪ</string>
     <string name="sunny_with_some_heavy_rain">ਕੁਝ ਭਾਰੀ ਵਰਖਾ ਨਾਲ ਧੁੱਪ</string>
@@ -625,6 +659,7 @@
     <string name="tap_here_to_restore_the_weather">ਆਪਣੇ ਪੁਰਾਣੇ ਡਿਵਾਈਸ ਵਿੱਚੋਂ ਮੌਸਮ ਡੈਟਾ ਪੁਨਰ ਸਥਾਪਿਤ ਕਰਨ ਲਈ ਇੱਥੇ ਟੈਪ ਕਰੋ।</string>
     <string name="tap_retry_to_try_to_find_your_location_again">ਤੁਹਾਡੇ ਸਥਾਨ ਨੂੰ ਦੁਬਾਰਾ ਲੱਭਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ “ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ” ਤੇ ਟੈਪ ਕਰੋ।</string>
     <string name="tap_setting_message_edge_panel">ਸਥਾਨਕ ਮੌਸਮ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸਥਾਨ ਨੂੰ ਚਾਲੂ ਕਰੋ।</string>
+    <string name="tap_the_settings_icon">ਸੈੱਟਿੰਗਸ ਪ੍ਰਤੀਰੂਪ ਟੈਪ ਕਰੋ।</string>
     <string name="tap_to_get_the_weather">ਮੌਸਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="temp_f_c">%d°ਫਾਰਨਹਾਇਟ</string>
     <string name="temp_f_m">%d°ਸੈਲਸੀਅਸ</string>
@@ -632,6 +667,7 @@
     <string name="terms_and_conditions">ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ</string>
     <string name="the_latest_version">ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਸਥਾਪਿਤ ਹੈ।</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">ਇਸ ਨੂੰ ਸੂਚਨਾਵਾਂ ਅਤੇ ਕੈਲੇਂਡਰ ਤੇ ਵੀ ਲਾਗੂ ਕੀਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="thu">ਵੀਰ</string>
     <string name="tick_box_tts">ਚੈਕਬਾੱਕਸ</string>
     <string name="ticked_tts">ਚਿੰਨ੍ਹਿਤ ਕੀਤਾ</string>
     <string name="time_am">AM</string>
@@ -639,19 +675,25 @@
     <string name="times_forecast">ਹਰ ਘੰਟੇ</string>
     <string name="title_select_locations">ਸਥਾਨ ਚੁਣੋ</string>
     <string name="title_theme">ਥੀਮਸ</string>
+    <string name="to_continue_agree_to_updated">ਜਾਰੀ ਰੱਖਣ ਲਈ, ਸਾਡੀ ਅਪਡੇਟ ਕੀਤੀ %s ਨਾਲ ਸਹਿਮਤ ਹੋਵੋ।</string>
     <string name="to_get_local_weather_chn">"ਸਥਾਨਕ ਮੌਸਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ, ਤੁਹਾਡੀ ਮੌਜੂਦਾ ਸਥਿਤੀ ਨੂੰ ਮੌਸਮ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇਗਾ। (ਕਿਰਪਾ ਪ੍ਰਦਾਤਾ ਦੀਆਂ %1$sਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ%2$s ਅਤੇ %3$sਪਰਦੇਦਾਰੀ ਨੀਤੀ%4$s ਦੇਖੋ)।
 ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਦੀਆਂ ਦੂਸਰੀਆਂ ਐਪਾਂ ਅਤੇ ਸੇਵਾਵਾਂ ਉਹਨਾਂ ਐਪਾਂ ਵਿੱਚ ਮੌਸਮ ਨੂੰ ਦਿਖਾਉਣ ਲਈ ਪ੍ਰਾਪਤ ਕੀਤੇ ਮੌਸਮ ਦੇ ਡੈਟਾ ਨੂੰ ਐਕਸੈਸ ਕਰ ਸਕਦੀਆਂ ਹਨ।
 ਤੁਹਾਨੂੰ ਨਿਰੰਤਰ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਮੁਹੱਈਆ ਕਰਾਉਂਦੇ ਰਹਿਣ ਲਈ, ਮੌਸਮ ਕੋਲ ਤੁਹਾਡੇ ਸਥਾਨ ਤੱਕ ਐਕਸੈਸ ਪ੍ਰਾਪਤ ਹੋਵੇਗਾ, ਇੱਥੋਂ ਤੱਕ ਕਿ ਤੁਹਾਡੇ ਵੱਲੋਂ ਐਪ ਦੀ ਵਰਤੋਂ ਨਾ ਕਰਦੇ ਸਮੇਂ ਵੀ।"</string>
     <string name="today">ਅੱਜ</string>
+    <string name="try_it_out_btn">ਇਹ ਅਜ਼ਮਾਓ</string>
+    <string name="tue">ਮੰਗ</string>
+    <string name="turn_on_to_use_precise_location">ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ %s ਨੂੰ ਹਰ ਸਮੇਂ ਆਪਣੇ ਸਥਾਨ ਨੂੰ ਐਕਸੈੱਸ ਕਰਨ ਦੀ ਆਗਿਆ ਦੇਣ ਦੀ ਲੋੜ ਹੈ ਅਤੇ ਸਟੀਕ ਸਥਾਨ ਦੀ ਵਰਤੋਂ ਕਰੋ ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਹੋਵੇਗਾ। “ਸੈੱਟਿੰਗਾਂ” ਤੇ ਟੈਪ ਕਰੋ, ਫਿਰ ਅਨੁਮਤੀਆਂ > ਸਥਾਨ ਤੇ ਜਾਓ।</string>
     <string name="tw_title_weather_broadcast">ਪ੍ਰਸਾਰਣ</string>
-    <string name="unable_to_check_for_updates">ਅਪਡੇਟਸ ਲਈ ਜਾਂਚ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਕੋਈ ਨੈੱਟਵਰਕ ਕਨੈਕਸ਼ਨ ਨਹੀਂ ਹੈ।</string>
+    <string name="unable_to_check_for_updates">ਅਪਡੇਟਸ ਲਈ ਜਾਂਚ ਨਹੀਂ ਕਰ ਸਕੇ। ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="unable_to_receive_info_msg">ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ</string>
     <string name="unticked_tts">ਅਨਟਿੱਕ ਕੀਤਾ ਗਿਆ</string>
     <string name="unused">ਵਰਤਿਆ ਨਹੀਂ ਗਿਆ</string>
     <string name="update">ਅਪਡੇਟ ਕਰੋ</string>
-    <string name="update_abb8">ਅਪਡੇਟ ਕਰੋ</string>
-    <string name="update_app">ਐਪ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="update_abb8">ਅੱਪਡੇਟ ਕਰੋ</string>
+    <string name="update_app">ਐਪ ਅੱਪਡੇਟ ਕਰੋ</string>
+    <string name="updated_tile_chn">ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: %s</string>
     <string name="updated_tts">%s ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ</string>
+    <string name="use_current_location">ਮੌਜੂਦਾ ਸਥਾਨ ਦਾ ਉਪਯੋਗ ਕਰੋ</string>
     <string name="use_current_location_agree_popup">"ਸਥਾਨਕ ਮੌਸਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ, ਤੁਹਾਡੀ ਮੌਜੂਦਾ ਸਥਿਤੀ ਨੂੰ ਮੌਸਮ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇਗਾ। (ਕਿਰਪਾ ਕਰਕੇ ਪ੍ਰਦਾਤਾ ਦੀ %1$sਗੋਪਨਿਯਤਾ ਨੀਤੀ%2$s ਵੇਖੋ।)
 ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਤੇ ਹੋਰ ਐਪਸ ਅਤੇ ਸੇਵਾਵਾਂ ਉਹਨਾਂ ਐਪਸ ਵਿੱਚ ਮੌਸਮ ਨੂੰ ਦਿਖਾਉਣ ਲਈ ਪੁਨਰ-ਪ੍ਰਾਪਤ ਕੀਤੇ ਗਏ ਮੌਸਮ ਡੈਟਾ ਤੱਕ ਪਹੁੰਚ ਕਰ ਸਕਦੇ ਹਨ।"</string>
     <string name="use_current_location_and_background_agree_popup">"ਸਥਾਨਕ ਮੌਸਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ, ਤੁਹਾਡੀ ਮੌਜੂਦਾ ਸਥਿਤੀ ਨੂੰ ਮੌਸਮ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇਗਾ। (ਕਿਰਪਾ ਪ੍ਰਦਾਤਾ ਦੀ %1$sਪਰਦੇਦਾਰੀ ਨੀਤੀ%2$s ਨੀਤੀ ਦੇਖੋ।)
@@ -663,15 +705,22 @@
 ਤੁਸੀਂ ਮੌਸਮ ਐਪ ਦੀਆਂ ਸੈੱਟਿੰਗਸ ਵਿੱਚ ਜਾਕੇ ਆਪਣੇ ਸਥਾਨ ਦੀ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਨੂੰ ਬੰਦ ਕਰ ਸਕਦੇ ਹੋ।"</string>
     <string name="use_current_location_body_msg_chn">"“ਮੌਸਮ” ਦੀ ਵਰਤੋਂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਕਿਰਪਾ ਕਰਕੇ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹੋ:
 ਜੇ ਤੁਸੀਂ ਆਪਣੇ ਮੌਜੂਦਾ ਸਥਾਨ ਦਾ ਮੌਸਮ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਤੀਜੀ-ਧਿਰ ਦੇ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਨੂੰ ਲਗਾਤਾਰ (ਭਾਵੇਂ ਤੁਸੀਂ ਸੇਵਾ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਵੀ ਕਰ ਰਹੇ ਹੋ) ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਨੂੰ ਐਕਸੈਸ ਕਰ ਸਕਣ ਅਤੇ ਹੇਠਾਂ ਸੂਚੀਬੱਧ ਕੀਤੇ ਮੁਤਾਬਕ, ਕੁਝ ਡੈਟਾ ਇਕੱਤਰ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣੀ ਪਵੇਗੀ। ਅਜਿਹੀ ਕੋਈ ਵੀ ਇਜਾਜ਼ਤ ਦੇਣ ਤੋਂ ਪਹਿਲਾਂ ਕਿਰਪਾ ਕਰਕੇ ਤੀਜੀ-ਧਿਰ ਦੇ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਦੇ %1$sਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ%2$s ਅਤੇ %3$sਗੋਪਨਿਯਤਾ ਨੀਤੀ%4$s ਨੂੰ ਸਾਵਧਾਨੀ ਨਾਲ ਪੜ੍ਹੋ ਅਤੇ ਸਮਝੋ। ਤੁਸੀਂ ਸੈੱਟਿੰਗਸ ਮੀਨੂ ਵਿੱਚ “ਸਥਾਨ” ਵਿਕਲਪ ਨੂੰ ਬੰਦ ਕਰਕੇ ਕਿਸੇ ਵੀ ਸਮੇਂ ਆਪਣੀ ਇਜਾਜ਼ਤ ਨੂੰ ਰੱਦ ਕਰ ਸਕਦੇ ਹੋ। ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਹੋਰ ਐਪਸ ਅਤੇ ਸੇਵਾਵਾਂ ਉਹਨਾਂ ਐਪਸ ਅਤੇ ਸੇਵਾਵਾਂ ਵਿੱਚ ਮੌਸਮ ਦਿਖਾਉਣ ਲਈ ਪ੍ਰਾਪਤ ਕੀਤੇ ਗਏ ਮੌਸਮ ਡੈਟਾ ਨੂੰ ਐਕਸੈਸ ਕਰ ਸਕਦੀਆਂ ਹਨ।"</string>
+    <string name="use_current_location_body_msg_kor">"ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਸਥਾਨ ਨੂੰ ਇਕੱਤਰ ਕੀਤਾ ਜਾਵੇਗਾ ਅਤੇ ਮੌਸਮ ਐਪ ਦੀਆਂ ਕੁਝ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਵੇਗਾ, ਜਿਵੇਂ ਕਿ ਤੁਹਾਡਾ ਸਥਾਨਕ ਮੌਸਮ ਪ੍ਰਾਪਤ ਕਰਨਾ।
+
+ਲਗਾਤਾਰ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ, ਇਹ ਐਪ ਨਿਯਮਿਤ ਰੂਪ ਤੋਂ ਤੁਹਾਡੇ ਸਥਾਨ 'ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰੇਗੀ, ਭਾਵੇਂ ਤੁਸੀਂ ਐਪ ਦੀ ਵਰਤੋਂ ਨਾ ਕਰ ਰਹੇ ਹੋਵੋ। ਜਾਰੀ ਰੱਖ ਕੇ, ਤੁਸੀਂ ਉਪਰੋਕਤ ਉਦੇਸ਼ਾਂ ਲਈ ਆਪਣੇ ਸਥਾਨ ਦੇ ਸੰਗ੍ਰਹਿ ਅਤੇ ਪ੍ਰਕਿਰਿਆ ਲਈ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ।
+
+ਤੁਸੀਂ ਮੌਸਮ ਐਪ ਸੈੱਟਿੰਗਾਂ ਵਿੱਚ ਇਸ ਸਥਾਨ ਸੰਗ੍ਰਹਿ ਅਤੇ ਵਰਤੋਂ ਨੂੰ ਰੋਕ ਸਕਦੇ ਹੋ।"</string>
     <string name="use_current_location_body_purpose">ਮੰਤਵ</string>
     <string name="use_current_location_body_purpose_content">ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਸਥਾਨ ਲਈ ਮੌਸਮ ਦੀ ਜਾਣਕਾਰੀ ਉਪਲਬਧ ਕਰਾਉਣ ਲਈ</string>
     <string name="use_current_location_body_search_provider">ਸੇਵਾ ਪ੍ਰਦਾਤਾ</string>
+    <string name="use_current_location_continue">ਜਾਰੀ ਰੱਖੋ</string>
+    <string name="use_current_location_not_now">ਹੁਣ ਨਹੀਂ</string>
     <string name="use_current_location_off_alert_popup">ਮੌਜੂਦਾ ਸਥਾਨ ਦੀ ਜਾਣਕਾਰੀ ਨੂੰ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।</string>
     <string name="useful_informations">ਜੀਵਨ ਸੰਬੰਧੀ ਯੁਕਤੀਆਂ ਅਤੇ ਹੋਰ ਰਿਪੋਰਟਸ</string>
     <string name="using_as">%s ਵਜੋਂ ਵਰਤੋਂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ</string>
     <string name="values_are_not_available_in_other_countries">%s ਮਾਨ ਹੋਰ ਦੇਸ਼ਾਂ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।</string>
     <string name="version_name">%s ਸੰਸਕਰਣ</string>
-    <string name="videos">ਵੀਡਿਓਜ਼</string>
+    <string name="videos">ਵੀਡੀਓਜ਼</string>
     <string name="wait_for_your_data_to_finish_being_restored_then_try_again">ਆਪਣਾ ਡੈਟਾ ਪੁਨਰ ਸਥਾਪਿਤ ਹੋਣ ਦੀ ਉਡੀਕ ਕਰੋ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="weather">ਮੌਸਮ</string>
     <string name="weather_add_current_location">ਮੌਸਮ ਦੀ ਜਾਂਚ ਕਰੋ</string>
@@ -771,9 +820,11 @@
     <string name="weather_tip">ਮੌਸਮ ਯੁਕਤੀਆਂ</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">ਬੁੱਧ</string>
     <string name="weekly_forecast">ਰੋਜ਼ਾਨਾ</string>
     <string name="widget_background">ਵਿੱਜੇਟ ਬੈਕਗ੍ਰਾਉਂਡ</string>
     <string name="widget_empty_text">ਮੌਸਮ ਜਾਣਕਾਰੀ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="widget_location">ਸ਼ਹਿਰ ਦਾ ਨਾਂ</string>
     <string name="widget_name_4x1">ਮੌਸਮ ਅਤੇ ਘੜੀ</string>
     <string name="widget_setting">ਸੈੱਟਿੰਗਸ</string>
     <string name="widget_setting_background_color">ਬੈਕਗ੍ਰਾਉਂਡ ਰੰਗ</string>

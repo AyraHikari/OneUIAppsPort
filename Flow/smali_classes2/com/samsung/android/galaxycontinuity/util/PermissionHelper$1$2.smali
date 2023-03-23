@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
     .line 470
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1$2;->this$1:Lcom/samsung/android/galaxycontinuity/util/PermissionHelper$1;
@@ -37,6 +45,18 @@
 # virtual methods
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     const/4 p1, 0x4
 

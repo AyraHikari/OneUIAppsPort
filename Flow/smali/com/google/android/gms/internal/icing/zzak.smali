@@ -1,121 +1,45 @@
-.class final synthetic Lcom/google/android/gms/internal/icing/zzak;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/gms/internal/icing/zzak;
+.super Lcom/google/android/gms/internal/icing/zzad;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
 
 
-# static fields
-.field static final synthetic zzaz:[I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/internal/icing/zzad<",
+        "Lcom/google/android/gms/common/api/Status;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder<",
+            "Lcom/google/android/gms/common/api/Status;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzby()[I
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/icing/zzad;-><init>(Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;)V
 
-    move-result-object v0
+    return-void
+.end method
 
-    array-length v0, v0
 
-    new-array v0, v0, [I
+# virtual methods
+.method public final zzb(Lcom/google/android/gms/common/api/Status;)V
+    .locals 1
 
-    sput-object v0, Lcom/google/android/gms/internal/icing/zzak;->zzaz:[I
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzak;->zza:Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;
 
-    const/4 v1, 0x1
+    .line 1
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/internal/BaseImplementation$ResultHolder;->setResult(Ljava/lang/Object;)V
 
-    :try_start_0
-    sget v2, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzkd:I
-
-    sub-int/2addr v2, v1
-
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzak;->zzaz:[I
-
-    sget v2, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzke:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v3, 0x2
-
-    aput v3, v0, v2
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzak;->zzaz:[I
-
-    sget v2, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzkc:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v3, 0x3
-
-    aput v3, v0, v2
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzak;->zzaz:[I
-
-    sget v2, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzkf:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v3, 0x4
-
-    aput v3, v0, v2
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzak;->zzaz:[I
-
-    sget v2, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzkg:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v3, 0x5
-
-    aput v3, v0, v2
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzak;->zzaz:[I
-
-    sget v2, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzka:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v3, 0x6
-
-    aput v3, v0, v2
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Lcom/google/android/gms/internal/icing/zzak;->zzaz:[I
-
-    sget v2, Lcom/google/android/gms/internal/icing/zzdo$zzc;->zzkb:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v1, 0x7
-
-    aput v1, v0, v2
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
     return-void
 .end method

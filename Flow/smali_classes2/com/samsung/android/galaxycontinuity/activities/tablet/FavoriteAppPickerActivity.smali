@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field mCircleProgress:Landroid/widget/ProgressBar;
+.field mCircleProgress:Landroidx/appcompat/widget/SeslProgressBar;
 
 .field mPlayer:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
@@ -35,7 +35,7 @@
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mUnSelectedFavoriteAdapter:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
 
     .line 29
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroidx/appcompat/widget/SeslProgressBar;
 
     return-void
 .end method
@@ -126,7 +126,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f0901c8
+    const v1, 0x7f0a02ad
 
     .line 61
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->findViewById(I)Landroid/view/View;
@@ -169,60 +169,57 @@
 
     invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
-    .line 69
-    invoke-virtual {v1, v2, v2}, Landroidx/recyclerview/widget/RecyclerView;->seslSetOutlineStrokeEnabled(ZZ)V
+    const v0, 0x7f0a0298
 
-    const v0, 0x7f0901a4
-
-    .line 71
+    .line 70
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f1000a1
+    const v1, 0x7f1100b5
 
-    .line 72
+    .line 71
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 73
+    .line 72
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$1;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$1;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090173
+    const v0, 0x7f0a0248
 
-    .line 88
+    .line 87
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f10009d
+    const v1, 0x7f1100b1
 
-    .line 89
+    .line 88
     invoke-virtual {p0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 90
+    .line 89
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$2;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$2;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 105
+    .line 104
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mUnSelectedFavoriteAdapter:Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;
 
     new-instance v1, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity$3;
@@ -231,18 +228,18 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter;->setOnItemClickListener(Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppAdapter$OnItemClickListener;)V
 
-    const v0, 0x7f09009c
+    const v0, 0x7f0a00d0
 
-    .line 114
+    .line 113
     invoke-virtual {p0, v0}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/ProgressBar;
+    check-cast v0, Landroidx/appcompat/widget/SeslProgressBar;
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroidx/appcompat/widget/SeslProgressBar;
 
-    .line 116
+    .line 115
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mPlayer:Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringPlay;->getIsFavoriteAppCreated()Z
@@ -251,20 +248,20 @@
 
     if-eqz v0, :cond_2
 
-    .line 117
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroid/widget/ProgressBar;
+    .line 116
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroidx/appcompat/widget/SeslProgressBar;
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/SeslProgressBar;->setVisibility(I)V
 
     goto :goto_1
 
-    .line 119
+    .line 118
     :cond_2
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->mCircleProgress:Landroidx/appcompat/widget/SeslProgressBar;
 
-    invoke-virtual {v0, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroidx/appcompat/widget/SeslProgressBar;->setVisibility(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -273,7 +270,7 @@
     :catch_0
     move-exception v0
 
-    .line 123
+    .line 122
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     :goto_1
@@ -282,11 +279,19 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 33
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0c0011
+    const p1, 0x7f0d000f
 
     .line 34
     invoke-virtual {p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/FavoriteAppPickerActivity;->setContentView(I)V
@@ -315,6 +320,14 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 42
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V

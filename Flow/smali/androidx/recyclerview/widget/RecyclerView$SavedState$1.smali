@@ -1,4 +1,4 @@
-.class final Landroidx/recyclerview/widget/RecyclerView$SavedState$1;
+.class Landroidx/recyclerview/widget/RecyclerView$SavedState$1;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 14270
+    .line 13999
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Landroidx/recyclerview/widget/RecyclerView$SavedState;
     .locals 2
 
-    .line 14278
+    .line 14007
     new-instance v0, Landroidx/recyclerview/widget/RecyclerView$SavedState;
 
     const/4 v1, 0x0
@@ -54,7 +54,7 @@
 .method public createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroidx/recyclerview/widget/RecyclerView$SavedState;
     .locals 1
 
-    .line 14273
+    .line 14002
     new-instance v0, Landroidx/recyclerview/widget/RecyclerView$SavedState;
 
     invoke-direct {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
@@ -65,7 +65,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 14270
+    .line 13999
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Landroidx/recyclerview/widget/RecyclerView$SavedState;
 
     move-result-object p1
@@ -76,7 +76,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 0
 
-    .line 14270
+    .line 13999
     invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$SavedState$1;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroidx/recyclerview/widget/RecyclerView$SavedState;
 
     move-result-object p1
@@ -87,7 +87,7 @@
 .method public newArray(I)[Landroidx/recyclerview/widget/RecyclerView$SavedState;
     .locals 0
 
-    .line 14283
+    .line 14012
     new-array p1, p1, [Landroidx/recyclerview/widget/RecyclerView$SavedState;
 
     return-object p1
@@ -96,7 +96,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 14270
+    .line 13999
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$SavedState$1;->newArray(I)[Landroidx/recyclerview/widget/RecyclerView$SavedState;
 
     move-result-object p1

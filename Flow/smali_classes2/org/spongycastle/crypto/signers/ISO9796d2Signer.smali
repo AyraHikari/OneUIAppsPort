@@ -111,13 +111,17 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p3
+
     invoke-interface {p2}, Lorg/spongycastle/crypto/Digest;->getAlgorithmName()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -703,13 +707,11 @@
     .line 277
     aput-byte p1, v1, v0
 
-    .line 280
     :cond_0
-    iget p1, p0, Lorg/spongycastle/crypto/signers/ISO9796d2Signer;->messageLength:I
+    add-int/lit8 v0, v0, 0x1
 
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Lorg/spongycastle/crypto/signers/ISO9796d2Signer;->messageLength:I
+    .line 280
+    iput v0, p0, Lorg/spongycastle/crypto/signers/ISO9796d2Signer;->messageLength:I
 
     return-void
 .end method
@@ -990,11 +992,15 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "signer initialised with wrong digest for trailer "
+    const-string/jumbo v2, "signer initialised with wrong digest for trailer "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1008,7 +1014,7 @@
     :cond_6
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unrecognised hash in signature"
+    const-string/jumbo v0, "unrecognised hash in signature"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1430,13 +1436,17 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "signer initialised with wrong digest for trailer "
+    const-string/jumbo v2, "signer initialised with wrong digest for trailer "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1448,7 +1458,7 @@
     :cond_11
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "unrecognised hash in signature"
+    const-string/jumbo v0, "unrecognised hash in signature"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1458,7 +1468,7 @@
     :cond_12
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    const-string v0, "updateWithRecoveredMessage called on different signature"
+    const-string/jumbo v0, "updateWithRecoveredMessage called on different signature"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

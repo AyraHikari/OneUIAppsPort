@@ -3,8 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/favorite_bar_bg_color" />
-            <corners android:radius="16.0dip" />
+            <solid android:color="@color/smart_view_menus_bg_color" />
+            <corners android:radius="26.0dip" />
         </shape>
     </item>
 </layer-list>

@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Samsung Flow-ত %d টালৈকে কম্পিউটাৰ বা টেবলেট পঞ্জীয়ন আৰু পৰিচালনা কৰক।
-
-এবাৰত আপোনাৰ ফোনত কেৱল এটা কম্পিউটাৰ বা টেবলেট সংযোগ কৰিব পাৰি। দুয়োটা পঞ্জীকৃত কম্পিউটাৰ বা টেবলেটে আপোনাৰ ফোনত সংযোগ কৰিবলৈ চেষ্টা কৰি থাকোতে আপুনি কেৱল এটা চয়ন কৰিব লাগিব।"</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Samsung Flow-ত %d টালৈকে কম্পিউটাৰ বা টেবলেট পঞ্জীয়ন আৰু পৰিচালনা কৰক।
-
-এবাৰত আপোনাৰ ফোনত কেৱল এটা কম্পিউটাৰ বা টেবলেট সংযোগ কৰিব পাৰি। দুয়োটা পঞ্জীকৃত কম্পিউটাৰ বা টেবলেটে আপোনাৰ ফোনত সংযোগ কৰিবলৈ চেষ্টা কৰি থাকোতে আপুনি কেৱল এটা চয়ন কৰিব লাগিব।"</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
     </plurals>
 </resources>

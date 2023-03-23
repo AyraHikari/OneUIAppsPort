@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 551
+    .line 557
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -34,15 +42,25 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
-    .line 554
+    .line 560
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
-    .line 556
+    .line 562
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
@@ -55,7 +73,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 557
+    .line 563
     new-instance p1, Landroid/content/Intent;
 
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
@@ -66,22 +84,22 @@
 
     const p2, 0x10008000
 
-    .line 558
+    .line 564
     invoke-virtual {p1, p2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 559
+    .line 565
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-virtual {p2, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 560
+    .line 566
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->finish()V
 
     goto :goto_0
 
-    .line 561
+    .line 567
     :cond_0
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -95,14 +113,14 @@
 
     if-eqz p1, :cond_1
 
-    .line 562
+    .line 568
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     const/4 p2, 0x1
 
-    invoke-static {p1, p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->access$102(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;Z)Z
+    invoke-static {p1, p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;->access$202(Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;Z)Z
 
-    .line 564
+    .line 570
     new-instance p1, Landroid/content/Intent;
 
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
@@ -111,7 +129,7 @@
 
     invoke-direct {p1, p2, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 565
+    .line 571
     iget-object p2, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
     const/16 v0, 0x12d
@@ -120,7 +138,7 @@
 
     goto :goto_0
 
-    .line 566
+    .line 572
     :cond_1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -134,7 +152,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 567
+    .line 573
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/FlowServiceManager;
 
     move-result-object p1
@@ -145,12 +163,12 @@
 
     move-result-object p1
 
-    .line 569
+    .line 575
     instance-of p2, p1, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
     if-eqz p2, :cond_2
 
-    .line 570
+    .line 576
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/session/TabAuthSessionRepository;->getInstance()Lcom/samsung/android/galaxycontinuity/session/TabAuthSessionRepository;
 
     move-result-object p2
@@ -159,15 +177,12 @@
 
     invoke-virtual {p2, v0}, Lcom/samsung/android/galaxycontinuity/session/TabAuthSessionRepository;->setAuthSessionAlive(Z)V
 
-    .line 571
+    .line 578
     check-cast p1, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;
 
-    invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->stopGearAuth()V
-
-    .line 572
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/services/SamsungFlowTabletService;->stopPhoneAuth()V
 
-    .line 574
+    .line 580
     :cond_2
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity$8;->this$0:Lcom/samsung/android/galaxycontinuity/activities/tablet/AuthActivity;
 
@@ -175,7 +190,7 @@
 
     goto :goto_0
 
-    .line 575
+    .line 581
     :cond_3
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -193,7 +208,7 @@
 
     const-string v0, "android.bluetooth.adapter.extra.STATE"
 
-    .line 576
+    .line 582
     invoke-virtual {p2, v0, p1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p1
@@ -207,7 +222,7 @@
     :cond_4
     const-string p1, "Bluetooth is turned on"
 
-    .line 579
+    .line 585
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :cond_5

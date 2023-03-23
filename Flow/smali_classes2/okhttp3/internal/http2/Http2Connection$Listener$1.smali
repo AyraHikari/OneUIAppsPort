@@ -1,4 +1,4 @@
-.class final Lokhttp3/internal/http2/Http2Connection$Listener$1;
+.class Lokhttp3/internal/http2/Http2Connection$Listener$1;
 .super Lokhttp3/internal/http2/Http2Connection$Listener;
 .source "Http2Connection.java"
 
@@ -27,7 +27,7 @@
 
 # virtual methods
 .method public onStream(Lokhttp3/internal/http2/Http2Stream;)V
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -37,7 +37,9 @@
     .line 921
     sget-object v0, Lokhttp3/internal/http2/ErrorCode;->REFUSED_STREAM:Lokhttp3/internal/http2/ErrorCode;
 
-    invoke-virtual {p1, v0}, Lokhttp3/internal/http2/Http2Stream;->close(Lokhttp3/internal/http2/ErrorCode;)V
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Lokhttp3/internal/http2/Http2Stream;->close(Lokhttp3/internal/http2/ErrorCode;Ljava/io/IOException;)V
 
     return-void
 .end method

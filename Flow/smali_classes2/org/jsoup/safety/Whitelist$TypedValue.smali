@@ -22,13 +22,13 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 604
+    .line 613
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 605
+    .line 614
     invoke-static {p1}, Lorg/jsoup/helper/Validate;->notNull(Ljava/lang/Object;)V
 
-    .line 606
+    .line 615
     iput-object p1, p0, Lorg/jsoup/safety/Whitelist$TypedValue;->value:Ljava/lang/String;
 
     return-void
@@ -52,7 +52,7 @@
 
     return v1
 
-    .line 621
+    .line 630
     :cond_1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -66,42 +66,43 @@
 
     return v1
 
-    .line 622
+    .line 631
     :cond_2
     check-cast p1, Lorg/jsoup/safety/Whitelist$TypedValue;
 
-    .line 623
+    .line 632
     iget-object v2, p0, Lorg/jsoup/safety/Whitelist$TypedValue;->value:Ljava/lang/String;
 
-    if-nez v2, :cond_3
+    if-nez v2, :cond_4
 
-    .line 624
+    .line 633
     iget-object p1, p1, Lorg/jsoup/safety/Whitelist$TypedValue;->value:Ljava/lang/String;
 
-    if-eqz p1, :cond_4
+    if-nez p1, :cond_3
 
-    return v1
+    goto :goto_0
 
-    .line 625
     :cond_3
+    move v0, v1
+
+    :goto_0
+    return v0
+
+    .line 634
+    :cond_4
     iget-object p1, p1, Lorg/jsoup/safety/Whitelist$TypedValue;->value:Ljava/lang/String;
 
     invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-nez p1, :cond_4
-
-    return v1
-
-    :cond_4
-    return v0
+    return p1
 .end method
 
 .method public hashCode()I
     .locals 2
 
-    .line 613
+    .line 622
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist$TypedValue;->value:Ljava/lang/String;
 
     if-nez v0, :cond_0
@@ -126,7 +127,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 631
+    .line 639
     iget-object v0, p0, Lorg/jsoup/safety/Whitelist$TypedValue;->value:Ljava/lang/String;
 
     return-object v0

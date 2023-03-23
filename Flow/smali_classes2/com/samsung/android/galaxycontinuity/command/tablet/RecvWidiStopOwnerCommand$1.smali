@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/command/tablet/RecvWidiStopOwnerCommand;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 29
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/command/tablet/RecvWidiStopOwnerCommand$1;->this$0:Lcom/samsung/android/galaxycontinuity/command/tablet/RecvWidiStopOwnerCommand;

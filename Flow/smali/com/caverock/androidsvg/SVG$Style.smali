@@ -359,8 +359,6 @@
     if-eqz v1, :cond_0
 
     .line 1142
-    iget-object v1, p0, Lcom/caverock/androidsvg/SVG$Style;->strokeDashArray:[Lcom/caverock/androidsvg/SVG$Length;
-
     invoke-virtual {v1}, [Lcom/caverock/androidsvg/SVG$Length;->clone()Ljava/lang/Object;
 
     move-result-object v1

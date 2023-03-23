@@ -34,7 +34,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 327
+    .line 331
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,19 +43,19 @@
 .method public static getInstance()Landroidx/preference/ListPreference$SimpleSummaryProvider;
     .locals 1
 
-    .line 337
+    .line 342
     sget-object v0, Landroidx/preference/ListPreference$SimpleSummaryProvider;->sSimpleSummaryProvider:Landroidx/preference/ListPreference$SimpleSummaryProvider;
 
     if-nez v0, :cond_0
 
-    .line 338
+    .line 343
     new-instance v0, Landroidx/preference/ListPreference$SimpleSummaryProvider;
 
     invoke-direct {v0}, Landroidx/preference/ListPreference$SimpleSummaryProvider;-><init>()V
 
     sput-object v0, Landroidx/preference/ListPreference$SimpleSummaryProvider;->sSimpleSummaryProvider:Landroidx/preference/ListPreference$SimpleSummaryProvider;
 
-    .line 340
+    .line 345
     :cond_0
     sget-object v0, Landroidx/preference/ListPreference$SimpleSummaryProvider;->sSimpleSummaryProvider:Landroidx/preference/ListPreference$SimpleSummaryProvider;
 
@@ -67,7 +67,7 @@
 .method public provideSummary(Landroidx/preference/ListPreference;)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 345
+    .line 351
     invoke-virtual {p1}, Landroidx/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -78,7 +78,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 346
+    .line 352
     invoke-virtual {p1}, Landroidx/preference/ListPreference;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -91,7 +91,7 @@
 
     return-object p1
 
-    .line 348
+    .line 354
     :cond_0
     invoke-virtual {p1}, Landroidx/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -103,7 +103,7 @@
 .method public bridge synthetic provideSummary(Landroidx/preference/Preference;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 323
+    .line 327
     check-cast p1, Landroidx/preference/ListPreference;
 
     invoke-virtual {p0, p1}, Landroidx/preference/ListPreference$SimpleSummaryProvider;->provideSummary(Landroidx/preference/ListPreference;)Ljava/lang/CharSequence;

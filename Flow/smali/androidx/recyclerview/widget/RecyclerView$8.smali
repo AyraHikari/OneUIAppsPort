@@ -3,12 +3,12 @@
 .source "RecyclerView.java"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Landroid/view/animation/Interpolator;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/recyclerview/widget/RecyclerView;->seslSetGoToTopEnabled(ZZ)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/recyclerview/widget/RecyclerView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,17 +17,11 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Landroidx/recyclerview/widget/RecyclerView;
-
-
 # direct methods
-.method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
+.method constructor <init>()V
     .locals 0
 
-    .line 3621
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$8;->this$0:Landroidx/recyclerview/widget/RecyclerView;
-
+    .line 1109
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,32 +29,22 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 1
+.method public getInterpolation(F)F
+    .locals 2
 
-    .line 3625
-    :try_start_0
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    const/high16 v0, 0x3f800000    # 1.0f
 
-    move-result-object p1
+    sub-float/2addr p1, v0
 
-    check-cast p1, Ljava/lang/Integer;
+    mul-float v1, p1, p1
 
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    mul-float/2addr v1, p1
 
-    move-result p1
+    mul-float/2addr v1, p1
 
-    .line 3626
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$8;->this$0:Landroidx/recyclerview/widget/RecyclerView;
+    mul-float/2addr v1, p1
 
-    invoke-static {v0}, Landroidx/recyclerview/widget/RecyclerView;->access$4500(Landroidx/recyclerview/widget/RecyclerView;)Landroid/graphics/drawable/Drawable;
+    add-float/2addr v1, v0
 
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
+    return v1
 .end method

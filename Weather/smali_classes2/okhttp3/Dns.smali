@@ -46,7 +46,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lokhttp3/Dns$Companion;
@@ -57,12 +57,9 @@
 
     sput-object v0, Lokhttp3/Dns;->Companion:Lokhttp3/Dns$Companion;
 
-    .line 45
     new-instance v0, Lokhttp3/Dns$Companion$DnsSystem;
 
     invoke-direct {v0}, Lokhttp3/Dns$Companion$DnsSystem;-><init>()V
-
-    check-cast v0, Lokhttp3/Dns;
 
     sput-object v0, Lokhttp3/Dns;->SYSTEM:Lokhttp3/Dns;
 
@@ -80,12 +77,6 @@
             "Ljava/util/List<",
             "Ljava/net/InetAddress;",
             ">;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/net/UnknownHostException;
         }
     .end annotation
 .end method

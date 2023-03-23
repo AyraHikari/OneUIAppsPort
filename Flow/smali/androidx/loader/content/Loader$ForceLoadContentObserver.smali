@@ -22,10 +22,10 @@
 .method public constructor <init>(Landroidx/loader/content/Loader;)V
     .locals 0
 
-    .line 58
+    .line 57
     iput-object p1, p0, Landroidx/loader/content/Loader$ForceLoadContentObserver;->this$0:Landroidx/loader/content/Loader;
 
-    .line 59
+    .line 58
     new-instance p1, Landroid/os/Handler;
 
     invoke-direct {p1}, Landroid/os/Handler;-><init>()V
@@ -48,7 +48,7 @@
 .method public onChange(Z)V
     .locals 0
 
-    .line 69
+    .line 68
     iget-object p1, p0, Landroidx/loader/content/Loader$ForceLoadContentObserver;->this$0:Landroidx/loader/content/Loader;
 
     invoke-virtual {p1}, Landroidx/loader/content/Loader;->onContentChanged()V

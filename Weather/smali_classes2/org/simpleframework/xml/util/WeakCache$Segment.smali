@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x1
     name = "Segment"
 .end annotation
 
@@ -23,14 +23,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lorg/simpleframework/xml/util/WeakCache;
+.field public final synthetic this$0:Lorg/simpleframework/xml/util/WeakCache;
 
 
 # direct methods
 .method private constructor <init>(Lorg/simpleframework/xml/util/WeakCache;)V
     .locals 0
 
-    .line 233
+    .line 1
     iput-object p1, p0, Lorg/simpleframework/xml/util/WeakCache$Segment;->this$0:Lorg/simpleframework/xml/util/WeakCache;
 
     invoke-direct {p0}, Ljava/util/WeakHashMap;-><init>()V
@@ -38,10 +38,10 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lorg/simpleframework/xml/util/WeakCache;Lorg/simpleframework/xml/util/WeakCache$1;)V
+.method public synthetic constructor <init>(Lorg/simpleframework/xml/util/WeakCache;Lorg/simpleframework/xml/util/WeakCache$1;)V
     .locals 0
 
-    .line 233
+    .line 2
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/util/WeakCache$Segment;-><init>(Lorg/simpleframework/xml/util/WeakCache;)V
 
     return-void
@@ -61,13 +61,13 @@
 
     monitor-enter p0
 
-    .line 245
+    .line 1
     :try_start_0
-    invoke-virtual {p0, p1, p2}, Lorg/simpleframework/xml/util/WeakCache$Segment;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 246
+    .line 2
     monitor-exit p0
 
     return-void
@@ -85,9 +85,8 @@
 
     monitor-enter p0
 
-    .line 284
     :try_start_0
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/WeakCache$Segment;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/util/WeakHashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result p1
     :try_end_0
@@ -117,9 +116,8 @@
 
     monitor-enter p0
 
-    .line 258
     :try_start_0
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/WeakCache$Segment;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
     :try_end_0
@@ -149,9 +147,8 @@
 
     monitor-enter p0
 
-    .line 271
     :try_start_0
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/WeakCache$Segment;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/WeakHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
     :try_end_0

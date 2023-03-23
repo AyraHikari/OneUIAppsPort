@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$dropFileList"
+        }
+    .end annotation
 
-    .line 796
+    .line 824
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->this$1:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
 
     iput-object p2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->val$dropFileList:Ljava/util/ArrayList;
@@ -42,12 +52,44 @@
 .method public run()V
     .locals 5
 
+    .line 827
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->this$1:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
+
+    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$1500(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)I
+
+    move-result v0
+
+    if-gtz v0, :cond_3
+
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->this$1:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
+
+    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$1600(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)I
+
+    move-result v0
+
+    if-gtz v0, :cond_3
+
     const-string v0, "finish sharing"
 
-    .line 799
+    .line 828
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
-    .line 801
+    .line 829
+    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->this$1:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
+
+    iget-object v0, v0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
+
+    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->this$1:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
+
+    iget-object v1, v1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;->mRequestContext:Landroid/content/Context;
+
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$1700(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Landroid/content/Context;)V
+
+    .line 832
     :try_start_0
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/util/FeatureUtil;->isClient()Z
 
@@ -57,7 +99,7 @@
 
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->val$dropFileList:Ljava/util/ArrayList;
 
-    .line 802
+    .line 833
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -88,17 +130,17 @@
 
     if-nez v0, :cond_1
 
-    .line 803
+    .line 834
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 804
+    .line 835
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 806
+    .line 837
     iget-object v2, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->val$dropFileList:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -120,7 +162,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 808
+    .line 839
     :try_start_1
     invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getUriPath()Ljava/lang/String;
 
@@ -134,7 +176,7 @@
 
     move-result-object v4
 
-    .line 810
+    .line 841
     invoke-virtual {v4}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v4
@@ -149,7 +191,7 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 811
+    .line 842
     invoke-virtual {v3}, Lcom/samsung/android/galaxycontinuity/data/SharedContentsItem;->getTitle()Ljava/lang/String;
 
     move-result-object v3
@@ -167,13 +209,13 @@
     :catch_0
     move-exception v3
 
-    .line 813
+    .line 844
     :try_start_2
     invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 816
+    .line 847
     :cond_0
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -181,7 +223,7 @@
 
     if-lez v2, :cond_1
 
-    .line 817
+    .line 848
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->getInstance()Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;
 
     move-result-object v2
@@ -190,13 +232,13 @@
 
     iget-object v3, v3, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;->this$0:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;
 
-    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$1600(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)Lcom/samsung/android/galaxycontinuity/data/MousePoint;
+    invoke-static {v3}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$1800(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;)Lcom/samsung/android/galaxycontinuity/data/MousePoint;
 
     move-result-object v3
 
     invoke-virtual {v2, v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/MirroringSource;->handleDragFile(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/samsung/android/galaxycontinuity/data/MousePoint;)V
 
-    .line 819
+    .line 850
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->val$dropFileList:Ljava/util/ArrayList;
 
@@ -209,10 +251,10 @@
     :catch_1
     move-exception v0
 
-    .line 821
+    .line 852
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->e(Ljava/lang/Throwable;)V
 
-    .line 824
+    .line 855
     :goto_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->this$1:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
 
@@ -220,7 +262,7 @@
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;->SHARE_NONE:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$SHARE_STATE;
 
-    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$600(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->access$800(Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -240,7 +282,7 @@
 
     if-lez v0, :cond_3
 
-    .line 825
+    .line 856
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable$1;->this$1:Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3$TransferRunnable;
 
@@ -249,5 +291,10 @@
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/share/ShareManagerV3;->closeShare()V
 
     :cond_3
+    const-string v0, "TransferRunnable out"
+
+    .line 859
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
     return-void
 .end method

@@ -3,11 +3,11 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
     <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/widget_empty_margin_horizontal_ntt">
             <ImageView android:layout_gravity="center" android:id="@id/widget_empty_icon" android:layout_width="@dimen/widget_empty_icon_size_ntt" android:layout_height="@dimen/widget_empty_icon_size_ntt" android:scaleType="fitCenter" />
-            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
-                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error.BlackShadow" android:textSize="@dimen/widget_empty_text_size_ntt" android:ellipsize="end" android:gravity="center" android:id="@id/widget_empty_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_empty_text" android:maxLines="3" />
-                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error" android:textSize="@dimen/widget_empty_text_size_ntt" android:ellipsize="end" android:gravity="center" android:id="@id/widget_empty_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_empty_text" android:maxLines="3" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_empty_text_marginTop_ntt">
+                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error.BlackShadow" android:textSize="@dimen/widget_empty_text_size_ntt" android:ellipsize="end" android:gravity="center" android:id="@id/widget_empty_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_empty_text" android:maxLines="5" />
+                <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error" android:textSize="@dimen/widget_empty_text_size_ntt" android:ellipsize="end" android:gravity="center" android:id="@id/widget_empty_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_empty_text" android:maxLines="5" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>

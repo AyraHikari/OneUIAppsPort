@@ -3,7 +3,7 @@
 .source "MirroringUserConsentActivity.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 58
+    .line 76
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,33 +43,48 @@
 
 
 # virtual methods
-.method public onCancel(Landroid/content/DialogInterface;)V
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialogInterface",
+            "i"
+        }
+    .end annotation
 
-    .line 61
+    .line 79
     new-instance p1, Landroid/content/Intent;
 
-    const-string v0, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_MIRRORING_USERCONSENT_FINISHED"
+    const-string p2, "com.samsung.android.galaxycontinuity.common.ACTION_FLOW_MIRRORING_USERCONSENT_FINISHED"
 
-    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const-string v0, "result"
+    const-string/jumbo p2, "result"
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    .line 62
-    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    .line 80
+    invoke-virtual {p1, p2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 63
+    .line 81
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
-    move-result-object v0
+    move-result-object p2
 
     const-string v1, "com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"
 
-    invoke-virtual {v0, p1, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-virtual {p2, p1, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 65
+    .line 83
+    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;->setResult(I)V
+
+    .line 85
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;
 
     invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;->access$000(Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;)Lcom/samsung/android/galaxycontinuity/mirroring/utils/UserConsentDialogHelper;
@@ -70,7 +93,7 @@
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/UserConsentDialogHelper;->hideDialog()V
 
-    .line 67
+    .line 87
     iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity$3;->this$0:Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;
 
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/activities/phone/MirroringUserConsentActivity;->finish()V

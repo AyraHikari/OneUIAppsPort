@@ -15,6 +15,14 @@
 
 .method public static getCurrentUserName(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, ""
 
@@ -124,8 +132,16 @@
 
 .method public static getCurrentUserSerialNumber(Landroid/content/Context;)J
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    const-string v0, "user"
+    const-string/jumbo v0, "user"
 
     .line 42
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;

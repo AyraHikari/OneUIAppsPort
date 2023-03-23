@@ -18,5 +18,5 @@
 
 
 # virtual methods
-.method public abstract isValid(J)Z
+.method public abstract s(J)Z
 .end method

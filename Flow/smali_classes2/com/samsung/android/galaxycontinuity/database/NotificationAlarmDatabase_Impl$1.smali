@@ -21,6 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase_Impl;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "version"
+        }
+    .end annotation
 
     .line 32
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase_Impl$1;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase_Impl;
@@ -34,6 +44,14 @@
 # virtual methods
 .method public createAllTables(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_db"
+        }
+    .end annotation
 
     const-string v0, "CREATE TABLE IF NOT EXISTS `NotificationAlarmContent` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `_flow_key` TEXT, `_package_name` TEXT)"
 
@@ -55,6 +73,14 @@
 
 .method public dropAllTables(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_db"
+        }
+    .end annotation
 
     const-string v0, "DROP TABLE IF EXISTS `NotificationAlarmContent`"
 
@@ -111,6 +137,14 @@
 
 .method protected onCreate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_db"
+        }
+    .end annotation
 
     .line 52
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase_Impl$1;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase_Impl;
@@ -162,6 +196,14 @@
 
 .method public onOpen(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_db"
+        }
+    .end annotation
 
     .line 61
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase_Impl$1;->this$0:Lcom/samsung/android/galaxycontinuity/database/NotificationAlarmDatabase_Impl;
@@ -223,12 +265,28 @@
 
 .method public onPostMigrate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_db"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onPreMigrate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_db"
+        }
+    .end annotation
 
     .line 72
     invoke-static {p1}, Landroidx/room/util/DBUtil;->dropFtsSyncTriggers(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
@@ -238,6 +296,14 @@
 
 .method protected onValidateSchema(Landroidx/sqlite/db/SupportSQLiteDatabase;)Landroidx/room/RoomOpenHelper$ValidationResult;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "_db"
+        }
+    .end annotation
 
     .line 81
     new-instance v0, Ljava/util/HashMap;
@@ -249,7 +315,7 @@
     .line 82
     new-instance v1, Landroidx/room/util/TableInfo$Column;
 
-    const-string v3, "uid"
+    const-string/jumbo v3, "uid"
 
     const-string v4, "INTEGER"
 
@@ -265,7 +331,7 @@
 
     invoke-direct/range {v2 .. v8}, Landroidx/room/util/TableInfo$Column;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v2, "uid"
+    const-string/jumbo v2, "uid"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -349,15 +415,23 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v3, "\n Found:\n"
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 

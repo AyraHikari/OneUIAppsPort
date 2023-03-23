@@ -25,6 +25,19 @@
 # direct methods
 .method public constructor <init>(Ljava/util/ArrayList;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "width",
+            "height"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

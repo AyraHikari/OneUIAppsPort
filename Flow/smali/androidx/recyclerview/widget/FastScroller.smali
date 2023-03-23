@@ -218,46 +218,46 @@
     .line 146
     invoke-virtual {p2}, Landroid/graphics/drawable/StateListDrawable;->getIntrinsicWidth()I
 
-    move-result p2
+    move-result v0
 
-    invoke-static {p6, p2}, Ljava/lang/Math;->max(II)I
+    invoke-static {p6, v0}, Ljava/lang/Math;->max(II)I
 
-    move-result p2
+    move-result v0
 
-    iput p2, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbWidth:I
+    iput v0, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbWidth:I
 
     .line 147
     invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    move-result p2
+    move-result v0
 
-    invoke-static {p6, p2}, Ljava/lang/Math;->max(II)I
+    invoke-static {p6, v0}, Ljava/lang/Math;->max(II)I
 
-    move-result p2
+    move-result v0
 
-    iput p2, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalTrackWidth:I
+    iput v0, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalTrackWidth:I
 
     .line 149
     invoke-virtual {p4}, Landroid/graphics/drawable/StateListDrawable;->getIntrinsicWidth()I
 
-    move-result p2
+    move-result p4
 
-    invoke-static {p6, p2}, Ljava/lang/Math;->max(II)I
+    invoke-static {p6, p4}, Ljava/lang/Math;->max(II)I
 
-    move-result p2
+    move-result p4
 
-    iput p2, p0, Landroidx/recyclerview/widget/FastScroller;->mHorizontalThumbHeight:I
+    iput p4, p0, Landroidx/recyclerview/widget/FastScroller;->mHorizontalThumbHeight:I
 
     .line 151
     invoke-virtual {p5}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    move-result p2
+    move-result p4
 
-    invoke-static {p6, p2}, Ljava/lang/Math;->max(II)I
+    invoke-static {p6, p4}, Ljava/lang/Math;->max(II)I
 
-    move-result p2
+    move-result p4
 
-    iput p2, p0, Landroidx/recyclerview/widget/FastScroller;->mHorizontalTrackHeight:I
+    iput p4, p0, Landroidx/recyclerview/widget/FastScroller;->mHorizontalTrackHeight:I
 
     .line 152
     iput p7, p0, Landroidx/recyclerview/widget/FastScroller;->mScrollbarMinimumRange:I
@@ -265,35 +265,27 @@
     .line 153
     iput p8, p0, Landroidx/recyclerview/widget/FastScroller;->mMargin:I
 
+    const/16 p4, 0xff
+
     .line 154
-    iget-object p2, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbDrawable:Landroid/graphics/drawable/StateListDrawable;
-
-    const/16 p3, 0xff
-
-    invoke-virtual {p2, p3}, Landroid/graphics/drawable/StateListDrawable;->setAlpha(I)V
+    invoke-virtual {p2, p4}, Landroid/graphics/drawable/StateListDrawable;->setAlpha(I)V
 
     .line 155
-    iget-object p2, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalTrackDrawable:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p2, p3}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+    invoke-virtual {p3, p4}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
     .line 157
-    iget-object p2, p0, Landroidx/recyclerview/widget/FastScroller;->mShowHideAnimator:Landroid/animation/ValueAnimator;
+    new-instance p2, Landroidx/recyclerview/widget/FastScroller$AnimatorListener;
 
-    new-instance p3, Landroidx/recyclerview/widget/FastScroller$AnimatorListener;
+    invoke-direct {p2, p0}, Landroidx/recyclerview/widget/FastScroller$AnimatorListener;-><init>(Landroidx/recyclerview/widget/FastScroller;)V
 
-    invoke-direct {p3, p0}, Landroidx/recyclerview/widget/FastScroller$AnimatorListener;-><init>(Landroidx/recyclerview/widget/FastScroller;)V
-
-    invoke-virtual {p2, p3}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v1, p2}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 158
-    iget-object p2, p0, Landroidx/recyclerview/widget/FastScroller;->mShowHideAnimator:Landroid/animation/ValueAnimator;
+    new-instance p2, Landroidx/recyclerview/widget/FastScroller$AnimatorUpdater;
 
-    new-instance p3, Landroidx/recyclerview/widget/FastScroller$AnimatorUpdater;
+    invoke-direct {p2, p0}, Landroidx/recyclerview/widget/FastScroller$AnimatorUpdater;-><init>(Landroidx/recyclerview/widget/FastScroller;)V
 
-    invoke-direct {p3, p0}, Landroidx/recyclerview/widget/FastScroller$AnimatorUpdater;-><init>(Landroidx/recyclerview/widget/FastScroller;)V
-
-    invoke-virtual {p2, p3}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+    invoke-virtual {v1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 160
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/FastScroller;->attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
@@ -485,12 +477,12 @@
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->scale(FF)V
 
     .line 303
-    iget-object v0, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbDrawable:Landroid/graphics/drawable/StateListDrawable;
+    iget-object v3, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbDrawable:Landroid/graphics/drawable/StateListDrawable;
 
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/StateListDrawable;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v3, p1}, Landroid/graphics/drawable/StateListDrawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 304
-    invoke-virtual {p1, v1, v1}, Landroid/graphics/Canvas;->scale(FF)V
+    invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->scale(FF)V
 
     .line 305
     iget v0, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbWidth:I
@@ -1103,8 +1095,6 @@
     if-eqz v0, :cond_0
 
     iget v0, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbWidth:I
-
-    div-int/lit8 v0, v0, 0x2
 
     int-to-float v0, v0
 
@@ -1787,29 +1777,26 @@
     :cond_2
     return-void
 
-    .line 356
     :cond_3
-    iget-boolean v3, p0, Landroidx/recyclerview/widget/FastScroller;->mNeedVerticalScrollbar:Z
+    const/high16 v3, 0x40000000    # 2.0f
 
-    const/high16 v6, 0x40000000    # 2.0f
-
-    if-eqz v3, :cond_4
+    if-eqz v7, :cond_4
 
     int-to-float p2, p2
 
-    int-to-float v3, v1
+    int-to-float v6, v1
 
-    div-float v7, v3, v6
+    div-float v7, v6, v3
 
     add-float/2addr p2, v7
 
-    mul-float/2addr v3, p2
+    mul-float/2addr v6, p2
 
     int-to-float p2, v0
 
-    div-float/2addr v3, p2
+    div-float/2addr v6, p2
 
-    float-to-int p2, v3
+    float-to-int p2, v6
 
     .line 358
     iput p2, p0, Landroidx/recyclerview/widget/FastScroller;->mVerticalThumbCenterY:I
@@ -1835,7 +1822,7 @@
 
     int-to-float p2, v5
 
-    div-float v0, p2, v6
+    div-float v0, p2, v3
 
     add-float/2addr p1, v0
 

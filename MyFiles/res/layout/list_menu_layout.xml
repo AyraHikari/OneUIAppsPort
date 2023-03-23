@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.myfiles.external.ui.widget.SortByListItemView android:gravity="end|center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/sort_by_item" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/essentials_padding_start" android:paddingEnd="@dimen/sort_by_list_sort_order_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include layout="@layout/essentials_layout" />
+        <ViewStub android:layout_gravity="center" android:id="@id/n_badge_stub" android:layout="@layout/n_badge_stub" android:layout_width="@dimen/n_badge_size" android:layout_height="@dimen/n_badge_size" android:layout_marginStart="@dimen/essentials_new_badge_margin_start" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sort_by" android:background="@drawable/sort_by_icon_background" android:paddingTop="@dimen/sort_by_list_sort_padding" android:paddingBottom="@dimen/sort_by_list_sort_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/sort_by_list_shape_padding" android:paddingEnd="@dimen/sort_by_list_shape_padding">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sort_by" android:tint="@color/sort_by_text_color" android:layout_marginEnd="@dimen/sort_by_list_sort_image_margin_end" />
+        <TextView android:textSize="@dimen/sort_by_list_sort_text_size" android:textColor="@color/sort_by_text_color" android:id="@id/sort_by_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/basic_divider_line_color" android:layout_width="@dimen/sort_by_list_sort_divider_width" android:layout_height="@dimen/sort_by_list_sort_divider_height" android:layout_marginStart="@dimen/sort_by_list_sort_divider_margin_start" android:layout_marginEnd="@dimen/sort_by_list_sort_divider_margin_end" />
+    <ImageView android:id="@id/sort_by_order" android:background="@drawable/sort_by_icon_background" android:paddingTop="@dimen/sort_by_list_sort_padding" android:paddingBottom="@dimen/sort_by_list_sort_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/sort_by_text_color" android:paddingStart="@dimen/sort_by_list_icon_padding" android:paddingEnd="@dimen/sort_by_list_icon_padding" />
+</com.sec.android.app.myfiles.external.ui.widget.SortByListItemView>

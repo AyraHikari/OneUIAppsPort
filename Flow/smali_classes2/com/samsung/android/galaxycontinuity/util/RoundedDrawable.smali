@@ -54,6 +54,14 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bitmap"
+        }
+    .end annotation
 
     .line 73
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
@@ -80,76 +88,76 @@
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapRect:Landroid/graphics/RectF;
 
     .line 55
-    new-instance v0, Landroid/graphics/RectF;
+    new-instance v1, Landroid/graphics/RectF;
 
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
+    invoke-direct {v1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderRect:Landroid/graphics/RectF;
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderRect:Landroid/graphics/RectF;
 
     .line 57
-    new-instance v0, Landroid/graphics/Matrix;
+    new-instance v1, Landroid/graphics/Matrix;
 
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+    invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mShaderMatrix:Landroid/graphics/Matrix;
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mShaderMatrix:Landroid/graphics/Matrix;
 
     .line 58
-    new-instance v0, Landroid/graphics/RectF;
+    new-instance v1, Landroid/graphics/RectF;
 
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
+    invoke-direct {v1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mSquareCornersRect:Landroid/graphics/RectF;
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mSquareCornersRect:Landroid/graphics/RectF;
 
     .line 60
-    sget-object v0, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+    sget-object v1, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mTileModeX:Landroid/graphics/Shader$TileMode;
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mTileModeX:Landroid/graphics/Shader$TileMode;
 
     .line 61
-    sget-object v0, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+    sget-object v1, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
-    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mTileModeY:Landroid/graphics/Shader$TileMode;
+    iput-object v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mTileModeY:Landroid/graphics/Shader$TileMode;
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     .line 62
-    iput-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mRebuildShader:Z
-
-    const/4 v1, 0x0
-
-    .line 64
-    iput v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornerRadius:F
-
-    const/4 v2, 0x4
-
-    new-array v2, v2, [Z
-
-    .line 66
-    fill-array-data v2, :array_0
-
-    iput-object v2, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
+    iput-boolean v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mRebuildShader:Z
 
     const/4 v2, 0x0
 
+    .line 64
+    iput v2, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornerRadius:F
+
+    const/4 v3, 0x4
+
+    new-array v3, v3, [Z
+
+    .line 66
+    fill-array-data v3, :array_0
+
+    iput-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
+
+    const/4 v3, 0x0
+
     .line 68
-    iput-boolean v2, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mOval:Z
+    iput-boolean v3, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mOval:Z
 
     .line 69
-    iput v1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderWidth:F
+    iput v2, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderWidth:F
 
-    const/high16 v2, -0x1000000
+    const/high16 v3, -0x1000000
 
     .line 70
-    invoke-static {v2}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+    invoke-static {v3}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
+    iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
 
     .line 71
-    sget-object v3, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
+    sget-object v4, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
-    iput-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mScaleType:Landroid/widget/ImageView$ScaleType;
+    iput-object v4, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mScaleType:Landroid/widget/ImageView$ScaleType;
 
     .line 74
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmap:Landroid/graphics/Bitmap;
@@ -157,9 +165,9 @@
     .line 76
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
-    move-result v3
+    move-result v4
 
-    iput v3, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapWidth:I
+    iput v4, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapWidth:I
 
     .line 77
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
@@ -168,16 +176,12 @@
 
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapHeight:I
 
-    .line 78
-    iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapRect:Landroid/graphics/RectF;
-
-    iget v4, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapWidth:I
-
     int-to-float v4, v4
 
     int-to-float p1, p1
 
-    invoke-virtual {v3, v1, v1, v4, p1}, Landroid/graphics/RectF;->set(FFFF)V
+    .line 78
+    invoke-virtual {v0, v2, v2, v4, p1}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 80
     new-instance p1, Landroid/graphics/Paint;
@@ -187,14 +191,12 @@
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapPaint:Landroid/graphics/Paint;
 
     .line 81
-    sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+    sget-object v0, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
-    invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 82
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapPaint:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+    invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 84
     new-instance p1, Landroid/graphics/Paint;
@@ -204,33 +206,27 @@
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderPaint:Landroid/graphics/Paint;
 
     .line 85
-    sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+    sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
-    invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 86
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderPaint:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+    invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 87
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderPaint:Landroid/graphics/Paint;
-
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->getState()[I
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+    invoke-virtual {v0, v1, v3}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 88
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderPaint:Landroid/graphics/Paint;
-
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderWidth:F
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
@@ -248,6 +244,14 @@
 
 .method private static all([Z)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "booleans"
+        }
+    .end annotation
 
     .line 622
     array-length v0, p0
@@ -278,6 +282,14 @@
 
 .method private static any([Z)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "booleans"
+        }
+    .end annotation
 
     .line 615
     array-length v0, p0
@@ -308,6 +320,14 @@
 
 .method public static drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     .line 126
     instance-of v0, p0, Landroid/graphics/drawable/BitmapDrawable;
@@ -398,6 +418,14 @@
 
 .method public static fromBitmap(Landroid/graphics/Bitmap;)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bitmap"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -416,6 +444,14 @@
 
 .method public static fromDrawable(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     if-eqz p0, :cond_3
 
@@ -487,6 +523,16 @@
 
 .method private static only(I[Z)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "booleans"
+        }
+    .end annotation
 
     .line 606
     array-length v0, p1
@@ -526,6 +572,14 @@
 
 .method private redrawBitmapForSquareCorners(Landroid/graphics/Canvas;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 311
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
@@ -689,6 +743,14 @@
 
 .method private redrawBorderForSquareCorners(Landroid/graphics/Canvas;)V
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 348
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
@@ -1550,6 +1612,14 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 273
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mRebuildShader:Z
@@ -1787,6 +1857,14 @@
 
 .method public getCornerRadius(I)F
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "corner"
+        }
+    .end annotation
 
     .line 446
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
@@ -1892,6 +1970,14 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bounds"
+        }
+    .end annotation
 
     .line 264
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
@@ -1909,6 +1995,14 @@
 
 .method protected onStateChange([I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     .line 158
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderColor:Landroid/content/res/ColorStateList;
@@ -1948,6 +2042,14 @@
 
 .method public setAlpha(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "alpha"
+        }
+    .end annotation
 
     .line 397
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapPaint:Landroid/graphics/Paint;
@@ -1962,6 +2064,14 @@
 
 .method public setBorderColor(I)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "color"
+        }
+    .end annotation
 
     .line 542
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
@@ -1977,6 +2087,14 @@
 
 .method public setBorderColor(Landroid/content/res/ColorStateList;)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "colors"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -2013,6 +2131,14 @@
 
 .method public setBorderWidth(F)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "width"
+        }
+    .end annotation
 
     .line 532
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBorderWidth:F
@@ -2027,6 +2153,14 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cf"
+        }
+    .end annotation
 
     .line 408
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapPaint:Landroid/graphics/Paint;
@@ -2041,6 +2175,14 @@
 
 .method public setCornerRadius(F)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "radius"
+        }
+    .end annotation
 
     .line 456
     invoke-virtual {p0, p1, p1, p1, p1}, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->setCornerRadius(FFFF)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
@@ -2050,6 +2192,20 @@
 
 .method public setCornerRadius(FFFF)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "topLeft",
+            "topRight",
+            "bottomRight",
+            "bottomLeft"
+        }
+    .end annotation
 
     .line 498
     new-instance v0, Ljava/util/HashSet;
@@ -2160,7 +2316,11 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2194,58 +2354,52 @@
     :goto_1
     aput-boolean p1, v0, v2
 
-    .line 521
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
+    cmpl-float p1, p2, v1
 
-    cmpl-float p2, p2, v1
+    if-lez p1, :cond_3
 
-    if-lez p2, :cond_3
-
-    move p2, v3
+    move p1, v3
 
     goto :goto_2
 
     :cond_3
-    move p2, v2
+    move p1, v2
 
+    .line 521
     :goto_2
-    aput-boolean p2, p1, v3
+    aput-boolean p1, v0, v3
 
-    .line 522
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
+    const/4 p1, 0x2
 
-    const/4 p2, 0x2
+    cmpl-float p2, p3, v1
 
-    cmpl-float p3, p3, v1
+    if-lez p2, :cond_4
 
-    if-lez p3, :cond_4
-
-    move p3, v3
+    move p2, v3
 
     goto :goto_3
 
     :cond_4
-    move p3, v2
+    move p2, v2
 
+    .line 522
     :goto_3
-    aput-boolean p3, p1, p2
+    aput-boolean p2, v0, p1
 
-    .line 523
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mCornersRounded:[Z
+    const/4 p1, 0x3
 
-    const/4 p2, 0x3
+    cmpl-float p2, p4, v1
 
-    cmpl-float p3, p4, v1
-
-    if-lez p3, :cond_5
+    if-lez p2, :cond_5
 
     goto :goto_4
 
     :cond_5
     move v3, v2
 
+    .line 523
     :goto_4
-    aput-boolean v3, p1, p2
+    aput-boolean v3, v0, p1
 
     return-object p0
 
@@ -2262,6 +2416,16 @@
 
 .method public setCornerRadius(IF)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "corner",
+            "radius"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -2343,6 +2507,14 @@
 
 .method public setDither(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dither"
+        }
+    .end annotation
 
     .line 414
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapPaint:Landroid/graphics/Paint;
@@ -2357,6 +2529,14 @@
 
 .method public setFilterBitmap(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "filter"
+        }
+    .end annotation
 
     .line 420
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mBitmapPaint:Landroid/graphics/Paint;
@@ -2371,6 +2551,14 @@
 
 .method public setOval(Z)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "oval"
+        }
+    .end annotation
 
     .line 560
     iput-boolean p1, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mOval:Z
@@ -2380,6 +2568,14 @@
 
 .method public setScaleType(Landroid/widget/ImageView$ScaleType;)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleType"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -2404,6 +2600,14 @@
 
 .method public setTileModeX(Landroid/graphics/Shader$TileMode;)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tileModeX"
+        }
+    .end annotation
 
     .line 584
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mTileModeX:Landroid/graphics/Shader$TileMode;
@@ -2427,6 +2631,14 @@
 
 .method public setTileModeY(Landroid/graphics/Shader$TileMode;)Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tileModeY"
+        }
+    .end annotation
 
     .line 597
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/util/RoundedDrawable;->mTileModeY:Landroid/graphics/Shader$TileMode;

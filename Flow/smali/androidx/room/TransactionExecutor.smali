@@ -25,6 +25,14 @@
 # direct methods
 .method constructor <init>(Ljava/util/concurrent/Executor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "executor"
+        }
+    .end annotation
 
     .line 37
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,10 +54,18 @@
 # virtual methods
 .method public declared-synchronized execute(Ljava/lang/Runnable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 42
+    .line 43
     :try_start_0
     iget-object v0, p0, Landroidx/room/TransactionExecutor;->mTasks:Ljava/util/ArrayDeque;
 
@@ -59,17 +75,17 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayDeque;->offer(Ljava/lang/Object;)Z
 
-    .line 51
+    .line 53
     iget-object p1, p0, Landroidx/room/TransactionExecutor;->mActive:Ljava/lang/Runnable;
 
     if-nez p1, :cond_0
 
-    .line 52
+    .line 54
     invoke-virtual {p0}, Landroidx/room/TransactionExecutor;->scheduleNext()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 54
+    .line 56
     :cond_0
     monitor-exit p0
 
@@ -88,7 +104,7 @@
 
     monitor-enter p0
 
-    .line 58
+    .line 60
     :try_start_0
     iget-object v0, p0, Landroidx/room/TransactionExecutor;->mTasks:Ljava/util/ArrayDeque;
 
@@ -102,14 +118,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 59
+    .line 61
     iget-object v1, p0, Landroidx/room/TransactionExecutor;->mExecutor:Ljava/util/concurrent/Executor;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 61
+    .line 63
     :cond_0
     monitor-exit p0
 

@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="can_not_select_more_than_items">
+        <item quantity="other">Ekki er hægt að velja fleiri en %d atriði.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ekki er hægt að velja fleiri en %d atriði.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_files_to_the_trash">
+        <item quantity="other">Ekki er hægt að færa %d skrár í ruslið</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ekki er hægt að færa %d skrá í ruslið</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_folders_to_the_trash">
+        <item quantity="other">Ekki er hægt að færa %d möppur í ruslið</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ekki er hægt að færa %d möppu í ruslið</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_move_n_items_to_the_trash">
+        <item quantity="other">Ekki er hægt að færa %d atriði í ruslið</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ekki er hægt að færa %d atriði í ruslið</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_file_will_be_deleted">
+        <item quantity="other">%d af völdu skránum verður eytt vegna þess að þær eru í skýinu eða USB-geymslutæki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d af völdu skránum verður eytt vegna þess að hún er í skýinu eða USB-geymslutæki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_folder_will_be_deleted">
+        <item quantity="other">%d af völdu möppunum verður eytt vegna þess að þær eru í skýinu eða USB-geymslutæki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d af völdu möppunum verður eytt vegna þess að hún er í skýinu eða USB-geymslutæki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cloud_usb_item_will_be_deleted">
+        <item quantity="other">%d af völdu atriðunum verður eytt vegna þess að þau eru í skýinu eða USB-geymslutæki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d af völdu atriðunum verður eytt vegna þess að það er í skýinu eða USB-geymslutæki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_ing">
+        <item quantity="other">Þjappar %d skrám …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þjappar %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_files_notification">
+        <item quantity="other">Þjappar %d skrám …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þjappar %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_ing">
+        <item quantity="other">Þjappar %d möppum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þjappar %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_folders_notification">
+        <item quantity="other">Þjappar %d möppum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þjappar %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_ing">
+        <item quantity="other">Þjappar %d atriðum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þjappar %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="compressing_pd_items_notification">
+        <item quantity="other">Þjappar %d atriðum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þjappar %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_ing">
+        <item quantity="other">Afritar %d skrár …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afritar %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_files_notification">
+        <item quantity="other">Afritar %d skrár …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afritar %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_ing">
+        <item quantity="other">Afritar %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afritar %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_folders_notification">
+        <item quantity="other">Afritar %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afritar %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_ing">
+        <item quantity="other">Afritar %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afritar %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="copying_pd_items_notification">
+        <item quantity="other">Afritar %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afritar %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_phone">
+        <item quantity="other">Viltu eyða %d skrám úr símanum?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d skrá úr símanum?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_file_from_tablet">
+        <item quantity="other">Viltu eyða %d skrám úr spjaldtölvunni?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d skrá úr spjaldtölvunni?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_phone">
+        <item quantity="other">Viltu eyða %d möppum úr símanum?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d möppu úr símanum?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_folder_from_tablet">
+        <item quantity="other">Viltu eyða %d möppum úr spjaldtölvunni?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d möppu úr spjaldtölvunni?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_phone">
+        <item quantity="other">Viltu eyða %d atriðum úr símanum?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d atriði úr símanum?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_item_from_tablet">
+        <item quantity="other">Viltu eyða %d atriðum úr spjaldtölvunni?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d atriði úr spjaldtölvunni?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_files_ing">
+        <item quantity="other">Eyðir %d skrám …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eyðir %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_folders_ing">
+        <item quantity="other">Eyðir %d möppum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eyðir %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_from_trash_ing">
+        <item quantity="other">Eyðir %d atriðum úr ruslinu …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eyðir %d atriði úr ruslinu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="deleting_pd_items_ing">
+        <item quantity="other">Eyðir %d atriðum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eyðir %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_files_ing">
+        <item quantity="other">Afþjappar %d skrám …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afþjappar %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_folders_ing">
+        <item quantity="other">Afþjappar %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afþjappar %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="extracting_pd_items_ing">
+        <item quantity="other">Afþjappar %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Afþjappar %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="file_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d skrár verða einnig færðar í ruslið í %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d skrá verður einnig færð í ruslið í %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="files_restoring_notification">
+        <item quantity="other">Endurheimtir %d skrár …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Endurheimtir %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folder_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d möppur verða einnig færðar í ruslið í %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d mappa verður einnig færð í ruslið í %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="folders_restoring_notification">
+        <item quantity="other">Endurheimtir %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Endurheimtir %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_file">
+        <item quantity="other">Innri geymslan þín er full. Viltu eyða %d skrám varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Innri geymslan þín er full. Viltu eyða %d skrá varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_folder">
+        <item quantity="other">Innri geymslan þín er full. Viltu eyða %d möppum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Innri geymslan þín er full. Viltu eyða %d möppu varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_full_item">
+        <item quantity="other">Innri geymslan þín er full. Viltu eyða %d atriðum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Innri geymslan þín er full. Viltu eyða %d atriði varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_file">
+        <item quantity="other">Innri geymslan þín og SD-kort eru full. Viltu eyða %d skrám varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Innri geymslan þín og SD-kort eru full. Viltu eyða %d skrá varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_folder">
+        <item quantity="other">Innri geymslan þín og SD-kort eru full. Viltu eyða %d möppum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Innri geymslan þín og SD-kort eru full. Viltu eyða %d möppu varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="internal_storage_sd_card_full_item">
+        <item quantity="other">Innri geymslan þín og SD-kort eru full. Viltu eyða %d atriðum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Innri geymslan þín og SD-kort eru full. Viltu eyða %d atriði varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_restoring_notificcation">
+        <item quantity="other">Endurheimtir %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Endurheimtir %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="items_will_also_be_moved_to_the_trash">
+        <item quantity="other">%1$d atriði verða einnig færð í ruslið í %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d atriði verður einnig fært í ruslið í %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="max_app_window_toast">
+        <item quantity="other">Ekki er hægt að opna fleiri en %d forritaglugga.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ekki er hægt að opna fleiri en %d forritaglugga.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file">
+        <item quantity="other">Viltu færa %d skrár í ruslið?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu færa %d skrá í ruslið?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_file_title">
+        <item quantity="other">Viltu færa %d skrár í ruslið?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu færa %d skrá í ruslið?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder">
+        <item quantity="other">Viltu færa %d möppur í ruslið?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu færa %d möppu í ruslið?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_folder_title">
+        <item quantity="other">Viltu færa %d möppur í ruslið?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu færa %d möppu í ruslið?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_item_title">
+        <item quantity="other">Viltu færa %d atriði í ruslið?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu færa %d atriði í ruslið?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="move_to_trash_items">
+        <item quantity="other">Viltu færa %d atriði í ruslið?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu færa %d atriði í ruslið?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_files_to_the_trash">
+        <item quantity="other">Færir %d skrár í ruslið …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d skrá í ruslið …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_folders_to_the_trash">
+        <item quantity="other">Færir %d möppur í ruslið …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d möppu í ruslið …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_n_items_to_the_trash">
+        <item quantity="other">Færir %d atriði í ruslið …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d atriði í ruslið …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_ing">
+        <item quantity="other">Færir %d skrár …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_files_notification">
+        <item quantity="other">Færir %d skrár …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_ing">
+        <item quantity="other">Færir %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_folders_notification">
+        <item quantity="other">Færir %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_ing">
+        <item quantity="other">Færir %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="moving_pd_items_notification">
+        <item quantity="other">Færir %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Færir %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_compressed_item">
+        <item quantity="other">%d atriði þjöppuð</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði þjappað</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_copy_item">
+        <item quantity="other">%1$d atriði afrituð í %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d atriði afritað í %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_delete_folder_and_files_in_it">
+        <item quantity="other">Viltu eyða möppunni og %d skrám í henni?</item>
+        <item quantity="one">Viltu eyða möppunni og skránni í henni?</item>
+    </plurals>
+    <plurals name="n_delete_folders_and_files_in_it">
+        <item quantity="other">Viltu eyða %1$d möppum og %2$d skrám í henni?</item>
+        <item quantity="one">Viltu eyða möppunni og skránni í henni?</item>
+    </plurals>
+    <plurals name="n_deleted_item">
+        <item quantity="other">%d atriðum eytt</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði eytt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_file_notification">
+        <item quantity="other">Sækir %d skrár …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sækir %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_folder_notification">
+        <item quantity="other">Sækir %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sækir %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_item_notification">
+        <item quantity="other">Sækir %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sækir %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_folder_cannot_share_via_wifi_direct">
+        <item quantity="other">Ekki er hægt að deila möppum vegna þess að þær eru tómar.</item>
+        <item quantity="one">Ekki er hægt að deila möppu vegna þess að hún er tóm.</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_file">
+        <item quantity="other">%d skrám verður eytt varanlega.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d skrá verður eytt varanlega.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_empty_trash_dialog_folder">
+        <item quantity="other">%d möppum verður eytt varanlega.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d möppu verður eytt varanlega.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_extracted_item">
+        <item quantity="other">%d atriði afþjöppuð</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði afþjappað</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_added_to_favorites">
+        <item quantity="other">%d skrám bætt við uppáhald.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d skrá bætt við uppáhald.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_file_removed_to_favorites">
+        <item quantity="other">%d skrár fjarlægðar úr uppáhaldi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d skrá fjarlægð úr uppáhaldi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_added_to_favorites">
+        <item quantity="other">%d möppum bætt við uppáhald.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d möppu bætt við uppáhald.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folder_removed_to_favorites">
+        <item quantity="other">%d möppur fjarlægðar úr uppáhaldi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mappa fjarlægð úr uppáhaldi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_added_to_favorites">
+        <item quantity="other">%d atriðum bætt við uppáhald.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði bætt við uppáhald.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_removed_to_favorites">
+        <item quantity="other">%d atriði fjarlægð úr uppáhaldi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði fjarlægt úr uppáhaldi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_item_selected">
+        <item quantity="other">%d hlutir</item>
+        <item quantity="one">1 hlutur</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="other">%d hlutir</item>
+        <item quantity="one">%d atriði</item>
+    </plurals>
+    <plurals name="n_items_copied_to_clipboard">
+        <item quantity="other">%d atriði afrituð á klippiborð</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði afritað á klippiborð</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_moved_to_clipboard">
+        <item quantity="other">%d atriði færð á klippiborð</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði fært á klippiborð</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_selected">
+        <item quantity="other">%d atriði valin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði valið</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_item">
+        <item quantity="other">%1$d atriði færð í %2$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d atriði fært í %2$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_move_to_trash_item">
+        <item quantity="other">%d atriði færð í ruslið</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d atriði fært í ruslið</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">Valið: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Valið: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_file">
+        <item quantity="other">SD-kortið þitt er fullt. Viltu eyða %d skrám varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortið þitt er fullt. Viltu eyða %d skrá varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_folder">
+        <item quantity="other">SD-kortið þitt er fullt. Viltu eyða %d möppum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortið þitt er fullt. Viltu eyða %d möppu varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sd_card_full_item">
+        <item quantity="other">SD-kortið þitt er fullt. Viltu eyða %d atriðum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">SD-kortið þitt er fullt. Viltu eyða %d atriði varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_file_info">
+        <item quantity="other">Þessum skrám verður eytt eftir %d daga.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þessari skrá verður eytt eftir %d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_detail_delete_folder_info">
+        <item quantity="other">Þessum möppum verður eytt eftir %d daga.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þessari möppu verður eytt eftir %d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_delete_permanently">
+        <item quantity="other">Viltu eyða %d skrám varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d skrá varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_deleting">
+        <item quantity="other">Eyðir %d skrám …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eyðir %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_files_restoring">
+        <item quantity="other">Endurheimtir %d skrár …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Endurheimtir %d skrá …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_delete_permanently">
+        <item quantity="other">Viltu eyða %d möppum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d möppu varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_deleting">
+        <item quantity="other">Eyðir %d möppum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eyðir %d möppum …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_folders_restoring">
+        <item quantity="other">Endurheimtir %d möppur …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Endurheimtir %d möppu …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_delete_permanently">
+        <item quantity="other">Viltu eyða %d atriðum varanlega?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viltu eyða %d atriði varanlega?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_deleting">
+        <item quantity="other">Eyðir %d atriðum …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eyðir %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_n_items_restoring">
+        <item quantity="other">Endurheimtir %d atriði …</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Endurheimtir %d atriði …</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="trash_subheader_delete_info">
+        <item quantity="other">Eytt eftir %d daga</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eytt eftir %d dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="uninstall_apps">
+        <item quantity="other">Fjarlægja %d forrit?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fjarlægja %d forrit?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -22,4 +22,12 @@
 .end method
 
 .method public abstract onSessionExpired(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appTerminationNeed"
+        }
+    .end annotation
 .end method

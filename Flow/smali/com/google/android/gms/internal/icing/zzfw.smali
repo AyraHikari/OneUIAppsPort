@@ -1,204 +1,258 @@
-.class Lcom/google/android/gms/internal/icing/zzfw;
-.super Ljava/util/AbstractSet;
+.class public final Lcom/google/android/gms/internal/icing/zzfw;
+.super Lcom/google/android/gms/internal/icing/zzda;
+.source "com.google.firebase:firebase-appindexing@@20.0.0"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/icing/zzef;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/util/AbstractSet<",
-        "Ljava/util/Map$Entry<",
-        "TK;TV;>;>;"
+        "Lcom/google/android/gms/internal/icing/zzda<",
+        "Lcom/google/android/gms/internal/icing/zzfw;",
+        "Lcom/google/android/gms/internal/icing/zzfv;",
+        ">;",
+        "Lcom/google/android/gms/internal/icing/zzef;"
     }
 .end annotation
 
 
+# static fields
+.field private static final zzj:Lcom/google/android/gms/internal/icing/zzfw;
+
+
 # instance fields
-.field private final synthetic zznn:Lcom/google/android/gms/internal/icing/zzfp;
+.field private zzb:I
+
+.field private zze:Z
+
+.field private zzf:I
+
+.field private zzg:Ljava/lang/String;
+
+.field private zzh:Lcom/google/android/gms/internal/icing/zzdg;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/internal/icing/zzdg<",
+            "Lcom/google/android/gms/internal/icing/zzfy;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private zzi:Lcom/google/android/gms/internal/icing/zzdg;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/internal/icing/zzdg<",
+            "Lcom/google/android/gms/internal/icing/zzfy;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method private constructor <init>(Lcom/google/android/gms/internal/icing/zzfp;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/google/android/gms/internal/icing/zzfw;
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/gms/internal/icing/zzfw;->zznn:Lcom/google/android/gms/internal/icing/zzfp;
+    invoke-direct {v0}, Lcom/google/android/gms/internal/icing/zzfw;-><init>()V
 
-    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
+    sput-object v0, Lcom/google/android/gms/internal/icing/zzfw;->zzj:Lcom/google/android/gms/internal/icing/zzfw;
 
-    return-void
-.end method
+    const-class v1, Lcom/google/android/gms/internal/icing/zzfw;
 
-.method synthetic constructor <init>(Lcom/google/android/gms/internal/icing/zzfp;Lcom/google/android/gms/internal/icing/zzfo;)V
-    .locals 0
-
-    .line 21
-    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/icing/zzfw;-><init>(Lcom/google/android/gms/internal/icing/zzfp;)V
+    .line 2
+    invoke-static {v1, v0}, Lcom/google/android/gms/internal/icing/zzda;->zzq(Ljava/lang/Class;Lcom/google/android/gms/internal/icing/zzda;)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public synthetic add(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 15
-    check-cast p1, Ljava/util/Map$Entry;
-
-    .line 16
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/icing/zzfw;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 17
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zznn:Lcom/google/android/gms/internal/icing/zzfp;
-
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Comparable;
-
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-virtual {v0, v1, p1}, Lcom/google/android/gms/internal/icing/zzfp;->zza(Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public clear()V
+.method private constructor <init>()V
     .locals 1
 
-    .line 13
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zznn:Lcom/google/android/gms/internal/icing/zzfp;
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/internal/icing/zzda;-><init>()V
 
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/icing/zzfp;->clear()V
+    const-string v0, ""
 
-    return-void
-.end method
+    iput-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zzg:Ljava/lang/String;
 
-.method public contains(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 4
-    check-cast p1, Ljava/util/Map$Entry;
-
-    .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zznn:Lcom/google/android/gms/internal/icing/zzfp;
-
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/icing/zzfp;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 2
+    invoke-static {}, Lcom/google/android/gms/internal/icing/zzfw;->zzw()Lcom/google/android/gms/internal/icing/zzdg;
 
     move-result-object v0
 
-    .line 6
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    iput-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zzh:Lcom/google/android/gms/internal/icing/zzdg;
 
-    move-result-object p1
+    .line 3
+    invoke-static {}, Lcom/google/android/gms/internal/icing/zzfw;->zzw()Lcom/google/android/gms/internal/icing/zzdg;
 
-    if-eq v0, p1, :cond_1
+    move-result-object v0
 
-    if-eqz v0, :cond_0
+    iput-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zzi:Lcom/google/android/gms/internal/icing/zzdg;
 
-    .line 7
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
+    return-void
 .end method
 
-.method public iterator()Ljava/util/Iterator;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "Ljava/util/Map$Entry<",
-            "TK;TV;>;>;"
-        }
-    .end annotation
+.method public static zzd()Lcom/google/android/gms/internal/icing/zzfw;
+    .locals 1
 
-    .line 2
-    new-instance v0, Lcom/google/android/gms/internal/icing/zzfx;
-
-    iget-object v1, p0, Lcom/google/android/gms/internal/icing/zzfw;->zznn:Lcom/google/android/gms/internal/icing/zzfp;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/internal/icing/zzfx;-><init>(Lcom/google/android/gms/internal/icing/zzfp;Lcom/google/android/gms/internal/icing/zzfo;)V
+    sget-object v0, Lcom/google/android/gms/internal/icing/zzfw;->zzj:Lcom/google/android/gms/internal/icing/zzfw;
 
     return-object v0
 .end method
 
-.method public remove(Ljava/lang/Object;)Z
+.method static synthetic zze()Lcom/google/android/gms/internal/icing/zzfw;
     .locals 1
 
-    .line 8
-    check-cast p1, Ljava/util/Map$Entry;
+    sget-object v0, Lcom/google/android/gms/internal/icing/zzfw;->zzj:Lcom/google/android/gms/internal/icing/zzfw;
 
-    .line 9
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/icing/zzfw;->contains(Ljava/lang/Object;)Z
+    return-object v0
+.end method
 
-    move-result v0
 
-    if-eqz v0, :cond_0
+# virtual methods
+.method public final zza()Z
+    .locals 1
 
-    .line 10
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zznn:Lcom/google/android/gms/internal/icing/zzfp;
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zze:Z
 
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    return v0
+.end method
+
+.method public final zzb()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zzf:I
+
+    return v0
+.end method
+
+.method public final zzc()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zzg:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method protected final zzf(ILjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+
+    add-int/lit8 p1, p1, -0x1
+
+    const/4 p2, 0x1
+
+    if-eqz p1, :cond_4
+
+    const/4 p3, 0x5
+
+    const/4 v0, 0x4
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x2
+
+    if-eq p1, v2, :cond_3
+
+    if-eq p1, v1, :cond_2
+
+    const/4 p2, 0x0
+
+    if-eq p1, v0, :cond_1
+
+    if-eq p1, p3, :cond_0
+
+    return-object p2
+
+    .line 1
+    :cond_0
+    sget-object p1, Lcom/google/android/gms/internal/icing/zzfw;->zzj:Lcom/google/android/gms/internal/icing/zzfw;
+
+    return-object p1
+
+    .line 4
+    :cond_1
+    new-instance p1, Lcom/google/android/gms/internal/icing/zzfv;
+
+    .line 3
+    invoke-direct {p1, p2}, Lcom/google/android/gms/internal/icing/zzfv;-><init>(Lcom/google/android/gms/internal/icing/zzfu;)V
+
+    return-object p1
+
+    .line 1
+    :cond_2
+    new-instance p1, Lcom/google/android/gms/internal/icing/zzfw;
+
+    .line 4
+    invoke-direct {p1}, Lcom/google/android/gms/internal/icing/zzfw;-><init>()V
+
+    return-object p1
+
+    :cond_3
+    const/16 p1, 0x8
+
+    new-array p1, p1, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    const-string v4, "zzb"
+
+    aput-object v4, p1, v3
+
+    const-string v3, "zze"
+
+    aput-object v3, p1, p2
+
+    const-string p2, "zzf"
+
+    aput-object p2, p1, v2
+
+    const-string p2, "zzg"
+
+    aput-object p2, p1, v1
+
+    const-string p2, "zzh"
+
+    aput-object p2, p1, v0
+
+    .line 0
+    const-class p2, Lcom/google/android/gms/internal/icing/zzfy;
+
+    aput-object p2, p1, p3
+
+    const/4 p2, 0x6
+
+    const-string p3, "zzi"
+
+    aput-object p3, p1, p2
+
+    const/4 p2, 0x7
+
+    const-class p3, Lcom/google/android/gms/internal/icing/zzfy;
+
+    aput-object p3, p1, p2
+
+    sget-object p2, Lcom/google/android/gms/internal/icing/zzfw;->zzj:Lcom/google/android/gms/internal/icing/zzfw;
+
+    const-string p3, "\u0001\u0005\u0000\u0001\u0001\u0005\u0005\u0000\u0002\u0000\u0001\u1007\u0000\u0002\u1004\u0001\u0003\u1008\u0002\u0004\u001b\u0005\u001b"
+
+    .line 2
+    invoke-static {p2, p3, p1}, Lcom/google/android/gms/internal/icing/zzfw;->zzr(Lcom/google/android/gms/internal/icing/zzee;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/icing/zzfp;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    return-object p1
 
-    const/4 p1, 0x1
+    .line 1
+    :cond_4
+    invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    return p1
+    move-result-object p1
 
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public size()I
-    .locals 1
-
-    .line 3
-    iget-object v0, p0, Lcom/google/android/gms/internal/icing/zzfw;->zznn:Lcom/google/android/gms/internal/icing/zzfp;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/icing/zzfp;->size()I
-
-    move-result v0
-
-    return v0
+    return-object p1
 .end method

@@ -17,6 +17,18 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "address",
+            "port"
+        }
+    .end annotation
 
     .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

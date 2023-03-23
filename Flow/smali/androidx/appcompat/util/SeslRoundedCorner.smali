@@ -22,39 +22,31 @@
 # instance fields
 .field mBottomLeftRound:Landroid/graphics/drawable/Drawable;
 
-.field mBottomLeftRoundColor:I
+.field private mBottomLeftRoundColor:I
 
 .field mBottomRightRound:Landroid/graphics/drawable/Drawable;
 
-.field mBottomRightRoundColor:I
+.field private mBottomRightRoundColor:I
 
-.field mContext:Landroid/content/Context;
+.field private final mContext:Landroid/content/Context;
 
-.field mIsMutate:Z
+.field private mIsMutate:Z
 
-.field mIsStrokeRoundedCorner:Z
-
-.field mRes:Landroid/content/res/Resources;
+.field private final mRes:Landroid/content/res/Resources;
 
 .field mRoundRadius:I
 
-.field mRoundStrokeBottom:Landroid/graphics/drawable/Drawable;
-
-.field mRoundStrokeHeight:I
-
-.field mRoundStrokeTop:Landroid/graphics/drawable/Drawable;
-
-.field mRoundedCornerBounds:Landroid/graphics/Rect;
+.field final mRoundedCornerBounds:Landroid/graphics/Rect;
 
 .field mRoundedCornerMode:I
 
 .field mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
-.field mTopLeftRoundColor:I
+.field private mTopLeftRoundColor:I
 
 .field mTopRightRound:Landroid/graphics/drawable/Drawable;
 
-.field mTopRightRoundColor:I
+.field private mTopRightRoundColor:I
 
 .field mX:I
 
@@ -64,199 +56,405 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    const/4 v0, 0x1
+    .line 69
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 81
-    invoke-direct {p0, p1, v0}, Landroidx/appcompat/util/SeslRoundedCorner;-><init>(Landroid/content/Context;Z)V
+    const/4 v0, 0x0
+
+    .line 49
+    iput-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
+
+    const/4 v0, -0x1
+
+    .line 50
+    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
+
+    .line 65
+    new-instance v0, Landroid/graphics/Rect;
+
+    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
+
+    .line 70
+    iput-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
+
+    .line 71
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+
+    .line 72
+    invoke-direct {p0}, Landroidx/appcompat/util/SeslRoundedCorner;->initRoundedCorner()V
 
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "isMutate"
+        }
+    .end annotation
 
-    .line 84
+    .line 85
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x1
-
-    .line 52
-    iput-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
 
     const/4 v0, 0x0
 
-    .line 53
+    .line 49
     iput-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
 
     const/4 v0, -0x1
 
-    .line 54
+    .line 50
     iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
 
-    .line 73
+    .line 65
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
 
-    .line 85
+    .line 86
     iput-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
 
-    .line 86
+    .line 87
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
 
-    .line 87
-    iput-boolean p2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
-
     .line 88
+    iput-boolean p2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
+
+    .line 89
     invoke-direct {p0}, Landroidx/appcompat/util/SeslRoundedCorner;->initRoundedCorner()V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;ZZ)V
-    .locals 1
+.method private drawRoundedCornerInternal(Landroid/graphics/Canvas;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
-    .line 103
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 286
+    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
 
-    const/4 v0, 0x1
+    iget v0, v0, Landroid/graphics/Rect;->left:I
 
-    .line 52
-    iput-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
+    .line 287
+    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
 
-    const/4 v0, 0x0
+    iget v1, v1, Landroid/graphics/Rect;->right:I
 
-    .line 53
-    iput-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
+    .line 288
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
 
-    const/4 v0, -0x1
+    iget v2, v2, Landroid/graphics/Rect;->top:I
 
-    .line 54
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
+    .line 289
+    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
 
-    .line 73
-    new-instance v0, Landroid/graphics/Rect;
+    iget v3, v3, Landroid/graphics/Rect;->bottom:I
 
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
+    .line 291
+    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
 
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
+    and-int/lit8 v4, v4, 0x1
 
-    .line 104
-    iput-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
+    if-eqz v4, :cond_0
 
-    .line 105
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    .line 292
+    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
-    move-result-object p1
+    iget v5, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
 
-    iput-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+    add-int v6, v0, v5
 
-    .line 106
-    iput-boolean p2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
+    add-int/2addr v5, v2
 
-    .line 107
-    iput-boolean p3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
+    invoke-virtual {v4, v0, v2, v6, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 108
-    invoke-direct {p0}, Landroidx/appcompat/util/SeslRoundedCorner;->initRoundedCorner()V
+    .line 293
+    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
+    invoke-virtual {v4, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    .line 295
+    :cond_0
+    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
+
+    and-int/lit8 v4, v4, 0x2
+
+    if-eqz v4, :cond_1
+
+    .line 296
+    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
+
+    iget v5, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
+
+    sub-int v6, v1, v5
+
+    add-int/2addr v5, v2
+
+    invoke-virtual {v4, v6, v2, v1, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 297
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    .line 299
+    :cond_1
+    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
+
+    and-int/lit8 v2, v2, 0x4
+
+    if-eqz v2, :cond_2
+
+    .line 300
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
+
+    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
+
+    sub-int v5, v3, v4
+
+    add-int/2addr v4, v0
+
+    invoke-virtual {v2, v0, v5, v4, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 301
+    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    .line 303
+    :cond_2
+    iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
+
+    and-int/lit8 v0, v0, 0x8
+
+    if-eqz v0, :cond_3
+
+    .line 304
+    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
+
+    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
+
+    sub-int v4, v1, v2
+
+    sub-int v2, v3, v2
+
+    invoke-virtual {v0, v4, v2, v1, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 305
+    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    :cond_3
     return-void
 .end method
 
 .method private initRoundedCorner()V
-    .locals 3
+    .locals 4
 
-    const/16 v0, 0x1a
+    .line 222
+    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
 
-    int-to-float v0, v0
+    sget v1, Landroidx/appcompat/R$dimen;->sesl_rounded_corner_radius:I
 
-    .line 250
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    invoke-static {v2, v0, v1}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
-    float-to-int v0, v0
-
     iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
 
-    .line 252
+    .line 224
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroidx/appcompat/util/SeslMisc;->isLightTheme(Landroid/content/Context;)Z
 
     move-result v0
 
-    xor-int/2addr v0, v2
+    xor-int/lit8 v0, v0, 0x1
 
-    if-eqz v0, :cond_0
+    .line 226
+    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
 
-    const/4 v1, 0x0
+    invoke-virtual {v1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
-    .line 254
-    iput-boolean v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
+    move-result-object v1
 
-    .line 257
+    .line 227
+    iget-boolean v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
+
+    if-eqz v2, :cond_0
+
+    .line 228
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_top_left_round:I
+
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
+
+    .line 229
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_top_right_round:I
+
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
+
+    .line 230
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_bottom_left_round:I
+
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
+
+    .line 231
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_bottom_right_round:I
+
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    iput-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
+
+    goto :goto_0
+
+    .line 233
     :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_top_left_round:I
 
-    const-string v2, "initRoundedCorner, rounded corner with stroke = "
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    iget-boolean v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
+    iput-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    .line 234
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
 
-    const-string v2, ", dark theme = "
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_top_right_round:I
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    const-string v0, ", mutate "
+    iput-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 235
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
 
-    iget-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_bottom_left_round:I
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    iput-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
 
-    const-string v1, "SeslRoundedCorner"
+    .line 236
+    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
 
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    sget v3, Landroidx/appcompat/R$drawable;->sesl_bottom_right_round:I
 
-    .line 260
-    iget-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
+    invoke-virtual {v2, v3, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
+    move-result-object v1
+
+    iput-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
+
+    :goto_0
     if-eqz v0, :cond_1
 
-    .line 261
+    .line 239
+    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+
+    sget v1, Landroidx/appcompat/R$color;->sesl_round_and_bgcolor_dark:I
+
+    .line 240
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRoundColor:I
+
+    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRoundColor:I
+
+    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRoundColor:I
+
+    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
+
+    goto :goto_1
+
+    .line 242
+    :cond_1
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
 
     sget v1, Landroidx/appcompat/R$color;->sesl_round_and_bgcolor_light:I
 
-    .line 262
+    .line 243
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v0
@@ -269,566 +467,77 @@
 
     iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
 
-    .line 265
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+    .line 246
+    :goto_1
+    new-instance v0, Landroid/graphics/PorterDuffColorFilter;
 
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_top_left_round_stroke:I
+    iget v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
 
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
+    sget-object v2, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
 
-    .line 266
-    invoke-virtual {v2}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+    invoke-direct {v0, v1, v2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
 
-    move-result-object v2
+    .line 247
+    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
-    .line 265
-    invoke-static {v0, v1, v2}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    move-result-object v0
+    .line 248
+    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
 
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    .line 267
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
+    .line 249
+    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
 
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_top_right_round_stroke:I
+    invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
+    .line 250
+    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
 
-    .line 268
-    invoke-virtual {v2}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+    invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    move-result-object v2
-
-    .line 267
-    invoke-static {v0, v1, v2}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    .line 269
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_bottom_left_round_stroke:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
-
-    .line 270
-    invoke-virtual {v2}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v2
-
-    .line 269
-    invoke-static {v0, v1, v2}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    .line 271
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_bottom_right_round_stroke:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
-
-    .line 272
-    invoke-virtual {v2}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v2
-
-    .line 271
-    invoke-static {v0, v1, v2}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    goto/16 :goto_0
-
-    .line 273
-    :cond_1
-    iget-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsMutate:Z
-
-    if-eqz v0, :cond_2
-
-    .line 274
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$color;->sesl_round_and_bgcolor_dark:I
-
-    .line 275
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v0
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRoundColor:I
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRoundColor:I
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRoundColor:I
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
-
-    .line 276
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_top_left_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
-
-    .line 277
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_top_right_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    .line 278
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_bottom_left_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    .line 279
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_bottom_right_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    goto :goto_0
-
-    .line 281
-    :cond_2
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$color;->sesl_round_and_bgcolor_dark:I
-
-    .line 282
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v0
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRoundColor:I
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRoundColor:I
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRoundColor:I
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
-
-    .line 283
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_top_left_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
-
-    .line 284
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_top_right_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    .line 285
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_bottom_left_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    .line 286
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_bottom_right_round:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    .line 288
-    :goto_0
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$drawable;->sesl_round_stroke:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mContext:Landroid/content/Context;
-
-    .line 289
-    invoke-virtual {v2}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v2
-
-    .line 288
-    invoke-static {v0, v1, v2}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeBottom:Landroid/graphics/drawable/Drawable;
-
-    iput-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeTop:Landroid/graphics/drawable/Drawable;
-
-    .line 290
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRes:Landroid/content/res/Resources;
-
-    sget v1, Landroidx/appcompat/R$dimen;->sesl_round_stroke_height:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v0
-
-    iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeHeight:I
-
-    return-void
-.end method
-
-.method private removeRoundedCorner(I)V
-    .locals 2
-
-    and-int/lit8 v0, p1, 0x1
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    .line 301
-    iput-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
-
-    :cond_0
-    and-int/lit8 v0, p1, 0x2
-
-    if-eqz v0, :cond_1
-
-    .line 304
-    iput-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    :cond_1
-    and-int/lit8 v0, p1, 0x4
-
-    if-eqz v0, :cond_2
-
-    .line 307
-    iput-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    :cond_2
-    and-int/lit8 p1, p1, 0x8
-
-    if-eqz p1, :cond_3
-
-    .line 310
-    iput-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    :cond_3
     return-void
 .end method
 
 
 # virtual methods
 .method public drawRoundedCorner(Landroid/graphics/Canvas;)V
-    .locals 6
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
-    .line 318
+    .line 263
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
 
-    .line 320
-    iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
+    .line 264
+    invoke-direct {p0, p1}, Landroidx/appcompat/util/SeslRoundedCorner;->drawRoundedCornerInternal(Landroid/graphics/Canvas;)V
 
-    and-int/lit8 v0, v0, 0x1
-
-    if-eqz v0, :cond_1
-
-    .line 321
-    iget-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
-
-    if-eqz v0, :cond_0
-
-    .line 322
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeTop:Landroid/graphics/drawable/Drawable;
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->left:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->top:I
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->right:I
-
-    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->top:I
-
-    iget v5, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeHeight:I
-
-    add-int/2addr v4, v5
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 324
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeTop:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 326
-    :cond_0
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->left:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->top:I
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->left:I
-
-    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v3, v4
-
-    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->top:I
-
-    iget v5, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v4, v5
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 329
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 331
-    :cond_1
-    iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
-
-    and-int/lit8 v0, v0, 0x2
-
-    if-eqz v0, :cond_2
-
-    .line 332
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->right:I
-
-    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v1, v2
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->top:I
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->right:I
-
-    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->top:I
-
-    iget v5, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v4, v5
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 335
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 337
-    :cond_2
-    iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
-
-    and-int/lit8 v0, v0, 0x4
-
-    if-eqz v0, :cond_4
-
-    .line 338
-    iget-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
-
-    if-eqz v0, :cond_3
-
-    .line 339
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeBottom:Landroid/graphics/drawable/Drawable;
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->left:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    iget v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeHeight:I
-
-    sub-int/2addr v2, v3
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->right:I
-
-    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 341
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeBottom:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 343
-    :cond_3
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->left:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    iget v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v2, v3
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->left:I
-
-    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v3, v4
-
-    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 347
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 350
-    :cond_4
-    iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
-
-    and-int/lit8 v0, v0, 0x8
-
-    if-eqz v0, :cond_5
-
-    .line 351
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->right:I
-
-    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v1, v2
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    iget v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v2, v3
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->right:I
-
-    iget-object v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 354
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    :cond_5
     return-void
 .end method
 
 .method public drawRoundedCorner(Landroid/view/View;Landroid/graphics/Canvas;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "canvas"
+        }
+    .end annotation
 
-    .line 362
+    .line 271
     invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
 
     move-result v0
@@ -839,7 +548,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 363
+    .line 272
     invoke-virtual {p1}, Landroid/view/View;->getX()F
 
     move-result v0
@@ -850,7 +559,7 @@
 
     iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mX:I
 
-    .line 364
+    .line 273
     invoke-virtual {p1}, Landroid/view/View;->getY()F
 
     move-result v0
@@ -861,9 +570,40 @@
 
     iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mY:I
 
+    .line 274
+    invoke-virtual {p1}, Landroid/view/View;->getX()F
+
+    move-result v0
+
+    iget v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mX:I
+
+    int-to-float v1, v1
+
+    sub-float/2addr v0, v1
+
+    const/high16 v1, 0x3f000000    # 0.5f
+
+    add-float/2addr v0, v1
+
+    .line 275
+    invoke-virtual {p1}, Landroid/view/View;->getY()F
+
+    move-result v2
+
+    iget v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mY:I
+
+    int-to-float v3, v3
+
+    sub-float/2addr v2, v3
+
+    add-float/2addr v2, v1
+
+    .line 276
+    invoke-virtual {p2, v0, v2}, Landroid/graphics/Canvas;->translate(FF)V
+
     goto :goto_0
 
-    .line 366
+    .line 278
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
@@ -871,14 +611,14 @@
 
     iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mX:I
 
-    .line 367
+    .line 279
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mY:I
 
-    .line 369
+    .line 281
     :goto_0
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
 
@@ -902,251 +642,22 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 371
-    iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
+    .line 282
+    invoke-direct {p0, p2}, Landroidx/appcompat/util/SeslRoundedCorner;->drawRoundedCornerInternal(Landroid/graphics/Canvas;)V
 
-    and-int/lit8 p1, p1, 0x1
-
-    if-eqz p1, :cond_2
-
-    .line 372
-    iget-boolean p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
-
-    if-eqz p1, :cond_1
-
-    .line 373
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeTop:Landroid/graphics/drawable/Drawable;
-
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->top:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->top:I
-
-    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeHeight:I
-
-    add-int/2addr v3, v4
-
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 375
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeTop:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 377
-    :cond_1
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->top:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->left:I
-
-    iget v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v2, v3
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->top:I
-
-    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v3, v4
-
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 380
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 382
-    :cond_2
-    iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
-
-    and-int/lit8 p1, p1, 0x2
-
-    if-eqz p1, :cond_3
-
-    .line 383
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->right:I
-
-    iget v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v0, v1
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->top:I
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->top:I
-
-    iget v4, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v3, v4
-
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 386
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 388
-    :cond_3
-    iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
-
-    and-int/lit8 p1, p1, 0x4
-
-    if-eqz p1, :cond_5
-
-    .line 389
-    iget-boolean p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
-
-    if-eqz p1, :cond_4
-
-    .line 390
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeBottom:Landroid/graphics/drawable/Drawable;
-
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->bottom:I
-
-    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeHeight:I
-
-    sub-int/2addr v1, v2
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 392
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundStrokeBottom:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 394
-    :cond_4
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->bottom:I
-
-    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v1, v2
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->left:I
-
-    iget v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    add-int/2addr v2, v3
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 398
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 400
-    :cond_5
-    iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
-
-    and-int/lit8 p1, p1, 0x8
-
-    if-eqz p1, :cond_6
-
-    .line 401
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->right:I
-
-    iget v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v0, v1
-
-    iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->bottom:I
-
-    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
-
-    sub-int/2addr v1, v2
-
-    iget-object v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    iget-object v3, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerBounds:Landroid/graphics/Rect;
-
-    iget v3, v3, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 404
-    iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    :cond_6
     return-void
 .end method
 
 .method public getRoundedCornerColor(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "corner"
+        }
+    .end annotation
 
     if-eqz p1, :cond_5
 
@@ -1168,7 +679,7 @@
 
     goto :goto_0
 
-    .line 234
+    .line 207
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1180,7 +691,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1196,7 +711,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 238
+    .line 211
     iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
 
     return p1
@@ -1206,7 +721,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 240
+    .line 213
     iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRoundColor:I
 
     return p1
@@ -1216,18 +731,18 @@
 
     if-eqz p1, :cond_4
 
-    .line 242
+    .line 215
     iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRoundColor:I
 
     return p1
 
-    .line 244
+    .line 217
     :cond_4
     iget p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRoundColor:I
 
     return p1
 
-    .line 229
+    .line 202
     :cond_5
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1239,7 +754,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1253,7 +772,7 @@
 .method public getRoundedCornerRadius()I
     .locals 1
 
-    .line 297
+    .line 256
     iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundRadius:I
 
     return v0
@@ -1262,109 +781,54 @@
 .method public getRoundedCorners()I
     .locals 1
 
-    .line 153
+    .line 134
     iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
 
     return v0
 .end method
 
 .method public setRoundedCornerColor(II)V
-    .locals 3
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "corners",
+            "color"
+        }
+    .end annotation
 
-    .line 173
-    iget-boolean v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mIsStrokeRoundedCorner:Z
-
-    const-string v1, "SeslRoundedCorner"
-
-    if-eqz v0, :cond_0
-
-    const-string p1, "can not change round color on stroke rounded corners"
-
-    .line 174
-    invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
-    if-eqz p1, :cond_a
+    if-eqz p1, :cond_7
 
     and-int/lit8 v0, p1, -0x10
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_6
 
-    .line 184
-    iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
-
-    if-ne p2, v0, :cond_1
-
-    iget v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRoundColor:I
-
-    if-eq p2, v0, :cond_2
-
-    .line 185
-    :cond_1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "change color = "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v2, ", on ="
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v2, ", top color = "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v2, ", bottom color = "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRoundColor:I
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 188
-    :cond_2
+    .line 161
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_1
 
-    .line 190
-    :cond_3
+    .line 163
+    :cond_0
     invoke-direct {p0}, Landroidx/appcompat/util/SeslRoundedCorner;->initRoundedCorner()V
 
-    .line 193
-    :cond_4
+    .line 166
+    :cond_1
     new-instance v0, Landroid/graphics/PorterDuffColorFilter;
 
     sget-object v1, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
@@ -1373,60 +837,60 @@
 
     and-int/lit8 v1, p1, 0x1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_2
 
-    .line 196
+    .line 169
     iput p2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRoundColor:I
 
-    .line 197
+    .line 170
     iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    :cond_5
+    :cond_2
     and-int/lit8 v1, p1, 0x2
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_3
 
-    .line 200
+    .line 173
     iput p2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRoundColor:I
 
-    .line 201
+    .line 174
     iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopRightRound:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    :cond_6
+    :cond_3
     and-int/lit8 v1, p1, 0x4
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_4
 
-    .line 204
+    .line 177
     iput p2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRoundColor:I
 
-    .line 205
+    .line 178
     iget-object v1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomLeftRound:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    :cond_7
+    :cond_4
     and-int/lit8 p1, p1, 0x8
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_5
 
-    .line 208
+    .line 181
     iput p2, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRoundColor:I
 
-    .line 209
+    .line 182
     iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mBottomRightRound:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    :cond_8
+    :cond_5
     return-void
 
-    .line 181
-    :cond_9
+    .line 158
+    :cond_6
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1437,9 +901,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1447,8 +915,8 @@
 
     throw p2
 
-    .line 178
-    :cond_a
+    .line 155
+    :cond_7
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -1459,7 +927,11 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1472,15 +944,23 @@
 
 .method public setRoundedCorners(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "corners"
+        }
+    .end annotation
 
     and-int/lit8 v0, p1, -0x10
 
     if-nez v0, :cond_2
 
-    .line 131
+    .line 112
     iput p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mRoundedCornerMode:I
 
-    .line 133
+    .line 114
     iget-object p1, p0, Landroidx/appcompat/util/SeslRoundedCorner;->mTopLeftRound:Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_0
@@ -1497,14 +977,14 @@
 
     if-nez p1, :cond_1
 
-    .line 135
+    .line 116
     :cond_0
     invoke-direct {p0}, Landroidx/appcompat/util/SeslRoundedCorner;->initRoundedCorner()V
 
     :cond_1
     return-void
 
-    .line 128
+    .line 109
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1516,9 +996,13 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 

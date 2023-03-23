@@ -44,6 +44,20 @@
 
 .method public showDialog(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "positiveListner",
+            "negativeListner",
+            "cancelListner"
+        }
+    .end annotation
 
     .line 27
     new-instance v0, Landroid/text/TextPaint;
@@ -113,11 +127,15 @@
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, "\u2026"
+    move-result-object v2
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v3, "\u2026"
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -145,7 +163,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f1000fe
+    const v2, 0x7f110143
 
     .line 56
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -174,26 +192,36 @@
     .line 62
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    move-result v6
+    move-result v0
 
-    add-int/2addr v6, v2
+    add-int/2addr v0, v2
 
     .line 61
-    invoke-virtual {v3, v5, v2, v6, v1}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+    invoke-virtual {v3, v5, v2, v0, v1}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     :cond_3
-    const v2, 0x7f1000ff
-
-    new-array v5, v4, [Ljava/lang/Object;
-
-    aput-object v0, v5, v1
+    const v0, 0x7f110144
 
     .line 67
-    invoke-virtual {p1, v2, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0c0062
+    new-array v2, v4, [Ljava/lang/Object;
+
+    const v5, 0x7f11002d
+
+    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    aput-object v5, v2, v1
+
+    invoke-static {v0, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const v1, 0x7f0d006c
 
     const/4 v2, 0x0
 
@@ -202,7 +230,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0900ce
+    const v2, 0x7f0a0120
 
     .line 70
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -229,7 +257,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1000fd
+    const v0, 0x7f110142
 
     .line 76
     invoke-virtual {p1, v0, p2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

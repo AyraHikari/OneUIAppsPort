@@ -1,12 +1,12 @@
 .class public final Lcom/google/android/gms/common/data/FreezableUtils;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +28,7 @@
         }
     .end annotation
 
-    .line 2
+    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 3
+    .line 2
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
@@ -47,7 +47,7 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 4
+    .line 3
     invoke-virtual {p0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -82,7 +82,7 @@
         }
     .end annotation
 
-    .line 7
+    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     array-length v1, p0
@@ -91,13 +91,13 @@
 
     const/4 v1, 0x0
 
-    .line 8
+    .line 5
     :goto_0
     array-length v2, p0
 
     if-ge v1, v2, :cond_0
 
-    .line 9
+    .line 6
     aget-object v2, p0, v1
 
     invoke-interface {v2}, Lcom/google/android/gms/common/data/Freezable;->freeze()Ljava/lang/Object;
@@ -130,12 +130,12 @@
         }
     .end annotation
 
-    .line 12
+    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 13
+    .line 2
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -153,7 +153,7 @@
 
     check-cast v1, Lcom/google/android/gms/common/data/Freezable;
 
-    .line 14
+    .line 3
     invoke-interface {v1}, Lcom/google/android/gms/common/data/Freezable;->freeze()Ljava/lang/Object;
 
     move-result-object v1

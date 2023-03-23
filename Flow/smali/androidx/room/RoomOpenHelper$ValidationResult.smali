@@ -23,6 +23,16 @@
 # direct methods
 .method public constructor <init>(ZLjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isValid",
+            "expectedFoundMsg"
+        }
+    .end annotation
 
     .line 272
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

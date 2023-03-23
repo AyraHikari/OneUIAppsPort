@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 44
+    .line 39
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -31,7 +31,7 @@
 .method read(Lorg/jsoup/parser/Tokeniser;Lorg/jsoup/parser/CharacterReader;)V
     .locals 2
 
-    .line 47
+    .line 42
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->current()C
 
     move-result v0
@@ -50,23 +50,17 @@
 
     if-eq v0, v1, :cond_0
 
-    const/4 v0, 0x3
-
-    new-array v0, v0, [C
-
-    .line 63
-    fill-array-data v0, :array_0
-
-    invoke-virtual {p2, v0}, Lorg/jsoup/parser/CharacterReader;->consumeToAny([C)Ljava/lang/String;
+    .line 58
+    invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->consumeData()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 64
+    .line 59
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 60
+    .line 55
     :cond_0
     new-instance p2, Lorg/jsoup/parser/Token$EOF;
 
@@ -76,7 +70,7 @@
 
     goto :goto_0
 
-    .line 52
+    .line 47
     :cond_1
     sget-object p2, Lorg/jsoup/parser/TokeniserState$3;->RcdataLessthanSign:Lorg/jsoup/parser/TokeniserState;
 
@@ -84,7 +78,7 @@
 
     goto :goto_0
 
-    .line 49
+    .line 44
     :cond_2
     sget-object p2, Lorg/jsoup/parser/TokeniserState$3;->CharacterReferenceInRcdata:Lorg/jsoup/parser/TokeniserState;
 
@@ -92,27 +86,18 @@
 
     goto :goto_0
 
-    .line 55
+    .line 50
     :cond_3
     invoke-virtual {p1, p0}, Lorg/jsoup/parser/Tokeniser;->error(Lorg/jsoup/parser/TokeniserState;)V
 
-    .line 56
+    .line 51
     invoke-virtual {p2}, Lorg/jsoup/parser/CharacterReader;->advance()V
 
     const p2, 0xfffd
 
-    .line 57
+    .line 52
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
     :goto_0
     return-void
-
-    nop
-
-    :array_0
-    .array-data 2
-        0x26s
-        0x3cs
-        0x0s
-    .end array-data
 .end method

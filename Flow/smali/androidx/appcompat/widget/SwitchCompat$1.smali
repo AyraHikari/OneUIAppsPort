@@ -1,4 +1,4 @@
-.class final Landroidx/appcompat/widget/SwitchCompat$1;
+.class Landroidx/appcompat/widget/SwitchCompat$1;
 .super Landroid/util/Property;
 .source "SwitchCompat.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
@@ -26,8 +26,18 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "name"
+        }
+    .end annotation
 
-    .line 122
+    .line 143
     invoke-direct {p0, p1, p2}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
     return-void
@@ -37,8 +47,16 @@
 # virtual methods
 .method public get(Landroidx/appcompat/widget/SwitchCompat;)Ljava/lang/Float;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 125
+    .line 146
     iget p1, p1, Landroidx/appcompat/widget/SwitchCompat;->mThumbPosition:F
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -50,8 +68,16 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 122
+    .line 143
     check-cast p1, Landroidx/appcompat/widget/SwitchCompat;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/SwitchCompat$1;->get(Landroidx/appcompat/widget/SwitchCompat;)Ljava/lang/Float;
@@ -63,8 +89,18 @@
 
 .method public set(Landroidx/appcompat/widget/SwitchCompat;Ljava/lang/Float;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "object",
+            "value"
+        }
+    .end annotation
 
-    .line 130
+    .line 151
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
     move-result p2
@@ -76,8 +112,18 @@
 
 .method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "object",
+            "value"
+        }
+    .end annotation
 
-    .line 122
+    .line 143
     check-cast p1, Landroidx/appcompat/widget/SwitchCompat;
 
     check-cast p2, Ljava/lang/Float;

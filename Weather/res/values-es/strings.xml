@@ -3,7 +3,7 @@
     <string name="abc_action_bar_home_description">Ir a inicio</string>
     <string name="abc_action_bar_up_description">Desplazarse hacia arriba</string>
     <string name="abc_action_menu_overflow_description">Más opciones</string>
-    <string name="abc_action_mode_done">Listo</string>
+    <string name="abc_action_mode_done">Hecho</string>
     <string name="abc_activity_chooser_view_see_all">Ver todo</string>
     <string name="abc_activitychooserview_choose_application">Seleccionar una aplicación</string>
     <string name="abc_capital_off">DESACTIVADO</string>
@@ -31,7 +31,7 @@
     <string name="character_counter_content_description">Caracteres introducidos: %1$d de %2$d</string>
     <string name="character_counter_overflowed_content_description">Límite de caracteres superado (%1$d de %2$d)</string>
     <string name="clear_text_end_icon_content_description">Borrar texto</string>
-    <string name="common_google_play_services_enable_button">Activar</string>
+    <string name="common_google_play_services_enable_button">Habilitar</string>
     <string name="common_google_play_services_enable_text">%1$s no funcionará hasta que no habilites Servicios de Google Play.</string>
     <string name="common_google_play_services_enable_title">Habilita Servicios de Google Play</string>
     <string name="common_google_play_services_install_button">Instalar</string>
@@ -50,13 +50,9 @@
     <string name="common_signin_button_text">Iniciar sesión</string>
     <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
     <string name="copy">Copiar</string>
-    <string name="copy_toast_msg">Enlace copiado en el portapapeles</string>
     <string name="error_icon_content_description">Error</string>
-    <string name="expand_button_title">Avanzado</string>
+    <string name="expand_button_title">Ajustes avanzados</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
-    <string name="fallback_menu_item_copy_link">Copiar enlace</string>
-    <string name="fallback_menu_item_open_in_browser">Abrir en el navegador</string>
-    <string name="fallback_menu_item_share_link">Compartir enlace</string>
     <string name="icon_content_description">Icono del cuadro de diálogo</string>
     <string name="item_view_role_description">Pestaña</string>
     <string name="material_clock_toggle_content_description">Selecciona AM o PM</string>
@@ -106,7 +102,7 @@
     <string name="mtrl_picker_toggle_to_year_selection">Toca para seleccionar un año</string>
     <string name="nav_app_bar_navigate_up_description">Desplazarse hacia arriba</string>
     <string name="nav_app_bar_open_drawer_description">Abrir panel de navegación</string>
-    <string name="not_set">Sin definir</string>
+    <string name="not_set">Sin establecer</string>
     <string name="password_toggle_content_description">Mostrar contraseña</string>
     <string name="preference_copied">\"%1$s\" se ha copiado en el portapapeles.</string>
     <string name="search_menu_title">Buscar</string>

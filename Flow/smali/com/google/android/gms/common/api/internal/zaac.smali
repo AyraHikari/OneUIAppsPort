@@ -1,24 +1,24 @@
 .class final Lcom/google/android/gms/common/api/internal/zaac;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@18.0.1"
 
 # interfaces
-.implements Lcom/google/android/gms/common/api/PendingResult$StatusListener;
+.implements Lcom/google/android/gms/tasks/OnCompleteListener;
 
 
 # instance fields
-.field private final synthetic zafm:Lcom/google/android/gms/common/api/internal/BasePendingResult;
+.field final synthetic zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-.field private final synthetic zafn:Lcom/google/android/gms/common/api/internal/zaab;
+.field final synthetic zab:Lcom/google/android/gms/common/api/internal/zaad;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/common/api/internal/zaab;Lcom/google/android/gms/common/api/internal/BasePendingResult;)V
+.method constructor <init>(Lcom/google/android/gms/common/api/internal/zaad;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zaac;->zafn:Lcom/google/android/gms/common/api/internal/zaab;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zaac;->zab:Lcom/google/android/gms/common/api/internal/zaad;
 
-    iput-object p2, p0, Lcom/google/android/gms/common/api/internal/zaac;->zafm:Lcom/google/android/gms/common/api/internal/BasePendingResult;
+    iput-object p2, p0, Lcom/google/android/gms/common/api/internal/zaac;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,17 +27,17 @@
 
 
 # virtual methods
-.method public final onComplete(Lcom/google/android/gms/common/api/Status;)V
+.method public final onComplete(Lcom/google/android/gms/tasks/Task;)V
     .locals 1
 
-    .line 2
-    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zaac;->zafn:Lcom/google/android/gms/common/api/internal/zaab;
+    .line 1
+    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zaac;->zab:Lcom/google/android/gms/common/api/internal/zaad;
 
-    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zaab;->zaa(Lcom/google/android/gms/common/api/internal/zaab;)Ljava/util/Map;
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zaad;->zab(Lcom/google/android/gms/common/api/internal/zaad;)Ljava/util/Map;
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaac;->zafm:Lcom/google/android/gms/common/api/internal/BasePendingResult;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/zaac;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-interface {p1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

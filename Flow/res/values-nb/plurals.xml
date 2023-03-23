@@ -8,16 +8,8 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Registrer og administrer opptil %d datamaskiner eller nettbrett i Samsung Flow.
-
-Bare én datamaskin eller ett nettbrett kan være koblet til telefonen på én gang. Du må velge én/ett når begge de registrerte datamaskinene eller nettbrettene prøver å koble til telefonen."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Registrer og administrer opptil %d datamaskin eller nettbrett i Samsung Flow.
-
-Bare én datamaskin eller ett nettbrett kan være koblet til telefonen på én gang. Du må velge én/ett når begge de registrerte datamaskinene eller nettbrettene prøver å koble til telefonen."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nye varsler</item>
+        <item quantity="one">%d nytt varsel</item>
     </plurals>
 </resources>

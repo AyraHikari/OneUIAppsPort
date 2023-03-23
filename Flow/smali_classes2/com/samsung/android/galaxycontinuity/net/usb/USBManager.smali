@@ -211,8 +211,6 @@
     if-eqz v0, :cond_0
 
     .line 323
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->m_InputStream:Ljava/io/InputStream;
-
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
     .line 324
@@ -225,8 +223,6 @@
     if-eqz v0, :cond_1
 
     .line 327
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->m_OutputStream:Ljava/io/OutputStream;
-
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
     .line 328
@@ -239,8 +235,6 @@
     if-eqz v0, :cond_2
 
     .line 331
-    iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->m_Socket:Landroid/net/LocalSocket;
-
     invoke-virtual {v0}, Landroid/net/LocalSocket;->close()V
 
     .line 332
@@ -266,6 +260,14 @@
 
 .method private getBigEndian([B)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -325,7 +327,7 @@
 .method public static getCurrentFunctions()Ljava/lang/String;
     .locals 2
 
-    const-string v0, "sys.usb.config"
+    const-string/jumbo v0, "sys.usb.config"
 
     const-string v1, ""
 
@@ -339,6 +341,14 @@
 
 .method private getLittleEndian(I)[B
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -387,6 +397,14 @@
 
 .method private getSWVersion([B)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mByteData"
+        }
+    .end annotation
 
     .line 384
     new-instance v0, Ljava/lang/StringBuilder;
@@ -547,10 +565,10 @@
     .line 73
     sput-boolean v1, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->mIsUSBSupported:Z
 
-    const-string v1, "ss_conn_daemon not exist"
+    const-string/jumbo v1, "ss_conn_daemon not exist"
 
     .line 74
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -559,10 +577,10 @@
     :goto_0
     sput-boolean v0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->mIsUSBSupported:Z
 
-    const-string v1, "ss_conn_daemon exist"
+    const-string/jumbo v1, "ss_conn_daemon exist"
 
     .line 71
-    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -637,7 +655,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -735,6 +757,14 @@
 
 .method public static setUSBConnectionStatus(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 
     .line 49
     sput-boolean p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->mIsUSBConnected:Z
@@ -744,6 +774,16 @@
 
 .method public static setUsbGadgetMode(Landroid/hardware/usb/UsbManager;Z)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "usbmanager",
+            "enabled"
+        }
+    .end annotation
 
     .line 118
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->getCurrentFunctions()Ljava/lang/String;
@@ -764,7 +804,7 @@
     move-result-object v1
 
     .line 126
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Layra/os/Build$VERSION;->SDK_INT:I
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_6
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_5
@@ -855,7 +895,7 @@
 
     aput-object v8, v7, v5
 
-    const-string v8, "semSetMode"
+    const-string/jumbo v8, "semSetMode"
 
     .line 141
     invoke-virtual {v1, v8, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
@@ -913,7 +953,7 @@
 
     aput-object v3, v2, v5
 
-    const-string v3, "setCurrentFunction"
+    const-string/jumbo v3, "setCurrentFunction"
 
     .line 153
     invoke-virtual {v1, v3, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
@@ -1067,6 +1107,14 @@
 
 .method private setVersionData([B)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mByteAllRcvData"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1196,9 +1244,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giSignature:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1215,9 +1267,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giMessageId:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1234,9 +1290,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giMessageLength:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1253,9 +1313,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giMdssageType:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1272,9 +1336,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giRequestId:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1291,9 +1359,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giStatus:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1310,9 +1382,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giMajorVersion:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1329,9 +1405,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->giMinorVersion:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1348,9 +1428,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p1
+
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/net/usb/USBManager;->gsSWVersion:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1393,7 +1477,7 @@
     :try_start_0
     new-instance v3, Landroid/net/LocalSocketAddress;
 
-    const-string v4, "ss_conn_daemon2"
+    const-string/jumbo v4, "ss_conn_daemon2"
 
     sget-object v5, Landroid/net/LocalSocketAddress$Namespace;->RESERVED:Landroid/net/LocalSocketAddress$Namespace;
 
@@ -1423,7 +1507,7 @@
 
     sget-object v3, Landroid/net/LocalSocketAddress$Namespace;->RESERVED:Landroid/net/LocalSocketAddress$Namespace;
 
-    const-string v4, "ss_conn_daemon"
+    const-string/jumbo v4, "ss_conn_daemon"
 
     invoke-direct {v1, v4, v3}, Landroid/net/LocalSocketAddress;-><init>(Ljava/lang/String;Landroid/net/LocalSocketAddress$Namespace;)V
 

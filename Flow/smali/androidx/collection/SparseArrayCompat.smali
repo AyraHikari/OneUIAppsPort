@@ -105,13 +105,13 @@
 .method private gc()V
     .locals 8
 
-    .line 230
+    .line 231
     iget v0, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
-    .line 232
+    .line 233
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
-    .line 233
+    .line 234
     iget-object v2, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     const/4 v3, 0x0
@@ -123,27 +123,27 @@
     :goto_0
     if-ge v4, v0, :cond_2
 
-    .line 236
+    .line 237
     aget-object v6, v2, v4
 
-    .line 238
+    .line 239
     sget-object v7, Landroidx/collection/SparseArrayCompat;->DELETED:Ljava/lang/Object;
 
     if-eq v6, v7, :cond_1
 
     if-eq v4, v5, :cond_0
 
-    .line 240
+    .line 241
     aget v7, v1, v4
 
     aput v7, v1, v5
 
-    .line 241
+    .line 242
     aput-object v6, v2, v5
 
     const/4 v6, 0x0
 
-    .line 242
+    .line 243
     aput-object v6, v2, v4
 
     :cond_0
@@ -154,11 +154,11 @@
 
     goto :goto_0
 
-    .line 249
+    .line 250
     :cond_2
     iput-boolean v3, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
-    .line 250
+    .line 251
     iput v5, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
     return-void
@@ -174,31 +174,29 @@
         }
     .end annotation
 
-    .line 460
+    .line 461
     iget v0, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
     if-eqz v0, :cond_0
 
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
-    add-int/lit8 v0, v0, -0x1
+    add-int/lit8 v2, v0, -0x1
 
-    aget v0, v1, v0
+    aget v1, v1, v2
 
-    if-gt p1, v0, :cond_0
+    if-gt p1, v1, :cond_0
 
-    .line 461
+    .line 462
     invoke-virtual {p0, p1, p2}, Landroidx/collection/SparseArrayCompat;->put(ILjava/lang/Object;)V
 
     return-void
 
-    .line 465
+    .line 466
     :cond_0
-    iget-boolean v0, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
+    iget-boolean v1, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
-    if-eqz v0, :cond_1
-
-    iget v0, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
+    if-eqz v1, :cond_1
 
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
@@ -206,14 +204,14 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 466
+    .line 467
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
-    .line 469
+    .line 470
     :cond_1
     iget v0, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
-    .line 470
+    .line 471
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     array-length v1, v1
@@ -222,18 +220,18 @@
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 471
+    .line 472
     invoke-static {v1}, Landroidx/collection/ContainerHelpers;->idealIntArraySize(I)I
 
     move-result v1
 
-    .line 473
+    .line 474
     new-array v2, v1, [I
 
-    .line 474
+    .line 475
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 477
+    .line 478
     iget-object v3, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     array-length v4, v3
@@ -242,33 +240,33 @@
 
     invoke-static {v3, v5, v2, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 478
+    .line 479
     iget-object v3, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     array-length v4, v3
 
     invoke-static {v3, v5, v1, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 480
+    .line 481
     iput-object v2, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
-    .line 481
+    .line 482
     iput-object v1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
-    .line 484
+    .line 485
     :cond_2
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     aput p1, v1, v0
 
-    .line 485
+    .line 486
     iget-object p1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     aput-object p2, p1, v0
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 486
+    .line 487
     iput v0, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
     return-void
@@ -277,10 +275,10 @@
 .method public clear()V
     .locals 5
 
-    .line 444
+    .line 445
     iget v0, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
-    .line 445
+    .line 446
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -292,18 +290,18 @@
 
     const/4 v4, 0x0
 
-    .line 448
+    .line 449
     aput-object v4, v1, v3
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 451
+    .line 452
     :cond_0
     iput v2, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
-    .line 452
+    .line 453
     iput-boolean v2, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
     return-void
@@ -383,7 +381,7 @@
 .method public containsKey(I)Z
     .locals 0
 
-    .line 432
+    .line 433
     invoke-virtual {p0, p1}, Landroidx/collection/SparseArrayCompat;->indexOfKey(I)I
 
     move-result p1
@@ -409,7 +407,7 @@
         }
     .end annotation
 
-    .line 437
+    .line 438
     invoke-virtual {p0, p1}, Landroidx/collection/SparseArrayCompat;->indexOfValue(Ljava/lang/Object;)I
 
     move-result p1
@@ -500,15 +498,15 @@
 .method public indexOfKey(I)I
     .locals 2
 
-    .line 401
+    .line 402
     iget-boolean v0, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
     if-eqz v0, :cond_0
 
-    .line 402
+    .line 403
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
-    .line 405
+    .line 406
     :cond_0
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
@@ -529,24 +527,24 @@
         }
     .end annotation
 
-    .line 419
+    .line 420
     iget-boolean v0, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
     if-eqz v0, :cond_0
 
-    .line 420
+    .line 421
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
     :cond_0
     const/4 v0, 0x0
 
-    .line 423
+    .line 424
     :goto_0
     iget v1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
     if-ge v0, v1, :cond_2
 
-    .line 424
+    .line 425
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     aget-object v1, v1, v0
@@ -569,7 +567,7 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 352
+    .line 353
     invoke-virtual {p0}, Landroidx/collection/SparseArrayCompat;->size()I
 
     move-result v0
@@ -590,15 +588,15 @@
 .method public keyAt(I)I
     .locals 1
 
-    .line 361
+    .line 362
     iget-boolean v0, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
     if-eqz v0, :cond_0
 
-    .line 362
+    .line 363
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
-    .line 365
+    .line 366
     :cond_0
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
@@ -615,7 +613,7 @@
         }
     .end annotation
 
-    .line 261
+    .line 262
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     iget v1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
@@ -626,7 +624,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 264
+    .line 265
     iget-object p1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     aput-object p2, p1, v0
@@ -636,36 +634,34 @@
     :cond_0
     not-int v0, v0
 
-    .line 268
+    .line 269
     iget v1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
     if-ge v0, v1, :cond_1
 
-    iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
-    aget-object v2, v1, v0
+    aget-object v3, v2, v0
 
-    sget-object v3, Landroidx/collection/SparseArrayCompat;->DELETED:Ljava/lang/Object;
+    sget-object v4, Landroidx/collection/SparseArrayCompat;->DELETED:Ljava/lang/Object;
 
-    if-ne v2, v3, :cond_1
-
-    .line 269
-    iget-object v2, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
-
-    aput p1, v2, v0
+    if-ne v3, v4, :cond_1
 
     .line 270
-    aput-object p2, v1, v0
+    iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
+
+    aput p1, v1, v0
+
+    .line 271
+    aput-object p2, v2, v0
 
     return-void
 
-    .line 274
+    .line 275
     :cond_1
-    iget-boolean v1, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
+    iget-boolean v2, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
-    if-eqz v1, :cond_2
-
-    iget v1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
+    if-eqz v2, :cond_2
 
     iget-object v2, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
@@ -673,10 +669,10 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 275
+    .line 276
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
-    .line 278
+    .line 279
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     iget v1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
@@ -687,7 +683,7 @@
 
     not-int v0, v0
 
-    .line 281
+    .line 282
     :cond_2
     iget v1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
@@ -699,18 +695,18 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 282
+    .line 283
     invoke-static {v1}, Landroidx/collection/ContainerHelpers;->idealIntArraySize(I)I
 
     move-result v1
 
-    .line 284
+    .line 285
     new-array v2, v1, [I
 
-    .line 285
+    .line 286
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 288
+    .line 289
     iget-object v3, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     array-length v4, v3
@@ -719,20 +715,20 @@
 
     invoke-static {v3, v5, v2, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 289
+    .line 290
     iget-object v3, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     array-length v4, v3
 
     invoke-static {v3, v5, v1, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 291
+    .line 292
     iput-object v2, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
-    .line 292
+    .line 293
     iput-object v1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
-    .line 295
+    .line 296
     :cond_3
     iget v1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
@@ -740,7 +736,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 297
+    .line 298
     iget-object v2, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     add-int/lit8 v3, v0, 0x1
@@ -749,7 +745,7 @@
 
     invoke-static {v2, v0, v2, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 298
+    .line 299
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     iget v2, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
@@ -758,18 +754,18 @@
 
     invoke-static {v1, v0, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 301
+    .line 302
     :cond_4
     iget-object v1, p0, Landroidx/collection/SparseArrayCompat;->mKeys:[I
 
     aput p1, v1, v0
 
-    .line 302
+    .line 303
     iget-object p1, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     aput-object p2, p1, v0
 
-    .line 303
+    .line 304
     iget p1, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
     add-int/lit8 p1, p1, 0x1
@@ -790,7 +786,7 @@
         }
     .end annotation
 
-    .line 313
+    .line 314
     invoke-virtual {p1}, Landroidx/collection/SparseArrayCompat;->size()I
 
     move-result v0
@@ -800,7 +796,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 314
+    .line 315
     invoke-virtual {p1, v1}, Landroidx/collection/SparseArrayCompat;->keyAt(I)I
 
     move-result v2
@@ -827,14 +823,14 @@
         }
     .end annotation
 
-    .line 328
+    .line 329
     invoke-virtual {p0, p1}, Landroidx/collection/SparseArrayCompat;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 330
+    .line 331
     invoke-virtual {p0, p1, p2}, Landroidx/collection/SparseArrayCompat;->put(ILjava/lang/Object;)V
 
     :cond_0
@@ -974,19 +970,19 @@
         }
     .end annotation
 
-    .line 198
+    .line 199
     invoke-virtual {p0, p1}, Landroidx/collection/SparseArrayCompat;->indexOfKey(I)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 200
+    .line 201
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     aget-object v1, v0, p1
 
-    .line 201
+    .line 202
     aput-object p2, v0, p1
 
     return-object v1
@@ -1005,14 +1001,14 @@
         }
     .end annotation
 
-    .line 216
+    .line 217
     invoke-virtual {p0, p1}, Landroidx/collection/SparseArrayCompat;->indexOfKey(I)I
 
     move-result p1
 
     if-ltz p1, :cond_1
 
-    .line 218
+    .line 219
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
     aget-object v0, v0, p1
@@ -1021,14 +1017,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 219
+    .line 220
     invoke-virtual {p2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 220
+    .line 221
     :cond_0
     iget-object p2, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
@@ -1052,15 +1048,15 @@
         }
     .end annotation
 
-    .line 388
+    .line 389
     iget-boolean v0, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
     if-eqz v0, :cond_0
 
-    .line 389
+    .line 390
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
-    .line 392
+    .line 393
     :cond_0
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 
@@ -1072,15 +1068,15 @@
 .method public size()I
     .locals 1
 
-    .line 340
+    .line 341
     iget-boolean v0, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
     if-eqz v0, :cond_0
 
-    .line 341
+    .line 342
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
-    .line 344
+    .line 345
     :cond_0
     iget v0, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
@@ -1090,7 +1086,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 498
+    .line 499
     invoke-virtual {p0}, Landroidx/collection/SparseArrayCompat;->size()I
 
     move-result v0
@@ -1101,7 +1097,7 @@
 
     return-object v0
 
-    .line 502
+    .line 503
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1113,12 +1109,12 @@
 
     const/16 v1, 0x7b
 
-    .line 503
+    .line 504
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
-    .line 504
+    .line 505
     :goto_0
     iget v2, p0, Landroidx/collection/SparseArrayCompat;->mSize:I
 
@@ -1128,31 +1124,31 @@
 
     const-string v2, ", "
 
-    .line 506
+    .line 507
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 508
+    .line 509
     :cond_1
     invoke-virtual {p0, v1}, Landroidx/collection/SparseArrayCompat;->keyAt(I)I
 
     move-result v2
 
-    .line 509
+    .line 510
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const/16 v2, 0x3d
 
-    .line 510
+    .line 511
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 511
+    .line 512
     invoke-virtual {p0, v1}, Landroidx/collection/SparseArrayCompat;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v2
 
     if-eq v2, p0, :cond_2
 
-    .line 513
+    .line 514
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -1160,7 +1156,7 @@
     :cond_2
     const-string v2, "(this Map)"
 
-    .line 515
+    .line 516
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_1
@@ -1171,10 +1167,10 @@
     :cond_3
     const/16 v1, 0x7d
 
-    .line 518
+    .line 519
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 519
+    .line 520
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -1190,15 +1186,15 @@
         }
     .end annotation
 
-    .line 375
+    .line 376
     iget-boolean v0, p0, Landroidx/collection/SparseArrayCompat;->mGarbage:Z
 
     if-eqz v0, :cond_0
 
-    .line 376
+    .line 377
     invoke-direct {p0}, Landroidx/collection/SparseArrayCompat;->gc()V
 
-    .line 379
+    .line 380
     :cond_0
     iget-object v0, p0, Landroidx/collection/SparseArrayCompat;->mValues:[Ljava/lang/Object;
 

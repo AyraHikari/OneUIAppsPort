@@ -56,6 +56,14 @@
 
 .method public constructor <init>(Landroid/bluetooth/BluetoothDevice;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "device"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;-><init>()V
@@ -140,6 +148,16 @@
 
 .method public constructor <init>(Landroid/net/nsd/NsdServiceInfo;Landroid/net/nsd/NsdServiceInfo;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authInfo",
+            "notiInfo"
+        }
+    .end annotation
 
     .line 84
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;-><init>()V
@@ -208,6 +226,14 @@
 
 .method public constructor <init>(Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "info"
+        }
+    .end annotation
 
     .line 74
     invoke-direct {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;-><init>()V
@@ -222,7 +248,11 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    invoke-static {p1}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->valueOf(I)Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     move-result-object p1
 
@@ -234,6 +264,14 @@
 
 .method private isTabletType(Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "manufacturerData"
+        }
+    .end annotation
 
     .line 70
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/discovery/bt/ManufacturerData;->getDeviceCategory()B
@@ -268,10 +306,27 @@
     return-void
 .end method
 
+.method public clearWIFIDevice()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 121
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
+
+    .line 123
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
+
+    .line 124
+    iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
+
+    return-void
+.end method
+
 .method public getAuthNsdServiceInfo()Landroid/net/nsd/NsdServiceInfo;
     .locals 1
 
-    .line 129
+    .line 136
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     return-object v0
@@ -280,25 +335,25 @@
 .method public getAuthPortNum()I
     .locals 1
 
-    .line 145
+    .line 152
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     if-eqz v0, :cond_0
 
-    .line 146
+    .line 153
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getPortNumber()I
 
     move-result v0
 
     return v0
 
-    .line 149
+    .line 156
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_1
 
-    .line 150
+    .line 157
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getPort()I
 
     move-result v0
@@ -314,7 +369,7 @@
 .method public getBluetoothDevice()Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
-    .line 121
+    .line 128
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     return-object v0
@@ -323,12 +378,12 @@
 .method public getDeviceId()Ljava/lang/String;
     .locals 3
 
-    .line 250
+    .line 257
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_2
 
-    .line 251
+    .line 258
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v0
@@ -341,7 +396,7 @@
 
     const-string v1, "BT mac hashedBytes is null"
 
-    .line 253
+    .line 260
     invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->d(Ljava/lang/String;)V
 
     :cond_0
@@ -353,7 +408,7 @@
 
     goto :goto_0
 
-    .line 255
+    .line 262
     :cond_1
     invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/Utils;->byteToInt([B)I
 
@@ -364,7 +419,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 256
+    .line 263
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -379,26 +434,26 @@
 
     return-object v0
 
-    .line 260
+    .line 267
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     if-eqz v0, :cond_3
 
-    .line 261
+    .line 268
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getDeviceID()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 264
+    .line 271
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_4
 
-    .line 265
+    .line 272
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v0
@@ -421,13 +476,13 @@
 
     return-object v0
 
-    .line 268
+    .line 275
     :cond_4
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_5
 
-    .line 269
+    .line 276
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v0
@@ -459,38 +514,38 @@
 .method public getDeviceName()Ljava/lang/String;
     .locals 3
 
-    .line 185
+    .line 192
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_0
 
-    .line 186
+    .line 193
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 189
+    .line 196
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     if-eqz v0, :cond_1
 
-    .line 190
+    .line 197
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getDeviceName()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 193
+    .line 200
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_2
 
-    .line 194
+    .line 201
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v0
@@ -515,13 +570,13 @@
 
     return-object v0
 
-    .line 197
+    .line 204
     :cond_2
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object v0
 
-    const v1, 0x7f10007d
+    const v1, 0x7f11008d
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->getString(I)Ljava/lang/String;
 
@@ -533,7 +588,7 @@
 .method public getDeviceType()Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
     .locals 1
 
-    .line 141
+    .line 148
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mDeviceType:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     return-object v0
@@ -542,19 +597,19 @@
 .method public getIPAddress()Ljava/lang/String;
     .locals 1
 
-    .line 234
+    .line 241
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     if-eqz v0, :cond_0
 
-    .line 235
+    .line 242
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getDeviceIP()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 238
+    .line 245
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
@@ -566,7 +621,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 239
+    .line 246
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getHost()Ljava/net/InetAddress;
@@ -579,7 +634,7 @@
 
     return-object v0
 
-    .line 242
+    .line 249
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
@@ -591,7 +646,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 243
+    .line 250
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getHost()Ljava/net/InetAddress;
@@ -613,7 +668,7 @@
 .method public getIsEnrolled()Z
     .locals 1
 
-    .line 374
+    .line 383
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->isEnrolled:Z
 
     return v0
@@ -622,7 +677,7 @@
 .method public getIsSelected()Z
     .locals 1
 
-    .line 366
+    .line 375
     iget-boolean v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->isSelected:Z
 
     return v0
@@ -631,7 +686,7 @@
 .method public getMACAddress()Ljava/lang/String;
     .locals 1
 
-    .line 201
+    .line 208
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getBluetoothDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v0
@@ -642,7 +697,7 @@
 
     return-object v0
 
-    .line 204
+    .line 211
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getBluetoothDevice()Landroid/bluetooth/BluetoothDevice;
 
@@ -658,7 +713,7 @@
 .method public getMajorDeviceClass()I
     .locals 6
 
-    .line 321
+    .line 328
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_0
@@ -669,7 +724,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 322
+    .line 329
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
@@ -680,11 +735,36 @@
 
     move-result v0
 
+    .line 330
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "BT device class : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
     and-int/lit16 v0, v0, 0x1f00
 
     return v0
 
-    .line 326
+    .line 334
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
@@ -696,7 +776,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 327
+    .line 335
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getDeviceType()Ljava/lang/String;
 
     move-result-object v0
@@ -709,12 +789,37 @@
 
     move v1, v3
 
+    .line 340
     :cond_1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "ServiceInfo device class : "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
     and-int/lit16 v0, v1, 0x1f00
 
     return v0
 
-    .line 336
+    .line 344
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
@@ -724,7 +829,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 337
+    .line 345
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v0
@@ -733,7 +838,7 @@
 
     move-result-object v0
 
-    .line 338
+    .line 346
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -742,18 +847,43 @@
 
     move v1, v3
 
+    .line 352
     :cond_3
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "NsdAuthServiceInfo device class : "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
     and-int/lit16 v0, v1, 0x1f00
 
     return v0
 
-    .line 347
+    .line 356
     :cond_4
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_6
 
-    .line 348
+    .line 357
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v0
@@ -762,7 +892,7 @@
 
     move-result-object v0
 
-    .line 349
+    .line 358
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -771,7 +901,32 @@
 
     move v1, v3
 
+    .line 363
     :cond_5
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "NsdNotiServiceInfo device class : "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/galaxycontinuity/util/FlowLog;->i(Ljava/lang/String;)V
+
     and-int/lit16 v0, v1, 0x1f00
 
     return v0
@@ -783,7 +938,7 @@
 .method public getNotiNsdServiceInfo()Landroid/net/nsd/NsdServiceInfo;
     .locals 1
 
-    .line 133
+    .line 140
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     return-object v0
@@ -792,32 +947,32 @@
 .method public getNotiPortNum()I
     .locals 1
 
-    .line 157
+    .line 164
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     if-eqz v0, :cond_0
 
-    .line 158
+    .line 165
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getNotiPortNumber()I
 
     move-result v0
 
     return v0
 
-    .line 161
+    .line 168
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_1
 
-    .line 162
+    .line 169
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getPort()I
 
     move-result v0
 
     return v0
 
-    .line 165
+    .line 172
     :cond_1
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNotiPortNum:I
 
@@ -827,7 +982,7 @@
 .method public getServiceInfo()Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
     .locals 1
 
-    .line 125
+    .line 132
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     return-object v0
@@ -836,7 +991,7 @@
 .method public isAuthIPAddressResolved()Z
     .locals 2
 
-    .line 208
+    .line 215
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     const/4 v1, 0x1
@@ -845,13 +1000,13 @@
 
     return v1
 
-    .line 212
+    .line 219
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_1
 
-    .line 213
+    .line 220
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getHost()Ljava/net/InetAddress;
 
     move-result-object v0
@@ -869,7 +1024,7 @@
 .method public isBTConnectionAvailable()Z
     .locals 1
 
-    .line 181
+    .line 188
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_0
@@ -888,7 +1043,7 @@
 .method public isBothConnectionAvailable()Z
     .locals 1
 
-    .line 173
+    .line 180
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->isWiFiConnectionAvailable()Z
 
     move-result v0
@@ -915,7 +1070,7 @@
 .method public isDeviceClassPhone()Z
     .locals 2
 
-    .line 311
+    .line 318
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getMajorDeviceClass()I
 
     move-result v0
@@ -938,7 +1093,7 @@
 .method public isDeviceClassWearable()Z
     .locals 2
 
-    .line 315
+    .line 322
     invoke-virtual {p0}, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->getMajorDeviceClass()I
 
     move-result v0
@@ -960,8 +1115,16 @@
 
 .method public isHaveSameID(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "phoneID"
+        }
+    .end annotation
 
-    .line 378
+    .line 387
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     const/4 v1, 0x0
@@ -970,7 +1133,7 @@
 
     return v1
 
-    .line 382
+    .line 391
     :cond_0
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
@@ -980,7 +1143,7 @@
 
     return v1
 
-    .line 386
+    .line 395
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
@@ -998,7 +1161,7 @@
 .method public isNotiIPAddressResolved()Z
     .locals 2
 
-    .line 221
+    .line 228
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     const/4 v1, 0x1
@@ -1007,13 +1170,13 @@
 
     return v1
 
-    .line 225
+    .line 232
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_1
 
-    .line 226
+    .line 233
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getHost()Ljava/net/InetAddress;
 
     move-result-object v0
@@ -1031,7 +1194,7 @@
 .method public isPhone()Z
     .locals 8
 
-    .line 276
+    .line 283
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
@@ -1046,12 +1209,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 280
+    .line 287
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 281
+    .line 288
     iget-object v3, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {v3}, Landroid/bluetooth/BluetoothDevice;->semGetManufacturerDeviceIconIndex()[B
@@ -1069,7 +1232,7 @@
 
     new-array v7, v2, [Ljava/lang/Object;
 
-    .line 282
+    .line 289
     invoke-static {v6}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object v6
@@ -1088,7 +1251,7 @@
 
     goto :goto_0
 
-    .line 285
+    .line 292
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1104,7 +1267,7 @@
 
     return v2
 
-    .line 290
+    .line 297
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
@@ -1112,7 +1275,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 291
+    .line 298
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;->getDeviceType()Ljava/lang/String;
 
     move-result-object v0
@@ -1125,13 +1288,13 @@
 
     return v2
 
-    .line 295
+    .line 302
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdAuthServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_3
 
-    .line 296
+    .line 303
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v0
@@ -1140,7 +1303,7 @@
 
     move-result-object v0
 
-    .line 297
+    .line 304
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1149,13 +1312,13 @@
 
     return v2
 
-    .line 301
+    .line 308
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNsdNotiServiceInfo:Landroid/net/nsd/NsdServiceInfo;
 
     if-eqz v0, :cond_4
 
-    .line 302
+    .line 309
     invoke-virtual {v0}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
     move-result-object v0
@@ -1164,7 +1327,7 @@
 
     move-result-object v0
 
-    .line 303
+    .line 310
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1180,7 +1343,7 @@
 .method public isWiFiConnectionAvailable()Z
     .locals 1
 
-    .line 177
+    .line 184
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;
 
     if-nez v0, :cond_1
@@ -1207,7 +1370,7 @@
 .method public removeBluetoothDevice()V
     .locals 2
 
-    .line 390
+    .line 399
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mSelectedConnectionType:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
 
     sget-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;->BLUETOOTH:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
@@ -1220,7 +1383,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 391
+    .line 400
     sget-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;->WIFI:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mSelectedConnectionType:Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice$CONNECTION_TYPE;
@@ -1228,7 +1391,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 394
+    .line 403
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
 
     return-void
@@ -1236,8 +1399,16 @@
 
 .method public setDeviceType(Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 137
+    .line 144
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mDeviceType:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     return-void
@@ -1245,8 +1416,16 @@
 
 .method public setEnrolled(Ljava/lang/Boolean;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enrolled"
+        }
+    .end annotation
 
-    .line 370
+    .line 379
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -1258,8 +1437,16 @@
 
 .method public setNotiPortNum(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "portNum"
+        }
+    .end annotation
 
-    .line 169
+    .line 176
     iput p1, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mNotiPortNum:I
 
     return-void
@@ -1267,8 +1454,16 @@
 
 .method public setSelected(Ljava/lang/Boolean;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selected"
+        }
+    .end annotation
 
-    .line 362
+    .line 371
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -1280,6 +1475,14 @@
 
 .method public update(Landroid/bluetooth/BluetoothDevice;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "btDevice"
+        }
+    .end annotation
 
     .line 99
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mBTDevice:Landroid/bluetooth/BluetoothDevice;
@@ -1289,6 +1492,16 @@
 
 .method public update(Landroid/net/nsd/NsdServiceInfo;Landroid/net/nsd/NsdServiceInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "authInfo",
+            "notiInfo"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -1307,6 +1520,14 @@
 
 .method public update(Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "serviceInfo"
+        }
+    .end annotation
 
     .line 107
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/data/FlowHostDevice;->mServiceInfo:Lcom/samsung/android/galaxycontinuity/data/ServiceProtocolData;

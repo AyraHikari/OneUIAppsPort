@@ -1,20 +1,26 @@
 .class public final synthetic Lkotlin/collections/AbstractIterator$WhenMappings;
 .super Ljava/lang/Object;
+.source "AbstractIterator.kt"
 
 
 # annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkotlin/collections/AbstractIterator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1001
+    name = "WhenMappings"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     k = 0x3
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -23,7 +29,7 @@
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
+.method static constructor <clinit>()V
     .locals 3
 
     invoke-static {}, Lkotlin/collections/State;->values()[Lkotlin/collections/State;
@@ -33,8 +39,6 @@
     array-length v0, v0
 
     new-array v0, v0, [I
-
-    sput-object v0, Lkotlin/collections/AbstractIterator$WhenMappings;->$EnumSwitchMapping$0:[I
 
     sget-object v1, Lkotlin/collections/State;->Done:Lkotlin/collections/State;
 
@@ -46,8 +50,6 @@
 
     aput v2, v0, v1
 
-    sget-object v0, Lkotlin/collections/AbstractIterator$WhenMappings;->$EnumSwitchMapping$0:[I
-
     sget-object v1, Lkotlin/collections/State;->Ready:Lkotlin/collections/State;
 
     invoke-virtual {v1}, Lkotlin/collections/State;->ordinal()I
@@ -57,6 +59,8 @@
     const/4 v2, 0x2
 
     aput v2, v0, v1
+
+    sput-object v0, Lkotlin/collections/AbstractIterator$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void
 .end method

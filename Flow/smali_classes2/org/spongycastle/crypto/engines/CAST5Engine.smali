@@ -2907,15 +2907,21 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     invoke-virtual {p0}, Lorg/spongycastle/crypto/engines/CAST5Engine;->getAlgorithmName()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     const-string v1, " init - "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -2927,7 +2933,9 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -3017,9 +3025,13 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object p2
+
     const-string p3, " not initialised"
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3037,7 +3049,7 @@
 .end method
 
 .method protected setKey([B)V
-    .locals 27
+    .locals 29
 
     move-object/from16 v0, p0
 
@@ -3115,649 +3127,577 @@
 
     aget v15, v6, v14
 
-    aget v13, v13, v15
+    aget v15, v13, v15
 
-    xor-int/2addr v1, v13
+    xor-int/2addr v1, v15
 
-    sget-object v13, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    sget-object v15, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
 
-    const/16 v15, 0xf
+    const/16 v16, 0xf
 
-    aget v16, v6, v15
+    aget v17, v6, v16
 
-    aget v13, v13, v16
+    aget v17, v15, v17
 
-    xor-int/2addr v1, v13
+    xor-int v1, v1, v17
 
-    sget-object v13, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    sget-object v17, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
 
-    aget v16, v6, v4
+    aget v18, v6, v4
 
-    aget v16, v13, v16
+    aget v18, v17, v18
 
-    xor-int v1, v1, v16
+    xor-int v1, v1, v18
 
-    sget-object v16, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    sget-object v18, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
 
-    const/16 v17, 0xe
+    const/16 v19, 0xe
 
-    aget v18, v6, v17
+    aget v20, v6, v19
 
-    aget v16, v16, v18
+    aget v20, v18, v20
 
-    xor-int v1, v1, v16
+    xor-int v1, v1, v20
 
-    aget v16, v6, v10
+    aget v20, v6, v10
 
-    aget v13, v13, v16
+    aget v20, v17, v20
 
-    xor-int/2addr v1, v13
+    xor-int v1, v1, v20
 
     .line 441
     invoke-virtual {v0, v1, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 442
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v1, v5, v7
 
-    aget v13, v5, v7
-
-    aget v1, v1, v13
+    aget v1, v13, v1
 
     xor-int/2addr v1, v11
 
-    sget-object v11, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    const/4 v11, 0x2
 
-    const/4 v13, 0x2
+    aget v20, v5, v11
 
-    aget v16, v5, v13
+    aget v20, v15, v20
 
-    aget v11, v11, v16
+    xor-int v1, v1, v20
 
-    xor-int/2addr v1, v11
+    const/16 v20, 0x1
 
-    sget-object v11, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    aget v21, v5, v20
 
-    const/16 v16, 0x1
+    aget v21, v17, v21
 
-    aget v18, v5, v16
+    xor-int v1, v1, v21
 
-    aget v11, v11, v18
+    const/16 v21, 0x3
 
-    xor-int/2addr v1, v11
+    aget v22, v5, v21
 
-    sget-object v11, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v22, v18, v22
 
-    const/16 v18, 0x3
+    xor-int v1, v1, v22
 
-    aget v19, v5, v18
+    const/16 v22, 0xa
 
-    aget v19, v11, v19
+    aget v23, v6, v22
 
-    xor-int v1, v1, v19
+    aget v23, v18, v23
 
-    const/16 v19, 0xa
-
-    aget v20, v6, v19
-
-    aget v11, v11, v20
-
-    xor-int/2addr v1, v11
+    xor-int v1, v1, v23
 
     .line 443
     invoke-virtual {v0, v1, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
+    const/4 v1, 0x7
+
     .line 444
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v23, v5, v1
 
-    const/4 v11, 0x7
+    aget v23, v13, v23
 
-    aget v20, v5, v11
+    xor-int v12, v12, v23
 
-    aget v20, v1, v20
+    const/16 v23, 0x6
 
-    xor-int v12, v12, v20
+    aget v24, v5, v23
 
-    sget-object v20, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    const/16 v21, 0x6
-
-    aget v22, v5, v21
-
-    aget v20, v20, v22
-
-    xor-int v12, v12, v20
-
-    sget-object v20, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    const/16 v22, 0x5
-
-    aget v23, v5, v22
-
-    aget v20, v20, v23
-
-    xor-int v12, v12, v20
-
-    sget-object v20, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v23, v5, v8
-
-    aget v20, v20, v23
-
-    xor-int v12, v12, v20
-
-    const/16 v20, 0x9
-
-    aget v23, v6, v20
-
-    aget v1, v1, v23
-
-    xor-int/2addr v1, v12
-
-    .line 445
-    invoke-virtual {v0, v1, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 446
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v12, v5, v19
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v12, v5, v20
-
-    aget v12, v9, v12
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v23, v5, v3
-
-    aget v12, v12, v23
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v23, v5, v10
-
-    aget v12, v12, v23
-
-    xor-int/2addr v1, v12
-
-    aget v12, v6, v3
-
-    aget v9, v9, v12
-
-    xor-int/2addr v1, v9
-
-    .line 447
-    invoke-virtual {v0, v1, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 448
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v12, v5, v10
-
-    aget v12, v9, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v20
-
-    aget v24, v23, v24
+    aget v24, v15, v24
 
     xor-int v12, v12, v24
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    const/16 v24, 0x5
 
-    aget v25, v5, v11
+    aget v25, v5, v24
 
-    aget v25, v24, v25
+    aget v25, v17, v25
 
     xor-int v12, v12, v25
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v25, v5, v8
 
-    aget v26, v5, v21
+    aget v25, v18, v25
 
-    aget v26, v25, v26
+    xor-int v12, v12, v25
+
+    const/16 v25, 0x9
+
+    aget v26, v6, v25
+
+    aget v26, v13, v26
 
     xor-int v12, v12, v26
 
-    aget v26, v5, v13
+    .line 445
+    invoke-virtual {v0, v12, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
-    aget v26, v9, v26
+    .line 446
+    aget v12, v5, v22
+
+    aget v12, v13, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v25
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v3
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v10
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v3
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    .line 447
+    invoke-virtual {v0, v9, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 448
+    iget-object v9, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
+
+    aget v12, v5, v10
+
+    aget v12, v13, v12
+
+    aget v26, v5, v25
+
+    aget v26, v15, v26
 
     xor-int v12, v12, v26
 
-    aput v12, v1, v16
+    aget v26, v5, v1
+
+    aget v26, v17, v26
+
+    xor-int v12, v12, v26
+
+    aget v26, v5, v23
+
+    aget v26, v18, v26
+
+    xor-int v12, v12, v26
+
+    aget v26, v5, v11
+
+    aget v26, v13, v26
+
+    xor-int v12, v12, v26
+
+    aput v12, v9, v20
 
     .line 449
-    aget v12, v5, v19
+    aget v12, v5, v22
 
-    aget v12, v9, v12
+    aget v12, v13, v12
 
     aget v26, v5, v3
 
-    aget v26, v23, v26
+    aget v26, v15, v26
 
     xor-int v12, v12, v26
 
-    aget v26, v5, v22
+    aget v26, v5, v24
 
-    aget v26, v24, v26
+    aget v26, v17, v26
 
     xor-int v12, v12, v26
 
     aget v26, v5, v8
 
-    aget v26, v25, v26
+    aget v26, v18, v26
+
+    xor-int v12, v12, v26
+
+    aget v26, v5, v23
+
+    aget v26, v15, v26
+
+    xor-int v12, v12, v26
+
+    aput v12, v9, v11
+
+    .line 450
+    aget v12, v5, v4
+
+    aget v12, v13, v12
+
+    aget v26, v5, v14
+
+    aget v26, v15, v26
 
     xor-int v12, v12, v26
 
     aget v26, v5, v21
 
-    aget v26, v23, v26
+    aget v26, v17, v26
 
     xor-int v12, v12, v26
 
-    aput v12, v1, v13
+    aget v26, v5, v11
 
-    .line 450
-    aget v12, v5, v4
-
-    aget v12, v9, v12
-
-    aget v26, v5, v14
-
-    aget v26, v23, v26
+    aget v26, v18, v26
 
     xor-int v12, v12, v26
 
-    aget v26, v5, v18
+    aget v26, v5, v25
 
-    aget v26, v24, v26
+    aget v26, v17, v26
 
     xor-int v12, v12, v26
 
-    aget v26, v5, v13
+    aput v12, v9, v21
 
-    aget v26, v25, v26
+    .line 451
+    aget v12, v5, v19
+
+    aget v12, v13, v12
+
+    aget v26, v5, v16
+
+    aget v26, v15, v26
 
     xor-int v12, v12, v26
 
     aget v26, v5, v20
 
-    aget v26, v24, v26
+    aget v26, v17, v26
 
     xor-int v12, v12, v26
 
-    aput v12, v1, v18
+    aget v26, v5, v7
 
-    .line 451
-    aget v12, v5, v17
+    aget v26, v18, v26
 
-    aget v9, v9, v12
+    xor-int v12, v12, v26
 
-    aget v12, v5, v15
+    aget v26, v5, v4
 
-    aget v12, v23, v12
+    aget v26, v18, v26
 
-    xor-int/2addr v9, v12
+    xor-int v12, v12, v26
 
-    aget v12, v5, v16
-
-    aget v12, v24, v12
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v7
-
-    aget v12, v25, v12
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v4
-
-    aget v12, v25, v12
-
-    xor-int/2addr v9, v12
-
-    aput v9, v1, v8
+    aput v12, v9, v8
 
     .line 453
     invoke-virtual {v0, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v1
+    move-result v9
 
     .line 454
     invoke-virtual {v0, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v9
+    move-result v12
 
     .line 455
     invoke-virtual {v0, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v12
+    move-result v26
 
     .line 456
     invoke-virtual {v0, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v23
+    move-result v27
 
     .line 457
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v28, v5, v24
 
-    aget v25, v5, v22
+    aget v28, v13, v28
 
-    aget v24, v24, v25
+    xor-int v26, v26, v28
 
-    xor-int v12, v12, v24
+    aget v28, v5, v1
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v28, v15, v28
 
-    aget v25, v5, v11
+    xor-int v26, v26, v28
 
-    aget v24, v24, v25
+    aget v28, v5, v8
 
-    xor-int v12, v12, v24
+    aget v28, v17, v28
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int v26, v26, v28
 
-    aget v25, v5, v8
+    aget v28, v5, v23
 
-    aget v25, v24, v25
+    aget v28, v18, v28
 
-    xor-int v12, v12, v25
+    xor-int v26, v26, v28
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v28, v5, v7
 
-    aget v26, v5, v21
+    aget v28, v17, v28
 
-    aget v25, v25, v26
-
-    xor-int v12, v12, v25
-
-    aget v25, v5, v7
-
-    aget v24, v24, v25
-
-    xor-int v12, v12, v24
+    xor-int v2, v26, v28
 
     .line 458
-    invoke-virtual {v0, v12, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 459
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v2, v6, v7
 
-    aget v24, v6, v7
+    aget v2, v13, v2
 
-    aget v12, v12, v24
+    xor-int/2addr v2, v9
 
-    xor-int/2addr v1, v12
+    aget v9, v6, v11
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v9, v15, v9
 
-    aget v24, v6, v13
+    xor-int/2addr v2, v9
 
-    aget v12, v12, v24
+    aget v9, v6, v20
 
-    xor-int/2addr v1, v12
+    aget v9, v17, v9
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int/2addr v2, v9
 
-    aget v24, v6, v16
+    aget v9, v6, v21
 
-    aget v12, v12, v24
+    aget v9, v18, v9
 
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v9
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v9, v5, v11
 
-    aget v24, v6, v18
+    aget v9, v18, v9
 
-    aget v24, v12, v24
-
-    xor-int v1, v1, v24
-
-    aget v24, v5, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v9
 
     .line 460
-    invoke-virtual {v0, v1, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 461
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v2, v6, v1
 
-    aget v12, v6, v11
+    aget v2, v13, v2
 
-    aget v12, v1, v12
+    xor-int/2addr v2, v12
 
-    xor-int/2addr v9, v12
+    aget v9, v6, v23
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v9, v15, v9
 
-    aget v24, v6, v21
+    xor-int/2addr v2, v9
 
-    aget v12, v12, v24
+    aget v9, v6, v24
 
-    xor-int/2addr v9, v12
+    aget v9, v17, v9
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int/2addr v2, v9
 
-    aget v24, v6, v22
+    aget v9, v6, v8
 
-    aget v12, v12, v24
+    aget v9, v18, v9
 
-    xor-int/2addr v9, v12
+    xor-int/2addr v2, v9
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v9, v5, v20
 
-    aget v24, v6, v8
+    aget v9, v13, v9
 
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v16
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
+    xor-int/2addr v2, v9
 
     .line 462
-    invoke-virtual {v0, v1, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 463
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v2, v6, v22
 
-    aget v9, v6, v19
+    aget v2, v13, v2
 
-    aget v1, v1, v9
+    xor-int v2, v27, v2
 
-    xor-int v1, v23, v1
+    aget v9, v6, v25
 
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v9, v15, v9
 
-    aget v12, v6, v20
+    xor-int/2addr v2, v9
 
-    aget v12, v9, v12
+    aget v9, v6, v3
 
-    xor-int/2addr v1, v12
+    aget v9, v17, v9
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int/2addr v2, v9
 
-    aget v23, v6, v3
+    aget v9, v6, v10
 
-    aget v12, v12, v23
+    aget v9, v18, v9
 
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v9
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v9, v5, v21
 
-    aget v23, v6, v10
+    aget v9, v15, v9
 
-    aget v12, v12, v23
-
-    xor-int/2addr v1, v12
-
-    aget v12, v5, v18
-
-    aget v9, v9, v12
-
-    xor-int/2addr v1, v9
+    xor-int/2addr v2, v9
 
     .line 464
-    invoke-virtual {v0, v1, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 465
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
+    iget-object v2, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
 
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v9, v6, v21
 
-    aget v12, v6, v18
+    aget v9, v13, v9
 
-    aget v12, v9, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v13
-
-    aget v24, v23, v24
-
-    xor-int v12, v12, v24
-
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v25, v6, v4
-
-    aget v25, v24, v25
-
-    xor-int v12, v12, v25
-
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v26, v6, v14
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v10
-
-    aget v26, v9, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v22
-
-    .line 466
-    aget v12, v6, v16
-
-    aget v12, v9, v12
-
-    aget v26, v6, v7
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v17
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v15
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v14
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v21
-
-    .line 467
     aget v12, v6, v11
 
-    aget v12, v9, v12
+    aget v12, v15, v12
 
-    aget v26, v6, v21
+    xor-int/2addr v9, v12
 
-    aget v26, v23, v26
+    aget v12, v6, v4
 
-    xor-int v12, v12, v26
+    aget v12, v17, v12
 
-    aget v26, v6, v10
+    xor-int/2addr v9, v12
 
-    aget v26, v24, v26
+    aget v12, v6, v14
 
-    xor-int v12, v12, v26
+    aget v12, v18, v12
 
-    aget v26, v6, v20
+    xor-int/2addr v9, v12
 
-    aget v26, v25, v26
+    aget v12, v6, v10
 
-    xor-int v12, v12, v26
+    aget v12, v13, v12
 
-    aget v26, v6, v18
+    xor-int/2addr v9, v12
 
-    aget v26, v24, v26
+    aput v9, v2, v24
 
-    xor-int v12, v12, v26
+    .line 466
+    aget v9, v6, v20
 
-    aput v12, v1, v11
+    aget v9, v13, v9
 
-    .line 468
-    aget v12, v6, v22
+    aget v12, v6, v7
 
-    aget v9, v9, v12
-
-    aget v12, v6, v8
-
-    aget v12, v23, v12
+    aget v12, v15, v12
 
     xor-int/2addr v9, v12
 
     aget v12, v6, v19
 
-    aget v12, v24, v12
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v16
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v14
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v23
+
+    .line 467
+    aget v9, v6, v1
+
+    aget v9, v13, v9
+
+    aget v12, v6, v23
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v10
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v25
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v21
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v1
+
+    .line 468
+    aget v9, v6, v24
+
+    aget v9, v13, v9
+
+    aget v12, v6, v8
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v22
+
+    aget v12, v17, v12
 
     xor-int/2addr v9, v12
 
     aget v12, v6, v3
 
-    aget v12, v25, v12
+    aget v12, v18, v12
 
     xor-int/2addr v9, v12
 
-    aget v12, v6, v11
+    aget v12, v6, v1
 
-    aget v12, v25, v12
+    aget v12, v18, v12
 
     xor-int/2addr v9, v12
 
-    aput v9, v1, v10
+    aput v9, v2, v10
 
     .line 470
     invoke-virtual {v0, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v1
+    move-result v2
 
     .line 471
     invoke-virtual {v0, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
@@ -3772,314 +3712,274 @@
     .line 473
     invoke-virtual {v0, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v23
+    move-result v26
 
     .line 474
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v27, v6, v14
 
-    aget v25, v6, v14
+    aget v27, v13, v27
 
-    aget v24, v24, v25
+    xor-int v2, v2, v27
 
-    xor-int v1, v1, v24
+    aget v27, v6, v16
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v27, v15, v27
 
-    aget v25, v6, v15
+    xor-int v2, v2, v27
 
-    aget v24, v24, v25
+    aget v27, v6, v4
 
-    xor-int v1, v1, v24
+    aget v27, v17, v27
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int v2, v2, v27
 
-    aget v25, v6, v4
+    aget v27, v6, v19
 
-    aget v25, v24, v25
+    aget v27, v18, v27
 
-    xor-int v1, v1, v25
+    xor-int v2, v2, v27
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v27, v6, v10
 
-    aget v26, v6, v17
+    aget v27, v17, v27
 
-    aget v25, v25, v26
-
-    xor-int v1, v1, v25
-
-    aget v25, v6, v10
-
-    aget v24, v24, v25
-
-    xor-int v1, v1, v24
+    xor-int v2, v2, v27
 
     .line 475
-    invoke-virtual {v0, v1, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 476
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v2, v5, v7
 
-    aget v24, v5, v7
+    aget v2, v13, v2
 
-    aget v1, v1, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v5, v16
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v5, v18
-
-    aget v24, v12, v24
-
-    xor-int v1, v1, v24
-
-    aget v24, v6, v19
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    .line 477
-    invoke-virtual {v0, v1, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 478
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    xor-int/2addr v2, v12
 
     aget v12, v5, v11
 
-    aget v12, v1, v12
+    aget v12, v15, v12
 
-    xor-int v12, v23, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v21
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v5, v22
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v5, v8
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    aget v23, v6, v20
-
-    aget v1, v1, v23
-
-    xor-int/2addr v1, v12
-
-    .line 479
-    invoke-virtual {v0, v1, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 480
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v12, v5, v19
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    xor-int/2addr v2, v12
 
     aget v12, v5, v20
 
-    aget v12, v9, v12
+    aget v12, v17, v12
 
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v12
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    aget v12, v5, v21
 
-    aget v23, v5, v3
+    aget v12, v18, v12
 
-    aget v12, v12, v23
+    xor-int/2addr v2, v12
 
-    xor-int/2addr v1, v12
+    aget v12, v6, v22
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v12, v18, v12
 
-    aget v23, v5, v10
+    xor-int/2addr v2, v12
 
-    aget v12, v12, v23
+    .line 477
+    invoke-virtual {v0, v2, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
-    xor-int/2addr v1, v12
+    .line 478
+    aget v2, v5, v1
 
-    aget v12, v6, v3
+    aget v2, v13, v2
 
-    aget v9, v9, v12
+    xor-int v2, v26, v2
 
-    xor-int/2addr v1, v9
+    aget v12, v5, v23
 
-    .line 481
-    invoke-virtual {v0, v1, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    aget v12, v15, v12
 
-    .line 482
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
+    xor-int/2addr v2, v12
 
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v12, v5, v24
 
-    aget v12, v5, v18
+    aget v12, v17, v12
 
-    aget v12, v9, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v13
-
-    aget v24, v23, v24
-
-    xor-int v12, v12, v24
-
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v25, v5, v4
-
-    aget v25, v24, v25
-
-    xor-int v12, v12, v25
-
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v26, v5, v14
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v20
-
-    aget v26, v9, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v20
-
-    .line 483
-    aget v12, v5, v16
-
-    aget v12, v9, v12
-
-    aget v26, v5, v7
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v17
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v15
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v4
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v19
-
-    .line 484
-    aget v12, v5, v11
-
-    aget v12, v9, v12
-
-    aget v26, v5, v21
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v10
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v20
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v13
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v3
-
-    .line 485
-    aget v12, v5, v22
-
-    aget v9, v9, v12
+    xor-int/2addr v2, v12
 
     aget v12, v5, v8
 
-    aget v12, v23, v12
+    aget v12, v18, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v6, v25
+
+    aget v12, v13, v12
+
+    xor-int/2addr v2, v12
+
+    .line 479
+    invoke-virtual {v0, v2, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 480
+    aget v2, v5, v22
+
+    aget v2, v13, v2
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v25
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v3
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v10
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v3
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    .line 481
+    invoke-virtual {v0, v2, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 482
+    iget-object v2, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
+
+    aget v9, v5, v21
+
+    aget v9, v13, v9
+
+    aget v12, v5, v11
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v4
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v14
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v25
+
+    aget v12, v13, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v25
+
+    .line 483
+    aget v9, v5, v20
+
+    aget v9, v13, v9
+
+    aget v12, v5, v7
+
+    aget v12, v15, v12
 
     xor-int/2addr v9, v12
 
     aget v12, v5, v19
 
-    aget v12, v24, v12
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v16
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v4
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v22
+
+    .line 484
+    aget v9, v5, v1
+
+    aget v9, v13, v9
+
+    aget v12, v5, v23
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v10
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v25
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v11
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v3
+
+    .line 485
+    aget v9, v5, v24
+
+    aget v9, v13, v9
+
+    aget v12, v5, v8
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v22
+
+    aget v12, v17, v12
 
     xor-int/2addr v9, v12
 
     aget v12, v5, v3
 
-    aget v12, v25, v12
+    aget v12, v18, v12
 
     xor-int/2addr v9, v12
 
-    aget v12, v5, v21
+    aget v12, v5, v23
 
-    aget v12, v25, v12
+    aget v12, v18, v12
 
     xor-int/2addr v9, v12
 
-    aput v9, v1, v4
+    aput v9, v2, v4
 
     .line 487
     invoke-virtual {v0, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v1
+    move-result v2
 
     .line 488
     invoke-virtual {v0, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
@@ -4094,314 +3994,276 @@
     .line 490
     invoke-virtual {v0, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v23
+    move-result v26
 
     .line 491
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v27, v5, v24
 
-    aget v25, v5, v22
+    aget v27, v13, v27
 
-    aget v24, v24, v25
+    xor-int v12, v12, v27
 
-    xor-int v12, v12, v24
+    aget v27, v5, v1
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v27, v15, v27
 
-    aget v25, v5, v11
+    xor-int v12, v12, v27
 
-    aget v24, v24, v25
+    aget v27, v5, v8
 
-    xor-int v12, v12, v24
+    aget v27, v17, v27
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int v12, v12, v27
 
-    aget v25, v5, v8
+    aget v27, v5, v23
 
-    aget v25, v24, v25
+    aget v27, v18, v27
 
-    xor-int v12, v12, v25
+    xor-int v12, v12, v27
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v27, v5, v7
 
-    aget v26, v5, v21
+    aget v27, v17, v27
 
-    aget v25, v25, v26
-
-    xor-int v12, v12, v25
-
-    aget v25, v5, v7
-
-    aget v24, v24, v25
-
-    xor-int v12, v12, v24
+    xor-int v12, v12, v27
 
     .line 492
     invoke-virtual {v0, v12, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 493
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v12, v6, v7
 
-    aget v24, v6, v7
+    aget v12, v13, v12
 
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v6, v16
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v6, v18
-
-    aget v24, v12, v24
-
-    xor-int v1, v1, v24
-
-    aget v24, v5, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    .line 494
-    invoke-virtual {v0, v1, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 495
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    xor-int/2addr v2, v12
 
     aget v12, v6, v11
 
-    aget v12, v1, v12
+    aget v12, v15, v12
 
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v21
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v6, v22
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v6, v8
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v16
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
-
-    .line 496
-    invoke-virtual {v0, v1, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 497
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v9, v6, v19
-
-    aget v1, v1, v9
-
-    xor-int v1, v23, v1
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    xor-int/2addr v2, v12
 
     aget v12, v6, v20
 
-    aget v12, v9, v12
+    aget v12, v17, v12
 
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v12
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    aget v12, v6, v21
 
-    aget v23, v6, v3
+    aget v12, v18, v12
 
-    aget v12, v12, v23
+    xor-int/2addr v2, v12
 
-    xor-int/2addr v1, v12
+    aget v12, v5, v11
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v12, v18, v12
 
-    aget v23, v6, v10
+    xor-int/2addr v2, v12
 
-    aget v12, v12, v23
+    .line 494
+    invoke-virtual {v0, v2, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
-    xor-int/2addr v1, v12
+    .line 495
+    aget v2, v6, v1
 
-    aget v12, v5, v18
+    aget v2, v13, v2
 
-    aget v9, v9, v12
+    xor-int/2addr v2, v9
 
-    xor-int/2addr v1, v9
+    aget v9, v6, v23
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v24
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v8
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v20
+
+    aget v9, v13, v9
+
+    xor-int/2addr v2, v9
+
+    .line 496
+    invoke-virtual {v0, v2, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 497
+    aget v2, v6, v22
+
+    aget v2, v13, v2
+
+    xor-int v2, v26, v2
+
+    aget v9, v6, v25
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v3
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v10
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v21
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
 
     .line 498
-    invoke-virtual {v0, v1, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 499
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
+    iget-object v2, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Km:[I
 
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v9, v6, v10
 
-    aget v12, v6, v10
+    aget v9, v13, v9
 
-    aget v12, v9, v12
+    aget v12, v6, v25
 
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v20
-
-    aget v24, v23, v24
-
-    xor-int v12, v12, v24
-
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v25, v6, v11
-
-    aget v25, v24, v25
-
-    xor-int v12, v12, v25
-
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v26, v6, v21
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v18
-
-    aget v26, v9, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v14
-
-    .line 500
-    aget v12, v6, v19
-
-    aget v12, v9, v12
-
-    aget v26, v6, v3
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v22
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v8
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v11
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v17
-
-    .line 501
-    aget v12, v6, v4
-
-    aget v12, v9, v12
-
-    aget v26, v6, v14
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v18
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v13
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v10
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aput v12, v1, v15
-
-    .line 502
-    aget v12, v6, v17
-
-    aget v9, v9, v12
-
-    aget v12, v6, v15
-
-    aget v12, v23, v12
+    aget v12, v15, v12
 
     xor-int/2addr v9, v12
 
+    aget v12, v6, v1
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v23
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v21
+
+    aget v12, v13, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v14
+
+    .line 500
+    aget v9, v6, v22
+
+    aget v9, v13, v9
+
+    aget v12, v6, v3
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v24
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v8
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v1
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v19
+
+    .line 501
+    aget v9, v6, v4
+
+    aget v9, v13, v9
+
+    aget v12, v6, v14
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v21
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v11
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v10
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aput v9, v2, v16
+
+    .line 502
+    aget v9, v6, v19
+
+    aget v9, v13, v9
+
     aget v12, v6, v16
 
-    aget v12, v24, v12
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v20
+
+    aget v12, v17, v12
 
     xor-int/2addr v9, v12
 
     aget v12, v6, v7
 
-    aget v12, v25, v12
+    aget v12, v18, v12
 
     xor-int/2addr v9, v12
 
     aget v12, v6, v14
 
-    aget v12, v25, v12
+    aget v12, v18, v12
 
     xor-int/2addr v9, v12
 
-    aput v9, v1, v2
+    const/16 v12, 0x10
+
+    aput v9, v2, v12
 
     .line 504
     invoke-virtual {v0, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v1
+    move-result v2
 
     .line 505
     invoke-virtual {v0, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
@@ -4416,322 +4278,282 @@
     .line 507
     invoke-virtual {v0, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v23
+    move-result v26
 
     .line 508
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v27, v6, v14
 
-    aget v25, v6, v14
+    aget v27, v13, v27
 
-    aget v24, v24, v25
+    xor-int v2, v2, v27
 
-    xor-int v1, v1, v24
+    aget v27, v6, v16
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v27, v15, v27
 
-    aget v25, v6, v15
+    xor-int v2, v2, v27
 
-    aget v24, v24, v25
+    aget v27, v6, v4
 
-    xor-int v1, v1, v24
+    aget v27, v17, v27
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int v2, v2, v27
 
-    aget v25, v6, v4
+    aget v27, v6, v19
 
-    aget v25, v24, v25
+    aget v27, v18, v27
 
-    xor-int v1, v1, v25
+    xor-int v2, v2, v27
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v27, v6, v10
 
-    aget v26, v6, v17
+    aget v27, v17, v27
 
-    aget v25, v25, v26
-
-    xor-int v1, v1, v25
-
-    aget v25, v6, v10
-
-    aget v24, v24, v25
-
-    xor-int v1, v1, v24
+    xor-int v2, v2, v27
 
     .line 509
-    invoke-virtual {v0, v1, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 510
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v2, v5, v7
 
-    aget v24, v5, v7
+    aget v2, v13, v2
 
-    aget v1, v1, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v5, v16
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v5, v18
-
-    aget v24, v12, v24
-
-    xor-int v1, v1, v24
-
-    aget v24, v6, v19
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    .line 511
-    invoke-virtual {v0, v1, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 512
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    xor-int/2addr v2, v12
 
     aget v12, v5, v11
 
-    aget v12, v1, v12
+    aget v12, v15, v12
 
-    xor-int v12, v23, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v21
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v5, v22
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v5, v8
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    aget v23, v6, v20
-
-    aget v1, v1, v23
-
-    xor-int/2addr v1, v12
-
-    .line 513
-    invoke-virtual {v0, v1, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 514
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v12, v5, v19
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    xor-int/2addr v2, v12
 
     aget v12, v5, v20
 
-    aget v12, v9, v12
+    aget v12, v17, v12
 
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v12
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    aget v12, v5, v21
 
-    aget v23, v5, v3
+    aget v12, v18, v12
 
-    aget v12, v12, v23
+    xor-int/2addr v2, v12
 
-    xor-int/2addr v1, v12
+    aget v12, v6, v22
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v12, v18, v12
 
-    aget v23, v5, v10
+    xor-int/2addr v2, v12
 
-    aget v12, v12, v23
+    .line 511
+    invoke-virtual {v0, v2, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
-    xor-int/2addr v1, v12
+    .line 512
+    aget v2, v5, v1
 
-    aget v12, v6, v3
+    aget v2, v13, v2
 
-    aget v9, v9, v12
+    xor-int v2, v26, v2
 
-    xor-int/2addr v1, v9
+    aget v12, v5, v23
+
+    aget v12, v15, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v5, v24
+
+    aget v12, v17, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v5, v8
+
+    aget v12, v18, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v6, v25
+
+    aget v12, v13, v12
+
+    xor-int/2addr v2, v12
+
+    .line 513
+    invoke-virtual {v0, v2, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 514
+    aget v2, v5, v22
+
+    aget v2, v13, v2
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v25
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v3
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v10
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v3
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
 
     .line 515
-    invoke-virtual {v0, v1, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 516
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
+    iget-object v2, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
 
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v9, v5, v10
 
-    aget v12, v5, v10
+    aget v9, v13, v9
 
-    aget v12, v9, v12
+    aget v12, v5, v25
 
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v20
-
-    aget v24, v23, v24
-
-    xor-int v12, v12, v24
-
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v25, v5, v11
-
-    aget v25, v24, v25
-
-    xor-int v12, v12, v25
-
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v26, v5, v21
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v13
-
-    aget v26, v9, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v16
-
-    .line 517
-    aget v12, v5, v19
-
-    aget v12, v9, v12
-
-    aget v26, v5, v3
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v22
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v8
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v21
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v13
-
-    .line 518
-    aget v12, v5, v4
-
-    aget v12, v9, v12
-
-    aget v26, v5, v14
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v18
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v13
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v20
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v18
-
-    .line 519
-    aget v12, v5, v17
-
-    aget v9, v9, v12
-
-    aget v12, v5, v15
-
-    aget v12, v23, v12
+    aget v12, v15, v12
 
     xor-int/2addr v9, v12
 
-    aget v12, v5, v16
+    aget v12, v5, v1
 
-    aget v12, v24, v12
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v7
-
-    aget v12, v25, v12
+    aget v12, v17, v12
 
     xor-int/2addr v9, v12
 
-    aget v12, v5, v4
+    aget v12, v5, v23
 
-    aget v12, v25, v12
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v11
+
+    aget v12, v13, v12
 
     xor-int/2addr v9, v12
 
     and-int/lit8 v9, v9, 0x1f
 
-    aput v9, v1, v8
+    aput v9, v2, v20
+
+    .line 517
+    aget v9, v5, v22
+
+    aget v9, v13, v9
+
+    aget v12, v5, v3
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v24
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v8
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v23
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v11
+
+    .line 518
+    aget v9, v5, v4
+
+    aget v9, v13, v9
+
+    aget v12, v5, v14
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v21
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v11
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v25
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v21
+
+    .line 519
+    aget v9, v5, v19
+
+    aget v9, v13, v9
+
+    aget v12, v5, v16
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v20
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v7
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v4
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v8
 
     .line 521
     invoke-virtual {v0, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v1
+    move-result v2
 
     .line 522
     invoke-virtual {v0, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
@@ -4746,322 +4568,282 @@
     .line 524
     invoke-virtual {v0, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v23
+    move-result v26
 
     .line 525
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v27, v5, v24
 
-    aget v25, v5, v22
+    aget v27, v13, v27
 
-    aget v24, v24, v25
+    xor-int v12, v12, v27
 
-    xor-int v12, v12, v24
+    aget v27, v5, v1
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v27, v15, v27
 
-    aget v25, v5, v11
+    xor-int v12, v12, v27
 
-    aget v24, v24, v25
+    aget v27, v5, v8
 
-    xor-int v12, v12, v24
+    aget v27, v17, v27
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int v12, v12, v27
 
-    aget v25, v5, v8
+    aget v27, v5, v23
 
-    aget v25, v24, v25
+    aget v27, v18, v27
 
-    xor-int v12, v12, v25
+    xor-int v12, v12, v27
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v27, v5, v7
 
-    aget v26, v5, v21
+    aget v27, v17, v27
 
-    aget v25, v25, v26
-
-    xor-int v12, v12, v25
-
-    aget v25, v5, v7
-
-    aget v24, v24, v25
-
-    xor-int v12, v12, v24
+    xor-int v12, v12, v27
 
     .line 526
     invoke-virtual {v0, v12, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 527
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v12, v6, v7
 
-    aget v24, v6, v7
+    aget v12, v13, v12
 
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v6, v16
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v6, v18
-
-    aget v24, v12, v24
-
-    xor-int v1, v1, v24
-
-    aget v24, v5, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    .line 528
-    invoke-virtual {v0, v1, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 529
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    xor-int/2addr v2, v12
 
     aget v12, v6, v11
 
-    aget v12, v1, v12
+    aget v12, v15, v12
 
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v21
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v6, v22
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v6, v8
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v16
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
-
-    .line 530
-    invoke-virtual {v0, v1, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 531
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v9, v6, v19
-
-    aget v1, v1, v9
-
-    xor-int v1, v23, v1
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    xor-int/2addr v2, v12
 
     aget v12, v6, v20
 
-    aget v12, v9, v12
+    aget v12, v17, v12
 
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v12
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    aget v12, v6, v21
 
-    aget v23, v6, v3
+    aget v12, v18, v12
 
-    aget v12, v12, v23
+    xor-int/2addr v2, v12
 
-    xor-int/2addr v1, v12
+    aget v12, v5, v11
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v12, v18, v12
 
-    aget v23, v6, v10
+    xor-int/2addr v2, v12
 
-    aget v12, v12, v23
+    .line 528
+    invoke-virtual {v0, v2, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
-    xor-int/2addr v1, v12
+    .line 529
+    aget v2, v6, v1
 
-    aget v12, v5, v18
+    aget v2, v13, v2
 
-    aget v9, v9, v12
+    xor-int/2addr v2, v9
 
-    xor-int/2addr v1, v9
+    aget v9, v6, v23
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v24
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v8
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v20
+
+    aget v9, v13, v9
+
+    xor-int/2addr v2, v9
+
+    .line 530
+    invoke-virtual {v0, v2, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 531
+    aget v2, v6, v22
+
+    aget v2, v13, v2
+
+    xor-int v2, v26, v2
+
+    aget v9, v6, v25
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v3
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v10
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v21
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
 
     .line 532
-    invoke-virtual {v0, v1, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 533
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
+    iget-object v2, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
 
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v9, v6, v21
 
-    aget v12, v6, v18
-
-    aget v12, v9, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v13
-
-    aget v24, v23, v24
-
-    xor-int v12, v12, v24
-
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v25, v6, v4
-
-    aget v25, v24, v25
-
-    xor-int v12, v12, v25
-
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v26, v6, v14
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v10
-
-    aget v26, v9, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v22
-
-    .line 534
-    aget v12, v6, v16
-
-    aget v12, v9, v12
-
-    aget v26, v6, v7
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v17
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v15
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v14
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v21
-
-    .line 535
-    aget v12, v6, v11
-
-    aget v12, v9, v12
-
-    aget v26, v6, v21
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v10
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v20
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v6, v18
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v11
-
-    .line 536
-    aget v12, v6, v22
-
-    aget v9, v9, v12
-
-    aget v12, v6, v8
-
-    aget v12, v23, v12
-
-    xor-int/2addr v9, v12
-
-    aget v12, v6, v19
-
-    aget v12, v24, v12
-
-    xor-int/2addr v9, v12
-
-    aget v12, v6, v3
-
-    aget v12, v25, v12
-
-    xor-int/2addr v9, v12
+    aget v9, v13, v9
 
     aget v12, v6, v11
 
-    aget v12, v25, v12
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v4
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v14
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v10
+
+    aget v12, v13, v12
 
     xor-int/2addr v9, v12
 
     and-int/lit8 v9, v9, 0x1f
 
-    aput v9, v1, v10
+    aput v9, v2, v24
+
+    .line 534
+    aget v9, v6, v20
+
+    aget v9, v13, v9
+
+    aget v12, v6, v7
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v19
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v16
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v14
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v23
+
+    .line 535
+    aget v9, v6, v1
+
+    aget v9, v13, v9
+
+    aget v12, v6, v23
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v10
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v25
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v21
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v1
+
+    .line 536
+    aget v9, v6, v24
+
+    aget v9, v13, v9
+
+    aget v12, v6, v8
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v22
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v3
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v6, v1
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v10
 
     .line 538
     invoke-virtual {v0, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v1
+    move-result v2
 
     .line 539
     invoke-virtual {v0, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
@@ -5076,322 +4858,282 @@
     .line 541
     invoke-virtual {v0, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v23
+    move-result v26
 
     .line 542
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v27, v6, v14
 
-    aget v25, v6, v14
+    aget v27, v13, v27
 
-    aget v24, v24, v25
+    xor-int v2, v2, v27
 
-    xor-int v1, v1, v24
+    aget v27, v6, v16
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v27, v15, v27
 
-    aget v25, v6, v15
+    xor-int v2, v2, v27
 
-    aget v24, v24, v25
+    aget v27, v6, v4
 
-    xor-int v1, v1, v24
+    aget v27, v17, v27
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int v2, v2, v27
 
-    aget v25, v6, v4
+    aget v27, v6, v19
 
-    aget v25, v24, v25
+    aget v27, v18, v27
 
-    xor-int v1, v1, v25
+    xor-int v2, v2, v27
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v27, v6, v10
 
-    aget v26, v6, v17
+    aget v27, v17, v27
 
-    aget v25, v25, v26
-
-    xor-int v1, v1, v25
-
-    aget v25, v6, v10
-
-    aget v24, v24, v25
-
-    xor-int v1, v1, v24
+    xor-int v2, v2, v27
 
     .line 543
-    invoke-virtual {v0, v1, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    invoke-virtual {v0, v2, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 544
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v2, v5, v7
 
-    aget v24, v5, v7
+    aget v2, v13, v2
 
-    aget v1, v1, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v5, v16
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v5, v18
-
-    aget v24, v12, v24
-
-    xor-int v1, v1, v24
-
-    aget v24, v6, v19
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    .line 545
-    invoke-virtual {v0, v1, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 546
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    xor-int/2addr v2, v12
 
     aget v12, v5, v11
 
-    aget v12, v1, v12
+    aget v12, v15, v12
 
-    xor-int v12, v23, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v21
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v5, v22
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v5, v8
-
-    aget v23, v23, v24
-
-    xor-int v12, v12, v23
-
-    aget v23, v6, v20
-
-    aget v1, v1, v23
-
-    xor-int/2addr v1, v12
-
-    .line 547
-    invoke-virtual {v0, v1, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 548
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v12, v5, v19
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    xor-int/2addr v2, v12
 
     aget v12, v5, v20
 
-    aget v12, v9, v12
+    aget v12, v17, v12
 
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v23, v5, v3
-
-    aget v12, v12, v23
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v23, v5, v10
-
-    aget v12, v12, v23
-
-    xor-int/2addr v1, v12
-
-    aget v12, v6, v3
-
-    aget v9, v9, v12
-
-    xor-int/2addr v1, v9
-
-    .line 549
-    invoke-virtual {v0, v1, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 550
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v12, v5, v18
-
-    aget v12, v9, v12
-
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v5, v13
-
-    aget v24, v23, v24
-
-    xor-int v12, v12, v24
-
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v25, v5, v4
-
-    aget v25, v24, v25
-
-    xor-int v12, v12, v25
-
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v26, v5, v14
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v20
-
-    aget v26, v9, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v20
-
-    .line 551
-    aget v12, v5, v16
-
-    aget v12, v9, v12
-
-    aget v26, v5, v7
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v17
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v15
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v4
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v19
-
-    .line 552
-    aget v12, v5, v11
-
-    aget v12, v9, v12
-
-    aget v26, v5, v21
-
-    aget v26, v23, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v10
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v20
-
-    aget v26, v25, v26
-
-    xor-int v12, v12, v26
-
-    aget v26, v5, v13
-
-    aget v26, v24, v26
-
-    xor-int v12, v12, v26
-
-    and-int/lit8 v12, v12, 0x1f
-
-    aput v12, v1, v3
-
-    .line 553
-    aget v12, v5, v22
-
-    aget v9, v9, v12
-
-    aget v12, v5, v8
-
-    aget v12, v23, v12
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v19
-
-    aget v12, v24, v12
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v3
-
-    aget v12, v25, v12
-
-    xor-int/2addr v9, v12
+    xor-int/2addr v2, v12
 
     aget v12, v5, v21
 
-    aget v12, v25, v12
+    aget v12, v18, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v6, v22
+
+    aget v12, v18, v12
+
+    xor-int/2addr v2, v12
+
+    .line 545
+    invoke-virtual {v0, v2, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 546
+    aget v2, v5, v1
+
+    aget v2, v13, v2
+
+    xor-int v2, v26, v2
+
+    aget v12, v5, v23
+
+    aget v12, v15, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v5, v24
+
+    aget v12, v17, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v5, v8
+
+    aget v12, v18, v12
+
+    xor-int/2addr v2, v12
+
+    aget v12, v6, v25
+
+    aget v12, v13, v12
+
+    xor-int/2addr v2, v12
+
+    .line 547
+    invoke-virtual {v0, v2, v5, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 548
+    aget v2, v5, v22
+
+    aget v2, v13, v2
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v25
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v3
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v10
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v3
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    .line 549
+    invoke-virtual {v0, v2, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 550
+    iget-object v2, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
+
+    aget v9, v5, v21
+
+    aget v9, v13, v9
+
+    aget v12, v5, v11
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v4
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v14
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v25
+
+    aget v12, v13, v12
 
     xor-int/2addr v9, v12
 
     and-int/lit8 v9, v9, 0x1f
 
-    aput v9, v1, v4
+    aput v9, v2, v25
+
+    .line 551
+    aget v9, v5, v20
+
+    aget v9, v13, v9
+
+    aget v12, v5, v7
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v19
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v16
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v4
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v22
+
+    .line 552
+    aget v9, v5, v1
+
+    aget v9, v13, v9
+
+    aget v12, v5, v23
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v10
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v25
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v11
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v3
+
+    .line 553
+    aget v9, v5, v24
+
+    aget v9, v13, v9
+
+    aget v12, v5, v8
+
+    aget v12, v15, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v22
+
+    aget v12, v17, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v3
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    aget v12, v5, v23
+
+    aget v12, v18, v12
+
+    xor-int/2addr v9, v12
+
+    and-int/lit8 v9, v9, 0x1f
+
+    aput v9, v2, v4
 
     .line 555
     invoke-virtual {v0, v5, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v1
+    move-result v2
 
     .line 556
     invoke-virtual {v0, v5, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
@@ -5406,317 +5148,279 @@
     .line 558
     invoke-virtual {v0, v5, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->IntsTo32bits([II)I
 
-    move-result v23
+    move-result v26
 
     .line 559
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v27, v5, v24
 
-    aget v25, v5, v22
+    aget v27, v13, v27
 
-    aget v24, v24, v25
+    xor-int v12, v12, v27
 
-    xor-int v12, v12, v24
+    aget v27, v5, v1
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    aget v27, v15, v27
 
-    aget v25, v5, v11
+    xor-int v12, v12, v27
 
-    aget v24, v24, v25
+    aget v27, v5, v8
 
-    xor-int v12, v12, v24
+    aget v27, v17, v27
 
-    sget-object v24, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    xor-int v12, v12, v27
 
-    aget v25, v5, v8
+    aget v27, v5, v23
 
-    aget v25, v24, v25
+    aget v27, v18, v27
 
-    xor-int v12, v12, v25
+    xor-int v12, v12, v27
 
-    sget-object v25, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v27, v5, v7
 
-    aget v26, v5, v21
+    aget v27, v17, v27
 
-    aget v25, v25, v26
-
-    xor-int v12, v12, v25
-
-    aget v25, v5, v7
-
-    aget v24, v24, v25
-
-    xor-int v12, v12, v24
+    xor-int v12, v12, v27
 
     .line 560
     invoke-virtual {v0, v12, v6, v7}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
     .line 561
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v12, v6, v7
 
-    aget v24, v6, v7
+    aget v12, v13, v12
 
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v6, v16
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v6, v18
-
-    aget v24, v12, v24
-
-    xor-int v1, v1, v24
-
-    aget v24, v5, v13
-
-    aget v12, v12, v24
-
-    xor-int/2addr v1, v12
-
-    .line 562
-    invoke-virtual {v0, v1, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 563
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    xor-int/2addr v2, v12
 
     aget v12, v6, v11
 
-    aget v12, v1, v12
+    aget v12, v15, v12
 
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
-
-    aget v24, v6, v21
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
-
-    aget v24, v6, v22
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
-
-    aget v24, v6, v8
-
-    aget v12, v12, v24
-
-    xor-int/2addr v9, v12
-
-    aget v12, v5, v16
-
-    aget v1, v1, v12
-
-    xor-int/2addr v1, v9
-
-    .line 564
-    invoke-virtual {v0, v1, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
-
-    .line 565
-    sget-object v1, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
-
-    aget v9, v6, v19
-
-    aget v1, v1, v9
-
-    xor-int v1, v23, v1
-
-    sget-object v9, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    xor-int/2addr v2, v12
 
     aget v12, v6, v20
 
-    aget v12, v9, v12
+    aget v12, v17, v12
 
-    xor-int/2addr v1, v12
+    xor-int/2addr v2, v12
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    aget v12, v6, v21
 
-    aget v23, v6, v3
+    aget v12, v18, v12
 
-    aget v12, v12, v23
+    xor-int/2addr v2, v12
 
-    xor-int/2addr v1, v12
+    aget v12, v5, v11
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v12, v18, v12
 
-    aget v23, v6, v10
+    xor-int/2addr v2, v12
 
-    aget v12, v12, v23
+    .line 562
+    invoke-virtual {v0, v2, v6, v8}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
-    xor-int/2addr v1, v12
+    .line 563
+    aget v2, v6, v1
 
-    aget v5, v5, v18
+    aget v2, v13, v2
 
-    aget v5, v9, v5
+    xor-int/2addr v2, v9
 
-    xor-int/2addr v1, v5
+    aget v9, v6, v23
 
-    .line 566
-    invoke-virtual {v0, v1, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+    aget v9, v15, v9
 
-    .line 567
-    iget-object v1, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
+    xor-int/2addr v2, v9
 
-    sget-object v5, Lorg/spongycastle/crypto/engines/CAST5Engine;->S5:[I
+    aget v9, v6, v24
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v8
+
+    aget v9, v18, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v5, v20
+
+    aget v9, v13, v9
+
+    xor-int/2addr v2, v9
+
+    .line 564
+    invoke-virtual {v0, v2, v6, v10}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
+
+    .line 565
+    aget v2, v6, v22
+
+    aget v2, v13, v2
+
+    xor-int v2, v26, v2
+
+    aget v9, v6, v25
+
+    aget v9, v15, v9
+
+    xor-int/2addr v2, v9
+
+    aget v9, v6, v3
+
+    aget v9, v17, v9
+
+    xor-int/2addr v2, v9
 
     aget v9, v6, v10
 
-    aget v9, v5, v9
+    aget v9, v18, v9
 
-    sget-object v12, Lorg/spongycastle/crypto/engines/CAST5Engine;->S6:[I
+    xor-int/2addr v2, v9
 
-    aget v20, v6, v20
+    aget v5, v5, v21
 
-    aget v20, v12, v20
+    aget v5, v15, v5
 
-    xor-int v9, v9, v20
+    xor-int/2addr v2, v5
 
-    sget-object v20, Lorg/spongycastle/crypto/engines/CAST5Engine;->S7:[I
+    .line 566
+    invoke-virtual {v0, v2, v6, v4}, Lorg/spongycastle/crypto/engines/CAST5Engine;->Bits32ToInts(I[II)V
 
-    aget v23, v6, v11
+    .line 567
+    iget-object v2, v0, Lorg/spongycastle/crypto/engines/CAST5Engine;->_Kr:[I
 
-    aget v23, v20, v23
+    aget v5, v6, v10
 
-    xor-int v9, v9, v23
+    aget v5, v13, v5
 
-    sget-object v23, Lorg/spongycastle/crypto/engines/CAST5Engine;->S8:[I
+    aget v9, v6, v25
 
-    aget v21, v6, v21
+    aget v9, v15, v9
 
-    aget v21, v23, v21
+    xor-int/2addr v5, v9
 
-    xor-int v9, v9, v21
+    aget v9, v6, v1
 
-    aget v21, v6, v18
+    aget v9, v17, v9
 
-    aget v21, v5, v21
+    xor-int/2addr v5, v9
 
-    xor-int v9, v9, v21
+    aget v9, v6, v23
 
-    and-int/lit8 v9, v9, 0x1f
+    aget v9, v18, v9
 
-    aput v9, v1, v14
+    xor-int/2addr v5, v9
+
+    aget v9, v6, v21
+
+    aget v9, v13, v9
+
+    xor-int/2addr v5, v9
+
+    and-int/lit8 v5, v5, 0x1f
+
+    aput v5, v2, v14
 
     .line 568
-    aget v9, v6, v19
+    aget v5, v6, v22
 
-    aget v9, v5, v9
+    aget v5, v13, v5
 
     aget v3, v6, v3
 
-    aget v3, v12, v3
+    aget v3, v15, v3
 
-    xor-int/2addr v3, v9
+    xor-int/2addr v3, v5
 
-    aget v9, v6, v22
+    aget v5, v6, v24
 
-    aget v9, v20, v9
+    aget v5, v17, v5
 
-    xor-int/2addr v3, v9
+    xor-int/2addr v3, v5
 
-    aget v8, v6, v8
+    aget v5, v6, v8
 
-    aget v8, v23, v8
+    aget v5, v18, v5
 
-    xor-int/2addr v3, v8
+    xor-int/2addr v3, v5
 
-    aget v8, v6, v11
+    aget v1, v6, v1
 
-    aget v8, v12, v8
+    aget v1, v15, v1
 
-    xor-int/2addr v3, v8
+    xor-int/2addr v1, v3
 
-    and-int/lit8 v3, v3, 0x1f
+    and-int/lit8 v1, v1, 0x1f
 
-    aput v3, v1, v17
+    aput v1, v2, v19
 
     .line 569
-    aget v3, v6, v4
+    aget v1, v6, v4
 
-    aget v3, v5, v3
+    aget v1, v13, v1
 
-    aget v4, v6, v14
+    aget v3, v6, v14
 
-    aget v4, v12, v4
+    aget v3, v15, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    aget v4, v6, v18
+    aget v3, v6, v21
 
-    aget v4, v20, v4
+    aget v3, v17, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    aget v4, v6, v13
+    aget v3, v6, v11
 
-    aget v4, v23, v4
+    aget v3, v18, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    aget v4, v6, v10
+    aget v3, v6, v10
 
-    aget v4, v20, v4
+    aget v3, v17, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    and-int/lit8 v3, v3, 0x1f
+    and-int/lit8 v1, v1, 0x1f
 
-    aput v3, v1, v15
+    aput v1, v2, v16
 
     .line 570
-    aget v3, v6, v17
+    aget v1, v6, v19
 
-    aget v3, v5, v3
+    aget v1, v13, v1
 
-    aget v4, v6, v15
+    aget v3, v6, v16
 
-    aget v4, v12, v4
+    aget v3, v15, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    aget v4, v6, v16
+    aget v3, v6, v20
 
-    aget v4, v20, v4
+    aget v3, v17, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    aget v4, v6, v7
+    aget v3, v6, v7
 
-    aget v4, v23, v4
+    aget v3, v18, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    aget v4, v6, v14
+    aget v3, v6, v14
 
-    aget v4, v23, v4
+    aget v3, v18, v3
 
-    xor-int/2addr v3, v4
+    xor-int/2addr v1, v3
 
-    and-int/lit8 v3, v3, 0x1f
+    and-int/lit8 v1, v1, 0x1f
 
-    aput v3, v1, v2
+    const/16 v3, 0x10
+
+    aput v1, v2, v3
 
     return-void
 .end method

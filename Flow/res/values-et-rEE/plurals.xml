@@ -8,16 +8,4 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="help_using_multi_device_desc">
-        <item quantity="other">"Saate Samsung Flow’s registreerida ja hallata kuni %d arvutit või tahvelseadet.
-
-Ainult üks arvuti või tahvelseade saab olla korraga teie telefoniga ühenduses. Te peate valima ühe, kui mõlemad registreeritud arvutid või tahvelseadmed üritavad teie telefoniga ühendust luua."</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">"Saate Samsung Flow’s registreerida ja hallata kuni %d arvutit või tahvelseadet.
-
-Ainult üks arvuti või tahvelseade saab olla korraga teie telefoniga ühenduses. Te peate valima ühe, kui mõlemad registreeritud arvutid või tahvelseadmed üritavad teie telefoniga ühendust luua."</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
 </resources>

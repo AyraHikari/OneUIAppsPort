@@ -36,7 +36,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
     .line 16
     new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
@@ -50,64 +50,69 @@
     sput-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->LOW:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
     .line 17
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
-    const-string v1, "MID"
+    const-string v3, "MID"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->MID:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->MID:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
     .line 18
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    new-instance v3, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
-    const-string v1, "HIGH"
+    const-string v5, "HIGH"
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->HIGH:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->HIGH:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
     .line 19
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    new-instance v5, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
-    const-string v1, "CUSTOM"
+    const-string v7, "CUSTOM"
 
-    const/4 v5, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->CUSTOM:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    sput-object v5, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->CUSTOM:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
-    const/4 v1, 0x4
+    const/4 v7, 0x4
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    new-array v7, v7, [Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 15
-    sget-object v6, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->LOW:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
-
-    aput-object v6, v1, v2
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->MID:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
-
-    aput-object v2, v1, v3
-
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->HIGH:Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
-
-    aput-object v2, v1, v4
-
-    aput-object v0, v1, v5
-
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
+    sput-object v7, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -122,6 +127,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 15
     const-class v0, Lcom/samsung/android/galaxycontinuity/mirroring/utils/MediaUtils$RESOLUTION_TYPE;

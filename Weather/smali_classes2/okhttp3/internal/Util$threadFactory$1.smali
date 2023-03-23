@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
@@ -43,13 +43,13 @@
 
 
 # instance fields
-.field final synthetic $daemon:Z
+.field public final synthetic $daemon:Z
 
-.field final synthetic $name:Ljava/lang/String;
+.field public final synthetic $name:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Z)V
+.method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
     iput-object p1, p0, Lokhttp3/internal/Util$threadFactory$1;->$name:Ljava/lang/String;
@@ -66,14 +66,14 @@
 .method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 2
 
-    .line 106
+    .line 1
     new-instance v0, Ljava/lang/Thread;
 
     iget-object v1, p0, Lokhttp3/internal/Util$threadFactory$1;->$name:Ljava/lang/String;
 
     invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
-    .line 107
+    .line 2
     iget-boolean p1, p0, Lokhttp3/internal/Util$threadFactory$1;->$daemon:Z
 
     invoke-virtual {v0, p1}, Ljava/lang/Thread;->setDaemon(Z)V

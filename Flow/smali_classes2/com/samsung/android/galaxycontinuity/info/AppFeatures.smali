@@ -18,7 +18,7 @@
     .locals 4
 
     .line 16
-    const/16 v0, 0x17
+    sget v0, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
@@ -47,50 +47,46 @@
     .line 17
     invoke-virtual {v0, v3}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v3
 
-    if-eqz v0, :cond_1
+    if-eqz v3, :cond_1
 
-    move v0, v1
+    move v3, v1
 
     goto :goto_1
 
     :cond_1
-    move v0, v2
+    move v3, v2
 
     :goto_1
-    sput-boolean v0, Lcom/samsung/android/galaxycontinuity/info/AppFeatures;->SUPPORT_DREAM_FEATURES:Z
-
-    .line 31
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/info/AppFeatures;->sFloatingFeature:Lcom/samsung/android/feature/SemFloatingFeature;
+    sput-boolean v3, Lcom/samsung/android/galaxycontinuity/info/AppFeatures;->SUPPORT_DREAM_FEATURES:Z
 
     if-eqz v0, :cond_2
 
     const-string v3, "SEC_FLOATING_FEATURE_MMFW_SUPPORT_DSD_FORMAT"
 
+    .line 31
     invoke-virtual {v0, v3}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v3
 
-    if-eqz v0, :cond_2
+    if-eqz v3, :cond_2
 
-    move v0, v1
+    move v3, v1
 
     goto :goto_2
 
     :cond_2
-    move v0, v2
+    move v3, v2
 
     :goto_2
-    sput-boolean v0, Lcom/samsung/android/galaxycontinuity/info/AppFeatures;->DSD_ENABLED:Z
-
-    .line 33
-    sget-object v0, Lcom/samsung/android/galaxycontinuity/info/AppFeatures;->sFloatingFeature:Lcom/samsung/android/feature/SemFloatingFeature;
+    sput-boolean v3, Lcom/samsung/android/galaxycontinuity/info/AppFeatures;->DSD_ENABLED:Z
 
     if-eqz v0, :cond_3
 
     const-string v3, "SEC_FLOATING_FEATURE_MMFW_SUPPORT_APE_FORMAT"
 
+    .line 33
     invoke-virtual {v0, v3}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
     move-result v0
@@ -149,7 +145,7 @@
 
     if-eqz v0, :cond_0
 
-    sget v0, Landroid/os/Build$VERSION;->SEM_INT:I
+    sget v0, Layra/os/Build$VERSION;->SEM_INT:I
 
     const/16 v1, 0xaf1
 

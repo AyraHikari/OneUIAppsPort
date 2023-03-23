@@ -88,7 +88,7 @@
     .line 471
     iget-object v1, p0, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$QuickSettingBuilder;->map:Ljava/util/Map;
 
-    const-string v2, "sti"
+    const-string/jumbo v2, "sti"
 
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -103,16 +103,16 @@
 
     move-result-object v1
 
-    const-string v2, "ts"
+    const-string/jumbo v2, "ts"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 473
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$QuickSettingBuilder;->map:Ljava/util/Map;
 
-    const-string v1, "t"
+    const-string/jumbo v1, "t"
 
-    const-string v2, "st"
+    const-string/jumbo v2, "st"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -125,6 +125,16 @@
 
 .method public final set(Ljava/lang/String;F)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$QuickSettingBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 429
     invoke-static {p2}, Ljava/lang/Float;->toString(F)Ljava/lang/String;
@@ -140,6 +150,16 @@
 
 .method public final set(Ljava/lang/String;I)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$QuickSettingBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 425
     invoke-static {p2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -155,10 +175,20 @@
 
 .method public final set(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$QuickSettingBuilder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
-    const-string v0, "t"
+    const-string/jumbo v0, "t"
 
     .line 449
     invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -194,6 +224,17 @@
 
 .method public final set(Ljava/lang/String;Ljava/util/Set;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$QuickSettingBuilder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -239,15 +280,19 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v0, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->THREE_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+    move-result-object v0
 
-    invoke-virtual {v0}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->getCollectionDLM()Ljava/lang/String;
+    sget-object v2, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->THREE_DEPTH:Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;
+
+    invoke-virtual {v2}, Lcom/samsung/context/sdk/samsunganalytics/internal/util/Delimiter$Depth;->getCollectionDLM()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -259,9 +304,13 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -278,6 +327,16 @@
 
 .method public final set(Ljava/lang/String;Z)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$QuickSettingBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 433
     invoke-static {p2}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;

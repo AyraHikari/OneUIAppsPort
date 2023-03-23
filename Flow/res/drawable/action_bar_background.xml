@@ -3,12 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/colorTabDefaultColor" />
-        </shape>
-    </item>
-    <item android:gravity="bottom" android:height="@dimen/tab_divider_height">
-        <shape android:shape="rectangle">
-            <solid android:color="@color/list_divider_color" />
+            <solid android:color="@color/background_round_color" />
         </shape>
     </item>
 </layer-list>

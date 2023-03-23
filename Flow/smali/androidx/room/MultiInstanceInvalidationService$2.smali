@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Landroidx/room/MultiInstanceInvalidationService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 61
     iput-object p1, p0, Landroidx/room/MultiInstanceInvalidationService$2;->this$0:Landroidx/room/MultiInstanceInvalidationService;
@@ -34,6 +42,16 @@
 # virtual methods
 .method public broadcastInvalidation(I[Ljava/lang/String;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "clientId",
+            "tables"
+        }
+    .end annotation
 
     .line 99
     iget-object v0, p0, Landroidx/room/MultiInstanceInvalidationService$2;->this$0:Landroidx/room/MultiInstanceInvalidationService;
@@ -213,6 +231,16 @@
 
 .method public registerCallback(Landroidx/room/IMultiInstanceInvalidationCallback;Ljava/lang/String;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "callback",
+            "name"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -297,6 +325,16 @@
 
 .method public unregisterCallback(Landroidx/room/IMultiInstanceInvalidationCallback;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "callback",
+            "clientId"
+        }
+    .end annotation
 
     .line 89
     iget-object v0, p0, Landroidx/room/MultiInstanceInvalidationService$2;->this$0:Landroidx/room/MultiInstanceInvalidationService;

@@ -16,6 +16,24 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZZII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "publicKey",
+            "challenge",
+            "isSamsungPassSupported",
+            "isLegacyFingerAvailable",
+            "supportedBioAuth",
+            "fingerSensorPosition"
+        }
+    .end annotation
 
     .line 19
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/auth/data/CDFEnrollBody;-><init>(Ljava/lang/String;Ljava/lang/String;)V

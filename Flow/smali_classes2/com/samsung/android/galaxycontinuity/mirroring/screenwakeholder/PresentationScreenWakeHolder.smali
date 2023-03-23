@@ -24,6 +24,14 @@
 # virtual methods
 .method public declared-synchronized holdScreen(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -68,6 +76,14 @@
 
 .method public declared-synchronized releaseScreen(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -83,8 +99,6 @@
     if-eqz p1, :cond_0
 
     .line 27
-    iget-object p1, p0, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/PresentationScreenWakeHolder;->mView:Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/WakeLockScreenViewImpl;
-
     invoke-virtual {p1}, Lcom/samsung/android/galaxycontinuity/mirroring/screenwakeholder/WakeLockScreenViewImpl;->releaseScreen()V
 
     const/4 p1, 0x0
@@ -110,6 +124,14 @@
 
 .method public turnScreenOn(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "[Mirroring] turnScreenOn"
 

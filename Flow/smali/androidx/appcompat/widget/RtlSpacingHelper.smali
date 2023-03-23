@@ -123,6 +123,16 @@
 
 .method public setAbsolute(II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -152,6 +162,14 @@
 
 .method public setDirection(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isRtl"
+        }
+    .end annotation
 
     .line 74
     iget-boolean v0, p0, Landroidx/appcompat/widget/RtlSpacingHelper;->mIsRtl:Z
@@ -247,6 +265,16 @@
 
 .method public setRelative(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
     .line 55
     iput p1, p0, Landroidx/appcompat/widget/RtlSpacingHelper;->mStart:I

@@ -141,25 +141,19 @@
 
     invoke-interface {v0, v3, v2, v1, v2}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
-    .line 95
-    sget-object v3, Lorg/spongycastle/crypto/modes/GCFBBlockCipher;->C:[B
-
     const/16 v4, 0x8
 
+    .line 95
     invoke-interface {v0, v3, v4, v1, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
-
-    .line 96
-    sget-object v3, Lorg/spongycastle/crypto/modes/GCFBBlockCipher;->C:[B
 
     const/16 v4, 0x10
 
+    .line 96
     invoke-interface {v0, v3, v4, v1, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
-
-    .line 97
-    sget-object v3, Lorg/spongycastle/crypto/modes/GCFBBlockCipher;->C:[B
 
     const/16 v4, 0x18
 
+    .line 97
     invoke-interface {v0, v3, v4, v1, v4}, Lorg/spongycastle/crypto/BlockCipher;->processBlock([BI[BI)I
 
     .line 99
@@ -246,9 +240,13 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v1
+
     const-string v3, "/G"
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->indexOf(I)I
 
@@ -262,7 +260,9 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

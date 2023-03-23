@@ -58,7 +58,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 292
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +66,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 292
     invoke-direct {p0}, Lokhttp3/internal/cache2/Relay$Companion;-><init>()V
 
     return-void
@@ -77,32 +75,27 @@
 # virtual methods
 .method public final edit(Ljava/io/File;Lokio/Source;Lokio/ByteString;J)Lokhttp3/internal/cache2/Relay;
     .locals 10
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     const-string v0, "file"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "upstream"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "metadata"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 317
+    .line 1
     new-instance v0, Ljava/io/RandomAccessFile;
 
     const-string v1, "rw"
 
     invoke-direct {v0, p1, v1}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 318
+    .line 2
     new-instance p1, Lokhttp3/internal/cache2/Relay;
 
     const-wide/16 v4, 0x0
@@ -123,10 +116,10 @@
 
     const-wide/16 p2, 0x0
 
-    .line 321
+    .line 3
     invoke-virtual {v0, p2, p3}, Ljava/io/RandomAccessFile;->setLength(J)V
 
-    .line 322
+    .line 4
     sget-object v3, Lokhttp3/internal/cache2/Relay;->PREFIX_DIRTY:Lokio/ByteString;
 
     const-wide/16 v4, -0x1
@@ -142,24 +135,19 @@
 
 .method public final read(Ljava/io/File;)Lokhttp3/internal/cache2/Relay;
     .locals 11
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     const-string v0, "file"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 335
+    .line 1
     new-instance v2, Ljava/io/RandomAccessFile;
 
     const-string v0, "rw"
 
     invoke-direct {v2, p1, v0}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 336
+    .line 2
     new-instance p1, Lokhttp3/internal/cache2/FileOperator;
 
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
@@ -168,11 +156,11 @@
 
     const-string v1, "randomAccessFile.channel"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p1, v0}, Lokhttp3/internal/cache2/FileOperator;-><init>(Ljava/nio/channels/FileChannel;)V
 
-    .line 339
+    .line 3
     new-instance v0, Lokio/Buffer;
 
     invoke-direct {v0}, Lokio/Buffer;-><init>()V
@@ -185,26 +173,24 @@
 
     move-object v6, v0
 
-    .line 340
+    .line 4
     invoke-virtual/range {v3 .. v8}, Lokhttp3/internal/cache2/FileOperator;->read(JLokio/Buffer;J)V
 
-    .line 341
+    .line 5
     sget-object v1, Lokhttp3/internal/cache2/Relay;->PREFIX_CLEAN:Lokio/ByteString;
 
     invoke-virtual {v1}, Lokio/ByteString;->size()I
 
-    move-result v1
+    move-result v3
 
-    int-to-long v3, v1
+    int-to-long v3, v3
 
     invoke-virtual {v0, v3, v4}, Lokio/Buffer;->readByteString(J)Lokio/ByteString;
 
-    move-result-object v1
+    move-result-object v3
 
-    .line 342
-    sget-object v3, Lokhttp3/internal/cache2/Relay;->PREFIX_CLEAN:Lokio/ByteString;
-
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 6
+    invoke-static {v3, v1}, Loi/k;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -212,17 +198,17 @@
 
     if-nez v1, :cond_0
 
-    .line 343
+    .line 7
     invoke-virtual {v0}, Lokio/Buffer;->readLong()J
 
     move-result-wide v9
 
-    .line 344
+    .line 8
     invoke-virtual {v0}, Lokio/Buffer;->readLong()J
 
     move-result-wide v7
 
-    .line 347
+    .line 9
     new-instance v0, Lokio/Buffer;
 
     invoke-direct {v0}, Lokio/Buffer;-><init>()V
@@ -235,15 +221,15 @@
 
     move-object v6, v0
 
-    .line 348
+    .line 10
     invoke-virtual/range {v3 .. v8}, Lokhttp3/internal/cache2/FileOperator;->read(JLokio/Buffer;J)V
 
-    .line 349
+    .line 11
     invoke-virtual {v0}, Lokio/Buffer;->readByteString()Lokio/ByteString;
 
     move-result-object v6
 
-    .line 352
+    .line 12
     new-instance p1, Lokhttp3/internal/cache2/Relay;
 
     const/4 v3, 0x0
@@ -262,15 +248,13 @@
 
     return-object p1
 
-    .line 342
+    .line 13
     :cond_0
     new-instance p1, Ljava/io/IOException;
 
     const-string v0, "unreadable cache file"
 
     invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    check-cast p1, Ljava/lang/Throwable;
 
     throw p1
 .end method

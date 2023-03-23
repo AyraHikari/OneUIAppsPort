@@ -5,11 +5,6 @@
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0005\u0008\u0000\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0006J\t\u0010\u0008\u001a\u00020\tH\u0096\u0002J\u0008\u0010\r\u001a\u00020\u0003H\u0016R\u000e\u0010\u0007\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\u00a8\u0006\u000e"
     }
@@ -33,9 +28,10 @@
     k = 0x1
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -69,16 +65,18 @@
 
     const/4 v0, 0x0
 
-    cmp-long p3, p1, p3
-
     if-lez p5, :cond_0
 
-    if-gtz p3, :cond_1
+    cmp-long p5, p1, p3
+
+    if-gtz p5, :cond_1
 
     goto :goto_0
 
     :cond_0
-    if-ltz p3, :cond_1
+    cmp-long p5, p1, p3
+
+    if-ltz p5, :cond_1
 
     goto :goto_0
 
@@ -93,10 +91,10 @@
 
     goto :goto_1
 
-    .line 65
     :cond_2
-    iget-wide p1, p0, Lkotlin/ranges/LongProgressionIterator;->finalElement:J
+    move-wide p1, p3
 
+    .line 65
     :goto_1
     iput-wide p1, p0, Lkotlin/ranges/LongProgressionIterator;->next:J
 
@@ -153,8 +151,6 @@
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    check-cast v0, Ljava/lang/Throwable;
 
     throw v0
 

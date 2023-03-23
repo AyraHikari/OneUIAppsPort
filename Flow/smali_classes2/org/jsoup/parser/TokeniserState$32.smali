@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4010
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 585
+    .line 544
     invoke-direct {p0, p1, p2, v0}, Lorg/jsoup/parser/TokeniserState;-><init>(Ljava/lang/String;ILorg/jsoup/parser/TokeniserState$1;)V
 
     return-void
@@ -33,27 +33,27 @@
 
     const/16 v0, 0x2f
 
-    .line 587
+    .line 546
     invoke-virtual {p2, v0}, Lorg/jsoup/parser/CharacterReader;->matches(C)Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 588
+    .line 547
     invoke-virtual {p1, v0}, Lorg/jsoup/parser/Tokeniser;->emit(C)V
 
-    .line 589
+    .line 548
     invoke-virtual {p1}, Lorg/jsoup/parser/Tokeniser;->createTempBuffer()V
 
-    .line 590
+    .line 549
     sget-object p2, Lorg/jsoup/parser/TokeniserState$32;->ScriptDataDoubleEscapeEnd:Lorg/jsoup/parser/TokeniserState;
 
     invoke-virtual {p1, p2}, Lorg/jsoup/parser/Tokeniser;->advanceTransition(Lorg/jsoup/parser/TokeniserState;)V
 
     goto :goto_0
 
-    .line 592
+    .line 551
     :cond_0
     sget-object p2, Lorg/jsoup/parser/TokeniserState$32;->ScriptDataDoubleEscaped:Lorg/jsoup/parser/TokeniserState;
 

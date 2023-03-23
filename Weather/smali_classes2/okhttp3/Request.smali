@@ -10,10 +10,6 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRequest.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Request.kt\nokhttp3/Request\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,298:1\n1808#2,3:299\n*E\n*S KotlinDebug\n*F\n+ 1 Request.kt\nokhttp3/Request\n*L\n119#1,3:299\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     bv = {
         0x1,
@@ -122,21 +118,20 @@
 
     const-string v0, "url"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "method"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "headers"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "tags"
 
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
@@ -156,16 +151,7 @@
 # virtual methods
 .method public final -deprecated_body()Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "body"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 103
     iget-object v0, p0, Lokhttp3/Request;->body:Lokhttp3/RequestBody;
 
     return-object v0
@@ -173,16 +159,7 @@
 
 .method public final -deprecated_cacheControl()Lokhttp3/CacheControl;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "cacheControl"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 110
     invoke-virtual {p0}, Lokhttp3/Request;->cacheControl()Lokhttp3/CacheControl;
 
     move-result-object v0
@@ -192,16 +169,7 @@
 
 .method public final -deprecated_headers()Lokhttp3/Headers;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "headers"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 96
     iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     return-object v0
@@ -209,16 +177,7 @@
 
 .method public final -deprecated_method()Ljava/lang/String;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "method"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 89
     iget-object v0, p0, Lokhttp3/Request;->method:Ljava/lang/String;
 
     return-object v0
@@ -226,16 +185,7 @@
 
 .method public final -deprecated_url()Lokhttp3/HttpUrl;
     .locals 1
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
-        message = "moved to val"
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "url"
-            imports = {}
-        .end subannotation
-    .end annotation
 
-    .line 82
     iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     return-object v0
@@ -244,7 +194,6 @@
 .method public final body()Lokhttp3/RequestBody;
     .locals 1
 
-    .line 32
     iget-object v0, p0, Lokhttp3/Request;->body:Lokhttp3/RequestBody;
 
     return-object v0
@@ -253,12 +202,12 @@
 .method public final cacheControl()Lokhttp3/CacheControl;
     .locals 2
 
-    .line 69
+    .line 1
     iget-object v0, p0, Lokhttp3/Request;->lazyCacheControl:Lokhttp3/CacheControl;
 
     if-nez v0, :cond_0
 
-    .line 71
+    .line 2
     sget-object v0, Lokhttp3/CacheControl;->Companion:Lokhttp3/CacheControl$Companion;
 
     iget-object v1, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
@@ -267,7 +216,7 @@
 
     move-result-object v0
 
-    .line 72
+    .line 3
     iput-object v0, p0, Lokhttp3/Request;->lazyCacheControl:Lokhttp3/CacheControl;
 
     :cond_0
@@ -287,7 +236,6 @@
         }
     .end annotation
 
-    .line 33
     iget-object v0, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
 
     return-object v0
@@ -298,9 +246,8 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 41
     iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     invoke-virtual {v0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -325,9 +272,9 @@
 
     const-string v0, "name"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 43
+    .line 2
     iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     invoke-virtual {v0, p1}, Lokhttp3/Headers;->values(Ljava/lang/String;)Ljava/util/List;
@@ -340,7 +287,7 @@
 .method public final headers()Lokhttp3/Headers;
     .locals 1
 
-    .line 31
+    .line 1
     iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     return-object v0
@@ -349,7 +296,6 @@
 .method public final isHttps()Z
     .locals 1
 
-    .line 39
     iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     invoke-virtual {v0}, Lokhttp3/HttpUrl;->isHttps()Z
@@ -362,7 +308,6 @@
 .method public final method()Ljava/lang/String;
     .locals 1
 
-    .line 30
     iget-object v0, p0, Lokhttp3/Request;->method:Ljava/lang/String;
 
     return-object v0
@@ -371,7 +316,6 @@
 .method public final newBuilder()Lokhttp3/Request$Builder;
     .locals 1
 
-    .line 61
     new-instance v0, Lokhttp3/Request$Builder;
 
     invoke-direct {v0, p0}, Lokhttp3/Request$Builder;-><init>(Lokhttp3/Request;)V
@@ -382,7 +326,7 @@
 .method public final tag()Ljava/lang/Object;
     .locals 1
 
-    .line 53
+    .line 1
     const-class v0, Ljava/lang/Object;
 
     invoke-virtual {p0, v0}, Lokhttp3/Request;->tag(Ljava/lang/Class;)Ljava/lang/Object;
@@ -406,9 +350,9 @@
 
     const-string v0, "type"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Loi/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 59
+    .line 2
     iget-object v0, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -425,32 +369,32 @@
 .method public toString()Ljava/lang/String;
     .locals 6
 
-    .line 112
+    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "Request{method="
 
-    .line 113
+    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 114
+    .line 3
     iget-object v1, p0, Lokhttp3/Request;->method:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, ", url="
 
-    .line 115
+    .line 4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 116
+    .line 5
     iget-object v1, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 117
+    .line 6
     iget-object v1, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     invoke-virtual {v1}, Lokhttp3/Headers;->size()I
@@ -461,17 +405,15 @@
 
     const-string v1, ", headers=["
 
-    .line 118
+    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 119
+    .line 8
     iget-object v1, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
-
-    check-cast v1, Ljava/lang/Iterable;
 
     const/4 v2, 0x0
 
-    .line 300
+    .line 9
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -491,18 +433,18 @@
 
     if-gez v2, :cond_0
 
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
+    invoke-static {}, Lci/q;->s()V
 
     :cond_0
-    check-cast v3, Lkotlin/Pair;
+    check-cast v3, Lbi/n;
 
-    invoke-virtual {v3}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+    invoke-virtual {v3}, Lbi/n;->a()Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Ljava/lang/String;
 
-    invoke-virtual {v3}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+    invoke-virtual {v3}, Lbi/n;->b()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -512,19 +454,19 @@
 
     const-string v2, ", "
 
-    .line 121
+    .line 10
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 123
+    .line 11
     :cond_1
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/16 v2, 0x3a
 
-    .line 124
+    .line 12
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 125
+    .line 13
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move v2, v4
@@ -534,10 +476,10 @@
     :cond_2
     const/16 v1, 0x5d
 
-    .line 127
+    .line 14
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 129
+    .line 15
     :cond_3
     iget-object v1, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
 
@@ -551,10 +493,10 @@
 
     const-string v1, ", tags="
 
-    .line 130
+    .line 16
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 131
+    .line 17
     iget-object v1, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -562,17 +504,17 @@
     :cond_4
     const/16 v1, 0x7d
 
-    .line 133
+    .line 18
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 112
+    .line 19
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "StringBuilder().apply(builderAction).toString()"
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Loi/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -580,7 +522,6 @@
 .method public final url()Lokhttp3/HttpUrl;
     .locals 1
 
-    .line 29
     iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     return-object v0

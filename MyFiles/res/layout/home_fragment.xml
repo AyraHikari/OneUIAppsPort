@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:textDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/home_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/home_tip_card_view_stub" android:layout="@layout/home_tip_card_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/home_recent_layout" />
+        <include layout="@layout/home_category_layout" />
+        <include layout="@layout/home_storage_layout" />
+        <include layout="@layout/home_analyze_storage_layout" />
+        <View style="@style/BackgroundMarginView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

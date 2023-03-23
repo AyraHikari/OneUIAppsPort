@@ -128,17 +128,25 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    move-result-object v0
+
     iget-object v1, p0, Lcom/sec/android/fido/uaf/message/internal/tag/tlv/TlvKeyHandleAccessToken;->mKeyHandleAccessToken:[B
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     const-string v1, " "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "}"
+    move-result-object v0
+
+    const-string/jumbo v1, "}"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -148,7 +156,7 @@
 .end method
 
 .method public validate()V
-    .locals 4
+    .locals 5
 
     .line 55
     iget-object v0, p0, Lcom/sec/android/fido/uaf/message/internal/tag/tlv/TlvKeyHandleAccessToken;->mKeyHandleAccessToken:[B
@@ -160,39 +168,37 @@
     .line 56
     iget-object v0, p0, Lcom/sec/android/fido/uaf/message/internal/tag/tlv/TlvKeyHandleAccessToken;->mKeyHandleAccessToken:[B
 
-    array-length v0, v0
+    array-length v1, v0
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    const/16 v3, 0x20
+    const/16 v4, 0x20
 
-    if-gt v0, v3, :cond_0
+    if-gt v1, v4, :cond_0
 
-    move v0, v1
+    move v1, v2
 
     goto :goto_0
 
     :cond_0
-    move v0, v2
+    move v1, v3
 
     :goto_0
-    new-array v1, v1, [Ljava/lang/Object;
+    new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/sec/android/fido/uaf/message/internal/tag/tlv/TlvKeyHandleAccessToken;->mKeyHandleAccessToken:[B
+    array-length v0, v0
 
-    array-length v3, v3
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v0
 
-    move-result-object v3
+    aput-object v0, v2, v3
 
-    aput-object v3, v1, v2
+    const-string v0, "mKeyHandleAccessToken is TOO LONG(max 32 bytes) : "
 
-    const-string v2, "mKeyHandleAccessToken is TOO LONG(max 32 bytes) : "
-
-    invoke-static {v0, v2, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v0, v2}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 .end method

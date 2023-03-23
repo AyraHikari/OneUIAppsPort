@@ -36,6 +36,15 @@
 # direct methods
 .method public constructor <init>(Ljava/util/ArrayList;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "itemList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -45,17 +54,17 @@
         }
     .end annotation
 
-    .line 33
+    .line 34
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
-    .line 30
+    .line 31
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;->listLock:Ljava/lang/Object;
 
-    .line 34
+    .line 35
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;->mShortcutList:Ljava/util/ArrayList;
 
     return-void
@@ -64,7 +73,7 @@
 .method static synthetic access$000(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 29
+    .line 30
     iget-object p0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;->mShortcutList:Ljava/util/ArrayList;
 
     return-object p0
@@ -75,7 +84,7 @@
 .method public getItemCount()I
     .locals 1
 
-    .line 97
+    .line 98
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;->mShortcutList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -87,6 +96,14 @@
 
 .method public getItemViewType(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -95,11 +112,19 @@
 
 .method public onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 1
-
-    .line 39
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recyclerView"
+        }
+    .end annotation
 
     .line 40
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
+
+    .line 41
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     move-result-object p1
@@ -115,8 +140,18 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "shortcutListViewHolder",
+            "index"
+        }
+    .end annotation
 
-    .line 28
+    .line 29
     check-cast p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;->onBindViewHolder(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;I)V
@@ -126,8 +161,18 @@
 
 .method public onBindViewHolder(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "shortcutListViewHolder",
+            "index"
+        }
+    .end annotation
 
-    .line 76
+    .line 77
     iget-object v0, p0, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;->mShortcutList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -140,7 +185,7 @@
 
     return-void
 
-    .line 81
+    .line 82
     :cond_0
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;->mIcon:Landroid/widget/ImageView;
 
@@ -154,7 +199,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 82
+    .line 83
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;->mCheckBox:Landroid/widget/CheckBox;
 
     iget-object v1, p2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
@@ -165,7 +210,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 83
+    .line 84
     iget-object v0, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;->mAppName:Landroid/widget/TextView;
 
     iget-object v1, p2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->label:Landroidx/databinding/ObservableField;
@@ -178,7 +223,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 85
+    .line 86
     iget-object p2, p2, Lcom/samsung/android/galaxycontinuity/notification/NotificationApp;->isChecked:Landroidx/databinding/ObservableBoolean;
 
     invoke-virtual {p2}, Landroidx/databinding/ObservableBoolean;->get()Z
@@ -187,14 +232,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 87
+    .line 88
     iget-object p2, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;->itemView:Landroid/view/View;
 
     const/4 v0, 0x0
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 88
+    .line 89
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;->itemView:Landroid/view/View;
 
     const p2, 0x3ecccccd    # 0.4f
@@ -203,7 +248,7 @@
 
     goto :goto_0
 
-    .line 90
+    .line 91
     :cond_1
     iget-object p2, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;->itemView:Landroid/view/View;
 
@@ -211,7 +256,7 @@
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 91
+    .line 92
     iget-object p1, p1, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;->itemView:Landroid/view/View;
 
     const/high16 p2, 0x3f800000    # 1.0f
@@ -224,8 +269,18 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "viewGroup",
+            "viewType"
+        }
+    .end annotation
 
-    .line 28
+    .line 29
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;
 
     move-result-object p1
@@ -235,8 +290,18 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "viewGroup",
+            "viewType"
+        }
+    .end annotation
 
-    .line 67
+    .line 68
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;->get()Lcom/samsung/android/galaxycontinuity/SamsungFlowApplication;
 
     move-result-object p2
@@ -245,16 +310,16 @@
 
     move-result-object p2
 
-    const v0, 0x7f0c00be
+    const v0, 0x7f0d00db
 
     const/4 v1, 0x0
 
-    .line 69
+    .line 70
     invoke-virtual {p2, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
-    .line 71
+    .line 72
     new-instance p2, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;
 
     invoke-direct {p2, p0, p1}, Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter$ShortcutListViewHolder;-><init>(Lcom/samsung/android/galaxycontinuity/activities/tablet/SFShortcutListAdapter;Landroid/view/View;)V
@@ -264,11 +329,19 @@
 
 .method public onDetachedFromRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 1
-
-    .line 55
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onDetachedFromRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recyclerView"
+        }
+    .end annotation
 
     .line 56
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onDetachedFromRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
+
+    .line 57
     invoke-static {}, Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;->getInstance()Lcom/samsung/android/galaxycontinuity/manager/PinnedShortcutManager;
 
     move-result-object p1

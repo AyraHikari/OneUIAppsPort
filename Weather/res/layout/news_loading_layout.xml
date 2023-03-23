@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/widget_initial_text_size" android:textColor="@color/col_70_FAFAFA" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loading_message" android:layout_centerInParent="true" android:fontFamily="@string/font_roboto_medium" />
+</RelativeLayout>

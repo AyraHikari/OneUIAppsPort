@@ -43,6 +43,9 @@
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+
     .line 145
     iget-object v0, p0, Lokhttp3/Cache$1;->this$0:Lokhttp3/Cache;
 
@@ -59,6 +62,9 @@
         value = {
             Ljava/io/IOException;
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
     .line 149

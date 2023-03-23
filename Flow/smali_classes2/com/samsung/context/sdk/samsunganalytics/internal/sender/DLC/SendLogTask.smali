@@ -21,6 +21,20 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/DLCBinder;Lcom/samsung/context/sdk/samsunganalytics/Configuration;Lcom/samsung/context/sdk/samsunganalytics/internal/sender/SimpleLog;Lcom/samsung/context/sdk/samsunganalytics/internal/executor/AsyncTaskCallback;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "binder",
+            "configuration",
+            "simpleLog",
+            "callback"
+        }
+    .end annotation
 
     .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -62,13 +76,17 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "send result success : "
+    const-string/jumbo v2, "send result success : "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget v2, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/SendLogTask;->result:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -86,13 +104,17 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "send result fail : "
+    const-string/jumbo v2, "send result fail : "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget v2, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/SendLogTask;->result:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -160,7 +182,7 @@
 
     const-string v8, ""
 
-    const-string v9, "2.01.007"
+    const-string v9, "2.01.008"
 
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/SendLogTask;->simpleLog:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/SimpleLog;
 
@@ -181,9 +203,11 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "send to DLC : "
+    const-string/jumbo v1, "send to DLC : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/context/sdk/samsunganalytics/internal/sender/DLC/SendLogTask;->simpleLog:Lcom/samsung/context/sdk/samsunganalytics/internal/sender/SimpleLog;
 
@@ -192,6 +216,8 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

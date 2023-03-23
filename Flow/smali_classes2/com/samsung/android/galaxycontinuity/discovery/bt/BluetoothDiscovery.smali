@@ -25,6 +25,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -307,6 +315,14 @@
 
 .method public setDeviceDiscoverListener(Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 79
     iput-object p1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;->mDeviceListener:Lcom/samsung/android/galaxycontinuity/discovery/IDeviceFoundListener;
@@ -316,6 +332,14 @@
 
 .method public setDeviceIDToFind(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceID"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -363,8 +387,6 @@
     iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;->mBtAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/samsung/android/galaxycontinuity/discovery/bt/BluetoothDiscovery;->mBtAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-virtual {v1}, Landroid/bluetooth/BluetoothAdapter;->isDiscovering()Z
 

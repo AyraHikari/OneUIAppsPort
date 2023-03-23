@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.myfiles.external.ui.widget.MyFilesSlidingPaneLayout android:id="@id/sliding_pane_layout" android:tag="layout/activity_main_standard_drawer_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:seslDrawRoundedCornerColor="@color/light_theme_background_color" app:seslIsSinglePanel="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/drawer_pane_layout" android:background="@color/basic_sliding_pane_drawer_background" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/basic_navigation_rail_drawer_menu_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/basic_navigation_rail_drawer_menu_layout_height">
+            <ImageView android:id="@id/drawer_icon" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/basic_drawer_list_item_icon_size" android:layout_height="@dimen/basic_drawer_list_item_icon_size" android:src="@drawable/ic_tw_ic_ab_drawer_mtrl" android:tint="@color/navigation_rail_drawer_icon" android:contentDescription="@string/navigation_drawer" android:layout_marginStart="@dimen/basic_navigation_rail_drawer_icon_margin_start" android:tooltipText="@string/navigation_drawer" />
+            <View android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/settings_icon" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/basic_drawer_list_item_icon_size" android:layout_height="@dimen/basic_drawer_list_item_icon_size" android:src="@drawable/ic_tw_drawer_ic_settings" android:tint="@color/navigation_rail_settings_icon" android:contentDescription="@string/menu_settings" android:layout_marginEnd="@dimen/basic_navigation_rail_settings_icon_margin_end" android:tooltipText="@string/settings" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rail_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <com.sec.android.app.myfiles.external.ui.widget.MyFilesRecyclerView android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content_pane_layout" android:background="@color/light_theme_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/basic_contents_pane_padding" android:layout_marginStart="@dimen/basic_navigation_rail_width">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Design.AppBarLayout">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:title="@string/app_name" style="@style/CollapsingToolbarLayoutStyle">
+                    <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarStyle" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" app:title="@string/app_name" />
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <LinearLayout android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:paddingEnd="@dimen/basic_contents_pane_padding" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <ViewStub android:id="@id/inline_cue_stub" android:layout="@layout/inline_cue_layout" android:inflatedId="@id/inline_cue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/inline_cue_layout_margin_bottom" />
+                <LinearLayout android:orientation="vertical" android:id="@id/page_layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/rounded_corner_top" android:layout_weight="1.0">
+                    <com.sec.android.app.myfiles.external.ui.view.indicator.IndicatorLayout android:gravity="center_vertical" android:id="@id/indicator_layout" android:tag="binding_1" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="@dimen/path_indicator_tablet_height" />
+                    <FrameLayout android:layout_gravity="center" android:id="@id/page_container" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <com.sec.android.app.myfiles.external.ui.view.bottom.BottomLayout android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/bottom_layout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.sec.android.app.myfiles.external.ui.widget.MyFilesSlidingPaneLayout>

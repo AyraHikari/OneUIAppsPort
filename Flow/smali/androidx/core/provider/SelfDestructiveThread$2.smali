@@ -22,7 +22,7 @@
 
 .field final synthetic val$callable:Ljava/util/concurrent/Callable;
 
-.field final synthetic val$callingHandler:Landroid/os/Handler;
+.field final synthetic val$calleeHandler:Landroid/os/Handler;
 
 .field final synthetic val$reply:Landroidx/core/provider/SelfDestructiveThread$ReplyCallback;
 
@@ -30,13 +30,27 @@
 # direct methods
 .method constructor <init>(Landroidx/core/provider/SelfDestructiveThread;Ljava/util/concurrent/Callable;Landroid/os/Handler;Landroidx/core/provider/SelfDestructiveThread$ReplyCallback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$callable",
+            "val$calleeHandler",
+            "val$reply"
+        }
+    .end annotation
 
-    .line 137
+    .line 142
     iput-object p1, p0, Landroidx/core/provider/SelfDestructiveThread$2;->this$0:Landroidx/core/provider/SelfDestructiveThread;
 
     iput-object p2, p0, Landroidx/core/provider/SelfDestructiveThread$2;->val$callable:Ljava/util/concurrent/Callable;
 
-    iput-object p3, p0, Landroidx/core/provider/SelfDestructiveThread$2;->val$callingHandler:Landroid/os/Handler;
+    iput-object p3, p0, Landroidx/core/provider/SelfDestructiveThread$2;->val$calleeHandler:Landroid/os/Handler;
 
     iput-object p4, p0, Landroidx/core/provider/SelfDestructiveThread$2;->val$reply:Landroidx/core/provider/SelfDestructiveThread$ReplyCallback;
 
@@ -50,7 +64,7 @@
 .method public run()V
     .locals 3
 
-    .line 142
+    .line 147
     :try_start_0
     iget-object v0, p0, Landroidx/core/provider/SelfDestructiveThread$2;->val$callable:Ljava/util/concurrent/Callable;
 
@@ -65,9 +79,9 @@
     :catch_0
     const/4 v0, 0x0
 
-    .line 147
+    .line 152
     :goto_0
-    iget-object v1, p0, Landroidx/core/provider/SelfDestructiveThread$2;->val$callingHandler:Landroid/os/Handler;
+    iget-object v1, p0, Landroidx/core/provider/SelfDestructiveThread$2;->val$calleeHandler:Landroid/os/Handler;
 
     new-instance v2, Landroidx/core/provider/SelfDestructiveThread$2$1;
 

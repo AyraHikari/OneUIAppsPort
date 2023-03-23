@@ -38,6 +38,16 @@
 # direct methods
 .method constructor <init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "res",
+            "bitmap"
+        }
+    .end annotation
 
     .line 382
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
@@ -110,8 +120,6 @@
     .line 390
     new-instance p1, Landroid/graphics/BitmapShader;
 
-    iget-object p2, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mBitmap:Landroid/graphics/Bitmap;
-
     sget-object v0, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
     sget-object v1, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
@@ -169,6 +177,14 @@
 
 .method private static isGreaterThanZero(F)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toCompare"
+        }
+    .end annotation
 
     const v0, 0x3d4ccccd    # 0.05f
 
@@ -213,6 +229,14 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 260
     iget-object v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mBitmap:Landroid/graphics/Bitmap;
@@ -402,6 +426,22 @@
 
 .method gravityCompatApply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "gravity",
+            "bitmapWidth",
+            "bitmapHeight",
+            "bounds",
+            "outRect"
+        }
+    .end annotation
 
     .line 223
     new-instance p1, Ljava/lang/UnsupportedOperationException;
@@ -446,6 +486,14 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bounds"
+        }
+    .end annotation
 
     .line 345
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
@@ -469,6 +517,14 @@
 
 .method public setAlpha(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "alpha"
+        }
+    .end annotation
 
     .line 275
     iget-object v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mPaint:Landroid/graphics/Paint;
@@ -493,6 +549,14 @@
 
 .method public setAntiAlias(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aa"
+        }
+    .end annotation
 
     .line 194
     iget-object v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mPaint:Landroid/graphics/Paint;
@@ -507,6 +571,14 @@
 
 .method public setCircular(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "circular"
+        }
+    .end annotation
 
     .line 303
     iput-boolean p1, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mIsCircular:Z
@@ -545,6 +617,14 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cf"
+        }
+    .end annotation
 
     .line 289
     iget-object v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mPaint:Landroid/graphics/Paint;
@@ -559,6 +639,14 @@
 
 .method public setCornerRadius(F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cornerRadius"
+        }
+    .end annotation
 
     .line 330
     iget v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mCornerRadius:F
@@ -611,6 +699,14 @@
 
 .method public setDither(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dither"
+        }
+    .end annotation
 
     .line 217
     iget-object v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mPaint:Landroid/graphics/Paint;
@@ -625,6 +721,14 @@
 
 .method public setFilterBitmap(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "filter"
+        }
+    .end annotation
 
     .line 211
     iget-object v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mPaint:Landroid/graphics/Paint;
@@ -639,6 +743,14 @@
 
 .method public setGravity(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "gravity"
+        }
+    .end annotation
 
     .line 151
     iget v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mGravity:I
@@ -662,6 +774,14 @@
 
 .method public setMipMap(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mipMap"
+        }
+    .end annotation
 
     .line 170
     new-instance p1, Ljava/lang/UnsupportedOperationException;
@@ -673,6 +793,14 @@
 
 .method public setTargetDensity(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "density"
+        }
+    .end annotation
 
     .line 123
     iget v0, p0, Landroidx/core/graphics/drawable/RoundedBitmapDrawable;->mTargetDensity:I
@@ -705,6 +833,14 @@
 
 .method public setTargetDensity(Landroid/graphics/Canvas;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 99
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getDensity()I
@@ -718,6 +854,14 @@
 
 .method public setTargetDensity(Landroid/util/DisplayMetrics;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "metrics"
+        }
+    .end annotation
 
     .line 111
     iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I

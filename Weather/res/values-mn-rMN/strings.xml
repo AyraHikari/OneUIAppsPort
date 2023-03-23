@@ -33,6 +33,7 @@
     <string name="air_quality">Агаарын чанар</string>
     <string name="air_quality_next_tts">Цаг агаарын төлөвийн хоцорсон мэдээ</string>
     <string name="air_quality_previous_tts">Цаг агаарын төлөвийн урьдчилсан мэдээ</string>
+    <string name="alert_title">Цаг агаарын ноцтой сануулга</string>
     <string name="all_added_cities">Нэмсэн бүх хот</string>
     <string name="allow">Зөвшөөрөх</string>
     <string name="allow_permission_in_settings">Энэ функцийг ашиглахын тулд та Тохиргоо дотроос зөвшөөрөл өгөх хэрэгтэй.</string>
@@ -46,6 +47,11 @@
     <string name="application_not_support_restricted">Үйлдлийг дэмждэггүй.</string>
     <string name="apply_daylight_saving_time">Цаг урагшлуулах уу?</string>
     <string name="as_possible_after_verification">Тайлан илгээлээ. Хотын нэрийг баталгаажуулсны дараа аль болох хурдан өөрчилнө.</string>
+    <string name="auto_refresh_on_screen_description">Цаг болгонд автоматаар сэргээсэн цаг агаарын мэдээ аваарай. Энэ ассан байхад та гар аргаар сэргээх боломжгүй.</string>
+    <string name="auto_refresh_on_the_go">Явж байхдаа автоматаар сэргээх</string>
+    <string name="auto_refresh_on_the_go_advanced">Нарийвчилсан</string>
+    <string name="auto_refresh_on_the_go_description">Жолоо барих, дугуй унах, гүйх эсвэл алхах үедээ цаг агаарын шинэчлэлийг үе үе авна уу. Үүнийг асаасан байхад гараар сэргээх боломжгүй.</string>
+    <string name="auto_refresh_on_the_go_simple_description">Жолоо барих, дугуй унах, гүйх эсвэл алхах үед илүү давтамжтай цаг агаарын шинэчилсэн мэдээ аваарай.</string>
     <string name="btn_report">Тайлан</string>
     <string name="button_finish">Дуусгах</string>
     <string name="button_tts">Товч</string>
@@ -55,6 +61,7 @@
     <string name="checkdeteal_tts">Давхар товшоод нэмэлт мэдээлэл ав.</string>
     <string name="china">Хятад</string>
     <string name="cities_button">Хотууд</string>
+    <string name="city_added">Хот нэмэгдлээ.</string>
     <string name="city_list_text">Хотууд</string>
     <string name="clear">Цэлмэг</string>
     <string name="clear_then_cloudy">Цэлмэг дараа нь үүлэрхэг</string>
@@ -141,6 +148,7 @@
     <string name="dragndroplist_drag_release">Зүйлийг байршил %d-д тавьсан.</string>
     <string name="dragndroplist_drag_start">Зүйлийг байршил %d-д чирж эхэллээ.</string>
     <string name="dragndroplist_item_cannot_be_dragged">Байршил %d дахь зүйлийг чирэх боломжгүй.</string>
+    <string name="drawer_tips">%s зөвлөмж</string>
     <string name="drawer_tips_message">Энд товшиж нэмэх, устгах ба байршлуудын дарааллыг соль. Та мөн олон төрлийн тоноглолууд нэмж Эх дэлгэц дээр өөр өөр байршлууд харуулах боломжтой.</string>
     <string name="drawer_tips_message_1">Энэ цэсийн доод хэсэгт Байршлууд удирдахыг товшиж байршлууд нэмэх, устгах ба дарааллыг өөрчлөх.</string>
     <string name="drawer_tips_message_2">Та Эх дэлгэцэд нэгээс илүү тоноглол нэмж нэг дор янз бүрийн байршлууд харуулах боломжтой.</string>
@@ -172,15 +180,18 @@
     <string name="forecast_video">Урьдчилн таамаглх видео</string>
     <string name="format_km_per_hour">%s км/ц</string>
     <string name="format_m_per_hour">%s миль/ц</string>
+    <string name="fri">Баа</string>
     <string name="general">Ерөнхий</string>
     <string name="get_personalized_content_based_on_how_you_use_your_phone">Утсаа хэрхэн ашиглаж байгаад тулгуурлан өөриймшүүлсэн контент авах.</string>
     <string name="get_personalized_content_based_on_how_you_use_your_tablet">Та таблетаа хэрхэн ашигладагт үндэслэсэн хувийн контент авах.</string>
+    <string name="get_weather_information_including_your_current_location_from_weather">цаг агаарын мэдээнээс одоогийн байршлаа оруулаад цаг агаарын мэдээллийг аваарай</string>
     <string name="go_to_website">Вэб сайт руу оч</string>
     <string name="goto_apps">Шинэ шинэчлэл боломжтой. Одоо суулгах уу?</string>
     <string name="goto_apps_later">Хожим</string>
     <string name="goto_apps_now">Одоо</string>
     <string name="goto_apps_update_title">Шинэ агуулгын дохионууд</string>
     <string name="header_tts">Толгой хэсэг</string>
+    <string name="heavy">Их</string>
     <string name="heavy_rain">Аадар бороо</string>
     <string name="heavy_rain_followed_by_intense_heat">Аадар бороо, дараа нь аагим халуун</string>
     <string name="heavy_rain_followed_by_light_rain">Аадар бороо, дараа нь аагим халуун</string>
@@ -338,6 +349,7 @@
     <string name="life_index_visibility">Харагдах байдал</string>
     <string name="life_index_wind">Wind</string>
     <string name="life_index_wind_force">Салхины хурд</string>
+    <string name="light">Бага</string>
     <string name="light_rain_followed_by_heavy_rain">Шиврээ бороотой, дараа нь аадар бороо орно</string>
     <string name="light_rain_with_some_heavy_rain">Шиврээ бороотой, хэсэг зуур аадар бороо орно</string>
     <string name="link_tts">Холбох</string>
@@ -393,6 +405,7 @@
     <string name="message_no_search_result_z">Илэрц олдсонгүй.</string>
     <string name="message_service_not_available">Үйлчилгээ одоохондоо боломжгүй</string>
     <string name="minus_tts">Хасах</string>
+    <string name="mon">Дав</string>
     <string name="more">Илүү</string>
     <string name="more_cuntact_us">Бидэнтэй холбоо барих</string>
     <string name="more_information">Илүү их</string>
@@ -402,7 +415,17 @@
     <string name="navigation_drawer_tips_message">Өгөгдмөл цаг агаарын байрлалыг өөрчлөх эсвэл бүх байрлалаа удирдахын тулд энд товшино уу.</string>
     <string name="new_version_available">%s-н шинэ хувилбар боломжтой.</string>
     <string name="new_version_is_available">Шинэ хувилбар боломжтой байна</string>
+    <string name="news_menu_show_news">Мэдээ харуулах</string>
+    <string name="news_opt_in_banner_title_text">Цаг агаарын тоноглол дээр мэдээ харуулж явагдаж буй арга хэмжээний талаар мэдээтэй байх.</string>
+    <string name="news_opt_in_popup_desc_text">%s-н хамгийн сүүлийн мэдээний гарчгийг Цаг агаарын тоноглол дээр харуулж дэлхийд юу болж байгаа талаар мэдээтэй байх.</string>
+    <string name="news_opt_in_popup_title_text">Мэдээ болон цаг агаарыг нэг тоноглол дээр харах</string>
+    <string name="news_request_agree_text">%s-ээс мэдээ авахын тулд товшино уу</string>
+    <string name="news_widget_bubble_text">Мэдээг цаг агаартай цуг авах.</string>
+    <string name="news_widget_dummy_title">Өнөөдрийн шилдэг түүх</string>
+    <string name="news_widget_new_dummy_title">Энэ өглөө таны мэдэх хэрэгтэй 5 зүйл</string>
+    <string name="news_widget_oobe_text">Энд дарж мэдээ нэмнэ үү.</string>
     <string name="next">Дараах хот</string>
+    <string name="next_btn">Дараах</string>
     <string name="next_city">Дараачийн хотын цаг агаарын мэдээллийг харахын тулд давхар товш.</string>
     <string name="night_tts">Шөнө</string>
     <string name="no_application_available">Ямар ч апп боломжгүй байна.</string>
@@ -411,6 +434,7 @@
     <string name="no_weather_information">Цаг агаарын мэдээлэл байхгүй</string>
     <string name="not_in_use">Ашиглаагүй</string>
     <string name="not_now">Одоо биш</string>
+    <string name="not_now_btn">Одоо биш</string>
     <string name="not_selected">Сонгогдоогүй</string>
     <string name="nothing_selected">Юу ч сонгогдоогүй</string>
     <string name="noti">Мэдэгдэл</string>
@@ -418,6 +442,7 @@
     <string name="notice_accurate_location_detection_msg_no_path">Хурдан бөгөөд хамгийн үнэн зөв байршил тогтоогч-д ТОХИРГОО товшиж, Байрлал тогтоох аргыг GPS, WiFi ба мобайлруу тохируул.</string>
     <string name="notice_accurate_location_detection_msg_wifi_no_path">Хурдан бөгөөд хамгийн үнэн зөв байршил тогтоогч-д ТОХИРГОО товшиж, Байрлал тогтоох аргыг GPS ба WiFi-руу тохируул.</string>
     <string name="notice_gps_trun_off_message_verizon">Байршлын тохиргоог асааж, өндөр нарийвчлалтай төлөв дээр байгаа эсэхийг нягтлан орон нутгийнхаа цаг агаарын мэдээллийг хар.</string>
+    <string name="notification_alert_channel_name">Цаг агаарын ноцтой сануулга</string>
     <string name="notification_apps_update_channel_name">Шинэчлэлийн мэдэгдлүүд</string>
     <string name="notification_auto_refresh_channel_name">Цаг агаарыг автоматаар сэргээх</string>
     <string name="notification_dex_channel_name">Samsung DeX дээрх Цаг агаар</string>
@@ -438,6 +463,7 @@
     <string name="open_app">Апп нээх</string>
     <string name="open_source_licences">Нээлттэй эхийн лицензүүд</string>
     <string name="other_locations">Бусад байршлууд</string>
+    <string name="partly_sunny">Зарим хэсгээр нартай</string>
     <string name="paused">Түр зогссон</string>
     <string name="pd_km">%.1f км</string>
     <string name="pd_km_h">%d км/ц</string>
@@ -454,10 +480,13 @@
     <string name="precipitation_pd_mm">Хур тунадас: %d мм</string>
     <string name="preview">%s-г урьдчилан харах</string>
     <string name="previous">Өмнөх хот</string>
+    <string name="previous_btn">Өмнөх</string>
     <string name="previous_city">Өмнөх хотын цаг агаарын мэдээллийг харахын тулд давхар товш.</string>
     <string name="privacy_policy">Нууцлалын бодлого</string>
     <string name="probability_of_rain_text">Бороо орох магадлал</string>
     <string name="protect_your_content">Контентоо хамгаал</string>
+    <string name="ps_in">%s инч</string>
+    <string name="ps_mm">%s мм</string>
     <string name="radar">Радар ба газрын зураг</string>
     <string name="rain">Бороо</string>
     <string name="rain_followed_by_intense_heat">Бороо, дараа нь аагим халуун</string>
@@ -495,6 +524,7 @@
     <string name="runtime_location_permission_desc">Цаг агаарын мэдээллийг шинэчлэхдээ ТОХИРГООГ товшиж, Хэрэглүүрийн мэдээлэл > Зөвшөөрөл рүү очоод үүнийг зөвшөөрөөд дахин оролдоно уу:</string>
     <string name="runtime_location_permission_title">Зөвшөөрөх</string>
     <string name="runtime_oem_grant_permission_desc">%s хэрэглүүр нь эдгээрт нэвтрэх зөвшөөрөлтэй:</string>
+    <string name="sat">Бям</string>
     <string name="save_button">Хадгалах</string>
     <string name="search_most_searched_for">Хамгийн их хайгдсан</string>
     <string name="search_tab_cities">Хотууд</string>
@@ -521,6 +551,7 @@
     <string name="sesl_material_badge_description">Шинэ контент гарлаа</string>
     <string name="sesl_material_overflow_badge_text_n">Ш</string>
     <string name="sesl_more_item_label">Бусад</string>
+    <string name="sesl_preferecne_badge_description">Шинэ мэдэгдэл</string>
     <string name="sesl_preferencecategory_added_title">Толгой хэсэг</string>
     <string name="sesl_search_hint">Хайх</string>
     <string name="sesl_searchview_description_clear">Хайлтын талбарыг цэвэрлэх</string>
@@ -585,6 +616,9 @@
     <string name="st_no_network_desc">Сүлжээний холболтоо шалгаад дахин оролдоно уу.</string>
     <string name="st_offline">Оффлайн</string>
     <string name="st_view_less">Багыг харах</string>
+    <string name="status_off">Идэвхгүй</string>
+    <string name="status_on">Идэвхтэй</string>
+    <string name="sun">Ням</string>
     <string name="sunny">Нартай</string>
     <string name="sunny_with_some_clouds">Нартай, хэсэг үүлтэй</string>
     <string name="sunny_with_some_heavy_rain">Нартай, хэсэг зуур аадар бороо орно</string>
@@ -597,6 +631,7 @@
     <string name="tap_here_to_restore_the_weather">Энд товшоод хуучин төхөөрөмжөөсөө цаг агаарын өгөгдлийг сэргээ.</string>
     <string name="tap_retry_to_try_to_find_your_location_again">ДАХИН ОРОЛДОХ дээр товшоод байршлаа дахин олно уу.</string>
     <string name="tap_setting_message_edge_panel">Орон нутгийн цаг агаарыг авахын тулд Байршлыг асаа.</string>
+    <string name="tap_the_settings_icon">Тохиргооны дүрсийг товш.</string>
     <string name="tap_to_get_the_weather">Товшиж цаг агаар авах</string>
     <string name="temp_f_c">%d°F</string>
     <string name="temp_f_m">%d°C</string>
@@ -604,6 +639,7 @@
     <string name="terms_and_conditions">Ашиглах Нөхцөл</string>
     <string name="the_latest_version">Сүүлийн хувилбарыг хэдийнэ суурилуулсан.</string>
     <string name="this_will_also_be_applied_to_notifications_and_calendar">Үүнийг мөн мэдэгдлүүд ба Хуанлид хэрэглэнэ.</string>
+    <string name="thu">Пүр</string>
     <string name="tick_box_tts">Шалгах хайрцаг</string>
     <string name="ticked_tts">Тэмдэглэсэн</string>
     <string name="time_am">AM</string>
@@ -611,19 +647,25 @@
     <string name="times_forecast">Цаг бүр</string>
     <string name="title_select_locations">Байршил сонгох</string>
     <string name="title_theme">Загвар</string>
+    <string name="to_continue_agree_to_updated">Үргэлжлүүлэхийн тулд манай шинэчлэгдсэн %s-г зөвшөөрнө үү.</string>
     <string name="to_get_local_weather_chn">"Орон нутгийн цаг агаарын мэдээ авахын тулд таны одоогийн байршлыг цаг агаарын мэдээний үйлчилгээ үзүүлэгч байгууллагад илгээнэ. (Үйлчилгээ үзүүлэгч байгууллагын %1$sАшиглах нөхцөл%2$s болон %3$sХувийн нууцын бодлого%4$s-ыг үзнэ үү).
 Таны төхөөрөмжийн бусад хэрэглүүр болон үйлчилгээ нь тэдгээр хэрэглүүрүүд дотроо цаг агаарыг харуулахын тулд татагдсан цаг агаарын мэдээлэлд хандаж болно.
 Танд цаг агаарын мэдээллийг үргэлжлүүлэн өгөхийн тулд таныг аппыг ашиглаагүй байсан ч гэсэн Цаг агаарын апп таны байршилд хандалттай байна."</string>
     <string name="today">Өнөөдөр</string>
+    <string name="try_it_out_btn">Туршиж үз</string>
+    <string name="tue">Мяг</string>
+    <string name="turn_on_to_use_precise_location">Энэ функцийг ашиглахын тулд та %s-д байршилдаа үргэлж хандахыг зөвшөөрч, Нарийвчилсан байршил ашиглахыг асаах хэрэгтэй. Тохиргоог товшиж Зөвшөөрлүүд > Байршил руу орно уу.</string>
     <string name="tw_title_weather_broadcast">Цацах</string>
-    <string name="unable_to_check_for_updates">Шинэчлэлийг шалгах боломжгүй. Сүлжээний холболт байхгүй.</string>
+    <string name="unable_to_check_for_updates">Шинэчлэл шалгаж чадсангүй. Дараа дахин оролдоно уу.</string>
     <string name="unable_to_receive_info_msg">Мэдээлэл хүлээн авах боломжгүй</string>
     <string name="unticked_tts">Тэмдэглэснийг больсон</string>
     <string name="unused">Ашиглагдаагүй</string>
     <string name="update">Шинэчлэх</string>
     <string name="update_abb8">Шинэчлэх</string>
     <string name="update_app">Хэрэглүүр шинэчил</string>
+    <string name="updated_tile_chn">Шинэчилсэн: %s</string>
     <string name="updated_tts">%s-г шинэчилсэн</string>
+    <string name="use_current_location">Одоогийн байршлыг ашигла</string>
     <string name="use_current_location_agree_popup">"Орон нутгийн цаг агаарын мэдээ авахын тулд таны тухайн үеийн байршлыг цаг агаарын мэдээний үйлчилгээ үзүүлэгч байгууллагад илгээнэ. (Үйлчилгээ үзүүлэгчийн %1$sнууцлалын бодлого%2$s-ыг үзнэ үү.)
 Таны төхөөрөмж дээрх бусад апп, үйлчилгээ нь тухайн апп дээр цаг агаарын мэдээг харуулахын тулд хүлээн авсан цаг агаарын мэдээлэлд нэвтэрч болно."</string>
     <string name="use_current_location_and_background_agree_popup">"Орон нутгийн цаг агаарын мэдээ авахын тулд таны тухайн үеийн байршлыг цаг агаарын мэдээний үйлчилгээ үзүүлэгч байгууллагад илгээнэ. (Үйлчилгээ үзүүлэгч байгууллагын %1$sНууцлалын журмыг%2$s үзнэ үү.
@@ -635,9 +677,16 @@
 Та Цаг агаар хэрэглүүрийн тохиргоо хэсгээс байршлаа ашиглахыг унтраах боломжтой."</string>
     <string name="use_current_location_body_msg_chn">"“Цаг агаар” ашиглахын өмнө анхааралтай уншина уу :
 Хэрэв та өөрийн одоогийн байршил дахь цаг агаарыг мэдэхийг хүсвэл, та үйлчилгээ үзүүлэгч гуравдагч этгээдэд таны төхөөрөмжид тасралтгүй (та тухайн үйлчилгээг ашиглаагүй үед ч мөн адил) хандах болон доор дурдсан тодорхой өгөгдлүүдийг авах зөвшөөрөл өгөх ёстой. Тийм зөвшөөрөл олгохын өмнө тухайн үйлчилгээ үзүүлэгч гуравдагч этгээдийн %1$sАшиглах нөхцөл%2$s болон %3$sНууцлалын журмыг%4$s анхааралтай уншиж ойлгоно уу. Та “Тохиргоо” хэсгээс “Байршил”-ыг унтраах замаар тухайн зөвшөөрлөө эргүүлэн татаж болно. Таны төхөөрөмж дээрх бусад хэрэглүүрүүд болон үйлчилгээ дээр цаг агаарын мэдээг харуулахын тулд тухайн хэрэглүүр, үйлчилгээ нь татан авсан цаг агаарын мэдээлэлд хандаж болно."</string>
+    <string name="use_current_location_body_msg_kor">"Таны одоогийн байршлыг цуглуулж, тухайн орон нутгийн цаг агаарын мэдээллийг авах зэрэг Цаг агаарын хэрэглүүрийн зарим функцийг хангахад ашиглах болно.
+
+Цаг агаарын мэдээллийг тасралтгүй өгөхийн тулд энэ хэрэглүүр таныг ашиглаагүй байсан ч таны байршлыг тогтмол боловсруулж байх болно. Үргэлжлүүлснээр та дээрх зорилгоор өөрийн байршлыг цуглуулах, боловсруулахыг зөвшөөрч байна.
+
+Та энэ байршлын цуглуулга болон ашиглалтыг Цаг агаарын хэрэглүүрийн тохиргооноос зогсоох боломжтой."</string>
     <string name="use_current_location_body_purpose">Зорилго</string>
     <string name="use_current_location_body_purpose_content">Танд таны одоогийн байршил дахь цаг агаарын мэдээллийг өгөхийн тулд</string>
     <string name="use_current_location_body_search_provider">Үйлчилгээ үзүүлэгч</string>
+    <string name="use_current_location_continue">Үргэлжлүүл</string>
+    <string name="use_current_location_not_now">Одоо биш</string>
     <string name="use_current_location_off_alert_popup">Одоогийн байршлын мэдээллийг арилгана.</string>
     <string name="useful_informations">Амьдралын зөвлөмж ба бусад мэдээ</string>
     <string name="using_as">%s болгон ашиглах</string>
@@ -743,9 +792,11 @@
     <string name="weather_tip">Цаг агаарын зөвлөмж</string>
     <string name="weathernews">Weathernews Inc.</string>
     <string name="weathernews_china">Shanghai Xingtuan Information Technology Co., Ltd.</string>
+    <string name="wed">Лха</string>
     <string name="weekly_forecast">Өдөр бүрийн</string>
     <string name="widget_background">Тоноглолын дэвсгэр</string>
     <string name="widget_empty_text">Товшиж цаг агаарын мэдээлэл ав</string>
+    <string name="widget_location">Хотын нэр</string>
     <string name="widget_name_4x1">Цаг агаар ба Цаг</string>
     <string name="widget_setting">Тохиргоо</string>
     <string name="widget_setting_background_color">Дэвсгэр өнгө</string>

@@ -4,23 +4,14 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMathJVM.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MathJVM.kt\nkotlin/math/MathKt__MathJVMKt\n*L\n1#1,1259:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\"\n\u0000\n\u0002\u0010\u0006\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0002\u00087\u001a\u0011\u0010\u0016\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010\u0016\u001a\u00020\t2\u0006\u0010\u0018\u001a\u00020\tH\u0087\u0008\u001a\u0011\u0010\u0016\u001a\u00020\u000c2\u0006\u0010\u0018\u001a\u00020\u000cH\u0087\u0008\u001a\u0011\u0010\u0019\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0010\u0010\u001a\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0007\u001a\u0011\u0010\u001a\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010\u001b\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0010\u0010\u001c\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0007\u001a\u0011\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010\u001d\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010\u001d\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0019\u0010\u001e\u001a\u00020\u00012\u0006\u0010\u001f\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0019\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u001f\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0010\u0010 \u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0007\u001a\u0011\u0010 \u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010!\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010!\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010\"\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010\"\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010#\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010#\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010$\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010$\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010%\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010%\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010&\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010&\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0019\u0010\'\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010\u001f\u001a\u00020\u0001H\u0087\u0008\u001a\u0019\u0010\'\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u001f\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010(\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010(\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010)\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010)\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0018\u0010*\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010+\u001a\u00020\u0001H\u0007\u001a\u0018\u0010*\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u00062\u0006\u0010+\u001a\u00020\u0006H\u0007\u001a\u0011\u0010,\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010,\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0010\u0010-\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0007\u001a\u0010\u0010-\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0007\u001a\u0019\u0010.\u001a\u00020\u00012\u0006\u0010/\u001a\u00020\u00012\u0006\u00100\u001a\u00020\u0001H\u0087\u0008\u001a\u0019\u0010.\u001a\u00020\u00062\u0006\u0010/\u001a\u00020\u00062\u0006\u00100\u001a\u00020\u0006H\u0087\u0008\u001a\u0019\u0010.\u001a\u00020\t2\u0006\u0010/\u001a\u00020\t2\u0006\u00100\u001a\u00020\tH\u0087\u0008\u001a\u0019\u0010.\u001a\u00020\u000c2\u0006\u0010/\u001a\u00020\u000c2\u0006\u00100\u001a\u00020\u000cH\u0087\u0008\u001a\u0019\u00101\u001a\u00020\u00012\u0006\u0010/\u001a\u00020\u00012\u0006\u00100\u001a\u00020\u0001H\u0087\u0008\u001a\u0019\u00101\u001a\u00020\u00062\u0006\u0010/\u001a\u00020\u00062\u0006\u00100\u001a\u00020\u0006H\u0087\u0008\u001a\u0019\u00101\u001a\u00020\t2\u0006\u0010/\u001a\u00020\t2\u0006\u00100\u001a\u00020\tH\u0087\u0008\u001a\u0019\u00101\u001a\u00020\u000c2\u0006\u0010/\u001a\u00020\u000c2\u0006\u00100\u001a\u00020\u000cH\u0087\u0008\u001a\u0011\u00102\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u00102\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u0010\u000f\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u00103\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u00103\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u00104\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u00104\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u00105\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u00105\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u00106\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u00106\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0011\u00107\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0011\u00107\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0010\u00108\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0007\u001a\u0010\u00108\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0007\u001a\u0015\u00109\u001a\u00020\u0001*\u00020\u00012\u0006\u0010:\u001a\u00020\u0001H\u0087\u0008\u001a\u0015\u00109\u001a\u00020\u0006*\u00020\u00062\u0006\u0010:\u001a\u00020\u0006H\u0087\u0008\u001a\r\u0010;\u001a\u00020\u0001*\u00020\u0001H\u0087\u0008\u001a\r\u0010;\u001a\u00020\u0006*\u00020\u0006H\u0087\u0008\u001a\u0015\u0010<\u001a\u00020\u0001*\u00020\u00012\u0006\u0010=\u001a\u00020\u0001H\u0087\u0008\u001a\u0015\u0010<\u001a\u00020\u0006*\u00020\u00062\u0006\u0010=\u001a\u00020\u0006H\u0087\u0008\u001a\r\u0010>\u001a\u00020\u0001*\u00020\u0001H\u0087\u0008\u001a\r\u0010>\u001a\u00020\u0006*\u00020\u0006H\u0087\u0008\u001a\u0015\u0010?\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u0001H\u0087\u0008\u001a\u0015\u0010?\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0018\u001a\u00020\tH\u0087\u0008\u001a\u0015\u0010?\u001a\u00020\u0006*\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0006H\u0087\u0008\u001a\u0015\u0010?\u001a\u00020\u0006*\u00020\u00062\u0006\u0010\u0018\u001a\u00020\tH\u0087\u0008\u001a\u000c\u0010@\u001a\u00020\t*\u00020\u0001H\u0007\u001a\u000c\u0010@\u001a\u00020\t*\u00020\u0006H\u0007\u001a\u000c\u0010A\u001a\u00020\u000c*\u00020\u0001H\u0007\u001a\u000c\u0010A\u001a\u00020\u000c*\u00020\u0006H\u0007\u001a\u0015\u0010B\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u000f\u001a\u00020\u0001H\u0087\u0008\u001a\u0015\u0010B\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u000f\u001a\u00020\tH\u0087\u0008\u001a\u0015\u0010B\u001a\u00020\u0006*\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u0006H\u0087\u0008\u001a\u0015\u0010B\u001a\u00020\u0006*\u00020\u00062\u0006\u0010\u000f\u001a\u00020\tH\u0087\u0008\"\u001f\u0010\u0000\u001a\u00020\u0001*\u00020\u00018\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0002\u0010\u0003\u001a\u0004\u0008\u0004\u0010\u0005\"\u001f\u0010\u0000\u001a\u00020\u0006*\u00020\u00068\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0002\u0010\u0007\u001a\u0004\u0008\u0004\u0010\u0008\"\u001f\u0010\u0000\u001a\u00020\t*\u00020\t8\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0002\u0010\n\u001a\u0004\u0008\u0004\u0010\u000b\"\u001f\u0010\u0000\u001a\u00020\u000c*\u00020\u000c8\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0002\u0010\r\u001a\u0004\u0008\u0004\u0010\u000e\"\u001f\u0010\u000f\u001a\u00020\u0001*\u00020\u00018\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\u0003\u001a\u0004\u0008\u0011\u0010\u0005\"\u001f\u0010\u000f\u001a\u00020\u0006*\u00020\u00068\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\u0007\u001a\u0004\u0008\u0011\u0010\u0008\"\u001e\u0010\u000f\u001a\u00020\t*\u00020\t8FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\n\u001a\u0004\u0008\u0011\u0010\u000b\"\u001e\u0010\u000f\u001a\u00020\t*\u00020\u000c8FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\r\u001a\u0004\u0008\u0011\u0010\u0012\"\u001f\u0010\u0013\u001a\u00020\u0001*\u00020\u00018\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0014\u0010\u0003\u001a\u0004\u0008\u0015\u0010\u0005\"\u001f\u0010\u0013\u001a\u00020\u0006*\u00020\u00068\u00c6\u0002X\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0014\u0010\u0007\u001a\u0004\u0008\u0015\u0010\u0008\u00a8\u0006C"
     }
     d2 = {
         "absoluteValue",
         "",
-        "absoluteValue$annotations",
+        "getAbsoluteValue$annotations",
         "(D)V",
         "getAbsoluteValue",
         "(D)D",
@@ -34,11 +25,11 @@
         "(J)V",
         "(J)J",
         "sign",
-        "sign$annotations",
+        "getSign$annotations",
         "getSign",
         "(J)I",
         "ulp",
-        "ulp$annotations",
+        "getUlp$annotations",
         "getUlp",
         "abs",
         "x",
@@ -90,10 +81,10 @@
     k = 0x5
     mv = {
         0x1,
-        0x1,
-        0x10
+        0x6,
+        0x0
     }
-    xi = 0x1
+    xi = 0x31
     xs = "kotlin/math/MathKt"
 .end annotation
 
@@ -179,30 +170,6 @@
     return-wide p0
 .end method
 
-.method public static synthetic absoluteValue$annotations(D)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic absoluteValue$annotations(F)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic absoluteValue$annotations(I)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic absoluteValue$annotations(J)V
-    .locals 0
-
-    return-void
-.end method
-
 .method private static final acos(D)D
     .locals 0
 
@@ -232,30 +199,23 @@
 .method public static final acosh(D)D
     .locals 6
 
-    const/4 v0, 0x1
+    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
-    int-to-double v0, v0
+    cmpg-double v0, p0, v0
 
-    cmpg-double v2, p0, v0
+    if-gez v0, :cond_0
 
-    if-gez v2, :cond_0
-
-    .line 211
-    sget-object p0, Lkotlin/jvm/internal/DoubleCompanionObject;->INSTANCE:Lkotlin/jvm/internal/DoubleCompanionObject;
-
-    invoke-virtual {p0}, Lkotlin/jvm/internal/DoubleCompanionObject;->getNaN()D
-
-    move-result-wide p0
+    const-wide/high16 p0, 0x7ff8000000000000L    # Double.NaN
 
     goto :goto_0
 
     .line 213
     :cond_0
-    sget-wide v2, Lkotlin/math/Constants;->upper_taylor_2_bound:D
+    sget-wide v0, Lkotlin/math/Constants;->upper_taylor_2_bound:D
 
-    cmpl-double v2, p0, v2
+    cmpl-double v0, p0, v0
 
-    if-lez v2, :cond_1
+    if-lez v0, :cond_1
 
     .line 215
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
@@ -269,6 +229,10 @@
     goto :goto_0
 
     :cond_1
+    const/4 v0, 0x1
+
+    int-to-double v0, v0
+
     sub-double v2, p0, v0
 
     .line 217
@@ -850,6 +814,30 @@
     return-wide p0
 .end method
 
+.method public static synthetic getAbsoluteValue$annotations(D)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getAbsoluteValue$annotations(F)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getAbsoluteValue$annotations(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getAbsoluteValue$annotations(J)V
+    .locals 0
+
+    return-void
+.end method
+
 .method private static final getSign(D)D
     .locals 0
 
@@ -922,6 +910,30 @@
     return p0
 .end method
 
+.method public static synthetic getSign$annotations(D)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getSign$annotations(F)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getSign$annotations(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getSign$annotations(J)V
+    .locals 0
+
+    return-void
+.end method
+
 .method private static final getUlp(D)D
     .locals 0
 
@@ -942,6 +954,18 @@
     move-result p0
 
     return p0
+.end method
+
+.method public static synthetic getUlp$annotations(D)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getUlp$annotations(F)V
+    .locals 0
+
+    return-void
 .end method
 
 .method private static final hypot(DD)D
@@ -1031,7 +1055,7 @@
 
     cmpg-double v0, p2, v0
 
-    if-lez v0, :cond_1
+    if-lez v0, :cond_2
 
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
@@ -1039,10 +1063,20 @@
 
     if-nez v0, :cond_0
 
+    const/4 v0, 0x1
+
     goto :goto_0
 
-    .line 320
     :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    goto :goto_1
+
+    .line 320
+    :cond_1
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -1055,14 +1089,9 @@
 
     return-wide p0
 
-    .line 319
-    :cond_1
-    :goto_0
-    sget-object p0, Lkotlin/jvm/internal/DoubleCompanionObject;->INSTANCE:Lkotlin/jvm/internal/DoubleCompanionObject;
-
-    invoke-virtual {p0}, Lkotlin/jvm/internal/DoubleCompanionObject;->getNaN()D
-
-    move-result-wide p0
+    :cond_2
+    :goto_1
+    const-wide/high16 p0, 0x7ff8000000000000L    # Double.NaN
 
     return-wide p0
 .end method
@@ -1074,7 +1103,7 @@
 
     cmpg-float v0, p1, v0
 
-    if-lez v0, :cond_1
+    if-lez v0, :cond_2
 
     const/high16 v0, 0x3f800000    # 1.0f
 
@@ -1082,9 +1111,19 @@
 
     if-nez v0, :cond_0
 
+    const/4 v0, 0x1
+
     goto :goto_0
 
     :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    goto :goto_1
+
+    :cond_1
     float-to-double v0, p0
 
     .line 850
@@ -1104,14 +1143,9 @@
 
     return p0
 
-    .line 849
-    :cond_1
-    :goto_0
-    sget-object p0, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
-
-    invoke-virtual {p0}, Lkotlin/jvm/internal/FloatCompanionObject;->getNaN()F
-
-    move-result p0
+    :cond_2
+    :goto_1
+    const/high16 p0, 0x7fc00000    # Float.NaN
 
     return p0
 .end method
@@ -1267,13 +1301,9 @@
 .method private static final nextDown(D)D
     .locals 2
 
+    const-wide/high16 v0, -0x10000000000000L    # Double.NEGATIVE_INFINITY
+
     .line 576
-    sget-object v0, Lkotlin/jvm/internal/DoubleCompanionObject;->INSTANCE:Lkotlin/jvm/internal/DoubleCompanionObject;
-
-    invoke-virtual {v0}, Lkotlin/jvm/internal/DoubleCompanionObject;->getNEGATIVE_INFINITY()D
-
-    move-result-wide v0
-
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->nextAfter(DD)D
 
     move-result-wide p0
@@ -1284,13 +1314,9 @@
 .method private static final nextDown(F)F
     .locals 2
 
+    const-wide/high16 v0, -0x10000000000000L    # Double.NEGATIVE_INFINITY
+
     .line 1106
-    sget-object v0, Lkotlin/jvm/internal/DoubleCompanionObject;->INSTANCE:Lkotlin/jvm/internal/DoubleCompanionObject;
-
-    invoke-virtual {v0}, Lkotlin/jvm/internal/DoubleCompanionObject;->getNEGATIVE_INFINITY()D
-
-    move-result-wide v0
-
     invoke-static {p0, v0, v1}, Ljava/lang/Math;->nextAfter(FD)F
 
     move-result p0
@@ -1429,7 +1455,7 @@
 .end method
 
 .method public static final roundToInt(D)I
-    .locals 3
+    .locals 2
 
     .line 602
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
@@ -1438,26 +1464,24 @@
 
     if-nez v0, :cond_2
 
-    const v0, 0x7fffffff
+    const-wide v0, 0x41dfffffffc00000L    # 2.147483647E9
 
-    int-to-double v1, v0
+    cmpl-double v0, p0, v0
 
-    cmpl-double v1, p0, v1
+    if-lez v0, :cond_0
 
-    const/high16 v2, -0x80000000
-
-    if-lez v1, :cond_0
+    const p0, 0x7fffffff
 
     goto :goto_0
 
     :cond_0
-    int-to-double v0, v2
+    const-wide/high16 v0, -0x3e20000000000000L    # -2.147483648E9
 
     cmpg-double v0, p0, v0
 
     if-gez v0, :cond_1
 
-    move v0, v2
+    const/high16 p0, -0x80000000
 
     goto :goto_0
 
@@ -1467,10 +1491,10 @@
 
     move-result-wide p0
 
-    long-to-int v0, p0
+    long-to-int p0, p0
 
     :goto_0
-    return v0
+    return p0
 
     .line 602
     :cond_2
@@ -1479,8 +1503,6 @@
     const-string p1, "Cannot round NaN value."
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -1508,8 +1530,6 @@
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    check-cast p0, Ljava/lang/Throwable;
-
     throw p0
 .end method
 
@@ -1535,8 +1555,6 @@
     const-string p1, "Cannot round NaN value."
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    check-cast p0, Ljava/lang/Throwable;
 
     throw p0
 .end method
@@ -1574,30 +1592,6 @@
     move-result p0
 
     return p0
-.end method
-
-.method public static synthetic sign$annotations(D)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic sign$annotations(F)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic sign$annotations(I)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic sign$annotations(J)V
-    .locals 0
-
-    return-void
 .end method
 
 .method private static final sin(D)D
@@ -1749,9 +1743,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
-
-    int-to-double v0, v0
+    const-wide/16 v0, 0x0
 
     cmpl-double v0, p0, v0
 
@@ -1796,8 +1788,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    int-to-float v0, v0
-
     cmpl-float v0, p0, v0
 
     if-lez v0, :cond_1
@@ -1825,18 +1815,6 @@
     :cond_2
     :goto_1
     return p0
-.end method
-
-.method public static synthetic ulp$annotations(D)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic ulp$annotations(F)V
-    .locals 0
-
-    return-void
 .end method
 
 .method private static final withSign(DD)D

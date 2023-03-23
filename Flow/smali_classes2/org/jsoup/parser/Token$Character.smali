@@ -1,4 +1,4 @@
-.class final Lorg/jsoup/parser/Token$Character;
+.class Lorg/jsoup/parser/Token$Character;
 .super Lorg/jsoup/parser/Token;
 .source "Token.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x8
     name = "Character"
 .end annotation
 
@@ -24,10 +24,10 @@
 
     const/4 v0, 0x0
 
-    .line 249
+    .line 315
     invoke-direct {p0, v0}, Lorg/jsoup/parser/Token;-><init>(Lorg/jsoup/parser/Token$1;)V
 
-    .line 250
+    .line 316
     sget-object v0, Lorg/jsoup/parser/Token$TokenType;->Character:Lorg/jsoup/parser/Token$TokenType;
 
     iput-object v0, p0, Lorg/jsoup/parser/Token$Character;->type:Lorg/jsoup/parser/Token$TokenType;
@@ -40,7 +40,7 @@
 .method data(Ljava/lang/String;)Lorg/jsoup/parser/Token$Character;
     .locals 0
 
-    .line 260
+    .line 326
     iput-object p1, p0, Lorg/jsoup/parser/Token$Character;->data:Ljava/lang/String;
 
     return-object p0
@@ -49,7 +49,7 @@
 .method getData()Ljava/lang/String;
     .locals 1
 
-    .line 265
+    .line 331
     iget-object v0, p0, Lorg/jsoup/parser/Token$Character;->data:Ljava/lang/String;
 
     return-object v0
@@ -60,7 +60,7 @@
 
     const/4 v0, 0x0
 
-    .line 255
+    .line 321
     iput-object v0, p0, Lorg/jsoup/parser/Token$Character;->data:Ljava/lang/String;
 
     return-object p0
@@ -69,7 +69,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 270
+    .line 336
     invoke-virtual {p0}, Lorg/jsoup/parser/Token$Character;->getData()Ljava/lang/String;
 
     move-result-object v0

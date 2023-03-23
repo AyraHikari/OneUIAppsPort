@@ -18,7 +18,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 13
+    .line 18
     const-class v0, Landroid/view/InputDevice;
 
     sput-object v0, Landroidx/reflect/view/SeslInputDeviceReflector;->mClass:Ljava/lang/Class;
@@ -29,7 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 11
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,6 +37,16 @@
 
 .method public static semSetPointerType(Landroid/view/InputDevice;I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "inputDevice",
+            "pointerType"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -45,8 +55,8 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 24
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 29
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1d
 
@@ -56,7 +66,7 @@
 
     if-lt v1, v2, :cond_1
 
-    .line 25
+    .line 30
     sget-object v0, Landroidx/reflect/view/SeslInputDeviceReflector;->mClass:Ljava/lang/Class;
 
     new-array v1, v4, [Ljava/lang/Class;
@@ -73,15 +83,15 @@
 
     goto :goto_0
 
-    .line 26
+    .line 31
     :cond_1
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1c
 
     if-lt v1, v2, :cond_2
 
-    .line 27
+    .line 32
     sget-object v0, Landroidx/reflect/view/SeslInputDeviceReflector;->mClass:Ljava/lang/Class;
 
     new-array v1, v4, [Ljava/lang/Class;
@@ -98,15 +108,15 @@
 
     goto :goto_0
 
-    .line 28
+    .line 33
     :cond_2
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Layra/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x18
 
     if-lt v1, v2, :cond_3
 
-    .line 29
+    .line 34
     sget-object v0, Landroidx/reflect/view/SeslInputDeviceReflector;->mClass:Ljava/lang/Class;
 
     new-array v1, v4, [Ljava/lang/Class;
@@ -127,7 +137,7 @@
 
     new-array v1, v4, [Ljava/lang/Object;
 
-    .line 33
+    .line 38
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

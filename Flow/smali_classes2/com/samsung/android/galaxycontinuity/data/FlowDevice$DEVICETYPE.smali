@@ -40,9 +40,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
-    .line 63
+    .line 64
     new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     const-string v1, "DEVICETYPE_UNKNOWN"
@@ -53,128 +53,134 @@
 
     sput-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_UNKNOWN:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    .line 64
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
-
-    const-string v1, "DEVICETYPE_ANDROID_MOBILE"
-
-    const/4 v3, 0x1
-
-    invoke-direct {v0, v1, v3, v3}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;-><init>(Ljava/lang/String;II)V
-
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_MOBILE:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
-
     .line 65
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    new-instance v1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    const-string v1, "DEVICETYPE_ANDROID_TAB"
+    const-string v3, "DEVICETYPE_ANDROID_MOBILE"
 
-    const/4 v4, 0x2
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v4, v4}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v3, v4, v4}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    sput-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_MOBILE:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     .line 66
-    new-instance v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    new-instance v3, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    const-string v1, "DEVICETYPE_WINDOWS"
+    const-string v5, "DEVICETYPE_ANDROID_TAB"
 
-    const/4 v5, 0x3
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v5, v5}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v3, v5, v6, v6}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_WINDOWS:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    sput-object v3, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    const/4 v1, 0x4
+    .line 67
+    new-instance v5, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    new-array v1, v1, [Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    const-string v7, "DEVICETYPE_WINDOWS"
 
-    .line 62
-    sget-object v6, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_UNKNOWN:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    const/4 v8, 0x3
 
-    aput-object v6, v1, v2
+    invoke-direct {v5, v7, v8, v8}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;-><init>(Ljava/lang/String;II)V
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_MOBILE:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    sput-object v5, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_WINDOWS:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    aput-object v2, v1, v3
+    const/4 v7, 0x4
 
-    sget-object v2, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    new-array v7, v7, [Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
-    aput-object v2, v1, v4
+    aput-object v0, v7, v2
 
-    aput-object v0, v1, v5
+    aput-object v1, v7, v4
 
-    sput-object v1, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
+
+    .line 63
+    sput-object v7, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
         }
     .end annotation
 
-    .line 68
+    .line 69
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 69
+    .line 70
     iput p3, p0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->value:I
 
     return-void
 .end method
 
 .method public static valueOf(I)Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceType"
+        }
+    .end annotation
 
-    .line 79
+    .line 80
     sget-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_WINDOWS:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->getValue()I
 
-    move-result v0
+    move-result v1
 
-    if-ne p0, v0, :cond_0
+    if-ne p0, v1, :cond_0
 
-    .line 80
-    sget-object p0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_WINDOWS:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    return-object v0
 
-    return-object p0
-
-    .line 82
+    .line 83
     :cond_0
     sget-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->getValue()I
 
-    move-result v0
+    move-result v1
 
-    if-ne p0, v0, :cond_1
+    if-ne p0, v1, :cond_1
 
-    .line 83
-    sget-object p0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_TAB:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    return-object v0
 
-    return-object p0
-
-    .line 85
+    .line 86
     :cond_1
     sget-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_MOBILE:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     invoke-virtual {v0}, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->getValue()I
 
-    move-result v0
+    move-result v1
 
-    if-ne p0, v0, :cond_2
+    if-ne p0, v1, :cond_2
 
-    .line 86
-    sget-object p0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_ANDROID_MOBILE:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
+    return-object v0
 
-    return-object p0
-
-    .line 88
+    .line 89
     :cond_2
     sget-object p0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->DEVICETYPE_UNKNOWN:Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
@@ -183,8 +189,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 62
+    .line 63
     const-class v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -199,7 +213,7 @@
 .method public static values()[Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
     .locals 1
 
-    .line 62
+    .line 63
     sget-object v0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->$VALUES:[Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;
 
     invoke-virtual {v0}, [Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->clone()Ljava/lang/Object;
@@ -216,7 +230,7 @@
 .method public getValue()I
     .locals 1
 
-    .line 75
+    .line 76
     iget v0, p0, Lcom/samsung/android/galaxycontinuity/data/FlowDevice$DEVICETYPE;->value:I
 
     return v0

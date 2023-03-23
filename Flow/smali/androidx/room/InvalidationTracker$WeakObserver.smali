@@ -31,16 +31,26 @@
 # direct methods
 .method constructor <init>(Landroidx/room/InvalidationTracker;Landroidx/room/InvalidationTracker$Observer;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "tracker",
+            "delegate"
+        }
+    .end annotation
 
-    .line 837
+    .line 906
     iget-object v0, p2, Landroidx/room/InvalidationTracker$Observer;->mTables:[Ljava/lang/String;
 
     invoke-direct {p0, v0}, Landroidx/room/InvalidationTracker$Observer;-><init>([Ljava/lang/String;)V
 
-    .line 838
+    .line 907
     iput-object p1, p0, Landroidx/room/InvalidationTracker$WeakObserver;->mTracker:Landroidx/room/InvalidationTracker;
 
-    .line 839
+    .line 908
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -54,6 +64,15 @@
 # virtual methods
 .method public onInvalidated(Ljava/util/Set;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tables"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,7 +82,7 @@
         }
     .end annotation
 
-    .line 844
+    .line 913
     iget-object v0, p0, Landroidx/room/InvalidationTracker$WeakObserver;->mDelegateRef:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -74,14 +93,14 @@
 
     if-nez v0, :cond_0
 
-    .line 846
+    .line 915
     iget-object p1, p0, Landroidx/room/InvalidationTracker$WeakObserver;->mTracker:Landroidx/room/InvalidationTracker;
 
     invoke-virtual {p1, p0}, Landroidx/room/InvalidationTracker;->removeObserver(Landroidx/room/InvalidationTracker$Observer;)V
 
     goto :goto_0
 
-    .line 848
+    .line 917
     :cond_0
     invoke-virtual {v0, p1}, Landroidx/room/InvalidationTracker$Observer;->onInvalidated(Ljava/util/Set;)V
 

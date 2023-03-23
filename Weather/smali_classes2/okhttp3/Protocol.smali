@@ -68,10 +68,6 @@
 .field public static final enum QUIC:Lokhttp3/Protocol;
 
 .field public static final enum SPDY_3:Lokhttp3/Protocol;
-    .annotation runtime Lkotlin/Deprecated;
-        message = "OkHttp has dropped support for SPDY. Prefer {@link #HTTP_2}."
-    .end annotation
-.end field
 
 
 # instance fields
@@ -79,7 +75,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     const/4 v0, 0x6
@@ -94,7 +90,7 @@
 
     const-string v4, "http/1.0"
 
-    .line 35
+    .line 1
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/Protocol;->HTTP_1_0:Lokhttp3/Protocol;
@@ -109,7 +105,7 @@
 
     const-string v4, "http/1.1"
 
-    .line 44
+    .line 2
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/Protocol;->HTTP_1_1:Lokhttp3/Protocol;
@@ -124,7 +120,7 @@
 
     const-string v4, "spdy/3.1"
 
-    .line 53
+    .line 3
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/Protocol;->SPDY_3:Lokhttp3/Protocol;
@@ -139,7 +135,7 @@
 
     const-string v4, "h2"
 
-    .line 64
+    .line 4
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/Protocol;->HTTP_2:Lokhttp3/Protocol;
@@ -154,7 +150,7 @@
 
     const-string v4, "h2_prior_knowledge"
 
-    .line 74
+    .line 5
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/Protocol;->H2_PRIOR_KNOWLEDGE:Lokhttp3/Protocol;
@@ -169,7 +165,7 @@
 
     const-string v4, "quic"
 
-    .line 84
+    .line 6
     invoke-direct {v1, v2, v3, v4}, Lokhttp3/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v1, Lokhttp3/Protocol;->QUIC:Lokhttp3/Protocol;
@@ -199,7 +195,6 @@
         }
     .end annotation
 
-    .line 31
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput-object p3, p0, Lokhttp3/Protocol;->protocol:Ljava/lang/String;
@@ -210,7 +205,6 @@
 .method public static final synthetic access$getProtocol$p(Lokhttp3/Protocol;)Ljava/lang/String;
     .locals 0
 
-    .line 31
     iget-object p0, p0, Lokhttp3/Protocol;->protocol:Ljava/lang/String;
 
     return-object p0
@@ -218,14 +212,6 @@
 
 .method public static final get(Ljava/lang/String;)Lokhttp3/Protocol;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
     sget-object v0, Lokhttp3/Protocol;->Companion:Lokhttp3/Protocol$Companion;
 
@@ -269,7 +255,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 94
     iget-object v0, p0, Lokhttp3/Protocol;->protocol:Ljava/lang/String;
 
     return-object v0

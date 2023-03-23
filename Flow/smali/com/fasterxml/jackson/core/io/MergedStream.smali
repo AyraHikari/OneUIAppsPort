@@ -230,7 +230,7 @@
 .end method
 
 .method public read([BII)I
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -243,23 +243,19 @@
     if-eqz v0, :cond_2
 
     .line 90
-    iget v0, p0, Lcom/fasterxml/jackson/core/io/MergedStream;->_end:I
+    iget v1, p0, Lcom/fasterxml/jackson/core/io/MergedStream;->_end:I
 
-    iget v1, p0, Lcom/fasterxml/jackson/core/io/MergedStream;->_ptr:I
+    iget v2, p0, Lcom/fasterxml/jackson/core/io/MergedStream;->_ptr:I
 
-    sub-int/2addr v0, v1
+    sub-int/2addr v1, v2
 
-    if-le p3, v0, :cond_0
+    if-le p3, v1, :cond_0
 
-    move p3, v0
+    move p3, v1
 
     .line 94
     :cond_0
-    iget-object v0, p0, Lcom/fasterxml/jackson/core/io/MergedStream;->_buffer:[B
-
-    iget v1, p0, Lcom/fasterxml/jackson/core/io/MergedStream;->_ptr:I
-
-    invoke-static {v0, v1, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v2, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 95
     iget p1, p0, Lcom/fasterxml/jackson/core/io/MergedStream;->_ptr:I

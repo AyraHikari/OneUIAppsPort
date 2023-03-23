@@ -26,16 +26,16 @@
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/ColorFilter;)V
     .locals 0
 
-    .line 763
+    .line 1058
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 764
+    .line 1059
     iput-object p1, p0, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;->layerName:Ljava/lang/String;
 
-    .line 765
+    .line 1060
     iput-object p2, p0, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;->contentName:Ljava/lang/String;
 
-    .line 766
+    .line 1061
     iput-object p3, p0, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;->colorFilter:Landroid/graphics/ColorFilter;
 
     return-void
@@ -52,7 +52,7 @@
 
     return v0
 
-    .line 786
+    .line 1083
     :cond_0
     instance-of v1, p1, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;
 
@@ -62,11 +62,11 @@
 
     return v2
 
-    .line 790
+    .line 1087
     :cond_1
     check-cast p1, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;
 
-    .line 792
+    .line 1089
     invoke-virtual {p0}, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;->hashCode()I
 
     move-result v1
@@ -95,14 +95,14 @@
 .method public hashCode()I
     .locals 2
 
-    .line 771
+    .line 1067
     iget-object v0, p0, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;->layerName:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     const/16 v1, 0x20f
 
-    .line 772
+    .line 1068
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
@@ -114,7 +114,7 @@
     :cond_0
     const/16 v1, 0x11
 
-    .line 775
+    .line 1071
     :goto_0
     iget-object v0, p0, Lcom/airbnb/lottie/LottieDrawable$ColorFilterData;->contentName:Ljava/lang/String;
 
@@ -122,7 +122,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 776
+    .line 1072
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0

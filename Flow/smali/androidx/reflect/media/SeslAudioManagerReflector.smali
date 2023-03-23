@@ -75,3 +75,85 @@
 
     return v0
 .end method
+
+.method public static getField_SOUND_TIME_PICKER_SCROLL_FAST()I
+    .locals 2
+
+    .line 42
+    sget-object v0, Landroidx/reflect/media/SeslAudioManagerReflector;->mClass:Ljava/lang/Class;
+
+    const-string v1, "SOUND_TIME_PICKER_FAST"
+
+    invoke-static {v0, v1}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x0
+
+    .line 44
+    invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 45
+    instance-of v1, v0, Ljava/lang/Integer;
+
+    if-eqz v1, :cond_0
+
+    .line 46
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public static getField_SOUND_TIME_PICKER_SCROLL_SLOW()I
+    .locals 2
+
+    .line 59
+    sget-object v0, Landroidx/reflect/media/SeslAudioManagerReflector;->mClass:Ljava/lang/Class;
+
+    const-string v1, "SOUND_TIME_PICKER_SLOW"
+
+    invoke-static {v0, v1}, Landroidx/reflect/SeslBaseReflector;->getField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x0
+
+    .line 61
+    invoke-static {v1, v0}, Landroidx/reflect/SeslBaseReflector;->get(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 62
+    instance-of v1, v0, Ljava/lang/Integer;
+
+    if-eqz v1, :cond_0
+
+    .line 63
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method

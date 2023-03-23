@@ -14,19 +14,15 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0002\u001a\u00020\u0003H\u0016\u00a8\u0006\u0004"
+        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0003\u001a\u00020\u0002H\u0016\u00a8\u0006\u0004"
     }
     d2 = {
         "okhttp3/internal/connection/RealConnection$newWebSocketStreams$1",
         "Lokhttp3/internal/ws/RealWebSocket$Streams;",
+        "Lbi/x;",
         "close",
-        "",
         "okhttp"
     }
     k = 0x1
@@ -39,18 +35,17 @@
 
 
 # instance fields
-.field final synthetic $exchange:Lokhttp3/internal/connection/Exchange;
+.field public final synthetic $exchange:Lokhttp3/internal/connection/Exchange;
 
-.field final synthetic $sink:Lokio/BufferedSink;
+.field public final synthetic $sink:Lokio/BufferedSink;
 
-.field final synthetic $source:Lokio/BufferedSource;
+.field public final synthetic $source:Lokio/BufferedSource;
 
 
 # direct methods
-.method constructor <init>(Lokhttp3/internal/connection/Exchange;Lokio/BufferedSource;Lokio/BufferedSink;ZLokio/BufferedSource;Lokio/BufferedSink;)V
+.method public constructor <init>(Lokhttp3/internal/connection/Exchange;Lokio/BufferedSource;Lokio/BufferedSink;ZLokio/BufferedSource;Lokio/BufferedSink;)V
     .locals 0
 
-    .line 630
     iput-object p1, p0, Lokhttp3/internal/connection/RealConnection$newWebSocketStreams$1;->$exchange:Lokhttp3/internal/connection/Exchange;
 
     iput-object p2, p0, Lokhttp3/internal/connection/RealConnection$newWebSocketStreams$1;->$source:Lokio/BufferedSource;
@@ -67,7 +62,6 @@
 .method public close()V
     .locals 6
 
-    .line 632
     iget-object v0, p0, Lokhttp3/internal/connection/RealConnection$newWebSocketStreams$1;->$exchange:Lokhttp3/internal/connection/Exchange;
 
     const-wide/16 v1, -0x1
